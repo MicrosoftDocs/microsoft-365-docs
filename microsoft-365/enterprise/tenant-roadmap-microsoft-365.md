@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,7 +17,9 @@ description: The roadmap to set up your tenants for Microsoft 365.
 
 # Tenant roadmap for Microsoft 365
 
-Your Microsoft 365 tenant is the set of services assigned to your organization. This tenant is typically associated with one or more of your DNS domain names and acts as a central container for different subscriptions and the licenses within them that you assign to user accounts. When you create a Microsoft 365 tenant, you assign it to a specific geograhical location. You can also have a tenant with multiple geographical locations and move your tenant from one location to another.
+Your Microsoft 365 tenant is the set of services assigned to your organization. This tenant is typically associated with one or more of your DNS domain names and acts as a central container for different subscriptions and the licenses within them that you assign to user accounts. 
+
+When you create a Microsoft 365 tenant, you assign it to a specific geographical location. You can also have a tenant with multiple geographical locations and move your tenant from one location to another.
 
 A well-planned and executed tenant configuration is critical to getting it ready for the foundational services of networking and identity.
 
@@ -29,7 +31,7 @@ Add links to articles after merge
 
 In the planning phase of your tenant implementation:
 
-- Understand the subscriptions, licenses, and Azure Active Directory (Azure AD) tenants for an organization tenant
+- Understand subscriptions, licenses, and Azure Active Directory (Azure AD) tenants
 - Understand how to use third-party SSL certificates
 - Access setup guides in the Microsoft 365 admin center
 - Understand the ways a Microsoft 365 tenant is integrated with Azure AD services
@@ -53,7 +55,7 @@ Get started in understanding, planning, configuring, and then administering with
 
 Microsoft continues to open new datacenter geographic locations (geos) for Microsoft 365 services. These new datacenter geos add capacity and compute resources to support customer demand and usage growth. Additionally, the new datacenter geos offer in-geo data residency for core customer data.
 
-Get started in understanding and requesing a geo data move with Moving core data to new Microsoft 365 datacenter geos.
+Get started in understanding and requesting a geo data move with Moving core data to new Microsoft 365 datacenter geos.
 
 ## Next step
 

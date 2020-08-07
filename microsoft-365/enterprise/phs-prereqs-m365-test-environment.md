@@ -19,9 +19,9 @@ description: Create a Microsoft 365 environment to test identity and device acce
 
 # Identity and device access prerequisites for password hash synchronization in your Microsoft 365 test environment
 
-*This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
+*This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*
 
-[Identity and device access configurations](microsoft-365-policies-configurations.md) are a set of configurations and conditional access policies to protect access to all services in Microsoft 365 Enterprise that are integrated with Azure Active Directory (Azure AD).
+[Identity and device access configurations](microsoft-365-policies-configurations.md) are a set of configurations and conditional access policies to protect access to all services in Microsoft 365 for enterprise that are integrated with Azure Active Directory (Azure AD).
 
 This article describes how to configure a Microsoft 365 test environment that meets the requirements of the [Active Directory with password hash sync prerequisite configuration](identity-access-prerequisites.md#prerequisites) for identity and device access.
 
@@ -117,8 +117,8 @@ Use [Common identity and device access policies](identity-access-policies.md) to
 
 [Identity roadmap](identity-roadmap-microsoft-365.md)
 
-[Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)

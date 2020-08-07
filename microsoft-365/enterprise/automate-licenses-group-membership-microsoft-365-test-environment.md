@@ -1,5 +1,5 @@
 ---
-title: "Automate licensing and group membership for your Microsoft 365 Enterprise test environment"
+title: "Automate licensing and group membership for your Microsoft 365 for enterprise test environment"
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,26 +14,26 @@ ms.collection: M365-identity-device-management
 ms.custom: 
 - TLG
 - Ent_TLGs
-description: "Configure group-based licensing and dynamic group membership in your Microsoft 365 Enterprise test environment."
+description: "Configure group-based licensing and dynamic group membership in your Microsoft 365 for enterprise test environment."
 ---
 
-# Automate licensing and group membership for your Microsoft 365 Enterprise test environment
+# Automate licensing and group membership for your Microsoft 365 for enterprise test environment
 
-*This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
+*This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*
 
-Group-based licensing automatically assigns or removes licenses for a user account based on group membership. Dynamic group membership adds or removes members to a group based on user account properties, such as Department or Country. This article steps you through a demonstration of both in your Microsoft 365 Enterprise test environment.
+Group-based licensing automatically assigns or removes licenses for a user account based on group membership. Dynamic group membership adds or removes members to a group based on user account properties, such as Department or Country. This article steps you through a demonstration of both in your Microsoft 365 for enterprise test environment.
 
-There are two phases to setting up auto-licensing and dynamic group membership in your Microsoft 365 Enterprise test environment:
+There are two phases to setting up auto-licensing and dynamic group membership in your Microsoft 365 for enterprise test environment:
 
-1. Create the Microsoft 365 Enterprise test environment.
+1. Create the Microsoft 365 for enterprise test environment.
 2. Configure and test dynamic group membership and automatic licensing.
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
   
-## Phase 1: Build out your Microsoft 365 Enterprise test environment
+## Phase 1: Build out your Microsoft 365 for enterprise test environment
 
 If you just want to test automated licensing and group membership in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -98,8 +98,8 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 [Identity roadmap](identity-roadmap-microsoft-365.md)
 
-[Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)

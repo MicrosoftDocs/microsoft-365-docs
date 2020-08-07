@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/20/2019
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,21 +19,21 @@ description: The roadmap to identity for Microsoft 365.
 
 # Identity roadmap for Microsoft 365
 
-In Microsoft 365 Enterprise, a well-planned and executed identity infrastructure paves the way for stronger security and access to your productivity workloads and their data only by authenticated users and devices.
+In Microsoft 365 for enterprise, a well-planned and executed identity infrastructure paves the way for stronger security and access to your productivity workloads and their data only by authenticated users and devices.
 
-Watch this video for an overview of identity models and authentication for Microsoft 365 Enterprise.
+Watch this video for an overview of identity models and authentication for Microsoft 365 for enterprise.
 
 <p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-For the identity features of each Microsoft 365 Enterprise plan, the role of Azure Active Directory (Azure AD), on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](../downloads/M365E-ID-Infra.pdf).
+For the identity features of each Microsoft 365 for enterprise plan, the role of Azure Active Directory (Azure AD), on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](../downloads/m365e-identity-infra.pdf).
 
-[![The Identity Infrastructure poster](../media/identity-roadmap-microsoft-365/m365e-identity-arch-poster.png)](../downloads/M365E-ID-Infra.pdf)
+[![The Identity Infrastructure poster](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
-This two-page poster is a quick way to ramp up on identity concepts and configurations for Microsoft 365 Enterprise.
+This two-page poster is a quick way to ramp up on identity concepts and configurations for Microsoft 365 for enterprise.
 
-You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/M365E-ID-Infra.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 <!--
 Add links to articles after merge

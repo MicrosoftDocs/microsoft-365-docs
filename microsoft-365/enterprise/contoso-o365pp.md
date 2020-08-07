@@ -75,7 +75,7 @@ Here is Contoso’s Microsoft 365 Apps for enterprise installation and ongoing u
  
 ## Next step
 
-[Learn](contoso-mdm.md) how Contoso is using Microsoft Intune in Microsoft 365 Enterprise to manage its devices and the apps that run on them across its organization.
+[Learn](contoso-mdm.md) how Contoso is using Microsoft Intune in Microsoft 365 for enterprise to manage its devices and the apps that run on them across its organization.
 
 ## See also
 

@@ -15,14 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 
-description: Understand how Contoso uses the information protection features in Microsoft 365 Enterprise to secure their digital assets in the cloud.
+description: Understand how Contoso uses the information protection features in Microsoft 365 for enterprise to secure their digital assets in the cloud.
 ---
 
 # Information protection for the Contoso Corporation
 
 Contoso is serious about their information security and protection. For example, leakage or destruction of their intellectual property describing product designs and proprietary manufacturing techniques would place them at a competitive disadvantage.
 
-Before moving their sensitive and most valuable digital assets to the cloud, they made sure that their on-premises information classification and protection requirements were supported and implemented in the cloud-based services of Microsoft 365 Enterprise.
+Before moving their sensitive and most valuable digital assets to the cloud, they made sure that their on-premises information classification and protection requirements were supported and implemented in the cloud-based services of Microsoft 365 for enterprise.
 
 ## Contoso's data security classification
 
@@ -44,9 +44,9 @@ The following table lists Contoso's information policies.
 | High business value (Level 3: Highly regulated) | Allow access to executives and leads in engineering and manufacturing. <BR> <BR> Rights Management System (RMS) with managed network devices only.  | 7 years  | Use digital signatures for non-repudiation.  |
 |||||
 
-## Contoso’s path to information protection with Microsoft 365 Enterprise
+## Contoso’s path to information protection with Microsoft 365 for enterprise
 
-Contoso used the following steps to prepare Microsoft 365 Enterprise for their information protection requirements:
+Contoso used the following steps to prepare Microsoft 365 for enterprise for their information protection requirements:
 
 1. Identified what information to protect
 
@@ -92,9 +92,9 @@ These policies ensure that:
 - SharePoint uses app enforced restrictions.
 - SharePoint uses access control policies for browser-only access and to block access for unmanaged devices.
 
-## Mapping Microsoft 365 Enterprise features to Contoso's data levels
+## Mapping Microsoft 365 for enterprise features to Contoso's data levels
 
-The following table maps Contoso's data levels to information protection features in Microsoft 365 Enterprise.
+The following table maps Contoso's data levels to information protection features in Microsoft 365 for enterprise.
 
 | Level | Microsoft 365 cloud services | Windows 10 and Microsoft 365 Apps for enterprise | Security and compliance |
 |:-------|:-----|:-----|:-----|
@@ -109,7 +109,7 @@ Here is Contoso's resulting information protection configuration.
 
 ## Next step
 
-[See](contoso-security-summary.md) how Contoso has used the security features across Microsoft 365 Enterprise for identity and access management, threat protection, information protection, and security management.
+[See](contoso-security-summary.md) how Contoso has used the security features across Microsoft 365 for enterprise for identity and access management, threat protection, information protection, and security management.
 
 ## See also
 

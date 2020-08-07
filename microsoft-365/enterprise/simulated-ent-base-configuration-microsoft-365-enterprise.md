@@ -18,32 +18,32 @@ ms.custom:
  - seo-marvel-apr2020
  
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Use this Test Lab Guide to create a simulated enterprise test environment for Microsoft 365 Enterprise.
+description: Use this Test Lab Guide to create a simulated enterprise test environment for Microsoft 365 for enterprise.
 ---
 
 # The simulated enterprise base configuration
 
-*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+*This Test Lab Guide can be used for both Microsoft 365 for enterprise and Office 365 Enterprise test environments.*
 
-This article provides you with step-by-step instructions to create a simplified environment for Microsoft 365 Enterprise that includes:
+This article provides you with step-by-step instructions to create a simplified environment for Microsoft 365 for enterprise that includes:
 
 - A Microsoft 365 E5 trial or paid subscription.
 - A simplified organization intranet connected to the Internet, consisting of three virtual machines on an Azure virtual network (DC1, APP1, and CLIENT1).
  
 ![The simulated enterprise base configuration](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-You can use the resulting environment to test the features and functionality of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise) with additional [Test Lab Guides](m365-enterprise-test-lab-guides.md) or on your own.
+You can use the resulting environment to test the features and functionality of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise) with additional [Test Lab Guides](m365-enterprise-test-lab-guides.md) or on your own.
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Go to [Microsoft 365 Enterprise Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Go to [Microsoft 365 for enterprise Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
 
 ## Phase 1: Create a simulated intranet
 
 In this phase, you build a simulated intranet in Azure infrastructure services that includes an Active Directory Domain Services (AD DS) domain controller, an application server, and a client computer. 
 
-You'll use these computers in additional [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) to configure and demonstrate hybrid identity and other capabilities.
+You'll use these computers in additional [Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) to configure and demonstrate hybrid identity and other capabilities.
 
 ### Method 1: Build your simulated intranet with an Azure Resource Manager template
 
@@ -375,7 +375,7 @@ To configure your new Office 365 E5 trial subscription, perform the instructions
 
 If all you need is an Office 365 test environment, you can stop here. 
 
-See [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) for additional Test Lab Guides that apply to both Microsoft 365 and Office 365.
+See [Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) for additional Test Lab Guides that apply to both Microsoft 365 and Office 365.
 
 ### Add a Microsoft 365 E5 trial subscription
 
@@ -394,7 +394,7 @@ This is your final configuration.
   
 ![Phase 2 of the simulated enterprise base configuration](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-You are now ready to experiment with additional features of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
+You are now ready to experiment with additional features of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise).
   
 ## Next steps
 
@@ -406,8 +406,8 @@ Explore these additional sets of Test Lab Guides:
 
 ## See also
 
-[Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)

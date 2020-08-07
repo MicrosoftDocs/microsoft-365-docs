@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Enterprise test environment multi-factor authentication
+title: Microsoft 365 for enterprise test environment multi-factor authentication
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 - seo-marvel-apr2020
-description: "Configure multi-factor authentication using text messages sent to a smart phone in your Microsoft 365 Enterprise test environment."
+description: "Configure multi-factor authentication using text messages sent to a smart phone in your Microsoft 365 for enterprise test environment."
 ---
 
-# Multi-factor authentication for your Microsoft 365 Enterprise test environment
+# Multi-factor authentication for your Microsoft 365 for enterprise test environment
 
-*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+*This Test Lab Guide can be used for both Microsoft 365 for enterprise and Office 365 Enterprise test environments.*
 
 For an additional level of security for signing in to Microsoft 365 or any service or application that uses the Azure AD tenant for your subscription, you can enable Azure multi-factor authentication, which requires more than just a username and password to verify an account. 
 
@@ -28,9 +28,9 @@ With multi-factor authentication, users are required to acknowledge a phone call
   
 This article describes how to enable and test text message-based authentication for a specific user account.
   
-There are two phases to setting up multi-factor authentication for an account in your Microsoft 365 Enterprise test environment:
+There are two phases to setting up multi-factor authentication for an account in your Microsoft 365 for enterprise test environment:
   
-1. Create the Microsoft 365 Enterprise test environment.
+1. Create the Microsoft 365 for enterprise test environment.
     
 2. Enable and test multi-factor authentication for the User 2 account.
 
@@ -39,9 +39,9 @@ There are two phases to setting up multi-factor authentication for an account in
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Go to [Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Go to [Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
   
-## Phase 1: Build out your Microsoft 365 Enterprise test environment
+## Phase 1: Build out your Microsoft 365 for enterprise test environment
 
 If you just want to test multi-factor authentication in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -100,7 +100,7 @@ Complete the configuration for the User 2 account to use a text message for vali
 
 ## Phase 3: Enable and test multi-factor authentication with a conditional access policy
 
-*This phase can only be used for a Microsoft 365 Enterprise test environment.*
+*This phase can only be used for a Microsoft 365 for enterprise test environment.*
 
 In this phase you enable multi-factor authentication for the User 3 account using a group and a conditional access policy.
 
@@ -139,8 +139,8 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 [Identity roadmap](identity-roadmap-microsoft-365.md)
 
-[Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)

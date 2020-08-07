@@ -1,5 +1,5 @@
 ---
-title: Prerequisite work for implementing identity and device access policies - Microsoft 365 Enterprise | Microsoft Docs
+title: Prerequisite work for implementing identity and device access policies - Microsoft 365 for enterprise | Microsoft Docs
 description: Describes the policies for Microsoft recommendations about how to apply identity and device access policies and configurations.
 author: BrendaCarter
 manager: Laurawi

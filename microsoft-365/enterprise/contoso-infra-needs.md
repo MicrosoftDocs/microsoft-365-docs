@@ -15,7 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 
-description: Understand the basic structure of Contoso's on-premises IT infrastructure and how its business needs were met by Microsoft 365 Enterprise.
+description: Understand the basic structure of Contoso's on-premises IT infrastructure and how its business needs were met by Microsoft 365 for enterprise.
 ---
 
 # Contoso's IT infrastructure and business needs
@@ -108,12 +108,12 @@ Management:
 
   Automate the installation of updates to the Windows operating system and Microsoft 365 Apps for enterprise across the organization.
 
-## Mapping Contoso's business needs to Microsoft 365 Enterprise
+## Mapping Contoso's business needs to Microsoft 365 for enterprise
 
 Contoso's IT department determined the following mapping of business needs to Microsoft 365 E5 features prior to deployment:
 
 
-| Category | Business need | Microsoft 365 Enterprise products or features |
+| Category | Business need | Microsoft 365 for enterprise products or features |
 |:-------|:-----|:-----|
 | Productivity |  |  |
 |  | Make collaboration easier | Microsoft Teams, SharePoint, OneDrive |
