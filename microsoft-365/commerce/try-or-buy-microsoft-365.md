@@ -17,7 +17,7 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Learn how to get a free trial or buy a subscription for Microsoft 365."
+description: "Learn how to get a free trial or buy a subscription for Microsoft 365 for business."
 ---
 
 # Try or buy a Microsoft 365 for business subscription
@@ -46,7 +46,7 @@ You don't need an existing Microsoft account to sign up for a free
 trial. For all other procedures in this article, you must be a Global or
 Billing admin for your organization. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
-## Try a Microsoft 365 for business free trial subscription
+## Try a free trial subscription
 
 If you're a new customer, and you don't already have an account with
 Microsoft, use these steps to create an account and sign up for a free
@@ -58,7 +58,7 @@ Business Premium, or Microsoft 365 Apps for business.
 3. On the next page, follow the steps to set up your account.
 4. The signup process may take several minutes to complete. After > it\'s complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
 
-## Buy a subscription from your Microsoft 365 for business free trial
+## Buy a subscription from free trial
 
 At the end of your free trial period, your trial subscription
 automatically converts to a paid subscription. The paid subscription
@@ -76,13 +76,13 @@ these steps:
 6. On the next page, verify the **Sold to** address, the **Billed to** information, and **Items in this order**. If you need to make any changes, select **Change** next to the applicable section.
 7. When you\'re finished, select **Accept agreement & place order**.
 
-## Cancel your Microsoft 365 for business free trial subscription
+## Cancel your free trial subscription
 
 If you decide to cancel your trial subscription before the free trial
 period ends, go to the Microsoft 365 admin center and [turn Recurring billing off](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on). The trial will automatically expire when your month ends, and your
 credit card won\'t be charged.
 
-## Try a different Microsoft 365 for business subscription
+## Try a different subscription
 
 If you already have a Microsoft 365 for business subscription and you
 want to try a different subscription, you can do that through the
@@ -102,7 +102,7 @@ the additional subscription they need.
 6. On the **Check out** page, select **Try now**.
 7. On the **order receipt** page, select **Continue**.
 
-## Buy a different Microsoft 365 for business subscription
+## Buy a different subscription
 
 If you already have a Microsoft 365 for business subscription and you
 want to buy a different subscription for your organization, you can do
