@@ -31,7 +31,7 @@ To understand your data landscape and identify important data across your hybrid
 |:------|:------------|:--------------------|:-----------------------------|
 |[Sensitive information types](sensitive-information-type-entity-definitions.md)| Identifies sensitive data by using built-in or custom regular expressions or a function, together with corroborative evidence that includes keywords, confidence levels, and proximity.| [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)|
 |[Trainable classifiers (preview)](classifier-getting-started-with.md)| Classifies data for you, using one of the built-in classifiers or train a classier with your own content | [Create a trainable classifier (preview)](classifier-creating-a-trainable-classifier.md) |
-|[Data classification](data-classification-overview.md) | Identifies items that have a sensitivity label, a retention label, or have been classified as a sensitive information type in your organization and the actions that your users are taking on them  | [Get started with content explorer](data-classification-content-explorer.md), [Get started with activity explorer](data-classification-activity-explorer.md) |
+|[Data classification](data-classification-overview.md) | Identifies items that have a sensitivity label, a retention label, or have been classified as a sensitive information type in your organization and the actions that your users are taking on them  | [Get started with content explorer](data-classification-content-explorer.md)<br /><br /> [Get started with activity explorer](data-classification-activity-explorer.md) |
 
 ## Protect your data
 
