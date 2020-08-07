@@ -21,7 +21,7 @@ The new [Microsoft Edge browser](https://www.microsoft.com/edge) provides world-
 
 To migrate your Microsoft Managed Desktop devices to the new Microsoft Edge browser, file an IT Support Ticket through the Microsoft Managed Desktop Portal. We will deploy the Edge Stable channel to the Test Group when you file the ticket, and then deploy it in each subsequent deployment group every 24 hours. To pause the deployment, file another ticket asking Operations to hold.
 
-The [Beta Channel] (https://docs.microsoft.com/en-us/deployedge/microsoft-edge-channels#beta-channel) is also available upon request for representative validation within your organization. Microsoft Managed Desktop will deploy the application as required to the Test and First Groups so that all of those users have the Beta Channel in addition to the Stable Channel. For any additional users who need access to the Beta Channel please add them to the **Modern Workplace - Edge Beta Users** group and have them install it from the Company Portal
+The [Beta Channel] (https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) is also available upon request for representative validation within your organization. Microsoft Managed Desktop will deploy the application as required to the Test and First Groups so that all of those users have the Beta Channel in addition to the Stable Channel. For any additional users who need access to the Beta Channel please add them to the **Modern Workplace - Edge Beta Users** group and have them install it from the Company Portal
 
 ## Updates to Microsoft Edge
 
@@ -69,19 +69,19 @@ We don't recommend enabling this setting since it allows users to visit sites wi
 
 ### Microsoft Defender Smart Screen
 
-#### Configure Microsoft Defender SmartScreen
+#### Configure Windows Defender SmartScreen
 
 **Default value:** Enabled
 
 Enabled by default to help protect end users.
 
-#### Microsoft Defender SmartScreen prompts for sites
+#### Windows Defender SmartScreen prompts for sites
 
 **Default value:** Enabled
 
 We do not recommend disabling this setting since that would allow users to ignore warnings and continue to potentially malicious sites.
 
-#### Prevent bypassing of Microsoft Defender SmartScreen warnings about downloads
+#### Prevent bypassing of Windows Defender SmartScreen warnings about downloads
 
 **Default value:** Enabled
 
