@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/20/2019
+ms.date: 10/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
