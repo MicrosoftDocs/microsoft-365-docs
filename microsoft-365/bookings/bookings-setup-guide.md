@@ -200,15 +200,15 @@ Define the services that your organization provides, which customers will book t
 
 20. **Assign Staff** Select the staff (provided you have added staff members to the Staff tab) who will be bookable for that specific service. Selecting no individual staff will result in all staff being assigned to the service.
 
-## Self-Service page
+## Booking Page
 
-Self-Service is a page outside of the Bookings Web app where appointments can be scheduled. It contains the following information and configuration options:
+The Booking Page is where you set up what your external customer facing booking page will look like. Once you customize and publish your booking page, your customers will use it to book appointments with you. It's an extension of your business' image and brand.
 
 - **Booking page status** Publish your calendar live to make your service bookable. You have the options to share the link to your calendar via email and Twitter, and to add a **Book Now** button to a Facebook page. The link can also be embedded in your organization’s Web site.
 
-    The Self-Service page looks like this:
+    The internal Booking Page looks like this:
 
-    :::image type="content" source="media/bookings-Self-Service.jpg" alt-text="The Bookings Self-Service page":::
+    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="The Bookings Page":::
 
 - **Booking page access control: Require a Microsoft 365 account from my organization to book**  Selecting this option will only allow those within your organization to view your page or book any services. Access to the page is authorized via credential checks to ensure the visitor belongs to an account within the tenant.
 
@@ -223,6 +223,10 @@ Self-Service is a page outside of the Bookings Web app where appointments can be
 - **Customize your page** Choose colors and logos that appear on the Self-Service page, such as for brand consistency.
 
 - **Region and time zone settings** Here you can set your time zone and language preferences for the Self-Service page. We recommend setting your local time zone. For visitors to your Self-Service page, Bookings automatically detects their local time zones and will show availability to them in their own time zones. For example, if an appointment is available at 1:00pm PST, someone in CST will see the available time displayed as 3:00pm CST.
+
+Once you publish your booking page, customers will see your booking page where they can book appointments with you. The customer facing booking pag looks like this:
+
+    :::image type="content" source="media/bookings-Self-Service.jpg" alt-text="The Bookings Page":::
 
 ## Calendar tab
 
