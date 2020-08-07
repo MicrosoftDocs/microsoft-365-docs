@@ -35,7 +35,7 @@ landingContent:
           - text: Govern your data
             url: manage-information-governance.md
           - text: Learning path: Manage information protection and governance
-            url: https://docs.microsoft.com/en-us/learn/paths/m365-compliance-information
+            url: /learn/paths/m365-compliance-information
 
 # Card (optional)
   - title: Manage insider risks
