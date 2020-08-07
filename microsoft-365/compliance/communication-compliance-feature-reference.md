@@ -27,7 +27,7 @@ search.appverid:
 >[!Important]
 >Using PowerShell to create and manage communication compliance policies is not supported. To create and manage these policies, you must use the policy management controls in the [Microsoft 365 communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
 
-You create communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. Communication compliance policies define which communications and users are subject to review in your organization, define which custom conditions the communications must meet, and specify who should do reviews. Users included in the **Supervisory Review Administrator** role group can set up policies, and anyone who has this role assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv file that also includes the status of alerts pending review, escalated items, and resolved items. Policies can't be renamed and can be deleted when no longer needed.
+You create communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. Communication compliance policies define which communications and users are subject to review in your organization, define which custom conditions the communications must meet, and specify who should do reviews. Users assigned the *Communication Compliance Admin* role can set up policies, and anyone who has this role assigned can access the **Communication compliance** page and global settings in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv file that also includes the status of alerts pending review, escalated items, and resolved items. Policies can't be renamed and can be deleted when no longer needed.
 
 >[!NOTE]
 >Supervision policies created in the Security & Compliance Center for Office 365 subscriptions cannot migrate to Microsoft 365. If you're migrating from an Office 365 subscription to a Microsoft 365 subscription, you'll need to create new communication compliance polices to replace existing Supervision policies.
@@ -42,6 +42,22 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 | **Sensitive information** | Monitor communications for sensitive information | - Locations: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns, and types, custom dictionary option, attachments larger than 1 MB |
 | **Regulatory compliance** | Monitor communications for info related to financial regulatory compliance | - Locations: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: custom dictionary option, attachments larger than 1 MB |
 
+## Permissions (preview)
+
+There are five roles used to configure permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the *Communication Compliance Admin* role.
+
+Depending on how you wish to manage communication policies and alerts, you’ll need to create one or more new role groups for administrators, reviewers, and investigators. Depending on the structure of your compliance management team, you have options to assign users to specific role groups to manage different sets of communication compliance features. Or you may decide to create one role group and assign all the communication compliance roles to the group. Create a single role group or multiple groups to best fit your compliance management requirements.
+
+Choose from these role options when configuring your communication compliance role groups:
+
+|**Role**|**Role permissions**|
+|:-----|:-----|
+| **Communication Compliance Admin** | Users assigned this role can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned this role cannot view message alerts. |
+| **Communication Compliance Analysis** | Users assigned this role can view policies where they are assigned as Reviewers, view message metadata (not message content), escalate to additional reviewers, or send notifications to users. Analysts cannot resolve pending alerts. |
+| **Communication Compliance Investigation** | Users assigned this role can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
+| **Communication Compliance Viewer** | Users assigned this role can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
+| **Communication Compliance Case Management** | Users assigned this role can manage cases and act on alerts. This role is required for when creating custom role groups for administrators, analysts, and investigators. Custom groups for viewers do not need this role assigned. |
+
 ## Supervised users
 
 Before you start using communication compliance, you must determine who needs their communications reviewed. In the policy, user email addresses identify individuals or groups of people to supervise. Some examples of these groups are Microsoft 365 Groups, Exchange-based distribution lists, Yammer communities, and Microsoft Teams channels. You also can exclude specific users or groups from scanning with a specific exclusion group or a list of groups.
@@ -51,7 +67,7 @@ Before you start using communication compliance, you must determine who needs th
 
 ## Reviewers
 
-When you create a communication compliance policy, you must determine who reviews the messages of the supervised users. In the policy, user email addresses identify individuals or groups of people to review supervised communications. All reviewers must have mailboxes hosted on Exchange Online and must be assigned the **Case Management** and **Review** roles. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
+When you create a communication compliance policy, you must determine who reviews the messages of the supervised users. In the policy, user email addresses identify individuals or groups of people to review supervised communications. AAll reviewers must have mailboxes hosted on Exchange Online and must be assigned to either the *Communication Compliance Analysis* or *Communication Compliance Investigation* roles. Reviewers (either analysts or investigators) must also have the *Communication Compliance Case Management* role assigned. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 
 ## Groups for supervised users and reviewers
 
@@ -133,17 +149,22 @@ Configure custom keyword dictionaries (or lexicons) to provide simple management
 
 ### Classifiers
 
-Built-in classifiers scan sent or received messages across all communication channels in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in messages likely to violate anti-harassment policies. Built-in classifiers currently support only English keywords in messages.
+Built-in trainable and global classifiers scan sent or received messages across all communication channels in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in messages likely to violate anti-harassment policies. Built-in classifiers currently support only English keywords in messages.
 
-Communication compliance built-in classifiers scan communications for terms and sentiment for the following types of language:
+Communication compliance built-in trainable and global classifiers scan communications for terms, images, and sentiment for the following types of language and content:
 
 - **Threat**: Scans for threats to commit violence or physical harm to a person or property.
-- **Harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin.
+- **Targeted harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin.
 - **Profanity**: Scans for profane expressions that embarrass most people.
+- **Adult images**: Scans for images which are sexually explicit in nature.
+- **Racy images**: Scans for images which are sexually suggestive in nature, but contain less explicit content than images deemed Adult.
+- **Gory images**: Scans for images that depict violence and gore.
 
-The built-in classifiers don't provide an exhaustive list of terms across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update classifiers at its discretion. While classifiers may assist your organization in monitoring these areas, classifiers aren't intended to provide your organization's sole means of monitoring or addressing such language. Your organization, not Microsoft, remains responsible for all decisions related to scanning and blocking language in these areas.
+The *Adult*, *Racy*, and *Gory* image classifiers scan files in .JPEG, .PNG, .GIF, and .BMP formats. The size for image files must less than 4 megabytes (MB) and the dimensions of the images must be greater than 50x50 pixels and greater than 50 kilobytes (KB) for the image to qualify for evaluation. Image identification is supported for Exchange Online email messages and Microsoft Teams channels and chats.
 
-For information about classifiers in Microsoft 365, see [Classifiers](classifier-getting-started-with.md).
+The built-in trainable and global classifiers don't provide an exhaustive list of terms or images across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update classifiers at its discretion. While classifiers may assist your organization in monitoring these areas, classifiers aren't intended to provide your organization's sole means of monitoring or addressing such language or imagery. Your organization, not Microsoft, remains responsible for all decisions related to scanning and blocking language and images in these areas.
+
+For information about trainable classifiers in Microsoft 365, see [Getting started with trainable classifiers](classifier-getting-started-with.md).
 
 ### Conditional settings
 <a name="ConditionalSettings"> </a>
@@ -190,11 +211,20 @@ If you enter multiple conditions, Microsoft 365 uses all the conditions together
 
 If you want to reduce the amount of content to review, you can specify a percentage of all the communications governed by a communication compliance policy. A real-time, random sample of content is selected from the total percentage of content that matches chosen policy conditions. If you want reviewers to review all items, you can configure **100%** in a communication compliance policy.
 
-## Notices
+## Privacy (preview)
+
+Protecting the privacy of users that have policy matches is important and can help promote objectivity in data investigation and analysis reviews for communication compliance alerts. This setting applies only to user names displayed the communication compliance solution. It does not affect how names are displayed in other compliance solutions or admin center.
+
+For users with a communication compliance match, you can choose one of the following settings in **Communication compliance settings**:
+
+- **Show anonymized versions of usernames**: User names are anonymized to prevent admins, analysts, data investigators, and reviewers from seeing who is associated with policy alerts. For example, a user 'Grace Taylor' would appear with a randomized pseudonym such as 'AnonIS8-988' in all areas of the communication compliance experience. Choosing this setting anonymizes all users with current and past policy matches and applies to all policies. User profile information in the communication compliance alert details will not be available when this option is chosen. However, user names are displayed when adding new users to existing policies or when assigning users to new policies. If you choose to turn off this setting, user names are displayed for all users that have current or past policy matches.
+- **Do not show anonymized versions of usernames**: User names are displayed for all current and past policy matches for communication compliance alerts. User profile information (the name, title, alias, and organization or department) is displayed for the user for all insider risk management alerts and cases.
+
+## Notice templates
 
 You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices can only be sent to the employee email address associated with the policy match that generated the specific alert for remediation. When selecting a notice template to apply to a policy violation as part of the remediation workflow, you can choose to accept the field values defined in the template or overwrite the fields as needed.
 
-Notices templates are custom email templates where you can define the following message fields:
+Notices templates are custom email templates where you can define the following message fields in the **Communication compliance settings** area:
 
 |**Field**|**Required**| **Details** |
 |:-----|:-----|:-----|
@@ -278,6 +308,17 @@ If you'd like to change the severity level assigned in an alert policy for a spe
 6. Select **Save** to apply the new severity level to the policy.
 
 7. Select **Close** to exit the alert policy details page.
+
+## Reports (preview)
+
+The new Reports dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets is not exportable. 
+
+The Reports dashboard contains the following report widgets:
+
+- **Recent policy matches**: displays the number of matches by active policy over time.
+- **Resolved items by policy**: displays the the number of policy match alerts resolved by policy over time.
+- **Users with most policy matches**: displays the users (or anonymized usernames) and number of policy matches for a given period.
+- **Policy with most matches**: displays the policies and the number of matches for a given period, ranked highest to lowest for matches.
 
 ## Audit
 
