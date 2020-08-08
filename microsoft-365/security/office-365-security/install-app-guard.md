@@ -72,21 +72,6 @@ Guard](https://docs.microsoft.com/en-us/windows/security/threat-protection/micro
 
 ### Enable Application Guard for Office 365
 
-1.  Download and run **Application Guard for Office Feature enablement package**
-    on the device. This will install a group policy for Application Guard for
-    Office feature enablement.
-
-    ![Local Group Policy Editor showing AG](../../media/ag01-deploy.png)
-
-   
-2.  Set this group policy to **Enabled**.
-
-    ![KB4559004 Issue 001 Preview](../../media/ag02-deploy.png)
-
-    
-    >[!NOTE] 
-    >Steps 1 and 2 are only required on Windows 10 cumulative update
-KB4568831. In future 20H1 Windows updates, this step will be made redundant.
 
 1.  Download and install **Windows 10 cumulative update KB4568831**. You can
     choose to reboot the system now or after step 5.
@@ -133,7 +118,7 @@ organization](https://docs.microsoft.com/en-us/windows/privacy/configure-windows
 
 Before confirming that the Application Guard for Office is enabled, launch Word,
 Excel, or PowerPoint on a device where the policies have been deployed and make
-sure the product is activated. You may need to use your work identity to first
+sure Office is activated. You may need to use your work identity to first
 activate the Office product.
 
 To confirm that Application Guard for Office is now enabled, launch any Office
@@ -290,10 +275,20 @@ service](https://docs.microsoft.com/en-us/windows/security/threat-protection/mic
     after installation. This is required for Application Guard to validate the
     license.
 
-## Known issues in preview
+## Performance optimizations for Application Guard 
 
-* Hyperlinks inside files opened in Application Guard don’t work. Users can
-    copy and paste links into the browser as a workaround.
+Application Guard for Office uses a virtualized container to isolate untrusted documents away from the system. The process of creating the container and setting up Application Guard container to open Office documents has a performance overhead that can negatively impact a user’s experience as they open an  untrusted document. This section provides an overview of the performance optimization to help administrators diagnose reports from users related to performance of Office or the overall system when Application Guard for Office is enabled. 
+
+To provide users with a performant file open experience, Application Guard for Office uses logic to pre-create a container for users when the following heuristic is met on a system: A user has opened a file in either Protected View or Application Guard in the past 28 days. 
+
+When this heuristic is met, Office will pre-create an Application Guard container for the user after they log in to Windows. When this pre-create operation is in progress, the system may experience slow performance which will resolve soon as the operation completes. 
+
+ 
+
+>[!NOTE] 
+>The hints needed for the heuristic used to pre-create the container is created by Office applications as a user uses these applications. In a case where a user installs Office on a new system on which Application Guard is enabled, Office will not pre-create the container until after the first time a user opens an untrusted document on this system. The user will observe that this first file takes longer to open in Application Guard. 
+
+## Known issue in preview
 
 * .NET updates cause files to fail to open in Application Guard. As a
     workaround, users can reboot their device when this issue is encountered.
