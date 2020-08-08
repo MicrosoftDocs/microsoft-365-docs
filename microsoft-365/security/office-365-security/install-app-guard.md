@@ -76,12 +76,12 @@ Guard](https://docs.microsoft.com/en-us/windows/security/threat-protection/micro
     on the device. This will install a group policy for Application Guard for
     Office feature enablement.
 
-    ![Local Group Policy Editor showing AG](media/ag01-deploy.png)
+    ![Local Group Policy Editor showing AG](../../media/ag01-deploy.png)
 
    
 2.  Set this group policy to **Enabled**.
 
-    ![KB4559004 Issue 001 Preview](media/ag02-deploy.png)
+    ![KB4559004 Issue 001 Preview](../../media/ag02-deploy.png)
 
     
     >[!NOTE] 
@@ -95,14 +95,14 @@ KB4568831. In future 20H1 Windows updates, this step will be made redundant.
     select **OK**. Enabling the Application Guard feature will prompt a system
     reboot. You can choose to reboot the system now or after step 5.
 
-    ![Windows Features dialog box showing AG](media/ag03-deploy.png)
+    ![Windows Features dialog box showing AG](../../media/ag03-deploy.png)
 
 3.  Look for the Microsoft Defender Application Guard in Managed Mode group
     policy located at **Computer Configuration\\Administrative
     Templates\\Windows Components\\Microsoft Defender Application Guard**. Turn on this policy by setting the value under Options as **2** or **3** then
     clicking **OK** or **Apply**.
 
-    ![Turn on AG in Managed Mode](media/ag04-deploy.png)
+    ![Turn on AG in Managed Mode](../../media/ag04-deploy.png)
   
 
 1.  Reboot the system.
@@ -115,15 +115,15 @@ device:
 
 1.  Open **Settings** from the Start menu.
 
-    ![Start menu](media/ag05-diagnostic.png)
+    ![Start menu](../../media/ag05-diagnostic.png)
 
 2.  On **Windows Settings**, select **Privacy**.
 
-    ![Windows Settings menu](media/ag06-diagnostic.png)
+    ![Windows Settings menu](../../media/ag06-diagnostic.png)
 
 3.  Under Privacy, select **Diagnostics & feedback** and select **Full**.
 
-    ![Diagnostics and feedback menu](media/ag07-diagnostic.jpg)
+    ![Diagnostics and feedback menu](../../media/ag07-diagnostic.jpg)
 
 For more on configuring Windows diagnostic settings, refer to [Configuring
 Windows diagnostic data in your
@@ -146,13 +146,13 @@ like the one below. It may show for some time while Application Guard is being
 activated and the file is being opened. Subsequent launches of untrusted files
 should be faster.
 
-![Office app splash screen](media/ag08-confirm.png)
+![Office app splash screen](../../media/ag08-confirm.png)
 
 
 Upon being opened, the file should display a few visual indicators that
 indicate that the file was opened inside Application Guard.
 
-![Doc file showing small App Guard note](media/ag09-confirm.png)
+![Doc file showing small App Guard note](../../media/ag09-confirm.png)
 
 
 ## Configure Application Guard for Office
@@ -267,7 +267,7 @@ service](https://docs.microsoft.com/en-us/windows/security/threat-protection/mic
     an error like the prompt below. To enable an untrusted document to access
     trusted resources, remove Application Guard protection from the document.
 
-    ![Dialog box saying To help you keep safe, this feature is not available](media/ag10-limitations.png)
+    ![Dialog box saying To help you keep safe, this feature is not available](../../media/ag10-limitations.png)
 
     
 * Active content in documents like macros and ActiveX controls are disabled in
