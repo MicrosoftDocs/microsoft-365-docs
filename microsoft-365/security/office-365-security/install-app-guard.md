@@ -245,12 +245,7 @@ service](https://docs.microsoft.com/en-us/windows/security/threat-protection/mic
 
 ## Limitations
 
-* Application Guard isolates untrusted documents from accessing trusted
-    corporate resources, intranet, and other trusted files present on the
-    desktop. As a result, if an untrusted document tries to connect to a trusted
-    resource, intranet, or a linked file on a desktop, it will fail and produce
-    an error like the prompt below. To enable an untrusted document to access
-    trusted resources, remove Application Guard protection from the document.
+* Application Guard isolates untrusted documents from accessing trusted corporate resources, intranet, and other trusted files present on the    computer. As a result, if an untrusted document tries to connect to a trusted resource, intranet, or a linked file on a computer, it will fail and produce an error like the prompt below. To enable an untrusted document to access trusted resources, remove Application Guard protection from the document.
 
     ![Dialog box saying To help you keep safe, this feature is not available](../../media/ag10-limitations.png)
 
@@ -283,7 +278,6 @@ To provide users with a performant file open experience, Application Guard for O
 
 When this heuristic is met, Office will pre-create an Application Guard container for the user after they log in to Windows. When this pre-create operation is in progress, the system may experience slow performance which will resolve soon as the operation completes. 
 
- 
 
 >[!NOTE] 
 >The hints needed for the heuristic used to pre-create the container is created by Office applications as a user uses these applications. In a case where a user installs Office on a new system on which Application Guard is enabled, Office will not pre-create the container until after the first time a user opens an untrusted document on this system. The user will observe that this first file takes longer to open in Application Guard. 
