@@ -72,17 +72,31 @@ Guard](https://docs.microsoft.com/en-us/windows/security/threat-protection/micro
 
 ### Enable Application Guard for Office 365
 
+1.  Download and run **Application Guard for Office Feature enablement package**
+    on the device. This will install a group policy for Application Guard for
+    Office feature enablement.
 
-1.  Download and install **Windows 10 cumulative update KB4568831**. You can
+    ![Local Group Policy Editor showing AG](../../media/ag01-deploy.png)
+
+ 
+2.  Set this group policy to **Enabled**.
+
+    ![A screenshot of a social media post Description automatically generated](../../media/ag02-deploy.png)
+    
+
+    >[!NOTE] 
+    >Steps 1 and 2 are only required on Windows 10 cumulative update KB4568831. In future 20H1 Windows updates, this step will be made redundant.
+
+3.  Download and install **Windows 10 cumulative update KB4568831**. You can
     choose to reboot the system now or after step 5.
 
-2.  Select **Microsoft Defender Application Guard** under Windows Features and
+4.  Select **Microsoft Defender Application Guard** under Windows Features and
     select **OK**. Enabling the Application Guard feature will prompt a system
     reboot. You can choose to reboot the system now or after step 5.
 
     ![Windows Features dialog box showing AG](../../media/ag03-deploy.png)
 
-3.  Look for the Microsoft Defender Application Guard in Managed Mode group
+5.  Look for the Microsoft Defender Application Guard in Managed Mode group
     policy located at **Computer Configuration\\Administrative
     Templates\\Windows Components\\Microsoft Defender Application Guard**. Turn on this policy by setting the value under Options as **2** or **3** then
     clicking **OK** or **Apply**.
@@ -90,7 +104,7 @@ Guard](https://docs.microsoft.com/en-us/windows/security/threat-protection/micro
     ![Turn on AG in Managed Mode](../../media/ag04-deploy.png)
   
 
-1.  Reboot the system.
+6.  Reboot the system.
 
 ### Set Diagnostics & feedback to send full data
 
@@ -272,15 +286,15 @@ service](https://docs.microsoft.com/en-us/windows/security/threat-protection/mic
 
 ## Performance optimizations for Application Guard 
 
-Application Guard for Office uses a virtualized container to isolate untrusted documents away from the system. The process of creating the container and setting up Application Guard container to open Office documents has a performance overhead that can negatively impact a user’s experience as they open an  untrusted document. This section provides an overview of the performance optimization to help administrators diagnose reports from users related to performance of Office or the overall system when Application Guard for Office is enabled. 
+Application Guard for Office uses a virtualized container to isolate untrusted documents away from the system. The process of creating A container and setting up the Application Guard container to open Office documents has a performance overhead that can negatively impact a user’s experience as they open an  untrusted document. This section provides an overview of the performance optimization to help administrators diagnose reports from users related to performance of Office or the overall system when Application Guard for Office is enabled. 
 
-To provide users with a performant file open experience, Application Guard for Office uses logic to pre-create a container for users when the following heuristic is met on a system: A user has opened a file in either Protected View or Application Guard in the past 28 days. 
+To provide users with the expected file opening experience, Application Guard for Office uses logic to pre-create a container for users when the following heuristic is met on a system: A user has opened a file in either Protected View or Application Guard in the past 28 days. 
 
 When this heuristic is met, Office will pre-create an Application Guard container for the user after they log in to Windows. When this pre-create operation is in progress, the system may experience slow performance which will resolve soon as the operation completes. 
 
 
 >[!NOTE] 
->The hints needed for the heuristic used to pre-create the container is created by Office applications as a user uses these applications. In a case where a user installs Office on a new system on which Application Guard is enabled, Office will not pre-create the container until after the first time a user opens an untrusted document on this system. The user will observe that this first file takes longer to open in Application Guard. 
+>The hints needed for the heuristic used to pre-create the container is created by Office applications as a user uses these applications. If a user installs Office on a new system where Application Guard is enabled, Office will not pre-create the container until after the first time a user opens an untrusted document on this system. The user will observe that this first file takes longer to open in Application Guard. 
 
 ## Known issue in preview
 
