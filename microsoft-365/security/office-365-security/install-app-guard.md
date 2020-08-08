@@ -210,7 +210,7 @@ encouraged to submit your feedback via Feedback Hub:
         traces to be collected from within the Application Guard container.
 
     3.  Click **Start recording** and wait for the tile to stop spinning and say
-        "Stop recording".
+        *Stop recording*.
 
     4.  Fully reproduce the issue with Application Guard. This might include
         attempting to launch an Application Guard instance and waiting until it
