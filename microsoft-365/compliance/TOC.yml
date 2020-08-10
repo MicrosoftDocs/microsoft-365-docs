@@ -277,12 +277,6 @@
               href: archive-linkedin-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
-        - name: Globanet data connectors
-          items:  
-            - name: Slack eDiscovery
-              href: archive-slackediscovery-data.md    
-            - name: Zoom Meetings
-              href: archive-zoommeetings-data.md
         - name: TeleMessage data connectors
           items:  
             - name: Android
