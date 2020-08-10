@@ -131,12 +131,16 @@
                   href: mtp/advanced-hunting-best-practices.md
                 - name: Work with query results
                   href: mtp/advanced-hunting-query-results.md
+                - name: Take action on query results
+                  href: mtp/advanced-hunting-take-action.md
                 - name: Use shared queries
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: Hunt on devices and emails
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Go hunt
                   href: mtp/advanced-hunting-go-hunt.md
+                - name: Extend data coverage
+                  href: mtp/advanced-hunting-extend-data.md
                 - name: Data schema
                   items: 
                     - name: Understand the schema
@@ -315,6 +319,8 @@
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: Preset security policies
                   href: ./office-365-security/preset-security-policies.md
+                - name: Configuration analyzer for preset security policies
+                  href: ./office-365-security/configuration-analyzer-for-security-policies.md
                 - name: Anti-spam message headers
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: How policies and protections are combined
@@ -325,7 +331,7 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: Use the delist portal to remove yourself from the blocked senders list
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-                - name: Manage URLs and files in the Tenant Allow/Block List
+                - name: Manage URLs in the Tenant Allow/Block List
                   href: ./office-365-security/tenant-allow-block-list.md
             - name: Anti-phishing protection
               href: ./office-365-security/anti-phishing-protection.md
@@ -425,7 +431,7 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Remediate malicious email
               href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
-            - name: View and read your ATP reports
+            - name: View ATP reports in the Security & Compliance Center
               href: ./office-365-security/view-reports-for-atp.md
             - name: Understanding latest attacks with threat analytics
               href: ./mtp/latest-attack-campaigns.md
@@ -486,28 +492,30 @@
             - name: Mail flow insights in the Security & Compliance Center
               href: ./office-365-security/mail-flow-insights-v2.md
               items: 
-                - name: Mail flow map report
+                - name: Auto-forwarded messages insight
+                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
+                - name: Fix possible mail loop insight
+                  href: ./office-365-security/mfi-mail-loop-insight.md
+                - name: Fix slow mail flow rules insight
+                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md  
+                - name: Mail flow map
                   href: ./office-365-security/mfi-mail-flow-map-report.md
-                - name: Top domain mail flow status insight
-                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
-                - name: SMTP Auth clients report
-                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
-                - name: Fix sender domain insight
-                  href: ./office-365-security/mfi-sender-domain-insight.md
-                - name: Non-delivery report
-                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: New domains being forwarded email insight
+                  href: ./office-365-security/mfi-new-domains-being-forwarded-email.md
+                - name: New users forwarding email insight
+                  href: ./office-365-security/mfi-new-users-forwarding-email.md
                 - name: Non-accepted domain report
                   href: ./office-365-security/mfi-non-accepted-domain-report.md
-                - name: Outbound and inbound mail flow
+                - name: Non-delivery report
+                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: Outbound and inbound mail flow insight
                   href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
-                - name: Queue alerts and Queues
+                - name: Queues insight
                   href: ./office-365-security/mfi-queue-alerts-and-queues.md
-                - name: Auto-forwarded messages report
-                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
-                - name: Mail loop insight
-                  href: ./office-365-security/mfi-mail-loop-insight.md
-                - name: Slow mail flow rules insight
-                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: SMTP Auth clients insight and report
+                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
+                - name: Top domain mail flow status insight
+                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
         - name: Security solutions
           items: 
             - name: Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
