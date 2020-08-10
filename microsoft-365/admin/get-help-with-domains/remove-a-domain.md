@@ -216,8 +216,8 @@ If you have hundreds or thousands of users, use PowerShell to query for all user
 
 > [!NOTE]
 > You can't remove the [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) domain from your account.
-  
-Still not working? Your domain might need to be manually removed. [Give us a call](../contact-support-for-business-products.md) and we'll help you take care of it!
+
+You get an error message when you try to remove a domain from Office 365 or if this is Still not working? Your domain might need to be manually removed. [Give us a call](../contact-support-for-business-products.md) and we'll help you take care of it!
   
 ::: moniker-end
 
