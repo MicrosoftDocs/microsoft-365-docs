@@ -261,20 +261,22 @@
       items: 
         - name: Overview of archiving third-party data
           href: archiving-third-party-data.md
-        - name: Archive Bloomberg Message data (preview)
-          href: archive-bloomberg-message-data.md 
-        - name: Archive Facebook data (preview)
-          href: archive-facebook-data-with-sample-connector.md
-        - name: Import HR data (preview)
-          href: import-hr-data.md
-        - name: Archive ICE Chat data (preview)
-          href: archive-icechat-data.md 
-        - name: Archive Instant Bloomberg data
-          href: archive-instant-bloomberg-data.md
-        - name: Archive LinkedIn data
-          href: archive-linkedin-data.md
-        - name: Archive Twitter data (preview)
-          href: archive-twitter-data-with-sample-connector.md
+        - name: Microsoft data connectors
+          items:  
+            - name: Bloomberg Message
+              href: archive-bloomberg-message-data.md 
+            - name: Facebook Business 
+              href: archive-facebook-data-with-sample-connector.md
+            - name: HR data 
+              href: import-hr-data.md
+            - name: ICE Chat
+              href: archive-icechat-data.md 
+            - name: Instant Bloomberg
+              href: archive-instant-bloomberg-data.md
+            - name: LinkedIn
+              href: archive-linkedin-data.md
+            - name: Twitter
+              href: archive-twitter-data-with-sample-connector.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
         - name: Search for third-party data
@@ -317,7 +319,7 @@
           href: bulk-create-publish-labels-using-powershell.md
         - name: Start retention when an event occurs
           href: event-driven-retention.md
-        - name: Manage the lifecycle of SharePoint documents
+        - name: Use retention labels to manage document lifecycles
           href: auto-apply-retention-labels-scenario.md
         - name: Manage disposition of data
           href: disposition.md
@@ -335,14 +337,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Delete an inactive mailbox
           href: delete-an-inactive-mailbox.md
-    - name: Monitor data governance
-      items: 
-        - name: View label activity for documents
-          href: view-label-activity-for-documents.md
-        - name: View label usage with label analytics
-          href: label-analytics.md
-        - name: View the data governance reports
-          href: view-the-data-governance-reports.md
     - name: More information about data governance
       items: 
         - name: Watch videos from the Microsoft Data Governance team
