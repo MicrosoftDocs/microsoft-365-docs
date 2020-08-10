@@ -326,8 +326,18 @@ In this example, in order to achieve this result:
    > sender@**contoso.com**
 
    > d=**contoso.com**
+   
+## Identify domains that do not send email
+
+Organisations should explicitly state if a domain does not send emails by specifying v=DKIM1; p= in the DKIM record for those domains. This advises receiving mail servers that there are no valid public keys for that domain and any emails
+claiming to be from it should be rejected. This should be done for each domain and subdomain using wildcard DKIM
+
+For example, The dkim would like  *._domainkey.SubDomainThatShouldntSendMail.contoso.com. TXT "v=DKIM1; p="
+
 
 ## Next steps: After you set up DKIM for Microsoft 365
 <a name="DKIMNextSteps"> </a>
 
 Although DKIM is designed to help prevent spoofing, DKIM works better with SPF and DMARC. Once you have set up DKIM, if you have not already set up SPF you should do so. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md). Next, see [Use DMARC to validate email](use-dmarc-to-validate-email.md). [Anti-spam message headers](anti-spam-message-headers.md) includes the syntax and header fields used by Microsoft 365 for DKIM checks.
+
+
