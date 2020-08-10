@@ -40,7 +40,7 @@ If you're running Active Directory on premises, you need to install the Azure AT
 
 | Data | Description | Schema table | How to configure |
 | --- | --- | --- | --- |
-| Domain controller | Data from on-premises Active Directory sent to Azure ATP, enriching identity-related information, such as account details, logon activity, and Active Directory queries | Multiple tables, including [IdentityInfo](advanced-hunting-identityinfo-table.md), [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), and [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | [Install the Azure ATP sensor](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)|
+| Domain controller | Data from on-premises Active Directory sent to Azure ATP, enriching identity-related information, such as account details, logon activity, and Active Directory queries | Multiple tables, including [IdentityInfo](advanced-hunting-identityinfo-table.md), [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), and [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Install the Azure ATP sensor](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)<br>- [Turn on relevant Windows Events](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection) |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

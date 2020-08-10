@@ -32,7 +32,7 @@ Every year, Microsoft prepares documentation and submits evidence to attest that
 
 The appointment of Microsoft services to the Digital Marketplace means that UK government agencies and partners can use in-scope services to store and process UK OFFICIAL government data, most government data. In addition, there are now more than 450 Microsoft partners included in G-Cloud who are resellers of Microsoft cloud services. They can directly assert the compliance of in-scope services with the 14 principles in their own applications. Customers and partners, however, will need to achieve their own compliance for any components that are not included in the attestation and determination of compliance for Microsoft cloud services.
 
-Learn how to accelerate your United Kingdom G-Cloud v6 deployment with our Azure Security and Compliance Blueprint: [Download the Azure Blueprint UK G-Cloud Principle Implementation Guidance](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
+ [14 Cloud Security Controls for UK cloud using Microsoft Azure](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/) provides customer strategies to move their services to Azure and help meet their UK obligations mandated by the CESG/NSCS. The whitepaper provides insight into how Azure can be used to help address the 14 controls outlined in the cloud security principals, and outlines how customers can move faster and achieve more while saving money as they adopt Microsoft Azure services.
 
 ## Microsoft in-scope cloud services
 

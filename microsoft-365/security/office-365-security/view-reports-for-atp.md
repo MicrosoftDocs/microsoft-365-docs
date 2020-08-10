@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 # View reports for Office 365 Advanced Threat Protection
 
-Office 365 Advanced Threat Protection (ATP) organizations (for example, Microsoft 365 E5 subscriptions or ATP Plan 1 or ATP Plan 2 add-ons) contain a variety of security-related reports. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-atp-reports), you can view these reports in the Security & Compliance Center by going to **Reports** \> **Dashboard**. To go directly to the reports dashboard, open <https://protection.office.com/insightdashboard>.
+Office 365 Advanced Threat Protection (ATP) organizations (for example, Microsoft 365 E5 subscriptions or ATP Plan 1 or ATP Plan 2 add-ons) contain a variety of security-related reports. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-atp-reports), you can view these reports in the Security & Compliance Center by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
 
 ![The Reports dashboard in the Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -213,7 +213,7 @@ The **URL threat protection** report has two aggregated views that are refreshed
 
 - **URL click protection action**: Shows the number of URL clicks by users in the organization and the results of the click:
 
-  - **Blocked**
+  - **Blocked** (the user was blocked from navigating to the URL)
   - **Blocked and clicked through**
   - **Clicked through during scan**
 
@@ -222,7 +222,7 @@ The **URL threat protection** report has two aggregated views that are refreshed
   If you click **Filters**, you can modify the report with the following filters:
 
   - **Start date** and **End date**
-  - The available click protection actions, plus the value **Allowed** to see information for all URL clicks (not just blocked clicks).
+  - The available click protection actions, plus the value **Allowed** (the user was allowed to navigate to the URL).
 
   ![URL click protection action view in the URL threat protection report](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
