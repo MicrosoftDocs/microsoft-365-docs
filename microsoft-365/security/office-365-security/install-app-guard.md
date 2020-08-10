@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: "Get the latest in hardware-based isolation to prevent current and emerging attacks like document exploits or malicious links from disrupting employee productivity and enterprise security."
+description: "Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security."
 ---
 
 # Application Guard for Office 365 (public preview) for admins
@@ -42,61 +42,26 @@ instructions for Application Guard.
 
 ### Minimum software requirements
 
-#### Windows 10
+* **Windows 10**: Windows 10 Enterprise edition, Client Build version 2004 (20H1) build 19041
+* **Office**: Office Build version 16.0.13115.20000 or later
+* **Update package**: Windows 10 cumulative update KB4571744 pre-release package 
 
-* Windows 10 Client Build version 2004 (20H1) build 19041
-* Edition: Windows 10 Enterprise
+For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office Insider Preview builds, refer to [Getting started on deploying Office Insider builds](https://insider.office.com/en-us/business/deploy).
 
-#### Office
-
-Office Build version 16.0.13115.20000 or later
-
-To learn more about Office Insider Preview builds, refer to [Getting started on
-deploying Office Insider
-builds](https://insider.office.com/en-us/business/deploy).
-
-#### Updates and installation packages
-
-The following packages need to be applied to Windows 10:
-
-* [Windows 10 cumulative update KB4568831 pre-release package](https://support.microsoft.com/en-us/help/4568831/windows-10-update-kb4568831)
-    on Collaborate (Windows10.0-KB4568831-x64 (PreRelease.0.006).msu)
-
-* [Application Guard for Office Feature enablement package](http://download.microsoft.com/download/e/4/c/e4c1180a-fcff-462a-8324-4151c44973a8/Windows%20Preview%20-%20WDAG%20Office%20070920%2001.msi)
-
-For detailed system requirements, please refer to [System requirements for
-Microsoft Defender Application
-Guard](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard).
 
 ## Deploy Application Guard for Office 365
 
 ### Enable Application Guard for Office 365
 
-1.  Download and run **Application Guard for Office Feature enablement package**
-    on the device. This will install a group policy for Application Guard for
-    Office feature enablement.
+1.  Download and install **Windows 10 cumulative update KB4571744**. 
 
-    ![Local Group Policy Editor showing AG](../../media/ag01-deploy.png)
-
- 
-2.  Set this group policy to **Enabled**.
-
-    ![A screenshot of a social media post Description automatically generated](../../media/ag02-deploy.png)
-    
-
-    >[!NOTE] 
-    >Steps 1 and 2 are only required on Windows 10 cumulative update KB4568831. In future 20H1 Windows updates, this step will be made redundant.
-
-3.  Download and install **Windows 10 cumulative update KB4568831**. You can
-    choose to reboot the system now or after step 5.
-
-4.  Select **Microsoft Defender Application Guard** under Windows Features and
+2.  Select **Microsoft Defender Application Guard** under Windows Features and
     select **OK**. Enabling the Application Guard feature will prompt a system
-    reboot. You can choose to reboot the system now or after step 5.
+    reboot. You can choose to reboot now or after step 3.
 
     ![Windows Features dialog box showing AG](../../media/ag03-deploy.png)
 
-5.  Look for the Microsoft Defender Application Guard in Managed Mode group
+3.  Look for the Microsoft Defender Application Guard in Managed Mode group
     policy located at **Computer Configuration\\Administrative
     Templates\\Windows Components\\Microsoft Defender Application Guard**. Turn on this policy by setting the value under Options as **2** or **3** then
     clicking **OK** or **Apply**.
@@ -131,47 +96,45 @@ organization](https://docs.microsoft.com/en-us/windows/privacy/configure-windows
 ### Confirm that Application Guard is enabled and working
 
 Before confirming that the Application Guard for Office is enabled, launch Word,
-Excel, or PowerPoint on a device where the policies have been deployed and make
-sure Office is activated. You may need to use your work identity to first
-activate the Office product.
+Excel, or PowerPoint on a device where the policies have been deployed. Make
+sure Office is activated. You may need to use your work identity to activate the Office product first.
 
 To confirm that Application Guard for Office is now enabled, launch any Office
 application and open an untrusted document. For example, you can open a document
 downloaded from the internet or an email attachment from someone outside your
 organization.
 
-On the first launch of an untrusted file you may see an Office Splash screen
-like the one below. It may show for some time while Application Guard is being
+On the first launch of an untrusted file, you may see an Office Splash screen
+like the one below. It might show for some time while Application Guard is being
 activated and the file is being opened. Subsequent launches of untrusted files
 should be faster.
 
 ![Office app splash screen](../../media/ag08-confirm.png)
 
 
-Upon being opened, the file should display a few visual indicators that
-indicate that the file was opened inside Application Guard.
+Upon being opened, the file should display a few visual indicators that the file was opened inside Application Guard.
 
 ![Doc file showing small App Guard note](../../media/ag09-confirm.png)
 
 
 ## Configure Application Guard for Office
 
-Office supports the following policies to enable you to configure the
-capabilities of Application Guard for Office. Configuring these policies can
+Office supports the following policies to enable you to configure the capabilities of Application Guard for Office. Configuring these policies can
 disable some functionalities for files opened in Application Guard.
 
 | Policy                                                                          | Description                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Disable Application Guard for Office                                            | Enabling this policy will force Word, Excel, and PowerPoint to use the Protected View isolation container instead of Application Guard. This policy can be used to temporarily disable Application Guard when there are issues in leaving Application Guard enabled for Edge.                                  |
-| Prevent users from removing Application Guard protection on files               | Enabling this policy will remove the option within the Office application experience to disable Application Guard protection or open a file outside Application Guard. <br><br>**Note:** Users can still bypass this policy by manually removing Mark-of-the-web or by moving a document to a Trusted location. |
+| Prevent users from removing Application Guard protection on files               | Enabling this policy will remove the option (within the Office application experience) to disable Application Guard protection or open a file outside Application Guard. <br><br>**Note:** Users can still bypass this policy by manually removing the mark-of-the-web feature or by moving a document to a Trusted location. |
 | Restrict printing from documents opened in Application Guard                    | Enabling this policy will limit printers a user can print to from a file opened in Application Guard. For example, you can use this policy to restrict users to only print to PDF.                                                                                                                      |
 | Disable copy/paste for documents opened in Application Guard                    | Enabling this policy will prevent a user from copying and pasting content from a document opened in Application Guard to a document opened outside Application Guard.                                                                                                                                   |
 | Turn off camera and microphone access for documents opened in Application Guard | Enabling this policy will remove Office’s access to Camera and Microphone inside Application Guard.                                                                                                                                                                                                     |
 
 >[!NOTE] 
 >The following policies will require the user to log off and re-login to Windows to take effect:
-> *  Restrict printing for documents opened in Application Guard
+> 
 > *  Disable copy/paste for documents opened in Application Guard
+>*  Restrict printing for documents opened in Application Guard
 > *  Turn off camera and mic access to documents opened in Application Guard
 
 ## Submit feedback
@@ -183,10 +146,9 @@ encouraged to submit your feedback via Feedback Hub:
 
 1.  Open the **Feedback Hub app** and sign in.
 
-2.  If you get an error dialog while launching Application Guard for Office,
-    click **Report to Microsoft** in the error dialog to start a new feedback
+2.  If you get an error dialog while launching Application Guard for Office, select **Report to Microsoft** in the error dialog to start a new feedback
     submission. Otherwise, navigate to <https://aka.ms/wdagoffice-fb> to select
-    the correct category for Application Guard for Office, then click **+ Add
+    the correct category for Application Guard for Office, then select **+ Add
     new feedback** near the top right.
 
 3.  Fill in the **Summarize your feedback** box if it isn’t already filled in
@@ -206,17 +168,17 @@ encouraged to submit your feedback via Feedback Hub:
     1. Expand the **Recreate my problem** tile.
 
     2.  If the issue you’re experiencing occurs while Application Guard is
-        running, open an Application Guard instance. This will allow additional
+        running, open an Application Guard instance. Doing this will allow additional
         traces to be collected from within the Application Guard container.
 
-    3.  Click **Start recording** and wait for the tile to stop spinning and say
+    3.  Select **Start recording** and wait for the tile to stop spinning and say
         *Stop recording*.
 
     4.  Fully reproduce the issue with Application Guard. This might include
         attempting to launch an Application Guard instance and waiting until it
         fails, or reproducing an issue in a running Application Guard instance.
 
-    5.  Click the **Stop recording** tile.
+    5.  Select the **Stop recording** tile.
 
     6.  Keep any running Application Guard instance/s open, even until a few
         minutes after submission, so that container diagnostics can also be
@@ -224,15 +186,17 @@ encouraged to submit your feedback via Feedback Hub:
 
 8.  Attach any relevant screenshots or files related to the problem.
 
-9.  Click **Submit**.
+9.  Select **Submit**.
 
-10. Important: Click the **Feedback** tab in the left-hand menu and select **My
+10. Select the **Feedback** tab in the left-hand menu and go to **My
     Feedback**.
 
-11. Important: Find the feedback you filed, open it, and click **Share**.
+11. Find the feedback you filed, open it, and select **Share**.
 
-12. Important: Send us the generated URL so that we can quickly find your
-    feedback.
+12. Send us the generated URL.
+
+>[!IMPORTANT]
+>Doing steps 10 to 12 ensures that your feedback can be found quickly. 
 
 ### Submit feedback via Office Customer Voice
 
@@ -275,9 +239,9 @@ service](https://docs.microsoft.com/en-us/windows/security/threat-protection/mic
 * Files that are protected by Information Rights Management (IRM) continue to
     open in Protected View.
 
-* In the document’s info section, the "Last Modified By" property may display
+* In the document's info section, the *Last Modified By* property may display
     WDAGUtilityAccount as the user. This is the anonymous user configured in
-    Application Guard given that the desktop user’s identity is not shared
+    Application Guard because the desktop user's identity is not shared
     inside the Application Guard container.
 
 * Network connectivity is required for the first launch of Application Guard
@@ -286,15 +250,18 @@ service](https://docs.microsoft.com/en-us/windows/security/threat-protection/mic
 
 ## Performance optimizations for Application Guard 
 
-Application Guard for Office uses a virtualized container to isolate untrusted documents away from the system. The process of creating A container and setting up the Application Guard container to open Office documents has a performance overhead that can negatively impact a user’s experience as they open an  untrusted document. This section provides an overview of the performance optimization to help administrators diagnose reports from users related to performance of Office or the overall system when Application Guard for Office is enabled. 
+This section provides an overview of the performance optimizations used in Application Guard. This information can help administrators diagnose reports from users related to the performance of Office or the overall system when Application Guard is enabled. 
 
-To provide users with the expected file opening experience, Application Guard for Office uses logic to pre-create a container for users when the following heuristic is met on a system: A user has opened a file in either Protected View or Application Guard in the past 28 days. 
+Application Guard uses a virtualized container to isolate untrusted documents away from the system. The process of creating a container and setting up the Application Guard container to open Office documents has a performance overhead that might negatively impact user experience when users open an  untrusted document. 
 
-When this heuristic is met, Office will pre-create an Application Guard container for the user after they log in to Windows. When this pre-create operation is in progress, the system may experience slow performance which will resolve soon as the operation completes. 
+
+To provide users with the expected file opening experience, Application Guard uses logic to pre-create a container when the following heuristic is met on a system: A user has opened a file in either Protected View or Application Guard in the past 28 days. 
+
+When this heuristic is met, Office will pre-create an Application Guard container for the user after they log in to Windows. When this pre-create operation is in progress, the system may experience slow performance. This will resolve as soon as the operation completes. 
 
 
 >[!NOTE] 
->The hints needed for the heuristic used to pre-create the container is created by Office applications as a user uses these applications. If a user installs Office on a new system where Application Guard is enabled, Office will not pre-create the container until after the first time a user opens an untrusted document on this system. The user will observe that this first file takes longer to open in Application Guard. 
+>The hints needed for the heuristic used to pre-create the container are generated by Office applications as a user uses them. If a user installs Office on a new system where Application Guard is enabled, Office will not pre-create the container until after the first time a user opens an untrusted document on the system. The user will observe that this first file takes longer to open in Application Guard. 
 
 ## Known issue in preview
 
