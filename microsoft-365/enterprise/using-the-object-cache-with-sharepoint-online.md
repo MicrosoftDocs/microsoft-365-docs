@@ -53,7 +53,7 @@ Since you shouldn't rely on caching in SharePoint Online, you should evaluate al
     
 - [Minification and bundling in SharePoint Online](minification-and-bundling-in-sharepoint-online.md)
     
-- [Using content delivery networks](using-content-delivery-networks-with-sharepoint-online.md)
+- [Use the Office 365 Content Delivery Network (CDN) with SharePoint Online](use-office-365-cdn-with-spo.md)
     
 - [Delay loading images and JavaScript in SharePoint Online](delay-loading-images-and-javascript-in-sharepoint-online.md)
     

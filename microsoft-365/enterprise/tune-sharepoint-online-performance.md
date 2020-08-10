@@ -43,8 +43,6 @@ Use these articles to fine tune SharePoint Online performance.
 
 - [Minification and bundling in SharePoint Online](minification-and-bundling-in-sharepoint-online.md)
 
-- [Using content delivery networks](enterprise/use-office-365-cdn-with-spo.md)
-
 - [Use the Office 365 Content Delivery Network (CDN) with SharePoint Online](use-office-365-cdn-with-spo.md)
 
 - [Using Content Search Web Part instead of Content Query Web Part to improve performance in SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
