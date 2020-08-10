@@ -326,6 +326,16 @@ In this example, in order to achieve this result:
    > sender@**contoso.com**
 
    > d=**contoso.com**
+   
+## Identify domains that do not send email
+
+Organizations should explicitly state if a domain does not send email by specifying `v=DKIM1; p=` in the DKIM record for those domains. This advises receiving email servers that there are no valid public keys for the domain, and any email claiming to be from that domain should be rejected. You should do this for each domain and subdomain using a wildcard DKIM.
+
+For example, the DKIM record would look like this:
+
+```text
+*._domainkey.SubDomainThatShouldntSendMail.contoso.com. TXT "v=DKIM1; p="
+```
 
 ## Next steps: After you set up DKIM for Microsoft 365
 <a name="DKIMNextSteps"> </a>
