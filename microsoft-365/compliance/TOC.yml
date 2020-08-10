@@ -283,7 +283,7 @@
               href: archive-slackediscovery-data.md    
             - name: Zoom Meetings
               href: archive-zoommeetingsdata.md
-          - name: TeleMessage data connectors
+        - name: TeleMessage data connectors
           items:  
             - name: Android
               href: archive-android-archiver-data.md
