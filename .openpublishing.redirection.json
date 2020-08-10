@@ -911,6 +911,21 @@
       "source_path": "microsoft-365/Enterprise/using-azure-ad-for-SharePoint-Server-authentication.md",
       "redirect_url": "https://docs.microsoft.com/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial",
       "redirect_document_id": false  
-  }
+    },
+    {
+      "source_path": "microsoft-365/commerce/sign-up-for-office-365-trial.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/commerce/try-or-buy-microsoft-365",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/commerce/buy-another-subscription.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/commerce/try-or-buy-microsoft-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/buy-a-subscription-from-your-free-trial.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/commerce/try-or-buy-microsoft-365",
+      "redirect_document_id": false
+    }
   ]
 }
