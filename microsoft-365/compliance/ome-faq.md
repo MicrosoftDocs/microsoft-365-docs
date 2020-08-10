@@ -105,7 +105,7 @@ Yes. The maximum message size you can send with OME, including attachments, is 3
 
 You can attach any file type to a protected mail. With one exception, protection policies are applied only on the file formats mentioned in [File types supported by the Azure Information Protection client](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types). OME does not support the 97-2003 versions of the following Office programs: Word (.doc), Excel (.xls), and PowerPoint (.ppt).
 
-If a file format is supported, such as a Word, Excel, or a PowerPoint file, the file is always protected, even after the attachment has been downloaded by the recipient. For example, say an attachment is protected by Do Not Forward. The original recipient downloads the file, creates a message to a new recipient and attaches the file. When the new recipient receives the file, the recipient will not be able to open the protected file.
+If a file format is supported, such as a Word, Excel, or PowerPoint file, the file is always protected, even after the attachment has been downloaded by the recipient. For example, say an attachment is protected by Do Not Forward. The original recipient downloads the file, creates a message to a new recipient and attaches the file. When the new recipient receives the file, the recipient will not be able to open the protected file.
   
 ## Are PDF file attachments supported?
 
@@ -191,21 +191,32 @@ There are currently two known limitations:
 
 To ensure that automapping is enabled for Exchange Online
 
+1. [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx).
 
+2. Run the **SAMSON I NEED THE NAME** cmdlet:
+
+```powershell
+   WHATISTHENAMEOFTHECMDLET
+```
 
 To ensure that the user is assigned to the shared mailbox
 
+1. [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx).
 
+2. Run the Get-MailboxPermission cmdlet. This example returns permissions that the user Ayla has on a support mailbox.
 
+   ```powershell
+   Get-MailboxPermission -Identity support@contoso.com -User ayla@contoso.com
+   ```
 
 To assign the user to the shared mailbox
 
 1. [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx).
 
-2. Run the Add-MailboxPermission cmdlet with the Automapping parameter as follows:
+2. Run the Add-MailboxPermission cmdlet with the Automapping parameter. This example give Ayla full access permissions to a support mailbox.
 
    ```powershell
-   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter"> -SocialIdSignIn <$true|$false>
+   Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
    ```
    
 - You can't open attachments to emails that you receive on mobile devices by using Outlook mobile.
