@@ -108,6 +108,14 @@ When you disable or remove this Office Add-in, the Azure Information Protection 
 
 For information about which features are supported by the Azure Information Protection clients and the Office built-in labeling client, see [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure Information Protection documentation.
 
+## Office file types supported
+
+Built-in labeling supports file types for Word, Excel, and PowerPoint that uses the Open XML format (such as .docx and .xlsx) but not Microsoft Office 97-2003 format (such as .doc and .xls).
+
+The Azure Information Protection unified labeling client supports both Open XML format and Microsoft Office 97-2003 format.
+
+For other labeling solutions, check their documentation if you need to support file types older than the current Open XML format.
+
 ## Protection templates and sensitivity labels
 
 Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates), such as those you define for Office 365 Message Encryption, aren't visible in Office apps when you're using built-in labeling. This simplified experience reflects that there's no need to select a protection template, because the same settings are included with sensitivity labels that have encryption enabled.
