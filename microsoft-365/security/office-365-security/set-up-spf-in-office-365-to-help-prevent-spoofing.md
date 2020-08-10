@@ -84,6 +84,18 @@ Gather this information:
 
 4. Test your SPF TXT record.
 
+## How to handle Subdomains?
+
+It is important to note that you must set a separate record for each subdomain as subdomains do not inherit the SPF record of their top level domain.
+
+Using wildcard SPF records to protect non-existent domains
+An additional wildcard SPF record (*.) is required for every domain and subdomain to prevent adversaries sending
+emails claiming to be from a non-existent subdomain. 
+
+Examples of wildcard SPF records follow
+
+*.subdomain.contoso.com. IN TXT “v=spf1 –all”
+
 ## More information about SPF
 
 For advanced examples, a more detailed discussion about supported SPF syntax, spoofing, troubleshooting, and how Office 365 supports SPF, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
