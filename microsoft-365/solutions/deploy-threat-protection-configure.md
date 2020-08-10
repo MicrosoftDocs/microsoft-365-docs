@@ -151,7 +151,7 @@ With Office 365 ATP, people across your organization can communicate and collabo
 
 After you have set up and deployed your threat protection services and capabilities, your next step is to monitor threat detections, and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can monitor and managing security across your Microsoft identities, data, devices, apps, and infrastructure. 
 
-:::image type="content" source="../media/solutions-architecture-center/m365-security-center.png" alt-text="Microsoft 365 security center":::
+![Microsoft 365 security center](../media/solutions-architecture-center/m365-security-center.png)
 
 The Microsoft 365 security center is specifically intended for security admins and security operations teams. In the Microsoft 365 security center, you can:
 - View the overall security health of your organization with [Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
