@@ -236,6 +236,7 @@
       items: 
         - name: OldStructure
           items: 
+            - name: Get started
             - name: Protect against threats
               href: ./office-365-security/protect-against-threats.md
               items: 
@@ -533,18 +534,14 @@
                       href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
                     - name: Set up virtual certificate collection to validate S/MIME
                       href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
-        - name: Get started
+        - name: Overview
           items: 
             - name: Security roadmap
               href: ./office-365-security/security-roadmap.md
-            - name: Give users access to the Security center
-              href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
-            - name: Permissions in the Security & Compliance Center
-              href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
             - name: Configure your tenant for increased security
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
-        - name: Overview
-          items: 
+            - name: Permissions in the Security & Compliance Center
+              href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
             - name: New Microsoft 365 security center
               href: ./mtp/overview-security-center.md
         - name: Evaluate
@@ -570,6 +567,8 @@
         - name: Migrate
         - name: Security administration
           items: 
+            - name: Give users access to the Security center
+              href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
             - name: Use Admin Submission
               href: ./office-365-security/admin-submission.md
             - name: Remove blocked users from the Restricted Users portal
@@ -635,7 +634,7 @@
         - name: Employee training resources
     - name: Microsoft 365 for Enterprise
       href: https://docs.microsoft.com/microsoft-365/enterprise
-    - name: Microsoft 365 for business
+    - name: Microsoft 365 for Business
       href: https://docs.microsoft.com/microsoft-365/admin/admin-home
     - name: Microsoft 365 Compliance
       href: https://docs.microsoft.com/microsoft-365/compliance/
