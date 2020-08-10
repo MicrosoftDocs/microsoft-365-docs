@@ -34,7 +34,7 @@ description: "Learn how to route traffic to an existing public website hosted ou
 
 2. On the **Domains** page, select the domain and then choose **DNS Records**.
 
-3. Under **DNS settings**, select **Custom Records**,
+3. Under **DNS settings**, select **Custom Records**.
 
 4. Select **+ New custom record** and enter the following: 
     
