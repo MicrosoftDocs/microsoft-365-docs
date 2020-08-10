@@ -261,20 +261,40 @@
       items: 
         - name: Overview of archiving third-party data
           href: archiving-third-party-data.md
-        - name: Archive Bloomberg Message data (preview)
-          href: archive-bloomberg-message-data.md 
-        - name: Archive Facebook data (preview)
-          href: archive-facebook-data-with-sample-connector.md
-        - name: Import HR data (preview)
-          href: import-hr-data.md
-        - name: Archive ICE Chat data (preview)
-          href: archive-icechat-data.md 
-        - name: Archive Instant Bloomberg data
-          href: archive-instant-bloomberg-data.md
-        - name: Archive LinkedIn data
-          href: archive-linkedin-data.md
-        - name: Archive Twitter data (preview)
-          href: archive-twitter-data-with-sample-connector.md
+        - name: Microsoft data connectors
+          items:  
+            - name: Bloomberg Message
+              href: archive-bloomberg-message-data.md 
+            - name: Facebook Business 
+              href: archive-facebook-data-with-sample-connector.md
+            - name: HR data 
+              href: import-hr-data.md
+            - name: ICE Chat
+              href: archive-icechat-data.md 
+            - name: Instant Bloomberg
+              href: archive-instant-bloomberg-data.md
+            - name: LinkedIn
+              href: archive-linkedin-data.md
+            - name: Twitter
+              href: archive-twitter-data-with-sample-connector.md
+        - name: TeleMessage data connectors
+          items:  
+            - name: Android
+              href: archive-android-archiver-data.md
+            - name: AT&T Network
+              href: archive-att-network-archiver-data.md
+            - name: Bell Network
+              href: archive-bell-network-data.md
+            - name: Enterprise Number 
+              href: archive-enterprise-number-data.md
+            - name: O2 Network
+              href: archive-o2-network-data.md
+            - name: TELUS Network
+              href: archive-telus-network-data.md
+            - name: Verizon Network
+              href: archive-verizon-network-data.md
+            - name: WhatsApp
+              href: archive-whatsapp-data.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
         - name: Search for third-party data
