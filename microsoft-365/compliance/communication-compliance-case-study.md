@@ -76,7 +76,7 @@ Contoso IT administrators take the following steps to verify the licensing suppo
 
 There are five roles used to configure permissions to manage communication compliance features. To make Communication compliance available as a menu option in Microsoft 365 compliance center and to continue with these configuration steps, Contoso administrators are assigned the *Communication Compliance Admin* role.
 
-Contoso decides to create one custome role group and assign all the communication compliance roles to the group. This makes it easier for Contoso to get started quickly and best fits their compliance management requirements.
+Contoso decides to create one custom role group and assign all the communication compliance roles to the group. This makes it easier for Contoso to get started quickly and best fits their compliance management requirements.
 
 Contoso will create one role group that contains all the following communication compliance roles:
 
