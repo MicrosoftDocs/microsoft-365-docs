@@ -56,8 +56,8 @@ Gather this information:
 
 1. Ensure that you're familiar with the SPF syntax in the following table.
 
-   ||**If you're using...**|**Common for customers?**|**Add this...**|
-   |:-----|:-----|:-----|:-----|
+   ||If you're using...|Common for customers?|Add this...|
+   |---|---|---|---|
    |1|Any email system (required)|Common. All SPF TXT records start with this value|v=spf1|
    |2|Exchange Online|Common|include:spf.protection.outlook.com|
    |3|Exchange Online dedicated only|Not common|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
@@ -84,17 +84,15 @@ Gather this information:
 
 4. Test your SPF TXT record.
 
-## How to handle Subdomains?
+## How to handle subdomains?
 
-It is important to note that you must set a separate record for each subdomain as subdomains do not inherit the SPF record of their top level domain.
+It is important to note that you need to create a separate record for each subdomain as subdomains don't inherit the SPF record of their top level domain.
 
-Using wildcard SPF records to protect non-existent domains
-An additional wildcard SPF record (*.) is required for every domain and subdomain to prevent adversaries sending
-emails claiming to be from a non-existent subdomain. 
+An additional wildcard SPF record (`*.`) is required for every domain and subdomain to prevent attackers from sending email claiming to be from non-existent subdomains. For example:
 
-Examples of wildcard SPF records follow
-
-*.subdomain.contoso.com. IN TXT “v=spf1 –all”
+```text
+*.subdomain.contoso.com. IN TXT "v=spf1 –all"
+```
 
 ## More information about SPF
 
