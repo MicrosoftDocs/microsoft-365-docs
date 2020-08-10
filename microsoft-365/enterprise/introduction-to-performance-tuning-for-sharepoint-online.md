@@ -147,7 +147,7 @@ Check out the following articles for different SharePoint Online page customizat
     
 - [Minification and bundling in SharePoint Online](minification-and-bundling-in-sharepoint-online.md)
     
-- [Using content delivery networks](using-content-delivery-networks-with-sharepoint-online.md)
+- [Using content delivery networks](enterprise/use-office-365-cdn-with-spo.md)
     
 - [Using Content Search Web Part instead of Content Query Web Part to improve performance in SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
     
