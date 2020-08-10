@@ -11,11 +11,10 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
+- NOCSH
 ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
-f1.keywords:
-- NOCSH
 description: "The Microsoft 365 Networking Partner Program allows your device to become certified as working with Microsoft 365."
 hideEdit: true
 ---

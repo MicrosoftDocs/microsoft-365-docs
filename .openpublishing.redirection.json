@@ -906,6 +906,11 @@
       "source_path": "microsoft-365/security/office-365-security/mfi-sender-domain-insight.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-non-accepted-domain-report",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "microsoft-365/Enterprise/using-azure-ad-for-SharePoint-Server-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial",
+      "redirect_document_id": false  
+  }
   ]
 }
