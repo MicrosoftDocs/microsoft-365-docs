@@ -131,7 +131,7 @@ Just this month, we released a new site on [https://docs.microsoft.com](https://
 
 Well, we did it! We've taken the second step towards a unified roles experience and you can now manage Intune roles in the Microsoft 365 admin center. You can also leverage features such as the ability to search for roles and view role permissions. This means you don’t need two separate tools to manage roles for Microsoft 365 and Intune. When you sign into the Microsoft 365 admin center, you’ll see that there are two pivots on the Roles page, one for Azure AD and one for Intune.
 
-:::image type="content" source="../media/MAC-WN-IntuneRoles.png" alt-text="Roles page with the Intune pivot selected":::
+![Roles page with the Intune pivot selected](../media/MAC-WN-IntuneRoles.png)
 
 ### Sync Message Center posts to Planner
 
@@ -203,19 +203,19 @@ We've got two updates for Groups this month:
 
 We received a lot of feedback from admins about the how hard it is to assign licenses when adding users. We've made the first update to this fix and we've migrated to a more reliable behind-the-scenes service to process those requests. And if something goes wrong, you'll now get an error message that lets you to try again.
 
-:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Add user confirmation page with the error.":::
+![Add user confirmation page with the error.](../media/MAC-WN-ImprovedLicensing.png)
 
 ### Microsoft Teams home page card
 
 With the uptick in Teams usage, some orgs will get a pinned dashboard card that makes turning Teams on more discoverable. The card also has links to training and docs to help your org transition to remote work. Just go to the **Home** page to see the new card.
 
-:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Microsoft Teams home page card":::
+![Microsoft Teams home page card](../media/MAC-WN-TeamsCard.PNG)
 
 ### Customize your organization's SharePoint mobile app theme
 
 Using the Microsoft 365 admin center, you can now customize your organization's theme in SharePoint mobile app for iOS and SharePoint mobile app for Android. This feature conveniently provides a mobile intranet app experience that can match your SharePoint Online for employees on the go. Theme customization includes your logo image, navigation bar color, text and icon colors, and accent colors, making for easy recognition.
 
-:::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagram mapping the admin center settings to the mobile app.":::
+![Diagram mapping the admin center settings to the mobile app.](../media/MAC-WN-CustThemeSP.png)
 
 ### Improvements to the "Add a group" wizard
 
