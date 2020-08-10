@@ -55,8 +55,7 @@ If you found this video helpful, check out the [complete training series for sma
     
 4. On the **Email users a link to download Office** panel, select the users you want to email, and then **Email selected users**.
 
-    
-      :::image type="content" source="../media/sendemailtousers.png" alt-text="Select users to send email with Office download link.":::
+   ![Select users to send email with Office download link.](../media/sendemailtousers.png)
 
 ## For more on setting up and using Microsoft 365 Business Premium
 
