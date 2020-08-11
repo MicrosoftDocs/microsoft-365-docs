@@ -48,8 +48,8 @@ For more information on expedited de-provisioning, see [Cancel your subscription
 
 ## Related Links
 
-- [Data Destruction](office-365-data-destruction.md)
-- [Immutability in Office 365](office-365-data-immutability.md)
-- [Exchange Online Data Deletion](office-365-exchange-online-data-deletion.md)
-- [SharePoint Online Data Deletion](office-365-sharepoint-online-data-deletion.md)
-- [Skype for Business Data Deletion](office-365-skype-data-deletion.md)
+- [Data Destruction](microsoft-365-data-destruction.md)
+- [Immutability in Office 365](microsoft-365-data-immutability.md)
+- [Exchange Online Data Deletion](microsoft-365-exchange-online-data-deletion.md)
+- [SharePoint Online Data Deletion](microsoft-365-sharepoint-online-data-deletion.md)
+- [Skype for Business Data Deletion](microsoft-365-skype-data-deletion.md)

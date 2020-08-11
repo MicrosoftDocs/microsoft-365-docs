@@ -34,15 +34,15 @@ Use these articles to understand the key differences and to modify your edge dev
 
 See these articles for an overview of connectivity for Microsoft 365:
 
-- [Microsoft 365 networking connectivity overview](office-365-networking-overview.md)
-- [Microsoft 365 network connectivity principles](office-365-network-connectivity-principles.md)
+- [Microsoft 365 networking connectivity overview](microsoft-365-networking-overview.md)
+- [Microsoft 365 network connectivity principles](microsoft-365-network-connectivity-principles.md)
 - [Assessing Microsoft 365 network connectivity](assessing-network-connectivity.md)
 
 For advice on enhancing performance, see [Network planning and performance tuning for Microsoft 365](network-planning-and-performance.md).
 
 ## Support Microsoft 365 networking as a network equipment vendor
 
-If you are a network equipment vendor, join the [Office 365 Networking Partner Program](office-365-networking-partner-program.md). Enroll in the program to build Office 365 network connectivity principles into your products and solutions. 
+If you are a network equipment vendor, join the [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md). Enroll in the program to build Office 365 network connectivity principles into your products and solutions. 
 
 ## Office 365 endpoints
 
@@ -57,13 +57,13 @@ There are currently five different Office 365 clouds. This table takes you to th
 |||
 |:-------|:-----|
 | [Worldwide endpoints](urls-and-ip-address-ranges.md) | The endpoints for worldwide Office 365 subscriptions, which include the United States Government Community Cloud (GCC). |
-| [U.S. Government DoD endpoints](office-365-u-s-government-dod-endpoints.md) | The endpoints for United States Department of Defense (DoD) subscriptions. |
-| [U.S. Government GCC High endpoints](office-365-u-s-government-gcc-high-endpoints.md) | The endpoints for United States Government Community Cloud High (GCC High) subscriptions. |
+| [U.S. Government DoD endpoints](microsoft-365-u-s-government-dod-endpoints.md) | The endpoints for United States Department of Defense (DoD) subscriptions. |
+| [U.S. Government GCC High endpoints](microsoft-365-u-s-government-gcc-high-endpoints.md) | The endpoints for United States Government Community Cloud High (GCC High) subscriptions. |
 | [Office 365 operated by 21Vianet endpoints](urls-and-ip-address-ranges-21vianet.md) | The endpoints for Office 365 operated by 21Vianet, which is designed to meet the needs for Office 365 in China. |
-| [Office 365 Germany endpoints](office-365-germany-endpoints.md) | The endpoints for a separate cloud in Europe for the most regulated customers in Germany, the European Union (EU), and the European Free Trade Association (EFTA). |
+| [Office 365 Germany endpoints](microsoft-365-germany-endpoints.md) | The endpoints for a separate cloud in Europe for the most regulated customers in Germany, the European Union (EU), and the European Free Trade Association (EFTA). |
 |||
 
-To automate getting the latest list of endpoints for your Office 365 cloud, see the [Office 365 IP Address and URL Web service](office-365-ip-web-service.md).
+To automate getting the latest list of endpoints for your Office 365 cloud, see the [Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md).
 
 For additional endpoints, see these articles:
 
@@ -77,7 +77,7 @@ See these articles for specialized topics in Microsoft 365 networking:
 
 - [Content delivery networks](content-delivery-networks.md)
 - [IPv6 support in Office 365 services](ipv6-support.md)
-- [NAT support with Office 365](nat-support-with-office-365.md)
+- [NAT support with Office 365](nat-support-with-microsoft-365.md)
 
 ## ExpressRoute for Microsoft 365
 

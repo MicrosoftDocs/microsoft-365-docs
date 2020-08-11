@@ -617,7 +617,7 @@ You can use a few different methods to get email notifications when changes to t
   
 [Office 365 endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
 
-[Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md)
+[Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
 
 [Office 365 network and performance tuning](network-planning-and-performance.md)
 

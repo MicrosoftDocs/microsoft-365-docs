@@ -51,7 +51,7 @@ Details for this insight include the office location, estimated percentage of to
 
 For this insight, we would recommend network egress closer to the office location so that connectivity can route optimally to Microsoft's global network and to the nearest Microsoft 365 service front door. Having close network egress to users office locations also allows for improved performance in the future as Microsoft expands both network points of presence and Microsoft 365 service front doors in the future.
 
-For more information about how to resolve this issue, see [Egress network connections locally](office-365-network-connectivity-principles.md#egress-network-connections-locally) in [Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md).
+For more information about how to resolve this issue, see [Egress network connections locally](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) in [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
 ## Better performance detected for customers near you
 
@@ -67,7 +67,7 @@ This insight examines the aggregate performance of Microsoft 365 customers in th
 
 ### What should I do?
 
-There could be many reasons for this condition, including latency in your corporate network or ISP, bottlenecks, or architecture design issues. Examine the latency between each hop in the route between your office network and the current Microsoft 365 front door. For more information, see [Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md).
+There could be many reasons for this condition, including latency in your corporate network or ISP, bottlenecks, or architecture design issues. Examine the latency between each hop in the route between your office network and the current Microsoft 365 front door. For more information, see [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
 ## Use of a non-optimal Exchange Online service front door
 

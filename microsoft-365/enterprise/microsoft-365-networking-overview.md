@@ -38,7 +38,7 @@ Optimizing Microsoft 365 network performance doesn't need to be complicated. You
 - Allow local branch egress of Microsoft 365 network traffic to the internet from each location where users connect to Microsoft 365
 - Allow Microsoft 365 traffic to bypass proxies and packet inspection devices
 
-For more information on Microsoft 365 network connectivity principles, see [Microsoft 365 Network Connectivity Principles](office-365-network-connectivity-principles.md).
+For more information on Microsoft 365 network connectivity principles, see [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
 ## Traditional network architectures and SaaS
 
@@ -83,7 +83,7 @@ The local egress architecture has the following benefits for Microsoft 365 netwo
 > [!NOTE]
 > The _Distributed Service Front Door_ infrastructure is the Microsoft Global Network's highly available and scalable network edge with geographically distributed locations. It terminates end user connections and efficiently routes them within the Microsoft Global Network. You can learn more about the Microsoft Global Network at [How Microsoft builds its fast and reliable global network](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
-For more information on understanding and applying Microsoft 365 network connectivity principles, see [Microsoft 365 Network Connectivity Principles](office-365-network-connectivity-principles.md).
+For more information on understanding and applying Microsoft 365 network connectivity principles, see [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
 ## Conclusion
 
@@ -91,13 +91,13 @@ Optimizing Microsoft 365 network performance really comes down to removing unnec
 
 ## Related Topics
 
-[Microsoft 365 Network Connectivity Principles](office-365-network-connectivity-principles.md)
+[Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
 
 [Managing Office 365 endpoints](managing-office-365-endpoints.md)
 
 [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md)
 
-[Office 365 IP Address and URL Web service](office-365-ip-web-service.md)
+[Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md)
 
 [Assessing Microsoft 365 network connectivity](assessing-network-connectivity.md)
 

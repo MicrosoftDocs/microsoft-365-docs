@@ -47,7 +47,7 @@ Through the building of our cloud services to these principles, coupled with rob
 
 ## Related Links
 
-- [Dealing with Data Corruption](office-365-dealing-with-data-corruption.md)
-- [Malware and Ransomware Protection](office-365-malware-and-ransomware-protection.md)
-- [Monitoring and Self-Healing](office-365-monitoring-and-self-healing.md)
-- [Exchange Data Resiliency](office-365-exchange-data-resiliency.md)
+- [Dealing with Data Corruption](microsoft-365-dealing-with-data-corruption.md)
+- [Malware and Ransomware Protection](microsoft-365-malware-and-ransomware-protection.md)
+- [Monitoring and Self-Healing](microsoft-365-monitoring-and-self-healing.md)
+- [Exchange Data Resiliency](microsoft-365-exchange-data-resiliency.md)

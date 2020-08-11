@@ -77,7 +77,7 @@ When deciding which way your organization will create and manage accounts, consi
   
 ## Next steps
 
-[Microsoft 365 integration with on-premises environments](office-365-integration.md)
+[Microsoft 365 integration with on-premises environments](microsoft-365-integration.md)
   
 ## See Also
 

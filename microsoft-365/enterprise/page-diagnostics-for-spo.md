@@ -165,4 +165,4 @@ No change is visible except that you will be notified that you have enabled it a
 
 [Content delivery networks](content-delivery-networks.md)
 
-[Use the Office 365 Content Delivery Network (CDN) with SharePoint Online](use-office-365-cdn-with-spo.md)
+[Use the Office 365 Content Delivery Network (CDN) with SharePoint Online](use-microsoft-365-cdn-with-spo.md)

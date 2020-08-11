@@ -30,7 +30,7 @@ You can use the built-in Office 365 Content Delivery Network (CDN) to host stati
 > [!NOTE]
 > The Office 365 CDN is only available to tenants in the **Production** (worldwide) cloud. Tenants in the US Government, China and Germany clouds do not currently support the Office 365 CDN.
 
-The Office 365 CDN is composed of multiple CDNs that allow you to host static assets in multiple locations, or _origins_, and serve them from global high-speed networks. Depending on the kind of content you want to host in the Office 365 CDN, you can add **public** origins, **private** origins or both. See [Choose whether each origin should be public or private](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) for more information on the difference between public and private origins.
+The Office 365 CDN is composed of multiple CDNs that allow you to host static assets in multiple locations, or _origins_, and serve them from global high-speed networks. Depending on the kind of content you want to host in the Office 365 CDN, you can add **public** origins, **private** origins or both. See [Choose whether each origin should be public or private](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) for more information on the difference between public and private origins.
 
 ![Office 365 CDN conceptual diagram](media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN conceptual diagram")
 
@@ -45,41 +45,41 @@ If you are already familiar with the way that CDNs work, you only need to comple
 
 To set up the Office 365 CDN for your organization, you follow these basic steps:
 
-+ [Plan for deployment of the Office 365 CDN](use-office-365-cdn-with-spo.md#plan-for-deployment-of-the-office-365-cdn)
++ [Plan for deployment of the Office 365 CDN](use-microsoft-365-cdn-with-spo.md#plan-for-deployment-of-the-office-365-cdn)
 
-  + [Determine which static assets you want to host on the CDN](use-office-365-cdn-with-spo.md#CDNAssets).
-  + [Determine where you want to store your assets](use-office-365-cdn-with-spo.md#CDNStoreAssets). This location can be a SharePoint site, library or folder and is called an _origin_.
-  + [Choose whether each origin should be public or private](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate). You can add multiple origins of both public and private types.
+  + [Determine which static assets you want to host on the CDN](use-microsoft-365-cdn-with-spo.md#CDNAssets).
+  + [Determine where you want to store your assets](use-microsoft-365-cdn-with-spo.md#CDNStoreAssets). This location can be a SharePoint site, library or folder and is called an _origin_.
+  + [Choose whether each origin should be public or private](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate). You can add multiple origins of both public and private types.
 
 + Set up and configure the CDN, using either PowerShell or the SharePoint Online CLI
 
-  + [Set up and configure the CDN by using the SharePoint Online Management Shell](use-office-365-cdn-with-spo.md#CDNSetupinPShell)
-  + [Set up and configure the CDN by using PnP PowerShell](use-office-365-cdn-with-spo.md#CDNSetupinPnPPosh)
-  + [Set up and configure the CDN by using the Office 365 CLI](use-office-365-cdn-with-spo.md#CDNSetupinCLI)
+  + [Set up and configure the CDN by using the SharePoint Online Management Shell](use-microsoft-365-cdn-with-spo.md#CDNSetupinPShell)
+  + [Set up and configure the CDN by using PnP PowerShell](use-microsoft-365-cdn-with-spo.md#CDNSetupinPnPPosh)
+  + [Set up and configure the CDN by using the Office 365 CLI](use-microsoft-365-cdn-with-spo.md#CDNSetupinCLI)
 
   When you complete this step, you will have:
 
   + Enabled the CDN for your organization.
   + Added your origins, identifying each origin as public or private.
 
-Once you're done with setup, you can [Manage the Office 365 CDN](use-office-365-cdn-with-spo.md#CDNManage) over time by:
+Once you're done with setup, you can [Manage the Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNManage) over time by:
   
 + Adding, updating, and removing assets
 + Adding and removing origins
 + Configuring CDN policies
 + If necessary, disabling the CDN
 
-Finally, see [Using your CDN assets](use-office-365-cdn-with-spo.md#using-your-cdn-assets) to learn about accessing your CDN assets from both public and private origins.
+Finally, see [Using your CDN assets](use-microsoft-365-cdn-with-spo.md#using-your-cdn-assets) to learn about accessing your CDN assets from both public and private origins.
 
-See [Troubleshooting the Office 365 CDN](use-office-365-cdn-with-spo.md#CDNTroubleshooting) for guidance on resolving common issues.
+See [Troubleshooting the Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting) for guidance on resolving common issues.
 
 ## Plan for deployment of the Office 365 CDN
 
 Before you deploy the Office 365 CDN for your Office 365 tenant, you should consider the following factors as part of your planning process.
 
-  + [Determine which static assets you want to host on the CDN](use-office-365-cdn-with-spo.md#CDNAssets)
-  + [Determine where you want to store your assets](use-office-365-cdn-with-spo.md#CDNStoreAssets)
-  + [Choose whether each origin should be public or private](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)
+  + [Determine which static assets you want to host on the CDN](use-microsoft-365-cdn-with-spo.md#CDNAssets)
+  + [Determine where you want to store your assets](use-microsoft-365-cdn-with-spo.md#CDNStoreAssets)
+  + [Choose whether each origin should be public or private](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)
 
 <a name="CDNAssets"> </a>
 ### Determine which static assets you want to host on the CDN
@@ -118,7 +118,7 @@ Both public and private options provide similar performance gains, but each has 
 
 **Private** origins within the Office 365 CDN provide private access to user content such as SharePoint Online document libraries, sites and proprietary images. Access to content in private origins is secured by dynamically generated tokens so it can only be accessed by users with permissions to the original document library or storage location. Private origins in the Office 365 CDN can only be used for SharePoint Online content, and you can only access assets in private origins through redirection from your SharePoint Online tenant.
 
-You can read more about how CDN access to assets in a private origin works in [Using assets in private origins](use-office-365-cdn-with-spo.md#using-assets-in-private-origins).
+You can read more about how CDN access to assets in a private origin works in [Using assets in private origins](use-microsoft-365-cdn-with-spo.md#using-assets-in-private-origins).
 
 #### Attributes and advantages of hosting assets in public origins
   
@@ -158,7 +158,7 @@ Default public CDN origins:
 + \*/clientsideassets
 
 > [!NOTE]
-> _clientsideassets_ is a default public origin that was added to the Office 365 CDN service in December 2017. This origin must be present in order for SharePoint Framework solutions in the CDN to work. If you enabled the Office 365 CDN prior to December 2017, or if you skipped setup of default origins when you enabled the CDN, you can manually add this origin. For more information, see [My client-side web part or SharePoint Framework solution isn't working](use-office-365-cdn-with-spo.md#my-client-side-web-part-or-sharepoint-framework-solution-isnt-working).
+> _clientsideassets_ is a default public origin that was added to the Office 365 CDN service in December 2017. This origin must be present in order for SharePoint Framework solutions in the CDN to work. If you enabled the Office 365 CDN prior to December 2017, or if you skipped setup of default origins when you enabled the CDN, you can manually add this origin. For more information, see [My client-side web part or SharePoint Framework solution isn't working](use-microsoft-365-cdn-with-spo.md#my-client-side-web-part-or-sharepoint-framework-solution-isnt-working).
 
 <a name="CDNSetupinPShell"> </a>
 ## Set up and configure the Office 365 CDN by using the SharePoint Online Management Shell
@@ -206,7 +206,7 @@ To enable your organization to use both public and private origins but skip sett
 Set-SPOTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
 ```
 
-See [Default CDN origins](use-office-365-cdn-with-spo.md#default-cdn-origins) for information about the origins that are provisioned by default when you enable the Office 365 CDN, and the potential impact of skipping the setup of default origins.
+See [Default CDN origins](use-microsoft-365-cdn-with-spo.md#default-cdn-origins) for information about the origins that are provisioned by default when you enable the Office 365 CDN, and the potential impact of skipping the setup of default origins.
 
 To enable your organization to use public origins, type the following command:
 
@@ -420,7 +420,7 @@ For information on how to use this cmdlet, see [Remove-SPOTenantCdnOrigin](https
 <a name="Office365CDNforSPOModifyOrigin"> </a>
 #### Modify an origin in the Office 365 CDN
 
-You cannot modify an origin you've created. Instead, remove the origin and then add a new one. For more information, see [To remove an origin from the Office 365 CDN](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPosh) and [To add an origin for your assets](use-office-365-cdn-with-spo.md#Office365CDNforSPOOriginPosh).
+You cannot modify an origin you've created. Instead, remove the origin and then add a new one. For more information, see [To remove an origin from the Office 365 CDN](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPosh) and [To add an origin for your assets](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPOOriginPosh).
 
 <a name="Office365CDNforSPODisable"> </a>
 #### Disable the Office 365 CDN
@@ -489,7 +489,7 @@ To enable your organization to use both public and private origins but skip sett
 Set-PnPTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
 ```
 
-See [Default CDN origins](use-office-365-cdn-with-spo.md#default-cdn-origins) for information about the origins that are provisioned by default when you enable the Office 365 CDN, and the potential impact of skipping the setup of default origins.
+See [Default CDN origins](use-microsoft-365-cdn-with-spo.md#default-cdn-origins) for information about the origins that are provisioned by default when you enable the Office 365 CDN, and the potential impact of skipping the setup of default origins.
 
 To enable your organization to use public origins, type the following command:
 
@@ -703,7 +703,7 @@ For information on how to use this cmdlet, see [Remove-PnPTenantCdnOrigin](https
 <a name="Office365CDNforSPOModifyOriginPnPPosh"> </a>
 #### Modify an origin in the Office 365 CDN
 
-You cannot modify an origin you've created. Instead, remove the origin and then add a new one. For more information, see [To remove an origin from the Office 365 CDN](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPnPPosh) and [To add an origin for your assets](use-office-365-cdn-with-spo.md#Office365CDNforSPOOriginPnPPosh).
+You cannot modify an origin you've created. Instead, remove the origin and then add a new one. For more information, see [To remove an origin from the Office 365 CDN](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPnPPosh) and [To add an origin for your assets](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPOOriginPnPPosh).
 
 <a name="Office365CDNforSPODisable"> </a>
 #### Disable the Office 365 CDN
@@ -770,7 +770,7 @@ To view the currently configured Office 365 Public CDN origins execute:
 spo cdn origin list --type Public
 ```
 
-See [Default CDN origins](use-office-365-cdn-with-spo.md#default-cdn-origins) for information about the origins that are provisioned by default when you enable the Office 365 CDN.
+See [Default CDN origins](use-microsoft-365-cdn-with-spo.md#default-cdn-origins) for information about the origins that are provisioned by default when you enable the Office 365 CDN.
 
 ### Add an Office 365 CDN origin
 
@@ -859,9 +859,9 @@ Now that you have enabled the CDN and configured origins and policies, you can b
 
 This section will help you understand how to use CDN URLs in your SharePoint pages and content so that SharePoint redirects requests for assets in both public and private origins to the CDN.
 
-+ [Updating links to CDN assets](use-office-365-cdn-with-spo.md#updating-links-to-cdn-assets)
-+ [Using assets in public origins](use-office-365-cdn-with-spo.md#using-assets-in-public-origins)
-+ [Using assets in private origins](use-office-365-cdn-with-spo.md#using-assets-in-private-origins)
++ [Updating links to CDN assets](use-microsoft-365-cdn-with-spo.md#updating-links-to-cdn-assets)
++ [Using assets in public origins](use-microsoft-365-cdn-with-spo.md#using-assets-in-public-origins)
++ [Using assets in private origins](use-microsoft-365-cdn-with-spo.md#using-assets-in-private-origins)
 
 For information on how to use the CDN for hosting client-side web parts, see the topic [Host your client-side web part from Office 365 CDN (Hello World part 4)](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn).
 
@@ -883,9 +883,9 @@ If you want to use the full URL to the asset instead of a relative path, constru
 `https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
 
 > [!NOTE]
-> In general, you should not hardcode URLs directly to assets in the CDN. However, you can manually construct URLs for assets in public origins if needed. For more information, see [Hardcoding CDN URLs for public assets](use-office-365-cdn-with-spo.md#hardcoding-cdn-urls-for-public-assets).
+> In general, you should not hardcode URLs directly to assets in the CDN. However, you can manually construct URLs for assets in public origins if needed. For more information, see [Hardcoding CDN URLs for public assets](use-microsoft-365-cdn-with-spo.md#hardcoding-cdn-urls-for-public-assets).
 
-To learn about how to verify that assets are being served from the CDN, see [How do I confirm that assets are being served by the CDN?](use-office-365-cdn-with-spo.md#CDNConfirm) in the [Troubleshooting the Office 365 CDN](use-office-365-cdn-with-spo.md#CDNTroubleshooting) section.
+To learn about how to verify that assets are being served from the CDN, see [How do I confirm that assets are being served by the CDN?](use-microsoft-365-cdn-with-spo.md#CDNConfirm) in the [Troubleshooting the Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting) section.
 
 ### Using assets in public origins
 

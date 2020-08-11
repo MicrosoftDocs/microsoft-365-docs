@@ -41,7 +41,7 @@ The essence of this approach is to provide a simple method for enterprises to mi
 
 - Can be configured, tested and implemented rapidly by customers and with no additional infrastructure or application requirements
 
-  Depending on the VPN platform and network architecture, implementation can take as little as a few hours. For more information, see [Implement VPN split tunneling](office-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling).
+  Depending on the VPN platform and network architecture, implementation can take as little as a few hours. For more information, see [Implement VPN split tunneling](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling).
 
 - Preserves the security posture of customer VPN implementations by not changing how other connections are routed, including traffic to the Internet
 
@@ -49,12 +49,12 @@ The essence of this approach is to provide a simple method for enterprises to mi
 
 - Is natively supported by most enterprise VPN platforms
 
-  Microsoft continues to collaborate with industry partners producing commercial VPN solutions to help partners develop targeted guidance and configuration templates for their solutions in alignment with the above recommendations. For more information, see [HOWTO guides for common VPN platforms](office-365-vpn-implement-split-tunnel.md#howto-guides-for-common-vpn-platforms).
+  Microsoft continues to collaborate with industry partners producing commercial VPN solutions to help partners develop targeted guidance and configuration templates for their solutions in alignment with the above recommendations. For more information, see [HOWTO guides for common VPN platforms](microsoft-365-vpn-implement-split-tunnel.md#howto-guides-for-common-vpn-platforms).
 
 >[!TIP]
 >Microsoft recommends focusing split tunnel VPN configuration on documented dedicated IP ranges for Office 365 services. FQDN or AppID-based split tunnel configurations, while possible on certain VPN client platforms, may not fully cover key Office 365 scenarios and may conflict with IP based VPN routing rules. For this reason, Microsoft does not recommend using Office 365 FQDNs to configure split tunnel VPN. The use of FQDN configuration may be useful in other related scenarios, such as .pac file customizations or to implement proxy bypass.
 
-For full implementation guidance, see [Implementing VPN split tunneling for Office 365](office-365-vpn-implement-split-tunnel.md).
+For full implementation guidance, see [Implementing VPN split tunneling for Office 365](microsoft-365-vpn-implement-split-tunnel.md).
 
 ## The VPN split tunnel strategy
 
@@ -90,16 +90,16 @@ _Figure 3: A VPN split tunnel solution with defined Office 365 exceptions sent d
 
 From a security perspective, Microsoft has an array of security features which can be used to provide similar, or even enhanced security than that delivered by inline inspection by on premises security stacks. The Microsoft Security team's blog post [Alternative ways for security professionals and IT to achieve modern security controls in today's unique remote work scenarios](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) has a clear summary of features available and you'll find more detailed guidance within this article. You can also read about Microsoft's implementation of VPN split tunneling at [Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
 
-In many cases, this implementation can be achieved in a matter of hours, allowing rapid resolution to one of the most pressing problems facing organizations as they rapidly shift to full scale remote working. For VPN split tunnel implementation guidance, see [Implementing VPN split tunneling for Office 365](office-365-vpn-implement-split-tunnel.md).
+In many cases, this implementation can be achieved in a matter of hours, allowing rapid resolution to one of the most pressing problems facing organizations as they rapidly shift to full scale remote working. For VPN split tunnel implementation guidance, see [Implementing VPN split tunneling for Office 365](microsoft-365-vpn-implement-split-tunnel.md).
 
 >[!NOTE]
 >Microsoft has committed to suspending changes to **Optimize** endpoints for Office 365 until at least **June 30 2020**, allowing customers to focus on other challenges rather than maintaining the endpoint whitelist once initially implemented.
 
 ## Related topics
 
-[Implementing VPN split tunneling for Office 365](office-365-vpn-implement-split-tunnel.md)
+[Implementing VPN split tunneling for Office 365](microsoft-365-vpn-implement-split-tunnel.md)
 
-[Office 365 performance optimization for China users](office-365-networking-china.md)
+[Office 365 performance optimization for China users](microsoft-365-networking-china.md)
 
 [Alternative ways for security professionals and IT to achieve modern security controls in today's unique remote work scenarios (Microsoft Security Team blog)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
@@ -107,7 +107,7 @@ In many cases, this implementation can be achieved in a matter of hours, allowin
 
 [Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
-[Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md)
+[Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
 
 [Assessing Office 365 network connectivity](assessing-network-connectivity.md)
 
