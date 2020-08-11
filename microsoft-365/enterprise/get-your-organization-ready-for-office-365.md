@@ -46,7 +46,7 @@ To plan for Microsoft 365 on your own, step through the planning and design deci
 
 - Support for your clients
 
-  Includes certificate-based authentication, mobile device management, authentication options, and inter-tenant collaboration. Go to [Certificate-based Authentication](office-365-client-support-certificate-based-authentication.md) for more information.
+  Includes certificate-based authentication, mobile device management, authentication options, and inter-tenant collaboration. Go to [Certificate-based Authentication](microsoft-365-client-support-certificate-based-authentication.md) for more information.
 
 - Support for hybrid modern authentication
 
@@ -56,4 +56,4 @@ To plan for Microsoft 365 on your own, step through the planning and design deci
 
   Includes migration information for Office 2007 and Office 2010 client and server products. Go to [Plan your upgrade](plan-upgrade-previous-versions-office.md) for more information.
 
-You can also sign in to your Microsoft 365 subscription and use the [Setup guides for Microsoft 365 and Office 365 services](setup-guides-for-office-365.md).
+You can also sign in to your Microsoft 365 subscription and use the [Setup guides for Microsoft 365 and Office 365 services](setup-guides-for-microsoft-365.md).
