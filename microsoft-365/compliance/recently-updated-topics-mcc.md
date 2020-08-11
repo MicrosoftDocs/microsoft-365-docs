@@ -82,7 +82,7 @@ New articles on assessments, improvement actions, and templates:
     - PDFs are scanned for Exchange
 
 - [Enable sensitivity labels for Office files in SharePoint and OneDrive (Updated)](sensitivity-labels-sharepoint-onedrive-files.md): Added new *Search for documents by sensitivity label* section.
-​​​​​​​- [Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (Updated)](sensitivity-labels-teams-groups-sites.md): Removed public preview disclaimers. In addition, other updates include:
+- [Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (Updated)](sensitivity-labels-teams-groups-sites.md): Removed public preview disclaimers. In addition, other updates include:
 
     - Which apps support sensitivity labels for sites and group settings
     - Changes to settings no longer need to be reapplied with PowerShell
