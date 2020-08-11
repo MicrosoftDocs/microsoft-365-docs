@@ -888,6 +888,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/find-copy-and-delete-pst-files-in-your-organization.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/working-with-compliance-score.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/compliance-score",
       "redirect_document_id": false
