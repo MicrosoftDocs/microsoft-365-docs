@@ -29,7 +29,7 @@ You're now ready to set up Bookings for your organization. You can get to the Bo
 
 ## Get the free Bookings add-on for Microsoft Enterprise Agreement or volume licensing subscriptions
 
-If you purchased Office 365 Enterprise E3/Office 365 Enterprise E5 through a Microsoft Enterprise agreement or through volume licensing, you must get the Microsoft Bookings add-on through the Volume Licensing Service Center (VLSC). Once you get the free add-on, you you can assign licenses to users in your organization. Work with your channel partner or reseller to place a zero dollar purchase order for the add-on. Once you've purchased the add-on in Volume Licensing Service Center, follow these steps to get licenses and assign to your users in the Microsoft 365 admin center.
+If you purchased Office 365 Enterprise E3 or Office 365 Enterprise E5 through a Microsoft Enterprise agreement or through volume licensing, you must get the Microsoft Bookings add-on through the Volume Licensing Service Center (VLSC). Once you get the free add-on, you you can assign licenses to users in your organization. Work with your channel partner or reseller to place a zero dollar purchase order for the add-on. Once you've purchased the add-on in Volume Licensing Service Center, follow these steps to get licenses and assign to your users in the Microsoft 365 admin center.
 
 Check out the following topics for more information on VLSC:
 
