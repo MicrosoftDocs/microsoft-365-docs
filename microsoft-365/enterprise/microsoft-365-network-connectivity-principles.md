@@ -31,12 +31,12 @@ Adoption of SaaS applications like Microsoft 365 moves some combination of servi
   
 In this article, you will learn about:
   
-- [Microsoft 365 architecture](office-365-network-connectivity-principles.md#BKMK_Architecture) as it applies to customer connectivity to the cloud
-- Updated [Microsoft 365 connectivity principles](office-365-network-connectivity-principles.md#BKMK_Principles) and strategies for optimizing network traffic and the end-user experience
-- The [Office 365 Endpoints web service](office-365-network-connectivity-principles.md#BKMK_WebSvc), which allows network administrators to consume a structured list of endpoints for use in network optimization
-- [New Office 365 endpoint categories](office-365-network-connectivity-principles.md#BKMK_Categories) and optimization guidance
-- [Comparing network perimeter security with endpoint security](office-365-network-connectivity-principles.md#BKMK_SecurityComparison)
-- [Incremental optimization](office-365-network-connectivity-principles.md#BKMK_IncOpt) options for Microsoft 365 traffic
+- [Microsoft 365 architecture](microsoft-365-network-connectivity-principles.md#BKMK_Architecture) as it applies to customer connectivity to the cloud
+- Updated [Microsoft 365 connectivity principles](microsoft-365-network-connectivity-principles.md#BKMK_Principles) and strategies for optimizing network traffic and the end-user experience
+- The [Office 365 Endpoints web service](microsoft-365-network-connectivity-principles.md#BKMK_WebSvc), which allows network administrators to consume a structured list of endpoints for use in network optimization
+- [New Office 365 endpoint categories](microsoft-365-network-connectivity-principles.md#BKMK_Categories) and optimization guidance
+- [Comparing network perimeter security with endpoint security](microsoft-365-network-connectivity-principles.md#BKMK_SecurityComparison)
+- [Incremental optimization](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) options for Microsoft 365 traffic
 - The [Microsoft 365 connectivity test](https://aka.ms/netonboard), a new tool for testing basic connectivity to Microsoft 365
 
 ## Microsoft 365 architecture
@@ -64,7 +64,7 @@ Identifying Microsoft 365 network traffic is the first step in being able to dif
   
 Previous Microsoft 365 optimization guidance divided Microsoft 365 endpoints into two categories, **Required** and **Optional**. As endpoints have been added to support new Microsoft 365 services and features, we have reorganized Microsoft 365 endpoints into three categories: **Optimize**, **Allow**, and **Default**. Guidelines for each category applies to all endpoints in the category, making optimizations easier to understand and implement.
   
-For more information on Microsoft 365 endpoint categories and optimization methods, see the [New Office 365 endpoint categories](office-365-network-connectivity-principles.md#BKMK_Categories) section.
+For more information on Microsoft 365 endpoint categories and optimization methods, see the [New Office 365 endpoint categories](microsoft-365-network-connectivity-principles.md#BKMK_Categories) section.
   
 Microsoft now publishes all Microsoft 365 endpoints as a web service and provides guidance on how best to use this data. For more information on how to fetch and work with Microsoft 365 endpoints, see the article [Office 365 URLs and IP address ranges](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
   
@@ -226,7 +226,7 @@ A holistic approach to enhanced security should include consideration of the fol
   - Reduce network security requirements of the corporate WAN edge
   - Some network perimeter security devices such as firewalls are still required, but load is decreased
   - Ensures local egress for Microsoft 365 traffic
-- Improvements can be addressed incrementally as described in the [Incremental optimization](office-365-network-connectivity-principles.md#BKMK_IncOpt) section. Some optimization techniques may offer better cost/benefit ratios depending on your network architecture, and you should choose optimizations that make the most sense for your organization.
+- Improvements can be addressed incrementally as described in the [Incremental optimization](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) section. Some optimization techniques may offer better cost/benefit ratios depending on your network architecture, and you should choose optimizations that make the most sense for your organization.
 
 For more information on Microsoft 365 security and compliance, see the article [Microsoft 365 security](https://docs.microsoft.com/microsoft-365/security) and [Microsoft 365 security](https://docs.microsoft.com/microsoft-365/compliance).
   
@@ -235,7 +235,7 @@ For more information on Microsoft 365 security and compliance, see the article [
 
 We have represented the ideal network connectivity model for SaaS earlier in this article, but for many large organizations with historically complex network architectures, it will not be practical to directly make all of these changes. In this section, we discuss a number of incremental changes that can help to improve Microsoft 365 performance and reliability.
   
-The methods you will use to optimize Microsoft 365 traffic will vary depending on your network topology and the network devices you have implemented. Large enterprises with many locations and complex network security practices will need to develop a strategy that includes most or all of the principles listed in the [Microsoft 365 connectivity principles](office-365-network-connectivity-principles.md#BKMK_Principles) section, while smaller organizations might only need to consider one or two.
+The methods you will use to optimize Microsoft 365 traffic will vary depending on your network topology and the network devices you have implemented. Large enterprises with many locations and complex network security practices will need to develop a strategy that includes most or all of the principles listed in the [Microsoft 365 connectivity principles](microsoft-365-network-connectivity-principles.md#BKMK_Principles) section, while smaller organizations might only need to consider one or two.
   
 You can approach optimization as an incremental process, applying each method successively. The following table lists key optimization methods in order of their impact on latency and reliability for the largest number of users.
   
@@ -249,13 +249,13 @@ You can approach optimization as an incremental process, applying each method su
 
 ## Related topics
 
-[Microsoft 365 Network Connectivity Overview](office-365-networking-overview.md)
+[Microsoft 365 Network Connectivity Overview](microsoft-365-networking-overview.md)
 
 [Managing Office 365 endpoints](managing-office-365-endpoints.md)
 
 [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md)
 
-[Office 365 IP Address and URL Web service](office-365-ip-web-service.md)
+[Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md)
 
 [Assessing Microsoft 365 network connectivity](assessing-network-connectivity.md)
 
