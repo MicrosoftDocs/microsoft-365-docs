@@ -30,7 +30,7 @@ Just like features in the Microsoft 365 compliance center, our help content is a
 
 ### Insider risk management
 
-New insider risk management features released are now available as part of our public preview. Updates have been made to the following articles to support new policy templates, new indicator levels, new priority user groups, Microsoft Defender Advanced Threat Protection integration, allowed and unallowed domains, and more.
+New insider risk management features improvements are now available as part of our public preview. Updates have been made to the following articles to support new policy templates, new indicator levels, new priority user groups, Microsoft Defender Advanced Threat Protection integration, allowed and unallowed domains, and more.
 
 - [Learn about insider risk management in Microsoft 365 (Updated)](insider-risk-management.md)
 - [Plan for insider risk management (Updated)](insider-risk-management-plan.md)
