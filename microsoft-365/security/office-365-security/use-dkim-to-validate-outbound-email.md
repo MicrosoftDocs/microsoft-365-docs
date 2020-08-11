@@ -333,7 +333,7 @@ Organizations should explicitly state if a domain does not send email by specify
 
 For example, the DKIM record would look like this:
 
-```text
+```console
 *._domainkey.SubDomainThatShouldntSendMail.contoso.com. TXT "v=DKIM1; p="
 ```
 
