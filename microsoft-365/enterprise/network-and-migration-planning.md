@@ -82,7 +82,7 @@ Dig a little deeper into these best practices for more information about improvi
     
 3. If you have a large number of shared calendars and mailboxes, you may see an increase in the number of connections from Outlook to Exchange. For instance, the Outlook client may open up to two additional connections for each shared calendar in use. In this situation, ensure that the egress proxy can handle the connections, or bypass the proxy for connections to Office 365 for Outlook.
     
-4. Determine the maximum number of supported devices for a public IP address and how to load balance across multiple IP addresses. For more information, see [NAT support with Office 365](nat-support-with-office-365.md).
+4. Determine the maximum number of supported devices for a public IP address and how to load balance across multiple IP addresses. For more information, see [NAT support with Office 365](nat-support-with-microsoft-365.md).
     
 5. If you're inspecting outbound connections from computers on your network, bypassing this filtering to the Office 365 domains will improve connectivity and performance. Additionally, bypassing outbound inspection often removes the need for a single Internet egress and enables local Internet egress for Office 365 destined network requests.
     
@@ -107,7 +107,7 @@ These topics contain detailed Office 365 network reference information.
     
 - [Plan for network devices that connect to Office 365 services](plan-for-network-devices.md)
     
-- [Setup guides for Office 365 services](setup-guides-for-office-365.md)
+- [Setup guides for Office 365 services](setup-guides-for-microsoft-365.md)
  
 ## See also
 
