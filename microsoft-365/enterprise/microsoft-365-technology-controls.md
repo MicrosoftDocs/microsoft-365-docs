@@ -21,7 +21,7 @@ description: This article provides an overview of the tools and technologies use
 
 # Microsoft 365 technology controls 
 
-Microsoft uses several tools and technologies to control, manage, and audit access to customer data in  its online services. These apply to Exchange Online, SharePoint Online, Lockbox and Customer Lockbox, multi-factor authentication, and more. Yammer uses similar controls described in [Yammer Enterprise Access Controls](office-365-yammer-enterprise-access-controls.md).
+Microsoft uses several tools and technologies to control, manage, and audit access to customer data in  its online services. These apply to Exchange Online, SharePoint Online, Lockbox and Customer Lockbox, multi-factor authentication, and more. Yammer uses similar controls described in [Yammer Enterprise Access Controls](microsoft-365-yammer-enterprise-access-controls.md).
 
 Microsoft 365 engineers have zero standing access to Microsoft 365 customer data. Engineers must go through a Microsoft approval process before access to Customer Data for service operations occurs. If the customer licenses the Customer Lockbox feature for Exchange Online and SharePoint Online, access to Customer Data requires customer approval. After approved, service-specific administrative accounts are provisioned just-in-time access for tasks required by the service request.
 
