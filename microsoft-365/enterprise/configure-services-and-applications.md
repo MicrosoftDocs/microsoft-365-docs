@@ -25,7 +25,7 @@ ms.custom: seo-marvel-mar2020
 
 Our [basic set up instructions](https://docs.microsoft.com/microsoft-365/admin/setup/setup) help you get everyone using your Microsoft 365 services and applications in the shortest time possible. Sometimes getting things configured before everyone starts using them is preferred. For example if you want to configure mail routing , file storage, or sharing policies. 
   
-If you want help getting Microsoft 365 set up, use **[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)** or the [Setup guides for Microsoft 365 and Office 365 services](setup-guides-for-office-365.md).
+If you want help getting Microsoft 365 set up, use **[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)** or the [Setup guides for Microsoft 365 and Office 365 services](setup-guides-for-microsoft-365.md).
   
 |**Services & applications**|**Resources**|
 |:-----|:-----|
