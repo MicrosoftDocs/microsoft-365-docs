@@ -276,6 +276,30 @@ Each exported .csv file is limited to 150,000 rows. If the data for that day con
 
 ![Direction view in the Mailflow status report ](../../media/mail-flow-status-report-direction-view.png)
 
+
+
+
+### Funnel view for the Mailflow status report
+
+If you click the **Funnel** tab, by default, this view contains a chart and a data table that's configured with the following filters:
+
+- **Date**: The last 7 days.
+- **Direction**:
+
+  - **Inbound**
+  - **Outbound**
+  - **Intra-org** (counted separately from **Inbound** and **Outbound**)
+
+
+
+### Tech view for the Mailflow status report
+
+If you click the **Tech view** tab, the same default filters from the **Funnel** view are used.
+
+
+
+
+
 ## Sent and received email report
 
 The **Sent and received email** report is a smart report that shows information about incoming and outgoing email, including spam detections, malware, and email identified as "good." The difference between this report and the [Mailflow status report](#mailflow-status-report) is: this report doesn't include data about messages blocked by edge protection.
