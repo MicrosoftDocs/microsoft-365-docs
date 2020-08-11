@@ -46,7 +46,7 @@ Every account that accesses and uses data classification must have a license ass
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
-- Microsoft 365 E5 Compliance add on ( Requires Microsoft 365 E3 or Office 365 E3 + EMS E3 )
+- Microsoft 365 E5 Compliance add-on (Requires Microsoft 365 E3 or Office 365 E3 + EMS E3)
 - Microsoft 365 E5/A5 Info Protection & Governance (Requires AIP Plan 1 or EMS E3 + Exchange Online, SharePoint Online, or OneDrive)
 
 
