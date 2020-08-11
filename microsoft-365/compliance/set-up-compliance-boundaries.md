@@ -157,7 +157,7 @@ The final step is to create a eDiscovery case in the Security & Compliance Cente
 
 To create a case and assign members:
 
-1. Go to the **eDiscovery** or **Advanced eDiscovery** page in the Security & Compliance Center and create a case. 
+1. Go to the **eDiscovery** or **Advanced eDiscovery** page in the Security & Compliance Center and create a case.
 
 2. In the list of eDiscovery cases, click the name of the case you created.
 
@@ -168,18 +168,6 @@ To create a case and assign members:
 4. In the list of role groups, select one of the role groups that you created in Step 3, and click **Add**.
 
 5. Click **Save** on the **Manage this case** flyout to save the change.
-
-## Compliance boundary limitations
-
-Keep the following limitations in mind when managing eDiscovery cases and investigations that use of compliance boundaries.
-  
-- When creating and running a search, you can select content locations that are outside of your agency. However, because of the search permissions filter, content from those locations isn't included in the search results.
-
-- Compliance boundaries don't apply to holds in eDiscovery cases. That means an eDiscovery manager in one agency can place a user in a different agency on hold. However, the compliance boundary will be enforced if the eDiscovery manager searches the content locations of the user who was placed on hold. That means the eDiscovery manager won't be able search the user's content locations, even though they were able to place the user on hold.
-
-    Also, hold statistics will only apply to content locations in the agency.
-
-- Search permissions filters aren't applied to Exchange public folders.
 
 ## Searching and exporting content in Multi-Geo environments
 
@@ -263,6 +251,18 @@ Here's an example of creating a search permissions filter for a hub site for the
 ```powershell
 New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Site_Departmentid -eq '44252d09-62c4-4913-9eb0-a2a8b8d7f863'" -Action ALL
 ```
+
+## Compliance boundary limitations
+
+Keep the following limitations in mind when managing eDiscovery cases and investigations that use of compliance boundaries.
+  
+- When creating and running a search, you can select content locations that are outside of your agency. However, because of the search permissions filter, content from those locations isn't included in the search results.
+
+- Compliance boundaries don't apply to holds in eDiscovery cases. That means an eDiscovery manager in one agency can place a user in a different agency on hold. However, the compliance boundary will be enforced if the eDiscovery manager searches the content locations of the user who was placed on hold. That means the eDiscovery manager won't be able search the user's content locations, even though they were able to place the user on hold.
+
+    Also, hold statistics will only apply to content locations in the agency.
+
+- Search permissions filters aren't applied to Exchange public folders.
 
 ## Frequently asked questions
 
