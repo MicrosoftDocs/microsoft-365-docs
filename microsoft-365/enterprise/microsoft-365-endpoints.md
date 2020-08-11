@@ -43,7 +43,7 @@ There are currently five different Microsoft 365 clouds. This table takes you to
 | [Microsoft 365 Germany endpoints](microsoft-365-germany-endpoints.md) | The endpoints for a separate cloud in Europe for the most regulated customers in Germany, the European Union (EU), and the European Free Trade Association (EFTA). |
 |||
 
-To automate getting the latest list of endpoints for your Microsoft 365 cloud, see the [Office 365 IP Address and URL Web service](office-365-ip-web-service.md).
+To automate getting the latest list of endpoints for your Microsoft 365 cloud, see the [Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md).
 
 For additional endpoints, see these articles:
 
