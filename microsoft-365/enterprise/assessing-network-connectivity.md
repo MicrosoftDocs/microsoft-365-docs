@@ -38,7 +38,7 @@ Some assessments will indicate network connectivity to Microsoft 365 will requir
 
 Some resources to help you assess your network:
 
-- See [Microsoft 365 network connectivity overview](office-365-networking-overview.md) for conceptual information about Microsoft 365 networking.
+- See [Microsoft 365 network connectivity overview](microsoft-365-networking-overview.md) for conceptual information about Microsoft 365 networking.
 - See [Microsoft 365 Network Connectivity Principles](https://aka.ms/o365networkingprinciples) to understand the connectivity principles for securely managing Microsoft 365 traffic and getting the best possible performance.
 - Sign up for [Microsoft FastTrack](https://www.microsoft.com/fasttrack) for guided assistance with Microsoft 365 planning, design and deployment. 
 - See the [Microsoft 365 connectivity test](assessing-network-connectivity.md#the-microsoft-365-connectivity-test) section below to run basic connectivity tests that provide specific guidance about networking connectivity improvements that can be made between a given user location and Microsoft 365.
@@ -106,7 +106,7 @@ Here's a short link you can use to come back: [https://aka.ms/o365networkconnect
   
 ## Related topics
 
-[Microsoft 365 Network Connectivity Overview](office-365-networking-overview.md)
+[Microsoft 365 Network Connectivity Overview](microsoft-365-networking-overview.md)
 
 [Microsoft 365 Network Connectivity Principles](https://aka.ms/o365networkingprinciples)
 
@@ -114,7 +114,7 @@ Here's a short link you can use to come back: [https://aka.ms/o365networkconnect
 
 [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md)
 
-[Office 365 IP Address and URL Web service](office-365-ip-web-service.md)
+[Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md)
 
 [Microsoft 365 network and performance tuning](network-planning-and-performance.md)
 
