@@ -201,7 +201,7 @@ To go back to the reports view, click **View report**.
 
 ## Mailflow status report
 
-The **Mailflow status report** is similar to the [Sent and received email report](#sent-and-received-email-report), with additional information about email allowed or blocked on the edge. This is the only report that contains edge protection information, and shows just how much email is blocked before being allowed into the service for evaluation by Exchange Online Protection (EOP).
+The **Mailflow status report** is similar to the [Sent and received email report](#sent-and-received-email-report), with additional information about email allowed or blocked on the edge. This is the only report that contains edge protection information, and shows just how much email is blocked before being allowed into the service for evaluation by Exchange Online Protection (EOP). It's important to undertstand that if a message is sent to five recipients we count it as five different messages and not one message.  
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mailflow status report**. To go directly to the **Mail flow status report**, open <https://protection.office.com/mailflowStatusReport>.
 
@@ -216,7 +216,7 @@ When you open the report, the **Type** tab is selected by default. By default, t
 
   - **Inbound**
   - **Outbound**
-  - **Intra-org** (counted separately from **Inbound** and **Outbound**)
+  - **Intra-org**: this count is for messages within a tenant i.e sender abc@domain.com sends to recipient xyz@domain.com  (counted separately from **Inbound** and **Outbound**)
 
 - **Type**:
 
