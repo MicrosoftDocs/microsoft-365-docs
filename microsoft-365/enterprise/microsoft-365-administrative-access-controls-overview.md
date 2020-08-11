@@ -89,7 +89,7 @@ For information about assigning admin roles and permissions, see [Assign admin r
 
 ## Related Links
 
-- [Isolation Controls](office-365-isolation-controls.md)
+- [Isolation Controls](office-365-isolation-controls)
 - [Personnel Controls](office-365-personnel-controls.md)
 - [Technology Controls](office-365-technology-controls.md)
 - [Monitoring and Auditing Access Controls](office-365-monitoring-and-auditing-access-controls.md)
