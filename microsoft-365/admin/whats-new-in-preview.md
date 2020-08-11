@@ -48,6 +48,17 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office updates](https://docs.microsoft.com/OfficeUpdates/)
 
+## June 2020
+
+### Keeping up with Office What's New management
+
+A few months ago, we added a setting that lets you manage the [What's New messages that show up in a user's Office apps](#office-whats-new-management). This month, we released a new Home page card that will help you act quickly and keep track of the **What's New** messages that you want shown to the users in your organization.
+
+### Docs, training, and videos (June)
+
+- [Getting started with Teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+
+
 ## May 2020
 
 ### New update channel for Office
