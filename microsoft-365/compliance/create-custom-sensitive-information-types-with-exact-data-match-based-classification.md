@@ -40,11 +40,9 @@ But what if you wanted a custom sensitive information type that uses exact data 
 
 ![EDM-based classification](../media/EDMClassification.png)
 
-EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and it can contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](data-loss-prevention-policies.md) (DLP) or [Microsoft Cloud App Security file policies](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
+EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](data-loss-prevention-policies.md) (DLP) or [Microsoft Cloud App Security file policies](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
 
 ## Required licenses and permissions
-
-THIS REQUIRES CLARIFICATION FOR THE SCHEMA ADMIN AND THE EDMUPLOAD AGENT PERMISSIONS
 
 You must be a global admin, compliance administrator, or Exchange Online administrator to perform the tasks described in this article. To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).
 
@@ -89,7 +87,7 @@ Setting up and configuring EDM-based classification involves:
       - Up to 32 columns (fields) per data source
       - Up to 5 columns (fields) marked as searchable
 
-2. Structure the sensitive data in the .csv file such that the first row includes the names of the fields used for EDM-based classification. In your .csv file, you might have field names, such as "ssn", "birthdate", "firstname", "lastname". The column header names can't include spaces or underscores. For example, the sample .csv file that we use in this article is names *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, and more.
+2. Structure the sensitive data in the .csv file such that the first row includes the names of the fields used for EDM-based classification. In your .csv file, you might have field names, such as "ssn", "birthdate", "firstname", "lastname". The column header names can't include spaces or underscores. For example, the sample .csv file that we use in this article is named *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, and more.
 
 #### Define the schema for your database of sensitive information
 
@@ -98,7 +96,7 @@ Setting up and configuring EDM-based classification involves:
       `\<Field name="" searchable=""/\>`.
 
       - Use column names for *Field name* values.
-      - Use *searchable="true"* for the fields that you want to be searchable up to a maximum of 5 fields. You must designate a minimum of one field as searchable.
+      - Use *searchable="true"* for the fields that you want to be searchable up to a maximum of 5 fields. At least one field must be searchable.
 
       As an example, the following .xml file defines the schema for a patient records database, with five fields specified as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*.
 
@@ -214,7 +212,7 @@ Setting up and configuring EDM-based classification involves:
 
 At this point, you have set up EDM-based classification. The next step is to index the sensitive data, and then upload the indexed data.
 
-Recall from the previous procedure that our PatientRecords schema defines five fields as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*. Our example rule package includes those fields and references the database schema file (**edm.xml**), with one *ExactMatch* items per searchable field. Consider the following ExactMatch item:
+Recall from the previous procedure that our PatientRecords schema defines five fields as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*. Our example rule package includes those fields and references the database schema file (**edm.xml**), with one *ExactMatch* item per searchable field. Consider the following ExactMatch item:
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
@@ -235,7 +233,7 @@ Recall from the previous procedure that our PatientRecords schema defines five f
     </ExactMatch>
 ```
 
-In this example, note the following:
+In this example, note that:
 
 - The dataStore name references the .csv file we created earlier: **dataStore = "PatientRecords"**.
 
@@ -283,13 +281,13 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
 
 1. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-2. Run the following PowerShell cmdlets, substituting the data store name of "patientrecords" with the one you want to remove:
+2. Run the following PowerShell cmdlets, substituting the data store name of "patient records" with the one you want to remove:
 
       ```powershell
       Remove-DlpEdmSchema -Identity patientrecords
       ```
 
-      You will be prompted to confirm, as follows:
+      You will be prompted to confirm:
 
       > Confirm
       >
@@ -364,11 +362,11 @@ just copy SALT over in a secure fashion
 
 ### Part 2: Hash and upload the sensitive data
 
-During this phase, you set up a custom security group and user account, and set up the EDM Upload Agent tool. Then, you use the tool to hash with salt value the sensitive data, and upload it.
+In this phase, you set up a custom security group and user account, and set up the EDM Upload Agent tool. Then, you use the tool to hash with salt value the sensitive data, and upload it.
 
 The hashing and uploading can be done using one computer or you can separate the hashing step from the upload step for greater security.
 
-If you want to hash and upload in a single step from one computer, you need to do it from a computer that can directly connect to your Microsoft 365 tenant. This requires that your clear text sensitive data file be on that computer for hashing.
+If you want to hash and upload from one computer, you need to do it from a computer that can directly connect to your Microsoft 365 tenant. This requires that your clear text sensitive data files are on that computer for hashing.
 
 If you do not want to expose your clear text sensitive data file, you can hash it on a computer in a secure location and then copy the hash file and the salt file to a computer that can directly connect to your Microsoft 365 tenant for upload. In this scenario, you will need the EDMUploadAgent on both computers. 
 
@@ -376,8 +374,11 @@ If you do not want to expose your clear text sensitive data file, you can hash i
 
 - a work or school account for Microsoft 365  that will be added to the **EDM\_DataUploaders** security group
 - a Windows 10 or Windows Server 2016 machine with .NET version 4.6.2 for running the EDMUploadAgent
-- a directory on your upload machine for the EDMUploadAgent, your sensitive item file in csv format **PatientRecords.csv** and the output hash and salt files
-- the datastore name from the **edm.xml** file, for this example its `PatientRecords`
+- a directory on your upload machine for the:
+    -  EDMUploadAgent
+    - your sensitive item file in csv format **PatientRecords.csv** in our examples
+    -  and the output hash and salt files
+    - the datastore name from the **edm.xml** file, for this example its `PatientRecords`
 
 #### Set up the security group and user account
 
@@ -422,7 +423,7 @@ This computer must have direct access to your Microsoft 365 tenant.
 
 Example: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash**
 
-This will automatically add a randomly generated salt value to the hash for greater security. Optionally, if you want to use your own salt value, add the **/Salt saltvalue** to the command. This value must be 64 characters in length and can only contain the a-z characters and 0-9 characters.
+This will automatically add a randomly generated salt value to the hash for greater security. Optionally, if you want to use your own salt value, add the **/Salt <saltvalue>** to the command. This value must be 64 characters in length and can only contain the a-z characters and 0-9 characters.
 
 5. Check the upload status by running this command:
 
@@ -436,7 +437,7 @@ Look for the status to be in **ProcessingInProgress**. Check again every few min
 
 Perform the hash on a computer in a secure environment.
 
-1. Run the following command in Copmmand Prompt windows:
+1. Run the following command in Command Prompt windows:
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
