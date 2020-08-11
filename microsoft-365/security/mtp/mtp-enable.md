@@ -30,9 +30,6 @@ search.appverid:
 
 Microsoft Threat Protection automatically turns on when eligible customers with the required permissions visit Microsoft 365 security center. Read this article to understand various prerequisites and how Microsoft Threat Protection is provisioned.
 
->[!NOTE]
->To learn about Advanced Threat Protection, see [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide).
-
 ## Check license eligibility and required permissions
 A license to a Microsoft 365 security product generally entitles you to use Microsoft Threat Protection in Microsoft 365 security center without additional licensing cost. We do recommend getting a Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combination of licenses that provides access to all supported services.
 
