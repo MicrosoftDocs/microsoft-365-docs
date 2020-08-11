@@ -26,7 +26,7 @@ To keep what you want and delete what you don't:
  
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|:--------------------|:-----------------------------|
-|[Policy management and deletion workflow](retention.md)| Retain or delete content that includes email, documents, instant messages, and more | [Get started with retention policies and retention labels](get-started-with-retention.md)|
+|[Policy management and deletion workflow](retention.md)| Retain or delete content that includes email, documents, instant messages, and more <br /><br />Example scenario: [Apply a retention label to content automatically](apply-retention-labels-automatically.md) | [Get started with retention policies and retention labels](get-started-with-retention.md)|
 |[Import service](importing-pst-files-to-office-365.md)| Bulk-import PST files to Exchange Online mailboxes to retain and search email messages for compliance or regulatory requirements | [Use network upload to import your organization's PST files to Microsoft 365](use-network-upload-to-import-pst-files.md)|
 |[Archive third-party data](archiving-third-party-data.md)| Import, archive, and apply compliance solutions to third-party data from social media platforms, instant messaging platforms, and document collaboration platforms| [Third-party connectors](archiving-third-party-data.md#third-party-data-connectors)|
 |[Inactive mailboxes](inactive-mailboxes-in-office-365.md)| Retain mailbox content after employees leave the organization | [Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)|
