@@ -89,8 +89,8 @@ For information about assigning admin roles and permissions, see [Assign admin r
 
 ## Related Links
 
-- [Isolation Controls](office-365-isolation-controls)
-- [Personnel Controls](office-365-personnel-controls.md)
-- [Technology Controls](office-365-technology-controls.md)
-- [Monitoring and Auditing Access Controls](office-365-monitoring-and-auditing-access-controls.md)
-- [Yammer Enterprise Access Controls](office-365-yammer-enterprise-access-controls.md)
+- [Isolation Controls](microsoft-365-isolation-controls)
+- [Personnel Controls](microsoft-365-personnel-controls)
+- [Technology Controls](microsoft-365-technology-controls)
+- [Monitoring and Auditing Access Controls](microsoft-365-monitoring-and-auditing-access-controls)
+- [Yammer Enterprise Access Controls](microsoft-365-yammer-enterprise-access-controls.md)
