@@ -19,7 +19,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn how to upgrade from an Office 365 E4 subscription."
-ms.date: 
+ms.date: 08/12/2020
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
