@@ -276,29 +276,63 @@ Each exported .csv file is limited to 150,000 rows. If the data for that day con
 
 ![Direction view in the Mailflow status report ](../../media/mail-flow-status-report-direction-view.png)
 
-
-
-
 ### Funnel view for the Mailflow status report
+
+The funnel view shows you the automatic filtering of incoming and outgoing emails in your organization. You can view the total number of emails, and how the were filtered. Emails are
+categorized by protection type such as anti-malware protection, anti-phishing, anti-spam and edge protection. It provides an insight into the overall impact of of Microsoft's threat protection features in your organization.
 
 If you click the **Funnel** tab, by default, this view contains a chart and a data table that's configured with the following filters:
 
 - **Date**: The last 7 days.
+
 - **Direction**:
 
   - **Inbound**
   - **Outbound**
   - **Intra-org** (counted separately from **Inbound** and **Outbound**)
 
+The chart is organized by **Funnel** order.
 
+ - **Total email**
+ - **Email after edge protection**
+ - **Email after Anti-malware, file reputation, file type block**
+ - **Email after Anti-phish, URL reputation, brand impersonation, anti-spoof**
+ - **Email after Anti-Spam, bulk mail filtering**
+ - **Email after User and domain impersonation (ATP only)**
+ - **Email after File and URL detonation (ATP only)**
+ - **Email detected as benign after Post-delivery protection (URL click time protection)**
+
+You can changes these filters by clicking **Filter** or by clicking a value in the chart legend. The funnel view can be filtered to display data up to 90 days in the past.
+
+The table contains the following information, for the current filters, shown in descending date order:
+
+ - **Date**
+ - **Total email**
+ - **Edge protection**
+ - **Anti-malware, file reputation, file type block**
+ - **Anti-phish, URL reputation, Brand impersonation, Anti-spoof**
+ - **Anti-spam, bulk mail filtering**
+ - **User and domain impersonation (ATP)**  
+ - **File and URL detonation (ATP)**
+ - **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**
+
+On selecting a row in the able the flyout provides a more detailed breakdown of number of email filtered out by detection type.
+
+**Export**:
+
+For the funnel view, on clicking **Export**, you can select from the following options: 
+- **Summary (with data for last 90 days at most)**
+- **Details (with data for last 30 days at most)**
+
+Under **Date**, select a range, and then click **Apply**. Data for the current filters will be exported to a .csv file. 
+
+Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
+
+ ![Funnel view in the Mailflow status report ](../../media/mail-flow-status-report-funnel-view.png)
 
 ### Tech view for the Mailflow status report
 
 If you click the **Tech view** tab, the same default filters from the **Funnel** view are used.
-
-
-
-
 
 ## Sent and received email report
 
