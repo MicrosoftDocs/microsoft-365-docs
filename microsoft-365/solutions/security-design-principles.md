@@ -18,7 +18,7 @@ f1.keywords: NOCSH
 
 # Security hurdles you can sail over — One architect’s viewpoint
 
-In this article, [Kozeta Garrett](https://www.linkedin.com/in/kozeta-garrett-53013a6/), Cybersecurity Architect at Microsoft, describes the top security challenges she encounters at enterprise organizations and recommends approaches for overcoming these obstacles. 
+In this article, [Kozeta Garrett](https://www.linkedin.com/in/kozeta-garrett-53013a6/), Cybersecurity Architect at Microsoft, describes the top security challenges she encounters at enterprise organizations and recommends approaches for sailing over these hurdles. 
 
 ## About the author
 
