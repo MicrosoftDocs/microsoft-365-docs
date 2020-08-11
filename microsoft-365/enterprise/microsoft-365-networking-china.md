@@ -67,7 +67,7 @@ Microsoft is continually working to improve the Microsoft 365 user experience an
 
 [Network planning and performance tuning for Microsoft 365](https://aka.ms/tune)
 
-[Microsoft 365 network connectivity principles](office-365-network-connectivity-principles.md)
+[Microsoft 365 network connectivity principles](microsoft-365-network-connectivity-principles.md)
 
 [Managing Office 365 endpoints](managing-office-365-endpoints.md)
 
