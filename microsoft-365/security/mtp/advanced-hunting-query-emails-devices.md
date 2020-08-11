@@ -52,8 +52,6 @@ EmailEvents
 | where Timestamp > ago(7d)
 | project RecipientEmailAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 ```
-![Query results with the account name extracted from the local-host of the recipient address](../../media/mtp-ah/local-host-extracted.png)
-
 
 ### Merge the IdentityInfo table
 
@@ -90,22 +88,6 @@ DeviceInfo
 //List all alerts on devices that user has logged on to
 | join AlertInfo on AlertId
 | project AlertId, Timestamp, Title, Severity, Category 
-```
-
-### Identify rare malware received through email
-This query uses the [FileProfile() function](advanced-hunting-fileprofile-function.md) to enrich file information about email attachments detected as malware. The enriched information includes global prevalence data, which can highlight uncommon or rare files. 
-
-```kusto
-EmailAttachmentInfo
-| where Timestamp > ago(7d)
-//Get SHA-256 values of all distinct email attachments detected as malware
-| where MalwareFilterVerdict == "Malware"
-| distinct SHA256
-//Use FileProfile() function to enrich file information
-| invoke FileProfile("SHA256")
-//Show file information including global prevalence (encounter count) and sort by this count
-| project SHA1, SHA256, FileSize, GlobalFirstSeen, GlobalLastSeen, GlobalPrevalence, IsExecutable
-| sort by GlobalPrevalence desc
 ```
 
 ## Hunting scenarios
