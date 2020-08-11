@@ -37,14 +37,14 @@ The following sections provide more details about alerts, security playbooks, an
 Currently for AIR, alerts generated from the following kinds of alert policies are auto-investigated:  
 
 - A potentially malicious URL click was detected
-- Email reported by user as phish*
-- Email messages containing malware removed after delivery*
-- Email messages containing phish URLs removed after delivery*
-- Suspicious email sending patterns detected#
-- User restricted from sending email#
+- Email reported by user as phish`*`
+- Email messages containing malware removed after delivery`*`
+- Email messages containing phish URLs removed after delivery`*`
+- Suspicious email sending patterns detected`#`
+- User restricted from sending email`#`
 
 > [!NOTE]
-> The alerts marked with an asterisk (*) are assigned an *Informational* severity in the respective alert policies within the Security & Compliance Center, with email notifications turned off. Email notifications can be turned on through [Alert policy configuration](../../compliance/alert-policies.md#alert-policy-settings). Alerts marked with a hash (#) are generally available alerts associated with public preview playbooks.
+> The alerts marked with an asterisk (`*`) are assigned an *Informational* severity in the respective alert policies within the Security & Compliance Center, with email notifications turned off. Email notifications can be turned on through [Alert policy configuration](../../compliance/alert-policies.md#alert-policy-settings). Alerts marked with a hash (`#`) are generally available alerts associated with public preview playbooks.
 
 To view alerts, in the Security & Compliance Center, choose **Alerts** > **View alerts**. Select an alert to view its details, and from there, use the **View investigation** link to go to the corresponding [investigation](air-view-investigation-results.md#investigation-graph).  
 
@@ -119,7 +119,7 @@ Remediation is the final phase of the playbook. During this phase, remediation s
 
 ## Example: A security administrator triggers an investigation from Threat Explorer
 
-In addition to automatic investigations that are triggered by an alert, your organization's security operations team can trigger an automatic investigation from a view in [Threat Explorer](threat-explorer.md).
+In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer.md).
 
 For example, suppose that you are using the **Malware** view in Threat Explorer. Using the tabs below the chart, you select the **Email** tab. If you select one or more items in the list, the **+ Actions** button activates. 
 
@@ -130,6 +130,12 @@ Using the **Actions** menu, you can select **Trigger investigation**.
 ![Actions menu for selected messages](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
 Similar to playbooks triggered by an alert, automatic investigations that are triggered from a view in Explorer include a root investigation, steps to identify and correlate threats, and recommended actions to mitigate those threats.
+
+## Example: A security operations team integrates AIR with their SIEM to monitor alerts
+
+Some organizations integrate Office 365 ATP with their security information and event management (SIEM) system, their case management system, or a custom reporting solution. This integration enables their security operations team to monitor alerts more easily. For example, a security operations team can focus on user-reported phish alerts that were already processed by AIR in order to reduce the number of false positives.
+
+You can use the 
 
 ## Next steps
 
