@@ -42,7 +42,7 @@ Together, the above-listed protections provide robust logical isolation controls
 
 - [Isolation and Access Control in Azure Active Directory](microsoft-365-isolation-in-azure-active-directory.md)
 - [Tenant Isolation in the Office Graph and Delve](microsoft-365-isolation-in-graph-and-delve.md)
-- [Tenant Isolation in Microsoft 365 Search](microsoft-365-isolation-in-office-365-search.md)
+- [Tenant Isolation in Microsoft 365 Search](microsoft-365-isolation-in-microsoft-365-search.md)
 - [Tenant Isolation in Office 365 Video](microsoft-365-isolation-in-microsoft-365-video.md)
 - [Resource Limits](microsoft-365-resource-limits.md)
 - [Monitoring and Testing Tenant Boundaries](microsoft-365-monitoring-and-testing.md)
