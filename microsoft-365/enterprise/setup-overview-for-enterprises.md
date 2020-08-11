@@ -45,7 +45,7 @@ Deploying Microsoft 365 Enterprise on your own requires that you perform detaile
 
 To deploy Microsoft 365 Enterprise on your own after completing your planning, these are the recommended steps.
 
-1. [Set up your network](set-up-network-for-office-365.md)
+1. [Set up your network](set-up-network-for-microsoft-365.md)
 
    Includes adding your Internet domains and optimizing the network performance for your on-premises users.
  
