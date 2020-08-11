@@ -8,7 +8,7 @@ audience: admin
 ms.topic: article
 ms.service: 
 search.appverid: 
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to give users permissions to do tasks in the Topic Center"
 ---
