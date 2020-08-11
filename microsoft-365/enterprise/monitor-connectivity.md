@@ -46,6 +46,6 @@ Here's a short link you can use to come back: [https://aka.ms/monitorconnectivit
   
 [Network planning and performance tuning for Microsoft 365](network-planning-and-performance.md)
   
-[Microsoft 365 integration with on-premises environments](office-365-integration.md)
+[Microsoft 365 integration with on-premises environments](microsoft-365-integration.md)
   
 [Managing Microsoft 365 endpoints](managing-office-365-endpoints.md)
