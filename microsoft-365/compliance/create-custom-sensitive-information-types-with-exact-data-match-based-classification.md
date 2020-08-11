@@ -316,7 +316,7 @@ need two salting procedures, one for onestep from the externally facing and anot
 
 when defiuning the schema file the searchable fields must be either an out of box SIT or custom SIT, only 5 fields )column headings) can be searchable
 
-1. From outbound access device from the cmd prompt run EdmUploadAgent.exe /Authorize -  this opens a sign in window, put in the user name and password. it needs to be the account  that was added to teh EDM_datauploaders security group. Tenant info is extracted from the user account
+1. From outbound access device from the cmd prompt run EdmUploadAgent.exe /Authorize -  
 2. data store schema must have already been uploaded
 3.  create hash first then do upload
 4. EdmUploadAgent.exe /CreateHash /DataFile (where the data file is ) E:\emd\test\data\schema32_1000000,csv /HashLocation  (where to store it) E:\edm\tat\hash this makes the salt file and the hash file as output
@@ -337,7 +337,7 @@ all in one step: EdmUploadAgent.exe /UploadData /DataStoreName schema321 /DataFi
 
 tshooting/check status cmd
 
-EdmUploadAgent.exe /GetSession /DataStoreName schema321  will get the status look for ProcessingInProgress then to Completed.
+
 
 Once it gets to completed the admin can start using it in the custom SIT
 
@@ -362,9 +362,22 @@ just copy SALT over in a secure fashion
 
  -->
 
-### Part 2: Index and upload the sensitive data
+### Part 2: Hash and upload the sensitive data
 
-During this phase, you set up a custom security group and user account, and set up the EDM Upload Agent tool. Then, you use the tool to index the sensitive data, and upload the indexed data.
+During this phase, you set up a custom security group and user account, and set up the EDM Upload Agent tool. Then, you use the tool to hash with salt value the sensitive data, and upload it.
+
+The hashing and uploading can be done using one computer or you can separate the hashing step from the upload step for greater security.
+
+If you want to hash and upload in a single step from one computer, you need to do it from a computer that can directly connect to your Microsoft 365 tenant. This requires that your clear text sensitive data file be on that computer for hashing.
+
+If you do not want to expose your clear text sensitive data file, you can hash it on a computer in a secure location and then copy the hash file and the salt file to a computer that can directly connect to your Microsoft 365 tenant for upload. In this scenario, you will need the EDMUploadAgent on both computers. 
+
+#### Prerequisites
+
+- a work or school account for Microsoft 365  that will be added to the **EDM\_DataUploaders** security group
+- a Windows 10 or Windows Server 2016 machine with .NET version 4.6.2 for running the EDMUploadAgent
+- a directory on your upload machine for the EDMUploadAgent, your sensitive item file in csv format **PatientRecords.csv** and the output hash and salt files
+- the datastore name from the **edm.xml** file, for this example its `PatientRecords`
 
 #### Set up the security group and user account
 
@@ -372,12 +385,12 @@ During this phase, you set up a custom security group and user account, and set 
 
 2. Add one or more users to the **EDM\_DataUploaders** security group. (These users will manage the database of sensitive information.)
 
-3. Make sure each user who is managing the sensitive data is a local admin on the machine used for the EDM Upload Agent.
+#### Hash and upload from one computer
 
-#### Set up the EDM Upload Agent
+This computer must have direct access to your Microsoft 365 tenant.
 
 >[!NOTE]
-> Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group and a local admin on your machine.
+> Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group.
 
 #### Links to EDM upload agent by subscription type
 
@@ -385,41 +398,57 @@ During this phase, you set up a custom security group and user account, and set 
 - [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521)
 - [DoD](https://go.microsoft.com/fwlink/?linkid=2137807)
 
-1. Download and install the appropriate [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type) for your subscription. By default, the installation location should be **C:\\Program Files\\Microsoft\\EdmUploadAgent**.
+1. Create a working directory for the EDMUploadAgent. For example, **C:\EDM\Data**. Place the **PatientRecords.csv** file there.
+
+2. Download and install the appropriate [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type) for your subscription into the directory you created in step 1.
+
+> [!NOTE]
+> The EDMUploadAgent at the above links has been updated to automatically add a salt value to the hashed data. Alternately, you can provide your own salt value. Once you have used this version, you will not be able to use the previous version of the EDMUploadAgent.
+>
+> You can upload data with the EDMUploadAgent to any given data store only twice per day.
 
 > [!TIP]
 > To a get a list out of the supported command parameters, run the agent no arguments. For example 'EdmUploadAgent.exe'.
 
-> [!NOTE]
-> You can upload data with the EDMUploadAgent to any given data store only twice per day.
-
-2. To authorize the EDM Upload Agent, open Windows Command Prompt (as an administrator), and then run the following command:
+2. Authorize the EDM Upload Agent, open  Command Prompt window (as an administrator), switch to the **C:\EDM\Data** directory and then run the following command:
 
     `EdmUploadAgent.exe /Authorize`
 
-3. Sign in with your work or school account for Office 365 that was added to the EDM_DataUploaders security group.
+3. Sign in with your work or school account for Microsoft 365 that was added to the EDM_DataUploaders security group. Your tenant information is extracted from the user account to make the connection.
 
-The next step is to use the EDM Upload Agent to index the sensitive data, and then upload the indexed data.
-
-#### Index and upload the sensitive data
-
-Save the sensitive data file (recall our example is **PatientRecords.csv**) to the local drive on the machine. (We saved our example **PatientRecords.csv** file to **C:\\Edm\\Data**.)
-
-To index and upload the sensitive data, run the following command in Windows Command Prompt:
+4. To hash and upload the sensitive data, run the following command in Command Prompt window:
 
 `EdmUploadAgent.exe /UploadData /DataStoreName \<DataStoreName\> /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
-Example: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\\Edm\\Hash\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
+Example: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash**
 
-To separate and execute index of sensitive data in an isolated environment, execute index and upload steps separately.
+This will automatically add a randomly generated salt value to the hash for greater security. Optionally, if you want to use your own salt value, add the **/Salt saltvalue** to the command. This value must be 64 characters in length and can only contain the a-z characters and 0-9 characters.
 
-To index the sensitive data, run the following command in Windows Command Prompt:
+5. Check the upload status by running this command:
+
+`EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
+
+Example: **EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords**
+
+Look for the status to be in **ProcessingInProgress**. Check again every few minutes until the status changes to **Completed**. Once the status is completed, your EDM data is ready for use.
+
+#### Separate Hash and upload
+
+Perform the hash on a computer in a secure environment.
+
+1. Run the following command in Copmmand Prompt windows:
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
 For example:
 
-> **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
+> **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash**
+
+This will output a hashed file and a salt file with these extensions if you didn't specify the **/Salt <saltvalue>** option:
+- .EdmHash
+- .EdmSalt
+
+2. Copy these files in a secure fashion to the computer you will use to upload your sensitive items csv file (PatientRecords) to your tenant.
 
 To upload the indexed data, run the following command in Windows Command Prompt:
 
