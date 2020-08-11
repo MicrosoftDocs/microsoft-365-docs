@@ -180,7 +180,7 @@ Microsoft continually improves the overall performance of Office 365 by monitori
 
 [Network planning and performance tuning for Office 365](network-planning-and-performance.md)
   
-[Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md)
+[Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
   
 [Managing Office 365 endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
