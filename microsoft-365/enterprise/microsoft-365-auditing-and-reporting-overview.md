@@ -52,8 +52,8 @@ Key features include a compliance area that provides administrators with links t
 
 ## Related Links
 
-- [eDiscovery and Search Features](office-365-ediscovery-and-search-features.md)
-- [Microsoft 365 Reporting Features](office-365-reporting-features.md)
-- [Microsoft 365 Management Activity API](office-365-management-activity-api.md)
-- [Microsoft 365 Mailbox Migrations](office-365-mailbox-migrations.md)
-- [Internal Logging for Microsoft 365 Engineering](office-365-internal-logging.md)
+- [eDiscovery and Search Features](microsoft-365-ediscovery-and-search-features.md)
+- [Microsoft 365 Reporting Features](microsoft-365-reporting-features.md)
+- [Microsoft 365 Management Activity API](microsoft-365-management-activity-api.md)
+- [Microsoft 365 Mailbox Migrations](microsoft-365-mailbox-migrations.md)
+- [Internal Logging for Microsoft 365 Engineering](microsoft-365-internal-logging.md)
