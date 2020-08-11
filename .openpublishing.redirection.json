@@ -928,7 +928,7 @@
     {
       "source_path": "enterprise/office-365-isolation-controls.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-isolation-control",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "enterprise/office-365-personnel-controls.md",
