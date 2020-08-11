@@ -43,7 +43,7 @@ Managing user identities with modern authentication gives administrators many di
   
 Be aware that because Skype for Business works closely with Exchange, the login behavior Skype for Business client users will see will be affected by the modern authentication status of Exchange. This will also apply if you have a Skype for Business _split-domain_ hybrid architecture, in which you have both Skype for Business Online and Skype for Business on-premises, with users homed in both locations.
 
-For more information about modern authentication in Office 365, see [Office 365 Client App Support - Modern Authentication](office-365-client-support-modern-authentication.md).
+For more information about modern authentication in Office 365, see [Office 365 Client App Support - Modern Authentication](microsoft-365-client-support-modern-authentication.md).
   
 > [!IMPORTANT]
 > As of August of 2017, all new Office 365 tenants that include Skype for Business online and Exchange online will have modern authentication enabled by default. Pre-existing tenants won't have a change in their default MA state, but all new tenants automatically support the expanded set of identity features you see listed above. To check your MA status, see the [Check the modern authentication status of your on-premises environment](hybrid-modern-auth-overview.md#BKMK_CheckStatus) section.
