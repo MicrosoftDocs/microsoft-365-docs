@@ -243,7 +243,7 @@
   items: 
     - name: Manage information governance
       href: manage-information-governance.md
-    - name: Import mail data
+    - name: Import mailbox data
       items: 
         - name: Overview of importing PST files
           href: importing-pst-files-to-office-365.md
