@@ -35,4 +35,4 @@ Microsoft 365 services inter-operate with each other, but are designed and imple
 
 All customer content in a tenant is isolated from other tenants and from operations and systems data used in the management of Microsoft 365. Multiple forms of protection are implemented throughout Microsoft 365 to minimize the risk of compromise of any Microsoft 365 service or application. Multiple forms of protection also prevent unauthorized access to the information of tenants or the Microsoft 365 system itself.
 
-For information about how Microsoft implements logical isolation of tenant data within Microsoft 365, see [Tenant Isolation in Microsoft 365](office-365-tenant-isolation-overview.md).
+For information about how Microsoft implements logical isolation of tenant data within Microsoft 365, see [Tenant Isolation in Microsoft 365](microsoft-365-tenant-isolation-overview.md).
