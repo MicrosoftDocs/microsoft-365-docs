@@ -25,7 +25,7 @@ description: "In this article, you will the resources to help you migrate your o
 
 Our [basic set up instructions](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) help you get everyone using your Microsoft 365 services and applications in the shortest time possible. This skips the hybrid scenarios and the more advanced methods for migrating to Microsoft 365. 
   
-If you want help getting Microsoft 365 set up, [FastTrack](https://fasttrack.microsoft.com/office) is the easiest way to deploy Microsoft 365, you can also sign in and use the [Setup guides for Microsoft 365 services](setup-guides-for-office-365.md).
+If you want help getting Microsoft 365 set up, [FastTrack](https://fasttrack.microsoft.com/office) is the easiest way to deploy Microsoft 365, you can also sign in and use the [Setup guides for Microsoft 365 services](setup-guides-for-microsoft-365.md).
 
 ## Migrate email to Microsoft 365
 - Migrate with Exchange Hybrid using the [Exchange Deployment Assistant](https://technet.microsoft.com/exdeploy2013). (Administrator)
