@@ -34,6 +34,8 @@ The following diagram illustrates the common identity and device access policies
 
 ![Summary of policy updates for protecting email](../media/identity-access-ruleset-mail.png)
 
+[See a larger version of this image](https://raw.githubusercontent.com/MicrosoftDocs/microsoft-365-docs/public/microsoft-365/media/identity-access-ruleset-mail.png)
+
 If you included Exchange Online and Outlook in the scope of the policies when you set them up, you only need to create the new policy to block ActiveSync clients. Review the policies listed in the following table and either make the recommended additions, or confirm that these are already included. Each rule links to the associated configuration instructions in the [Common identity and device access policies](identity-access-policies.md) article.
 
 |Protection level|Policies|More information|
