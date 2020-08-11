@@ -68,35 +68,26 @@ A cipher suite is a collection of encryption algorithms that TLS uses to establi
 
 |**Cipher suite**|**Key exchange algorithm/strength**|**Perfect Forward Secrecy**|**Cipher/strength**|**Authentication algorithm**|
 |:-----|:-----|:-----|:-----|:-----|
-|TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 <br/>   |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|ECDSA <br/>   |
-|TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 <br/>   |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|ECDSA <br/>   |
-|TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 <br/>   |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|ECDSA <br/>   |
-|TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 <br/>   |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|ECDSA <br/>   |
 |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br/>     |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|RSA/112 <br/> |
 |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br/>     |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384 <br/>|ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256 <br/>|ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 <br/>   |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|ECDSA <br/>   |
-|TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 <br/>   |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|ECDSA <br/>   |
-|TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 <br/>   |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|ECDSA <br/>   |
-|TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 <br/>   |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|ECDSA <br/>   |
-|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384 <br/>|ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|RSA/112 <br/> |
-|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256 <br/>|ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 <br/>     |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 <br/>     |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
 |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA <br/>        |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|RSA/112 <br/> |
 |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA <br/>        |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
 |TLS_RSA_WITH_AES_256_GCM_SHA384 <br/>           |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_128_GCM_SHA256 <br/>           |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
 |TLS_RSA_WITH_AES_256_CBC_SHA256 <br/>           |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
 |TLS_RSA_WITH_AES_128_CBC_SHA256 <br/>           |RSA/112 <br/> |No <br/> |AES/128 <br/>|RSA/112 <br/> |
 |TLS_RSA_WITH_AES_256_CBC_SHA <br/>              |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
 |TLS_RSA_WITH_AES_128_CBC_SHA <br/>              |RSA/112 <br/> |No <br/> |AES/128 <br/>|RSA/112 <br/> |
 
-These are the following cipher suites which will still support TLS 1.0 and 1.1 protocols until their deprecation date. For GCC High and DoD environments, that deprecation date was Jan 15, 2020 and for Worldwide and GCC environments that date is October 15, 2020.
+These are the following cipher suites which will still support TLS 1.0 and 1.1 protocols until their deprecation date. For GCC High and DoD environments that deprecation date was Jan 15, 2020, and for Worldwide and GCC environments that date is October 15, 2020.
 |**Protocols**|**Cipher suite name**|**Key exchange algorithm/Strength**|**Perfect Forward Secrecy support**|**Authentication algorithm/Strength**|**Cipher/Strength**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |Yes  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256  <br/> |ECDH/128  <br/> |Yes  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> |ECDH/192  <br/> |Yes  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> |ECDH/128  <br/> |Yes  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA        <br/> |RSA/112  <br/>  |No  <br/>  |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA        <br/> |RSA/112  <br/>  |No  <br/>  |RSA/112  <br/> |AES/128  <br/> |
    
 ## Related topics
 [TLS Cipher Suites in Windows 10 v1903](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
