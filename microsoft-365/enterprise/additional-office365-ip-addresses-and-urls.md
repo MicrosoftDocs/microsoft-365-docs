@@ -28,7 +28,7 @@ hideEdit: true
 
 # Additional endpoints not included in the Office 365 IP Address and URL Web service
 
-Some network endpoints were previously published and have not been included in the [Office 365 IP Address and URL Web Service](office-365-ip-web-service.md). The web service scope is network endpoints that are required for connectivity from a user of Office 365 across an enterprise perimeter network. This currently does not include:
+Some network endpoints were previously published and have not been included in the [Office 365 IP Address and URL Web Service](microsoft-365-ip-web-service.md). The web service scope is network endpoints that are required for connectivity from a user of Office 365 across an enterprise perimeter network. This currently does not include:
 
 1. Network connectivity that may be required from a Microsoft datacenter to a customer network (inbound hybrid server network traffic).
 2. Network connectivity from servers on a customer network across the enterprise perimeter (outbound server network traffic).
