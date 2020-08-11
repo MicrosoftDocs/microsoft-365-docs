@@ -23,8 +23,8 @@ description: "How to implement VPN split tunneling for Office 365"
 
 >[!NOTE]
 >This topic is part of a set of topics that address Office 365 optimization for remote users.
->- For an overview of using VPN split tunneling to optimize Office 365 connectivity for remote users, see [Overview: VPN split tunneling for Office 365](office-365-vpn-split-tunnel.md).
->- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](office-365-networking-china.md).
+>- For an overview of using VPN split tunneling to optimize Office 365 connectivity for remote users, see [Overview: VPN split tunneling for Office 365](microsoft-365-vpn-split-tunnel.md).
+>- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](microsoft-365-networking-china.md).
 
 For many years enterprises have been using VPNs to support remote experiences for their users. Whilst core workloads remained on-premises, a VPN from the remote client routed through a datacenter on the corporate network was the primary method for remote users to access corporate resources. To safeguard these connections, enterprises build layers of network security solutions along the VPN paths. This was done to protect internal infrastructure as well as to safeguard mobile browsing of external web sites by rerouting traffic into the VPN and then out through the on-premises Internet perimeter. VPNs, network perimeters, and associated security infrastructure were often purpose built and scaled for a defined volume of traffic, typically with the majority of connectivity being initiated from within the corporate network, and most of it staying within the internal network boundaries.
 
@@ -322,13 +322,13 @@ Port 80 is only used for things like redirect to a port 443 session, no customer
 
 ### Does this advice apply to users in China using a worldwide instance of Office 365?
 
-**No**, it does not. The one caveat to the above advice is users in the PRC who are connecting to a worldwide instance of Office 365. Due to the common occurrence of cross border network congestion in the region, direct Internet egress performance can be variable. Most customers in the region operate using a VPN to bring the traffic into the corporate network and utilize their authorized MPLS circuit or similar to egress outside the country via an optimized path. This is outlined further in the article [Office 365 performance optimization for China users](office-365-networking-china.md).
+**No**, it does not. The one caveat to the above advice is users in the PRC who are connecting to a worldwide instance of Office 365. Due to the common occurrence of cross border network congestion in the region, direct Internet egress performance can be variable. Most customers in the region operate using a VPN to bring the traffic into the corporate network and utilize their authorized MPLS circuit or similar to egress outside the country via an optimized path. This is outlined further in the article [Office 365 performance optimization for China users](microsoft-365-networking-china.md).
 
 ## Related topics
 
-[Overview: VPN split tunneling for Office 365](office-365-vpn-split-tunnel.md)
+[Overview: VPN split tunneling for Office 365](microsoft-365-vpn-split-tunnel.md)
 
-[Office 365 performance optimization for China users](office-365-networking-china.md)
+[Office 365 performance optimization for China users](microsoft-365-networking-china.md)
 
 [Alternative ways for security professionals and IT to achieve modern security controls in today's unique remote work scenarios (Microsoft Security Team blog)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
@@ -336,7 +336,7 @@ Port 80 is only used for things like redirect to a port 443 session, no customer
 
 [Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
-[Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md)
+[Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
 
 [Assessing Office 365 network connectivity](assessing-network-connectivity.md)
 
