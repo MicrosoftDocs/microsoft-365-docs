@@ -28,6 +28,10 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 By default, end-user spam notifications are disabled in anti-spam policies. When an admin [enables end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications), recipients (including shared mailboxes with automapping enabled) will receive periodic notifications about their messages that were quarantined as spam, bulk email, or (as of April 2020) phishing.
 
+End user Spam notification for shared mailboxes is only supported if shared mailbox permission is granted through: Add-MailboxPermission-Identity <shared mailbox> -User <user> -AccessRights FullAccess - AutoMapping:$false
+
+End User Spam notification is not supported for groups.
+
 > [!NOTE]
 > Messages that were quarantined as high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
 
