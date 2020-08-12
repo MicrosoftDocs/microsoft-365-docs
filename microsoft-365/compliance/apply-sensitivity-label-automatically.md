@@ -210,15 +210,15 @@ Simulation mode is unique to auto-labeling policies and woven into the workflow.
 
 Workflow for an auto-labeling policy:
 
-1. Create and configure an auto-labeling policy
+1. Create and configure an auto-labeling policy.
 
-2. Run the policy in simulation mode and wait until it's complete (within 48 hours)
+2. Run the policy in simulation mode and wait 24 hours, or until the simulation is complete.
 
-3. Review the results, and if necessary, refine your policy, rerun simulation mode and wait until it's complete (within 48 hours)
+3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait another 24 hours, or until the simulation is complete.
 
-4. Repeat step 3 as needed
+4. Repeat step 3 as needed.
 
-5. Deploy in production
+5. Deploy in production.
 
 The simulated deployment runs like the WhatIf parameter for PowerShell. You see results reported as if the auto-labeling policy had applied your selected label, using the rules that you defined. You can then refine your rules for accuracy if needed, and rerun the simulation. However, because auto-labeling for Exchange applies to emails that are sent and received, rather than emails stored in mailboxes, don't expect results for email in a simulation to be consistent unless you're able to send and receive the exact same email messages.
 
