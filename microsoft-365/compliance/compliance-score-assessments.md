@@ -118,7 +118,7 @@ To create an assessment in Compliance Score, follow the steps below:
 
 1. From your assessments page, select **Add assessment**. An assessment wizard will appear in a large flyout pane.
 
-2. **Select a template:** Choose a template to serve as the basis for your assessment. You can choose a ready to use template, or a template you’ve modified or created. Select the radio button next to your chosen template, then select  **Next**.
+2. **Select a template:** Choose a [template](compliance-score-templates.md) to serve as the basis for your assessment. You can choose a ready to use template, or a template you’ve modified or created. Select the radio button next to your chosen template, then select  **Next**.
 
 > [!NOTE]
 > See [instructions for creating and modifying templates](working-with-compliance-manager.md#templates), a process handled in Compliance Manager.
@@ -127,13 +127,19 @@ To create an assessment in Compliance Score, follow the steps below:
 
 4. Assign your assessment to a group. You can either:
     - Select **Use existing group** to assign it to a group you’ve already created; or
-    - Select **Create new group** to create a new group and assign this assessment to it. Determine a name for your group and enter it in the field beneath the radio button.
+    - Select **Create new group** to create a new group and assign this assessment to it:
+        - Determine a name for your group and enter it in the field beneath the radio button.
+        - You can **copy data from an existing group**, such as implementation and testing details and documents, by selecting the appropriate boxes.
+
+    Read more about [working with groups](#understand-groups-before-creating-assessments)
 
 5. **Review and finish:** The last screen of the wizard shows the template, name, and group chosen for the assessment. You can edit any of these settings from the links on the screen, which take you back to the relevant steps in the wizard. Once you’re satisfied with the settings, select **Create assessment**.
 
 6. The next screen confirms that you’ve successfully created your new assessment. Select **Done** to close the wizard, and your new assessment's details page will appear on the screen.
 
 If you see an **Assessment failed** screen after selecting **Create assessment**, select **Try again** to re-create your assessment.
+
+You can change the name of your assessment after you create it by selecting the **Edit name** button in the upper-right corner of the [assessment's details page](#monitor-assessment-progress-and-controls).
 
 ## Delete an assessment
 
@@ -181,11 +187,21 @@ To view a control’s details, select it from its row in the table. The control 
 
 Select an improvement action from the list to drill into the improvement action’s details page. The details pages shows test status, implementation notes, and launch into the recommended solution.
 
+### Your improvement actions tab
+
+The tab for your improvement actions lists all the controls in the assessment that are managed by your organization. The status bar details the aggregated test status of your improvement actions in the assessment so you can quickly gauge what has been tested and what still needs to be done. Beneath the bar is the full list of improvement actions and key details, including: test status, the number of potential and earned points, associated regulations and standards, applicable solution, action type, and control family. 
+
+Select an improvement action to view its details page, and select the **Launch now** link to open the solution to take action.
+
+### Microsoft actions tab
+
+The Microsoft actions tab lists all the actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
+
 #### Learn more
 [Understand how controls and improvement actions are tracked and scored by Compliance Score.](compliance-score-methodology.md)
 
 ## Export an assessment report
 
-You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators by [following these instructions](working-with-compliance-manager.md#reports). You’ll  need to visit Compliance Manager to export the report.
+You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators. On your assessment details page, select the **Generate report** button near the top of the page, which creates an Excel file you can save to your machine.
 
-The report is a snapshot of the assessment as of the date and time of the export. It contains the details for controls managed by both you and Microsoft, including implementation status, test date, test results, and links to uploaded evidence documents.
+The Excel file report is a snapshot of the assessment as of the date and time of the export. It contains the details for controls managed by both you and Microsoft, including implementation status, test date, test results, and links to uploaded evidence documents.
