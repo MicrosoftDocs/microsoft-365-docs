@@ -105,12 +105,6 @@
           href: https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
         - name: Case study for multi-national corporation 
           href: https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
-      - name: File collaboration in SharePoint with Microsoft 365
-        href: https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
-      - name: Plan an intelligent SharePoint intranet
-        href: https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
-      - name: OneDrive Guide for enterprises
-        href: https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
 
       - name: Collaboration governance
         items:
@@ -150,6 +144,13 @@
             href: choose-domain-to-create-groups.md
           - name: End of lifecycle options
             href: end-life-cycle-groups-teams-sites-yammer.md
+
+      - name: File collaboration in SharePoint with Microsoft 365
+        href: https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+      - name: Plan an intelligent SharePoint intranet
+        href: https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+      - name: OneDrive Guide for enterprises
+        href: https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
 
         - name: Security
       items:
