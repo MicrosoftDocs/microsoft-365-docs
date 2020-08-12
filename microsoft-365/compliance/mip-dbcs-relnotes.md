@@ -50,4 +50,4 @@ This support is available for sensitive information types and keyword dictionari
   - “Attachment contains any of these words”
   - “Attachment contains any of these words”
 
-Instead we recommend creating a custom Sensitive Information Type (SIT) with keyword dictionary which will detect patterns across messages and attachments, and using this custom SIT as a Communication Compliance policy condition, as shown below:
+Instead we recommend creating a custom Sensitive Information Type (SIT) with keyword dictionary which will detect patterns across messages and attachments, and using this custom SIT as a Communication Compliance policy condition.
