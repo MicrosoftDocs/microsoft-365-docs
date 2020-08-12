@@ -111,7 +111,47 @@
         href: https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
       - name: OneDrive Guide for enterprises
         href: https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
-    - name: Security
+
+      - name: Collaboration governance
+        items:
+        - name: Overview
+          href: collaboration-governance-overview.md
+        - name: Governance first
+          href: collaboration-governance-first.md
+        - name: Groups with SharePoint
+          href: groups-sharepoint-governance.md
+        - name: Groups, SharePoint, and Teams
+          href: groups-sharepoint-teams-governance.md
+        - name: Groups, SharePoint, and Yammer
+          href: groups-sharepoint-yammer-governance.md
+        - name: Services interactions reference
+          href: groups-services-interactions.md
+        - name: Access
+          href: groups-teams-access-governance.md
+        - name: Compliance
+          href: groups-teams-compliance-governance.md
+        - name: Communications
+          href: groups-teams-communication-governance.md
+        - name: Organization and lifecycle
+          items:
+          - name: Organization and lifecycle governance
+            href: plan-organization-lifecycle-governance.md
+          - name: Manage group creation
+            href: manage-creation-of-groups.md
+          - name: Naming policies
+            href: groups-naming-policy.md
+          - name: Expiration policy
+            href: microsoft-365-groups-expiration-policy.md
+          - name: Per-group guest access
+            href: per-group-guest-access.md
+          - name: Send-as policy
+            href: allow-members-to-send-as-or-send-on-behalf-of-group.md
+          - name: Groups creation domain
+            href: choose-domain-to-create-groups.md
+          - name: End of lifecycle options
+            href: end-life-cycle-groups-teams-sites-yammer.md
+
+        - name: Security
       items:
       - name: Top tasks for security teams to support working from home
         href: https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
