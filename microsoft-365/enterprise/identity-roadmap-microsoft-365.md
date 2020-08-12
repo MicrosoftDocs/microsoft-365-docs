@@ -43,19 +43,19 @@ Add links to articles after merge
 
 In the planning phase of your identity implementation:
 
-- Understand the different identity models
-- Plan for hybrid identity and directory synchronization
-- Understand which tools you can use to manage Microsoft 365 accounts
+- [Understand the different identity models](about-microsoft-365-identity.md)
+- [Plan for hybrid identity and directory synchronization](plan-for-directory-synchronization.md)
+- [Understand which tools you can use to manage Microsoft 365 accounts](tools-to-manage-microsoft-365-accounts.md)
 
 ## Deploy
 
 In the deployment phase of your identity implementation:
 
-- Protect your global administrator accounts
-- Configure and use cloud-only identities
-- Configure and use hybrid identities
-- Set up directory synchronization
-- If needed, deploy hybrid identity scenarios
+- [Protect your global administrator accounts](protect-your-global-administrator-accounts.md)
+- [Configure and use cloud-only identities](cloud-only-identities.md)
+- [Configure and use hybrid identities](prepare-for-directory-synchronization.md)
+- [Set up directory synchronization](set-up-directory-synchronization.md)
+- If needed, deploy [hybrid identity scenarios](hybrid-solutions.md)
 
 ### Identity and device access recommendations
 
@@ -68,8 +68,8 @@ Microsoft provides a set of recommendations for [identity and device access](mic
 
 In the management phase of your identity implementation:
 
-- Assign licenses and manage user accounts
-- Monitor directory synchronization
+- [Assign licenses and manage user accounts](assign-licenses-to-user-accounts.md)
+- [Monitor directory synchronization](view-directory-synchronization-status.mdview-directory-synchronization-status.md)
 
 ## How Microsoft does identity for Microsoft 365
 
@@ -87,5 +87,5 @@ See how the Contoso Corporation, a fictional but representative multi-national b
 
 ## Next step
 
-Start your identity planning with Identity models.
+Start your identity planning with [Identity models]((about-microsoft-365-identity.md)).
 
