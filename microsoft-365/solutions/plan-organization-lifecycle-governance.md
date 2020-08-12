@@ -32,7 +32,7 @@ We highly recommend self-service to empower group owners and help users get thei
 
 Consider the following governance options for groups creation:
 
-- To limit group sprawl, use [groups expiration policies](office-365-groups-expiration-policy.md) to automatically delete groups that are not being used.
+- To limit group sprawl, use [groups expiration policies](microsoft-365-groups-expiration-policy.md) to automatically delete groups that are not being used.
 - Limit group creation to members of a [security groups with dynamic membership](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) containing, for example, all full-time employees.
 - Limit group creation to a security group and require users to complete training in your organization's group usage policies in order to become members of the security group.
 
@@ -44,7 +44,7 @@ When a Microsoft 365 group is deleted, by default it's retained for 30 days. Thi
 
 If you have retention policies in place to retain chat, files, or mail, those items will be preserved after the group is deleted. See [Learn about retention policies](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) for details.
 
-If you want to delete a group but preserve the content from one or more of the group-connected services, see [Archive groups, teams, and Yammer](archive-groups-teams-sites-yammer.md) for information.
+If you want to delete a group but preserve the content from one or more of the group-connected services, see [Archive groups, teams, and Yammer](end-life-cycle-groups-teams-sites-yammer.md) for information.
 
 ## Group naming policy
 
@@ -67,4 +67,4 @@ Once you set groups to expire:
 - Any group that is not renewed is deleted.
 - Any group that is deleted can be restored within 30 days by the group owners or the admin.
 
-Expiration policies are a good way to limit group sprawl by ensuring that groups that are no longer in use are deleted. If you want to create a group expiration policy, see [Microsoft 365 Group Expiration Policy](office-365-groups-expiration-policy.md).
+Expiration policies are a good way to limit group sprawl by ensuring that groups that are no longer in use are deleted. If you want to create a group expiration policy, see [Microsoft 365 Group Expiration Policy](microsoft-365-groups-expiration-policy.md).

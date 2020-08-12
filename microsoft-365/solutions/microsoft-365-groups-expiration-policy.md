@@ -74,7 +74,7 @@ If for some reason none of the owners or admins renew the group before it expire
 
 ## Archiving group contents
 
-If you have a group that you no longer plan to use, but you want to retain its content, see [Archive groups, teams, and Yammer](archive-groups-teams-sites-yammer.md) for information about how to export information from the different groups services.
+If you have a group that you no longer plan to use, but you want to retain its content, see [Archive groups, teams, and Yammer](end-life-cycle-groups-teams-sites-yammer.md) for information about how to export information from the different groups services.
 
 ## Related articles
 
