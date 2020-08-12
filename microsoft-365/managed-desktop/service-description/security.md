@@ -1,5 +1,5 @@
 ---
-title: Security in Microsoft Managed Desktop 
+title: Security technologies in Microsoft Managed Desktop 
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -8,12 +8,13 @@ ms.localizationpriority: normal
 ms.date: 09/24/2018
 ---
 
-# Security in Microsoft Managed Desktop
+# Security technologies in Microsoft Managed Desktop
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop uses several Microsoft technologies to help secure managed devices and data. Specifically: 
+Microsoft Managed Desktop uses several Microsoft technologies to help secure managed devices and data. In addition, the Microsoft Managed Desktop Security Operations Center uses a variety of processes in conjunction with these technologies.
 
+Specifically: 
 
 - [Device security](#device-security) – security and protection on Microsoft Managed Desktop devices
 - [Identity and Access Management](#identity-and-access-management) – managing secure use of devices through Azure Active Directory identity services
