@@ -119,8 +119,6 @@
               href: microsoft-365-client-support-conditional-access.md
             - name: Choose between MDM and Intune
               href: https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune
-            - name: Mobile application management
-              href: office-365-client-support-mobile-application-management.md
             - name: Modern authentication
               href: microsoft-365-client-support-modern-authentication.md
             - name: Single sign-on
@@ -240,7 +238,7 @@
                 - name: Skype for Business Data Deletion
                   href: microsoft-365-skype-data-deletion.md
             - name: Defending against denial-of-service attacks in Microsoft 365
-              href: office-365-defending-against-denial-of-service-attacks.md
+              href: microsoft-365-defending-cloud-services-against-dos-attacks.md
               items: 
                 - name: Microsoft's Denial-of-Services Defense Strategy
                   href: microsoft-365-microsoft-dos-defense-strategy.md
@@ -341,8 +339,6 @@
           href: about-office-365-identity.md
         - name: Hybrid identity
           href: plan-for-directory-synchronization.md
-        - name: Tools to manage Microsoft 365 accounts
-          href: tools-to-manage-microsoft-365-accounts.md
     - name: Deploy
       items: 
         - name: Protect your global administrator accounts
@@ -456,8 +452,6 @@
       items: 
         - name: Get ready
           href: configure-services-and-applications.md
-        - name: Migrate data to Microsoft 365
-          href: migrate-data-to-microsoft-365.md
         - name: Exchange Online
           href: https://docs.microsoft.com/Exchange/exchange-online
         - name: SharePoint Online
@@ -493,7 +487,7 @@
         - name: Performance and tuning
           items: 
             - name: Tune Microsoft 365 performance
-              href: tune-microsoft-365-performance.md
+              href: tune-office-365-performance.md
             - name: Performance tuning using baselines and performance history
               href: performance-tuning-using-baselines-and-history.md
             - name: Tune Exchange Online performance
