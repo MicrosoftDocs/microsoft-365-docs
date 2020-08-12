@@ -1,5 +1,5 @@
 ---
-title: Advanced hunting best practices in Microsoft Threat Protection
+title: Advanced hunting query best practices in Microsoft Threat Protection
 description: Learn how to construct fast, efficient, and error-free threat hunting queries when using advanced hunting
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, schema, kusto, avoid timeout, command lines, process id
 search.product: eADQiWindows 10XVcnh
@@ -30,10 +30,20 @@ Apply these recommendations to get results faster and avoid timeouts while runni
 ## General guidance
 
 - **Size new queries** — Assess the size of the result set using `count`. Use `limit` to avoid extremely large result sets.
-- **Apply filters early** — Apply time filters and other filters early in the query, especially if you are using conversion [MORE INFO - EXAMPLES] and parsing [MORE INFO - EXAMPLES] operators
+- **Apply filters early** — Apply time filters and other filters early in the query, especially if you are using conversion functions, such as [toint()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tointfunction) or [todatetime()](https://docs.microsoft.com/azure/data-explorer/kusto/query/todatetimefunction), or parsing functions, like [`parse_json()`](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). In the example below, the parsing function [extractjson()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) is used after all filtering operators are applied to reduce the number of records that need to be parsed.
+    
     ```kusto
-    <EXAMPLE>
+    DeviceEvents
+    | where Timestamp > ago(1d)
+    | where ActionType == "UsbDriveMount" 
+    | where DeviceName == "user-desktop.domain.com"
+    | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
     ``` 
+    <pre><code>
+    Timestamp     |   DeviceId   |   DeviceName
+    2020-08-11    |   xys-a-s-a  |   machine1 
+    </pre></code>
+
 - **Has beats contains** — Avoid searching substrings unnecessarily by using the `has` operator instead of `contains`.
 - **Search specific columns** — Look in a specific column rather than running full text searches across all columns. Don't use `*`.
 - **Case-sensitive for speed** — Case-sensitive searches are more specific and generally more performant.
@@ -42,10 +52,10 @@ Apply these recommendations to get results faster and avoid timeouts while runni
 - **No 3-character terms** — Avoid comparing or filtering with three-character terms, which are not indexed.
 - **Project selectively** — When joining tables, project only the columns you need.
 
-## Optimize the join operator
-The [join operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) merges rows from two tables my matching values in specified columns. Apply the following tips to optimize queries that use this operator:
+## Optimize the `join` operator
+The [join operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) merges rows from two tables my matching values in specified columns. Apply the these tips to optimize queries that use this operator.
 
-- **Smaller table to your left** — Place the smaller on the left side of the join [MORE INFO WHY] 
+- **Smaller table to your left** — The `join` operator matches records in the table on the left side of your join statement to records on the right. By keeping the table with fewer records on the left, fewer records will need to be matched, thus speeding up the query and  Place the table with fewer results on the left side of your join [MORE INFO WHY] 
     ```kusto
     <EXAMPLE>
     ```
