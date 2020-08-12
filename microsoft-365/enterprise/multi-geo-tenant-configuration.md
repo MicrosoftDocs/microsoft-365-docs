@@ -13,7 +13,7 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-localization_priority: Priority
+localization_priority: Normal
 description: In this article, learn how to add satellite locations and configure your tenant for Microsoft 365 Multi-Geo.
 ---
 

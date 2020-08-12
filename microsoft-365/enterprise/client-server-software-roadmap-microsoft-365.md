@@ -98,7 +98,7 @@ Microsoft 365 for enterprise includes cloud-based versions of Office server serv
 
 For information about migrating users and data for specific Microsoft 365 workloads:
 
-- User mailboxes from Exchange Server to Exchange Online, see [Move mailboxes between on-premises and Exchange Online organizations](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes.md).
+- User mailboxes from Exchange Server to Exchange Online, see [Move mailboxes between on-premises and Exchange Online organizations](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes).
 - SharePoint data from SharePoint Server to SharePoint Online, see [Migrate your content to Microsoft 365](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online).
 - Skype for Business Online to Microsoft Teams, see [Migration and interoperability guidance](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype).
 

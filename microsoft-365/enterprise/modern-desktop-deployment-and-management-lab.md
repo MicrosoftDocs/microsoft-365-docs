@@ -9,7 +9,7 @@ ms.date: 08/10/2020
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - Ent_O365
 - Strat_O365_Enterprise

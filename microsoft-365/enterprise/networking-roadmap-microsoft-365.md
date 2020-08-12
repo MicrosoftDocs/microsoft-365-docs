@@ -33,33 +33,33 @@ Add links to articles after merge
 
 In the planning phase of your networking implementation:
 
-- Understand how Microsoft 365 networking works
-- Assess your current network connectivity
-- Determine if ExpressRoute is right for your organization
-- Plan for your devices
-- Get your network set up for migration
+- [Understand how Microsoft 365 networking works](microsoft-365-networking-overview.md)
+- [Assess your current network connectivity](assessing-network-connectivity.md)
+- [Determine if ExpressRoute is right for your organization](network-planning-with-expressroute.md)
+- [Plan for your network devices](plan-for-network-devices.md)
+- [Get your network set up for migration](network-and-migration-planning.md)
 
 ## Deploy
 
 In the deployment phase of your networking implementation:
 
-- Ensure your enterprise network is optimized for Microsoft 365 connectivity
-- Add the DNS domains for your organization
-- Optimize your connectivity to Microsoft 365 endpoints
-- Optimize connectivity for remote workers
-- If needed, configure ExpressRoute
+- [Ensure your enterprise network is optimized for Microsoft 365 connectivity](set-up-network-for-microsoft-365.md)
+- [Add the DNS domains for your organization](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
+- [Optimize your connectivity to Microsoft 365 endpoints](microsoft-365-ip-web-service.md)
+- [Optimize connectivity for remote workers](microsoft-365-vpn-split-tunnel.md)
+- If needed, [configure ExpressRoute](azure-expressroute.md)
 
 ## Manage
 
 In the management phase of your networking implementation:
 
-- Ensure that your network devices are using the latest Office 365 endpoints
-- Monitor and tune your networking performance
-- Monitor your ExpressRoute connections
+- [Ensure that your network devices are using the latest Office 365 endpoints](microsoft-365-endpoints.md)
+- [Monitor and tune your networking performance](network-planning-and-performance.md)
+- [Monitor your ExpressRoute connections](managing-expressroute-for-connectivity.md)
 
 ## Network equipment vendors
 
-If you are a network equipment vendor, join the Microsoft 365 Networking Partner Program. Enroll in the program to build Microsoft 365 network connectivity principles into your products and solutions. 
+If you are a network equipment vendor, join the [Microsoft 365 Networking Partner Program](microsoft-365-networking-partner-program.md). Enroll in the program to build Microsoft 365 network connectivity principles into your products and solutions. 
 
 ## How Microsoft does networking for Microsoft 365
 
@@ -73,4 +73,4 @@ See how the Contoso Corporation, a fictional but representative multi-national b
 
 ## Next step
 
-Start your networking planning with the Microsoft 365 networking connectivity overview.
+Start your networking planning with the [Microsoft 365 networking connectivity overview](microsoft-365-networking-overview.md).
