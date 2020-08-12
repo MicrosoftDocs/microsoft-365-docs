@@ -37,20 +37,22 @@ Microsoft Managed Desktop identifies each device uniquely by referencing its har
 
 #### PowerShell script method
 
+A PowerShell script called [Get-WindowsAutoPilotInfo.ps1] https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo has been published to the PowerShell Gallery website. You can also learn more about Device identification and Hardware hash at https://docs.microsoft.com/en-us/mem/autopilot/add-devices#device-identification.
+
 1.	Open a PowerShell prompt with administrative rights.
-2.	Run `Install-Script -Name Get-MMDRegistrationInfo`
-3.	Run `powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
+2.	Run `Install-Script -Name Get-WindowsAutoPilotInfo`
+3.	Run `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 
 #### Flash drive method
 
 1. On a device other than the one you're registering, insert a USB drive.
 2. Open a PowerShell prompt with administrative rights.
-3. Run `Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
+3. Run `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
 4. Turn on the device you are registering, but *do not start the setup experience*. If you accidentally start the setup experience, you'll have to reset or reimage the device.
 5. Insert the USB drive, and then press SHIFT + F10.
 6. Open a PowerShell prompt with administrative rights, and then run `cd <pathToUsb>`.
 7. Run `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
-8. Run `.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
+8. Run `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 9. Remove the USB drive, and then shut down the device by running `shutdown -s -t 0`
 
 >[!IMPORTANT]
@@ -62,33 +64,15 @@ Microsoft Managed Desktop identifies each device uniquely by referencing its har
 You'll need to have the data in the CSV files combined into a single file to complete registration. Here's a sample PowerShell script to make this easy:
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
-### Register devices
 
-The CSV file must be in a particular format for registration. If you collected the data yourself in the previous steps, the file should already be in the right format; if you obtain the file from a supplier, you might need to adjust the format.
-
->[!NOTE]
->For your convenience, you can download a [sample CSV file](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.csv).
-
-Your file needs to include the **exact same column headings** as the sample one (Manufacturer, Model, etc.), but your own data for the other rows. If you use the template, open it in a text editing tool such as Notepad, and consider leaving all the data in row 1 alone, only entering data in rows 2 and below. 
-    
-  ```
- Manufacturer,Model,Serial Number,Hardware Hash
-  SpiralOrbit,ContosoABC,000000000000,dGhpc2RldmljZWlzYW5tbWRkZXZpY2U
-  
-  
-  ```
-
->[!NOTE]
->If you forget to change any of the sample data, registration will fail.
 
 #### Register devices by using the Admin Portal
 
 From the Microsoft Managed Desktop [Admin Portal](https://aka.ms/mmdportal), select **Devices** in the left navigation pane. Select **+ Register devices**; the fly-in opens:
 
 [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
+[//]: # (Need to update the screenshot here with the UI)
 
-
-[//]: # (Sadly this isn't true. We can remove this note - but leaving it now until we have a chance to chat about it.)
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
@@ -96,7 +80,6 @@ From the Microsoft Managed Desktop [Admin Portal](https://aka.ms/mmdportal), sel
 Follow these steps:
 
 1. In **File upload**, provide a path to the CSV file you created previously.
-2. Optionally, you can add an **Order ID** or **Purchase ID** for your own tracking purposes. There are no format requirements for these values.
 3. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for an end-user to start using.
 
 
