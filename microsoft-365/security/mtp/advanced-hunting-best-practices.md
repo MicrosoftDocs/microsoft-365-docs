@@ -29,8 +29,8 @@ Apply these recommendations to get results faster and avoid timeouts while runni
 
 ## General guidance
 
-- **Size new queries** — Assess the size of the result set using `count`. Use `limit` to avoid extremely large result sets.
-- **Apply filters early** — Apply time filters and other filters early in the query, especially if you are using conversion functions, such as [toint()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tointfunction) or [todatetime()](https://docs.microsoft.com/azure/data-explorer/kusto/query/todatetimefunction), or parsing functions, like [`parse_json()`](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). In the example below, the parsing function [extractjson()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) is used after all filtering operators are applied to reduce the number of records that need to be parsed.
+- **Size new queries** — If you suspect that a query will return a large result set, assess it first using the [count operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator). Use [limit](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) or its synonym `take` to avoid extremely large result sets.
+- **Apply filters early** — Apply time filters and other filters to reduce the data set, especially when using conversion functions, such as [toint()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tointfunction) or [todatetime()](https://docs.microsoft.com/azure/data-explorer/kusto/query/todatetimefunction), or parsing functions, like [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). In the example below, the parsing function [extractjson()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) is used after filtering operators have reduced the number of records.
 
     ```kusto
     DeviceEvents
@@ -40,13 +40,13 @@ Apply these recommendations to get results faster and avoid timeouts while runni
     | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
      ```
 
-- **Has beats contains** — Avoid searching substrings unnecessarily by using the `has` operator instead of `contains`.
-- **Search specific columns** — Look in a specific column rather than running full text searches across all columns. Don't use `*`.
-- **Case-sensitive for speed** — Case-sensitive searches are more specific and generally more performant.
-- **Parse, don't extract** — Whenever possible, use parse functions such as [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction) instead of [extract()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction) or similar functions that use regular expression. Reserve regex use for more complex scenarios. 
+- **Has beats contains** — To avoid searching substrings within words unnecessarily, use the `has` operator instead of `contains`. [Learn about string operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
+- **Search specific columns** — Look in a specific column rather than running full text searches across all columns. Don't use `*` to check all columns.
+- **Case-sensitive for speed** — Case-sensitive searches are more specific and generally more performant. Names of case-sensitive [string operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators), such as `has_cs` and `contains_cs`, generally end with `_cs`.
+- **Parse, don't extract** — Whenever possible, use parse functions such as [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction) instead of [extract()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction) or similar functions that use regular expression. Reserve regular expression use for more complex scenarios. 
 - **Filter tables not expressions** — Don't filter on a calculated column if you can filter on a table column.
-- **No 3-character terms** — Avoid comparing or filtering with three-character terms, which are not indexed.
-- **Project selectively** — When joining tables, project only the columns you need.
+- **No three-character terms** — Avoid comparing or filtering using terms with three characters or fewer. These short terms are not indexed and will require more resources to match.
+- **Project selectively** — Projecting only the columns you need can make results easier to understand. Projecting specific columns prior to running [join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) or similar operations also helps improve performance .
 
 ## Optimize the `join` operator
 The [join operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) merges rows from two tables my matching values in specified columns. Apply the these tips to optimize queries that use this operator.
