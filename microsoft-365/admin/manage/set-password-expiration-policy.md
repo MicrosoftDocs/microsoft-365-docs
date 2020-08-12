@@ -71,7 +71,9 @@ Here are some things to know about how this feature currently works as of Januar
     
 ## Prevent last password from being used again
 
-If you want to prevent your users from recycling old passwords, you can do so by enforcing password history in Azure AD. See [Create a custom password policy](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
+If you want to prevent your users from recycling old passwords, you can do so by enforcing password history in on-premises Active Directory (AD). See [Create a custom password policy](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
+
+In Azure AD, The last password can't be used again when the user changes a password. The password policy is applied to all user accounts that are created and managed directly in Azure AD. This password policy can't be modified. See [Azure AD password policies](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts).
 
 ## Synchronize user passwords hashes from an on-premises Active Directory to Azure AD (Microsoft 365)
 
