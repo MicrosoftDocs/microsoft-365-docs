@@ -42,7 +42,7 @@ Apply these recommendations to get results faster and avoid timeouts while runni
     <pre><code>
     Timestamp     |   DeviceId   |   DeviceName
     2020-08-11    |   xys-a-s-a  |   machine1 
-    </pre></code>
+    </code></pre>
 
 - **Has beats contains** — Avoid searching substrings unnecessarily by using the `has` operator instead of `contains`.
 - **Search specific columns** — Look in a specific column rather than running full text searches across all columns. Don't use `*`.
