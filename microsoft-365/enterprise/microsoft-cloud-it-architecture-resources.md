@@ -102,7 +102,7 @@ What IT architects need to know about networking for Microsoft cloud services an
   
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for Microsoft cloud networking model](../media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)](downloads/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](downloads/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/MSFT_cloud_architecture_networking.vsdx) <br/> | This model contains: <ul><li> Evolving your network for cloud connectivity </li><li> Common elements of Microsoft cloud connectivity </li><li> ExpressRoute for Microsoft cloud connectivity </li><li> Designing networking for Microsoft SaaS, Azure PaaS, and  Azure IaaS </li></ul><br/>  <br/>|
+|[![Thumb image for Microsoft cloud networking model](../media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)](..downloads/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](..downloads/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/MSFT_cloud_architecture_networking.vsdx) <br/> | This model contains: <ul><li> Evolving your network for cloud connectivity </li><li> Common elements of Microsoft cloud connectivity </li><li> ExpressRoute for Microsoft cloud connectivity </li><li> Designing networking for Microsoft SaaS, Azure PaaS, and  Azure IaaS </li></ul><br/>  <br/>|
 
 <a name="hybrid"></a>
 ### Microsoft hybrid cloud for enterprise architects
@@ -111,7 +111,7 @@ What IT architects need to know about hybrid cloud for Microsoft services and pl
   
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for the Microsoft hybrid cloud model](../media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](downloads/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/MSFT_cloud_architecture_hybrid.vsdx)  | This model contains: <ul><li> Microsoft's cloud offerings (SaaS, Azure PaaS, and Azure IaaS) and their common elements </li><li> Hybrid cloud architecture for Microsoft's cloud offerings </li><li> Hybrid cloud scenarios for Microsoft SaaS (Microsoft 365), Azure PaaS, and Azure IaaS </li></ul><br/>|
+|[![Thumb image for the Microsoft hybrid cloud model](../media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](..downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](..downloads/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/MSFT_cloud_architecture_hybrid.vsdx)  | This model contains: <ul><li> Microsoft's cloud offerings (SaaS, Azure PaaS, and Azure IaaS) and their common elements </li><li> Hybrid cloud architecture for Microsoft's cloud offerings </li><li> Hybrid cloud scenarios for Microsoft SaaS (Microsoft 365), Azure PaaS, and Azure IaaS </li></ul><br/>|
    
 <a name="attacks"></a>
 ### Common attacks and Microsoft capabilities that protect your organization
@@ -135,7 +135,7 @@ This series of topics illustrates several architecture approaches for mergers, a
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for Teams logical architecture poster](downloads/msft-tenant-to-tenant-migration-thumb.png)](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx)     |This model contains: <ul><li>A mapping of business scenarios to architecture approaches</li><li>Design considerations</li><li>Single event migration flow</li><li>Phased migration flow</li><li>Tenant move or split flow</li></ul>|
+|[![Thumb image for Teams logical architecture poster](..downloads/msft-tenant-to-tenant-migration-thumb.png)](..downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](..downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx)     |This model contains: <ul><li>A mapping of business scenarios to architecture approaches</li><li>Design considerations</li><li>Single event migration flow</li><li>Phased migration flow</li><li>Tenant move or split flow</li></ul>|
 
 <a name="BKMK_o365solutions"></a>
 ## Microsoft 365 enterprise solution series
@@ -147,7 +147,7 @@ The logical architecture of productivity services in Microsoft 365, leading with
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for Teams logical architecture poster](downloads/msft-teams-logical-architecture-thumb.png)](downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)     |Microsoft provides a suite of productivity services that work together to provide collaboration experiences with data governance, security, and compliance capabilities. <br/> <br/>This series of illustrations provides a view into the logical architecture of productivity services for enterprise architects, leading with Microsoft Teams.|
+|[![Thumb image for Teams logical architecture poster](..downloads/msft-teams-logical-architecture-thumb.png)](..downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](..downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)     |Microsoft provides a suite of productivity services that work together to provide collaboration experiences with data governance, security, and compliance capabilities. <br/> <br/>This series of illustrations provides a view into the logical architecture of productivity services for enterprise architects, leading with Microsoft Teams.|
 
 
 ### Groups in Microsoft 365 for IT Architects
@@ -155,7 +155,7 @@ What IT architects need to know about groups in Microsoft 365
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for groups infographic](downloads/msft-m365-groups-architecture-thumb.png)](downloads/msft-m365-groups.pdf) <br/> [PDF](downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) |These illustrations detail the different types of groups, how these are created and managed, and a few governance recommendations.|
+|[![Thumb image for groups infographic](..downloads/msft-m365-groups-architecture-thumb.png)](..downloads/msft-m365-groups.pdf) <br/> [PDF](..downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) |These illustrations detail the different types of groups, how these are created and managed, and a few governance recommendations.|
 
 ### Security and Information Protection for Multi-Region Organizations
 Security and information protection for multi-region organizations with a single microsoft 365 tenant

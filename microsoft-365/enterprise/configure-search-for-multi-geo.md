@@ -131,7 +131,7 @@ Some of the search features you might be familiar with, aren't supported in a mu
 
 All the search clients use the existing SharePoint Search REST APIs to interact with the search indexes.
 
-<img src="media/configure-search-for-multi-geo-image1-1.png" />
+<img src="../media/configure-search-for-multi-geo-image1-1.png" />
 
 1. A search client calls the Search REST endpoint with the query property EnableMultiGeoSearch= true.
 2. The query is sent to all geo locations in the tenant.

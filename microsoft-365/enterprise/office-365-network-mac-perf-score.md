@@ -22,7 +22,7 @@ In the Microsoft 365 Admin Center's Connectivity to Microsoft 365 page, **networ
 
 The network assessment points value is an average measurement of latency, bandwidth, download speed and connection quality metrics compiled live at the time they are viewed. Performance metrics for Microsoft-owned networks are excluded from these measurements to ensure that assessment results are unambiguous and specific to the corporate network.
 
-![Network assessment value](Media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
+![Network assessment value](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
 A very low network assessment value suggests that Microsoft 365 clients will have significant problems connecting to the tenant or maintaining a responsive user experience, while a high value indicates a properly configured network with few ongoing performance issues. A value of 80% represents a healthy baseline where you should not expect to receive regular user complaints about Microsoft 365 connectivity or responsiveness due to network performance. As iterative network connectivity improvements are made, this value will increase along with user experience.
 
@@ -33,7 +33,7 @@ A very low network assessment value suggests that Microsoft 365 clients will hav
 
 Each network assessment, whether scoped to the tenant or to a specific office location, shows a panel with details about the assessment. This panel shows a bar chart of the assessment both as a percentage and as the total points for each component workload including only workloads where measurement data was received. For an office location network assessment, we also show a benchmark which is the median of all Microsoft 365 clients that reported data in the same city as your office location.
 
-![Example network assessment value](Media/m365-mac-perf/m365-mac-perf-overview-score.png)
+![Example network assessment value](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
 The **Assessment breakdown** in the panel shows the assessment for each of the component workloads.
 

@@ -36,7 +36,7 @@ There are two parts to the Microsoft 365 connectivity test. There is the web sit
 
 You can run the advanced client test from the web site, and it will populate results back into the web page as it runs.
 
-![O365 network onboarding tool example test results](Media/m365-mac-perf/m365-mac-perf-onboarding-tool-tests.png)
+![O365 network onboarding tool example test results](../media/m365-mac-perf/m365-mac-perf-onboarding-tool-tests.png)
 
 ## User office location
 
