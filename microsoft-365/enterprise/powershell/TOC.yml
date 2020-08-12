@@ -1,4 +1,6 @@
-﻿- name: Manage Microsoft 365 with PowerShell
+﻿- name: Microsoft 365 PowerShell
+  href: index.yml
+- name: Manage Microsoft 365 with PowerShell
   href: manage-microsoft-365-with-microsoft-365-powershell.md
   items: 
     - name: Getting started with PowerShell for Microsoft 365
