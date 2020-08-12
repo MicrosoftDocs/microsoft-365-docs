@@ -31,7 +31,7 @@ Microsoft 365 includes a variety of threat protection features. Here's a quick-s
 
 ### Subscriptions
 
-Threat protection features are included in all Microsoft 365 subscriptions; however, some subscriptions include more advanced features. The following table lists the protection features included in this article together with the minimum subscription requirements.<br/>
+Threat protection features are included in all Microsoft 365 subscriptions; however, some subscriptions include more advanced features. The following table lists the protection features included in this article together with the minimum subscription requirements.
 
 ****
 
