@@ -72,7 +72,7 @@ For example, if the site URL is https://contosohealthcare.sharepoint.com/sites/T
 
 `Connect-SPOService -url https://contosohealthcare-admin.sharepoint.com`
 
-![](media/move-onedrive-between-geo-locations-image1.png)
+![](../media/move-onedrive-between-geo-locations-image1.png)
  
 ### Validating the environment
 
@@ -108,7 +108,7 @@ To start the site move, run:
 
 `Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>`
 
-![Screenshot of PowerShell window showing Start-SPOSiteContentMove cmdlet](media/multi-geo-sharepoint-site-move-powershell.png)
+![Screenshot of PowerShell window showing Start-SPOSiteContentMove cmdlet](../media/multi-geo-sharepoint-site-move-powershell.png)
 
 ### Start a SharePoint site geo move for a Microsoft 365 Group-connected site
 

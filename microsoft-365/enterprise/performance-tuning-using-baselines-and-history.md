@@ -51,11 +51,11 @@ First, you need to make sure that what you are experiencing is indeed a performa
   
 If the Office 365 service is having issues, that's a service incident. You will see red or yellow icons under **Current health** in the Microsoft 365 admin center, you may also notice slow performance on client computers connecting to Office 365. For example, if Current health reports a red icon and you see **Investigating** beside Exchange, you might then also receive a bunch of calls from people in your organization who complain that client mailboxes that use Exchange Online are performing badly. In that case, it's reasonable to assume that your Exchange Online performance just became a victim of issues within the Service. 
   
-![The Office 365 Health dashboard with all workloads showing green, except Exchange, which shows Service Restored.](media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
+![The Office 365 Health dashboard with all workloads showing green, except Exchange, which shows Service Restored.](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
 At this point, you, the Office 365 admin, should check **Current health** and then **View details and history**, frequently, to keep up to date on maintenance we perform on the system. The **Current health** dashboard was made to update you about changes to, and problems in, the service. The notes and explanations written to health history, admin to admin, are there to help you gauge your impact, and to keep you posted about ongoing work. 
   
-![A picture of the Office 365 health dashboard explaining that the Exchange Online service has been restored, and why.](media/66609554-426a-4448-8be6-ea09817f41ba.PNG)
+![A picture of the Office 365 health dashboard explaining that the Exchange Online service has been restored, and why.](../media/66609554-426a-4448-8be6-ea09817f41ba.PNG)
   
 A performance issue isn't a service incident, even though incidents can cause slow performance. A performance issue looks like this:
   
@@ -145,17 +145,17 @@ If you're unfamiliar with how to carry out these steps, we'll go into more detai
 
 You'll know the impact when it goes bad, but if you don't know your historical performance data, it's not possible to have a context for how bad it may have become, and when. So without a baseline, you're missing the key clue to solve the puzzle: the picture on the puzzle box. In performance troubleshooting, you need a point of  *comparison*  . Simple performance baselines aren't difficult to take. Your Operations team can be tasked with carrying these out on a schedule. For example, let's say your connection looks like this: 
   
-![A basic network graphic showing client, proxy, and Office 365 cloud.](media/c6ca7140-09f9-4c2d-a775-dbf2820eaa0c.PNG)
+![A basic network graphic showing client, proxy, and Office 365 cloud.](../media/c6ca7140-09f9-4c2d-a775-dbf2820eaa0c.PNG)
   
 That means you've checked with your network team and found out that you leave your company for the Internet through a proxy server, and that proxy handles all the requests your client computer sends to the cloud. In this case, you should draw a simplified version of your connection that lists all the intervening devices. Now, insert tools that you can use to test the performance between the client, the egress point (where you leave your network for the Internet), and the Office 365 cloud.
   
-![Basic network with client, proxy, and cloud, and tools suggestions PSPing, TraceTCP, and network traces.](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
+![Basic network with client, proxy, and cloud, and tools suggestions PSPing, TraceTCP, and network traces.](../media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 The options are listed as **Simple** and **Advanced** because of the amount of expertise you need in order to find the performance data. A network trace will take a lot of time, compared to running command-line tools like PsPing and TraceTCP. These two command-line tools were chosen because they don't use ICMP packets, which will be blocked by Office 365, and because they give the time in milliseconds that it takes to leave the client computer, or proxy server (if you have access) and arrive at Office 365. Each individual hop from one computer to another will end up with a time value, and that's great for baselines! Just as importantly, these command-line tools allow you to add a port number onto the command, this is useful because Office 365 communicates over port 443, which is the port used by Secure Sockets Layer and Transport Layer Security (SSL and TLS). However, other third-party tools may be better solutions for your situation. Microsoft doesn't support all of these tools, so if, for some reason, you can't get PsPing and TraceTCP working, move on to a network trace with a tool like Netmon. 
   
 You can take a baseline before business hours, again during heavy use, and then again after hours. This means you may have a folder structure that looks a bit like this in the end:
   
-![Graphic proposing a way to organize your performance data into folders.](media/13e01ffa-f0f2-4d10-b89d-d5980ec89fae.png)
+![Graphic proposing a way to organize your performance data into folders.](../media/13e01ffa-f0f2-4d10-b89d-d5980ec89fae.png)
   
 You should also pick a naming convention your files. Here are some examples:
   
@@ -195,7 +195,7 @@ This section is broken into simple command-line tools and methods, and more adva
 
 The objective of these simple methods is to learn to take, understand, and properly store simple performance baselines over time so that you are informed about Office 365 performance. Here's the very simple diagram for simple, as you've seen before:
   
-![Basic network with client, proxy, and cloud, and tools suggestions PSPing, TraceTCP, and network traces.](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
+![Basic network with client, proxy, and cloud, and tools suggestions PSPing, TraceTCP, and network traces.](../media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
 > TraceTCP is included in this screen shot because it's a useful tool for showing, in milliseconds, how long a request takes to process, and how many network hops, or connections from one computer to the next, that the request takes to reach a destination. TraceTCP can also give the names of servers used during hops, which can be useful to a Microsoft Office 365 troubleshooter in Support. > TraceTCP commands can be very simple, such as: >  `tracetcp.exe outlook.office365.com:443`> Remember to include the port number in the command! > [TraceTCP](https://simulatedsimian.github.io/tracetcp_download.html) is a free download, but relies on Wincap. Wincap is a tool that is also used and installed by Netmon. We also use Netmon in the advanced methods section. 
@@ -254,11 +254,11 @@ You have to use [PSPing](https://technet.microsoft.com/sysinternals/jj729731.asp
     
   - psping www.yammer.com:443
     
-    ![The PSPing command going to microsoft-my.sharepoint.com port 443.](media/3258f620-4513-4e82-95c9-06b387fc3a82.PNG)
+    ![The PSPing command going to microsoft-my.sharepoint.com port 443.](../media/3258f620-4513-4e82-95c9-06b387fc3a82.PNG)
   
 Be sure to include the port number of 443. Remember that Office 365 works on an encrypted channel. If you PsPing without the port number, your request will fail. Once you've pinged your short list, look for the Average time in milliseconds (ms). That is what you want to record!
   
-![Graphic that shows an illustration of client to proxy PSPing with a round trip time of 2.8 milliseconds.](media/96901aea-1093-4f1b-b5a3-6078e9035e6c.png)
+![Graphic that shows an illustration of client to proxy PSPing with a round trip time of 2.8 milliseconds.](../media/96901aea-1093-4f1b-b5a3-6078e9035e6c.png)
   
 If you're not familiar with proxy bypass, and prefer to take things step-by-step, you need to first find out the name of your proxy server. In Internet Explorer go to **Tools** \> **Internet Options** \> **Connections** \> **LAN settings** \> **Advanced**. The **Advanced** tab is where you will see your proxy server listed. Ping that proxy server at a command prompt by completing this task: 
   
@@ -292,13 +292,13 @@ If you're not familiar with proxy bypass, and prefer to take things step-by-step
     
 Maybe you've taken a trace in the early morning, and your client can get to the proxy (or whatever egress server exits to the Internet) quickly. In this case, your numbers may look like this:
   
-![Graphic that shows the round trip time from a client to a proxy of 2.8 milliseconds.](media/1bd03544-23fc-47d4-bbae-c1feb466a5d8.PNG)
+![Graphic that shows the round trip time from a client to a proxy of 2.8 milliseconds.](../media/1bd03544-23fc-47d4-bbae-c1feb466a5d8.PNG)
   
 If your client computer is one of the select few with access to the proxy (or egress) server, you can run the next leg of the test by remotely connecting to that computer, running the command prompt to PsPing to an Office 365 URL from there. If you don't have access to that computer, you can contact your network resources for help with the next leg and get exact numbers that way. If that's not possible, take a PsPing against the Office 365 URL in question and compare it to the PsPing or Ping time against your proxy server. 
   
 For example, if you have 51.84 milliseconds from the client to the Office 365 URL, and you have 2.8 milliseconds from the client to the proxy (or egress point), then you have 49.04 milliseconds from the egress to Office 365. Likewise, if you have a PsPing of 12.25 milliseconds from the client to the proxy during the height of the day, and 62.01 milliseconds from the client to the Office 365 URL, then your average value for the proxy egress to the Office 365 URL is 49.76 milliseconds.
   
-![Additional graphic that shows the ping in milliseconds from client to proxy beside client to Office 365 so the values can be subtracted.](media/cd764e77-5154-44ba-a5cd-443a628eb2d9.PNG)
+![Additional graphic that shows the ping in milliseconds from client to proxy beside client to Office 365 so the values can be subtracted.](../media/cd764e77-5154-44ba-a5cd-443a628eb2d9.PNG)
   
 In terms of troubleshooting, you may find something interesting just from keeping these baselines. For example, if you find that you generally have about 40 to 59 milliseconds of latency from the proxy or egress point to the Office 365 URL, and have a client to proxy or egress point latency of about 3 to 7 milliseconds (depending on the amount network traffic you're seeing during that time of day) then you will surely know something is problematic if your last three client to proxy or egress baselines show a latency of 45 milliseconds.
   

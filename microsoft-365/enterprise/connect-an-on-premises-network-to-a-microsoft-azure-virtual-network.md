@@ -32,7 +32,7 @@ For example, a directory synchronization server running on an Azure virtual mach
 
 Your virtual machines in Azure don't have to be isolated from your on-premises environment. To connect Azure virtual machines to your on-premises network resources, you must configure a cross-premises Azure virtual network. The following diagram shows the required components to deploy a cross-premises Azure virtual network with a virtual machine in Azure.
   
-![On-premises network connected to Microsoft Azure by a site-to-site VPN connection](media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+![On-premises network connected to Microsoft Azure by a site-to-site VPN connection](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
  
 In the diagram, there are two networks connected by a site-to-site VPN connection: the on-premises network and the Azure virtual network. The site-to-site VPN connection is:
 
@@ -140,11 +140,11 @@ For the settings of the virtual network, fill in Table V.
   
 |**Item**|**Configuration element**|**Description**|**Value**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Virtual network name  <br/> |A name to assign to the Azure virtual network (example DirSyncNet).  <br/> |![line](./media/Common-Images/TableLine.png) |
-|2.  <br/> |Virtual network location  <br/> |The Azure datacenter that will contain the virtual network (such as West US).  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |VPN device IP address  <br/> |The public IPv4 address of your VPN device's interface on the Internet. Work with your IT department to determine this address.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Virtual network address space  <br/> |The address space (defined in a single private address prefix) for the virtual network. Work with your IT department to determine this address space. The address space should be in Classless Interdomain Routing (CIDR) format, also known as network prefix format. An example is 10.24.64.0/20.  <br/> |![line](./media/Common-Images/TableLine.png) <br/> |
-|5.  <br/> |IPsec shared key  <br/> |A 32-character random, alphanumeric string that will be used to authenticate both sides of the site-to-site VPN connection. Work with your IT or security department to determine this key value and then store it in a secure location. Alternately, see [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![line](./media/Common-Images/TableLine.png) <br/> |
+|1.  <br/> |Virtual network name  <br/> |A name to assign to the Azure virtual network (example DirSyncNet).  <br/> |![line](../media/Common-Images/TableLine.png) |
+|2.  <br/> |Virtual network location  <br/> |The Azure datacenter that will contain the virtual network (such as West US).  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |VPN device IP address  <br/> |The public IPv4 address of your VPN device's interface on the Internet. Work with your IT department to determine this address.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Virtual network address space  <br/> |The address space (defined in a single private address prefix) for the virtual network. Work with your IT department to determine this address space. The address space should be in Classless Interdomain Routing (CIDR) format, also known as network prefix format. An example is 10.24.64.0/20.  <br/> |![line](../media/Common-Images/TableLine.png) <br/> |
+|5.  <br/> |IPsec shared key  <br/> |A 32-character random, alphanumeric string that will be used to authenticate both sides of the site-to-site VPN connection. Work with your IT or security department to determine this key value and then store it in a secure location. Alternately, see [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![line](../media/Common-Images/TableLine.png) <br/> |
    
 Fill in Table S for the subnets of this solution.
   
@@ -158,8 +158,8 @@ Work with your IT department to determine these address spaces from the virtual 
   
 |**Item**|**Subnet name**|**Subnet address space**|**Purpose**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |GatewaySubnet  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |The subnet used by the Azure gateway.  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |GatewaySubnet  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |The subnet used by the Azure gateway.  <br/> |
+|2.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
    
 For the on-premises DNS servers that you want the virtual machines in the virtual network to use, fill in Table D. Give each DNS server a friendly name and a single IP address. This friendly name does not need to match the host name or computer name of the DNS server. Note that two blank entries are listed, but you can add more. Work with your IT department to determine this list.
   
@@ -167,8 +167,8 @@ For the on-premises DNS servers that you want the virtual machines in the virtua
   
 |**Item**|**DNS server friendly name**|**DNS server IP address**|
 |:-----|:-----|:-----|
-|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
    
 To route packets from the Azure virtual network to your organization network across the site-to-site VPN connection, you must configure the virtual network with a local network. This local network has a list of the address spaces (in CIDR format) for all of the locations on your organization's on-premises network that the virtual machines in the virtual network must reach. This can be all of the locations on the on-premises network or a subset. The list of address spaces that define your local network must be unique and must not overlap with the address spaces used for this virtual network or your other cross-premises virtual networks.
   
@@ -178,9 +178,9 @@ For the set of local network address spaces, fill in Table L. Note that three bl
   
 |**Item**|**Local network address space**|
 |:-----|:-----|
-|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![line](../media/Common-Images/TableLine.png)  <br/> |
    
 ## Deployment roadmap
 <a name="DeploymentRoadmap"> </a>
@@ -200,7 +200,7 @@ You must configure your on-premises network with a route that points to and ulti
   
 Here is your resulting configuration.
   
-![The on-premises network must have a route for the virtual network's address space that points toward the VPN device.](media/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
+![The on-premises network must have a route for the virtual network's address space that points toward the VPN device.](../media/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
   
 ### Phase 2: Create the cross-premises virtual network in Azure
 <a name="Phase2"></a>
@@ -269,7 +269,7 @@ $vnet | Set-AzVirtualNetwork
 
 Here is your resulting configuration.
   
-![The virtual network is not yet connected to the on-premises network.](media/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
+![The virtual network is not yet connected to the on-premises network.](../media/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
   
 Next, use these commands to create the gateways for the site-to-site VPN connection.
   
@@ -299,7 +299,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 
 Here is your resulting configuration.
   
-![The virtual network now has a gateway.](media/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
+![The virtual network now has a gateway.](../media/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
 Next, configure your on-premises VPN device to connect to the Azure VPN gateway. For more information, see [About VPN Devices for site-to-site Azure Virtual Network connections](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
@@ -311,7 +311,7 @@ To configure your VPN device, you will need the following:
     
 Here is your resulting configuration.
   
-![The virtual network is now connected to the on-premises network.](media/6379c423-4f22-4453-941b-7ff32484a0a5.png)
+![The virtual network is now connected to the on-premises network.](../media/6379c423-4f22-4453-941b-7ff32484a0a5.png)
   
 ### Phase 3 (Optional): Add virtual machines
 
@@ -327,7 +327,7 @@ Verify that your virtual machine is using DNS correctly by checking your interna
   
 Here is your resulting configuration.
   
-![The virtual network now hosts virtual machines that are accessible from the on-premises network.](media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+![The virtual network now hosts virtual machines that are accessible from the on-premises network.](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
   
 ## Next step
   

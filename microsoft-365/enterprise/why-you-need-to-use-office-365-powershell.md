@@ -60,7 +60,7 @@ After learning these basic skills, you are not required to list your mailbox use
 
 The Microsoft 365 admin center displays a lot of useful information, but that doesn't mean that it displays all the possible information that Microsoft 365 stores on users, licenses, mailboxes, and sites. Here is an example for **users and groups** in the Microsoft 365 admin center:
   
-![Example of the display of users and groups in the Microsoft 365 admin center.](media/o365-powershell-users-and-groups.png)
+![Example of the display of users and groups in the Microsoft 365 admin center.](../media/o365-powershell-users-and-groups.png)
   
 For many purposes, this displays the information you need to know. However, there are times when you need more. For example, Microsoft 365 licensing (and the Microsoft 365 features available to a user) depend in part on that user's geographic location. The policies and features you can extend to a user who lives in the United States might not be the same as the policies and features you can extend to a user who lives in India or in Belgium. You can use the Microsoft 365 admin center to determine a user's geographic location with these steps:
   
@@ -72,7 +72,7 @@ For many purposes, this displays the information you need to know. However, ther
     
 4. Scroll down until you see the heading **Country or region**:
     
-     ![Example of the region information for a user in the Microsoft 365 admin center.](media/o365-powershell-usage-location.png)
+     ![Example of the region information for a user in the Microsoft 365 admin center.](../media/o365-powershell-usage-location.png)
   
 5. Write the user's display name and location on a piece of paper, or copy and paste it into Notepad. 
     
@@ -168,7 +168,7 @@ The Microsoft 365 admin center is intended to provide access to the most common 
   
 For example, the Skype for Business Online Admin center provides a few options for creating custom meeting invitations:
   
-![Example of the display of custom meeting invitations in the Skype for Business Online Admin center.](media/o365-powershell-meeting-invitation.png)
+![Example of the display of custom meeting invitations in the Skype for Business Online Admin center.](../media/o365-powershell-meeting-invitation.png)
   
 With these settings, you can add a touch of personalization and professionalism to meeting invitations. However, there's more to meeting configuration settings than simply creating custom meeting invitations. For example, by default, meetings allow:
   
@@ -214,7 +214,7 @@ For the latter example, you have several hundred SharePoint Online sites and you
     
 4. In the **Share** dialog box click the link that shows you all the users who have permissions to the site:
     
-     ![Example of viewing the members of a SharePoint Online site in the SharePoint Online Admin center.](media/o365-powershell-view-permissions.png)
+     ![Example of viewing the members of a SharePoint Online site in the SharePoint Online Admin center.](../media/o365-powershell-view-permissions.png)
   
 5. In the **Shared With** dialog box, click **Advanced**.
     
@@ -249,7 +249,7 @@ Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.
 
 The Microsoft 365 admin center provides several different ways to filter your data to quickly and easily locate a targeted subset of information. For example, Exchange makes it easy to filter on practically any property of a user mailbox. For example, here is the list of mailboxes for all the users who live in the city of Bloomington:
   
-![Example of doing an advanced search in the Microsoft 365 admin center for the list of mailboxes for all the users who live in the city of Bloomington.](media/o365-powershell-advanced-search.png)
+![Example of doing an advanced search in the Microsoft 365 admin center for the list of mailboxes for all the users who live in the city of Bloomington.](../media/o365-powershell-advanced-search.png)
   
 The Exchange Admin center also lets you combine filter criteria. For example, you can find the mailboxes for all the people who live in Bloomington and who work in the Finance department. 
   
@@ -326,7 +326,7 @@ Get-User -Filter '{LastName -like "*son"}'
 
 The Microsoft 365 admin center lets you view lists of data. Here is an example of the Skype for Business Online Admin center displaying a list of users who have been enabled for Skype for Business Online:
   
-![Example of the Skype for Business Online Admin center displaying a list of users who have been enabled for Skype for Business Online.](media/o365-powershell-lync-users.png)
+![Example of the Skype for Business Online Admin center displaying a list of users who have been enabled for Skype for Business Online.](../media/o365-powershell-lync-users.png)
   
 To save that information to a file, you must copy and paste it into a document or Excel. In either case, the copy might require additional formatting. Additionally, the Microsoft 365 admin center does not provide a way to directly print the displayed list.
   
@@ -338,7 +338,7 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export
 
 Here is an example of the display:
   
-![Example of a table imported into an Excel worksheet for Skype for Business Online user data that was saved to a comma-separated values (CSV) file.](media/o365-powershell-data-in-excel.png)
+![Example of a table imported into an Excel worksheet for Skype for Business Online user data that was saved to a comma-separated values (CSV) file.](../media/o365-powershell-data-in-excel.png)
   
 > [!TIP]
 >  The interpretation of this PowerShell command is: Get all of the Skype for Business Online users in the current Microsoft 365 subscription ( **Get-CsOnlineUser** ), obtain only the user name, UPN, and location ( **Select DisplayName, UserPrincipalName, UsageLocation** ), and then save that information in CSV file named C:\\Logs\\SfBUsers.csv ( **Export-Csv -Path "C:\\Logs\\SfBUsers.csv" -NoTypeInformation** ).
@@ -353,7 +353,7 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Pr
 
 Here's what your printed document will look like:
   
-![Example of a printed document that was the output of a PowerShell command listed directly to the default printer in Windows.](media/o365-powershell-printed-data.png)
+![Example of a printed document that was the output of a PowerShell command listed directly to the default printer in Windows.](../media/o365-powershell-printed-data.png)
   
 > [!TIP]
 >  The interpretation of this PowerShell command is:  Get all of the Skype for Business Online users in the current Microsoft 365 subscription, obtain only the user name, UPN, and location, and then send that information to the default Windows printer ( **Out-Printer** ).

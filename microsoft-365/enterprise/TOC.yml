@@ -4,83 +4,507 @@
   href: microsoft-365-overview.md
 
 - name: Networking
-  items:
+  items: 
     - name: Roadmap
       href: networking-roadmap-microsoft-365.md
     - name: Plan
-      items:
-      - name: Place Networking-Plan TOC entries here
-        href: placeholder.md
+      items: 
+        - name: Microsoft 365 networking connectivity overview
+          href: microsoft-365-networking-overview.md
+        - name: Microsoft 365 Network Connectivity Principles
+          href: microsoft-365-network-connectivity-principles.md
+        - name: Assessing Microsoft 365 network connectivity
+          href: assessing-network-connectivity.md
+        - name: Network planning with ExpressRoute for Office 365
+          href: network-planning-with-expressroute.md
+        - name: Plan for network devices that connect to Microsoft 365 services
+          href: plan-for-network-devices.md
+        - name: Network and migration planning for Microsoft 365
+          href: network-and-migration-planning.md
     - name: Deploy
-      items:
-      - name: Place Networking-Deploy TOC entries here
-        href: placeholder.md
+      items: 
+        - name: Set up your enterprise network
+          href: set-up-network-for-microsoft-365.md
+        - name: Add a domain
+          href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+        - name: Configure M365E endpoint whitelisting
+          items: 
+            - name: Office 365 IP Address and URL Web service
+              href: microsoft-365-ip-web-service.md
+            - name: Additional endpoints not included in the Web service
+              href: additional-office365-ip-addresses-and-urls.md
+        - name: Use the Office 365 CDN with SharePoint Online
+          href: use-microsoft-365-cdn-with-spo.md
+        - name: Optimize connectivity for remote users
+          items: 
+            - name: Overview - VPN Split Tunneling
+              href: microsoft-365-vpn-split-tunnel.md
+            - name: Implementing VPN Split Tunneling
+              href: microsoft-365-vpn-implement-split-tunnel.md
+            - name: Microsoft 365 optimization for China users
+              href: microsoft-365-networking-china.md
+            - name: Optimizing Microsoft 365 traffic for remote workers with the native Windows 10 VPN client
+              href: https://docs.microsoft.com/en-us/windows/security/identity-protection/vpn/vpn-office-365-optimization
+        - name: ExpressRoute for Office 365
+          href: azure-expressroute.md
+          items: 
+            - name: Implementing ExpressRoute for Office 365
+              href: network-planning-with-expressroute.md
+            - name: Routing with ExpressRoute for Office 365
+              href: routing-with-expressroute.md
     - name: Manage
-      items:
-      - name: Place Networking-Manage TOC entries here
-        href: placeholder.md
+      items: 
+        - name: Office 365 endpoints
+          items: 
+            - name: Office 365 endpoints
+              href: microsoft-365-endpoints.md
+            - name: Worldwide endpoints
+              href: urls-and-ip-address-ranges.md
+            - name: U.S. Government DoD endpoints
+              href: microsoft-365-u-s-government-dod-endpoints.md
+            - name: U.S. Government GCC High endpoints
+              href: microsoft-365-u-s-government-gcc-high-endpoints.md
+            - name: Office 365 operated by 21Vianet endpoints
+              href: urls-and-ip-address-ranges-21vianet.md
+            - name: Office 365 Germany endpoints
+              href: microsoft-365-germany-endpoints.md
+        - name: Content delivery networks
+          href: content-delivery-networks.md
+        - name: IPv6 support in Office 365 services
+          href: ipv6-support.md
+        - name: NAT support with Office 365
+          href: nat-support-with-microsoft-365.md
+        - name: Network requests in Office for Mac
+          href: network-requests-in-office-2016-for-mac.md
+        - name: Network planning and performance tuning for Microsoft 365
+          href: network-planning-and-performance.md
+        - name: Monitor connectivity
+          href: monitor-connectivity.md
+        - name: Managing ExpressRoute
+          href: managing-expressroute-for-connectivity.md
+    - name: Microsoft 365 Networking Partner Program
+      href: microsoft-365-networking-partner-program.md
+
 - name: Tenant
-  items:
+  items: 
     - name: Roadmap
       href: tenant-roadmap-microsoft-365.md
     - name: Plan
-      items:
-      - name: Place Tenant-Plan TOC entries here
-        href: placeholder.md
+      items: 
+        - name: Subscriptions, licenses, and tenants
+          href: subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md
+        - name: Plan for third-party SSL certificates for Microsoft 365
+          href: plan-for-third-party-ssl-certificates.md
+        - name: Setup guides for Microsoft 365 and Office 365 services
+          href: setup-guides-for-microsoft-365.md
+        - name: Integration
+          items: 
+            - name: Integrated Apps and Azure AD
+              href: integrated-apps-and-azure-ads.md
+            - name: Integration with on-premises
+              href: microsoft-365-integration.md
+            - name: Azure integration
+              href: azure-integration.md
+            - name: Azure ExpressRoute
+              href: azure-expressroute.md
+            - name: How modern authentication works for Office 2013 and Office 2016 client apps
+              href: modern-auth-for-office-2013-and-2016.md
+        - name: Inter-tenant collaboration
+          href: microsoft-365-inter-tenant-collaboration.md
+        - name: Client app support
+          items: 
+            - name: Certificate-based authentication
+              href: microsoft-365-client-support-certificate-based-authentication.md
+            - name: Conditional Access
+              href: microsoft-365-client-support-conditional-access.md
+            - name: Choose between MDM and Intune
+              href: https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune
+            - name: Modern authentication
+              href: microsoft-365-client-support-modern-authentication.md
+            - name: Single sign-on
+              href: microsoft-365-client-support-single-sign-on.md
+        - name: Hybrid modern authentication
+          items: 
+            - name: Prerequisites for Skype for Business Server and Exchange Server
+              href: hybrid-modern-auth-overview.md
+            - name: Configure Exchange Server
+              href: configure-exchange-server-for-hybrid-modern-authentication.md
+            - name: Configure Skype for Business
+              href: configure-skype-for-business-for-hybrid-modern-authentication.md
+            - name: Remove or disable for Skype for Business and Exchange
+              href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
+        - name: Plan your upgrade
+          href: plan-upgrade-previous-versions-office.md
+          items: 
+            - name: Office 2007
+              items: 
+                - name: Upgrade from Office 2007 servers and clients
+                  href: upgrade-from-office-2007-servers-and-products.md
+                - name: Office 2007 desktop
+                  href: https://docs.microsoft.com/DeployOffice/endofsupport/office-2007-end-support-roadmap
+                - name: Exchange 2007
+                  href: exchange-2007-end-of-support.md
+                - name: SharePoint 2007
+                  href: sharepoint-2007-end-of-support.md
+                - name: Office Communications Server
+                  href: https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade
+                - name: PerformancePoint Server 2007
+                  href: pps-2007-end-of-support.md
+                - name: Project Server 2007
+                  href: project-server-2007-end-of-support.md
+            - name: Office 2010
+              items: 
+                - name: Upgrade from Office 2010 servers and clients
+                  href: upgrade-from-office-2010-servers-and-products.md
+                - name: Office 2010 desktop
+                  href: https://docs.microsoft.com/DeployOffice/endofsupport/office-2010-end-support-roadmap
+                - name: Exchange 2010
+                  href: exchange-2010-end-of-support.md
+                - name: SharePoint 2010
+                  href: upgrade-from-sharepoint-2010.md
+                - name: Lync Server 2010
+                  href: https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade
+                - name: Project Server 2010
+                  href: project-server-2010-end-of-support.md
+        - name: Tenant isolation in Microsoft 365
+          href: microsoft-365-tenant-isolation-overview.md
+          items: 
+            - name: Isolation and Access Control in Azure Active Directory
+              href: microsoft-365-isolation-in-azure-active-directory.md
+            - name: Monitoring and Testing Tenant Boundaries
+              href: microsoft-365-monitoring-and-testing.md
+            - name: Resource Limits
+              href: microsoft-365-resource-limits.md
+            - name: Isolation and Access Control in Microsoft 365
+              href: microsoft-365-isolation-in-microsoft-365.md
+            - name: Tenant Isolation in Microsoft 365 Search
+              href: microsoft-365-isolation-in-microsoft-365-search.md
+            - name: Tenant Isolation in Microsoft 365 Video
+              href: microsoft-365-isolation-in-microsoft-365-video.md
+            - name: Tenant Isolation in the Office Graph and Delve
+              href: microsoft-365-isolation-in-graph-and-delve.md
+        - name: Service assurance
+          items: 
+            - name: Service assurance in the Microsoft 365 Security & Compliance Center
+              href: https://docs.microsoft.com/microsoft-365/compliance/service-assurance
+            - name: Administrative Access Controls in Microsoft 365
+              href: microsoft-365-administrative-access-controls-overview.md
+              items: 
+                - name: Monitoring and Auditing Access Controls
+                  href: microsoft-365-monitoring-and-auditing-access-controls.md
+                - name: Microsoft 365 Isolation Controls
+                  href: microsoft-365-isolation-controls.md
+                - name: Microsoft 365 Personnel Controls
+                  href: microsoft-365-personnel-controls.md
+                - name: Microsoft 365 Technology Controls
+                  href: microsoft-365-technology-controls.md
+                - name: Yammer Enterprise Access Controls
+                  href: microsoft-365-yammer-enterprise-access-controls.md
+            - name: Auditing and Reporting in Microsoft 365
+              href: microsoft-365-auditing-and-reporting-overview.md
+              items: 
+                - name: Microsoft 365 reporting features
+                  href: microsoft-365-reporting-features.md
+                - name: eDiscovery and search features
+                  href: microsoft-365-ediscovery-and-search-features.md
+                - name: Internal logging for Microsoft 365 engineering
+                  href: microsoft-365-internal-logging.md
+                - name: Microsoft 365 Mailbox Migrations
+                  href: microsoft-365-mailbox-migrations.md
+                - name: Microsoft 365 Management Activity API
+                  href: microsoft-365-management-activity-api.md
+            - name: Data Resiliency in Microsoft 365
+              href: microsoft-365-data-resiliency-overview.md
+              items: 
+                - name: Dealing with Data Corruption
+                  href: microsoft-365-dealing-with-data-corruption.md
+                - name: Exchange Online Data Resilience
+                  href: microsoft-365-exchange-data-resiliency.md
+                - name: Malware and Ransomware Protection
+                  href: microsoft-365-malware-and-ransomware-protection.md
+                - name: Monitoring and Self-Healing
+                  href: microsoft-365-monitoring-and-self-healing.md
+            - name: Data Retention, Deletion, and Destruction in Microsoft 365
+              href: microsoft-365-data-retention-deletion-and-destruction-overview.md
+              items: 
+                - name: Data Destruction
+                  href: microsoft-365-data-destruction.md
+                - name: Immutability in Microsoft 365
+                  href: microsoft-365-data-immutability.md
+                - name: Exchange Online Data Deletion
+                  href: microsoft-365-exchange-online-data-deletion.md
+                - name: SharePoint Online Data Deletion
+                  href: microsoft-365-sharepoint-online-data-deletion.md
+                - name: Skype for Business Data Deletion
+                  href: microsoft-365-skype-data-deletion.md
+            - name: Defending against denial-of-service attacks in Microsoft 365
+              href: microsoft-365-defending-cloud-services-against-dos-attacks.md
+              items: 
+                - name: Microsoft's Denial-of-Services Defense Strategy
+                  href: microsoft-365-microsoft-dos-defense-strategy.md
+                - name: Core Principles of Defense Against Denial-of-Service Attacks
+                  href: microsoft-365-core-principles-of-defense-against-dos-attacks.md
+            - name: Encryption in the Microsoft Cloud
+              href: https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview
+              items: 
+                - name: Microsoft 365 Service Encryption
+                  href: https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption
+                - name: Encryption for Data in Transit
+                  href: https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-data-in-transit
+                - name: Customer-Managed Encryption Features
+                  href: https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features
+                - name: Encryption Risks and Protections
+                  href: https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections
+                - name: Encryption for Skype for Business, OneDrive for Business, SharePoint Online, and Exchange Online
+                  href: https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-skype-onedrive-sharepoint-and-exchange
+                - name: Encryption in Microsoft Dynamics 365
+                  href: https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365
+                - name: Encryption in Azure
+                  href: https://docs.microsoft.com/microsoft-365/compliance/office-365-azure-encryption
     - name: Deploy
-      items:
-      - name: Place Tenant-Deploy TOC entries here
-        href: placeholder.md
-    - name: Multi-Geo
-      items:
-        - name: Place Tenant-Multi-geo TOC entries here
-          href: placeholder.md
+      items: 
+        - name: Add a domain
+          href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+    - name: Multi-geo
+      items: 
+        - name: Microsoft 365 Multi-Geo
+          href: office-365-multi-geo.md
+        - name: OneDrive and SharePoint multi-geo
+          href: multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md
+        - name: Exchange Multi-Geo
+          href: multi-geo-capabilities-in-exchange-online.md
+        - name: Plan
+          items: 
+            - name: Plan for multi-geo
+              href: plan-for-multi-geo.md
+            - name: Administration experience
+              href: administering-a-multi-geo-environment.md
+            - name: User experience in a multi-geo environment
+              href: multi-geo-user-experience.md
+        - name: Deploy
+          items: 
+            - name: Configure multi-geo
+              href: multi-geo-tenant-configuration.md
+            - name: Configure preferred data location
+              href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json
+            - name: Configure search
+              href: configure-search-for-multi-geo.md
+        - name: Manage
+          items: 
+            - name: Administering a multi-geo environment
+              href: administering-a-multi-geo-environment.md
+            - name: Manage SharePoint quotas
+              href: sharepoint-multi-geo-storage-quota.md
+            - name: Move a OneDrive site
+              href: move-onedrive-between-geo-locations.md
+            - name: Move a SharePoint site
+              href: move-sharepoint-between-geo-locations.md
+            - name: Add or remove a geo administrator
+              href: add-a-sharepoint-geo-admin.md
+            - name: Restrict content to a geo location
+              href: restrict-content-to-geo-location.md
+            - name: Configure Microsoft 365 Multi-Geo eDiscovery
+              href: multi-geo-ediscovery-configuration.md
+            - name: Create a group with a specific PDL
+              href: multi-geo-add-group-with-pdl.md
+            - name: Delete a geo location
+              href: delete-a-geo-location.md
+            - name: Enabling SharePoint Multi-Geo in your satellite geo location
+              href: enabling-SP-multigeo-satellite-geolocation.md
+            - name: Administering Exchange Multi-Geo
+              href: administering-exchange-online-multi-geo.md
     - name: Move to a new Microsoft 365 datacenter geo
-      items:
-        - name: Place Tenant-Move to a new Microsoft 365 datacenter geo TOC entries here
-          href: placeholder.md
+      href: moving-data-to-new-datacenter-geos.md
+      items: 
+        - name: How to request your data move
+          href: request-your-data-move.md
+        - name: During and after your data move
+          href: during-and-after-your-data-move.md
+        - name: Data move general FAQ
+          href: data-move-faq.md
+        - name: Microsoft Cloud Deutschland - Office 365 migration program
+          href: ms-cloud-germany-transition.md
+        - name: Microsoft Cloud Deutschland - Opt-in for migration
+          href: ms-cloud-germany-migration-opt-in.md
+        - name: Your customer data in Office 365 datacenters
+          href: o365-data-locations.md
 
 - name: Identity
-  items:
+  items: 
     - name: Roadmap
       href: identity-roadmap-microsoft-365.md
     - name: Plan
-      items:
-      - name: Place Identity-Plan TOC entries here
-        href: placeholder.md
+      items: 
+        - name: Identity models
+          href: about-office-365-identity.md
+        - name: Hybrid identity
+          href: plan-for-directory-synchronization.md
     - name: Deploy
-      items:
-      - name: Place Identity-Deploy TOC entries here
-        href: placeholder.md
+      items: 
+        - name: Protect your global administrator accounts
+          href: protect-your-global-administrator-accounts.md
+        - name: Cloud-only identities
+          href: cloud-only-identities.md
+        - name: Hybrid identities
+          href: prepare-for-directory-synchronization.md
+        - name: Prepare a non-routable domain for directory synchronization
+          href: prepare-a-non-routable-domain-for-directory-synchronization.md
+        - name: Set up directory synchronization
+          href: set-up-directory-synchronization.md
+        - name: Hybrid solutions
+          items: 
+            - name: Overview
+              href: hybrid-solutions.md
+            - name: Use Azure Active Directory for SharePoint Server 2016 authentication
+              href: using-azure-ad-for-sharepoint-server-authentication.md
+            - name: Connect an on-premises network to an Azure virtual network
+              href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
+            - name: Deploy a directory synchronization server in Azure IaaS
+              href: deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md
+            - name: Deploy high availability federated authentication for Microsoft 365 in Azure
+              href: deploy-high-availability-federated-authentication-for-office-365-in-azure.md
+              items: 
+                - name: Phase 1 - Configure Azure
+                  href: high-availability-federated-authentication-phase-1-configure-azure.md
+                - name: Phase 2 - Configure domain controllers
+                  href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
+                - name: Phase 3 - Configure AD FS servers
+                  href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
+                - name: Phase 4 - Configure web application proxies
+                  href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
+                - name: Phase 5 - Configure federated authentication
+                  href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
+            - name: SharePoint Server 2013 Disaster Recovery in Microsoft Azure
+              href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
     - name: Manage
-      items:
-      - name: Place Identity-Manage TOC entries here
-        href: placeholder.md
+      items: 
+        - name: Assign licenses to user accounts
+          href: assign-licenses-to-user-accounts.md
+        - name: Microsoft 365 help center
+          href: https://docs.microsoft.com/office365/admin/admin-home
+        - name: Tools to manage user accounts
+          href: manage-office-365-accounts.md
+        - name: Add several users at the same time
+          href: add-several-users-at-the-same-time.md
+        - name: Recover deleted items in a user mailbox
+          href: recover-deleted-items-in-a-mailbox.md
+        - name: Directory synchronization
+          items: 
+            - name: View directory synchronization status
+              href: view-directory-synchronization-status.md
+            - name: Identify directory synchronization errors
+              href: identify-directory-synchronization-errors.md
+            - name: Fixing problems with directory synchronization
+              href: fix-problems-with-directory-synchronization.md
+            - name: Turn off directory synchronization
+              href: turn-off-directory-synchronization.md
+
 
 - name: Client and server software
-  items:
+  items: 
     - name: Roadmap
       href: client-server-software-roadmap-microsoft-365.md
     - name: Plan
-      items:
-      - name: Place Client and server software-Plan TOC entries here
-        href: placeholder.md
+      items: 
+        - name: Plan your upgrade
+          href: plan-upgrade-previous-versions-office.md
+    - name: Deploy
+      items: 
+        - name: Office 2007
+          items: 
+            - name: Upgrade from Office 2007 servers and clients
+              href: upgrade-from-office-2007-servers-and-products.md
+            - name: Office 2007 desktop
+              href: https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap
+            - name: Exchange 2007
+              href: exchange-2007-end-of-support.md
+            - name: SharePoint 2007
+              href: sharepoint-2007-end-of-support.md
+            - name: Office Communications Server
+              href: https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade
+            - name: PerformancePoint Server 2007
+              href: pps-2007-end-of-support.md
+            - name: Project Server 2007
+              href: project-server-2007-end-of-support.md
+        - name: Office 2010
+          items: 
+            - name: Upgrade from Office 2010 servers and clients
+              href: upgrade-from-office-2010-servers-and-products.md
+            - name: Office 2010 desktop
+              href: https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap
+            - name: Exchange 2010
+              href: exchange-2010-end-of-support.md
+            - name: SharePoint 2010
+              href: upgrade-from-sharepoint-2010.md
+            - name: Lync Server 2010
+              href: https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade
+            - name: Project Server 2010
+              href: project-server-2010-end-of-support.md
 
 - name: Security and compliance
   href: https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap
 
 - name: Cloud services
-  items:
+  items: 
     - name: Roadmap
       href: cloud-services-roadmap-microsoft-365.md
     - name: Deploy
-      items:
-      - name: Place Cloud services-Plan TOC entries here
-        href: placeholder.md
+      items: 
+        - name: Get ready
+          href: configure-services-and-applications.md
+        - name: Exchange Online
+          href: https://docs.microsoft.com/Exchange/exchange-online
+        - name: SharePoint Online
+          href: https://docs.microsoft.com/sharepoint/sharepoint-online
+        - name: Skype for Business
+          href: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online
+        - name: Microsoft Teams
+          href: https://docs.microsoft.com/MicrosoftTeams/Teams-overview
+        - name: Yammer
+          href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
+        - name: Activate rights management
+          href: activate-rms-in-office-365.md
+        - name: Configuring release options
+          href: https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47
+        - name: Train your users
+          href: https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users
     - name: Manage
-      items:
-      - name: Place Cloud services-Manage TOC entries here
-        href: placeholder.md
+      items: 
+        - name: How to check
+          href: view-service-health.md
+        - name: Support options
+          href: https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
+        - name: Exchange Online
+          href: https://docs.microsoft.com/Exchange/exchange-online
+        - name: SharePoint Online
+          href: https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a
+        - name: Skype for Business
+          href: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online
+        - name: Microsoft Teams
+          href: https://docs.microsoft.com//MicrosoftTeams/quality-of-experience-review-guide
+        - name: Yammer
+          href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
+        - name: Performance and tuning
+          items: 
+            - name: Tune Microsoft 365 performance
+              href: tune-office-365-performance.md
+            - name: Performance tuning using baselines and performance history
+              href: performance-tuning-using-baselines-and-history.md
+            - name: Tune Exchange Online performance
+              href: tune-exchange-online-performance.md
+            - name: Tune SharePoint Online performance
+              href: tune-sharepoint-online-performance.md
+              items: 
+                - name: Introduction to performance tuning for SharePoint Online
+                  href: introduction-to-performance-tuning-for-sharepoint-online.md
+                - name: Diagnosing performance issues with SharePoint Online
+                  href: diagnosing-performance-issues-with-sharepoint-online.md
+            - name: Tune Skype for Business Online performance
+              href: tune-skype-for-business-online-performance.md
+            - name: Tune Project Online performance
+              href: https://docs.microsoft.com/ProjectOnline/tune-project-online-performance
+            - name: Performance troubleshooting plan
+              href: performance-troubleshooting-plan.md
 
 - name: Windows 10
   href: https://docs.microsoft.com/windows/deployment/
@@ -100,10 +524,108 @@
     - name: Roadmap
       href: device-management-roadmap-microsoft-365.md
 
-- name: Microsoft 365 PowerShell
+- name: Manage Microsoft 365 with PowerShell
+  href: manage-office-365-with-office-365-powershell.md
   items: 
-    - name: Place PowerShell TOC entries here
-      href: placeholder.md
+    - name: Getting started with PowerShell for Microsoft 365
+      href: getting-started-with-office-365-powershell.md
+      items: 
+        - name: Why you need to use PowerShell for Microsoft 365
+          href: why-you-need-to-use-office-365-powershell.md
+        - name: Connect to Microsoft 365 with PowerShell
+          href: connect-to-office-365-powershell.md
+        - name: Connect to all Microsoft 365 services in a single Windows PowerShell window
+          href: connect-to-all-office-365-services-in-a-single-windows-powershell-window.md
+        - name: Use PowerShell to create reports for Microsoft 365
+          href: use-windows-powershell-to-create-reports-in-office-365.md
+        - name: Cmdlet references for Microsoft 365 services
+          href: cmdlet-references-for-office-365-services.md
+        - name: Microsoft 365 community resources for PowerShell
+          href: office-365-powershell-community-resources.md
+    - name: Manage Microsoft 365 user accounts, licenses, and groups
+      href: manage-user-accounts-and-licenses-with-office-365-powershell.md
+      items: 
+        - name: User accounts
+          items: 
+            - name: Create user accounts
+              href: create-user-accounts-with-office-365-powershell.md
+            - name: View user accounts
+              href: view-user-accounts-with-office-365-powershell.md
+            - name: Configure user account properties
+              href: configure-user-account-properties-with-office-365-powershell.md
+            - name: Assign roles to user accounts
+              href: assign-roles-to-user-accounts-with-office-365-powershell.md
+            - name: Delete and restore user accounts
+              href: delete-and-restore-user-accounts-with-office-365-powershell.md
+            - name: Block user accounts
+              href: block-user-accounts-with-office-365-powershell.md
+        - name: Licenses and services
+          items: 
+            - name: View licenses and services
+              href: view-licenses-and-services-with-office-365-powershell.md
+            - name: View licensed and unlicensed users
+              href: view-licensed-and-unlicensed-users-with-office-365-powershell.md
+            - name: Assign licenses to user accounts
+              href: assign-licenses-to-user-accounts-with-office-365-powershell.md
+            - name: View account license and service details
+              href: view-account-license-and-service-details-with-office-365-powershell.md
+            - name: Disable access to services
+              href: disable-access-to-services-with-office-365-powershell.md
+              items: 
+                - name: Disable access to Sway
+                  href: disable-access-to-sway-with-office-365-powershell.md
+                - name: Disable access to services while assigning user licenses
+                  href: disable-access-to-services-while-assigning-user-licenses.md
+                - name: Remove licenses from user accounts
+                  href: remove-licenses-from-user-accounts-with-office-365-powershell.md
+        - name: Groups
+          items: 
+            - name: Maintain group membership
+              href: maintain-group-membership-with-office-365-powershell.md
+            - name: Manage Microsoft 365 groups
+              href: manage-office-365-groups-with-powershell.md
+    - name: Manage SharePoint Online
+      href: manage-sharepoint-online-with-office-365-powershell.md
+      items: 
+        - name: Create SharePoint Online sites and add users
+          href: create-sharepoint-sites-and-add-users-with-powershell.md
+        - name: Manage SharePoint Online users and groups
+          href: manage-sharepoint-users-and-groups-with-powershell.md
+        - name: Manage SharePoint Online site groups
+          href: manage-sharepoint-site-groups-with-powershell.md
+    - name: Manage Exchange Online
+      href: https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell
+    - name: Use PowerShell for email migration to Microsoft 365
+      href: use-powershell-for-email-migration-to-office-365.md
+      items: 
+        - name: Use PowerShell to perform a cutover migration to Microsoft 365
+          href: use-powershell-to-perform-a-cutover-migration-to-office-365.md
+        - name: Use PowerShell to perform an IMAP migration to Microsoft 365
+          href: use-powershell-to-perform-an-imap-migration-to-office-365.md
+        - name: Use PowerShell to perform a staged migration to Microsoft 365
+          href: use-powershell-to-perform-a-staged-migration-to-office-365.md
+    - name: Manage Microsoft 365 with Windows PowerShell for Delegated Access partners
+      href: manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md
+      items: 
+        - name: Manage Microsoft 365 tenants with Windows PowerShell for Delegated Access partners
+          href: manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissio.md
+        - name: Add a domain to a client tenancy with Windows PowerShell for Delegated Access partners
+          href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
+        - name: Connect to Exchange Online via remote Windows PowerShell for Delegated Access partners
+          href: connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md
+        - name: Retrieve customer reporting data via Windows PowerShell for Delegated Access partners
+          href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
+    - name: Manage Microsoft Teams
+      href: https://docs.microsoft.com/microsoftteams/teams-powershell-install
+    - name: Manage Skype for Business Online
+      href: manage-skype-for-business-online-with-office-365-powershell.md
+      items: 
+        - name: Manage Skype for Business Online policies
+          href: manage-skype-for-business-online-policies-with-office-365-powershell.md
+        - name: Assign per-user Skype for Business Online policies
+          href: assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md
+    - name: Manage add-ins with Centralized Deployment PowerShell
+      href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
 
 - name: Test Lab Guides
   href: m365-enterprise-test-lab-guides.md

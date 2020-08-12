@@ -60,7 +60,7 @@ Here is an example for the Contoso organization:
   
 **An example configuration for a high availability federated authentication infrastructure in Azure**
 
-![An example configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure](media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![An example configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## Run Azure AD Connect to configure federated authentication
 
@@ -130,7 +130,7 @@ Here is the final configuration, with placeholder names for the servers.
   
 **Phase 5: The final configuration of a high availability federated authentication infrastructure in Azure**
 
-![The final configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![The final configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 Your high availability federated authentication infrastructure for Microsoft 365 in Azure is complete.
   

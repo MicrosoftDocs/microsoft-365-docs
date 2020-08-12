@@ -53,15 +53,15 @@ After you have updated the UPNs to use the verified domain, you are ready to syn
     
     Press **Windows key + R** to open the **Run** dialog, and then type in Domain.msc, and then choose **OK**.
     
-    ![Choose Active Directory Domains and Trusts.](media/46b6e007-9741-44af-8517-6f682e0ac974.png)
+    ![Choose Active Directory Domains and Trusts.](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
 2. On the **Active Directory Domains and Trusts** window, right-click **Active Directory Domains and Trusts**, and then choose **Properties**.
     
-    ![Right-click Active Directory Domains and Trusts and choose Properties](media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
+    ![Right-click Active Directory Domains and Trusts and choose Properties](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
 3. On the **UPN Suffixes** tab, in the **Alternative UPN Suffixes** box, type your new UPN suffix or suffixes, and then choose **Add** \> **Apply**.
     
-    ![Add an new UPN suffix](media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
+    ![Add an new UPN suffix](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
     Choose **OK** when you're done adding suffixes. 
     
@@ -77,7 +77,7 @@ After you have updated the UPNs to use the verified domain, you are ready to syn
     
 3. On the **Account** tab, in the UPN suffix drop-down list, choose the new UPN suffix, and then choose **OK**.
     
-    ![Add new UPN suffix for a user](media/54876751-49f0-48cc-b864-2623c4835563.png)
+    ![Add new UPN suffix for a user](../media/54876751-49f0-48cc-b864-2623c4835563.png)
   
 4. Complete these steps for every user.
     

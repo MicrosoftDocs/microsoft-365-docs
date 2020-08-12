@@ -63,7 +63,7 @@ This summary breaks down the process into steps that might otherwise get lost du
 
 These steps turn on MA for SFB, SFBO, EXCH, and EXO - that is, all the products that can participate in an HMA configuration of SFB and SFBO (including dependencies on EXCH/EXO). In other words, if your users are homed in/have mailboxes created in any part of the Hybrid (EXO + SFBO, EXO + SFB, EXCH + SFBO, or EXCH + SFB), your finished product will look like this:
   
-![A Mixed 6 Skype for business HMA topology has MA on in all four possible locations.](media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
+![A Mixed 6 Skype for business HMA topology has MA on in all four possible locations.](../media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
   
 As you can see there are four different places to turn on MA! For the best user experience, we recommend you turn on MA in all four of these locations. If you can't turn MA on in all these locations, adjust the steps so that you turn on MA only in the locations that are necessary for your environment.
   
@@ -166,7 +166,7 @@ To test that HMA is working after you've enabled it, sign out of a test SFB Wind
   
 You should also check the 'Configuration Information' for Skype for Business Clients for an 'OAuth Authority'. To do this on your client computer, hold down the CTRL key at the same time you right-click the Skype for Business Icon in the Windows Notification tray. Click **Configuration Information** in the menu that appears. In the 'Skype for Business Configuration Information' window that will appear on the desktop, look for the following:
   
-![The Configuration information of a Skype for Business Client using Modern Authentication shows a Lync and EWS OAUTH Authority URL of https://login.windows.net/common/oauth2/authorize.](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
+![The Configuration information of a Skype for Business Client using Modern Authentication shows a Lync and EWS OAUTH Authority URL of https://login.windows.net/common/oauth2/authorize.](../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
 You should also hold down the CTRL key at the same time you right-click the icon for the Outlook client (also in the Windows Notifications tray) and click 'Connection Status'. Look for the client's SMTP address against an AuthN type of 'Bearer\*', which represents the bearer token used in OAuth.
   

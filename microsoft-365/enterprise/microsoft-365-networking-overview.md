@@ -72,7 +72,7 @@ Certain common performance issues are created when Microsoft 365 traffic is subj
 
 Shortening the network path to Microsoft 365 entry points by allowing client traffic to egress as close as possible to their geographic location can improve connectivity performance and the end user experience in Microsoft 365. It can also help to reduce the impact of future changes to the network architecture on Microsoft 365 performance and reliability. The optimum connectivity model is to always provide network egress at the user's location, regardless of whether this is on the corporate network or remote locations such as home, hotels, coffee shops and airports. Generic Internet traffic and WAN based corporate network traffic would be separately routed and not use the local direct egress model. This local direct egress model is represented in the diagram below.
 
-![Local egress network architecture](media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![Local egress network architecture](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
 
 The local egress architecture has the following benefits for Microsoft 365 network traffic over the traditional model:
   

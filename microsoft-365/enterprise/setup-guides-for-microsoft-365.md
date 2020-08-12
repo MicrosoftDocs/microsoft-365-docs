@@ -35,11 +35,11 @@ The setup guides are accessible from the [Setup guidance](https://aka.ms/setupgu
 
 2. Find the **Training & guides** card. 
 
-   ![Training & guides card in the Microsoft 365 admin center](./media/setup-guides-for-office-365/adminportal-trainingandguides.png)
+   ![Training & guides card in the Microsoft 365 admin center](../media/setup-guides-for-office-365/adminportal-trainingandguides.png)
 
 3. Select **Customized setup guidance**.
 
-   ![Screenshot of the Setup guidance page in the Microsoft 365 admin center](./media/setup-guides-for-office-365/adminportal-setupguidance.png)
+   ![Screenshot of the Setup guidance page in the Microsoft 365 admin center](../media/setup-guides-for-office-365/adminportal-setupguidance.png)
 
 >[!NOTE]
 >Tenant administrator permissions are required to access the Microsoft 365 admin center.
@@ -48,7 +48,7 @@ The setup guides are accessible from the [Setup guidance](https://aka.ms/setupgu
 
 Each guide provides you with step-by-step instructions, resources, articles, and when needed, scripts you can use to make configuration changes. These guides provide you with choices that reflect the specific needs of both small and large orgs. Additionally, the guidance provided includes assistance for both new and more experienced admins.
 
-![Example of a setup guide](./media/setup-guides-for-office-365/m365-setupguide-example.png)
+![Example of a setup guide](../media/setup-guides-for-office-365/m365-setupguide-example.png)
 
 You can use the guides to learn more about specific Microsoft 365 and Office 365 features during the planning phase or revisit them after you've completed a deployment to modify a setting.
 
