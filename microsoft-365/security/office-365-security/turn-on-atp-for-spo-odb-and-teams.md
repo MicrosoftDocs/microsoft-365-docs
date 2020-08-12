@@ -30,17 +30,20 @@ ms.custom: seo-marvel-apr2020
 
 To define (or edit) ATP policies, you must be assigned an appropriate role. Some examples are described in the following table:
 
+****
+
 |Role|Where/how assigned|
-|---------|---------|
+|---|---|
 |global administrator|The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) to learn more.)|
 |Security Administrator|Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online Organization Management|Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 ## Turn on ATP for SharePoint, OneDrive, and Microsoft Teams
 
 **Before you begin this procedure, make sure that audit logging is already turned on for your Microsoft 365 environment**. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. Go to [https://protection.office.com](https://protection.office.com), and sign in with your work or school account.
+1. Go to <https://protection.office.com>, and sign in with your work or school account.
 
 2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Safe Attachments**.
 
