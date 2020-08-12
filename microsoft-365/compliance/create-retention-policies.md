@@ -206,6 +206,8 @@ A retention policy can apply to all content in the locations that it includes, o
 
 You can apply a retention policy only to content that meets specific conditions, and then take retention actions on just that content. The conditions available support applying a retention policy to content that contains specific words or phrases. You can refine your query by using search operators like AND, OR, and NOT. For more information on these operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
+Support for adding searchable properties (for example, **subject:**) is coming soon.
+  
 Query-based retention uses the search index to identify content.
   
 ![Query editor](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
@@ -281,7 +283,9 @@ Usually this update is fairly quick but can take several days. When the policy r
 
 ## Lock a retention policy by using PowerShell
 
-You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) to comply with regulatory requirements.
+You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) to comply with regulatory requirements. Because administrators can't disable or delete a retention policy after a preservation lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.
+
+All locations you select in the retention policy support Preservation Lock.
 
 1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
