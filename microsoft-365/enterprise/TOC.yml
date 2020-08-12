@@ -37,7 +37,7 @@
           href: use-microsoft-365-cdn-with-spo.md
         - name: Optimize connectivity for remote users
           items: 
-            - name: Overview: VPN Split Tunneling
+            - name: Overview - VPN Split Tunneling
               href: microsoft-365-vpn-split-tunnel.md
             - name: Implementing VPN Split Tunneling
               href: microsoft-365-vpn-implement-split-tunnel.md
@@ -368,15 +368,15 @@
             - name: Deploy high availability federated authentication for Microsoft 365 in Azure
               href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
               items: 
-                - name: Phase 1: Configure Azure
+                - name: Phase 1 - Configure Azure
                   href: high-availability-federated-authentication-phase-1-configure-azure.md
-                - name: Phase 2: Configure domain controllers
+                - name: Phase 2 - Configure domain controllers
                   href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
-                - name: Phase 3: Configure AD FS servers
+                - name: Phase 3 - Configure AD FS servers
                   href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
-                - name: Phase 4: Configure web application proxies
+                - name: Phase 4 - Configure web application proxies
                   href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
-                - name: Phase 5: Configure federated authentication
+                - name: Phase 5 - Configure federated authentication
                   href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
             - name: SharePoint Server 2013 Disaster Recovery in Microsoft Azure
               href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
