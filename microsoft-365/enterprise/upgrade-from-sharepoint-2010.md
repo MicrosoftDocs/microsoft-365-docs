@@ -61,7 +61,7 @@ If you choose options on the low end of the scale (good options), you'll need to
 
 Here are the three paths you can take to avoid the end of support for SharePoint Server 2010.
 
-![SharePoint Server 2010 upgrade paths](./media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
+![SharePoint Server 2010 upgrade paths](../media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
 
 >[!Note]
 >End of support for SharePoint Server 2010 and SharePoint Foundation 2010 are scheduled for April 13, 2021, but *please be aware* that you should always check the [Product Lifecycle site](https://support.microsoft.com/lifecycle) for the most current dates.
@@ -252,9 +252,9 @@ One good way to see how this works is by creating a Microsoft 365 dev/test envir
 
 ## Summary of options for Office 2010 client and servers and Windows 7
 
-For a visual summary of the upgrade, migrate, and move-to-the-cloud options for Office 2010 clients and servers and Windows 7, see the [end of support poster](./downloads/Office2010Windows7EndOfSupport.pdf).
+For a visual summary of the upgrade, migrate, and move-to-the-cloud options for Office 2010 clients and servers and Windows 7, see the [end of support poster](../downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![Image for the end of support for Office 2010 clients and servers and Windows 7 poster](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./downloads/Office2010Windows7EndOfSupport.pdf)
+[![Image for the end of support for Office 2010 clients and servers and Windows 7 poster](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 This one-page poster is a quick way to understand the various paths you can take to prevent Office 2010 client and server products and Windows 7 from reaching end of support, with preferred paths and option support in Microsoft 365 Enterprise highlighted.
 

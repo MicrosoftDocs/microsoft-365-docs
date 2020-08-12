@@ -54,7 +54,7 @@ Data columns shown are:
  
 - **Ports**: Lists the TCP or UDP ports that are combined with the Addresses to form the network endpoint. You may notice some duplication in IP Address ranges where there are different ports listed.
 
-[!INCLUDE [Office 365 Germany endpoints](./includes/office-365-germany-endpoints.md)]
+[!INCLUDE [Office 365 Germany endpoints](../includes/office-365-germany-endpoints.md)]
 
  
 

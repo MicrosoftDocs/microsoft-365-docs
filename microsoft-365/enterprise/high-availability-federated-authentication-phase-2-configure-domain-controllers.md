@@ -31,13 +31,13 @@ First, you need to fill out the **Virtual machine name** column of Table M and m
   
 |**Item**|**Virtual machine name**|**Gallery image**|**Storage type**|**Minimum size**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![line](./media/Common-Images/TableLine.png) (first domain controller, example DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png) (second domain controller, example DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![line](./media/Common-Images/TableLine.png) (directory synchronization server, example DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![line](./media/Common-Images/TableLine.png) (first AD FS server, example ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![line](./media/Common-Images/TableLine.png) (second AD FS server, example ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![line](./media/Common-Images/TableLine.png) (first web application proxy server, example WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![line](./media/Common-Images/TableLine.png) (second web application proxy server, example WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![line](../media/Common-Images/TableLine.png) (first domain controller, example DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![line](../media/Common-Images/TableLine.png) (second domain controller, example DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![line](../media/Common-Images/TableLine.png) (directory synchronization server, example DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![line](../media/Common-Images/TableLine.png) (first AD FS server, example ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![line](../media/Common-Images/TableLine.png) (second AD FS server, example ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![line](../media/Common-Images/TableLine.png) (first web application proxy server, example WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![line](../media/Common-Images/TableLine.png) (second web application proxy server, example WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **Table M - Virtual machines for the high availability federated authentication for Microsoft 365 in Azure**
   

@@ -54,7 +54,7 @@ Data columns shown are:
  
 - **Ports**: Lists the TCP or UDP ports that are combined with the Addresses to form the network endpoint. You may notice some duplication in IP Address ranges where there are different ports listed.
 
-[!INCLUDE [Office 365 worldwide endpoints](./includes/office-365-worldwide-endpoints.md)]
+[!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
 >[!Note]
 >For recommendations on Yammer IP addresses and URLs, see [this blog post](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592).

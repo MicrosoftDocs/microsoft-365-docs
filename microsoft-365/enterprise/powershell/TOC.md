@@ -1,53 +1,102 @@
-﻿
-# [Manage Microsoft 365 with PowerShell](manage-office-365-with-office-365-powershell.md)
-## [Getting started with PowerShell for Microsoft 365](getting-started-with-office-365-powershell.md)
-### [Why you need to use PowerShell for Microsoft 365](why-you-need-to-use-office-365-powershell.md)
-### [Connect to Microsoft 365 with PowerShell](connect-to-office-365-powershell.md)
-### [Connect to all Microsoft 365 services in a single Windows PowerShell window](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
-### [Use PowerShell to create reports for Microsoft 365](use-windows-powershell-to-create-reports-in-office-365.md)
-### [Cmdlet references for Microsoft 365 services](cmdlet-references-for-office-365-services.md)
-### [Microsoft 365 community resources for PowerShell](office-365-powershell-community-resources.md)
-
-## [Manage Microsoft 365 user accounts, licenses, and groups](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-
-### User accounts
-#### [Create user accounts](create-user-accounts-with-office-365-powershell.md)
-#### [View user accounts](view-user-accounts-with-office-365-powershell.md)
-#### [Configure user account properties](configure-user-account-properties-with-office-365-powershell.md)
-#### [Assign roles to user accounts](assign-roles-to-user-accounts-with-office-365-powershell.md)
-#### [Delete and restore user accounts](delete-and-restore-user-accounts-with-office-365-powershell.md)
-#### [Block user accounts](block-user-accounts-with-office-365-powershell.md)
-
-### Licenses and services
-#### [View licenses and services](view-licenses-and-services-with-office-365-powershell.md)
-#### [View licensed and unlicensed users](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
-#### [Assign licenses to user accounts](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-#### [View account license and service details](view-account-license-and-service-details-with-office-365-powershell.md)
-#### [Disable access to services](disable-access-to-services-with-office-365-powershell.md)
-##### [Disable access to Sway](disable-access-to-sway-with-office-365-powershell.md)
-##### [Disable access to services while assigning user licenses](disable-access-to-services-while-assigning-user-licenses.md)
-#### [Remove licenses from user accounts](remove-licenses-from-user-accounts-with-office-365-powershell.md)
-
-### Groups
-#### [Maintain group membership](maintain-group-membership-with-office-365-powershell.md)
-#### [Manage Microsoft 365 groups](manage-office-365-groups-with-powershell.md)
-
-## [Manage SharePoint Online](manage-sharepoint-online-with-office-365-powershell.md)
-### [Create SharePoint Online sites and add users](create-sharepoint-sites-and-add-users-with-powershell.md)
-### [Manage SharePoint Online users and groups](manage-sharepoint-users-and-groups-with-powershell.md)
-### [Manage SharePoint Online site groups](manage-sharepoint-site-groups-with-powershell.md)
-## [Manage Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
-## [Use PowerShell for email migration to Microsoft 365](use-powershell-for-email-migration-to-office-365.md)
-### [Use PowerShell to perform a cutover migration to Microsoft 365](use-powershell-to-perform-a-cutover-migration-to-office-365.md)
-### [Use PowerShell to perform an IMAP migration to Microsoft 365](use-powershell-to-perform-an-imap-migration-to-office-365.md)
-### [Use PowerShell to perform a staged migration to Microsoft 365](use-powershell-to-perform-a-staged-migration-to-office-365.md)
-## [Manage Microsoft 365 with Windows PowerShell for Delegated Access partners](manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
-### [Manage Microsoft 365 tenants with Windows PowerShell for Delegated Access partners](manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissio.md)
-### [Add a domain to a client tenancy with Windows PowerShell for Delegated Access partners](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
-### [Connect to Exchange Online via remote Windows PowerShell for Delegated Access partners](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
-### [Retrieve customer reporting data via Windows PowerShell for Delegated Access partners](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
-## [Manage Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
-## [Manage Skype for Business Online](manage-skype-for-business-online-with-office-365-powershell.md)
-### [Manage Skype for Business Online policies](manage-skype-for-business-online-policies-with-office-365-powershell.md)
-### [Assign per-user Skype for Business Online policies](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
-## [Manage add-ins with Centralized Deployment PowerShell](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)
+﻿- name: Manage Microsoft 365 with PowerShell
+  href: manage-microsoft-365-with-microsoft-365-powershell.md
+  items: 
+    - name: Getting started with PowerShell for Microsoft 365
+      href: getting-started-with-microsoft-365-powershell.md
+      items: 
+        - name: Why you need to use PowerShell for Microsoft 365
+          href: why-you-need-to-use-microsoft-365-powershell.md
+        - name: Connect to Microsoft 365 with PowerShell
+          href: connect-to-microsoft-365-powershell.md
+        - name: Connect to all Microsoft 365 services in a single Windows PowerShell window
+          href: connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md
+        - name: Use PowerShell to create reports for Microsoft 365
+          href: use-windows-powershell-to-create-reports-in-microsoft-365.md
+        - name: Cmdlet references for Microsoft 365 services
+          href: cmdlet-references-for-microsoft-365-services.md
+        - name: Microsoft 365 community resources for PowerShell
+          href: microsoft-365-powershell-community-resources.md
+    - name: Manage Microsoft 365 user accounts, licenses, and groups
+      href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
+      items: 
+        - name: User accounts
+          items: 
+            - name: Create user accounts
+              href: create-user-accounts-with-microsoft-365-powershell.md
+            - name: View user accounts
+              href: view-user-accounts-with-microsoft-365-powershell.md
+            - name: Configure user account properties
+              href: configure-user-account-properties-with-microsoft-365-powershell.md
+            - name: Assign roles to user accounts
+              href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
+            - name: Delete and restore user accounts
+              href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
+            - name: Block user accounts
+              href: block-user-accounts-with-microsoft-365-powershell.md
+        - name: Licenses and services
+          items: 
+            - name: View licenses and services
+              href: view-licenses-and-services-with-microsoft-365-powershell.md
+            - name: View licensed and unlicensed users
+              href: view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md
+            - name: Assign licenses to user accounts
+              href: assign-licenses-to-user-accounts-with-microsoft-365-powershell.md
+            - name: View account license and service details
+              href: view-account-license-and-service-details-with-microsoft-365-powershell.md
+            - name: Disable access to services
+              href: disable-access-to-services-with-microsoft-365-powershell.md
+              items: 
+                - name: Disable access to Sway
+                  href: disable-access-to-sway-with-microsoft-365-powershell.md
+                - name: Disable access to services while assigning user licenses
+                  href: disable-access-to-services-while-assigning-user-licenses.md
+                - name: Remove licenses from user accounts
+                  href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
+        - name: Groups
+          items: 
+            - name: Maintain group membership
+              href: maintain-group-membership-with-microsoft-365-powershell.md
+            - name: Manage Microsoft 365 groups
+              href: manage-microsoft-365-groups-with-powershell.md
+    - name: Manage SharePoint Online
+      href: manage-sharepoint-online-with-microsoft-365-powershell.md
+      items: 
+        - name: Create SharePoint Online sites and add users
+          href: create-sharepoint-sites-and-add-users-with-powershell.md
+        - name: Manage SharePoint Online users and groups
+          href: manage-sharepoint-users-and-groups-with-powershell.md
+        - name: Manage SharePoint Online site groups
+          href: manage-sharepoint-site-groups-with-powershell.md
+    - name: Manage Exchange Online
+      href: https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell
+    - name: Use PowerShell for email migration to Microsoft 365
+      href: use-powershell-for-email-migration-to-microsoft-365.md
+      items: 
+        - name: Use PowerShell to perform a cutover migration to Microsoft 365
+          href: use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md
+        - name: Use PowerShell to perform an IMAP migration to Microsoft 365
+          href: use-powershell-to-perform-an-imap-migration-to-microsoft-365.md
+        - name: Use PowerShell to perform a staged migration to Microsoft 365
+          href: use-powershell-to-perform-a-staged-migration-to-microsoft-365.md
+    - name: Manage Microsoft 365 with Windows PowerShell for Delegated Access partners
+      href: manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md
+      items: 
+        - name: Manage Microsoft 365 tenants with Windows PowerShell for Delegated Access partners
+          href: manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md
+        - name: Add a domain to a client tenancy with Windows PowerShell for Delegated Access partners
+          href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
+        - name: Connect to Exchange Online via remote Windows PowerShell for Delegated Access partners
+          href: connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md
+        - name: Retrieve customer reporting data via Windows PowerShell for Delegated Access partners
+          href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
+    - name: Manage Microsoft Teams
+      href: https://docs.microsoft.com/microsoftteams/teams-powershell-install
+    - name: Manage Skype for Business Online
+      href: manage-skype-for-business-online-with-microsoft-365-powershell.md
+      items: 
+        - name: Manage Skype for Business Online policies
+          href: manage-skype-for-business-online-policies-with-microsoft-365-powershell.md
+        - name: Assign per-user Skype for Business Online policies
+          href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
+    - name: Manage add-ins with Centralized Deployment PowerShell
+      href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md

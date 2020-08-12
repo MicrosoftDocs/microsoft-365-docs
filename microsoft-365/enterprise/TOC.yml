@@ -525,7 +525,7 @@
       href: device-management-roadmap-microsoft-365.md
 
 - name: Microsoft 365 PowerShell
-  href: /powershell/index.yml      
+  href: ./powershell//manage-office-365-with-office-365-powershell.md     
 
 - name: Test Lab Guides
   href: m365-enterprise-test-lab-guides.md
