@@ -46,9 +46,10 @@ Managing permissions in the Security & Compliance Center only gives users access
 
 To see how to grant access to the Security & Compliance Center, check out [Give users access to Microsoft 365 Compliance admin center](grant-access-to-the-security-and-compliance-center.md).
 
-||||
+****
+
+|Role group|Description|Default roles assigned|
 |---|---|---|
-|**Role group**|**Description**|**Default roles assigned**|
 |**Compliance Administrator**<sup>1</sup>|Members can manage settings for device management, data loss prevention, reports, and preservation.|Case Management <br/><br/> Communication Compliance Admin <br/><br/> Communication Compliance Analysis <br/><br/> Communication Compliance Case Management <br/><br/> Communication Compliance Investigation <br/><br/> Communication Compliance Viewer <br/><br/> Data Classification Feedback Provider <br/><br/> Data Classification Feedback Reviewer <br/><br/> Data Investigation Management <br/><br/> Compliance Administrator <br/><br/> Compliance Search <br/><br/> Device Management <br/><br/> Disposition Management <br/><br/> DLP Compliance Management <br/><br/> Hold <br/><br/> IB Compliance Management <br/><br/> Manage Alerts <br/><br/> Organization Configuration <br/><br/> RecordManagement <br/><br/> Retention Management <br/><br/> View-Only Audit Logs <br/><br/> View-Only Device Management <br/><br/> View-Only DLP Compliance Management <br/><br/> View-Only IB Compliance Management <br/><br/> View-Only Manage Alerts <br/><br/> View-Only Recipients <br/><br/> View-Only Record Management <br/><br/> View-Only Retention Management <br/><br/> |
 |**Compliance Data Administrator**|Members can manage settings for device management, data protection, data loss prevention, reports, and preservation.|Compliance Administrator <br/><br/> Compliance Search <br/><br/> DLP Compliance Management <br/><br/> Device Management <br/><br/> Disposition Management <br/><br/> IB Compliance Management <br/><br/> Manage Alerts <br/><br/> Organization Configuration <br/><br/> RecordManagement <br/><br/> Retention Management <br/><br/> Sensitivity Label Administrator <br/><br/> View-Only Audit Logs <br/><br/> View-Only DLP Compliance Management <br/><br/> View-Only Device Management <br/><br/> View-Only IB Compliance Management <br/><br/> View-Only Manage Alerts <br/><br/> View-Only Recipients <br/><br/> View-Only Record Management <br/><br/> View-Only Retention Management|
 |**Content Explorer Content Viewer**|View the contents files in Content explorer.|Data Classification Content Viewer|
@@ -74,7 +75,7 @@ To see how to grant access to the Security & Compliance Center, check out [Give 
 |
 
 > [!NOTE]
-> <sup>1</sup>This role group doesn't assign members the permissions necessary to search the audit log or to use any reports that might include Exchange data, such as the DLP or ATP reports. To search the audit log or to view all reports, a user has to be assigned permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet. Global admins can search the audit log and view all reports because they're automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+> <sup>1</sup> This role group doesn't assign members the permissions necessary to search the audit log or to use any reports that might include Exchange data, such as the DLP or ATP reports. To search the audit log or to view all reports, a user has to be assigned permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet. Global admins can search the audit log and view all reports because they're automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 
 ## Roles in the Security & Compliance Center
 
@@ -105,9 +106,10 @@ Note that the following roles aren't assigned to the Organization Management rol
 - RMS Decrypt
 - Supervisory Review Administrator
 
-||||
+****
+
+|Role|Description|Default role group assignments|
 |---|---|---|
-|**Role**|**Description**|**Default role group assignments**|
 |**Audit Logs**|Turn on and configure auditing for the organization, view the organization's audit reports, and then export these reports to a file.|Organization Management <br/><br/> Security Administrator|
 |**Case Management**|Create, edit, delete, and control access to eDiscovery cases.|Compliance Administrator <br/><br/> eDiscovery Manager <br/><br/> Insider Risk Management <br/><br/> Insider Risk Management Admins <br/><br/> Insider Risk Management Analysts <br/><br/> Insider Risk Management Investigators <br/><br/> Organization Management|
 |**Communication**|Manage all communications with the custodians identified in an Advanced eDiscovery case.  Create hold notifications, hold reminders, and escalations to management. Track custodian acknowledgement of hold notifications and manage access to the custodian portal that is used by each custodian in a case to track communications for the cases where they were identified as a custodian.|eDiscovery Manager|

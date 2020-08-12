@@ -84,9 +84,10 @@ Consider setting up multiple ATP Safe Attachments policies for your organization
 
 As you set up your ATP Safe Attachments policies, you choose from among many options, including Monitor, Block, Replace, Dynamic Delivery, and so on. In case you're wondering about what these options do, the following table summarizes each and its effect.
 
-||||
+****
+
+|Option|Effect|Use when you want to:|
 |---|---|---|
-|**Option**|**Effect**|**Use when you want to:**|
 |**Off**|Does not scan attachments for malware  <br/> Does not delay message delivery|Turn scanning off for selected recipients.  <br/> Prevent unnecessary delays in routing internal mail.  <br/> **This option is not recommended for most users. You should only use this option to turn off ATP Safe Attachments scanning for recipients who only get emails from trusted senders.**|
 |**Monitor**|Delivers messages with attachments and then tracks what happens with detected malware|See where detected malware goes in your organization|
 |**Block**|Prevents messages with detected malware attachments from proceeding  <br/> Sends messages with detected malware to [quarantine in Office 365](manage-quarantined-messages-and-files.md) where a security administrator or analyst can review and release (or delete) those messages  <br/> Blocks future messages and attachments automatically|Safeguard your organization from repeated attacks using the same malware attachments|
