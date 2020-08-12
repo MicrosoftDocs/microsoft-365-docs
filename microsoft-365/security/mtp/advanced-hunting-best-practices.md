@@ -34,25 +34,25 @@ Apply these recommendations to get results faster and avoid timeouts while runni
 
 Triple backticks
     
-    ```kusto
-    DeviceEvents
-    | where Timestamp > ago(1d)
-    | where ActionType == "UsbDriveMount" 
-    | where DeviceName == "user-desktop.domain.com"
-    | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
-    ``` 
-`<pre>` + `<code>`
+```kusto
+DeviceEvents
+| where Timestamp > ago(1d)
+| where ActionType == "UsbDriveMount" 
+| where DeviceName == "user-desktop.domain.com"
+| extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
+ ```
 
-    <pre><code>
-    Timestamp     |   DeviceId   |   DeviceName
-    2020-08-11    |   xys-a-s-a  |   machine1 
-    </code></pre>
+`<pre>` + `<code>`
+<pre><code>
+Timestamp     |   DeviceId   |   DeviceName
+2020-08-11    |   xys-a-s-a  |   machine1 
+</code></pre>
 
 `<pre>` only
-    <pre>
-    Timestamp     |   DeviceId   |   DeviceName
-    2020-08-11    |   xys-a-s-a  |   machine1 
-    </pre>
+<pre>
+Timestamp     |   DeviceId   |   DeviceName
+2020-08-11    |   xys-a-s-a  |   machine1 
+</pre>
 
 - **Has beats contains** — Avoid searching substrings unnecessarily by using the `has` operator instead of `contains`.
 - **Search specific columns** — Look in a specific column rather than running full text searches across all columns. Don't use `*`.
