@@ -52,13 +52,16 @@ After you have [defined (or reviewed) your ATP Safe Attachments policies](set-up
 
 The following table describes some example scenarios. In all of these cases, we assume the organization has a Microsoft 365 subscription that includes Advanced Threat Protection.
 
-|**Example scenario**|**Does ATP Safe Attachments protection apply in this case?**|
-|:-----|:-----|
+****
+
+|Example scenario|Does ATP Safe Attachments protection apply in this case?|
+|---|---|
 |Pat's organization has Office 365 E5, but no one has defined any policies for ATP Safe Attachments yet.|No. Although the feature is available, at least one ATP Safe Attachments policy must be defined in order for ATP Safe Attachments protection to be in place.|
 |Lee is an employee in the sales department at Contoso. Lee's organization has an ATP Safe Attachments policy in place that applies to finance employees only.|No. In this case, finance employees would have ATP Safe Attachments protection, but other employees, including the sales department, would not until policies that include those groups are defined.|
 |Yesterday, an administrator at Jean's organization set up an ATP Safe Attachments policy that applies to all employees. Earlier today, Jean received an email message that includes an attachment.|Yes. In this example, Jean has a license for Advanced Threat Protection, and an ATP Safe Attachments policy that includes Jean has been defined. It typically takes about 30 minutes for a new policy to take effect across datacenters; since a day has passed in this case, the policy should be in effect.|
 |Chris's organization has Office 365 E5 with ATP Safe Attachments policies in place for everyone in the organization. Chris receives an email that has an attachment, and forwards the message to others who are outside the organization.|ATP Safe Attachments protection is in place for messages that Chris receives. If the recipients' organizations also have ATP Safe Attachments policies in place, then the message that Chris forwards would be subject to those policies when the forwarded message arrives.|
 |Jamie's organization has ATP Safe Attachments policies in place, and [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) has been turned on. Jamie assumes that every file in SharePoint Online has been scanned and is safe to open or download.|ATP Safe Attachments protection is in place according to the policies that are defined; however, this does not mean that every single file in SharePoint Online, OneDrive for Business, or Microsoft Teams is scanned. (To learn more, see [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).)|
+|
 
 ## Submitting files for malware analysis
 
