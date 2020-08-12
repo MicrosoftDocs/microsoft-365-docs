@@ -33,9 +33,10 @@ All other organizations have anti-phishing policies.
 
 The high-level differences between anti-phishing policies and ATP anti-phishing policies are described in the following table:
 
-||||
+****
+
+|Feature|Anti-phishing policies|ATP anti-phishing policies|
 |---|:---:|:---:|
-|**Feature**|**Anti-phishing policies**|**ATP anti-phishing policies**|
 |Automatically created default policy|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Create custom policies|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Policy settings<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
