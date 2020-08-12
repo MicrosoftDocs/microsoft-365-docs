@@ -293,7 +293,7 @@ All locations you select in the retention policy support Preservation Lock.
     
    ![List of retention policies in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
-3. To place a Preservation Lock on a retention policy, run the `Set-RetentionCompliancePolicy` cmdlet with the *RestrictiveRetention* parameter set to true:
+3. To place a Preservation Lock on a retention policy, run the `Set-RetentionCompliancePolicy` cmdlet with the name of the retention policy, and the *RestrictiveRetention* parameter set to true:
     
     ```powershell
     Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
@@ -307,7 +307,7 @@ All locations you select in the retention policy support Preservation Lock.
     
    ![Prompt to confirm that you want to lock a retention policy in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
-A Preservation Lock is now placed on the retention policy. If you run `Get-RetentionCompliancePolicy`, the `RestrictiveRetention` parameter is set to true. For example:
+A Preservation Lock is now placed on the retention policy. If you run `Get-RetentionCompliancePolicy`, the **RestrictiveRetention** parameter is set to **True**. For example:
 
 ```powershell
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
