@@ -28,9 +28,10 @@ There are two major factors that determine which policy is applied to a message:
 
 - **The priority of the email protection type**: This order is not configurable, and is described in the following table:
 
-  |||||
+  ****
+
+  |Priority|Email protection|Category|Where to manage|
   |---|---|---|---|
-  |**Priority**|**Email protection**|**Category**|**Where to manage**|
   |1|Malware|CAT:MALW|[Configure anti-malware policies in EOP](configure-anti-malware-policies.md)|
   |2|Phishing|CAT:PHSH|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
   |3|High confidence spam|CAT:HSPM|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
@@ -49,9 +50,10 @@ There are two major factors that determine which policy is applied to a message:
 
 For example, consider the following ATP anti-phishing policies **that apply to the same users**, and a message that's identified as both user impersonation and spoofing:
 
-  |||||
+  ****
+
+  |ATP anti-phishing policy|Priority|User impersonation|Anti-spoofing|
   |---|---|---|---|
-  |**ATP anti-phishing policy**|**Priority**|**User impersonation**|**Anti-spoofing**|
   |Policy A|1|On|Off|
   |Policy B|2|Off|On|
   |
