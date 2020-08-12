@@ -43,9 +43,9 @@ Add links to articles after merge
 
 In the planning phase of your identity implementation:
 
-- [Understand the different identity models](about-microsoft-365-identity.md)
+- [Understand the different identity models](about-office-365-identity.md)
 - [Plan for hybrid identity and directory synchronization](plan-for-directory-synchronization.md)
-- [Understand which tools you can use to manage Microsoft 365 accounts](tools-to-manage-microsoft-365-accounts.md)
+- [Understand which tools you can use to manage Microsoft 365 accounts](tools-to-manage-office-365-accounts.md)
 
 ## Deploy
 
@@ -69,7 +69,7 @@ Microsoft provides a set of recommendations for [identity and device access](mic
 In the management phase of your identity implementation:
 
 - [Assign licenses and manage user accounts](assign-licenses-to-user-accounts.md)
-- [Monitor directory synchronization](view-directory-synchronization-status.mdview-directory-synchronization-status.md)
+- [Monitor directory synchronization](view-directory-synchronization-status.md)
 
 ## How Microsoft does identity for Microsoft 365
 
@@ -87,5 +87,5 @@ See how the Contoso Corporation, a fictional but representative multi-national b
 
 ## Next step
 
-Start your identity planning with [Identity models]((about-microsoft-365-identity.md)).
+Start your identity planning with [Identity models]((about-office-365-identity.md)).
 

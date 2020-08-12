@@ -33,7 +33,7 @@ Fix links, search for: https://docs.microsoft.com/office365/enterprise/
 In the deployment phase of your cloud services:
 
 - [Get your services ready](configure-services-and-applications.md)
-- [Migrate your on-premises data to Microsoft 365](migrate-data-to-microsoft-365.md)
+- [Migrate your on-premises data to Microsoft 365](migrate-data-to-office-365.md)
 - Deploy your cloud services
   - [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
   - [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
@@ -54,7 +54,7 @@ In the management phase of your cloud services:
   - [Skype for Business](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
   - [Microsoft Teams](https://docs.microsoft.com//MicrosoftTeams/quality-of-experience-review-guide)
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
-- [Perform performance tuning for your cloud services](tune-microsoft-365-performance.md)
+- [Perform performance tuning for your cloud services](tune-office-365-performance.md)
 
 ## How Microsoft does cloud services for Microsoft 365
 
