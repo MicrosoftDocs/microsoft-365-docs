@@ -1,5 +1,5 @@
 ---
-title: "Information protection support for double byte character set release notes (preview)"
+title: "Microsoft 365 compliance support for double byte character set release notes (preview)"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
