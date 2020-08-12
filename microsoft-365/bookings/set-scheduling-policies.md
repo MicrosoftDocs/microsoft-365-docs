@@ -35,8 +35,6 @@ This table explains the various scheduling policies available on the booking pag
 
 1. In Microsoft 365, select the app launcher, and then select Bookings.
 
-   ![Image of Bookings in App launcher](../media/bookings-applauncher.png)
-
 1. In the navigation pane, select **Booking page**.
 
 1. Select your policies under the **Scheduling policy** section.
