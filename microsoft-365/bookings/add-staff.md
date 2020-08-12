@@ -26,33 +26,37 @@ Watch this video or follow the steps below to add your staff.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
-1. In Microsoft 365, select the App launcher, and then select **Bookings**.
+1. Go to the [Manage staff page](https://outlook.office.com/bookings/staff) and select **Add staff**
 
-   ![Image of Bookings in App launcher](../media/bookings-applauncher.png)
+2. Select the **Add Staff** button.
 
-1. In the navigation pane, select **Staff**.
+3. When adding staff from within your tenant, type their name in the **Add people** field and select them when they appear in the drop-down menu. The other fields will automatically populate.
 
-   ![Image of Bookings Staff UI](../media/bookings-staff.png)
+    Once a staff member is added, you can edit the name that appears on all Bookings communications by selecting the **x** next to their name and editing the **Add people** field. This can be useful if you would like staff members to have a specific title or name displayed for customers, such as listing Adele Vance as “Dr. Vance, MD.”
 
-1. Select **Add staff**.
+4. To add staff from outside of your tenant, manually fill in their email and other information.
 
-   ![Image of Add Staff UI](../media/bookings-add-staff.png)
+    > [!NOTE]
+    > Staff from outside your tenant will not be able to share free/busy information with Bookings.
 
-1. Select a color for the staff member, then provide their initials, name, email address, and phone number.
+5. For each staff member, select a role: Administrator, Viewer, or Guest.
+    - **Administrators** can edit all settings, add and remove staff, and create, edit, or delete bookings.
+    - **Viewers** can see all the bookings on the calendar, but they can’t modify or delete them. They have read-only access to settings.
+    - **Guests** can be assigned to bookings, but they can’t open the booking mailbox.
 
-1. Set the access level for this employee:
+6. Select **Notify all staff via email when a booking assigned to them is created or changed** to enable staff emails. The following is an example email:
 
-| Role | Permissions in Bookings|
-| --- | --- |
-| Administrator<br/>(must have a Microsoft 365 account) | - Edit all settings<br/>- Add and remove staff<br/>- Create, edit, and delete bookings |
-| Viewer<br/>(must have a Microsoft 365 account) | - See your own bookings on your personal calendar<br/>- Receive a meeting invitation when assigned to a booking so you can add it to your personal calendar (valid email address required)<br/>- Receive email reminders of upcoming bookings<br/>- Receive notifications of cancellations and changes |
-| Guest<br/>(does not have a Microsoft 365 account) | - Can sign up to deliver booked services, but cannot access Bookings<br/>- Receive a meeting invitation when assigned to a booking and add it to personal calendar (valid email address required)<br/>- Receive email reminders of upcoming bookings<br/>- Receive notifications of cancellations and changes |
+    :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="A notification email from Bookings":::
 
-1. Select **Save**.
+7. Select **Events on Office 365 calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for bookings services through Bookings.
 
-1. Repeat steps 1 through 6 for each staff member.
+    For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings calendar view, as shown in the below example.
 
-> [!NOTE]
-> When you add an employee in your organization as a staff member (as a guest, admin, or viewer), your employee will get an email letting them know that their availability may be shared, and that they could be booked through a booking page.
+    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="A view of a Bookings calendar":::
 
-   ![Image of Staff details UI](../media/bookings-staff-details.png)
+> [!IMPORTANT]
+> We highly recommend leaving this setting on (it is turned on by default) to avoid double-bookings and to optimize the availability of your staff members.
+
+8. Select **Use business hours** to set all bookable times for your staff members to be only within the business hours that you set in the **Business hours** section on the Business Information page.
+
+    By deselecting this box, staff can be given custom hours that further limit when they can be booked. This is helpful for scenarios where a staff member may only be on site Tuesdays and Wednesdays, or they dedicate their mornings for one type of appointments and their afternoons for other types.

@@ -49,7 +49,11 @@ If you haven't already created your Bookings page, create a Bookings page for yo
 
 ## Add staff to your Bookings page
 
-Next, add staff from your Microsoft 365 tenant, or add staff external to your organization, to your Bookings page.
+Next, add staff from your Microsoft 365 tenant, or add staff external to your organization, to your Bookings page. 
+
+Watch this video or follow the steps below to add your staff.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
 1. Go to the [Manage staff page](https://outlook.office.com/bookings/staff) and select **Add staff**
 

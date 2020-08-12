@@ -28,13 +28,9 @@ Bookings has three primary components:
 
 - A business-facing mobile app where Bookings calendar owners and administrators can see all of their appointments, access customer lists and contact information, and make manual bookings on the go.
 
-## How Microsoft Bookings works
-
-As with all of the Microsoft 365 apps, Bookings is a tile in the app launcher. Click the tile to launch the app or select the app launcher, and then select **Bookings**.
+## Get started using Bookings
 
 The first time you open the app, you'll see the home page, which includes tabs on the left to navigate between pages and several prominent tiles that guide you through setup and introduce new features. To get started, see [Get access to Microsoft Bookings](get-access.md).
-
-![Image of Microsoft Bookings with callouts explaining the user interface](../media/bookings-overview.png)
 
 Ready to get started?
 
@@ -42,22 +38,13 @@ Watch this video or follow the steps below to set up Bookings.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q]
 
-1. [Get access to Microsoft Bookings](get-access.md)
-
-2. [Enter your business information](enter-business-information.md)
-
-3. [Add staff to Bookings](add-staff.md)
-
-4. [Define your service offerings](define-service-offerings.md)
-
-5. [Set your scheduling policies](set-scheduling-policies.md)
-
-6. [Set employee working hours](employee-hours.md)
-
-7. [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md)
-
-8. [Customize and publish your booking page](customize-booking-page)
-
-9. [Create a manual booking](create-a-manual-booking.md)
-
-10. [Connect to Facebook](connect-to-facebook.md)
+- [Get access to Microsoft Bookings](get-access.md)
+- [Enter your business information](enter-business-information.md)
+- [Add staff to Bookings](add-staff.md)
+- [Define your service offerings](define-service-offerings.md)
+- [Set your scheduling policies](set-scheduling-policies.md)
+- [Set employee working hours](employee-hours.md)
+- [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md)
+- [Customize and publish your booking page](customize-booking-page)
+- [Create a manual booking](create-a-manual-booking.md)
+- [Connect to Facebook](connect-to-facebook.md)

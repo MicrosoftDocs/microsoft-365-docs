@@ -19,9 +19,11 @@ This topic describes how get access to Bookings for the first time. It also tell
 
 The Bookings app is available to use by default for Office 365 Education A3, Office 365 A5, and Microsoft 365 Business Standard subscriptions. If your IT administrator has granted you access to Bookings, you can access the app via Office online.
 
-The first time you use [Bookings](https://outlook.office.com/bookings/onboarding) you'll have to create a calendar and set up your business. (add Get it now page).
+The first time you use [Bookings](https://outlook.office.com/bookings/onboarding) you'll have to create a calendar and set up your business.
 
 1. Select **Get it now** and choose, **Add a booking calendar**. If this isn't your first time on this page, you can select another booking calendar or do a search for another booking calendar.
+
+:::image type="content" source="media/bookings - get it now.png" alt-text="Screenshot: Get it now bookings page. Select Get it now to start using Bookings":::
 
 2. Enter your business name and business type and select **Continue**.
 
