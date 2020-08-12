@@ -888,6 +888,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/find-copy-and-delete-pst-files-in-your-organization.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/working-with-compliance-score.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/compliance-score",
       "redirect_document_id": false
@@ -905,6 +910,21 @@
     {
       "source_path": "microsoft-365/security/office-365-security/mfi-sender-domain-insight.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-non-accepted-domain-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/sign-up-for-office-365-trial.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/commerce/try-or-buy-microsoft-365",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/commerce/buy-another-subscription.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/commerce/try-or-buy-microsoft-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/buy-a-subscription-from-your-free-trial.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/commerce/try-or-buy-microsoft-365",
       "redirect_document_id": false
     }
   ]
