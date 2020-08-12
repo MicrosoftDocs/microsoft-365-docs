@@ -153,8 +153,8 @@ Each Search Center has several verticals and you have to set up each vertical in
 
 3.  Select the vertical to set up, click **Settings** gear icon in the upper, right corner, and then click **Edit Page**. The search results page opens in Edit mode.
 
-     ![](media/configure-search-for-multi-geo-image2.png)
-1.  In the Search Results Web Part, move the pointer to the upper, right corner of the web part, click the arrow, and then click **Edit Web Part** on the menu. The Search Results Web Part tool pane opens under the ribbon in the top right of the page. ![](media/configure-search-for-multi-geo-image3.png)
+     ![](../media/configure-search-for-multi-geo-image2.png)
+1.  In the Search Results Web Part, move the pointer to the upper, right corner of the web part, click the arrow, and then click **Edit Web Part** on the menu. The Search Results Web Part tool pane opens under the ribbon in the top right of the page. ![](../media/configure-search-for-multi-geo-image3.png)
 
 1.  In the Web Part tool pane, in the **Settings** section, under **Results control settings**, select **Show Multi-Geo results** to get the Search Results Web Part to show results from all geo locations.
 

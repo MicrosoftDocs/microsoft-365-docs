@@ -81,7 +81,7 @@ When someone in your organization attempts to watch a new video, they follow the
 
 5. With the decryption key in hand, the video player is able to stream the video.
 
-![O365 Video Playback](media/9d3c6e76-151d-48a3-a30e-ba8dd07db0b7.png)
+![O365 Video Playback](../media/9d3c6e76-151d-48a3-a30e-ba8dd07db0b7.png)
   
 ([Back to top](office-365-video-networking-faq.md))
   

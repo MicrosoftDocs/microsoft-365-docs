@@ -37,7 +37,7 @@ Before you deploy for the first time or migrate to Office 365, you can use the i
 
 |||
 |:-----|:-----|
-|![See the Microsoft Cloud Networking for Enterprise Architects poster](media/3094be9f-2407-4fa5-896d-aa66ef7b9bb9.png)|For the steps to optimize your network for Office 365 and other Microsoft cloud platforms and services, see the [Microsoft Cloud Networking for Enterprise Architects](https://aka.ms/cloudarchnetworking) poster. |
+|![See the Microsoft Cloud Networking for Enterprise Architects poster](../media/3094be9f-2407-4fa5-896d-aa66ef7b9bb9.png)|For the steps to optimize your network for Office 365 and other Microsoft cloud platforms and services, see the [Microsoft Cloud Networking for Enterprise Architects](https://aka.ms/cloudarchnetworking) poster. |
    
 ## Estimate network bandwidth requirements
 <a name="EstimateBandwidthRequirements"> </a>

@@ -50,7 +50,7 @@ See [Configure Microsoft 365 Multi-Geo](multi-geo-tenant-configuration.md) for d
 
 You can configure any of the following locations to be satellite locations where you can host OneDrive and SharePoint sites, and Exchange mailboxes. As you plan for multi-geo, make a list of the locations that you want to add to your Microsoft 365 tenant. We recommend starting with one or two satellite locations and then gradually expanding to more geo locations, if needed.
 
-[!INCLUDE [Microsoft 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
+[!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/office-365-multi-geo-locations.md)]
 
 When you configure multi-geo, consider taking the opportunity to consolidate your on-premises infrastructure while migrating to Microsoft 365. For example, if you have on-premises farms in Singapore and Malaysia, then you can consolidate them to the APC satellite location, provided data residency requirements allow you to do so.
 

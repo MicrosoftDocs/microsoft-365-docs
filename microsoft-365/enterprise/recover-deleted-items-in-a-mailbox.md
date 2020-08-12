@@ -44,19 +44,19 @@ The first step is to assign yourself the necessary permissions in Exchange Onlin
   
 1. [Where to sign in to Microsoft 365 for business](https://support.microsoft.com/office/where-to-sign-into-microsoft-365-for-business-e9eb7d51-5430-4929-91ab-6157c5a050b4) with your work or school account. 
     
-2. Select the app launcher icon ![The app launcher icon in Microsoft 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) in the upper-left and click **Admin**.
+2. Select the app launcher icon ![The app launcher icon in Microsoft 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) in the upper-left and click **Admin**.
     
 3. In the left navigation in the Microsoft 365 admin center, expand **Admin centers**, and then click **Exchange**.
     
-    ![Admin center list](media/7d308eb7-ba63-4156-a845-3770facc5de4.PNG)
+    ![Admin center list](../media/7d308eb7-ba63-4156-a845-3770facc5de4.PNG)
   
 4. In the Exchange admin center, click **Permissions**, and then click **Admin roles**.
     
-5. In the list view, select **Discovery Management**, and then click **Edit**![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+5. In the list view, select **Discovery Management**, and then click **Edit**![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
     
-    ![Add yourself to the Discovery Management role group in the EAC](media/e5c98e93-d6a0-40c5-a143-bac956eedaa7.png)
+    ![Add yourself to the Discovery Management role group in the EAC](../media/e5c98e93-d6a0-40c5-a143-bac956eedaa7.png)
   
-6. In **Role Group**, under **Members**, click **Add**![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
+6. In **Role Group**, under **Members**, click **Add**![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
     
 7. In **Select Members**, select yourself from the list of names, click **Add**, and then click **OK**.
     
@@ -81,19 +81,19 @@ When you run an In-Place eDiscovery search, the Recoverable Items folder in the 
   
 1. [Where to sign in to Microsoft 365 for business](https://support.microsoft.com/office/where-to-sign-into-microsoft-365-for-business-e9eb7d51-5430-4929-91ab-6157c5a050b4) with your work or school account. 
     
-2. Select the app launcher icon ![The app launcher icon in Microsoft 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) in the upper-left and click **Admin**.
+2. Select the app launcher icon ![The app launcher icon in Microsoft 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) in the upper-left and click **Admin**.
     
 3. In the left navigation in the Microsoft 365 admin center, expand **Admin**, and then click **Exchange**.
     
-4. In the Exchange admin center, click **Compliance management**, click **In-Place eDiscovery &amp; Hold**, and then click **New**![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
+4. In the Exchange admin center, click **Compliance management**, click **In-Place eDiscovery &amp; Hold**, and then click **New**![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
     
-    ![In the EAC, on the Compliance management page, click In-Place eDiscovery and Hold](media/9d9ff0f5-b9be-45b8-8b5e-6037a856b0a8.png)
+    ![In the EAC, on the Compliance management page, click In-Place eDiscovery and Hold](../media/9d9ff0f5-b9be-45b8-8b5e-6037a856b0a8.png)
   
 5. On the **Name and description** page, type a name for the search (such as the name of the user you're recovering email for), an optional description, and then click **Next**.
     
-6. On the **Mailboxes** page, click **Specify mailboxes to search**, and then click **Add**![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
+6. On the **Mailboxes** page, click **Specify mailboxes to search**, and then click **Add**![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif).
     
-    ![Click Specify mailboxes to search to search a specifc mailbox](media/83879a40-5e5c-49a8-be3b-c0023d197588.png)
+    ![Click Specify mailboxes to search to search a specifc mailbox](../media/83879a40-5e5c-49a8-be3b-c0023d197588.png)
   
 7. Find and select the name of the user that you're recovering the deleted email for, click **Add**, and then click **OK**.
     
@@ -107,15 +107,15 @@ When you run an In-Place eDiscovery search, the Recoverable Items folder in the 
     
   - **Filter based on criteria** Select this option to specify the search criteria, including keywords, start and end dates, sender and recipient addresses, and message types. 
     
-    ![Build a seach based on criteria such as keywords, date range, recipients, and message types](media/ee47b833-9122-46a0-85e6-fcbe25be0dd5.png)
+    ![Build a seach based on criteria such as keywords, date range, recipients, and message types](../media/ee47b833-9122-46a0-85e6-fcbe25be0dd5.png)
   
 |**Field**|**Use this to...**|
 |:-----|:-----|
-|![Number one in a pink circle](media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)           <br/> |Specify keywords, date range, recipients, and message types.  <br/> |
-|![Number two in a pink circle.](media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)           <br/> |Search for messages with keywords or phrases, and use logical operators such as **AND** or **OR**.  <br/> |
-|![Number three in a pink circle.](media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)           <br/> |Search for messages sent or received within a date range.  <br/> |
-|![Number 4 in a pink circle.](media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)           <br/> |Search for messages received from or sent to specific people.  <br/> |
-|![Number five in a pink circle.](media/878cc815-0165-49ba-a1ee-9236e5980403.png)           <br/> |Search for all message types or select specific ones.  <br/> |
+|![Number one in a pink circle](../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)           <br/> |Specify keywords, date range, recipients, and message types.  <br/> |
+|![Number two in a pink circle.](../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)           <br/> |Search for messages with keywords or phrases, and use logical operators such as **AND** or **OR**.  <br/> |
+|![Number three in a pink circle.](../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)           <br/> |Search for messages sent or received within a date range.  <br/> |
+|![Number 4 in a pink circle.](../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)           <br/> |Search for messages received from or sent to specific people.  <br/> |
+|![Number five in a pink circle.](../media/878cc815-0165-49ba-a1ee-9236e5980403.png)           <br/> |Search for all message types or select specific ones.  <br/> |
    
    > [!TIP]
    >  Here are a few tips about how to build a search query to find missing items. Try to get as much information from the user to help you create a search query so you can find what you're looking for. If you are not sure how to find a missing message, consider using the **Include all content** option. The search results will include all items in the user's Recoverable Items folder, including the hidden folder (called the Purges folder) that contain items that have been purged by the user. Then you can go to Step 3, copy the results to a discovery mailbox, and look at the message in the hidden folder. If you know approximately when the missing message was originally sent or received by the user, use the **Specify start date** and **Specify end date** options to provide a date range. This will return all messages sent or received by the user within that date range. Specifying a date range is a really good way to narrow the search results. If you know who sent the missing email, use the **From** box to specify this sender. If you want to narrow the search results to different types of mailbox items, click **Select message types**, click **Select the message types to search**, and then choose a specific message type to search for. For example, you can search only for calendar items or contacts. Here's a screenshot of the different message types you can search for; the default is to search for all message types. 
@@ -126,13 +126,13 @@ When you run an In-Place eDiscovery search, the Recoverable Items folder in the 
     
     After you start the search, Exchange will display an estimate of the total size and number of items that will be returned by the search based on the criteria you specified.
     
-11. Select the search you just created and click **Refresh**![refresh](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) to update the information displayed in the details pane. The status of **Estimate Succeeded** indicates that the search has finished. Exchange also displays an estimate of the total number of items (and their size) found by the search based on the search criteria you specified in step 9. 
+11. Select the search you just created and click **Refresh**![refresh](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) to update the information displayed in the details pane. The status of **Estimate Succeeded** indicates that the search has finished. Exchange also displays an estimate of the total number of items (and their size) found by the search based on the search criteria you specified in step 9. 
     
 12. In the details pane, click **Preview search results** to view the items that were found. This might help you identify the item(s) that you're looking for. If you find the item(s) you're trying to recover, go to step 4 to export the search results to a PST file. 
     
-    ![Click Preview search results to view the item you're trying to recover](media/a2cea921-dafa-45d6-97d4-ae45a226b8d3.png)
+    ![Click Preview search results to view the item you're trying to recover](../media/a2cea921-dafa-45d6-97d4-ae45a226b8d3.png)
   
-13. If you don't find what you're looking for, you can revise your search criteria by selecting the search, clicking **Edit**![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif), and then clicking **Search query**. Change the search criteria and then rerun the search.
+13. If you don't find what you're looking for, you can revise your search criteria by selecting the search, clicking **Edit**![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif), and then clicking **Search query**. Change the search criteria and then rerun the search.
     
 [Return to top](recover-deleted-items-in-a-mailbox.md)
   
@@ -145,34 +145,34 @@ If you can't find an items by previewing the search results or if you want to se
     
 2. In the list of searches, select the search that you created in Step 2.
     
-3. Click **Search**![search](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png), and then click **Copy search results** from the drop-down list. 
+3. Click **Search**![search](../media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png), and then click **Copy search results** from the drop-down list. 
     
-    ![Click Search and then click Copy search results](media/7888df82-94b4-4e44-8a53-f66854dc7c86.png)
+    ![Click Search and then click Copy search results](../media/7888df82-94b4-4e44-8a53-f66854dc7c86.png)
   
 4. On the **Copy Search Results** page, click **Browse**.
     
-    ![Leave checkboxes unselected when recovering deleted items](media/37f27999-a5b2-4fed-87e2-bad6dc23cdae.png)
+    ![Leave checkboxes unselected when recovering deleted items](../media/37f27999-a5b2-4fed-87e2-bad6dc23cdae.png)
   
 5. Under **Display Name**, click **Discovery Search Mailbox**, and then click **OK**.
     
-    ![Copy the search results to the default Discovery Search Mailbox](media/36e8ef47-0035-4982-9ed6-426719c5f9ec.png)
+    ![Copy the search results to the default Discovery Search Mailbox](../media/36e8ef47-0035-4982-9ed6-426719c5f9ec.png)
   
     > [!NOTE]
     > The Discovery Search Mailbox is a default discovery mailbox that is automatically created in your Microsoft 365 organization. 
   
 6. Back on the **Copy Search Results** page, click **Copy** to start the process to copy the search results to the Discovery Search Mailbox. 
     
-    ![Click Copy to copy the search results to the Discovery Search Mailbox](media/71307a9d-f7a1-4e01-ae37-1d49040cc3fd.png)
+    ![Click Copy to copy the search results to the Discovery Search Mailbox](../media/71307a9d-f7a1-4e01-ae37-1d49040cc3fd.png)
   
-7. Click **Refresh**![refresh](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) to update the information about the copying status that is displayed in the details pane. 
+7. Click **Refresh**![refresh](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) to update the information about the copying status that is displayed in the details pane. 
     
 8. When the copying is complete, click **Open** to open the Discovery Search Mailbox to view the search results. 
     
-    ![Click Open to go to the Discovery Search Mailbox to view the search results](media/6cc81e0f-ceed-4464-9040-79b6f920de35.png)
+    ![Click Open to go to the Discovery Search Mailbox to view the search results](../media/6cc81e0f-ceed-4464-9040-79b6f920de35.png)
   
     The search results copied to the Discovery Search Mailbox are placed in a folder that has the same name as the In-Place eDiscovery search. You can click a folder to display the items in that folder.
     
-    ![Search results in the Discovery Search Mailbox; items in the Purges folder can only be recovered by an admin](media/2ef8e5fb-3e63-4f62-938e-307efe9f6998.gif)
+    ![Search results in the Discovery Search Mailbox; items in the Purges folder can only be recovered by an admin](../media/2ef8e5fb-3e63-4f62-938e-307efe9f6998.gif)
   
     When you run a search, the user's Recoverable Items folder is also searched. That means if items in the Recoverable Items folder meet the search criteria, they are included in the search results. Items in the Deletions folder are items that the user permanently deleted (by deleting an item from the Deleted Items folder or by selecting it and pressing **Shift+Delete**. A user can use the Recover Deleted Items tool in Outlook or Outlook on the web to recover items in the Deletions folder. Items in the Purges folder are items that the user purged by using the Recover Deleted Items tool or items they were automatically purged by a policy applied to the mailbox. In either case, only an admin can recover items in the Purges folder. 
     
@@ -192,13 +192,13 @@ After you find the item you're trying to recover for a user, the next step is to
     
 3. Click **Export to a PST file**.
     
-    ![Click Export to a PST file](media/4e59ae17-4541-43f4-a6d1-1f8b9ba9404b.png)
+    ![Click Export to a PST file](../media/4e59ae17-4541-43f4-a6d1-1f8b9ba9404b.png)
   
 4. If you're prompted to install the eDiscovery Export Tool, click **Run**.
     
 5. In the eDiscovery PST Export Tool, click **Browse** to specify the location where you want to download the PST file. 
     
-    ![The eDiscovery PST Export Tool](media/17274d27-992e-4034-8133-8f793f554e6c.png)
+    ![The eDiscovery PST Export Tool](../media/17274d27-992e-4034-8133-8f793f554e6c.png)
   
     You can ignore the options to enable deduplication and include unsearchable items.
     
@@ -244,18 +244,18 @@ You have to use the Outlook desktop app to restore a deleted item by using a PST
     
     The PST file appears in the left-nav bar in Outlook.
     
-    ![The PST file appears in the left-nav bar in Outlook](media/c9389392-d08a-4aa7-848c-4986d448b0f2.png)
+    ![The PST file appears in the left-nav bar in Outlook](../media/c9389392-d08a-4aa7-848c-4986d448b0f2.png)
   
 5. Click the arrows to expand the PST file and the folders under it to locate the item you want to recover.
     
-    ![Look in the Purges folder for the item you want to recover](media/d4e372d9-ac23-4e95-8639-d8da690fefa7.png)
+    ![Look in the Purges folder for the item you want to recover](../media/d4e372d9-ac23-4e95-8639-d8da690fefa7.png)
   
     > [!TIP]
     > Look in the Purges folder for the item you want to recover. This is a hidden folder that purged items are moved to. It's likely the item that your administrator recovered is in this folder. 
   
 6. Right-click the item you want to recover and then click **Move** \> **Other Folder**.
     
-    ![Click Move and then select Other Folder](media/090063df-2aa0-444a-8e47-abd6fe6cf7a8.png)
+    ![Click Move and then select Other Folder](../media/090063df-2aa0-444a-8e47-abd6fe6cf7a8.png)
   
 7. To move the item to your inbox, click **Inbox**, and then click **OK**.
     
@@ -267,7 +267,7 @@ You have to use the Outlook desktop app to restore a deleted item by using a PST
     
   - To recover a task, right-click it, and then click **Move** \> **Other Folder** \> **Tasks**.
     
-![Select a folder to move other types of items](media/f8290131-43f2-46f1-bc07-228c2d83b96c.png)
+![Select a folder to move other types of items](../media/f8290131-43f2-46f1-bc07-228c2d83b96c.png)
   
    > [!NOTE]
    > Calendar items, contacts, and tasks are located directly in the Purges folder, and not in a Calendar, Contacts, or Tasks subfolder. However, you can sort by **Type** to group similar types of items. 

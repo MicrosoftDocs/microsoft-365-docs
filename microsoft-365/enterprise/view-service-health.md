@@ -30,7 +30,7 @@ description: "View the health status of Microsoft 365 services before you call s
 
 # How to check Microsoft 365 service health
 
-[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)
+[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)
 
 You can view the health of your Microsoft services, including Office on the web, Yammer, Microsoft Dynamics CRM, and mobile device management cloud services, on the **Service health** page in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
 
@@ -49,7 +49,7 @@ If you are unable to sign in to the service portal, you can use the [service sta
   
 4. On the **Service health** page, the health state of each cloud service is shown in a table format.
 
-   ![View of current issues in service health](media/service-health-all-services.png)
+   ![View of current issues in service health](../media/service-health-all-services.png)
 
 The **All services** tab (the default view) shows all services and their current health state. An icon and the **Status** column indicate the state of each service. 
 
@@ -75,7 +75,7 @@ To sign up for email notifications of new incidents that affect your tenant and 
 
 On the **All services** view, selecting the service status will open a summary view of advisories or incidents.
   
-![A screenshot showing the service advisory](media/service-health-advisory.png)
+![A screenshot showing the service advisory](../media/service-health-advisory.png)
 
 The advisory or incident summary provides the following information:
 
@@ -88,7 +88,7 @@ The advisory or incident summary provides the following information:
 
 Select the issue title to see the issue detail page, which shows more information about the issue, including the [history](#history) of all messages posted while we work on a solution.
 
-![A screenshot showing issue details](media/service-health-advisory-detail.png)
+![A screenshot showing issue details](../media/service-health-advisory-detail.png)
 
 ### Translate service health details
 
@@ -111,8 +111,8 @@ Most of the time, services will appear as healthy with no further information. W
 
 |||
 |:-----|:-----|
-|![Information icon for advisory](media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|If a service has an advisory shown, we are aware of a problem that is affecting some users, but the service is still available. In an advisory, there is often a workaround to the problem and the problem may be intermittent or is limited in scope and user impact.  <br/> |
-|![Exclamation point icon for incident](media/a636db57-6083-44dc-bbd5-556850804f17.png)|If a service has an active incident shown, it's a critical issue and the service or a major function of the service is unavailable. For example, users may be unable to send and receive email or unable to sign-in. Incidents will have noticeable impact to users. When there is an incident in progress, we will provide updates regarding the investigation, mitigation efforts, and confirmation of resolution in the Service health dashboard.  <br/> |
+|![Information icon for advisory](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|If a service has an advisory shown, we are aware of a problem that is affecting some users, but the service is still available. In an advisory, there is often a workaround to the problem and the problem may be intermittent or is limited in scope and user impact.  <br/> |
+|![Exclamation point icon for incident](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|If a service has an active incident shown, it's a critical issue and the service or a major function of the service is unavailable. For example, users may be unable to send and receive email or unable to sign-in. Incidents will have noticeable impact to users. When there is an incident in progress, we will provide updates regarding the investigation, mitigation efforts, and confirmation of resolution in the Service health dashboard.  <br/> |
 
 ### Status definitions
 
@@ -132,11 +132,11 @@ Most of the time, services will appear as healthy with no further information. W
 
 Service health lets you look at current health status and view the history of any service advisories and incidents that have affected your tenant in the past 30 days. To view the past health of all services, select **View history** on the issue detail page.
   
-![Show link to health history](media/service-health-view-history.png)
+![Show link to health history](../media/service-health-view-history.png)
   
 A list of all service health messages posted in the selected timeframe is displayed, as shown below:
   
-![View service health history](media/service-health-history.png)
+![View service health history](../media/service-health-history.png)
   
 Expand any row to view more details about the issue.
   

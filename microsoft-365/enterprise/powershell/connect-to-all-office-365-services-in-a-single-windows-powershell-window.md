@@ -24,7 +24,7 @@ description: "Summary: Connect Windows PowerShell to all Microsoft 365 services 
 
 When you use PowerShell to manage Microsoft 365, it is possible to have up to five different Windows PowerShell sessions open at the same time corresponding to Microsoft 365 admin center, SharePoint Online, Exchange Online, Skype for Business Online, Microsoft Teams, and the Security &amp; Compliance Center. With five different connection methods in separate Windows PowerShell sessions, your desktop could look like this:
   
-![Five Windows PowerShell consoles running at once](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
+![Five Windows PowerShell consoles running at once](../media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
 This is not optimal for managing Microsoft 365 because you can't exchange data among those five windows for cross-service management. This topic describes how to use a single instance of Windows PowerShell from which you can manage Microsoft 365 accounts, Skype for Business Online, Exchange Online, SharePoint Online, Microsoft Teams, and the Security &amp; Compliance Center.
 

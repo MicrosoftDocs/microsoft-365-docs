@@ -32,7 +32,7 @@ For example, a directory synchronization server running on an Azure virtual mach
 
 Your virtual machines in Azure don't have to be isolated from your on-premises environment. To connect Azure virtual machines to your on-premises network resources, you must configure a cross-premises Azure virtual network. The following diagram shows the required components to deploy a cross-premises Azure virtual network with a virtual machine in Azure.
   
-![On-premises network connected to Microsoft Azure by a site-to-site VPN connection](media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+![On-premises network connected to Microsoft Azure by a site-to-site VPN connection](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
  
 In the diagram, there are two networks connected by a site-to-site VPN connection: the on-premises network and the Azure virtual network. The site-to-site VPN connection is:
 
@@ -200,7 +200,7 @@ You must configure your on-premises network with a route that points to and ulti
   
 Here is your resulting configuration.
   
-![The on-premises network must have a route for the virtual network's address space that points toward the VPN device.](media/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
+![The on-premises network must have a route for the virtual network's address space that points toward the VPN device.](../media/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
   
 ### Phase 2: Create the cross-premises virtual network in Azure
 <a name="Phase2"></a>
@@ -269,7 +269,7 @@ $vnet | Set-AzVirtualNetwork
 
 Here is your resulting configuration.
   
-![The virtual network is not yet connected to the on-premises network.](media/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
+![The virtual network is not yet connected to the on-premises network.](../media/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
   
 Next, use these commands to create the gateways for the site-to-site VPN connection.
   
@@ -299,7 +299,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 
 Here is your resulting configuration.
   
-![The virtual network now has a gateway.](media/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
+![The virtual network now has a gateway.](../media/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
 Next, configure your on-premises VPN device to connect to the Azure VPN gateway. For more information, see [About VPN Devices for site-to-site Azure Virtual Network connections](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
@@ -311,7 +311,7 @@ To configure your VPN device, you will need the following:
     
 Here is your resulting configuration.
   
-![The virtual network is now connected to the on-premises network.](media/6379c423-4f22-4453-941b-7ff32484a0a5.png)
+![The virtual network is now connected to the on-premises network.](../media/6379c423-4f22-4453-941b-7ff32484a0a5.png)
   
 ### Phase 3 (Optional): Add virtual machines
 
@@ -327,7 +327,7 @@ Verify that your virtual machine is using DNS correctly by checking your interna
   
 Here is your resulting configuration.
   
-![The virtual network now hosts virtual machines that are accessible from the on-premises network.](media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+![The virtual network now hosts virtual machines that are accessible from the on-premises network.](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
   
 ## Next step
   

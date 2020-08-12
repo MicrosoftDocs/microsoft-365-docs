@@ -49,11 +49,11 @@ See [where to manage Microsoft 365 accounts](manage-office-365-accounts.md) for 
 ## Integrate Microsoft 365 with directory services
 If you have existing user accounts in an on-premises directory, you don't want to re-create all of those accounts in Microsoft 365 and risk introducing differences or errors between the environments. Directory synchronization helps you mirror those accounts between your online and on-premises environments. With directory synchronization, your users don't have to remember new information for each environment, and you don't have to create or update accounts twice. You will need to [prepare your on-premises directory](prepare-for-directory-synchronization.md) for directory synchronization.
   
-![Use directory synchronization to keep on-premises and online user account information synchronized](media/a64af0d0-9be6-46b1-8727-277e683abf5e.png)
+![Use directory synchronization to keep on-premises and online user account information synchronized](../media/a64af0d0-9be6-46b1-8727-277e683abf5e.png)
   
 If you want users to be able to log on to Microsoft 365 with their on-premises credentials, you can also configure SSO. With SSO, Microsoft 365 is configured to trust the on-premises environment for user authentication.
   
-![With single sign-on, the same account is available in both the on-premises and online environments](media/d76235f2-8a53-405e-b8ef-dfa4cfc208b8.png)
+![With single sign-on, the same account is available in both the on-premises and online environments](../media/d76235f2-8a53-405e-b8ef-dfa4cfc208b8.png)
   
 Different user account management techniques provide different experiences for your users, as shown in the following table.
  

@@ -93,7 +93,7 @@ After you install Netmon 3.4, open the tool and take these steps:
 There are three panes on the **Start** page: **Recent Captures**, **Select Networks**, and the **Getting Started with Microsoft Network Monitor 3.4. Notice**. The Select Networks panel will also give you a list of the default networks from which you can capture. Be sure that network cards are selected here.
 
 2. Click **New Capture** at the top of the **Start** page. This adds a new tab beside the **Start** page tab called **Capture 1**.
-![Netmon's user interface with the New Capture, Start, and Stop buttons highlighted.](media/d4527d84-62ec-4301-82d5-e0166ff71f20.PNG)
+![Netmon's user interface with the New Capture, Start, and Stop buttons highlighted.](../media/d4527d84-62ec-4301-82d5-e0166ff71f20.PNG)
 
 3. To take a simple capture, click **Start** on the toolbar.
 
@@ -114,7 +114,7 @@ HTTPWatch is a browser plug-in, so exposing the tool in the browser is slightly 
 
 In the past, HTTPWatch has been associated with both the Commands and the Explorer bars, so once you install, if you don't immediately see the icon (even after reboot) check **Tools**, and your toolbars for the icon. Remember that toolbars can be customized and options can be added to them.
 
-![Internet Explorer's Command toolbar with the HTTPWatch icon displayed.](media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
+![Internet Explorer's Command toolbar with the HTTPWatch icon displayed.](../media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
   
 1. Launch HTTPWatch in an Internet Explorer browser window. It will appear docked to the browser at the bottom of that window. Click **Record**.
 
@@ -122,7 +122,7 @@ In the past, HTTPWatch has been associated with both the Commands and the Explor
 
 3. **Save** the HTTPWatch or **Send by Email**. Remember to name the file so that it includes date and time information and an indication of whether your Watch contains a demonstration of good or bad performance.
 
-![HTTPWatch showing the Network tab for a page load of the Office 365 homepage.](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)
+![HTTPWatch showing the Network tab for a page load of the Office 365 homepage.](../media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)
 
 This screen shot is from the Professional version of HTTPWatch. You can open traces taken in the Basic Version on a computer with a Professional version and read it there. Extra information may be available from the trace through that method.
 
@@ -140,7 +140,7 @@ Steps Recorder, or PSR.exe, allows you to record issues as they are occurring. I
 
 4. Click **Save**.
 
-![A screen shot of the Steps Recorder or PSR.exe.](media/8542b0aa-a3ff-4718-8dc4-43f5521c6c34.PNG)
+![A screen shot of the Steps Recorder or PSR.exe.](../media/8542b0aa-a3ff-4718-8dc4-43f5521c6c34.PNG)
   
 The date and time is recorded for you. This links your PSR to your Netmon trace and HTTPWatch in time, and helps with precision troubleshooting. The date and time in the PSR record can show that a minute passed between the login and browsing of the URL and the partial render of the admin site, for example.
   
@@ -152,7 +152,7 @@ If you want to pick up skills reading network traces for your Office 365 sites, 
   
 Netmon uses Microsoft Intellisense in the Display filter field. Intellisense, or intelligent code completion, is that trick where you type in a period and all available options are displayed in a drop-down selection box. If, for example, you are worried about TCP window scaling, you can find your way to a filter (such as  `.protocol.tcp.window < 100`) by this means.
   
-![Screenshot of Netmon showing that the Display Filter field uses intellisense.](media/75a56c11-9a60-47ee-a100-aabdfb1ba10f.PNG)
+![Screenshot of Netmon showing that the Display Filter field uses intellisense.](../media/75a56c11-9a60-47ee-a100-aabdfb1ba10f.PNG)
   
 Netmon traces can have a lot of traffic in them. If you aren't experienced with reading them, it's likely you will be overwhelmed opening the trace the first time. The first thing to do is separate the signal from the background noise in the trace. You tested against Office 365, and that's the traffic you want to see. If you are used to navigating through traces, you may not need this list.
   
@@ -171,9 +171,9 @@ If you're only using Netmon tracing at the time of the problem, that's okay too.
 > [!TIP]
 > Netmon has a lot of helpful built-in filters. Try the **Load Filter** button at the top of the _Display_ filter pane.
   
-![Find your IP by using PSPing at the command-line on the client computer.](media/4c43ac67-e28e-4536-842d-7add7aa28847.PNG)
+![Find your IP by using PSPing at the command-line on the client computer.](../media/4c43ac67-e28e-4536-842d-7add7aa28847.PNG)
   
-![Netmon trace from the client showing the same PSPing command through the filter TCP.Flags.Syn == 1.](media/0ae7ef7d-e003-4d01-a006-dc49bd1fcef2.PNG)
+![Netmon trace from the client showing the same PSPing command through the filter TCP.Flags.Syn == 1.](../media/0ae7ef7d-e003-4d01-a006-dc49bd1fcef2.PNG)
   
 Get familiar with your traffic, and learn to locate the information you need. For example, learn to determine which packet in the trace has the first reference to the Office 365 service you're using (like "Outlook").
 
@@ -213,13 +213,13 @@ Found in the SYN - SYN/ACK. Legacy or aging hardware may not take advantage of T
 
 Look for the SYN - SYN/ACK traffic in your network trace.  In Netmon, use a filter like  `tcp.flags.syn == 1`. This filter is the same in Wireshark.  
 
-![Filter in Netmon or Wireshark for Syn packets for both tools: TCP.Flags.Syn == 1.](media/4b9a12a1-c915-43c8-ac2f-a679d0435a29.PNG)
+![Filter in Netmon or Wireshark for Syn packets for both tools: TCP.Flags.Syn == 1.](../media/4b9a12a1-c915-43c8-ac2f-a679d0435a29.PNG)
 
 Notice that for every SYN there is a source port (SrcPort) number that is matched in the destination port (DstPort) of the related Acknowledgment (SYN/ACK).
 
 To see the Windows Scaling value that is used by your network connection, expand first the SYN, and then the related SYN/ACK.  
 
-![Graphic that shows how to match SrcPort to DstPort in a trace, to get the time delta.](media/6a4ca573-0253-4fbd-93e8-92821ee1c351.png)  
+![Graphic that shows how to match SrcPort to DstPort in a trace, to get the time delta.](../media/6a4ca573-0253-4fbd-93e8-92821ee1c351.png)  
 
 ### TCP Idle Time Settings
 
@@ -267,7 +267,7 @@ A ping request sent to outlook.office365.com will tell you the name of the datac
 > [!NOTE]
 > PsPing doesn't send ICMP packets. It pings with TCP packets over a specific port, so you can use any one you know to be open. In Office 365, which uses SSL/TLS, try attaching port :443 to your PsPing.
 
-![Screen shot that shows a ping resolving outlook.office365.com, and a PSPing with the 443 doing the same, but also reporting a 6.5ms average RTT.](media/c64339f2-2c96-45b8-b168-c2a060430266.PNG)
+![Screen shot that shows a ping resolving outlook.office365.com, and a PSPing with the 443 doing the same, but also reporting a 6.5ms average RTT.](../media/c64339f2-2c96-45b8-b168-c2a060430266.PNG)
 
 If you loaded the slow performing Office 365 page while doing a network trace, you should filter a Netmon or Wireshark trace for `DNS`. This is one of the IPs we're looking for.  
 
@@ -291,7 +291,7 @@ However, if you can find a client computer in the impacted location that is dire
 
 Latency, as seen in a Netmon trace, those extra milliseconds can add up, if there are enough of them in any given session.  
 
-![General latency in Netmon, with the Netmon default Time Delta column added to the Frame Summary.](media/7ad17380-8527-4bc2-9b9b-6310cf19ba6b.PNG)
+![General latency in Netmon, with the Netmon default Time Delta column added to the Frame Summary.](../media/7ad17380-8527-4bc2-9b9b-6310cf19ba6b.PNG)
 
 > [!NOTE]
 > Your IP address may be different than the IPs shown here, for example, your ping may return something more like 157.56.0.0/16 or a similar range. For a list of ranges used by Office 365, check out [Office 365 URLs and IP address ranges](https://technet.microsoft.com/library/hh373144.aspx).
@@ -329,9 +329,9 @@ Even if you don't add the column, the Netmon filter will work. But your troubles
 
 When looking for instances of Proxy Authentication, be sure to study all frames where there is an NTLM Challenge, or an Authenticate Message is present. If necessary, right-click the specific piece of traffic and Find Conversations \> TCP. Be aware of the Time Delta values in these Conversations.
 
-![Netmon trace showing proxy authentication, filtered by conversation.](media/b640f176-0a52-4bbb-972e-60fb3d6aece2.PNG)
+![Netmon trace showing proxy authentication, filtered by conversation.](../media/b640f176-0a52-4bbb-972e-60fb3d6aece2.PNG)
 
-A four second delay in proxy authentication as seen in Wireshark. The **Time delta from previous displayed frame** column was made via right-clicking the field of the same name in the frame details and selecting Add as Column.  <br/> ![In Wireshark, the 'Time delta from previous displayed frame' column can be made via right-clicking the field of the same name in the frame details and selecting Add as Column.](media/f5b7bde4-8067-4ee0-bc7f-e9062ce1ba6f.PNG)
+A four second delay in proxy authentication as seen in Wireshark. The **Time delta from previous displayed frame** column was made via right-clicking the field of the same name in the frame details and selecting Add as Column.  <br/> ![In Wireshark, the 'Time delta from previous displayed frame' column can be made via right-clicking the field of the same name in the frame details and selecting Add as Column.](../media/f5b7bde4-8067-4ee0-bc7f-e9062ce1ba6f.PNG)
 
 ### DNS Performance
 
@@ -356,7 +356,7 @@ DNS traffic is based on TCP and UDP requests and responses are clearly marked wi
 
 In both Netmon and Wireshark, the most basic filter that will let you look at DNS traffic is simply `dns`. Be sure to use lower case when specifying the filter. Remember to flush your DNS resolver cache before you begin to reproduce the issue on your client computer. For example, if you have a slow SharePoint Online page load for the Home page, you should close all browsers, open a new browser, start tracing, flush your DNS resolver cache, and browse to your SharePoint Online site. Once the entire page resolves, you should stop and save the trace.
 
-![A basic filter for DNS in Netmon is DNS.](media/1bebc118-ca13-45f3-803f-ab73e7af401d.png)
+![A basic filter for DNS in Netmon is DNS.](../media/1bebc118-ca13-45f3-803f-ab73e7af401d.png)
 
 You want to look at the time offset here. And it may be helpful to add the **Time Delta** column to Netmon which you can do by completing these steps:
 
@@ -368,11 +368,11 @@ You want to look at the time offset here. And it may be helpful to add the **Tim
 
 If you find a query of interest, consider isolating it by right-clicking that query in the frame details panel, choosing **Find Conversations** \> **DNS**. Notice that the Network Conversations panel jumps right to the specific conversation in its log of UDP traffic.
 
-![A Netmon trace of Outlook Online load filtered by DNS, and using Find Conversations then DNS to narrow down the results.](media/763cf20e-7b48-4a37-9449-c9978cfe118b.PNG)
+![A Netmon trace of Outlook Online load filtered by DNS, and using Find Conversations then DNS to narrow down the results.](../media/763cf20e-7b48-4a37-9449-c9978cfe118b.PNG)
 
 In Wireshark you can make a column for DNS time. Take your trace (or open a trace) in Wireshark and filter by `dns`, or, more helpfully,  `dns.time`. Click on any DNS query, and, in the panel showing details, expand the  `Domain Name System (response)` details. You'll see a field for time (for example, `[Time: 0.001111100 seconds]`. Right-click this time and select **Apply as Column**. This will give you a **Time** column for quicker sorting of your trace. Click on the new column to sort by descending values to see which DNS call took the longest to resolve.
 
-[A browse of SharePoint Online filtered in Wireshark by (lowercase) dns.time, with the time from the details made into a column and sorted ascending.](media/1439dcc2-12ff-4ee2-9ef3-1484cf79c384.PNG)
+[A browse of SharePoint Online filtered in Wireshark by (lowercase) dns.time, with the time from the details made into a column and sorted ascending.](../media/1439dcc2-12ff-4ee2-9ef3-1484cf79c384.PNG)
 
 If you would like to do more investigation of the DNS resolution time, try a PsPing against the DNS port used by TCP (for example,  `psping <IP address of DNS server>:53`) . Do you still see a performance issue? If you do, then the problem is more likely to be a broader network issue than an issue of specific the DNS application you're hitting to do resolution. It's also worth mentioning, again, that a ping to outlook.office365.com will tell you where DNS name resolution for Outlook Online is taking place (for example, outlook-namnorthwest.office365.com).
 
@@ -419,15 +419,15 @@ Importantly, if you didn't receive any of the IP address information at the time
 
 Locate the connection in the trace that you're interested in seeing. You may do this by either scanning the trace, by filtering by IP addresses, or by selecting specific Conversation IDs using the Network Conversations window in Netmon. Once you've found the SYN packet, expand TCP (in Netmon), or Transmission Control Protocol (in Wireshark) in the Frame Details panel. Expand TCP Options and MaxSegmentSize. Locate the related SYN-ACK frame and Expand TCP Options and MaxSegmentSize. The smaller of the two values will be your Maximum Segment Size. In this picture, I make use of the built-in Column in Netmon called TCP Troubleshoot.  
 
-![Network trace filtered in Netmon using the built-in columns.](media/e073df13-71f8-497a-83b4-bb9f70bd9833.PNG)
+![Network trace filtered in Netmon using the built-in columns.](../media/e073df13-71f8-497a-83b4-bb9f70bd9833.PNG)
 
 The built-in column is at the top of the **Frame Details** panel. (To switch back to your normal view, click **Columns** again, and then choose **Time Zone**.)
 
-![Where to find the Columns drop down for the TCP Troubleshoot option (on top of the Frame Summary).](media/64fd4baa-a872-4f07-b959-752d7d37fd62.PNG)
+![Where to find the Columns drop down for the TCP Troubleshoot option (on top of the Frame Summary).](../media/64fd4baa-a872-4f07-b959-752d7d37fd62.PNG)
 
 Here's a filtered trace in Wireshark. There is a filter specific to the MSS value ( `tcp.options.mss`). The frames of a SYN, SYN/ACK, ACK handshake are linked at the bottom of the Wireshark equivalent to Frame Details (so frame 47 ACK, links to 46 SYN/ACK, links to 43 SYN) to make this kind of work easier.
 
-![Trace filtered in Wireshark by tcp.options.mss for Max Segment Size (MSS).](media/51e278db-801b-48bc-9b68-87cf92f03fd6.PNG)
+![Trace filtered in Wireshark by tcp.options.mss for Max Segment Size (MSS).](../media/51e278db-801b-48bc-9b68-87cf92f03fd6.PNG)
 
 If you need to check **Selective Acknowledgment** (next topic in this matrix), don't close your trace!
 
@@ -447,9 +447,9 @@ Selective Acknowledgment (SACK) is another parameter in the SYN-SYN/ACK handshak
 
 Locate the connection in the trace that you're interested in seeing either by scanning the trace, filtering by IP addresses, or by clicking a Conversation ID using the Network Conversations window in Netmon. Once you've found the SYN packet, expand TCP in Netmon, or Transmission Control Protocol in Wireshark in the Frame Details section. Expand TCP Options and then SACK. Locate the related SYN-ACK frame and Expand TCP Options and its SACK field. Make certain SACK is permitted in both SYN and SYN/ACK. Here are SACK values as seen in both Netmon and Wireshark.
 
-![Selective Acknowledgment (SACK) in Netmon as a result of tcp.flags.syn == 1.](media/216f556f-5031-4ed2-b066-a0d9b3251fa2.PNG)
+![Selective Acknowledgment (SACK) in Netmon as a result of tcp.flags.syn == 1.](../media/216f556f-5031-4ed2-b066-a0d9b3251fa2.PNG)
 
-![SACK as seen in Wireshark with the filter tcp.flags.syn == 1.](media/0a6e26e5-43dc-403b-adc9-3349a55f4e4b.PNG)
+![SACK as seen in Wireshark with the filter tcp.flags.syn == 1.](../media/0a6e26e5-43dc-403b-adc9-3349a55f4e4b.PNG)
 
 ### DNS Geolocation
 
@@ -479,9 +479,9 @@ Run the Ping tool against outlook.office365.com to determine where in the world 
 
 Open the command prompt on the client computer (via Start \> Run \> cmd or Windows key \> type cmd). Type ping outlook.office365.com and press ENTER. Remember, to specify -4 if you want to specify to ping via IPv4. You may fail to get a reply from the ICMP packets, but you should see the name of the DNS to which the request was routed. If you want to see the latency numbers for this connection try PsPing to the IP address of the server that is returned by ping.  
 
-![Ping of outlook.office365.com showing resolution in outlook-namnorthwest.](media/06c944d5-6159-43ec-aa31-757770695e8b.PNG)
+![Ping of outlook.office365.com showing resolution in outlook-namnorthwest.](../media/06c944d5-6159-43ec-aa31-757770695e8b.PNG)
 
-![PSPing to the IP address returned by the ping to outlook.office365.com showing average 28 millisecond latency.](media/f2b25a75-1a87-4479-b8a7-fa4375683507.PNG)
+![PSPing to the IP address returned by the ping to outlook.office365.com showing average 28 millisecond latency.](../media/f2b25a75-1a87-4479-b8a7-fa4375683507.PNG)
 
 ### Office 365 Application Troubleshooting
 

@@ -55,7 +55,7 @@ The built-in Office 365 Content Delivery Network (CDN) allows Office 365 adminis
 
 The Office 365 CDN is composed of multiple CDNs that allow you to host static assets in multiple locations, or _origins_, and serve them from global high-speed networks. Depending on the kind of content you want to host in the Office 365 CDN, you can add **public** origins, **private** origins or both.
 
-![Office 365 CDN conceptual diagram](media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN conceptual diagram")
+![Office 365 CDN conceptual diagram](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN conceptual diagram")
 
 Content in **public** origins within the Office 365 CDN is accessible anonymously, and can be accessed by anyone who has URLs to hosted assets. Because access to content in public origins is anonymous, you should only use them to cache non-sensitive generic content such as javascript files, scripts, icons and images. The Office 365 CDN is used by default for downloading generic resource assets like the Office 365 client applications from a public origin.
 
@@ -134,15 +134,15 @@ There are many factors involved in measuring specific differences in performance
 
 The following screen shots illustrate the difference in download speed between the native file location in Office 365 and the same file hosted on the [Microsoft Ajax Content Delivery Network](https://docs.microsoft.com/aspnet/ajax/cdn/overview). These screen shots are from the **Network** tab in the Internet Explorer 11 developer tools. These screen shots show the latency on the popular library jQuery. To bring up this screen, in Internet Explorer, press **F12** and select the **Network** tab which is symbolized with a Wi-Fi icon.
   
-![Screenshot of F12 Network](media/930541fd-af9b-434a-ae18-7bda867be128.png)
+![Screenshot of F12 Network](../media/930541fd-af9b-434a-ae18-7bda867be128.png)
   
 This screen shot shows the library uploaded to the master page gallery on the SharePoint Online site itself. The time it took to upload the library is 1.51 seconds.
   
-![Screenshot of load time 1.51s](media/64225c79-fa53-480f-81cd-0d351674320e.png)
+![Screenshot of load time 1.51s](../media/64225c79-fa53-480f-81cd-0d351674320e.png)
   
 The second screen shot shows the same file delivered by Microsoft's CDN. This time the latency is around 496 milliseconds. This is a large improvement and shows that a whole second is shaved off the total time to download the object.
   
-![Screenshot of load times in 469 ms](media/6a553cc3-25a0-42c1-aae7-4aebbc2eb4c3.png)
+![Screenshot of load times in 469 ms](../media/6a553cc3-25a0-42c1-aae7-4aebbc2eb4c3.png)
 
 ## Is my data safe?
 

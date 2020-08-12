@@ -240,7 +240,7 @@ Here is the configuration resulting from the successful completion of this phase
   
 **Phase 2: The domain controllers and directory synchronization server for your high availability federated authentication infrastructure in Azure**
 
-![Phase 2 of the high availability Microsoft 365 federated authentication infrastructure in Azure with domain controllers](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![Phase 2 of the high availability Microsoft 365 federated authentication infrastructure in Azure with domain controllers](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## Next step
 

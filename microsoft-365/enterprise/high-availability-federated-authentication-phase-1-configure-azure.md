@@ -297,7 +297,7 @@ This is the configuration resulting from the successful completion of this phase
   
 **Phase 1: The Azure infrastructure for high availability federated authentication for Microsoft 365**
 
-![Phase 1 of the high availability Microsoft 365 federated authentication in Azure with the Azure infrastructure](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Phase 1 of the high availability Microsoft 365 federated authentication in Azure with the Azure infrastructure](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## Next step
 

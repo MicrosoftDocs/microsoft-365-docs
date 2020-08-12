@@ -51,7 +51,7 @@ Organizations can have multiple subscriptions for Microsoft's cloud offerings. F
 
 **Figure 1: Example of multiple subscriptions for an organization**
 
-![An example organization with multiple subscriptions for Microsoft's cloud offerings.](media/Subscriptions/Subscriptions-Fig1.png)
+![An example organization with multiple subscriptions for Microsoft's cloud offerings.](../media/Subscriptions/Subscriptions-Fig1.png)
   
 ### Licenses
 
@@ -59,7 +59,7 @@ For Microsoft's SaaS cloud offerings, a license allows a specific user account t
   
 **Figure 2: Licenses within the SaaS-based subscriptions for an organization**
 
-![An example of multiple licenses within subscriptions for Microsoft's SaaS-based cloud offerings.](media/Subscriptions/Subscriptions-Fig2.png)
+![An example of multiple licenses within subscriptions for Microsoft's SaaS-based cloud offerings.](../media/Subscriptions/Subscriptions-Fig2.png)
   
 For Azure PaaS-based cloud services, software licenses are built into the service pricing.
   
@@ -75,7 +75,7 @@ Figure 3 shows an example of multiple subscriptions of an organization using a c
   
 **Figure 3: Multiple subscriptions of an organization that use the same Azure AD tenant**
 
-![An example organization with multiple subscriptions all using the same Azure AD tenant.](media/Subscriptions/Subscriptions-Fig3.png)
+![An example organization with multiple subscriptions all using the same Azure AD tenant.](../media/Subscriptions/Subscriptions-Fig3.png)
   
 ### Tenants
 
@@ -115,7 +115,7 @@ Multiple Microsoft cloud offering subscriptions can use the same Azure AD tenant
   
 **Figure 4: Synchronized on-premises accounts and IDaaS for an organization**
 
-![Identity as a Service (IaaS) IDaaS for your organization.](media/Subscriptions/Subscriptions-Fig4.png)
+![Identity as a Service (IaaS) IDaaS for your organization.](../media/Subscriptions/Subscriptions-Fig4.png)
   
 Figure 4 shows how a common Azure AD tenant is used by Microsoft's SaaS cloud offerings, Azure PaaS apps, and virtual machines in Azure IaaS that use Azure AD Domain Services. Azure AD Connect synchronizes the on-premises AD DS forest with the Azure AD tenant.
   

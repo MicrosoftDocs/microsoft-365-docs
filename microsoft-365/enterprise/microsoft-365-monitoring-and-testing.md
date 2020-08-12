@@ -54,7 +54,7 @@ The red team is a group of full-time staff within Microsoft that focuses on brea
 
 The role of the red team is to attack and penetrate environments using the same steps as an adversary:
  
-![Breach stages](media/office-365-isolation-breach-stages.png)
+![Breach stages](../media/office-365-isolation-breach-stages.png)
 
 Among other functions, red teams specifically attempt to breach tenant isolation boundaries to find bugs or gaps in our isolation design.
 
@@ -74,6 +74,6 @@ When an adversary, such as a red team, has breached an environment, the blue tea
 
 These steps form the security incident response that runs parallel to the adversary's, as shown below:
  
-![Breach response stages](media/office-365-isolation-breach-response-stages.png)
+![Breach response stages](../media/office-365-isolation-breach-response-stages.png)
 
 Red team breaches allow for exercising the blue team's ability to detect and respond to real-world attacks end-to-end. Most importantly, it allows for practiced security incident response prior to a genuine breach. Additionally, because of red team breaches, the blue team enhances their situational awareness which can be valuable when dealing with future breaches (whether from the red team or another adversary). Throughout the detection and response process, the blue team produces actionable intelligence and gains visibility into the actual conditions of the environment(s) they are trying to defend. Frequently this is accomplished via data analysis and forensics, performed by the blue team, when responding to red team attacks and by establishing threat indicators, such as indicators of compromise. Much like how the red team identifies gaps in the security story, blue teams identify gaps in their ability to detect and respond. Furthermore, since the red teams model real-world attacks, the blue team can be accurately assessed on their ability, or inability, to deal with determined and persistent adversaries. Finally, red team breaches measure both readiness and impact of our breach response.
