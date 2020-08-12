@@ -32,7 +32,7 @@
             - name: Office 365 IP Address and URL Web service
               href: microsoft-365-ip-web-service.md
             - name: Additional endpoints not included in the Web service
-              href: additional-office365-ip-addresses-and-urls.mdc
+              href: additional-office365-ip-addresses-and-urls.md
         - name: Use the Office 365 CDN with SharePoint Online
           href: use-microsoft-365-cdn-with-spo.md
         - name: Optimize connectivity for remote users
@@ -120,7 +120,7 @@
             - name: Choose between MDM and Intune
               href: https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune
             - name: Mobile application management
-              href: microsoft-365-client-support-mobile-application-management.md
+              href: office-365-client-support-mobile-application-management.md
             - name: Modern authentication
               href: microsoft-365-client-support-modern-authentication.md
             - name: Single sign-on
@@ -240,7 +240,7 @@
                 - name: Skype for Business Data Deletion
                   href: microsoft-365-skype-data-deletion.md
             - name: Defending against denial-of-service attacks in Microsoft 365
-              href: microsoft-365-defending-against-denial-of-service-attacks.md
+              href: office-365-defending-against-denial-of-service-attacks.md
               items: 
                 - name: Microsoft's Denial-of-Services Defense Strategy
                   href: microsoft-365-microsoft-dos-defense-strategy.md
@@ -270,9 +270,9 @@
     - name: Multi-geo
       items: 
         - name: Microsoft 365 Multi-Geo
-          href: microsoft-365-multi-geo.md
+          href: office-365-multi-geo.md
         - name: OneDrive and SharePoint multi-geo
-          href: multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md
+          href: multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md
         - name: Exchange Multi-Geo
           href: multi-geo-capabilities-in-exchange-online.md
         - name: Plan
@@ -338,7 +338,7 @@
     - name: Plan
       items: 
         - name: Identity models
-          href: about-microsoft-365-identity.md
+          href: about-office-365-identity.md
         - name: Hybrid identity
           href: plan-for-directory-synchronization.md
         - name: Tools to manage Microsoft 365 accounts
@@ -364,9 +364,9 @@
             - name: Connect an on-premises network to an Azure virtual network
               href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
             - name: Deploy a directory synchronization server in Azure IaaS
-              href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
+              href: deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md
             - name: Deploy high availability federated authentication for Microsoft 365 in Azure
-              href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
+              href: deploy-high-availability-federated-authentication-for-office-365-in-azure.md
               items: 
                 - name: Phase 1 - Configure Azure
                   href: high-availability-federated-authentication-phase-1-configure-azure.md
@@ -387,7 +387,7 @@
         - name: Microsoft 365 help center
           href: https://docs.microsoft.com/office365/admin/admin-home
         - name: Tools to manage user accounts
-          href: manage-microsoft-365-accounts.md
+          href: manage-office-365-accounts.md
         - name: Add several users at the same time
           href: add-several-users-at-the-same-time.md
         - name: Recover deleted items in a user mailbox
@@ -410,8 +410,6 @@
       href: client-server-software-roadmap-microsoft-365.md
     - name: Plan
       items: 
-        - name: Migration
-          href: Rework existing migration-microsoft-365-enterprise-workload.md M365E article
         - name: Plan your upgrade
           href: plan-upgrade-previous-versions-office.md
     - name: Deploy
@@ -471,7 +469,7 @@
         - name: Yammer
           href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
         - name: Activate rights management
-          href: activate-rms-in-microsoft-365.md
+          href: activate-rms-in-office-365.md
         - name: Configuring release options
           href: https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47
         - name: Train your users
