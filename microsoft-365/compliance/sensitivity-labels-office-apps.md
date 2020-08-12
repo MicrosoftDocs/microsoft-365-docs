@@ -112,7 +112,7 @@ For information about which features are supported by the Azure Information Prot
 
 Office apps that have built-in labeling for Word, Excel, and PowerPoint files support the Open XML format (such as .docx and .xlsx) but not the Microsoft Office 97-2003 format (such as .doc and .xls). When a file type is not supported for built-in labeling, the **Sensitivity** button is not available in the Office app.
 
-For Office apps, the Azure Information Protection unified labeling client supports both the Open XML format and the Microsoft Office 97-2003 format.
+The Azure Information Protection unified labeling client supports both the Open XML format and the Microsoft Office 97-2003 format.
 
 For other labeling solutions, check their documentation for file types supported.
 
