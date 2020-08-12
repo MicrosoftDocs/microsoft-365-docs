@@ -152,7 +152,7 @@
       - name: OneDrive Guide for enterprises
         href: https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
 
-        - name: Security
+    - name: Security
       items:
       - name: Top tasks for security teams to support working from home
         href: https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
