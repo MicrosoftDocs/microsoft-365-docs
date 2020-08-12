@@ -45,7 +45,6 @@ In the planning phase of your identity implementation:
 
 - [Understand the different identity models](about-office-365-identity.md)
 - [Plan for hybrid identity and directory synchronization](plan-for-directory-synchronization.md)
-- [Understand which tools you can use to manage Microsoft 365 accounts](tools-to-manage-office-365-accounts.md)
 
 ## Deploy
 
@@ -87,5 +86,5 @@ See how the Contoso Corporation, a fictional but representative multi-national b
 
 ## Next step
 
-Start your identity planning with [Identity models]((about-office-365-identity.md)).
+Start your identity planning with [Identity models](about-office-365-identity.md).
 
