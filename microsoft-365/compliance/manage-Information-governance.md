@@ -18,6 +18,8 @@ description: "Learn about information governance in Microsoft 365."
 
 # Manage information governance
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 Use Microsoft information governance capabilities to govern your data for compliance or regulatory requirements.
 
 ## Information governance
