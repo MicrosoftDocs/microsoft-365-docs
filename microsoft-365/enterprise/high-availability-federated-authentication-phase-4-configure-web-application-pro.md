@@ -163,5 +163,5 @@ Use [Phase 5: Configure federated authentication for Microsoft 365](high-availab
   
 [Federated identity for your Microsoft 365 dev/test environment](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
-[Cloud adoption and hybrid solutions](cloud-adoption-and-hybrid-solutions.yml)
+[Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
 

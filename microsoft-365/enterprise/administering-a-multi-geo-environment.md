@@ -102,4 +102,4 @@ However, Stream is not yet available in the following regions that are currently
 
 ## Yammer
 
-Yammer is not a Multi-Geo workload. Yammer threads stored in Yammer will be placed in the tenant’s central location. Yammer is rolling out a file storage change which will store Yammer files within SharePoint. Yammer files stored in SharePoint will be placed the SharePoint site associated with the Yammer group. SharePoint group sites are based on PDL logic as outlined in [SharePoint Sites and Groups](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365#sharepoint-sites-and-groups).
+Yammer is not a Multi-Geo workload. Yammer threads stored in Yammer will be placed in the tenant’s central location. Yammer is rolling out a file storage change which will store Yammer files within SharePoint. Yammer files stored in SharePoint will be placed the SharePoint site associated with the Yammer group. SharePoint group sites are based on PDL logic as outlined in [SharePoint Sites and Groups](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md#sharepoint-sites-and-groups).

@@ -56,12 +56,12 @@ You can use groups in Azure AD for several purposes that simplify management of 
 You create new ***users*** with:
 
 - [The Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/add-users/add-users)
-- [PowerShell for Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell)
+- [PowerShell for Microsoft 365](create-user-accounts-with-office-365-powershell.md)
 
 You create new ***groups*** with:
 
 - [The Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
-- [PowerShell for Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+- [PowerShell for Microsoft 365](manage-office-365-groups-with-powershell.md)
 
 
 ## Next step for cloud-only identity

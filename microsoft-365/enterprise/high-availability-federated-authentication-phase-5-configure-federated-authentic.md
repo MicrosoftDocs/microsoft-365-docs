@@ -140,7 +140,7 @@ Your high availability federated authentication infrastructure for Microsoft 365
   
 [Federated identity for your Microsoft 365 dev/test environment](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
-[Cloud adoption and hybrid solutions](cloud-adoption-and-hybrid-solutions.yml)
+[Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
 
 [Federated identity for Microsoft 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
 

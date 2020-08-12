@@ -48,7 +48,7 @@ The following technical illustrations and articles provide information about how
 
 ## See Also
 
-[Cloud adoption and hybrid solutions](cloud-adoption-and-hybrid-solutions.yml)
+[Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
 
 
 

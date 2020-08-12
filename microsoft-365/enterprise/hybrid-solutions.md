@@ -45,9 +45,9 @@ For SharePoint Server 2013 workloads in Azure:
   
 ## Related topics
 
-[Cloud adoption and hybrid solutions](cloud-adoption-and-hybrid-solutions.yml)
+[Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
   
-[Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md)
+[Microsoft cloud for enterprise architects illustrations](../solutions/cloud-architecture-models.md)
   
 [Microsoft 365 for enterprise Test Lab Guides (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
