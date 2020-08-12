@@ -289,11 +289,11 @@ All locations you select in the retention policy support Preservation Lock.
 
 1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-2. List your retention policies and find the name of the policy that you want to lock by running `Get-RetentionCompliancePolicy`.
+2. List your retention policies and find the name of the policy that you want to lock by running [Get-RetentionCompliancePolicy](https://powershell/module/exchange/get-retentioncompliancepolicy). For example:
     
    ![List of retention policies in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
-3. To place a Preservation Lock on a retention policy, run the `Set-RetentionCompliancePolicy` cmdlet with the name of the retention policy, and the *RestrictiveRetention* parameter set to true:
+3. To place a Preservation Lock on a retention policy, run the [Set-RetentionCompliancePolicy]( ) cmdlet with the name of the retention policy, and the *RestrictiveRetention* parameter set to true.
     
     ```powershell
     Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
@@ -307,7 +307,7 @@ All locations you select in the retention policy support Preservation Lock.
     
    ![Prompt to confirm that you want to lock a retention policy in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
-A Preservation Lock is now placed on the retention policy. If you run `Get-RetentionCompliancePolicy`, the **RestrictiveRetention** parameter is set to **True**. For example:
+A Preservation Lock is now placed on the retention policy. If you run `Get-RetentionCompliancePolicy` for the retention policy and display the policy parameters, you see **RestrictiveRetention** is set to **True**. For example:
 
 ```powershell
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
