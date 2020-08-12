@@ -285,7 +285,7 @@ Usually this update is fairly quick but can take several days. When the policy r
 
 You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) to comply with regulatory requirements. Because administrators can't disable or delete a retention policy after a preservation lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.
 
-All locations you select in the retention policy support Preservation Lock.
+All retention policies with any configuration support Preservation Lock. However, when you use the PowerShell commands that follow, you'll notice that the **Workload** parameter always displays **Exchange, SharePoint, OneDriveForBusines, Skype, ModernGroup** rather than reflect the actual workloads configured in the policy. This is a display issue only.
 
 1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
@@ -303,15 +303,17 @@ All locations you select in the retention policy support Preservation Lock.
     
     ![RestrictiveRetention parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-     When prompted, choose **Yes to All**:
+     When prompted, read and acknowledge the restrictions that come with this configuration, and choose **Yes to All**:
     
    ![Prompt to confirm that you want to lock a retention policy in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
-A Preservation Lock is now placed on the retention policy. If you run `Get-RetentionCompliancePolicy` for the retention policy and display the policy parameters, you see **RestrictiveRetention** is set to **True**. For example:
+A Preservation Lock is now placed on the retention policy. To confirm, run `Get-RetentionCompliancePolicy` for the retention policy and display the policy parameters, and you should see **RestrictiveRetention** is set to **True**:
 
 ```powershell
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 ```
+
+For example:
 
 ![Locked policy with all parameters shown in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
   
