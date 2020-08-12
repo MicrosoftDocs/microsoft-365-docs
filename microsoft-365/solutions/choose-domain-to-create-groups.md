@@ -25,7 +25,7 @@ Some organizations use separate email domains to segment different parts of thei
   
 If your organization needs users to create their groups in domains other than the default accepted domain of your business, you can allow this by configuring email address policies (EAPs) using PowerShell.
 
-EAPs, they are evaluated in the order of priority. A value of 1 means the highest priority. If no EAPs match the specified criteria, then the group gets provisioned in the organization's default accepted domain.
+Before you can run the PowerShell cmdlets, download and install a module that will let you talk to your organization. Check out [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
 
 ## Example scenarios
 
@@ -37,7 +37,10 @@ Let's say you also have sub-domains configured in your organization. You want gr
     
 - faculty.contoso.com for faculty members
     
-The following two scenarios explain how you would accomplish this. These examples use [Exchange Online remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+The following two scenarios explain how you would accomplish this.
+
+> [!NOTE]
+> When you have mulitple EAPs, they are evaluated in the order of priority. A value of 1 means the highest priority. Once an EAP matches, no further EAP is evaluated and addresses that gets stamped on the group are as per the matched EAP. > If no EAPs match the specified criteria, then the group gets provisioned in the organization's default accepted domain. Check out [Manage accepted domains in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=785428) for details on how to add an accepted domain.
   
 ### Scenario 1
 
@@ -92,7 +95,7 @@ Changing an EAP has no impact on the groups that have already been provisioned.
   
 ## Hybrid requirements
 
-If your organization is configured in a hybrid scenario, check out [Configure Microsoft 365 groups with on-premises Exchange hybrid](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-office-365-groups) to make sure your organization meets the requirements for creating Microsoft 365 groups. 
+If your organization is configured in a hybrid scenario, check out [Configure Microsoft 365 groups with on-premises Exchange hybrid](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups) to make sure your organization meets the requirements for creating Microsoft 365 groups. 
   
 ## Additional info about using email address policies groups:
 
@@ -113,5 +116,3 @@ There are a few more things to know:
 ## Related articles
 
 [Create an Microsoft 365 group in the admin center](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)
-
-[Manage accepted domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)

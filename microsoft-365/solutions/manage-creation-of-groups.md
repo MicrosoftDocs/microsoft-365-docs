@@ -6,7 +6,7 @@ ms.reviewer: arvaradh
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -67,12 +67,15 @@ To manage who creates groups, the following people need Azure AD Premium license
 
 - The admin who configures these group creation settings
 - The members of the security group who are allowed to create groups
+ 
+> [!NOTE]
+> See [Assign or remove licenses in the Azure Active Directory portal](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) for more details about how to assign Azure licenses.
 
 The following people don't need Azure AD Premium or Azure AD Basic EDU licenses assigned to them:
 
 - People who are members of Microsoft 365 groups and who don't have the ability to create other groups.
 
-## Step 1: Create a security group for users who need to create Microsoft 365 Groups
+## Step 1: Create a security group for users who need to create Microsoft 365 groups
 
 Only one security group in your organization can be used to control who is able to create Groups. But, you can nest other security groups as members of this group.
 
@@ -157,7 +160,9 @@ If you want to turn off the group creation restriction and again allow all users
     
 ## Step 4: Verify that it works
 
-1. Sign in to Office 365 with a user account of someone who should NOT have the ability to create groups. That is, they are not a member of the security group you created or an administrator.
+Changes can take thirty minutes or more to take effect. You can verify the new settings by doing the following:
+
+1. Sign in to Microsoft 365 with a user account of someone who should NOT have the ability to create groups. That is, they are not a member of the security group you created or an administrator.
     
 2. Select the **Planner** tile. 
     
