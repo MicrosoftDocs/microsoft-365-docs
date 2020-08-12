@@ -32,27 +32,13 @@ Apply these recommendations to get results faster and avoid timeouts while runni
 - **Size new queries** — Assess the size of the result set using `count`. Use `limit` to avoid extremely large result sets.
 - **Apply filters early** — Apply time filters and other filters early in the query, especially if you are using conversion functions, such as [toint()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tointfunction) or [todatetime()](https://docs.microsoft.com/azure/data-explorer/kusto/query/todatetimefunction), or parsing functions, like [`parse_json()`](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). In the example below, the parsing function [extractjson()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) is used after all filtering operators are applied to reduce the number of records that need to be parsed.
 
-Triple backticks
-    
-```kusto
-DeviceEvents
-| where Timestamp > ago(1d)
-| where ActionType == "UsbDriveMount" 
-| where DeviceName == "user-desktop.domain.com"
-| extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
- ```
-
-`<pre>` + `<code>`
-<pre><code>
-Timestamp     |   DeviceId   |   DeviceName
-2020-08-11    |   xys-a-s-a  |   machine1 
-</code></pre>
-
-`<pre>` only
-<pre>
-Timestamp     |   DeviceId   |   DeviceName
-2020-08-11    |   xys-a-s-a  |   machine1 
-</pre>
+    ```kusto
+    DeviceEvents
+    | where Timestamp > ago(1d)
+    | where ActionType == "UsbDriveMount" 
+    | where DeviceName == "user-desktop.domain.com"
+    | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
+     ```
 
 - **Has beats contains** — Avoid searching substrings unnecessarily by using the `has` operator instead of `contains`.
 - **Search specific columns** — Look in a specific column rather than running full text searches across all columns. Don't use `*`.
