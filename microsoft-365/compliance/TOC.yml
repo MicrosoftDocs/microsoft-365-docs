@@ -24,6 +24,8 @@
           href: insider-risk-management.md
         - name: Plan for insider risk management
           href: insider-risk-management-plan.md
+        - name: Get started with insider risk settings
+          href: insider-risk-management-settings.md
         - name: Get started with insider risk management
           href: insider-risk-management-configure.md
         - name: Create and manage insider risk policies
@@ -105,30 +107,32 @@
       items: 
         - name: DLP and Microsoft Teams
           href: dlp-microsoft-teams.md
-        - name: Watch an extended overview of DLP
-          href: https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111
-        - name: Set up DLP
-          items: 
-            - name: Get started with DLP policy recommendations
-              href: get-started-with-dlp-policy-recommendations.md
-            - name: Get started with the default DLP policy
-              href: get-started-with-the-default-dlp-policy.md
-            - name: Create a DLP policy from a template
-              href: create-a-dlp-policy-from-a-template.md
-            - name: Create, test, and tune a DLP policy
-              href: create-test-tune-dlp-policy.md
-            - name: Use notifications and policy tips in DLP policies
-              href: use-notifications-and-policy-tips.md
-            - name: What the DLP policy templates include
-              href: what-the-dlp-policy-templates-include.md
-            - name: Create a DLP policy to protect documents with FCI or other properties
-              href: protect-documents-that-have-fci-or-other-properties.md
-            - name: View the DLP reports
-              href: view-the-dlp-reports.md
-            - name: Form a query to find sensitive data stored on sites
-              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-            - name: How DLP works between the Security & Compliance Center and Exchange admin center
-              href: how-dlp-works-between-admin-centers.md
+        - name: Learn about Endpoint data loss prevention (preview)
+          href: endpoint-dlp-learn-about.md
+        - name: Get started with Endpoint data loss prevention (preview)
+          href: endpoint-dlp-getting-started.md
+        - name: Using Endpoint data loss prevention (preview)
+          href: endpoint-dlp-using.md
+        - name: Get started with DLP policy recommendations
+          href: get-started-with-dlp-policy-recommendations.md
+        - name: Get started with the default DLP policy
+          href: get-started-with-the-default-dlp-policy.md
+        - name: Create a DLP policy from a template
+          href: create-a-dlp-policy-from-a-template.md
+        - name: Create, test, and tune a DLP policy
+          href: create-test-tune-dlp-policy.md
+        - name: Use notifications and policy tips in DLP policies
+          href: use-notifications-and-policy-tips.md
+        - name: What the DLP policy templates include
+          href: what-the-dlp-policy-templates-include.md
+        - name: Create a DLP policy to protect documents with FCI or other properties
+          href: protect-documents-that-have-fci-or-other-properties.md
+        - name: View the DLP reports
+          href: view-the-dlp-reports.md
+        - name: Form a query to find sensitive data stored on sites
+          href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+        - name: How DLP works between the Security & Compliance Center and Exchange admin center
+          href: how-dlp-works-between-admin-centers.md
     - name: Sensitive information types
       items: 
         - name: Sensitive information type entity definitions 
@@ -165,6 +169,8 @@
       href: tls-1-2-in-office-365-gcc.md
     - name: TLS 1.2 in Office 365
       href: prepare-tls-1.2-in-office-365.md
+    - name: Double Key Encryption for Microsoft 365 public preview
+      href: double-key-encryption.md
     - name: Customer Key
       items: 
         - name: Service encryption with Customer Key in Office 365
@@ -237,7 +243,7 @@
   items: 
     - name: Manage information governance
       href: manage-information-governance.md
-    - name: Import data
+    - name: Import mailbox data
       items: 
         - name: Overview of importing PST files
           href: importing-pst-files-to-office-365.md
@@ -245,8 +251,6 @@
           href: use-network-upload-to-import-pst-files.md
         - name: Use drive shipping to import PST files
           href: use-drive-shipping-to-import-pst-files-to-office-365.md
-        - name: Use the PST Collection tool to find, copy, and delete PST files
-          href: find-copy-and-delete-pst-files-in-your-organization.md
         - name: Filter data when importing PST files
           href: filter-data-when-importing-pst-files.md
         - name: FAQ about importing PST files
@@ -255,20 +259,22 @@
       items: 
         - name: Overview of archiving third-party data
           href: archiving-third-party-data.md
-        - name: Archive Bloomberg Message data (preview)
-          href: archive-bloomberg-message-data.md 
-        - name: Archive Facebook data (preview)
-          href: archive-facebook-data-with-sample-connector.md
-        - name: Import HR data (preview)
-          href: import-hr-data.md
-        - name: Archive ICE Chat data (preview)
-          href: archive-icechat-data.md 
-        - name: Archive Instant Bloomberg data
-          href: archive-instant-bloomberg-data.md
-        - name: Archive LinkedIn data
-          href: archive-linkedin-data.md
-        - name: Archive Twitter data (preview)
-          href: archive-twitter-data-with-sample-connector.md
+        - name: Microsoft data connectors
+          items:  
+            - name: Bloomberg Message
+              href: archive-bloomberg-message-data.md 
+            - name: Facebook Business 
+              href: archive-facebook-data-with-sample-connector.md
+            - name: HR data 
+              href: import-hr-data.md
+            - name: ICE Chat
+              href: archive-icechat-data.md 
+            - name: Instant Bloomberg
+              href: archive-instant-bloomberg-data.md
+            - name: LinkedIn
+              href: archive-linkedin-data.md
+            - name: Twitter
+              href: archive-twitter-data-with-sample-connector.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
         - name: Search for third-party data
@@ -309,16 +315,12 @@
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
         - name: Create retention labels with PowerShell
           href: bulk-create-publish-labels-using-powershell.md
-        - name: Use event-based retention
-          items: 
-            - name: Start retention when an event occurs
-              href: event-driven-retention.md
-            - name: Automate event-based retention
-              href: automate-event-driven-retention.md
-            - name: Manage the lifecycle of SharePoint documents
-              href: auto-apply-retention-labels-scenario.md
-    - name: Dispose of data
-      href: disposition.md
+        - name: Start retention when an event occurs
+          href: event-driven-retention.md
+        - name: Use retention labels to manage document lifecycles
+          href: auto-apply-retention-labels-scenario.md
+        - name: Manage disposition of data
+          href: disposition.md
     - name: Manage inactive mailboxes
       items: 
         - name: Overview of inactive mailboxes
@@ -333,14 +335,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Delete an inactive mailbox
           href: delete-an-inactive-mailbox.md
-    - name: Monitor data governance
-      items: 
-        - name: View label activity for documents
-          href: view-label-activity-for-documents.md
-        - name: View label usage with label analytics
-          href: label-analytics.md
-        - name: View the data governance reports
-          href: view-the-data-governance-reports.md
     - name: More information about data governance
       items: 
         - name: Watch videos from the Microsoft Data Governance team

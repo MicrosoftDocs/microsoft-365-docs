@@ -9,7 +9,6 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-- M365solutions
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: "Learn how Microsoft 365 helps energy organizations move to a modern collaboration platform, while helping keep data and systems secure and compliant with regulations"
@@ -17,7 +16,7 @@ ms.custom:
 ---
 
 # Key Compliance and Security Considerations for the Energy Industry
-:::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="Illustration metaphor for a global view of various industries using the cloud":::
+![Illustration metaphor for a global view of various industries using the cloud](../media/solution-arch-center/MSC17_global_016.png)
 ## Introduction
 The energy industry provides society with fuel and critical infrastructure that people rely on every day. In order to ensure the reliability of infrastructure related to bulk power systems, regulatory authorities impose strict standards on energy industry organizations. These regulatory standards relate not only to the generation and transmission of power, but also to the data and communications that are critical to the day to day operations of energy companies. 
 

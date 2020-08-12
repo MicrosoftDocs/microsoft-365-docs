@@ -36,18 +36,28 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `FileName` | string | Name of the file that the recorded action was applied to |
 | `FolderPath` | string | Folder containing the file that the recorded action was applied to |
 | `PreviousFileName` | string | Original name of the file that was renamed as a result of the action |
+| `PreviousFolderPath` | string | Original folder containing the file before the recorded action was applied |
+| `Protocol` | string | Network protocol used |
 | `AccountName` | string | User name of the account |
 | `AccountDomain` | string | Domain of the account |
 | `AccountUpn` | string | User principal name (UPN) of the account |
 | `AccountObjectId` | string | Unique identifier for the account in Azure AD |
 | `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the device |
+| `DeviceType` | string | Type of device | 
+| `OSPlatform` | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
 | `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
+| `DestinationDeviceName` | string | Name of the device running the server application that processed the recorded action |
+| `DestinationIPAddress` | string | IP address of the device running the server application that processed the recorded action |
 | `Location` | string | City, country, or other geographic location associated with the event |
+| `Isp` | string | Internet service provider (ISP) associated with the endpoint IP address |
+| `ReportId` | long | Unique identifier for the event |
+| `AdditionalFields` | string | Additional information about the entity or event |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
+- [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

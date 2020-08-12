@@ -120,6 +120,8 @@ In summary, a locked retention policy can be increased or extended, but it can't
 > [!IMPORTANT]
 > Before you lock a retention policy, it's critical that you understand the impact and confirm whether it's required for your organization to meet regulatory requirements. Administrators won't be able to disable or delete a retention policy after the preservation lock is applied.
 
+You apply Preservation Lock after the retention policy is created, by using PowerShell. Instructions are included in [Create and configure retention policies](create-retention-policies.md).
+
 #### Releasing a retention policy
 
 Providing your retention policy doesn't have a Preservation Lock, you can turn off or delete a retention policy at any time. 
@@ -159,7 +161,7 @@ With retention labels, you can:
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
-Additionally, retention labels support [records management](records-management.md) for email and documents across Microsoft 365 apps and services. You can use a retention label to classify content as a record. When this happens and the content remains in Microsoft 365, the label can't be changed or removed, and the content can't be edited or deleted. 
+Additionally, retention labels support [records management](records-management.md) for email and documents across Microsoft 365 apps and services. You can use a retention label to classify content as a record. When this happens and the content remains in Microsoft 365, the label places further restrictions on the content that might be needed for regulatory reasons. For more information, including a comparison of the actions allowed or blocked, see [Learn about records](records.md).
 
 Retention labels, unlike [sensitivity labels](sensitivity-labels.md), do not persist if the content is moved outside Microsoft 365.
 
@@ -228,13 +230,27 @@ To understand how and why one retention label is applied rather than another, it
 
 An explicitly assigned retention label takes precedence over an implicitly assigned retention label. For more information, see the [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence) section on this page.
 
-#### Using Content Search to find all content with a specific retention label applied to it
+#### Monitoring retention labels
 
-After retention labels are assigned to content, either by users or auto-applied, you can use content search to find all content that's classified with a specific retention label.
+From the Microsoft 365 compliance center, use **Data classification** > **Overview** to monitor how your retention labels are being used in your tenant, and identify where your labeled items are located. For more information, including important prerequisites, see [Know your data - data classification overview](data-classification-overview.md).
+
+You can then drill down into details by using [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md).
+
+> [!TIP]
+>Consider using some of the other data classification insights, such as trainable classifiers and sensitive info types, to help you identify content that you might need to retain or delete, or manage as records.
+
+The Office 365 Security & Compliance Center has the equivalent overview information for retention labels from **Information governance** > **Dashboard**, and more detailed information from **Information governance** > **Label activity explorer**. For more information about monitoring retention labels from this older admin center, see the following documentation:
+- [View the data governance reports](view-the-data-governance-reports.md)
+- [View label usage with label analytics](label-analytics.md)
+- [View label activity for documents](view-label-activity-for-documents.md)
+
+#### Using Content Search to find all content with a specific retention label
+
+After retention labels are applied to content, either by users or auto-applied, you can use content search to find all items that have a specific retention label applied.
+
+When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
-When you create a content search, choose the **Compliance label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
-  
-![Compliance label condition](../media/compliance-label-condition.png)
+![Retention label condition](../media/retention-label-condition.png)
 
 
 ## Compare capabilities for retention policies and retention labels
@@ -253,6 +269,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Start the retention period when labeled or based on an event | No | Yes |
 |Disposition review | No| Yes |
 |Proof of disposition for up to 7 years | No |Yes, when item is declared a record|
+|Audit admin activities| Yes | Yes|
 |Identify items subject to retention: <br /> - Content Search <br /> - Data classification page, content explorer, activity explorer | <br /> No <br /> No | <br /> Yes <br /> Yes|
 
 Note that you can use both retention policies and retention labels as complementary retention methods. For example:
@@ -287,6 +304,10 @@ Explanation for the four different levels:
 4. **The shortest deletion period wins.** Similarly, if content is subject to multiple retention settings that delete content without a retention period, that content will be deleted at the end of the shortest retention period. 
 
 Finally, a retention policy or retention label cannot permanently delete any content that's on hold for eDiscovery. When that hold is released, the content again becomes eligible for the cleanup process in the secured locations for the workload.
+
+## Auditing retention configuration
+
+Administrator actions for retention policies and retention labels are saved to the audit log when [auditing is enabled](turn-audit-log-search-on-or-off.md). For example, an audit event is created when a retention policy or label is created, configured, or deleted. For the full list, see [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
 
 ## PowerShell cmdlets for retention policies and retention labels
 

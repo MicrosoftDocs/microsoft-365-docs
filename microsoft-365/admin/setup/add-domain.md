@@ -135,6 +135,7 @@ In the wizard, we'll just confirm that you own the domain, and then automaticall
 
 - [1&amp;1 IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
+- [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
