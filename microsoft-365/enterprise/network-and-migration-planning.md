@@ -31,13 +31,9 @@ This article contains links to information about network planning and testing, a
   
 Before you deploy for the first time or migrate to Office 365, you can use the information in these topics to estimate the bandwidth you need and then to test and verify that you have enough bandwidth to deploy or migrate to Office 365.
 
-||
-|:-----|
-| This article is part of [Network planning and performance tuning for Office 365](https://aka.ms/tune).|
+This article is part of [Network planning and performance tuning for Office 365](https://aka.ms/tune).
 
-|||
-|:-----|:-----|
-|![See the Microsoft Cloud Networking for Enterprise Architects poster](../media/3094be9f-2407-4fa5-896d-aa66ef7b9bb9.png)|For the steps to optimize your network for Office 365 and other Microsoft cloud platforms and services, see the [Microsoft Cloud Networking for Enterprise Architects](https://aka.ms/cloudarchnetworking) poster. |
+For the steps to optimize your network for Microsoft 365 and other Microsoft cloud platforms and services, see the [Microsoft Cloud Networking for Enterprise Architects](https://aka.ms/cloudarchnetworking) poster.
    
 ## Estimate network bandwidth requirements
 <a name="EstimateBandwidthRequirements"> </a>

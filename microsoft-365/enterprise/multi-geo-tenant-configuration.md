@@ -33,7 +33,7 @@ Once your tenant has been provisioned with the  _Multi-Geo Capabilities in Micro
 
 You must add a satellite location for each geo location where you want to store data. Available geo locations are shown in the following table:
 
-[!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/office-365-multi-geo-locations.md)]
+[!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
 ![Screenshot of geo locations page in the SharePoint admin center](../media/sharepoint-multi-geo-admin-center.png)
 
@@ -86,7 +86,7 @@ If your company's users are not synchronized from an on-premises Active Director
 
 The procedures in this section require the [Microsoft Azure Active Directory Module for Windows PowerShell Module](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). If you already have this module installed, please ensure you update to the latest version.
 
-1.  [Connect and sign in](/powershell/connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) with a set of global administrator credentials for your tenant.
+1.  [Connect and sign in](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) with a set of global administrator credentials for your tenant.
 
 2.  Use the [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) cmdlet to set the preferred data location for each of your users. For example:
 

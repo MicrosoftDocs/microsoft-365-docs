@@ -72,7 +72,7 @@ Your first stop should be the [Product Lifecycle site](https://go.microsoft.com/
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
 ||SharePoint Hybrid  <br/> |SharePoint Server 2016  <br/> |
-|||SharePoint Hybrid  <br/> |
+| | |SharePoint Hybrid  <br/> |
    
 If you choose options on the low end of the scale (good enough), remember you will need to begin planning for upgrade very soon after migration from SharePoint Server 2007 is complete. (end of support for SharePoint Server 2007 is October 10, 2017. Please note that these dates are subject to change and check the [Product Lifecycle site](https://support.microsoft.com/lifecycle).)
   
@@ -126,9 +126,7 @@ If you've decided to create a new Microsoft 365 site, and will manually migrate 
 
 There is historically no way to skip versions in SharePoint Upgrades, at least not as of the release of SharePoint Server 2016. That means upgrades go serially:
   
-|||
-|:-----|:-----|
-||SharePoint 2007 | SharePoint Server 2010 | SharePoint Server 2013 | SharePoint Server 2016 |
+- SharePoint 2007 \> SharePoint Server 2010 \> SharePoint Server 2013 \> SharePoint Server 2016
    
 To take the entire path from SharePoint 2007 to SharePoint Server 2016 will mean a significant investment of time and will involve a cost in terms of upgraded hardware (be aware that SQL servers must also be upgraded), software, and administration. Customizations will need to be upgraded or abandoned, according to the criticality of the feature.
   
@@ -184,6 +182,8 @@ If the answer to your migration needs is somewhere between the self-control offe
   
 If you decide that a hybrid SharePoint Server farm will benefit your business, familiarize yourself with the existing types of hybrid and how to configure the connection between your on-premises SharePoint farm and your Microsoft 365 subscription.
   
+| Option | Description |
+|:-----|:-----|
 [Microsoft compliance offerings](https://go.microsoft.com/fwlink/?linkid=843165).  <br/> |[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) assistance for migration is limited.  <br/> Much of the upgrade will be manual, or via the SPO Migration API described in the [SharePoint Online and OneDrive Migration Content Roadmap](https://go.microsoft.com/fwlink/?linkid=843184).  <br/> |
 |Neither Microsoft Support Engineers nor employees in the datacenter have unrestricted admin access to your subscription.  <br/> |There can be additional costs if hardware infrastructure needs to be upgraded to support the newer version of SharePoint, or if a secondary farm is required for upgrade.  <br/> |
 |Partners can assist with the one-time job of migrating your data to SharePoint Online.  <br/> ||
@@ -195,9 +195,7 @@ If you've decided to create a new Microsoft 365 site, and will manually migrate 
 
 There is historically no way to skip versions in SharePoint Upgrades, at least not as of the release of SharePoint Server 2016. That means upgrades go serially:
   
-|||
-|:-----|:-----|
-||SharePoint 2007 | SharePoint Server 2010 | SharePoint Server 2013 | SharePoint Server 2016 |
+- SharePoint 2007 \> SharePoint Server 2010 \> SharePoint Server 2013 \> SharePoint Server 2016
    
 To take the entire path from SharePoint 2007 to SharePoint Server 2016 will mean a significant investment of time and will involve a cost in terms of upgraded hardware (be aware that SQL servers must also be upgraded), software, and administration. Customizations will need to be upgraded or abandoned, according to the criticality of the feature.
   

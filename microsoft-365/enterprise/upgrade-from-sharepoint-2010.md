@@ -51,11 +51,11 @@ First, check the date at which support ends on the [Product Lifecycle site](http
   
 This matrix helps plot a course when it comes to migrating product features and user data:
   
-|**End of support product**|**Good**|**Best**|
+| End of support product | Good | Best |
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013 (on-premises)  <br/> |SharePoint Online  <br/> |
 ||SharePoint Server 2013 hybrid with SharePoint Online  <br/> |SharePoint Server 2016 (on-premises)  <br/> |
-|||SharePoint Cloud Hybrid Search  <br/> |
+| | |SharePoint Cloud Hybrid Search  <br/> |
    
 If you choose options on the low end of the scale (good options), you'll need to start planning for another upgrade soon after migration from SharePoint Server 2010 completes. 
 
@@ -122,9 +122,9 @@ If you've decided to create a new Microsoft 365 site, and will manually migrate 
 
 As of the latest version of the SharePoint on-premises product (SharePoint Server 2019), SharePoint Server upgrades must go  *serially*, that means there is no way to upgrade from SharePoint Server 2010 to SharePoint Server 2016 or to SharePoint 2019, directly. 
   
-|||
-|:-----|:-----|
-||****Serial upgrade path****: SharePoint Server 2010 **\>** SharePoint Server 2013 **\>** SharePoint Server 2016 |
+Serial upgrade path: 
+
+- SharePoint Server 2010 \> SharePoint Server 2013 \> SharePoint Server 2016
    
 If you choose to follow the entire path from SharePoint 2010 to SharePoint Server 2016, this will take time and planning. Upgrades involve a cost in terms of upgraded hardware (be aware that SQL servers must also be upgraded), software, and administration. Also, customizations may need to be upgraded, or even abandoned. Be sure that you collect notes on all of your critical customizations before you upgrade your SharePoint Server farm.
   
@@ -175,8 +175,10 @@ Another option (one that may be the best of both on-premises and online worlds f
 If you decide a hybrid SharePoint Server farm is your migration goal, be sure to plan what sites and users you should move to online, and which need to remain on-premises. A review and ranking of your SharePoint Server farm's content (determining what data is High, Medium, or Low impact to your company) can be helpful to making this decision. It may be that the only thing you need to share with SharePoint Online is (a) user accounts for login, and (b) the SharePoint Server search index -- this may not be clear until you look at how your sites are used. If your company later decides to migrate all of your content to SharePoint Online, you can move all remaining accounts and data online and decommission your on-premises farm, and management/administration of the SharePoint farm will be done through Microsoft 365 consoles from that point on.
   
 Be sure to familiarize yourself with the existing types of hybrid and how to configure the connection between your on-premises SharePoint farm and your Microsoft 365 subscription.
-  
-[Microsoft compliance offerings](https://go.microsoft.com/fwlink/?linkid=843165).  <br/> |[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) assistance for migration is limited.  <br/> Much of the upgrade will be manual, or via the SPO Migration API described in the [SharePoint Online and OneDrive Migration Content Roadmap](https://go.microsoft.com/fwlink/?linkid=843184).  <br/> |
+
+| Option | Description |
+|:-----|:-----|
+|[Microsoft compliance offerings](https://go.microsoft.com/fwlink/?linkid=843165).  <br/> |[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) assistance for migration is limited.  <br/> Much of the upgrade will be manual, or via the SPO Migration API described in the [SharePoint Online and OneDrive Migration Content Roadmap](https://go.microsoft.com/fwlink/?linkid=843184).  <br/> |
 |Neither Microsoft Support Engineers nor employees in the datacenter have unrestricted admin access to your subscription.  <br/> |There can be additional costs if hardware infrastructure needs to be upgraded to support the newer version of SharePoint, or if a secondary farm is required for upgrade.  <br/> |
 |Partners can assist with the one-time job of migrating your data to SharePoint Online.  <br/> ||
 |Online products are updated automatically across the service meaning that though features may deprecate, there is no true end of support.  <br/> ||
@@ -187,9 +189,7 @@ If you've decided to create a new Microsoft 365 site, and will manually migrate 
 
 There is historically no way to skip versions in SharePoint Upgrades, at least not as of the release of SharePoint Server 2016. That means upgrades go serially:
   
-|||
-|:-----|:-----|
-||SharePoint 2007 | SharePoint Server 2010 | SharePoint Server 2013 | SharePoint Server 2016 |
+- SharePoint 2007 \> SharePoint Server 2010 \> SharePoint Server 2013 \> SharePoint Server 2016
    
 To take the entire path from SharePoint 2007 to SharePoint Server 2016 will mean a significant investment of time and will involve a cost in terms of upgraded hardware (be aware that SQL servers must also be upgraded), software, and administration. Customizations will need to be upgraded or abandoned, according to the criticality of the feature.
   

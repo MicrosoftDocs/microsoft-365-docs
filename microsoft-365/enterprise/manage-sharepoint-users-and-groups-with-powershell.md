@@ -277,6 +277,6 @@ This report is fairly simple, and you can add more code to create more specific 
 
 [Manage SharePoint Online with PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[Manage Microsoft 365 with PowerShell](manage-office-365-with-office-365-powershell.md)
+[Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Getting started with PowerShell for Microsoft 365](getting-started-with-office-365-powershell.md)
+[Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)

@@ -48,7 +48,7 @@ Note that SharePoint group site provisioning is on-demand. The site will be prov
 
 ## Geo location codes
 
-[!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/office-365-multi-geo-locations.md)]
+[!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
 ## Related topics
 

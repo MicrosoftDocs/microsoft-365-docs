@@ -36,9 +36,8 @@ The adaptive bitrate streaming does all this in the background while the video p
   
 Here's a quick table that outlines the network requirements for each of the video playback qualities. The minimum bandwidth per person needed to play a video is 802Kbps.
   
-|||
+| Playback Quality | Network Speed |
 |:-----|:-----|
-|**Playback Quality** <br/> |**Network Speed** <br/> |
 |288p  <br/> |802Kbps  <br/> |
 |360p  <br/> |1.2 Mbps  <br/> |
 |576p  <br/> |2.5 Mbps  <br/> |

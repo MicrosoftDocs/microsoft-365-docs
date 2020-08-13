@@ -76,7 +76,7 @@ Get-OutlookAnywhere | FL server,*url*
     
 Ensure the URLs clients may connect to are listed as HTTPS service principal names in AAD.
   
-1. First, connect to AAD with [these instructions](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).
+1. First, connect to AAD with [these instructions](connect-to-microsoft-365-powershell.md).
 
  **Note** You need to use the _Connect-MsolService_ option from this page to be able to use the command below.
 

@@ -117,7 +117,7 @@ Ready to sign-up for [ExpressRoute for Office 365](https://aka.ms/ert)?
 
 [Performance troubleshooting plan for Office 365](performance-troubleshooting-plan.md)
 
-[Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+[Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md)
 
 [Office 365 network and performance tuning](network-planning-and-performance.md)
 

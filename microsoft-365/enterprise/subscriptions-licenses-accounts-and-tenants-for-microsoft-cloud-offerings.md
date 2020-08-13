@@ -151,7 +151,7 @@ If you purchased Azure and Microsoft 365 subscriptions separately and want to ac
  
 ## See also
 
-[Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md)
+[Microsoft cloud for enterprise architects illustrations](../solutions/cloud-architecture-models.md)
   
 [Architectural models for SharePoint, Exchange, Skype for Business, and Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   

@@ -26,9 +26,7 @@ description: "Summary: Describes considerations for network capacity, WAN accele
   
 Some network hardware may have limitations on the number of concurrent sessions that are supported. For organizations having more than 2,000 users, we recommend that they monitor their network devices to ensure they are capable of handling the additional Office 365 service traffic. Simple Network Management Protocol (SNMP) monitoring software can help you do this.
 
-||
-|:-----|
-| This article is part of [Network planning and performance tuning for Office 365](https://aka.ms/tune).|
+This article is part of [Network planning and performance tuning for Office 365](https://aka.ms/tune).
 
 On-premises outgoing Internet proxy settings also affect connectivity to Office 365 services for your client applications. You must also configure your network proxy devices to allow connections for Microsoft cloud services URLs and applications. Every organization is different. To get an idea for how Microsoft manages this process and the amount of bandwidth we provision, [read the case study](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
   

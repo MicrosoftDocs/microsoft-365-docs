@@ -154,7 +154,7 @@ For more information, see the section "More about managing large lists" in [Mana
 
 When you customize a web page, you may inadvertently cause poor performance with the page. A number of factors can have an impact, such as the complexity and size of the page, how many web parts are added, how many list or library items are initially displayed, and the way you code the page.
   
-For more information, see [Tune SharePoint Online performance](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance).
+For more information, see [Tune SharePoint Online performance](tune-sharepoint-online-performance.md).
   
 ## Best practices for using Project Online
 
@@ -174,7 +174,7 @@ For more information, see [Tune Project Online performance](https://support.offi
   
 ## What's the best way to report problems?
 
-Microsoft continually improves the overall performance of Office 365 by monitoring the network, measuring bandwidth and latency, improving page load time, reducing disk I/O, redesigning pages to use Minimal Download Strategy, adding hardware to data centers and adding more data centers. For more information about checking your current status and reporting issues, see [How to check Office 365 service health](https://docs.microsoft.com/office365/enterprise/view-service-health).
+Microsoft continually improves the overall performance of Office 365 by monitoring the network, measuring bandwidth and latency, improving page load time, reducing disk I/O, redesigning pages to use Minimal Download Strategy, adding hardware to data centers and adding more data centers. For more information about checking your current status and reporting issues, see [How to check Office 365 service health](view-service-health.md).
   
 ## See also
 

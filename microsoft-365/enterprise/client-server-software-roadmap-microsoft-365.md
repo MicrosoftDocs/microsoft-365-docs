@@ -106,11 +106,11 @@ For information about migrating users and data for specific Microsoft 365 worklo
 
 For server products in the Office 2007 release, the end of support has already passed. See these articles for the details:
 
-- [Exchange 2007 end of support roadmap](https://docs.microsoft.com/office365/enterprise/exchange-2007-end-of-support)
-- [SharePoint Server 2007 end of support roadmap](https://docs.microsoft.com/office365/enterprise/sharepoint-2007-end-of-support)
-- [Project Server 2007 end of support roadmap](https://docs.microsoft.com/office365/enterprise/project-server-2007-end-of-support)
+- [Exchange 2007 end of support roadmap](exchange-2007-end-of-support.md)
+- [SharePoint Server 2007 end of support roadmap](sharepoint-2007-end-of-support.md)
+- [Project Server 2007 end of support roadmap](project-server-2007-end-of-support.md)
 - [Office Communications Server end of support roadmap](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
-- [PerformancePoint Server 2007 end of support roadmap](https://docs.microsoft.com/office365/enterprise/pps-2007-end-of-support)
+- [PerformancePoint Server 2007 end of support roadmap](pps-2007-end-of-support.md)
 
 Rather than upgrading your server products in the Office 2007 release with server products in the Office 2010, Office 2013, or Office 2016 releases, consider:
 
@@ -120,9 +120,9 @@ Rather than upgrading your server products in the Office 2007 release with serve
 
 ### Office Server 2010
 
-The end of support for [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support) is **October 13, 2020**.
+The end of support for [Exchange Server 2010](exchange-2010-end-of-support.md) is **October 13, 2020**.
 
-The end of support for [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) is **April 13, 2021**.
+The end of support for [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) is **April 13, 2021**.
 
 Rather than upgrading these server products in the Office 2010 release with server products in the Office 2013 or Office 2016 release, consider:
 
@@ -148,7 +148,7 @@ For server products in the Office 2016 release, the end of support has not been 
 
 ## Migration for Microsoft Windows 7 and 8.1
 
-Windows 7 reached end of support on **January 14, 2020**. To migrate your devices running Windows 7 or Windows 8.1, you can perform an [in-place upgrade](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade). 
+Windows 7 reached end of support on **January 14, 2020**. To migrate your devices running Windows 7 or Windows 8.1, you can perform an in-place upgrade. 
 
 For additional methods, see [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). You can also [plan for Windows 10 deployment](https://aka.ms/planforwin10deployment) on your own.
 

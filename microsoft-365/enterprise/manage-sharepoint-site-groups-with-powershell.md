@@ -95,7 +95,7 @@ foreach ($y in $x)
 
 [Manage SharePoint Online users and groups with PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
 
-[Manage Microsoft 365 with PowerShell](manage-office-365-with-office-365-powershell.md)
+[Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Getting started with PowerShell for Microsoft 365](getting-started-with-office-365-powershell.md)
+[Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 

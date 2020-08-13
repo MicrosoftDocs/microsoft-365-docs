@@ -67,7 +67,7 @@ Organizations have several options to consider:
     |[Project Server 2007](project-server-2007-end-of-support.md) |[Project Server 2010](project-server-2010-end-of-support.md) |
     |[PerformancePoint Server 2007](pps-2007-end-of-support.md) | |
  
-- **Implement a hybrid solution with Microsoft 365 or Office 365.** Hybrid uses both your on-premises servers and applications and their cloud equivalents. If you are moving to the cloud in phases or you must keep some server and applications on premises, a hybrid solution might be right for your organization. See [Microsoft cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) for the details. 
+- **Implement a hybrid solution with Microsoft 365 or Office 365.** Hybrid uses both your on-premises servers and applications and their cloud equivalents. If you are moving to the cloud in phases or you must keep some server and applications on premises, a hybrid solution might be right for your organization. See [Microsoft cloud for enterprise architects illustrations](../solutions/cloud-architecture-models.md) for the details. 
     
 - **Move to the cloud with Microsoft 365 or Office 365.** For many customers, moving to the cloud is an efficient and cost-effective solution. By moving completely to the cloud, setup and ongoing management are easier and you seamlessly get all the latest features and security updates. See [What is Microsoft 365?](#what-is-microsoft-365) in this article for more information.
     
