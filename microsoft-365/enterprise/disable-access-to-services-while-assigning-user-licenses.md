@@ -28,7 +28,7 @@ Microsoft 365 subscriptions come with service plans for individual services. Mic
 
 ## Use the Azure Active Directory PowerShell for Graph module
 
-First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 
 Next, list the license plans for your tenant with this command.
@@ -62,7 +62,7 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 
 ## Use the Microsoft Azure Active Directory Module for Windows PowerShell
 
-First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 Next, run this command to see your current subscriptions:
   
@@ -181,10 +181,10 @@ This PowerShell command block:
     
 ## See also
 
-[Disable access to Microsoft 365 services with PowerShell](disable-access-to-services-with-office-365-powershell.md)
+[Disable access to Microsoft 365 services with PowerShell](disable-access-to-services-with-microsoft-365-powershell.md)
   
-[Disable access to Sway with PowerShell](disable-access-to-sway-with-office-365-powershell.md)
+[Disable access to Sway with PowerShell](disable-access-to-sway-with-microsoft-365-powershell.md)
   
-[Manage Microsoft 365 user accounts, licenses, and groups with PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Manage Microsoft 365 user accounts, licenses, and groups with PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
-[Manage Microsoft 365 with PowerShell](manage-office-365-with-office-365-powershell.md)
+[Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)

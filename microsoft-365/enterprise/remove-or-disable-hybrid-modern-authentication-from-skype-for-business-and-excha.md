@@ -56,7 +56,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity ""
 ```
 
-2. **Skype for Business Online**: [Connect to Skype for Business Online](manage-skype-for-business-online-with-office-365-powershell.md) with Remote PowerShell. Run the following command to disable Modern Authentication:
+2. **Skype for Business Online**: [Connect to Skype for Business Online](manage-skype-for-business-online-with-microsoft-365-powershell.md) with Remote PowerShell. Run the following command to disable Modern Authentication:
 
 ```powershell    
 Set-CsOAuthConfiguration -ClientAdalAuthOverride Disallowed

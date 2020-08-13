@@ -331,4 +331,4 @@ Here is your resulting configuration.
   
 ## Next step
   
-[Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)

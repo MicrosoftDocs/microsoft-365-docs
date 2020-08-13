@@ -268,9 +268,9 @@
     - name: Multi-geo
       items: 
         - name: Microsoft 365 Multi-Geo
-          href: office-365-multi-geo.md
+          href: microsoft-365-multi-geo.md
         - name: OneDrive and SharePoint multi-geo
-          href: multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md
+          href: multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md
         - name: Exchange Multi-Geo
           href: multi-geo-capabilities-in-exchange-online.md
         - name: Plan
@@ -336,7 +336,7 @@
     - name: Plan
       items: 
         - name: Identity models
-          href: about-office-365-identity.md
+          href: about-microsoft-365-identity.md
         - name: Hybrid identity
           href: plan-for-directory-synchronization.md
     - name: Deploy
@@ -360,9 +360,9 @@
             - name: Connect an on-premises network to an Azure virtual network
               href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
             - name: Deploy a directory synchronization server in Azure IaaS
-              href: deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md
+              href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
             - name: Deploy high availability federated authentication for Microsoft 365 in Azure
-              href: deploy-high-availability-federated-authentication-for-office-365-in-azure.md
+              href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
               items: 
                 - name: Phase 1 - Configure Azure
                   href: high-availability-federated-authentication-phase-1-configure-azure.md
@@ -383,7 +383,7 @@
         - name: Microsoft 365 help center
           href: https://docs.microsoft.com/office365/admin/admin-home
         - name: Tools to manage user accounts
-          href: manage-office-365-accounts.md
+          href: manage-microsoft-365-accounts.md
         - name: Add several users at the same time
           href: add-several-users-at-the-same-time.md
         - name: Recover deleted items in a user mailbox
@@ -463,7 +463,7 @@
         - name: Yammer
           href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
         - name: Activate rights management
-          href: activate-rms-in-office-365.md
+          href: activate-rms-in-microsoft-365.md
         - name: Configuring release options
           href: https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47
         - name: Train your users
@@ -487,7 +487,7 @@
         - name: Performance and tuning
           items: 
             - name: Tune Microsoft 365 performance
-              href: tune-office-365-performance.md
+              href: tune-microsoft-365-performance.md
             - name: Performance tuning using baselines and performance history
               href: performance-tuning-using-baselines-and-history.md
             - name: Tune Exchange Online performance
@@ -525,67 +525,67 @@
       href: device-management-roadmap-microsoft-365.md
 
 - name: Manage Microsoft 365 with PowerShell
-  href: manage-office-365-with-office-365-powershell.md
+  href: manage-microsoft-365-with-microsoft-365-powershell.md
   items: 
     - name: Getting started with PowerShell for Microsoft 365
-      href: getting-started-with-office-365-powershell.md
+      href: getting-started-with-microsoft-365-powershell.md
       items: 
         - name: Why you need to use PowerShell for Microsoft 365
-          href: why-you-need-to-use-office-365-powershell.md
+          href: why-you-need-to-use-microsoft-365-powershell.md
         - name: Connect to Microsoft 365 with PowerShell
-          href: connect-to-office-365-powershell.md
+          href: connect-to-microsoft-365-powershell.md
         - name: Connect to all Microsoft 365 services in a single Windows PowerShell window
-          href: connect-to-all-office-365-services-in-a-single-windows-powershell-window.md
+          href: connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md
         - name: Use PowerShell to create reports for Microsoft 365
-          href: use-windows-powershell-to-create-reports-in-office-365.md
+          href: use-windows-powershell-to-create-reports-in-microsoft-365.md
         - name: Cmdlet references for Microsoft 365 services
-          href: cmdlet-references-for-office-365-services.md
+          href: cmdlet-references-for-microsoft-365-services.md
         - name: Microsoft 365 community resources for PowerShell
-          href: office-365-powershell-community-resources.md
+          href: microsoft-365-powershell-community-resources.md
     - name: Manage Microsoft 365 user accounts, licenses, and groups
-      href: manage-user-accounts-and-licenses-with-office-365-powershell.md
+      href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
       items: 
         - name: User accounts
           items: 
             - name: Create user accounts
-              href: create-user-accounts-with-office-365-powershell.md
+              href: create-user-accounts-with-microsoft-365-powershell.md
             - name: View user accounts
-              href: view-user-accounts-with-office-365-powershell.md
+              href: view-user-accounts-with-microsoft-365-powershell.md
             - name: Configure user account properties
-              href: configure-user-account-properties-with-office-365-powershell.md
+              href: configure-user-account-properties-with-microsoft-365-powershell.md
             - name: Assign roles to user accounts
-              href: assign-roles-to-user-accounts-with-office-365-powershell.md
+              href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
             - name: Delete and restore user accounts
-              href: delete-and-restore-user-accounts-with-office-365-powershell.md
+              href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
             - name: Block user accounts
-              href: block-user-accounts-with-office-365-powershell.md
+              href: block-user-accounts-with-microsoft-365-powershell.md
         - name: Licenses and services
           items: 
             - name: View licenses and services
-              href: view-licenses-and-services-with-office-365-powershell.md
+              href: view-licenses-and-services-with-microsoft-365-powershell.md
             - name: View licensed and unlicensed users
-              href: view-licensed-and-unlicensed-users-with-office-365-powershell.md
+              href: view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md
             - name: Assign licenses to user accounts
-              href: assign-licenses-to-user-accounts-with-office-365-powershell.md
+              href: assign-licenses-to-user-accounts-with-microsoft-365-powershell.md
             - name: View account license and service details
-              href: view-account-license-and-service-details-with-office-365-powershell.md
+              href: view-account-license-and-service-details-with-microsoft-365-powershell.md
             - name: Disable access to services
-              href: disable-access-to-services-with-office-365-powershell.md
+              href: disable-access-to-services-with-microsoft-365-powershell.md
               items: 
                 - name: Disable access to Sway
-                  href: disable-access-to-sway-with-office-365-powershell.md
+                  href: disable-access-to-sway-with-microsoft-365-powershell.md
                 - name: Disable access to services while assigning user licenses
                   href: disable-access-to-services-while-assigning-user-licenses.md
                 - name: Remove licenses from user accounts
-                  href: remove-licenses-from-user-accounts-with-office-365-powershell.md
+                  href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
         - name: Groups
           items: 
             - name: Maintain group membership
-              href: maintain-group-membership-with-office-365-powershell.md
+              href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
-              href: manage-office-365-groups-with-powershell.md
+              href: manage-microsoft-365-groups-with-powershell.md
     - name: Manage SharePoint Online
-      href: manage-sharepoint-online-with-office-365-powershell.md
+      href: manage-sharepoint-online-with-microsoft-365-powershell.md
       items: 
         - name: Create SharePoint Online sites and add users
           href: create-sharepoint-sites-and-add-users-with-powershell.md
@@ -596,19 +596,19 @@
     - name: Manage Exchange Online
       href: https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell
     - name: Use PowerShell for email migration to Microsoft 365
-      href: use-powershell-for-email-migration-to-office-365.md
+      href: use-powershell-for-email-migration-to-microsoft-365.md
       items: 
         - name: Use PowerShell to perform a cutover migration to Microsoft 365
-          href: use-powershell-to-perform-a-cutover-migration-to-office-365.md
+          href: use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md
         - name: Use PowerShell to perform an IMAP migration to Microsoft 365
-          href: use-powershell-to-perform-an-imap-migration-to-office-365.md
+          href: use-powershell-to-perform-an-imap-migration-to-microsoft-365.md
         - name: Use PowerShell to perform a staged migration to Microsoft 365
-          href: use-powershell-to-perform-a-staged-migration-to-office-365.md
+          href: use-powershell-to-perform-a-staged-migration-to-microsoft-365.md
     - name: Manage Microsoft 365 with Windows PowerShell for Delegated Access partners
-      href: manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md
+      href: manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md
       items: 
         - name: Manage Microsoft 365 tenants with Windows PowerShell for Delegated Access partners
-          href: manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissio.md
+          href: manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md
         - name: Add a domain to a client tenancy with Windows PowerShell for Delegated Access partners
           href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
         - name: Connect to Exchange Online via remote Windows PowerShell for Delegated Access partners
@@ -618,12 +618,12 @@
     - name: Manage Microsoft Teams
       href: https://docs.microsoft.com/microsoftteams/teams-powershell-install
     - name: Manage Skype for Business Online
-      href: manage-skype-for-business-online-with-office-365-powershell.md
+      href: manage-skype-for-business-online-with-microsoft-365-powershell.md
       items: 
         - name: Manage Skype for Business Online policies
-          href: manage-skype-for-business-online-policies-with-office-365-powershell.md
+          href: manage-skype-for-business-online-policies-with-microsoft-365-powershell.md
         - name: Assign per-user Skype for Business Online policies
-          href: assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md
+          href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
     - name: Manage add-ins with Centralized Deployment PowerShell
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
 
@@ -643,7 +643,7 @@
         - name: Pass-through authentication
           href: pass-through-auth-m365-ent-test-environment.md
         - name: Federated authentication
-          href: federated-identity-for-your-office-365-dev-test-environment.md
+          href: federated-identity-for-your-microsoft-365-dev-test-environment.md
         - name: Azure AD Seamless Single Sign-on
           href: single-sign-on-m365-ent-test-environment.md
         - name: Multi-factor authentication

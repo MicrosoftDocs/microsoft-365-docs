@@ -201,4 +201,4 @@ Here's a short link you can use to come back: [https://aka.ms/o365cdns](https://
 
 [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
 
-[Tune Office 365 performance](tune-office-365-performance.md)
+[Tune Office 365 performance](tune-microsoft-365-performance.md)

@@ -58,7 +58,7 @@ To demonstrate identity-related features and capabilities, see:
   
    Enable and test pass-through authentication to an AD DS domain controller.
 
-- [Federated authentication](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Federated authentication](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
    Enable and test federated authentication to an AD DS domain controller.
 

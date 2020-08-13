@@ -28,11 +28,11 @@ For Microsoft 365 identity infrastructure in Azure:
 
 - [Using Azure AD for SharePoint Server Authentication](using-azure-ad-for-sharepoint-server-authentication.md)
 
-- [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [Connect an on-premises network to a Microsoft Azure virtual network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
-- [Deploy high availability federated authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+- [Deploy high availability federated authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
     
 For SharePoint Server 2013 workloads in Azure:
   

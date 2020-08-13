@@ -26,7 +26,7 @@ When the eDiscovery Manager or Administrator role is set for a particular satell
 > [!NOTE]
 > If it's necessary for an eDiscovery Manager to search across multiple SharePoint satellite locations, another user account will need to be created for the eDiscovery Manager which specifies the alternate satellite location where the OneDrive or SharePoint sites are located.
 
-[!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/office-365-multi-geo-locations.md)]
+[!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
 To set the Compliance Security Filter for a Region:
 

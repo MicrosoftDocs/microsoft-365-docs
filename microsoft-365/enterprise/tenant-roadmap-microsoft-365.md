@@ -49,7 +49,7 @@ In the deployment phase of your tenant implementation, [add the DNS domains](htt
 
 With Microsoft 365 Multi-Geo, your organization can expand its Microsoft 365 presence to multiple geographic regions and/or countries within your existing tenant.
 
-[Get started](office-365-multi-geo.md) in understanding, planning, configuring, and then administering with Microsoft 365 Multi-Geo.
+[Get started](microsoft-365-multi-geo.md) in understanding, planning, configuring, and then administering with Microsoft 365 Multi-Geo.
 
 ## Moving a tenant's geographic locations
 
