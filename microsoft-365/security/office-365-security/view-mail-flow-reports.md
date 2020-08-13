@@ -290,6 +290,8 @@ If you click the **Funnel** tab, by default, this view contains a chart and a da
 
 The aggregate view and data table view allow for 90 days of filtering.
 
+If you click **Filter** you can filter both the chart and the data table
+
 The chart is organized by **email count**.
   - **Total email**
   - **Email after edge protection**
@@ -314,8 +316,6 @@ The data table contains the following information, shown in descending date orde
  - **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**
 
 If you select a row in the data table, a further breakdown of the email counts are shown in a flyout.
-
-You can filter both the chart and the data table by clicking **Filter**.
 
 **Export**:
 
