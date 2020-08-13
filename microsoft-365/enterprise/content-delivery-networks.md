@@ -63,7 +63,7 @@ Content in **public** origins within the Office 365 CDN is accessible anonymousl
 
 The Office 365 CDN service is included as part of your SharePoint Online subscription.
 
-For more information about how to use the Office 365 CDN, see [Use the Office 365 content delivery network with SharePoint Online](use-office-365-cdn-with-spo.md).
+For more information about how to use the Office 365 CDN, see [Use the Office 365 content delivery network with SharePoint Online](use-microsoft-365-cdn-with-spo.md).
 
 To watch a series of short videos that provide conceptual and HOWTO information about using the Office 365 CDN, visit the [SharePoint Developer Patterns and Practices YouTube channel](https://aka.ms/sppnp-videos).
 
@@ -124,7 +124,7 @@ The CDNs in use by Office 365 are always subject to change and in many cases the
 
 |CDN  |Company  |Usage  |Link  |
 |---------|---------|---------|---------|
-|Office 365 CDN     |Akamai         |Generic assets in public origins, SharePoint user content in private origins         |[Use the Office 365 content delivery network with SharePoint Online](use-office-365-cdn-with-spo.md)         |
+|Office 365 CDN     |Akamai         |Generic assets in public origins, SharePoint user content in private origins         |[Use the Office 365 content delivery network with SharePoint Online](use-microsoft-365-cdn-with-spo.md)         |
 |Azure CDN     |Microsoft         |Custom code, SharePoint Framework solutions         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
 |Microsoft Ajax CDN (read only)     |Microsoft         |Common libraries for Ajax, jQuery, ASP.NET, Bootstrap, Knockout.js etc.         |[Microsoft Ajax CDN](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
 
@@ -197,7 +197,7 @@ Here's a short link you can use to come back: [https://aka.ms/o365cdns](https://
 
 [Office 365 URLs and IP address ranges](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 
-[Use the Office 365 content delivery network with SharePoint Online](use-office-365-cdn-with-spo.md)
+[Use the Office 365 content delivery network with SharePoint Online](use-microsoft-365-cdn-with-spo.md)
 
 [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
 

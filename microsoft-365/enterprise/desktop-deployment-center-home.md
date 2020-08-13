@@ -22,7 +22,7 @@ The body of content that comprised the Desktop Deployment Center has been deprec
 Use these resources to deploy modern desktops:
 
 - [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/)
-- [Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+- [Deploy Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
 - [Identity and device access policies](microsoft-365-policies-configurations.md)
 
