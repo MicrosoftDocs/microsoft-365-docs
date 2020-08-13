@@ -1,5 +1,5 @@
 ---
-title: "Recover deleted items in a user mailbox - Admin Help"
+title: "Recover deleted items in a user mailbox"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -22,7 +22,7 @@ ms.custom:
 description: "This article contains information for administrators to help them recover the purged items if they have not been permanently removed from the user mailbox."
 ---
 
-# Recover deleted items in a user mailbox - Admin Help
+# Recover deleted items in a user mailbox
 
 **This article is for administrators. Are you trying to recover deleted items in your own mailbox?** Try one of the following:
 - [Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)

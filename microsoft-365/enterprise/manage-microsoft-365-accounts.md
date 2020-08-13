@@ -1,5 +1,5 @@
 ---
-title: "Tools to manage Microsoft 365 accounts"
+title: "Tools to manage Microsoft 365 user accounts"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -24,7 +24,7 @@ ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: "Learn about what tools to use and how to manage Microsoft 365 accounts."
 ---
 
-# Tools to manage Microsoft 365 accounts
+# Tools to manage Microsoft 365 user accounts
 
 You can manage Microsoft 365 users in several different ways, depending on your configuration. You can manage users in the [Microsoft 365 admin center](https://admin.microsoft.com), Windows PowerShell, in Active Directory Domain Services (AD DS), or in the Azure Active Directory (Azure AD) admin portal. 
 

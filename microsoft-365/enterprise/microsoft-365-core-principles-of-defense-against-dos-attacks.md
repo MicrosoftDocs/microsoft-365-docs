@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Core Principles of Defense Against Denial-of-Service Attacks"
+title: "Microsoft 365 core principles of defense against denial-of-service attacks"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,7 +17,7 @@ f1.keywords:
 description: "How Microsoft utilizes the core principles of absorption, detection, and mitigation in its defense against denial-of-service (DoS) attacks."
 ---
 
-# Core Principles of Defense Against Denial-of-Service Attacks
+# Core principles of defense against denial-of-service attacks
 
 The three core principles when defending against network-based DoS attacks are Absorption, Detection, and Mitigation. Absorption happens before detection, and detection happens before mitigation. Absorption is the best defense against a DoS attack. If the attack can't be detected, it can't be mitigated. But if even the smallest DoS attack can't be absorbed, then services aren't going to survive long enough for the attack to be detected.
 
