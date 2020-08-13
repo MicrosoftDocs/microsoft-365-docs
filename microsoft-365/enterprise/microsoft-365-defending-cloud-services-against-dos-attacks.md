@@ -1,5 +1,5 @@
 ---
-title: "Defending Microsoft 365 Cloud Services Against Denial-of-Service Attacks"
+title: "Defending Microsoft 365 cloud services against denial-of-service attacks"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,7 +18,7 @@ description: In this article, learn how Microsoft defends its cloud services aga
 ms.custom: seo-marvel-apr2020
 ---
 
-# Defending Microsoft 365 Cloud Services Against Denial-of-Service Attacks
+# Defending Microsoft 365 cloud services against denial-of-service attacks
 
 Microsoft datacenters are protected by defense-in-depth security that includes perimeter fencing, video cameras, security personnel, and secure entrances that use biometrics, smartcard, and multi-factor authentication. The defense-in-depth security continues through every area of the facility and to each physical server unit. The [Microsoft Cloud Infrastructure and Operations Group](https://www.microsoft.com/cloud-platform/global-datacenters) delivers the core infrastructure and foundational technologies for our cloud services. Our datacenters comply with industry standards for physical security and reliability and are managed, monitored, and administered by Microsoft operations personnel.
 

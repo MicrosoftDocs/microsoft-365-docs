@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Network Connectivity Principles"
+title: "Microsoft 365 network connectivity principles"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -15,11 +15,11 @@ search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 f1.keywords:
 - NOCSH
-description: This article provides the most recent guidance for securely optimizing Office 365 network connectivity.
+description: This article provides the most recent guidance for securely optimizing Microsoft 365 network connectivity.
 ms.custom: seo-marvel-apr2020
 ---
 
-# Microsoft 365 Network Connectivity Principles
+# Microsoft 365 network connectivity principles
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
