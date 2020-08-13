@@ -29,9 +29,7 @@ description: "Summary: Describes the SSL certificates needed for Exchange on-pre
 
 To encrypt communications between your clients and the Microsoft 365 environment, third-party Secure Socket Layer (SSL) certificates must be installed on your infrastructure servers.
 
-||
-|:-----|
-| This article is part of [Network planning and performance tuning for Microsoft 365](https://aka.ms/tune).|
+This article is part of [Network planning and performance tuning for Microsoft 365](https://aka.ms/tune).
    
 Certificates are required for the following Microsoft 365 components:
   

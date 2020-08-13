@@ -182,6 +182,8 @@ If the answer to your migration needs is somewhere between the self-control offe
   
 If you decide that a hybrid SharePoint Server farm will benefit your business, familiarize yourself with the existing types of hybrid and how to configure the connection between your on-premises SharePoint farm and your Microsoft 365 subscription.
   
+| Option | Description |
+|:-----|:-----|
 [Microsoft compliance offerings](https://go.microsoft.com/fwlink/?linkid=843165).  <br/> |[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) assistance for migration is limited.  <br/> Much of the upgrade will be manual, or via the SPO Migration API described in the [SharePoint Online and OneDrive Migration Content Roadmap](https://go.microsoft.com/fwlink/?linkid=843184).  <br/> |
 |Neither Microsoft Support Engineers nor employees in the datacenter have unrestricted admin access to your subscription.  <br/> |There can be additional costs if hardware infrastructure needs to be upgraded to support the newer version of SharePoint, or if a secondary farm is required for upgrade.  <br/> |
 |Partners can assist with the one-time job of migrating your data to SharePoint Online.  <br/> ||

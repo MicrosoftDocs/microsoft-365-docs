@@ -175,8 +175,10 @@ Another option (one that may be the best of both on-premises and online worlds f
 If you decide a hybrid SharePoint Server farm is your migration goal, be sure to plan what sites and users you should move to online, and which need to remain on-premises. A review and ranking of your SharePoint Server farm's content (determining what data is High, Medium, or Low impact to your company) can be helpful to making this decision. It may be that the only thing you need to share with SharePoint Online is (a) user accounts for login, and (b) the SharePoint Server search index -- this may not be clear until you look at how your sites are used. If your company later decides to migrate all of your content to SharePoint Online, you can move all remaining accounts and data online and decommission your on-premises farm, and management/administration of the SharePoint farm will be done through Microsoft 365 consoles from that point on.
   
 Be sure to familiarize yourself with the existing types of hybrid and how to configure the connection between your on-premises SharePoint farm and your Microsoft 365 subscription.
-  
-[Microsoft compliance offerings](https://go.microsoft.com/fwlink/?linkid=843165).  <br/> |[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) assistance for migration is limited.  <br/> Much of the upgrade will be manual, or via the SPO Migration API described in the [SharePoint Online and OneDrive Migration Content Roadmap](https://go.microsoft.com/fwlink/?linkid=843184).  <br/> |
+
+| Option | Description |
+|:-----|:-----|
+|[Microsoft compliance offerings](https://go.microsoft.com/fwlink/?linkid=843165).  <br/> |[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) assistance for migration is limited.  <br/> Much of the upgrade will be manual, or via the SPO Migration API described in the [SharePoint Online and OneDrive Migration Content Roadmap](https://go.microsoft.com/fwlink/?linkid=843184).  <br/> |
 |Neither Microsoft Support Engineers nor employees in the datacenter have unrestricted admin access to your subscription.  <br/> |There can be additional costs if hardware infrastructure needs to be upgraded to support the newer version of SharePoint, or if a secondary farm is required for upgrade.  <br/> |
 |Partners can assist with the one-time job of migrating your data to SharePoint Online.  <br/> ||
 |Online products are updated automatically across the service meaning that though features may deprecate, there is no true end of support.  <br/> ||
