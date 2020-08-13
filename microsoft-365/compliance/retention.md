@@ -110,7 +110,7 @@ Preservation Lock ensures your organization can meet such regulatory requirement
   
 When a retention policy is locked:
 
-- No one can it turn off
+- No one can turn it off
 - Locations can be added but not removed
 - Content subject to the policy can't be modified or deleted during the retention period
 - You can extend a retention period but not decrease it
