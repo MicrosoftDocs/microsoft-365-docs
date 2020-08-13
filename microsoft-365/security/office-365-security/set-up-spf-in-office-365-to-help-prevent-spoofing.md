@@ -56,7 +56,9 @@ Gather this information:
 
 1. Ensure that you're familiar with the SPF syntax in the following table.
 
-   ||If you're using...|Common for customers?|Add this...|
+   ****
+
+   |<!-- -->|If you're using...|Common for customers?|Add this...|
    |---|---|---|---|
    |1|Any email system (required)|Common. All SPF TXT records start with this value|v=spf1|
    |2|Exchange Online|Common|include:spf.protection.outlook.com|
@@ -65,6 +67,7 @@ Gather this information:
    |5|Third-party email system|Not common|include:\<domain name\>  <br/> Where domain name is the domain name of the third party email system.|
    |6|On-premises mail system. For example, Exchange Online Protection plus another mail system|Not common| Use one of these for each additional mail system: <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  include:\<_domain name_\>  <br/>  Where the value for \<_IP address_\> is the IP address of the other mail system and \<_domain name_\> is the domain name of the other mail system that sends mail on behalf of your domain.|
    |7|Any email system (required)|Common. All SPF TXT records end with this value|\<_enforcement rule_\>  <br/> This can be one of several values. We recommend that you use **-all**.|
+   |
 
 2. If you haven't already done so, form your SPF TXT record by using the syntax from the table:
 

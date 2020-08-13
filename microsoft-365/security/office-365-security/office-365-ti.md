@@ -91,19 +91,22 @@ Office 365 Advanced Threat Protection uses role-based access control. Permission
 
 > [!TIP]
 > Although some roles, such as Security Administrator, can be assigned in the Security & Compliance Center, consider using either the Microsoft 365 admin center or Azure Active Directory instead. For information about roles, role groups, and permissions, see the following resources:
+>
 > - [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+>
 > - [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
+****
 
-|Activity |Roles and permissions |  
-|:-----|:-----|
-|Use the Threat dashboard (or the new [Security dashboard](security-dashboard.md))<br/> <br/>View information about recent or current threats  <br/> |One of the following: <br/>- **Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/> <br/>These roles can be assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). |
-|Use [Threat Explorer (and real-time detections)](threat-explorer.md) to analyze threats  <br/> |One of the following: <br/>- **Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/> <br/>These roles can be assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). |
-|View Incidents (also referred to as Investigations) <br/> Add email messages to an incident  <br/> |One of the following: <br/>- **Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/> <br/>These roles can be assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).  |
-|Trigger email actions in an incident <br/> <br/> Find and delete suspicious email messages  <br/> |One of the following: <br/>- **Global Administrator**  <br/> - **Security Administrator** plus the **Search and Purge** role<br/><br/>The **Global Administrator** and **Security Administrator** roles can be assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). <br/><br/>The **Search and Purge** role must be assigned in the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). |
-|Integrate Office 365 Advanced Threat Protection Plan 2 with Microsoft Defender Advanced Threat Protection  <br/><br/> Integrate Office 365 Advanced Threat Protection Plan 2 with a SIEM server  <br/> |Either the **Global Administrator** or the **Security Administrator** role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).<br/>--- **plus** ---<br/>An appropriate role assigned in additional applications (such as [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) or your SIEM server)  |
-   
-    
+|Activity|Roles and permissions|
+|---|---|
+|Use the Threat dashboard (or the new [Security dashboard](security-dashboard.md))<br/> <br/>View information about recent or current threats|One of the following: <br/>- **Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/> <br/>These roles can be assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).|
+|Use [Threat Explorer (and real-time detections)](threat-explorer.md) to analyze threats|One of the following: <br/>- **Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/> <br/>These roles can be assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).|
+|View Incidents (also referred to as Investigations) <br/> Add email messages to an incident|One of the following: <br/>- **Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/> <br/>These roles can be assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).|
+|Trigger email actions in an incident <br/> <br/> Find and delete suspicious email messages|One of the following: <br/>- **Global Administrator**  <br/> - **Security Administrator** plus the **Search and Purge** role<br/><br/>The **Global Administrator** and **Security Administrator** roles can be assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). <br/><br/>The **Search and Purge** role must be assigned in the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)).|
+|Integrate Office 365 Advanced Threat Protection Plan 2 with Microsoft Defender Advanced Threat Protection  <br/><br/> Integrate Office 365 Advanced Threat Protection Plan 2 with a SIEM server|Either the **Global Administrator** or the **Security Administrator** role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).<br/>--- **plus** ---<br/>An appropriate role assigned in additional applications (such as [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) or your SIEM server)|
+|
+
 ## Next steps
 
 - [Learn about Threat Trackers - New and Noteworthy](threat-trackers.md)
