@@ -134,7 +134,7 @@ Internet egress further away from users than these locations will reduce perform
 
 ### What should I do?
 
-For more information about how to mitigate performance issues related to this insight, see [Office 365 global tenant performance optimization for China users](https://docs.microsoft.com/office365/enterprise/office-365-networking-china).
+For more information about how to mitigate performance issues related to this insight, see [Office 365 global tenant performance optimization for China users](microsoft-365-networking-china.md).
 
 ## Related topics
 

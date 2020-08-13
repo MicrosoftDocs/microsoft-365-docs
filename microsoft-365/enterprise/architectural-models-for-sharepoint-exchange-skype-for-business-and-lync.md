@@ -183,7 +183,7 @@ These IT posters show Azure-based solutions using SharePoint Server 2013 in a la
   
 [Microsoft cloud for enterprise architects illustrations](../solutions/cloud-architecture-models.md)
   
-[Microsoft 365 for enterprise Test Lab Guides](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
+[Microsoft 365 Test Lab Guides](m365-enterprise-test-lab-guides.md)
   
 [Hybrid solutions](hybrid-solutions.md)
 

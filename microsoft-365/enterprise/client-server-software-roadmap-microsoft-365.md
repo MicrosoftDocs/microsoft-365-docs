@@ -17,13 +17,6 @@ description: The roadmap to set up client and server software for Microsoft 365.
 
 # Client and server software roadmap for Microsoft 365
 
-<!--
-Add links to articles after merge
-
-Fix links, search for: https://docs.microsoft.com/office365/enterprise/
-
---> 
-
 Most enterprise organizations have a heterogeneous environment with multiple releases of operating systems, client software, and server software. Microsoft 365 for enterprise includes the most secure versions of these key components of your IT infrastructure with productivity features that are designed to take advantage of cloud technologies.
 
 To maximize the business value of the Microsoft 365 for enterprise integrated suite of products, begin planning and implementing a strategy to migrate releases of:

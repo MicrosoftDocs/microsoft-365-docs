@@ -23,10 +23,6 @@ When you create a Microsoft 365 tenant, you assign it to a specific geographical
 
 A well-planned and executed tenant configuration is critical to getting it ready for the foundational services of networking and identity.
 
-<!--
-Add links to articles after merge
---> 
-
 ## Plan
 
 In the planning phase of your tenant implementation:
@@ -59,5 +55,5 @@ Get started in understanding and requesting a geo data move with [Moving core da
 
 ## Next step
 
-Start your tenant planning with [Subscriptions, licenses, and tenants](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
+Start your tenant planning with [Subscriptions, licenses, accounts, and tenants](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
 

@@ -35,10 +35,6 @@ This two-page poster is a quick way to ramp up on identity concepts and configur
 
 You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
-<!--
-Add links to articles after merge
---> 
-
 ## Plan
 
 In the planning phase of your identity implementation:

@@ -63,7 +63,7 @@ Content in **public** origins within the Office 365 CDN is accessible anonymousl
 
 The Office 365 CDN service is included as part of your SharePoint Online subscription.
 
-For more information about how to use the Office 365 CDN, see [Use the Office 365 content delivery network with SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo).
+For more information about how to use the Office 365 CDN, see [Use the Office 365 content delivery network with SharePoint Online](use-microsoft-365-cdn-with-spo.md).
 
 To watch a series of short videos that provide conceptual and HOWTO information about using the Office 365 CDN, visit the [SharePoint Developer Patterns and Practices YouTube channel](https://aka.ms/sppnp-videos).
 
@@ -124,7 +124,7 @@ The CDNs in use by Office 365 are always subject to change and in many cases the
 
 |CDN  |Company  |Usage  |Link  |
 |---------|---------|---------|---------|
-|Office 365 CDN     |Akamai         |Generic assets in public origins, SharePoint user content in private origins         |[Use the Office 365 content delivery network with SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)         |
+|Office 365 CDN     |Akamai         |Generic assets in public origins, SharePoint user content in private origins         |[Use the Office 365 content delivery network with SharePoint Online](use-microsoft-365-cdn-with-spo.md)         |
 |Azure CDN     |Microsoft         |Custom code, SharePoint Framework solutions         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
 |Microsoft Ajax CDN (read only)     |Microsoft         |Common libraries for Ajax, jQuery, ASP.NET, Bootstrap, Knockout.js etc.         |[Microsoft Ajax CDN](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
 
@@ -169,7 +169,7 @@ For customers that want to segregate requests destined for a Microsoft or Office
 
 The list of FQDNs and how they leverage CDNs change over time. Refer to our published [Office 365 URLs and IP address ranges](https://go.microsoft.com/fwlink/p/?LinkID=293744) page to get up to date on the latest FQDNs that leverage CDNs.
 
-You can also use the [Office 365 IP Address and URL Web service](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service) to request the current Office 365 URLs and IP address ranges formatted as CSV or JSON.
+You can also use the [Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md) to request the current Office 365 URLs and IP address ranges formatted as CSV or JSON.
 
 ## Can I use my own CDN and cache content on my local network?
 
@@ -193,11 +193,11 @@ Here's a short link you can use to come back: [https://aka.ms/o365cdns](https://
 
 [Assessing Office 365 network connectivity](assessing-network-connectivity.md)
 
-[Managing Office 365 endpoints](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
+[Managing Office 365 endpoints](managing-office-365-endpoints.md)
 
 [Office 365 URLs and IP address ranges](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 
-[Use the Office 365 content delivery network with SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)
+[Use the Office 365 content delivery network with SharePoint Online](use-microsoft-365-cdn-with-spo.md)
 
 [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
 
