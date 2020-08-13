@@ -70,7 +70,7 @@ The following is in scope for this trial lab environment guide:
 The following are out of scope of this deployment guide:
 
 -   Configuration of third-party solutions that might integrate with Microsoft
-    Defender ATP
+    Threat Protection
 -   Penetration testing in production environment
 
 ## Next step
