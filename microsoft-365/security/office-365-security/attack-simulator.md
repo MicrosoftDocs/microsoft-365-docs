@@ -109,7 +109,10 @@ If you're going to use one of the built-in templates or create the email message
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>All of the URLs are intentionally http, not https.</li><li>A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign.</li></ul>
+     >
+     > - All of the URLs are intentionally http, not https.
+     >
+     > - A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign.
 
    - **Custom Landing Page URL**: Enter an optional landing page where users are taken if they click the phishing link and enter their credentials. This link replaces the default landing page. For example, if you have internal awareness training, you can specify that URL here.
 
@@ -183,7 +186,12 @@ If you're going to use one of the built-in templates or create the email message
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>All of the URLs are intentionally http, not https.</li><li>A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign.</li><li>You are required to select a URL. For <b>Spear Phishing (Attachment)</b> campaigns, you can remove the link from the body of the message in the next step (otherwise, the message will contain both a link <b>and</b> an attachment).</li></ul>
+     >
+     > - All of the URLs are intentionally http, not https.
+     >
+     > - A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign.
+     >
+     > - You are required to select a URL. For **Spear Phishing (Attachment)** campaigns, you can remove the link from the body of the message in the next step (otherwise, the message will contain both a link **and** an attachment).
 
    - **Attachment Type**: This setting is only available in **Spear Phishing (Attachment)** campaigns. Click the drop down and select **.DOCX** or **.PDF** from the list.
 

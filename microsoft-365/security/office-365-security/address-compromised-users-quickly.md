@@ -26,7 +26,7 @@ The compromised user security playbook enables your organization's security team
 
 - Speed up detection of compromised user accounts;
 
-- Limit the scope of a breach when an account is compromised; and 
+- Limit the scope of a breach when an account is compromised; and
 
 - Respond to compromised users more effectively and efficiently.
 
@@ -61,11 +61,13 @@ You have a few options for navigating to a list of restricted users. For example
 
 2. In the navigation pane, choose **Alerts** > **Dashboard**.
 
-3. In the **Other alerts** widget, choose **Restricted Users**.<br/>
-   ![Other alerts widget](/microsoft-365/media/office365atp-otheralertswidget.jpg)<br/>
-   This opens the list of restricted users.<br/>![Restricted users in Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg) 
+3. In the **Other alerts** widget, choose **Restricted Users**.
 
-4. Select a user account in the list to view details and take action, such as [releasing the restricted user](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam). 
+   ![Other alerts widget](/microsoft-365/media/office365atp-otheralertswidget.jpg)
+
+   This opens the list of restricted users.<br/>![Restricted users in Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
+
+4. Select a user account in the list to view details and take action, such as [releasing the restricted user](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
 ### View details about automated investigations
 
@@ -75,7 +77,7 @@ To learn more, see [View details of an investigation](https://docs.microsoft.com
 
 ## Keep the following points in mind
 
-- **Stay on top of your alerts**. As you know, the longer a compromise goes undetected, the larger the potential for widespread impact and cost to your organization, customers, and partners. Early detection and timely response are critical to mitigate threats, and especially when a user's account is compromised. 
+- **Stay on top of your alerts**. As you know, the longer a compromise goes undetected, the larger the potential for widespread impact and cost to your organization, customers, and partners. Early detection and timely response are critical to mitigate threats, and especially when a user's account is compromised.
 
 - **Automation assists, but does not replace, your security operations team**. Automated investigation and response capabilities can detect a compromised user early on, but your security operations team will likely need to engage and do some investigation and remediation. Need some help with this? See [Review and approve actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#review-and-approve-actions).
 
