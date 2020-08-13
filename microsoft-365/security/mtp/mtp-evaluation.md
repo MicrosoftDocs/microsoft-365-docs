@@ -26,7 +26,7 @@ ms.topic: conceptual
 
 The purpose of creating this trial lab environment is to illustrate the comprehensive, integrated, and intelligent capabilities of Microsoft Threat Protection in detection, prevention, investigation, and response that you can use in your organization. 
 
-This guide takes you through the steps to start your Microsoft Threat Protection evaluation based on the recommended deployment paths. The goal is to help you set up the integrated Microsoft Threat Protection services in a lab environment or as a proof of concept (POC) when presenting to security solution decision makers in your organization. When you’re done running your attack simulations, automated investigation and response, and are satisfied with the results, you can deploy it in your production environment with the help of Microsoft Technical Sales Professionals or experts in your organization. 
+This guide takes you through the steps to start your Microsoft Threat Protection evaluation based on the recommended deployment paths. The goal is to help you set up the integrated Microsoft Threat Protection services in a lab environment or when running a pilot project to present to security solution decision makers in your organization. When you’re done running your attack simulations, automated investigation and response, and are satisfied with the results, you can deploy it in your production environment with the help of Microsoft Technical Sales Professionals or experts in your organization. 
 
 This guide will help you:
 - Set up your lab server and computers
