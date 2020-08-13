@@ -42,6 +42,8 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 
 To create and configure anti-spam policies, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
+****
+
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Spam** detection action <br/><br/> _SpamAction_|**Move message to Junk Email folder** <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`||
@@ -66,6 +68,8 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 There are several other Advanced Spam Filter (ASF) settings in anti-spam policies that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this topic.
 
 We recommend that you turn these ASF settings **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
+
+****
 
 |Security feature name|Comment|
 |---|---|
@@ -92,6 +96,8 @@ To create and configure outbound spam policies, see [Configure outbound spam fil
 
 For more information about the default sending limits in the service, see [Sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
 
+****
+
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Maximum number of recipients per user: External hourly limit** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
@@ -103,6 +109,8 @@ For more information about the default sending limits in the service, see [Sendi
 ### EOP anti-malware policy settings
 
 To create and configure anti-malware policies, see [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
+
+****
 
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
@@ -116,6 +124,8 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 ### EOP default anti-phishing policy settings
 
 For more information about these settings, see [Spoof settings](set-up-anti-phishing-policies.md#spoof-settings). To configure these settings, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+
+****
 
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
@@ -143,6 +153,8 @@ EOP customers get basic anti-phishing as previously described, but Office 365 AT
 
 For more information about these settings, see [Impersonation settings in ATP anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies). To configure these settings, see [Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md).
 
+****
+
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |Protected users: **Add users to protect** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|On <br/><br/> `$true` <br/><br/> \<list of users\>|On <br/><br/> `$true` <br/><br/> \<list of users\>|Depends on your organization, but we recommend adding users in key roles. Internally, these might be your CEO, CFO, and other senior leaders. Externally, these could include council members or your board of directors.|
@@ -164,6 +176,8 @@ For more information about these settings, see [Impersonation settings in ATP an
 
 Note that these are the same settings that are available in [anti-spam policy settings in EOP](#eop-anti-spam-policy-settings).
 
+****
+
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Enable anti-spoofing protection** <br/><br/> _EnableAntispoofEnforcement_|On <br/><br/> `$true`|On <br/><br/> `$true`||
@@ -174,6 +188,8 @@ Note that these are the same settings that are available in [anti-spam policy se
 #### Advanced settings in ATP anti-phishing policies
 
 For more information about this setting, see [Advanced phishing thresholds in ATP anti-phishing policies](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies). To configure this setting, see [Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md).
+
+****
 
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
@@ -187,6 +203,8 @@ To configure these settings, see [Set up Office 365 ATP Safe Links policies](set
 
 **Note**: In PowerShell, you use the [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
 
+****
+
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Use Safe Links in: Office 365 applications** <br/><br/> _EnableSafeLinksForO365Clients_|On <br/><br/> `$true`|On <br/><br/> `$true`|Use ATP Safe Links in Office 365 desktop and mobile (iOS and Android) clients.|
@@ -198,6 +216,8 @@ To configure these settings, see [Set up Office 365 ATP Safe Links policies](set
 #### Safe Links policy settings in custom policies for specific users
 
 **Note**: In PowerShell, you use the [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) and [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy] cmdlets for these settings.
+
+****
 
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
@@ -218,6 +238,8 @@ To configure these settings, see [Set up Office 365 ATP Safe Attachments policie
 
 **Note**: In PowerShell, you use the [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
 
+****
+
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** <br/><br/> _EnableATPForSPOTeamsODB_|On <br/><br/> `$true`|On <br/><br/> `$true`||
@@ -228,6 +250,8 @@ To configure these settings, see [Set up Office 365 ATP Safe Attachments policie
 #### Safe Attachments policy settings in custom policies for specific users
 
 **Note**: In PowerShell, you use the [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) and [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlets for these settings.
+
+****
 
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
