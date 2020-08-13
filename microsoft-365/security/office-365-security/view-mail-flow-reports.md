@@ -292,7 +292,7 @@ The aggregate view and data table view allow for 90 days of filtering.
 
 If you click **Filter**, you can filter both the chart and the data table.
 
-The chart is organized by **email count**.
+The chart is organized by **email count**:
   - **Total email**
   - **Email after edge protection**
   - **Email after Anti-malware, file reputation, file type block**
@@ -302,7 +302,7 @@ The chart is organized by **email count**.
   - **Email after File and URL detonation (ATP only)**
   - **Email detected as benign after Post-delivery protection (URL click time protection)**
 
-To view the emails filtered by EOP by ATP separately, click on the value in the chart legend.
+To view the emails filtered by EOP or ATP separately, click on the value in the chart legend.
 
 The data table contains the following information, shown in descending date order:
  - **Date**
@@ -315,7 +315,7 @@ The data table contains the following information, shown in descending date orde
  - **File and URL detonation (ATP)**
  - **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**
 
-If you select a row in the data table, a further breakdown of the email counts are shown in a flyout.
+If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.
 
 **Export**:
 
