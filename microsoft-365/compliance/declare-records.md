@@ -29,8 +29,8 @@ You use [retention labels](retention.md#retention-labels) to mark content as a r
 
 When you create a [retention label](retention.md#retention-labels), select the option to mark the content as a record.
 
->[!NOTE]:
->The option to mark the content as a record is not available when you create or configure retention labels from **Information Governance** in the Microsoft 365 compliance center. Instead, you must use **Records Management**.
+>[!NOTE] 
+> The option to mark the content as a record is not available when you create or configure retention labels from **Information Governance** in the Microsoft 365 compliance center. Instead, you must use **Records Management**.
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Records Management** \> **File Plan**. On the **File plan** page, select **Create a label**.
 
