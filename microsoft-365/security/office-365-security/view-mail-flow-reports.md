@@ -277,21 +277,20 @@ Each exported .csv file is limited to 150,000 rows. If the data for that day con
 
 ### Funnel view for the Mailflow status report
 
-The funnel view shows you the automatic filtering of incoming and outgoing emails in your organization. You can view the total number of emails, and how the were filtered. Emails are
-categorized by protection type such as anti-malware protection, anti-phishing, anti-spam and edge protection. It provides an insight into the overall impact of of Microsoft's threat protection features in your organization.
+The funnel view is only availble in EOP or above, though ATP/E5 customers will get additional categories. The funnel view shows you how Microsoft's email threat protection features filter incoming and outgoing emails in your organization. It provides details on the total email count, and the impact the different types of protection configured, including edge protection, anti-malware, anti-phishing, anti-spam and anti-spoofing have on this count.
 
 If you click the **Funnel** tab, by default, this view contains a chart and a data table that's configured with the following filters:
 
 - **Date**: The last 7 days.
 
 - **Direction**:
+ - **Inbound**
+ - **Outbound**
+ - **Intra-org**: this count is for messages within a tenant i.e sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound)
 
-  - **Inbound**
-  - **Outbound**
-  - **Intra-org** (counted separately from **Inbound** and **Outbound**)
+The aggregate view and data table view allow for 90 days of filtering.
 
-The chart is organized by **Funnel** order.
-
+The chart is organized by **email count**.
  - **Total email**
  - **Email after edge protection**
  - **Email after Anti-malware, file reputation, file type block**
@@ -301,29 +300,30 @@ The chart is organized by **Funnel** order.
  - **Email after File and URL detonation (ATP only)**
  - **Email detected as benign after Post-delivery protection (URL click time protection)**
 
-You can changes these filters by clicking **Filter** or by clicking a value in the chart legend. The funnel view can be filtered to display data up to 90 days in the past.
+It see emails filtered by EOP features only or ATP features only click on the value in the chart legend.
 
-The table contains the following information, for the current filters, shown in descending date order:
-
+The data table contains the following information, shown in descending date order:
  - **Date**
  - **Total email**
  - **Edge protection**
  - **Anti-malware, file reputation, file type block**
  - **Anti-phish, URL reputation, Brand impersonation, Anti-spoof**
  - **Anti-spam, bulk mail filtering**
- - **User and domain impersonation (ATP)**  
+ - **User and domain impersonation (ATP)**
  - **File and URL detonation (ATP)**
  - **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**
 
-On selecting a row in the able the flyout provides a more detailed breakdown of number of email filtered out by detection type.
+If you select a row in the data table, a further breakdown of the email counts are shown in a flyout.
+
+You can filter both the chart and the data table by clicking **Filter**.
 
 **Export**:
 
-For the funnel view, on clicking **Export**, you can select from the following options: 
+For the funnel view, on clicking **Export**, under **Options** you can select one of the following: 
 - **Summary (with data for last 90 days at most)**
 - **Details (with data for last 30 days at most)**
 
-Under **Date**, select a range, and then click **Apply**. Data for the current filters will be exported to a .csv file. 
+Under **Date**, choose a range, and then click **Apply**. Data for the current filters will be exported to a .csv file.
 
 Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
 
