@@ -6,6 +6,9 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
 # Prerequisites for Microsoft Managed Desktop
@@ -40,7 +43,7 @@ Microsoft Managed Desktop requires certain license options in order to function.
 
 |License option |Available in *any* of these license products |How Microsoft Managed Desktop uses it|
 |-------------|-------------|-------------|
-|Azure Active Directory Premium P1     |- Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Security Add-on<br>- Enterprise Mobility + Security E5<br>- Enterprise Mobility + Security E3<br>- Azure Active Directory Premium P1|  Provides access to Microsoft Cloud Services; allows AutoPilot to register devices      |
+|Azure Active Directory Premium P2     |- Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Security Add-on<br>- Enterprise Mobility + Security E5<br>- Enterprise Mobility + Security E3<br>- Azure Active Directory Premium P2|  Provides access to Microsoft Cloud Services; allows AutoPilot to register devices      |
 |Microsoft Intune | - Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Security Add-on<br>- Enterprise Mobility + Security E5<br>- Enterprise Mobility + Security E3<br>- Microsoft Intune  |  Necessary to register devices, deploy updates, and manage devices       |
 |Windows 10 Enterprise  |- Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Security Add-on<br>- Windows 10 Enterprise E3<br>- Windows 10 Enterprise E5 | Provides enterprise features of Windows 10       |
 |Microsoft Defender Advanced Threat Protection | - Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Security Add-on<br>- Windows 10 Enterprise E5<br>- Microsoft Defender Advanced Threat Protection   |  Provides detection, monitoring, alerting and response to threats  |

@@ -9,6 +9,9 @@ _repo.*/
 .DS_Store
 *.db
 
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
 .openpublishing.buildcore.ps1
 .vs/slnx.sqlite
 .vs/slnx.sqlite

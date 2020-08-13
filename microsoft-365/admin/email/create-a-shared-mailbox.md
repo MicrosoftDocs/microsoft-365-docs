@@ -154,6 +154,9 @@ You can access a shared mailbox on a mobile device in two ways:
 - Open your browser, sign in, and then go to Outlook on the web. From Outlook on the web you'll be able to access the shared mailbox.
 
     For instructions, see <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Add a shared mailbox to Outlook on the web</a>.
+    
+> [!NOTE]
+> Shared mailbox can only be added to Outlook for iOS app or the Outlook for Android mobile app
 
 ## Use the shared calendar
 
