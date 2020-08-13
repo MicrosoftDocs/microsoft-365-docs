@@ -21,7 +21,7 @@ Specifically:
 - [Network security](#network-security) – VPN information and Microsoft Managed Desktop recommended solution and settings
 - [Information security](#information-security) – optional available services to further protect sensitive information 
 
-For information about data storage, usage, and security practices used by Microsoft Managed Desktop, please download our white paper at [https://aka.ms/mmd-data](https://aka.ms/mmd-data).
+For information about data storage, usage, and security practices used by Microsoft Managed Desktop, see our white paper at [https://aka.ms/mmd-data](https://aka.ms/mmd-data).
 
 
 ## Device security
