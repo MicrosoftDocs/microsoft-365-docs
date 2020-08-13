@@ -49,6 +49,6 @@ For SharePoint Server 2013 workloads in Azure:
   
 [Microsoft cloud for enterprise architects illustrations](../solutions/cloud-architecture-models.md)
   
-[Microsoft 365 for enterprise Test Lab Guides (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
+[Microsoft 365 for enterprise Test Lab Guides (TLGs)](m365-enterprise-test-lab-guides.md)
   
 [Architectural models for SharePoint, Exchange, Skype for Business, and Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)

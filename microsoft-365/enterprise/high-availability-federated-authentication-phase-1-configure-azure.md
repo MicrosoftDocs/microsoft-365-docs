@@ -307,7 +307,7 @@ Use [Phase 2: Configure domain controllers](high-availability-federated-authenti
 
 [Deploy high availability federated authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Federated identity for your Microsoft 365 dev/test environment](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-microsoft-365-dev-test-environment)
+[Federated identity for your Microsoft 365 dev/test environment](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
 

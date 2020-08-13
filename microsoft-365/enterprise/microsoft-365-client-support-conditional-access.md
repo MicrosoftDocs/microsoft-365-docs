@@ -62,4 +62,4 @@ The latest versions of the following clients support Conditional Access:
 
 ## See also
 
-[Microsoft 365 Enterprise overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
+[Microsoft 365 Enterprise overview](microsoft-365-overview.md)

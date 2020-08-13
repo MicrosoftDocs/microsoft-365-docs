@@ -130,4 +130,4 @@ The following table describes the authentication behavior for Office 2013, Offic
 
 [Sign in to Microsoft 365 with multi-factor authentication](https://support.microsoft.com/office/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
 
-[Microsoft 365 Enterprise overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
+[Microsoft 365 Enterprise overview](microsoft-365-overview.md)

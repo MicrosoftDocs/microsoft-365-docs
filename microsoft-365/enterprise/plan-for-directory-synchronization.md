@@ -142,5 +142,5 @@ When you are ready to deploy hybrid identity, see [prepare to provision users](p
   
 ## See also
 
-[Microsoft 365 Enterprise overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
+[Microsoft 365 Enterprise overview](microsoft-365-overview.md)
 

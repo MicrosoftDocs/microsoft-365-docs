@@ -21,13 +21,6 @@ To get the creativity, teamwork, and productivity benefits of Microsoft 365 for 
 
 If you have existing server-based deployments for Exchange, SharePoint, or Skype for Business, see the [client and server software roadmap](client-server-software-roadmap-microsoft-365.md) to migrate your entire organization to Microsoft 365 for enterprise. This roadmap includes Microsoft Office client products, on-premises Office Server products, and Microsoft Windows-based devices.
 
-<!--
-Add links to articles after merge
-
-Fix links, search for: https://docs.microsoft.com/office365/enterprise/
-
---> 
-
 ## Deploy
 
 In the deployment phase of your cloud services:

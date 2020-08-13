@@ -25,10 +25,6 @@ A crucial part of your Microsoft 365 onboarding is to ensure that your network a
 
 Use these articles to understand the key differences and to modify your edge devices, client computers, and on-premises network to get the best performance for your on-premises users.
 
-<!--
-Add links to articles after merge
---> 
-
 ## Plan
 
 In the planning phase of your networking implementation:

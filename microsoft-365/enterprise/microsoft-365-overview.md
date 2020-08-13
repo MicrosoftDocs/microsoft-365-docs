@@ -85,9 +85,9 @@ You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-3
 These products will reach end of support on **October 13, 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
+- [Exchange Server 2010](exchange-2010-end-of-support.md)
 
-[SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) will reach end of support on **April 13, 2021**.
+[SharePoint Server 2010](upgrade-from-sharepoint-2010.md) will reach end of support on **April 13, 2021**.
 
 For a visual summary of the upgrade, migrate, and move-to-the-cloud options for these products, see the [end of support poster](../downloads/Office2010Windows7EndOfSupport.pdf).
 

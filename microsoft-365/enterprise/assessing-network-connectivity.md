@@ -118,4 +118,4 @@ Here's a short link you can use to come back: [https://aka.ms/o365networkconnect
 
 [Microsoft 365 network and performance tuning](network-planning-and-performance.md)
 
-[Microsoft 365 Enterprise overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
+[Microsoft 365 Enterprise overview](microsoft-365-overview.md)

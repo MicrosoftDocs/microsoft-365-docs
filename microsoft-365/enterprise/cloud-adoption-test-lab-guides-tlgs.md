@@ -34,17 +34,17 @@ TLGs also create representative environments for development and testing of appl
 
 Use these articles to build your Microsoft 365 dev/test environment:
   
-- [The lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
+- [The lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md)
     
     Create a Microsoft 365 Enterprise E5 trial subscription.
 
-- [The simulated enterprise base configuration](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
+- [The simulated enterprise base configuration](simulated-ent-base-configuration-microsoft-365-enterprise.md)
     
     Create a simplified intranet running in Microsoft Azure infrastructure services and a Microsoft 365 Enterprise E5 trial subscription. 
 
     This is optional and needed if you want to build a simulated enterprise configuration for hybrid identity.
     
-For additional TLGs that apply to both Office 365 and Microsoft 365, go to [Test Lab Guides](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).  
+For additional TLGs that apply to both Office 365 and Microsoft 365, go to [Test Lab Guides](m365-enterprise-test-lab-guides.md).  
     
 ## Related topics
 

@@ -91,9 +91,9 @@ The following clients are recommended when a secure documents policy has been ap
 
 ### Microsoft 365 client support
 For more information about client support, see the following articles:
-- [Microsoft 365 Client App Support - Conditional Access](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
-- [Microsoft 365 Client App Support - Mobile Application Management](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
-- [Microsoft 365 Client App Support - Modern Authentication](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
+- [Microsoft 365 Client App Support - Conditional Access](microsoft-365-client-support-conditional-access.md)
+- [Microsoft 365 Client App Support - Mobile Application Management](microsoft-365-client-support-mobile-application-management.md)
+- [Microsoft 365 Client App Support - Modern Authentication](microsoft-365-client-support-modern-authentication.md)
 
 ## Protecting administrator accounts
 Azure AD provides a simple way for you to begin protecting administrator access with a preconfigured conditional access policy. In Azure AD, go to **Conditional access** and look for this policy — **Baseline policy: Require MFA for admins (preview)**. Select this policy and then select **Use policy immediately**. 

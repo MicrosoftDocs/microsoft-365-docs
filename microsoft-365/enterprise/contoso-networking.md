@@ -46,7 +46,7 @@ Figure 1 shows Contoso's networking infrastructure and its connections to the In
 
 ## Use of SD-WAN for optimal network connectivity to Microsoft
 
-Contoso followed [Microsoft 365 network connectivity principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) to:
+Contoso followed [Microsoft 365 network connectivity principles](microsoft-365-network-connectivity-principles.md) to:
 
 1. Identify and differentiate Microsoft 365 network traffic
 2. Egress network connections locally
@@ -89,7 +89,7 @@ Successful adoption of Microsoft 365 for enterprise services by Contoso’s user
 
 2. Created a plan for Microsoft 365 for enterprise network connectivity
 
-   Contoso used the [Microsoft 365 network connectivity principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) and provided reference network architectures to determine SD-WAN as their preferred topology for Microsoft 365 connectivity.
+   Contoso used the [Microsoft 365 network connectivity principles](microsoft-365-network-connectivity-principles.md) and provided reference network architectures to determine SD-WAN as their preferred topology for Microsoft 365 connectivity.
 
 3. Analyzed Internet connection utilization and MPLS WAN bandwidth at each office and increased bandwidth as needed
 
