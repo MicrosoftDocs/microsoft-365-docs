@@ -121,7 +121,7 @@ For more information, see [Plan for multi-factor authentication for Microsoft 36
 To connect to Microsoft 365 services with MFA and PowerShell, see these articles:
 
 - [PowerShell for Microsoft 365 for user accounts, groups, and licenses](connect-to-microsoft-365-powershell.md)
-- [Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-powershell-install)
+- [Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
 - [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-by-using-mfa)
 - [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
 - [Skype for Business Online]manage-skype-for-business-online-with-microsoft-365-powershell#connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication)

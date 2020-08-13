@@ -43,7 +43,7 @@ To plan for user accounts, you first need to understand the two identity models 
 
 Here are the two types of identity and their best fit and benefits.
 
-| | Cloud-only identity | Hybrid identity |
+| Attribute | Cloud-only identity | Hybrid identity |
 |:-------|:-----|:-----|
 | **Definition** | User account only exists in the Azure AD tenant for your Microsoft 365 subscription. | User account exists in AD DS and a copy is also in the Azure AD tenant for your Microsoft 365 subscription. The user account in Azure AD might also include a hashed version of the already hashed AD DS user account password. |
 | **How Microsoft 365 authenticates user credentials** | The Azure AD tenant for your Microsoft 365 subscription performs the authentication with the cloud identity account. | The Azure AD tenant for your Microsoft 365 subscription either handles the authentication process or redirects the user to another identity provider. |
@@ -57,7 +57,7 @@ A cloud-only identity uses user accounts that exist only in Azure AD. Cloud iden
 
 Here are the basic components of cloud-only identity.
  
-![Basic components of cloud-only identity](../media/about-office-365-identity/cloud-only-identity.png)
+![Basic components of cloud-only identity](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 Both on-premises and remote (online) users use their Azure AD user accounts and passwords to access Microsoft 365 cloud services. Azure AD authenticates user credentials based on its stored user accounts and passwords.
 
@@ -74,7 +74,7 @@ When you implement hybrid identity, your on-premises AD DS is the authoritative 
 
 Here are the components of hybrid identity.
 
-![Components of hybrid identity](../media/about-office-365-identity/hybrid-identity.png)
+![Components of hybrid identity](../media/about-microsoft-365-identity/hybrid-identity.png)
 
 The Azure AD tenant has a copy of the AD DS accounts. In this configuration, both on-premises and remote users accessing Microsoft 365 cloud services authenticate against Azure AD.
 
