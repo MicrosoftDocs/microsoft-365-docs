@@ -37,12 +37,12 @@ When you do enable sensitivity labels for Office files in SharePoint and OneDriv
 
 - External users can access documents that are labeled with encryption by using guest accounts. For more information, see [Support for external users and labeled content](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
 
-- Office 365 eDiscovery supports full-text search for these files. Data Loss Prevention (DLP) policies support content in these files.
+- Office 365 eDiscovery supports full-text search for these files and Data Loss Prevention (DLP) policies support content in these files.
 
 > [!NOTE]
 > If encryption has been applied with an on-premises key (a key management topology often referred to as "hold your own key" or HYOK), or by using [Double Key Encryption](double-key-encryption.md), the SharePoint behavior for processing the file contents doesn't change.
 >
-> The SharePoint behavior also doesn't change for existing labeled and encrypted files in SharePoint. For these files to benefit from the new capabilities when sensitivity labels are enabled, the files must be either downloaded and uploaded, or edited. For example, they will then be returned in search and eDiscovery results.
+> The SharePoint behavior also doesn't change for existing files in SharePoint that are labeled with encryption using a single Azure-based key. For these files to benefit from the new capabilities after you enable sensitivity labels for Office files in SharePoint and OneDrive, the files must be either downloaded and uploaded again, or edited. For example, they will then be returned in search and eDiscovery results.
 
 After you enable sensitivity labels for Office files in SharePoint and OneDrive, three new [audit events](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) are available for monitoring sensitivity labels that are applied to documents in SharePoint and OneDrive:
 - **Applied sensitivity label to file**
