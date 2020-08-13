@@ -592,7 +592,7 @@ Yes and no; videos in Stream are owned by the original uploader or meeting recor
 
 **Does deleting videos or channels delete the group?**
 
-No, deleting videos or channels doesn’t delete the group. Howerver, deleting the group itself in Stream will delete group-associated services and content, except for the actual videos.
+No, deleting videos or channels doesn’t delete the group. However, deleting the group itself in Stream will delete group-associated services and content, except for the actual videos.
 
 ## Yammer
 
