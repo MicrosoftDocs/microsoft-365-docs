@@ -76,4 +76,4 @@ Containers include SharePoint document libraries and Exchange mailboxes.
 
 If you don't yet have retention labels to use for records management, see [Get started with retention policies and retention labels](get-started-with-retention.md).
 
-To declare records, see [Declare records by using retention labels](declare-records.md).
+To mark content as a record, see [Declare records by using retention labels](declare-records.md).
