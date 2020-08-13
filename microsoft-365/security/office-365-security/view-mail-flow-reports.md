@@ -277,7 +277,7 @@ Each exported .csv file is limited to 150,000 rows. If the data for that day con
 
 ### Funnel view for the Mailflow status report
 
-The funnel view is available in EOP. The funnel view shows you how Microsoft's email threat protection features filter incoming and outgoing emails in your organization. It provides details on the total email count, and the impact the configure threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam and anti-spoofing have on this count.
+The funnel view is available in EOP. The funnel view shows you how Microsoft's email threat protection features filter incoming and outgoing emails in your organization. It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam and anti-spoofing affect this count.
 
 If you click the **Funnel** tab, by default, this view contains a chart and a data table that's configured with the following filters:
 
