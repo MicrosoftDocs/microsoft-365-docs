@@ -1,5 +1,5 @@
 ---
-title: "Activate Rights Management in the admin center"
+title: "Activate rights management in the admin center"
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -19,7 +19,7 @@ ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: "How to activate and use the Rights Management service with Microsoft 365."
 ---
 
-# Activate Rights Management in the admin center
+# Activate rights management in the admin center
 
 You must activate the Rights Management service (RMS) before you can use the Information Rights Management (IRM) features of Microsoft 365 applications and services. After you activate RMS, your organization can start to protect important documents and emails by using Azure RMS. This information protection solution can protect all file types and integrates with client applications like Excel, Microsoft Word, and others, Exchange Online and SharePoint Online, and servers such as Microsoft Exchange and Microsoft SharePoint.
   
