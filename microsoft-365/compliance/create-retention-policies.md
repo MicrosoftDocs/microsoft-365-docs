@@ -303,7 +303,7 @@ All retention policies with any configuration support Preservation Lock. However
     
     ![RestrictiveRetention parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-     When prompted, read and acknowledge the restrictions that come with this configuration, and choose **Yes to All**:
+     When prompted, read and acknowledge the restrictions that come with this configuration by entering **Y**:
     
    ![Prompt to confirm that you want to lock a retention policy in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
