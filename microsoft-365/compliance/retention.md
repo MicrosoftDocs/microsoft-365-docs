@@ -110,7 +110,7 @@ Preservation Lock ensures your organization can meet such regulatory requirement
   
 When a retention policy is locked:
 
-- No one can it turn off
+- No one can turn it off
 - Locations can be added but not removed
 - Content subject to the policy can't be modified or deleted during the retention period
 - You can extend a retention period but not decrease it
@@ -119,6 +119,8 @@ In summary, a locked retention policy can be increased or extended, but it can't
   
 > [!IMPORTANT]
 > Before you lock a retention policy, it's critical that you understand the impact and confirm whether it's required for your organization to meet regulatory requirements. Administrators won't be able to disable or delete a retention policy after the preservation lock is applied.
+
+You apply Preservation Lock after the retention policy is created, by using PowerShell. Instructions are included in [Create and configure retention policies](create-retention-policies.md).
 
 #### Releasing a retention policy
 
