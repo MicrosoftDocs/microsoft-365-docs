@@ -25,7 +25,7 @@ The SOC provides these services:
 - Using device management and isolation services to protect your environment from known or suspected compromised devices to prevent spread
 
 ## Processes
-- Security Operations is staffed by full-time Microsoft employees in Microsoft’s Cyber Defense Operations Center.
+- Security Operations is staffed by full-time Microsoft employees in Microsoft’s [Cyber Defense Operations Center](https://www.microsoft.com/msrc/cdoc).
 - Microsoft uses collective signals from across our company—both internal and external—to protect your data and workloads, even from things we have not yet seen in Microsoft Managed Desktop. 
 - Microsoft security solutions align to many cybersecurity protection standards. SOC operations are based on the National Institute of Standards and Technology Computer Security Incident Response Handling Guide (NIST 800-61 r2). 
 - The process allows for proper collection of information and evidence, for analysis and documentation and post-recovery insights into ways to better defend your environment through these phases:
@@ -36,7 +36,7 @@ The SOC provides these services:
     - Post-incident activity
 
 ![Incident phases shown in blocks from left to right: preparation; detection and analysis; containment, eradication, and recovery; post-incident activity](../../media/incident-response-phases.png)
- - At your request, the SOC can engage Microsoft Threat Experts on your behalf. They will provide insights to understand better the complex threats affecting your organization, including alert inquiries, potentially compromised devices, root cause of a suspicious network connection, and additional threat intelligence regarding ongoing advanced persistent threat campaigns. For more information, see Microsoft Threat Experts. 
+ - At your request, the SOC can engage Microsoft Threat Experts on your behalf. They will provide insights to understand better the complex threats affecting your organization, including alert inquiries, potentially compromised devices, root cause of a suspicious network connection, and additional threat intelligence regarding ongoing advanced persistent threat campaigns. For more information, see [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts. ). 
 - SOC’s Threat and Vulnerability Management uses some of Microsoft’s services to help inform recommendations for your organization to protect against threats. The SOC consumes data from your Advanced Threat Protection Security Center and from relevant vulnerability data sources within and outside of Microsoft to discover vulnerabilities and misconfigurations and provide actionable reporting. 
 
 
