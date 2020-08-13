@@ -138,9 +138,8 @@ My 'most important' bullet list:
     
  **My upgrade and migration choices:**
   
-|||
+| Yes | No |
 |:-----|:-----|
-|**Yes** <br/> |**No** <br/> |
 |Upgrade databases with database attach  <br/> |In-place upgrade  <br/> |
 |Upgrade with farms side-by-side  <br/> |Hybrid Upgrade  <br/> |
 |Migration API to SPO in Microsoft 365 (for personal site data)  <br/> |SharePoint Hybrid (not needed yet)  <br/> |

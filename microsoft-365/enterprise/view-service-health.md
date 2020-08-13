@@ -109,14 +109,14 @@ Most of the time, services will appear as healthy with no further information. W
   
 ### Incidents and advisories
 
-|||
+| Icon | Description |
 |:-----|:-----|
 |![Information icon for advisory](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|If a service has an advisory shown, we are aware of a problem that is affecting some users, but the service is still available. In an advisory, there is often a workaround to the problem and the problem may be intermittent or is limited in scope and user impact.  <br/> |
 |![Exclamation point icon for incident](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|If a service has an active incident shown, it's a critical issue and the service or a major function of the service is unavailable. For example, users may be unable to send and receive email or unable to sign-in. Incidents will have noticeable impact to users. When there is an incident in progress, we will provide updates regarding the investigation, mitigation efforts, and confirmation of resolution in the Service health dashboard.  <br/> |
 
 ### Status definitions
 
-|**Status**|**Definition**|
+| Status | Definition |
 |:-----|:-----|
 |**Investigating** | We're aware of a potential issue and are gathering more information about what's going on and the scope of impact. |
 |**Service degradation** | We've confirmed that there is an issue that may affect use of a service or feature. You might see this status if a service is performing more slowly than usual, there are intermittent interruptions, or if a feature isn't working, for example. |

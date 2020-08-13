@@ -154,10 +154,12 @@ For a comprehensive understanding of what you need to do to upgrade from Project
   
 Key resources:
   
-|||
-|:-----|:-----|
-|[Overview of the Project Server 2013 upgrade process](https://go.microsoft.com/fwlink/p/?linkid=841822) <br/> |Get a high-level understanding of what you need to do to upgrade from Project Server 2010 to Project Server 2013.  <br/> |
-|[Plan to upgrade to Project Server 2013](https://go.microsoft.com/fwlink/p/?linkid=841823) <br/> |Look at planning considerations you need to make when upgrading from Project Server 2010 to Project Server 2013, including System Requirements.  <br/> |
+- [Overview of the Project Server 2013 upgrade process](https://go.microsoft.com/fwlink/p/?linkid=841822)
+
+  Get a high-level understanding of what you need to do to upgrade from Project Server 2010 to Project Server 2013.
+- [Plan to upgrade to Project Server 2013](https://go.microsoft.com/fwlink/p/?linkid=841823) 
+
+  Look at planning considerations you need to make when upgrading from Project Server 2010 to Project Server 2013, including System Requirements.
    
 [What's new in Project Server 2013 upgrade](https://go.microsoft.com/fwlink/p/?linkid=841824) tells you some important changes for upgrade for this version, the most notable being: 
   
@@ -185,10 +187,13 @@ For a comprehensive understanding of what you need to do to upgrade from Project
   
 Key resources:
   
-|||
-|:-----|:-----|
-|[Overview of the Project Server 2016 upgrade process](https://docs.microsoft.com/Project/overview-of-the-project-server-2016-upgrade-process) <br/> |Get a high-level understanding of what you need to do to upgrade from Project Server 2013 to Project Server 2016.  <br/> |
-|[Plan for upgrade to Project Server 2016](https://docs.microsoft.com/Project/plan-for-upgrade-to-project-server-2016) <br/> |Look at planning considerations you need to make when upgrading from Project Server 2013 to Project Server 2016.  <br/> |
+- [Overview of the Project Server 2016 upgrade process](https://docs.microsoft.com/Project/overview-of-the-project-server-2016-upgrade-process)
+
+  Get a high-level understanding of what you need to do to upgrade from Project Server 2013 to Project Server 2016.
+
+- [Plan for upgrade to Project Server 2016](https://docs.microsoft.com/Project/plan-for-upgrade-to-project-server-2016)
+
+  Look at planning considerations you need to make when upgrading from Project Server 2013 to Project Server 2016.
    
 [Things you need to know about Project Server 2016 upgrade](https://docs.microsoft.com/project/plan-for-upgrade-to-project-server-2016#thingknow) tells you some important changes for upgrading to this version, which include: 
   
@@ -204,10 +209,13 @@ For a comprehensive understanding of what you need to do to upgrade from Project
   
 Key resources:
   
-|||
-|:-----|:-----|
-|[Overview of the Project Server 2019 upgrade process](https://docs.microsoft.com/project/overview-of-the-project-server-2019-upgrade-process) <br/> |Get a high-level understanding of what you need to do to upgrade from Project Server 2013 to Project Server 2016.  <br/> |
-|[Plan for upgrade to Project Server 2019](https://docs.microsoft.com/project/plan-for-upgrade-to-project-server-2019) <br/> |Look at planning considerations you need to make when upgrading from Project Server 2016 to Project Server 2019.  <br/> |
+- [Overview of the Project Server 2019 upgrade process](https://docs.microsoft.com/project/overview-of-the-project-server-2019-upgrade-process)
+
+  Get a high-level understanding of what you need to do to upgrade from Project Server 2013 to Project Server 2016.
+
+- [Plan for upgrade to Project Server 2019](https://docs.microsoft.com/project/plan-for-upgrade-to-project-server-2019)
+
+  Look at planning considerations you need to make when upgrading from Project Server 2016 to Project Server 2019.
    
 [Things you need to know about Project Server 2019 upgrade](https://go.microsoft.com/fwlink/p/?linkid=841827) tells you some important changes for upgrading to this version, which include: 
   

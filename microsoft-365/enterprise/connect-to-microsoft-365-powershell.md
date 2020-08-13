@@ -77,9 +77,8 @@ If prompted about installing a module from an untrusted repository, type **Y** a
 
 To connect to Azure AD for your Microsoft 365 subscription with an account name and password or with multi-factor authentication (MFA), run one of these commands from a Windows PowerShell command prompt (it does not have to be elevated).
 
-|||
+| Office 365 cloud | Command |
 |:-------|:-----|
-| **Office 365 cloud** | **Command** |
 | Office 365 Worldwide (+GCC) | `Connect-AzureAD` |
 | Office 365 operated by 21 Vianet | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
 | Office 365 Germany | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
@@ -118,9 +117,8 @@ These steps are required once on your computer, not every time you connect. Howe
 
 To connect to Azure AD for your Microsoft 365 subscription with an account name and password or with multi-factor authentication (MFA), run one of these commands from a Windows PowerShell command prompt (it does not have to be elevated).
 
-|||
+| Office 365 cloud | Command |
 |:-------|:-----|
-| **Office 365 cloud** | **Command** |
 | Office 365 Worldwide (+GCC) | `Connect-MsolService` |
 | Office 365 operated by 21 Vianet | `Connect-MsolService -AzureEnvironment AzureChinaCloud` |
 | Office 365 Germany | `Connect-MsolService -AzureEnvironment AzureGermanyCloud` |

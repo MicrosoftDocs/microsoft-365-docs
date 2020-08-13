@@ -34,7 +34,7 @@ See [Managing Microsoft 365 endpoints](managing-office-365-endpoints.md) for the
 
 There are currently five different Microsoft 365 clouds. This table takes you to the list of endpoints for each one.
 
-|||
+| Cloud | Description |
 |:-------|:-----|
 | [Worldwide endpoints](urls-and-ip-address-ranges.md) | The endpoints for worldwide Microsoft 365 subscriptions, which include the United States Government Community Cloud (GCC). |
 | [U.S. Government DoD endpoints](microsoft-365-u-s-government-dod-endpoints.md) | The endpoints for United States Department of Defense (DoD) subscriptions. |

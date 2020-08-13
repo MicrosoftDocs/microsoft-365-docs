@@ -23,8 +23,6 @@
           href: network-and-migration-planning.md
     - name: Deploy
       items: 
-        - name: Set up your enterprise network
-          href: set-up-network-for-microsoft-365.md
         - name: Add a domain
           href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
         - name: Configure M365E endpoint whitelisting
