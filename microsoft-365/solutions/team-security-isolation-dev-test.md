@@ -28,9 +28,9 @@ Use this dev/test environment to experiment and fine-tune settings for your spec
   
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 
-If you just want to test sensitive and highly sensitive teams in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
+If you just want to test sensitive and highly sensitive teams in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md).
 
-If you want to test sensitive and highly sensitive teams in a simulated enterprise, follow the instructions in [Password hash synchronization](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment).
+If you want to test sensitive and highly sensitive teams in a simulated enterprise, follow the instructions in [Password hash synchronization](../enterprise/password-hash-sync-m365-ent-test-environment.md).
 
 >[!Note]
 >Testing a team with security isolation does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test a team with security isolation and experiment with it in an environment that represents a typical organization.
@@ -72,7 +72,7 @@ Next, configure automatic licensing so that members of the new **C-Suite** group
     
 6. Close the Azure portal tab in your browser.
     
-Next, [connect with the Azure Active Directory PowerShell for Graph module](../enterprise/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Next, [connect with the Azure Active Directory PowerShell for Graph module](../enterprise/connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Fill in your organization name, your location, and a common password, and then run these commands from the PowerShell command prompt or Integrated Script Environment (ISE) to create new user accounts and add them to the C-Suite group:
   
@@ -110,7 +110,7 @@ Use these steps to verify that group-based licensing is working correctly.
 
 In this phase, you create and configure a team with security isolation for members of the senior leadership team to collaborate on company strategy.
 
-First, enable sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites before you proceed with the steps in [this article](../compliance/sensitivity-labels-teams-groups-sites).
+First, enable sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites before you proceed with the steps in [this article](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Next, create the team:
 
