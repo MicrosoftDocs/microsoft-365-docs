@@ -72,7 +72,7 @@ Next, configure automatic licensing so that members of the new **C-Suite** group
     
 6. Close the Azure portal tab in your browser.
     
-Next, [connect with the Azure Active Directory PowerShell for Graph module](../enterprise/connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Next, [connect with the Azure Active Directory PowerShell for Graph module](../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Fill in your organization name, your location, and a common password, and then run these commands from the PowerShell command prompt or Integrated Script Environment (ISE) to create new user accounts and add them to the C-Suite group:
   
