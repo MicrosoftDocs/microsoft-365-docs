@@ -27,7 +27,7 @@ The information in this article supplements [Learn about retention](retention.md
 
 ## How retention works with Microsoft Teams
 
-You can use a retention policy to retain chats and channel messages in Teams. Teams chats are stored in a hidden folder in the mailbox of each user included in the chat, and Teams channel messages are stored in a similar hidden folder in the group mailbox for the team. 
+You can use a retention policy to retain chats and channel messages in Teams. Teams chats are stored in a hidden folder (**Conversation History**\**Teams Chat**) in the mailbox of each user included in the chat, and Teams channel messages are stored in a similar hidden folder in the group mailbox for the team.
 
 It's important to understand that Teams uses an Azure-powered chat service that also stores this data, and by default this service stores the data indefinitely. For this reason, we recommend that you create a retention policy that uses the Teams locations to retain and delete this Teams data. This retention policy can permanently delete data from both the Exchange mailboxes and the underlying Azure-powered chat service. For more information, see [Security and compliance in Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) and specifically, the [Information Protection Architecture](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture) section.
 
@@ -36,32 +36,34 @@ Teams chats and channel messages are not affected by retention policies that are
 > [!NOTE]
 > If a user is included in an active retention policy that retains Teams data and you a delete a mailbox of a user who is included in this policy, to retain the Teams data, the mailbox is converted into an [inactive mailbox](inactive-mailboxes-in-office-365.md). If you don't need to retain this Teams data for the user, exclude the user account from the retention policy before you delete their mailbox.
 
-After a retention policy is configured for chat and channel messages, the paths the content takes depend on whether the retention policy is to retain and delete, to retain only, or delete only.
+After a retention policy is configured for chat and channel messages, a timer job from the Exchange service periodically evaluates items in the Teams Chat folder and the SubstrateHolds folder. The SubstrateHolds folder is another hidden folder that's in every user or group mailbox that stores copies of edited or deleted messages that must be retained. When an item has expired its retention period in the Teams Chat folder, it's moved to the SubstrateHolds folder. The timer job can take up to seven days to run.
+
+After a retention policy is configured for chat and channel messages, the paths the content takes depend on whether the retention policy is to retain and then delete, to retain only, or delete only.
 
 When the retention policy is to retain and delete:
 
 ![Diagram of retention flow for Teams chat and channel messages](../media/TeamsRetentionLifecycle.png)
 
-1. **If a chat or channel message is modified or deleted** by the user during the retention period, the message is moved (or copied, in the case of edit) to the SubstrateHolds folder (which is a hidden folder in every user or group mailbox) and is stored in this folder until the retention period expires. Messages are permanently deleted on the day the retention period expires.
+1. **If a chat or channel message is edited or deleted** by the user during the retention period, the message is copied (if edited) or moved (if deleted) to the  SubstrateHolds folder. The message is stored there until the retention period expires and then the message is permanently deleted.
 
-2. **If a chat or channel message isn't deleted** during the retention period, the message is moved to the SubstrateHolds folder within one day after the retention period expires (it takes from 0 to 24 hours). The message is permanently deleted one day after it is moved to the SubstrateHolds folder. 
+2. **If a chat or channel message is not deleted** and for current messages after editing during the retention period, the message is moved to the SubstrateHolds folder after the retention period expires. The message in the SubstrateHolds folder is then permanently deleted within one day. 
 
 > [!NOTE]
-> Messages in the SubstrateHolds folder are searchable by eDiscovery tools. After a message is permanently deleted, it won't be returned in an eDiscovery search.
+> Messages in the SubstrateHolds folder are searchable by eDiscovery tools. After a message is deleted from there, it won't be returned in an eDiscovery search.
 
 When the retention policy is retain-only, or delete-only, the content's paths are variations of retain and delete.
 
 ### Content paths for retain-only retention policy
 
-1. **If a chat or channel message is modified or deleted** during the retention period: A copy of the original message is created in the SubstrateHolds folder and retained until the end of the retention period, when the copy in the SubstrateHolds folder is permanently deleted one day after the item expires. 
+1. **If a chat or channel message is edited or deleted** during the retention period: A copy of the original message is created in the SubstrateHolds folder and retained until the end of the retention period, when the copy in the SubstrateHolds folder is deleted after the item expires. 
 
-2. **If the item is not modified or deleted** during the retention period: Nothing happens before and after the retention period; the message remains in its original location.
+2. **If the item is not modified or deleted** and for current messages after modification during the retention period: Nothing happens before and after the retention period; the message remains in its original location.
 
 ### Content paths for delete-only retention policy
 
-1. **If the message is not deleted** during the retention period: At the end of the retention period, the message is moved to the SubstrateHolds folder. 
+1. **If the message is not deleted** during the retention period: At the end of the retention period, the message is moved to the SubstrateHolds folder where it is permanently deleted within one day. 
 
-2. **If the item is deleted by the user** during the period, the item is immediately moved to the SubstrateHolds folder. The message is permanently deleted one day after being in the SubstrateHolds folder.
+2. **If the item is deleted by the user** during the period, the item is immediately moved to the SubstrateHolds folder where it is permanently deleted within one day..
 
 
 ## Skype for Business and Teams interop chats
@@ -102,7 +104,7 @@ We're continuously working on optimizing retention functionality in Teams. In th
 
 - **Likes and other reactions are not retained for Teams chat and channel messages**. Reactions from others in the form of emoticons aren't supported by retention policies.
 
-- **Teams may take up to seven days to clean up expired messages**. A retention policy applied to Teams will delete chat and channel messages when the retention period expires. However, it may take between three and seven days to clean up these messages and permanently delete them. Also, chat and channel messages will be searchable with eDiscovery tools during the time after the retention period expires and when messages are permanently deleted.
+- **Teams may take up to seven days to clean up expired messages**. A retention policy applied to Teams will delete chat and channel messages when the retention period expires. However, it may take up to seven days to permanently delete them. Chat and channel messages will be searchable with eDiscovery tools during the time after the retention period expires and when messages are permanently deleted.
     
     > [!NOTE]
     > It used to be true that a retention policy couldn't delete Teams content that's less than 30 days old, but we've removed this limitation. Now the retention period for Teams content can be any number of days you choose and as short as one day. If you do have a retention period of one day, it will take up to seven days after the retention period expires before messages are permanently deleted.
