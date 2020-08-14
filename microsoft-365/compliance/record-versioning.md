@@ -98,6 +98,4 @@ For more information about searching for these events, see the "File and page ac
 
 ## Next steps
 
-To mark content as a record, see [Declare records by using retention labels](declare-records.md).
-
-To learn about disposition of records, see [Disposing of content](disposition.md).
+For other scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).

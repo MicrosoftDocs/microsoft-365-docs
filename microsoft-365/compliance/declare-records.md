@@ -59,6 +59,4 @@ Example of a document marked as record by using a retention label:
 
 ## Next steps
 
-If you need to update documents that are records, see [Use record versioning to update records stored in SharePoint or OneDrive](record-versioning.md).
-
-To learn about the disposition of records, see [Disposing of content](disposition.md).
+For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).
