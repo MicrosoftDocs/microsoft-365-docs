@@ -39,5 +39,5 @@ To manage high-value content for legal, business, or regulatory obligations, use
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|---------------------|:----------------------------|
-|[Records management](records-management.md)| A single solution for email and documents that incorporates retention schedules and requirements into a file plan that manages retention, records declaration, and disposition, to support the full lifecycle of your content <br /><br />Example scenario: [Disposition of records](disposition.md#disposition-of-records)|[Get started with records management](get-started-with-records-management.md) |
+|[Records management](records-management.md)| A single solution for email and documents that incorporates retention schedules and requirements into a file plan that manages records declaration, retention, and disposition, to support the full lifecycle of your content <br /><br />Example scenario: [Disposition of records](disposition.md#disposition-of-records)|[Get started with records management](get-started-with-records-management.md) |
 
