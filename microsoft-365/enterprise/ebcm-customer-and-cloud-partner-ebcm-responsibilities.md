@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -60,7 +60,7 @@ Consider events that would cause impact to your workforce like a natural disaste
 
 ### Location
 Many organizations require employees to be in specific physical or network locations in order to connect to enterprise systems and cloud services.  
-Microsoft publishes [network connectivity principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) that guide enterprises through best practices for setting up network connectivity to cloud resources. Examples of optimization include implementation of split tunnel VPNs to allow connections directly from a user’s network rather than over a VPN tunnel.  While these connectivity principles are important for maintaining low-latency connections, service resiliency requires alternative methods of connecting to corporate resources for general collaboration.
+Microsoft publishes [network connectivity principles](microsoft-365-network-connectivity-principles.md) that guide enterprises through best practices for setting up network connectivity to cloud resources. Examples of optimization include implementation of split tunnel VPNs to allow connections directly from a user’s network rather than over a VPN tunnel.  While these connectivity principles are important for maintaining low-latency connections, service resiliency requires alternative methods of connecting to corporate resources for general collaboration.
 
 ### Systems
 Many collaboration solutions are dependent on systems, such as the company wide area network (WAN). When those systems are not available, how would your organization respond?
