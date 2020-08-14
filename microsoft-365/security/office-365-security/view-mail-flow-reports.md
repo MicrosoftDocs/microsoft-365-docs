@@ -333,7 +333,7 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
  ### Tech view for the Mailflow status report
 
- The Tech view shows you a granular view of how different features and technologies contribute to the removal of unwanted or malicious email 
+ The Tech view shows you the outcome Microsoft's email threat protection features have on incoming and outgoing emails in your organization. It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing categorize these emails. 
 
 If you click the **Tech view** tab, by default, this view contains a chart and a data table that's configured with the following filters:
 
@@ -348,7 +348,7 @@ The aggregate view and data table view allow for 90 days of filtering.
 
 If you click **Filter**, you can filter both the chart and the data table.
 
-The chart is organized by **email count**:
+The chart is organized by **email category**:
   - **Total email**
   - **Edge allow, edge filtered**
   - **Not malware, Safe attachments detection (ATP), Anti-malware engine detection, rule block**
@@ -356,6 +356,8 @@ The chart is organized by **email count**:
   - **No detection with URL detonation, URL detonation detection (ATP)**
   - **Not spam, spam**
   - **Non-malicious email, safe links detection, ZAP**
+
+  Hovering over
 
 The data table contains the following information, shown in descending date order:
   - **Date**  
