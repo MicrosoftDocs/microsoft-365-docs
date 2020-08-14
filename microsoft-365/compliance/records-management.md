@@ -28,7 +28,7 @@ Organizations of all types require a records-management solution to manage regul
 
 Use the following capabilities to support your records management solution in Microsoft 365:
 
-- **Label content as a record**. Create and configure retention labels to mark content as a [record](#records) that can then be applied by users or [auto-applied](apply-retention-labels-automatically.md) by identifying sensitive information, keywords, or content types.
+- **Label content as a record**. Create and configure retention labels to mark content as a [record](#records) that can then be applied by users or automatically applied by identifying sensitive information, keywords, or content types.
 
 - **Migrate and manage your retention requirements with file plan**. By using a [file plan](file-plan-manager.md), you can bring in an existing retention plan to Microsoft 365, or build a new one for enhanced management capabilities.
 
@@ -44,9 +44,7 @@ Use the following capabilities to support your records management solution in Mi
 
 Using these capabilities, you can incorporate your organization's retention schedules and requirements into a records management solution that manages retention, records declaration, and disposition, to support the full lifecycle of your content.
 
-### Additional resources
-
-See the [webinar recording](https://aka.ms/MIPC/Video-RecordsManagementWebinar) and [deck with FAQs](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) for records management.
+In addition to the online documentation, you might find it useful to listen to the [webinar recording](https://aka.ms/MIPC/Video-RecordsManagementWebinar) for records management, and download the accompanying [deck with FAQs](https://aka.ms/MIPC/Blog-RecordsManagementWebinar).
 
 ## Records
 
@@ -99,6 +97,6 @@ Containers include SharePoint document libraries and Exchange mailboxes.
 
 ## Next steps
 
-If you don't yet have retention labels to use for records management, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+See [Get started with records management](get-started-with-records-management.md).
 
 To mark content as a record, see [Declare records by using retention labels](declare-records.md).
