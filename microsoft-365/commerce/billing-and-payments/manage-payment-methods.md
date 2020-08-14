@@ -130,6 +130,6 @@ If a payment method is attached to any subscriptions or billing profiles, first 
 
 ## Related content
 
-[Pay for your business subscription](pay-for-your-subscription.md)\
-[Manage billing profiles](manage-billing-profiles.md)\
-[Change your payment frequency](change-payment-frequency.md)
+[Pay for your business subscription](pay-for-your-subscription.md) (article)\
+[Manage billing profiles](manage-billing-profiles.md) (article)\
+[Change your billing frequency](change-payment-frequency.md) (article)

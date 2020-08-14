@@ -150,6 +150,6 @@ If you want to completely close your account with Microsoft, see [Close your acc
 
 ## Related content
 
-[Renew your subscription](renew-your-subscription.md)\
-[Reactivate your subscription](reactivate-your-subscription.md)\
-[Move users to a different subscription](move-users-different-subscription.md)
+[Renew your subscription](renew-your-subscription.md) (article)\
+[Reactivate your subscription](reactivate-your-subscription.md) (article)\
+[Move users to a different subscription](move-users-different-subscription.md) (article)

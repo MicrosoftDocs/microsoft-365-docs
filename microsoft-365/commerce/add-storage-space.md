@@ -249,3 +249,8 @@ Office 365 Extra File Storage is available for the following subscriptions:
 
 > [!NOTE]
 > Office 365 Extra File Storage is also available for GCC, GCC High, and DOD plans.
+
+## Related content
+
+[Manage site storage limits](ttps://docs.microsoft.com/en-us/sharepoint/manage-site-collection-storage-limits) (article)\
+[Set the default storage space for OneDrive users](https://docs.microsoft.com/en-us/onedrive/set-default-storage-space)(article)
