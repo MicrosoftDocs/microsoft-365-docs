@@ -1,5 +1,5 @@
 ---
-title: Recommended secure document policies - Microsoft 365 Enterprise | Microsoft Docs
+title: Recommended secure document policies - Microsoft 365 for enterprise | Microsoft Docs
 description: Describes the policies for Microsoft recommendations about how to secure SharePoint file access.
 author: BrendaCarter
 manager: laurawi
@@ -81,5 +81,4 @@ In the illustration:
 - If James accesses a sensitive or highly-regulated site he is a member of using his PC, his access is granted as long as his PC is compliant.
 - If James accesses a sensitive site he is a member of using his unmanaged phone, which is allowed for baseline users, he will receive browser-only access to the sensitive site due to the device access policy configured for this site.
 - If James accesses a highly regulated site he is a member of using his unmanaged phone, he will be blocked due to the access policy configured for this site. He can only access this site using his managed and compliant PC.
-
 
