@@ -345,6 +345,8 @@
           href: records-management.md
         - name: Learn about records
           href: records.md
+        - name: Get started with records management
+          href: get-started-with-records-management.md
         - name: Declare records
           href: declare-records.md
         - name: Record versioning
