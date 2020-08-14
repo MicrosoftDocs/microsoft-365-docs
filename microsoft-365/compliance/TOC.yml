@@ -343,8 +343,12 @@
       items: 
         - name: Records management
           href: records-management.md
-        - name: Records
+        - name: Learn about records
           href: records.md
+        - name: Declare records
+          href: declare-records.md
+        - name: Record versioning
+          href: record-versioning.md
 - name: Manage eDiscovery
   items:
     - name: eDiscovery in Microsoft 365
