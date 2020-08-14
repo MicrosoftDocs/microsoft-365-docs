@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Ready to manage high-value content for legal, business, or regulatory obligations by using a records management solution, but not sure where to start? Read some practical guidance to get started.
+description: Need a records management solution for Microsoft 365 that manages high-value content for legal, business, or regulatory obligations, but not sure where to start? Read some practical guidance to get started.
 ---
 
 # Get started with records management
@@ -25,17 +25,20 @@ description: Ready to manage high-value content for legal, business, or regulato
 
 Ready to start managing your organization's high-value content for legal, business, or regulatory obligations by using a records management solution? Use the following high-level guidance to get started:
 
-1. **Understand the records management solution** and its set of capabilities: [Records management](records-management.md). 
+1. **Understand the records management solution** and its set of capabilities: [Learn about records management](records-management.md). 
 
 2. **Understand how retention and retention labels work** because retention labels are used to declare records: [Learn about retention](retention.md)
 
-3. **Create your file plan for retention settings and actions** by [importing an existing plan](file-plan-manager.md#import-retention-labels-into-your-file-plan ) if you have one, or create [new retention labels that  declare records](declare-records.md).
+3. **Create your file plan for retention settings and actions** by [importing an existing plan](file-plan-manager.md#import-retention-labels-into-your-file-plan ) if you have one, or create [new retention labels that declare records](declare-records.md).
 
-4. **Publish and apply your retention labels**. Retention labels are reusable building blocks that can be used in multiple policies and can be incorporated into user workflows. See the list of [common scenarios](#common-scenarios-for-records-management) to help you identify how retention labels can be used for records management. 
+4. **Publish and apply your retention labels**. Retention labels are reusable building blocks that can be used in multiple policies and can be incorporated into user workflows: 
+    
+    - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+    - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
 ## Subscription and licensing requirements for retention policies and retention labels
 
-A number of different subscriptions support retention policies and retention labels and the licensing requirements for users depend on the features you use.
+A number of different subscriptions support records management and the licensing requirements for users depend on the features you use.
 
 To see the options for licensing your users to benefit from Microsoft 365 compliance features, see the [Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD). For records management, see the [Records Management](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) section and related PDF or Excel download for feature-level licensing requirements.
 
