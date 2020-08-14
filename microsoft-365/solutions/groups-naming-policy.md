@@ -1,10 +1,10 @@
 ---
-title: "Groups naming policy"
+title: "Microsoft 365 groups naming policy"
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,19 +13,15 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
-- MST160
 - MET150
-- MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: "Learn how to create a naming policy for Microsoft 365 groups."
 ---
 
-# Groups naming policy
+# Microsoft 365 groups naming policy
 
-You use a group naming policy to enforce a consistent naming strategy for groups created by users in your organization. A naming policy can help you and your users identify the function of the group, membership, geographic region, or who created the group. The naming policy can also help categorize groups in the address book. You can use the policy to block specific words from being used in group names and aliases.
+You can use a group naming policy to enforce a consistent naming strategy for groups created by users in your organization. A naming policy can help you and your users identify the function of the group, membership, geographic region, or who created the group. The naming policy can also help categorize groups in the address book. You can use the policy to block specific words from being used in group names and aliases.
 
 The naming policy is applied to groups that are created across all groups workloads (like Outlook, Microsoft Teams, SharePoint, Planner, Yammer, etc.). It gets applied to both the group name and group alias. It gets applied when a user creates a group and when group name or alias is edited for an existing group.
 
@@ -40,9 +36,9 @@ The group naming policy consists of the following features:
 
 ## Licensing requirements
 
-Using Azure AD naming policy for Microsoft 365 groups requires that you possess but not necessarily assign an Azure Active Directory Premium P1 license or Azure AD Basic EDU license for each unique user (including guests) that is a member of one or more Microsoft 365 groups.
+Using Azure AD naming policy for Microsoft 365 Groups requires that you possess but not necessarily assign an Azure Active Directory Premium P1 license or Azure AD Basic EDU license for each unique user (including guests) that is a member of one or more Microsoft 365 groups.
 
-This is also required for the administrator that creates the Groups naming policy.
+This is also required for the administrator that creates the groups naming policy.
 
 ## Prefix-Suffix naming policy
 
@@ -56,15 +52,15 @@ You can use short strings that can help you differentiate groups in the GAL and 
 
 You can use attributes that can help identify who created the group like [Department] and where it was created from like [Country].
 
-|||
-|:-----|:-----|
-|**Examples**|Policy = "GRP [GroupName] [Department]"|
-||User's department = Engineering|
-||Created group name = "GRP My Group Engineering"|
+Examples:
+
+- Policy = "GRP [GroupName] [Department]"
+- User's department = Engineering
+- Created group name = "GRP My Group Engineering"
 
 Supported Azure Active Directory (Azure AD) attributes are [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion], and [Title].
 
-- Unsupported user attributes are considered as fixed strings. E.g. "[postalCode]"
+- Unsupported user attributes are considered as fixed strings, for example [postalCode].
 
 - Extension attributes and custom attributes aren't supported.
 
@@ -79,13 +75,19 @@ It's recommended that you use attributes that have values filled in for all user
   > [!NOTE]
   > A period (.) or a hyphen (-) is permitted anywhere in the group name, except at the beginning or end of the name. An underscore (_) is permitted anywhere in the group name, including at the beginning or end of the name.
 
-- If you are using Yammer Microsoft 365 connected groups, avoid using the following characters in your naming policy: @, \#, \[, \], \<, and \>. If these characters are in the naming policy, regular Yammer users will not be able to create groups.
+- If you are using Yammer Office 365 connected groups, avoid using the following characters in your naming policy: @, \#, \[, \], \<, and \>. If these characters are in the naming policy, regular Yammer users will not be able to create groups.
+
+> [!Tip]
+> - Use short strings as suffix.
+> - Use attributes with values.
+> - Don't be too creative, total name length has a maximum of 264 characters.
+> - Upload your organization specific blocked words to restrict usage.
 
 ## Custom blocked words
 
 You can enter a comma separated list of blocked words that will be blocked in group names and aliases.
 
-No sub-string searches are carried out; specifically, an exact match between the user entered name and the custom blocked words is required to trigger a failure. Sub-string search isn't done so that users can use some of the common words like 'Class' even if 'ass' is a blocked word.
+No sub-string searches are carried out; specifically, an exact match between the user entered name and the custom blocked words is required to trigger a failure.
 
 **Things to look out for**:
 
@@ -99,7 +101,7 @@ No sub-string searches are carried out; specifically, an exact match between the
 
 ## Admin override
 
-Selective administrators are exempted from these policies, across all group workloads and endpoints, so that they can create groups with these blocked words and with their desired naming conventions. The following are the list of administrator roles exempted from the group naming policy.
+Some administrators are exempted from these policies, across all group workloads and endpoints, so that they can create groups with these blocked words and with their desired naming conventions. The following are the list of administrator roles exempted from the group naming policy.
 
 - Global admin
 
@@ -122,13 +124,8 @@ To set up a naming policy:
 5. Choose between **Attribute** and **String** for each line and then specify the attribute or string.
 6. When you have added the prefixes and suffixes that you need, click **Save**.
 
-![Screenshot of the groups naming policy settings in Azure Active Directory](../../media/groups-naming-policy-azure.png)
+![Screenshot of the groups naming policy settings in Azure Active Directory](../media/groups-naming-policy-azure.png)
 
-> [!NOTE]
-> StaffHub teams do not follow the naming policy, but the underlying Microsoft 365 group does. StaffHub team name does not apply the prefixes and suffixes and does not check for custom blocked words. But StaffHub does apply the prefixes and suffixes and removes blocked words from the underlying Microsoft 365 group.
-
-## More articles on naming policy
-
-[Enforce a naming policy for Microsoft 365 groups in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
+## Related topics
 
 [Azure Active Directory cmdlets for configuring group settings](https://go.microsoft.com/fwlink/?linkid=868341)
