@@ -9,7 +9,7 @@ audience: admin
 ms.topic: article
 ms.service: 
 search.appverid: 
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 
 ---

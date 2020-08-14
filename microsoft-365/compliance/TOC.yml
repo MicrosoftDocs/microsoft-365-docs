@@ -243,7 +243,7 @@
   items: 
     - name: Manage information governance
       href: manage-information-governance.md
-    - name: Import data
+    - name: Import mailbox data
       items: 
         - name: Overview of importing PST files
           href: importing-pst-files-to-office-365.md
@@ -251,8 +251,6 @@
           href: use-network-upload-to-import-pst-files.md
         - name: Use drive shipping to import PST files
           href: use-drive-shipping-to-import-pst-files-to-office-365.md
-        - name: Use the PST Collection tool to find, copy, and delete PST files
-          href: find-copy-and-delete-pst-files-in-your-organization.md
         - name: Filter data when importing PST files
           href: filter-data-when-importing-pst-files.md
         - name: FAQ about importing PST files
@@ -277,30 +275,6 @@
               href: archive-linkedin-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
-        - name: Globanet data connectors
-          items:  
-            - name: Slack eDiscovery
-              href: archive-slackediscovery-data.md    
-            - name: Zoom Meetings
-              href: archive-zoommeetings-data.md
-        - name: TeleMessage data connectors
-          items:  
-            - name: Android
-              href: archive-android-archiver-data.md
-            - name: AT&T Network
-              href: archive-att-network-archiver-data.md
-            - name: Bell Network
-              href: archive-bell-network-data.md
-            - name: Enterprise Number 
-              href: archive-enterprise-number-data.md
-            - name: O2 Network
-              href: archive-o2-network-data.md
-            - name: TELUS Network
-              href: archive-telus-network-data.md
-            - name: Verizon Network
-              href: archive-verizon-network-data.md
-            - name: WhatsApp
-              href: archive-whatsapp-data.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
         - name: Search for third-party data
@@ -369,8 +343,12 @@
       items: 
         - name: Records management
           href: records-management.md
-        - name: Records
+        - name: Learn about records
           href: records.md
+        - name: Declare records
+          href: declare-records.md
+        - name: Record versioning
+          href: record-versioning.md
 - name: Manage eDiscovery
   items:
     - name: eDiscovery in Microsoft 365

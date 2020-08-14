@@ -35,8 +35,6 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 - Admin activity in Exchange Online (Exchange admin audit logging)
 
-- User and admin activity in Sway
-
 - eDiscovery activities in the security and compliance center
 
 - User and admin activity in Power BI
@@ -125,7 +123,6 @@ Be sure to read the following items before you start searching the audit log.
   |Security & Compliance Center|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sensitivity labels||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |SharePoint Online and OneDrive for Business|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sway||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Yammer||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Forms|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -300,15 +297,15 @@ Click one of the following links to go to a specific table.
 |:-----|:-----|:-----|
 |[File and page activities](#file-and-page-activities)|[Folder activities](#folder-activities)|[SharePoint list activities](#sharepoint-list-activities)|
 |[Sharing and access request activities](#sharing-and-access-request-activities)|[Synchronization activities](#synchronization-activities)|[Site permissions activities](#site-permissions-activities)|
-|[Site administration activities](#site-administration-activities)|[Exchange mailbox activities](#exchange-mailbox-activities)|[Sway activities](#sway-activities)|
-|[User administration activities](#user-administration-activities)|[Azure AD group administration activities](#azure-ad-group-administration-activities)|[Application administration activities](#application-administration-activities)|
-|[Role administration activities](#role-administration-activities)|[Directory administration activities](#directory-administration-activities)|[eDiscovery activities](#ediscovery-activities)|
-|[Advanced eDiscovery activities](#advanced-ediscovery-activities)|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Microsoft Teams Shifts activities](#microsoft-teams-shifts-activities)|
-|[Yammer activities](#yammer-activities)|[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|
-|[Microsoft Stream activities](#microsoft-stream-activities)|[Content explorer activities](#content-explorer-activities)|[Quarantine activities](#quarantine-activities)|
-|[Microsoft Forms activities](#microsoft-forms-activities)|[Sensitivity label activities](#sensitivity-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)|
-|[Retention policy and retention label activities](#retention-policy-and-retention-label-activities)|||
+|[Site administration activities](#site-administration-activities)|[Exchange mailbox activities](#exchange-mailbox-activities)|[User administration activities](#user-administration-activities)|
+|[Azure AD group administration activities](#azure-ad-group-administration-activities)|[Application administration activities](#application-administration-activities)|[Role administration activities](#role-administration-activities)|
+|[Directory administration activities](#directory-administration-activities)|[eDiscovery activities](#ediscovery-activities)|[Advanced eDiscovery activities](#advanced-ediscovery-activities)|
+|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|[Microsoft Teams activities](#microsoft-teams-activities)|
+|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Microsoft Teams Shifts activities](#microsoft-teams-shifts-activities)|[Yammer activities](#yammer-activities)|
+|[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|[Microsoft Stream activities](#microsoft-stream-activities)|
+|[Content explorer activities](#content-explorer-activities)|[Quarantine activities](#quarantine-activities)|[Microsoft Forms activities](#microsoft-forms-activities)|
+|[Sensitivity label activities](#sensitivity-label-activities)|[Retention policy and retention label activities](#retention-policy-and-retention-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)
+|||
 
 ### File and page activities
 
@@ -552,28 +549,6 @@ The following table lists the activities that can be logged by mailbox audit log
 |Updated message|Update|A message or its properties was changed.|
 |User signed in to mailbox|MailboxLogin|The user signed in to their mailbox.|
 |Label message as a record||A user applied a retention label to an email message and that label is configured to mark the item as a record. |
-||||
-
-### Sway activities
-
-The following table lists user and admin activities in Sway. Sway is a Microsoft 365 app that helps users gather, format, and share ideas, stories, and presentations on an interactive, web-based canvas. For more information, see [Frequently asked questions about Sway - Admin Help](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
-
-|Friendly name|Operation|Description|
-|:-----|:-----|:-----|
-|Changed Sway share level|SwayChangeShareLevel|User changes the share level of a Sway. This event captures the user changing the scope of sharing associated with a Sway; for example, public versus inside the organization.|
-|Created Sway|SwayCreate|User creates a Sway.|
-|Deleted Sway|SwayDelete|User deletes a Sway.|
-|Disabled Sway duplication|SwayDisableDuplication|User disables duplication of a Sway.|
-|Duplicated Sway|SwayDuplicate|User duplicates a Sway.|
-|Edited Sway|SwayEdit|User edits a Sway.|
-|Enabled Sway duplication|EnableDuplication|User enables duplication of a Sway. The ability for a user to enable duplication of a Sway is enabled by default.|
-|Revoked Sway sharing|SwayRevokeShare|User stops sharing a Sway by revoking access to it. Revoking access changes the links associated with a Sway.|
-|Shared Sway|SwayShare|User intends to share a Sway. This event captures the user action of clicking a specific share destination within the Sway share menu. The event doesn't indicate whether the user completed the share action.|
-|Turned off external sharing of Sway|SwayExternalSharingOff|Administrator disables external Sway sharing for the entire organization by using the Microsoft 365 admin center.|
-|Turned on external sharing of Sway|SwayExternalSharingOn|Administrator enables external Sway sharing for the entire organization by using the Microsoft 365 admin center.|
-|Turned off Sway service|SwayServiceOff|Administrator disables Sway for the entire organization by using the Microsoft 365 admin center.|
-|Turned on Sway service|SwayServiceOn|Administrator enables Sway for the entire organization by using the Microsoft 365 admin center (Sway service is enabled by default).|
-|Viewed Sway|SwayView|User views a Sway.|
 ||||
 
 ### User administration activities
