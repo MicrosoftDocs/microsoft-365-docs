@@ -2,7 +2,6 @@
 title: "Upgrade from an Office 365 E4 subscription"
 f1.keywords:
 - NOCSH
-- Customer email
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -15,17 +14,17 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
-ms.custom:
+ms.custom: customer-email
 search.appverid:
 - MET150
 description: "Learn how to upgrade from an Office 365 E4 subscription."
-ms.date: 08/12/2020
+ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Upgrade from an Office 365 E4 subscription
 
-This article steps you through the process of upgrading from an Office 365 E4 to a new subscription. For information about the options available when you upgrade from Office 365 E4, see [Options for Office 365 E4 customers]().
+This article steps you through the process of upgrading from an Office 365 E4 to a new subscription. For information about the options available when you upgrade from Office 365 E4, see [Important information for Office 365 E4 customers](important-information-e4.md).
 
 > [!IMPORTANT]
 > This article applies to Office 365 E4 subscriptions that were bought directly from Microsoft via credit card or invoice only. If your subscription was bought another way, such as through a partner or through the Volume Licensing Service Center, contact your Microsoft account representative or partner to help you upgrade plans.
@@ -54,9 +53,9 @@ Upgrading plans manually means completing the following separate procedures inst
 ## Find out if you can use the Upgrade tab to upgrade to a new plan
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-1. Select your Office 365 E4 subscription.
-1. Select the **Upgrade** tab. If you see other plans listed, it means you can upgrade plans automatically.
-1. If you can’t upgrade automatically, you see a message that describes the reason why you can’t upgrade.
+2. Select your Office 365 E4 subscription.
+3. Select the **Upgrade** tab. If you see other plans listed, it means you can upgrade plans automatically.
+4. If you can’t upgrade automatically, you see a message that describes the reason why you can’t upgrade.
 
 There are several reasons why you can't upgrade plans automatically. Most of the issues are temporary ones, such as service health issues that you can resolve. For more information, see [Why can't I upgrade plans?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) If you need help with your upgrade, [contact support](../../admin/contact-support-for-business-products.md).
 
@@ -79,17 +78,17 @@ Here are some things that are important to know before you begin.
 ### Start the upgrade by using the Upgrade tab
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-1. Select your Office 365 E4 subscription.
-1. On the subscription details page, select the **Upgrade** tab.
-1. Find the subscription that you want to buy, then select **Upgrade**.
-1. On the **Cart** page, verify that everything is correct. Select whether to pay monthly or yearly, and verify the number of licenses under **Quantity**.
+2. Select your Office 365 E4 subscription.
+3. On the subscription details page, select the **Upgrade** tab.
+4. Find the subscription that you want to buy, then select **Upgrade**.
+5. On the **Cart** page, verify that everything is correct. Select whether to pay monthly or yearly, and verify the number of licenses under **Quantity**.
     > [!NOTE]
     > Any add-on subscriptions associated with your Office 365 E4 subscription, such as Office 365 Extra File Storage are also listed. However, if you have any add-on subscriptions that are included in the subscription that you’re upgrading to, we’ll remove them.
-1. After you've reviewed your order, select **Go to checkout**.
-1. On the **Checkout** page, review **Sold to**, **Billed to**, and **Items in this order**. Select **Change** next to any of these items to edit the information.
+6. After you've reviewed your order, select **Go to checkout**.
+7. On the **Checkout** page, review **Sold to**, **Billed to**, and **Items in this order**. Select **Change** next to any of these items to edit the information.
     > [!NOTE]
     > The option to use invoice as a payment method is only available for orders that are above a certain cost amount. Selecting the invoice payment option can delay the upgrade process by up to two business days if a credit check is required.
-1. When you're finished, select **Place order**.
+8. When you're finished, select **Place order**.
 
 > [!NOTE]
 > Upgrading plans typically takes less than ten minutes if there are no errors or issues. You can check the status of your upgrade by looking at either your old or new subscription.
@@ -117,9 +116,9 @@ Before moving on to the next step, it’s important to make sure that all the se
 > If you chose to pay for the new subscription by invoice, a credit check might be required. It can take up to two business days before the subscription is available.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-1. From the **Subscription status** drop-down, select **Active**.
-1. Make sure that your new subscription is displayed, and that the number of licenses is the same as what you had for Office 365 E4.
-1. If you need to buy more licenses, follow the steps in [Buy or remove subscription licenses](../licenses/buy-licenses.md).
+2. From the **Subscription status** drop-down, select **Active**.
+3. Make sure that your new subscription is displayed, and that the number of licenses is the same as what you had for Office 365 E4.
+4. If you need to buy more licenses, follow the steps in [Buy or remove subscription licenses](../licenses/buy-licenses.md).
 
 ### Step 3: Reassign licenses to users
 

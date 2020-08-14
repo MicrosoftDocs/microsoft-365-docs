@@ -2,7 +2,6 @@
 title: "Important information for Office 365 E4 customers"
 f1.keywords:
 - NOCSH
-- Customer email
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -15,11 +14,11 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
-ms.custom:
+ms.custom: customer-email
 search.appverid:
 - MET150
 description: "Important information about upgrading or changing plans for customers with an Office 365 E4 subscription."
-ms.date: 08/12/2020
+ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
