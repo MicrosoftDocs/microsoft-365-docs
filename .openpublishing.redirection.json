@@ -1,12 +1,10 @@
 {
   "redirections": [
-
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-hover.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": true
     },
-
     {
       "source_path": "microsoft-365/admin/misc/become-admin-and-make-purchases.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/misc/become-the-admin",
@@ -178,9 +176,9 @@
       "redirect_document_id": false
     },
     {
-        "source_path": "office365/SecurityCompliance/secure-sharepoint-online-sites-and-files.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
-        "redirect_document_id": false
+      "source_path": "office365/SecurityCompliance/secure-sharepoint-online-sites-and-files.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365-docs/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md",
@@ -341,27 +339,27 @@
       "source_path": "microsoft-365/security/mtp/hunting.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "microsoft-365/security/mtp/advanced-hunting-tvm-configassessment-table.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsecureconfigurationassessment-table",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "microsoft-365/security/mtp/advanced-hunting-tvm-secureconfigkb-table.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "microsoft-365/security/mtp/advanced-hunting-tvm-softwareinventory-table.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "microsoft-365/security/mtp/advanced-hunting-tvm-softwarevulnerability-table.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "microsoft-365/security/mtp/advanced-hunting-accountinfo-table.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-identityinfo-table",
@@ -372,7 +370,7 @@
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicefilecertificateinfo-table",
       "redirect_document_id": false
     },
-	  {
+    {
       "source_path": "microsoft-365/security/mtp/mtp-preview.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/preview",
       "redirect_document_id": false
@@ -387,7 +385,7 @@
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files",
       "redirect_document_id": false
     },
- 	  {
+    {
       "source_path": "microsoft-365/compliance/view-email-security-reports.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/view-email-security-reports",
       "redirect_document_id": false
@@ -486,7 +484,7 @@
       "source_path": "microsoft-365/security-and-compliance/index.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "microsoft-365/admin/dns/index.md",
       "redirect_url": "setup/add-domain",
@@ -700,7 +698,7 @@
     {
       "source_path": "microsoft-365/compliance/what-the-sensitive-information-types-look-for.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/compliance/eu-driver-s-license-number.md",
@@ -913,6 +911,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/Enterprise/using-azure-ad-for-SharePoint-Server-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/commerce/sign-up-for-office-365-trial.md",
       "redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/commerce/try-or-buy-microsoft-365",
       "redirect_document_id": true
@@ -923,9 +926,269 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/admin/create-groups/manage-creation-of-groups.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/create-groups/choose-domain-to-create-groups.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/choose-domain-to-create-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/create-groups/groups-naming-policy.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/groups-naming-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/create-groups/office-365-groups-expiration-policy.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/microsoft-365-groups-expiration-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/create-groups/plan-for-groups-governance.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/collaboration-governance-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/commerce/buy-a-subscription-from-your-free-trial.md",
       "redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/commerce/try-or-buy-microsoft-365",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "enterprise/office-365-isolation-controls.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-isolation-control",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-personnel-controls.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-personnel-controls",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-technology-controls.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-technology-controls",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-monitoring-and-auditing-access-controls.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-monitoring-and-auditing-access-controls",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-yammer-enterprise-access-controls.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-yammer-enterprise-access-controls",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-ediscovery-and-search-features.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-ediscovery-and-search-features",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-reporting-features.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-reporting-features",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-management-activity-api.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-management-activity-api",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-mailbox-migrations.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-mailbox-migrations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-internal-logging.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-internal-logging",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-dealing-with-data-corruption.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-dealing-with-data-corruption",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-malware-and-ransomware-protection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-malware-and-ransomware-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-monitoring-and-self-healing.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-monitoring-and-self-healing",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-exchange-data-resiliency.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-exchange-data-resiliency",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-data-destruction.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-data-destruction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-data-immutability.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-data-immutability",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-exchange-online-data-deletion.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-exchange-online-data-deletion",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-sharepoint-online-data-deletion.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-sharepoint-online-data-deletion",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-skype-data-deletion.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-skype-data-deletion",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-u-s-government-dod-endpoints.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-u-s-government-gcc-high-endpoints.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-germany-endpoints.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-germany-endpoints",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-ip-web-service.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-ip-web-service",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-networking-partner-program.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-partner-program",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-network-connectivity-principles.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-tenant-isolation-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-tenant-isolation-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-auditing-and-reporting-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-auditing-and-reporting-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-networking-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-administrative-access-controls-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-administrative-access-controls-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-isolation-in-azure-active-directory.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-isolation-in-azure-active-directory",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-isolation-in-graph-and-delve.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-isolation-in-graph-and-delve",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-isolation-in-office-365-search.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-isolation-in-microsoft-365-search",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-isolation-in-office-365-video.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-isolation-in-microsoft-365-video",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-resource-limits.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-resource-limits",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-monitoring-and-testing.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-monitoring-and-testing",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-isolation-in-office-365.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-isolation-in-microsoft-365",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-vpn-split-tunnel.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-networking-china.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-china",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-vpn-implement-split-tunnel.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/nat-support-with-office-365.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/nat-support-with-microsoft-365",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/use-office-365-cdn-with-spo.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/use-microsoft-365-cdn-with-spo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/setup-guides-for-office-365.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/setup-guides-for-microsoft-365",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/set-up-network-for-office-365.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/set-up-network-for-microsoft-365",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-integration.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-client-support-certificate-based-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-client-support-certificate-based-authentication",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "enterprise/office-365-client-support-modern-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-client-support-modern-authentication",
+      "redirect_document_id": true
     }
   ]
 }
