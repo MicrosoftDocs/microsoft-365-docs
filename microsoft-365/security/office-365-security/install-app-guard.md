@@ -205,7 +205,7 @@ running Office documents are opened in Application Guard. Refer to the [Office
 Insider Handbook](https://insider.office.com/en-us/handbook) for submitting
 feedback.
 
-## Integration with Microsoft Defender ATP
+## Integration with Microsoft Defender ATP and Office ATP
 
 Application Guard for Office is integrated with Microsoft Defender Advance
 Threat Protection (ATP) to provide monitoring and alerting on malicious activity
@@ -215,11 +215,11 @@ Microsoft Defender ATP is a security platform designed to help enterprise
 networks prevent, detect, investigate, and respond to advanced threats. For more
 details about this platform, visit the [Microsoft Defender Advanced Threat
 Protection](https://www.microsoft.com/en-us/microsoft-365/windows/microsoft-defender-atp)
-page.
-
-Learn more about onboarding devices to this platform at [Onboard devices to the
+page. Learn more about onboarding devices to this platform at [Onboard devices to the
 Microsoft Defender ATP
 service](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
+
+You can also configure Office ATP to work with Microsoft Defender ATP. Refer to [Integrate Office 365 ATP with Microsoft Defender ATP](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide).
 
 ## Limitations
 
