@@ -277,7 +277,7 @@ Each exported .csv file is limited to 150,000 rows. If the data for that day con
 
 ### Funnel view for the Mailflow status report
 
-The funnel view is available in EOP. The funnel view shows you how Microsoft's email threat protection features filter incoming and outgoing emails in your organization. It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
+The Funnel view shows you how Microsoft's email threat protection features filter incoming and outgoing emails in your organization. It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
 
 If you click the **Funnel** tab, by default, this view contains a chart and a data table that's configured with the following filters:
 
@@ -295,12 +295,14 @@ If you click **Filter**, you can filter both the chart and the data table.
 The chart is organized by **email count**:
   - **Total email**
   - **Email after edge protection**
-  - **Email after Anti-malware, file reputation, file type block**
-  - **Email after Anti-phish, URL reputation, brand impersonation, anti-spoof**
-  - **Email after Anti-Spam, bulk mail filtering**
-  - **Email after User and domain impersonation (ATP only)**
-  - **Email after File and URL detonation (ATP only)**
-  - **Email detected as benign after Post-delivery protection (URL click time protection)**
+  - **Email after anti-malware, file reputation, file type block**
+  - **Email after anti-phish, URL reputation, brand impersonation, anti-spoof**
+  - **Email after anti-spam, bulk mail filtering**
+  - **Email after user and domain impersonation** <sup>1</sup>
+  - **Email after file and URL detonation**<sup>1</sup>
+  - **Email detected as benign after post-delivery protection (URL click time protection)**
+
+<sup>1</sup> Office 365 ATP only
 
 To view the emails filtered by EOP or ATP separately, click on the value in the chart legend.
 
@@ -309,7 +311,7 @@ The data table contains the following information, shown in descending date orde
  - **Total email**
  - **Edge protection**
  - **Anti-malware, file reputation, file type block**
- - **Anti-phish, URL reputation, Brand impersonation, Anti-spoof**
+ - **Anti-phish, URL reputation,bBrand impersonation, anti-spoof**
  - **Anti-spam, bulk mail filtering**
  - **User and domain impersonation (ATP)**
  - **File and URL detonation (ATP)**
@@ -328,6 +330,58 @@ Under **Date**, choose a range, and then click **Apply**. Data for the current f
 Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
 
  ![Funnel view in the Mailflow status report ](../../media/mail-flow-status-report-funnel-view.png)
+
+ ### Tech view for the Mailflow status report
+
+ The Tech view shows you a granular view of how different features and technologies contribute to the removal of unwanted or malicious email 
+
+If you click the **Tech view** tab, by default, this view contains a chart and a data table that's configured with the following filters:
+
+- **Date**: The last 7 days.
+
+- **Direction**:
+  - **Inbound**
+  - **Outbound**
+  - **Intra-org**: this count is for messages within a tenant i.e sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound)
+
+The aggregate view and data table view allow for 90 days of filtering.
+
+If you click **Filter**, you can filter both the chart and the data table.
+
+The chart is organized by **email count**:
+  - **Total email**
+  - **Edge allow, edge filtered**
+  - **Not malware, Safe attachments detection (ATP), Anti-malware engine detection, rule block**
+  - **Not phish, DKIM failure, DMARC failure, impersonation detection, spoof detected, phish detected**
+  - **No detection with URL detonation, URL detonation detection (ATP)**
+  - **Not spam, spam**
+  - **Non-malicious email, safe links detection, ZAP**
+
+The data table contains the following information, shown in descending date order:
+  - **Date**  
+  - **Total email**
+  - **Edge filtered**
+  - **Anti-malware engine, safe attachments, rule filtered**
+  - **DMARC, impersonation, spoof, phish filtered**
+  - **URL detonation detection**
+  - **Anti-spam filtered**
+  - **Bulk filters**
+  - **ZAP removed**
+  - **Detection by safe links**
+
+If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.
+
+**Export**:
+
+On clicking **Export**, under **Options** you can select one of the following: 
+- **Summary (with data for last 90 days at most)**
+- **Details (with data for last 30 days at most)**
+
+Under **Date**, choose a range, and then click **Apply**. Data for the current filters will be exported to a .csv file.
+
+Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
+
+ ![Tech view in the Mailflow status report ](../../media/mail-flow-status-report-Tech-view.png)
 
 ## Sent and received email report
 
