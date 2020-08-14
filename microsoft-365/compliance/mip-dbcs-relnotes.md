@@ -18,7 +18,7 @@ description: "Release notes for support for double byte character sets."
 
 # Support for double byte character set release notes (preview)
 
- Microsoft 365 Information Protection now  supports in preview double byte character set languages for:
+ Microsoft 365 Information Protection now supports in preview double byte character set languages for:
 
 - Chinese (simplified)
 - Chinese (traditional)
