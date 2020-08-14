@@ -19,9 +19,9 @@ search.appverid:
 description: "Learn how to manage Office Scripts settings for users in your organization."
 ---
 
-# Title
+# Manage Office Scripts settings
 
-<!-- Add intro text here, if needed. -->
+Office Scripts lets users record, edit, and run automated scripts in Excel on the web. Admins must enable this feature in the admin center before users can use it.
 
 ## Before you begin
 
