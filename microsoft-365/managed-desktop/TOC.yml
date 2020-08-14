@@ -106,8 +106,6 @@
         - name: Work with reports
           href: working-with-managed-desktop/reports.md
           items:
-            - name: Device compliance report
-              href: working-with-managed-desktop/device-compliance-report.md
             - name: Device inventory report
               href: working-with-managed-desktop/device-inventory-report.md
         - name: Work with insights
