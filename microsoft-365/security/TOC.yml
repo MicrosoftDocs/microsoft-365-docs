@@ -312,8 +312,7 @@
                   href: ./office-365-security/siem-server-integration.md
                 - name: Exchange Online Protection overview
                   href: ./office-365-security/exchange-online-protection-overview.md
-                  items: 
-    
+                  items:
                     - name: Permissions in standalone EOP
                       href: ./office-365-security/feature-permissions-in-eop.md
                       items: 
@@ -422,7 +421,7 @@
             - name: How threat investigation and response works
               href: ./office-365-security/office-365-ti.md
             - name: EOP features
-               href: ./office-365-security/eop-features.md
+              href: ./office-365-security/eop-features.md 
         - name: Evaluate
         - name: Plan
         - name: Deploy
