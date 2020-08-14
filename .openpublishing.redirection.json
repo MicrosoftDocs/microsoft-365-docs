@@ -923,6 +923,36 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/admin/create-groups/manage-creation-of-groups.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/create-groups/choose-domain-to-create-groups.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/choose-domain-to-create-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/create-groups/groups-naming-policy.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/groups-naming-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/create-groups/office-365-groups-expiration-policy.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/microsoft-365-groups-expiration-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/create-groups/plan-for-groups-governance.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/collaboration-governance-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/commerce/buy-a-subscription-from-your-free-trial.md",
       "redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/commerce/try-or-buy-microsoft-365",
       "redirect_document_id": false
