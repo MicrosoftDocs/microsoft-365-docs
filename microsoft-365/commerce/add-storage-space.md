@@ -252,5 +252,5 @@ Office 365 Extra File Storage is available for the following subscriptions:
 
 ## Related content
 
-[Manage site storage limits](ttps://docs.microsoft.com/en-us/sharepoint/manage-site-collection-storage-limits) (article)\
-[Set the default storage space for OneDrive users](https://docs.microsoft.com/en-us/onedrive/set-default-storage-space)(article)
+[Manage site storage limits](ttps://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (article)\
+[Set the default storage space for OneDrive users](https://docs.microsoft.com/onedrive/set-default-storage-space)(article)
