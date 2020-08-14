@@ -76,10 +76,6 @@ A cipher suite is a collection of encryption algorithms that TLS uses to establi
 |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA <br/>        |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
 |TLS_RSA_WITH_AES_256_GCM_SHA384 <br/>           |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
 |TLS_RSA_WITH_AES_128_GCM_SHA256 <br/>           |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_256_CBC_SHA256 <br/>           |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_128_CBC_SHA256 <br/>           |RSA/112 <br/> |No <br/> |AES/128 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_256_CBC_SHA <br/>              |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_128_CBC_SHA <br/>              |RSA/112 <br/> |No <br/> |AES/128 <br/>|RSA/112 <br/> |
 
 These are the following cipher suites which will still support TLS 1.0 and 1.1 protocols until their deprecation date. For GCC High and DoD environments that deprecation date was Jan 15, 2020, and for Worldwide and GCC environments that date is October 15, 2020.
 
