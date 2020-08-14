@@ -22,7 +22,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn how to assign licenses to users."
-ms.date: 07/01/2020
+ms.date: 08/14/2020
 ---
 
 # Assign licenses to users
