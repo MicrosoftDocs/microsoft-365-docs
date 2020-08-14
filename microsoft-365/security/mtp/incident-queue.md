@@ -40,7 +40,7 @@ By default, the queue in the Microsoft 365 security center displays incidents se
 
 The incident queue exposes customizable columns that give you visibility into different characteristics of the incident or the contained entities, helping you make an informed decision regarding prioritization of incidents to handle.
 
-For additional visibility at-a-glance, automatic incident naming generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident.
+For additional visibility at a glance, automatic incident naming generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident.
 
 For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
 
