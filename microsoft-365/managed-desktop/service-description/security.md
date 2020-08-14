@@ -4,15 +4,17 @@ description:
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
-ms.date: 09/24/2018
+ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
 # Security technologies in Microsoft Managed Desktop
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop uses several Microsoft technologies to help secure managed devices and data. In addition, the Microsoft Managed Desktop Security Operations Center uses a variety of processes in conjunction with these technologies.
+Microsoft Managed Desktop uses several Microsoft technologies to help secure managed devices and data. In addition, the Microsoft Managed Desktop Security Operations Center uses a variety of [processes](security-operations.md) in conjunction with these technologies.
 
 Specifically: 
 
