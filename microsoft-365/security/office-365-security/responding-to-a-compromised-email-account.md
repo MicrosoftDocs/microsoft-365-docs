@@ -166,7 +166,7 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
    Select **Permissions**, manually select each role group, and in the details pane, verify the user accounts in the **Members** section.  If the role group contains the user account, do the following steps:
 
    a. Select the role group, click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).
-   b. In the **Member** section, select the user account, and then click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.png). When you're finished, click **Save**.
+   b. In the **Member** section, select the user account, and then click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif). When you're finished, click **Save**.
 
 ### Step 7 Optional: Additional precautionary steps
 
