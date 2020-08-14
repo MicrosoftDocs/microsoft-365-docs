@@ -29,9 +29,9 @@ Ready to start managing your organization's high-value content for legal, busine
 
 2. **Understand how retention and retention labels work** because retention labels are used to declare records: [Learn about retention](retention.md)
 
-3. **Create your file plan for retention settings and actions**, by [importing an existing plan](file-plan-manager.md#import-retention-labels-into-your-file-plan ) if you have one, or create [new retention labels that  declare records](declare-records.md), as needed.
+3. **Create your file plan for retention settings and actions** by [importing an existing plan](file-plan-manager.md#import-retention-labels-into-your-file-plan ) if you have one, or create [new retention labels that  declare records](declare-records.md).
 
-3. **Publish and apply your retention labels**. Retention labels are reusable building blocks that can be used in multiple policies and can be incorporated into user workflows. See the list of [common scenarios](#common-scenarios-for-records-management) to help you identify how retention labels can be used. 
+4. **Publish and apply your retention labels**. Retention labels are reusable building blocks that can be used in multiple policies and can be incorporated into user workflows. See the list of [common scenarios](#common-scenarios-for-records-management) to help you identify how retention labels can be used for records management. 
 
 ## Subscription and licensing requirements for retention policies and retention labels
 
@@ -43,7 +43,7 @@ To see the options for licensing your users to benefit from Microsoft 365 compli
 
 Members of your compliance team who will create and manage records need permissions to the [Microsoft 365 compliance center](https://compliance.microsoft.com/). By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Records Management** admin role group. For instructions, see [Give users access to the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
-These permissions are required only to create and apply retention labels that declare records. The person configuring these labels doesn't require access to the content.
+These permissions are required only to create, configure, and apply retention labels that declare records. The person configuring these labels doesn't require access to the content.
 
 ## Common scenarios for records management
 
@@ -51,7 +51,7 @@ Because records management uses retention labels, see the [common scenarios for 
 
 |I want to ...|Documentation|
 |----------------|---------------|
-|Declare a record  |[Declare records by using retention labels](declare-records.md)|
+|Declare a record |[Declare records by using retention labels](declare-records.md)|
 |Update a record |[Use record versioning to update records stored in SharePoint or OneDrive](record-versioning.md)|
 |Have proof of disposition for content that is deleted at the end of its retention period|[Disposition of records](disposition.md#disposition-of-records) |
 

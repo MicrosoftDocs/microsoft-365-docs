@@ -50,4 +50,4 @@ See the [webinar recording](https://aka.ms/MIPC/Video-RecordsManagementWebinar) 
 
 ## Next steps
 
-If you are ready to get started with records management in Microsoft 365, see [Learn about records](records.md).
+If you are ready to get started with records management in Microsoft 365, see [Get started with records management](get-started-with-records-management.md).

@@ -47,7 +47,7 @@ To see the options for licensing your users to benefit from Microsoft 365 compli
 
 Members of your compliance team who will create and manage retention policies and retention labels need permissions to the [Microsoft 365 compliance center](https://compliance.microsoft.com/). By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Compliance Administrator** admin role group. For instructions, see [Give users access to the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
-These permissions are required only to create and apply a retention policy. The person configuring the retention policy doesn't require access to the content.
+These permissions are required only to create, configure, and apply retention policies and retention labels. The person configuring these polices and labels doesn't require access to the content.
 
 ## Common scenarios for retention policies and retention labels
 
