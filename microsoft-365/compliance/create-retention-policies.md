@@ -145,7 +145,7 @@ To verify the syntax for your tenant and identify URLs for users, see [Get a lis
 
 To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Office 365 groups** location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. In addition, although the **Exchange email** location initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
 
-A retention policy applied to a Microsoft 365 group includes both the group mailbox and site. A retention policy applied to a Microsoft 365 group protects the resources created by a Microsoft 365 group, which includes Microsoft Teams.
+A retention policy applied to a Microsoft 365 group includes the group mailbox and teams site, if a teams site was selected at the time the group was created or later added to the group. Files stored in the teams site are covered with this location, but not Teams chats or Teams channel messages that have their own retention policy locations.
 
 ### Configuration information for Skype for Business
 
@@ -285,15 +285,15 @@ Usually this update is fairly quick but can take several days. When the policy r
 
 You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) to comply with regulatory requirements. Because administrators can't disable or delete a retention policy after a preservation lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.
 
-All locations you select in the retention policy support Preservation Lock.
+All retention policies with any configuration support Preservation Lock. However, when you use the PowerShell commands that follow, you'll notice that the **Workload** parameter always displays **Exchange, SharePoint, OneDriveForBusines, Skype, ModernGroup** rather than reflect the actual workloads configured in the policy. This is a display issue only.
 
 1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-2. List your retention policies and find the name of the policy that you want to lock by running `Get-RetentionCompliancePolicy`.
+2. List your retention policies and find the name of the policy that you want to lock by running [Get-RetentionCompliancePolicy](https://powershell/module/exchange/get-retentioncompliancepolicy). For example:
     
    ![List of retention policies in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
-3. To place a Preservation Lock on a retention policy, run the `Set-RetentionCompliancePolicy` cmdlet with the name of the retention policy, and the *RestrictiveRetention* parameter set to true:
+3. To place a Preservation Lock on a retention policy, run the [Set-RetentionCompliancePolicy]( ) cmdlet with the name of the retention policy, and the *RestrictiveRetention* parameter set to true:
     
     ```powershell
     Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
@@ -303,15 +303,17 @@ All locations you select in the retention policy support Preservation Lock.
     
     ![RestrictiveRetention parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-     When prompted, choose **Yes to All**:
+     When prompted, read and acknowledge the restrictions that come with this configuration by entering **Y**:
     
    ![Prompt to confirm that you want to lock a retention policy in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
-A Preservation Lock is now placed on the retention policy. If you run `Get-RetentionCompliancePolicy`, the **RestrictiveRetention** parameter is set to **True**. For example:
+A Preservation Lock is now placed on the retention policy. To confirm, run `Get-RetentionCompliancePolicy` again, but specify the retention policy name and display the policy parameters:
 
 ```powershell
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 ```
+
+You should see **RestrictiveRetention** is set to **True**. For example:
 
 ![Locked policy with all parameters shown in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
   
