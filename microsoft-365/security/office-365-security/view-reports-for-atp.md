@@ -260,14 +260,17 @@ To get back to the reports view, click **View report**.
 
 In addition to the ATP reports described in this topic, several other reports are available, as described in the following table:
 
+****
+
 |Report|Topic|
 |---|---|
 |**Explorer** (ATP Plan 2) or **real-time detections** (ATP Plan 1)|[Threat Explorer (and real-time detections)](threat-explorer.md)|
 |**Email security reports**, such as the Top senders and recipients report, the Spoof mail report, and the Spam detections report.|[View email security reports in the Security & Compliance Center](view-email-security-reports.md)|
 |**Mail flow reports**, such as the Forwarding report, the Mailflow status report, and the Top senders and recipients report.|[View mail flow reports in the Security & Compliance Center](view-mail-flow-reports.md)|
 |**URL trace for ATP Safe Links** (PowerShell only). The output of this cmdlet shows you the results of ATP Safe Links actions over the past seven days.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|**Mail traffic results for EOP and ATP** (PowerShell only). The output of this cmdlet contains information about Domain, Date, Event Type, Direction, Action, and Message Count.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport) <br/><br/> |
+|**Mail traffic results for EOP and ATP** (PowerShell only). The output of this cmdlet contains information about Domain, Date, Event Type, Direction, Action, and Message Count.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**Mail detail reports for EOP and ATP detections** (PowerShell only). The output of this cmdlet contains details about malicious files or URLs, phishing attempts, impersonation, and other potential threats in email or files.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
+|
 
 ## What permissions are needed to view the ATP reports?
 
