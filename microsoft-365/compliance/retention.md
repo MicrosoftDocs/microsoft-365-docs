@@ -53,7 +53,7 @@ When content has retention settings assigned to it, that content remains in its 
 
 - For Exchange mailboxes: The copy is retained in the **Recoverable Items** folder. 
 
-- For Teams channel and chat messages: The copy is retained in a hidden folder within the Exchange **Recoverable Items** folder.
+- For Teams channel and chat messages: The copy is retained in a hidden folder named **SubstrateHolds** as a subfolder in the Exchange **Recoverable Items** folder.
 
 > [!NOTE]
 > The Preservation Hold library consumes storage that isn't exempt from a site's storage quota. You might need to increase your storage when you use retention settings for SharePoint and Microsoft 365 groups.
