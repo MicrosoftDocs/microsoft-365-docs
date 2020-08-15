@@ -65,7 +65,7 @@ Use the following table to help you map your business requirements to retention 
 |Comply with SEC Rule 17a-4|[Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
 | Monitor how and where retention labels are applied | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
-|Use a single records management solution for documents and emails |[Records management in Microsoft 365](records-management.md) |
+|Use a single records management solution for documents and emails |[Learn about records management](records-management.md) |
 
 If you use retention labels for records management, there are additional scenarios that are unique to retention labels that mark content as a record. See [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).
 
