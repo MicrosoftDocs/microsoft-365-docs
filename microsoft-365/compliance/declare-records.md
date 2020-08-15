@@ -23,9 +23,9 @@ description: "Declare records by using retention labels."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-To declare items as a record, you use [retention labels](retention.md#retention-labels) that mark the content as a record or a regulatory record.
+To declare items as records, you use [retention labels](retention.md#retention-labels) that mark the content as a record or a regulatory record.
 
-If you're not sure whether to use a record or a regulatory record, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). If you need to use regulatory records, you must first [run a PowerShell command to display the option to mark content as a regulatory record](#how-to-display-the-option-to-mark-content-as-a-regulatory-record) before you configure your retention labels.
+If you're not sure whether to use a record or a regulatory record, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). If you need to use regulatory records, you must first run a PowerShell command, as described in the following section.
 
 You can then either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.
 
