@@ -76,6 +76,7 @@ All columns except the label **Name** can be displayed or hidden by selecting th
 - **Is record** identifies if the item is marked as a record when the label is applied. Valid values:
     - No
     - Yes
+    - Yes(Regulatory)
 
 - **Retention duration** identifies the retention period. Valid values:
     - Days
