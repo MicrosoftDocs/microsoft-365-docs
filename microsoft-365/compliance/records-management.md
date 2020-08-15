@@ -48,7 +48,7 @@ In addition to the online documentation, you might find it useful to listen to t
 
 ## Records
 
-When content is marked as a record:
+When content is declared a record:
 
 - Restrictions are placed on the items in terms of what [actions are allowed or blocked](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
