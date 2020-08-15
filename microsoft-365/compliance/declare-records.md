@@ -49,31 +49,26 @@ If you change your mind about seeing this option in the retention label wizard, 
 
 ## Configuring retention labels to declare records
 
-When you create or edit a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you have the option to mark the content as a record. If you ran the PowerShell command from the previous section, you can mark the content as a regulatory record.
+When you create or edit a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you have the option to mark items as a record. If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.
 
->[!NOTE] 
-> The option to mark the content as a record or a regulatory record is not available when you create or configure retention labels from **Information Governance** in the Microsoft 365 compliance center. Instead, you must use **Records Management**.
+For example:
 
-To create a new retention label that marks the content as a record or a regulatory record:
+![Configure a retention label to mark content as a record or regulatory](../media/recordversioning6.png)
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Records Management** \> **File Plan**. On the **File plan** page, select **Create a label**.
+You see the option to select a regulatory record only if your tenant is configured to display this option as described in the preceding section. If you select this option, you're asked to confirm your choice because of the [additional restrictions for regulatory records](records-management.md##compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
-2. On the **Define retention settings** page in the wizard, choose the option to mark items as a record or a regulatory record. For example:
-    
-   ![Configure a retention label to mark content as a record or regulatory](../media/recordversioning6.png)
-    
-    You see the option to select a regulatory record only if your tenant is configured to display this option as described in the preceding section. If you select this option, you're asked to confirm your choice because of the [additional restrictions for regulatory records](records-management.md##compare-restrictions-for-what-actions-are-allowed-or-blocked).
+Using this retention label, you can now apply it to SharePoint or OneDrive documents and Exchange emails, as needed. 
 
-3. Apply the retention label to SharePoint or OneDrive documents and Exchange emails, as needed. For instructions:
-    
-    - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
-    
-    - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
+For full instructions:
+
+- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+
+- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
 
 ## Applying the configured retention label to content
 
-When retention labels that mark content as a record or regulatory record are made available for users to apply them in apps:
+When retention labels that mark items as a record or regulatory record are made available for users to apply them in apps:
 
 - For Exchange, any user with write-access to the mailbox can apply these labels. 
 - For SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply these labels.
