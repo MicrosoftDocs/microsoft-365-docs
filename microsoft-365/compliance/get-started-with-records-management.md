@@ -52,6 +52,8 @@ These permissions are required only to create, configure, and apply retention la
 
 Use the following table to help you map your business requirements to the scenarios that are supported by records management.
 
+Because records management uses retention labels, many scenarios in this table are also listed as [common scenarios for retention policies and retention labels](get-started-with-retention.md#common-scenarios-for-retention-policies-and-retention-labels).
+
 |I want to ...|Documentation|
 |----------------|---------------|
 |Declare a record |[Declare records by using retention labels](declare-records.md)|
