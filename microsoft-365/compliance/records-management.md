@@ -64,7 +64,7 @@ By using retention labels to mark content as records, you can implement a single
 
 Use the following table to identify what restrictions are placed on content as a result of applying a standard retention label, and retention labels that mark content as a record. 
 
-A standard retention label has the configuration to retain data without marking content as a record.
+A standard retention label has retention settings and actions but doesn't mark content as a record.
 
 >[!NOTE] 
 > For completeness, the table includes columns for a locked and unlocked record, which is applicable to SharePoint and OneDrive, but not Exchange. The ability to lock and unlock a record uses [record versioning](record-versioning.md) that isn't supported for Exchange items. So for all Exchange items that are marked as a record, the behavior maps to the **Record - locked** column, and the **Record - unlocked column** is not relevant.
