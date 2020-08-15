@@ -27,7 +27,7 @@ Ready to start managing your organization's high-value content for legal, busine
 
 1. **Understand the records management solution** and what actions are allowed or blocked when documents and emails are declared records: [Learn about records management](records-management.md). 
 
-2. **Understand retention labels and how retention works** for SharePoint and OneDrive, and for Exchange. Retention labels are used to declare records: [Learn about retention policies and retention labels](retention.md)
+2. **Understand retention labels and how retention works** for SharePoint and Exchange, because retention labels are used to declare records: [Learn about retention policies and retention labels](retention.md)
 
 3. **Create your file plan for retention settings and actions** by [importing an existing plan](file-plan-manager.md#import-retention-labels-into-your-file-plan ) if you have one, or create [new retention labels that declare records](declare-records.md).
 
