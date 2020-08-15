@@ -47,7 +47,7 @@ By default, the retention label option to mark content as a regulatory record is
 
 If you change your mind about seeing this option in the retention label wizard, you can hide it again by running the same cmdlet with the **false** value: `Set-RegulatoryComplianceUI -Enabled $false` 
 
-## How to configure retention labels to declare records
+## Configuring retention labels to declare records
 
 When you create or edit a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you have the option to mark the content as a record. If you ran the PowerShell command from the previous section, you can mark the content as a regulatory record.
 
@@ -58,7 +58,7 @@ To create a new retention label that marks the content as a record or a regulato
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Records Management** \> **File Plan**. On the **File plan** page, select **Create a label**.
 
-2. On the **Define retention settings** page in the wizard, choose the option to mark content as a record or a regulatory record. For example:
+2. On the **Define retention settings** page in the wizard, choose the option to mark items as a record or a regulatory record. For example:
     
    ![Configure a retention label to mark content as a record or regulatory](../media/recordversioning6.png)
     
@@ -69,6 +69,7 @@ To create a new retention label that marks the content as a record or a regulato
     - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
     
     - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
+
 
 ## Applying the configured retention label to content
 
