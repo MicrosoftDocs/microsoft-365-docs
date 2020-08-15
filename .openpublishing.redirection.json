@@ -1186,6 +1186,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/compliance/records.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/records-management#records",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "enterprise/office-365-client-support-modern-authentication.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-client-support-modern-authentication",
       "redirect_document_id": true
