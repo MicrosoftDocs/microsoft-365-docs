@@ -28,7 +28,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 By default, end-user spam notifications are disabled in anti-spam policies. When an admin [enables end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications), recipients (including shared mailboxes with automapping enabled) will receive periodic notifications about their messages that were quarantined as spam, bulk email, or (as of April 2020) phishing.
 
-End user Spam notification for shared mailboxes is only supported if shared mailbox permission is granted through: Add-MailboxPermission-Identity <shared mailbox> -User <user> -AccessRights FullAccess - AutoMapping:$false
+For shared mailboxes, end-user spam notifications are only supported for users who are granted FullAccess permission to the shared mailbox. For more information, see [Use the EAC to edit shared mailbox delegation](https://docs.microsoft.com/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation).
 
 End User Spam notification is not supported for groups.
 
