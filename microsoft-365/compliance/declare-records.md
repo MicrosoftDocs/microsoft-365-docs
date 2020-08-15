@@ -55,8 +55,6 @@ For example:
 
 ![Configure a retention label to mark content as a record or regulatory](../media/recordversioning6.png)
 
-You see the option to select a regulatory record only if your tenant is configured to display this option as described in the preceding section. If you select this option, you're asked to confirm your choice because of the [additional restrictions for regulatory records](records-management.md##compare-restrictions-for-what-actions-are-allowed-or-blocked).
-
 Using this retention label, you can now apply it to SharePoint or OneDrive documents and Exchange emails, as needed. 
 
 For full instructions:
