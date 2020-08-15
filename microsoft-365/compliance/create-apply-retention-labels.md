@@ -63,7 +63,7 @@ Where you create and configure your retention labels depend on whether you're us
     
     - For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md)
     
-    - To use the retention label to declare content as a record, enable the checkbox **Use label to classify content as a "Record"**.
+    - To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declar- records).
 
 3. Repeat these steps to create more labels.
 
