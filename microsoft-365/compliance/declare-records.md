@@ -32,7 +32,7 @@ You can then either publish those labels so that users and administrators can ma
 ## How to display the option to mark content as a regulatory record
 
 >[!NOTE] 
-> The following procedure is an auditable action, logging **Enabled regulatory record option for retention labels** in the [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance#retention-policy-and-retention-label-activities) section of the audit log.
+> The following procedure is an auditable action, logging **Enabled regulatory record option for retention labels** in the [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) section of the audit log.
 
 By default, the retention label option to mark content as a regulatory record isn't displayed in the retention label wizard. To display this option, you must first run a PowerShell command:
 
