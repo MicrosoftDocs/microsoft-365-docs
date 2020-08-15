@@ -38,11 +38,12 @@ By default, the retention label option to mark content as a regulatory record is
 
 1. [Connect to the Office 365 Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-2. Run the following cmdlet and when prompted to confirm, press Y:
+2. Run the following cmdlet:
     
     ```powershell
     Set-RegulatoryComplianceUI -Enabled $true
     ````
+    There is no prompt to confirm and the setting takes effect immediately.
 
 If you change your mind about seeing this option in the retention label wizard, you can hide it again by running the same cmdlet with the **false** value: `Set-RegulatoryComplianceUI -Enabled $false` 
 
@@ -57,9 +58,11 @@ To create a new retention label that marks the content as a record or a regulato
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Records Management** \> **File Plan**. On the **File plan** page, select **Create a label**.
 
-2. On the **Label settings** page in the wizard, choose the option to mark content as a record or a regulatory record.
+2. On the **Define retention settings** page in the wizard, choose the option to mark content as a record or a regulatory record. For example:
     
    ![Configure a retention label to mark content as a record or regulatory](../media/recordversioning6.png)
+    
+    You see the option to select a regulatory record only if your tenant is configured to display this option as described in the preceding section. If you select this option, you're asked to confirm your choice because of the [additional restrictions for regulatory records](records-management.md##compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 3. Apply the retention label to SharePoint or OneDrive documents and Exchange emails, as needed. For instructions:
     
