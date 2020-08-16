@@ -36,9 +36,9 @@ To create a new retention label that marks the content as a record:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Records Management** \> **File Plan**. On the **File plan** page, select **Create a label**.
 
-2. On the **Label settings** page in the wizard, choose the option to classify content as a record.
+2. On the **Define retention settings** page in the wizard, choose the option to mark items as records:
     
-   ![Click Use label to classify content as a Record checkbox](../media/recordversioning6.png)
+   ![Select retention setting to mark items as a record](../media/recordversioning6.png)
 
 3. Apply the retention label to SharePoint or OneDrive documents and Exchange emails, as needed. For instructions:
     
