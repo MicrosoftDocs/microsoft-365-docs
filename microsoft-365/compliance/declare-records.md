@@ -23,7 +23,7 @@ description: "Declare records by using retention labels."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-To declare items as a record, you use [retention labels](retention.md#retention-labels) that mark the content as a record. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.
+To declare documents and emails as a record, you use [retention labels](retention.md#retention-labels) that mark items as a record. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.
 
 ## Configuring retention labels to declare records
 
