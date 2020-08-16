@@ -133,6 +133,8 @@ For more information on these options, see [Tuning rules to make them easier or 
 
 You can auto-apply labels to content that satisfies certain conditions. The conditions now available support applying a label to content that contains specific words, phrases, or values of searchable properties. You can refine your query by using search operators like AND, OR, and NOT.
 
+While auto-applying labels for searchable properties, an alias for a managed property cannot be used in the query. It must be the actual name of the managed property, for example, RefinableString01.
+
 For more information on query syntax, see:
 
 - [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)

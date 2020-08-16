@@ -114,7 +114,7 @@ For more information about DMARC, see [Use DMARC to validate email in Microsoft 
 
 ## Reports of how many messages were marked as spoofed
 
-EOP organizations can use the **Spoof detections** report in the reports dashboard in the Security & Compliance Center. For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
+EOP organizations can use the **Spoof detections** report in the Reports dashboard in the Security & Compliance Center. For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
 
 Office 365 ATP organization can use Threat Explorer in the Security & Compliance Center to view information about phishing attempts. For more information, see [Microsoft 365 threat investigation and response](office-365-ti.md).
 
@@ -124,8 +124,7 @@ Mailing lists (also known as discussion lists) are known to have problems with a
 
 For example, Gabriela Laureano (glaureano@contoso.com) is interested in bird watching, joins the mailing list birdwatchers@fabrikam.com, and sends the following message to the list:
 
-> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br/> 
-**Subject:** Great viewing of blue jays at the top of Mt. Rainier this week <br/><br/>Anyone want to check out the viewing this week from Mt. Rainier?
+> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br/> **Subject:** Great viewing of blue jays at the top of Mt. Rainier this week <br/><br/>Anyone want to check out the viewing this week from Mt. Rainier?
 
 The mailing list server receives the message, modifies its content, and replays it to the members of list. The replayed message has the same From address (glaureano@contoso.com), but a tag is added to the subject line, and a footer is added to the bottom of the message. This type of modification is common in mailing lists, and may result in false positives for spoofing.
 

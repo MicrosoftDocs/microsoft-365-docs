@@ -103,6 +103,11 @@
     - name: Working with Microsoft Managed Desktop
       href: working-with-managed-desktop/index.md
       items: 
+        - name: Work with reports
+          href: working-with-managed-desktop/reports.md
+          items:
+            - name: Device inventory report
+              href: working-with-managed-desktop/device-inventory-report.md
         - name: Work with insights
           href: working-with-managed-desktop/insights.md
           items: 

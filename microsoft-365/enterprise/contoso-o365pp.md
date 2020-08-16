@@ -9,7 +9,7 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-modern-desktop
 - Strat_O365_Enterprise
@@ -75,12 +75,12 @@ Here is Contoso’s Microsoft 365 Apps for enterprise installation and ongoing u
  
 ## Next step
 
-[Learn](contoso-mdm.md) how Contoso is using Microsoft Intune in Microsoft 365 Enterprise to manage its devices and the apps that run on them across its organization.
+[Learn](contoso-mdm.md) how Contoso is using Microsoft Intune in Microsoft 365 for enterprise to manage its devices and the apps that run on them across its organization.
 
 ## See also
 
-[Microsoft 365 Apps for enterprise for Microsoft 365 Enterprise](office365proplus-infrastructure.md)
+[Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)
