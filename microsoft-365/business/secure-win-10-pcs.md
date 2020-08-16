@@ -46,4 +46,3 @@ After you have [set up](set-up.md) Microsoft 365 Business Premium, it is time to
 1. Choose **Apply settings**.
 
     These settings will apply to all users in your organization. To set up different policies for different security groups, see [Set device protection settings for Windows 10 PCs](protection-settings-for-windows-10-pcs.md).
-
