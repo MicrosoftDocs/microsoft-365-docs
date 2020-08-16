@@ -27,7 +27,7 @@ To declare documents and emails as a record, you use [retention labels](retentio
 
 ## Configuring retention labels to declare records
 
-When you create or configure a retention label, select the option to mark the content as a record.
+When you create or configure a retention label, select the option to mark items as a record.
 
 >[!NOTE] 
 > The option to mark the content as a record is not available when you create or configure retention labels from **Information Governance** in the Microsoft 365 compliance center. Instead, you must use **Records Management**.
