@@ -75,7 +75,7 @@ Navigation instructions depend on whether you're using [records management](reco
     
     - For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md)
     
-    - To use the retention label to mark content as a [record](records.md), enable the option **Mark items as a record**.
+    - To use the retention label to declare a [record](records-management.md#records), enable the option **Mark items as a record**.
 
 To edit an existing label, select it, and then select the **Edit label** option to start the Edit retention wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
@@ -100,7 +100,7 @@ When you create an auto-apply policy, you select a retention label to automatica
     
     For information about the locations supported by retention labels, see the [Retention labels and locations](retention.md#retention-label-policies-and-locations) section.
 
-To edit an existing label, select it, and then select the **Edit label** option to start the Edit retention wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
+To edit an existing auto-apply policy, select it to start the Edit retention policy wizard that lets you change the selected retention label and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
 
 ### Configuring conditions for auto-apply retention labels
@@ -165,7 +165,7 @@ When you choose the option for a trainable classifier, you can select one of the
 > [!CAUTION]
 > We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use this built-in classifier and if you are currently using it, you should move your business processes off it. We recommend using the **Targeted Harassment**, **Profanity**, and **Threat** built-in classifiers instead.
 
-To automatically apply a label by using this option, SharePoint Online sites and mailboxes must have at least 10 MB of data.
+To automatically apply a label by using this option, SharePoint sites and mailboxes must have at least 10 MB of data.
 
 For more information about trainable classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
 
