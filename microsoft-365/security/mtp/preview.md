@@ -52,6 +52,8 @@ You'll know you have preview features turned on when you see that the **Turn on 
 ## Preview features
 The following features and enhancements are currently available on preview:
 
+- **[IdentityDirectoryEvents table in advanced hunting](advanced-hunting-identitydirectoryevents-table.md)** — Find events involving an on-premises domain controller or a directory service, such as Active Directory (AD) or Azure AD [advanced hunting](advanced-hunting-overview.md). This table covers a range of identity-related events as well as system events on the domain controller.
+
 - **[Take action in advanced hunting](advanced-hunting-take-action.md)** — Quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md).
 
 - **[In-portal schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** — Get information about advanced hunting schema tables directly in the security center. In addition to table and column descriptions, this convenient reference provides information about supported event types (`ActionType` values) and sample queries.
