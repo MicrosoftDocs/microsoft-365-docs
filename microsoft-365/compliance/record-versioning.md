@@ -23,7 +23,7 @@ description: "Learn about records to help you implement a records management sol
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-The ability to mark a document as a [record](records.md) and restrict actions that can be performed on the record is an essential goal for any records management solution. However, collaboration might also be needed for people to create subsequent versions.
+The ability to mark a document as a [record](records-management.md#records) and restrict actions that can be performed on the record is an essential goal for any records management solution. However, collaboration might also be needed for people to create subsequent versions.
 
 For example, you might mark a sales contract as a record, but then need to update the contract with new terms and mark the latest version as a new record while still retaining the previous record version. For these types of scenarios, SharePoint and OneDrive support *record versioning*. OneNote notebook folders don't support record versioning.
 
@@ -98,6 +98,4 @@ For more information about searching for these events, see the "File and page ac
 
 ## Next steps
 
-To mark content as a record, see [Declare records by using retention labels](declare-records.md).
-
-To learn about disposition of records, see [Disposing of content](disposition.md).
+For other scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).
