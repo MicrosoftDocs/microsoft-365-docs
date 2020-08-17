@@ -124,8 +124,7 @@ Mailing lists (also known as discussion lists) are known to have problems with a
 
 For example, Gabriela Laureano (glaureano@contoso.com) is interested in bird watching, joins the mailing list birdwatchers@fabrikam.com, and sends the following message to the list:
 
-> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br/> 
-**Subject:** Great viewing of blue jays at the top of Mt. Rainier this week <br/><br/>Anyone want to check out the viewing this week from Mt. Rainier?
+> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br/> **Subject:** Great viewing of blue jays at the top of Mt. Rainier this week <br/><br/>Anyone want to check out the viewing this week from Mt. Rainier?
 
 The mailing list server receives the message, modifies its content, and replays it to the members of list. The replayed message has the same From address (glaureano@contoso.com), but a tag is added to the subject line, and a footer is added to the bottom of the message. This type of modification is common in mailing lists, and may result in false positives for spoofing.
 
