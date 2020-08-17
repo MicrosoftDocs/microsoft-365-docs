@@ -54,6 +54,8 @@
           items: 
             - name: Microsoft 365 endpoints
               href: microsoft-365-endpoints.md
+            - name: Managing Office 365 endpoints
+              href: managing-office-365-endpoints.md
             - name: Worldwide endpoints
               href: urls-and-ip-address-ranges.md
             - name: U.S. Government DoD endpoints
