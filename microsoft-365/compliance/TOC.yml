@@ -341,13 +341,13 @@
           href: https://go.microsoft.com/fwlink/?linkid=867039
     - name: Records management
       items: 
-        - name: Records management
+        - name: Learn about records management
           href: records-management.md
-        - name: Learn about records
-          href: records.md
+        - name: Get started with records management
+          href: get-started-with-records-management.md
         - name: Declare records
           href: declare-records.md
-        - name: Record versioning
+        - name: Use record versioning
           href: record-versioning.md
 - name: Manage eDiscovery
   items:
