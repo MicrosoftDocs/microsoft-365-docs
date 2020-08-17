@@ -1303,37 +1303,37 @@
     {
       "source_path": "microsoft-365/enterprise/identity-create-protect-global-admins.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/identity-secure-your-passwords.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/identity-secure-user-sign-ins.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/identity-add-user-accounts.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/identity-use-group-management.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/identity-configure-identity-governance.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/identity-exit-criteria.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-roadmap-microsoft-365",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/windows10-infrastructure.md",
@@ -1388,7 +1388,7 @@
     {
       "source_path": "microsoft-365/enterprise/mobility-infrastructure-exit-criteria.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/device-management-roadmap-microsoft-365",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-infrastructure.md",
@@ -1398,57 +1398,57 @@
     {
       "source_path": "microsoft-365/enterprise/infoprotect-define-sec-infoprotect-levels.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-configure-classification.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-configure-increased-security-office-365.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-deploy-windows-information-protection.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-data-loss-prevention.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-email-encryption.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-configure-privileged-access-management.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-exit-criteria.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/deployment-strategies-microsoft-365-enterprise.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/deploy-with-existing-infrastructure.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/deploy-foundation-infrastructure-non-enterprises.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/deploy-workloads.md",
