@@ -50,13 +50,13 @@ Consistent with other Office 365 services, Cortana enterprise services are secur
 
 The table below describes the data handling for Cortana enterprise services.
 
-|**Name**|**Description**|
+| Name | Description |
 |:-----|:-----|
-|**Storage**  <br/> |Customer Data is stored on Microsoft servers inside the Office 365 cloud. Your data is part of your tenant. <br/> Speech audio is not retained.  <br/> |
+|**Storage**  <br/> |Customer Data is stored on Microsoft servers inside the Office 365 cloud. Your data is part of your tenant. <br/><br/>Speech audio is not retained.  <br/> |
 |**Stays in Geo**  <br/> |Customer Data is stored on Microsoft servers inside the Office 365 cloud in Geo. Your data is part of your tenant.  <br/> |
-|**Retention**  <br/> |Customer Data is deleted when the account is closed by the tenant administrator or when a GDPR Data Subject Rights deletion request is made. <br/> Speech audio is not retained.  <br/> |
+|**Retention**  <br/> |Customer Data is deleted when the account is closed by the tenant administrator or when a GDPR Data Subject Rights deletion request is made. <br/><br/>Speech audio is not retained.  <br/> |
 |**Processing and Confidentiality**  <br/> |Personnel engaged in the processing of Customer Data and personal data (i) will process such data only on instructions from Customer, and (ii) will be obligated to maintain the confidentiality and security of such data even after their engagement ends.  <br/> |
-|**Usage**  <br/> |Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. Machine learning to develop and improve models is one of those purposes. Machine learning is done inside the Office 365 cloud, and there is no human viewing, review or labeling of your Customer Data. <br/> Your data is not used to target advertising.  <br/> |
+|**Usage**  <br/> |Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. Machine learning to develop and improve models is one of those purposes. Machine learning is done inside the Office 365 cloud, and there is no human viewing, review or labeling of your Customer Data. <br/><br/>Your data is not used to target advertising.  <br/> |
 
 ## Cortana enterprise services in Microsoft 365 experiences
 
