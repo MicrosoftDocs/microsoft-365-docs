@@ -292,7 +292,7 @@ The aggregate view and data table view allow for 90 days of filtering.
 
 If you click **Filter**, you can filter both the chart and the data table.
 
-The chart is organized by **email count**:
+This chart shows the count of emails organized by:
   - **Total email**
   - **Email after edge protection**
   - **Email after anti-malware, file reputation, file type block**
@@ -348,7 +348,7 @@ The aggregate view and data table view allow for 90 days of filtering.
 
 If you click **Filter**, you can filter both the chart and the data table.
 
-The chart shows a breakdown of the email count by **category**:
+This chart shows the email categories organized by:
   - **Total email**
   - **Edge allow, edge filtered**
   - **Not malware, Safe attachments detection (ATP), Anti-malware engine detection, rule block**
