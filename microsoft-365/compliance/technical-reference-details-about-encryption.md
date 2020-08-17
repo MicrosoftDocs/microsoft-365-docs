@@ -66,7 +66,7 @@ A cipher suite is a collection of encryption algorithms that TLS uses to establi
 > [!IMPORTANT]
 > Be aware that TLS versions deprecate, and that deprecated versions *should not be used* where newer versions are available. TLS 1.3 is currently not supported. If your legacy services do not require TLS 1.0 or 1.1 you should disable them.
 
-|**Cipher suite**|**Key exchange algorithm/strength**|**Perfect Forward Secrecy**|**Cipher/strength**|**Authentication algorithm**|
+| Cipher suite | Key exchange algorithm/strength | Perfect Forward Secrecy | Cipher/strength | Authentication algorithm |
 |:-----|:-----|:-----|:-----|:-----|
 |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br/>     |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|RSA/112 <br/> |
 |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br/>     |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
@@ -82,7 +82,8 @@ A cipher suite is a collection of encryption algorithms that TLS uses to establi
 |TLS_RSA_WITH_AES_128_CBC_SHA <br/>              |RSA/112 <br/> |No <br/> |AES/128 <br/>|RSA/112 <br/> |
 
 These are the following cipher suites which will still support TLS 1.0 and 1.1 protocols until their deprecation date. For GCC High and DoD environments that deprecation date was Jan 15, 2020, and for Worldwide and GCC environments that date is October 15, 2020.
-|**Protocols**|**Cipher suite name**|**Key exchange algorithm/Strength**|**Perfect Forward Secrecy support**|**Authentication algorithm/Strength**|**Cipher/Strength**|
+
+| Protocols | Cipher suite name | Key exchange algorithm/Strength | Perfect Forward Secrecy support | Authentication algorithm/Strength | Cipher/Strength |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> |ECDH/192  <br/> |Yes  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> |ECDH/128  <br/> |Yes  <br/> |RSA/112  <br/> |AES/128  <br/> |
@@ -100,5 +101,4 @@ These are the following cipher suites which will still support TLS 1.0 and 1.1 p
   
 [TLS/SSL Cryptographic Enhancements (Windows IT Center)](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
   
- [Preparing for TLS 1.2 in Office 365 and Office 365 GCC](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
-
+[Preparing for TLS 1.2 in Office 365 and Office 365 GCC](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)

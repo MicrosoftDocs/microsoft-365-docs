@@ -38,9 +38,10 @@ The individual fields and values are described in the following table.
 > [!NOTE]
 > The **X-Forefront-Antispam-Report** header contains many different header fields and values. Other fields in this header that aren't described in the table are used exclusively by the Microsoft anti-spam team for diagnostic purposes.
 
-|||
+****
+
+|Header field|Description|
 |---|---|
-|**Header field**|**Description**|
 |ARC|The ARC protocol has the following headers: <ul><li>AAR: Records the content of the Authentication results header from DMARC.</li><li>AMS: This header includes cryptographic signatures of the message.</li><li>AS: Includes cryptographic signatures of the message headers. This header contains a tag of a chain validation called "cv=", which includes the outcome of the chain validation as **none**, **pass**, or **fail**.</li></ul>|
 |CAT:|The category of protection policy, applied to the message: <ul><li>BULK: Bulk</li><li>DIMP: Domain Impersonation</li><li>GIMP: Mailbox Intelligence based impersonation</li><li>HPHSH or HPHISH : High confidence phishing</li><li>HSPM: High confidence spam</li><li>MALW: Malware</li><li>PHSH: Phishing</li><li>SPM: Spam</li><li>SPOOF: Spoofing</li><li>UIMP: User Impersonation</li><li>AMP: Anti-malware</li><li>SAP: Safe attachments</li><li>OSPM: Outbound spam</li></ul><br/>An inbound message may be flagged by multiple forms of protection and multiple detection scans. Policies have different priorities, and the policy with the highest priority is applied first. For more information, see [What policy applies when multiple protection methods and detection scans run on your email](how-policies-and-protections-are-combined.md).|
 |CIP: \[IP address\]|The connecting IP address. You can use this IP address in the IP Allow List or the IP Block List. For more information, see [Configure connection filtering](configure-the-connection-filter-policy.md).|
@@ -70,9 +71,10 @@ The individual fields and values are described in the following table.
 
 The following table describes useful fields in the **X-Microsoft-Antispam** message header. Other fields in this header are used exclusively by the Microsoft anti-spam team for diagnostic purposes.
 
-|||
+****
+
+|Header field|Description|
 |---|---|
-|**Header field**|**Description**|
 |BCL|The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message (also known as _gray mail_) is more likely to generate complaints (and is therefore more likely to be spam). For more information, see [Bulk complaint level (BCL)](bulk-complaint-level-values.md).|
 |
 
@@ -135,9 +137,10 @@ dmarc=fail action=oreject header.from=contoso.com
 
 This table describes the fields and possible values for each email authentication check.
 
-|||
+****
+
+|Header field|Description|
 |---|---|
-|**Header field**|**Description**|
 |action|Indicates the action taken by the spam filter based on the results of the DMARC check. For example: <ul><li>**oreject** or **o.reject**: Stands for override reject. In this case Microsoft 365 uses this action when it receives a message that fails the DMARC check from a domain whose DMARC TXT record has a policy of p=reject. Instead of deleting or rejecting the message, Microsoft 365 marks the message as spam. For more information on why Microsoft 365 is configured this way, see [How Microsoft 365 handles inbound email that fails DMARC](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc).</li><li>**pct.quarantine**: Indicates that a percentage less than 100% of messages that do not pass DMARC will be delivered anyway. This means that the message failed DMARC and the policy was set to quarantine, but the pct field was not set to 100% and the system randomly determined not to apply the DMARC action, as per the specified domain's policy.</li><li>**pct.reject**: Indicates that a percentage less than 100% of messages that do not pass DMARC will be delivered anyway. This means that the message failed DMARC and the policy was set to reject, but the pct field was not set to 100% and the system randomly determined not to apply the DMARC action, as per the specified domain's policy.</li><li>**permerror**: A permanent error occurred during DMARC evaluation, such as encountering an incorrectly formed DMARC TXT record in DNS. Attempting to resend this message isn't likely to end with a different result. Instead, you may need to contact the domain's owner in order to resolve the issue.</li><li>**temperror**: A temporary error occurred during DMARC evaluation. You may be able to request that the sender resend the message later in order to process the email properly.</li></ul>|
 |compauth|Composite authentication result. Used by Microsoft 365 to combine multiple types of authentication such as SPF, DKIM, DMARC, or any other part of the message to determine whether or not the message is authenticated. Uses the From: domain as the basis of evaluation.|
 |dkim|Describes the results of the DKIM check for the message. Possible values include: <ul><li>**pass**: Indicates the DKIM check for the message passed.</li><li>**fail (reason)**: Indicates the DKIM check for the message failed and why. For example, if the message was not signed or the signature was not verified.</li><li>**none**: Indicates that the message was not signed. This may or may not indicate that the domain has a DKIM record or the DKIM record does not evaluate to a result, only that this message was not signed.</li></ul>|

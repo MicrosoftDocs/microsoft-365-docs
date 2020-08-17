@@ -1,5 +1,5 @@
 ---
-title: Prerequisite work for implementing identity and device access policies - Microsoft 365 Enterprise | Microsoft Docs
+title: Prerequisite work for implementing identity and device access policies - Microsoft 365 for enterprise | Microsoft Docs
 description: Describes the policies for Microsoft recommendations about how to apply identity and device access policies and configurations.
 author: BrendaCarter
 manager: Laurawi
@@ -91,9 +91,8 @@ The following clients are recommended when a secure documents policy has been ap
 
 ### Microsoft 365 client support
 For more information about client support, see the following articles:
-- [Microsoft 365 Client App Support - Conditional Access](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
-- [Microsoft 365 Client App Support - Mobile Application Management](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
-- [Microsoft 365 Client App Support - Modern Authentication](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
+- [Microsoft 365 Client App Support - Conditional Access](microsoft-365-client-support-conditional-access.md)
+- [Microsoft 365 Client App Support - Modern Authentication](microsoft-365-client-support-modern-authentication.md)
 
 ## Protecting administrator accounts
 Azure AD provides a simple way for you to begin protecting administrator access with a preconfigured conditional access policy. In Azure AD, go to **Conditional access** and look for this policy — **Baseline policy: Require MFA for admins (preview)**. Select this policy and then select **Use policy immediately**. 
@@ -109,7 +108,7 @@ For more information, see [Baseline security policy for Azure AD admin accounts]
 
 Additional recommendations include the following:
 - Use Azure AD Privileged Identity Management to reduce the number of persistent administrative accounts. See [Start using PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started). 
-- [Use privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. 
+- [Use privileged access management](../compliance/privileged-access-management-overview.md) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. 
 - Use administrator accounts only for administration. Admins should have a separate user account for regular non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. [Microsoft 365 administrator](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) roles have substantially more privileges than Microsoft 365 services.
 - Follow best practices for securing privileged accounts in Azure AD as described in this [article](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices).
 
