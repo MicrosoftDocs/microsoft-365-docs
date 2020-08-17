@@ -90,7 +90,7 @@ To use the Office built-in labeling client, you must have one or more [label pol
 
 If both of these conditions are met but you need to turn off the Office built-in labeling client, use the following Group Policy setting:
 
-1. Navigate to **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**
+1. Navigate to **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**.
 
 2. Set **Use the Sensitivity feature in Office to apply and view sensitivity labels** to **0**. 
  
