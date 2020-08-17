@@ -102,7 +102,7 @@ Here's the [file plan](file-plan-manager.md) for the Product Specification reten
 
 - **Retention duration:** 5 years (1,825 days).
 
-- **Record label**: Configure the retention label to classify content as a [*record*](records.md). (Documents that are classified as a *record* can't be modified or deleted by users.)
+- **Record label**: Configure the retention label to classify content as a [record](records-management.md#records). (Documents that are classified as a *record* can't be modified or deleted by users.)
 
 - **File plan descriptors:** (for simplifying the scenario, no file descriptors are provided)
 
