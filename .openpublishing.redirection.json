@@ -1338,47 +1338,47 @@
     {
       "source_path": "microsoft-365/enterprise/windows10-infrastructure.md",
       "redirect_url": "https://docs.microsoft.com/windows/deployment/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/windows10-prepare-your-org.md",
       "redirect_url": "https://docs.microsoft.com/windows/deployment/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/windows10-deploy-inplaceupgrade.md",
       "redirect_url": "https://docs.microsoft.com/windows/deployment/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/windows10-deploy-autopilot.md",
       "redirect_url": "https://docs.microsoft.com/windows/deployment/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/windows10-enable-windows-analytics.md",
       "redirect_url": "https://docs.microsoft.com/windows/deployment/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/windows10-enable-security-features.md",
       "redirect_url": "https://docs.microsoft.com/windows/deployment/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/windows10-exit-criteria.md",
       "redirect_url": "https://docs.microsoft.com/windows/deployment/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/office365proplus-infrastructure.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/office365proplus-exit-criteria.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/mobility-infrastructure.md",
@@ -1458,17 +1458,17 @@
     {
       "source_path": "microsoft-365/enterprise/teams-workload.md",
       "redirect_url": "https://docs.microsoft.com/MicrosoftTeams/Teams-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/exchangeonline-workload.md",
       "redirect_url": "https://docs.microsoft.com/Exchange/exchange-online",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/sharepoint-online-onedrive-workload.md",
       "redirect_url": "https://docs.microsoft.com/sharepoint/sharepoint-online",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/migration-microsoft-365-enterprise-workload.md",
