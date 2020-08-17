@@ -37,7 +37,7 @@ Microsoft Managed Desktop identifies each device uniquely by referencing its har
 
 #### PowerShell script method
 
-A PowerShell script called [Get-WindowsAutoPilotInfo.ps1] https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo has been published to the PowerShell Gallery website. You can also learn more about Device identification and Hardware hash at https://docs.microsoft.com/en-us/mem/autopilot/add-devices#device-identification.
+You can use a PowerShell script called [Get-WindowsAutoPilotInfo.ps1] https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo that has been published to the PowerShell Gallery website. You can also learn more about Device identification and Hardware hash at https://docs.microsoft.com/en-us/mem/autopilot/add-devices#device-identification.
 
 1.	Open a PowerShell prompt with administrative rights.
 2.	Run `Install-Script -Name Get-WindowsAutoPilotInfo`
@@ -80,14 +80,14 @@ From the Microsoft Managed Desktop [Admin Portal](https://aka.ms/mmdportal), sel
 Follow these steps:
 
 1. In **File upload**, provide a path to the CSV file you created previously.
-3. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for an end-user to start using.
+3. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **AutopilotRegistrationRequested**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for an end-user to start using.
 
 
 You can monitor the progress of device registration on the main **Microsoft Managed Desktop - Devices** page. Possible states reported there include:
 
 | State | Description |
 |---------------|-------------|
-| Registration pending | Registration is not done yet. Check back later. |
+| AutopilotRegistrationRequested | Registration is not done yet. Check back later. |
 | Registration failed | Registration could not be completed. Refer to [Troubleshooting device registration](#troubleshooting-device-registration) for more information. |
 | Ready for user | Registration succeeded and the device is now ready to be delivered to the end user. Microsoft Managed Desktop will guide them through first time set-up, so there’s no need for you to do any further preparations. |
 | Active | The device has been delivered to the end user and they have registered with your tenant. This also indicates that they are regularly using the device. |
