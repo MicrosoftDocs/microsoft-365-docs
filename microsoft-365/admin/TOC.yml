@@ -183,7 +183,7 @@
           href: get-help-with-domains/buy-a-domain-name.md
         - name: Remove a domain
           href: get-help-with-domains/remove-a-domain.md
-        _ name: Transfer a domain from Microsoft 365 to another host
+        - name: Transfer a domain from Microsoft 365 to another host
           href: get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md
         - name: Pilot Microsoft 365 from my custom domain
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
