@@ -1,5 +1,5 @@
 ---
-title: Assessment readiness tool
+title: Readiness assessment tool
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -11,11 +11,11 @@ manager: laurawi
 ms.topic: article
 ---
 
-# Assessment readiness tool
+# Readiness assessment tool
 
 For the smoothest possible experience when you enroll in Microsoft Managed Desktop, there are a number of settings and other parameters you must set ahead of time. You can use this tool to check those settings and receive detailed steps for fixing any that aren't right.
 
-The tool checks settings in Microsoft Endpoint Manager (specifically, Microsoft Intune), Azure Active Directory (Azure AD), and Microsoft 365 to ensure they will work with Microsoft Managed Desktop. Microsoft Managed Desktop retains the data associated with these checks for 12 months after the last time you run a check in your Azure AD organization. After 12 months, the data will be aggregated without any information that identifies your Azure AD organization.
+The tool checks settings in Microsoft Endpoint Manager (specifically, Microsoft Intune), Azure Active Directory (Azure AD), and Microsoft 365 to ensure they will work with Microsoft Managed Desktop. Microsoft Managed Desktop retains the data associated with these checks for 12 months after the last time you run a check in your Azure AD organization. After 12 months, the data is anonymized.
 
 The assessment tool checks these items:
 
