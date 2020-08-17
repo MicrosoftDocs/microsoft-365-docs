@@ -21,9 +21,10 @@ The following table provides a list of features that are available in the Exchan
 > [!TIP]
 > The [Microsoft 365 for business roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) is a good resource for finding out information about upcoming new features. For a broader view about what features are available with the different EOP subscription plans, see [Exchange Online Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-|||
+****
+
+|Feature|Description|
 |---|---|
-|**Feature**|**Description**|
 |**Anti-spam protection**||
 |Inbound spam detection|For more information, see [Anti-spam protection in Microsoft 365](anti-spam-protection.md). <br/><br/> In standalone EOP environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
 |Outbound spam detection|Outbound anti-spam protection is always enabled if you use the service for sending outbound mail. For more information, see [Outbound spam protection](outbound-spam-controls.md).|
@@ -73,7 +74,7 @@ The following table provides a list of features that are available in the Exchan
 |Web-based administration|Admins can manage the service in the Exchange admin center (EAC), which is supported in 60 languages. For more information, see [Exchange admin center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).|
 |Directory synchronization|Directory synchronization is available via the Azure Active Directory Sync tool. For more information, see the "Use directory synchronization to manage mail users" section in [Manage mail users in EOP](manage-mail-users-in-eop.md).|
 |Directory Based Edge Blocking (DBEB)|The DBEB feature lets you reject messages for invalid recipients at the service network perimeter. DBEB lets admins add mail-enabled recipients to Microsoft 365 and block all messages sent to email addresses that aren't present in Microsoft 365. For more information about configuring DBEB, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).|
-|PowerShell|Full EOP functionality is available in standalone EOP PowerShell. For more information, see [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).|
+|PowerShell|Full EOP functionality is available in standalone EOP PowerShell. For more information, see [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell).|
 |**Reporting and logging**||
 |Message trace|Admins can follow email messages as they pass through the service. You can determine whether a targeted email message was received, rejected, deferred, or delivered by the service. This lets you efficiently answer your users' questions, troubleshoot mail flow issues, validate policy changes, and alleviates the need to contact technical support for assistance. For more information, see [Message trace in the Security & Compliance Center](message-trace-scc.md).|
 |Web-based reports|The mail protection reports in the Security & Compliance Center provide messaging data. For example, you can monitor how much spam and malware is being detected or how often your mail flow rules are being matched. With these interactive reports, you can quickly get a visual report of summary data and drill down into details about individual messages, for as far back as 90 days. For more information, see [Use mail protection reports to view data about malware, spam, and rule detections](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).|
@@ -88,3 +89,4 @@ The following table provides a list of features that are available in the Exchan
 |A geo-redundant global network of servers|EOP runs on a worldwide network of datacenters that are designed to help provide the best availability. For more information, see the "EOP data centers" section in [Exchange Online Protection overview](exchange-online-protection-overview.md).|
 |Message queuing when the on-premises server cannot accept mail|Messages in deferral remain in our queues for one day. Message retry attempts are based on the error we get back from the recipient's mail system. On average, messages are retried every 5 minutes. For more information, see [EOP queued, deferred, and bounced messages FAQ](eop-queued-deferred-and-bounced-messages-faq.md).|
 |Office 365 Message Encryption available as an add-on service|For more information, see [Encryption in Office 365](../../compliance/encryption.md).|
+|

@@ -76,7 +76,7 @@ The first piped element is a time filter scoped to the previous seven days. Keep
 ### Check specific processes
 The time range is immediately followed by a search for process file names representing the PowerShell application.
 
-```
+```kusto
 // Pivoting on PowerShell processes
 | where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
@@ -146,7 +146,16 @@ Data in advanced hunting tables are generally classified into the following data
 ## Get help as you write queries
 Take advantage of the following functionality to write queries faster:
 - **Autosuggest** — as you write queries, advanced hunting provides suggestions from IntelliSense. 
-- **Schema reference** — a schema reference that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
+- **Schema tree** — a schema representation that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
+- **[Schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** — in-portal reference with table and column descriptions as well as supported event types (`ActionType` values) and sample queries
+
+## Work with multiple queries in the editor
+The query editor can serve as your scratch pad for experimenting with multiple queries. To use multiple queries:
+
+- Separate each query with an empty line.
+- Place the cursor on any part of a query to select that query before running it. This will run only the selected query. To run another query, move the cursor accordingly and select **Run query**.
+
+![Image of the query editor with multiple queries](../../media/mtp-ah/ah-multi-query.png)
 
 ## Use sample queries
 
@@ -165,6 +174,6 @@ For more information on Kusto query language and supported operators, see [Kusto
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Work with query results](advanced-hunting-query-results.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
+- [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

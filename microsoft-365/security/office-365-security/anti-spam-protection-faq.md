@@ -132,7 +132,7 @@ The guidelines presented below are best practices for sending outbound email mes
 
   [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [Domains FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+  [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 - **Signing email with DKIM, sign with relaxed canonicalization.**
 

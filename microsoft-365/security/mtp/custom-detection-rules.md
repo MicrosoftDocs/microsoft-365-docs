@@ -24,8 +24,6 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
 Custom detection rules built from [Advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured endpoints. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
 
 ## Required permissions for managing custom detections
@@ -49,6 +47,10 @@ To manage required permissions, a **global administrator** can do the following:
 
 In Microsoft 365 security center, go to **Advanced hunting** and select an existing query or create a new query. When using a new query, run the query to identify errors and understand possible results.
 
+>[!IMPORTANT]
+>To prevent the service from returning too many alerts, each rule is limited to generating only 100 alerts whenever it runs. Before creating a rule, tweak your query to avoid alerting for normal, day-to-day activity.
+
+
 #### Required columns in the query results
 To create a custom detection rule, the query must return the following columns:
 
@@ -61,7 +63,9 @@ To create a custom detection rule, the query must return the following columns:
     - `SenderFromAddress` (envelope sender or Return-Path address)
     - `SenderMailFromAddress` (sender address displayed by email client)
     - `RecipientObjectId`
+    - `AccountObjectId`
     - `AccountSid`
+    - `AccountUpn`
     - `InitiatingProcessAccountSid`
     - `InitiatingProcessAccountUpn`
     - `InitiatingProcessAccountObjectId`
@@ -72,15 +76,15 @@ Simple queries, such as those that don't use the `project` or `summarize` operat
 
 There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by entity under a column such as `DeviceId`, you can still return `Timestamp` by getting it from the most recent event involving each unique `DeviceId`.
 
-The sample query below counts the number of unique machines (`DeviceId`) with antivirus detections and uses this count to find only the machines with more than five detections. To return the latest `Timestamp`, it uses the `summarize` operator with the `arg_max` function.
+The sample query below counts the number of unique devices (`DeviceId`) with antivirus detections and uses this count to find only the devices with more than five detections. To return the latest `Timestamp`, it uses the `summarize` operator with the `arg_max` function.
 
 ```kusto
 DeviceEvents
-| where Timestamp > ago(7d)
 | where ActionType == "AntivirusDetection"
-| summarize Timestamp = max(Timestamp), count() by DeviceId
+| summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
 | where count_ > 5
 ```
+
 ### 2. Create new rule and provide alert details.
 
 With the query in the query editor, select **Create detection rule** and specify the following alert details:
@@ -90,7 +94,7 @@ With the query in the query editor, select **Create detection rule** and specify
 - **Alert title** — title displayed with alerts triggered by the rule
 - **Severity** — potential risk of the component or activity identified by the rule
 - **Category** — threat component or activity identified by the rule
-- **MITRE ATT&CK techniques** — one or more attack techniques identified by the rule as documented in the [MITRE ATT&CK framework](https://attack.mitre.org/)
+- **MITRE ATT&CK techniques** — one or more attack techniques identified by the rule as documented in the [MITRE ATT&CK framework](https://attack.mitre.org/). This section does not apply and is hidden for certain alert categories, including malware, ransomware, suspicious activity, and unwanted software
 - **Description** — more information about the component or activity identified by the rule 
 - **Recommended actions** — additional actions that responders might take in response to an alert
 
@@ -109,18 +113,22 @@ Identify the columns in your query results where you expect to find the main aff
 
 You can select only one column for each entity type (mailbox, user, or device). Columns that are not returned by your query can't be selected.
 
-### 4. Specify actions on files or machines.
-Your custom detection rule can automatically take actions on files or machines that are returned by the query.
+### 4. Specify actions.
+Your custom detection rule can automatically take actions on devices, files, or users that are returned by the query.
 
-#### Actions on machines
-These actions are applied to machines in the `DeviceId` column of the query results:
-- **Isolate machine** — uses Microsoft Defender ATP to apply full network isolation, preventing the machine from connecting to any application or service. [Learn more about Microsoft Defender ATP machine isolation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
-- **Collect investigation package** — collects machine information in a ZIP file. [Learn more about the Microsoft Defender ATP investigation package](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
-- **Run antivirus scan** — performs a full Windows Defender Antivirus scan on the machine
-- **Initiate investigation** — initiates an [automated investigation](mtp-autoir.md) on the machine
+#### Actions on devices
+These actions are applied to devices in the `DeviceId` column of the query results:
+- **Isolate device** — uses Microsoft Defender ATP to apply full network isolation, preventing the device from connecting to any application or service. [Learn more about Microsoft Defender ATP machine isolation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **Collect investigation package** — collects device information in a ZIP file. [Learn more about the Microsoft Defender ATP investigation package](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
+- **Run antivirus scan** — performs a full Windows Defender Antivirus scan on the device
+- **Initiate investigation** — initiates an [automated investigation](mtp-autoir.md) on the device
+- **Restrict app execution** — sets restrictions on device to allow only files that are signed with a Microsoft-issued certificate to run. [Learn more about app restrictions with Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### Actions on files
-When selected, the **Quarantine file** action is taken on files in the `SHA1`, `InitiatingProcessSHA1`, `SHA256`, or `InitiatingProcessSHA256` column of the query results. This action deletes the file from its current location and places a copy in quarantine.
+When selected, you can choose to apply the **Quarantine file** action on files in the `SHA1`, `InitiatingProcessSHA1`, `SHA256`, or `InitiatingProcessSHA256` column of the query results. This action deletes the file from its current location and places a copy in quarantine.
+
+#### Actions on users
+When selected, the **Mark user as compromised** action is taken on users in the `AccountObjectId`, `InitiatingProcessAccountObjectId`, or `RecipientObjectId` column of the query results. This action sets the users risk level to "high" in Azure Active Directory, triggering corresponding [identity protection policies](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
 
 > [!NOTE]
 > The allow or block action for custom detection rules is currently not supported on Microsoft Threat Protection.

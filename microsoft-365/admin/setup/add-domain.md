@@ -1,5 +1,5 @@
 ---
-title: "Add a domain to Office 365"
+title: "Add a domain to Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,12 +19,13 @@ ms.custom:
 - SaRA
 - MSStore_Link
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: "Add your domain to Office 365 in the Microsoft 365 admin center by adding a DNS record at your DNS host. The setup wizard walks you through the process."
+description: "Add your domain to Microsoft 365 in the Microsoft 365 admin center by adding a DNS record at your DNS host. The setup wizard walks you through the process."
 ---
 
 # Add a domain to Microsoft 365
@@ -89,7 +90,7 @@ description: "Add your domain to Office 365 in the Microsoft 365 admin center by
     1. Choose **Add the DNS records for me** if you want Office to configure your DNS automatically. 
     
   
-    2. Choose **I'll add the DNS records myself** if you want to attach only specific Office 365 services to your domain or if you want to skip this for now and do this later. **Choose this option if you know exactly what you're doing.**
+    2. Choose **I'll add the DNS records myself** if you want to attach only specific Microsoft 365 services to your domain or if you want to skip this for now and do this later. **Choose this option if you know exactly what you're doing.**
     
 7. If you chose to  *add DNS records yourself*  , select **Next** and you'll see a page with all the records that you need to add to your registrars website to set up your domain. 
     
@@ -134,6 +135,7 @@ In the wizard, we'll just confirm that you own the domain, and then automaticall
 
 - [1&amp;1 IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
+- [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
@@ -144,7 +146,7 @@ In the wizard, we'll just confirm that you own the domain, and then automaticall
 
 ### What happens to my email and website?
 
-After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365. Make sure you've added users and set up mailboxes in Office 365 for everyone who gets email on your domain!
+After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365. Make sure you've added users and set up mailboxes in Microsoft 365 for everyone who gets email on your domain!
   
 If you have a website that you use with your business, it will keep working where it is. The Domain Connect setup steps don't affect your website.
 
@@ -154,7 +156,7 @@ If you have a website that you use with your business, it will keep working wher
 
 [What is a domain?](../get-help-with-domains/what-is-a-domain.md)
 
-[Buy a domain name in Office 365](../get-help-with-domains/buy-a-domain-name.md)
+[Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
 
 [Set up your domain (host-specific instructions)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 

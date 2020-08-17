@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,16 +22,9 @@ ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: "Learn to use filters to create, edit, or delete custom user view in Microsoft 365."
 ---
 
-# Create, edit, or delete a custom user view in Office 365
+# Create, edit, or delete a custom user view
 
-If you're a global or user management admin of Office 365, you can create custom user views to view a specific subset of users. These views are in addition to the standard set of views that come with Office 365. You can create, edit, or delete custom user views, and the custom views you create are available to all admins.
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-::: moniker-end
+If you're a global or user management admin of a Microsoft 365 for business subscription,  you can create custom user views to view a specific subset of users. These views are in addition to the standard set of views. You can create, edit, or delete custom user views, and the custom views you create are available to all admins.
   
 ## Custom user views in the admin center
 
@@ -99,7 +93,7 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>.
     
 2. On the **Active users** page, select **Filters** and select **New filter**.
   
@@ -109,7 +103,7 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.  
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>.  
 
 2. On the **Active users** page, select **Views** and select **Add custom view**.
   
@@ -120,7 +114,7 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page. 
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
 
 2. On the **Active users** page, select **Views** and select **Add custom view**.
   
@@ -133,7 +127,7 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>.
     
 2. On the **Active users** page, select **Filter**, select the filter you want to change, and then select **Edit filter**. 
     
@@ -146,7 +140,7 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.  
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>.  
 
 2. On the **Active users** page, select **Views**, select the filter you want to change, and then select **Edit this view**. 
     
@@ -159,7 +153,7 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page. 
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
 
 2. On the **Active users** page, select **Views**, select the filter you want to change, and then select **Edit this view**. 
     

@@ -12,7 +12,8 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -54,7 +55,6 @@ We recommend that you buy the licenses that you need for your subscription befor
 
 ::: moniker-end
 
-
 2. Check the **Status** column for information about the conflict. If there's a conflict, you'll see a warning message, that says one or more users need a valid license.
 
     > [!NOTE]
@@ -64,7 +64,7 @@ We recommend that you buy the licenses that you need for your subscription befor
 
 You can resolve license conflicts by either [buying more licenses](../../commerce/licenses/buy-licenses.md) or by [removing licenses from users who no longer need them](remove-licenses-from-users.md). You can optionally [delete a user account to free a license](../add-users/delete-a-user.md).
   
-## Related articles 
+## Related articles
 
 [Assign licenses to users](assign-licenses-to-users.md)
   

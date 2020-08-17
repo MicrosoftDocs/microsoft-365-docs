@@ -16,6 +16,7 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,14 +26,6 @@ description: "Learn how to preserve an employee's files and emails when the pers
 ---
 
 # Get access to and back up a former user's data
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
 
 
 When an employee leaves your organization, you probably want to access their data (documents and emails) and either review it, back it up, or give it to a new employee.
@@ -45,9 +38,6 @@ If you remove a user's license but don't delete the account, you can give yourse
 To preserve a former user's OneDrive files, first give yourself access to their OneDrive, and then move the files you want to keep. 
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.  
     
@@ -127,7 +117,7 @@ As global admin, you can give yourself access to the content in a user's OneDriv
 
 2. In the left pane, select **Admin centers** \> **SharePoint**. (You might need to select **Show all** to see the list of admin centers.)
 
-3. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the new SharePoint admin center.
+3. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the SharePoint admin center.
 
 4. In the left pane, select **More features**.
 
@@ -146,7 +136,7 @@ As global admin, you can give yourself access to the content in a user's OneDriv
 
 To save the email messages, calendar, tasks, and contacts of the former employee, export the information to an Outlook Data File (.pst).
   
-1. [Add the former employee's email](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) to your Outlook (If you [reset the user's password](reset-passwords.md), you can set it to something only you know.)
+1. [Add the former employee's email](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) to your Outlook (If you [reset the user's password](reset-passwords.md), you can set it to something only you know.)
     
 2. In Outlook, select **File**.
     
@@ -186,7 +176,7 @@ Outlook begins the export immediately unless a new Outlook Data File (.pst) is c
     
   - If you're exporting to an existing Outlook Data File (.pst) that is password protected, in the **Outlook Data File Password** dialog box, type the  *password*, and then select **OK**.
     
-See how to [Export or backup email, contacts, and calendar to an Outlook .pst file](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx) in Outlook 2010. 
+See how to [Export or backup email, contacts, and calendar to an Outlook .pst file](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) in Outlook 2010. 
   
   
   > [!NOTE]

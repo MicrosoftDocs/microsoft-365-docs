@@ -58,7 +58,7 @@ To try out an isolated SharePoint Online team site in a trial subscription, see 
   
 When you are ready to deploy an isolated SharePoint Online team site in production, see the step-by-step design considerations in [Design an isolated SharePoint Online team site](design-an-isolated-sharepoint-online-team-site.md).
   
-## See Also
+## Related topics
 
 [Design an isolated SharePoint Online team site](design-an-isolated-sharepoint-online-team-site.md)
   

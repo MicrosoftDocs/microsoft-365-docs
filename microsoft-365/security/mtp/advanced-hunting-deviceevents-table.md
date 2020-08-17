@@ -40,7 +40,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `FileName` | string | Name of the file that the recorded action was applied to |
 | `FolderPath` | string | Folder containing the file that the recorded action was applied to |
 | `SHA1` | string | SHA-1 of the file that the recorded action was applied to |
-| `SHA256` | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated—use the SHA1 column when available |
+| `SHA256` | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated — use the SHA1 column when available. |
 | `MD5` | string | MD5 hash of the file that the recorded action was applied to |
 | `AccountDomain` | string | Domain of the account |
 | `AccountName` | string | User name of the account |
@@ -63,7 +63,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `FileOriginIP` | string | IP address where the file was downloaded from |
 | `AdditionalFields` | string | Additional information about the event in JSON array format |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |
-| `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated—use the SHA1 column when available |
+| `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
 | `InitiatingProcessFileName` | string | Name of the process that initiated the event |
 | `InitiatingProcessFolderPath` | string | Folder containing the process (image file) that initiated the event |
 | `InitiatingProcessId` | int | Process ID (PID) of the process that initiated the event |
@@ -81,9 +81,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
+- [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

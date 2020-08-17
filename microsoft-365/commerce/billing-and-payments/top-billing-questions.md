@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -115,7 +116,7 @@ Yes, but you'll need to [call support](../../admin/contact-support-for-business-
 
 Yes. To get your billing statement as an email attachment, use the following steps:
   
-1. In the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page, or select **Billing** \> **Billing notifications**.
+1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 
 2. Under **Receive billing statement as email attachment?**, switch the toggle to **On**.
 
@@ -194,9 +195,10 @@ You can [Apply for tax-exempt status](tax-information.md#apply-for-tax-exempt-st
 
 ::: moniker range="o365-worldwide"
 
-1. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills</a> page, select an invoice date range.
-  
-2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments page</a> page.
+2. On the **Invoices** tab, elect an invoice date range.
+3. Select the invoice that you want to view.
+4. To print or save a PDF copy of the bill, select **Download PDF**, and then print the PDF.
 
 To learn more, see [View your bill or invoice](view-your-bill-or-invoice.md).
 

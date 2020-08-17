@@ -1,28 +1,30 @@
 ---
-title: Security in Microsoft Managed Desktop 
+title: Security technologies in Microsoft Managed Desktop 
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
-ms.date: 09/24/2018
+ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
-# Security in Microsoft Managed Desktop
+# Security technologies in Microsoft Managed Desktop
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop uses several Microsoft technologies to help secure managed devices and data. Specifically: 
+Microsoft Managed Desktop uses several Microsoft technologies to help secure managed devices and data. In addition, the Microsoft Managed Desktop Security Operations Center uses a variety of [processes](security-operations.md) in conjunction with these technologies.
 
+Specifically: 
 
 - [Device security](#device-security) – security and protection on Microsoft Managed Desktop devices
 - [Identity and Access Management](#identity-and-access-management) – managing secure use of devices through Azure Active Directory identity services
 - [Network security](#network-security) – VPN information and Microsoft Managed Desktop recommended solution and settings
 - [Information security](#information-security) – optional available services to further protect sensitive information 
 
-For information about data storage, usage, and security practices used by Microsoft Managed Desktop, please download our white paper at [https://aka.ms/mmd-data](https://aka.ms/mmd-data).
+For information about data storage, usage, and security practices used by Microsoft Managed Desktop, see our white paper at [https://aka.ms/mmd-data](https://aka.ms/mmd-data).
 
-For more about the Security Operations team at Microsoft Managed Desktop and how they work to provide security for your devices, see the video [Microsoft Managed Desktop Security Operations](https://www.microsoft.com/videoplayer/embed/RE4q6nP). 
 
 ## Device security
 

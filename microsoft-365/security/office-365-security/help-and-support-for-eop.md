@@ -24,11 +24,11 @@ Upon logging in, the Microsoft 365 admin center provides information about the s
 
 [Product Overview for Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Contact support for business products - Admin Help](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
+[Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
 
 [Microsoft 365 community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Microsoft Support and Recovery Assistant (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Microsoft Support and Recovery Assistant (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [Mail flow troubleshooter](https://aka.ms/FixEmail)
 
@@ -64,8 +64,10 @@ For more information about how Premier Support can help your organization maximi
 
 Microsoft provides local or toll-free telephone numbers for product support around the world. Many of these support centers provide help in your local language during business hours or in English 24 hours a day, every day. If you don't see your location listed below, use the Virtual Agent as described above to find your local support telephone number.
 
-|**Country or region**|**Pre-purchase and billing questions**|**Technical Support questions**|
-|:-----|:-----|:-----|
+****
+
+|Country or region|Pre-purchase and billing questions|Technical Support questions|
+|---|---|---|
 |Brazil|Toll-free: 08007621146 <br/> Local: 1147001999|Same|
 |France|Toll-free: 0805 540 594 <br/> Local: 01 57 32 42 97|Same|
 |Germany|Toll-free: 0800 589 2332 <br/>  Local: 069 380 789 508|Same|
@@ -74,6 +76,7 @@ Microsoft provides local or toll-free telephone numbers for product support arou
 |Spain|Toll-free: 900 814 197 <br/> Local: 912 718 160|Same|
 |United Kingdom|Toll-free: 0800 032 6417 <br/> Local: 0203 450 6455|Same|
 |United States|Toll-free: 1-877-913-2707|Toll-free: 1-800-865-9408|
+|
 
 ## For more information about EOP documentation
 

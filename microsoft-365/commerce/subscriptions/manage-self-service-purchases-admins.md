@@ -11,6 +11,7 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce 
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Admins can learn how to manage self-service purchases made by users in their organization."

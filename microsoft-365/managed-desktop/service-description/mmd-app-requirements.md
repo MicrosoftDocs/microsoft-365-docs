@@ -7,6 +7,8 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
 ---
 
 # Microsoft Managed Desktop app requirements
@@ -15,44 +17,25 @@ ms.collection: M365-modern-desktop
 
 <!--Application addendum -->
  
-In order to guarantee the performance, reliability, and serviceability of Microsoft Managed Desktop devices a customer’s line of business apps must not seriously impact end user experience or modify the security stance. Consequently, line of business applications that you want to deploy to Microsoft Managed Desktop devices must meet the requirements in this topic.
-
-## Application condition
-
-It’s important that applications don’t adversely impact the Microsoft Managed Desktop environment. The following are the requirements that an application must meet for an application to be deployed. For any given application or driver, Microsoft may waive any requirement provided herein. Microsoft may decide to remove any application or driver that negatively impacts performance and reliability of Microsoft Managed Desktop devices.
-
-## Centrally managed apps
-
-All applications and drivers installed on Microsoft Managed Devices must be deployed through Microsoft Intune, the Microsoft Store, or the Microsoft Store for Business; if available, drivers will also be deployed through the Windows Update service. 
-
-## Prohibited app classes
-
-Certain application types are not permitted on Microsoft Managed Desktop devices:
-- 3rd party anti-virus, security, or audit software
-- Versions of Microsoft Office prior to Microsoft 365 Apps for enterprise
-- Applications that install or bundle other 3rd party software
-
-## Restricted app behaviors
-
-Certain app behaviors can negatively impact the user experience or may present a security risk to Microsoft Managed Desktop devices. Apps with the following behaviors are not permitted to run in the Microsoft Managed Desktop environment without a specific  from Microsoft.
-
-User Experience:
-- Install background services
-- Add itself to the Windows startup path
-- Applications dependent on drivers
-- 3rd party web browsers
-
-Security:
-- Elevate the end user’s privileges
-- Act as an app store or have a built-in extension manager
-- Have known security vulnerabilities
-- Encrypt or restrict access to end-user data
-- Is unsigned or is signed using a certificate which doesn’t roll up to a trusted root
+Microsoft Managed Desktop requires that we manage devices using a specific approach to guarantee the performance, reliability, and serviceability of devices. If you’re sure that the approach taken by Microsoft Managed Desktop for the areas below will not work for you, you can request an [exception to the service plan](customizing.md).
 
 
-## Driver deployment
+|Management area  |Microsoft Managed Desktop approach  |
+|---------|---------|
+|Device configuration or policy management     |  Microsoft Intune       |
+|Application management     | Microsoft Intune and Company Portal        |
+|Driver deployment     |  Drivers included with the device, Windows Update, or Intune       |
+|Device security     | See [Device security](security.md#device-security)      |
+|Identity and access management     | See [Identity and access management](security.md#identity-and-access-management)        |
+|Network security     | See [Network security](security.md#network-security)        |
+|Information security     |  See [Information security](security.md#information-security)       |
+|Data recovery     | OneDrive for Business        |
+|Core productivity     | Microsoft 365 Apps for enterprise    |
+|Browser     | Microsoft Edge        |
 
-Microsoft Managed Desktop only supports device drivers that are available through Windows Update or installed inbox with the Microsoft Managed Device. 
 
-If an application requires a specific driver(s) to run it is considered a Restricted Application and requires an exception before being deployed to Microsoft Managed Desktop. 
+
+
+Microsoft Managed Desktop might monitor other software running on managed devices. If it negatively impacts system security, performance, or reliability, you might be required to request an exception to the service plan.
+
 

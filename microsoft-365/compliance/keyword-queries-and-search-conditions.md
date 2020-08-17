@@ -19,8 +19,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
-description: "Learn about email and file properties that you can search in Exchange Online mailboxes and in SharePoint or OneDrive for Business sites using the Content Search tool in the Security & Compliance Center. 
-"
+ms.custom:
+- seo-marvel-apr2020
+description: Learn about email and file properties that you can search in the Office 365 Security & Compliance Center.
 ---
 
 # Keyword queries and search conditions for Content Search
@@ -81,7 +82,7 @@ For a complete list of SharePoint properties that can be searched, see [Overview
 |:-----|:-----|:-----|:-----|
 |Author|The author field from Office documents, which persists if a document is copied. For example, if a user creates a document and the emails it to someone else who then uploads it to SharePoint, the document will still retain the original author. Be sure to use the user's display name for this property.|`author:"Garth Fort"`|All documents that are authored by Garth Fort.|
 |ContentType|The SharePoint content type of an item, such as Item, Document, or Video.|`contenttype:document`|All documents would be returned.|
-|Created|The date that an item is created.|`created\>=06/01/2016`|All items created on or after June 1, 2016.|
+|Created|The date that an item is created.|`created>=06/01/2016`|All items created on or after June 1, 2016.|
 |CreatedBy|The person that created or uploaded an item. Be sure to use the user's display name for this property.|`createdby:"Garth Fort"`|All items created or uploaded by Garth Fort.|
 |DetectedLanguage|The language of an item.|`detectedlanguage:english`|All items in English.|
 |DocumentLink|The path (URL) of a specific folder on a SharePoint or OneDrive for Business site. If you use this property, be sure to search the site that the specified folder is located in.  <br/> To return items located in subfolders of the folder that you specify for the documentlink property, you have to add /\* to the URL of the specified folder; for example,  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>For more information about searching for the documentlink property and using a script to obtain the documentlink URLs for folders on a specific site, see [Use Content Search for targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|The first example returns all items in the specified OneDrive for Business folder. The second example returns documents in the specified site folder (and all subfolders) that contain the word "confidential" in the file name.|
@@ -189,7 +190,7 @@ Create a condition using common properties when searching mailboxes and sites in
 |Sender/Author|For email, the person who sent a message. For documents, the person cited in the author field from Office documents. You can type more than one name, separated by commas. Two or more values are logically connected by the **OR** operator.|
 |Size (in bytes)|For both email and documents, the size of the item (in bytes).|
 |Subject/Title|For email, the text in the subject line of a message. For documents, the title of the document. As previously explained, the Title property is metadata specified in Microsoft Office documents. You can type the name of more than one subject/title, separated by commas. Two or more values are logically connected by the **OR** operator.|
-|Compliance label|For both email and documents, retention labels that have been assigned to messages and documents automatically by label policies or retention labels that have been manually assigned by users. Retention labels are used to classify email and documents for information governance and enforce retention rules based on the settings defined by the label. You can type part of the retention label name and use a wildcard or type the complete label name. For more information, see [Overview of retention labels](labels.md).|
+|Compliance label|For both email and documents, retention labels that have been assigned to messages and documents automatically by auto-label policies or retention labels that have been manually assigned by users. Retention labels are used to classify email and documents for information governance and enforce retention rules based on the settings defined by the label. You can type part of the retention label name and use a wildcard or type the complete label name. For more information about retention labels, see [Learn about retention policies and retention labels](retention.md).|
 |||
   
 ### Conditions for mail properties
@@ -264,7 +265,7 @@ Keep the following in mind when using search conditions.
     
 - You can use the drag and drop control to resequence the order of conditions. Click on the control for a condition and move it up or down.
     
-- As previously explained, some condition properties allow you to type multiple values. Each value is logically connected by the **OR** operator. This results in the same logic as having multiple instances of the same condition, where each has a single value. The following illustrations show an example of a single condition with multiple values and an example of multiple conditions (for the same property) with a single value. Both examples result in the same query:  `(filetype="docx") OR (filetype="pptx") OR (filetype="xlsx")`
+- As previously explained, some condition properties allow you to type multiple values. Each value is logically connected by the **OR** operator. This results in the same logic as having multiple instances of the same condition, where each has a single value. The following illustrations show an example of a single condition with multiple values and an example of multiple conditions (for the same property) with a single value. Both examples result in the same query:  `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)`
     
     ![One condition with multiple values](../media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
   
@@ -303,11 +304,11 @@ This example returns email items or documents that contain the keyword "report",
   
  **Search query syntax**
   
- `report(c:c)(date<2016-04-01)(subjecttitle:"northwind")(-filetype="aspx")`
+ `report(c:c)(date<2016-04-01)(subjecttitle:"northwind")(-filetype:aspx)`
   
  **Search query logic**
   
- `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype="aspx")`
+ `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
   
 #### Example 3
 

@@ -14,6 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: "In Advanced eDiscovery, the Search and Tagging module enables you to search, preview, and organize the documents in your case. Currently, this module is in beta."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Search and Tagging
@@ -68,7 +69,7 @@ Alternatively, you can use a condition card in the Advanced eDiscovery Search to
 
 For more information about searchable properties, see [Keyword queries and search conditions](keyword-queries-and-search-conditions.md).
   
-## See also
+## Related topics
 
 [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   

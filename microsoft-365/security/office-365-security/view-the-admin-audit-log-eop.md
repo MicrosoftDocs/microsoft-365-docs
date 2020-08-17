@@ -21,13 +21,18 @@ In standalone Exchange Online Protection (EOP) organizations without Exchange On
 The admin audit log records specific actions, based on standalone EOP PowerShell cmdlets, done by admins and users who have been assigned administrative privileges. Entries in the admin audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.
 
 > [!NOTE]
-> <ul><li>Admin auditing logging is enabled by default, and you can't disable it.</li><li>The admin audit log doesn't record actions based on cmdlets that begins with the verbs **Get**, **Search**, or **Test**.</li><li>Audit log entries are kept for 90 days. When an entry is older than 90 days, it's deleted</li></ul>
+>
+> - Admin auditing logging is enabled by default, and you can't disable it.
+>
+> - The admin audit log doesn't record actions based on cmdlets that begins with the verbs **Get**, **Search**, or **Test**.
+>
+> - Audit log entries are kept for 90 days. When an entry is older than 90 days, it's deleted
 
 ## What do you need to know before you begin?
 
 - To open the Exchange admin center, see [Exchange admin center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can perform these procedures. Specifically, you need the Audit Logs or View-Only Audit Logs role, which are assigned to the ComplianceManagement, OrganizationManagement (global admins), and SecurityAdministrator role groups by default. For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
@@ -81,7 +86,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
   - Specify the date/time value in UTC: For example, "2016-05-06 14:30:00z".
 
-  - Specify the date/time value as a formula that converts the date/time in your local time zone to UTC: For example, `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()`. For more information, see [Get-Date](https://go.microsoft.com/fwlink/p/?LinkID=113313).
+  - Specify the date/time value as a formula that converts the date/time in your local time zone to UTC: For example, `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()`. For more information, see [Get-Date](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/get-date).
 
 - The cmdlet returns a maximum of 1,000 log entries by default. Use the _ResultSize_ parameter to specify up to 250,000 log entries. Or, use the value `Unlimited` to return all entries.
 
@@ -128,9 +133,10 @@ To view the contents of the **CmdletParameters** and **ModifiedProperties** fiel
 
 Each audit log entry contains the information described in the following table. The audit log contains one or more audit log entries.
 
-|||
+****
+
+|Field|Description|
 |---|---|
-|**Field**|**Description**|
 |`RunspaceId`|This field is used internally by EOP.|
 |`ObjectModified`|This field contains the object that was modified by the cmdlet specified in the `CmdletName` field.|
 |`CmdletName`|This field contains the name of the cmdlet that was run by the user in the `Caller` field.|

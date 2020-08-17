@@ -56,10 +56,10 @@ How update deployment works:
 <tr><td>Feature updates for operating system</td><td>0 days</td><td>30 days</td><td>60 days</td><td>90 days</td></tr>
 <tr><td>Drivers/firmware</td><td colspan="4">Follows the schedule for quality updates</td></tr>
 <tr><td>Anti-virus definition</td><td colspan="4">Updated with each scan</td></tr>
-<tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4">Follows Office's Monthly Channel
+<tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4">Follows Office's Current Channel
 </table>
 
-For more information about the Monthly Channel for Microsoft 365 Apps for enterprise, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
+For more information about Current Channel for Microsoft 365 Apps for enterprise, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 >[!NOTE]
 >These deferral periods are intentionally designed to ensure high security and performance standards for all users. Furthermore, based on data gathered across all Microsoft Managed Desktop devices and the varying scope and impact of updates, Microsoft Managed Desktop reserves flexibility to modify the length of the above deferral periods for any and all deployment groups on an ad hoc basis.

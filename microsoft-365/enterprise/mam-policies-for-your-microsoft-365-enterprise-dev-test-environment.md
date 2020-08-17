@@ -1,5 +1,5 @@
 ---
-title: "Device compliance policies for your Microsoft 365 Enterprise test environment"
+title: "Device compliance policies for your Microsoft 365 for enterprise test environment"
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,21 +13,21 @@ localization_priority: Normal
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Use this Test Lab Guide to add Intune device compliance policies to your Microsoft 365 Enterprise test environment.
+description: Use this Test Lab Guide to add Intune device compliance policies to your Microsoft 365 for enterprise test environment.
 ---
 
-# Device compliance policies for your Microsoft 365 Enterprise test environment
+# Device compliance policies for your Microsoft 365 for enterprise test environment
 
-*This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
+*This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*
 
-With the instructions in this article, you add an Intune device compliance policy for Windows 10 devices and Microsoft 365 Apps for enterprise to your Microsoft 365 Enterprise test environment.
+With the instructions in this article, you add an Intune device compliance policy for Windows 10 devices and Microsoft 365 Apps for enterprise to your Microsoft 365 for enterprise test environment.
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
 
-## Phase 1: Build out your Microsoft 365 Enterprise test environment
+## Phase 1: Build out your Microsoft 365 for enterprise test environment
 
 If you just want to configure MAM policies in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -41,7 +41,7 @@ If you want to configure MAM policies in a simulated enterprise, follow the inst
 
 In this phase, you create a device compliance policy for Windows 10 devices.
   
-1. Go to the Office 365 portal at ([https://portal.office.com](https://portal.office.com)) and sign in to your Office 365 test lab subscription with your global administrator account.
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in to your Microsoft 365 test lab subscription with your global administrator account.
     
 2. On a new tab of your browser, open the Azure portal at [https://portal.azure.com](https://portal.azure.com).
 
@@ -53,7 +53,7 @@ In this phase, you create a device compliance policy for Windows 10 devices.
     
 6. In the **Groups-All groups** pane, click **+ New Group**.
     
-7. In the **Group** pane, select **Office 365** or **Security** for **Group type?**, type **Managed Windows 10 device users** in **Name**, select **Assigned** in **Membership type**,  and then click **Create**. 
+7. In the **Group** pane, select **Microsoft 365** or **Security** for **Group type?**, type **Managed Windows 10 device users** in **Name**, select **Assigned** in **Membership type**,  and then click **Create**. 
     
 8. Click **Microsoft Intune**. In the **Microsoft Intune** pane, in the **Quick tasks** list, click **Create a compliance policy**.
     
@@ -71,7 +71,7 @@ In this phase, you create a device compliance policy for Windows 10 devices.
     
 15. In the **Client Apps** pane, click **Apps**, and then click **Add**. 
 
-16. In the **Add app** pane, select **App type**, and then select **Windows 10** under **Office 365 Suite**.
+16. In the **Add app** pane, select **App type**, and then select **Windows 10** under **Microsoft 365 Suite**.
 
 17. In the **Add App** pane, select **App Suite Information**.
  
@@ -82,11 +82,11 @@ Click OK.
 
 20. In the **Add App** pane, select **App Suite Settings**.
 
-21. For **Update Channel**, select **Semi-Annual**, and then click **OK**.
+21. For **Update Channel**, select **Semi-Annual Enterprise**, and then click **OK**.
 
 22. In the **Add app** pane, click **Add**.
 
-You now have a device compliance policy for testing the selected apps in the **Windows 10** device compliance policy and for members of the **Managed Windows 10 device users** group. Please note that selecting Office 365 as the group type will create additional resources. 
+You now have a device compliance policy for testing the selected apps in the **Windows 10** device compliance policy and for members of the **Managed Windows 10 device users** group. Please note that selecting Microsoft 365 as the group type will create additional resources. 
   
 ## Next step
 
@@ -94,10 +94,10 @@ Explore additional [mobile device management](m365-enterprise-test-lab-guides.md
 
 ## See also
 
-[Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md).
+[Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md).
   
-[Enroll iOS and Android devices in your Microsoft 365 Enterprise test environment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[Enroll iOS and Android devices in your Microsoft 365 for enterprise test environment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
-[Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)

@@ -7,11 +7,13 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
 ---
 
 #  Prepare mapped drives for Microsoft Managed Desktop
 
-Many enterprise environments have legacy requirements for mapped drives to allow their users or teams to share and store files, or for on-premises applications. Microsoft does not recommend the use of mapped drives with the Microsoft Managed Desktop. Instead, we recommend that you modernize yor file access solutions as follows:
+Many enterprise environments have legacy requirements for mapped drives to allow their users or teams to share and store files, or for on-premises applications. Microsoft does not recommend the use of mapped drives with the Microsoft Managed Desktop. Instead, we recommend that you modernize your file access solutions as follows:
   
 - Migrate mapped drives used by individual users to OneDrive for Business. 
 - Migrate mapped drives used by teams to share files to SharePoint Online. 

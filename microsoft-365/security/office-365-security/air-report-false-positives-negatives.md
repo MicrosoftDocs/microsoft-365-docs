@@ -29,7 +29,7 @@ ms.custom: autoir
 Did [automated investigation and response (AIR) capabilities in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) miss or wrongly detect something? There are steps you can take to fix it. You can:
 - [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and 
-- [Undo remediation actions that were taken on devices](#undo-a-remediation-action). 
+- [Undo remediation actions that were taken](#undo-a-remediation-action). 
 
 Use this article as a guide. 
 
@@ -56,17 +56,19 @@ In most cases, if a remediation action was taken on an email message, email atta
 
 With Threat Explorer, your security operations team can find an email affected by an action and potentially undo the action.
 
-|Scenario  |Undo Options  |Learn more |
-|---------|---------|---------|
-|An email message was routed to a user's Junk Email folder     |- Move the message to the user's Deleted Items folder<br/>- Move the message to the user's Inbox <br/>- Delete the message          |[Find and investigate malicious email that was delivered in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered) |
-|An email message or a file was quarantined     |- Release the email or file <br/>- Delete the email or file         |[Manage quarantined messages and files as an administrator in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files) |
+****
 
+|Scenario|Undo Options|Learn more|
+|---|---|---|
+|An email message was routed to a user's Junk Email folder|- Move the message to the user's Deleted Items folder<br/>- Move the message to the user's Inbox <br/>- Delete the message|[Find and investigate malicious email that was delivered in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)|
+|An email message or a file was quarantined|- Release the email or file <br/>- Delete the email or file|[Manage quarantined messages and files as an administrator in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files)|
+|
 
 ### Undo an action using the Actions tab for an investigation
 
 In the Action center, you can see remediation actions that were taken and potentially undo the action.
 
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in. This takes you to the the Security & Compliance Center.
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in. This takes you to the Security & Compliance Center.
 
 2. Go to **Threat management** > **Investigations**.
 

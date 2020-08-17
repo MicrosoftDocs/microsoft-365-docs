@@ -9,20 +9,21 @@ ms.date: 05/26/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: 
 - TLG
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: 
 description: "Summary: Configure and demonstrate password hash synchronization and sign-in for your Microsoft 365 test environment."
 ---
 
 # Password hash synchronization for your Microsoft 365 test environment
 
-*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+*This Test Lab Guide can be used for both Microsoft 365 for enterprise and Office 365 Enterprise test environments.*
 
 Many organizations use Azure AD Connect and password hash synchronization to synchronize the set of accounts in their on-premises Active Directory Domain Services (AD DS) forest to the set of accounts in the Azure AD tenant of their Microsoft 365 subscription. This article describes how you can add password hash synchronization to your Microsoft 365 test environment, resulting in the following configuration:
   
@@ -34,7 +35,7 @@ There are two phases to setting up this test environment:
 2. Install and configure Azure AD Connect on APP1.
     
 > [!TIP]
-> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Go to [Microsoft 365 for enterprise Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
   
 ## Phase 1: Create the Microsoft 365 simulated enterprise test environment
 
@@ -44,7 +45,7 @@ Follow the instructions in [simulated enterprise base configuration for Microsof
   
 This configuration consists of: 
   
-- Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.
+- A Microsoft 365 E5 trial or paid subscription.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network. DC1 is a domain controller for the testlab.\<your public domain name> AD DS domain.
 
 ## Phase 2: Create and register the testlab domain
@@ -53,7 +54,7 @@ In this phase you add a public DNS domain and add it to your subscription.
 
 First, work with your public DNS registration provider to create a new public DNS domain name based on your current domain name and add it to your subscription. We recommend using the name **testlab.**\<your public domain>. For example, if your public domain name is **<span>contoso</span>.com**, add the public domain name **<span>testlab</span>.contoso.com**.
   
-Next, you add the **testlab.**\<your public domain> domain to your Microsoft 365 or Office 365 trial or paid subscription by going through the domain registration process. This consists of adding additional DNS records to the **testlab.**\<your public domain> domain. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain). 
+Next, you add the **testlab.**\<your public domain> domain to your Microsoft 365 trial or paid subscription by going through the domain registration process. This consists of adding additional DNS records to the **testlab.**\<your public domain> domain. For more information, see [Add a domain to Microsoft 365](../admin/setup/add-domain.md). 
 
 Here is your resulting configuration.
   
@@ -61,7 +62,7 @@ Here is your resulting configuration.
   
 This configuration consists of:
 
-- Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions with the DNS domain testlab.\<your public domain name> registered.
+- A Microsoft 365 E5 trial or paid subscription with the DNS domain testlab.\<your public domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.
 
 Notice how the testlab.\<your public domain name> is now:
@@ -138,10 +139,10 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 ## See also
 
-[Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
-[Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
 
 

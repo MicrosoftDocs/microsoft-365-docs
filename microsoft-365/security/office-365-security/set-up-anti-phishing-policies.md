@@ -33,9 +33,10 @@ All other organizations have anti-phishing policies.
 
 The high-level differences between anti-phishing policies and ATP anti-phishing policies are described in the following table:
 
-||||
+****
+
+|Feature|Anti-phishing policies|ATP anti-phishing policies|
 |---|:---:|:---:|
-|**Feature**|**Anti-phishing policies**|**ATP anti-phishing policies**|
 |Automatically created default policy|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Create custom policies|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Policy settings<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -90,7 +91,7 @@ The following spoof settings are available in anti-phishing policies and ATP ant
     - For the question mark in the sender's photo, SPF or DKIM are the most important.
     - For the via tag, confirm the domain in the DKIM signature or the **MAIL FROM** address matches (or is a subdomain of) the domain in the From address.
 
-  For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206)
+  For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## Exclusive settings in ATP anti-phishing policies
 
@@ -123,7 +124,7 @@ The following policy settings are only available in ATP anti-phishing policies:
 
 ### Impersonation settings in ATP anti-phishing policies
 
-Impersonation is where the sender or the sender's email domain in a message looks very similar to a real sender or domain:
+Impersonation is where the sender or the sender's email domain in a message looks similar to a real sender or domain:
 
 - An example impersonation of the domain contoso.com is ćóntoso.com.
 
@@ -135,11 +136,11 @@ The following impersonation settings are only available in ATP anti-phishing pol
 
 - **Users to protect**: Prevents the specified internal or external users from being impersonated. For example, executives (internal) and board members (external). You can add up to 60 internal and external addresses. This list of protected users is different from the list of recipients that the policy applies to in the **Applied to** setting.
 
-  For example, you specify Felipe Apodaca (felipea@contoso.com) as a protected user in a policy that applies to the group named Executives. Inbound messages sent to members of the Executives group where the where Felipe Apodaca is impersonated will be acted on by the policy (the action you configure for impersonated users).
+  For example, you specify Felipe Apodaca (felipea@contoso.com) as a protected user in a policy that applies to the group named Executives. Inbound messages sent to members of the Executives group where Felipe Apodaca is impersonated will be acted on by the policy (the action you configure for impersonated users).
 
 - **Domains to protect**: Prevent the specified domains from being impersonated. For example, all domains that you own ([accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific domains (domains you own or partner domains). This list of protected domains is different from the list of domains that the policy applies to in the **Applied to** setting.
 
-  For example, you specify tailspintoys.com as a protected domain in a policy that applies to members of the group named Executives. Inbound messages sent to members of the Executives group where the where tailspintoys.com is impersonated will be acted on by the policy (the action you configure for impersonated domains).
+  For example, you specify tailspintoys.com as a protected domain in a policy that applies to members of the group named Executives. Inbound messages sent to members of the Executives group where tailspintoys.com is impersonated will be acted on by the policy (the action you configure for impersonated domains).
 
 - **Actions for protected users or domains**: Choose the action to take on inbound messages that contain impersonation attempts against the protected users and protected domains in the policy. You can specify different actions for impersonation of protected users vs. impersonation of protected domains:
 
