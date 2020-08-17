@@ -348,7 +348,7 @@ The aggregate view and data table view allow for 90 days of filtering.
 
 If you click **Filter**, you can filter both the chart and the data table.
 
-This chart shows the email categories organized by:
+This chart shows the emails categorized as follows:
   - **Total email**
   - **Edge allow, edge filtered**
   - **Not malware, Safe attachments detection (ATP), Anti-malware engine detection, rule block**
