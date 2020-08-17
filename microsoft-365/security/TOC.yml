@@ -360,24 +360,7 @@
                         - name: Troubleshooting mail sent to Microsoft 365
                           href: ./office-365-security/troubleshooting-mail-sent-to-office-365.md
                         - name: Help and support for EOP
-                          href: ./office-365-security/help-and-support-for-eop.md
-                        - name: EOP general FAQ
-                          href: ./office-365-security/eop-general-faq.md
-                        - name: EOP queued, deferred, and bounced messages FAQ
-                          href: ./office-365-security/eop-queued-deferred-and-bounced-messages-faq.md
-                        - name: Delegated administration FAQ
-                          href: ./office-365-security/delegated-administration-faq.md
-                    - name: "Reference: Policies, practices, and guidelines"
-                      href: ./office-365-security/reference-policies-practices-and-guidelines.md
-                      items: 
-                        - name: Sending mail to Office 365
-                          href: ./office-365-security/sending-mail-to-office-365.md
-                        - name: Services for non-customers
-                          href: ./office-365-security/services-for-non-customers.md
-                    - name: Protect on-premises mailboxes in China with standalone EOP
-                      href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
-                    - name: Configure standalone EOP to deliver spam to the Junk Email folder
-                      href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
+                          href: ./office-365-security/help-and-support-for-eop.md     
         - name: Overview
           items: 
             - name: Security roadmap
@@ -471,6 +454,8 @@
               href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: Set up a custom blocked URLs list
               href: ./office-365-security/set-up-a-custom-blocked-urls-list-atp.md
+            - name: Configure standalone EOP to deliver spam to the Junk Email folder
+              href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
             - name: S/MIME
               href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
               items: 
@@ -505,6 +490,8 @@
               href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
             - name: Manage role groups in standalone EOP
               href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
+            - name: Protect on-premises mailboxes in China with standalone EOP
+              href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md  
         - name: Security operations
           items: 
             - name: Manually submit messages to Microsoft
@@ -567,6 +554,12 @@
               href: ./office-365-security/quarantine-faq.md
             - name: Anti-spoofing protection FAQ
               href: ./office-365-security/anti-spoofing-protection-faq.md
+            - name: EOP general FAQ
+              href: ./office-365-security/eop-general-faq.md
+            - name: EOP queued, deferred, and bounced messages FAQ
+              href: ./office-365-security/eop-queued-deferred-and-bounced-messages-faq.md
+            - name: Delegated administration FAQ
+              href: ./office-365-security/delegated-administration-faq.md           
         - name: Reference
           items: 
             - name: Virus detection in SharePoint Online
@@ -617,6 +610,12 @@
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: How ATP Safe Links works
               href: ./office-365-security/how-atp-safe-links-works.md
+            - name: Reference: Policies, practices, and guidelines
+              href: ./office-365-security/reference-policies-practices-and-guidelines.md
+            - name: Sending mail to Office 365
+              href: ./office-365-security/sending-mail-to-office-365.md
+            - name: Services for non-customers
+              href: ./office-365-security/services-for-non-customers.md
         - name: Employee training resources
     - name: Microsoft 365 for Enterprise
       href: https://docs.microsoft.com/microsoft-365/enterprise
