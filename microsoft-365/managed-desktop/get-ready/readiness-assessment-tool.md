@@ -30,19 +30,19 @@ The assessment tool checks these items:
 |Windows Hello for Business     | Checks that Windows Hello for Business is enabled.        |
 |Device Compliance policies     | Checks that Intune compliance policies are not assigned to all users. (The policies should *not* be assigned to any Microsoft Managed Desktop devices.)    |
 |Device Configuration profiles     | Confirms that configuration profiles are not assigned to all users or all devices. (Configuration profiles should *not* be assigned to any Microsoft Managed Desktop devices.)f     |
-|Conditional Access     | Verifies that conditional access policies are not assigned to all users. (Conditional access policies should *not* be assigned to any Microsoft Managed Desktop devices.)    |
+|Conditional Access     | Verifies that conditional access policies are not assigned to all users. (Conditional access policies should *not* be assigned to Microsoft Managed Desktop serive accounts.)    |
 |Microsoft Store for Business     | Confirms that Microsoft Store for Business is enabled and synced with Intune.        |
 |Windows 10 update ring     | Checks that Intune's "Windows 10 update ring" policy doesn't target all users or all devices. (The policy should *not* target any Microsoft Managed Desktop devices.)     |
-|Security baselines     | Checks that the security baseline profile doesn't target all users or all devices.        |
-|Enterprise State Roaming     | Confirms that Enterprise State Roaming is enabled       |
-|Multi-factor authentication     | Checks whether multi-factor authentication is not applied to all users. (Multi-factor authentication must not accidentally be applied to Microsoft Managed Desktop service accounts.)|
+|Security baselines     | Checks that the security baseline profile doesn't target all users or all devices. (Security baseline policies should *not* target any Microsoft Managed Desktop devices.)       |
+|Enterprise State Roaming     | Advises how to check that Enterprise State Roaming is enabled       |
+|Multi-factor authentication     | Checks that multi-factor authentication is not applied to all users. (Multi-factor authentication must not accidentally be applied to Microsoft Managed Desktop service accounts.)|
 |Microsoft Managed Desktop service accounts     | Checks that no user names conflict with ones that Microsoft Managed Desktop reserves for its own use.        |
 |Self-service password reset     | Confirms that self-service password reset is enabled.        |
 |PowerShell scripts     | Checks that Windows PowerShell scripts are assigned to Microsoft Managed Desktop devices       |
 |Certificate connectors     | Checks the state of certificate connectors to ensure they are active.   |
 |OneDrive for Business     | Checks whether OneDrive for Business is using unsupported settings.        |
 |Security administrator roles     | Confirms that users with Security Reader, Security Operator, or Global Reader roles have been assigned those roles in Microsoft Defender Advanced Threat Protection.         |
-|"Ad hoc" subscriptions for Enterprise State Roaming     | Verifies that Enterprise State Roaming is allowed to run.  |
+|"Ad hoc" subscriptions for Enterprise State Roaming     | Advises how to check that Enterprise State Roaming is allowed to run.  |
 |Supported regions     | Checks that your region is supported by Microsoft Managed Desktop.        |
 |Licenses     | Checks that you have obtained the necessary [licenses](prerequisites.md#more-about-licenses).         |
 |Windows apps     | Review which apps you want to assign to Microsoft Managed Desktop devices.      |
