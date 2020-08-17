@@ -145,7 +145,7 @@ To verify the syntax for your tenant and identify URLs for users, see [Get a lis
 
 To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Office 365 groups** location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. In addition, although the **Exchange email** location initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
 
-A retention policy applied to a Microsoft 365 group includes both the group mailbox and site. A retention policy applied to a Microsoft 365 group protects the resources created by a Microsoft 365 group, which includes Microsoft Teams.
+A retention policy applied to a Microsoft 365 group includes the group mailbox and teams site, if a teams site was selected at the time the group was created or later added to the group. Files stored in the teams site are covered with this location, but not Teams chats or Teams channel messages that have their own retention policy locations.
 
 ### Configuration information for Skype for Business
 
@@ -303,7 +303,7 @@ All retention policies with any configuration support Preservation Lock. However
     
     ![RestrictiveRetention parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-     When prompted, read and acknowledge the restrictions that come with this configuration, and choose **Yes to All**:
+     When prompted, read and acknowledge the restrictions that come with this configuration by entering **Y**:
     
    ![Prompt to confirm that you want to lock a retention policy in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 

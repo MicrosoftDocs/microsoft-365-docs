@@ -61,7 +61,7 @@ When the retention policy is retain-only, or delete-only, the content's paths ar
 
 1. **If the message is not deleted** during the retention period: At the end of the retention period, the message is moved to the SubstrateHolds folder. 
 
-2. **If the item is deleted by the user** during the period, the item is immediately moved to the SubstrateHolds folder. If a user deletes the message from there or empties the SubstrateHolds folder, the item is permanently deleted. Otherwise, the message is permanently deleted one day after being in the SubstrateHolds folder.
+2. **If the item is deleted by the user** during the period, the item is immediately moved to the SubstrateHolds folder. The message is permanently deleted one day after being in the SubstrateHolds folder.
 
 
 ## Skype for Business and Teams interop chats
