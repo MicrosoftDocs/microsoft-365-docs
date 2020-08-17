@@ -333,7 +333,7 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
  ### Tech view for the Mailflow status report
 
-The **Tech view** is similar to the **Funnel** view, providing more granular details for the configured threat protections features. From the chart you can see how the emails have been categorized as they move through the different stages of protection. When you hover over a category in the chart, you can see how many items fall into that category. 
+The **Tech view** is similar to the **Funnel** view, providing more granular details for the configured threat protections features. From the chart you can see how the emails are categorized at the different stages of threat protection.
 
 If you click the **Tech view** tab, by default, this view contains a chart and a data table that's configured with the following filters:
 
@@ -348,7 +348,7 @@ The aggregate view and data table view allow for 90 days of filtering.
 
 If you click **Filter**, you can filter both the chart and the data table.
 
-The chart is organized by **email category**:
+The chart shows a breakdown of the email count by **category**:
   - **Total email**
   - **Edge allow, edge filtered**
   - **Not malware, Safe attachments detection (ATP), Anti-malware engine detection, rule block**
@@ -357,7 +357,7 @@ The chart is organized by **email category**:
   - **Not spam, spam**
   - **Non-malicious email, safe links detection (ATP), ZAP**
 
-  Hovering over
+When you hover over a category in the chart, you can see how many items fall into that category.
 
 The data table contains the following information, shown in descending date order:
   - **Date**  
