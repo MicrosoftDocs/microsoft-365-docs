@@ -277,7 +277,7 @@ Each exported .csv file is limited to 150,000 rows. If the data for that day con
 
 ### Funnel view for the Mailflow status report
 
-The Funnel view shows you how Microsoft's email threat protection features filter incoming and outgoing emails in your organization. It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
+The **Funnel** view shows you how Microsoft's email threat protection features filter incoming and outgoing emails in your organization. It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
 
 If you click the **Funnel** tab, by default, this view contains a chart and a data table that's configured with the following filters:
 
@@ -333,7 +333,7 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
  ### Tech view for the Mailflow status report
 
- The Tech view shows you the outcome Microsoft's email threat protection features have on incoming and outgoing emails in your organization. It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing categorize these emails. 
+The **Tech view** is similar to the **Funnel** view, providing more granular details for the configured threat protections features. From the chart you can see how the emails have been categorized as they move through the different stages of protection. When you hover over a category in the chart, you can see how many items fall into that category. 
 
 If you click the **Tech view** tab, by default, this view contains a chart and a data table that's configured with the following filters:
 
@@ -352,10 +352,10 @@ The chart is organized by **email category**:
   - **Total email**
   - **Edge allow, edge filtered**
   - **Not malware, Safe attachments detection (ATP), Anti-malware engine detection, rule block**
-  - **Not phish, DKIM failure, DMARC failure, impersonation detection, spoof detected, phish detected**
+  - **Not phish, DMARC failure, impersonation detection, spoof detection, phish detection**
   - **No detection with URL detonation, URL detonation detection (ATP)**
   - **Not spam, spam**
-  - **Non-malicious email, safe links detection, ZAP**
+  - **Non-malicious email, safe links detection (ATP), ZAP**
 
   Hovering over
 
@@ -367,7 +367,6 @@ The data table contains the following information, shown in descending date orde
   - **DMARC, impersonation, spoof, phish filtered**
   - **URL detonation detection**
   - **Anti-spam filtered**
-  - **Bulk filters**
   - **ZAP removed**
   - **Detection by safe links**
 
