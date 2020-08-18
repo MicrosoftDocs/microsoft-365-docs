@@ -34,7 +34,7 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
     - Office 365 A3
     - Office 365 A5
 
-## Turn on or turn off Office Scripts for your organization and manage sharing of scripts
+## Manage availability of Office Scripts and sharing of scripts
 
 1. In the Microsoft 365 admin center, go to the **Settings** \> **Org settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services</a> tab.
 
