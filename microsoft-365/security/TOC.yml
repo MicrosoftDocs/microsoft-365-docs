@@ -319,17 +319,7 @@
                       href: ./office-365-security/set-up-your-eop-service.md
                       items: 
                         - name: Best practices for configuring EOP
-                          href: ./office-365-security/best-practices-for-configuring-eop.md
-                        - name: Recommended settings for configuring EOP and Office 365 ATP Security
-                          href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
-                        - name: Sample script for applying EOP settings to multiple tenants
-                          href: ./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md
-                        - name: Move domains and settings from one EOP organization to another
-                          href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
-                        - name: Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
-                          href: ./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
-                        - name: Backscatter in EOP
-                          href: ./office-365-security/backscatter-messages-and-eop.md
+                          href: ./office-365-security/best-practices-for-configuring-eop.md                     
         - name: Overview
           items: 
             - name: Security roadmap
@@ -372,7 +362,7 @@
             - name: Exchange admin center in standalone EOP
               href: ./office-365-security/exchange-admin-center-in-exchange-online-protection-eop.md
             - name: Manage recipients in standalone EOP
-              href: ./office-365-security/manage-recipients-in-eop.md
+               href: ./office-365-security/manage-recipients-in-eop.md
             - name: Mail flow in EOP
               href: ./office-365-security/mail-flow-in-eop.md        
             - name: Auditing reports in standalone EOP
@@ -463,6 +453,8 @@
               href: ./office-365-security/manage-quarantined-messages-and-files.md
             - name: Find and release quarantined messages as a user
               href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
+            - name: Move domains and settings from one EOP organization to another
+              href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
             - name: Manage role groups in standalone EOP
               href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
             - name: Protect on-premises mailboxes in China with standalone EOP
@@ -605,6 +597,15 @@
               href: ./office-365-security/sending-mail-to-office-365.md
             - name: Services for non-customers
               href: ./office-365-security/services-for-non-customers.md
+            - name: Recommended settings for configuring EOP and Office 365 ATP Security
+              href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
+            - name: Sample script for applying EOP settings to multiple tenants
+              href: ./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md
+            - name: Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
+              href: ./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+                        - name: Backscatter in EOP
+                          href: ./office-365-security/backscatter-messages-and-eop.md
+
             - name: Mail flow rules (transport rules) in standalone EOP
               href: ./office-365-security/mail-flow-rules-transport-rules-0.md              
             - name: Mail flow intelligence in EOP
