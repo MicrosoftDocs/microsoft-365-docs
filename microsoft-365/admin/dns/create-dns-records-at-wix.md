@@ -28,6 +28,8 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
   
 If Wix is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
+
+
   
 These are the main records to add. 
   
@@ -53,6 +55,9 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
   
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
+
+> [!NOTE]
+> WIX does not support DNS entries for subdomains.
   
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
     
@@ -181,4 +186,3 @@ When Microsoft finds the correct TXT record, your domain is verified.
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
-
