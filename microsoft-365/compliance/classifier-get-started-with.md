@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. This topic shows you how to create and train a custom classifier and how to improve the accuracy of classifiers over their lifetime through retraining."
+description: "A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. This article shows you how to create and train a custom classifier and how to retrain them to increase accuracy."
 ---
 
 # Get started with trainable classifiers (preview)
 
-A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained you can use it to identify items in Office sensitivity labels, Communications compliance policies and retention label policies.
+A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify item for application of Office sensitivity labels, Communications compliance policies, and retention label policies.
 
-Creating a custom trainable classifier first involves giving it samples that are human picked and positively match the category. Then, after it has processed those, you test the predictions by giving it a mix of positive and negative samples. This article shows you how to create and train a custom classifier and how to improve the accuracy of custom trainable classifiers and pre-trained classifiers over their lifetime through retraining.
+Creating a custom trainable classifier first involves giving it samples that are human picked and positively match the category. Then, after it has processed those, you test the classifiers ability to predict by giving it a mix of positive and negative samples. This article shows you how to create and train a custom classifier and how to improve the performance of custom trainable classifiers and pre-trained classifiers over their lifetime through retraining.
 
 To learn more about the different types of classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md).
 
@@ -35,8 +35,8 @@ Classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one 
 
 To access classifiers in the UI: 
 
-- the Global admin needs to opt in for the tenant
-- Compliance admin role or Compliance Data Administrator is required to train a classifier
+- the Global admin needs to opt in for the tenant to create custom classifiers
+- the Compliance admin role or Compliance Data Administrator is required to train a classifier
 
 You'll need accounts with these permissions to use classifiers in these scenarios:
 
@@ -73,7 +73,7 @@ When you want a trainable classifier to independently and accurately identify an
 Once the trainable classifier has processed enough positive samples to build a prediction model, you need to test the predictions it makes to see if the classifier can correctly distinguish between items that match the category and items that don't. You do this by feeding it another, hopefully larger, set of human picked content that consists of samples that should fall into the category and samples that won't. Once it processes those, you manually go through the results and verify whether each prediction is correct, incorrect, or you aren't sure. The trainable classifier uses this feedback to improve its prediction model.
 
 > [!TIP]
-> For best results, have 10,000 items in your test sample set with an even distribution of positive and negative matches.
+> For best results, have at least 200 items in your test sample set with an even distribution of positive and negative matches.
 
 ## How to create a trainable classifier
 
@@ -98,7 +98,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 6. Fill in appropriate values for the `Name`, and `Description` fields of the category of items you want this trainable classifier to identify.
 
-7. Enter the exact SharePoint Online site, library, and folder URL for the seed content site from step 2. Choose `Add`.
+7. Pick the SharePoint Online site, library, and folder URL for the seed content site from step 2. Choose `Add`.
 
 8. Review the settings and choose `Create trainable classifier`.
 
@@ -109,7 +109,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 ![trainable classifier ready for testing](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. Collect at least 200 test content items. Microsoft recommends 10,000 for best results. These should be a mix of items that are strong positives, strong negatives and some that are a little less obvious in their nature. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
+11. Collect at least 200 test content items (10,000 max) for best results. These should be a mix of items that are strong positives, strong negatives and some that are a little less obvious in their nature. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
 > [!IMPORTANT]
 > The sample items must not be encrypted and they must be in English.
@@ -121,7 +121,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 13. Choose `Add items to test`.
 
-14. Enter the exact SharePoint Online site, library, and folder URL for the test content site from step 12. Choose `Add`.
+14. Pick the SharePoint Online site, library, and folder URL for the test content site from step 12. Choose `Add`.
 
 15. Finish the wizard by choosing `Done`. Your trainable classifier will take up to an hour to process the test files.
 
@@ -135,15 +135,13 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 ![review items box](../media/classifier-trainable-review-detail.png)
 
-19. Review *at least* 200 items.
+19. Review *at least* 200 items. Once the accuracy score has stabilized, the **publish** option will become available and the classifier status will say `Ready to use`.
 
-20. Continue to review until the accuracy reaches at least 70% and the `Publish the classifier` status is `Ready to use`.
+![accuracy score and ready to publish](../media/classifier-trainable-review-ready-to-publish.png)
 
-![accuracy and ready to publish](../media/classifier-trainable-review-ready-to-publish.png)
+20. Publish the classifier.
 
-21. Publish the classifier.
-
-22. Once published your classifier will be available as a condition in [Office auto-labeling with sensitivity labels](apply-sensitivity-label-automatically.md), [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and in [Communication compliance](communication-compliance.md).
+21. Once published your classifier will be available as a condition in [Office auto-labeling with sensitivity labels](apply-sensitivity-label-automatically.md), [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and in [Communication compliance](communication-compliance.md).
 
 ## Retraining classifiers in used Communication compliance policies (preview)
 
@@ -163,13 +161,19 @@ To understand more about the overall workflow of retraining a classifier, see [P
 2. Choose the elipsis and **Provide detailed feedback**.
 3. In the **Detailed feedback** pane, if the item is a true positive, choose, **Match**.  If the item is a false positive, that is it was incorrectly included in the category, choose **Not a match**.
 4. If there is another classifier that would be more appropriate for the item you can choose it from the **Suggest other trainable classifiers** list for evaluation by that other classifier.
+
+> [!TIP]
+> You can provide feedback on multiple items simultaneously by choosing them all and then choosing **Provide detailed feedback** in the command bar.
+
 5. Choose **Send feeedback** to send your evaluation of match, not a match, and suggest other trainable classifiers to the classifiers. When you have provided 30 instances of feedback to a classifier, it will automatically start retraining. Retraining can take from 1-4 hours. Classifiers can only be retrained twice per day.
- > [!IMPORTANT]
+
+> [!IMPORTANT]
 > This information goes to the classifier in your tenant, **it does not go back to Microsoft**.
+
 6.  Open the Data classification page in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.
 7. Open **Trainable classifiers (preview)**.
-8. The classifier that was used in your Commmunications compliance policy will appear under the **Re-training** heading.
-1
+8. The classifier that was used in your Communications compliance policy will appear under the **Re-training** heading.
+
 GET SCREENSHOT OF RE-TRAINING SCREEN
 
 9. Once retraining completes, choose the classifier to open the side by side comparison view.
