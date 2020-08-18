@@ -330,20 +330,6 @@
                           href: ./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
                         - name: Backscatter in EOP
                           href: ./office-365-security/backscatter-messages-and-eop.md
-                    - name: Auditing reports in standalone EOP
-                      href: ./office-365-security/auditing-reports-in-eop.md
-                      items: 
-                        - name: Run an administrator role group report in standalone EOP
-                          href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
-                        - name: View the admin audit log in standalone EOP
-                          href: ./office-365-security/view-the-admin-audit-log-eop.md
-                    - name: Manage recipients in standalone EOP
-                      href: ./office-365-security/manage-recipients-in-eop.md
-                      items: 
-                        - name: Manage mail users in standalone EOP
-                          href: ./office-365-security/manage-mail-users-in-eop.md
-                        - name: Manage groups in standalone EOP
-                          href: ./office-365-security/manage-groups-in-eop.md                         
         - name: Overview
           items: 
             - name: Security roadmap
@@ -385,8 +371,12 @@
               href: ./office-365-security/feature-permissions-in-eop.md   
             - name: Exchange admin center in standalone EOP
               href: ./office-365-security/exchange-admin-center-in-exchange-online-protection-eop.md
+            - name: Manage recipients in standalone EOP
+               href: ./office-365-security/manage-recipients-in-eop.md
             - name: Mail flow in EOP
               href: ./office-365-security/mail-flow-in-eop.md        
+            - name: Auditing reports in standalone EOP
+              href: ./office-365-security/auditing-reports-in-eop.md
         - name: Evaluate
         - name: Plan
         - name: Deploy
@@ -477,6 +467,10 @@
               href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
             - name: Protect on-premises mailboxes in China with standalone EOP
               href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md  
+            - name: Run an administrator role group report in standalone EOP
+              href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
+            - name: View the admin audit log in standalone EOP
+              href: ./office-365-security/view-the-admin-audit-log-eop.md
         - name: Security operations
           items: 
             - name: Manually submit messages to Microsoft
@@ -521,6 +515,10 @@
               href: ./office-365-security/threat-trackers.md
             - name: Attack Simulator in Office 365 ATP
               href: ./office-365-security/attack-simulator.md
+            - name: Manage mail users in standalone EOP
+              href: ./office-365-security/manage-mail-users-in-eop.md
+            - name: Manage groups in standalone EOP
+              href: ./office-365-security/manage-groups-in-eop.md                      
             - name: Use mail flow rules to filter bulk email in EOP
               href: ./office-365-security/use-transport-rules-to-configure-bulk-email-filtering.md
             - name: Use mail flow rules to block messages with executable attachments in EOP
