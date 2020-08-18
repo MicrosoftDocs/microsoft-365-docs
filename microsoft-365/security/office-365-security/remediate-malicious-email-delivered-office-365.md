@@ -74,24 +74,22 @@ Action Center shows all remediation actions for the past 30 days. Actions taken 
 
 Open any remediation item to view details about it, including its name, creation date, description, threat severity, and status. It also shows the following two tabs.
 
-- **Mail submission** tab: Shows the number of emails submitted through Threat Explorer or automated investigations to be remediated. These emails can be actionable or not actionable.
-
-   ![The action center with actionable and not actionable threats.](../../media/tp-RemediationArticle5.png)
+- **Mail submission** tab: Shows the number of emails submitted through Threat Explorer or automated investigations to be remediated. These emails can be actionable or not actionable.<br/><br/>![The action center with actionable and not actionable threats.](../../media/tp-RemediationArticle5.png)
 
    - **Actionable**: Emails in the following cloud mailbox locations can be acted on and moved:
 
      - Inbox
      - Junk
      - Deleted folder
-     - Soft deleted folder
+     - Soft-deleted folder
 
-     [!NOTE]
+     > [!NOTE]
      > Currently, only a user with access to the mailbox can recover items from a soft-deleted folder.
 
    - **Not actionable**: Emails in the following locations can't be acted on or moved in remediation actions:
 
      - Quarantine
-     - Hard deleted folder
+     - Hard-deleted folder
      - On-premises/external
      - Failed/dropped
 
@@ -106,15 +104,15 @@ Open any remediation item to view details about it, including its name, creation
   >[!Note]
   >For best results, remediation should be done in batches of 50,000 or fewer.
 
-   Only remediable emails are acted up during remediation. Non-remediable emails can't be remediated by the Office 365 email system, as they aren't stored in cloud mailboxes.
+   Only remediable emails are acted on during remediation. Nonremediable emails can't be remediated by the Office 365 email system, as they aren't stored in cloud mailboxes.
 
-   Admins can take actions on emails in quarantine if necessary, but those emails will expire out of quarantine if they're not manually purged. Emails quarantined because of malicious content aren't accessible by users, so security personnel don't have to take any specific action to get rid of threats in quarantine. If the emails are on-premises or external, the user can be contacted to address the suspicious email. Or admins can use separate email server/security tools for removal. These emails can be identified by applying the delivery location equals on-premises external filter in Threat Explorer. For failed or dropped email, or email not accessible by users, there shouldn’t be any email to mitigate, since these mails don’t reach the mailbox.
+   Admins can take actions on emails in quarantine if necessary, but those emails will expire out of quarantine if they're not manually purged. Emails quarantined because of malicious content aren't accessible by users, so security personnel don't have to take any specific action to get rid of threats in quarantine. If the emails are on-premises or external, the user can be contacted to address the suspicious email. Or the admins can use separate email server/security tools for removal. These emails can be identified by applying the delivery-location-equals-on-premises external filter in Threat Explorer. For failed or dropped email, or email not accessible by users, there won’t be any email to mitigate, since these mails don’t reach the mailbox.
 
-   This is how a submission shows up in Action Center. A remediation can contain multiple submissions. If multiple actions get approved through one automated investigation, each email or email cluster action appears in the same remediation as a different submission.
+   The following image shows how a submission looks in Action Center. A remediation can contain multiple submissions. If multiple actions get approved through one automated investigation, each email or email cluster action appears in the same remediation as a different submission.
 
    ![ZAP email cluster flyout panel.](../../media/tp-RemediationArticle6.png)
 
-   Select a mail submission item to show the details of that remediation, such as the query (when remediation is triggered through automated investigations or Threat Explorer through selecting a query) and the start and end time of remediation. It also displays a list of messages that were submitted for remediation. As messages move out of the Threat Explorer retention period, the messages disappear from this list. The list also shows individual messages that are remediable.
+   Select a mail submission item to show the details of that remediation, such as the query (when remediation is triggered through automated investigations or Threat Explorer through selecting a query) and the start and end times of remediation. It also displays a list of messages that were submitted for remediation. As messages move out of the Threat Explorer retention period, the messages disappear from this list. The list also shows individual messages that are remediable.
 
 - **Action logs**: This tab shows the messages remediated, including approved date, admin who approved the action, action, status, and counts.
 
@@ -123,19 +121,16 @@ Open any remediation item to view details about it, including its name, creation
      - **Started**: Remediation is triggered.
      - **Queued**: Remediation is queued up for mitigation of emails.
      - **In progress**: Mitigation is in progress.
-     - **Completed**: When the mitigation on all remediable emails either completed successfully or with some failures.
+     - **Completed**: Mitigation on all remediable emails either completed successfully or with some failures.
      - **Failed**: No remediations were successful.
 
    As only remediable emails can be acted on, each email’s cleanup is shown as successful or failed. From the total remediable emails, successful and failed mitigations are reported.
 
-   - **Success**: The desired action on remediable emails was accomplished. For example: An admin wants to remove emails from mailboxes, so they take the action of soft-deleting emails. If a remediable email isn't found in the original folder after the action is taken, the status will show as successful.
+   - **Success**: The desired action on remediable emails was accomplished. For example: An admin wants to remove emails from mailboxes, so the admin takes the action of soft-deleting emails. If a remediable email isn't found in the original folder after the action is taken, the status will show as successful.
 
-   - **Failure**: The desired action on remediable emails failed. For example: An admin wants to remove emails from mailboxes, so they take the action of soft-deleting emails. If a remediable email is still found in the mailbox after the action is taken, status will show as failed.
+   - **Failure**: The desired action on remediable emails failed. For example: An admin wants to remove emails from mailboxes, so the admin takes the action of soft-deleting emails. If a remediable email is still found in the mailbox after the action is taken, status will show as failed.
 
    Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox," that item was already removed from the mailbox. Sometimes there's a systemic error during remediation. In those cases, it's a good idea to retry remediation.
 
    Remediation is a powerful tool to mitigate threats and address suspicious emails. It helps keep an organization secure.
 
-## More info
-
-See [Investigate malicious email](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide).
