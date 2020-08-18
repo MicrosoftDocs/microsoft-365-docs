@@ -362,7 +362,7 @@
             - name: Exchange admin center in standalone EOP
               href: ./office-365-security/exchange-admin-center-in-exchange-online-protection-eop.md
             - name: Manage recipients in standalone EOP
-               href: ./office-365-security/manage-recipients-in-eop.md
+              href: ./office-365-security/manage-recipients-in-eop.md
             - name: Mail flow in EOP
               href: ./office-365-security/mail-flow-in-eop.md        
             - name: Auditing reports in standalone EOP
