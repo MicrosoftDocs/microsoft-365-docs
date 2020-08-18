@@ -32,7 +32,7 @@ Moving forward, we're focusing Cortana on enterprise productivity.
 
 - Consistent with other Office 365 services, Cortana enterprise services meet the same enterprise-level privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
-- New Microsoft 365 experiences, such as the Briefing email and Play My Emails, will be enabled using Cortana enterprise services and fully comply with those promises. These features are currently available in the English (United States) market for users with mailboxes in the US geo, and for employees of multi-national corporations with US-based mailboxes.
+- New Microsoft 365 experiences, such as the Briefing email and Play My Emails, will be enabled using Cortana enterprise services and fully comply with those promises. These features are currently available in the English (United States) market for users with mailboxes in the US geo, and for employees of multi-national corporations with US-based mailboxes. For more information on finding the usage location, please visit [View additional property values for accounts](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts).
 
 - Users may connect to Cortana enterprise services described here through Cortana in Windows 10 (version 2004 and later), as well as client applications, such as Outlook for iOS and Android, subject to separate licensing terms. 
 
@@ -50,13 +50,13 @@ Consistent with other Office 365 services, Cortana enterprise services are secur
 
 The table below describes the data handling for Cortana enterprise services.
 
-|**Name**|**Description**|
+| Name | Description |
 |:-----|:-----|
-|**Storage**  <br/> |Customer Data is stored on Microsoft servers inside the Office 365 cloud. Your data is part of your tenant. <br/> Speech audio is not retained.  <br/> |
+|**Storage**  <br/> |Customer Data is stored on Microsoft servers inside the Office 365 cloud. Your data is part of your tenant. <br/><br/>Speech audio is not retained.  <br/> |
 |**Stays in Geo**  <br/> |Customer Data is stored on Microsoft servers inside the Office 365 cloud in Geo. Your data is part of your tenant.  <br/> |
-|**Retention**  <br/> |Customer Data is deleted when the account is closed by the tenant administrator or when a GDPR Data Subject Rights deletion request is made. <br/> Speech audio is not retained.  <br/> |
+|**Retention**  <br/> |Customer Data is deleted when the account is closed by the tenant administrator or when a GDPR Data Subject Rights deletion request is made. <br/><br/>Speech audio is not retained.  <br/> |
 |**Processing and Confidentiality**  <br/> |Personnel engaged in the processing of Customer Data and personal data (i) will process such data only on instructions from Customer, and (ii) will be obligated to maintain the confidentiality and security of such data even after their engagement ends.  <br/> |
-|**Usage**  <br/> |Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. Machine learning to develop and improve models is one of those purposes. Machine learning is done inside the Office 365 cloud, and there is no human viewing, review or labeling of your Customer Data. <br/> Your data is not used to target advertising.  <br/> |
+|**Usage**  <br/> |Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. Machine learning to develop and improve models is one of those purposes. Machine learning is done inside the Office 365 cloud, and there is no human viewing, review or labeling of your Customer Data. <br/><br/>Your data is not used to target advertising.  <br/> |
 
 ## Cortana enterprise services in Microsoft 365 experiences
 
@@ -75,6 +75,28 @@ Admins can configure Cortana in Windows 10 for their organization using the Expe
 Beginning with Windows 10, version 2004, Cortana is a Universal Windows Platform (UWP) app preinstalled with Windows and is regularly updated through the Microsoft Store. To receive the latest updates to Cortana, you will need to [enable updates through the Microsoft Store](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store).
 
 [Learn more about Cortana in Windows 10](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview)
+
+### Cortana voice assistance in Teams
+
+Cortana voice assistance in the Teams mobile app enables Microsoft 365 Enterprise users to streamline communication, collaboration, and meeting-related tasks using spoken natural language. Users can speak to Cortana by clicking on the microphone button located in the upper right of the Teams mobile app. They can connect with someone while on the go by making a voice query such as “call Megan” or “send a message to my next meeting.” Users can also join meetings by saying “join my next meeting” and use voice assistance to share files, check their calendar, and more. These voice assistance experiences are delivered using Cortana enterprise-grade services that fully comply with Office 365’s privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products).
+
+**Admin control**
+
+Cortana voice assistance will be enabled by default for tenants. Admins can control who in their tenant can use Cortana voice assistance in Teams via a policy (TeamsCortanaPolicy). This policy can be set at either a user account level or tenant level. Admins can also use the CortanaVoiceInvocationMode field within this policy control to determine whether Cortana is disabled, enabled with push button invocation only, or enabled with wake word invocation as well (applicable to devices that support it). Note that at the time of the initial release for Microsoft 365 Enterprise users in the US in English, the Teams mobile app will not support wake word activation, but it will be supported in the future.
+
+**User control**
+
+Individual users can try out Cortana voice assistance in the Teams mobile app by clicking on the mic button. They can also control whether Cortana in Teams is enabled for their device via a setting in the Teams mobile app: 
+
+1. Open the Teams mobile app.
+
+2. Go to **Settings**.
+
+3. Select **Cortana**.
+
+4. Move the toggle to on or off, depending on whether you want Cortana voice assistance on this device.
+
+[Learn more about Cortana voice assistance in Teams](https://support.microsoft.com/en-us/office/using-cortana-voice-assistance-in-teams-274bb2f0-d962-4182-b45d-307435cea256?ui=en-us&rs=en-us&ad=us)
 
 ### Play My Emails
 
@@ -108,7 +130,7 @@ Admins can configure Briefing for their organization using [PowerShell](https://
 
 We'll continue to introduce more experiences like the above to help increase your organization's productivity.
 
-Learn more about [Microsoft Compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home).
+[Learn more about Microsoft Compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home)
 
 ## How is the delivery of Cortana enterprise services different from the delivery of other Cortana features I may have previously experienced?
 
@@ -134,7 +156,7 @@ Turn off Cortana access to your organization's Microsoft hosted data
 
 1. In the Microsoft 365 admin center, select **Settings** > **Org Settings** and select **Cortana**.
 
-2. Unselect the checkbox for **Allow these Cortana optional connected experiences to use your organization's Microsoft hosted data** to disable Cortana connected experiences.
+2. Unselect the checkbox for **Allow Cortana in Windows 10 (version 1909 and earlier), and the Cortana app on iOS and Android, to access Microsoft-hosted data on behalf of people in your organization** to disable Cortana connected experiences.
 
 3. Select **Save changes**.
 
