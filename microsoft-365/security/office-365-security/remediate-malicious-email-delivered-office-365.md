@@ -18,7 +18,7 @@ appliesto:
 
 # Remediate malicious email delivered in Office 365
 
-Remediation means taking a proscribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through Zero-hour Auto-Purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items folder*, *soft delete*, or *hard delete*. Office Advanced Threat Protection (Office ATP) P2/E5 enables security teams to mediate threats in email and collaboration functionality through manual and automated investigation.
+Remediation means taking a proscribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through Zero-hour Auto-Purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items folder*, *soft delete*, or *hard delete*. Office Advanced Threat Protection (Office ATP) P2/E5 lets security teams mediate threats in email and collaboration functionality through manual and automated investigation.
 
 > [!NOTE]
 > To remediate malicious email, security teams need the *search and purge* role assigned to them. Role assignment is done through permissions in the security and compliance center.
@@ -44,7 +44,7 @@ To do things like view message headers or download email content, you must have 
 
 ## Manual and automated remediation
 
-*Manual hunting* is when security teams identify threats manually by using the search and filtering capabilities in Threat Explorer. Manual email remediation can be triggered through any email view (Malware, Phish, or All email) after you identify a set of emails that need to be remediated.
+*Manual hunting* occurs when security teams identify threats manually by using the search and filtering capabilities in Threat Explorer. Manual email remediation can be triggered through any email view (Malware, Phish, or All email) after you identify a set of emails that need to be remediated.
 
 ![Manual hunting in Office 365 Threat Explorer by date.](../../media/tp-RemediationArticle1.png)
 
@@ -54,15 +54,15 @@ Security teams can use Threat Explorer to select emails in several ways:
 
 - Query selection: Select an entire query by using the top **select all** button. The same query is also shown in action center mail submission details.
 
-- Query selection with exclusion: Sometimes security operations teams may want to remediate emails by selecting an entire query and excluding certain emails from the query manually. To do so, an admin can use the **Select all** check box and scroll down to exclude emails manually. The query can hold a maximum 1,000 emails, and the maximum number of exclusions is 100.
+- Query selection with exclusion: Sometimes security operations teams may want to remediate emails by selecting an entire query and excluding certain emails from the query manually. To do so, an admin can use the **Select all** check box and scroll down to exclude emails manually. The query can hold a maximum of 1,000 emails. The maximum number of exclusions is 100.
 
 Once emails are selected through Threat Explorer, you can start remediation by taking direct action or by queuing up emails for an action:
 
 - Direct approval: When actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete* are selected by security personnel who have appropriate permissions, and the next steps in remediation are followed, the remediation process begins to execute the selected action. A temporary flyout shows remediation in progress.
 
-- Two-step approval: An "add to remediation" action can be taken by an admin who doesn't have appropriate permissions or who needs to wait to execute the action. In this case, the targeted emails are added to a remediation container. Approval is needed before the remediation is executed.
+- Two-step approval: An "add to remediation" action can be taken by admins who don't have appropriate permissions or who need to wait to execute the action. In this case, the targeted emails are added to a remediation container. Approval is needed before the remediation is executed.
 
-**Automated investigation and response (AIR)** actions are triggered by alerts or by security operations teams from Threat Explorer. These may include recommended remediation actions that must be approved by a security operations team. These actions are included on the **Action** tab in the automated investigation.
+**Automated investigation and response** actions are triggered by alerts or by security operations teams from Threat Explorer. These may include recommended remediation actions that must be approved by a security operations team. These actions are included on the **Action** tab in the automated investigation.
 
 ![Mail with malware in "Zapped" page showing time of Zap execution.](../../media/tp-RemediationArticle3.png)
 
@@ -76,7 +76,7 @@ Open any remediation item to view details about it, including its name, creation
 
 - **Mail submission** tab: Shows the number of emails submitted through Threat Explorer or automated investigations to be remediated. These emails can be actionable or not actionable.
 
-   [The action center with actionable and not actionable threats.](../../media/tp-RemediationArticle5.png)
+   ![The action center with actionable and not actionable threats.](../../media/tp-RemediationArticle5.png)
 
    - **Actionable**: Emails in the following cloud mailbox locations can be acted on and moved:
 
