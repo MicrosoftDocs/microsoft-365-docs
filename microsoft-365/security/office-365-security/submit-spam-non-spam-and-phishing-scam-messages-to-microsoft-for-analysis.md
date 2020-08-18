@@ -47,7 +47,12 @@ If you receive a message that passed through spam filtering that should have bee
 2. Drag and drop the junk or phishing message into the new message. This will save the junk or phishing message as an attachment in the new message. Don't copy and paste the content of the message or forward the message (we need the original message so we can inspect the message headers).
 
    > [!NOTE]
-   > <ul><li>You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing scam messages or junk email messages.</li><li>Leave the body of the new message empty.</li><li>Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.</li></ul>
+   >
+   > - You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing messages or junk email messages.
+   >
+   > - Leave the body of the new message empty.
+   >
+   > - Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.
 
 3. When you're finished, click **Send**.
 
@@ -66,7 +71,12 @@ If a message was incorrectly identified as spam, you can submit the message to t
 2. Drag and drop the misidentified message into the new message. This will save the misidentified message as an attachment in the new message. Don't copy and paste the content of the message or forward the message (we need the original message so we can inspect the message headers).
 
    > [!NOTE]
-   > <ul><li>You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing messages or junk email messages.</li><li>Leave the body of the new message empty.</li><li>Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.</li></ul>
+   >
+   > - You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing messages or junk email messages.
+   >
+   > - Leave the body of the new message empty.
+   >
+   > - Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.
 
 3. When you're finished, click **Send**.
 

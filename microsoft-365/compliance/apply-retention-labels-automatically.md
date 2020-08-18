@@ -132,6 +132,8 @@ For more information on these options, see [Tuning rules to make them easier or 
 
 You can auto-apply labels to content that satisfies certain conditions. The conditions now available support applying a label to content that contains specific words, phrases, or values of searchable properties. You can refine your query by using search operators like AND, OR, and NOT.
 
+While auto-applying labels for searchable properties, an alias for a managed property cannot be used in the query. It must be the actual name of the managed property, for example, RefinableString01.
+
 For more information on query syntax, see:
 
 - [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
@@ -184,6 +186,4 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ## Next steps
 
-Consider using retention labels with another form of automation, [event-driven retention](event-driven-retention.md). When you use this configuration, the start of retention is triggered by an event that you identify. You can use event-driven retention with an auto-policy or a label policy.
-
-See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-driven retention.
+See [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md) for an example scenario that uses an auto-apply policy with managed properties in SharePoint, and event-based retention to start the retention period.

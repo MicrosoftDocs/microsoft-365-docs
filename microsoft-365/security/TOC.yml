@@ -135,7 +135,7 @@
                   href: mtp/advanced-hunting-take-action.md
                 - name: Use shared queries
                   href: mtp/advanced-hunting-shared-queries.md
-                - name: Hunt on devices and emails
+                - name: Hunt across devices, emails, apps, and identities 
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Go hunt
                   href: mtp/advanced-hunting-go-hunt.md
@@ -187,6 +187,8 @@
                       href: mtp/advanced-hunting-emailpostdeliveryevents-table.md
                     - name: EmailUrlInfo
                       href: mtp/advanced-hunting-emailurlinfo-table.md
+                    - name: IdentityDirectoryEvents
+                      href: mtp/advanced-hunting-identitydirectoryevents-table.md
                     - name: IdentityInfo
                       href: mtp/advanced-hunting-identityinfo-table.md
                     - name: IdentityLogonEvents
@@ -194,7 +196,9 @@
                     - name: IdentityQueryEvents
                       href: mtp/advanced-hunting-identityqueryevents-table.md
                 - name: Functions
-                  items: 
+                  items:
+                    - name: AssignedIPAddresses()
+                      href: mtp/advanced-hunting-assignedipaddresses-function.md 
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
                 - name: Custom detections
@@ -492,28 +496,30 @@
             - name: Mail flow insights in the Security & Compliance Center
               href: ./office-365-security/mail-flow-insights-v2.md
               items: 
-                - name: Mail flow map report
+                - name: Auto-forwarded messages insight
+                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
+                - name: Fix possible mail loop insight
+                  href: ./office-365-security/mfi-mail-loop-insight.md
+                - name: Fix slow mail flow rules insight
+                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md  
+                - name: Mail flow map
                   href: ./office-365-security/mfi-mail-flow-map-report.md
-                - name: Top domain mail flow status insight
-                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
-                - name: SMTP Auth clients report
-                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
-                - name: Fix sender domain insight
-                  href: ./office-365-security/mfi-sender-domain-insight.md
-                - name: Non-delivery report
-                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: New domains being forwarded email insight
+                  href: ./office-365-security/mfi-new-domains-being-forwarded-email.md
+                - name: New users forwarding email insight
+                  href: ./office-365-security/mfi-new-users-forwarding-email.md
                 - name: Non-accepted domain report
                   href: ./office-365-security/mfi-non-accepted-domain-report.md
-                - name: Outbound and inbound mail flow
+                - name: Non-delivery report
+                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: Outbound and inbound mail flow insight
                   href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
-                - name: Queue alerts and Queues
+                - name: Queues insight
                   href: ./office-365-security/mfi-queue-alerts-and-queues.md
-                - name: Auto-forwarded messages report
-                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
-                - name: Mail loop insight
-                  href: ./office-365-security/mfi-mail-loop-insight.md
-                - name: Slow mail flow rules insight
-                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: SMTP Auth clients insight and report
+                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
+                - name: Top domain mail flow status insight
+                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
         - name: Security solutions
           items: 
             - name: Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations

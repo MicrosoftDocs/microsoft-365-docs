@@ -61,7 +61,7 @@ When the retention policy is retain-only, or delete-only, the content's paths ar
 
 1. **If the message is not deleted** during the retention period: At the end of the retention period, the message is moved to the SubstrateHolds folder. 
 
-2. **If the item is deleted by the user** during the period, the item is immediately moved to the SubstrateHolds folder. If a user deletes the message from there or empties the SubstrateHolds folder, the item is permanently deleted. Otherwise, the message is permanently deleted one day after being in the SubstrateHolds folder.
+2. **If the item is deleted by the user** during the period, the item is immediately moved to the SubstrateHolds folder. The message is permanently deleted one day after being in the SubstrateHolds folder.
 
 
 ## Skype for Business and Teams interop chats
@@ -99,6 +99,8 @@ We're continuously working on optimizing retention functionality in Teams. In th
 - **Teams doesn't support advanced retention**. When you create a retention policy, if you choose the [Advanced settings to identify content that meets specific conditions](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), the Teams locations are not available. Currently, retention in Teams applies to all the chat and channel message content when you select those locations.
 
 - **Teams messages in private channels aren't included when you configure a retention policy for Teams channel messages**. Currently, private channels aren't supported by retention policies. 
+
+- **Likes and other reactions are not retained for Teams chat and channel messages**. Reactions from others in the form of emoticons aren't supported by retention policies.
 
 - **Teams may take up to seven days to clean up expired messages**. A retention policy applied to Teams will delete chat and channel messages when the retention period expires. However, it may take between three and seven days to clean up these messages and permanently delete them. Also, chat and channel messages will be searchable with eDiscovery tools during the time after the retention period expires and when messages are permanently deleted.
     
