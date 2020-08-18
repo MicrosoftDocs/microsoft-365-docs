@@ -14,41 +14,55 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
+search.appverid: MET150
 description: "Learn how to manage Office Scripts settings for users in your organization."
 ---
 
 # Manage Office Scripts settings
 
-Office Scripts lets users record, edit, and run automated scripts in Excel on the web. Admins must enable this feature in the admin center before users can use it.
+Office Scripts‎ allows users to automate tasks by recording, editing, and running scripts in ‎Excel‎ on the web. ‎Office Scripts‎ works with Power Automate, and users run scripts on workbooks by using the ‎Excel‎ Online (Business) connector. Admins must turn on Office Scripts in the Microsoft 365 admin center before users can access and use the feature.
 
 ## Before you begin
 
-<!-- Include this section for how-to articles only. List anything that's required before the user begins the task. If there are multiple requirements, add them as a bulleted list. Include things like required permissions or admin roles, required licenses/plans/add-ons, system requirements, links to tasks that must be completed before beginning this one, etc. -->
+- To manage Office Scripts settings, you must be a Global admin. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+- Ensure users in your organization have a license for one of the following:
+    - Microsoft 365 Business Standard
+    - Microsoft 365 Apps for business
+    - Microsoft 365 Apps for enterprise
+    - Office 365 E3
+    - Office 365 E5
+    - Office 365 A3
+    - Office 365 A5
 
-## Heading (include multiple headings, as needed)
+## Turn on or turn off Office Scripts for your organization and manage sharing of scripts
 
-<!-- For overview articles, explain a service, technology, or functionality from a technical point of view. Overview articles are intended for new customers, but are NOT intended to define benefits or serve as a value prop. -->
-<!-- For conceptual articles, provide an in-depth explanation of a service, technology, or functionality that's fundamental to understanding and using it. -->
-<!-- For reference articles, provide things like settings, values, features, and configurations in a table format, if possible. Include brief descriptions. Reference articles are used to look up specific values or information and may be referenced frequently. -->
-<!-- For how-to articles, include step-by-step instructions for how to perform a task. Include a one- or two-sentence lead-in to the task, if needed. If your how-to article documents a scenario and contains multiple tasks, consider putting the tasks in separate articles if including them all in one article makes it too long and daunting for users. You can always chain tasks in a scenario by including a "Next steps" section (described below) that briefly describes and links to the next task. -->
+1. In the Microsoft 365 admin center, go to the **Settings** \> **Org settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services</a> tab.
 
-1. Step 1 text.
-2. Step 2 text. 
-3. Step 3 text. 
+2. Select **Office Scripts**.
 
-### Sub-heading (optional)
+3. To turn on Office Scripts for your organization, select **Let users automate their tasks in Excel on the web**. To turn off Office Scripts for your organization, clear this check box.
 
-<!-- Include sub-headings, if needed. -->
+4. If you're turning on Office Scripts, indicate who will have access to and be able to use the feature. Do one of the following:
 
-## Watch: Name of video (optional)
+    - To allow all users in your organization to access and use Office Scripts, leave **Everyone** (the default) selected. 
 
-<!-- If you include a video in your article, put it under its own H1 heading so it shows up in the "In this article" list on the right side of the article. -->
+    - To allow only members of certain Azure Active Directory Security groups or Microsoft 365 groups to access and use Office Scripts, select **Specific group**, and then enter the name or email alias of each group to add them to the allow list.
 
-## Next steps (optional)
+5. To allow users with access to Office Scripts to share their scripts with others in your organization, select **Let users with access to office Scripts share their scripts with others in the organization**. Sharing scripts outside of an organization is not allowed.
+ 
+6. If you allow users to share their scripts, indicate who they're allowed to share them with:
+    
+    - To allow those with access to Office Scripts to share the scripts they create with all users in your organization, leave **Everyone** (the default) selected.
 
-<!-- Include this section for how-to articles only, if needed. Recommend the next logical action or actions to take after completing the task(s) outlined in the article. Include links to relevant how-to articles (such as the next task to complete in a scenario), links to recommended reading, or any other info that you think users should or might want to do next. -->
+    - To allow those with access to Office Scripts to share the scripts they create only with members of certain Azure Active Directory Security groups or Microsoft 365 groups, select **Specific group**, and then enter the name or email alias of each group to add them to the allow list.
+
+5. Select **Save**.
+
+    Note that it can take up to 48 hours for changes to Office Script settings to take effect.
+
+## Next steps
+
+We recommend reviewing your existing data loss prevention (DLP) policies to ensure your organization's data remains protected while users use ‎Office Scripts‎. For more information, see [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
 
 ## Related content
 
