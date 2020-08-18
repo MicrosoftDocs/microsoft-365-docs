@@ -92,7 +92,7 @@ To set the SharePoint and OneDrive organization level default link settings
 
 ## SharePoint site level sharing settings
 
-If you're sharing files and fodlers that are in a SharePoint site, you also need to check the site-level sharing settings for that site.
+If you're sharing files and folders that are in a SharePoint site, you also need to check the site-level sharing settings for that site.
 
 ![Screenshot of SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
 
