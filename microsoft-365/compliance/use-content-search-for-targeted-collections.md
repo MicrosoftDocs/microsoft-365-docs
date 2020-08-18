@@ -185,7 +185,7 @@ To display a list of mailbox folders or site documentlink (path) names:
 
 4. Enter the information that the script prompts you for.
     
-    The script displays a list of mailbox folders or site folders for the specified user. Let this window open so that you can copy a folder ID or documentlink name and paste it in to a search query in Step 2.
+    The script displays a list of mailbox folders or site folders for the specified user. Leave this window open so that you can copy a folder ID or documentlink name and paste it in to a search query in Step 2.
     
     > [!TIP]
     > Instead of displaying a list of folders on the computer screen, you can re-direct the output of the script to a text file. This file will be saved to the folder where the script is located. For example, to redirect the script output to a text file, run the following command in Step 3:  `.\GetFolderSearchParameters.ps1 > StacigFolderIds.txt` Then you can copy a folder ID or documentlink from the file to use in a search query.
