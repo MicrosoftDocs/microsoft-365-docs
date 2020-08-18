@@ -30,6 +30,9 @@ With [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), your orga
 
 This article describes how to specify a list of URLs that are excluded from ATP Safe Links scanning, and a few important points to keep in mind.
 
+> [!NOTE]
+> If your organization use Safe Links policies, the "do not rewrite" list is the only supported method for third party phishing tests.
+
 ## Set up a "do not rewrite" list
 
 ATP Safe Links protection uses several lists, including your organization's blocked URLs list and the "do not rewrite" lists for exceptions. If you have the necessary permissions, you can set up your custom "do not rewrite" lists. You do this when you add or edit Safe Links policies that apply to specific recipients in your organization.
