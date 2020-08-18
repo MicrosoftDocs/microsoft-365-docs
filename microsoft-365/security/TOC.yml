@@ -593,9 +593,9 @@
               href: ./office-365-security/sending-mail-to-office-365.md
             - name: Services for non-customers
               href: ./office-365-security/services-for-non-customers.md
-            - name: Recommended settings for configuring EOP and Office 365 ATP Security
             - name: Best practices for configuring EOP
-              href: ./office-365-security/best-practices-for-configuring-eop.md           
+              href: ./office-365-security/best-practices-for-configuring-eop.md
+            - name: Recommended settings for configuring EOP and Office 365 ATP Security
               href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: Sample script for applying EOP settings to multiple tenants
               href: ./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md
