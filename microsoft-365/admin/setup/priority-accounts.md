@@ -17,17 +17,14 @@ description: "Monitor failed and delayed emailed messages sent to or from accoun
 
 # Manage and monitor priority accounts
 
-> [!NOTE]
-> The priority accounts feature that's described in this topic is available only to organizations that meet both of the following requirements:
-
-- Office 365 E3 or Microsoft 365 E3, or Office 365 E5 or Microsoft 365 E5.
-- At least 10,000 licenses and at least 50 monthly active Exchange Online users.
-
 As the admin of a Microsoft 365 organization, you can now monitor failed or delayed email messages sent to your users who have a high business impact, like your CEO. You can enable this by adding users to your priority accounts list. Priority accounts are accounts that are essential to running your organization. Add executives, leaders, managers or other users who have access to sensitive or high priority information.
 
 ## Access priority accounts
 
-The Priority accounts feature is available to use, by default, for Office 365 Education A3, Office 365 A5, and Office 365 Business Premium subscriptions. (PLACEHOLDER - NEED UPDATED INFO)
+The priority accounts feature that's described in this topic is available only to organizations that meet both of the following requirements:
+
+- Office 365 E3 or Microsoft 365 E3, or Office 365 E5 or Microsoft 365 E5.
+- At least 10,000 licenses and at least 50 monthly active Exchange Online users.
 
 ## Add priority accounts from the Setup page
 
@@ -59,7 +56,7 @@ Add priority accounts from the Active users page.
 
 ## Monitor your priority accounts
 
-You can monitor the email status of your priority accounts in the Microsoft 365 admin center on the **Setup** page. You can actively monitor up to 250 critical accounts.
+You can monitor the email status of your priority accounts in the Microsoft 365 admin center on the **Setup** page. You can actively monitor up to 250 accounts.
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
@@ -67,7 +64,7 @@ You can monitor the email status of your priority accounts in the Microsoft 365 
 
 ## Email issues for priority accounts
 
-You can track email issues for priority accounts by going to the the **Priority accounts with email issues** report in the Exchange admin center. For info on how to view and troubleshoot email issues for your priority accounts, check out [Email issues for priority accounts](https://review.docs.microsoft.com/en-us/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts?branch=Priority-chrisda).
+You can track email issues for priority accounts by going to the the **Email issues for priority accounts** report in the Exchange admin center. For more info, check out [Email issues for priority accounts](https://review.docs.microsoft.com/en-us/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts?branch=Priority-chrisda).
 
 ## Remove a user from the priority accounts list
 
