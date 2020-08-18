@@ -24,8 +24,6 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-
-
 The `DeviceRegistryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about the creation and modification of registry entries. Use this reference to construct queries that return information from this table.
 
 >[!TIP]
