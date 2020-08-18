@@ -312,14 +312,6 @@
                       href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
                 - name: SIEM server integration
                   href: ./office-365-security/siem-server-integration.md
-                - name: Exchange Online Protection overview
-                  href: ./office-365-security/exchange-online-protection-overview.md
-                  items:           
-                    - name: Set up your EOP service
-                      href: ./office-365-security/set-up-your-eop-service.md
-                      items: 
-                        - name: Best practices for configuring EOP
-                          href: ./office-365-security/best-practices-for-configuring-eop.md                     
         - name: Overview
           items: 
             - name: Security roadmap
@@ -355,6 +347,9 @@
                   href: ./office-365-security/threat-explorer-views.md
             - name: How threat investigation and response works
               href: ./office-365-security/office-365-ti.md
+            - name: Exchange Online Protection overview
+              href: ./office-365-security/exchange-online-protection-overview.md
+                  items:          
             - name: EOP features
               href: ./office-365-security/eop-features.md 
             - name: Permissions in standalone EOP
@@ -507,6 +502,8 @@
               href: ./office-365-security/threat-trackers.md
             - name: Attack Simulator in Office 365 ATP
               href: ./office-365-security/attack-simulator.md
+            - name: Set up your EOP service
+              href: ./office-365-security/set-up-your-eop-service.md     
             - name: Manage mail users in standalone EOP
               href: ./office-365-security/manage-mail-users-in-eop.md
             - name: Manage groups in standalone EOP
@@ -598,14 +595,15 @@
             - name: Services for non-customers
               href: ./office-365-security/services-for-non-customers.md
             - name: Recommended settings for configuring EOP and Office 365 ATP Security
+            - name: Best practices for configuring EOP
+              href: ./office-365-security/best-practices-for-configuring-eop.md           
               href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: Sample script for applying EOP settings to multiple tenants
               href: ./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md
             - name: Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
               href: ./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
-                        - name: Backscatter in EOP
-                          href: ./office-365-security/backscatter-messages-and-eop.md
-
+            - name: Backscatter in EOP
+              href: ./office-365-security/backscatter-messages-and-eop.md
             - name: Mail flow rules (transport rules) in standalone EOP
               href: ./office-365-security/mail-flow-rules-transport-rules-0.md              
             - name: Mail flow intelligence in EOP
