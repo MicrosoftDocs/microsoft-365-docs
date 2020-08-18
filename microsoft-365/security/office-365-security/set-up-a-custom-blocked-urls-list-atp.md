@@ -87,7 +87,7 @@ While you add URLs to your list, keep the following points in mind:
 |
 
 > [!NOTE]
-> By default, you can only add 500 URLs to the blocked URL list in the Office 365 ATP Safe Links default policy.
+> By default, you can only add 500 URLs to the blocked URL list in the Office 365 ATP Safe Links default policy. Also individual URL in the list can not exceed 128 characters while the entire Blocked URL list cannot exceed 10K characters.
 
 ## How to define exceptions for certain users in an organization
 
