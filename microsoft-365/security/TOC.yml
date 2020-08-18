@@ -345,11 +345,10 @@
               items: 
                 - name: Threat Explorer views
                   href: ./office-365-security/threat-explorer-views.md
-            - name: How threat investigation and response works
+              - name: How threat investigation and response works
               href: ./office-365-security/office-365-ti.md
             - name: Exchange Online Protection overview
-              href: ./office-365-security/exchange-online-protection-overview.md
-                  items:          
+              href: ./office-365-security/exchange-online-protection-overview.md  
             - name: EOP features
               href: ./office-365-security/eop-features.md 
             - name: Permissions in standalone EOP
