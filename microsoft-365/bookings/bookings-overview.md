@@ -46,3 +46,4 @@ Watch this video or follow the steps below to set up Bookings.
 - [Customize and publish your booking page](customize-booking-page)
 - [Create a manual booking](create-a-manual-booking.md)
 - [Connect to Facebook](connect-to-facebook.md)
+- [Get the Bookings app for iOS and Android](get-bookings-app.md)
