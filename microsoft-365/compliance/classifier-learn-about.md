@@ -27,7 +27,7 @@ This method requires human judgment and action. An admin may either use the pre-
 
 ## Automated pattern matching
 
-This category of classification mechanisms includes finding content by:
+This category of classification mechanisms include finding content by:
 
 - Keywords or metadata values (keyword query language).
 - Using previously identified patterns of sensitive information like social security, credit card or bank account numbers [(Sensitive information type entity definitions)](sensitive-information-type-entity-definitions.md).
@@ -49,8 +49,6 @@ Sensitivity labels can use classifiers as conditions, see [Apply a sensitivity l
 
 > [!IMPORTANT]
 > Classifiers only work with items that are not encrypted and are in English.
-
-
 
 ## Types of classifiers
 
@@ -108,14 +106,14 @@ These appear in the **Microsoft 365 compliance center** > **Data classification 
 
 ### Custom classifiers
 
-When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There's significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs. For more detail on how to use a pre-trained classifier, see [Using a pre-trained classifier](classifier-using-a-ready-to-use-classifier.md).
+When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There's significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs.
 
 > [!IMPORTANT]
 > Only the user who creates a custom classifier can train and review predictions made by that classifier.
 
 #### Process flow for creating custom classifiers
 
-Creating and publishing a classifier for use in compliance solutions, such as retention policies and communication supervision, follows this flow. For more detail on creating a custom trainable classifier see, [Creating a custom classifier](classifier-creating-a-trainable-classifier.md).
+Creating and publishing a classifier for use in compliance solutions, such as retention policies and communication supervision, follows this flow. For more detail on creating a custom trainable classifier see, [Creating a custom classifier](classifier-get-started-with.md).
 
 ![process flow custom classifier](../media/classifier-trainable-classifier-flow.png)
 
