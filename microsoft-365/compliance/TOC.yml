@@ -6,8 +6,6 @@
       href: compliance-quick-tasks.md
     - name: What's new in the compliance center
       href: whats-new.md
-    - name: Recent updates to compliance content
-      href: recently-updated-topics-mcc.md
     - name: Microsoft 365 compliance center
       href: microsoft-365-compliance-center.md
     - name: Microsoft 365 solution catalog
@@ -341,10 +339,14 @@
           href: https://go.microsoft.com/fwlink/?linkid=867039
     - name: Records management
       items: 
-        - name: Records management
+        - name: Learn about records management
           href: records-management.md
-        - name: Records
-          href: records.md
+        - name: Get started with records management
+          href: get-started-with-records-management.md
+        - name: Declare records
+          href: declare-records.md
+        - name: Use record versioning
+          href: record-versioning.md
 - name: Manage eDiscovery
   items:
     - name: eDiscovery in Microsoft 365
