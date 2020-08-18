@@ -343,26 +343,7 @@
                         - name: Manage mail users in standalone EOP
                           href: ./office-365-security/manage-mail-users-in-eop.md
                         - name: Manage groups in standalone EOP
-                          href: ./office-365-security/manage-groups-in-eop.md
-                    - name: Mail flow in EOP
-                      href: ./office-365-security/mail-flow-in-eop.md
-                      items: 
-                        - name: Mail flow rules (transport rules) in standalone EOP
-                          href: ./office-365-security/mail-flow-rules-transport-rules-0.md
-                        - name: Use mail flow rules to filter bulk email in EOP
-                          href: ./office-365-security/use-transport-rules-to-configure-bulk-email-filtering.md
-                        - name: Use mail flow rules to block messages with executable attachments in EOP
-                          href: ./office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
-                        - name: Reporting and message trace in standalone EOP
-                          href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
-                        - name: Mail flow intelligence in EOP
-                          href: ./office-365-security/mail-flow-intelligence-in-office-365.md
-                    - name: Troubleshooting and support for EOP
-                      items: 
-                        - name: Troubleshooting mail sent to Microsoft 365
-                          href: ./office-365-security/troubleshooting-mail-sent-to-office-365.md
-                        - name: Help and support for EOP
-                          href: ./office-365-security/help-and-support-for-eop.md     
+                          href: ./office-365-security/manage-groups-in-eop.md                         
         - name: Overview
           items: 
             - name: Security roadmap
@@ -404,6 +385,8 @@
               href: ./office-365-security/feature-permissions-in-eop.md   
             - name: Exchange admin center in standalone EOP
               href: ./office-365-security/exchange-admin-center-in-exchange-online-protection-eop.md
+            - name: Mail flow in EOP
+              href: ./office-365-security/mail-flow-in-eop.md        
         - name: Evaluate
         - name: Plan
         - name: Deploy
@@ -538,6 +521,12 @@
               href: ./office-365-security/threat-trackers.md
             - name: Attack Simulator in Office 365 ATP
               href: ./office-365-security/attack-simulator.md
+            - name: Use mail flow rules to filter bulk email in EOP
+              href: ./office-365-security/use-transport-rules-to-configure-bulk-email-filtering.md
+            - name: Use mail flow rules to block messages with executable attachments in EOP
+              href: ./office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
+            - name: Reporting and message trace in standalone EOP
+              href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
         - name: How-to
           items: 
             - name: Install and use the Junk Email Reporting add-in
@@ -618,6 +607,14 @@
               href: ./office-365-security/sending-mail-to-office-365.md
             - name: Services for non-customers
               href: ./office-365-security/services-for-non-customers.md
+            - name: Mail flow rules (transport rules) in standalone EOP
+              href: ./office-365-security/mail-flow-rules-transport-rules-0.md              
+            - name: Mail flow intelligence in EOP
+              href: ./office-365-security/mail-flow-intelligence-in-office-365.md  
+            - name: Troubleshooting mail sent to Microsoft 365
+              href: ./office-365-security/troubleshooting-mail-sent-to-office-365.md
+            - name: Help and support for EOP
+              href: ./office-365-security/help-and-support-for-eop.md     
         - name: Employee training resources
     - name: Microsoft 365 for Enterprise
       href: https://docs.microsoft.com/microsoft-365/enterprise
