@@ -23,14 +23,16 @@ description: "Declare records by using retention labels."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-You use [retention labels](retention.md#retention-labels) to mark content as a record. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.
+To declare items as a record, you use [retention labels](retention.md#retention-labels) that mark the content as a record. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.
 
 ## Configuring retention labels to declare records
 
-When you create a [retention label](retention.md#retention-labels), select the option to mark the content as a record.
+When you create or configure a retention label, select the option to mark the content as a record.
 
 >[!NOTE] 
 > The option to mark the content as a record is not available when you create or configure retention labels from **Information Governance** in the Microsoft 365 compliance center. Instead, you must use **Records Management**.
+
+To create a new retention label that marks the content as a record:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Records Management** \> **File Plan**. On the **File plan** page, select **Create a label**.
 
@@ -57,6 +59,4 @@ Example of a document marked as record by using a retention label:
 
 ## Next steps
 
-If you need to update documents that are records, see [Use record versioning to update records stored in SharePoint or OneDrive](record-versioning.md).
-
-To learn about the disposition of records, see [Disposing of content](disposition.md).
+For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).
