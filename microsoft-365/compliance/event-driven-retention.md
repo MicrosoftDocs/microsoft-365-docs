@@ -38,7 +38,7 @@ Examples for using event-driven retention:
     
 Event-driven retention is typically used as part of a records-management process. This means that:
   
-- Labels based on events also usually classify content as a record. For more information, see [Learn about records](records.md).
+- Labels based on events also usually classify content as a record, as a part of a records management solution. For more information, see [Learn about records management](records-management.md).
 
 - A document that's been classified as a record but whose event trigger has not yet happened is retained indefinitely (records can't be permanently deleted), until an event triggers that document's retention period.
     
@@ -80,7 +80,7 @@ High-level workflow for event-driven retention:
 ![Diagram of workflow for setting up event-driven retention](../media/event-based-retention-process.png)
   
 > [!TIP]
-> See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-driven retention.
+> See [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-driven retention.
 
 ### Step 1: Create a label whose retention period is based on an event
 

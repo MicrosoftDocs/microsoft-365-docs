@@ -28,8 +28,10 @@
           href: service-description/device-services.md
         - name: Device configuration
           href: service-description/device-policies.md
-        - name: Security
+        - name: Security technologies
           href: service-description/security.md
+        - name: Security operations
+          href: service-description/security-operations.md
         - name: Updates
           href: service-description/updates.md
         - name: Support
@@ -98,11 +100,16 @@
           items: 
             - name: Microsoft Project and Microsoft Visio
               href: get-started/project-visio.md
-            - name: New Microsoft Edge apps
+            - name: New Microsoft Edge
               href: get-started/edge-browser-app.md
     - name: Working with Microsoft Managed Desktop
       href: working-with-managed-desktop/index.md
       items: 
+        - name: Work with reports
+          href: working-with-managed-desktop/reports.md
+          items:
+            - name: Device inventory report
+              href: working-with-managed-desktop/device-inventory-report.md
         - name: Work with insights
           href: working-with-managed-desktop/insights.md
           items: 

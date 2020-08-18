@@ -28,11 +28,11 @@ Cortana, your personal productivity assistant, offers AI-powered experiences to 
 
 As a personal productivity assistant, Cortana is designed to deliver features that safely and securely process and reason over Office 365 data like emails, files, chats, etc., to save time, increase efficiency, and enhance your users’ productivity.
 
-Moving forward, we're focusing Cortana on enterprise productivity. 
+Moving forward, we're focusing Cortana on enterprise productivity.
 
 - Consistent with other Office 365 services, Cortana enterprise services meet the same enterprise-level privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
-- New Microsoft 365 experiences, such as the Briefing email and Play My Emails, will be enabled using Cortana enterprise services and fully comply with those promises. These features are currently available in the English (United States) market for users with mailboxes in the US geo, and for employees of multi-national corporations with US-based mailboxes.
+- New Microsoft 365 experiences, such as the Briefing email and Play My Emails, will be enabled using Cortana enterprise services and fully comply with those promises. These features are currently available in the English (United States) market for users with mailboxes in the US geo, and for employees of multi-national corporations with US-based mailboxes. For more information on finding the usage location, please visit [View additional property values for accounts](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts).
 
 - Users may connect to Cortana enterprise services described here through Cortana in Windows 10 (version 2004 and later), as well as client applications, such as Outlook for iOS and Android, subject to separate licensing terms. 
 
@@ -50,13 +50,13 @@ Consistent with other Office 365 services, Cortana enterprise services are secur
 
 The table below describes the data handling for Cortana enterprise services.
 
-|**Name**|**Description**|
+| Name | Description |
 |:-----|:-----|
-|**Storage**  <br/> |Customer Data is stored on Microsoft servers inside the Office 365 cloud. Your data is part of your tenant. <br/> Speech audio is not retained.  <br/> |
+|**Storage**  <br/> |Customer Data is stored on Microsoft servers inside the Office 365 cloud. Your data is part of your tenant. <br/><br/>Speech audio is not retained.  <br/> |
 |**Stays in Geo**  <br/> |Customer Data is stored on Microsoft servers inside the Office 365 cloud in Geo. Your data is part of your tenant.  <br/> |
-|**Retention**  <br/> |Customer Data is deleted when the account is closed by the tenant administrator or when a GDPR Data Subject Rights deletion request is made. <br/> Speech audio is not retained.  <br/> |
+|**Retention**  <br/> |Customer Data is deleted when the account is closed by the tenant administrator or when a GDPR Data Subject Rights deletion request is made. <br/><br/>Speech audio is not retained.  <br/> |
 |**Processing and Confidentiality**  <br/> |Personnel engaged in the processing of Customer Data and personal data (i) will process such data only on instructions from Customer, and (ii) will be obligated to maintain the confidentiality and security of such data even after their engagement ends.  <br/> |
-|**Usage**  <br/> |Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. Machine learning to develop and improve models is one of those purposes. Machine learning is done inside the Office 365 cloud, and there is no human viewing, review or labeling of your Customer Data. <br/> Your data is not used to target advertising.  <br/> |
+|**Usage**  <br/> |Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. Machine learning to develop and improve models is one of those purposes. Machine learning is done inside the Office 365 cloud, and there is no human viewing, review or labeling of your Customer Data. <br/><br/>Your data is not used to target advertising.  <br/> |
 
 ## Cortana enterprise services in Microsoft 365 experiences
 
@@ -154,7 +154,7 @@ Turn off Cortana access to your organization's Microsoft hosted data
 
 1. In the Microsoft 365 admin center, select **Settings** > **Org Settings** and select **Cortana**.
 
-2. Unselect the checkbox for **Allow these Cortana optional connected experiences to use your organization's Microsoft hosted data** to disable Cortana connected experiences.
+2. Unselect the checkbox for **Allow Cortana in Windows 10 (version 1909 and earlier), and the Cortana app on iOS and Android, to access Microsoft-hosted data on behalf of people in your organization** to disable Cortana connected experiences.
 
 3. Select **Save changes**.
 

@@ -34,12 +34,12 @@ Example showing available sensitivity labels in Excel, from the **Home** tab on 
 
 ![Sensitivity label on Excel ribbon and status bar](../media/Sensitivity-label-in-Excel.png)
 
-Sensitivity labels are supported for tenants in the global (public) cloud only. Currently, sensitivity labels aren't supported for tenants in other clouds such as [national clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
+To apply sensitivity labels, users must be signed in with their Microsoft 365 work or school account.
 
 > [!NOTE]
-> Sensitivity labels aren't yet available in US Government Community (GCC) organizations.
-
-To apply sensitivity labels, users must be signed in to Office with their work or school account.
+> For US Government Community (GCC and GCC-HC) tenants, sensitivity labels are currently supported only for the Azure Information Protection unified labeling client and scanner. 
+> 
+> For more information, see the blog post, [Announcing General Availability of Unified Labeling in GCC and GCC-H Environments](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-general-availability-of-unified-labeling-in-gcc-and/ba-p/1563215).
 
 You can use sensitivity labels to:
   

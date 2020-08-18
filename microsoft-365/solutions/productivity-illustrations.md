@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: 
 - M365-collaboration
 - M365-security-compliance
-- M365solutions
 ms.custom: 
 f1.keywords: NOCSH
 ---
@@ -52,16 +51,6 @@ Depending on your environment, some tools are better suited for certain architec
 |[![Thumb image for Microsoft Defender ATP deployment strategy](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Updated February 2020| The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li>
 
 
-<a name="m365foundationinfra"></a>
-### Microsoft 365 Enterprise Foundation Infrastructure
-
-Get an at-a-glance view of the [foundation infrastructure](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure) for Microsoft 365 Enterprise to begin your deployment.
-  
-|**Item**|**Description**|
-|:-----|:-----|
-|[![Thumbnail image of the Microsoft 365 Enterprise Foundation Infrastructure poster](../media/solutions-architecture-center/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [View online](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365EnterpriseFoundInfra.pdf) <br/> Updated December 2019| This poster summarizes each phase of the foundation infrastructure in terms of goals, features and tools, design decisions, configuration results, onboarding, and ongoing monitoring and updates. <br/>| 
-
-   
 <a name="BKMK_O365IDP"></a>
 ### Identity and device protection for Office 365
 

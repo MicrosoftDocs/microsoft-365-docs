@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-- M365solutions
+- m365solution-remotework
 ms.custom:
 description: Use Microsoft 365 security and compliance services to protect your apps, data, and devices for remote workers.
 ---
@@ -65,7 +65,7 @@ Comply with internal policies or regulatory requirements with these compliance f
 | Compliance Manager | Manage regulatory compliance activities related to Microsoft cloud services with this workflow-based risk assessment tool in the Microsoft Service Trust Portal. | Microsoft 365 E3 or E5 |
 | Compliance Score (preview) | See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft 365 Compliance Center. | Microsoft 365 E3 or E5 |
 | Communication Compliance  | Detect, capture, and take remediation actions for inappropriate messages in your organization. | Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons |
-| Insider Risk Management |  Detect, investigate, and act on malicious and inadvertent activities in your organization. Microsoft 365 can detect these kinds of activities even when a worker is using an unmanaged device. | Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons |
+| Insider Risk Management |  Detect, investigate, and act on malicious and inadvertent risks in your organization. Microsoft 365 can detect these kinds of risks even when a worker is using an unmanaged device. | Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons |
 ||||
 
 See [Top 12 tasks for security teams to support working from home](../security/top-security-tasks-for-remote-work.md) for more information.

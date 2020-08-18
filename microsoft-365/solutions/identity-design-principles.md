@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - M365-security-compliance
-- M365solutions
 ms.custom: 
 f1.keywords: NOCSH
 ---
@@ -22,7 +21,7 @@ In this article, [Alex Shteynberg](https://www.linkedin.com/in/alex-shteynberg/)
 
 ## About the author
 
-:::image type="content" source="../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg" alt-text="Alex Shteynberg photo":::
+![Alex Shteynberg photo](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)
 
 I am a Principal Technical Architect at the New York [Microsoft Technology Center](https://www.microsoft.com/mtc?rtc=1). I mostly work with large customers and complex requirements. My viewpoint and opinions are based on these interactions and may not apply to every situation. However, in my experience, if we can help customers with the most complex challenges, we can help all customers. 
 
@@ -102,7 +101,8 @@ Some customers enable federation + PHS mainly for:
 
 I often walk customers through client authentication flow to clarify some misconceptions. The result looks like the picture below, which is not as good as the interactive process of getting there.
 
-:::image type="content" source="../media/solutions-architecture-center/identity-beyond-whiteboard-example.png" alt-text="example whiteboard conversation":::
+
+![Example whiteboard conversation](../media/solutions-architecture-center/identity-beyond-whiteboard-example.png)
 
 This type of whiteboard drawing illustrates where security policies are applied within the flow of an authentication request. In this example, policies enforced through Active Directory Federation Service (AD FS) are applied to the first service request, but not subsequent service requests. This is at least one reason to move security controls to the cloud as much as possible.
 
@@ -118,7 +118,7 @@ Per [Wikipedia](https://en.wikipedia.org/wiki/Authorization), "to authorize" is 
 
 The policy engine of Azure AD is implemented using [Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). This system depends on information from a variety of other threat detection systems to make dynamic decisions. A simple view would be something like the following illustration.
 
-:::image type="content" source="../media/solutions-architecture-center/identity-and-beyond-illustration-3.png" alt-text="Policy engine in Azure AD":::
+![Policy engine in Azure AD](../media/solutions-architecture-center/identity-and-beyond-illustration-3.png)
 
 Combining all these signals together allows for dynamic policies like these:
 - If a threat is detected on your device, your access to data will be reduced to web only without the ability to download.
@@ -145,12 +145,11 @@ Azure AD has detailed [audit and reporting](https://docs.microsoft.com/azure/act
 
 Don't Panic! This does not mean Exchange is being deprecated (or SharePoint, etc.) It is still a core service. What I mean is, for quite some time now, technology providers have been transitioning user experiences (UX) to encompass components of multiple services. In Microsoft 365, a simple example is "[modern attachments](https://support.office.com/article/Attach-files-or-insert-pictures-in-Outlook-email-messages-BDFAFEF5-792A-42B1-9A7B-84512D7DE7FC)" where attachments to email are stored in SharePoint Online or OneDrive for Business. 
 
-:::image type="content" source="../media/solutions-architecture-center/modern-attachments.png" alt-text="attaching a file to an email":::
-
+![Attaching a file to an email](../media/solutions-architecture-center/modern-attachments.png)
 
 Looking at the Outlook client you can see many services that are "connected" as part of this experience, not just Exchange. This includes Azure AD, Microsoft Search, Apps, Profile, compliance, and Office 365 groups. 
 
-:::image type="content" source="../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png" alt-text="Outlook interface with callouts":::
+![Outlook interface with callouts](../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png)
 
 Read about [Microsoft Fluid Framework](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-ignite-blog-microsoft-fluid-framework-preview/ba-p/978268) for preview of upcoming capabilities. In preview now, I can read and reply to Teams conversations directly in Outlook. In fact, the [Teams client](https://products.office.com/microsoft-teams/download-app) is one of the more prominent examples of this strategy. 
 
@@ -304,7 +303,7 @@ It is important to understand relationships between various services in the same
 
 Azure Role-Based Access Control (RBAC) enables fine-grained access management for Azure. Using RBAC, you can manage access to resources by granting users the fewest permissions needed to perform their jobs. Details are out of scope for this document, but for more information on RBAC, see [What is role-based access control (RBAC) in Azure?](https://docs.microsoft.com/azure/role-based-access-control/overview) RBAC is important but only part of the governance considerations for Azure. [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/) is a great starting point to learn more. I like how my friend, Andres Ravinet walks customers step-by-step though various components to decide on the approach. High-level view for various elements (not as good as the process to get to actual customer model) is something like this:
 
-:::image type="content" source="../media/solutions-architecture-center/identity-beyond-illustration-5.png" alt-text="high-level view of Azure components for delegated administration":::
+![High-level view of Azure components for delegated administration](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
 
 As you can see from above picture, many other services should be considered as part of the design (ex.: [Azure Policies](https://docs.microsoft.com/azure/governance/policy/overview), [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview), [Management Groups](https://docs.microsoft.com/azure/governance/management-groups/), etc.)
 
