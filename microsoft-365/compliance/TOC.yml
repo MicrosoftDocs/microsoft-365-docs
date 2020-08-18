@@ -6,8 +6,6 @@
       href: compliance-quick-tasks.md
     - name: What's new in the compliance center
       href: whats-new.md
-    - name: Recent updates to compliance content
-      href: recently-updated-topics-mcc.md
     - name: Microsoft 365 compliance center
       href: microsoft-365-compliance-center.md
     - name: Microsoft 365 solution catalog
@@ -243,7 +241,7 @@
   items: 
     - name: Manage information governance
       href: manage-information-governance.md
-    - name: Import data
+    - name: Import mailbox data
       items: 
         - name: Overview of importing PST files
           href: importing-pst-files-to-office-365.md
@@ -251,8 +249,6 @@
           href: use-network-upload-to-import-pst-files.md
         - name: Use drive shipping to import PST files
           href: use-drive-shipping-to-import-pst-files-to-office-365.md
-        - name: Use the PST Collection tool to find, copy, and delete PST files
-          href: find-copy-and-delete-pst-files-in-your-organization.md
         - name: Filter data when importing PST files
           href: filter-data-when-importing-pst-files.md
         - name: FAQ about importing PST files
@@ -343,10 +339,14 @@
           href: https://go.microsoft.com/fwlink/?linkid=867039
     - name: Records management
       items: 
-        - name: Records management
+        - name: Learn about records management
           href: records-management.md
-        - name: Records
-          href: records.md
+        - name: Get started with records management
+          href: get-started-with-records-management.md
+        - name: Declare records
+          href: declare-records.md
+        - name: Use record versioning
+          href: record-versioning.md
 - name: Manage eDiscovery
   items:
     - name: eDiscovery in Microsoft 365
