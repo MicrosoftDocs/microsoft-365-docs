@@ -38,13 +38,13 @@ description: "Learn how to route traffic to an existing public website hosted ou
 
 4. Select **+ New custom record** and enter the following: 
     
-  - For **DNS type** enter: **A (Address)**
+   - For **DNS type** enter: **A (Address)**
     
-  - For **Host name or Alias**, type the following: **@**
+   - For **Host name or Alias**, type the following: **@**
     
-  - For **IP Address**, type the static IP address for your website where it's currently hosted (for example, 172.16.140.1). 
+   - For **IP Address**, type the static IP address for your website where it's currently hosted (for example, 172.16.140.1). 
     
-    This must be a  *static*  IP address for the website, not a  *dynamic*  IP address. Check with site where your website is hosted to make sure you can get a static IP address for your public website. 
+   This must be a  *static*  IP address for the website, not a  *dynamic*  IP address. Check with site where your website is hosted to make sure you can get a static IP address for your public website. 
     
 5. Select **Save**. 
     
@@ -52,11 +52,11 @@ In addition, you can create a CNAME record to help customers find your website.
   
 1. Select **+ New custom record** and enter the following: 
     
-  - For **DNS type** enter: **CNAME (Alias)**
+   - For **DNS type** enter: **CNAME (Alias)**
     
-  - For **Host name or Alias**, type the following: **www**
+   - For **Host name or Alias**, type the following: **www**
     
-  - For **Points to address**, type the fully qualified domain name (FQDN) for your website (for example, contoso.com). 
+   - For **Points to address**, type the fully qualified domain name (FQDN) for your website (for example, contoso.com). 
     
 2. Select **Save**. 
     
