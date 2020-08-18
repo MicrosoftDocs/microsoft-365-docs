@@ -22,7 +22,7 @@ description: "Monitor and manage the disposal of content, whether you use a disp
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage disposition reviews and view [records](records.md) that have been automatically deleted at the end of their retention period. 
+Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage disposition reviews and view [records](records-management.md#records) that have been automatically deleted at the end of their retention period. 
 
 ## Prerequisites for viewing content dispositions
 
@@ -119,7 +119,9 @@ Content awaiting a disposition review is deleted only after a reviewer chooses t
 ## Disposition of records
 
 > [!NOTE]
-> The ability to see records that were automatically deleted without a disposition review is still rolling out to tenants so you might not see all disposed items during this rollout period.
+> The rollout for proof of disposal for records in SharePoint and OneDrive is complete. You will see the list of retention labels that marked content as records for SharePoint and OneDrive in the Disposition section of the Records Management page in the Microsoft 365 compliance center. Under these labels, you can see the list of items in SharePoint and OneDrive that were disposed automatically or after a disposition review.
+>
+> Proof of disposal for records in Exchange is not yet active. When this rollout begins and when it is complete, we will update this note.
 
 Use the **Disposition** tab from the **Records Management** page to identify records that are automatically deleted. These items display **Records Disposed** in the **Type** column. For example:
 
