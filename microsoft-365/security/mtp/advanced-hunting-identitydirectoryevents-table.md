@@ -1,7 +1,7 @@
 ---
-title: IdentityQueryEvents table in the advanced hunting schema
-description: Learn about Active Directory query events in the IdentityQueryEvents table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, IdentityQueryEvents, Azure AD, Active Directory, Azure ATP, identities, LDAP queries
+title: IdentityDirectoryEvents table in the advanced hunting schema
+description: Learn about domain controller and Active Directory events in the IdentityDirectoryEvents table of the advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, IdentityDirectoryEvents, domain controller, Active Directory, Azure ATP, identities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# IdentityQueryEvents
+# IdentityDirectoryEvents
 
 **Applies to:**
 - Microsoft Threat Protection
 
-The `IdentityQueryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about queries performed against Active Directory objects, such as users, groups, devices, and domains. Use this reference to construct queries that return information from this table.
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
+The `IdentityDirectoryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains events involving an on-premises domain controller running Active Directory (AD). This table captures various identity-related events, like password changes, password expiration, and user principal name (UPN) changes. It also captures system events on the domain controller, like scheduling of tasks and PowerShell activity. Use this reference to construct queries that return information from this table.
 
 >[!TIP]
 > For detailed information about the events types (`ActionType` values) supported by a table, use the [built-in schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) available in the security center.
@@ -36,9 +38,12 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | datetime | Date and time when the event was recorded |
 | `ActionType` | string | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details |
 | `Application` | string | Application that performed the recorded action |
-| `QueryType` | string | Type of query, such as QueryGroup, QueryUser, or EnumerateUsers |
-| `QueryTarget` | string | Name of user, group, device, domain, or any other entity type being queried |
-| `Query` | string | String used to run the query |
+| `TargetAccountUpn` | string | User principal name (UPN) of the account that the recorded action was applied to |
+| `TargetAccountDisplayName` | string | Display name of the account that the recorded action was applied to |
+| `TargetDeviceName` | string | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
+| `DestinationDeviceName` | string | Name of the device running the server application that processed the recorded action |
+| `DestinationIPAddress` | string | IP address of the device running the server application that processed the recorded action |
+| `DestinationPort` | string | Destination port of the activity |
 | `Protocol` | string | Protocol used during the communication |
 | `AccountName` | string | User name of the account |
 | `AccountDomain` | string | Domain of the account |
@@ -46,14 +51,11 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountSid` | string | Security Identifier (SID) of the account |
 | `AccountObjectId` | string | Unique identifier for the account in Azure AD |
 | `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
-| `DeviceName` | string | Fully qualified domain name (FQDN) of the endpoint |
-| `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
-| `DestinationDeviceName` | string | Name of the device running the server application that processed the recorded action |
-| `DestinationIPAddress` | string | IP address of the device running the server application that processed the recorded action |
-| `TargetDeviceName` | string | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
-| `TargetAccountUpn` | string | User principal name (UPN) of the account that the recorded action was applied to |
-| `TargetAccountDisplayName` | string | Display name of the account that the recorded action was applied to |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the device |
+| `IPAddress` | string | IP address assigned to the device during communication |
+| `Port` | string | TCP port used during communication |
 | `Location` | string | City, country, or other geographic location associated with the event |
+| `ISP` | string | Internet service provider associated with the IP address |
 | `ReportId` | long | Unique identifier for the event |
 | `AdditionalFields` | string | Additional information about the entity or event |
 
