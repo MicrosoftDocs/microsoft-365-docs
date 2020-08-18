@@ -18,7 +18,7 @@ appliesto:
 
 # Remediate malicious email delivered in Office 365
 
-Remediation means taking a proscribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through Zero-hour Auto-Purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items folder*, *soft delete*, or *hard delete*. Office Advanced Threat Protection (Office ATP) P2/E5 lets security teams mediate threats in email and collaboration functionality through manual and automated investigation.
+Remediation means taking a proscribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through Zero-hour Auto-Purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete*. Office Advanced Threat Protection (Office ATP) P2/E5 enables security teams to remediate threats in email and collaboration functionality through manual and automated investigation.
 
 > [!NOTE]
 > To remediate malicious email, security teams need the *search and purge* role assigned to them. Role assignment is done through permissions in the security and compliance center.
@@ -37,14 +37,14 @@ To do things like view message headers or download email content, you must have 
 
 
 > [!NOTE]
-> Preview is a *role*, not a *role group*. The preview role must be added to an existing role group for Office 365. The *Global Administrator role* is assigned in the [Microsoft 365 admin center](https://admin.microsoft.com). The Security Administrator and Security Reader roles are assigned in the [security and compliance centers][https://protection.office.com](https://protection.office.com). To learn more about roles and permissions, see [Permissions in the security and compliance centers](permissions-in-the-security-and-compliance-center.md).
+> Preview is a *role*, not a *role group*. The preview role must be added to an existing role group for Office 365. The *Global Administrator role* is assigned in the [Microsoft 365 admin center](https://admin.microsoft.com). The Security Administrator and Security Reader roles are assigned in the [security and compliance centers](https://protection.office.com). To learn more about roles and permissions, see [Permissions in the security and compliance centers](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
 > Admins can take required action on emails, but to get those actions approved, they must have the *search and purge* role assigned to them via **Security and Compliance Center** > **Permissions**.
 
 ## Manual and automated remediation
 
-*Manual hunting* occurs when security teams identify threats manually by using the search and filtering capabilities in Threat Explorer. Manual email remediation can be triggered through any email view (Malware, Phish, or All email) after you identify a set of emails that need to be remediated.
+*Manual hunting* occurs when security teams identify threats manually by using the search and filtering capabilities in Threat Explorer. Manual email remediation can be triggered through any email view (*Malware*, *Phish*, or *All email*) after you identify a set of emails that need to be remediated.
 
 ![Manual hunting in Office 365 Threat Explorer by date.](../../media/tp-RemediationArticle1.png)
 
@@ -70,11 +70,11 @@ All remediations (either direct approval or two-step approval) that were created
 
 ![The action center with a list of threats by date and severity.](../../media/tp-RemediationArticle4.png)
 
-Action Center shows all remediation actions for the past 30 days. Actions taken through Threat Explorer are listed by the name that the security operations team provided when the remediation was created. Actions taken through automated investigations have titles that begin with the related alert that triggered the investigation, such as "Zap email cluster…".
+Action Center shows all remediation actions for the past 30 days. Actions taken through Threat Explorer are listed by the name that the security operations team provided when the remediation was created. Actions taken through automated investigations have titles that begin with the related alert that triggered the investigation, such as "Zap email cluster… ."
 
 Open any remediation item to view details about it, including its name, creation date, description, threat severity, and status. It also shows the following two tabs.
 
-- **Mail submission** tab: Shows the number of emails submitted through Threat Explorer or automated investigations to be remediated. These emails can be actionable or not actionable.<br/><br/>![The action center with actionable and not actionable threats.](../../media/tp-RemediationArticle5.png)
+- **Mail submission** tab: Displays the number of emails submitted through Threat Explorer or automated investigations to be remediated. These emails can be actionable or not actionable.<br/><br/>![The action center with actionable and not actionable threats.](../../media/tp-RemediationArticle5.png)
 
    - **Actionable**: Emails in the following cloud mailbox locations can be acted on and moved:
 
@@ -106,7 +106,7 @@ Open any remediation item to view details about it, including its name, creation
 
    Only remediable emails are acted on during remediation. Nonremediable emails can't be remediated by the Office 365 email system, as they aren't stored in cloud mailboxes.
 
-   Admins can take actions on emails in quarantine if necessary, but those emails will expire out of quarantine if they're not manually purged. Emails quarantined because of malicious content aren't accessible by users, so security personnel don't have to take any specific action to get rid of threats in quarantine. If the emails are on-premises or external, the user can be contacted to address the suspicious email. Or the admins can use separate email server/security tools for removal. These emails can be identified by applying the *delivery location = on-prem* external filter in Threat Explorer. For failed or dropped email, or email not accessible by users, there won’t be any email to mitigate, since these mails don’t reach the mailbox.
+   Admins can take actions on emails in quarantine if necessary, but those emails will expire out of quarantine if they're not manually purged. Emails quarantined because of malicious content aren't accessible by users, so security personnel don't have to take any action to get rid of threats in quarantine. If the emails are on-premises or external, the user can be contacted to address the suspicious email. Or the admins can use separate email server/security tools for removal. These emails can be identified by applying the *delivery location = on-prem* external filter in Threat Explorer. For failed or dropped email, or email not accessible by users, there won’t be any email to mitigate, since these mails don’t reach the mailbox.
 
    The following image shows how a submission looks in Action Center. A remediation can contain multiple submissions. If multiple actions get approved through one automated investigation, each email or email cluster action appears in the same remediation as a different submission.
 
@@ -132,5 +132,5 @@ Open any remediation item to view details about it, including its name, creation
 
    Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox," that item was already removed from the mailbox. Sometimes there's a systemic error during remediation. In those cases, it's a good idea to retry remediation.
 
-   Remediation is a powerful tool to mitigate threats and address suspicious emails. It helps keep an organization secure.
+ Remediation is a powerful tool to mitigate threats and address suspicious emails. It helps keep an organization secure.
 
