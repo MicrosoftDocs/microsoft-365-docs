@@ -187,6 +187,8 @@
                       href: mtp/advanced-hunting-emailpostdeliveryevents-table.md
                     - name: EmailUrlInfo
                       href: mtp/advanced-hunting-emailurlinfo-table.md
+                    - name: IdentityDirectoryEvents
+                      href: mtp/advanced-hunting-identitydirectoryevents-table.md
                     - name: IdentityInfo
                       href: mtp/advanced-hunting-identityinfo-table.md
                     - name: IdentityLogonEvents
@@ -194,7 +196,9 @@
                     - name: IdentityQueryEvents
                       href: mtp/advanced-hunting-identityqueryevents-table.md
                 - name: Functions
-                  items: 
+                  items:
+                    - name: AssignedIPAddresses()
+                      href: mtp/advanced-hunting-assignedipaddresses-function.md 
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
                 - name: Custom detections
