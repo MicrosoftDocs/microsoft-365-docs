@@ -53,7 +53,7 @@ When content has retention settings assigned to it, that content remains in its 
 
 - For Exchange mailboxes: The copy is retained in the **Recoverable Items** folder. 
 
-- For Teams channel and chat messages: The copy is retained in a hidden folder within the Exchange **Recoverable Items** folder.
+- For Teams channel and chat messages: The copy is retained in a hidden folder named **SubstrateHolds** as a subfolder in the Exchange **Recoverable Items** folder.
 
 > [!NOTE]
 > The Preservation Hold library consumes storage that isn't exempt from a site's storage quota. You might need to increase your storage when you use retention settings for SharePoint and Microsoft 365 groups.
@@ -84,7 +84,7 @@ Unlike retention policies, retention settings from retention labels persist with
 
 - Support [disposition review](disposition-reviews.md) to review the content before it's permanently deleted.
 
-- Mark the content as a [record](records.md) as part of the label settings, and always have [proof of disposition](disposition.md#disposition-of-records) when content is deleted at the end of its retention period.
+- Mark the content as a [record](records-management.md#records) as part of the label settings, and always have [proof of disposition](disposition.md#disposition-of-records) when content is deleted at the end of its retention period.
 
 ### Retention policies
 
@@ -110,7 +110,7 @@ Preservation Lock ensures your organization can meet such regulatory requirement
   
 When a retention policy is locked:
 
-- No one can it turn off
+- No one can turn it off
 - Locations can be added but not removed
 - Content subject to the policy can't be modified or deleted during the retention period
 - You can extend a retention period but not decrease it
@@ -161,7 +161,7 @@ With retention labels, you can:
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
-Additionally, retention labels support [records management](records-management.md) for email and documents across Microsoft 365 apps and services. You can use a retention label to classify content as a record. When this happens and the content remains in Microsoft 365, the label places further restrictions on the content that might be needed for regulatory reasons. For more information, including a comparison of the actions allowed or blocked, see [Learn about records](records.md).
+Additionally, retention labels support [records management](records-management.md) for email and documents across Microsoft 365 apps and services. You can use a retention label to classify content as a record. When this happens and the content remains in Microsoft 365, the label places further restrictions on the content that might be needed for regulatory reasons. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 Retention labels, unlike [sensitivity labels](sensitivity-labels.md), do not persist if the content is moved outside Microsoft 365.
 
