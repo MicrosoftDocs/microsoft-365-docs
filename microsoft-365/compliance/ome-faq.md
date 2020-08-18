@@ -187,39 +187,19 @@ The following table lists the supported clients for shared mailboxes.
 
 There are currently two known limitations:
 
+- You can't open attachments to emails that you receive on mobile devices by using Outlook mobile.
+
 - We don't support assignment through an email enabled security group. We only support access provided by direct user assignment to the shared mailbox and that automapping is enabled for Exchange Online. Automapping is enabled by default for Exchange Online.
 
-To ensure that automapping is enabled for Exchange Online
+**To assign a user to the shared mailbox**
 
 1. [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx).
 
-2. Run the **SAMSON I NEED THE NAME** cmdlet:
-
-```powershell
-   WHATISTHENAMEOFTHECMDLET
-```
-
-To ensure that the user is assigned to the shared mailbox
-
-1. [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx).
-
-2. Run the Get-MailboxPermission cmdlet. This example returns permissions that the user Ayla has on a support mailbox.
-
-   ```powershell
-   Get-MailboxPermission -Identity support@contoso.com -User ayla@contoso.com
-   ```
-
-To assign the user to the shared mailbox
-
-1. [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx).
-
-2. Run the Add-MailboxPermission cmdlet with the Automapping parameter. This example give Ayla full access permissions to a support mailbox.
+2. Run the Add-MailboxPermission cmdlet with the Automapping parameter. This example gives Ayla full access permissions to a support mailbox.
 
    ```powershell
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
    ```
-   
-- You can't open attachments to emails that you receive on mobile devices by using Outlook mobile.
 
 ## What do I do if I don’t receive the one-time pass code after I requested it?
 
