@@ -30,8 +30,6 @@ Bookings has three primary components:
 
 ## Get started using Bookings
 
-The first time you open the app, you'll see the home page, which includes tabs on the left to navigate between pages and several prominent tiles that guide you through setup and introduce new features. To get started, see [Get access to Microsoft Bookings](get-access.md).
-
 Ready to get started?
 
 Watch this video or follow the steps below to set up Bookings.

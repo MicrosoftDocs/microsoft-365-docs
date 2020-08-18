@@ -27,7 +27,17 @@ The first time you use [Bookings](https://outlook.office.com/bookings/onboarding
 
 2. Enter your business name and business type and select **Continue**.
 
-You're now ready to set up Bookings for your organization. You can get to the Bookings page with this [link](https://outlook.office.com/bookings/onboarding), from the app launcher or from office.com. Follow the steps in the [Set up Microsoft Bookings](set-up.md) topic to finish setting up Bookings.
+You're now ready to set up Bookings for your organization. You can get to the Bookings page with this [link](https://outlook.office.com/bookings/onboarding), from the app launcher or from office.com. Use the following topics to continue setting up your Bookings features.
+
+- [Enter your business information](enter-business-information.md)
+- [Add staff to Bookings](add-staff.md)
+- [Define your service offerings](define-service-offerings.md)
+- [Set your scheduling policies](set-scheduling-policies.md)
+- [Set employee working hours](employee-hours.md)
+- [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md)
+- [Customize and publish your booking page](customize-booking-page)
+- [Create a manual booking](create-a-manual-booking.md)
+- [Connect to Facebook](connect-to-facebook.md)
 
 ## Get the free Bookings add-on for Microsoft Enterprise Agreement or volume licensing subscriptions
 
