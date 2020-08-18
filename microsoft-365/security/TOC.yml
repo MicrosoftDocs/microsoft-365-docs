@@ -301,17 +301,6 @@
                       href: ./office-365-security/mfi-smtp-auth-clients-report.md
                     - name: Top domain mail flow status insight
                       href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
-            - name: Security solutions
-              items: 
-                - name: Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
-                  href: ./office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
-                  items: 
-                    - name: Configure groups and users for a political campaign dev/test environment
-                      href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-                    - name: Create team sites in a political campaign dev/test environment
-                      href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-                - name: SIEM server integration
-                  href: ./office-365-security/siem-server-integration.md
         - name: Overview
           items: 
             - name: Security roadmap
@@ -361,6 +350,8 @@
               href: ./office-365-security/mail-flow-in-eop.md        
             - name: Auditing reports in standalone EOP
               href: ./office-365-security/auditing-reports-in-eop.md
+            - name: Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
+              href: ./office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
         - name: Evaluate
         - name: Plan
         - name: Deploy
@@ -447,6 +438,11 @@
               href: ./office-365-security/manage-quarantined-messages-and-files.md
             - name: Find and release quarantined messages as a user
               href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
+            - name: Configure groups and users for a political campaign dev/test environment
+              href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
+            - name: Create team sites in a political campaign dev/test environment
+              href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md        
+
             - name: Move domains and settings from one EOP organization to another
               href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
             - name: Manage role groups in standalone EOP
@@ -611,6 +607,8 @@
               href: ./office-365-security/troubleshooting-mail-sent-to-office-365.md
             - name: Help and support for EOP
               href: ./office-365-security/help-and-support-for-eop.md     
+            - name: SIEM server integration
+              href: ./office-365-security/siem-server-integration.md
         - name: Employee training resources
     - name: Microsoft 365 for Enterprise
       href: https://docs.microsoft.com/microsoft-365/enterprise
