@@ -24,6 +24,8 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 The `IdentityDirectoryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains events involving an on-premises domain controller or a directory service, such as Active Directory (AD) or Azure AD. This table captures various identity-related events, like password changes, password expiration, and user principal name (UPN) changes. It also captures events in the domain controller itself, like scheduling of tasks and PowerShell activity. Use this reference to construct queries that return information from this table.
 
 >[!TIP]
