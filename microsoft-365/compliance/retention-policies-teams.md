@@ -45,7 +45,7 @@ After a retention policy is configured for chat and channel messages, the paths 
 
 When the retention policy is to retain and delete:
 
-![Diagram of retention flow for Teams chat and channel messages](../media/TeamsRetentionLifecycle.png)
+![Diagram of retention flow for Teams chat and channel messages](../media/teamsretentionlifecycle.png)
 
 1. **If a chat or channel message is edited or deleted** by the user during the retention period, the original message is immediately copied (if edited) or moved (if deleted) to the SubstrateHolds folder. The message is stored there until the retention period expires and then the message is permanently deleted on the day the retention period expires.
 
