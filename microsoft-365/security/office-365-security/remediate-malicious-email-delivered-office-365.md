@@ -37,7 +37,7 @@ To do things like view message headers or download email content, you must have 
 
 
 > [!NOTE]
-> Preview is a *role*, not a *role group*. The preview role must be added to an existing role group for Office 365. The *Global Administrator role* is assigned in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). The Security Administrator and Security Reader roles are assigned in the security and compliance Center ([https://protection.office.com](https://protection.office.com)). To learn more about roles and permissions, see [Permissions in the security and compliance centers](permissions-in-the-security-and-compliance-center.md).
+> Preview is a *role*, not a *role group*. The preview role must be added to an existing role group for Office 365. The *Global Administrator role* is assigned in the [Microsoft 365 admin center](https://admin.microsoft.com). The Security Administrator and Security Reader roles are assigned in the [security and compliance centers][https://protection.office.com](https://protection.office.com). To learn more about roles and permissions, see [Permissions in the security and compliance centers](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
 > Admins can take required action on emails, but to get those actions approved, they must have the *search and purge* role assigned to them via **Security and Compliance Center** > **Permissions**.
@@ -106,7 +106,7 @@ Open any remediation item to view details about it, including its name, creation
 
    Only remediable emails are acted on during remediation. Nonremediable emails can't be remediated by the Office 365 email system, as they aren't stored in cloud mailboxes.
 
-   Admins can take actions on emails in quarantine if necessary, but those emails will expire out of quarantine if they're not manually purged. Emails quarantined because of malicious content aren't accessible by users, so security personnel don't have to take any specific action to get rid of threats in quarantine. If the emails are on-premises or external, the user can be contacted to address the suspicious email. Or the admins can use separate email server/security tools for removal. These emails can be identified by applying the delivery-location-equals-on-premises external filter in Threat Explorer. For failed or dropped email, or email not accessible by users, there won’t be any email to mitigate, since these mails don’t reach the mailbox.
+   Admins can take actions on emails in quarantine if necessary, but those emails will expire out of quarantine if they're not manually purged. Emails quarantined because of malicious content aren't accessible by users, so security personnel don't have to take any specific action to get rid of threats in quarantine. If the emails are on-premises or external, the user can be contacted to address the suspicious email. Or the admins can use separate email server/security tools for removal. These emails can be identified by applying the *delivery location = on-prem* external filter in Threat Explorer. For failed or dropped email, or email not accessible by users, there won’t be any email to mitigate, since these mails don’t reach the mailbox.
 
    The following image shows how a submission looks in Action Center. A remediation can contain multiple submissions. If multiple actions get approved through one automated investigation, each email or email cluster action appears in the same remediation as a different submission.
 
