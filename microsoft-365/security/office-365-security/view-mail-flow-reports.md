@@ -277,36 +277,39 @@ Each exported .csv file is limited to 150,000 rows. If the data for that day con
 
 ### Funnel view for the Mailflow status report
 
-The **Funnel** view shows you how Microsoft's email threat protection features filter incoming and outgoing emails in your organization. It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
+The **Funnel** view shows you how Microsoft's email threat protection features filter incoming and outgoing email in your organization. It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
 
 If you click the **Funnel** tab, by default, this view contains a chart and a data table that's configured with the following filters:
 
 - **Date**: The last 7 days.
 
 - **Direction**:
+
   - **Inbound**
   - **Outbound**
-  - **Intra-org**: this count is for messages within a tenant i.e sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound)
+  - **Intra-org**: This count is for messages sent within a tenant; i.e, sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound).
 
 The aggregate view and data table view allow for 90 days of filtering.
 
 If you click **Filter**, you can filter both the chart and the data table.
 
-This chart shows the count of emails organized by:
+This chart shows the email count organized by:
+
   - **Total email**
   - **Email after edge protection**
   - **Email after anti-malware, file reputation, file type block**
   - **Email after anti-phish, URL reputation, brand impersonation, anti-spoof**
   - **Email after anti-spam, bulk mail filtering**
-  - **Email after user and domain impersonation** <sup>1</sup>
+  - **Email after user and domain impersonation**<sup>1</sup>
   - **Email after file and URL detonation**<sup>1</sup>
   - **Email detected as benign after post-delivery protection (URL click time protection)**
 
 <sup>1</sup> Office 365 ATP only
 
-To view the emails filtered by EOP or ATP separately, click on the value in the chart legend.
+To view the email filtered by EOP or ATP separately, click on the value in the chart legend.
 
 The data table contains the following information, shown in descending date order:
+
  - **Date**
  - **Total email**
  - **Edge protection**
@@ -321,7 +324,8 @@ If you select a row in the data table, a further breakdown of the email counts a
 
 **Export**:
 
-On clicking **Export**, under **Options** you can select one of the following: 
+After you click **Export** under **Options**, you can select one of the following values:
+
 - **Summary (with data for last 90 days at most)**
 - **Details (with data for last 30 days at most)**
 
@@ -333,13 +337,14 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
  ### Tech view for the Mailflow status report
 
-The **Tech view** is similar to the **Funnel** view, providing more granular details for the configured threat protections features. From the chart you can see how the emails are categorized at the different stages of threat protection.
+The **Tech view** is similar to the **Funnel** view, providing more granular details for the configured threat protections features. From the chart you can see how messages are categorized at the different stages of threat protection.
 
 If you click the **Tech view** tab, by default, this view contains a chart and a data table that's configured with the following filters:
 
 - **Date**: The last 7 days.
 
 - **Direction**:
+
   - **Inbound**
   - **Outbound**
   - **Intra-org**: this count is for messages within a tenant i.e sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound)
@@ -348,7 +353,8 @@ The aggregate view and data table view allow for 90 days of filtering.
 
 If you click **Filter**, you can filter both the chart and the data table.
 
-This chart shows the emails categorized as follows:
+This chart shows messages organized into the following categories:
+
   - **Total email**
   - **Edge allow, edge filtered**
   - **Not malware, Safe attachments detection (ATP), Anti-malware engine detection, rule block**
@@ -357,9 +363,10 @@ This chart shows the emails categorized as follows:
   - **Not spam, spam**
   - **Non-malicious email, safe links detection (ATP), ZAP**
 
-When you hover over a category in the chart, you can see how many items fall into that category.
+When you hover over a category in the chart, you can see the number of messages in that category.
 
 The data table contains the following information, shown in descending date order:
+
   - **Date**  
   - **Total email**
   - **Edge filtered**
@@ -374,7 +381,8 @@ If you select a row in the data table, a further breakdown of the email counts a
 
 **Export**:
 
-On clicking **Export**, under **Options** you can select one of the following: 
+On clicking **Export**, under **Options** you can select one of the following:
+
 - **Summary (with data for last 90 days at most)**
 - **Details (with data for last 30 days at most)**
 
