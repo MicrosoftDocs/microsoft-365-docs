@@ -47,7 +47,7 @@ We show a network assessment value for the whole Microsoft 365 tenant on the net
 
 ## Exchange Online
 
-For Exchange Online the TCP latency from the client machine to the Exchange front end server is measured. This can be impacted by the distance the network travels over the customers LAN and WAN. It can also be impacted by network intermediary devices or services which delay the connectivity or cause packets to be resent.
+For Exchange Online the TCP latency from the client machine to the Exchange front end server is measured. This can be impacted by the distance the network travels over the customers LAN and WAN. It can also be impacted by network intermediary devices or services which delay the connectivity or cause packets to be resent. The median (also known as the 50th percentile or P50 measure) is taken for all measurements over the previous three days.
 
 The Exchange Online assessment is made using the following table. Any TCP latency number between the thresholds are assigned points linearly within the band.
 
@@ -62,7 +62,7 @@ The Exchange Online assessment is made using the following table. Any TCP latenc
 
 ## SharePoint Online
 
-For SharePoint Online the download speed available for a user to access a document from SharePoint Online or OneDrive is measured. This can be impacted by the bandwidth available on network circuits between the client machine and Microsoft's network. It is also often impacted by network congestion that exists in bottlenecks in complex network devices or in poor coverage Wi-Fi areas. The download speed is measured in megabytes per second which is approximately one tenth of a circuits rated megabits per second.
+For SharePoint Online the download speed available for a user to access a document from SharePoint Online or OneDrive is measured. This can be impacted by the bandwidth available on network circuits between the client machine and Microsoft's network. It is also often impacted by network congestion that exists in bottlenecks in complex network devices or in poor coverage Wi-Fi areas. The download speed is measured in megabytes per second which is approximately one tenth of a circuits rated megabits per second. The 25th percentile (also known as the P25 measure) is taken for all measurements over the previous three days.
 
 The SharePoint Online assessment is made using the following table. Any download speed number between the thresholds are assigned points linearly within the band.
 
@@ -77,7 +77,7 @@ The SharePoint Online assessment is made using the following table. Any download
 
 ## Microsoft Teams
 
-For Microsoft Teams the Network quality is measured as UDP latency, UDP jitter, and UDP packet loss. UDP is used for call and conferencing audio and video media connectivity for Microsoft Teams. This can be impacted by the same factors as for latency and download speed in addition to connectivity gaps in a network's UDP support since UDP is configured separately to the more common TCP protocol.
+For Microsoft Teams the Network quality is measured as UDP latency, UDP jitter, and UDP packet loss. UDP is used for call and conferencing audio and video media connectivity for Microsoft Teams. This can be impacted by the same factors as for latency and download speed in addition to connectivity gaps in a network's UDP support since UDP is configured separately to the more common TCP protocol. The median (also known as the 50th percentile or P50 measure) is taken for all measurements over the previous three days. 
 
 The Microsoft Teams assessment is made using the following table. All three of the UDP measurements must be above the threshold listed to achieve the points shown. There are no assessments for a single location within a band.
 
