@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: "Implement Microsoft Information Protection (MIP) capabilities in Microsoft 365 to help you discover, classify, and protect sensitive information wherever it lives or travels."
+description: "Implement Microsoft Information Protection (MIP) capabilities by using Microsoft 365 Compliance to help you discover, classify, and protect sensitive information wherever it lives or travels."
 ---
 
 # Microsoft Information Protection in Microsoft 365
