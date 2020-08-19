@@ -30,6 +30,11 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 > [!TIP]
 > Don't have Office 365 ATP yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## September/October 2020 
+
+- [Check your policies using Configuration Analyzer](configuration-analyzer-for-security-policies.md)
+- [Manually override filter verdicts using the Tenant Allow/Block List](tenant-allow-block-list.md)
+
 ## July/August 2020 
 
 - [Experience improvements to the hunting experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
