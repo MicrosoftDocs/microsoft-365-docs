@@ -27,12 +27,7 @@ To make [Microsoft Secure Score](microsoft-secure-score.md) a better representat
 
 These these changes may be coming to your Microsoft Secure Score soon, depending on your license. To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score-whats-new.md)
 
-### Adding improvement actions for Azure Advanced Threat Protection
-
-- Risky lateral movement paths
-- Unsecure account attributes
-- Enable security features on Active Directory trusts
-- Remove unsecure SID history attributes from entities
+- Changing the maximum score from 7 to 8 for the Azure Active Directory improvement action called "Enable policy to block legacy authentication"
 
 ## Related resources
 
