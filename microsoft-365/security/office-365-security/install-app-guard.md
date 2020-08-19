@@ -173,7 +173,6 @@ with FAT32 or WebDAV-based network shares), the file will lose its MOTW property
 file and select **Properties**. Under the **General** tab, select **Unblock** as shown below: 
 
     ![Removing MOTW frm a file](../../media/ag11-unblock.png) 
-<br>Select **OK**.         
 
 >[!NOTE] Removing MOTW from a file can't be undone.
 
