@@ -26,7 +26,7 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 
 - To manage Office Scripts settings, you must be a Global admin. For more information, see [About admin roles](../add-users/about-admin-roles.md).
 
-- Ensure users in your organization have a valid license for a Microsoft 365 or Office 365 commercial or EDU plan that includes access to Office desktop aps, such as one of the following:<br><br>
+- Ensure users in your organization have a valid license for a Microsoft 365 or Office 365 commercial or EDU plan that includes access to Office desktop aps, such as one of the following:
 
     - Microsoft 365 Business Standard
     - Microsoft 365 Apps for business
@@ -60,7 +60,7 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 
 5. Select **Save**.
 
-    Note that it can take up to 48 hours for changes to Office Script settings to take effect.
+    It can take up to 48 hours for changes to Office Script settings to take effect.
 
 ## Next steps
 
