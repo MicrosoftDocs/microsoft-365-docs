@@ -9,7 +9,10 @@ audience: Admin
 ms.topic: article 
 ms.service: o365-administration 
 localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.collection: 
+- M365-subscription-management 
+- Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: "Learn how to manage Office Scripts settings for users in your organization."
@@ -17,12 +20,12 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
 # Manage Office Scripts settings
 
-Office Scripts‎ allows users to automate tasks by recording, editing, and running scripts in ‎Excel‎ on the web. ‎Office Scripts‎ works with Power Automate, and users run scripts on workbooks by using the ‎Excel‎ Online (Business) connector. Admins must turn on Office Scripts in the Microsoft 365 admin center before users can access and use the feature.
+Office Scripts‎ allows users to automate tasks by recording, editing, and running scripts in ‎Excel‎ on the web. ‎Office Scripts‎ works with Power Automate, and users run scripts on workbooks by using the ‎Excel‎ Online (Business) connector. Microsoft 365 admins can manage Office Scripts settings from the Microsoft 365 admin center.
 
 ## Before you begin
 
 - To manage Office Scripts settings, you must be a Global admin. For more information, see [About admin roles](../add-users/about-admin-roles.md).
-- Ensure users in your organization have a license for one of the following:
+- Ensure users in your organization have a valid license for a Microsoft 365 or Office 365 commercial or EDU plan that includes access to Office desktop aps, such as one of the following:
     - Microsoft 365 Business Standard
     - Microsoft 365 Apps for business
     - Microsoft 365 Apps for enterprise
@@ -37,9 +40,9 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 
 2. Select **Office Scripts**.
 
-3. To turn on Office Scripts for your organization, select **Let users automate their tasks in Excel on the web**. To turn off Office Scripts for your organization, clear this check box.
+3. Office Scripts is turned on by default. To turn it off, clear the **Let users automate their tasks in Excel on the web** check box.
 
-4. If you're turning on Office Scripts, indicate who will have access to and be able to use the feature. Do one of the following:
+4. If you previously turned off Office Scripts and you're turning it back on, specify who will have access to and be able to use the feature. Do one of the following:
 
     - To allow all users in your organization to access and use Office Scripts, leave **Everyone** (the default) selected. 
 
@@ -47,11 +50,11 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 
 5. To allow users with access to Office Scripts to share their scripts with others in your organization, select **Let users with access to office Scripts share their scripts with others in the organization**. Sharing scripts outside of an organization is not allowed.
  
-6. If you allow users to share their scripts, indicate who they're allowed to share them with:
+6. Specify which users with access to Office Scripts are allowed to share their scripts:
     
-    - To allow those with access to Office Scripts to share the scripts they create with all users in your organization, leave **Everyone** (the default) selected.
+    - To allow all users with access to Office Scripts to share their scripts, leave **Everyone** (the default) selected.
 
-    - To allow those with access to Office Scripts to share the scripts they create only with members of certain Azure Active Directory Security groups or Microsoft 365 groups, select **Specific group**, and then enter the name or email alias of each group to add them to the allow list.
+    - To allow only members of certain Azure Active Directory Security groups or Microsoft 365 groups with access to Office Scripts to share their scripts, select **Specific group**, and then enter the name or email alias of each group to add them to the allow list.
 
 5. Select **Save**.
 
@@ -59,7 +62,7 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 
 ## Next steps
 
-We recommend reviewing your existing data loss prevention (DLP) policies to ensure your organization's data remains protected while users use ‎Office Scripts‎. For more information, see [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
+Because Office Scripts works with Power Automate, we recommend that you review your existing data loss prevention (DLP) policies to ensure your organization's data remains protected while users use ‎Office Scripts‎. For more information, see [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
 
 ## Related content
 
