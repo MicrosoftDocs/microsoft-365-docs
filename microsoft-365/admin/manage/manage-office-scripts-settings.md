@@ -25,7 +25,9 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 ## Before you begin
 
 - To manage Office Scripts settings, you must be a Global admin. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+
 - Ensure users in your organization have a valid license for a Microsoft 365 or Office 365 commercial or EDU plan that includes access to Office desktop aps, such as one of the following:
+
     - Microsoft 365 Business Standard
     - Microsoft 365 Apps for business
     - Microsoft 365 Apps for enterprise
@@ -40,9 +42,9 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 
 2. Select **Office Scripts**.
 
-3. Office Scripts is turned on by default. To turn it off, clear the **Let users automate their tasks in Excel on the web** check box.
+3. Office Scripts is turned on by default, and everyone in your organization can access and use the feature and share scripts. To turn off Office Scripts for your organization, clear the **Let users automate their tasks in Excel on the web** check box.
 
-4. If you previously turned off Office Scripts and you're turning it back on, specify who will have access to and be able to use the feature. Do one of the following:
+4. If you previously turned off Office Scripts for your organization and you want to turn it back on, select **Let users automate their tasks in Excel on the web**, and then specify who can access and use the feature:
 
     - To allow all users in your organization to access and use Office Scripts, leave **Everyone** (the default) selected. 
 
@@ -50,7 +52,7 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 
 5. To allow users with access to Office Scripts to share their scripts with others in your organization, select **Let users with access to office Scripts share their scripts with others in the organization**. Sharing scripts outside of an organization is not allowed.
  
-6. Specify which users with access to Office Scripts are allowed to share their scripts:
+6. Specify which users with access to Office Scripts can share their scripts:
     
     - To allow all users with access to Office Scripts to share their scripts, leave **Everyone** (the default) selected.
 
