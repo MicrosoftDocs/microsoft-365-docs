@@ -83,11 +83,11 @@ The Microsoft Teams assessment is made using the following table. All three of t
 
 | UDP packet loss | UDP latency | UDP jitter | Points |
 | :-------------- | :---------- | :--------- | :----- |
-| tbd           | tbd        | tbd        | 100    |
-| tbd           | tbd       | tbd       | 80     |
-| tbd           | tbd       | tbd       | 60     |
-| tbd           | tbd       | tbd       | 40     |
-| tbd           | tbd       | tbd      | 20     |
+| 0.25%           | 60ms        | 15ms       | 100    |
+| 1.00%           | 120ms       | 40ms       | 80     |
+| 1.50%           | 240ms       | 65ms       | 60     |
+| 3.00%           | 275ms       | 80ms       | 40     |
+| 5.00%           | 350ms       | 150ms      | 20     |
 | Any higher      | Any higher  | Any higher | 0      |
 
 ## Related topics
