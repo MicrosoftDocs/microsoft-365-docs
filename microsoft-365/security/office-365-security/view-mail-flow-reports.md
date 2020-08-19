@@ -381,7 +381,7 @@ If you select a row in the data table, a further breakdown of the email counts a
 
 **Export**:
 
-On clicking **Export**, under **Options** you can select one of the following:
+On clicking **Export**, under **Options** you can select one of the following values:
 
 - **Summary (with data for last 90 days at most)**
 - **Details (with data for last 30 days at most)**
