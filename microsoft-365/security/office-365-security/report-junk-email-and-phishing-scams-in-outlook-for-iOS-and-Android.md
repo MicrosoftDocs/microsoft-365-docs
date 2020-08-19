@@ -15,10 +15,10 @@ search.appverid:
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn about the built-in junk, not junk, and phishing email reporting options in Outlook for iOS and Android, and how to disable these reporting options for users."
+description: "Admins can learn about the built-in junk, not junk, and phishing email reporting options in Outlook for iOS and Android."
 ---
 
-# Report junk and phishing email in Outlook for iOS and Android
+# Report junk and phishing email in Outlook for iOS and Android in Exchange Online
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises mailboxes leveraging hybrid modern authentication, you can use the built-in reporting options in Outlook for iOS and Android to submit false positives (good email marked as spam), false negatives (bad email allowed) and phishing messages to Exchange Online Protection (EOP).
 
@@ -43,20 +43,19 @@ For messages in the Inbox or any other email folder except Junk, use the followi
 
    ![Report junk or phishing email](../../media/Android-report-junk-or-phishing.png)
 
-3. In the dialog that appears, tap **Report** to send a copy of the message to Microsoft, otherwise tap **No, Thanks**.
+3. In the dialog that appears, tap **Report** to send a copy of the message to Microsoft.
 
    ![Report junk or phishing email reporting options](../../media/Android-junk-email-reporting-options.png)
 
-On tapping **Report** messages will be sent to Microsoft for analysis. To confirm that the messages have been submitted, open your Sent Items folder to view the submitted messages. if you choose **No, Thanks** ?
-
 ## Report non-spam messages from the Junk folder in Outlook for iOS and Android
 
-In the Junk folder, use the following steps to report spam false positives or phishing messages:
+In the Junk folder, use the following steps to report spam false positives:
 
-1. Select one or more messages, go to the top-right corner and tap the three vertical dots. The action menu opens.
+1. Select one or more messages.
+2. In the the top-right corner tap on the three vertical dots. The action menu opens.
 
-   ![Report not junk or phishing email from the action menu](../../media/Android-not-junk-email.png)
+   ![Report not junk email from the action menu](../../media/Android-not-junk-email.png)
 
-2. Tap **Not junk**. 
+2. Tap **Not junk**.
 
-3. A toast notification to let you know that the email has been moved to the inbox. YOu can also tap **Undo**
+3. A toast notification lets you know the email has been moved to the inbox. If you change your mind, click **Undo** on the toast notification. The email stays in the **Junk** folder.
