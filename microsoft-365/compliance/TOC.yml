@@ -874,10 +874,8 @@
           items: 
             - name: Accountability readiness checklists
               href: gdpr-arc.md
-            - name: Azure
-              href: gdpr-arc-azure.md
-            - name: Dynamics 365
-              href: gdpr-arc-dynamics365.md
+            - name: Azure & Dynamics 365
+              href: gdpr-arc-azure-dynamics.md
             - name: Microsoft Support & Professional Services
               href: gdpr-arc-prof-services.md
             - name: Office 365
