@@ -125,7 +125,7 @@ disable some functionalities for files opened in Application Guard.
 | Policy                                                                          | Description                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Disable Application Guard for Office                                            | Enabling this policy will force Word, Excel, and PowerPoint to use the Protected View isolation container instead of Application Guard. This policy can be used to temporarily disable Application Guard when there are issues in leaving Application Guard enabled for Edge.                                  |
-| Prevent users from removing Application Guard protection on files               | Enabling this policy will remove the option (within the Office application experience) to disable Application Guard protection or open a file outside Application Guard. <br><br>**Note:** Users can still bypass this policy by manually removing the mark-of-the-web feature or by moving a document to a Trusted location. |
+| Prevent users from removing Application Guard protection on files               | Enabling this policy will remove the option (within the Office application experience) to disable Application Guard protection or open a file outside Application Guard. <br><br>**Note:** Users can still bypass this policy by manually [removing the Mark of the Web property from the file](#Mark-of-the-Web) or by [moving a document to a Trusted location](#Trusted-Locations). |
 | Restrict printing from documents opened in Application Guard                    | Enabling this policy will limit printers a user can print to from a file opened in Application Guard. For example, you can use this policy to restrict users to only print to PDF.                                                                                                                      |
 | Disable copy/paste for documents opened in Application Guard                    | Enabling this policy will prevent a user from copying and pasting content from a document opened in Application Guard to a document opened outside Application Guard.                                                                                                                                   |
 | Turn off camera and microphone access for documents opened in Application Guard | Enabling this policy will remove Office’s access to Camera and Microphone inside Application Guard.                                                                                                                                                                                                     |
@@ -136,6 +136,47 @@ disable some functionalities for files opened in Application Guard.
 > *  Disable copy/paste for documents opened in Application Guard
 >*  Restrict printing for documents opened in Application Guard
 > *  Turn off camera and mic access to documents opened in Application Guard
+
+
+## Configure Trust Center  
+
+You can choose which documents open in Application Guard via the Trust Center. To access these settings, open Word, Excel, or PowerPoint. Then select **File > Options > Trust Center > Trust Center Settings.** 
+
+ 
+### Trust Center options 
+
+#### Trusted Locations
+You can choose to make certain file paths trusted locations which will always open Office files as trusted files (i.e they will not open in Application Guard). Even if a file is individually untrusted, if it moved into a trusted location the file will open as a trusted file. You can disable all trusted locations by selecting the **Disable all Trusted Locations** option. 
+
+#### Trusted Documents
+You can choose to make individual files trusted through trust promotion. To do this, select **File > Info > Remove Protection**. The Trust Center options for Trusted Documents allow you to either enable trusted files on networks, or to disable individually trusted files altogether. There is also a button to clear the current list of individually trusted files. 
+
+#### Application Guard 
+Here you can choose which types of files will open in Application Guard. 
+
+* *Files originating from the internet* – This setting will open files with Mark of the Web (MOTW) in Application Guard. Individually trusted files or files located in trusted locations will not open in Application Guard even if files have a MOTW.
+
+* *Files located in potentially unsafe locations* – This setting will open any     file located in unsafe locations (for example, your Temporary Internet Files folder) in Application Guard. 
+
+* *Outlook attachments* – This setting will open Outlook file attachments in Application Guard. Outlook file attachments downloaded to a trusted location and then opened from there will not open in Application Guard. 
+ 
+### Mark of the Web 
+
+Mark of the Web (MOTW) is a file property that is set on files originating from
+untrusted sources such as files downloaded from the internet or from email
+attachments. By default, when opening a file with MOTW, Office will open the
+file using Application Guard. 
+
+* **MOTW requirements** - MOTW requires an NTFS file system. Therefore, if you move
+a MOTW file to a location that does not use NTFS (for example, a USB stick formatted
+with FAT32 or WebDAV-based network shares), the file will lose its MOTW property. 
+* **Removing MOTW** - If you want to remove MOTW from a file, right-click on the
+file and select **Properties**. Under the **General** tab, select **Unblock** as shown below: 
+
+    ![Removing MOTW frm a file](../../media/ag11-unblock.png) 
+         Select **OK**.
+
+    >[!NOTE] Removing MOTW from a file can't be undone.
 
 ## Submit feedback
 
