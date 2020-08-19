@@ -1,5 +1,5 @@
 ---
-title: "Protect information using Microsoft 365"
+title: "Microsoft Information Protection in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -9,19 +9,19 @@ ms.date:
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: High
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: "Identify the Microsoft 365 capabilities and supporting documentation to help you protect your organization's important data."
+description: "Implement Microsoft Information Protection (MIP) capabilities in Microsoft 365 to help you discover, classify, and protect sensitive information wherever it lives or travels."
 ---
 
-# Protect information using Microsoft 365
+# Microsoft Information Protection in Microsoft 365
 
 >*[Licensing for Microsoft 365 Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Use Microsoft Information Protection capabilities to help discover, classify, and protect sensitive information wherever it lives or travels.
+Use Microsoft Information Protection (often abbreviated to MIP) capabilities to help you discover, classify, and protect sensitive information wherever it lives or travels.
 
 ## Know your data
 
