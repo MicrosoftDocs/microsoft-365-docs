@@ -14,6 +14,9 @@
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan for security and compliance in Office 365
       href: plan-for-security-and-compliance.md
+    - name: Compliance extensibility
+      href: compliance-extensibility.md
+
 - name: Manage insider risks
   items:
     - name: Insider risk management
