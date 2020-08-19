@@ -159,5 +159,3 @@ If you have a website that you use with your business, it will keep working wher
 [Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
 
 [Set up your domain (host-specific instructions)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
-
-[Get help with domains](../get-help-with-domains/get-help-with-domains.md)
