@@ -2,8 +2,8 @@
 title: Report junk and phishing email in Outlook for iOS and Android
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: chrisda
+author:chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
@@ -30,23 +30,30 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 - For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## Report spam and phishing messages for iOS and Android
+## Report spam and phishing messages in Outlook for iOS and Android
 
-1. For messages in the Inbox or any other email folder except Junk Email,users can report spam and phishing messages by selecting the message, tapping the **ellipses** in the blue header, tapping **Report Junk** and then tapping either **Junk** or **Phishing**. 
+For messages in the Inbox or any other email folder except Junk, use the following steps to report spam and phishing messages on your iOS or Android device:
 
-![ - UPDATE IMAGE - Report junk or phishing email from the ribbon](../../media/owa-report-junk.png)
+1. Select one or more messages, go to the top-right corner and tap the three vertical dots. The action menu opens.
 
-In the dialog that appears, tap **Report**. If you change your mind, tap **No, Thanks**. 
+![Report junk or phishing email from the action menu](../../media/Android-report-as-junk-dialog.png)
 
-![ - UPDATE IMAGE - Report junk or phishing email from the ribbon](../../media/owa-report-junk.png)
+2. Tap **Report junk** and then select **Junk** or **Phishing**.
 
-## Manage non-spam messages from the Junk Email folder in Outlook for iOS and Android 
+3. In the dialog that appears, tap **Report** to send a copy of the message to Microsoft, otherwise tap **No, Thanks**.
 
-In the event Exchange Online automatically classifies a message as spam, the message will be placed in the Junk Email folder. Users can also manually move messages to the Junk Email folder or mark a message as spam through the Report Junk feature. In the event, the user decides a message is not spam, the user can perform the following steps: 
+![Report junk or phishing email reporting options](../../media/Android-junk-email-reporting-options.png)
 
->[!NOTE]
-> In Outlook for iOS and Android, the Junk Email folder is simply labeled as Junk. 
+On tapping **Report** messages will be sent to Microsoft for analysis. To confirm that the messages have been submitted, open your Sent Items folder to view the submitted messages. if you choose **No, Thanks** ?
 
-In the Junk Email folder, users can mark messages as Not Junk by selecting the message, tapping the **ellipses** in the blue header, and tapping **Not Junk**. 
+## Report non-spam messages from the Junk folder in Outlook for iOS and Android
 
-![ - UPDATE IMAGE - Report junk or phishing email from the ribbon](../../media/owa-report-junk.png)
+In the Junk folder, use the following steps to report spam false positives or phishing messages:
+
+1. Select one or more messages, go to the top-right corner and tap the three vertical dots. The action menu opens.
+
+![Report not junk or phishing email from the action menu](../../media/Android-not- junk-email.png)
+
+2. Tap **Not junk**. 
+
+3. A toast notification to let you know that the email has been moved to the inbox. YOu can also tap **Undo**
