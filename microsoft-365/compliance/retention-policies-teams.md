@@ -40,7 +40,7 @@ After a retention policy is configured for chat and channel messages, a timer jo
 
 After a retention policy is configured for chat and channel messages, the paths the content takes depend on whether the retention policy is to retain and then delete, to retain only, or delete only.
 
-When the retention policy is to retain and delete:
+When the retention policy is to retain and then delete:
 
 ![Diagram of retention flow for Teams chat and channel messages](../media/teamsretentionlifecycle.png)
 
