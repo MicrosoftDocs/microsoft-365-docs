@@ -228,7 +228,7 @@ When you open the report, the **Type** tab is selected by default. By default, t
 
 The chart is organized by the **Type** values.
 
-You can changes these filters by clicking **Filter** or by clicking a value in the chart legend.
+You can change these filters by clicking **Filter** or by clicking a value in the chart legend.
 
 The data table contains the following information:
 
@@ -274,6 +274,123 @@ For the detail view, you can only export data for one day. So, if you want to ex
 Each exported .csv file is limited to 150,000 rows. If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.
 
 ![Direction view in the Mailflow status report ](../../media/mail-flow-status-report-direction-view.png)
+
+### Funnel view for the Mailflow status report
+
+The **Funnel** view shows you how Microsoft's email threat protection features filter incoming and outgoing email in your organization. It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
+
+If you click the **Funnel** tab, by default, this view contains a chart and a data table that's configured with the following filters:
+
+- **Date**: The last 7 days.
+
+- **Direction**:
+
+  - **Inbound**
+  - **Outbound**
+  - **Intra-org**: This count is for messages sent within a tenant; i.e, sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound).
+
+The aggregate view and data table view allow for 90 days of filtering.
+
+If you click **Filter**, you can filter both the chart and the data table.
+
+This chart shows the email count organized by:
+
+  - **Total email**
+  - **Email after edge protection**
+  - **Email after anti-malware, file reputation, file type block**
+  - **Email after anti-phish, URL reputation, brand impersonation, anti-spoof**
+  - **Email after anti-spam, bulk mail filtering**
+  - **Email after user and domain impersonation**<sup>1</sup>
+  - **Email after file and URL detonation**<sup>1</sup>
+  - **Email detected as benign after post-delivery protection (URL click time protection)**
+
+<sup>1</sup> Office 365 ATP only
+
+To view the email filtered by EOP or ATP separately, click on the value in the chart legend.
+
+The data table contains the following information, shown in descending date order:
+
+ - **Date**
+ - **Total email**
+ - **Edge protection**
+ - **Anti-malware, file reputation, file type block**
+ - **Anti-phish, URL reputation, Brand impersonation, anti-spoof**
+ - **Anti-spam, bulk mail filtering**
+ - **User and domain impersonation (ATP)**
+ - **File and URL detonation (ATP)**
+ - **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**
+
+If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.
+
+**Export**:
+
+After you click **Export** under **Options**, you can select one of the following values:
+
+- **Summary (with data for last 90 days at most)**
+- **Details (with data for last 30 days at most)**
+
+Under **Date**, choose a range, and then click **Apply**. Data for the current filters will be exported to a .csv file.
+
+Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
+
+ ![Funnel view in the Mailflow status report ](../../media/mail-flow-status-report-funnel-view.png)
+
+ ### Tech view for the Mailflow status report
+
+The **Tech view** is similar to the **Funnel** view, providing more granular details for the configured threat protections features. From the chart, you can see how messages are categorized at the different stages of threat protection.
+
+If you click the **Tech view** tab, by default, this view contains a chart and a data table that's configured with the following filters:
+
+- **Date**: The last 7 days.
+
+- **Direction**:
+
+  - **Inbound**
+  - **Outbound**
+  - **Intra-org**: this count is for messages within a tenant i.e sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound)
+
+The aggregate view and data table view allow for 90 days of filtering.
+
+If you click **Filter**, you can filter both the chart and the data table.
+
+This chart shows messages organized into the following categories:
+
+  - **Total email**
+  - **Edge allow, edge filtered**
+  - **Not malware, Safe attachments detection (ATP), Anti-malware engine detection, rule block**
+  - **Not phish, DMARC failure, impersonation detection, spoof detection, phish detection**
+  - **No detection with URL detonation, URL detonation detection (ATP)**
+  - **Not spam, spam**
+  - **Non-malicious email, safe links detection (ATP), ZAP**
+
+When you hover over a category in the chart, you can see the number of messages in that category.
+
+The data table contains the following information, shown in descending date order:
+
+  - **Date**  
+  - **Total email**
+  - **Edge filtered**
+  - **Anti-malware engine, safe attachments, rule filtered**
+  - **DMARC, impersonation, spoof, phish filtered**
+  - **URL detonation detection**
+  - **Anti-spam filtered**
+  - **ZAP removed**
+  - **Detection by safe links**
+
+If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.
+
+**Export**:
+
+On clicking **Export**, under **Options** you can select one of the following values:
+
+- **Summary (with data for last 90 days at most)**
+- **Details (with data for last 30 days at most)**
+
+Under **Date**, choose a range, and then click **Apply**. Data for the current filters will be exported to a .csv file.
+
+Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
+
+ ![Tech view in the Mailflow status report ](../../media/mail-flow-status-report-Tech-view.png)
 
 ## Sent and received email report
 
