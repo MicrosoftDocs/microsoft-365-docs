@@ -141,7 +141,6 @@ disable some functionalities for files opened in Application Guard.
 ## Configure Trust Center  
 
 You can choose which documents open in Application Guard via the Trust Center. To access these settings, open Word, Excel, or PowerPoint. Then select **File > Options > Trust Center > Trust Center Settings.** 
-
  
 ### Trust Center options 
 
@@ -154,11 +153,11 @@ You can choose to make individual files trusted through trust promotion. To do t
 #### Application Guard 
 Here you can choose which types of files will open in Application Guard. 
 
-* *Files originating from the internet* – This setting will open files with Mark of the Web (MOTW) in Application Guard. Individually trusted files or files located in trusted locations will not open in Application Guard even if files have a MOTW.
+* **Files originating from the internet** – This setting will open files with Mark of the Web (MOTW) in Application Guard. Individually trusted files or files located in trusted locations will not open in Application Guard even if files have a MOTW.
 
-* *Files located in potentially unsafe locations* – This setting will open any     file located in unsafe locations (for example, your Temporary Internet Files folder) in Application Guard. 
+* **Files located in potentially unsafe locations** – This setting will open any     file located in unsafe locations (for example, your Temporary Internet Files folder) in Application Guard. 
 
-* *Outlook attachments* – This setting will open Outlook file attachments in Application Guard. Outlook file attachments downloaded to a trusted location and then opened from there will not open in Application Guard. 
+* **Outlook attachments** – This setting will open Outlook file attachments in Application Guard. Outlook file attachments downloaded to a trusted location and then opened from there will not open in Application Guard. 
  
 ### Mark of the Web 
 
@@ -174,9 +173,9 @@ with FAT32 or WebDAV-based network shares), the file will lose its MOTW property
 file and select **Properties**. Under the **General** tab, select **Unblock** as shown below: 
 
     ![Removing MOTW frm a file](../../media/ag11-unblock.png) 
-         Select **OK**.
+<br>Select **OK**.         
 
-    >[!NOTE] Removing MOTW from a file can't be undone.
+>[!NOTE] Removing MOTW from a file can't be undone.
 
 ## Submit feedback
 
