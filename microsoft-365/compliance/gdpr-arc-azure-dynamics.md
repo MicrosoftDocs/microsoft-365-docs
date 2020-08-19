@@ -124,9 +124,8 @@ For more GDPR-related documentation, visit [https://aka.ms/gdprgetstarted](https
 
 ## 6. Bibliography of resources and links
 
-||||
-|:-----|:-----|:-------|
 |**ID**|**Description/Link**|
+|:-----|:-----|
 | 1 <a name="1"> </a> | [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 | 2 <a name="2"></a>  | [Azure Security documentation](https://docs.microsoft.com/azure/security/), see Governance and compliance, GDPR |
 | 3 <a name="3"> </a> | [FedRAMP Moderate FedRAMP System Security Plan (SSP)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=e46a519a-bcf6-4dc2-8f60-6d0e4e00a85e&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports) |
