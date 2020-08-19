@@ -3,7 +3,7 @@ title: Report junk and phishing email in Outlook for iOS and Android
 f1.keywords:
 - NOCSH
 ms.author: chrisda
-author:chrisda
+author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
@@ -34,11 +34,14 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 For messages in the Inbox or any other email folder except Junk, use the following steps to report spam and phishing messages on your iOS or Android device:
 
-1. Select one or more messages, go to the top-right corner and tap the three vertical dots. The action menu opens.
+1. Select one or more messages.
+2. In the the top-right corner tap on the three vertical dots. The action menu opens.
 
 ![Report junk or phishing email from the action menu](../../media/Android-report-as-junk-dialog.png)
 
-2. Tap **Report junk** and then select **Junk** or **Phishing**.
+3. Tap **Report junk** and then select **Junk** or **Phishing**.
+
+![Report junk or phishing email](../../media/Android-report-junk-or-phishing.png)
 
 3. In the dialog that appears, tap **Report** to send a copy of the message to Microsoft, otherwise tap **No, Thanks**.
 
@@ -52,7 +55,7 @@ In the Junk folder, use the following steps to report spam false positives or ph
 
 1. Select one or more messages, go to the top-right corner and tap the three vertical dots. The action menu opens.
 
-![Report not junk or phishing email from the action menu](../../media/Android-not- junk-email.png)
+![Report not junk or phishing email from the action menu](../../media/Android-not-junk-email.png)
 
 2. Tap **Not junk**. 
 
