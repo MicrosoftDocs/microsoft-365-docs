@@ -26,7 +26,7 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 
 - To manage Office Scripts settings, you must be a Global admin. For more information, see [About admin roles](../add-users/about-admin-roles.md).
 
-- Ensure users in your organization have a valid license for a Microsoft 365 or Office 365 commercial or EDU plan that includes access to Office desktop aps, such as one of the following:
+- Ensure users in your organization have a valid license for a Microsoft 365 or Office 365 commercial or EDU plan that includes access to Office desktop aps, such as one of the following plans:
 
     - Microsoft 365 Business Standard
     - Microsoft 365 Apps for business
