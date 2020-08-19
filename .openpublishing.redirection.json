@@ -1493,7 +1493,7 @@
     {
       "source_path": "microsoft-365/compliance/gdpr-arc-Azure.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr-arc-azure-dynamics",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
