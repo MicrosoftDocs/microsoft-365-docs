@@ -22,6 +22,8 @@ description: "Implement Microsoft Information Governance capabilities in Microso
 
 Use Microsoft Information Governance (sometimes abbreviated to MIG) capabilities to govern your data for compliance or regulatory requirements.
 
+Looking to protect your data? See [Microsoft Information Protection in Microsoft 365](protect-information.md).
+
 ## Information governance
 
 To keep what you want and delete what you don't:
