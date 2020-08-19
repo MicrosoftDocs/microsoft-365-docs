@@ -794,19 +794,21 @@
     - name: Compliance Manager
       items: 
         - name: Learn about Compliance Manager
-          href: compliance-score.md
+          href: compliance-manager.md
         - name: Get started with Compliance Manager
-          href: compliance-score.md
+          href: compliance-manager-setup.md
         - name: Build assessments in Compliance Manager
-          href: compliance-score.md
+          href: compliance-manager-assessments.md
         - name: Working with assessment templates
-          href: compliance-score.md
+          href: compliance-manager-templates.md
         - name: Compliance Manager templates list
-          href: compliance-score.md
+          href: compliance-manager-templates-list.md
         - name: Assign and complete improvement actions
-          href: compliance-score.md
+          href: compliance-manager-improvement-actions.md
         - name: How your compliance score is calculated
-          href: compliance-score.md
+          href: compliance-score-calculation.md
+        - name: Frequently asked questions (FAQ)
+          href: compliance-manager-faq.md
         - name: Compliance Manager (classic)
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: GDPR data subject request tool
