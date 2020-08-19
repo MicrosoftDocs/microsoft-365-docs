@@ -228,7 +228,7 @@ When you open the report, the **Type** tab is selected by default. By default, t
 
 The chart is organized by the **Type** values.
 
-You can changes these filters by clicking **Filter** or by clicking a value in the chart legend.
+You can change these filters by clicking **Filter** or by clicking a value in the chart legend.
 
 The data table contains the following information:
 
@@ -314,7 +314,7 @@ The data table contains the following information, shown in descending date orde
  - **Total email**
  - **Edge protection**
  - **Anti-malware, file reputation, file type block**
- - **Anti-phish, URL reputation,bBrand impersonation, anti-spoof**
+ - **Anti-phish, URL reputation, Brand impersonation, anti-spoof**
  - **Anti-spam, bulk mail filtering**
  - **User and domain impersonation (ATP)**
  - **File and URL detonation (ATP)**
@@ -337,7 +337,7 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
  ### Tech view for the Mailflow status report
 
-The **Tech view** is similar to the **Funnel** view, providing more granular details for the configured threat protections features. From the chart you can see how messages are categorized at the different stages of threat protection.
+The **Tech view** is similar to the **Funnel** view, providing more granular details for the configured threat protections features. From the chart, you can see how messages are categorized at the different stages of threat protection.
 
 If you click the **Tech view** tab, by default, this view contains a chart and a data table that's configured with the following filters:
 
