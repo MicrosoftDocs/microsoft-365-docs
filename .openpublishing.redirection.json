@@ -857,7 +857,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/unverified-sender-feature.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#spoof-settings",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#unauthenticated-sender",
       "redirect_document_id": false
     },
     {
