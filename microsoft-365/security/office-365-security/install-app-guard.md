@@ -46,7 +46,7 @@ instructions for Application Guard.
 * **Office**: Office Build version 16.0.13115.20000 or later
 * **Update package**: Windows 10 cumulative update KB4571744 pre-release package 
 
-For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office Insider Preview builds, refer to [Getting started on deploying Office Insider builds](https://insider.office.com/en-us/business/deploy).
+For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office Insider Preview builds, refer to [Getting started on deploying Office Insider builds](https://insider.office.com/business/deploy).
 
 
 ## Deploy Application Guard for Office 365
@@ -91,7 +91,7 @@ device:
 
 For more on configuring Windows diagnostic settings, refer to [Configuring
 Windows diagnostic data in your
-organization](https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management).
+organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management).
 
 ### Confirm that Application Guard is enabled and working
 
@@ -125,7 +125,7 @@ disable some functionalities for files opened in Application Guard.
 | Policy                                                                          | Description                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Disable Application Guard for Office                                            | Enabling this policy will force Word, Excel, and PowerPoint to use the Protected View isolation container instead of Application Guard. This policy can be used to temporarily disable Application Guard when there are issues in leaving Application Guard enabled for Edge.                                  |
-| Prevent users from removing Application Guard protection on files               | Enabling this policy will remove the option (within the Office application experience) to disable Application Guard protection or open a file outside Application Guard. <br><br>**Note:** Users can still bypass this policy by manually [removing the Mark of the Web property from the file](#Mark-of-the-Web) or by [moving a document to a Trusted location](#Trusted-Locations). |
+| Prevent users from removing Application Guard protection on files               | Enabling this policy will remove the option (within the Office application experience) to disable Application Guard protection or open a file outside Application Guard. <br><br>**Note:** Users can still bypass this policy by manually [removing the Mark of the Web property from the file](#mark-of-the-web) or by [moving a document to a Trusted location](#trusted-locations). |
 | Restrict printing from documents opened in Application Guard                    | Enabling this policy will limit printers a user can print to from a file opened in Application Guard. For example, you can use this policy to restrict users to only print to PDF.                                                                                                                      |
 | Disable copy/paste for documents opened in Application Guard                    | Enabling this policy will prevent a user from copying and pasting content from a document opened in Application Guard to a document opened outside Application Guard.                                                                                                                                   |
 | Turn off camera and microphone access for documents opened in Application Guard | Enabling this policy will remove Office’s access to Camera and Microphone inside Application Guard.                                                                                                                                                                                                     |
@@ -174,7 +174,8 @@ file and select **Properties**. Under the **General** tab, select **Unblock** as
 
     ![Removing MOTW frm a file](../../media/ag11-unblock.png) 
 
->[!NOTE] Removing MOTW from a file can't be undone.
+>[!NOTE]
+> Removing MOTW from a file can't be undone.
 
 ## Submit feedback
 
@@ -241,7 +242,7 @@ encouraged to submit your feedback via Feedback Hub:
 
 You may also submit feedback from within Office if the issue happens when
 running Office documents are opened in Application Guard. Refer to the [Office
-Insider Handbook](https://insider.office.com/en-us/handbook) for submitting
+Insider Handbook](https://insider.office.com/handbook) for submitting
 feedback.
 
 ## Integration with Microsoft Defender ATP and Office ATP
@@ -253,12 +254,12 @@ happening in the isolated environment.
 Microsoft Defender ATP is a security platform designed to help enterprise
 networks prevent, detect, investigate, and respond to advanced threats. For more
 details about this platform, visit the [Microsoft Defender Advanced Threat
-Protection](https://www.microsoft.com/en-us/microsoft-365/windows/microsoft-defender-atp)
+Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
 page. Learn more about onboarding devices to this platform at [Onboard devices to the
 Microsoft Defender ATP
-service](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
+service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
 
-You can also configure Office ATP to work with Microsoft Defender ATP. Refer to [Integrate Office 365 ATP with Microsoft Defender ATP](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide).
+You can also configure Office ATP to work with Microsoft Defender ATP. Refer to [Integrate Office 365 ATP with Microsoft Defender ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide).
 
 ## Limitations
 
@@ -308,4 +309,4 @@ When this heuristic is met, Office will pre-create an Application Guard containe
     workaround, users can reboot their device when this issue is encountered.
     Learn more about the issue at [Receiving an error message when attempting to
     open Windows Defender Application Guard or Windows
-    Sandbox](https://support.microsoft.com/en-us/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+    Sandbox](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
