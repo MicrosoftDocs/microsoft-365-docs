@@ -18,17 +18,23 @@ description: "Microsoft 365 Network Insights (preview)"
 
 # Microsoft 365 Network Insights (preview)
 
-**Network insights** are live performance metrics collected from your Microsoft 365 tenant, and available to view only by administrative users in your tenant. Insights are displayed in the Microsoft 365 Admin Center at <https://portal.microsoft.com/adminportal/home#/networkperformance>.
+**Network insights** are performance metrics collected from your Microsoft 365 tenant, and available to view only by administrative users in your tenant. Insights are displayed in the Microsoft 365 Admin Center at <https://portal.microsoft.com/adminportal/home#/networkperformance>.
 
 Insights are intended to help in designing network perimeters for your office locations. Each insight provides live details about the performance characteristics for a specific common issue for each geographic location where users are accessing your tenant.
 
-There are five specific network insights that may be shown for each office location:
+There are six specific network insights that may be shown for each office location:
 
 - [Backhauled network egress](#backhauled-network-egress)
 - [Better performance detected for customers near you](#better-performance-detected-for-customers-near-you)
 - [Use of a non-optimal Exchange Online service front door](#use-of-a-non-optimal-exchange-online-service-front-door)
 - [Use of a non-optimal SharePoint Online service front door](#use-of-a-non-optimal-sharepoint-online-service-front-door)
 - [Low download speed from SharePoint front door](#low-download-speed-from-sharepoint-front-door)
+- [China user optimal network egress](#china-user-optimal-network-egress)
+
+There are two tenant level network insights that may be shown for the tenant. These also appear in the producvitivy score pages:
+
+- [Exchange sampled connections impacted by connectivity issues](#exchange-sampled-connections-impacted-by-connectivity-issues)
+- [SharePoint sampled connections impacted by connectivity issues](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
 >[!IMPORTANT]
 >Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status, and is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
@@ -135,6 +141,30 @@ Internet egress further away from users than these locations will reduce perform
 ### What should I do?
 
 For more information about how to mitigate performance issues related to this insight, see [Office 365 global tenant performance optimization for China users](microsoft-365-networking-china.md).
+
+## Exchange sampled connections impacted by connectivity issues
+
+This insight will show when 50% or more of the sampled connections are impacted. The impact is defined by the Exchange assessment being below 60% for each sample.
+
+### What does this mean?
+
+It is an indication that the majority of your users are likely to be experiencing user experience issues with Outlook connecting to Exchange Online. The percentage of samples likely represents the percentage of users who show below 60 points.  
+
+### What should I do?
+
+Enable office location network connectivity visibility if you have not already done so. You want to identify which offices are impactred by poor network connectivity that is impacting Exchange and find ways to improve the network perimeter at each that connects the users to Microsoft's network.
+
+## SharePoint sampled connections impacted by connectivity issues
+
+This insight will show when 50% or more of the sampled connections are impacted. The impact is defined by the SharePoint assessment being below 40% for each sample.
+
+### What does this mean?
+
+It is an indication that the majority of your users are likely to be experiencing user experience issues with SharePoint and OneDrive. The percentage of samples likely represents the percentage of users who show below 40 points.  
+
+### What should I do?
+
+Enable office location network connectivity visibility if you have not already done so. You want to identify which offices are impactred by poor network connectivity that is impacting SharePoint and find ways to improve the network perimeter at each that connects the users to Microsoft's network.
 
 ## Related topics
 
