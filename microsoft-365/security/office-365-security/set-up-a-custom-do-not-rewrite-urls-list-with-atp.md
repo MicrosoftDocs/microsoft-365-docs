@@ -30,17 +30,21 @@ With [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), your orga
 
 This article describes how to specify a list of URLs that are excluded from ATP Safe Links scanning, and a few important points to keep in mind.
 
+> [!NOTE]
+> If your organization use Safe Links policies, the "do not rewrite" list is the only supported method for third party phishing tests.
+
 ## Set up a "do not rewrite" list
 
 ATP Safe Links protection uses several lists, including your organization's blocked URLs list and the "do not rewrite" lists for exceptions. If you have the necessary permissions, you can set up your custom "do not rewrite" lists. You do this when you add or edit Safe Links policies that apply to specific recipients in your organization.
 
 To edit (or define) ATP policies, you must be assigned an appropriate role. The following table includes some examples. To learn more, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-|Role  |Where/how assigned  |
-|---------|---------|
-|global administrator |The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) to learn more.)         |
-|Security Administrator |Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online Organization Management |Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) |
+|Role|Where/how assigned|
+|---|---|
+|global administrator|The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) to learn more.)|
+|Security Administrator|Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
+|Exchange Online Organization Management|Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 > [!TIP]
 > To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -55,11 +59,13 @@ To edit (or define) ATP policies, you must be assigned an appropriate role. The 
 
 4. Specify a name and description for your policy.
 
-5. In the **Do not rewrite the following URLs** section, select the **Enter a valid URL** box, and then type a URL, and then choose the plus sign (+).
+5. Turn **ON** URLs will be rewritten and checked against a list of known malicious links when user clicks on the link.
 
-6. In the **Applied To** section, choose **The recipient is a member of**, and then choose the group(s) you want to include in your policy. Choose **Add**, and then choose **OK**.
+6. In the **Do not rewrite the following URLs** section, select the **Enter a valid URL** box, enter a URL, and then choose the plus sign (+).
 
-7. When you are finished adding URLs, in the lower right corner of the screen, choose **Save**.
+7. In the **Applied To** section, choose **The recipient is a member of**, and then choose the group(s) you want to include in your policy. Choose **Add**, and then choose **OK**.
+
+8. When you are finished adding URLs, in the lower right corner of the screen, choose **Save**.
 
 > [!NOTE]
 > Make sure to review your organization's custom list of blocked URLs. See [Set up a custom blocked URLs list using ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).
@@ -76,9 +82,12 @@ To edit (or define) ATP policies, you must be assigned an appropriate role. The 
 
 The following table lists examples of what you can enter and what effect those entries have.
 
+****
+
 |Example Entry|What It Does|
-|:-----|:-----|
+|---|---|
 |`contoso.com`|Allows recipients to visit a site like `https://contoso.com` but not subdomains or paths.|
 |`*.contoso.com/*`|Allows recipients to visit a domain, subdomains, and paths, such as `https://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, or `https://www.contoso.com/a`. <br/><br/> This entry is inherently better than `*contoso.com*`, because it doesn't include potentially fraudulent sites, like `https://www.falsecontoso.com` or `https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|Allows specific recipients to visit a site like `https://contoso.com/a`, but not subpaths like `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Allows specific recipients to visit a site like `https://contoso.com/a` and subpaths like `https://contoso.com/a/b`|
+|

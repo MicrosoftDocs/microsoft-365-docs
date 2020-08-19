@@ -114,7 +114,15 @@ After running a query, select **Export** to save the results to local file. Your
 - **Any chart** — the query results are exported as a JPEG image of the rendered chart
 
 ## Drill down from query results
-To view more information about entities, such as machines, files, users, IP addresses, and URLs, in your query results, simply click the entity identifier. This opens a detailed profile page for the selected entity in Microsoft Defender Security Center.
+To quickly inspect a record in your query results, select the corresponding row to open the **Inspect record** panel. The panel provides the following information based on the selected record:
+
+- **Assets** — summarized view of the main assets (mailboxes, devices, and users) found in the record, enriched with available information, such as risk and exposure levels
+- **Process tree** — generated for records with process information and enriched using available contextual information; in general, queries that return more columns can result in richer process trees.
+- **All details** — all the values from the columns in the record  
+
+![Image of selected record with panel for inspecting the record](../../media/mtp-ah/inspect-record.png)
+
+To view more information about a specific entity in your query results, such as a machine, file, user, IP address, or URL, select the entity identifier to open a detailed profile page for that entity.
 
 ## Tweak your queries from the results
 Right-click a value in the result set to quickly enhance your query. You can use the options to:
@@ -138,7 +146,7 @@ Once you apply the filter to modify the query and then run the query, the result
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
+- [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 - [Custom detections overview](custom-detections-overview.md)

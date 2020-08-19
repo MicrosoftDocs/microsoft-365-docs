@@ -34,7 +34,7 @@ Domain-based Message Authentication, Reporting, and Conformance ([DMARC](https:/
 
 SPF uses a DNS TXT record to provide a list of authorized sending IP addresses for a given domain. Normally, SPF checks are only performed against the 5321.MailFrom address. This means that the 5322.From address is not authenticated when you use SPF by itself. This allows for a scenario where a user can receive a message which passes an SPF check but has a spoofed 5322.From sender address. For example, consider this SMTP transcript:
 
-```text
+```console
 S: Helo woodgrovebank.com
 S: Mail from: phish@phishing.contoso.com
 S: Rcpt to: astobes@tailspintoys.com
@@ -71,7 +71,7 @@ Like the DNS records for SPF, the record for DMARC is a DNS text (TXT) record th
 
 Microsoft's DMARC TXT record looks something like this:
 
-```text
+```console
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"
 ```
 
@@ -109,7 +109,7 @@ Now that you have a list of all your valid senders you can follow the steps to [
 
 For example, assuming contoso.com sends mail from Exchange Online, an on-premises Exchange server whose IP address is 192.168.0.1, and a web application whose IP address is 192.168.100.100, the SPF TXT record would look like this:
 
-```text
+```console
 contoso.com  IN  TXT  " v=spf1 ip4:192.168.0.1 ip4:192.168.100.100 include:spf.protection.outlook.com -all"
 ```
 
@@ -127,7 +127,7 @@ For instructions on setting up DKIM for your domain, including how to set up DKI
 
 Although there are other syntax options that are not mentioned here, these are the most commonly used options for Microsoft 365. Form the DMARC TXT record for your domain in the format:
 
-```text
+```console
 _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 ```
 
@@ -147,19 +147,19 @@ Examples:
 
 - Policy set to none
 
-    ```text
+    ```console
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=none"
     ```
 
 - Policy set to quarantine
 
-    ```text
+    ```console
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=quarantine"
     ```
 
 - Policy set to reject
 
-    ```text
+    ```console
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
@@ -182,6 +182,16 @@ You can implement DMARC gradually without impacting the rest of your mail flow. 
 3. Request that external mail systems not accept messages that fail DMARC
 
     The final step is implementing a reject policy. A reject policy is a DMARC TXT record that has its policy set to reject (p=reject). When you do this, you're asking DMARC receivers not to accept messages that fail the DMARC checks.
+    
+4. How to setup DMARC for subdomain?
+
+DMARC is implemented by publishing a policy as a TXT record in DNS and is hierarchical (e.g. a policy published for contoso.com will apply to sub.domain.contonos.com unless a different policy is explicitly defined for the subdomain). This is useful as organizations may be able to specify a smaller number of high level DMARC records for wider coverage. Care should be taken to configure explicit subdomain DMARC records where you do not want the subdomains to inherit the top level domain's DMARC record.
+
+Also, you can add a wildcard-type policy for DMARC when subdomains shouldn't be sending email, by adding the `sp=reject` value. For example:
+
+```console
+_dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
+```
 
 ## How Microsoft 365 handles outbound email that fails DMARC
 
@@ -215,12 +225,14 @@ If you have configured your domain's MX records where EOP is not the first entry
 
 If you're a customer, and your domain's primary MX record does not point to EOP, you will not get the benefits of DMARC. For example, DMARC won't work if you point the MX record to your on-premises mail server and then route email to EOP by using a connector. In this scenario, the receiving domain is one of your Accepted-Domains but EOP is not the primary MX. For example, suppose contoso.com points its MX at itself and uses EOP as a secondary MX record, contoso.com's MX record looks like the following:
 
-```text
+```console
 contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```
 
 All, or most, email will first be routed to mail.contoso.com since it's the primary MX, and then mail will get routed to EOP. In some cases, you might not even list EOP as an MX record at all and simply hook up connectors to route your email. EOP does not have to be the first entry for DMARC validation to be done. It just ensures the validation, as we cannot be certain that all on-premise/non-O365 servers will do DMARC checks.  DMARC is eligible to be enforced for a customer's domain (not server) when you set up the DMARC TXT record, but it is up to the receiving server to actually do the enforcement.  If you set up EOP as the receiving server, then EOP does the DMARC enforcement.
+
+![A troubleshooting graphic for DMARC, courtesy of Daniel Mande](../../media/Tp_DMARCTroublehoot.png)
 
 ## For more information
 

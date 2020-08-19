@@ -14,8 +14,7 @@ search.appverid:
 - MET150
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
-description: "Use the Security & Compliance Center to get various reports for your SharePoint Online and Exchange Online organization, plus Azure Active Directory reports. 
-"
+description: "Use the Security & Compliance Center to get various reports for your SharePoint Online and Exchange Online organization, plus Azure Active Directory reports."
 ---
 
 # Reports in the Security & Compliance Center

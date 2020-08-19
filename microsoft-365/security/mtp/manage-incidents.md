@@ -38,8 +38,17 @@ You can edit the name of an incident, resolve it, set its classification and det
 In cases where while investigating you would like to move alerts from one incident to another you can also do so from the Alerts tab, thus creating a larger or smaller incident that include all relevant alerts.
 
 ## Edit incident name
-By default, an incident is assigned a number. You can modify the incident name to better align with your preferred naming convention.
- 
+Incidents are automatically assigned a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident.
+
+For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
+
+You can modify the incident name to better align with your preferred naming convention.
+
+> [!NOTE]
+> Incidents that existed prior the rollout of the automatic incident naming feature will retain their name.
+
+
+
 ## Assign incidents
 If an incident has not yet been assigned, you can select **Assign to me** to assign the incident to yourself. Doing so assumes ownership of not just the incident, but also all the alerts associated with it.
 
@@ -63,4 +72,3 @@ Added comments instantly appear on the pane.
 
 ## Add incident tags
 You can add custom tags to an incident, for example to flag a group of incidents with a common characteristics. You can later filter the incidents queue for all incidents that contain a specific tag.
-

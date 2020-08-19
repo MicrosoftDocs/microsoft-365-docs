@@ -74,7 +74,7 @@ In addition to the [required licenses and permissions](information-barriers.md#r
    1. Run the following PowerShell cmdlets:
 
       ```powershell
-      Login-AzAccount 
+      Connect-AzureAD 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
       if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
@@ -156,7 +156,7 @@ In addition to defining segments using "equals" or "not equals", you can define 
 |---------|---------|
 |`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` |<p>In this example, we defined a segment called *LocalFTE* that includes people who are located locally and whose positions are not listed as *Temporary*.    |
  |`New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`|  <p>In this example, we defined a segment called *Segment1* that includes people who are members of group1@contoso.com and not members of group3@contoso.com.
-|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com'' -or MemberOf -ne 'group3@contoso.com'"` | In this example, we defined a segment called *Segment2* that includes people who are members of group2@contoso.com and not members of group3@contoso.com.
+|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com' -or MemberOf -ne 'group3@contoso.com'"` | In this example, we defined a segment called *Segment2* that includes people who are members of group2@contoso.com and not members of group3@contoso.com.
 |`New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`|  In this example, we defined a segment called *Segment1and2* that includes people members of group1@contoso.com and group2@contoso.com and not members of group3@contoso.com.
 
 

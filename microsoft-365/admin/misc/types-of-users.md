@@ -46,7 +46,7 @@ On the **Active users** page in the Microsoft 365 admin center, you can filter b
    
 ## Related articles
 
-[Add users in Microsoft 365](../add-users/add-users.md)
+[Add users and assign licenses at the same time](../add-users/add-users.md)
     
 [Assign licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md)
     

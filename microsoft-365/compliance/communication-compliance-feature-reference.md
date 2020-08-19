@@ -27,7 +27,7 @@ search.appverid:
 >[!Important]
 >Using PowerShell to create and manage communication compliance policies is not supported. To create and manage these policies, you must use the policy management controls in the [Microsoft 365 communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
 
-You create communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. Communication compliance policies define which communications and users are subject to review in your organization, define which custom conditions the communications must meet, and specify who should do reviews. Users included in the **Supervisory Review Administrator** role group can set up policies, and anyone who has this role assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv file that also includes the status of alerts pending review, escalated items, and resolved items. Policies can't be renamed and can be deleted when no longer needed.
+You create communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. Communication compliance policies define which communications and users are subject to review in your organization, define which custom conditions the communications must meet, and specify who should do reviews. Users assigned the *Communication Compliance Admin* role can set up policies, and anyone who has this role assigned can access the **Communication compliance** page and global settings in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv file that also includes the status of alerts pending review, escalated items, and resolved items. Policies can't be renamed and can be deleted when no longer needed.
 
 >[!NOTE]
 >Supervision policies created in the Security & Compliance Center for Office 365 subscriptions cannot migrate to Microsoft 365. If you're migrating from an Office 365 subscription to a Microsoft 365 subscription, you'll need to create new communication compliance polices to replace existing Supervision policies.
@@ -42,16 +42,32 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 | **Sensitive information** | Monitor communications for sensitive information | - Locations: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns, and types, custom dictionary option, attachments larger than 1 MB |
 | **Regulatory compliance** | Monitor communications for info related to financial regulatory compliance | - Locations: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: custom dictionary option, attachments larger than 1 MB |
 
+## Permissions (preview)
+
+There are five roles used to configure permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the *Communication Compliance Admin* role.
+
+Depending on how you wish to manage communication policies and alerts, you'll need to create one or more new role groups for administrators, reviewers, and investigators. You have the option to assign users to specific role groups to manage different sets of communication compliance features. Or you may decide to create one role group and assign all the communication compliance roles to the group. Create a single role group or multiple groups to best fit your compliance management requirements.
+
+Choose from these role options when configuring your communication compliance role groups:
+
+|**Role**|**Role permissions**|
+|:-----|:-----|
+| **Communication Compliance Admin** | Users assigned this role can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned this role cannot view message alerts. |
+| **Communication Compliance Analysis** | Users assigned this role can view policies where they are assigned as Reviewers, view message metadata (not message content), escalate to additional reviewers, or send notifications to users. Analysts cannot resolve pending alerts. |
+| **Communication Compliance Investigation** | Users assigned this role can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
+| **Communication Compliance Viewer** | Users assigned this role can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
+| **Communication Compliance Case Management** | Users assigned this role can manage cases and act on alerts. This role is required for when creating custom role groups for administrators, analysts, and investigators. Custom groups for viewers do not need this role assigned. |
+
 ## Supervised users
 
 Before you start using communication compliance, you must determine who needs their communications reviewed. In the policy, user email addresses identify individuals or groups of people to supervise. Some examples of these groups are Microsoft 365 Groups, Exchange-based distribution lists, Yammer communities, and Microsoft Teams channels. You also can exclude specific users or groups from scanning with a specific exclusion group or a list of groups.
 
 >[!IMPORTANT]
->Users covered by communication compliance policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.If you don't have an existing Enterprise E5 plan and want to try communication compliance, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>Users covered by communication compliance policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription. If you don't have an existing Enterprise E5 plan and want to try communication compliance, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## Reviewers
 
-When you create a communication compliance policy, you must determine who reviews the messages of the supervised users. In the policy, user email addresses identify individuals or groups of people to review supervised communications. All reviewers must have mailboxes hosted on Exchange Online and must be assigned the **Case Management** and **Review** roles. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
+When you create a communication compliance policy, you must determine who reviews the messages of the supervised users. In the policy, user email addresses identify individuals or groups of people to review supervised communications. All reviewers must have mailboxes hosted on Exchange Online and must be assigned to either the *Communication Compliance Analysis* or *Communication Compliance Investigation* roles. Reviewers (either analysts or investigators) must also have the *Communication Compliance Case Management* role assigned. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 
 ## Groups for supervised users and reviewers
 
@@ -65,10 +81,16 @@ Adding groups and distribution lists to communication compliance policies are pa
 
 With communication compliance policies, you can choose to scan messages in one or more of the following communication platforms as a group or as standalone sources. Communications captured across these platforms are retained for seven years for each policy by default, even if users leave your organization and their mailboxes are deleted.
 
-- **Microsoft Teams**: Chat communications and associated attachments in both public and private Microsoft Teams channels and individual chats can be scanned. Teams chats and attachments matching communication compliance policy conditions may take up to 24 hours to process. Use the following group management configurations to supervise individual user chats and channel communications in Teams:
+- **Microsoft Teams**: Chat communications in both public and private Microsoft Teams channels and individual chats can be scanned. When users are assigned to a communication compliance policy with Microsoft Teams coverage selected, chat communications for the users are automatically monitored across all Microsoft Teams where the users are a member. Microsoft Teams coverage is automatically included for pre-defined policy templates and is selected by default in the custom policy template. Teams chats matching communication compliance policy conditions may take up to 24 hours to process. Use the following group management configurations to supervise individual user chats and channel communications in Teams:
 
     - **For Teams chat communications:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the communication compliance policy. This setting is for one-to-one or one-to-many user/chat relationships.
     - **For Teams Channel communications:** Assign every Microsoft Teams channel or Microsoft 365 group you want to scan that contains a specific user to the communication compliance policy. If you add the same user to other Microsoft Teams channels or Microsoft 365 groups, be sure to add these new channels and groups to the communication compliance policy.
+    - **For Teams chat communications with hybrid email environments**: Communication compliance can monitor chat messages for users for organizations with an Exchange on-premises deployment or an external email provider that have enabled Microsoft Teams. You must create a distribution group for the users with on-premises or external mailboxes to monitor. When creating a communication compliance policy, you'll assign this distribution group as the **Supervised users and groups** selection in the policy wizard.
+
+    >[!IMPORTANT]
+    >You must file a request with Microsoft Support to enable your organization to use the graphical user interface in the Security & Compliance Center to search for Teams chat data for on-premises users. For more information, see [Searching cloud-based mailboxes for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
+
+You must file a request with Microsoft Support to enable your organization to use the graphical user interface in the Security & Compliance Center to search for Teams chat data in the cloud-based mailboxes for on-premises users.
 
 - **Exchange email**: Mailboxes hosted on Exchange Online as part of your Microsoft 365 or Office 365 subscription are all eligible for message scanning. Exchange email messages and attachments matching communication compliance policy conditions may take up to 24 hours to process. Supported attachment types for communication compliance are the same as the [file types supported for Exchange mail flow rule content inspections](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
@@ -81,10 +103,8 @@ With communication compliance policies, you can choose to scan messages in one o
 - **Third-party sources**: You can scan communications from third-party sources for data imported into mailboxes in your Microsoft 365 organization. Connectors support the following third-party resources:
 
     - [Instant Bloomberg](archive-instant-bloomberg-data.md)
-    - [Facebook](archive-facebook-data-with-sample-connector.md)
-    - [LinkedIn](archive-linkedin-data.md)
-    - [Twitter](archive-twitter-data-with-sample-connector.md)
-    - [Custom data connector](archiving-third-party-data.md)
+    - [Bloomberg Message](archive-bloomberg-message-data.md)
+    - [ICE Chat](archive-icechat-data.md)
 
 You must configure a third-party connector for your Microsoft 365 organization before you can assign the connector to a communication compliance policy. The **Third-Party Sources** section of the communication compliance policy wizard only displays currently configured third-party connectors.
 
@@ -129,22 +149,27 @@ Configure custom keyword dictionaries (or lexicons) to provide simple management
 
 ### Classifiers
 
-Built-in classifiers scan sent or received messages across all communication channels in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in messages likely to violate anti-harassment policies. Built-in classifiers currently support only English keywords in messages.
+Built-in trainable and global classifiers scan sent or received messages across all communication channels in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in messages likely to violate anti-harassment policies. Built-in classifiers currently support only English keywords in messages.
 
-Communication compliance built-in classifiers scan communications for terms and sentiment for the following types of language:
+Communication compliance built-in trainable and global classifiers scan communications for terms, images, and sentiment for the following types of language and content:
 
 - **Threat**: Scans for threats to commit violence or physical harm to a person or property.
-- **Harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin.
+- **Targeted harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin.
 - **Profanity**: Scans for profane expressions that embarrass most people.
+- **Adult images**: Scans for images which are sexually explicit in nature.
+- **Racy images**: Scans for images which are sexually suggestive in nature, but contain less explicit content than images deemed Adult.
+- **Gory images**: Scans for images that depict violence and gore.
 
-The built-in classifiers don't provide an exhaustive list of terms across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update classifiers at its discretion. While classifiers may assist your organization in monitoring these areas, classifiers aren't intended to provide your organization's sole means of monitoring or addressing such language. Your organization, not Microsoft, remains responsible for all decisions related to scanning and blocking language in these areas.
+The *Adult*, *Racy*, and *Gory* image classifiers scan files in .JPEG, .PNG, .GIF, and .BMP formats. The size for image files must less than 4 megabytes (MB) and the dimensions of the images must be greater than 50x50 pixels and greater than 50 kilobytes (KB) for the image to qualify for evaluation. Image identification is supported for Exchange Online email messages and Microsoft Teams channels and chats.
 
-For information about classifiers in Microsoft 365, see [Classifiers](classifier-getting-started-with.md).
+The built-in trainable and global classifiers don't provide an exhaustive list of terms or images across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update classifiers at its discretion. While classifiers may assist your organization in monitoring these areas, classifiers aren't intended to provide your organization's sole means of monitoring or addressing such language or imagery. Your organization, not Microsoft, remains responsible for all decisions related to scanning and blocking language and images in these areas.
+
+For information about trainable classifiers in Microsoft 365, see [Getting started with trainable classifiers](classifier-getting-started-with.md).
 
 ### Conditional settings
 <a name="ConditionalSettings"> </a>
 
-The conditions you choose for the policy apply to communications from both email and third-party sources in your organization (like from Facebook or DropBox).
+The conditions you choose for the policy apply to communications from both email and third-party sources in your organization (like from Instant Bloomberg or DropBox).
 
 The following table explains more about each condition.
   
@@ -154,7 +179,7 @@ The following table explains more about each condition.
 | **Content contains any of these sensitive info types** | Apply to the policy when any sensitive information types are included or excluded in a message. Some classifiers are pre-defined in your tenant, and custom classifiers can be configured separately or as part of the condition assignment process. Each sensitive information type you choose is applied separately and only one of these sensitive information types must apply for the policy to apply to the message. For more information about custom sensitive information types, see [Custom sensitive information types](custom-sensitive-info-types.md). |
 | **Message is received from any of these domains**  <br><br> **Message is not received from any of these domains** | Apply the policy to include or exclude specific domains or email addresses in received messages. Enter each domain or email address and separate multiple domains or email addresses with a comma. Each domain or email address entered is applied separately, only one domain or email address must apply for the policy to apply to the message. <br><br> If you want to scan all email from a specific domain, but want to exclude messages that don't need review (newsletters, announcements, and so on), you must configure a **Message is not received from any of these domains** condition that excludes the email address (example "newsletter@contoso.com"). |
 | **Message is sent to any of these domains**  <br><br> **Message is not sent to any of these domains** | Apply the policy to include or exclude specific domains or email addresses in sent messages. Enter each domain or email address and separate multiple domains or email addresses with a comma. Each domain or email address is applied separately, only one domain or email address must apply for the policy to apply to the message. <br><br> If you want to scan all email sent to a specific domain, but want to exclude sent messages that don't need review, you must configure two conditions: <br> - A **Message is sent to any of these domains** condition that defines the domain ("contoso.com"), AND <br> - A **Message is not sent to any of these domains** condition that excludes the email address ("subscriptions@contoso.com"). |
-| **Message is classified with any of these labels**  <br><br> **Message is not classified with any of these labels** | To apply the policy when certain retention labels are included or excluded in a message. Retention labels must be configured separately and configured labels are chosen as part of this condition. Each label you choose is applied separately (only one of these labels must apply for the policy to apply to the message). For more information about configuring retention labels, see [Overview of retention labels](labels.md).|
+| **Message is classified with any of these labels**  <br><br> **Message is not classified with any of these labels** | To apply the policy when certain retention labels are included or excluded in a message. Retention labels must be configured separately and configured labels are chosen as part of this condition. Each label you choose is applied separately (only one of these labels must apply for the policy to apply to the message). For more information about retention labels, see [Learn about retention policies and retention labels](retention.md).|
 | **Message contains any of these words**  <br><br> **Message contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message, enter each word separated with a comma. For phrases of two words or more, use quotation marks around the phrase. Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the message). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords).|
 | **Attachment contains any of these words**  <br><br> **Attachment contains none of these words** | To apply the policy when certain words or phrases are included or excluded in a message attachment (such as a Word document), enter each word separated with a comma. For phrases of two words or more, use quotation marks around the phrase. Each word or phrase you enter is applied separately (only one word must apply for the policy to apply to the attachment). For more information about entering words or phrases, see the next section [Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords).|
 | **Attachment is any of these file types**  <br><br> **Attachment is none of these file types** | To supervise communications that include or exclude specific types of attachments, enter the file extensions (such as .exe or .pdf). If you want to include or exclude multiple file extensions, enter these on separate lines. Only one attachment extension must match for the policy to apply.|
@@ -178,7 +203,7 @@ To scan both email messages and attachments for the same keywords, create a [dat
 
 If you enter multiple conditions, Microsoft 365 uses all the conditions together to determine when to apply the communication compliance policy to communication items. When you set up multiple conditions, all conditions must be met for the policy to apply, unless you enter an exception. For example, you need a policy that applies if a message contains the word "trade", and is larger than 2 MB. However, if the message also contains the words "Approved by Contoso financial", the policy shouldn't apply. In this example, the three conditions would be defined as follows:
   
-- **Message contains any of these words**, with the keywords "trade"
+- **Message contains any of these words**, with the keyword "trade"
 - **Message size is larger than**, with the value 2 MB
 - **Message contains none of these words**, with the keywords "Approved by Contoso financial team"
 
@@ -186,16 +211,25 @@ If you enter multiple conditions, Microsoft 365 uses all the conditions together
 
 If you want to reduce the amount of content to review, you can specify a percentage of all the communications governed by a communication compliance policy. A real-time, random sample of content is selected from the total percentage of content that matches chosen policy conditions. If you want reviewers to review all items, you can configure **100%** in a communication compliance policy.
 
-## Notices
+## Privacy (preview)
 
-You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices can only be sent to the employee email address associated with the policy match that generated the specific alert for remediation. When selecting a notice template to apply to a policy violation as part of the remediation workflow, you can choose to accept the field values defined in the template or overwrite the fields as needed.
+Protecting the privacy of users that have policy matches is important and can help promote objectivity in data investigation and analysis reviews for communication compliance alerts. This setting applies only to user names displayed the communication compliance solution. It does not affect how names are displayed in other compliance solutions or admin center.
 
-Notices templates are custom email templates where you can define the following message fields:
+For users with a communication compliance match, you can choose one of the following settings in **Communication compliance settings**:
+
+- **Show anonymized versions of usernames**: User names are anonymized to prevent admins, analysts, data investigators, and reviewers from seeing who is associated with policy alerts. For example, a user 'Grace Taylor' would appear with a randomized pseudonym such as 'AnonIS8-988' in all areas of the communication compliance experience. Choosing this setting anonymizes all users with current and past policy matches and applies to all policies. User profile information in the communication compliance alert details will not be available when this option is chosen. However, user names are displayed when adding new users to existing policies or when assigning users to new policies. If you choose to turn off this setting, user names are displayed for all users that have current or past policy matches.
+- **Do not show anonymized versions of usernames**: User names are displayed for all current and past policy matches for communication compliance alerts. User profile information (the name, title, alias, and organization or department) is displayed for the user for all insider risk management alerts and cases.
+
+## Notice templates
+
+You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices can only be sent to the user email address associated with the policy match that generated the specific alert for remediation. When selecting a notice template to apply to a policy violation as part of the remediation workflow, you can choose to accept the field values defined in the template or overwrite the fields as needed.
+
+Notices templates are custom email templates where you can define the following message fields in the **Communication compliance settings** area:
 
 |**Field**|**Required**| **Details** |
 |:-----|:-----|:-----|
 |**Template name** | Yes | Friendly name for the notice template that you'll select in the notify workflow during remediation, supports text characters. |
-| **Sender address** | Yes | The address of one or more users or groups that send the message to the employee with a policy match, selected from the Active Directory for your subscription. |
+| **Sender address** | Yes | The address of one or more users or groups that send the message to the user with a policy match, selected from the Active Directory for your subscription. |
 | **CC and BCC addresses** | No | Optional users or groups to be notified of the policy match, selected from the Active Directory for your subscription. |
 | **Subject** | Yes | Information that appears in the subject line of the message, supports text characters. |
 | **Message body** | Yes | Information that appears in the message body, supports text or HTML values. |
@@ -207,13 +241,13 @@ If you'd like to create more than a simple text-based email message for notifica
 ```HTML
 <!DOCTYPE html>
 <html>
-<body>
-<h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
-<p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
-<p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
-<p>Thank you,</p>
-<p><em>Human Resources</em></p>
-</body>
+    <body>
+        <h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
+        <p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
+        <p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
+        <p>Thank you,</p>
+        <p><em>Human Resources</em></p>
+    </body>
 </html>
 ```
 
@@ -229,7 +263,7 @@ Communication compliance filters allow you to filter and sort alert messages for
 | **Date** | The date the message was sent or received by a user in your organization. |
 | **File class** | The class of the message based on the message type, either *message* or *attachment*. |
 | **Has attachment** | The attachment presence in the message. |
-| **Item class** | The source of the message based on the message type, email, Microsoft Team chat, Bloonmberg, etc. For more information on common Item Types and Message Classes, see [Item Types and Message Classes](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
+| **Item class** | The source of the message based on the message type, email, Microsoft Team chat, Bloomberg, etc. For more information on common Item Types and Message Classes, see [Item Types and Message Classes](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
 | **Recipient domains** | The domain to which the message was sent. This domain is normally your Microsoft 365 subscription domain by default. |
 | **Recipient** | The user to which the message was sent. |
 | **Sender** | The person who sent the message. |
@@ -275,21 +309,41 @@ If you'd like to change the severity level assigned in an alert policy for a spe
 
 7. Select **Close** to exit the alert policy details page.
 
+## Reports (preview)
+
+The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets is not exportable.
+
+The **Reports** dashboard contains the following report widgets:
+
+- **Recent policy matches**: displays the number of matches by active policy over time.
+- **Resolved items by policy**: displays the number of policy match alerts resolved by policy over time.
+- **Users with most policy matches**: displays the users (or anonymized usernames) and number of policy matches for a given period.
+- **Policy with most matches**: displays the policies and the number of matches for a given period, ranked highest to lowest for matches.
+
 ## Audit
 
-In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This information may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
+In some instances, you must provide information to regulatory or compliance auditors to prove supervision of user activities and communications. This information may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
 
 >[!Important]
 >Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log).
 
-To view communication compliance policy activities, select the **Export review activities** control on the main page for any policy. This action generates an audit file in the .csv format that contains the following information:
+To view communication compliance policy update activities, select the **Export policy updates** control on the main page for any policy. You must be assigned the *Global Admin* or *Communication Compliance Admin* roles to export update activities. This action generates an audit file in the .csv format that contains the following information:
 
 |**Field**|**Details**|
 |:-----|:-----|
-| **CreationDate** | The date the activity was performed in a policy. |
-| **UserIds** | The user that performed the activity in a policy. |
-| **Operations** | The operations performed on the policy. |
-| **AuditData** | This field is the main data source for all policy activities. All activities are recorded and separated by comma delimiters. |
+| **CreationDate** | The date the update activity was performed in a policy. |
+| **UserIds** | The user that performed the update activity in a policy. |
+| **Operations** | The update operations performed on the policy. |
+| **AuditData** | This field is the main data source for all policy update activities. All update activities are recorded and separated by comma delimiters. |
+
+To view communication compliance review activities for a policy, select the **Export review activities** control on the **Overview** page for a specific policy. You must be assigned the *Global Admin* or *Communication Compliance Admin* roles to export review activities. This action generates an audit file in the .csv format that contains the following information:
+
+|**Field**|**Details**|
+|:-----|:-----|
+| **CreationDate** | The date the review activity was performed in a policy. |
+| **UserIds** | The user that performed the review activity in a policy. |
+| **Operations** | The review operations performed on the policy. |
+| **AuditData** | This field is the main data source for all policy review activities. All review activities are recorded and separated by comma delimiters. |
 
 You can also view audit activities in the unified audit log or with the [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet.
 

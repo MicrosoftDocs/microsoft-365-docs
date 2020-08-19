@@ -34,12 +34,12 @@ Example showing available sensitivity labels in Excel, from the **Home** tab on 
 
 ![Sensitivity label on Excel ribbon and status bar](../media/Sensitivity-label-in-Excel.png)
 
-Sensitivity labels are supported for tenants in the global (public) cloud only. Currently, sensitivity labels aren't supported for tenants in other clouds such as [national clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
+To apply sensitivity labels, users must be signed in with their Microsoft 365 work or school account.
 
 > [!NOTE]
-> Sensitivity labels aren't yet available in US Government Community (GCC) organizations.
-
-To apply sensitivity labels, users must be signed in to Office with their work or school account.
+> For US Government Community (GCC and GCC-HC) tenants, sensitivity labels are currently supported only for the Azure Information Protection unified labeling client and scanner. 
+> 
+> For more information, see the blog post, [Announcing General Availability of Unified Labeling in GCC and GCC-H Environments](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-general-availability-of-unified-labeling-in-gcc-and/ba-p/1563215).
 
 You can use sensitivity labels to:
   
@@ -67,15 +67,12 @@ When you assign a sensitivity label to a document or email, it's like a stamp th
 
 In Office apps, a sensitivity label appears like a tag to users on an email or document.
 
-Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](labels.md) applied to it.
+Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](retention.md#retention-labels) applied to it.
 
 > [!div class="mx-imgBorder"]
 > ![Sensitivity label applied to an email](../media/Sensitivity-label-on-email.png)
 
 ## What sensitivity labels can do
-
-> [!NOTE]
-> In addition to applying sensitivity labels to emails and documents, currently in preview, you can also [use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
 
 After a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content. With a sensitivity label, you can:
 
@@ -92,9 +89,9 @@ After a sensitivity label is applied to an email or document, any configured pro
     String lengths: Watermarks are limited to 255 characters. Headers and footers are limited to 1024 characters, except in Excel. Excel has a total limit of 255 characters for headers and footers but this limit includes characters that aren't visible, such as formatting codes. If that limit is reached, the string you enter is not displayed in Excel.
 
 
-- **Protect content in containers such as sites and groups** when you opt into the preview to [use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md).
+- **Protect content in containers such as sites and groups** when you enable the capability to [use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
     
-    Configuration options for **Site and group settings** don't display until you opt into the preview. Be aware that this label configuration doesn't result in documents being automatically labeled but instead, the label settings protect content by controlling access to the container where documents are stored. These settings include the privacy level, whether a Microsoft 365 group owner can add guests to the group, and the level of access granted to an unmanaged device.
+    Configuration options for **Site and group settings** don't display until you enable this capability. Be aware that this label configuration doesn't result in documents being automatically labeled but instead, the label settings protect content by controlling access to the container where documents are stored. These settings include the privacy level, whether a Microsoft 365 group owner can add guests to the group, and the level of access granted to an unmanaged device.
 
 - **Apply the label automatically in Office apps, or recommend a label.** You can choose what types of sensitive information that you want labeled, and the label can either be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays whatever text you choose. For example:
     
@@ -159,7 +156,7 @@ With a label policy, you can:
 
     ![Learn more link on Sensitivity button on Ribbon](../media/Sensitivity-label-learn-more.png)
 
-After you create a label policy that assigns sensitivity labels to users and groups, allow up to 24 hours for these users to see the labels in their Office apps.
+After you create a label policy that assigns new sensitivity labels to users and groups, users see those labels in their Office apps within 30 minutes. However, allow up to 24 hours for changes to those labels.
 
 There is no limit to the number of sensitivity labels that you can create and publish, with one exception: If the label applies encryption, there is a maximum of 500 labels that you can create. However, as a best practice to lower admin overheads and reduce complexity for your users, try to keep the number of labels to a minimum. Real-world deployments have proved effectiveness to be noticeably reduced when users have more than five main labels or more than five sublabels per main label.
 
@@ -175,11 +172,11 @@ A label policy consists of:
 
 You can include a user in multiple label policies, and the user will see all the sensitivity labels from those policies. However, a user gets the policy settings from only the label policy with the highest priority.
 
-If you're not seeing the label or label policy setting that you expect for a user or group, and you have waited 24 hours, check the order of the sensitivity label policies. To reorder the label policies, select a sensitivity label policy > choose the ellipsis on the right > **Move down** or **Move up**.
+If you're not seeing the label or label policy setting that you expect for a user or group, and you have waited 30 minutes, check the order of the sensitivity label policies. To reorder the label policies, select a sensitivity label policy > choose the ellipsis on the right > **Move down** or **Move up**.
 
 ![Move option on the page for sensitivity label policies](../media/sensitivity-label-policy-priority.png)
 
-If you use retention labels in addition to sensitivity labels, it's important to remember that priority matters for sensitivity label policies, but not for [retention label policies](labels.md#the-principles-of-retention-or-what-takes-precedence).
+If you use retention labels in addition to sensitivity labels, it's important to remember that priority matters for sensitivity label policies, but not for [retention labels](retention.md#the-principles-of-retention-or-what-takes-precedence).
 
 ## Sensitivity labels and Azure Information Protection
 

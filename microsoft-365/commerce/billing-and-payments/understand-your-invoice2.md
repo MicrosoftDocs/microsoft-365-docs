@@ -29,7 +29,7 @@ description: "Learn how to interpret the charges, billing, and payment informati
 
 # Understand your bill or invoice for Microsoft 365 for business
 
-Each month you'll receive an email that tells you that your new billing statement is available in the admin center. [Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md).
+Either monthly or annually (depending on the option you chose when you purchased your subscription), you'll receive an email that tells you that your new billing statement is available in the admin center. [Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md).
   
 Your invoice contains two pages. Page 1 is the invoice summary, and contains general information about the invoice, order, amount due, how to make a payment, and how to contact support.
   

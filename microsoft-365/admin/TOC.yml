@@ -93,21 +93,19 @@
              href: manage/assign-licenses-to-users.md  
            - name: Assign admin roles
              href: add-users/assign-admin-roles.md
+           - name: Unassign licenses from users
+             href: manage/remove-licenses-from-users.md
            - name: Guest users
              href: add-users/about-guest-users.md
            - name: Add guest users to a Microsoft 365 group
              href: create-groups/manage-guest-access-in-groups.md
-           - name: Remove licenses from users
-             href: manage/remove-licenses-from-users.md
-           - name: Resolve license conflicts
-             href: manage/resolve-license-conflicts.md
            - name: Change a user name and email address
              href: add-users/change-a-user-name-and-email-address.md
            - name: Remove a former employee
              href: add-users/remove-former-employee.md
            - name: Access and back up a former user’s data
              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
-           - name: Restore  a user
+           - name: Restore a user
              href: add-users/restore-user.md
            - name: Reset passwords
              href: add-users/reset-passwords.md
@@ -135,20 +133,8 @@
              href: create-groups/add-or-remove-members-from-groups.md
            - name: Restore a deleted group
              href: create-groups/restore-deleted-group.md
-           - name: Plan for governance of groups
-             href: create-groups/plan-for-groups-governance.md
-           - name: Manage creation of groups
-             href: create-groups/manage-creation-of-groups.md
-           - name: Choose domain for groups
-             href: create-groups/choose-domain-to-create-groups.md
-           - name: Overview of group naming policies
-             href: create-groups/groups-naming-policy.md
-           - name: Allow members to send mail to and from groups
-             href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
            - name: Manage guest access to groups
              href: create-groups/manage-guest-access-in-groups.md
-           - name: Use sensitivity labels with groups
-             href: ../compliance/sensitivity-labels-teams-groups-sites.md
     - name: Manage email and calendars
       href: email/index.yml
       items: 
@@ -197,6 +183,10 @@
           href: get-help-with-domains/buy-a-domain-name.md
         - name: Remove a domain
           href: get-help-with-domains/remove-a-domain.md
+        - name: Transfer a domain from Microsoft 365 to another host
+          href: get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md
+        - name: Pilot Microsoft 365 from my custom domain
+          href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: Domains FAQ
           href: setup/domains-faq.md
         - name: Host-specific instructions
@@ -224,14 +214,14 @@
            href: setup/upgrade-users-to-latest-office-client.md
          - name: Requirements for centralized deployment of add-ins
            href: manage/centralized-deployment-of-add-ins.md
-         - name: Install and manage add-ins by using Centralized Deployment
+         - name: Deploy add-ins in the admin center 
            href: manage/manage-deployment-of-add-ins.md
+         - name: Manage add-ins in the admin center 
+           href: manage/manage-addins-in-the-admin-center.md
          - name: Centralized Deployment FAQ
            href: manage/centralized-deployment-faq.md
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
-         - name: About Message center
-           href: manage/message-center.md
          - name: Manage Message center messages
            href: manage/manage-messages.md
          - name: Set up release options
@@ -296,12 +286,12 @@
           href: ../business/device-states.md
         - name: App protection settings for Windows 10 PCs
           href: ../business/protection-settings-for-windows-10-devices.md
-        - name: App protection settings for Android and iOS
+        - name: Set app protection settings for Android and iOS
           href: ../business/app-protection-settings-for-android-and-ios.md
           items: 
             - name: Validate settings on Android or iOS
               href: ../business/validate-settings-on-android-or-ios.md
-        - name: Device protection settings  for Windows 10 PCs
+        - name: Set device protection settings  for Windows 10 PCs
           href: ../business/protection-settings-for-windows-10-pcs.md
           items: 
             - name: Validate settings on Windows 10 PCs

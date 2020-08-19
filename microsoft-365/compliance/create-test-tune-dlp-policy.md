@@ -23,7 +23,7 @@ description: In this article, you'll learn how to create, test, and tune a DLP p
 
 # Create, test, and tune a DLP policy
 
-Data loss prevention (DLP) is a compliance feature designed to help your organization prevent the intentional or accidental exposure of sensitive information to unwanted parties. DLP has its roots in Exchange Server and Exchange Online, and is also applicable in SharePoint Online and OneDrive for Business.
+Data loss prevention (DLP) is a compliance feature designed to help your organization prevent the unintentional or accidental exposure of sensitive information to unwanted parties. DLP has its roots in Exchange Server and Exchange Online, and is also applicable in SharePoint Online and OneDrive for Business.
 
 DLP uses a content analysis engine to examine the contents of email messages and files, looking for sensitive information such as credit card numbers and personally identifiable information (PII). Sensitive information should typically not be sent in email, or included in documents, without taking additional steps such as encrypting the email message or files. Using DLP you can detect sensitive information, and take action such as:
 
@@ -32,6 +32,24 @@ DLP uses a content analysis engine to examine the contents of email messages and
 - Actively block the email or file sharing from taking place
 
 Sometimes customers dismiss DLP because they don't consider themselves to have the type of data that needs protecting. The assumption is that sensitive data, such as medical records or financial information, only exists for industries like health care or for companies that run online stores. But any business can handle sensitive information on a regular basis, even if they don't realize it. A spreadsheet of employee names and dates of birth is just as sensitive as a spreadsheet of customer names and credit card details. And this type of information tends to float around more than you might expect, as employees quietly go about their day to day tasks, thinking nothing of export a CSV file from a system and emailing it to someone. You might also be surprised how often employees send emails containing credit card or banking details without considering the consequences.
+
+## Permissions
+
+Members of your compliance team who will create DLP policies need permissions to the Security &amp; Compliance Center. By default, your tenant admin will have access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a tenant admin. To do this, we recommend that you:
+  
+1. Create a group in Microsoft 365 and add compliance officers to it.
+    
+2. Create a role group on the **Permissions** page of the Security &amp; Compliance Center. 
+
+3. While creating the role group, use the **Choose Roles** section to add the following role to the role group: **DLP Compliance Management**.
+    
+4. Use the **Choose Members** section to add the Microsoft 365 group you created before to the role group.
+
+You can also create a role group with view-only privileges to the DLP policies and DLP reports by granting the **View-Only DLP Compliance Management** role.
+
+For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+  
+These permissions are required only to create and apply a DLP policy. Policy enforcement does not require access to the content.
 
 ## How sensitive information is detected by DLP
 

@@ -15,8 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: Learn how to use the built-in custodian management tool in Advanced eDiscovery to coordinate your workflows and identify relevant data sources in a case.
+description: "Learn how to use the built-in custodian management tool in Advanced eDiscovery to coordinate your workflows and identify relevant data sources in a case."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -24,44 +23,43 @@ ms.custom: seo-marvel-apr2020
 
 Use the built-in custodian management tool in Advanced eDiscovery to coordinate your workflows around managing custodians and identifying relevant, custodial data sources associated with a case. When you add a custodian, the system can automatically identify and place a hold on their Exchange mailbox and OneDrive for Business account. During the discovery process of your investigation, you might also identify additional data sources (such as mailboxes, sites, or Teams) that a custodian accessed or contributed to. In this situation, you can use the custodian management tool to associate those data sources will a specific custodian. After you add custodians to a case and associate other data source with them, you can quickly preserve data and search the custodial data.
 
-Use the following workflow to add and manage custodians in Advanced eDiscovery cases. 
+Use the following workflow to add and manage custodians in Advanced eDiscovery cases.
 
-![Custodian Management Tab](../media/CustodianMgtPage.png)
+![Sources tab in Advanced eDiscovery case](../media/AeD-Sources-Tab.png)
 
 ## Make sure you have the necessary permissions
 
 To add custodians to a case, you must be a member of the eDiscovery Manager role group. This will provide you with the necessary permissions to add custodians to a case and place a hold on the custodial data sources.
-
 
 ## Step 1: Add potential custodians
 
 The first step is to identify and add custodians to the case.
 
 1. On the **Advanced eDiscovery** home page, click the case that you want to add custodians to. 
- 
-2. Click the **Custodians** tab and then click **+ Add custodians**.
 
-3. Find the custodians to add  to the case. Type the first part of a person's name to display users from your organization's Azure Active Directory. When you find the correct person, click their name to add them to the list.
+2. Click the **Sources** tab and then click **Add custodians**.
+
+3. Find the custodians to add to the case. Type the first part of a person's name to display users from your organization's Azure Active Directory. When you find the correct person, click their name to add them to the list.
 
    ![Identify Potential Custodians](../media/AddCustodianStep1.png)
- 
+
 4. After added all the relevant custodians, click **Next** to select the custodians' primary data sources.
   
 ## Step 2: Select custodian data sources
 
 After adding custodians, the custodian tool will help you identify the primary data sources owned by each custodian. These data locations are the custodian's Exchange mailbox and OneDrive account. 
 
-To identify custodian data sources: 
+To identify custodian data sources:
 
 1. To select the Exchange mailbox for all custodians, select the **Exchange** check box at the top of the column. You can then clear the check box for any specific custodian to remove a mailbox as a custodial location. Alternatively, you can leave the **Exchange** check box at the top of the column unselected and then select the check box for individual custodians. 
- 
+
    ![Select Custodial Data Sources](../media/AddCustodianStep2.png)
- 
+
 2. Repeat the same thing for the custodians' OneDrive accounts. 
 
     After you select the custodian data sources, the system automatically attempts to identify and verify these data sources, and then adds them to the case as data sources associated with the custodians.
- 
-4. Click **Next** to begin associating additional data sources to the custodians in the case.
+
+3. Click **Next** to begin associating additional data sources to the custodians in the case.
 
 ## Step 3: Associate additional data sources to a custodian
 
@@ -97,8 +95,8 @@ After you've finalized the custodians and data sources to add to the case, you c
 
 To place the custodians and data sources on hold:
 
-1. On the **Place a hold on the selected custodians** page, select the **Hold** check box at the top of the column to place all custodians on hold. You can then clear the check box for any specific custodian to remove from the hold. Alternatively, you can leave the **Hold** check box at the top of the column unselected and then select the check box for individual custodians. 
- 
+1. On the **Place a hold on the selected custodians** page, select the **Hold** check box at the top of the column to place all custodians on hold. You can then clear the check box for any specific custodian to remove from the hold. Alternatively, you can leave the **Hold** check box at the top of the column unselected and then select the check box for individual custodians.
+
    ![Place Holds](../media/AddCustodianStep5.PNG)
 
 2. Verify the custodian hold selections and then click **Complete**.
@@ -110,4 +108,3 @@ After a custodian is placed on hold, a custodian hold policy that contains all c
 1. On the **Home** page of the case, click the **Holds** tab and then click **CustodianHold-Guid**,  
 
 2. On the flyout page, click **Edit hold** to view all the custodian data sources that are placed on hold.
-

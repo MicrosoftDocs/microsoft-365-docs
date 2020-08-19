@@ -36,9 +36,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Url` | string | Full URL in the email subject, body, or attachment |
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
+- [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
