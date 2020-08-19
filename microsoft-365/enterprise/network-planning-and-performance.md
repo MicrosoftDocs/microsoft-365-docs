@@ -3,7 +3,7 @@ title: "Network planning and performance tuning for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/23/2020
+ms.date: 8/19/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -25,7 +25,7 @@ Before you deploy for the first time or migrate to Microsoft 365, you can use th
   
 |||||
 |:-----|:-----|:-----|:-----|
-|**Network planning** <br/> ![Network](../media/5e9dcd06-601b-4b28-88dc-f524e7548794.png)           <br/> |Want fast connections and pages that load quickly?  <br/> Read [Getting the best connectivity and performance in Microsoft 365](https://aka.ms/o365perfprinciples) <br/> Read [Microsoft 365 Network Connectivity Overview](microsoft-365-networking-overview.md) to understand concepts,  <br/> |**Measuring your network** <br/> ![Calculator](../media/d690a132-4884-40eb-a918-526bb3dff3cc.png)           <br/> |Read [Microsoft 365 performance tuning using baselines and performance history](performance-tuning-using-baselines-and-history.md) and [Performance troubleshooting plan for Microsoft 365](performance-troubleshooting-plan.md).  <br/> Use these tools to [evaluate your existing network](network-and-migration-planning.md#calculators).  <br/> |
+|**Network planning** <br/> ![Network](../media/5e9dcd06-601b-4b28-88dc-f524e7548794.png)           <br/> |Want fast connections and pages that load quickly?  <br/> Read [Getting the best connectivity and performance in Microsoft 365](https://aka.ms/o365perfprinciples).<br/>Read [Microsoft 365 Network Connectivity Overview](microsoft-365-networking-overview.md) to understand concepts.<br/> |**Measuring your network** <br/> ![Calculator](../media/d690a132-4884-40eb-a918-526bb3dff3cc.png)           <br/> |Read [Microsoft 365 performance tuning using baselines and performance history](performance-tuning-using-baselines-and-history.md) and [Performance troubleshooting plan for Microsoft 365](performance-troubleshooting-plan.md).  <br/> Use these tools to [evaluate your existing network](network-and-migration-planning.md#calculators).  <br/> |
 |**Best practices** <br/> ![Best practices](../media/2a659a5c-1007-47d3-a6c6-a19e018ab29b.png)           <br/> |[Best practices for network planning and improving migration performance for Microsoft 365](network-and-migration-planning.md#BestPractices). Want to get started helping your users right away? See [Best practices for using Office 365 on a slow network](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166).  <br/> [Microsoft 365 Network Connectivity Principles](https://aka.ms/o365networkingprinciples) will help you understand the most recent guidance for securely optimizing Microsoft 365 network connectivity.  <br/> |**Reference** <br/> ![Book or Journal](../media/56dff3c1-f605-48d8-811f-7d13ce639ecd.png)           <br/> |Want the details, like a list of IP addresses and ports? See the [Network planning reference for Microsoft 365](network-and-migration-planning.md#NetReference).  <br/> |
 |![See the Microsoft Cloud Networking for Enterprise Architects poster](../media/3094be9f-2407-4fa5-896d-aa66ef7b9bb9.png)           <br/> |For the steps to optimize your network for Microsoft 365 and other Microsoft cloud platforms and services, see the [Microsoft Cloud Networking for Enterprise Architects](https://aka.ms/cloudarchnetworking) poster.  <br/> |
    
