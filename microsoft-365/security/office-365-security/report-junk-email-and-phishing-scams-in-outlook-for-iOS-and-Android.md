@@ -35,7 +35,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 For messages in the Inbox or any other email folder except Junk, use the following steps to report spam and phishing messages on your iOS or Android device:
 
 1. Select one or more messages.
-2. In the the top-right corner tap on the three vertical dots. The action menu opens.
+2. In the top-right corner tap on the three vertical dots. The action menu opens.
 
    ![Report junk or phishing email from the action menu](../../media/Android-report-as-junk-dialog.png)
 
@@ -52,10 +52,10 @@ For messages in the Inbox or any other email folder except Junk, use the followi
 In the Junk folder, use the following steps to report spam false positives:
 
 1. Select one or more messages.
-2. In the the top-right corner tap on the three vertical dots. The action menu opens.
+2. In the top-right corner tap on the three vertical dots. The action menu opens.
 
    ![Report not junk email from the action menu](../../media/Android-not-junk-email.png)
 
 2. Tap **Not junk**.
 
-3. A toast notification lets you know the email has moved to your inbox. If you change your mind, click **Undo** on the toast notification and the email stays in the **Junk** folder.
+3. A toast notification lets you know the email has moved to your inbox. If you change your mind, select **Undo** on the toast notification and the email stays in the **Junk** folder.
