@@ -1,6 +1,6 @@
 ---
 # This template provides a structure for M365 SMB admin articles.
-# For details about MAX content metadata requirements, see https://review.docs.microsoft.com/office-authoring-guide/metadata-for-max-content-on-dmc
+# For details about MARVEL content metadata requirements, see https://review.docs.microsoft.com/office-authoring-guide/metadata-for-max-content-on-dmc
 
 title: "Article title goes here"   # (Required) Very important for SEO. See https://aka.ms/seo-for-writers-cheat-sheet
 f1.keywords:   # (Optional) Choose from: CSH (if article is called from in-app UX), NOCSH (if article is not called from in-app UX)
