@@ -36,17 +36,17 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 > [!NOTE]
 > The default audit log retention policy only applies to audit records for activity performed by users who are assigned an Office 365 or Microsoft 365 E5 license or have a Microsoft 365 E5 Compliance add-on license. If you have non-E5 users in your organization, their corresponding audit records are retained for 90 days.
 
-## Before you begin
+## Before you create an audit log retention policy
 
 - You have to be assigned the Organization Configuration role in the Security & Compliance Center to create or modify an audit retention policy.
 
 - You can have a maximum of 50 audit log retention policies in your organization.
 
-- To retain an audit log for longer than 90 days, the user who generated the audit log must be assigned an Office 365 or Microsoft 365 E5 license or have a Microsoft 365 E5 Compliance add-on license.
+- To retain an audit log for longer than 90 days, the user who generated the audit log must be assigned an Office 365 E5 or Microsoft 365 E5 license or have a Microsoft 365 E5 Compliance or E5 eDiscovery and Audit add-on license.
 
 - All custom audit log retention policies (created by your organization) take priority over the default retention policy. For example, if you create an audit log retention policy for Exchange mailbox activity that has a retention period that's shorter than one year, audit records for Exchange mailbox activities will be retained for the shorter duration specified by the custom policy.
 
-## Create an audit log retention policy in the Security & Compliance Center
+## Create an audit log retention policy in the compliance center
 
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with user account that's assigned the Organization Configuration role in the Security & Compliance Center.
 
@@ -61,7 +61,7 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
     ![Audit retention policy flyout page](../media/AuditLogRetentionPolicy2.png)
 
    a. **Name:** The name of the audit log retention policy. This name must be unique in your organization.
-   
+
    b. **Description:** Optional, but helpful to provide information about the policy, such as the record type or workload, users specified in the policy, and the duration.
 
    c. **Record types:** The audit record type the policy applies to. If you select more than one record type, you can't select activities because the policy will apply to all activities for the selected record types. Also, if you leave this property blank, you must select a user in the **Users** box.
