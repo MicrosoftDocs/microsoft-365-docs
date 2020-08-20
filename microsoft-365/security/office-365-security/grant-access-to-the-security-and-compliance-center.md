@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - 'ms.o365.cc.PermissionsHelp'
 ms.service: O365-seccomp
