@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: 
 search.appverid: 
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: Normal
+localization_priority: None
 
 ---
 # Set up Knowledge Management (Preview)

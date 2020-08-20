@@ -20,6 +20,7 @@ search.appverid:
 - MET150
 description: "Get technical and billing support by using phone numbers listed for your country or region, or submitting your service request online."
 feedback_system: None
+ms.date: 7/28/2020
 ---
 # Ways to contact support for business products - Admin Help
 
@@ -50,6 +51,9 @@ Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), 
 Technical support is provided in English 24 hours a day, 7 days a week.\
 Admins, have your account details ready when you call.
 
+> [!NOTE]
+> To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization’s account.
+
 - **In the United States, call 1 800 865 9408.**
 
 - **In Australia, call 1 800 197 503.**
@@ -58,12 +62,9 @@ Admins, have your account details ready when you call.
 
 - **In the United Kingdom, call 0800 032 6417.**
 
-### Phone numbers for other countries
-
 If your support phone number isn't listed above, use the drop-down menu below to find the number for your country or region.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
-
 
 ::: moniker-end
 

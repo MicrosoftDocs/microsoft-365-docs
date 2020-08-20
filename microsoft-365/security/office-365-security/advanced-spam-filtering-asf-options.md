@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -28,7 +28,13 @@ description: "Admins can learn about the Advanced Spam Filter (ASF) settings tha
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, the Advanced Spam Filter (ASF) settings in anti-spam policies (also known as spam filter policies or content filter policies) allow admins to mark messages as spam based on specific message properties. ASF specifically targets these properties because they're commonly found in spam. Depending on the property, ASF detections will either mark the message as **Spam** or **High confidence spam**.
 
 > [!NOTE]
-> Enabling one or more of the ASF settings is an aggressive approach to spam filtering. You can't report messages that are filtered by ASF as false positives. You can identify messages that were filtered by ASF by: <ul><li>Periodic end-user spam quarantine notifications.</li><li>The presence of filtered messages in quarantine.</li><li>The specific `X-CustomSpam:` X-header fields that are added to messages as described in this topic.</li></ul>
+> Enabling one or more of the ASF settings is an aggressive approach to spam filtering. You can't report messages that are filtered by ASF as false positives. You can identify messages that were filtered by ASF by:
+>
+> - Periodic end-user spam quarantine notifications.
+>
+> - The presence of filtered messages in quarantine.
+>
+> - The specific `X-CustomSpam:` X-header fields that are added to messages as described in this topic.
 
 The following sections describe the ASF settings and options that are available in anti-spam policies in the Security & Compliance Center, and in Exchange Online PowerShell or standalone EOP PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
@@ -53,9 +59,7 @@ For each ASF setting, the following options are available in anti-spam policies:
   - Test mode is not available for the following ASF settings:
 
     - **Conditional Sender ID filtering: hard fail** (*MarkAsSpamFromAddressAuthFail*)
-
     - **NDR backscatter**(*MarkAsSpamNdrBackscatter*)
-
     - **SPF record: hard fail** (*MarkAsSpamSpfRecordHardFail*)
 
   - The same test mode action is applied to *all* ASF settings that are set to **Test**. You can't configure different test mode actions for different ASF settings.
@@ -64,9 +68,10 @@ For each ASF setting, the following options are available in anti-spam policies:
 
 The following ASF settings set the spam confidence level (SCL) of detected messages to 5 or 6, which corresponds to the **Spam** filter verdict and the corresponding action in anti-spam policies.
 
-||||
+****
+
+|Anti-spam policy setting|Description|X-header added|
 |---|---|---|
-|**Anti-spam policy setting**|**Description**|**X-header added**|
 |**Image links to remote sites** <br/><br/> *IncreaseScoreWithImageLinks*|Messages that contain `<Img>` HTML tag links to remote sites (for example, using http) are marked as spam.|`X-CustomSpam: Image links to remote sites`|
 |**URL redirect to other port** <br/><br/> *IncreaseScoreWithRedirectToOtherPort*|Message that contain hyperlinks that redirect to TCP ports other than 80 (HTTP), 8080 (alternate HTTP), or 443 (HTTPS) are marked as spam.|`X-CustomSpam: URL redirect to other port`|
 |**Numeric IP address in URL** <br/><br/> *IncreaseScoreWithNumericIps*|Messages that contain numeric-based URLs (typically, IP addresses) are marked as spam.|`X-CustomSpam: Numeric IP in URL`|
@@ -77,9 +82,10 @@ The following ASF settings set the spam confidence level (SCL) of detected messa
 
 The following ASF settings set the SCL of detected messages to 9, which corresponds to the **High confidence spam** filter verdict and the corresponding action in anti-spam policies.
 
-||||
+****
+
+|Anti-spam policy setting|Description|X-header added|
 |---|---|---|
-|**Anti-spam policy setting**|**Description**|**X-header added**|
 |**Empty messages** <br/><br/> *MarkAsSpamEmptyMessages*|Messages with no subject, no content in the message body, and no attachments are marked as high confidence spam.|`X-CustomSpam: Empty Message`|
 |**JavaScript or VBScript in HTML** <br/><br/> *MarkAsSpamJavaScriptInHtml*|Messages that use JavaScript or Visual Basic Script Edition in HTML are marked as high confidence spam. <br/><br/> These scripting languages are used in email messages to cause specific actions to automatically occur.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
 |**Frame or IFrame tags in HTML** <br><br/> *MarkAsSpamFramesInHtml*|Messages that contain `<frame>` or `<iframe>` HTML tags are marked as high confidence spam. <br/><br/> These tags are used in email messages to format the page for displaying text or graphics.|`X-CustomSpam: IFRAME or FRAME in HTML`|

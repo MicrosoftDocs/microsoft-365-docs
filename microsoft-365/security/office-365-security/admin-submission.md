@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -113,7 +113,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 2. On the **Submissions** page that appears, verify that the **Admin submissions** tab is selected.
 
-Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
+Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** (a GUID value that's assigned to every submission) by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
 
 To change the filter criteria, click the **Submission ID** button and choose one of the following values:
 
@@ -136,7 +136,7 @@ Click the **Email** tab.
 You can click the **Column options** button near the bottom of the page to add or remove columns from the view:
 
 - **Date**
-- **Submission ID**
+- **Submission ID**: A GUID value that's assigned to every submission.
 - **Submitted by**<sup>\*</sup>
 - **Subject**<sup>\*</sup>
 - **Sender**
