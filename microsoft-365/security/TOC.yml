@@ -188,6 +188,8 @@
                       href: mtp/advanced-hunting-emailpostdeliveryevents-table.md
                     - name: EmailUrlInfo
                       href: mtp/advanced-hunting-emailurlinfo-table.md
+                    - name: IdentityDirectoryEvents
+                      href: mtp/advanced-hunting-identitydirectoryevents-table.md
                     - name: IdentityInfo
                       href: mtp/advanced-hunting-identityinfo-table.md
                     - name: IdentityLogonEvents
