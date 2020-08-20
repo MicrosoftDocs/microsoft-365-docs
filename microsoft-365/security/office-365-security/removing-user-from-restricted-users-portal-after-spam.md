@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
 ms.service: O365-seccomp
