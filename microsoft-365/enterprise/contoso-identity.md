@@ -9,7 +9,7 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -20,7 +20,7 @@ description: How Contoso takes advantage of Identity as a Service (IDaaS) and pr
 
 # Identity for the Contoso Corporation
 
-Microsoft provides an Identity as a Service (IDaaS) across its cloud offerings with Azure Active Directory (Azure AD). To adopt Microsoft 365 Enterprise, Contoso's IDaaS solution had to leverage their on-premises identity provider and still include federated authentication with their existing trusted, third-party identity providers.
+Microsoft provides an Identity as a Service (IDaaS) across its cloud offerings with Azure Active Directory (Azure AD). To adopt Microsoft 365 for enterprise, Contoso's IDaaS solution had to leverage their on-premises identity provider and still include federated authentication with their existing trusted, third-party identity providers.
 
 ## Contoso's Active Directory Domain Services forest
 
@@ -51,7 +51,7 @@ Contoso decided to keep this infrastructure and dedicate it to customer and part
 
 Contoso wanted to leverage its on-premises AD DS forest for authentication to Microsoft 365 cloud resources. It decided on password hash synchronization (PHS).
 
-PHS synchronizes the on-premises AD DS forest with the Azure AD tenant of their Microsoft 365 Enterprise subscription, copying user and group accounts and a hashed version of user account passwords. 
+PHS synchronizes the on-premises AD DS forest with the Azure AD tenant of their Microsoft 365 for enterprise subscription, copying user and group accounts and a hashed version of user account passwords. 
 
 To perform the ongoing directory synchronization, Contoso has deployed the Azure AD Connect tool on a server in its Paris datacenter. 
 
@@ -77,8 +77,8 @@ Here is Contoso's resulting set of identity and device Conditional Access polici
 
 ## See also
 
-[Identity for Microsoft 365 Enterprise](identity-infrastructure.md)
+[Identity roadmap for Microsoft 365](identity-roadmap-microsoft-365.md)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)

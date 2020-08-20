@@ -203,6 +203,20 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
    > [!NOTE]
    > In the URL flyout dialog, the filtering on email messages is removed to show you the full view of the URL's exposure in your environment. This lets you filter down email messages in Explorer to ones you are concerned about, find specific URLs that are potential threats, then expand your understanding of the URL exposure in your environment (via the URL details dialog) without having to add URL filters to the Explorer view itself.
 
+
+**Interpretation of different click verdicts**
+
+Within the Email or URL flyouts, Top Clicks as well as within our filtering experiences, you will see different click values as part of your hunting experience. Below are the possible values of Click Verdicts and their interpretation:
+
+- **None**: We were unable to capture the verdict for the URL. The user might have clicked through the URL.
+- **Allowed**: The user was allowed to navigate to the URL.
+- **Blocked**: The User was blocked from navigating to the URL.
+- **Pending verdict**: The user was presented with the detonation pending page.
+- **Blocked overridden**: The user was blocked from navigating to the URL; however, the user overrode the block to navigate to the URL.
+- **Pending verdict bypassed**: The user was presented with the detonation page; however, the user overrode the page to navigate to the URL.
+- **Error**: The user was presented with the error page. This can also mean there was an error in capturing the verdict.
+- **Failure**: There was unknown exception while capturing the verdict. The user might have clicked through the URL. 
+
 ## Review email messages reported by users
 
 Suppose that you want to see email messages that users in your organization have reported as Junk, Not Junk, or Phishing by using the [Report Message add-in for Outlook and Outlook on the web](enable-the-report-message-add-in.md). To do this, use the [Email > Submissions](threat-explorer-views.md#email--submissions) view of Explorer (or real-time detections).

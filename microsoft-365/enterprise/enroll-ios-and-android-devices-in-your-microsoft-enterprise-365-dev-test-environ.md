@@ -1,5 +1,5 @@
 ---
-title: "Enroll iOS and Android devices in your Microsoft 365 Enterprise test environment"
+title: "Enroll iOS and Android devices in your Microsoft 365 for enterprise test environment"
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -16,18 +16,18 @@ ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Use this Test Lab Guide to enroll devices in your Microsoft 365 test environment and manage them remotely.
 ---
 
-# Enroll iOS and Android devices in your Microsoft 365 Enterprise test environment
+# Enroll iOS and Android devices in your Microsoft 365 for enterprise test environment
 
-*This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
+*This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*
 
-By following the instructions provided in this article, you'll be able to enroll and test basic mobile device management capabilities for iOS and Android devices in your Microsoft 365 Enterprise test environment.
+By following the instructions provided in this article, you'll be able to enroll and test basic mobile device management capabilities for iOS and Android devices in your Microsoft 365 for enterprise test environment.
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
 
-## Phase 1: Build out your Microsoft 365 Enterprise test environment
+## Phase 1: Build out your Microsoft 365 for enterprise test environment
 
 If you just want to enroll iOS and Android devices in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -73,9 +73,9 @@ Explore additional [mobile device management](m365-enterprise-test-lab-guides.md
 
 ## See Also
 
-[Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
   
-[Device compliance policies for your Microsoft 365 Enterprise test environment](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[Device compliance policies for your Microsoft 365 for enterprise test environment](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
-[Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
