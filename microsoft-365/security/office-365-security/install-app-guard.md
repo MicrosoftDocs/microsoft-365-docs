@@ -165,8 +165,8 @@ disable some functionalities for files opened in Application Guard.
 >*  Restrict printing for documents opened in Application Guard
 > *  Turn off camera and mic access to documents opened in Application Guard
 
-
-## Configure Trust Center  
+<!---
+## Configure Trust Center
 
 You can choose which documents open in Application Guard via the Trust Center. To access these settings, open Word, Excel, or PowerPoint. Then select **File > Options > Trust Center > Trust Center Settings.** 
  
@@ -204,6 +204,8 @@ file and select **Properties**. Under the **General** tab, select **Unblock** as
 
 >[!NOTE]
 > Removing MOTW from a file can't be undone.
+
+-->
 
 ## Submit feedback
 
