@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -96,7 +96,7 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
 Messages sent to custom mailboxes need to follow a specific submission mail format. The Subject (Envelope Title) of the submission should be in this format:
 
-`SafetyAPIAction|NetworkMessgeId|SenderIp|FromAddress|(Message Subject)`
+`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
 were SafetyAPIAction is one of the following integer values:
 

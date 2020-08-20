@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -29,6 +29,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 > [!NOTE]
 > Enabling one or more of the ASF settings is an aggressive approach to spam filtering. You can't report messages that are filtered by ASF as false positives. You can identify messages that were filtered by ASF by:
+>
 > - Periodic end-user spam quarantine notifications.
 >
 > - The presence of filtered messages in quarantine.
