@@ -93,7 +93,7 @@ April includes a couple key updates to our records management solution:
 - The ‘Records management’ section is now fully available in the compliance center. Take advantage of updated user interfaces and functionality for file plan, retention labels and label policies, events, and disposition.
 - Speaking of disposition, we also rolled out [proof of disposition](disposition.md#disposition-of-records) for records in SharePoint and OneDrive. You can now see a list of items in those locations that have been disposed of automatically or after a disposition review.
 
-:::image type="content" source="../media/mcc-records-management-page.png" alt-text="Records management section in Microsoft 365 compliance center":::
+![Records management section in Microsoft 365 compliance center](../media/mcc-records-management-page.png)
 
 ### Sensitivity labels: Preview auto-labeling policies
 
