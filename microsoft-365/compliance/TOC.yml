@@ -789,8 +789,6 @@
       href: alert-policies.md
 - name: Manage compliance risks
   items: 
-    - name: Microsoft Service Trust Portal
-      href: get-started-with-service-trust-portal.md
     - name: Compliance Manager
       items: 
         - name: Learn about Compliance Manager
@@ -811,6 +809,8 @@
           href: compliance-manager-faq.md
         - name: Compliance Manager (classic)
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
+    - name: Microsoft Service Trust Portal
+      href: get-started-with-service-trust-portal.md
     - name: GDPR data subject request tool
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
     - name: Office 365 Information Protection for GDPR
