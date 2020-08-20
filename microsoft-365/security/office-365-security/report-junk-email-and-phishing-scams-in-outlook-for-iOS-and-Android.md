@@ -20,7 +20,7 @@ description: "Admins can learn about the built-in junk, not junk, and phishing e
 
 # Report junk and phishing email in Outlook for iOS and Android in Exchange Online
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises mailboxes using [hybrid modern authentication](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview?view=o365-worldwide), you can use the built-in reporting options in Outlook for iOS and Android to submit false positives (good email marked as spam), false negatives (bad email allowed) and phishing messages to Exchange Online Protection (EOP).
+In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises mailboxes using [hybrid modern authentication](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview?view=o365-worldwide), you can use the built-in reporting options in Outlook for iOS and Android to submit false positives (good email marked as spam), false negatives (bad email allowed), and phishing messages to Exchange Online Protection (EOP).
 
 ## What do you need to know before you begin?
 
@@ -32,7 +32,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 ## Report spam and phishing messages in Outlook for iOS and Android
 
-For messages in the Inbox or any other email folder except Junk, use the following steps to report spam and phishing messages on your iOS or Android device:
+For messages in the Inbox, or any other email folder except Junk, use the following steps to report spam and phishing messages on your iOS or Android device:
 
 1. Select one or more messages.
 2. In the top-right corner tap on the three vertical dots. The action menu opens.
@@ -60,4 +60,4 @@ In the Junk folder, use the following steps to report spam false positives:
 
 2. Tap **Not junk**.
 
-3. You will see a toast notification that the email has moved to your inbox. If you change your mind, select **Undo** on the toast notification. The email remains in the **Junk** folder.
+A toast notification appears that the email has moved to your inbox. If you change your mind, select **Undo** on the toast notification. The email remains in the **Junk** folder.
