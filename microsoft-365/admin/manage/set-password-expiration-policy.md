@@ -89,7 +89,7 @@ To learn how to update password policy for a specific domain or tenant, see [Set
 
 ## Related content
 
-[Set an individual user's password to never expire](set-password-to-never-expire) (article)
+[Set an individual user's password to never expire](set-password-to-never-expire.md) (article)
 [Reset a user's password](reset-passwords.md) (article)
-[Resend a user's password](resend-user-password) (article)
+[Resend a user's password](resend-user-password.md) (article)
 [Let users reset their own passwords](let-users-reset-passwords.md) (article)
