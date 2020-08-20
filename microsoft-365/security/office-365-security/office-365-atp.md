@@ -46,7 +46,7 @@ The following table summarizes what's included in each plan.
 |<br/>Configuration, protection, and detection capabilities: <ul><li>[Safe Attachments](atp-safe-attachments.md)</li><li>[Safe Links](atp-safe-links.md)</li><li>[ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[ATP anti-phishing protection](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[Real-time detections](threat-explorer.md)</li></ul>|Office 365 ATP Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:</li><li>[Threat Trackers](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Attack Simulator](attack-simulator.md)</li></ul>|
 |
 
-- Office 365 ATP Plan 2 is included in Office 365 E5, Office 365 A5, and Microsoft 365 E5.
+- Office 365 ATP Plan 2 is included in Office 365 E5, Office 365 A5, Microsoft 365 E5 Security, and Microsoft 365 E5.
 
 - Office 365 ATP Plan 1 is included in Microsoft 365 Business Premium.
 
