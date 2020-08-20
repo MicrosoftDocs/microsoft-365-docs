@@ -22,7 +22,7 @@ description: "Admins can learn about the built-in junk, not junk, and phishing e
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises mailboxes using [hybrid modern authentication](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview?view=o365-worldwide), you can use the built-in reporting options in Outlook for iOS and Android to submit false positives (good email marked as spam), false negatives (bad email allowed), and phishing messages to Exchange Online Protection (EOP).
 
-## What do you need to know before you begin?
+## What do you need to know before you begin
 
 - If you're an admin in an organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
@@ -43,7 +43,7 @@ For messages in the Inbox, or any other email folder except Junk, use the follow
 
    ![Report junk or phishing email](../../media/Android-report-junk-or-phishing.png)
 
-3. In the dialog that appears, tap **Report** to send a copy of the message to Microsoft.
+4. In the dialog that appears, tap **Report** to send a copy of the message to Microsoft.
 
    ![Report junk or phishing email reporting options](../../media/Android-junk-email-reporting-options.png)
 
@@ -58,6 +58,6 @@ In the Junk folder, use the following steps to report spam false positives:
 
    ![Report not junk email from the action menu](../../media/Android-not-junk-email.png)
 
-2. Tap **Not junk**.
+3. Tap **Not junk**.
 
 A toast notification appears that the email has moved to your inbox. If you change your mind, select **Undo** on the toast notification. The email remains in the **Junk** folder.
