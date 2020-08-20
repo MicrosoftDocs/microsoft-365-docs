@@ -7,15 +7,14 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
-description: "Administrators can set up a data connector to import data from their organization's physical badging system to Microsoft 365. This lets you use this data in insider risk management policies to help you detect access to your physical building by specific users that may indicate a possible internal threat to your organization."
+description: "Administrators can set up a data connector to import data from their organization's physical badging system to Microsoft 365. This lets you use this data in insider risk management policies to help you detect access to your physical buildings by specific users that may indicate a possible internal threat to your organization."
 ---
-
 
 # Set up a connector to import physical badging data (preview)
 
