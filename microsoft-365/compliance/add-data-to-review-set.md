@@ -40,6 +40,16 @@ You can add to an existing review set or create a new review set.  If adding to 
 
 ![Select a review set](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
+## Define options to scope your collection for review
+
+As you add the content of a search to an existing review set or create a new one you have options for how to collect the content for review:
+
+- **Conversational review set** - the items added to the review set will be enabled for threaded conversations to help review content in context of the back and forth conversation, see more in this article [conversation review sets]
+
+- **Enable retrieval for modern attachment** - use this control to include modern attachments or linked files in the collection for further review; read more about the new searchable field names that are available to group this content, see [document metadata fields in advanced ediscovery]
+
+- **Include versions from SharePoint (beta)** - this control enables collection of all version of a SharePoint file per the version limits and search parameters of the collection; note: this control will increase the size of the collection significantly
+
 Adding data to a review set is a long-running process. This process includes gathering items from the original data sources in Microsoft 365 (for example, from mailboxes and sites), copying them to the Azure Storage location (this copying process is also called *ingestion*), and then re-indexing the items. You can track the progress on the **Jobs** tab or on the **Searches** tab by monitoring the status in the **Added data to review set** column. After the review set processing is completed, click the **Review sets** tab in the case, and click the review set to start the process of filtering, reviewing, tagging, and exporting data in the review set.
 
 ## Add a sample to a review set
