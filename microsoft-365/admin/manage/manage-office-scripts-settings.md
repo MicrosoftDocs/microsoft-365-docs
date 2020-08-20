@@ -48,7 +48,7 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 
     - To allow all users in your organization to access and use Office Scripts, leave **Everyone** (the default) selected. 
 
-    - To allow only members of certain Azure Active Directory Security groups or Microsoft 365 groups to access and use Office Scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list.
+    - To allow only members of a specific Azure Active Directory Security group or Microsoft 365 group to access and use Office Scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list.
 
 5. To allow users with access to Office Scripts to share their scripts with others in your organization, select **Let users with access to Office Scripts share their scripts with others in the organization**. Sharing scripts outside of an organization is not allowed.
  
@@ -59,7 +59,7 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
     
     - To allow all users with access to Office Scripts to share their scripts, leave **Everyone** (the default) selected.
 
-    - To allow only members of certain Azure Active Directory Security groups or Microsoft 365 groups with access to Office Scripts to share their scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list.
+    - To allow only members of a specific Azure Active Directory Security group or Microsoft 365 group with access to Office Scripts to share their scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list.
 
 5. Select **Save**.
 
