@@ -26,6 +26,15 @@ ms.custom:
 
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
+## July 2020
+
+### Adding improvement actions for Azure Advanced Threat Protection
+
+- Risky lateral movement paths
+- Unsecure account attributes
+- Enable security features on Active Directory trusts
+- Remove unsecure SID history attributes from entities
+
 ## June 2020
 
 ### Removed improvement action for Microsoft Defender Advanced Threat Protection
