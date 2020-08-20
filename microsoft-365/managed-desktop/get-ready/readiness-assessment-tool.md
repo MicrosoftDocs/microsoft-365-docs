@@ -55,5 +55,5 @@ For each check, the tool will report one of three possible results:
 |Result  |Meaning  |
 |---------|---------|
 |Ready     | No action is required before completing enrollment.        |
-|Advisory    | Follow the steps in the tool for the best experience with enrollment and for end users. You *can* complete enrollment, but you must fix these issues before you deploy your first device.        |
+|Advisory    | Follow the steps in the tool for the best experience with enrollment and for users. You *can* complete enrollment, but you must fix these issues before you deploy your first device.        |
 |Not ready | *You can't complete enrollment without fixing these issues.* Follow the steps in the tool to resolve them.        |
