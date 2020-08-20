@@ -70,6 +70,8 @@ To set up your knowledge network:
 
     ![Exclude topics](../media/content-understanding/topics-excluded-by-name.png) </br>
 
+    ### How to exclude topics by name    
+
     If you need to exclude topics, after selecting **Exclude topics by name**, select **Download the .csv template**. Use the Excel .CSV template to include a list of topics that you want to exclude from your discovery results.
 
     ![Exclude topics in CSV template](../media/content-understanding/csv1.png) </br>
@@ -78,7 +80,7 @@ To set up your knowledge network:
 
     - **Name**: Type the name of the topic you want to exclude. There are two ways to do this:</br>
         - Exact match: You can include the exact name or acronym (for example, *Contoso* or *ATL*).</br>
-        - Partial match: You can exclude all topics that have a specific word in it.  For example, *arc* will exclude all topics with the word arc in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which it is part of a word, such as *Architecture*.</br>
+        - Partial match: You can exclude all topics that have a specific word in it.  For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.</br>
     - **Expansion (optional)**: If you want to exclude an acronym, type the words the acronym stands for.</br>
     - **MatchType-Exact/Partial**: Type whether the name you entered was an *exact* or *partial* match type.</br>
 
