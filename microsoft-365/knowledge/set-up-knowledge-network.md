@@ -70,7 +70,7 @@ To set up your knowledge network:
 
     ![Exclude topics](../media/content-understanding/topics-excluded-by-name.png) </br>
 
-    ### How to exclude topics by name    
+    #### How to exclude topics by name    
 
     If you need to exclude topics, after selecting **Exclude topics by name**, select **Download the .csv template**. Use the Excel .CSV template to include a list of topics that you want to exclude from your discovery results.
 
