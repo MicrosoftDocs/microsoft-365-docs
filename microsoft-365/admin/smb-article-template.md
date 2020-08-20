@@ -56,7 +56,7 @@ description: "Brief summary of article here"   # (Optional) Helps with SEO. Reco
 ## Related content
 <!-- Include a list of links, but do NOT use bullets. Next to each link, include the content type (choose from: article, video, blog post, link page) in parentheses. See examples below. -->
 
-[Article title](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center) (article)
-[Video title](https://www.aka.ms/M365Btraining) (video)
-[Blog post title](https://techcommunity.microsoft.com/t5/office-365-blog/office-365-groups-ignite-recap/ba-p/1036796) (blog post)
+[Article title](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center) (article)\
+[Video title](https://www.aka.ms/M365Btraining) (video)\
+[Blog post title](https://techcommunity.microsoft.com/t5/office-365-blog/office-365-groups-ignite-recap/ba-p/1036796) (blog post)\
 [Landing page title](https://www.aka.ms/M365Btraining) (link page)
