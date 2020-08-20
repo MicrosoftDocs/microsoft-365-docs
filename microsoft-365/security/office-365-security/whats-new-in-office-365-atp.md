@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 07/23/2020
+ms.date: 08/20/2020
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -33,7 +33,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 ## September/October 2020 
 
 - [Check your policies using Configuration Analyzer](configuration-analyzer-for-security-policies.md)
-- [Manually override filter verdicts using the Tenant Allow/Block List](tenant-allow-block-list.md)
+- [Manually override filter verdicts using the tenant allow/block list](tenant-allow-block-list.md)
 
 ## July/August 2020 
 
