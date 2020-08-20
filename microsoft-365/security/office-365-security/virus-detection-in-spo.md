@@ -53,9 +53,9 @@ Here's what happens:
 2. The user is given a warning that a virus has been detected. The user is given the option to download the file and attempt to clean it using their own antivirus software.
 
 > [!NOTE]
-> 
+>
 > You can use the *DisallowInfectedFileDownload* parameter on the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet in SharePoint Online PowerShell to prevent users from downloading an infected file, even in the anti-virus warning window.
-> 
+>
 > Also keep in mind, that as soon as you enable the *DisallowInfectedFileDownload* parameter, access to the detected/blocked files is completly blocked for users and administrators.
 
 ## What happens when the OneDrive sync client tries to sync an infected file?

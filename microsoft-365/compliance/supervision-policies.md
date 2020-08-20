@@ -189,7 +189,7 @@ To scan both email messages and attachments for the same keywords, create a [dat
 
 If you enter multiple conditions, Microsoft 365 uses all the conditions together to determine when to apply the policy to communication items. When you set up multiple conditions, all conditions must be met for the policy to apply, unless you enter an exception. For example, you need a policy that applies if a message contains the word "trade", and is larger than 2 MB. However, if the message also contains the words "Approved by Contoso financial", the policy should not apply. Thus, in this case, the three conditions would be as follows:
   
-- **Message contains any of these words**, with the keywords "trade"
+- **Message contains any of these words**, with the keyword "trade"
 
 - **Message size is larger than**, with the value 2 MB
 

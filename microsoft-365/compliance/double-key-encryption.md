@@ -21,7 +21,7 @@ ms.collection:
 
 > *Applies to: Double Key Encryption for Microsoft 365 public preview, [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
-> *Instructions for: [Azure Information Protection unified labeling client for Windows](https://docs.microsoft.com/azure/information-protection/faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *Instructions for: [Azure Information Protection unified labeling client for Windows](https://docs.microsoft.com/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
 > *Service description for: [Microsoft 365 Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
@@ -136,11 +136,11 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
     For example:
 
-    :::image type="content" source="../media/dke-clone.png" alt-text="Clone the Double Key Encryption service repository from GitHub":::
+   ![Clone the Double Key Encryption service repository from GitHub](../media/dke-clone.png)
 
 3. In Visual Studio Code, select **View** \> **Command Palette** and select **Git: Clone**. To jump to the option in the list, start typing `git: clone` to filter the entries and then select it from the drop-down. For example:
 
-    :::image type="content" source="../media/dke-vscode-clone.png" alt-text="Visual Studio Code GIT:Clone option":::
+   ![Visual Studio Code GIT:Clone option](../media/dke-vscode-clone.png)
 
 4. In the text box, paste the URL that you copied from Git and select **Clone from GitHub**.
 
@@ -150,7 +150,7 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
     For example:
 
-    :::image type="content" source="../media/dke-vscode-master.png" alt-text="Visual Studio Code master branch":::
+   ![Visual Studio Code master branch](../media/dke-vscode-master.png)
 
 6. Select the word **master,** and then select **public_preview** from the list of branches.
 
@@ -168,7 +168,7 @@ To deploy the DKE service, you must modify the following types of application se
 
 You modify application settings in the appsettings.json file. This file is located in the DoubleKeyEncryptionService repo you cloned locally under DoubleKeyEncryptionService\src\customer-key-store. For example, in Visual Studio Code, you can browse to the file as shown in the following picture.
 
-:::image type="content" source="../media/dke-appsettingsjson.png" alt-text="Locating the appsettings.json file for DKE.":::
+![Locating the appsettings.json file for DKE.](../media/dke-appsettingsjson.png)
 
 #### Key access settings
 
@@ -198,7 +198,7 @@ Choose whether to use email or role authorization. DKE supports only one of thes
 
 This image shows the **appsettings.json** file correctly formatted for email authorization.
 
-   :::image type="content" source="../media/dke-email-accesssetting.png" alt-text="The appsettings.json file showing email authorization method":::
+   ![The appsettings.json file showing email authorization method](../media/dke-email-accesssetting.png)
 
 **To set key access settings for DKE using role authorization**
 
@@ -220,7 +220,7 @@ This image shows the **appsettings.json** file correctly formatted for email aut
 
 This image shows the **appsettings.json** file correctly formatted for role authorization.
 
-   :::image type="content" source="../media/dke-role-accesssetting.png" alt-text="appsettings.json file showing role authorization method":::
+   ![appsettings.json file showing role authorization method](../media/dke-role-accesssetting.png)
 
 #### Tenant and key settings
 
@@ -250,7 +250,7 @@ Locate the `JwtAudience`. Replace `<yourhostname>` with the hostname of the mach
 
 This image shows the correct format for tenant and keys settings in **appsettings.json**. `LDAPPath` is configured for role authorization.
 
-:::image type="content" source="../media/dke-appsettingsjson-tenantkeysettings.png" alt-text="Shows correct tenant and key settings for DKE in the appsettings.json file.":::
+![Shows correct tenant and key settings for DKE in the appsettings.json file.](../media/dke-appsettingsjson-tenantkeysettings.png)
 
 ### Generate test keys
 
@@ -309,7 +309,7 @@ To generate keys:
 
    The end results should look similar to the following.
 
-   :::image type="content" source="../media/dke-startupcs-usetestkeys.png" alt-text="startup.cs file for public preview":::
+   ![startup.cs file for public preview](../media/dke-startupcs-usetestkeys.png)
 
 Now you're ready to [build your DKE project](#build-the-project).
 
@@ -323,15 +323,15 @@ Use the following instructions to build the DKE project locally:
 
    If there are no build tasks found, select **Configure Build Task** and create one for .NET core as follows.
 
-   :::image type="content" source="../media/dke-configurebuildtask.png" alt-text="Configure missing build task for .NET":::
+   ![Configure missing build task for .NET](../media/dke-configurebuildtask.png)
 
    1. Choose **Create tasks.json from template**.
 
-   :::image type="content" source="../media/dke-createtasksjsonfromtemplate.png" alt-text="Create tasks.json file from template for DKE":::
+   ![Create tasks.json file from template for DKE](../media/dke-createtasksjsonfromtemplate.png)
 
    2. From the list of template types, select **.NET Core**.
 
-   :::image type="content" source="../media/dke-tasksjsontemplate.png" alt-text="Create tasks.json file from template for DKE":::
+   ![Create tasks.json file from template for DKE](../media/dke-tasksjsontemplate.png)
 
    3. In the build section, locate the path to the **customerkeystore.csproj** file. If it's not there, add the following line:
 
@@ -373,7 +373,7 @@ To publish the key store, you'll create an Azure App Service instance to host yo
 
     For example:
 
-    :::image type="content" source="../media/dke-azure-add-app-service.png" alt-text="Add your App Service":::
+   ![Add your App Service](../media/dke-azure-add-app-service.png)
 
 1. At the bottom of the page, select **Review + create**, and then select **Add**.
 
@@ -420,7 +420,7 @@ DKE is deployed and you can browse to the test keys you've created. Continue to 
 
     For example:
 
-    :::image type="content" source="../media/dke-ftp-dashboard.png" alt-text="Copy connection strings from the FTP dashboard":::
+   ![Copy connection strings from the FTP dashboard](../media/dke-ftp-dashboard.png)
 
 1. In the codebase for the key storage, go to the **customer-key-store\src\customer-key-store directory**.
 
@@ -468,7 +468,7 @@ To register your key store:
 
     For example:
 
-    :::image type="content" source="../media/dke-app-registration.png" alt-text="New App Registration":::
+   ![New App Registration](../media/dke-app-registration.png)
 
 4. At the bottom of the page, select **Register** to create the new App Registration.
 
@@ -526,7 +526,7 @@ In the Microsoft 365 compliance center, create a new sensitivity label and apply
 
 For example:
 
-:::image type="content" source="../media/dke-use-dke.png" alt-text="Select Use Double Key Encryption in the Microsoft 365 compliance center":::
+![Select Use Double Key Encryption in the Microsoft 365 compliance center](../media/dke-use-dke.png)
 
 Any DKE labels you add will start appearing for users in the latest versions of Microsoft 365 Apps for enterprise.
 
