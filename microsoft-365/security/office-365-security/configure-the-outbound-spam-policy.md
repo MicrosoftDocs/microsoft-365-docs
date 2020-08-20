@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -32,39 +32,24 @@ Admins can view, edit, and configure (but not delete) the default outbound spam 
 
 You can configure outbound spam policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
-## Outbound spam policies in the Security & Compliance Center vs PowerShell
-
 The basic elements of an outbound spam policy in EOP are:
 
 - **The outbound spam filter policy**: Specifies the actions for outbound spam filtering verdicts and the notification options.
-
 - **The outbound spam filter rule**: Specifies the priority and recipient filters (who the policy applies to) for a outbound spam filter policy.
 
 The difference between these two elements isn't obvious when you manage outbound spam polices in the Security & Compliance Center:
 
-- When you create an outbound spam policy in the Security & Compliance Center, you're actually creating a outbound spam filter rule and the associated outbound spam filter policy at the same time using the same name for both.
+- When you create a policy, you're actually creating a outbound spam filter rule and the associated outbound spam filter policy at the same time using the same name for both.
+- When you modify a policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the outbound spam filter rule. All other settings modify the associated outbound spam filter policy.
+- When you remove a policy, the outbound spam filter rule and the associated outbound spam filter policy are removed.
 
-- When you modify an outbound spam policy in the Security & Compliance Center, settings related to the name, priority, enabled or disabled, and recipient filters modify the outbound spam filter rule. All other settings modify the associated outbound spam filter policy.
-
-- When you remove an outbound spam policy from the Security & Compliance Center, the outbound spam filter rule and the associated outbound spam filter policy are removed.
-
-In Exchange Online PowerShell or standalone EOP PowerShell, the difference between outbound spam filter policies and outbound spam filter rules is apparent. You manage outbound spam filter policies by using the **\*-HostedOutboundSpamFilterPolicy** cmdlets, and you manage outbound spam filter rules by using the **\*-HostedOutboundSpamFilterRule** cmdlets.
-
-- In PowerShell, you create the outbound spam filter policy first, then you create the outbound spam filter rule that identifies the policy that the rule applies to.
-
-- In PowerShell, you modify the settings in the outbound spam filter policy and the outbound spam filter rule separately.
-
-- When you remove a outbound spam filter policy from PowerShell, the corresponding outbound spam filter rule isn't automatically removed, and vice versa.
-
-### Default outbound spam policy
+In Exchange Online PowerShell or standalone EOP PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell or standalone EOP PowerShell to configure outbound spam policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) section later in this topic.
 
 Every organization has a built-in outbound spam policy named Default that has these properties:
 
-- The outbound spam filter policy named Default is applied to all recipients in the organization, even though there's no outbound spam filter rule (recipient filters) associated with the policy.
-
-- The policy named Default has the custom priority value **Lowest** that you can't modify (the policy is always applied last). Any custom policies that you create always have a higher priority than the policy named Default.
-
-- The policy named Default is the default policy (the **IsDefault** property has the value `True`), and you can't delete the default policy.
+- The policy is applied to all recipients in the organization, even though there's no outbound spam filter rule (recipient filters) associated with the policy.
+- The policy has the custom priority value **Lowest** that you can't modify (the policy is always applied last). Any custom policies that you create always have a higher priority than the policy named Default.
+- The policy is the default policy (the **IsDefault** property has the value `True`), and you can't delete the default policy.
 
 To increase the effectiveness of outbound spam filtering, you can create custom outbound spam policies with stricter settings that are applied to specific users or groups of users.
 
@@ -165,18 +150,24 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
      - **Restrict the user from sending mail**: Email notifications are sent, the user is added to the **[Restricted Users]<https://sip.protection.office.com/restrictedusers>** portal in the Security & Compliance Center, and the user can't send email until they're removed from the **Restricted Users** portal by an admin. After an admin removes the user from the list, the user won't be restricted again for that day. For instructions, see [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).
 
      - **No action, alert only**: Email notifications are sent.
-6. (Optional) Expand **Automatic Forwarding** section to configure controls over how automatic forwarding by users is controlled.
+
+6. (Optional) Expand **Automatic forwarding** section to control automatic email forwarding by users to external senders. For more information about automatic forwarding, see [Configure email forwarding](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding).
 
    > [!NOTE]
-   > These settings only apply to cloud-based mailboxes.
+   >
+   > - Before September 2020, these settings are available but not enforced.
+   >
+   > - These settings apply only to cloud-based mailboxes.
+   >
+   > - Automatic forwarding to internal recipients is not affected by these setting.
 
-   - **Automatic Forwarding**
-  
-      Select one of the options to control how automatic forwarding is handled.
+   The available values are:
 
-      - **Automatic**: Default setting that allows the system to control automatic forwarding with automatic forwarding disabled by default.
-      - **On**: External forwarding is enabled within the policy without restriction.
-      - **Off**: External forwarding is disabled and will be blocked
+   - **Automatic - System-controlled**: Allows outbound spam filtering to control automatic external email forwarding. This is the default value.
+
+   - **On**: Automatic external email forwarding is not disabled by the policy.
+
+   - **Off**: All automatic external email forwarding is disabled by the policy.
 
 7. (Required) Expand the **Applied to** section to identify the internal senders that the policy applies to.
 
@@ -272,12 +263,19 @@ You can't remove the default policy.
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to configure outbound spam policies
 
+As previously described, an outbound spam policy consists of an outbound spam filter policy and an outbound spam filter rule.
+
+In Exchange Online PowerShell or standalone EOP PowerShell, the difference between outbound spam filter policies and outbound spam filter rules is apparent. You manage outbound spam filter policies by using the **\*-HostedOutboundSpamFilterPolicy** cmdlets, and you manage outbound spam filter rules by using the **\*-HostedOutboundSpamFilterRule** cmdlets.
+
+- In PowerShell, you create the outbound spam filter policy first, then you create the outbound spam filter rule that identifies the policy that the rule applies to.
+- In PowerShell, you modify the settings in the outbound spam filter policy and the outbound spam filter rule separately.
+- When you remove a outbound spam filter policy from PowerShell, the corresponding outbound spam filter rule isn't automatically removed, and vice versa.
+
 ### Use PowerShell to create outbound spam policies
 
 Creating an outbound spam policy in PowerShell is a two-step process:
 
 1. Create the outbound spam filter policy.
-
 2. Create the outbound spam filter rule that specifies the outbound spam filter policy that the rule applies to.
 
  **Notes**:
@@ -287,7 +285,6 @@ Creating an outbound spam policy in PowerShell is a two-step process:
 - You can configure the following settings on new outbound spam filter policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:
 
   - Create the new policy as disabled (_Enabled_ `$false` on the **New-HostedOutboundSpamFilterRule** cmdlet).
-
   - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-HostedOutboundSpamFilterRule** cmdlet).
 
 - A new outbound spam filter policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to a spam filter rule.
