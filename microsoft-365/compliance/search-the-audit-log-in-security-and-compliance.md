@@ -300,11 +300,12 @@ Click one of the following links to go to a specific table.
 |[Site administration activities](#site-administration-activities)|[Exchange mailbox activities](#exchange-mailbox-activities)|[User administration activities](#user-administration-activities)|
 |[Azure AD group administration activities](#azure-ad-group-administration-activities)|[Application administration activities](#application-administration-activities)|[Role administration activities](#role-administration-activities)|
 |[Directory administration activities](#directory-administration-activities)|[eDiscovery activities](#ediscovery-activities)|[Advanced eDiscovery activities](#advanced-ediscovery-activities)|
-|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|[Microsoft Teams activities](#microsoft-teams-activities)|
-|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Microsoft Teams Shifts activities](#microsoft-teams-shifts-activities)|[Yammer activities](#yammer-activities)|
-|[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|[Microsoft Stream activities](#microsoft-stream-activities)|
-|[Content explorer activities](#content-explorer-activities)|[Quarantine activities](#quarantine-activities)|[Microsoft Forms activities](#microsoft-forms-activities)|
-|[Sensitivity label activities](#sensitivity-label-activities)|[Retention policy and retention label activities](#retention-policy-and-retention-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)
+|[Power BI activities](#power-bi-activities)|[Workplace Analytics activities](#workplace-analytics-activities)|[Briefing email activities](#briefing-email-activities)|
+|[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Microsoft Teams Shifts activities](#microsoft-teams-shifts-activities)|
+|[Yammer activities](#yammer-activities)|[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|
+|[Microsoft Stream activities](#microsoft-stream-activities)|[Content explorer activities](#content-explorer-activities)|[Quarantine activities](#quarantine-activities)|
+|[Microsoft Forms activities](#microsoft-forms-activities)|[Sensitivity label activities](#sensitivity-label-activities)|[Retention policy and retention label activities](#retention-policy-and-retention-label-activities)|
+|[Exchange admin activities](#exchange-admin-audit-log)
 |||
 
 ### File and page activities
