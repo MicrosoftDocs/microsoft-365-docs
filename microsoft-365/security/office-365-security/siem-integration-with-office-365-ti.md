@@ -32,7 +32,7 @@ SIEM integration enables you to view information, such as malware or phish detec
 
 ## How SIEM integration works
 
-The Office 365 Activity Management API retrieves information about user, admin, system, and policy actions and events from your organization's Microsoft 365 and Azure Active Directory activity logs. If your organization has Office 365 ATP Plan 1 or 2, or Office 365 E5, then you can use the [Office 365 Advanced Threat Protection schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema).  
+The Office 365 Activity Management API retrieves information about user, admin, system, and policy actions and events from your organization's Microsoft 365 and Azure Active Directory activity logs. If your organization has Office 365 ATP Plan 1 or 2, or Office 365 E5, you can use the [Office 365 ATP schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema).  
 
 Recently, events from automated investigation and response capabilities in [Office 365 ATP Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2) were added to the Office 365 Management Activity API. In addition to including data about core investigation details such as ID, name and status, the API also contains high-level information about investigation actions and entities.
 
@@ -49,8 +49,8 @@ The following table summarizes the values of **AuditLogRecordType** that are rel
 |---|---|---|
 |28|ThreatIntelligence|Phishing and malware events from Exchange Online Protection and Office 365 ATP.|
 |41|ThreatIntelligenceUrl|ATP Safe Links time-of-block and block override events from Office 365 ATP.|
-|47|ThreatIntelligenceAtpContent|Phishing and malware events for files in SharePoint Online, OneDrive for Business, and Microsoft Teams from Office 365 Advanced Threat Protection.|
-|64|AirInvestigation|Automated investigation and response events, such as investigation details and relevant artifacts from Office 365 ATP Plan 2.|
+|47|ThreatIntelligenceAtpContent|Phishing and malware events for files in SharePoint Online, OneDrive for Business, and Microsoft Teams, from Office 365 ATP.|
+|64|AirInvestigation|Automated investigation and response events, such as investigation details and relevant artifacts, from Office 365 ATP Plan 2.|
 |
 
 > [!IMPORTANT]
