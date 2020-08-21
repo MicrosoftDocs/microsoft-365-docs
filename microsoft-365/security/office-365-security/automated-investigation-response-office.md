@@ -131,9 +131,12 @@ Using the **Actions** menu, you can select **Trigger investigation**.
 
 Similar to playbooks triggered by an alert, automatic investigations that are triggered from a view in Explorer include a root investigation, steps to identify and correlate threats, and recommended actions to mitigate those threats.
 
-## Example: A security operations team integrates AIR with their SIEM to monitor alerts
+## Example: A security operations team integrates AIR with their SIEM using the Office 365 Management Activity API
 
-Some organizations integrate Office 365 ATP with their security information and event management (SIEM) system, their case management system, or a custom reporting solution. This integration enables their security operations team to monitor alerts more easily. For example, a security operations team can focus on user-reported phish alerts that were already processed by AIR in order to reduce the number of false positives.
+AIR capabilities in Office 365 ATP include [reports & details](air-view-investigation-results.md) that security operations team can use to monitor and address threats. But you can also integrate AIR capabilities with other solutions. Examples include an security information and event management (SIEM) system, a case management system, or a custom reporting solution. These kinds of integration can be done by using the Office 365 Management Activity API. 
+
+For example, a security operations team in one organization set up a way to view user-reported phish alerts that were already processed by AIR. This solution greatly reduces the number of false positives so that the security operations team can focus their time and effort on real threats. 
+
 
 You can use the 
 
