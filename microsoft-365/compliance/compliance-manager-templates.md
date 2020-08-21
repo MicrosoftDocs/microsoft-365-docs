@@ -19,3 +19,31 @@ description: "Design customization Microsoft Compliance Score by creating assess
 # Customize Compliance Score (preview) with assessments
 
 **In this article:** Learn how
+
+## Templates overview
+
+text
+
+## List of pre-built templates for assessments
+
+text
+
+## Viewing and managing templates from the assessment templates page
+
+text
+
+## Creating and modifying templates
+
+text
+
+##  Formatting your template data with Excel
+
+text
+
+##  Export a template
+
+text
+
+## Updates to templates
+
+text

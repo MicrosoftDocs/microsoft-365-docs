@@ -1,5 +1,5 @@
 ---
-title: "Customize Microsoft Compliance Manager with assessments"
+title: "Build assessments in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,7 +16,7 @@ search.appverid:
 description: "Design customization Microsoft Compliance Score by creating assessments to help you manage compliance for your organization."
 ---
 
-# Customize Compliance Score (preview) with assessments
+# Build assessments in Compliance Manager
 
 **In this article:** Learn how to customize Compliance Score by setting up ready to use **assessments**. Read how to modify the **template** for an assessment and create your own Custom Assessments to suit your organization’s needs. This article also explains how to organize assessments into **groups**, work with **controls**, and export assessment **reports**.
 
@@ -112,7 +112,13 @@ Groups cannot be created as standalone entities; a group must contain at least o
 - Groups can't be deleted.
 - When a change is made to an improvement that appears in multiple groups, that change is reflected in all instances of that improvement action.
 
-## Create an assessment
+## Use a pre-built assessment
+
+## Modify a pre-built assessment by extending a Compliance Manager template
+
+## Create your own custom assessment
+
+## (old)Create an assessment
 
 To create an assessment in Compliance Score, follow the steps below:
 
@@ -199,6 +205,8 @@ The Microsoft actions tab lists all the actions in the assessment that are manag
 
 #### Learn more
 [Understand how controls and improvement actions are tracked and scored by Compliance Score.](compliance-score-methodology.md)
+
+## Accepting updates to assessments
 
 ## Export an assessment report
 
