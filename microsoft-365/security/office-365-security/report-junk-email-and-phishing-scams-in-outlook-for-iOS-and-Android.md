@@ -43,11 +43,11 @@ For messages in the Inbox, or any other email folder except Junk, use the follow
 
    ![Report junk or phishing email](../../media/Android-report-junk-or-phishing.png)
 
-4. In the dialog that appears, tap **Report** to send a copy of the message to Microsoft.
+4. In the dialog that appears, you can choose **Report** or **No Thanks**. If you tap **Junk** the messages move to the **Junk** folder, if you tap **Phishing** they move to the **Deleted Items** folder. Select **Report** to also send a copy of the message to Microsoft.
 
    ![Report junk or phishing email reporting options](../../media/Android-junk-email-reporting-options.png)
 
-If you change your mind, select **Undo** on the toast notification. The email remains in the **Inbox** folder.
+If you change your mind, select **Undo** on the toast notification that appears. The email remains in the **Inbox** folder.
 
 ## Report non-spam messages from the Junk folder in Outlook for iOS and Android
 
