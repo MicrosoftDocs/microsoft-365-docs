@@ -1,5 +1,5 @@
 ---
-title: Identity and device access configurations - Microsoft 365 Enterprise
+title: Identity and device access configurations - Microsoft 365 for enterprise
 description:  Describes Microsoft recommendations and core concepts for deploying secure email, docs, and apps policies and configurations.
 author: brendacarter
 manager: laurawi
@@ -82,7 +82,7 @@ The recommendations provided are based on the following principles:
 
 ## Services and concepts for identity and device access protection
 
-Microsoft 365 Enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security (EMS), to empower everyone to be creative and work together securely.
+Microsoft 365 for enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security (EMS), to empower everyone to be creative and work together securely.
 
 This section provides an overview of the Microsoft 365 services and capabilities that are important for identity and device access.
 
