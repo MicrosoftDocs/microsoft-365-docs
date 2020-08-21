@@ -17,7 +17,7 @@ ms.collection:                     # (Required) Always M365-subscription-managem
 - Adm_TOC
 ms.custom: AdminSurgePortfolio     # (Optional) To help with reporting, always include AdminSurgePortfolio for SMB admin articles
 search.appverid: MET150            # (Optional) Use MET150 if you want the article to show up in Minimaven in the admin center
-description: "Brief summary of article here"   # (Optional) Helps with SEO. Recommended character length is 120-158 characters.
+description: "Brief summary of article here"   # (Required) Important for SEO. Recommended character length is 120-158 characters.
 ---
 
 # Title
