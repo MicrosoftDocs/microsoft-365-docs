@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
@@ -53,11 +53,11 @@ The following charts are available in the report view:
 
 - **Show data for: New forwarding users**:
 
-  ![New forwarding users view in the Forwarding modifications report](../../media/forwarding-modificiations-report-new-forwarding-users.png)
+  ![New forwarding users view in the Forwarding modifications report](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
 - **Show data for: New forwarding domains**:
 
-  ![New forwarded domains view in the Forwarding modifications report](../../media/forwarding-modificiations-report-new-forwarded-domains.png)
+  ![New forwarded domains view in the Forwarding modifications report](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
 If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
 
