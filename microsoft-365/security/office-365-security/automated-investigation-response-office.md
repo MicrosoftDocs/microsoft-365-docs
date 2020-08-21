@@ -21,7 +21,9 @@ ms.custom: air
 
 # An overview of Automated investigation and response (AIR) in Microsoft 365
 
-As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Sometimes, security operations teams can feel overwhelmed by the volume of alerts that are triggered. Automated investigation and response (AIR) capabilities can help. AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well-known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond to detected threats. 
+As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Sometimes, security operations teams can feel overwhelmed by the volume of alerts that are triggered. Automated investigation and response (AIR) capabilities in Office 365 Advanced Threat Protection (Office 365 ATP) can help. 
+
+AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well-known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond to detected threats. 
 
 This article provides an overview of AIR. When you're ready to get started using AIR, see [Automatically investigate and respond to threats](office-365-air.md).
 
@@ -67,7 +69,7 @@ The security playbooks you'll get with AIR are designed to tackle the most frequ
 As part of AIR, security playbooks are rolling out in phases. Phase 1 is now generally available and includes several playbooks that provide recommendations for actions that security administrators can review and approve:
 
 - User-reported phish message
-- URL click verdict change
+- URL-click verdict change
 - Malware detected post-delivery (Malware ZAP)
 - Phish detected post-delivery ZAP (Phish ZAP)
 
@@ -94,7 +96,7 @@ Each high-level step includes a number of substeps that are executed to provide 
 
 Suppose that a user in your organization receives an email that they think is a phishing attempt. The user, trained to report such messages, uses the [Report Message add-in](enable-the-report-message-add-in.md) to send it to Microsoft for analysis. The submission is also sent to your system and is visible in Explorer in the **Submissions** view (formerly referred to as the **User-reported** view). In addition, the user-reported message now triggers a system-based informational alert, which automatically launches the investigation playbook.
 
-During the root investigation phase, various aspects of the email are assessed. These include:
+During the root investigation phase, various aspects of the email are assessed. These aspects include:
 
 - A determination about what type of threat it might be;
 - Who sent it;
