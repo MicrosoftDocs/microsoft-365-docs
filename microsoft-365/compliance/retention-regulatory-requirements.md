@@ -28,7 +28,7 @@ However, some organizations in highly regulated industries are subject to more s
 - Must be retained for a required retention period that cannot be shortened, only increased.
 - Cannot be overwritten, erased, or altered during the required retention period.
 
-Another example is for financial institutions such as banks or broker dealers are subject to Rule 17a-4 issued by the Securities and Exchange Commission (SEC). Rule 17a-4 has specific requirements for electronic data storage, including many aspects of record management, such as the duration, format, quality, availability, and accountability of records retention.
+Another example is for financial institutions such as banks or broker dealers that are subject to Rule 17a-4 issued by the Securities and Exchange Commission (SEC). Rule 17a-4 has specific requirements for electronic data storage, including many aspects of record management, such as the duration, format, quality, availability, and accountability of records retention.
 
 Use the following features and resources to help your organization meet its regulatory requirements.
 
