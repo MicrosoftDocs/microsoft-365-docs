@@ -21,7 +21,7 @@ ms.custom: air
 
 # An overview of Automated investigation and response (AIR) in Microsoft 365
 
-As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Sometimes, security operations teams can feel overwhelmed by the volume of alerts that are triggered. Automated investigation and response (AIR) capabilities can help. AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond to detected threats. 
+As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Sometimes, security operations teams can feel overwhelmed by the volume of alerts that are triggered. Automated investigation and response (AIR) capabilities can help. AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well-known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond to detected threats. 
 
 This article provides an overview of AIR. When you're ready to get started using AIR, see [Automatically investigate and respond to threats](office-365-air.md).
 
@@ -73,17 +73,17 @@ As part of AIR, security playbooks are rolling out in phases. Phase 1 is now gen
 
 Phase 1 also includes support for administrator triggered e-mail investigations (using [Threat Explorer](threat-explorer.md)).
 
-Phase 2 is now progress with the following playbooks in **public preview**, providing recommendations for actions and aiding security administrators in investigating issues:
+Phase 2 is now progress with the following playbooks in **public preview**, providing recommendations for actions, and aiding security administrators in investigating issues:
 
 - User reported as compromised (public preview)
 
-Further playbooks will be released as they are completed. Visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to see what else is planned and coming soon.
+More playbooks will be released as they are completed. Visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to see what else is planned and coming soon.
 
 ### Playbooks include investigation and recommendations
 
 In AIR, each security playbook includes: 
 
-- a root investigation of an email's entities (files, URLs, recipients, IP addresses, etc.),
+- a root investigation of an email's entities (such as files, URLs, recipients, IP addresses, and more),
 - further hunting for similar emails received by the organization 
 - steps taken to identify and correlate other potential threats, and 
 - recommended threat remediation actions.
