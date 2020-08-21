@@ -2,8 +2,8 @@
 title: "Use retention labels to manage the lifecycle of documents stored in SharePoint"
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: fredlap
+author: fredericlapierre
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -342,9 +342,3 @@ Instead of using the default **Asset Id** property as we do in this scenario, yo
 ### Using advanced search in SharePoint
 
 In the previous screenshot, you can see that there's another managed property related to retention labels called **ComplianceTag** that's mapped to a crawled property. The **ComplianceAssetId** managed property is also mapped to a crawled property. This means that you can use these managed properties in advanced search to retrieve all documents that have been tagged with a retention label.
-
-## Credits
-
-This scenario was authored by: 
-
-Frederic Lapierre<br/>Principal Consultant, Microsoft Services
