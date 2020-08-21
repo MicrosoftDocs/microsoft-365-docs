@@ -13,69 +13,58 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Design customization Microsoft Compliance Score by creating assessments to help you manage compliance for your organization."
+description: "Build assessments in Microsoft Compliance Manager to help you meet the requirements of regulations and certifications that are important to your organization."
 ---
 
 # Build assessments in Compliance Manager
 
-**In this article:** Learn how to customize Compliance Score by setting up ready to use **assessments**. Read how to modify the **template** for an assessment and create your own Custom Assessments to suit your organization’s needs. This article also explains how to organize assessments into **groups**, work with **controls**, and export assessment **reports**.
+**In this article:** Learn how to customize Compliance Manager for your organization by creating and managing your **assessments**. This article walks you through how to create assessments, how to organize them into **groups**, working with **controls**, and exporting assessment **reports**.
+
+> [!IMPORTANT]
+> The assessments available to your organization depends on your licensing agreement. [Review the details](https://go.microsoft.com/fwlink/?linkid=2132371).
 
 ## Introduction to assessments
 
-Compliance Score helps you manage compliance with assessments for the regulations and certifications that apply to your organization. Assessments are groupings of controls from a specific regulation, standard, or policy. Compliance Score makes it easy to start tracking your compliance by providing ready to use assessments that cover a variety of industry and regional regulations and certifications.
+Compliance Manager helps you manage compliance with assessments for the regulations and certifications that apply to your organization. Assessments are groupings of controls from a specific regulation, standard, or policy. Compliance Manager makes it easy to start tracking your compliance by providing pre-built assessments that cover a variety of industry and regional regulations and certifications.
 
 Each assessment is created from a template, which serves as a framework containing the necessary controls and improvement actions for completing the assessment. Setting up the most relevant assessments for your organization helps ensure you’re implementing policies and operational procedures that can limit your compliance risk.
 
-All of your assessments are listed on the assessments page. [Learn more](compliance-score-setup.md#assessments-page) about how to filter your view of your assessments and interpret status states.
+All of your assessments are listed on the assessments page. [Learn more](compliance-manager-setup.md#assessments-page) about how to filter your view of your assessments and interpret status states.
 
 ## Data protection baseline default assessment
 
-To get you started, Microsoft provides a **default** assessment in Compliance Score that contains the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
+To get you started, Microsoft provides a **default** assessment in Compliance Manager for the **Microsoft 365 data protection baseline**. This baseline assessment has a set of controls for key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union)..
 
-This assessment is used to calculate your initial score the first time you come to Compliance Score, before you configure any other assessments. Compliance Score collects initial signals from your Microsoft 365 solutions. You’ll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
+This assessment is used to calculate your initial compliance score the first time you come to Compliance Manager, before you configure any other assessments. Compliance Manager collects initial signals from your Microsoft 365 solutions. You’ll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
 
-Because every organization has specific needs, Compliance Score relies on you to set up and manage your own assessments to help minimize and mitigate risk as comprehensively as possible.
+Because every organization has specific needs, Compliance Manager become more helpful as you set up and manage your own assessments to help minimize and mitigate risk as comprehensively as possible.
 
 ## Assessment creation overview
 
 There are three ways you can set up assessments:
 
-1. Choose a ready to use assessment.
-2. Modify the [template of an assessment](compliance-score-templates.md) to suit your own needs.
-3. Create your own Custom Assessment.
+1. Use a pre-built assessment.
+2. Extend a pre-built assessment to suit your own needs.
+3. Create your own custom assessment.
 
-Users must hold a role of global administrator, compliance administrator, compliance data administrator, or security administrator in order to create or modify assessments. Learn more about [roles and permissions](compliance-score-setup.md#set-user-permissions-and-assign-roles).
+**Required roles**
 
-> [!NOTE]
-> Any assessments created or modified in Compliance Score will be also be reflected in Compliance Manager. Learn more about the [relationship between Compliance Score and Compliance Manager](compliance-score.md#relationship-to-compliance-manager).
+Only users who hold a Global Administrator or  Compliance Manager Administration role can create and modify assessments.
+ Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
-### Ready to use assessments
+### Use a pre-built assessment
 
-Kickstart your compliance journey by choosing from among Compliance Score’s selection of [templates](compliance-score-templates.md) for creating assessments. Templates contain the controls and improvement actions necessary for each particular assessment. Compliance Score’s templates cover regulations and certifications that align to industries, regions, and common data protection standards, such as GDPR and ISO 27001.
+Kickstart your compliance journey by choosing an assessment already set up by Compliance Manager. We provide a wide selection of [templates](compliance-score-templates.md) for regulations and certifications that align to industries, regions, and common data protection standards, such as GDPR and ISO 27001. Templates contain the controls and improvement actions for helping you meet the requirements of a particular certification.
 
-**To set up an assessment**, choose one of the templates when you start  [building the assessment from the wizard](#create-an-assessment).
+You’ll be asked to choose a template when you start [building an assessment](#use-a-pre-built-assessment).
 
-### Modify the template of an assessment
+### Extend a pre-built assessment to suit your needs
 
-You have the ability to modify Compliance Score templates for assessments in order to better suit your organization’s needs. For example, if you generally need to comply with HIPAA but require additional data protection or security controls, you can take our HIPAA template and add your own custom fields to create a new assessment that monitors your progress in the ways you require. During public preview, you’ll need to go to Compliance Manger to modify templates.
+You may modify a Compliance Manager assessment—a process we refer to as "extending"—by adding your own controls and actions to better suit your organization’s needs. For example, if you generally need to comply with HIPAA but require additional data protection or security controls, you can extend our HIPAA template by adding your own controls to it. See the instructions for [extending a pre-built assessment](#extend-a-pre-built-assessment).
 
-**To modify the template of an assessment**, follow these instructions:
+### Create your own custom assessment
 
-1. View the list of available [templates](compliance-score-templates.md) in Compliance Score to determine which one you want to modify.
-2. See the [Compliance Manager instructions to customize a template using the extension process](working-with-compliance-manager.md#customize-a-template-through-the-extension-process).
-3. Once you’ve created your template and imported it into Compliance Manger, you can then create your new assessment in Compliance Score. Follow the process of building your assessment using the [assessment creation wizard](#create-an-assessment).
-
-> [!NOTE]
-> Learn  more about the [relationship between Compliance Score and Compliance Manager](compliance-score.md#relationship-to-compliance-manager) during public preview.
-
-### Create your own Custom Assessment
-
-You can create your own assessment entirely from scratch to track precisely what your organization needs. As with the modification process outlined above, creating your own assessment requires you to first create your own template for the assessment in Compliance Manager.
-
-**To create your own Custom Assessment**, follow these instructions:
-
-1. Read how to [create your own template in Compliance Manager](working-with-compliance-manager.md#create-your-own-template-and-import-it-into-compliance-manager).
-2. Once you’ve created your template and imported it into Compliance Manger, you can then create your new assessment in Compliance Score. Follow the process of building your assessment using the [assessment creation wizard](#create-an-assessment).
+You can create your own assessment entirely from scratch to track precisely what your organization needs. Creating your own assessment requires you to first create your own template for the assessment in Compliance Manager. See the instructions for [creating your own custom assessment](#create-your-own-custom-assessment).
 
 ## Understand groups before creating assessments
 
@@ -96,7 +85,7 @@ When two different assessments in the same group share improvement actions that 
 
 ### How to create a group
 
-You create a group during the process of [creating a new assessment](#create-an-assessment).
+You create a group during the process of [creating a new assessment](#to-create-an-assessment).
 
 Groups cannot be created as standalone entities; a group must contain at least one assessment. In order to create a group, you must first create an assessment to put in the group.
 
@@ -114,24 +103,23 @@ Groups cannot be created as standalone entities; a group must contain at least o
 
 ## Use a pre-built assessment
 
-## Modify a pre-built assessment by extending a Compliance Manager template
+There are two starting points for creating an assessment from a Compliance Manager template.
 
-## Create your own custom assessment
+You can begin the process from your assessments page by selecting the **Create assessment** button and then working through the assessment creation wizard. The steps for this process are below.
 
-## (old)Create an assessment
+You can also start from your assessment templates page by finding the template you want, selecting its details page, and selecting **Create assessment**. You’ll then enter the wizard with your template already selected.
 
-To create an assessment in Compliance Score, follow the steps below:
+### To create an assessment
 
-1. From your assessments page, select **Add assessment**. An assessment wizard will appear in a large flyout pane.
+1. Know which group you’ll assign your assessment to, or be prepared to create a new one for this assessment. Learn more about [groups](#understand-groups-before-creating-assessments).  
 
-2. **Select a template:** Choose a [template](compliance-score-templates.md) to serve as the basis for your assessment. You can choose a ready to use template, or a template you’ve modified or created. Select the radio button next to your chosen template, then select  **Next**.
+2. Go to your **assessments** page in Compliance Manager and select Create assessment. An assessment wizard will appear in a large flyout pane.
 
-> [!NOTE]
-> See [instructions for creating and modifying templates](working-with-compliance-manager.md#templates), a process handled in Compliance Manager.
+3. **Select a template**: Choose a template to serve as the basis for your assessment. Select the radio button next to your chosen template, then select **Next**.
 
-3. **Name and group:** Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
+4. **Name and group:** Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
 
-4. Assign your assessment to a group. You can either:
+5. Assign your assessment to a group. You can either:
     - Select **Use existing group** to assign it to a group you’ve already created; or
     - Select **Create new group** to create a new group and assign this assessment to it:
         - Determine a name for your group and enter it in the field beneath the radio button.
@@ -139,13 +127,21 @@ To create an assessment in Compliance Score, follow the steps below:
 
     Read more about [working with groups](#understand-groups-before-creating-assessments)
 
-5. **Review and finish:** The last screen of the wizard shows the template, name, and group chosen for the assessment. You can edit any of these settings from the links on the screen, which take you back to the relevant steps in the wizard. Once you’re satisfied with the settings, select **Create assessment**.
+6. **Review and finish:** The last screen of the wizard shows the template, name, and group chosen for the assessment. You can edit any of these settings from the links on the screen, which take you back to the relevant steps in the wizard. Once you’re satisfied with the settings, select **Create assessment**.
 
-6. The next screen confirms that you’ve successfully created your new assessment. Select **Done** to close the wizard, and your new assessment's details page will appear on the screen.
+7. The next screen confirms that you’ve successfully created your new assessment. Select **Done** to close the wizard, and your new assessment's details page will appear on the screen.
 
 If you see an **Assessment failed** screen after selecting **Create assessment**, select **Try again** to re-create your assessment.
 
 You can change the name of your assessment after you create it by selecting the **Edit name** button in the upper-right corner of the [assessment's details page](#monitor-assessment-progress-and-controls).
+
+## Extend a pre-built assessment
+
+
+
+## Create your own custom assessment
+
+text
 
 ## Delete an assessment
 
