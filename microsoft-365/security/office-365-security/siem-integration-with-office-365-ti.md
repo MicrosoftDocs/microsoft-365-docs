@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 # SIEM integration with Advanced Threat Protection
 
-If your organization is using a security incident and event management (SIEM) server, you can integrate Office 365 Advanced Threat Protection (Office 365 ATP) with your SIEM server. You can do this by using the [Office 365 Activity Management API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+If your organization is using a security incident and event management (SIEM) server, you can integrate Office 365 Advanced Threat Protection (Office 365 ATP) with your SIEM server. You can set up this integration by using the [Office 365 Activity Management API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
 SIEM integration enables you to view information, such as malware or phish detected by Office 365 ATP, in your SIEM server reports. 
 
@@ -32,15 +32,19 @@ SIEM integration enables you to view information, such as malware or phish detec
 
 ## How SIEM integration works
 
-The Office 365 Activity Management API retrieves information about user, admin, system, and policy actions and events from your organization's Microsoft 365 for business and Azure Active Directory activity logs. The [Office 365 Advanced Threat Protection schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) works with Advanced Threat Protection, so if your organization has Office 365 Advanced Threat Protection Plan 1 or Plan 2, or Office 365 E5, you can use that same API for your SIEM server integration.
+The Office 365 Activity Management API retrieves information about user, admin, system, and policy actions and events from your organization's Microsoft 365 and Azure Active Directory activity logs. If your organization has Office 365 ATP Plan 1 or 2, or Office 365 E5, then you can use the [Office 365 Advanced Threat Protection schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema).  
 
-As part of our recent updates, we have also added events from automated investigation and response capabilities in [Office 365 ATP Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2) within the Office 365 Management Activity API. In addition to including data about core investigation details such as ID, name and status, it also contains high-level information about investigation actions and entities.
+Recently, events from automated investigation and response capabilities in [Office 365 ATP Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2) were added to the Office 365 Management Activity API. In addition to including data about core investigation details such as ID, name and status, the API also contains high-level information about investigation actions and entities.
 
-The SIEM server or other similar system should poll the **audit.general** workload to access detection events. To learn more see [Get started with Office 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). In addition, the following values of **AuditLogRecordType** are relevant for Office 365 ATP events:
+The SIEM server or other similar system polls the **audit.general** workload to access detection events. To learn more see [Get started with Office 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
+
 
 ## Enum: AuditLogRecordType - Type: Edm.Int32
 
 ### AuditLogRecordType
+
+The following table summarizes the values of **AuditLogRecordType** that are relevant for Office 365 ATP events:
+
 
 |Value|Member name|Description|
 |---|---|---|
