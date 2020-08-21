@@ -27,7 +27,7 @@ ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: "Follow this checklist to remove an employee from Microsoft 365 and secure data. "
 ---
 
-# Remove a former employee
+# Remove or Delete a former employee
 
 ::: moniker range="o365-21vianet"
 
@@ -45,9 +45,9 @@ Watch a short video about removing an employee. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-To remove an employee:
+To prevent an employee from logging in:
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
@@ -55,7 +55,7 @@ To remove an employee:
 
 3. Enter a new password, and then select **Reset**. (Don't send it to them.)
     
-4. Select the user's name to go to their properties pane, and on the **OneDrive** tab, select **Initiate sign-out**.
+4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ To remove an employee:
 
 3. Enter a new password, and then select **Reset**. (Don't send it to them.)
 
-4. Select the user again, expand **OneDrive Settings**, and then select **Initiate** next to **Sign-out**.
+4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
 
 ::: moniker-end
 
@@ -79,9 +79,12 @@ To remove an employee:
 
 3. Enter a new password, and then select **Reset**. (Don't send it to them.)
 
-4. Select the user again, expand **OneDrive Settings**, and then select **Initiate** next to **Sign-out**.
+4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
 
 ::: moniker-end
+
+> [!NOTE]
+> You need to be a global administrator to initiate sign-out.
 
     
 Within an hour - or after they leave the current Microsoft 365 page they are on - they will be prompted to sign in again. (An access token is good for an hour, so the timeline depends on how much time is left on that token and whether they navigate out of their current webpage.)
@@ -213,7 +216,8 @@ If your former employee had a organization phone, you can use the Exchange admin
     
 6. Select **Save**. 
     
-    **Tip**: Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user. 
+   > [!TIP]
+   > Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user. 
     
 ## Block a former employee's access to Microsoft 365 data
 <a name="bkmk_block"> </a>
@@ -339,6 +343,10 @@ For more information about managing user licenses for Microsoft 365 for business
 When you remove a user's license from Office 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
   
 If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue. 
+
+## Set up call forwarding to people in your organization
+
+If you need to set up call forwarding for the terminated employee's phone number, the call forwarding setting under calling policies can set up forwarding where incoming calls can be forwarded to other users or can ring another person at the same time. For more information, see [Calling policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-calling-policy).
   
 ## Delete a former employee's user account
 <a name="bkmk_delete"> </a>

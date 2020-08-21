@@ -1,50 +1,68 @@
 ---
-title: "Mail flow map report"
+title: "Mail flow map"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid:
-description: "Admins can learn about the mail flow map report in the mail flow dashboard in the Security & Compliance Center."
+ms.custom:
+- seo-marvel-apr2020
+description: "Admins can learn how to use the Mail flow map in the Mail flow dashboard in the Security & Compliance Center to visualize and track how mail flows to and from their organization over connectors and without using connectors."
 ---
 
-# Mail flow map report
+# Mail flow map in the Security & Compliance Center
 
-This report gives insights as to how mail flows through your organization. You can use this information to learn patterns, identify anomalies, and fix issues as they arise.
+The **Mail flow map** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center gives insight as to how mail flows through your organization. You can use this information to learn patterns, identify anomalies, and fix issues as they occur.
 
-![The Mail flow map report in the mail flow dashboard in the Security & Compliance Center](../../media/mail-flow-map-selected.png)
+![Mail flow map widget in the Mail flow dashboard in the Security & Compliance Center](../../media/mfi-mail-flow-map-widget.png)
 
-## Mail flow map widget
+By default, the widget shows the mail flow pattern from the previous day in a chart known as a *Sankey* diagram. You can use the left arrow ![Left arrow](../../media/scc-left-arrow.png) and right arrow ![Right arrow](../../media/scc-right-arrow.png) to show information from different days. Each different color represents mail flow over a different inbound or outbound connector (or without using connectors). If you hover over a specific color, the number of messages is displayed for that type of connector.
 
-By default, the mail flow map shows the high level mail flow pattern from the previous day. You can use the left and right arrows for different days. Hovering your mouse cursor over each area in the report will show the volume of mail to and from your organization as shown in the following diagram:
+## Report view for the Mail flow map
 
-![Left and right arrows in the Mail flow map widget](../../media/mail-flow-map-widget.png)
+Clicking on the **Mail flow map** widget will take you to the **Mail flow map** report.
 
-## Overview
+The following charts are available in the report view:
 
-Clicking on the **Mail flow map** widget will take you to the **Mail flow map** report. Here you can see more granular level of report, you can click View details table to see detailed data. You can also download the detailed report by clicking Request report.
+- **Show data for: Overview**: This is basically a larger view of the widget. If you hover over a specific color, the number of messages is displayed for that type of connector.
 
-![Overview view in the Mail flow map report](../../media/mail-flow-map-overview.png)
+  ![Overview view in the Mail flow map report](../../media/mfi-mail-flow-map-report-overview.png)
 
-## Details
+- **Show data for: Detail**: This view shows details about the connectors and destination domains. The top sender and recipient domains are listed, and the rest are put in **Others**. If you hover over a specific color and section, the number of messages is displayed.
 
-By default, **Show data for** is set to the value **Overview**. When you click on the drop down and select **Detail**, the view switches to the domain level detail.
+  ![Detail view in the Mail flow map report](../../media/mfi-mail-flow-map-report-detail.png)
 
-![Select Detail in Show data for in Overview view in the Mail flow map report](../../media/mail-flow-map-select-detail.png)
+If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
 
-The top sender and recipient domains are listed, and the rest will be put in **Others** as shown in the following diagrams:
+To email the report for a specific date range to one or more recipients, click **Request download**.
 
-![Details view in the Mail flow map report](../../media/mail-flow-map-detail.png)
+Related insights are shown beneath the Mail flow map if they're available (for example, the [Fix possible mail loop insight](mfi-mail-loop-insight.md)).
 
-## Related insights
+## Details table view for the Mail flow map
 
-Related insights are shown beneath the Mail flow map if they're available (for example, the Sender domain insight or the Mail loop insight).
+If you click **View details table** in a report view, the following information is shown:
+
+- **Date**
+- **Category**
+- **Connector / Third-party service provider**
+- **Sender/Recipient domain**
+- **Message count**
+
+If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.
+
+If you select a row, similar details are shown in a flyout:
+
+![Details flyout from the details table in the Mail flow map](../../media/mfi-mail-flow-map-view-details-table-details.png)
+
+To email the report for a specific date range to one or more recipients, click **Request download**.
+
+To go back to the reports view, click **View report**.
 
 ## See also
 
-For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

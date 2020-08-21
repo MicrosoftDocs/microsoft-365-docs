@@ -13,7 +13,9 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
-description: "You can configure Exchange Online IRM to use on-premises Active Directory Rights Management Service (AD RMS), if needed, to satisfy your organization requirements. This is not common. If you do not have a requirement to use AD RMS, use Office Message Encryption instead."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to configure Exchange Online IRM to use on-premises Active Directory Rights Management Service (AD RMS) to satisfy your organization requirements.
 ---
 
 # Exchange Online mail encryption with AD RMS

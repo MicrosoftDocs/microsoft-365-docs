@@ -9,7 +9,7 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-modern-desktop
 - Strat_O365_Enterprise
@@ -49,10 +49,10 @@ Instead of managing updates to Office with Configuration Manager, Contoso enable
 
 Contoso followed the same two-stage approach for feature updates that they used for deploying Office: devices in the pilot group received feature updates four months earlier than devices in the rest of the organization (the broad group). To enable this for Office, Contoso used two recommended [update channels](https://docs.microsoft.com/DeployOffice/overview-update-channels): 
 
-- Semi-Annual Channel (Targeted) for updates to the pilot group 
-- Semi-Annual Channel for updates to the broad group. 
+- Semi-Annual Enterprise Channel (Preview) for updates to the pilot group 
+- Semi-Annual Enterprise Channel for updates to the broad group. 
 
-Because the Semi-Annual (Targeted) Channel releases a version of Microsoft 365 Apps for enterprise four months earlier than the Semi-Annual Channel, Contoso has time to validate the updates without having to manage them. 
+Because the Semi-Annual Enterprise Channel (Preview) releases a version of Microsoft 365 Apps for enterprise four months earlier than the Semi-Annual Enterprise Channel, Contoso has time to validate the updates without having to manage them. 
 
 ## Deployment process
 
@@ -61,7 +61,7 @@ To complete the deployment of Office, Contoso implemented the following process,
 1. Before deploying, they used the Readiness Toolkit to test their apps and Office add-ins to assess their compatibility with Microsoft 365 Apps for enterprise.
 2. In Configuration Manager, Contoso enabled peer cache on their client devices, which helped with limited network capacity when deploying to client devices in remote locations. 
 3. They defined two deployment groups as device collections in Configuration Manager: a pilot group and a broad group. The pilot group, which included a small set of representative devices across the organization, was used to do additional testing of apps, add-ins, and hardware with Windows 10 Enterprise and Microsoft 365 Apps for enterprise. 
-4. They created deployment packages for Office using the Office Client Management dashboard and the Office 365 Installer wizard, both of which are part of the Configuration Manager console. They built two Microsoft 365 Apps for enterprise packages, one for the pilot group on the Semi-Annual Channel (Targeted) and one for the broad group on the Semi-Annual Channel. 
+4. They created deployment packages for Office using the Office Client Management dashboard and the Office 365 Installer wizard, both of which are part of the Configuration Manager console. They built two Microsoft 365 Apps for enterprise packages, one for the pilot group on the Semi-Annual Enterprise Channel (Preview) and one for the broad group on the Semi-Annual Enterprise Channel. 
 5. As part of each Office package, they included English, French, and German Language packs. If a device required a language not included in the Office package, it was automatically downloaded from the Office Content Delivery Network (CDN).
 6. They used the built-in feature in the Office package to automatically remove all existing MSI versions of Office before installing Microsoft 365 Apps for enterprise.
 7. In Configuration Manager, they deployed the Windows and Office packages to distribution points across their network, and then ran the Configuration Manager deployment task sequences to deploy the pilot Microsoft 365 Apps for enterprise package to the pilot group.
@@ -75,12 +75,12 @@ Here is Contoso’s Microsoft 365 Apps for enterprise installation and ongoing u
  
 ## Next step
 
-[Learn](contoso-mdm.md) how Contoso is using Microsoft Intune in Microsoft 365 Enterprise to manage its devices and the apps that run on them across its organization.
+[Learn](contoso-mdm.md) how Contoso is using Microsoft Intune in Microsoft 365 for enterprise to manage its devices and the apps that run on them across its organization.
 
 ## See also
 
-[Microsoft 365 Apps for enterprise for Microsoft 365 Enterprise](office365proplus-infrastructure.md)
+[Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)

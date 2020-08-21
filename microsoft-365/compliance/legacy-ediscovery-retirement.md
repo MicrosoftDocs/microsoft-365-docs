@@ -119,7 +119,7 @@ The following table describes other tools that you can use to replace the existi
 <p>Applying policies to specific content locations such as Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Microsoft Teams, and Office 365 Groups</p></li>
 <li>
 <p>Applying policies to specific users</p></li></ul>
-<p>For more information, see <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies"> Overview of retention policies</a>.</td>
+<p>For more information, see <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies"> Learn about retention policies and retention labels</a>.</td>
 </tr>
 <tr class="odd">
 <td>Copy email search results to a discovery mailbox for review</td><td>Review sets in Advanced eDiscovery v2.0</td>
@@ -284,14 +284,6 @@ The following table describes other tools that you can use to replace the existi
 </td>
 </tr>
 <tr class="even">
-<td>Purge messages from a mailbox</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
-<p></p></td>
-<td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and purge content. You can create and run a search with <strong>New-ComplianceSearch</strong> and <strong>New-ComplianceSearch</strong> cmdlets, and then you can purge the content by using <strong>New-ComplianceSearchAction -Purge -PurgeType</strong> command. For more information, see <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Search for and delete messages</span></a>.</p>
-</td>
-</tr>
-<tr class="odd">
 <td>Delete bulk email from a mailbox</td>
 <td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Set up an archive and deletion policy for mailboxes</span></a></p>
 <p></p></td>
@@ -302,6 +294,24 @@ The following table describes other tools that you can use to replace the existi
 <td>Copy search results to a discovery mailbox</td>
 <td> </td>
 <td>There's no direct replacement for this functionality because it does not provide access to all Microsoft 365 services. See the FAQs in the <strong>*-MailboxSearch cmdlets</strong> section for alternative solutions. </td>
+</tr>
+<tr class=odd>
+  <td>Copy messages from one mailbox to a different mailbox</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Assign permissions to a mailbox</a></td>
+  <td>To give a person access to another user's email (such as when an employee leaves your organization and you need to give another person access to the former employee's email), we recommended that you assign that person permissions to access the former employee's mailbox. So instead of copying mailbox items to another user mailbox or a shared mailbox, just assign a user permissions to access the source mailbox.</td>
+</tr>
+<tr class=even>
+  <td>Purge messages from a mailbox</td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<p></p></td>
+<td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and purge content. You can create and run a search with <strong>New-ComplianceSearch</strong> and <strong>New-ComplianceSearch</strong> cmdlets, and then you can purge the content by using <strong>New-ComplianceSearchAction -Purge -PurgeType</strong> command. For more information, see <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Search for and delete messages</span></a>.</p>
+</td>
+</tr>
+<tr class="odd"> 
+<td>Purge messages from a mailbox</td>
+<td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Assign permissions to a mailbox</a></td>
+<td>To purge messages from a mailbox, assign an administrator permissions to access the employee's mailbox. Messages can be deleted and recycled as needed taking advantage of the built in search and viewing capabilities in Outlook.</td>
 </tr>
 </tbody>
 </table>

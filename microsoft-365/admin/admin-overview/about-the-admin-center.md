@@ -28,9 +28,9 @@ description: "Use the admin center to set up your organization in the cloud, and
 
 # About the Microsoft 365 admin center
 
-**If you purchased an Microsoft 365 for business plan AND you have admin permissions, you have access to the admin center**. This article is for you!
+**If you purchased a Microsoft 365 for business plan AND you have admin permissions, you have access to the admin center**. This article is for you!
 
-**If you are a user or have an Microsoft 365 Family plan, you do not have an admin center.** To set up Microsoft 365, go to [Download and install or reinstall Microsoft 365 or Office 2019 on a PC or Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).
+**If you are a user or have a Microsoft 365 Family plan, you do not have an admin center.** To set up Microsoft 365, go to [Download and install or reinstall Microsoft 365 or Office 2019 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
 
 You use the admin center to set up your organization in the cloud, manage users, manage subscriptions, and much more. In this article, learn how to get to the admin center and learn about available features and settings.
 
@@ -38,7 +38,7 @@ Watch a short video about the admin center. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL]
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## How to get to the admin center
 
@@ -72,7 +72,7 @@ Here are the features and settings you'll find in the left-hand navigation of th
 |-----|-----|
 |**Home** <br/> |This is the landing page in the admin center. You'll see where to manage users, billing, service health, and reports.  <br/> |
 |**Users** <br/> |Create and manage users in your organization, like employees or students. You can also set their permission level or reset their passwords.  <br/> |
-|**Groups** <br/> |Create and manage groups in your organization, such as an Microsoft 365 group, distribution group, security group, or shared mailbox. Learn how to [create](../create-groups/create-groups.md) and [manage](../create-groups/manage-groups.md) groups.  <br/> |
+|**Groups** <br/> |Create and manage groups in your organization, such as a Microsoft 365 group, distribution group, security group, or shared mailbox. Learn how to [create](../create-groups/create-groups.md) and [manage](../create-groups/manage-groups.md) groups.  <br/> |
 |**Resources** <br/> |Create and manage resources, like a SharePoint site collection. Learn how to [create site collections](https://docs.microsoft.com/sharepoint/create-site-collection).  <br/> |
 |**Billing** <br/> |View, purchase, or cancel subscriptions for your organization. View past billing statements or view the number of assigned licenses to individual users. Learn how to [manage billing](../../commerce/index.yml).  <br/> |
 |**Support** <br/> | View existing service requests or create new ones. Learn more in [Contact support for business products - Admin Help](../contact-support-for-business-products.md). |
@@ -84,16 +84,16 @@ Here are the features and settings you'll find in the left-hand navigation of th
    
 ## Common tasks in the admin center
 
-- Manage users: [Add users individually](../add-users/add-users.md), [Delete or restore users](../add-users/delete-a-user.md), or [Reset a user's password](../add-users/reset-passwords.md).
+- Manage users: [Add users and assign licenses at the same time](../add-users/add-users.md), [Delete or restore users](../add-users/delete-a-user.md), or [Reset a user's password](../add-users/reset-passwords.md).
 
 - Get help with billing: [Billing](../../commerce/index.yml)
 
 - See activity reports: [Activity Reports](../activity-reports/activity-reports.md)
 
-- [Create an Microsoft 365 group ](../create-groups/create-groups.md)
+- [Create a Microsoft 365 group ](../create-groups/create-groups.md)
 
 - [Manage a Microsoft 365 group](../create-groups/manage-groups.md)
 
 ## See also
 
-[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -19,18 +19,19 @@
         href: empower-people-to-work-remotely-secure-sign-in.md
       - name: Step 2. Provide remote access
         href: empower-people-to-work-remotely-remote-access.md
-      - name: Step 3. Deploy endpoint management
+      - name: Step 3. Deploy security and compliance
+        href: empower-people-to-work-remotely-security-compliance.md
+      - name: Step 4. Deploy endpoint management
         href: empower-people-to-work-remotely-manage-endpoints.md
-      - name: Step 4. Deploy productivity apps and services
+      - name: Step 5. Deploy productivity apps and services
         href: empower-people-to-work-remotely-teams-productivity-apps.md
-      - name: Step 5. Create communication venues
-        href: empower-people-to-work-remotely-communication-venues.md
       - name: Step 6. Train remote workers
         href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Set up secure collaboration with Microsoft 365
-      href: setup-secure-collaboration-with-teams.md
       items:
-      - name: Three tiers of protection with Microsoft Teams
+      - name: Overview   
+        href: setup-secure-collaboration-with-teams.md
+      - name: Step 1. Configure three tiers of protection with Microsoft Teams
         items:
         - name: Three tiers of protection overview
           href: configure-teams-three-tiers-protection.md
@@ -42,7 +43,7 @@
           href: configure-teams-highly-sensitive-protection.md
         - name: Configure a team with security isolation
           href: secure-teams-security-isolation.md
-      - name: Configure external sharing
+      - name: Step 2. Configure external sharing
         items:
         - name: External sharing overview
           href: collaborate-with-people-outside-your-organization.md
@@ -69,9 +70,27 @@
         - name: External sharing reference
           href: microsoft-365-guest-settings.md    
     - name: Deploy threat protection across Microsoft 365
-      href: deploy-threat-protection.md
-
-    
+      items:
+      - name: Overview   
+        href: deploy-threat-protection.md
+      - name: Steps to deploy threat protection
+        href: deploy-threat-protection-configure.md
+    - name: Deploy information protection for data privacy regulations
+      items:
+      - name: Overview
+        href: information-protection-deploy.md
+      - name: Plan
+        href: information-protection-deploy-assess.md
+      - name: Track
+        href: information-protection-deploy-compliance.md
+      - name: Prevent
+        href: information-protection-deploy-identity-device-threat.md
+      - name: Protect
+        href: information-protection-deploy-protect-information.md
+      - name: Retain
+        href: information-protection-deploy-govern.md
+      - name: Investigate
+        href: information-protection-deploy-monitor-respond.md
 - name: Workload solutions and scenarios
   items: 
     - name: Overview
@@ -83,15 +102,54 @@
       - name: Telephony solutions
         items: 
         - name: Choose your solution 
-          href: https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          href: https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
         - name: Case study for multi-national corporation 
-          href: 
+          href: https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+
+      - name: Collaboration governance
+        items:
+        - name: Overview
+          href: collaboration-governance-overview.md
+        - name: Governance first
+          href: collaboration-governance-first.md
+        - name: Groups with SharePoint
+          href: groups-sharepoint-governance.md
+        - name: Groups, SharePoint, and Teams
+          href: groups-sharepoint-teams-governance.md
+        - name: Services interactions reference
+          href: groups-services-interactions.md
+        - name: Access
+          href: groups-teams-access-governance.md
+        - name: Compliance
+          href: groups-teams-compliance-governance.md
+        - name: Communications
+          href: groups-teams-communication-governance.md
+        - name: Organization and lifecycle
+          items:
+          - name: Organization and lifecycle governance
+            href: plan-organization-lifecycle-governance.md
+          - name: Manage group creation
+            href: manage-creation-of-groups.md
+          - name: Naming policies
+            href: groups-naming-policy.md
+          - name: Expiration policy
+            href: microsoft-365-groups-expiration-policy.md
+          - name: Per-group guest access
+            href: per-group-guest-access.md
+          - name: Send-as policy
+            href: allow-members-to-send-as-or-send-on-behalf-of-group.md
+          - name: Groups creation domain
+            href: choose-domain-to-create-groups.md
+          - name: End of lifecycle options
+            href: end-life-cycle-groups-teams-sites-yammer.md
+
       - name: File collaboration in SharePoint with Microsoft 365
         href: https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
       - name: Plan an intelligent SharePoint intranet
         href: https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
       - name: OneDrive Guide for enterprises
-        href: https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        href: https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+
     - name: Security
       items:
       - name: Top tasks for security teams to support working from home
@@ -121,6 +179,8 @@
         href: contoso-case-study-solutions.md
       - name: Isolated Team for a top-secret project
         href: contoso-team-for-top-secret-project.md
+      - name: Teams voice migration
+        href: https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json  
 
     - name: Test Lab Guides
       items:
@@ -163,7 +223,8 @@
       href: identity-design-principles.md
     - name: Security hurdles you can sail over
       href: security-design-principles.md
-      
+    - name: Networking up (to the cloud)
+      href: networking-design-principles.md
 - name: Microsoft 365 deployment resources
   items: 
     - name: Deploy Microsoft 365

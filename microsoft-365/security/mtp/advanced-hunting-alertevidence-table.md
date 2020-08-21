@@ -35,7 +35,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `EntityType` | string | Type of object, such as a file, a process, a device, or a user |
 | `EvidenceRole` | string | How the entity is involved in an alert, indicating whether it is impacted or is merely related |
 | `SHA1` | string | SHA-1 of the file that the recorded action was applied to |
-| `SHA256` | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated—use the SHA1 column when available. |
+| `SHA256` | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated — use the SHA1 column when available. |
 | `RemoteIP` | string | IP address that was being connected to |
 | `RemoteUrl` | string | URL or fully qualified domain name (FQDN) that was being connected to |
 | `AccountName` | string | User name of the account |
@@ -48,9 +48,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AdditionalFields` | string | Additional information about the event in JSON array format |
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
+- [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

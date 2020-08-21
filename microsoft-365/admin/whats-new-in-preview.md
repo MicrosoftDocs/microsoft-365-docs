@@ -2,8 +2,8 @@
 title: "What's new in the Microsoft 365 admin center?"
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: anfowler
+author: adefowler
 manager: shohara
 audience: Admin
 ms.topic: overview
@@ -38,22 +38,77 @@ We're continuously adding new features to [the Microsoft 365 admin center](micro
 > **"Classic" admin center retirement starting in March**<br><br>
 When you sign in to the Microsoft 365 admin center, you'll now go to the new admin center every time. And in March, we started disabling the ability to switch back to the classic admin center. For now, you can still switch back, but as the new admin center comes to parity (and exceeds it) we will turn off the switch for all organizations. <br><br> *Last updated: May 11, 2020*
 
-And if you're interested in what's new in other Microsoft cloud services:
+And if you'd like to know what's new with other Microsoft cloud services:
 
-- [What's New in Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
-- [What's New in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/whats-new)
-- [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [What's new in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
 - [What's new in the Exchange admin center](https://docs.microsoft.com/Exchange/whats-new)
+- [What's new in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
+- [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
+- [What's new in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office updates](https://docs.microsoft.com/OfficeUpdates/)
+
+## June 2020
+
+### Keeping up with Office What's New management
+
+A few months ago, we added a setting that lets you manage the [What's New messages that show up in a user's Office apps](#office-whats-new-management). This month, we released a new Home page card that will help you act quickly and keep track of the **What's New** messages that you want shown to the users in your organization.
+
+### Docs, training, and videos (June)
+
+- [Getting started with Teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+
+
+## May 2020
+
+### New update channel for Office
+
+On May 12, we announced the availability of a new update channel for Office:  Monthly Enterprise Channel. This update channel provides your users with new Office features once a month, on the 2nd Tuesday of the month.
+
+If you allow your users to self-install Office from the portal, you can select Monthly Enterprise Channel for them. To do this, sign in to the Microsoft 365 admin center and go to **Show all** >**Settings** > **Org settings** > **Services** > **Office software download settings**. If you select **Once a month (Monthly Enterprise Channel)**, then any new self-installs of Office will be configured to use Monthly Enterprise Channel.
+
+In conjunction with the release of Monthly Enterprise Channel, we’re also revising the names of the existing update channels. For example, Monthly Channel is being renamed to Current Channel. The new names take effect on June 9, 2020.
+
+For more information, see [Changes to update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/update-channels-changes).
+
+### New admin roles
+
+We've added some new Azure Active Directory admin roles to the Microsoft 365 admin center.
+
+- Hybrid identity admin role gives users permission to manage cloud provisioning and authentication services.
+- Network admin role lets users manage network locations and review network insights for Microsoft 365 Software as a Service apps.
+- Printer admin role grants permission to manage all aspects of printers and printer connections.
+- Printer technician is a subset of the Printer admin role where those users can register and unregister printers, and update printer status.
+To find out more about these roles, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+
+### Export groups list
+
+We've heard from a lot of admins that they need to share information about groups and their usage to people who don't have access to the admin centers. You can now export the Groups list to a CSV file for auditing purposes, which means you can throw out that old PowerShell script. To try it out, go to **Groups** > **Groups**, and then select **Export groups** from the command bar.
+
+### Microsoft 365 solution and architecture center
+
+Just this month, we released a new site on [https://docs.microsoft.com](https://docs.microsoft.com) called the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center), which brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant collaboration. In this center, you'll find:
+
+- Foundational solution guidance
+- Workload solutions and scenario guidance
+- Solution and architecture illustrations (The posters!!!)
+- Industry specific guidance
+- Enterprise architecture design principals
+
+### Docs, training, and videos
+
+- **What's new in Microsoft 365 video series**: This month, we cover the new support experience in the Teams admin and Security and Compliance Centers, Planner integration with the Message Center, and the new 3x3 video layout in Microsoft Teams. [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- The [Microsoft 365 admin center help](https://docs.microsoft.com/microsoft-365/admin/) hub page was updated to help you find what you need more quickly. And if you go look at that page right now, we've added a card to inform you of important updates and changes.
 
 ## April 2020
 
 ### Intune roles management
 
+[April 2020](#april-2020)
+
 Well, we did it! We've taken the second step towards a unified roles experience and you can now manage Intune roles in the Microsoft 365 admin center. You can also leverage features such as the ability to search for roles and view role permissions. This means you don’t need two separate tools to manage roles for Microsoft 365 and Intune. When you sign into the Microsoft 365 admin center, you’ll see that there are two pivots on the Roles page, one for Azure AD and one for Intune.
 
-:::image type="content" source="../media/MAC-WN-IntuneRoles.png" alt-text="Roles page with the Intune pivot selected":::
+![Roles page with the Intune pivot selected](../media/MAC-WN-IntuneRoles.png)
 
 ### Sync Message Center posts to Planner
 
@@ -99,25 +154,25 @@ We've got two updates for Groups this month:
 - You can now edit email addresses for Office 365 groups (Also known as Groups in Outlook, and soon to be known as Microsoft 365 groups).
 - We've heard your feedback and we've added clearer error messaging for why you can't convert a group to a Microsoft Team.
 
-### Docs, videos, and training
+### Docs, videos, and training (April)
 
 **What's new in Microsoft 365 video series**: This month, we cover tips and resources to help small businesses transition to remote work including how to roll out Microsoft Teams, remote work training resources to stay connected with clients and partners, and the new Microsoft 365 Business Voice plan. [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 #### For your users
 
-- [Schedule a meeting](https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
-- [Join a Teams meeting](https://support.office.com/article/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Create an org-wide team](https://support.office.com/article/create-a-company-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Create a Team with guests](https://support.office.com/article/create-a-team-with-guests-11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [Join a Team as a guest](https://support.office.com/article/join-a-team-as-a-guest-928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [Create a group email address](https://support.office.com/article/create-a-company-email-address-ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [Schedule a meeting](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Join a Teams meeting](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
+- [Create an org-wide team](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
+- [Create a Team with guests](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
+- [Join a Team as a guest](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
+- [Create a group email address](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
 
 #### For admins and business owners
 
-- [Empower your small business with remote work](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6) 
-- [Running a remote small business](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Sign up for Microsoft Business Basic](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Setting up two-factor sign-in](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Empower your small business with remote work](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
+- [Running a remote small business](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Sign up for Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Setting up two-factor sign-in](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
 
 ## March 2020
 
@@ -125,21 +180,19 @@ We've got two updates for Groups this month:
 
 We received a lot of feedback from admins about the how hard it is to assign licenses when adding users. We've made the first update to this fix and we've migrated to a more reliable behind-the-scenes service to process those requests. And if something goes wrong, you'll now get an error message that lets you to try again.
 
-:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Add user confirmation page with the error.":::
+![Add user confirmation page with the error.](../media/MAC-WN-ImprovedLicensing.png)
 
 ### Microsoft Teams home page card
 
 With the uptick in Teams usage, some orgs will get a pinned dashboard card that makes turning Teams on more discoverable. The card also has links to training and docs to help your org transition to remote work. Just go to the **Home** page to see the new card.
 
-:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Microsoft Teams home page card":::
+![Microsoft Teams home page card](../media/MAC-WN-TeamsCard.PNG)
 
 ### Customize your organization's SharePoint mobile app theme
 
 Using the Microsoft 365 admin center, you can now customize your organization's theme in SharePoint mobile app for iOS and SharePoint mobile app for Android. This feature conveniently provides a mobile intranet app experience that can match your SharePoint Online for employees on the go. Theme customization includes your logo image, navigation bar color, text and icon colors, and accent colors, making for easy recognition.
 
-:::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagram mapping the admin center settings to the mobile app.":::
-
-:::image-end:::
+![Diagram mapping the admin center settings to the mobile app.](../media/MAC-WN-CustThemeSP.png)
 
 ### Improvements to the "Add a group" wizard
 
@@ -158,7 +211,7 @@ The new product names go into effect on April 21, 2020. This is a change to the 
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 Apps for business       | 
+|Office 365 Business     |    Microsoft 365 Apps for business       |
 |Office 365 ProPlus    |   Microsoft 365 apps for enterprise      |
 
 ### Videos, training, and docs
@@ -188,7 +241,7 @@ A couple of changes in the groups area this month:
 - **Sort by group name**: You can sort the groups list alphabetically, by selecting the **Group name** column.
 - **Restore deleted Microsoft 365 groups**: You don't have to go to the Exchange admin center anymore to restore  deleted Microsoft 365 groups. Go to **Microsoft 365 admin center** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. It'll restore the group back to the **Groups** list and restore the group's email, conversations, notebook, files, and calendar.
 
-### Videos, training, and docs
+### Videos, training, and docs (February)
 
 - **What's new in Microsoft 365 video series**: This month, we're focused on custom search capabilities for SharePoint Online, the Office "What's New" management feature that lets you show or hide specific features from end-users via the in-app help pane, the latest security and compliance updates in Yammer, and more. Here's the latest episode: [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
@@ -230,12 +283,12 @@ The Resource mailboxes list has been updated to the new style. In the Microsoft 
 
 Check out the small business admin training that we released in January:
 
-- [Create your business website](https://support.office.com/article/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [Find answers and help](https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [Get help or support](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
-- [Delete a user](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
-- [Choose a Microsoft subscription](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Overview of Microsoft 365 for business security](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [Create your business website](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
+- [Find answers and help](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
+- [Get help or support](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
+- [Delete a user](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
+- [Choose a Microsoft subscription](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
+- [Overview of Microsoft 365 for business security](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## November and December 2019
 
@@ -304,7 +357,7 @@ There have been a lot of changes for Roles in the admin center since we started 
 
 - **Favorites** - You can add a star to your favorite or most-used roles, so that you can easily find them by sorting the column or creating a filter.
 - **Active users** > **Manage roles** - This has been updated to align with the changes in Roles. As with the Roles list, we've scoped the default list of roles to the most useful, but you can see all roles by expanding **Show all by category**.
-- **Global reader role** - You asked for it! You got it! The [Global reader](add-users/about-admin-roles.md#azure-ad-roles-available-in-the-microsoft-365-admin-center) role!
+- **Global reader role** - You asked for it! You got it! The [Global reader](add-users/about-admin-roles.md) role!
 
 ### Report an issue
 

@@ -60,7 +60,7 @@ Roles on billing profiles have permissions to control purchases, and view and ma
 
 ## View billing profiles
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
 2. Choose **Billing profiles**, and then choose a billing profile from the list.
 

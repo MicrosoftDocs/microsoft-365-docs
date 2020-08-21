@@ -21,6 +21,7 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: "Export the search results from a Content Search in the Security & Compliance Center to a local computer. Email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents. "
+ms.custom: seo-marvel-apr2020
 ---
 
 # Export Content Search results
@@ -31,7 +32,7 @@ Any RMS-encrypted email messages included in the results of a Content Search wil
   
 Exporting the results of a Content Search involves preparing the results, and then downloading them to a local computer.
   
-## Before you begin
+## Before you export content search results
 
 - To export search results, you have to be assigned the Export management role in the Security & Compliance Center. This role is assigned to the built-in eDiscovery Manager role group. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
     

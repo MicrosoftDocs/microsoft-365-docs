@@ -40,21 +40,21 @@ Your organization recently got Microsoft 365, and now you need to use it so you 
 ## Training resources for your users
 
 
-- [Employee quick start](https://support.office.com/article/b9700090-ce64-4046-ab92-ce8488a7bc0f.aspx)
+- [Employee quick start](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
     
-- [Office Training Center](https://support.office.com/article/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb.aspx)
+- [Office Training Center](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
-- [Where to sign in](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)
+- [Where to sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
     
-- [Install Office on your PC or Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)
+- [Install Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
     
-- [Mobile setup](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f.aspx)
+- [Mobile setup](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
     
 ## Training resources for you, the admin
 
 Here are some resources to help you get started.
   
-- [Training for admins](https://support.office.com/article/e990f8ff-56d7-450e-ad9f-74ae8718ef09.aspx): Get links to free online classes for admins.
+- [Training for admins](https://docs.microsoft.com/microsoft-365/admin): Get links to free online classes for admins.
     
 - [Admin Help](https://docs.microsoft.com/microsoft-365/admin/admin-home): Get info about top tasks, getting started with admin tools, and troubleshooting problems.
     

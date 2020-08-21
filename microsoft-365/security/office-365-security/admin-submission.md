@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -31,17 +31,25 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Submission** page, use <https://protection.office.com/reportsubmission>.
 
-- You need to be assigned permissions before you can perform these procedures. To add, modify, and delete anti-spam policies, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions before you can do the procedures in this topic:
+
+  - To submit messages and files to Microsoft, you need to be a member of one of the following role groups:
+
+    - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - For read-only access to the Submissions portal, you need to be a member of one of the following role groups:
+
+    - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## Report suspicious content to Microsoft
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Review** \> **Admin submission messages**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Submissions**, verify that you're on the **Admin submissions** tab, and then click **New submission**.
 
-2. On the **Submissions** page that appears, click the **New submission** button.
-
-3. Use **New submission** flyout that appears to submit the message, URL, or attachment as described in the following sections.
+2. Use **New submission** flyout that appears to submit the message, URL, or attachment as described in the following sections.
 
 ### Submit a questionable email to Microsoft
 
@@ -99,11 +107,9 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ## View admin submissions
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Review** \> **Admin submission messages**.
+In the Security & Compliance Center, go to **Threat management** \> **Submissions**, verify that you're on the **Admin submissions** tab, and then click **New submission**.
 
-2. On the **Submissions** page that appears, verify that the **Admin submissions** tab is selected.
-
-Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
+Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** (a GUID value that's assigned to every submission) by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
 
 To change the filter criteria, click the **Submission ID** button and choose one of the following values:
 
@@ -126,7 +132,7 @@ Click the **Email** tab.
 You can click the **Column options** button near the bottom of the page to add or remove columns from the view:
 
 - **Date**
-- **Submission ID**
+- **Submission ID**: A GUID value that's assigned to every submission.
 - **Submitted by**<sup>\*</sup>
 - **Subject**<sup>\*</sup>
 - **Sender**
@@ -173,9 +179,9 @@ You can click the **Column options** button near the bottom of the page to add o
 
 If you've deployed the [Report Message add-in](enable-the-report-message-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User submissions** tab.
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Review** \> **Admin submission messages**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Submissions**.
 
-2. On the **Submissions** page that appears, click the **User submissions** tab.
+2. Select the **User submissions** tab, and then click **New submission**.
 
 You can click the **Column options** button near the bottom of the page to add or remove columns from the view:
 
@@ -206,9 +212,9 @@ To export the results, click **Export** near the top of the page and select **Ch
 
 If you've [configured a custom mailbox](user-submission.md) to receive user reported messages, you can view and also submit messages that were delivered to the reporting mailbox.
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Review** \> **Admin submission messages**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Submissions**.
 
-2. On the **Submissions** page that appears, click the **Custom mailbox** tab.
+2. Select the **Custom mailbox** tab.
 
 You can click the **Column options** button near the bottom of the page to add or remove columns from the view:
 

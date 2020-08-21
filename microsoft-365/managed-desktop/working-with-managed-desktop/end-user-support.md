@@ -6,6 +6,9 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
 # Getting help for end users
@@ -32,7 +35,7 @@ For your end users to be able to get help through the app, make sure these prere
 - The device must be registered with Microsoft Managed Desktop using one of the methods in [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md), such as [Register new devices yourself](../get-started/register-devices-self.md).
 - The display language for the device must be set to any of these English-language locales: en-us, en-gb, en-au, en-nz, or en-ca.
 - The Get Help app should be up to date. To confirm this, check for app updates in the Microsoft Store.
-- Certain [endpoints](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop) must be accessible from the device.
+- Certain [endpoints](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) must be accessible from the device.
 
 > [!NOTE]
 > The Get Help app can take up to one hour after a device is deployed to fully function.

@@ -116,9 +116,9 @@ Choosing whether to assign permissions now or let users assign permissions:
 
 Use the following options to control who can access email or documents to which this label is applied. You can:
 
-1. **Allow access to labeled content to expire**, either on a specific date or after a specific number of days after the label is applied. After this time, users won't be able to open the labeled item. If you specify a date, it is effective midnight on that date in your current time zone. (Note that some email clients might not enforce expiration and show emails past their expiration date, due to their caching mechanisms.)
+- **Allow access to labeled content to expire**, either on a specific date or after a specific number of days after the label is applied. After this time, users won't be able to open the labeled item. If you specify a date, it is effective midnight on that date in your current time zone. (Note that some email clients might not enforce expiration and show emails past their expiration date, due to their caching mechanisms.)
 
-2. **Allow offline access** never, always, or for a specific number of days after the label is applied. If you restrict offline access to never or a number of days, when that threshold is reached, users must be reauthenticated and their access is logged. For more information, see the next section on the Rights Management use license.
+- **Allow offline access** never, always, or for a specific number of days after the label is applied. If you restrict offline access to never or a number of days, when that threshold is reached, users must be reauthenticated and their access is logged. For more information, see the next section on the Rights Management use license.
 
 Settings for access control for encrypted content:
 
@@ -161,7 +161,7 @@ When you assign permissions, you can choose:
     > [!NOTE]
     > If you specify a domain from an organization that uses Azure AD, you can't restrict access to that specific domain. Instead, all verified domains in Azure AD are automatically included for the tenant that owns the domain name you specify.
 
-When you choose all tenant members or browse the directory, the users or groups must have an email address.
+When you choose all users and groups in your organization or browse the directory, the users or groups must have an email address.
 
 As a best practice, use groups rather than users. This strategy keeps your configuration simpler.
 
@@ -203,6 +203,15 @@ The Rights Management issuer is always granted Full Control permissions for the 
 
 For more information, see [Rights Management issuer and Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
+### Double Key Encryption
+
+> [!NOTE]
+> This feature is currently rolling out in public preview. For more information, see [Announcing public preview of Double Key Encryption for Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
+
+Select this option only after you have configured the Double Key Encryption service and you need to use this double key encryption for the documents and emails that will have this label applied.
+
+For more information, prerequisites, and configuration instructions, see [Double Key Encryption (DKE)](double-key-encryption.md).
+
 ## Let users assign permissions
 
 You can use these options to let users assign permissions when they manually apply a sensitivity label to content:
@@ -211,9 +220,9 @@ You can use these options to let users assign permissions when they manually app
 
 - In Word, PowerPoint, and Excel, a user is prompted to select their own permissions for specific users, groups, or organizations. 
     > [!NOTE]
-    > This option for Word, PowerPoint, and Excel is supported by the Azure Information Protection unified labeling client. For apps that use built-in labeling, support is currently in [preview for Windows and Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). 
+    > This option for Word, PowerPoint, and Excel is supported by the Azure Information Protection unified labeling client. For apps that use built-in labeling, [check which apps support it](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint).
     > 
-    > If this option is selected but isn't supported for a user's app, either that label doesn't display to the user, or (currently rolling out in preview for iOS and Android) the label displays for consistency, but it can't be applied with an explanation message to users.
+    > If this option is selected but isn't supported for a user's app, either that label doesn't display to the user, or the label displays for consistency, but it can't be applied with an explanation message to users.
 
 When the options are supported, use the following table to identify when users see the sensitivity label:
 
@@ -292,13 +301,13 @@ This label is not suitable for emails.
 
 4. Select **Assign permissions**.
 
-3. On the **Assign permissions** pane, select **Add these email address or domains**.
+3. On the **Assign permissions** pane, select **Add specific email addresses or domains**.
 
 4. In the text box, enter the name of a domain from the other organization, for example, **fabrikam.com**. Then select **Add**.
 
-5. Select **Choose permissions from present or custom**.
+5. Select **Choose permissions**.
 
-6. On the **Choose permissions from present or custom** pane, select the dropdown box, select **Viewer**, and then select **Save**.
+6. On the **Choose permissions** pane, select the dropdown box, select **Viewer**, and then select **Save**.
 
 6. Back on the **Assign Permissions** pane, select **Save**.
 
@@ -313,13 +322,13 @@ The new users that you add will be able open documents and emails that have alre
 
 2. Select **Assign permissions**.
 
-3. On the **Assign permissions** pane, select **Add these email address or domains**.
+3. On the **Assign permissions** pane, select **Add specific email addresses or domains**.
 
 4. In the text box, enter the email address of the first user (or group) to add, and then select **Add**.
 
-5. Select **Choose permissions from present or custom**.
+5. Select **Choose permissions**.
 
-6. On the **Choose permissions from present or custom** pane, select the permissions for this user (or group), and then select **Save**.
+6. On the **Choose permissions** pane, select the permissions for this user (or group), and then select **Save**.
 
 7. Back on the **Assign Permissions** pane, repeat steps 3 through 6 for each user (or group) that you want to add to this label. Then click **Save**.
 
@@ -340,11 +349,11 @@ Use this configuration only when you do not need to restrict who can open the pr
 
 4. On the **Assign permissions** pane, select **Add any authenticated users**. 
     
-    For **Users and groups**, you see **AuthenticatedUsers** automatically added. You can't change this value, only delete it, which cancels the **Add any authenticated users** selection.
+    For **Users and groups**, you see **Authenticated users** automatically added. You can't change this value, only delete it, which cancels the **Add any authenticated users** selection.
 
-5. Select **Choose permissions from present or custom**.
+5. Select **Choose permissions**.
 
-6. On the **Choose permissions from present or custom** pane, select the dropdown box, select **Viewer**permissions you want, and then select **Save**.
+6. On the **Choose permissions** pane, select the dropdown box, select the permissions you want, and then select **Save**.
 
 7. Back on the **Assign Permissions** pane, select **Save**.
 
@@ -356,9 +365,9 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 
 - If your organization hasn't [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
     
-    - Search, eDiscovery, and Delve will not work for encrypted files. 
+    - Search, eDiscovery, and Delve will not work for encrypted files.
     - DLP policies work for the metadata of these encrypted files (including retention label information) but not the content of these files (such as credit card numbers within files).
-    - Users can't open encrypted files using Office on the web. When sensitivity labels for Office files in SharePoint and OneDrive is enabled, users can use Office on the web to open encrypted files, with some [limitations](sensitivity-labels-sharepoint-onedrive-files.md#limitations) that include encryption that has been applied with an on-premises key (known as "hold your own key", or HYOK), and encryption that has been applied independently from a sensitivity label.
+    - Users can't open encrypted files using Office on the web. When sensitivity labels for Office files in SharePoint and OneDrive are enabled, users can use Office on the web to open encrypted files, with some [limitations](sensitivity-labels-sharepoint-onedrive-files.md#limitations) that include encryption that has been applied with an on-premises key (known as "hold your own key", or HYOK), [double key encryption](#double-key-encryption), and encryption that has been applied independently from a sensitivity label.
 
 - For multiple users to edit an encrypted file at the same time, they must all be using Office for the web. If this isn't the case, and the file is already open:
     

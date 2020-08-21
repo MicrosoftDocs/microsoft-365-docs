@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -44,9 +44,9 @@ In Microsoft 365 organizations with mailboxes in Exchange Online, you can use th
 
 2. In the dialog that appears, click **Report**. If you change your mind, click **Don't Report**.
 
-   ![Report as junk dialog](../../media/owa-report-as-junk-dialog.png)
-
-   ![Report as phishing dialog](../../media/owa-report-as-phishing-dialog.png)
+   |Junk|Phishing|
+   |:---:|:---:|
+   |![Report as junk dialog](../../media/owa-report-as-junk-dialog.png)|![Report as phishing dialog](../../media/owa-report-as-phishing-dialog.png)|
 
 3. The selected messages will be sent to Microsoft for analysis. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
 
@@ -62,9 +62,9 @@ In Microsoft 365 organizations with mailboxes in Exchange Online, you can use th
 
 2. In the dialog that appears, read the information and click **Report**. If you change your mind, click **Don't Report**.
 
-   ![Report as not junk dialog](../../media/owa-report-as-not-junk-dialog.png)
-
-   ![Report as phishing dialog](../../media/owa-report-as-phishing-dialog.png)
+   |Not Junk|Phishing|
+   |:---:|:---:|
+   |![Report as not junk dialog](../../media/owa-report-as-not-junk-dialog.png)|![Report as phishing dialog](../../media/owa-report-as-phishing-dialog.png)|
 
 3. The selected messages will be sent to Microsoft for analysis. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
 
@@ -74,7 +74,7 @@ By default, users can report spam false positives, false negatives, and phishing
 
 ### What do you need to know before you begin?
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can perform these procedures. Specifically you need the **Recipient Policies** or **Mail Recipients** roles in Exchange Online, which are assigned to the **Organization Management** and **Recipient Management** role groups by default. For more information about role groups in Exchange Online, see [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).
 

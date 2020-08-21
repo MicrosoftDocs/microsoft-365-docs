@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: reference
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
@@ -84,4 +84,4 @@ Yes. For more information about limits in EOP, see [Exchange Online Protection L
 
 ## Does EOP support PowerShell?
 
-Yes, full EOP functionality is available via PowerShell: Exchange Online PowerShell for organizations with Exchange Online Mailboxes; standalone EOP PowerShell for standalone EOP organizations. For more information, see [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell) and [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).
+Yes, full EOP functionality is available via PowerShell: Exchange Online PowerShell for organizations with Exchange Online Mailboxes; standalone EOP PowerShell for standalone EOP organizations. For more information, see [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) and [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell).

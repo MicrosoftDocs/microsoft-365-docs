@@ -1,7 +1,7 @@
 ---
 title: "Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business"
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -23,7 +23,6 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: "Learn how to enable Microsoft 365 to protect local Active-Directory-joined Windows 10 devices in just a few steps."
 ---
 
@@ -37,48 +36,78 @@ This video describes the steps for how to set this up for the most common scenar
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
 
-## 1. Prepare for Directory Synchronization 
+## Before you get started, make sure you complete these steps:
+- Synchronize users to Azure AD with Azure AD Connect.
+- Complete Azure AD Connect Organizational Unit (OU) sync.
+- Make sure all the domain users you sync have licenses to Microsoft 365 Business Premium.
 
-Before you synchronize your users and computers from the local Active Directory Domain, review [Prepare for directory synchronization to Office 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). In particular:
+See [Synchronize domain users to Microsoft](manage-domain-users.md) for the steps.
 
-   - Make sure that no duplicates exist in your directory for the following attributes: **mail**, **proxyAddresses**, and **userPrincipalName**. These values must be unique and any duplicates must be removed.
-   
-   - We recommend that you configure the **userPrincipalName** (UPN) attribute for each local user account to match the primary email address that corresponds to the licensed Microsoft 365 user. For example: *mary.shelley@contoso.com* rather than *mary@contoso.local*
-   
-   - If the Active Directory domain ends in a non-routable suffix like *.local* or *.lan*, instead of an internet routable suffix such as *.com* or *.org*, adjust the UPN suffix of the local user accounts first as described in [Prepare a non-routable domain for directory synchronization](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
+## 1. Verify MDM Authority in Intune
 
-## 2. Install and configure Azure AD Connect
+Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview) and on the Microsoft Intune page, select **Device enrollment**, then on the **Overview** page, make sure **MDM authority** is **Intune**.
 
-To synchronize your users, groups, and contacts from the local Active Directory into Azure Active Directory, install Azure Active Directory Connect and set up directory synchronization. See [Set up directory synchronization for Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) to learn more.
+- If **MDM authority** is **None**, click the **MDM authority** to set it to **Intune**.
+- If **MDM authority** is **Microsoft Office 365**,go to **Devices** > **Enroll devices** and use the **Add MDM authority** dialog on the right to add **Intune MDM** authority (the **Add MDM Authority** dialog is only available if the **MDM Authority** is set to Microsoft Office 365).
 
-> [!NOTE]
-> The steps are exactly the same for Microsoft 365 for business. 
+## 2. Verify Azure AD is enabled for joining computers
 
-As you configure your options for Azure AD Connect, we recommend that you enable **Password Synchronization**, **Seamless Single Sign-On**, and the **password writeback** feature, which is also supported in Microsoft 365 for business.
+- Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>  and select **Azure Active Directory** (select Show all if Azure Active Directory is not visible) in the **Admin centers** list. 
+- In the **Azure Active Directory admin center**, go to **Azure Active Directory** , choose **Devices** and then **Device settings**.
+- Verify**Users may join devices to Azure AD** is enabled 
+    1. To enable all users, set to **All**.
+    2. To enable specific users, set to **Selected** to enable a specific group of users.
+        - Add the desired domain users synced in Azure AD to a [security group](../admin/create-groups/create-groups.md).
+        - Choose **Select groups** to enable MDM user scope for that security group.
 
-> [!NOTE]
-> There are some additional steps for password writeback beyond the check box in Azure AD Connect. For more information, see [How-to: configure password writeback](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). 
+## 3. Verify Azure AD is enabled for MDM
 
-## 3. Configure Hybrid Azure AD Join
+- Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>  and select select **Endpoint Managemen**t (select **Show all** if **Endpoint Manager** is not visible)
+- In the **Microsoft Endpoint Manager admin center**, go to **Devices** > **Windows** > **Windows Enrollment** > **Automatic Enrollment**.
+- Verify MDM user scope is enabled.
 
-Before you enable Windows 10 devices to be Hybrid Azure AD joined, make sure that you meet the following prerequisites:
+    1. To enroll all computers, set to **All** to automatically enroll all user computers that are joined to Azure AD and new computers  when the users add a work account to Windows.
+    2. Set to **Some** to enroll the computers of a specific group of users.
+        -  Add the desired domain users synced in Azure AD to a [security group](../admin/create-groups/create-groups.md).
+        -  Choose **Select groups** to enable MDM user scope for that security group.
 
-   - You're running the latest version of Azure AD Connect.
+## 4. Create the required resources 
 
-   - Azure AD connect has synchronized all the computer objects of the devices you want to be hybrid Azure AD joined. If the computer objects belong to specific organizational units (OU), then make sure these OUs are set for synchronization in Azure AD connect as well.
+Performing the required tasks to [configure hybrid Azure AD join](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) has been simplified through the use of the [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) cmdlet found in the [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell module. When you invoke this cmdlet it will create and configure the required service connection point and group policy.
 
-To register existing domain-joined Windows 10 devices as Hybrid Azure AD joined, follow the steps in the [Tutorial: Configure hybrid Azure Active Directory join for managed domains](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join). This hybrid-enables your existing on-premises Active Directory joined Windows 10 computers and make them cloud ready.
-    
-## 4. Enable automatic enrollment for Windows 10
+You can install this module by invoking the following from an instance of PowerShell:
 
- To automatically enroll Windows 10 devices for mobile device management in Intune, see [Enroll a Windows 10 device automatically using Group Policy](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy). You can set the Group Policy at a local computer level, or for bulk operations, you can use the Group Policy Management Console and ADMX templates to create this Group Policy setting on your Domain Controller.
+```powershell
+Install-Module SecMgmt
+```
 
-## 5. Configure Seamless Single Sign-On
+> [!IMPORTANT]
+> It is recommended that you install this module on the Windows Server running Azure AD Connect.
 
-  Seamless SSO automatically signs users into their Microsoft 365 cloud resources when they use corporate computers. Simply deploy one of the two Group Policy options described in [Azure Active Directory Seamless Single Sign-On: Quick start](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso-quick-start#step-2-enable-the-feature). The **Group Policy** option doesn't allow users to change their settings, while the **Group Policy Preference** option sets the values but also leaves them user-configurable.
+To create the required service connection point and group policy, you will invoke the  [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) cmdlet. You will need your Microsoft 365 Business Premium global admin credentials when performing this task. When you are ready to create the resources, invoke the following:
 
-## 6. Set up Windows Hello for Business
+```powershell
+PS C:\> Connect-SecMgmtAccount
+PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device Management'
+```
 
- Windows Hello for Business replaces passwords with strong two-factor authentication (2FA) for signing into a local computer. One factor is an asymmetric key pair, and the other is a PIN or other local gesture such as fingerprint or facial recognition if your device supports it. We recommend that you replace passwords with 2FA and Windows Hello for Business where possible.
+The first command will establish a connection with the Microsoft cloud, and when you are prompted, specify your Microsoft 365 Business Premium global admin credentials.
 
-To configure Hybrid Windows Hello for Business, review the [Hybrid Key trust Windows Hello for Business Prerequisites](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-prereqs). Then follow the instructions in [Configure Hybrid Windows Hello for Business key trust settings](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings). 
+## 5. Link the Group Policy
+
+1. In the Group Policy Management Console (GPMC), right-click on the location where you want to link the policy and select *Link an existing GPO...* from the context menu.
+2. Select the policy created in the above step, then click **OK**.
+
+## Get the latest Administrative Templates
+
+If you do not see the policy **Enable automatic MDM enrollment using default Azure AD credentials**, it may be because you don’t have the ADMX installed for Windows 10, version 1803, version 1809, or version 1903. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):
+
+1.	Download: [Administrative Templates (.admx) for Windows 10 May 2019 Update (1903)](https://www.microsoft.com/download/details.aspx?id=58495&WT.mc_id=rss_alldownloads_all).
+2.	Install the package on the Primary Domain Controller (PDC).
+3.	Navigate, depending on the version to the folder: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2019 Update (1903) v3**.
+4.	Rename the **Policy Definitions** folder in the above path to **PolicyDefinitions**.
+5.	Copy **PolicyDefinitions** folder to **C:\Windows\SYSVOL\domain\Policies**. 
+    -	If you plan to use a central policy store for your entire domain, add the contents of PolicyDefinitions there.
+6.	Restart the Primary Domain Controller for the policy to be available. This procedure will work for any future version as well.
+
+At this point you should be able to see the policy **Enable automatic MDM enrollment using default Azure AD credentials** available.

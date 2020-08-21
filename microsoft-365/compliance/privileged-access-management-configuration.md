@@ -94,7 +94,7 @@ After approval is granted, the requesting user can execute the intended task and
 
 1. Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using credentials for an admin account in your organization.
 
-2. In the Admin Center, go to **Settings > Settings > Security & Privacy** > **Privileged access**.
+2. In the Admin Center, go to **Settings** > **Org Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Enable the **Require approvals for privileged tasks** control.
 
@@ -129,7 +129,7 @@ You can create and configure up to 30 privileged access policies for your organi
 
 1. Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using credentials for an admin account in your organization.
 
-2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
+2. In the Admin Center, go to **Settings** > **Org Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Select **Manage access policies and requests**.
 
@@ -175,7 +175,7 @@ Requests for privileged access are valid for up to 24 hours after the request is
 
 1. Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using your credentials.
 
-2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
+2. In the Admin Center, go to **Settings** > **Org Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Select **Manage access policies and requests**.
 
@@ -215,7 +215,7 @@ After an approval request is created, elevation request status can be reviewed i
 
 1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) with your credentials.
 
-2. In the admin center, go to **Settings** > **Security & Privacy** > **Privileged access**.
+2. In the admin center, go to **Settings** > **Org Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Select **Manage access policies and requests**.
 
@@ -243,7 +243,7 @@ When an approval request is created, members of the relevant approver group rece
 
 1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) with your credentials.
 
-2. In the admin center, go to **Settings** > **Security & Privacy** > **Privileged access**.
+2. In the admin center, go to **Settings** > **Org Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Select **Manage access policies and requests**.
 
@@ -285,7 +285,7 @@ If it is no longer needed in your organization, you can delete a privileged acce
 
 1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) using credentials for an admin account in your organization.
 
-2. In the admin center, go to **Settings** > **Security & Privacy** > **Privileged access**.
+2. In the admin center, go to **Settings** > **Org Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Select **Manage access policies and requests**.
 
@@ -311,7 +311,7 @@ If needed, you can disable privileged access management for your organization. D
 
 1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) with credentials for an admin account in your organization.
 
-2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
+2. In the Admin Center, go to **Settings** > **Org Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Enable the **Require approvals for privileged access** control.
 

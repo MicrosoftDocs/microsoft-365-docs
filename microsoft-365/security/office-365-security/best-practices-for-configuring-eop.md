@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
@@ -34,9 +34,10 @@ We empower security admins to customize their security settings to satisfy the n
 
 These settings cover a range of features that are outside of security policies.
 
-|||||
+****
+
+|Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
-|**Security feature name**|**Standard**|**Strict**|**Comment**|
 |[Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Yes|Yes||
 |[Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md)|Yes|Yes||
 |[Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md)|Yes|Yes|Use `action=quarantine` for Standard, and `action=reject` for Strict.|
@@ -48,10 +49,10 @@ These settings cover a range of features that are outside of security policies.
 |[POP connectivity to mailbox](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabled|Disabled||
 |Authenticated SMTP submission|Disabled|Disabled|Authenticated client SMTP submission (also known as client SMTP submission or SMTP AUTH) is required for POP3 and IMAP4 clients to send email.|
 |EWS connectivity to mailbox|Disabled|Disabled||
-|[PowerShell connectivity](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Disabled|Disabled|Available for mailbox users or mail users (user objects returned by the [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) cmdlet).|
-|Use [spoof intelligence](learn-about-spoof-intelligence.md) to whitelist senders whenever possible|Yes|Yes||
+|[PowerShell connectivity](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Disabled|Disabled|Available for mailbox users or mail users (user objects returned by the [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) cmdlet).|
+|Use [spoof intelligence](learn-about-spoof-intelligence.md) to add senders to your allow list|Yes|Yes||
 |[Directory-Based Edge Blocking (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Enabled|Enabled|Domain Type = Authoritative|
-|[Set up multi-factor authentication for all admin accounts](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Enabled|Enabled||
+|[Set up multi-factor authentication for all admin accounts](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Enabled|Enabled||
 |
 
 ## Troubleshooting

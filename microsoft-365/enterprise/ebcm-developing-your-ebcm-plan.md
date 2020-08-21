@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -76,6 +76,8 @@ Here's a sample dependency analysis (DA) you can start from. In your dependency 
 
 Once you have inventoried your business processes and mapped out relationships to other process and technologies, you need to build validation scenarios for all the processes. Basically, figure out how you are going to validate your business process continuity plans. You'll probably find that some are more important that others and you'll want to prioritize those.
 Don't forget that regularly training employees on incident response and continuity measures is important once the plan is established. Post incident reviews should be used to enhance your resiliency strategies by incorporating learnings from each validation or test.
+
+![capability validation visio](../media/ebcm/capability-validation-visio.png)
 
 ## Incident coordination and communication
 

@@ -75,7 +75,7 @@ The following limits apply to Microsoft 365 Groups:
 |File storage|1 Terabyte + 10 GB per subscribed user + any additional storage purchased. You can purchase an unlimited amount of additional storage.|
 |Group Mailbox size|50 GB|
 
-The default maximum number of Microsoft 365 groups that an organization can have is 500,000, but can be increased by request. For more information on Microsoft 365 Groups limits, see [Microsoft 365 Groups - Admin help](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+The default maximum number of Microsoft 365 groups that an organization can have is 500,000. To go beyond the default limit, you must contact Microsoft Support. For more information on Microsoft 365 Groups limits, see [Microsoft 365 Groups - Admin help](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 Managing your Microsoft 365 groups is more effective when you have actionable information about groups usage. The Microsoft 365 admin center has a reporting tool that can let you see things such as storage use, how many active groups you have and even how your users are using the groups. See: [Microsoft 365 Reports in the admin center](../activity-reports/office-365-groups.md) for more information.
 
@@ -111,7 +111,7 @@ Microsoft 365 groups work with Azure Active Directory (AAD). The groups features
 
 ## Related articles
 
-[Learn about Microsoft 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Upgrade distribution lists to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md)
 

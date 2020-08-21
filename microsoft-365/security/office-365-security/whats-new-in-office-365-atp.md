@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 08/20/2020
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -30,13 +30,23 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 > [!TIP]
 > Don't have Office 365 ATP yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## September/October 2020 
+
+- [Check your policies using Configuration Analyzer](configuration-analyzer-for-security-policies.md)
+- [Manually override filter verdicts using the tenant allow/block list](tenant-allow-block-list.md)
+
+## July/August 2020 
+
+- [Experience improvements to the hunting experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+- [Easily apply recommended settings using preset security policies](preset-security-policies.md)
+
 ## March/April 2020
 
 - The ability to [address compromised user accounts with automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) is now generally available.
 
 ## January/February 2020
 
-- [General Availability of Campaign Views in Office 365 ATP](campaigns.md)
+- [General availability of Campaign Views in Office 365 ATP](campaigns.md)
 - Enhancements to [Threat Explorer](threat-explorer.md) to enable security operations teams to search and filter on multiple fields while [investigating email](investigate-malicious-email-that-was-delivered.md):
     - Delivery location and special actions
     - Directionality (inbound, outbound, or intra-org)
@@ -89,4 +99,4 @@ Did you know that Office 365 ATP is available in two plans? [Learn more about wh
 
 [Office 365 ATP Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-[Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+

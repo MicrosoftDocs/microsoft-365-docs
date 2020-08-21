@@ -28,6 +28,9 @@ ms.topic: article
 
 The `DeviceImageLoadEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about DLL loading events. Use this reference to construct queries that return information from this table.
 
+>[!TIP]
+> For detailed information about the events types (`ActionType` values) supported by a table, use the [built-in schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) available in the security center.
+
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
@@ -35,10 +38,11 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | datetime | Date and time when the event was recorded |
 | `DeviceId` | string | Unique identifier for the machine in the service |
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
-| `ActionType` | string | Type of activity that triggered the event |
+| `ActionType` | string | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details |
 | `FileName` | string | Name of the file that the recorded action was applied to |
 | `FolderPath` | string | Folder containing the file that the recorded action was applied to |
 | `SHA1` | string | SHA-1 of the file that the recorded action was applied to |
+| `SHA256` | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated — use the SHA1 column when available. |
 | `MD5` | string | MD5 hash of the file that the recorded action was applied to |
 | `InitiatingProcessAccountDomain` | string | Domain of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountName` | string | User name of the account that ran the process responsible for the event |
@@ -46,6 +50,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessIntegrityLevel` | string | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources |
 | `InitiatingProcessTokenElevation` | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |
+| `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
 | `InitiatingProcessMD5` | string | MD5 hash of the process (image file) that initiated the event |
 | `InitiatingProcessFileName` | string | Name of the process that initiated the event |
 | `InitiatingProcessId` | int | Process ID (PID) of the process that initiated the event |
@@ -59,9 +64,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
+- [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

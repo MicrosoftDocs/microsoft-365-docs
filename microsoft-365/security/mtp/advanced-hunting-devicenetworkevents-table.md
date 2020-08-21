@@ -28,6 +28,9 @@ ms.topic: article
 
 The `DeviceNetworkEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about network connections and related events. Use this reference to construct queries that return information from this table.
 
+>[!TIP]
+> For detailed information about the events types (`ActionType` values) supported by a table, use the [built-in schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) available in the security center.
+
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
@@ -35,7 +38,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | datetime | Date and time when the event was recorded |
 | `DeviceId` | string | Unique identifier for the machine in the service |
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
-| `ActionType` | string | Type of activity that triggered the event |
+| `ActionType` | string | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details |
 | `RemoteIP` | string | IP address that was being connected to |
 | `RemotePort` | int | TCP port on the remote device that was being connected to |
 | `RemoteUrl` | string | URL or fully qualified domain name (FQDN) that was being connected to |
@@ -45,6 +48,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `LocalIPType` | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | `RemoteIPType` | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |
+| `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
 | `InitiatingProcessMD5` | string | MD5 hash of the process (image file) that initiated the event |
 | `InitiatingProcessFileName` | string | Name of the process that initiated the event |
 | `InitiatingProcessId` | int | Process ID (PID) of the process that initiated the event |
@@ -63,9 +67,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
+- [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

@@ -10,7 +10,8 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - Ent_Solutions
 description: "Learn how to create a team with a unique sensitivity label for security."
@@ -22,7 +23,7 @@ This article provides you with recommendations and steps to configure a private 
 
 Beyond the private access, this article describes how to configure the associated SharePoint site, which you can access from the **Files** section of a team channel, for the additional security needed to store highly regulated data.
 
-The elements of configuration for a team for highly regulated data are:
+The elements of configuration for a team with security isolation are:
 
 - A private team
 - Additional security on the associated SharePoint site for the team that:
@@ -35,6 +36,13 @@ The elements of configuration for a team for highly regulated data are:
 
 > [!IMPORTANT]
 > Be sure you have enabled [sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) before you proceed with the steps in this article.
+
+<a name="poster"></a>
+For a 2-page summary of this scenario, see the [Microsoft Teams with security isolation poster](../downloads/team-security-isolation-poster.pdf).
+
+[![Microsoft Teams with security isolation poster](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
+
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) or [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17) size paper.
 
 ## Initial protections
 
@@ -214,7 +222,7 @@ Microsoft 365 offers additional methods for securing your content. Consider if t
 
 With the team in place, it's time to drive the adoption of this team and its additional security to team members.
 
-## Train your users
+### Train your users
 
 Members of the team can access the team and all of its resources, including chats, meetings, and other apps. When working with files from the **Files** section of a channel, members of the team should assign the sensitivity label to the files they create.
 

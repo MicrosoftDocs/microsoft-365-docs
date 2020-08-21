@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
@@ -32,13 +32,13 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 See the following resources for more information:
 
-- [Microsoft 365 Reports in the admin center - Microsoft 365 groups](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [Microsoft 365 Reports in the admin center - Microsoft 365 groups](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
 
-- [Microsoft 365 Reports in the admin center - Email activity](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [Microsoft 365 Reports in the admin center - Email activity](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
 
-- [Microsoft 365 Reports in the admin center - Email apps usage](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [Microsoft 365 Reports in the admin center - Email apps usage](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
 
-- [Microsoft 365 Reports in the admin center - Mailbox usage](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- [Microsoft 365 Reports in the admin center - Mailbox usage](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
 
 ## Security & compliance reports in the Microsoft 365 admin center
 
@@ -70,9 +70,10 @@ Tracks specific changes made by admins to your organization. These reports can h
 
 The following table describes when EOP reporting and message trace data is available and for how long.
 
-||||
-|:-----|:-----|:-----|
-|**Report type**|**Data available for (look back period)**|**Latency**|
+****
+
+|Report type|Data available for (look back period)|Latency|
+|---|---|---|
 |Mail protection summary reports|90 days|Message data aggregation is mostly complete within 24-48 hours. Some minor incremental aggregated changes may occur for up to 5 days.|
 |Mail protection detail reports|90 days|For detail data that's less than 7 days old, data should appear within 24 hours but may not be complete until 48 hours. Some minor incremental changes may occur for up to 5 days. <br/><br/> To view detail reports for messages that are greater than 7 days old, results may take up to a few hours.|
 |Message trace data|90 days|When you run a message trace for messages that are less than 7 days old, the messages should appear within 5-30 minutes.<br/><br/> When you run a message trace for messages that are greater than 7 days old, results may take up to a few hours.|

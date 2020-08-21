@@ -25,7 +25,7 @@ description: "Get an overview of Microsoft 365 Message center and its role in ch
 # Message center
 
 
-To keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>. That's where we post official announcements that let you take a proactive approach to change management. Each post gives you a high-level overview of a planned change and how it may affect your users, and links out to more detailed information to help you prepare.
+To keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>. 
   
 To open Message center:
 
@@ -54,15 +54,15 @@ You can also use the [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/p
 
 |**Question**|**Answer**|
 |:-----|:-----|
-|Who can view posts in Message center?  <br/> |Most users who have been assigned any admin role in Microsoft 365 can view Message center posts. [Here's a list](#admin-roles-that-dont-have-access-to-the-message-center) of admin roles that don't have access to the Message center. You can also assign the Message center reader role to users who should be able to read and share Message center posts without having any other admin privileges.<br/><br/> Additionally, you can assign the Message Center Privacy reader role to people who should see notifications about security and privacy information relevant to your organization. See [About admin roles](../add-users/about-admin-roles.md) to learn more about what each admin role can do. <br/><br/>Most Message center posts can be shared through email with non-admin users who may need to take action. This option is not available for data privacy posts that the Message Center Privacy reader views. <br/> |
-|Is this the only way Microsoft will communicate changes about Microsoft 365?  <br/> |No, there are many ways that we communicate changes in Microsoft 365. Message center is the primary way that we communicate the timing of individual changes. See [Stay on top of Microsoft 365 changes](stay-on-top-of-updates.md) for information about additional resources.  <br/> |
-|How can I see posts in my language?  <br/> |Message center posts are written in English only due to the timeliness of the information we are posting, but you can control whether, by default, posts are shown in English or are automatically machine-translated to your preferred language. And, no matter which default view you choose, you can select to machine-translate posts to any language we support. See [Language translation for Message center posts](language-translation-for-message-center-posts.md) for more details.  <br/> |
-|Can I preview changes or features before they are rolled-out to my organization?  <br/> |Sometimes. Some changes and new features can be previewed by opting in to the Targeted release program. To opt in, in the admin center, go to **Settings** > **Organization profile** > **Release preferences**. (In the admin center, you may need to select **Show all** at the bottom of the left navigation pane to see **Settings**.) You can choose Targeted release for your entire organization, or just for selected users. See [Standard or Targeted release options in Microsoft 365](release-options-in-office-365.md) for more information about the program.  <br/> |
-|Can I find out the exact date a change will be available to my organization?  <br/> |Unfortunately, we can't tell you the exact date a change will be made to your organization. In our Message center post, we will give as much information as we can on the timing of the release, based on our confidence level. We understand you want us to be more specific on timing of releases, and we're working on improvements to get better with that level of detail.  <br/> |
-|Are these messages specific to my organization?  <br/> |We do our best to make sure that you only see Message center posts that affect your organization. The Microsoft 365 Roadmap includes all of the features we are currently working on and rolling out, but not all of these features apply to every organization. For example, if a feature is rolling out only to educational institutions, we will target the Message center post ONLY to those organizations.  <br/> |
-|Can I get message center posts emailed instead?  <br/> |Yes! You can select to have a weekly digest emailed to you and up to two email addresses. If you need to have the digest go to more than two more people, you can send to a Microsoft 365 group or distribution list. The emailed weekly digest is turned on by default. If you aren't getting your weekly digests, check your spam folder. See the [Preferences](#preferences) section of this article for more information on how to set up the weekly digest.  <br/> |
+|Who can view posts in Message center?  <br/> |Most users who have been assigned any admin role in Microsoft 365 can view Message center posts. [Here's a list](#admin-roles-that-dont-have-access-to-the-message-center) of admin roles that don't have access to the Message center. You can also assign the Message center reader role to users who should be able to read and share Message center posts without having any other admin privileges.<br/>|
+|Is this the only way Microsoft will communicate changes about Microsoft 365?  <br/> |No, but Message center is the primary way we communicate the timing of individual changes in Microsoft 365. See [Stay on top of Microsoft 365 changes](stay-on-top-of-updates.md) for information about additional resources.  <br/> |
+|How can I see posts in my language?  <br/> |Message center posts are written in English only, but you can control whether, by default, posts are shown in English or are automatically machine-translated to your preferred language. You can also select to machine-translate posts to any language we support. See [Language translation for Message center posts](language-translation-for-message-center-posts.md) for more details.  <br/> |
+|Can I preview changes or features before they are rolled-out to my organization?  <br/> |Some changes and new features can be previewed by opting in to the Targeted release program. To opt in, in the admin center, go to **Settings** > **Organization profile** > **Release preferences**. (In the admin center, you may need to select **Show all** at the bottom of the left navigation pane to see **Settings**.) You can choose Targeted release for your entire organization, or just for selected users. See [Standard or Targeted release options in Microsoft 365](release-options-in-office-365.md) for more information about the program.  <br/> |
+|Can I find out the exact date a change will be available to my organization?  <br/> |Unfortunately, we can't tell you the exact date a change will be made to your organization. In our Message center post, we will give as much information as we can on the timing of the release, based on our confidence level. We're working on improvements to get better with that level of detail.  <br/> |
+|Are these messages specific to my organization?  <br/> |We do our best to make sure that you only see Message center posts that affect your organization. The Microsoft 365 Roadmap includes all of the features we are currently working on and rolling out, but not all of these features apply to every organization. <br/> |
+|Can I get message center posts emailed instead?  <br/> |Yes! You can select to have a weekly digest emailed to you and up to two other email addresses. The emailed weekly digest is turned on by default. If you aren't getting your weekly digests, check your spam folder. See the [Preferences](#preferences) section of this article for more information on how to set up the weekly digest.  <br/> |
 |How do I stop getting the Message center digest?  <br/> |Go to Message center in the admin center and select **Edit preferences**. Turn off the option to **Send a weekly email digest of my messages**. If you also no longer want to receive email about major updates, turn off **Send me emails for major updates**.  <br/> |
-|How can I ensure data privacy notifications are received by the right contacts in my organization? <br/> |As a global admin you will receive data privacy messages for your organization. Additionally, you can assign the Message Center Privacy reader role to people who should see data privacy messages. Other admin roles with access to Message Center cannot view data privacy messages.   <br/><br/>You can use Message center preferences to control whether you receive email notifications specifically for data privacy messages and to control the visibility of these messages in the Message Center. Note that data privacy messages are not included in the weekly digest.<br/> |
+|How can I ensure data privacy notifications are received by the right contacts in my organization? <br/> |As a global admin you will receive data privacy messages for your organization. Additionally, you can assign the Message Center Privacy reader role to people who should see data privacy messages. Other admin roles with access to Message Center cannot view data privacy messages.   <br/><br/>For more info, see [Preferences](#preferences) in this article.<br/> |
 
 ### Messages
 
@@ -72,13 +72,13 @@ Here's a quick overview of the information you'll see in each column. Select any
   
 |**Column**|**Description**|
 |:-----|:-----|
-|Check mark  <br/> |Selecting the check mark in the column heading row will select all messages currently displayed. Selecting the check mark next to one or more messages lets you take action on those messages, such as dismissing them or marking them as read or unread.  <br/> |
+|Check mark  <br/> |Selecting the check mark in the column heading row will select all messages currently displayed. Selecting the check mark next to one or more messages lets you take action on those messages.  <br/> |
 |Application icon <br/> |Icons indicate the application to which the message applies.<br/> |
-|Message title  <br/> |Message titles are brief descriptions of upcoming changes. They can be long, and sometimes Message center can't display the full title. Hover your cursor over the message title and the entire title will appear in a pop-up box.  <br/> |
-|More options <br/> |More options lets you dismiss a message, mark it as read or unread, or share it with another admin. If you dismiss a message, you can restore it by selecting the **Dismissed messages** tab, selecting the check mark next to the message, and selecting **Restore**. <br/> |
+|Message title  <br/> |Message titles are brief descriptions of upcoming changes. If the full title doesn't display, hover your cursor over it and the entire title will appear in a pop-up box.  <br/> |
+|More options <br/> |More options lets you dismiss a message, mark it as read or unread, or share it with another admin. To restore a dismissed message, select the **Dismissed messages** tab, select the check mark next to the message, and select **Restore**. <br/> |
 |Major update <br/> |An exclamation mark in this column indicates a major update. <br/> |
-|Act by  <br/> |Most of the time, there won't be anything in this column. We'll only have dates here if we're making a change that requires you to take an action by a certain deadline. Since we rarely use the **Act by** column, if you see something here, you should pay extra attention to it.  <br/> |
-|Category  <br/> | Messages are identified by one of the following three categories: <br/><br/> **Prevent or fix issues**: These messages inform you of known issues affecting your organization and may require that you take action to avoid disruptions in service. Prevent or fix issues are different than Service health messages because they prompt you to be proactive to avoid issues. <br/> <br/> **Plan for change**: These messages inform you of changes to Microsoft 365 that may require you to act to avoid disruptions in service. For example, we'll let you know about changes to system requirements or about features that are being removed. We try to provide at least 30 days' notice of any change that requires an admin to act to keep the service running normally. <br/> <br/> **Stay informed**: This is where we tell you about new or updated features that we are turning on in your organization. The features are usually announced first in the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2070821). <br/><br/>Stay informed messages may also let you know about planned maintenance in accordance with our Service Level Agreement. Planned maintenance may result in down time, where you or your users can't access Microsoft 365, a specific feature, or a service such as email or OneDrive for Business.  <br/> |
+|Act by  <br/> |We'll only have dates here if we're making a change that requires you to take an action by a certain deadline. Since we rarely use the **Act by** column, if you see something here, you should pay extra attention to it.  <br/> |
+|Category  <br/> | Messages are identified by one of the following three categories: <br/><br/> **Prevent or fix issues**: Informs you of known issues affecting your organization and may require that you take action to avoid disruptions in service. Prevent or fix issues are different than Service health messages because they prompt you to be proactive to avoid issues. <br/> <br/> **Plan for change**: Informs you of changes to Microsoft 365 that may require you to act to avoid disruptions in service. For example, we'll let you know about changes to system requirements or about features that are being removed. We try to provide at least 30 days' notice of any change that requires an admin to act to keep the service running normally. <br/> <br/> **Stay informed**: Tells you about new or updated features we are turning on in your organization. The features are usually announced first in the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2070821). <br/><br/>May also let you know about planned maintenance in accordance with our Service Level Agreement. Planned maintenance may result in down time, where you or your users can't access Microsoft 365, a specific feature, or a service such as email or OneDrive for Business.  <br/> |
 |Last updated  <br/> |Date that the message was published or last updated.  <br/> |
 |Message ID  <br/> |Microsoft tracks our Message center posts by message ID. You can refer to this ID if you want to give feedback or if you call Support about a particular message.  <br/> |
 
@@ -88,9 +88,7 @@ Head over to [Manage messages in Message center](manage-messages.md) to get more
 
 Major updates can be reviewed by selecting the **High importance** tab at the top of the Message center.
 
-Major updates are communicated at least 30 days in advance when an action is required.
-  
-Major updates are defined as:
+Major updates are communicated at least 30 days in advance when an action is required and might include:
   
 - ​Changes to daily productivity such as inbox, meetings, delegations, sharing, and access
 
@@ -111,8 +109,6 @@ Major updates are defined as:
 - Changes requiring an admin action (exclusive of prevent or fix issues)
 
 - Changes to where your data is stored
-
-When you open a major update post to read it, you'll see the header **Major update**, who it **Applies to**, as well as the current roll-out status and a description of how it affects you.
   
 ### Preferences
 
@@ -163,7 +159,7 @@ If administration is distributed across your organization, you may not want or n
 We use machine translation to automatically display messages in your preferred language. Read [Language translation for Message center posts](language-translation-for-message-center-posts.md) for more information on how to set your language.
   
 > [!NOTE]
-> The weekly digest and any posts that are emailed are sent in English-only. Recipients can use [Translator for Outlook](https://support.office.com/article/3d7e12ed-99d6-406e-a453-b9db0d9653fa.aspx) to read the message in their preferred language. 
+> The weekly digest and any posts that are emailed are sent in English-only. Recipients can use [Translator for Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) to read the message in their preferred language. 
   
 ### Admin roles that don't have access to the Message center
 
@@ -177,3 +173,9 @@ We use machine translation to automatically display messages in your preferred l
 - Intune service administrator
 - Privileged role administrator
 - Reports reader
+
+## Unsubscribe from Message center emails
+
+1. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, change the **Send a weekly digest of my messages** setting to **Off**. <br/><br/>Email notification for major updates is a separate control. If you don't want to receive email notices about major updates, verify that **Send me emails for major updates** is **Off**.  <br/><br/>To stop receiving email notices about data privacy messages, verify that **Send me emails for data privacy messages** is **Off**.  (Data privacy messages are not included in the weekly digest.)<br/><br/>
+
+2. Select **Save** to keep your changes.<br/>

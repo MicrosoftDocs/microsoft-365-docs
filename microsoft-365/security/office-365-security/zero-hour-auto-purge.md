@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -25,7 +25,7 @@ description: "Admins can learn about how zero-hour auto purge (ZAP) can retroact
 
 # Zero-hour auto purge (ZAP) in Exchange Online
 
-## Overview
+## Basic features of ZAP
 
 In Microsoft 365 organizations with mailboxes in Exchange Online, zero-hour auto purge (ZAP) is an email protection feature that retroactively detects and neutralizes malicious phishing, spam, or malware messages that have already been delivered to Exchange Online mailboxes.
 
@@ -98,10 +98,6 @@ Safe senders, mail flow rules, or block and allow organizational settings take p
 ### What if a message is moved to another folder (e.g. Inbox rules)?
 
 ZAP still works as long as the message has not been deleted, or as long as the same, or stronger, action has not already been applied. For example, if the phish policy is set to quarantine and the user or administrator has already junked the email, then quarantine will take action to quarantine the file.
-
-### Does ZAP change the message header?
-
-A ZAP action does not make any changes to the message header.
 
 ### How does ZAP affect mailboxes on hold?
 

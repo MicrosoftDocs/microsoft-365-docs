@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
@@ -25,7 +25,10 @@ In standalone Exchange Online Protection (EOP) organizations without Exchange On
 - **Mail-enabled security groups**: A collection of mail users and other security groups who need access permissions for admin roles. For example, you might want to give specific group of users admin permissions so they can configure anti-spam and anti-malware settings.
 
     > [!NOTE]
-    > <ul><li>By default, new mail-enabled security groups reject messages from external (unauthenticated) senders.</li><li>Don't add distribution groups to mail-enabled security groups.</li></ul>.
+    >
+    > - By default, new mail-enabled security groups reject messages from external (unauthenticated) senders.
+    >
+    > - Don't add distribution groups to mail-enabled security groups.
 
 You can manage groups in the Exchange admin center (EAC) and in standalone EOP PowerShell.
 
@@ -33,7 +36,7 @@ You can manage groups in the Exchange admin center (EAC) and in standalone EOP P
 
 - To open the Exchange admin center, see [Exchange admin center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - When you manage groups in standalone EOP PowerShell, you might encounter throttling. The PowerShell procedures in this topic use a batch processing method that results in a propagation delay of a few minutes before the results of the commands are visible.
 
@@ -184,7 +187,7 @@ Update-EOPDistributionGroupMember -Identity <GroupIdentity> -Members @("User1","
 This example uses changes the primary SMTP address (also called the reply address) for the Seattle Employees group to sea.employees@contoso.com.
 
 ```PowerShell
-Set-EOPDistributionGroup "Seattle Employees" -PrimarysmptAddress "sea.employees@contoso.com"
+Set-EOPDistributionGroup "Seattle Employees" -PrimarySmtpAddress "sea.employees@contoso.com"
 ```
 
 This example replaces the current members of the Security Team group with Kitty Petersen and Tyson Fawcett.

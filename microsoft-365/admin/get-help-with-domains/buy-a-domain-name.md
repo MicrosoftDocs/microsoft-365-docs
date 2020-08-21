@@ -101,7 +101,7 @@ If you don't already have your own domain, you can easily buy one online at a do
 To set up a domain in Microsoft 365, you must own a domain and change some of the DNS records for your domain.
   
 > [!CAUTION]
-> Some domain registrars or DNS hosting providers do not allow creating all the DNS records required by Microsoft 365. The following list of hosting providers supports all the needed records. If you're thinking of using a different hosting provider, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
+> Some domain registrars or DNS hosting providers do not allow creating all the DNS records required by Microsoft 365. The following list of hosting providers supports all the needed records. If you're thinking of using a different hosting provider, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
 After you register your domain (at a domain registrar), you sign in to Microsoft 365 as an admin and set up your domain so you can use it with your email address and other services..
   
@@ -125,7 +125,5 @@ After you register your domain (at a domain registrar), you sign in to Microsoft
 [Add a domain to Microsoft 365](../setup/add-domain.md)
 
 [Domains FAQ](../setup/domains-faq.md)
-
-[Get help with domains](get-help-with-domains.md)
 
 [Update DNS records to keep your website with your current hosting provider](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider).

@@ -18,7 +18,9 @@ ms.collection:
 - SPO_Content
 search.appverid: 
 - MET150
-description: "With a data loss prevention (DLP) policy in the Security &amp; Compliance Center, you can identify, monitor, and automatically protect sensitive information across Office 365."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to identify, monitor, and automatically protect your organization's sensitive information across Office 365.
 ---
 
 # Overview of data loss prevention
@@ -112,8 +114,8 @@ The conditions now available can determine if:
     
 - Content is shared with people outside or inside your organization.
 
-> [!NOTE]
-> Users who have non-guest accounts in a host organization's Active Directory or Azure Active Directory tenant are considered as people inside the organization.
+  > [!NOTE]
+  > Users who have non-guest accounts in a host organization's Active Directory or Azure Active Directory tenant are considered as people inside the organization.
     
 #### Types of sensitive information
 
@@ -123,13 +125,13 @@ A DLP policy can help protect sensitive information, which is defined as a **sen
   
 When a DLP policy looks for a sensitive information type such as a credit card number, it doesn't simply look for a 16-digit number. Each sensitive information type is defined and detected by using a combination of:
   
-- Keywords
+- Keywords.
     
-- Internal functions to validate checksums or composition
+- Internal functions to validate checksums or composition.
     
-- Evaluation of regular expressions to find pattern matches
+- Evaluation of regular expressions to find pattern matches.
     
-- Other content examination
+- Other content examination.
     
 This helps DLP detection achieve a high degree of accuracy while reducing the number of false positives that can interrupt peoples' work.
   
@@ -141,13 +143,19 @@ When content matches a condition in a rule, you can apply actions to automatical
   
 With the actions now available, you can:
   
-- **Restrict access to the content** For site content, this means that permissions for the document are restricted for everyone except the primary site collection administrator, document owner, and person who last modified the document. These people can remove the sensitive information from the document or take other remedial action. When the document is in compliance, the original permissions are automatically restored. When access to a document is blocked, the document appears with a special policy tip icon in the library on the site. 
+- **Restrict access to the content** Depending on your need, you can restrict access to content in three ways:
+
+  1. Restrict access to content for everyone.
+  2. Restrict access to content for people outside the organization.
+  3. Restrict access to "Anyone with the link."
+
+  For site content, this means that permissions for the document are restricted for everyone except the primary site collection administrator, document owner, and person who last modified the document. These people can remove the sensitive information from the document or take other remedial action. When the document is in compliance, the original permissions are automatically restored. When access to a document is blocked, the document appears with a special policy tip icon in the library on the site. 
     
-    ![Policy tip showing access to document is blocked](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+  ![Policy tip showing access to document is blocked](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
-    For email content, this action blocks the message from being sent. Depending on how the DLP rule is configured, the sender sees an NDR or (if the rule uses a notification) a policy tip and/or email notification.
+  For email content, this action blocks the message from being sent. Depending on how the DLP rule is configured, the sender sees an NDR or (if the rule uses a notification) a policy tip and/or email notification.
     
-    ![Warning that unauthorized recipients must be removed from the message](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
+  ![Warning that unauthorized recipients must be removed from the message](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
 #### User notifications and user overrides
 
@@ -325,21 +333,20 @@ For these reasons, the guidance for creating rules with different match accuraci
     
 ## Using a retention label as a condition in a DLP policy
 
-When you use a previously created and published [retention label](labels.md) as a condition in a DLP policy, there are some things to be aware of:
+When you use a previously created and published [retention label](retention.md#retention-labels) as a condition in a DLP policy, there are some things to be aware of:
 
-- You have to have previously created, published and applied the retention label before you attempt to use it as a condition in a DLP policy.
-- Retention labels can take up to a day to sync and up to seven days to auto-apply after they have been created and published. See, [How long it takes for retention labels to take effect](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect) for detailed information.
-- Using a retention label in a policy ***is only supported for items in SharePoint Online and OneDrive for Business***.
+- The retention label must be created and published before you attempt to use it as a condition in a DLP policy.
+- Published retention labels can take from one to seven days to sync. For more information, see [When retention labels become available to apply](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) for retention labels published in a retention policy, and [How long it takes for retention labels to take effect](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect) for retention labels that are auto-published.
+- Using a retention label in a policy **is only supported for items in SharePoint and OneDrive***.
 
+  ![Labels as a condition](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-![Labels as a condition](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+  You might want to use a retention label in a DLP policy if you have items that are under retention and disposition, and you also want to apply other controls to them, for example:
 
-You might want to use a retention label in a DLP policy if you have items that are under retention and disposition, and you also want to apply other controls to them, for example:
+  - You published a retention label named **tax year 2018**, which when applied to tax documents from 2018 that are stored in SharePoint retains them for 10 years then disposes of them. You also don't want those items being shared outside your organization, which you can do with a DLP policy.
 
-- You published a retention label named **tax year 2018**, which when applied to tax documents from 2018 that are stored in SharePoint retains them for 10 years then disposes of them. You also don't want those items being shared outside your organization, which you can do with a DLP policy.
-
-> [!IMPORTANT]
-> You'll get this error if you specify a retention label as a condition in a DLP policy and you also include Exchange and/or Teams as a location: **"Protecting labeled content in email and teams messages isn't supported. Either remove the label below or turn off Exchange and Teams as a location."** This is because Exchange transport does not evaluate the label metadata during message submission and delivery. 
+  > [!IMPORTANT]
+  > You'll get this error if you specify a retention label as a condition in a DLP policy and you also include Exchange and/or Teams as a location: **"Protecting labeled content in email and teams messages isn't supported. Either remove the label below or turn off Exchange and Teams as a location."** This is because Exchange transport does not evaluate the label metadata during message submission and delivery. 
 
 ### Support for sensitivity labels is coming
 
@@ -349,7 +356,7 @@ You can currently use only a retention label as a condition, not a [sensitivity 
 
 Several features can be applied to content containing sensitive information:
   
-- A [retention label](labels.md#applying-a-retention-label-automatically-based-on-conditions) and a [retention policy](retention-policies.md) can both enforce **retention** actions on this content. 
+- A [retention label and a retention policy](retention.md) can both enforce **retention** actions on this content. 
     
 - A DLP policy can enforce **protection** actions on this content. And before enforcing these actions, a DLP policy can require other conditions to be met in addition to the content containing a label. 
     
@@ -445,15 +452,15 @@ DLP detects sensitive information by using deep content analysis (not just a sim
 
 After you create a DLP policy in the Security &amp; Compliance Center, it's stored in a central policy store, and then synced to the various content sources, including:
   
-- Exchange Online, and from there to Outlook on the web and Outlook
+- Exchange Online, and from there to Outlook on the web and Outlook.
     
-- OneDrive for Business sites
+- OneDrive for Business sites.
     
-- SharePoint Online sites
+- SharePoint Online sites.
     
-- Office desktop programs (Excel, PowerPoint, and Word)
+- Office desktop programs (Excel, PowerPoint, and Word).
 
-- Microsoft Teams channels and chat messages
+- Microsoft Teams channels and chat messages.
     
 After the policy's synced to the right locations, it starts to evaluate content and enforce actions.
 <!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
@@ -475,6 +482,9 @@ As people add or change documents in their sites, the search engine scans the co
 Finally, documents can conflict with a DLP policy, but they can also become compliant with a DLP policy. For example, if a person adds credit card numbers to a document, it might cause a DLP policy to block access to the document automatically. But if the person later removes the sensitive information, the action (in this case, blocking) is automatically undone the next time the document is evaluated against the policy.
   
 DLP evaluates any content that can be indexed. For more information on what file types are crawled by default, see [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
+
+> [!NOTE]
+> External sharing of new files in SharePoint can be blocked by default until at least one DLP policy scans the new item. See, [Mark new files as sensitive by default](https://docs.microsoft.com/sharepoint/sensitive-by-default) for detailed information. 
   
 ### Policy evaluation in Exchange Online, Outlook, and Outlook on the web
 
@@ -516,13 +526,13 @@ These permissions are required only to create and apply a DLP policy. Policy enf
 
 To use most of the cmdlets for the Security &amp; Compliance Center, you need to:
   
-1. [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+1. [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
     
-2. Use any of these [policy-and-compliance-dlp cmdlets](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps)
+2. Use any of these [policy-and-compliance-dlp cmdlets](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps).
     
 However, DLP reports need pull data from across Microsoft 365, including Exchange Online. For this reason, **the cmdlets for the DLP reports are available in Exchange Online Powershell -- not in Security &amp; Compliance Center Powershell**. Therefore, to use the cmdlets for the DLP reports, you need to:
   
-1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
 2. Use any of these cmdlets for the DLP reports:
     

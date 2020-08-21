@@ -103,15 +103,15 @@ To submit an offer to activate Customer Key, complete these steps:
 
 2. Once you're logged in, browse to the **Dashboard**.
 
-3. Choose **Offers**, and review the list of current offers.
+3. Choose **Deploy** from the navigation bar **OR** select **View all deployment resources** on the **Deploy** information card, and review the list of current offers.
 
-4. Choose **Learn More** for the offer that applies to you:
+4. Choose the information card for the offer that applies to you:
 
-   - **Exchange Online and Skype for Business:** Choose **Learn More** on the **Customer Key for Exchange** offer.
+   - **Exchange Online and Skype for Business:** Choose the **Request encryption key help for Exchange online** offer.
 
-   - **SharePoint Online, OneDrive for Business, and Teams files:** Choose **Learn More** on the **Customer Key for SharePoint and OneDrive for Business** offer.
+   - **SharePoint Online, OneDrive, and Teams files:** Choose the **Request encryption key help for Sharepoint and OneDrive** offer.
 
-5. On the **Offer details** page, choose **Create Request**.
+5. Once you've reviewed the offer details, choose **Continue to step 2**.
 
 6. Fill out all applicable details and requested information on the offer form. Pay particular attention to your selections for which officers of your organization you want to authorize to approve the permanent and irreversible destruction of encryption keys and data. Once you've completed the form, choose **Submit**.
 
@@ -127,7 +127,7 @@ Before contacting the Microsoft 365 team, you must perform the following steps f
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
-   Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.KeyVault
+   Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
    ```
 
 3. Contact Microsoft to have the process finalized. For the SharePoint and OneDrive for Business team, contact [spock@microsoft.com](mailto:spock@microsoft.com). For Exchange Online and Skype for Business, contact [exock@microsoft.com](mailto:exock@microsoft.com). Include the following in your email:
@@ -275,13 +275,13 @@ For example,
 Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination Software -KeyOps wrapKey,unwrapKey
 ```
 
-To import a key directly into your key vault, you need to have a Thales nShield Hardware Security Module.
+To import a key directly into your key vault, you need to have a nCipher nShield Hardware Security Module.
   
-Some organizations prefer this approach to establish the provenance of their keys, and the this method also provides the following:
+Some organizations prefer this approach to establish the provenance of their keys, and then this method also provides the following:
   
-- The tool set used for import includes attestation from Thales that the Key Exchange Key (KEK) that is used to encrypt the key you generate is not exportable and is generated inside a genuine HSM that was manufactured by Thales.
+- The toolset used for import includes attestation from nCipher that the Key Exchange Key (KEK) that is used to encrypt the key you generate is not exportable and is generated inside a genuine HSM that was manufactured by nCipher.
 
-- The tool set includes attestation from Thales that the Azure Key Vault security world was also generated on a genuine HSM manufactured by Thales. This attestation proves to you that Microsoft is also using genuine Thales hardware.
+- The toolset includes attestation from nCipher that the Azure Key Vault security world was also generated on a genuine HSM manufactured by nCipher. This attestation proves to you that Microsoft is also using genuine nCipher hardware.
 
 Check with your security group to determine if the above attestations are required. For detailed steps to create a key on-premises and import it into your key vault, see [How to generate and transfer HSM-protected keys for Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/). Use the Azure instructions to create a key in each key vault.
   
@@ -352,7 +352,7 @@ For example, for SharePoint Online and OneDrive for Business:
   
 ```powershell
 Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365SP-NA-VaultA1
--PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName TBD
+-PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000003-0000-0ff1-ce00-000000000000
 ```
 
 To verify that an expiration date is not set for your keys run the [Get-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) cmdlet as follows:
@@ -396,25 +396,9 @@ Remember! When you create a DEP, you specify two keys that reside in two differe
   
 To create the DEP, follow these steps:
   
-1. On your local computer, using a work or school account that has global administrator permissions in your organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) by opening Windows PowerShell and running the following command.
+1. On your local computer, using a work or school account that has global administrator permissions in your organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) in a Windows PowerShell window.
 
-   ```powershell
-   $UserCredential = Get-Credential
-   ```
-
-2. In the Windows PowerShell Credential Request dialog box, enter your work or school account information, click **OK**, and then enter the following command.
-
-   ```powershell
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-   ```
-
-3. Run the following command.
-
-   ```powershell
-   Import-PSSession $Session
-   ```
-
-4. To create a DEP, use the New-DataEncryptionPolicy cmdlet by typing the following command.
+2. To create a DEP, use the New-DataEncryptionPolicy cmdlet by typing the following command.
 
    ```powershell
    New-DataEncryptionPolicy -Name <PolicyName> -Description "Policy Description" -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
@@ -426,15 +410,17 @@ To create the DEP, follow these steps:
 
    - *Policy Description* is a user friendly description of the policy that will help you remember what the policy is for. You can include spaces in the description. For example, "Root key for mailboxes in USA and its territories".
 
-   - *KeyVaultURI1* is the URI for the first key in the policy. For example, https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01.
+   - *KeyVaultURI1* is the URI for the first key in the policy. For example, <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>.
 
-   - *KeyVaultURI2* is the URI for the second key in the policy. For example, https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02. Separate the two URIs by a comma and a space.
+   - *KeyVaultURI2* is the URI for the second key in the policy. For example, <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. Separate the two URIs by a comma and a space.
 
    Example:
   
    ```powershell
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01, https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02
    ```
+
+For detailed syntax and parameter information, see [New-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-data-encryptionpolicy).
 
 ### Assign a DEP to a mailbox
 
@@ -444,7 +430,15 @@ Assign the DEP to a mailbox by using the Set-Mailbox cmdlet. Once you assign the
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-Where *MailboxIdParameter* specifies a mailbox. For more information about the Set-Mailbox cmdlet, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps).
+Where *MailboxIdParameter* specifies a mailbox. For more information about the Set-Mailbox cmdlet, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+
+For [on-premises mailboxes using Outlook for iOS and Android with hybrid Modern Authentication](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth), the on-premises mailbox data that is synchronized into your Exchange Online tenant can have DEP assigned using the Set-MailUser cmdlet.
+
+```powershell
+Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
+```
+
+Where *MailUserIdParameter* specifies a mail user (also known as a mail-enabled user). For more information about the Set-MailUser cmdlet, see [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser).
   
 ### Validate mailbox encryption
 

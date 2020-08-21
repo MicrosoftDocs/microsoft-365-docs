@@ -1,5 +1,5 @@
 ---
-title: "What's the difference between junk email and bulk email?"
+title: "What&apos;s the difference between junk email and bulk email?"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
