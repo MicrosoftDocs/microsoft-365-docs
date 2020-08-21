@@ -45,7 +45,7 @@ description: "Brief summary of article here"   # (Required) Important for SEO. R
 
 ## Watch: Name of video (optional)
 
-<!-- If you include a video in your article, put it under its own H1 heading so it shows up in the "In this article" list on the right side of the article. -->
+<!-- If you include a video in your article, put it under its own H2 heading so it shows up in the "In this article" list on the right side of the article. -->
 
 ## Next steps (optional)
 
