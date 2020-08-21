@@ -13,6 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
+ms.date: 08/21/2020
 description: "Get an overview of automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
 ms.custom: air
  - seo-marvel-mar2020
