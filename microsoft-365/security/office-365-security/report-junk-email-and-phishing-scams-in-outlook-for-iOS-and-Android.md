@@ -61,3 +61,6 @@ In the Junk folder, use the following steps to report spam false positives:
 3. Tap **Not junk**.
 
 A toast notification appears that the email has moved to your inbox. If you change your mind, select **Undo** on the toast notification. The email remains in the **Junk** folder.
+
+  > [!NOTE]
+  > if junk email reporting has been disabled for Outlook, the option to report messages to Microsoft will not be available on iOS and Android devices. Messages can still be marked as **Junk** or **Phishing** and will move to the **Junk** folder.
