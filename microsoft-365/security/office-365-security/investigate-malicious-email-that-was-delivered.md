@@ -69,7 +69,7 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 
     ![Explorer with Delivery Action and Delivery Location fields.](../../media/ThreatExFields.PNG)
 
-    <!-- You may notice the new **Special actions** column. This feature is aimed at telling admins the outcome of processing an email. The **Special actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.-->
+    You may notice the new **Special actions** column. This feature is aimed at telling admins the outcome of processing an email. The **Special actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.
 
 3. **Views in Threat Explorer**: In the **View** menu, choose **All email**.
 
