@@ -23,7 +23,7 @@ description: "Configure your retention policies and retention labels for regulat
 
 If your organization needs to comply with regulatory standards for retaining your data, the retention policies and retention labels that you can configure for your data in Microsoft 365 are sufficient for most organizations.
 
-However, some organizations in highly regulated industries are subject to more stringent regulatory requirements, such as the requirement to store electronic communications to meet the WORM (write once, read many). The WORM requirement dictates a storage solution in which a record:
+However, some organizations in highly regulated industries are subject to more stringent regulatory requirements, such as the WORM (write once, read many)requirement and to store electronic communications using a storage solution in which a record:
 
 - Must be retained for a required retention period that cannot be shortened, only increased.
 - Cannot be overwritten, erased, or altered during the required retention period.
