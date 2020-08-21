@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date:
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -26,37 +26,24 @@ Organizations with Exchange Online mailboxes can configure anti-phishing policie
 
 For information about creating and modifying the more advanced ATP anti-phishing policies that are available in Office 365 Advanced Threat Protection (Office 365 ATP), see [Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md).
 
-## Anti-phishing policies in the Security & Compliance Center vs PowerShell
-
 The basic elements of an anti-phishing policy are:
 
 - **The anti-phish policy**: Specifies the phishing protections to enable or disable, and the actions to apply options.
-
 - **The anti-phish rule**: Specifies the priority and recipient filters (who the policy applies to) for an anti-phish policy.
 
 The difference between these two elements isn't obvious when you manage anti-phishing policies in the Security & Compliance Center:
 
-- When you create an anti-phishing policy in the Security & Compliance Center, you're actually creating an anti-phish rule and the associated anti-phish policy at the same time using the same name for both.
+- When you create an anti-phishing policy, you're actually creating an anti-phish rule and the associated anti-phish policy at the same time using the same name for both.
+- When you modify an anti-phishing policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the anti-phish rule. All other settings modify the associated anti-phish policy.
+- When you remove an anti-phishing policy, the anti-phish rule and the associated anti-phish policy are removed.
 
-- When you modify an anti-phishing policy in the Security & Compliance Center, settings related to the name, priority, enabled or disabled, and recipient filters modify the anti-phish rule. All other settings modify the associated anti-phish policy.
-
-- When you remove an anti-phishing policy from the Security & Compliance Center, the anti-phish rule and the associated anti-phish policy are removed.
-
-In Exchange Online PowerShell, the difference between anti-phish policies and anti-phish rules is apparent. You manage anti-phish policies by using the **\*-AntiPhishPolicy** cmdlets, and you manage anti-phish rules by using the **\*-AntiPhishRule** cmdlets.
-
-- In PowerShell, you create the anti-phish policy first, then you create the anti-phish rule that identifies the policy that the rule applies to.
-
-- In PowerShell, you modify the settings in the anti-phish policy and the anti-phish rule separately.
-
-### Default ATP anti-phishing policy
+In Exchange Online PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell to configure anti-phishing policies](#use-exchange-online-powershell-to-configure-anti-phishing-policies) section later in this topic.
 
 Every organization has a built-in anti-phishing policy named Office365 AntiPhish Default that has these properties:
 
-- The policy named Office365 AntiPhish Default is applied to all recipients in the organization, even though there's no anti-phish rule (recipient filters) associated with the policy.
-
-- The policy named Office365 AntiPhish Default has the custom priority value **Lowest** that you can't modify (the policy is always applied last). Any custom policies that you create always have a higher priority than the policy named Office365 AntiPhish Default.
-
-- The policy named Office365 AntiPhish Default is the default policy (the **IsDefault** property has the value `True`), and you can't delete the default policy.
+- The policy is applied to all recipients in the organization, even though there's no anti-phish rule (recipient filters) associated with the policy.
+- The policy has the custom priority value **Lowest** that you can't modify (the policy is always applied last). Any custom policies that you create always have a higher priority.
+- The policy is the default policy (the **IsDefault** property has the value `True`), and you can't delete the default policy.
 
 To increase the effectiveness of anti-phishing protection, you can create custom anti-phishing policies with stricter settings that are applied to specific users or groups of users.
 
@@ -229,6 +216,8 @@ You can't disable the default anti-phishing policy.
 
 By default, anti-phishing policies are given a priority that's based on the order they were created in (newer policies are lower priority than older policies). A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies). No two policies can have the same priority, and policy processing stops after the first policy is applied.
 
+For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+
 Custom anti-phishing policies are displayed in the order they're processed (the first policy has the **Priority** value 0). The default anti-phishing policy named Office365 AntiPhish Default has the custom priority value **Lowest**, and you can't change it.
 
  **Note**: In the Security & Compliance Center, you can only change the priority of the anti-phishing policy after you create it. In PowerShell, you can override the default priority when you create the anti-phish rule (which can affect the priority of existing rules).
@@ -275,14 +264,22 @@ You can't remove the default policy.
 
 ## Use Exchange Online PowerShell to configure anti-phishing policies
 
-The following procedures aren't available in standalone EOP organizations.
+As previously described, an anti-spam policy consists of an anti-phish policy and an anti-phish rule.
+
+In Exchange Online PowerShell, the difference between anti-phish policies and anti-phish rules is apparent. You manage anti-phish policies by using the **\*-AntiPhishPolicy** cmdlets, and you manage anti-phish rules by using the **\*-AntiPhishRule** cmdlets.
+
+- In PowerShell, you create the anti-phish policy first, then you create the anti-phish rule that identifies the policy that the rule applies to.
+- In PowerShell, you modify the settings in the anti-phish policy and the anti-phish rule separately.
+- When you remove an anti-phish policy from PowerShell, the corresponding anti-phish rule isn't automatically removed, and vice versa.
+
+> [!NOTE]
+> The following PowerShell procedures aren't available in standalone EOP organizations using Exchange Online Protection PowerShell.
 
 ### Use PowerShell to create anti-phishing policies
 
 Creating an anti-phishing policy in PowerShell is a two-step process:
 
 1. Create the anti-phish policy.
-
 2. Create the anti-phish rule that specifies the anti-phish policy that the rule applies to.
 
  **Notes**:
@@ -292,7 +289,6 @@ Creating an anti-phishing policy in PowerShell is a two-step process:
 - You can configure the following settings on new anti-phish policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:
 
   - Create the new policy as disabled (_Enabled_ `$false` on the **New-AntiPhishRule** cmdlet).
-
   - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-AntiPhishRule** cmdlet).
 
 - A new anti-phish policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to an anti-phish rule.
