@@ -43,7 +43,7 @@ instructions for Application Guard.
 ### Minimum software requirements
 
 * **Windows 10**: Windows 10 Enterprise edition, Client Build version 2004 (20H1) build 19041
-* **Office**: Office Build version 16.0.13115.20000 or later
+* **Office**: Office Beta Channel Build version 2008 16.0.13212 or later
 * **Update package**: Windows 10 cumulative monthly security updates [KB4566782](https://support.microsoft.com/en-us/help/4566782/windows-10-update-kb4566782) 
 
 For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office Insider Preview builds, refer to [Getting started on deploying Office Insider builds](https://insider.office.com/business/deploy).
@@ -140,72 +140,16 @@ should be faster.
 ![Office app splash screen](../../media/ag08-confirm.png)
 
 
-Upon being opened, the file should display a few visual indicators that the file was opened inside Application Guard.
+Upon being opened, the file should display a few visual indicators that the file was opened inside Application Guard:
 
-![Doc file showing small App Guard note](../../media/ag09-confirm.png)
+* A callout in the ribbon
+
+    ![Doc file showing small App Guard note](../../media/ag09-confirm.png)
+* The application icon with a shield in the taskbar 
+
+    ![Icon in taskbar](../../media/ag12-limitations.png)
 
 
-## Configure Application Guard for Office
-
-Office supports the following policies to enable you to configure the capabilities of Application Guard for Office. Configuring these policies can
-disable some functionalities for files opened in Application Guard.
-
-| Policy                                                                          | Description                                                                                                                                                                                                                                                                                             |
-|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Disable Application Guard for Office                                            | Enabling this policy will force Word, Excel, and PowerPoint to use the Protected View isolation container instead of Application Guard. This policy can be used to temporarily disable Application Guard when there are issues in leaving Application Guard enabled for Edge.                                  |
-| Disable copy/paste for documents opened in Application Guard                    | Enabling this policy will prevent a user from copying and pasting content from a document opened in Application Guard to a document opened outside Application Guard.                                                                                                                                   |
-| Prevent users from removing Application Guard protection on files               | Enabling this policy will remove the option (within the Office application experience) to disable Application Guard protection or open a file outside Application Guard. <br><br>**Note:** Users can still bypass this policy by manually [removing the Mark of the Web property from the file](#markofthe-web) or by [moving a document to a Trusted location](#trusted-locations). |
-| Restrict printing from documents opened in Application Guard                    | Enabling this policy will limit printers a user can print to from a file opened in Application Guard. For example, you can use this policy to restrict users to only print to PDF.                              |
-| Turn off camera and microphone access for documents opened in Application Guard | Enabling this policy will remove Office’s access to Camera and Microphone inside Application Guard.                                                                                                                                                                                                     |
-
->[!NOTE] 
->The following policies will require the user to log off and re-login to Windows to take effect:
-> 
-> *  Disable copy/paste for documents opened in Application Guard
->*  Restrict printing for documents opened in Application Guard
-> *  Turn off camera and mic access to documents opened in Application Guard
-
-<!---
-## Configure Trust Center
-
-You can choose which documents open in Application Guard via the Trust Center. To access these settings, open Word, Excel, or PowerPoint. Then select **File > Options > Trust Center > Trust Center Settings.** 
- 
-### Trust Center options 
-
-#### Trusted Locations
-You can choose to make certain file paths trusted locations which will always open Office files as trusted files (i.e they will not open in Application Guard). Even if a file is individually untrusted, if it moved into a trusted location the file will open as a trusted file. You can disable all trusted locations by selecting the **Disable all Trusted Locations** option. 
-
-#### Trusted Documents
-You can choose to make individual files trusted through trust promotion. To do this, select **File > Info > Remove Protection**. The Trust Center options for Trusted Documents allow you to either enable trusted files on networks, or to disable individually trusted files altogether. There is also a button to clear the current list of individually trusted files. 
-
-#### Application Guard 
-Here you can choose which types of files will open in Application Guard. 
-
-* **Files originating from the internet** – This setting will open files with Mark of the Web (MOTW) in Application Guard. Individually trusted files or files located in trusted locations will not open in Application Guard even if files have a MOTW.
-
-* **Files located in potentially unsafe locations** – This setting will open any     file located in unsafe locations (for example, your Temporary Internet Files folder) in Application Guard. 
-
-* **Outlook attachments** – This setting will open Outlook file attachments in Application Guard. Outlook file attachments downloaded to a trusted location and then opened from there will not open in Application Guard. 
- 
-### Mark of the Web 
-
-Mark of the Web (MOTW) is a file property that is set on files originating from
-untrusted sources such as files downloaded from the internet or from email
-attachments. By default, when opening a file with MOTW, Office will open the
-file using Application Guard. 
-
-* **MOTW requirements** - MOTW requires an NTFS file system. Therefore, if you move
-a MOTW file to a location that does not use NTFS (for example, a USB stick formatted
-with FAT32 or WebDAV-based network shares), the file will lose its MOTW property. 
-* **Removing MOTW** - If you want to remove MOTW from a file, right-click on the
-file and select **Properties**. Under the **General** tab, select **Unblock** as shown below: 
-
-    ![Removing MOTW frm a file](../../media/ag11-unblock.png) 
-
->[!NOTE]
-> Removing MOTW from a file can't be undone.
-
--->
 
 ## Submit feedback
 
@@ -258,20 +202,12 @@ encouraged to submit your feedback via Feedback Hub:
 
 9.  Select **Submit**.
 
-10. Select the **Feedback** tab in the left-hand menu and go to **My
-    Feedback**.
 
-11. Find the feedback you filed, open it, and select **Share**.
-
-12. Send us the generated URL.
-
->[!IMPORTANT]
->Doing steps 10 to 12 ensures that your feedback can be found quickly. 
 
 ### Submit feedback via Office Customer Voice
 
 You may also submit feedback from within Office if the issue happens when
-running Office documents are opened in Application Guard. Refer to the [Office
+Office documents are opened in Application Guard. Refer to the [Office
 Insider Handbook](https://insider.office.com/handbook) for submitting
 feedback.
 
@@ -309,14 +245,12 @@ You can also configure Office 365 ATP to work with Microsoft Defender ATP. Refer
 * Files that are protected by Information Rights Management (IRM) continue to
     open in Protected View.
 
-* In the document's info section, the *Last Modified By* property may display
-    WDAGUtilityAccount as the user. This is the anonymous user configured in
-    Application Guard because the desktop user's identity is not shared
-    inside the Application Guard container.
+* Only Accessibility tools that use the UIA framework can provide an accessible experience for files opened in Application Guard.
 
 * Network connectivity is required for the first launch of Application Guard
     after installation. This is required for Application Guard to validate the
     license.
+* In the document's info section, the *Last Modified By* property may display WDAGUtilityAccount as the user. This is the anonymous user configured in Application Guard given that the desktop user's identity is not shared inside the Application Guard container. 
 
 ## Performance optimizations for Application Guard 
 
