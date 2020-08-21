@@ -8,7 +8,7 @@ manager: dansimp
 ms.reviewer: mcostea
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -216,9 +216,10 @@ The diagram contains the following information:
 
 - **Filter verdicts**: These values are related to the available phishing and spam filtering verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). The available values are described in the following table:
 
-  ||||
+  ****
+
+  |Value|Spam filter verdict|Description|
   |---|---|---|
-  |**Value**|**Spam filter verdict**|**Description**|
   |**Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by spam filtering (for example, by a mail flow rule, also known as a transport rule).<br/><br/>The message skipped spam filtering for other reasons (for example, the sender and recipient appear to be in the same organization).|
   |**Blocked**|`SFV:SKS`|The message was marked as spam before being evaluated by spam filtering (for example, by a mail flow rule).|
   |**Detected**|`SFV:SPM`|The message was marked as spam by spam filtering.|

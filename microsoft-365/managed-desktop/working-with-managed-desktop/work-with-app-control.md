@@ -49,8 +49,8 @@ Operations will progressively deploy policies to deployment groups following thi
 |---------|---------|---------|
 |Test     |  Audit       |  Day 0       |
 |First     | Enforced        | Day 1        |
-|Fast     | Enforced        |  Day 3       |
-|Broad     | Enforced        |  Day 7       |
+|Fast     | Enforced        |  Day 2       |
+|Broad     | Enforced        |  Day 3       |
 
 
 You can pause or roll back the deployment at any time during the rollout. To do this, open another service request with Operations.

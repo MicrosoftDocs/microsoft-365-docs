@@ -1,5 +1,5 @@
 ---
-title: "Summary of Microsoft 365 Enterprise security for the Contoso Corporation"
+title: "Summary of Microsoft 365 for enterprise security for the Contoso Corporation"
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,18 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom:
 
-description: How Contoso is using the security features across Microsoft 365 Enterprise.
+description: How Contoso is using the security features across Microsoft 365 for enterprise.
 ---
 
-# Summary of Microsoft 365 Enterprise security for the Contoso Corporation
+# Summary of Microsoft 365 for enterprise security for the Contoso Corporation
 
-To obtain the sign-off of the deployment of Microsoft 365 Enterprise by the IT security department, a thorough security review was conducted. Here are Contoso's security requirements for the cloud:
+To obtain the sign-off of the deployment of Microsoft 365 for enterprise by the IT security department, a thorough security review was conducted. Here are Contoso's security requirements for the cloud:
 
 - Use the strongest methods of authentication for employee access to cloud resources
 - Ensure that PCs and mobile devices connect and access applications in secure ways
@@ -32,7 +32,7 @@ To obtain the sign-off of the deployment of Microsoft 365 Enterprise by the IT s
 
 ## Contoso's path to Microsoft 365 security readiness
 
-Contoso used the following steps to ready their security for their deployment of Microsoft 365 Enterprise:
+Contoso used the following steps to ready their security for their deployment of Microsoft 365 for enterprise:
 
 1. Limited administrator accounts for the cloud
 
@@ -40,13 +40,13 @@ Contoso used the following steps to ready their security for their deployment of
 
 2. Performed data classification analysis into three levels
 
-   Contoso performed a careful review and determined the three levels, which was used to determine the Microsoft 365 Enterprise features to protect Contoso's most valuable data.
+   Contoso performed a careful review and determined the three levels, which was used to determine the Microsoft 365 for enterprise features to protect Contoso's most valuable data.
 
 3. Determined access, retention, and information protection policies for data levels
 
    Based on the data levels, Contoso determined detailed requirements, which will be used to qualify future IT workloads being moved to the cloud.
 
-In accordance with security best practices and Microsoft 365 Enterprise deployment requirements, Contoso's security administrators and IT department have deployed many security features and capabilities, as described in the following sections.
+In accordance with security best practices and Microsoft 365 for enterprise deployment requirements, Contoso's security administrators and IT department have deployed many security features and capabilities, as described in the following sections.
 
 ## Identity & access management 
 

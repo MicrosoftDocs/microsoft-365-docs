@@ -9,7 +9,8 @@ ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom: 
 - seo-marvel-apr2020
 localization_priority: Normal
@@ -29,7 +30,7 @@ This video shows the configuration steps described in this document.</br>
 
 ## Azure Organizational relationships settings
 
-Sharing in Microsoft 365 is governed at its highest level by the organizational relationships settings in Azure Active Directory. If guest sharing is disabled or restricted in Azure AD, this will override any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [organizational relationships settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this will override any sharing settings that you configure in Microsoft 365.
 
 Check the organizational relationships settings to ensure that sharing with guests is not blocked.
 
@@ -45,6 +46,8 @@ To set organizational relationship settings
 6. If you made changes, click **Save**.
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
+
+If you work with guests from multiple organizations, you may want to restrict their ability to access directory data. This will prevent them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
 
 ## SharePoint organization level sharing settings
 
@@ -89,7 +92,7 @@ To set the SharePoint and OneDrive organization level default link settings
 
 ## SharePoint site level sharing settings
 
-If you're sharing files and fodlers that are in a SharePoint site, you also need to check the site-level sharing settings for that site.
+If you're sharing files and folders that are in a SharePoint site, you also need to check the site-level sharing settings for that site.
 
 ![Screenshot of SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
 

@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date:
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -83,9 +83,10 @@ When multiple policies are applied to a user, the following order is applied fro
 
 1. **Strict protection** preset security policy
 2. **Standard protection** preset security policy
-3. Any other related policies.
+3. Custom security policies
+4. Default security policies
 
-In other words, the settings of the **Strict protection** policy override the settings of the **Standard protection** policy, which overrides the settings from any other related policies.
+In other words, the settings of the **Strict protection** policy override the settings of the **Standard protection** policy, which overrides the settings from a custom policy, which overrides the settings from the default policy.
 
 ## Assign preset security policies to users
 

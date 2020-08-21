@@ -49,15 +49,15 @@ There are two different methods for automatically applying a sensitivity label:
     For configuration instructions, see [How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) on this page.
     
     Specific to auto-labeling for SharePoint and OneDrive:
-    - Office files for Word, PowerPoint, and Excel are supported.
+    - Office files for Word, PowerPoint, and Excel are supported. Open XML format is supported (such as .docx and .xlsx) but not Microsoft Office 97-2003 format (such as .doc and .xls).
     - Maximum of 25,000 automatically labeled files in your tenant per day.
-    - Maximum of 10 sites collections across all policies.
-    - Maximum of 10 policies across your tenant.
+    - Maximum of 10 auto-labeling policies per tenant, each targeting up to 10 sites (SharePoint or OneDrive).
     - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the person who created the sensitivity label.
 
     Specific to auto-labeling for Exchange:
     - Unlike manual labeling or auto-labeling with Office apps, Office attachments (Word, Excel, and PowerPoint files) and PDF attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
+        - For these Office files, Open XML format is supported (such as .docx and .xlsx) but not Microsoft Office 97-2003 format (such as .doc and .xls).
     - If you have Exchange mail flow rules or data loss prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
     - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
     - Incoming email is labeled when there is a match with your auto-labeling conditions. However, if the label is configured for encryption, that encryption isn't applied.
@@ -69,7 +69,7 @@ There are two different methods for automatically applying a sensitivity label:
 Use the following table to help you identify the differences in behavior for the two complementary automatic labeling methods:
 
 |Feature or behavior|Label setting: Auto-labeling for Office apps |Policy: Auto-labeling|
-|:-----|:-----|:-----|:-----|
+|:-----|:-----|:-----|
 |App dependency|[Yes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
 |Restrict by location|No |Yes |
 |Conditions: Trainable classifiers|Yes |No |
@@ -209,15 +209,15 @@ Simulation mode is unique to auto-labeling policies and woven into the workflow.
 
 Workflow for an auto-labeling policy:
 
-1. Create and configure an auto-labeling policy
+1. Create and configure an auto-labeling policy.
 
-2. Run the policy in simulation mode and wait at least 24 hours
+2. Run the policy in simulation mode and wait 24 hours, or until the simulation is complete.
 
-3. Review the results, and if necessary, refine your policy, rerun simulation mode and wait at least 24 hours
+3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait another 24 hours, or until the simulation is complete.
 
-4. Repeat step 3 as needed
+4. Repeat step 3 as needed.
 
-5. Deploy in production
+5. Deploy in production.
 
 The simulated deployment runs like the WhatIf parameter for PowerShell. You see results reported as if the auto-labeling policy had applied your selected label, using the rules that you defined. You can then refine your rules for accuracy if needed, and rerun the simulation. However, because auto-labeling for Exchange applies to emails that are sent and received, rather than emails stored in mailboxes, don't expect results for email in a simulation to be consistent unless you're able to send and receive the exact same email messages.
 

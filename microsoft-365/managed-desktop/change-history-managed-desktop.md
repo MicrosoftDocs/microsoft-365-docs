@@ -5,6 +5,9 @@ keywords: change history
 ms.prod: m365-md
 ms.sitesec: library
 author: jaimeo
+ms.topic: article
+audience: ITPro
+manager: laurawi
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
@@ -15,6 +18,22 @@ ms.localizationpriority: normal
 # Change history for Microsoft Managed Desktop documentation
 
 This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles are those which have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+
+## July 2020
+New or changed article | Description
+--- | ---
+[Microsoft Managed Desktop app requirements](service-description/mmd-app-requirements.md) | Updated article
+[Compliance](intro/compliance.md) | Updated article
+[Get started with app control](get-started/get-started-app-control.md) | Updated article
+[Work with app control](working-with-managed-desktop/work-with-app-control.md) | Updated article
+[Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md) | Updated article
+[App control](service-description/app-control.md) | Updated article
+[Network configuration for Microsoft Managed Desktop](get-ready/network.md) | Updated article
+[New Microsoft Edge app](get-started/edge-browser-app.md) | Updated article
+[Access the admin portal](get-started/access-admin-portal.md) | New article
+[App control](service-description/app-control.md) | New article
+[Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](get-started/project-visio.md) | Updated article
 
 ## June 2020
 New or changed article | Description
