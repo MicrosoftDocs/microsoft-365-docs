@@ -137,8 +137,12 @@ AIR capabilities in Office 365 ATP include [reports & details](air-view-investig
 
 For example, recently, an organization set up a way for their security operations team to view user-reported phish alerts that were already processed by AIR. Their solution integrates relevant alerts with the organization's SIEM server and their case-management system. The solution greatly reduces the number of false positives so that their security operations team can focus their time and effort on real threats. To learn more about this custom solution, see [Tech Community blog: Improve the Effectiveness of your SOC with Office 365 ATP and the O365 Management API](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
-## Next steps
+## Next step
 
 - [Get started using AIR](office-365-air.md)
 
-- [Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+## See also
+
+- [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+
+- [Automated investigation and response capabilities in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide)
