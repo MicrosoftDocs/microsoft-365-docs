@@ -143,7 +143,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 21. Once published your classifier will be available as a condition in [Office auto-labeling with sensitivity labels](apply-sensitivity-label-automatically.md), [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and in [Communication compliance](communication-compliance.md).
 
-## Retraining classifiers in used Communication compliance policies (preview)
+## Retraining classifiers used in Communication compliance policies (preview)
 
 > [!IMPORTANT]
 > You provide feedback in the compliance solution that is using the classifier as a condition. For this preview, the retraining feedback loop is being rolled out in communication compliance first. **If you don't have a communications compliance policy that uses a classifier as a condition, stop here.**
@@ -155,7 +155,7 @@ To understand more about the overall workflow of retraining a classifier, see [P
 > [!NOTE]
 > A classifier must already be published and in use before it can be retrained.
 
-### How to re-train a classifier (preview)
+### How to re-train a classifier in communication compliance policies (preview)
 
 1. Open the Communication compliance policy that uses a classifier as a condition and choose one of the identified items from the **Pending** list.
 2. Choose the elipsis and **Provide detailed feedback**.
@@ -183,6 +183,12 @@ GET SCREENSHOT OF SxS COMPARISON SCREEN
 10. Review the prediction comparisons of the retrained and currently published versions of the classifier.
 11. If you satisfied with the results of the retraining, choose **Re-publish**.
 12. If you are not satisfied with the results of the retraining, you can either choose to provide additional feedback on classified items to the classifier in the Communications compliance interface and start another retraining cycle or do nothing in which case the currently published version of the classifier will continue to be used. 
+
+## Retraining classifiers through content explorer (preview)
+
+> [!IMPORTANT]
+> At this preview, you can retrain classifiers that you've used in DLP policies that target Exchange locations only. You cannot retrain classifiers used in DLP policies that target any other locations.  provide feedback in the compliance solution that is using the classifier as a condition. For this preview, the retraining feedback loop is being rolled out in communication compliance first. **If you don't have a communications compliance policy that uses a classifier as a condition, stop here.**
+
 
 
 ## See also
