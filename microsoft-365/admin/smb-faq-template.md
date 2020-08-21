@@ -1,10 +1,9 @@
 ---
 # This template provides a structure for M365 SMB admin FAQ articles.
-# For details about MAX content metadata requirements, see https://review.docs.microsoft.com/office-authoring-guide/metadata-for-max-content-on-dmc
+# For details about MARVEL content metadata requirements, see https://review.docs.microsoft.com/office-authoring-guide/metadata-for-max-content-on-dmc
 
 title: "<Subject> frequently-asked questions (FAQ)"   # (Required) Very important for SEO. See https://aka.ms/seo-for-writers-cheat-sheet
-f1.keywords:   # (Optional) Choose from: CSH (if article is called from in-app UX), NOCSH (if article is not called from in-app UX)
-- NOCSH
+f1.keywords: NOCSH                 # (Optional) Choose from: CSH (if article is called from in-app UX), NOCSH (if article is not called from in-app UX)
 ms.author: YourMicrosoftAlias      # (Required) Your Microsoft alias without @microsoft.com
 author: YourGitHubUserName         # (Required) Your GitHub alias, not your Microsoft alias
 manager: MicrosoftAliasOfManager   # (Required for MARVEL) Your manager's Microsoft alias without @microsoft.com
@@ -17,8 +16,7 @@ ms.collection:                     # (Required) Always M365-subscription-managem
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio     # (Optional) To help with reporting, always include AdminSurgePortfolio for SMB admin articles
-search.appverid:                   # (Optional) Use MET150 if you want the article to show up in Minimaven in the admin center
-- MET150
+search.appverid: MET150            # (Optional) Use MET150 if you want the article to show up in Minimaven in the admin center
 description: "Frequently-asked questions about <subject>."   # (Optional) Helps with SEO. Recommended character length is 120-158 characters.
 ---
 
@@ -26,7 +24,7 @@ description: "Frequently-asked questions about <subject>."   # (Optional) Helps 
 
 <!-- Add intro text here. Include the phrase "frequently-asked questions" for SEO, and indicate that if they can't find an answer to their question, they should let us know by leaving a comment on the page so we can consider adding their question to the article. -->
 
-## Heading in the form of a question (include as many headings as needed)
+## Heading in the form of a question (include multiple headings in the form of a question, as needed)
 
 <!-- Provide an answer to the question here. Include links to articles that provide more detail, if appropriate. -->
 
@@ -34,7 +32,7 @@ description: "Frequently-asked questions about <subject>."   # (Optional) Helps 
 
 <!-- Include a list of links to frequently-viewed content related to the subject of the FAQs. Do NOT use bullets. Next to each link, include the content type (choose from: article, video, blog post, link page) in parentheses. See examples below. -->
 
-[Article title](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center) (article)
-[Video title](https://www.aka.ms/M365Btraining) (video)
-[Blog post title](https://techcommunity.microsoft.com/t5/office-365-blog/office-365-groups-ignite-recap/ba-p/1036796) (blog post)
+[Article title](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center) (article)\
+[Video title](https://www.aka.ms/M365Btraining) (video)\
+[Blog post title](https://techcommunity.microsoft.com/t5/office-365-blog/office-365-groups-ignite-recap/ba-p/1036796) (blog post)\
 [Landing page title](https://www.aka.ms/M365Btraining) (link page)

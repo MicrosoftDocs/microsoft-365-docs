@@ -3,8 +3,7 @@
 # For details about MARVEL content metadata requirements, see https://review.docs.microsoft.com/office-authoring-guide/metadata-for-max-content-on-dmc
 
 title: "Article title goes here"   # (Required) Very important for SEO. See https://aka.ms/seo-for-writers-cheat-sheet
-f1.keywords:   # (Optional) Choose from: CSH (if article is called from in-app UX), NOCSH (if article is not called from in-app UX)
-- NOCSH
+f1.keywords: NOCSH                 # (Optional) Choose from: CSH (if article is called from in-app UX), NOCSH (if article is not called from in-app UX)
 ms.author: YourMicrosoftAlias      # (Required) Your Microsoft alias without @microsoft.com
 author: YourGitHubUserName         # (Required) Your GitHub alias, not your Microsoft alias
 manager: MicrosoftAliasOfManager   # (Required for MARVEL) Your manager's Microsoft alias without @microsoft.com
@@ -17,8 +16,7 @@ ms.collection:                     # (Required) Always M365-subscription-managem
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio     # (Optional) To help with reporting, always include AdminSurgePortfolio for SMB admin articles
-search.appverid:                   # (Optional) Use MET150 if you want the article to show up in Minimaven in the admin center
-- MET150
+search.appverid: MET150            # (Optional) Use MET150 if you want the article to show up in Minimaven in the admin center
 description: "Brief summary of article here"   # (Optional) Helps with SEO. Recommended character length is 120-158 characters.
 ---
 
@@ -54,6 +52,7 @@ description: "Brief summary of article here"   # (Optional) Helps with SEO. Reco
 <!-- Include this section for how-to articles only, if needed. Recommend the next logical action or actions to take after completing the task(s) outlined in the article. Include links to relevant how-to articles (such as the next task to complete in a scenario), links to recommended reading, or any other info that you think users should or might want to do next. -->
 
 ## Related content
+
 <!-- Include a list of links, but do NOT use bullets. Next to each link, include the content type (choose from: article, video, blog post, link page) in parentheses. See examples below. -->
 
 [Article title](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center) (article)\
