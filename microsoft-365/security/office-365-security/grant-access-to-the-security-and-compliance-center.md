@@ -41,7 +41,7 @@ For more information about the different permissions you can give to users in th
 
 1. [Sign in and go to the admin center](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center).
 
-2. In the Microsoft 365 admin center, open **Admin centers** and then click **Security & Compliance**.
+2. In the Microsoft 365 admin center, open **Admin centers** and then click **Security**.
 
 3. In the Security & Compliance Center, go to **Permissions**.
 
@@ -52,6 +52,9 @@ For more information about the different permissions you can give to users in th
 6. When you've selected all of the users you want to add to the role group, click **add-\>** and then **OK**.
 
 7. Click **Save** to save the changes to the role group.
+
+> [!NOTE]
+> Admins can also navigate to the Complaince Admin Center(https://compliance.microsoft.com/homepage) and get to [Managing Permissins](https://protection.office.com/permissions) Section.
 
 ### How do you know this worked?
 
