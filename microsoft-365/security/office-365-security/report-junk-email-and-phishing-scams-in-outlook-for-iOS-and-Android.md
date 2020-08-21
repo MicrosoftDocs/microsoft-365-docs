@@ -46,7 +46,7 @@ For messages in the Inbox, or any other email folder except Junk, use the follow
 
    ![Report junk or phishing email](../../media/Android-report-junk-or-phishing.png)
 
-4. In the dialog that appears, you can choose **Report** or **No Thanks**. If you tapped **Junk** the message moves to the Junk folder, if you tapped **Phishing** it moves to the Deleted Items folder. Select **Report** to also send a copy of the message to Microsoft.
+4. In the dialog that appears, you can choose **Report** or **No Thanks**. On selecting **No Thanks**, if you tapped **Junk** the message moves to the Junk folder, if you tapped **Phishing** it moves to the Deleted Items folder. Select **Report** to also send a copy of the message to Microsoft.
 
    ![Report junk or phishing email reporting options](../../media/Android-junk-email-reporting-options.png)
 
