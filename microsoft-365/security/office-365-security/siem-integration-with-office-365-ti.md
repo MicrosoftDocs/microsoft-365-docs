@@ -45,13 +45,12 @@ The SIEM server or other similar system polls the **audit.general** workload to 
 
 The following table summarizes the values of **AuditLogRecordType** that are relevant for Office 365 ATP events:
 
-
 |Value|Member name|Description|
 |---|---|---|
-|28|ThreatIntelligence|Phishing and malware events from Exchange Online Protection and Office 365 Advanced Threat Protection.|
-|41|ThreatIntelligenceUrl|ATP Safe Links time-of-block and block override events from Office 365 Advanced Threat Protection.|
+|28|ThreatIntelligence|Phishing and malware events from Exchange Online Protection and Office 365 ATP.|
+|41|ThreatIntelligenceUrl|ATP Safe Links time-of-block and block override events from Office 365 ATP.|
 |47|ThreatIntelligenceAtpContent|Phishing and malware events for files in SharePoint Online, OneDrive for Business, and Microsoft Teams from Office 365 Advanced Threat Protection.|
-|64|AirInvestigation|Automated investigation and response events, such as investigation details and relevant artifacts from Office 365 Advanced Threat Protection Plan 2.|
+|64|AirInvestigation|Automated investigation and response events, such as investigation details and relevant artifacts from Office 365 ATP Plan 2.|
 |
 
 > [!IMPORTANT]
