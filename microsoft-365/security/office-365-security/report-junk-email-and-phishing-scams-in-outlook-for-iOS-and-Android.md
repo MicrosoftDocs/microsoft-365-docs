@@ -31,11 +31,11 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 - For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
   > [!NOTE]
-  > If junk email reporting is disabled for Outlook, the option to report messages to Microsoft won't be available on iOS and Android. Messages can still be reported as **Junk** or **Phishing** and will be moved to the **Junk** folder.
+  > If junk email reporting is disabled for Outlook, the option to report messages to Microsoft won't be available on iOS and Android. Messages can still be reported as **Junk** or **Phishing** and will be moved to the Junk folder.
 
 ## Report spam and phishing messages in Outlook for iOS and Android
 
-For messages in the Inbox, or any other email folder except Junk, use the following steps to report spam and phishing messages on iOS or Android:
+For messages in the Inbox, or any other email folder except Junk, use the following steps to report spam and phishing messages on iOS and Android:
 
 1. Select one or more messages.
 2. In the top-right corner tap on the three vertical dots. The action menu opens.
@@ -46,11 +46,11 @@ For messages in the Inbox, or any other email folder except Junk, use the follow
 
    ![Report junk or phishing email](../../media/Android-report-junk-or-phishing.png)
 
-4. In the dialog that appears, you can choose **Report** or **No Thanks**. If you tap **Junk** the messages move to the **Junk** folder, if you tap **Phishing** they move to the **Deleted Items** folder. Select **Report** to also send a copy of the message to Microsoft.
+4. In the dialog that appears, you can choose **Report** or **No Thanks**. If you tap **Junk** the message move to the Junk folder, if you tap **Phishing** it move to the Deleted Items folder. Select **Report** to also send a copy of the message to Microsoft.
 
    ![Report junk or phishing email reporting options](../../media/Android-junk-email-reporting-options.png)
 
-If you change your mind, select **Undo** on the toast notification that appears. The email remains in the **Inbox** folder.
+If you change your mind, select **Undo** on the toast notification that appears. The message remains in the Inbox folder.
 
 ## Report non-spam messages from the Junk folder in Outlook for iOS and Android
 
@@ -63,4 +63,4 @@ In the Junk folder, use the following steps to report spam false positives:
 
 3. Tap **Not junk**.
 
-A toast notification appears that the email has moved to your inbox. If you change your mind, select **Undo** on the toast notification. The email remains in the **Junk** folder.
+A toast notification appears that the email has moved to your Inbox. If you change your mind, select **Undo** on the toast notification. The email remains in the Junk folder.
