@@ -31,11 +31,11 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 - For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
   > [!NOTE]
-  > If junk email reporting is disabled for Outlook, the option to report messages to Microsoft won't be available on iOS and Android. Messages can still be reported as **Junk** or **Phishing** and will be moved to the Junk folder.
+  > If junk email reporting is disabled for Outlook, the option to report messages to Microsoft won't be available for iOS and Android. Messages can still be reported as **Junk** or **Phishing** and will be moved to the Junk folder.
 
 ## Report spam and phishing messages in Outlook for iOS and Android
 
-For messages in the Inbox, or any other email folder except Junk, use the following steps to report spam and phishing messages on iOS and Android:
+For messages in the Inbox, or any other email folder except Junk, use the following steps to report spam and phishing messages for iOS and Android:
 
 1. Select one or more messages.
 2. In the top-right corner tap on the three vertical dots. The action menu opens.
