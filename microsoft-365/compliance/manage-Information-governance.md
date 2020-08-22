@@ -28,7 +28,7 @@ Looking to protect your data? See [Microsoft Information Protection in Microsoft
 
 ## Information governance
 
-To keep what you want and delete what you don't:
+To keep what you need and delete what you don't:
  
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|:--------------------|:-----------------------------|
