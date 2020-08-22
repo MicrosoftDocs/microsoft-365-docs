@@ -79,58 +79,6 @@
       href: customer-lockbox-requests.md
 - name: Manage information protection
   href: protect-information.md
-  items: 
-    - name: Sensitivity labels
-      items:
-        - name: Learn about sensitivity labels
-          href: sensitivity-labels.md
-        - name: Get started with sensitivity labels
-          href: get-started-with-sensitivity-labels.md
-        - name: Create and publish sensitivity labels
-          href: create-sensitivity-labels.md
-        - name: Restrict access to content by using sensitivity labels to apply encryption
-          href: encryption-sensitivity-labels.md
-        - name: Apply a sensitivity label to content automatically
-          href: apply-sensitivity-label-automatically.md
-        - name: View label usage with label analytics
-          href: label-analytics.md
-        - name: Use sensitivity labels with teams, groups, and sites
-          href: sensitivity-labels-teams-groups-sites.md
-        - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
-          href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Use sensitivity labels in Office apps
-          href: sensitivity-labels-office-apps.md
-    - name: Data loss prevention (DLP)
-      href: data-loss-prevention-policies.md
-      items: 
-        - name: DLP and Microsoft Teams
-          href: dlp-microsoft-teams.md
-        - name: Learn about Endpoint data loss prevention (preview)
-          href: endpoint-dlp-learn-about.md
-        - name: Get started with Endpoint data loss prevention (preview)
-          href: endpoint-dlp-getting-started.md
-        - name: Using Endpoint data loss prevention (preview)
-          href: endpoint-dlp-using.md
-        - name: Get started with DLP policy recommendations
-          href: get-started-with-dlp-policy-recommendations.md
-        - name: Get started with the default DLP policy
-          href: get-started-with-the-default-dlp-policy.md
-        - name: Create a DLP policy from a template
-          href: create-a-dlp-policy-from-a-template.md
-        - name: Create, test, and tune a DLP policy
-          href: create-test-tune-dlp-policy.md
-        - name: Use notifications and policy tips in DLP policies
-          href: use-notifications-and-policy-tips.md
-        - name: What the DLP policy templates include
-          href: what-the-dlp-policy-templates-include.md
-        - name: Create a DLP policy to protect documents with FCI or other properties
-          href: protect-documents-that-have-fci-or-other-properties.md
-        - name: View the DLP reports
-          href: view-the-dlp-reports.md
-        - name: Form a query to find sensitive data stored on sites
-          href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-        - name: How DLP works between the Security & Compliance Center and Exchange admin center
-          href: how-dlp-works-between-admin-centers.md
     - name: Sensitive information types
       items: 
         - name: Sensitive information type entity definitions 
@@ -155,6 +103,43 @@
           href: document-fingerprinting.md
         - name: DLP functions for sensitive information
           href: what-the-dlp-functions-look-for.md
+    - name: Trainable classifiers
+        - name: Get started with trainable classifiers (preview)
+          href: classifier-getting-started-with.md
+        - name: Using a built-in classifier (preview)
+          href: classifier-using-a-ready-to-use-classifier.md
+        - name: Creating and training a classifier (preview)
+          href: classifier-creating-a-trainable-classifier.md
+    - name: Data classification
+      href: data-classification-overview.md
+      items: 
+        - name: Get started with content explorer
+          href: data-classification-content-explorer.md
+        - name: Get started with activity explorer
+          href: data-classification-activity-explorer.md
+        - name: Data classification release notes
+          href: data-classification-pub-preview-relnotes.md
+  items: 
+    - name: Sensitivity labels
+      items:
+        - name: Learn about sensitivity labels
+          href: sensitivity-labels.md
+        - name: Get started with sensitivity labels
+          href: get-started-with-sensitivity-labels.md
+        - name: Create and publish sensitivity labels
+          href: create-sensitivity-labels.md
+        - name: Restrict access to content by using sensitivity labels to apply encryption
+          href: encryption-sensitivity-labels.md
+        - name: Apply a sensitivity label to content automatically
+          href: apply-sensitivity-label-automatically.md
+        - name: View label usage with label analytics
+          href: label-analytics.md
+        - name: Use sensitivity labels with teams, groups, and sites
+          href: sensitivity-labels-teams-groups-sites.md
+        - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
+          href: sensitivity-labels-sharepoint-onedrive-files.md
+        - name: Use sensitivity labels in Office apps
+          href: sensitivity-labels-office-apps.md
     - name: Encryption in Microsoft 365
       href: encryption.md
     - name: Office 365 Service encryption
@@ -222,21 +207,37 @@
               href: set-up-azure-rms-for-previous-version-message-encryption.md
     - name: Set up IRM in SharePoint admin center
       href: set-up-irm-in-sp-admin-center.md
-    - name: Understand data classification
-      href: data-classification-overview.md
+    - name: Data loss prevention (DLP)
+      href: data-loss-prevention-policies.md
       items: 
-        - name: Get started with content explorer
-          href: data-classification-content-explorer.md
-        - name: Get started with activity explorer
-          href: data-classification-activity-explorer.md
-        - name: Data classification release notes
-          href: data-classification-pub-preview-relnotes.md
-        - name: Get started with trainable classifiers (preview)
-          href: classifier-getting-started-with.md
-        - name: Using a built-in classifier (preview)
-          href: classifier-using-a-ready-to-use-classifier.md
-        - name: Creating and training a classifier (preview)
-          href: classifier-creating-a-trainable-classifier.md
+        - name: DLP and Microsoft Teams
+          href: dlp-microsoft-teams.md
+        - name: Learn about Endpoint data loss prevention (preview)
+          href: endpoint-dlp-learn-about.md
+        - name: Get started with Endpoint data loss prevention (preview)
+          href: endpoint-dlp-getting-started.md
+        - name: Using Endpoint data loss prevention (preview)
+          href: endpoint-dlp-using.md
+        - name: Get started with DLP policy recommendations
+          href: get-started-with-dlp-policy-recommendations.md
+        - name: Get started with the default DLP policy
+          href: get-started-with-the-default-dlp-policy.md
+        - name: Create a DLP policy from a template
+          href: create-a-dlp-policy-from-a-template.md
+        - name: Create, test, and tune a DLP policy
+          href: create-test-tune-dlp-policy.md
+        - name: Use notifications and policy tips in DLP policies
+          href: use-notifications-and-policy-tips.md
+        - name: What the DLP policy templates include
+          href: what-the-dlp-policy-templates-include.md
+        - name: Create a DLP policy to protect documents with FCI or other properties
+          href: protect-documents-that-have-fci-or-other-properties.md
+        - name: View the DLP reports
+          href: view-the-dlp-reports.md
+        - name: Form a query to find sensitive data stored on sites
+          href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+        - name: How DLP works between the Security & Compliance Center and Exchange admin center
+          href: how-dlp-works-between-admin-centers.md
 - name: Manage information governance
   items: 
     - name: Manage information governance
