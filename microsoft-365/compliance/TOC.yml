@@ -146,6 +146,8 @@
       items: 
         - name: Understand encryption
           href: encryption.md
+        - name: Double Key Encryption
+          href: double-key-encryption.md
         - name: Email encryption
           href: email-encryption.md
           items: 
@@ -183,8 +185,6 @@
                   href: legacy-information-for-message-encryption.md
                 - name: Set up Azure Rights Management for the previous version of Office 365 Message Encryption
                   href: set-up-azure-rms-for-previous-version-message-encryption.md
-        - name: Double Key Encryption for Microsoft 365 public preview
-          href: double-key-encryption.md
         - name: Office 365 Service encryption
           href: office-365-service-encryption.md    
         - name: Customer Key
@@ -199,7 +199,7 @@
               href: customer-key-availability-key-roll.md
             - name: Learn about the availability key for Customer Key
               href: customer-key-availability-key-understand.md
-        - name: Set up IRM in SharePoint admin center
+        - name: SharePoint IRM
           href: set-up-irm-in-sp-admin-center.md
         - name: Technical reference
           href: technical-reference-details-about-encryption.md
