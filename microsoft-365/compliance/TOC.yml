@@ -113,8 +113,8 @@
         - name: Creating and training a classifier (preview)
           href: classifier-creating-a-trainable-classifier.md
     - name: Data classification
-      href: data-classification-overview.md
-      items: 
+        - name: Understand data classification
+          href: data-classification-overview.md
         - name: Get started with content explorer
           href: data-classification-content-explorer.md
         - name: Get started with activity explorer
