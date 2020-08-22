@@ -113,6 +113,7 @@
         - name: Creating and training a classifier (preview)
           href: classifier-creating-a-trainable-classifier.md
     - name: Data classification
+      items: 
         - name: Understand data classification
           href: data-classification-overview.md
         - name: Get started with content explorer
@@ -141,7 +142,6 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Use sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
-
     - name: Encryption
       items: 
         - name: Double Key Encryption for Microsoft 365 public preview
