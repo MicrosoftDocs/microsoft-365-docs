@@ -93,11 +93,11 @@
           href: customize-a-built-in-sensitive-information-type.md
         - name: Custom sensitive information types
           href: custom-sensitive-info-types.md
-        - name: Create custom sensitive information types with exact data match based classification
+        - name: Create custom sensitive information types with exact data match
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: Create a custom sensitive information type in the Security & Compliance Center
+        - name: Create a custom sensitive information type - Security & Compliance Center
           href: create-a-custom-sensitive-information-type.md
-        - name: Create a custom sensitive information type using PowerShell
+        - name: Create a custom sensitive information type - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
         - name: Create a keyword dictionary
           href: create-a-keyword-dictionary.md
@@ -147,7 +147,7 @@
       items: 
         - name: Understand encryption
           href: encryption.md
-        - name: Double Key Encryption
+        - name: Double Key Encryption (preview)
           href: double-key-encryption.md
         - name: Office 365 Service encryption
           href: office-365-service-encryption.md
@@ -211,8 +211,9 @@
         - name: TLS 1.2 in Office 365
           href: prepare-tls-1.2-in-office-365.md
     - name: Data loss prevention (DLP)
-      href: data-loss-prevention-policies.md
       items: 
+        - name: Learn about DLP
+          href: data-loss-prevention-policies.md
         - name: DLP and Microsoft Teams
           href: dlp-microsoft-teams.md
         - name: Learn about Endpoint data loss prevention (preview)
