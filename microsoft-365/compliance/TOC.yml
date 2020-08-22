@@ -243,7 +243,7 @@
           href: how-dlp-works-between-admin-centers.md
 - name: Manage information governance
   items: 
-    - name: Manage information governance
+    - name: Govern your data
       href: manage-information-governance.md
     - name: Import mailbox data
       items: 
