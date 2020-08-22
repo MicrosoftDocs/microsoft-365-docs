@@ -39,7 +39,7 @@ To keep what you need and delete what you don't:
 
 ## Records management
 
-To manage high-value content for legal, business, or regulatory obligations, use records management:
+To manage high-value content for legal, business, or regulatory obligations:
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|---------------------|:----------------------------|
