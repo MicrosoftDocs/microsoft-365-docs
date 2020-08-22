@@ -79,7 +79,7 @@
       href: customer-lockbox-requests.md
 - name: Manage information protection
   items:
-    - name: "Know your data | Protect your data | Prevent data loss"
+    - name: Know your data, protect your data, prevent data loss
       href: protect-information.md
     - name: Sensitive information types
       items: 
