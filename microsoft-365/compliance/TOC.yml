@@ -246,6 +246,38 @@
   items: 
     - name: Govern your data
       href: manage-information-governance.md
+    - name: Retain and delete data
+      items: 
+        - name: Learn about retention
+          items:
+            - name: Retention policies and labels
+              href: retention.md
+            - name: Retention for SharePoint and OneDrive
+              href: retention-policies-sharepoint.md
+            - name: Retention for Microsoft Teams
+              href: retention-policies-teams.md
+            - name: Retention for Exchange
+              href: retention-policies-exchange.md
+        - name: Get started with retention
+          href: get-started-with-retention.md
+        - name: Create retention policies
+          href: create-retention-policies.md
+        - name: Use file plan
+          href: file-plan-manager.md
+        - name: Create retention labels and apply them in apps
+          href: create-apply-retention-labels.md
+        - name: Apply a retention label to content automatically
+          href: apply-retention-labels-automatically.md
+        - name: Comply with SEC Rule 17a-4
+          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: Create retention labels with PowerShell
+          href: bulk-create-publish-labels-using-powershell.md
+        - name: Start retention when an event occurs
+          href: event-driven-retention.md
+        - name: Use retention labels to manage document lifecycles
+          href: auto-apply-retention-labels-scenario.md
+        - name: Manage disposition of data
+          href: disposition.md
     - name: Import mailbox data
       items: 
         - name: Overview of importing PST files
@@ -292,38 +324,6 @@
           href: enable-unlimited-archiving.md
         - name: Set up an archive and deletion policy for mailboxes
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: Retain and delete data
-      items: 
-        - name: Learn about retention
-          items:
-            - name: Retention policies and labels
-              href: retention.md
-            - name: Retention for SharePoint and OneDrive
-              href: retention-policies-sharepoint.md
-            - name: Retention for Microsoft Teams
-              href: retention-policies-teams.md
-            - name: Retention for Exchange
-              href: retention-policies-exchange.md
-        - name: Get started with retention
-          href: get-started-with-retention.md
-        - name: Create retention policies
-          href: create-retention-policies.md
-        - name: Use file plan
-          href: file-plan-manager.md
-        - name: Create retention labels and apply them in apps
-          href: create-apply-retention-labels.md
-        - name: Apply a retention label to content automatically
-          href: apply-retention-labels-automatically.md
-        - name: Comply with SEC Rule 17a-4
-          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Create retention labels with PowerShell
-          href: bulk-create-publish-labels-using-powershell.md
-        - name: Start retention when an event occurs
-          href: event-driven-retention.md
-        - name: Use retention labels to manage document lifecycles
-          href: auto-apply-retention-labels-scenario.md
-        - name: Manage disposition of data
-          href: disposition.md
     - name: Manage inactive mailboxes
       items: 
         - name: Overview of inactive mailboxes
@@ -338,9 +338,9 @@
           href: restore-an-inactive-mailbox.md
         - name: Delete an inactive mailbox
           href: delete-an-inactive-mailbox.md
-    - name: More information about data governance
+    - name: Videos
       items: 
-        - name: Watch videos from the Microsoft Data Governance team
+        - name: Videos from the Data Governance team
           href: https://go.microsoft.com/fwlink/?linkid=867039
     - name: Records management
       items: 
