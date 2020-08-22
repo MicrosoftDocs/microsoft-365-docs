@@ -105,6 +105,7 @@
         - name: DLP functions for sensitive information
           href: what-the-dlp-functions-look-for.md
     - name: Trainable classifiers
+      items: 
         - name: Get started with trainable classifiers (preview)
           href: classifier-getting-started-with.md
         - name: Using a built-in classifier (preview)
