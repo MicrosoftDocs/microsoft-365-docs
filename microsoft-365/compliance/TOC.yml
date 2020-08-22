@@ -78,8 +78,9 @@
     - name: Customer Lockbox
       href: customer-lockbox-requests.md
 - name: Manage information protection
-  href: protect-information.md
-  items: 
+  items:
+    - name: "Know your data | Protect your data | Prevent data loss"
+      href: protect-information.md
     - name: Sensitive information types
       items: 
         - name: Sensitive information type entity definitions 
