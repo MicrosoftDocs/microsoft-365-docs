@@ -54,7 +54,7 @@ For more information about the different permissions you can give to users in th
 7. Click **Save** to save the changes to the role group.
 
 > [!NOTE]
-> Admins can also navigate to the Complaince Admin Center(https://compliance.microsoft.com/homepage) and get to [Managing Permissins](https://protection.office.com/permissions) Section.
+> Admins can also navigate to the Compliance Admin Center(https://compliance.microsoft.com/homepage) and go to the [Managing Permissions section](https://protection.office.com/permissions).
 
 ### How do you know this worked?
 
