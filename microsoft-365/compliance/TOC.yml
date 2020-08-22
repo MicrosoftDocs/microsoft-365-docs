@@ -242,8 +242,6 @@
           href: form-a-query-to-find-sensitive-data-stored-on-sites.md
         - name: How DLP works between the Security & Compliance Center and Exchange admin center
           href: how-dlp-works-between-admin-centers.md
-    - name: Videos
-      items: 
         - name: Videos for Microsoft Information Protection
           href: https://www.youtube.com/results?search_query=microsoft+information+protection
 - name: Manage information governance
@@ -342,8 +340,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Delete an inactive mailbox
           href: delete-an-inactive-mailbox.md
-    - name: Videos
-      items: 
         - name: Videos from the Data Governance team
           href: https://go.microsoft.com/fwlink/?linkid=867039
     - name: Records management
