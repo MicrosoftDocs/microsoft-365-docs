@@ -79,6 +79,7 @@
       href: customer-lockbox-requests.md
 - name: Manage information protection
   href: protect-information.md
+  items: 
     - name: Sensitive information types
       items: 
         - name: Sensitive information type entity definitions 
@@ -119,7 +120,6 @@
           href: data-classification-activity-explorer.md
         - name: Data classification release notes
           href: data-classification-pub-preview-relnotes.md
-  items: 
     - name: Sensitivity labels
       items:
         - name: Learn about sensitivity labels
