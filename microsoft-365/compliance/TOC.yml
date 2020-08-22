@@ -144,36 +144,8 @@
           href: sensitivity-labels-office-apps.md
     - name: Encryption
       items: 
-        - name: Double Key Encryption for Microsoft 365 public preview
-          href: double-key-encryption.md
-        - name: Encryption in Microsoft 365
+        - name: Understand encryption
           href: encryption.md
-        - name: Office 365 Service encryption
-          href: office-365-service-encryption.md    
-        - name: Technical reference
-          href: technical-reference-details-about-encryption.md
-        - name: TLS 1.0 and 1.1 deprecation for Office 365
-          href: tls-1.0-and-1.1-deprecation-for-office-365.md
-        - name: TLS 1.0 and 1.1 deprecation in Office 365 GCC High and DoD
-          href: tls-1-2-in-office-365-gcc.md
-        - name: TLS 1.2 in Office 365
-          href: prepare-tls-1.2-in-office-365.md
-        - name: Double Key Encryption for Microsoft 365 public preview
-          href: double-key-encryption.md
-        - name: Customer Key
-          items: 
-            - name: Service encryption with Customer Key in Office 365
-              href: customer-key-overview.md
-            - name: Set up Customer Key for Office 365
-              href: customer-key-set-up.md
-            - name: Manage Customer Key for Office 365
-              href: customer-key-manage.md
-            - name: Roll or rotate a Customer Key or an availability key
-              href: customer-key-availability-key-roll.md
-            - name: Learn about the availability key for Customer Key
-              href: customer-key-availability-key-understand.md
-        - name: Encryption for data in transit
-          href: office-365-encryption-for-data-in-transit.md
         - name: Email encryption
           href: email-encryption.md
           items: 
@@ -211,8 +183,32 @@
                   href: legacy-information-for-message-encryption.md
                 - name: Set up Azure Rights Management for the previous version of Office 365 Message Encryption
                   href: set-up-azure-rms-for-previous-version-message-encryption.md
+        - name: Double Key Encryption for Microsoft 365 public preview
+          href: double-key-encryption.md
+        - name: Office 365 Service encryption
+          href: office-365-service-encryption.md    
+        - name: Customer Key
+          items: 
+            - name: Service encryption with Customer Key in Office 365
+              href: customer-key-overview.md
+            - name: Set up Customer Key for Office 365
+              href: customer-key-set-up.md
+            - name: Manage Customer Key for Office 365
+              href: customer-key-manage.md
+            - name: Roll or rotate a Customer Key or an availability key
+              href: customer-key-availability-key-roll.md
+            - name: Learn about the availability key for Customer Key
+              href: customer-key-availability-key-understand.md
         - name: Set up IRM in SharePoint admin center
           href: set-up-irm-in-sp-admin-center.md
+        - name: Technical reference
+          href: technical-reference-details-about-encryption.md
+        - name: TLS 1.0 and 1.1 deprecation for Office 365
+          href: tls-1.0-and-1.1-deprecation-for-office-365.md
+        - name: TLS 1.0 and 1.1 deprecation in Office 365 GCC High and DoD
+          href: tls-1-2-in-office-365-gcc.md
+        - name: TLS 1.2 in Office 365
+          href: prepare-tls-1.2-in-office-365.md
     - name: Data loss prevention (DLP)
       href: data-loss-prevention-policies.md
       items: 
