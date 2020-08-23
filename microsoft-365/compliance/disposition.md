@@ -30,12 +30,14 @@ To manage disposition reviews and confirm that records have been deleted, you mu
 
 ### Permissions for disposition
 
-To successfully access the **Disposition** tab in the Microsoft 365 compliance center, users must have the **Disposition Management** role.
+To successfully access the **Disposition** tab in the Microsoft 365 compliance center, users must have the **Disposition Management** admin role. This role is included in the default admin role groups, **Compliance Administrator** and **Compliance Data Administrator**.
+
+To grant users this required Disposition Management role, either add them to one of these default role groups, or create a custom role group (for example, named "Disposition Reviewers") and grant this group the Disposition Management role.  
 
 > [!NOTE]
-> Even a global admin needs to be granted the **Disposition Management** role. So if global admins need to access the disposition tab, them as members of the **Disposition Reviewers** role group. 
+> Even a global admin needs to be granted the **Disposition Management** role. 
 
-For instructions to grant users the **Disposition Management** role, see [Give users access to the Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+For instructions, see [Give users access to the Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### Enable auditing
 
