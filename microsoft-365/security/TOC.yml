@@ -384,6 +384,8 @@
                   href: ./office-365-security/support-for-validation-of-dkim-signed-messages.md
                 - name: Use DMARC to validate email
                   href: ./office-365-security/use-dmarc-to-validate-email.md
+            - name: Install Application Guard for Office
+              href: ./office-365-security/install-app-guard.md
             - name: Smart reports and insights in the Security & Compliance Center
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Security Dashboard overview
