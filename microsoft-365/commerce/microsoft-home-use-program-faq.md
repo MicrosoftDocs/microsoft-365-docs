@@ -27,7 +27,7 @@ All other customers access HUP by using this step:
 
 ## What is the Microsoft Home Use Program?
 
-The Microsoft Home Use Program (HUP) allows employees at eligible companies to buy Microsoft consumer products at a discount. You can check the current discounts for each product offering by visiting the [Home Use Program product page](www.microsoft.com/home-use-program).
+The Microsoft Home Use Program (HUP) allows employees at eligible companies to buy Microsoft consumer products at a discount. You can check the current discounts for each product offering by visiting the [Home Use Program product page](https://www.microsoft.com/home-use-program).
 
 ## In which countries is this benefit available?
 
@@ -124,6 +124,6 @@ If employees have questions, refer them to the following resources:
 
 [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/linkid=2139192) (link page)
 
-[Home Use Program employee store](http://www.microsoft.com/home-use-program) (link page)
+[Home Use Program employee store](https://www.microsoft.com/home-use-program) (link page)
 
 [Microsoft Licensing: Home Use Program overview](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (link page)
