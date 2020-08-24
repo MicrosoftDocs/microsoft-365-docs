@@ -43,7 +43,7 @@ information about system requirements and installation steps to enable Applicati
 
 * **Windows 10**: Windows 10 Enterprise edition, Client Build version 2004 (20H1) build 19041
 * **Office**: Office Beta Channel Build version 2008 16.0.13212 or later
-* **Update package**: Windows 10 cumulative monthly security updates [KB4566782](https://support.microsoft.com/en-us/help/4566782/windows-10-update-kb4566782) 
+* **Update package**: Windows 10 cumulative monthly security updates [KB4566782](https://support.microsoft.com/help/4566782/windows-10-update-kb4566782) 
 
 For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office Insider Preview builds, refer to [Getting started on deploying Office Insider builds](https://insider.office.com/business/deploy).
 
