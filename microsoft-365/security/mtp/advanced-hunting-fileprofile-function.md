@@ -82,3 +82,4 @@ DeviceFileEvents
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
+- [Get more query examples](advanced-hunting-shared-queries.md)

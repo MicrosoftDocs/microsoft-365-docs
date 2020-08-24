@@ -37,9 +37,9 @@ We provide data, insights, and recommendations in two areas:
 
     We provide these insights because when people collaborate online, they save time. When they have the freedom to work on any device, they are more productive and satisfied. When they can communicate in a flexible way, they are more efficient, form better relationships, and your organization is more unified. For evidence, see [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Technology experience:** Productivity depends on reliable and performant technology as well as the efficient use of Microsoft 365. We provide endpoint analytics, which gives you insights and recommendations about device setup and startup times, and we provide Microsoft 365 network connectivity insights for your organization.
+- **Technology experience:** Productivity depends on reliable and performant technology as well as the efficient use of Microsoft 365. We provide endpoint analytics, which helps you understand how users' productivity can be impacted by performance and health issues with your endpoint hardware and software. We provide insights on how to fix these issues. We also provide Microsoft 365 network connectivity insights for your organization.
 
-To learn more about end point analytics, read [the network connectivity overview](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
+To learn more about end point analytics, see [overview of Endpoint analytics](https://docs.microsoft.com/mem/analytics/overview).  To learn more about Microsoft 365 connectivity, read [the network connectivity overview](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
   
 
 ## How the score is calculated

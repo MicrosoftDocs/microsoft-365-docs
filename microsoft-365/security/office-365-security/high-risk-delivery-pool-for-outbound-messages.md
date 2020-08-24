@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -51,6 +51,6 @@ All of these issues can result in a sudden increase in the number of NDRs being 
 
 ## Relay pool
 
-Messages that are forwarded or relayed out of Microsoft 365 are sent using a special relay pool, since the final destination should not consider Microsoft 365 as the actual sender. It's also important for us to isolate this traffic, because there are legitimate and illegitmate scenarios for autoforwarding or relaying email out of Microsoft 365. Similar to the high-risk delivery pool, a separate IP address pool is used for relayed mail. This address pool is not published since it can change often. 
+Messages that are forwarded or relayed out of Microsoft 365 are sent using a special relay pool, since the final destination should not consider Microsoft 365 as the actual sender. It's also important for us to isolate this traffic, because there are legitimate and invalid scenarios for autoforwarding or relaying email out of Microsoft 365. Similar to the high-risk delivery pool, a separate IP address pool is used for relayed mail. This address pool is not published since it can change often.
 
 Microsoft 365 needs to verify that the original sender is legitimate so we can confidently deliver the forwarded message. In order to do that, email authentication (SPF, DKIM, and DMARC) needs to pass when the message comes to us. In cases where we can authenticate the sender, we use Sender Rewriting to help the receiver know that the forwarded message is from a trusted source. You can read more about how that works and what you can do to help make sure the sending domain passes authentication in [Sender Rewriting Scheme (SRS)](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme).
