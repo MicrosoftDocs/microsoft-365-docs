@@ -36,7 +36,7 @@ Ready to start managing your organization's high-value content for legal, busine
     - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
     - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
-## Subscription and licensing requirements for retention policies and retention labels
+## Subscription and licensing requirements for records management
 
 A number of different subscriptions support records management and the licensing requirements for users depend on the features you use.
 
@@ -44,9 +44,15 @@ To see the options for licensing your users to benefit from Microsoft 365 compli
 
 ## Permissions required for records management
 
-Members of your compliance team who are responsible for records management need permissions to the [Microsoft 365 compliance center](https://compliance.microsoft.com/). By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Records Management** admin role group. For instructions, see [Give users access to the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Members of your compliance team who are responsible for records management need permissions to the [Microsoft 365 compliance center](https://compliance.microsoft.com/). By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Records Management** admin role group, which grants the **RecordManagement** role.
 
-These permissions are required only to create, configure, and apply retention labels that declare records. The person configuring these labels doesn't require access to the content.
+The permissions included in this role group don't include the permissions needed for [disposition review and verification](disposition.md), and even a global admin doesn't have this permission by default. To manage disposition, use the **Disposition Management** role, by creating a custom role group or by using a default role group that includes this role (such as **Compliance Administrator**).
+
+For more information about these role groups and roles, see [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
+
+For instructions to add users to role groups and assign roles, see [Give users access to the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+
+These permissions are required only to create, configure, and apply retention labels that declare records, and manage disposition. The person configuring these labels doesn't require access to the content.
 
 ## Common scenarios for records management
 
