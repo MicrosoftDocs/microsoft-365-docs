@@ -11,8 +11,8 @@ audience: Admin                    # (Required) Always Admin for SMB admin artic
 ms.topic: reference                # (Required) Choose from: article, overview, reference 
 ms.service: o365-administration    # (Required) Always o365-administration for SMB admin articles 
 localization_priority: Normal      # (Required) Choose from: Normal, Priority, None
-ms.collection:                     # (Required) Always M365-subscription-management for SMB admin articles   
-- M365-subscription-management     # See metadata requirements link above for additional allowed values; not more than 2 allowed
+ms.collection:                     # (Required) Always include M365-subscription-management for SMB admin articles for reporting purposes
+- M365-subscription-management     # See metadata requirements link above for additional reporting values; OK to add custom team values for tracking
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio     # (Optional) To help with reporting, always include AdminSurgePortfolio for SMB admin articles
