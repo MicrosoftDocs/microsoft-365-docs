@@ -48,7 +48,7 @@ information about system requirements and installation steps to enable Applicati
 For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office Insider Preview builds, refer to [Getting started on deploying Office Insider builds](https://insider.office.com/business/deploy).
 
 ### Licensing requirements
-* Microsoft 365 E5 or Office 365 E5
+* Microsoft 365 E5 or Microsoft 365 E5 Security
 
 ## Deploy Application Guard for Office
 
