@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 description: "Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security."
 ---
 
-# Application Guard for Office 365 (public preview) for admins
+# Application Guard for Office (public preview) for admins
 
 
 **Applies to:** Word, Excel, and PowerPoint for Microsoft 365, Windows 10
@@ -27,16 +27,15 @@ Enterprise
 >Some information relates to a prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
-Microsoft Defender Application Guard for Office 365 (Application Guard) helps prevent untrusted files from accessing trusted resources, keeping your enterprise safe from new and emerging attacks. This article walks admins through setting up devices for a preview of Application Guard. It provides
-information about system requirements, detailed installation steps, and usage
-instructions for Application Guard.
+Microsoft Defender Application Guard for Office (Application Guard) helps prevent untrusted files from accessing trusted resources, keeping your enterprise safe from new and emerging attacks. This article walks admins through setting up devices for a preview of Application Guard. It provides
+information about system requirements and installation steps to enable Application Guard on a device.
 
 ## Prerequisites
 
 ### Minimum hardware requirements
 
 * **CPU**: 64-bit, 4 cores (physical or virtual), virtualization extensions
-    (Intel VT-x OR AMD-V)
+    (Intel VT-x OR AMD-V), Core i5 equivalent or higher recommended
 * **Physical Memory**: 8-GB RAM
 * **Hard Disk**: 10 GB of free space on the system drive (SSD recommended)
 
@@ -48,6 +47,8 @@ instructions for Application Guard.
 
 For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office Insider Preview builds, refer to [Getting started on deploying Office Insider builds](https://insider.office.com/business/deploy).
 
+### Licensing requirements
+* Microsoft 365 E5 or Office 365 for E5
 
 ## Deploy Application Guard for Office 365
 
@@ -56,7 +57,10 @@ For detailed system requirements, refer to [System requirements for Microsoft De
 1.  Download and install **Windows 10 cumulative monthly security updates KB4566782**. 
 
 2. Download and install [**Application Guard for Office Feature enablement package**](http://download.microsoft.com/download/e/4/c/e4c1180a-fcff-462a-8324-4151c44973a8/Windows%20Preview%20-%20WDAG%20Office%20070920%2001.msi). This package installs a group policy called "KB4559004 Issue 001 Preview" under **Computer Configuration\Administrative Templates**. Set this group policy  to **Enabled**.
-     ![Windows Features dialog box showing AG](../../media/ag01-deploy.png)
+     ![Local Group Policy Editor](../../media/ag01-deploy.png)
+
+     ![KB4559004 Issue 001 Preview](../../media/ag02-deploy.png)
+
     You can also directly set the following reg keys: 
     
     ```
@@ -86,7 +90,7 @@ For detailed system requirements, refer to [System requirements for Microsoft De
 4.  Look for the Microsoft Defender Application Guard in Managed Mode group
     policy located at **Computer Configuration\\Administrative
     Templates\\Windows Components\\Microsoft Defender Application Guard**. Turn on this policy by setting the value under Options as **2** or **3** then
-    clicking **OK** or **Apply**.
+    selecting **OK** or **Apply**.
 
     ![Turn on AG in Managed Mode](../../media/ag04-deploy.png)
   
