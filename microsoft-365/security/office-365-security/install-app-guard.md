@@ -89,7 +89,7 @@ For detailed system requirements, refer to [System requirements for Microsoft De
 
 4.  Look for the Microsoft Defender Application Guard in Managed Mode group
     policy located at **Computer Configuration\\Administrative
-    Templates\\Windows Components\\Microsoft Defender Application Guard**. Turn on this policy by setting the value under Options as **2** or **3** then
+    Templates\\Windows Components\\Microsoft Defender Application Guard**. Turn this policy on by setting the value under Options as **2** or **3** then
     selecting **OK** or **Apply**.
 
     ![Turn on AG in Managed Mode](../../media/ag04-deploy.png)
@@ -165,7 +165,7 @@ Office supports the following policies to enable you to configure the capabiliti
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Disable Application Guard for Office                                            | Enabling this policy will force Word, Excel, and PowerPoint to use the Protected View isolation container instead of Application Guard. This policy can be used to temporarily disable Application Guard when there are issues in leaving Application Guard enabled for Edge.                                  |
 | Disable copy/paste for documents opened in Application Guard                    | Enabling this policy will prevent a user from copying and pasting content from a document opened in Application Guard to a document opened outside Application Guard.                                                                                                                                   |
-| Prevent users from removing Application Guard protection on files               | Enabling this policy will remove the option (within the Office application experience) to disable Application Guard protection or open a file outside Application Guard. <br><br>**Note:** Users can still bypass this policy by manually removing the Mark of the Web property from the file or by moving a document to a Trusted location. |
+| Prevent users from removing Application Guard protection on files               | Enabling this policy will remove the option (within the Office application experience) to disable Application Guard protection or open a file outside Application Guard. <br><br>**Note:** Users can still bypass this policy by manually removing the mark-of-the-web property from the file or by moving a document to a Trusted location. |
 | Restrict printing from documents opened in Application Guard                    | Enabling this policy will limit printers a user can print to from a file opened in Application Guard. For example, you can use this policy to restrict users to only print to PDF.                              |
 | Turn off camera and microphone access for documents opened in Application Guard | Enabling this policy will remove Office access to Camera and Microphone inside Application Guard.                                                                                                                                                                                                     |
 >[!NOTE] 
@@ -207,7 +207,7 @@ encouraged to submit your feedback via Feedback Hub:
     1. Expand the **Recreate my problem** tile.
 
     2.  If the issue you’re experiencing occurs while Application Guard is
-        running, open an Application Guard instance. Doing this will allow additional
+        running, open an Application Guard instance. Doing this allows additional
         traces to be collected from within the Application Guard container.
 
     3.  Select **Start recording** and wait for the tile to stop spinning and say
