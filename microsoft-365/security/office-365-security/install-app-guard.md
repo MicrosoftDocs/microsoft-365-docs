@@ -117,9 +117,9 @@ device:
 
     ![Windows Settings menu](../../media/ag06-diagnostic.png)
 
-3.  Under Privacy, select **Diagnostics & feedback** and select **Full**.
+3.  Under Privacy, select **Diagnostics & feedback** and select **Optional diagnostic data**.
 
-    ![Diagnostics and feedback menu](../../media/ag07a-diagnostic.jpg)
+    ![Diagnostics and feedback menu](../../media/ag07a-diagnostic.png)
 
 For more on configuring Windows diagnostic settings, refer to [Configuring
 Windows diagnostic data in your
@@ -267,10 +267,11 @@ You can also configure Office 365 ATP to work with Microsoft Defender ATP. Refer
 
 * Untrusted files opened from network shares or files shared from OneDrive,
     OneDrive for Business, or SharePoint Online from a different organization
-    open as read-only in Application Guard.
+    open as read-only in Application Guard. Users can save a local copy of such files to continue working in the container or remove protection to directly work with the original file.
 
 * Files that are protected by Information Rights Management (IRM) continue to
     open in Protected View.
+* Any customizations to Office applications in Application Guard will not persist after a user logs off and logs back in or reboots the device. 
 
 * Only Accessibility tools that use the UIA framework can provide an accessible experience for files opened in Application Guard.
 
