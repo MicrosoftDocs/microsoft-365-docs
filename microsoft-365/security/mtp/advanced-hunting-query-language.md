@@ -112,7 +112,7 @@ Click **Run query** to see the results. Select the expand icon at the top right 
 >[!TIP]
 >You can view query results as charts and quickly adjust filters. For guidance, [read about working with query results](advanced-hunting-query-results.md)
 
-## Learn common query operators for advanced hunting
+## Learn common query operators
 
 Now that you've run your first query and have a general idea of its components, it's time to backtrack a little bit and learn some basics. The Kusto query language used by advanced hunting supports a range of operators, including the following common ones.
 
@@ -131,7 +131,7 @@ Now that you've run your first query and have a general idea of its components, 
 
 To see a live example of these operators, run them from the **Get started** section in advanced hunting.
 
-## Understand data types and their query syntax implications
+## Understand data types
 
 Data in advanced hunting tables are generally classified into the following data types.
 
@@ -142,6 +142,8 @@ Data in advanced hunting tables are generally classified into the following data
 | `bool` | True or false |
 | `int` | 32-bit numeric value  |
 | `long` | 64-bit numeric value |
+
+To learn more about these data types and their implications, [read about Kusto scalar data types](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## Get help as you write queries
 Take advantage of the following functionality to write queries faster:

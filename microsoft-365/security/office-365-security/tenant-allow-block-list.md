@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -34,7 +34,7 @@ This topic describes how to configure entries in the Tenant Allow/Block List in 
 
 - The available URL values are described in the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this topic.
 
-- The Tenant Allow/Block List allows a maximum of 500 entries for URLss.
+- The Tenant Allow/Block List allows a maximum of 500 entries for URLs.
 
 - An entry should be active within 15 minutes.
 
