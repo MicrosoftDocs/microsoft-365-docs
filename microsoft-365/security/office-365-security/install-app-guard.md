@@ -119,7 +119,7 @@ device:
 
 3.  Under Privacy, select **Diagnostics & feedback** and select **Full**.
 
-    ![Diagnostics and feedback menu](../../media/ag07-diagnostic.jpg)
+    ![Diagnostics and feedback menu](../../media/ag07a-diagnostic.jpg)
 
 For more on configuring Windows diagnostic settings, refer to [Configuring
 Windows diagnostic data in your
