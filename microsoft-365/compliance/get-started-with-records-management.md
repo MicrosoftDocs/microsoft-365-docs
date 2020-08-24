@@ -36,7 +36,7 @@ Ready to start managing your organization's high-value content for legal, busine
     - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
     - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
-## Subscription and licensing requirements for retention policies and retention labels
+## Subscription and licensing requirements for records management
 
 A number of different subscriptions support records management and the licensing requirements for users depend on the features you use.
 
