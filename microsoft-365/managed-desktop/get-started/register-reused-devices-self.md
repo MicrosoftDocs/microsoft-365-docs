@@ -134,7 +134,7 @@ From the Microsoft Managed Desktop [Admin Portal](https://aka.ms/mmdportal), sel
 Follow these steps:
 
 1. In **File upload**, provide a path to the CSV file you created previously.
-3. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **AutopilotRegistrationRequested**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for an end-user to start using.
+3. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **AutopilotRegistrationRequested**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
 
 
 You can monitor the progress of device registration on the main **Microsoft Managed Desktop - Devices** page. Possible states reported there include:
