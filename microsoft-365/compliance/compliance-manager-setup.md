@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Manager setup"
+title: "Get started with Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,6 +16,6 @@ search.appverid:
 description: "Design customization Microsoft Compliance Score by creating assessments to help you manage compliance for your organization."
 ---
 
-# Customize Compliance Score (preview) with assessments
+# Get started with Compliance Manager
 
-**In this article:** Learn how
+**In this article:** Learn how to...
