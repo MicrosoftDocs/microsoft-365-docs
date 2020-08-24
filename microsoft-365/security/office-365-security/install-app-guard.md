@@ -254,7 +254,7 @@ You can also configure Office 365 ATP to work with Microsoft Defender ATP. Refer
 
 ## Limitations and considerations
 
-* Application Guard is a restricted mode that isolates untrusted documents from accessing trusted corporate resources, intranet, the user's identity, and arbitrary files present on the computer. As a result, if a user tries to access a feature that has a dependency on such access, for example, inserting a picture from a local file on disk, it will fail and produce a prompt like the one below. To enable an untrusted document to access trusted resources, users must remove Application Guard protection from the document.
+* Application Guard for Office is a restricted mode that isolates untrusted documents from accessing trusted corporate resources, intranet, the user's identity, and arbitrary files present on the computer. As a result, if a user tries to access a feature that has a dependency on such access, for example, inserting a picture from a local file on disk, it will fail and produce a prompt like the one below. To enable an untrusted document to access trusted resources, users must remove Application Guard protection from the document.
 
     ![Dialog box saying To help you keep safe, this feature is not available](../../media/ag10-limitations.png)
 
@@ -262,7 +262,7 @@ You can also configure Office 365 ATP to work with Microsoft Defender ATP. Refer
     >Advise users to only remove protection if they trust the file and its source or where it came from.
 
 * Active content in documents like macros and ActiveX controls are disabled in
-    Application Guard. Users need to remove Application Guard protection to
+    Application Guard for Office. Users need to remove Application Guard protection to
     enable active content.
 
 * Untrusted files opened from network shares or files shared from OneDrive,
@@ -271,9 +271,9 @@ You can also configure Office 365 ATP to work with Microsoft Defender ATP. Refer
 
 * Files that are protected by Information Rights Management (IRM) continue to
     open in Protected View.
-* Any customizations to Office applications in Application Guard will not persist after a user logs off and logs back in or reboots the device. 
+* Any customizations to Office applications in Application Guard for Office will not persist after a user logs off and logs back in or reboots the device. 
 
-* Only Accessibility tools that use the UIA framework can provide an accessible experience for files opened in Application Guard.
+* Only Accessibility tools that use the UIA framework can provide an accessible experience for files opened in Application Guard for Office.
 
 * Network connectivity is required for the first launch of Application Guard
     after installation. This is required for Application Guard to validate the
@@ -282,7 +282,7 @@ You can also configure Office 365 ATP to work with Microsoft Defender ATP. Refer
 
 ## Performance optimizations for Application Guard 
 
-This section provides an overview of the performance optimizations used in Application Guard. This information can help administrators diagnose reports from users related to the performance of Office or the overall system when Application Guard is enabled. 
+This section provides an overview of the performance optimizations used in Application Guard for Office. This information can help administrators diagnose reports from users related to the performance of Office or the overall system when Application Guard is enabled. 
 
 Application Guard uses a virtualized container to isolate untrusted documents away from the system. The process of creating a container and setting up the Application Guard container to open Office documents has a performance overhead that might negatively impact user experience when users open an  untrusted document. 
 
