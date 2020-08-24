@@ -131,12 +131,11 @@ Before confirming that the Application Guard for Office is enabled, launch Word,
 Excel, or PowerPoint on a device where the policies have been deployed. Make
 sure Office is activated. You may need to use your work identity to activate the Office product first.
 
-To confirm that Application Guard for Office is now enabled, launch any Office
-application and open an untrusted document. For example, you can open a document
+To confirm that Application Guard for Office is now enabled, launch Word, Excel, or PowerPoint and open an untrusted document. For example, you can open a document
 downloaded from the internet or an email attachment from someone outside your
 organization.
 
-On the first launch of an untrusted file, you may see an Office Splash screen
+On the first launch of an untrusted file, you may see an Office splash screen
 like the one below. It might show for some time while Application Guard is being
 activated and the file is being opened. Subsequent launches of untrusted files
 should be faster.
@@ -155,18 +154,40 @@ Upon being opened, the file should display a few visual indicators that the file
 
 
 
+## Configure Application Guard
+Office supports the following policies to enable you to configure the capabilities of Application Guard. These policies can be configured through Group policies or through the Office cloud policy service. 
+
+>[!NOTE] 
+> These policies will become available soon.
+>Also, configuring these policies can disable some functionalities for files opened in Application Guard.
+
+| Policy                                                                          | Description                                                                                                                                                                                                                                                                                             |
+|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Disable Application Guard for Office                                            | Enabling this policy will force Word, Excel, and PowerPoint to use the Protected View isolation container instead of Application Guard. This policy can be used to temporarily disable Application Guard when there are issues in leaving Application Guard enabled for Edge.                                  |
+| Disable copy/paste for documents opened in Application Guard                    | Enabling this policy will prevent a user from copying and pasting content from a document opened in Application Guard to a document opened outside Application Guard.                                                                                                                                   |
+| Prevent users from removing Application Guard protection on files               | Enabling this policy will remove the option (within the Office application experience) to disable Application Guard protection or open a file outside Application Guard. <br><br>**Note:** Users can still bypass this policy by manually removing the Mark of the Web property from the file or by moving a document to a Trusted location. |
+| Restrict printing from documents opened in Application Guard                    | Enabling this policy will limit printers a user can print to from a file opened in Application Guard. For example, you can use this policy to restrict users to only print to PDF.                              |
+| Turn off camera and microphone access for documents opened in Application Guard | Enabling this policy will remove Office access to Camera and Microphone inside Application Guard.                                                                                                                                                                                                     |
+>[!NOTE] 
+>The following policies will require the user to log off and re-login to Windows to take effect:
+> 
+> *  Disable copy/paste for documents opened in Application Guard
+>*  Restrict printing for documents opened in Application Guard
+> *  Turn off camera and mic access to documents opened in Application Guard
+
+
 ## Submit feedback
 
 ### Submit feedback via Feedback Hub
 
-If you encounter any issues when launching Application Guard for Office, you are
+If you encounter any issues when launching Application Guard, you are
 encouraged to submit your feedback via Feedback Hub:
 
 1.  Open the **Feedback Hub app** and sign in.
 
-2.  If you get an error dialog while launching Application Guard for Office, select **Report to Microsoft** in the error dialog to start a new feedback
+2.  If you get an error dialog while launching Application Guard, select **Report to Microsoft** in the error dialog to start a new feedback
     submission. Otherwise, navigate to <https://aka.ms/wdagoffice-fb> to select
-    the correct category for Application Guard for Office, then select **+ Add
+    the correct category for Application Guard, then select **+ Add
     new feedback** near the top right.
 
 3.  Fill in the **Summarize your feedback** box if it isn’t already filled in
@@ -175,7 +196,7 @@ encouraged to submit your feedback via Feedback Hub:
 4.  Fill in the **Explain in more detail** box with a detailed description of
     the issue you experienced and what steps you took, then select **Next**.
 
-5.  Select the bubble next to Problem, make sure the category selected is
+5.  Select the bubble next to Problem. Make sure the category selected is
     **Security and Privacy \> Microsoft Defender Application Guard – Office**,
     then select **Next**.
 
@@ -231,13 +252,15 @@ service](https://docs.microsoft.com/windows/security/threat-protection/microsoft
 
 You can also configure Office 365 ATP to work with Microsoft Defender ATP. Refer to [Integrate Office 365 ATP with Microsoft Defender ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide).
 
-## Limitations
+## Limitations and considerations
 
-* Application Guard isolates untrusted documents from accessing trusted corporate resources, intranet, and other trusted files present on the    computer. As a result, if an untrusted document tries to connect to a trusted resource, intranet, or a linked file on a computer, it will fail and produce an error like the prompt below. To enable an untrusted document to access trusted resources, remove Application Guard protection from the document.
+* Application Guard is a restricted mode that isolates untrusted documents from accessing trusted corporate resources, intranet, the user's identity, and arbitrary files present on the computer. As a result, if a user tries to access a feature that has a dependency on such access, for example, inserting a picture from a local file on disk, it will fail and produce a prompt like the one below. To enable an untrusted document to access trusted resources, users must remove Application Guard protection from the document.
 
     ![Dialog box saying To help you keep safe, this feature is not available](../../media/ag10-limitations.png)
 
-    
+    >[!NOTE]    
+    >Advise users to only remove protection if they trust the file and its source or where it came from.
+
 * Active content in documents like macros and ActiveX controls are disabled in
     Application Guard. Users need to remove Application Guard protection to
     enable active content.
