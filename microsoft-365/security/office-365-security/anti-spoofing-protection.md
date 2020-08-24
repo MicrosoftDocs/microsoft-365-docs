@@ -158,8 +158,6 @@ You may also contact your admin who can raise it as a support ticket with Micros
 
 If you're an admin who currently sends messages to Microsoft 365, you need to ensure that your email is properly authenticated. Otherwise, it might be marked as spam or phish. For more information, see [Solutions for legitimate senders who are sending unauthenticated email](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
 
-If users or admins use Outlook Safe Senders, it will bypass parts of the filtering stack, including spoof protection. 
-For more information, see [Outlook Safe Senders](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
+Senders in an individual user's (or admin's) Safe Senders list will bypass parts of the filtering stack, including spoof protection. For more information, see [Outlook Safe Senders](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
 
-If you're an admin, you may choose to use allowed sender lists or allowed domain lists, however, you should avoid this option if at all possible because senders bypass all spam, spoof, and phish protection, and sender authentication (SPF, DKIM, DMARC).
-For more information, see [Use allowed sender lists or allowed domain lists](create-safe-sender-lists-in-office-365.md#use-allowed-sender-lists-or-allowed-domain-lists).
+Admins should avoid (when possible) using allowed sender lists or allowed domain lists. These senders bypass all spam, spoofing, and phishing protection, and also sender authentication (SPF, DKIM, DMARC). For more information, see [Use allowed sender lists or allowed domain lists](create-safe-sender-lists-in-office-365.md#use-allowed-sender-lists-or-allowed-domain-lists).
