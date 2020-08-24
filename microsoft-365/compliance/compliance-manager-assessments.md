@@ -47,22 +47,18 @@ There are three ways you can set up assessments:
 2. Extend a pre-built assessment to suit your own needs.
 3. Create your own custom assessment.
 
-**Required roles**
+> [!NOTE]
+> Only users who hold a Global Administrator or  Compliance Manager Administration role can create and modify assessments. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
-Only users who hold a Global Administrator or  Compliance Manager Administration role can create and modify assessments.
- Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+**Use a pre-built assessment**
 
-### Use a pre-built assessment
+Kickstart your compliance journey by choosing an assessment already set up by Compliance Manager. We provide a wide selection of [templates](compliance-score-templates.md) for regulations and certifications that align to industries, regions, and common data protection standards, such as GDPR and ISO 27001. Templates contain the controls and improvement actions for helping you meet the requirements of a particular certification. You’ll be asked to choose a template when you start [building an assessment](#use-a-pre-built-assessment).
 
-Kickstart your compliance journey by choosing an assessment already set up by Compliance Manager. We provide a wide selection of [templates](compliance-score-templates.md) for regulations and certifications that align to industries, regions, and common data protection standards, such as GDPR and ISO 27001. Templates contain the controls and improvement actions for helping you meet the requirements of a particular certification.
-
-You’ll be asked to choose a template when you start [building an assessment](#use-a-pre-built-assessment).
-
-### Extend a pre-built assessment to suit your needs
+**Extend a pre-built assessment to suit your needs**
 
 You may modify a Compliance Manager assessment—a process we refer to as "extending"—by adding your own controls and actions to better suit your organization’s needs. For example, if you generally need to comply with HIPAA but require additional data protection or security controls, you can extend our HIPAA template by adding your own controls to it. See the instructions for [extending a pre-built assessment](#extend-a-pre-built-assessment).
 
-### Create your own custom assessment
+**Create your own custom assessment**
 
 You can create your own assessment entirely from scratch to track precisely what your organization needs. Creating your own assessment requires you to first create your own template for the assessment in Compliance Manager. See the instructions for [creating your own custom assessment](#create-your-own-custom-assessment).
 
@@ -141,7 +137,7 @@ You can modify a pre-built assessment by adding your own controls and improvemen
 
 ### Prepare to extend a template by formatting your Excel spreadsheet
 
-To prepare for this process, you’ll first need to assemble a specially formatted Excel spreadsheet to import the necessary template data. View [instructions for formatting your template data with Excel](compliance-manager-templates.md#formatting-your-template-data-with-excel). 
+To prepare for this process, you’ll first need to assemble a specially formatted Excel spreadsheet to import the necessary template data. View [instructions for formatting your template data with Excel](compliance-manager-templates.md#formatting-your-template-data-with-excel).
 
 **Note:** There are special requirements for Excel files used in the extension process. See these additional points to help prevent errors in the import process:
 
@@ -183,7 +179,7 @@ Creating a custom assessment in Compliance Manager requires you to create your o
 
 1. **Format your Excel file.** Begin by formatting your template data into an Excel spreadsheet using [these instructions](compliance-manager-templates.md#formatting-your-template-data-with-excel).
 
-2. **Create your template** by following [these instructions](compliance-manager-templates#create-a-new-template).
+2. **Create your template** by following [these instructions](compliance-manager-templates.md#create-a-new-template).
 
 3. **Create your assessment** from the template. You can begin by opening the template’s details page and selecting **Create assessment**, or go to your **assessments** page and select **Create assessment**.
 
@@ -191,15 +187,21 @@ Creating a custom assessment in Compliance Manager requires you to create your o
 
 ## Delete an assessment
 
-Deleting an assessment removes it from the list on your assessments page. **Deleting an assessment is permanent; you cannot get it back.** If you want the same assessment again, it must be re-created from scratch. If the improvement actions in the assessment do not appear in any other assessment, they will be deleted when the assessment is deleted. We recommend exporting a report of the assessment before you permanently delete it.
+Deleting an assessment removes it from the list on your assessments page. Note these important points about deleting assessments: 
+
+- **Deleting an assessment is permanent; you cannot get it back.** If you want the same assessment again, it must be re-created from scratch.
+- If the improvement actions in the assessment do not appear in any other assessment, they will be deleted when the assessment is deleted.
+- We recommend exporting a report of the assessment before you permanently delete it.
 
 To delete an assessment, follow the steps below:
 
-1. From your assessments page, select the assessment you wish to delete to open that assessment’s details page.
-2. Select **Delete assessment** in the upper-right corner of your screen.
-3. A window will appear asking you to confirm that you want to permanently delete the assessment. Select **Delete assessment** to close the window. You’ll get a confirmation window that your assessment was deleted from Compliance Score.
+1. From your **assessments** page, select the assessment you wish to delete to open that assessment’s details page.
 
-If you delete the only assessment in a group, then that group is also deleted from Compliance Score.
+2. Select **Delete assessment** in the upper-right corner of your screen.
+
+3. A window will appear asking you to confirm that you want to permanently delete the assessment. Select **Delete assessment** to close the window. You’ll get a confirmation window that your assessment was deleted from Compliance Manager.
+
+If you delete the only assessment in a group, then that group is also deleted from Compliance Manager.
 
 ## Monitor assessment progress and controls
 
@@ -243,15 +245,58 @@ Select an improvement action to view its details page, and select the **Launch n
 
 ### Microsoft actions tab
 
-The Microsoft actions tab lists all the actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
+The Microsoft actions tab lists all the improvement actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
 
 #### Learn more
-[Understand how controls and improvement actions are tracked and scored by Compliance Score.](compliance-score-methodology.md)
+[Understand how controls and improvement actions are tracked and scored by Compliance Manager.](compliance-score-calculation.md)
 
 ## Accepting updates to assessments
 
+When an update is available for an assessment, you’ll see a notification and have the option to accept the update or defer to update at a later time.
+
+### What causes an update
+
+An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve new guidance for improvement actions based on regulatory changes, or could be due to product changes. Assessment updates can originate from your organization (which happens when a [template is modified](compliance-manager-templates.md#modify-a-template)) as well as from Microsoft.
+
+Updates usually involve a change to one or more improvement action, and when that happens, you’ll also receive a notification at the improvement action level.
+
+XQY placeholder....Explain MS-initiated updates and how that affects modified or extended templates…..how assessments inherit updates and keep one’s custom controls….
+
+> [!NOTE]
+> Updates to assessments apply only at the group level. If you have two assessments built from the same template that exist in two different groups, each assessment will have a pending update notification, and you’ll need to accept the update to each assessment in its respective group individually.
+
+### Where you’ll see assessment update notifications
+
+A message near the top of the assessment details page shows that an update is available for that assessment. Select the **Review update** button to review the specific changes and accept or defer the update.
+
+The assessment details page also shows a **Pending update** link next to the assessment with an update.
+
+### Review update to accept or defer
+
+After selecting **Review update** from the assessment details page, a flyout pane appears on the right side of your screen. The flyout pane provides the key details below about the pending update:
+
+- The template title
+- Source of the update (Microsoft, your organization, or a specific user)
+- The date the update was created
+- An overview explaining the update
+- Specific details about the changes, including the impact to your compliance score, the amount of progress toward completion of the assessment, and the specific number of changes to improvement actions and controls.
+
+Selecting the **Updated template** link will download an Excel file containing control data for the version of the template with the pending updates. Selecting the **Current template** link downloads a file of the existing template without the changes.
+
+To accept the update and make the changes to your assessment, select **Accept update**.
+
+If you select **Cancel**, the update won't be applied to the assessment. However, you’ll continue to see the **Pending update** notification until you accept the update.
+
+**Why we recommend accepting updates**
+
+Accepting updates helps ensure you have the most updated guidance on using solutions and taking appropriate improvement actions to help you meet the requirements of the certification at hand.
+
+**Why you might want to defer an update**
+
+If you’re in the middle of completing an assessment, you may want to ensure you’ve finished work on it before you accept an update to the assessment that could disrupt control mapping. You can defer the update for a later time by selecting **Cancel** on the review update flyout pane.
+
 ## Export an assessment report
 
-You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators. On your assessment details page, select the **Generate report** button near the top of the page, which creates an Excel file you can save to your machine.
+You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators. On your assessment details page, select the **Generate report** button near the top of the page, which creates an Excel file you can save and share.
 
 The Excel file report is a snapshot of the assessment as of the date and time of the export. It contains the details for controls managed by both you and Microsoft, including implementation status, test date, test results, and links to uploaded evidence documents.
