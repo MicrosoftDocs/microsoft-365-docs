@@ -219,6 +219,36 @@
                   href: mtp/monitor-devices.md
                 - name: App monitoring and reporting
                   href: mtp/monitor-apps.md
+            - name: APIs
+              items: 
+                - name: Overview of Microsoft Threat Protection APIs
+                  href: mtp/api-overview.md
+                - name: Get started
+                  Items:
+                    - name: Microsoft Threat Protection API license and terms of use
+                      href: mtp/api-terms-of-use.md
+                    - name: Access the Microsoft Threat Protection APIs
+                      href: mtp/api-access.md
+                    - name: Hello World example
+                      href: mtp/api-hello-world.md
+                    - name: Get access with application context
+                      href: mtp/exposed-apis-create-app-webapp.md
+                    - name: Get access with user context
+                      href: mtp/exposed-apis-create-app-nativeapp.md
+                    - name: Get partner application access
+                      href: mtp/exposed-apis-create-app-partners.md
+                - name: Microsoft Threat Protection APIs schema
+                  Items:
+                    - name: Supported Microsoft Threat Protection APIs 
+                      href: mtp/api-supported.md
+                    - name: Common REST API error codes
+                      href: mtp/api-error-codes.md
+                    - name: Advanced hunting APIs
+                      href: mtp/api-advanced-hunting.md
+                    - name: List incidents
+                      href: mtp/api-list-incidents.md
+                    - name: Update incidents
+                      href: mtp/api-update-incidents.md               
             - name: Permissions & settings
               items: 
                 - name: Manage access
