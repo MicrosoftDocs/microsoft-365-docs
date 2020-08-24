@@ -62,7 +62,7 @@ Use the following table to help you map your business requirements to retention 
 |Automatically apply a set of retain and delete actions to documents and emails |[Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |Start the retention period when an event occurs, such as:  <br />- Employees leave the organization <br />- Contracts expire <br />- End of product lifetime| [Start retention when an event occurs](event-driven-retention.md)|
 |Manage the lifecycle of different document types in SharePoint| [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)|
-|Configure retention policies or retention labels for regulatory requirements|[Configure retention for regulatory requirements](retention-regulatory-requirements.md.md)|
+|Configure retention policies or retention labels for regulatory requirements|[Configure retention for regulatory requirements](retention-regulatory-requirements.md)|
 |Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
 | Monitor how and where retention labels are applied | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
 |Use a single records management solution for documents and emails |[Learn about records management](records-management.md) |
