@@ -27,8 +27,8 @@ Enterprise
 >Some information relates to a prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
-Microsoft Defender Application Guard for Office (Application Guard) helps prevent untrusted files from accessing trusted resources, keeping your enterprise safe from new and emerging attacks. This article walks admins through setting up devices for a preview of Application Guard. It provides
-information about system requirements and installation steps to enable Application Guard on a device.
+Microsoft Defender Application Guard for Office (Application Guard for Office) helps prevent untrusted files from accessing trusted resources, keeping your enterprise safe from new and emerging attacks. This article walks admins through setting up devices for a preview of Application Guard for Office. It provides
+information about system requirements and installation steps to enable Application Guard for Office on a device.
 
 ## Prerequisites
 
@@ -36,8 +36,8 @@ information about system requirements and installation steps to enable Applicati
 
 * **CPU**: 64-bit, 4 cores (physical or virtual), virtualization extensions
     (Intel VT-x OR AMD-V), Core i5 equivalent or higher recommended
-* **Physical Memory**: 8-GB RAM
-* **Hard Disk**: 10 GB of free space on the system drive (SSD recommended)
+* **Physical memory**: 8-GB RAM
+* **Hard disk**: 10 GB of free space on the system drive (SSD recommended)
 
 ### Minimum software requirements
 
@@ -48,11 +48,11 @@ information about system requirements and installation steps to enable Applicati
 For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office Insider Preview builds, refer to [Getting started on deploying Office Insider builds](https://insider.office.com/business/deploy).
 
 ### Licensing requirements
-* Microsoft 365 E5 or Office 365 for E5
+* Microsoft 365 E5 or Office 365 E5
 
-## Deploy Application Guard for Office 365
+## Deploy Application Guard for Office
 
-### Enable Application Guard for Office 365
+### Enable Application Guard for Office
 
 1.  Download and install **Windows 10 cumulative monthly security updates KB4566782**. 
 
@@ -125,7 +125,7 @@ For more on configuring Windows diagnostic settings, refer to [Configuring
 Windows diagnostic data in your
 organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management).
 
-### Confirm that Application Guard is enabled and working
+### Confirm that Application Guard for Office is enabled and working
 
 Before confirming that the Application Guard for Office is enabled, launch Word,
 Excel, or PowerPoint on a device where the policies have been deployed. Make
@@ -136,14 +136,14 @@ downloaded from the internet or an email attachment from someone outside your
 organization.
 
 On the first launch of an untrusted file, you may see an Office splash screen
-like the one below. It might show for some time while Application Guard is being
+like the one below. It might show for some time while Application Guard for Office is being
 activated and the file is being opened. Subsequent launches of untrusted files
 should be faster.
 
 ![Office app splash screen](../../media/ag08-confirm.png)
 
 
-Upon being opened, the file should display a few visual indicators that the file was opened inside Application Guard:
+Upon being opened, the file should display a few visual indicators that the file was opened inside Application Guard for Office:
 
 * A callout in the ribbon
 
@@ -154,20 +154,20 @@ Upon being opened, the file should display a few visual indicators that the file
 
 
 
-## Configure Application Guard
-Office supports the following policies to enable you to configure the capabilities of Application Guard. These policies can be configured through Group policies or through the Office cloud policy service. 
+## Configure Application Guard for Office
+Office supports the following policies to enable you to configure the capabilities of Application Guard for Office. These policies can be configured through Group policies or through the Office cloud policy service. 
 
 >[!NOTE] 
 > These policies will become available soon.
->Also, configuring these policies can disable some functionalities for files opened in Application Guard.
+>Also, configuring these policies can disable some functionalities for files opened in Application Guard for Office.
 
 | Policy                                                                          | Description                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Disable Application Guard for Office                                            | Enabling this policy will force Word, Excel, and PowerPoint to use the Protected View isolation container instead of Application Guard. This policy can be used to temporarily disable Application Guard when there are issues in leaving Application Guard enabled for Edge.                                  |
-| Disable copy/paste for documents opened in Application Guard                    | Enabling this policy will prevent a user from copying and pasting content from a document opened in Application Guard to a document opened outside Application Guard.                                                                                                                                   |
+| Disable Application Guard for Office                                            | Enabling this policy will force Word, Excel, and PowerPoint to use the Protected View isolation container instead of Application Guard for Office. This policy can be used to temporarily disable Application Guard for Office when there are issues in leaving it enabled for Edge.                                  |
+| Disable copy/paste for documents opened in Application Guard                    | Enabling this policy will prevent a user from copying and pasting content from a document opened in Application Guard for Office to a document opened outside it.                                                                                                                                   |
 | Prevent users from removing Application Guard protection on files               | Enabling this policy will remove the option (within the Office application experience) to disable Application Guard protection or open a file outside Application Guard. <br><br>**Note:** Users can still bypass this policy by manually removing the mark-of-the-web property from the file or by moving a document to a Trusted location. |
-| Restrict printing from documents opened in Application Guard                    | Enabling this policy will limit printers a user can print to from a file opened in Application Guard. For example, you can use this policy to restrict users to only print to PDF.                              |
-| Turn off camera and microphone access for documents opened in Application Guard | Enabling this policy will remove Office access to Camera and Microphone inside Application Guard.                                                                                                                                                                                                     |
+| Restrict printing from documents opened in Application Guard                    | Enabling this policy will limit printers a user can print to from a file opened in Application Guard for Office. For example, you can use this policy to restrict users to only print to PDF.                              |
+| Turn off camera and microphone access for documents opened in Application Guard | Enabling this policy will remove Office access to Camera and Microphone inside Application Guard for Office.                                                                                                                                                                                                     |
 >[!NOTE] 
 >The following policies will require the user to log off and re-login to Windows to take effect:
 > 
@@ -180,7 +180,7 @@ Office supports the following policies to enable you to configure the capabiliti
 
 ### Submit feedback via Feedback Hub
 
-If you encounter any issues when launching Application Guard, you are
+If you encounter any issues when launching Application Guard for Office, you are
 encouraged to submit your feedback via Feedback Hub:
 
 1.  Open the **Feedback Hub app** and sign in.
