@@ -19,11 +19,11 @@ description: "Frequently-asked questions (FAQ) about the Microsoft Home Use Prog
 
 # Microsoft Home Use Program frequently-asked questions (FAQ)
 
-Volume Licensing customers use the Microsoft Home Use Program (HUP) on the [Microsoft Store for Business website](https://go.microsoft.com/fwlink/p/linkid=2139192). 
+Volume Licensing customers use the Microsoft Home Use Program (HUP) on the [Microsoft Store for Business website](https://go.microsoft.com/fwlink/?linkid=2139192). 
 
 All other customers access HUP by using this step:
 
-- In the Microsoft admin center, go to the **Billing** > **Your products** page, select the **Benefits** tab, and then select the **HUP** tab.
+- In the Microsoft admin center, go to the **Billing** > [**Your products** page](https://go.microsoft.com/fwlink/p/?linkid=842054), select the **Benefits** tab, and then select the **HUP** tab.
 
 ## What is the Microsoft Home Use Program?
 
@@ -90,7 +90,7 @@ Installs through the Home Use Program have no impact on your organization’s Mi
 
 For support for issues migrating from the Volume Licensing Service Center or to access Microsoft Store for Business, see [VLSC Support](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0).
 
-For issues viewing the benefit after you have already accessed Microsoft Store for Business, see [Store for Business Admin support](https://go.microsoft.com/fwlink/p/linkid=2139192)
+For issues viewing the benefit after you have already accessed Microsoft Store for Business, see [Store for Business Admin support](https://docs.microsoft.com/microsoft-store/)
 
 ## Why am I not seeing an option to purchase Visio Professional 2019 and/or Project Professional 2019?
 
@@ -120,9 +120,9 @@ If employees have questions, refer them to the following resources:
 
 [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (link page)
 
-[Microsoft Store for Business Admin support](https://go.microsoft.com/fwlink/p/linkid=2139192) (link page)
+[Microsoft Store for Business Admin support](https://docs.microsoft.com/microsoft-store/) (link page)
 
-[Microsoft Store for Business](https://go.microsoft.com/fwlink/p/linkid=2139192) (link page)
+[Microsoft Store for Business](https://go.microsoft.com/fwlink/?linkid=2139192) (link page)
 
 [Home Use Program employee store](https://www.microsoft.com/home-use-program) (link page)
 
