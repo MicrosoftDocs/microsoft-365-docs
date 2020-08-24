@@ -39,7 +39,7 @@ For more information about the different permissions you can give to users in th
 
 ## Use the Security & Compliance Center to give another user access to the Security & Compliance Center
 
-1. Open the Security & Compliance Center at <http://protection.office.com> and then go to **Permissions**. To go directly to the permssions tab, open <https://protection.office.com/permissions>.
+1. Open the Security & Compliance Center at <https://protection.office.com> and then go to **Permissions**. To go directly to the **Permissions** tab, open <https://protection.office.com/permissions>.
 
 2. From the list of role groups, choose the role group, and then click **Edit** ![Edit icon](../../media/O365-MDM-CreatePolicy-EditIcon.gif).
 

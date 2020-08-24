@@ -37,7 +37,7 @@ Microsoft Managed Desktop identifies each device uniquely by referencing its har
 
 #### PowerShell script method
 
-You can use a PowerShell script called [Get-WindowsAutoPilotInfo.ps1] https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo that has been published to the PowerShell Gallery website. You can also learn more about Device identification and Hardware hash at https://docs.microsoft.com/mem/autopilot/add-devices#device-identification.
+You can use the [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell script on the PowerShell Gallery website. For more information about device identification and hardware hash, see [Adding devices to Windows Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices#device-identification).
 
 1.	Open a PowerShell prompt with administrative rights.
 2.	Run `Install-Script -Name Get-WindowsAutoPilotInfo`
@@ -70,7 +70,7 @@ You'll need to have the data in the CSV files combined into a single file to com
 
 From the Microsoft Managed Desktop [Admin Portal](https://aka.ms/mmdportal), select **Devices** in the left navigation pane. Select **+ Register devices**; the fly-in opens:
 
-[![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
+[![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
