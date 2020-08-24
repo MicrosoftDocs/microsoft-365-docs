@@ -65,22 +65,29 @@ In an Active Directory environment, you can use the `Get-WindowsAutoPilotInfo` P
 - The devices you want to register are active on the network (that is, they are not disconnected or turned off).
 - Make sure you have a domain credential parameter that has permission to execute remotely on the devices.
 - Make sure that Windows Firewall allows access to WMI. To do that, follow these steps:
+
     1. Open the **Windows Defender Firewall** control panel and select **Allow an app or feature through Windows Defender Firewall**.
+    
     2. Find **Windows Management Instrumentation (WMI)** in the list, enable for both **Private and Public**, and then select **OK**.
 
 1.	Open a PowerShell prompt with administrative rights.
+
 2.	Run *either one* of these scripts:
-```powershell
-Install-script -name Get-WindowsAutoPilotInfo 
-#example one – leverage Get-ADComputer to enumerate devices 
-Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname>
-```
-```powershell 
-#example two – target specific devices: 
-Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
-```
+
+    ```powershell
+    Install-script -name Get-WindowsAutoPilotInfo 
+    #example one – leverage Get-ADComputer to enumerate devices 
+    Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname>
+    ```
+
+    ```powershell 
+    #example two – target specific devices: 
+    Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
+    ```
+
 3. Access any directories where there might be entries for the devices. Remove entries for each device from *all* directories, including Windows Server Active Directory Domain Services and 
 Azure Active Directory. Be aware that this removal could take a few hours to completely process.
+
 4. Access management services where there might be entries for the devices. Remove entries for each device from *all* management services, including Microsoft Endpoint Configuration Manager, Microsoft Intune, and Windows Autopilot. Be aware that this removal could take a few hours to completely process.
 
 Now you can proceed to [register devices](#register-devices-by-using-the-admin-portal).
@@ -114,7 +121,9 @@ Now you can proceed to [register devices](#register-devices-by-using-the-admin-p
 
 If you collected the hardware hash data by the manual PowerShell or flash drive methods, you now need to have the data in the CSV files combined into a single file to complete registration. Here's a sample PowerShell script to make this easy:
 
-`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
+```powershell
+Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv
+```
 
 With the hash data merged into one CSV file, you can now proceed to [register the devices](#register-devices-by-using-the-admin-portal).
 
@@ -132,7 +141,8 @@ From the Microsoft Managed Desktop [Admin Portal](https://aka.ms/mmdportal), sel
 Follow these steps:
 
 1. In **File upload**, provide a path to the CSV file you created previously.
-3. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **AutopilotRegistrationRequested**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
+
+1. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **AutopilotRegistrationRequested**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
 
 
 You can monitor the progress of device registration on the main **Microsoft Managed Desktop - Devices** page. Possible states reported there include:
