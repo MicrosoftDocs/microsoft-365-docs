@@ -24,7 +24,7 @@ description: "Microsoft Compliance Manager helps organizations simplify and auto
 
 Compliance Manager is now generally available (GA) as an end-to-end compliance management solution inside the [Microsoft 365 compliance center](microsoft-365-compliance-center.md). With this release, Compliance Manager completes the transition from its previous location in the Microsoft Service Trust Portal.
 
-What began as the public preview of Compliance Score in the Microsoft 365 compliance center has evolved into the GA release of Compliance Manger. Compliance Manager has the same user-friendly interface and scoring mechanism of the preview version of Compliance Score, yet now with full functionality and significant improvements to help you measure and strengthen your compliance posture. With the GA release, Compliance Manager is now available to US Government Community Cloud (GCC) Moderate and High customers.
+What began as the public preview of Compliance Score has evolved into a centralized tool with enhanced compliance management capabilities and greater ease of use.  The GA release brings a larger array of pre-built assessments to help you scale your compliance activities. Compliance Manager is also now available to US Government Community Cloud (GCC) Moderate and High customers.
 
 **Learn more about the GA release:**
 - Our [frequently asked questions](compliance-manager-faq.md) walk you through the evolution in greater detail.
