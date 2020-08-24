@@ -137,11 +137,57 @@ You can change the name of your assessment after you create it by selecting the 
 
 ## Extend a pre-built assessment
 
+You can modify a pre-built assessment by adding your own controls and improvement actions to the assessment’s template. This process is called “extending a Microsoft template” in Compliance Manager.  You’ll complete this process by starting at your **assessment templates** page rather than your **assessments** page.
 
+### Prepare to extend a template by formatting your Excel spreadsheet
+
+To prepare for this process, you’ll first need to assemble a specially formatted Excel spreadsheet to import the necessary template data. View [instructions for formatting your template data with Excel](compliance-manager-templates.md#formatting-your-template-data-with-excel). 
+
+**Note:** There are special requirements for Excel files used in the extension process. See these additional points to help prevent errors in the import process:
+
+- Your spreadsheet should contain only the actions and controls you want to add to the assessment.
+- The spreadsheet can’t contain any of the controls or actions that already exist in the assessment you want to modify.
+- Consider including “extension” in your template’s title, for example, “GDPR – [your company name] extension”. This makes it easier to identify in the list on your **assessment templates** page as distinct from the standard Microsoft-provided template or a custom template with a similar name.
+
+After you format your spreadsheet, follow the steps immediately below.
+
+### Extend a Compliance Manager template
+
+1. Go to your **Assessment templates** page and select **Create new template**. A template creation wizard will open.
+
+2. Choose the type of template you want to create. In this case, select **Extend a Microsoft template**, then **Select**.
+
+3. A template selection flyout pane appears on the right side of your screen. Use **Search** to apply filters for locating the template you want
+
+4. Once you locate your template, select the radio button to the left of its name, then select **Save**.
+
+5. The next screen shows the template you selected. If correct, select **Next**. (If incorrect, choose **Select a different template** to choose again.)
+
+6. At the **Upload file** screen, select **Browse** to find and upload your formatted Excel file containing all the required template data (see [instructions for properly formatting your file](compliance-manager-templates.md#formatting-your-template-data-with-excel)).
+
+7. If there are no problems with your file, the next screen shows the name of the file uploaded. Select **Next** to continue (if you need to change the file, select **Upload a different file**).
+
+    - If there’s a problem with your file, an error message at the top explains what’s wrong. You’ll need to fix and re-upload your file. Errors will result if your spreadsheet is formatted improperly, or if there’s invalid information in certain fields (refer again to the [formatting instructions](compliance-manager-templates.md#formatting-your-template-data-with-excel)).
+ 
+8. The **Review and finish** screen shows the number of improvement actions and controls and the maximum score for the template. When ready to approve, select **Next**. (If you need to make changes, select **Upload a different file**.)
+
+9. The last screen confirms a new template has been created. Select **Done** to exit the wizard.
+
+10. You’ll arrive at your new template’s details page. From here you can create your assessment by selecting **Create assessment**. For guidance, start at step #4 in the [assessment creation instructions above](#to-create-an-assessment).
 
 ## Create your own custom assessment
 
-text
+Creating a custom assessment in Compliance Manager requires you to create your own template. To create your own template, you’ll first assemble a formatted Excel spreadsheet to import the necessary template data. It also helps to decide ahead of time which group you’ll assign your assessment to when you create it (learn more about [groups](#what-are-groups)).
+
+**Follow the steps below to create your custom assessment:**
+
+1. **Format your Excel file.** Begin by formatting your template data into an Excel spreadsheet using [these instructions](compliance-manager-templates.md#formatting-your-template-data-with-excel).
+
+2. **Create your template** by following [these instructions](compliance-manager-templates#create-a-new-template).
+
+3. **Create your assessment** from the template. You can begin by opening the template’s details page and selecting **Create assessment**, or go to your **assessments** page and select **Create assessment**.
+
+4. An assessment creation wizard will appear in a large flyout pane. From here, you can follow the guidance starting at step #3 of the [assessment creation instructions](#to-create-an-assessment), using your new custom template for your assessment.
 
 ## Delete an assessment
 
