@@ -1,30 +1,29 @@
 ---
-title: "Microsoft Home Use Program FAQ"
+title: "Microsoft Home Use Program frequently-asked questions (FAQ)"
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-- commerce
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
-description: "Learn how to purchase an add-on to add additional functionality to your Microsoft 365 for business subscription. You can also update and remove an add-on."
+description: "Frequently-asked questions (FAQ) about the Microsoft Home Use Program."
 ---
 
-# Microsoft Home Use Program FAQ
+# Microsoft Home Use Program frequently-asked questions (FAQ)
 
+Volume Licensing customers use the Microsoft Home Use Program (HUP) on the [Microsoft Store for Business website](https://go.microsoft.com/fwlink/p/linkid=2139192). 
+
+All other customers access HUP by using this step:
+
+- In the Microsoft admin center, go to the **Billing** > **Your products** page, select the **Benefits** tab, and then select the **HUP** tab.
 
 ## What is the Microsoft Home Use Program?
 
@@ -32,12 +31,12 @@ The Microsoft Home Use Program (HUP) allows employees at eligible companies to b
 
 ## In which countries is this benefit available?
 
-Once you activate your benefit here (in Microsoft Store for Business), HUP discounts on Microsoft products are available to employees in most countries worldwide with the exception of the following countries:
+Once you activate your benefit here (in Microsoft Store for Business), HUP discounts on Microsoft products are available to employees in most countries worldwide with the exception of:
 
 - Russia
 - Venezuela
 
-HUP discounts might also be available on purchases of Surface devices and accessories and Xbox Game Pass Ultimate. For availability, see [Microsoft 365 subscriptions](https://businessstore.microsoft.com/).
+HUP discounts might also be available on purchases of Surface devices and accessories and Xbox Game Pass Ultimate. For availability, see [Microsoft 365 subscriptions](https://go.microsoft.com/fwlink/p/linkid=2139192).
 
 ## How does an organization qualify for HUP discounts?
 
@@ -67,13 +66,19 @@ You can find company onboarding marketing materials in the _About_ section of yo
 
 You can also quickly locate promotional materials on the IT/HR Admin resources page. Visit the [Home Use Program home page](https://www.microsoft.com/home-use-program/resources) and scroll down to the _Home Use Program promotional resources_ section of the page.
 
+## What resources are available to help promote the Home Use Program benefit to employees?
+
+Use the resources located on the [Home Use Program](https://www.microsoft.com/home-use-program/resources) home page to help you promote the program to your employees. You'll find digital and printable flyers, verbiage for use in emails and newsletters, and guidance on how to best promote the Home Use Program.
+
+You can access onboarding materials in several languages at [HUP Material for Customers](https://microsofteur.sharepoint.com/teams/HUPMaterial). Select a language to begin downloading the files. The file contains assets that you can use to help educate your employees about the program and promote it internally in your company.
+
 ## What are the steps for an eligible employee to make a Microsoft Home Use Program purchase?
 
-1. **Sign Up** Visit the [Microsoft Home Use Program page](https://www.microsoft.com/home-use-program), and select the Get Started button. Employees enter their corporate email address.
+1. **Sign Up** Go to the [Microsoft Home Use Program page](https://www.microsoft.com/home-use-program), and select the Get Started button. Employees enter their corporate email address.
 
 2. **Confirm**  An email is sent to their corporate email address inbox with a link that authenticates their eligibility for the program.
 
-3. **Sign In** Once they have been authenticated, they begin the purchase process by providing the Microsoft account that’s associated with their personal email address, which allows them to view the discounts on products available to them based on your organization’s Home Use Program benefit. For more info, see [How to sign in to your Microsoft account](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
+3. **Sign In** After they have been authenticated, they begin the purchase process by providing the Microsoft account that’s associated with their personal email address, which allows them to view the discounts on products available to them based on the organization’s Home Use Program benefit. For more info, see [How to sign in to your Microsoft account](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
 
 4. **Shop** The purchase is processed and completed in the Microsoft Store.
 
@@ -85,7 +90,7 @@ Installs through the Home Use Program have no impact on your organization’s Mi
 
 For support for issues migrating from the Volume Licensing Service Center or to access Microsoft Store for Business, see [VLSC Support](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0).
 
-For issues viewing the benefit after you have already accessed Microsoft Store for Business, see [Store for Business Admin support](https://businessstore.microsoft.com/manage/support)
+For issues viewing the benefit after you have already accessed Microsoft Store for Business, see [Store for Business Admin support](https://go.microsoft.com/fwlink/p/linkid=2139192)
 
 ## Why am I not seeing an option to purchase Visio Professional 2019 and/or Project Professional 2019?
 
@@ -99,7 +104,7 @@ If employees have questions, refer them to the following resources:
 
 - [Home Use Program Employee FAQ](https://www.microsoft.com/home-use-program/frequently-asked-questions)
 
- For help with technical issues, see [Microsoft Support](https://support.microsoft.com/). You'll find help on:
+ For help with technical issues, see [Microsoft Support](https://support.microsoft.com/). You'll find help for:
 
 - Order status
 
@@ -109,24 +114,16 @@ If employees have questions, refer them to the following resources:
 
 - Signing in to Office
 
-## What resources are available to help promote the Home Use Program benefit to employees?
+## Frequently-viewed content
 
-Use the resources located on the [Home Use Program](https://www.microsoft.com/home-use-program/resources) home page to help you promote the program to your employees. There you'll find digital and printable flyers, verbiage for use in emails and newsletters, and guidance on how to best promote the Home Use Program.
+[Microsoft 365 subscriptions](https://www.microsoft.com/home-use-program/). (link page)
 
-You can access onboarding materials in several languages at [HUP Material for Customers](https://microsofteur.sharepoint.com/teams/HUPMaterial). Select a language to begin downloading the files. The file contains assets that you can use to help educate your employees about the program and promote it internally in your company.
+[Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (link page)
 
-## What are the key resources for the Microsoft Home Use Program?
+[Microsoft Store for Business Admin support](https://go.microsoft.com/fwlink/p/linkid=2139192) (link page)
 
-For details about the Microsoft Home Use Program, see [Microsoft 365 subscriptions](https://www.microsoft.com/home-use-program/).
+[Microsoft Store for Business](https://go.microsoft.com/fwlink/p/linkid=2139192) (link page)
 
-For more info, see also: 
+[Home Use Program employee store](http://www.microsoft.com/home-use-program) (link page)
 
-- [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0)
-
-- [Microsoft Store for Business Admin support](https://businessstore.microsoft.com/manage/support)
-
-- [Microsoft Store for Business](https://businessstore.microsoft.com/store)
-
-- [Home Use Program employee store](http://www.microsoft.com/home-use-program)
-
-- [Microsoft Licensing: Home Use Program overview](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4)
+[Microsoft Licensing: Home Use Program overview](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (link page)
