@@ -56,7 +56,7 @@ For detailed system requirements, refer to [System requirements for Microsoft De
 
 1.  Download and install **Windows 10 cumulative monthly security updates KB4566782**. 
 
-2. Download and install [**Application Guard for Office Feature enablement package**](http://download.microsoft.com/download/e/4/c/e4c1180a-fcff-462a-8324-4151c44973a8/Windows%20Preview%20-%20WDAG%20Office%20070920%2001.msi). This package installs a group policy called "KB4559004 Issue 001 Preview" under **Computer Configuration\Administrative Templates**. Set this group policy  to **Enabled**.
+2. Download and install [**Application Guard for Office Feature enablement package**](https://download.microsoft.com/download/e/4/c/e4c1180a-fcff-462a-8324-4151c44973a8/Windows%20Preview%20-%20WDAG%20Office%20070920%2001.msi). This package installs a group policy called "KB4559004 Issue 001 Preview" under **Computer Configuration\Administrative Templates**. Set this group policy  to **Enabled**.
      ![Local Group Policy Editor](../../media/ag01-deploy.png)
 
      ![KB4559004 Issue 001 Preview](../../media/ag02-deploy.png)
