@@ -20,32 +20,92 @@ ms.collection:
 description: "In this article, you'll learn about the ATP Safe Attachments feature for Office 365 and how to get the feature for your subscription."
 ---
 
-# ATP Safe Attachments
+# Safe Attachments in Office 365 ATP
 
-## Overview of Office 365 ATP Safe Attachments
+Safe Attachments is a feature in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) that checks attachments in inbound email messages. Safe Attachments protection for email messages is controlled by Safe Attachments policies. There is no default Safe Attachments policy, **so to get the protection of Safe Attachments, you need to create at least one Safe Attachments policy**. For instructions, see [Set up Safe Attachments policies in ATP](set-up-atp-safe-attachments-policies.md).
 
-ATP Safe Attachments (along with [ATP Safe Links](atp-safe-links.md)) is part of [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP). The ATP Safe Attachments feature checks to see if email attachments are malicious, and then takes action to protect your organization. The ATP Safe Attachments feature protects your organization according to [ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md) that are set by your global or security administrators.
+Here's how Safe Attachments works for attachments in email messages:
 
-ATP protection can also be extended to files in SharePoint Online, OneDrive for Business, and Microsoft Teams. To learn more, see [Office 365 Advanced Threat Protection for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Lee receives an email message with an attachment. It is not obvious to Lee whether that attachment is safe or actually contains malware designed to steal Lee's user credentials. Several days ago, a security administrator in Lee's organization created and configured a Safe Attachments policy that applies to Lee. The email attachment is opened and tested in a virtual environment before Lee receives it. If the attachment is determined to be malicious, it will be removed automatically. If the attachment is determined to be safe, it will open as expected when Lee clicks on it.
 
-## How to get ATP Safe Attachments
+> [!NOTE]
+> The following features are associated with Safe Attachments policies in the Security & Compliance Center, but these settings are enabled or disabled globally, and don't require a Safe Attachments policy:
+>
+> - [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+>
+> - [Safe Documents in Microsoft 365 E5](safe-docs.md)
 
-First, make sure your subscription includes [Advanced Threat Protection](office-365-atp.md). ATP is included in in subscriptions, such as [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 E5, Office 365 A5, etc. If your organization has a Microsoft 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. For more information, see [Office 365 Advanced Threat Protection plans and pricing](https://products.office.com/exchange/advance-threat-protection) and the [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+Safe Attachments scanning takes place in the same region where your Microsoft 365 data resides. For more information about datacenter geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All)
 
-Next, make sure your ATP Safe Attachments policies are defined. (See [Set up Office 365 ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md)) ATP Safe Attachments features are active when:
+## Safe Attachments policy settings
 
-- ATP Safe Attachments policies are set up. (See [Set up ATP Safe Attachments policies in Office 365](set-up-atp-safe-attachments-policies.md).)
+These are the important settings in Safe Attachments policies:
 
-- Users have signed in using their work or school account. (See [Sign in to Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).)
+- **Unknown malware response**: This setting controls the action for unknown malware in email attachments. The available options are described in the following table:
 
-To define (or edit) ATP policies, you must be assigned an appropriate role. Some examples are described in the following table:
+  ****
 
-|Role|Where/how assigned|
-|---|---|
-|global administrator|The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) to learn more.)|
-|Security Administrator|Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online Organization Management|Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
-|
+  |Option|Effect|Use when you want to:|
+  |---|---|---|
+  |**Off**|Attachments aren't scanned for malware by Safe Attachments. Messages are still scanned for malware by [anti-malware protection in EOP](anti-malware-protection.md).|Turn scanning off for selected recipients. <br/><br/> Prevent unnecessary delays in routing internal mail. <br/><br/> **This option is not recommended for most users. You should only use this option to turn off Safe Attachments scanning for recipients who only get messages from trusted senders.**|
+  |**Monitor**|Delivers messages with attachments and then tracks what happens with detected malware. <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|See where detected malware goes in your organization.|
+  |**Block**|Prevents messages with detected malware attachments from being delivered. <br/><br/> Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages. <br/><br/> Automatically blocks future instances of the messages and attachments. <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Protects your organization from repeated attacks using the same malware attachments. <br/><br/> This is the recommended action in Standard and Strict [preset security policies](preset-security-policies.md).|
+  |**Replace**|Removes detected malware attachments. <br/><br/> Notifies recipients that attachments have been removed. <br/><br/>  Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages. <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Raise visibility to recipients that attachments were removed because of detected malware.|
+  |**Dynamic Delivery**|Delivers messages immediately, but replaces attachments with placeholders until Safe Attachments scanning is complete. <br/><br/> For details, see the [Dynamic Delivery](#dynamic-delivery) section later in this topic.|Avoid message delays while protecting recipients from malicious files <br/> <br/> Enable recipients to preview attachments in safe mode while scanning is taking place|
+  |
+
+- **Enable redirect**: For **Block**, **Monitor**, or **Replace** actions, send the attachments to the specified internal or external email address for analysis and investigation.
+
+- **Apply the above selection if malware scanning for attachments times out or error occurs**: Always select this option if you select **Enabled redirect**. Otherwise, messages might be lost in the event of scanning time outs or errors.
+
+- **Recipient filters**: You need to specify the recipient conditions and exceptions that determine who the policy applies to. You can use these properties for conditions and exceptions:
+
+  - **The recipient is**
+  - **The recipient domain is**
+  - **The recipient is a member of**
+
+  You can only use a condition or exception once, but the condition or exception can contain multiple values. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
+
+- **Priority**: If you create multiple custom anti-malware policies, you can specify the order that they're applied. No two policies can have the same priority, and policy processing stops after the first policy is applied.
+
+  For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+
+### Dynamic Delivery
+
+Dynamic Delivery eliminates email delays by sending the body of an email message through to the recipient with a placeholder for each email attachment. The placeholder remains until a copy of the attachment is scanned and determined to be safe by Safe Attachments scanning.
+
+Dynamic delivery works only for Exchange Online mailboxes.
+
+As each attachment is scanned and determined to be safe, it's available to open or download in the message. If an attachment is determined to be malicious, the message is [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages.
+
+Most PDFs and Office documents can be previewed in safe mode while Safe Attachments scanning is underway. If an attachment is not compatible with the Dynamic Delivery previewer, email recipients see a placeholder for the attachment until Safe Attachments scanning is complete.
+
+If you're using a mobile device, and PDFs aren't rendering in the Dynamic Delivery previewer on your mobile device, try opening the message in Outlook on the web (formerly known as Outlook Web App) using your mobile browser.
+
+Considerations for message forwarding:
+
+- If the forwarded recipient is covered by a Safe Attachments policy that uses the Dynamic Delivery option, then the recipient sees the placeholder, with the ability to preview compatible files.
+- If the forwarded recipient is not covered by a Safe Attachments policy, the message and attachments will be delivered without any Safe Attachments scanning or attachment placeholders.
+
+## Scenarios where Safe Attachments doesn't scan messages
+
+There are scenarios where Safe Attachments is unable to scan messages. These scenarios are described in the following list:
+
+- Messages in public folders.
+
+- Messages that are routed out of and then back into a user's mailbox using custom rules.
+
+- Messages that are moved (automatically or manually) out of cloud mailboxes to other locations, including archive folders.
+
+- Deleted messages.
+
+- The user's mailbox search folder is in an error state.
+
+- Exchange Online organization where Exclaimer is enabled. To resolve this, see [KB4014438](https://support.microsoft.com/help/4014438).
+
+- [S/MIME)](s-mime-for-message-signing-and-encryption.md) encrypted messages.
+
+- You configured a Safe Attachments policy for Dynamic Delivery, but Dynamic Delivery isn't supported for the recipient (for example, a mailbox in an on-premises Exchange organization). However, [Safe Links](set-up-atp-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the Safe Links policies are configured).
 
 ## How to know if ATP Safe Attachments protection is in place
 
