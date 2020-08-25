@@ -62,8 +62,6 @@ For the Application registration stage, you must have a **Global administrator**
 
      For instance,
 
-     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-     - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
      - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
 5. Click **Grant consent**

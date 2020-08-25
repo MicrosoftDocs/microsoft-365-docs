@@ -234,7 +234,7 @@
                     - name: Get access with application context
                       href: mtp/api-create-app-web.md
                     - name: Get access with user context
-                      href: mtp/exposed-apis-create-app-nativeapp.md
+                      href: mtp/api-create-app-user-context.md
                     - name: Get partner application access
                       href: mtp/exposed-apis-create-app-partners.md
                 - name: Microsoft Threat Protection APIs schema
