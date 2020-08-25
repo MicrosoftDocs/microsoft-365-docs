@@ -27,6 +27,10 @@ description: "Backup Outlook, OneDrive, Yammer, and SharePoint content before ch
 # Back up data before switching Microsoft 365 for business plans
 
 If a user will be switched to another subscription that has fewer data-related services or a user leaves the organization, a copy of their data that's stored in Microsoft 365 can be downloaded before they are switched to the new subscription.
+
+ > [!NOTE]
+ > It's not required to back up data when you switch to another subscription that provides more and same services. User data will always be preserved and no action need be taken for any individual service that is present in both  expiring and replacement subscription assigned to the same user.
+
   
 ## Save a copy of Outlook information
 
