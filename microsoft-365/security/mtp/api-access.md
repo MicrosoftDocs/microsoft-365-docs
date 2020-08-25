@@ -30,7 +30,7 @@ search.appverid:
  Microsoft Threat Protection exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on  Microsoft Threat Protection capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 
-In general, you’ll need to take the following steps to use the APIs:
+In general, you'll need to take the following steps to use the APIs:
 - Create an AAD application
 - Get an access token using this application
 - Use the token to access  Microsoft Threat Protection API
