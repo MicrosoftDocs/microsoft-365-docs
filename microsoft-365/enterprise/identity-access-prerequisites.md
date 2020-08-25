@@ -1,14 +1,14 @@
 ---
 title: Prerequisite work for implementing identity and device access policies - Microsoft 365 for enterprise | Microsoft Docs
 description: Describes the policies for Microsoft recommendations about how to apply identity and device access policies and configurations.
-author: BrendaCarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom: 
 - it-pro
