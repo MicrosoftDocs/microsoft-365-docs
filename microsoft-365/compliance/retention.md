@@ -380,7 +380,7 @@ If you have configured SharePoint sites for content type policies or information
 
 - [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limits and specifications for Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
-- [Comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+- [Configure retention policies and retention labels for regulatory requirements](retention-regulatory-requirements.md)
 
 ## Next steps
 
