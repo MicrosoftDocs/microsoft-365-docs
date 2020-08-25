@@ -63,6 +63,7 @@ Here's a list of all the admin roles available in the Microsoft 365 admin center
 |Message center privacy reader     |    Access to data privacy messages in Message center, gets email notifications.     |
 |Message center reader     | Reads and shares regular messages in Message center, gets weekly email digests, has read-only access to users, groups, domains, and subscriptions.     |
 |Office Apps admin    |   Manages cloud-based policies for Office and the What's New content that users see in their Office apps.   |
+|Password admin    |   Reset passwords of users who are non-administrators or members of the following roles: Directory Readers, Guest Inviter, Password Administrator. This role can't grant the ability to manage service requests or monitor service health.   |
 |Power BI admin    |   Full access to Power Bl management tasks, manages service requests, and monitors service health.   |
 |Power platform admin     |    Full access to Microsoft Dynamics 365, PowerApps, data loss prevention policies, and Microsoft Flow.     |
 |Privileged role admin     |    Manages role assignments and all access control features of Privileged Identity Management.     |
