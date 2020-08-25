@@ -26,16 +26,15 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-
-## Available APIs
 Microsoft Threat Protection solution is built on top of an integration-ready platform. 
 
 The lop-level Microsoft Threat Protection APIs will enable you to automate workflows based on the shared incident and advanced hunting tables.
 
-**Combined incidents queue** - Helps security professionals focus on what's critical by ensuring that the full attack scope and impacted assets are grouped together and surfaced in a timely manner under the incident API.
+- **Combined incidents queue** - Helps security professionals focus on what's critical by ensuring that the full attack scope and impacted assets are grouped together and surfaced in a timely manner under the incident API.
 
-**Cross-product threat hunting** - Security teams can leverage their unique organizational knowledge to hunt for signs of compromise by creating their own custom queries via APIs over the raw data collected by the various protection products. 
+- **Cross-product threat hunting** - Security teams can leverage their unique organizational knowledge to hunt for signs of compromise by creating their own custom queries via APIs over the raw data collected by the various protection products. 
 
 In addition to these set of APIs each of the various protection products expose additional APIs to help you innovate based on each product capabilities.
 
-Link to [Additional protection APIs](api-articles.md)
+## Related topics
+- [Additional protection APIs](api-articles.md)

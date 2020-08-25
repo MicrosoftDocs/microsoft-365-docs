@@ -226,13 +226,13 @@
                 - name: Get started
                   Items:
                     - name: Microsoft Threat Protection API license and terms of use
-                      href: mtp/api-terms-of-use.md
+                      href: mtp/api-terms.md
                     - name: Access the Microsoft Threat Protection APIs
                       href: mtp/api-access.md
                     - name: Hello World example
                       href: mtp/api-hello-world.md
                     - name: Get access with application context
-                      href: mtp/exposed-apis-create-app-webapp.md
+                      href: mtp/api-create-app-web.md
                     - name: Get access with user context
                       href: mtp/exposed-apis-create-app-nativeapp.md
                     - name: Get partner application access
