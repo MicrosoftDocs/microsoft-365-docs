@@ -25,3 +25,10 @@ search.appverid:
 
 **Applies to:**
 - Microsoft Threat Protection
+
+
+The following resources provide more information on other APIs available for workflows in Microsoft Threat Protection:
+
+- [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
+- [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office/office-365-management-api/)
+- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/api-introduction)
