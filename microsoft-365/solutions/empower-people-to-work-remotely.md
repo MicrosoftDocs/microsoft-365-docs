@@ -64,7 +64,7 @@ To meet the criteria for remote workers, use these Microsoft 365 capabilities an
 | Microsoft Teams, Exchange Online, SharePoint Online and OneDrive, Microsoft 365 Apps, Microsoft Power Platform, Yammer, Power Apps | Create, communicate, and collaborate. | Microsoft 365 E3 or E5 |
 ||||
 
-For security and compliance criteria for remote workers, see [Deploy security and compliance for remote workers](empower-people-to-work-remotely-security-compliance.md)
+For security and compliance criteria, see [Deploy security and compliance for remote workers](empower-people-to-work-remotely-security-compliance.md).
 
 <a name="poster"></a>
 For a 2-page summary of this solution, see the [Empower remote workers poster](../downloads/empower-remote-workers.pdf).
