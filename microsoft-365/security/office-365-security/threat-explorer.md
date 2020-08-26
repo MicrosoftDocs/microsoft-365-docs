@@ -74,9 +74,42 @@ You should also see additional details within the product. For example, the tota
 
 ![View In-product Info](../media/ProductInfo.png)
 
+## Extended capabilities in Threat Explorer
 
-## New features in real-time detections
-=======
+### Top Targeted Users
+
+Today we expose the list of Top Targeted users in the Malware View for Emails (within the Top Malware Families section). We will be extending this view within Phish and All Email views as well, where you will be able to see the top 5 targeted Users along with no. of attempts for each user for corresponding view (e.g. for Phish view you will be able to see the number of Phish attempts ).
+You will also be able to export the list of Targeted users up to a limit of 3000 along with the no. of attempts for offline analysis for each email view. In addition to that, clicking on No. of attempts (e.g. 13 attempts below) would open a filtered view in Threat Explorer, so that you can look at more details across emails and threats for that user . 
+
+![Top Targeted Users](../../media/Top_Targeted_Users.png)
+
+
+### Exchange Transport Rules
+As part of data enrichment, you should also be able to see all the different transport rules which were applied on a message. This information will be present within the Email grid view (to view this, click on Column options in the grid add Exchange Transport Rule from the Column Options in the Grid) as well as Details flyout in the email.
+You would be able to see both the GUID as well as the name of the Transport rules which were applied on the message. Additionally, you would also be able to search for the messages using the name of the Transport rule. This would be a ‘Contains’ search which means you will be able to search using Partial searches as well. 
+
+#### Important Note: 
+ETR search and name availability would depend on the specific role that has been assigned to you. You will need to have one of the following roles/permissions in order to view the ETR names and search.  If you do not have any of the following roles assigned to you, you will not be able to see the names of the transport rules, and search for the messages using the ETR names. However you will be able to see the ETR label and GUID information within the Email Details. Your other experiences around viewing records in Email Grids, Email flyouts, Filters and Export are not impacted. 
+ 
+- EXO Only - Data Loss Prevention: All
+- EXO Only - O365SupportViewConfig: All
+- AAD or EXO - Security Admin: All
+- AAD or EXO - Security Reader: All
+- EXO Only -Transport Rules: All
+- EXO Only -View-Only Configuration: All
+
+Within the email grid, Details flyout and Exported CSV, the ETRs are presented with a Name/GUID as shown below. 
+
+![Exchange Transport Rules](../../media/ETR_Details.png)
+
+### Inbound Connectors 
+
+Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization, with the ability to apply any security restriction or controls. Within Threat Explorer, you will now have the ability to view the connectors which are related to an email as well as search for emails using the connector names. 
+The search for Connectors is ‘Contains’ in nature which means partial keyword searches should work as well. 
+Within the Main grid view, the details flyout and the Exported CSV, the Connectors are shown in the Name/GUID format as shown below: 
+
+![Connector Details](../../media/Connector_Details.png)
+
 ## New features in Threat Explorer and real-time detections
 
 Three new features added into Threat Explorer and real-time detections:
