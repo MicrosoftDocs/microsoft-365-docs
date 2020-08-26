@@ -84,7 +84,7 @@ Creating a custom Safe Attachments policy in the Security & Compliance Center cr
 
 4. On the **Settings** page that appears, configure the following settings:
 
-   - **Safe attachments unknown malware response**: Select one of the following values:
+   - **Safe Attachments unknown malware response**: Select one of the following values:
 
      - **Off**: Typically, we don't recommend this value.
      - **Monitor**
@@ -94,11 +94,11 @@ Creating a custom Safe Attachments policy in the Security & Compliance Center cr
 
      These values are explained in [Safe Attachments policy settings](atp-safe-attachments.md#safe-attachments-policy-settings).
 
-   - **Send the attachment to the following email address**: For the action values **Block**, **Monitor**, or **Replace** , you can select **Enable redirect** to send attachments to the specified internal or external email address for analysis and investigation.
+   - **Send the attachment to the following email address**: For the action values **Block**, **Monitor**, or **Replace** , you can select **Enable redirect** to send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
 
      The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [ATP Safe Attachments policy settings](recommended-settings-for-eop-and-office365-atp.md#atp-safe-attachments-policy-settings).
 
-   - **Apply the above selection if malware scanning for attachments times out or error occurs**: Always select this option if you select **Enabled redirect** and specify an email address.
+   - **Apply the above selection if malware scanning for attachments times out or error occurs**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete. Always select this option if you select **Enabled redirect**. Otherwise, messages might be lost.
 
    When you're finished, click **Next**.
 

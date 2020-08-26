@@ -62,11 +62,11 @@ These are the important settings in Safe Attachments policies:
   |**Dynamic Delivery**|Delivers messages immediately, but replaces attachments with placeholders until Safe Attachments scanning is complete. <br/><br/> For details, see the [Dynamic Delivery](#dynamic-delivery) section later in this topic.|Avoid message delays while protecting recipients from malicious files <br/> <br/> Enable recipients to preview attachments in safe mode while scanning is taking place|
   |
 
-- **Redirect attachment on detection: Enable redirect** and **Send the attachment to the following email address**: For **Block**, **Monitor**, or **Replace** actions, send malware attachments to the specified internal or external email address for analysis and investigation.
+- **Redirect attachment on detection: Enable redirect** and **Send the attachment to the following email address**: For **Block**, **Monitor**, or **Replace** actions, send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
 
   The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [ATP Safe Attachments policy settings](recommended-settings-for-eop-and-office365-atp.md#atp-safe-attachments-policy-settings).
 
-- **Apply the above selection if malware scanning for attachments times out or error occurs**: Always select this option if you select **Enabled redirect**. Otherwise, messages might be lost in the event of scanning time outs or errors.
+- **Apply the above selection if malware scanning for attachments times out or error occurs**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete. Always select this option if you select **Enabled redirect**. Otherwise, messages might be lost.
 
 - **Recipient filters**: You need to specify the recipient conditions and exceptions that determine who the policy applies to. You can use these properties for conditions and exceptions:
 
