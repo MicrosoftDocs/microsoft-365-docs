@@ -254,7 +254,7 @@
                 - name: Get access with user context
                   href: mtp/api-create-app-user-context.md
                 - name: Get partner application access
-                  href: mtp/exposed-apis-create-app-partners.md
+                  href: mtp/api-partner-access.md
             - name: Microsoft Threat Protection APIs schema
               Items:
                 - name: Supported Microsoft Threat Protection APIs 
