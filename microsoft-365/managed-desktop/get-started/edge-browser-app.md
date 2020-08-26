@@ -45,7 +45,7 @@ The security baseline for Microsoft Edge on Microsoft Managed Desktop devices se
 #### Extension installation blocklist
 **Default value:** All
 
-Microsoft Managed Desktop sets this policy to prevent Chrome extensions from being installed on managed endpoints. There are known risk sassociated with the Chromium extension model including data loss protection, privacy, and other risks that can compromise devices. 
+Microsoft Managed Desktop sets this policy to prevent Chrome extensions from being installed on managed endpoints. There are known risks associated with the Chromium extension model including data loss protection, privacy, and other risks that can compromise devices. 
 
 #### Allow user-level native messaging hosts (installed without admin permissions)
 
@@ -67,7 +67,7 @@ If you want to use the less secure TLS 1.1, you can request this.
 
 We don't recommend enabling this setting since it allows users to visit sites with SSL errors.
 
-### Microsoft Defender Smart Screen
+### Microsoft Defender SmartScreen
 
 #### Configure Windows Defender SmartScreen
 
