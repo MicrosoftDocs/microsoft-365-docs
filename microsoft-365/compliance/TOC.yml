@@ -338,7 +338,7 @@
           href: restore-an-inactive-mailbox.md
         - name: Delete an inactive mailbox
           href: delete-an-inactive-mailbox.md
-        - name: Videos from the Data Governance team
+    - name: Videos from the Data Governance team
           href: https://go.microsoft.com/fwlink/?linkid=867039
     - name: Records management
       items: 
