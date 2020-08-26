@@ -20,7 +20,7 @@ description: "Configure Microsoft 365 to enable sharing and additional security 
 
 # Collaborating with people outside your organization
 
-The external sharing capabilities in Microsoft 365 provide an opportunity for people in your organization to collaborate with partners, vendors, customers, and other external users who don't have an account in your directory. You can share entire teams or sites with people outside your organization, or just individual files.
+The external sharing capabilities in Microsoft 365 provide an opportunity for people in your organization to collaborate with partners, vendors, customers, and others who don't have an account in your directory. You can share entire teams or sites with people outside your organization, or just individual files.
 
 Collaborating with people outside your organization consists of two major components:
 
