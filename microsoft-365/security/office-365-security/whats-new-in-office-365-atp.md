@@ -34,6 +34,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 - [Check your policies using Configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - [Manually override filter verdicts using the tenant allow/block list](tenant-allow-block-list.md)
+- [Extended capabilities in Threat Explorer including Top Targeted users, Transport Rules and Connectors](threat-explorer.md#extended-capabilities-in-Threat-Explorer.md)
 
 ## July/August 2020 
 
