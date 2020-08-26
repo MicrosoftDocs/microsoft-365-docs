@@ -302,6 +302,9 @@ The last step in setting up an HR connector is to run a sample script that will 
     ```
 
    If the upload is successful, the script displays the **Upload Successful** message.
+   
+   > [!NOTE]
+   > If you have problems running the command due to excution policies, please see [here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7) to set the right execution policies. 
 
 ## Step 5: Monitor the HR connector
 
