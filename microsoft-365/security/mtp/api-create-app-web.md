@@ -1,7 +1,7 @@
 ---
 title: Create an app to access Microsoft Threat Protection without a user
-description: 
-keywords: 
+description: Learn how to create an app to access Microsoft Threat Protection without a user
+keywords: app, access, api, create
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -195,8 +195,10 @@ Ensure that you got the correct token:
 ## Use the token to access Microsoft Threat Protection API
 
 1. Choose the API you want to use. For more information, see [Supported Microsoft Threat Protection APIs](api-supported.md).
-1. Set the authorization header in the http request you send to "Bearer {token}" (Bearer is the authorization scheme).
-1. The expiration time of the token is one hour. You can send more then one request with the same token.
+
+2. Set the authorization header in the http request you send to "Bearer {token}" (Bearer is the authorization scheme).
+
+3. The expiration time of the token is one hour. You can send more then one request with the same token.
 
 The following is an example of sending a request to get a list of alerts **using C#**: 
     ```
