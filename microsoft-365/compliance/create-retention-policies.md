@@ -280,7 +280,7 @@ If your retention policies are likely to be subject to these limitations, choose
 > 
 > For example, if you specify one SharePoint site to include in your retention policy that's configured to delete data, and then remove the single site, by default all SharePoint sites will then be subject to the retention policy that permanently deletes data. The same applies to includes for Exchange recipients, OneDrive accounts, Teams chat users etc.
 > 
-> In this scenario, toggle the location off if you don't want the **All** setting for the location to be subject to the retention policy.
+> In this scenario, toggle the location off if you don't want the **All** setting for the location to be subject to the retention policy. Alternatively, specify excludes to be exempt from the policy.
 
 ## Updating retention policies
 
