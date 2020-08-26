@@ -273,24 +273,6 @@
               href: archive-linkedin-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
-        - name: TeleMessage data connectors
-          items:  
-            - name: Android
-              href: archive-android-archiver-data.md
-            - name: AT&T Network
-              href: archive-att-network-archiver-data.md
-            - name: Bell Network
-              href: archive-bell-network-data.md
-            - name: Enterprise Number 
-              href: archive-enterprise-number-data.md
-            - name: O2 Network
-              href: archive-o2-network-data.md
-            - name: TELUS Network
-              href: archive-telus-network-data.md
-            - name: Verizon Network
-              href: archive-verizon-network-data.md
-            - name: WhatsApp
-              href: archive-whatsapp-data.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
         - name: Search for third-party data
