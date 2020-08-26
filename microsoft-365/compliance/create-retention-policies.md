@@ -276,9 +276,9 @@ There is a maximum number of policies that are supported for a tenant: 10,000. T
 If your retention policies are likely to be subject to these limitations, choose the configuration options that apply to entire locations, or use an org-wide policy.
 
 > [!WARNING]
-> If you configure includes and then later remove them all for a location, the configuration reverts to **All**.  Make sure this is the configuration that you intend before you save the policy.
+> If you configure includes and then remove the last one, the configuration reverts to **All**.  Make sure this is the configuration that you intend before you save the policy.
 > 
-> For example, if you specify one SharePoint site for your retention policy that's configured to delete data, and then remove the single site, by default all SharePoint sites will then be subject to the retention policy that irrevocably deletes data at the end of the configured retention period.
+> For example, if you specify one SharePoint site for your retention policy that's configured to delete data, and then remove the single site, by default all SharePoint sites will then be subject to the retention policy that permanently deletes data.
 > 
 > If you use includes, be especially careful if you remove the last entry. In this scenario, toggle the location off if you don't want all locations to be subject to the retention policy. 
 
