@@ -43,7 +43,7 @@ This article explains how to create an Azure AD application, get an access token
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
 
-   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration](../../media/atp-azure-new-app2.png)
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
@@ -52,11 +52,11 @@ This article explains how to create an Azure AD application, get an access token
    > [!NOTE]
    > WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection](images/add-permission.png)
+   ![Image of API access and API selection](../../media/add-permission.png)
 
    - Select **Application permissions** > **Alert.Read.All**, and then select **Add permissions**.
 
-   ![Image of API access and API selection](images/application-permissions.png)
+   ![Image of API access and API selection](../../media/application-permissions.png)
 
      Note that you need to select the relevant permissions. 'Read All Alerts' is only an example. For instance:
 
@@ -67,18 +67,18 @@ This article explains how to create an Azure AD application, get an access token
      > [!NOTE]
      > Every time you add a permission, you must select **Grant consent** for the new permission to take effect.
 
-    ![Image of Grant permissions](images/grant-consent.png)
+    ![Image of Grant permissions](../../media/grant-consent.png)
 
 6. To add a secret to the application, select **Certificates & secrets**, add a description to the secret, and then select **Add**.
 
     > [!NOTE]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve this value after you leave.
 
-    ![Image of create app key](images/webapp-create-key2.png)
+    ![Image of create app key](../../media/webapp-create-key2.png)
 
 7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the following.
 
-   ![Image of created app id](images/app-and-tenant-ids.png)
+   ![Image of created app id](../../media/app-and-tenant-ids.png)
 
 8. **For Microsoft Threat Protection Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
 
@@ -190,11 +190,11 @@ Ensure that you got the correct token:
 1. Validate that you get a 'roles' claim with the desired permissions
 1. In the following image, you can see a decoded token acquired from an app with permissions to all of Microsoft Threat Protection's roles:
 
-![Image of token validation](images/webapp-decoded-token.png)
+![Image of token validation](../../media/webapp-decoded-token.png)
 
 ## Use the token to access Microsoft Threat Protection API
 
-1. Choose the API you want to use. For more information, see [Supported Microsoft Threat Protection APIs](exposed-apis-list.md).
+1. Choose the API you want to use. For more information, see [Supported Microsoft Threat Protection APIs](api-supported.md).
 1. Set the authorization header in the http request you send to "Bearer {token}" (Bearer is the authorization scheme).
 1. The expiration time of the token is one hour. You can send more then one request with the same token.
 

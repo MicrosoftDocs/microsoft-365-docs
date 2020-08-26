@@ -24,7 +24,7 @@ search.appverid:
 #  Microsoft Threat Protection APIs license and terms of use
 **Applies to:**
 - Microsoft Threat Protection
-- 
+
 ## APIs
 
  Microsoft Threat Protection APIs are governed by [Microsoft API License and Terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
