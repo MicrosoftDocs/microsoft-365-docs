@@ -165,7 +165,7 @@ Out-File -FilePath $outputJsonPath -InputObject $alerts
 ($alerts | ConvertFrom-Json) | Export-CSV $outputCsvPath -NoTypeInformation 
 ```
 
-You’re all done! You have just successfully:
+You're all done! You have just successfully:
 -   Created and registered and application
 -   Granted permission for that application to read alerts
 -   Connected the API
