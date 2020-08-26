@@ -27,17 +27,17 @@ search.appverid:
 - Microsoft Threat Protection
 
 
-This page describes how to create an AAD application to get programmatic access to Microsoft Defender ATP on behalf of your customers.
+This page describes how to create an AAD application to get programmatic access to Microsoft Threat Protection on behalf of your customers.
 
-Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Threat Protection exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft Threat Protection capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 - Create a **multi-tenant** AAD application.
-- Get authorized(consent) by your customer administrator for your application to access Microsoft Defender ATP resources it needs.
+- Get authorized(consent) by your customer administrator for your application to access Microsoft Threat Protection resources it needs.
 - Get an access token using this application.
-- Use the token to access Microsoft Defender ATP API.
+- Use the token to access Microsoft Threat Protection API.
 
-The following steps with guide you how to create an AAD application, get an access token to Microsoft Defender ATP and validate the token.
+The following steps with guide you how to create an AAD application, get an access token to Microsoft Threat Protection and validate the token.
 
 ## Create the multi-tenant app
 
@@ -45,7 +45,7 @@ The following steps with guide you how to create an AAD application, get an acce
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
 
-   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration](../../media/atp-azure-new-app2.png)
 
 3. In the registration form:
 
@@ -55,37 +55,33 @@ The following steps with guide you how to create an AAD application, get an acce
 
 	- Redirect URI - type: Web, URI: https://portal.azure.com
 
-	![Image of Microsoft Azure partner application registration](images/atp-api-new-app-partner.png)
+	![Image of Microsoft Azure partner application registration](../../media/atp-api-new-app-partner.png)
 
 
-4. Allow your Application to access Microsoft Defender ATP and assign it with the minimal set of permissions required to complete the integration.
+4. Allow your Application to access Microsoft Threat Protection and assign it with the minimal set of permissions required to complete the integration.
 
    - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
    - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection](images/add-permission.png)
+   ![Image of API access and API selection](../../media/add-permission.png)
    
    ### Request API permissions
 
-   To determine which permission you need, please look at the **Permissions** section in the API you are interested to call. For instance:
-
-   - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-   
-   - To [isolate a device](isolate-machine.md), select 'Isolate machine' permission
+   To determine which permission you need, please look at the **Permissions** section in the API you are interested to call. 
 
    In the following example we will use **'Read all alerts'** permission:
 
    Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
 
-   ![Image of API access and API selection](images/application-permissions.png)
+   ![Image of API access and API selection](../../media/application-permissions.png)
 
 
 5. Click **Grant consent**
 
 	- **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
 
-	![Image of Grant permissions](images/grant-consent.png)
+	![Image of Grant permissions](../../media/grant-consent.png)
 
 6. Add a secret to the application.
 
@@ -93,17 +89,17 @@ The following steps with guide you how to create an AAD application, get an acce
 
     **Important**: After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
-    ![Image of create app key](images/webapp-create-key2.png)
+    ![Image of create app key](../../media/webapp-create-key2.png)
 
 7. Write down your application ID:
 
    - On your application page, go to **Overview** and copy the following:
 
-   ![Image of created app id](images/app-id.png)
+   ![Image of created app id](../../media/app-id.png)
 
 8. Add the application to your customer's tenant.
 
-    You need your application to be approved in each customer tenant where you intend to use it. This is because your application interacts with Microsoft Defender ATP application on behalf of your customer.
+    You need your application to be approved in each customer tenant where you intend to use it. This is because your application interacts with Microsoft Threat Protection application on behalf of your customer.
 
     A user with **Global Administrator** from your customer's tenant need to click the consent link and approve your application.
 
@@ -117,7 +113,7 @@ The following steps with guide you how to create an AAD application, get an acce
 
 	After clicking on the consent link, login with the Global Administrator of the customer's tenant and consent the application.
 
-	![Image of consent](images/app-consent-partner.png)
+	![Image of consent](../../media/app-consent-partner.png)
 
 	In addition, you will need to ask your customer for their tenant ID and save it for future use when acquiring the token.
 
@@ -196,7 +192,7 @@ Refer to [Get token using Python](run-advanced-query-sample-python.md#get-token)
 - Open a command window
 - Set CLIENT_ID to your Azure application ID
 - Set CLIENT_SECRET to your Azure application secret
-- Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access Microsoft Defender ATP application
+- Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access Microsoft Threat Protection application
 - Run the below command:
 
 ```
@@ -215,14 +211,14 @@ Sanity check to make sure you got a correct token:
 
 - Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it
 - Validate you get a 'roles' claim with the desired permissions
-- In the screenshot below, you can see a decoded token acquired from an Application with multiple permissions to Microsoft Defender ATP:
+- In the screenshot below, you can see a decoded token acquired from an Application with multiple permissions to Microsoft Threat Protection:
 - The "tid" claim is the tenant ID the token belongs to.
 
-![Image of token validation](images/webapp-decoded-token.png)
+![Image of token validation](../../media/webapp-decoded-token.png)
 
-## Use the token to access Microsoft Defender ATP API
+## Use the token to access Microsoft Threat Protection API
 
-- Choose the API you want to use, for more information, see [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
+- Choose the API you want to use, for more information, see [Supported Microsoft Threat Protection APIs](api-supported.md)
 - Set the Authorization header in the Http request you send to "Bearer {token}" (Bearer is the Authorization scheme)
 - The Expiration time of the token is 1 hour (you can send more then one request with the same token)
 
