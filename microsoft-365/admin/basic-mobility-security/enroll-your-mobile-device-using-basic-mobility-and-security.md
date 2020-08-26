@@ -41,7 +41,8 @@ Basic Mobility and Security for Microsoft 365 hosted by the Intune service works
     
 If your device is not listed above, and you need to use it with Basic Mobility and Security, contact your work or school administrator.
 
->[!TIP] If you're having trouble enrolling your device, see [Troubleshoot Basic Mobility and Security](https://support.microsoft.com/office/troubleshoot-basic-mobility-and-security-c863b2bf-45f3-483a-ba05-29fc7f4d6434).
+>[!TIP] 
+>If you're having trouble enrolling your device, see [Troubleshoot Basic Mobility and Security](https://support.microsoft.com/office/troubleshoot-basic-mobility-and-security-c863b2bf-45f3-483a-ba05-29fc7f4d6434).
 
 ## Set up your mobile device with Intune and Basic Mobility and Security
 
@@ -49,7 +50,8 @@ The Intune Company Portal enables a device to be managed by Microsoft 365 and Ba
 
 ### iPhone or iPad
 
->[!TIP]You won’t be able to send and receive email until you complete this step.
+>[!TIP]
+>You won’t be able to send and receive email until you complete this step.
 
 Go to the Apple App Store, and download and install Intune Company Portal.
 
@@ -57,7 +59,8 @@ To connect and configure your iOS phone or tablet with the Company portal to Off
 
 ### Android phone or tablet
 
->[!TIP]You won’t be able to send and receive email until you complete this step.
+>[!TIP]
+>You won’t be able to send and receive email until you complete this step.
 
 Go to the Google Play store, and download and install Intune Company Portal.
 
