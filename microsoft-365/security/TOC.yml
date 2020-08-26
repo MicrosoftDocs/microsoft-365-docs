@@ -223,6 +223,22 @@
               items: 
         - name: Reference
           items: 
+            - name: Permissions & settings
+              items: 
+                - name: Manage access
+                  href: mtp/mtp-permissions.md
+                - name: Set time zone
+                  href: mtp/mtp-time-zone.md
+                - name: View device profiles
+                  href: mtp/device-profile.md
+                - name: Provide feedback
+                  href: mtp/feedback.md
+                - name: Create ServiceNow tickets and tasks
+                  items:
+                    - name: ServiceNow integration overview 
+                      href: ./mtp/tickets.md
+                    - name: ServiceNow tickets in the security center
+                      href: ./mtp/tickets-security-center.md
             - name: Overview of Microsoft Threat Protection APIs
               href: mtp/api-overview.md
             - name: Get started
@@ -251,22 +267,7 @@
                   href: mtp/api-list-incidents.md
                 - name: Update incidents
                   href: mtp/api-update-incidents.md  
-            - name: Permissions & settings
-              items: 
-                - name: Manage access
-                  href: mtp/mtp-permissions.md
-                - name: Set time zone
-                  href: mtp/mtp-time-zone.md
-                - name: View device profiles
-                  href: mtp/device-profile.md
-                - name: Provide feedback
-                  href: mtp/feedback.md
-                - name: Create ServiceNow tickets and tasks
-                  items:
-                    - name: ServiceNow integration overview 
-                      href: ./mtp/tickets.md
-                    - name: ServiceNow tickets in the security center
-                      href: ./mtp/tickets-security-center.md
+ 
     - name: Office 365 security
       items: 
         - name: Get started
