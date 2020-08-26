@@ -46,7 +46,7 @@ We recommend going through several steps to quickly get up and running with adva
 | **Learn how to use the query results** | Learn about charts and various ways you can view or export your results. Explore how you can quickly tweak queries, drill down to get richer information, and take response actions. | - [Work with query results](advanced-hunting-query-results.md)<br>- [Take action on query results](advanced-hunting-take-action.md) |
 | **Understand the schema** | Get a good, high-level understanding of the tables in the schema and their columns. This will help you determine where to look for data and how to construct your queries. | [Schema reference](advanced-hunting-schema-tables.md) |
 | **Leverage predefined queries** | Explore collections of predefined queries covering different threat hunting scenarios. | - [Use shared queries](advanced-hunting-shared-queries.md)<br>- [Go hunt](advanced-hunting-go-hunt.md) |
-| **Optimize queries** | Understand how to create efficient queries and queries that combine data from emails and devices. | - [Query best practices](advanced-hunting-shared-queries.md) <br>- [Hunt across devices and emails](advanced-hunting-best-practices.md) |
+| **Optimize queries** | Understand how to create efficient queries and queries that combine data from emails and devices. | - [Query best practices](advanced-hunting-best-practices.md) <br>- [Hunt across devices and emails](advanced-hunting-query-emails-devices.md) |
 | **Create custom detection rules** | Understand how you can use advanced hunting queries to trigger alerts and apply response actions automatically. | - [Custom detections overview](custom-detections-overview.md)<br>- [Custom detection rules](custom-detection-rules.md) |
 
 ## Get access
@@ -57,6 +57,9 @@ Advanced hunting data can be categorized into two distinct types, each consolida
 
 - **Event or activity data** — populates tables about alerts, security events, system events, and routine assessments. Advanced hunting receives this data almost immediately after the sensors that collect them successfully transmit them to the corresponding cloud services. For example, you can start to query event data from healthy sensors on workstations or domain controllers almost immediately after they are available on Microsoft Defender ATP and Azure ATP.
 - **Entity data** — populates tables with consolidated information about users and devices. This data comes from both relatively static data sources, such as Active Directory entries, and dynamic sources, such as event logs. To provide fresh data, tables are updated every 15 minutes with any new information, adding rows that might not be fully populated. Every 24 hours, data is consolidated to insert a record that contains the latest, most comprehensive data set about each entity.
+
+## Time zone
+All time information in advanced hunting is in the UTC time zone.
 
 ## Related topics
 - [Learn the query language](advanced-hunting-query-language.md)
