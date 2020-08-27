@@ -19,7 +19,7 @@ Many enterprise environments have legacy requirements for mapped drives to allow
 - Migrate mapped drives used by teams to share files to SharePoint Online. 
 - Modernize or replace any applications that use on-premises file shares to remove that requirement.
   
-Modernizing these services will allow the best end-user experience with Microsoft Managed Desktop. Microsoft FastTrack Services can assist you in modernizing your environment by using Microsoft Cloud Services. You can check whether you're eligible for FastTrack services at [Eligible Services and Plans](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) and then contact them directly to prepare for Microsoft Managed Desktop. For background about FastTrack OneDrive for Business or SharePoint Online Migration, see [Data Migration](https://docs.microsoft.com/fasttrack/o365-data-migration).
+Modernizing these services will allow the best user experience with Microsoft Managed Desktop. Microsoft FastTrack Services can assist you in modernizing your environment by using Microsoft Cloud Services. You can check whether you're eligible for FastTrack services at [Eligible Services and Plans](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) and then contact them directly to prepare for Microsoft Managed Desktop. For background about FastTrack OneDrive for Business or SharePoint Online Migration, see [Data Migration](https://docs.microsoft.com/fasttrack/o365-data-migration).
 
 ## Mapped drives on Microsoft Managed Desktop
  
