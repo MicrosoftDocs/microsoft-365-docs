@@ -27,7 +27,7 @@ For more information, see [Windows Update for Business: Update types](https://do
 
 Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 
-- **Test**: Used to validate Microsoft Managed Desktop policy changes, operating system updates, feature updates, and other changes pushed to the tenant. There should not be any end users placed in the test group. The test group is exempt from any established service level agreements and end-user support. This group is available for use to validate compatibility of applications with new policy or operating system changes.  
+- **Test**: Used to validate Microsoft Managed Desktop policy changes, operating system updates, feature updates, and other changes pushed to the tenant. There should not be any users placed in the test group. The test group is exempt from any established service level agreements and user support. This group is available for use to validate compatibility of applications with new policy or operating system changes.  
 - **First**: Contains early software adopters and devices that could be subject to pre-release updates. Devices in this group might experience outages if there are scenarios which were not covered during testing in the test ring.
 - **Fast**: Prioritizes speed over stability. Useful for detecting quality issues before they are offered to the Broad group. This group serves as a next layer of validation but is generally more stable than the Test and First groups. 
 - **Broad**: Last group to have feature and quality updates available. This group contains the majority of users in the tenant, and therefore favors stability over speed in deployment. Testing of apps should be done here as the environment is most stable. 
@@ -39,7 +39,7 @@ For more information roles and responsibilities with these deployment groups, se
 
 How update deployment works:
 - Microsoft Managed Desktop deploys a new feature or quality update according the schedule specified below.
-- During deployment, Microsoft Managed Desktop monitors for signs of failure or disruption (based on diagnostic data and the end-user support system). If any are detected, then the deployment to all current and future groups is immediately paused.
+- During deployment, Microsoft Managed Desktop monitors for signs of failure or disruption (based on diagnostic data and the user support system). If any are detected, then the deployment to all current and future groups is immediately paused.
     - Example: if an issue is discovered while deploying a quality update to the First group, then update deployments to First, Fast, and Broad will all be paused until the issue is resolved.
     - Compatibility issues can be reported by filing a ticket in the Microsoft Managed Desktop Admin portal.
 - Feature and quality updates are paused independently. Pause is in effect for 35 days by default, but can be reduced or extended depending on whether the issue is remediated.
@@ -70,7 +70,7 @@ For more information about Current Channel for Microsoft 365 Apps for enterprise
 
 Microsoft Managed Desktop does not support devices that are part of the Windows Insider program. The Windows Insider program is used to validate pre-release Windows software and is intended for devices that aren't mission critical. While this is an important Microsoft initiative, it is not intended for broad deployment in production environments. 
 
-Any devices found with Windows Insider builds might be put into the Test group and will be exempt from update service level agreements and end-user support from Microsoft Managed Desktop.
+Any devices found with Windows Insider builds might be put into the Test group and will be exempt from update service level agreements and user support from Microsoft Managed Desktop.
 
 ## Bandwidth management
 
