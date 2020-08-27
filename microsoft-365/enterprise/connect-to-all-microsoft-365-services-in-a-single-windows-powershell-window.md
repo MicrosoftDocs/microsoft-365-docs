@@ -227,7 +227,7 @@ Connect-MicrosoftTeams -Credential $credential
 
 ### Azure Active Directory PowerShell for Graph module
 
-Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Security &amp; Compliance Center* using multi-factor authentication using the Azure Active Directory PowerShell for Graph module.
+Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Security &amp; Compliance Center* with multi-factor authentication using the Azure Active Directory PowerShell for Graph module.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -246,7 +246,7 @@ Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Exchange Online* using multi-factor authentication using the Azure Active Directory PowerShell for Graph module.
+Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Exchange Online* with multi-factor authentication using the Azure Active Directory PowerShell for Graph module.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -267,7 +267,7 @@ Connect-MicrosoftTeams
 ```
 ### Microsoft Azure Active Directory Module for Windows PowerShell module
 
-Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Security &amp; Compliance Center* using multi-factor authentication using the Microsoft Azure Active Directory Module for Windows PowerShell module.
+Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Security &amp; Compliance Center* with multi-factor authentication using the Microsoft Azure Active Directory Module for Windows PowerShell module.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -286,7 +286,7 @@ Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Exchange Online* using multi-factor authentication using the Microsoft Azure Active Directory Module for Windows PowerShell module.
+Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Exchange Online* using multi-factor authentication with the Microsoft Azure Active Directory Module for Windows PowerShell module.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
