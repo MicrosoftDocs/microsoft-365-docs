@@ -9,13 +9,13 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 
-description: Understand the Contoso networking infrastructure and how it uses its SD-WAN technology for optimal networking performance to Microsoft 365 Enterprise cloud services.
+description: Understand the Contoso networking infrastructure and how it uses its SD-WAN technology for optimal networking performance to Microsoft 365 for enterprise cloud services.
 ---
 
 # Networking for the Contoso Corporation
@@ -46,7 +46,7 @@ Figure 1 shows Contoso's networking infrastructure and its connections to the In
 
 ## Use of SD-WAN for optimal network connectivity to Microsoft
 
-Contoso followed [Microsoft 365 network connectivity principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) to:
+Contoso followed [Microsoft 365 network connectivity principles](microsoft-365-network-connectivity-principles.md) to:
 
 1. Identify and differentiate Microsoft 365 network traffic
 2. Egress network connections locally
@@ -79,17 +79,17 @@ Figure 2 shows the percentage of network traffic when accessing servers across C
 
 For users in satellite or regional hub offices, 60% of the resources needed by employees can be served by satellite and regional hub office servers. The additional 40% of resource requests must go over the WAN link to the Paris campus.
 
-## Contoso's network analysis and preparation of their network for Microsoft 365 Enterprise
+## Contoso's network analysis and preparation of their network for Microsoft 365 for enterprise
 
-Successful adoption of Microsoft 365 Enterprise services by Contoso’s users depend on highly available and performant connectivity to the Internet, or directly to Microsoft cloud services. Contoso took these steps to plan for and implement optimized connectivity to Microsoft 365 Enterprise cloud services:
+Successful adoption of Microsoft 365 for enterprise services by Contoso’s users depend on highly available and performant connectivity to the Internet, or directly to Microsoft cloud services. Contoso took these steps to plan for and implement optimized connectivity to Microsoft 365 for enterprise cloud services:
 
 1. Created a company WAN network diagram to aid with planning
 
    Contoso started their network planning by creating a diagram showing their locations, the existing network connectivity, their existing network perimeter devices and classes of service that are managed on the network. They used this diagram for each subsequent step in the planning and implementation of networking connectivity.
 
-2. Created a plan for Microsoft 365 Enterprise network connectivity
+2. Created a plan for Microsoft 365 for enterprise network connectivity
 
-   Contoso used the [Microsoft 365 network connectivity principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) and provided reference network architectures to determine SD-WAN as their preferred topology for Microsoft 365 connectivity.
+   Contoso used the [Microsoft 365 network connectivity principles](microsoft-365-network-connectivity-principles.md) and provided reference network architectures to determine SD-WAN as their preferred topology for Microsoft 365 connectivity.
 
 3. Analyzed Internet connection utilization and MPLS WAN bandwidth at each office and increased bandwidth as needed
 
@@ -105,7 +105,7 @@ Successful adoption of Microsoft 365 Enterprise services by Contoso’s users de
 
 6. Validated network endpoint and port connectivity
 
-   Contoso ran network connectivity test tools provided by Microsoft to validate connectivity for Microsoft 365 Enterprise cloud services.
+   Contoso ran network connectivity test tools provided by Microsoft to validate connectivity for Microsoft 365 for enterprise cloud services.
 
 7. Optimized employee computers for network connectivity
 
@@ -117,8 +117,8 @@ Successful adoption of Microsoft 365 Enterprise services by Contoso’s users de
 
 ## See also
 
-[Networking for Microsoft 365 Enterprise](networking-infrastructure.md)
+[Networking roadmap for Microsoft 365](networking-roadmap-microsoft-365.md)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)
