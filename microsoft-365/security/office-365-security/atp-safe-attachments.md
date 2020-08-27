@@ -49,13 +49,13 @@ Safe Attachments scanning takes place in the same region where your Microsoft 36
 
 These are the important settings in Safe Attachments policies:
 
-- **Unknown malware response**: This setting controls the action for unknown malware in email attachments. The available options are described in the following table:
+- **Unknown malware response**: This setting controls the action for Safe Attachments malware scanning in email messages. The available options are described in the following table:
 
   ****
 
   |Option|Effect|Use when you want to:|
   |---|---|---|
-  |**Off**|Attachments aren't scanned for malware by Safe Attachments. Messages are still scanned for malware by [anti-malware protection in EOP](anti-malware-protection.md).|Turn scanning off for selected recipients. <br/><br/> Prevent unnecessary delays in routing internal mail. <br/><br/> **This option is not recommended for most users. You should only use this option to turn off Safe Attachments scanning for recipients who only get messages from trusted senders.**|
+  |**Off**|Attachments aren't scanned for malware by Safe Attachments. Messages are still scanned for malware by [anti-malware protection in EOP](anti-malware-protection.md).|Turn scanning off for selected recipients. <br/><br/> Prevent unnecessary delays in routing internal mail. <br/><br/> **This option is not recommended for most users. You should only use this option to turn off Safe Attachments scanning for recipients who only receive messages from trusted senders.**|
   |**Monitor**|Delivers messages with attachments and then tracks what happens with detected malware. <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|See where detected malware goes in your organization.|
   |**Block**|Prevents messages with detected malware attachments from being delivered. <br/><br/> Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages. <br/><br/> Automatically blocks future instances of the messages and attachments. <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Protects your organization from repeated attacks using the same malware attachments. <br/><br/> This is the default value, and the recommended value in Standard and Strict [preset security policies](preset-security-policies.md).|
   |**Replace**|Removes detected malware attachments. <br/><br/> Notifies recipients that attachments have been removed. <br/><br/>  Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages. <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Raise visibility to recipients that attachments were removed because of detected malware.|
