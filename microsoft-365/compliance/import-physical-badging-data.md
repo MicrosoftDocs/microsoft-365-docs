@@ -44,15 +44,15 @@ Setting up a physical badging connector consists of the following tasks:
 
 ## Step 1: Create an app in Azure Active Directory
 
-The first step is to create and register a new app in Azure Active Directory (AAD). The app will correspond to the physical badging connector that you create in Step 3. Creating this app will allow AAD to authenticate the push request for JSON payload containing physical badging data. During the creation of this AAD app, be sure to save the following information. These values will be used in later steps.
+The first step is to create and register a new app in Azure Active Directory (Azure AD). The app will correspond to the physical badging connector that you create in Step 3. Creating this app will allow Azure AD to authenticate the push request for JSON payload containing physical badging data. During the creation of this Azure AD app, be sure to save the following information. These values will be used in later steps.
 
-- AAD application ID (also called the *app Id* or *client Id*)
+- Azure AD application ID (also called the *app Id* or *client Id*)
 
-- AAD application secret (also called the *client secret*)
+- Azure AD application secret (also called the *client secret*)
 
 - Tenant Id (also called the *directory Id*)
 
-For step-by-step instructions for creating an app in AAD, see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+For step-by-step instructions for creating an app in Azure AD, see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## Step 2: Prepare a JSON file with physical badging data
 
@@ -62,11 +62,11 @@ The JSON file must conform to the schema definition required by the connector. H
 
 |**Property**|**Description**|**Data type**|
 |:-----------|:--------------|:------------|
+|UserId|An employee can have multiple digital identities across the systems. The input needs to have the Azure AD ID already resolved by the source system. |UPN or email address|
 |AssetId|The reference ID of the physical asset or physical access point.| Alphanumeric string|
 |AssetName|The friendly name of the physical asset or physical access point.|Alphanumeric string|
+|EventTime|The time stamp of access.|Date and time, in UTC format|
 |AccessStatus|Value of `Success` or `Failed`| String|
-|EventTime|The time stamp of access.|Date and time, in UTC format.|
-|UserId|An employee can have multiple digital identities across the systems. The input needs to have the Azure AD ID already resolved by the source system. |UPN or email address|
 |||
 
 Here's an example of a JSON file that conforms to the required schema:
@@ -74,20 +74,56 @@ Here's an example of a JSON file that conforms to the required schema:
 ```text
 [
     {
+        "UserId":"sarad@contoso.com"
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
-        "AccessStatus":"Failed",
         "EventTime":"2019-07-04T01:57:49",
-        "UserId":"sarad@contoso.com ",
+        "AccessStatus":"Failed",
     },
     {
+        "UserId":"pilarp@contoso.com",        
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
+        "EventTime":"2019-07-04T02:57:49",        
         "AccessStatus":"Success",
-        "EventTime":"2019-07-04T02:57:49",
-        "UserId":"pilarp@contoso.com",
     }
 ]
+```
+You can also download the following schema definition for the JSON file from the wizard when you create the physical badging connector in Step 3.
+
+```text
+{
+	"title" : "Physical Badging Signals",
+	"description" : "Access signals from physical badging systems",
+	"DataType" : {
+		"description" : "Identify what is the data type for input signal",
+		"type" : "string",
+	},
+	"type" : "object",
+	"properties": {
+		"UserId" : {
+			"description" : "Unique identifier AAD Id resolved by the source system",
+			"type" : "string",
+		},
+		"AssetId": {
+			"description" : "Unique ID of the physical asset/access point",
+			"type" : "string",
+		},
+		"AssetName": {
+			"description" : "friendly name of the physical asset/access point",
+			"type" : "string",
+		},
+		"EventTime" : {
+			"description" : "timestamp of access",
+			"type" : "string",
+		},
+		"AccessStatus" : {
+			"description" : "what was the status of access attempt - Success/Failed",
+			"type" : "string",
+		},
+	}
+	"required" : ["UserId", "AssetId", "EventTime" "AccessStatus"]
+}
 ```
 
 ## Step 3: Create the physical badging connector
@@ -102,7 +138,7 @@ The next step is to create a physical badging connector in the Microsoft 365 com
 
 4. On the **Authentication credentials** page, do the following and then click **Next**:
   
-   1. Type or paste the AAD application ID for the Azure app that you created in Step 1.
+   1. Type or paste the Azure AD application ID for the Azure app that you created in Step 1.
   
    2. Download the sample schema for your reference to create the JSON file.
   
@@ -141,7 +177,7 @@ After you run the script, the JSON file containing the physical badging data is 
 7. Run the following command to push the physical badging data in the JSON file to the Microsoft cloud; for example:
 
    ```powershell
-   .\PhysicalBadging.ps1 -tenantId "<Tenant Id>" -appId "<AAD App Id>" -appSecret "<AAD App Secret>" -jobId "Job Id" -jsonFilePath "<records file path>"
+   .\PhysicalBadging.ps1 -tenantId "<Tenant Id>" -appId "<Azure AD App Id>" -appSecret "<Azure AD App Secret>" -jobId "Job Id" -jsonFilePath "<records file path>"
    ```
 
    The following table describes the parameters to use with this script and their required values. Information you obtained in the previous steps is used in the values for these parameters.
@@ -149,8 +185,8 @@ After you run the script, the JSON file containing the physical badging data is 
    | **Parameter**|**Description**|
    |:-------------|:--------------|
    |tenantId | This is the Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenantId for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization. |
-   |appId | This is the AAD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization.                    |
-   |appSecret | This is the AAD application secret for the app that you created in Azure AD in Step 1. This is also used for authentication.                                                        |
+   |appId | This is the Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization.                    |
+   |appSecret | This is the Azure AD application secret for the app that you created in Azure AD in Step 1. This is also used for authentication.                                                        |
    |jobId | This is the Job Id for the physical badging connector that you created in Step 3. This is used to associate the physical badging data that is pushed to the Microsoft cloud with the physical badging connector.              |
    |JsonFilePath | This is the file path on the local computer (the one you're using to run the script) for the JSON file that you created in Step 2. This file must follow the sample schema described in Step 3.|
    |||
@@ -200,7 +236,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 4. On the **General** tab, type a descriptive name for the scheduled task; for example, **physical badging connector Script**. You can also add an optional description.
 
-5. Under **Security options**, do the following:
+5. Under **Security options**, do the following things:
 
    1. Determine whether to run the script only when you're logged on to the computer or run it when you're logged on or not.
 
