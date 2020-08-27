@@ -1,5 +1,5 @@
 ---
-title: "Connect to all Microsoft 365 services in a single Windows PowerShell window"
+title: "Connect to all Microsoft 365 services in a single PowerShell window"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,24 +17,22 @@ ms.custom:
 - O365ITProTrain
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
-description: "Summary: Connect Windows PowerShell to all Microsoft 365 services in a single Windows PowerShell window."
+description: "Summary: Connect to all Microsoft 365 services in a single PowerShell window."
 ---
 
-# Connect to all Microsoft 365 services in a single Windows PowerShell window
+# Connect to all Microsoft 365 services in a single PowerShell window
 
-When you use PowerShell to manage Microsoft 365, it is possible to have up to five different Windows PowerShell sessions open at the same time corresponding to Microsoft 365 admin center, SharePoint Online, Exchange Online, Skype for Business Online, Microsoft Teams, and the Security &amp; Compliance Center. With five different connection methods in separate Windows PowerShell sessions, your desktop could look like this:
+When you use PowerShell to manage Microsoft 365, it is possible to have multiple PowerShell sessions open at the same time in different PowerShell windows corresponding to managing user accounts, SharePoint Online, Exchange Online, Skype for Business Online, Microsoft Teams, and the Security &amp; Compliance Center. 
   
-![Five Windows PowerShell consoles running at once](../media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
-  
-This is not optimal for managing Microsoft 365 because you can't exchange data among those five windows for cross-service management. This topic describes how to use a single instance of Windows PowerShell from which you can manage Microsoft 365 accounts, Skype for Business Online, Exchange Online, SharePoint Online, Microsoft Teams, and the Security &amp; Compliance Center.
+This is not optimal for managing Microsoft 365 because you can't exchange data among those windows for cross-service management. This topic describes how to use a single instance of PowerShell from which you can manage Microsoft 365 accounts, Skype for Business Online, Exchange Online, SharePoint Online, Microsoft Teams, and the Security &amp; Compliance Center.
 
 >[!Note]
->This article currently only contains the commands to connect to the Worldwide (+GCC) cloud. Additional notes provide links to articles with information about connecting to the other Microsoft 365 clouds.
+>This article currently only contains the commands to connect to the Worldwide (+GCC) cloud. Notes provide links to articles with information about connecting to the other Microsoft 365 clouds.
 >
 
 ## Before you begin
 
-Before you can manage all of Microsoft 365 from a single instance of Windows PowerShell, consider the following prerequisites:
+Before you can manage all of Microsoft 365 from a single instance of PowerShell, consider the following prerequisites:
   
 - The Microsoft 365 work or school account that you use for these procedures needs to be a member of a Microsoft 365 admin role. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide). This a requirement for PowerShell for Microsoft 365, not necessarily for all other Microsoft 365 services.
     
@@ -62,11 +60,11 @@ Before you can manage all of Microsoft 365 from a single instance of Windows Pow
     
    - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-   - [Skype for Business Online, Windows PowerShell Module](https://go.microsoft.com/fwlink/p/?LinkId=532439)
+   - [Skype for Business Online, PowerShell Module](https://go.microsoft.com/fwlink/p/?LinkId=532439)
    - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exchange-online-powershell-v2-module)
    - [Teams PowerShell Overview](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
--  Windows PowerShell needs to be configured to run signed scripts for Skype for Business Online and the Security &amp; Compliance Center. To do this, run the following command in an elevated Windows PowerShell session (a Windows PowerShell window you open by selecting **Run as administrator**).
+-  PowerShell needs to be configured to run signed scripts for Skype for Business Online and the Security &amp; Compliance Center. To do this, run the following command in an elevated PowerShell session (a PowerShell window you open by selecting **Run as administrator**).
     
    ```powershell
    Set-ExecutionPolicy RemoteSigned
@@ -90,14 +88,14 @@ Here are the steps to connect to all the services in a single PowerShell window 
    Connect-AzureAD -Credential $credential
    ```
   
-   Alternately, if you are using the Microsoft Azure Active Directory Module for Windows PowerShell module, run this command.
+   Alternately, if you are using the Microsoft Azure Active Directory Module for PowerShell module, run this command.
       
    ```powershell
    Connect-MsolService -Credential $credential
    ```
 
    > [!Note]
-   > PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
+   > PowerShell Core does not support the Microsoft Azure Active Directory Module for PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from PowerShell.
 
 4. Run these commands to connect to SharePoint Online. Specify the organization name for your domain. For example, for "litwareinc.onmicrosoft.com", the  organization name value is "litwareinc".
     
@@ -161,7 +159,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-Alternately, here are all the commands in a single block when using the Microsoft Azure Active Directory Module for Windows PowerShell module. Specify the name of your domain host, and then run them all at one time.
+Alternately, here are all the commands in a single block when using the Microsoft Azure Active Directory Module for PowerShell module. Specify the name of your domain host, and then run them all at one time.
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -179,7 +177,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-When you are ready to close down the Windows PowerShell window, run this command to remove the active sessions to Skype for Business Online, SharePoint Online, the Security &amp; Compliance Center, and Teams:
+When you are ready to close down the PowerShell window, run this command to remove the active sessions to Skype for Business Online, SharePoint Online, the Security &amp; Compliance Center, and Teams:
   
 ```powershell
 Remove-PSSession $sfboSession ; Remove-PSSession $SccSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
@@ -206,7 +204,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
 
-Alternately, here are all the commands when using the Microsoft Azure Active Directory Module for Windows PowerShell module.
+Alternately, here are all the commands when using the Microsoft Azure Active Directory Module for PowerShell module.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -232,4 +230,3 @@ For the Security &amp; Compliance Center, see [Connect to Security & Compliance 
 - [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md)
 - [Manage SharePoint Online with PowerShell](manage-sharepoint-online-with-microsoft-365-powershell.md)
 - [Manage Microsoft 365 user accounts, licenses, and groups with PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
-- [Use Windows PowerShell to create reports in Microsoft 365](use-windows-powershell-to-create-reports-in-microsoft-365.md)
