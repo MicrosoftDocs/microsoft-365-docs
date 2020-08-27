@@ -135,6 +135,7 @@ In the wizard, we'll just confirm that you own the domain, and then automaticall
 
 - [1&amp;1 IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
+- [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
@@ -158,5 +159,3 @@ If you have a website that you use with your business, it will keep working wher
 [Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
 
 [Set up your domain (host-specific instructions)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
-
-[Get help with domains](../get-help-with-domains/get-help-with-domains.md)

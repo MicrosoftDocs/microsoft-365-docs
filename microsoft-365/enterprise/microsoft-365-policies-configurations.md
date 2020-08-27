@@ -1,14 +1,14 @@
 ---
-title: Identity and device access configurations - Microsoft 365 Enterprise
+title: Identity and device access configurations - Microsoft 365 for enterprise
 description:  Describes Microsoft recommendations and core concepts for deploying secure email, docs, and apps policies and configurations.
-author: brendacarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/11/2018
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom: 
 - it-pro
@@ -59,15 +59,14 @@ Each industry also has their own set of specialized regulations. Rather than pro
 
 This guidance shows you how to implement protection for identities and devices for each of these tiers of protection. Use this guidance as a starting point for your organization and adjust the policies to meet your organization's specific requirements.
 
-It's important to use consistent levels of protection across your data, identities, and devices. For example, if you implement this guidance, be sure to protect your data at comparable levels. These architecture models show you which capabilities are comparable.
+It's important to use consistent levels of protection across your data, identities, and devices. For example, if you implement this guidance, be sure to protect your data at comparable levels. 
 
-**Identity and device protection for Office 365**<br/>
+The **Identity and device protection for Office 365** architecture model shows you which capabilities are comparable.
+
 ![Thumbnail for poster "Identity and device protection for Office 365"](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)
 
-**File Protection Solutions in Office 365**<br/>
-![Thumbnail for poster "File protection solutions in Office 365"](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
-[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+Additionally, see the [Deploy information protection for data privacy regulations](../solutions/information-protection-deploy.md) solution to protect information stored in Microsoft 365.
 
 ## Security and productivity trade-offs
 
@@ -82,7 +81,7 @@ The recommendations provided are based on the following principles:
 
 ## Services and concepts for identity and device access protection
 
-Microsoft 365 Enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security (EMS), to empower everyone to be creative and work together securely.
+Microsoft 365 for enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security (EMS), to empower everyone to be creative and work together securely.
 
 This section provides an overview of the Microsoft 365 services and capabilities that are important for identity and device access.
 

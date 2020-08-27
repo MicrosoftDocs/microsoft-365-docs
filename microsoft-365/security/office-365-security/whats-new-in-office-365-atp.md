@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 07/23/2020
+ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -29,6 +29,14 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 > [!TIP]
 > Don't have Office 365 ATP yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).
+
+## September/October 2020 
+
+- [Check your policies using Configuration Analyzer](configuration-analyzer-for-security-policies.md)
+- [Manually override filter verdicts using the tenant allow/block list](tenant-allow-block-list.md)
+- [Extended capabilities in Threat Explorer including top targeted users, transport rules, and connectors](threat-explorer.md#extended-capabilities-in-Threat-Explorer.md)
+- Surfacing overrides information in [Threat Explorer](threat-explorer.md) (email was allowed/blocked by Tenant/user policy)
+- Surfacing URL threats in [Threat Explorer](threat-explorer.md) (malware, phish, spam, or none)
 
 ## July/August 2020 
 
@@ -45,8 +53,6 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 - Enhancements to [Threat Explorer](threat-explorer.md) to enable security operations teams to search and filter on multiple fields while [investigating email](investigate-malicious-email-that-was-delivered.md):
     - Delivery location and special actions
     - Directionality (inbound, outbound, or intra-org)
-    - Overrides (user blocking or allowing)
-    - URL threat (malware, phish, spam, or none)
     - Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)
     - Granular time filters (day, hour, half-hour) 
 
@@ -93,5 +99,4 @@ Did you know that Office 365 ATP is available in two plans? [Learn more about wh
 [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Office 365 ATP Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-
 
