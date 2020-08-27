@@ -142,7 +142,7 @@ Verify and check these items off your list before you continue:
 
 - **Exchange client and protocol requirements**
  
-    The availability of modern authentication is determined by the combination of the client, protocol, and configuration. If modern authentication is not supported by the client, protocol, or configuration, then the client will continue to leverage legacy authentication mechanisms for authentication.
+    The availability of modern authentication is determined by the combination of the client, protocol, and configuration. If modern authentication is not supported by the combination of the client, protocol, and/or configuration, then the client will continue to leverage legacy authentication mechanisms for authentication.
   
     The following clients and protocols support modern authentication with on-premises Exchange:
 
@@ -153,7 +153,7 @@ Verify and check these items off your list before you continue:
   |Outlook for iOS and Android  <br/> | Microsoft sync technology <br/> |See [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) for more information.  <br/> |
   |Exchange ActiveSync clients (e.g., iOS11 Mail)  <br/> |Exchange ActiveSync  <br/> |For Exchange ActiveSync clients that support modern authentication, you must recreate the profile in order to switch from basic authentication to modern authentication.  <br/> |
 
-    Protocols that are not listed (e.g., POP3) do not support modern authentication with on-premises Exchange and will continue to leverage legacy authentication mechanisms.
+    Clients and protocols that are not listed (e.g., POP3) do not support modern authentication with on-premises Exchange and will continue to leverage legacy authentication mechanisms.
 
 - **General prerequisites**
   - If you use AD FS, you should have Windows 2012 R2 AD FS 3.0 and above for federation.
