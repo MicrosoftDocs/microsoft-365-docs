@@ -64,7 +64,7 @@ The first step is to gain access to the **Data Connectors** and set up the [Symp
 
 The second step is to configure the Symphony connector in the Merge1 site. For more details on how to configure the Symphony connector in the Globanet Merge1 site, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Symphony%20User%20Guide%20.pdf).
 
-After you click **Save & Finish,** you are returned to the Microsoft 365 compliance center, on the **User mapping** page of the connector wizard.
+After you click **Save & Finish,** you are returned to the Microsoft 365 compliance center, to the **User mapping** page of the connector wizard.
 
 ## Step 3: Map users and complete the connector set up
 

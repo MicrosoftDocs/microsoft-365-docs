@@ -62,7 +62,7 @@ The first step is to gain access to the **Data Connectors** and set up the [Text
 
 The second step is to configure the Text-Delimited connector in the Merge1 site. For more details on how to configure the Text-Delimited connector in the Globanet Merge1 site, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Text-Delimited%20User%20Guide%20.pdf).
 
-Once you click **Save& Finish,** you will be navigated to the Microsoft 365 compliance center, to the **User mapping** section.
+After you click **Save & Finish,** you are returned to the Microsoft 365 compliance center, to the **User mapping** page of the connector wizard.
 
 ## Step 3: Map users and complete the connector set up
 
