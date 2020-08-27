@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -34,7 +34,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 - [Check your policies using Configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - [Manually override filter verdicts using the tenant allow/block list](tenant-allow-block-list.md)
-- Surfacing Overrides information in Threat Explorer (email was allowed/blocked by Tenant/user policy)
+- Surfacing overrides information in Threat Explorer (email was allowed/blocked by Tenant/user policy)
 - Surfacing URL threats in Threat Explorer  (malware, phish, spam, or none)
 
 ## July/August 2020 
