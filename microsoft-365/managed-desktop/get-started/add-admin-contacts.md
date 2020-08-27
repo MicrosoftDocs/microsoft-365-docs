@@ -37,7 +37,7 @@ Area of focus | For questions about
 App packaging | Troubleshooting app packaging
 Devices | Device health, troubleshooting with Microsoft Managed Desktop devices
 Security | Troubleshooting security issues with Microsoft Managed Desktop devices
-IT help desk | in cases where our Support staff hands over end-user tickets outside of Microsoft Managed Desktop support areas 
+IT help desk | in cases where our Support staff hands over user tickets outside of Microsoft Managed Desktop support areas 
 Other | For issues not covered by other areas
 
 **Whoever you choose for these contacts needs to have the knowledge and authority to make decisions for your Microsoft Managed Desktop environment.** When you onboard your Microsoft Managed Desktop environment, you’re prompted to add contacts for your local Helpdesk and Security. 
