@@ -60,6 +60,6 @@ Once a ticket is in the **Mitigated** or **Resolved** state, you can share your 
 
 
 ## Additional resources
-- [End user support for Microsoft Managed Desktop](end-user-support.md). 
+- [User support for Microsoft Managed Desktop](end-user-support.md). 
 - [Support for Microsoft Managed Desktop](../service-description/support.md). 
 - If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** section of the [Microsoft Managed Desktop Admin Portal](https://aka.ms/mwaasportal).
