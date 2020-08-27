@@ -51,7 +51,7 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
     - To allow only members of a specific group to access and use Office Scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list, and it must be one of the following types:
         - Microsoft 365 group
         - Distribution group
-        - Azure Active Directory security group
+        - Security group
         - Mail-enabled security group
     
         To learn more about the different types of groups, see [Compare groups](../create-groups/compare-groups.md).
@@ -68,7 +68,7 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
     - To allow only members of a specific group with access to Office Scripts to share their scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list, and it must be one of the following types:
         - Microsoft 365 group
         - Distribution group
-        - Azure Active Directory security group
+        - Security group
         - Mail-enabled security group
     
         To learn more about the different types of groups, see [Compare groups](../create-groups/compare-groups.md).
