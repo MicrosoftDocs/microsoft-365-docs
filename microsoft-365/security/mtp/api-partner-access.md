@@ -180,9 +180,6 @@ return $token
     ```
 
 
-### Using Python
-
-Refer to [Get token using Python](run-advanced-query-sample-python.md#get-token)
 
 ### Using Curl
 
