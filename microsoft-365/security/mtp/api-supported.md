@@ -21,8 +21,7 @@ search.appverid:
 - MET150
 ---
 
-# Supported Microsoft Threat Protection APIs - EFRAT CHECK URL SECURITYCENTER.WINDOWS
-
+# Supported Microsoft Threat Protection APIs 
 **Applies to:**
 - Microsoft Threat Protection
 
@@ -30,7 +29,7 @@ search.appverid:
 
 ### End Point URI: 
 
-> The service base URI is: https://api.securitycenter.windows.com
+> The service base URI is: https://api.security.microsoft.com
 > 
 > The queries based OData have the '/api' prefix. For example, to get Alerts you can send GET request to https://api.security.microsoft.com/api/alerts
 
