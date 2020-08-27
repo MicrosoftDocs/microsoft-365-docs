@@ -101,7 +101,7 @@ Groups cannot be created as standalone entities; a group must contain at least o
 
 There are two starting points for creating an assessment from a Compliance Manager template.
 
-You can begin the process from your assessments page by selecting the **Create assessment** button and then working through the assessment creation wizard. The steps for this process are below.
+You can begin the process from your assessments page by selecting the **Add assessment** button and then working through the assessment creation wizard. The steps for this process are below.
 
 You can also start from your assessment templates page by finding the template you want, selecting its details page, and selecting **Create assessment**. You’ll then enter the wizard with your template already selected.
 
@@ -109,21 +109,21 @@ You can also start from your assessment templates page by finding the template y
 
 1. Know which group you’ll assign your assessment to, or be prepared to create a new one for this assessment. Learn more about [groups](#understand-groups-before-creating-assessments).  
 
-2. Go to your **assessments** page in Compliance Manager and select Create assessment. An assessment wizard will appear in a large flyout pane.
+2. Go to your **assessments** page in Compliance Manager and select **Add assessment**. An assessment wizard will appear in a large flyout pane.
 
 3. **Select a template**: Choose a template to serve as the basis for your assessment. Select the radio button next to your chosen template, then select **Next**.
 
 4. **Name and group:** Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
 
-5. Assign your assessment to a group. You can either:
+5. Assign your assessment to a [group](#understand-groups-before-creating-assessments). You can either:
     - Select **Use existing group** to assign it to a group you’ve already created; or
     - Select **Create new group** to create a new group and assign this assessment to it:
         - Determine a name for your group and enter it in the field beneath the radio button.
         - You can **copy data from an existing group**, such as implementation and testing details and documents, by selecting the appropriate boxes.
 
-    Read more about [working with groups](#understand-groups-before-creating-assessments)
+    When finished, select **Next**.
 
-6. **Review and finish:** The last screen of the wizard shows the template, name, and group chosen for the assessment. You can edit any of these settings from the links on the screen, which take you back to the relevant steps in the wizard. Once you’re satisfied with the settings, select **Create assessment**.
+6. **Review and finish:** The last screen of the wizard shows the template, name, and group chosen for the assessment. You can edit any of these settings from the links on the screen, which take you back to the relevant steps in the wizard. When you're ready, select **Create assessment**.
 
 7. The next screen confirms that you’ve successfully created your new assessment. Select **Done** to close the wizard, and your new assessment's details page will appear on the screen.
 
@@ -133,21 +133,21 @@ You can change the name of your assessment after you create it by selecting the 
 
 ## Extend a pre-built assessment
 
-You can modify a pre-built assessment by adding your own controls and improvement actions to the assessment’s template. This process is called “extending a Microsoft template” in Compliance Manager.  You’ll complete this process by starting at your **assessment templates** page rather than your **assessments** page.
+You can modify a pre-built assessment by adding your own controls and improvement actions to the assessment’s template. This process is called “extending a Microsoft template” in Compliance Manager. When you extend the template of an assessment, it will receive any updates released by Microsoft, which may happen when there are changes to the related regulation or product (see [Accepting updates to assessments](#accepting-updates-to-assessments)).
 
-### Prepare to extend a template by formatting your Excel spreadsheet
+You’ll complete this process by starting at your **assessment templates** page rather than your **assessments** page.
 
-To prepare for this process, you’ll first need to assemble a specially formatted Excel spreadsheet to import the necessary template data. View [instructions for formatting your template data with Excel](compliance-manager-templates.md#formatting-your-template-data-with-excel).
+**Before you begin**
 
-**Note:** There are special requirements for Excel files used in the extension process. See these additional points to help prevent errors in the import process:
+To prepare for this process, you’ll first need to assemble a specially formatted Excel spreadsheet to import the necessary template data. There are special requirements for the [formatted Excel files](compliance-manager-templates.md#formatting-your-template-data-with-excel) used in the extension process. See these additional points to help prevent errors in the import process:
 
-- Your spreadsheet should contain only the actions and controls you want to add to the assessment.
+- Your spreadsheet should contain only the actions and controls you want to add to the assessment. 
 - The spreadsheet can’t contain any of the controls or actions that already exist in the assessment you want to modify.
-- Consider including “extension” in your template’s title, for example, “GDPR – [your company name] extension”. This makes it easier to identify in the list on your **assessment templates** page as distinct from the standard Microsoft-provided template or a custom template with a similar name.
+- Consider including “extension” in your template’s title, for example, “GDPR – [your company name] extension.” This makes it easier to identify in the list on your **assessment templates** page as distinct from the standard Microsoft-provided template or a custom template with a similar name.
 
 After you format your spreadsheet, follow the steps immediately below.
 
-### Extend a Compliance Manager template
+**Steps for extending a Compliance Manager template**
 
 1. Go to your **Assessment templates** page and select **Create new template**. A template creation wizard will open.
 
@@ -159,11 +159,11 @@ After you format your spreadsheet, follow the steps immediately below.
 
 5. The next screen shows the template you selected. If correct, select **Next**. (If incorrect, choose **Select a different template** to choose again.)
 
-6. At the **Upload file** screen, select **Browse** to find and upload your formatted Excel file containing all the required template data (see [instructions for properly formatting your file](compliance-manager-templates.md#formatting-your-template-data-with-excel)).
+6. At the **Upload file** screen, select **Browse** to find and upload your formatted Excel file containing all the required template data.
 
 7. If there are no problems with your file, the next screen shows the name of the file uploaded. Select **Next** to continue (if you need to change the file, select **Upload a different file**).
 
-    - If there’s a problem with your file, an error message at the top explains what’s wrong. You’ll need to fix and re-upload your file. Errors will result if your spreadsheet is formatted improperly, or if there’s invalid information in certain fields (refer again to the [formatting instructions](compliance-manager-templates.md#formatting-your-template-data-with-excel)).
+    - If there’s a problem with your file, an error message at the top explains what’s wrong. You’ll need to fix and re-upload your file. Errors will result if your spreadsheet is formatted improperly, or if there’s invalid information in certain fields.
  
 8. The **Review and finish** screen shows the number of improvement actions and controls and the maximum score for the template. When ready to approve, select **Next**. (If you need to make changes, select **Upload a different file**.)
 
@@ -252,26 +252,28 @@ The Microsoft actions tab lists all the improvement actions in the assessment th
 
 ## Accepting updates to assessments
 
-When an update is available for an assessment, you’ll see a notification and have the option to accept the update or defer to update at a later time.
+When an update is available for an assessment, you’ll see a notification and have the option to accept the update or defer it for a later time.
 
 ### What causes an update
 
-An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve new guidance for improvement actions based on regulatory changes, or could be due to product changes. Assessment updates can originate from your organization (which happens when a [template is modified](compliance-manager-templates.md#modify-a-template)) as well as from Microsoft.
+An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve new guidance for improvement actions based on regulatory changes, or could be due to product changes. Assessment updates can originate from your organization (such as, when a [custom template is modified](compliance-manager-templates.md#modify-a-template)) as well as from Microsoft.
 
-Updates usually involve a change to one or more improvement action, and when that happens, you’ll also receive a notification at the improvement action level.
+If Microsoft updates a Compliance Manager template that you extended, your assessment will inherit those updates once you accept them. Your assessment will retain the additional attributes you applied to the assessment when you extended it.
 
-XQY placeholder....Explain MS-initiated updates and how that affects modified or extended templates…..how assessments inherit updates and keep one’s custom controls….
+Custom assessments that you create do not receive any template updates from Microsoft. Custom assessments can receive improvement action updates, but any Microsoft updates to control mapping between assessments and improvement actions do not apply to custom templates.
 
 > [!NOTE]
 > Updates to assessments apply only at the group level. If you have two assessments built from the same template that exist in two different groups, each assessment will have a pending update notification, and you’ll need to accept the update to each assessment in its respective group individually.
 
-### Where you’ll see assessment update notifications
+#### Where you’ll see assessment update notifications
 
 A message near the top of the assessment details page shows that an update is available for that assessment. Select the **Review update** button to review the specific changes and accept or defer the update.
 
 The assessment details page also shows a **Pending update** link next to the assessment with an update.
 
-### Review update to accept or defer
+Updates usually involve a change to one or more improvement actions. When an improvement action is updated, you’ll see the **Pending update** link next to its name within the assessment. Accepting updates to an assessment **does not** also accept pending improvement action updates within that assessment. Updates to improvement actions must be accepted separately.
+
+#### Review update to accept or defer
 
 After selecting **Review update** from the assessment details page, a flyout pane appears on the right side of your screen. The flyout pane provides the key details below about the pending update:
 

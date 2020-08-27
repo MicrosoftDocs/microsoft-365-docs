@@ -241,6 +241,8 @@ You can export an Excel file that contains all of a template’s data. You’ll 
 
 To export your template, go to your template details page and select the **Export to Excel** button.
 
+Note that when exporting a template you extended from a Compliance Manager template, the exported file will only contain the attributes you added to the template. The exported file won’t include the original template data provided by Microsoft. To get such a report, see the instructions for [exporting an assessment report](compliance-manager-assessments.md#export-an-assessment-report).
+
 ## Delete a template
 
 text
