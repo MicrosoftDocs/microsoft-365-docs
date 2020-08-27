@@ -48,7 +48,7 @@ Delegated (work or school account) | AdvancedQuery.Read | 'Run advanced queries'
 
 ## HTTP request - CHECK URL WITH EFRAT
 ```
-POST https://api.securitycenter.windows.com/api/advancedqueries/run
+POST https://api.security.microsoft.com/api/advancedqueries/run
 ```
 
 ## Request headers
@@ -77,14 +77,13 @@ Here is an example of the request.
 
 
 ```
-POST https://api.securitycenter.windows.com/api/advancedqueries/run
+POST https://api.security.microsoft.com/api/advancedHunting/run
 Content-type: application/json
 {
-	"Query":"DeviceProcessEvents  
-    | where InitiatingProcessFileName =~ 'powershell.exe'
-    | where ProcessCommandLine contains 'appdata'
-    | project Timestamp, FileName, InitiatingProcessFileName, DeviceId
-    | limit 2"
+    "Query":"DeviceProcessEvents
+    | where InitiatingProcessFileName =~ \"powershell.exe\" 
+    | project EventTime, FileName, InitiatingProcessFileName 
+    | order by EventTime desc | limit 2"
 }
 ```
 

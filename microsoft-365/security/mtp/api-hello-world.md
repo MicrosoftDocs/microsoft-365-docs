@@ -48,15 +48,15 @@ For the Application registration stage, you must have a **Global administrator**
 
 4. Allow your Application to access Microsoft Defender ATP and assign it **'Read all alerts'** permission:
 
-   - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
+   - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft Threat Protection** and click on **Microsoft Threat Protection**.
 
-   - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+   - **Note**: Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection](../../media/add-permission.png)
+   ![Image of API access and API selection](../../media/apis-in-my-org-tab.png)
 
    - Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
 
-   ![Image of API access and API selection](../../media/application-permissions.png)
+   ![Image of API access and API selection](../../media/request-api-permissions.png)
 
    **Important note**: You need to select the relevant permissions. 'Read All Alerts' is only an example!
 
@@ -139,7 +139,7 @@ $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 
 # The URL contains the type of query and the time filter we create above
 # Read more about other query options and filters at   Https://TBD- add the documentation link
-$url = "https://api.securitycenter.windows.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
+$url = "https://api.security.microsoft.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
 
 # Set the WebRequest headers
 $headers = @{ 

@@ -47,16 +47,16 @@ This article explains how to create an Azure AD application, get an access token
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
-4. To enable your app to access Microsoft Threat Protection and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **WindowsDefenderATP**, and then select **WindowsDefenderATP**.
+4. To enable your app to access Microsoft Threat Protection and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and then select **Microsoft Threat Protection**.
 
    > [!NOTE]
-   > WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+   > Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection](../../media/add-permission.png)
+   ![Image of API access and API selection](../../media/apis-in-my-org-tab.png)
 
    - Select **Application permissions** > **Alert.Read.All**, and then select **Add permissions**.
 
-   ![Image of API access and API selection](../../media/application-permissions.png)
+   ![Image of API access and API selection](../../media/request-api-permissions.png)
 
      Note that you need to select the relevant permissions. 'Read All Alerts' is only an example. For instance:
 
@@ -204,7 +204,7 @@ The following is an example of sending a request to get a list of alerts **using
     ```
     var httpClient = new HttpClient();
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/alerts");
 
     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 

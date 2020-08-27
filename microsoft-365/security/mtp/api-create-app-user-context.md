@@ -66,15 +66,15 @@ This page explains how to create an AAD application, get an access token to Micr
 
 4. Allow your Application to access Microsoft Threat Protection and assign it 'Read alerts' permission:
 
-    - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
+    - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft Threat Protection** and click on **Microsoft Threat Protection**.
 
-    - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+    - **Note**: Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-      ![Image of API access and API selection](../../media/add-permission.png)
+      ![Image of API access and API selection](../../media/apis-in-my-org-tab.png)
 
     - Choose **Delegated permissions** > **Alert.Read** > Click on **Add permissions**
 
-      ![Image of API access and API selection](../../media/application-permissions-public-client.png)
+      ![Image of API access and API selection](../../media/request-api-permissions.png)
 
     - **Important note**: You need to select the relevant permissions. 'Read alerts' is only an example!
 
@@ -103,14 +103,14 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 - Use **AcquireUserTokenAsync** method with the your application ID, tenant ID, user name and password to acquire a token.
 
     ```csharp
-    namespace WindowsDefenderATP
+    namespace Microsoft Threat Protection
     {
         using System.Net.Http;
         using System.Text;
         using System.Threading.Tasks;
         using Newtonsoft.Json.Linq;
 
-        public static class WindowsDefenderATPUtils
+        public static class Microsoft Threat ProtectionUtils
         {
             private const string Authority = "https://login.windows.net";
 
@@ -160,7 +160,7 @@ Sanity check to make sure you got a correct token:
     ```csharp
     var httpClient = new HttpClient();
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/alerts");
 
     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 

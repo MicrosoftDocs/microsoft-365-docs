@@ -26,4 +26,41 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
+## API description
+The Incident API exposes a collection of incidents that were flagged from devices, email accounts, users in your network.
 
+It will help you sort through incidents to prioritize and create an informed cybersecurity response decision.
+
+The API returns incidents that occurred in the range of your environment retention policy, with the most recent incident showing at the top of the list, each incident contains an array of related alerts and their respective evidence.
+
+## Limitations
+
+
+## Permissions
+
+
+## HTTP request
+
+
+## Request headers
+
+
+## Request body
+
+
+## Response
+
+## Example
+
+**Request**
+
+Here is an example of the request.
+
+```
+PATCH https://api.security.microsoft.com/api/incidents?$top=10
+
+```
+
+## SIEM use-case
+In the context of a SIEM, use the following format to query the latest incident or updated incident:
+`https://api.security.microsoft.com/api/incidents?$filter=lastUpdateTime+ge+2020-06-03T18:04:29.4633333Z`

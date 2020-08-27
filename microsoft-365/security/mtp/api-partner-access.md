@@ -60,11 +60,11 @@ The following steps with guide you how to create an AAD application, get an acce
 
 4. Allow your Application to access Microsoft Threat Protection and assign it with the minimal set of permissions required to complete the integration.
 
-   - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
+   - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft Threat Protection** and click on **Microsoft Threat Protection**.
 
-   - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+   - **Note**: Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection](../../media/add-permission.png)
+   ![Image of API access and API selection](../../media/apis-in-my-org-tab.png)
    
    ### Request API permissions
 
@@ -223,7 +223,7 @@ Sanity check to make sure you got a correct token:
     ```
     var httpClient = new HttpClient();
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/alerts");
 
     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 

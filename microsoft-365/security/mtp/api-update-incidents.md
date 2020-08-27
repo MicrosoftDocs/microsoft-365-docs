@@ -91,14 +91,24 @@ If successful, this method returns 200 OK, and the alert entity in the response 
 Here is an example of the request.
 
 ```
-PATCH https://api.securitycenter.windows.com/api/alerts/121688558380765161_2136280442
+PATCH https://api.security.microsoft.com/api/incidents/<incidentID>
 Content-Type: application/json
-
 {
-    "status": "Resolved",
-	"assignedTo": "secop2@contoso.com",
-    "classification": "FalsePositive",
-    "determination": "Malware",
-    "comment": "Resolve my alert and assign to secop2"
+"status": "Resolved",
+"assignedTo": "secop2@contoso.com",
+"classification": "FalsePositive",
+"determination": "Malware",
+"comment": "Resolve my alert and assign to secop2"
 }
+
 ```
+
+| **Property**   | **Type**       | **Description**                                                                                                                                                            |
+|----------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Status         | String         | Specifies the current status of the incident. The property values are: active and resolved.                                                                              |
+| assignedTo     | String         | Owner of the incident.                                                                                                                                                      |
+| classification | String         | Specifies the specification of the incident. The property values are: 'Unknown', 'FalsePositive', 'TruePositive'.                                                          |
+| determination  | String         | Specifies the determination of the incident.                                                                                                                               |
+|                |                | The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'                                             |
+| comment        | String         | Comment to be added to the alert.                                                                                                                                          |
+| tags           | List\<String\> | Tag the incident \*\*Coming soon 8/15/2020\*\*

@@ -32,7 +32,7 @@ search.appverid:
 
 > The service base URI is: https://api.securitycenter.windows.com
 > 
-> The queries based OData have the '/api' prefix. For example, to get Alerts you can send GET request to https://api.securitycenter.windows.com/api/alerts
+> The queries based OData have the '/api' prefix. For example, to get Alerts you can send GET request to https://api.security.microsoft.com/api/alerts
 
 ### Versioning:
 
@@ -40,9 +40,9 @@ search.appverid:
 > 
 > The current version is **V1.0**.
 > 
-> To use a specific version, use this format: https://api.securitycenter.windows.com/api/{Version}. For example: https://api.securitycenter.windows.com/api/v1.0/alerts
+> To use a specific version, use this format: https://api.security.microsoft.com/api/{Version}. For example: https://api.security.microsoft.com/api/v1.0/alerts
 > 
-> If you don't specify any version (e.g. https://api.securitycenter.windows.com/api/alerts ) you will get to the latest version.
+> If you don't specify any version (e.g. https://api.security.microsoft.com/api/alerts ) you will get to the latest version.
 
 Learn more about the individual supported entities where you can run API calls to and details such as HTTP request values, request headers and expected responses.
 
