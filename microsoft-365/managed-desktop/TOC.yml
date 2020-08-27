@@ -102,6 +102,8 @@
               href: get-started/project-visio.md
             - name: New Microsoft Edge
               href: get-started/edge-browser-app.md
+            - name: Microsoft 365 Apps for Enterprise
+              href: get-started/m365-apps.md
     - name: Working with Microsoft Managed Desktop
       href: working-with-managed-desktop/index.md
       items: 
