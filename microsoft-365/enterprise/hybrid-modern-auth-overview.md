@@ -142,7 +142,7 @@ Verify and check these items off your list before you continue:
 
 - **Exchange client and protocol requirements**
  
-    The availability of modern authentication is determined by the combination of the client, protocol, and configuration. If modern authentication is not supported by the combination of the client, protocol, and/or configuration, then the client will continue to leverage legacy authentication mechanisms for authentication.
+    The availability of modern authentication is determined by the combination of the client, protocol, and configuration. If modern authentication is not supported by the client, protocol, and/or configuration, then the client will continue to leverage legacy authentication.
   
     The following clients and protocols support modern authentication with on-premises Exchange when modern authentication is enabled in the environment:
 
