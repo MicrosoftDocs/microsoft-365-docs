@@ -1,7 +1,7 @@
 - name: Microsoft 365 security
   href: index.yml
   items: 
-    - name: Get started
+    - name: Get started 
       items: 
         - name: Top tasks to support working from home
           href: top-security-tasks-for-remote-work.md
@@ -239,36 +239,38 @@
                       href: ./mtp/tickets.md
                     - name: ServiceNow tickets in the security center
                       href: ./mtp/tickets-security-center.md
-            - name: Overview of Microsoft Threat Protection APIs
-              href: mtp/api-overview.md
-            - name: Get started
-              Items:
-                - name: Microsoft Threat Protection API license and terms of use
-                  href: mtp/api-terms.md
-                - name: Access the Microsoft Threat Protection APIs
-                  href: mtp/api-access.md
-                - name: Hello World example
-                  href: mtp/api-hello-world.md
-                - name: Get access with application context
-                  href: mtp/api-create-app-web.md
-                - name:  Get access with user context
-                  href: mtp/api-create-app-user-context.md
-                - name: Get partner application access
-                  href:  mtp/api-partner-access.md
-                - name: Other API resources
-                  href: mtp/api-articles.md
-            - name: Microsoft Threat Protection APIs schema
-              Items:
-                - name: Supported Microsoft Threat Protection APIs 
-                  href: mtp/api-supported.md
-                - name: Common REST API error codes
-                  href: mtp/api-error-codes.md
-                - name: Advanced hunting APIs
-                  href: mtp/api-advanced-hunting.md
-                - name: List incidents
-                  href: mtp/api-list-incidents.md
-                - name: Update incidents
-                  href: mtp/api-update-incidents.md  
+            - name: Microsoft Threat Protection APIs
+              items:
+                - name: Overview of Microsoft Threat Protection APIs
+                  href: mtp/api-overview.md
+                - name: Get started with Microsoft Threat Protection APIs
+                  items:
+                    - name: Microsoft Threat Protection API license and terms of use
+                      href: mtp/api-terms.md
+                    - name: Access the Microsoft Threat Protection APIs
+                      href: mtp/api-access.md
+                    - name: Hello World example
+                      href: mtp/api-hello-world.md
+                    - name: Get access with application context
+                      href: mtp/api-create-app-web.md
+                    - name:  Get access with user context
+                      href: mtp/api-create-app-user-context.md
+                    - name: Get partner application access
+                      href:  mtp/api-partner-access.md
+                    - name: Other API resources
+                      href: mtp/api-articles.md
+                - name: Microsoft Threat Protection APIs schema
+                  items:
+                    - name: Supported Microsoft Threat Protection APIs 
+                      href: mtp/api-supported.md
+                    - name: Common REST API error codes
+                      href: mtp/api-error-codes.md
+                    - name: Advanced hunting APIs
+                      href: mtp/api-advanced-hunting.md
+                    - name: List incidents
+                      href: mtp/api-list-incidents.md
+                    - name: Update incidents
+                      href: mtp/api-update-incidents.md  
  
     - name: Office 365 security
       items: 
