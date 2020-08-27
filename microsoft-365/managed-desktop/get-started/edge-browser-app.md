@@ -31,7 +31,6 @@ The [Beta Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels
 
 To ensure that Microsoft Edge updates correctly, do not modify the Microsoft Edge [update policies](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies).
 
-### Microsoft Edge Beta Channel
 
 
 ## Settings managed by Microsoft Managed Desktop
