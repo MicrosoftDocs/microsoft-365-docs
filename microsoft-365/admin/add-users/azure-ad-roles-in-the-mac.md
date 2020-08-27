@@ -57,7 +57,7 @@ Here's a list of all the admin roles available in the Microsoft 365 admin center
 |Groups admin   |Creates groups and manages all groups settings across admin centers.|
 |Guest inviter     |    Manages Azure Active Directory B2B guest user invitations.     |
 |Helpdesk admin     | Resets passwords and re-authenticates for all non-admins and some admin roles, manages service requests, and monitors service health.      |
-|Insights admin     | Manages all aspects of the Microsoft 365 Insights application, reads Azure Active Directory information, monitor service health and create and manage service requests.      |
+|Insights admin     | Manages all aspects of the Microsoft 365 Insights application, reads Azure Active Directory information, can monitor service health and create and manage service requests.      |
 |Insights business admin     | Read reports and insights in the Microsoft 365 Insights application.      |
 |Intune admin     | Full access to Intune, manages users and devices to associate policies, creates and manages groups.      |
 |Kaizala admin     |    Full access to all Kaizala management features and data, manages service requests.     |
