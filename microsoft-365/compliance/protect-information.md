@@ -14,14 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: "Implement Microsoft Information Protection (MIP) capabilities in Microsoft 365 to help you discover, classify, and protect sensitive information wherever it lives or travels."
+description: "Implement Microsoft Information Protection (MIP) capabilities by using Microsoft 365 Compliance to help you discover, classify, and protect sensitive information wherever it lives or travels."
 ---
 
 # Microsoft Information Protection in Microsoft 365
 
 >*[Licensing for Microsoft 365 Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Use Microsoft Information Protection (often abbreviated to MIP) capabilities to help you discover, classify, and protect sensitive information wherever it lives or travels.
+Use Microsoft Information Protection (MIP) to help you discover, classify, and protect sensitive information wherever it lives or travels.
+
+MIP capabilities are included with Microsoft 365 Compliance and give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
+
+![Know your data, protect your data, prevent data loss, govern your data](../media/powered-by-intelligent-platform.png)
+
+For information about governing your data, see [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
 
 ## Know your data
 

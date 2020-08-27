@@ -22,9 +22,13 @@ description: "Implement Microsoft Information Governance capabilities in Microso
 
 Use Microsoft Information Governance (sometimes abbreviated to MIG) capabilities to govern your data for compliance or regulatory requirements.
 
+![Govern your data - information governance and records management](../media/information-governance-records-management.png)
+
+Looking to protect your data? See [Microsoft Information Protection in Microsoft 365](protect-information.md).
+
 ## Information governance
 
-To keep what you want and delete what you don't:
+To keep what you need and delete what you don't:
  
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|:--------------------|:-----------------------------|
@@ -35,7 +39,7 @@ To keep what you want and delete what you don't:
 
 ## Records management
 
-To manage high-value content for legal, business, or regulatory obligations, use records management:
+To manage high-value content for legal, business, or regulatory obligations:
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|---------------------|:----------------------------|
