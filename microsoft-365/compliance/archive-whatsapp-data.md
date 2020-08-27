@@ -11,6 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Admins can set up a TeleMessage connector to import and archive WhatsApp data in Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
