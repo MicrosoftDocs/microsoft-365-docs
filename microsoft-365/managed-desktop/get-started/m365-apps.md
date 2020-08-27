@@ -55,7 +55,7 @@ Microsoft Managed Desktop sets a seven-day [update deadline](https://docs.micros
 
 ### Pausing or rolling back an update
 
-If you need to pause or roll back Microsoft 365 App update for any reason, file an [admin support request](admin-support.md) through the Microsoft Managed Desktop portal.
+If you need to pause or roll back Microsoft 365 App update for any reason, file an [admin support request](../working-with-managed-desktop/admin-support.md) through the Microsoft Managed Desktop portal.
 
 During a release, Microsoft Managed Desktop monitors the error rates of all Microsoft 365 Apps. If we note a significant difference in quality between the new release and its predecessor, we might contact you through the Microsoft Managed Desktop Admin portal. Depending on the severity, we will either ask if you want to pause the release or inform you that we have taken action to mitigate an issue. 
 
