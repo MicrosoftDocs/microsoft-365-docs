@@ -293,7 +293,7 @@
           items: 
             - name: Validate settings on Android or iOS
               href: ../business/validate-settings-on-android-or-ios.md
-        - name: Set device protection settings  for Windows 10 PCs
+        - name: Edit or create device protection settings  for Windows 10 PCs
           href: ../business/protection-settings-for-windows-10-pcs.md
           items: 
             - name: Validate settings on Windows 10 PCs
