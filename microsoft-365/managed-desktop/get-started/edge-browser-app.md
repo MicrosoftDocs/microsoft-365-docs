@@ -1,6 +1,6 @@
 ---
 title: New Microsoft Edge
-description:  
+description:  Explains how the new Edge browser is deployed and updated
 keywords: browser, Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -31,7 +31,6 @@ The [Beta Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels
 
 To ensure that Microsoft Edge updates correctly, do not modify the Microsoft Edge [update policies](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies).
 
-### Microsoft Edge Beta Channel
 
 
 ## Settings managed by Microsoft Managed Desktop
