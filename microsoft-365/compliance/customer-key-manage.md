@@ -165,7 +165,7 @@ The output from this cmdlet includes:
 
 ## Unassign DEP from a mailbox
 
-You can unassign a Customer Key DEP from a mailbox by assigning $NULL DEP to the mailbox. Doing so will unassign the currently assigned Customer Key DEP and reencrypt the mailbox using the default Microsoft managed keys DEP. You can not unassign the Microsoft managed keys DEP. You can reassign another Customer Key DEP to the same mailbox.
+You can unassign a Customer Key DEP from a mailbox by assigning $NULL DEP to the mailbox. Doing so will unassign the currently assigned Customer Key DEP and re-encrypt the mailbox using the default Microsoft managed keys DEP. You can not unassign the Microsoft managed keys DEP. You can reassign another Customer Key DEP to the same mailbox.
 
 ```powershell
 Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $NULL
