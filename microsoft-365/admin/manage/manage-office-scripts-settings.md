@@ -48,7 +48,13 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 
     - To allow all users in your organization to access and use Office Scripts, leave **Everyone** (the default) selected. 
 
-    - To allow only members of a specific Azure Active Directory Security group or Microsoft 365 group to access and use Office Scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list.
+    - To allow only members of a specific group to access and use Office Scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list, and it must be one of the following types:
+        - Microsoft 365 group
+        - Distribution group
+        - Azure Active Directory security group
+        - Mail-enabled security group
+    
+        To learn more about the different types of groups, see [Compare groups](../create-groups/compare-groups.md).
 
 5. To allow users with access to Office Scripts to share their scripts with others in your organization, select **Let users with access to Office Scripts share their scripts with others in the organization**. Sharing scripts outside of an organization is not allowed.
  
@@ -59,9 +65,15 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
     
     - To allow all users with access to Office Scripts to share their scripts, leave **Everyone** (the default) selected.
 
-    - To allow only members of a specific Azure Active Directory Security group or Microsoft 365 group with access to Office Scripts to share their scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list.
+    - To allow only members of a specific group with access to Office Scripts to share their scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list, and it must be one of the following types:
+        - Microsoft 365 group
+        - Distribution group
+        - Azure Active Directory security group
+        - Mail-enabled security group
+    
+        To learn more about the different types of groups, see [Compare groups](../create-groups/compare-groups.md).
 
-5. Select **Save**.
+7. Select **Save**.
 
     It can take up to 48 hours for changes to Office Script settings to take effect.
 
