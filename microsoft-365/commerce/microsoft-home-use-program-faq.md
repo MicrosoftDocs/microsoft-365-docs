@@ -29,14 +29,13 @@ All other customers access HUP by using this step:
 
 The Microsoft Home Use Program (HUP) allows employees at eligible companies to buy Microsoft consumer products at a discount. You can check the current discounts for each product offering by visiting the [Home Use Program product page](https://www.microsoft.com/home-use-program).
 
-## In which countries is this benefit available?
+## In which markets is the Home Use Program offered?
 
-Once you activate your benefit here (in Microsoft Store for Business), HUP discounts on Microsoft products are available to employees in most countries worldwide with the exception of:
+Discounts on Microsoft 365 Family and Personal subscriptions are offered to eligible companies worldwide with these exceptions:
 
-- Russia
-- Venezuela
-
-HUP discounts might also be available on purchases of Surface devices and accessories and Xbox Game Pass Ultimate. For availability, see [Microsoft 365 subscriptions](https://go.microsoft.com/fwlink/p/linkid=2139192).
+- Macao, Russia and Venezuela: This offer is not available in these markets.
+- China and Hong Kong: a one-year subscription is available in these markets. For China, visit [Microsoft 365 in China](https://www.microsoftstore.com.cn/home-use-program/invite). For Hong Kong, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).
+- Japan: Microsoft 365 Family is not available.
 
 ## How does an organization qualify for HUP discounts?
 
@@ -59,12 +58,6 @@ To update and modernize the Home Use Program to a broader range of license and p
 You must create a special record in DNS to prove you own your company domain, ex:contoso.com.
 
 For a step-by-step process for becoming a managed tenant, see [Take over an unmanaged directory as administrator in Azure Active](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover).
-
-## Where can I find marketing materials to help promote the program within my company?
-
-You can find company onboarding marketing materials in the _About_ section of your admin portal under the Microsoft Home Use Program onboarding materials link.
-
-You can also quickly locate promotional materials on the IT/HR Admin resources page. Visit the [Home Use Program home page](https://www.microsoft.com/home-use-program/resources) and scroll down to the _Home Use Program promotional resources_ section of the page.
 
 ## What resources are available to help promote the Home Use Program benefit to employees?
 
