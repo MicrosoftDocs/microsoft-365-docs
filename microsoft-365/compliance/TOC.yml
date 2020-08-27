@@ -78,8 +78,51 @@
     - name: Customer Lockbox
       href: customer-lockbox-requests.md
 - name: Manage information protection
-  href: protect-information.md
-  items: 
+  items:
+    - name: Know your data, protect your data, prevent data loss
+      href: protect-information.md
+    - name: Sensitive information types
+      items: 
+        - name: Sensitive information type entity definitions 
+          href: sensitive-information-type-entity-definitions.md
+        - name: What the DLP functions look for
+          href: what-the-dlp-functions-look-for.md
+        - name: Watch an extended overview of customizing DLP
+          href: https://go.microsoft.com/fwlink/?linkid=852306
+        - name: Customize a built-in sensitive information type
+          href: customize-a-built-in-sensitive-information-type.md
+        - name: Custom sensitive information types
+          href: custom-sensitive-info-types.md
+        - name: Create custom sensitive information types with exact data match
+          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: Create a custom sensitive information type - Security & Compliance Center
+          href: create-a-custom-sensitive-information-type.md
+        - name: Create a custom sensitive information type - PowerShell
+          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: Create a keyword dictionary
+          href: create-a-keyword-dictionary.md
+        - name: Document Fingerprinting
+          href: document-fingerprinting.md
+        - name: DLP functions for sensitive information
+          href: what-the-dlp-functions-look-for.md
+    - name: Trainable classifiers
+      items: 
+        - name: Get started with trainable classifiers (preview)
+          href: classifier-getting-started-with.md
+        - name: Using a built-in classifier (preview)
+          href: classifier-using-a-ready-to-use-classifier.md
+        - name: Creating and training a classifier (preview)
+          href: classifier-creating-a-trainable-classifier.md
+    - name: Data classification
+      items: 
+        - name: Understand data classification
+          href: data-classification-overview.md
+        - name: Get started with content explorer
+          href: data-classification-content-explorer.md
+        - name: Get started with activity explorer
+          href: data-classification-activity-explorer.md
+        - name: Data classification release notes
+          href: data-classification-pub-preview-relnotes.md
     - name: Sensitivity labels
       items:
         - name: Learn about sensitivity labels
@@ -100,9 +143,77 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Use sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
-    - name: Data loss prevention (DLP)
-      href: data-loss-prevention-policies.md
+    - name: Encryption
       items: 
+        - name: Understand encryption
+          href: encryption.md
+        - name: Double Key Encryption (preview)
+          href: double-key-encryption.md
+        - name: Office 365 Service encryption
+          href: office-365-service-encryption.md
+        - name: Customer Key
+          items: 
+            - name: Service encryption with Customer Key in Office 365
+              href: customer-key-overview.md
+            - name: Set up Customer Key for Office 365
+              href: customer-key-set-up.md
+            - name: Manage Customer Key for Office 365
+              href: customer-key-manage.md
+            - name: Roll or rotate a Customer Key or an availability key
+              href: customer-key-availability-key-roll.md
+            - name: Learn about the availability key for Customer Key
+              href: customer-key-availability-key-understand.md
+        - name: Email encryption
+          href: email-encryption.md
+          items: 
+            - name: Office 365 Message Encryption (OME)
+              href: ome.md
+            - name: Set up new Office 365 Message Encryption capabilities
+              href: set-up-new-message-encryption-capabilities.md
+            - name: Define mail flow rules to encrypt email messages in Office 365
+              href: define-mail-flow-rules-to-encrypt-email.md
+            - name: Add your organization's brand to your encrypted messages
+              href: add-your-organization-brand-to-encrypted-messages.md
+            - name: Create a sensitive information type policy for your organization using Office 365 Message Encryption
+              href: ome-sensitive-info-types.md
+            - name: Manage Office 365 Message Encryption
+              href: manage-office-365-message-encryption.md
+            - name: Office 365 Advanced Message Encryption
+              href: ome-advanced-message-encryption.md
+            - name: Set an expiration date for email encrypted by Office 365 Advanced Message Encryption
+              href: ome-advanced-expiration.md
+            - name: Revoke email encrypted by Office 365 Advanced Message Encryption
+              href: revoke-ome-encrypted-mail.md
+            - name: Compare versions of OME
+              href: ome-version-comparison.md
+            - name: Office 365 Message Encryption FAQ
+              href: ome-faq.md
+            - name: How Exchange Online secures your email secrets
+              href: exchange-online-secures-email-secrets.md
+            - name: How Exchange Online uses TLS to secure email connections in Office 365
+              href: exchange-online-uses-tls-to-secure-email-connections.md
+            - name: BitLocker and Distributed Key Manager (DKM) for Encryption
+              href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
+            - name: Legacy OME
+              items: 
+                - name: Legacy information for Office 365 Message Encryption
+                  href: legacy-information-for-message-encryption.md
+                - name: Set up Azure Rights Management for the previous version of Office 365 Message Encryption
+                  href: set-up-azure-rms-for-previous-version-message-encryption.md
+        - name: SharePoint IRM
+          href: set-up-irm-in-sp-admin-center.md
+        - name: Technical reference
+          href: technical-reference-details-about-encryption.md
+        - name: TLS 1.0 and 1.1 deprecation for Office 365
+          href: tls-1.0-and-1.1-deprecation-for-office-365.md
+        - name: TLS 1.0 and 1.1 deprecation in Office 365 GCC High and DoD
+          href: tls-1-2-in-office-365-gcc.md
+        - name: TLS 1.2 in Office 365
+          href: prepare-tls-1.2-in-office-365.md
+    - name: Data loss prevention (DLP)
+      items: 
+        - name: Learn about DLP
+          href: data-loss-prevention-policies.md
         - name: DLP and Microsoft Teams
           href: dlp-microsoft-teams.md
         - name: Learn about Endpoint data loss prevention (preview)
@@ -131,116 +242,42 @@
           href: form-a-query-to-find-sensitive-data-stored-on-sites.md
         - name: How DLP works between the Security & Compliance Center and Exchange admin center
           href: how-dlp-works-between-admin-centers.md
-    - name: Sensitive information types
-      items: 
-        - name: Sensitive information type entity definitions 
-          href: sensitive-information-type-entity-definitions.md
-        - name: What the DLP functions look for
-          href: what-the-dlp-functions-look-for.md
-        - name: Watch an extended overview of customizing DLP
-          href: https://go.microsoft.com/fwlink/?linkid=852306
-        - name: Customize a built-in sensitive information type
-          href: customize-a-built-in-sensitive-information-type.md
-        - name: Custom sensitive information types
-          href: custom-sensitive-info-types.md
-        - name: Create custom sensitive information types with exact data match based classification
-          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: Create a custom sensitive information type in the Security & Compliance Center
-          href: create-a-custom-sensitive-information-type.md
-        - name: Create a custom sensitive information type using PowerShell
-          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
-        - name: Create a keyword dictionary
-          href: create-a-keyword-dictionary.md
-        - name: Document Fingerprinting
-          href: document-fingerprinting.md
-        - name: DLP functions for sensitive information
-          href: what-the-dlp-functions-look-for.md
-    - name: Encryption in Microsoft 365
-      href: encryption.md
-    - name: Office 365 Service encryption
-      href: office-365-service-encryption.md    
-    - name: Technical reference details about encryption in Office 365
-      href: technical-reference-details-about-encryption.md
-    - name: TLS 1.0 and 1.1 deprecation for Office 365
-      href: tls-1.0-and-1.1-deprecation-for-office-365.md
-    - name: TLS 1.0 and 1.1 deprecation in Office 365 GCC High and DoD
-      href: tls-1-2-in-office-365-gcc.md
-    - name: TLS 1.2 in Office 365
-      href: prepare-tls-1.2-in-office-365.md
-    - name: Double Key Encryption for Microsoft 365 public preview
-      href: double-key-encryption.md
-    - name: Customer Key
-      items: 
-        - name: Service encryption with Customer Key in Office 365
-          href: customer-key-overview.md
-        - name: Set up Customer Key for Office 365
-          href: customer-key-set-up.md
-        - name: Manage Customer Key for Office 365
-          href: customer-key-manage.md
-        - name: Roll or rotate a Customer Key or an availability key
-          href: customer-key-availability-key-roll.md
-        - name: Learn about the availability key for Customer Key
-          href: customer-key-availability-key-understand.md
-    - name: Encryption for data in transit
-      href: office-365-encryption-for-data-in-transit.md
-    - name: Email encryption
-      href: email-encryption.md
-      items: 
-        - name: Office 365 Message Encryption (OME)
-          href: ome.md
-        - name: Set up new Office 365 Message Encryption capabilities
-          href: set-up-new-message-encryption-capabilities.md
-        - name: Define mail flow rules to encrypt email messages in Office 365
-          href: define-mail-flow-rules-to-encrypt-email.md
-        - name: Add your organization's brand to your encrypted messages
-          href: add-your-organization-brand-to-encrypted-messages.md
-        - name: Create a sensitive information type policy for your organization using Office 365 Message Encryption
-          href: ome-sensitive-info-types.md
-        - name: Manage Office 365 Message Encryption
-          href: manage-office-365-message-encryption.md
-        - name: Office 365 Advanced Message Encryption
-          href: ome-advanced-message-encryption.md
-        - name: Set an expiration date for email encrypted by Office 365 Advanced Message Encryption
-          href: ome-advanced-expiration.md
-        - name: Revoke email encrypted by Office 365 Advanced Message Encryption
-          href: revoke-ome-encrypted-mail.md
-        - name: Compare versions of OME
-          href: ome-version-comparison.md
-        - name: Office 365 Message Encryption FAQ
-          href: ome-faq.md
-        - name: How Exchange Online secures your email secrets
-          href: exchange-online-secures-email-secrets.md
-        - name: How Exchange Online uses TLS to secure email connections in Office 365
-          href: exchange-online-uses-tls-to-secure-email-connections.md
-        - name: BitLocker and Distributed Key Manager (DKM) for Encryption
-          href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
-        - name: Legacy OME
-          items: 
-            - name: Legacy information for Office 365 Message Encryption
-              href: legacy-information-for-message-encryption.md
-            - name: Set up Azure Rights Management for the previous version of Office 365 Message Encryption
-              href: set-up-azure-rms-for-previous-version-message-encryption.md
-    - name: Set up IRM in SharePoint admin center
-      href: set-up-irm-in-sp-admin-center.md
-    - name: Understand data classification
-      href: data-classification-overview.md
-      items: 
-        - name: Get started with content explorer
-          href: data-classification-content-explorer.md
-        - name: Get started with activity explorer
-          href: data-classification-activity-explorer.md
-        - name: Data classification release notes
-          href: data-classification-pub-preview-relnotes.md
-        - name: Get started with trainable classifiers (preview)
-          href: classifier-getting-started-with.md
-        - name: Using a built-in classifier (preview)
-          href: classifier-using-a-ready-to-use-classifier.md
-        - name: Creating and training a classifier (preview)
-          href: classifier-creating-a-trainable-classifier.md
 - name: Manage information governance
   items: 
-    - name: Manage information governance
+    - name: Govern your data
       href: manage-information-governance.md
+    - name: Retain and delete data
+      items: 
+        - name: Learn about retention
+          items:
+            - name: Retention policies and labels
+              href: retention.md
+            - name: Retention for SharePoint and OneDrive
+              href: retention-policies-sharepoint.md
+            - name: Retention for Microsoft Teams
+              href: retention-policies-teams.md
+            - name: Retention for Exchange
+              href: retention-policies-exchange.md
+        - name: Get started with retention
+          href: get-started-with-retention.md
+        - name: Create retention policies
+          href: create-retention-policies.md
+        - name: Use file plan
+          href: file-plan-manager.md
+        - name: Create retention labels and apply them in apps
+          href: create-apply-retention-labels.md
+        - name: Apply a retention label to content automatically
+          href: apply-retention-labels-automatically.md
+        - name: Comply with SEC Rule 17a-4
+          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: Create retention labels with PowerShell
+          href: bulk-create-publish-labels-using-powershell.md
+        - name: Start retention when an event occurs
+          href: event-driven-retention.md
+        - name: Use retention labels to manage document lifecycles
+          href: auto-apply-retention-labels-scenario.md
+        - name: Manage disposition of data
+          href: disposition.md
     - name: Import mailbox data
       items: 
         - name: Overview of importing PST files
@@ -287,38 +324,6 @@
           href: enable-unlimited-archiving.md
         - name: Set up an archive and deletion policy for mailboxes
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: Retain and delete data
-      items: 
-        - name: Learn about retention
-          items:
-            - name: Retention policies and labels
-              href: retention.md
-            - name: Retention for SharePoint and OneDrive
-              href: retention-policies-sharepoint.md
-            - name: Retention for Microsoft Teams
-              href: retention-policies-teams.md
-            - name: Retention for Exchange
-              href: retention-policies-exchange.md
-        - name: Get started with retention
-          href: get-started-with-retention.md
-        - name: Create retention policies
-          href: create-retention-policies.md
-        - name: Use file plan
-          href: file-plan-manager.md
-        - name: Create retention labels and apply them in apps
-          href: create-apply-retention-labels.md
-        - name: Apply a retention label to content automatically
-          href: apply-retention-labels-automatically.md
-        - name: Comply with SEC Rule 17a-4
-          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Create retention labels with PowerShell
-          href: bulk-create-publish-labels-using-powershell.md
-        - name: Start retention when an event occurs
-          href: event-driven-retention.md
-        - name: Use retention labels to manage document lifecycles
-          href: auto-apply-retention-labels-scenario.md
-        - name: Manage disposition of data
-          href: disposition.md
     - name: Manage inactive mailboxes
       items: 
         - name: Overview of inactive mailboxes
@@ -333,10 +338,8 @@
           href: restore-an-inactive-mailbox.md
         - name: Delete an inactive mailbox
           href: delete-an-inactive-mailbox.md
-    - name: More information about data governance
-      items: 
-        - name: Watch videos from the Microsoft Data Governance team
-          href: https://go.microsoft.com/fwlink/?linkid=867039
+    - name: Videos from the Data Governance team
+      href: https://go.microsoft.com/fwlink/?linkid=867039
     - name: Records management
       items: 
         - name: Learn about records management
