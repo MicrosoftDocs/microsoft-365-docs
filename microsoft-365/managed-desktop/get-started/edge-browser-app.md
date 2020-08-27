@@ -1,6 +1,6 @@
 ---
 title: New Microsoft Edge
-description:  
+description:  Explains how the new Edge browser is deployed and updated
 keywords: browser, Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -31,7 +31,6 @@ The [Beta Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels
 
 To ensure that Microsoft Edge updates correctly, do not modify the Microsoft Edge [update policies](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies).
 
-### Microsoft Edge Beta Channel
 
 
 ## Settings managed by Microsoft Managed Desktop
@@ -40,7 +39,7 @@ Microsoft Managed Desktop has created a default set of policies for Microsoft Ed
 
 ### Microsoft Edge extensions
 
-The security baseline for Microsoft Edge on Microsoft Managed Desktop devices sets two policies to disable all Chrome extensions and secure end users. To enable and deploy extensions in your environment, see Settings you manage. 
+The security baseline for Microsoft Edge on Microsoft Managed Desktop devices sets two policies to disable all Chrome extensions and secure users. To enable and deploy extensions in your environment, see Settings you manage. 
 
 #### Extension installation blocklist
 **Default value:** All
@@ -73,7 +72,7 @@ We don't recommend enabling this setting since it allows users to visit sites wi
 
 **Default value:** Enabled
 
-Enabled by default to help protect end users.
+Enabled by default to help protect users.
 
 #### Windows Defender SmartScreen prompts for sites
 
@@ -101,7 +100,7 @@ We don't recommend using Flash because of associated security risks. If you stil
 
 **Default value:** Disabled
 
-We do not recommend allowing end users to save passwords on their device.
+We do not recommend allowing users to save passwords on their device.
 
 ### Internet Explorer Mode in Microsoft Edge
 IE mode on Microsoft Edge makes it easy to use all of the sites your organization needs in a single browser. It uses the integrated Chromium engine for sites that are compatible with the Chromium rendering engine and it uses the Trident MSHTML engine from Internet Explorer 11 (IE11) for sites that aren't or have dependencies on IE functionality. [Learn more] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 
