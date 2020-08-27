@@ -67,12 +67,12 @@ As an admin for Office 365, you can create or edit users, reset user passwords, 
 ## Add a partner at the time of purchase
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. Select the product you want to purchase, and then select **Buy**.
+2. Select the product that you want to purchase, and then select **Buy**.
 3. To add a new partner, expand **Need help with your order?** and select **Get assistance from a Microsoft Partner**.<br>
 Follow the steps on the providers page to either search for, or to get matched with a partner.
 4. If you already have a partner, in the second step of the checkout wizard, in the right pane, under Partner information, select **Add**.
 5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
-6. Complete the rest of the wizard to finish buying your subscriptions. 
+6. Complete the rest of the wizard to finish buying your subscriptions.
 
 ::: moniker-end
 
@@ -81,12 +81,12 @@ Follow the steps on the providers page to either search for, or to get matched w
 ## Add a partner at the time of purchase
 
 1. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), go to the **Billing** \> **Purchase services**  page.
-2. Select the product you want to purchase, and then select **Buy**.
+2. Select the product that you want to purchase, and then select **Buy**.
 3. To add a new partner, expand **Need help with your order?** and select **Get assistance from a Microsoft Partner**.<br>
 Follow the steps on the providers page to either search for, or to get matched with a partner.
 4. If you already have a partner, in the second step of the checkout wizard, in the right pane, under Partner information, select **Add**.
 5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
-6. Complete the rest of the wizard to finish buying your subscriptions. 
+6. Complete the rest of the wizard to finish buying your subscriptions.
 
 ::: moniker-end
 
@@ -104,7 +104,7 @@ Follow the steps on the providers page to either search for, or to get matched w
 ::: moniker range="o365-germany"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-2. If you have more than one subscription, select the subscription you want to edit.
+2. If you have more than one subscription, select the subscription that you want to edit.
 3. On the right, under the subscription cost, choose **More actions** > **Add partner of record**.
 4. Type the Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
 5. The partner ID displays on the **Subscriptions** page.
@@ -138,7 +138,7 @@ To accept this offer
 ::: moniker range="o365-germany"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-2. If you have multiple subscriptions, select the name of the subscription you want to edit.
+2. If you have multiple subscriptions, select the name of the subscription that you want to edit.
 3. Under the **Partner ID**, select **Edit partner of record**.
 4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
 
@@ -147,7 +147,7 @@ To accept this offer
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
-2. If you have multiple subscriptions, select the name of the subscription you want to edit.
+2. If you have multiple subscriptions, select the name of the subscription that you want to edit.
 3. Under the **Partner ID**, select **Edit partner of record**.
 4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
 
@@ -172,7 +172,7 @@ To accept this offer
 ::: moniker range="o365-germany"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-2. If you have multiple subscriptions, select the name of the subscription you want to edit.
+2. If you have multiple subscriptions, select the name of the subscription that you want to edit.
 3. Under the **Partner ID**, select **Edit partner of record**.
 4. On the **Partner information** page, clear the **partner ID** box, and then select **Submit**.
 
@@ -181,7 +181,7 @@ To accept this offer
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
-2. If you have multiple subscriptions, select the name of the subscription you want to edit.
+2. If you have multiple subscriptions, select the name of the subscription that you want to edit.
 3. Under the **Partner ID**, select **Edit partner of record**.
 4. On the **Partner information** page, clear the **partner ID** box, and then select **Submit**.
 

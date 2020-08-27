@@ -42,7 +42,7 @@ If you are a global administrator, when you delete a user you can also give anot
 
 Before you begin, think about what you want to do with the user's email and OneDrive content, and whether you want to keep the license or stop paying for it.
   
-|||
+|Item | Description |
 |:-----|:-----|
 |Product licenses  <br/> |You can remove the license from the user and remove it from your subscriptions to stop paying for that license. If you select this option, the license will be removed automatically from your subscriptions.  <br/><br/> **You can't remove the license** if you bought it through a Partner or volume licensing. If you're paying for an annual plan or if you're in the middle of a billing cycle, you won't be able to remove the license from your subscription until your commitment is completed.  <br/> |
 |OneDrive content  <br/> |If the user saved their files to OneDrive, you can give another user access to these files.  <br/><br/> You'll need to move the files you want to keep within the retention period that is set for OneDrive files. **By default, the retention period is 30 days.** If you don't move the files within the retention period after deleting the user, the OneDrive content will be permanently deleted. To increase the number of days that you retain OneDrive files for deleted accounts, see [Set the OneDrive retention for deleted users](https://docs.microsoft.com/onedrive/set-retention).  <br/><br/> **Important!** If the deleted user used a personal computer to download files from SharePoint and OneDrive, there's no way for you to wipe those files they stored on their computer. They will continue to have access to any files that were synced from OneDrive.           |
@@ -65,7 +65,7 @@ Since the guided experience walks through the steps to delete a user, here's how
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 ::: moniker-end
 
-2. Select the user you want to delete, and then select **Delete user**.
+2. Select the user that you want to delete, and then select **Delete user**.
 
 ## User management admin: Delete one or more users from Office 365
 
@@ -110,7 +110,7 @@ Reducing the number of licenses is a separate step that can only be performed by
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page. If you don't see this option, you aren't a global admin or billing admin, and can't do this step.
 
-2. On the **Products** tab, select the subscription for which you want to remove licenses.
+2. On the **Products** tab, select the subscription that you want to remove licenses for.
 
 3. On the subscription details page, select **Remove licenses**.
 
