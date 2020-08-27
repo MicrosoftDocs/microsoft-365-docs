@@ -380,7 +380,7 @@ To verify that your sensitive data has been uploaded, run the following command 
 
 You'll see a list of data stores and when they were last updated.
 
-If you want to see all the data uploads to a particular store, run the following command in a Windows command prompt:
+If you want to see all the data uploads to a particular store, or want to check the status and progress in processing the imported data, run the following command in a Windows command prompt:
 
 `EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
 
