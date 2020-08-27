@@ -250,7 +250,7 @@ To enable Soft Delete on your key vaults, complete these steps:
 
 ### Add a key to each key vault either by creating or importing a key
 
-There are two ways to add keys to an Azure Key Vault; you can create a key directly in Key Vault, or you can import a key. Creating a key directly in Key Vault is the less complicated method, while importing a key provides total control over how the key is generated.
+There are two ways to add keys to an Azure Key Vault; you can create a key directly in Key Vault, or you can import a key. Creating a key directly in Key Vault is the less complicated method, while importing a key provides total control over how the key is generated. You need to use the RSA keys. Azure Key Vault does not support wrap/unwrap using Elliptic Curve keys.
   
 To create a key directly in your key vault, run the [Add-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey) cmdlet as follows:
   
