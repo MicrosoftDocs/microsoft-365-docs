@@ -66,7 +66,7 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 
 ## How retention works with document versions in a site collection
 
-Versioning is a feature of all document libraries in SharePoint and OneDrive. By default, versioning retains a minimum of 500 major versions, though you can increase this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
+Versioning is a feature of all document libraries in SharePoint and OneDrive. By default, versioning retains a minimum of 500 major versions, though you can increase this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) and [How versioning works in lists and libraries](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
 Retain-only settings retain all versions of a document in a SharePoint site collection or OneDrive account. When a document that is subject to a hold or retain-only retention settings is edited for the first time, a version of the original document is copied to the Preservation Hold library. When a document that is subject to a hold or retain-only settings is deleted, all versions are copied to the Preservation Hold library if versioning is enabled. Each version of a document in the Preservation Hold library exists as a separate item with its own retention period:
   
@@ -76,6 +76,10 @@ Retain-only settings retain all versions of a document in a SharePoint site coll
 
 > [!NOTE]
 > The preserved versions of SharePoint and OneDrive documents are not searchable by eDiscovery tools.
+
+For retention policies, the versioning limits for the site are ignored. When a versioning limit is reached, old versions are not purged.
+
+That's not the case for retention labels when a retention policy isn't applied to the site. Then, the versioning limits are honored. This also applies to [retention labels that declare records](declare-records.md) when you use [record versioning](record-versioning.md).
 
 ## When a user leaves the organization
 
