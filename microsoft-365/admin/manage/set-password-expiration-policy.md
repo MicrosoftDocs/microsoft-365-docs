@@ -28,14 +28,13 @@ description: "Learn how to set a password expiration policy for your organizatio
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> The admin center is changing. If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../admin-overview/admin-overview.md)
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../admin-overview/admin-overview.md). You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
 
 If you're a user, you don't have the permissions to set your password to never expire. Ask your work or school technical support to do the steps in this article for you.
 
@@ -85,6 +84,10 @@ This article is for setting the expiration policy for cloud-only users (Azure AD
   
 To learn how to synchronize user password hashes from on premises AD to Azure AD, see [Implement password hash synchronization with Azure AD Connect sync](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
 
+## Password policies and account restrictions in Azure Active Directory
+
+You can set more password policies and restrictions in Azure active directory. Check out [Password policies and account restrictions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy) for more info.
+
 ## Update password Policy
 
 The Set-MsolPasswordPolicy cmdlet updates the password policy of a specified domain or tenant. Two settings are required; the first is to indicate the length of time that a password remains valid before it must be changed and the second is to indicate the number of days before the password expiration date that will trigger when users will receive their first notification that their password will soon expire.
@@ -93,7 +96,5 @@ To learn how to update password policy for a specific domain or tenant, see [Set
 
 ## Related content
 
-- [Set an individual user's password to never expire](set-password-to-never-expire.md)
-- [Reset a user's password](reset-passwords.md)
-- [Resend a user's password](resend-user-password.md)
-- [Let users reset their own passwords](let-users-reset-passwords.md)
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md)
+[Reset passwords](../add-users/reset-passwords.md)
