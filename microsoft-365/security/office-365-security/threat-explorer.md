@@ -78,7 +78,7 @@ You should also see additional details within the product. For example, the tota
 
 ### Top targeted users
 
-Today we expose the list of Top Targeted users in the Malware View for Emails (within the Top Malware Families section). We will be extending this view within Phish and All Email views as well, where you will be able to see the top 5 targeted Users along with no. of attempts for each user for corresponding view (e.g. for Phish view you will be able to see the number of Phish attempts ).
+Today we expose the list of the top targeted users in the Malware View for Emails (within the Top Malware Families section). We will be extending this view within Phish and All Email views as well, where you will be able to see the top five targeted users along with the number of attempts for each user for the corresponding view (for example, for Phish view you will be able to see the number of Phish attempts).
 You will also be able to export the list of targeted users up to a limit of 3000 along with the number of attempts for offline analysis for each email view. In addition to that, selecting No. of attempts (for example, 13 attempts below) would open a filtered view in Threat Explorer, so that you can look at more details across emails and threats for that user. 
 
 ![Top Targeted Users](../../media/Top_Targeted_Users.png)
