@@ -256,7 +256,7 @@ When an update is available for an assessment, you’ll see a notification and h
 
 ### What causes an update
 
-An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve new guidance for improvement actions based on regulatory changes, or could be due to product changes. Assessment updates can originate from your organization (such as, when a [custom template is modified](compliance-manager-templates.md#modify-a-template)) as well as from Microsoft.
+An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve adjusting control mapping or other guidance based on regulatory changes or product changes. Assessment updates can originate from your organization (such as, when a [custom template is modified](compliance-manager-templates.md#modify-a-template)) as well as from Microsoft.
 
 If Microsoft updates a Compliance Manager template that you extended, your assessment will inherit those updates once you accept them. Your assessment will retain the additional attributes you applied to the assessment when you extended it.
 
@@ -267,11 +267,11 @@ Custom assessments that you create do not receive any template updates from Micr
 
 #### Where you’ll see assessment update notifications
 
-A message near the top of the assessment details page shows that an update is available for that assessment. Select the **Review update** button to review the specific changes and accept or defer the update.
+The assessment details page also shows a **Pending update** label next to the assessment with an update. Select that assessment to get to its details page.
 
-The assessment details page also shows a **Pending update** link next to the assessment with an update.
+A message near the top of the assessment details page shows that an update is available for that assessment. Select the **Review update** button in the banner to review the specific changes and accept or defer the update.
 
-Updates usually involve a change to one or more improvement actions. When an improvement action is updated, you’ll see the **Pending update** link next to its name within the assessment. Accepting updates to an assessment **does not** also accept pending improvement action updates within that assessment. Updates to improvement actions must be accepted separately.
+The assessment details page may also list improvement actions that have a **Pending update* label next to them. Those updates are for specific changes to the improvement actions themselves and need to be accepted separately. Visit [Accepting updates to improvement actions](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions) to learn more.
 
 #### Review update to accept or defer
 
