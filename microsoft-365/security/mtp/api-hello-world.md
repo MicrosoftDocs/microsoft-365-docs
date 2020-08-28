@@ -1,7 +1,7 @@
 ---
 title: Hello World for Microsoft Threat Protection REST API 
-description: 
-keywords: 
+description: Learn how to create an app and use a token to access the Microsoft Threat Protection APIs
+keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy

@@ -1,7 +1,7 @@
 ---
 title: Partner access through Microsoft Threat Protection APIs
-description: 
-keywords: 
+description: Learn how to create an AAD application to get programmatic access to Microsoft Threat Protection on behalf of your customers
+keywords: partner, access, api, multi tenant, consent, access token, app 
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -33,7 +33,7 @@ Microsoft Threat Protection exposes much of its data and actions through a set o
 
 In general, you’ll need to take the following steps to use the APIs:
 - Create a **multi-tenant** AAD application.
-- Get authorized(consent) by your customer administrator for your application to access Microsoft Threat Protection resources it needs.
+- Get authorized (consent) by your customer administrator for your application to access Microsoft Threat Protection resources it needs.
 - Get an access token using this application.
 - Use the token to access Microsoft Threat Protection API.
 

@@ -1,7 +1,7 @@
 ---
 title: Access the Microsoft Threat Protection APIs
-description: 
-keywords: 
+description: Learn how to access the Microsoft Threat Protection APIs
+keywords: access, apis, application context, user context, aad application, access token
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy

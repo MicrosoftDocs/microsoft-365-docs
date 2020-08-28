@@ -1,7 +1,7 @@
 ---
 title: Common Microsoft Threat Protection REST API error codes
-description: 
-keywords: 
+description: Learn about the common Microsoft Threat Protection REST API error codes
+keywords: api, error, codes, common errors, mtp, api error codes
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -27,10 +27,13 @@ search.appverid:
 - Microsoft Threat Protection
 
 
-* The error codes listed in the following table may be returned by an operation on any of Microsoft Defender ATP APIs.
-* Note that in addition to the error code, every error response contains an error message which can help resolving the problem.
-* Note that the message is a free text that can be changed.
-* At the bottom of the page you can find response examples.
+The error codes listed in the following table may be returned by an operation on any of Microsoft Threat Protection APIs.
+
+Note that in addition to the error code, every error response contains an error message which can help resolving the problem.
+
+Note that the message is a free text that can be changed.
+
+At the bottom of the page you can find response examples.
 
 Error code |HTTP status code |Message 
 :---|:---|:---

@@ -1,7 +1,7 @@
 ---
 title: Access Microsoft Threat Protection APIs using on behalf of user
-description: 
-keywords: 
+description: Learn how to access Microsoft Threat Protection APIs using on behalf of user
+keywords: access, on behalf of user, api, application, user, access token, token, 
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy

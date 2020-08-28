@@ -46,7 +46,7 @@ Delegated (work or school account) | AdvancedQuery.Read | 'Run advanced queries'
 >- The user needs to have 'View Data' AD role
 >- The user needs to have access to the device, based on device group settings.
 
-## HTTP request - CHECK URL WITH EFRAT
+## HTTP request
 ```
 POST https://api.security.microsoft.com/api/advancedqueries/run
 ```
