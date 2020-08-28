@@ -22,6 +22,8 @@
              href: setup/setup-apps-for-business.md
         - name: Explore the Setup page and wizard
           href: setup/o365-setup-wizard-and-setup-page.md
+        - name: Secure Windows 10 computers
+          href: ../business/secure-win-10-pcs.md
         - name: Install Office apps
           href: setup/install-applications.md
         - name: Set up windows devices
@@ -218,6 +220,8 @@
            href: manage/manage-deployment-of-add-ins.md
          - name: Manage add-ins in the admin center 
            href: manage/manage-addins-in-the-admin-center.md
+         - name: Manage Office Scripts settings 
+           href: manage/manage-office-scripts-settings.md        
          - name: Centralized Deployment FAQ
            href: manage/centralized-deployment-faq.md
          - name: Find a partner or a re-seller
@@ -291,7 +295,7 @@
           items: 
             - name: Validate settings on Android or iOS
               href: ../business/validate-settings-on-android-or-ios.md
-        - name: Set device protection settings  for Windows 10 PCs
+        - name: Edit or create device protection settings  for Windows 10 PCs
           href: ../business/protection-settings-for-windows-10-pcs.md
           items: 
             - name: Validate settings on Windows 10 PCs

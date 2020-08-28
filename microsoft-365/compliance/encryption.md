@@ -59,7 +59,7 @@ To learn more, see the following resources:
   
 - [What is Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [Activate Rights Management in the admin center](https://docs.microsoft.com/office365/enterprise/activate-rms-in-office-365)
+- [Activate Rights Management in the admin center](https://docs.microsoft.com/microsoft-365/enterprise/activate-rms-in-microsoft-365)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
