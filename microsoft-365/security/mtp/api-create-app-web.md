@@ -58,7 +58,10 @@ This article explains how to create an Azure AD application, get an access token
 
    ![Image of API access and API selection](../../media/request-api-permissions.png)
 
-     Note that you need to select the relevant permissions. 'Read All Alerts' is only an example. For instance:
+    >[!NOTE]
+    >You need to select the relevant permissions. 
+    
+    For instance:
 
      - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 

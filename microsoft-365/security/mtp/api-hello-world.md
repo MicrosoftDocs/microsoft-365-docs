@@ -58,7 +58,8 @@ For the Application registration stage, you must have a **Global administrator**
 
    ![Image of API access and API selection](../../media/request-api-permissions.png)
 
-   **Important note**: You need to select the relevant permissions. 'Read All Alerts' is only an example!
+   >[!IMPORTANT]
+   >You need to select the relevant permissions. 
 
      For instance,
 
@@ -74,7 +75,8 @@ For the Application registration stage, you must have a **Global administrator**
 
 	- Click **Certificates & secrets**, add description to the secret and click **Add**.
 
-    **Important**: After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
+    >[!IMPORTANT]
+    > After selecting **Add**, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
     ![Image of create app key](../../media/webapp-create-key2.png)
 
@@ -100,7 +102,7 @@ $tenantId = '' ### Paste your tenant ID here
 $appId = '' ### Paste your Application ID here
 $appSecret = '' ### Paste your Application secret here
 
-$resourceAppIdUri = 'https://api.securitycenter.windows.com'
+$resourceAppIdUri = 'https://api.security.microsoft.com'
 $oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
 $authBody = [Ordered] @{
     resource = "$resourceAppIdUri"

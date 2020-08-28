@@ -62,7 +62,8 @@ The following steps with guide you how to create an AAD application, get an acce
 
    - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft Threat Protection** and click on **Microsoft Threat Protection**.
 
-   - **Note**: Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
+   >[!NOTE]
+   >Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
    ![Image of API access and API selection](../../media/apis-in-my-org-tab.png)
    
@@ -79,7 +80,8 @@ The following steps with guide you how to create an AAD application, get an acce
 
 5. Click **Grant consent**
 
-	- **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
+	>[!NOTE]
+    >Every time you add permission you must click on **Grant consent** for the new permission to take effect.
 
 	![Image of Grant permissions](../../media/grant-consent.png)
 
@@ -87,7 +89,8 @@ The following steps with guide you how to create an AAD application, get an acce
 
 	- Click **Certificates & secrets**, add description to the secret and click **Add**.
 
-    **Important**: After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
+    >[!IMPORTANT]
+    > After selecting **Add**, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
     ![Image of create app key](../../media/webapp-create-key2.png)
 
