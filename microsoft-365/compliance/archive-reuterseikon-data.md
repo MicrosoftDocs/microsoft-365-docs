@@ -33,7 +33,7 @@ The following overview explains the process of using a connector to archive the 
 
 3. The Reuters Eikon connector that you create in the Microsoft 365 compliance center connects to the Globanet Merge1 site every day and transfers the content to a secure Azure Storage location in the Microsoft cloud.
 
-4. The connector imports items to the mailboxes of specific users by using the value of the *Email* property of the automatic user mapping as described in [Step 3](#step-3-map-users-and-complete-the-connector-set-up). A subfolder in the Inbox folder named **Reuters Eikon** is created in the user mailboxes, and the items are imported to that folder. The connector does this by using the value of the *Email* property. Every Reuters Eikon item contains this property, which is populated with the email address of every participant of the item.
+4. The connector imports items to the mailboxes of specific users by using the value of the *Email* property of the automatic user mapping as described in [Step 3](#step-3-map-users-and-complete-the-connector-setup). A subfolder in the Inbox folder named **Reuters Eikon** is created in the user mailboxes, and the items are imported to that folder. The connector does this by using the value of the *Email* property. Every Reuters Eikon item contains this property, which is populated with the email address of every participant of the item.
 
 ## Before you begin
 
