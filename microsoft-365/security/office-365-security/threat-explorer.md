@@ -106,7 +106,7 @@ Within the email grid, Details flyout and Exported CSV, the ETRs are presented w
 
 Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization, with the ability to apply any security restriction or controls. Within Threat Explorer, you will now have the ability to view the connectors which are related to an email as well as search for emails using the connector names. 
 The search for Connectors is ‘Contains’ in nature which means partial keyword searches should work as well. 
-Within the Main grid view, the details flyout and the Exported CSV, the Connectors are shown in the Name/GUID format as shown below: 
+Within the Main grid view, the Details flyout, and the Exported CSV, the connectors are shown in the Name/GUID format as shown below: 
 
 ![Connector Details](../../media/Connector_Details.png)
 
@@ -313,4 +313,3 @@ To learn more about roles and permissions, see the following resources:
 - More filtering capabilities and available actions are included in **Threat Explorer**.
 
 For more details, see [Office 365 ATP Service Description: Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
-
