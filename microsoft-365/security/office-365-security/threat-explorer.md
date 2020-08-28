@@ -98,7 +98,7 @@ ETR search and name availability would depend on the specific role that has been
 - EXO Only - Transport Rules: All
 - EXO Only -View-Only Configuration: All
 
-Within the email grid, Details flyout and Exported CSV, the ETRs are presented with a Name/GUID as shown below. 
+Within the email grid, Details flyout, and Exported CSV, the ETRs are presented with a Name/GUID as shown below. 
 
 ![Exchange Transport Rules](../../media/ETR_Details.png)
 
