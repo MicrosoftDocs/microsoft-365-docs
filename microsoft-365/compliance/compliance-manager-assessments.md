@@ -285,7 +285,7 @@ After selecting **Review update** from the assessment details page, a flyout pan
 
 Selecting the **Updated template** link will download an Excel file containing control data for the version of the template with the pending updates. Selecting the **Current template** link downloads a file of the existing template without the changes.
 
-To accept the update and make the changes to your assessment, select **Accept update**.
+To accept the update and make the changes to your assessment, select **Accept update**. Accepted changes are permanent.
 
 If you select **Cancel**, the update won't be applied to the assessment. However, you’ll continue to see the **Pending update** notification until you accept the update.
 
