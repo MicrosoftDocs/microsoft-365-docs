@@ -102,7 +102,7 @@ Within the email grid, Details flyout and Exported CSV, the ETRs are presented w
 
 ![Exchange Transport Rules](../../media/ETR_Details.png)
 
-### Inbound Connectors 
+### Inbound connectors 
 
 Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization, with the ability to apply any security restriction or controls. Within Threat Explorer, you will now have the ability to view the connectors which are related to an email as well as search for emails using the connector names. 
 The search for Connectors is ‘Contains’ in nature which means partial keyword searches should work as well. 
