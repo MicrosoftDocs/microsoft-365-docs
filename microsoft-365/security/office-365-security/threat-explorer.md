@@ -85,7 +85,7 @@ You will also be able to export the list of targeted users up to a limit of 3000
 
 
 ### Exchange Transport Rules
-As part of data enrichment, you should also be able to see all the different transport rules which were applied on a message. This information will be present within the Email grid view (to view this, click on Column options in the grid add Exchange Transport Rule from the Column Options in the Grid) as well as Details flyout in the email.
+As part of data enrichment, you should also be able to see all the different transport rules which were applied to a message. This information will be present within the Email grid view (to view this, select Column options in the grid and add Exchange Transport Rule from the Column options in the grid) as well as Details flyout in the email.
 You would be able to see both the GUID as well as the name of the Transport rules which were applied on the message. Additionally, you would also be able to search for the messages using the name of the Transport rule. This would be a ‘Contains’ search which means you will be able to search using Partial searches as well. 
 
 #### Important Note: 
