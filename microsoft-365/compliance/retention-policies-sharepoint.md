@@ -77,7 +77,7 @@ Retain-only settings retain all versions of a document in a SharePoint site coll
 > [!NOTE]
 > The preserved versions of SharePoint and OneDrive documents are not searchable by eDiscovery tools.
 
-For retention policies, the versioning limits for the site are ignored. When a versioning limit is reached, old versions are not purged.
+For items that are subject to a hold or retain-only retention settings from retention policies, the versioning limits for the site are ignored until the retention period is reached. In this scenario, old versions are not purged.
 
 That's not the case for retention labels when a retention policy isn't applied to the site. Then, the versioning limits are honored. This also applies to [retention labels that declare records](declare-records.md) when you use [record versioning](record-versioning.md).
 
