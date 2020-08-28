@@ -46,7 +46,7 @@ New or changed article | Description
 ## May 2020
 New or changed article | Description
 --- | ---
-[Getting help for end users](working-with-managed-desktop/end-user-support.md) | Updated article
+[Getting help for users](working-with-managed-desktop/end-user-support.md) | Updated article
 [Steps for Partners to register devices](get-started/register-devices-partner.md) | Updated article
 [Microsoft Managed Desktop devices](service-description/device-list.md) | Updated article
 [Register new devices yourself](get-started/register-devices-self.md) | Updated article
@@ -116,7 +116,7 @@ New or changed article | Description
 New or changed article | Description
 --- | ---
 [Exceptions to the service plan](service-description/customizing.md) | New article
-[Getting help for end users](working-with-managed-desktop/end-user-support.md) | Updated article
+[Getting help for users](working-with-managed-desktop/end-user-support.md) | Updated article
 [Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated article
 [Service changes and communication](service-description/servicechanges.md) | New article
 [Register new devices yourself](get-started/register-devices-self.md) | Updated article
@@ -130,7 +130,7 @@ New or changed article | Description
 New or changed article | Description
 --- | ---
 [Microsoft Managed Desktop technologies](intro/technologies.md) | Updated article
-[Getting help for end users](working-with-managed-desktop/end-user-support.md) | Updated article
+[Getting help for users](working-with-managed-desktop/end-user-support.md) | Updated article
 [Microsoft Managed Desktop devices](service-description/device-list.md) | Updated article
 [Deploy and track configurable settings - Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Updated article
 [Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated article
@@ -145,7 +145,7 @@ New or changed article | Description
 --- | ---
 [Working with Microsoft Consulting Services](get-ready/apps-mcs.md) | Updated article
 [Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated article
-[Getting help for end users](working-with-managed-desktop/end-user-support.md) | Updated article
+[Getting help for users](working-with-managed-desktop/end-user-support.md) | Updated article
 [Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md) | Updated article
 [Microsoft Managed Desktop technologies](intro/technologies.md) | Updated article
 
@@ -178,7 +178,7 @@ New or changed article | Description
 [Prepare mapped drives for Microsoft Managed Desktop](get-ready/mapped-drives.md) | New article
 [Prepare certificates and network profiles for Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | New article
 [Order Microsoft Managed Desktop devices](get-started/devices.md) | Updated article
-[Getting help for end users](working-with-managed-desktop/end-user-support.md) | New article
+[Getting help for users](working-with-managed-desktop/end-user-support.md) | New article
 
 ## April 2019
 New or changed article | Description
@@ -221,7 +221,7 @@ New or changed article | Description
 
 New or changed article | Description
 --- | ---
-[Support for Microsoft Managed Desktop](service-description/support.md)<br />and [End user support for Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Updated to include Australia.
+[Support for Microsoft Managed Desktop](service-description/support.md)<br />and [User support for Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Updated to include Australia.
 
 ## October 30, 2018
 Content reorganized: added section for [Microsoft Managed Desktop service description](service-description/index.md). 
