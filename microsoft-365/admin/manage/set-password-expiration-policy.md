@@ -33,11 +33,15 @@ description: "Learn how to set a password expiration policy for your organizatio
 
 ::: moniker-end
 
-This article is for people who set password expiration policy for a business, school, or nonprofit.  
+## Before you begin
+
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../admin-overview/admin-overview.md)
 
 If you're a user, you don't have the permissions to set your password to never expire. Ask your work or school technical support to do the steps in this article for you.
 
-As an admin, you can make user passwords expire after a certain number of days, or set passwords to never expire. 
+As an admin, you can make user passwords expire after a certain number of days, or set passwords to never expire.
+
+## Set password expiration policy
 
 > [!Tip]
 > By default, passwords are set to expire in 90 days. Current research strongly indicates that mandated password changes do more harm than good. They drive users to choose weaker passwords, re-use passwords, or update old passwords in ways that are easily guessed by hackers. If setting password to never expire, we recommend enabling [multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md).

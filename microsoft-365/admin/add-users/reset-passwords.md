@@ -35,7 +35,7 @@ This article explains how to reset passwords for yourself and for your users whe
 
 ## Before you begin
 
-These steps are only for people using a Microsoft 365 for business plan. To do them, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../admin-overview/admin-overview.md)
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../admin-overview/admin-overview.md)
 
 ## Watch: Reset a business password for a user
 
