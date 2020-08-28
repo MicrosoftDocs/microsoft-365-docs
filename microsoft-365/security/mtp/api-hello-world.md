@@ -44,17 +44,18 @@ For the Application registration stage, you must have a **Global administrator**
 
    ![Image of Microsoft Azure and navigation to application registration](../../media/atp-azure-new-app2.png)
 
-3. In the registration form, choose a name for your application and then click **Register**.
+3. In the registration form, choose a name for your application and then select **Register**.
 
 4. Allow your Application to access Microsoft Defender ATP and assign it **'Read all alerts'** permission:
 
-   - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft Threat Protection** and click on **Microsoft Threat Protection**.
+   - On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft Threat Protection** and select on **Microsoft Threat Protection**.
 
-   - **Note**: Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
+   >[!NOTE]
+   >Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
    ![Image of API access and API selection](../../media/apis-in-my-org-tab.png)
 
-   - Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
+   - Choose **Application permissions** > **Alert.Read.All** > Select on **Add permissions**
 
    ![Image of API access and API selection](../../media/request-api-permissions.png)
 
@@ -65,15 +66,16 @@ For the Application registration stage, you must have a **Global administrator**
 
      - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
-5. Click **Grant consent**
+5. Select **Grant consent**
 
-	- **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
+	- >[!NOTE]
+      > Every time you add permission you must select on **Grant consent** for the new permission to take effect.
 
 	![Image of Grant permissions](../../media/grant-consent.png)
 
 6. Add a secret to the application.
 
-	- Click **Certificates & secrets**, add description to the secret and click **Add**.
+	- Select **Certificates & secrets**, add description to the secret and select **Add**.
 
     >[!IMPORTANT]
     > After selecting **Add**, **copy the generated secret value**. You won't be able to retrieve after you leave!
