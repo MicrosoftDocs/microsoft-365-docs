@@ -28,7 +28,7 @@ description: "Admins in China using Office 365 operated by 21Vianet can learn ho
 > [!NOTE]
 > This article applies only to Office 365 operated by 21Vianet in China.
 
-Even if you plan to host some or all of your mailboxes on-premises, you can still protect the mailboxes with Exchange Online Protection (EOP). To configure connectors, your account must be a global admin, or an Exchange Company Administrator (the Organization Management role group). For information about how Office 365 permissions relate to Exchange permissions, see [Assigning admin roles in Office 365 operated by 21Vianet](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?&view=o365-21vianet). If all of your Exchange mailboxes are on-premise, follow these steps to set up your EOP service.
+Even if you plan to host some or all of your mailboxes on-premises, you can still protect the mailboxes with Exchange Online Protection (EOP). To configure connectors, your account must be a global admin, or an Exchange Company Administrator (the Organization Management role group). For information about how Office 365 permissions relate to Exchange permissions, see [Assigning admin roles in Office 365 operated by 21Vianet](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet). If all of your Exchange mailboxes are on-premise, follow these steps to set up your EOP service.
 
 ## Step 1: Use the Microsoft 365 admin center to add and verify your domain
 
@@ -37,7 +37,7 @@ Even if you plan to host some or all of your mailboxes on-premises, you can stil
 2. Follow the steps in the portal to add the applicable DNS records to your DNS-hosting provider in order to verify domain ownership.
 
 > [!TIP]
-> [Add your domain and users to Office 365 operated by 21Vianet](https://docs.microsoft.com/office365/admin/setup/add-domain?&view=o365-21vianet) and [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/office365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?&view=o365-21vianet) are helpful resources to reference as you add your domain to the service and configure DNS.
+> [Add your domain and users to Office 365 operated by 21Vianet](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet) and [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) are helpful resources to reference as you add your domain to the service and configure DNS.
 
 ### Step 2: Add recipients and configure the domain type
 
@@ -64,7 +64,7 @@ To ensure that spam (junk) email is routed correctly to each user's Junk Email f
 
 ## Step 6: Use the Microsoft 365 admin center to point your MX record to EOP
 
-Follow the Office 365 domain configuration steps to update your MX record for your domain, so that your inbound email flows through EOP. For more information, you can again reference [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Follow the Office 365 domain configuration steps to update your MX record for your domain, so that your inbound email flows through EOP. For more information, you can again reference [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 How do you know this task worked?
 

@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,72 +21,101 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-description: "Learn how to use security defaults to set up multi-factor authentication for users."
+description: "Learn how to set up multi-factor authentication for your organization."
 monikerRange: 'o365-worldwide'
 ---
 
 # Set up multi-factor authentication
   
-> [!IMPORTANT]
-> If you purchased your subscription or trial after October 21, 2019, and you're unexpectedly prompted for multi-factor authentication (MFA), [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) have been automatically enabled for your subscription.
+Based on your understanding of [multi-factor authentication (MFA) and its support in Microsoft 365](multi-factor-authentication-microsoft-365.md), it’s time to set it up and roll it out to your organization.
 
-Every new Microsoft 365 subscription will automatically have [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) turned on. This means that every user will have to set up multi-factor authentication (MFA) and install the Microsoft Authenticator app on their mobile device. For more information, see [Set up MFA for a Microsoft 365 account](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
+Before you begin, determine if these special conditions apply to you and take the appropriate action:
 
-The following nine administrator roles will be required to perform additional authentication every time they sign in:
+- If you have Office 2013 clients on Windows devices, [enable Modern Authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication).
 
-- Global administrator
-- SharePoint administrator
-- Exchange administrator
-- Conditional Access administrator
-- Security administrator
-- Helpdesk administrator or password administrator
-- Billing administrator
-- User administrator
-- Authentication administrator
+- If you have third-party directory services with Active Directory Federation Services (AD FS), set up the Azure MFA Server. See [advanced scenarios with 
+Azure Multi-Factor Authentication and third-party VPN solutions](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) for more information.
 
-All other users will be asked to perform additional authentication when needed.
+
+All other users will be asked to perform additional authentication when needed. For more information, please visit [Two-factor verification method and settings](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-manage-settings#turn-on-two-factor-verification-prompts-on-a-trusted-device).
+
+=======
+## Step 1: Decide on the method of requiring your users to use MFA
 
 > [!NOTE]
-> You must be a global admin to set up or modify MFA <br><br>
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
+> You must be a global admin to set up or modify MFA. There are three ways to require your users to use MFA for sign-ins. See [MFA support in Microsoft 365](multi-factor-authentication-microsoft-365.md) for the details.
 
-If you have previously set up MFA with baseline policies, [you must turn them off to turn on security defaults](#move-from-baseline-policies-to-security-defaults). However, if you have Microsoft 365 Business or your subscription includes [Azure Active Directory Premium P1 or Azure Active Directory Premium P2](https://azure.microsoft.com/pricing/details/active-directory/), you can also set up [Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) policies. To use Conditional Access policies, you need to make sure security defaults are disabled and [modern authentication](#enable-modern-authentication-for-your-organization) is enabled.
+- Security defaults (recommended for small businesses)
 
-> [!TIP]
-> To explain to your users how to set up the Microsoft Authenticator app, see [Use Microsoft Authenticator with Office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411).
+  If you purchased your subscription or trial after October 21, 2019, and you're unexpectedly prompted for MFA, [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) have been automatically enabled for your subscription.
+  
+  Every new Microsoft 365 subscription will automatically have security defaults turned on. This means that every user will have to set up MFA and install the Microsoft Authenticator app on their mobile device.
 
-## Manage security defaults
+  All users must use the Microsoft Authenticator app as their additional verification method and legacy authentication is blocked. 
 
-1. Sign in to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=834822) with global admin credentials.
-2. Go to the [Azure Active Directory - Properties page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-3. At the bottom of the page, choose **Manage Security defaults**.
-4. Choose **Yes** to enable security defaults and **No** to disable security defaults, and then choose **Save**.
+- Conditional Access policies (recommended for enterprises)
 
-## Move from baseline policies to security defaults
+  Users choose the additional verification method during MFA registration.
 
-1. Go to the [Conditional Access - Policies page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).
-2. Choose each baseline policy that is **On** and set **Enable policy** to **Off**.
-3. Go to the [Azure Active Directory - Properties page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-4. On the bottom of the page, choose **Manage Security defaults**, and in the **Enable Security defaults** pane, set **Enable Security defaults** toggle to **Yes**, and then choose **Save**. 
+- Per-user account (not recommended)
 
-## Enable modern authentication for your organization
+  Users choose the additional verification method during MFA registration.
 
-All Office 2016 client applications support MFA through the use of the Active Directory Authentication Library (ADAL). This means that app passwords aren't required for Office 2016 clients. See [this article](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords) for more information.
+## Step 2. Test MFA on your pilot users
 
-However, you need to make sure your Microsoft 365 subscription is enabled for ADAL, or modern authentication.
+If you are using Conditional Access policies or per-user MFA (not recommended), select pilot users in your business or organization to test MFA registration and sign-ins. For example:
 
-1. To enable modern authentication, from the [admin center](https://go.microsoft.com/fwlink/p/?linkid=834822), select **Settings** \> **Org Settings** and then in the **Services** tab, choose **Modern authentication** from the list.
+- For Conditional Access policies, create a pilot users group and a policy that requires MFA for the members of the group and for all apps. Then, add your pilot user’s accounts to the group.
 
-2. Check the **Enable modern authentication (recommended)** box in the **Modern authentication** panel, and then choose **Save changes**. 
+- For per-user MFA, enable MFA for the user accounts of your pilot users one a time.
 
-    ![Modern authentication panel with enable checkbox checked.](../../media/enablemodernauth.png)
-    
-> [!IMPORTANT]
-> As of August of 2017, all new Microsoft 365 subscriptions that include Skype for Business online and Exchange online have modern authentication enabled by default. To check your modern authentication status for Skype for Business online, you can use Skype for Business online PowerShell with Global Admin credentials. Run Get-CsOAuthConfiguration to check the output of -ClientADALAuthOverride. If -ClientADALAuthOverride is 'Allowed', modern authentication is on.
-To check your MA status for Exchange Online, please visit [Enable modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online).
+Work with your pilot users to address questions and issues to prepare for a smooth roll out to your organization.
 
-## Related articles
+## Step 3. Inform your organization that MFA is coming
 
-[Top 10 ways to secure Microsoft 365 for business plans](secure-your-business-data.md)
+Use email notifications, hallway posters, team meetings, or formal training to ensure that your employees understand:
 
-[Enable Modern Authentication for Office 2013 on Windows devices](enable-modern-authentication.md)
+- Why MFA is being required for sign-ins
+- [How to register for their additional verification method](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [How to sign-in after registration](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
+- [How to change their additional verification method](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
+- [How to deal with situations like a new smart phone](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
+
+Most importantly, make sure your employees understand ***when the MFA requirement is going to be imposed*** so that it does not surprise them.
+
+## Step 4. Roll out the MFA requirement to your organization or users
+
+Based on your chosen MFA requirement method, roll out MFA authentication to the employees beyond your pilot testers.
+
+### Security defaults
+
+You enable or disable security defaults from the **Properties** pane for Azure Active Directory (Azure AD) in the Azure portal.
+
+1.	Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with global admin credentials.
+2.	Go to the [Azure Active Directory - Properties page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
+3.	At the bottom of the page, choose **Manage Security defaults**.
+4.	Choose **Yes** to enable security defaults and **No** to disable security defaults, and then choose **Save**.
+
+If you have been using [baseline Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection), here is how you move to using security defaults.
+
+1.	Go to the [Conditional Access - Policies page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).
+2.	Choose each baseline policy that is **On** and set **Enable policy** to **Off**.
+2.	Go to the [Azure Active Directory - Properties page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
+4.	At the bottom of the page, choose **Manage Security defaults**.
+5.	Choose **Yes** to enable security defaults and **No** to disable security defaults, and then choose **Save**.
+
+### Conditional Access policies
+
+Create, configure, and enable the appropriate policies that include the group of users that require MFA for sign-in.
+
+### Per-user MFA (not recommended)
+
+Enable user accounts for MFA corresponding to your rollout.
+
+### Supporting your employees
+
+As your employees register and begin signing in with MFA, ensure that your IT specialists, IT department, or helpdesk can answer questions and address issues quickly.
+
+See this article for [information about troubleshooting MFA sign-ins](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2). 
+
+

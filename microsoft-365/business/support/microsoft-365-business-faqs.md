@@ -8,6 +8,7 @@ ms.author: sirkkuw
 ms.topic: article
 ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business

@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
-description: "Just like features in the Microsoft 365 compliance center, our help content is always evolving. We're continuously creating new articles, updating existing ones, and making changes based on your feedback. Find out what's new and updated this month."
+description: Just like features in the Microsoft 365 compliance center, our help content is always evolving. Find out what's new and updated this month.
 ms.custom: seo-marvel-mar2020
 ---
 
@@ -95,13 +95,6 @@ All [Compliance Score](compliance-score.md) and [Compliance Manager](compliance-
 ### PST Import
 
 [FAQ about importing PST files](faqimporting-pst-files-to-office-365.md) (updated)<br>Added FAQ about how PST import process handles duplicate email items.
-
-### Retention
-
-[Overview of retention policies](retention-policies.md) (updated)<br>Changes include:
-
-- Added content paths for retain-only and delete-only retention policies (previously, content paths explained only retain and then delete).
-- [Updated section](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) explaining that, for SharePoint locations, you now specify a URL rather than choose a site. This means you don't need permissions to access the site in order to include it in a retention policy.
 
 ### Sensitivity labels
 

@@ -37,6 +37,7 @@ Every account that accesses and uses data classification must have a license ass
 
 In order to get access to the content explorer tab, an account must be assigned membership in any one of these roles or role groups. 
 
+A [DLP policy](data-loss-prevention-policies.md) can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes [definitions for many common sensitive information types](sensitive-information-type-entity-definitions.md) across many different regions that are ready for you to use. For example, a credit card number, bank account numbers, national ID numbers, and Windows Live ID service numbers.
 
 **Microsoft 365 role groups**
 
@@ -73,7 +74,7 @@ Content explorer shows a current snapshot of the items that have a sensitivity l
 
 ### Sensitive information types
 
-A [DLP policy](data-loss-prevention-policies.md) can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes [definitions for many common sensitive information types](what-the-sensitive-information-types-look-for.md) from across many different regions that are ready for you to use. For example, a credit card number, bank account numbers, national ID numbers, and Windows Live ID service numbers.
+A [DLP policy](data-loss-prevention-policies.md) can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes [definitions for many common sensitive information types](sensitive-information-type-entity-definitions.md) from across many different regions that are ready for you to use. For example, a credit card number, bank account numbers, national ID numbers, and Windows Live ID service numbers.
 
 > [!NOTE]
 > Content explorer doesn't currently scan for sensitive information types in Exchange Online.
@@ -135,6 +136,6 @@ You can search on:
 
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](labels.md)
-- [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
+- [Sensitive information type entity definitions.md](sensitive-information-type-entity-definitions.md)
 - [Overview of retention policies](retention-policies.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)

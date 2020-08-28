@@ -17,13 +17,15 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
-description: "For administrators: Learn about using the Import service in the Security & Compliance Center to bulk-import email data (PST files)  to user mailboxes in Exchange Online. This topic provides FAQs and explains how the PST import process works."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to use the Import service in the Security & Compliance Center to bulk-import email data (PST files) to user mailboxes.
 ---
 
 # Overview of importing your organization's PST files
 
 > [!NOTE]
-> This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)
+> This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075).
 
 You can use the Import service in the Security & Compliance Center to quickly bulk-import PST files to Exchange Online mailboxes in your organization. There are two ways you can import PST files to Office 365:
 
@@ -140,7 +142,7 @@ Additionally, to create import jobs in the Security & Compliance Center, one of 
   
  **Where is network upload available?**
   
-Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, and Australia. Network upload will be available in more regions soon.
+Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
 
 > [!NOTE]
 > At this time, network upload of PST files is not available in Germany and Switzerland. This FAQ will be updated when network upload is available in these countries.

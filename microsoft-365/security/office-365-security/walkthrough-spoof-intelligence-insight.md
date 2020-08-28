@@ -34,7 +34,12 @@ This walkthrough is one of several for the Security & Compliance Center. To abou
 
   You can view the spoof intelligence insight from more than one dashboard in the Security & Compliance Center. Regardless of which dashboard you're looking at, the insight provides the same details and allows you to quickly perform the same tasks.
 
-- You need to be assigned permissions before you can perform these procedures. To use the spoof intelligence insight, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions before you can do the procedures in this topic. To use the spoof intelligence insight, you need to be a member of one of the following role groups:
+
+  - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - You enable and disable spoof intelligence in ATP anti-phishing policies. For more information, see [Configure ATP anti-phishing policies in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
@@ -97,9 +102,3 @@ For example, if you add the following domain pair to the 'AllowedToSpoof' sender
 ## Related topics
 
 [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md)
-
-[Walkthrough - From a dashboard to an insight](from-a-dashboard-to-an-insight.md)
-
-[Walkthrough - From a detailed report to an insight](from-a-detailed-report-to-an-insight.md)
-
-[Walkthrough - From an insight to a detailed report](from-an-insight-to-a-detailed-report.md)

@@ -108,5 +108,5 @@ To assist customers with this task, Microsoft has published these guides:
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Understanding HIPAA Compliance with Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(May 19, 2016)
-- [Azure HIPAA implementation guidance](https://aka.ms/azure-hipaa-guide)
+- [Azure HIPAA HITRUST blueprint sample](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

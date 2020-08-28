@@ -27,7 +27,7 @@ This article describes the [overall flow](#the-overall-flow-of-air) of AIR, [how
 
 ## The overall flow of AIR
 
-At a high level, an alert is triggered, and a security playbook starts and automated investigation, which results in findings and recommendations. Here's the overall flow of AIR, step by step:
+At a high level, an alert is triggered, and a security playbook starts an automated investigation, which results in findings and recommendations. Here's the overall flow of AIR, step by step:
 
 1. An automated investigation is initiated in one of the following ways:
 

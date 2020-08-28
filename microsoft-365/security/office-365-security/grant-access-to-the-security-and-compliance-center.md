@@ -63,7 +63,7 @@ For more information about the different permissions you can give to users in th
 
 ## Use PowerShell to give another user access to the Security & Compliance Center
 
-1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Use the **Add-RoleGroupMember** command to add a user to the Organization Management Role, as shown in the following example.
 
@@ -77,7 +77,7 @@ For more information about the different permissions you can give to users in th
 
    - _Member_ is the mailbox, universal security group (USG), or computer to add to the role group. You can specify only one member at a time.
 
-For detailed information on syntax and parameters, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
+For detailed information on syntax and parameters, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).
 
 ### How do you know this worked?
 
@@ -87,4 +87,4 @@ To verify that you've given users access to the Security & Compliance Center, us
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 
-For detailed information on syntax and parameters, see [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroupMember).
+For detailed information on syntax and parameters, see [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).

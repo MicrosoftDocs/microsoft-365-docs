@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "A list of supported file types in Microsoft 365 Advanced eDiscovery. This includes a list of the image file types that are supported by the OCR functionality in Advanced eDiscovery."
+description: A list of supported file types in Microsoft 365 Advanced eDiscovery, including image file types supported by the OCR functionality in Advanced eDiscovery.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Supported file types in Advanced eDiscovery

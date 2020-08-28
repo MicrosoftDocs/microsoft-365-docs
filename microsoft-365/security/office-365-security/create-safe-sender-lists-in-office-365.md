@@ -113,7 +113,7 @@ A standard SMTP email message consists of a *message envelope* and message conte
 
 - The `5322.From` (also known as the **From** address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.
 
-Frequently, the `5321.MailFrom` and `5322.From` addresses are the same (person-to-person communication). However, when email is sent on behalf of someone else, the addresses are frequently different. This usually happens most often for bulk email messages.
+Frequently, the `5321.MailFrom` and `5322.From` addresses are the same (person-to-person communication). However, when email is sent on behalf of someone else, the addresses can be different. This happens most often for bulk email messages.
 
 For example, suppose that Blue Yonder Airlines has hired Margie's Travel to send out its email advertising. The message you receive in your Inbox has the following properties:
 

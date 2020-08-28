@@ -16,7 +16,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "After you export and download the results of an audit log search to a CSV file, you can use the JSON transform feature in the Power Query Editor in Excel to split each property in the JSON object in the AuditData column into its own column. This can help you quickly locate the specific auditing data you're looking for. You can also use PowerShell to search and export audit log records."
+ms.custom: seo-marvel-apr2020
+description: "In this article, you will learn how to export, configure, and view Microsoft 365 audit log records."
 ---
 
 # Export, configure, and view audit log records
@@ -95,7 +96,7 @@ The next step is to use the JSON transform feature in the Power Query Editor in 
 
 ## Use PowerShell to search and export audit log records
 
-Instead of using the audit log search tool in the Security & Compliance Center, you can use the [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) cmdlet in Exchange Online PowerShell to export the results of an audit log search to a CSV file. Then you can follow the same procedure described in Step 2 to format the audit log using the Power Query editor. One advantage of using the PowerShell cmdlet is that you can search for events from a specific service by using the *RecordType* parameter. Here are few examples of using PowerShell to export audit records to a CSV file so you can use the Power Query editor to transform the JSON object in the **AuditData** column as described in Step 2.
+Instead of using the audit log search tool in the Security & Compliance Center, you can use the [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) cmdlet in Exchange Online PowerShell to export the results of an audit log search to a CSV file. Then you can follow the same procedure described in Step 2 to format the audit log using the Power Query editor. One advantage of using the PowerShell cmdlet is that you can search for events from a specific service by using the *RecordType* parameter. Here are few examples of using PowerShell to export audit records to a CSV file so you can use the Power Query editor to transform the JSON object in the **AuditData** column as described in Step 2.
 
 In this example, run the following commands to return all records related to SharePoint sharing operations.
 

@@ -16,7 +16,8 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: "Use the Content Search tool in the Security & Compliance Center to search for and export MicrosoftTeams chat data (called 1xN chats) for on-premises users in an Exchange hybrid deployment."
+description: Use the Content Search tool in the Security & Compliance Center to search for and export Teams chat data for on-premises users in an Exchange hybrid deployment.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Searching cloud-based mailboxes for on-premises users
@@ -124,11 +125,11 @@ You can use the **New-ComplianceSearch** and **Set-ComplianceSearch** cmdlets in
   
 For more information using these cmdlets, see:
   
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
+- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)
 
-- [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-compliancesearch)
+- [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/set-compliancesearch)
 
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
+- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/start-compliancesearch)
 
 ## Known issues
 

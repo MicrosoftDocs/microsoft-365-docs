@@ -64,7 +64,6 @@ Yes, but only if the outsourcing arrangement is a material outsourcing or if it 
 
 ## Resources
 
-- [Microsoft and Canadian privacy laws](https://aka.ms/CanadianPrivacyLaws-Compliance)
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - [Microsoft business cloud services and financial services](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)

@@ -15,8 +15,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: "The custodian management tool in Advanced eDiscovery lets you manage the workflow around identifying, preserving, and collecting data that's associated with the people of interest in a legal case."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to use the custodian management tool in Advanced eDiscovery to manage data for a legal case.
 ---
 
 # Work with custodians in Advanced eDiscovery

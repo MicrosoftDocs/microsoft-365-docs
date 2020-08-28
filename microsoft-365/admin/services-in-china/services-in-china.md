@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEU150
@@ -51,10 +52,10 @@ If you would like to learn how to get started with general Office 365 services, 
 |:-----|:-----|
 |Custom domains  <br/> |Administrators can create and/or use custom domains registered through Chinese-specific domain providers. If you don't have a custom domain, you can [How to buy a domain name](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) from a domain name registrar. If you already have one, [Find your domain registrar or DNS hosting provider](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> Additionally, if you create a public website using the Office 365 SharePoint Online service, China Internet compliance policy requires that you get an Internet Content Provider (ICP) number.  **Note:** Automatic validation for disallowed words in custom domain names is not available.           |
 |Subscriptions, billing, and technical support  <br/> |Provided by 21Vianet. For information on how to contact support, see [Contact Office 365 for business support](../contact-support-for-business-products.md).  <br/> |
-|Self-service password reset  <br/> |Available for admins only. For more information, see [Change or reset your password in Office 365 operated by 21Vianet](https://support.microsoft.com/en-us/office/change-or-reset-your-password-in-microsoft-365-operated-by-21vianet-d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
+|Self-service password reset  <br/> |Available for admins only. For more information, see [Change or reset your password in Microsoft 365 operated by 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
 |Security, privacy, compliance, and details on levels of support  <br/> |Provided by 21Vianet.  <br/> |
-|Office Desktop Setup  <br/> |Office desktop setup is not available for Office 2010 and Office 2007. However, administrators can [Configure current Office desktop applications to work with Office 365](https://support.office.com/article/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
-|Mobile and device support\*  <br/> | Coming soon are the following mobile features:  <br/>  Mobile Device Management (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) is not available, but you can use Exchange ActiveSync devices or an offering from Research in Motion (RIM, the BlackBerry wireless email solution) to run Blackberry Enterprise Server (BES).  <br/>  For more information on mobile support, see [Set up and manage mobile access for your users](https://support.microsoft.com/en-us/office/set-up-and-manage-mobile-access-for-your-users-01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
+|Office Desktop Setup  <br/> |Office desktop setup is not available for Office 2010 and Office 2007. However, administrators can [Configure current Office desktop applications to work with Office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
+|Mobile and device support\*  <br/> | Coming soon are the following mobile features:  <br/>  Mobile Device Management (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) is not available, but you can use Exchange ActiveSync devices or an offering from Research in Motion (RIM, the BlackBerry wireless email solution) to run Blackberry Enterprise Server (BES).  <br/>  For more information on mobile support, see [Set up and manage mobile access for your users](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
 |Office Lens  <br/> |Not available.  <br/> |
 |Microsoft Planner  <br/> |Coming soon.  <br/> |
 |Microsoft Teams  <br/> |Not available.  <br/> |
@@ -68,7 +69,7 @@ If you would like to learn how to get started with general Office 365 services, 
 
 |||
 |:-----|:-----|
-|Sharing a document, library, or site by email with someone outside of your organization  <br/> |This feature is available, but off by default as using it could make files shared accessible outside of your country. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. Users who attempt to share with someone outside of the organization will also receive a warning. For more information, see [Share SharePoint files or folders in Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx).  <br/> |
+|Sharing a document, library, or site by email with someone outside of your organization  <br/> |This feature is available, but off by default as using it could make files shared accessible outside of your country. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. Users who attempt to share with someone outside of the organization will also receive a warning. For more information, see [Share SharePoint files or folders in Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).  <br/> |
 |Access Services  <br/> |Access 2013 is supported, but adding new Access apps may not be available as this feature will be retired from Office 365 and SharePoint Online. Creation of new Access-based web apps and Access web databases in Office 365 and SharePoint Online will stop starting in June 2017 and any remaining web apps and web databases by April 2018. Additionally, Access 2010 functionality is not supported, and attempting to use an Access 2010 database will result in errors and possible data loss.  <br/> |
 |Microsoft PowerApps  <br/> |Coming soon.  <br/> |
 |Information Rights Management (IRM)  <br/> |The ability to set IRM capabilities to SharePoint for your organization is coming soon.  <br/> |
@@ -159,7 +160,7 @@ To learn more about configuring a hybrid deployment with Office 365 tenants host
 - [Create a Hybrid Deployment with the Hybrid Configuration Wizard](https://go.microsoft.com/fwlink/?LinkId=506767)
 
 > [!IMPORTANT]
->  The [Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/?LinkId=506768) is a free web-based tool that helps you configure a hybrid deployment between your on-premises organization and Office 365, or to migrate completely to Office 365. The tool asks you a small set of simple questions and then, based on your answers, creates a customized checklist with instructions to configure your hybrid deployment. We strongly recommend using the Deployment Assistant to configure a hybrid deployment. >  For organizations not wishing to upgrade to or add Exchange 2013 CU5 servers, Exchange 2013 SP1 organizations can configure shared calendar free/busy sharing between their on-premises and Exchange Online organizations. To configure this hybrid deployment feature, see [Configuring Exchange hybrid deployment features with Office 365 operated by 21Vianet](https://support.office.com/article/26e7cc26-c980-4cc5-a082-c333de544b6d). 
+>  The [Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/?LinkId=506768) is a free web-based tool that helps you configure a hybrid deployment between your on-premises organization and Office 365, or to migrate completely to Office 365. The tool asks you a small set of simple questions and then, based on your answers, creates a customized checklist with instructions to configure your hybrid deployment. We strongly recommend using the Deployment Assistant to configure a hybrid deployment. >  For organizations not wishing to upgrade to or add Exchange 2013 CU5 servers, Exchange 2013 SP1 organizations can configure shared calendar free/busy sharing between their on-premises and Exchange Online organizations. To configure this hybrid deployment feature, see [Configuring Exchange hybrid deployment features with Office 365 operated by 21Vianet](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d). 
 
 |||  
 |---|---|
@@ -181,7 +182,7 @@ Sharing Exchange contact data on Apple mobile devices to the Apple iCloud. |This
 
 |||
 |:-----|:-----|
-|Manage account (from within the Office client)  <br/> |This feature, and others like it that are intended to go to your Office 365 portal, currently point to the worldwide Office 365 portal, and you cannot sign in with your Office 365 operated by 21Vianet account. This is a known issue that is being fixed. In the meantime, you can use the URL https://portal.partner.microsoftonline.cn/ to sign into your account and manage settings from there. For more information, see [Manage your Office 365 Pro Plus account for Office 365 operated by 21Vianet](https://support.office.com/article/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8.aspx).  <br/> |
+|Manage account (from within the Office client)  <br/> |This feature, and others like it that are intended to go to your Office 365 portal, currently point to the worldwide Office 365 portal, and you cannot sign in with your Office 365 operated by 21Vianet account. This is a known issue that is being fixed. In the meantime, you can use the URL https://portal.partner.microsoftonline.cn/ to sign into your account and manage settings from there. For more information, see [Manage your Microsoft 365 Apps for enterprise account for Office 365 operated by 21Vianet](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8).  <br/> |
    
 ## OneNote
 
@@ -207,7 +208,7 @@ Sharing Exchange contact data on Apple mobile devices to the Apple iCloud. |This
 |:-----|:-----|
 |Domain providers to support Skype for Business  <br/> |You will need to register your domain with a Chinese-specific domain provider that supports SRV records. For more information on how to register domains, see [Find your domain registrar or DNS hosting provider](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> |
 |Dial-in conferencing (the ability to add telephone access to meetings for users who can't get to a computer)  <br/> |You may see options in Skype for Business and in the Skype for Business Admin Center for Dial-in conferencing and providers, but these features are not yet available. They are coming soon.  <br/> |
-|Skype for Business desktop help  <br/> |You can find help for Skype for Business desktop [here](https://support.office.com/article/6ae5853c-f0fd-4710-aecf-f46def8377ad.aspx). However, desktop help is not available from the product unless you are using Office Click-To-Run.  <br/> |
+|Skype for Business desktop help  <br/> |You can find help for Skype for Business desktop [here](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad). However, desktop help is not available from the product unless you are using Office Click-To-Run.  <br/> |
 |Lync 2010  <br/> |Not available.  <br/> |
 |Ability to join a meeting from your calendar when you're using a Samsung-based device with Google Chrome  <br/> |Coming soon. In the meantime, you can open Skype for Business, go to the Meetings view, and join the meeting from there.  <br/> |
 |Desk Phone Devices like Polycom, Ares, and Tanjay  <br/> |Not available.  <br/> |

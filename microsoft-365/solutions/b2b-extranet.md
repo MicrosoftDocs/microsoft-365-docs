@@ -26,6 +26,12 @@ This article walks through the steps to create a package of resources (in this c
 
 Before you begin, create the site or team that you want to share with the partner organization and enable it for guest sharing. See [Collaborate with guests in a site](collaborate-in-site.md) or [Collaborate with guests in a team](collaborate-as-team.md) for more information. We also recommend that you review [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md) for information about security and compliance features that you can use to help maintain your governance policies when collaborating with guests.
 
+## Video demonstration
+
+This video demonstrates the procedures covered in this article.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wKUj?autoplay=false]
+
 ## Connect the partner organization
 
 In order to invite guests from a partner organization, you need to add the partner's domain as a connected organization in Azure Active Directory.
