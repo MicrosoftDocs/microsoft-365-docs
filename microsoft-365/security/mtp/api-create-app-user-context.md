@@ -82,7 +82,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
     -  To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
-    - Click **Grant consent**.
+    - Click **Grant consent**
 
       >[!NOTE]
       >Every time you add permission you must click on **Grant consent** for the new permission to take effect.
@@ -117,7 +117,7 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
         {
             private const string Authority = "https://login.windows.net";
 
-            private const string WdatpResourceId = "https://api.securitycenter.windows.com";
+            private const string WdatpResourceId = "https://api.security.microsoft.com";
 
             public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
             {
