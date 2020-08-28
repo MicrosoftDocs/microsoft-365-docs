@@ -99,4 +99,5 @@ To learn how to update password policy for a specific domain or tenant, see [Set
 ## Related content
 
 [Let users reset their own passwords](../add-users/let-users-reset-passwords.md)
+
 [Reset passwords](../add-users/reset-passwords.md)

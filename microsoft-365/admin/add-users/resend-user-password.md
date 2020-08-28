@@ -57,4 +57,5 @@ This article is for people who set password expiration policy for a business, sc
 ## Related content
 
 [Let users reset their own passwords](../add-users/let-users-reset-passwords.md)
+
 [Reset passwords](../add-users/reset-passwords.md)

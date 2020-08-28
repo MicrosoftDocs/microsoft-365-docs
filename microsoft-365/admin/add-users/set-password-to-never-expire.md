@@ -121,4 +121,5 @@ Run one of the following commands:
 ## Related content
 
 [Let users reset their own passwords](../add-users/let-users-reset-passwords.md)
+
 [Reset passwords](../add-users/reset-passwords.md)

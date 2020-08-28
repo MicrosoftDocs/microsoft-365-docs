@@ -132,9 +132,15 @@ Try this article: [I forgot the username or password for the account I use with 
 ## Related content
   
 [Let users reset their own passwords](../add-users/let-users-reset-passwords.md)
+
 [Reset passwords](../add-users/reset-passwords.md)
+
 [Set an individual user's password to never expire](set-password-to-never-expire.md)
+
 [Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md)
+
 [Restore a user](restore-user.md)
+
 [Remove a former employee](remove-former-employee.md)
+
 [Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
