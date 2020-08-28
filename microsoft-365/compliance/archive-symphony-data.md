@@ -11,14 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: "Admins can set up a connector to import and archive data from Globanet Symphony into Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
+ROBOTS: NOINDEX, NOFOLLOW
+description: "Admins can set up a connector to import and archive data from Globanet Symphony into Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
 # Set up a connector to archive Symphony data (preview)
 
-Microsoft 365 lets administrators import and archive third-party data from Symphony, which is a messaging and collaboration platform for the financial services industry, to mailboxes in your Microsoft 365 organization. [Globanet](https://globanet.com/symphony) provides a Symphony data connector in the Microsoft 365 compliance center that you can configured to capture items from the third-party data source (on a regular basis) and then import those items to user mailboxes. The connector converts the content of an item from the Symphony account to an email message format and then imports the item to a mailbox.
+Use a Globanet connector in the Microsoft 365 compliance center to import and archive Symphony data to user mailboxes in your Microsoft 365 organization. Symphony is a messaging and collaboration platform used in the financial services industry. [Globanet](https://globanet.com/symphony) provides a Symphony data connector in the Microsoft 365 compliance center that you can configured to capture items from the third-party data source (on a regular basis) and then import those items to user mailboxes. The connector converts the content of an item from the Symphony account to an email message format and then imports the item to a mailbox in Microsoft 365.
 
-After Symphony communications are stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, Content Search, and Microsoft 365 retention policies. Using a Symphony connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+After Symphony communications are stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Symphony connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 ## Overview of archiving Symphony data
 
@@ -32,13 +33,13 @@ The following overview explains the process of using a data connector to archive
 
 3. The Symphony connector that you create in the Microsoft 365 compliance center, connects to the Globanet Merge1 site every day and transfers the messages to a secure Azure Storage location in the Microsoft cloud.
 
-4. The connector imports the converted message items to the mailboxes of specific users using the value of the *Email* property of the automatic user mapping as described in Step 3. A new subfolder in the Inbox folder named **Symphony** will be created in the user mailboxes, and the message items will be imported to that folder. The connector does this by using the value of the *Email* property. Every chat message contains this property, which is populated with the email address of every participant of the chat message.
+4. The connector imports the converted message items to the mailboxes of specific users using the value of the *Email* property of the automatic user mapping as described in Step 3. A new subfolder in the Inbox folder named **Symphony** is created in the user mailboxes, and the message items are imported to that folder. The connector does this by using the value of the *Email* property. Every chat message contains this property, which is populated with the email address of every participant of the chat message.
 
 ## Before you begin
 
-Many of the implementation steps required to archive Symphony communications are external to Microsoft 365 and must be completed before you can create the connector in the compliance center.
+Some of the implementation steps required to archive Symphony communications are external to Microsoft 365 and must be completed before you can create the connector in the compliance center.
 
-- Create a Globanet Merge1 account by accepting the terms and conditions for a Symphony connector. To do this, contact [Globanet Customer Support](https://globanet.com/contact-us).
+- Create a Globanet Merge1 account by accepting the terms and conditions for a Symphony connector. To do this, contact [Globanet Customer Support](https://globanet.com/contact-us). You need to sign into this account when you create the connector in Step 1.
 
 - The user who creates the Symphony connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. By default, this role is not assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
@@ -46,29 +47,25 @@ Many of the implementation steps required to archive Symphony communications are
 
 The first step is to gain access to the **Data Connectors** and set up the [Symphony](https://globanet.com/symphony/) connector.
 
-1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **Symphony**.
 
-2. Go to the **Connectors** tab.
+2. On the **Symphony** product description page, click **Add connector**
 
-3. Click the **Add new connector** button.
+3. On the **Terms of service** page, click **Accept**.
 
-4. Select the **Symphony** option from the list.
+4. Enter a unique name that identifies the connector, and then click **Next**.
 
-5. On the **Terms of service** page, click **Accept**.
+5. Sign in to your Merge1 account to configure the connector.
 
-6. Define a unique name that can represent or identify the connector and click **Next**.
+## Configure the Symphony connector on the Globanet Merge1 site
 
-7. Login to your Merge1 account, to configure the connector.
+The second step is to configure the Symphony connector on the Merge1 site. For information about configuring  the Symphony connector in the Globanet Merge1 site, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Symphony%20User%20Guide%20.pdf).
 
-## Step 2: Configure Symphony
+After you click **Save & Finish**, you are returned to the Microsoft 365 compliance center, to the **User mapping** page of the connector wizard.
 
-The second step is to configure the Symphony connector in the Merge1 site. For more details on how to configure the Symphony connector in the Globanet Merge1 site, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Symphony%20User%20Guide%20.pdf).
+## Step 3: Map users and complete the connector setup
 
-After you click **Save & Finish,** you are returned to the Microsoft 365 compliance center, to the **User mapping** page of the connector wizard.
-
-## Step 3: Map users and complete the connector set up
-
-To map users and complete the connector set up, follow the steps below:
+To map users and complete the connector set up in the Microsoft 365 compliance center, follow these steps:
 
 1. On the **Map external users to Microsoft 365 users** page, enable automatic user mapping. The Symphony items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user’s mailbox.
 
@@ -84,8 +81,8 @@ To map users and complete the connector set up, follow the steps below:
 
 After you create the Symphony connector, you can view the connector status in the Microsoft 365 compliance center.
 
-1. Go to <https://compliance.microsoft.com/> and click **Data connectors** in the left nav.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
 
 2. Click the **Connectors** tab and then select the **Symphony** connector to display the flyout page, which contains the properties and information about the connector.
 
-3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains data that has been imported to the Microsoft cloud.
+3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that has been imported to the Microsoft cloud.

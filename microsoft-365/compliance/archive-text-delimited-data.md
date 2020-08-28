@@ -10,7 +10,9 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Admins can set up a connector to import and archive text-delimited data from Globanet into Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
@@ -40,33 +42,29 @@ An implementation step required to archive Text-Delimited data is external to Mi
 
 1. Create a Merge1 account by accepting their terms and conditions for the Text-Delimited connector. Here you will need to contact Globanet Customer Support at <https://globanet.com/contact-us/>.
 
-## Step 1: Set up the Text- Delimited connector
+## Step 1: Set up the Text-Delimited connector
 
 The first step is to gain access to the **Data Connectors** and set up the [Text-Delimited](https://globanet.com/merge1/) connector.
 
-1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **Text-Delimited**.
 
-2. Go to the **Connectors** tab.
+2. On the **Text-Delimited** product description page, click **Add connector**
 
-3. Click the **Add new connector** button.
+3. On the **Terms of service** page, click **Accept**.
 
-4. Select the **Text-Delimited** option from the list.
+4. Enter a unique name that identifies the connector, and then click **Next**.
 
-5. On the **Terms of service** page, click **Accept**.
+5. Sign in to your Merge1 account to configure the connector.
 
-6. Define a unique name that can represent or identify the connector and click **Next**.
+## Step 2: Configure the Text-delimited connector on the Globanet Merge1 site
 
-7. Login to your Merge1 account to configure the connector.
+The second step is to configure the Text-Delimited connector in the Merge1 site. For information about configuring  the Text-Delimited connector in the Globanet Merge1 site, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Text-Delimited%20User%20Guide%20.pdf).
 
-## Step 2: Configure text-delimited connector
+After you click **Save & Finish**, you are returned to the Microsoft 365 compliance center, to the **User mapping** page of the connector wizard.
 
-The second step is to configure the Text-Delimited connector in the Merge1 site. For more details on how to configure the Text-Delimited connector in the Globanet Merge1 site, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Text-Delimited%20User%20Guide%20.pdf).
+## Step 3: Map users and complete the connector setup
 
-After you click **Save & Finish,** you are returned to the Microsoft 365 compliance center, to the **User mapping** page of the connector wizard.
-
-## Step 3: Map users and complete the connector set up
-
-To map users and complete the connector set up, follow the steps below:
+To map users and complete the connector set up in the Microsoft 365 compliance center, follow these steps:
 
 1. On the **Map external users to Microsoft 365 users** page, enable automatic user mapping. The Text- Delimited source items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user’s mailbox.
 
@@ -82,8 +80,8 @@ To map users and complete the connector set up, follow the steps below:
 
 After you create the Text- Delimited connector, you can view the connector status in the Microsoft 365 compliance center.
 
-1. Go to <https://compliance.microsoft.com/> and click **Data connectors** in the left nav.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
 
 2. Click the **Connectors** tab and then select the **Text- Delimited** connector to display the flyout page, which contains the properties and information about the connector.
 
-3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains data that has been imported to the Microsoft cloud.
+3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that has been imported to the Microsoft cloud.

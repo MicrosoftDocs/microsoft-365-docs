@@ -11,28 +11,29 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Admins can set up a connector to import and archive EML data from Globanet into Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
 # Set up a connector to archive EML data
 
-Microsoft 365 lets administrators import and archive third-party data from social media, instant messaging, and document collaboration platforms to mailboxes in your Microsoft 365 organization. [Globanet](https://globanet.com/) provides you with an EML connector that is used to process EML files, which is the file extension for an email message saved to a file. The connector converts the content of an item from the source format to an email message format and then imports those item to user mailboxes.
+Use a Globanet connector in the Microsoft 365 compliance center to import and archive EML data to user mailboxes in your Microsoft 365 organization. EML is the file extension for an email message saved to a file. The connector converts the content of an item from the source format to an email message format and then imports the item to a user mailbox.
 
-Once archived, the EML source communications can be retained, supervised for compliance, and retrieved for eDiscovery and internal Information Governance.
+After EML messages are stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using an EML connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
-## Overview of archiving the EML source
+## Overview of archiving EML data
 
-The following overview explains the process of using a connector to archive the EML information in Microsoft 365.
+The following overview explains the process of using a connector to archive EML data in Microsoft 365.
 
 ![Archiving workflow for EML data](../media/EMLConnectorWorkflow.png)
 
 1. Your organization works with the EML source to set up and configure an EML site.
 
-2. Once every 24 hours, content items from the EML source are copied to the Globanet Merge1 site. The connector also converts the content of a message to an email message format.
+2. Once every 24 hours, content items from the EML source are copied to the Globanet Merge1 site. During this process, the content of an EML file is converted to an email message format.
 
 3. The EML connector that you create in the Microsoft 365 compliance center, connects to the Globanet Merge1 site every day and transfers the messages to a secure Azure Storage location in the Microsoft cloud.
 
-4. The connector imports the converted message items to the mailboxes of specific users using the value of the *Email* property of the automatic user mapping as described in Step 3. A new subfolder in the Inbox folder named **EML** will be created in the user mailboxes, and the message items will be imported to that folder. The connector does this by using the value of the *Email* property. Every message contains this property, which is populated with the email address of every participant of the content item.
+4. The connector imports the converted message items to the mailboxes of specific users using the value of the *Email* property of the automatic user mapping process that's described in [Step 3](#step-3-map-users-and-complete-the-connector-set-up). During this process, a subfolder in the Inbox folder named **EML**is created in the user mailboxes, and the EML items are imported to that folder. The connector does this by using the value of the *Email* property. Every message contains this property, which is populated with the email address of every participant of the content item.
 
 ## Before you begin
 
@@ -44,29 +45,25 @@ An implementation step required to archive EML data is external to Microsoft 365
 
 The first step is to gain access to the **Data Connectors** and set up the [EML](https://globanet.com/merge1/) connector.
 
-1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **EML**.
 
-2. Go to the **Connectors** tab.
+2. On the **EML** product description page, click **Add connector**
 
-3. Click the **Add new connector** button.
+3. On the **Terms of service** page, click **Accept**.
 
-4. Select the **EML** option from the list.
+4. Enter a unique name that identifies the connector, and then click **Next**.
 
-5. On the **Terms of service** page, click **Accept**.
+5. Sign in to your Merge1 account to configure the connector.
 
-6. Define a unique name that can represent or identify the connector and click **Next**.
+## Step 2: Configure the EML connector on the Globanet Merge1 site
 
-7. Login to your Merge1 account to configure the connector.
+The second step is to configure the EML connector on the Globanet Merge1 site. For information about configuring  the EML connector, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20EML%20User%20Guide%20.pdf).
 
-## Step 2: Configure EML on the Globanet Merge1 site
+After you click **Save & Finish**, you are returned to the Microsoft 365 compliance center, to the **User mapping** page of the connector wizard.
 
-The second step is to configure the EML connector on the Globanet Merge1 site. For more details on how to configure the EML connector, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20EML%20User%20Guide%20.pdf).
+## Step 3: Map users and complete the connector setup
 
-After you click **Save & Finish,** you are returned to the Microsoft 365 compliance center, to the **User mapping** page of the connector wizard.
-
-## Step 3: Map users and complete the connector set up
-
-To map users and complete the connector set up, follow the steps below:
+To map users and complete the connector set up in the Microsoft 365 compliance center, follow these steps:
 
 1. On the **Map external users to Microsoft 365 users** page, enable automatic user mapping. The EML source items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the EML items are imported to that user’s mailbox.
 
@@ -82,8 +79,8 @@ To map users and complete the connector set up, follow the steps below:
 
 After you create the EML connector, you can view the connector status in the Microsoft 365 compliance center.
 
-1. Go to <https://compliance.microsoft.com/> and click **Data connectors** in the left nav.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
 
 2. Click the **Connectors** tab and then select the **EML** connector to display the flyout page, which contains the properties and information about the connector.
 
-3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains data that has been imported to the Microsoft cloud.
+3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that has been imported to the Microsoft cloud.
