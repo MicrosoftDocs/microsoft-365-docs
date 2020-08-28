@@ -96,7 +96,7 @@ ETR search and name availability would depend on the specific role that has been
 - AAD or EXO - Security Admin: All
 - AAD or EXO - Security Reader: All
 - EXO Only - Transport Rules: All
-- EXO Only -View-Only Configuration: All
+- EXO Only - View-Only Configuration: All
 
 Within the email grid, Details flyout, and Exported CSV, the ETRs are presented with a Name/GUID as shown below. 
 
