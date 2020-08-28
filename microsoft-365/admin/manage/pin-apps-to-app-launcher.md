@@ -9,8 +9,7 @@ audience: Admin
 ms.topic: article
 ms.collection: 
 - Adm_O365
-- Adm_TOC
-layout: LandingPage
+- M365-subscription-management
 ms.service: o365-administration
 localization_priority: Normal
 description: "As a global admin you can pin up to three apps to your users' app launcher."
