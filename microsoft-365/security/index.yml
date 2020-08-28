@@ -37,7 +37,7 @@ landingContent:
         links:
           - text: Evaluate Microsoft Threat Protection
             url: mtp/mtp-evaluation.md
-          - text: Run your Microsoft Threat Protection pilot project
+          - text: Microsoft Threat Protection pilot playbook
             url: mtp/mtp-pilot.md
   # Card
   - title: Secure your remote workforce
