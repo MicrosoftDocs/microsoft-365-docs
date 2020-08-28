@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
-description: "Learn how to set a password expiration policy for your organization in Microsoft 365 admin center. "
+description: "Learn how to set a password expiration policy for your organization in Microsoft 365 admin center."
 ---
 
 # Set the password expiration policy for your organization
@@ -36,7 +36,7 @@ description: "Learn how to set a password expiration policy for your organizatio
 
 This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../admin-overview/admin-overview.md).
 
-You must be a [About admin roles](../add-users/about-admin-roles.md) to perform these steps.
+You must be a [global admin or password admin](../add-users/about-admin-roles.md) to perform these steps.
 
 If you're a user, you don't have the permissions to set your password to never expire. Ask your work or school technical support to do the steps in this article for you.
 

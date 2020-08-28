@@ -25,7 +25,7 @@ description: "Learn how to set some individual user passwords to never expire, u
 ---
 # Set an individual user's password to never expire
 
-This article explains how to set a password for an individual user to never expire. You have to complete these steps using PowerShell.
+This article explains how to set a password for an individual user to not expire. You have to complete these steps using PowerShell.
 
 ## Before you begin
 
