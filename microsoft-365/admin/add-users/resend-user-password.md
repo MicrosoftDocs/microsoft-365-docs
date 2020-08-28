@@ -28,7 +28,9 @@ This article explains how to resend the notification email to a new user in Offi
 
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../admin-overview/admin-overview.md). You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../admin-overview/admin-overview.md).
+
+You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
   
 ::: moniker range="o365-worldwide"  
   

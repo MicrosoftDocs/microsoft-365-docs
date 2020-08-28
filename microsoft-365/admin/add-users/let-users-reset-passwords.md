@@ -38,9 +38,11 @@ As the Microsoft 365 admin, you can let people use the [self-service password re
 
 - **If you're using an on-premises Active Directory**, the above two points don't apply. Rather, you can set this up but **it requires a paid subscription to Azure AD Premium**.
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../admin-overview/admin-overview.md). You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../admin-overview/admin-overview.md). 
 
-## Watch: users reset their own passwords
+You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
+
+## Watch: Let users reset their own passwords
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
