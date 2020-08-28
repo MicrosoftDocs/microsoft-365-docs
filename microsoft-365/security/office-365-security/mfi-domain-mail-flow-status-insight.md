@@ -10,6 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 
+ms.custom:
+- seo-marvel-apr2020
 description: "Admins can learn about the top domain mail flow status insight in the mail flow dashboard in the Security & Compliance Center."
 ---
 
@@ -27,6 +29,6 @@ A red x for a domain indicates the MX record has been changed, and that the doma
 
 ![The Details flyout in the Top domain flow status insight](../../media/domain-mail-flow-status-flyout.png)
 
-## See also
+## Related topics
 
 For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

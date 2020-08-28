@@ -17,6 +17,7 @@ search.appverid:
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: "Review the steps to set up options for the Analyze process in Advanced eDiscovery, including near-duplicates, email threads, and themes. 
 "
+ms.custom: seo-marvel-apr2020
 ---
 
 # Set Analyze options in Advanced eDiscovery (classic)
@@ -72,7 +73,7 @@ You can also [set ignore text](set-ignore-text-in-advanced-ediscovery.md) and [s
   
 After you've set these options, click **Analyze** to run. [View Analyze results](view-analyze-results-in-advanced-ediscovery.md) are displayed. 
   
-## See also
+## Related topics
 
 [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   

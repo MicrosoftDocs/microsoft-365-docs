@@ -17,6 +17,7 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,6 +26,8 @@ description: "Learn about default and other settings available in Microsoft 365 
 ---
 
 # Set device protection settings for Windows 10 PCs
+
+This article applies to Microsoft 365 Business Premium.
 
 ## Secure Windows 10 devices
 

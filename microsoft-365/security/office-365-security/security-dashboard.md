@@ -15,12 +15,14 @@ search.appverid:
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: "Use the new Security Dashboard to review Office 365 Threat Protection Status, and view and act on security alerts."
 ---
 
 # Security Dashboard
 
-## Overview
+## Basic functions and how to open Security Dashboard
 
 The [Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md) enables your organization to manage data protection and compliance. Assuming you have the necessary permissions, the Security Dashboard enables you to review your Threat Protection Status, as well as view and act on security alerts.
 
@@ -42,13 +44,12 @@ The Threat Management Summary widget tells you at a glance how your organization
 ![Security Dashboard - Threat Management Summary widget](../../media/SecDash-ThreatMgmtSummary.png)
 
 The information you'll see in the Threat Management Summary depends on what you subscription includes. The following table describes what information is included for Office 365 E3 and Office 365 E5.
-|||
-|---|---|
-|**Office 365 E3**|**Office 365 E5**|
-|Malware messages blocked<br/>Phishing messages blocked<br>Messages reported by users<br><br><br><br>|Malware messages blocked<br>Phishing messages blocked<br>Messages reported by users<br>Zero-day malware blocked<br>Advanced phishing messages detected<br>Malicious URLs blocked|
-|
 
-To view or access the Threat Management Summary widget, you must have permissions to view Advanced Threat Protection reports. To learn more, see [What permissions are needed to view the ATP reports?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
+|Office 365 E3|Office 365 E5|
+|---|---|
+|Malware messages blocked<br/>Phishing messages blocked<br>Messages reported by users<br><br><br><br>|Malware messages blocked<br>Phishing messages blocked<br>Messages reported by users<br>Zero-day malware blocked<br>Advanced phishing messages detected<br>Malicious URLs blocked|
+
+To view or access the Threat Management Summary widget, you must have permissions to view Advanced Threat Protection reports. To learn more, see [What permissions are needed to view the ATP reports?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)
 
 ## Threat Protection Status
 
@@ -58,14 +59,12 @@ The Threat Protection Status widget shows threat protection effectiveness with a
 
 The details depend on whether your Microsoft 365 subscription includes [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) with or without [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
 
-|||
+|If your subscription includes...|You'll see these details|
 |---|---|
-|**If your subscription includes...**|**You'll see these details**|
 |EOP but not Office 365 ATP|Malicious email that was detected and blocked by EOP.<br><br> See [Threat Protection Status report (EOP)](view-email-security-reports.md#threat-protection-status-report).|
 |Office 365 ATP|Malicious content and malicious email detected and blocked by EOP and Office 365 ATP<br><br>Aggregated count of unique email messages with malicious content blocked by the anti-malware engine, [zero-hour auto purge](zero-hour-auto-purge.md), and ATP features (including [Safe Links](atp-safe-links.md), [Safe Attachments](atp-safe-attachments.md), and [ATP anti-phishing](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)).<br><br>See [Threat Protection Status report (ATP)](view-reports-for-atp.md#threat-protection-status-report).|
-|
 
-To view or access the Threat Protection Status widget, you must have permissions to view Advanced Threat Protection reports. To learn more, see [What permissions are needed to view the ATP reports?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
+To view or access the Threat Protection Status widget, you must have permissions to view Advanced Threat Protection reports. To learn more, see [What permissions are needed to view the ATP reports?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)
 
 ## Global Weekly Threat Detections
 
@@ -75,14 +74,12 @@ The Global Weekly Threat Detections widget shows how many threats were detected 
 
 The metrics are calculated as described in the following table:
 
-|||
+|Metric|How it's calculated|
 |---|---|
-|**Metric**|**How it's calculated**|
 |Messages scanned|Number of email messages scanned multiplied by the number of recipients|
 |Threats stopped|Number of email messages identified as containing malware multiplied by the number of recipients|
 |Blocked by [ATP](office-365-atp.md)|Number of email messages blocked by ATP multiplied by the number of recipients|
 |Removed after delivery|Number of messages removed by [zero-hour auto purge](zero-hour-auto-purge.md) multiplied by the number of recipients|
-|
 
 ## Malware
 
@@ -100,9 +97,9 @@ For example, you might see that phishing email messages are being delivered beca
 
 ## Threat investigation and response
 
-If your organization's subscription includes  [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), your Security Dashboard has a section that includes advanced threat investigation and response tools. Your organization's security team can use the information in this section to understand emerging campaigns, investigate threats and manage incidents.
+If your organization's subscription includes  [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), your Security Dashboard has a section that includes advanced threat investigation and response tools. These tools include [automated investigation and response capabilities](automated-investigation-response-office.md). Automated investigation and response can be helpful in scenarios such as [addressing compromised user accounts quickly](address-compromised-users-quickly.md).
 
-![Threat intelligence helps you understand attacks targeted at your organization](../../media/threatintelwidget.png)
+To learn more, see [Get started using Automated investigation and response (AIR) in Office 365](office-365-air.md).
 
 ## Trends
 

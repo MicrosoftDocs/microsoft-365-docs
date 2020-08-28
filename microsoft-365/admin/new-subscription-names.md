@@ -9,6 +9,7 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150

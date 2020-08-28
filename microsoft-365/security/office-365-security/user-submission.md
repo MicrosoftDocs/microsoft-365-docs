@@ -36,9 +36,19 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **User submissions** page, use <https://protection.office.com/userSubmissionsReportMessage>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can perform these procedures. To configure the mailbox for user submissions, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions before you can do the procedures in this topic:
+
+  - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
+
+    - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - For read-only access to User submissions, you need to be a member of one of the following role groups:
+
+    - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 ## Use the Security & Compliance Center to configure the user submissions mailbox
 
@@ -66,12 +76,15 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
         - **Microsoft and a custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. User submissions will go to both Microsoft for analysis and to the custom mailbox for your admin or security operations team to analyze.
 
-        - **Custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. Use this option if you want the message to only go to the admin or security operations team for analysis first. Messages will not go to Microsoft unless the admin forwards it.
+        - **Custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. Use this option if you want the message to only go to an admin or the security operations team for analysis first. Messages will not go to Microsoft unless the admin forwards it themselves.
 
-        When you're finished, click **Confirm**.
+        > [!NOTE]
+        > U.S. Government organizations (GCC, GCC-H, and DoD) can only configure **Custom mailbox**. The other two options are disabled. 
 
-     > [!CAUTION]
-     > If you have [disabled junk email reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) using Outlook on the web mailbox policies, but you configure either of the previous settings to report messages to Microsoft, users will be able to report messages to Microsoft in Outlook on the web using the Report Message add-in.
+      When you're finished, click **Confirm**.
+
+      > [!CAUTION]
+      > If you have [disabled junk email reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) using Outlook on the web mailbox policies, but you configure either of the previous settings to report messages to Microsoft, users will be able to report messages to Microsoft in Outlook on the web using the Report Message add-in.
 
    - **Disable the Report Message feature for Outlook**: Select this option if you use third-party reporting tools instead of the Report Message add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
 
@@ -83,13 +96,13 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
 Messages sent to custom mailboxes need to follow a specific submission mail format. The Subject (Envelope Title) of the submission should be in this format:
 
-`{(int)safetyApiAction}|{networkId}|{senderIp}|{fromAddress}|({subject.Substring(0, Math.Min(subjectLen, subject.Length))})`
+`SafetyAPIAction|NetworkMessgeId|SenderIp|FromAddress|(Message Subject)`
 
-were SafetyApiAction is:
+were SafetyAPIAction is one of the following integer values:
 
-- Junk = 1
-- NotJunk = 2
-- Phish = 3
+- 1: Junk
+- 2: NotJunk
+- 3: Phish
 
 In the following example:
 
@@ -97,7 +110,7 @@ In the following example:
 - The Network Message ID is 49871234-6dc6-43e8-abcd-08d797f20abe.
 - The Sender IP is 167.220.232.101.
 - The From address is test@contoso.com.
-- The message's email subject is "test phish submission"
+- The message's subject line is "test phish submission"
 
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phish submission)`
 

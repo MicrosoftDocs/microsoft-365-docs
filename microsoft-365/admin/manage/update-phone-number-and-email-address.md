@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -53,4 +54,4 @@ For answers to billing questions, see:
   
 - [Change your billing addresses for Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Add, update, or remove a credit card or bank account in Microsoft 365 for business](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [Manage payment methods](../../commerce/billing-and-payments/manage-payment-methods.md)

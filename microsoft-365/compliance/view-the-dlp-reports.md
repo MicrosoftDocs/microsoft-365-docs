@@ -15,7 +15,8 @@ localization_priority: Normal
 search.appverid: 
 - MOE150
 - MET150
-description: "With the DLP reports in Office 365, you can quickly view the number of DLP policy matches, overrides, or false positives; see whether they're trending up or down over time; filter the report in different ways; and view additional details by selecting a point on a line on the graph."
+ms.custom: seo-marvel-apr2020
+description: Use the DLP reports in Office 365 to view the number of DLP policy matches, overrides, or false positives and see whether they're trending up or down over time.
 ---
 
 # View the reports for data loss prevention

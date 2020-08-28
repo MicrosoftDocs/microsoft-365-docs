@@ -17,6 +17,7 @@ search.appverid:
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: "Learn how to view detailed information for selected export batch sessions and how to undo the last export session in Advanced eDiscovery. 
 "
+ms.custom: seo-marvel-apr2020
 ---
 
 # View batch history and export past results in Advanced eDiscovery (classic)
@@ -56,7 +57,7 @@ The Export history dialog provides detailed information of selected export batch
     
 3. Click **Start**. The export files are downloaded to the local machine. 
     
-## See also
+## Related topics
 
 [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   

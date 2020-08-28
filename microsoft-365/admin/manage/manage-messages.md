@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -30,13 +31,6 @@ Message center posts are important announcements about new and changed features.
 To go to the Message center, go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), and select **Health** > **Message center**. 
 
 Select a message title to open it in the reading pane. Every message contains a summary of the change, a statement of how the change may affect you, information about how you can prepare your organization for the change, and (in most cases) an additional information link where you can learn more. The additional information continues to be available, even after a message expires.
-
-::: moniker range="o365-worldwide"
- 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-::: moniker-end
 
 ## Filter and sort
 

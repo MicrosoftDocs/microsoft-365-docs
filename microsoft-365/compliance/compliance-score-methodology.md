@@ -14,14 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 description: "Understand how Microsoft Compliance Score calculates a personalized score based on actions taken to address risks and improve your compliance posture."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Microsoft Compliance Score (preview) calculation
 
 > [!IMPORTANT]
-> Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. Recommendations from Compliance Score and Compliance Manager should not be interpreted as a guarantee of compliance. This service is currently in preview and is subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910).
+> Recommendations from Compliance Score and Compliance Manager should not be interpreted as a guarantee of compliance. It is up to you to evaluate and validate the effectiveness of customer controls per your regulatory environment. These services are currently in preview and subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910). See also [Microsoft 365 licensing guidance for security and compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-## Overview
+## How Compliance Score works
 
 The Compliance Score dashboard displays a score that measures your progress in completing improvement actions within controls. Your points accrue when you complete actions.
 
@@ -32,7 +33,7 @@ The displayed Compliance Score values for the control are applied *in their enti
 - **Implementation Status** equals **Implemented** or **Alternative Implementation** and,
 - **Test Result** equals **Passed**.
 
-The sum of points earned by taking improvement actions is the control score. The sum of your control scores is the assessment score. The sum of your assessment scores is your overall compliance score
+The sum of points earned by taking improvement actions is the control score. The sum of your control scores is the assessment score. The sum of your assessment scores is your overall compliance score.
 
 ## Initial score based on Microsoft 365 data protection baseline
   

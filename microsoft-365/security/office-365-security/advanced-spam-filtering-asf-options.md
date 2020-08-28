@@ -30,7 +30,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 > [!NOTE]
 > Enabling one or more of the ASF settings is an aggressive approach to spam filtering. You can't report messages that are filtered by ASF as false positives. You can identify messages that were filtered by ASF by: <ul><li>Periodic end-user spam quarantine notifications.</li><li>The presence of filtered messages in quarantine.</li><li>The specific `X-CustomSpam:` X-header fields that are added to messages as described in this topic.</li></ul>
 
-The following sections describe the ASF settings and options that are available in anti-spam policies in the Security & Compliance Center, and in Exchange Online PowerShell or standalone EOP PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+The following sections describe the ASF settings and options that are available in anti-spam policies in the Security & Compliance Center, and in Exchange Online PowerShell or standalone EOP PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 ## Enable, disable, or test ASF settings
 

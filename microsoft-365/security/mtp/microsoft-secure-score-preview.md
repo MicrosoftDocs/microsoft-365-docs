@@ -96,6 +96,9 @@ To help you the information you need more quickly, Microsoft improvement actions
 * App (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
 * Infrastructure (no improvement actions for now)
 
+>[!NOTE]
+>In the recent release of Microsoft Secure Score, an improved scoring model has been released which made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API. [View details](microsoft-secure-score-preview.md#incompatibility-with-identity-secure-score-and-graph-api)
+
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
 ![Secure Score homepage](../../media/secure-score/secure-score-homepage.png)
@@ -170,6 +173,12 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 ## What's new? 
 
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
+
+### Incompatibility with Identity Secure Score and Graph API
+
+In the recent release of Microsoft Secure Score, an improved scoring model has been released. These changes allow for a more flexible and accurate view of your security posture. However, these updates have made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API.
+
+In time, Identity Secure Score and the Graph API will adopt the new scoring model. Until then, customers will see differences in the scores reported by Microsoft Secure Score, Identity Secure Score, and the Graph API. We apologize for any inconvenience this causes, and are working to ensure these experiences are more compatible in the future.
 
 ### April 2020
 

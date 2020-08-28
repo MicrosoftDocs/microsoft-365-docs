@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -31,7 +32,7 @@ description: "Learn to deploy add-ins to users and groups in your organization b
 
 ::: moniker-end
 
-Office add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). As an admin, you can deploy Office add-ins for the users in your organization. You can do this using the Centralized Deployment feature in the Microsoft 365 admin center.
+Office add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). As an admin, you can deploy Office add-ins for the users in your organization. You can do this using the Centralized Deployment feature in the Microsoft 365 admin center.
   
 Centralized Deployment is the recommended and most feature-rich way for most admins to deploy add-ins to users and groups within an organization. For more information on how to determine if your organization can support Centralized Deployment, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
   
@@ -78,7 +79,7 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
 7. A green tick will appear when the add-in has been deployed. You can follow the on-page instructions to test that the add-in has deployed successfully.
 
 > [!NOTE]
-> Users may need to relaunch Office to see the add-in icon appear on the ribbon of app. Outlook add-ins can take up to 12 hours to appear on users' ribbons.
+> Users may need to relaunch Office to see the add-in icon appear on the ribbon of app. Outlook add-ins can take up to 24 hours to appear on users' ribbons.
     
 8. When finished, select **Next**. If you've deployed to just yourself, you can select **Change who has access to add-in** in order to deploy to more users.
 
@@ -214,8 +215,8 @@ To be GDPR compliant for minors you need to ensure that one of following builds 
 |||
 |:-----|:-----|
 |**Platform** <br/> |**Build number** <br/> |
-|Microsoft 365 Apps for enterprise (Monthly Channel)  <br/> |9001.2138   <br/> |
-|Microsoft 365 Apps for enterprise (Semi-Annual Channel)  <br/> |8431.2159  <br/> |
+|Microsoft 365 Apps for enterprise (Current Channel)  <br/> |9001.2138   <br/> |
+|Microsoft 365 Apps for enterprise (Semi-Annual Enterprise Channel)  <br/> |8431.2159  <br/> |
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
@@ -247,7 +248,7 @@ Word, Excel, and PowerPoint 2013 for Windows will support the same minor checks 
     
 ## End user experience with add-ins
 
-Now that you've deployed the add-in, your end users can start using it in their Office applications (see [Start using your Office Add-in](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). The add-in will appear on all platforms that the add-in supports.
+Now that you've deployed the add-in, your end users can start using it in their Office applications (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). The add-in will appear on all platforms that the add-in supports.
   
 If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
 

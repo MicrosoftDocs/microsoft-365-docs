@@ -1,5 +1,5 @@
 ---
-title:  Data Subject Requests Under the GDPR and CCPA
+title:  Office 365 Data Subject Requests Under the GDPR and CCPA
 description: Understand the user rights under GDPR and CCPA and how Office 365 helps enterprises find and act on data in response to DSRs.
 keywords:  Office 365, DSR, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
 localization_priority:  Priority
@@ -15,9 +15,10 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
+ms.custom: seo-marvel-apr2020
 ---
 
-# Data Subject Requests for the GDPR and CCPA
+# Office 365 Data Subject Requests for the GDPR and CCPA
 
 ## Introduction to DSRs
 
@@ -228,7 +229,7 @@ We recommend that you learn more about partially indexed items so that you can w
 
 - [Partially indexed items in Content Search in Office 365](https://docs.microsoft.com/microsoft-365/compliance/partially-indexed-items-in-content-search)
 - [Investigating partially indexed items in Office 365 eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/investigating-partially-indexed-items-in-ediscovery)
-- [Exporting unindexed items](https://docs.microsoft.com/microsoft-365/compliance/export-search-results#unidexeditems)
+- [Exporting unindexed items](export-search-results.md)
 
 #### Tips for working with partially indexed items
 
@@ -242,7 +243,7 @@ It's possible that data responsive to a DSR investigation may be in a partially 
 
 ##### Export all partially indexed items
 
-You export both the results of a content search and the partially indexed items from the content location that were search. You can also export only the partially indexed items. Then you can open them in their native application and review the content. You have to use this option to export items from SharePoint Online and OneDrive for Business. See [Export Content Search results from the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/export-search-results).
+You export both the results of a content search and the partially indexed items from the content location that were search. You can also export only the partially indexed items. Then you can open them in their native application and review the content. You have to use this option to export items from SharePoint Online and OneDrive for Business. See [Export Content Search results from the Security & Compliance Center](export-search-results.md).
 
 ##### Export a specific set of partially indexed items from mailboxes
 
@@ -319,7 +320,7 @@ An admin can export all User information properties for a user on a given site b
 
 ##### OneDrive for Business experience settings
 
-A user's OneDrive for Business experience stores information to help the user find and navigate content of interest to them. Most of this information can be accessed by end users using in-product features. An admin can export the information using a [PowerShell Script](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands.
+A user's OneDrive for Business experience stores information to help the user find and navigate content of interest to them. Most of this information can be accessed by end users using in-product features. An admin can export the information using a [PowerShell Script](https://docs.microsoft.com/powershell/scripting/overview) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands.
 
 See [Export OneDrive for Business experience settings](https://docs.microsoft.com/sharepoint/export-odfb-lists) for more information about the settings, how they are stored, and how to export them.
 
@@ -445,7 +446,7 @@ To export and download items:
 
 When the export process is complete, you can access the files in the location on your local computer where they were downloaded. Results of a content search are downloaded to a folder named after the Content Search. Documents from sites are copied to a subfolder named **SharePoint**. Mailbox items are copied to subfolder named **Exchange**.
 
-For detailed step-by-step instructions, see [Export Content Search results from the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/export-search-results).
+For detailed step-by-step instructions, see [Export Content Search results from the Security & Compliance Center](export-search-results.md).
 
 ### Downloading documents and lists from SharePoint Online and OneDrive for Business
 
@@ -533,7 +534,7 @@ Finally, the redaction capability will not remove all metadata or content refere
 
 #### Deleting OneDrive for Business experience settings
 
-The recommended way to delete all OneDrive for Business experience settings and information is to remove the user's OneDrive for Business site, after reassigning any retained files to other users. An admin can delete these lists using [PowerShell Script](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands. See [Deleting OneDrive for Business experience settings](https://docs.microsoft.com/sharepoint/delete-odfb-lists) for more information about the settings, how they are stored, and how to delete them.
+The recommended way to delete all OneDrive for Business experience settings and information is to remove the user's OneDrive for Business site, after reassigning any retained files to other users. An admin can delete these lists using [PowerShell Script](https://docs.microsoft.com/powershell/scripting/overview) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands. See [Deleting OneDrive for Business experience settings](https://docs.microsoft.com/sharepoint/delete-odfb-lists) for more information about the settings, how they are stored, and how to delete them.
 
 #### OneDrive for Business and SharePoint Online search queries
 
@@ -1582,24 +1583,62 @@ The ability to restrict or rectify data in system-generated logs is not supporte
 
 ### Accessing and exporting system-generated logs
 
-The "right of data portability" allows a data subject to request a copy of their personal data in an electronic format (that's a "structured, commonly used, machine read-able, and interoperable format") that may be transmitted to another data controller. Azure supports this by enabling your organization to export the data in the native JSON format, to your specified Azure Storage Container.
+The tenant admin is the only person within your organization who can access system-generated logs associated with a particular user's use of Office 365 services and applications. The data retrieved for an export request will be provided in a machine-readable format and will be provided in files that will allow the user to know which services the data is associated with. As noted above, the data retrieved will not include data that may compromise the security or stability of the service.
+
+To access and export system-generated logs:
+
+1. Sign in to the Azure portal and select **All services**.
+2. Type policy into the filter, and then select **Policy**.
+3. In the **Policy** blade, select **User privacy**, select **Manage User Requests**, and then select **Add export request**.
+4. Complete the **Export data request**:
+
+    - **User**. Type the email address of the Azure Active Directory user that requested the export.
+    - **Subscription**. Select the account you use to report resource usage and to bill for services. This is also the location of your Azure storage account.
+    - **Storage account**. Select the location of your Azure Storage (Blob). For more info, see the Introduction to Microsoft Azure Storage — Blob storage article.
+    - **Container**. Create a new (or select an existing) container as the storage location for the user's exported privacy data.
+
+5. Select **Create**.
+
+The export request goes into **Pending** status. You can view the report status on the **User privacy** > **Overview blade**.
 
 >[!IMPORTANT]
->You must be a tenant administrator to export user data from the tenant.
+>Because personal data can come from multiple systems, it's possible that the export process might take up to one month to complete.
 
-#### Azure Active Directory
+### Notify about exporting or deleting issues
 
-With respect to Customer Data, Microsoft offers both a portal and in-product experiences providing the enterprise customer's tenant administrator the capability to manage export requests for identifiable information about an end user.
+If you run into issues while exporting or deleting data from the Azure portal, go to the Azure portal **Help + Support** blade and submit a new ticket under **Subscription Management** > **Other Security and Compliance Request** > **Privacy Blade and GDPR Requests**.
 
-#### Service-specific interfaces
+>[!NOTE]
+ >When you export data from the Azure portal, system-generated data for a few applications will not be exported. To export data for these applications, see [Additional steps to export system-generated log data](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data).
 
-Microsoft provides the ability to discover Customer Data directly via pre-existing application programming interfaces (APIs) or user interfaces (UIs) for specific services. Details are described in the respective services' reference documentation, describing applicable CRUD (create, read, update, delete) operations.
+The following summarizes accessing and exporting system-generated logs:
+
+- **How long does an export request using the Azure portal take to complete a request?**: This can depend on several factors. Usually it should complete in one or two days, but it can take up to 30 days.
+- **What format will the output be in?**: The output is structured machine-readable files such as XML, CSV, or JSON.
+- **Who has access to Azure portal to submit access requests for system-generated data?**: Office 365 global administrators have access to the Azure portal.
+- **What data do the export results return?**: The results contain system-generated logs that Microsoft stores. Exported data spans across various Microsoft services including Office 365, Azure, and Dynamics. The results do not include data that may compromise the security or stability of the service.
+- **How is data returned to the user?**: Data is exported to your organization's Azure storage location; it's up to admins in your organization to determine how they will show/return this data to users.
+- **What will system-generated log data look like?**: Below is an example, the data are in JSON format:
+
+    ```JSON
+    [{
+    "DateTime": "2017-04-28T12:09:29-07:00",
+    "AppName": "SharePoint",
+    "Action": "OpenFile",
+    "IP": "154.192.13.131",
+    "DevicePlatform": "Windows 1.0.1607"
+    }]
+    ```
+
+Product and service usage data for some of Microsoft’s most often-used services, such as Exchange Online, SharePoint Online, Skype for Business, Yammer, and Office 365 Groups can also be retrieved by searching the Office 365 audit log in the Security & Compliance Center. For more information, see [Use the Office 365 audit log search tool in DSR investigations](#use-the-audit-log-search-tool-in-dsr-investigations) in Appendix A. Using the audit log may be of interest to you because it's possible to assign permissions to other people in your organization (such as your compliance officer) to search the audit log to access this data.
 
 ### Deleting system-generated logs
 
 To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Azure Active Directory account. For instructions about permanently delete a user, see the [Deleting a user section](#deleting-a-user) in this guide. It's important to note that permanently deleting a user account is irreversible once initiated.
 
-Permanently deleting a user account removes the user's data from system-generated logs, except for data that may compromise the security or stability of the service, for nearly all Office 365 services within 30 days. One exception to this is that the permanent deletion of the user account takes longer than 30 days in Exchange Online. Given the critical nature of Exchange Online content and prevent accidental data loss. The system has been engineered to intentionally place data in a holding state for up to 60 days after a user account has been permanently deleted. To permanently delete a user's Exchange Online data in a 30-day time frame, permanently delete the user account in Azure Active Directory and then contact [Microsoft Support](https://support.microsoft.com/) and request that the user's Exchange Online data be manually removed outside the scheduled delete process. For more information, see [Removing Exchange Online data](#removing-exchange-online-data), which was previously explained in this guide
+Permanently deleting a user account removes the user's data from system-generated logs, except for data that may compromise the security or stability of the service, for nearly all Office 365 services within 30 days. 
+
+One exception to this 30-day period is that the permanent deletion of the user account in Exchange Online takes takes longer than 30 days. This is due to the critical nature of Exchange Online content and to prevent accidental data loss. Exchange Online has been engineered to intentionally place data in a holding state for up to 60 days after a user account has been permanently deleted. To permanently delete a user's Exchange Online data in a 30-day time frame, permanently delete the user account in Azure Active Directory and then contact [Microsoft Support](https://support.microsoft.com/) and request that the user's Exchange Online data be manually removed outside the scheduled delete process. For more information, see [Removing Exchange Online data](#removing-exchange-online-data), which was previously explained in this guide
 
 Deleting a user's account will not remove system-generated logs for Yammer and Kaizala. To remove the data from these applications, see one of the following:
 
@@ -1608,11 +1647,11 @@ Deleting a user's account will not remove system-generated logs for Yammer and K
 
 #### National clouds
 
-A global IT admin needs to do the following to delete system-generated logs in the following national clouds:
+A global IT admin needs to do the following to export system-generated log data in the following national clouds:
 
-- Office 365 Germany - When the user account is permanently deleted, the system-generated logs will also be deleted. 
-- Office 365 US Government - Submit a request to Microsoft Support via the [Office 365 admin portal](https://portal.office365.us).
-- Office 365 operated by 21Vianet (China) - Submit a request to Microsoft Support via the Office 365 admin portal at this [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Go to **Commerce** and then select **Subscription** -> **Privacy** -> **GDPR** and enter the required information.
+- **Office 365 Germany**: Follow the steps above.
+- **Office 365 US Government**: [Go to the Office 365 admin portal](https://portal.office365.us) and submit a request to Microsoft Support.
+- **Office 365 operated by 21Vianet (China)**: [Go to the Office 365 operated by 21Vianet admin portal](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) and then go to **Commerce** > **Subscription** > **Privacy** > **GDPR** and enter the required information.
 
 ## Part 4: Additional resources to assist you with DSRs
 

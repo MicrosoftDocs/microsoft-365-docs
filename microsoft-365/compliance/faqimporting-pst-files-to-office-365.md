@@ -15,7 +15,8 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
-description: "Frequently asked questions for administrators about using the Office 365 Import Service to import your organization's PST files to Microsoft 365 mailboxes. "
+ms.custom: seo-marvel-apr2020
+description: "This article contains answers to some frequently asked questions for administrators about importing PST files to Microsoft 365 using the Office 365 Import Service."
 ---
 
 # FAQ about importing PST files
@@ -45,7 +46,7 @@ Additionally, to create import jobs in the Security & Compliance Center, one of 
   
  **Where is network upload available?**
   
-Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, France, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, and Australia. Network upload will be available in more regions soon.
+Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, France, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
 
 > [!NOTE]
 > At this time, network upload of PST files is not available in Germany and Switzerland. This FAQ will be updated when network upload is available in these countries.

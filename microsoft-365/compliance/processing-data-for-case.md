@@ -16,7 +16,9 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "Processing in Advanced eDiscovery includes re-indexing of custodian data, the expansion of embedded documents and attachments, and OCR. Processing also includes remediation of indexing errors."
+ms.custom:
+- seo-marvel-apr2020
+description: Read an overview about processing various forms of data in the Advanced eDiscovery tool in Office 365.
 ---
 
 # Work with processing errors in Advanced eDiscovery

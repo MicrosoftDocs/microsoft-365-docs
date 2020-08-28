@@ -27,6 +27,7 @@ Compliance Score is a new feature in the [Microsoft 365 compliance center](micro
 New pre-configured templates for assessments are released into production for Compliance Score (Preview) as they become available. Check the [full list of templates here](compliance-score.md#templates). Recently added templates include:
 
 - Brazil General Data Protection Law (LGPD)
+- Dubai Information Security Resolution (DGISR)
 - IRAP / Australian Government ISM (Preview)
 - ISO 27701:2019
 - SOC 1

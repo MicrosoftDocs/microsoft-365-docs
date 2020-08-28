@@ -72,5 +72,5 @@ The value of understanding what actions are being taken with your sensitive labe
 ## See also
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](labels.md)
-- [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Overview of retention policies](retention-policies.md)

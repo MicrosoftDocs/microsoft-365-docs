@@ -18,13 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. "
+ms.custom: seo-marvel-apr2020
 ---
 
 # Search the audit log in the Security & Compliance Center
 
-## Introduction
-
-Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of user and admin activity in Office 365:
+Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of [user and admin activity](#audited-activities) in Office 365:
 
 - User activity in SharePoint Online and OneDrive for Business
 
@@ -60,7 +59,7 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 - User and admin activity for sensitivity labels for sites that use SharePoint Online or Microsoft Teams
 
-## Before you begin
+## Requirements to search the audit log
 
 Be sure to read the following items before you start searching the audit log.
 
@@ -305,10 +304,10 @@ Click one of the following links to go to a specific table.
 |[User administration activities](#user-administration-activities)|[Azure AD group administration activities](#azure-ad-group-administration-activities)|[Application administration activities](#application-administration-activities)|
 |[Role administration activities](#role-administration-activities)|[Directory administration activities](#directory-administration-activities)|[eDiscovery activities](#ediscovery-activities)|
 |[Advanced eDiscovery activities](#advanced-ediscovery-activities)|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Yammer activities](#yammer-activities)|
-|[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|[Microsoft Stream activities](#microsoft-stream-activities)|
-|[Content explorer activities](#content-explorer-activities)|[Quarantine activities](#quarantine-activities)|[Microsoft Forms activities](#microsoft-forms-activities)
-|[Sensitivity label activities](#sensitivity-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)|||
+|[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Microsoft Teams Shifts activities](#microsoft-teams-shifts-activities)|
+|[Yammer activities](#yammer-activities)|[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|
+|[Microsoft Stream activities](#microsoft-stream-activities)|[Content explorer activities](#content-explorer-activities)|[Quarantine activities](#quarantine-activities)|
+|[Microsoft Forms activities](#microsoft-forms-activities)|[Sensitivity label activities](#sensitivity-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)|
 ||||
 
 ### File and page activities
@@ -527,7 +526,7 @@ The following table lists events that result from site administration tasks in S
 
 The following table lists the activities that can be logged by mailbox audit logging. Mailbox activities performed by the mailbox owner, a delegated user, or an administrator are automatically logged in the audit log for up to 90 days. It's possible for an admin to turn off mailbox audit logging for all users in your organization. In this case, no mailbox actions for any user are logged. For more information, see [Manage mailbox auditing](enable-mailbox-auditing.md).
 
- You can also search for mailbox activities by using the [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) cmdlet in Exchange Online PowerShell.
+ You can also search for mailbox activities by using the [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) cmdlet in Exchange Online PowerShell.
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -668,38 +667,11 @@ Content Search and eDiscovery-related activities that are performed in the secur
 For a list and detailed description of the eDiscovery activities that are logged, see [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md).
 
 > [!NOTE]
-> It takes up to 30 minutes for events that result from the activities listed under **eDiscovery activities** in the **Activities** drop-down list to be displayed in the search results. Conversely, it takes up to 24 hours for the corresponding events from eDiscovery cmdlet activities to appear in the search results.
+> It takes up to 30 minutes for events that result from the activities listed under **eDiscovery activities** and **Advanced eDiscovery activities** in the **Activities** drop-down list to be displayed in the search results. Conversely, it takes up to 24 hours for the corresponding events from eDiscovery cmdlet activities to appear in the search results.
 
 ### Advanced eDiscovery activities
 
-The following table lists activities that result from IT and legal professionals performing tasks in Advanced eDiscovery in Microsoft 365. For more information, see [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md).
-
-|**Friendly name**|**Operation**|**Description**|
-|:-----|:-----|:-----|
-|Added data to another review set|AddWorkingSetQueryToWorkingSet|User added documents from one review set to a different review set.|
-|Added data to review set|AddQueryToWorkingSet|User added the search results from a content search associated with an Advanced eDiscovery case to a review set.|
-|Added non-Microsoft 365 data to review set|AddNonOffice365DataToWorkingSet|User added non-Microsoft 365 data to a review set.|
-|Added remediated documents to review set|AddRemediatedData|User uploads documents that had indexing errors that were fixed to a review set.|
-|Analyzed data in review set|RunAlgo|User ran  analytics on the  documents in a review set.|
-|Annotated document in review set|AnnotateDocument|User annotated a document in a review set. Annotation includes redacting content in a document.|
-|Compared load sets|LoadComparisonJob|User compared two different load sets in a review set. A load set is when data from a content search that associated with the case is added to a review set.|
-|Converted redacted documents to PDF|BurnJob|User converted all the redacted documents in a review set to PDF files.|
-|Created review set|CreateWorkingSet|User created a review set.|
-|Created review set search|CreateWorkingSetSearch|User created a search query that searches the documents in a review set.|
-|Created tag|CreateTag|User created a tag group in a review set. A tag group can contain one or more child tags. These tags are then used to tag documents in the review set.|
-|Deleted review set search|DeleteWorkingSetSearch|User deleted a search query in a review set.|
-|Deleted tag|DeleteTag|User deleted a tag or a tag group in a review set.|
-|Downloaded document|DownloadDocument|User downloaded a document from a review set.|
-|Edited tag|UpdateTag|User changed a tag in a review set.|
-|Exported documents from review set|ExportJob|User exported documents from a review set.|
-|Modified case setting|UpdateCaseSettings|User modified the settings for a case. Case settings include case information, access permissions, and settings that control search and analytics behavior.|
-|Modified review set search|UpdateWorkingSetSearch|User edited a search query in a review set.|
-|Previewed review set search|PreviewWorkingSetSearch|User previewed the results of a search query in a review set.|
-|Remediated error documents|ErrorRemediationJob|User fixes files that contained indexing errors.|
-|Tagged document|TagFiles|User tags a document in a review set.|
-|Tagged results of a query|TagJob|User tags all of the documents that match the criteria of search query in a review set.|
-|Viewed document in review set|ViewDocument|User viewed a document in a review set.|
-|||
+You can also search the audit log for activities in Advanced eDiscovery. For a description of these activities, see the "Advanced eDiscovery activities" section in [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md#advanced-ediscovery-activities).
 
 ### Power BI activities
 
@@ -740,10 +712,10 @@ The following table lists the user and admin activities in Microsoft Teams that 
 |Added connector|ConnectorAdded|A user adds a connector to a channel.|
 |Added members|MemberAdded|A team owner adds members to a team, channel, or group chat.|
 |Added tab|TabAdded|A user adds a tab to a channel.|
-|Changed channel setting|ChannelSettingChanged|The ChannelSettingChanged operation is logged when the following activities are performed by a team member. For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>* Changes the name of a team channel (**Channel name**). <br/><br/>* Changes the description of a team channel (**Channel description**).|
-|Changed organization setting|TeamsTenantSettingChanged|The TeamsTenantSettingChanged operation is logged when the following activities are performed by a global admin (using the Microsoft 365 admin center); note that these activities affect organization-wide Microsoft Teams settings. For more information, see [Administrator settings for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365). <br/> For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>* Enables or disables Microsoft Teams for the organization (**Microsoft Teams**). <br/><br/>* Enables or disables interoperability between Microsoft Teams and Skype for Business for the organization (**Skype for Business interoperability**). <br/><br/>* Enables or disables the organizational chart view in Microsoft Teams clients (Org chart view**). <br/><br/>* Enables or disables the ability for team members to schedule private meetings (**Private meeting scheduling**). <br/><br/>* Enables or disables the ability for team members to schedule channel meetings (Channel meeting scheduling**). <br/><br/>* Enables or disables video calling in Teams meetings (Video for Skype meetings**). <br/><br/>* Enables or disables screen sharing in Microsoft Teams meetups for the organization (**Screen sharing for Skype meetings**). <br/><br/>* Enables or disables that ability to add animated images (called Giphys) to Teams conversations (Animated images**). <br/><br/>* Changes the content rating setting for the organization (**Content rating**). The content rating restricts the type of animated image that can be displayed in conversations. <br/><br/>* Enables or disables the ability for team members to add customizable images (called custom memes) from the Internet to team conversations (Customizable images from the Internet**). <br/><br/>* Enables or disables the ability for team members to add editable images (called stickers) to team conversations (**Editable images**).<br/><br/>* Enables or disables that ability for team members to use bots in Microsoft Teams chats and channels (Org-wide bots**). <br/><br/>* Enables specific bots for Microsoft Teams. This doesn't include the T-Bot, which is Teams help bot that's available when bots are enabled for the organization (**Individual bots**). <br/><br/>* Enables or disables the ability for team members to add extensions or tabs (**Extensions or tabs**). <br/><br/>* Enables or disables the side-loading of proprietary Bots for Microsoft Teams (**Side loading of Bots**). <br/><br/>* Enables or disables the ability for users to send email messages to a Microsoft Teams channel (**Channel email**).|
+|Changed channel setting|ChannelSettingChanged|The ChannelSettingChanged operation is logged when the following activities are performed by a team member. For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>• Changes the name of a team channel (**Channel name**). <br/><br/>• Changes the description of a team channel (**Channel description**).|
+|Changed organization setting|TeamsTenantSettingChanged|The TeamsTenantSettingChanged operation is logged when the following activities are performed by a global admin (using the Microsoft 365 admin center); note that these activities affect organization-wide Microsoft Teams settings. For more information, see [Administrator settings for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365). <br/> For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>• Enables or disables Microsoft Teams for the organization (**Microsoft Teams**). <br/><br/>• Enables or disables interoperability between Microsoft Teams and Skype for Business for the organization (**Skype for Business interoperability**). <br/><br/>• Enables or disables the organizational chart view in Microsoft Teams clients (Org chart view**). <br/><br/>• Enables or disables the ability for team members to schedule private meetings (**Private meeting scheduling**). <br/><br/>• Enables or disables the ability for team members to schedule channel meetings (Channel meeting scheduling**). <br/><br/>• Enables or disables video calling in Teams meetings (Video for Skype meetings**). <br/><br/>• Enables or disables screen sharing in Microsoft Teams meetups for the organization (**Screen sharing for Skype meetings**). <br/><br/>• Enables or disables that ability to add animated images (called Giphys) to Teams conversations (Animated images**). <br/><br/>• Changes the content rating setting for the organization (**Content rating**). The content rating restricts the type of animated image that can be displayed in conversations. <br/><br/>• Enables or disables the ability for team members to add customizable images (called custom memes) from the Internet to team conversations (Customizable images from the Internet**). <br/><br/>• Enables or disables the ability for team members to add editable images (called stickers) to team conversations (**Editable images**).<br/><br/>• Enables or disables that ability for team members to use bots in Microsoft Teams chats and channels (Org-wide bots). <br/><br/>• Enables specific bots for Microsoft Teams. This doesn't include the T-Bot, which is Teams help bot that's available when bots are enabled for the organization (**Individual bots**). <br/><br/>• Enables or disables the ability for team members to add extensions or tabs (**Extensions or tabs**). <br/><br/>• Enables or disables the side-loading of proprietary Bots for Microsoft Teams (**Side loading of Bots**). <br/><br/>• Enables or disables the ability for users to send email messages to a Microsoft Teams channel (**Channel email**).|
 |Changed role of members in team|MemberRoleChanged|A team owner changes the role of members in a team. The following values indicate the Role type assigned to the user. <br/><br/> **1** - Indicates the Owner role.<br/>**2** - Indicates the Member role. <br/>**3** - Indicates the Guest role. <br/><br/> The Members property also includes the name of your organization, and the member's email address.|
-|Changed team setting|TeamSettingChanged|The TeamSettingChanged operation is logged when the following activities are performed by a team owner. For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>* Changes the access type for a team. Teams can be set as Private or Public (**Team access type**). When a team is private (the default setting), users can access the team only by invitation. When a team is public, it's discoverable by anyone. <br/><br/>* Changes the information classification of a team (**Team classification**). <br/> For example, team data can be classified as high business impact, medium business impact, or low business impact.<br/><br/>* Changes the name of a team (**Team name**). <br/><br/>* Changes the team description (Team description**). <br/><br/>* Changes made to any of the team settings. A team owner can access these settings in a Teams client by right-clicking a team, clicking **Manage team**, and then clicking the **Settings** tab. For these activities, the name of the setting that was changed is displayed in the **Item** column in the audit log search results.|
+|Changed team setting|TeamSettingChanged|The TeamSettingChanged operation is logged when the following activities are performed by a team owner. For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>• Changes the access type for a team. Teams can be set as Private or Public (**Team access type**). When a team is private (the default setting), users can access the team only by invitation. When a team is public, it's discoverable by anyone. <br/><br/>• Changes the information classification of a team (**Team classification**). <br/> For example, team data can be classified as high business impact, medium business impact, or low business impact.<br/><br/>• Changes the name of a team (**Team name**). <br/><br/>• Changes the team description (Team description**). <br/><br/>• Changes made to any of the team settings. A team owner can access these settings in a Teams client by right-clicking a team, clicking **Manage team**, and then clicking the **Settings** tab. For these activities, the name of the setting that was changed is displayed in the **Item** column in the audit log search results.|
 |Created team|TeamCreated|A user creates a team.|
 |Deleted channel|ChannelDeleted|A user deletes a channel from a team.|
 |Deleted team|TeamDeleted|A team owner deletes a team.|
@@ -763,6 +735,12 @@ If your organization is using the [Patients application](https://docs.microsoft.
 ![Microsoft Teams Healthcare activities in Activities picker list](../media/TeamsHealthcareAuditActivities.png)
 
 For a description of the Patients app activities, see [Audit logs for Patients app](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
+
+### Microsoft Teams Shifts activities
+
+If you organization is using the Shifts app in Microsoft Teams, you can search the audit log for activities related to the using the Shifts app. If your environment is configured to support Shifts app, an additional activity group for these activities is available in the **Activities** picker list.
+
+For a description of Shifts app activities, see [Search the audit log for events in Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
 ### Yammer activities
 
@@ -909,13 +887,13 @@ Here are some tips for searching for Exchange admin activities when searching th
 
 - To get information about what cmdlet was run, which parameters and parameter values were used, and what objects were affected, you can export the search results by selecting the **Download all results** option. For more information, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
 
-- You can also use the `Search-UnifiedAuditLog -RecordType ExchangeAdmin` command in Exchange Online PowerShell to return only audit records from the Exchange admin audit log. It may take up to 30 minutes after an Exchange cmdlet is run for the corresponding audit log entry to be returned in the search results. For more information, see [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog). For information about exporting the search results returned by the **Search-UnifiedAuditLog** cmdlet to a CSV file, see the "Tips for exporting and viewing the audit log" section in [Export, configure, and view audit log records](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
+- You can also use the `Search-UnifiedAuditLog -RecordType ExchangeAdmin` command in Exchange Online PowerShell to return only audit records from the Exchange admin audit log. It may take up to 30 minutes after an Exchange cmdlet is run for the corresponding audit log entry to be returned in the search results. For more information, see [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog). For information about exporting the search results returned by the **Search-UnifiedAuditLog** cmdlet to a CSV file, see the "Tips for exporting and viewing the audit log" section in [Export, configure, and view audit log records](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
 - You can also view events in the Exchange admin audit log by using the Exchange admin center or running the **Search-AdminAuditLog** in Exchange Online PowerShell. This is a good way to specifically search for activity performed by Exchange Online administrators. For instructions, see:
 
   - [View the administrator audit log](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx)
 
-  - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
+  - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)
 
    Keep in mind that the same Exchange admin activities are logged in both the Exchange admin audit log and audit log.
 
@@ -932,7 +910,7 @@ See the [Audited activities](#audited-activities) section in this article for a 
 
 **How long does it take for an auditing record to be available after an event has occurred?**
 
-Most auditing data is available within 30 minutes but it may take up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. See the table in the [Before you begin](#before-you-begin) section of this article that shows the time it takes for events in the different services to be available.
+Most auditing data is available within 30 minutes but it may take up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. See the table in the [Requirements to search the audit log](#requirements-to-search-the-audit-log) section of this article that shows the time it takes for events in the different services to be available.
 
 **How long are the audit records retained for?**
 
@@ -948,7 +926,7 @@ No. These are the only two ways to get data from the auditing service.
 
 **Do I need to individually enable auditing in each service that I want to capture audit logs for?**
 
-In most services, auditing is enabled by default after you initially turn on auditing for your organization (as described in the [Before you begin](#before-you-begin) section in this article).
+In most services, auditing is enabled by default after you initially turn on auditing for your organization (as described in the [Requirements to search the audit log](#requirements-to-search-the-audit-log) section in this article).
 
 **Does the auditing service support de-duplication of records?**
 

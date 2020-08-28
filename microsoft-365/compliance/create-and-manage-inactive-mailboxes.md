@@ -17,7 +17,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
-description: "You can create an inactive mailbox in Microsoft 365 by applying a hold or retention policy to the mailbox and then deleting the corresponding user account. Items in an inactive mailbox are retained for the duration of the hold or retention policy that was applied to it before it was made inactive. To permanently delete an inactive mailbox, just remove the hold or retention policy."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to to retain the contents of deleted mailboxes by using the inactive mailboxes feature in Office 365.
 ---
 
 # Create and manage inactive mailboxes
@@ -27,9 +29,9 @@ Microsoft 365 makes it possible for you to retain the contents of deleted mailbo
 > [!IMPORTANT]
 > As we continue to invest in different ways to preserve mailbox content, we're announcing the retirement of In-Place Holds in the Exchange admin center. That means you should use Litigation Holds and retention policies to create an inactive mailbox. Starting July 1, 2020 you won't be able to create new In-Place Holds in Exchange Online. But you'll still be able to change the hold duration of an In-Place Hold placed on an inactive mailbox. However, starting October 1, 2020, you won't be able to change the hold duration. You'll only be able to delete an inactive mailbox by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will still be preserved until the hold is removed. For more information about the retirement of In-Place Holds, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
   
-## Before you begin
+## Preparations before creating an inactive mailbox
 
-- To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license so that a Litigation Hold or an retention policy can be applied to the mailbox before it's deleted. Exchange Online Plan 2 licenses are part of an Office 365 Enterprise E3 and E5 subscription. If a mailbox is assigned an Exchange Online Plan 1 or Exchange Online Kiosk license (which are part of an Office 365 E1 and F1 subscription respectively), you would have to assign it a separate Exchange Online Archiving license so that a hold can be applied to the mailbox before it's deleted. For more information, see [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153).
+- To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license so that a Litigation Hold or a retention policy can be applied to the mailbox before it's deleted. Exchange Online Plan 2 licenses are part of an Office 365 Enterprise E3 and E5 subscription. If a mailbox is assigned an Exchange Online Plan 1 or Exchange Online Kiosk license (which are part of an Office 365 E1 and F1 subscription respectively), you would have to assign it a separate Exchange Online Archiving license so that a hold can be applied to the mailbox before it's deleted. For more information, see [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
 - The licenses associated with the deleted Exchange Online mailbox will be available after you delete the corresponding user account. You can then [assign those licenses to another user](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users). 
 
@@ -107,7 +109,7 @@ You can access the contents of the inactive mailbox by using the Content Search 
     
 Here are a few things to keep in mind when searching inactive mailboxes.
   
-- If a content search includes a user mailbox and that mailbox is then made inactive, the content search will continue to search the inactive mailbox when you re-run the search after it becomes inactive.
+- If a content search includes a user mailbox and that mailbox is made inactive, the content search will continue to search the inactive mailbox when you rerun the search after it becomes inactive.
     
 - In some cases, a user may have an active mailbox and an inactive mailbox that have the same SMTP address. In this case, only the specific mailbox that you select as a location for a content search will be searched. In other words, if you add a user's mailbox to a search, you can't assume that both their active and inactive mailboxes will be searched; only the mailbox that you explicitly add to the search will be searched.
     

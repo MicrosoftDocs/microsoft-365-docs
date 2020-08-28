@@ -19,6 +19,7 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -27,6 +28,8 @@ description: "Learn how to set up conditional access policies for Microsoft 365 
 ---
 
 # Set up conditional access policies
+
+This article applies to Microsoft 365 Business Premium.
 
 [Conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) policies add substantial additional security. Microsoft provides a set of baseline conditional access policies that are recommended for all customers. Baseline policies are a set of predefined policies that help protect organizations against many common attacks. These common attacks can include password spray, replay, and phishing.
 
