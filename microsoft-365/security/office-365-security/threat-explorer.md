@@ -89,7 +89,7 @@ As part of data enrichment, you should also be able to see all the different tra
 You would be able to see both the GUID as well as the name of the Transport rules which were applied on the message. Additionally, you would also be able to search for the messages using the name of the Transport rule. This would be a ‘Contains’ search which means you will be able to search using Partial searches as well. 
 
 #### Important Note: 
-ETR search and name availability would depend on the specific role that has been assigned to you. You will need to have one of the following roles/permissions in order to view the ETR names and search.  If you do not have any of the following roles assigned to you, you will not be able to see the names of the transport rules, and search for the messages using the ETR names. However you will be able to see the ETR label and GUID information within the Email Details. Your other experiences around viewing records in Email Grids, Email flyouts, Filters and Export are not impacted. 
+ETR search and name availability would depend on the specific role that has been assigned to you. You will need to have one of the following roles/permissions in order to view the ETR names and search.  If you do not have any of the following roles assigned to you, you will not be able to see the names of the transport rules, and search for the messages using the ETR names. However, you will be able to see the ETR label and GUID information within the Email Details. Your other experiences around viewing records in Email Grids, Email flyouts, Filters, and Export are not impacted. 
  
 - EXO Only - Data Loss Prevention: All
 - EXO Only - O365SupportViewConfig: All
