@@ -54,13 +54,13 @@ The next update to this article will be on opening day of our first online-only 
 
 ### Your products
 
-There has been a lot of work done in the subscriptions management in the Microsoft 365 admin center to increase the performance, make it faster to find what you're looking for, and to meet the [WCAG 2.1 guidelines](http://www.w3.org/TR/WCAG21/).
+There has been a lot of work done in the subscriptions management in the Microsoft 365 admin center to increase the performance, make it faster to find what you're looking for, and to meet the web acessibility standards ([WCAG 2.1 guidelines](http://www.w3.org/TR/WCAG21/)).
 
-- **Table redesign**: The list table where you can view all of your products you subscribe to was redesigned to group similar subscriptions. Got to **Billing** > **Your products**.
+- **Table redesign**: The table was redesigned so that you can group similar subscriptions. Go to **Billing** > **Your products**.
 - **Product details**: Get more details than ever about your subscriptions by selecting the product in the list.
 - **Do it all from here**: And you don't have to go to jump around several pages to manage one product. For example, if you need to cancel a subscription, the panel will open to do the action right there.
 
-:::image type="content" source="../media/MAC-WN-SubscrDetails.png" alt-text="Your product detail page with the cancel subscription panel open.":::
+![Your Products page with the Cancel Subscription panel open.](../media/MAC-WN-SubscrDetails.png)
 
 ### Domains
 
