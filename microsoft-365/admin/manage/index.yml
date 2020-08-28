@@ -62,6 +62,8 @@ landingContent:
             url: centralized-deployment-of-add-ins.md
           - text: Install and manage add-ins by using Centralized Deployment
             url: manage-deployment-of-add-ins.md
+          - text: Manage Office Scripts settings
+            url: manage-office-scripts-settings.md            
    # Card
   - title: Microsoft Teams
     linkLists:
