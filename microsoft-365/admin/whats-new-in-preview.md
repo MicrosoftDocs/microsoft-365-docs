@@ -54,7 +54,7 @@ The next update to this article will be on opening day of our first online-only 
 
 ### Your products
 
-There has been a lot of work done in the subscriptions management in the Microsoft 365 admin center to increase the performance, make it faster to find what you're looking for, and to meet the web acessibility standards ([WCAG 2.1 guidelines](http://www.w3.org/TR/WCAG21/)).
+There has been a lot of work done in the subscriptions management to make the page faster to load, faster to find what you're looking for, and to meet the web acessibility standards ([WCAG 2.1 guidelines](http://www.w3.org/TR/WCAG21/)).
 
 - **Table redesign**: The table was redesigned so that you can group similar subscriptions. Go to **Billing** > **Your products**.
 - **Product details**: Get more details than ever about your subscriptions by selecting the product in the list.
