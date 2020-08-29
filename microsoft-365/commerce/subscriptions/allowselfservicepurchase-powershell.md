@@ -143,7 +143,7 @@ The following syntax updates the ServicePointManager Security Protocol to TLS1.2
  [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 ```
 
-You can also Upgrade to TLS 1.2, See more  [How to enable TLS 1.2?](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+You can also upgrade to TLS 1.2. For more details, see [How to enable TLS 1.2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2).
 
 <!--
 ## Uninstall the MSCommerce module
