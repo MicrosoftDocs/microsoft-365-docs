@@ -144,15 +144,17 @@ Query-based labels use the search index to identify content. For more informatio
 > [!NOTE]
 > Although SharePoint managed properties support aliases, don't use these when you configure your retention labels. Always specify the actual name of the managed property, for example, "RefinableString01".
 
-Examples queries:
+Examples queries for Exchange:
 
-- Exchange
-    - `subject:"Quarterly Financials"`
-    - `recipients:garthf<!--nolink-->@contoso.com`
+- `subject:"Quarterly Financials"`
 
-- SharePoint and OneDrive
-    - `contenttype:contract`
-    - `site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`
+- `recipients:garthf<!--nolink-->@contoso.com`
+
+Example queries for SharePoint and OneDrive:
+
+- `contenttype:contract`
+
+- `site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`
 
 
 #### Auto-apply labels to content by using trainable classifiers
