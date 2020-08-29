@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,6 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
+ms.reviewer: vippand
 ---
 
 # What's new in Office 365 ATP
@@ -34,7 +35,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 - [Check your policies using Configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - [Manually override filter verdicts using the tenant allow/block list](tenant-allow-block-list.md)
-- [Extended capabilities in Threat Explorer including top targeted users, transport rules, and connectors](threat-explorer.md#extended-capabilities-in-Threat-Explorer.md)
+- [Extended capabilities in Threat Explorer including top targeted users, transport rules, and connectors](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
 - Surfacing overrides information in [Threat Explorer](threat-explorer.md) (email was allowed/blocked by Tenant/user policy)
 - Surfacing URL threats in [Threat Explorer](threat-explorer.md) (malware, phish, spam, or none)
 

@@ -39,7 +39,7 @@ We provide data, insights, and recommendations in two areas:
 
 - **Technology experience:** Productivity depends on reliable and performant technology as well as the efficient use of Microsoft 365. We provide [endpoint analytics](https://aka.ms/endpointanalytics), which helps you understand how your users’ productivity can be impacted by performance and health issues with your endpoint hardware and software, while providing recommended actions to remediate them; and we provide Microsoft 365 network connectivity insights for your organization.
 
-See [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) for an overview and prerequisite details. To learn more about Microsoft 365 network connectivity insights, read [the network connectivity overview](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
+See [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) for an overview and prerequisite details. To learn more about Microsoft 365 network connectivity insights, read [the network connectivity overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## How the score is calculated
