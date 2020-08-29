@@ -33,8 +33,11 @@ Auto-applying retention labels are powerful because:
     
 - Users no longer need to know about data governance policies - they can focus on their work.
     
-You can apply retention labels to content automatically when that content contains sensitive information, keywords, or a match for [trainable classifiers](classifier-getting-started-with.md).
-    
+You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-getting-started-with.md).
+
+> [!TIP]
+> New, use searchable properties to identify Teams meeting recordings.
+
 The processes to automatically apply a retention label based on these conditions:
 
 ![Diagram of roles and tasks for auto-apply labels](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
@@ -108,7 +111,7 @@ You can apply retention labels to content automatically when that content contai
 
 - [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 
-- [Specific keywords that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+- [Specific keywords or searchable properties that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
 - [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
@@ -130,18 +133,17 @@ For more information on these options, see [Tuning rules to make them easier or 
   
 #### Auto-apply labels to content with keywords or searchable properties
 
-You can auto-apply labels to content that satisfies certain conditions. The conditions now available support applying a label to content that contains specific words, phrases, or values of searchable properties. You can refine your query by using search operators like AND, OR, and NOT.
+You can auto-apply labels to content by using a query that contains specific words, phrases, or values of searchable properties. You can refine your query by using search operators such as AND, OR, and NOT.
 
-While auto-applying labels for searchable properties, an alias for a managed property cannot be used in the query. It must be the actual name of the managed property, for example, RefinableString01.
+For more information about the query syntax that uses Keyword Query Language (KQL), see [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-For more information on query syntax, see:
-
-- [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
-
-Query-based labels use the search index to identify content. For more information on valid searchable properties, see:
+Query-based labels use the search index to identify content. For more information about the searchable properties that you can use, see:
 
 - [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
 - [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+
+> [!NOTE]
+> Although SharePoint managed properties support aliases, don't use these when you configure your retention labels. Always specify the actual name of the managed property, for example, "RefinableString01".
 
 Examples queries:
 
@@ -154,6 +156,24 @@ Examples queries:
 
 ![Query editor](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
+##### Microsoft Teams meeting recordings
+
+> [!NOTE]
+> The ability to identify Teams meeting recordings is currently in preview
+
+To identify Microsoft Teams meeting recordings that are stored in users' OneDrive accounts, specify the following for the KQL query:
+
+	ProgID:Media AND ProgID:Meeting
+
+For this retention label, you must also publish it to the relevant users' OneDrive accounts by creating a label policy. When you have saved the auto-apply policy:
+
+1. Select **Label policies** tab > **Publish labels**
+
+2. When prompted to select a label, choose the label you created with the KQL query to identify Teams meeting recordings.
+
+3. When prompted for the location, choose **OneDrive accounts** and keep the default of **All**, or specify individual accounts or exclude accounts.
+
+4. Complete the wizard and save this label policy.
 
 #### Auto-apply labels to content by using trainable classifiers
 
