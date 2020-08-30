@@ -47,14 +47,14 @@ This article explains how to create an Azure AD application, get an access token
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
-4. To enable your app to access Microsoft Threat Protection and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and then select **Microsoft Threat Protection**.
+4. To enable your app to access Microsoft Threat Protection and assign it **'Read all incidents'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and then select **Microsoft Threat Protection**.
 
    > [!NOTE]
    > Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
    ![Image of API access and API selection](../../media/apis-in-my-org-tab.png)
 
-   - Select **Application permissions** > **Alert.Read.All**, and then select **Add permissions**.
+   - Select **Application permissions** > **Incident.Read.All**, and then select **Add permissions**.
 
    ![Image of API access and API selection](../../media/request-api-permissions.png)
 
