@@ -26,7 +26,7 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-## Get Alerts using a simple PowerShell script
+## Get incidents using a simple PowerShell script
 
 ### How long it takes to go through this example?
 It only takes 5 minutes done in two steps:
