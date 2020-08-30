@@ -83,7 +83,7 @@ This article explains how to create an Azure AD application, get an access token
 
    ![Image of created app id](../../media/app-and-tenant-ids.png)
 
-8. **For Microsoft Threat Protection Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
+8. **For Microsoft Threat Protection Partners only**. [Follow the instructions here](https://docs.microsoft.com/microsoft-365/security/mtp/api-partner-access). Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
 
     - Go to **Authentication**, and add https://portal.azure.com as the **Redirect URI**.
 
