@@ -46,7 +46,7 @@ For the Application registration stage, you must have a **Global administrator**
 
 3. In the registration form, choose a name for your application and then select **Register**.
 
-4. Allow your Application to access Microsoft Defender ATP and assign it **'Read all alerts'** permission:
+4. Allow your Application to access Microsoft Defender ATP and assign it **Read all incidents** permission:
 
    - On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft Threat Protection** and select on **Microsoft Threat Protection**.
 
@@ -55,7 +55,7 @@ For the Application registration stage, you must have a **Global administrator**
 
    ![Image of API access and API selection](../../media/apis-in-my-org-tab.png)
 
-   - Choose **Application permissions** > **Alert.Read.All** > Select on **Add permissions**
+   - Choose **Application permissions** > **Incident.Read.All** > Select on **Add permissions**
 
    ![Image of API access and API selection](../../media/request-api-permissions.png)
 
@@ -89,7 +89,7 @@ For the Application registration stage, you must have a **Global administrator**
    ![Image of created app id](../../media/app-and-tenant-ids.png)
 
 
-Done! You have successfully registered an application!
+Done! You have successfully registered an application.
 
 ### Step 2 - Get a token using the App and use this token to access the API.
 
@@ -134,16 +134,16 @@ Look for the "roles" section. Find the Alert.Read.All role.
 -   The script creates two files (json and csv) with the data in the same folder as the scripts.
 
 ```
-# Returns Alerts created in the past 48 hours.
+# Returns Incidents created in the past 48 hours.
 
 $token = ./Get-Token.ps1       #run the script Get-Token.ps1  - make sure you are running this script from the same folder of Get-Token.ps1
 
-# Get Alert from the last 48 hours. Make sure you have alerts in that time frame.
+# Get Incidents from the last 48 hours. Make sure you have incidents in that time frame.
 $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")       
 
 # The URL contains the type of query and the time filter we create above
 # Read more about other query options and filters at   Https://TBD- add the documentation link
-$url = "https://api.security.microsoft.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
+$url = "https://api.security.microsoft.com/api/incidents?$filter=lastUpdateTime+ge+$dateTime”
 
 # Set the WebRequest headers
 $headers = @{ 
@@ -155,25 +155,25 @@ $headers = @{
 # Send the webrequest and get the results. 
 $response = Invoke-WebRequest -Method Get -Uri $url -Headers $headers -ErrorAction Stop
 
-# Extract the alerts from the results. 
-$alerts =  ($response | ConvertFrom-Json).value | ConvertTo-Json
+# Extract the incidents from the results. 
+$incidents =  ($response | ConvertFrom-Json).value | ConvertTo-Json
 
 # Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
 $dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}    
 
 # Save the result as json and as csv
-$outputJsonPath = "./Latest Alerts $dateTimeForFileName.json"     
-$outputCsvPath = "./Latest Alerts $dateTimeForFileName.csv"
+$outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"     
+$outputCsvPath = "./Latest Incidents $dateTimeForFileName.csv"
 
 Out-File -FilePath $outputJsonPath -InputObject $alerts
-($alerts | ConvertFrom-Json) | Export-CSV $outputCsvPath -NoTypeInformation 
+($incidents | ConvertFrom-Json) | Export-CSV $outputCsvPath -NoTypeInformation 
 ```
 
 You're all done! You have just successfully:
 -   Created and registered and application
 -   Granted permission for that application to read alerts
 -   Connected the API
--   Used a PowerShell script to return alerts created in the past 48 hours
+-   Used a PowerShell script to return incidents created in the past 48 hours
 
 
 
