@@ -44,7 +44,7 @@ You can access  Microsoft Threat Protection API with **Application Context** or 
 	Steps that need to be taken to access  Microsoft Threat Protection API with application context:
 
   1. Create an AAD Web-Application.
-  2. Assign the desired permission to the application, for example, 'Read Alerts', 'Isolate Machines'. 
+  2. Assign the desired permission to the applicationFor example, **Incident.Read.All**, **AdvancedHunting.ReadAll**. 
   3. Create a key for this Application.
   4. Get token using the application with its key.
   5. Use the token to access  Microsoft Threat Protection API
@@ -57,7 +57,7 @@ You can access  Microsoft Threat Protection API with **Application Context** or 
 
 	Steps that needs to be taken to access  Microsoft Threat Protection API with application context:
   1. Create AAD Native-Application.
-  2. Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc. 
+  2. Assign the desired permission to the application. For example, **Incident.Read.All**, **AdvancedHunting.ReadAll**.
   3. Get token using the application with user credentials.
   4. Use the token to access  Microsoft Threat Protection API
 
