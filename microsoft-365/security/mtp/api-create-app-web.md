@@ -203,11 +203,11 @@ Ensure that you got the correct token:
 
 3. The expiration time of the token is one hour. You can send more then one request with the same token.
 
-The following is an example of sending a request to get a list of alerts **using C#**: 
+The following is an example of sending a request to get a list of incidents **using C#**: 
     ```
     var httpClient = new HttpClient();
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/alerts");
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/incidents");
 
     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
