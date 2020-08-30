@@ -31,7 +31,7 @@ search.appverid:
 
 > The service base URI is: https://api.security.microsoft.com
 > 
-> The queries based OData have the '/api' prefix. For example, to get Alerts you can send GET request to https://api.security.microsoft.com/api/alerts
+> The queries based OData have the '/api' prefix. For example, to get incidents you can send GET request to https://api.security.microsoft.com/api/incidents
 
 ### Versioning:
 
@@ -39,7 +39,7 @@ search.appverid:
 > 
 > The current version is **V1.0**.
 > 
-> To use a specific version, use this format: https://api.security.microsoft.com/api/{Version}. For example: https://api.security.microsoft.com/api/v1.0/alerts
+> To use a specific version, use this format: https://api.security.microsoft.com/api/{Version}. For example: https://api.security.microsoft.com/api/v1.0/incidents
 > 
 > If you don't specify any version (e.g. https://api.security.microsoft.com/api/alerts ) you will get to the latest version.
 
