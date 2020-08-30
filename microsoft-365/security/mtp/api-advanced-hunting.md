@@ -48,7 +48,7 @@ Delegated (work or school account) | AdvancedHunting.Read | 'Run advanced querie
 
 ## HTTP request
 ```
-POST https://api.security.microsoft.com/api/advancedqueries/run
+POST https://api.security.microsoft.com/api/advancedhunting/run
 ```
 
 ## Request headers
@@ -77,14 +77,12 @@ Here is an example of the request.
 
 
 ```
-POST https://api.security.microsoft.com/api/advancedHunting/run
+POST https://api.security.microsoft.com/api/advancedhunting/run
 Content-type: application/json
 {
-    "Query":"DeviceProcessEvents
-    | where InitiatingProcessFileName =~ \"powershell.exe\" 
-    | project EventTime, FileName, InitiatingProcessFileName 
-    | order by EventTime desc | limit 2"
+    "Query":"DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
 }
+
 ```
 
 Response
@@ -96,39 +94,65 @@ Here is an example of the response.
 
 ```json
 {
-	"Schema": [
-		{
-			"Name": "Timestamp",
-			"Type": "DateTime"
-		},
-		{
-			"Name": "FileName",
-			"Type": "String"
-		},
-		{
-			"Name": "InitiatingProcessFileName",
-			"Type": "String"
-		},
-		{
-			"Name": "DeviceId",
-			"Type": "String"
-		}
-	],
-	"Results": [
-		{
-			"Timestamp": "2020-02-05T01:10:26.2648757Z",
-			"FileName": "csc.exe",
-			"InitiatingProcessFileName": "powershell.exe",
-			"DeviceId": "10cbf9182d4e95660362f65cfa67c7731f62fdb3"
-		},
-		{
-			"Timestamp": "2020-02-05T01:10:26.5614772Z",
-			"FileName": "csc.exe",
-			"InitiatingProcessFileName": "powershell.exe",
-			"DeviceId": "10cbf9182d4e95660362f65cfa67c7731f62fdb3"
-		}
-	]
+    "Stats": {
+        "ExecutionTime": 4.621215,
+        "resource_usage": {
+            "cache": {
+                "memory": {
+                    "hits": 773461,
+                    "misses": 4481,
+                    "total": 777942
+                },
+                "disk": {
+                    "hits": 994,
+                    "misses": 197,
+                    "total": 1191
+                }
+            },
+            "cpu": {
+                "user": "00:00:19.0468750",
+                "kernel": "00:00:00.0156250",
+                "total cpu": "00:00:19.0625000"
+            },
+            "memory": {
+                "peak_per_node": 236822432
+            }
+        },
+        "dataset_statistics": [
+            {
+                "table_row_count": 2,
+                "table_size": 102
+            }
+        ]
+    },
+    "Schema": [
+        {
+            "Name": "Timestamp",
+            "Type": "DateTime"
+        },
+        {
+            "Name": "FileName",
+            "Type": "String"
+        },
+        {
+            "Name": "InitiatingProcessFileName",
+            "Type": "String"
+        }
+    ],
+    "Results": [
+        {
+            "Timestamp": "2020-08-30T06:38:35.7664356Z",
+            "FileName": "conhost.exe",
+            "InitiatingProcessFileName": "powershell.exe"
+        },
+        {
+            "Timestamp": "2020-08-30T06:38:30.5163363Z",
+            "FileName": "conhost.exe",
+            "InitiatingProcessFileName": "powershell.exe"
+        }
+    ]
 }
+
 ```
 
 ## Related topic
