@@ -37,14 +37,14 @@ You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-3
 
 ## Plan
 
-In the planning phase of your identity implementation:
+To plan for your identity implementation:
 
 - [Understand the different identity models](about-microsoft-365-identity.md)
 - [Plan for hybrid identity and directory synchronization](plan-for-directory-synchronization.md)
 
 ## Deploy
 
-In the deployment phase of your identity implementation:
+To deploy your identity implementation:
 
 - [Protect your global administrator accounts](protect-your-global-administrator-accounts.md)
 - [Configure and use cloud-only identities](cloud-only-identities.md)
@@ -54,14 +54,14 @@ In the deployment phase of your identity implementation:
 
 ### Identity and device access recommendations
 
-Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. For identity, use the recommendations and settings in the following articles along with the steps in this phase:
+Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. For identity, use the recommendations and settings in these articles:
 
 - [Prerequisites](identity-access-prerequisites.md)
 - [Common identity and device access policies](identity-access-policies.md)
 
 ## Manage
 
-In the management phase of your identity implementation:
+To manage your identity implementation:
 
 - [Assign licenses and manage user accounts](assign-licenses-to-user-accounts.md)
 - [Monitor directory synchronization](view-directory-synchronization-status.md)
@@ -78,9 +78,6 @@ Learn how IT experts at Microsoft [manage identities and secure access](https://
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [deployed a hybrid identity infrastructure](contoso-identity.md) for Microsoft 365 cloud services.
 
-![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
-
 ## Next step
 
 Start your identity planning with [Identity models](about-microsoft-365-identity.md).
-
