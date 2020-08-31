@@ -6,7 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 09/11/2018
+ms.date: 08/31/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -62,7 +62,7 @@ Each industry also has their own set of specialized regulations. Rather than pro
 - **Sensitive protection**: Some customers have a subset of data that must be protected at higher levels, or they may require all data to be protected at a higher level. You can apply increased protection to all or specific data sets in your Microsoft 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.  
 - **Highly regulated**: Some organizations may have a small amount of data that is highly classified, constitutes trade secrets, or is regulated data. Microsoft provides capabilities to help organizations meet these requirements, including added protection for identities and devices.
 
-![Security cone - All customers > Some customers > Specific customers. Broad application to specific application](../media/M365-idquality-threetiers.png)
+![Security cone - All customers > Some customers > Specific customers. Broad application to specific application](../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
 This guidance shows you how to implement protection for identities and devices for each of these tiers of protection. Use this guidance as a starting point for your organization and adjust the policies to meet your organization's specific requirements.
 
@@ -70,7 +70,7 @@ It's important to use consistent levels of protection across your data, identiti
 
 The **Identity and device protection for Office 365** architecture model shows you which capabilities are comparable.
 
-![Thumbnail for poster "Identity and device protection for Office 365"](../media/O365_Identity_device_protection_thumb.png)<br/>
+![Thumbnail for poster "Identity and device protection for Office 365"](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)
 
 Additionally, see the [Deploy information protection for data privacy regulations](../solutions/information-protection-deploy.md) solution to protect information stored in Microsoft 365.
@@ -94,7 +94,7 @@ This section provides an overview of the Microsoft 365 services and capabilities
 
 ### Azure AD
 
-Azure AD provides a full suite of identity management capabilities. We recommend using the following capabilities to secure access:
+Azure AD provides a full suite of identity management capabilities. We recommend using these capabilities to secure access.
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
@@ -122,8 +122,13 @@ This guidance shows you how to create recommended policies to enforce the use of
 
 This guidance shows you how to implement a set of policies to protect access to Microsoft 365 cloud services, including Microsoft Teams, Exchange Online, SharePoint Online, and OneDrive for Business. In addition to implementing these policies, we recommend you also raise the level of protection for your tenant using these resources:
 
-- [Configure your tenant for increased security](../security/office-365-security/tenant-wide-setup-for-increased-security.md): These recommendations apply to baseline security for your tenant.
-- [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](../security/office-365-security/security-roadmap.md): These recommendations include logging, data governance, admin access, and threat protection.
+- [Configure your tenant for increased security](../security/office-365-security/tenant-wide-setup-for-increased-security.md)
+
+  Recommendations that apply to baseline security for your tenant.
+
+- [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](../security/office-365-security/security-roadmap.md)
+
+  Recommendations that include logging, data governance, admin access, and threat protection.
 
 ### Windows 10 and Microsoft 365 Apps for enterprise
 
