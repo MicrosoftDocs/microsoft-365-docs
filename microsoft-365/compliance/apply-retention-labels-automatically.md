@@ -36,7 +36,7 @@ Auto-applying retention labels are powerful because:
 You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-getting-started-with.md).
 
 > [!TIP]
-> New, use searchable properties to identify Teams meeting recordings.
+> New, use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
 
 The processes to automatically apply a retention label based on these conditions:
 
@@ -161,7 +161,7 @@ Examples queries:
 > [!NOTE]
 > The ability to identify Teams meeting recordings is currently in preview
 
-To identify Microsoft Teams meeting recordings that are stored in users' OneDrive accounts, specify the following for the KQL query:
+To identify Microsoft Teams meeting recordings that are stored in users' OneDrive accounts, specify the following for the **Keyword query editor**:
 
 	ProgID:Media AND ProgID:Meeting
 
