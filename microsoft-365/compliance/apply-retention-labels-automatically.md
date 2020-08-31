@@ -135,7 +135,7 @@ For more information about these options, see the following guidance from the DL
 
 You can auto-apply labels to content by using a query that contains specific words, phrases, or values of searchable properties. You can refine your query by using search operators such as AND, OR, and NOT.
 
-![Query editor](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+![Query editor](../media/new-retention-query-editor.png)
 
 For more information about the query syntax that uses Keyword Query Language (KQL), see [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
