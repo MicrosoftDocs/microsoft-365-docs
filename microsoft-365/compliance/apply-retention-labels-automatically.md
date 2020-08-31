@@ -135,7 +135,9 @@ For more information on these options, see [Tuning rules to make them easier or 
 
 You can auto-apply labels to content by using a query that contains specific words, phrases, or values of searchable properties. You can refine your query by using search operators such as AND, OR, and NOT.
 
-For more information about the query syntax that uses Keyword Query Language (KQL), see [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+![Query editor](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+
+For more information about the query syntax that uses Keyword Query Language (KQL), see [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
 Query-based labels use the search index to identify content. For more information about the searchable properties that you can use, see:
 
@@ -147,14 +149,12 @@ Query-based labels use the search index to identify content. For more informatio
 
 Examples queries:
 
-- Exchange
-    - subject:"Quarterly Financials"
-    - recipients:garthf<!--nolink-->@contoso.com
-- SharePoint and OneDrive
-    - contenttype:contract
-    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
-
-![Query editor](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+| Workload | Example |
+|:-----|:-----|
+|Exchange   | `subject:"Quarterly Financials"` |
+|Exchange   | `recipients:garthf<!--nolink-->@contoso.com` |
+|SharePoint | `contenttype:contract` |
+|SharePoint | `site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
 
 ##### Microsoft Teams meeting recordings
 
