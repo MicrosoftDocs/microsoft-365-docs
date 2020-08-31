@@ -271,7 +271,7 @@ To search for items that are located in the Recoverable Items folder, we recomme
 
 Here's an overview of the process to search for and delete items in a user's Recoverable Items folder:
 
-1. Run the targeted collection script that returns the folder IDs for all folders in the target user's mailbox. The script connects to Exchange Online PowerShell and Security & Compliance PowerShell in the same PowerShell session.
+1. Run the targeted collection script that returns the folder IDs for all folders in the target user's mailbox. The script connects to Exchange Online PowerShell and Security & Compliance PowerShell in the same PowerShell session. For more information, see [Run the script to get a list of folders for a mailbox](use-content-search-for-targeted-collections.md#step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site).
 
 2. Copy the folder IDs for all subfolders in the Recoverable Items folder. Alternatively, you can redirect the output of the script to a text file.
 
@@ -288,10 +288,10 @@ Here's an overview of the process to search for and delete items in a user's Rec
 3. Use the **New-ComplianceSearch** cmdlet (in Security & Compliance Center PowerShell) or use the Content search tool in the compliance center to create a content search that returns items from the target user's Recoverable Items folder. You can do this by including the FolderId in the search query for all subfolders that you want to search. For example, the following query returns all messages in the Purges and eDiscoveryHolds subfolders:
 
    ```powershell
-   folderid:<FolderId of Purges subfolder> OR folderid:<FolderId of eDiscoveryHolds subfolder>
+   folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of eDiscoveryHolds subfolder>
    ```
 
-   For more examples of search queries that use the FolderId property, see [Examples of search queries for targeted collections](use-content-search-for-targeted-collections.md#examples-of-search-queries-for-targeted-collections).
+   For more information and examples about running content searches that use the folder ID property, see [Use a folder ID or to perform a targeted collection](use-content-search-for-targeted-collections.md#step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection).
 
    > [!NOTE]
    > If you use the **New-ComplianceSearch** cmdlet to search the Recoverable Items folder, be sure to use **Start-ComplianceSearch** cmdlet to run the search.
@@ -304,8 +304,6 @@ Here's an overview of the process to search for and delete items in a user's Rec
 
 > [!NOTE]
 > A maximum of 10 items (per mailbox) are deleted when you run the previous command. That means you may have to run the `New-ComplianceSearchAction -Purge`command multiple times to delete the items that you want to delete in the Recoverable Items folder.
-
-For more information about using the **New-ComplianceSearch** and **New-ComplianceSearchAction** cmdlets, see [Search for and delete email messages](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
 
 ### Verify that items were deleted
 
