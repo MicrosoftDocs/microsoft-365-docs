@@ -149,9 +149,9 @@ Examples queries:
 | Workload | Example |
 |:-----|:-----|
 |Exchange   | `subject:"Quarterly Financials"` |
-|Exchange   | `recipients:garthf<!--nolink-->@contoso.com` |
+|Exchange   | `recipients:garthf@contoso.com` |
 |SharePoint | `contenttype:contract` |
-|SharePoint | `site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
+|SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
 
 #### Auto-apply labels to content by using trainable classifiers
 
