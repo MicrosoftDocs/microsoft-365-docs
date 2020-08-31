@@ -212,6 +212,8 @@
            href: manage/set-password-expiration-policy.md
          - name: Customize the app launcher
            href: manage/customize-the-app-launcher.md
+         - name: Pin apps to users' app launcher
+           href: manage/pin-apps-to-app-launcher.md
          - name: Upgrade users to the latest apps
            href: setup/upgrade-users-to-latest-office-client.md
          - name: Requirements for centralized deployment of add-ins
