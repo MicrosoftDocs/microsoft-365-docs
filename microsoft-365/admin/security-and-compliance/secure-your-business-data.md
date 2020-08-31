@@ -62,17 +62,19 @@ Using multi-factor authentication is one of the easiest and most effective ways 
 For businesses using Microsoft 365, add a setting that requires your users to log in using multi-factor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
 To see a training video for how to set up MFA and how users complete the set up, see [set up MFA](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787) and [user set up](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225).
   
-To set up multi-factor authentication:
+To set up multi-factor authentication, you turn on Security defaults:
 
-1. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=834822), select **Users** > **Active Users**.
+For most organizations, Security defaults offer a good level of additional sign-in security. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-2. In the **Active Users** section, select  **Multi-Factor Authentication**.
+If your subscription is new, Security defaults might already be turned on for you automatically.
 
-3. On the **Multi-Factor Authentication** page, select **User** if you are enabling this for one user Or you can perform a **Bulk Update**.
+You enable or disable security defaults from the **Properties** pane for Azure Active Directory (Azure AD) in the Azure portal.
 
-4. Select **Enable** under **Quick Steps**.
-
-5. In the pop-up window, choose **Enable Multi-Factor Authentication**.
+1.	Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with global admin credentials.
+2.	In the left nav choose **Show All** and under **Admin centers**, choose **Azure Active Directory**.
+3. In the **Azure Active Directory admin center** choose **Azure Active Directory** > **Properties**.
+3.	At the bottom of the page, choose **Manage Security defaults**.
+4.	Choose **Yes** to enable security defaults or **No** to disable security defaults, and then choose **Save**.
 
 
 After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
@@ -248,7 +250,7 @@ To create an ATP anti-phishing policy, view a [short training video](https://sup
     
 4. On the Anti-phishing page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
     
-5. Specify the name, description, and settings for your policy as recommended in the chart below. See [Learn about ATP anti-phishing policy options](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) for more details. 
+5. Specify the name, description, and settings for your policy as recommended in the chart below. See [Learn about ATP anti-phishing policy options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) for more details. 
     
 6. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
 
@@ -265,7 +267,7 @@ To create an ATP anti-phishing policy, view a [short training video](https://sup
 |Applied to  <br/> |Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, contoso.com, in the list, and then select **Add**. Select **Done**.  <br/> |
 |
    
-For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+For more information, see [Set up Office 365 ATP anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
   
 ## 9: Protect against malicious attachments and files with ATP Safe Attachments
 <a name="atp"> </a>
@@ -298,7 +300,7 @@ To create an ATP safe attachment policy, view a [short training video](https://s
 |Applied to  <br/> |The recipient domain is . . . select your domain.  <br/> |
 |
    
-For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+For more information, see [Set up Office 365 ATP anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
   
 ## 10: Protect against phishing attacks with ATP Safe Links
 <a name="phishingatp"> </a>

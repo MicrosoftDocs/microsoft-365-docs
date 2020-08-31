@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-- M365solutions
+- m365solution-remotework
 ms.custom: 
 description: Enable your users to be productive with Teams, Exchange, SharePoint, and other Microsoft 365 services.
 ---
@@ -62,11 +62,18 @@ With Outlook, remote workers can stay connected and organized with email, calend
 
 See [this article](../enterprise/secure-email-recommended-policies.md) for the recommended identity and device access policies to protect organizational email and email clients that support modern authentication and Conditional Access.
 
-## Store and collaborate on files with SharePoint Online and OneDrive
+## Store and collaborate on files with SharePoint and OneDrive
 
-For content collaboration, remote workers can use SharePoint Online and OneDrive folders as a central place in the cloud to store and share files, co-author, communicate, and collaborate. Remote workers can securely work from anywhere from a web browser, from Teams, and from Office apps.
+For content collaboration, remote workers can use SharePoint and OneDrive folders as a central place in the cloud to store and share files, co-author, communicate, and collaborate. Remote workers can securely work from anywhere from a web browser, from Teams, and from Office apps.
 
-See [this article](../enterprise/sharepoint-file-access-policies.md) for the recommended identity and device-access policies to protect SharePoint Online and OneDrive for Business.
+You might have to migrate your documents to SharePoint or OneDrive from:
+
+- [SharePoint Server Team Sites](https://docs.microsoft.com/sharepointmigration/sp-teams-sites-migration-guide)
+- [MySites](https://docs.microsoft.com/sharepointmigration/mysites-to-onedrive-migration-guide)
+- [File shares](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
+- [Box](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
+
+To protect SharePoint and OneDrive, see [this article](../enterprise/sharepoint-file-access-policies.md) for the recommended identity and device access policies.
 
 ## Create and collaborate on content with Microsoft 365 Apps
 

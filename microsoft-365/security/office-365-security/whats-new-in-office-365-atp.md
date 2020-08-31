@@ -8,15 +8,16 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
+ms.reviewer: vippand
 ---
 
 # What's new in Office 365 ATP
@@ -30,18 +31,29 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 > [!TIP]
 > Don't have Office 365 ATP yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## September/October 2020 
+
+- [Check your policies using Configuration Analyzer](configuration-analyzer-for-security-policies.md)
+- [Manually override filter verdicts using the tenant allow/block list](tenant-allow-block-list.md)
+- [Extended capabilities in Threat Explorer including top targeted users, transport rules, and connectors](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
+- Surfacing overrides information in [Threat Explorer](threat-explorer.md) (email was allowed/blocked by Tenant/user policy)
+- Surfacing URL threats in [Threat Explorer](threat-explorer.md) (malware, phish, spam, or none)
+
+## July/August 2020 
+
+- [Experience improvements to the hunting experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+- [Easily apply recommended settings using preset security policies](preset-security-policies.md)
+
 ## March/April 2020
 
 - The ability to [address compromised user accounts with automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) is now generally available.
 
 ## January/February 2020
 
-- [General Availability of Campaign Views in Office 365 ATP](campaigns.md)
+- [General availability of Campaign Views in Office 365 ATP](campaigns.md)
 - Enhancements to [Threat Explorer](threat-explorer.md) to enable security operations teams to search and filter on multiple fields while [investigating email](investigate-malicious-email-that-was-delivered.md):
     - Delivery location and special actions
     - Directionality (inbound, outbound, or intra-org)
-    - Overrides (user blocking or allowing)
-    - URL threat (malware, phish, spam, or none)
     - Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)
     - Granular time filters (day, hour, half-hour) 
 
@@ -54,11 +66,6 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 - [Export URL click data for offline analysis](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP Plan 1 or Plan 2)
 
 - [Use Campaign Views in Office 365 ATP (**preview**)](campaigns.md)
-
-## July 2020 
- 
-- [Experience Improvements to Hunting Experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-
 
 ## November 2019
 
@@ -93,5 +100,4 @@ Did you know that Office 365 ATP is available in two plans? [Learn more about wh
 [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Office 365 ATP Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-
 

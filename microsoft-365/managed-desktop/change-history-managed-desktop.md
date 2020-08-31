@@ -5,6 +5,9 @@ keywords: change history
 ms.prod: m365-md
 ms.sitesec: library
 author: jaimeo
+ms.topic: article
+audience: ITPro
+manager: laurawi
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
@@ -16,14 +19,56 @@ ms.localizationpriority: normal
 
 This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles are those which have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+
+## July 2020
+New or changed article | Description
+--- | ---
+[Microsoft Managed Desktop app requirements](service-description/mmd-app-requirements.md) | Updated article
+[Compliance](intro/compliance.md) | Updated article
+[Get started with app control](get-started/get-started-app-control.md) | Updated article
+[Work with app control](working-with-managed-desktop/work-with-app-control.md) | Updated article
+[Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md) | Updated article
+[App control](service-description/app-control.md) | Updated article
+[Network configuration for Microsoft Managed Desktop](get-ready/network.md) | Updated article
+[New Microsoft Edge app](get-started/edge-browser-app.md) | Updated article
+[Access the admin portal](get-started/access-admin-portal.md) | New article
+[App control](service-description/app-control.md) | New article
+[Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](get-started/project-visio.md) | Updated article
+
+## June 2020
+New or changed article | Description
+--- | ---
+[New Microsoft Edge app](get-started/edge-browser-app.md) | New article
+[Device configuration](service-description/device-policies.md) | Updated article
+
+
+
+## May 2020
+New or changed article | Description
+--- | ---
+[Getting help for users](working-with-managed-desktop/end-user-support.md) | Updated article
+[Steps for Partners to register devices](get-started/register-devices-partner.md) | Updated article
+[Microsoft Managed Desktop devices](service-description/device-list.md) | Updated article
+[Register new devices yourself](get-started/register-devices-self.md) | Updated article
+
+
+
+
+
+## April 2020
+New or changed article | Description
+--- | ---
+[Compliance](intro/compliance.md) | New article
+[Microsoft Managed Desktop supported regions and languages](service-description/regions-languages.md) | Updated article
+
+
+
 ## March 2020
 New or changed article | Description
 --- | ---
 [Steps for Partners to register devices](get-started/register-devices-partner.md)| Updated article
 [Register new devices yourself](get-started/register-devices-self.md) | Updated article
 [Prepare printing resources for Microsoft Managed Desktop](get-ready/printing.md) | New article
-
-
 
 
 ## February 2020
@@ -71,7 +116,7 @@ New or changed article | Description
 New or changed article | Description
 --- | ---
 [Exceptions to the service plan](service-description/customizing.md) | New article
-[Getting help for end users](working-with-managed-desktop/end-user-support.md) | Updated article
+[Getting help for users](working-with-managed-desktop/end-user-support.md) | Updated article
 [Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated article
 [Service changes and communication](service-description/servicechanges.md) | New article
 [Register new devices yourself](get-started/register-devices-self.md) | Updated article
@@ -85,7 +130,7 @@ New or changed article | Description
 New or changed article | Description
 --- | ---
 [Microsoft Managed Desktop technologies](intro/technologies.md) | Updated article
-[Getting help for end users](working-with-managed-desktop/end-user-support.md) | Updated article
+[Getting help for users](working-with-managed-desktop/end-user-support.md) | Updated article
 [Microsoft Managed Desktop devices](service-description/device-list.md) | Updated article
 [Deploy and track configurable settings - Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Updated article
 [Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated article
@@ -100,7 +145,7 @@ New or changed article | Description
 --- | ---
 [Working with Microsoft Consulting Services](get-ready/apps-mcs.md) | Updated article
 [Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated article
-[Getting help for end users](working-with-managed-desktop/end-user-support.md) | Updated article
+[Getting help for users](working-with-managed-desktop/end-user-support.md) | Updated article
 [Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md) | Updated article
 [Microsoft Managed Desktop technologies](intro/technologies.md) | Updated article
 
@@ -133,7 +178,7 @@ New or changed article | Description
 [Prepare mapped drives for Microsoft Managed Desktop](get-ready/mapped-drives.md) | New article
 [Prepare certificates and network profiles for Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | New article
 [Order Microsoft Managed Desktop devices](get-started/devices.md) | Updated article
-[Getting help for end users](working-with-managed-desktop/end-user-support.md)
+[Getting help for users](working-with-managed-desktop/end-user-support.md) | New article
 
 ## April 2019
 New or changed article | Description
@@ -164,7 +209,7 @@ New or changed article | Description
 New or changed article | Description
 --- | ---
 [Deploy apps for Microsoft Managed Desktop devices](get-started/deploy-apps.md) | New article.
-[Manage apps for Microsoft Managed Desktop](working-with-managed-desktop/manage-apps.md) | Updated with info on how to update or roll back to a previoius version of line-of-business apps. 
+[Manage apps for Microsoft Managed Desktop](working-with-managed-desktop/manage-apps.md) | Updated with info on how to update or roll back to a previous version of line-of-business apps. 
 
 ## December 2018
 New or changed article | Description
@@ -176,7 +221,7 @@ New or changed article | Description
 
 New or changed article | Description
 --- | ---
-[Support for Microsoft Managed Desktop](service-description/support.md)<br />and [End user support for Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Updated to include Australia.
+[Support for Microsoft Managed Desktop](service-description/support.md)<br />and [User support for Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Updated to include Australia.
 
 ## October 30, 2018
 Content reorganized: added section for [Microsoft Managed Desktop service description](service-description/index.md). 

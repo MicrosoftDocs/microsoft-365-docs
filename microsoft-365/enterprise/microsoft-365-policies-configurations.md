@@ -1,14 +1,14 @@
 ---
-title: Identity and device access configurations - Microsoft 365 Enterprise
+title: Identity and device access configurations - Microsoft 365 for enterprise
 description:  Describes Microsoft recommendations and core concepts for deploying secure email, docs, and apps policies and configurations.
-author: brendacarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/11/2018
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom: 
 - it-pro
@@ -16,6 +16,7 @@ ms.custom:
 ms.collection: 
 - M365-identity-device-management
 - M365-security-compliance
+- m365solution-identitydevice
 
 ---
 # Identity and device access configurations
@@ -28,7 +29,7 @@ Microsoft understands that some organizations have unique environment requiremen
 
 ## Intended audience
 
-These recommendations are intended for enterprise architects and IT professionals who are familiar with [Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx) and [Microsoft Enterprise Mobility + Security](https://microsoft.com/ems), which includes, among others, Azure Active Directory (identity), Microsoft Intune (device management), and Azure Information Protection (data protection).
+These recommendations are intended for enterprise architects and IT professionals who are familiar with [Office 365](https://docs.microsoft.com/microsoft-365/admin) and [Microsoft Enterprise Mobility + Security](https://microsoft.com/ems), which includes, among others, Azure Active Directory (identity), Microsoft Intune (device management), and Azure Information Protection (data protection).
 
 ### Customer environment
 
@@ -40,7 +41,7 @@ For those organizations who do not have Enterprise Mobility + Security E5 licens
 
 ### Caveats
 
-Your organization may be subject to regulatory or other compliance requirements, including specific recommendations that may require you to apply policies that diverge from these recommended configurations. These configurations recommend usage controls that have not historically been available. We recommend these controls, because we believe they represent a balance between security and productivity.  
+Your organization may be subject to regulatory or other compliance requirements, including specific recommendations that may require you to apply policies that diverge from these recommended configurations. These configurations recommend usage controls that have not historically been available. We recommend these controls because we believe they represent a balance between security and productivity.  
 
 We have done our best to account for a wide variety of organizational protection requirements, but we're not able to account for all possible requirements or for all the unique aspects of your organization.
 
@@ -52,21 +53,20 @@ Each industry also has their own set of specialized regulations. Rather than pro
 
 - **Baseline protection**: We recommend you establish a minimum standard for protecting data, as well as the identities and devices that access your data. You can follow these baseline recommendations to provide strong default protection that meets the needs of many organizations.
 - **Sensitive protection**: Some customers have a subset of data that must be protected at higher levels, or they may require all data to be protected at a higher level. You can apply increased protection to all or specific data sets in your Microsoft 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.  
-- **Highly regulated**: Some organizations may have a small amount of data that is highly classified, consititutes trade secrets, or is regulated data. Microsoft provides capabilities to help organizations meet these requirements, including added protection for identities and devices.
+- **Highly regulated**: Some organizations may have a small amount of data that is highly classified, constitutes trade secrets, or is regulated data. Microsoft provides capabilities to help organizations meet these requirements, including added protection for identities and devices.
 
 ![Security cone - All customers > Some customers > Specific customers. Broad application to specific application](../media/M365-idquality-threetiers.png)
 
 This guidance shows you how to implement protection for identities and devices for each of these tiers of protection. Use this guidance as a starting point for your organization and adjust the policies to meet your organization's specific requirements.
 
-It's important to use consistent levels of protection across your data, identities, and devices. For example, if you implement this guidance, be sure to protect your data at comparable levels. These architecture models show you which capabilities are comparable.
+It's important to use consistent levels of protection across your data, identities, and devices. For example, if you implement this guidance, be sure to protect your data at comparable levels. 
 
-**Identity and device protection for Office 365**<br/>
+The **Identity and device protection for Office 365** architecture model shows you which capabilities are comparable.
+
 ![Thumbnail for poster "Identity and device protection for Office 365"](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)
 
-**File Protection Solutions in Office 365**<br/>
-![Thumbnail for poster "File protection solutions in Office 365"](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
-[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+Additionally, see the [Deploy information protection for data privacy regulations](../solutions/information-protection-deploy.md) solution to protect information stored in Microsoft 365.
 
 ## Security and productivity trade-offs
 
@@ -81,7 +81,7 @@ The recommendations provided are based on the following principles:
 
 ## Services and concepts for identity and device access protection
 
-Microsoft 365 Enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security (EMS), to empower everyone to be creative and work together securely.
+Microsoft 365 for enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security (EMS), to empower everyone to be creative and work together securely.
 
 This section provides an overview of the Microsoft 365 services and capabilities that are important for identity and device access.
 
@@ -89,7 +89,7 @@ This section provides an overview of the Microsoft 365 services and capabilities
 
 Azure AD provides a full suite of identity management capabilities. For securing access we recommend using the following capabilities:
 
-- **[Self-service password reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)**: Allow your users to reset their passwords securely and without helpdesk intervention, by providing verification of multiple authentication methods that the administrator can control.
+- **[Self-service password reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)**: Allow your users to reset their passwords securely and without help-desk intervention, by providing verification of multiple authentication methods that the administrator can control.
 
 - **[Multi-factor authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)**: MFA requires users to provide two forms of verification, such as a user password plus a notification from the Microsoft Authenticator app or a phone call. MFA greatly reduces the risk that a stolen identity can be used to access your environment.
 

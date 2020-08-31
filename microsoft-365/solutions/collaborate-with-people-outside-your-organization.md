@@ -9,12 +9,13 @@ ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom: 
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn how to configure Microsoft 365 for collaboration with people outside your organization."
+description: "Configure Microsoft 365 to enable sharing and additional security when you invite external users to collaborate in Teams and share Sharepoint sites."
 ---
 
 # Collaborating with people outside your organization

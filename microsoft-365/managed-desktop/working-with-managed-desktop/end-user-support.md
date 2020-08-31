@@ -6,9 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
-# Getting help for end users
+# Getting help for users
 
 There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support. Both of these support options are available to users 24 hours a day, 7 days a week.
  
@@ -17,22 +20,22 @@ There are two ways that users in your organization can get help with their Micro
 
 ## Get Help app
 
-The preferred method for providing support to your users is **Get Help**, an easy-to-use interface built into the end user device.  
+The preferred method for providing support to your users is **Get Help**, an easy-to-use interface built into the user device.  
 
 ![Get Help app icon](../../media/get-help.png)
 
 This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar. 
 
-- End users can request a call back to a provided phone number, or chat online with a service rep.
+- users can request a call back to a provided phone number, or chat online with a service rep.
 - Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.
 
 ### Prerequisites
-For your end users to be able to get help through the app, make sure these prerequisites are met:
+For your users to be able to get help through the app, make sure these prerequisites are met:
 
 - The device must be registered with Microsoft Managed Desktop using one of the methods in [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md), such as [Register new devices yourself](../get-started/register-devices-self.md).
 - The display language for the device must be set to any of these English-language locales: en-us, en-gb, en-au, en-nz, or en-ca.
 - The Get Help app should be up to date. To confirm this, check for app updates in the Microsoft Store.
-- Certain [endpoints](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop) must be accessible from the device.
+- Certain [endpoints](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) must be accessible from the device.
 
 > [!NOTE]
 > The Get Help app can take up to one hour after a device is deployed to fully function.
@@ -41,7 +44,7 @@ If you've checked these prerequisites and the Get Help app still isn't working, 
 
 ## Phone support
 
-End users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call. This is meant to be used when Get Help isn’t available. For example, if they can’t sign in to the device, or the device is broken. Here are the phone numbers for phone support:
+users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call. This is meant to be used when Get Help isn’t available. For example, if they can’t sign in to the device, or the device is broken. Here are the phone numbers for phone support:
 
 - United States: +1 855 425 0216
 - Canada (excluding Quebec): +1 855 425 0216

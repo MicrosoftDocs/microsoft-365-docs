@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - M365-security-compliance
-- M365solutions
 ms.custom: 
 f1.keywords: NOCSH
 ---
@@ -80,9 +79,9 @@ When you don’t permit outbound UDP traffic from clients to the service, they c
 ### Split tunneling may seem scary
 But it isn’t. All connections to Office 365 are over TLS. We have been offering TLS 1.2 for quite a while now and will be disabling older versions soon because legacy clients still use them and that’s a risk.
 
-Forcing a TLS connection, or thirty-two of them, to go over a VPN before they then go to the service does not add security. It does add latency and reduces overall throughput. In some VPN solutions, it even forces UDP to tunnel through TCP which again will have a very negative impact on streaming traffic. And, unless you are doing TLS inspection, there is no upside, all downside. A very common theme among customers at present, now that most of their workforce is remote, is that they are seeing significant bandwidth and performance impacts from making all their users connect using a VPN, instead of configuring split tunneling for access to [Optimize category Office 365 endpoints](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories).
+Forcing a TLS connection, or thirty-two of them, to go over a VPN before they then go to the service does not add security. It does add latency and reduces overall throughput. In some VPN solutions, it even forces UDP to tunnel through TCP which again will have a very negative impact on streaming traffic. And, unless you are doing TLS inspection, there is no upside, all downside. A very common theme among customers at present, now that most of their workforce is remote, is that they are seeing significant bandwidth and performance impacts from making all their users connect using a VPN, instead of configuring split tunneling for access to [Optimize category Office 365 endpoints](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories).
 
-It’s an easy fix to do split tunneling and it’s one you should do. For more, make sure you review [Optimize Office 365 connectivity for remote users using VPN split tunneling](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
+It’s an easy fix to do split tunneling and it’s one you should do. For more, make sure you review [Optimize Office 365 connectivity for remote users using VPN split tunneling](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel).
 
 
 ## The sins of the past
@@ -104,25 +103,25 @@ Tens of thousands of organizations, including almost all the Fortune 500, use Of
 
 ## Further reading
 
-[The Office 365 Network Connectivity Principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)
+[The Office 365 Network Connectivity Principles](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles)
 
-[Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252fen-us%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 URLs and IP address ranges](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
-[Managing Office 365 endpoints](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
+[Managing Office 365 endpoints](https://docs.microsoft.com/microsoft-365/enterprise/managing-office-365-endpoints)
 
-[Office 365 IP Address and URL Web service](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)
+[Office 365 IP Address and URL Web service](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-ip-web-service)
 
-[Assessing Office 365 network connectivity](https://docs.microsoft.com/office365/enterprise/assessing-network-connectivity)
+[Assessing Office 365 network connectivity](https://docs.microsoft.com/microsoft-365/enterprise/assessing-network-connectivity)
 
-[Office 365 network and performance tuning](https://docs.microsoft.com/office365/enterprise/network-planning-and-performance)
+[Office 365 network and performance tuning](https://docs.microsoft.com/microsoft-365/enterprise/network-planning-and-performance)
 
-[Assessing Office 365 network connectivity](https://docs.microsoft.com/office365/enterprise/assessing-network-connectivity)
+[Assessing Office 365 network connectivity](https://docs.microsoft.com/microsoft-365/enterprise/assessing-network-connectivity)
 
-[Office 365 performance tuning using baselines and performance history](https://docs.microsoft.com/office365/enterprise/performance-tuning-using-baselines-and-history)
+[Office 365 performance tuning using baselines and performance history](https://docs.microsoft.com/microsoft-365/enterprise/performance-tuning-using-baselines-and-history)
 
-[Performance troubleshooting plan for Office 365](https://docs.microsoft.com/office365/enterprise/performance-troubleshooting-plan)
+[Performance troubleshooting plan for Office 365](https://docs.microsoft.com/microsoft-365/enterprise/performance-troubleshooting-plan)
 
-[Content Delivery Networks](https://docs.microsoft.com/office365/enterprise/content-delivery-networks)
+[Content Delivery Networks](https://docs.microsoft.com/microsoft-365/enterprise/content-delivery-networks)
 
 [Microsoft 365 connectivity test](https://connectivity.office.com/)
 
@@ -130,6 +129,6 @@ Tens of thousands of organizations, including almost all the Fortune 500, use Of
 
 [Office 365 Networking blog](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)
 
-[Office 365 connectivity for remote users using VPN split tunneling](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)
+[Office 365 connectivity for remote users using VPN split tunneling](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel)
 
 

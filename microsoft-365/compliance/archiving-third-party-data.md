@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
@@ -33,12 +33,12 @@ The following table lists the third-party data connectors available in the Micro
 > [!TIP]
 > Click the link in the **Third-party data** column to go the step-by-step instructions for creating a connector for that data type.
 
-|Third-party data  |Litigation hold|eDiscovery  |Retention policies  |Records management  |Communication compliance  |Insider risk management  |
+|Third-party data  |Litigation hold|eDiscovery  |Retention settings  |Records management  |Communication compliance  |Insider risk management  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
-|[Bloomberg Message](archive-bloomberg-message-data.md)     |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
+|[Bloomberg Message](archive-bloomberg-message-data.md)     |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[HR data](import-hr-data.md) ||||||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|[ICE Chat](archive-icechat-data.md)     |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
+|[ICE Chat](archive-icechat-data.md)     |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
@@ -66,9 +66,9 @@ The three primary eDiscovery tools in Microsoft 365 are Content search, Core eDi
 
    Both Core eDiscovery and Advanced eDiscovery let you manage third-party data that may be relevant to your organization's legal or internal investigations.
 
-### Retention policies
+### Retention settings
 
-You can apply a [retention policy](retention-policies.md) to user mailboxes to retain and then delete third-party data (and other mailbox content) after retention period expires. You can also use retention policies to delete third-party data of a certain age or trigger a disposition review when the retention period expires.
+You can apply a [retention policy](retention.md) to user mailboxes to retain and then delete third-party data (and other mailbox content) after retention period expires. You can also use retention policies to delete third-party data of a certain age or [use retention labels to trigger a disposition review](disposition.md) when the retention period for third-party data expires.
 
 ### Records management
 

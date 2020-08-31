@@ -2,14 +2,14 @@
 title: Windows and Office Deployment Lab Kit
 f1.keywords:
 - NOCSH
-ms.author: jogruszc
-author: JGruszczyk
-manager: jemed
-ms.date: 06/10/2019
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 08/10/2020
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - Ent_O365
 - Strat_O365_Enterprise
@@ -19,9 +19,9 @@ description: Learn about and where to access the Windows and Office Deployment L
 
 # Windows and Office Deployment Lab Kit
 
-These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Microsoft 365 Apps for enterprise. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
+These labs are designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise and Microsoft 365 Apps for enterprise. The labs cover using Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
 
-This training is highly recommended for organizations preparing for Windows 7 end of life, and also applies if you're currently using Windows 10 and Office 365 Plus or Office 2019. Additionally, as an isolated environment, the lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
+This kit is highly recommended for organizations preparing for Windows 8 upgrades, and also applies if you're currently using Windows 10, Microsoft 365 Apps for enterprise (formerly Office 365 ProPlus), or Office 2019. Additionally, as an isolated environment, the lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
 
 [Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -41,24 +41,24 @@ The lab provides you with an automatically provisioned virtual lab environment, 
 
 PLUS, the lab is designed to be connected to trials for: 
 
-  - Microsoft 365 E5, or
-  - Office 365 Enterprise E5
-  - Enterprise Mobility + Security
+  - Microsoft 365 E5
+  - Office 365 Enterprise E5 with Enterprise Mobility + Security (EMS)
 
 ## Step-by-step labs
 
-Detailed lab guides take you through multiple deployment and management scenarios. The labs have been updated for the latest versions of Intune and Configuration Manager (Version 1910). 
+Detailed lab guides take you through multiple deployment and management scenarios. The labs have been updated for the latest versions of Intune and Configuration Manager. 
 
 ### Device and App Readiness
 
   - Desktop Analytics
-  - NEW! Deploy and update the new Microsoft Edge 
+  - Deploy and update the new Microsoft Edge 
+  - Install and configure the Cloud Management Gateway (CMG) 
   - Internet Explorer Mode 
   - Application Guard 
 
 ### Directory and Network Readiness
 
-  - NEW! Optimize Windows 10 Update Delivery 
+  - Optimize Windows 10 Update Delivery 
   - Configuration Manager and Microsoft Intune Co-Management
   - Remote Access (VPN)
 
@@ -68,6 +68,7 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Enterprise Managed Deployment using Configuration Manager and Microsoft Intune
   - Application deployment and management using Microsoft Intune
   - App deployment and self-service installation using Microsoft Store for Business
+  - NEW! Install Microsoft Teams 
 
 ### User File and Settings Migration
 
@@ -87,6 +88,7 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Windows Defender Exploit Guard
   - Windows Defender Application Control
   - Windows Defender Advanced Threat Protection
+  - NEW! Endpoint Security 
 
 ### OS Deployment and Feature Updates
 
@@ -100,8 +102,9 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Manage Windows Updates using Group Policy
   - Servicing Windows 10 with Configuration Manager and Intune
   - Servicing Microsoft 365 Apps for enterprise with Configuration Manager
-
-### NEW! Windows Virtual Desktop
+  - NEW! Office updates with Configuration Manager and Intune
+  
+### Windows Virtual Desktop
   - Windows Virtual Desktop: Prepare, Deploy, Optimize 
 
 ### Download the Windows and Office Deployment Lab Kit
@@ -111,8 +114,6 @@ Detailed lab guides take you through multiple deployment and management scenario
 *Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires September 12, 2020. A new version will be published prior to expiration.*
 
 ## Additional guidance
-
-  - [Desktop Deployment Center](https://www.aka.ms/howtoshift)
 
   - [Desktop Deployment series videos from Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 

@@ -1,8 +1,8 @@
 ---
 title: Steps to configure threat protection capabilities across Microsoft 365
 description: Learn how to deploy threat protection services and capabilities across Microsoft 365 E5.
-ms.author: bcarter
-author: brendacarter
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 ms.topic: article
@@ -10,7 +10,7 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-- M365solutions
+- m365solution-threatprotection
 ms.custom: 
 f1.keywords: NOCSH
 ---
@@ -90,9 +90,8 @@ Microsoft Threat Protection unifies alerts, incidents, automated investigation a
 
 [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP) safeguards your organization against malicious threats in email messages (attachments and URLs), Office documents, and collaboration tools. The following table lists Office 365 ATP features and capabilities that are included in Microsoft 365 E5:
 
-|||
-|---|---|
 |Configuration, protection, and detection capabilities|Automation, investigation, remediation, and education capabilities|
+|---|---|
 |[Safe Attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Safe Documents](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[ATP anti-phishing protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Threat Trackers](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Attack Simulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
@@ -152,7 +151,7 @@ With Office 365 ATP, people across your organization can communicate and collabo
 
 After you have set up and deployed your threat protection services and capabilities, your next step is to monitor threat detections, and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can monitor and managing security across your Microsoft identities, data, devices, apps, and infrastructure. 
 
-:::image type="content" source="../media/solutions-architecture-center/m365-security-center.png" alt-text="Microsoft 365 security center":::
+![Microsoft 365 security center](../media/solutions-architecture-center/m365-security-center.png)
 
 The Microsoft 365 security center is specifically intended for security admins and security operations teams. In the Microsoft 365 security center, you can:
 - View the overall security health of your organization with [Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).

@@ -1,6 +1,6 @@
 ---
-title: What's coming in Microsoft Secure Score?
-description: Describes Microsoft Secure Score in the Microsoft 365 security center, how details are calculated, and what security admins can expect.
+title: What's coming to Microsoft Secure Score
+description: Describes what new changes are coming to Microsoft Secure Score in the Microsoft 365 security center.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,17 +19,18 @@ search.appverid:
 - MET150
 ---
 
-# What's coming in Microsoft Secure Score?
+# What's coming to Microsoft Secure Score
 
-To make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
+We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
 
-To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
+## Proposed changes
 
-## July 2020
+### September 2020
+- No changes planned
 
-### Add improvement actions for Azure Advanced Threat Protection
+## Related resources
 
-- Risky lateral movement paths
-- Unsecure account attributes
-- Enable security features on Active Directory trusts
-- Remove unsecure SID history attributes from entities
+- [Microsoft Secure Score overview](microsoft-secure-score.md)
+- [Assess your security posture](microsoft-secure-score-improvement-actions.md)
+- [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
+- [What's new](microsoft-secure-score-whats-new.md)

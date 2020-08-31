@@ -123,7 +123,7 @@ But what if an admin simply resets the password of the shared mailbox user accou
 4. In the **Edit sign-in status** flyout, verify that Block the user from signing in is selected, select **Save** and then **Close**.
 ::: moniker-end
 
-For instructions on how to block sign-in for accounts using Azure AD PowerShell (including many accounts at the same time), see [Block user accounts with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/block-user-accounts-with-office-365-powershell).
+For instructions on how to block sign-in for accounts using Azure AD PowerShell (including many accounts at the same time), see [Block user accounts with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/block-user-accounts-with-microsoft-365-powershell).
 
 ## Add the shared mailbox to Outlook
 
@@ -154,6 +154,9 @@ You can access a shared mailbox on a mobile device in two ways:
 - Open your browser, sign in, and then go to Outlook on the web. From Outlook on the web you'll be able to access the shared mailbox.
 
     For instructions, see <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Add a shared mailbox to Outlook on the web</a>.
+    
+> [!NOTE]
+> Shared mailbox can only be added to Outlook for iOS app or the Outlook for Android mobile app
 
 ## Use the shared calendar
 

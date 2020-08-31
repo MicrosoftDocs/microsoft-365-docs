@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity score"
+title: "Microsoft Productivity Score"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,7 +21,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Overview of Microsoft productivity score."
 ---
 
-# Microsoft Productivity score (Preview)
+# Microsoft Productivity Score (Preview)
 
 Productivity Score helps organizations transform how work gets done with insights about how people use Microsoft 365 and the technology experiences that support them. The score reflects your organization’s performance against employee and technology experience measures and compares your score with organizations like yours.
 
@@ -37,9 +37,9 @@ We provide data, insights, and recommendations in two areas:
 
     We provide these insights because when people collaborate online, they save time. When they have the freedom to work on any device, they are more productive and satisfied. When they can communicate in a flexible way, they are more efficient, form better relationships, and your organization is more unified. For evidence, see [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Technology experience:** Productivity depends on reliable and performant technology as well as the efficient use of Microsoft 365. We provide endpoint analytics, which gives you insights and recommendations about device setup and startup times, and we provide Microsoft 365 network connectivity insights for your organization.
+- **Technology experience:** Productivity depends on reliable and performant technology as well as the efficient use of Microsoft 365. We provide [endpoint analytics](https://aka.ms/endpointanalytics), which helps you understand how your users’ productivity can be impacted by performance and health issues with your endpoint hardware and software, while providing recommended actions to remediate them; and we provide Microsoft 365 network connectivity insights for your organization.
 
-To learn more about end point analytics, read [the network connectivity overview](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
+See [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) for an overview and prerequisite details. To learn more about Microsoft 365 network connectivity insights, read [the network connectivity overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## How the score is calculated
@@ -84,7 +84,7 @@ You can access the experience from Microsoft 365 Admin home under **Reports** > 
 
 The Productivity Score home page shows your total score and score history as well as the primary insight for each category
 
-![Productivity score home page](../../media/pslanding.png)
+![Productivity Score home page](../../media/pslanding.png)
 
 **Your score** is shown as a percent value as well as in points so you can see your points (numerator) and maximum possible points (denominator).
 
@@ -140,7 +140,7 @@ This report helps business leaders understand:
 
 - The impact on work-life balance as people adjust to working from home. 
 
-- If people are using meetings effectively, and how they are 
+- If remote meetings support effective decision-making.
 
 [Learn more about the Business continuity report](https://aka.ms/bcrps)
 

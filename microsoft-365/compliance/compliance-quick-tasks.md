@@ -78,7 +78,7 @@ For step-by-step guidance to configure and use sensitivity labels, see [Get star
 
 ## Task 7: Configure a retention policy
 
-A [retention policy](retention-policies.md) lets you proactively decide whether to retain content, delete content, or both—retain and then delete the content at the end of a specified retention period. These actions might be needed to comply with industry regulations and internal policies, as well as reduce your risk in the event of litigation or a security breach.
+A [retention policy](retention.md) lets you proactively decide whether to retain content, delete content, or both—retain and then delete the content at the end of a specified retention period. These actions might be needed to comply with industry regulations and internal policies, as well as reduce your risk in the event of litigation or a security breach.
 
 When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect.
 
@@ -96,17 +96,49 @@ The pre-defined *Sensitive information* policy template helps you quickly create
 
 For step-by-step guidance to plan and configure communication compliance, see [Plan for communication compliance](communication-compliance-plan.md) and [Get started with communication compliance](communication-compliance-configure.md). For communication compliance licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
+## Task 9: See what's happening with your sensitive items
+
+Sensitivity labels, sensitive information types, retention labels and policies and trainable classifiers can be used to classify and label sensitive items across Exchange, SharePoint, and OneDrive as you've seen in the previous tasks. The last step in your quick task journey is to see which items have been labeled and what actions your users are taking on those sensitive items. [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md) provide this visibility.
+
+### Content explorer
+ Content explorer allows you to view, in their native format, all the items that have been classified as a sensitive information type or belonging to a certain classification by a trainable classifier, as well as all items that have sensitivity or retention label applied.
+
+For step-by-step guidance to using content explorer, see [Know your data - data classification overview](data-classification-overview.md), and [Get started with content explorer](data-classification-content-explorer.md).
+
+### Activity explorer
+Activity explorer helps you monitor what's being done with your classified and labeled sensitive items across:
+- SharePoint
+- Exchange
+- OneDrive
+
+There are over 30 different filters available for use, some are:
+
+- date range
+- activity type
+- location
+- user
+- sensitivity label
+- retention label
+- file path
+- DLP policy
+
+For step-by-step guidance to using activity explorer, see [Get started with activity explorer](data-classification-activity-explorer.md).
+
 ## Next steps
 
 Now that you’ve configured the basics for compliance management for your organization, consider the following compliance solutions in Microsoft 365 to help you protect sensitive information and detect and act on additional insider risks.
 
 ### Configure retention labels
 
-While retention policies apply at the container level to locations such as SharePoint sites and Exchange mailboxes, [retention labels](labels.md) allow for more specific targeting for your retention and deletion policies. For example, at the document or email message level that end users can apply manually in addition to automatic application by administrators. You can also apply a retention label to a document library, folder, or document set in SharePoint, so that all documents that are stored in that location inherit the default retention label.
+While retention policies apply at the container level to locations such as SharePoint sites and Exchange mailboxes, [retention labels](retention.md#retention-labels) allow for more specific targeting for your retention and deletion policies. For example, at the document or email message level that end users can apply manually in addition to automatic application by administrators. You can also apply a retention label to a document library, folder, or document set in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
 Additionally, retention labels support [records management](records-management.md) to mark content as a record. When this happens, the label can't be changed or removed, and the content can't be edited or deleted. These restrictions might be needed to help your organization comply with regulatory requirements.
 
-For step-by-step guidance to create and publish retention labels, see [Create, publish, and auto-apply retention labels](create-retention-labels.md). For records management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
+For step-by-step guidance to create and publish retention labels, see the following guidance:
+- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
+
+For records management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
 
 ### Identify and define sensitive information types
 
@@ -116,7 +148,7 @@ For step-by-step guidance to define custom sensitive information types, see [Cre
 
 ### Prevent data loss
 
-[Data loss prevention (DLP) policies](data-loss-prevention-policies.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive information across Microsoft services, prevent the accidental sharing of sensitive information, and help users learn how to stay compliant without interrupting their workflow.
+[Data loss prevention (DLP) policies](data-loss-prevention-policies.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive items across Microsoft services, prevent the accidental sharing of sensitive items, and help users learn how to stay compliant without interrupting their workflow.
 
 For step-by-step guidance to configure DLP policies, see [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md) and [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md). For data loss management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 

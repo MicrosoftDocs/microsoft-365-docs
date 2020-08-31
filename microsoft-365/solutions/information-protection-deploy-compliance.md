@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,9 +13,9 @@ localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: 
-description: Learn how to use Complance Score and Compliance Manager to improve your level of protection for personal data.
+description: Learn how to use Compliance Score and Compliance Manager to improve your level of protection for personal data.
 ---
 
 # Use Compliance Score and Compliance Manager to manage improvement actions
@@ -23,6 +23,8 @@ description: Learn how to use Complance Score and Compliance Manager to improve 
 Microsoft Compliance Score and Compliance Manager can be used together to manage improvements related to data privacy regulations such as the European Union [General Data Protection Regulation (GDPR)](../compliance/gdpr.md), [California Consumer Protection Act CCPA)](../compliance/ccpa-faq.md), HIPAA-HITECH (US health care privacy act), and the Brazil Data Protection Act (LGPD). 
 
 This article provides guidance on the use of these tools for data privacy purposes.
+
+![Compliance Score and Compliance Manager to manage improvement actions](../media/information-protection-deploy-compliance/information-protection-deploy-compliance-grid.png)
 
 >[!Note]
 >The customer actions provided in Compliance Manager are recommendations. It is up to you to evaluate the effectiveness of these recommendations in your regulatory environments prior to implementation. Compliance Manager recommendations should not be interpreted as a guarantee of compliance.

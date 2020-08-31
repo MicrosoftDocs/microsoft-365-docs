@@ -66,11 +66,15 @@ If you're experienced at using PowerShell, you might want to go this route inste
 
 To upgrade a single DL run the following command:
 
-`Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+```PowerShell
+Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+```
 
 For example, if you want to upgrade a DLs with SMTP address dl1@contoso.com, run the following command:
 
-`Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+```PowerShell
+Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+```
 
 > [!NOTE]
 > You can also upgrade a single distribution list to a Microsoft 365 group using the [New-UnifiedGroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell cmdlet
@@ -79,9 +83,8 @@ For example, if you want to upgrade a DLs with SMTP address dl1@contoso.com, run
 
 You can also pass multiple DLs as a batch and upgrade them together:
 
-```
+```PowerShell
 Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
-
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
@@ -98,7 +101,7 @@ There are two ways in which you can upgrade all the eligible DLs.
 
 1. Get the eligible DLs in the tenant and upgrade them using the upgrade command:
 
-```
+```PowerShell
 Get-EligibleDistributionGroupForMigration | Foreach-Object{
     Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
 }
@@ -106,7 +109,7 @@ Get-EligibleDistributionGroupForMigration | Foreach-Object{
 
 2. Get the list of all DLs and upgrade only the eligible DLs:
 
-```
+```PowerShell
 Get-DistributionGroup| Foreach-Object{
     Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
 }

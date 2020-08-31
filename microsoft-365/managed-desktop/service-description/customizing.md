@@ -6,11 +6,14 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
 # Exceptions to the service plan
 
-Microsoft Managed Desktop provides a curated device list, [standard device settings](device-policies.md), applications requirements, and certain [configurable settings](../working-with-managed-desktop/config-setting-overview.md), all designed to provide a secure, productive, and pleasant experience for end users. It’s best to always stay with the service as provided. However, we recognize that some details of the service might not fit exactly with your organization’s needs. If you feel you need to alter the service in some way, it’s important that you follow the following processes to request those changes.
+Microsoft Managed Desktop provides a curated device list, [standard device settings](device-policies.md), applications requirements, and certain [configurable settings](../working-with-managed-desktop/config-setting-overview.md), all designed to provide a secure, productive, and pleasant experience for users. It’s best to always stay with the service as provided. However, we recognize that some details of the service might not fit exactly with your organization’s needs. If you feel you need to alter the service in some way, it’s important that you follow the following processes to request those changes.
  
 ## Types of exceptions
 
@@ -18,7 +21,7 @@ An exception is any addition or change to the Microsoft Managed Desktop base con
 
 |Type  |Description  |
 |---------|---------|
-|Productivity software     |  Foreground software needed by end users, restricted by the [application requirements](mmd-app-requirements.md)       |
+|Productivity software     |  Foreground software needed by users, restricted by the [application requirements](mmd-app-requirements.md)       |
 |Security agents & VPNs     |  Software used to secure, monitor, or change the behavior of the device or network       |
 |Digital experience monitoring     |  Software used to track data on a user’s device to report to IT       |
 |Hardware or software drivers     |   Device drivers, restricted by the [application requirements](mmd-app-requirements.md)      |
@@ -40,7 +43,7 @@ Submit requests through the Microsoft Managed Desktop Admin portal by creating a
 When we review exception requests, we assess these factors in this order:
  
 1.	Some applications and policies which Microsoft Managed Desktop deploys to all devices aren't negotiable, so your request must not affect those. See [Device configuration](device-policies.md) for more information.
-2.	Restricted productivity software required by an end user to do their job will likely be approved. 
+2.	Restricted productivity software required by a user to do their job will likely be approved. 
 3.	If we can meet your requirement by using Microsoft technology, we’ll likely approve your request for an exception migration period of three to twelve months (depending on the scope of the project).
 4.	If we can’t meet your requirement by using Microsoft technology, we’ll likely approve your request unless it violates one of the conditions below.  
 

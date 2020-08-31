@@ -6,6 +6,9 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
 #  Prepare on-premises resources access for Microsoft Managed Desktop
@@ -33,8 +36,8 @@ In most organizations, your users will be able to use SSO to authenticate by UPN
 
 - Confirm that Azure AD Connect is set up and uses an on-premises Active Directory server running Windows Server 2008 R2 or later.
 - Confirm that Azure AD Connect is running a supported version and is set to sync these three attributes with Azure AD: 
-    - DNS domain name of the on-premises Active Directory (where the end-users are located)
-    - NetBIOS of your on-premises Active Directory (where the end-users are located)
+    - DNS domain name of the on-premises Active Directory (where the users are located)
+    - NetBIOS of your on-premises Active Directory (where the users are located)
     - SAM account name of the user
 
 

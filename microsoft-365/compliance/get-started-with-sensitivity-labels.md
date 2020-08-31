@@ -75,7 +75,7 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 
 |I want to ...|Documentation|
 |----------------|---------------|
-|Manage sensitivity labels for Office apps so that content is labeled as it's created |[Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md)|
+|Manage sensitivity labels for Office apps so that content is labeled as it's created—includes support for manual labeling on all platforms |[Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md)|
 |Enable users to label and protect files from Windows computers using Office apps, File Explorer, and PowerShell|[Azure Information Protection unified labeling client for Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |Encrypt documents and emails with sensitivity labels and restrict who can access that content and how it can be used |[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
 |Enable sensitivity labels for Office on the web, with support for coauthoring, eDiscovery, data loss prevention, search—even when documents are encrypted | [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
@@ -85,10 +85,11 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 |Discover, label, and protect files stored in data stores that are in the cloud|[Discover, classify, label, and protect regulated and sensitive data stored in the cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Apply and view sensitivity labels in Power BI, and protect data when it is exported|[Data protection in Power BI](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
 |Monitor and understand how sensitivity labels are being used in my organization|[Know your data - data classification overview](data-classification-overview.md) <br /><br /> [View label usage with label analytics](label-analytics.md)|
+|Extend sensitivity labels to third-party apps and services|[Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
 
 ## End-user documentation for sensitivity labels
 
-The most effective end-user documentation will be customized guidance and instructions you provide for the label names and configurations you choose. However, you can use the following resources for basic instructions:   
+The most effective end-user documentation will be customized guidance and instructions you provide for the label names and configurations you choose. However, you can use the following resources for basic instructions:
 
 - [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
     - [Known issues with sensitivity labels in Office](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
@@ -98,4 +99,4 @@ The most effective end-user documentation will be customized guidance and instru
 
 - [Azure Information Protection unified labeling user guide](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-user-guide)
 
-
+If your sensitivity labels apply encryption for PDF documents, these documents can be opened with Microsoft Edge on Windows or Mac. For more information, and alternative readers, see [Which PDF readers are supported for protected PDFs?](https://docs.microsoft.com/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
