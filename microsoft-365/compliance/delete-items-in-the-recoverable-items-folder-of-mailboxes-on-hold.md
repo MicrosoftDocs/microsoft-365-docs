@@ -1,5 +1,5 @@
 ---
-title: Delete items in the cloud mailbox on hold Recoverable Items folder
+title: Delete items in the Recoverable Items folder of cloud mailbox's on hold
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -265,34 +265,51 @@ You must be assigned the Legal Hold role in Exchange Online to use the *RemoveDe
 
 ## Step 5: Delete items in the Recoverable Items folder
 
-The overview of the steps would be (please refine the instructions):
+Now you're ready to actually delete items in the Recoverable Items folder by using the [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch) and [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction) cmdlets in Security & Compliance Center PowerShell.
 
-Connect Powershell to SCC
-Connect Powershell to EXO
-Run in Powershell connected to EXO the script found in article https://docs.microsoft.com/en-us/microsoft-365/compliance/use-content-search-for-targeted-collections?view=o365-worldwide to get the FolderID of the specific folder under Recoverable Items (DiscoveryHolds, Deletions or Purges)
-In the Powershell session connected to SCC, run the following:
-New-ComplianceSearch -Name "name of the search" -ExchangeLocation user@domain.com -ContentMatchQuery "FolderID:"
+To search for items that are located in the Recoverable Items folder, we recommend that you perform a *targeted collection*. This means you narrow the scope of your search only to items located in the Recoverable Items folder. You can do this by running the script in the [Use Content Search for targeted collections](use-content-search-for-targeted-collections.md) article. This script returns the value of the folder ID property for all the subfolders in the target Recoverable Items folder. Then you use the folder ID in a search query to return items located in that folder.
 
-Start-ComplianceSearch -Identity "name of the search"
+Here's an overview of the process to search for and delete items in a user's Recoverable Items folder:
 
-New-ComplianceSearchAction -SearchName "name of the search" -Purge -PurgeType HardDelete - this is just an example
+1. Run the targeted collection script that returns the folder IDs for all folders in the target user's mailbox. The script connects to Exchange Online PowerShell and Security & Compliance PowerShell in the same PowerShell session.
 
+2. Copy the folder IDs for all subfolders in the Recoverable Items folder. Alternatively, you can redirect the output of the script to a text file.
 
+   Here's a list and description of the subfolders in the Recoverable Items folder that you can search and delete items from:
 
+   - **Deletions**: Contains soft-deleted items whose deleted item retention period has not expired. Users can recover soft-deleted items from this subfolder using the Recover Deleted Items tool in Outlook.
 
-Now you're ready to actually delete items in the Recoverable Items folder by using the [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch) and [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction) cmdlets in the Security & Compliance Center. 
+   - **Purges**: Contains hard-deleted items whose deleted item retention period has expired. Users can also hard-delete items by purging items from their Recoverable Items folder. If the mailbox is on hold, hard-deleted items are preserved. User's can't access items in this subfolder.
 
+   - **eDiscoveryHolds**: Contains hard-deleted items that have been preserved by an eDiscovery hold or a retention policy. User's can't access items in this subfolder.
 
+   - **SubstrateHolds**: Contains hard-deleted items from Teams and other cloud-based apps that have been preserved by a retention policy. User's can't access items in this subfolder.
 
+3. Use the **New-ComplianceSearch** cmdlet (in Security & Compliance Center PowerShell) or use the Content search tool in the compliance center to create a content search that returns items from the target user's Recoverable Items folder. You can do this by including the FolderId in the search query for all subfolders that you want to search. For example, the following query returns all messages in the Purges and eDiscoveryHolds subfolders:
 
+   ```powershell
+   folderid:<FolderId of Purges subfolder> OR folderid:<FolderId of eDiscoveryHolds subfolder>
+   ```
 
+   For more examples of search queries that use the FolderId property, see [Examples of search queries for targeted collections](use-content-search-for-targeted-collections.md#examples-of-search-queries-for-targeted-collections).
 
+   > [!NOTE]
+   > If you use the **New-ComplianceSearch** cmdlet to search the Recoverable Items folder, be sure to use **Start-ComplianceSearch** cmdlet to run the search.
 
-To do this, see [Search for and delete email messages](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
+4. After you've created a content search and validated that it returns the items that you wan to delete, use the `New-ComplianceSearchAction -Purge -PurgeType HardDelete` command (in Security & Compliance Center PowerShell) to permanently delete the items returned by the content search that you created in the previous step. For example, you can run a command similar to the following command:
+
+   ```powershell
+   New-ComplianceSearchAction -SearchName "RecoverableItems" -Purge -PurgeType HardDelete
+   ```
+
+> [!NOTE]
+> A maximum of 10 items (per mailbox) are deleted when you run the previous command. That means you may have to run the `New-ComplianceSearchAction -Purge`command multiple times to delete the items that you want to delete in the Recoverable Items folder.
+
+For more information about using the **New-ComplianceSearch** and **New-ComplianceSearchAction** cmdlets, see [Search for and delete email messages](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
 
 ### Verify that items were deleted
 
-To verify that you've successfully deleted items from the Recoverable Items folder of a mailbox, use **Get-MailboxFolderStatistics** cmdlet in Exchange Online PowerShell to check the size and number of items in Recoverable Items folder. You can compare these statistics with the ones you collected in Step 1. 
+To verify that you've successfully deleted items from the Recoverable Items folder of a mailbox, use **Get-MailboxFolderStatistics** cmdlet in Exchange Online PowerShell to check the size and number of items in Recoverable Items folder. You can compare these statistics with the ones you collected in Step 1.
   
 Run the following command in to get the current size and total number of items in folders and subfolders in the Recoverable Items folder in the user's primary mailbox.
   
