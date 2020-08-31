@@ -26,6 +26,21 @@ ms.custom:
 
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
+## August 2020
+
+### Update improvement action for Azure Active Directory
+
+- Enable policy to block legacy authentication
+
+## July 2020
+
+### Adding improvement actions for Azure Advanced Threat Protection
+
+- Risky lateral movement paths
+- Unsecure account attributes
+- Enable security features on Active Directory trusts
+- Remove unsecure SID history attributes from entities
+
 ## June 2020
 
 ### Removed improvement action for Microsoft Defender Advanced Threat Protection
@@ -74,7 +89,7 @@ In time, Identity Secure Score and the Graph API will adopt the new scoring mode
 
 ## We want to hear from you
 
-If you have any issues, please let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
+If you have any issues, let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
 
 ## Related resources
 
