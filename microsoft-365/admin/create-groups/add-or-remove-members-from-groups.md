@@ -287,6 +287,6 @@ By default, the person who created the group is the group owner. Often a group w
 
 - [Manage guest access in Microsoft 365 groups](manage-guest-access-in-groups.md)
 
-- [Manage Microsoft 365 groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell): this article introduces you to key cmdlets and provides examples
+- [Manage Microsoft 365 groups with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell): this article introduces you to key cmdlets and provides examples
 
 - [Microsoft 365 groups naming policy](groups-naming-policy.md)
