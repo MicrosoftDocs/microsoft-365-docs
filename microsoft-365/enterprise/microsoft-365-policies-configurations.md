@@ -79,7 +79,7 @@ Additionally, see the [Deploy information protection for data privacy regulation
 
 Implementing any security strategy requires trade-offs between security and productivity. It's helpful to evaluate how each decision affects the balance of security, functionality, and ease of use.
 
-![Security triad balancing security, functionality, and ease of use.](../media/policies-configurations/security-triad.png)
+![Security triad balancing security, functionality, and ease of use.](../media/microsoft-365-policies-configurations/security-triad.png)
 
 The recommendations provided are based on the following principles:
 
@@ -122,8 +122,8 @@ This guidance shows you how to create recommended policies to enforce the use of
 
 This guidance shows you how to implement a set of policies to protect access to Microsoft 365 cloud services, including Microsoft Teams, Exchange Online, SharePoint Online, and OneDrive for Business. In addition to implementing these policies, we recommend you also raise the level of protection for your tenant using these resources:
 
-- [Configure your tenant for increased security](../security/office-365-security/tenant-wide-setup-for-increased-security): These recommendations apply to baseline security for your tenant.
-- [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](../security/office-365-security/security-roadmap): These recommendations include logging, data governance, admin access, and threat protection.
+- [Configure your tenant for increased security](../security/office-365-security/tenant-wide-setup-for-increased-security.md): These recommendations apply to baseline security for your tenant.
+- [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](../security/office-365-security/security-roadmap.md): These recommendations include logging, data governance, admin access, and threat protection.
 
 ### Windows 10 and Microsoft 365 Apps for enterprise
 
