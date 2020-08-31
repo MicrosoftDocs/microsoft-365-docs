@@ -118,7 +118,7 @@ Run the script by typing:
 
 `.\GroupCreators.ps1`
 
-and [sign in with your administrator account](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#step-2-connect-to-azure-ad-for-your-office-365-subscription) when prompted.
+and [sign in with your administrator account](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) when prompted.
 
 ```PowerShell
 $GroupName = "<SecurityGroupName>"

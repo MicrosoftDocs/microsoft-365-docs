@@ -117,6 +117,6 @@ You might not have the correct permissions to assign admin roles to other users.
 
 [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-[Assign roles to user accounts with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
+[Assign roles to user accounts with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell)
 
 [Authorize or remove partner relationships](../misc/add-partner.md)
