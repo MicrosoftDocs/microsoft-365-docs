@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date:
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -77,6 +77,9 @@ The following policy settings are available in anti-phishing policies and ATP an
     - **Recipient is a member of**
     - **The recipient domain is**
 
+  > [!NOTE]
+  > The **Applied to** setting is required in custom anti-phishing policies to identify them message **recipients** <u>that the policy applies to</u>. ATP anti-phishing policies also have [impersonation settings](#impersonation-settings-in-atp-anti-phishing-policies) where you can specify individual sender email addresses or sender domains <u>that will receive impersonation protection</u> as described later in this topic.
+
 ## Spoof settings
 
 Spoofing is when the From address in an email message (the sender address that's show in email clients) doesn't match the domain of the email source. For more information about spoofing, see [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md).
@@ -139,13 +142,21 @@ An impersonated domain might otherwise be considered legitimate (registered doma
 
 The following impersonation settings are only available in ATP anti-phishing policies:
 
-- **Users to protect**: Prevents the specified internal or external users from being impersonated. For example, executives (internal) and board members (external). You can add up to 60 internal and external addresses. This list of protected users is different from the list of recipients that the policy applies to in the **Applied to** setting.
+- **Users to protect**: Prevents the specified internal or external email addresses from being impersonated **as message senders**. For example, executives (internal senders) and board members (external senders). You can add up to 60 internal and external sender email addresses to protect from impersonation. This list of **senders** that are protected from impersonation is different from the list of **recipients** that the policy applies to.
 
-  For example, you specify Felipe Apodaca (felipea@contoso.com) as a protected user in a policy that applies to the group named Executives. Inbound messages sent to members of the Executives group where Felipe Apodaca is impersonated will be acted on by the policy (the action you configure for impersonated users).
+  The default policy applies to messages sent to all recipients, while custom policies apply only to messages sent to the recipients you define in the **Applied to** setting as described in the [Policy settings](#policy-settings) section.
 
-- **Domains to protect**: Prevent the specified domains from being impersonated. For example, all domains that you own ([accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific domains (domains you own or partner domains). This list of protected domains is different from the list of domains that the policy applies to in the **Applied to** setting.
+  By default, no sender email addresses are configured for impersonation protection in **Users to protect**. Therefore, by default, no sender email addresses are covered by impersonation protection, either in the default policy or in custom policies.
 
-  For example, you specify tailspintoys.com as a protected domain in a policy that applies to members of the group named Executives. Inbound messages sent to members of the Executives group where tailspintoys.com is impersonated will be acted on by the policy (the action you configure for impersonated domains).
+  When you add internal or external email addresses to the **Users to protect** list, messages from those **senders** are subject to impersonation protection checks. The message is checked for impersonation **if** the message is sent to a **recipient** that the policy applies to (all recipients for the default policy; **Applied to** recipients in custom policies). If impersonation is detected in the sender's email address, the impersonation protections actions for users are applied to the message (the action on the message, the impersonated users safety tip, etc.).
+
+- **Domains to protect**: Prevents the specified domains from being impersonated **in the message sender's domain**. For example, all domains that you own ([accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific domains (domains you own or partner domains). This list of **sender domains** that are protected from impersonation is different from the list of **recipients** that the policy applies to.
+
+  The default policy applies to messages sent to all recipients, while custom policies apply only to messages sent to the recipients you define in the **Applied to** setting as described in the [Policy settings](#policy-settings) section.
+
+  By default, no sender domains are configured for impersonation protection in **Domains to protect**. Therefore, by default, no sender domains are covered by impersonation protection, either in the default policy or in custom policies.
+
+  When you add domains to the **Domains to protect** list, messages from **senders in those domains** are subject to impersonation protection checks. The message is checked for impersonation **if** the message is sent to a **recipient** that the policy applies to (all recipients for the default policy; **Applied to** recipients in custom policies). If impersonation is detected in the sender's domain, the impersonation protection actions for domains are applied to the message (the action on the message, the impersonated domains safety tip, etc.).
 
 - **Actions for protected users or domains**: Choose the action to take on inbound messages that contain impersonation attempts against the protected users and protected domains in the policy. You can specify different actions for impersonation of protected users vs. impersonation of protected domains:
 

@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -25,7 +25,7 @@ In Microsoft 365 organizations with Exchange Online mailboxes, you can specify a
 
 - [Built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (formerly known as Outlook Web App)
 
-- Built-in reporting in Outlook for iOS and Android
+- [Built-in reporting in Outlook for iOS and Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
 
   > [!NOTE]
   > If reporting has been [disabled in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), enabling user submissions here will override that setting and enable users to report messages in Outlook on the web again.
@@ -42,10 +42,10 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
   - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
 
-    - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **[Exchange Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure AD and **Organization Management** or **Security Administrator** and in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
     - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-  - For read-only access to User submissions, you need to be a member of one of the following role groups:
+  - For read-only access to User submissions, you need to be a member of both of the following role groups:
 
     - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
     - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
@@ -96,7 +96,7 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
 Messages sent to custom mailboxes need to follow a specific submission mail format. The Subject (Envelope Title) of the submission should be in this format:
 
-`SafetyAPIAction|NetworkMessgeId|SenderIp|FromAddress|(Message Subject)`
+`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
 were SafetyAPIAction is one of the following integer values:
 

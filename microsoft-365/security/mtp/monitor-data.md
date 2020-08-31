@@ -19,13 +19,13 @@ ms.custom: seo-marvel-apr2020
 
 # Data monitoring and reporting in the Microsoft 365 security center
 
-The **Data** category helps track user activity that could lead to unauthorized data disclosure. These are the rework of existing DLP policy reports plus a third-party DLP policy match report.
+The **Data** category helps track user activity that could lead to unauthorized data disclosure. They are the rework of existing DLP policy reports plus a third-party DLP policy match report.
 
 You can see:
 
-* Users who share the most files from cloud apps
-* How many DLP policy matches occurred
-* How many DLP policies overrides or false positives are reported
-* How many DLP policy matches happened in 3rd party cloud services via Microsoft Cloud App Security
+- Users who share the most files from cloud apps
+- How many DLP policy matches occurred
+- How many DLP policies overrides or false positives are reported
+- How many DLP policy matches happened in third-party cloud services via Microsoft Cloud App Security
 
 ![Data category of reports page](../../media/data.png)

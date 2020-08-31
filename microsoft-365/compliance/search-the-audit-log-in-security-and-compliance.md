@@ -181,9 +181,9 @@ Here's the process for searching the audit log in Office 365.
 
       > [!TIP]
       >
-      > - If you're looking for all activities related to a **site**, add the wildcard symbol (\*) after the URL to return all entries for that site; for example, **"https://contoso-my.sharepoint.com/personal/*"**.
+      > - If you're looking for all activities related to a **site**, add the wildcard symbol (\*) after the URL to return all entries for that site; for example, `"https://contoso-my.sharepoint.com/personal*"`.
       >
-      > - If you're looking for all activities related to a **file**, add the wildcard symbol (\*) before the file name to return all entries for that file; for example, **"*Customer_Profitability_Sample.csv"**.
+      > - If you're looking for all activities related to a **file**, add the wildcard symbol (\*) before the file name to return all entries for that file; for example, `"*Customer_Profitability_Sample.csv"`.
 
 5. Click **Search** to run the search using your search criteria.
 
