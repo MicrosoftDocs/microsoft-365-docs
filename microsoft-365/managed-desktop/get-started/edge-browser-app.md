@@ -1,6 +1,6 @@
 ---
 title: New Microsoft Edge
-description:  
+description:  Explains how the new Edge browser is deployed and updated
 keywords: browser, Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -21,17 +21,16 @@ The new [Microsoft Edge browser](https://www.microsoft.com/edge) provides world-
 
 To migrate your Microsoft Managed Desktop devices to the new Microsoft Edge browser, file an IT Support Ticket through the Microsoft Managed Desktop Portal. We will deploy the Edge Stable channel to the Test Group when you file the ticket, and then deploy it in each subsequent deployment group every 24 hours. To pause the deployment, file another ticket asking Operations to hold.
 
-The [Beta Channel] (https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) is also available upon request for representative validation within your organization. Microsoft Managed Desktop will deploy the application as required to the Test and First Groups so that all of those users have the Beta Channel in addition to the Stable Channel. For any additional users who need access to the Beta Channel please add them to the **Modern Workplace - Edge Beta Users** group and have them install it from the Company Portal
+The [Beta Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) is also available upon request for representative validation within your organization. Microsoft Managed Desktop will deploy the application as required to the Test and First Groups so that all of those users have the Beta Channel in addition to the Stable Channel. For any additional users who need access to the Beta Channel please add them to the **Modern Workplace - Edge Beta Users** group and have them install it from the Company Portal
 
 ## Updates to Microsoft Edge
 
 Microsoft Managed Desktop deploys the [Stable channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) of Microsoft Edge which is auto-updated about every six weeks. Updates on the Stable channel are rolled out [progressively](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) by the Microsoft Edge product group in order to ensure the best experience for customers. 
 
-The [Beta Channel] (https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) is deployed to devices in both the Test and First groups for representative validation within the organization. This channel is fully supported and is auto-updated with new features approximately every six weeks.
+The [Beta Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) is deployed to devices in both the Test and First groups for representative validation within the organization. This channel is fully supported and is auto-updated with new features approximately every six weeks.
 
 To ensure that Microsoft Edge updates correctly, do not modify the Microsoft Edge [update policies](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies).
 
-### Microsoft Edge Beta Channel
 
 
 ## Settings managed by Microsoft Managed Desktop
@@ -40,12 +39,12 @@ Microsoft Managed Desktop has created a default set of policies for Microsoft Ed
 
 ### Microsoft Edge extensions
 
-The security baseline for Microsoft Edge on Microsoft Managed Desktop devices sets two policies to disable all Chrome extensions and secure end users. To enable and deploy extensions in your environment, see Settings you manage. 
+The security baseline for Microsoft Edge on Microsoft Managed Desktop devices sets two policies to disable all Chrome extensions and secure users. To enable and deploy extensions in your environment, see Settings you manage. 
 
 #### Extension installation blocklist
 **Default value:** All
 
-Microsoft Managed Desktop sets this policy to prevent Chrome extensions from being installed on managed endpoints. There are known risk sassociated with the Chromium extension model including data loss protection, privacy, and other risks that can compromise devices. 
+Microsoft Managed Desktop sets this policy to prevent Chrome extensions from being installed on managed endpoints. There are known risks associated with the Chromium extension model including data loss protection, privacy, and other risks that can compromise devices. 
 
 #### Allow user-level native messaging hosts (installed without admin permissions)
 
@@ -67,13 +66,13 @@ If you want to use the less secure TLS 1.1, you can request this.
 
 We don't recommend enabling this setting since it allows users to visit sites with SSL errors.
 
-### Microsoft Defender Smart Screen
+### Microsoft Defender SmartScreen
 
 #### Configure Windows Defender SmartScreen
 
 **Default value:** Enabled
 
-Enabled by default to help protect end users.
+Enabled by default to help protect users.
 
 #### Windows Defender SmartScreen prompts for sites
 
@@ -101,7 +100,7 @@ We don't recommend using Flash because of associated security risks. If you stil
 
 **Default value:** Disabled
 
-We do not recommend allowing end users to save passwords on their device.
+We do not recommend allowing users to save passwords on their device.
 
 ### Internet Explorer Mode in Microsoft Edge
 IE mode on Microsoft Edge makes it easy to use all of the sites your organization needs in a single browser. It uses the integrated Chromium engine for sites that are compatible with the Chromium rendering engine and it uses the Trident MSHTML engine from Internet Explorer 11 (IE11) for sites that aren't or have dependencies on IE functionality. [Learn more] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 

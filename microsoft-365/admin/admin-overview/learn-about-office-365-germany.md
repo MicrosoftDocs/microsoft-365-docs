@@ -40,7 +40,7 @@ Office 365 Germany plan offerings are aligned with global offers as much as poss
   
 The following services and features are available in some [Office 365 Germany subscription plans](https://go.microsoft.com/fwlink/p/?linkid=839016). Additionally, see the [Online Services Terms](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46).
   
-- Microsoft 365 Apps for enterprise, Office 2016, and Office 2013<sup>1</sup>. Note that Office 2013 requires [using Office 365 modern authentication with Office clients](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
+- Microsoft 365 Apps for enterprise, Office 2016, and Office 2013<sup>1</sup>. Note that Office 2013 requires [using Office 365 modern authentication with Office clients](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).
     
 - Exchange Online
     
@@ -88,7 +88,7 @@ The following services and features are available in some [Office 365 Germany su
 |-----|-----|
 |Sign in portal  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |Subscriptions, billing, and technical support  <br/> |Germany-based support available in German and English For details, see [Contact support for business products - Admin Help](../contact-support-for-business-products.md).  <br/> |
-|IP Addresses and URLs  <br/> |See [Office 365 Germany endpoints](https://docs.microsoft.com/office365/enterprise/office-365-germany-endpoints).  <br/> |
+|IP Addresses and URLs  <br/> |See [Office 365 Germany endpoints](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-germany-endpoints).  <br/> |
 |Yammer  <br/> |Not available.  <br/> |
 |Versions of Office older than Office 2013 or Microsoft 365 Apps for enterprise<sup>1</sup> <br/> |Not supported.  <br/> |
 |Office Lens  <br/> |Not available.  <br/> |
