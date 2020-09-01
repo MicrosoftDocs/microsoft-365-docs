@@ -27,7 +27,10 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 
 - Privacy (public or private) of Microsoft 365 group-connected teams sites
 - External users access
-- Access from unmanaged devices when this feature is [configured for your tenant](/sharepoint/control-access-from-unmanaged-devices))
+- Access from unmanaged devices
+
+> [!IMPORTANT]
+> The **Access from unmanaged devices** setting works in conjunction with the SharePoint feature to [control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). You must configure this SharePoint feature for your tenant before you apply a sensitivity label that has this setting configured. Additional information is included in the instructions that follow.
 
 When you apply this sensitivity label to a supported container, the label automatically applies the classification and protection settings to the connected site or group.
 
