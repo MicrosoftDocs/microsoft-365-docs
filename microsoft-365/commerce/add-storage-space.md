@@ -79,8 +79,8 @@ You must be a Global or SharePoint admin to do the tasks in this article. For mo
 
 ![Storage bar on the Active sites page](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
-> [!NOTE]
-> The storage used doesn't include changes made within the last 24-48 hours.
+   > [!NOTE]
+   > The storage used doesn't include changes made within the last 24-48 hours.
 
 After you've determined how much storage you're using, you can add or remove storage space for your subscription. To find out how much it will cost to add storage space, follow the steps in this article, and review the pricing information before you purchase.
   
