@@ -3,7 +3,7 @@ title: "Connect to all Microsoft 365 services in a single PowerShell window"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/26/2020
+ms.date: 09/01/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -126,7 +126,7 @@ Here are the steps to connect to all the services in a single PowerShell window 
    ```
 
    > [!Note]
-   > To connect to Exchange Online for Microsoft 365 clouds other than Worldwide, use the **-ExchangeEnvironmentName** parameter. See [Connect to Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) for more information.
+   > To connect to Exchange Online for Microsoft 365 clouds other than Worldwide, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 7. Alternately, run these commands to connect to the Security &amp; Compliance Center.
     
