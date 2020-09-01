@@ -1,5 +1,5 @@
 ---
-title: "Records management"
+title: "Records Management in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -20,7 +20,7 @@ ms.custom:
 description: With records management in Microsoft 365, you can apply your retention schedules into a file plan that manages retention, records declaration, and disposition.
 ---
 
-# Learn about records management
+# Learn about records management in Microsoft 365
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
