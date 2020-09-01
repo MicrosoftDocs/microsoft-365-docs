@@ -31,6 +31,9 @@ We have already begun deprecation of TLS 1.0 and 1.1 as of January 2020. Any cli
 
 We recommend that all client-server and browser-server combinations use TLS 1.2 (or a later version) in order to maintain connection to Office 365 services. You might have to update certain client-server and browser-server combinations.
 
+  > [!NOTE]
+  > For SMTP Inbound mail flow, after deprecation of TLS 1.0 and 1.1, we will accept only TLS 1.2 connection. However, we will continue accepting SMTP Connection which is unencrypted without any TLS. Although we do not recommend email transmission without any encryption. 
+
 The following clients are known to be unable to use TLS 1.2. Update these clients to ensure uninterrupted access to the service.
 
 - Android 4.3 and earlier versions
