@@ -83,9 +83,9 @@ On this new **Site and group settings** page, configure the settings:
 
 - **Unmanaged devices**: For this option, you must also configure the SharePoint feature that uses Azure AD conditional access to block or limit access to SharePoint and OneDrive content from unmanaged devices. For instructions, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). The option you specify for this label setting is the equivalent of [blocking or limiting access to a specific SharePoint site or OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
     
-    If you don't configure the dependent SharePoint feature, the option you specify here will have no effect. Additionally, the setting you specify here will be applied only if it's more restrictive than the configured setting at the tenant level.
+    If you don't configure the dependent SharePoint feature, the option you specify here will have no effect. Additionally, it will have no effect if it's less restrictive than the configured setting at the tenant level. Choose a label setting that's either the same as the tenant-level setting or more restrictive.
     
-    For example, if you have configured the setting of **Allow limited, web-only access** for your tenant, the label setting that allows full access will have no effect because it is less restrictive. You could however, select the label setting to block access because this setting is more restrictive.
+    For example, if your tenant is configured for **Allow limited, web-only access**, the label setting that allows full access will have no effect because it's less restrictive. For this tenant-level setting, choose the label setting to block access (more restrictive) or the label setting for limited access (the same as the tenant setting).
     
     Because you can configure the SharePoint feature independently from the label configuration, there's no check in the sensitivity label wizard that the dependencies are in place.
 
