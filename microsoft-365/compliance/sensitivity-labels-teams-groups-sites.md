@@ -30,7 +30,7 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 - Access from unmanaged devices
 
 > [!IMPORTANT]
-> The **Access from unmanaged devices** setting works in conjunction with the SharePoint feature to [control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). You must configure this SharePoint feature for your tenant before you apply a sensitivity label that has this setting configured. Additional information is included in the instructions that follow.
+> The **Access from unmanaged devices** setting works in conjunction with the SharePoint feature to [control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). You must configure this SharePoint feature for your tenant with a organization-wide policy to "Allow full access from desktop apps, mobile apps, and the web "before you apply a sensitivity label that has this setting configured. Additional information is included in the instructions that follow.
 
 When you apply this sensitivity label to a supported container, the label automatically applies the classification and protection settings to the connected site or group.
 
@@ -81,11 +81,9 @@ On this new **Site and group settings** page, configure the settings:
 
 - **External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **Unmanaged devices**: For this option, you must also configure the SharePoint feature that uses Azure AD conditional access to block or limit access to SharePoint and OneDrive content from unmanaged devices. For instructions, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). The option you specify for this label setting is the equivalent of [blocking or limiting access to a specific SharePoint site or OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
+- **Unmanaged devices**: For this option, you must also configure the SharePoint feature that uses Azure AD conditional access to block or limit access to SharePoint and OneDrive content from unmanaged devices. When you configure this dependent feature, your organization-wide policy must be set to "Allow full access from desktop apps, mobile apps, and the web. For instructions, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). The option you specify for this label setting is the equivalent of [blocking or limiting access to a specific SharePoint site or OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
     
-    If you don't configure the dependent SharePoint feature, the option you specify here will have no effect. Additionally, the setting you specify here will be applied only if it's more restrictive than a previous setting for the site, or the configured setting at the tenant level.
-    
-    For example, if you have configured the setting of **Allow limited, web-only access for your tenant**, the label setting that allows full access will have no effect because it is less restrictive. You could however, select the label setting to block access because this setting is more restrictive. 
+    If you don't configure the dependent SharePoint feature with the allow full access setting at the tenant level, the option you specify here will have no effect when the label is applied. Because you can configure the SharePoint feature independently from the label configuration, there's no check in the sensitivity label wizard that the dependencies are in place.
 
 ![The site and group settings tab](../media/edit-sensitivity-label-site-group2.png)
 
