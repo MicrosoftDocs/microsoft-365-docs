@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to manage templates for creating assessments in Microsoft Compliance Manager."
+description: "Understand how to use and manage templates for building assessments in Microsoft Compliance Manager. Create and modify templates using a formatted Excel file."
 ---
 
 # Working with assessment templates in Compliance Manager
@@ -49,7 +49,7 @@ To disable assessment creation, the Global Administrator can set the **Assessmen
 
 The Global Administrator can enable or disable assessment creation at any time.
 
-## Creating and modifying templates
+## Creating and modifying templates overview
 
 To modify an existing template or to create your own new template, you’ll use a specially formatted Excel spreadsheet ([download an example](https://go.microsoft.com/fwlink/?linkid=2124865)) to assemble the necessary control data. After completing the spreadsheet, you import it into Compliance Manager during the process of creating or modifying a template.
 
