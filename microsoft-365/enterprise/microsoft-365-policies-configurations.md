@@ -151,7 +151,7 @@ The above table reflects the trend for many organizations to support a mix of or
 
 We recommend organization-owned devices be managed by Intune or domain-joined to apply additional protections and control. Depending on data sensitivity, your organization may choose to not allow BYODs for specific user populations or specific apps.
 
-## Steps in the process of configuring idenitity and device access
+## Steps in the process of configuring identity and device access
 
 ![Steps to configure identity and device access.](../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
