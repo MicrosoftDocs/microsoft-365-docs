@@ -27,7 +27,7 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 
 - Privacy (public or private) of Microsoft 365 group-connected teams sites
 - External users access
-- Access from unmanaged devices
+- Access from unmanaged devices when this feature is [configured for your tenant](/sharepoint/control-access-from-unmanaged-devices))
 
 When you apply this sensitivity label to a supported container, the label automatically applies the classification and protection settings to the connected site or group.
 
@@ -78,7 +78,11 @@ On this new **Site and group settings** page, configure the settings:
 
 - **External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **Unmanaged devices**: For [unmanaged devices](/sharepoint/control-access-from-unmanaged-devices), allow full access, web only access, or block access completely. If you have configured this setting at the tenant level or for a specific site, the setting you specify here will be applied only if it's more restrictive.
+- **Unmanaged devices**: For this option, you must first configure the SharePoint feature that uses Azure AD conditional access to block or limit access to SharePoint and OneDrive content from unmanaged devices. For instructions, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). The option you specify for this label setting is the equivalent of [blocking or limiting access to a specific SharePoint site or OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
+    
+    If you don't configure the dependent SharePoint feature, the option you specify here will have no effect. Additionally, the setting you specify here will be applied only if it's more restrictive than a previous setting for the site, or the configured setting at the tenant level.
+    
+    For example, if you have configured the setting of **Allow limited, web-only access for your tenant**, the label setting that allows full access will have no effect because it is less restrictive. You could however, select the label setting to block access because this setting is more restrictive. 
 
 ![The site and group settings tab](../media/edit-sensitivity-label-site-group2.png)
 
