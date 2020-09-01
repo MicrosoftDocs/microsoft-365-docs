@@ -13,10 +13,10 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Review all of the templates that are ready to use for setting up assessments in Microsoft Compliance Score (preview)."
+description: "Review the list of templates provided by Microsoft Compliance Manager for setting up assessments."
 ---
 
-# Compliance Score (preview) templates
+# Compliance Manager templates list
 
 ## Templates overview
 

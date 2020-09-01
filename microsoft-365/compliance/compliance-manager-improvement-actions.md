@@ -1,5 +1,5 @@
 ---
-title: "Work with improvement actions in Microsoft Compliance Score (preview)"
+title: "Assign and complete improvement actions in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,10 +13,10 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to manage your compliance activities in Microsoft Compliance Score by working with improvement actions."
+description: "Learn how perform implementation and testing on controls in Microsoft Compliance Manager. Assign work, store documentation, and export reports."
 ---
 
-# Work with improvement actions in Compliance Score (preview)
+# Assign and complete improvement actions in Compliance Manager
 
 **In this article:** This article explains how to **manage your compliance workflow** with improvement actions. Learn how to **assign improvement actions** for implementation and testing, assign them to assessors for completion, and export **reports**.
 
@@ -118,6 +118,22 @@ The assessor validates the work and examines the documentation, and selects the 
 **If test status is set to “Passed”**: the action is complete and the points achieved shows the maximum points achieved. The points are then counted toward your overall compliance score.
 
 **If test status is  set to “Failed”**: the action does not meet the requirements, and the assessor can assign it back to the appropriate user for additional work.
+
+## Accepting updates to improvement actions
+
+text
+
+### What causes an update
+
+text
+
+### Where you’ll see assessment update notifications
+
+text
+
+### Review update to accept or defer
+
+text
 
 ## Export a report
 
