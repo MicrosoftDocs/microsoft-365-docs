@@ -77,7 +77,7 @@ The following table lists the third-party data types that you can search, and th
 |BlackBerry PIN  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
 |BlackBerry SMS  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
 |Bloomberg  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
-|Bloomberg Mail  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
+|Bloomberg Message  <br/> | `ipm.externaldata.conversation.Bloomberg Message*` <br/> |
 |Bloomberg Messaging  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Box  <br/> | `ipm.externaldata.Box*` <br/> |
 |Cisco IM &amp; Presence Server  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
@@ -97,7 +97,7 @@ The following table lists the third-party data types that you can search, and th
 |HubConnex  <br/> | `ipm.externaldata.HubConnex*` <br/> |
 |IBM Connections  <br/> | `ipm.externaldata.Connections*` <br/> |
 |IBM SameTime  <br/> | `ipm.externaldata.Sametime*` <br/> |
-|ICE Chat  <br/> | `ipm.externaldata.ICEChat.Chat` <br/> |
+|ICE Chat  <br/> | `ipm.externaldata.conversation.Ice Chat*` <br/> |
 |Indii Messenger  <br/> | `ipm.externaldata.Indii*` <br/> |
 |Instagram  <br/> | `ipm.externaldata.Instagram*` <br/> |
 |Instant Bloomberg  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |
