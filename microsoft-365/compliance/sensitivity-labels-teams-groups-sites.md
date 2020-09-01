@@ -81,7 +81,7 @@ On this new **Site and group settings** page, configure the settings:
 
 - **External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **Unmanaged devices**: For this option, you must first configure the SharePoint feature that uses Azure AD conditional access to block or limit access to SharePoint and OneDrive content from unmanaged devices. For instructions, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). The option you specify for this label setting is the equivalent of [blocking or limiting access to a specific SharePoint site or OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
+- **Unmanaged devices**: For this option, you must also configure the SharePoint feature that uses Azure AD conditional access to block or limit access to SharePoint and OneDrive content from unmanaged devices. For instructions, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). The option you specify for this label setting is the equivalent of [blocking or limiting access to a specific SharePoint site or OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
     
     If you don't configure the dependent SharePoint feature, the option you specify here will have no effect. Additionally, the setting you specify here will be applied only if it's more restrictive than a previous setting for the site, or the configured setting at the tenant level.
     
