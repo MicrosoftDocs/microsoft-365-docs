@@ -46,7 +46,7 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **ATP Safe Attachments** page, use <https://sip.protection.office.com/safeattachmentv2>.
+- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **ATP Safe Attachments** page, use <https://protection.office.com/safeattachmentv2>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -156,9 +156,9 @@ To enable or disable a policy or set the policy priority order, see the followin
 
 2. Notice the value in the **Status** column:
 
-   - Move the toggle to the left ![Disable policy toggle](../../media/scc-toggle-off.png) to disable the policy.
+   - Move the toggle to the left ![Turn policy off](../../media/scc-toggle-off.png) to disable the policy.
 
-   - Move the toggle to the right ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to enable the policy.
+   - Move the toggle to the right ![Turn policy on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to enable the policy.
 
 ### Set the priority of Safe Attachments policies
 
