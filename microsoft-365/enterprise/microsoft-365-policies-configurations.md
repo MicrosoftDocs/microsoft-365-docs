@@ -132,7 +132,7 @@ This guidance shows you how to implement a set of policies to protect access to 
 
 ### Windows 10 and Microsoft 365 Apps for enterprise
 
-Windows 10 and Microsoft 365 Apps for enterprise is the recommended client environment for PCs. We recommend Windows 10, because Azure is designed to provide the smoothest experience possible for both on-premises and Azure AD. Windows 10 also includes advanced security capabilities that can be managed through Intune. Microsoft 365 Apps for enterprise includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for Conditional Access. These apps also include enhanced security and compliance tools.
+Windows 10 with Microsoft 365 Apps for enterprise is the recommended client environment for PCs. We recommend Windows 10 because Azure is designed to provide the smoothest experience possible for both on-premises and Azure AD. Windows 10 also includes advanced security capabilities that can be managed through Intune. Microsoft 365 Apps for enterprise includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for Conditional Access. These apps also include enhanced security and compliance tools.
 
 ## Applying these capabilities across the three tiers of protection
 
@@ -150,6 +150,15 @@ The following table summarizes our recommendations for using these capabilities 
 The above table reflects the trend for many organizations to support a mix of organization-owned devices, as well as personal or BYODs to enable mobile productivity across the workforce. Intune app protection policies ensure that email is protected from exfiltrating out of the Outlook mobile app and other Office mobile apps, on both organization-owned devices and BYODs.  
 
 We recommend organization-owned devices be managed by Intune or domain-joined to apply additional protections and control. Depending on data sensitivity, your organization may choose to not allow BYODs for specific user populations or specific apps.
+
+## Steps in the process of configuring identity and device access
+
+![Steps to configure identity and device access.](../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
+
+1. Configure prerequisite identity features and their settings.
+2. Configure the most common identity and access Conditional Access policies.
+3. Configure Conditional Access policies for guest and external users.
+4. Configure Conditional Access policies for Microsoft 365 cloud apps such as Microsoft Teams, Exchange Online, and SharePoint.
 
 ## Next step
 
