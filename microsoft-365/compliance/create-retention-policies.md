@@ -204,10 +204,8 @@ A retention policy can apply to all content in the locations that it includes, o
   
 ### Identify content that contains specific keywords
 
-You can apply a retention policy only to content that meets specific conditions, and then take retention actions on just that content. The conditions available support applying a retention policy to content that contains specific words or phrases. You can refine your query by using search operators like AND, OR, and NOT. For more information on these operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
-  
-Support for adding searchable properties (for example, **subject:**) is coming soon.
-  
+You can apply a retention policy only to content that meets specific conditions, and then take retention actions on just that content. The conditions available support applying a retention policy to content that contains specific words or phrases. You can refine your query by using search operators like AND, OR, and NOT. For more information about these operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+
 Query-based retention uses the search index to identify content.
   
 ![Query editor](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
