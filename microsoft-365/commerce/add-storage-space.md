@@ -77,7 +77,7 @@ You must be a Global or SharePoint admin to do the tasks in this article. For mo
 
 ::: moniker-end
 
-![Storage bar on the Active sites page](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
+   ![Storage bar on the Active sites page](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
    > [!NOTE]
    > The storage used doesn't include changes made within the last 24-48 hours.
