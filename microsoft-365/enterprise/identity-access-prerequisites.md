@@ -20,7 +20,7 @@ ms.collection:
 
 # Prerequisite work for implementing identity and device access policies
 
-This article describes prerequisites that need to be implemented before you can deploy the recommended identity and device access policies. This article also discusses the recommended default platform client configurations to provide the best single sign-on (SSO) experience to your users, as well as the technical prerequisites for  Conditional Access.
+This article describes prerequisites that need to be implemented before you can deploy the recommended identity and device access policies. This article also discusses the recommended default platform client configurations to provide the best single sign-on (SSO) experience to your users, as well as the technical prerequisites for Conditional Access.
 
 ## Prerequisites
 
