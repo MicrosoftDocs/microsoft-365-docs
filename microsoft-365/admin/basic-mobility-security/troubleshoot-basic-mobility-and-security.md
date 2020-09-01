@@ -34,7 +34,7 @@ To start, check the following:
 
 ## iOS phone or tablet
 
-- Make sure that you've set up an APNs certificate. For more info, see [Create an APNs Certificate for iOS devices](https://support.microsoft.com/office/create-an-apns-certificate-for-ios-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
+- Make sure that you've set up an APNs certificate. For more info, see [Create an APNs Certificate for iOS devices](create-an-apns-certificate-for-ios-devices.md).
     
 - In **Settings** > **General** > **Profile (or Device Management)**, make sure that a Management Profile is not already installed. If it is, remove it.
     
@@ -48,13 +48,13 @@ To start, check the following:
 
 ## Windows RT
 
-- Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
+- Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up-basic-mobility-and-security.md).
     
 - Make sure that the user is choosing **Turn On** rather than choosing **Join**.    
 
 ## Windows 10 PC
 
-- Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
+- Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up-basic-mobility-and-security.md).
     
 - Unless you have Azure Active Directory Premium, make sure that the user is choosing **Enroll in Device Management only** rather than choosing **Connect**.
 

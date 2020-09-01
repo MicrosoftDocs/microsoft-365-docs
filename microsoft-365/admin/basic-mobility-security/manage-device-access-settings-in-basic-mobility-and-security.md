@@ -41,4 +41,4 @@ Use these steps:
 
 5. Select **Save**. 
 
-To learn what devices Basic Mobility and Security supports, see [Capabilities of Basic Mobility and Security](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0).
+To learn what devices Basic Mobility and Security supports, see [Capabilities of Basic Mobility and Security](capabilities-of-basic-mobility-and-secruity.md).

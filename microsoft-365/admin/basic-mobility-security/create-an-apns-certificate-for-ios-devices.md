@@ -22,7 +22,7 @@ To manage iOS devices such as iPads and iPhones in Basic Mobility and Security, 
 
 1. Sign in to Microsoft 365 with your global admin account.
     
-2. In your browser type: [https://protection.office.com](https://protection.office.com/).
+2. In your browser, type [https://protection.office.com](https://protection.office.com/).
     
 3. Select  **Data loss prevention** > **Device management**, and choose **APNs Certificate for iOS devices**.    
 

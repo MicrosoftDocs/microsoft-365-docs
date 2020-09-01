@@ -51,7 +51,7 @@ After June 2020, Android versions later than 9 can't manage password settings ex
 >[!NOTE]
 >Devices already enrolled with earlier OS versions continue to function although the capabilities might change without notice.
 
-If people in your organization use mobile devices that aren't supported by Basic Mobility and Security, you might want to block Exchange ActiveSync app access to Microsoft 365 email for those devices, to help make your organization's data more secure. For steps to block Exchange ActiveSync, see [Manage device access settings in Basic Mobility and Security](https://support.microsoft.com/office/170d44dd-0c61-472f-b9bb-3242eb8bd5c3).
+If people in your organization use mobile devices that aren't supported by Basic Mobility and Security, you might want to block Exchange ActiveSync app access to Microsoft 365 email for those devices, to help make your organization's data more secure. For steps to block Exchange ActiveSync, see [Manage device access settings in Basic Mobility and Security](manage-device-access-settings-in-basic-mobility-and-security.md).
 
 ## Access control for Microsoft 365 email and documents
 
@@ -189,17 +189,17 @@ The following settings are supported for Windows 10 devices that are enrolled as
 
 ### Security settings
 
--   Require an alphanumeric password
+- Require an alphanumeric password
 
--   Minimum password length
+- Minimum password length
     
--   Number of sign-in failures before device is wiped
+- Number of sign-in failures before device is wiped
     
--   Minutes of inactivity before device is locked
+- Minutes of inactivity before device is locked
     
--   Password expiration (days)
+- Password expiration (days)
     
--   Remember password history and prevent reuse   
+- Remember password history and prevent reuse   
 
 >[!NOTE]
 >The following settings regulating passwords only control local Windows accounts. Windows accounts provided through join a domain or Azure Active Directory aren't affected by these settings.
@@ -233,10 +233,10 @@ You can set these additional policy settings by using PowerShell cmdlets:
 
 If a device is lost or stolen, you can remove sensitive organizational data and help prevent access to your Microsoft 365 organization resources by doing a wipe from Security & Compliance center > **Data loss prevention** > **Device management**. You can do a selective wipe to remove only organizational data or a full wipe to delete all information from a device and restore it to its factory settings.
 
-For more information, see [Wipe a mobile device in Basic Mobility and Security](https://go.microsoft.com/fwlink/p/?LinkId=518157).
+For more information, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
 
-## See Also
+## Related topics
 
-[Overview of Basic Mobility and Security for Microsoft 365](https://support.microsoft.com/office/faa7d8e5-645d-4d59-839c-c8d4c1869e4a)
+[Overview of Basic Mobility and Security for Microsoft 365](overview-of-basic-mobility-and-security-for-microsoft-365.md)
 
-[Create device security policies in Basic Mobility and Security](https://support.microsoft.com/office/create-device-security-policies-in-basic-mobility-and-security-d310f556-8bfb-497b-9bd7-fe3c36ea2fd6)
+[Create device security policies in Basic Mobility and Security](create-device-security-policies-in-basic-mmobility-and-security.md)
