@@ -302,8 +302,8 @@ Here's an overview of the process to search for and delete items in a user's Rec
    New-ComplianceSearchAction -SearchName "RecoverableItems" -Purge -PurgeType HardDelete
    ```
 
-> [!NOTE]
-> A maximum of 10 items (per mailbox) are deleted when you run the previous command. That means you may have to run the `New-ComplianceSearchAction -Purge`command multiple times to delete the items that you want to delete in the Recoverable Items folder.
+   > [!NOTE]
+   > A maximum of 10 items (per mailbox) are deleted when you run the previous command. That means you may have to run the `New-ComplianceSearchAction -Purge` command multiple times to delete the items that you want to delete in the Recoverable Items folder.
 
 ### Verify that items were deleted
 
