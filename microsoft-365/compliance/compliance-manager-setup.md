@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Score (preview) setup"
+title: "Get started with Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,12 +13,14 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how set up and start using Microsoft Compliance Score, which helps simplify and automate risk assessments."
+description: "Set up Microsoft Compliance Manager, which helps organizations simplify and automate risk assessments. Configure user permissions and roles, automated testing."
 ---
 
-# Compliance Score (preview) setup
+# Get started with Compliance Manager
 
 **In this article:** Understand how to **access** Compliance Score, set **roles and permissions**, and configure **automatic Secure Score updates**. This article also explains the main Compliance Score pages: **your dashboard**, the improvement actions page, the solutions page, and the assessments page.
+
+## Who can access Compliance Manager
 
 ## Before you begin
 
@@ -56,7 +58,13 @@ The table below shows how each [Azure AD role](https://docs.microsoft.com/azure/
 > [!NOTE]
 > When you go from Compliance Score to Compliance Manager to complete a task during public preview, your browser will open a new tab and a dialog box appears. In the top section with the header, "Already a Microsoft cloud services customer? Sign in to your account," select **Sign In** to access Compliance Manager. You won't need to re-enter your credentials.
 
-## Configure automatic Secure Score updates
+## Settings for automated testing and user history
+
+insert new text....
+
+### Set up automated testing
+
+### Manage user history
 
 By default, all new tenants have [Secure Score](../security/mtp/microsoft-secure-score-new.md) automatic updates turned on. All actions that are monitored by Secure Score will automatically update the status for the same action in Compliance Score.
 
@@ -90,7 +98,7 @@ If you choose **set per action,** take these additional steps to turn on Secure 
 
 [Read about managing Secure Score updates](compliance-manager-release-notes.md#secure-score).
 
-## Understand the Compliance Score dashboard
+## Understand the Compliance Manger dashboard
 
 The Compliance Score dashboard is designed to provide you an at-a-glance view of your current compliance posture.
 
@@ -113,7 +121,7 @@ This section lists the top improvement actions you can take right now to make th
 
 This section shows solutions containing actions with the greatest opportunity to positively impact your score, and the number of outstanding improvement actions in each solution.
 
-### Compliance Score breakdown
+### Compliance score breakdown
 
 This section gives you a more detailed view of your score in two different ways:
 
@@ -190,7 +198,7 @@ To filter your view of solutions:
 
 You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.
 
-### Taking actions from the solution page
+### Taking action from the solution page
 
 The solutions page displays your organization’s solutions that are connected to improvement actions. The table lists each solution’s contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score.
 
@@ -232,6 +240,10 @@ You can also modify your view to see assessments by group, product, or regulatio
 ### Default assessment
 
 By default, you'll see the [Microsoft 365 data protection baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline) assessment on the assessments page. Compliance Score also provides several ready to use [templates](compliance-score-templates.md) from which to build assessments.
+
+## Assessment templates page
+
+text
 
 ## Next step
 Customize Compliance Score by [setting up assessments](compliance-score-assessments.md).
