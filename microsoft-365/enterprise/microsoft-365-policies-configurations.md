@@ -156,7 +156,7 @@ We recommend organization-owned devices be managed by Intune or domain-joined to
 ![Steps to configure identity and device access.](../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. Configure prerequisite identity features and their settings.
-2. Configure the most common identity and access Conditional Access policies.
+2. Configure the common identity and access Conditional Access policies.
 3. Configure Conditional Access policies for guest and external users.
 4. Configure Conditional Access policies for Microsoft 365 cloud apps such as Microsoft Teams, Exchange Online, and SharePoint.
 
