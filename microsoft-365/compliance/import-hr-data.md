@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: 
@@ -196,15 +196,15 @@ Based on your organization's HR systems and how you will export HR data to CSV f
 
 ## Step 2: Create an app in Azure Active Directory
 
-The next step is to create and register a new app in Azure Active Directory (AAD). The app will correspond to the HR connector that you create in Step 3. Creating this app will allow AAD to authenticate the HR connector when it runs and attempts to access your organization. This app will also be used to authenticate the script that you run in Step 4 to upload your HR data to the Microsoft cloud. During the creation of this AAD app, be sure to save the following information. These values will be used in Step 3 and Step 4.
+The next step is to create and register a new app in Azure Active Directory (Azure AD). The app will correspond to the HR connector that you create in Step 3. Creating this app will allow Azure AD to authenticate the HR connector when it runs and attempts to access your organization. This app will also be used to authenticate the script that you run in Step 4 to upload your HR data to the Microsoft cloud. During the creation of this Azure AD app, be sure to save the following information. These values will be used in Step 3 and Step 4.
 
-- AAD application ID (also called the *app Id* or *client Id*)
+- Azure AD application ID (also called the *app Id* or *client Id*)
 
-- AAD application secret (also called the *client secret*)
+- Azure AD application secret (also called the *client secret*)
 
 - Tenant Id (also called the *directory Id*)
 
-For step-by-step instructions for creating an app in AAD, see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+For step-by-step instructions for creating an app in Azure AD, see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## Step 3: Create the HR connector
 
@@ -220,7 +220,7 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
 4. On the **Setup the connection** page, do the following and then click **Next**:
 
-   a. Type or paste the AAD application ID for the Azure app that you created in Step 2.
+   a. Type or paste the Azure AD application ID for the Azure app that you created in Step 2.
 
    b. Type a name for the HR connector.
 
@@ -289,8 +289,8 @@ The last step in setting up an HR connector is to run a sample script that will 
    |**Parameter**|**Description**
    |:-----|:-----|:-----|
    |`tenantId`|This is the Id for your Microsoft 365 organization that you obtained in Step 2. You can also obtain the tenant Id for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
-   |`appId` |This is the AAD application Id for the app that you created in Azure AD in Step 2. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. | 
-   |`appSecret`|This is the AAD application secret for the app that you created in Azure AD in Step 2. This also used for authentication.|
+   |`appId` |This is the Azure AD application Id for the app that you created in Azure AD in Step 2. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. | 
+   |`appSecret`|This is the Azure AD application secret for the app that you created in Azure AD in Step 2. This also used for authentication.|
    |`jobId`|This is the job ID for the HR connector that you created in Step 3. This is used to associate the HR data that is uploaded to the Microsoft cloud with the HR connector.|
    |`csvFilePath`|This is the file path for the CSV file (stored on the same system as the script) that you created in Step 1. Try to avoid spaces in the file path; otherwise use single quotation marks.|
    |||
@@ -302,6 +302,9 @@ The last step in setting up an HR connector is to run a sample script that will 
     ```
 
    If the upload is successful, the script displays the **Upload Successful** message.
+
+   > [!NOTE]
+   > If you have problems running the previous command because of execution policies, see [About Execution Policies](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) and [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) for guidance about setting execution policies.
 
 ## Step 5: Monitor the HR connector
 

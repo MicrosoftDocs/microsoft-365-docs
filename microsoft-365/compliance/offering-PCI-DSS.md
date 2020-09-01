@@ -93,6 +93,6 @@ Currently, only files and documents uploaded to OneDrive for Business and ShareP
 
 - [PCI Security Standards Council](https://www.pcisecuritystandards.org/)
 - [PCI Data Security Standard](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf)
-- [Azure PCI DSS 3.2.1 Responsibility Matrix](https://aka.ms/pciresponsibilitymatrix)
+- [Azure PCI DSS 3.2.1 Blueprint](https://docs.microsoft.com/azure/governance/blueprints/samples/pci-dss-3.2.1/)
 - [PCI DSS Quick Reference Guide](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
