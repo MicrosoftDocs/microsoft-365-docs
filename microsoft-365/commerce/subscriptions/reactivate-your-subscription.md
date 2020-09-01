@@ -66,12 +66,12 @@ You must be a Global or Billing admin to reactivate a subscription. For more inf
 
 3. Enter your payment details. You can update your existing payment information here.
 
-      - If your subscription was expired, then after you submit your payment details, your subscription returns to an active state, and the **Next billing** date extends by either one month or one year, depending on your current subscription commitment. If you pay by credit card or bank account, your credit card or bank account will be charged for the extension. If you pay by invoice, you'll see the extension reflected on your next invoice. To make sure that your subscription doesn't expire again, [turn on Recurring billing](renew-your-subscription.md#turn-recurring-billing-off-or-on).
+   If your subscription was expired, then after you submit your payment details, your subscription returns to an active state, and the **Next billing** date extends by either one month or one year, depending on your current subscription commitment. If you pay by credit card or bank account, your credit card or bank account will be charged for the extension. If you pay by invoice, you'll see the extension reflected on your next invoice. To make sure that your subscription doesn't expire again, [turn on Recurring billing](renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
-    > [!NOTE]
-    > The ability to pay by bank account isn't available in some countries or regions.
+   > [!NOTE]
+   > The ability to pay by bank account isn't available in some countries or regions.
   
-      - If your subscription was cancelled, or was disabled because a payment wasn't received, it returns to an active state, and your **Next billing** date stays the same.
+   If your subscription was cancelled, or was disabled because a payment wasn't received, it returns to an active state, and your **Next billing** date stays the same.
 
 ::: moniker-end
 
@@ -87,12 +87,12 @@ You must be a Global or Billing admin to reactivate a subscription. For more inf
 
 3. Enter your payment details. You can update your existing payment information here.
 
-    - If your subscription was expired, then after you submit your payment details, your subscription returns to an active state, and the **Next billing** date extends by either one month or one year, depending on your current subscription commitment. If you pay by credit card or bank account, your credit card or bank account will be charged for the extension. If you pay by invoice, you'll see the extension reflected on your next invoice. To make sure that your subscription doesn't expire again, [turn Recurring billing on](renew-your-subscription.md#turn-recurring-billing-off-or-on).
+   If your subscription was expired, then after you submit your payment details, your subscription returns to an active state, and the **Next billing** date extends by either one month or one year, depending on your current subscription commitment. If you pay by credit card or bank account, your credit card or bank account will be charged for the extension. If you pay by invoice, you'll see the extension reflected on your next invoice. To make sure that your subscription doesn't expire again, [turn Recurring billing on](renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
-    > [!NOTE]
-    > The ability to pay by bank account isn't available in some countries or regions.
+   > [!NOTE]
+   > The ability to pay by bank account isn't available in some countries or regions.
   
-    - If your subscription was cancelled, or was disabled because a payment wasn't received, it returns to an active state, and your **Next billing** date stays the same.
+   If your subscription was cancelled, or was disabled because a payment wasn't received, it returns to an active state, and your **Next billing** date stays the same.
 
 ::: moniker-end
 
