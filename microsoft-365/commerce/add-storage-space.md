@@ -49,7 +49,13 @@ You must be a Global or SharePoint admin to do the tasks in this article. For mo
 ::: moniker range="o365-worldwide"
 
 1. In the SharePoint admin center, go to the <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank">Active sites</a> page, and sign in with an account that has [admin permissions](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) for your organization.
+
 2. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. If your organization has configured Multi-Geo in Office 365, the bar also shows the amount of storage used across all geo locations.
+
+   ![Storage bar on the Active sites page](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
+
+   > [!NOTE]
+   > The storage used doesn't include changes made within the last 24-48 hours.
 
 ::: moniker-end
 
@@ -63,6 +69,11 @@ You must be a Global or SharePoint admin to do the tasks in this article. For mo
 
 4. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription.
 
+   ![Storage bar on the Active sites page](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
+
+   > [!NOTE]
+   > The storage used doesn't include changes made within the last 24-48 hours.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
@@ -75,12 +86,12 @@ You must be a Global or SharePoint admin to do the tasks in this article. For mo
 
 4. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription.  
 
-::: moniker-end
-
    ![Storage bar on the Active sites page](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
    > [!NOTE]
    > The storage used doesn't include changes made within the last 24-48 hours.
+
+::: moniker-end
 
 After you've determined how much storage you're using, you can add or remove storage space for your subscription. To find out how much it will cost to add storage space, follow the steps in this article, and review the pricing information before you purchase.
   
