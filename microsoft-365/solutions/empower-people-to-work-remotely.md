@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/23/2020
+ms.date: 09/02/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -32,13 +32,33 @@ Microsoft 365 has the capabilities to empower your workers to work remotely.
 
 ![Empower your remote workers with Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-| Key capability | Description |
-|:-------|:-----|
-| Connected | From anywhere in the world and at any time, remote workers are able to access: <ul><li>Cloud-based services and data in your Microsoft 365 subscription. </li><li>Organization resources, such those offered by on-premises application datacenters.</li></ul> |
-| Secure | Sign-ins are secured with multi-factor authentication (MFA) and built-in security features of Microsoft 365 and Windows 10 protect against malware, malicious attacks, and data loss. |
-| Managed | Your remote worker's devices can be managed from the cloud with security settings, allowed apps, and to require compliance with system health. |
-| Collaborative and productive | Your remote workers can be as productive as on-premises in a highly collaborative way with: <ul><li>Online meetings and chat sessions with Teams. </li><li>Shared workspaces for cloud-based file storage with global accessibility and real-time collaboration with SharePoint and OneDrive. </li><li>Shared tasks and workflows to divide up the work and get things done. </li></ul> |
-|||
+Watch this video for an overview of the deployment process.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
+
+This soution provides these key capabilities.
+
+- Connected
+
+  From anywhere in the world and at any time, remote workers are able to access: 
+
+  - Cloud-based services and data in your Microsoft 365 subscription. 
+  - Organization resources, such those offered by on-premises application datacenters.
+
+- Secure
+
+  Sign-ins are secured with multi-factor authentication (MFA) and built-in security features of Microsoft 365 and Windows 10 protect against malware, malicious attacks, and data loss.
+
+- Managed
+
+  Your remote worker's devices can be managed from the cloud with security settings, allowed apps, and to require compliance with system health.
+
+- Collaborative and productive
+
+  Your remote workers can be as productive as on-premises in a highly collaborative way with:
+  - Online meetings and chat sessions with Teams. 
+  - Shared workspaces for cloud-based file storage with global accessibility and real-time collaboration with SharePoint and OneDrive.
+  - Shared tasks and workflows to divide up the work and get things done. 
 
 For a seamless sign-in experience, your on-premises Active Directory Domain Services (AD DS) user accounts should be synchronized with Azure Active Directory (Azure AD). To protect your Windows 10 devices, they should be enrolled in Intune. Here is a high-level view of the infrastructure.
 
