@@ -32,9 +32,9 @@ The latest versions of the following clients and platforms support single sign-o
 
 | Clients | Windows 10 <br> Desktop | Windows 10 <br> Modern Apps | Web browsers | Android | iOS | macOS |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Access | Y |  | Y |  | Y |  |
-| Company portal |  | Y |  | Y |  | Y |
-| Delve | Y |  | Y |  | Y |  |
+| Access | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |  |
+| Company portal |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |
+| Delve | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png)|  | ![Supported](../media/check-mark.png) |  |
 | Edge |  | Y |  | Y |  | Y |
 | Excel | Y |  | Y |  | Y |  |
 | Kaizala |  | Y | Y<sup>1</sup> | Y |  | Y |
