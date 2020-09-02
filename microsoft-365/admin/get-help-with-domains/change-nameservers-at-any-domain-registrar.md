@@ -117,8 +117,9 @@ To change your domain's nameservers at your domain registrar's website yourself,
 |:-----|:-----|
 |First nameserver  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |Second nameserver  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Third nameserver  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Fourth nameserver  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Third nameserver  <br/> |ns3.bdm.microsoftonline.com <br/> |
+|Fourth nameserver  <br/> |ns4.bdm.microsoftonline.com  <br/> |
+
    
    > [!TIP]
    > It's best to add all four records, but if your registrar only supports two, add **ns1.bdm.microsoftonline.com** and **ns2.bdm.microsoftonline.com**. 
