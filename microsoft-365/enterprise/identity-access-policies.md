@@ -1,6 +1,6 @@
 ---
 title: Common identity and device access policies - Microsoft 365 for enterprise | Microsoft Docs
-description: Describes the policies for Microsoft recommendations about how to apply identity and device access policies and configurations.
+description: Describes the recommended common identity and device access policies and configurations.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -28,8 +28,8 @@ This guidance discusses how to deploy the recommended policies in a newly-provis
 
 The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices. It also indicates where these policies are configured.
 
-[![Common policies for configuring identity and device access](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[![Common policies for configuring identity and device access](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 The rest of this article describes how to configure these policies. 
 
@@ -59,13 +59,13 @@ A recommended practice is to create an Azure AD group for conditional access exc
 
 The following diagram provides an example of user assignment and exclusions.
 
-![Example user assignment and exclusions for MFA rules](../media/identity-access-policies-assignment.png)
+![Example user assignment and exclusions for MFA rules](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 In the illustration the "Top secret project X team" is assigned a conditional access policy that requires MFA *always*. Be judicious when applying higher levels of protection to users. Members of this project team will be required to provide two forms of authentication every time they log on, even if they are not viewing highly-regulated content.  
 
-All Azure AD groups created as part of these recommendations must be created as Microsoft 365 groups. This is specifically important for the deployment of Azure Information Protection (AIP) when securing documents in SharePoint Online.
+All Azure AD groups created as part of these recommendations must be created as Microsoft 365 groups. This is specifically important for the deployment of sensitivity labels when securing documents in SharePoint Online.
 
-![Screen capture for creating Microsoft 365 groups](../media/identity-device-AAD-groups.png)
+![Screen capture for creating Microsoft 365 groups](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 
 ## Require MFA based on sign-in risk
