@@ -73,8 +73,41 @@ You should also see additional details within the product. For example, the tota
 
 ![View In-product Info](../../media/ProductInfo.png)
 
+## Extended capabilities in Threat Explorer
 
-## New features in real-time detections
+### Top targeted users
+
+Today we expose the list of the top targeted users in the Malware View for Emails (within the Top Malware Families section). We will be extending this view within Phish and All Email views as well, where you will be able to see the top five targeted users along with the number of attempts for each user for the corresponding view (for example, for Phish view you will be able to see the number of Phish attempts).
+You will also be able to export the list of targeted users up to a limit of 3000 along with the number of attempts for offline analysis for each email view. In addition to that, selecting No. of attempts (for example, 13 attempts below) would open a filtered view in Threat Explorer, so that you can look at more details across emails and threats for that user. 
+
+![Top Targeted Users](../../media/Top_Targeted_Users.png)
+
+
+### Exchange transport rules
+As part of data enrichment, you should also be able to see all the different transport rules which were applied to a message. This information will be present within the Email grid view (to view this, select Column options in the grid and add Exchange Transport Rule from the Column options in the grid) as well as Details flyout in the email.
+You would be able to see both the GUID as well as the name of the transport rules which were applied to the message. Additionally, you would be able to search for the messages using the name of the transport rule. This would be a ‘Contains’ search which means you will be able to search using partial searches as well. 
+
+#### Important Note: 
+ETR search and name availability would depend on the specific role that has been assigned to you. You will need to have one of the following roles/permissions in order to view the ETR names and search.  If you do not have any of the following roles assigned to you, you will not be able to see the names of the transport rules, and search for the messages using the ETR names. However, you will be able to see the ETR label and GUID information within the Email Details. Your other experiences around viewing records in Email Grids, Email flyouts, Filters, and Export are not impacted. 
+ 
+- EXO Only - Data Loss Prevention: All
+- EXO Only - O365SupportViewConfig: All
+- AAD or EXO - Security Admin: All
+- AAD or EXO - Security Reader: All
+- EXO Only - Transport Rules: All
+- EXO Only - View-Only Configuration: All
+
+Within the email grid, Details flyout, and Exported CSV, the ETRs are presented with a Name/GUID as shown below. 
+
+![Exchange Transport Rules](../../media/ETR_Details.png)
+
+### Inbound connectors 
+
+Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization, with the ability to apply any security restriction or controls. Within Threat Explorer, you will now have the ability to view the connectors which are related to an email as well as search for emails using the connector names. 
+The search for connectors is ‘Contains’ in nature which means partial keyword searches should work as well. 
+Within the Main grid view, the Details flyout, and the Exported CSV, the connectors are shown in the Name/GUID format as shown below: 
+
+![Connector Details](../../media/Connector_Details.png)
 
 ## New features in Threat Explorer and real-time detections
 
@@ -289,4 +322,3 @@ To learn more about roles and permissions, see the following resources:
 - More filtering capabilities and available actions are included in **Threat Explorer**.
 
 For more details, see [Office 365 ATP Service Description: Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
-
