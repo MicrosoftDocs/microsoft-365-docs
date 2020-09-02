@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - 'ms.o365.cc.UnindexedItemsLearnMore'
 ms.service: O365-seccomp
