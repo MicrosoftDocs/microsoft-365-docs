@@ -36,7 +36,7 @@ Watch this video for an overview of the deployment process.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-This soution provides these key capabilities.
+This solution provides these key capabilities.
 
 - Connected
 
