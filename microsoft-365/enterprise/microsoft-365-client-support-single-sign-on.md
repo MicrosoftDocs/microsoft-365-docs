@@ -18,7 +18,7 @@ description: In this article, learn which platforms, clients, and Powershell mod
 ms.custom: seo-marvel-apr2020
 ---
 
-# Microsoft 365 Client App Support — Single Sign-On
+# Microsoft 365 Client App Support: Single Sign-On
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
