@@ -2,8 +2,8 @@
 title: "Use retention labels to manage the lifecycle of documents stored in SharePoint"
 f1.keywords:
 - NOCSH
-ms.author: fredlap
-author: fredericlapierre
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
