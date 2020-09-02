@@ -85,7 +85,7 @@ Windows Virtual Desktop is a comprehensive desktop and app virtualization servic
 
 The [Windows Virtual Desktop setup guide](https://aka.ms/wvdsetupguide) provides administrators with planning resources and the prerequisites for deployment, setup guidance, and additional resources. 
 
-## Guides for security
+## Guides for authentication and access
 
 ### Azure AD setup guide
 
@@ -98,6 +98,18 @@ It also includes essential information on enabling self-service password resets,
 Upgrade to an alternative sign-in approach that allows users to access their devices securely with one of the following passwordless authentication methods: Windows Hello for Business, Microsoft Authenticator app, or security keys. 
 
 Use the [Plan your passwordless deployment wizard](https://aka.ms/passwordlesssetup) to discover the best passwordless authentication methods to use and receive guidance on how to deploy them. 
+
+### Plan your self-service password reset deployment
+
+Give users the ability to change or reset their password independently, if their account is locked or they forget their password without the need to contact a helpdesk engineer. 
+
+Use the [Plan your self-service password reset deployment wizard](https://aka.ms/SSPRSetupGuide) to receive relevant articles and instructions for configuring the appropriate Azure portal options to help you deploy SSPR in your environment.
+
+### Active Directory Federation Services (AD FS) deployment advisor
+
+The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with step-by-step guidance on deploying an on-premises AD FS infrastructure that authenticates users for Microsoft 365 and Office 365 services. With this guide your org can review AD FS components and requirements, acquire and install SSL certificates that are necessary for deployment, and install a required web application proxy server. 
+
+## Guides for security and compliance
 
 ### Microsoft Defender Advanced Threat Protection (ATP) advisor
 
@@ -116,31 +128,39 @@ Use the [Exchange Online Protection setup guide](https://aka.ms/EOPguidance) to 
 
 The [Office 365 Advanced Threat Protection advisor](https://aka.ms/oatpsetup) safeguards your organization against malicious threats that your environment might encounter through email messages, links, and third-party collaboration tools. This guide provides you with the resources and information to help you prepare and identify the advanced threat protection plan to fit your organization's needs. 
 
-### Active Directory Federation Services (AD FS) deployment advisor
+### Microsoft information protection setup guide
 
-The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with step-by-step guidance on deploying an on-premises AD FS infrastructure that authenticates users for Microsoft 365 and Office 365 services. With this guide your org can review AD FS components and requirements, acquire and install SSL certificates that are necessary for deployment, and install a required web application proxy server. 
+Get an overview of the capabilities you can apply to your Information Protection strategy, so you can be confident your sensitive information is protected. Use a four-stage lifecycle approach in which you discover, classify, protect, and monitor sensitive information—the [Microsoft information protection setup guide](https://aka.ms/mipsetupguide) provides guidance for completing each of the stages.
+
+### Microsoft information governance setup guide
+
+The [Microsoft Information governance setup guide](https://aka.ms/migsetupguide) provides you with the information you'll need to set up and manage your organization's governance strategy, to ensure that your data is classified and managed according to the specific lifecycle guidelines you set. With this guide, you'll learn how to create, auto-apply or publish labels, label policies, and retention policies, that are applied to your org's reusable content and compliance records. You'll also get information on importing CSV files with a file plan, for bulk scenarios or for applying them manually to individual documents. 
 
 ## Guides for collaboration
 
-### Microsoft 365 Apps for enterprise deployment advisor
+### Microsoft 365 Apps deployment advisor
 
 The [Microsoft 365 Apps deployment advisor](https://aka.ms/OPPquickstartguide) helps you get your users' devices running the latest version of Office products like Word, Excel, PowerPoint, and OneNote. You'll get guidance on the various deployment methods that include easy self-install options to enterprise deployments with management tools. The instructions will help you assess your environment, figure out your specific deployment requirements, and implement the necessary support tools to ensure a successful install. 
 
-### Mobile apps setup assistant
+### Office mobile apps setup assistant
 
-The [Mobile apps setup assistant](https://aka.ms/officeappguidance) provides instructions for the download and installation of Office apps on your Windows, iOS, and Android mobile devices. This guide provides you with step-by-step information to download and install Microsoft 365 and Office 365 apps on your phone and tablet devices.
+The [Office mobile apps setup assistant](https://aka.ms/officeappguidance) provides instructions for the download and installation of Office apps on your Windows, iOS, and Android mobile devices. This guide provides you with step-by-step information to download and install Microsoft 365 and Office 365 apps on your phone and tablet devices.
 
 ### Microsoft Teams setup guide
 
 The [Microsoft Teams setup guide](https://aka.ms/teamsguidance) provides your organization with guidance to set up team workspaces that host real-time conversations through messaging, calls, and audio or video meetings for both team and private communication. You'll receive the instructions for determining your organization's network requirements by using the Network Planner tool and the Teams advisor within the Teams admin center. Once your deployment is complete, the guide includes helpful resources to get started using Teams.
 
-### SharePoint deployment advisor
+### SharePoint setup guide
 
-The [SharePoint deployment advisor](https://aka.ms/spoguidance) helps you set up your SharePoint document storage and content management, create sites, configure external sharing, migrate data and configure advanced settings, all to drive user engagement and communication within your organization. You'll follow steps for configuring your content-sharing permission policies, choose your migration sync tools, as well as enable the security settings for your SharePoint environment. 
+The [SharePoint setup guide](https://aka.ms/spoguidance) helps you set up your SharePoint document storage and content management, create sites, configure external sharing, migrate data and configure advanced settings, all to drive user engagement and communication within your organization. You'll follow steps for configuring your content-sharing permission policies, choose your migration sync tools, as well as enable the security settings for your SharePoint environment. 
 
-### OneDrive quick start guide
+### OneDrive setup guide
 
 Use the [OneDrive setup guide](https://aka.ms/ODfBquickstartguide) to get started with OneDrive file storage, sharing, collaboration, and syncing capabilities. OneDrive provides a central location where users can sync their Microsoft 365 Apps files, configure external sharing, migrate user data, and configure advanced security and device access settings. The OneDrive setup guide can be deployed using a OneDrive subscription or a standalone OneDrive plan. 
+
+### Yammer deployment advisor
+
+Connect and engage across your organization with Yammer. The [Yammer deployment advisor](https://aka.ms/yammerdeploymentguide) prepares your Yammer network by adding domains, defining admins, and combining Yammer networks. You'll get guidance to deploy Yammer and then customize the look, configure security and compliance, and refine the settings.
 
 ## Advanced wizards
 
@@ -151,6 +171,12 @@ Use the [In-place upgrade with Configuration Manager guide](https://aka.ms/win10
 ### Deploy Office to your users
 
 Deploy Office apps from the cloud with the ability to customize your installation by using the Office Deployment Tool. The [Deploy Office to your users guide ](https://aka.ms/proplusodt) helps you create a customized Office configuration with advanced settings, or you can use a pre-built recommended configuration. Whether your users are conducting a self-install or you're deploying to your users individually or in bulk, this advanced wizard provides you with step-by-step instructions to give users an Office installation tailored to your organization.
+
+### Deploy Office to remote users
+
+Now that working remotely is the norm, users need to receive your org's Office settings when they're not connected to your internal network or when using their own devices. 
+
+Use the [Deploy Office to remote users guide](https://aka.ms/officeremoteinstall) to create a customized Office installation and then send users a generated PowerShell script that will seamlessly install Office with your configuration.
 
 ### Deploy and update Microsoft 365 Apps with Configuration Manager
 
