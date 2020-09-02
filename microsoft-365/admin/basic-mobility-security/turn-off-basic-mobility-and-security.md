@@ -24,7 +24,7 @@ To effectively turn off Basic Mobility and Security, you remove groups of people
     
 - Disable Basic Mobility and Security for everyone by removing all Basic Mobility and Security device policies.
     
-These options remove Basic Mobility and Security enforcement for devices in your organization. Unfortunately, you can't simply "unprovision" Basic Mobility and Security after you've set it up.
+These options remove Basic Mobility and Security enforcement for devices in your organization. Unfortunately, you can't simply "unprovision" Basic Mobility and Security after you've set it up. 
 
 >[!IMPORTANT]
 >Be aware of the impact on users' devices when you remove user security groups from policies or remove the policies themselves. For example, email profiles and cached emails might be removed, depending on the device. For more info, see  [What happens when you delete a policy or remove a user from the policy?](https://support.microsoft.com/office/create-device-security-policies-in-basic-mobility-and-security-d310f556-8bfb-497b-9bd7-fe3c36ea2fd6#bkmk_changeimpact)
