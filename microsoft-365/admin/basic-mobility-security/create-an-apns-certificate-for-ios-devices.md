@@ -45,8 +45,8 @@ To manage iOS devices such as iPads and iPhones in Basic Mobility and Security, 
     
         Download the APNs certificate created by the Apple Push Certificate Portal to your computer.
     
-    >[!TIP] 
-    >If you're having trouble downloading the certificate, refresh your browser.
+          >[!TIP] 
+          >If you're having trouble downloading the certificate, refresh your browser.
 
 7. Go back to Microsoft 365, and select **Next**  to get to the  **Upload APNS certificate** page.
     
