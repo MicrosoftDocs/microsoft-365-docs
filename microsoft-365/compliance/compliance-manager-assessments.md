@@ -103,7 +103,7 @@ There are two starting points for creating an assessment from a Compliance Manag
 
 You can begin the process from your assessments page by selecting the **Add assessment** button and then working through the assessment creation wizard. The steps for this process are below.
 
-You can also start from your assessment templates page by finding the template you want, selecting its details page, and selecting **Create assessment**. You’ll then enter the wizard with your template already selected.
+You can also start from your assessment templates page by finding the template you want and selecting it from the list to arrive at its details page. On the template details page, select **Create assessment**. You’ll then enter the wizard with your template already selected.
 
 ### To create an assessment
 

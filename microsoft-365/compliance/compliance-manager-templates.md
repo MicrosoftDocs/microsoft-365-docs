@@ -37,18 +37,6 @@ The assessment templates page in Compliance Manager displays a list of templates
 
 Select a template from its row to bring up its details page, which contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
 
-## Disabling the creation of assessments from templates
-
-By default, all templates are enabled to permit the creation of an assessment. The Global Administrator has the ability to prevent, or disable, the creation of an assessment from a template.
-
-To disable assessment creation, the Global Administrator can set the **Assessment creation** toggle switch on an a template’s details page to **disabled**. Another way to disable assessment creation is from the assessment templates page, by following the steps below:
-
-1. Find the desired template in the **assessment templates** page.
-2. At the three dots, select **Disable assessment creation** from the drop-down menu.
-3. Assessment creation is now set to disabled, and the **Assessment creation** toggle switch on the template’s details page is set to **disabled**.
-
-The Global Administrator can enable or disable assessment creation at any time.
-
 ## Creating and modifying templates overview
 
 To modify an existing template or to create your own new template, you’ll use a specially formatted Excel spreadsheet ([download an example](https://go.microsoft.com/fwlink/?linkid=2124865)) to assemble the necessary control data. After completing the spreadsheet, you import it into Compliance Manager during the process of creating or modifying a template.
@@ -79,10 +67,10 @@ To create your own new template (used for building custom assessments), follow t
 
 The Excel spreadsheet used to create templates contains four tabs, three of which are required:
 
-1. Template (required)
-2. ControlFamily (required)
-3. Actions (required)
-4. Dimensions (optional)
+1. [Template](#template-tab) (required)
+2. [ControlFamily](#controlfamily-tab) (required)
+3. [Actions](#actions-tab) (required)
+4. [Dimensions](#dimensions-tab) (optional)
 
 When filling out your spreadsheet with template data, the spreadsheet  **must include the tabs in the order listed above**, otherwise your data won't successfully import to a template.
 
@@ -177,7 +165,7 @@ Your template will now include the changes you made. Any assessments that use th
 Jump to a section below to quickly find the instructions you need:
 
 - [Edit the main template attributes](#edit-the-main-template-attributes)
-- [Add an improvement action, including adding actions in bulk](#add-an-improvement-action)
+- [Add an improvement action](#add-an-improvement-action)
 - [Edit an improvement action’s information](#edit-an-improvement-actions-information)
 - [Change an improvement action’s name](#change-an-improvement-actions-name)
 - [Remove an improvement action](#remove-an-improvement-action)
