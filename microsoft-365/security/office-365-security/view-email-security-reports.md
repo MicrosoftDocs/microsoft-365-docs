@@ -262,7 +262,7 @@ To go back to the report view, click **View report**.
 
 ## Threat protection status report
 
-The **Threat protection status** report is available in both EOP and Office 365 ATP; however, the reports contain different data. For example, EOP customers can view information about malware detected in email, but not information about [malicious files detected in SharePoint Online, OneDrive, or Microsoft Teams](atp-for-spo-odb-and-teams.md).
+The **Threat protection status** report is available in both EOP and Office 365 ATP; however, the reports contain different data. For example, EOP customers can view information about malware detected in email, but not information about [malicious files detected by ATP for SharePoint, OneDrive, or Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 The report provides an aggregated count of unique email messages with malicious content, such as files or website addresses (URLs) that were blocked by the anti-malware engine, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), and ATP features like [ATP Safe Links](atp-safe-links.md), [ATP Safe Attachments](atp-safe-attachments.md), and [ATP anti-phishing](set-up-anti-phishing-policies.md). You can use this information to identify trends or determine whether organization policies need adjustment.
 

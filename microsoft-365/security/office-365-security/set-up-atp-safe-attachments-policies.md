@@ -235,7 +235,7 @@ New-SafeAttachmentPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [
 This example creates a safe attachment policy named All Contoso with the following values:
 
 - Block messages that are found to contain malware by Safe Documents scanning (we aren't using the _Action_ parameter, and the default value is `Block`).
-- Redirection is enabled, and malware messages are sent to sec-ops@contoso.com for analysis and investigation.
+- Redirection is enabled, and messages that are found to contain malware are sent to sec-ops@contoso.com for analysis and investigation.
 - If Safe Attachments scanning isn't available or encounters errors, don't deliver the message (we aren't using the _ActionOnError_ parameter, and the default value is `$true`).
 
 ```PowerShell

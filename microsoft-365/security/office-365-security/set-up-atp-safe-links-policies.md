@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 description: "Set up Safe Links policies to protect your organization from malicious links in Word, Excel, PowerPoint, and Visio files, as well as in email messages."
 ---
@@ -22,7 +22,7 @@ description: "Set up Safe Links policies to protect your organization from malic
 # Set up Office 365 ATP Safe Links policies
 
 > [!IMPORTANT]
-> This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are a home user looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are a home user looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [ATP Safe Links](atp-safe-links.md), a feature of [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), can help protect your organization from malicious links used in phishing and other attacks. If you have the necessary [permissions for the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md), you can set up ATP Safe Links policies to help ensure that when people click web addresses (URLs), your organization is protected. Your ATP Safe Links policies can be configured to scan URLs in email and URLs in Office documents.
 
@@ -77,13 +77,13 @@ When you have [Office 365 Advanced Threat Protection](office-365-atp.md), you wi
 5. In the **Settings that apply to content except email** section, select (or clear) the options you want to use. (We recommend that you select all the options.)
 
 6. Choose **Save**.
-    
+
 ## Step 3: Add (or edit) ATP Safe Links policies that apply to all or specific email recipients
 
 After you have reviewed (or edited) the default ATP Safe Links policy that applies to everyone, your next step is to define additional policies that would apply to all or specific email recipients. For example, you can specify exceptions to your default policy by defining an additional policy or create more granular restrictions for all employees.
-  
-1. Go to <https://protection.office.com> and sign in with your work or school account. 
-    
+
+1. Go to <https://protection.office.com> and sign in with your work or school account.
+
 2. In the left navigation, under **Threat management**, choose **Policy**.
 
 3. Choose **Safe Links**.

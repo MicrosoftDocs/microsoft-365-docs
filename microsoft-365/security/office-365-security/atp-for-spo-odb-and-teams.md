@@ -27,13 +27,17 @@ description: "Learn about Office 365 Advanced Threat Protection for files in Sha
 
 People regularly share files and collaborate using SharePoint, OneDrive, and Microsoft Teams. If your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), you can use ATP for SharePoint, OneDrive, and Microsoft Teams to help your users collaborate in a safer manner. ATP for SharePoint, OneDrive, and Microsoft Teams helps detect and block files that are identified as malicious in team sites and document libraries.
 
+ATP for SharePoint, OneDrive, and Microsoft Teams is not enabled by default. To turn it on, see [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+
+ATP for SharePoint, OneDrive, and Microsoft Teams is not dependent on [Safe Attachments policies](set-up-atp-safe-attachments-policies.md). You enable or disable ATP for SharePoint, OneDrive, and Microsoft Teams globally for your organization.
+
 ## How ATP for SharePoint, OneDrive, and Microsoft Teams operates
 
-When ATP for SharePoint, OneDrive, and Microsoft Teams identifies a file as malicious, ATP directly integrates with the file stores to lock that file. The following image shows an example of a malicious file detected in a library.
+When ATP for SharePoint, OneDrive, and Microsoft Teams is enabled and identifies a file as malicious, ATP directly integrates with the file stores to lock that file. The following image shows an example of a malicious file detected in a library.
 
 ![Files in OneDrive for Business with one detected as malicious](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
-Although the blocked file is still listed in the document library and in web, mobile, or desktop applications, people can't open, copy, move, or share the file. But they can delete a blocked file.
+Although the blocked file is still listed in the document library and in web, mobile, or desktop applications, people can't open, copy, move, or share the file. But they can delete the blocked file.
 
 Here's an example of what that looks like on a mobile device:
 
@@ -43,7 +47,7 @@ By default, people can download a blocked file. Here's what downloading a blocke
 
 ![Downloading a blocked file in OneDrive for Business](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
-SharePoint Online admins can prevent people from downloading malicious files. For instructions, see [Use SharePoint Online PowerShell to block the ability to download malicious files](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-block-the-ability-to-download-malicious-files).
+SharePoint Online admins can prevent people from downloading malicious files. For instructions, see [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 
 To learn more about the user experience when a file has been detected as malicious, see [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2).
 
@@ -59,10 +63,8 @@ To learn more about the user experience when a file has been detected as malicio
 
 ## Quarantined files
 
-As of May 2018, when a file is identified as malicious by ATP for SharePoint, OneDrive, and Microsoft Teams, the file is also included in a list of quarantined items. For more information, see [Use the Security & Compliance Center to manage quarantined files](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files).
+As of May 2018, when a file is identified as malicious by ATP for SharePoint, OneDrive, and Microsoft Teams, the file is also available in quarantine. For more information, see [Use the Security & Compliance Center to manage quarantined files](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files).
 
 ## Next steps
 
 - [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
-
-- [View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)

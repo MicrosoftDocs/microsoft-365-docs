@@ -66,7 +66,7 @@ These are the important settings in Safe Attachments policies:
 
   The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [ATP Safe Attachments policy settings](recommended-settings-for-eop-and-office365-atp.md#atp-safe-attachments-policy-settings).
 
-- **Apply the above selection if malware scanning for attachments times out or error occurs**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete. Always select this option if you select **Enabled redirect**. Otherwise, messages might be lost.
+- **Apply the above selection if malware scanning for attachments times out or error occurs**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete. Always select this option if you select **Enable redirect**. Otherwise, messages might be lost.
 
 - **Recipient filters**: You need to specify the recipient conditions and exceptions that determine who the policy applies to. You can use these properties for conditions and exceptions:
 
@@ -85,7 +85,7 @@ These are the important settings in Safe Attachments policies:
 > [!NOTE]
 > Dynamic Delivery works only for Exchange Online mailboxes.
 
-The Dynamic Delivery action in Safe Attachments policies seeks to eliminate any email delivery delays that might be caused by Safe Attachments scanning. The body of the email message is delivered to the recipient with a placeholder for each attachment. The placeholder remains until the attachment is determined to be safe, and then the attachment becomes available to open or download in the message.
+The Dynamic Delivery action in Safe Attachments policies seeks to eliminate any email delivery delays that might be caused by Safe Attachments scanning. The body of the email message is delivered to the recipient with a placeholder for each attachment. The placeholder remains until the attachment is determined to be safe, and then the attachment becomes available to open or download.
 
 If an attachment is determined to be malicious, the message is quarantined. Only admins (not end-users) can review, release, or delete messages that were quarantined by Safe Attachments scanning. For more information, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
 
@@ -93,7 +93,7 @@ Most PDFs and Office documents can be previewed in safe mode while Safe Attachme
 
 If you're using a mobile device, and PDFs aren't rendering in the Dynamic Delivery previewer on your mobile device, try opening the message in Outlook on the web (formerly known as Outlook Web App) using your mobile browser.
 
-Considerations for Dynamic Delivery and forwarded messages:
+Here are some considerations for Dynamic Delivery and forwarded messages:
 
 - If the forwarded recipient is protected by a Safe Attachments policy that uses the Dynamic Delivery option, then the recipient sees the placeholder, with the ability to preview compatible files.
 
@@ -117,7 +117,7 @@ There are scenarios where Safe Attachments is unable to scan messages. These sce
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) encrypted messages.
 
-- You configured a Safe Attachments policy for Dynamic Delivery, but Dynamic Delivery isn't supported for the recipient (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Office 365 ATP](set-up-atp-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the Safe Links policies are configured).
+- You configured the Dynamic Delivery action in a Safe Attachments policy, but the recipient doesn't support Dynamic Delivery (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Office 365 ATP](set-up-atp-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the Safe Links policies are configured).
 
 ## Submitting files for malware analysis
 
