@@ -28,7 +28,7 @@ Data loss prevention (DLP) in the Compliance Center includes many sensitive info
 
 ### Format
 
-9 digits which may be in a formatted or unformatted pattern
+nine digits which may be in a formatted or unformatted pattern
 
 ### Pattern
 
@@ -40,7 +40,7 @@ Formatted:
 - A digit
 
 Unformatted:
-9 consecutive digits beginning with 0, 1, 2, 3, 6, 7, or 8 
+nine consecutive digits beginning with 0, 1, 2, 3, 6, 7, or 8 
 
 ### Checksum
 
@@ -196,6 +196,51 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - full names
 - iaea
 
+<!-- 
+## TITLE
+
+### Format
+
+### Pattern
+
+### Checksum
+
+### Definition
+
+```xml
+
+```
+### Keywords
+
+
+#### Keyword_australia_drivers_license_number
+
+#### Keyword_australia_drivers_license_number_exclusions
+
+
+-->
+
+## Australia company number
+
+### Format
+
+
+
+### Pattern
+
+### Checksum
+
+### Definition
+
+```xml
+
+```
+### Keywords
+
+
+#### Keyword_australia_drivers_license_number
+
+#### Keyword_australia_drivers_license_number_exclusions
    
 ## Australia driver's license number
 
