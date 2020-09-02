@@ -42,17 +42,11 @@ Start [here](https://support.microsoft.com/office/set-up-basic-mobility-and-secu
  
 ## Identity and device access recommendations
 
-Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. For device access, use the recommendations and settings in the following articles along with the steps in this phase:
+Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. For device access, use the recommendations and settings in these articles:
 
 - [Prerequisites](identity-access-prerequisites.md)
 - [Common identity and device access policies](identity-access-policies.md)
 
-## How Microsoft does device management for Microsoft 365
-
-Learn how IT experts at Microsoft [manage devices with EMS](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
-
 ## How Contoso did device management for Microsoft 365
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [deployed their mobile device management infrastructure](contoso-mdm.md) with Microsoft 365 cloud services.
-
-![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
