@@ -20,8 +20,8 @@ ms.custom: seo-marvel-apr2020
 
 # Microsoft Compliance Manager (classic)
 
-> [!NOTE]
-> This documentation describes a previous version of this product. Users are *strongly discouraged from using this version of Compliance Manager*. **If you're using the current preview version of Compliance Manager, refer to the [Compliance Manager (preveiw) documentation](working-with-compliance-manager.md).**
+> [!IMPORTANT]
+> **Compliance Manager now resides in the Microsoft 365 compliance center.** Please refer to our [Compliance Manager documentation](compliance-manager.md) to get set up and start using the new Compliance Manager in the Microsoft 365 compliance center. This documentation describes a previous version of this product.
 
  *Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.*
   
