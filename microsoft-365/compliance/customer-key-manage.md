@@ -79,11 +79,11 @@ To view a list of all the DEPs you've created for Exchange Online and Skype for 
 
 2. To return all DEPs in your organization, run the Get-DataEncryptionPolicy cmdlet without any parameters.
 
-  ```powershell
-  Get-DataEncryptionPolicy
-  ```
+   ```powershell
+   Get-DataEncryptionPolicy
+   ```
 
-  For more information about the Get-DataEncryptionPolicy cmdlet, see [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps).
+   For more information about the Get-DataEncryptionPolicy cmdlet, see [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps).
 
 ### Assign a DEP before you migrate a mailbox to the cloud
 
@@ -95,11 +95,11 @@ To assign a DEP to a mailbox before you migrate it to Office 365, run the Set-Ma
 
 2. Run the Set-MailUser cmdlet.
 
-  ```powershell
-  Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
-  ```
+   ```powershell
+   Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
+   ```
 
-  Where *GeneralMailboxOrMailUserIdParameter* specifies a mailbox, and *DataEncryptionPolicyIdParameter* is the ID of the DEP. For more information about the Set-MailUser cmdlet, see [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps).
+   Where *GeneralMailboxOrMailUserIdParameter* specifies a mailbox, and *DataEncryptionPolicyIdParameter* is the ID of the DEP. For more information about the Set-MailUser cmdlet, see [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps).
 
 ### Determine the DEP assigned to a mailbox
 
@@ -162,6 +162,20 @@ The output from this cmdlet includes:
   - **Registered:** Customer Key encryption has been applied, and all files in all sites have been encrypted.
 
   - **Rolling:** A key roll is in progress. If the key for the geo is rolling, you'll also be shown information on what percentage of sites have completed the key roll operation so that you can monitor progress.
+
+## Unassign a DEP from a mailbox
+
+You unassign a DEP from a mailbox using the Set-mailbox PowerShell cmdlet and setting the `DataEncryptionPolicy` to `$NULL`. Running this cmdlet unassigns the currently assigned DEP and reencrypts the mailbox using the DEP associated with default Microsoft managed keys. You can't unassign the DEP used by Microsoft managed keys. If you don't want to use Microsoft managed keys, you can assign another DEP to the mailbox.
+
+To unassign the DEP from a mailbox using the Set-Mailbox PowerShell cmdlet, complete these steps.
+
+1. Using a work or school account that has global administrator permissions in your organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+
+2. Run the Set-Mailbox cmdlet.
+
+   ```powershell
+   Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $NULL
+   ```
 
 ## Revoke your keys and start the data purge path process
 
