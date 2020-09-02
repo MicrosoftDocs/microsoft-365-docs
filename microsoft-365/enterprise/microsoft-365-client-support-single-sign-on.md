@@ -30,33 +30,39 @@ Learn more about [single sign-on](https://docs.microsoft.com/azure/active-direct
 
 The latest versions of the following clients and platforms support single sign-on. For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](https://products.office.com/office-system-requirements).
 
-| Clients | Windows 10 <br> Desktop | Windows 10 <br> Modern Apps | Web browsers | Android | iOS | macOS |
+| Clients | Android | iOS | Mac| Windows 10 <br> Modern Apps| Windows 10 <br> Desktop | Web browsers |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Access | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |  |
-| Company portal |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |
-| Delve | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png)|  | ![Supported](../media/check-mark.png) |  |
-| Edge |  | Y |  | Y |  | Y |
-| Excel | Y |  | Y |  | Y |  |
-| Kaizala |  | Y | Y<sup>1</sup> | Y |  | Y |
-| Office portal| Y |  | Y |  | Y |  |
-| Office Lens |  | Y |  | Y |  | Y |
-| OneDrive |  | Y |  | Y |  | Y |
-| OneNote | Y |  | Y |  | Y |  |
-| Outlook |  | Y |  | Y |  | Y |
-| Power Automate | Y |  | Y |  | Y |  |
-| Power BI |  | Y |  | Y |  | Y |
-| PowerPoint |  | Y |  | Y |  | Y |
-| Project | Y |  | Y |  | Y |  |
-| Publisher |  | Y |  | Y |  | Y |
-| SharePoint | Y |  | Y |  | Y |  |
-| Sticky Notes |  | Y |  | Y |  | Y |
-| Sway | Y |  | Y |  | Y |  |
-| Teams |  | Y |  | Y |  | Y |
-| To Do |  | Y |  | Y |  | Y |
-| Visio | Y |  | Y |  | Y |  |
-| Whiteboard |  | Y |  | Y |  | Y |
-| Word | Y |  | Y |  | Y |  |
-| Yammer |  | Y |  | Y |  | Y |
+| Access | N/A | N/A | N/A | N/A | ![Supported](../media/check-mark.png) |  |
+| Company portal | N/A | ![Supported](../media/check-mark.png) | Planned | ![Supported](../media/check-mark.png) | N/A |  |
+| Cortana | N/A | N/A | N/A | ![Supported](../media/check-mark.png) | N/A |  |
+| Delve | Planned | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |  |
+| Edge | ![Supported](../media/check-mark.png) | Planned | N/A | N/A | ![Supported](../media/check-mark.png) |  |
+| Excel | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
+| Kaizala | ![Supported](../media/check-mark.png) | Planned | N/A | N/A | N/A |  |
+| Office Lens| ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |  |
+| Office mobile | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |  |
+| Office portal | N/A | N/A | N/A | ![Supported](../media/check-mark.png) | N/A |  |
+| OneDrive | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | Planned | ![Supported](../media/check-mark.png) | Planned |  |
+| OneNote | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | Planned |  |
+| Outlook | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | Planned | ![Supported](../media/check-mark.png) |  |
+| Planner | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |  |
+| Power Apps | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | Planned | N/A |  |
+| Power Automate | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |  |
+| Power BI | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | ![Supported](../media/check-mark.png) | Planned |  |
+| PowerPoint | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
+| Project | N/A | N/A | N/A | N/A | ![Supported](../media/check-mark.png) |  |
+| Publisher | N/A | N/A | N/A | N/A | ![Supported](../media/check-mark.png) |  |
+| Skype for Business | Planned | Planned | N/A | N/A | N/A |  |
+| SharePoint | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |  |
+| Sticky Notes | N/A | N/A | N/A | N/A | ![Supported](../media/check-mark.png) |  |
+| Stream | Planned | Planned | N/A | N/A | N/A |  |
+| Sway | N/A | N/A | N/A | N/A | ![Supported](../media/check-mark.png) |  |
+| Teams | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | Planned | N/A | Planned |  |
+| To Do | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | ![Supported](../media/check-mark.png) | N/A |  |
+| Visio | N/A | ![Supported](../media/check-mark.png) | N/A | N/A | ![Supported](../media/check-mark.png) |  |
+| Whiteboard | N/A | ![Supported](../media/check-mark.png) | N/A | ![Supported](../media/check-mark.png) | N/A |  |
+| Word | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
+| Yammer | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | Planned |  |
 
 ## Supported PowerShell modules
 
