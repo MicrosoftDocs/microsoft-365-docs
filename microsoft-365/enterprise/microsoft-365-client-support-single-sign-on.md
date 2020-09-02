@@ -29,6 +29,8 @@ Learn more about [single sign-on](https://docs.microsoft.com/azure/active-direct
 ## Supported clients & platforms
 
 The latest versions of the following clients and platforms support single sign-on. For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](https://products.office.com/office-system-requirements).
+<br>
+<br>
 
 | Clients | Android | iOS | Mac| Windows 10 <br> Modern Apps| Windows 10 <br> Desktop | Web browsers |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
