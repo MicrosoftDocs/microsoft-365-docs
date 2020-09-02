@@ -44,7 +44,7 @@ Microsoft Intune is a standalone product included with certain Microsoft 365 pla
 |Enterprise Mobility & Security E5 |No|Yes|
 
 >[!NOTE]
->You can't begin using Basic Mobility and Security if you're already using Microsoft Intune.
+>You can't start using Basic Mobility and Security if you're already using Microsoft Intune.
 
 ## Differences in capabilities
 

@@ -29,16 +29,16 @@ Basic Mobility and Security can help you secure and manage mobile devices like i
 You can use Basic Mobility and Security to secure and manage the following devices.
 
 - iOS 11.0 or later versions
-    
+
 - Android 5.0 or later versions<sup>3</sup>
-    
+
 - Windows 8.1<sup>1</sup>
-    
+
 - Windows 8.1 RT<sup>1</sup>
-    
+
 - Windows 10<sup>2</sup>
-    
-- Windows 10 Mobile<sup>2</sup>   
+
+- Windows 10 Mobile<sup>2</sup>
 
 <sup>1</sup>Access control for Windows 8.1 RT devices is limited to Exchange ActiveSync.
 
@@ -66,7 +66,7 @@ The supported apps for the different types of mobile devices in the following ta
 - >Support for iOS 10.0 and later versions includes iPhone and iPad devices.
 - >Management of BlackBerry OS devices isn’t supported by Mobile Device Management for Microsoft 365. Use BlackBerry Business Cloud Services (BBCS) from BlackBerry to manage BlackBerry OS devices. Blackberry devices running Android OS are supported as standard Android devices
 - >Users won’t be prompted to enroll and won’t be blocked or reported for policy violation if they use the mobile browser to access Microsoft 365 SharePoint sites, documents in Office Online, or email in Outlook Web App.
-    
+
 The following diagram shows what happens when a user with a new device signs in to an app that supports access control with Basic Mobility and Security. The user is blocked from accessing Microsoft 365 resources in the app until they enroll their device.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Basic Mobility and Security access control":::
@@ -75,16 +75,16 @@ Note:Policies and access rules created in MDM for Microsoft 365 Business Standar
 
 ## Policy settings for mobile devices
 
-If you create a policy to block access with certain settings turned on, users are blocked from accessing Microsoft 365 resources when using a supported app that is listed in [Access control for Microsoft 365 email and documents](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0?ui=en-us&rs=en-us&ad=us#bkmk_accesscontrol). 
+If you create a policy to block access with certain settings turned on, users are blocked from accessing Microsoft 365 resources when using a supported app that is listed in [Access control for Microsoft 365 email and documents](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0?ui=en-us&rs=en-us&ad=us#bkmk_accesscontrol).
 
 The settings that can block users from accessing Microsoft 365 resources are in these sections:
 
 - Security
-    
+
 - Encryption
-    
+
 - Jail broken
-    
+
 - Managed email profile  
 
 For example, the following diagram shows what happens when a user with an enrolled device isn’t compliant with a security setting in a mobile device management policy that applies to their device. The user signs in to an app that supports access control with Basic Mobility and Security. They are blocked from accessing Microsoft 365 resources in the app until their device complies with the security setting.
@@ -106,7 +106,7 @@ The following sections list the policy settings you can use to help secure and m
 |Password expiration (days) |Yes|Yes|Yes|
 |Remember password history and prevent reuse |Yes|Yes|Yes|
 
-## Encryption settings 
+## Encryption settings
 
 |**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -128,7 +128,7 @@ The following option can block users from accessing their Microsoft 365 email if
 |:-----|:-----|:-----|:-----|
 |Email profile is managed |Yes|No|No|
 
-## Cloud settings 
+## Cloud settings
 
 |**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -139,14 +139,14 @@ The following option can block users from accessing their Microsoft 365 email if
 |Allow Google backup  |N/A|No|Yes|
 |Allow Google account auto sync  |N/A|No|Yes|
 
-## System settings 
+## System settings
 
 |**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Block screen capture |Yes|No|Yes|
 |Block sending diagnostic data from device |Yes|No|Yes|
 
-## Application settings 
+## Application settings
 
 |**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -154,14 +154,14 @@ The following option can block users from accessing their Microsoft 365 email if
 |Block access to application store |Yes|No|Yes|
 |Require password when accessing application store |No|Yes|Yes|
 
-## Device capabilities settings 
+## Device capabilities settings
 
 |**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Block connection with removable storage |Yes|Yes|No|
 |Block Bluetooth connection |Yes|Yes|No|
 
-##  Additional settings 
+##  Additional settings
 
 You can set the following additional policy settings by using PowerShell cmdlets. For more information, see [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
 
@@ -181,7 +181,7 @@ You can set the following additional policy settings by using PowerShell cmdlets
 |SystemSecurityTLS  |Yes|No|
 |WLANEnabled  |No|No|
 
-## Settings supported by Windows 
+## Settings supported by Windows
 
 You can manage Windows 10 devices by enrolling them as mobile devices. After an applicable policy is deployed, users with Windows 10 devices will be required to enroll in Basic Mobility and Security the first time they use the built-in email app to access their Microsoft 365 email (requires Azure AD premium subscription).
 
@@ -192,14 +192,14 @@ The following settings are supported for Windows 10 devices that are enrolled as
 - Require an alphanumeric password
 
 - Minimum password length
-    
+
 - Number of sign-in failures before device is wiped
-    
+
 - Minutes of inactivity before device is locked
-    
+
 - Password expiration (days)
-    
-- Remember password history and prevent reuse   
+
+- Remember password history and prevent reuse
 
 >[!NOTE]
 >The following settings regulating passwords only control local Windows accounts. Windows accounts provided through join a domain or Azure Active Directory aren't affected by these settings.
@@ -213,21 +213,20 @@ Block sending diagnostic data from device.
 You can set these additional policy settings by using PowerShell cmdlets:
 
 - AllowConvenienceLogon
-    
+
 - UserAccountControlStatus
-    
+
 - FirewallStatus
-    
+
 - AutoUpdateStatus
-    
-- AntiVirusStatus   
+
+- AntiVirusStatus
 
 - AntiVirusSignatureStatus
-    
+
 - SmartScreenEnabled
-    
+
 - WorkFoldersSyncUrl
-    
 
 ## Remotely wipe a mobile device
 

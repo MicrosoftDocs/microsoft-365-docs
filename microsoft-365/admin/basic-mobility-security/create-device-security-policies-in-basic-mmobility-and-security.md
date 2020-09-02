@@ -80,7 +80,7 @@ The policy is pushed to the mobile device of each user the policy applies to the
 
 ## Step 4: Block email access for unsupported devices
 
-To help secure your organization information, you should block app access to Microsoft 365 email for mobile devices that aren't supported by Basic Mobility and Security. For a list of supported devices, see [Supported devices](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices). 
+To help secure your organization information, you should block app access to Microsoft 365 email for mobile devices that aren't supported by Basic Mobility and Security. For a list of supported devices, see [Supported devices](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices).
 
 **To block app access:**
 
@@ -140,7 +140,7 @@ When you delete a policy or remove a user from a group to which the policy was d
 
 The policy is removed from the mobile device for each user the policy applies to the next time their device checks in with Basic Mobility and Security. If you deploy a new policy that applies to these user devices, they are prompted to re-enroll in Basic Mobility and Security.
 
-You can also wipe a device either completely, or selectively wipe organizational information from the device. For more info, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md). 
+You can also wipe a device either completely, or selectively wipe organizational information from the device. For more info, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
 
 ## Related topics
 
