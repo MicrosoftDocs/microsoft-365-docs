@@ -38,9 +38,6 @@ Compliance Manager:
 - Provides a secure repository for you to upload and manage evidence and other artifacts related to your compliance activities.
     
 - Produces richly detailed reports in Microsoft Excel that document the compliance activities performed by Microsoft and your organization, which can be provided to auditors, regulators, and other compliance stakeholders.
-
-For a brief demo of Compliance Manager, see this [Compliance Manager](https://www.youtube.com/watch?v=r1vs8NdSXKQ) video.
-
     
 > [!IMPORTANT]
 > Compliance Manager is a dashboard that provides a summary of your data protection and compliance stature and recommendations to improve data protection and compliance. The Customer Actions provided in Compliance Manager are recommendations; it is up to each organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance.
@@ -825,11 +822,3 @@ Compliance Manager is designed to be regularly updated to keep pace with changes
 |B.8.4.7  <br/> |8.5.7  <br/> |
 |B.8.4.8  <br/> |8.5.8  <br/> |
 |
-   
-## See also
-
-- [Compliance Manager Interactive guide](https://content.cloudguides.com/guides/Compliance%20Manager)
-
-- [Announcing Compliance Manager general availability](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
-
-- [Microsoft 365 provides an information protection strategy to help with the GDPR](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
