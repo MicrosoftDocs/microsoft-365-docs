@@ -59,7 +59,7 @@ The first step is to access the **Data Connectors** in the Microsoft 365 complia
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **Zoom Meetings**.
 
-2. On the **Zoom Meetings** product description page, click **Add connector**
+2. On the **Zoom Meetings** product description page, click **Add connector**.
 
 3. On the **Terms of service** page, click **Accept**.
 

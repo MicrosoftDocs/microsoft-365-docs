@@ -47,7 +47,7 @@ The first step is to access to the **Data Connectors** page in the Microsoft 365
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **EML**.
 
-2. On the **EML** product description page, click **Add connector**
+2. On the **EML** product description page, click **Add connector**.
 
 3. On the **Terms of service** page, click **Accept**.
 
