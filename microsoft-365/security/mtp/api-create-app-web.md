@@ -213,7 +213,7 @@ Ensure that you got the correct token:
 
 1. Copy and paste the token you got in the previous step into [JWT](https://jwt.ms) in order to decode it.
 1. Validate that you get a 'roles' claim with the desired permissions
-1. In the following image, you can see a decoded token acquired from an app with permissions to all of Microsoft Threat Protection's roles:
+1. In the following image, you can see a decoded token acquired from an app with ```Incidents.Read.All```, ```Incidents.ReadWrite.All``` and ```AdvancedHunting.Read.All``` permissions:
 
 ![Image of token validation](../../media/webapp-decoded-token.png)
 
@@ -226,7 +226,8 @@ Ensure that you got the correct token:
 3. The expiration time of the token is one hour. You can send more then one request with the same token.
 
 The following is an example of sending a request to get a list of incidents **using C#**: 
-    ```
+
+```
     var httpClient = new HttpClient();
 
     var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/incidents");
@@ -236,7 +237,7 @@ The following is an example of sending a request to get a list of incidents **us
     var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
 
     // Do something useful with the response
-    ```
+```
 
 ## Related topics
 - [Access the Microsoft Threat Protection APIs](api-access.md)
