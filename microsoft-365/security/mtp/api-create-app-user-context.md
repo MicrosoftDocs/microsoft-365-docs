@@ -109,7 +109,7 @@ $redirectUri = "<redirect-uri>"
 
 $response = Get-ADALToken -Resource $resourceUrl -ClientId $clientId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
 $response.AccessToken | clip
-$response
+$response.AccessToken
 ```
 
 ## Related topics
