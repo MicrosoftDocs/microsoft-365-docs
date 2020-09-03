@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -15,7 +15,6 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
 description: Troubleshoot errors for Azure AzCopy when loading non-Office 365 data for error remediation in Advanced eDiscovery.
 ms.custom: 
  - seo-marvel-mar2020
