@@ -3,7 +3,7 @@ title: "Setup guides for Microsoft 365 and Office 365 services"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/03/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -101,13 +101,13 @@ Use the [Plan your passwordless deployment wizard](https://aka.ms/passwordlesss
 
 ### Plan your self-service password reset deployment
 
-Give users the ability to change or reset their password independently, if their account is locked or they forget their password without the need to contact a helpdesk engineer. 
+Give users the ability to change or reset their password independently, if their account is locked, or they forget their password without the need to contact a helpdesk engineer. 
 
 Use the [Plan your self-service password reset deployment wizard](https://aka.ms/SSPRSetupGuide) to receive relevant articles and instructions for configuring the appropriate Azure portal options to help you deploy SSPR in your environment.
 
 ### Active Directory Federation Services (AD FS) deployment advisor
 
-The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with step-by-step guidance on deploying an on-premises AD FS infrastructure that authenticates users for Microsoft 365 and Office 365 services. With this guide your org can review AD FS components and requirements, acquire and install SSL certificates that are necessary for deployment, and install a required web application proxy server. 
+The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with step-by-step guidance on deploying an on-premises AD FS infrastructure that authenticates users for Microsoft 365 and Office 365 services. With this guide, your organization can review AD FS components and requirements, acquire and install SSL certificates that are necessary for deployment, and install a required web application proxy server. 
 
 ## Guides for security and compliance
 
@@ -130,11 +130,11 @@ The [Office 365 Advanced Threat Protection advisor](https://aka.ms/oatpsetup) sa
 
 ### Microsoft information protection setup guide
 
-Get an overview of the capabilities you can apply to your Information Protection strategy, so you can be confident your sensitive information is protected. Use a four-stage lifecycle approach in which you discover, classify, protect, and monitor sensitive information—the [Microsoft information protection setup guide](https://aka.ms/mipsetupguide) provides guidance for completing each of the stages.
+Get an overview of the capabilities you can apply to your Information Protection strategy so you can be confident your sensitive information is protected. Use a four-stage lifecycle approach in which you discover, classify, protect, and monitor sensitive information. The [Microsoft information protection setup guide](https://aka.ms/mipsetupguide) provides guidance for completing each of these stages.
 
 ### Microsoft information governance setup guide
 
-The [Microsoft Information governance setup guide](https://aka.ms/migsetupguide) provides you with the information you'll need to set up and manage your organization's governance strategy, to ensure that your data is classified and managed according to the specific lifecycle guidelines you set. With this guide, you'll learn how to create, auto-apply or publish labels, label policies, and retention policies, that are applied to your org's reusable content and compliance records. You'll also get information on importing CSV files with a file plan, for bulk scenarios or for applying them manually to individual documents. 
+The [Microsoft Information governance setup guide](https://aka.ms/migsetupguide) provides you with the information you'll need to set up and manage your organization's governance strategy, to ensure that your data is classified and managed according to the specific lifecycle guidelines you set. With this guide, you'll learn how to create, auto-apply, or publish labels, label policies, and retention policies that are applied to your organization's reusable content and compliance records. You'll also get information on importing CSV files with a file plan for bulk scenarios or for applying them manually to individual documents. 
 
 ## Guides for collaboration
 
@@ -152,7 +152,7 @@ The [Microsoft Teams setup guide](https://aka.ms/teamsguidance) provides your or
 
 ### SharePoint setup guide
 
-The [SharePoint setup guide](https://aka.ms/spoguidance) helps you set up your SharePoint document storage and content management, create sites, configure external sharing, migrate data and configure advanced settings, all to drive user engagement and communication within your organization. You'll follow steps for configuring your content-sharing permission policies, choose your migration sync tools, as well as enable the security settings for your SharePoint environment. 
+The [SharePoint setup guide](https://aka.ms/spoguidance) helps you set up SharePoint document storage and content management, create sites, configure external sharing, migrate data and configure advanced settings, and drive user engagement and communication within your organization. You'll follow steps for configuring your content-sharing permission policies, choose your migration sync tools, as well as enable the security settings for your SharePoint environment. 
 
 ### OneDrive setup guide
 
@@ -174,7 +174,7 @@ Deploy Office apps from the cloud with the ability to customize your installatio
 
 ### Deploy Office to remote users
 
-Now that working remotely is the norm, users need to receive your org's Office settings when they're not connected to your internal network or when using their own devices. 
+Now that working remotely is the norm, users need to receive your organization's Office settings when they're not connected to your internal network or when using their own devices. 
 
 Use the [Deploy Office to remote users guide](https://aka.ms/officeremoteinstall) to create a customized Office installation and then send users a generated PowerShell script that will seamlessly install Office with your configuration.
 
