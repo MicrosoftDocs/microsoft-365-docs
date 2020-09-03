@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 eDiscovery and search features overview"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
