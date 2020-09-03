@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 internal logging for Microsoft 365 engineering"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
