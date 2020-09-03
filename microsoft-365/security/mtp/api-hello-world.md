@@ -66,12 +66,12 @@ For the Application registration stage, you must have a **Global administrator**
 
      - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
-5. Select **Grant consent**
+5. Select **Grant admin consent**
 
 	- >[!NOTE]
       > Every time you add permission you must select on **Grant consent** for the new permission to take effect.
 
-	![Image of Grant permissions](../../media/grant-consent.png)
+	![Image of Grant permissions](../../media/grant-consent.PNG)
 
 6. Add a secret to the application.
 
