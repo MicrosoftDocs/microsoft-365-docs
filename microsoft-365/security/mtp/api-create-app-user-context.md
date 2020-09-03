@@ -63,6 +63,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
    - **Name:** Your application name
    - **Application type:** Public client
+   - **Redirect URI:** https://portal.azure.com
 
 4. To enable your app to access Microsoft Threat Protection and assign it permissions, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and then select **Microsoft Threat Protection**.
 
