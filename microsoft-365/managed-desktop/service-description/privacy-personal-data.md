@@ -108,7 +108,7 @@ Microsoft Managed Desktop processes personal data with ISO-certified systems. Fo
 
 ## Profiling and marketing
 
-Microsoft Managed Desktop does not use any personal data collected as part of providing the service for profiling or marketing purposes.
+Microsoft Managed Desktop does not use any personal data collected as part of providing the service for profiling, advertising, or marketing purposes.
 
 ## Data Subject Requests for the GDPR and CCPA
 
