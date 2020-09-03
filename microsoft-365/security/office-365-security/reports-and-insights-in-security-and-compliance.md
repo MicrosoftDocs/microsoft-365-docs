@@ -35,8 +35,10 @@ In addition to highlighting problem areas, smart reports and insights include re
 ## Types of reports in the Security & Compliance Center
 
 A wide variety of reports are available in the Security & Compliance Center. (Go to **Reports** \> **Dashboard** to get an all-up view.) The following table lists available reports with links to learn more:
-  
-|**Type of information**|**How to get there**|**Where to go to learn more**|
+
+****
+
+|Type of information|How to get there|Where to go to learn more|
 |---|---|---|
 |**Security & Compliance Center reports** (all up)  <br/> Top insights and recommendations, and links to Security & Compliance reports, including data loss prevention reports, labels, email security reports, Advanced Threat Protection reports, and more|In the Security & Compliance Center, go to **Reports** \> **Dashboard**|[Monitor and view reports in the Microsoft 365 security center](../mtp/monitoring-and-reporting.md)|
 |**Data loss prevention** <br/> Data loss prevention policy matches, false positives and overrides, and links to create or edit policies|In the Security & Compliance Center, go to **Data loss prevention** \> **Policy**|[View the reports for data loss prevention](../../compliance/view-the-dlp-reports.md)|
@@ -48,6 +50,7 @@ A wide variety of reports are available in the Security & Compliance Center. (Go
 |**GDPR compliance** <br/> Information about GDPR compliance, including links to data subjects, label trends, and active & closed cases|In the Security & Compliance Center, go to **Data privacy** \> **GDPR dashboard**|[Office 365 Information Protection for GDPR](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)|
 |**Audit log** <br/> Information about Microsoft 365 activities, users, files or folders, and more|In the Security & Compliance Center, go to **Search & investigation** \> **Audit log search**|[Search the audit log in the Security & Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**Compliance reports** <br/> FedRAMP reports, governance, risk and compliance reports, ISO information security management reports, and Service Organization Controls audit and assessment reports|In the Security & Compliance Center, go to **Service assurance** \> **Compliance reports**|[Plan for security & compliance in Office 365](../../compliance/plan-for-security-and-compliance.md)|
+|
 
 ## Related topics
 

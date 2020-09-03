@@ -1,14 +1,14 @@
 ---
-title: Common identity and device access policies - Microsoft 365 Enterprise | Microsoft Docs
-description: Describes the policies for Microsoft recommendations about how to apply identity and device access policies and configurations.
-author: BrendaCarter
+title: Common identity and device access policies - Microsoft 365 for enterprise | Microsoft Docs
+description: Describes the recommended common identity and device access policies and configurations.
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom: 
 - it-pro
@@ -20,119 +20,128 @@ ms.collection:
 ---
 
 # Common identity and device access policies
-This article describes the common recommended policies for securing access to cloud services, including on-premises applications published with Azure AD Application Proxy. 
+This article describes the common recommended policies for securing access to cloud services, including on-premises applications published with Azure Active Directory (Azure AD) Application Proxy. 
 
 This guidance discusses how to deploy the recommended policies in a newly-provisioned environment. Setting up these policies in a separate lab environment allows you to understand and evaluate the recommended policies before staging the rollout to your preproduction and production environments. Your newly provisioned environment may be cloud-only or hybrid.  
 
 ## Policy set 
 
-The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices. It also indicates where these policies are configured.
+The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices. It also indicates where you configure these policies.
 
-[![Common policies for configuring identity and device access](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[![Common policies for configuring identity and device access](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 The rest of this article describes how to configure these policies. 
 
-Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. You must also enroll devices into Intune before enforcing device compliance policies.
+>[!Note]
+>Requiring the use of multi-factor authentication (MFA) is recommended before enrolling devices in Intune to assure that the device is in the possession of the intended user. You must enroll devices in Intune before you can enforce device compliance policies.
+>
 
-To give you time to accomplish these tasks, we recommend implementing the baseline policies in the order listed in this table. However, the MFA policies for sensitive and highly regulated protection can be implemented at any time.
-
+To give you time to accomplish these tasks, we recommend implementing the baseline policies in the order listed in this table. However, the MFA policies for sensitive and highly regulated levels of protection can be implemented at any time.
 
 |Protection level|Policies|More information|
 |:---------------|:-------|:----------------|
 |**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)| |
-|        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass conditional access rules, so it's important to block these|
-|        |[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account|
-|        |[Apply APP data protection policies](#apply-app-data-protection-policies)|One policy per platform (iOS, Android, Windows). Intune App Protection Policies (APP) are predefined sets of protection, from Level 1 to Level 3.|
-|        |[Require approved apps and APP protection](#require-approved-apps-and-app-protection)|Enforces mobile app protection for phones and tablets|
-|        |[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform|
-|        |[Require compliant PCs](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Enforces Intune management of PCs|
-|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-based-on-sign-in-risk)| |
-|         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for PCs and phone/tablets|
+|        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass Conditional Access policies, so it's important to block these.|
+|        |[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account.|
+|        |[Apply app data protection policies](#apply-app-data-protection-policies)|One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).|
+|        |[Require approved apps and app protection](#require-approved-apps-and-app-protection)|Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.|
+|        |[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform.|
+|        |[Require compliant PCs](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Enforces Intune management of PCs using Windows or MacOS.|
+|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk)| |
+|         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for both PCs (Windows or MacOS) and phones or tablets (iOS, iPadOS, or Android).|
 |**Highly regulated**|[*Always* require MFA](#require-mfa-based-on-sign-in-risk)|
 | | |
 
-## Assigning policies to users
+## Assigning policies to groups and users
+
 Before configuring policies, identify the Azure AD groups you are using for each tier of protection. Typically, baseline protection applies to everybody in the organization. A user who is included for both baseline and sensitive protection will have all the baseline policies applied plus the sensitive policies. Protection is cumulative and the most restrictive policy is enforced. 
 
-A recommended practice is to create an Azure AD group for conditional access exclusion. Add this group to all of your conditional access rules under "Exclude". This gives you a method to provide access to a user while you troubleshoot access issues. This is recommended as a temporary solution only. Monitor this group for changes and be sure the exclusion group is being used only as intended. 
+A recommended practice is to create an Azure AD group for Conditional Access exclusion. Add this group to all of your Conditional Access rules under "Exclude". This gives you a method to provide access to a user while you troubleshoot access issues. This is recommended as a temporary solution only. Monitor this group for changes and be sure the exclusion group is being used only as intended. 
 
-The following diagram provides an example of user assignment and exclusions.
+Here's an example of group assignment and exclusions for requiring MFA.
 
-![Example user assignment and exclusions for MFA rules](../media/identity-access-policies-assignment.png)
+![Example group assignment and exclusions for MFA rules](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
-In the illustration the "Top secret project X team" is assigned a conditional access policy that requires MFA *always*. Be judicious when applying higher levels of protection to users. Members of this project team will be required to provide two forms of authentication every time they log on, even if they are not viewing highly-regulated content.  
+Here are the results:
 
-All Azure AD groups created as part of these recommendations must be created as Microsoft 365 groups. This is specifically important for the deployment of Azure Information Protection (AIP) when securing documents in SharePoint Online.
+- All users are required to use MFA when the sign-in risk is medium or high.
 
-![Screen capture for creating Microsoft 365 groups](../media/identity-device-AAD-groups.png)
+- Members of the Executive Staff group are required to use MFA when the sign-in risk is low, medium, or high.
 
+  In this case, members of the Executive Staff group match both the baseline and sensitive Conditional Access policies. The access controls for both policies are combined, which in this case is equivalent to the sensitive Conditional Access policy.
+
+- Members of the Top Secret Project X group are always required to use MFA
+
+  In this case, members of the Top Secret Project X group match both the baseline and highly-regulated Conditional Access policies. The access controls for both policies are combined. Because the access control for the highly-regulated Conditional Access policy is more restrictive, it is used.
+
+Be careful when applying higher levels of protection to groups and users. For example, members of the Top Secret Project X group will be required to use MFA every time they sign in, even if they are not working on the highly-regulated content for Project X.  
+
+All Azure AD groups created as part of these recommendations must be created as Microsoft 365 groups. This is important for the deployment of sensitivity labels when securing documents in Microsoft Teams and SharePoint Online.
+
+![Screen capture for creating Microsoft 365 groups](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 ## Require MFA based on sign-in risk
-Before requiring MFA, first use an Identity Protection MFA registration policy to register users for MFA. After users are registered you can enforce MFA for sign-in. The [prerequisite work](identity-access-prerequisites.md) includes registering all users with MFA.
 
-To create a new conditional access policy: 
+You should have your users register for MFA prior to requiring its use. If you have Microsoft 365 E5, Microsoft 365 E3 with the Identity & Threat Protection add-on, Office 365 with EMS E5, or individual Azure AD Premium P2 licenses, you can use the MFA registration policy with Azure AD Identity Protection to require that users register for MFA. The [prerequisite work](identity-access-prerequisites.md) includes registering all users with MFA.
 
-1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure dashboard.
+After your users are registered, you can require MFA for sign-in.
 
-2. Choose **Azure Active Directory** from the left menu.
+To create a new Conditional Access policy: 
 
-3. Under the **Security** section, choose **Conditional access**.
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials.
 
-4. Choose **New policy**.
+2. In the list of Azure services, choose **Azure Active Directory**.
 
-![Baseline CA policy](../media/secure-email/CA-EXO-policy-1.png)
+3. In the **Manage** list, choose **Security**, and then choose **Conditional Access**.
 
- The following tables describes the conditional access policy settings to implement for this policy.
+4. Choose **New policy** and type the new policy's name.
 
-**Assignments**
+The following tables describes the Conditional Access policy settings to require MFA based on sign-in risk.
 
-|Type|Properties|Values|Notes|
+In the **Assignments** section:
+
+|Setting|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
-|Users and groups|Include|Select users and groups – Select specific security group containing targeted users|Start with security group including pilot users|
-||Exclude|Exception security group; service accounts (app identities)|Membership modified on an as-needed temporary basis|
-|Cloud apps|Include|Select the apps you want this rule to apply to. For example, select Exchange Online||
-|Conditions|Configured|Yes|Configure specific to your environment and needs|
-|Sign-in risk|Risk level||See the guidance in the following table|
+|Users and groups|Include| **Select users and groups > Users and groups**:  Select specific groups containing targeted user accounts. |Start with the group that includes pilot user accounts.|
+||Exclude| **Users and groups**: Select your Conditional Access exception group; service accounts (app identities).|Membership should be modified on an as-needed, temporary basis.|
+|Cloud apps or actions|Include| **Select apps**: Select the apps you want this rule to apply to. For example, select Exchange Online.||
+|Conditions| | |Configure conditions that are specific to your environment and needs.|
+||Sign-in risk||See the guidance in the following table.|
+|||||
 
-**Sign-in risk**
+**Sign-in risk condition settings**
 
-Apply the settings based on the protection level you are targeting.
+Apply the risk level settings based on the protection level you are targeting.
 
-|Property|Level of protection|Values|Notes|
+|Level of protection|Risk level values needed|Action|
+|:---------|:-----|:----|
+|Baseline|High, medium|Check both.|
+|Sensitive|High, medium, low|Check all three.|
+|Highly regulated| |Leave all options unchecked to always enforce MFA.|
+||||
+
+In the **Access controls** section:
+
+|Setting|Properties|Values|Action|
 |:---|:---------|:-----|:----|
-|Risk level|Baseline|High, medium|Check both|
-| |Sensitive|High, medium, low|Check all three|
-| |Highly regulated| |Leave all options unchecked to always enforce MFA|
+|Grant|**Grant access**| | Select |
+|||**Require Multi-factor authentication**| Check |
+||**Require all the selected controls** ||Select|
+|||||
 
-**Access controls**
+Choose **Select** to save the **Grant** settings.
 
-|Type|Properties|Values|Notes|
-|:---|:---------|:-----|:----|
-|Grant|Grant access|True|Selected|
-||Require MFA|True|Check|
-||Require device to be marked as compliant|False||
-||Require hybrid Azure AD-joined device|False||
-||Require approved client app|False||
-||Require all the selected controls|True|Selected|
+Finally, select **On** for **Enable policy**.
 
-> [!NOTE]
-> Be sure to enable this policy, by choosing **On**. Also consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy.
-
+Also consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy.
 
 
 ## Block clients that don't support modern authentication
-1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure dashboard.
 
-2. Choose **Azure Active Directory** from the left menu.
+Use the settings in these tables for a Conditional Access policy to block clients that don't support modern authentication.
 
-3. Under the **Security** section, choose **Conditional access**.
-
-4. Choose **New policy**.
-
-The following tables describes the conditional access policy settings to implement for this policy.
-
-**Assignments**
+In the **Assignments** section:
 
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
@@ -142,7 +151,7 @@ The following tables describes the conditional access policy settings to impleme
 |Conditions|Configured|Yes|Configure Client apps|
 |Client apps|Configured|Yes|Mobile apps and desktop clients, Other clients (select both)|
 
-**Access controls**
+In the **Access controls** section:
 
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
@@ -207,11 +216,11 @@ To create a new app protection policy for each platform (iOS and Android) within
 2. Import the sample [Intune App Protection Policy Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).
 
 ## Require approved apps and APP protection
-To enforce the APP protection policies you applied in Intune, you must create a conditional access rule to require approved client apps and the conditions set in the APP protection policies. 
+To enforce the APP protection policies you applied in Intune, you must create a Conditional Access rule to require approved client apps and the conditions set in the APP protection policies. 
 
 Enforcing APP protection policies requires a set of policies described in in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access). These policies are each included in this recommended set of identity and access configuration policies.
 
-To create the conditional access rule that requires approved apps and APP protection, follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
+To create the Conditional Access rule that requires approved apps and APP protection, follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
    > [!NOTE]
    > This policy ensures mobile users can access all Office endpoints using the applicable apps.
@@ -220,10 +229,10 @@ If you are enabling mobile access to Exchange Online, implement [Block ActiveSyn
 
  These policies leverage the grant controls [Require approved client app](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) and [Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
-Finally, blocking legacy authentication for other client apps on iOS and Android devices ensures that these clients cannot bypass conditional access rules. If you're following the guidance in this article, you've already configured [Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication).
+Finally, blocking legacy authentication for other client apps on iOS and Android devices ensures that these clients cannot bypass Conditional Access rules. If you're following the guidance in this article, you've already configured [Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication).
 
 <!---
-With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several conditional access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
 1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
@@ -246,7 +255,6 @@ Create a policy for each platform:
 - Android Enterprise
 - iOS/iPadOS
 - macOS
-- Windows Phone 8.1
 - Windows 8.1 and later
 - Windows 10 and later
 
@@ -310,7 +318,7 @@ To require compliant PCs:
 
 2. Choose **Azure Active Directory** from the left menu.
 
-3. Under the **Security** section, choose **Conditional access**.
+3. Under the **Security** section, choose **Conditional Access**.
 
 4. Choose **New policy**.
 
@@ -338,7 +346,7 @@ To require compliance for all devices:
 
 2. Choose **Azure Active Directory** from the left menu.
 
-3. Under the **Security** section, choose **Conditional access**.
+3. Under the **Security** section, choose **Conditional Access**.
 
 4. Choose **New policy**.
 
@@ -359,4 +367,7 @@ When creating this policy, do not select platforms. This enforces compliant devi
 
 ## Next steps
 
-[Learn about policy recommendations for securing email](secure-email-recommended-policies.md)
+![Step 3: Policies for guest and external users](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)
+
+
+[Learn about policy recommendations for guest and external users](identity-access-policies-guest-access.md)
