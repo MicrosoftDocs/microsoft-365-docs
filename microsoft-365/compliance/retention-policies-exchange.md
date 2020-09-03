@@ -69,5 +69,5 @@ If you're new to configuring retention in Microsoft 365, see [Get started with r
 
 If you're ready to configure a retention policy or retention label for Exchange, see the following instructions:
 - [Create and configure retention policies](create-retention-policies.md)
-- - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
