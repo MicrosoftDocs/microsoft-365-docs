@@ -23,11 +23,10 @@ ms.custom: air
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) Plan 2 includes powerful automated investigation and response (AIR) capabilities that can save your security operations team time and effort. As alerts are triggered, it's up to your security operations team to review, prioritize, and respond to those alerts. Keeping up with the volume of incoming alerts can be overwhelming. Automating some of this can help. With AIR, your security operations team can focus on higher-priority tasks without losing sight of alerts that are triggered.
 
-This article contains information about:
-
-- The [overall flow](#the-overall-flow-of-air) of AIR
-- [How to get AIR](#how-to-get-air)
-- The [required permissions](#required-permissions-to-use-air-capabilities) to configure or use AIR capabilities
+This article includes:
+- The [overall flow](#the-overall-flow-of-air) of AIR;
+- [How to get AIR](#how-to-get-air); and 
+- The [required permissions](#required-permissions-to-use-air-capabilities) to configure or use AIR capabilities. 
 
 ## The overall flow of AIR
 
