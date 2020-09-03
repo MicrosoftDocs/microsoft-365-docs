@@ -22,7 +22,7 @@ Microsoft Managed Desktop does not use any personal data collected as part of pr
 
 When users enroll corporate devices into Microsoft Managed Desktop, data collection is handled – on the technical layer – by using Windows and Microsoft Intune. These sources collect personal data about users' devices, such as device names for Microsoft Managed Desktop to be able to identify the device to be managed and provided with the Microsoft Managed Desktop experiences.
 
-Microsoft Managed Desktop does not collect data by itself to provide its service. Instead, Microsoft Managed Desktop reuses data that other sources, such as Windows and Microsoft Intune, have already collected. Microsoft Managed Desktop uses data these services collect from enrolled devices:
+Microsoft Managed Desktop does not collect data by itself to provide its service (except for [IT Admin contact information](#it-admin-contact-information). Instead, Microsoft Managed Desktop reuses data that other sources, such as Windows and Microsoft Intune, have already collected. Microsoft Managed Desktop uses data these services collect from enrolled devices:
 
 - Windows diagnostic data from devices managed by Microsoft Managed Desktop is sent to Microsoft's Windows diagnostic data stores.
 - Microsoft Managed Desktop uses [modern management](https://docs.microsoft.com/learn/modules/introduction-to-modern-management-in-microsoft-365/) for managing the enrolled devices. As part of that, the devices must be enrolled in the tenant’s Azure Active Directory.
@@ -119,7 +119,7 @@ Similarly, the California Consumer Privacy Act (CCPA) provides privacy rights an
 The following section discusses how Microsoft Managed Desktop helps controllers to find, access, and act on personal data or personal information used by Microsoft Managed Desktop.
 
 > [!NOTE]
-> If you're looking for general information about the GDPR, see the [GDPR section](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) of the Service Trust portal.
+> If you're looking for general information about the GDPR, see the [GDPR section](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) of the Service Trust Portal.
 
 ### IT Admin contact information
 
