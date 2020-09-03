@@ -40,7 +40,7 @@ After a retention policy is configured for Yammer messages, the paths the conten
 
 When the retention policy is to retain and then delete:
 
-![Diagram of retention flow for Yammer messages](../media/teamsretentionlifecycle.png)
+![Diagram of retention flow for Yammer messages](../media/yammerretentionlifecycle.png)
 
 For the two paths in the diagram:
 
