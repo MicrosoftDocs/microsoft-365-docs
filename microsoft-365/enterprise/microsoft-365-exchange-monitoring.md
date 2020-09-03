@@ -20,18 +20,17 @@ description: "Use Exchange monitoring for information about email incidents or a
 
 # Exchange monitoring for Microsoft 365
 
-As the admin of your organization, you can use Exchange monitoring in the Microsoft 365 admin center to monitor your organization’s service health. This monitoring will provide you with information about incidents and advisories that are collected in the following categories:
+You can use Exchange monitoring in the Microsoft 365 admin center to monitor the health of the Exchange service for your organization’s Microsoft 365 subscription. Exchange monitoring provides you with information about incidents and advisories that are collected in these categories:
 
-- Infrastructure
-  - Issue is detected in the Microsoft 365 infrastructure that Microsoft owns in fixing, providing regular updates and resolving the issue. For example, users cannot access Exchange Online due to issues with Exchange or cloud infrastructure.
-- Third-party infrastructure
-  - Issue is detected in third-party infrastructure that your organization has taken dependency and requires action from your organization for resolution. For example, user authentication transactions are getting throttled by a third-party security token service (STS) provider that prevents users from connecting to Exchange Online.
-- Customer infrastructure
-  - Issue is detected in your organization infrastructure and requires action from your organization for resolution. For example, users cannot access Exchange Online because they are unable to obtain an authentication token from STS provider hosted by your organization due to and expired certificate.
+- **Infrastructure**: Issue is detected in the Microsoft 365 infrastructure that Microsoft owns for providing regular updates and resolving the issue. For example, users cannot access Exchange Online due to issues with Exchange or other Microsoft 365 cloud infrastructure.
+- **Third-party infrastructure**: Issue is detected in third-party infrastructure on which your organization has taken a dependency and requires action from your organization for resolution. For example, user authentication transactions are getting throttled by a third-party security token service (STS) provider that prevents users from connecting to Exchange Online.
+- **Customer infrastructure**: Issue is detected in your organization infrastructure and requires action from your organization for resolution. For example, users cannot access Exchange Online because they are unable to obtain an authentication token from STS provider hosted by your organization due to an expired certificate.
+
+Here is an example of the **Exchange monitoring** page in the Microsoft 365 admin center, available from the **Health** section.
 
 ![The Exchange monitoring page in the Microsoft 365 admin center](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example.png)
 
-With the Service heath page, you can see whether the Exchange service is healthy or not and whether there are any associated incidents or advisories. With Exchange monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by scenario. 
+With the **Service health** page, you can see whether the Exchange service is healthy or not and whether there are any associated incidents or advisories. With Exchange monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by scenario. 
 
 ## Requirements
 
@@ -77,9 +76,9 @@ There are two ways you can provide feedback:
 
 ## Frequently asked questions
 
-### 1.	Why don’t I see “Exchange monitoring” under Health in the Microsoft 365 admin center? 
+#### 1.	Why don’t I see “Exchange monitoring” under Health in the Microsoft 365 admin center? 
 
-First, make sure you’ve switched the toggle on the **Home** page for the in the Microsoft 365 admin center to turn on the new admin center. 
+First, make sure you’ve enabled the new admin center on the **Home** page of the Microsoft 365 admin center. 
 
 Then make sure you meet these requirements: 
 
@@ -92,25 +91,25 @@ Then make sure you meet these requirements:
 
 If the license count for your organization goes below 10,000 users and the monthly active users goes below 50 users, Exchange monitoring won’t be enabled until these requirements are met.
 
-### 2.	The active user count in the dashboard for each client appears to be low. We have a lot of active licenses assigned to users. What does this mean? 
+#### 2.	The active user count in the dashboard for each client appears to be low. We have a lot of active licenses assigned to users. What does this mean? 
 
 The active user count shown in monitoring is based on a 30-minute window where users have performed the activity called out in the feature. This shouldn’t not be confused with usage numbers. To view usage numbers, use activity reports in the Microsoft 365 admin center (**Reports > Usage**).
 
-### 3.	Will there be other monitoring scenarios for other services such as Teams and SharePoint? 
+#### 3.	Will there be other monitoring scenarios for other services such as Teams and SharePoint? 
 
 Microsoft is working on integrating this experience directly inside the Service Health dashboard in the Microsoft 365 admin center. This will provide opportunities for Microsoft to extend monitoring scenarios for other services, which will be announced when there is news to share. 
 
-### 4.	What is the plan for general availability of this experience? 
+#### 4.	What is the plan for general availability of this experience? 
 
 Microsoft is working on integrating this experience directly inside the Service Health dashboard in the Microsoft 365 admin center. 
 
 Your feedback will help us define our plan for general availability.
 
-### 5.	Is this a free or paid feature? 
+#### 5.	Is this a free or paid feature? 
 
 This feature is only available for customers that meet the requirements in question 1.
 
-### 6.	How do I provide feedback? 
+#### 6.	How do I provide feedback? 
 
 For general feedback, use the feedback icon on the bottom right corner of the Exchange monitoring page. 
 
