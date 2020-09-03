@@ -17,7 +17,9 @@ description: "Admins can set up a connector to import and archive text-delimited
 
 # Set up a connector to archive text-delimited data (preview)
 
-Microsoft 365 allows the administrators to import and archive third-party data from social media, instant messaging, and document collaboration platforms to mailboxes in your Microsoft 365 organization. [Globanet](https://globanet.com/) provides you with a Text-Delimited connector that allows rapidly developing text- delimited file processing and then importing those items. The connector converts the content of an item from the Text-Delimited source to an email message format and then submits the item to your mailboxes.
+Use a Globanet connector in the Microsoft 365 compliance center to import and archive text-delimited data to user mailboxes in your Microsoft 365 organization. [Globanet](https://globanet.com/merge1/) provides a Text-Delimited connector that is configured to capture items from a third-party data source (on a regular basis) and import those items to Microsoft 365. The connector converts content from the text-delimited data source to an email message format and then imports those items to the user's mailbox in Microsoft 365.
+
+After text-delimited data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Zoom Meetings connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 Once archived, the Text-Delimited source communications can be retained, supervised for compliance, and retrieved for eDiscovery and internal Information Governance.
 
@@ -37,13 +39,13 @@ The following overview explains the process of using a connector to archive the 
 
 ## Before you begin
 
-An implementation step required to archive Text-Delimited data is external to Microsoft 365 and must be completed before you can create the connector in the compliance center.
+- Create a Globanet Merge1 account by accepting the terms and conditions for the Text-Delimited connector. To do this, contact [Globanet Customer Support](https://globanet.com/contact-us). You need to sign into this account when you create the connector in Step 1.
 
-1. Create a Merge1 account by accepting their terms and conditions for the Text-Delimited connector. Here you will need to contact Globanet Customer Support at <https://globanet.com/contact-us/>.
+- The user who creates the Text-Delimited connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. By default, this role is not assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 ## Step 1: Set up the Text-Delimited connector
 
-The first step is to gain access to the **Data Connectors** and set up the [Text-Delimited](https://globanet.com/merge1/) connector.
+The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for text-delimited data.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **Text-Delimited**.
 
@@ -84,3 +86,7 @@ After you create the Text- Delimited connector, you can view the connector statu
 2. Click the **Connectors** tab and then select the **Text- Delimited** connector to display the flyout page, which contains the properties and information about the connector.
 
 3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that has been imported to the Microsoft cloud.
+
+## Known issues
+
+- At this time, we don't support importing attachments larger than 10 MB but support for larger items will be available at a later date.

@@ -37,13 +37,13 @@ The following overview explains the process of using a connector to archive EML 
 
 ## Before you begin
 
-An implementation step required to archive EML data is external to Microsoft 365 and must be completed before you can create the connector in the compliance center.
+- Create a Globanet Merge1 account by accepting the terms and conditions for an EML connector. To do this, contact [Globanet Customer Support](https://globanet.com/contact-us). You need to sign into this account when you create the connector in Step 1.
 
-1. Create a Merge1 account by accepting their terms and conditions for the EML connector. Here you will need to contact Globanet Customer Support at <https://globanet.com/contact-us/>.
+- The user who creates the EML connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. By default, this role is not assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 ## Step 1: Set up EML Connector
 
-The first step is to gain access to the **Data Connectors** and set up the [EML](https://globanet.com/merge1/) connector.
+The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for EML data.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **EML**.
 
@@ -84,3 +84,7 @@ After you create the EML connector, you can view the connector status in the Mic
 2. Click the **Connectors** tab and then select the **EML** connector to display the flyout page, which contains the properties and information about the connector.
 
 3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that has been imported to the Microsoft cloud.
+
+## Known issues
+
+- At this time, we don't support importing attachments larger than 10 MB but support for larger items will be available at a later date.

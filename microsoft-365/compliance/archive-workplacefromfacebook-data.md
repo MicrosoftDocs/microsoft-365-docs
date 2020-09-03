@@ -37,8 +37,6 @@ The following overview explains the process of using a connector to archive Work
 
 ## Before you begin
 
-Some of the implementation steps required to archive Workplace from Facebook data are external to Microsoft 365 and must be completed before you can create the connector in the compliance center.
-
 - Create a Merge1 account by accepting their terms and conditions for the Workplace from Facebook connector. Here you will need to contact [Globanet Customer Support](https://globanet.com/contact-us/). You need to sign into this account when you create the connector in Step 1.
 
 - Create a custom integration at https://my.workplace.com/work/admin/apps/ to retrieve data from Workplace via APIs for compliance and eDiscovery purposes.
@@ -49,7 +47,7 @@ Some of the implementation steps required to archive Workplace from Facebook dat
 
 ## Step 1: Set up the Workplace from Facebook connector
 
-The first step is to gain access to the **Data Connectors** and set up the Workplace from Facebook connector.
+The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for Workplace data.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **Workplace from Facebook**.
 
@@ -88,3 +86,7 @@ After you create the Workplace from Facebook connector, you can view the connect
 2. Click the **Connectors** tab and then select the **Workplace from Facebook** connector to display the flyout page, which contains the properties and information about the connector.
 
 3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that has been imported to the Microsoft cloud.
+
+## Known issues
+
+- At this time, we don't support importing attachments larger than 10 MB but support for larger items will be available at a later date.

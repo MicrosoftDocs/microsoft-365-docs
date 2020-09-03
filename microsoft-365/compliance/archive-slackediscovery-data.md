@@ -37,9 +37,7 @@ The following overview explains the process of using a connector to archive the 
 
 ## Before you begin
 
-Some of the implementation steps required to archive Slack eDiscovery data are external to Microsoft 365 and must be completed before you can create the connector in the compliance center.
-
-- Create a Globanet Merge1 account by accepting the terms and conditions for a Slack eDiscovery connector. To do this, contact [Globanet Customer Support](https://globanet.com/contact-us). You need to sign into this account when you create the connector in Step 1.
+- Create a Globanet Merge1 account by accepting the terms and conditions for the Slack eDiscovery connector. To do this, contact [Globanet Customer Support](https://globanet.com/contact-us). You need to sign into this account when you create the connector in Step 1.
 
 - Obtain the username and password for your organization's Slack enterprise account. You'll need to sign into this account in Step 2 when you configure Slack eDiscovery.
 
@@ -47,17 +45,17 @@ Some of the implementation steps required to archive Slack eDiscovery data are e
 
 ## Step 1: Set up the Slack eDiscovery connector
 
-The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and set up the Slack eDiscovery connector.
+The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for Slack eDiscovery data.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **Slack eDiscovery**.
 
-2. Click the **Connectors** tab, click **Add a connector**, and then select **Slack eDiscovery**.
+2. On the **Slack eDiscovery** product description page, click **Add connector**
 
 3. On the **Terms of service** page, click **Accept**.
 
-4. Define a unique name that can represent or identify the connector and click **Next**.
+4. Enter a unique name that identifies the connector, and then click **Next**.
 
-5. Log in to your Globanet Merge1 account to configure the connector.
+5. Sign in to your Merge1 account to configure the connector.
 
 ## Step 2: Configure Slack eDiscovery
 
@@ -89,4 +87,4 @@ After you create the Slack eDiscovery connector, you can view the connector stat
 
 ## Known issues
 
-- The connector doesn’t import any item larger than 10 MB.
+- At this time, we don't support importing attachments larger than 10 MB but support for larger items will be available at a later date.

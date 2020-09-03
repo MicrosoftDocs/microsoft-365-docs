@@ -43,7 +43,7 @@ The following overview explains the process of using a connector to archive the 
 
 ## Step 1: Set up the Reuters Eikon connector
 
-The first step is to gain access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for Reuters Eikon data.
+The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for Reuters Eikon data.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **Reuters Eikon**.
 
@@ -82,3 +82,7 @@ After you create the Reuters Eikon connector, you can view the connector status 
 2. Click the **Connectors** tab and then select the **Reuters Eikon** connector to display the flyout page, which contains the properties and information about the connector.
 
 3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that has been imported to the Microsoft cloud.
+
+## Known issues
+
+- At this time, we don't support importing attachments larger than 10 MB but support for larger items will be available at a later date.
