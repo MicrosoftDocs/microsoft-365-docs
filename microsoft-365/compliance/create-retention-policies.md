@@ -44,11 +44,14 @@ Although a retention policy can support multiple locations, you can't create a s
 - Exchange public folders
 - Teams channel messages
 - Teams chats
+- Yammer community messages
+- Yammer private messages
 
-When you select either of the Teams locations when you create a retention policy, the other locations are automatically excluded. Therefore, the instructions to follow depend on whether you need to include the Teams locations:
+If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. Therefore, the instructions to follow depend on whether you need to include the Teams or Yammer locations:
 
 - [Instructions for a retention policy for Teams locations](#retention-policy-for-teams-locations)
-- [Instructions for a retention policy for locations other than Teams](#retention-policy-for-locations-other-than-teams)
+- - [Instructions for a retention policy for Yammer locations](#retention-policy-for-yammer-locations)
+- [Instructions for a retention policy for locations other than Teams and Yammer](#retention-policy-for-locations-other-than-teams-and-yammer)
 
 When you have more than one retention policy, and when you also use retention labels, see [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence) to understand the outcome when multiple retention settings apply to the same content.
 
@@ -90,7 +93,48 @@ If you have team sites that aren't connected to a Microsoft 365 group, you need 
 It's possible that a retention policy that's applied to Microsoft 365 groups, SharePoint sites, or OneDrive accounts could delete a file that's referenced in a Teams chat or channel message before those messages get deleted. In this scenario, the file still displays in the Teams message, but when users select the file, they get a "File not found" error. This behavior isn't specific to retention policies and could also happen if a user manually deletes a file from SharePoint or OneDrive.
 
 
-### Retention policy for locations other than Teams
+### Retention policy for Yammer locations
+
+> [!NOTE]
+> Retention policies for Yammer are currently in preview.
+>
+> To use this feature, your Yammer network must be [Native Mode](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
+
+1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
+
+2. Select **New retention policy** to create a new retention policy.
+
+3. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content. 
+    
+    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
+    
+    Do not select **Use advanced retention settings** because this option isn't supported for Yammer locations. 
+
+4. For the **Choose locations** page, select **Let me choose specific locations**. Then toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer private messages**.
+    
+    By default, all communities and users are selected, but you can refine this by specifying communities and users to be included or excluded.
+    
+    For Yammer private messages: 
+    - If you leave the default at **All**, Azure B2B guest users are not included. 
+    - If you select **Choose user**, you can apply a retention policy to external users if you know their account.
+
+5. Complete the wizard to save your settings.
+
+For more information about how retention policies work for Yammer, see [Learn about retention for Yammer](retention-policies-yammer.md).
+
+#### Additional retention policies needed to support Yammer
+
+Yammer is more than just community messages and private messages. To retain and delete email messages for your Yammer network, configure an additional retention policy that includes any Microsoft 365 groups that are used for Yammer, by using the **Office 365 groups** location. 
+
+To retain and delete files that are stored in Yammer, you need a retention policy that includes the **SharePoint sites** or **OneDrive accounts** locations:
+
+- Files that are shared in private messages are stored in the OneDrive account of the user who shared the file. 
+
+- Files that are uploaded to communities are stored in the SharePoint site for the Yammer community.
+
+It's possible that a retention policy that's applied to SharePoint sites or OneDrive accounts could delete a file that's referenced in a Yammer message before those messages get deleted. In this scenario, the file still displays in the Yammer message, but when users select the file, they get a "File not found" error. This behavior isn't specific to retention policies and could also happen if a user manually deletes a file from SharePoint or OneDrive.
+
+### Retention policy for locations other than Teams and Yammer
 
 1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
 
