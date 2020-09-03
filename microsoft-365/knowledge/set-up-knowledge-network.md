@@ -1,9 +1,9 @@
 ---
 title: 'Set up Knowledge Management (Preview) '
 description: 'How to set up Knowledge Management.'
-author: efrene
-ms.author: efrene
-manager: pamgreen
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
