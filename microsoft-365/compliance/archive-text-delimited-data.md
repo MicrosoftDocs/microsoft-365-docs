@@ -15,7 +15,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Admins can set up a connector to import and archive text-delimited data from Globanet into Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive text-delimited data
+# Set up a connector to archive text-delimited data (preview)
 
 Microsoft 365 allows the administrators to import and archive third-party data from social media, instant messaging, and document collaboration platforms to mailboxes in your Microsoft 365 organization. [Globanet](https://globanet.com/) provides you with a Text-Delimited connector that allows rapidly developing text- delimited file processing and then importing those items. The connector converts the content of an item from the Text-Delimited source to an email message format and then submits the item to your mailboxes.
 

@@ -15,7 +15,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Admins can set up a connector to import and archive EML data from Globanet into Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive EML data
+# Set up a connector to archive EML data (preview)
 
 Use a Globanet connector in the Microsoft 365 compliance center to import and archive EML data to user mailboxes in your Microsoft 365 organization. EML is the file extension for an email message saved to a file. The connector converts the content of an item from the source format to an email message format and then imports the item to a user mailbox.
 
