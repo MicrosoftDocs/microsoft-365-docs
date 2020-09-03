@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 ---
 
-# Access Microsoft Threat Protection APIs using on behalf of user
+# Access Microsoft Threat Protection APIs on behalf of user
 
 **Applies to:**
 - Microsoft Threat Protection
