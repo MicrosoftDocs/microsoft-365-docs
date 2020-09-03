@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/26/2018
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
