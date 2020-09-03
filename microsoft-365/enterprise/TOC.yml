@@ -278,8 +278,8 @@
       items: 
         - name: Microsoft 365 service health status
           href: microsoft-365-service-health.md
-        - name: OnDemand Monitoring
-          href: microsoft-365-on-demand-monitoring.md
+        - name: Exchange monitoring
+          href: microsoft-365-exchange-monitoring.md
 
     - name: Multi-geo
       items: 

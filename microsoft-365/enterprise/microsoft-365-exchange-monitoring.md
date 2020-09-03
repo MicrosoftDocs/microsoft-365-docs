@@ -1,0 +1,118 @@
+---
+title: "Exchange monitoring for Microsoft 365"
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 09/08/2020
+audience: Admin
+ms.topic: conceptual
+ms.service: o365-administration
+localization_priority: Priority
+search.appverid:
+- MET150
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+f1.keywords:
+- NOCSH
+description: "Use Exchange monitoring for information about email incidents or advisories in Microsoft 365."
+---
+
+# Exchange monitoring for Microsoft 365
+
+As the admin of your organization, you can use Exchange monitoring in the Microsoft 365 admin center to monitor your organization’s service health. This monitoring will provide you with information about incidents and advisories that are collected in the following categories:
+
+- Infrastructure
+  - Issue is detected in the Microsoft 365 infrastructure that Microsoft owns in fixing, providing regular updates and resolving the issue. For example, users cannot access Exchange Online due to issues with Exchange or cloud infrastructure.
+- Third-party infrastructure
+  - Issue is detected in third-party infrastructure that your organization has taken dependency and requires action from your organization for resolution. For example, user authentication transactions are getting throttled by a third-party security token service (STS) provider that prevents users from connecting to Exchange Online.
+- Customer infrastructure
+  - Issue is detected in your organization infrastructure and requires action from your organization for resolution. For example, users cannot access Exchange Online because they are unable to obtain an authentication token from STS provider hosted by your organization due to and expired certificate.
+
+![The Exchange monitoring page in the Microsoft 365 admin center](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example.png)
+
+With the Service heath page, you can see whether the Exchange service is healthy or not and whether there are any associated incidents or advisories. With Exchange monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by scenario. 
+
+## Requirements
+
+This preview is enabled for customers who meet these requirements: 
+
+- Minimum 10,000 license count and a minimum of 50 monthly active users for Exchange 
+- You must also have purchased one of the following: 
+  - Office 365 E3 
+  - Office 365 E5 
+  - Microsoft 365 E3 
+  - Microsoft 365 E5 
+
+With Exchange monitoring you can view the health for the following email clients based on email read activity:
+
+- Outlook Desktop
+- Outlook on the Web
+- Native mail clients of iOS and Android 
+- Outlook Mobile app in iOS and Android 
+- Outlook Mac client
+
+For these clients, you can see the number of active users in the last 30 minutes based on users reading an email, along with number of incidents and advisories in the dashboard. This data is compared to the same interval for the previous week to see if there’s an issue. 
+
+>[!Note]
+> Active user count is measured by a single activity, for example, a user reads an email. It only accounts for the last 30 minutes of activity.
+>
+
+You can also monitor Exchange health for the following scenarios:
+
+- **Mail flow**: The number of messages successfully delivered to a mailbox without any delay after the message reached the Microsoft 365 network. 
+- **Basic Authentication and Modern Authentication**: The number of users successfully validated in the Exchange service.
+
+For all these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios shows the near real time trend for seven days with 30-minute aggregate compared with the previous week. 
+
+## Send us feedback
+
+There are two ways you can provide feedback:
+
+- Use the **Give feedback** option available on every page of the Microsoft 365 admin center.
+- Submit feedback using the **Is this post helpful?** link for a specific incident or advisory.
+
+![The "Is this post helpful?" link for a specific incident or advisory](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example-incident-feedback.png)
+
+
+## Frequently asked questions
+
+### 1.	Why don’t I see “Exchange monitoring” under Health in the Microsoft 365 admin center? 
+
+First, make sure you’ve switched the toggle on the **Home** page for the in the Microsoft 365 admin center to turn on the new admin center. 
+
+Then make sure you meet these requirements: 
+
+- Minimum 10,000 license count and a minimum of 50 monthly active users for Exchange 
+- You must also have purchased one of the following: 
+  - Office 365 E3 
+  - Office 365 E5 
+  - Microsoft 365 E3 
+  - Microsoft 365 E5 
+
+If the license count for your organization goes below 10,000 users and the monthly active users goes below 50 users, Exchange monitoring won’t be enabled until these requirements are met.
+
+### 2.	The active user count in the dashboard for each client appears to be low. We have a lot of active licenses assigned to users. What does this mean? 
+
+The active user count shown in monitoring is based on a 30-minute window where users have performed the activity called out in the feature. This shouldn’t not be confused with usage numbers. To view usage numbers, use activity reports in the Microsoft 365 admin center (**Reports > Usage**).
+
+### 3.	Will there be other monitoring scenarios for other services such as Teams and SharePoint? 
+
+Microsoft is working on integrating this experience directly inside the Service Health dashboard in the Microsoft 365 admin center. This will provide opportunities for Microsoft to extend monitoring scenarios for other services, which will be announced when there is news to share. 
+
+### 4.	What is the plan for general availability of this experience? 
+
+Microsoft is working on integrating this experience directly inside the Service Health dashboard in the Microsoft 365 admin center. 
+
+Your feedback will help us define our plan for general availability.
+
+### 5.	Is this a free or paid feature? 
+
+This feature is only available for customers that meet the requirements in question 1.
+
+### 6.	How do I provide feedback? 
+
+For general feedback, use the feedback icon on the bottom right corner of the Exchange monitoring page. 
+
+For feedback on incidents or advisories, use the **Is this post helpful?** link.
+
