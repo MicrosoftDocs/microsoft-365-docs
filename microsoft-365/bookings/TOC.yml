@@ -11,10 +11,10 @@
       href: customize-booking-page
     - name: Add staff to Bookings
       href: add-staff
-    - name: Create and staff your bookings
+    - name: Create a manual booking
       href: create-a-manual-booking
     - name: Schedule business closures and time off
-      href: schedule-closers-time-off-vacation
+      href: schedule-closures-time-off-vacation
     - name: Employee hours in Microsoft bookings
       href: employee-hours
     - name: Define your service offerings in Bookings
