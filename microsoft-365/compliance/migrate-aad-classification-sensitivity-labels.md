@@ -47,7 +47,7 @@ Table 1. Behavior of compatible and non-compatible workloads – create, edit, o
 > - However, when the user edits a group, and saves the group with a sensitivity label, the selected privacy setting is overridden by the privacy setting of the applied sensitivity label.
 > We recommend that your users on an old version of Outlook client upgrading to the newer version.
 
-## Scenario 2: Tenant is already using classic AAD [classifications](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell#create-classifications-for-office-groups-in-your-organization)
+## Scenario 2: Tenant is already using classic AAD [classifications](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
 
 ### Case A: Tenant never used sensitivity labels for documents and emails
 
