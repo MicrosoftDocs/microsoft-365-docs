@@ -59,7 +59,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
 3. In the registration from, enter the following information then click **Register**.
 
-   ![Image of Create application window](../../media/nativeapp-create2.png)
+   ![Image of Create application window](../../media/nativeapp-create2.PNG)
 
    - **Name:** Your application name
    - **Application type:** Public client
