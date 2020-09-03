@@ -34,7 +34,7 @@ Yammer messages are not affected by retention policies that are configured for u
 > [!NOTE]
 > If a user is included in an active retention policy that retains Yammer data and you a delete a mailbox of a user who is included in this policy, to retain the Yammer data, the mailbox is converted into an [inactive mailbox](inactive-mailboxes-in-office-365.md). If you don't need to retain this Yammer data for the user, exclude the user account from the retention policy before you delete their mailbox.
 
-After a retention policy is configured for Yammer messages, a timer job from the Exchange service periodically evaluates items in the hidden folder where these Yammer messages are stored. The timer job takes up to seven days to run. When these items have expired their retention period, they are moved to the SubstrateHolds folder—another hidden folder that's in every user or group mailbox to store "soft-deleted" items before they are permanently deleted.
+After a retention policy is configured for Yammer messages, a timer job from the Exchange service periodically evaluates items in the hidden folder where these Yammer messages are stored. The timer job takes up to seven days to run. When these items have expired their retention period, they are moved to the SubstrateHolds folder—a hidden folder that's in every user or group mailbox to store "soft-deleted" items before they are permanently deleted.
 
 After a retention policy is configured for Yammer messages, the paths the content takes depend on whether the retention policy is to retain and then delete, to retain only, or delete only.
 
@@ -68,7 +68,7 @@ When the retention policy is retain-only, or delete-only, the content's paths ar
 
 ## Messages and external users
 
-By default, private messages apply to all users in your organization, but not external users. You can apply a retention policy to external users if you use the Choose user and specify their account. 
+By default, a retention policy for Yammer private messages apply to all users in your organization, but not external users. You can apply a retention policy to external users if you use the **Choose user** and specify their account. 
 
 At this time, Azure B2B guest users are not supported.
 
@@ -88,4 +88,6 @@ Yammer retention policies are currently in preview and we're continuously workin
 
 ## Configuration guidance
 
-If you're ready to configure retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+
+If you're ready to configure a retention policy for Yammer, see [Create and configure retention policies](create-retention-policies.md).
