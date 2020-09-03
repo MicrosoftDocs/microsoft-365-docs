@@ -1,5 +1,5 @@
 ---
-title: "Customize and publish your Booking Page"
+title: "Customize and publish your booking page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -11,7 +11,7 @@ ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: "Change the color theme of your booking page in the Microsoft Bookings app."
 ---
 
-# Customize and publish your Booking Page
+# Customize and publish your booking page
 
 The Booking Page is where you set up what your external customer facing booking page will look like. Once you customize and publish your booking page, your customers will use it to book appointments with you.
 

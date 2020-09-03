@@ -1,5 +1,5 @@
 ---
-title: "Get Access to Microsoft Bookings"
+title: "Turn Microsoft Bookings on or off"
 ms.author: kwekua
 author: kwekuako
 manager: scotv

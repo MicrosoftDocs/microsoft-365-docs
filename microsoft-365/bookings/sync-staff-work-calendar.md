@@ -1,5 +1,5 @@
 ---
-title: "Sync staff's work calendar with Microsoft Bookings"
+title: "Sync your staff's work calendar with Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -11,7 +11,7 @@ ms.assetid: 23ee9b4c-0241-40ff-b663-67a309c378f8
 description: "Combine your staff's work calendar with the Bookings calendar so that customers can schedule bookings around personal and professional commitments."
 ---
 
-# Sync staff's work calendar with Microsoft Bookings
+# Sync your staff's work calendar with Microsoft Bookings
 
 You can optionally allow a staff member's work calendar to block their availability for appointments in Bookings.
 
