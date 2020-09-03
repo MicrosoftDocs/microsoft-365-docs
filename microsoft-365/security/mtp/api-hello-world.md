@@ -57,7 +57,7 @@ For the Application registration stage, you must have a **Global administrator**
 
    - Choose **Application permissions** > **Incident.Read.All** > Select on **Add permissions**
 
-   ![Image of API access and API selection](../../media/request-api-permissions.png)
+   ![Image of API access and API selection](../../media/request-api-permissions.PNG)
 
    >[!IMPORTANT]
    >You need to select the relevant permissions. 
