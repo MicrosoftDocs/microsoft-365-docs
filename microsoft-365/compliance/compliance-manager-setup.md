@@ -22,6 +22,8 @@ description: "Set up Microsoft Compliance Manager, which helps organizations sim
 
 ## Who can access Compliance Manager
 
+insert new text...
+
 ## Before you begin
 
 The Microsoft 365 global administrator for your organization will likely be the first user to access Compliance Score. We recommend the global admin sign in and set user permissions as outlined below when visiting Compliance Score for the first time.
@@ -63,6 +65,8 @@ The table below shows how each [Azure AD role](https://docs.microsoft.com/azure/
 insert new text....
 
 ### Set up automated testing
+
+insert new text....
 
 ### Manage user history
 
@@ -243,7 +247,7 @@ By default, you'll see the [Microsoft 365 data protection baseline](compliance-s
 
 ## Assessment templates page
 
-text
+insert new text....
 
 ## Next step
-Customize Compliance Score by [setting up assessments](compliance-score-assessments.md).
+Customize Compliance Score by [setting up assessments](compliance-manager-assessments.md).
