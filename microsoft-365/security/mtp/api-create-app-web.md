@@ -158,10 +158,35 @@ The following code was tested with Nuget Microsoft.IdentityModel.Clients.ActiveD
     ```
 
 
-### Use Python - ASK EFRAT
+### Use Python 
 
-See Get token using Python
+```
+import json
+import urllib.request
+import urllib.parse
 
+tenantId = '00000000-0000-0000-0000-000000000000' # Paste your own tenant ID here
+appId = '11111111-1111-1111-1111-111111111111' # Paste your own app ID here
+appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret here
+
+url = "https://login.windows.net/%s/oauth2/token" % (tenantId)
+
+resourceAppIdUri = 'https://api.securitycenter.windows.com'
+
+body = {
+    'resource' : resourceAppIdUri,
+    'client_id' : appId,
+    'client_secret' : appSecret,
+    'grant_type' : 'client_credentials'
+}
+
+data = urllib.parse.urlencode(body).encode("utf-8")
+
+req = urllib.request.Request(url, data)
+response = urllib.request.urlopen(req)
+jsonResponse = json.loads(response.read())
+aadToken = jsonResponse["access_token"]
+```
 ### Use Curl
 
 > [!NOTE]
