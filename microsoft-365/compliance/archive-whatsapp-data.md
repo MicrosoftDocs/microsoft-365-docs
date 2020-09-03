@@ -81,4 +81,4 @@ After you've completed the prerequisites described in the previous section, you 
 
 ## Known issues
 
-- The connector doesn’t import any item larger than 10 MB.
+- At this time, we don't support importing attachments larger than 10 MB but support for larger items will be available at a later date.

@@ -79,4 +79,4 @@ The last step is to create an Android Archiver connector in the Microsoft 365 co
 
 ## Known issues
 
-- The connector doesn’t import any item larger than 10 MB.
+- At this time, we don't support importing attachments larger than 10 MB but support for larger items will be available at a later date.
