@@ -1,5 +1,5 @@
 ---
-title: "Build assessments in Microsoft Compliance Manager"
+title: "Build and manage assessments in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,12 +16,12 @@ search.appverid:
 description: "Build assessments in Microsoft Compliance Manager to help you meet the requirements of regulations and certifications that are important to your organization."
 ---
 
-# Build assessments in Compliance Manager
+# Build and manage assessments in Compliance Manager
 
-**In this article:** Learn how to customize Compliance Manager for your organization by creating and managing your **assessments**. This article walks you through how to create assessments, how to organize them into **groups**, working with **controls**, and exporting assessment **reports**.
+**In this article:** Learn how to customize Compliance Manager for your organization by creating and managing **assessments**. This article walks you through how to create assessments, how to organize them into **groups**, working with **controls**, accepting **updates**, and exporting assessment **reports**.
 
 > [!IMPORTANT]
-> The assessments available to your organization depends on your licensing agreement. [Review the details](https://go.microsoft.com/fwlink/?linkid=2132371).
+> The assessments available to your organization depend on your licensing agreement. [Review the details](https://go.microsoft.com/fwlink/?linkid=2132371).
 
 ## Introduction to assessments
 
@@ -242,6 +242,9 @@ Select an improvement action from the list to drill into the improvement actionâ
 The tab for your improvement actions lists all the controls in the assessment that are managed by your organization. The status bar details the aggregated test status of your improvement actions in the assessment so you can quickly gauge what has been tested and what still needs to be done. Beneath the bar is the full list of improvement actions and key details, including: test status, the number of potential and earned points, associated regulations and standards, applicable solution, action type, and control family. 
 
 Select an improvement action to view its details page, and select the **Launch now** link to open the solution to take action.
+
+> [!NOTE]
+> Learn more about [how improvement actions contribute to your compliance score](compliance-score-calculation.md#action-types-and-points).
 
 ### Microsoft actions tab
 
