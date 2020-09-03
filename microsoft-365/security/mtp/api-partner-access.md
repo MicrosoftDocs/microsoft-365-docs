@@ -65,7 +65,7 @@ The following steps with guide you how to create an AAD application, get an acce
    >[!NOTE]
    >Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection](../../media/apis-in-my-org-tab.png)
+   ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
    
    ### Request API permissions
 
