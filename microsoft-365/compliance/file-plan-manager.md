@@ -103,11 +103,11 @@ To get you started, there are some out-of-box values for the following file plan
 
 Example of file plan descriptors when you create or edit a retention label:
 
-![File plan descriptors](../media/file-plan-descriptors.png)
+![File plan descriptors when you create or edit a retention label](../media/file-plan-descriptors.png)
 
 Example view of the file plan descriptors columns:
 
-![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
+![File plan descriptors columns](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## Export all retention labels to analyze or enable offline reviews
 
