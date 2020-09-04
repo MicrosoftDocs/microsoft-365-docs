@@ -165,11 +165,11 @@ When you choose all users and groups in your organization or browse the director
 
 As a best practice, use groups rather than users. This strategy keeps your configuration simpler.
 
-##### Requirements and limitations for **Add any authenticated users**
+##### Requirements and limitations for "Add any authenticated users"
 
 This setting doesn't restrict who can access the content that the label encrypts, while still encrypting the content and providing you with options to restrict how the content can be used (permissions), and accessed (expiry and offline access). However, the application opening the encrypted content must be able to support the authentication being used. For this reason, federated social providers such as Google, and onetime passcode authentication work for email only, and only when you use Exchange Online. Microsoft accounts can be used with Office 365 apps and the [Azure Information Protection viewer](https://portal.azurerms.com/#/download).
 
-Some typical scenarios for the any authenticated users setting:
+Some typical scenarios for any authenticated users setting:
 - You don't mind who views the content, but you want to restrict how it is used. For example, you don't want the content to be edited, copied, or printed.
 - You don't need to restrict who accesses the content, but you want to be able to confirm who opens it.
 - You have a requirement that the content must be encrypted at rest and in transit, but it doesn't require access controls.
