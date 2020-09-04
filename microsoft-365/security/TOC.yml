@@ -256,17 +256,7 @@
                     - name: Role Administrator setup tasks
                 - name: Automated investigation and response
                 - name: Integration for greater security
-                - name: How ATP works            
-            - name: Mail flow
-              items: 
-                - name: Message trace in the Security & Compliance Center
-                  href: ./office-365-security/message-trace-scc.md
-                - name: Add support for anonymous inbound email over IPv6
-                  href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
-                - name: View email security reports in the Security & Compliance Center
-                  href: ./office-365-security/view-email-security-reports.md
-                - name: View mail flow reports in the Security & Compliance Center
-                  href: ./office-365-security/view-mail-flow-reports.md
+                - name: How ATP works              
         - name: Overview
           items: 
             - name: Security roadmap
@@ -302,6 +292,10 @@
                   href: ./office-365-security/threat-explorer-views.md
             - name: How threat investigation and response works
               href: ./office-365-security/office-365-ti.md
+            - name: View email security reports in the Security & Compliance Center
+              href: ./office-365-security/view-email-security-reports.md
+            - name: View mail flow reports in the Security & Compliance Center
+              href: ./office-365-security/view-mail-flow-reports.md
             - name: Office 365 Security Incident Response
               href: ./office-365-security/office365-security-incident-response-overview.md
             - name: Mail flow insights in the Security & Compliance Center
@@ -528,6 +522,10 @@
               href: ./mtp/latest-attack-campaigns.md
             - name: Use Threat Trackers
               href: ./office-365-security/threat-trackers.md
+            - name: Message trace in the Security & Compliance Center
+              href: ./office-365-security/message-trace-scc.md
+            - name: Add support for anonymous inbound email over IPv6
+              href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: Responding to a Compromised Email Account in Office 365
               href: ./office-365-security/responding-to-a-compromised-email-account.md
             - name: Auto-forwarded messages insight
