@@ -53,11 +53,11 @@ For the Application registration stage, you must have a **Global administrator**
    >[!NOTE]
    >Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection](../../media/apis-in-my-org-tab.png)
+   ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
 
    - Choose **Application permissions** > **Incident.Read.All** > Select on **Add permissions**
 
-   ![Image of API access and API selection](../../media/request-api-permissions.png)
+   ![Image of API access and API selection](../../media/request-api-permissions.PNG)
 
    >[!IMPORTANT]
    >You need to select the relevant permissions. 
@@ -66,12 +66,12 @@ For the Application registration stage, you must have a **Global administrator**
 
      - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
-5. Select **Grant consent**
+5. Select **Grant admin consent**
 
 	- >[!NOTE]
       > Every time you add permission you must select on **Grant consent** for the new permission to take effect.
 
-	![Image of Grant permissions](../../media/grant-consent.png)
+	![Image of Grant permissions](../../media/grant-consent.PNG)
 
 6. Add a secret to the application.
 
@@ -123,50 +123,48 @@ Run the script.<br>
 In your browser go to: https://jwt.ms/ <br>
 Copy the token (the content of the Latest-token.txt file).<br>
 Paste in the top box.<br>
-Look for the "roles" section. Find the Alert.Read.All role.
+Look for the "roles" section. Find the ```Incidents.Read.All``` role.<br>
+The below example is from an app that has ```Incidents.Read.All```, ```Incidents.ReadWrite.All``` and ```AdvancedHunting.Read.All``` permissions.
 
 ![Image jwt.ms](../../media/api-jwt-ms.png)
 
-### Lets get the Alerts!
+### Lets get the Incidents!
 
--   The script below will use **Get-Token.ps1** to access the API and will get the past 48 hours Alerts.
+-   The script below will use **Get-Token.ps1** to access the API and will get the incidents last updated in past 48 hours.
 -   Save this script in the same folder you saved the previous script **Get-Token.ps1**. 
--   The script creates two files (json and csv) with the data in the same folder as the scripts.
+-   The script a json file with the data in the same folder as the scripts.
 
 ```
-# Returns Incidents created in the past 48 hours.
+# Returns Incidents last updated in the past 48 hours.
 
 $token = ./Get-Token.ps1       #run the script Get-Token.ps1  - make sure you are running this script from the same folder of Get-Token.ps1
 
 # Get Incidents from the last 48 hours. Make sure you have incidents in that time frame.
-$dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")       
+$dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 
-# The URL contains the type of query and the time filter we create above
-# Read more about other query options and filters at   Https://TBD- add the documentation link
-$url = "https://api.security.microsoft.com/api/incidents?$filter=lastUpdateTime+ge+$dateTime”
+# The URL contains the type of query and the time filter we created above
+$url = "https://api.security.microsoft.com/api/incidents?$filter=lastUpdateTime+ge+$dateTime"
 
 # Set the WebRequest headers
 $headers = @{ 
     'Content-Type' = 'application/json'
-    Accept = 'application/json'
-    Authorization = "Bearer $token" 
+    'Accept' = 'application/json'
+    'Authorization' = "Bearer $token"
 }
 
 # Send the webrequest and get the results. 
 $response = Invoke-WebRequest -Method Get -Uri $url -Headers $headers -ErrorAction Stop
 
 # Extract the incidents from the results. 
-$incidents =  ($response | ConvertFrom-Json).value | ConvertTo-Json
+$incidents =  ($response | ConvertFrom-Json).value | ConvertTo-Json -Depth 99
 
 # Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
 $dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}    
 
-# Save the result as json and as csv
+# Save the result as json
 $outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"     
-$outputCsvPath = "./Latest Incidents $dateTimeForFileName.csv"
 
-Out-File -FilePath $outputJsonPath -InputObject $alerts
-($incidents | ConvertFrom-Json) | Export-CSV $outputCsvPath -NoTypeInformation 
+Out-File -FilePath $outputJsonPath -InputObject $incidents 
 ```
 
 You're all done! You have just successfully:

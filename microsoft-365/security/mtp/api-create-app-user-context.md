@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 ---
 
-# Access Microsoft Threat Protection APIs using on behalf of user
+# Access Microsoft Threat Protection APIs on behalf of user
 
 **Applies to:**
 - Microsoft Threat Protection
@@ -59,23 +59,22 @@ This page explains how to create an AAD application, get an access token to Micr
 
 3. In the registration from, enter the following information then click **Register**.
 
-   ![Image of Create application window](../../media/nativeapp-create2.png)
+   ![Image of Create application window](../../media/nativeapp-create2.PNG)
 
    - **Name:** Your application name
    - **Application type:** Public client
+   - **Redirect URI:** https://portal.azure.com
 
-4. Allow your Application to access Microsoft Threat Protection and assign it 'Read alerts' permission:
-
-    - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft Threat Protection** and click on **Microsoft Threat Protection**.
+4. To enable your app to access Microsoft Threat Protection and assign it permissions, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and then select **Microsoft Threat Protection**.
 
     >[!NOTE]
     > Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-      ![Image of API access and API selection](../../media/apis-in-my-org-tab.png)
+      ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
 
-    - Choose **Delegated permissions** > **Alert.Read** > Click on **Add permissions**
+    - Choose **Delegated permissions** > Choose the relevant permissions for your scenario, e.g. **Incident.Read**, and then select **Add permissions**.
 
-      ![Image of API access and API selection](../../media/request-api-permissions.png)
+      ![Image of API access and API selection](../../media/request-api-permissions-delegated.PNG)
 
      >[!IMPORTANT]
      >You need to select the relevant permissions. 
@@ -87,7 +86,7 @@ This page explains how to create an AAD application, get an access token to Micr
       >[!NOTE]
       >Every time you add permission you must click on **Grant consent** for the new permission to take effect.
 
-      ![Image of Grant permissions](../../media/grant-consent.png)
+      ![Image of Grant permissions](../../media/grant-consent-delegated.PNG)
 
 6. Write down your application ID and your tenant ID:
 
@@ -96,83 +95,23 @@ This page explains how to create an AAD application, get an access token to Micr
    ![Image of created app id](../../media/app-and-tenant-ids.png)
 
 
-## Get an access token
+## Get an access token using PowerShell
 
-For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+```
+#Install the ADAL.PS package if it's not installed.
+if(!(Get-Package adal.ps)) { Install-Package -Name adal.ps }
 
-### Using C#
+$authority = "https://login.windows.net/common/oauth2/authorize"
+$resourceUrl = "https://api.security.microsoft.com"
+#replace <application-id> and <redirect-uri>, with the Redirect URI and Application ID from your Azure AD application registration.
+$clientId = "<application-id>"
+$redirectUri = "<redirect-uri>"
 
-- Copy/Paste the below class in your application.
-- Use **AcquireUserTokenAsync** method with the your application ID, tenant ID, user name and password to acquire a token.
-
-    ```csharp
-    namespace Microsoft Threat Protection
-    {
-        using System.Net.Http;
-        using System.Text;
-        using System.Threading.Tasks;
-        using Newtonsoft.Json.Linq;
-
-        public static class Microsoft Threat ProtectionUtils
-        {
-            private const string Authority = "https://login.windows.net";
-
-            private const string WdatpResourceId = "https://api.security.microsoft.com";
-
-            public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
-            {
-                using (var httpClient = new HttpClient())
-                {
-                    var urlEncodedBody = $"resource={WdatpResourceId}&client_id={appId}&grant_type=password&username={username}&password={password}";
-
-                    var stringContent = new StringContent(urlEncodedBody, Encoding.UTF8, "application/x-www-form-urlencoded");
-
-                    using (var response = await httpClient.PostAsync($"{Authority}/{tenantId}/oauth2/token", stringContent).ConfigureAwait(false))
-                    {
-                        response.EnsureSuccessStatusCode();
-
-                        var json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-
-                        var jObject = JObject.Parse(json);
-
-                        return jObject["access_token"].Value<string>();
-                    }
-                }
-            }
-        }
-    }
-    ```
-
-## Validate the token
-
-Sanity check to make sure you got a correct token:
-- Copy/paste into [JWT](https://jwt.ms) the token you got in the previous step in order to decode it
-- Validate you get a 'scp' claim with the desired app permissions
-- In the screen shot below you can see a decoded token acquired from the app in the tutorial:
-
-![Image of token validation](../../media/nativeapp-decoded-token.png)
-
-## Use the token to access Microsoft Threat Protection API
-
-- Choose the API you want to use - [Supported Microsoft Threat Protection APIs](api-supported.md)
-- Set the Authorization header in the HTTP request you send to "Bearer {token}" (Bearer is the Authorization scheme)
-- The Expiration time of the token is 1 hour (you can send more then one request with the same token)
-
-- Example of sending a request to get a list of alerts **using C#** 
-
-    ```csharp
-    var httpClient = new HttpClient();
-
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/alerts");
-
-    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
-
-    var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
-
-    // Do something useful with the response
-    ```
+$response = Get-ADALToken -Resource $resourceUrl -ClientId $clientId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
+$response.AccessToken | clip
+$response.AccessToken
+```
 
 ## Related topics
 - [Access the Microsoft Threat Protection APIs](api-access.md)
 - [Access  Microsoft Threat Protection with application context](api-create-app-web.md)
-- [Access  Microsoft Threat Protection with user context](api-create-app-user-context.md)

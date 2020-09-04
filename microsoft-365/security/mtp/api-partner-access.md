@@ -65,17 +65,17 @@ The following steps with guide you how to create an AAD application, get an acce
    >[!NOTE]
    >Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection](../../media/apis-in-my-org-tab.png)
+   ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
    
    ### Request API permissions
 
    To determine which permission you need, please look at the **Permissions** section in the API you are interested to call. 
 
-   In the following example we will use **'Read all alerts'** permission:
+   In the following example we will use **'Read all incidents'** permission:
 
-   Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
+   Choose **Application permissions** > **Incidents.Read.All** > Click on **Add permissions**
 
-   ![Image of API access and API selection](../../media/application-permissions.png)
+   ![Image of API access and API selection](../../media/request-api-permissions.PNG)
 
 
 5. Click **Grant consent**
@@ -83,7 +83,7 @@ The following steps with guide you how to create an AAD application, get an acce
 	>[!NOTE]
     >Every time you add permission you must click on **Grant consent** for the new permission to take effect.
 
-	![Image of Grant permissions](../../media/grant-consent.png)
+	![Image of Grant permissions](../../media/grant-consent.PNG)
 
 6. Add a secret to the application.
 
@@ -174,11 +174,11 @@ return $token
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
 
     const string authority = "https://login.windows.net";
-    const string wdatpResourceId = "https://api.security.microsoft.com";
+    const string mtpResourceId = "https://api.security.microsoft.com";
 
     AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
     ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
+    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(mtpResourceId, clientCredential).GetAwaiter().GetResult();
     string token = authenticationResult.AccessToken;
     ```
 
@@ -196,7 +196,7 @@ return $token
 - Run the below command:
 
 ```
-curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
+curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://api.security.microsoft.com.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
 ```
 
 You will get an answer of the form:
@@ -222,11 +222,11 @@ Sanity check to make sure you got a correct token:
 - Set the Authorization header in the Http request you send to "Bearer {token}" (Bearer is the Authorization scheme)
 - The Expiration time of the token is 1 hour (you can send more then one request with the same token)
 
-- Example of sending a request to get a list of alerts **using C#** 
+- Example of sending a request to get a list of incidents **using C#** 
     ```
     var httpClient = new HttpClient();
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/alerts");
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/incidents");
 
     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 

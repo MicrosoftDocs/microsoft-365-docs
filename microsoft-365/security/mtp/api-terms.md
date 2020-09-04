@@ -31,9 +31,10 @@ search.appverid:
 
 ### Throttling limits
 
-Name | Calls | Renewal period 
-:---|:---|:---
-API calls per connection | 100 | 60 seconds
+Each API has its own throttling limits.<br>
+There are throttling limits by hour and by minute.<br>
+For instance, the throttling limits of the Incidents API are: 50 calls per minute and 1500 per hour.<br>
+The HTTP response status code in case of throttling will be 429.
 
 
 ## Legal Notices

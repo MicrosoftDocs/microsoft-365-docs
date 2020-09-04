@@ -47,30 +47,27 @@ This article explains how to create an Azure AD application, get an access token
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
-4. To enable your app to access Microsoft Threat Protection and assign it **'Read all incidents'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and then select **Microsoft Threat Protection**.
+4. To enable your app to access Microsoft Threat Protection and assign it permissions, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and then select **Microsoft Threat Protection**.
 
    > [!NOTE]
    > Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection](../../media/apis-in-my-org-tab.png)
+   ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
 
-   - Select **Application permissions** > **Incident.Read.All**, and then select **Add permissions**.
+   - Select **Application permissions** > Choose the relevant permissions for your scenario, e.g. **Incident.Read.All**, and then select **Add permissions**.
 
-   ![Image of API access and API selection](../../media/request-api-permissions.png)
+   ![Image of API access and API selection](../../media/request-api-permissions.PNG)
 
     >[!NOTE]
-    >You need to select the relevant permissions. 
-    
-    For instance:
-
-     - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
+    >You need to select the relevant permissions for your scenario, **'Read all incidents'** is just an example. 
+    >To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
 5. Select **Grant consent**.
 
      > [!NOTE]
      > Every time you add a permission, you must select **Grant consent** for the new permission to take effect.
 
-    ![Image of Grant permissions](../../media/grant-consent.png)
+    ![Image of Grant permissions](../../media/grant-consent.PNG)
 
 6. To add a secret to the application, select **Certificates & secrets**, add a description to the secret, and then select **Add**.
 
@@ -161,10 +158,35 @@ The following code was tested with Nuget Microsoft.IdentityModel.Clients.ActiveD
     ```
 
 
-### Use Python - ASK EFRAT
+### Use Python 
 
-See Get token using Python
+```
+import json
+import urllib.request
+import urllib.parse
 
+tenantId = '00000000-0000-0000-0000-000000000000' # Paste your own tenant ID here
+appId = '11111111-1111-1111-1111-111111111111' # Paste your own app ID here
+appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret here
+
+url = "https://login.windows.net/%s/oauth2/token" % (tenantId)
+
+resourceAppIdUri = 'https://api.securitycenter.windows.com'
+
+body = {
+    'resource' : resourceAppIdUri,
+    'client_id' : appId,
+    'client_secret' : appSecret,
+    'grant_type' : 'client_credentials'
+}
+
+data = urllib.parse.urlencode(body).encode("utf-8")
+
+req = urllib.request.Request(url, data)
+response = urllib.request.urlopen(req)
+jsonResponse = json.loads(response.read())
+aadToken = jsonResponse["access_token"]
+```
 ### Use Curl
 
 > [!NOTE]
@@ -191,7 +213,7 @@ Ensure that you got the correct token:
 
 1. Copy and paste the token you got in the previous step into [JWT](https://jwt.ms) in order to decode it.
 1. Validate that you get a 'roles' claim with the desired permissions
-1. In the following image, you can see a decoded token acquired from an app with permissions to all of Microsoft Threat Protection's roles:
+1. In the following image, you can see a decoded token acquired from an app with ```Incidents.Read.All```, ```Incidents.ReadWrite.All``` and ```AdvancedHunting.Read.All``` permissions:
 
 ![Image of token validation](../../media/webapp-decoded-token.png)
 
@@ -204,7 +226,8 @@ Ensure that you got the correct token:
 3. The expiration time of the token is one hour. You can send more then one request with the same token.
 
 The following is an example of sending a request to get a list of incidents **using C#**: 
-    ```
+
+```
     var httpClient = new HttpClient();
 
     var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/incidents");
@@ -214,7 +237,7 @@ The following is an example of sending a request to get a list of incidents **us
     var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
 
     // Do something useful with the response
-    ```
+```
 
 ## Related topics
 - [Access the Microsoft Threat Protection APIs](api-access.md)
