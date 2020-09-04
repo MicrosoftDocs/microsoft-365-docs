@@ -45,7 +45,5 @@
     href: get-bookings-app
   - name: Turn Microsoft Bookings on or off
     href: turn-bookings-on-or-off
-  - name: Troubleshoot - staff member's calendar can't be synched
-    href: troubleshooting-calendar-sync
   - name: Microsoft Bookings frequently asked questions (FAQ)
     href: bookings-faq    
