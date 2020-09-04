@@ -61,7 +61,7 @@ Export allows users to customize the content that is included in the download pa
 
 - Output options (Exported content is either available for download directly through a web browser or can be sent to an Azure Storage account. The first two options enable direct download.)
   
-  - Loose files and PSTs (email is added to PSTs when possible) - Files are exported in a format that resembles the original directory structure seen by users in their native applications.  For more information, see the [Loose files and PST export structure](#loose-files-and-psts-export-structure) section.
+  - Loose files and PSTs (email is added to PSTs when possible) - Files are exported in a format that resembles the original directory structure seen by users in their native applications.  For more information, see the [Loose files and PST export structure](#loose-files-and-pst-export-structure) section.
   
   - Condensed directory structure - Files are exported and included in the download.
   
