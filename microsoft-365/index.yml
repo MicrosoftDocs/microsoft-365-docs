@@ -46,15 +46,15 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/secure-document-blue.svg
       links:
-        - url: ./solutions/empower-people-to-work-remotely
+        - url: solutions/empower-people-to-work-remotely
           text: Empower remote workers
-        - url: ./solutions/setup-secure-collaboration-with-teams
+        - url: solutions/setup-secure-collaboration-with-teams
           text: Set up secure collaboration
-        - url: ./solutions/deploy-threat-protection
+        - url: solutions/deploy-threat-protection
           text: Deploy threat protection
-        - url: ./solutions/information-protection-deploy
+        - url: solutions/information-protection-deploy
           text: Deploy information protection for data privacy regulations
-        - url: ./campaigns/index.md
+        - url: campaigns/index.md
           text: Microsoft 365 for campaigns (security guidance for all small businesses)
     # Card
     - title: Meet and communicate
@@ -74,7 +74,7 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/users-people.svg
       links:
-        - url: ./solutions/collaborate-with-people-outside-your-organization
+        - url: solutions/collaborate-with-people-outside-your-organization
           text: Configure external sharing
         - url: /sharepoint/plan-intranet
           text: Plan an intelligent SharePoint intranet
@@ -87,41 +87,41 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
       links:
-        - url: ./solutions/productivity-illustrations
+        - url: solutions/productivity-illustrations
           text: Microsoft 365 productivity illustrations
-        - url: ./solutions/cloud-architecture-models
+        - url: solutions/cloud-architecture-models
           text: Microsoft cloud architecture models
-        - url: ./solutions/design-principles
+        - url: solutions/design-principles
           text: Enterprise architecture design principles
     # Card
     - title: Secure your organization
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
       links:
-        - url: ./security/top-security-tasks-for-remote-work
+        - url: security/top-security-tasks-for-remote-work
           text: Top tasks for security teams to support working from home
-        - url: ./solutions/configure-teams-three-tiers-protection
+        - url: solutions/configure-teams-three-tiers-protection
           text: Configure three tiers of protection with Microsoft Teams
         - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
           text: Deploy Microsoft Defender Advanced Threat Protection
-        - url: ./security/office-365-security/office-365-atp
+        - url: security/office-365-security/office-365-atp
           text: Deploy Office 365 Advanced Threat Protection
-        - url: ./enterprise/microsoft-365-policies-configurations
+        - url: enterprise/microsoft-365-policies-configurations
           text: Configure identity and device access protection
     # Card
     - title: Protect your information and comply with regulations
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
       links:
-        - url: ./compliance/compliance-quick-tasks
+        - url: compliance/compliance-quick-tasks
           text: Quick tasks for getting started with Microsoft 365 compliance
-        - url: ./compliance/protect-information
+        - url: compliance/protect-information
           text: Manage information protection
-        - url: ./compliance/manage-information-governance
+        - url: compliance/manage-information-governance
           text: Manage information governance
-        - url: ./compliance/overview-data-investigations
+        - url: compliance/overview-data-investigations
           text: Manage internal and external investigations
-        - url: ./compliance/insider-risk-management
+        - url: compliance/insider-risk-management
           text: Manage insider risks
 
     # Card
@@ -153,9 +153,9 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/on-premises-blue.svg
       links:
-        - url: ./solutions/financial-services-secure-collaboration
+        - url: solutions/financial-services-secure-collaboration
           text: Security and compliance for financial services
-        - url: ./solutions/energy-secure-collaboration
+        - url: solutions/energy-secure-collaboration
           text: Security and compliance for energy and utility services
         - url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
           text: Teams for Healthcare organizations
@@ -179,17 +179,17 @@ additionalContent:
           summary: Set up and manage Microsoft 365 services for your organization. 
           links:
             - text: Microsoft 365 admin center
-              url: ./admin/index.yml
+              url: admin/index.yml
             - text: Microsoft 365 Business Premium
-              url: ./business/index.yml
+              url: business/index.yml
             - text: Microsoft 365 for enterprise
-              url: ./enterprise/index.yml
+              url: enterprise/index.yml
             - text: Microsoft 365 compliance
-              url: ./compliance/index.yml
+              url: compliance/index.yml
             - text: Microsoft 365 security
-              url: ./security/index.yml
+              url: security/index.yml
             - text: Microsoft Managed Desktop
-              url: ./managed-desktop/index.yml
+              url: managed-desktop/index.yml
             - text: Troubleshooting and support
               url: ../office/troubleshoot
         # Card
