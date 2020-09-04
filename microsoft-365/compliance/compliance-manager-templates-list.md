@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Score (preview) templates"
+title: "Microsoft Compliance Manager templates list"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,29 +13,41 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Review the list of templates provided by Microsoft Compliance Manager for setting up assessments."
+description: "Microsoft Compliance Manager provides templates for building assessments that align to national, regional, and industry regulations, standards, and laws."
 ---
 
 # Compliance Manager templates list
 
-## Templates overview
+**In this article:** View the comprehensive list of **templates** available for creating assessments in Compliance Manager.
 
-[Compliance Score](compliance-score.md) provides a comprehensive set of **templates for creating assessments**. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. New templates are added as regulations are enacted and updated.
+> [!IMPORTANT]
+> The assessment templates that are available to your organization depends on your licensing agreement. [Review the details](https://go.microsoft.com/fwlink/?linkid=2132371).
 
-You can modify any of the templates below to suit your organization's needs. You can also create a Custom Assessment by creating your own template. 
+[Compliance Manager](compliance-manager.md) provides a comprehensive set of **templates for creating assessments**. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. 
 
-View detailed guidance on how to [work with templates](working-with-compliance-manager.md#templates), which occurs in Compliance Manager. Check this page often to see newly added templates.
+Templates are added to Compliance Manager as new laws and regulations are enacted, and are [updated](compliance-manager-assessments.md#accepting-updates-to-assessments) when the underlying laws or regulations change.
 
-## Available templates
+View detailed guidance on how to [work with templates](compliance-manager-templates).
 
-You'll find each template in your Compliance Manager dashboard. Click on the links below to learn more about each standard, policy, or regulation covered by a template.
+## List of templates
 
-<br>
+Listed below is the complete list of templates available in Compliance Manager. Each template in Compliance Manager displays information about the regulation or standard to which it applies. The links in the template names below take you to related documentation about that standard, regulation, or law.
 
-| Global |U.S. Government| Industry|Regional|
-| :---: |:---:|:---:|:---:|
-|[Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM) 3.0.1](offering-csa-star-attestation.md) | [FedRAMP Moderate](offering-fedramp.md)| [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](offering-ffiec-us.md) |[Brazil General Data Protection Law (LGPD)](https://go.microsoft.com/fwlink/?linkid=2115387) |
-|[ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073) | [NIST 800-53 Rev.4](https://go.microsoft.com/fwlink/?linkid=2109075) | [HIPAA / HITECH](offering-hipaa-hitech.md) | [California Consumer Privacy Act (CCPA)](offering-ccpa.md) (preview)
-|[ISO 27018:2014](offering-iso-27018.md)  | [NIST 800-171](offering-nist-sp-800-171.md)|  | [Dubai Information Security Resolution (DGISR)](https://go.microsoft.com/fwlink/?linkid=2131193) |
-| [ISO 27701:2019](offering-iso-27701.md) | [NIST Cybersecurity Framework (CSF)](offering-nist-csf.md) |  |[European Union GDPR](gdpr.md) |
-| [Microsoft 365 data protection baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline) | [SOC 1 & 2](offering-soc.md) |  | [IRAP / Australian Government ISM](offering-ccsl-irap-australia.md) (preview) |
+**Where to find your templates**
+
+In Compliance Manager, go to your **Assessment templates** page. You'll see a list of all the templates available to your organization.
+
+- **Included templates** are templates included as part of your organization's licensing agreement.
+ - **Premium templates** displays additional templates your organization may choose to obtain (refer to the [service terms](https://go.microsoft.com/fwlink/?linkid=2132371)).
+
+## Included templates
+
+- [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
+- [European Union GDPR](gdpr.md)
+- [ISO 27001:2013](offering-iso-27001.md)
+- NIST 800-53 Rev.4
+
+## Premium templates
+
+- abc
+- bbc
