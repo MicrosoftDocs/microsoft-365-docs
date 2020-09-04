@@ -37,9 +37,7 @@ The following overview explains the process of using a connector to archive the 
 
 ## Before you begin
 
-Some of the implementation steps required to archive Slack eDiscovery data are external to Microsoft 365 and must be completed before you can create the connector in the compliance center.
-
-- Create a Globanet Merge1 account by accepting the terms and conditions for a Slack eDiscovery connector. To do this, contact [Globanet Customer Support](https://globanet.com/contact-us). You need to sign into this account when you create the connector in Step 1.
+- Create a Globanet Merge1 account by accepting the terms and conditions for the Slack eDiscovery connector. To do this, contact [Globanet Customer Support](https://globanet.com/contact-us). You need to sign into this account when you create the connector in Step 1.
 
 - Obtain the username and password for your organization's Slack enterprise account. You'll need to sign into this account in Step 2 when you configure Slack eDiscovery.
 
@@ -47,17 +45,17 @@ Some of the implementation steps required to archive Slack eDiscovery data are e
 
 ## Step 1: Set up the Slack eDiscovery connector
 
-The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and set up the Slack eDiscovery connector.
+The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for Slack eDiscovery data.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **Slack eDiscovery**.
 
-2. Click the **Connectors** tab, click **Add a connector**, and then select **Slack eDiscovery**.
+2. On the **Slack eDiscovery** product description page, click **Add connector**.
 
 3. On the **Terms of service** page, click **Accept**.
 
-4. Define a unique name that can represent or identify the connector and click **Next**.
+4. Enter a unique name that identifies the connector, and then click **Next**.
 
-5. Log in to your Globanet Merge1 account to configure the connector.
+5. Sign in to your Merge1 account to configure the connector.
 
 ## Step 2: Configure Slack eDiscovery
 
@@ -73,7 +71,7 @@ After you click **Save & Finish**, you are directed back to the Microsoft 365 co
 
 2. On the **Admin Consent** page, click the **Provide Consent** button. You will be redirected to the Microsoft site. Click **Accept** to provide the consent.
 
-   Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. To consent to this request, go to [this](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) page, sign in with the credentials of a global admin, and then accept the request. You have to complete this step before you can successfully create the Slack eDiscovery connector.
+   Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. To provide admin consent, you must be signed in with the credentials of a Microsoft 365 global admin, and then accept the consent request. If you aren't signed in as a global admin, you can go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign in using global admin credentials to accept the request.
 
 3. Click **Next**, review your settings, and go to the **Data connectors** page to see the progress of the import process for the new connector.
 
@@ -89,4 +87,4 @@ After you create the Slack eDiscovery connector, you can view the connector stat
 
 ## Known issues
 
-- The connector doesn’t import any item larger than 10 MB.
+- At this time, we don't support importing attachments larger than 10 MB but support for larger items will be available at a later date.

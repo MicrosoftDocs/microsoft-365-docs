@@ -43,11 +43,11 @@ The following overview explains the process of using a connector to archive the 
 
 ## Step 1: Set up the Reuters Eikon connector
 
-The first step is to gain access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for Reuters Eikon data.
+The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for Reuters Eikon data.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **Reuters Eikon**.
 
-2. On the **Reuters Eikon** product description page, click **Add connector**
+2. On the **Reuters Eikon** product description page, click **Add connector**.
 
 3. On the **Terms of service** page, click **Accept**.
 
@@ -69,9 +69,9 @@ To map users and complete the connector set up in the Microsoft 365 compliance c
 
 2. On the **Admin Consent** page, click the **Provide Consent** button. You will be redirected to the Microsoft site. Click **Accept** to provide the consent.
 
-   To provide admin consent, you must be signed in with the credentials of an Office 365 global admin, and then accept the consent request. If you aren't signed in as a global admin, you can go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign-in using global admin credentials to accept the request.
+   Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. To provide admin consent, you must be signed in with the credentials of a Microsoft 365 global admin, and then accept the consent request. If you aren't signed in as a global admin, you can go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign in using global admin credentials to accept the request.
 
-3. Click **Next**, review your settings and go to the **Data connectors** page to see the progress of the import process for the new connector.
+3. Click **Next**, review your settings, and then go to the **Data connectors** page to see the progress of the import process for the new connector.
 
 ## Step 4: Monitor the Reuters Eikon connector
 
@@ -82,3 +82,7 @@ After you create the Reuters Eikon connector, you can view the connector status 
 2. Click the **Connectors** tab and then select the **Reuters Eikon** connector to display the flyout page, which contains the properties and information about the connector.
 
 3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about the data that has been imported to the Microsoft cloud.
+
+## Known issues
+
+- At this time, we don't support importing attachments larger than 10 MB but support for larger items will be available at a later date.
