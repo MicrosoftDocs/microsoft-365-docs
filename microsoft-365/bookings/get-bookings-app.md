@@ -17,9 +17,6 @@ Thanks for downloading the Microsoft Bookings app! Microsoft Bookings is availab
 
 Before getting started, you need to set up Bookings on the web.
 
-> [!NOTE]
-> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, and Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
-
 1. Can't find the app you're looking for? From the app launcher, select All apps to see an alphabetical list of the Microsoft 365 apps available to you. From there, you can search for a specific app
 
    ![Image of app launcher](../media/bookings-all-apps-launcher.png)

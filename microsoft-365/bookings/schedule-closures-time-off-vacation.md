@@ -15,9 +15,6 @@ description: "Schedule office closures and employee time off from the Bookings c
 
 Occasionally, you'll want to close your business for holidays or team events, or your employees will need time off when they're sick, on vacation, or unavailable for other reasons. You can schedule time off from the Microsoft Bookings calendar, and the employee will be unavailable for bookings during the specified time. Once the business reopens or employees return to work, everyone will be listed on the booking page according to their established work hours.
 
-> [!NOTE]
-> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, and Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
-
 Watch this video or follow the steps below to schedule business closures or employee off.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TxDC]

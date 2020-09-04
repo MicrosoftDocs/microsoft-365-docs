@@ -15,9 +15,6 @@ description: "If you need to ask customers questions when they book an appointme
 
 Bookings lets you create questions to ask your customers when they are booking appointments. It also lets you choose which questions are required.
 
-> [!NOTE]
-> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, and Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To turn it on, see [Get access to Microsoft Bookings](get-access.md).
-
 You associate the questions with a service, so each service can have a different set of questions. For example, a hair stylist may ask customers who are booking a hair coloring appointment if they have any known allergies to bleaches or tints. This allows you and your customers to save time when they arrive for their appointment.
 
 The customers will see the custom questions when they are creating their appointment on the booking page. Staff will see the custom questions when they create a new booking from the Bookings calendar or when viewing an existing appointment. Bookings saves all of your questions to a master list so that you don't have to re-create the same questions for every service. You can also choose whether questions are required or optional.
