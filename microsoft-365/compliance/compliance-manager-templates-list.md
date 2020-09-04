@@ -25,15 +25,15 @@ description: "Microsoft Compliance Manager provides templates for building asses
 
 ## Overview
 
-[Compliance Manager](compliance-manager.md) provides a comprehensive set of **templates for creating assessments**. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. 
+[Compliance Manager](compliance-manager.md) provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. 
 
-Templates are added to Compliance Manager as new laws and regulations are enacted, so check this page frequently. Compliance Manager updates its templates when the underlying laws or regulations change. Learn more about how to review and accept [review and accept updates](compliance-manager-assessments.md#accepting-updates-to-assessments).
+Templates are added to Compliance Manager as new laws and regulations are enacted, so check this page frequently. Compliance Manager updates its templates when the underlying laws or regulations change. Learn more about how [review and accept updates](compliance-manager-assessments.md#accepting-updates-to-assessments).
 
-View detailed guidance on how to [work with templates](compliance-manager-templates).
+View detailed guidance on [working with templates](compliance-manager-templates) to create your assessments.
 
 ## List of templates and where to find them
 
-Listed below is the complete list of templates available in Compliance Manager. Each template in Compliance Manager displays information about the regulation or standard to which it applies. The links in the template names below take you to related documentation about that standard, regulation, or law.
+Below is the complete list of templates in Compliance Manager. Each template details page provides information about the regulation or standard to which it applies. The links in the template names below take you to related documentation about that standard, regulation, or law.
 
 **Where to find your templates**
 
