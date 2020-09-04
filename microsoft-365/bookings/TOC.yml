@@ -25,14 +25,8 @@
       href: add-questions
     - name: Set buffer time in Microsoft Bookings
       href: set-buffer-time
-    - name: Reporting information for Microsoft Bookings
-      href: reporting-information
     - name: Metrics and activity tracking in Microsoft Bookings
       href: metrics-and-activity-tracking
-    - name: Connect Microsoft Bookings to your Facebook page
-      href: connect-to-facebook      
-    - name: Synch your staff's work calendar
-      href: sync-staff-work-calendar
   - name: Comparison chart - web app versus Teams app
     href: comparison-chart
   - name: Get access to Microsoft Bookings
