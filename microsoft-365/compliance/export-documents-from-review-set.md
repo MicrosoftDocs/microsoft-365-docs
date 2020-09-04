@@ -57,7 +57,7 @@ Exported content is either available for download directly through a web browser
 
 ## Loose files and PSTs export structure
 
-- Root folder - [Download ID].zip
+- Root folder – [Export Name] + [Timestamp].zip
   - Export_load_file.csv = metadata file
   - summary.csv = a summary file with export statistics
   - Exchange = all native content from exchange (replaced with redacted PDFs as needed)
@@ -65,7 +65,7 @@ Exported content is either available for download directly through a web browser
 
 ## Condensed directory structure
 
-- Root folder – Download ID
+- Root folder – [Export Name] + [Timestamp].zip
   - Export_load_file.csv = metadata file
   - Summary.txt = a summary file with export statistics
   - Input_or_native_files = contains all native files (replaced with redacted PDFs as needed, PDFs will not be placed in PST files, instead, they'll be added to a folder next to the PST.)
