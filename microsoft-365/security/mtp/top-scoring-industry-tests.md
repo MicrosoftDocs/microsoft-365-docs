@@ -48,7 +48,7 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 - May — June 2020 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/) <sup>**Latest**</sup>
 
-    Microsoft Defender Antivirus achieved an overall Protection score of 5.5/6.0, with 20,540 malware samples used.
+    Microsoft Defender Antivirus achieved a perfect Protection score of 6.0/6.0, with 100% in May and June. 22,190 malware samples were used.
 
 - March — April 2020 AV-TEST Business User test: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
 
@@ -62,13 +62,13 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 - May — June 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2019/microsoft-windows-defender-antivirus-4.18-192415/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
-### AV-Comparatives: Protection rating of 99.5% in the latest test
+### AV-Comparatives: Protection rating of 99.7% in the latest test
 
 Business Security Test consists of three main parts: the Real-World Protection Test that mimics online malware attacks, the Malware Protection Test where the malware enters the system from outside the internet (for example by USB), and the Performance Test that looks at the impact on the system's performance.
 
-- Business Security Test 2020 Factsheet (March — April): [Real-World Protection Rate 99.5%](https://www.av-comparatives.org/tests/business-security-test-march-april-2020-factsheet/) <sup>**Latest**</sup>
+- Business Security Test 2020 (March — June): [Real-World Protection Rate 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) <sup>**Latest**</sup>
 
-    Microsoft Defender Antivirus has scored consistently high in Real-World Protection Rates over the past year, with 99.5% in the latest test.
+    Microsoft Defender Antivirus has scored consistently high in Real-World Protection Rates over the past year, with 99.7% in the latest test.
 
 - Business Security Test 2019 (August — November): [Real-World Protection Rate 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
 
@@ -82,9 +82,11 @@ SE Labs test a range of solutions used by products and services to detect and/or
 
 **Download the latest transparency report: [Examining SE Labs test results, January-March 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
 
-- Enterprise Endpoint Protection January — March 2020: [AAA award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup> | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
+- Enterprise Endpoint Protection April — June 2020: [AAA award](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
 
-    Microsoft's next-gen protection was named one of the leading products, stopping all targeted attacks and all but one public threat.
+    Microsoft's next-gen protection was named one of the leading products, protected against all of the public and targeted attacks. Microsoft Defender Antivirus achieved such good results with its ability to block malicious URLs, handle exploits, and correctly classify legitimate applications and websites.
+
+- Enterprise Endpoint Protection January — March 2020: [AAA award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup> | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
 - Enterprise Endpoint Protection October — December 2019: [AAA award](https://selabs.uk/download/enterprise/epp/2019/oct-dec-2019-enterprise.pdf) <sup>**pdf**</sup>
 
