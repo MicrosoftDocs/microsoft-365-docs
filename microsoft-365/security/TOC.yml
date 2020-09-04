@@ -256,17 +256,7 @@
                     - name: Role Administrator setup tasks
                 - name: Automated investigation and response
                 - name: Integration for greater security
-                - name: How ATP works
-            - name: Security incident management
-              items: 
-                - name: Office 365 Security Incident Response
-                  href: ./office-365-security/office365-security-incident-response-overview.md
-                - name: Detect and Remediate Illicit Consent Grants in Office 365
-                  href: ./office-365-security/detect-and-remediate-illicit-consent-grants.md
-                - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
-                  href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
-                - name: Responding to a Compromised Email Account in Office 365
-                  href: ./office-365-security/responding-to-a-compromised-email-account.md
+                - name: How ATP works            
             - name: Mail flow
               items: 
                 - name: Message trace in the Security & Compliance Center
@@ -339,6 +329,8 @@
                   href: ./office-365-security/threat-explorer-views.md
             - name: How threat investigation and response works
               href: ./office-365-security/office-365-ti.md
+            - name: Office 365 Security Incident Response
+              href: ./office-365-security/office365-security-incident-response-overview.md
             - name: Exchange Online Protection overview
               href: ./office-365-security/exchange-online-protection-overview.md
             - name: EOP features
@@ -561,6 +553,8 @@
               href: ./mtp/latest-attack-campaigns.md
             - name: Use Threat Trackers
               href: ./office-365-security/threat-trackers.md
+            - name: Responding to a Compromised Email Account in Office 365
+              href: ./office-365-security/responding-to-a-compromised-email-account.md
             - name: Attack Simulator in Office 365 ATP
               href: ./office-365-security/attack-simulator.md
             - name: Set up your EOP service
@@ -593,6 +587,10 @@
               href: ./office-365-security/manage-quarantined-messages-and-files.md
             - name: Find and release quarantined messages as a user
               href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
+            - name: Detect and Remediate Illicit Consent Grants in Office 365
+              href: ./office-365-security/detect-and-remediate-illicit-consent-grants.md
+            - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
+              href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
             - name: Configure groups and users for a political campaign dev/test environment
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: Create team sites in a political campaign dev/test environment
