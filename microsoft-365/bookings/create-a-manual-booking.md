@@ -44,4 +44,4 @@ Bookings can be scheduled and staffed in two different ways. The first way is by
 
    Here's an example email of the reminder your customer will receive:
 
-   ![Image of Bookings reminder email](../media/bookings-reminder-email.png)
+:::image type="content" source="../media/bookings-confirmed-email.png" alt-text="Screenshot: Example confirmation email from a manual booking":::
