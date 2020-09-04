@@ -29,8 +29,8 @@ Apply these recommendations to get results faster and avoid timeouts while runni
 
 ## General guidance
 
-- **Size new queries** — If you suspect that a query will return a large result set, assess it first using the [count operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator). Use [limit](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) or its synonym `take` to avoid extremely large result sets.
-- **Apply filters early** — Apply time filters and other filters to reduce the data set, especially when using conversion functions, such as [toint()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tointfunction) or [todatetime()](https://docs.microsoft.com/azure/data-explorer/kusto/query/todatetimefunction), or parsing functions, like [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). In the example below, the parsing function [extractjson()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) is used after filtering operators have reduced the number of records.
+- **Size new queries**—If you suspect that a query will return a large result set, assess it first using the [count operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator). Use [limit](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) or its synonym `take` to avoid extremely large result sets.
+- **Apply filters early**—Apply time filters and other filters to reduce the data set, especially when using conversion functions, such as [toint()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tointfunction) or [todatetime()](https://docs.microsoft.com/azure/data-explorer/kusto/query/todatetimefunction), or parsing functions, like [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). In the example below, the parsing function [extractjson()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) is used after filtering operators have reduced the number of records.
 
     ```kusto
     DeviceEvents
@@ -40,38 +40,83 @@ Apply these recommendations to get results faster and avoid timeouts while runni
     | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
      ```
 
-- **Has beats contains** — To avoid searching substrings within words unnecessarily, use the `has` operator instead of `contains`. [Learn about string operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
-- **Search specific columns** — Look in a specific column rather than running full text searches across all columns. Don't use `*` to check all columns.
-- **Case-sensitive for speed** — Case-sensitive searches are more specific and generally more performant. Names of case-sensitive [string operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators), such as `has_cs` and `contains_cs`, generally end with `_cs`.
-- **Parse, don't extract** — Whenever possible, use parse functions such as [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction) instead of [extract()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction) or similar functions that use regular expression. Reserve regular expression use for more complex scenarios. 
-- **Filter tables not expressions** — Don't filter on a calculated column if you can filter on a table column.
-- **No three-character terms** — Avoid comparing or filtering using terms with three characters or fewer. These short terms are not indexed and will require more resources to match.
-- **Project selectively** — Projecting only the columns you need can make results easier to understand. Projecting specific columns prior to running [join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) or similar operations also helps improve performance .
+- **Has beats contains**—To avoid searching substrings within words unnecessarily, use the `has` operator instead of `contains`. [Learn about string operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
+- **Search specific columns**—Look in a specific column rather than running full text searches across all columns. Don't use `*` to check all columns.
+- **Case-sensitive for speed**—Case-sensitive searches are more specific and generally more performant. Names of case-sensitive [string operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators), such as `has_cs` and `contains_cs`, generally end with `_cs`.
+- **Parse, don't extract**—Whenever possible, use parse functions such as [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction) instead of [extract()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction) or similar functions that use regular expression. Reserve regular expression use for more complex scenarios. 
+- **Filter tables not expressions**—Don't filter on a calculated column if you can filter on a table column.
+- **No three-character terms**—Avoid comparing or filtering using terms with three characters or fewer. These short terms are not indexed and will require more resources to match.
+- **Project selectively**—Projecting only the columns you need can make results easier to understand. Projecting specific columns prior to running [join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) or similar operations also helps improve performance .
 
 ## Optimize the `join` operator
 The [join operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) merges rows from two tables my matching values in specified columns. Apply the these tips to optimize queries that use this operator.
 
-- **Smaller table to your left** — The `join` operator matches records in the table on the left side of your join statement to records on the right. By keeping the table with fewer records on the left, fewer records will need to be matched, thus speeding up the query and  Place the table with fewer results on the left side of your join [MORE INFO WHY] 
+- **Smaller table to your left**—The `join` operator matches records in the table on the left side of your join statement to records on the right. By keeping the table with fewer records on the left, fewer records will need to be matched, thus speeding up the query. 
+
+    In the table below, we reduce the left table `DeviceLogonEvents` to cover only three specific devices before joining it with `IdentityLogonEvents` by account SIDs.
+ 
     ```kusto
-    <EXAMPLE>
-    ```
-- **Hints to performance** — The `join` operator supports hints that can help improve performance [MORE INFO WHY]. [Learn more about join hints](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
-    ```kusto
-    <EXAMPLE>
+    DeviceLogonEvents 
+    | where DeviceName in ("device-1.domain.com", "device-2.domain.com", "device-3.domain.com")
+    | where ActionType == "LogonFailed"
+    | join
+        (IdentityLogonEvents
+        | where ActionType == "LogonFailed"
+        | where Protocol == "Kerberos")
+    on AccountSid
     ```
 
-- **Nondeterministic by default** — With the default [join flavor](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors) (other flavors specified using `kind`) returns non-deterministic results [MORE INFO NEEDED]
+- **Use hints for performance**—The `join` operator supports hints that can help improve performance. Hints help the join operator divide work better between different nodes in the cluster. [Learn more about join hints](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
+
+    For example, the [shuffle hint](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery) helps improve query performance when joining over a key with high cardinality—a key with numerous unique values in the table--such as the `AccountObjectId` in the query below:
+
     ```kusto
-    <EXAMPLE>
+    IdentityInfo
+    | where JobTitle == "CONSULTANT"
+    | join hint.shufflekey = AccountObjectId 
+    (IdentityDirectoryEvents
+        | where Application == "Active Directory"
+        | where ActionType == "Private data retrieval")
+    on AccountObjectId 
     ```
+    
+    The [broadcast hint](https://docs.microsoft.com/azure/data-explorer/kusto/query/broadcastjoin) helps when the left table is small (up to 100,000 records) and the right table is extremely large big, for example:
+
+    ```kusto
+    EmailEvents 
+    | where Subject in ("Warning: Update your credentials now", "Action required: Update your credentials now")
+    | join hint.strategy = broadcast EmailUrlInfo on NetworkMessageId 
+    ```
+
+- **Use the inner-join flavor**—The default [join flavor](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors) or the [innerunique-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) deduplicates rows in the left table by the join key before returning a row for each match to the right table. If the left table has multiple rows with the same value for the join key, those rows will be deduplicated to leave a single, random row for each unique value.
+
+    This default behavior can leave out important information from the left table that can provide useful insight. For example, the query below will only show one email containing a particular attachment, even if that same attachment was sent using multiple emails messages.
+
+    ```kusto
+    EmailAttachmentInfo
+    | where Timestamp > ago(1h)
+    | where Subject == "Document Attachment" and FileName == "Document.pdf"
+    | join (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
+    
+    To address this limitation, we apply the [inner-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor) flavor by specifying `kind=inner` to show all rows in the left table with matching values in the right.
+    
+    ```kusto
+    EmailAttachmentInfo
+    | where Timestamp > ago(1h)
+    | where Subject == "Document Attachment" and FileName == "Document.pdf"
+    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
+    ```
+- **Join only within a time window**—when using `join` to investigate related events, we often want to look for similar events in another table that occur around the same time period.  
+
+
 ## Optimize the summarize operator
 The [summarize operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/summarizeoperator) generates a table that aggregates the contents of another table. Apply the following tips to optimize queries that use this operator:
 
-- **Non-distinct values** — Using the `summarize` operator with common values helps... [MORE INFO NEEDED]
+- **Non-distinct values**—Using the `summarize` operator with common values helps... [MORE INFO NEEDED]
     ```kusto
     <EXAMPLE>
     ```
-- **Shuffle the query** — By shuffling a query, you can distribute processing load across cluster nodes to improve query performance [MORE INFO NEEDED -- does this really apply to advanced hunting?]
+- **Shuffle the query**—By shuffling a query, you can distribute processing load across cluster nodes to improve query performance [MORE INFO NEEDED -- does this really apply to advanced hunting?]
     ```kusto
     <EXAMPLE>
     ```
