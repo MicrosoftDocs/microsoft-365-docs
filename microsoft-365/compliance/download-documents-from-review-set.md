@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: Learn how to select and export or download content from a review set for presentations or external reviews.
+description: Learn how to select and download content from a review set for presentations or external reviews.
 ms.custom: seo-marvel-mar2020
 ---
 
