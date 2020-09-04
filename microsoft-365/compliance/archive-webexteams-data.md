@@ -21,7 +21,7 @@ Use a Globanet connector in the Microsoft 365 compliance center to import and ar
 
 After Webex Teams data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Webex Teams connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
-## Overview of archiving Webex Teams
+## Overview of archiving Webex Teams data
 
 The following overview explains the process of using a connector to archive Webex Teams data in Microsoft 365.
 
