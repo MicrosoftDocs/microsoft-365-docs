@@ -44,7 +44,7 @@ Yes. We provide a link to your booking page within the **Booking page** tab in t
 
 **Can our IT department control whether end users can access Bookings?**
 
-Bookings is available in Business Premium, M365 A3/A5 and E3/E5 tenants by default, but administrators can turn it off in the Microsoft 365 admin center if they choose. To do so, [follow these instructions](https://support.microsoft.com/office/turn-microsoft-bookings-on-or-off-for-your-organization-c27537fa-525e-47a8-aadf-9b07ee75c227).
+Bookings is available in Business Premium, M365 A3/A5 and E3/E5 tenants by default, but administrators can turn it off in the Microsoft 365 admin center if they choose. To do so, [follow these instructions](turn-bookings-on-or-off.md).
 
 If a customer wants to disable access to Bookings for certain eligible licenses in their tenant, they can either user a group policy to restrict licenses or implement an OWA Mailbox policy that will restrict who is able to create new Bookings calendars.
 
