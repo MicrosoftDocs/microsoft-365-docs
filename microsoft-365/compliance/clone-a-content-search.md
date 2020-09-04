@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 4/26/2017
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,7 +17,7 @@ search.appverid:
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
-description: "Use the Windows PowerShell script in this article to quickly clone an existing Content Search in the compliance center in Office 365 or Microsoft 365."
+description: "Use the PowerShell script in this article to quickly clone an existing Content Search in the compliance center in Office 365 or Microsoft 365."
 ---
 
 # Clone a Content Search
