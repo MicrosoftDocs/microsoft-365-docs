@@ -79,11 +79,11 @@ To view a list of all the DEPs you've created for Exchange Online and Skype for 
 
 2. To return all DEPs in your organization, run the Get-DataEncryptionPolicy cmdlet without any parameters.
 
-  ```powershell
-  Get-DataEncryptionPolicy
-  ```
+   ```powershell
+   Get-DataEncryptionPolicy
+   ```
 
-  For more information about the Get-DataEncryptionPolicy cmdlet, see [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps).
+   For more information about the Get-DataEncryptionPolicy cmdlet, see [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps).
 
 ### Assign a DEP before you migrate a mailbox to the cloud
 
@@ -95,11 +95,11 @@ To assign a DEP to a mailbox before you migrate it to Office 365, run the Set-Ma
 
 2. Run the Set-MailUser cmdlet.
 
-  ```powershell
-  Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
-  ```
+   ```powershell
+   Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
+   ```
 
-  Where *GeneralMailboxOrMailUserIdParameter* specifies a mailbox, and *DataEncryptionPolicyIdParameter* is the ID of the DEP. For more information about the Set-MailUser cmdlet, see [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps).
+   Where *GeneralMailboxOrMailUserIdParameter* specifies a mailbox, and *DataEncryptionPolicyIdParameter* is the ID of the DEP. For more information about the Set-MailUser cmdlet, see [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps).
 
 ### Determine the DEP assigned to a mailbox
 
@@ -173,9 +173,9 @@ To unassign the DEP from a mailbox using the Set-Mailbox PowerShell cmdlet, comp
 
 2. Run the Set-Mailbox cmdlet.
 
-```powershell
-Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $NULL
-```
+   ```powershell
+   Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $NULL
+   ```
 
 ## Revoke your keys and start the data purge path process
 
