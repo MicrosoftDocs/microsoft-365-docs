@@ -25,7 +25,7 @@ highlightedContent:
     # Card
     - title: Empower remote workers
       itemType: how-to-guide
-      url: ./solutions/empower-people-to-work-remotely
+      url: solutions/empower-people-to-work-remotely.md
     - title: Remote learning with Microsoft Teams
       itemType: get-started
       url: /MicrosoftTeams/remote-learning-edu
@@ -46,13 +46,13 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/secure-document-blue.svg
       links:
-        - url: solutions/empower-people-to-work-remotely
+        - url: solutions/empower-people-to-work-remotely.md
           text: Empower remote workers
-        - url: solutions/setup-secure-collaboration-with-teams
+        - url: solutions/setup-secure-collaboration-with-teams.md
           text: Set up secure collaboration
-        - url: solutions/deploy-threat-protection
+        - url: solutions/deploy-threat-protection.md
           text: Deploy threat protection
-        - url: solutions/information-protection-deploy
+        - url: solutions/information-protection-deploy.md
           text: Deploy information protection for data privacy regulations
         - url: campaigns/index.md
           text: Microsoft 365 for campaigns (security guidance for all small businesses)
@@ -74,7 +74,7 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/users-people.svg
       links:
-        - url: solutions/collaborate-with-people-outside-your-organization
+        - url: solutions/collaborate-with-people-outside-your-organization.md
           text: Configure external sharing
         - url: /sharepoint/plan-intranet
           text: Plan an intelligent SharePoint intranet
@@ -87,41 +87,41 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
       links:
-        - url: solutions/productivity-illustrations
+        - url: solutions/productivity-illustrations.md
           text: Microsoft 365 productivity illustrations
-        - url: solutions/cloud-architecture-models
+        - url: solutions/cloud-architecture-models.md
           text: Microsoft cloud architecture models
-        - url: solutions/design-principles
+        - url: solutions/design-principles.md
           text: Enterprise architecture design principles
     # Card
     - title: Secure your organization
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
       links:
-        - url: security/top-security-tasks-for-remote-work
+        - url: security/top-security-tasks-for-remote-work.md
           text: Top tasks for security teams to support working from home
-        - url: solutions/configure-teams-three-tiers-protection
+        - url: solutions/configure-teams-three-tiers-protection.md
           text: Configure three tiers of protection with Microsoft Teams
         - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
           text: Deploy Microsoft Defender Advanced Threat Protection
-        - url: security/office-365-security/office-365-atp
+        - url: security/office-365-security/office-365-atp.md
           text: Deploy Office 365 Advanced Threat Protection
-        - url: enterprise/microsoft-365-policies-configurations
+        - url: enterprise/microsoft-365-policies-configurations.md
           text: Configure identity and device access protection
     # Card
     - title: Protect your information and comply with regulations
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
       links:
-        - url: compliance/compliance-quick-tasks
+        - url: compliance/compliance-quick-tasks.md
           text: Quick tasks for getting started with Microsoft 365 compliance
-        - url: compliance/protect-information
+        - url: compliance/protect-information.md
           text: Manage information protection
-        - url: compliance/manage-information-governance
+        - url: compliance/manage-information-governance.md
           text: Manage information governance
-        - url: compliance/overview-data-investigations
+        - url: compliance/overview-data-investigations.md
           text: Manage internal and external investigations
-        - url: compliance/insider-risk-management
+        - url: compliance/insider-risk-management.md
           text: Manage insider risks
 
     # Card
@@ -153,9 +153,9 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/on-premises-blue.svg
       links:
-        - url: solutions/financial-services-secure-collaboration
+        - url: solutions/financial-services-secure-collaboration.md
           text: Security and compliance for financial services
-        - url: solutions/energy-secure-collaboration
+        - url: solutions/energy-secure-collaboration.md
           text: Security and compliance for energy and utility services
         - url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
           text: Teams for Healthcare organizations
@@ -191,7 +191,7 @@ additionalContent:
             - text: Microsoft Managed Desktop
               url: managed-desktop/index.yml
             - text: Troubleshooting and support
-              url: /office/troubleshoot
+              url: /office/troubleshoot.yml
         # Card
         - title: Microsoft Teams
           links:
