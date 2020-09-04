@@ -191,7 +191,7 @@ additionalContent:
             - text: Microsoft Managed Desktop
               url: managed-desktop/index.yml
             - text: Troubleshooting and support
-              url: ../office/troubleshoot
+              url: /office/troubleshoot
         # Card
         - title: Microsoft Teams
           links:
