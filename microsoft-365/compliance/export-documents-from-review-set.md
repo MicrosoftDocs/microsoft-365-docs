@@ -73,3 +73,7 @@ Exported content is either available for download directly through a web browser
     - ExtractionError – a csv that contains any available metadata of files that were not properly extracted from parent files
     - ProcessingError – content with processing errors. This content is item level meaning if an attachment experienced a processing error, the email that contains the attachment will be included in this folder.
   - Extracted_text_files = contains all of the extracted text files generated at processing.
+
+> [!NOTE]
+>- Exports are retained for the life of the case and can be downloaded as long as the case is not deleted
+>- When the download button is clicked, the URL is valid for 90 seconds.  If your download doesn't start immediately, you may need to click the download button again.
