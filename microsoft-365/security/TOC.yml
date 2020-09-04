@@ -267,33 +267,6 @@
                   href: ./office-365-security/view-email-security-reports.md
                 - name: View mail flow reports in the Security & Compliance Center
                   href: ./office-365-security/view-mail-flow-reports.md
-                - name: Mail flow insights in the Security & Compliance Center
-                  href: ./office-365-security/mail-flow-insights-v2.md
-                  items: 
-                    - name: Auto-forwarded messages insight
-                      href: ./office-365-security/mfi-auto-forwarded-messages-report.md
-                    - name: Fix possible mail loop insight
-                      href: ./office-365-security/mfi-mail-loop-insight.md
-                    - name: Fix slow mail flow rules insight
-                      href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
-                    - name: Mail flow map
-                      href: ./office-365-security/mfi-mail-flow-map-report.md
-                    - name: New domains being forwarded email insight
-                      href: ./office-365-security/mfi-new-domains-being-forwarded-email.md
-                    - name: New users forwarding email insight
-                      href: ./office-365-security/mfi-new-users-forwarding-email.md
-                    - name: Non-accepted domain report
-                      href: ./office-365-security/mfi-non-accepted-domain-report.md
-                    - name: Non-delivery report
-                      href: ./office-365-security/mfi-non-delivery-report.md
-                    - name: Outbound and inbound mail flow insight
-                      href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
-                    - name: Queues insight
-                      href: ./office-365-security/mfi-queue-alerts-and-queues.md
-                    - name: SMTP Auth clients insight and report
-                      href: ./office-365-security/mfi-smtp-auth-clients-report.md
-                    - name: Top domain mail flow status insight
-                      href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
         - name: Overview
           items: 
             - name: Security roadmap
@@ -331,6 +304,8 @@
               href: ./office-365-security/office-365-ti.md
             - name: Office 365 Security Incident Response
               href: ./office-365-security/office365-security-incident-response-overview.md
+            - name: Mail flow insights in the Security & Compliance Center
+              href: ./office-365-security/mail-flow-insights-v2.md
             - name: Exchange Online Protection overview
               href: ./office-365-security/exchange-online-protection-overview.md
             - name: EOP features
@@ -555,6 +530,30 @@
               href: ./office-365-security/threat-trackers.md
             - name: Responding to a Compromised Email Account in Office 365
               href: ./office-365-security/responding-to-a-compromised-email-account.md
+            - name: Auto-forwarded messages insight
+              href: ./office-365-security/mfi-auto-forwarded-messages-report.md
+            - name: Fix possible mail loop insight
+              href: ./office-365-security/mfi-mail-loop-insight.md
+            - name: Fix slow mail flow rules insight
+              href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+            - name: Mail flow map
+              href: ./office-365-security/mfi-mail-flow-map-report.md
+            - name: New domains being forwarded email insight
+              href: ./office-365-security/mfi-new-domains-being-forwarded-email.md
+            - name: New users forwarding email insight
+              href: ./office-365-security/mfi-new-users-forwarding-email.md
+            - name: Non-accepted domain report
+              href: ./office-365-security/mfi-non-accepted-domain-report.md
+            - name: Non-delivery report
+              href: ./office-365-security/mfi-non-delivery-report.md
+            - name: Outbound and inbound mail flow insight
+              href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
+            - name: Queues insight
+              href: ./office-365-security/mfi-queue-alerts-and-queues.md
+            - name: SMTP Auth clients insight and report
+              href: ./office-365-security/mfi-smtp-auth-clients-report.md
+            - name: Top domain mail flow status insight
+              href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
             - name: Attack Simulator in Office 365 ATP
               href: ./office-365-security/attack-simulator.md
             - name: Set up your EOP service
