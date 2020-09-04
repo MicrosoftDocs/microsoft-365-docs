@@ -95,9 +95,11 @@ Message a user sees if they try to delete a labeled document in SharePoint:
 Containers include SharePoint document libraries and Exchange mailboxes.
 
 >[!IMPORTANT] 
-> The most important difference for a regulatory record is that after it is applied to content, nobody, not even a global administrator, can remove the label.
+> The most important difference for a regulatory record is that after it is applied to content, nobody, not even a global administrator, can remove the label. 
 > 
-> For this reason, make sure you really do need to use regulatory records before you select this option for your retention labels. To help prevent accidental configuration, this option is not available by default but must first be enabled by using PowerShell. Instructions are included in [Declare records by using retention labels](declare-records.md).
+> In addition, the retention period can't be made shorter after the label is saved, only extended. And for these labels in saved retention policies, you can't remove them from locations, only add locations.
+> 
+> Because of these irreversible actions, make sure you really do need to use regulatory records before you select this option for your retention labels. To help prevent accidental configuration, this option is not available by default but must first be enabled by using PowerShell. Instructions are included in [Declare records by using retention labels](declare-records.md).
 
 ## Next steps
 
