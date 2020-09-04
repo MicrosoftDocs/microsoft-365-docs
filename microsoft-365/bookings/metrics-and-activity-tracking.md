@@ -11,7 +11,7 @@ ms.assetid: 060a9781-c8a2-4e85-a769-31e6417d05b3
 description: "Various metrics are available on the main Bookings page, allowing you to easily track revenue and customer activity."
 ---
 
-# Metrics and activity tracking in Microsoft Bookings
+# Microsoft Bookings metrics and activity tracking
 
 Various metrics are available on the main Bookings page, allowing you to easily track revenue and customer activity.
 

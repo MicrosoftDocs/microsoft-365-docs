@@ -48,7 +48,7 @@ Bookings is available in Business Premium, M365 A3/A5 and E3/E5 tenants by defau
 
 If a customer wants to disable access to Bookings for certain eligible licenses in their tenant, they can either user a group policy to restrict licenses or implement an OWA Mailbox policy that will restrict who is able to create new Bookings calendars.
 
-If you use an OWA Mailbox policy to disable access to Bookings, all users will have a Bookings license, however when they attempt to access the app, they will only be successful if they are part of the policy or if they have been added to an existing Bookings calendar as staff. Details [here](https://support.microsoft.com/office/get-access-to-microsoft-bookings-5382dc07-aaa5-45c9-8767-502333b214ce?ui=en-us&rs=en-us&ad=us) in the “Allow only selected users to create Bookings calendars” section.
+If you use an OWA Mailbox policy to disable access to Bookings, all users will have a Bookings license, however when they attempt to access the app, they will only be successful if they are part of the policy or if they have been added to an existing Bookings calendar as staff. Details [here](turn-bookings-on-or-off.md) in the “Allow only selected users to create Bookings calendars” section.
 
 **Is Bookings customizable?**
 
@@ -110,7 +110,7 @@ Bookings is an ideal solution for both Enterprise and small business customers, 
 
 **How do I get Microsoft Bookings?**
 
-Bookings is available in Microsoft 365 for customers with Business Premium, A3, A5, E3, and E5 licenses, along with an iOS and Android companion app. Bookings is not available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook. Details on obtaining a license can be found [here](https://support.microsoft.com/office/get-access-to-microsoft-bookings-5382dc07-aaa5-45c9-8767-502333b214ce).
+Bookings is available in Microsoft 365 for customers with Business Premium, A3, A5, E3, and E5 licenses, along with an iOS and Android companion app. Bookings is not available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
 
 A Bookings license provides full functionality to the product, including creating and managing calendars. It also enables the ability for users to view and edit existing calendars, when those users are added as staff in an Administrator or Viewer role.
 
@@ -128,7 +128,7 @@ Yes. You can create and manage more than one Bookings calendar with one account.
 
 **What if my organization has mixed licenses with F1/F3, E1, and E3/E5?**
 
-We recognize that many organizations have a mixture of Microsoft 365 licensing. For example, a customer may have M365 E3 licenses for employees in their headquarters, but M365 E1 (or F1 or F3) licenses for their store employees. 
+We recognize that many organizations have a mixture of Microsoft 365 licensing. For example, a customer may have M365 E3 licenses for employees in their headquarters, but M365 E1 (or F1 or F3) licenses for their store employees.
 
 In this example, the headquarters employees with an M365 E3 license have full access to Bookings, which means they can create new calendars, edit settings, add staff, publish a booking page, create and manage appointments within the calendar, and pull reports.
 
@@ -202,7 +202,7 @@ Yes. There is a check box on the Booking page tab in the Web app: **Require a Mi
 
 **How frequently does the Home page update?**
 
-The latest data linked to your Home page is retrieved  whenever the Web app is loaded. For further details on the type of information tracked by Bookings, see this [support article](https://support.office.com/article/bookings-what-do-these-numbers-mean-060a9781-c8a2-4e85-a769-31e6417d05b3?ui=en-US&rs=en-US&ad=US).
+The latest data linked to your Home page is retrieved  whenever the Web app is loaded. For further details on the type of information tracked by Bookings, see this [support article](metrics-and-activity-tracking.md).
 
 **Can I turn off the email notifications for Time Off?**
 
@@ -294,13 +294,13 @@ When booking an appointment with SMS text messages enabled, customers will be pr
 
   - [How Microsoft Bookings Works video](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)
 
-  - [Enable and give access to Bookings in your tenant](https://support.microsoft.com/office/get-access-to-microsoft-bookings-5382dc07-aaa5-45c9-8767-502333b214ce?ui=en-us&rs=en-us&ad=us)
+  - [Start using Microsoft Bookings](get-access.md)
 
-  - [Turn Bookings on or off](https://support.microsoft.com/office/turn-microsoft-bookings-on-or-off-for-your-organization-c27537fa-525e-47a8-aadf-9b07ee75c227)
+  - [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md)
 
   - [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide.)
 
-  - [Create your staff list and understand roles](https://support.office.com/article/create-your-staff-list-298c529b-407b-4a2b-b2c5-6e77a9d1f07f)
+  - [Add staff to Bookings](add-staff.md)
 
   - [API components to automate after template has been defined](https://docs.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses)
 
@@ -308,15 +308,13 @@ When booking an appointment with SMS text messages enabled, customers will be pr
 
   - [Bookings compliance policies](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365?view=o365-worldwide#bookings)
 
-  - [New\! Manage appointments inside and outside of your organization](https://support.microsoft.com/office/publish-your-business-calendar-online-with-microsoft-bookings-47403d64-a067-4754-9ae9-00157244c27d%20)
+  - [Customize and publish your booking page](customize-booking-page.md)
 
   - [Tenant Mailbox configuration](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps)
 
-  - [Setup instructions](https://support.microsoft.com/office/publish-your-business-calendar-online-with-microsoft-bookings-47403d64-a067-4754-9ae9-00157244c27d?ui=en-us&rs=en-us&ad=us)
-
   - [Group Bookings](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 
-  - [Bookings metric definitions](https://support.office.com/article/bookings-what-do-these-numbers-mean-060a9781-c8a2-4e85-a769-31e6417d05b3?ui=en-US&rs=en-US&ad=US)
+  - [Bookings metrics and activity tracking](metrics-and-activity-tracking.md)
 
   - [M365 Public Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)
 
