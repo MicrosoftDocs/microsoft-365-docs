@@ -57,13 +57,13 @@ The first step is to access to the **Data Connectors** page in the Microsoft 365
 
 ## Configure the Symphony connector on the Globanet Merge1 site
 
-The second step is to configure the Symphony connector on the Merge1 site. For information about configuring  the Symphony connector in the Globanet Merge1 site, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Symphony%20User%20Guide%20.pdf).
+The second step is to configure the Symphony connector on the Merge1 site. For information about configuring  the Symphony connector on the Globanet Merge1 site, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Symphony%20User%20Guide%20.pdf).
 
 After you click **Save & Finish**, you are returned to the Microsoft 365 compliance center, to the **User mapping** page of the connector wizard.
 
 ## Step 3: Map users and complete the connector setup
 
-To map users and complete the connector set up in the Microsoft 365 compliance center, follow these steps:
+To map users and complete the connector setup in the Microsoft 365 compliance center, follow these steps:
 
 1. On the **Map external users to Microsoft 365 users** page, enable automatic user mapping. The Symphony items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user’s mailbox.
 
