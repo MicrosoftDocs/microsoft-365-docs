@@ -25,6 +25,12 @@ description: "Learn how retention works for SharePoint and OneDrive."
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to SharePoint and OneDrive.
 
+## Supported items
+
+The following SharePoint and OneDrive items can be retained and deleted by using retention settings: Files in document libraries, which include the default document libraries LibScr, Site Assets, and Style Library. When you use a KQL query with an auto-apply retention label, the scope includes list items that aren't in document libraries.
+
+Files in the default Site Pages page library are not included, unless explicitly added with a KQL query.
+
 ## How retention works for SharePoint and OneDrive
 
 To support retention, SharePoint and OneDrive creates a Preservation Hold library if one doesn't exist. You can view this library on the **Site contents** page in the top-level site of the site collection. Most users can't view the Preservation Hold library because it's visible only to site collection administrators.

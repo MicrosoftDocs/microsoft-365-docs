@@ -23,6 +23,14 @@ description: "Learn how retention works for Exchange."
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Exchange.
 
+## Supported items
+
+The following Exchange items can be retained and deleted by using retention settings: Mail messages (includes drafts) with any attachments, tasks and calendar items when they have an end date, and notes. 
+
+Contacts, and any tasks and calendar items that don't have an end date are not included.
+
+Other items stored in a mailbox, such as Skype and Teams saved messages, aren't included with this location. These items have their own retention locations.
+
 ## How retention works for Exchange
 
 Both a mailbox and a public folder use the [Recoverable Items folder](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) to retain items. Only people who have been assigned eDiscovery permissions can view items in another user's Recoverable Items folder.

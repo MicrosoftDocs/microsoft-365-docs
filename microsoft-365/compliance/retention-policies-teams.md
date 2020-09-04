@@ -25,6 +25,12 @@ description: "Learn about retention policies that apply to Microsoft Teams."
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Microsoft Teams.
 
+## Supported items
+
+The following Teams items can be retained and deleted by using retention settings: Chats and channel messages.
+
+Teams messages in private channels are not included and reactions from others in the form of emoticons are not included.
+
 ## How retention works with Microsoft Teams
 
 You can use a retention policy to retain chats and channel messages in Teams. Teams chats are stored in a hidden folder in the mailbox of each user included in the chat, and Teams channel messages are stored in a similar hidden folder in the group mailbox for the team.
@@ -99,10 +105,6 @@ We're continuously working on optimizing retention functionality in Teams. In th
 - **Teams isn't included in an org-wide policy**. If you create an org-wide policy, Teams channel messages and Teams chats aren't included because these require a separate retention policy.
 
 - **Teams doesn't support advanced retention**. When you create a retention policy, if you choose the [Advanced settings to identify content that meets specific conditions](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), the Teams locations are not available. Retention in Teams applies to all the chat and channel message content when you select those locations.
-
-- **Teams messages in private channels aren't included when you configure a retention policy for Teams channel messages**. Currently, private channels aren't supported by retention policies. 
-
-- **Likes and other reactions are not retained for Teams chat and channel messages**. Reactions from others in the form of emoticons aren't supported by retention policies.
 
 - **Incorrect display issue in Outlook**. If you create retention policies for Skype or Teams locations, one of those policies is shown as the default folder policy when a user views the properties of a mailbox folder in the Outlook desktop client. This is an incorrect display issue in Outlook and [a known issue](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). What should be displayed as the default folder policy is the mailbox retention policy that's applied to the folder. The Skype or Teams retention policy is not applied to the user's mailbox.
 
