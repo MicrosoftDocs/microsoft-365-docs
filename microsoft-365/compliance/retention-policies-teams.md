@@ -25,7 +25,7 @@ description: "Learn about retention policies that apply to Microsoft Teams."
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Microsoft Teams.
 
-## Supported items
+## What's included for retention and deletion
 
 The following Teams items can be retained and deleted by using retention settings: Chats and channel messages.
 

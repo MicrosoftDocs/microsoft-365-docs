@@ -23,7 +23,7 @@ description: "Learn how retention works for Exchange."
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Exchange.
 
-## Supported items
+## What's included for retention and deletion
 
 The following Exchange items can be retained and deleted by using retention settings: Mail messages (includes drafts) with any attachments, tasks and calendar items when they have an end date, and notes. 
 
