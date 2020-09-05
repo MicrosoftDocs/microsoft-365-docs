@@ -6,7 +6,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: Admin
-ms.topic: overview
+ms.article: overview
 f1_keywords:
 - '197503'
 ms.service: O365-seccomp
@@ -34,26 +34,19 @@ description: "In this article, you'll learn how to use Safe links to protect you
 > [!IMPORTANT]
 > This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Safe Links is a feature in [Office 365 Advanced Threat Protection](office-365-atp.md) that provides time-of-click verification of URLs and links. As long as your mail flows through [Exchange Online Protection](exchange-online-protection-overview.md) (EOP), Safe Links protection is available in the following locations:
+Safe Links is a feature in [Office 365 Advanced Threat Protection](office-365-atp.md) that provides time-of-click verification of URLs and links. As long as your inbound email flows through Microsoft 365 or Office 365, Safe Links protection is available in the following locations:
 
-- **Email messages and Microsoft Teams**: Safe Links protection is controlled by Safe Links policies. There is no default Safe Links policy, **so to get the protection of Safe Links, you need to create one or more Safe Links policies**. For instructions, see [Set up Safe Links policies in ATP](set-up-atp-safe-links-policies.md).
+- **Email messages**: Safe Links protection for links in email messages is controlled by Safe Links policies. There is no default Safe Links policy, **so to get the protection of Safe Links in email messages, you need to create one or more Safe Links policies**. For instructions, see [Set up Safe Links policies in ATP](set-up-atp-safe-links-policies.md).
 
-  For more information about the settings that are available in Safe Links policies, see the [Safe Links policy settings](#safe-links-policy-settings) section later in this topic.
+  For more information about the settings that are available in Safe Links policies, see the [Safe Links policy settings](#safe-links-policy-settings) section later in this article.
 
-- **Office documents**: Safe Links protection is available in the following Office environments in Microsoft 365 Apps for enterprise or Business Premium:
+- **Microsoft Teams** (currently in Preview): Safe Links protection for links in Teams conversations, group chats, or from channels is also controlled by Safe Links policies. There is no default Safe Links policy, **so to get the protection of Safe Links in Teams, you need to create one or more Safe Links policies**.
 
-  - Current versions of Word, Excel, and PowerPoint on Windows, Mac, or in a web browser.
-  - Office apps on iOS or Android devices.
-  - Visio on Windows.
-  - OneNote in a web browser.
+  For more information about Safe Links protection in Teams, see the [Safe Links settings for Microsoft Teams](#safe-links-settings-for-microsoft-teams) section later in this topic.
 
-  Safe Links protection in Office documents is not dependent on Safe Links policies. You enable, disable, and configure the settings globally for your organization. For instructions, see.
+- **Office documents**: Safe Links protection for Office is available in Microsoft 365 Apps for enterprise or Business Premium desktop clients, web, and mobile apps. Safe Links protection in Office documents does not depend on Safe Links policies. You enable, disable, and configure the settings globally for all recipients in your organization. For instructions, see .
 
-  For more information about the settings that are available in Safe Links for Office documents, see the  section later in this topic.
-
-Once your ATP Safe Links policies are in place, global administrators, security administrators, and security readers can [view reports for Advanced Threat Protection](view-reports-for-atp.md). The information in those reports can help your security team take further steps to protect your organization or research security incidents.
-
-As [new features are added to ATP](office-365-atp.md#new-features-in-office-365-atp), your Microsoft 365 security team can add or edit your organization's [ATP Safe Links policies](set-up-atp-safe-links-policies.md). In addition, you might notice changes and improvements, such as our newly revised [warning pages](atp-safe-links-warning-pages.md) and native link rendering in Outlook (introduced in Microsoft 365 Apps for enterprise version 1809).
+  For more information about the requirements and settings that are available in Safe Links for Office documents, see the [Safe Links settings for Office documents](#safe-links-settings-for-office-documents) section later in this article.
 
 The following table describes scenarios for Safe Links in Microsoft 365 and Office 365 organizations that include ATP (in other words, lack of licensing is never an issue in the examples).
 
@@ -61,11 +54,15 @@ The following table describes scenarios for Safe Links in Microsoft 365 and Offi
 
 |Scenario|Result|
 |---|---|
-|Jean is a member of the marketing department, and a Safe Links policy is configured that applies to members of the marketing department. The Safe Links policy is configured to protect URLs in email messages and Office documents. Jean opens a PowerPoint presentation in an email message, and then clicks a URL in the presentation.|Jean is protected by Safe Links. <br/><br/> The Safe Links policies apply to Jean's email messages, and Word, Excel, PowerPoint, or Visio documents that Jean opens, so long as Jean is signed in and using Microsoft 365 Apps for enterprise on Windows, iOS, or Android devices.|
-|Chris's Microsoft 365 E5 organization has no Safe Attachments policies configured. Chris receives an email that contains a URL to a malicious website. Chris is unaware the URL is malicious and clicks the link.|No. The default policy that covers URLs for everyone in the organization must be defined in order for protection to be in place.|
-|In Pat's organization, no global or security administrators have defined or edited any ATP Safe Links policies yet. Pat opens a Word document and clicks a URL in the file.|No. A policy that includes Office documents must be defined in order for protection to be in place. See [Set up ATP Safe Links policies in Office 365](set-up-atp-safe-links-policies.md).|
+|Jean is a member of the marketing department. Safe Links protection for Office documents is enabled in Jean's organization, and a Safe Links policy that applies to members of the marketing department exists. Jean opens a PowerPoint presentation in an email message, and then clicks a URL in the presentation.|Jean is protected by Safe Links. <br/><br/> The Safe Links policies apply to Jean's email messages, and Word, Excel, PowerPoint, or Visio documents that Jean opens, so long as Jean is signed in and using Microsoft 365 Apps for enterprise on Windows, iOS, or Android devices.|
+|Chris's Microsoft 365 E5 organization has no Safe Links policies configured. Chris receives an email that contains a URL to a malicious website that he ultimately clicks.|Chris is not protected by Safe Links. <br/><br/> An admin must create at least one Safe Links policy for Safe Links protection in email messages to be active. Furthermore, the conditions of the policy must include Chris if Chris's incoming email is to be protected by Safe Links.|
+|In Pat's organization, no admins have created any ATP Safe Links policies. Pat opens a Word document and clicks a URL in the file.|No. A policy that includes Office documents must be defined in order for protection to be in place. See [Set up ATP Safe Links policies in Office 365](set-up-atp-safe-links-policies.md).|
 |Lee's organization has a ATP Safe Links policy that has `https://tailspintoys.com` listed as a blocked website. Lee receives an email message that contains a URL to `https://tailspintoys.com/aboutus/trythispage`. Lee clicks the URL.|It depends on whether the entire site and all its subpages are included in the list of blocked URLs. See [Set up a custom blocked URLs list using ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).|
 |Jamie, Jean's colleague, sends an email to Jean, not knowing that the email contains a malicious URL.|It depends on whether ATP Safe Links policies are defined for email sent within the organization. See [Set up ATP Safe Links policies in Office 365](set-up-atp-safe-links-policies.md).|
+
+After you've configured Safe Links protection for your organization, global admins, security admins, and security readers can view reports that contain Safe Links protection information. This information can help your security team take further steps to protect your organization or research security incidents. For more information, see [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md). 
+
+As [new features are added to ATP](office-365-atp.md#new-features-in-office-365-atp), your Microsoft 365 security team can add or edit your organization's [ATP Safe Links policies](set-up-atp-safe-links-policies.md). In addition, you might notice changes and improvements, such as our newly revised [warning pages](atp-safe-links-warning-pages.md) and native link rendering in Outlook (introduced in Microsoft 365 Apps for enterprise version 1809).
 
 ## Safe Links policy settings
 
@@ -73,22 +70,24 @@ These are the important settings in Safe Links policies:
 
 - **Select the action for unknown potentially malicious URLs in messages**: When this setting is turned on, URLs are rewritten and checked against a list of known malicious links when the user clicks the link. The recommended value is **On**.
 
-- **Select the action for unknown or potentially malicious URLs within Microsoft Teams: On**:  Note that this setting is currently in Preview for members of the Microsoft Teams Technology Adoption Program (TAP). When this setting is turned on, URLs in Teams are checked against a list of known malicious links when the user clicks the link. URLs are not rewritten. The recommended value is **On**.
+- **Select the action for unknown or potentially malicious URLs within Microsoft Teams** (currently in Preview): For more informationNote that this setting is currently in Preview for members of the Microsoft Teams Technology Adoption Program (TAP). When this setting is turned on, URLs in Teams are checked against a list of known malicious links when the user clicks the link. URLs are not rewritten. The recommended value is **On**.
 
-- **Apply real-time URL scanning for suspicious links and links that point to files**: Enables real-time scanning of links in email messages. The recommended value is enabled.
+- **Apply real-time URL scanning for suspicious links and links that point to files**: Enables real-time scanning of links in email messages. The links could be URLs or downloadable content. The recommended value is enabled.
 
   - **Wait for URL scanning to complete before delivering the message**
 
     - Enabled: Wait for real-time URL scanning to complete before delivering the message. This is the recommended value.
     - Disabled: If real-time URL scanning can't complete, deliver the message anyway.
 
-- **Apply safe links to email messages sent within the organization**: Enables or disables applying the Safe Links policy to messages between internal senders and internal recipients. The recommended value is enabled.
+- **Apply safe links to email messages sent within the organization**: Enables or disables applying the Safe Links policy to email messages between internal senders and internal recipients within the same Exchange Online organization. The recommended value is enabled.
 
-- **Do not track user clicks**: Enables or disables tracking user clicks of URLs. The recommend value is to leave this setting unselected (enable tracking of user clicks).
+- **Do not track user clicks**: Enables or disables tracking user clicks on links in email messages and Teams. The recommend value is to leave this setting unselected (enable tracking of user clicks).
 
-- **Do not allow users to click through to original URL**: Allows or blocks users from clicking through to the original URL. The recommend value is to select this setting (block users from clicking through to the original URL).
+- **Do not allow users to click through to original URL**: Allows or blocks users from clicking through to the original URL in email messages and Teams. The recommend value is to select this setting (block users from clicking through to the original URL).
 
-- **Do not rewrite the following URLs**: Specifies the URLs that skip Safe List scanning.
+- **Do not rewrite the following URLs**: Specifies the URLs that skip Safe List scanning and are always allowed in email messages and Teams.
+
+  Note that corresponding Safe Links block list that you can configure applies to email messages, Teams, and Office documents. For more information, see .
 
 For more information about the recommended values for Standard and Strict policy settings, see [Safe Links policy settings in custom policies for specific users](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users).
 
@@ -104,7 +103,32 @@ For more information about the recommended values for Standard and Strict policy
 
   For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
+## Safe Links settings for Microsoft Teams
+
+> [!IMPORTANT]
+> As of March 2020, this feature is in **Public Preview** for customers in the Microsoft Teams Technology Adoption Program (TAP). This note will be removed from the article when Safe Links for Teams is more widely available.
+
+After you turn on Safe Links scanning for Microsoft Teams in a [Safe Links policy](#safe-links-policy-settings) as described earlier in this article, Safe Links scans URLs and links that are clicked by users who are protected by the policy. If a link is found to be malicious, the users will have the following experiences:
+
+- If the link was clicked in a Teams conversation, group chat, or from channels, the warning page as shown in the screenshot below will appear in the default web browser.
+- If the link was clicked from a pinned tab, the warning page will appear in the Teams interface within that tab. The option to open the link in a web browser is disabled for security reasons.
+- Depending on how the Safe Links policy is configured (the **Do not allow users to click through to original URL** setting), the protected user will or will not be allowed to click through to the destination (**Continue anyway (not recommended)** in the screenshot). We recommend that you configure the Safe Links policy to not allow users to click through the warning to the destination.
+
+If the user who sent the link isn't protected by Office 365 ATP, he or she is free to click through to the destination URL on their computer or device. This makes it doubly important for admins to be aware of who their protected users are and should be.
+
+![A Safe Links for Teams page reporting a malicious link.](../../media/tp-safe-links-for-teams-malicious.png)
+
+Clicking the **Go Back** button on the warning page will close the page (or might result in a blank page that users can close). However, clicking on the link original again will cause Safe Links to scan the URL again. This will cause the warning page to reappear.
+
+The following settings in Safe Links policies that apply to links in email messages also apply to links in Teams:
+
+- **Do not track user clicks**
+- **Do not allow users to click through to original URL**
+- **Do not rewrite the following URLs**
+
 ## Safe Links settings for Office documents
+
+As described earlier, Safe Links protection for links in Office documents don't depend on Safe Links policies. When enabled, these settings apply to all recipients in your organization.
 
 Safe Links protection for Office documents has the following requirements:
 
@@ -114,20 +138,80 @@ Safe Links protection for Office documents has the following requirements:
 
 The following settings are available in Safe Links for Office documents:
 
-- **Use Safe Links in: Office 365 applications**: Enables or disables Safe Links in Office documents as described earlier in this article. This setting is enabled by default.
+- **Use Safe Links in: Office 365 applications**: Enables or disables Safe Links in the following Office environments in Microsoft 365 Apps for enterprise or Business Premium:
 
-- **Do not track when users click safe links**: Enables or disables tracking of user clicks related to blocked URLs in Office documents. 
+  - Current versions of Word, Excel, and PowerPoint on Windows, Mac, or in a web browser.
+  - Office apps on iOS or Android devices.
+  - Visio on Windows.
+  - OneNote in a web browser.
 
-- **Do not let users click through safe links to original URL**
+  This setting is enabled by default, and this is the recommended value.
 
-Note that the setting EnableSafeLinksForWebAccessCompanion is not configurable.
+- **Do not track when users click safe links**: Enables or disables tracking of user clicks related to blocked URLs in Office documents. The recommended value for this setting is Off.
+
+- **Do not let users click through safe links to original URL**: Allows or blocks users from clicking through to the original blocked URL. The default and recommended value for this setting is On.
 
 For more information about the recommended values for Standard and Strict policy settings, see [Safe Links policy settings in custom policies for specific users](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users).
 
-- Your organization's email passes through Exchange Online Protection.
+## Always blocked URL list for Safe Links scanning
 
-## How to make sure ATP Safe Links protection is in place
+The **Block the following URLs** list defines the links that are always blocked by Safe Links scanning. These blocked URLs apply to all types of Safe Links scanning: email messages, Microsoft Teams, and Office documents. The maximum number of blocked URL entries is 500.
 
-As a global administrator or security administrator, be sure to review your [ATP Safe Links policies](set-up-atp-safe-links-policies.md) regularly. ATP Safe Links policies determine whether protection applies to hyperlinks in email messages only, or to URLs in Office documents as well.
+To configure the blocked URL list, see .
 
-After ATP Safe Links policies are in place, your organization's security team can see see how ATP Safe Links protection is working for your organization is by [viewing reports for Advanced Threat Protection](view-reports-for-atp.md).
+When a user clicks a blocked link, they're taken to a warning page that looks like this:
+
+![Safe Links link blocked by admin](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+
+Consider the following tips for defining always blocked URLs:
+
+- Don't include a forward slash (`/`) at the end of the URL. For example, use `https://www.contoso.com`, not `https://www.contoso.com/`.
+
+- A domain only-URL (for example `contoso.com` or `tailspintoys.com`) will block any URL that contains the domain.
+
+- You can block a subdomain without blocking the full domain. For example, `toys.contoso.com*` blocks any URL that contains the subdomain, but it doesn't block URLs that contain the full domain `contoso.com`.
+
+- You can include up to three wildcards (`*`) per URL entry.
+
+Examples of the values that you can enter and their results are described in the following table:
+
+****
+
+|Value|Result|
+|---|---|
+|`contoso.com` <br/> or <br/> `*contoso.com*`|Blocks the domain, subdomains, and paths. For example, `https://www.contoso.com`, `https://sub.contoso.com`, and `https://contoso.com/abc` are blocked.|
+|`https://contoso.com/a`|Blocks `https://contoso.com/a` but not additional subpaths like `https://contoso.com/a/b`.|
+|`https://contoso.com/a*`|Blocks `https://contoso.com/a` and additional subpaths like `https://contoso.com/a/b`.|
+|`https://toys.contoso.com*`|Blocks a subdomain (`toys` in this example) but allow clicks to other domain URLs (like `https://contoso.com` or `https://home.contoso.com`).|
+|
+
+## Always allowed URL list for Safe Links scanning
+
+> [!NOTE]
+> If your organization use Safe Links policies, adding the URL to the **Do not rewrite the following URLs** list is the only supported method for third party phishing tests.
+
+The **Do not rewrite the following URLs** list in Safe Links policies specifies the links that are excluded from Safe Links scanning, and are therefore always allowed. Because the list is defined in Safe Links policies, the always allowed nature of the links only applies to users who are included in the policy. When the user clicks on the specified link, the link bypasses Safe Links scanning and is always available to the user. If a user who isn't included in the policy clicks on the link, the link is still subject to scanning by Safe Links.
+
+The list of always allowed URLs apply to links in email messages or in Microsoft Teams.
+
+To create the always allowed URL list, see .
+
+Consider the following tips for defining always allowed URLs:
+
+- Consider adding commonly used internal URLs to the list list to improve the user experience. For example, if you have on-premises services, such as Skype for Business or SharePoint, you can add those URLs to exclude them from scanning.
+
+- If you already have a list of always URLs in your Safe Links policies, be sure to review the lists and add wildcards as appropriate. For example, your list has an entry like `https://contoso.com/a` and you want to also allow subptaths like `https://contoso.com/a/b`. Instead of adding a separate entry, add a wildcard to the existing entry so it looks like `https://contoso.com/a/*`.
+
+- You can include up to three wildcards (`*`) per URL entry. Wildcards explicitly include prefixes or subdomains. For example, the entry `contoso.com` is not the same as `*.contoso.com/*`, because `*.contoso.com/*` allows people to visit subdomains and paths in the specified domain.
+
+The following table lists examples of what you can enter and what effect those entries have.
+
+****
+
+|Example Entry|What It Does|
+|---|---|
+|`contoso.com`|Allows access to `https://contoso.com` but not subdomains or paths.|
+|`*.contoso.com/*`|Allows access to a domain, subdomains, and paths (for example, `https://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, or `https://www.contoso.com/a`). <br/><br/> This entry is inherently better than `*contoso.com*`, because it doesn't allow potentially fraudulent sites, like `https://www.falsecontoso.com` or `https://www.false.contoso.completelyfalse.com`|
+|`https://contoso.com/a`|Allows access to `https://contoso.com/a`, but not subpaths like `https://contoso.com/a/b`|
+|`https://contoso.com/a/*`|Allows access to `https://contoso.com/a` and subpaths like `https://contoso.com/a/b`|
+|

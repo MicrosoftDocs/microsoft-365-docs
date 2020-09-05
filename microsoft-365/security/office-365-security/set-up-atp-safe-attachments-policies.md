@@ -50,17 +50,10 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can do the procedures in this article:
+- To view, create, modify, and delete Safe Attachments policies, you need to be a member of one of the following role groups:
 
-  - To add, modify, and delete Safe Attachments policies, you need to be a member of one of the following role groups:
-
-    - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-
-  - For read-only access to Safe Attachments policies, you need to be a member of one of the following role groups:
-
-    - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  - **Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - For our recommended settings for Safe Attachments policies, see [ATP Safe Attachments policy settings](recommended-settings-for-eop-and-office365-atp.md#atp-safe-attachments-policy-settings).
 
@@ -232,7 +225,7 @@ To create a safe attachment policy, use this syntax:
 New-SafeAttachmentPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>]
 ```
 
-This example creates a safe attachment policy named All Contoso with the following values:
+This example creates a safe attachment policy named Contoso All with the following values:
 
 - Block messages that are found to contain malware by Safe Documents scanning (we aren't using the _Action_ parameter, and the default value is `Block`).
 - Redirection is enabled, and messages that are found to contain malware are sent to sec-ops@contoso.com for analysis and investigation.
@@ -433,14 +426,14 @@ To verify that you've successfully created, modified, or removed Safe Attachment
 
 - In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**. Verify the list of policies, their **Status** values, and their **Priority** values. To view more details, select the policy from the list, and view the details in the fly out.
 
-- In Exchange Online PowerShell, replace \<Name\> with the name of the policy or rule, run the following command, and verify the settings:
+- In Exchange Online PowerShell or Exchange Online Protection PowerShell, replace \<Name\> with the name of the policy or rule, run the following command, and verify the settings:
 
   ```PowerShell
-  Get-SafeAttachmentPolicy -Identity "<Name>"
+  Get-SafeAttachmentPolicy -Identity "<Name>" | Format-List
   ```
 
   ```PowerShell
-  Get-SafeAttachmentRule -Identity "<Name>"
+  Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
 To verify that Safe Attachments is scanning messages, check the available Advanced Threat Protection reports. For more information, see [View reports for Office 365 ATP](view-reports-for-atp.md) and [Use Explorer in the Security & Compliance Center](threat-explorer.md).
