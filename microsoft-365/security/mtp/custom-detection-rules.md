@@ -24,17 +24,17 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-Custom detection rules built from [Advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured endpoints. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
+Custom detection rules are rules you can design and tweak using [advanced hunting](advanced-hunting-overview.md) queries. These rules let you proactively monitor various events and system states, including suspected breach activity and misconfigured endpoints. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
 
 ## Required permissions for managing custom detections
 
 To manage custom detections, you need to be assigned one of these roles:
 
-- **Security administrator**—the security administrator or security admin role is an [Azure Active Directory role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) for managing various security settings in Microsoft 365 security center and various portals and services.
+- **Security administrator**—Users with this [Azure Active Directory role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) can manage security settings in Microsoft 365 security center and other portals and services.
 
-- **Security operator**— the security operator role is an [Azure Active Directory role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) for managing alerts and has global read-only access on security-related features, including all information in Microsoft 365 security center. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender ATP. If you have RBAC configured, you also need the **manage security settings** permission for Microsoft Defender ATP.
+- **Security operator**—Users with this [Azure Active Directory role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) can manage alerts and have global read-only access to security-related features, including all information in Microsoft 365 security center. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender ATP. If you have RBAC configured, you also need the **manage security settings** permission for Microsoft Defender ATP.
 
-To manage required permissions, a **global administrator** can do the following:
+To manage required permissions, a **global administrator** can:
 
 - Assign the **security administrator** or **security operator** role in [Microsoft 365 admin center](https://admin.microsoft.com/) under **Roles** > **Security admin**.
 - Check RBAC settings for Microsoft Defender ATP in [Microsoft Defender Security Center](https://securitycenter.windows.com/) under **Settings** > **Permissions** > **Roles**. Select the corresponding role to assign the **manage security settings** permission.
@@ -97,19 +97,22 @@ With the query in the query editor, select **Create detection rule** and specify
 - **Alert title**—title displayed with alerts triggered by the rule
 - **Severity**—potential risk of the component or activity identified by the rule
 - **Category**—threat component or activity identified by the rule
-- **MITRE ATT&CK techniques**—one or more attack techniques identified by the rule as documented in the [MITRE ATT&CK framework](https://attack.mitre.org/). This section does not apply and is hidden for certain alert categories, including malware, ransomware, suspicious activity, and unwanted software
+- **MITRE ATT&CK techniques**—one or more attack techniques identified by the rule as documented in the [MITRE ATT&CK framework](https://attack.mitre.org/). This section is hidden for certain alert categories, including malware, ransomware, suspicious activity, and unwanted software
 - **Description**—more information about the component or activity identified by the rule 
 - **Recommended actions**—additional actions that responders might take in response to an alert
 
 #### Rule frequency
-When saved, a new or edited custom detection rule immediately runs and checks for matches from  the past 30 days of data. The rule then runs again at fixed intervals and lookback durations based on the frequency you choose:
+When you save a new or edited rule, it immediately runs and checks for matches from the past 30 days of data. The rule then runs again at fixed intervals, applying a lookback duration based on the frequency you choose:
 
 - **Every 24 hours**—runs every 24 hours, checking data from the past 30 days
 - **Every 12 hours**—runs every 12 hours, checking data from the past 24 hours
 - **Every 3 hours**—runs every 3 hours, checking data from the past 6 hours
 - **Every hour**—runs hourly, checking data from the past 2 hours
 
-Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
+>[!NOTE]
+> Time filters in the query take precedence over the lookback duration.  
+
+Select the frequency that matches how closely you want to monitor detections. Consider your organization's capacity to respond to the alerts.
 
 ### 3. Choose the impacted entities.
 Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses. Identifying which of these columns represent the main impacted entity helps the service aggregate relevant alerts, correlate incidents, and target response actions.
@@ -147,7 +150,7 @@ When setting the scope, you can select:
 Only data from devices in scope will be queried. Also, actions will be taken only on those devices.
 
 ### 6. Review and turn on the rule.
-After reviewing the rule, click **Create** to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
+After reviewing the rule, select **Create** to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
 
 ## Manage existing custom detection rules
 You can view the list of existing custom detection rules, check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.
@@ -163,7 +166,7 @@ To view all existing custom detection rules, navigate to **Hunting** > **Custom 
 
 ### View rule details, modify rule, and run rule
 
-To view comprehensive information about a custom detection rule, select the name of rule from the list of rules in **Hunting** > **Custom detections**. This opens a page about the custom detection rule with general information about the rule, including the details of the alert, run status, and scope. It also provides the list of triggered alerts and triggered actions.
+To view comprehensive information about a custom detection rule, go to **Hunting** > **Custom detections** and then select the name of rule. You can then view general information about the rule, including information its run status and scope. The page also provides the list of triggered alerts and actions.
 
 ![Custom detection rule details page](../../media/custom-detection-details.png)<br>
 *Custom detection rule details*
@@ -178,14 +181,14 @@ You can also take the following actions on the rule from this page:
 
 ### View and manage triggered alerts
 
-In the rule details screen (**Hunting** > **Custom detections** > **[Rule name]**), go to **Triggered alerts** to view the list of alerts generated by matches to the rule. Select an alert to view detailed information about that alert and take the following actions on that alert:
+In the rule details screen (**Hunting** > **Custom detections** > **[Rule name]**), go to  **Triggered alerts**, which lists the alerts generated by matches to the rule. Select an alert to view detailed information about it and take the following actions:
 
 - Manage the alert by setting its status and classification (true or false alert)
 - Link the alert to an incident
 - Run the query that triggered the alert on advanced hunting
 
 ### Review actions
-In the rule details screen (**Hunting** > **Custom detections** > **[Rule name]**), go to **Triggered actions** to view the list of actions taken based on matches to the rule.
+In the rule details screen (**Hunting** > **Custom detections** > **[Rule name]**), go to **Triggered actions**, which lists the actions taken based on matches to the rule.
 
 >[!TIP]
 >To quickly view information and take action on an item in a table, use the selection column [&#10003;] at the left of the table.
