@@ -24,7 +24,7 @@ Inefficient mail flow rules (also known as transport rules) can lead to mail flo
 - Conditions that use complex regular expression (regex) pattern matching.
 - Conditions that use content checking in attachments.
 
-The **Fix slow mail flow rules** insight in the **Recommended for you** area of the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center notifies you when a mail flow rule is taking too long to complete. This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).
+The **Fix slow mail flow rules** insight in the **Recommended for you** area of the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) notifies you when a mail flow rule is taking too long to complete. This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).
 
 You can use this notification to help you to identify and fine-tune mail flow rules to help reduce mail flow delays.
 

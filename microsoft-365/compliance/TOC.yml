@@ -550,10 +550,10 @@
         - name: Export case data
           href: exporting-data-ediscover20.md
           items: 
+            - name: Download documents from a review set
+              href: download-documents-from-review-set.md
             - name: Export documents from a review set
               href: export-documents-from-review-set.md
-            - name: Download export jobs
-              href: download-export-jobs.md
         - name: Manage jobs
           href: managing-jobs-ediscovery20.md
         - name: Configure case settings
