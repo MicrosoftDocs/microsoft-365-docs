@@ -136,6 +136,14 @@ It's possible that a retention policy that's applied to SharePoint sites or OneD
 
 ### Retention policy for locations other than Teams and Yammer
 
+Use the following instructions for retention policies that apply to any of these services:
+
+- Exchange: Email and public folders
+- SharePoint: Sites
+- OneDrive: Accounts
+- Microsoft 365 groups
+- Skype for Business
+
 1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
 
 2. Select **New retention policy** to create a new retention policy.
