@@ -27,28 +27,26 @@ search.appverid:
 - Microsoft Threat Protection
 
 ## API description
-Updates properties of existing incidents.
-<br>Submission of **comment** is available with or without updating properties.
-<br>Updatable properties are: ```status```, ```determination```, ```classification``` and ```assignedTo```.
+Updates properties of existing incident.
+<br>Updatable properties are: ```status```, ```determination```, ```classification```, ```assignedTo``` and ```tags```.
 
 
 ## Limitations
-1. You can update incidents that available in the API. 
-2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+1. Rate limitations for this API are 50 calls per minute and 1500 calls per hour.
+2. You can set the ```determination``` only if the classification is TruePositive.
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Supported Microsoft Threat Protection APIs](api-supported.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access the Microsoft Threat Protection APIs](api-access.md).
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
-Application |	Incidents.ReadWrite.All |	'Read and write all incidents'
-Delegated (work or school account) | Incidents.ReadWrite | 'Read and write incidents'
+Application |	Incident.ReadWrite.All |	'Read and write all incidents'
+Delegated (work or school account) | Incident.ReadWrite | 'Read and write incidents'
 
 >[!NOTE]
 > When obtaining a token using user credentials:
->- The user needs to have at least 'incidents investigation' permission.
->- The user needs to have access to the device associated with the incident, based on device group settings. 
+>- The user needs to have permission to update the incident in the portal.
 
 
 ## HTTP request
@@ -72,11 +70,11 @@ In the request body, supply the values for the relevant fields that should be up
 
 Property | Type | Description
 :---|:---|:---
-status | String | Specifies the current status of the incident. The property values are: 'New', 'InProgress' and 'Resolved'.
-assignedTo | String | Owner of the incident
-classification | String | Specifies the specification of the incident. The property values are: 'Unknown', 'FalsePositive', 'TruePositive'. 
-determination | String | Specifies the determination of the incident. The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
-comment | String | Comment to be added to the incident.
+status | Enum | Specifies the current status of the alert. Possible values are: ```Active```, ```Resolved``` and ```Redirected```.
+assignedTo | string | Owner of the incident.
+classification | Enum | Specification of the alert. Possible values are: ```Unknown```, ```FalsePositive```, ```TruePositive```.
+determination | Enum | Specifies the determination of the alert. Possible values are: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
+tags | string List | List of Incident tags.
 
 
 
@@ -90,15 +88,13 @@ If successful, this method returns 200 OK, and the incident entity in the respon
 
 Here is an example of the request.
 
-```
-PATCH https://api.security.microsoft.com/api/incidents/<incidentID>
-Content-Type: application/json
+```json; PATCH https://api.security.microsoft.com/api/incidents/{id}
 {
-"status": "Resolved",
-"assignedTo": "secop2@contoso.com",
-"classification": "FalsePositive",
-"determination": "Malware",
-"comment": "Resolve my incident and assign to secop2"
+    "status": "Resolved",
+    "assignedTo": "secop2@contoso.com",
+    "classification": "TruePositive",
+    "determination": "Malware",
+    "tags": ["Yossi's playground", "Don't mess with the Zohan"]
 }
 
 ```

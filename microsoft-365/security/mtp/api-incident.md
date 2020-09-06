@@ -45,8 +45,8 @@ createdTime | DateTimeOffset | The date and time (in UTC) the Incident was creat
 lastUpdateTime | DateTimeOffset | The date and time (in UTC) the Incident was last updated.
 assignedTo | string | Owner of the Incident.
 severity | Enum | Severity of the Incident. Possible values are: ```UnSpecified```, ```Informational```, ```Low```, ```Medium``` and ```High```.
-status | Enum | Specifies the current status of the alert. Possible values are: ```Active```, ```Resolved``` and ```Redirected```.
-classification | Enum | Specification of the alert. Possible values are: ```Unknown```, ```FalsePositive```, ```TruePositive```.
-determination | Enum | Specifies the determination of the alert. Possible values are: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
+status | Enum | Specifies the current status of the incident. Possible values are: ```Active```, ```Resolved``` and ```Redirected```.
+classification | Enum | Specification of the incident. Possible values are: ```Unknown```, ```FalsePositive```, ```TruePositive```.
+determination | Enum | Specifies the determination of the incident. Possible values are: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | string List | List of Incident tags.
 alerts | Alert List | List of related alerts.
