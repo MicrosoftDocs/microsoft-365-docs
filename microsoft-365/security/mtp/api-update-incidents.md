@@ -33,7 +33,7 @@ Updates properties of existing incident.
 
 ## Limitations
 1. Rate limitations for this API are 50 calls per minute and 1500 calls per hour.
-2. You can set the ```determination``` only if the classification is TruePositive.
+2. You can set the ```determination``` only if the classification is set to TruePositive.
 
 
 ## Permissions
