@@ -44,4 +44,4 @@ search.appverid:
 Topic | Description
 :---|:---
 [Advanced Hunting API](api-advanced-hunting.md) | Run Advanced Hunting queries from API.
-[Incident APIs](api-incident.md) | Run API incident related API calls such as: list incidents, update incident and more.
+[Incident APIs](api-incident.md) | Run incident related API calls such as: list incidents, update incident and more.
