@@ -101,11 +101,13 @@ This page explains how to create an AAD application, get an access token to Micr
 #Install the ADAL.PS package if it's not installed.
 if(!(Get-Package adal.ps)) { Install-Package -Name adal.ps }
 
-$authority = "https://login.windows.net/common/oauth2/authorize"
+$authority = "https://login.windows.net/{tenant-id}" # replace {tenant-id} with your tenant ID.
+
+$clientId = "{application-id}" #replace {application-id} with your application ID.
+
+$redirectUri = "{redirect-uri}" # replace {redirect-uri} with your application redirect URI.
+
 $resourceUrl = "https://api.security.microsoft.com"
-#replace <application-id> and <redirect-uri>, with the Redirect URI and Application ID from your Azure AD application registration.
-$clientId = "<application-id>"
-$redirectUri = "<redirect-uri>"
 
 $response = Get-ADALToken -Resource $resourceUrl -ClientId $clientId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
 $response.AccessToken | clip

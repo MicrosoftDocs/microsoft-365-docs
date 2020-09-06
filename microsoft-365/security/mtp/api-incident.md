@@ -49,3 +49,4 @@ status | Enum | Specifies the current status of the alert. Possible values are: 
 classification | Enum | Specification of the alert. Possible values are: ```Unknown```, ```FalsePositive```, ```TruePositive```.
 determination | Enum | Specifies the determination of the alert. Possible values are: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | string List | List of Incident tags.
+alerts | Alert List | List of related alerts.
