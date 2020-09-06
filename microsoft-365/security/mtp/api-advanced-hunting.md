@@ -66,8 +66,12 @@ Parameter |	Type	| Description
 Query |	Text |	The query to run. **Required**.
 
 ## Response
-If successful, this method returns 200 OK, and _QueryResponse_ object in the response body.
+If successful, this method returns 200 OK, and _QueryResponse_ object in the response body. <br><br>
 
+The response object is divided to 3 parts (properties):<br>
+1) ```Stats``` - Query performance statistics.<br>
+2) ```Schema``` - The schema of the response, a list of Name-Type pairs for each column. <br>
+3) ```Results``` - A list of Advanced Hunting events.
 
 ## Example
 
@@ -76,9 +80,7 @@ Request
 Here is an example of the request.
 
 
-```
-POST https://api.security.microsoft.com/api/advancedhunting/run
-Content-type: application/json
+```json
 {
     "Query":"DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
 }
@@ -89,8 +91,6 @@ Response
 
 Here is an example of the response.
 
->[!NOTE]
->The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 {
