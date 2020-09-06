@@ -343,9 +343,9 @@ GET https://api.security.microsoft.com/api/incidents
 							"domainName": null,
 							"userSid": null,
 							"aadUserId": null,
-							"userPrincipalName": "nchen@microsoft.com",
-							"mailboxDisplayName": "Nicholas Chen",
-							"mailboxAddress": "nchen@microsoft.com",
+							"userPrincipalName": "testUser3@microsoft.com",
+							"mailboxDisplayName": "test User3",
+							"mailboxAddress": "testUser3@microsoft.com",
 							"clusterBy": null,
 							"sender": null,
 							"recipient": null,
@@ -376,9 +376,9 @@ GET https://api.security.microsoft.com/api/incidents
 							"domainName": null,
 							"userSid": null,
 							"aadUserId": null,
-							"userPrincipalName": "nbioud@microsoft.com",
-							"mailboxDisplayName": "Nadim Bioud",
-							"mailboxAddress": "nadim.bioud@microsoft.com",
+							"userPrincipalName": "testUser4@microsoft.com",
+							"mailboxDisplayName": "test User4",
+							"mailboxAddress": "test.User4@microsoft.com",
 							"clusterBy": null,
 							"sender": null,
 							"recipient": null,
@@ -409,12 +409,12 @@ GET https://api.security.microsoft.com/api/incidents
 							"domainName": null,
 							"userSid": null,
 							"aadUserId": null,
-							"userPrincipalName": "nadim.bioud@microsoft.com",
+							"userPrincipalName": "test.User4@microsoft.com",
 							"mailboxDisplayName": null,
 							"mailboxAddress": null,
 							"clusterBy": null,
-							"sender": "br.kamarpara@mail.pbgb.co.in",
-							"recipient": "nadim.bioud@microsoft.com",
+							"sender": "br.kapara@mail.pbgb.co.in",
+							"recipient": "test.User4@microsoft.com",
 							"subject": "[EXTERNAL] Attention",
 							"deliveryAction": null,
 							"securityGroupId": null,
@@ -568,7 +568,7 @@ GET https://api.security.microsoft.com/api/incidents
 							"processCreationTime": null,
 							"parentProcessId": null,
 							"parentProcessCreationTime": null,
-							"ipAddress": "49.50.81.120",
+							"ipAddress": "49.50.81.121",
 							"url": null,
 							"accountName": null,
 							"domainName": null,
@@ -602,3 +602,8 @@ GET https://api.security.microsoft.com/api/incidents
 ## SIEM use-case
 In the context of a SIEM, use the following format to query the latest incident or updated incident:
 `https://api.security.microsoft.com/api/incidents?$filter=lastUpdateTime+ge+2020-06-03T18:04:29.4633333Z`
+
+
+## Related topic
+- [Incident APIs](api-incident.md)
+- [Update incident](api-update-incidents.md)
