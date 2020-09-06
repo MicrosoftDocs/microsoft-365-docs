@@ -33,9 +33,9 @@ It will help you sort through incidents to prioritize and create an informed cyb
 
 The API returns incidents that occurred in the range of your environment retention policy, with the most recent incident showing at the top of the list, each incident contains an array of related alerts and their related entities.
 
-<br>Supports the following ***OData** operators:
+<br>Supports the following **OData** operators:
 <br>```$filter``` on: ```lastUpdateTime```, ```createdTime```, ```status``` and ```assignedTo``` properties.
-<br>```$top``` with max value of ***100***
+<br>```$top``` with max value of **100**
 <br>```$skip```
 
 ## Limitations
