@@ -25,30 +25,21 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-## End Point URI and Versioning
+### End Point URIs:
 
-### End Point URI: 
+The service base URI is: https://api.security.microsoft.com <br>
 
-> The service base URI is: https://api.security.microsoft.com
-> 
-> The queries based OData have the '/api' prefix. For example, to get incidents you can send GET request to https://api.security.microsoft.com/api/incidents
+>[!NOTE]
+>For better performance, you can use server closer to your Geo location:
+> - api-us.security.microsoft.com
+> - api-eu.security.microsoft.com
+> - api-uk.security.microsoft.com
 
-### Versioning:
+The resource for token acquisition should be: https://api.security.microsoft.com
 
-> The API supports versioning.
-> 
-> The current version is **V1.0**.
-> 
-> To use a specific version, use this format: https://api.security.microsoft.com/api/{Version}. For example: https://api.security.microsoft.com/api/v1.0/incidents
-> 
-> If you don't specify any version (e.g. https://api.security.microsoft.com/api/alerts ) you will get to the latest version.
-
-Learn more about the individual supported entities where you can run API calls to and details such as HTTP request values, request headers and expected responses.
-
-## In this section
+## List of available APIs:
 
 Topic | Description
 :---|:---
-Advanced Hunting | Run queries from API.
-List incidents | Run API calls to list incidents.
-Update incidents | Run API calls to update incidents.
+[Advanced Hunting API](api-advanced-hunting.md) | Run Advanced Hunting queries from API.
+[Incident APIs](api-incident.md) | Run API incident related API calls such as: list incidents, update incident and more.
