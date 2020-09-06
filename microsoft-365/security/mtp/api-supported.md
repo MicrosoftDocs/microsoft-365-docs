@@ -27,7 +27,7 @@ search.appverid:
 
 ### End Point URIs:
 
-The service base URI is: https://api.security.microsoft.com <br>
+- The service base URI is: https://api.security.microsoft.com <br>
 
 >[!NOTE]
 >For better performance, you can use server closer to your Geo location:
@@ -35,7 +35,9 @@ The service base URI is: https://api.security.microsoft.com <br>
 > - api-eu.security.microsoft.com
 > - api-uk.security.microsoft.com
 
-The resource for token acquisition should be: https://api.security.microsoft.com
+ - The resource for token acquisition should be: https://api.security.microsoft.com
+
+ - All the APIs under ```/api``` path are OData APIs. e.g. ```https://api.security.microsoft.com/api/incidents```
 
 ## List of available APIs:
 

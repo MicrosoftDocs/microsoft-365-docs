@@ -31,7 +31,9 @@ The Incident API exposes a collection of incidents that were flagged from device
 
 It will help you sort through incidents to prioritize and create an informed cybersecurity response decision.
 
-The API returns incidents that occurred in the range of your environment retention policy, with the most recent incident showing at the top of the list, each incident contains an array of related alerts and their respective evidence.
+The API returns incidents that occurred in the range of your environment retention policy, with the most recent incident showing at the top of the list, each incident contains an array of related alerts and their related entities.
+
+<br>Supports the following ***OData** operators.
 
 ## Limitations
 
