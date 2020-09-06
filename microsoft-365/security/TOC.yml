@@ -247,7 +247,7 @@
                   items:
                     - name: Microsoft Threat Protection API license and terms of use
                       href: mtp/api-terms.md
-                    - name: Access the Microsoft Threat Protection APIs
+                    - name: Access Microsoft Threat Protection APIs
                       href: mtp/api-access.md
                     - name: Hello World example
                       href: mtp/api-hello-world.md

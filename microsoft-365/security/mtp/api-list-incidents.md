@@ -33,16 +33,30 @@ It will help you sort through incidents to prioritize and create an informed cyb
 
 The API returns incidents that occurred in the range of your environment retention policy, with the most recent incident showing at the top of the list, each incident contains an array of related alerts and their related entities.
 
-<br>Supports the following **OData** operators:
+<br>The API supports the following **OData** operators:
 <br>```$filter``` on: ```lastUpdateTime```, ```createdTime```, ```status``` and ```assignedTo``` properties.
 <br>```$top``` with max value of **100**
 <br>```$skip```
 
 ## Limitations
 
+1. Maximum page size is 100.
+2. Rate limitations for this API are 50 calls per minute and 1500 calls per hour.
 
 ## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access Microsoft Threat Protection APIs](api-access.md)
 
+Permission type |	Permission	|	Permission display name
+:---|:---|:---
+Application |	Incident.Read.All |	'Read all incidents'
+Application |	Incident.ReadWrite.All | 'Read and write all incidents'
+Delegated (work or school account) | Incident.Read | 'Read incidents'
+Delegated (work or school account) | Incident.ReadWrite | 'Read and write incidents'
+
+>[!Note]
+> When obtaining a token using user credentials:
+>- The user needs to have permission the view incidents in the portal.
+>- The response will include only incidents that the user is exposed to.
 
 ## HTTP request
 
