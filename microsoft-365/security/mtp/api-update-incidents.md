@@ -88,7 +88,11 @@ If successful, this method returns 200 OK, and the incident entity in the respon
 
 Here is an example of the request.
 
-```json; PATCH https://api.security.microsoft.com/api/incidents/{id}
+```
+ PATCH https://api.security.microsoft.com/api/incidents/{id}
+```
+
+```json
 {
     "status": "Resolved",
     "assignedTo": "secop2@contoso.com",
