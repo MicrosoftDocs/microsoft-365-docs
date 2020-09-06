@@ -1,7 +1,7 @@
 ---
 title: Advanced hunting APIs
-description: 
-keywords: 
+description: Learn how to run Advanced Hunting queries using Microsoft Threat Protection API
+keywords: Advanced Hunting, APIs, api, MTP
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy

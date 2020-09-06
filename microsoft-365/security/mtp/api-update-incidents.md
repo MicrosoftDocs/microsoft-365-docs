@@ -1,6 +1,6 @@
 ---
 title: Update incidents API
-description: 
+description: Learn how to update incidents using Microsoft Threat Protection API
 keywords: 
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise

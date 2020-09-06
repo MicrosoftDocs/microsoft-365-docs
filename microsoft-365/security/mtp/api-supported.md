@@ -1,7 +1,7 @@
 ---
 title: Supported Microsoft Threat Protection APIs
-description: 
-keywords: 
+description: Supported Microsoft Threat Protection APIs
+keywords: MTP, APIs, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
