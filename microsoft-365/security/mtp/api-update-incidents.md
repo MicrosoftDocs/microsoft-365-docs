@@ -96,15 +96,4 @@ Here is an example of the request.
     "determination": "Malware",
     "tags": ["Yossi's playground", "Don't mess with the Zohan"]
 }
-
 ```
-
-| **Property**   | **Type**       | **Description**                                                                                                                                                            |
-|----------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Status         | String         | Specifies the current status of the incident. The property values are: active and resolved.                                                                              |
-| assignedTo     | String         | Owner of the incident.                                                                                                                                                      |
-| classification | String         | Specifies the specification of the incident. The property values are: 'Unknown', 'FalsePositive', 'TruePositive'.                                                          |
-| determination  | String         | Specifies the determination of the incident.                                                                                                                               |
-|                |                | The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'                                             |
-| comment        | String         | Comment to be added to the incident.                                                                                                                                          |
-| tags           | List\<String\> | Tag the incident \*\*Coming soon 8/15/2020\*\*
