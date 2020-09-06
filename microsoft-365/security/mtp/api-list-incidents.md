@@ -599,11 +599,6 @@ GET https://api.security.microsoft.com/api/incidents
 }
 ```
 
-## SIEM use-case
-In the context of a SIEM, use the following format to query the latest incident or updated incident:
-`https://api.security.microsoft.com/api/incidents?$filter=lastUpdateTime+ge+2020-06-03T18:04:29.4633333Z`
-
-
 ## Related topic
 - [Incident APIs](api-incident.md)
 - [Update incident](api-update-incidents.md)
