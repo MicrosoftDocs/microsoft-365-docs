@@ -97,3 +97,8 @@ Here is an example of the request.
     "tags": ["Yossi's playground", "Don't mess with the Zohan"]
 }
 ```
+
+
+## Related topic
+- [Incident APIs](api-incident.md)
+- [List incidents](api-list-incidents.md)
