@@ -30,7 +30,7 @@ keywords: billing profile, invoices, charges, managed charges
 
 ::: moniker-end
 
-For commercial customers who buy products and services from Microsoft, billing profiles let you customize what items are included on your invoice, and how you pay your invoices.
+For commercial customers who buy products and services from Microsoft, Microsoft approved resllers or Microsoft Partners, billing profiles let you customize what items are included on your invoice, and how you pay your invoices.
 
 Billing profiles include the following information:
 
