@@ -23,7 +23,7 @@ After Reuters Eikon data is stored in user mailboxes, you can apply Microsoft 36
 
 ## Overview of archiving Reuters Eikon data
 
-The following overview explains the process of using a connector to archive the Reuters Eikon information in Microsoft 365.
+The following overview explains the process of using a connector to archive Reuters Eikon data in Microsoft 365.
 
 ![Archiving workflow for Reuters Eikon data](../media/ReutersEikonConnectorWorkflow.png)
 
@@ -57,13 +57,13 @@ The first step is to access to the **Data Connectors** page in the Microsoft 365
 
 ## Step 2: Configure the Reuters Eikon connector on the Globanet Merge1 site
 
-The second step is to configure the Reuters Eikon connector on the Merge1 site. For information about how to configure the Reuters Eikon connector in the Globanet Merge1 site, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Eikon%20User%20Guide%20.pdf).
+The second step is to configure the Reuters Eikon connector on the Merge1 site. For information about how to configure the Reuters Eikon connector on the Globanet Merge1 site, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Eikon%20User%20Guide%20.pdf).
 
 After you click **Save & Finish**, you are directed back to the Microsoft 365 compliance center, to the **User mapping** page in the connector wizard.
 
 ## Step 3: Map users and complete the connector setup
 
-To map users and complete the connector set up in the Microsoft 365 compliance center, follow these steps:
+To map users and complete the connector setup in the Microsoft 365 compliance center, follow these steps:
 
 1. On the **Map external users to Microsoft 365 users** page, enable automatic user mapping. The Reuters Eikon items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user’s mailbox.
 

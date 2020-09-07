@@ -26,7 +26,7 @@ Content understanding lets you create *models* to identify and extract the infor
 - [Document understanding models](document-understanding-overview.md)
 - [Form processing models](form-processing-overview.md)
 
-While both models are used for generally the same purpose, there are key differences that will affect which ones you may choose to use.
+While both models are used for generally the same purpose, there are key differences that will affect which one you might choose to use.
 
 
 ## Structured versus unstructured and semi-structured content
@@ -41,7 +41,7 @@ Document understanding models are created and managed in a SharePoint content ce
 
 When you create a document understanding model, you create a new [SharePoint content type](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) that is saved to the SharePoint Content Types gallery. You can optionally use existing content types to define your model if needed.
 
-Form processing models are created in PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview), but the creation is initiated directly from a SharePoint Document library. Form processing model creation needs to be enabled on your document library in order for a user to create a form processing model for it, and an admin can do this in the content understanding admin settings. Form processing models use PowerAutomate flows to process files when they are uploaded to the document library.
+Form processing models are created in PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview), but the creation is initiated directly from a SharePoint document library. Form processing model creation needs to be enabled on your document library in order for a user to create a form processing model for it, and an admin can do this in the content understanding admin settings. Form processing models use PowerAutomate flows to process files when they are uploaded to the document library.
 
 Form processing models also create new [SharePoint content types](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), which are also stored in the SharePoint Content Types gallery.
 
