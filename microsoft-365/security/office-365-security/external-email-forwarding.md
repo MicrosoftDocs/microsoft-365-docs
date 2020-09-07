@@ -28,6 +28,9 @@ External forwarding is controlled by the *outbound anti-spam policy* and scoped 
 
 See [Configure outbound spam filtering in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide) for more information on how to configure these settings.
 
+> [!NOTE]
+> Disabling automatic forwarding will also Disable Inbox Redirect Rule to external addresses.
+
 ## Controlling external email forwarding
 
 As an admin of an organization you may have company requirements to restrict or control who is able to automatically forward emails using inbox rules, or SMTP forwarding, outside of the organization. Email forwarding can be a useful feature, but can also pose a risk through the potential disclosure of information, even by providing information to attackers that can be leveraged to attack the organization or its partners.
