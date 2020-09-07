@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid:
@@ -17,7 +17,7 @@ description: "Admins can learn how to use the Mail flow map in the Mail flow das
 
 # Mail flow map in the Security & Compliance Center
 
-The **Mail flow map** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center gives insight as to how mail flows through your organization. You can use this information to learn patterns, identify anomalies, and fix issues as they occur.
+The **Mail flow map** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) gives insight as to how mail flows through your organization. You can use this information to learn patterns, identify anomalies, and fix issues as they occur.
 
 ![Mail flow map widget in the Mail flow dashboard in the Security & Compliance Center](../../media/mfi-mail-flow-map-widget.png)
 

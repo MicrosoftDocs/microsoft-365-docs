@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid:
@@ -17,7 +17,7 @@ description: "Admins can learn how to use the New users forwarding email insight
 
 It's suspicious when new user accounts in your organization suddenly start forwarding email messages to external domains.
 
-The **New domains being forwarded email** insight notifies you when newly-created users in your organization are forwarding messages to external domains. This condition could indicate compromised admin accounts were used to create the new users. If you suspect the accounts have been compromised, see [Responding to a compromised email account](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
+The **New domains being forwarded email** insight in the [Security & Compliance Center](https://protection.office.com) notifies you when newly-created users in your organization are forwarding messages to external domains. This condition could indicate compromised admin accounts were used to create the new users. If you suspect the accounts have been compromised, see [Responding to a compromised email account](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
 
 This insight appears only when the issue is detected, and it appears on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page.
 
@@ -53,11 +53,11 @@ The following charts are available in the report view:
 
 - **Show data for: New forwarding users**:
 
-  ![New forwarding users view in the Forwarding modifications report](../../media/forwarding-modificiations-report-new-forwarding-users.png)
+  ![New forwarding users view in the Forwarding modifications report](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
 - **Show data for: New forwarding domains**:
 
-  ![New forwarded domains view in the Forwarding modifications report](../../media/forwarding-modificiations-report-new-forwarded-domains.png)
+  ![New forwarded domains view in the Forwarding modifications report](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
 If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
 
