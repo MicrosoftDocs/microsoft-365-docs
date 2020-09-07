@@ -404,6 +404,13 @@
             - name: Protect on-premises mailboxes in China with standalone EOP
               href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
         - name: Detect
+          items: 
+            - name: Install and use the Junk Email Reporting add-in
+              href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
+            - name: Report junk email and phishing in Outlook on the web
+              href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+            - name: Enable the Report Message add-in
+              href: ./office-365-security/enable-the-report-message-add-in.md
         - name: Investigate
           items: 
             - name: Use Admin Submission
@@ -604,14 +611,6 @@
               href: ./office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
             - name: Reporting and message trace in standalone EOP
               href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
-        - name: How-to
-          items: 
-            - name: Install and use the Junk Email Reporting add-in
-              href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
-            - name: Report junk email and phishing in Outlook on the web
-              href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-            - name: Enable the Report Message add-in
-              href: ./office-365-security/enable-the-report-message-add-in.md
         - name: Employee training resources
     - name: Microsoft 365 for Enterprise
       href: https://docs.microsoft.com/microsoft-365/enterprise
