@@ -1,8 +1,6 @@
 - name: Microsoft Bookings
-  href: bookings.yml
+  href: bookings-overview.md
   items:
-  - name: Overview
-    href: bookings-overview.md
   - name: Setup
     items:
     - name: Enter your business information
