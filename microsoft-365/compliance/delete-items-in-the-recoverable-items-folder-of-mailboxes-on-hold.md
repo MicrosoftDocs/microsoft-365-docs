@@ -283,7 +283,7 @@ Here's an overview of the process to search for and delete items in a user's Rec
 
    - **DiscoveryHolds**: Contains hard-deleted items that have been preserved by an eDiscovery hold or a retention policy. This subfolder isn't visible to end users.
 
-   - **SubstrateHolds**: Contains hard-deleted items from Teams and other cloud-based apps that have been preserved by a retention policy or other type of hold.This subfolder isn't visible to end users.
+   - **SubstrateHolds**: Contains hard-deleted items from Teams and other cloud-based apps that have been preserved by a retention policy or other type of hold. This subfolder isn't visible to end users.
 
 3. Use the **New-ComplianceSearch** cmdlet (in Security & Compliance Center PowerShell) or use the Content search tool in the compliance center to create a content search that returns items from the target user's Recoverable Items folder. You can do this by including the FolderId in the search query for all subfolders that you want to search. For example, the following query returns all messages in the Purges and eDiscoveryHolds subfolders:
 
@@ -302,8 +302,15 @@ Here's an overview of the process to search for and delete items in a user's Rec
    New-ComplianceSearchAction -SearchName "RecoverableItems" -Purge -PurgeType HardDelete
    ```
 
-   > [!NOTE]
-   > A maximum of 10 items (per mailbox) are deleted when you run the previous command. That means you may have to run the `New-ComplianceSearchAction -Purge` command multiple times to delete the items that you want to delete in the Recoverable Items folder.
+5. A maximum of 10 items per mailbox are deleted when you run the previous command. That means you may have to run the `New-ComplianceSearchAction -Purge` command multiple times to delete all the items that you want to delete in the Recoverable Items folder. To delete additional items, you first have to remove the previous compliance search purge action. You do this by running the `Remove-ComplianceSearchAction` cmdlet. For example, to delete the purge action that was run in the previous step, run the following command:
+
+   ```powershell
+   Remove-ComplianceSearchAction "RecoverableItems_Purge"
+   ```
+
+After you do this, you can create a new compliance search purge action to delete more items. You'll have to delete each purge action before creating a new one.
+
+To get a list of the compliance search actions, you can run the `Get-ComplianceSearchAction` cmdlet. Purge actions are identified by `_Purge` appended to the search name.
 
 ### Verify that items were deleted
 
