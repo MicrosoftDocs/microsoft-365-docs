@@ -287,7 +287,7 @@ Here's an overview of the process to search for and delete items in a user's Rec
 
 3. Use the **New-ComplianceSearch** cmdlet (in Security & Compliance Center PowerShell) or use the Content search tool in the compliance center to create a content search that returns items from the target user's Recoverable Items folder. You can do this by including the FolderId in the search query for all subfolders that you want to search. For example, the following query returns all messages in the Purges and eDiscoveryHolds subfolders:
 
-   ```powershell
+   ```text
    folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
    ```
 
@@ -308,9 +308,9 @@ Here's an overview of the process to search for and delete items in a user's Rec
    Remove-ComplianceSearchAction "RecoverableItems_Purge"
    ```
 
-After you do this, you can create a new compliance search purge action to delete more items. You'll have to delete each purge action before creating a new one.
+   After you do this, you can create a new compliance search purge action to delete more items. You'll have to delete each purge action before creating a new one.
 
-To get a list of the compliance search actions, you can run the `Get-ComplianceSearchAction` cmdlet. Purge actions are identified by `_Purge` appended to the search name.
+   To get a list of the compliance search actions, you can run the `Get-ComplianceSearchAction` cmdlet. Purge actions are identified by `_Purge` appended to the search name.
 
 ### Verify that items were deleted
 
