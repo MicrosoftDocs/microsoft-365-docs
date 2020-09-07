@@ -318,6 +318,9 @@
               href: ./office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
         - name: Evaluate
         - name: Plan
+          items: 
+            - name: Give users access to the Security center
+              href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md 
         - name: Deploy
           items: 
             - name: Configure ATP anti-phishing policies
@@ -383,6 +386,14 @@
                   href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
                 - name: Set up virtual certificate collection to validate S/MIME
                   href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
+                - name: Configure groups and users for a political campaign dev/test environment
+                  href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
+                - name: Create team sites in a political campaign dev/test environment
+                  href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
+                - name: Move domains and settings from one EOP organization to another
+                   href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
+                - name: Manage role groups in standalone EOP
+                   href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
         - name: Migrate
         - name: Prevent
           items: 
@@ -390,11 +401,15 @@
               href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
             - name: Manage URLs in the Tenant Allow/Block List
               href: ./office-365-security/tenant-allow-block-list.md
+            - name: Protect on-premises mailboxes in China with standalone EOP
+              href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
         - name: Detect
         - name: Investigate
           items: 
             - name: Use Admin Submission
               href: ./office-365-security/admin-submission.md
+            - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
+              href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
         - name: Respond
           items: 
             - name: Remove blocked users from the Restricted Users portal
@@ -479,6 +494,10 @@
               href: ./office-365-security/sending-mail-to-office-365.md
             - name: Services for non-customers
               href: ./office-365-security/services-for-non-customers.md
+            - name: Run an administrator role group report in standalone EOP
+              href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
+            - name: View the admin audit log in standalone EOP
+              href: ./office-365-security/view-the-admin-audit-log-eop.md
             - name: Best practices for configuring EOP
               href: ./office-365-security/best-practices-for-configuring-eop.md
             - name: Recommended settings for configuring EOP and Office 365 ATP Security
@@ -585,26 +604,6 @@
               href: ./office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
             - name: Reporting and message trace in standalone EOP
               href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
-        - name: Security administration
-          items: 
-            - name: Give users access to the Security center
-              href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
-            - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
-              href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
-            - name: Configure groups and users for a political campaign dev/test environment
-              href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-            - name: Create team sites in a political campaign dev/test environment
-              href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: Move domains and settings from one EOP organization to another
-              href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
-            - name: Manage role groups in standalone EOP
-              href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
-            - name: Protect on-premises mailboxes in China with standalone EOP
-              href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
-            - name: Run an administrator role group report in standalone EOP
-              href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
-            - name: View the admin audit log in standalone EOP
-              href: ./office-365-security/view-the-admin-audit-log-eop.md
         - name: How-to
           items: 
             - name: Install and use the Junk Email Reporting add-in
