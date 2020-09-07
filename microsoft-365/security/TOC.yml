@@ -391,9 +391,9 @@
                 - name: Create team sites in a political campaign dev/test environment
                   href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
                 - name: Move domains and settings from one EOP organization to another
-                   href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
+                  href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
                 - name: Manage role groups in standalone EOP
-                   href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
+                  href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
         - name: Migrate
         - name: Prevent
           items: 
