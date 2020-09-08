@@ -397,6 +397,8 @@
         - name: Migrate
         - name: Prevent
           items: 
+            - name: Configuration analyzer for preset security policies
+              href: ./office-365-security/configuration-analyzer-for-security-policies.md
             - name: Use mail flow rules to set the SCL in messages
               href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
             - name: Manage URLs in the Tenant Allow/Block List
@@ -411,14 +413,22 @@
               href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
             - name: Enable the Report Message add-in
               href: ./office-365-security/enable-the-report-message-add-in.md
+            - name: Zero-hour auto purge - protection against spam and malware
+              href: ./office-365-security/zero-hour-auto-purge.md
         - name: Investigate
           items: 
             - name: Use Admin Submission
               href: ./office-365-security/admin-submission.md
             - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
               href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
+            - name: Use mail flow rules to see what your users are reporting to Microsoft
+              href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
+            - name: Submit malware and non-malware to Microsoft
+              href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
         - name: Respond
           items: 
+            - name: Recover from a ransomware attack
+              href: ./office-365-security/recover-from-ransomware.md
             - name: Remove blocked users from the Restricted Users portal
               href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
             - name: Use the delist portal to remove yourself from the blocked senders list
@@ -529,16 +539,6 @@
           items: 
             - name: Manually submit messages to Microsoft
               href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
-            - name: Recover from a ransomware attack
-              href: ./office-365-security/recover-from-ransomware.md
-            - name: Use mail flow rules to see what your users are reporting to Microsoft
-              href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
-            - name: Submit malware and non-malware to Microsoft
-              href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
-            - name: Configuration analyzer for preset security policies
-              href: ./office-365-security/configuration-analyzer-for-security-policies.md
-            - name: Zero-hour auto purge - protection against spam and malware
-              href: ./office-365-security/zero-hour-auto-purge.md
             - name: Report messages and files to Microsoft
               href: ./office-365-security/report-junk-email-messages-to-microsoft.md
             - name: Tune anti-phishing protection
