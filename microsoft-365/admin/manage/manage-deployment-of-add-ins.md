@@ -127,19 +127,6 @@ Updates for add-ins happen as follows:
     
 - **Office Store add-in:** When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the add-in will update later in Centralized Deployment. The next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
   
-## Allow single sign-on to add-ins
-
-Complete the following steps to grant single sign-on (SSO) to add-ins.
-
-1. In the admin center, go to the **Settings** \> **Add-ins** page.
-
-   If any add-ins have requested SSO update, you will see a notification on the top od the **Add-ins** page.
-
-    The **Status** column for the specific add-ins contains the text *Update Pending*.
-
-3. Select the add-in to be updated, and in the **Edit** pane select Update to initiate the approval process and view the permissions that the add-in is going to access.
-1. Choose the groups to assign the SSO capability for and then grant access by choosing **Accept and Update**.
-
 ## Learn more
 
 [Manage add-ins in the admin center](manage-addins-in-the-admin-center.md)
