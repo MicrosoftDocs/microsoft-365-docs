@@ -37,7 +37,7 @@ The following overview explains the process of using a connector to archive Work
 
 ## Before you begin
 
-- Create a Merge1 account by accepting their terms and conditions for the Workplace from Facebook connector. Here you will need to contact [Globanet Customer Support](https://globanet.com/contact-us/). You need to sign into this account when you create the connector in Step 1.
+- Create a Globanet Merge1 account for Microsoft connectors. To do this, contact [Globanet Customer Support](https://globanet.com/ms-connectors-contact). You need to sign into this account when you create the connector in Step 1.
 
 - Create a custom integration at https://my.workplace.com/work/admin/apps/ to retrieve data from Workplace via APIs for compliance and eDiscovery purposes.
 
@@ -67,7 +67,7 @@ After you click **Save & Finish**, you are directed back to the Microsoft 365 co
 
 ## Step 3: Map users and complete the connector setup
 
-To map users and complete the connector set up in the Microsoft 365 compliance center, follow these steps:
+To map users and complete the connector setup in the Microsoft 365 compliance center, follow these steps:
 
 1. On the **Map external users to Microsoft 365 users** page, enable automatic user mapping. The Workplace items include a property called *Email* that contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user’s mailbox.
 
