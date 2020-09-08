@@ -1,5 +1,5 @@
 ---
-title: Download export jobs for a case
+title: Download export jobs for an Advanced eDiscovery case
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
+ROBOTS: NOINDEX, NOFOLLOW 
 ms.custom: seo-marvel-mar2020
 description: "Install and use the Azure Storage Explorer to download documents that were exported from a review set in Advanced eDiscovery."
 ---
 
-# Download export jobs
+# Download export jobs in an Advanced eDiscovery case
 
-When you export documents from a review set in an Advanced eDiscovery case, the documents are uploaded to a Microsoft-provided Azure Storage location or to an Azure Storage location managed by your organization. The type of Azure Storage location used depends on which option was selected when the documents were exported. 
+When you export documents from a review set in an Advanced eDiscovery case, the documents are uploaded to a Microsoft-provided Azure Storage location or to an Azure Storage location managed by your organization. The type of Azure Storage location used depends on which option was selected when the documents were exported.
 
 This article provides instructions for how to use the Microsoft Azure Storage Explorer to connect to an Azure Storage location to browse and download the exported documents. For more information about Azure Storage Explorer, see [Quickstart: Use Azure Storage Explorer](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
@@ -45,31 +45,31 @@ The next step is to obtain the shared access signature (SAS) URL that's generate
 
 The final step is to use the Azure Storage Explorer and the SAS URL to connect to the Azure Storage location and download the documents that you exported to a local computer.
 
-1.  Open the Azure Storage Explorer that you installed in Step 1.
+1. Open the Azure Storage Explorer that you installed in Step 1.
 
 2. Click the **Add account** icon. Alternatively, you can right-click **Storage Accounts**.
 
    ![Click the Add account icon](../media/AzureStorageConnect.png)
 
-3.  On the **Connect to Azure Storage** page, click **Use a shared access signature (SAS) URI** and then click **Next**.
+3. On the **Connect to Azure Storage** page, click **Use a shared access signature (SAS) URI** and then click **Next**.
 
     ![Click Use a shared access signature (SAS) URI and then click Next](../media/AzureStorageConnect2.png)
 
-4.  On the **Attach with SAS URI** page, click in the URI box, and then paste the SAS URL that you obtained in Step 2. 
+4. On the **Attach with SAS URI** page, click in the URI box, and then paste the SAS URL that you obtained in Step 2. 
 
     ![Paste the SAS URL in the URI box](../media/AzureStorageConnect3.png)
 
     Notice that a portion of the SAS URL is displayed in the **Display name** box. This will be used as the display name of the container that's created under the **Storage accounts** after you connect to the storage location. This name consists of the ID of the Advanced eDiscovery case is from and a unique identifier. You can keep the default display name or change it. If you change it, the display name must be unique.
 
-5.  Click **Next**.
+5. Click **Next**.
 
     The **Connection summary** page is displayed.
-   
+
     ![Click Connect on the Connection summary page to connect to the Azure Storage location](../media/AzureStorageConnect4.png)
 
-6. On the **Connection summary** page, review the connection information, and then click **Connect**. 
+6. On the **Connection summary** page, review the connection information, and then click **Connect**.
 
-    The **Blob containers** node (under **Storage Accounts** > **(Attached Containers)** \> is opened. 
+    The **Blob containers** node (under **Storage Accounts** > **(Attached Containers)** \> is opened.
 
     ![Export jobs in the Blobs containers node](../media/AzureStorageConnect5.png)
 
