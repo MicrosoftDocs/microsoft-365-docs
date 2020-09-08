@@ -267,6 +267,8 @@
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
             - name: New Microsoft 365 security center
               href: ./mtp/overview-security-center.md
+            - name: Report messages and files to Microsoft
+              href: ./office-365-security/report-junk-email-messages-to-microsoft.md
             - name: Anti-malware protection
               href: ./office-365-security/anti-malware-protection.md
             - name: Anti-spam protection
@@ -425,10 +427,20 @@
               href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
             - name: Submit malware and non-malware to Microsoft
               href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+            - name: Walkthrough - ATP Spoof intelligence insight
+              href: ./office-365-security/walkthrough-spoof-intelligence-insight.md
+            - name: Campaign Views
+              href: ./office-365-security/campaigns.md
+            - name: View details and results of an automated investigation
+              href: ./office-365-security/air-view-investigation-results.md
+            - name: View information about malicious files
+              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Respond
           items: 
             - name: Recover from a ransomware attack
               href: ./office-365-security/recover-from-ransomware.md
+            - name: Tune anti-phishing protection
+              href: ./office-365-security/tuning-anti-phishing.md
             - name: Remove blocked users from the Restricted Users portal
               href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
             - name: Use the delist portal to remove yourself from the blocked senders list
@@ -539,18 +551,6 @@
           items: 
             - name: Manually submit messages to Microsoft
               href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
-            - name: Report messages and files to Microsoft
-              href: ./office-365-security/report-junk-email-messages-to-microsoft.md
-            - name: Tune anti-phishing protection
-              href: ./office-365-security/tuning-anti-phishing.md
-            - name: Walkthrough - ATP Spoof intelligence insight
-              href: ./office-365-security/walkthrough-spoof-intelligence-insight.md
-            - name: View information about malicious files
-              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-            - name: Campaign Views
-              href: ./office-365-security/campaigns.md
-            - name: View details and results of an automated investigation
-              href: ./office-365-security/air-view-investigation-results.md
             - name: Review and approve (or reject) pending actions
               href: ./office-365-security/air-review-approve-pending-completed-actions.md
             - name: Handle false positives/negatives
