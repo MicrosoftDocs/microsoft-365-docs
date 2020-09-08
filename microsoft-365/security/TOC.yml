@@ -357,6 +357,8 @@
               href: ./office-365-security/email-validation-and-authentication.md
             - name: Set up SPF to help prevent spoofing
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
+            - name: Add support for anonymous inbound email over IPv6
+              href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: Use DKIM to validate outbound email
               href: ./office-365-security/use-dkim-to-validate-outbound-email.md
             - name: Use DMARC to validate email
@@ -379,6 +381,12 @@
               href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: Set up a custom blocked URLs list
               href: ./office-365-security/set-up-a-custom-blocked-urls-list-atp.md
+            - name: Set up your EOP service
+              href: ./office-365-security/set-up-your-eop-service.md
+            - name: Manage mail users in standalone EOP
+              href: ./office-365-security/manage-mail-users-in-eop.md
+            - name: Manage groups in standalone EOP
+              href: ./office-365-security/manage-groups-in-eop.md
             - name: Configure standalone EOP to deliver spam to the Junk Email folder
               href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
             - name: S/MIME
@@ -429,6 +437,8 @@
           items: 
             - name: Use Admin Submission
               href: ./office-365-security/admin-submission.md
+            - name: Manually submit messages to Microsoft
+              href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
             - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
               href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
             - name: Use mail flow rules to see what your users are reporting to Microsoft
@@ -459,6 +469,12 @@
               href: ./office-365-security/mfi-non-delivery-report.md
             - name: Outbound and inbound mail flow insight
               href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
+            - name: Queues insight
+              href: ./office-365-security/mfi-queue-alerts-and-queues.md
+            - name: SMTP Auth clients insight and report
+              href: ./office-365-security/mfi-smtp-auth-clients-report.md
+            - name: Top domain mail flow status insight
+              href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
         - name: Respond
           items: 
             - name: Recover from a ransomware attack
@@ -586,25 +602,9 @@
             - name: SIEM server integration
               href: ./office-365-security/siem-server-integration.md
         - name: Security operations
-          items: 
-            - name: Manually submit messages to Microsoft
-              href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
-            - name: Add support for anonymous inbound email over IPv6
-              href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
-            - name: Queues insight
-              href: ./office-365-security/mfi-queue-alerts-and-queues.md
-            - name: SMTP Auth clients insight and report
-              href: ./office-365-security/mfi-smtp-auth-clients-report.md
-            - name: Top domain mail flow status insight
-              href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
+          items:   
             - name: Attack Simulator in Office 365 ATP
               href: ./office-365-security/attack-simulator.md
-            - name: Set up your EOP service
-              href: ./office-365-security/set-up-your-eop-service.md
-            - name: Manage mail users in standalone EOP
-              href: ./office-365-security/manage-mail-users-in-eop.md
-            - name: Manage groups in standalone EOP
-              href: ./office-365-security/manage-groups-in-eop.md
             - name: Use mail flow rules to filter bulk email in EOP
               href: ./office-365-security/use-transport-rules-to-configure-bulk-email-filtering.md
             - name: Use mail flow rules to block messages with executable attachments in EOP
