@@ -269,6 +269,12 @@
               href: ./mtp/overview-security-center.md
             - name: Report messages and files to Microsoft
               href: ./office-365-security/report-junk-email-messages-to-microsoft.md
+            - name: View ATP reports in the Security & Compliance Center
+              href: ./office-365-security/view-reports-for-atp.md
+            - name: Understanding latest attacks with threat analytics
+              href: ./mtp/latest-attack-campaigns.md
+            - name: Use Threat Trackers
+              href: ./office-365-security/threat-trackers.md
             - name: Anti-malware protection
               href: ./office-365-security/anti-malware-protection.md
             - name: Anti-spam protection
@@ -405,6 +411,8 @@
               href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
             - name: Manage URLs in the Tenant Allow/Block List
               href: ./office-365-security/tenant-allow-block-list.md
+            - name: Message trace in the Security & Compliance Center
+              href: ./office-365-security/message-trace-scc.md
             - name: Protect on-premises mailboxes in China with standalone EOP
               href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
         - name: Detect
@@ -433,6 +441,8 @@
               href: ./office-365-security/campaigns.md
             - name: View details and results of an automated investigation
               href: ./office-365-security/air-view-investigation-results.md
+            - name: Investigate malicious email
+              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: View information about malicious files
               href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Respond
@@ -449,6 +459,18 @@
               href: ./office-365-security/manage-quarantined-messages-and-files.md
             - name: Find and release quarantined messages as a user
               href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
+            - name: Review and approve (or reject) pending actions
+              href: ./office-365-security/air-review-approve-pending-completed-actions.md
+            - name: Handle false positives/negatives
+              href: ./office-365-security/air-report-false-positives-negatives.md
+            - name: Remediate malicious email
+              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
+            - name: Detect and address compromised user accounts quickly
+              href: ./office-365-security/address-compromised-users-quickly.md   
+            - name: Fix possible mail loop insight
+              href: ./office-365-security/mfi-mail-loop-insight.md
+            - name: Fix slow mail flow rules insight
+              href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md 
             - name: Detect and Remediate Illicit Consent Grants in Office 365
               href: ./office-365-security/detect-and-remediate-illicit-consent-grants.md
         - name: FAQ
@@ -551,34 +573,12 @@
           items: 
             - name: Manually submit messages to Microsoft
               href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
-            - name: Review and approve (or reject) pending actions
-              href: ./office-365-security/air-review-approve-pending-completed-actions.md
-            - name: Handle false positives/negatives
-              href: ./office-365-security/air-report-false-positives-negatives.md
-            - name: Detect and address compromised user accounts quickly
-              href: ./office-365-security/address-compromised-users-quickly.md
-            - name: Investigate malicious email
-              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: Remediate malicious email
-              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
-            - name: View ATP reports in the Security & Compliance Center
-              href: ./office-365-security/view-reports-for-atp.md
-            - name: Understanding latest attacks with threat analytics
-              href: ./mtp/latest-attack-campaigns.md
-            - name: Use Threat Trackers
-              href: ./office-365-security/threat-trackers.md
-            - name: Message trace in the Security & Compliance Center
-              href: ./office-365-security/message-trace-scc.md
             - name: Add support for anonymous inbound email over IPv6
               href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: Responding to a Compromised Email Account in Office 365
               href: ./office-365-security/responding-to-a-compromised-email-account.md
             - name: Auto-forwarded messages insight
               href: ./office-365-security/mfi-auto-forwarded-messages-report.md
-            - name: Fix possible mail loop insight
-              href: ./office-365-security/mfi-mail-loop-insight.md
-            - name: Fix slow mail flow rules insight
-              href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
             - name: Mail flow map
               href: ./office-365-security/mfi-mail-flow-map-report.md
             - name: New domains being forwarded email insight
