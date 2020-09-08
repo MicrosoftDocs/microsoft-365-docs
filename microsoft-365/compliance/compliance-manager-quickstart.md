@@ -35,7 +35,7 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 - [Learn what improvement actions are, how to view them, and how they impact your compliance score](compliance-manager-setup.md#improvement-actions-page)
 - [Understand what assessments are](compliance-manager.md#assessments), and learn more about the [default Data Protection Baseline assessment](compliance-manager-assessments.md#data-protection-baseline-default-assessment) that's available to all organizations
 
-## Ramping up: configuring Compliance Manager to meet your needs
+## Ramping up: configuring Compliance Manager to start managing your compliance activities
 
 Once you're familiar with the basics, it's time to set things up to meet your organization's needs. The global administrator for your organization is the person who sets up user permissions and assigns roles. Once everyone has the access they need, they can start working with assessments and taking improvement actions to implement controls and improve your compliance score. Knowing how to perform all the activities at this stage enables your organization to comprehensively manage its compliance needs. Visit the links below to dive in:
 
@@ -45,7 +45,7 @@ Once you're familiar with the basics, it's time to set things up to meet your or
 - [Perform implementation and testing work on improvement actions to complete controls in your assessments](compliance-manager-improvement-actions.md)
 - [Gain a deeper understanding of how your compliance score is calculated and how different types of actions contribute to your score](compliance-score-calculation.md)
 
-## Scaling up: building your own custom assessments and automating testing
+## Scaling up: using advanced functionality to meet your custom needs
 
 When you're comfortable managing assessments in Compliance Manger, you can work with templates to modify a Compliance Manager assessment with your won actions and controls, or create your own custom assessment. Creating a custom assessment is helpful for performing compliance activities on non-Microsoft 365 products. You can also set up automated testing of all or a subset of improvement actions. Visit the links to understand more advanced functionality in Compliance Manager:
 
