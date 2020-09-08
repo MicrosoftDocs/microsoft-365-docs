@@ -63,7 +63,7 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 |Email profiles  |Provision a native email profile on the device. |Yes|Yes|
 |WIFI profiles |Provision a native WIFI profile on the device. |No|Yes|
 |VPN profiles |Provision a native VPN profile on the device. |No|Yes|
-|MDM application management  |Deploy your internal line-of-business apps and from apps stores to users. |No|Yes|
-|Mobile application protection  |Enable your users to securely access corporate information using the Office mobile and line-of-business apps they know, while ensuring security of data by helping to restrict actions like copy, cut, paste, and save as, to only those apps managed approved for corporate data. Works even if the devices are not enrolled to MDM. See Protect app data using MAM policies. |No|Yes|
+|Basic Mobility and Security application management  |Deploy your internal line-of-business apps and from apps stores to users. |No|Yes|
+|Mobile application protection  |Enable your users to securely access corporate information using the Office mobile and line-of-business apps they know, while ensuring security of data by helping to restrict actions like copy, cut, paste, and save as, to only those apps managed approved for corporate data. Works even if the devices are not enrolled to Basic Mobility and Security. See Protect app data using MAM policies. |No|Yes|
 |Managed browser  |Enable more secure web browsing using the Edge app. |No|Yes|
 |Zero touch enrollment programs |Enroll large numbers of corporate-owned devices, while simplifying user set up. |No|Yes|

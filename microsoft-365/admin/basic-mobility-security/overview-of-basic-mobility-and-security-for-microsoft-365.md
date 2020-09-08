@@ -48,7 +48,7 @@ Here's a summary of the steps:
 
 ## Device management tasks
 
-After you've got Basic Mobility and Security set up and your users have enrolled their devices, you can manage the devices, block access, or wipe a device, if necessary. To learn more about some common device management tasks, including where to complete the tasks, see [Manage devices enrolled in Mobile Device Management for Microsoft 365](manage-devices-enrolled-in-mdm-in-microsoft-365.md).
+After you've got Basic Mobility and Security set up and your users have enrolled their devices, you can manage the devices, block access, or wipe a device, if necessary. To learn more about some common device management tasks, including where to complete the tasks, see [Manage devices enrolled in Basic Mobility and Security for Microsoft 365](manage-devices-enrolled-in-mdm-in-microsoft-365.md).
 
 ## Other ways to manage devices and apps
 
@@ -60,6 +60,6 @@ If you just need mobile app management (MAM), perhaps for people updating work p
 
 [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device-using-basic-mobility-and-security.md)
 
-[Manage devices enrolled in Mobile Device Management for Microsoft 365](manage-devices-enrolled-in-mdm-in-microsoft-365.md)
+[Manage devices enrolled in Basic Mobility and Security for Microsoft 365](manage-devices-enrolled-in-mdm-in-microsoft-365.md)
 
 [Get details about devices managed by Basic Mobility and Security](get-details-about-basic-mobility-and-security-managed-devices.md)

@@ -31,7 +31,7 @@ Use these steps:
 2. In your browser, type: [https://protection.office.com](https://protection.office.com/).    
 
     >[!IMPORTANT]
-    >If this is the first time you're using MDM for Microsoft 365 Business Standard, activate it here: [Activate Mobile Device Management](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). After you've activated it, manage your devices with [Office 365 Security & Compliance](https://protection.office.com/).
+    >If this is the first time you're using Basic Mobility and Security for Microsoft 365 Business Standard, activate it here: [Activate Mobile Device Management](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). After you've activated it, manage your devices with [Office 365 Security & Compliance](https://protection.office.com/).
 
 3. Go to Data loss prevention > **Device management** > **Device policies**, and select **Manage organization-wide device access settings**.
 
