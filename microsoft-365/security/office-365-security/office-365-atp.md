@@ -20,7 +20,7 @@ ms.custom:
 - seo-marvel-apr2020
 description: "Office 365 Advanced Threat Protection includes safe attachments, safe links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities."
 ---
-# Office 365 Advanced Threat Protection
+# Office 365 Advanced Threat Protection (ATP)
 
 > [!IMPORTANT]
 > This article is intended for business customers who have [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). If you are using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safe Links or Safe Attachments in Outlook, see [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -35,6 +35,21 @@ Office 365 Advanced Threat Protection (ATP) safeguards your organization against
 
 - **[Automated investigation and response capabilities](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**: Save time and effort investigating and mitigating threats.
 
+## Getting Started
+
+If you're new to Office 365 Advanced Threat Protection or learn best by *doing*, you may benefit from breaking initial ATP configuration into chunks, investigating, and viewing reports using this article as a reference. Here's are logical early configuration chunks:
+
+- The '*Anti*s' (these are anti-malware, anti-phishing, and anti-spam protections)
+- Safe Links and Safe Attachments
+- Securing the Workloads (workload examples include SharePoint Online, OneDrive, and Teams) 
+- Zero-Hour auto purge
+
+To learn by doing, [click this link](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide). 
+
+> [!NOTE]
+> ATP comes in two different Plan types. You can tell if you have **Plan 1** if you have 'Real-time Detections', and **Plan 2**, if you have Threat Explorer. The Plan you have influences the tools you will see, so be certain that you're aware of your Plan as you learn.
+
+<!--
 ## Office 365 ATP Plan 1 and Plan 2
 
 The following table summarizes what's included in each plan.
@@ -58,10 +73,12 @@ The following table summarizes what's included in each plan.
 
 ## Configure ATP policies
 
-With Office 365 ATP, your organization's security team can configure protection by defining policies in the Security & Compliance Center (Go to [https://protection.office.com](https://protection.office.com) > **Threat management** > **Policy**.)
+With Office 365 ATP, your organization's security team can configure protection by defining policies in the Security & Compliance Center (Go to [https://protection.office.com](https://protection.office.com) > **Threat management** > **Policy**.) -->
 
 > [!TIP]
 > For a quick list of policies to define, see [Protect against threats](protect-against-threats.md).
+
+## Advanced Threat Protection Policies
 
 The policies that are defined for your organization determine the behavior and protection level for predefined threats. Policy options are extremely flexible. For example, your organization's security team can set fine-grained threat protection at the user, organization, recipient, and domain level. It is important to review your policies regularly because new threats and challenges emerge daily.
 
