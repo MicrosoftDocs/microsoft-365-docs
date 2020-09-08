@@ -37,9 +37,12 @@ Office 365 Advanced Threat Protection (ATP) safeguards your organization against
 
 ## Getting Started
 
-If you're new to Office 365 Advanced Threat Protection or learn best by *doing*, you may benefit from breaking initial ATP configuration into chunks, investigating, and viewing reports using this article as a reference. Here's are logical early configuration chunks:
+If you're new to Office 365 Advanced Threat Protection or learn best by *doing*, you may benefit from breaking initial ATP configuration into chunks, investigating, and viewing reports using this article as a reference. Here are logical early configuration chunks:
 
-- The '*Anti*s' (these are anti-malware, anti-phishing, and anti-spam protections)
+- Set up the '*Anti*s' for your protection. These are:
+    - anti-malware
+    - anti-phishing
+    - anti-spam
 - Safe Links and Safe Attachments
 - Securing the Workloads (workload examples include SharePoint Online, OneDrive, and Teams) 
 - Zero-Hour auto purge
