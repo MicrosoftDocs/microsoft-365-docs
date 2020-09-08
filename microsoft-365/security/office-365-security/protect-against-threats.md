@@ -34,7 +34,7 @@ Here's a quick-start guide that breaks the configuration of Advanced Threat Prot
 Threat protection features are included in *all* Microsoft or Office 365 subscriptions; however, some subscriptions have advanced features. The table below lists the protection features included in this article together with the minimum subscription requirements.
 
 > [!TIP]
-> Notice that, beyond the directions to turn on auditing, *steps* start with configuring the 'anti' features (anti-malware, anti-phishing, and anti-spam), which are marked as part of Office 365 Exchange Online Protection (**EOP**). This can seem odd until you remember Advanced Threat Protection (**ATP**) contains, and builds on, EOP.
+> Notice that, beyond the directions to turn on auditing, *steps* start anti-malware, anti-phishing, and anti-spam, which are marked as part of Office 365 Exchange Online Protection (**EOP**). This can seem odd in an Advanced Threat Protection article, until you remember Advanced Threat Protection (**ATP**) contains, and builds on, EOP.
 
 ****
 
