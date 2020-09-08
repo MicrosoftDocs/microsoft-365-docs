@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 # Protect against threats
 
-Microsoft 365 includes a variety of threat protection features. Here's a quick-start guide you can use as a checklist to make sure your threat protection features are set up for your organization. If you're new to threat protection features in Office 365, or you're just not sure where to begin, use the following guidance as a starting point.
+Here's a quick-start guide that breaks the configuration of Advanced Threat Protection into chunks. If you're new to threat protection features in Office 365, not sure where to begin, or if you learn best by *doing*, use this guidance as a checklist and a starting point.
 
 > [!IMPORTANT]
 > **Initial recommended settings are included for each kind of policy; however, many options are available, and you can adjust your settings to meet your specific organization's needs**. Allow approximately 30 minutes for your policies or changes to work their way through your datacenter.
@@ -31,24 +31,27 @@ Microsoft 365 includes a variety of threat protection features. Here's a quick-s
 
 ### Subscriptions
 
-Threat protection features are included in all Microsoft 365 subscriptions; however, some subscriptions include more advanced features. The following table lists the protection features included in this article together with the minimum subscription requirements.
+Threat protection features are included in *all* Microsoft or Office 365 subscriptions; however, some subscriptions have advanced features. The table below lists the protection features included in this article together with the minimum subscription requirements.
+
+> [!TIP]
+> Notice that we start by configuring the 'anti' features (anti-malware, anti-phishing, and anti-spam), marked as part of Office 365 Exchange Online Protection (**EOP**). This can seem odd until you remember Advanced Threat Protection (**ATP**) includes, and builds on, EOP.
 
 ****
 
 |Protection type|Subscription requirement|
 |---|---|
-|Anti-malware protection|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (EOP)|
-|Protection from malicious URLs and files in email and Office documents|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP)|
+|Audit logging (this is used for reporting purposes)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
+|Anti-malware protection|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Anti-phishing protection|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Advanced anti-phishing protection|[Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Anti-spam protection|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Zero-hour auto purge (for email)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Audit logging (this is used for reporting purposes)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
-|
+|Protection from malicious URLs and files in email and Office documents|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (**ATP**)|
+|Advanced anti-phishing protection|[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+
 
 ### Roles and permissions
 
-You must be assigned an appropriate role to configure policies in the [Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). The following table includes some examples:
+To configure ATP policies, you must be assigned an appropriate role in the [Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Take a look at the table below for roles that can do these actions.
 
 ****
 
@@ -79,7 +82,63 @@ To learn more, see [Permissions in the Security &amp; Compliance Center](permiss
 
 To learn more about anti-malware policy options, see [Configure anti-malware policies](configure-anti-malware-policies.md).
 
-## Part 2 - Protection from malicious URLs and files
+## Part 2 - Anti-phishing protection
+
+[Anti-phishing]
+
+[Anti-phishing protection](anti-phishing-protection.md) is available in subscriptions that include [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Advanced anti-phishing protection is available in [ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+
+The following procedure describes how to configure an ATP anti-phishing policy. The steps are similar for configuring an anti-phishing policy (without ATP).
+
+1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** > **Policy** > **ATP anti-phishing**.
+
+2. Click **Default policy**.
+
+3. In the **Impersonation** section, click **Edit**, and then specify the following settings:
+
+   - On the **Add users to protect** tab, turn protection on. Then add users, such as your organization's board members, your CEO, CFO, and other senior leaders. (You can type an individual email address, or click to display a list.)
+
+   - On the **Add domains to protect** tab, turn on **Automatically include the domains I own**. If you have custom domains, add those as well.
+
+   - On the **Actions** tab, select **Quarantine the message** for both the **impersonated user** and **impersonated domain** options. In addition, turn on impersonation safety tips.
+
+   - On the **Mailbox intelligence** tab, make sure mailbox intelligence is turned on. In addition, turn on mailbox intelligence based impersonation protection. In the **If email is sent by an impersonated user** list, choose **Quarantine the message**.
+
+   - On the **Add trusted senders and domains** tab, specify any trusted senders or domains that you want to add.
+
+   - On the **Review your settings** tab, after you have reviewed your settings, click **Save**.
+
+4. In the **Spoof** section, click **Edit**, and then specify the following settings:
+
+   - On the **Spoofing filter settings** tab, make sure anti-spoofing protection is turned on.
+
+   - On the **Actions** tab, choose **Quarantine the message**.
+
+   - On the **Review your settings** tab, after you have reviewed your settings, click **Save**. (If you didn't make any changes, click **Cancel**.)
+
+5. Close the default policy settings page.
+
+To learn more about your anti-phishing policy options, see [Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md).
+
+## Part 3 - Anti-spam protection
+
+[Anti-spam protection](anti-spam-protection.md) is available in subscriptions that include [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+
+1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** > **Policy** > **Anti-spam**.
+
+2. On the **Custom** tab, turn **Custom settings** on.
+
+3. Expand **Default spam filter policy**, click **Edit policy**, and then specify the following settings:
+
+   - In the **Spam and bulk actions** section, set the threshold to a value of 5 or 6.
+
+   - In the **Allow lists** section, review (and if necessary, edit) your allowed senders and domains.
+
+4. Click **Save**.
+
+To learn more about your anti-spam policy options, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+
+## Part 4 - Protection from malicious URLs and files
 
 Time-of-click protection from malicious URLs and files is available in subscriptions that include [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP), and is set up through [ATP Safe Attachments](atp-safe-attachments.md) and [ATP Safe Links](atp-safe-links.md) policies.
 
@@ -141,63 +200,10 @@ To set up [ATP Safe Links](atp-safe-links.md), review and edit your default poli
 
 To learn more, see [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-links-policies.md).
 
-## Part 3 - Anti-phishing protection
+## Part 5 - Workloads
 
-[Anti-phishing]
 
-[Anti-phishing protection](anti-phishing-protection.md) is available in subscriptions that include [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Advanced anti-phishing protection is available in [ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
-
-The following procedure describes how to configure an ATP anti-phishing policy. The steps are similar for configuring an anti-phishing policy (without ATP).
-
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** > **Policy** > **ATP anti-phishing**.
-
-2. Click **Default policy**.
-
-3. In the **Impersonation** section, click **Edit**, and then specify the following settings:
-
-   - On the **Add users to protect** tab, turn protection on. Then add users, such as your organization's board members, your CEO, CFO, and other senior leaders. (You can type an individual email address, or click to display a list.)
-
-   - On the **Add domains to protect** tab, turn on **Automatically include the domains I own**. If you have custom domains, add those as well.
-
-   - On the **Actions** tab, select **Quarantine the message** for both the **impersonated user** and **impersonated domain** options. In addition, turn on impersonation safety tips.
-
-   - On the **Mailbox intelligence** tab, make sure mailbox intelligence is turned on. In addition, turn on mailbox intelligence based impersonation protection. In the **If email is sent by an impersonated user** list, choose **Quarantine the message**.
-
-   - On the **Add trusted senders and domains** tab, specify any trusted senders or domains that you want to add.
-
-   - On the **Review your settings** tab, after you have reviewed your settings, click **Save**.
-
-4. In the **Spoof** section, click **Edit**, and then specify the following settings:
-
-   - On the **Spoofing filter settings** tab, make sure anti-spoofing protection is turned on.
-
-   - On the **Actions** tab, choose **Quarantine the message**.
-
-   - On the **Review your settings** tab, after you have reviewed your settings, click **Save**. (If you didn't make any changes, click **Cancel**.)
-
-5. Close the default policy settings page.
-
-To learn more about your anti-phishing policy options, see [Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md).
-
-## Part 4 - Anti-spam protection
-
-[Anti-spam protection](anti-spam-protection.md) is available in subscriptions that include [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
-
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** > **Policy** > **Anti-spam**.
-
-2. On the **Custom** tab, turn **Custom settings** on.
-
-3. Expand **Default spam filter policy**, click **Edit policy**, and then specify the following settings:
-
-   - In the **Spam and bulk actions** section, set the threshold to a value of 5 or 6.
-
-   - In the **Allow lists** section, review (and if necessary, edit) your allowed senders and domains.
-
-4. Click **Save**.
-
-To learn more about your anti-spam policy options, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
-
-## Part 5 - Additional settings to configure
+## Part 6 - Additional settings to configure
 
 In addition to configuring protection from malware, malicious URLs and files, phishing, and spam, we recommend that you configure your zero-hour auto purge and audit logging settings.
 
