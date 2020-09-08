@@ -54,7 +54,6 @@ To learn by doing, [click this link](https://docs.microsoft.com/microsoft-365/se
 > [!NOTE]
 > ATP comes in two different Plan types. You can tell if you have **Plan 1** if you have 'Real-time Detections', and **Plan 2**, if you have Threat Explorer. The Plan you have influences the tools you will see, so be certain that you're aware of your Plan as you learn.
 
-<!--
 ## Office 365 ATP Plan 1 and Plan 2
 
 The following table summarizes what's included in each plan.
