@@ -77,6 +77,8 @@ Navigation instructions depend on whether you're using [records management](reco
     
     - To use the retention label to declare a [record](records-management.md#records), enable the option **Mark items as a record**.
 
+3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Auto-apply this label to a specific type of content**, and then select **Done** to start the Create auto-labeling wizard that takes you directly to step 2 in the following procedure.
+
 To edit an existing label, select it, and then select the **Edit label** option to start the Edit retention wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
 
