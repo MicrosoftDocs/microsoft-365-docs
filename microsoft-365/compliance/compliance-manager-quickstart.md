@@ -20,7 +20,7 @@ description: "Use the Compliance Manager quickstart guide to help you along your
 
 Use this quickstart guide to help you along your journey of using Compliance Manager to manage your organization’s compliance activities.
 
-Compliance Manager provides intelligent and actionable insights from the first time you visit it, and advanced capabilities for scaling your compliance when you’re ready. So whether you’re coming to Compliance Manager for the first time, or are ready to use some of the advanced features, this guide can help you understand which features of Compliance Manager to use at whatever point along your journey you’re in.
+Compliance Manager provides intelligent and actionable insights upon your first visit, and has advanced capabilities for scaling your compliance when you’re ready. Whether you’re coming to Compliance Manager for the first time, or are ready to use some of the advanced features, this guide can support you along your journey.
 
 ## First visit: get to know Compliance Manager
 
