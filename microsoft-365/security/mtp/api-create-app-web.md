@@ -26,6 +26,9 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
+>[!IMPORTANT] 
+>Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 This page describes how to create an application to get programmatic access to Microsoft Threat Protection without a user. If you need programmatic access to Microsoft Threat Protection on behalf of a user, see [Get access with user context](api-create-app-user-context.md). If you are not sure which access you need, see [Get started](api-access.md).
 
 Microsoft Threat Protection exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft Threat Protection capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
