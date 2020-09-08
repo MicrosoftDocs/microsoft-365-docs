@@ -107,12 +107,14 @@
           href: what-the-dlp-functions-look-for.md
     - name: Trainable classifiers
       items: 
+        - name: Learn about trainable classifiers (preview)
+          href: classifier-learn-about.md
         - name: Get started with trainable classifiers (preview)
-          href: classifier-getting-started-with.md
-        - name: Using a built-in classifier (preview)
-          href: classifier-using-a-ready-to-use-classifier.md
-        - name: Creating and training a classifier (preview)
-          href: classifier-creating-a-trainable-classifier.md
+          href: classifier-get-started-with.md
+        - name: How to retrain a classifier in communications compliance (preview)
+          href: classifier-how-to-retrain-comms-compliance.md
+        - name: How to retrain a classifier in content explorer (preview)
+          href: classifier-how-to-retrain-content-explorer.md
     - name: Data classification
       items: 
         - name: Understand data classification

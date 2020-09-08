@@ -1,5 +1,5 @@
 ---
-title: "How to retrain a classifier in Communications compliance (preview)"
+title: "How to retrain a classifier in communications compliance (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,7 +17,7 @@ search.appverid:
 description: "Learn how to provide feedback to a trainable classifier in Communications compliance."
 ---
 
-# How to retrain a classifier in Communications compliance (preview)
+# How to retrain a classifier in communications compliance (preview)
 
 A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify item for application of Office sensitivity labels, communications compliance policies, and retention label policies.
 
@@ -62,7 +62,7 @@ To understand more about the overall workflow of retraining a classifier, see [P
 > [!IMPORTANT]
 > This information goes to the classifier in your tenant, **it does not go back to Microsoft**.
 
-6.  Open the **Data classification** page in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.
+6.  Open the **Data classification** page in the **Microsoft 365 compliance center**.
 7. Open **Trainable classifiers (preview)**.
 8. The classifier that was used in your Communications compliance policy will appear under the **Re-training** heading.
 
@@ -110,6 +110,9 @@ or
 or
 
 - the retrained classifiers accuracy on the feedback items is the same, but the F1 score on the feedback and training items has decreased
+
+For more information on F1 scores, accuracy, precisions and recall, see [F1 score on wikipedia](https://en.wikipedia.org/wiki/F1_score)
+
 
 ## See also
 

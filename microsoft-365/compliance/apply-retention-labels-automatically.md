@@ -166,7 +166,6 @@ To automatically apply a label by using this option, SharePoint Online sites and
 
 For more information about trainable classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md).
 
-For an example configuration, see [How to prepare for and use a built-in classifier](classifier-using-a-ready-to-use-classifier.md#how-to-verify-that-a-built-in-classifier-will-meet-your-needs).
 
 ## How long it takes for retention labels to take effect
 

@@ -1,5 +1,5 @@
 ---
-title: "How to retrain a classifier in Content explorer (preview)"
+title: "How to retrain a classifier in content explorer (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,7 +17,7 @@ search.appverid:
 description: "Learn how to provide feedback to a trainable classifier in Content explorer."
 ---
 
-# How to retrain a classifier in Content explorer (preview)
+# How to retrain a classifier in content explorer (preview)
 
 A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify item for application of Office sensitivity labels, communications compliance policies, and retention label policies.
 
@@ -120,6 +120,9 @@ or
 or
 
 - the retrained classifiers accuracy on the feedback items is the same, but the F1 score on the feedback and training items has decreased
+
+For more information on F1 scores, accuracy, precisions and recall, see [F1 score on wikipedia](https://en.wikipedia.org/wiki/F1_score)
+
 
 ## See also
 
