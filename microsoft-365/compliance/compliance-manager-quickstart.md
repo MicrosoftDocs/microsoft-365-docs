@@ -38,15 +38,15 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 Once you're familiar with the basics, it's time to set things up to meet your organization's needs. The global administrator for your organization is the person who sets up user permissions and assigns roles. Once everyone has the access they need, it's time to begin working with assessments and taking improvement actions to implement controls and improve your compliance score. Knowing how to perform all the activities at this stage enables you to manage your end-to-end compliance needs. Visit the links below to dive in:
 
 - [Set user permissions and assign roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles)
-- [Create and mange your first assessment using a pre-built assessment](compliance-manager-assessments.md)
-- [Understand how templates are used to create assessments, and learn how to view your available templates](compliance-manager-templates.md)
+- [Choose a pre-built assessment to create and mange your first assessment](compliance-manager-assessments.md)
+- [Understand how templates function to create assessments, and view your available templates](compliance-manager-templates.md)
 - [Perform implementation and testing work on improvement actions to complete controls in your assessments](compliance-manager-improvement-actions.md)
-- [Add your own your own controls and improvement actions to a pre-built assessment](compliance-manager-assessments.md#extend-a-pre-built-assessment)
-- [Understand better how your compliance score is calculated and how different types of actions contribute to your score](compliance-score-calculation.md)
+- [Add your own controls and improvement actions to a pre-built assessment](compliance-manager-assessments.md#extend-a-pre-built-assessment)
+- [Gain a deeper understanding of how your compliance score is calculated and how different types of actions contribute to your score](compliance-score-calculation.md)
 
-## Scaling up: building your own assessments and automating testing
+## Scaling up: building your own custom assessments and automating testing
 
-When you're comfortable managing assessments in Compliance Manger, you can further customize your Compliance Manger experience. Use the template creation processes to create your own custom assessments non-Microsoft 365 products. Become more adept at modifying templates you already have to add or remove controls and improvement actions. And set up automated testing of all or a subset of improvement actions. Check out the links below to dive into more advanced functions in Compliance Manager:
+When you're comfortable managing assessments in Compliance Manger, you can use the template creation processes to build your own custom assessments. This is helpful for performing compliance activities on non-Microsoft 365 products. Work more in-depth with templates by modifying them to add or remove controls and improvement actions. You can also set up automated testing of all or a subset of improvement actions. Check out the links below to dive into more advanced functions in Compliance Manager:
 
 - [Create your own custom assessment](compliance-manager-assessments.md#create-your-own-custom-assessment)
 - [Modify a template to add or remove improvement actions and controls](compliance-manager-templates.md#modify-a-template)
