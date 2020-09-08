@@ -65,7 +65,7 @@ Where you create and configure your retention labels depend on whether you're us
     
     - To use the retention label to declare a [record](records-management.md#records), enable the option **Mark items as a record**.
 
-3. After you have created the label and you see the options to push the label, auto-apply the label, or just save the label: Select **Just save the label for now**.
+3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**.
 
 4. Repeat these steps to create more labels.
 
