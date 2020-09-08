@@ -31,7 +31,7 @@ All files stored in a SharePoint or OneDrive site can be retained by applying a 
 
 The following files can be deleted:
 
-- When you use a retention policy: All files in document libraries, which include any default SharePoint document libraries, such as Site Assets.
+- When you use a retention policy: All files in document libraries, which include any automatically created SharePoint document libraries, such as Site Assets.
     
 - When you use retention labels: All files in all document libraries, and all files at the root level that aren't in a folder.
     
