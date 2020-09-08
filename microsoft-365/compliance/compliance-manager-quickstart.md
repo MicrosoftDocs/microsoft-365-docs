@@ -38,7 +38,7 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 Once you're familiar with the basics, it's time to set things up to meet your organization's needs. The global administrator for your organization is the person who sets up user permissions and assigns roles. Once everyone has the access they need, it's time to begin working with assessments and taking improvement actions to implement controls and improve your compliance score. Knowing how to perform all the activities at this stage enables you to manage your end-to-end compliance needs. Visit the links below to dive in:
 
 - [Set user permissions and assign roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles)
-- [Create and mange your first assessment using a pre-built assessment](compliance-manager-assessments)
+- [Create and mange your first assessment using a pre-built assessment](compliance-manager-assessments.md)
 - [Understand how templates are used to create assessments, and learn how to view your available templates](compliance-manager-templates.md)
 - [Perform implementation and testing work on improvement actions to complete controls in your assessments](compliance-manager-improvement-actions.md)
 - [Add your own your own controls and improvement actions to a pre-built assessment](compliance-manager-assessments.md#extend-a-pre-built-assessment)
