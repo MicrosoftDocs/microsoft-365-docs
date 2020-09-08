@@ -109,4 +109,6 @@ We're continuously working on optimizing retention functionality in Teams. In th
 
 ## Configuration guidance
 
-If you're ready to configure retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+
+If you're ready to configure a retention policy for Teams, see [Create and configure retention policies](create-retention-policies.md).

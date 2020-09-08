@@ -36,10 +36,6 @@ description: "Discover the setup steps for Microsoft 365 Business Premium, inclu
 
 Watch this video for an overview of Microsoft 365 Business Premium setup.<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
-
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
-
 ## Add your domain, users, and set up policies
 
 When you purchase Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the [sign-up](sign-up.md).
