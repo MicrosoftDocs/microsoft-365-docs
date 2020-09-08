@@ -26,50 +26,56 @@ ms.topic: conceptual
 
 To effectively determine the benefit and adoption of Microsoft Threat Protection (MTP), you can run a pilot project. Before enabling Microsoft Threat Protection in your environment and starting with defined use cases, it is best to go through a planning process to determine the tasks that must be accomplished in this pilot project, and the success criteria. 
 
-This guide provides an overview of Microsoft Threat Protection and step-by-step guidance on how to set up your pilot project. 
-
-The following sample timeline varies depending on having the right resources in your environment. Some detections and workflows might need more learning time than the others.
+This guide provides step-by-step guidance on how to set up your pilot project. 
 
 >[!IMPORTANT]
 >For optimum results, follow the pilot instructions as closely as possible.
 
 
-## Pilot playbook phases 
+## Scope
 
-There are four phases in running a Microsoft Threat Protection pilot:
+The scope of the pilot will determine how broad the test will be, based on your environment and acceptable testing methods. Here are some example scopes to consider:
+- Development or test environment which includes endpoints, servers, domain controllers.
+- Production environment with Microsoft 365, Azure, Active Directory services, endpoints, and servers
 
-|Phase | Description | 
-|:-------|:-----|
-| ![Phase 1: Plan](../../media/prepare.png)<br>[Phase 1: Plan](prepare-mtpeval.md)| Learn what you need to consider when deploying Microsoft Threat Protection in a trial lab environment: <br><br>- Stakeholders and sign-off <br> - Environment considerations <br>- Access <br>- Azure Active Directory setup <br> - Configuration order
-|  ![Phase 2: Prepare](../../media/setup.png) <br>[Phase 2: Prepare](setup-mtpeval.md)|  Take the initial steps to access Microsoft 365 Security Center to setup your Microsoft Threat Protection trial lab environment. You will be guided to:<br><br>- Sign up for Microsoft 365 E5 Trial <br>  - Configure domain<br>- Assign Microsoft 365 E5 licenses<br>- Complete the setup wizard in the portal|
-|  ![Phase 3: Run attack simulation](../../media/config-onboard.png) <br>[Phase 3: Run attack simulation](config-mtpeval.md) | Configure each Microsoft Threat Protection pillar and onboard endpoints. You will be guided to:<br><br>- Configure Office 365 Advanced Threat Protection<br>- Configure Microsoft Cloud App Security<br>- Configure Azure Advanced Threat Protection<br>- Configure Microsoft Defender Advanced Threat Protection 
-|  ![Phase 4: Close and summarize](../../media/config-onboard.png) <br>[Phase 3: Close and summarize](config-mtpeval.md) | Configure each Microsoft Threat Protection pillar and onboard endpoints. You will be guided to:<br><br>- Configure Office 365 Advanced Threat Protection<br>- Configure Microsoft Cloud App Security<br>- Configure Azure Advanced Threat Protection<br>- Configure Microsoft Defender Advanced Threat Protection 
+NOTE: If you don’t have the full licenses yet, you can get trial licenses to [evaluate Microsoft Threat Protection](https://aka.ms/mtp-trial-lab) – plan, prepare, setup, configure, and run your pilot project. Your stakeholders will play a big role in helping facilitate the process from start to finish.
+
+The types of operating systems to be evaluated should also be defined based on the organizational makeup. This may include the following: [Mac endpoints](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements), [Linux Servers](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements), [Windows 10 endpoints](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions), [Windows Server 2016](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions).
+
+## Use cases
+
+Use cases represent statements of how the tool being tested is meant to be consumed by its intended users. These can be formulated as user stories from the point of view of a particular persona, such as a SOC analyst. For example:
+- As a SOC analyst, I need to view, correlate, assess and manage alerts and events across devices, users, and mailboxes in my network. [Incident management]
+- As a SOC analyst, I must have the tool and process to automatically investigate and respond to malicious events in my network. [Auto IR]
+- As a SOC analyst, I must search data from my environment to find known and potential threats, and suspicious activities. [Advanced Hunting]
+
+Keep in mind that these use cases should be created within the parameters of the defined scope. If, for example, the scope of testing does not include an evaluation of tools such as Microsoft Cloud App Security, then use cases that rely on this as a data source should not be created.
+
+## Requirements
+
+From the list of use cases, you can start to create requirements. Requirements include features a tool must have to satisfy the use cases. These requirements can be broken down into categories such as configuration and maintenance, support for integrations, and feature-specific requirements like hunting ability and the ability to build custom alerts.
+
+## Test plan
+
+Depending on the requirements, different methods of testing may be appropriate. For instance, if the requirement is to evaluate the efficacy of Automated Remediation, the test plan needs to include steps to generate the behavior(s) that would trigger an automated remediation action within Microsoft Threat Protection. If the requirement is to detect a particular behavior or attack, then the test may involve more steps. The point is to have a plan in place to accurately test against your requirements.
+
+## Success criteria
+
+Success criteria is ultimately the bar set to measure against what you are testing. Whether you are testing Microsoft Threat Protection (or any other technology for that matter) against other tools or by itself, there must be some quantifiable criteria to determine the value the tool provides. Based on the scope, requirements, and testing plan, the success criteria will determine how to score the test. This should be less of a pass or fail and more of a weighted scoring based on your needs. For example, to be successful, a tool may need to score above 80% in certain critical areas you identify.
+
+## Scorecard
+
+One way to bring all elements of your plan together can be to create a scorecard. See a sample  scorecard below:
+|||||||||
+|:-------|:-----|:-------|:-----|:-------|:-----|:-------|:-----|
+|Use case|Requirements|Configuration requirements|Test plan|Expected outcome|Test status|Score|Notes|
+|Incident management|<ul>-	Microsoft Threat Protection	<br>- Azure ATP <br>- Microsoft Defender ATP <br>- Microsoft Cloud App Security (optional)</ul>|||||||
+|AutoIR||||||||
+|Advanced hunting||||||||
 
 
-## In scope
-
-The following is in scope for this trial lab environment guide:
--   Set up Azure Active Directory
--   Set up Microsoft Threat Protection
-    -   Sign up for Microsoft 365 E5 Trial
-    -   Configure domain
-    -   Assign Microsoft 365 E5 licenses
-    -   Completing the setup wizard within the portal
--   Configure all Microsoft Threat Protection pillars based on best practices
-    -   Office 365 Advanced Threat Protection
-    -   Azure Advanced Threat Protection
-    -   Microsoft Cloud App Security
-    -   Microsoft Defender Advanced Threat Protection
-
-## Out of scope
-
-The following are out of scope of this deployment guide:
-
--   Configuration of third-party solutions that might integrate with Microsoft
-    Threat Protection
--   Penetration testing in production environment
 
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 1: Prepare](../../media/prepare.png) <br>[Phase 1: Prepare](prepare-mtpeval.md) | Prepare your Microsoft Threat Protection evaluation lab environment
+|![Phase 2: Prepare](../../media/prepare.png) <br>[Phase 2: Prepare](prepare-mtpeval.md) | Prepare your Microsoft Threat Protection evaluation lab environment
