@@ -150,7 +150,7 @@ To remove filters:
 
 ## Improvement actions page
 
-[Improvement actions](compliance-score-improvement-actions.md) centralize your compliance activities and help you align with data protection regulations and standards. Each improvement action gives detailed implementation guidance and a link to launch you into the appropriate solution. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
+[Improvement actions](compliance-manager-improvement-actions.md) centralize your compliance activities and help you align with data protection regulations and standards. Each improvement action gives detailed implementation guidance and a link to launch you into the appropriate solution. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
 
 ### View your improvement actions
 
@@ -184,7 +184,7 @@ The improvement actions page shows the following data points for each improvemen
 - **Points achieved**: number of points earned out of the maximum possible
 
 #### Learn more
-[See how to assign and perform work on improvement actions](compliance-score-improvement-actions.md).
+[See how to assign and perform work on improvement actions](compliance-manager-improvement-actions.md).
 
 ## Solutions page
 
@@ -214,7 +214,7 @@ There are two ways you can take action from this screen:
 
 ## Assessments page
 
-The assessments page lists all the [assessments](compliance-score-assessments.md) you set up for your organization. Your Compliance Score denominator is determined by all your tracked assessments. The more assessments you add, the more improvement actions you see on your improvement actions page, and the higher your score denominator is.
+The assessments page lists all the [assessments](compliance-manager-assessments.md) you set up for your organization. Your Compliance Score denominator is determined by all your tracked assessments. The more assessments you add, the more improvement actions you see on your improvement actions page, and the higher your score denominator is.
 
 This page summarizes key information about each assessment:
 

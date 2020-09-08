@@ -58,13 +58,13 @@ Compliance Manager gives you an initial score based on the Microsoft 365 data pr
 
 #### Learn more
 
-[Understand how your compliance score is calculated.](compliance-score-calculation.md).
+[Understand how your compliance score is calculated.](compliance-score-calculation.md)
 
-[Create and manage assessments in Compliance Manager.](compliance-manager-assessments.md).
+[Create and manage assessments in Compliance Manager.](compliance-manager-assessments.md)
 
 ## Key components: controls, assessments, templates, improvement actions
 
-Compliance Score uses several components to help you manage your compliance activities. As you use Compliance Score to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of the key components: controls, assessments, templates, and improvement actions.
+Compliance Manager uses several components to help you manage your compliance activities. As you use Compliance Manager to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of the key components: controls, assessments, templates, and improvement actions.
 
 ### Controls
 
