@@ -1,5 +1,5 @@
 ---
-title: "Overview of Microsoft Bookings"
+title: "Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -35,14 +35,3 @@ Ready to get started?
 Watch this video or follow the steps below to set up Bookings.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q]
-
-- [Get access to Microsoft Bookings](get-access.md)
-- [Enter your business information](enter-business-information.md)
-- [Add staff to Bookings](add-staff.md)
-- [Define your service offerings](define-service-offerings.md)
-- [Set your scheduling policies](set-scheduling-policies.md)
-- [Set employee working hours](employee-hours.md)
-- [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md)
-- [Customize and publish your booking page](customize-booking-page)
-- [Create a manual booking](create-a-manual-booking.md)
-- [Get the Bookings app for iOS and Android](get-bookings-app.md)

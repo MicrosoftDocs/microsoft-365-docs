@@ -11,7 +11,7 @@ ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: "Learn how to get access to the Bookings feature in Microsoft 365."
 ---
 
-# Start using Microsoft Bookings
+# Get access to Microsoft Bookings
 
 This topic describes how get access to Bookings for the first time. It also tells you how to turn on or off Bookings in your organization. It also explains how you can assign licenses to your users so they can access and use Bookings.
 
@@ -32,8 +32,8 @@ You're now ready to set up Bookings for your organization. You can get to the Bo
 - [Enter your business information](enter-business-information.md)
 - [Add staff to Bookings](add-staff.md)
 - [Define your service offerings](define-service-offerings.md)
+- [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md)
 - [Set your scheduling policies](set-scheduling-policies.md)
 - [Set employee working hours](employee-hours.md)
-- [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md)
 - [Customize and publish your booking page](customize-booking-page)
 - [Create a manual booking](create-a-manual-booking.md)
