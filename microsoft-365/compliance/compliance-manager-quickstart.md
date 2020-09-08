@@ -43,14 +43,14 @@ Once you're familiar with the basics, it's time to set things up to meet your or
 - [Choose a pre-built assessment to create and mange your first assessment](compliance-manager-assessments.md)
 - [Understand how templates function to create assessments, and view your available templates](compliance-manager-templates.md)
 - [Perform implementation and testing work on improvement actions to complete controls in your assessments](compliance-manager-improvement-actions.md)
-- [Add your own controls and improvement actions to a pre-built assessment](compliance-manager-assessments.md#extend-a-pre-built-assessment)
 - [Gain a deeper understanding of how your compliance score is calculated and how different types of actions contribute to your score](compliance-score-calculation.md)
 
 ## Scaling up: building your own custom assessments and automating testing
 
-When you're comfortable managing assessments in Compliance Manger, you can use the template creation processes to build your own custom assessments. This is helpful for performing compliance activities on non-Microsoft 365 products. You can modify an existing template by adding or removing controls and improvement actions. You can also set up automated testing of all or a subset of improvement actions. Check out the links below to dive into more advanced functions in Compliance Manager:
+When you're comfortable managing assessments in Compliance Manger, you can work with templates to modify a Compliance Manager assessment with your won actions and controls, or create your own custom assessment. Creating a custom assessment is helpful for performing compliance activities on non-Microsoft 365 products. You can also set up automated testing of all or a subset of improvement actions. Check out the links below to dive into more advanced functions in Compliance Manager:
 
+- [Extend a Compliance Manager assessment by adding your own controls and improvement actions](compliance-manager-assessments.md#extend-a-pre-built-assessment)
 - [Create your own custom assessment](compliance-manager-assessments.md#create-your-own-custom-assessment)
-- [Modify a template to add or remove improvement actions and controls](compliance-manager-templates.md#modify-a-template)
+- [Modify an existing template to add or remove controls and actions](compliance-manager-templates.md#modify-a-template)
 - [Set up automated testing of certain improvement actions](compliance-manager-setup.md#set-up-automated-testing)
 - [Reassign improvement actions to another user](compliance-manager-setup.md#manage-user-history)
