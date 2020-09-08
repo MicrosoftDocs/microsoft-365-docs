@@ -1,7 +1,7 @@
 ---
 title: Advanced hunting APIs
-description: 
-keywords: 
+description: Learn how to run Advanced Hunting queries using Microsoft Threat Protection API
+keywords: Advanced Hunting, APIs, api, MTP
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -34,7 +34,7 @@ search.appverid:
 4. The maximal execution time of a single request is 10 minutes.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Threat Protection APIs](api-access.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access the Microsoft Threat Protection APIs](api-access.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -66,8 +66,12 @@ Parameter |	Type	| Description
 Query |	Text |	The query to run. **Required**.
 
 ## Response
-If successful, this method returns 200 OK, and _QueryResponse_ object in the response body.
+If successful, this method returns 200 OK, and _QueryResponse_ object in the response body. <br><br>
 
+The response object is divided to 3 parts (properties):<br>
+1) ```Stats``` - Query performance statistics.<br>
+2) ```Schema``` - The schema of the response, a list of Name-Type pairs for each column. <br>
+3) ```Results``` - A list of Advanced Hunting events.
 
 ## Example
 
@@ -76,9 +80,7 @@ Request
 Here is an example of the request.
 
 
-```
-POST https://api.security.microsoft.com/api/advancedhunting/run
-Content-type: application/json
+```json
 {
     "Query":"DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
 }
@@ -89,8 +91,6 @@ Response
 
 Here is an example of the response.
 
->[!NOTE]
->The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 {

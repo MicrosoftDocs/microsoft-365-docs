@@ -247,7 +247,7 @@
                   items:
                     - name: Microsoft Threat Protection API license and terms of use
                       href: mtp/api-terms.md
-                    - name: Access the Microsoft Threat Protection APIs
+                    - name: Access Microsoft Threat Protection APIs
                       href: mtp/api-access.md
                     - name: Hello World example
                       href: mtp/api-hello-world.md
@@ -259,18 +259,22 @@
                       href:  mtp/api-partner-access.md
                     - name: Other API resources
                       href: mtp/api-articles.md
-                - name: Microsoft Threat Protection APIs schema
+                - name: Microsoft Threat Protection APIs & schema
                   items:
                     - name: Supported Microsoft Threat Protection APIs 
                       href: mtp/api-supported.md
                     - name: Common REST API error codes
                       href: mtp/api-error-codes.md
-                    - name: Advanced hunting APIs
+                    - name: Advanced Hunting API
                       href: mtp/api-advanced-hunting.md
-                    - name: List incidents
-                      href: mtp/api-list-incidents.md
-                    - name: Update incidents
-                      href: mtp/api-update-incidents.md  
+                    - name: Incident APIs
+                      items:
+                        - name: Incident methods and properties
+                          href: mtp/api-incident.md
+                        - name: List incidents
+                          href: mtp/api-list-incidents.md
+                        - name: Update incident
+                          href: mtp/api-update-incidents.md  
  
     - name: Office 365 security
       items: 
