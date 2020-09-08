@@ -23,7 +23,7 @@ ms.custom: seo-marvel-apr2020
 
 If your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **real-time detections** (formerly *real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
 
-| With ATP Plan 2, you see: | With ATP Plan 1, you see: |
+|With ATP Plan 2, you see:|With ATP Plan 1, you see:|
 |---|---|
 |![Threat explorer](../../media/threatmgmt-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -41,40 +41,73 @@ With this report, you can:
 
 ## Experience Improvements to Threat Explorer and Real-Time Detections
 
-As part of improving the hunting process, we have made a few updates to Threat Explorer and Real-Time Detections. These are ‘experience’ improvements, with the focus on making the hunting experience more consistent. These changes are outlined below: 
+As part of improving the hunting process, we have made a few updates to Threat Explorer and Real-Time Detections. These are ‘experience’ improvements, with the focus on making the hunting experience more consistent. These changes are outlined below:
 
 - [Timezone improvements](#timezone-improvements)
 - [Update in the Refresh process](#update-in-the-refresh-process)
 - [Chart drilldown to add to filters](#chart-drilldown-to-add-to-filters)
 - [In product information updates](#in-product-information-updates)
 
-### Timezone improvements 
+### Timezone improvements
 
-We will show the timezone for the email records within the Portal, as well as for Exported data. The timezone will be visible across experiences like Email Grid, Details Flyout, Email Timeline, and Similar Emails, so that the timezone for the result set is clear to the user. 
+We will show the timezone for the email records within the Portal, as well as for Exported data. The timezone will be visible across experiences like Email Grid, Details Flyout, Email Timeline, and Similar Emails, so that the timezone for the result set is clear to the user.
 
-![View Timezone in Explorer](../media/TimezoneImprovements.png)
+![View Timezone in Explorer](../../media/TimezoneImprovements.png)
 
-### Update in the Refresh process 
+### Update in the Refresh process
 
 We have heard feedback around confusion with automatic refresh (e.g. for date, as soon as you change the date, the page would refresh) and manual refresh (for other filters). Similarly, removing filters leads to automatic refresh, this causes situations where changing the different filters while modifying the query can cause inconsistent search experiences. To solve this, we are moving to a manual filtering mechanism.
-From an experience standpoint, the user can apply and remove the different range of filters (from the filter set, and date), and press the refresh button to filter the results once they are done with defining the query. The refresh button has also been updated to call it out clearly on the screen. We have also updated tooltips and in-product documentation around this change. 
+From an experience standpoint, the user can apply and remove the different range of filters (from the filter set, and date), and press the refresh button to filter the results once they are done with defining the query. The refresh button has also been updated to call it out clearly on the screen. We have also updated tooltips and in-product documentation around this change.
 
-![Click on Refresh to filter results](../media/ManualRefresh.png)
+![Click on Refresh to filter results](../../media/ManualRefresh.png)
 
 ### Chart drilldown to add to filters
 
 You will now be able to click on the chart legend values to add that value as a filter. Note that you will still have to click on the refresh button to filter the results as part of the change described above.
 
-![Drilldown through charts to Filter](../media/ChartDrilldown.png)
+![Drilldown through charts to Filter](../../media/ChartDrilldown.png)
 
-### In product information updates 
+### In product information updates
 
-You should also see additional details within the product. For example, the total number of search results within grid (see below), as well as improvements around labels, error messages and tooltips, to give more information around filters, search experience, and result set. 
+You should also see additional details within the product. For example, the total number of search results within grid (see below), as well as improvements around labels, error messages and tooltips, to give more information around filters, search experience, and result set.
 
-![View In-product Info](../media/ProductInfo.png)
+![View In-product Info](../../media/ProductInfo.png)
+
+## Extended capabilities in Threat Explorer
+
+### Top targeted users
+
+Today we expose the list of the top targeted users in the Malware View for Emails (within the Top Malware Families section). We will be extending this view within Phish and All Email views as well, where you will be able to see the top five targeted users along with the number of attempts for each user for the corresponding view (for example, for Phish view you will be able to see the number of Phish attempts).
+You will also be able to export the list of targeted users up to a limit of 3000 along with the number of attempts for offline analysis for each email view. In addition to that, selecting No. of attempts (for example, 13 attempts below) would open a filtered view in Threat Explorer, so that you can look at more details across emails and threats for that user. 
+
+![Top Targeted Users](../../media/Top_Targeted_Users.png)
 
 
-## New features in real-time detections
+### Exchange transport rules
+As part of data enrichment, you should also be able to see all the different transport rules which were applied to a message. This information will be present within the Email grid view (to view this, select Column options in the grid and add Exchange Transport Rule from the Column options in the grid) as well as Details flyout in the email.
+You would be able to see both the GUID as well as the name of the transport rules which were applied to the message. Additionally, you would be able to search for the messages using the name of the transport rule. This would be a ‘Contains’ search which means you will be able to search using partial searches as well. 
+
+#### Important Note: 
+ETR search and name availability would depend on the specific role that has been assigned to you. You will need to have one of the following roles/permissions in order to view the ETR names and search.  If you do not have any of the following roles assigned to you, you will not be able to see the names of the transport rules, and search for the messages using the ETR names. However, you will be able to see the ETR label and GUID information within the Email Details. Your other experiences around viewing records in Email Grids, Email flyouts, Filters, and Export are not impacted. 
+ 
+- EXO Only - Data Loss Prevention: All
+- EXO Only - O365SupportViewConfig: All
+- AAD or EXO - Security Admin: All
+- AAD or EXO - Security Reader: All
+- EXO Only - Transport Rules: All
+- EXO Only - View-Only Configuration: All
+
+Within the email grid, Details flyout, and Exported CSV, the ETRs are presented with a Name/GUID as shown below. 
+
+![Exchange Transport Rules](../../media/ETR_Details.png)
+
+### Inbound connectors 
+
+Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization, with the ability to apply any security restriction or controls. Within Threat Explorer, you will now have the ability to view the connectors which are related to an email as well as search for emails using the connector names. 
+The search for connectors is ‘Contains’ in nature which means partial keyword searches should work as well. 
+Within the Main grid view, the Details flyout, and the Exported CSV, the connectors are shown in the Name/GUID format as shown below: 
+
+![Connector Details](../../media/Connector_Details.png)
 
 ## New features in Threat Explorer and real-time detections
 
@@ -99,19 +132,18 @@ How is this done? Delivery Status is now broken out into two columns:
 
 Delivery Action is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
 
-|Delivered  |Junked  |Blocked  |Replaced  |
-|---------|---------|---------|---------|
-|Email was delivered to Inbox or folder of a user and the user can directly access it.    | Email was sent to either user’s Junk folder or Deleted folder, and the user has access to emails in those folders.       | Any emails that are quarantined, that  failed, or were dropped. This is completely inaccessible by the user!     | Any email where malicious attachments are replaced by .txt files that state the attachment was malicious.     |
-    
-
-| Delivered | Junked | Blocked | Replaced |
+|Delivered|Junked|Blocked|Replaced|
 |---|---|---|---|
-|Email was delivered to the user's inbox or another folder, and the user can directly access it.| Email was sent to either user's Junk folder or Deleted folder, and the user has access to email messages in those folders.| Any email messages that are quarantined, that failed, or were dropped, and are not accessible by the user.| Any email messages where malicious attachments were replaced by .txt files that state the attachments were malicious.|
+|Email was delivered to Inbox or folder of a user and the user can directly access it.|Email was sent to either user’s Junk folder or Deleted folder, and the user has access to emails in those folders.|Any emails that are quarantined, that  failed, or were dropped. This is completely inaccessible by the user!|Any email where malicious attachments are replaced by .txt files that state the attachment was malicious.|
+
+|Delivered|Junked|Blocked|Replaced|
+|---|---|---|---|
+|Email was delivered to the user's inbox or another folder, and the user can directly access it.|Email was sent to either user's Junk folder or Deleted folder, and the user has access to email messages in those folders.|Any email messages that are quarantined, that failed, or were dropped, and are not accessible by the user.|Any email messages where malicious attachments were replaced by .txt files that state the attachments were malicious.|
 |
 
 And here is what the user can see, and what they can't:
 
-| Accessible to end users | Inaccessible to end users |
+|Accessible to end users|Inaccessible to end users|
 |---|---|
 |Delivered|Blocked|
 |Junked|Replaced|
@@ -200,9 +232,23 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
    ![Explorer URLs that were blocked](../../media/ExplorerPhishClickVerdictURLs.png)
 
    Select a URL to view more detailed information.
-   
+
    > [!NOTE]
    > In the URL flyout dialog, the filtering on email messages is removed to show you the full view of the URL's exposure in your environment. This lets you filter down email messages in Explorer to ones you are concerned about, find specific URLs that are potential threats, then expand your understanding of the URL exposure in your environment (via the URL details dialog) without having to add URL filters to the Explorer view itself.
+
+
+**Interpretation of different click verdicts**
+
+Within the Email or URL flyouts, Top Clicks as well as within our filtering experiences, you will see different click values as part of your hunting experience. Below are the possible values of Click Verdicts and their interpretation:
+
+- **None**: We were unable to capture the verdict for the URL. The user might have clicked through the URL.
+- **Allowed**: The user was allowed to navigate to the URL.
+- **Blocked**: The User was blocked from navigating to the URL.
+- **Pending verdict**: The user was presented with the detonation pending page.
+- **Blocked overridden**: The user was blocked from navigating to the URL; however, the user overrode the block to navigate to the URL.
+- **Pending verdict bypassed**: The user was presented with the detonation page; however, the user overrode the page to navigate to the URL.
+- **Error**: The user was presented with the error page. This can also mean there was an error in capturing the verdict.
+- **Failure**: There was unknown exception while capturing the verdict. The user might have clicked through the URL. 
 
 ## Review email messages reported by users
 
@@ -276,4 +322,3 @@ To learn more about roles and permissions, see the following resources:
 - More filtering capabilities and available actions are included in **Threat Explorer**.
 
 For more details, see [Office 365 ATP Service Description: Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
-

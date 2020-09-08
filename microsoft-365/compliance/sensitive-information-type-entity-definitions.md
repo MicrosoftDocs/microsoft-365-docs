@@ -15,6 +15,8 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
+hideEdit: true
+feedback_system: None
 description: "Data loss prevention (DLP) in the Security &amp; Compliance Center includes 80 sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
 ---
 
@@ -500,9 +502,6 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_australian_tax_file_number" />
         <Match idRef="Keyword_Australia_Tax_File_Number" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_number_exclusions" />
-        </Any>
       </Pattern>
     </Entity>
 ```
@@ -520,39 +519,6 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - individual tax return
 - tax file number
 - tfn
-
-#### Keyword_number_exclusions
-
-- 00000000
-- 11111111
-- 22222222
-- 33333333
-- 44444444
-- 55555555
-- 66666666
-- 77777777
-- 88888888
-- 99999999
-- 000000000
-- 111111111
-- 222222222
-- 333333333
-- 444444444
-- 555555555
-- 666666666
-- 777777777
-- 888888888
-- 999999999
-- 0000000000
-- 1111111111
-- 2222222222
-- 3333333333
-- 4444444444
-- 5555555555
-- 6666666666
-- 7777777777
-- 8888888888
-- 9999999999
 
 ## Austria driver's license number
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
@@ -721,7 +687,9 @@ Yes
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
   
-- The function  `Func_austria_eu_ssn_or_equivalent` finds content that matches the pattern. 
+- The function  `Func_austria_eu_
+
+_or_equivalent` finds content that matches the pattern. 
     
 - A keyword from  `Keywords_austria_eu_ssn_or_equivalent` is found. 
     
@@ -2846,137 +2814,162 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 #### Keyword_cc_verification
 
-- card verification
-- card identification number
+- card verification
+- card identification number
 - cvn
 - cid
 - cvc2
 - cvv2
-- pin block
-- security code
-- security number
-- security no
-- issue number
-- issue no
+- pin block
+- security code
+- security number
+- security no
+- issue number
+- issue no
 - cryptogramme
-- numéro de sécurité
-- numero de securite
+- numéro de sécurité
+- numero de securite
 - kreditkartenprüfnummer
 - kreditkartenprufnummer
 - prüfziffer
 - prufziffer
-- sicherheits Kode
+- sicherheits Kode
 - sicherheitscode
 - sicherheitsnummer
 - verfalldatum
-- codice di verifica
-- cod. sicurezza
-- cod sicurezza
-- n autorizzazione
+- codice di verifica
+- cod. sicurezza
+- cod sicurezza
+- n autorizzazione
 - código
 - codigo
-- cod. seg
-- cod seg
-- código de segurança
-- codigo de seguranca
-- codigo de segurança
-- código de seguranca
-- cód. segurança
-- cod. seguranca cod. segurança
-- cód. seguranca
-- cód segurança
-- cod seguranca cod segurança
-- cód seguranca
-- número de verificação
-- numero de verificacao
+- cod. seg
+- cod seg
+- código de segurança
+- codigo de seguranca
+- codigo de segurança
+- código de seguranca
+- cód. segurança
+- cod. seguranca
+- cod. segurança
+- cód. seguranca
+- cód segurança
+- cod seguranca
+- cod segurança
+- cód seguranca
+- número de verificação
+- numero de verificacao
 - ablauf
-- gültig bis
+- gültig bis
 - gültigkeitsdatum
-- gultig bis
+- gultig bis
 - gultigkeitsdatum
 - scadenza
-- data scad
-- fecha de expiracion
-- fecha de venc
+- data scad
+- fecha de expiracion
+- fecha de venc
 - vencimiento
-- válido hasta
-- valido hasta
+- válido hasta
+- valido hasta
 - vto
-- data de expiração
-- data de expiracao
-- data em que expira
+- data de expiração
+- data de expiracao
+- data em que expira
 - validade
 - valor
 - vencimento
-- Venc 
+- transaction
+- transaction number
+- reference number
+- セキュリティコード
+- セキュリティ コード
+- セキュリティナンバー
+- セキュリティ ナンバー
+- セキュリティ番号
+
 
 #### Keyword_cc_name
 
 - amex
-- american express
+- american express
 - americanexpress
+- americano espresso
 - Visa
 - mastercard
-- master card
-- mc 
+- master card
+- mc
 - mastercards
-- master cards
-- diner's Club
-- diners club
+- master cards
+- diner's Club
+- diners club
 - dinersclub
-- discover card
+- discover
+- discover card
 - discovercard
-- discover cards
+- discover cards
 - JCB
-- japanese card bureau
-- carte blanche
+- BrandSmart
+- japanese card bureau
+- carte blanche
 - carteblanche
-- credit card
+- credit card
 - cc#
 - cc#:
-- expiration date
-- exp date
-- expiry date
-- date d'expiration
-- date d'exp
-- date expiration
-- bank card
+- expiration date
+- exp date
+- expiry date
+- date d’expiration
+- date d'exp
+- date expiration
+- bank card
 - bankcard
-- card number
-- card num
+- card number
+- card num
 - cardnumber
 - cardnumbers
-- card numbers
+- card numbers
 - creditcard
-- credit cards
+- credit cards
 - creditcards
 - ccn
-- card holder
+- card holder
 - cardholder
-- card holders
+- card holders
 - cardholders
-- check card
+- check card
 - checkcard
-- check cards
+- check cards
 - checkcards
-- debit card
+- debit card
 - debitcard
-- debit cards
+- debit cards
 - debitcards
-- atm card
+- atm card
 - atmcard
-- atm cards
+- atm cards
 - atmcards
 - enroute
-- en route
-- card type
-- carte bancaire
-- carte de crédit
-- carte de credit
-- numéro de carte
-- numero de carte
-- nº de la carte
-- nº de carte
+- en route
+- card type
+- Cardmember Acct
+- cardmember account
+- Cardno
+- Corporate Card
+- Corporate cards
+- Type of card
+- card account number
+- card member account
+- Cardmember Acct.
+- card no.
+- card no
+- card number
+- carte bancaire
+- carte de crédit
+- carte de credit
+- numéro de carte
+- numero de carte
+- nº de la carte
+- nº de carte
 - kreditkarte
 - karte
 - karteninhaber
@@ -2985,61 +2978,90 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - kreditkarteninstitut
 - kreditkartentyp
 - eigentümername
-- kartennr 
+- kartennr
 - kartennummer
 - kreditkartennummer
 - kreditkarten-nummer
-- carta di credito
-- carta credito
-- carta
-- n carta
-- nr. carta
-- nr carta
-- numero carta
-- numero della carta
-- numero di carta
-- tarjeta credito
-- tarjeta de credito
-- tarjeta crédito
-- tarjeta de crédito
-- tarjeta de atm
-- tarjeta atm
-- tarjeta debito
-- tarjeta de debito
-- tarjeta débito
-- tarjeta de débito
-- nº de tarjeta
-- no. de tarjeta
-- no de tarjeta
-- numero de tarjeta
-- número de tarjeta
-- tarjeta no
+- carta di credito
+- carta credito
+- n. carta
+- n carta
+- nr. carta
+- nr carta
+- numero carta
+- numero della carta
+- numero di carta
+- tarjeta credito
+- tarjeta de credito
+- tarjeta crédito
+- tarjeta de crédito
+- tarjeta de atm
+- tarjeta atm
+- tarjeta debito
+- tarjeta de debito
+- tarjeta débito
+- tarjeta de débito
+- nº de tarjeta
+- no. de tarjeta
+- no de tarjeta
+- numero de tarjeta
+- número de tarjeta
+- tarjeta no
 - tarjetahabiente
-- cartão de crédito
-- cartão de credito
-- cartao de crédito
-- cartao de credito
-- cartão de débito
-- cartao de débito
-- cartão de debito
-- cartao de debito
-- débito automático
-- debito automatico
-- número do cartão
-- numero do cartão 
-- número do cartao
-- numero do cartao
-- número de cartão
-- numero de cartão
-- número de cartao
-- numero de cartao
-- nº do cartão
-- nº do cartao
-- nº. do cartão
-- no do cartão
-- no do cartao
-- no. do cartão
-- no. do cartao 
+- cartão de crédito
+- cartão de credito
+- cartao de crédito
+- cartao de credito
+- cartão de débito
+- cartao de débito
+- cartão de debito
+- cartao de debito
+- débito automático
+- debito automatico
+- número do cartão
+- numero do cartão
+- número do cartao
+- numero do cartao
+- número de cartão
+- numero de cartão
+- número de cartao
+- numero de cartao
+- nº do cartão
+- nº do cartao
+- nº. do cartão
+- no do cartão
+- no do cartao
+- no. do cartão
+- no. do cartao
+- クレジットカード番号
+- クレジットカードナンバー
+- クレジットカード＃
+- クレジットカード
+- クレジット
+- クレカ
+- カード番号
+- カードナンバー
+- カード＃
+- アメックス
+- アメリカンエクスプレス
+- アメリカン エクスプレス
+- Visaカード
+- Visa カード
+- マスターカード
+- マスター カード
+- マスター
+- ダイナースクラブ
+- ダイナース クラブ
+- ダイナース
+- 有効期限
+- 期限
+- キャッシュカード
+- キャッシュ カード
+- カード名義人
+- カードの名義人
+- カードの名義
+- デビット カード
+- デビットカード
 
 ## Croatia driver's license number
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
@@ -6693,12 +6715,9 @@ No
 
 ### Definition
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_indonesia_id_card finds content that matches the pattern.
 - A keyword from Keyword_indonesia_id_card is found.
-
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression Regex_indonesia_id_card finds content that matches the pattern.
 
 ```xml
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -6706,10 +6725,6 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
   <Pattern confidenceLevel="85">
      <IdMatch idRef="Regex_indonesia_id_card"/>
      <Match idRef="Keyword_indonesia_id_card"/>
-  </Pattern>
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_indonesia_id_card"/>
-  </Pattern>
 </Entity>
 ```
 
@@ -12207,7 +12222,15 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - medical attention
 - social security
 - great britain
-- insurance
+- NI Number
+- NI No.
+- NI #
+- NI#
+- insurance#
+- insurancenumber
+- nationalinsurance#
+- nationalinsurancenumber
+
     
 ## U.K. tax identification number
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
@@ -12641,14 +12664,18 @@ A DLP policy is 55% confident that it's detected this type of sensitive informat
 
 #### Keyword_ssn
 
-- Social Security 
-- Social Security# 
-- Soc Sec 
-- SSN 
-- SSNS 
-- SSN# 
-- SS# 
-- SSID 
+- SSA Number
+- social security number
+- social security #
+- social security#
+- social security no
+- Social Security#
+- Soc Sec
+- SSN
+- SSNS
+- SSN#
+- SS#
+- SSID
    
 ## U.S. / U.K. passport number
 The U.K. passport number sensitive information type entity is available in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.

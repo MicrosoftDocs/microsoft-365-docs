@@ -14,7 +14,7 @@ ms.collection: M365-modern-desktop
 
 # Work with app control
 
-Once app control has been deployed in your environment, both you and Microsoft Managed Desktop Operations have ongoing responsibilities. For example, you might want to add a new app in the environment or add (or remove) a trusted signer. To improve security, all apps should be code-signed before you release them to end users. An app's publisher details includes information about the signer.
+Once app control has been deployed in your environment, both you and Microsoft Managed Desktop Operations have ongoing responsibilities. For example, you might want to add a new app in the environment or add (or remove) a trusted signer. To improve security, all apps should be code-signed before you release them to users. An app's publisher details includes information about the signer.
 
 
 ## Add a new app
@@ -49,8 +49,8 @@ Operations will progressively deploy policies to deployment groups following thi
 |---------|---------|---------|
 |Test     |  Audit       |  Day 0       |
 |First     | Enforced        | Day 1        |
-|Fast     | Enforced        |  Day 3       |
-|Broad     | Enforced        |  Day 7       |
+|Fast     | Enforced        |  Day 2       |
+|Broad     | Enforced        |  Day 3       |
 
 
 You can pause or roll back the deployment at any time during the rollout. To do this, open another service request with Operations.

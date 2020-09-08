@@ -79,11 +79,13 @@ description: "Add your domain to Microsoft 365 in the Microsoft 365 admin center
     
 5. Choose how you want to verify that you own the domain.
     
-    1. If your domain is registered at GoDaddy or 1&amp;1, select **Sign in** > **Next** and Microsoft [will set up your records automatically](../get-help-with-domains/domain-connect.md).
+    1. If your domain registrar uses [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365), select **Sign in** > **Next** and Microsoft [will set up your records automatically](../get-help-with-domains/domain-connect.md).
     
     2. You can have an email sent to the registered contact for the domain with a verification code. If you don't recognize or have access to the email on record, you can use the third option.
     
     3. You can use a TXT record to verify your domain. Select this and select **Next** to see instructions for how to add this DNS record to your registrar's website. This can take up to 30 minutes to verify after you've added the record. 
+
+    4. You can add a text file to your domain's website. Select and download the .txt file from the setup wizard, then upload the file to your website's top level folder. The path to the file should look similar to: `http://mydomain.com/ms39978200.txt`. We'll confirm you own the domain by finding the file on your website.
     
 6. Choose how you want to make the DNS changes required for Office to use your domain.
     
@@ -135,6 +137,7 @@ In the wizard, we'll just confirm that you own the domain, and then automaticall
 
 - [1&amp;1 IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
+- [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
@@ -158,5 +161,3 @@ If you have a website that you use with your business, it will keep working wher
 [Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
 
 [Set up your domain (host-specific instructions)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
-
-[Get help with domains](../get-help-with-domains/get-help-with-domains.md)

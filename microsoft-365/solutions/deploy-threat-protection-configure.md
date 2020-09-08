@@ -1,8 +1,8 @@
 ---
 title: Steps to configure threat protection capabilities across Microsoft 365
 description: Learn how to deploy threat protection services and capabilities across Microsoft 365 E5.
-ms.author: bcarter
-author: brendacarter
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 ms.topic: article
@@ -10,7 +10,7 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-- M365solutions
+- m365solution-threatprotection
 ms.custom: 
 f1.keywords: NOCSH
 ---
@@ -27,12 +27,12 @@ Follow these steps to configure threat protection across Microsoft 365.
 Microsoft has tested and recommends a specific set of conditional access and related policies for protecting access to all of your SaaS applications, especially Microsoft 365. Policies are recommended for baseline, sensitive, and highly regulated protection. Begin by implementing the policies for baseline protection. 
 
 
-[![Common policies for configuring identity and device access](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[![Common policies for configuring identity and device access](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 ### To implement baseline protection for Microsoft 365
 
-![Process for deploying threat protection capabilities](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
+![Process for deploying baseline protection](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
 
 1. [Configure prerequisites, including Azure Identity Protection](../enterprise/identity-access-prerequisites.md).
 2. [Configure common identity and device access policies](../enterprise/identity-access-policies.md) for baseline protection.
@@ -55,7 +55,7 @@ Azure ATP enables security operations (SecOps) analysts and security professiona
 
 ### To set up Azure ATP
 
-![Process for deploying threat protection capabilities](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
+![Process for deploying Azure ATP](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
 
 1. [Set up Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) to protect your primary environments.
 2. Protect all your [domain controllers](https://docs.microsoft.com/azure-advanced-threat-protection/atp-sensor-monitoring) and [forests](https://docs.microsoft.com/azure-advanced-threat-protection/atp-multi-forest).
@@ -75,7 +75,7 @@ Microsoft Threat Protection unifies alerts, incidents, automated investigation a
 
 ### To set up Microsoft Threat Protection
 
-![Process for deploying threat protection capabilities](../media/solutions-architecture-center/deploy-mtp-steps.png) 
+![Process for deploying Microsoft Threat Protection](../media/solutions-architecture-center/deploy-mtp-steps.png) 
 
 1. [Review the prerequisites](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
 2. [Turn on Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
@@ -90,9 +90,8 @@ Microsoft Threat Protection unifies alerts, incidents, automated investigation a
 
 [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP) safeguards your organization against malicious threats in email messages (attachments and URLs), Office documents, and collaboration tools. The following table lists Office 365 ATP features and capabilities that are included in Microsoft 365 E5:
 
-|||
-|---|---|
 |Configuration, protection, and detection capabilities|Automation, investigation, remediation, and education capabilities|
+|---|---|
 |[Safe Attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Safe Documents](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[ATP anti-phishing protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Threat Trackers](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Attack Simulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
@@ -100,7 +99,7 @@ With Office 365 ATP, people across your organization can communicate and collabo
 
 ### To set up Office 365 ATP
 
-![Process for deploying threat protection capabilities](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
+![Process for deploying Office 365 ATP](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
 
 1. [Set up and configure your Office 365 ATP policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 2. [View and use your Office 365 ATP reports](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp).
@@ -118,7 +117,7 @@ With Office 365 ATP, people across your organization can communicate and collabo
 
 ### Set up Microsoft Defender ATP
 
-![Process for deploying threat protection capabilities](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
+![Process for deploying Microsoft Defender ATP](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
 
 1. [Prepare your Microsoft Defender ATP deployment](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases).
 2. [Set up your Microsoft Defender ATP deployment](https://docs.microsoft.com/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)
@@ -136,7 +135,7 @@ With Office 365 ATP, people across your organization can communicate and collabo
 
 ### Set up Microsoft Cloud App Security
 
-![Process for deploying threat protection capabilities](../media/solutions-architecture-center/deploy-mcas-steps.png) 
+![Process for deploying Microsoft Cloud App Security](../media/solutions-architecture-center/deploy-mcas-steps.png) 
 
 1. [Set up the portal and other basic requirements](https://docs.microsoft.com/cloud-app-security/general-setup).
 2. [Set up cloud discovery](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery) and [connect apps](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
@@ -152,7 +151,7 @@ With Office 365 ATP, people across your organization can communicate and collabo
 
 After you have set up and deployed your threat protection services and capabilities, your next step is to monitor threat detections, and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can monitor and managing security across your Microsoft identities, data, devices, apps, and infrastructure. 
 
-:::image type="content" source="../media/solutions-architecture-center/m365-security-center.png" alt-text="Microsoft 365 security center":::
+![Microsoft 365 security center](../media/solutions-architecture-center/m365-security-center.png)
 
 The Microsoft 365 security center is specifically intended for security admins and security operations teams. In the Microsoft 365 security center, you can:
 - View the overall security health of your organization with [Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).

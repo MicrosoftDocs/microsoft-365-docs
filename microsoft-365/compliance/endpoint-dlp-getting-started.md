@@ -76,7 +76,7 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to meet these requirements.
 
 1. Must be running Windows 10 build 1809 or up.
-2. All devices must be [Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join).
+2. All devices must be [Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), or Hybrid Azure AD joined.
 3. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 ## Onboarding devices into device management
@@ -94,17 +94,17 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
 1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
 2. Open the Compliance Center settings page and choose **Onboard devices**. 
 
-![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+   ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-> [!NOTE]
-> While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
+   > [!NOTE]
+   > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
 
 3. Choose **Device management** to open the **Devices** list. The list will be empty until you onboard devices.
 4. Choose **Onboarding** to begin the onboarding process.
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
 
-![deployment method](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-1. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access MDATP procedures that match the deployment package you selected in step 5:
+   ![deployment method](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access MDATP procedures that match the deployment package you selected in step 5:
     - Onboard Windows 10 machines using Group Policy
     - Onboard Windows machines using Microsoft Endpoint Configuration Manager
     - Onboard Windows 10 machines using Mobile Device Management tools
@@ -147,7 +147,7 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 ## Next steps
 Now that you have onboarded devices and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
 
-1) [Using Endpoint data loss prevention (preview)](endpoint-dlp-using.md)
+- [Using Endpoint data loss prevention (preview)](endpoint-dlp-using.md)
 
 ## See also
 

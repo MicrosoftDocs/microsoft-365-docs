@@ -61,6 +61,20 @@ Your security operations team can operate more effectively and efficiently, beca
 > [!TIP]
 > If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
+## Available actions
+
+As remediation actions are taken, they're listed on the History tab in the Action center. Such actions include the following:
+
+- Collect investigation package 
+- Isolate device (this action can be undone) 
+- Offboard machine 
+- Release code execution 
+- Release from quarantine 
+- Request sample 
+- Restrict code execution (this action can be undone) 
+- Run antivirus scan 
+- Stop and quarantine 
+
 ## Required permissions for Action center tasks
 
 To approve or reject pending actions in the Action center, you must have permissions assigned as listed in the following table:

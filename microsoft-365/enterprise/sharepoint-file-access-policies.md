@@ -1,13 +1,13 @@
 ---
-title: Recommended secure document policies - Microsoft 365 Enterprise | Microsoft Docs
+title: Recommended secure document policies - Microsoft 365 for enterprise | Microsoft Docs
 description: Describes the policies for Microsoft recommendations about how to secure SharePoint file access.
-author: BrendaCarter
-manager: laurawi
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.date: 06/07/2018
 ms.reviewer: martincoetzer
 ms.custom: 
@@ -25,13 +25,13 @@ This article describes how to implement the recommended identity and device-acce
 
 These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in [the overview](microsoft-365-policies-configurations.md).
 
-In addition to implementing this guidance, be sure to configure SharePoint sites with the right amount of protection, including setting appropriate permissions for sensitive and highly-regulated content. For more information on creating sites for baseline, sensitive, and highly-regulated protection, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files).
+In addition to implementing this guidance, be sure to configure SharePoint sites with the right amount of protection, including setting appropriate permissions for sensitive and highly-regulated content.
 
 ## Updating common policies to include SharePoint and OneDrive for Business
 
 The following diagram illustrates the set of recommended policies for protecting files in SharePoint Online and OneDrive for Business. It indicates which policies should be updated or newly created to add protection for SharePoint Online and OneDrive for Business.
 
-![Summary of policies for SharePoint Online and OneDrive](../media/identity-access-ruleset-sharepoint.png)
+[ ![Summary of policies for SharePoint Online and OneDrive](../media/identity-access-ruleset-sharepoint.png) ](../media/identity-access-ruleset-sharepoint.png#lightbox)
 
 If you included SharePoint Online when you created the common policies, you only need to create the new policies. When configuring conditional access rules, SharePoint Online includes OneDrive for Business.
 
@@ -73,7 +73,7 @@ It's important to understand that SharePoint site permissions are typically base
 
 The following illustration provides an example of how SharePoint device access policies protect access to sites.
 
-![How SharePoint device access policies protect sites](../media/SharePoint-rules-scenario.png)
+[ ![How SharePoint device access policies protect sites](../media/SharePoint-rules-scenario.png) ](../media/SharePoint-rules-scenario.png#lightbox)
 
 In the illustration:
 
@@ -82,6 +82,3 @@ In the illustration:
 - If James accesses a sensitive site he is a member of using his unmanaged phone, which is allowed for baseline users, he will receive browser-only access to the sensitive site due to the device access policy configured for this site.
 - If James accesses a highly regulated site he is a member of using his unmanaged phone, he will be blocked due to the access policy configured for this site. He can only access this site using his managed and compliant PC.
 
-## Next steps
-
-[Secure SharePoint Online sites and files](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)
