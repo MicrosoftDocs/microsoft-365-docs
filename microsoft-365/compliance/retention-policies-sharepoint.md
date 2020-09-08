@@ -27,19 +27,15 @@ The information in this article supplements [Learn about retention](retention.md
 
 ## What's included for retention and deletion
 
-All non-system files in a SharePoint and OneDrive site items can be retained by applying a retention policy or retention label.
+All files stored in a SharePoint or OneDrive site can be retained by applying a retention policy or retention label.
 
 The following files can be deleted:
 
 - When you use a retention policy: All files in document libraries, which include any default SharePoint document libraries, such as Site Assets.
     
-    Not included: Files outside document libraries.
-
 - When you use retention labels: All files in all document libraries, and all files at the root level that aren't in a folder.
     
-    Not included: Files outside document libraries, unless they are at the root level.
-    
-    When you use a [KQL query with an auto-apply policy for a retention label](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), you can exclude the files in the Site Assets document library by using the following entry: `NOT(DocumentLink:"<URL to Site Assets library>")`
+    When you use a [KQL query with an auto-apply policy for a retention label](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), you can exclude document libraries by using the following entry: `NOT(DocumentLink:"<URL to document library>")`
 
 ## How retention works for SharePoint and OneDrive
 
