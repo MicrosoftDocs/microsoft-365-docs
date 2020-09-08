@@ -18,7 +18,9 @@ description: "Use the Compliance Manager quickstart guide to help you along your
 
 # Compliance Manager quickstart
 
-**In this article:** Use this quickstart guide to help you along your journey of using Compliance Manager to manage your organization’s compliance activities. Compliance Manager provides intelligent and actionable insights from the first time you visit it, and advanced capabilities for scaling your compliance when you’re ready. So whether you’re coming to Compliance Manager for the first time, or are ready to use some of the advanced features, this guide can help you understand which features of Compliance Manager to use at whatever point along your journey you’re in.
+Use this quickstart guide to help you along your journey of using Compliance Manager to manage your organization’s compliance activities.
+
+Compliance Manager provides intelligent and actionable insights from the first time you visit it, and advanced capabilities for scaling your compliance when you’re ready. So whether you’re coming to Compliance Manager for the first time, or are ready to use some of the advanced features, this guide can help you understand which features of Compliance Manager to use at whatever point along your journey you’re in.
 
 ## First visit: get to know Compliance Manager
 
@@ -46,7 +48,7 @@ Once you're familiar with the basics, it's time to set things up to meet your or
 
 ## Scaling up: building your own custom assessments and automating testing
 
-When you're comfortable managing assessments in Compliance Manger, you can use the template creation processes to build your own custom assessments. This is helpful for performing compliance activities on non-Microsoft 365 products. Work more in-depth with templates by modifying them to add or remove controls and improvement actions. You can also set up automated testing of all or a subset of improvement actions. Check out the links below to dive into more advanced functions in Compliance Manager:
+When you're comfortable managing assessments in Compliance Manger, you can use the template creation processes to build your own custom assessments. This is helpful for performing compliance activities on non-Microsoft 365 products. You can modify an existing template by adding or removing controls and improvement actions. You can also set up automated testing of all or a subset of improvement actions. Check out the links below to dive into more advanced functions in Compliance Manager:
 
 - [Create your own custom assessment](compliance-manager-assessments.md#create-your-own-custom-assessment)
 - [Modify a template to add or remove improvement actions and controls](compliance-manager-templates.md#modify-a-template)
