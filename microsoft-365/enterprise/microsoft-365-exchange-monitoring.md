@@ -30,6 +30,8 @@ Here is an example of the **Exchange monitoring** page in the Microsoft 365 admi
 
 ![The Exchange monitoring page in the Microsoft 365 admin center](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example.png)
 
+Standalone experience-click Service Health
+
 With the **Service health** page, you can see whether the Exchange service is healthy or not and whether there are any associated incidents or advisories. With Exchange monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by scenario. 
 
 ## Requirements
@@ -42,6 +44,8 @@ This preview is enabled for customers who meet these requirements:
   - Office 365 E5 
   - Microsoft 365 E3 
   - Microsoft 365 E5 
+
+Exchange Admin Center-check for alternate set of requirements
 
 With Exchange monitoring you can view the health for the following email clients based on email read activity:
 
@@ -62,6 +66,8 @@ You can also monitor Exchange health for the following scenarios:
 - **Mail flow**: The number of messages successfully delivered to a mailbox without any delay after the message reached the Microsoft 365 network. 
 - **Basic Authentication and Modern Authentication**: The number of users successfully validated in the Exchange service.
 
+One more screen shot
+
 For all these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios shows the near real time trend for seven days with 30-minute aggregate compared with the previous week. 
 
 ## Send us feedback
@@ -73,6 +79,7 @@ There are two ways you can provide feedback:
 
 ![The "Is this post helpful?" link for a specific incident or advisory](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example-incident-feedback.png)
 
+Screenshot-Krishnan to provide
 
 ## Frequently asked questions
 
@@ -97,7 +104,7 @@ The active user count shown in monitoring is based on a 30-minute window where u
 
 #### 3.	Will there be other monitoring scenarios for other services such as Teams and SharePoint? 
 
-Microsoft is working on integrating this experience directly inside the Service Health dashboard in the Microsoft 365 admin center. This will provide opportunities for Microsoft to extend monitoring scenarios for other services, which will be announced when there is news to share. 
+Microsoft is integrated this experience directly inside the Service Health dashboard in the Microsoft 365 admin center. This will provide opportunities for Microsoft to extend monitoring scenarios for other services, which will be announced when there is news to share. 
 
 #### 4.	What is the plan for general availability of this experience? 
 
@@ -105,9 +112,14 @@ Microsoft is working on integrating this experience directly inside the Service 
 
 Your feedback will help us define our plan for general availability.
 
-#### 5.	Is this a free or paid feature? 
+With new integrated experiece, collevt FB and based on it, we will plan fr 
 
-This feature is only available for customers that meet the requirements in question 1.
+
+#### 5.	Is this a free (included) or paid (extra) feature? 
+
+This feature is in Public preview and only available for customers that meet the requirements in question 1.
+
+That decision is pending
 
 #### 6.	How do I provide feedback? 
 
