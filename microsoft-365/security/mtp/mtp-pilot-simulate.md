@@ -24,52 +24,54 @@ ms.topic: conceptual
 **Applies to:**
 - Microsoft Threat Protection
 
-To effectively determine the benefit and adoption of Microsoft Threat Protection (MTP), you can run a pilot project. Before enabling Microsoft Threat Protection in your environment and starting with defined use cases, it is best to go through a planning process to determine the tasks that must be accomplished in this pilot project, and the success criteria. 
+To test the Microsoft Threat Protection capabilities for your pilot project, we will simulate a sophisticated attack that leverages advanced techniques to hide from detection. The attack enumerates opened Server Message Block (SMB) sessions on domain controllers and retrieves recent IP addresses of users’ devices. This category of attacks usually doesn’t include files dropped on the victim’s device—they occur solely in memory. They “live off the land” by using existing system and administrative tools and inject their code into system processes to hide their execution, allowing them to evade detection and persist on the device.
 
-This guide provides an overview of Microsoft Threat Protection and step-by-step guidance on how to set up your pilot project. 
+In this simulation, our sample scenario starts with a PowerShell script. A user might be tricked into running a script. Or the script might run from a remote connection to another computer from a previously infected device—the attacker attempting to move laterally in the network. Detection of these scripts can be difficult because administrators also often run scripts remotely to carry out various administrative activities.
 
-The following sample timeline varies depending on having the right resources in your environment. Some detections and workflows might need more learning time than the others.
+During the simulation, the attack injects shellcode into a seemingly innocent process. In this scenario, we’ll use notepad.exe. We chose this process for the simulation, but attackers will more likely target a long-running system process, such as svchost.exe. The shellcode then goes on to contact the attacker’s command-and-control (C2) server to receive instructions on how to proceed. In addition, the script attempts executing reconnaissance queries against the domain controller (DC). This allows an attacker to get information about recent user login information. Once attackers have this information, they can move laterally in the network to get to a specific sensitive account
+
 
 >[!IMPORTANT]
->For optimum results, follow the pilot instructions as closely as possible.
+>For optimum results, follow the attack simulation instructions as closely as possible.
 
 
-## Pilot playbook phases 
+## Test environment requirements
 
-There are four phases in running a Microsoft Threat Protection pilot:
+There are two devices used in this scenario: a test device and a domain controller.
 
-|Phase | Description | 
-|:-------|:-----|
-| ![Phase 1: Plan](../../media/prepare.png)<br>[Phase 1: Plan](prepare-mtpeval.md)| Learn what you need to consider when deploying Microsoft Threat Protection in a trial lab environment: <br><br>- Stakeholders and sign-off <br> - Environment considerations <br>- Access <br>- Azure Active Directory setup <br> - Configuration order
-|  ![Phase 2: Prepare](../../media/setup.png) <br>[Phase 2: Prepare](setup-mtpeval.md)|  Take the initial steps to access Microsoft 365 Security Center to setup your Microsoft Threat Protection trial lab environment. You will be guided to:<br><br>- Sign up for Microsoft 365 E5 Trial <br>  - Configure domain<br>- Assign Microsoft 365 E5 licenses<br>- Complete the setup wizard in the portal|
-|  ![Phase 3: Run attack simulation](../../media/config-onboard.png) <br>[Phase 3: Run attack simulation](config-mtpeval.md) | Configure each Microsoft Threat Protection pillar and onboard endpoints. You will be guided to:<br><br>- Configure Office 365 Advanced Threat Protection<br>- Configure Microsoft Cloud App Security<br>- Configure Azure Advanced Threat Protection<br>- Configure Microsoft Defender Advanced Threat Protection 
-|  ![Phase 4: Close and summarize](../../media/config-onboard.png) <br>[Phase 3: Close and summarize](config-mtpeval.md) | Configure each Microsoft Threat Protection pillar and onboard endpoints. You will be guided to:<br><br>- Configure Office 365 Advanced Threat Protection<br>- Configure Microsoft Cloud App Security<br>- Configure Azure Advanced Threat Protection<br>- Configure Microsoft Defender Advanced Threat Protection 
+1.	Verify your tenant has [Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#starting-the-service)￼￼.
+2.	Configure a test domain controller:
+    - Set up a device with Windows Server 2008 R2 or a later version.
+    - Onboard the test domain controller to [Azure Advanced Threat Protection](https://docs.microsoft.com/en-us/azure/security-center/security-center-wdatp) and enable [remote management](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    
+    - Enable [Azure ATP and Microsoft Cloud App Security integration](https://docs.microsoft.com/en-us/cloud-app-security/aatp-integration).
+    - Create a test user on your domain – no admin permissions needed.
+
+3.	Configure a test device:
+    a.	Requires Windows 10 version 1903 or a later version.
+    b.	Join the test device to the test domain.
+    c.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see this [troubleshooting topic](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+    d.	[Onboard to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+
+If you use an existing tenant and implement device groups, create a dedicated device group for the test device and push it to top level in configuration UX.
+
+## Run the simulation
+
+To run the attack scenario simulation:
+1.	Log in to the test device with the test user account.
+2.	Open a Windows PowerShell window on the test device.
+3.	Copy the following simulation script:
 
 
-## In scope
-
-The following is in scope for this trial lab environment guide:
--   Set up Azure Active Directory
--   Set up Microsoft Threat Protection
-    -   Sign up for Microsoft 365 E5 Trial
-    -   Configure domain
-    -   Assign Microsoft 365 E5 licenses
-    -   Completing the setup wizard within the portal
--   Configure all Microsoft Threat Protection pillars based on best practices
-    -   Office 365 Advanced Threat Protection
-    -   Azure Advanced Threat Protection
-    -   Microsoft Cloud App Security
-    -   Microsoft Defender Advanced Threat Protection
-
-## Out of scope
+## Investigate an incident
 
 The following are out of scope of this deployment guide:
 
--   Configuration of third-party solutions that might integrate with Microsoft
-    Threat Protection
--   Penetration testing in production environment
+## Resolve the incident
+The following are out of scope of this deployment guide:
+
+
 
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 1: Prepare](../../media/prepare.png) <br>[Phase 1: Prepare](prepare-mtpeval.md) | Prepare your Microsoft Threat Protection evaluation lab environment
+|![Phase 4: Closing & summary](../../media/prepare.png) <br>[Phase 4: Closing & summary](prepare-mtpeval.md) | Analyze your Microsoft Threat Protection pilot outcome, present them to your stakeholders, and take the next step.
