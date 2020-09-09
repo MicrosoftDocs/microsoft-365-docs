@@ -3,7 +3,7 @@ title: ISO/IEC 27017:2015 Code of Practice for Information Security Controls
 description: Microsoft cloud services have implemented this Code of Practice for Information Security Controls.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

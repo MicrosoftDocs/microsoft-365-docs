@@ -3,7 +3,7 @@ title: Content Delivery & Security Association (CDSA) Content Protection & Secur
 description: Azure is certified to the Content Delivery and Security Association Content Protection and Security standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
