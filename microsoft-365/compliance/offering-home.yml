@@ -18,41 +18,74 @@ metadata:
   ms.date: 01/27/2020 #Required; mm/dd/yyyy format.
   localization_priority: Normal
 
-# productDirectory section (optional)
-productDirectory:
-  title: sectiontitle # < 60 chars (optional)
-  summary: sectionsummary # < 160 chars (optional)
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  title: Compliance offerings by area # < 60 chars (optional)
+  summary: Learn about Microsoft support for regulations by area # < 160 chars (optional)
   items:
     # Card
     - title: Global
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ../media/offering-global-icon.svg
       links:
-        - url: offering-cis-benchmark.md
-          text: CIS Benchmark
-        - url: file1b.md OR https://docs.microsoft.com/file1b
-          text: linktext1b
+        - url: file1.md
+          itemType: reference
+          text: linktext1
+        - url: file2.md
+          itemType: reference
+          text: linktext2
+        - url: file3.md
+          itemType: reference
+          text: linktext3
+      # footerLink (optional)
+      footerLink:
+        url: filefooter.md
+        text: See more
     # Card
     - title: US Government
-      imageSrc: ../media/offering-government-icon.svg
       links:
-        - url: file2a.md OR https://docs.microsoft.com/file2a
-          text: linktext2a
-        - url: file2b.md OR https://docs.microsoft.com/file2b
-          text: linktext2b
+        - url: file1.md
+          itemType: reference
+          text: linktext1
+        - url: file2.md
+          itemType: reference
+          text: linktext2
+        - url: file3.md
+          itemType: reference
+          text: linktext3
+      # footerLink (optional)
+      footerLink:
+        url: filefooter.md 
+        text: See more
     # Card
     - title: Industry
-      imageSrc: ../media/offering-industry-icon.svg
       links:
-        - url: file3a.md OR https://docs.microsoft.com/file3a
-          text: linktext3a
-        - url: file3b.md OR https://docs.microsoft.com/file3b
-          text: linktext3b
+        - url: file1.md
+          itemType: reference
+          text: linktext1
+        - url: file2.md 
+          itemType: reference
+          text: linktext2
+        - url: file3.mdle3
+          itemType: reference
+          text: linktext3
+      # footerLink (optional)
+      footerLink:
+        url: filefooter.md
+        text: See more
     # Card
     - title: Regional
-      imageSrc: ../media/offering-region-icon.svg
       links:
-        - url: file3a.md OR https://docs.microsoft.com/file3a
-          text: linktext3a
-        - url: file3b.md OR https://docs.microsoft.com/file3b
-          text: linktext3b
+        - url: file1.md1
+          itemType: reference
+          text: linktext1
+        - url: file2.md
+          itemType: reference
+          text: linktext2
+        - url: file3.md
+          itemType: reference
+          text: linktext3
+      # footerLink (optional)
+      footerLink:
+        url: filefooter.md
+        text: See more
+
