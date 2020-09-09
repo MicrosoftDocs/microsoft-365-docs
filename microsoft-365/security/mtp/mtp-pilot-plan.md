@@ -67,12 +67,11 @@ Success criteria is ultimately the bar set to measure against what you are testi
 ## Scorecard
 
 One way to bring all elements of your plan together can be to create a scorecard. See a sample  scorecard below:
-|||||||||
-|:-------|:-----|:-------|:-----|:-------|:-----|:-------|:-----|
-|Use case|Requirements|Configuration requirements|Test plan|Expected outcome|Test status|Score|Notes|
-|Incident management|<ul>-	Microsoft Threat Protection	<br>- Azure ATP <br>- Microsoft Defender ATP <br>- Microsoft Cloud App Security (optional)</ul>|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details |Simulate Attack <br>Investigate the incident |Investigators can understand the scope and impact of the incident, manage the incident||||
-|AutoIR|Microsoft Threat Protection <br> - Azure ATP<br> - Microsoft Defender ATP |See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details <br>Enable AutoIR  |Simulate the attack <br>Automated investigation |Alerts are remediated by Microsoft Threat Protection||||
-|Advanced hunting|Microsoft Threat Protection <br>- Microsoft Defender ATP <br>- Office 365 ATP	|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details|Advanced hunting scenario |Investigators can find data within advanced hunting, pivot to impacted entities, and create custom detections||||
+**Use case**|**Requirements**|**Configuration requirements**|**Test plan**|**Expected outcome**|**Test status**|**Score**|**Notes**|
+:-------|:-----|:-------|:-----|:-------|:-----|:-------|:-----|
+Incident management|-	Microsoft Threat Protection	</br></br>- Azure ATP </br></br>- Microsoft Defender ATP </br></br>- Microsoft Cloud App Security (optional)|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details |Simulate Attack <br>Investigate the incident |Investigators can understand the scope and impact of the incident, manage the incident||||
+AutoIR|Microsoft Threat Protection </br></br>- Azure ATP </br></br>- Microsoft Defender ATP |See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details <br>Enable AutoIR  |Simulate the attack <br>Automated investigation |Alerts are remediated by Microsoft Threat Protection||||
+Advanced hunting|Microsoft Threat Protection </br></br>- Microsoft Defender ATP </br></br>- Office 365 ATP	|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details|Advanced hunting scenario |Investigators can find data within advanced hunting, pivot to impacted entities, and create custom detections||||
 
 
 
