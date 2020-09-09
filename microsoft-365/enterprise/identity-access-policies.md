@@ -6,7 +6,6 @@ author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -20,9 +19,10 @@ ms.collection:
 ---
 
 # Common identity and device access policies
-This article describes the common recommended policies for securing access to cloud services, including on-premises applications published with Azure Active Directory (Azure AD) Application Proxy. 
 
-This guidance discusses how to deploy the recommended policies in a newly-provisioned environment. Setting up these policies in a separate lab environment allows you to understand and evaluate the recommended policies before staging the rollout to your preproduction and production environments. Your newly provisioned environment may be cloud-only or hybrid.  
+This article describes the common recommended policies for securing access to Microsoft 365 cloud services, including on-premises applications published with Azure Active Directory (Azure AD) Application Proxy. 
+
+This guidance discusses how to deploy the recommended policies in a newly-provisioned environment. Setting up these policies in a separate lab environment allows you to understand and evaluate the recommended policies before staging the rollout to your preproduction and production environments. Your newly provisioned environment can be cloud-only or hybrid to reflect your evaluation needs.  
 
 ## Policy set 
 
@@ -51,13 +51,13 @@ To give you time to accomplish these tasks, we recommend implementing the baseli
 |**Sensitive**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk)| |
 |         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for both PCs (Windows or MacOS) and phones or tablets (iOS, iPadOS, or Android).|
 |**Highly regulated**|[*Always* require MFA](#require-mfa-based-on-sign-in-risk)|
-| | |
+| | | |
 
 ## Assigning policies to groups and users
 
 Before configuring policies, identify the Azure AD groups you are using for each tier of protection. Typically, baseline protection applies to everybody in the organization. A user who is included for both baseline and sensitive protection will have all the baseline policies applied plus the sensitive policies. Protection is cumulative and the most restrictive policy is enforced. 
 
-A recommended practice is to create an Azure AD group for Conditional Access exclusion. Add this group to all of your Conditional Access rules under "Exclude". This gives you a method to provide access to a user while you troubleshoot access issues. This is recommended as a temporary solution only. Monitor this group for changes and be sure the exclusion group is being used only as intended. 
+A recommended practice is to create an Azure AD group for Conditional Access exclusion. Add this group to all of your Conditional Access rules in the **Exclude** value of the **Users and groups** setting in the **Assignments** section. This gives you a method to provide access to a user while you troubleshoot access issues. This is recommended as a temporary solution only. Monitor this group for changes and be sure the exclusion group is being used only as intended. 
 
 Here's an example of group assignment and exclusions for requiring MFA.
 
@@ -85,16 +85,11 @@ All Azure AD groups created as part of these recommendations must be created as 
 
 You should have your users register for MFA prior to requiring its use. If you have Microsoft 365 E5, Microsoft 365 E3 with the Identity & Threat Protection add-on, Office 365 with EMS E5, or individual Azure AD Premium P2 licenses, you can use the MFA registration policy with Azure AD Identity Protection to require that users register for MFA. The [prerequisite work](identity-access-prerequisites.md) includes registering all users with MFA.
 
-After your users are registered, you can require MFA for sign-in.
-
-To create a new Conditional Access policy: 
+After your users are registered, you can require MFA for sign-in with a new Conditional Access policy.
 
 1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials.
-
 2. In the list of Azure services, choose **Azure Active Directory**.
-
 3. In the **Manage** list, choose **Security**, and then choose **Conditional Access**.
-
 4. Choose **New policy** and type the new policy's name.
 
 The following tables describes the Conditional Access policy settings to require MFA based on sign-in risk.
@@ -105,7 +100,7 @@ In the **Assignments** section:
 |:---|:---------|:-----|:----|
 |Users and groups|Include| **Select users and groups > Users and groups**:  Select specific groups containing targeted user accounts. |Start with the group that includes pilot user accounts.|
 ||Exclude| **Users and groups**: Select your Conditional Access exception group; service accounts (app identities).|Membership should be modified on an as-needed, temporary basis.|
-|Cloud apps or actions|Include| **Select apps**: Select the apps you want this rule to apply to. For example, select Exchange Online.||
+|Cloud apps or actions| **Cloud apps > Include** | **Select apps**: Select the apps you want this rule to apply to. For example, select Exchange Online.||
 |Conditions| | |Configure conditions that are specific to your environment and needs.|
 ||Sign-in risk||See the guidance in the following table.|
 |||||
@@ -132,67 +127,70 @@ In the **Access controls** section:
 
 Choose **Select** to save the **Grant** settings.
 
-Finally, select **On** for **Enable policy**.
+Finally, select **On** for **Enable policy**, and then choose **Create**.
 
 Also consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy.
-
 
 ## Block clients that don't support modern authentication
 
 Use the settings in these tables for a Conditional Access policy to block clients that don't support modern authentication.
 
+See [this article](microsoft-365-client-support-modern-authentication.md) for a list of clients in Microsoft 365 that do suppport modern authentication.
+
 In the **Assignments** section:
 
-|Type|Properties|Values|Notes|
+|Setting|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
-|Users and groups|Include|Select users and groups – Select specific security group containing targeted users|Start with security group including pilot users|
-||Exclude|Exception security group; service accounts (app identities)|Membership modified on an as needed temporary basis|
-|Cloud apps|Include|Select the apps you want this rule to apply to. For example, select Exchange Online||
-|Conditions|Configured|Yes|Configure Client apps|
-|Client apps|Configured|Yes|Mobile apps and desktop clients, Other clients (select both)|
+|Users and groups|Include| **Select users and groups > Users and groups**:  Select specific groups containing targeted user accounts. |Start with the group that includes pilot user accounts.|
+||Exclude| **Users and groups**: Select your Conditional Access exception group; service accounts (app identities).|Membership should be modified on an as-needed, temporary basis.|
+|Cloud apps or actions|**Cloud apps > Include**| **Select apps**: Select the apps corresponding to the clients that do not support modern authentication.||
+|Conditions| **Client apps** | Choose **Yes** for **Configure** <br> Check **Mobile apps and desktop clients** and **Other clients** | |
+||||
 
 In the **Access controls** section:
 
-|Type|Properties|Values|Notes|
+|Setting|Properties|Values|Action|
 |:---|:---------|:-----|:----|
-|Grant|Block access|True|Selected|
-||Require MFA|False||
-||Require device to be marked as compliant|False||
-||Require hybrid Azure AD-joined device|False||
-||Require approved client app|False||
-||Require all the selected controls|True|Selected|
+|Grant|**Block access**| | Select |
+||**Require all the selected controls** ||Select|
+|||||
 
-> [!NOTE]
-> Be sure to enable this policy, by choosing **On**. Also consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy.
+Choose **Select** to save the **Grant** settings.
 
+Finally, select **On** for **Enable policy**, and then choose **Create**.
 
+Consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy.
 
 ## High risk users must change password
+
 To ensure that all high-risk users' compromised accounts are forced to perform a password change when signing-in, you must apply the following policy.
 
 Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal.azure.com/) with your administrator credentials, and then navigate to **Azure AD Identity Protection > User Risk Policy**.
 
-**Assignments**
+In the **Assignments** section:
 
-|Type|Properties|Values|Notes|
+|Type|Properties|Values|Action|
 |:---|:---------|:-----|:----|
-|Users|Include|All users|Selected|
-||Exclude|None||
-|Conditions|User risk|High|Selected|
+|Users|Include|**All users**|Select|
+|User risk| **High**||Select|
+|||||
 
-**Controls**
+In the second **Assignments** section:
 
-| Type | Properties | Values                  | Notes |
+| Type | Properties | Values                  | Action |
 |:-----|:-----------|:------------------------|:------|
-|      | Access     | Allow access            | True  |
-|      | Access     | Require password change | True  |
+| Access | **Allow access** |  | Select  |
+|      |     | **Require password change** | Check  |
+|||||
 
-**Review:** not applicable
+Choose **Done** to save the **Access** settings.
 
-> [!NOTE]
-> Be sure to enable this policy, by choosing **On**. Also consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
+Finally, select **On** for **Enforce policy**, and then choose **Save**.
+
+Consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy.
 
 ## Apply APP data protection policies
+
 App Protection Policies (APP) define which apps are allowed and the actions they can take with your organization's data. The choices available in APP enable organizations to tailor the protection to their specific needs. For some, it may not be obvious which policy settings are required to implement a complete scenario. To help organizations prioritize mobile client endpoint hardening, Microsoft has introduced taxonomy for its APP data protection framework for iOS and Android mobile app management. 
 
 The APP data protection framework is organized into three distinct configuration levels, with each level building off the previous level: 
@@ -211,11 +209,13 @@ Using the principles outlined in [Identity and device access configurations](mic
 |Sensitive     | [Level 2 enhanced data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.        |
 |Highly Regulated     | [Level 3 enterprise high data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)        | The policy settings enforced in level 3 include all the policy settings recommended for level 1 and 2 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 2.        |
 
-To create a new app protection policy for each platform (iOS and Android) within Microsoft Endpoint Manager using the data protection framework settings, administrators can:
+To create a new app protection policy for each platform (iOS and Android) within Microsoft Endpoint Manager using the data protection framework settings, you can:
+
 1. Manually create the policies by following the steps in [How to create and deploy app protection policies with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/app-protection-policies). 
 2. Import the sample [Intune App Protection Policy Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).
 
 ## Require approved apps and APP protection
+
 To enforce the APP protection policies you applied in Intune, you must create a Conditional Access rule to require approved client apps and the conditions set in the APP protection policies. 
 
 Enforcing APP protection policies requires a set of policies described in in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access). These policies are each included in this recommended set of identity and access configuration policies.
@@ -248,9 +248,10 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 ## Define device-compliance policies
 
-Device-compliance policies define the requirements that devices must adhere to in order to be marked as compliant. Create Intune device compliance policies from within the Microsoft Endpoint Manager admin center.
+Device-compliance policies define the requirements that devices must meet to be determined as compliant. You create Intune device compliance policies from within the Microsoft Endpoint Manager admin center.
 
-Create a policy for each platform:
+You must create a policy for each PC, phone, or tablet platform:
+
 - Android device administrator
 - Android Enterprise
 - iOS/iPadOS
@@ -258,112 +259,111 @@ Create a policy for each platform:
 - Windows 8.1 and later
 - Windows 10 and later
 
-To create device compliance policies, log in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) with your administer credentials, and then navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
+To create device compliance policies, log in to the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com) with your administrator credentials, and then navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
 
 For device compliance policies to be deployed, they must be assigned to user groups. You assign a policy after you create and save it. In the admin center, select the policy and then select **Assignments**. After selecting the groups that you want to receive the policy, select **Save** to save that group assignment and deploy the policy.
 
 For step-by-step guidance on creating compliance policies in Intune, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) in the Intune documentation.
 
-The following settings are recommended for Windows 10.
+### Recommended settings for Windows 10 and later
 
-**Device health: Windows Health Attestation Service evaluation rules**
+The following settings are recommended for PCs running Windows 10 and later, as configured in **Step 2: Compliance settings**, of the policy creation process.
 
-|Properties|Values|Notes|
+For **Device health > Windows Health Attestation Service evaluation rules**, see this table.
+
+|Properties|Value|Action|
 |:---------|:-----|:----|
-|Require BitLocker|Require||
-|Require Secure Boot to be enabled on the device|Require||
-|Require code integrity|Require||
+|Require BitLocker|Require| Select |
+|Require Secure Boot to be enabled on the device|Require| Select |
+|Require code integrity|Require| Select |
+||||
 
+For **Device properties**, specify appropriate values for operating system versions based on your IT and security policies.
 
-**Device properties**
+For **Configuration Manager Compliance**, select **Require**.
 
-|Type|Properties|Values|Notes|
+For **System security**, see this table.
+
+|Type|Properties|Value|Action|
 |:---|:---------|:-----|:----|
-|Operating system version|All|Not configured||
-
-**System security**
-
-|Type|Properties|Values|Notes|
-|:---|:---------|:-----|:----|
-|Password|Require a password to unlock mobile devices|Require||
-||Simple passwords|Block||
-||Password type|Device default||
-||Minimum password length|6||
-||Maximum minutes of inactivity before password is required|15|This setting is supported for Android versions 4.0 and above or KNOX 4.0 and above. For iOS devices, it's supported for iOS 8.0 and above|
-||Password expiration (days)|41||
-||Number of previous passwords to prevent reuse|5||
+|Password|Require a password to unlock mobile devices|Require| Select |
+||Simple passwords|Block|Select|
+||Password type|Device default|Select|
+||Minimum password length|6|Type|
+||Maximum minutes of inactivity before password is required|15|Type <br>This setting is supported for Android versions 4.0 and above or KNOX 4.0 and above. For iOS devices, it's supported for iOS 8.0 and above.|
+||Password expiration (days)|41|Type|
+||Number of previous passwords to prevent reuse|5|Type|
 ||Require password when device returns from idle state (Mobile and Holographic)|Require|Available for Windows 10 and later|
-|Encryption|Encryption of data storage on device|Require||
-|Device Security|Firewall|Require||
-||Antivirus|Require||
-||Antispyware|Require|This setting requires an Anti-Spyware solution registered with Windows Security Center|
-|Defender|Microsoft Defender Antimalware|Require||
-||Microsoft Defender Antimalware minimum version||Only supported for Windows 10 desktop. Microsoft recommends versions no more than five behind from the most recent version|
-||Microsoft Defender Antimalware signature up to date|Require||
-||Real-time protection|Require|Only supported for Windows 10 desktop|
+|Encryption|Encryption of data storage on device|Require|Select|
+|Device Security|Firewall|Require|Select|
+||Antivirus|Require|Select|
+||Antispyware|Require|Select <br> This setting requires an Anti-Spyware solution registered with Windows Security Center.|
+|Defender|Microsoft Defender Antimalware|Require|Select|
+||Microsoft Defender Antimalware minimum version||Type <br> Only supported for Windows 10 desktop. Microsoft recommends versions no more than five behind from the most recent version.|
+||Microsoft Defender Antimalware signature up to date|Require|Select|
+||Real-time protection|Require|Select <br>Only supported for Windows 10 desktop|
+|||||
 
 **Microsoft Defender ATP**
 
-|Type|Properties|Values|Notes|
+|Type|Properties|Value|Action|
 |:---|:---------|:-----|:----|
-|Microsoft Defender Advanced Threat Protection rules|Require the device to be at or under the machine-risk score|Medium||
-
+|Microsoft Defender Advanced Threat Protection rules|Require the device to be at or under the machine-risk score|Medium|Select|
+|||||
 
 ## Require compliant PCs (but not compliant phones and tablets)
+
 Before adding a policy to require compliant PCs, be sure to enroll devices for management into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. 
 
 To require compliant PCs:
 
-1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure dashboard.
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials.
+2. In the list of Azure services, choose **Azure Active Directory**.
+3. In the **Manage** list, choose **Security**, and then choose **Conditional Access**.
+4. Choose **New policy** and type the new policy's name.
 
-2. Choose **Azure Active Directory** from the left menu.
+5. Under **Assignments**, choose **Users and groups** and include who you want the policy to apply to. Also exclude your Conditional Access exclusion group.
 
-3. Under the **Security** section, choose **Conditional Access**.
+6. Under **Assignments**, choose **Cloud apps or actions**.
 
-4. Choose **New policy**.
+7. For **Include**, choose **Select apps > Select**, and then select the desired apps from the **Cloud apps** list. For example, select Exchange Online. Choose **Select** when done.
 
-5. Enter a policy name, then choose the **Users and groups** you want to apply the policy for.
+8. To require compliant PCs (but not compliant phones and tablets), under **Assignments**, choose **Conditions > Device platforms**. Select **Yes** for **Configure**. Choose  **Select device platforms**, select **Windows** and **macOS**, and then choose **Done**.
 
-6. Choose **Cloud apps**.
+9. Under **Access controls**, choose **Grant** .
 
-7. Choose **Select apps**, select the desired apps from the **Cloud apps** list. For example, select Exchange Online. Choose **Select** and **Done**.
+10. Choose **Grant access** and then check **Require device to be marked as compliant**. For multiple controls, select **Require all the selected controls**. When complete, choose **Select**. 
 
-8. To require compliant PCs, but not compliant phones and tablets, choose **Conditions** and **Device platforms**. Choose **Select device platforms** and select **Windows** and **macOS**.
+10. Select **On** for **Enable policy**, and then choose **Create**.
 
-9. Choose **Grant** from the **Access controls** section.
-
-10. Choose **Grant access**, select **Require device to be marked as compliant**. For multiple controls, select **Require all the selected controls**, then choose **Select**. 
-
-11. Choose **Create**.
-
-If your objective is to require compliant PCs *and* mobile devices, do not select platforms. This enforces compliance for all devices. 
+>[!Note]
+>Make sure that your device is compliant before enabling this policy. Otherwise, you could get locked out and will be unable to change this policy until your user account has been added to the Conditional Access exclusion group.
+>
 
 ## Require compliant PCs *and* mobile devices
 
 To require compliance for all devices:
 
-1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure dashboard.
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials.
+2. In the list of Azure services, choose **Azure Active Directory**.
+3. In the **Manage** list, choose **Security**, and then choose **Conditional Access**.
+4. Choose **New policy** and type the new policy's name.
 
-2. Choose **Azure Active Directory** from the left menu.
+5. Under **Assignments**, choose **Users and groups** and include who you want the policy to apply to. Also exclude your Conditional Access exclusion group.
 
-3. Under the **Security** section, choose **Conditional Access**.
+6. Under **Assignments**, choose **Cloud apps or actions**.
 
-4. Choose **New policy**.
+7. For **Include**, choose **Select apps > Select**, and then select the desired apps from the **Cloud apps** list. For example, select Exchange Online. Choose **Select** when done.
 
-5. Enter a policy name, then choose the **Users and groups** you want to apply the policy for.
+8. Under **Access controls**, choose **Grant** .
 
-6. Choose **Cloud apps**.
+9. Choose **Grant access** and then check **Require device to be marked as compliant**. For multiple controls, select **Require all the selected controls**. When complete, choose **Select**. 
 
-7. Choose **Select apps**, select the desired apps from the **Cloud apps** list. For example, select Exchange Online. Choose **Select** and **Done**.
+10. Select **On** for **Enable policy**, and then choose **Create**.
 
-8. Choose **Grant** from the **Access controls** section.
-
-9. Choose **Grant access**, select **Require device to be marked as compliant**. For multiple controls, select **Require all the selected controls**, then choose **Select**. 
-
-10. Choose **Create**.
-
-When creating this policy, do not select platforms. This enforces compliant devices.
-
+>[!Note]
+>Make sure that your device is compliant before enabling this policy. Otherwise, you could get locked out and will be unable to change this policy until your user account has been added to the Conditional Access exclusion group.
+>
 
 ## Next steps
 
