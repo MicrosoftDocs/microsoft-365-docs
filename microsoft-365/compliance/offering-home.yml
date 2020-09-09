@@ -36,10 +36,24 @@ conceptualContent:
         - url: file3.md
           itemType: reference
           text: linktext3
-      # footerLink (optional)
-      footerLink:
-        url: filefooter.md
-        text: See more
+        - url: file3.md
+          itemType: reference
+          text: linktext3
+        - url: file3.md
+          itemType: reference
+          text: linktext3
+        - url: file3.md
+          itemType: reference
+          text: linktext3
+        - url: file3.md
+          itemType: reference
+          text: linktext3  
+        - url: file3.md
+          itemType: reference
+          text: linktext3  
+        - url: file3.md
+          itemType: reference
+          text: linktext3  
     # Card
     - title: US Government
       links:
