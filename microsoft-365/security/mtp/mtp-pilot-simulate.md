@@ -186,8 +186,7 @@ In this detection, an alert is triggered when the SMB session enumeration runs a
 ![Screenshot of the Azure ATP alert for User and IP address reconnaissance](../../media/mtp-pilot/fig10.png) 
 
 
-###Review the device timeline [Microsoft Defender ATP]
-
+**Review the device timeline [Microsoft Defender ATP]**
 After exploring the various alerts in this incident, navigate back to the incident page you investigated earlier. Click the **Devices** tab in the incident page to review the devices involved in this incident as reported by Microsoft Defender ATP and Azure ATP.
 
 Click the name of the device where the attack was conducted, to open the entity page for that specific device. In that page, you can see alerts that were triggered and related events.
@@ -203,9 +202,177 @@ For example, scroll down until you find the alert event **Suspicious process inj
 ![Screenshot of the process tree for selected PowerShell file creation behavior](../../media/mtp-pilot/fig12.png)
 
 ## Resolve the incident
-The following are out of scope of this deployment guide:
+
+After the investigation is complete and confirmed to be remediated, close the incident.
+
+Click **Manage incident**. Set the status to **Resolve incident** and select the relevant classification.
+
+Once the incident is resolved, it will close all of the associated alerts in Microsoft Threat Protection and in the related portals.
+
+![Screenshot of the incidents page with the open Manage incident panel where you can click the switch to resolve incident](../../media/mtp-pilot/fig17.png) 
 
 
+## Advanced hunting scenario
+
+>[!NOTE]
+>Before we walk you through the simulation, watch [this video](https://www.microsoft.com/videoplayer/embed/RE4Bp7O) to understand the advanced hunting concepts, see where you can find it in the portal, and know how it can help you in your security operations.
+
+### Test environment requirements
+There is a single internal mailbox and device required for this scenario. You will also need an external email account to send the test message.
+
+1.	Verify that your tenant has enabled [Microsoft Threat Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#starting-the-service).
+2.	Identify a target mailbox to be used for receiving email.
+a.	This mailbox must be monitored by Office 365 ATP
+b.	The device from requirement 3 needs to access this mailbox
+3.	Configure a test device:
+a.	Make sure you are using Windows 10 version 1903 or later version.
+b.	Join the test device to the test domain.
+c.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see [this troubleshooting topic](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+d.	[Onboard to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+
+### Run the simulation
+1.	From an external email account, send an email to the mailbox identified in step 2 of the test environment requirements section.  Include an attachment that will be allowed through any existing email filter policies.  This file does not need to be malicious or an executable.  Suggested file types are <i>.pdf</i>, <i>.exe</i> (if allowed), or Office document such as a Word file.
+2.	Open the sent email from the device configured as defined in step 3 of the test environment requirements section. Either open the attachment or save the file to the device.
+
+
+**Go hunting**
+1.	Open the security.microsoft.com portal.
+2.	Navigate to Hunting > Advanced hunting.
+
+![Screenshot of advanced hunting in the M365 Security portal navigation bar](../../media/mtp-pilot/fig18.png) 
+
+3.	Build a query that starts by gathering email events.
+a.	From the query pane, select New.
+b.	Double-click on the EmailEvents table from the schema.
+
+```
+EmailEvents 
+```                                        
+
+c.	Change the time frame to the last 24 hours. Assuming the email you sent when you ran the simulation above was in the past 24 hours, otherwise change the time frame.
+![Screenshot of where you can change the time frame. Open the drop-down menu to choose from range of time frame options
+](../../media/mtp-pilot/fig19.png) 
+
+
+d.	Run the query.  You may have many results depending on the environment for the pilot.  
+
+>[!NOTE]
+>See the next step for filtering options to limit data return.
+
+![Screenshot of the advanced hunting query results](../../media/mtp-pilot/fig20.png) 
+
+>[!NOTE]
+>Advanced hunting displays query results as tabular data. You can also opt to view the data in other format types such as charts.    
+
+e.	Look at the results and see if you can identify the email you opened.  It may take up to 2 hours for the message to show up in advanced hunting. If the email environment is large and there are many results, you might want to use the Show Filters option to find the message. 
+
+In the sample, the email was sent from a Yahoo account. Click the + icon beside yahoo.com under the SenderFromDomain section and then click Apply to add the selected domain to the query.  You should use the domain or email account that was used to send the test message in step 1 of Run the Simulation to filter your results.  Run the query again to get a smaller result set to verify that you see the message from the simulation.
+![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp-pilot/fig21.png) 
+
+
+```
+EmailEvents 
+| where SenderMailFromDomain == "yahoo.com"
+```
+
+f.	Click the resulting rows from the query so you can inspect the record.
+![Screenshot of the inspect record panel which opens up when an advanced hunting result is selected](../../media/mtp-pilot/fig22.png) 
+
+
+4.	Now that you have verified that you can see the email, add a filter for the attachments. Focus on all emails with attachments in the environment. For this scenario, focus on inbound emails, not those that are being sent out from your environment. Remove any filters you have added to locate your message and add “| where AttachmentCount > 0 and EmailDirection == “Inbound””
+
+The following query will show you the result with a shorter list than your initial query for all email events:
+
+```
+EmailEvents 
+| where AttachmentCount > 0 and EmailDirection == "Inbound"
+
+```
+
+5.	Next, include the information about the attachment (such as: file name, hashes) to your result set. To do so, join the EmailAttachmentInfo table. The common fields to use for joining, in this case are NetworkMessageId and RecipientObjectId
+
+The following query also includes an additional line “| project-rename EmailTimestamp=Timestamp” that will help identify which timestamp was related to the email versus timestamps related to file actions which you will add in the next step.
+
+```
+EmailEvents 
+| where AttachmentCount > 0 and EmailDirection == "Inbound"
+| project-rename EmailTimestamp=Timestamp 
+| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
+```
+
+6.	Next, use the SHA256 value from the EmailAttachmentInfo table to find DeviceFileEvents (file actions that happened on the endpoint) for that hash.  The common field here will be the SHA256 hash for the attachment.
+
+The resulting table now includes details from the endpoint (Microsoft Defender ATP) such as device name, what action was done (in this case, filtered to only include FileCreated events), and where the file was stored. The account name associated with the process will also be included.
+
+```
+EmailEvents 
+| where AttachmentCount > 0 and EmailDirection == "Inbound"
+| project-rename EmailTimestamp=Timestamp 
+| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId 
+| join DeviceFileEvents on SHA256 
+| where ActionType == "FileCreated"
+```
+
+You have now created a query that will identify all inbound emails where the user opened or saved the attachment. You can also refine this query to filter for specific sender domains, file sizes, file types, and so on.
+
+7.	Functions are a special sort of join which let you pull more TI data about a file like its prevalence, signer and issuer info, etc.  To get more details on the file, use the FileProfile() function enrichment:
+
+```
+EmailEvents 
+| where AttachmentCount > 0 and EmailDirection == "Inbound"
+| project-rename EmailTimestamp=Timestamp 
+| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
+| join DeviceFileEvents on SHA256 
+| where ActionType == "FileCreated"
+| distinct SHA1
+| invoke FileProfile()
+```
+
+
+**Create a detection**
+Once you have created a query that identifies information that you would like to get alerted about if they happen in the future, you can create a custom detection from the query. 
+
+Custom detections will run the query according to the frequency you set, and the results of the queries will create security alerts, based on the impacted assets you choose. Those alerts will be correlated to incidents and can be triaged as any other security alert generated by one of the products.
+
+1.	On the query page, remove lines 7 and 8 that were added in step 7 of the Go hunting instructions and click **Create detection rule**. 
+
+![Screenshot of where yoy can click create detection rule in the the advanced hunting page ](../../media/mtp-pilot/fig23.png) 
+
+>[!NOTE]
+>If you click **Create detection rule** and you have syntax errors in your query, your detection rule won’t be saved. Double-check your query to ensure there’s no errors. 
+
+
+2.	Fill in the required fields with the  information that will allow the security team to understand the alert, why it was generated, and what actions you expect them to take. 
+
+![Screenshot of the create detection rule page where you can define the alert details (../../media/mtp-pilot/fig24.png)
+
+Ensure that you fill out the fields with clarity to help give the next user an informed decision about this detection rule alert 
+
+3.	Select what entities are impacted in this alert. In this case, select the Device and the Mailbox.
+
+![Screenshot of the create detection rule page where you can choose the parameters of the impacted entities](../../media/mtp-pilot/fig25.png)
+ 
+
+4.	Determine what actions should take place if the alert is triggered. In this case, run an antivirus scan, though other actions could be taken. 
+
+![Screenshot of the create detection rule page where you can run an antivirus scan when an alert is triggered to help address threats](../../media/mtp-pilot/fig26.png) 
+
+5.	Select the scope for the alert rule. Since this query involve devices, the device groups are relevant in this custom detection according to Microsoft Defender ATP context.  When creating a custom detection that does not include devices as impacted entities, scope does not apply.  
+
+![Screenshot of the create detection rule page where you can set the scope for the alert rule manages your expectations for the results that you’ll see](../../media/mtp-pilot/fig27.png) 
+
+For this pilot, you might want to limit this rule to a subset of testing devices in your production environment.
+
+6.	Select Create. Then, select Custom detection rules from the navigation panel.
+ 
+![Screenshot of Custom detection rules option in the menu](../../media/mtp-pilot/fig28a.png) 
+
+![Screenshot of the detection rules page which displays the rule and execution details
+](../../media/mtp-pilot/fig28b.png) 
+
+From this page, you can select the detection rule which will open a details page. 
+
+![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp-pilot/fig29.png) 
 
 ## Next step
 |||
