@@ -5,7 +5,7 @@ keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, N
 author: BrendaCarter
 localization_priority: Priority
 
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/14/2018
 f1.keywords:

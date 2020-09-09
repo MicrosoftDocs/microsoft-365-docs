@@ -4,7 +4,7 @@ description: "This article contains information about Microsoft's European Union
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 ms.custom: seo-marvel-apr2020
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
