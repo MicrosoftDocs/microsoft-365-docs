@@ -121,6 +121,74 @@ conceptualContent:
     # Card
     - title: Industry
       links:
+        - url: offering-23-nycrr-part-500.md
+          itemType: reference
+          text: 23 NYCRR Part 500
+        - url: offering-afm-dnb-netherlands.md
+          itemType: reference
+          text: AFM + DNB (Netherlands)
+        - url: offering-apra-australia.md
+          itemType: reference
+          text: APRA (Australia)
+        - url: offering-amf-acpr-france.md
+          itemType: reference
+          text: AMF and ACPR (France)
+        - url: offering-cdsa.md
+          itemType: reference
+          text: CDSA
+        - url: offering-cftc-1-31-us.md
+          itemType: reference
+          text: CFTC 1.31 (US)
+        - url: offering-dpp-uk.md
+          itemType: reference
+          text: DPP (UK)
+        - url: offering-eba-eu.md
+          itemType: reference
+          text: EBA (EU)
+        - url: offering-fact-uk.md
+          itemType: reference
+          text: FACT (UK)
+        - url: offering-fca-uk.md
+          itemType: reference
+          text: FCA (UK)
+
+    # Card
+    - title: Industry
+      links:
+        - url: offering-fda-cfr-title-21-part-11.md
+          itemType: reference
+          text: FDA CFR Title 21 Part 11
+        - url: offering-ferpa.md
+          itemType: reference
+          text: FERPA
+        - url: offering-ffiec-us.md
+          itemType: reference
+          text: FFIEC (US)
+        - url: offering-finma-switzerland.md
+          itemType: reference
+          text: FINMA (Switzerland)
+        - url: offering-finra-4511.md
+          itemType: reference
+          text: FINRA 4511
+        - url: offering-fisc-japan.md
+          itemType: reference
+          text: FISC (Japan)
+        - url: offering-fsa-denmark.md
+          itemType: reference
+          text: FSA (Denmark)
+        - url: offering-glba.md
+          itemType: reference
+          text: GLBA
+        - url: offering-gxp.md
+          itemType: reference
+          text: GxP
+        - url: offering-hds-france.md
+          itemType: reference
+          text: HDS (France)
+
+    # Card
+    - title: Industry
+      links:
         - url: file1.md
           itemType: reference
           text: linktext1
@@ -130,10 +198,49 @@ conceptualContent:
         - url: file3.mdle3
           itemType: reference
           text: linktext3
+        - url: file1.md
+          itemType: reference
+          text: linktext1
+        - url: file2.md 
+          itemType: reference
+          text: linktext2
+        - url: file3.mdle3
+          itemType: reference
+          text: linktext3
+        - url: file1.md
+          itemType: reference
+          text: linktext1
+        - url: file2.md 
+          itemType: reference
+          text: linktext2
+        - url: file3.mdle3
+          itemType: reference
+          text: linktext3
+        - url: file3.mdle3
+          itemType: reference
+          text: linktext3
 
     # Card
     - title: Industry
       links:
+        - url: file1.md
+          itemType: reference
+          text: linktext1
+        - url: file2.md 
+          itemType: reference
+          text: linktext2
+        - url: file3.mdle3
+          itemType: reference
+          text: linktext3
+        - url: file1.md
+          itemType: reference
+          text: linktext1
+        - url: file2.md 
+          itemType: reference
+          text: linktext2
+        - url: file3.mdle3
+          itemType: reference
+          text: linktext3
         - url: file1.md
           itemType: reference
           text: linktext1
