@@ -1,0 +1,58 @@
+### YamlMime:Hub
+
+title: Microsoft compliance offerings # < 60 chars
+summary: Learn how Microsoft products and services help your organization meet regulatory compliance standards. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft compliance offerings # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how Microsoft products and services help your organization meet regulatory compliance standards. # Required; article description that is displayed in search results. < 160 chars.
+  services: service
+  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice # Optional; Remove if no subservice is used.
+  ms.topic: hub-page # Required
+  ms.collection: m365-security-compliance
+  author: robmazz #Required; your GitHub user alias, with correct capitalization.
+  ms.author: robmazz #Required; microsoft alias of author; optional team alias.
+  ms.date: 01/27/2020 #Required; mm/dd/yyyy format.
+  localization_priority: Normal
+
+# productDirectory section (optional)
+productDirectory:
+  title: sectiontitle # < 60 chars (optional)
+  summary: sectionsummary # < 160 chars (optional)
+  items:
+    # Card
+    - title: Global
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ../media/offering-global-icon.svg
+      links:
+        - url: offering-cis-benchmark.md
+          text: CIS Benchmark
+        - url: file1b.md OR https://docs.microsoft.com/file1b
+          text: linktext1b
+    # Card
+    - title: US Government
+      imageSrc: ../media/offering-government-icon.svg
+      links:
+        - url: file2a.md OR https://docs.microsoft.com/file2a
+          text: linktext2a
+        - url: file2b.md OR https://docs.microsoft.com/file2b
+          text: linktext2b
+    # Card
+    - title: Industry
+      imageSrc: ../media/offering-industry-icon.svg
+      links:
+        - url: file3a.md OR https://docs.microsoft.com/file3a
+          text: linktext3a
+        - url: file3b.md OR https://docs.microsoft.com/file3b
+          text: linktext3b
+    # Card
+    - title: Regional
+      imageSrc: ../media/offering-region-icon.svg
+      links:
+        - url: file3a.md OR https://docs.microsoft.com/file3a
+          text: linktext3a
+        - url: file3b.md OR https://docs.microsoft.com/file3b
+          text: linktext3b
