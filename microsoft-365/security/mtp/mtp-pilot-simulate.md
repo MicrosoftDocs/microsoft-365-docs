@@ -81,7 +81,7 @@ $i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encodin
 4. At the prompt, paste and run the copied script.
 
 >[!NOTE]
->If you're running PowerShell using remote desktop protocol (RDP), use the Type Clipboard Text command in the RDP client because the CTRL-V hotkey or right-click-paste method might not work.  Recent versions of PowerShell sometimes will also not accept that method, you might have to copy to Notepad in memory first, copy it in the virtual machine, and then paste it into PowerShell.
+>If you're running PowerShell using remote desktop protocol (RDP), use the Type Clipboard Text command in the RDP client because the **CTRL-V** hotkey or right-click-paste method might not work.  Recent versions of PowerShell sometimes will also not accept that method, you might have to copy to Notepad in memory first, copy it in the virtual machine, and then paste it into PowerShell.
 
 A few seconds later, notepad.exe will open. A simulated attack code will be injected into notepad.exe. Keep the automatically generated Notepad instance open to experience the full scenario.
 
@@ -98,7 +98,50 @@ To see the Automated Incident and Response feature in action, keep the notepad.e
 
 ## Investigate an incident
 
-The following are out of scope of this deployment guide:
+Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft Threat Protection portal. 
+
+>[!NOTE]
+>Before we walk you through this simulation, watch [this video](https://www.youtube.com/watch?v=Vfuf7KXXo5E) to see how incident management helps you piece the related alerts together, where you can find it in the portal, and how it can help you in your security operations.
+
+1.	Open the [Microsoft Threat Protection portal](https://security.microsoft.com/incidents) incident queue from any device.
+
+2.	Navigate to Incidents from the menu. 
+
+![Screenshot of incidents as shown on the Microsoft 365 Security Center’s left-hand side menu](../../media/mtp-pilot/fig1.png)
+
+3.	The new incident for the simulated attack will appear in the incident queue.
+ 
+![Screenshot of the incident queue](../../media/mtp-pilot/fig2.png)
+
+
+### Investigate the attack as a single incident
+
+Microsoft Threat Protection correlates analytics and aggregates all related alerts and investigations from different products into one incident entity. By doing so, Microsoft Threat Protection shows a broader attack story, allowing the SOC analyst to understand and respond to complex threats.
+
+The alerts generated during this simulation are associated with the same threat, and as a result, are automatically aggregated as a single incident.
+
+To view the incident:
+
+1.	Navigate to the Incidents queue.
+ 
+![Screenshot of incidents from the navigation menu](../../media/mtp-pilot/fig1.png)
+
+2.	Select the newest item by clicking on the circle located left of the incident name.
+
+A side panel displays additional information about the incident, including all the related alerts. Each incident has a unique name that describes it based on the attributes of the alerts it includes.
+
+![Screenshot of the incidents page where generated alerts are aggregated during the simulation](../../media/mtp-pilot/fig4.png)
+
+The alerts that shows in the dashboard can be filtered based on service resources: Azure ATP, Microsoft Cloud App Security, Microsoft Defender ATP, Microsoft Threat Protection, and Office ATP.  
+
+3.	Select **Open incident page** to get more information about the incident.
+In the **Incident** page, you can see all the alerts and information related to the incident. This includes the entities and assets that are involved in the alert, the detection source of the alerts (Azure ATP, EDR), and the reason they were linked together. Reviewing the incident alert list shows the progression of the attack. From this view, you can see and investigate the individual alerts.
+You can also click Manage incident from the right-hand menu, to tag the incident, assign it to yourself, and add comments.
+  
+         Figure 5. Manage the incident
+
+
+### Review generated alerts 
 
 ## Resolve the incident
 The following are out of scope of this deployment guide:
