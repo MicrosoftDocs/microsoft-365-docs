@@ -246,7 +246,7 @@ There are various functions you can use to efficiently handle strings that need 
 | IPv4 addresses | [parse_ipv4()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv4function) | Convert an IPv4 address to a long integer. To compare IPv4 addresses without converting them, use [ipv4_compare()](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv4-comparefunction). |
 | IPv6 addresses | [parse_ipv6()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv6function)  | Convert an IPv4 or IPv6 address to the canonical IPv6 notation. To compare IPv6 addresses, use [ipv6_compare()](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv6-comparefunction). |
 
-To get the complete list of supported parsing functions, [read Kusto string functions](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalarfunctions#string-functions). 
+To learn about all supported parsing functions, [read about Kusto string functions](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalarfunctions#string-functions). 
 
 ## Related topics
 - [Kusto query language documentation](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
