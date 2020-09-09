@@ -95,6 +95,38 @@
   items: 
     - name: Overview
       href: workload-solutions-scenarios-overview.md
+
+    - name: DEPLOY AND MANAGE MICROSOFT 365 IN THE ENTERPRISE
+      items:
+      - name: Microsoft 365 tenancies
+        items:
+        - name: Multiple Microsoft 365 tenancies
+          href: placeholder.md
+        - name: Microsoft 365 multi-geo
+          href: placeholder.md
+      - name: Network connectivity and performance
+        items:
+        - name: Optimal network connectivity and performance
+          href: placeholder.md
+        - name: Optimal network connectivity and performance for remote workers
+          href: placeholder.md
+        - name: Optimal network connectivity and performance using Network Insights
+          href: placeholder.md
+        - name: Optimal SPO performance with the Office 365 CDN 
+          href: placeholder.md
+        - name: Automated endpoint whitelisting using the endpoint web service
+          href: placeholder.md
+      - name: Mincrosoft 365 identity
+        items:
+        - name: Hybrid identity
+          href: placeholder.md
+        - name: Secure sign-ins
+          href: placeholder.md
+      - name: Migration to cloud productivity apps
+        items:
+        - name: Migrate from Office servers
+          href: placeholder.md
+
     - name: Teamwork and collaboration
       items:
       - name: Teams architecture posters
