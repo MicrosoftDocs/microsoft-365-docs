@@ -936,7 +936,7 @@
 - name: Compliance offerings
   items: 
     - name: Microsoft compliance offerings
-      href: offering-home.md
+      href: offering-home.yml
     - name: Global
       items: 
         - name: CIS Benchmark
