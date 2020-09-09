@@ -119,7 +119,7 @@ The following screenshot shows the settings when you create the Product Specific
     
     ![Create a new event type for the Product Specification label dialog box](../media/SPRetention6.png)
 
-3. On the **Name your event type** page, enter ***Product Cessation*** and an optional description, and then select **Next**, **Submit**, and **Done**.
+3. On the **Name your event type** page, enter **Product Cessation** and an optional description. Then select **Next**, **Submit**, and **Done**.
 
 4. Back on the **Define retention settings** page, for **Start the retention period based on**, use the dropdown box to select the **Product Cessation** event type that you created.
     
@@ -127,7 +127,7 @@ The following screenshot shows the settings when you create the Product Specific
     
    ![Settings for the new Product Specification label](../media/SPRetention7.png)
 
-6. Select **Create this label**, and on the next page when you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**. 
+6. Select **Create label**, and on the next page when you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**. 
     
     > [!TIP]
     > For more detailed steps, see [Create a label whose retention period is based on an event](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
