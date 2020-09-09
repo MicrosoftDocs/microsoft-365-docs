@@ -3,7 +3,7 @@ title: Good Clinical, Laboratory, and Manufacturing Practices (GxP)
 description: Azure and Office 365 can help life sciences organizations meet GxP regulatory requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
