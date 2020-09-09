@@ -47,6 +47,7 @@ There are two devices used in this scenario: a test device and a domain controll
     - Create a test user on your domain – no admin permissions needed.
 
 3.	Configure a test device:
+    <br>
     a.	Requires Windows 10 version 1903 or a later version.
     <br>
     b.	Join the test device to the test domain.
