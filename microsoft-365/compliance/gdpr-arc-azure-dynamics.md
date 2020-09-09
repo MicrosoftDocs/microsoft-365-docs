@@ -139,7 +139,7 @@ For more GDPR-related documentation, visit [https://aka.ms/gdprgetstarted](https
 | 11 <a name="11"> </a> | [Key Information from Azure for Customer Data Protection Impact Assessments](https://aka.ms/DPIAAzure) |
 | 12 <a name="12"> </a> | [SOC 2 Type 2 Audit Report [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
-| 14 <a name="14"> </a> | [Microsoft Trust Center Compliance offerings](offering-home.md)  |
+| 14 <a name="14"> </a> | [Microsoft Trust Center Compliance offerings](offering-home.yml)  |
 | 15 <a name="15"> </a> | [Microsoft DPO Information](https://aka.ms/GDPRDPO) |
 | 16 <a name="16"> </a> | [Key Information from Dynamics 365 for Customer Data Protection Impact](https://servicetrust.microsoft.com/ViewPage/GDPRDPIA?command=Download&downloadType=Document&downloadId=ef2902bb-3137-4f4a-8ca6-af35afaa6bec&docTab=2ba9a350-555c-11e8-b74a-77b1f31da06e_DPIA) |
 | 17 <a name="17"> </a> | [Auditing and Reporting in Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing) |
