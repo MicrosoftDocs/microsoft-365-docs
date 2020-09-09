@@ -1,0 +1,65 @@
+### YamlMime:Landing
+
+title: Protect and manage devices and app data # < 60 chars
+summary: Check out these resources to help admins choose between device and app data management. # < 160 chars
+
+metadata:
+  title: Protect and manage devices and app data # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Manage and protect devices and app data # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: sirkkuw #Required; your GitHub user alias, with correct capitalization.
+  ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/09/2020 #Required; mm/dd/yyyy format.
+  localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Decide on MDM or MAM method
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft end-point manager, Microsoft 365 Business Premium, or Basic Mobility and Security?
+            url: ../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+  # Card (optional)
+  - title: Microsoft end-point management (formerly Intune)
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Configure shared mailbox settings
+            url: configure-a-shared-mailbox.md
+          - text: Convert a user mailbox to a shared mailbox
+            url: convert-user-mailbox-to-shared-mailbox.md
+          - text: Remove a license from a shared mailbox 
+            url: remove-license-from-shared-mailbox.md
+          - text: Resolve issues with shared mailboxes
+            url: resolve-issues-with-shared-mailboxes.md
+  # Card (optional)
+  - title: Manage devices and app data with Microsoft 365 Business Premium
+    linkLists:
+      - linkListType: overview
+        links:
+         - text: Overview of device enrollment
+           url: https://docs.microsoft.com/mem/intune/enrollment/device-enrollment
+      - linkListType: how-to-guide
+        links:
+          - text: Set up automatic enroolment for Windows 10 devices
+            url: https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment
+          - text: Set up Android enrollment
+            url: https://docs.microsoft.com/mem/intune/enrollment/android-enroll
+          - text: Set up iOS/iPadOS enrollment
+            url: https://docs.microsoft.com/mem/intune/enrollment/ios-enroll
+   # Card (optional)
+  - title: Basic mobility and security
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Basic mobility and security FAQ
+            url: ../basic-mobility-security/basic-mobility-and-security-frequently-asked-questions.md
+          - text: Capabilities of basic mobility and security
+            url: ../basic-mobility-security/capabilities-of-basic-mobility-and-security.md
