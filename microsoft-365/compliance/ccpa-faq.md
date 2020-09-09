@@ -3,7 +3,7 @@ title: California Consumer Privacy Act (CCPA) FAQ
 description: Frequently asked questions about Microsoft services and the California Consumer Privacy Act (CCPA).
 keywords: Microsoft 365, compliance, CCPA, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

@@ -3,7 +3,7 @@ title: International Traffic in Arms Regulations (ITAR)
 description: Azure Government supports customers building US International Traffic in Arms Regs-capable systems.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

@@ -3,7 +3,7 @@ title: National Institute of Standards and Technology (NIST) Cybersecurity Frame
 description: Microsoft Cloud Services meet the National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

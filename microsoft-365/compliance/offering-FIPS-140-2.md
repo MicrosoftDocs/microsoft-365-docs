@@ -3,7 +3,7 @@ title: Federal Information Processing Standard (FIPS) Publication 140-2
 description: Microsoft certifies that its cryptographic modules comply with the US Federal Information Processing Standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
