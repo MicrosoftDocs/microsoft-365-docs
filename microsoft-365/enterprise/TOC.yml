@@ -117,8 +117,6 @@
               href: azure-expressroute.md
             - name: How modern authentication works for Office 2013 and Office 2016 client apps
               href: modern-auth-for-office-2013-and-2016.md
-        - name: Inter-tenant collaboration
-          href: microsoft-365-inter-tenant-collaboration.md
         - name: Client app support
           items: 
             - name: Certificate-based authentication
@@ -273,6 +271,12 @@
       items: 
         - name: Add a domain
           href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+    - name: Multiple tenants
+      items: 
+        - name: Inter-tenant collaboration
+          href: microsoft-365-inter-tenant-collaboration.md
+        - name: Tenant-to-tenant mailbox move
+          href: tenant-to-tenant-mailbox-move.md
     - name: Multi-geo
       items: 
         - name: Microsoft 365 Multi-Geo
