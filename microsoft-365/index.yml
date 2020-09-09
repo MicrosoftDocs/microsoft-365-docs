@@ -253,12 +253,12 @@ additionalContent:
             - text: More Project >
               url: /Project
         # Card
-        - title: More apps
+        - title: More apps and services
           links:
-            - text: Kaizala
-              url: /Kaizala
             - text: Microsoft Bookings
               url: bookings/index.yml
+            - text: Microsoft Kaizala
+              url: /Kaizala
             - text: Microsoft Stream
               url: /stream/
             - text: Yammer
