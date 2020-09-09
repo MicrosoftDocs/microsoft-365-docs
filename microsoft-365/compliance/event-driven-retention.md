@@ -172,13 +172,7 @@ After retention labels are assigned to content, you can use content search to fi
 - To find all content with a specific asset ID, enter the **ComplianceAssetID** property and a value, using the format `ComplianceAssetID:<value>`. 
     
 For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
-  
-## Permissions
 
-To get access to the **Events** page, reviewers must be members of a role group with the **Disposition Management** role and the **View-Only Audit Logs** role. We recommend creating a new role group called Disposition Reviewers, adding these two roles to that role group, and then adding members to the role group. 
-  
-For more information, see [Give users access to the Office 365 Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
-  
 ## Automate events by using PowerShell
 
 You can use a PowerShell script to automate event-based retention from your business applications. The PowerShell cmdlets available for event-based retention:
