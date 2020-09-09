@@ -99,7 +99,7 @@ conceptualContent:
     # Card
     - title: US Government
       links:
-        - url: ffering-fips-140-2.md
+        - url: offering-fips-140-2.md
           itemType: reference
           text: FIPS 140-2
         - url: offering-irs-1075.md
