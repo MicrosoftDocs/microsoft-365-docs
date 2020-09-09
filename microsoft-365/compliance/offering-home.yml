@@ -21,8 +21,8 @@ metadata:
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  title: Compliance offerings by area # < 60 chars (optional)
-  summary: Learn about Microsoft support for regulations by area # < 160 chars (optional)
+  title: Current compliance offerings # < 60 chars (optional)
+  summary: Microsoft offers a comprehensive set of compliance offerings to help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. # < 160 chars (optional)
   items:
     # Card
     - title: Global
