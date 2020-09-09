@@ -98,13 +98,15 @@
 
     - name: DEPLOY AND MANAGE MICROSOFT 365 IN THE ENTERPRISE
       items:
-      - name: Microsoft 365 tenancies
+      - name: Your tenancies
         items:
+        - name: Single Microsoft 365 tenancy
+          href: placeholder.md
         - name: Multiple Microsoft 365 tenancies
           href: placeholder.md
         - name: Microsoft 365 multi-geo
           href: placeholder.md
-      - name: Network connectivity and performance
+      - name: Networking for your tenancies
         items:
         - name: Optimal network connectivity and performance
           href: placeholder.md
@@ -116,7 +118,7 @@
           href: placeholder.md
         - name: Automated endpoint whitelisting using the endpoint web service
           href: placeholder.md
-      - name: Mincrosoft 365 identity
+      - name: Identity for your tenancies
         items:
         - name: Hybrid identity
           href: placeholder.md
