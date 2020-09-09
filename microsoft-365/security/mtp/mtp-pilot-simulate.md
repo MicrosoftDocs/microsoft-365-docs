@@ -126,22 +126,80 @@ To view the incident:
  
 ![Screenshot of incidents from the navigation menu](../../media/mtp-pilot/fig1.png)
 
-2.	Select the newest item by clicking on the circle located left of the incident name.
-
-A side panel displays additional information about the incident, including all the related alerts. Each incident has a unique name that describes it based on the attributes of the alerts it includes.
+2.	Select the newest item by clicking on the circle located left of the incident name. A side panel displays additional information about the incident, including all the related alerts. Each incident has a unique name that describes it based on the attributes of the alerts it includes.
 
 ![Screenshot of the incidents page where generated alerts are aggregated during the simulation](../../media/mtp-pilot/fig4.png)
 
 The alerts that shows in the dashboard can be filtered based on service resources: Azure ATP, Microsoft Cloud App Security, Microsoft Defender ATP, Microsoft Threat Protection, and Office ATP.  
 
 3.	Select **Open incident page** to get more information about the incident.
-In the **Incident** page, you can see all the alerts and information related to the incident. This includes the entities and assets that are involved in the alert, the detection source of the alerts (Azure ATP, EDR), and the reason they were linked together. Reviewing the incident alert list shows the progression of the attack. From this view, you can see and investigate the individual alerts.
-You can also click Manage incident from the right-hand menu, to tag the incident, assign it to yourself, and add comments.
-  
-         Figure 5. Manage the incident
+
+<br>In the **Incident** page, you can see all the alerts and information related to the incident. This includes the entities and assets that are involved in the alert, the detection source of the alerts (Azure ATP, EDR), and the reason they were linked together. Reviewing the incident alert list shows the progression of the attack. From this view, you can see and investigate the individual alerts.
+
+<br>You can also click **Manage incident** from the right-hand menu, to tag the incident, assign it to yourself, and add comments.
+<br>  
+![Screenshot of where to click Manage incident](../../media/mtp-pilot/fig5a.png)
+<br>
+![Screenshot of the fields on the manage incident panel where you can tag the incident, assign it to yourself, and add comments ](../../media/mtp-pilot/fig5a.png)
 
 
 ### Review generated alerts 
+
+Let’s look at some of the alerts generated during the simulated attack.
+NOTE: We’ll walk through only a few of the alerts generated during the simulated attack. Depending on the version of Windows and the Microsoft Threat Protection products running on your test device, you might see more alerts that appear in a slightly different order.
+
+![Screenshot of generated alerts](../../media/mtp-pilot/fig6.png) 
+
+
+####Alert: Suspicious process injection observed (Source: Microsoft Defender ATP EDR)
+Advanced attackers use sophisticated and stealthy methods to persist in memory and hide from detection tools. One common technique is to operate from within a trusted system process rather than a malicious executable, making it hard for detection tools and security operations to spot the malicious code.
+
+To allow the SOC analysts to catch these advanced attacks, deep memory sensors in Microsoft Defender ATP provide our cloud service with unprecedented visibility into a variety of cross-process code injection techniques. The following figure shows how Microsoft Defender ATP detected and alerted on the attempt to inject code to <i>notepad.exe</i>.
+
+![Screenshot of the alert for injection of potentially malicious code](../../media/mtp-pilot/fig7.png) 
+
+
+####Alert: Unexpected behavior observed by a process run with no command line arguments (Source: Microsoft Defender ATP EDR)
+Microsoft Defender ATP detections often target the most common attribute of an attack technique. This ensures durability and raises the bar for attackers to switch to newer tactics.
+
+We employ large-scale learning algorithms to establish the normal behavior of common processes within an organization and worldwide and watch for when these processes exhibit anomalous behaviors. These anomalous behaviors often indicate that extraneous code was introduced and is running in an otherwise trusted process.
+
+For this scenario, the process <i>notepad.exe</i> is exhibiting abnormal behavior, involving communication with an external location. This outcome is independent of the specific method used to introduce and execute the malicious code.
+
+>[!NOTE]
+>Because this alert is based on machine-learning models that require additional backend processing, it might take some time before you see this alert in the portal.
+
+Notice that the alert details include the external IP address—an indicator that you can use as a pivot to expand investigation.
+
+Click the IP address in the alert process tree to view the IP address details page.
+
+![Screenshot of the alert for unexpected behavior by a process run with no command line arguments](../../media/mtp-pilot/fig8.png) 
+
+The following figure displays the selected IP Address details page (clicking on IP address in the Alert process tree).
+![Screenshot of the IP address details page](../../media/mtp-pilot/fig9.png)
+
+
+####Alert: User and IP address reconnaissance (SMB) (Source: Azure ATP)
+Enumeration using Server Message Block (SMB) protocol enables attackers to get recent user logon information that helps them move laterally through the network to access a specific sensitive account.
+In this detection, an alert is triggered when the SMB session enumeration runs against a domain controller.
+
+![Screenshot of the Azure ATP alert for User and IP address reconnaissance](../../media/mtp-pilot/fig10.png) 
+
+
+###Review the device timeline [Microsoft Defender ATP]
+After exploring the various alerts in this incident, navigate back to the incident page you investigated earlier. Click the **Devices** tab in the incident page to review the devices involved in this incident as reported by Microsoft Defender ATP and Azure ATP.
+
+Click the name of the device where the attack was conducted, to open the entity page for that specific device. In that page, you can see alerts that were triggered and related events.
+
+Click the **Timeline** tab to open the device timeline and view all events and behaviors observed on the device in chronological order, interspersed with the alerts raised.
+
+![Screenshot of the device timeline with behaviors](../../media/mtp-pilot/fig11.png) 
+
+Expanding some of the more interesting behaviors provides useful details, such as process trees.
+
+For example, scroll down until you find the alert event **Suspicious process injection observed**. Click the **powershell.exe injected to notepad.exe process** event below it, to display the full process tree for this behavior under the **Event entities** graph on the side pane. Use the search bar for filtering if necessary.
+
+![Screenshot of the process tree for selected PowerShell file creation behavior](../../media/mtp-pilot/fig12.png)
 
 ## Resolve the incident
 The following are out of scope of this deployment guide:
