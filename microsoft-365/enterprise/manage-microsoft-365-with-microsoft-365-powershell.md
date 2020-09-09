@@ -26,19 +26,19 @@ description: "Learn how to manage Microsoft 365 users, licenses, and 365 apps wi
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-PowerShell for Microsoft 365 is a powerful management tool that complements the Microsoft 365 admin center. For example, you can use PowerShell automation easily manage multiple user accounts and licenses and create reports.
+PowerShell for Microsoft 365 is a powerful management tool that complements the Microsoft 365 admin center. For example, you can use PowerShell automation to easily manage multiple user accounts and licenses and to create reports.
 
-Learn how to use PowerShell for Microsoft 365 users and licenses, Skype for Business Online, SharePoint Online, Exchange Online, and the Security & Compliance Center. Select from the following topics:
+Select from the following topics to learn how to use PowerShell for Microsoft 365 users and licenses, Skype for Business Online, SharePoint Online, Exchange Online, and the Security & Compliance Center.
   
 - [Get started](getting-started-with-microsoft-365-powershell.md)
 
-    Start here if you're not familiar with PowerShell for Microsoft 365, and you want to install the Microsoft 365 modules and connect to your Microsoft 365 subscription.
+    Start here if you're not familiar with PowerShell for Microsoft 365, and you want to install the Microsoft 365 modules and connect to your subscription.
 
 - [User accounts, licenses, and groups](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 
     Start here if you've installed the Microsoft 365 modules and want to learn about using automation commands to manage user accounts, licenses, and groups.
 
-- [SharePoint Online](manage-sharepoint-online-with-microsoft-365-powershell.md)
+- [SharePoint](manage-sharepoint-online-with-microsoft-365-powershell.md)
 
     Start here if you've installed the Microsoft 365 modules and want to use automation commands to manage SharePoint.
 
@@ -52,7 +52,7 @@ Learn how to use PowerShell for Microsoft 365 users and licenses, Skype for Busi
 
 - [Security & Compliance Center](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
 
-    Start here if you want to use automation commands to manage the Security & Compliance Center PowerShell.
+    Start here if you want to use automation commands to manage Security & Compliance Center PowerShell.
 
 - [Delegated Access Permissions (DAP) partners](manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
