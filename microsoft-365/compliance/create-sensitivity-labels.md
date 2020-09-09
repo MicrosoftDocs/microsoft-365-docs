@@ -66,7 +66,7 @@ The global admin for your organization has full permissions to create and manage
 
 To edit an existing label, select it, and then select the **Edit label** button:
 
-![Edit a sensitivity label](../media/edit-sensitivity-label-full.png)
+![Edit label button to edit a sensitivity label](../media/edit-sensitivity-label-full.png)
 
 This button starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3.
 
