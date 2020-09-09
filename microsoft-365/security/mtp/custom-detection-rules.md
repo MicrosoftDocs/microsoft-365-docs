@@ -54,8 +54,9 @@ In Microsoft 365 security center, go to **Advanced hunting** and select an exist
 #### Required columns in the query results
 To create a custom detection rule, the query must return the following columns:
 
-- `Timestamp`
-- One of the following device, user, or mailbox columns:
+- `Timestamp`—used to check only results from within a certain lookback period
+- `ReportId`—enables lookups for the original records
+- One of the following columns that identify specific devices, users, or mailboxes:
     - `DeviceId`
     - `DeviceName`
     - `RemoteDeviceName`
@@ -69,22 +70,24 @@ To create a custom detection rule, the query must return the following columns:
     - `InitiatingProcessAccountSid`
     - `InitiatingProcessAccountUpn`
     - `InitiatingProcessAccountObjectId`
+
 >[!NOTE]
 >Support for additional entities will be added as new tables are added to the [advanced hunting schema](advanced-hunting-schema-tables.md).
 
 Simple queries, such as those that don't use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.
 
-There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by entity under a column such as `DeviceId`, you can still return `Timestamp` by getting it from the most recent event involving each unique `DeviceId`.
+There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by entity under a column such as `DeviceId`, you can still return `Timestamp` and `ReportId` by getting it from the most recent event involving each unique `DeviceId`.
 
-The sample query below counts the number of unique devices (`DeviceId`) with antivirus detections and uses this count to find only the devices with more than five detections. To return the latest `Timestamp`, it uses the `summarize` operator with the `arg_max` function.
+The sample query below counts the number of unique devices (`DeviceId`) with antivirus detections and uses this count to find only the devices with more than five detections. To return the latest `Timestamp` and the corresponding `ReportId`, it uses the `summarize` operator with the `arg_max` function.
 
 ```kusto
 DeviceEvents
-| where Timestamp < ago(1d)
+| where Timestamp > ago(1d)
 | where ActionType == "AntivirusDetection"
-| summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
+| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 | where count_ > 5
 ```
+
 > [!TIP]
 > For better query performance, set a time filter that matches your intended run frequency for the rule. Since the least frequent run is _every 24 hours_, filtering for the past day will cover all new data.
 
@@ -109,8 +112,8 @@ When you save a new or edited rule, it immediately runs and checks for matches f
 - **Every 3 hours**—runs every 3 hours, checking data from the past 6 hours
 - **Every hour**—runs hourly, checking data from the past 2 hours
 
->[!NOTE]
-> Time filters in the query take precedence over the lookback duration.  
+>[!TIP]
+> Match the time filters in your query with the lookback duration. Results outside of the lookback duration are ignored.  
 
 Select the frequency that matches how closely you want to monitor detections. Consider your organization's capacity to respond to the alerts.
 
