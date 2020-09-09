@@ -27,7 +27,7 @@ description: "Build assessments in Microsoft Compliance Manager to help you meet
 
 Compliance Manager helps you manage compliance with assessments for the regulations and certifications that apply to your organization. Assessments are groupings of controls from a specific regulation, standard, or policy. Compliance Manager makes it easy to start tracking your compliance by providing pre-built assessments that cover a variety of industry and regional regulations and certifications.
 
-Each assessment is created from a template, which serves as a framework containing the necessary controls and improvement actions for completing the assessment. Setting up the most relevant assessments for your organization helps ensure you’re implementing policies and operational procedures that can limit your compliance risk.
+Each assessment is created from a [template](compliance-manager-templates.md), which serves as a framework containing the necessary controls and improvement actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk.
 
 All of your assessments are listed on the assessments page. [Learn more](compliance-manager-setup.md#assessments-page) about how to filter your view of your assessments and interpret status states.
 
@@ -52,7 +52,7 @@ There are three ways you can set up assessments:
 
 **Use a pre-built assessment**
 
-Kickstart your compliance journey by choosing an assessment already set up by Compliance Manager. We provide a wide selection of [templates](compliance-score-templates.md) for regulations and certifications that align to industries, regions, and common data protection standards, such as GDPR and ISO 27001. Templates contain the controls and improvement actions for helping you meet the requirements of a particular certification. You’ll be asked to choose a template when you start [building an assessment](#use-a-pre-built-assessment).
+Kickstart your compliance journey by choosing an assessment already set up by Compliance Manager. We provide a wide selection of [templates](compliance-manager-templates.md) for regulations and certifications that align to industries, regions, and common data protection standards, such as GDPR and ISO 27001. Templates contain the controls and improvement actions for helping you meet the requirements of a particular certification. You’ll be asked to choose a template when you start [building an assessment](#use-a-pre-built-assessment).
 
 **Extend a pre-built assessment to suit your needs**
 
