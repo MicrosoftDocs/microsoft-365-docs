@@ -189,90 +189,157 @@ conceptualContent:
     # Card
     - title: Industry
       links:
-        - url: file1.md
+        - url: offering-hipaa-hitech.md
           itemType: reference
-          text: linktext1
-        - url: file2.md 
+          text: HIPAA / HITECH
+        - url: offering-hitrust.md
           itemType: reference
-          text: linktext2
-        - url: file3.mdle3
+          text: HITRUST
+        - url: offering-knf-poland.md
           itemType: reference
-          text: linktext3
-        - url: file1.md
+          text: KNF (Poland)
+        - url: offering-mars-e.md
           itemType: reference
-          text: linktext1
-        - url: file2.md 
+          text: MARS-E
+        - url: offering-mas-abs-singapore.md
           itemType: reference
-          text: linktext2
-        - url: file3.mdle3
+          text: MAS + ABS (Singapore)
+        - url: offering-mpaa.md
           itemType: reference
-          text: linktext3
-        - url: file1.md
+          text: MPAA
+        - url: offering-nbb-fsma-belgium.md
           itemType: reference
-          text: linktext1
-        - url: file2.md 
+          text: NBB + FSMA (Belgium)
+        - url: offering-nen-7510-netherlands.md 
           itemType: reference
-          text: linktext2
-        - url: file3.mdle3
+          text: NEN-7510 (Netherlands)
+        - url: offering-nerc-cip.md
           itemType: reference
-          text: linktext3
-        - url: file3.mdle3
+          text: NERC
+        - url: offering-osfi-canada.md
           itemType: reference
-          text: linktext3
+          text: OSFI (Canada)
 
     # Card
     - title: Industry
       links:
-        - url: file1.md
+        - url: offering-pci-dss.md
           itemType: reference
-          text: linktext1
-        - url: file2.md 
+          text: PCI DSS
+        - url: offering-rbi-irdai-india.md
           itemType: reference
-          text: linktext2
-        - url: file3.mdle3
+          text: RBI + IRDAI (India)
+        - url: offering-sec-17a-4.md
           itemType: reference
-          text: linktext3
-        - url: file1.md
+          text: SEC 17a-4
+        - url: offering-sec-reg-sci.md
           itemType: reference
-          text: linktext1
-        - url: file2.md 
+          text: SEC Regulation SCI
+        - url: offering-shared-assessments.md
           itemType: reference
-          text: linktext2
-        - url: file3.mdle3
+          text: Shared assessments
+        - url: offering-sox.md
           itemType: reference
-          text: linktext3
-        - url: file1.md
+          text: SOX
+        - url: offering-tisax-germany.md
           itemType: reference
-          text: linktext1
-        - url: file2.md 
+          text: TISAX (Germany)
+        - url: offering-trusight.md
           itemType: reference
-          text: linktext2
-        - url: file3.mdle3
-          itemType: reference
-          text: linktext3
+          text: TruSight
 
     # Card
     - title: Regional
       links:
-        - url: file1.md1
+        - url: offering-bir-2012-netherlands.md
           itemType: reference
-          text: linktext1
-        - url: file2.md
+          text: BIR 2012 (Netherlands)
+        - url: offering-c5-germany.md
           itemType: reference
-          text: linktext2
-        - url: file3.md
+          text: C5 (Germany)
+        - url: offering-ccpa.md
           itemType: reference
-          text: linktext3
+          text: CCPA (US-California)
+        - url: offering-ccsl-irap-australia.md
+          itemType: reference
+          text: IRAP / CCSL (Australia)
+        - url: offering-cs-mark-gold-japan.md
+          itemType: reference
+          text: CS Mark Gold (Japan)
+        - url: offering-cyber-essentials-plus-uk.md
+          itemType: reference
+          text: Cyber Essentials Plus (UK)
+        - url: offering-canadian-privacy-laws.md
+          itemType: reference
+          text: Canadian Privacy Laws
+        - url: https://www.trustcenter.cn/compliance/default.html#DJCP
+          itemType: reference
+          text: DJCP (China)
+        - url: offering-en-301-549-eu.md
+          itemType: reference
+          text: EN 301 549 (EU)
+        - url: offering-ens-spain.md
+          itemType: reference
+          text: ENS (Spain)
 
     # Card
     - title: Regional
       links:
-        - url: file1.md1
+        - url: offering-enisa.md
           itemType: reference
-          text: linktext1
-        - url: file2.md
+          text: ENISA IAF (EU)
+        - url: offering-eu-model-clauses.md
           itemType: reference
-          text: linktext2
-        - url: file3.md
+          text: EU Model Clauses
+        - url: offering-eu-us-privacy-shield.md
           itemType: reference
-          text: linktext3
+          text: EU-US Privacy Shield
+        - url: https://www.trustcenter.cn/compliance/default.html#GB18030
+          itemType: reference
+          text: GB 18030 (China)
+        - url: gdpr.md
+          itemType: reference
+          text: GDPR (EU)
+        - url: offering-g-cloud-uk.md
+          itemType: reference
+          text: G-Cloud (UK)
+        - url: https://www.idw.de/the-idw/about-the-idw
+          itemType: reference
+          text: IDW PS 951 (Germany)
+        - url: offering-ISMS-korea.md
+          itemType: reference
+          text: ISMS (Korea)
+        - url: offering-it-grundschutz-workbook-germany.md
+          itemType: reference
+          text: IT Grundschutz Workbook (Germany)
+        - url: offering-lopd-spain.md
+          itemType: reference
+          text: LOPD (Spain)
+
+    # Card
+    - title: Regional
+      links:
+        - url: offering-meity-india.md
+          itemType: reference
+          text: MeitY (India)
+        - url: offering-mtcs-singapore.md
+          itemType: reference
+          text: MTCS (Singapore)
+        - url: offering-my-number-act-japan.md
+          itemType: reference
+          text: My Number (Japan)
+        - url: offering-nz-cc-framework-nz.md
+          itemType: reference
+          text: NZ CC Framework (New Zealand)
+        - url: offering-pasf-uk.md
+          itemType: reference
+          text: PASF (UK)
+        - url: offering-pdpa-argentina.md
+          itemType: reference
+          text: PDPA (Argentina)
+        - url: offering-russia-data-localization.md
+          itemType: reference
+          text: Personal Data Localization (Russia)
+        - url: https://aka.ms/TRUCS-Compliance
+          itemType: reference
+          text: TRUCS (China)
