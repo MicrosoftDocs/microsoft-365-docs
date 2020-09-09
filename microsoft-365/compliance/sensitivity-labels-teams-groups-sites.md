@@ -202,7 +202,7 @@ Make sure you have version 16.0.19418.12000 or later of the SharePoint Online Ma
 
 1. Open a PowerShell session with the **Run as Administrator** option.
 
-2. If you don't know your label GUID: [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) and get the list of sensitivity labels and their GUIDs.
+2. If you don't know your label GUID: [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and get the list of sensitivity labels and their GUIDs.
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -312,7 +312,7 @@ To help you manage the coexistence of sensitivity labels and Azure AD classifica
 
    For example, in a PowerShell session that you run as administrator, sign in with a global administrator account:
 
-2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) cmdlet:
+2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label) cmdlet:
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -320,7 +320,7 @@ To help you manage the coexistence of sensitivity labels and Azure AD classifica
 
 3. Make a note of the GUIDs for the sensitivity labels you want to apply to your Microsoft 365 groups.
 
-4. Now [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) in a separate Windows PowerShell window.
+4. Now [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) in a separate Windows PowerShell window.
 
 5. Use the following command as an example to get the list of groups that currently have the classification of "General":
 
