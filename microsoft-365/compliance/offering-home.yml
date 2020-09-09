@@ -74,28 +74,49 @@ conceptualContent:
     # Card
     - title: US Government
       links:
-        - url: file1.md
+        - url: offering-cjis.md
           itemType: reference
-          text: linktext1
-        - url: file2.md
+          text: CJIS
+        - url: offering-cnssi-1253.md
           itemType: reference
-          text: linktext2
-        - url: file3.md
+          text: CNSSI 1253
+        - url: offering-dfars.md
           itemType: reference
-          text: linktext3
+          text: DFARS
+        - url: offering-dod-disa-l2-l4-l5.md
+          itemType: reference
+          text: DoD DISA L2, L4, L5
+        - url: offering-doe-10-cfr-part-810.md
+          itemType: reference
+          text: DoE 10 CFR Part 810
+        - url: offering-ear.md
+          itemType: reference
+          text: EAR (US Export Adm. Reg.)
+        - url: offering-fedramp.md
+          itemType: reference
+          text: FedRAMP
 
     # Card
     - title: US Government
       links:
-        - url: file1.md
+        - url: ffering-fips-140-2.md
           itemType: reference
-          text: linktext1
-        - url: file2.md
+          text: FIPS 140-2
+        - url: offering-irs-1075.md
           itemType: reference
-          text: linktext2
-        - url: file3.md
+          text: IRS 1075
+        - url: offering-itar.md
           itemType: reference
-          text: linktext3
+          text: ITAR
+        - url: offering-nist-sp-800-171.md
+          itemType: reference
+          text: NIST 800-171
+        - url: offering-nist-csf.md
+          itemType: reference
+          text: NIST CSF
+        - url: offering-section-508-vpats.md
+          itemType: reference
+          text: Section 508 VPATS
 
     # Card
     - title: Industry
