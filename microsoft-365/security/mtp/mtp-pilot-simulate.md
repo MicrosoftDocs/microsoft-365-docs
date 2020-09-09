@@ -39,7 +39,7 @@ During the simulation, the attack injects shellcode into a seemingly innocent pr
 
 There are two devices used in this scenario: a test device and a domain controller.
 
-1.	Verify your tenant has [Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#starting-the-service)￼￼.
+1.	Verify your tenant has [Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable#starting-the-service)￼￼.
 2.	Configure a test domain controller:
     - Set up a device with Windows Server 2008 R2 or a later version.
     - Onboard the test domain controller to [Azure Advanced Threat Protection](https://docs.microsoft.com/en-us/azure/security-center/security-center-wdatp) and enable [remote management](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    
