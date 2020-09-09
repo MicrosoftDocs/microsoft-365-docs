@@ -37,7 +37,7 @@ The following overview explains the process of using a connector to archive Work
 
 ## Before you begin
 
-- Create a Merge1 account by accepting their terms and conditions for the Workplace from Facebook connector. Here you will need to contact [Globanet Customer Support](https://globanet.com/contact-us/). You need to sign into this account when you create the connector in Step 1.
+- Create a Globanet Merge1 account for Microsoft connectors. To do this, contact [Globanet Customer Support](https://globanet.com/ms-connectors-contact). You need to sign into this account when you create the connector in Step 1.
 
 - Create a custom integration at https://my.workplace.com/work/admin/apps/ to retrieve data from Workplace via APIs for compliance and eDiscovery purposes.
 
