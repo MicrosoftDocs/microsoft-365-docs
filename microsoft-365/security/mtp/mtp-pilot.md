@@ -35,7 +35,7 @@ This guide provides an overview of Microsoft Threat Protection and step-by-step 
 
 The following sample timeline varies depending on having the right resources in your environment. Some detections and workflows might need more learning time than the others.
 
-![Sample timeline in running a Microsoft Threat Protection pilot](../../media/pilottimeline.png)
+![Sample timeline in running a Microsoft Threat Protection pilot](../../media/pilotimeline.png)
 
 >[!IMPORTANT]
 >For optimum results, follow the pilot instructions as closely as possible.
