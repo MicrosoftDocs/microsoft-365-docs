@@ -1,7 +1,7 @@
 ---
 title: Planning your pilot Microsoft Threat Protection project 
 description: Run your pilot Microsoft Threat Protection project to effectively determine the benefit and adoption of Microsoft Threat Protection (MTP)
-keywords: Microsoft Threat Protection pilot, run pilot Microsoft Threat Protection project, evaluate Microsoft Threat Protection in production, Microsoft Threat Protection pilot project, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+keywords: Microsoft Threat Protection pilot, plan pilot Microsoft Threat Protection project, evaluate Microsoft Threat Protection in production, Microsoft Threat Protection pilot project, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -38,7 +38,7 @@ The scope of the pilot will determine how broad the test will be, based on your 
 - Development or test environment which includes endpoints, servers, domain controllers.
 - Production environment with Microsoft 365, Azure, Active Directory services, endpoints, and servers
 
->[NOTE]
+>[!NOTE]
 >If you don’t have the full licenses yet, you can get trial licenses to [evaluate Microsoft Threat Protection](https://aka.ms/mtp-trial-lab) – plan, prepare, setup, configure, and run your pilot project. Your stakeholders will play a big role in helping facilitate the process from start to finish.
 
 The types of operating systems to be evaluated should also be defined based on the organizational makeup. This may include the following: [Mac endpoints](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements), [Linux Servers](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements), [Windows 10 endpoints](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions), [Windows Server 2016](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions).
@@ -70,13 +70,13 @@ One way to bring all elements of your plan together can be to create a scorecard
 |||||||||
 |:-------|:-----|:-------|:-----|:-------|:-----|:-------|:-----|
 |Use case|Requirements|Configuration requirements|Test plan|Expected outcome|Test status|Score|Notes|
-|Incident management|<ul>-	Microsoft Threat Protection	<br>- Azure ATP <br>- Microsoft Defender ATP <br>- Microsoft Cloud App Security (optional)</ul>|||||||
-|AutoIR||||||||
-|Advanced hunting||||||||
+|Incident management|<ul>-	Microsoft Threat Protection	<br>- Azure ATP <br>- Microsoft Defender ATP <br>- Microsoft Cloud App Security (optional)</ul>|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details |Simulate Attack <br>Investigate the incident |Investigators can understand the scope and impact of the incident, manage the incident||||
+|AutoIR|Microsoft Threat Protection <br> - Azure ATP<br> - Microsoft Defender ATP |See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details <br>Enable AutoIR  |Simulate the attack <br>Automated investigation |Alerts are remediated by Microsoft Threat Protection||||
+|Advanced hunting|Microsoft Threat Protection <br>- Microsoft Defender ATP <br>- Office 365 ATP	|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details|Advanced hunting scenario |Investigators can find data within advanced hunting, pivot to impacted entities, and create custom detections||||
 
 
 
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 2: Prepare](../../media/prepare.png) <br>[Phase 2: Prepare](prepare-mtpeval.md) | Prepare your Microsoft Threat Protection evaluation lab environment
+|![Phase 2: Prepare](../../media/prepare.png) <br>[Phase 2: Prepare](prepare-mtpeval.md) | Prepare your Microsoft Threat Protection pilot environment
