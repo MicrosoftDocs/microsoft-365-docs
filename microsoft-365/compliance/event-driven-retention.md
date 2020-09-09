@@ -51,9 +51,9 @@ A retention label based on an event has the same capabilities as any retention l
 
 To successfully use event-based retention, it's important to understand the relationship between event types, retention labels, events, and asset IDs as illustrated in the diagrams and the explanation that follows: 
   
-![Diagram of event type, labels, events, and asset IDs](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
+![Diagram 1 of 2: Event type, labels, events, and asset IDs](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
   
-![Diagram of event type, labels, events, and asset IDs](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
+![Diagram 2 of 2: Event type, labels, events, and asset IDs](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
 1. You create retention labels for different types of content and then associate them with a type of event. For example, retention labels for different types of product files and records are associated with an event type named Product Lifetime because those records must be retained for 10 years from the time the product reaches its end of life.
     
