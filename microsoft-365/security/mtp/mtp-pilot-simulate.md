@@ -151,7 +151,7 @@ NOTE: We’ll walk through only a few of the alerts generated during the simulat
 ![Screenshot of generated alerts](../../media/mtp-pilot/fig6.png) 
 
 
-####Alert: Suspicious process injection observed (Source: Microsoft Defender ATP EDR)
+**Alert: Suspicious process injection observed (Source: Microsoft Defender ATP EDR)**
 Advanced attackers use sophisticated and stealthy methods to persist in memory and hide from detection tools. One common technique is to operate from within a trusted system process rather than a malicious executable, making it hard for detection tools and security operations to spot the malicious code.
 
 To allow the SOC analysts to catch these advanced attacks, deep memory sensors in Microsoft Defender ATP provide our cloud service with unprecedented visibility into a variety of cross-process code injection techniques. The following figure shows how Microsoft Defender ATP detected and alerted on the attempt to inject code to <i>notepad.exe</i>.
@@ -159,7 +159,7 @@ To allow the SOC analysts to catch these advanced attacks, deep memory sensors i
 ![Screenshot of the alert for injection of potentially malicious code](../../media/mtp-pilot/fig7.png) 
 
 
-####Alert: Unexpected behavior observed by a process run with no command line arguments (Source: Microsoft Defender ATP EDR)
+**Alert: Unexpected behavior observed by a process run with no command line arguments (Source: Microsoft Defender ATP EDR)**
 Microsoft Defender ATP detections often target the most common attribute of an attack technique. This ensures durability and raises the bar for attackers to switch to newer tactics.
 
 We employ large-scale learning algorithms to establish the normal behavior of common processes within an organization and worldwide and watch for when these processes exhibit anomalous behaviors. These anomalous behaviors often indicate that extraneous code was introduced and is running in an otherwise trusted process.
@@ -179,7 +179,7 @@ The following figure displays the selected IP Address details page (clicking on 
 ![Screenshot of the IP address details page](../../media/mtp-pilot/fig9.png)
 
 
-####Alert: User and IP address reconnaissance (SMB) (Source: Azure ATP)
+**Alert: User and IP address reconnaissance (SMB) (Source: Azure ATP)**
 Enumeration using Server Message Block (SMB) protocol enables attackers to get recent user logon information that helps them move laterally through the network to access a specific sensitive account.
 In this detection, an alert is triggered when the SMB session enumeration runs against a domain controller.
 
