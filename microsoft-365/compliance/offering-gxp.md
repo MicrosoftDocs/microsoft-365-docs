@@ -42,7 +42,7 @@ Life sciences organizations building GxP solutions on Azure and Office 365 can t
 ## Microsoft in-scope cloud services
 
 - [Azure](https://aka.ms/AzureCompliance)
-- [Microsoft 365](https://aka.ms/o365-compliance-framework)
+- Microsoft 365
 - Microsoft Dynamics 365
 
 ## How to implement
