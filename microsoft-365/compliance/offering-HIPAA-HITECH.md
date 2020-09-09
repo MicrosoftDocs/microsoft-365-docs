@@ -3,7 +3,7 @@ title: Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
 description: Microsoft offers Health Insurance Portability & Accountability Act Business Associate Agreements (BAAs).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
