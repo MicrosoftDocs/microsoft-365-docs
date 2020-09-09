@@ -3,7 +3,7 @@ title: Securities and Exchange Commission - Regulation Systems Compliance and In
 description: The SCI rules apply to SCI entities, which include such self-regulatory organizations (SROs) as stock and options exchanges, registered clearing agencies, and alternative trading systems (ATSs).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
