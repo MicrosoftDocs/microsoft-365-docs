@@ -42,8 +42,8 @@ To set the language and time zone for the booking calendar:
 
 1. In the navigation pane, select **Booking page** and select **Change language and time zone settings**.
 
-   ![Image of language and time zone settings](../media/bookings-region-language-timezone-settings.png)
+   ![Screenshot: Change language and time zone settings link](../media/bookings-region-language-timezone-settings.png)
 
 1. Select your language and current time zone and choose OK.
 
-   ![Image of language and time zone settings](../media/bookings-region-timezone-settings.png)
+   ![Screenshot: Language and time zone settings](../media/bookings-region-timezone-settings.png)

@@ -35,5 +35,5 @@ You're now ready to set up Bookings for your organization. You can get to the Bo
 - [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md)
 - [Set your scheduling policies](set-scheduling-policies.md)
 - [Set employee working hours](employee-hours.md)
-- [Customize and publish your booking page](customize-booking-page)
+- [Customize and publish your booking page](customize-booking-page.md)
 - [Create a manual booking](create-a-manual-booking.md)

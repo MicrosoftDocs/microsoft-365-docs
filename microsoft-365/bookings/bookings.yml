@@ -36,16 +36,12 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Set up Microsoft Bookings
-            url: bookings-setup-guide.md
           - text: Enter your business information
             url: enter-business-information.md
           - text: Set your scheduling policies
             url: set-scheduling-policies.md
           - text: Define your service offerings
             url: define-service-offerings.md
-          - text: Create your staff list
-            url: create-staff-list.md
           - text: Set employee working hours
             url: employee-hours.md
           - text: Customize and publish your booking page
@@ -60,5 +56,3 @@ landingContent:
         links:
           - text: Customize your booking page
             url: customize-booking-page.md
-          - text: Connect to Facebook
-            url: connect-to-facebook.md

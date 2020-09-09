@@ -27,7 +27,7 @@ Before getting started, you need to set up Bookings on the web.
 
 4. Provide the name and type of business you run, such as hair salon or dental practice, and select **To Bookings**.
 
-5. You're now ready to set up Bookings for your organization. Follow the steps in the [Setting up Microsoft Bookings](bookings-setup-guide.md) topic to finish setting up Bookings. Go back to your mobile device and log out of the mobile app. Log back in to go to your new booking calendar.
+5. You're now ready to set up Bookings for your organization. Follow the steps in the [Microsoft Bookings](bookings-overview.md) topic to finish setting up Bookings. Go back to your mobile device and log out of the mobile app. Log back in to go to your new booking calendar.
 
 ## View-only mode
 

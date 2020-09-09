@@ -38,8 +38,6 @@ The information you provide here will be displayed on the page customers and cli
 
 1. Select **Save**.
 
-   ![Image of save button](../media/bookings-save-button.png)
-
 ## Set your business hours
 
 By default, the business hours in the Bookings app are set to 8 a.m. to 5 p.m., Monday through Friday. Times are provided in 15-minute increments. The Bookings app uses the 12-hour clock.
@@ -68,8 +66,6 @@ For example, you have staff meetings every Thursday from 1 o'clock to 2:30 and w
 
 1. Select Save.
 
-   ![Image of save button](../media/bookings-save-button.png)
-
     When a customer goes to your booking page, he or she will see that your business is closed from 1 to 2:30 on Thursdays.
 
 ## Upload your logo
@@ -80,6 +76,6 @@ If you haven't already uploaded your business logo to the Bookings app, you can 
 
 1. Select **Upload photo**.
 
-   ![Image of save button](../media/bookings-upload-photo.png)
+   ![Image of upload photo button](../media/bookings-upload-photo.png)
 
 1. Select **Save**.

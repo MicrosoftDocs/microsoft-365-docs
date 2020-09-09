@@ -40,4 +40,4 @@ This table explains the various scheduling policies available on the booking pag
 
 ## Publish the booking page
 
-When you're ready to publish your booking page, select **Save and publish**. See [Publish or unpublish the booking page](publish-booking-page.md) for more information.
+When you're ready to publish your booking page, select **Save and publish**. See [Customize and publish your booking page](customize-booking-page.md) for more information.

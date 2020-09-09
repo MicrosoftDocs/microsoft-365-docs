@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
-description: "Learn how to get access to the Bookings feature in Microsoft 365."
+description: "Learn how to get access to Microsoft Bookings in Microsoft 365."
 ---
 
 # Turn Microsoft Bookings on or off

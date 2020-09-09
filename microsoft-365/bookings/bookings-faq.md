@@ -259,13 +259,7 @@ There is the ability to define which email address customer send their replies t
 
 This feature already exists for GDPR compliance. The Booking page has a field for custom consent, right under the publishing details section. Just check that box and write your own custom consent message and it will show up as a required field on the Self-service page. The date and time that the customer grants consent will be recorded.
 
-:::image type="content" source="media/bookings-faq-usage-consent.jpeg" alt-text="Customer data usage consent in Bookings":::
-
 This section does not support rich text, but think links can be added under the business information section and would show up just below the consent check box.
-
-:::image type="content" source="media/bookings-faq-policy-url.jpeg" alt-text="Privacy policy URL and Terms and conditions URL in Bookings":::
-
-:::image type="content" source="media/bookings-faq-terms-of-service.jpeg" alt-text="Terms of service consent button in Bookings":::
 
 ### How can Bookings-associated mailboxes in Exchange be identified?
 
@@ -291,12 +285,12 @@ When booking an appointment with SMS text messages enabled, customers will be pr
 
 ### This staff member's calendar can't be synced
 
-If you receive the error, "This staff member's calendar can't be synced", this article contains several troubleshooting procedures to help you resolve the error.
+If you receive the error, "This staff member's calendar can't be synced", this section contains several troubleshooting procedures to help you resolve the error.
 
 > [!NOTE]
 > Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
 
-If you are looking for information on syncing your staff's calendar, see [Sync staff's work calendar with Microsoft Bookings](sync-staff-work-calendar.md).
+If you are looking for information on syncing your staff's calendar, see [Add staff to Bookings](add-staff.md). Make sure on the **Staff details** page, **Events on calendar affect availability** is checked.
 
 ### The staff member needs to change their calendar permissions
 
