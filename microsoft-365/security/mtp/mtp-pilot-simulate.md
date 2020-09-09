@@ -187,6 +187,7 @@ In this detection, an alert is triggered when the SMB session enumeration runs a
 
 
 ###Review the device timeline [Microsoft Defender ATP]
+
 After exploring the various alerts in this incident, navigate back to the incident page you investigated earlier. Click the **Devices** tab in the incident page to review the devices involved in this incident as reported by Microsoft Defender ATP and Azure ATP.
 
 Click the name of the device where the attack was conducted, to open the entity page for that specific device. In that page, you can see alerts that were triggered and related events.
