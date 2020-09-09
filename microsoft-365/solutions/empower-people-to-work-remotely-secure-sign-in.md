@@ -81,7 +81,7 @@ If security defaults are enabled, all new users are prompted for MFA registratio
 
 This table shows the results of enabling MFA with security defaults and Conditional Access policies.
 
-|| Enabled | Disabled | Additional authentication method |
+| Method | Enabled | Disabled | Additional authentication method |
 |:-------|:-----|:-------|:-------|
 | **Security defaults**  | Can’t use Conditional Access policies | Can use Conditional Access policies | Microsoft Authenticator app |
 | **Conditional Access policies** | If any are enabled, you can’t enable security defaults | If all are disabled, you can enable security defaults  | User specifies during MFA registration  |
