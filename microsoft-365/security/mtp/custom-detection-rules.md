@@ -54,7 +54,7 @@ In Microsoft 365 security center, go to **Advanced hunting** and select an exist
 #### Required columns in the query results
 To create a custom detection rule, the query must return the following columns:
 
-- `Timestamp`—used to check only results from within a certain lookback period
+- `Timestamp`—used to set the timestamp for generated alerts
 - `ReportId`—enables lookups for the original records
 - One of the following columns that identify specific devices, users, or mailboxes:
     - `DeviceId`
@@ -105,7 +105,7 @@ With the query in the query editor, select **Create detection rule** and specify
 - **Recommended actions**—additional actions that responders might take in response to an alert
 
 #### Rule frequency
-When you save a new or edited rule, it immediately runs and checks for matches from the past 30 days of data. The rule then runs again at fixed intervals, applying a lookback duration based on the frequency you choose:
+When you save or edit a new rule, it runs and checks for matches from the past 30 days of data. The rule then runs again at fixed intervals, applying a lookback duration based on the frequency you choose:
 
 - **Every 24 hours**—runs every 24 hours, checking data from the past 30 days
 - **Every 12 hours**—runs every 12 hours, checking data from the past 24 hours
