@@ -115,34 +115,30 @@ The following screenshot shows the settings when you create the Product Specific
 
 ### Create an event type when you create a retention label
 
-1. From the **Retain or delete content based on** drop-down list, select **an event**.
-
-2. Select **Choose an event type**.
+1. On the **Define retention settings** page of the Create retention label wizard, after **Start the retention period based on**, select **Create new event type**:
     
     ![Create a new event type for the Product Specification label dialog box](../media/SPRetention6.png)
 
-3. Select **Choose an event type**, and then select **Create new event types** on the **Choose an event type** page.
+3. On the **Name your event type** page, enter ***Product Cessation*** and an optional description, and then select **Next**, **Submit**, and **Done**.
 
-4. Create an event type named ***Product Cessation***, enter a description, and select **Finish**.
-
-5. Back on the **Choose an event type** page, select the **Product Cessation** event type that you created, and then select **Add**.
-
-   Here's what the settings look like for the Product Specification retention label. 
-
+4. Back on the **Define retention settings** page, for **Start the retention period based on**, use the dropdown box to select the **Product Cessation** event type that you created.
+    
+    Here's what the settings look like for the Product Specification retention label: 
+    
    ![Settings for the new Product Specification label](../media/SPRetention7.png)
 
 6. Select **Create this label**, and on the next page when you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**. 
-
-   > [!TIP]
-   > For more detailed steps, see [Create a label whose retention period is based on an event](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
+    
+    > [!TIP]
+    > For more detailed steps, see [Create a label whose retention period is based on an event](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
 
 Now let's look at how we'll auto-apply the retention label to product-specification content.
 
-## Auto-apply retention labels to classify content
+## Auto-apply retention labels to documents
 
 We're going to use Keyword Query Language (KQL) to [auto-apply](apply-retention-labels-automatically.md) the retention labels that we created. KQL is the language that's used to build search queries. In KQL, you can search by using keywords or managed properties. For more information, see [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-Basically, we want to tell Microsoft 365 to "apply the *Product Specification* retention label to all documents that have a **Status** of ***Final*** and a **Doc Type** of ***Product Specification***." Recall that **Status** and **Doc Type** are the site columns that we defined for the Product Documentation content type in the [Information architecture](#information-architecture) section. To do this, we need to configure the search schema.
+Basically, we want to tell Microsoft 365 to "apply the **Product Specification** retention label to all documents that have a **Status** of **Final** and a **Doc Type** of **Product Specification**." Recall that **Status** and **Doc Type** are the site columns that we defined for the Product Documentation content type in the [Information architecture](#information-architecture) section. To do this, we need to configure the search schema.
 
 When SharePoint indexes content, it automatically generates crawled properties for each site column. For this scenario, we're interested in the **Doc Type** and **Status** properties. We need documents in the library that are the right content type and have the site columns filled in for search to create the crawled properties.
 
