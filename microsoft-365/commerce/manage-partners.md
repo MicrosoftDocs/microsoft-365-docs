@@ -49,7 +49,6 @@ There are several ways that a partner can work with you. Based on your stated bu
 | Partner | You give your partner a user account in your tenant, and they work with other Microsoft services on your behalf. |
 | Advisor | Partners can reset passwords and handle support incidents for you. |
 | Microsoft Products & Services Agreement (MPSA) partner | If you've worked with multiple partners through the MPSA program, you can allow them to see purchases made by each other. |
-| OEM PC partner | Partners can upload device IDs for PCs that you're [managing with Autopilot](https://docs.microsoft.com/microsoft-store/add-profile-to-devices). |
 | Line-of-business (LOB) partner | Partners can develop, submit, and manage LOB apps specific for your organization or school. |
 
 ## Find a partner
