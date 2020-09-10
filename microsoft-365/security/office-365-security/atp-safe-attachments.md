@@ -22,7 +22,11 @@ description: "Admins can learn about the Safe Attachments feature in Office 365 
 
 # Safe Attachments in Office 365 ATP
 
-Safe Attachments is a feature in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) that uses a virtual environment to check attachments in inbound email messages before delivery to recipients. Safe Attachments protection for email messages is controlled by Safe Attachments policies. There is no default Safe Attachments policy, **so to get the protection of Safe Attachments, you need to create one or more Safe Attachments policies**. For instructions, see [Set up Safe Attachments policies in ATP](set-up-atp-safe-attachments-policies.md).
+All inbound messages in Microsoft 365 are automatically scanned for malware by Exchange Online Protection (EOP). For more information, see [Anti-malware protection in EOP](anti-malware-protection.md).
+
+Safe Attachments in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) provides an additional layer of protection for email attachments that have already been scanned by EOP. Specifically, Safe Attachments uses a virtual environment to check attachments in email messages before they're delivered to recipients (a process known as _detonation_).
+
+Safe Attachments protection for email messages is controlled by Safe Attachments policies. There is no default Safe Attachments policy, **so to get the protection of Safe Attachments, you need to create one or more Safe Attachments policies**. For instructions, see [Set up Safe Attachments policies in ATP](set-up-atp-safe-attachments-policies.md).
 
 The following table describes scenarios for Safe Attachments in Microsoft 365 and Office 365 organizations that include ATP (in other words, lack of licensing is never an issue in the examples).
 
