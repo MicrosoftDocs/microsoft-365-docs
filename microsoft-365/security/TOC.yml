@@ -247,15 +247,6 @@
             - name: Get started
             - name: Office 365 Advanced Threat Protection
               href: ./office-365-security/office-365-atp.md
-              items: 
-                - name: See what's new
-                - name: ATP setup tasks for admins
-                  items: 
-                    - name: Global Administrator setup tasks
-                    - name: Role Administrator setup tasks
-                - name: Automated investigation and response
-                - name: Integration for greater security
-                - name: How ATP works
         - name: Overview
           items: 
             - name: Security roadmap
