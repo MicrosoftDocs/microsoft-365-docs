@@ -144,7 +144,7 @@ In the **Assignments** section:
 |Users and groups|Include| **Select users and groups > Users and groups**:  Select specific groups containing targeted user accounts. |Start with the group that includes pilot user accounts.|
 ||Exclude| **Users and groups**: Select your Conditional Access exception group; service accounts (app identities).|Membership should be modified on an as-needed, temporary basis.|
 |Cloud apps or actions|**Cloud apps > Include**| **Select apps**: Select the apps corresponding to the clients that do not support modern authentication.||
-|Conditions| **Client apps** | Choose **Yes** for **Configure** <br> Check **Mobile apps and desktop clients** and **Other clients** | |
+|Conditions| **Client apps** | Choose **Yes** for **Configure** <br> Clear the check marks for **Browser** and **Mobile apps and desktop clients** | |
 ||||
 
 In the **Access controls** section:
@@ -365,7 +365,7 @@ To require compliance for all devices:
 >Make sure that your device is compliant before enabling this policy. Otherwise, you could get locked out and will be unable to change this policy until your user account has been added to the Conditional Access exclusion group.
 >
 
-## Next steps
+## Next step
 
 ![Step 3: Policies for guest and external users](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)
 
