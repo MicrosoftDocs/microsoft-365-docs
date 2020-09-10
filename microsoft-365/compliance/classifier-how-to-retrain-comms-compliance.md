@@ -87,33 +87,6 @@ After a retrain, we evaluate the classifier's performance on both the items with
 
 We compare the performance numbers on both sets of items for the retrained and published classifier to provide a recommendation on whether there was improvement to republish. 
 
-We recommend republishing the retrained classifier when:
-
-- the retrained classifiers accuracy has increased
- 
-or
-
-- the retrained classifiers accuracy has increased and the F1 score on the feedback and training items has decreased by no more than 0.005 
-
-or
-
-- The retrained classifier's accuracy on the feedback items is the same, but the F1 score on the feedback and training items increased
-
-We recommend providing more feedback and retraining to the classifier when:
-
-- the retrained classifiers accuracy has decreased
-
-or
-
-- the retrained classifiers accuracy has increased, but the F1 score on the feedback and training items has decreased by more than 0.005
-
-or
-
-- the retrained classifiers accuracy on the feedback items is the same, but the F1 score on the feedback and training items has decreased
-
-For more information on F1 scores, accuracy, precisions and recall, see [F1 score on wikipedia](https://en.wikipedia.org/wiki/F1_score)
-
-
 ## See also
 
 - [Learn about trainable classifiers (preview)](classifier-learn-about.md)
