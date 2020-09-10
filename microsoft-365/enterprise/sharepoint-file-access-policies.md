@@ -8,7 +8,6 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 06/07/2018
 ms.reviewer: martincoetzer
 ms.custom: 
 - it-pro
@@ -21,7 +20,7 @@ ms.collection:
 
 # Policy recommendations for securing SharePoint sites and files
 
-This article describes how to implement the recommended identity and device-access policies to protect SharePoint Online and OneDrive for Business. This guidance builds on the [Common identity and device access policies](identity-access-policies.md).
+This article describes how to implement the recommended identity and device-access policies to protect SharePoint and OneDrive for Business. This guidance builds on the [common identity and device access policies](identity-access-policies.md).
 
 These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in [the overview](microsoft-365-policies-configurations.md).
 
@@ -29,36 +28,36 @@ In addition to implementing this guidance, be sure to configure SharePoint sites
 
 ## Updating common policies to include SharePoint and OneDrive for Business
 
-The following diagram illustrates the set of recommended policies for protecting files in SharePoint Online and OneDrive for Business. It indicates which policies should be updated or newly created to add protection for SharePoint Online and OneDrive for Business.
+The following diagram illustrates the set of recommended policies for protecting files in SharePoint and OneDrive for Business. It indicates which policies should be updated or newly created to add protection for SharePoint and OneDrive for Business.
 
-[ ![Summary of policies for SharePoint Online and OneDrive](../media/identity-access-ruleset-sharepoint.png) ](../media/identity-access-ruleset-sharepoint.png#lightbox)
+[ ![Summary of policies for SharePoint and OneDrive](../media/identity-access-ruleset-sharepoint.png) ](../media/identity-access-ruleset-sharepoint.png#lightbox)
 
-If you included SharePoint Online when you created the common policies, you only need to create the new policies. When configuring conditional access rules, SharePoint Online includes OneDrive for Business.
+If you included SharePoint when you created the common policies, you only need to create the new policies. When configuring conditional access rules, SharePoint includes OneDrive for Business.
 
 The new policies implement device protection for sensitive and highly-regulated content by applying specific access requirements to SharePoint sites that you specify.
 
-The following table lists the policies you either need to review and update or create new for SharePoint Online. The common policies link to the associated configuration instructions in the [Common identity and device access policies](identity-access-policies.md) article.
+The following table lists the policies you either need to review and update or create new for SharePoint. The common policies link to the associated configuration instructions in the [Common identity and device access policies](identity-access-policies.md) article.
 
 |Protection level|Policies|More information|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint Online in the assignment of cloud apps|
-|        |[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Include SharePoint Online in the assignment of cloud apps|
+|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignment of cloud apps|
+|        |[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Include SharePoint in the assignment of cloud apps|
 |        |[Apply APP data protection policies](identity-access-policies.md#apply-app-data-protection-policies)|Be sure all recommended apps are included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows)|
-|        |[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Include SharePoint Online in list of cloud apps|
-|        |[Use app enforced restrictions in SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Add this new policy. This tells Azure AD to use the settings specified in SharePoint Online. This rule applies to all users, but only affects access to sites included in SharePoint Online access policies|
-|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint Online in the assignments of cloud apps|
-|         |[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include SharePoint Online in the list of cloud apps|
-||[SharePoint Online access control policy](#sharepoint-online-access-control-policies): Allow browser-only access to specific SharePoint sites from unmanaged devices|This prevents edit and download of files. Use PowerShell to specify sites|
-|**Highly regulated**|[*Always* require MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint Online in the assignment of cloud apps|
-||[SharePoint Online access control policy](#use-app-enforced-restrictions-in-sharepoint-online): Block access to specific SharePoint sites from unmanaged devices|Use PowerShell to specify sites|
+|        |[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Include SharePoint in list of cloud apps|
+|        |[Use app enforced restrictions in SharePoint](#use-app-enforced-restrictions-in-sharepoint-online)|Add this new policy. This tells Azure AD to use the settings specified in SharePoint. This rule applies to all users, but only affects access to sites included in SharePoint access policies|
+|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignments of cloud apps|
+|         |[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include SharePoint in the list of cloud apps|
+||[SharePoint access control policy](#sharepoint-online-access-control-policies): Allow browser-only access to specific SharePoint sites from unmanaged devices|This prevents edit and download of files. Use PowerShell to specify sites|
+|**Highly regulated**|[*Always* require MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignment of cloud apps|
+||[SharePoint access control policy](#use-app-enforced-restrictions-in-sharepoint-online): Block access to specific SharePoint sites from unmanaged devices|Use PowerShell to specify sites|
 
-## Use app-enforced restrictions in SharePoint Online
+## Use app-enforced restrictions in SharePoint
 
-If you implement access controls in SharePoint Online, you must create this conditional access policy in Azure AD to tell Azure AD to enforce the policies you configure in SharePoint Online. This rule applies to all users, but only affects access to the sites you specify using PowerShell when you create the access controls in SharePoint Online.
+If you implement access controls in SharePoint, you must create this conditional access policy in Azure AD to tell Azure AD to enforce the policies you configure in SharePoint. This rule applies to all users, but only affects access to the sites you specify using PowerShell when you create the access controls in SharePoint.
 
 To configure this policy see "Block or limit access to specific SharePoint site collections or OneDrive accounts" in this article: [Control access from unmanaged devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
 
-## SharePoint Online access control policies
+## SharePoint access control policies
 
 Microsoft recommends you protect content in SharePoint sites with sensitive and highly-regulated content with device access controls. You do this by creating a policy that specifies the level of protection and the sites to apply the protection to.
 

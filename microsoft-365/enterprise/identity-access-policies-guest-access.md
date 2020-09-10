@@ -27,7 +27,7 @@ Providing a path for B2B users to authenticate with your Azure Active Directory 
 
 ## Updating the common policies to allow and protect guest and external access 
 
-The following diagram illustrates the common identity and device access policies and indicates (with a pencil icon) which policies to add or update to protect guest and external access. 
+To protect guest and external access, the following diagram illustrates which policies to add or update from the the common identity and device access policies . 
 
 [![Summary of policy updates for protecting guest access](../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
 
@@ -71,5 +71,5 @@ Configure Conditional Access policies for:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
-- [SharePoint Online](secure-email-recommended-policies.md)
+- [SharePoint](secure-email-recommended-policies.md)
 

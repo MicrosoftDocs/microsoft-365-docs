@@ -6,7 +6,6 @@ author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -30,11 +29,13 @@ These recommendations require your users to use modern email clients, including 
 
 ## Updating common policies to include email
 
-The following diagram illustrates the common identity and device access policies and indicates which policies need to be updated to protect email. Note the addition of a new rule for Exchange Online to block ActiveSync clients. This forces the use of Outlook mobile.
+To protect email, the following diagram illustrates which policies to update from the the common identity and device access policies.
 
-![Summary of policy updates for protecting email](../media/identity-access-ruleset-mail.png)
+[![Summary of policy updates for protecting access to Teams and its dependent services](../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
 
-[See a larger version of this image](https://raw.githubusercontent.com/MicrosoftDocs/microsoft-365-docs/public/microsoft-365/media/identity-access-ruleset-mail.png)
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
+
+Note the addition of a new rule for Exchange Online to block ActiveSync clients. This forces the use of Outlook mobile.
 
 If you included Exchange Online and Outlook in the scope of the policies when you set them up, you only need to create the new policy to block ActiveSync clients. Review the policies listed in the following table and either make the recommended additions, or confirm that these are already included. Each rule links to the associated configuration instructions in [Common identity and device access policies](identity-access-policies.md).
 
@@ -69,4 +70,4 @@ For more information, see [Set up new Office 365 Message Encryption capabilities
 Configure Conditional Access policies for:
 
 - [Microsoft Teams](teams-access-policies.md)
-- [SharePoint Online](secure-email-recommended-policies.md)
+- [SharePoint](secure-email-recommended-policies.md)

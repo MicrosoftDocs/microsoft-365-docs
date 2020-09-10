@@ -77,7 +77,7 @@ Here are the results:
 
 Be careful when applying higher levels of protection to groups and users. For example, members of the Top Secret Project X group will be required to use MFA every time they sign in, even if they are not working on the highly-regulated content for Project X.  
 
-All Azure AD groups created as part of these recommendations must be created as Microsoft 365 groups. This is important for the deployment of sensitivity labels when securing documents in Microsoft Teams and SharePoint Online.
+All Azure AD groups created as part of these recommendations must be created as Microsoft 365 groups. This is important for the deployment of sensitivity labels when securing documents in Microsoft Teams and SharePoint.
 
 ![Screen capture for creating Microsoft 365 groups](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
