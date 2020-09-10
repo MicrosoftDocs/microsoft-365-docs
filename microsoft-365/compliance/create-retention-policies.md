@@ -204,10 +204,8 @@ A retention policy can apply to all content in the locations that it includes, o
   
 ### Identify content that contains specific keywords
 
-You can apply a retention policy only to content that meets specific conditions, and then take retention actions on just that content. The conditions available support applying a retention policy to content that contains specific words or phrases. You can refine your query by using search operators like AND, OR, and NOT. For more information on these operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
-  
-Support for adding searchable properties (for example, **subject:**) is coming soon.
-  
+You can apply a retention policy only to content that meets specific conditions, and then take retention actions on just that content. The conditions available support applying a retention policy to content that contains specific words or phrases. You can refine your query by using search operators like AND, OR, and NOT. For more information about these operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+
 Query-based retention uses the search index to identify content.
   
 ![Query editor](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
@@ -294,7 +292,7 @@ You must use PowerShell if you need to use [Preservation Lock](retention.md#use-
 
 All retention policies with any configuration support Preservation Lock. However, when you use the PowerShell commands that follow, you'll notice that the **Workload** parameter always displays **Exchange, SharePoint, OneDriveForBusines, Skype, ModernGroup** rather than reflect the actual workloads configured in the policy. This is a display issue only.
 
-1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. List your retention policies and find the name of the policy that you want to lock by running [Get-RetentionCompliancePolicy](https://powershell/module/exchange/get-retentioncompliancepolicy). For example:
     

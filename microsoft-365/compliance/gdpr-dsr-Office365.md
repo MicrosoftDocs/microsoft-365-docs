@@ -3,7 +3,7 @@ title:  Office 365 Data Subject Requests Under the GDPR and CCPA
 description: Understand the user rights under GDPR and CCPA and how Office 365 helps enterprises find and act on data in response to DSRs.
 keywords:  Office 365, DSR, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
 localization_priority:  Priority
-ms.prod:  Microsoft-365-enterprise
+ms.prod:  microsoft-365-enterprise
 ms.topic:  article
 f1.keywords:
 - NOCSH
@@ -1428,7 +1428,7 @@ Removing a user's SharePoint Online license won't prevent them from accessing th
 
 Another way to address a DSR request to restrict the processing of data is to turn off an Office 365 service. This impacts all users in your entire organization and prevents everyone from using the service or accessing data in the service.
 
-The most expedient way to turn off a service is to use Office 365 PowerShell and remove the corresponding user license from all users in the organization. This will in effect restrict anyone from access data in that service. For detailed instructions, see [Disable access to services with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-with-office-365-powershell) and follow the procedures to disable Office 365 services for users from a single licensing plan.
+The most expedient way to turn off a service is to use Office 365 PowerShell and remove the corresponding user license from all users in the organization. This will in effect restrict anyone from access data in that service. For detailed instructions, see [Disable access to services with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell) and follow the procedures to disable Office 365 services for users from a single licensing plan.
 
 >[!NOTE]
 >For Yammer, in additional to removing the Yammer license from user accounts, you also must disable users' ability to sign in to Yammer with Yammer credentials (by enforcing the use of their Office 365 credentials when signing in). For detailed instructions, see [Turn off Yammer access for Microsoft 365 users](https://support.office.com/article/Turn-off-Yammer-access-for-Office-365-users-1f79bfad-f713-4143-aa5d-5584985ce53a).

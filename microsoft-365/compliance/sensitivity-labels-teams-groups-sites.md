@@ -29,6 +29,9 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 - External users access
 - Access from unmanaged devices
 
+> [!IMPORTANT]
+> The **Access from unmanaged devices** setting works in conjunction with the SharePoint feature to [control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). You must configure this dependent SharePoint feature for your tenant to use a sensitivity label that has this setting configured. Additional information is included in the instructions that follow.
+
 When you apply this sensitivity label to a supported container, the label automatically applies the classification and protection settings to the connected site or group.
 
 Content in these containers however, do not inherit the labels for the classification and settings such as visual markings, or encryption. So that users can label their documents in SharePoint sites or team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -78,7 +81,13 @@ On this new **Site and group settings** page, configure the settings:
 
 - **External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **Unmanaged devices**: For [unmanaged devices](/sharepoint/control-access-from-unmanaged-devices), allow full access, web only access, or block access completely. If you have configured this setting at the tenant level or for a specific site, the setting you specify here will be applied only if it's more restrictive.
+- **Unmanaged devices**: For this option, you must also configure the SharePoint feature that uses Azure AD conditional access to block or limit access to SharePoint and OneDrive content from unmanaged devices. For instructions, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). The option you specify for this label setting is the equivalent of [blocking or limiting access to a specific SharePoint site or OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
+    
+    If you don't configure the dependent SharePoint feature, the option you specify here will have no effect. Additionally, it will have no effect if it's less restrictive than the configured setting at the tenant level. Choose a label setting that's either the same as the tenant-level setting or more restrictive.
+    
+    For example, if your tenant is configured for **Allow limited, web-only access**, the label setting that allows full access will have no effect because it's less restrictive. For this tenant-level setting, choose the label setting to block access (more restrictive) or the label setting for limited access (the same as the tenant setting).
+    
+    Because you can configure the SharePoint feature independently from the label configuration, there's no check in the sensitivity label wizard that the dependencies are in place.
 
 ![The site and group settings tab](../media/edit-sensitivity-label-site-group2.png)
 
@@ -187,13 +196,13 @@ When the label is applied, and users browse to the site, they see the name of th
 
 ### Use PowerShell to apply a sensitivity label to multiple sites
 
-You can use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps) and [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet with the *SensitivityLabel* parameter from the current [SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to apply a sensitivity label to many sites. The sites can be any SharePoint site collection, or a OneDrive site.
+You can use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) and [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *SensitivityLabel* parameter from the current [SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to apply a sensitivity label to many sites. The sites can be any SharePoint site collection, or a OneDrive site.
 
 Make sure you have version 16.0.19418.12000 or later of the SharePoint Online Management Shell.
 
 1. Open a PowerShell session with the **Run as Administrator** option.
 
-2. If you don't know your label GUID: [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) and get the list of sensitivity labels and their GUIDs.
+2. If you don't know your label GUID: [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and get the list of sensitivity labels and their GUIDs.
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -267,7 +276,7 @@ The following apps and services don't currently support sensitivity labels confi
   - Yammer
   - Planner
   - Project
-  - PowerBI
+  - Power BI
 
 ## Classic Azure AD group classification
 
@@ -303,7 +312,7 @@ To help you manage the coexistence of sensitivity labels and Azure AD classifica
 
    For example, in a PowerShell session that you run as administrator, sign in with a global administrator account:
 
-2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) cmdlet:
+2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label) cmdlet:
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -311,7 +320,7 @@ To help you manage the coexistence of sensitivity labels and Azure AD classifica
 
 3. Make a note of the GUIDs for the sensitivity labels you want to apply to your Microsoft 365 groups.
 
-4. Now [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) in a separate Windows PowerShell window.
+4. Now [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) in a separate Windows PowerShell window.
 
 5. Use the following command as an example to get the list of groups that currently have the classification of "General":
 
@@ -352,7 +361,7 @@ In addition to hiding the **Sites and group settings** page when you create or e
 
 This means that any label settings from sites and groups previously applied to containers won't be enforced, and containers no longer display the labels.
 
-If these containers have Azure AD classification values applied to them, the containers revert to using the classifications again. Be aware that any new sites or groups that were created after enabling the feature won't display a label or have a classification. For these containers, and any new containers, you can now apply classification values. For more information, see [SharePoint "modern" sites classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification) and [Create classifications for Office groups in your organization](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell).
+If these containers have Azure AD classification values applied to them, the containers revert to using the classifications again. Be aware that any new sites or groups that were created after enabling the feature won't display a label or have a classification. For these containers, and any new containers, you can now apply classification values. For more information, see [SharePoint "modern" sites classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification) and [Create classifications for Office groups in your organization](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell).
 
 ## Additional resources
 
