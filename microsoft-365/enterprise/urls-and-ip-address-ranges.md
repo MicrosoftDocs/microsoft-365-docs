@@ -66,7 +66,7 @@ Data columns shown are:
   
 [Troubleshooting Office 365 connectivity](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d.aspx)
 
-[Root CA and the Intermediate CA bundle on the 3rd party application system](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains?view=o365-worldwide)
+[Root CA and the Intermediate CA bundle on the third-party application system](../compliance/encryption-office-365-certificate-chains.md)
   
 [Client connectivity](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)
   
