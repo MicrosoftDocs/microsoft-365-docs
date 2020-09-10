@@ -21,7 +21,7 @@ ID | Category | ER | Addresses | Ports
 
 ID | Category | ER | Addresses | Ports
 -- | -------------------------------------------------------------------------------------------------------------------------------------- | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------
-31 | Optimize<BR>Required | Yes | `<tenant>.sharepoint.com, <tenant>-my.sharepoint.com`<BR>`13.107.136.0/22, 40.108.128.0/17, 52.104.0.0/14, 104.146.128.0/17, 150.171.40.0/22, 2620:1ec:8f8::/46, 2620:1ec:908::/46, 2a01:111:f402::/48` | **TCP:** 443, 80
+31 | Optimize<BR>Required | Yes | `*.sharepoint.com`<BR>`13.107.136.0/22, 40.108.128.0/17, 52.104.0.0/14, 104.146.128.0/17, 150.171.40.0/22, 2620:1ec:8f8::/46, 2620:1ec:908::/46, 2a01:111:f402::/48` | **TCP:** 443, 80
 32 | Default<BR>Optional<BR>**Notes:** OneDrive for Business: supportability, telemetry, APIs, and embedded email links | No | `*.log.optimizely.com, ssw.live.com, storage.live.com` | **TCP:** 443
 33 | Default<BR>Optional<BR>**Notes:** SharePoint Hybrid Search - Endpoint to SearchContentService where the hybrid crawler feeds documents | No | `*.search.production.apac.trafficmanager.net, *.search.production.emea.trafficmanager.net, *.search.production.us.trafficmanager.net` | **TCP:** 443
 35 | Default<BR>Required | No | `*.wns.windows.com, admin.onedrive.com, officeclient.microsoft.com` | **TCP:** 443, 80
