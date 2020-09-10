@@ -3,7 +3,7 @@ title: "Connect to all Microsoft 365 services in a single PowerShell window"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/01/2020
+ms.date: 09/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
