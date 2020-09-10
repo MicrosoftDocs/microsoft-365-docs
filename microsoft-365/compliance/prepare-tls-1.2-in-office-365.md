@@ -29,6 +29,10 @@ For information about how to remove TLS 1.0 and 1.1 dependencies, see the follo
 
 We have already begun deprecation of TLS 1.0 and 1.1 as of January 2020. Any clients, devices, or services that connect to Office 365 through TLS 1.0 or 1.1 in our DoD or GCC High instances are unsupported. For our commercial customers of Office 365, deprecation of TLS 1.0 and 1.1 will begin October 15, 2020.
 
+By October 15, 2020, all combinations of client servers and browser servers should use TLS version 1.2 (or a later version) to make sure that all connections can be made without issues to Office 365 services. This may require updates to certain combinations of client servers and browser servers.
+
+If you do not update to TLS version 1.2 (or a later version) by  October 15, 2020, you will experience issues when you try to connect to Office 365. Additionally, you will be required to update to TLS 1.2 (or a later version) as part of the resolution.
+
 We recommend that all client-server and browser-server combinations use TLS 1.2 (or a later version) in order to maintain connection to Office 365 services. You might have to update certain client-server and browser-server combinations.
 
 The following clients are known to be unable to use TLS 1.2. Update these clients to ensure uninterrupted access to the service.
