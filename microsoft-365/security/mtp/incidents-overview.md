@@ -30,7 +30,7 @@ search.appverid:
 
 Incidents are based on related alerts. Alerts are created when a malicious event or activity is seen on your network. Individual alerts provide valuable clues about an on-going attack. However, attacks typically employ various vectors and techniques to carry out a breach. Piecing individual clues together can be challenging and time-consuming.
 
-> [!VIDEO https://www.youtube.com/watch?v=Vfuf7KXXo5E]
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzwz?]
 
 An incident is a collection of correlated alerts that make up the story of an attack. Malicious and suspicious events that are found in different device, user, and mailbox entities in the network are automatically aggregated by Microsoft Threat Protection. Grouping related alerts into an incident gives security defenders a comprehensive view of an attack. 
 
