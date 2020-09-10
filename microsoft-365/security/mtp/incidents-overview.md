@@ -32,7 +32,7 @@ Incidents are based on related alerts. Alerts are created when a malicious event
 
 This short video gives an overview of incidents in Microsoft Threat Protection.
 <br>
-<br>
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
 An incident is a collection of correlated alerts that make up the story of an attack. Malicious and suspicious events that are found in different device, user, and mailbox entities in the network are automatically aggregated by Microsoft Threat Protection. Grouping related alerts into an incident gives security defenders a comprehensive view of an attack. 
