@@ -72,7 +72,7 @@ You can use both retention policies and retention labels to assign your retentio
 
 Use a retention policy to assign the same retention settings for content at a site or mailbox level, and use a retention label to assign retention settings at an item level (folder, document, email).
 
-For example, if all documents in a SharePoint site should be retained for five years, it's more efficient to do this with a retention policy than apply the same retention label to all documents in that site. However, if some documents in that site should be retained for five years and others retained for ten years, a retention policy wouldn't be able to do this. When you need to specify retention settings at the item level, use retention labels. 
+For example, if all documents in a SharePoint site should be retained for 5 years, it's more efficient to do this with a retention policy than apply the same retention label to all documents in that site. However, if some documents in that site should be retained for 5 years and others retained for 10 years, a retention policy wouldn't be able to do this. When you need to specify retention settings at the item level, use retention labels. 
 
 Unlike retention policies, retention settings from retention labels persist with the content if it’s copied or moved to a different Microsoft 365 location. In addition, retention labels have the following capabilities that retention policies don't support: 
  

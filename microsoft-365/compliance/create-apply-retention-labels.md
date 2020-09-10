@@ -105,7 +105,7 @@ For example:
 
 ### How to check on the status of retention labels published to Exchange
 
-In Exchange Online, retention labels are made available to end users by a process that runs every seven days. By using Powershell, you can see when this process last ran and therefore identify when it will run again.
+In Exchange Online, retention labels are made available to end users by a process that runs every seven days. By using PowerShell, you can see when this process last ran and therefore identify when it will run again.
   
 1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773).
     
