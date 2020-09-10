@@ -39,7 +39,7 @@ You can use Basic Mobility and Security to create device policies that help prot
 
 ## Step 1: Create a device policy and deploy to a test group
 
-Before you can start, make sure you have activated and set up Basic Mobility and Security. For instructions, see [Overview of Basic Mobility and Security](overview-of-basic-mobility-and-security-for-microsoft-365.md).
+Before you can start, make sure you have activated and set up Basic Mobility and Security. For instructions, see [Overview of Basic Mobility and Security](overview.md).
 
 1. From your browser, type [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
 
