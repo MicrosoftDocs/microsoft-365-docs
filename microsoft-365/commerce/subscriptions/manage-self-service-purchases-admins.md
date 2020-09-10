@@ -82,7 +82,7 @@ You can take over a self-service purchase subscription made by a user in your or
 
 When you move users to a different subscription, the old subscription is automatically canceled. The user who originally bought the self-service purchase subscription receives an email that says the subscription was canceled.
 
-> [NOTE]
+> [!NOTE]
 > You must have an available license for each user you’re moving in the subscription that you’re moving users to.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
