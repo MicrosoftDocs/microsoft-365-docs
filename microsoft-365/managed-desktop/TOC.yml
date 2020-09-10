@@ -28,8 +28,12 @@
           href: service-description/device-services.md
         - name: Device configuration
           href: service-description/device-policies.md
-        - name: Security
+        - name: Security technologies
           href: service-description/security.md
+        - name: Security operations
+          href: service-description/security-operations.md
+        - name: Privacy
+          href: service-description/privacy-personal-data.md
         - name: Updates
           href: service-description/updates.md
         - name: Support
@@ -100,14 +104,14 @@
               href: get-started/project-visio.md
             - name: New Microsoft Edge
               href: get-started/edge-browser-app.md
+            - name: Microsoft 365 Apps for Enterprise
+              href: get-started/m365-apps.md
     - name: Working with Microsoft Managed Desktop
       href: working-with-managed-desktop/index.md
       items: 
         - name: Work with reports
           href: working-with-managed-desktop/reports.md
           items:
-            - name: Device compliance report
-              href: working-with-managed-desktop/device-compliance-report.md
             - name: Device inventory report
               href: working-with-managed-desktop/device-inventory-report.md
         - name: Work with insights
@@ -123,7 +127,7 @@
               href: working-with-managed-desktop/security-update-insights.md
         - name: Admin support
           href: working-with-managed-desktop/admin-support.md
-        - name: End user support
+        - name: User support
           href: working-with-managed-desktop/end-user-support.md
         - name: Manage apps
           href: working-with-managed-desktop/manage-apps.md

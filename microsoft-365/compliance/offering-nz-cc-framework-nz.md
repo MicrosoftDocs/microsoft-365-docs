@@ -3,7 +3,7 @@ title: New Zealand Government Cloud Computing Security and Privacy Consideration
 description: Microsoft NZ addresses the questions published in the New Zealand cloud computing framework.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -39,7 +39,7 @@ Learn how to accelerate your NZ CC Framework deployment with our Azure Security 
 - Intune
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Exchange Online, SharePoint Online, and Skype for Business Online. Microsoft NZ has worked with the GCIO team to develop a reference architecture for integrating Exchange Online and SEEMail described in the white paper [Office 365: SEEMail Integration and Reference Architecture](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)
+- Exchange Online, SharePoint Online, and Microsoft Teams. Microsoft NZ has worked with the GCIO team to develop a reference architecture for integrating Exchange Online and SEEMail.
 
 ## Frequently asked questions
 
