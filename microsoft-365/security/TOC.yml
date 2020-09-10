@@ -237,7 +237,6 @@
                 - name: ServiceNow tickets in the security center
                   href: ./mtp/tickets-security-center.md
     - name: Office 365 security
-      expanded: true
       items: 
         - name: OldStructure
           items: 
@@ -256,7 +255,7 @@
                     - name: Role Administrator setup tasks
                 - name: Automated investigation and response
                 - name: Integration for greater security
-                - name: How ATP works              
+                - name: How ATP works
         - name: Overview
           items: 
             - name: Security roadmap
@@ -291,13 +290,10 @@
               href: ./office-365-security/security-dashboard.md
             - name: What's new in Office 365 ATP
               href: office-365-security/whats-new-in-office-365-atp.md
-            - name: AIR overview
-              href: ./office-365-security/office-365-air.md
+            - name: How automated investigation and response works
+              href: ./office-365-security/automated-investigation-response-office.md
             - name: Threat Explorer (and real-time detections)
               href: ./office-365-security/threat-explorer.md
-              items: 
-                - name: Threat Explorer views
-                  href: ./office-365-security/threat-explorer-views.md
             - name: How threat investigation and response works
               href: ./office-365-security/office-365-ti.md
             - name: View email security reports in the Security & Compliance Center
@@ -324,12 +320,14 @@
               href: ./office-365-security/auditing-reports-in-eop.md
             - name: Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
               href: ./office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
+            - name: ATP for SharePoint, OneDrive, and Microsoft Teams
+              href: ./office-365-security/atp-for-spo-odb-and-teams.md
         - name: Evaluate
         - name: Plan
         - name: Deploy
           items: 
             - name: Give users access to the Security center
-              href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md 
+              href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
             - name: Configure ATP anti-phishing policies
               href: ./office-365-security/configure-atp-anti-phishing-policies.md
             - name: Configure anti-malware policies
@@ -409,9 +407,16 @@
                   href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
                 - name: Manage role groups in standalone EOP
                   href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
+            - name: AIR overview
+              href: ./office-365-security/office-365-air.md
         - name: Migrate
+          items: 
+            - name: Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
+              href: ./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
         - name: Prevent
           items: 
+            - name: Preset security policies
+              href: ./office-365-security/preset-security-policies.md
             - name: Configuration analyzer for preset security policies
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
             - name: Use mail flow rules to set the SCL in messages
@@ -428,6 +433,14 @@
               href: ./office-365-security/use-transport-rules-to-configure-bulk-email-filtering.md
             - name: Use mail flow rules to block messages with executable attachments in EOP
               href: ./office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
+            - name: Advanced Spam Filter (ASF) settings
+              href: ./office-365-security/advanced-spam-filtering-asf-options.md
+            - name: Recommended settings for configuring EOP and Office 365 ATP Security
+              href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
+            - name: Integrate AIR with a custom solution or third-party solution
+              href: ./office-365-security/air-custom-reporting.md
+            - name: Best practices for configuring EOP
+              href: ./office-365-security/best-practices-for-configuring-eop.md
         - name: Detect
           items: 
             - name: Install and use the Junk Email Reporting add-in
@@ -438,6 +451,12 @@
               href: ./office-365-security/enable-the-report-message-add-in.md
             - name: Zero-hour auto purge - protection against spam and malware
               href: ./office-365-security/zero-hour-auto-purge.md
+            - name: Run an administrator role group report in standalone EOP
+              href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
+            - name: Mail flow rules (transport rules) in standalone EOP
+              href: ./office-365-security/mail-flow-rules-transport-rules-0.md
+            - name: SIEM server integration
+              href: ./office-365-security/siem-server-integration.md
         - name: Investigate
           items: 
             - name: Use Admin Submission
@@ -482,6 +501,12 @@
               href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
             - name: Reporting and message trace in standalone EOP
               href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
+            - name: Remediation actions
+              href: ./office-365-security/air-remediation-actions.md
+            - name: Threat Explorer views
+              href: ./office-365-security/threat-explorer-views.md
+            - name: View the admin audit log in standalone EOP
+              href: ./office-365-security/view-the-admin-audit-log-eop.md
         - name: Respond
           items: 
             - name: Recover from a ransomware attack
@@ -503,13 +528,13 @@
             - name: Remediate malicious email
               href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
             - name: Detect and address compromised user accounts quickly
-              href: ./office-365-security/address-compromised-users-quickly.md   
+              href: ./office-365-security/address-compromised-users-quickly.md
             - name: Responding to a Compromised Email Account in Office 365
               href: ./office-365-security/responding-to-a-compromised-email-account.md
             - name: Fix possible mail loop insight
               href: ./office-365-security/mfi-mail-loop-insight.md
             - name: Fix slow mail flow rules insight
-              href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md 
+              href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
             - name: Detect and Remediate Illicit Consent Grants in Office 365
               href: ./office-365-security/detect-and-remediate-illicit-consent-grants.md
         - name: FAQ
@@ -536,12 +561,8 @@
               href: ./office-365-security/spam-confidence-levels.md
             - name: Bulk complaint level (SCL)
               href: ./office-365-security/bulk-complaint-level-values.md
-            - name: Advanced Spam Filter (ASF) settings
-              href: ./office-365-security/advanced-spam-filtering-asf-options.md
             - name: Outbound delivery pools
               href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
-            - name: Preset security policies
-              href: ./office-365-security/preset-security-policies.md
             - name: Anti-spam message headers
               href: ./office-365-security/anti-spam-message-headers.md
             - name: How policies and protections are combined
@@ -562,20 +583,12 @@
               href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md
             - name: Support for validation of DKIM signed messages
               href: ./office-365-security/support-for-validation-of-dkim-signed-messages.md
-            - name: Remediation actions
-              href: ./office-365-security/air-remediation-actions.md
-            - name: Integrate AIR with a custom solution or third-party solution
-              href: ./office-365-security/air-custom-reporting.md
             - name: What ATP Safe Links warning pages mean
               href: ./office-365-security/atp-safe-links-warning-pages.md
-            - name: How automated investigation and response works
-              href: ./office-365-security/automated-investigation-response-office.md
             - name: How ATP Safe Attachments works
               href: ./office-365-security/how-atp-safe-attachments-works.md
             - name: Dynamic Delivery and previewing details
               href: ./office-365-security/dynamic-delivery-and-previewing.md
-            - name: ATP for SharePoint, OneDrive, and Microsoft Teams
-              href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: How ATP Safe Links works
               href: ./office-365-security/how-atp-safe-links-works.md
             - name: "Reference:Policies, practices, and guidelines"
@@ -584,30 +597,16 @@
               href: ./office-365-security/sending-mail-to-office-365.md
             - name: Services for non-customers
               href: ./office-365-security/services-for-non-customers.md
-            - name: Run an administrator role group report in standalone EOP
-              href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
-            - name: View the admin audit log in standalone EOP
-              href: ./office-365-security/view-the-admin-audit-log-eop.md
-            - name: Best practices for configuring EOP
-              href: ./office-365-security/best-practices-for-configuring-eop.md
-            - name: Recommended settings for configuring EOP and Office 365 ATP Security
-              href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: Sample script for applying EOP settings to multiple tenants
               href: ./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md
-            - name: Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
-              href: ./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
             - name: Backscatter in EOP
               href: ./office-365-security/backscatter-messages-and-eop.md
-            - name: Mail flow rules (transport rules) in standalone EOP
-              href: ./office-365-security/mail-flow-rules-transport-rules-0.md
             - name: Mail flow intelligence in EOP
               href: ./office-365-security/mail-flow-intelligence-in-office-365.md
             - name: Troubleshooting mail sent to Microsoft 365
               href: ./office-365-security/troubleshooting-mail-sent-to-office-365.md
             - name: Help and support for EOP
               href: ./office-365-security/help-and-support-for-eop.md
-            - name: SIEM server integration
-              href: ./office-365-security/siem-server-integration.md
         - name: Employee training resources
     - name: Microsoft 365 for Enterprise
       href: https://docs.microsoft.com/microsoft-365/enterprise
