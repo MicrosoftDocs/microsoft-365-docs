@@ -71,6 +71,10 @@ Yes, if your organization meets the eligibility requirements for Azure Governmen
 
 No. The only environments where FTI can be stored and processed are Azure Government or Office 365 U.S. Government. Government customers must meet the eligibility requirements to use these environments.
 
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
+
 ## Resources
 
 - [IRS Publication 1075](https://www.irs.gov/pub/irs-pdf/p1075.pdf)

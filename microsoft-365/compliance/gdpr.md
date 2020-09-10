@@ -52,6 +52,10 @@ The following tasks are involved to meet GDPR standards. Follow the links in the
 
 As mentioned above, the Recommended action plan for GDPR and Accountability Readiness Checklists provide a guide to implementing or assessing GDPR conformance using Microsoft products and services.
 
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager has a pre-built assessment for this regulation for Enterprise E5 customers. Find the template for building the assessment in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
+
 ## Data Subject Request (DSR)
 
 The GDPR grants individuals (or data subjects) certain rights in connection with the processing of their personal data, including the right to correct inaccurate data, erase data or restrict its processing, receive their data and fulfill a request to transmit their data to another controller. The controller is responsible for providing a timely, GDPR consistent reply. For technical details, refer to [Data Subject Requests](gdpr-data-subject-requests.md).  

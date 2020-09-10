@@ -97,9 +97,9 @@ To assist customers with this task, Microsoft has published these guides:
 - [Practical guide to designing secure health solutions using Microsoft Azure](https://aka.ms/azureindustrysecurity) helps you better understand what it takes to successfully adopt a cloud service in a secure manner.
 - [Addressing HIPAA security and privacy requirements in the Microsoft Cloud](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) offers a brief overview of regulation requirements. It also provides a detailed analysis of how Microsoft's cloud services were built with methodologies that map to those requirements, and guidance on how to build compliance-ready solutions.
 
-## Use Microsoft Compliance Score to assess your risk
+## Use Microsoft Compliance Manager to assess your risk
 
-[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [HIPAA Office 365 template](https://go.microsoft.com/fwlink/?linkid=2118005) and the [HIPAA Intune template](https://go.microsoft.com/fwlink/?linkid=2118006) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

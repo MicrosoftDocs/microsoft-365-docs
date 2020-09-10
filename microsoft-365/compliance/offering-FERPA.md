@@ -63,6 +63,10 @@ This US federal law mandates the protection of the privacy of students’ educat
 - [Federal Register: FERPA Final Rule](https://aka.ms/ferpa-reg) (December 2011)
 - [FERPA general guidance for parents](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
 
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
+
 ## Resources
 
 - [Family Educational Rights and Privacy Act](https://www.ed.gov/policy/gen/guid/fpco/ferpa/index.html)

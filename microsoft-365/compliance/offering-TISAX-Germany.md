@@ -64,9 +64,13 @@ Use case overviews, solution guides, tutorials, and other resources to help buil
 
 ## Frequently asked questions
 
-**Why I can’t see a copy of the Microsoft TISAX certification?**
+**Why I can't see a copy of the Microsoft TISAX certification?**
 
 ENX provides certification confirmation only to registered industry representatives through the ENX portal. For details about how to proceed, see the “Audits, reports, and certificates” section above.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

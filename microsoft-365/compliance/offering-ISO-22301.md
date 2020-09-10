@@ -66,6 +66,10 @@ The [Service Trust Portal](https://aka.ms/stphelp) provides independently audite
 
 Yes. If your business requires ISO 22301 certification for implementations deployed on Microsoft services, you can use the Azure and Office 365 certifications in your compliance assessment. You are responsible, however, for engaging an assessor to evaluate the controls, processes, and implementation for ISO 22301 compliance within your own organization and for your own applications.
 
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
+
 ## Resources
 
 - [ISO 22301:2012 standard](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=50038) (for purchase)

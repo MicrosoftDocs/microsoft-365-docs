@@ -66,6 +66,10 @@ Create a governance model for risk assessment of Microsoft cloud services, and r
 
 Use case overviews, tutorials, and other resources to build Azure solutions for financial services. [Learn more](https://docs.microsoft.com/azure/industry/financial/)
 
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
+
 ## Resources
 
 - [Archiving in Microsoft Office 365, Data Retention, and Rule 17a-4](https://www.microsoft.com/microsoft-365/blog/2015/11/10/office-365-exchange-online-archiving-now-meets-sec-rule-17a-4-requirements/)

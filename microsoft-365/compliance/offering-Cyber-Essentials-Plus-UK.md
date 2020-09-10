@@ -42,6 +42,10 @@ The [Azure Cyber Essentials PLUS certification](https://aka.ms/AzureCyberEPlusCe
 - [Azure Cyber Essentials PLUS compliance report](https://aka.ms/AzureCyberEPlusReport)
 - [Azure Cyber Essentials PLUS certification](https://aka.ms/AzureCyberEPlusCert)
 
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
+
 ## Resources
 
 - [Cyber Essentials Scheme: Assurance framework](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
