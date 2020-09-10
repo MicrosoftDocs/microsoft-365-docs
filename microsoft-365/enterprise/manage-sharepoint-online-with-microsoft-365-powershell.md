@@ -30,11 +30,11 @@ SharePoint administrators have to manage sites, site groups, and users. Although
 
 - [Get started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   
-- [Create SharePoint sites and add users with PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
+- [Create SharePoint online sites and add users with PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
     
-- [Manage SharePoint users and groups with PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
+- [Manage SharePoint online users and groups with PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
     
-- [Manage SharePoint site groups with PowerShell](manage-sharepoint-site-groups-with-powershell.md)
+- [Manage SharePoint online site groups with PowerShell](manage-sharepoint-site-groups-with-powershell.md)
     
 ## See also
 
