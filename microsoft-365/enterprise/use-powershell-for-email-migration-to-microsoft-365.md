@@ -1,5 +1,5 @@
 ---
-title: "Use PowerShell for email migration to Microsoft 365"
+title: "Use PowerShell to migrate email to Microsoft 365"
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -15,14 +15,14 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
-description: In this article, learn how to migrate email from your existing system to Microsoft 365 using PowerShell.
+description: Learn how to migrate email from your existing system to Microsoft 365 by using PowerShell.
 ---
 
-# Use PowerShell for email migration to Microsoft 365
+# How to use PowerShell to migrate email to Microsoft 365
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Administrators often migrate email from existing systems when they first set up Microsoft 365. The following articles describe how to use Windows PowerShell to migrate email:
+Administrators often migrate email from existing systems when they first set up Microsoft 365. The following articles describe how to migrate email by using Windows PowerShell:
   
 - [Use PowerShell to perform a cutover migration to Microsoft 365](use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md)
     

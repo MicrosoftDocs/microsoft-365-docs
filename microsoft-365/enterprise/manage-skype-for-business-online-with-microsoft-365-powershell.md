@@ -13,14 +13,14 @@ f1.keywords:
 - NOCSH
 ms.custom: 
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
-description: "Summary: Use PowerShell for Microsoft 365 to manage Skype for Business Online policies, per-user policies, and meeting settings."
+description: "Use PowerShell for Microsoft 365 to manage Skype for Business Online policies, per-user policies, and meeting settings."
 ---
 
 # Manage Skype for Business Online with PowerShell
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Skype for Business Online administrators is responsible for managing policies. Although you can do some of these tasks in the Microsoft 365 admin center, others are easier to do in PowerShell. 
+Skype for Business Online administrators are responsible for managing policies. Although you can do some of these tasks in the Microsoft 365 admin center, others are easier to do in PowerShell.
 
 ## Before you start
 
@@ -38,7 +38,7 @@ Download and install the [Skype for Business Online Connector module](https://ww
    Import-PSSession $sfbSession
    ```
 
-2. In the **Windows PowerShell Credential Request** dialog box, type your Skype for Business Online administrator account name and password, and then select **OK**.
+2. In the **Windows PowerShell Credential Request** dialog box, type your Skype for Business Online administrator account name and password and select **OK**.
 
 
 ## Connect using an admin account with multi-factor authentication
@@ -53,11 +53,11 @@ Download and install the [Skype for Business Online Connector module](https://ww
 
 2. When prompted by the **New-CsOnlineSession** command, enter your Skype for Business Online administrator account name.
 
-3. In the **Sign in to your account** dialog box, type your Skype for Business Online administrator password, and then select **Sign in**.
+3. In the **Sign in to your account** dialog box, type your Skype for Business Online administrator password and select **Sign in**.
 
 4. In the **Sign in to your account** dialog box, follow the instructions to add authentication information, such as a verification code, and then select **Verify**.
 
-For more information, see the following articles:
+For more information, see:
   
 - [Manage Skype for Business Online policies with PowerShell](manage-skype-for-business-online-policies-with-microsoft-365-powershell.md)
     
