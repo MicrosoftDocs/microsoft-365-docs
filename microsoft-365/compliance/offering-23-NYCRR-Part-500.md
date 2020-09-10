@@ -3,7 +3,7 @@ title: Title 23 NYCRR Part 500
 description: Microsoft has prepared a guide to explain how Azure, Office 365, and Power BI can help financial institutions comply with 23 NYCRR 500 requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
