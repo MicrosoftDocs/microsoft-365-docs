@@ -75,8 +75,8 @@ You can assign existing licenses or purchase additional subscriptions through ex
 
 You can take over a self-service purchase subscription made by a user in your organization. When you take over a self-service purchase subscription, you have two options:
 
-1. Move the users to a different subscription
-2. Cancel the self-service purchase subscription
+1. Move the users to a different subscription and cancel the original subscription.
+2. Cancel the self-service purchase subscription and remove licenses from assigned users.
 
 ### Move users to a different subscription
 
