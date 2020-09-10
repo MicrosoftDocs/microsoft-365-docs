@@ -29,7 +29,7 @@ You can use Basic Mobility and Security to create device policies that help prot
 >[!IMPORTANT]
 >Before you can create a mobile device policy, you must activate and set up Basic Mobility and Security. For more info, see Overview of Basic Mobility and Security.
 
-- Learn about the devices, mobile device apps, and security settings that Basic Mobility and Security supports. See [Capabilities of Basic Mobility and Security](capabilities-of-basic-mobility-and-secruity.md).
+- Learn about the devices, mobile device apps, and security settings that Basic Mobility and Security supports. See [Capabilities of Basic Mobility and Security](capabilities.md).
 - Create security groups that include Microsoft 365 users that you want to deploy policies to and for users that you might want to exclude from being blocked access to Microsoft 365. We recommend that before you deploy a new policy to your organization, you test the policy by deploying it to a small number of users. You can create and use a security group that includes just yourself or a small number Microsoft 365 users that can test the policy for you. To learn more about security groups, see [Create, edit, or delete a security group](https://go.microsoft.com/fwlink/p/?LinkId=518555).
 - To create and deploy Basic Mobility and Security policies in Microsoft 365, you need to be a Microsoft 365 global admin. For more info, see [Permissions in the Security & Compliance Center](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1).
 - Before you deploy policies, let your organization know the potential impacts of enrolling a device in Basic Mobility and Security. Depending on how you set up the policies, noncompliant devices can be blocked from accessing Microsoft 365 and data, including installed applications, photos, and personal information on an enrolled device, and data can be deleted.
@@ -55,7 +55,7 @@ Before you can start, make sure you have activated and set up Basic Mobility and
 
 6. Select **Create this policy**.
 
-The policy is pushed to the device of each user the policy applies to the next time they sign in to Microsoft 365 using their mobile device. If users haven't had a policy applied to their mobile device before, after you deploy the policy, they get a notification on their device that includes the steps to enroll and activate Basic Mobility and Security. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device-using-basic-mobility-and-security.md). Until they complete enrollment in Basic Mobility and Security hosted by the Intune Service, access to email, OneDrive, and other services is restricted. After they complete enrollment by using the Intune Company Portal app, they can use the services and the policy is applied to their device.
+The policy is pushed to the device of each user the policy applies to the next time they sign in to Microsoft 365 using their mobile device. If users haven't had a policy applied to their mobile device before, after you deploy the policy, they get a notification on their device that includes the steps to enroll and activate Basic Mobility and Security. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md). Until they complete enrollment in Basic Mobility and Security hosted by the Intune Service, access to email, OneDrive, and other services is restricted. After they complete enrollment by using the Intune Company Portal app, they can use the services and the policy is applied to their device.
 
 ## Step 2: Verify that your policy works
 
@@ -76,7 +76,7 @@ After you’ve created a device policy and verified that it works as expected, d
 4. Select **Close** and **Change setting.**
 5. Select **Close** and **Edit policy.**
 
-The policy is pushed to the mobile device of each user the policy applies to the next time they sign in to Microsoft 365 from their mobile device. If users haven't had a policy applied to their mobile device, they get a notification on their device with steps to enroll and activate it for Basic Mobility and Security. After they’ve completed the enrollment, the policy is applied to their device. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device-using-basic-mobility-and-security.md).
+The policy is pushed to the mobile device of each user the policy applies to the next time they sign in to Microsoft 365 from their mobile device. If users haven't had a policy applied to their mobile device, they get a notification on their device with steps to enroll and activate it for Basic Mobility and Security. After they’ve completed the enrollment, the policy is applied to their device. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md).
 
 ## Step 4: Block email access for unsupported devices
 
@@ -144,6 +144,6 @@ You can also wipe a device either completely, or selectively wipe organizational
 
 ## Related topics
 
-[Overview of Basic Mobility and Security](overview-of-basic-mobility-and-security-for-microsoft-365.md)
+[Overview of Basic Mobility and Security](overview.md)
 
-[Capabilities of Basic Mobility and Security](capabilities-of-basic-mobility-and-secruity.md)
+[Capabilities of Basic Mobility and Security](capabilities.md)
