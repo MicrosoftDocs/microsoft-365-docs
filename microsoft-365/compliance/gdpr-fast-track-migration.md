@@ -4,7 +4,7 @@ description: Microsoft technical guidance — FASTTRACK MIGRATIONS TOOLSET FOR S
 keywords: FastTrack Migration, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 localization_priority: Priority
 Robots:  NOFOLLOW,NOINDEX
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
