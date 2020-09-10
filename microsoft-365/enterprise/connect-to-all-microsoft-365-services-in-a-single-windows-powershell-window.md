@@ -34,7 +34,7 @@ This is not optimal for managing Microsoft 365 because you can't exchange data a
 
 Before you can manage all of Microsoft 365 from a single instance of PowerShell, consider the following prerequisites:
   
-- The Microsoft 365 work or school account that you use for these procedures needs to be a member of a Microsoft 365 admin role. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide). This a requirement for PowerShell for Microsoft 365, not necessarily for all other Microsoft 365 services.
+- The Microsoft 365 work or school account that you use for these procedures needs to be a member of a Microsoft 365 admin role. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles). This a requirement for PowerShell for Microsoft 365, not necessarily for all other Microsoft 365 services.
     
 - You can use the following 64-bit versions of Windows:
     
@@ -61,7 +61,7 @@ Before you can manage all of Microsoft 365 from a single instance of PowerShell,
    - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Skype for Business Online, PowerShell Module](https://go.microsoft.com/fwlink/p/?LinkId=532439)
-   - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exchange-online-powershell-v2-module)
+   - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
    - [Teams PowerShell Overview](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
 -  PowerShell needs to be configured to run signed scripts for Skype for Business Online and the Security &amp; Compliance Center. To do this, run the following command in an elevated PowerShell session (a PowerShell window you open by selecting **Run as administrator**).
@@ -147,7 +147,7 @@ Here are the steps to connect to all the services in a single PowerShell window 
    ```
   
    > [!Note]
-   > To connect to Microsoft Teams clouds other than Worldwide, see [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams?view=teams-ps).
+   > To connect to Microsoft Teams clouds other than Worldwide, see [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
 
 
 ### Azure Active Directory PowerShell for Graph module
