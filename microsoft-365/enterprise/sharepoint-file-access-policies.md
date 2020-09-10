@@ -73,7 +73,7 @@ It's important to understand that SharePoint site permissions are typically base
 
 The following illustration provides an example of how SharePoint device access policies protect access to sites.
 
-[ ![How SharePoint device access policies protect sites](../media/SharePoint-rules-scenario.png) ](../media/SharePoint-rules-scenario.png#lightbox)
+[![How SharePoint device access policies protect sites](../media/SharePoint-rules-scenario.png)](../media/SharePoint-rules-scenario.png#lightbox)
 
 In the illustration:
 
@@ -84,7 +84,7 @@ In the illustration:
 
 ## Next step
 
-![Step 4: Policies for Microsoft 365 cloud apps(../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Step 4: Policies for Microsoft 365 cloud apps](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configure Conditional Access policies for:
 

@@ -64,7 +64,7 @@ For more information, see [Set up new Office 365 Message Encryption capabilities
 
 ## Next steps
 
-![Step 4: Policies for Microsoft 365 cloud apps(../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Step 4: Policies for Microsoft 365 cloud apps](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configure Conditional Access policies for:
 

@@ -21,7 +21,7 @@ ms.collection:
 
 # Policy recommendations for securing Teams chats, groups, and files
 
-This article describes how to implement the recommended identity and device-access policies to protect Teams chats, groups, and content such as files and calendars. This guidance builds on the [Common identity and device access policies](identity-access-policies.md), with additional information that's Teams-specific. Because Teams integrates with our other products, also see [Policy recommendations for securing SharePoint sites and files](sharepoint-file-access-policies.md) and [Policy recommendations for securing email](secure-email-recommended-policies.md).
+This article describes how to implement the recommended identity and device-access policies to protect Microsoft Teams chats, groups, and content such as files and calendars. This guidance builds on the [common identity and device access policies](identity-access-policies.md), with additional information that's Teams-specific. Because Teams integrates with our other products, also see [Policy recommendations for securing SharePoint sites and files](sharepoint-file-access-policies.md) and [Policy recommendations for securing email](secure-email-recommended-policies.md).
 
 These recommendations are based on three different tiers of security and protection for Teams that can be applied based on the granularity of your needs: baseline, sensitive, and highly regulated. You can learn more about these security tiers and the recommended policies referenced by these recommendations in the [Identity and device access configurations](microsoft-365-policies-configurations.md).
 
@@ -34,7 +34,7 @@ You don't need to enable dependent services to get started with Microsoft Teams.
 - Microsoft 365 groups
 - SharePoint team sites
 - OneDrive for Business
-- Mailboxes
+- Exchange mailboxes
 - Stream videos and Planner plans (if these services are enabled)
 
 ## Updating common policies to include Teams
@@ -116,6 +116,10 @@ For more reading about App Permission Policies, check out [Manage app permission
 
 ## Next steps
 
-[Learn how to enable conditional access for Exchange Online](secure-email-recommended-policies.md)
+![Step 4: Policies for Microsoft 365 cloud apps](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
+Configure Conditional Access policies for:
+
+- [Exchange Online](secure-email-recommended-policies.md)
+- [SharePoint Online](secure-email-recommended-policies.md)
 
