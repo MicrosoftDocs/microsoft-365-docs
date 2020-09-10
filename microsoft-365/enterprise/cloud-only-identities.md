@@ -50,7 +50,7 @@ You can use groups in Azure AD for several purposes that simplify management of 
 
 - Use group-based licensing to assign licenses for Microsoft 365 to your user accounts automatically as soon as they are added as members.
 - Add user accounts to specific groups dynamically based on user account attributes, such as department name.
-- Automatically provision users for Software as a Service (SaaS) applications and to protect access to those applications with multi-factor authentication (MFA) and other Conditional Access rules.
+- Automatically provision users for Software as a Service (SaaS) applications and to protect access to those applications with multi-factor authentication (MFA) and other Conditional Access policies.
 - Provision permissions and levels of access for SharePoint Online team sites.
 
 You create new ***users*** with:

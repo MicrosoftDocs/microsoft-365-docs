@@ -52,7 +52,7 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 
 ## Block ActiveSync clients
 
-This policy prevents ActiveSync clients from bypassing other conditional access rules. The rule configuration applies only to ActiveSync clients. By selecting **[Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)**, this policy blocks ActiveSync clients. Details on creating this policy can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+This policy prevents ActiveSync clients from bypassing other Conditional Access policies. The rule configuration applies only to ActiveSync clients. By selecting **[Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)**, this policy blocks ActiveSync clients. Details on creating this policy can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
 1. Follow "Step 2: Configure an Azure AD Conditional Access policy for Exchange Online with ActiveSync (EAS)" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
 
@@ -64,4 +64,9 @@ For more information, see [Set up new Office 365 Message Encryption capabilities
 
 ## Next steps
 
-[Learn about policy recommendations for securing SharePoint Sites and files](sharepoint-file-access-policies.md)
+![Step 4: Policies for Microsoft 365 cloud apps(../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+
+Configure Conditional Access policies for:
+
+- [Microsoft Teams](teams-access-policies.md)
+- [SharePoint Online](secure-email-recommended-policies.md)

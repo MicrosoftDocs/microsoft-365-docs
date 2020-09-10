@@ -82,3 +82,12 @@ In the illustration:
 - If James accesses a sensitive site he is a member of using his unmanaged phone, which is allowed for baseline users, he will receive browser-only access to the sensitive site due to the device access policy configured for this site.
 - If James accesses a highly regulated site he is a member of using his unmanaged phone, he will be blocked due to the access policy configured for this site. He can only access this site using his managed and compliant PC.
 
+## Next step
+
+![Step 4: Policies for Microsoft 365 cloud apps(../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+
+Configure Conditional Access policies for:
+
+- [Microsoft Teams](teams-access-policies.md)
+- [Exchange Online](secure-email-recommended-policies.md)
+
