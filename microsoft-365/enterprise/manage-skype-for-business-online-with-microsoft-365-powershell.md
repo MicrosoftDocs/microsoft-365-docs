@@ -27,7 +27,7 @@ Skype for Business Online administrators are responsible for managing policies. 
 Download and install the [Skype for Business Online Connector module](https://www.microsoft.com/download/details.aspx?id=39366), and then restart your computer.
 
 
-## Connect using Skype for Business Online administrator credentials
+## Connect using Skype for Business Online admin credentials
 
 1. Open a Windows PowerShell command prompt and run the following commands:
     
