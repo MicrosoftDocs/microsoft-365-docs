@@ -239,11 +239,11 @@
                       href: ./mtp/tickets.md
                     - name: ServiceNow tickets in the security center
                       href: ./mtp/tickets-security-center.md
-            - name: Microsoft Threat Protection APIs
+            - name: Microsoft Threat Protection APIs (Preview)
               items:
-                - name: Overview of Microsoft Threat Protection APIs
+                - name: Overview of Microsoft Threat Protection APIs (Preview)
                   href: mtp/api-overview.md
-                - name: Get started with Microsoft Threat Protection APIs
+                - name: Get started with Microsoft Threat Protection APIs (Preview)
                   items:
                     - name: Microsoft Threat Protection API license and terms of use
                       href: mtp/api-terms.md
@@ -259,11 +259,11 @@
                       href:  mtp/api-partner-access.md
                     - name: Other API resources
                       href: mtp/api-articles.md
-                - name: Microsoft Threat Protection APIs & schema
+                - name: Microsoft Threat Protection APIs & schema (Preview)
                   items:
                     - name: Supported Microsoft Threat Protection APIs 
                       href: mtp/api-supported.md
-                    - name: Common REST API error codes
+                    - name: Common REST API error codes 
                       href: mtp/api-error-codes.md
                     - name: Advanced Hunting API
                       href: mtp/api-advanced-hunting.md
