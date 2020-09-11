@@ -79,7 +79,7 @@ Actions are assigned a score value based on whether they're mandatory or discret
   
 - **Corrective actions** try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage if possible. Privacy incident response is a corrective action to limit damage and restore systems to an operational state after a breach.
   
-Each action has an assigned value in Compliance Manager based on the risk it represents:
+Each improvement action has an assigned value in Compliance Manager based on the risk it represents:
 
 |**Type**|**Assigned score**|
 |:-----|:-----|
@@ -90,4 +90,4 @@ Each action has an assigned value in Compliance Manager based on the risk it rep
 | Corrective mandatory | 3 |
 | Corrective discretionary | 1 |
   
-![Compliance score controls point values](../media/compliance-score-controls-scoring.png "Compliance score controls point values")
+![Compliance Manager action point values](../media/compliance-score-action-scoring.png "Compliance Manager action point values")
