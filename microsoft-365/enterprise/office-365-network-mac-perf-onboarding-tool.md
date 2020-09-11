@@ -3,7 +3,7 @@ title: "Microsoft 365 network connectivity test (preview)"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/21/2020
+ms.date: 09/14/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -44,7 +44,7 @@ The test report requires sign-in to your Office 365 account. Your administrator 
 
 All test reports while you are signed in are shared with your administrator.
 
-### Sharing with your Microsoft account team, support or other personel
+### Sharing with your Microsoft account team, support or other personnel
 
 Test reports excluding any personal identification are shared with Microsoft employees. This is enabled by default and can be disabled by your administrator in the Health -> Network Connectivity page in the Microsoft 365 Admin Center.
 
@@ -52,15 +52,15 @@ Test reports excluding any personal identification are shared with Microsoft emp
 
 You can choose users to share your report with and this is enabled by default. It can also be disabled by your administrator.
 
-### Sharing wuth a ReportID link to anyone
+### Sharing with anyone using a ReportID link
 
-You can share your test report with anyone by providing access to a ReportID link. This generates a URL that you can send to someone so that they can bring up the test reprot without signing in. This is disabled by default and must be enabled by your administrator.
+You can share your test report with anyone by providing access to a ReportID link. This generates a URL that you can send to someone so that they can bring up the test report without signing in. This is disabled by default and must be enabled by your administrator.
 
 ## Results displayed
 
 The results are shown in a Summary and Details tab. The summary tab shows a map of the detected network perimeter and a comparison of the network assessment to other Office 365 customers nearby. It also allows for sharing of the test report. Here's what the summary results view looks like.
 
-![O365 network connectivity test summaryresults](../media/m365-mac-perf/m365-mac-perf-onboarding-tool-summary.png)
+![O365 network connectivity test summary results](../media/m365-mac-perf/m365-mac-perf-onboarding-tool-summary.png)
 
 Here is an example of the details tab output that the tool shows. On the details tab we show a green circle check mark if the result was compared favorably to a threshold. We show a red triangle exclamation point if the result exceeded a threshold indicating a network insight. The following sections describe each of the details tab results rows and explains the thresholds used for network insights.
 
@@ -92,7 +92,7 @@ Implementing local and direct network egress from user office locations to the I
 
 We identify proxy server(s) configured on the local machine. We identify if any of these are configured in the network path for optimize category Microsoft 365 network traffic. We identify the distance from the user office location to the proxy servers. The distance is tested first by ICMP ping and if that fails we test with TCP ping and finally if that fails we look up the proxy server IP Address in an IP Address location database. We show a network insight if the proxy server is further than 500 miles (800 kilometers) away from the user office location.
 
-### Virtual private network (VPN) you use to connect to your ogranization
+### Virtual private network (VPN) you use to connect to your organization
 
 This detects if you are using a VPN to connect to Office 365. A passing result will show if you have no VPN, or if you have a VPN with recommended split tunnel configuration for Office 365.
 
@@ -102,7 +102,7 @@ Each optimize category route for Exchange Online, SharePoint Online, and Microso
 
 ### Customers in your metropolitan area with better performance
 
-The network TCP latency of the user office location to the Exchange Online service front door is compared to other Microsoft 365 customers in the same metro area. A network insight is shown if 10% or more of customers in the same metro area have better performance. This means their users will have better performance in the Office 365 user interface. 
+The network TCP latency of the user office location to the Exchange Online service front door is compared to other Microsoft 365 customers in the same metro area. A network insight is shown if 10% or more of customers in the same metro area have better performance. This means their users will have better performance in the Office 365 user interface.
 
 This network insight is generated on the basis that all users in a city have access to the same telecommunications infrastructure and the same proximity to Internet circuits and Microsoft's network.
 
@@ -150,11 +150,11 @@ The in-use SharePoint service front door is identified in the same way that the 
 
 ### Download speed
 
-We measure the download speed for a 15Mb file from the SharePoint service front door. The result is shown in megabytes per second to indicate what size file in megabytes can be downloaded from SharePoint or OneDrive in one second. The number should be similar to one tenth of the minimum citcuit bandwidth in megabits per second. For example if you have a 100mbps internet connection, you may expect 10 megabytes per second (10MBps). 
+We measure the download speed for a 15Mb file from the SharePoint service front door. The result is shown in megabytes per second to indicate what size file in megabytes can be downloaded from SharePoint or OneDrive in one second. The number should be similar to one tenth of the minimum circuit bandwidth in megabits per second. For example if you have a 100mbps internet connection, you may expect 10 megabytes per second (10MBps).
 
 ### Buffer bloat
 
-During the 15Mb download we measure the TCP latency to the SharePoint service front door. This is the latency under load and it is compared to the latency when not under load. The increase in latency when under load is often attributable to consumer network device buffers being loaded (or bloated). A network insight is shown for any bloat of 1,000 or more. 
+During the 15Mb download we measure the TCP latency to the SharePoint service front door. This is the latency under load and it is compared to the latency when not under load. The increase in latency when under load is often attributable to consumer network device buffers being loaded (or bloated). A network insight is shown for any bloat of 1,000 or more.
 
 ### Service front door recorded in the client DNS
 
@@ -164,11 +164,11 @@ This shows the DNS name and IP Address of the SharePoint service front door serv
 
 ### Media connectivity (audio, video, and application sharing)
 
-This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked then Microsoft Teams may still work using TCP, but audio and video will be impared. Read more about these UDP network measurements which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)
+This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked then Microsoft Teams may still work using TCP, but audio and video will be impaired. Read more about these UDP network measurements which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)
 
 ### Packet loss
 
-Shows the UDP packet loss measured in a 10 second test audio call from the client to the Microsoft Teams service front door. This should be lower than 1.00% for a pass. 
+Shows the UDP packet loss measured in a 10 second test audio call from the client to the Microsoft Teams service front door. This should be lower than 1.00% for a pass.
 
 ### Latency
 
