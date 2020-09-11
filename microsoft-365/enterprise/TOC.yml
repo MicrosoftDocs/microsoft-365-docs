@@ -31,7 +31,15 @@
               href: microsoft-365-ip-web-service.md
             - name: Additional endpoints not included in the Web service
               href: additional-office365-ip-addresses-and-urls.md
-        - name: Use the Office 365 CDN with SharePoint Online
+            - name: Additional network security requirements for Office 365 GCC High and DOD
+              href: additional-network-security-requirements-for-office-365-gcchigh-and-dod.md
+            - name: DNS records for Office 365 DoD
+              href: dns-records-for-office-365-dod.md
+            - name: DNS records for Office 365 GCC High
+              href: dns-records-for-office-365-gcc-high.md
+        - name: Content Delivery Network (CDN) Quickstart
+          href: office-365-cdn-quickstart.md
+        - name: Use the CDN with SharePoint Online
           href: use-microsoft-365-cdn-with-spo.md
         - name: Optimize connectivity for remote users
           items: 
@@ -46,6 +54,8 @@
         - name: ExpressRoute for Office 365
           href: azure-expressroute.md
           items: 
+            - name: Implementing ExpressRoute
+              href: implementing-expressroute.md
             - name: Routing with ExpressRoute for Office 365
               href: routing-with-expressroute.md
     - name: Manage
@@ -54,6 +64,8 @@
           items: 
             - name: Microsoft 365 endpoints
               href: microsoft-365-endpoints.md
+            - name: Managing Office 365 endpoints
+              href: managing-office-365-endpoints.md
             - name: Worldwide endpoints
               href: urls-and-ip-address-ranges.md
             - name: U.S. Government DoD endpoints
@@ -192,7 +204,7 @@
                   href: microsoft-365-isolation-controls.md
                 - name: Personnel Controls
                   href: microsoft-365-personnel-controls.md
-                - name: echnology Controls
+                - name: Technology Controls
                   href: microsoft-365-technology-controls.md
                 - name: Yammer Enterprise Access Controls
                   href: microsoft-365-yammer-enterprise-access-controls.md
@@ -400,6 +412,8 @@
   items: 
     - name: Roadmap
       href: client-server-software-roadmap-microsoft-365.md
+    - name: Architectural models for SharePoint, Exchange, Skype for Business, and Lync
+      href: architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md
     - name: Plan
       items: 
         - name: Plan your upgrade
@@ -523,7 +537,7 @@
 - name: Manage Microsoft 365 with PowerShell
   href: manage-microsoft-365-with-microsoft-365-powershell.md
   items: 
-    - name: Getting started
+    - name: Get started
       href: getting-started-with-microsoft-365-powershell.md
       items: 
         - name: Why you need to use PowerShell
@@ -580,7 +594,7 @@
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
               href: manage-microsoft-365-groups-with-powershell.md
-    - name: Manage SharePoint Online
+    - name: Manage SharePoint
       href: manage-sharepoint-online-with-microsoft-365-powershell.md
       items: 
         - name: Create SharePoint Online sites and add users
@@ -591,7 +605,7 @@
           href: manage-sharepoint-site-groups-with-powershell.md
     - name: Manage Exchange Online
       href: https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell
-    - name: Use PowerShell for email migration to Microsoft 365
+    - name: Use PowerShell to migrate email to Microsoft 365
       href: use-powershell-for-email-migration-to-microsoft-365.md
       items: 
         - name: Use PowerShell to perform a cutover migration to Microsoft 365
@@ -608,7 +622,7 @@
         - name: Add a domain to a client tenancy with Windows PowerShell for Delegated Access partners
           href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
         - name: Connect to Exchange Online via remote Windows PowerShell for Delegated Access partners
-          href: connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md
+          href: https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell
         - name: Retrieve customer reporting data via Windows PowerShell for Delegated Access partners
           href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
     - name: Manage Microsoft Teams

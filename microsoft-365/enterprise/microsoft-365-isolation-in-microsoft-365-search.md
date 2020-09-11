@@ -1,7 +1,7 @@
 ---
 title: "Tenant Isolation in Microsoft 365 Search"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article

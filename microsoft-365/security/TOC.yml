@@ -187,6 +187,8 @@
                       href: mtp/advanced-hunting-emailpostdeliveryevents-table.md
                     - name: EmailUrlInfo
                       href: mtp/advanced-hunting-emailurlinfo-table.md
+                    - name: IdentityDirectoryEvents
+                      href: mtp/advanced-hunting-identitydirectoryevents-table.md
                     - name: IdentityInfo
                       href: mtp/advanced-hunting-identityinfo-table.md
                     - name: IdentityLogonEvents
@@ -194,7 +196,9 @@
                     - name: IdentityQueryEvents
                       href: mtp/advanced-hunting-identityqueryevents-table.md
                 - name: Functions
-                  items: 
+                  items:
+                    - name: AssignedIPAddresses()
+                      href: mtp/advanced-hunting-assignedipaddresses-function.md 
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
                 - name: Custom detections
@@ -279,7 +283,7 @@
                       href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
                     - name: Spam confidence level (SCL)
                       href: ./office-365-security/spam-confidence-levels.md
-                    - name: Bulk complaint level (SCL)
+                    - name: Bulk complaint level (BCL)
                       href: ./office-365-security/bulk-complaint-level-values.md
                     - name: What's the difference between junk email and bulk email?
                       href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
@@ -311,6 +315,8 @@
                       href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
                     - name: Report junk email and phishing in Outlook on the web
                       href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+                    - name: Report junk email and phishing in Outlook for iOS and Android
+                      href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md
                     - name: Manually submit messages to Microsoft
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                     - name: Use mail flow rules to see what your users are reporting to Microsoft
@@ -380,6 +386,8 @@
                   href: ./office-365-security/support-for-validation-of-dkim-signed-messages.md
                 - name: Use DMARC to validate email
                   href: ./office-365-security/use-dmarc-to-validate-email.md
+            - name: Install Application Guard for Office
+              href: ./office-365-security/install-app-guard.md
             - name: Smart reports and insights in the Security & Compliance Center
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Security Dashboard overview

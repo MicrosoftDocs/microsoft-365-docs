@@ -1,30 +1,34 @@
 ---
-title: "Manage information governance"
+title: "Microsoft Information Governance in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: robmazz
-author: robmazz
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Normal
+localization_priority: High
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about information governance in Microsoft 365."
+description: "Implement Microsoft Information Governance capabilities in Microsoft 365 to govern your data for compliance or regulatory requirements."
 ---
 
-# Manage information governance
+# Microsoft Information Governance in Microsoft 365
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Use Microsoft information governance capabilities to govern your data for compliance or regulatory requirements.
+Use Microsoft Information Governance (sometimes abbreviated to MIG) capabilities to govern your data for compliance or regulatory requirements.
+
+![Govern your data - information governance and records management](../media/information-governance-records-management.png)
+
+Looking to protect your data? See [Microsoft Information Protection in Microsoft 365](protect-information.md).
 
 ## Information governance
 
-To keep what you want and delete what you don't:
+To keep what you need and delete what you don't:
  
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|:--------------------|:-----------------------------|
@@ -35,7 +39,7 @@ To keep what you want and delete what you don't:
 
 ## Records management
 
-To manage high-value content for legal, business, or regulatory obligations, use records management:
+To manage high-value content for legal, business, or regulatory obligations:
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|---------------------|:----------------------------|
