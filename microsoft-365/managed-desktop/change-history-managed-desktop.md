@@ -2,7 +2,7 @@
 title: Change history for Microsoft Managed Desktop documentation
 description: This article lists new and updated articles for Microsoft Managed Desktop.
 keywords: change history
-ms.prod: m365-md
+ms.service: m365-md
 ms.sitesec: library
 author: jaimeo
 ms.topic: article
