@@ -2,8 +2,8 @@
 title: "Upgrade your Microsoft 365 for business users to the latest Office client"
 f1.keywords:
 - NOCSH
-ms.author: kwekuako
-author: kwekua
+author: kwekuako
+ms.author: kwekua
 manager: scotv
 audience: Admin
 ms.service: o365-administration

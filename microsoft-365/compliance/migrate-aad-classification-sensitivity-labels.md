@@ -1,5 +1,5 @@
 ---
-title: "Azure Active Directory classification and sensitivity labels for Microsoft 365 groups"
+title: Azure Active Directory classification and sensitivity labels for Microsoft 365 groups
 ms.reviewer: vijagan
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -7,7 +7,7 @@ manager: pamgreen
 audience: ITPro
 f1.keywords: NOCSH
 ms.topic: article
-O365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 description: "This article discusses classic Azure Active Directory classification and sensitivity labels."
 ---
