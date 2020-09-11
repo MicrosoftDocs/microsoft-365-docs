@@ -7,6 +7,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Learn about the Microsoft 365 solution catalog, including what it contains, how to get it, and your next steps.
 ms.collection: M365-security-compliance
