@@ -32,9 +32,11 @@ We recommend that these be used together where networking quality status can be 
 
 ## The advanced tests client application
 
-There are two parts to the Microsoft 365 network connectivity test; the web site <https://connectivity.office.com> and a downloadable Windows client application that runs advanced network connectivity tests. Most of the tests require the application to be run.
+There are two parts to the Microsoft 365 network connectivity test; the web site <https://connectivity.office.com> and a downloadable Windows client application that runs advanced network connectivity tests. Most of the tests require the application to be run. It will populate results back into the web page as it runs.
 
-The advanced client test is prompted to download from the web site after the web browser tests have completed. It will populate results back into the web page as it runs.
+You will be prompted to download the advanced client test application from the web site after the web browser tests have completed. Open and run the file when prompted.
+
+![Advanced tests client application](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
 
 ## Sharing your test report
 
@@ -64,11 +66,11 @@ You can share your test report with anyone by providing access to a ReportID lin
 
 The results are shown in a Summary and Details tab. The summary tab shows a map of the detected network perimeter and a comparison of the network assessment to other Office 365 customers nearby. It also allows for sharing of the test report. Here's what the summary results view looks like.
 
-![O365 network connectivity test summary results](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
+![Network connectivity test tool summary results](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
 
 Here is an example of the details tab output that the tool shows. On the details tab we show a green circle check mark if the result was compared favorably to a threshold. We show a red triangle exclamation point if the result exceeded a threshold indicating a network insight. The following sections describe each of the details tab results rows and explains the thresholds used for network insights.
 
-![O365 network onboarding tool example test results](../media/m365-mac-perf/m365-mac-perf-all-details.png)
+![Network connectivity test tool example test results](../media/m365-mac-perf/m365-mac-perf-all-details.png)
 
 ### Your location information
 
@@ -195,6 +197,18 @@ Where an SSL certificate is found that isn't provided by Microsoft, we show the 
 ### Network path
 
 This section shows the results of an ICMP traceroute to the Exchange Online service front door, the SharePoint Online service front door, and the Microsoft Teams service front door. It is provided for information only and there is no associated network insight. There are three traceroutes provided. A traceroute to outlook.office365.com, a traceroute to the customers SharePoint front end or to microsoft.sharepoint.com if one was not provided, and a traceroute to world.tr.teams.microsoft.com.
+
+### Connectivity reports
+
+When you are signed in you can review previous reports that you have run. You can also share them, or delete them from this list.
+
+![Reports](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
+
+### Network health status
+
+This shows any significant health issues with Microsoft's global network which might impact Microsoft 365 customers.
+
+![Network health status](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
 ## FAQ
 
