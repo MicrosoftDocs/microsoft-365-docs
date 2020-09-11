@@ -7,6 +7,7 @@ author: brendacarter
 manager: johmar
 audience: Admin
 ms.topic: tutorial
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: 
 - MET150
