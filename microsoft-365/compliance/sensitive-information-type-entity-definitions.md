@@ -213,34 +213,123 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ### Keywords
 
 
-#### Keyword_australia_drivers_license_number
+#### Keyword_foo_foo
 
-#### Keyword_australia_drivers_license_number_exclusions
+#### Keyword_foo_foo
 
 
 -->
 
-## Title
+## Australia business number
 
 ### Format
 
+11 digits with optional delimiters
+
 ### Pattern
+
+11 digits with optional delimiters:
+
+- 2 digits
+- An option hyphen or space
+- 3 digits
+- An option hyphen or space
+- 3 digits
+- An option hyphen or space
+- 3 digits
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_australian_business_number finds content that matches the pattern.
+- A keyword from Keywords_australian_business_number is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_australian_business_number finds content that matches the pattern.
+
+```xml
+      <!-- Australia Business Number -->
+      <Entity id="76e83b3b-01ee-4530-aced-e667a6609f49" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_australian_business_number" />
+          <Match idRef="Keywords_australian_business_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_australian_business_number" />
+        </Pattern>
+      </Entity>
+```
+### Keywords
+
+#### Keyword_australia_business_number
+
+- australia business no
+- business number
+- abn#
+- businessid#
+- business id
+- abn
+- businessno#
+
+## Australia company number
+
+### Format
+
+Nine digits with delimiters
+
+### Pattern
+
+Nine digits with delimiters:
+
+- 3 digits
+- a space
+- 3 digits
+- a space
+- 3 digits
 
 
 ### Checksum
 
+Yes
 
 ### Definition
 
-```xml
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
+- The function Func_Australian_Company_Number finds content that matches the pattern.
+- A keyword from Keyword_Australian_Company_Number is found.
+
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The function Func_Australian_Company_Number finds content that matches the pattern.
+
+```xml
+      <!-- Australia Company Number -->
+      <Entity id="b1fba4f7-7b3e-4bb9-8f9a-9366df604dbb" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_Australian_Company_Number" />
+          <Match idRef="Keyword_Australian_Company_Number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_Australian_Company_Number" />
+        </Pattern>
+      </Entity>
 ```
 ### Keywords
 
-#### Keyword_FOO_FOO_FOO
+#### Keyword_australia_company_number
 
-#### Keyword_FOO_FOO_FOO_exclusions
-   
+- acn
+- australia company no
+- australia company no#
+- australia company number
+- australian company no
+- australian company no#
+- australian company number
 
 ## Australia driver's license number
 
