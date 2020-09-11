@@ -36,6 +36,26 @@ There are two parts to the Microsoft 365 network connectivity test. There is the
 
 The advanced client test is prompted to download from the web site after the web browser tests have completed. It will populate results back into the web page as it runs.
 
+## Sharing your test report
+
+The test report requires sign-in to your Office 365 account. Your administrator selects how you can share your test report.
+
+### Sharing your report with your administrator
+
+All test reports while you are signed in are shared with your administrator.
+
+### Sharing with your Microsoft account team, support or other personel
+
+Test reports excluding any personal identification are shared with Microsoft employees. This is enabled by default and can be disabled by your administrator in the Health -> Network Connectivity page in the Microsoft 365 Admin Center.
+
+### Sharing with other users who sign in to the same Office 365 tenant
+
+You can choose users to share your report with and this is enabled by default. It can also be disabled by your administrator.
+
+### Sharing wuth a ReportID link to anyone
+
+You can share your test report with anyone by providing access to a ReportID link. This generates a URL that you can send to someone so that they can bring up the test reprot without signing in. This is disabled by default and must be enabled by your administrator.
+
 ## Results displayed
 
 The results are shown in a Summary and Details tab. The summary tab shows a map of the detected network perimeter and a comparison of the network assessment to other Office 365 customers nearby. It also allows for sharing of the test report. Here's what the summary results view looks like.
@@ -46,21 +66,21 @@ Here is an example of the details tab output that the tool shows. On the details
 
 ![O365 network onboarding tool example test results](../media/m365-mac-perf/m365-mac-perf-onboarding-tool-tests.png)
 
-## Your location information
+### Your location information
 
 This section shows test results related to your location.
 
-## Your location
+### Your location
 
 The user location is detected from the users web browser, or it can be typed in at the users choice. It is used to identify network distances to specific parts of the enterprise network perimeter. Only the city from this location detection and the distance to other network points are saved in the report.
 
 The user office location is shown on the map view.
 
-## Network egress location (the location where your network connects to your ISP)
+### Network egress location (the location where your network connects to your ISP)
 
 We identify the network egress IP Address on the server side. Location databases are used to look up the approximate location for the network egress. These databases typically have an accuracy of about 90% of IP Addresses. If the location looked up from the network egress IP Address is not accurate then this would lead to a false result from this test. To validate if this error is occurring for a specific IP Address you can use publicly accessible network IP Address location web sites to compare to your actual location.
 
-## Your distance from the network egress location
+### Your distance from the network egress location
 
 We determine the distance from that location to the office location. This is shown as a network insight if the distance is greater than 500 miles (800 kilometers) since that is likely to increase the TCP latency by more than 25ms and may affect user Office 365 experience.
 
@@ -68,31 +88,31 @@ The network egress location is shown on the map view and connected to the user o
 
 Implementing local and direct network egress from user office locations to the Internet is recommended for Microsoft 365 network connectivity. Improvements to local and direct egress are the best way to address this network insight.
 
-## Proxy server information
+### Proxy server information
 
 We identify proxy server(s) configured on the local machine. We identify if any of these are configured in the network path for optimize category Microsoft 365 network traffic. We identify the distance from the user office location to the proxy servers. The distance is tested first by ICMP ping and if that fails we test with TCP ping and finally if that fails we look up the proxy server IP Address in an IP Address location database. We show a network insight if the proxy server is further than 500 miles (800 kilometers) away from the user office location.
 
-## Virtual private network (VPN) you use to connect to your ogranization
+### Virtual private network (VPN) you use to connect to your ogranization
 
 This detects if you are using a VPN to connect to Office 365. A passing result will show if you have no VPN, or if you have a VPN with recommended split tunnel configuration for Office 365.
 
-## VPN Split Tunnel
+### VPN Split Tunnel
 
 Each optimize category route for Exchange Online, SharePoint Online, and Microsoft Teams is tested to see if it is tunnelled on the VPN or not. A split out workload avoids the VPN entirely. A tunnelled workload is all sent over the VPN. A selective tunnelled workload has some routes sent over the VPN and some split out. A passing result will show if all workloads are split out or selective tunnelled.
 
-## Customers in your metropolitan area with better performance
+### Customers in your metropolitan area with better performance
 
 The network TCP latency of the user office location to the Exchange Online service front door is compared to other Microsoft 365 customers in the same metro area. A network insight is shown if 10% or more of customers in the same metro area have better performance. This means their users will have better performance in the Office 365 user interface. 
 
 This network insight is generated on the basis that all users in a city have access to the same telecommunications infrastructure and the same proximity to Internet circuits and Microsoft's network.
 
-## Time to make a DNS request on your network
+### Time to make a DNS request on your network
 
 This shows the DNS server configured on the client machine that ran the tests. It might be a DNS Recursive Resolver server however this is uncommon. It is more likely to be a DNS forwarder server which caches DNS results and forwards any uncached DNS requests to another DNS server.
 
 This is provided for information only and does not contribute to any network insight.
 
-## Your distance from and/or time to connect to a DNS recursive resolver
+### Your distance from and/or time to connect to a DNS recursive resolver
 
 The in-use DNS Recursive Resolver is identified by making a specific DNS request and then asking the DNS Name Server for the IP Address that it received the same request from. This IP Address is the DNS Recursive Resolver and it will be looked up in IP Address location databases to find the location. The distance from the user office location to the DNS Recursive Resolver server location is then calculated. This is shown as a network insight if the distance is greater than 500 miles (800 kilometers).
 
@@ -100,11 +120,11 @@ The location looked up from the network egress IP Address may not be accurate an
 
 This network insight will specifically impact the selection of the Exchange Online service front door. To address this insight local and direct network egress should be a pre-requisite and then DNS Recursive Resolver should be located close to that network egress.
 
-## Exchange Online
+### Exchange Online
 
 This section shows test results related to Exchange Online
 
-## Exchange service front door location
+### Exchange service front door location
 
 The in-use Exchange service front door is identified in the same way that Outlook does this and we measure the network TCP latency from the user location to it. The TCP latency is shown and the in-use Exchange service front door is compared to the list of best service front doors for the current location. This is shown as a network insight if one of the best Exchange service front door(s) is not in use.
 
@@ -112,53 +132,53 @@ Not using one of the best Exchange service front door(s) could be caused by netw
 
 We calculate a potential improvement in TCP latency (ms) to the Exchange service front door. This is done by looking at the tested user office location network latency and subtracting the network latency from the current location to the closets Exchange service front door. The difference represents the potential opportunity for improvement.
 
-## Best Exchange service front door(s) for your location
+### Best Exchange service front door(s) for your location
 
 This lists the best Exchange service front door locations by city for your location.
 
-## Service front door recorded in the client DNS
+### Service front door recorded in the client DNS
 
 This shows the DNS name and IP Address of the Exchange service front door server that you were directed to. It is provided for information only and there is no associated network insight.
 
-## SharePoint Online
+### SharePoint Online
 
 This section shows test results related to SharePoint Online.
 
-## The service front door location
+### The service front door location
 
 The in-use SharePoint service front door is identified in the same way that the OneDrive client does and we measure the network TCP latency from the user office location to it.
 
-## Download speed
+### Download speed
 
 We measure the download speed for a 15Mb file from the SharePoint service front door. The result is shown in megabytes per second to indicate what size file in megabytes can be downloaded from SharePoint or OneDrive in one second. The number should be similar to one tenth of the minimum citcuit bandwidth in megabits per second. For example if you have a 100mbps internet connection, you may expect 10 megabytes per second (10MBps). 
 
-## Buffer bloat
+### Buffer bloat
 
 During the 15Mb download we measure the TCP latency to the SharePoint service front door. This is the latency under load and it is compared to the latency when not under load. The increase in latency when under load is often attributable to consumer network device buffers being loaded (or bloated). A network insight is shown for any bloat of 1,000 or more. 
 
-## Service front door recorded in the client DNS
+### Service front door recorded in the client DNS
 
 This shows the DNS name and IP Address of the SharePoint service front door server that you were directed to. It is provided for information only and there is no associated network insight.
 
-## Microsoft Teams
+### Microsoft Teams
 
-## Media connectivity (audio, video, and application sharing)
+### Media connectivity (audio, video, and application sharing)
 
 This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked then Microsoft Teams may still work using TCP, but audio and video will be impared. Read more about these UDP network measurements which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)
 
-## Packet loss
+### Packet loss
 
 Shows the UDP packet loss measured in a 10 second test audio call from the client to the Microsoft Teams service front door. This should be lower than 1.00% for a pass. 
 
-## Latency
+### Latency
 
 Shows the UDP latency measured which should be lower than 100ms.
 
-## Jitter
+### Jitter
 
 Shows the UDP jitter measured which should be lower than 30ms.
 
-## Connectivity
+### Connectivity
 
 We test for HTTP connectivity from the user office location to all of the required Microsoft 365 network endpoints. These are published at [https://aka.ms/o365ip](https://aka.ms/o365ip). A network insight is shown for any required network endpoints which cannot be connected to.
 
@@ -168,7 +188,7 @@ We test the SSL certificate at each required Microsoft 365 network endpoint that
 
 Where an SSL certificate is found that isn't provided by Microsoft, we show the FQDN for the test and the in-use SSL certificate owner. This SSL certificate owner may be a proxy server vendor, or it may be an enterprise self-signed certificate.
 
-## Network path
+### Network path
 
 This section shows the results of an ICMP traceroute to the Exchange Online service front door, the SharePoint Online service front door, and the Microsoft Teams service front door. It is provided for information only and there is no associated network insight. There are three traceroutes provided. A traceroute to outlook.office365.com, a traceroute to the customers SharePoint front end or to microsoft.sharepoint.com if one was not provided, and a traceroute to world.tr.teams.microsoft.com.
 
