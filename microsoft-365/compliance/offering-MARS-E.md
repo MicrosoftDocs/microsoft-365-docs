@@ -3,7 +3,7 @@ title: Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework
 description: Microsoft complies with the US Minimum Acceptable Risk Standards for Exchanges (MARS-E).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

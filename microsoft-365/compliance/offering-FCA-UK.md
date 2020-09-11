@@ -3,7 +3,7 @@ title: United Kingdom Financial Conduct Authority (FCA)
 description: Microsoft guidance for financial firms in the UK follows Financial Conduct Authority and guidelines for outsourcing to the cloud.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
