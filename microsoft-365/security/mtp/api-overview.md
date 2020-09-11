@@ -41,4 +41,5 @@ The lop-level Microsoft Threat Protection APIs will enable you to automate workf
 In addition to these set of APIs each of the various protection products expose additional APIs to help you innovate based on each product capabilities.
 
 ## Related topics
+- [Access the Microsoft Threat Protectin APIs](api-access.md)
 - [Other API resources](api-articles.md)
