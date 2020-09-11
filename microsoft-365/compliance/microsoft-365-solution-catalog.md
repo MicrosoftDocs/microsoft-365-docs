@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 solution catalog
+title: "Microsoft 365 solution catalog"
 f1.keywords:
 - NOCSH
 ms.author: robmazz

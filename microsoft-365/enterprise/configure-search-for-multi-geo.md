@@ -127,7 +127,7 @@ Some of the search features you might be familiar with, aren't supported in a mu
 
 All the search clients use the existing SharePoint Search REST APIs to interact with the search indexes.
 
-<img src="../media/configure-search-for-multi-geo-image1-1.png" />
+![Diagram showing how SharePoint Search REST APIs interact with the search indexes](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. A search client calls the Search REST endpoint with the query property EnableMultiGeoSearch= true.
 2. The query is sent to all geo locations in the tenant.
@@ -223,7 +223,6 @@ MultiGeoSearchStatus – This is a property that the SharePoint Search API retur
 <td align="left">Partial</td>
 <td align="left">Partial results from one or more geo locations. The results are incomplete due to a transient error.</td>
 </tr>
-
 </tbody>
 </table>
 
@@ -261,8 +260,9 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
 
 #### Sample POST request that's fanned out to **all** geo locations
 
+```text
     {
-        "request": {
+    "request": {
             "__metadata": {
             "type": "Microsoft.Office.Server.Search.REST.SearchRequest"
         },
@@ -281,9 +281,11 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
         "ClientType": "my_client_id"
         }
     }
+```
 
 #### Sample POST request that's fanned out to **some** geo locations
 
+```text
     {
         "request": {
             "Querytext": "SharePoint",
@@ -308,12 +310,15 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
             }
         }
     }
+```
 
 ### Query using CSOM
 
 Here's a sample CSOM query that's fanned out to **all** geo locations:
 
-    var keywordQuery = new KeywordQuery(ctx);
-    keywordQuery.QueryText = query.SearchQueryText;
-    keywordQuery.ClientType = <enter a string here>;
-    keywordQuery["EnableMultiGeoSearch"] = true;
+```text
+var keywordQuery = new KeywordQuery(ctx);
+keywordQuery.QueryText = query.SearchQueryText;
+keywordQuery.ClientType = <enter a string here>;
+keywordQuery["EnableMultiGeoSearch"] = true;
+```
