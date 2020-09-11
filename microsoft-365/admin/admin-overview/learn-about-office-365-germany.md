@@ -84,7 +84,7 @@ The following services and features are available in some [Office 365 Germany su
   
 ## General information
 
-|||
+|Item|Information|
 |-----|-----|
 |Sign in portal  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |Subscriptions, billing, and technical support  <br/> |Germany-based support available in German and English For details, see [Contact support for business products - Admin Help](../contact-support-for-business-products.md).  <br/> |
