@@ -18,7 +18,7 @@ description: "Microsoft 365 network connectivity test (preview)"
 
 # Microsoft 365 network connectivity test (preview)
 
-The Microsoft 365 network connectivity test is located at <https://connectivity.office.com>. It is an adjunct tool to the network assessment and network insights information available in the Microsoft 365 admin center under the **Health | Connectivity** menu.
+The Microsoft 365 network connectivity test tool is located at <https://connectivity.office.com>. It is an adjunct tool to the network assessment and network insights information available in the Microsoft 365 admin center under the **Health | Connectivity** menu.
 
 >[!NOTE]
 >The network connectivity test tool supports tenants in WW Commercial and Germany but not GCC Moderate, GCC High, DoD or China.
@@ -32,7 +32,7 @@ We recommend that these be used together where networking quality status can be 
 
 ## The advanced tests client application
 
-There are two parts to the Microsoft 365 connectivity test. There is the web site <https://connectivity.office.com> and there is a downloadable Windows client application. The downloadable client runs advanced network connectivity tests and most of the tests require this to be run.
+There are two parts to the Microsoft 365 network connectivity test. There is the web site <https://connectivity.office.com> and there is a downloadable Windows client application. The downloadable client runs advanced network connectivity tests and most of the tests require this to be run.
 
 The advanced client test is prompted to download from the web site after the web browser tests have completed. It will populate results back into the web page as it runs.
 
@@ -178,7 +178,7 @@ Here are answers to some of our frequently asked questions.
 
 ### Is this tool released and supported by Microsoft?
 
-It is currently a proof of concept and we plan to provide updates regularly until we reach general availability release status with support from Microsoft. Please provide feedback to help us improve. We are planning to publish a more detailed Office 365 Network Onboarding guide as part of this tool which is customized for the organization by its test results.
+It is currently a preview and we plan to provide updates regularly until we reach general availability release status with support from Microsoft. Please provide feedback to help us improve. We are planning to publish a more detailed Office 365 Network Onboarding guide as part of this tool which is customized for the organization by its test results.
 
 ### What is Microsoft 365 service front door?
 
