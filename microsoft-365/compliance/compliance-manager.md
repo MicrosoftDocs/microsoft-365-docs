@@ -48,7 +48,7 @@ You can use Compliance Score as a tool to track all of your risk assessments. It
 
 Your Compliance Manager dashboard shows your current score, helps you see what needs attention, and guides you to key improve actions for completing your assessments. Your Compliance Manager dashboard will look like this:
 
-![Compliance Score - dashboard](../media/compliance-score-dashboard.png "Compliance Score dashboard")
+![Compliance Manager - dashboard](../media/compliance-manager-dashboard.png "Compliance Manager dashboard")
 
 ## Understanding your compliance score
 

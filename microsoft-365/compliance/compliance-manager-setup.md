@@ -106,7 +106,7 @@ If you choose **set per action,** take these additional steps to turn on Secure 
 
 The Compliance Score dashboard is designed to provide you an at-a-glance view of your current compliance posture.
 
-![Compliance Score - dashboard](../media/compliance-score-dashboard.png "Compliance Score dashboard")
+![Compliance Manager - dashboard](../media/compliance-manager-dashboard.png "Compliance Manager dashboard")
 
 ### Overall compliance score
 
