@@ -3,7 +3,7 @@ title: ENISA Information Assurance Framework
 description: Microsoft aligns with the risk assessment tools of the ENISA Information Assurance Framework based on its CSA STAR self-assessment.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

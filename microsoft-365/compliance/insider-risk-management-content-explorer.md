@@ -3,7 +3,7 @@ title: Insider risk management Content Explorer
 description: Learn about insider risk management Content Explorer in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
