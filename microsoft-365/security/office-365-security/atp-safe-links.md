@@ -1,5 +1,5 @@
 ---
-title: "ATP Safe Links"
+title: "Safe Links"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -24,12 +24,10 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: "In this article, you'll learn how to use Safe links to protect your organization from phishing and other attacks."
+description: "In this article, admins can learn about Safe Links protection in Office 365 Advanced Threat Protection (ATP) to protect their organization from phishing and other attacks that use malicious URLs."
 ---
 
-# ATP Safe Links
-
-## Overview of Safe Links in Office 365 ATP
+# Safe Links in Office 365 ATP
 
 > [!IMPORTANT]
 > This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -62,9 +60,9 @@ The following table describes scenarios for Safe Links in Microsoft 365 and Offi
 
 After you've configured Safe Links protection for your organization, global admins, security admins, and security readers can view reports that contain Safe Links protection information. This information can help your security team take further steps to protect your organization or research security incidents. For more information, see [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md).
 
-As [new features are added to ATP](office-365-atp.md#new-features-in-office-365-atp), your security team can add or edit your organization's [ATP Safe Links policies](set-up-atp-safe-links-policies.md). In addition, you might notice changes and improvements, such as our newly revised [warning pages](atp-safe-links-warning-pages.md) and native link rendering in Outlook (introduced in Microsoft 365 Apps for enterprise version 1809).
+As [new features are added to ATP](office-365-atp.md#new-features-in-office-365-atp), your security team can add or edit your organization's [ATP Safe Links policies](set-up-atp-safe-links-policies.md). In addition, you might notice changes and improvements, such as our revised [warning pages](#warning-pages-from-safe-links) and native link rendering in Outlook (introduced in Microsoft 365 Apps for enterprise version 1809).
 
-## Safe Links policy settings
+## Safe Links policy settings for email messages
 
 These are the important settings in Safe Links policies:
 
@@ -102,6 +100,24 @@ For more information about the recommended values for Standard and Strict policy
 - **Priority**: If you create multiple policies, you can specify the order that they're applied. No two policies can have the same priority, and policy processing stops after the first policy is applied.
 
   For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+
+## How Safe Links works in email messages
+
+At a high level, here's how Safe Links protection works on URLs in email messages:
+
+1. All email goes through EOP, where internet protocol (IP) and envelope filters, signature-based malware protection, anti-spam and anti-malware filters before the message is delivered to the recipient's mailbox.
+
+2. The user opens the message in their mailbox and clicks on a URL in the message.
+
+3. Safe Links immediately checks the URL before opening the website:
+
+   - If the URL is included in the list that skips Safe Links scanning (the **Block the following URLs** list) a [blocked URL warning](#blocked-url-warning) opens.
+
+   - If the URL points to a website that has been determined to be malicious, a [malicious website warning page](#malicious-website-warning) (or a different warning page) opens.
+
+   - If the URL points to a downloadable file, and the Safe Links policy that applies to the user is configured to scan links to downloadable content (**Apply real-time URL scanning for suspicious links and links that point to files**), the downloadable file is checked.
+
+   - If the URL is determined to be safe, the website opens.
 
 ## Safe Links settings for Microsoft Teams
 
@@ -152,6 +168,29 @@ The following settings are available in Safe Links for Office documents:
 - **Do not let users click through safe links to original URL**: Allows or blocks users from clicking through to the original blocked URL. The default and recommended value for this setting is On.
 
 For more information about the recommended values for Standard and Strict policy settings, see [Safe Links policy settings in custom policies for specific users](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users).
+
+### How Safe Links works in Office documents
+
+At a high level, here's how Safe Links protection works for URLs in Office documents. The supported versions of Office and the supported Office apps are described in the previous [Safe Links settings for Office documents](#safe-links-settings-for-office-documents) section.
+
+1. A user who is signed in to Office 365 Enterprise using their work or school account opens a supported Office document and clicks a link in the document.
+
+2. A user opens a Word, Excel, PowerPoint, OneNote (in the browser), or Visio (on desktop), and signs in to Office 365 Enterprise using their work or school account. The document contains URLs.
+
+3. Safe Links immediately checks the URL before opening the website:
+
+   - If the URL is included in the list that skips Safe Links scanning (the **Block the following URLs** list) a [blocked URL warning](#blocked-url-warning) opens.
+
+   - If the URL points to a website that has been determined to be malicious, a [malicious website warning page](#malicious-website-warning) (or a different warning page) opens.
+
+   - If the URL points to a downloadable file, and the Safe Links policy that applies to the user is configured to scan links to downloadable content (**Apply real-time URL scanning for suspicious links and links that point to files**), the downloadable file is checked.
+
+   - If the URL is considered safe, the user is taken to the website.
+
+   - If Safe Links scanning is unable to complete, Safe Links protection does not trigger. In Office desktop clients, the user will be warned before proceeding to the destination site.
+
+> [!NOTE]
+> It may take several seconds at the beginning of each session to verify that the user has Safe Links for Office enabled.
 
 ## Always blocked URLs for Safe Links
 
@@ -215,3 +254,63 @@ The following table lists examples of what you can enter and what effect those e
 |`https://contoso.com/a`|Allows access to `https://contoso.com/a`, but not subpaths like `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Allows access to `https://contoso.com/a` and subpaths like `https://contoso.com/a/b`|
 |
+
+## Warning pages from Safe Links
+
+This section contains examples of the various warning pages that are generated by Safe Links when you click on a URL.
+
+Note that several warning pages have been updated. If you're not already seeing the updated pages, you will soon. The updated pages include a new color scheme, more detail, and the ability to proceed to a site despite the given warning and recommendations.
+
+### Scan in progress notification
+
+The clicked URL is being scanned by Safe Links. You might need to wait a few moments before trying the link again.
+
+!["The link is being scanned" notification](../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+
+The original notification page looked like this:
+
+![Original "The link is being scanned" notification](../../media/04368763-763f-43d6-94a4-a48291d36893.png)
+
+### Suspicious message warning
+
+The clicked URL was in an email message that's similar to other suspicious messages. We recommend that you double-check the email message before proceeding to the site.
+
+!["A link was clicked from a suspicious message" warning](../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
+
+### Phishing attempt warning
+
+The clicked URL was in an email message that has been identified as a phishing attack. As a result, all URLs in the email message are blocked. We recommend that you do not proceed to the site.
+
+!["The link was clicked from a phishing message" warning](../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
+
+### Malicious website warning
+
+The clicked URL points to a site that has been identified as malicious. We recommend that you do not proceed to the site.
+
+!["This website is classified as malicious" warning](../../media/058883c8-23f0-4672-9c1c-66b084796177.png)
+
+The original warning page looked like this:
+
+![Original "This website has been classified as malicious" warning](../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
+
+### Blocked URL warning
+
+The clicked URL has been manually blocked by an admin in your organization (**Block the following URLs** in the global Safe Links settings). The link was not scanned by Safe Links because it was manually blocked.
+
+There are several reasons why an admin would manually block specific URLs. If you think the site should not be blocked, contact your admin.
+
+!["This website was blocked by your admin" warning](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+
+The original warning page looked like this:
+
+![Original "This website has been blocked per your organization's URL policy" warning](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+
+### Error warning
+
+Some kind of error has occurred, and the URL can't be opened.
+
+!["The page that you are trying to access cannot be loaded" warning](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+
+The original warning page looked like this:
+
+![Original "This web page could not be loaded" warning](../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)

@@ -44,7 +44,9 @@ This article contains the steps for enabling and configuring ATP for SharePoint,
 
 1. In the [Security & Compliance Center](https://protection.office.com), go to **Threat management** \> **Policy** \> **ATP Safe Attachments** or open <https://protection.office.com/safeattachmentv2>.
 
-2. Select **Global settings**. In the **Global settings** fly out that appears, go to the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** setting. Move the toggle to the right ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to turn on ATP for SharePoint, OneDrive, and Microsoft Teams.
+2. Select **Global settings**.
+
+3. In the **Global settings** fly out that appears, go to the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** setting. Move the toggle to the right ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to turn on ATP for SharePoint, OneDrive, and Microsoft Teams.
 
    When you're finished, click **Save**.
 
@@ -60,7 +62,7 @@ For detailed syntax and parameter information, see [Set-AtpPolicyForO365](https:
 
 ## Step 2: (Recommended) Use SharePoint Online PowerShell to prevent users from downloading malicious files
 
-By default, users can't open, move, copy, or share malicious files that were detected by ATP for SharePoint, OneDrive, and Microsoft Teams. However, they can delete and download malicious files.
+By default, users can't open, move, copy, or share malicious files that are detected by ATP for SharePoint, OneDrive, and Microsoft Teams. However, they can delete and download malicious files.
 
 To prevent users from downloading malicious files, [connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) and run the following command:
 
@@ -73,6 +75,8 @@ Note that this setting still allows users to delete malicious files.
 For detailed syntax and parameter information, see [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).
 
 ## Step 3 (Recommended) Use the Security & Compliance Center to create an alert policy for detected files
+
+You can create an alert policy that notifies you and other admins when ATP for SharePoint, OneDrive, and Microsoft Teams detects a malicious file.
 
 1. In the [Security & Compliance Center](https://protection.office.com), go to **Alerts** \> **Alert policies** or open <https://protection.office.com/alertpolicies>.
 
@@ -156,4 +160,3 @@ To learn more about alerts, see [Create activity alerts in the Security & Compli
     For detailed syntax and parameter information, see [Get-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/get-activityalert).
 
 - Use the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) to view information about detected files in SharePoint, OneDrive, and Microsoft Teams. Specifically, you can use the **View data by: Content \> Malware** view.
-

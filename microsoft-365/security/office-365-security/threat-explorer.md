@@ -78,18 +78,18 @@ You should also see additional details within the product. For example, the tota
 ### Top targeted users
 
 Today we expose the list of the top targeted users in the Malware View for Emails (within the Top Malware Families section). We will be extending this view within Phish and All Email views as well, where you will be able to see the top five targeted users along with the number of attempts for each user for the corresponding view (for example, for Phish view you will be able to see the number of Phish attempts).
-You will also be able to export the list of targeted users up to a limit of 3000 along with the number of attempts for offline analysis for each email view. In addition to that, selecting No. of attempts (for example, 13 attempts below) would open a filtered view in Threat Explorer, so that you can look at more details across emails and threats for that user. 
+You will also be able to export the list of targeted users up to a limit of 3000 along with the number of attempts for offline analysis for each email view. In addition to that, selecting No. of attempts (for example, 13 attempts below) would open a filtered view in Threat Explorer, so that you can look at more details across emails and threats for that user.
 
 ![Top Targeted Users](../../media/Top_Targeted_Users.png)
 
 
 ### Exchange transport rules
 As part of data enrichment, you should also be able to see all the different transport rules which were applied to a message. This information will be present within the Email grid view (to view this, select Column options in the grid and add Exchange Transport Rule from the Column options in the grid) as well as Details flyout in the email.
-You would be able to see both the GUID as well as the name of the transport rules which were applied to the message. Additionally, you would be able to search for the messages using the name of the transport rule. This would be a ‘Contains’ search which means you will be able to search using partial searches as well. 
+You would be able to see both the GUID as well as the name of the transport rules which were applied to the message. Additionally, you would be able to search for the messages using the name of the transport rule. This would be a ‘Contains’ search which means you will be able to search using partial searches as well.
 
-#### Important Note: 
-ETR search and name availability would depend on the specific role that has been assigned to you. You will need to have one of the following roles/permissions in order to view the ETR names and search.  If you do not have any of the following roles assigned to you, you will not be able to see the names of the transport rules, and search for the messages using the ETR names. However, you will be able to see the ETR label and GUID information within the Email Details. Your other experiences around viewing records in Email Grids, Email flyouts, Filters, and Export are not impacted. 
- 
+#### Important Note:
+ETR search and name availability would depend on the specific role that has been assigned to you. You will need to have one of the following roles/permissions in order to view the ETR names and search.  If you do not have any of the following roles assigned to you, you will not be able to see the names of the transport rules, and search for the messages using the ETR names. However, you will be able to see the ETR label and GUID information within the Email Details. Your other experiences around viewing records in Email Grids, Email flyouts, Filters, and Export are not impacted.
+
 - EXO Only - Data Loss Prevention: All
 - EXO Only - O365SupportViewConfig: All
 - AAD or EXO - Security Admin: All
@@ -97,15 +97,15 @@ ETR search and name availability would depend on the specific role that has been
 - EXO Only - Transport Rules: All
 - EXO Only - View-Only Configuration: All
 
-Within the email grid, Details flyout, and Exported CSV, the ETRs are presented with a Name/GUID as shown below. 
+Within the email grid, Details flyout, and Exported CSV, the ETRs are presented with a Name/GUID as shown below.
 
 ![Exchange Transport Rules](../../media/ETR_Details.png)
 
-### Inbound connectors 
+### Inbound connectors
 
-Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization, with the ability to apply any security restriction or controls. Within Threat Explorer, you will now have the ability to view the connectors which are related to an email as well as search for emails using the connector names. 
-The search for connectors is ‘Contains’ in nature which means partial keyword searches should work as well. 
-Within the Main grid view, the Details flyout, and the Exported CSV, the connectors are shown in the Name/GUID format as shown below: 
+Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization, with the ability to apply any security restriction or controls. Within Threat Explorer, you will now have the ability to view the connectors which are related to an email as well as search for emails using the connector names.
+The search for connectors is ‘Contains’ in nature which means partial keyword searches should work as well.
+Within the Main grid view, the Details flyout, and the Exported CSV, the connectors are shown in the Name/GUID format as shown below:
 
 ![Connector Details](../../media/Connector_Details.png)
 
@@ -236,8 +236,7 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
    > [!NOTE]
    > In the URL flyout dialog, the filtering on email messages is removed to show you the full view of the URL's exposure in your environment. This lets you filter down email messages in Explorer to ones you are concerned about, find specific URLs that are potential threats, then expand your understanding of the URL exposure in your environment (via the URL details dialog) without having to add URL filters to the Explorer view itself.
 
-
-**Interpretation of different click verdicts**
+### Interpretation of different click verdicts
 
 Within the Email or URL flyouts, Top Clicks as well as within our filtering experiences, you will see different click values as part of your hunting experience. Below are the possible values of Click Verdicts and their interpretation:
 
@@ -248,7 +247,7 @@ Within the Email or URL flyouts, Top Clicks as well as within our filtering expe
 - **Blocked overridden**: The user was blocked from navigating to the URL; however, the user overrode the block to navigate to the URL.
 - **Pending verdict bypassed**: The user was presented with the detonation page; however, the user overrode the page to navigate to the URL.
 - **Error**: The user was presented with the error page. This can also mean there was an error in capturing the verdict.
-- **Failure**: There was unknown exception while capturing the verdict. The user might have clicked through the URL. 
+- **Failure**: There was unknown exception while capturing the verdict. The user might have clicked through the URL.
 
 ## Review email messages reported by users
 
@@ -282,7 +281,7 @@ For details on this, see [Example: A security administrator triggers an investig
 In addition to the scenarios outlined in this article, you have many more reporting options available with Explorer (or real-time detections).
 
 - [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
-- [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Get an overview of the views in Threat Explorer (and real-time detections)](threat-explorer-views.md)
 - [Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
 

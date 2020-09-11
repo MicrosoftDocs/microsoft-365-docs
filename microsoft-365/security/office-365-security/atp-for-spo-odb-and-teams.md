@@ -6,7 +6,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: Admin
-ms.date: 03/19/2019
+ms.date:
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -29,17 +29,18 @@ People regularly share files and collaborate using SharePoint, OneDrive, and Mic
 
 ATP for SharePoint, OneDrive, and Microsoft Teams is not enabled by default. To turn it on, see [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
-ATP for SharePoint, OneDrive, and Microsoft Teams is not dependent on [Safe Attachments policies](set-up-atp-safe-attachments-policies.md). You enable or disable ATP for SharePoint, OneDrive, and Microsoft Teams globally for your organization.
+> [!NOTE]
+> ATP for SharePoint, OneDrive, and Microsoft Teams is not dependent on [Safe Attachments policies](set-up-atp-safe-attachments-policies.md). You enable or disable ATP for SharePoint, OneDrive, and Microsoft Teams globally for your organization.
 
-## How ATP for SharePoint, OneDrive, and Microsoft Teams operates
+## How ATP for SharePoint, OneDrive, and Microsoft Teams works
 
-When ATP for SharePoint, OneDrive, and Microsoft Teams is enabled and identifies a file as malicious, ATP directly integrates with the file stores to lock that file. The following image shows an example of a malicious file detected in a library.
+When ATP for SharePoint, OneDrive, and Microsoft Teams is enabled and identifies a file as malicious, the file is locked using direct integration  with the file stores. The following image shows an example of a malicious file detected in a library.
 
 ![Files in OneDrive for Business with one detected as malicious](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
 Although the blocked file is still listed in the document library and in web, mobile, or desktop applications, people can't open, copy, move, or share the file. But they can delete the blocked file.
 
-Here's an example of what that looks like on a mobile device:
+Here's an example of what a blocked file looks like on a mobile device:
 
 ![Deleting a blocked file from OneDrive for Business from the OneDrive mobile app](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
@@ -51,20 +52,16 @@ SharePoint Online admins can prevent people from downloading malicious files. Fo
 
 To learn more about the user experience when a file has been detected as malicious, see [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2).
 
-## Keep these points in mind
+## View information about malicious files detected by ATP for SharePoint, OneDrive, and Microsoft Teams
 
-- ATP for SharePoint, OneDrive, and Microsoft Teams will not scan every single file in SharePoint Online, OneDrive for Business, or Microsoft Teams. This is by design. Files are scanned asynchronously, through a process that uses sharing and guest activity events along with smart heuristics and threat signals to identify malicious files.
-
-- Make sure your SharePoint sites are configured to use the [Modern experience](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). ATP protection applies whether the Modern experience or the Classic view is used; however, visual indicators that a file is blocked are available only in the Modern experience.
-
-- Files that are identified as malicious by ATP for SharePoint, OneDrive, and Microsoft Teams will show up in [reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md) and in [Explorer (and real-time detections)](threat-explorer.md).
-
-- ATP for SharePoint, OneDrive, and Microsoft Teams is part of your organization's overall threat protection strategy, which includes anti-spam and anti-malware protection, as well as Safe Links and Safe Attachments. To learn more, see [Protect against threats in Office 365](protect-against-threats.md).
-
-## Quarantined files
+Files that are identified as malicious by ATP will show up in [reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md) and in [Explorer (and real-time detections)](threat-explorer.md).
 
 As of May 2018, when a file is identified as malicious by ATP for SharePoint, OneDrive, and Microsoft Teams, the file is also available in quarantine. For more information, see [Use the Security & Compliance Center to manage quarantined files](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files).
 
-## Next steps
+## Keep these points in mind
 
-- [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
+- ATP will not scan every single file in SharePoint Online, OneDrive for Business, or Microsoft Teams. This is by design. Files are scanned asynchronously. The process uses sharing and guest activity events along with smart heuristics and threat signals to identify malicious files.
+
+- Make sure your SharePoint sites are configured to use the [Modern experience](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). ATP protection applies whether the Modern experience or the Classic view is used; however, visual indicators that a file is blocked are available only in the Modern experience.
+
+- ATP for SharePoint, OneDrive, and Microsoft Teams is part of your organization's overall threat protection strategy, which includes anti-spam and anti-malware protection in Exchange Online Protection (EOP), as well as Safe Links and Safe Attachments in Office 365 ATP. To learn more, see [Protect against threats in Office 365](protect-against-threats.md).
