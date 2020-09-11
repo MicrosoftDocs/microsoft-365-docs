@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
