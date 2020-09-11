@@ -42,15 +42,13 @@ You will be prompted to download the advanced client test application from the w
 
 The test report requires sign-in to your Office 365 account. Your administrator selects how you can share your test report.
 
-![Sharing a link to your test results](../media/m365-mac-perf/m365-mac-perf-share-link.png)
-
 ### Sharing your report with your administrator
 
 All test reports while you are signed in are shared with your administrator.
 
 ### Sharing with your Microsoft account team, support or other personnel
 
-Test reports excluding any personal identification are shared with Microsoft employees. This is enabled by default and can be disabled by your administrator in the Health -> Network Connectivity page in the Microsoft 365 Admin Center.
+Test reports excluding any personal identification are shared with Microsoft employees. This is enabled by default and can be disabled by your administrator in the **Health | Network Connectivity** page in the Microsoft 365 Admin Center.
 
 ### Sharing with other users who sign in to the same Office 365 tenant
 
@@ -61,6 +59,8 @@ You can choose users to share your report with and this is enabled by default. I
 ### Sharing with anyone using a ReportID link
 
 You can share your test report with anyone by providing access to a ReportID link. This generates a URL that you can send to someone so that they can bring up the test report without signing in. This is disabled by default and must be enabled by your administrator.
+
+![Sharing a link to your test results](../media/m365-mac-perf/m365-mac-perf-share-link.png)
 
 ## Network Connectivity Test Results
 
@@ -148,7 +148,7 @@ This shows the DNS name and IP Address of the Exchange service front door server
 
 ### SharePoint Online
 
-This section shows test results related to SharePoint Online.
+This section shows test results related to SharePoint Online and OneDrive.
 
 #### The service front door location
 
