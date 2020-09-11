@@ -175,7 +175,7 @@ There is no provision to set time zone for staff in Bookings. Staff time zone, a
 
 ### Can email notifications be sent as the tenant domain name?
 
-The email addresses are controlled and managed at the Microsoft 365 settings level and depend on the domain configuration settings there. More information can be found [here](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps).
+The email addresses are controlled and managed at the Microsoft 365 settings level and depend on the domain configuration settings there. More information can be found [here](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain).
 
 ### Is the ability to send SMS messages dependent on a different service or specific configuration?
 
@@ -361,7 +361,7 @@ If you still see this error after an extended period of time or you are seeing i
 
   - [Customize and publish your booking page](customize-booking-page.md)
 
-  - [Tenant Mailbox configuration](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps)
+  - [Tenant Mailbox configuration](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
 
   - [Group Bookings](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 
