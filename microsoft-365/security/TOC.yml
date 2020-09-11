@@ -283,7 +283,7 @@
                       href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
                     - name: Spam confidence level (SCL)
                       href: ./office-365-security/spam-confidence-levels.md
-                    - name: Bulk complaint level (SCL)
+                    - name: Bulk complaint level (BCL)
                       href: ./office-365-security/bulk-complaint-level-values.md
                     - name: What's the difference between junk email and bulk email?
                       href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
