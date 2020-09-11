@@ -196,30 +196,6 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - full names
 - iaea
 
-<!-- 
-## TITLE
-
-### Format
-
-### Pattern
-
-### Checksum
-
-### Definition
-
-```xml
-
-```
-### Keywords
-
-
-#### Keyword_foo_foo
-
-#### Keyword_foo_foo
-
-
--->
-
 ## Australia business number
 
 ### Format
@@ -689,7 +665,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_austria_eu_driver's_license_number**
+#### Keywords_austria_eu_driver's_license_number
+
 - dl#
 - driver license
 - driver license number
@@ -791,7 +768,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_austria_eu_passport_number**
+#### Keywords_austria_eu_passport_number
+
 - passport number
 - austrian passport number
 - passport no
@@ -931,6 +909,75 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin no
 - tin#
 - tax number
+ 
+## Austria value added tax
+
+### Format
+
+11-character alphanumeric pattern
+
+### Pattern
+
+11-character alphanumeric pattern:
+
+- A or a
+- T or t
+- Optional space
+- U or u
+- Optional space
+- 2 or 3 digits
+- Optional space
+- 4 digits
+- Optional space
+- 2 or 1 digit
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The function Func_Austria_Value_Added_Tax finds content that matches the pattern.
+- A keyword from Keyword_Austria_Value_Added_Tax is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The function Func_Austria_Value_Added_Tax finds content that matches the pattern.
+
+```xml
+      <!-- Austria Value Added Tax -->
+      <Entity id="b6a3eda2-c56c-4b69-a5f7-dca34db00f48" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_Austria_Value_Added_Tax" />
+          <Match idRef="Keyword_Austria_Value_Added_Tax" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_Austria_Value_Added_Tax" />
+        </Pattern>
+      </Entity>
+```
+### Keywords
+
+#### Keyword_austria_value_added_tax
+
+- vat number
+- vat#
+- austrian vat number
+- vat no.
+- vatno#
+- value added tax number
+- austrian vat
+- mwst
+- umsatzsteuernummer
+- mwstnummer
+- ust.-identifikationsnummer
+- umsatzsteuer-identifikationsnummer
+- vat identification number
+- atu number
+- uid number
+
 
 ## Azure DocumentDB Auth key
 
@@ -1244,7 +1291,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 </Entity>
 ```
 
-## Azure Service Bus Connection String
+## Azure service bus connection string
 
 ### Format
 
@@ -1304,7 +1351,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## Azure Storage Account Key
+## Azure storage account key
 
 ### Format
 
@@ -1588,7 +1635,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_belgium_eu_passport_number**
+#### Keywords_belgium_eu_passport_number
+
 - passport number
 - belgian passport number
 - passport no
@@ -1758,6 +1806,69 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin#
 
 
+## Belgium value added tax number
+
+### Format
+
+12-character alphanumeric pattern
+
+### Pattern
+
+12-character alphanumeric pattern:
+
+- A letter B or b
+- A letter E or e
+- A digit 0
+- A digit from 1 to 9
+- An optional dot or Hyphen or space
+- 4 digits
+- An optional dot or Hyphen or space
+- 4 digits
+
+
+### Checksum
+
+Yes
+
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+The function Func_belgium_value_added_tax_number finds content that matches the pattern.
+A keyword from Keywords_belgium_value_added_tax_number is found.
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+The function Func_belgium_value_added_tax_number finds content that matches the pattern.
+
+```xml
+      <!-- Belgium Value Added Tax Number -->
+      <Entity id="85b5b3c3-f2de-4ae8-ac46-fd3cb38bf9ed" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_belgium_value_added_tax_number" />
+          <Match idRef="Keywords_belgium_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_belgium_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+    </Version>
+```
+### Keywords
+
+#### Keyword_belgium_value_added_tax_number
+
+- nº tva
+- vat number
+- vat no
+- numéro t.v.a
+- umsatzsteuer-identifikationsnummer
+- umsatzsteuernummer
+- btw
+- btw#
+- vat#
+
+
 ## Brazil CPF number
 
 ### Format
@@ -1819,6 +1930,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Identificação 
 - Inscrição 
 - Receita 
+
    
 ## Brazil legal entity number (CNPJ)
 
@@ -1827,7 +1939,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 14 digits that include a registration number, branch number, and check digits, plus delimiters
 
 ### Pattern
+
 14 digits, plus delimiters:
+
 - Two digits 
 - A period 
 - Three digits 
@@ -1889,6 +2003,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Situação cadastral 
 - Inscrição 
 - Empresa 
+
    
 ## Brazil national identification card (RG)
 
@@ -1990,7 +2105,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_bulgaria_eu_driver's_license_number**
+#### Keywords_bulgaria_eu_driver's_license_number
 - dl#
 - driver license
 - driver license number
@@ -2007,6 +2122,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - свидетелство за управление на моторно превозно средство
 - сумпс
 - шофьорска книжка
+
 
 ## Bulgaria national identification number
 This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
@@ -2098,6 +2214,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - униформгражданскиid#
 - униформгражданскине.#
 
+
 ## Bulgaria passport number
 This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
@@ -2131,13 +2248,16 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ```
 ### Keywords
 
-**Keywords_bulgaria_eu_passport_number**
+#### Keywords_bulgaria_eu_passport_number
+
 - passport number
 - bulgarian passport number
 - passport no
 - номер на паспорта
 
+
 ## Bulgaria tax identification number
+
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
@@ -2179,6 +2299,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ### Keywords
 
 #### Keywords_bulgaria_eu_tax_file_number
+
 - bnn#
 - bnn
 - bucn#
@@ -2296,6 +2417,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - deposit request
 - banking information
 - direct deposit
+
    
 ## Canada driver's license number
 
@@ -2513,6 +2635,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - identification card# 
 - identification cards# 
 - identification# 
+
    
 ## Canada health service number
 
@@ -2559,6 +2682,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - psychiatrist
 - workers compensation
 - disability
+
       
 ## Canada passport number
 
@@ -2626,6 +2750,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Passeport#
 - PasseportNon
 - Passeportn °
+
    
 ## Canada personal health identification number (PHIN)
 
@@ -2644,8 +2769,9 @@ No
 ### Definition
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-The regular expression Regex_canada_phin finds content that matches the pattern.
-At least two keywords from Keyword_canada_phin or Keyword_canada_provinces are found..
+
+- The regular expression Regex_canada_phin finds content that matches the pattern.
+- At least two keywords from Keyword_canada_phin or Keyword_canada_provinces are found.
 
 ```xml
 <!-- Canada PHIN -->
@@ -2696,6 +2822,7 @@ At least two keywords from Keyword_canada_phin or Keyword_canada_provinces are f
 - Nova Scotia
 - Prince Edward Island
 - Canada
+
    
 ## Canada social insurance number
 
@@ -2779,6 +2906,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Birthdate 
 - Birthday 
 - Date of Birth 
+
    
 ## Chile identity card number
 
@@ -2841,6 +2969,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Número De Identificación Nacional 
 - Tarjeta de identificación 
 - Identificación 
+
    
 ## China resident identity card (PRC) number
 
@@ -2898,6 +3027,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - 身分證 
 - 居民 身份證
 - 鑑定 
+
    
 ## Credit card number
 
@@ -3020,7 +3150,6 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - セキュリティナンバー
 - セキュリティ ナンバー
 - セキュリティ番号
-
 
 #### Keyword_cc_name
 
@@ -3197,7 +3326,9 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - デビット カード
 - デビットカード
 
+
 ## Croatia driver's license number
+
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
@@ -3231,7 +3362,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_croatia_eu_driver's_license_number**
+#### Keywords_croatia_eu_driver's_license_number
 
 - dl#
 - driver license
@@ -3247,9 +3378,10 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - dlno#
 - vozačka dozvola
 
-## Croatia identity card number
-This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
+## Croatia identity card number
+
+This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -3312,7 +3444,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin no
 - tin#
 
+
 ## Croatia passport number
+
 This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
@@ -3345,7 +3479,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ```
 ### Keywords
 
-**Keywords_croatia_eu_passport_number**
+#### Keywords_croatia_eu_passport_number
 
 - passport number
 - croatian passport number
@@ -3402,7 +3536,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Osobni identifikacijski broj 
 - OIB 
 
+
 ## Croatia social security number or equivalent identification
+
 This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
 
 ### Format
@@ -3462,8 +3598,10 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - personalidnumber#
 - oib
 - osobni identifikacijski broj
+
    
 ## Croatia tax identification number
+
 This sensitive information type entity is only available in the EU Tax Identificaiton Number sensitive information type.
 
 ### Format
@@ -3487,11 +3625,11 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
   
 - The function  `Func_croatia_eu_tax_file_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_croatia_eu_tax_file_number` is found. 
-    
+
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
   
 - The function  `Func_croatia_eu_tax_file_number` finds content that matches the pattern. 
-    
+
 ```xml
  <!-- EU Tax File Number -->
 <Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
@@ -3538,7 +3676,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin no
 - tin#
 
+
 ## Cyprus drivers license number
+
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
@@ -3572,7 +3712,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_cyprus_eu_driver's_license_number**
+#### Keywords_cyprus_eu_driver's_license_number
 
 - dl#
 - driver license
@@ -3587,7 +3727,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - dlno#
 - άδεια οδήγησης
 
+
 ## Cyprus national identification number
+
 This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
@@ -3629,7 +3771,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - personal id number
 - ταυτοτητασ
 
+
 ## Cyprus passport number
+
 This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
@@ -3663,14 +3807,16 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_cyprus_eu_passport_number**
+#### Keywords_cyprus_eu_passport_number
 
 - passport number
 - cyprus passport number
 - passport no
 - αριθμό διαβατηρίου
 
+
 ## Cyprus tax identification number
+
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
@@ -3744,7 +3890,9 @@ Pattern confidenceLevel="75">
 - φορολογικού κωδικού
 - tax number
 
+
 ## Czech driver's license number
+
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
@@ -3783,7 +3931,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_czech_republic_eu_driver's_license_number**
+#### Keywords_czech_republic_eu_driver's_license_number
 
 - dl#
 - driver license
@@ -3800,7 +3948,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - dlno#
 - řidičský prúkaz
 
+
 ## Czech passport number
+
 This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
@@ -3834,7 +3984,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_czech_republic_eu_passport_number**
+#### Keywords_czech_republic_eu_passport_number
 
 - passport number
 - czech passport number
@@ -3842,7 +3992,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - cestovní pas
 - pas
 
+
 ## Czech personal identity number
+
 This sensitive information type entity is included in the EU National identification number bundle and is available as a stand alone sensitive information type entity.
 
 ### Format
@@ -3896,8 +4048,8 @@ The checksum passes.
 - Rodné číslo
 
 
-
 ## Czech social security number or equivalent identification
+
 This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
 
 ### Format
@@ -3962,7 +4114,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - rodné číslo
 - rodne cislo
 
+
 ## Czech tax identification number
+
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
@@ -4039,7 +4193,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - unique identification number
 - tax number
 
+
 ## Denmark driver's license number
+
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
@@ -4092,6 +4248,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Denmark passport number
+
 This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
@@ -4125,7 +4282,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_denmark_eu_passport_number**
+#### Keywords_denmark_eu_passport_number
 
 - passport number
 - danish passport number
@@ -4133,7 +4290,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - pas
 - pasnummer
 
+
 ## Denmark personal identification number
+
 This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
@@ -4154,9 +4313,9 @@ Yes
 ### Definition
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-The regular expression Regex_denmark_id finds content that matches the pattern.
-A keyword from Keyword_denmark_id is found.
-The checksum passes.
+- The regular expression Regex_denmark_id finds content that matches the pattern.
+- A keyword from Keyword_denmark_id is found.
+- The checksum passes.
 
 ```xml
 <!-- Denmark Personal Identification Number -->
@@ -4222,7 +4381,9 @@ The checksum passes.
 - tin id
 - tin no
 
+
 ## Denmark social security number or equivalent identification
+
 This sensitive information type entity is only available the EU Social Security Number or Equivalent ID sensitive information type.
 
 ### Format
@@ -4281,7 +4442,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - cpr-nummer
 - personnummer
 
+
 ## Denmark tax identification number
+
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
@@ -4292,7 +4455,7 @@ Ten digits containing a hyphen
 
 Ten digits containing a hyphenl:
   
--  Six digits that correspond to the birth date (DDMMYY)
+- Six digits that correspond to the birth date (DDMMYY)
 - A hyphen
 - Four digits that correspond to a sequence number where the first digit corresponds to the century of birth and the last digit corresponds to the individual's gender (odd for male and even for female)
     
@@ -4415,7 +4578,9 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 None
 
+
 ## Estonia driver's license number
+
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
@@ -4452,7 +4617,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_estonia_eu_driver's_license_number**
+#### Keywords_estonia_eu_driver's_license_number
 
 - dl#
 - driver license
@@ -4468,7 +4633,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - dlno#
 - permis de conduire
 
+
 ## Estonia national identification number
+
 This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
@@ -4548,7 +4715,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin no
 - tin#
 
+
 ## Estonia passport number
+
 This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
@@ -4582,14 +4751,16 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_estonia_eu_passport_number**
+#### Keywords_estonia_eu_passport_number
 
 - passport number
 - estonian passport number
 - passport no
 - eesti kodaniku pass
 
+
 ## Estonia tax identification number
+
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
@@ -5018,7 +5189,9 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - vto 
 - válido hasta 
 
+
 ## EU driver's license number
+
 These are the entities in the EU Driver's License Number sensitive information type.
 
 - [Austria](#austria-drivers-license-number) 
@@ -5050,7 +5223,9 @@ These are the entities in the EU Driver's License Number sensitive information t
 - [Sweden](#sweden-drivers-license-number)
 - [U.K.](#uk-drivers-license-number)
 
+
 ## EU national identification number
+
 These are the entities in the EU National Identification Number sensitive information type.
 
 - [Austria](#austria-national-identification-number)
@@ -5083,6 +5258,7 @@ These are the entities in the EU National Identification Number sensitive inform
 
 
 ## EU passport number 
+
 These are the entities in the EU passport number sensitive information typeThese are the entities in the EU passport number bundle.
 
 - [Austria](#austria-passport-number)
@@ -5116,6 +5292,7 @@ These are the entities in the EU passport number sensitive information typeThese
 
 
 ## EU social security number or equivalent identification
+
 These are the entities that are in the EU Social Security Number or equivalent identification sensitive information type.
 
 - [Austria](#austria-social-security-number-or-equivalent-identification)
@@ -5132,9 +5309,10 @@ These are the entities that are in the EU Social Security Number or equivalent i
 - [Spain](#spain-social-security-number-ssn)
 - [Sweden](#sweden-social-security-number-or-equivalent-identification)
 
+
 ## EU Tax identification number
 
-hese entities are in the EU Tax identification number sensitive information type.
+These entities are in the EU Tax identification number sensitive information type.
 
 - [Austria](#austria-tax-identification-number)
 - [Belgium](#belgium-tax-identification-number)
@@ -5167,6 +5345,7 @@ hese entities are in the EU Tax identification number sensitive information type
 
 
 ## Finland driver's license number
+
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
@@ -5177,9 +5356,9 @@ This sensitive information type entity is only available in the EU Driver's Lice
 
 10 digits containing a hyphen:
   
--  Six digits 
+- Six digits 
 - A hyphen
--  Four digits 
+- Four digits 
     
 ### Checksum
 
@@ -5205,7 +5384,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_finland_eu_driver's_license_number**
+#### Keywords_finland_eu_driver's_license_number
 
 - dl#
 - driver license
@@ -5221,7 +5400,64 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - dlno#
 - ajokortti
 
+
+## Finland european health insurance number
+
+### Format
+
+20 digit number
+
+### Pattern
+
+20-digit number:
+
+- 10 digits - 8024680246
+- An optional space or hyphen
+- 10 digits
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The regex Regex_Finland_European_Health_Insurance_Number finds content that matches the pattern.
+- A keyword from Keyword_Finland_European_Health_Insurance_Number is found.
+
+```xml
+      <!-- Finland European Health Insurance Number -->
+      <Entity id="60f75aed-81bf-4625-89b0-0846b9248ee7" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_Finland_European_Health_Insurance_Number"/>
+          <Match idRef="Keyword_Finland_European_Health_Insurance_Number"/>
+        </Pattern>
+      </Entity>
+```
+### Keywords
+
+#### Keyword_finland_european_health_insurance_number
+
+- ehic#
+- ehic
+- finlandehicnumber#
+- finska sjukförsäkringskort
+- health card
+- health insurance card
+- health insurance number
+- hälsokort
+- sairaanhoitokortin
+- sairausvakuutuskortti
+- sairausvakuutusnumero
+- sjukförsäkring nummer
+- sjukförsäkringskort
+- suomen sairausvakuutuskortti
+- terveyskortti
+
+
 ## Finland national identification number
+
 This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
@@ -5307,7 +5543,9 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - verotunniste
 - verotunnus
 
+
 ## Finland passport number
+
 This sensitive information type entity is available in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
@@ -5322,6 +5560,7 @@ Seven digits
 No
 
 ### Definition
+
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_finland_passport_number finds content that matches the pattern.
 - A keyword from Keyword_finland_passport_number is found.
@@ -5336,11 +5575,14 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 </Entity>
 ```
 ### Keywords
+
 - Keyword_finland_passport_number
 - Passport
 - Passi
 
+
 ## Finland social security number or equivalent identification
+
 This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
 
 ### Format
@@ -5351,7 +5593,7 @@ An 11-character combination in the specified format
 
 An 11-character combination in the specified format:
   
--  Six digits 
+- Six digits 
 - One instance of one of the following:
   - Plus symbol
   - Minus symbol
@@ -5413,7 +5655,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - kansallinen tunnus numero
 - hetu
 
+
 ## Finland tax identification number
+
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
@@ -5512,6 +5756,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## France driver's license number
+
 This sensitive information type entity is available in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
@@ -5561,7 +5806,55 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - licence numbers
 - license numbers
 
+
+## France health insurance number
+
+### Format
+
+21 digit number
+
+### Pattern
+
+21 digit number:
+
+- 10 digits
+- An optional space
+- 10 digits
+- An optional space
+- A digit
+
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The regex Regex_France_Health_Insurance_Number finds content that matches the pattern.
+- A keyword from Keyword_France_Health_Insurance_Number is found.
+
+```xml
+      <!-- France Health Insurance Number -->
+      <Entity id="9bc2069e-76df-4ff9-ac02-2f519469e236" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_France_Health_Insurance_Number"/>
+          <Match idRef="Keyword_France_Health_Insurance_Number"/>
+        </Pattern>
+      </Entity>
+```
+### Keywords
+
+#### Keyword_France_health_insurance_number
+
+- insurance card
+- carte vitale
+- carte d'assuré social
+
+
 ## France national identification card (CNI)
+
 This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
@@ -5579,6 +5872,7 @@ No
 ### Definition
 
 A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_france_cni finds content that matches the pattern.
 
 ```xml
@@ -5606,6 +5900,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
    
 ## France passport number
+
 This sensitive information type entity is available in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
@@ -5664,6 +5959,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
       
 ## France social security number (INSEE) or equivalent identification
+
 This sensitive information type entity is included in the EU Social Security Number and Equivalent ID sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
@@ -5740,6 +6036,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - code sécu 
 
 ## France tax identification number
+
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
@@ -5805,7 +6102,72 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin no
 - tin#
 
+
+## France value added tax number
+
+### Format
+
+13 character alphanumeric pattern
+
+### Pattern
+
+13 character alphanumeric pattern:
+
+- 2 letters  - FR (case insensitive)
+- An optional space or hyphen
+- 2 letters or digits
+- An optional space, dot, hyphen or comma
+- 3 digits
+- An optional space, dot, hyphen or comma
+- 3 digits
+- An optional space, dot, hyphen or comma
+- 3 digits
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The function Func_france_value_added_tax_number finds content that matches the pattern.
+- A keyword from Keywords_france_value_added_tax_number is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The function Func_france_value_added_tax_number finds content that matches the pattern.
+
+```xml
+      <!-- France Value Added Tax Number -->
+      <Entity id="949121e6-ad9f-4379-8731-710342baea78" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_france_value_added_tax_number" />
+          <Match idRef="Keywords_france_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_france_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+### Keywords
+
+#### Keyword_France_value_added_tax_number
+
+- vat number
+- vat no
+- vat#
+- value added tax
+- siren identification no numéro d'identification taxe sur valeur ajoutée
+- taxe valeur ajoutée
+- taxe sur la valeur ajoutée
+- n° tva
+- numéro de tva
+- numéro d'identification siren
+
+
 ## Germany driver's license number
+
 This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
@@ -5948,7 +6310,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - ausstellende behorde
 - ausstellende behoerde
 
+
 ## Germany identity card number
+
 - This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 - This sensitive information type entity is included in the EU Social Security Number or Equivalent ID sensitive information type.
 
@@ -6007,6 +6371,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 
 ## Germany passport number
+
 This sensitive information type entity is included in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
@@ -6092,7 +6457,9 @@ Reisepass-Nr
 
 bnationalit.t
 
+
 ## Germany tax identification number
+
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
@@ -6103,7 +6470,7 @@ This sensitive information type entity is only available in the EU Tax Identific
 
 11 digits :
   
--  Ten digits 
+- Ten digits 
 - One check digit
     
 ### Checksum
@@ -6162,7 +6529,68 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - zinn
 - zinnnummer
 
+
+## Germany value added tax number
+
+### Format
+
+11 character alphanumeric pattern
+
+### Pattern
+
+11-character alphanumeric pattern:
+
+- A letter D or d
+- A letter E or e
+- An optional space
+- 3 digits
+- An optional space or comma
+- 3 digits
+- An optional space or comma
+- 3 digits
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The function Func_germany_value_added_tax_number finds content that matches the pattern.
+- A keyword from Keywords_germany_value_added_tax_number is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The function Func_germany_value_added_tax_number finds content that matches the pattern.
+
+```xml
+      <!-- Germany Value Added Tax Number -->
+      <Entity id="db177eb2-8811-4842-bffc-128c14aa219f" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_germany_value_added_tax_number" />
+          <Match idRef="Keywords_germany_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_germany_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+### Keywords
+
+#### Keyword_germany_value_added_tax_number
+
+- vat number
+- vat no
+- vat#
+- vat#  mehrwertsteuer
+- mwst
+- mehrwertsteuer identifikationsnummer
+- mehrwertsteuer nummer
+
+
 ## Greece driver's license number
+
 This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
@@ -6214,7 +6642,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Adeia odigisis
 
 
-## Greece National ID Card
+## Greece national ID card
+
 This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
@@ -6266,7 +6695,9 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - ταυτότητα
 - ταυτότητας
 
+
 ## Greece passport number
+
 This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
@@ -6300,7 +6731,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_greece_eu_passport_number**
+#### Keywords_greece_eu_passport_number
 
 - passport number
 - greek passport number
@@ -6308,6 +6739,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - διαβατηριο
 
 ## Greece tax identification number
+
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
@@ -6327,10 +6759,9 @@ Not applicable
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
   
 - The regular expression  `Regex_greece_eu_tax_file_number` finds content that matches the pattern. 
-    
 - A keyword from  `Keywords_greece_eu_tax_file_number` is found. 
     
-```
+```xml
  <!-- EU Tax File Number -->
 <Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
@@ -6454,8 +6885,10 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - 香港特別行政區非永久性居民身份証
 - 香港特別行政區非永久性居民身分證
 - 香港特別行政區非永久性居民身分証
+
    
 ## Hungary driver's license number
+
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
@@ -6492,7 +6925,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_hungary_eu_driver's_license_number**
+#### Keywords_hungary_eu_driver's_license_number
+
 - dl#
 - driver license
 - driver license number
@@ -6507,7 +6941,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - dlno#
 - vezetoi engedely
 
+
 ## Hungary national identification number
+
 This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
@@ -6562,7 +6998,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - személyazonosító igazolvány
 - személyi igazolvány
 
+
 ## Hungary passport number
+
 This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
@@ -6595,14 +7033,16 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ```
 ### Keywords
 
-**Keywords_hungary_eu_passport_number**
+#### Keywords_hungary_eu_passport_number
 
 - passport number
 - hungarian passport number
 - passport no
 - útlevél száma
 
+
 ## Hungary social security number or equivalent identification
+
 This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
 
 ### Format
@@ -6665,6 +7105,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Hungary tax identification number
+
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
@@ -6675,7 +7116,7 @@ Ten digits with no spaces or delimiters
 
 Ten digits:
   
--  One digit that must be "8" 
+- One digit that must be "8" 
 - Five digits that correspond to the number of days between the date 01/01/1867 and the date of the birth of the individual
 - Three digits that correspond to the number generated by chance to differentiate individuals born on the same day
 - One check digit
@@ -6735,6 +7176,66 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin no
 - tin#
 - vat number
+
+
+## Hungary value added tax number
+
+### Format
+
+10 character alphanumeric pattern
+
+### Pattern
+
+10 character alphanumeric pattern:
+
+- 2 letters - HU or hu
+- optional space
+- 8 digits
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The function Func_hungarian_value_added_tax_number finds content that matches the pattern.
+- A keyword from Keywords_hungarian_value_added_tax_number is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The function Func_hungarian_value_added_tax_number finds content that matches the pattern.
+
+```xml
+      <!-- Hungarian Value Added Tax Number -->
+      <Entity id="976349a0-683b-477a-90f8-ff0a220d5592" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_hungarian_value_added_tax_number" />
+          <Match idRef="Keywords_hungarian_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_hungarian_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_Hungary_value_added_tax_number
+
+- vat
+- value added tax number
+- vat#
+- vatno#
+- hungarianvatno#
+- tax no.
+- value added tax áfa
+- közösségi adószám
+- általános forgalmi adó szám
+- hozzáadottérték adó
+- áfa szám
+
 
 ## India permanent account number (PAN)
 
@@ -6799,12 +7300,15 @@ Yes
 ### Definition
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-The function Func_india_aadhaar finds content that matches the pattern.
-A keyword from Keyword_india_aadhar is found.
-The checksum passes.
+- The function Func_india_aadhaar finds content that matches the pattern.
+- A keyword from Keyword_india_aadhar is found.
+- The checksum passes.
+- 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-The function Func_india_aadhaar finds content that matches the pattern.
-The checksum passes.
+
+- The function Func_india_aadhaar finds content that matches the pattern.
+- The checksum passes.
+
 ```xml
 <!-- India Unique Identification (Aadhaar) number -->
 <Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300">
@@ -6850,6 +7354,7 @@ No
 ### Definition
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The regular expression Regex_indonesia_id_card finds content that matches the pattern.
 - A keyword from Keyword_indonesia_id_card is found.
 
@@ -6896,6 +7401,7 @@ Yes
 ### Definition
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
 - The function Func_iban finds content that matches the pattern.
 - The checksum passes.
 
@@ -6910,8 +7416,6 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 ### Keywords
 
 None
-
-   
 
    
 ## International classification of diseases (ICD-10-CM)
@@ -6950,7 +7454,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ```
 
-Keywords
+### Keywords
 
 Any term from the Dictionary_icd_10_updated keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). This type looks only for the term, not the insurance codes.
 
@@ -7062,6 +7566,7 @@ For IPv6, a DLP policy is 95% confident that it's detected this type of sensitiv
 - IP-כתובת ה 
 
 ## Ireland driver's license number
+
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
@@ -7114,7 +7619,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - dlno#
 - ceadúnas tiomána
 
+
 ## Ireland national identification number
+
 This sensitive information type entity is only included in the EU National Identification Number sensitive information type.
 
 ### Format
@@ -7127,7 +7634,7 @@ A nine-character combination of letters, digits, and a space in the specified pa
   
 From 01 January 2013 to now:
   
--  Seven digits 
+- Seven digits 
 - One check digit
 - One space or the uppercase letter "W" (Case sensitive)
     
@@ -7196,6 +7703,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - uimhir phearsanta seirbhíse poiblí
 
 ## Ireland passport number
+
 This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
@@ -7314,6 +7822,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 
 ## Ireland tax identification number
+
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
@@ -7476,6 +7985,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - National ID Number
    
 ## Italy driver's license number
+
 This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
@@ -7520,6 +8030,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - patente di guida 
 
 ## Italy national identification number
+
 This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
@@ -7603,7 +8114,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin no
 - tin#
 
+
 ## Italy passport number
+
 This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
@@ -7640,7 +8153,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_italy_eu_passport_number**
+#### Keywords_italy_eu_passport_number
 
 - italian passport number
 - repubblica italiana passaporto
@@ -7652,7 +8165,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - numéro passeport italien
 - numéro passeport
 
+
 ## Italy tax identification number
+
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
@@ -7663,7 +8178,7 @@ This sensitive information type entity is only available in the EU Tax Identific
 
 16 letters and digits:
   
--  Three letters that correspond to the first three consonants in the family name 
+- Three letters that correspond to the first three consonants in the family name 
 - Three letters that correspond to the first, third, and fourth consonants in the first name
 - Two digits that correspond to the last digits of the birth year
 - One digit that corresponds to the month of birth—letters are used in alphabetical order, but only the letters A to E, H, L, M, P, R to T are used (thus, January is A and October is R)
@@ -7735,6 +8250,58 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin id
 - tin no
 - tin#
+
+
+## Italy value added tax number
+
+### Format
+
+13 character alphanumeric pattern with optional delimiters
+
+### Pattern
+
+13 character alphanumeric pattern with optional delimiters:
+
+- I or i
+- T or t
+- Optional space, dot, hyphen or comma
+- 11 digits
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_italy_value_added_tax_number finds content that matches the pattern.
+- A keyword from Keywords_italy_value_added_tax_number is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_italy_value_added_tax_number finds content that matches the pattern.
+
+```xml
+      <!-- Italy Value Added Tax -->
+      <Entity id="26a8cc07-2283-4a2a-ab1d-4ab643c4c67f" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_italy_value_added_tax_number" />
+          <Match idRef="Keywords_italy_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_italy_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_italy_value_added_tax_number
+
+- vat number
+- vat no
+- vat#
+- iva
+- iva#
 
 
 ## Japan bank account number
@@ -7911,6 +8478,90 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - 運転免許 
 - 運転免許証 
 - 運転免許証番号 
+
+
+## Japan My Number - Corporate
+
+### Format
+
+13 digit number
+
+### Pattern
+
+13 digit number:
+
+- 1 digit from 1 to 9
+- 12 digits
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_japanese_my_number_corporate finds content that matches the pattern.
+- A keyword from Keywords_japanese_my_number_corporate is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_japanese_my_number_corporate finds content that matches the pattern.
+
+```xml
+      <!-- Japanese My Number – Corporate -->
+      <Entity id="9e0eaf79-ff20-4ffb-b3e4-e7368d5db6ff" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_japanese_my_number_corporate" />
+          <Match idRef="Keywords_japanese_my_number_corporate" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_japanese_my_number_corporate" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_japan_my_number_corporate
+
+- corporate number
+- マイナンバー
+- 共通番号
+- マイナンバーカード
+- マイナンバーカード番号
+- 個人番号カード
+- 個人識別番号
+- 個人識別ナンバー
+- 法人番号
+- 指定通知書
+
+
+## Japan My Number - Personal
+
+### Format
+
+### Pattern
+
+
+
+### Checksum
+
+
+
+### Definition
+
+
+
+```xml
+
+```
+
+### Keywords
+
+#### Keyword_foo_foo
+
+
+#### Keyword_foo_foo_exceptions
+
    
 ## Japan passport number
 
