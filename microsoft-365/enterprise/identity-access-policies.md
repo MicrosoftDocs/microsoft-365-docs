@@ -61,7 +61,7 @@ A recommended practice is to create an Azure AD group for Conditional Access exc
 
 Here's an example of group assignment and exclusions for requiring MFA.
 
-![Example group assignment and exclusions for MFA rules](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+![Example group assignment and exclusions for MFA policies](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 Here are the results:
 
@@ -100,7 +100,7 @@ In the **Assignments** section:
 |:---|:---------|:-----|:----|
 |Users and groups|Include| **Select users and groups > Users and groups**:  Select specific groups containing targeted user accounts. |Start with the group that includes pilot user accounts.|
 ||Exclude| **Users and groups**: Select your Conditional Access exception group; service accounts (app identities).|Membership should be modified on an as-needed, temporary basis.|
-|Cloud apps or actions| **Cloud apps > Include** | **Select apps**: Select the apps you want this rule to apply to. For example, select Exchange Online.||
+|Cloud apps or actions| **Cloud apps > Include** | **Select apps**: Select the apps you want this policy to apply to. For example, select Exchange Online.||
 |Conditions| | |Configure conditions that are specific to your environment and needs.|
 ||Sign-in risk||See the guidance in the following table.|
 |||||
@@ -216,11 +216,11 @@ To create a new app protection policy for each platform (iOS and Android) within
 
 ## Require approved apps and APP protection
 
-To enforce the APP protection policies you applied in Intune, you must create a Conditional Access rule to require approved client apps and the conditions set in the APP protection policies. 
+To enforce the APP protection policies you applied in Intune, you must create a Conditional Access policy to require approved client apps and the conditions set in the APP protection policies. 
 
 Enforcing APP protection policies requires a set of policies described in in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access). These policies are each included in this recommended set of identity and access configuration policies.
 
-To create the Conditional Access rule that requires approved apps and APP protection, follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
+To create the Conditional Access policy that requires approved apps and APP protection, follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
    > [!NOTE]
    > This policy ensures mobile users can access all Office endpoints using the applicable apps.
