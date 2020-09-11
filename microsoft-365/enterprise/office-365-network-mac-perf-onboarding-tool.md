@@ -72,11 +72,7 @@ Here is an example of the details tab output that the tool shows. On the details
 
 ![Network connectivity test tool example test results](../media/m365-mac-perf/m365-mac-perf-all-details.png)
 
-### General results
-
-The results at the top of the test results page provide information about general connectivity metrics.
-
-#### Your location information
+### Your location information
 
 This section shows test results related to your location.
 
@@ -88,11 +84,11 @@ The user office location is shown on the map view.
 
 #### Network egress location (the location where your network connects to your ISP)
 
-We identify the network egress IP Address on the server side. Location databases are used to look up the approximate location for the network egress. These databases typically have an accuracy of about 90% of IP Addresses. If the location looked up from the network egress IP Address is not accurate then this would lead to a false result from this test. To validate if this error is occurring for a specific IP Address you can use publicly accessible network IP Address location web sites to compare to your actual location.
+We identify the network egress IP address on the server side. Location databases are used to look up the approximate location for the network egress. These databases typically have an accuracy of about 90% of IP addresses. If the location looked up from the network egress IP address is not accurate then this would lead to a false result from this test. To validate if this error is occurring for a specific IP address you can use publicly accessible network IP address location web sites to compare to your actual location.
 
 #### Your distance from the network egress location
 
-We determine the distance from that location to the office location. This is shown as a network insight if the distance is greater than 500 miles (800 kilometers) since that is likely to increase the TCP latency by more than 25ms and may affect user Office 365 experience.
+We determine the distance from that location to the office location. This is shown as a network insight if the distance is greater than **500 miles** (800 kilometers) since that is likely to increase the TCP latency by more than 25ms and may affect user experience.
 
 The network egress location is shown on the map view and connected to the user office location indicating the network backhaul inside of the enterprise WAN.
 
@@ -100,7 +96,7 @@ Implementing local and direct network egress from user office locations to the I
 
 #### Proxy server information
 
-We identify proxy server(s) configured on the local machine. We identify if any of these are configured in the network path for optimize category Microsoft 365 network traffic. We identify the distance from the user office location to the proxy servers. The distance is tested first by ICMP ping and if that fails we test with TCP ping and finally if that fails we look up the proxy server IP Address in an IP Address location database. We show a network insight if the proxy server is further than 500 miles (800 kilometers) away from the user office location.
+We identify proxy server(s) configured on the local machine. We identify if any of these are configured in the network path for optimize category Microsoft 365 network traffic. We identify the distance from the user office location to the proxy servers. The distance is tested first by ICMP ping and if that fails we test with TCP ping and finally if that fails we look up the proxy server IP Address in an IP Address location database. We show a network insight if the proxy server is further than **500 miles** (800 kilometers) away from the user office location.
 
 #### Virtual private network (VPN) you use to connect to your organization
 
@@ -112,7 +108,7 @@ Each optimize category route for Exchange Online, SharePoint Online, and Microso
 
 #### Customers in your metropolitan area with better performance
 
-The network TCP latency of the user office location to the Exchange Online service front door is compared to other Microsoft 365 customers in the same metro area. A network insight is shown if 10% or more of customers in the same metro area have better performance. This means their users will have better performance in the Office 365 user interface.
+The network TCP latency of the user office location to the Exchange Online service front door is compared to other Microsoft 365 customers in the same metro area. A network insight is shown if 10% or more of customers in the same metro area have better performance. This means their users will have better performance in the Microsoft 365 user interface.
 
 This network insight is generated on the basis that all users in a city have access to the same telecommunications infrastructure and the same proximity to Internet circuits and Microsoft's network.
 
@@ -124,7 +120,7 @@ This is provided for information only and does not contribute to any network ins
 
 #### Your distance from and/or time to connect to a DNS recursive resolver
 
-The in-use DNS Recursive Resolver is identified by making a specific DNS request and then asking the DNS Name Server for the IP Address that it received the same request from. This IP Address is the DNS Recursive Resolver and it will be looked up in IP Address location databases to find the location. The distance from the user office location to the DNS Recursive Resolver server location is then calculated. This is shown as a network insight if the distance is greater than 500 miles (800 kilometers).
+The in-use DNS Recursive Resolver is identified by making a specific DNS request and then asking the DNS Name Server for the IP Address that it received the same request from. This IP Address is the DNS Recursive Resolver and it will be looked up in IP Address location databases to find the location. The distance from the user office location to the DNS Recursive Resolver server location is then calculated. This is shown as a network insight if the distance is greater than **500 miles** (800 kilometers).
 
 The location looked up from the network egress IP Address may not be accurate and this would lead to a false result from this test. To validate if this error is occurring for a specific IP Address you can use publicly accessible network IP Address location web sites.
 
@@ -160,7 +156,7 @@ The in-use SharePoint service front door is identified in the same way that the 
 
 #### Download speed
 
-We measure the download speed for a 15Mb file from the SharePoint service front door. The result is shown in megabytes per second to indicate what size file in megabytes can be downloaded from SharePoint or OneDrive in one second. The number should be similar to one tenth of the minimum circuit bandwidth in megabits per second. For example if you have a 100mbps internet connection, you may expect 10 megabytes per second (10MBps).
+We measure the download speed for a 15Mb file from the SharePoint service front door. The result is shown in megabytes per second to indicate what size file in megabytes can be downloaded from SharePoint or OneDrive in **one second**. The number should be similar to one tenth of the minimum circuit bandwidth in megabits per second. For example if you have a 100mbps internet connection, you may expect 10 megabytes per second (10MBps).
 
 #### Buffer bloat
 
@@ -180,15 +176,15 @@ This tests for UDP connectivity to the Microsoft Teams service front door. If th
 
 #### Packet loss
 
-Shows the UDP packet loss measured in a 10 second test audio call from the client to the Microsoft Teams service front door. This should be lower than 1.00% for a pass.
+Shows the UDP packet loss measured in a 10 second test audio call from the client to the Microsoft Teams service front door. This should be lower than **1.00%** for a pass.
 
 ### Latency
 
-Shows the UDP latency measured which should be lower than 100ms.
+Shows the measured UDP latency, which should be lower than **100ms**.
 
 #### Jitter
 
-Shows the UDP jitter measured which should be lower than 30ms.
+Shows the measured UDP jitter, which should be lower than **30ms**.
 
 #### Connectivity
 
@@ -202,7 +198,7 @@ Where an SSL certificate is found that isn't provided by Microsoft, we show the 
 
 #### Network path
 
-This section shows the results of an ICMP traceroute to the Exchange Online service front door, the SharePoint Online service front door, and the Microsoft Teams service front door. It is provided for information only and there is no associated network insight. There are three traceroutes provided. A traceroute to outlook.office365.com, a traceroute to the customers SharePoint front end or to microsoft.sharepoint.com if one was not provided, and a traceroute to world.tr.teams.microsoft.com.
+This section shows the results of an ICMP traceroute to the Exchange Online service front door, the SharePoint Online service front door, and the Microsoft Teams service front door. It is provided for information only and there is no associated network insight. There are three traceroutes provided. A traceroute to _outlook.office365.com_, a traceroute to the customers SharePoint front end or to _microsoft.sharepoint.com_ if one was not provided, and a traceroute to _world.tr.teams.microsoft.com_.
 
 ## Connectivity reports
 
@@ -228,7 +224,7 @@ It is currently a preview and we plan to provide updates regularly until we reac
 
 The Microsoft 365 service front door is an entry point on Microsoft's global network where Office clients and services terminate their network connection. For an optimal network connection to Microsoft 365, it is recommended that your network connection is terminated into the closest Microsoft 365 front door in your city or metro.
 
-Note: Microsoft 365 service front door has no direct relationship to the "Azure Front Door Service" product available in the Azure marketplace.
+Note: Microsoft 365 service front door has no direct relationship to the **Azure Front Door Service** product available in the Azure marketplace.
 
 ### What is the best Microsoft 365 service front door?
 
@@ -236,7 +232,7 @@ A best Microsoft 365 service front door (formerly known as an optimal service fr
 
 ### What is an internet egress location?
 
-The internet egress Location is the location where your network traffic exits your enterprise network and connects to the Internet. This is also identified as the location where you have a Network Address Translation (NAT) device and usually where you connect with an Internet Service Provider (ISP). If you see a long distance between your location and your internet egress Location, then this may identify a significant WAN backhaul.
+The internet egress Location is the location where your network traffic exits your enterprise network and connects to the Internet. This is also identified as the location where you have a Network Address Translation (NAT) device and usually where you connect with an Internet Service Provider (ISP). If you see a long distance between your location and your internet egress location, then this may identify a significant WAN backhaul.
 
 ## Related topics
 
