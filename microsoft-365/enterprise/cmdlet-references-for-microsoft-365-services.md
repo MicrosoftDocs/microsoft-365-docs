@@ -37,7 +37,7 @@ For Microsoft 365 PowerShell connection instructions, see [Connect to Microsoft 
   
 ## Exchange Online PowerShell cmdlets
 
-Exchange Online cmdlet reference topics are located in the **Reference** section of the [Exchange Online PowerShell documentation](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+Exchange Online cmdlet reference topics are located in the **Reference** section of the [Exchange Online PowerShell documentation](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
   
 For connection instructions for Exchange Online PowerShell, click [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
   
@@ -56,17 +56,14 @@ For Skype for Business Online cmdlet reference topics, click [Skype for Business
   
 For connection instructions for Skype for Business Online PowerShell, click [Manage Skype for Business Online with PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).
 
-## Security &amp; Compliance Center PowerShell cmdlets
+## Security & Compliance Center PowerShell cmdlets
 
-Microsoft 365 Security &amp; Compliance Center cmdlet reference topics are located in the **Reference** section of the [Exchange Online PowerShell documentation](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+Microsoft 365 Security & Compliance Center cmdlet reference topics are located in the **Reference** section of the [Security & Compliance PowerShell documentation](https://docs.microsoft.com/powershell/exchange/scc-powershell).
   
-For connection instructions for Security &amp; Compliance Center PowerShell, click [Connect to the Security &amp; Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+For connection instructions for Security & Compliance Center PowerShell, click [Connect to the Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
-
-  
 ## See also
 
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-
