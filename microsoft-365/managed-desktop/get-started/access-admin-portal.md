@@ -4,7 +4,6 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 ms.author: jaimeo
 author: jaimeo
-ms.prod: microsoft-365-enterprise
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: normal
