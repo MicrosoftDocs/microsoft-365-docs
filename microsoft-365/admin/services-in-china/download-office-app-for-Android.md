@@ -24,7 +24,7 @@ monikerRange: 'o365-21vianet'
 
 # Office app for Android for Office 365 operated by 21Vianet
 
-The Microsoft Office app for Android combines Word, Excel, and PowerPoint mobile apps into a single app available for download for Android phones. With the Office app for Android,, you can connect to Office 365 just as you would with the Word, Excel, and PowerPoint mobile apps. The Office app for Android download won't affect any existing installations of Word, Excel, and PowerPoint.
+The Microsoft Office app for Android combines Word, Excel, and PowerPoint mobile apps into a single app available for download for Android phones. With the Office app for Android, you can connect to Office 365 just as you would with the Word, Excel, and PowerPoint mobile apps. The Office app for Android download won't affect any existing installations of Word, Excel, and PowerPoint.
 
 A few Office app for Android features aren't available for Office 365 operated by 21Vianet customers:
 
