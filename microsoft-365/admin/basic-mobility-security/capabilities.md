@@ -51,7 +51,7 @@ After June 2020, Android versions later than 9 can't manage password settings ex
 >[!NOTE]
 >Devices already enrolled with earlier OS versions continue to function although the capabilities might change without notice.
 
-If people in your organization use mobile devices that aren't supported by Basic Mobility and Security, you might want to block Exchange ActiveSync app access to Microsoft 365 email for those devices, to help make your organization's data more secure. For steps to block Exchange ActiveSync, see [Manage device access settings in Basic Mobility and Security](manage-device-access-settings-in-basic-mobility-and-security.md).
+If people in your organization use mobile devices that aren't supported by Basic Mobility and Security, you might want to block Exchange ActiveSync app access to Microsoft 365 email for those devices, to help make your organization's data more secure. For steps to block Exchange ActiveSync, see [Manage device access settings in Basic Mobility and Security](manage-device-access-settings.md).
 
 ## Access control for Microsoft 365 email and documents
 
@@ -75,7 +75,7 @@ Note:Policies and access rules created in MDM for Microsoft 365 Business Standar
 
 ## Policy settings for mobile devices
 
-If you create a policy to block access with certain settings turned on, users are blocked from accessing Microsoft 365 resources when using a supported app that is listed in [Access control for Microsoft 365 email and documents](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0?ui=en-us&rs=en-us&ad=us#bkmk_accesscontrol). 
+If you create a policy to block access with certain settings turned on, users are blocked from accessing Microsoft 365 resources when using a supported app that is listed in [Access control for Microsoft 365 email and documents](capabilities.md). 
 
 The settings that can block users from accessing Microsoft 365 resources are in these sections:
 
@@ -237,6 +237,6 @@ For more information, see [Wipe a mobile device in Basic Mobility and Security
 
 ## Related topics
 
-[Overview of Basic Mobility and Security for Microsoft 365](overview-of-basic-mobility-and-security-for-microsoft-365.md)
+[Overview of Basic Mobility and Security for Microsoft 365](overview.md)
 
-[Create device security policies in Basic Mobility and Security](create-device-security-policies-in-basic-mmobility-and-security.md)
+[Create device security policies in Basic Mobility and Security](create-device-security-policies.md)

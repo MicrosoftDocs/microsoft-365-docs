@@ -24,7 +24,7 @@ description: "Set up Basic Mobility and Security to secure and manage your users
 
 The built-in Basic Mobility and Security for Microsoft 365 helps you secure and manage users' mobile devices such as iPhones, iPads, Androids, and Windows phones. You can create and manage device security policies, remotely wipe a device, and view detailed device reports.
 
-Have questions? For a FAQ to help address common questions, see [Basic Mobility and Security Frequently-asked questions (FAQ)](basic-mobility-and-security-frequently-asked-questions.md). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
+Have questions? For a FAQ to help address common questions, see [Basic Mobility and Security Frequently-asked questions (FAQ)](frequently-asked-questions.md). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
 
 Device management is part of the Security & Compliance Center so you'll need to go there to kick off MDM setup.
 
@@ -106,14 +106,14 @@ The next step is to create and deploy device security policies to help protect y
 
      :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Security and Mobility policy settings":::
 
-4. Create and deploy device security policies appropriate for your organization following the steps in [Create device security policies in Basic Mobility and Security](create-device-security-policies-in-basic-mmobility-and-security.md).
+4. Create and deploy device security policies appropriate for your organization following the steps in [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).
 
 >[!TIP]
     - When you create a new policy, you might want to set the policy to allow access and report policy violation where a user device isn't compliant with the policy. This allows you see how many mobile devices are impacted by the policy without blocking access to Microsoft 365 .<br/>- Before you deploy a new policy to everyone in your organization, we recommend you test it on the devices used by a small number of users.<br/>- Also, before you deploy policies, let your organization know the potential impacts of enrolling a device in Basic Mobility and Security. Depending on how you set up the policies, devices that don't comply with policies (non-compliant devices) could be blocked from accessing Microsoft 365. Non-compliant devices might also have apps installed, photos, and other personal information which, on an enrolled device, could be deleted if the device is wiped. For more info, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
     
 ## Make sure users enroll their devices
 
-After you've created and deployed a mobile device management policy, each licensed Microsoft 365 user in your organization that the device policy applies receives an enrollment message the next time they sign into Microsoft 365 from their mobile device. They must complete the enrollment and activation steps before they can access Microsoft 365 email and documents. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device-using-basic-mobility-and-security.md).
+After you've created and deployed a mobile device management policy, each licensed Microsoft 365 user in your organization that the device policy applies receives an enrollment message the next time they sign into Microsoft 365 from their mobile device. They must complete the enrollment and activation steps before they can access Microsoft 365 email and documents. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md).
 
 >[!IMPORTANT]
 >If a user's preferred language isn't supported by the enrollment process, users might receive enrollment notification and steps on their mobile devices in another language. Not all languages supported in Microsoft 365 are currently supported for the enrollment process on mobile devices.
@@ -122,5 +122,5 @@ Users with Android or iOS devices are required to install the Company Portal app
 
 ## Related Topics
 
-[Capabilities of Basic Mobility and Security](capabilities-of-basic-mobility-and-secruity.md)<br/>
-[Create device security policies in Basic Mobility and Security](create-device-security-policies-in-basic-mmobility-and-security.md)
+[Capabilities of Basic Mobility and Security](capabilities.md)<br/>
+[Create device security policies in Basic Mobility and Security](create-device-security-policies.md)
