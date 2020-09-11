@@ -32,13 +32,15 @@ We recommend that these be used together where networking quality status can be 
 
 ## The advanced tests client application
 
-There are two parts to the Microsoft 365 network connectivity test. There is the web site <https://connectivity.office.com> and there is a downloadable Windows client application. The downloadable client runs advanced network connectivity tests and most of the tests require this to be run.
+There are two parts to the Microsoft 365 network connectivity test; the web site <https://connectivity.office.com> and a downloadable Windows client application that runs advanced network connectivity tests. Most of the tests require the application to be run.
 
 The advanced client test is prompted to download from the web site after the web browser tests have completed. It will populate results back into the web page as it runs.
 
 ## Sharing your test report
 
 The test report requires sign-in to your Office 365 account. Your administrator selects how you can share your test report.
+
+![Sharing a link to your test results](../media/m365-mac-perf/m365-mac-perf-share-link.png)
 
 ### Sharing your report with your administrator
 
@@ -52,6 +54,8 @@ Test reports excluding any personal identification are shared with Microsoft emp
 
 You can choose users to share your report with and this is enabled by default. It can also be disabled by your administrator.
 
+![Sharing a link to your test results with a user](../media/m365-mac-perf/m365-mac-perf-share-to-user.png)
+
 ### Sharing with anyone using a ReportID link
 
 You can share your test report with anyone by providing access to a ReportID link. This generates a URL that you can send to someone so that they can bring up the test report without signing in. This is disabled by default and must be enabled by your administrator.
@@ -60,11 +64,11 @@ You can share your test report with anyone by providing access to a ReportID lin
 
 The results are shown in a Summary and Details tab. The summary tab shows a map of the detected network perimeter and a comparison of the network assessment to other Office 365 customers nearby. It also allows for sharing of the test report. Here's what the summary results view looks like.
 
-![O365 network connectivity test summary results](../media/m365-mac-perf/m365-mac-perf-onboarding-tool-summary.png)
+![O365 network connectivity test summary results](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
 
 Here is an example of the details tab output that the tool shows. On the details tab we show a green circle check mark if the result was compared favorably to a threshold. We show a red triangle exclamation point if the result exceeded a threshold indicating a network insight. The following sections describe each of the details tab results rows and explains the thresholds used for network insights.
 
-![O365 network onboarding tool example test results](../media/m365-mac-perf/m365-mac-perf-onboarding-tool-tests.png)
+![O365 network onboarding tool example test results](../media/m365-mac-perf/m365-mac-perf-all-details.png)
 
 ### Your location information
 
