@@ -1,5 +1,5 @@
 ---
-title: "Azure Active Directory classification and sensitivity labels for Microsoft 365 groups"
+title: Azure Active Directory classification and sensitivity labels for Microsoft 365 groups
 ms.reviewer: vijagan
 ms.author: mikeplum
 author: MikePlumleyMSFT
