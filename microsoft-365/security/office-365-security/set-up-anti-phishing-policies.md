@@ -183,7 +183,9 @@ The following impersonation settings are only available in ATP anti-phishing pol
   - **Impersonated users**: The From address contains a protected user.
   - **Impersonated domains**: The From address contains a protected domain.
   - **Unusual characters**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a protected sender or domain.
-
+  
+  Note: Despite the above safety tips being off, if an Exchange mail flow rule (also known as a transport rule) specifies a header named 'X-MS-Exchange-EnableFirstContactSafetyTip', then specific safety tips will be displayed notifying recipients that they often don't get email from the sender or in cases when the recipient gets an email for the first time from the sender.
+  
 - **Mailbox intelligence**: Enables or disables artificial intelligence (AI) that determines user email patterns with their frequent contacts. This setting helps the AI distinguish between legitimate and spoofed email from those contacts. Mailbox intelligence is only available for Exchange Online mailboxes.
 
 - **Mailbox intelligence based impersonation protection**: Enables or disables enhanced impersonation results based on each user's individual sender map. This intelligence allows Microsoft 365 to customize user impersonation detection and better handle false positives. When user impersonation is detected, you can define a specific action to take on the message:
