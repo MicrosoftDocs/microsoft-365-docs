@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: 
+ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,18 +24,17 @@ description: "Set up Basic Mobility and Security to secure and manage your users
 
 The built-in Basic Mobility and Security for Microsoft 365 helps you secure and manage users' mobile devices such as iPhones, iPads, Androids, and Windows phones. You can create and manage device security policies, remotely wipe a device, and view detailed device reports.
 
-Have questions? For a FAQ to help address common questions, see [Basic Mobility and Security Frequently-asked questions (FAQ)](basic-mobility-and-security-frequently-asked-questions.md). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
+Have questions? For a FAQ to help address common questions, see [Basic Mobility and Security Frequently-asked questions (FAQ)](frequently-asked-questions.md). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
 
 Device management is part of the Security & Compliance Center so you'll need to go there to kick off MDM setup.
 
 ## Activate the Basic Mobility and Security service
 
 1. Sign in to Microsoft 365 with your global admin account.
-    
 
 2. Go to [Activate Basic Mobility and Security](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx).
-    
-    It can take some time to activate Basic Mobility and Security. When it finishes, you'll receive an email that explains the next steps to take.
+
+   It can take some time to activate Basic Mobility and Security. When it finishes, you'll receive an email that explains the next steps to take.
 
 ## Set up Mobile Device Management
 
@@ -53,38 +52,36 @@ After you add the two CNAME records, go back to the Security & Compliance Center
 
 To manage iOS devices like iPad and iPhones, you need to create an APNs certificate.
 
-1. Sign in to  Microsoft 365 with your global admin account.   
+1. Sign in to  Microsoft 365 with your global admin account.
 
-2. In your browser type: [https://protection.office.com](https://protection.office.com/).  
+2. In your browser type: [https://protection.office.com](https://protection.office.com/).
 
-3. Select **Data loss prevention** > **Device management**, and choose **APNs Certificate for iOS devices**.   
+3. Select **Data loss prevention** > **Device management**, and choose **APNs Certificate for iOS devices**.
 
-4. On the Apple Push Notification Certificate Settings page, choose **Next**.  
+4. On the Apple Push Notification Certificate Settings page, choose **Next**.
 
 5. Select **Download your CSR file** and save the Certificate signing request to somewhere on your computer that you'll remember. Select **Next**.
-    
+
 6. On the Create an APNs certificate page:
-    
-    - Select Apple APNS Portal to open the Apple Push Certificates Portal.
-    - Sign in with an Apple ID.
 
-    >[!IMPORTANT]
-    >Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
+   - Select Apple APNS Portal to open the Apple Push Certificates Portal.
+   - Sign in with an Apple ID.
 
-    - Select Create a Certificate and accept the Terms of Use.
-    
-    - Browseto the Certificate signing request you downloaded to your computer from Microsoft 365 and selectUpload.
-    
-    - Downloadthe APN certificate created by the Apple Push Certificate Portal to your computer.
+     > [!IMPORTANT]
+     > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
 
-    >[!TIP]
-    >If you're having trouble downloading the certificate, refresh your browser.
+   - Select Create a Certificate and accept the Terms of Use.
+   - Browse to the Certificate signing request you downloaded to your computer from Microsoft 365 and selectUpload.
+   - Download the APN certificate created by the Apple Push Certificate Portal to your computer.
 
-7. Go back to Microsoft 365 and select **Next**.   
+     > [!TIP]
+     > If you're having trouble downloading the certificate, refresh your browser.
 
-8. Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.   
+7. Go back to Microsoft 365 and select **Next**.
 
-9. Select  **Finish**.  
+8. Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
+
+9. Select  **Finish**.
 
 ### Step 3: (Recommended) Set up multi-factor authentication
 
@@ -98,29 +95,34 @@ After you set up MFA, go back to the Security & Compliance Center and navigate t
 
 The next step is to create and deploy device security policies to help protect your Microsoft 365 organization data. For example, you can help prevent data loss if a user loses their device by creating a policy to lock devices after five minutes of inactivity and wipe devices after three sign-in failures.
 
-1. Sign in to Microsoft 365 with your global admin account. 
+1. Sign in to Microsoft 365 with your global admin account.
 
 2. Select [Activate Mobile Device Management](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). If the service is activated, instead the activation steps you'll see a link to [Manage Devices](https://admin.microsoft.com/adminportal/home#/MifoDevices) .
-    
+
 3. Go to **Device policies**.
 
-     :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Security and Mobility policy settings":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Security and Mobility policy settings":::
 
-4. Create and deploy device security policies appropriate for your organization following the steps in [Create device security policies in Basic Mobility and Security](create-device-security-policies-in-basic-mmobility-and-security.md).
+4. Create and deploy device security policies appropriate for your organization following the steps in [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).
 
->[!TIP]
-    - When you create a new policy, you might want to set the policy to allow access and report policy violation where a user device isn't compliant with the policy. This allows you see how many mobile devices are impacted by the policy without blocking access to Microsoft 365 .<br/>- Before you deploy a new policy to everyone in your organization, we recommend you test it on the devices used by a small number of users.<br/>- Also, before you deploy policies, let your organization know the potential impacts of enrolling a device in Basic Mobility and Security. Depending on how you set up the policies, devices that don't comply with policies (non-compliant devices) could be blocked from accessing Microsoft 365. Non-compliant devices might also have apps installed, photos, and other personal information which, on an enrolled device, could be deleted if the device is wiped. For more info, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
-    
+> [!TIP]
+>
+> - When you create a new policy, you might want to set the policy to allow access and report policy violation where a user device isn't compliant with the policy. This allows you see how many mobile devices are impacted by the policy without blocking access to Microsoft 365.
+>
+> - Before you deploy a new policy to everyone in your organization, we recommend you test it on the devices used by a small number of users.
+>
+> - Also, before you deploy policies, let your organization know the potential impacts of enrolling a device in Basic Mobility and Security. Depending on how you set up the policies, devices that don't comply with policies (non-compliant devices) could be blocked from accessing Microsoft 365. Non-compliant devices might also have apps installed, photos, and other personal information which, on an enrolled device, could be deleted if the device is wiped. For more info, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
+
 ## Make sure users enroll their devices
 
-After you've created and deployed a mobile device management policy, each licensed Microsoft 365 user in your organization that the device policy applies receives an enrollment message the next time they sign into Microsoft 365 from their mobile device. They must complete the enrollment and activation steps before they can access Microsoft 365 email and documents. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device-using-basic-mobility-and-security.md).
+After you've created and deployed a mobile device management policy, each licensed Microsoft 365 user in your organization that the device policy applies receives an enrollment message the next time they sign into Microsoft 365 from their mobile device. They must complete the enrollment and activation steps before they can access Microsoft 365 email and documents. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md).
 
->[!IMPORTANT]
->If a user's preferred language isn't supported by the enrollment process, users might receive enrollment notification and steps on their mobile devices in another language. Not all languages supported in Microsoft 365 are currently supported for the enrollment process on mobile devices.
+> [!IMPORTANT]
+> If a user's preferred language isn't supported by the enrollment process, users might receive enrollment notification and steps on their mobile devices in another language. Not all languages supported in Microsoft 365 are currently supported for the enrollment process on mobile devices.
 
 Users with Android or iOS devices are required to install the Company Portal app as part of the enrollment process.
 
 ## Related Topics
 
-[Capabilities of Basic Mobility and Security](capabilities-of-basic-mobility-and-secruity.md)<br/>
-[Create device security policies in Basic Mobility and Security](create-device-security-policies-in-basic-mmobility-and-security.md)
+[Capabilities of Basic Mobility and Security](capabilities.md)<br/>
+[Create device security policies in Basic Mobility and Security](create-device-security-policies.md)
