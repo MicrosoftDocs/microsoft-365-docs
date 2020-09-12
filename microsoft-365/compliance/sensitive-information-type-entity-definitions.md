@@ -8539,28 +8539,58 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
+12 digit number
+
 ### Pattern
 
+12 digit number:
 
+- 4 digits
+- An optional space, dot or hyphen
+- 4 digits
+- An optional space, dot or hyphen
+- 4 digits
 
 ### Checksum
 
-
+Yes
 
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_japanese_my_number_personal finds content that matches the pattern.
+- A keyword from Keywords_japanese_my_number_personal is found.
 
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_japanese_my_number_personal finds content that matches the pattern.
 
 ```xml
-
+      <!-- Japanese My Number – Personal -->
+      <Entity id="98da8e66-7299-4ebd-9f82-c871ab37d3ef" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_japanese_my_number_personal" />
+          <Match idRef="Keywords_japanese_my_number_personal" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_japanese_my_number_personal" />
+        </Pattern>
+      </Entity>
 ```
 
 ### Keywords
 
-#### Keyword_foo_foo
+#### Keyword_japan_my_number_personal
 
-
-#### Keyword_foo_foo_exceptions
+- my number
+- マイナンバー
+- 個人番号
+- 共通番号
+- マイナンバーカード
+- マイナンバーカード番号
+- 個人番号カード
+- 個人識別番号
+- 個人識別ナンバー
+- 通知カード
 
    
 ## Japan passport number
@@ -8781,7 +8811,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_latvia_eu_driver's_license_number**
+#### Keywords_latvia_eu_driver's_license_number
 
 - dl#
 - driver license
@@ -8808,7 +8838,7 @@ This sensitive information type entity is only available in the EU National Iden
 
 11 digits and a hyphen:
   
--  Six digits that correspond to the birth date (DDMMYY) 
+- Six digits that correspond to the birth date (DDMMYY) 
 - A hyphen
 - One digit that corresponds to the century of birth ("0" for 19th century, "1" for 20th century, and "2" for 21st century)
 - Four digits, randomly generated
@@ -8943,7 +8973,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_latvia_eu_passport_number**
+#### Keywords_latvia_eu_passport_number
 
 - passport number
 - latvian passport number
@@ -9092,7 +9122,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_lithuania_eu_driver's_license_number**
+#### Keywords_lithuania_eu_driver's_license_number
 
 - dl#
 - driver license
@@ -9339,7 +9369,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_luxemburg_eu_driver's_license_number**
+#### Keywords_luxemburg_eu_driver's_license_number
 
 - dl#
 - driver license
@@ -9450,12 +9480,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_nation_eu_passport_number**
+#### Keywords_nation_eu_passport_number
 
-passport number
-latvian passport number
-passport no
-passnummer
+- passport number
+- latvian passport number
+- passport no
+- passnummer
 
 ## Luxemburg tax identification number
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
@@ -9478,12 +9508,10 @@ Yes
 ### Definition
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
 - The function  `Func_luxemburg_eu_tax_file_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_luxemburg_eu_tax_file_number` is found. 
     
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
 - The function  `Func_luxemburg_eu_tax_file_number` finds content that matches the pattern. 
     
 ```xml
@@ -9632,7 +9660,6 @@ No
 ### Definition
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
 - The regular expression  `Regex_malta_eu_driver's_license_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_malta_eu_driver's_license_number` is found. 
     
@@ -9648,7 +9675,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_malta_eu_driver's_license_number**
+#### Keywords_malta_eu_driver's_license_number
 
 - dl#
 - driver license
@@ -9675,7 +9702,7 @@ Seven digits followed by one letter
 
 Seven digits followed by one letter:
   
--  Seven digits 
+- Seven digits 
 - One uppercase letter (case sensitive)
     
 ### Checksum
@@ -9685,12 +9712,10 @@ Not applicable
 ### Definition
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
 - The regular expression  `Regex_malta_eu_national_id_card` finds content that matches the pattern. 
 - A keyword from  `Keywords_malta_eu_national_id_card` is found. 
     
 A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
 - The regular expression  `Regex_malta_eu_national_id_card` finds content that matches the pattern. 
     
 ```xml
@@ -9735,7 +9760,7 @@ Seven digits without spaces or delimiters
   
 ### Pattern
 
- Seven digits 
+Seven digits 
   
 ### Checksum
 
@@ -9760,7 +9785,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_malta_eu_passport_number**
+#### Keywords_malta_eu_passport_number
 
 - passport number
 - maltese passport number
@@ -9772,20 +9797,22 @@ This sensitive information type entity is only available in the EU Tax Identific
 
 ### Format
 
-For Maltese nationals: 7 digits and one letter in the specified pattern
+For Maltese nationals:
+- seven digits and one letter in the specified pattern
   
-Non-Maltese nationals and Maltese entities: 9 digits
+Non-Maltese nationals and Maltese entities:
+- nine digits
   
 ### Pattern
 
 Maltese nationals: 7 digits and one letter
   
--  Seven digits 
+- Seven digits 
 - One letter (not case-sensitive)
     
 Non-Maltese nationals and Maltese entities: 9 digits
   
--  Nine digits 
+- Nine digits 
     
 ### Checksum
 
@@ -9854,16 +9881,16 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 ### Format
 
-8-9 digits containing optional spaces
+eight-nine digits containing optional spaces
 
 ### Pattern
 
-8-9 digits:
-- Three digits 
-- A space (optional) 
-- Three digits 
-- A space (optional) 
-- 2-3 digits
+eight-nine digits:
+- three digits 
+- a space (optional) 
+- three digits 
+- a space (optional) 
+- two-three digits
 
 ### Checksum
 
@@ -9948,7 +9975,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_netherlands_eu_driver's_license_number**
+#### Keywords_netherlands_eu_driver's_license_number
 
 - dl#
 - driver license
@@ -9984,12 +10011,10 @@ Yes
 ### Definition
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
 - The function  `Func_netherlands_eu_national_id_card` finds content that matches the pattern. 
 - A keyword from is found.
     
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
 - The function  `Func_netherlands_eu_national_id_card` finds content that matches the pattern. 
     
 ```xml
@@ -10065,7 +10090,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_netherlands_eu_passport_number**
+#### Keywords_netherlands_eu_passport_number
 
 - dutch passport number
 - passport number
@@ -10093,12 +10118,10 @@ Yes
 ### Definition
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
 - The function  `Func_netherlands_eu_tax_file_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_netherlands_eu_tax_file_number` is found. 
     
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
 - The function  `Func_netherlands_eu_tax_file_number` finds content that matches the pattern. 
     
 ```xml
@@ -10154,6 +10177,282 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin no
 - tin#
 
+
+## Netherlands value added tax number
+
+### Format
+
+14 character alphanumeric pattern
+
+### Pattern
+
+14-character alphanumeric pattern:
+
+- N or n
+- L or l
+- optional space, dot or hyphen
+- nine digits
+- optional space, dot or hyphen
+- B or b
+- two digits
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_netherlands_value_added_tax_number finds content that matches the pattern.
+- A keyword from Keywords_netherlands_value_added_tax_number is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_netherlands_value_added_tax_number finds content that matches the pattern.
+
+```xml
+      <!-- Netherlands Value Added Tax Number -->
+      <Entity id="4f320d9b-4972-41ae-b337-88d499bb1ade" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_netherlands_value_added_tax_number" />
+          <Match idRef="Keywords_netherlands_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_netherlands_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_netherlands_value_added_tax_number
+
+- vat number
+- vat no
+- vat#
+- wearde tafoege tax getal
+- btw nûmer
+- btw-nummer
+
+
+## New Zealand bank account number
+
+### Format
+
+14 to 16 digit pattern with optional delimiter
+
+### Pattern
+
+14 to 16 digit pattern with optional delimiter:
+
+- two digits
+- an optional hyphen or space
+- three to four digits
+- an optional hyphen or space
+- seven digits
+- an optional hyphen or space
+- two to three digits
+- an options hyphen or space
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_new_zealand_bank_account_number finds content that matches the pattern.
+- A keyword from Keywords_new_zealand_bank_account_number is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_new_zealand_bank_account_number finds content that matches the pattern.
+
+```xml
+      <!-- New Zealand Bank Account Number -->
+      <Entity id="1a97fc2b-dd2f-48f1-bc4e-2ddf25813956" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_new_zealand_bank_account_number" />
+          <Match idRef="Keywords_new_zealand_bank_account_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_new_zealand_bank_account_number" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_new_zealand_bank_account_number
+
+- account number
+- bank account
+- bank_acct_id
+- bank_acct_branch
+- bank_acct_nbr
+
+
+## New Zealand driver's license number
+
+### Format
+
+eight character alphanumeric pattern
+
+### Pattern
+
+eight character alphanumeric pattern
+
+- two letters 
+- six digits
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_newzealand_driver_license_number finds content that matches the pattern.
+- A keyword from Keywords_newzealand_driver_license_number is found.
+
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_newzealand_driver_license_number finds content that matches the pattern.
+
+```xml
+      <!-- New Zealand Driver License Number -->
+      <Entity id="1924b377-d287-49c9-a737-cfe7a8a2615a" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_newzealand_driver_license_number" />
+          <Match idRef="Keywords_newzealand_driver_license_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_newzealand_driver_license_number" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_new_zealand_drivers_license_number
+
+- driverlicence
+- driverlicences
+- driver lic
+- driver licence
+- driver licences
+- driverslic
+- driverslicence
+- driverslicences
+- drivers lic
+- drivers lics
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's licence
+- driver's licences
+- driverlic#
+- driverlics#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver licence#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's licence#
+- driver's licences#
+- international driving permit
+- international driving permits
+- nz automobile association
+- new zealand automobile association
+
+
+## New Zealand inland revenue number
+
+### Format
+
+eight or nine digits with optional delimiters
+
+### Pattern
+
+eight or nine digits with optional delimiters
+
+- two or three digits
+- an optional space or hyphen
+- three digits
+- an optional space or hyphen
+- three digits
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_new_zealand_inland_revenue_number finds content that matches the pattern.
+- A keyword from Keywords_new_zealand_inland_revenue_number is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_new_zealand_inland_revenue_number finds content that matches the pattern.
+
+```xml
+      <!-- New Zealand Inland Revenue Number -->
+      <Entity id="dd0fe2bc-7bcf-455f-bac1-83b1e3eb25fd" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_new_zealand_inland_revenue_number" />
+          <Match idRef="Keywords_new_zealand_inland_revenue_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_new_zealand_inland_revenue_number" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_new_zealand_inland_revenue_number
+
+- ird no.
+- ird no#
+- nz ird
+- new zealand ird
+- ird number
+- inland revenue number
+
+
 ## New Zealand ministry of health number
 
 ### Format
@@ -10187,14 +10486,69 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 </Entity>
 ```
 
-Keywords
+### Keywords
 
-Keyword_nz_terms
+#### Keyword_nz_terms
 
 - NHI 
 - New Zealand 
 - Health 
 - treatment 
+
+
+## New Zealand social wlefare number
+
+### Format
+
+nine digits
+
+### Pattern
+
+nine digits
+
+- three digits
+- an optional hyphen
+- three digits
+- an optional hyphen
+- three digits
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_newzealand_social_welfare_number finds content that matches the pattern.
+- A keyword from Keywords_newzealand_social_welfare_number is found.
+
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_newzealand_social_welfare_number finds content that matches the pattern.
+
+```xml
+      <!-- Newzealand Social Welfare Number -->
+      <Entity id="20f3c48d-4ac1-4cd2-86bd-34ecc1826e9d" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_newzealand_social_welfare_number" />
+          <Match idRef="Keywords_newzealand_social_welfare_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_newzealand_social_welfare_number" />
+        </Pattern>
+      </Entity>
+    </Version>
+```
+
+### Keywords
+
+#### Keyword_new_zealand_social_welfare_number
+
+- social welfare #
+- social welfare#
+- social welfare No.
+- social welfare number
+- swn#
+
    
 ## Norway identification number
 
@@ -10303,11 +10657,11 @@ This sensitive information type entity is only available in the EU Driver's Lice
 
 14 digits and 2 forward slashes:
   
--  Five digits 
-- A forward slash
-- Two digits
-- A forward slash
-- Seven digits
+- five digits 
+- a forward slash
+- two digits
+- a forward slash
+- seven digits
     
 ### Checksum
 
@@ -10316,7 +10670,6 @@ No
 ### Definition
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
 - The regular expression  `Regex_poland_eu_driver's_license_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_poland_eu_driver's_license_number` is found. 
     
@@ -10332,7 +10685,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_poland_eu_driver's_license_number**
+#### Keywords_poland_eu_driver's_license_number
 
 - dl#
 - driver license
@@ -10365,9 +10718,9 @@ Yes
 ### Definition
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-The function Func_polish_national_id finds content that matches the pattern.
-A keyword from Keyword_polish_national_id_passport_number is found.
-The checksum passes.
+- The function Func_polish_national_id finds content that matches the pattern.
+- A keyword from Keyword_polish_national_id_passport_number is found.
+- The checksum passes.
 
 ```xml
 <!-- Poland Identity Card-->
@@ -10381,7 +10734,7 @@ The checksum passes.
 
 ### Keywords
 
-#### Keyword_polish_national_id_passport_number
+#### Keyword_poland_national_id_passport_number
 
 - Dowód osobisty
 - Numer dowodu osobistego
@@ -10392,7 +10745,7 @@ The checksum passes.
 - dow. os.
 
    
-## Poland National ID (PESEL)
+## Poland national ID (PESEL)
 This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
@@ -10474,11 +10827,72 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-#### Keyword_polish_national_id_passport_number
+#### Keyword_poland_national_id_passport_number
 
 - Numer paszportu
 - Nr. Paszportu
 - Paszport
+
+## Poland REGON number
+
+### Format
+
+nine digit or 14 digit number
+
+### Pattern
+
+nine digit or 14-digit number:
+
+- nine digits
+or 
+- nine digits
+- hyphen
+- five digits
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_polish_regon_number finds content that matches the pattern.
+- A keyword from Keywords_polish_regon_number is found.
+
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_polish_regon_number finds content that matches the pattern.
+
+```xml
+      <!-- Polish REGON Number  -->
+      <Entity id="fc87b421-f437-4f8b-b739-29a735ead0d9" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_polish_regon_number" />
+          <Match idRef="Keywords_polish_regon_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_polish_regon_number" />
+        </Pattern>
+      </Entity>
+```
+### Keywords
+
+#### Keywords_poland_regon_number
+
+- regon id
+- statistical number
+- statistical id
+- statistical no
+- regon number
+- regonid#
+- regonno#
+- company id
+- companyid#
+- companyidno#
+- numer statystyczny
+- numeru regon
+- numerstatystyczny#
+- numeruregon#
+
 
 ## Poland tax identification number
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
@@ -10498,12 +10912,10 @@ Yes
 ### Definition
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
 - The function  `Func_poland_eu_tax_file_number` finds content that matches the pattern. 
 - A keyword from  `Keywords_poland_eu_tax_file_number` is found. 
     
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
 - The function  `Func_poland_eu_tax_file_number` finds content that matches the pattern. 
     
 ```xml
@@ -10523,7 +10935,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keywords_poland_eu_tax_file_number
 
-nip#
+- nip#
 - nip
 - numer identyfikacji podatkowej
 - numeridentyfikacjipodatkowej#
@@ -10648,7 +11060,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_portugal_eu_driver's_license_number**
+#### Keywords_portugal_eu_driver's_license_number
 
 - dl#
 - driver license
@@ -10701,12 +11113,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_portugal_eu_passport_number**
+#### Keywords_portugal_eu_passport_number
 
-passport number
-portuguese passport number
-passport no
-número do passaporte
+- passport number
+- portuguese passport number
+- passport no
+- número do passaporte
 
 ## Portugal tax identification number
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
@@ -10812,7 +11224,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_romania_eu_driver's_license_number**
+#### Keywords_romania_eu_driver's_license_number
 
 - dl#
 - driver license
@@ -10954,7 +11366,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_romania_eu_passport_number**
+#### Keywords_romania_eu_passport_number
 
 - passport number
 - romanian passport number
@@ -11047,6 +11459,115 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - uniqueidentityno
 
 
+## Russia passport number domestic
+
+### Format
+
+ten digit number
+
+### Pattern
+
+ten digit number:
+
+- two digits
+- an optional space or hyphen
+- two digits
+- an optional space
+- six digits
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regex Regex_Russian_Passport_Number_Domestic finds content that matches the pattern.
+- A keyword from Keyword_Russian_Passport_Number is found.
+
+```xml
+      <!-- Russian Passport Number Domestic -->
+      <Entity id="76ec2f5d-cedb-48e1-8070-1998794af445" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_Russian_Passport_Number_Domestic" />
+          <Match idRef="Keyword_Russian_Passport_Number" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_russia_passport_number_domestic
+
+- passport number
+- passport no
+- passport #
+- passport id
+- passportno#
+- passportnumber#
+- паспорт нет
+- паспорт id
+- pоссийской паспорт
+- pусский номер паспорта
+- паспорт#
+- паспортid#
+- номер паспорта
+- номерпаспорта#
+
+
+## Russia passport number international
+
+### Format
+
+nine digit number
+
+### Pattern
+
+nine digit number:
+
+- two digits
+- an optional space or hyphen
+- seven digits
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regex Regex_Russian_Passport_Number_International finds content that matches the pattern.
+- A keyword from Keyword_Russian_Passport_Number is found.
+
+```xml
+      <!-- Russian Passport Number International -->
+      <Entity id="ac5f4878-75e4-4b82-af2d-02e13ea9f411" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_Russian_Passport_Number_International" />
+          <Match idRef="Keyword_Russian_Passport_Number" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keywords_russia_passport_number_international
+
+- passport number
+- passport no
+- passport #
+- passport id
+- passportno#
+- passportnumber#
+- паспорт нет
+- паспорт id
+- pоссийской паспорт
+- pусский номер паспорта
+- паспорт#
+- паспортid#
+- номер паспорта
+- номерпаспорта#
+
 
 ## Saudi Arabia National ID
 
@@ -11098,10 +11619,10 @@ Nine letters and digits
 
 ### Pattern
 
-- Nine letters and digits:
-- The letter "F", "G", "S", or "T" (not case sensitive) 
-- Seven digits 
-- An alphabetic check digit
+- nine letters and digits:
+- the letter "F", "G", "S", or "T" (not case sensitive) 
+- seven digits 
+- an alphabetic check digit
 
 ### Checksum
 
@@ -11156,7 +11677,7 @@ One character followed by seven digits
 One character followed by seven digits
   
 - One letter (not case-sensitive) or digit
--  Seven digits 
+- Seven digits 
     
 ### Checksum
 
@@ -11183,19 +11704,19 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 **Keywords_slovakia_eu_driver's_license_number**
 
-dl#
-driver license
-driver license number
-driver licence
-drivers lic.
-drivers license
-drivers licence
-driver's license
-driver's license number
-driver's licence number
-driving license number
-dlno#
-vodičský preukaz
+- dl#
+- driver license
+- driver license number
+- driver licence
+- drivers lic.
+- drivers license
+- drivers licence
+- driver's license
+- driver's license number
+- driver's licence number
+- driving license number
+- dlno#
+- vodičský preukaz
 
 ## Slovakia national identification number
 This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
@@ -11319,7 +11840,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_slovakia_eu_passport_number**
+#### Keywords_slovakia_eu_passport_number
 
 - passport number
 - slovakian passport number
@@ -11331,11 +11852,11 @@ This sensitive information type entity is only available in the EU Tax Identific
 
 ### Format
 
-10 digits with no spaces or delimiters
+ten digits with no spaces or delimiters
   
 ### Pattern
 
-10 digits
+ten digits
   
 ### Checksum
 
@@ -11413,11 +11934,11 @@ This sensitive information type entity is only available in the EU Driver's Lice
 
 ### Format
 
-Nine digits without spaces and delimiters
+nine digits without spaces and delimiters
   
 ### Pattern
 
-Nine digits
+nine digits
   
 ### Checksum
 
@@ -11442,7 +11963,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_slovenia_eu_driver's_license_number**
+#### Keywords_slovenia_eu_driver's_license_number
 
 - dl#
 - driver license
@@ -11570,12 +12091,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_slovenia_eu_passport_number**
+#### Keywords_slovenia_eu_passport_number
 
-passport number
-slovenian passport number
-passport no
-številka potnega lista
+- passport number
+- slovenian passport number
+- passport no
+- številka potnega lista
 
 ## Slovenia tax identification number
 This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
@@ -11643,7 +12164,6 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin#
 
 
-
 ## South Africa identification number
 
 ### Format
@@ -11653,11 +12173,11 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ### Pattern
 
 13 digits:
-- Six digits in the format YYMMDD which are the date of birth 
-- Four digits 
-- A single-digit citizenship indicator 
-- The digit "8" or "9" 
-- One digit which is a checksum digit
+- six digits in the format YYMMDD which are the date of birth 
+- four digits 
+- a single-digit citizenship indicator 
+- the digit "8" or "9" 
+- one digit which is a checksum digit
 
 ### Checksum
 
@@ -11779,7 +12299,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_spain_eu_driver's_license_number**
+#### Keywords_spain_eu_driver's_license_number
 
 - dlno#
 - dl#
@@ -11827,8 +12347,8 @@ Seven digits followed by one character
 
 Seven digits followed by one character
   
-- Seven digits
-- One digit or letter (not case-sensitive)
+- seven digits
+- one digit or letter (not case-sensitive)
     
 ### Checksum
 
@@ -11916,7 +12436,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Keywords
 
-**Keywords_spain_eu_passport_number**
+#### Keywords_spain_eu_passport_number
 
 - passport
 - spain passport
@@ -12156,9 +12676,9 @@ Ten digits containing a hyphen
 
 Ten digits containing a hyphen:
   
--  Six digits 
-- A hyphen
-- Four digits
+- six digits 
+- a hyphen
+- four digits
     
 ### Checksum
 
@@ -12199,20 +12719,20 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - dlno#
 - körkort
 
-## Sweden National ID
+## Sweden national ID
 This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
-10 or 12 digits and an optional delimiter
+ten or 12 digits and an optional delimiter
 
 ### Pattern
 
-10 or 12 digits and an optional delimiter:
-- 2-4 digits (optional) 
+ten or 12 digits and an optional delimiter:
+- two to four digits (optional) 
 - Six digits in date format YYMMDD 
-- Delimiter of "-" or "+" (optional), plus
-- Four digits
+- delimiter of "-" or "+" (optional), plus
+- four digits
 
 ### Checksum
 
@@ -12242,11 +12762,11 @@ This sensitive information type entity is included in the EU Passport Number sen
 
 ### Format
 
-Eight digits
+eight digits
 
 ### Pattern
 
-Eight consecutive digits
+eight consecutive digits
 
 ### Checksum
 
@@ -12446,7 +12966,6 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin#
 
 
-
 ## SWIFT code
 
 ### Format
@@ -12516,7 +13035,76 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - le numéro BIC 
 - \# BIC 
 - code identificateur de banque 
-   
+
+
+## Swiss SSN AHV number
+
+### Format
+
+13 digit number
+
+### Pattern
+
+13 digit number:
+
+- three digits - 756
+- an optional dot
+- four digits
+- an optional dot
+- four digits
+- an optional dot
+- two digits
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_swiss_social_security_number_ahv finds content that matches the pattern.
+- A keyword from Keywords_swiss_social_security_number_ahv is found.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_swiss_social_security_number_ahv finds content that matches the pattern.
+
+```xml
+      <!-- Swiss SSN AHV Number -->
+      <Entity id="277cfa4b-6eaa-4a1b-9492-099dec849971" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_swiss_social_security_number_ahv" />
+          <Match idRef="Keywords_swiss_social_security_number_ahv" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_swiss_social_security_number_ahv" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_swiss_ssn_AHV_number
+
+- ahv
+- ssn
+- pid
+- insurance number
+- personalidno#
+- social security number
+- personal id number
+- personal identification no.
+- insuranceno#
+- uniqueidno#
+- unique identification no.
+- avs number
+- personal identity no versicherungsnummer
+- identifikationsnummer
+- einzigartige identität nicht
+- sozialversicherungsnummer
+- identification personnelle id
+- numéro de sécurité sociale
+
+BOOKMARK   
 ## Taiwan national identification number
 
 ### Format
