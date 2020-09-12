@@ -1,13 +1,13 @@
 ---
-title: Microsoft 365 compliance center
+title: "Microsoft 365 compliance center"
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
-ms.service: o365-seccomp
 localization_priority: Normal
 description: Learn about the Microsoft 365 compliance center, including what it contains, how to get it, and your next steps.
 ms.collection: M365-security-compliance
