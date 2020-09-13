@@ -18,7 +18,7 @@ description: "Overview of network connectivity in the Microsoft 365 Admin Center
 
 # Network connectivity in the Microsoft 365 Admin Center (preview)
 
-The Microsoft 365 Admin Center now includesaggregated network connectivity metrics collected from your Microsoft 365 tenant and available to view only by administrative users in your tenant. **Network assessments** and **network insights** are displayed in the Microsoft 365 Admin Center under **Health | Connectivity**.
+The Microsoft 365 Admin Center now includes aggregated network connectivity metrics collected from your Microsoft 365 tenant and available to view only by administrative users in your tenant. **Network assessments** and **network insights** are displayed in the Microsoft 365 Admin Center under **Health | Connectivity**.
 
 ![Network performance page](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
@@ -42,7 +42,7 @@ Measurement samples and office locations should start to appear 24 hours after t
 
 ### 2. Add locations and provide LAN Subnet information
 
-For this option neither Windows Location Services nor Wi-Fi are required. You need OneDrive for Windows version 20.161.0811.0001 or above installed on each commputer at the location.
+For this option neither Windows Location Services nor Wi-Fi are required. You need OneDrive for Windows version 20.161 or above installed on each commputer at the location.
 
 You also need to add locations in the Admin Center network connectivity page or to import those from a CSV file. The locations added must include your office LAN Subnet information.
 
@@ -164,3 +164,5 @@ The internet egress location is the location where your network traffic exits yo
 [Microsoft 365 connectivity test in the M365 Admin Center (preview)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)
+
+[Microsoft 365 network connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)
