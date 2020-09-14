@@ -4,6 +4,7 @@ description:  Steps to set up devices and configure Azure features to work with 
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ---
 
