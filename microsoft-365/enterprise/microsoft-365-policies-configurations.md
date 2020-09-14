@@ -27,7 +27,7 @@ This determination should be based on the user account sign-in, the device being
 
 This series of articles describes a set of identity and device access prerequisite configurations and a set of Azure Active Directory (Azure AD) Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
 
-Identity and device access settings and policies are recommended in three tiers: baseline protection, sensitive protection, and protection for environments with highly regulated or classified data. These tiers and their corresponding configuration provide consistent levels of protection across your data, identities, and devices.
+Identity and device access settings and policies are recommended in three tiers: baseline protection, sensitive protection, and protection for environments with highly regulated or classified data. These tiers and their corresponding configurations provide consistent levels of protection across your data, identities, and devices.
 
 These capabilities and their recommendations:
 
