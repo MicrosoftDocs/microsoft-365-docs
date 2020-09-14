@@ -38,9 +38,9 @@ Existing Microsoft 365 customers are eligible to request migration for their ent
 |United Arab Emirates  <br/> |July 15, 2019  <br/> |June 30, 2020  <br/> |
 |South Africa  <br/> |July 25, 2019  <br/> |June 30, 2020  <br/> |
 |Switzerland, Liechtenstein  <br/> |December 10, 2019  <br/> |June 30, 2020  <br/> |
-|Germany  <br/> |Planned  <br/> |Planned  <br/> |
 |Norway  <br/> |April 15, 2020  <br/> |October 31, 2020  <br/> |
-   
+|Germany  <br/> |Planned  <br/> |Planned  <br/> |
+
 ## How to request a move
 
 Eligible customers will see a page in the [Microsoft 365 admin center](https://aka.ms/365admin), which will allow them to request to have their core customer data moved to their new datacenter region.  
@@ -48,11 +48,7 @@ Eligible customers will see a page in the [Microsoft 365 admin center](https://a
 To access the page in the Microsoft 365 admin center, in the navigation pane on the left, expand **Settings**, and then click **Org Settings**.
 Select the tab **Organization profile**, then select the option **Data residency**.
   
-**You may not see this section if one of the following apply**:
-- Your tenant is not eligible for the Office 365 Move Program.  Eligibility is determined by tenant signup country.
-- All of your core customer data at rest is already located in the new geo (see Data Location section of the page). 
-  
-If your organization has data residency requirements and you need to request migration, mark the checkbox and then **Save**.
+You will not see this section if your tenant is not eligible for the Microsoft 365 Move Program.  If your organization has data residency requirements and you need to request migration, mark the checkbox and then **Save**.
   
 ![Datacenter opt-in action screen](../media/dataresidencyflyoutae.jpg)
   
@@ -62,13 +58,13 @@ You should see the text on the **Data residency** section change to indicate **Y
   
 ## What happens after requesting a move?
 
-After requesting a move, we will plan to move you as quickly as our operational constraints allow. Due to the unpredictable nature of many of the constraints, we cannot share a specific date or timeframe for the moves. You will see a notification after the move has completed.
+After requesting a move, we will plan to move you as quickly as our operational constraints allow. Due to the unpredictable nature of many of the constraints, we cannot share a specific date or timeframe for the moves. Customer tenant administrators will see a notification in Message Center after the move for each service has completed.
   
 Moves may take up to 24 months from the request deadline for your country to complete.
   
 ## Microsoft Teams
 
-As of January 2020, customers in eligible Office 365 countries can opt-in for migration of Microsoft Teams chat service data.  Opt-in timelines have been reopened or extended for all eligible countries to give customers an opportunity to consider the migration program with Microsoft Teams in scope. Customers that previously opted-in for a Data Residency move will also have Teams move to their local datacenter geo.
+As of January 2020, customers in eligible Office 365 countries can opt-in for migration of Microsoft Teams chat service data.  Opt-in timelines have been reopened or extended for all eligible countries to give customers an opportunity to consider the migration program with Microsoft Teams in scope. Customers that previously opted-in for a Data Residency move will also have Teams move to their local datacenter geo, no additional action is required from these customers.
 
 ## Related topics
 
