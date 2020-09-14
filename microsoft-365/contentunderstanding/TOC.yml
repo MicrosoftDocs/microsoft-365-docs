@@ -24,6 +24,16 @@
         - name: Set up content understanding
           href: set-up-content-understanding.md
         
+    - name: Content services
+      items:
+
+        - name: Import using SKOS
+          href: import-term-set-skos.md
+        - name: SKOS formatting reference
+          href: skos-format-reference.md
+        - name: Push content type to hub
+          href: push-content-type-to-hub.md
+        
 
 
 

@@ -1,10 +1,9 @@
 ---
 title: 'Set up content understanding (Preview) '
 description: 'How to set up Project Cortex.'
-author: efrene
-ms.author: efrene
-manager: pamgreen
-ms.date: 08/1/2020
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 audience: admin
 ms.topic: article
 ms.service: 
