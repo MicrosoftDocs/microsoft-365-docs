@@ -42,7 +42,7 @@ Select from the following topics to learn how to use PowerShell for Microsoft 36
 
     Start here if you've installed the Microsoft 365 modules and want to use automation commands to manage SharePoint.
 
-- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
+- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 
     Start here if you want to use automation commands to manage Exchange Online.
 
@@ -50,7 +50,7 @@ Select from the following topics to learn how to use PowerShell for Microsoft 36
 
     Start here if you've installed the PowerShell 365 modules and want to migrate your email from pre-existing systems.
 
-- [**Security & Compliance Center**](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [**Security & Compliance Center**](https://docs.microsoft.com/powershell/exchange/scc-powershell)
 
     Start here if you want to use automation commands to manage Security & Compliance Center PowerShell.
 

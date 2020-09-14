@@ -7,7 +7,7 @@ manager: pamgreen
 audience: ITPro
 f1.keywords: NOCSH
 ms.topic: article
-ms.service: o365-seccomp
+O365-seccomp
 localization_priority: Normal
 description: "This article discusses classic Azure Active Directory classification and sensitivity labels."
 ---
