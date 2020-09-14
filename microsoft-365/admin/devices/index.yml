@@ -27,7 +27,7 @@ landingContent:
           - text: Microsoft end-point manager, Microsoft 365 Business Premium, or Basic Mobility and Security?
             url: ../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
   # Card (optional)
-  - title: anage devices and app data with Microsoft Intune
+  - title: Manage devices and app data with Microsoft Intune
     linkLists:
       - linkListType: overview
         links:
