@@ -225,17 +225,17 @@ Workloads like SharePoint, OneDrive, and Teams are built for collaboration. Usin
 
 5. Review (and, as appropriate, edit) your organization's [Safe Attachments policies](set-up-atp-safe-attachments-policies.md) and [Safe Links policies](set-up-atp-safe-links-policies.md).
 
-6. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the _DisallowInfectedFileDownload_ parameter set to *true*.
+6. (Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the _DisallowInfectedFileDownload_ parameter set to `$true`.
 
-   - Setting the parameter to *true* blocks all actions (except Delete) for detected files. People cannot open, move, copy, or share detected files.
+   - `$true` blocks all actions (except Delete) for detected files. People cannot open, move, copy, or share detected files.
+   - `$false` blocks all actions except Delete and Download. People can choose to accept the risk and download a detected file.
 
-   - Setting the parameter to *false* blocks all actions except Delete and Download. People can choose to accept the risk and download a detected file.
-   > [!TIP] To learn more about using PowerShell with Microsoft 365, see [Manage Microsoft 365 with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
+   > [!TIP]
+   > To learn more about using PowerShell with Microsoft 365, see [Manage Microsoft 365 with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
 
 7. Allow up to 30 minutes for your changes to spread to all Microsoft 365 datacenters.
 
-
-#### Now set up alerts for detected files
+### Now set up alerts for detected files
 
 To receive notification when a file in SharePoint Online, OneDrive for Business, or Microsoft Teams has been identified as malicious, you can set up an alert.
 
@@ -261,9 +261,10 @@ To learn more about alerts, see [Create activity alerts in the Security & Compli
 
 > [!NOTE]
 > When you're finished configuring, use these links to start workload investigations:
->- [View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
->- [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
->- [Manage quarantined messages and files as an administrator in Microsoft 365](manage-quarantined-messages-and-files.md) 
+>
+> - [View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+> - [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+> - [Manage quarantined messages and files as an administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
 
 ## Part 6 - Additional settings to configure
 

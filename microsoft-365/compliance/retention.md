@@ -311,7 +311,7 @@ Administrator actions for retention policies and retention labels are saved to t
 
 ## PowerShell cmdlets for retention policies and retention labels
 
-To use the retention cmdlets, you must first [connect to the Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). Then, use any of the following cmdlets:
+To use the retention cmdlets, you must first [connect to the Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell). Then, use any of the following cmdlets:
 
 - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/get-compliancetag)
 

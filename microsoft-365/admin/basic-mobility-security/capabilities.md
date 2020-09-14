@@ -161,9 +161,9 @@ The following option can block users from accessing their Microsoft 365 email if
 |Block connection with removable storage |Yes|Yes|No|
 |Block Bluetooth connection |Yes|Yes|No|
 
-##  Additional settings 
+## Additional settings
 
-You can set the following additional policy settings by using PowerShell cmdlets. For more information, see [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+You can set the following additional policy settings by using Security & Compliance Center PowerShell cmdlets. For more information, see [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell).
 
 |**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|
 |:-----|:-----|:-----|
