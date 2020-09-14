@@ -496,7 +496,7 @@ Send On Behalf Of (AD:publicDelegates) stores the DN of recipients with access t
 Mailbox Permissions that are stored in the mailbox will move with the mailbox when both the principal and the delegate are moved to the target system. For example, the user TestUser_7 is granted FullAccess to the mailbox TestUser_8 in the tenant SourceCompany.onmicrosoft.com. After the mailbox move completes to TargetCompany.onmicrosoft.com, the same permissions are set up in the target directory. Examples using *Get-MailboxPermission* for TestUser_7 in both source and target tenants are shown below. (Exchange commandlets are prefixed with source and target accordingly.) 
  
 Figure 2 shows the output of the mailbox permission before a move. 
-   ***INSERT GRAPHIC***
+
 ```powershell
 PS C:\DEMO Get-SourceMailboxPermission testuser_7 |ft -AutoSize User, AccessRights, IsInherited, Deny
 User                                             AccessRights                                                            IsInherited Deny
@@ -557,16 +557,15 @@ background.** When creating target tenant MailUser objects, you must ensure that
   
    - When the user moves from Contoso to NorthwindTraders, copy the original LegDN \<contosoLegDN> to a x500 proxyAddress in Northwind.  
 
-   - When moving them back, the code will expect that *x500:\<contosoLegDN>* is present in the Contoso tenant recipient object.  
+   - When moving them back, the code will expect that *x500:\<contosoLegDN>* is present in the Contoso tenant recipient object.
+   
    If you are not able to add the *x500:\<contosoLegDN>* to the original source recipient object (Contoso), you may need to remove the *x500:\<contosoLegDN>* from the NorthwindTraders object temporarily. You should add it back to the Northwind Traders object when the move completes. This scenario is being reviewed by engineering.
  
 - **Issue: MailUser objects with “external” primary SMTP addresses are modified/reset to “internal” company claimed domains**
 
    *Background:* MailUser objects are pointers to non-local mailboxes. In the case for cross-tenant mailbox migrations, we use MailUser objects to represent either the source mailbox (from the target organization’s perspective) or target mailbox (from the source organization’s perspective). The MailUsers will have an ExternalEmailAddress (targetAddress) that points to the smtp address of the actual mailbox (ProxyTest\@fabrikam\.onmicrosoft.com) and primarySMTP address that represents the displayed SMTP address of the mailbox user in the directory. Some organizations choose to display the primary SMTP address as an external SMTP address, not as an address owned/verified by the local tenant (such as fabrikam.com rather than as contoso.com).  However, once an Exchange service plan object is applied to the MailUser via licensing operations, the primary SMTP address is modified to show as a domain verified by the local organization (contoso.com). There are two potential reasons:
-
-    - When any Exchange service plan ii [***CHECK FOOTNOTE***] is applied to a MailUser, the Azure AD process starts to enforce proxy scrubbing to ensure that the local organization is not able to send mail out, spoof, or mail from another tenant. Any SMTP address on a recipient object with these service plans will be removed if the address is not verified by the local organization. As is the case in the example, the Fabikam\.com domain is NOT verified by the contoso\.onmicrosoft.com tenant, so the scrubbing removes that fabrikam\.com domain. If you wish to persist these external domain on MailUser, either before the migration or after migration, you need to alter your migration processes to strip licenses after the move completes or before the move to ensure that the users have the expected external branding applied. You will need to ensure that the mailbox object is properly licensed to not affect mail service. 
- 
-    An example script to remove the service plans on a MailUser in the Contoso\.onmicrosoft.com tenant is shown here.
+   
+   - When any Exchange service plan ii [***CHECK FOOTNOTE***] is applied to a MailUser, the Azure AD process starts to enforce proxy scrubbing to ensure that the local organization is not able to send mail out, spoof, or mail from another tenant. Any SMTP address on a recipient object with these service plans will be removed if the address is not verified by the local organization. As is the case in the example, the Fabikam\.com domain is NOT verified by the contoso\.onmicrosoft.com tenant, so the scrubbing removes that fabrikam\.com domain. If you wish to persist these external domain on MailUser, either before the migration or after migration, you need to alter your migration processes to strip licenses after the move completes or before the move to ensure that the users have the expected external branding applied. You will need to ensure that the mailbox object is properly licensed to not affect mail service.<br/><br/>An example script to remove the service plans on a MailUser in the Contoso\.onmicrosoft.com tenant is shown here.
 
     ```powershell
     PS > $LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans 
@@ -576,7 +575,7 @@ background.** When creating target tenant MailUser objects, you must ensure that
     PS > Set-MsolUserLicense -UserPrincipalName proxytest@contoso.com LicenseOptions $lo 
     ```
 
-    Results in the set of ServicePlans assigned are shown here:
+       Results in the set of ServicePlans assigned are shown here:
 
     ```powershell
     PS > (Get-MsolUser -UserPrincipalName proxytest@contoso.com).licenses |select 
@@ -628,7 +627,7 @@ background.** When creating target tenant MailUser objects, you must ensure that
     PrimarySmtpAddress        ExternalDirectoryObjectId            ExternalEmailAddress ------------------        -------------------------            -------------------- proxytest@fabrikam.com e2513482-1d5b-4066-936a-cbc7f8f6f817 SMTP:proxytest@fabrikam.com 
     ```
  
-2. When msExchRemoteRecipientType is set to 8 (DeprovisionMailbox), for onprem MailUsers that are migrated to the target tenant, the proxy scrubbing logic in Azure will remove nonowned domains and reset the primarySMTP to an owned domain. By clearing msExchRemoteRecipientType in the onpremises MailUser, the proxy scrub logic no longer applies.
+   - When msExchRemoteRecipientType is set to 8 (DeprovisionMailbox), for onprem MailUsers that are migrated to the target tenant, the proxy scrubbing logic in Azure will remove nonowned domains and reset the primarySMTP to an owned domain. By clearing msExchRemoteRecipientType in the onpremises MailUser, the proxy scrub logic no longer applies.
 
    Below is the full set of possible Service Plans that include Exchange.
 
