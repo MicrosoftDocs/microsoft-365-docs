@@ -35,7 +35,7 @@ To keep the service performant and responsive, advanced hunting sets various lim
 | CPU resources | Based on tenant size | Every day at 12 midnight | Query editor displays a warning message at 10% consumption and then blocks queries at 100%. |
 |
 
-For limits associated with the streaming API, read [TBD](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-api) 
+For limits associated with the API, [read about advanced hunting APIs](https://docs.microsoft.com/microsoft-365/security/mtp/api-advanced-hunting).
 
 Customers who run multiple queries regularly should track consumption and [apply optimization best practices](advanced-hunting-best-practices.md) to minimize disruption resulting from exceeding these limits.
 
