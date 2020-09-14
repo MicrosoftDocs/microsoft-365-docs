@@ -34,7 +34,7 @@ When the moves are complete, the source system mailbox is converted to mailuser 
 
 Cross-tenant Exchange mailbox migrations are supported for tenants in hybrid or cloud only, or any combination of the two.
 
-## Prepare source and target tenants (organizational configuration)
+## Prepare source and target tenants
 
 ### Overview
 
@@ -50,9 +50,9 @@ Additionally, a Mail Enabled Security group in the source tenant is required pri
 
 For the Preview, you will need to communicate with your trusted partner company (with whom you will be moving mailboxes) to obtain their Office 365 tenant ID. Reference [this Support](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id) article on how to find your tenant ID to share with your partner. This tenant ID is used in the Organization Relationship 'DomainName' field.
 
-https://aad.portal.azure.com/\#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties
-(copy the directory ID to use later)\
-\
+https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties
+(copy the directory ID to use later)
+
 Below is a diagram showing how the process works.
 
 :::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg" alt-text="Diagram shows tenant preparation for migration.":::
@@ -287,10 +287,7 @@ The customer organizations must ensure the below objects and attributes are set 
       -	UserPrincipalName – UPN will align to the user’s NEW identity or target company (for example, user@northwindtraders.onmicrosoft.com). 
       -	Primary SMTPAddress – Primary SMTP address will align to the user’s NEW company (for example, user@northwind.com). 
       -	targetAddress/ExternalEmailAddress – MailUser will reference the user’s current mailbox hosted in source tenant (for example user@contoso.onmicrosoft.com). 
-      -	You cannot add legacy smtp proxy addresses from source mailbox to target MailUser. For example, you cannot maintain contoso.com on the MEU in fabrikam.onmicrosoft.com tenant objects). Domains are associated with one Azure AD or Exchange Online tenant only. 
- 
-    Example target MailUser object
-
+      -	You cannot add legacy smtp proxy addresses from source mailbox to target MailUser. For example, you cannot maintain contoso.com on the MEU in fabrikam.onmicrosoft.com tenant objects). Domains are associated with one Azure AD or Exchange Online tenant only.<br/><br/>Example target MailUser object
    | Attribute             | Value                                                                                                                    |
    |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
    | Alias                 | LaraN                                                                                                                    |
