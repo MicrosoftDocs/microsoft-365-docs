@@ -23,11 +23,11 @@ If you have existing server-based deployments for Exchange, SharePoint, or Skype
 
 ## Deploy
 
-In the deployment phase of your cloud services:
+To deploy your cloud services:
 
 - [Get your services ready](configure-services-and-applications.md)
 - [Migrate your on-premises data to Microsoft 365](migrate-data-to-office-365.md)
-- Deploy your cloud services
+- Get your cloud services set up for your users
   - [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
   - [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
   - [Skype for Business](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
@@ -37,7 +37,7 @@ In the deployment phase of your cloud services:
 
 ## Manage
 
-In the management phase of your cloud services: 
+To manage your cloud services: 
 
 - [Check your service health](view-service-health.md)
 - [Understand your support options](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)

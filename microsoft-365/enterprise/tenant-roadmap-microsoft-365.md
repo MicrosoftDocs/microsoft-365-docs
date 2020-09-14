@@ -25,7 +25,7 @@ A well-planned and executed tenant configuration is critical to getting it ready
 
 ## Plan
 
-In the planning phase of your tenant implementation:
+To plan for your tenant implementation:
 
 - [Understand subscriptions, licenses, and Azure Active Directory (Azure AD) tenants](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [Understand how to use third-party SSL certificates](plan-for-third-party-ssl-certificates.md)
@@ -39,7 +39,7 @@ In the planning phase of your tenant implementation:
 
 ## Deploy
 
-In the deployment phase of your tenant implementation, [add the DNS domains](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) for your organization.
+To deploy your tenant, [add the DNS domains](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) for your organization.
 
 ## Tenants with multiple geographic locations
 
@@ -47,7 +47,7 @@ With Microsoft 365 Multi-Geo, your organization can expand its Microsoft 365 pre
 
 [Get started](microsoft-365-multi-geo.md) in understanding, planning, configuring, and then administering with Microsoft 365 Multi-Geo.
 
-## Moving a tenant's geographic locations
+## Move a tenant's geographic locations
 
 Microsoft continues to open new datacenter geographic locations (geos) for Microsoft 365 services. These new datacenter geos add capacity and compute resources to support customer demand and usage growth. Additionally, the new datacenter geos offer in-geo data residency for core customer data.
 

@@ -78,7 +78,7 @@ Since both 1024 and 2048 bitness are supported for DKIM keys, these directions w
 
 1. When you **already have DKIM configured**, you rotate bitness as follows:
 
-   1. [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (The cmdlet comes from Exchange Online.)
+   1. [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (The cmdlet comes from Exchange Online.)
    1. Run the following command:
 
       ```powershell 
@@ -87,7 +87,7 @@ Since both 1024 and 2048 bitness are supported for DKIM keys, these directions w
 
 1. Or for a **new implementation of DKIM**:
 
-   1. [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (This is an Exchange Online cmdlet.)
+   1. [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (This is an Exchange Online cmdlet.)
    1. Run the following command:
 
       ```powershell

@@ -3,7 +3,7 @@ title: Motion Picture Association of America (MPAA)
 description: Azure successfully completed a formal assessment by the Motion Picture Association of America.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

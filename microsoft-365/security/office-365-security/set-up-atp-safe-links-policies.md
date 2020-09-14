@@ -54,7 +54,7 @@ With ATP Safe Links enabled, if a user clicks on a link in an email and the URL 
 
     To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Make sure that Office clients are configured to use [Modern Authentication](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (this is for ATP Safe Links protection in Office documents).
+- Make sure that Office clients are configured to use [Modern Authentication](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016) (this is for ATP Safe Links protection in Office documents).
 
 - [Learn about ATP Safe Links policy options](#step-4-learn-about-atp-safe-links-policy-options) (in this article).
 
