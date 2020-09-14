@@ -170,7 +170,9 @@ By choosing the settings for retaining and deleting content in your retention po
 
 ### Retaining content for a specific period of time
 
-When you configure a retention policy, you choose to retain content indefinitely or for a specific number of days, months, or years. The duration for how long content is retained is calculated from the age of the content, not from when the retention policy is applied. You can choose whether the age is based on when the content was created or (for OneDrive and SharePoint) when it was last modified.
+When you configure a retention policy, you can choose to retain content indefinitely or for a specific number of days, months, or years. The duration for how long content is retained is calculated from the age of the content, not from when the retention policy is applied. 
+
+For the age of the content, you can also choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Office 365 locations, when the content was last modified.
 
 Examples:
   
