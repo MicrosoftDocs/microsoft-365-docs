@@ -38,11 +38,11 @@ There are four steps to getting started with Basic Mobility and Security:
     
 2. Go to Data loss prevention > Device management > Device policies.
     
-3. Create device management policies, and apply them to groups of users that are set up in security groups. We recommend that you start by deploying the policies to a small test group. For more info, see [Create device security policies in Basic Mobility and Security](create-device-security-policies-in-basic-mmobility-and-security.md).      
+3. Create device management policies, and apply them to groups of users that are set up in security groups. We recommend that you start by deploying the policies to a small test group. For more info, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).      
 
-4. Users who have had a policy applied to them are prompted to enroll their devices when they try to access Microsoft 365 data. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device-using-basic-mobility-and-security.md).
+4. Users who have had a policy applied to them are prompted to enroll their devices when they try to access Microsoft 365 data. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md).
 
-For more details, see [Set up Basic Mobility and Security](set-up-basic-mobility-and-security.md).
+For more details, see [Set up Basic Mobility and Security](set-up.md).
 
 ## I’m trying to set up Basic Mobility and Security but it seems stuck. The Microsoft 365 Service Health has been showing “provisioning” for a while. What can I do?
 
@@ -60,7 +60,7 @@ If you're having trouble getting a device enrolled, first check the following:
     
 - For Android or iOS devices, uninstall and reinstall the Intune Company Portal app on the device.
     
-If enrollment still isn't working, see [Troubleshoot Basic Mobility and Security](troubleshoot-basic-mobility-and-security.md).
+If enrollment still isn't working, see [Troubleshoot Basic Mobility and Security](troubleshoot.md).
 
 ## What's the difference between Intune and Basic Mobility and Security?
 
@@ -68,15 +68,15 @@ Basic Mobility and Security is hosted by the Intune service. It is a subset of
 
 ## How do policies work for Basic Mobility and Security? How do I set them up? Disable them?
 
-After you complete initial setup for Basic Mobility and Security, you create policies and apply them to groups of users in the Security & Compliance Center. Policies require users of the policies to enroll their devices in Basic Mobility and Security before the device can be used to access Microsoft 365 data. The policies that you set up determine settings for mobile devices, for example, how often passwords must be reset or whether data encryption is required. For more information, see [Create device security policies in Basic Mobility and Security](create-device-security-policies-in-basic-mmobility-and-security.md) and [Microsoft 365 compliance center](https://support.microsoft.com/office/7e696a40-b86b-4a20-afcc-559218b7b1b8).
+After you complete initial setup for Basic Mobility and Security, you create policies and apply them to groups of users in the Security & Compliance Center. Policies require users of the policies to enroll their devices in Basic Mobility and Security before the device can be used to access Microsoft 365 data. The policies that you set up determine settings for mobile devices, for example, how often passwords must be reset or whether data encryption is required. For more information, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md) and [Microsoft 365 compliance center](https://support.microsoft.com/office/7e696a40-b86b-4a20-afcc-559218b7b1b8).
 
-For step-by-step instructions for creating and deploying device policies, see [Create device security policies in Basic Mobility and Security](create-device-security-policies-in-basic-mmobility-and-security.md).
+For step-by-step instructions for creating and deploying device policies, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).
 
 If you want to exclude a specific group of users from being affected by policies, you can add a group to the exclusion group.
 
 ## Can I switch from Exchange ActiveSync device management to Basic Mobility and Security for Microsoft 365?
 
-If you’re already using Exchange ActiveSync policies to manage mobile devices, you can start using Basic Mobility and Security by following the steps to set up Basic Mobility and Security. For more information, see [Protect user and device access](https://go.microsoft.com/fwlink/?LinkId=615145) and [Set up Basic Mobility and Security](set-up-basic-mobility-and-security.md).
+If you’re already using Exchange ActiveSync policies to manage mobile devices, you can start using Basic Mobility and Security by following the steps to set up Basic Mobility and Security. For more information, see [Protect user and device access](https://go.microsoft.com/fwlink/?LinkId=615145) and [Set up Basic Mobility and Security](set-up.md).
 
 When you apply the policies that you create in Basic Mobility and Security to groups of users, these policies override Exchange ActiveSync mobile device mailbox policies and device access rules that you’ve previously created in the Exchange admin center for those users.
 
@@ -84,5 +84,5 @@ After a device is enrolled in Basic Mobility and Security, any Exchange ActiveSy
 
 ## I  set up Basic Mobility and Security but now I want to remove it. What are the steps?
 
-Unfortunately, you can't simply "unprovision" Basic Mobility and Security after you've set it up. But you can remove it for groups of users by removing user security groups from the device policies you've created. Or, you can disable it for everyone by removing the device policies so they aren't in place and aren't enforced. For more info, see [Turn off Basic Mobility and Security](turn-off-basic-mobility-and-security.md).
+Unfortunately, you can't simply "unprovision" Basic Mobility and Security after you've set it up. But you can remove it for groups of users by removing user security groups from the device policies you've created. Or, you can disable it for everyone by removing the device policies so they aren't in place and aren't enforced. For more info, see [Turn off Basic Mobility and Security](turn-off.md).
 
