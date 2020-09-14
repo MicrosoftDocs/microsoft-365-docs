@@ -31,7 +31,7 @@ Before you begin, create the site or team that you want to share with the partne
 
 [!INCLUDE [Azure AD Premium P2 license](../../../includes/active-directory-p2-license.md)]
 
-Specialized clouds, such as Azure Germany, and Azure China 21Vianet, are not currently available for use.
+Specialized clouds, such as Azure Germany and Azure China 21Vianet, are not currently available for use.
 
 ## Video demonstration
 
@@ -125,4 +125,3 @@ Once you have copied the link, you can share it with your contact at the partner
 ## See Also
 
 [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)
-
