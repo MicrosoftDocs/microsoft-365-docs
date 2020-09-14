@@ -28,8 +28,8 @@ Here's a breakdown for the device details available to you.
 
 |**Detail**|**What to look for in PowerShell**|
 |:----------------|:------------------------------------------------------------------------------|
-|Device is enrolled in Basic Mobility and Security. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device-using-basic-mobility-and-security.md)|The value of the *isManaged* parameter is:<br/>**True**= device is enrolled.<br/>**False**= device is not enrolled. |
-|Device is compliant with your device security policies. For more info, see [Create device security policies](create-device-security-policies-in-basic-mmobility-and-security.md)|The value of the *isCompliant* parameter is:<br/>**True** = device is compliant with policies.<br/>**False** = device is not compliant with policies.|
+|Device is enrolled in Basic Mobility and Security. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md)|The value of the *isManaged* parameter is:<br/>**True**= device is enrolled.<br/>**False**= device is not enrolled. |
+|Device is compliant with your device security policies. For more info, see [Create device security policies](create-device-security-policies.md)|The value of the *isCompliant* parameter is:<br/>**True** = device is compliant with policies.<br/>**False** = device is not compliant with policies.|
 
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Basic Mobility and Security PowerShell parameters":::
 
@@ -317,6 +317,6 @@ The information is exported to your Windows Desktop as a CSV file. You can use a
 
 [Microsoft Connect Has Been Retired](https://docs.microsoft.com/collaborate/connect-redirect)
 
-[Overview of Basic Mobility and Security](overview-of-basic-mobility-and-security-for-microsoft-365.md)
+[Overview of Basic Mobility and Security](overview.md)
 
 [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721)

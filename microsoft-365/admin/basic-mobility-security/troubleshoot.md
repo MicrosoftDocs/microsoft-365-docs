@@ -48,13 +48,13 @@ To start, check the following:
 
 ## Windows RT
 
-- Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up-basic-mobility-and-security.md).
+- Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up.md).
     
 - Make sure that the user is choosing **Turn On** rather than choosing **Join**.    
 
 ## Windows 10 PC
 
-- Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up-basic-mobility-and-security.md).
+- Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up.md).
     
 - Unless you have Azure Active Directory Premium, make sure that the user is choosing **Enroll in Device Management only** rather than choosing **Connect**.
 
