@@ -42,13 +42,13 @@ This section describes the process for preparing both source and target tenants 
 
 ## Prerequisites
 
-In the tenant-to-tenant mailbox moves preview (and beyond), [**Azure Key Vault**](https://docs.microsoft.com/en-us/azure/key-vault/basic-concepts) is used to establish a tenant pair-specific Azure app to securely store and access the certificate/secret used to authorize and authenticate mailbox migration from one tenant to the other, removing any requirements to share certificates/secrets between tenants. For this reason, an Azure Key Vault subscription is required on the target tenant to enable this feature.
+In the tenant-to-tenant mailbox moves preview (and beyond), [**Azure Key Vault**](https://docs.microsoft.com/azure/key-vault/basic-concepts) is used to establish a tenant pair-specific Azure app to securely store and access the certificate/secret used to authorize and authenticate mailbox migration from one tenant to the other, removing any requirements to share certificates/secrets between tenants. For this reason, an Azure Key Vault subscription is required on the target tenant to enable this feature.
 
 For preview, we recommend using the provided deployment scripts running as Global Admin to configure the Azure Key Vault storage and certificate, Move Mailbox app, EXO Migration Endpoint, and the EXO Organization Relationship.
 
 Additionally, a Mail Enabled Security group in the source tenant is required prior to running setup. These groups are used to scope the list of mailboxes that can move from source (or sometimes referred to as resource) tenant to the target tenant. This allows the source tenant admin to restrict or scope the specific set of mailboxes that need to be moved; preventing unintended users from being migrated.
 
-For the Preview, you will need to communicate with your trusted partner company (with whom you will be moving mailboxes) to obtain their Office 365 tenant ID. Reference [this Support](https://docs.microsoft.com/en-us/onedrive/find-your-office-365-tenant-id) article on how to find your tenant ID to share with your partner. This tenant ID is used in the Organization Relationship 'DomainName' field.
+For the Preview, you will need to communicate with your trusted partner company (with whom you will be moving mailboxes) to obtain their Office 365 tenant ID. Reference [this Support](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id) article on how to find your tenant ID to share with your partner. This tenant ID is used in the Organization Relationship 'DomainName' field.
 
 https://aad.portal.azure.com/\#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties
 (copy the directory ID to use later)\
