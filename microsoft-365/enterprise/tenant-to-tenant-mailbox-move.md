@@ -537,7 +537,6 @@ background.** When creating target tenant MailUser objects, you must ensure that
  >The *contoso.onmicrosoft\.com* address is *not* present in the EmailAddresses/proxyAddresses array.
 
    - When you create cloud MailUser object (using New-MailUser as example), the admin does not have access to the -PrimarySMTPAddress parameter. MailUser creation logic then defaults the primary SMTP address to use -ExternalEmailAddress value passed in. This results in the proxyAddress array including a domain that is NOT owned by the local tenant (such as *SMTP:laran@contoso\.onmicrosoft.com*).  An example object is shown here.
-
     ```powershell
     [target/cloudprovisioned user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses   
     ExternalEmailAddress               EmailAddresses 
