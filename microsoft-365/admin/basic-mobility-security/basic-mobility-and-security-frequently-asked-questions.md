@@ -46,7 +46,7 @@ For more details, see [Set up Basic Mobility and Security](set-up-basic-mobility
 
 ## I’m trying to set up Basic Mobility and Security but it seems stuck. The Microsoft 365 Service Health has been showing “provisioning” for a while. What can I do?
 
-It may take some time to get the service ready for you. When provisioning is complete, you'll see the Mobile Device Management for Microsoft 365 page. If you've waited 24 hours and the status is still provisioning, please contact Support and we'll help figure out what the issue is. For support options, see [Still need help?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp).
+It may take some time to get the service ready for you. When provisioning is complete, you'll see the Basic Mobility and Security page. If you've waited 24 hours and the status is still provisioning, please contact Support and we'll help figure out what the issue is. For support options, see [Still need help?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp).
 
 ## What can I do if device enrollment fails?
 

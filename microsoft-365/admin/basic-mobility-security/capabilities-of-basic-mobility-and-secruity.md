@@ -64,7 +64,7 @@ The supported apps for the different types of mobile devices in the following ta
 
 >[!NOTE]
 - >Support for iOS 10.0 and later versions includes iPhone and iPad devices.
-- >Management of BlackBerry OS devices isn’t supported by Mobile Device Management for Microsoft 365. Use BlackBerry Business Cloud Services (BBCS) from BlackBerry to manage BlackBerry OS devices. Blackberry devices running Android OS are supported as standard Android devices
+- >Management of BlackBerry OS devices isn’t supported by Basic Security and Mobility. Use BlackBerry Business Cloud Services (BBCS) from BlackBerry to manage BlackBerry OS devices. Blackberry devices running Android OS are supported as standard Android devices
 - >Users won’t be prompted to enroll and won’t be blocked or reported for policy violation if they use the mobile browser to access Microsoft 365 SharePoint sites, documents in Office Online, or email in Outlook Web App.
 
 The following diagram shows what happens when a user with a new device signs in to an app that supports access control with Basic Mobility and Security. The user is blocked from accessing Microsoft 365 resources in the app until they enroll their device.
