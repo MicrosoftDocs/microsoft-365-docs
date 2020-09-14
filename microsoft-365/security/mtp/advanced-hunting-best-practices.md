@@ -26,15 +26,10 @@ ms.topic: article
 
 Apply these recommendations to get results faster and avoid timeouts while running complex queries. For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## Understand CPU consumption limits
-Depending on its size, each tenant has access to a set amount of Azure CPU resources allocated for running advanced hunting queries. Advanced hunting checks CPU consumption at regular intervals and displays corresponding warnings when over 10% of the allocated resource is consumed. If a tenant reaches 100% consumption, they are prevented from running queries until the next refresh interval.
+## Understand CPU resource limits
+Depending on its size, each tenant has access to a set amount of CPU resources allocated for running advanced hunting queries. For detailed information about various service limits, [read about advanced hunting limits](advanced-hunting-limits.md).
 
-| Metered activities | Resource  | Size | Refreshed every | Notice and enforcement  |
-| -- | -- | -- | -- | -- | -- | -- | 
-| Manual queries, custom detection rules  | CPU | Based on tenant size | - 15 minutes<br>- Daily | Warn at 10% or more, block at 100% |
-| Queries through the public API  | CPU | Based on tenant size | - Hourly<br>- Daily | Warn at 10% or more, block at 100% |
-
-Customers that run multiple queries regularly should track consumption, applying the optimization guidance in this article to minimize disruption resulting from exceeding the limits.
+Customers who run multiple queries regularly should track consumption and apply the optimization guidance in this article to minimize disruption resulting from exceeding the limits.
 
 ## General optimization tips
 
