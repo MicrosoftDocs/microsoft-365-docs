@@ -620,48 +620,49 @@ background.** When creating target tenant MailUser objects, you must ensure that
 
     ```
  
-   And the user’s PrimarySMTPAddress is no longer scrubbed. The fabrikam.com domain is not owned by the contoso.onmicrosoft.com tenant and will persist as the primary SMTP address shown in the directory.
+     And the user’s PrimarySMTPAddress is no longer scrubbed. The fabrikam.com domain is not owned by the contoso.onmicrosoft.com tenant and will persist as the primary SMTP address shown in the directory.
 
     ```powershell
     PS > get-recipient proxytest | ft -a userprin*, primary*, external*   
     PrimarySmtpAddress        ExternalDirectoryObjectId            ExternalEmailAddress ------------------        -------------------------            -------------------- proxytest@fabrikam.com e2513482-1d5b-4066-936a-cbc7f8f6f817 SMTP:proxytest@fabrikam.com 
     ```
  
+ 
    - When msExchRemoteRecipientType is set to 8 (DeprovisionMailbox), for onprem MailUsers that are migrated to the target tenant, the proxy scrubbing logic in Azure will remove nonowned domains and reset the primarySMTP to an owned domain. By clearing msExchRemoteRecipientType in the onpremises MailUser, the proxy scrub logic no longer applies.
 
-   Below is the full set of possible Service Plans that include Exchange.
+     Below is the full set of possible Service Plans that include Exchange.
 
-   | Name                                              |
-   |---------------------------------------------------|
-   | Advanced eDiscovery Storage (500GB)               |
-   | Customer Lockbox                                  |
-   | Data Loss Prevention                              |
-   | Exchange Enterprise CAL Services (EOP, DLP)       |
-   | Exchange Essentials                               |
-   | Exchange Foundation                               |
-   | Exchange Online (P1)                              |
-   | Exchange Online (Plan 1)                          |
-   | Exchange Online (Plan 2)                          |
-   | Exchange Online Archiving for Exchange Online     |
-   | Exchange Online Archiving for Exchange Server     |
-   | Exchange Online Inactive User Add-on              |
-   | Exchange Online Kiosk                             |
-   | Exchange Online Multi-Geo                         |
-   | Exchange Online Plan 1                            |
-   | Exchange Online POP                               |
-   | Exchange Online Protection                        |
-   | Information Barriers                              |
-   | Information Protection for Office 365 - Premium   |
-   | Information Protection for Office 365 - Standard  |
-   | Insights by MyAnalytics                           |
-   | Microsoft 365 Advanced Auditing                   |
-   | Microsoft Bookings                                |
-   | Microsoft Business Center                         |
-   | Microsoft MyAnalytics (Full)                      |
-   | Office 365 Advanced eDiscovery                    |
-   | Office 365 Advanced Threat Protection (Plan 1)    |
-   | Office 365 Advanced Threat Protection (Plan 2)    |
-   | Office 365 Privileged Access Management           |
-   | Outlook Customer Manager                          |
-   | Premium Encryption in Office 365                  |
+     | Name                                              |
+     |---------------------------------------------------|
+     | Advanced eDiscovery Storage (500GB)               |
+     | Customer Lockbox                                  |
+     | Data Loss Prevention                              |
+     | Exchange Enterprise CAL Services (EOP, DLP)       |
+     | Exchange Essentials                               |
+     | Exchange Foundation                               |
+     | Exchange Online (P1)                              |
+     | Exchange Online (Plan 1)                          |
+     | Exchange Online (Plan 2)                          |
+     | Exchange Online Archiving for Exchange Online     |
+     | Exchange Online Archiving for Exchange Server     |
+     | Exchange Online Inactive User Add-on              |
+     | Exchange Online Kiosk                             |
+     | Exchange Online Multi-Geo                         |
+     | Exchange Online Plan 1                            |
+     | Exchange Online POP                               |
+     | Exchange Online Protection                        |
+     | Information Barriers                              |
+     | Information Protection for Office 365 - Premium   |
+     | Information Protection for Office 365 - Standard  |
+     | Insights by MyAnalytics                           |
+     | Microsoft 365 Advanced Auditing                   |
+     | Microsoft Bookings                                |
+     | Microsoft Business Center                         |
+     | Microsoft MyAnalytics (Full)                      |
+     | Office 365 Advanced eDiscovery                    |
+     | Office 365 Advanced Threat Protection (Plan 1)    |
+     | Office 365 Advanced Threat Protection (Plan 2)    |
+     | Office 365 Privileged Access Management           |
+     | Outlook Customer Manager                          |
+     | Premium Encryption in Office 365                  |
  
