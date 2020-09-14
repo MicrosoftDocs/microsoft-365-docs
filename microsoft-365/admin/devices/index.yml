@@ -27,7 +27,7 @@ landingContent:
           - text: Microsoft end-point manager, Microsoft 365 Business Premium, or Basic Mobility and Security?
             url: ../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
   # Card (optional)
-  - title: Microsoft end-point management (formerly Intune)
+  - title: anage devices and app data with Microsoft Intune
     linkLists:
       - linkListType: overview
         links:
@@ -53,7 +53,7 @@ landingContent:
           - text: Reset Windows devices to factory settings
             url: ../..business/reset-devices-to-factory-settings.md
    # Card (optional)
-  - title: Basic mobility and security
+  - title: Manage devices and app data with Basic mobility and security
     linkLists:
       - linkListType: how-to-guide
         links:
