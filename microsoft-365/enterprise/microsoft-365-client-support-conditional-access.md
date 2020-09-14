@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-o365-administration
+ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
 - MET150

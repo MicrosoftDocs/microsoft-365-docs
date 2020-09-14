@@ -7,7 +7,7 @@ author: brendacarter
 manager: johmar
 audience: Admin
 ms.topic: tutorial
-O365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
