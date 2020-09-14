@@ -141,6 +141,8 @@
                   href: mtp/advanced-hunting-best-practices.md
                 - name: Service limits
                   href: mtp/advanced-hunting-limits.md
+                - name: Handle errors
+                  href: mtp/advanced-hunting-errors.md
                 - name: Extend data coverage
                   href: mtp/advanced-hunting-extend-data.md
                 - name: Data schema
