@@ -56,7 +56,7 @@ To perform certain actions, such as viewing message headers or downloading email
 > [!NOTE]
 > *Preview* is a role and not a role group; the Preview role must be added to an existing role group for Office 365. The Global Administrator role is assigned the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and the Security Administrator and Security Reader roles are assigned in the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## Find and delete suspicious email that was delivered
+## Find suspicious email that was delivered
 
 Threat Explorer is a powerful report that can serve multiple purposes, such as finding and deleting messages, identifying the IP address of a malicious email sender, or starting an incident for further investigation. The following procedure focuses on using Explorer to find and delete malicious email from recipient's mailboxes.
 
@@ -190,7 +190,7 @@ Delivery location shows the results of policies and detections that run post-del
 
 ## Related topics
 
-[Remediate malicious email delivered in Office 365](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)
+[Remediate malicious email delivered in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-worldwide)
 
 [Office 365 Advanced Threat Protection](office-365-ti.md)
 
