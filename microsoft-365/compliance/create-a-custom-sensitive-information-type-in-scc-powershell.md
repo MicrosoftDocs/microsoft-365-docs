@@ -427,6 +427,14 @@ When you upload your rule package XML file, the system validates the XML and che
 - Cannot have an unbounded repeater (such as "\*" or "+") on a group.
     
   For example, "(xx)\*" and "(xx)+" will not pass validation.
+  
+- Keywords have a maximum of 50 characters in Length.  If you have a keyword within a Group exceeding this, a suggested solution is to create the Group of terms as a [Keyword Dictionary](https://docs.microsoft.com/en-us/microsoft-365/compliance/create-a-keyword-dictionary) and reference the GUID of the Keyword Dictionary within the XML structure as part of the Entity for Match or idMatch in the file.
+
+- Each Custom Sensitive Information Type can have a maxium of 2048 keywords total.
+
+- When using the PowerShell Cmdlet there is a maximum return size of the Deserialized Data of approximately 1 megabyte.   This will affect the size of your XML file. Keep the uploaded file limited to a 512 megabyte maximum as a suggested limit for consistent results without error when processing.
+
+- The XML structure does not require formatting characters such as Spaces, Tabs or Carriage Return / Linefeed entries.  Take note of this when optimizing for space on uploads.
     
 If a custom sensitive information type contains an issue that may affect performance, it won't be uploaded and you may see one of these error messages:
   
