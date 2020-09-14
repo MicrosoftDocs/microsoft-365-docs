@@ -289,23 +289,23 @@ The customer organizations must ensure the below objects and attributes are set 
       -	targetAddress/ExternalEmailAddress – MailUser will reference the user’s current mailbox hosted in source tenant (for example user@contoso.onmicrosoft.com). 
       -	You cannot add legacy smtp proxy addresses from source mailbox to target MailUser. For example, you cannot maintain contoso.com on the MEU in fabrikam.onmicrosoft.com tenant objects). Domains are associated with one Azure AD or Exchange Online tenant only.
  
- Example target MailUser object
+    Example target MailUser object
  
-   | Attribute             | Value                                                                                                                    |
-   |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
-   | Alias                 | LaraN                                                                                                                    |
-   | RecipientType         | MailUser                                                                                                                 |
-   | RecipientTypeDetails  | MailUser                                                                                                                 |
-   | UserPrincipalName     | LaraN@northwintraders\.onmicrosoft.com                                                                                    |
-   | PrimarySmtpAddress    | Lara\.Newton@northwind.com                                                                                                |
-   | ExternalEmailAddress  | SMTP:LaraN@contoso\.onmicrosoft.com                                                                                       |
-   | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
-   | LegacyExchangeDN      | /o=First Organization/ou=Exchange Administrative Group                                                                   |
-   |                       | (FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035Lara                                                  |
-   | EmailAddresses        | x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c8190  |
-   |                       | 7273f1f9-Lara                                                                                                            |
-   |                       | smtp:LaraN@northwindtraders\.onmicrosoft.com                                                                              |
-   |                       | SMTP:Lara\.Newton@northwind.com                                                                                           |
+    | Attribute             | Value                                                                                                                    |
+    |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
+    | Alias                 | LaraN                                                                                                                    |
+    | RecipientType         | MailUser                                                                                                                 |
+    | RecipientTypeDetails  | MailUser                                                                                                                 |
+    | UserPrincipalName     | LaraN@northwintraders\.onmicrosoft.com                                                                                    |
+    | PrimarySmtpAddress    | Lara\.Newton@northwind.com                                                                                                |
+    | ExternalEmailAddress  | SMTP:LaraN@contoso\.onmicrosoft.com                                                                                       |
+    | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
+    | LegacyExchangeDN      | /o=First Organization/ou=Exchange Administrative Group                                                                   |
+    |                       | (FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035Lara                                                  |
+    | EmailAddresses        | x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c8190  |
+    |                       | 7273f1f9-Lara                                                                                                            |
+    |                       | smtp:LaraN@northwindtraders\.onmicrosoft.com                                                                              |
+    |                       | SMTP:Lara\.Newton@northwind.com                                                                                           |
 
    Example source Mailbox object 
 
