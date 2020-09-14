@@ -533,8 +533,8 @@ background.** When creating target tenant MailUser objects, you must ensure that
      SMTP:laran@contoso.onmicrosoft.com {SMTP:lara.newton@northwind.com} 
      ```
 
- >[!Note]
- >The *contoso.onmicrosoft\.com* address is *not* present in the EmailAddresses/proxyAddresses array.
+   >[!Note]
+   >The *contoso.onmicrosoft\.com* address is *not* present in the EmailAddresses/proxyAddresses array.
 
    - When you create cloud MailUser object (using New-MailUser as example), the admin does not have access to the -PrimarySMTPAddress parameter. MailUser creation logic then defaults the primary SMTP address to use -ExternalEmailAddress value passed in. This results in the proxyAddress array including a domain that is NOT owned by the local tenant (such as *SMTP:laran@contoso\.onmicrosoft.com*).  An example object is shown here.
     ```powershell
@@ -620,14 +620,14 @@ background.** When creating target tenant MailUser objects, you must ensure that
 
     ```
  
-     And the user’s PrimarySMTPAddress is no longer scrubbed. The fabrikam.com domain is not owned by the contoso.onmicrosoft.com tenant and will persist as the primary SMTP address shown in the directory.
+       And the user’s PrimarySMTPAddress is no longer scrubbed. The fabrikam.com domain is not owned by the contoso.onmicrosoft.com tenant and will persist as the primary SMTP address shown in the directory.
 
     ```powershell
     PS > get-recipient proxytest | ft -a userprin*, primary*, external*   
     PrimarySmtpAddress        ExternalDirectoryObjectId            ExternalEmailAddress ------------------        -------------------------            -------------------- proxytest@fabrikam.com e2513482-1d5b-4066-936a-cbc7f8f6f817 SMTP:proxytest@fabrikam.com 
     ```
  
- 
+ <br/><br/>
    - When msExchRemoteRecipientType is set to 8 (DeprovisionMailbox), for onprem MailUsers that are migrated to the target tenant, the proxy scrubbing logic in Azure will remove nonowned domains and reset the primarySMTP to an owned domain. By clearing msExchRemoteRecipientType in the onpremises MailUser, the proxy scrub logic no longer applies.
 
      Below is the full set of possible Service Plans that include Exchange.
