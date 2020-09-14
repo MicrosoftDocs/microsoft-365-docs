@@ -26,7 +26,17 @@ ms.topic: article
 
 Apply these recommendations to get results faster and avoid timeouts while running complex queries. For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## General guidance
+## Understand CPU consumption limits
+Depending on its size, each tenant has access to a set amount of Azure CPU resources allocated for running advanced hunting queries. Advanced hunting checks CPU consumption at regular intervals and displays corresponding warnings when over 10% of the allocated resource is consumed. If a tenant reaches 100% consumption, they are prevented from running queries until the next refresh interval.
+
+| Metered activities | Resource  | Size | Refreshed every | Notice and enforcement  |
+| -- | -- | -- | -- | -- | -- | -- | 
+| Manual queries, custom detection rules  | CPU | Based on tenant size | - 15 minutes<br>- Daily | Warn at 10% or more, block at 100% |
+| Queries through the public API  | CPU | Based on tenant size | - Hourly<br>- Daily | Warn at 10% or more, block at 100% |
+
+Customers that run multiple queries regularly should track consumption, applying the optimization guidance in this article to minimize disruption resulting from exceeding the limits.
+
+## General optimization tips
 
 - **Size new queries**—If you suspect that a query will return a large result set, assess it first using the [count operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator). Use [limit](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) or its synonym `take` to avoid large result sets.
 - **Apply filters early**—Apply time filters and other filters to reduce the data set, especially before using transformation and parsing functions, such as [substring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction), [replace()](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction), [trim()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction), [toupper()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction), or [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). In the example below, the parsing function [extractjson()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) is used after filtering operators have reduced the number of records.
