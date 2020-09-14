@@ -24,10 +24,10 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-To keep the service performant and responsive, advanced hunting sets various limits to queries run manually on the editor and by [custom detection rules](custom-detection-rules.md). Refer to the following table to understand these limits.
+To keep the service performant and responsive, advanced hunting sets various limits for queries run manually on the editor and by [custom detection rules](custom-detection-rules.md). Refer to the following table to understand these limits.
 
-| Limit type | Size | Refresh cycle | Description |
-| -- | -- | -- | -- |
+| Limit | Size | Refresh cycle | Description |
+|--|--|--|--|
 | Data range | 30 days | Every query | Each query can look up data from up to the past 30 days. |
 | Result set | 10,000 rows | Every query | Each query can return up to 10,000 records. |
 | Timeout | 10 minutes | Every query | Each query can run for up to 10 minutes. If it does not complete within 10 minutes, the service displays an error.
