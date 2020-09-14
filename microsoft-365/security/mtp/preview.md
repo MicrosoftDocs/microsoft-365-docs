@@ -52,6 +52,7 @@ You'll know you have preview features turned on when you see that the **Turn on 
 ## Preview features
 The following features and enhancements are currently available on preview:
 
+- **[Microsoft Threat Protection APIs](api-overview.md)** - The lop-level Microsoft Threat Protection APIs will enable you to automate workflows based on the shared incident and advanced hunting tables. 
 - **[IdentityDirectoryEvents table in advanced hunting](advanced-hunting-identitydirectoryevents-table.md)** — Find events involving an on-premises domain controller running Active Directory (AD). This table covers a range of identity-related events as well as system events on the domain controller.
 - **[AssignedIPAddresses() function](advanced-hunting-assignedipaddresses-function.md)** — Use this function in advanced hunting to quickly obtain the latest IP addresses that have been assigned to a device or the most recent IP addresses from a specified point in time.
 - **[Take action in advanced hunting](advanced-hunting-take-action.md)** — Quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md).
