@@ -34,9 +34,9 @@ To use sensitivity labels with these standalone editions of Office on Windows co
 
 ## Support for sensitivity label capabilities in apps
 
-For each capability, the following tables list the minimum version you need for that app to support sensitivity labels using built-in labeling. Or, if the label capability is in public preview or under review for a future release.
+For each capability, the following tables list the minimum Office version you need for that app to support sensitivity labels using built-in labeling. Or, if the label capability is in public preview or under review for a future release. Use the [Microsoft 365 roadmap](https://aka.ms/MIPC/Roadmap) for details about future releases.
 
-New versions of the apps are made available at different times for different update channels. For more information, including how to configure your update channel so that you can test a new labeling capability that you're interested in, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels). New capabilities that are in private preview are not included in the table but you might be able to join these previews by nominating your organization for the [Microsoft Information Protection private preview program](https://aka.ms/mip-preview).
+New versions of Office apps are made available at different times for different update channels. For more information, including how to configure your update channel so that you can test a new labeling capability that you're interested in, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels). New capabilities that are in private preview are not included in the table but you might be able to join these previews by nominating your organization for the [Microsoft Information Protection private preview program](https://aka.ms/mip-preview).
 
 > [!NOTE]
 > The names of the update channels for Office apps have recently changed. For example, Monthly Channel is now Current Channel, and Office Insider is now Beta Channel. For more information, see [Changes to update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/update-channels-changes).

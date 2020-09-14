@@ -71,7 +71,7 @@ This topic explains how create these mail flow rules in the Exchange admin cente
        - `If you are unable to view the content of this email\, please`
        - `\>(safe )?unsubscribe( here)?\</a\>`
        - `If you do not wish to receive further communications like this\, please`
-       - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
+       - `<img height="?1"? width="?1"? sr\c=.?http\://`
        - `To stop receiving these+emails\:http\://`
        - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
        - `no longer (wish )?(to )?(be sent|receive) w+ email`
