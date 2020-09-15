@@ -26,11 +26,11 @@ You can import a term set using the SKOS format. We recommend keeping your impor
  
 5.	Create the import file that contains the term sets & terms you wish to import.
 
-5.	Under **File format**, select **SKOS (*.ttl)**.
+6.	Under **File format**, select **SKOS (*.ttl)**.
 
-6.	Click **Browse** and navigate to and add your import file.
+7.	Click **Browse** and navigate to and add your import file.
 
-7.	Click **Import**. Do not close the panel until the import completes.
+8.	Click **Import**. Do not close the panel until the import completes.
 
 On successful import of the file, a success message will be displayed, and the term store will refresh and you can navigate to the newly created term sets.
 
