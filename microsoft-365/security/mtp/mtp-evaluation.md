@@ -52,7 +52,7 @@ There are three phases in creating a Microsoft Threat Protection trial lab envir
 
 ## In scope
 
-The following is in scope for this trial lab environment guide:
+The following is in scope for this guide:
 -   Set up Azure Active Directory
 -   Set up Microsoft Threat Protection
     -   Sign up for Microsoft 365 E5 Trial or use your full license if you are running a pilot
