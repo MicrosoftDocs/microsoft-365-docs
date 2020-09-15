@@ -67,10 +67,13 @@ By default, users can't open, move, copy, or share malicious files that are dete
 To prevent users from downloading malicious files, [connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) and run the following command:
 
 ```powershell
-Set-SPOTenant -EnableATPForSPOTeamsODB $true
+Set-SPOTenant -DisallowInfectedFileDownload $true
 ```
 
-Note that this setting still allows users to delete malicious files.
+**Notes**:
+
+- This setting affects both users and admins.
+- People can still delete malicious files.
 
 For detailed syntax and parameter information, see [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).
 
