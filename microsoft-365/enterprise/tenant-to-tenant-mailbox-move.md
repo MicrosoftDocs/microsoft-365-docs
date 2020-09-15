@@ -9,7 +9,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.date: 09/09/2020
-ms.reviewer: martincoetzer
+ms.reviewer: georgiah
 ms.custom: 
 - it-pro
 ms.collection: 
@@ -18,15 +18,13 @@ ms.collection:
 
 # Tenant-to-tenant mailbox move
 
-## Overview
-
 This article describes the process for tenant-to-tenant mailbox moves and provides guidance on how to prepare source and target tenants for the content move. 
 
 Currently, when an Exchange Online tenant needs to move mailboxes to another tenant in the same Exchange Online service, you need to completely offboard and then onboard to a new tenant. With the new cross-tenant mailbox migration feature, tenant administrators in both source and target tenants can move mailboxes between the tenants with minimal infrastructure dependencies in their on-premises systems. This removes the need to offboard and onboard the mailbox.
 
 Commonly during mergers or divestitures, customers need the ability to move users and content into a new tenant. When the tenant administrator executes the move, it’s called a Pull move (just as with on-premise to cloud onboarding migrations). 
 
-Cross-tenant Exchange mailbox moves fully self-serviced by tenant administrators, using well known interfaces that can be scripted into the larger workflows needed to transition users to their new organization. Administrators can use the New-MigrationBatch commandlet (available through the Move Mailboxes management role) to execute tenant-to-tenant moves. The move process will include tenant authorization checks during mailbox synchronization and finalization. 
+Cross-tenant Exchange mailbox moves fully self-serviced by tenant administrators, using well known interfaces that can be scripted into the larger workflows needed to transition users to their new organization. Administrators can use the New-MigrationBatch cmdlet (available through the Move Mailboxes management role) to execute tenant-to-tenant moves. The move process will include tenant authorization checks during mailbox synchronization and finalization. 
  
 Users migrating must be present in the target Exchange Online system (as mailusers) marked with specific attributes to enable the tenant-to-tenant moves. The system will fail moves for users that are not properly set up in the target system. 
 
@@ -36,25 +34,23 @@ Cross-tenant Exchange mailbox migrations are supported for tenants in hybrid or 
 
 ## Prepare source and target tenants (organizational configuration)
 
-### Overview
-
 This describes the process for preparing both source and target tenants for cross-tenant mailbox migrations. In the cross-tenant mailbox moves feature, source and target tenant configurations have different prerequisites and configuration steps. This section does not include the specific steps required to prepare the mailbox user objects in either the source or target directory, nor does it include the sample command to submit a migration batch. Please see Prepare source and target directories for this information.
 
 The Cross-tenant Exchange mailbox migration feature provides authorization and scoping for tenant-to-tenant migrations. Using the Azure Enterprise application and Key Vault storage solutions, tenant admins are now empowered to manage both authorization and scoping of Exchange Online mailbox migrations from one tenant to another. Tenant-to-tenant mailbox moves supports an invitation and consent model to establish an Azure Active Directory (Azure AD) application used for authentication between a tenant pair. Additional components such as an Organization Relationship and a migration endpoint are also required.
 
 ## Prerequisites
 
-In the tenant-to-tenant mailbox moves preview (and beyond), [**Azure Key Vault**](https://docs.microsoft.com/azure/key-vault/basic-concepts) is used to establish a tenant pair-specific Azure app to securely store and access the certificate/secret used to authorize and authenticate mailbox migration from one tenant to the other, removing any requirements to share certificates/secrets between tenants. For this reason, an Azure Key Vault subscription is required on the target tenant to enable this feature.
+In the tenant-to-tenant mailbox moves preview (and beyond), [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts) is used to establish a tenant pair-specific Azure app to securely store and access the certificate/secret used to authorize and authenticate mailbox migration from one tenant to the other, removing any requirements to share certificates/secrets between tenants. For this reason, an Azure Key Vault subscription is required on the target tenant to enable this feature.
 
 Before starting, be sure you have the necessary permissions to run the deployment scripts in order to configure the Azure Key Vault storage and certificate, Move Mailbox app, EXO Migration Endpoint, and the EXO Organization Relationship. 
 
-Additionally, a Mail Enabled Security group in the source tenant is required prior to running setup. These groups are used to scope the list of mailboxes that can move from source (or sometimes referred to as resource) tenant to the target tenant. This allows the source tenant admin to restrict or scope the specific set of mailboxes that need to be moved; preventing unintended users from being migrated. 
-For the Preview, you will need to communicate with your trusted partner company (with whom you will be moving mailboxes) to obtain their Office 365 tenant ID. Reference [this Support article](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id) on how to find your tenant ID to share with your partner. This tenant ID is used in the Organization Relationship ‘DomainName’ field.
+Additionally, a mail-enabled security group in the source tenant is required prior to running setup. These groups are used to scope the list of mailboxes that can move from source (or sometimes referred to as resource) tenant to the target tenant. This allows the source tenant admin to restrict or scope the specific set of mailboxes that need to be moved; preventing unintended users from being migrated. 
 
-https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties
-(copy the directory ID to use later)
+For the Preview, you will need to communicate with your trusted partner company (with whom you will be moving mailboxes) to obtain their Microsoft 365 tenant ID. This tenant ID is used in the Organization Relationship ‘DomainName’ field.
 
-Below is a diagram showing how the process works.
+To obtain the tenant ID of a subscription sign-in to the Microsoft 365 admin center and go to [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). Click the copy icon for the Tenant ID property to copy it to the clipboard.
+
+Here is how the process works.
 
 :::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg" alt-text="Diagram shows tenant preparation for migration.":::
 
@@ -62,33 +58,23 @@ Below is a diagram showing how the process works.
 
 At a high level, the following configuration actions take place when executing the setup scripts.
 
-#### Target tenant
+#### Prepare the target tenant
 
-1.	If an existing Azure Resource Group is not provided, a new one is created (SCRIPT).
+1. If an existing Azure Resource Group is not provided, a new one is created (SCRIPT).
+2. If an existing Key Vault is not provided, a new one is created (SCRIPT).
+3. A new Access Policy is created for the Office 365 Exchange Online Mailbox Migration app (SCRIPT).
+4. A new certificate is created (or existing one, if specified) to hold the secret to the Migration app (SCRIPT).
+5. A new Azure AD application is created (SCRIPT).
+6. The certificate/secret is uploaded to the migration app (SCRIPT).
+7. Mailbox migration permissions are assigned to the application (SCRIPT).
+8. The deployment script pauses until target admin consents to their own application (SCRIPT).
+9. The target tenant admin consents to the permissions given to the application (MANUAL).
+10. An Organization Relationship is created to the target tenant (SCRIPT).
+11. A migration endpoint is created to pull mailboxes to the target tenant (SCRIPT).
 
-2.	If an existing Key Vault is not provided, a new one is created (SCRIPT).
+#### Prepare the source tenant
 
-3.	A new Access Policy is created for the Office 365 Exchange Online Mailbox Migration app (SCRIPT).
-
-4.	A new certificate is created (or existing one, if specified) to hold the secret to the Migration app (SCRIPT).
-
-5.	A new Azure AD application is created (SCRIPT).
-
-6.	The certificate/secret is uploaded to the migration app (SCRIPT).
-
-7.	Mailbox migration permissions are assigned to the application (SCRIPT).
-
-8.	The deployment script pauses until target admin consents to their own application (SCRIPT).
-
-9.	Target admin consents to the permissions given to the application (MANUAL).
-
-10.	 An Organization Relationship is created to the target tenant (SCRIPT).
-
-11.	A migration endpoint is created to pull mailboxes to the target tenant (SCRIPT).
-
-#### Source tenant
-
-1.	Source Admin accepts consent to Mailbox Migration app invitation from Target (MANUAL).
+1. The source tenant admin accepts consent to Mailbox Migration app invitation from the Target tenant (MANUAL).
 
 2.	Source Admin creates a Mail Enabled Security group in their tenant to contain the list of mailboxes allowed to be moved by the migration application (MANUAL).
 
@@ -96,15 +82,15 @@ At a high level, the following configuration actions take place when executing t
 
 #### Step-by-step instructions for target tenant admin
 
-1.	Download the script for the target tenant setup from the GitHub repository (you made need to create a GitHub account to access the script if this is your first time), here: https://github.com/microsoft/cross-tenant. Script name: SetupCrossTenantRelationshipForTargetTenant.ps1.
+1. Download the SetupCrossTenantRelationshipForTargetTenant.ps1 script for the target tenant setup from the [GitHub repository](https://github.com/microsoft/cross-tenant). You may need to create a GitHub account to access the script if this is your first time using GitHub.
 
-2.	Save the script (SetupCrossTenantRelationshipForTargetTenant) to the machine where you will be executing the script from.
+2. Save the script (SetupCrossTenantRelationshipForTargetTenant.ps1) to the machine where you will be executing the script from.
 
-3.	Create a Remote PowerShell connection to Exchange Online target tenant. Again, make sure you have the necessary permissions to run the deployment scripts in order to configure the Azure Key Vault storage and certificate, Move Mailbox app, EXO Migration Endpoint, and the EXO Organization Relationship.
+3. Create a Remote PowerShell connection to Exchange Online target tenant. Again, make sure you have the necessary permissions to run the deployment scripts in order to configure the Azure Key Vault storage and certificate, Move Mailbox app, EXO Migration Endpoint, and the EXO Organization Relationship.
 
-4.	Change directory to the script location or verify the script is currently saved to the location currently in your RPS session.
+4. Change directory to the script location or verify the script is currently saved to the location currently in your RPS session.
 
-5.	Run the script with the following required parameters and values.
+5. Run the script with the following required parameters and values.
 
     | Parameter                                   | Value                                                                                                                                                                                                                                                                                          |
     |---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -122,7 +108,7 @@ At a high level, the following configuration actions take place when executing t
     | -KeyVaultAuditStorageAccountName            | [Optional] The storage account where Key Vault’s audit logs would be stored.                                                                                                                                                                                                                   |
     | -KeyVaultAuditStorageResourceGroup          | [Optional] The resource group that contains the storage account for storing Key Vault audit logs.                                                                                                                                                                                             |
 
-6. The script will pause and ask you to accept or consent to the Exchange mailbox migration app that was created during this process.
+6. The script will pause and ask you to accept or consent to the Exchange mailbox migration app that was created during this process. Here is an example.
 
     ```powershell
     PS C:\Users\Admin\scripts\T2TMovesV2> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain contoso.onmicrosoft.com -ResourceTenantAdminEmail admin@contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ResourceTenantId ksagjid39-ede2-4d2c-98ae-874709325b00 -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
@@ -148,28 +134,26 @@ At a high level, the following configuration actions take place when executing t
 
 7. A URL will be logged in the RPS screen. Copy the link provided for your tenant consent and paste it into a browser window.
 
-8.	Sign in with your Global Admin credentials. When the following screen is presented, select 
- **Accept**.
+8.	Sign in with your Global Admin credentials. When the following screen is presented, select **Accept**.
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Accept permissions dialog box":::
     
 9.	Toggle back to the RPS window and select the **Enter** key to proceed.
 
-10.	The script will configure the remaining setup objects.
+10.	The script will configure the remaining setup objects. Here is an example.
 
     ```powershell
     Successfully sent invitation to admin@contoso.onmicrosoft.com
     Setting up exchange components on target tenant: fabrikam.onmicrosoft.com
     MigrationEndpoint created in fabrikam.onmicrosoft.com for target contoso.onmicrosoft.com
     Exchange setup complete. Migration endpoint details are available in $MigrationEndpoint variable
-
     ```
 
 The target admin setup is complete!
 
 #### Step-by-step instructions for source tenant admin
 
-1.  Sign in to your mailbox as the -ResourceTenantAdminEmail specified by the target admin during their setup. Find the email invitation from the target tenant, and then select the **Get Started** button.
+1.  Sign in to your mailbox as the -ResourceTenantAdminEmail specified by the target admin during their setup. Find the email invitation from the target tenant, and then choose the **Get Started** button.
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="You've been invided dialog box":::
 
@@ -182,9 +166,9 @@ The target admin setup is complete!
 
 3.  In either Microsoft Admin Center or Remote PowerShell, create a Mail Enabled Security Group(s) to control the list of mailboxes allowed by the target tenant to pull (move) from the source tenant to the target tenant. You do not need to populate this group in advance, but at least one group must be provided to run the setup steps (script).
 
-4.	Download the script for the source tenant setup from the GitHub repository (you made need to create a GitHub account to access the script if this is your first time), here: https://github.com/microsoft/cross-tenant. Script name: SetupCrossTenantRelationshipForTargetResource.ps1.
+4.	Download the SetupCrossTenantRelationshipForTargetResource.ps1 script for the source tenant setup from the GitHub repository [here](https://github.com/microsoft/cross-tenant). You may need to create a GitHub account to access the script if this is your first time accessing GitHub.
 
-5.	Create a Remote PowerShell connection to the source EXO tenant with your Exchange Administrator permissions (Global Admin permissions are not required to configure source; only target due to Azure app creation process).
+5.	Create a Remote PowerShell connection to the source EXO tenant with your Exchange Administrator permissions. Global Admin permissions are not required to configure thne source tenant, only the target tenant becuase of the Azure app creation process.
 
 6.	Change directory to the script location or verify that the script is currently saved to the location currently in your RPS session.
 
@@ -197,10 +181,10 @@ The target admin setup is complete!
     | -TargetTenantDomain               | [Required] Target tenant domain, such as contoso\.onmicrosoft.com.                                                                                                                                                                 |
     | -ApplicationId                    | [Required] Azure application ID (GUID) of the application used for migration. Application ID available via your Azure portal (Azure AD, Enterprise Applications, app name, application ID) or included in your invitation email.  |
     | -TargetTenantId                   | [Required] Tenant ID of the target tenant                                                                                                                                                                                         |
-    |                                   | (Azure AD directory ID of contoso\.onmicrosoft.com tenant).                                                                                                                                                                        |
-
+    |                                   | (Azure AD directory ID of contoso\.onmicrosoft.com tenant).    |
+    Here is an example:
     ```powershell
-    PS C:\Users\Admin\scripts\T2TMovesV2> .\SetupCrossTenantRelationshipForResourceTenant.ps1 -SourceMailboxMovePublishedScopes "MigScope","MyGroup" -ResourceTenantDomain contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ApplicationId sdf5e87sa-0753-dd88-ad35-c71a15cs8e44c -TargetTenantId 4sdkfo933-3904-sd93-bf9a-sdi39402834
+    SetupCrossTenantRelationshipForResourceTenant.ps1 -SourceMailboxMovePublishedScopes "MigScope","MyGroup" -ResourceTenantDomain contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ApplicationId sdf5e87sa-0753-dd88-ad35-c71a15cs8e44c -TargetTenantId 4sdkfo933-3904-sd93-bf9a-sdi39402834
     Exchange setup complete.
 
     ```
@@ -215,7 +199,12 @@ Verify that the Organization Relationships in both source and target tenants and
 
 **Organization relationship**
 
-Verify organization relationship object was created and configured:
+Verify that the organization relationship object was created and configured with this command:
+
+```powershell
+Get-OrganizationRelationship "<fabrikam_contoso_1178>" | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+```
+Here is an example:
 
 ```powershell
 PS C:\Users\Admin\scripts\T2TMovesV2> Get-OrganizationRelationship fabrikam_contoso_1178 | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
@@ -229,7 +218,12 @@ MailboxMoveCapability : Inbound
 
 **Migration endpoint**
 
-Verify the migration endpoint object was created and configured:
+Verify that the migration endpoint object was created and configured with this command:
+
+```powershell
+Get-MigrationEndpoint "<fabrikam_contoso_1123> | fl Identity, RemoteTenant, ApplicationId, AppSecretKeyVaultUrl
+```
+Here is an example:
 
 ```powershell
 PS C:\Users\Admin\scripts\T2TMovesV2> Get-MigrationEndpoint fabrikam_contoso_1123 | fl Identity, RemoteTenant, ApplicationId, AppSecretKeyVaultUrl
@@ -246,7 +240,11 @@ AppSecretKeyVaultUrl : https://cross-tenantmyvaultformoves.vault.azure.net:443/c
 
 **Organization relationship**
 
-Verify organization relationship object was created and configured:
+Verify organization relationship object was created and configured with this command:
+
+```powershell
+Get-OrganizationRelationship | fl name, MailboxMoveEnabled, MailboxMoveCapability, MailboxMovePublishedScopes, OAuthApplicationId
+```
 
 ```powershell
 PS C:\Users\Admin\scripts\T2TMovesV2> Get-OrganizationRelationship | fl name, MailboxMoveEnabled, MailboxMoveCapability, MailboxMovePublishedScopes, OAuthApplicationId
@@ -347,7 +345,12 @@ destination account.  This will increase the dumpster size of destination accoun
     > This process is irreversible. If the object has a softDeleted mailbox, it cannot be restored after this point. Once cleared, however, you can sync the correct ExchangeGuid to the target object and MRS will connect the source mailbox to the newly created target mailbox. (Reference EHLO blog on the new parameter.) 
 
  
-    Find objects that were previously mailboxes using **Get-User \<identity> | select Name, *recipient* | ft -a**.
+    Find objects that were previously mailboxes using this command:
+
+    ```powershell
+    Get-User \<identity> | select Name, *recipient* | ft -a**.
+    ```
+    Here is an example: 
 
     ```powershell
     PS demo> get-user John@northwindtraders.com |select name, *recipient*| ft -AutoSize 
@@ -358,8 +361,13 @@ destination account.  This will increase the dumpster size of destination accoun
     ```   
 
  
-    Clear the soft-deleted mailbox using **Set-User \<identity> -PermanentlyClearPreviousMailboxInfo**. 
- 
+    Clear the soft-deleted mailbox using this command:
+
+    ````
+    Set-User \<identity> -PermanentlyClearPreviousMailboxInfo
+    ```` 
+
+    Here is an example:
 
     ```powershell
     PS demo> Set-User John@northwindtraders.com -PermanentlyClearPreviousMailboxInfo Confirm 
@@ -371,13 +379,11 @@ destination account.  This will increase the dumpster size of destination accoun
 
 ## Perform mailbox migrations
 
-### Overview
-
-Cross-tenant Exchange mailbox migrations are submitted via migrations batches initiated from the target tenant – like the way that on boarding migration batches work when migrating from Exchange on premises to Office 365. 
+Cross-tenant Exchange mailbox migrations are submitted as migration batches initiated from the target tenant. This is similar to the way that on-boarding migration batches work when migrating from Exchange on-premises to Microsoft 365. 
 
 ### Create Migration batches
 
-**Example migration batch cmdlet for kicking off moves**
+Here is an example migration batch cmdlet for kicking off moves:
 
 ```powershell
 New-MigrationBatch -Name T2Tbatch-testforignitedemo -SourceEndpoint target_source_7977 -CSVData ([System.IO.File]::ReadAllBytes('users.csv')) -Autostart -TargetDeliveryDomain targetformoves.onmicrosoft.com -AutoComplete
@@ -496,7 +502,7 @@ Exchange mailbox moves using MRS craft the targetAddress on the original source 
 Mailbox permissions include Send on Behalf of and Mailbox Access.  
 Send On Behalf Of (AD:publicDelegates) stores the DN of recipients with access to a user’s mailbox as a delegate. This value is stored in Active Directory and currently does not move as part of the mailbox transition. If the source mailbox has publicDelegates set, you will need to restamp the publicDelegates on the target Mailbox once the MEU to Mailbox conversion completes in the target environment using **Set-Mailbox \<principle> -GrantSendOnBehalfTo <delegate>**. 
  
-Mailbox Permissions that are stored in the mailbox will move with the mailbox when both the principal and the delegate are moved to the target system. For example, the user TestUser_7 is granted FullAccess to the mailbox TestUser_8 in the tenant SourceCompany.onmicrosoft.com. After the mailbox move completes to TargetCompany.onmicrosoft.com, the same permissions are set up in the target directory. Examples using *Get-MailboxPermission* for TestUser_7 in both source and target tenants are shown below. (Exchange commandlets are prefixed with source and target accordingly.) 
+Mailbox Permissions that are stored in the mailbox will move with the mailbox when both the principal and the delegate are moved to the target system. For example, the user TestUser_7 is granted FullAccess to the mailbox TestUser_8 in the tenant SourceCompany.onmicrosoft.com. After the mailbox move completes to TargetCompany.onmicrosoft.com, the same permissions are set up in the target directory. Examples using *Get-MailboxPermission* for TestUser_7 in both source and target tenants are shown below. (Exchange cmdlets are prefixed with source and target accordingly.) 
  
 Figure 2 shows the output of the mailbox permission before a move. 
 
