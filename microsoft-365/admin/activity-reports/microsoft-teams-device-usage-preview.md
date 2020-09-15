@@ -37,7 +37,7 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
   
 ## Interpret the Microsoft Teams app usage report
 
-You can view the device use in the preview Teams report by choosing the **Device usage** tab.<br/>![Microsoft 365 reports - Microsoft Teams device usage.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
+You can view the device use in the Teams report by choosing the **Device usage** tab.<br/>![Microsoft 365 reports - Microsoft Teams device usage.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
 
 Select **Choose columns** to add or remove columns from the report.  <br/> ![Teams user device report - choose columns](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
 
