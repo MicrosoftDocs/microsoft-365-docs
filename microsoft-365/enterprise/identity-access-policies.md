@@ -33,7 +33,7 @@ The following diagram illustrates the recommended set of policies. It shows whic
 
 Here's a one-page PDF summary with links to the individual policies:
 
-[![Thumb image for Identity and device protection for Microsoft 365 handout](../media/microsoft-365-policies-configurations/identity_device_protection_handout_thumb.png)](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [View as a PDF](../downloads/MSFT-cloud-architecture-identity-device-protection-handout) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)  
+[![Thumb image for Identity and device protection for Microsoft 365 handout](../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [View as a PDF](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)  
 
 The rest of this article describes how to configure these policies. 
 
