@@ -32,7 +32,7 @@ What began as the public preview of Compliance Score has evolved into a centrali
 
 ## What is Compliance Manager
 
-[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that helps you manage your organization’s compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, whether you’re just beginning to take inventory of your data protection risks, or you need help managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
+[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that helps you manage your organization’s compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks, to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
 Compliance Manager helps simplify compliance and reduce risk by providing:
 
@@ -58,7 +58,7 @@ Compliance Manager gives you an initial score based on the Microsoft 365 data pr
 
 [Understand how your compliance score is calculated.](compliance-score-calculation.md)
 
-[Learn how to work with improvement actions.](compliance-manager-assessments.md)
+[Learn how to work with improvement actions.](compliance-manager-improvement-actions.md)
 
 ## Key elements: controls, assessments, templates, improvement actions
 
@@ -70,7 +70,7 @@ A control is a requirement of a regulation, standard, or policy. It defines how 
 
 Compliance Manager tracks the following types of controls:
 
-1. **Microsoft managed controls**: controls for Microsoft cloud services, which Microsoft is responsible for implementing
+1. **Microsoft-managed controls**: controls for Microsoft cloud services, which Microsoft is responsible for implementing
 2. **Your controls**: sometimes referred to as customer managed controls, these are controls implemented and managed by your organization
 3. **Shared controls**: these are controls that both your organization and Microsoft share responsibility for implementing
 
@@ -87,7 +87,7 @@ An assessment is grouping of controls from a specific regulation, standard, or p
 Assessments have several components:
 
 - **In-scope services**: the specific set of Microsoft services applicable to the assessment
-- **Microsoft managed controls**: controls for Microsoft cloud services, which Microsoft implements on your behalf
+- **Microsoft-managed controls**: controls for Microsoft cloud services, which Microsoft implements on your behalf
 - **Your controls**: sometimes referred to as customer managed controls, these are controls implemented and managed by your organization
 - **Shared controls**: these are controls that both your organization and Microsoft share responsibility for implementing
 - **Assessment score**: shows your progress in achieving total possible points from actions within the assessment that are managed by your organization and by Microsoft
@@ -96,17 +96,17 @@ When creating assessments, you’ll assign them to a group. You can configure gr
 
 #### Learn more
 
-[Create and manage assessments in Compliance Manager](compliance-manager-assessments.md).
+[Build and manage assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ### Templates
 
-Compliance Manager provides templates to help you quickly create assessments. You can modify these templates to create an assessment optimized for your needs. You can also build a custom assessment by creating a template with your own controls and actions. For example, you may want a template to cover an internal business process control, or a regional data protection standard that isn’t covered by one of our 150+ pre built assessment templates.
+Compliance Manager provides templates to help you quickly create assessments. You can modify these templates to create an assessment optimized for your needs. You can also build a custom assessment by creating a template with your own controls and actions. For example, you may want a template to cover an internal business process control, or a regional data protection standard that isn’t covered by one of our 150+ pre-built assessment templates.
 
 #### Learn more
 
-[View the list of over 150 assessment templates provided by Compliance Manager](compliance-manager-templates-list.md).
+[View the list of assessment templates provided by Compliance Manager](compliance-manager-templates-list.md).
 
-[Get detailed instructions for creating and modifying templates](compliance-manager-templates).
+[Get detailed instructions for creating and modifying templates for assessments](compliance-manager-templates).
 
 ### Improvement actions
 
