@@ -13,109 +13,193 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Set up Microsoft Compliance Manager, which helps organizations simplify and automate risk assessments. Configure user permissions and roles, automated testing."
+description: "Set Microsoft Compliance Manager user permissions and roles, and configure automated testing of actions. Manage user history and filter your dashboard view."
 ---
 
 # Get started with Compliance Manager
 
-**In this article:** Understand how to **access** Compliance Score, set **roles and permissions**, and configure **automatic Secure Score updates**. This article also explains the main Compliance Score pages: **your dashboard**, the improvement actions page, the solutions page, and the assessments page.
+**In this article:** This article helps you get set up with Compliance manager. Learn how to **access** Compliance Manager, **set roles and permissions**, and configure **automatic testing of improvement actions**. This article also explains the main Compliance Manager pages: **your dashboard**, the improvement actions page, the solutions page, and the assessments page.
 
 ## Who can access Compliance Manager
 
-insert new text...
+Compliance Manager is available to organizations with Office 365 and Microsoft 365 licenses. Assessment availability and management capabilities depend on your licensing agreement.  [View service description details](https://go.microsoft.com/fwlink/?linkid=2132371).
 
 ## Before you begin
 
-The Microsoft 365 global administrator for your organization will likely be the first user to access Compliance Score. We recommend the global admin sign in and set user permissions as outlined below when visiting Compliance Score for the first time.
+The Microsoft 365 global administrator for your organization will likely be the first user to access Compliance Manager. We recommend the global admin sign in and set user permissions as outlined below when visiting Compliance Manager for the first time.
 
 ## Sign in
 
-1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and **sign in** with your Microsoft 365 global admin account.
-2. Select **Compliance Score** on the left navigation pane. You should then see your [Compliance Score dashboard with your score](#understand-the-compliance-score-dashboard).
+1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and **sign in** with your Microsoft 365 global administrator account.
+2. Select **Compliance Manager** on the left navigation pane. You will then arrive at your [Compliance Manager dashboard](#understand-the-compliance-manger-dashboard).
 
-The direct link to access Compliance Score is [https://compliance.microsoft.com/compliancescore](https://compliance.microsoft.com/compliancescore).
+The direct link to access Compliance Manager is [https://compliance.microsoft.com/compliancescore](https://compliance.microsoft.com/compliancescore).
 
 ## Set user permissions and assign roles
 
-Compliance Score uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Score, and the actions allowed by each user are restricted by role type.
+Compliance Manager uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Manager, and the actions allowed by each user are restricted by [role type](#roll-types).
 
 ### Where to set permissions
 
-The person holding the global admin role for your organization can set user permissions in [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) or in [Compliance Manager](compliance-manager-overview.md#permissions). Once roles are set in either of these locations, users can access Compliance Score as well as Compliance Manager.
+The person holding the global admin role for your organization can set user permissions in the Microsoft 365 compliance center, as well as in Azure Active Directory (Azure AD).
+
+To set permissions and assign roles from within the [Microsoft 365 compliance center](https://compliance.microsoft.com/), follow the steps below:
+
+1. Select **Permissions** on the left navigation from anywhere in the compliance center.
+
+2. Near the top, select the link at, **“To view and manage roles in Office 365, please go here.”** A new tab will open to the Office 365 Security & Compliance Center ([learn why you’re redirected](microsoft-365-compliance-center.md#frequently-asked-questions)).
+
+3. Find the role group to which you want to add one or more users ([see the list of roles and related functions below](#roll-types); the role group names mimic the role name), and check the box to the left of the group name.
+
+4. On the flyout pane for that group, under the **Members** header, select **Edit**.
+
+5. Select **Choose members**. Another flyout window will appear.
+
+6. Select **+ Add** to choose one or more users to add to the group.
+
+7. Select the checkbox next to the names you want to add, then select the **Add** button at the bottom.
+
+8. When you’re done assigning users, select **Done**, then select**Save**, then **Close**.
+
+Learn more about [permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+
+To assign roles and set permissions in Azure AD, see [Assign administrator and non-administrator roles to users with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 ### Role types
 
-The table below shows how each [Azure AD role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) maps to existing Compliance Manger roles, and the functions allowed by each role. Users will need at least the Azure AD global reader role to access Compliance Score.
+The table below shows the functions allowed by each role in Compliance Manager. The table also shows how each [Azure AD role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) maps to Compliance Manger roles. Users will need at least the Compliance Manager reader role, or Azure AD global reader role, to access Compliance Manager.
 
 
-| User can: | Azure AD role | Compliance Manager role | 
+| User can: | Compliance Manager role | Azure AD role | 
 | :------------- | :-------------: | :------------: |
-| **Read but not edit data**| Azure AD global reader  | Azure AD global reader | 
-| **Read but not edit data**| Security reader | Compliance Manager reader  | 
-| **Edit data**| Compliance administrator | Compliance Manager contributor | 
-| **Edit test results**| Compliance administrator | Compliance Manager assessor | 
-| **Manage assessments, and template and tenant data**| Compliance administrator<br>Compliance data administrator<br>Security administrator | Compliance Manager administrator | 
-| **Assign users**| Global administrator | Portal admin | 
-
-> [!NOTE]
-> When you go from Compliance Score to Compliance Manager to complete a task during public preview, your browser will open a new tab and a dialog box appears. In the top section with the header, "Already a Microsoft cloud services customer? Sign in to your account," select **Sign In** to access Compliance Manager. You won't need to re-enter your credentials.
+| **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader Security reader | 
+| **Edit data**| Compliance Manager Contribution | Compliance Administrator | 
+| **Edit test results**| Compliance Manager Assessment | Compliance Administrator | 
+| **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  | 
+| **Assign users**| Azure AD global administrator | Global administrator | 
 
 ## Settings for automated testing and user history
 
-insert new text....
+The Compliance Manager settings in the Microsoft 365 compliance center allow you to enable and disable automatic testing of improvement actions. The settings also allow you to manage the data of users associated to improvement actions, including the ability to reassign improvement actions to a different users.  Only people with a global administrator or Compliance Manager Administrator role can access the Compliance Manager settings.
 
 ### Set up automated testing
 
-insert new text....
+Some improvement actions in Compliance Manager are also monitored by [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score). Compliance Manager allows you to set up automated testing of those actions so that any time an action is tested and updated in Secure Score, those results synch with the same actions in Compliance Manager and count toward your compliance score. Enabling automated testing in this way reduces the duplicative work of manually implementing those improvement actions.
+
+Automatic testing is turned on by default for organizations new to Compliance Manger. When organizations first deploy Microsoft 365 or Office 365, it takes approximately seven days for Secure Score to fully collect data and factor it into your compliance score.  When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft managed control scores and Secure Score integration.
+
+The global administrator for your organization can change the settings for automated testing at any time. You can turn off automated testing for common improvement actions, or turn it on for individual actions. Follow the instructions below to change your automated testing settings.
+
+#### To manage your automated testing settings:
+
+1. Select Settings on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+
+2. On the settings page, select **Compliance Manager**.
+
+3. Select **Automated testing** from the left navigation.
+
+4. Select the applicable button to turn on automatic testing for all improvement actions, turn it off for all actions, or turn on by individual action.
+
+5. If you select **Turn on per improvement action**, a list will show all the available improvement actions to choose from.  Check the box next to any action you want automatically tested.
+
+6. Select **Save** to save your settings. You’ll receive a confirmation message at the top of your screen that your selection was saved. If you receive a failure notice, try again.
+
+**Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager Administrator can turn on automatic updates for individual actions, but not for all actions globally.
 
 ### Manage user history
 
-By default, all new tenants have [Secure Score](../security/mtp/microsoft-secure-score-new.md) automatic updates turned on. All actions that are monitored by Secure Score will automatically update the status for the same action in Compliance Score.
+The **Manage user history** settings help you quickly identify which users have worked with improvement actions in Compliance Manger. The identifiable user data associated with improvement actions includes any implementation and testing work done, documents they uploaded, and any notes they entered. Understanding and retrieving this type of data may be necessary for your organization’s own compliance needs.
 
-Your global administrator can manage this setting to turn off automatic updates for all actions, or set updates for actions individually.
+The user history settings also allow you to reassign all improvement actions from one user to another. This can be helpful, for example, when an employee leaves the organization.
 
-During public preview, you'll need to go to the Microsoft Service Trust Portal (where Compliance Manger is located) to manage Secure Score updates.
+**To find the user history settings:**
 
-To manage automatic Secure Score updates, follow these steps:
+1. Select Settings on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 
-1. Sign in to the [Service Trust Portal](https://servicetrust.microsoft.com) with your global administrator account.
+2. On the settings page, select **Compliance Manager**.
 
-2. On the Service Trust Portal top menu bar, under **More**, select **Admin** and then choose **Settings**.
+3. Select **Manage user history** from the left navigation.
 
-3. In the **Secure Score** tab, select the corresponding button to either **turn on for all actions**, **turn off for all actions**, or **set per action.**
+The **manage user history** page shows a list of all users by email address who are assigned to an improvement action. Use the **Search** button to quickly find a specific user by typing in their email address.
 
-If you choose **set per action,** take these additional steps to turn on Secure Score updates for individual actions:
+To the right of each user’s email address, the **Select** drop-down menu provides options to  export a report, reassign improvement actions, or delete history. See each section below for details about each option.
 
-4. Select **Compliance Manager** from the top menu (do not select "Compliance Manager (classic),").
+#### Export a report of user history data
 
-5. Select **Tenant Management** in the upper-right corner of your screen.
+You can export an Excel file containing a list of improvement actions currently assigned to a user.  The report also lists any evidence files uploaded by that user. This information can help you reassign open improvement actions.
 
-6. On the **Customer Actions** pane, find your intended action with an ellipsis (**...**) under the **Affected Actions** column. Click on the ellipses and select **Edit.**
+The report reflects the improvement action’s status as of its creation date. It’s not a historical report of all previous changes to its status or assignment.  
 
-7. Switch the **Secure Score continuous update** toggle switch to **On.**
+**Follow the steps below to export a report by user:**
 
-8. Select **Save.** Secure Score continuous monitoring is now turned on for that action.
+1. Select **Settings** on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 
-**Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager administrator can turn on automatic updates for individual actions, but not for all actions globally.
+2. On the settings page, select **Compliance Manager**.
 
-#### Learn more
+3. Select **Manage user history** from the navigation at left.
 
-[Read about managing Secure Score updates](compliance-manager-release-notes.md#secure-score).
+4. Find your intended user by searching the list email addresses, or by selecting **Search** and entering the user’s email address.
+
+5. From the **Select** drop-down menu, choose **Export report**.
+
+6. Once the Excel file of your report is generated, you can open it and save it to your local machine.
+
+#### Reassign improvement actions to another user
+
+You can reassign improvement actions from one user to another. This is useful when, for example, an employee leaves the organization and you need to remove any outstanding dependencies on that user’s account. When you reassign improvement actions, the document upload history does not change, but the name of the user who originally uploaded the documentation no longer appears within the improvement action.
+
+**Follow the steps below to reassign improvement actions to another user:**
+
+1. Select **Settings** on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+
+2. On the settings page, select **Compliance Manager**.
+
+3. Select **Manage user history** from the navigation at left.
+
+4. Find a user by searching the list email addresses, or by selecting **Search** and entering that user’s email address.
+
+5. From the **Select** drop-down menu, choose **Reassign improvement actions**. The **Reassign improvement actions** flyout pane will appear.
+
+6. In the **Search users** field, enter the name or email address of the user you want assign the improvement actions *to*.
+
+7. When you see the name of your intended user under **Improvement actions will be assigned to**, select the user, then select **Assign actions**.
+
+8. When the reassignment is complete, you’ll see a confirmation message in the flyout pane confirming that all improvement actions from the previous user have been reassigned to the new user. If you receive a reassignment failure notice, close the window and try again. To close the flyout pane, select **Done**.
+
+#### Delete user history
+
+Deleting a user’s history will remove them as an owner of improvement actions, and will remove their name from all other fields in Compliance Manger. When you delete a user’s history, the improvement actions they owned will not display an **Assigned to** value until a new user is assigned. Any documents uploaded to the improvement action will show **user removed** in place of the deleted user’s name. Deleting user history is permanent.
+
+To delete a user’s history, follow the steps below:
+
+1. Select **Settings** on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+
+2. On the settings page, select **Compliance Manager**.
+
+3. Select **Manage user history** from the navigation at left.
+
+4. Find a user by searching the list email addresses, or by selecting **Search** and entering that user’s email address.
+
+5. From the **Select** drop-down menu, choose **Delete history**.
+
+6. A window appears asking you to confirm the permanent deletion of the user’s history. To continue with deletion, select **Delete history**. To leave without deleting the history, select **Cancel**.
+
+7. You’ll arrive back at the **Manage user history** page with a confirmation message at the top that the history for the user was deleted.
 
 ## Understand the Compliance Manger dashboard
 
-The Compliance Score dashboard is designed to provide you an at-a-glance view of your current compliance posture.
+The Compliance Manager dashboard is designed to provide you an at-a-glance view of your current compliance posture.
 
 ![Compliance Manager - dashboard](../media/compliance-manager-dashboard.png "Compliance Manager dashboard")
 
 ### Overall compliance score
 
-Your compliance score is featured prominently at the top. It shows a percentage based on points achievable for completing improvement actions that address key data protection standards and regulations.
+Your compliance score is featured prominently at the top. It shows a percentage based on points achievable for completing improvement actions that address key data protection standards and regulations. Points from [Microsoft actions](compliance-manager-assessments.md#microsoft-actions-tab), which are managed my Microsoft, also count toward your compliance score.
 
-When you come to Compliance Score for the first time, your initial score is based on the built-in [Microsoft 365 data protection baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)—a set of controls that includes common industry regulations and standards. Compliance Score scans your existing Microsoft 365 solutions and gives you an initial assessment based on your current privacy and security settings. As you add assessments that are relevant to your organization, your score becomes more meaningful for you.
+When you come to Compliance Manager for the first time, your initial score is based on the [Microsoft 365 data protection baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment). This baseline assessment, which is available to all organizations, is a set of controls that includes common industry regulations and standards. Compliance Manager scans your existing Microsoft 365 solutions and gives you an initial assessment based on your current privacy and security settings. As you add assessments that are relevant to your organization, your score becomes more meaningful for you.
 
 #### Learn more
-[Understand how your compliance score is calculated](compliance-score-methodology.md).
+[Understand how your compliance score is calculated](compliance-score-calculation.md).
 
 ### Key improvement actions
 
@@ -123,7 +207,7 @@ This section lists the top improvement actions you can take right now to make th
 
 ### Solutions that affect your score
 
-This section shows solutions containing actions with the greatest opportunity to positively impact your score, and the number of outstanding improvement actions in each solution.
+This section highlights solutions containing improvement actions that can positively impact your score, and the number of outstanding improvement actions in those solutions. Select **View all solutions** to visit your solutions page.
 
 ### Compliance score breakdown
 
@@ -141,7 +225,7 @@ To apply filters:
 1. Select **Filter** on the upper-right side of the dashboard.
 2. Select your filter criteria from the **Filters** flyout pane, then select **Apply**.
 
-After you apply a filter, you'll see your score adjusted in real time. The compliance score percentage and breakdown information, and the improvement actions and solutions, now only pertain to data covered by your filter criteria. If you sign out of Compliance Score, your filtered view remains when you sign back in.
+After you apply a filter, you’ll see your score adjusted in real time. The compliance score percentage and breakdown information, and the improvement actions and solutions, now only pertain to data covered by your filter criteria. If you sign out of Compliance Manager, your filtered view remains when you sign back in.
 
 To remove filters:
 
@@ -150,25 +234,25 @@ To remove filters:
 
 ## Improvement actions page
 
-[Improvement actions](compliance-manager-improvement-actions.md) centralize your compliance activities and help you align with data protection regulations and standards. Each improvement action gives detailed implementation guidance and a link to launch you into the appropriate solution. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
+[Improvement actions](compliance-manager-improvement-actions.md) are actions managed by your organization. Working with improvement actions helps to centralize your compliance activities and align with data protection regulations and standards. Each improvement action gives detailed implementation guidance and a link to launch you into the appropriate solution. Improvement actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
 
 ### View your improvement actions
 
-The Compliance Score dashboard shows your **key improvement actions**, which are the ones with the most available points that address the most important issues.
+The Compliance Manager dashboard shows your **key improvement actions.** To view all of your improvement actions, select the Improvement actions tab on your dashboard, which brings you to your improvement actions page. You can also select View all improvement actions underneath the list of key improvement actions on your dashboard to get to your improvement actions page.
 
-To view all of your improvement actions, select the **Improvement actions** tab on your dashboard. Or, select **View all improvement actions** underneath the list of key improvement actions on your dashboard.
+The improvement actions page shows all of the improvement actions that are managed by your organization. Actions that are managed by Microsoft can be viewed within each assessment (learn more about [Microsoft actions](compliance-manager-assessments.md#microsoft-actions-tab)).
 
-If you have a long list of actions, it may be helpful to filter your view. Select **Filter** at the upper-right corner of the actions list. When the **Filters** flyout pane appears, select your criteria based on regulations and standards, solution, and group. You can also customize your view by selecting **Group** in the upper-right corner. From the drop-down menu, select to view by group, solution, category, action type, or status.
+If you have a long list of actions on your improvement actions page, it may be helpful to filter your view. Select **Filter** at the upper-right corner of the actions list. When the **Filters** flyout pane appears, select your criteria based on regulations and standards, solution, and group. You can also customize your view by selecting **Group** in the upper-right corner. From the drop-down menu, select to view by group, solution, category, action type, or status.
 
-The default view for this page does not show improvement actions with a test status of **Passed**. To view actions that have passed testing, check the **Passed** box in the Filters flyout pane. Only actions with a test status of **Passed** count toward your score.
+The default view for this page does not show improvement actions with a test status of **Passed**. To view actions that have passed testing, check the **Passed** box in the Filters flyout pane. Only actions with a test status of **Passed** count toward your score. Some actions may show a **pending update label.** Learn more about [updates to improvement actions](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions).
 
 The improvement actions page shows the following data points for each improvement action:
 
-- **Score impact**: the points by which your overall score will increase when completing the action
-- **Regulations**: the regulation or standard pertaining to the action
+- **Points achieved**: the number of points achieved out of the total available by completing the action
+- **Regulations**: the regulations or standards pertaining to the action
 - **Group**: the group to which you assigned the action
 - **Solutions**: the solution where you can go to perform the action
-- **Assessments**: the assessment (which organizes controls to meet a certain compliance objective) in which the action resides
+- **Assessments**: the assessments that contain the action
 - **Categories**: the related data protection category (such as, protect information, manage devices, etc.)
 - **Test status**:
     - **None** – no status update recorded
@@ -181,16 +265,17 @@ The improvement actions page shows the following data points for each improvemen
     - **To be detected** - for manual test, indicates an action has been implemented but not tested; for automated test, indicates an action is waiting for automation result
     - **Could not be detected** - automated status can't be determined
     - **Partially tested** – automated scoring that awards partial points
-- **Points achieved**: number of points earned out of the maximum possible
+
 
 #### Learn more
+
 [See how to assign and perform work on improvement actions](compliance-manager-improvement-actions.md).
 
 ## Solutions page
 
 The solutions page shows the share of earned and potential points as organized by solution. Viewing your remaining points and improvement actions from this view helps you understand which solutions need more immediate attention.
 
-Find the solutions page by selecting the **Solutions** tab on your Compliance Score dashboard. You can also select **View all solutions** underneath **Solutions that affect your score** in the upper-right section of your dashboard.
+Find the solutions page by selecting the **Solutions** tab on your Compliance Manager dashboard. You can also select **View all solutions** underneath **Solutions that affect your score** in the upper-right section of your dashboard.
 
 ### Filtering your solutions view
 
@@ -204,7 +289,7 @@ You can also modify your view to see assessments by group, product, or regulatio
 
 ### Taking action from the solution page
 
-The solutions page displays your organization’s solutions that are connected to improvement actions. The table lists each solution’s contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score.
+The solutions page displays your organization’s solutions that are connected to improvement actions. The table lists each solution’s contribution to your overall score, the points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score.
 
 There are two ways you can take action from this screen:
 
@@ -214,9 +299,9 @@ There are two ways you can take action from this screen:
 
 ## Assessments page
 
-The assessments page lists all the [assessments](compliance-manager-assessments.md) you set up for your organization. Your Compliance Score denominator is determined by all your tracked assessments. The more assessments you add, the more improvement actions you see on your improvement actions page, and the higher your score denominator is.
+The assessments page lists all the [assessments](compliance-manager-assessments.md) you set up for your organization. Your compliance score denominator is determined by all your tracked assessments. As you add more assessments, you'll see more improvement actions listed on your improvement actions page, and your compliance score denominator increases.
 
-This page summarizes key information about each assessment:
+The assessments page summarizes key information about each assessment:
 
 - **Assessment**: name of the assessment
 - **Status**:
@@ -243,11 +328,17 @@ You can also modify your view to see assessments by group, product, or regulatio
 
 ### Default assessment
 
-By default, you'll see the [Microsoft 365 data protection baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline) assessment on the assessments page. Compliance Score also provides several ready to use [templates](compliance-score-templates.md) from which to build assessments.
+By default, you'll see the [Data Protection Baseline](ccompliance-manager-assessments.md#data-protection-baseline-default-assessment) assessment on the assessments page. Compliance Manager also provides several pre-built [templates](compliance-manager-templates-list.md) from which to build assessments.
 
 ## Assessment templates page
 
-insert new text....
+A template is a framework for creating an assessment in Compliance Manager. The assessment templates page displays a list of templates and key details. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created. You can apply filters to find a template based on certification, product scope, country, industry, and who created it.
+
+Select a template from its row to bring up its details page, which contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
+
+#### Learn more
+
+[Read more about working with templates](compliance-manager-templates.md).
 
 ## Next step
-Customize Compliance Score by [setting up assessments](compliance-manager-assessments.md).
+Customize Compliance Manager by [setting up assessments](compliance-manager-assessments.md).

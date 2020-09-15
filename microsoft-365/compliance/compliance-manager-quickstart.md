@@ -30,10 +30,10 @@ Compliance Manager is located in the Microsoft 365 compliance center at https://
 
 The first time you visit Compliance Manager, you'll see a compliance score for your organization. Compliance Manager is already assessing your current Microsoft 365 environment against the data protection baseline. The best way to start getting familiar with Compliance Manger is to understand what it's showing you, its key elements, and how to customize your dashboard.
 
-Our [Compliance Manager overview page](compliance-manager.md) is the best first stop for a comprehensive review of what Compliance Manager is and its key components. You may also want to jump right to key sections using the links below:
+Our [Compliance Manager overview page](compliance-manager.md) is the best first stop for a comprehensive review of what Compliance Manager is and its key components. You may also want to jump right to key sections of our documentation using the links below:
 
 - [Understanding your compliance score](compliance-manager.md#understanding-your-compliance-score)
-- [Overview of the key components: controls, assessments, templates, and improvement actions](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
+- [Overview of key elements: controls, assessments, templates, and improvement actions](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
 - [Understanding the Compliance Manager dashboard](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
 - [Filtering your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Understanding improvement actions](compliance-manager-setup.md#improvement-actions-page)
