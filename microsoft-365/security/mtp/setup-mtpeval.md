@@ -1,6 +1,6 @@
 ---
 title: Set up your Microsoft Threat Protection trial lab or pilot environment 
-description: Access Microsoft 365 Security Center then setup your Microsoft Threat Protection trial lab environment
+description: Access Microsoft 365 Security Center then set up your Microsoft Threat Protection trial lab environment
 keywords:  Microsoft Threat Protection trial setup, Microsoft Threat Protection pilot setup, try Microsoft Threat Protection, Microsoft Threat Protection evaluation lab setup  
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -50,7 +50,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
   </tr>
 </table>
 
-You are currently in the set up phase. Take the initial steps to access Microsoft 365 Security Center then setup your trial lab or pilot environment.
+You're currently in the set up phase. Take the initial steps to access Microsoft 365 Security Center then set up your trial lab or pilot environment.
 
 Sign up for an Office 365 or Azure Active Directory subscription to generate a *.onmicrosoft.com* tenant that you can use to sign up for your Microsoft 365 E5 license. 
 
@@ -72,7 +72,7 @@ In this phase, you'll be guided to:
 2. Complete the trial registration by entering your email address (personal or corporate). Click **Set up account**.
 ![Image of_Office 365 E5 trial registration setup page](../../media/mtp-eval-10.png) <br> 
 
-3. Fill in your first name, last name, business phone number, company name, company size and country or region.  
+3. Fill in your first name, last name, business phone number, company name, company size, and country or region.  
 <br>![Image of_Office 365 E5 trial registration setup page asking for name, phone, and company details](../../media/mtp-eval-11.png) <br>
 >[!NOTE]
 >The country or region you set here determines the data center region your Office 365 will be hosted.
@@ -83,7 +83,7 @@ In this phase, you'll be guided to:
 5. Set the custom domain name for your tenant, then click **Next**.
 <br>![Image of_Office 365 E5 trial registration setup page where you can set up your custom domain name](../../media/mtp-eval-13.png) <br>
  
-6. Set up the first identity which will be a Global Administrator for the tenant. Fill in **Name** and **Password**. Click **Sign up**.
+6. Set up the first identity, which will be a Global Administrator for the tenant. Fill in **Name** and **Password**. Click **Sign up**.
 ![Image of_Office 365 E5 trial registration setup page where you can set your business identity](../../media/mtp-eval-14.png) <br>
 
 7. Click **Go to Setup** to complete the Office 365 E5 trial tenant provisioning.
@@ -92,7 +92,7 @@ In this phase, you'll be guided to:
 8. Connect your corporate domain to the Office 365 tenant. [Optional] Choose **Connect a domain you already own** and type in your domain name. Click **Next**.
 <br>![Image of_Office 365 E5 Setup page where you should personalize your sign-in and email](../../media/mtp-eval-16.png) <br>
  
-9. You will need to add a TXT or MX record to validate the domain ownership. Once you’ve added the TXT or MX record to your domain, select **Verify**.
+9. Add a TXT or MX record to validate the domain ownership. Once you’ve added the TXT or MX record to your domain, select **Verify**.
 <br>![Image of_Office 365 E5 setup page where you should add a TXT of MX record to verify your domain](../../media/mtp-eval-17.png) <br>
  
 10. [Optional] Create more user accounts for your tenant. You can skip this step by clicking **Next**.
@@ -107,7 +107,7 @@ In this phase, you'll be guided to:
 13. Choose online services. Select **Exchange** and click **Next**. 
 <br>![Image of_Office 365 E5 where you can choose your online services](../../media/mtp-eval-21.png) <br>
 
-14. Add MX, CNAME and TXT records to your domain. When completed, select **Verify**.
+14. Add MX, CNAME, and TXT records to your domain. When completed, select **Verify**.
 <br>![Image of_Office 365 E5 here you can add your DNS records](../../media/mtp-eval-22.png) <br>
  
 15. Congratulations, you have completed the provisioning of your Office 365 tenant.
