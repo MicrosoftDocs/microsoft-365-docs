@@ -62,7 +62,7 @@ The following sections describe each item in the main menu.
 The **Service Trust Portal** link displays the home page. It provides a quick way to get back to the home page.
 
 > [!NOTE]
-> Compliance Manager has moved from the Service Trust Portal to its new location in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). All customer data has been ported over to the new Compliance Manager location, so you can continue using Compliance Manager without interruption. Refer to the [Compliance Manager documentation](compliance-manager) for more details and to see what's new. Although the classic version of Compliance Manager remains in the Service Trust Portal, all users are encouraged to use the new Compliance Manager in the Microsoft 365 compliance center.
+> Compliance Manager has moved from the Service Trust Portal to its new location in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). All customer data has been ported over to the new location, so you can continue using Compliance Manager without interruption. Refer to the [Compliance Manager documentation](compliance-manager) for more details and to see what's new. Although the classic version of Compliance Manager remains in the Service Trust Portal, all users are encouraged to use the new Compliance Manager in the Microsoft 365 compliance center.
 
 ### Trust Documents
 
