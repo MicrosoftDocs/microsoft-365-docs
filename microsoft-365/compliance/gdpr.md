@@ -3,7 +3,7 @@ title: General Data Protection Regulation
 description: Learn about Microsoft technical guidance and find helpful information for the General Data Protection Regulation (GDPR).
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -204,7 +204,7 @@ Microsoft has long used the Standard Contractual Clauses (also known as the Mode
 
 **What are the other Microsoft compliance offerings?**
 
-As a global company with customers in nearly every country in the world, Microsoft has a robust compliance portfolio to assist our customers. To view a complete list of our compliance offerings including FedRamp, HIPAA/HITECH, ISO 27001, ISO 27002, ISO 27018, NIST 800-171, UK G-Cloud, and many others visit our [compliance offering topics](offering-home.md).
+As a global company with customers in nearly every country in the world, Microsoft has a robust compliance portfolio to assist our customers. To view a complete list of our compliance offerings including FedRamp, HIPAA/HITECH, ISO 27001, ISO 27002, ISO 27018, NIST 800-171, UK G-Cloud, and many others visit our [compliance offering topics](offering-home.yml).
 
 **How will GDPR affect my company?**
 

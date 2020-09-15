@@ -13,7 +13,8 @@ localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
+- m365solution-overview
 ms.custom: 
 description: Configure the security and service infrastructure to protect your information and adhere to data privacy regulations.
 ---

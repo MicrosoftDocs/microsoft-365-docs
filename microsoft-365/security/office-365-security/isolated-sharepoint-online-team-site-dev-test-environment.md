@@ -60,7 +60,7 @@ If you want to create an isolated SharePoint Online team site in a simulated ent
 
 ## Phase 2: Create user accounts and access groups
 
-Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) to connect to your trial subscription with your global administrator account from:
+Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell) to connect to your trial subscription with your global administrator account from:
 
 - Your computer (for the lightweight Microsoft 365 dev/test environment).
 
@@ -281,7 +281,7 @@ When you are ready to deploy an isolated SharePoint Online team site in producti
 
 [Isolated SharePoint Online team sites](isolated-sharepoint-online-team-sites.md)
 
-[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
 [The simulated enterprise base configuration](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 

@@ -53,7 +53,7 @@ ATP Safe Links features are active when:
 
 - ATP Safe Links policies are set up for email and for Office documents. (See [Set up ATP safe links policies](set-up-atp-safe-links-policies.md).)
 
-- Microsoft 365 client apps are configured to use Modern Authentication (this is for ATP Safe Links protection in Office documents). (See [Modern Authentication for Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).)
+- Microsoft 365 client apps are configured to use Modern Authentication (this is for ATP Safe Links protection in Office documents). (See [Modern Authentication for Office 2016](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).)
 
 - Users have signed in using their work or school account. (See [Sign in to Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).)
 
@@ -61,11 +61,14 @@ ATP Safe Links features are active when:
 
 **Also make sure you have the necessary permissions**. To define (or edit) ATP policies, you must be assigned an appropriate role. Some examples are described in the following table:
 
+****
+
 |Role|Where/how assigned|
-|---------|---------|
+|---|---|
 |global administrator|The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) to learn more.)|
 |Security Administrator|Azure Active Directory admin center (<https://aad.portal.azure.com>)|
 |Exchange Online Organization Management|Exchange admin center (<https://outlook.office365.com/ecp>) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 ## How to make sure ATP Safe Links protection is in place
 
@@ -77,10 +80,13 @@ After ATP Safe Links policies are in place, your organization's security team ca
 
 The following table describes some example scenarios where ATP Safe Links protection might or might not be in place. (In all of these cases, we assume the organization has Office 365 Enterprise E5.)
 
+****
+
 |Example scenario|Does ATP Safe Links protection apply in this case?|
-|:-----|:-----|
+|---|---|
 |Jean is a member of a group that has ATP Safe Links policies covering URLs in email and Office documents. Jean opens a PowerPoint presentation that someone sent, and then clicks a URL in the presentation.|Yes. The ATP Safe Links policies that are defined apply to Jean's group, Jean's email, and Word, Excel, PowerPoint, or Visio documents that Jean opens, so long as Jean is signed in and using Microsoft 365 Apps for enterprise on Windows, iOS, or Android devices.|
 |In Chris's organization, no global or security administrators have defined any ATP safe links policies yet. Chris receives an email that contains a URL to a malicious website. Chris is unaware the URL is malicious and clicks the link.|No. The default policy that covers URLs for everyone in the organization must be defined in order for protection to be in place.|
 |In Pat's organization, no global or security administrators have defined or edited any ATP Safe Links policies yet. Pat opens a Word document and clicks a URL in the file.|No. A policy that includes Office documents must be defined in order for protection to be in place. See [Set up ATP Safe Links policies in Office 365](set-up-atp-safe-links-policies.md).|
 |Lee's organization has a ATP Safe Links policy that has `https://tailspintoys.com` listed as a blocked website. Lee receives an email message that contains a URL to `https://tailspintoys.com/aboutus/trythispage`. Lee clicks the URL.|It depends on whether the entire site and all its subpages are included in the list of blocked URLs. See [Set up a custom blocked URLs list using ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).|
 |Jamie, Jean's colleague, sends an email to Jean, not knowing that the email contains a malicious URL.|It depends on whether ATP Safe Links policies are defined for email sent within the organization. See [Set up ATP Safe Links policies in Office 365](set-up-atp-safe-links-policies.md).|
+|

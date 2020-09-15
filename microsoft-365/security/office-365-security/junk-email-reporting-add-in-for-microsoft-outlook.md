@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
@@ -58,7 +58,12 @@ This topic explains how to install and use the Junk Email Reporting add-in.
 
    ![Report as phishing dialog](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. The selected messages will be sent to Microsoft for analysis and moved to the Junk Email folder. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
+3. The selected messages will be sent to Microsoft for analysis and:
+
+   - Moved to the Junk Email folder if it was reported as spam.
+   - Deleted if it was reported as phishing.
+   
+   To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
 
 ## Use the Junk Email Reporting add-in to report non-spam and phishing messages from the Junk Email folder
 
@@ -82,7 +87,12 @@ This topic explains how to install and use the Junk Email Reporting add-in.
 
    ![Report as phishing dialog](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. The selected messages will be sent to Microsoft for analysis and moved to the Junk Email folder. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
+3. The selected messages will be sent to Microsoft for analysis and:
+
+   - Moved to the Junk Email folder if it was reported as spam.
+   - Deleted if it was reported as phishing.
+
+   To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
 
 ## Install the Junk Email Reporting add-in
 
@@ -91,7 +101,6 @@ This topic explains how to install and use the Junk Email Reporting add-in.
 - Go to <https://www.microsoft.com/download/details.aspx?id=18275> and download the appropriate .msi file for your version of Office to a location that's easy to find:
 
   - **32-bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
-
   - **64-bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
 - For Outlook 2013 or later, the only prerequisite is the Microsoft .NET Framework 2.0. In Windows 10, you don't install the .NET Framework 2.0 from a download.
@@ -283,7 +292,7 @@ For other methods that you can use to submit messages to Microsoft, see [Report 
 
 #### Problem: Users selected not to receive a confirmation prompt when they report messages, and now they want the prompt back
 
-1. Create the `ConfirmReportJunk`registry key wih the value "True":
+1. Create the `ConfirmReportJunk`registry key with the value "True":
 
    ```text
    Windows Registry Editor Version 5.00

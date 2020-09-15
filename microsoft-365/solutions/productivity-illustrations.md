@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: 
 - M365-collaboration
 - M365-security-compliance
-- M365solutions
 ms.custom: 
 f1.keywords: NOCSH
 ---
@@ -52,24 +51,14 @@ Depending on your environment, some tools are better suited for certain architec
 |[![Thumb image for Microsoft Defender ATP deployment strategy](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Updated February 2020| The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li>
 
 
-<a name="m365foundationinfra"></a>
-### Microsoft 365 Enterprise Foundation Infrastructure
-
-Get an at-a-glance view of the [foundation infrastructure](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure) for Microsoft 365 Enterprise to begin your deployment.
-  
-|**Item**|**Description**|
-|:-----|:-----|
-|[![Thumbnail image of the Microsoft 365 Enterprise Foundation Infrastructure poster](../media/solutions-architecture-center/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [View online](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365EnterpriseFoundInfra.pdf) <br/> Updated December 2019| This poster summarizes each phase of the foundation infrastructure in terms of goals, features and tools, design decisions, configuration results, onboarding, and ongoing monitoring and updates. <br/>| 
-
-   
 <a name="BKMK_O365IDP"></a>
-### Identity and device protection for Office 365
+### Identity and device protection for Microsoft 365
 
-Recommended capabilities for protecting identities and devices that access Office 365, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
+Recommended capabilities for protecting identities and devices that access Microsoft 365, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Model poster: Identity and device protection for Office 365 and other SaaS applications](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=55032) <br/> Updated November 2018|It's important to use consistent levels of protection across your data, identities, and devices. This document shows you which capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
+|[![Model poster: Identity and device protection for Microsoft 365](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [View as a PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx) <br/> Updated September 2020|It's important to use consistent levels of protection across your data, identities, and devices. This model shows you which capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
    
 <!--
 
@@ -119,6 +108,6 @@ For more information, see the article for this poster: [Microsoft Telephony Solu
   
 ## See Also
 
-[Architectural models for SharePoint, Exchange, Skype for Business, and Lync](https://docs.microsoft.com/office365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync)
+[Architectural models for SharePoint, Exchange, Skype for Business, and Lync](https://docs.microsoft.com/microsoft-365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync)
   
-[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)

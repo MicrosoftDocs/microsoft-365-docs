@@ -3,7 +3,7 @@ title: Reserve Bank of India (RBI) and Insurance Regulatory and Development Auth
 description: Microsoft has published guidance to help financial institutions in India with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Enterprise for the Contoso Corporation"
+title: "Microsoft 365 for enterprise for the Contoso Corporation"
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -9,22 +9,22 @@ ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom:
 
-description: How a fictional but representative global organization has adopted Microsoft 365 Enterprise.
+description: How a fictional but representative global organization has adopted Microsoft 365 for enterprise.
 ---
 
-# Microsoft 365 Enterprise for the Contoso Corporation
+# Microsoft 365 for enterprise for the Contoso Corporation
 
-Microsoft 365 Enterprise is Microsoft’s premier cloud offering that combines local and cloud-based productivity apps and services with Windows 10 Enterprise and advanced security features into a complete, intelligent solution that that empowers everyone to be creative and work together, securely. 
+Microsoft 365 for enterprise is Microsoft’s premier cloud offering that combines local and cloud-based productivity apps and services with Windows 10 Enterprise and advanced security features into a complete, intelligent solution that that empowers everyone to be creative and work together, securely. 
 
-The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 for enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
 
-The overall goal of Contoso for Microsoft 365 Enterprise is to accelerate their digital transformation by using cloud services to bring together its employees, partners, data, and processes to create customer value and maintain its competitive advantage in a digital-first world.
+The overall goal of Contoso for Microsoft 365 for enterprise is to accelerate their digital transformation by using cloud services to bring together its employees, partners, data, and processes to create customer value and maintain its competitive advantage in a digital-first world.
 
 See these articles for the details:
 
@@ -58,11 +58,11 @@ See these articles for the details:
 
 - [Information protection](contoso-info-protect.md)
 
-  To ensure that both common and high-value data is identified, labeled, and subject to layers of security, Contoso enforces its data security policies with Microsoft 365 Enterprise information protection.
+  To ensure that both common and high-value data is identified, labeled, and subject to layers of security, Contoso enforces its data security policies with Microsoft 365 for enterprise information protection.
 
-- [Summary of Microsoft 365 Enterprise security](contoso-security-summary.md)
+- [Summary of Microsoft 365 for enterprise security](contoso-security-summary.md)
 
-  Contoso uses the full spectrum of Microsoft 365 Enterprise security features for identity and access management, threat protection, information protection, and security management.
+  Contoso uses the full spectrum of Microsoft 365 for enterprise security features for identity and access management, threat protection, information protection, and security management.
 
 - [Team for a top-secret project](../solutions/contoso-team-for-top-secret-project.md)
 
@@ -74,12 +74,12 @@ See these articles for the details:
 
 ## Next step
 
-[Learn](contoso-overview.md) about the Contoso Corporation, their worldwide offices, and the design considerations that were addressed when they deployed Microsoft 365 Enterprise.
+[Learn](contoso-overview.md) about the Contoso Corporation, their worldwide offices, and the design considerations that were addressed when they deployed Microsoft 365 for enterprise.
 
 
 ## See also
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)
 

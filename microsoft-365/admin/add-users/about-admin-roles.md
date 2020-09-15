@@ -36,6 +36,10 @@ Looking for the full list of detailed Intune role descriptions you can manage in
 
 For more information on assigning roles in the Microsoft 365 admin center, see [Assign admin roles](assign-admin-roles.md).
 
+### Watch: What is an admin?
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
+
 ## Security guidelines for assigning roles
 
 Because admins have access to sensitive data and files, we recommend that you follow these guidelines to keep your organization's data more secure.
@@ -56,7 +60,7 @@ In the Microsoft 365 admin center, you can go to **Roles**, and then select any 
 
 ::: moniker-end
 
-You'll probably only need to assign the following roles in your organization. By default, we first show roles that most organizations use. If you can't find a role, go to the bottom of the list and select **See more roles**. (For detailed information, including the cmdlets associated with a role, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).)
+You'll probably only need to assign the following roles in your organization. By default, we first show roles that most organizations use. If you can't find a role, go to the bottom of the list and select **Show all by Category**. (For detailed information, including the cmdlets associated with a role, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).)
 
 |Admin role     |Who should be assigned this role?  |
 |---------|---------|

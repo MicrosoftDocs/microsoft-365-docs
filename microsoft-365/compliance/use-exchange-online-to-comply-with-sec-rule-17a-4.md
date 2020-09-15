@@ -65,12 +65,3 @@ Preservation Lock can help you meet the SEC 17a-4 regulatory requirements.
 
 You can lock a retention policy by using PowerShell. For more information, see [Use Preservation Lock to comply with regulatory requirements](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements).
 
-## Known limitations
-
-Currently, there are a few limitations for Exchange Online:
-
-- Threaded communications are not available for Teams chat and channel messages.
-- Likes are not retained for Teams chat and channel messages.
-
-> [!NOTE]
-> Item-level auditing is now available for Microsoft 365 group mailboxes. For more information, see [Manage mailbox auditing](enable-mailbox-auditing.md).

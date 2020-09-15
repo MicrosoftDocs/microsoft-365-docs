@@ -41,8 +41,10 @@ People regularly send, receive, and share attachments, such as documents, presen
 
 - Make sure that you have the necessary permissions. To define (or edit) ATP policies, you must be assigned either an Exchange Online Organization Management role (global administrator is assigned to this role by default) or both Exchange Online Hygiene Management and Security Administrator roles. For more details, see the following table:
 
+  ****
+
   |Role|Where/how assigned|
-  |---------|---------|
+  |---|---|
   |global administrator |The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) to learn more.)|
   |Security Administrator |Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
   |Exchange Online Organization Management, Exchange Online Hygiene Management |Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
@@ -84,9 +86,10 @@ Consider setting up multiple ATP Safe Attachments policies for your organization
 
 As you set up your ATP Safe Attachments policies, you choose from among many options, including Monitor, Block, Replace, Dynamic Delivery, and so on. In case you're wondering about what these options do, the following table summarizes each and its effect.
 
-||||
+****
+
+|Option|Effect|Use when you want to:|
 |---|---|---|
-|**Option**|**Effect**|**Use when you want to:**|
 |**Off**|Does not scan attachments for malware  <br/> Does not delay message delivery|Turn scanning off for selected recipients.  <br/> Prevent unnecessary delays in routing internal mail.  <br/> **This option is not recommended for most users. You should only use this option to turn off ATP Safe Attachments scanning for recipients who only get emails from trusted senders.**|
 |**Monitor**|Delivers messages with attachments and then tracks what happens with detected malware|See where detected malware goes in your organization|
 |**Block**|Prevents messages with detected malware attachments from proceeding  <br/> Sends messages with detected malware to [quarantine in Office 365](manage-quarantined-messages-and-files.md) where a security administrator or analyst can review and release (or delete) those messages  <br/> Blocks future messages and attachments automatically|Safeguard your organization from repeated attacks using the same malware attachments|

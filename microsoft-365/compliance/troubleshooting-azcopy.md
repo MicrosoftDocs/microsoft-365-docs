@@ -7,15 +7,14 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
-ms.service: o365-seccomp
+ms.topic: troubleshooting
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: 
-
 description: Troubleshoot errors for Azure AzCopy when loading non-Office 365 data for error remediation in Advanced eDiscovery.
 ms.custom: 
  - seo-marvel-mar2020
@@ -38,7 +37,7 @@ At this time, you must use AzCopy v8.1 to load non-Microsoft 365 data in Advance
 
 If AzCopy isn't installed or it's installed in a location other than the default install location (which is `%ProgramFiles(x86)%`), you may receive the following error when you run the AzCopy command:
 
-    The system cannot find the path specified.
+> The system cannot find the path specified.
 
 If AzCopy isn't installed on the local computer, you can find installation information in [Transfer data with the AzCopy v8.1 on Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Be sure to install it in the default location.
 

@@ -40,11 +40,14 @@ Read this article to learn how to set up your organization's custom blocked URLs
 
 To edit (or define) ATP policies, you must be assigned one of the roles described in the following table:
 
+****
+
 |Role|Where/how assigned|
-|---------|---------|
+|---|---|
 |global administrator|The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) to learn more.)|
 |Security Administrator|Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online Organization Management|Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 > [!TIP]
 > To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -73,12 +76,18 @@ While you add URLs to your list, keep the following points in mind:
 
 - You can include up to three wildcard asterisks (\*) per URL. The following table lists some examples of what you can enter and what effect those entries have.
 
+****
+
 |Example Entry|What It Does|
-|:-----|:-----|
+|---|---|
 |`contoso.com` or `*contoso.com*`|Blocks the domain, subdomains, and paths, such as `https://www.contoso.com`, `https://sub.contoso.com`, and `https://contoso.com/abc`|
 |`https://contoso.com/a`|Blocks a site `https://contoso.com/a` but not additional subpaths like `https://contoso.com/a/b`|
 |`https://contoso.com/a*`|Blocks a site `https://contoso.com/a` and additional subpaths like `https://contoso.com/a/b`|
 |`https://toys.contoso.com*`|Blocks a subdomain ("toys" in this case) but allow clicks to other domain URLs (like `https://contoso.com` or `https://home.contoso.com`).|
+|
+
+> [!NOTE]
+> By default, you can only add 500 URLs to the blocked URL list in the Office 365 ATP Safe Links default policy.
 
 ## How to define exceptions for certain users in an organization
 

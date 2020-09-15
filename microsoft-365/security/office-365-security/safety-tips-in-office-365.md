@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -53,7 +53,6 @@ The safety tip—a color-coded message—will warn you about potentially harmful
     We'll also tell you when we skipped checking a mail because it's from a sender you trust on your Safe Senders list or if a mail flow rule exists to bypass filtering.
 
     The gray safety tip also shows up when external images are blocked, that is, the message is in your inbox and doesn't appear to be spam, but contains external images that you haven't opted to download.
-    
 
 ## Working with safety tips
 
