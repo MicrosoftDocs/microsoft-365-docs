@@ -3,7 +3,7 @@ title: Cloud Security Alliance (CSA) STAR attestation
 description: Azure and Intune were awarded Cloud Security Alliance STAR attestation based on an independent audit.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

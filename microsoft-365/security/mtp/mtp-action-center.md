@@ -3,7 +3,7 @@ title: Go to the Action center to view and approve your automated investigation 
 description: Use the Action Center to view details about automated investigation and approve pending actions
 keywords: Action Center, threat protection, investigation, alert, pending, automated, detection
 search.appverid: met150
-ms.prod: M365-security-compliance
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
