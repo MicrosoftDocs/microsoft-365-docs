@@ -206,7 +206,7 @@ ex:TermA1    sharepoint-taxonomy:parent    ex:TermA.
 
 This means that TermA1 has parent TermA. Inversely it also means that TermA1 is the child of TermA. Parent-child relationship is an inversible relationship.
 
-### 6.1.2 sharepoint-taxonomy:child
+### sharepoint-taxonomy:child
 
 This hierarchically relates a term to a another term.
 
@@ -259,7 +259,7 @@ sharepoint-taxonomy:propertyName “Length”   .
 ex:TermA    ex:CustomProp2    “5 cm”@en-us   .
 ```
 
-### 8.3 sharepoint-taxonomy:LocalCustomPropertyForTerm
+### sharepoint-taxonomy:LocalCustomPropertyForTerm
 
 If the custom property for a Term is such that it does not need to be carried along with the Term when the Term is reused somewhere else, then it need to be defined under LocalCustomPropertyForTerm.
 
