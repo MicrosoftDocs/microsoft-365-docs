@@ -253,20 +253,16 @@ additionalContent:
             - text: More Project >
               url: /Project
         # Card
-        - title: Yammer
+        - title: More apps and services
           links:
-            - text: Admin help
-              url: /yammer/yammer-landing-page
-        # Card
-        - title: Kaizala
-          links:
-            - text: Get started
+            - text: Microsoft Bookings
+              url: bookings/index.yml
+            - text: Microsoft Kaizala
               url: /Kaizala
-        # Card
-        - title: Microsoft Stream
-          links:
-            - text: Help documentation
+            - text: Microsoft Stream
               url: /stream/
+            - text: Yammer
+              url: /yammer/yammer-landing-page
         # Card
         - title: Skype for Business
           links:

@@ -4,7 +4,7 @@ description: A prioritized action plan you can follow as you work to meet the re
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, ISO, ISO 27001
 author: BrendaCarter
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
