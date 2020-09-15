@@ -112,6 +112,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Learn the query language
                   href: mtp/advanced-hunting-query-language.md
+                - name: Get expert training
+                  href: mtp/advanced-hunting-expert-training.md
                 - name: Apply query best practices
                   href: mtp/advanced-hunting-best-practices.md
                 - name: Work with query results
