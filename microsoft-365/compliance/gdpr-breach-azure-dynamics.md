@@ -3,7 +3,7 @@ title: Azure and Dynamics 365 breach notification under the GDPR
 description: How Azure and Dynamics 365 protect against a personal data breach and how Microsoft responds and notifies you if a breach occurs.
 keywords: Azure, Microsoft 365, Dynamics 365, Microsoft 365 documentation, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

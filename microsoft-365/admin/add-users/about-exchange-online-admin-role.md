@@ -31,7 +31,7 @@ To help you administer Microsoft 365, you can [assign](assign-admin-roles.md) us
   
 Here are some of the key tasks users can do when they are assigned to the Exchange admin role:
   
-- [Recover deleted items in a user mailbox - Admin Help](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
+- [Recover deleted items in a user mailbox - Admin Help](https://docs.microsoft.com/microsoft-365/enterprise/recover-deleted-items-in-a-mailbox)
     
 - [Set up an archive and deletion policy for mailboxes in your organization](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
     

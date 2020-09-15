@@ -57,7 +57,7 @@ When content reaches the end of its retention period, there are several reasons 
 
 When a disposition review is triggered at the end of the retention period:
   
-- The people you choose receive an email notification that they have content to review. These reviewers can be individual users, distribution or security groups, or Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)). Note that notifications are sent on a weekly basis.
+- The people you choose receive an email notification that they have content to review. These reviewers can be individual users or mail-enabled security groups. Note that notifications are sent on a weekly basis.
     
 - The reviewers go to the **Disposition** tab in the Microsoft 365 compliance center to review the content and decide whether to permanently delete it, extend its retention period, or apply a different retention label.
 
@@ -115,11 +115,11 @@ Content awaiting a disposition review is deleted only after a reviewer chooses t
 ## Disposition of records
 
 > [!NOTE]
-> The rollout for proof of disposal for records in SharePoint and OneDrive is complete. You will see the list of retention labels that marked content as records for SharePoint and OneDrive in the Disposition section of the Records Management page in the Microsoft 365 compliance center. Under these labels, you can see the list of items in SharePoint and OneDrive that were disposed automatically or after a disposition review.
+> The rollout for proof of disposal for records in SharePoint and OneDrive is complete.
 >
-> Proof of disposal for records in Exchange is not yet active. When this rollout begins and when it is complete, we will update this note.
+> Proof of disposal for records in Exchange has just started to roll out. When this rollout is complete, we will update this note.
 
-Use the **Disposition** tab from the **Records Management** page to identify records that are automatically deleted. These items display **Records Disposed** in the **Type** column. For example:
+Use the **Disposition** tab from the **Records Management** page to identify records that are now deleted, either automatically or after a disposition review. These items display **Records Disposed** in the **Type** column. For example:
 
 ![Items that were disposed of without a disposition review](../media/records-disposed2.png)
 

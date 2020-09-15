@@ -4,7 +4,7 @@ description: Provides data controllers with information about Dynamics 365 to he
 keywords: DPIA, Microsoft 365, Dynbamics 365, Microsoft 365 documentation, GDPR
 robots:  "NOINDEX,NOFOLLOW"
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

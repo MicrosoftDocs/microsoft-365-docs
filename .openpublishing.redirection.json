@@ -47,7 +47,7 @@
     },
     {
       "source_path": "microsoft-365/enterprise/using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md",
-      "redirect_url": "https://docs.microsoft.com/office365/enterprise/microsoft-azure-architectures-for-sharepoint-2013",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/microsoft-azure-architectures-for-sharepoint-2013",
       "redirect_document_id": false
     },
     {
@@ -487,7 +487,7 @@
     },
     {
       "source_path": "microsoft-365/admin/dns/index.md",
-      "redirect_url": "setup/add-domain",
+      "redirect_url": "../setup/add-domain",
       "redirect_document_id": false
     },
     {
@@ -1504,6 +1504,12 @@
       "source_path": "microsoft-365/enterprise/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md",
       "redirect_url": "https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell",
       "redirect_document_id": false
-    }
+    },
+      {
+    "source_path": " microsoft-365/admin/security-and-compliance/multi-factor-authentication-plan.md",
+    "redirect_url": " https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365",
+    "redirect_document_id": true
+  }
+
   ]
 }

@@ -3,7 +3,7 @@ title: Multi-Tier Cloud Security (MTCS) Standard for Singapore
 description: Microsoft received certification for the Multi-Tier Cloud Security Standard for Singapore.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

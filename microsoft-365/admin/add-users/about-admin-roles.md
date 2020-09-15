@@ -36,6 +36,10 @@ Looking for the full list of detailed Intune role descriptions you can manage in
 
 For more information on assigning roles in the Microsoft 365 admin center, see [Assign admin roles](assign-admin-roles.md).
 
+### Watch: What is an admin?
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
+
 ## Security guidelines for assigning roles
 
 Because admins have access to sensitive data and files, we recommend that you follow these guidelines to keep your organization's data more secure.

@@ -16,7 +16,7 @@ description: Learn how to administer Exchange Online multi-geo settings in your 
 
 # Administering Exchange Online mailboxes in a multi-geo environment
 
-Remote PowerShell is required to view and configure multi geo properties in your Microsoft 365 environment. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+Exchange Online PowerShell is required to view and configure multi geo properties in your Microsoft 365 environment. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 You need the [Microsoft Azure Active Directory PowerShell Module](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 or later in v1.x to see the **PreferredDataLocation** property on user objects. User objects synchronized via AAD Connect into AAD cannot have their **PreferredDataLocation** value directly modified via AAD PowerShell. Cloud-only user objects can be modified via AAD PowerShell. To connect to Azure AD PowerShell, see [Connect to PowerShell](connect-to-microsoft-365-powershell.md).
 
@@ -24,33 +24,49 @@ You need the [Microsoft Azure Active Directory PowerShell Module](https://social
 
 Typically, Exchange Online PowerShell will connect to the central geo location. But, you can also connect directly to satellite geo locations. Because of performance improvements, we recommend connecting directly to the satellite geo location when you only manage users in that location.
 
-To connect to a specific geo location, the *ConnectionUri* parameter is different than the regular connection instructions. The rest of the commands and values are the same. The steps are:
+The requirements for installing and using the EXO V2 module are described in [Install and maintain the EXO V2 module](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
-1. On your local computer, open Windows PowerShell and run the following command:
+To connect Exchange Online PowerShell to a specific geo location, the *ConnectionUri* parameter is different than the regular connection instructions. The rest of the commands and values are the same.
+
+Specifically, you need to add the `?email=<emailaddress>` value to end of the _ConnectionUri_ value. `<emailaddress>` is the email address of **any** mailbox in the target geo location. Your permissions to that mailbox or the relationship to your credentials are not a factor; the email address simply tells Exchange Online PowerShell where to connect.
+
+Microsoft 365 or Microsoft 365 GCC customers typically don't need to use the _ConnectionUri_ parameter to connect to Exchange Online PowerShell. But, to connect to a specific geo location, you do need to use _ConnectionUri_ parameter so you can use `?email=<emailaddress>` in the value.
+
+### Connect to a geo location in Exchange Online PowerShell using multi-factor authentication (MFA)
+
+1. In a Windows PowerShell window, load the EXO V2 module by running the following command:
+
+   ```powershell
+   Import-Module ExchangeOnlineManagement
+   ```
+
+2. In the following example, admin@contoso.onmicrosoft.com is the admin account, and the target geo location is where the mailbox olga@contoso.onmicrosoft.com resides.
+
+  ```powershell
+  Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
+  ```
+
+### Connect to a geo location in Exchange Online PowerShell without using MFA
+
+1. In a Windows PowerShell window, load the EXO V2 module by running the following command:
+
+   ```powershell
+   Import-Module ExchangeOnlineManagement
+   ```
+
+2. Run the following command:
 
    ```powershell
    $UserCredential = Get-Credential
    ```
 
-   In the **Windows PowerShell Credential Request** dialog box, type your work or school account and password, and then click **OK**.
+   In the **Windows PowerShell Credential Request** dialog box that appears, type your work or school account and password, and then click **OK**.
 
-2. Replace `<emailaddress>` with the email address of **any** mailbox in the target geo location and run the following command. Your permissions on the mailbox and the relationship to your credentials in Step 1 are not a factor; the email address simply tells Exchange Online where to connect.
-  
-   ```powershell
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
-   ```
-
-   For example, if olga@contoso.onmicrosoft.com is the email address of a valid mailbox in the geo location where you want to connect, run the following command:
+3. In the following example, the target geo location is where the mailbox olga@contoso.onmicrosoft.com resides.
 
    ```powershell
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
+   Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
-
-3. Run the following command:
-
-    ```powershell
-    Import-PSSession $Session
-    ```
 
 ## View the available geo locations that are configured in your Exchange Online organization
 
@@ -130,14 +146,13 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 ```
 
 > [!NOTE]
+>
 > - As mentioned previously, you cannot use this procedure for synchronized user objects from on-premises Active Directory. You need to change the **PreferredDataLocation** value in Active Directory and synchronize it using AAD Connect. For more information, see [Azure Active Directory Connect sync: Configure preferred data location for Microsoft 365 resources](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
-> 
+>
 > - How long it takes to relocate a mailbox to a new geo location depends on several factors:
-> 
+>
 >   - The size and type of mailbox.
-> 
 >   - The number of mailboxes being moved.
-> 
 >   - The availability of move resources.
 
 ### Move disabled mailboxes that are on Litigation Hold
@@ -167,17 +182,11 @@ New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>
 This example create a new user account for Elizabeth Brunner with the following values:
 
 - User principal name: ebrunner@contoso.onmicrosoft.com
-
 - First name: Elizabeth
-
 - Last name: Brunner
-
 - Display name: Elizabeth Brunner
-
 - Password: randomly-generated and shown in the results of the command (because we're not using the *Password* parameter)
-
 - License: `contoso:ENTERPRISEPREMIUM` (E5)
-
 - Location: Australia (AUS)
 
 ```powershell

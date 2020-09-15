@@ -17,7 +17,7 @@ description: "Admins can learn how to use the Top domain mail flow status insigh
 
 # Top domain mail flow status insight in the Security & Compliance Center
 
-The **Top domain mail flow status** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center gives you the current status for your organization's domains in terms of mail flow. This insight helps you identify and troubleshoot domains that are experiencing ***mail flow impacting*** issues (for example, unable to receive external email), especially domain expirations or domains with incorrect MX records.
+The **Top domain mail flow status** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) gives you the current status for your organization's domains in terms of mail flow. This insight helps you identify and troubleshoot domains that are experiencing ***mail flow impacting*** issues (for example, unable to receive external email), especially domain expirations or domains with incorrect MX records.
 
 ![Top domain flow status widget in the Mail flow dashboard in the Security & Compliance Center](../../media/mfi-top-domain-mail-flow-status-widget.png)
 

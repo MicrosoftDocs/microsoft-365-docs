@@ -57,6 +57,6 @@ For additional security features for demonstration or proof of concept, see [Off
 
 ## See Also
 
-[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
-[Microsoft Cloud IT architecture resources](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources)
+[Microsoft Cloud IT architecture resources](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)

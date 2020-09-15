@@ -38,7 +38,7 @@ Follow these steps to get a code at Microsoft 365, and then go to the other doma
 
 1. In the admin center, go to  **Settings** > **Domains**.
 
-2. <On the **Domains** page, select the Microsoft 365 domain that you want to transfer to another domain registrar, and then select **Check health**.
+2. On the **Domains** page, select the Microsoft 365 domain that you want to transfer to another domain registrar, and then select **Check health**.
 
 3. At the top of the page, select **Transfer domain**.
 
