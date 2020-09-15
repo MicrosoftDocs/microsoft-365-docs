@@ -29,7 +29,7 @@ Before you begin, create the site or team that you want to share with the partne
 
 ## License requirements
 
-[!INCLUDE [Azure AD Premium P2 license](../../../includes/active-directory-p2-license.md)]
+Using this feature requires an Azure AD Premium P2 license. 
 
 Specialized clouds, such as Azure Germany and Azure China 21Vianet, are not currently available for use.
 
