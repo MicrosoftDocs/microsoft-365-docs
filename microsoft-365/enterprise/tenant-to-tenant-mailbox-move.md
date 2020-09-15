@@ -260,9 +260,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 
 ```
 
-### Move and upgrade
-
-#### Move mailboxes back to the original source
+### Move mailboxes back to the original source
 
 If a mailbox move back to the original source tenant is required, the same set of steps (and scripts) will need to be run in both new source and new target tenants. The existing Organization Relationship object will be updated or appended, not recreated.
 
