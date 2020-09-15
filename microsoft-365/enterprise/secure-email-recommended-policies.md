@@ -6,7 +6,6 @@ author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -30,13 +29,15 @@ These recommendations require your users to use modern email clients, including 
 
 ## Updating common policies to include email
 
-The following diagram illustrates the common identity and device access policies and indicates which policies need to be updated to protect email. Note the addition of a new rule for Exchange Online to block ActiveSync clients. This forces the use of Outlook mobile.
+To protect email, the following diagram illustrates which policies to update from the the common identity and device access policies.
 
-![Summary of policy updates for protecting email](../media/identity-access-ruleset-mail.png)
+[![Summary of policy updates for protecting access to Teams and its dependent services](../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
 
-[See a larger version of this image](https://raw.githubusercontent.com/MicrosoftDocs/microsoft-365-docs/public/microsoft-365/media/identity-access-ruleset-mail.png)
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
 
-If you included Exchange Online and Outlook in the scope of the policies when you set them up, you only need to create the new policy to block ActiveSync clients. Review the policies listed in the following table and either make the recommended additions, or confirm that these are already included. Each rule links to the associated configuration instructions in [Common identity and device access policies](identity-access-policies.md).
+Note the addition of a new policy for Exchange Online to block ActiveSync clients. This forces the use of Outlook mobile.
+
+If you included Exchange Online and Outlook in the scope of the policies when you set them up, you only need to create the new policy to block ActiveSync clients. Review the policies listed in the following table and either make the recommended additions, or confirm that these are already included. Each policy links to the associated configuration instructions in [Common identity and device access policies](identity-access-policies.md).
 
 |Protection level|Policies|More information|
 |:---------------|:-------|:----------------|
@@ -52,7 +53,7 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 
 ## Block ActiveSync clients
 
-This policy prevents ActiveSync clients from bypassing other conditional access rules. The rule configuration applies only to ActiveSync clients. By selecting **[Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)**, this policy blocks ActiveSync clients. Details on creating this policy can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+This policy prevents ActiveSync clients from bypassing other Conditional Access policies. The policy configuration applies only to ActiveSync clients. By selecting **[Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)**, this policy blocks ActiveSync clients. Details on creating this policy can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
 1. Follow "Step 2: Configure an Azure AD Conditional Access policy for Exchange Online with ActiveSync (EAS)" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
 
@@ -64,4 +65,9 @@ For more information, see [Set up new Office 365 Message Encryption capabilities
 
 ## Next steps
 
-[Learn about policy recommendations for securing SharePoint Sites and files](sharepoint-file-access-policies.md)
+![Step 4: Policies for Microsoft 365 cloud apps](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+
+Configure Conditional Access policies for:
+
+- [Microsoft Teams](teams-access-policies.md)
+- [SharePoint](secure-email-recommended-policies.md)

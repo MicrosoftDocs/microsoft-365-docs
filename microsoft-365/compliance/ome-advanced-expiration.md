@@ -35,7 +35,7 @@ With Office 365 Advanced Message Encryption, anytime you apply custom branding, 
 
 ## Create a custom branding template to force mail expiration by using PowerShell
 
-1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) with an account that has global administrator permissions in your organization.
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) with an account that has global administrator permissions in your organization.
 
 2. Run the New-OMEConfiguration cmdlet.
 
