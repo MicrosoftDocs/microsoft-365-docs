@@ -72,7 +72,7 @@
               href: mtp/generate-test-alert.md
         - name: How-to guides
           items: 
-            - name: Create a trial lab environment
+            - name: Create a trial lab or pilot environment
               href: mtp/mtp-evaluation.md             
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
@@ -112,6 +112,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Learn the query language
                   href: mtp/advanced-hunting-query-language.md
+                - name: Get expert training
+                  href: mtp/advanced-hunting-expert-training.md
                 - name: Apply query best practices
                   href: mtp/advanced-hunting-best-practices.md
                 - name: Work with query results

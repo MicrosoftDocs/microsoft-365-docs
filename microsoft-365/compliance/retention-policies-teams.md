@@ -96,10 +96,6 @@ If the user stored any files in Teams, see the [equivalent section](retention-po
 
 We're continuously working on optimizing retention functionality in Teams. In the meantime, here are a few limitations to be aware of when you use retention for Teams channel messages and chats:
 
-- **Teams isn't included in an org-wide policy**. If you create an org-wide policy, Teams channel messages and Teams chats aren't included because these require a separate retention policy.
-
-- **Teams doesn't support advanced retention**. When you create a retention policy, if you choose the [Advanced settings to identify content that meets specific conditions](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), the Teams locations are not available. Retention in Teams applies to all the chat and channel message content when you select those locations.
-
 - **Teams messages in private channels aren't included when you configure a retention policy for Teams channel messages**. Currently, private channels aren't supported by retention policies. 
 
 - **Likes and other reactions are not retained for Teams chat and channel messages**. Reactions from others in the form of emoticons aren't supported by retention policies.
