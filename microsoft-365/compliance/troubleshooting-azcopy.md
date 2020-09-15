@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid: 

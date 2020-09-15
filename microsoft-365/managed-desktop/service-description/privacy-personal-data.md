@@ -2,7 +2,7 @@
 title: Privacy and personal data
 description: Details the data collected, stored, and used by the service
 keywords: GDPR, retention, deletion, storage, retention, processing, security, auditing
-ms.prod: m365-md
+ms.service: m365-md
 ms.sitesec: library
 author: jaimeo
 f1.keywords:
