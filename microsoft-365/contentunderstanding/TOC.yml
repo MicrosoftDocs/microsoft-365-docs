@@ -33,6 +33,8 @@
           href: skos-format-reference.md
         - name: Push content type to hub
           href: push-content-type-to-hub.md
+        - name: Term store reports
+          href: term-store-analytics.md
         
 
 
