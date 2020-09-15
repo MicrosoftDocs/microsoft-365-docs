@@ -61,13 +61,8 @@ The following sections describe each item in the main menu.
 
 The **Service Trust Portal** link displays the home page. It provides a quick way to get back to the home page.
 
-### Compliance Manager
-
-Compliance Manager is a workflow-based risk assessment tool that helps you track, assign, and verify your organization's regulatory compliance activities related to Microsoft Cloud services, such as Microsoft 365, Dynamics 365, and Azure. Use Compliance Manager to manage regulatory compliance within the shared responsibility model of the cloud. Depending on the version of Compliance Manager you want to use, see the following articles for more information:
-
-- [Microsoft Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-
-- [Microsoft Compliance Manager (Preview)](compliance-manager-overview.md)
+> [!NOTE]
+> Compliance Manager has moved from the Service Trust Portal to its new location in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). All customer data has been ported over to the new Compliance Manager location, so you can continue using Compliance Manager without interruption. Refer to the [Compliance Manager documentation](compliance-manager) for more details and to see what's new. Although the classic version of Compliance Manager remains in the Service Trust Portal, all users are encouraged to use the new Compliance Manager in the Microsoft 365 compliance center.
 
 ### Trust Documents
 
