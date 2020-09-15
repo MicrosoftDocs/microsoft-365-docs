@@ -44,6 +44,22 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office updates](https://docs.microsoft.com/OfficeUpdates/)
 
+## Ignite 2020 (August & September)
+
+Welcome to Microsoft Ignite - our first online-only Ignite. We hope to see you in one of our sessions: [Microsoft Ignite 2020 Session Catalog](https://myignite.microsoft.com/sessions). Here's just a few of the things we'll be talking about at Ignite.
+
+### Search faster and get better results from any page
+
+We've started rolling out a new Search experience for the admin center, and we can't wait for you to try it out.
+
+- The Search box has been moved to the header area where it says "Microsoft 365 admin center" so you now search from any page, not just the Home page. We've even got a shortcut: **Alt+S**.
+- Search is smarter and will return better results faster. Try typing "2fa" to get started.
+- Search results are organized by the type of item or action you can take.
+  - Users: You can 
+
+- Didn't find what you were looking for? Let us know at the bottom of the search results.
+
+
 ## July 2020
 
 ### Getting ready for Ignite 2020
