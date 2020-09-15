@@ -34,7 +34,7 @@ When the moves are complete, the source system mailbox is converted to mailuser 
 
 Cross-tenant Exchange mailbox migrations are supported for tenants in hybrid or cloud only, or any combination of the two.
 
-## Prepare source and target tenants
+## Prepare source and target tenants (organizational configuration)
 
 ### Overview
 
