@@ -41,8 +41,8 @@ Watch the Microsoft 365 Message Center for confirmation when moves for each of E
 |United Arab Emirates  <br/> |July 1, 2022  <br/> |
 |South Africa  <br/> |July 1, 2022  <br/> |
 |Switzerland, Liechtenstein  <br/> |July 1, 2022  <br/> |
-|Germany  <br/> |Planned  <br/> |
 |Norway  <br/> |November 1, 2022  <br/> |
+|Germany  <br/> |Planned  <br/> |
 
 ## Exchange Online
 
