@@ -7,21 +7,6 @@
           href: top-security-tasks-for-remote-work.md
         - name: Microsoft 365 Security for BDMs
           href: Microsoft-365-security-for-bdm.md
-        - name: Chief Information Security Officer (CISO) workshop training
-          href: ./office-365-security/ciso-workshop.md
-          items: 
-            - name: Module 1 - Microsoft cybersecurity briefing
-              href: ./office-365-security/ciso-workshop-module-1.md
-            - name: Module 2 - Security management
-              href: ./office-365-security/ciso-workshop-module-2.md
-            - name: Module 3 - Identity and Zero Trust User Access
-              href: ./office-365-security/ciso-workshop-module-3.md
-            - name: Module 4a - Threat protection strategy, Part I
-              href: ./office-365-security/ciso-workshop-module-4a.md
-            - name: Module 4b - Threat protection strategy, Part II
-              href: ./office-365-security/ciso-workshop-module-4b.md
-            - name: Module 5 - Information protection
-              href: ./office-365-security/ciso-workshop-module-5.md
     - name: Identity and device access configurations
       href: ../enterprise/microsoft-365-policies-configurations.md
       items: 
@@ -87,7 +72,7 @@
               href: mtp/generate-test-alert.md
         - name: How-to guides
           items: 
-            - name: Create a trial lab environment
+            - name: Create a trial lab or pilot environment
               href: mtp/mtp-evaluation.md             
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md

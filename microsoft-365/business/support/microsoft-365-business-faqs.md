@@ -153,7 +153,7 @@ All the add-ons that can be added to Microsoft 365 Business Standard can be adde
 Yes, you can purchase a Business Voice subscription. [Business Voice](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice) is a telephony solution designed for small and medium businesses of up to 300 users that bundles Phone System, Audio Conferencing, a Domestic Calling Plan, and more. Phone System capabilities that you'll get include voicemail, caller ID, call park, call forwarding, auto attendants, and call queues. <br> To find out whether Business Voice is available in your country or region, see [Country and region availability for Business Voice](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability). For pricing information, see [Pricing for Business Voice](https://go.microsoft.com/fwlink/?linkid=2127221).
  
 ### Can Microsoft 365 Business Premium customers use  Microsoft Defender Advanced Threat Protection? 
-Yes, Microsoft Defender Advanced Threat Protection is available as an add-on to Microsoft 365 Business Premium customers.
+Yes, Microsoft Defender Advanced Threat Protection is available as an add-on to Microsoft 365 Business Premium when purchased from a [Microsoft Cloud Solution Provider](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
 
 ## Partner opportunity
 
