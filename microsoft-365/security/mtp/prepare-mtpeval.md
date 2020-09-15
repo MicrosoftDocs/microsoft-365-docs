@@ -65,7 +65,7 @@ Preparation is key to any successful deployment. This section will guide you thr
 Learn about the licensing, hardware and software requirements, and other configuration settings to provision and use Microsoft Threat Protection. See the minimum requirements for [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?view=o365-worldwide), [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
 
 ## Stakeholders and sign-off
-The following section serves to identify all the stakeholders that are involved in the project and who may need to sign-off, review, or stay informed, even for an evaluation or a pilot run.
+The following section serves to identify all the stakeholders that are involved in the project and who may need to sign-off, review, or stay informed, whether for evaluation or running a pilot.
 
 >[!NOTE]
 >Not all organizations might have the security organization maturity to have such roles. In such case, consult with your leadership team on review and approval accountabilities.
