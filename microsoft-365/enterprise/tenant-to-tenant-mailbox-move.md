@@ -182,16 +182,13 @@ The target admin setup is complete!
 
 3.  In either Microsoft Admin Center or Remote PowerShell, create a Mail Enabled Security Group(s) to control the list of mailboxes allowed by the target tenant to pull (move) from the source tenant to the target tenant. You do not need to populate this group in advance, but at least one group must be provided to run the setup steps (script).
 
-4.  Save the script (SetupCrossTenantRelationshipForSourceTenant) to the computer where you will be executing the script from.
+4.	Download the script for the source tenant setup from the GitHub repository (you made need to create a GitHub account to access the script if this is your first time), here: https://github.com/microsoft/cross-tenant. Script name: SetupCrossTenantRelationshipForTargetResource.ps1.
 
-5.  Rename the script from *SetupCrossTenantRelationshipForSourceTenant.txt* to
-  *SetupCrossTenantRelationshipForSourceTenant.**ps1***.
+5.	Create a Remote PowerShell connection to the source EXO tenant with your Exchange Administrator permissions (Global Admin permissions are not required to configure source; only target due to Azure app creation process).
 
-6.  Create a Remote PowerShell connection to the source EXO tenant with your Exchange Administrator permissions (Global Admin permissions are not required to configure source; only target due to Azure app creation process).
+6.	Change directory to the script location or verify that the script is currently saved to the location currently in your RPS session.
 
-7.  Change directory to the script location or verify that the script is currently saved to the location currently in your RPS session.
-
-8.  Run the script with the following required parameters and values.
+7.  Run the script with the following required parameters and values.
 
     | Parameter                         | Value                                                                                                                                                                                                                             |
     |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -212,15 +209,16 @@ The source admin setup is complete!
 
 ### Verify setup
 
-Verify that the Organization Relationships and migration endpoint were created successfully in RPS.
+Verify that the Organization Relationships in both source and target tenants and migration endpoint in the target were created successfully in RPS.
 
 #### Target tenant
 
 **Organization relationship**
 
+Verify organization relationship object was created and configured:
+
 ```powershell
 PS C:\Users\Admin\scripts\T2TMovesV2> Get-OrganizationRelationship fabrikam_contoso_1178 | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
-
 
 Name                  : fabrikam_contoso_1123
 DomainNames           : {sd0933me9f-9304-s903-s093-s093mfi903m4}
@@ -230,6 +228,8 @@ MailboxMoveCapability : Inbound
 ```
 
 **Migration endpoint**
+
+Verify the migration endpoint object was created and configured:
 
 ```powershell
 PS C:\Users\Admin\scripts\T2TMovesV2> Get-MigrationEndpoint fabrikam_contoso_1123 | fl Identity, RemoteTenant, ApplicationId, AppSecretKeyVaultUrl
@@ -245,6 +245,8 @@ AppSecretKeyVaultUrl : https://cross-tenantmyvaultformoves.vault.azure.net:443/c
 #### Source tenant
 
 **Organization relationship**
+
+Verify organization relationship object was created and configured:
 
 ```powershell
 PS C:\Users\Admin\scripts\T2TMovesV2> Get-OrganizationRelationship | fl name, MailboxMoveEnabled, MailboxMoveCapability, MailboxMovePublishedScopes, OAuthApplicationId
@@ -263,10 +265,6 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 #### Move mailboxes back to the original source
 
 If a mailbox move back to the original source tenant is required, the same set of steps (and scripts) will need to be run in both new source and new target tenants. The existing Organization Relationship object will be updated or appended, not recreated.
-
-#### Upgrade from v1 to v2
-
-Upgrading from v1 to v2 is supported. Existing mailbox migrations will not be impacted during setup. Once setup steps are complete, however, only New-MigrationBatch is supported.
 
 ## Prepare target user objects for migration
 
