@@ -324,6 +324,10 @@ The customer organizations must ensure the below objects and attributes are set 
 
 2.	If the source mailbox is on LitigationHold and the source mailbox Recoverable Items size is greater than our database default (30 GB), moves will not proceed since the target quota is less than the source mailbox size. You can update the target MailUser object to transition the ELC mailbox flags from the source environment to the target, which triggers the target system to expand the quota of the MailUser to 100 GB, thus allowing the move to the target. The instructions below will work only for Hybrid customers running Azure AD Connect, as the commands to stamp the ELC flags are not exposed to tenant administrators.
 
+>[!Note]
+> SAMPLE – AS IS, NO WARRANTY<br/>This script assumes a connection to both source mailbox (to get source values) and the target on-premises Active Directory (to stamp the ADUser object). If source has litigation or single item recovery enabled then set this on 
+destination account.  This will increase the dumpster size of destination account to 100GB.
+
     ```powershell
     $ELCValue = 0 
     if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}} 
@@ -373,7 +377,7 @@ Cross-tenant Exchange mailbox migrations are submitted via migrations batches in
 
 ### Create Migration batches
 
-#### Example migration batch cmdlet for kicking off moves ####
+**Example migration batch cmdlet for kicking off moves**
 
 ```powershell
 New-MigrationBatch -Name T2Tbatch-testforignitedemo -SourceEndpoint target_source_7977 -CSVData ([System.IO.File]::ReadAllBytes('users.csv')) -Autostart -TargetDeliveryDomain targetformoves.onmicrosoft.com -AutoComplete
@@ -411,6 +415,10 @@ Get-MoveRequest -Flags "CrossTenant"
 ```
  
 **Can you provide example scripts for copying attributes used in testing?**
+
+>[!Note]
+> SAMPLE – AS IS, NO WARRANTY<br/>This script assumes a connection to both source mailbox (to get source values) and the target on-premises Active Directory (to stamp the ADUser object). If source has litigation or single item recovery enabled then set this on 
+destination account.  This will increase the dumpster size of destination account to 100GB.
 
 ```powershell
 #Dumps out the test mailboxes from SourceTenant 
@@ -622,7 +630,7 @@ background.** When creating target tenant MailUser objects, you must ensure that
     PrimarySmtpAddress        ExternalDirectoryObjectId            ExternalEmailAddress ------------------        -------------------------            -------------------- proxytest@fabrikam.com e2513482-1d5b-4066-936a-cbc7f8f6f817 SMTP:proxytest@fabrikam.com 
     ```
  
- <br/>
+ 
    - When msExchRemoteRecipientType is set to 8 (DeprovisionMailbox), for onprem MailUsers that are migrated to the target tenant, the proxy scrubbing logic in Azure will remove nonowned domains and reset the primarySMTP to an owned domain. By clearing msExchRemoteRecipientType in the onpremises MailUser, the proxy scrub logic no longer applies. <br/><br>Below is the full set of possible Service Plans that include Exchange.
 
    | Name                                              |
