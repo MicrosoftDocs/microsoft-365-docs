@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -44,10 +44,7 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
   - Outlook 2016 for Mac
   - Outlook included with Microsoft 365 apps for Enterprise
 
-- The Report Message add-in is currently not available for:
-
-  - Mailboxes in on-premises Exchange organizations
-  - GCC, GCC HIGH, or DoD subscriptions
+- The Report Message add-in is not available for mailboxes in on-premises Exchange organizations.
 
 - You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [Specify a mailbox for user submissions of spam and phishing messages in Exchange Online](user-submission.md).
 

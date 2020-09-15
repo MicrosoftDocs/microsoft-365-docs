@@ -56,7 +56,13 @@ EOP performs load balancing between datacenters but only within a region. If you
 
 - In Asia-Pacific (APAC), all Exchange Online mailboxes are located in APAC datacenters, and messages are currently routed through APAC datacenters for EOP filtering.
 
-- In the Americas, all Exchange Online mailboxes are located in U.S. datacenters, with the exception of South America where datacenters in Brazil and Chile are used and in Canada where datacenters in Canada are used. All email messages, including messages for customers in South America and Canada, are routed through local datacenters for EOP filtering; quarantined email is stored in the datacenter where the tenant is located.
+- In the Americas, services are distributed in the following locations:
+
+  - South America: Exchange Online mailboxes are located in datacenters in Brazil and Chile. All messages are routed through local datacenters for EOP filtering. Quarantined messages are stored in the datacenter where the tenant is located.
+
+  - Canada: Exchange Online mailboxes are located in datacenters in Canada. All messages are routed through local datacenters for EOP filtering. Quarantined messages are stored in the datacenter where the tenant is located.
+
+  - United States: Exchange Online mailboxes are located in U.S. datacenters. All messages are routed through local datacenters for EOP filtering. Quarantined messages are stored in the datacenter where the tenant is located.
 
 - For the Government Community Cloud (GCC), all Exchange Online mailboxes are located in U.S. datacenters and all messages are routed through U.S. datacenters for EOP filtering.
 

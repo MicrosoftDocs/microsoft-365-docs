@@ -23,8 +23,7 @@ description: "Get an overview of how your organization is adopting Microsoft 365
 
 # Microsoft 365 usage analytics
 ---
-Microsoft 365 usage analytics is not yet available for Microsoft 365 US Government Community.
- 
+
 ## Overview of Microsoft 365 usage analytics
 
 Use Microsoft 365 usage analytics within Power BI to gain insights on how your organization is adopting the various services within Microsoft 365 to communicate and collaborate. You can visualize and analyze Microsoft 365 usage data, create custom reports and share the insights within your organization and gain insights into how specific regions or departments are utilizing Microsoft 365.

@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde

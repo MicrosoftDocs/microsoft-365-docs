@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: 
 description: Determine the data privacy regulations, the relevant scenarios, your readiness, and the sensitive information types that are in your Microsoft 365 environment.
 ---

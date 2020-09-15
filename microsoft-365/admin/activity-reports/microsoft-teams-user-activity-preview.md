@@ -46,11 +46,11 @@ You can view the user activity in the Teams report by choosing the **User activi
 |Total meetings   <br/> |The number of online meetings that the user participated in during the specified time period.  <br/> |
 |1:1 calls   <br/> | The number of 1:1 calls that the user participated in during the specified time period.  <br/> |
 |Last activity date (UTC)  <br/> |The last date that the user participated in a Microsoft Teams activity.<br/> |
-|Meetings participated adhoc   <br/> | The number of adhoc meetings that the user participated in during the specified time period.  <br/> |
-|Meetings organized adhoc <br/> |The number of adhoc meetings that the user organized during the specified time period. <br/>|
+|Meetings participated adhoc   <br/> | The number of  meetings not scheduled on the calendar that the user participated in during the specified time period.  <br/> |
+|Meetings organized adhoc <br/> |The number of meetings not scheduled on the calendar that the user organized during the specified time period. <br/>|
 |Meetings organized scheduled  <br/> |The number of scheduled meetings  a user organized during the specified time period.  <br/> |
 |Is licensed |Selected if the user is licensed to use Teams.|
-|Other activity|The number of other team activities by the user. |
+|Other activity|The user is considered active but has a zero value for the Chat Messages, 1:1 calls, Channel Messages, Total Meetings, and Meetings organized. Examples actions are when the Microsoft Teams client is activated to the foreground, actions were taken in the compose message area, toasts appeared in the Microsoft Teams client, banners were shown in the Microsoft Teams client, etc. |
 |<br/> |Select **Choose columns** to add or remove columns from the report.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)|
-|9.  <br/> |You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data.  <br/> |
+|<br/> |You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data.  <br/> |
 |||

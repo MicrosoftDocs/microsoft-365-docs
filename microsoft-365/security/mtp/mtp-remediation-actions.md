@@ -34,7 +34,7 @@ The following table summarizes remediation actions that are currently supported 
 
 |Device (endpoint) remediation actions  |Email remediation actions  |
 |---------|---------|
-|Quarantine file<br/>Remove registry key<br/>Kill process <br/>Stop service <br/>Disable driver <br/>Remove scheduled task      |Soft delete email messages or clusters<br/>Block URL (time-of-click)<br/>Turn off external mail forwarding          |
+|- Collect investigation package <br/>- Isolate device (this action can be undone)<br/>- Offboard machine <br/>- Release code execution <br/>- Release from quarantine <br/>- Request sample <br/>- Restrict code execution (this action can be undone) <br/>- Run antivirus scan <br/>- Stop and quarantine      |- Block URL (time-of-click)<br/>- Soft delete email messages or clusters<br/>- Quarantine email<br/>- Quarantine an email attachment<br/>- Turn off external mail forwarding          |
 
 Remediation actions, whether they're pending approval or are already complete, can be viewed in the [Action Center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).
 

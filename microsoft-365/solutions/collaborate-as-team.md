@@ -2,14 +2,15 @@
 title: "Collaborate with guests in a team"
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom: 
 - seo-marvel-apr2020
 localization_priority: Normal
@@ -31,7 +32,7 @@ This video shows the configuration steps described in this document.</br>
 
 ## Azure Organizational relationships settings
 
-Sharing in Microsoft 365 is governed at its highest level by the organizational relationships settings in Azure Active Directory. If guest sharing is disabled or restricted in Azure AD, this will override any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [organizational relationships settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this will override any sharing settings that you configure in Microsoft 365.
 
 Check the organizational relationships settings to ensure that sharing with guests is not blocked.
 
@@ -47,6 +48,8 @@ To set organizational relationship settings
 6. If you made changes, click **Save**.
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
+
+If you work with guests from multiple organizations, you may want to restrict their ability to access directory data. This will prevent them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
 
 ## Teams guest access settings
 
@@ -77,7 +80,7 @@ Teams uses Microsoft 365 Groups for team membership. The Microsoft 365 Groups gu
 To set Microsoft 365 Groups guest settings
 
 1. In the Microsoft 365 admin center, in the left navigation, expand **Settings**.
-2. Click **Services & add-ins**.
+2. Click **Org settings**.
 3. In the list, click **Microsoft 365 Groups**.
 4. Ensure that the **Let group members outside your organization access group content** and **Let group owners add people outside your organization to groups** check boxes are both checked.
 5. If you made changes, click **Save changes**.

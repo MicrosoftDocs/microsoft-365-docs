@@ -4,14 +4,10 @@
   href: ../admin/index.yml
 - name: Try or buy
   items:
-    - name: Sign up for Microsoft 365 trial
-      href: sign-up-for-office-365-trial.md
     - name: Try or buy Microsoft 365
       href: try-or-buy-microsoft-365.md
     - name: Extend your trial
       href: extend-your-trial.md
-    - name: Buy another subscription
-      href: buy-another-subscription.md
     - name: Buy or edit an add-on
       href: buy-or-edit-an-add-on.md
     - name: Add storage space
@@ -58,7 +54,7 @@
       href: billing-and-payments/pay-for-your-subscription.md
     - name: Change how you pay
       href: billing-and-payments/change-payment-method.md
-    - name: Change payment frequency
+    - name: Change billing frequency
       href: billing-and-payments/change-payment-frequency.md
     - name: Manage billing profiles
       href: billing-and-payments/manage-billing-profiles.md

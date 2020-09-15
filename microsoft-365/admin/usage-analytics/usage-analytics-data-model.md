@@ -135,6 +135,9 @@ This table contains data about each user who had an activity in any of the servi
 |SFB_P2PSummary  <br/> |Number of peer-to-peer sessions this user took part in.  <br/> |
 |SFB_ConfOrgSummary  <br/> |Number of conference sessions this user organized.  <br/> |
 |SFB_ConfPartSummary  <br/> |Number of conference sessions this user participated in.  <br/> |
+
+> [!NOTE]
+> Teams_HasOtherAction means user is considered active but has a zero value for the Chat Messages, 1:1 calls, Channel Messages, Total Meetings, and Meetings organized.
    
 ### Data table - Tenant Product Usage
 

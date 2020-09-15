@@ -9,7 +9,7 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-modern-desktop
 - Strat_O365_Enterprise
@@ -20,7 +20,7 @@ description: Understand how Contoso used Microsoft Endpoint Configuration Manage
 
 # Windows 10 Enterprise deployment for Contoso
 
-Prior to the wide rollout of Microsoft 365 Enterprise, Contoso had Windows-compatible PCs and devices running a mixture of Windows 7 (10%), Windows 8.1 (65%), and Windows 10 (25%). Contoso wanted to upgrade their PCs for Windows 10 Enterprise take advantage of advanced security and lowered IT overhead from automated deployments of updates. 
+Prior to the wide rollout of Microsoft 365 for enterprise, Contoso had Windows-compatible PCs and devices running a mixture of Windows 7 (10%), Windows 8.1 (65%), and Windows 10 (25%). Contoso wanted to upgrade their PCs for Windows 10 Enterprise take advantage of advanced security and lowered IT overhead from automated deployments of updates. 
 
 After assessing their infrastructure and business needs, Contoso identified these key requirements for the deployment:
 
@@ -91,8 +91,8 @@ This infrastructure consists of:
 
 ## See also
 
-[Windows 10 Enterprise for Microsoft 365 Enterprise](windows10-infrastructure.md)
+[Windows 10 Enterprise](https://docs.microsoft.com/windows/deployment/)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)

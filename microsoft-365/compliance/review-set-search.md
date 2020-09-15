@@ -15,7 +15,6 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
 description: Learn how to create and run a query in a review set to organize data for a more efficient review in an Advanced eDiscovery case.
 ms.custom: seo-marvel-mar2020
 ---

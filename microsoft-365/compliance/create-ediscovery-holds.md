@@ -131,7 +131,7 @@ Starting in February 2020, we turned on ability to preserve content in private c
 For more information about preserving Teams content, see [Place a Microsoft Teams user or team on legal hold](https://docs.microsoft.com/MicrosoftTeams/legal-hold).
     
 > [!IMPORTANT]
-> In a cloud-based organization, users who participate in conversations that are part of the chat list in Teams must have an Exchange Online mailbox in order to retain chat conversations when the mailbox is placed on an eDiscovery hold. That's because conversations that are part of the chat list are stored in the cloud-based mailboxes of the chat participants. If a chat participant doesn't have an Exchange Online mailbox, you won't be able to preserve those chat conversations. For example, in an Exchange hybrid deployment, users with an on-premises mailbox may ght be able to participate in conversations that are part of the chat list in Teams. But in this case, content from these conversation can't be preserved because these users don't have a cloud-based mailboxes that can be placed on hold.
+> In a cloud-based organization, users who participate in conversations that are part of the chat list in Teams must have an Exchange Online mailbox in order to retain chat conversations when the mailbox is placed on an eDiscovery hold. That's because conversations that are part of the chat list are stored in the cloud-based mailboxes of the chat participants. If a chat participant doesn't have an Exchange Online mailbox, you won't be able to preserve those chat conversations. For example, in an Exchange hybrid deployment, users with an on-premises mailbox may be able to participate in conversations that are part of the chat list in Teams. But in this case, content from these conversation can't be preserved because these users don't have a cloud-based mailboxes that can be placed on hold.
   
 Every Team or team channel also contains a Wiki for note taking and collaboration. The Wiki content is automatically saved to a file with a .mht format. This file is stored in the Teams Wiki Data document library on the team's SharePoint site. You can preserve the wiki content by adding the team's SharePoint site to an eDiscovery hold.
 
@@ -146,7 +146,7 @@ Keep the following things in mind when placing both Teams and Office 365 Groups 
 
 - As previously explained, to place content located in Teams and Office 365 Groups on hold, you have to specify the mailbox and SharePoint site that associated with a group or team.
 
-- Run the **Get-UnifiedGroup** cmdlet in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) to view properties for Teams and Office 365 Groups. This is a good way to get the URL for the site that's associated with a Team or Office 365 Group. For example, the following command displays selected properties for an Office 365 Group named Senior Leadership Team:
+- Run the **Get-UnifiedGroup** cmdlet in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) to view properties for Teams and Office 365 Groups. This is a good way to get the URL for the site that's associated with a Team or Office 365 Group. For example, the following command displays selected properties for an Office 365 Group named Senior Leadership Team:
 
     ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl

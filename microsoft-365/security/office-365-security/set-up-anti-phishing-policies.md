@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date:
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -33,9 +33,10 @@ All other organizations have anti-phishing policies.
 
 The high-level differences between anti-phishing policies and ATP anti-phishing policies are described in the following table:
 
-||||
+****
+
+|Feature|Anti-phishing policies|ATP anti-phishing policies|
 |---|:---:|:---:|
-|**Feature**|**Anti-phishing policies**|**ATP anti-phishing policies**|
 |Automatically created default policy|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Create custom policies|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Policy settings<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -46,13 +47,38 @@ The high-level differences between anti-phishing policies and ATP anti-phishing 
 
 <sup>\*</sup> In the default policy, the policy name and description are read-only (the description is blank), and you can't specify who the policy applies to (the default policy applies to all recipients).
 
-To configure anti-phishing policies, see the following topics:
+To configure anti-phishing policies, see the following articles:
 
 - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
 
 - [Configure ATP anti-phishing policies in Microsoft 365](configure-atp-anti-phishing-policies.md)
 
-The rest of this topic describes the settings that are available in anti-phishing policies and ATP anti-phishing policies.
+The rest of this article describes the settings that are available in anti-phishing policies and ATP anti-phishing policies.
+
+## Policy settings
+
+The following policy settings are available in anti-phishing policies and ATP anti-phishing policies:
+
+- **Name**: You can't rename the default anti-phishing policy, but you can name and rename custom policies that you create.
+
+- **Description** You can't add a description to the default anti-phishing policy, but you can add and change the description for custom policies that you create.
+
+- **Applied to**: Identifies internal recipients that the anti-phishing policy applies to. This value is required in custom policies, and not available in the default policy (the default policy applies to all recipients).
+
+  You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
+
+  - **Recipient is**: One or more mailboxes, mail users, or mail contacts in your organization.
+  - **Recipient is a member of**: One or more groups in your organization.
+  - **The recipient domain is**: One or more of the configured accepted domains in Microsoft 365.
+
+  - **Except when**: Exceptions for the rule. The settings and behavior are exactly like the conditions:
+
+    - **Recipient is**
+    - **Recipient is a member of**
+    - **The recipient domain is**
+
+  > [!NOTE]
+  > The **Applied to** setting is required in custom anti-phishing policies to identify them message **recipients** <u>that the policy applies to</u>. ATP anti-phishing policies also have [impersonation settings](#impersonation-settings-in-atp-anti-phishing-policies) where you can specify individual sender email addresses or sender domains <u>that will receive impersonation protection</u> as described later in this topic.
 
 ## Spoof settings
 
@@ -69,28 +95,36 @@ The following spoof settings are available in anti-phishing policies and ATP ant
 
   - **Move message to Junk Email folder**: This is the default value. The message is delivered to the mailbox and moved to the Junk Email folder. In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-  - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following topics:
+  - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following articles:
 
     - [Quarantine in Microsoft 365](quarantine-email-messages.md)
     - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **Unauthenticated Sender**: Enables or disables unidentified sender identification in Outlook. Specifically:
+- **Unauthenticated Sender**: See the information in the next section.
 
-  - A question mark (?) is added to the sender's photo if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication).
+### Unauthenticated Sender
 
-  - The via tag (chris@contoso.com <u>via</u> michelle@fabrikam.com) is added if the domain in the From address (the message sender that's displayed in email clients) is different from the domain in the DKIM signature or the **MAIL FROM** address. For more information about these addresses, see [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+Unauthenticated sender identification is part of the [Spoof settings](#spoof-settings) that are available in anti-phishing policies and ATP anti-phishing policies as described in the previous section.
 
-  To prevent these identifiers from being added to messages from specific senders, you have the following options:
+The **Unauthenticated Sender** setting enables or disables unauthenticated sender identification in Outlook. Specifically:
 
-  - Allow the sender to spoof in the spoof intelligence policy. For instructions, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- A question mark (?) is added to the sender's photo if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication). Disabling unauthenticated sender identification prevents the question mark from being added to the sender's photo.
 
-  - [Configure email authentication](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) for the sender domain.
+- The via tag (chris@contoso.com <u>via</u> michelle@fabrikam.com) is added if the domain in the From address (the message sender that's displayed in email clients) is different from the domain in the DKIM signature or the **MAIL FROM** address. For more information about these addresses, see [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
+
+  Disabling unauthenticated sender identification does not prevent the via tag from being added if the domain in the From address is different from the domain in the DKIM signature or the MAIL FROM address.
+
+To prevent the question mark or via tag from being added to messages from specific senders, you have the following options:
+
+- Allow the sender to spoof in the spoof intelligence policy. This action will prevent the via tag from appearing in messages from the sender when unauthenticated sender identification is disabled. For instructions, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+
+- [Configure email authentication](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) for the sender domain.
   
-    - For the question mark in the sender's photo, SPF or DKIM are the most important.
-    - For the via tag, confirm the domain in the DKIM signature or the **MAIL FROM** address matches (or is a subdomain of) the domain in the From address.
+  - For the question mark in the sender's photo, SPF or DKIM are the most important.
+  - For the via tag, confirm the domain in the DKIM signature or the **MAIL FROM** address matches (or is a subdomain of) the domain in the From address.
 
-  For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
+For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## Exclusive settings in ATP anti-phishing policies
 
@@ -99,47 +133,32 @@ This section describes the policy settings that are only available in ATP anti-p
 > [!NOTE]
 > By default, the ATP exclusive settings are not configured or turned on, even in the default policy. To take advantage of these features, you need to enable and configure them in the default ATP anti-phishing policy, or create and configure custom ATP anti-phishing policies.
 
-### Policy settings in ATP anti-phishing policies
-
-The following policy settings are only available in ATP anti-phishing policies:
-
-- **Name**: You can't rename the default anti-phishing policy, but you can name and rename custom policies that you create.
-
-- **Description** You can't add a description to the default anti-phishing policy, but you can add and change the description for custom policies that you create.
-
-- **Applied to**: Identifies internal recipients that the ATP anti-phishing policy applies to. This value is required in custom policies, and not available in the default policy (the default policy applies to all recipients).
-
-    You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
-
-  - **Recipient is**: One or more mailboxes, mail users, or mail contacts in your organization.
-  - **Recipient is a member of**: One or more groups in your organization.
-  - **The recipient domain is**: One or more of the configured accepted domains in Microsoft 365.
-
-  - **Except when**: Exceptions for the rule. The settings and behavior are exactly like the conditions:
-
-    - **Recipient is**
-    - **Recipient is a member of**
-    - **The recipient domain is**
-
 ### Impersonation settings in ATP anti-phishing policies
 
 Impersonation is where the sender or the sender's email domain in a message looks similar to a real sender or domain:
 
 - An example impersonation of the domain contoso.com is ćóntoso.com.
-
 - An example impersonation of the user michelle@contoso.com is michele@contoso.com.
 
 An impersonated domain might otherwise be considered legitimate (registered domain, configured email authentication records, etc.), except its intent is to deceive recipients.
 
 The following impersonation settings are only available in ATP anti-phishing policies:
 
-- **Users to protect**: Prevents the specified internal or external users from being impersonated. For example, executives (internal) and board members (external). You can add up to 60 internal and external addresses. This list of protected users is different from the list of recipients that the policy applies to in the **Applied to** setting.
+- **Users to protect**: Prevents the specified internal or external email addresses from being impersonated **as message senders**. For example, executives (internal senders) and board members (external senders). You can add up to 60 internal and external sender email addresses to protect from impersonation. This list of **senders** that are protected from impersonation is different from the list of **recipients** that the policy applies to.
 
-  For example, you specify Felipe Apodaca (felipea@contoso.com) as a protected user in a policy that applies to the group named Executives. Inbound messages sent to members of the Executives group where Felipe Apodaca is impersonated will be acted on by the policy (the action you configure for impersonated users).
+  The default policy applies to messages sent to all recipients, while custom policies apply only to messages sent to the recipients you define in the **Applied to** setting as described in the [Policy settings](#policy-settings) section.
 
-- **Domains to protect**: Prevent the specified domains from being impersonated. For example, all domains that you own ([accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific domains (domains you own or partner domains). This list of protected domains is different from the list of domains that the policy applies to in the **Applied to** setting.
+  By default, no sender email addresses are configured for impersonation protection in **Users to protect**. Therefore, by default, no sender email addresses are covered by impersonation protection, either in the default policy or in custom policies.
 
-  For example, you specify tailspintoys.com as a protected domain in a policy that applies to members of the group named Executives. Inbound messages sent to members of the Executives group where tailspintoys.com is impersonated will be acted on by the policy (the action you configure for impersonated domains).
+  When you add internal or external email addresses to the **Users to protect** list, messages from those **senders** are subject to impersonation protection checks. The message is checked for impersonation **if** the message is sent to a **recipient** that the policy applies to (all recipients for the default policy; **Applied to** recipients in custom policies). If impersonation is detected in the sender's email address, the impersonation protections actions for users are applied to the message (the action on the message, the impersonated users safety tip, etc.).
+
+- **Domains to protect**: Prevents the specified domains from being impersonated **in the message sender's domain**. For example, all domains that you own ([accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific domains (domains you own or partner domains). This list of **sender domains** that are protected from impersonation is different from the list of **recipients** that the policy applies to.
+
+  The default policy applies to messages sent to all recipients, while custom policies apply only to messages sent to the recipients you define in the **Applied to** setting as described in the [Policy settings](#policy-settings) section.
+
+  By default, no sender domains are configured for impersonation protection in **Domains to protect**. Therefore, by default, no sender domains are covered by impersonation protection, either in the default policy or in custom policies.
+
+  When you add domains to the **Domains to protect** list, messages from **senders in those domains** are subject to impersonation protection checks. The message is checked for impersonation **if** the message is sent to a **recipient** that the policy applies to (all recipients for the default policy; **Applied to** recipients in custom policies). If impersonation is detected in the sender's domain, the impersonation protection actions for domains are applied to the message (the action on the message, the impersonated domains safety tip, etc.).
 
 - **Actions for protected users or domains**: Choose the action to take on inbound messages that contain impersonation attempts against the protected users and protected domains in the policy. You can specify different actions for impersonation of protected users vs. impersonation of protected domains:
 
@@ -149,7 +168,7 @@ The following impersonation settings are only available in ATP anti-phishing pol
 
   - **Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder. In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-    - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following topics:
+    - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following articles:
 
     - [Quarantine in Microsoft 365](quarantine-email-messages.md)
     - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)

@@ -7,7 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.collection: 
 - M365-security-compliance
-- M365solutions
 ms.prod: microsoft-365-enterprise
 ms.custom: 
 localization_priority: Priority
