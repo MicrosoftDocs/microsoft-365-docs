@@ -30,19 +30,19 @@ Mobile devices can store sensitive organizational information and provide access
 
 - **Factory reset**: Deletes all data on a user's mobile device, including installed applications, photos, and personal information. When the wipe is complete, the device is restored to its factory settings.
 
-- **Remove company data**: Removes only organization data and leaves installed applications, photos, and personal information on a user's mobile device.   
+- **Remove company data**: Removes only organization data and leaves installed applications, photos, and personal information on a user's mobile device.
 
 - **When a device is wiped (Factory Reset or Remove Company Data)**, the device is removed from the list of managed devices.
-
-- **Automatically reset a device**: You can set up a Basic Mobility and Security policy that automatically factory resets a device after the user unsuccessfully tries to enter the device password a specific number of times. To do this, follow the steps in [Create device security policies in basic mobility and security](create-device-security-policies-in-basic-mmobility-and-security.md).
-
-- **If you want to know the user experience** when you wipe their device, see  [What's the user and device impact?](#whats-the-user-and-device-impact).   
+    
+- **Automatically reset a device**: You can set up a Basic Mobility and Security policy that automatically factory resets a device after the user unsuccessfully tries to enter the device password a specific number of times. To do this, follow the steps in [Create device security policies in basic mobility and security](create-device-security-policies.md).
+    
+- **If you want to know the user experience** when you wipe their device, see  [What's the user and device impact?](#whats-the-user-and-device-impact).
 
 ## Wipe a mobile device
 
 1. Go to the [Microsoft 365 admin center](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23).
 
-2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results. 
+2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results.
 
     :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Basic Mobility and Secruity mobile device management option":::
 
@@ -86,4 +86,4 @@ The wipe is sent immediately to the mobile device and the device is marked as no
 
 ## Related topics
 
-[Set up Basic Mobility and Security](set-up-basic-mobility-and-security.md)
+[Set up Basic Mobility and Security](set-up.md)

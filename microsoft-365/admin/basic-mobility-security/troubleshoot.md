@@ -44,18 +44,18 @@ To start, check the following:
 
     - Make sure that Safari is the default browser on the device, and that cookies are not disabled.
 
-    - Reboot the device, and then navigate to portal.manage.microsoft.com. Sign in with your Microsoft 365 user ID and password, and attempt to install the profile manually.    
+    - Reboot the device, and then navigate to portal.manage.microsoft.com. Sign in with your Microsoft 365 user ID and password, and attempt to install the profile manually.
 
 ## Windows RT
 
-- Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up-basic-mobility-and-security.md).
-
+- Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up.md).
+    
 - Make sure that the user is choosing **Turn On** rather than choosing **Join**.
 
 ## Windows 10 PC
 
-- Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up-basic-mobility-and-security.md).
-
+- Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up.md).
+    
 - Unless you have Azure Active Directory Premium, make sure that the user is choosing **Enroll in Device Management only** rather than choosing **Connect**.
 
 ## Android phone or tablet

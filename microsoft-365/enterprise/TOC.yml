@@ -537,7 +537,7 @@
 - name: Manage Microsoft 365 with PowerShell
   href: manage-microsoft-365-with-microsoft-365-powershell.md
   items: 
-    - name: Getting started
+    - name: Get started
       href: getting-started-with-microsoft-365-powershell.md
       items: 
         - name: Why you need to use PowerShell
@@ -594,7 +594,7 @@
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
               href: manage-microsoft-365-groups-with-powershell.md
-    - name: Manage SharePoint Online
+    - name: Manage SharePoint
       href: manage-sharepoint-online-with-microsoft-365-powershell.md
       items: 
         - name: Create SharePoint Online sites and add users
@@ -605,7 +605,7 @@
           href: manage-sharepoint-site-groups-with-powershell.md
     - name: Manage Exchange Online
       href: https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell
-    - name: Use PowerShell for email migration to Microsoft 365
+    - name: Use PowerShell to migrate email to Microsoft 365
       href: use-powershell-for-email-migration-to-microsoft-365.md
       items: 
         - name: Use PowerShell to perform a cutover migration to Microsoft 365
