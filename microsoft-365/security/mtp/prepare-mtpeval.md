@@ -1,7 +1,7 @@
 ---
 title: Prepare your Microsoft Threat Protection trial lab environment
-description: Prepare stakeholder sign-off, timelines, environment considerations, and adoption order when setting up your Microsoft Threat Protection trial lab environment
-keywords: MTP trial prep, deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
+description: Prepare stakeholder sign-off, timelines, environment considerations, and adoption order when setting up your Microsoft Threat Protection trial lab or pilot environment
+keywords: MTP trial prep, MTP pilot prep, prep for running an MTP pilot project, run a pilot MTP project, deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,24 +17,24 @@ ms.collection: M365-security-compliance
 ms.topic: article 
 ---
 
-# Prepare your Microsoft Threat Protection trial lab environment
+# Prepare your Microsoft Threat Protection trial lab or pilot environment
 
 **Applies to:**
 - Microsoft Threat Protection
 
-Creating a Microsoft Threat Protection trial lab environment and deploying it is a three-phase process:
+Creating a Microsoft Threat Protection trial lab or pilot environment and deploying it is a three-phase process:
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Prepare your Microsoft Threat Protection trial lab environment" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Prepare your Microsoft Threat Protection trial lab or pilot environment" />
       <br/>Phase 1: Prepare </a><br>
     </td>
      <td align="center"  >
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Setup your Microsoft Threat Protection trial lab environment" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Setup your Microsoft Threat Protection trial lab or pilot environment" />
       <br/>Phase 2: Setup </a><br>
         </td>
     <td align="center">
@@ -59,13 +59,13 @@ Creating a Microsoft Threat Protection trial lab environment and deploying it is
 You're currently in the preparation phase.
 
 
-Preparation is key to any successful deployment. This section will guide you through what you need to consider as you prepare to create a trial lab environment for your Microsoft Threat Protection deployment.
+Preparation is key to any successful deployment. This section will guide you through what you need to consider as you prepare to create a trial lab or pilot environment for your Microsoft Threat Protection deployment.
 
 ## Prerequisites
 Learn about the licensing, hardware and software requirements, and other configuration settings to provision and use Microsoft Threat Protection. See the minimum requirements for [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?view=o365-worldwide), [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
 
 ## Stakeholders and sign-off
-The following section serves to identify all the stakeholders that are involved in the project and who may need to sign-off, review, or stay informed, even for an evaluation or proof of concept dry-run.
+The following section serves to identify all the stakeholders that are involved in the project and who may need to sign-off, review, or stay informed, even for an evaluation or a pilot run.
 
 >[!NOTE]
 >Not all organizations might have the security organization maturity to have such roles. In such case, consult with your leadership team on review and approval accountabilities.
@@ -128,5 +128,5 @@ The table below indicates the order Microsoft recommends for configuring the Mic
 |Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats. <br> [Learn more.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                   |                                                                                                                                                                                                                                    
 
 ## Next step
-![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-mtpeval.md)<br> Set up your Microsoft Threat Protection trial lab environment
+![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-mtpeval.md)<br> Set up your Microsoft Threat Protection trial lab or pilot environment
 
