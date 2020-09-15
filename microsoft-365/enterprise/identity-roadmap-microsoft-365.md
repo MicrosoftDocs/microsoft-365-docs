@@ -19,21 +19,21 @@ description: The roadmap to identity for Microsoft 365.
 
 # Identity roadmap for Microsoft 365
 
-In Microsoft 365 for enterprise, a well-planned and executed identity infrastructure paves the way for stronger security and access to your productivity workloads and their data only by authenticated users and devices.
+In Microsoft 365 for enterprise, a well-planned and executed identity infrastructure paves the way for stronger security, including restricting access to your productivity workloads and their data to only authenticated users and devices.
 
-Watch this video for an overview of identity models and authentication for Microsoft 365 for enterprise.
+For an overview of identity models and authentication for Microsoft 365 for enterprise, watch this video:
 
 <p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-For the identity features of each Microsoft 365 for enterprise plan, the role of Azure Active Directory (Azure AD), on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](../downloads/m365e-identity-infra.pdf).
+For information about the identity features of each Microsoft 365 for enterprise plan, the role of Azure Active Directory, both the on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](../downloads/m365e-identity-infra.pdf).
 
 [![The Identity Infrastructure poster](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
-This two-page poster is a quick way to ramp up on identity concepts and configurations for Microsoft 365 for enterprise.
+Review this two-page poster to quickly ramp up on identity concepts and configurations for Microsoft 365 for enterprise.
 
-You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf). You can print it in letter, legal, or tabloid (11 x 17) format.
 
 ## Plan
 
@@ -54,7 +54,7 @@ To deploy your identity implementation:
 
 ### Identity and device access recommendations
 
-Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. For identity, use the recommendations and settings in these articles:
+To help ensure a secure and productive workforce, Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md). For identity, use the recommendations and settings in these articles:
 
 - [Prerequisites](identity-access-prerequisites.md)
 - [Common identity and device access policies](identity-access-policies.md)
@@ -71,12 +71,12 @@ To manage your identity implementation:
 Learn how IT experts at Microsoft [manage identities and secure access](https://www.microsoft.com/en-us/itshowcase/managing-user-identities-and-secure-access-at-microsoft).
 
 >[!Note]
->This IT Showcase resource is only available in English.
+>This IT Showcase resource is available only in English.
 >
 
 ## How Contoso did identity for Microsoft 365
 
-See how the Contoso Corporation, a fictional but representative multi-national business, [deployed a hybrid identity infrastructure](contoso-identity.md) for Microsoft 365 cloud services.
+For an example of how a fictional but representative multinational organization has deployed a hybrid identity infrastructure for Microsoft 365 cloud services, see [Identity for the Contoso Corporation](contoso-identity.md).
 
 ## Next step
 
