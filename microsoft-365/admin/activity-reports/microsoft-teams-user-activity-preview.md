@@ -37,6 +37,10 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
 
 You can view the user activity in the Teams report by choosing the **User activity** tab. <br/>![Microsoft 365 reports - Microsoft Teams user activity.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
 
+Select **Choose columns** to add or remove columns from the report.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
+
+You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
+
 |||
 |:-----|:-----|
 |**Metric**|**Definition**|
@@ -51,6 +55,4 @@ You can view the user activity in the Teams report by choosing the **User activi
 |Meetings organized scheduled  <br/> |The number of scheduled meetings  a user organized during the specified time period.  <br/> |
 |Is licensed |Selected if the user is licensed to use Teams.|
 |Other activity|The number of other team activities by the user. |
-|<br/> |Select **Choose columns** to add or remove columns from the report.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)|
-|9.  <br/> |You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data.  <br/> |
 |||
