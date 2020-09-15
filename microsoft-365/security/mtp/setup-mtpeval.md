@@ -23,7 +23,7 @@ ms.topic: article
 - Microsoft Threat Protection 
 
 
-Creating a Microsoft Threat Protection trial lab environment and deploying it is a three-phase process:
+Creating a Microsoft Threat Protection trial lab or pilot environment and deploying it is a three-phase process:
 
 <br>
 <table border="0" width="100%" align="center">
