@@ -35,9 +35,9 @@ We provide data, insights, and recommendations in two areas:
 
 - **Employee experience:** We measure how people collaborate on content, how they use Microsoft 365 products to communicate, and whether they use Microsoft 365 across platforms. 
 
-    We provide these insights because when people collaborate online, they save time. When they have the freedom to work on any device, they are more productive and satisfied. When they can communicate in a flexible way, they are more efficient, form better relationships, and your organization is more unified. For evidence, see [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+    We provide these insights because when people collaborate online, they save time. With the freedom to work on any device, they are more productive and satisfied. Communicating in a flexible way makes people more efficient, form better relationships, and your organization is more unified. For evidence, see [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Technology experience:** Productivity depends on reliable and performant technology as well as the efficient use of Microsoft 365. We provide [endpoint analytics](https://aka.ms/endpointanalytics), which helps you understand how your users’ productivity can be impacted by performance and health issues with your endpoint hardware and software, while providing recommended actions to remediate them; and we provide Microsoft 365 network connectivity insights for your organization.
+- **Technology experience:** Productivity depends on reliable and performant technology as well as the efficient use of Microsoft 365. We provide [endpoint analytics](https://aka.ms/endpointanalytics), which helps you understand how your users’ productivity can be impacted by performance and health issues with your endpoint hardware and software. We also provide recommended actions to remediate them as well as Microsoft 365 network connectivity insights for your organization.
 
 See [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) for an overview and prerequisite details. To learn more about Microsoft 365 network connectivity insights, read [the network connectivity overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
@@ -61,7 +61,7 @@ Your Productivity Score is based on the combined scores of your employee and tec
 
 Productivity Score includes data from Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer, and Skype.
 
-Your score is updated daily and reflects user actions completed in the last 28 to 180 days (including the current day).
+Your score is updated daily and reflects user actions completed in the last 28 (including the current day).
 
 
 ## Pre-requisites 
@@ -106,15 +106,15 @@ Each category details page shows the primary insight and supporting metrics as w
 
 ### Content collaboration details
 
-The primary insight for content collaboration is the number of people who create, read, and collaborate (edit and share) online. These measures are important because research shows that when people collaborate with online files, each person saves an average of 100 minutes, or almost 2 hours, per week.
+The primary insight for content collaboration is the number of people who create, read, and collaborate (edit and share) online. These measures are important because research shows that when people collaborate with online files, each person saves an average of almost 2 hours per week.
 
-We define content collaboration as one person creating and sharing an Office file, and then at least one other person editing it. 
+We define content collaboration as one person creating and sharing an Office file, and then at least one other person reading it. 
 
-Readers: People who access or download online files in OneDrive or SharePoint.
+**Readers**: People who access or download online files in OneDrive or SharePoint.
 
 **Creators:** People who create, modify, upload, sync, check in, copy, or move online OneDrive or SharePoint files.
 
-Collaborators: People who collaborate with online files  using OneDrive or SharePoint. Two people are collaborators if one of them reads or edits an online Word, Excel, PowerPoint, OneNote, or PDF cloud document after the other person creates or modifies it, within a 28-day window.
+**Collaborators**: People who collaborate with online files  using OneDrive or SharePoint. Two people are collaborators if one of them reads or edits an online Office apps or PDF cloud document after the other person has created or modified it, within a 28-day window.
 
 The file types considered for collaboration are Word, Excel, PowerPoint, OneNote, and PDF files.
 
@@ -122,7 +122,7 @@ We provide insights into the startup times and set up for devices in your organi
 
 ### Communication details
 
-The primary insight for communication is how frequently people in your organization use email, chat, and community posts to communicate. This insight matters because when people use a variety of real-time communication tools, they are able to choose the mode of communication that helps them to be most efficient, and they have tools like chat and communities that help them develop relationships across office locations.
+The primary insight for communication is how frequently people in your organization use email, chat, and community posts to communicate. When people use a variety of real-time communication tools, they are able to choose the mode of communication that helps them to be most efficient, like chat and communities that help them develop relationships across office locations.
 
 ### Mobility details
 
@@ -136,7 +136,7 @@ The Business continuity report is a limited-time Workplace Intelligence report a
 
 This report helps business leaders understand: 
 
-- How collaboration and communication is affected by the shift to remote work. 
+- How collaboration and communication are affected by the shift to remote work. 
 
 - The impact on work-life balance as people adjust to working from home. 
 
@@ -148,4 +148,4 @@ This report helps business leaders understand:
 
 ## We want to hear from you
 
-Please share your thoughts about Productivity Score and your ideas about how to improve it. Use the **Feedback** sections within the product and/or reach out to the Productivity Score team at ProductivityScorePreview@service.microsoft.com.
+Share your thoughts about Productivity Score and your ideas about how to improve it. Use the **Feedback** sections within the product and/or reach out to the Productivity Score team at ProductivityScorePreview@service.microsoft.com.

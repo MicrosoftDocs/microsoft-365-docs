@@ -57,7 +57,7 @@ When content reaches the end of its retention period, there are several reasons 
 
 When a disposition review is triggered at the end of the retention period:
   
-- The people you choose receive an email notification that they have content to review. These reviewers can be individual users, distribution or security groups, or Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)). Note that notifications are sent on a weekly basis.
+- The people you choose receive an email notification that they have content to review. These reviewers can be individual users or mail-enabled security groups. Note that notifications are sent on a weekly basis.
     
 - The reviewers go to the **Disposition** tab in the Microsoft 365 compliance center to review the content and decide whether to permanently delete it, extend its retention period, or apply a different retention label.
 
