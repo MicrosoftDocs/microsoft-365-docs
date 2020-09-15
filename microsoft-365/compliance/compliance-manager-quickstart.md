@@ -20,7 +20,7 @@ description: "Use the Compliance Manager quickstart guide to help you along your
 
 **In this article:** Use this quickstart guide to help you along your journey of using Microsoft Compliance Manager to manage your organization’s compliance with regulations, policies, and standards.
 
-Compliance Manager provides intelligent and actionable data upon your first visit. Compliance Manager also has advanced capabilities for scaling your compliance when you’re ready. All customers can use the [Data Protection Baseline assessment](compliance-manager-setup.md#data-protection-baseline-default-assessment) to ensure you're protecting critical data. With Microsoft 365 E5, you can use over 150 pre-built assessments to help you comply with regulations across your industry and region, and use custom assessments to extend Compliance Manager across all of your assets.
+Compliance Manager provides intelligent and actionable data upon your first visit. Compliance Manager also has advanced capabilities for scaling your compliance when you’re ready. All customers can use the [Data Protection Baseline assessment](compliance-manager-assessments.md#data-protection-baseline-default-assessment) to ensure you're protecting critical data. With Microsoft 365 E5, you can use over 150 pre-built assessments to help you comply with regulations across your industry and region, and use custom assessments to extend Compliance Manager across all of your assets.
 
 Whether you’re coming to Compliance Manager for the first time, or are ready to use some of the advanced features, this guide can support you along your journey.
 
@@ -30,16 +30,16 @@ Compliance Manager is located in the Microsoft 365 compliance center at https://
 
 The first time you visit Compliance Manager, you'll see a compliance score for your organization. Compliance Manager is already assessing your current Microsoft 365 environment against the data protection baseline. The best way to start getting familiar with Compliance Manger is to understand what it's showing you, its key elements, and how to customize your dashboard.
 
-Our [Compliance Manager overview page](compliance-manager.md) is the best first stop for a comprehensive review of what Compliance Manager is and its key components. Below are particular links you may want to check out for deeper understanding:
+Our [Compliance Manager overview page](compliance-manager.md) is the best first stop for a comprehensive review of what Compliance Manager is and its key components. You may also want to jump right to key sections using the links below:
 
 - [Understanding your compliance score](compliance-manager.md#understanding-your-compliance-score)
 - [Overview of the key components: controls, assessments, templates, and improvement actions](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
 - [Understanding the Compliance Manager dashboard](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
 - [Filtering your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Understanding improvement actions](compliance-manager-setup.md#improvement-actions-page)
-- [Understanding assessments and how to use them](compliance-manager.md#assessments)
+- [Understanding assessments](compliance-manager.md#assessments)
 
-## Ramping up: configuring Compliance Manager to manage your compliance activities
+## Ramping up: configure Compliance Manager to manage your compliance activities
 
 Once you're familiar with the basics, it's time to set things up to meet your organization's needs. You can start working with assessments and taking improvement actions to implement controls and improve your compliance score. Knowing how to perform all the activities at this stage can help your organization comply and demonstrate compliance with regulations across your industry and region. Visit the links below to dive in:
 
@@ -48,11 +48,9 @@ Once you're familiar with the basics, it's time to set things up to meet your or
 - [Perform implementation and testing work on improvement actions to complete controls in your assessments](compliance-manager-improvement-actions.md)
 - [Better understand how different actions impact your compliance score](compliance-score-calculation.md)
 
-## Scaling up: using advanced functionality to meet your custom needs
+## Scaling up: use advanced functionality to meet your custom needs
 
-When you're comfortable managing assessments in Compliance Manger, you can work with templates to modify a Compliance Manager assessment with your own actions and controls, or create your own custom assessment.
-
-Creating a custom assessment is helpful for:
+When you're comfortable managing assessments in Compliance Manger, you can work with templates to modify a Compliance Manager assessment with your own actions and controls, or create your own custom assessment. Creating a custom assessment is helpful for:
 
 - Managing compliance for non-Microsoft 365 products such as third-party apps and  services, on-premises applications, and other assets.
 - Managing your own custom or business-specific compliance controls.
@@ -63,4 +61,4 @@ You can also set up automated testing of all or a subset of improvement actions.
 - [Create your own custom assessment](compliance-manager-assessments.md#create-your-own-custom-assessment)
 - [Modify an existing template to add or remove controls and actions](compliance-manager-templates.md#modify-a-template)
 - [Set up automated testing of certain improvement actions](compliance-manager-setup.md#set-up-automated-testing)
-- [Reassign improvement actions to another user](compliance-manager-setup.md#manage-user-history)
+- [Reassign improvement actions to another user](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
