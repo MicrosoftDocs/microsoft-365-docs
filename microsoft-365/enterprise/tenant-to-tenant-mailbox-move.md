@@ -628,9 +628,7 @@ background.** When creating target tenant MailUser objects, you must ensure that
     ```
  
  <br/>
-   - When msExchRemoteRecipientType is set to 8 (DeprovisionMailbox), for onprem MailUsers that are migrated to the target tenant, the proxy scrubbing logic in Azure will remove nonowned domains and reset the primarySMTP to an owned domain. By clearing msExchRemoteRecipientType in the onpremises MailUser, the proxy scrub logic no longer applies.
-
-     Below is the full set of possible Service Plans that include Exchange.
+   - When msExchRemoteRecipientType is set to 8 (DeprovisionMailbox), for onprem MailUsers that are migrated to the target tenant, the proxy scrubbing logic in Azure will remove nonowned domains and reset the primarySMTP to an owned domain. By clearing msExchRemoteRecipientType in the onpremises MailUser, the proxy scrub logic no longer applies. <br/><br>Below is the full set of possible Service Plans that include Exchange.
 
      | Name                                              |
      |---------------------------------------------------|
