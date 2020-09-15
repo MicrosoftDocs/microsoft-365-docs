@@ -1,5 +1,5 @@
 ---
-title: "Supported file types in Data Investigations (Preview)"
+title: "Supported file types in Data Investigations (preview)"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "A table listing the supported file types and what viewers they can be viewed in for Data Investigations (Preview)".
+description: "A table listing the supported file types and what viewers they can be viewed in for Data Investigations (Preview)."
 ms.custom: seo-marvel-mar2020
 ---
 
-# Supported file types in Data Investigations (Preview)
+# Supported file types in Data Investigations (preview)
 
-The Data Investigations (Preview) tool supports many file types in several different ways, which are described in the following table. This list isn't finalized, and we'll add new file types as we continue our validation testing. The table also indicates if a file type can be viewed in the available viewers when you're reviewing evidence.
+The Data Investigations (preview) tool supports many file types in several different ways, which are described in the following table. This list isn't finalized, and we'll add new file types as we continue our validation testing. The table also indicates if a file type can be viewed in the available viewers when you're reviewing evidence.
 
 | Mime type | File class | Native viewer | Text viewer | Annotate viewer | Container extraction | Extensions |
 |:------|:------|:------|:------|:------|:------|:------|
