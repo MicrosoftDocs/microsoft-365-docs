@@ -132,9 +132,9 @@ The next step is to create a physical badging connector in the Microsoft 365 com
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** in the left nav.
 
-2. On the **Data connectors (preview)** page under **physical badging**, click **View**.
+2. On the **Data connectors (preview)** page under **Physical badging**, click **View**.
 
-3. On the **physical badging** page, click **Add connector**.
+3. On the **Physical badging** page, click **Add connector**.
 
 4. On the **Authentication credentials** page, do the following and then click **Next**:
   
