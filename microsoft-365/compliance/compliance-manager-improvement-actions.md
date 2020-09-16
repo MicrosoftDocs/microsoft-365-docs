@@ -24,7 +24,7 @@ description: "Learn how to perform implementation and testing on controls in Mic
 
 Improvement actions centralize your compliance activities. Each improvement action gives detailed implementation guidance to help you align with data protection regulations and standards. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the action.
 
-All of your improvement actions are listed on the improvement actions page. Learn more about [how to filter your view of your improvement actions and interpret status states](compliance-score-setup.md#improvement-actions-page).
+All of your improvement actions are listed on the improvement actions page. Learn more about [how to filter your view of your improvement actions and interpret status states](compliance-manager-setup.md#improvement-actions-page).
 
 ## Improvement actions details page
 
@@ -59,9 +59,9 @@ The assigned user can then perform the recommended actions.
 
 You can upload files and notes related to implementation and testing work directly to the **Notes and documentation** section. This environment is a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. Only users with editing rights can upload and download files and enter or edit notes.
 
-Fields in the **Notes and documentation** section include:
+The **Notes and documentation** section contains fields for uploaded documents, implementation notes, test notes, and additional notes.
 
-### Uploaded documents
+#### Uploaded documents
 
 - Select **Manage documents** to upload any relevant files.
 - When the manage documents flyout pane opens, select **Add document**, then select your file from your system. Accepted file types:
@@ -72,7 +72,7 @@ Fields in the **Notes and documentation** section include:
 - Once your file resolves in the pane select **Close**, which automatically saves the file attachment. You'll then see the file listed underneath **Uploaded documents**.
 - To download or delete the document, select **Manage documents** from underneath the list of documents. On the flyout pane, select the document row to highlight it, then select **Download** or **Delete**.
 
-### Implementation notes, test notes, and additional notes
+#### Implementation notes, test notes, and additional notes
 
 - To add notes in any of these three fields, select **Edit implementation notes** underneath any of these fields.
 - When the flyout pane opens, enter notes in the text field, then select **Save and close**.
@@ -106,9 +106,7 @@ Common actions synch across groups. When two different assessments in the same g
 
 ## Assign improvement action to assessor for completion
 
-After you complete the work, conduct testing, and upload evidence, the next step is to assign the improvement action to an assessor for validation.
-
-The assessor validates the work and examines the documentation, and selects the appropriate test status.
+After you complete the work, conduct testing, and upload evidence, the next step is to assign the improvement action to an assessor for validation. The assessor validates the work and examines the documentation, and selects the appropriate test status.
 
 **If test status is set to “Passed”**: the action is complete and the points achieved shows the maximum points achieved. The points are then counted toward your overall compliance score.
 
@@ -116,19 +114,19 @@ The assessor validates the work and examines the documentation, and selects the 
 
 ## Accepting updates to improvement actions
 
-When an update is available for an improvement action, you’ll see a notification and can either accept the update or defer it for a later time.
+When an update is available for an improvement action, you’ll see a notification next to its name. You can either accept the update or defer it for a later time.
 
-### What causes an update
+#### What causes an update
 
 An update occurs when there are changes related to scoring, automation, or scope. Changes may involve new guidance for improvement actions based on regulatory changes, or could be because of product changes. Only the improvement actions managed by your organizations receive update notifications.
 
-### Where you’ll see assessment update notifications
+#### Where you’ll see assessment update notifications
 
 When an improvement action is updated, you’ll see a **Pending update** label next to its name on the improvement actions page, and on the details page of its related assessments.
 
 Go to the improvement action’s details page, and select the **Review update** button in the top banner to review details about the changes and accept or defer the update.
 
-### Review update to accept or defer
+#### Review update to accept or defer
 
 After selecting **Review update** from the improvement action details page, a flyout pane appears on the right side of your screen. The flyout pane provides key details about the update, such as the assessments impacted and changes in score and scope.
 
