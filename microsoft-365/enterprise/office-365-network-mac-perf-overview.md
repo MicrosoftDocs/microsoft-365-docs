@@ -39,7 +39,7 @@ The machines should have Wi-Fi networking rather than an ethernet cable. Machine
 
 Measurement samples and office locations should start to appear 24 hours after these pre-requisites have been met.
 
-### 2. Add locations and provide LAN Subnet information
+### 2. Add locations and provide LAN subnet information
 
 For this option neither Windows Location Services nor Wi-Fi are required. You need OneDrive for Windows version **20.161** or above installed on each computer at the location. This is available now if you join the [Windows Insiders program](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-install), or opt-in to the OneDrive Insiders Preview program in the **OneDrive settings | About** tab in the OneDrive client.
 
@@ -53,7 +53,7 @@ Measurement samples and office locations should start to appear 24 hours after t
 
 For this option you need to identify a person at each location. Ask them to browser to [Microsoft 365 network connectivity test](https://connectivity.office.com) on a Windows machine that they have administrative permissions on. On the web site, they need to sign-in to their Office 365 account on the same tenant that you want to see the results. Then they click Run test. During the test there is a downloaded Connectivity test EXE. THey need to open and execute that also. Once the tests are completed, the test result is uploaded to Microsoft.
 
-Test reports are linked to a location if it was added with LAN Subnet information, otherwise they are shown at the city location only.
+Test reports are linked to a location if it was added with LAN subnet information, otherwise they are shown at the city location only.
 
 Measurement samples and office locations should start to appear 2-3 minutes after a test result is completed.
 
@@ -110,13 +110,13 @@ The details tab on the office location page shows the specific measurement resul
 
 ![Location-specific details](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
-## Adding LAN Subnet identified office locations
+## Adding LAN subnet identified office locations
 
-When you add a location, or you edit a discovered city, you are prompted to enter the LAN Subnet information for that location. When network test data is received from Office 365 clients it includes the LAN Subnet if from the network where it ran. For your office locations you will have this information from your LAN deployment. You may be able to get it from the Teams Call Quality Dashboard (CQD) or from Active Directory Sites and Services. The LAN Subnet IP Address and network mask that you enter for the new location must match that received from clients. Note that if you use a network mask of larger than /29 we will receive /29 from clients so that the LAN Subnet size is not less than five machines. You must enter /29 as the network mask if you use smaller networks that you want to measure. The location can have multiple LAN Subnets included and a test measurement that matches any of them will be included in your results. Any test measurement received for your tenant with a LAN Subnet which has not been added to a location will be discarded.
+When you add a location, or you edit a discovered city, you are prompted to enter the LAN subnet information for that location. When network test data is received from Office 365 clients it includes the LAN subnet if from the network where it ran. For your office locations you will have this information from your LAN deployment. You may be able to get it from the Teams Call Quality Dashboard (CQD) or from Active Directory Sites and Services. The LAN subnet IP Address and network mask that you enter for the new location must match that received from clients. Note that if you use a network mask of larger than /29 we will receive /29 from clients so that the LAN subnet size is not less than five machines. You must enter /29 as the network mask if you use smaller networks that you want to measure. The location can have multiple LAN Subnets included and a test measurement that matches any of them will be included in your results. Any test measurement received for your tenant with a LAN subnet which has not been added to a location will be discarded.
 
 If you are editing an existing discovered city, it will be hidden when you click save, and a new office location will be created. This is to allow you to transition from a discovered city to a more specific address within the city.
 
-The address selected for the office location is not used to associate test reports. This means that you can have multiple office locations within a city so long as they have different LAN Subnet information.
+The address selected for the office location is not used to associate test reports. This means that you can have multiple office locations within a city so long as they have different LAN subnet information.
 
 In addition to the edit location user interface for adding one location at a time, you can use the CSV import function to add or modify multiple or all of your locations at once.
 
@@ -152,7 +152,7 @@ The View link allows you to view the user submitted report data.
 
 The check box labelled "Include data from user-submitted reports in the connectivity summary and history for this location" determines whether a user-submitted report or a collected and aggregated report will be used for each days history in the history reporting. When the overnight data processing runs each day the history for this location will be based on this setting. This is configurable since in many cases you will see reports both from user-submissions and from collected tests from clients and this allows you to choose what is added to the history. If you select the user-submitted report here then it will show a straight line in the history until either the user-submitted report expires, or a new one is submitted, or you change this setting.
 
-## CSV Import for LAN Subnet office locations
+## CSV Import for LAN subnet office locations
 
 For LAN subnet office identification, you need to add each location in advance. Instead of adding individual office locations in the **Locations** tab you can import them from a CSV file. You may be able to obtain this data from other places you have stored it such as the Call Quality Dashboard or Active Directory Sites and Services
 
@@ -169,7 +169,7 @@ In the CSV file a discovered city location is labeled **City**, and a manually a
    1. **Latitude** (optional): Populated from Bing maps lookup if blank
    1. **Longitude** (optional): Populated from Bing maps lookup if blank
    1. **Egress IP Address ranges 1-5** (optional): For each range, enter the circuit name followed by a space separated list of valid IPv4 or IPv6 CIDR addresses. These values are used to differentiate multiple office locations where you use the same LAN subnet IP Addresses.
-   1. **LanIps** (required): List the LAN Subnet ranges in use at this office location.
+   1. **LanIps** (required): List the LAN subnet ranges in use at this office location.
 1. When you have added your office locations and saved the file, click the **Browse** button next to the **Upload the completed** field and select the saved CSV file.
 1. The file will be automatically validated. If there are validation errors, you will see the error message _There are some errors in the import file. Review the errors, correct the import file, and then try again._ Click the link **Open error details** for a list of specific field validation errors.
 
@@ -198,7 +198,7 @@ The internet egress location is the location where your network traffic exits yo
 
 ## Related topics
 
-[Microsoft 365 Network insights (preview)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 network insights (preview)](office-365-network-mac-perf-insights.md)
 
 [Microsoft 365 network assessment (preview)](office-365-network-mac-perf-score.md)
 
