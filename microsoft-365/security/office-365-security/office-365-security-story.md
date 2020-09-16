@@ -84,11 +84,13 @@ Gains with **ATP P2** (to date):
 |---------|---------|---------|
 | Technologies include everything in EOP, and ATP P1 plus:<u1><li>Same</li>|<li>**Threat Explorer**</li><li>Threat Trackers</li><li>Campaign views</li>|<li>Automated Investigation and Response (AIR)</li><li>AIR from Threat Explorer</li><li>AIR for compromised users</li><li>SIEM Integration API for Automated Investigations</li>
 
-In ATP P2, the primary hunting tool is called **Threat Explorer** rather than Real-time detections. Though effective in itself, Threat Explorer is paired with automated threat hunting playbooks that have extra capabilities.
+So, ATP P2 expands on the ***investigation and response*** side of the house, and adds a new hunting strength. Automation.
 
-## Office 365 ATP Plan 1 and Plan 2
+In ATP P2, the primary hunting tool is called **Threat Explorer** rather than Real-time detections. If you see Threat Explorer when you navigate to the Security center, you're in ATP P2.
 
-The breakdown of ATP plans, highlighting their differences.
+## Office 365 ATP Plan 1 and Plan 2 Cheatsheet
+
+This section is included as a quick-reference.
 
 |Office 365 ATP Plan 1|Office 365 ATP Plan 2|
 |---|---|
@@ -99,8 +101,8 @@ The breakdown of ATP plans, highlighting their differences.
 
 - Office 365 ATP Plan 1 is included in Microsoft 365 Business Premium.
 
-- Office 365 ATP Plan 1 and Office 365 ATP Plan 2 are each available as an add-on for certain subscriptions. To learn more, see [Feature availability across ATP plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- Office 365 ATP Plan 1 and Office 365 ATP Plan 2 are each available as an add-on for certain subscriptions. To learn more, here's another link [Feature availability across ATP plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
 - The [Safe Documents](safe-docs.md) feature is only available to users with the Microsoft 365 E5 or Microsoft 365 E5 Security licenses (not included in Office 365 ATP plans).
 
-- If your current subscription does not include Office 365 ATP, [contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644), and see how ATP can work for your organization.
+- If your current subscription doesn't include Office 365 ATP and you want it, [contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644), and find out how ATP can work for in your organization.
