@@ -152,15 +152,15 @@ To create a mail transport rule, view a [short training video](https://support.m
 5. Apply the settings in the following table for each rule. Leave the rest of the settings at the default, unless you want to change these.
 
 6. Select **Save**.
-
-|Setting|Warn users before opening attachments of Office files|Block file types that could contain ransomware or other malicious code|
-|---|---|---|
-|Name|Anti-ransomware rule: warn users|Anti-ransomware rule: block file types|
-|Apply this rule if . . .|Any attachment . . . file extension matches . . .|Any attachment . . . file extension matches . . .|
-|Specify words or phrases|Add these file types:  <br/> `dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm`|Add these file types:  <br/> `ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif`|
-|Do the following . . .|Notify the recipient with a message|Block the message . . . reject the message and include an explanation|
-|Provide message text|Do not open these types of files—unless you were expecting them—because the files may contain malicious code and knowing the sender isn't a guarantee of safety.||
-
+    
+| Setting | Warn users before opening attachments of Office files | Block file types that could contain ransomware or other malicious code |
+|:-----|:-----|:-----|
+|Name  <br/> |Anti-ransomware rule: warn users  <br/> |Anti-ransomware rule: block file types  <br/> |
+|Apply this rule if . . .  <br/> |Any attachment . . . file extension matches . . .  <br/> |Any attachment . . . file extension matches . . .  <br/> |
+|Specify words or phrases  <br/> |Add these file types:  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm  <br/> |Add these file types:  <br/> ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif  <br/> |
+|Do the following . . .  <br/> |Prepend a disclaimer  <br/> |Block the message . . . reject the message and include an explanation  <br/> |
+|Provide message text  <br/> |Do not open these types of files—unless you were expecting them—because the files may contain malicious code and knowing the sender isn't a guarantee of safety.  <br/> ||
+   
 > [!TIP]
 > You can also add the files you want to block to the Anti-malware list in [step 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
