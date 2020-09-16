@@ -202,6 +202,28 @@ Where an SSL certificate is found that isn't provided by Microsoft, we show the 
 
 This section shows the results of an ICMP traceroute to the Exchange Online service front door, the SharePoint Online service front door, and the Microsoft Teams service front door. It is provided for information only and there is no associated network insight. There are three traceroutes provided. A traceroute to _outlook.office365.com_, a traceroute to the customers SharePoint front end or to _microsoft.sharepoint.com_ if one was not provided, and a traceroute to _world.tr.teams.microsoft.com_.
 
+## What happens at each test step
+
+### Office location identification
+
+When you click the run test button we show the running test page and identify the office location. You can type in your location by city, state, and country or you can have it detected from the web browser. If you detect it then we request the latitude and longitude from the web browser and limit the accuracy to 300m by 300m before use. We do this because it is not necessary to identify the location more accurately than the building for network performance. 
+
+### JavaScript tests
+
+After office location identification we run a TCP latency test in JavaScript and we request data from the service about in-use and recommended Office 365 service front door servers. When these are completed we show them on the map and in the details tab where they can be viewed prior to the next step.
+
+### Download the advanced tests client application
+
+Next we start the download of the advanced tests client application. We rely on the user to launch the client application and they must also have .NET Core installed.
+
+### Start the advanced tests client application
+
+Once the client application starts the web page will update to show this and test data will start to be received to the web page. It updates each time new data is received and you can review the data as it arrives.
+
+### Advanced tests completed and test report upload
+
+Once the tests are completed the web page and the advanced tests client will both indicate this and if the user is signed in the test report will be uploaded to the customers tenant.
+
 ## Connectivity reports
 
 When you are signed in you can review previous reports that you have run. You can also share them or delete them from the list.
@@ -221,6 +243,10 @@ Here are answers to some of our frequently asked questions.
 ### Is this tool released and supported by Microsoft?
 
 It is currently a preview and we plan to provide updates regularly until we reach general availability release status with support from Microsoft. Please provide feedback to help us improve. We are planning to publish a more detailed Office 365 Network Onboarding guide as part of this tool which is customized for the organization by its test results.
+
+### What is required to run the advanced test client?
+
+The advanced test client requires .NET Core 3.1 Desktop Runtime. If you run the advanced test client without that installed you will be directed to [the .NET Core 3.1 installer page](https://dotnet.microsoft.com/download/dotnet-core/3.1). Be sure to install the Desktop Runtime and not the SDK, or the ASP.NET Core Runtime which are higher up on the page. Administrator permissions on the machine is reuqired to install .NET Core. 
 
 ### What is Microsoft 365 service front door?
 
