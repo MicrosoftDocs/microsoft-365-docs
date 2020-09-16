@@ -25,9 +25,9 @@ description: "Microsoft Compliance Manager provides templates for building asses
 
 ## Overview
 
-[Compliance Manager](compliance-manager.md) provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. 
+[Microsoft Compliance Manager](compliance-manager.md) provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
 
-Templates are added to Compliance Manager as new laws and regulations are enacted, so check this page frequently. Compliance Manager updates its templates when the underlying laws or regulations change. Learn more about how [review and accept updates](compliance-manager-assessments.md#accepting-updates-to-assessments).
+Templates are added to Compliance Manager as new laws and regulations are enacted. Compliance Manager updates its templates when the underlying laws or regulations change. Learn more about how [review and accept updates](compliance-manager-assessments.md#accepting-updates-to-assessments).
 
 View detailed guidance on [working with templates](compliance-manager-templates) to create your assessments.
 
@@ -41,6 +41,8 @@ In Compliance Manager, go to your **Assessment templates** page. You'll see a li
 
 - **Included templates** are templates included as part of your organization's licensing agreement.
  - **Premium templates** displays additional templates your organization may choose to obtain (refer to the [service terms](https://go.microsoft.com/fwlink/?linkid=2132371)).
+
+Read more about [how to view and manage your templates](compliance-manager-templates.md#viewing-and-managing-templates-from-the-assessment-templates-page).
 
 ## Included templates
 
@@ -61,7 +63,7 @@ In Compliance Manager, go to your **Assessment templates** page. You'll see a li
 - Asia Pacific Economic Cooperation (APEC) Privacy Framework
 - Australia - Spam Act 2003 (Microsoft 365)
 - Australian Energy Sector Cyber Security Framework (AESCSF) (Microsoft 365)
-- [Australian Information Security Registered Assessor Program (IRAP) Version 2](/offering-ccsl-irap-australia.md) (Microsoft 365)
+- [Australian Information Security Registered Assessor Program (IRAP) Version 2](offering-ccsl-irap-australia.md) (Microsoft 365)
 - [Australian Prudential Regulation Authority CPS](offering-apra-australia.md) (Microsoft 365)
 - Austrian Telecommunications Act 2003 (Microsoft 365)
 - Barbados - Data Protection Bill 2019 (Microsoft 365)
@@ -179,7 +181,7 @@ In Compliance Manager, go to your **Assessment templates** page. You'll see a li
 - Pakistan Electronic Data Protection Act 2005 -Draft (Microsoft 365)
 - [PCI DSS v3.2.1](offering-pci-dss.md) (Microsoft 365)
 - Peruvian Legislation Law 29733 Law of Data Privacy Protection
-- Philippines BSP lnformation Security Management Guidelines (Microsoft 365)
+- Philippines BSP Information Security Management Guidelines (Microsoft 365)
 - Philippines Data Privacy Act of 2012 (Microsoft 365)
 - Privacy of Consumer Financial and Health Information Regulation, NAIC MDL-672, Q2 2017 (Microsoft 365)
 - Puerto Rico - Citizen Information on Data Banks Security Act (Microsoft 365)
