@@ -38,8 +38,7 @@ This describes the process for preparing both source and target tenants for cros
 
 In the cross-tenant mailbox moves feature, source and target tenant configurations have different prerequisites and configuration steps. 
 
-
-This section does not include the specific steps required to prepare the mailbox user objects in either the source or target directory, nor does it include the sample command to submit a migration batch. Please see Prepare source and target directories for this information.
+This section does not include the specific steps required to prepare the mailbox user objects in either the source or target directory, nor does it include the sample command to submit a migration batch. Please see [Prepare target user objects for migration](#prepare-target-user-objects-for-migration) for this information.
 
 The Cross-tenant Exchange mailbox migration feature provides authorization and scoping for tenant-to-tenant migrations. Using the Azure Enterprise application and Key Vault storage solutions, tenant admins are now empowered to manage both authorization and scoping of Exchange Online mailbox migrations from one tenant to another. Tenant-to-tenant mailbox moves supports an invitation and consent model to establish an Azure Active Directory (Azure AD) application used for authentication between a tenant pair. Additional components such as an Organization Relationship and a migration endpoint are also required.
 
@@ -57,7 +56,12 @@ To obtain the tenant ID of a subscription, sign-in to the Microsoft 365 admin ce
 
 Here is how the process works.
 
-:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg" alt-text="Diagram shows tenant preparation for migration.":::
+:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg" alt-text="Tenant preparation for mailbox migration.":::
+
+[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)
+
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)
+
 
 ### Prepare tenants
 
