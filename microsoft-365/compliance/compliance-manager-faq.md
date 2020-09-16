@@ -20,7 +20,7 @@ description: "Find answers to frequently asked questions about Microsoft Complia
 
 ## Is Compliance Manager and Compliance Score the same thing, or are they different?
 
-We’re here to walk you through this transition. Below is a basic overview. You may also find it helpful to jump directly to one of the sections below:
+There is now just one solution: Compliance Manager. This section will walk you through the transition, starting with a basic overview below. You may also find it helpful to jump directly to one of the following sections:
 
 - [Your organization primarily used Compliance Manager (either the classic or public preview versions), located in the Microsoft Service Trust Portal](#your-organization-regularly-used-compliance-manger-in-the-service-trust-portal)
 
