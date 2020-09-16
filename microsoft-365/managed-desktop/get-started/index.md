@@ -10,7 +10,7 @@ ms.localizationpriority: normal
 
 # Get started with Microsoft Managed Desktop
 
-Now that you've enrolled in the service, follow these steps to confirm admin contacts, adjust conditional access settings, assign licences to users, enable Enterprise State Roaming,  obtain and set up devices, prepare users, and deploy apps to devices.
+Now that you've enrolled in the service, follow these steps to confirm admin contacts, adjust conditional access settings, assign licenses to users, enable Enterprise State Roaming,  obtain and set up devices, prepare users, and deploy apps to devices.
 
 > [!NOTE]
 > This is the recommended order to follow, but you do have some flexibility in the sequence.
