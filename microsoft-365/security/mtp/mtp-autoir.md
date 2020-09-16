@@ -31,7 +31,14 @@ As security alerts are triggered, it's up to your security operations team to lo
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-Self-healing capabilities are sometimes referred to as *automated investigation and response* or *automated investigation and remediation*. These capabilities in Microsoft Threat Protection are a lot like having a virtual analyst in your security operations center. Read this article to learn more about how self-healing works. To configure these capabilities, see [Configure self-healing capabilities in Microsoft Threat Protection](mtp-configure-self-healing.md).
+
+> [!TIP]
+> Self-healing capabilities are sometimes referred to as: <br/>
+> - Automated investigation and response <br/>
+>    or 
+> - Automated investigation and remediation 
+ 
+Self-healing capabilities in Microsoft Threat Protection are a lot like having a virtual analyst in your security operations center. Read this article to learn more about how self-healing works. To configure these capabilities, see [Configure self-healing capabilities in Microsoft Threat Protection](mtp-configure-self-healing.md).
 
 ## Your virtual analyst
 
