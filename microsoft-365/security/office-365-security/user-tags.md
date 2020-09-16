@@ -17,7 +17,7 @@ ms.collection:
 description: "Admins can learn how to identify specific groups of users with user tags in Microsoft 365. Tag filtering is available across alerts, reports, and investigations in Office 365 ATP to quickly identify the tagged users."
 ---
 
-# User tags in the Security & Compliance Center
+# User tags in the Microsoft Security Center
 
 User tags are identifiers for specific groups of users in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). [Priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) are a type of user tag. You can create custom user tags in addition to the priority accounts tag. After you apply tags to specific users, you can use those tags as filters in alerts, reports, and investigations:
 
@@ -29,19 +29,19 @@ User tags are identifiers for specific groups of users in [Office 365 Advanced T
 
 - [Campaign Views](campaigns.md)
 
-This article explains how to configure user tags in the Security & Compliance Center and in Security & Compliance Center PowerShell.
+This article explains how to configure user tags in the Security Center and in Exchange Online PowerShell.
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **User tags** page, open <https://protection.office.com/userTags>.
+- You open the Security Center at <https://security.microsoft.com/>. To go directly to the **User tags** page, open <https://security.microsoft.com/securitysettings/userTags>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - To create, modify, or remove user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## Use the Security & Compliance Center to create user tags
+## Use the Security Center to create user tags
 
-1. In the Security & Compliance Center, go to **Settings** \> **User tags**.
+1. In the Security Center, go to **Settings** \> **Email & collaboration** \> **User tags**.
 
 2. On the **User tags** page that opens, click **Create tag**.
 
@@ -73,9 +73,9 @@ This article explains how to configure user tags in the Security & Compliance Ce
 
    When you're finished, click **Submit**.
 
-## Use the Security & Compliance Center to view user tags
+## Use the Security Center to view user tags
 
-1. In the Security & Compliance Center, go to **Settings** \> **User tags**.
+1. In the Security Center, go to **Settings** \> **Email & collaboration** \> **User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to view (don't click on the checkbox).
 
@@ -83,9 +83,9 @@ This article explains how to configure user tags in the Security & Compliance Ce
 
    When you're finished, click **Close**.
 
-## Use the Security & Compliance Center to modify user tags
+## Use the Security Center to modify user tags
 
-1. In the Security & Compliance Center, go to **Settings** \> **User tags**.
+1. In the Security Center, go to **Settings** \> **Email & collaboration** \> **User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to view, and then click **Edit tag**.
 
@@ -93,8 +93,10 @@ This article explains how to configure user tags in the Security & Compliance Ce
 
    When you're finished, click **Submit**.
 
-## Use the Security & Compliance Center to remove user tags
+## Use the Security Center to remove user tags
 
-1. In the Security & Compliance Center, go to **Settings** \> **User tags**.
+You can't remove the *Priority account** tag that's part of the [priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) feature.
+
+1. In the Security Center, go to **Settings** \> **Email & collaboration** \> **User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to remove, click **Delete tag**, and then select **Yes, remove** in the warning that appears.
