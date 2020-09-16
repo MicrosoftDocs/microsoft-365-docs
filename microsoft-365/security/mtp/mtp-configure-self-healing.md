@@ -70,4 +70,8 @@ This task includes reviewing and potentially changing your organization's securi
    
    - [Create and manage device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) 
 
-## Review al
+### Review security and alert policies in Office 365
+
+Microsoft provides built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Certain alerts can trigger [automated investigation and response in Office 365](). 
+
+1. 
