@@ -210,9 +210,9 @@ For example, scroll down until you find the alert event **Suspicious process inj
 ### Review the user information [Microsoft Cloud App Security]
 
 On the incident page, click the **Users** tab to display the list of users involved in the attack. The table contains additional information about each user, including each user’s **Investigation Priority** score.
-<p></p>
-Click the username to open the user’s profile page where further investigation can be conducted. [Read more about investigating risky users](https://docs.microsoft.com/en-us/cloud-app-security/tutorial-ueba#identify).
 
+Click the username to open the user’s profile page where further investigation can be conducted. [Read more about investigating risky users](https://docs.microsoft.com/en-us/cloud-app-security/tutorial-ueba#identify).
+<br>
 ![Screenshot of Cloud App Security user page](../../media/mtp/fig13.png)
 
 
