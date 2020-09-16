@@ -18,7 +18,7 @@ description: "Set Microsoft Compliance Manager user permissions and roles, and c
 
 # Get started with Compliance Manager
 
-**In this article:** This article helps you get set up with Compliance manager. Learn how to **access** Compliance Manager, **set roles and permissions**, and configure **automatic testing of improvement actions**. This article also explains the main Compliance Manager pages: **your dashboard**, the improvement actions page, the solutions page, and the assessments page.
+**In this article:** This article helps you set up Compliance Manager. Learn how to **access** Compliance Manager, **set roles and permissions**, and configure **automatic testing of improvement actions**. Walk through **your Compliance Manager dashboard** and understand the main pages: the improvement actions page, the solutions page, the assessments page, and the assessment templates page.
 
 ## Who can access Compliance Manager
 
@@ -37,19 +37,19 @@ The direct link to access Compliance Manager is [https://compliance.microsoft.co
 
 ## Set user permissions and assign roles
 
-Compliance Manager uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Manager, and the actions allowed by each user are restricted by [role type](#roll-types).
+Compliance Manager uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Manager, and the actions allowed by each user are restricted by [role type](#role-types).
 
 ### Where to set permissions
 
 The person holding the global admin role for your organization can set user permissions in the Microsoft 365 compliance center, as well as in Azure Active Directory (Azure AD).
 
-To set permissions and assign roles from within the [Microsoft 365 compliance center](https://compliance.microsoft.com/), follow the steps below:
+To set permissions and assign roles from within the Microsoft 365 compliance center, follow the steps below:
 
-1. Select **Permissions** on the left navigation from anywhere in the compliance center.
+1. Select **Permissions** on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 
-2. Near the top, select the link at, **“To view and manage roles in Office 365, please go here.”** A new tab will open to the Office 365 Security & Compliance Center ([learn why you’re redirected](microsoft-365-compliance-center.md#frequently-asked-questions)).
+2. Near the top, select the link at **“To view and manage roles in Office 365, please go here.”** A new tab will open to the Office 365 Security & Compliance Center ([learn why you’re redirected](microsoft-365-compliance-center.md#frequently-asked-questions)).
 
-3. Find the role group to which you want to add one or more users ([see the list of roles and related functions below](#roll-types); the role group names mimic the role name), and check the box to the left of the group name.
+3. Find the role group to which you want to add one or more users ([see the list of roles and related functions below](#role-types); the role group names mimic the role name), and check the box to the left of the group name.
 
 4. On the flyout pane for that group, under the **Members** header, select **Edit**.
 
@@ -59,7 +59,7 @@ To set permissions and assign roles from within the [Microsoft 365 compliance ce
 
 7. Select the checkbox next to the names you want to add, then select the **Add** button at the bottom.
 
-8. When you’re done assigning users, select **Done**, then select**Save**, then **Close**.
+8. When you’re done assigning users, select **Done**, then select **Save**, then **Close**.
 
 Learn more about [permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
@@ -72,7 +72,7 @@ The table below shows the functions allowed by each role in Compliance Manager. 
 
 | User can: | Compliance Manager role | Azure AD role | 
 | :------------- | :-------------: | :------------: |
-| **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader Security reader | 
+| **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader | 
 | **Edit data**| Compliance Manager Contribution | Compliance Administrator | 
 | **Edit test results**| Compliance Manager Assessment | Compliance Administrator | 
 | **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  | 
@@ -198,12 +198,11 @@ Your compliance score is featured prominently at the top. It shows a percentage 
 
 When you come to Compliance Manager for the first time, your initial score is based on the [Microsoft 365 data protection baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment). This baseline assessment, which is available to all organizations, is a set of controls that includes common industry regulations and standards. Compliance Manager scans your existing Microsoft 365 solutions and gives you an initial assessment based on your current privacy and security settings. As you add assessments that are relevant to your organization, your score becomes more meaningful for you.
 
-#### Learn more
-[Understand how your compliance score is calculated](compliance-score-calculation.md).
+**Learn more:** [Understand how your compliance score is calculated](compliance-score-calculation.md).
 
 ### Key improvement actions
 
-This section lists the top improvement actions you can take right now to make the largest positive impact on your overall compliance score.
+This section lists the top improvement actions you can take right now to make the largest positive impact on your overall compliance score. Select **View all improvement actions** to go to your improvement actions page.
 
 ### Solutions that affect your score
 
@@ -266,10 +265,7 @@ The improvement actions page shows the following data points for each improvemen
     - **Could not be detected** - automated status can't be determined
     - **Partially tested** – automated scoring that awards partial points
 
-
-#### Learn more
-
-[See how to assign and perform work on improvement actions](compliance-manager-improvement-actions.md).
+**Learn more:** [See how to assign and perform work on improvement actions](compliance-manager-improvement-actions.md).
 
 ## Solutions page
 
@@ -328,7 +324,7 @@ You can also modify your view to see assessments by group, product, or regulatio
 
 ### Default assessment
 
-By default, you'll see the [Data Protection Baseline](ccompliance-manager-assessments.md#data-protection-baseline-default-assessment) assessment on the assessments page. Compliance Manager also provides several pre-built [templates](compliance-manager-templates-list.md) from which to build assessments.
+By default, you'll see the [Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) assessment on the assessments page. Compliance Manager also provides several pre-built [templates](compliance-manager-templates-list.md) for building assessments.
 
 ## Assessment templates page
 
@@ -336,9 +332,7 @@ A template is a framework for creating an assessment in Compliance Manager. The 
 
 Select a template from its row to bring up its details page, which contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
 
-#### Learn more
-
-[Read more about working with templates](compliance-manager-templates.md).
+**Learn more:** [Read how to work with assessment templates](compliance-manager-templates.md).
 
 ## Next step
 Customize Compliance Manager by [setting up assessments](compliance-manager-assessments.md).

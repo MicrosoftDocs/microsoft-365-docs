@@ -248,7 +248,7 @@ Select an improvement action to view its details page, and select the **Launch n
 
 ### Microsoft actions tab
 
-The Microsoft actions tab lists all the improvement actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
+The Microsoft actions tab lists all the actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
 
 #### Learn more
 [Understand how controls and improvement actions are tracked and scored by Compliance Manager.](compliance-score-calculation.md)
