@@ -22,7 +22,8 @@ Microsoft Threat Protection includes power self-healing capabilities that can sa
 
 ## Configure self-healing capabilities
 
-1. 
+1. Review the prerequisites.
+2. 
 
 ## Prerequisites for self-healing in Microsoft Threat Protection
 
@@ -34,6 +35,11 @@ Microsoft Threat Protection includes power self-healing capabilities that can sa
 |Protection for email content and Office files |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) configured |
 |Permissions |- To configure self-healing capabilities, you must have the Global Administrator or Security Administrator role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).<br/><br/>- To work with self-healing capabilities, such as reviewing, approving, or rejecting pending actions, refer to [Required permissions for Action center tasks](mtp-action-center.md#required-permissions-for-action-center-tasks). |
 
-## Turn on Microsoft Threat Protection
+## Deploy automated investigation and response capabilities in Microsoft 365
 
-## 
+
+
+## Make sure Microsoft Threat Protection is turned on
+
+Follow the guidance in [Turn on Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
+
