@@ -20,11 +20,13 @@ f1.keywords: CSH
 
 Microsoft Threat Protection includes power self-healing capabilities that can save your security operations team a lot of time and effort. Self-healing capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster and with more ability to scale. To learn more about self-healing, see [Self-healing in Microsoft Threat Protection](mtp-autoir.md). 
 
-## Configure self-healing capabilities
+## Steps to configure self-healing capabilities
 
 1. [Review the prerequisites](#prerequisites-for-self-healing-in-microsoft-threat-protection).
 
-2. 
+2. [Make sure Microsoft Threat Protection is turned on](#make-sure-microsoft-threat-protection-is-turned-on).
+
+3. [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups).
 
 ## Prerequisites for self-healing in Microsoft Threat Protection
 
@@ -50,7 +52,7 @@ Microsoft Threat Protection includes power self-healing capabilities that can sa
 
    Need help? See [Turn on Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
 
-## Review or change the automation level for self-healing
+## Review or change the automation level for device groups
 
 Whether automated investigations run, and whether remediation actions are taken automatically or only upon approval depend on how certain settings, such as your device group policies, are configured. 
 
@@ -60,4 +62,12 @@ This task includes reviewing and potentially changing your organization's securi
 
 1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
 
-2. Go to **Settings** > **Permissions** > **Device groups**.  
+2. Go to **Settings** > **Permissions** > **Device groups**. 
+
+3. Review your device groups. In particular, look at the **Remediation level** column. We recommend using **Full - remediate threats automatically**.  To learn more, see the following articles:
+
+   - [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
+   
+   - [Create and manage device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) 
+
+## Review al
