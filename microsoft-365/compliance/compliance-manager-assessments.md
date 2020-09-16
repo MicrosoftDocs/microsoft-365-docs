@@ -27,17 +27,17 @@ description: "Build assessments in Microsoft Compliance Manager to help you meet
 
 Compliance Manager helps you manage compliance with assessments for the regulations and certifications that apply to your organization. Assessments are groupings of controls from a specific regulation, standard, or policy. Compliance Manager makes it easy to start tracking your compliance by providing pre-built assessments that cover a variety of industry and regional regulations and certifications.
 
-Each assessment is created from a [template](compliance-manager-templates.md), which serves as a framework containing the necessary controls and improvement actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk.
+Each assessment is created from an [assessment template](compliance-manager-templates.md). Templates serve as a framework containing the necessary controls, improvement actions, and Microsoft actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk.
 
-All of your assessments are listed on the assessments page. [Learn more](compliance-manager-setup.md#assessments-page) about how to filter your view of your assessments and interpret status states.
+All of your assessments are listed on the assessments page. Learn more about [how to filter your view of your assessments and interpret status states](compliance-manager-setup.md#assessments-page).
 
 ## Data protection baseline default assessment
 
-To get you started, Microsoft provides a **default** assessment in Compliance Manager for the **Microsoft 365 data protection baseline**. This baseline assessment has a set of controls for key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union)..
+To get you started, Microsoft provides a **default** assessment in Compliance Manager for the **Microsoft 365 data protection baseline**. This baseline assessment has a set of controls for key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
 This assessment is used to calculate your initial compliance score the first time you come to Compliance Manager, before you configure any other assessments. Compliance Manager collects initial signals from your Microsoft 365 solutions. You’ll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
 
-Because every organization has specific needs, Compliance Manager become more helpful as you set up and manage your own assessments to help minimize and mitigate risk as comprehensively as possible.
+Compliance Manager becomes more helpful as you build and manage your own assessments to meet your organization's particular needs.
 
 ## Assessment creation overview
 
@@ -56,7 +56,7 @@ Kickstart your compliance journey by choosing an assessment already set up by Co
 
 **Extend a pre-built assessment to suit your needs**
 
-You may modify a Compliance Manager assessment—a process we refer to as "extending"—by adding your own controls and actions to better suit your organization’s needs. For example, if you generally need to comply with HIPAA but require additional data protection or security controls, you can extend our HIPAA template by adding your own controls to it. See the instructions for [extending a pre-built assessment](#extend-a-pre-built-assessment).
+You can modify a Compliance Manager assessment—a process we refer to as "extending"—by adding your own controls and actions to better suit your organization’s needs. For example, if you generally need to comply with HIPAA but require additional data protection or security controls, you can extend our HIPAA template by adding your own controls to it. See the instructions for [extending a pre-built assessment](#extend-a-pre-built-assessment).
 
 **Create your own custom assessment**
 
@@ -64,18 +64,17 @@ You can create your own assessment entirely from scratch to track precisely what
 
 ## Understand groups before creating assessments
 
-Before you create or modify assessments, it’s important to understand how groups work. When you create an assessment, you’ll need to assign it to a group during that process. We therefore recommend planning a grouping strategy for your assessments before you create assessments.
+Before you create or modify assessments, it’s important to understand how groups work. When you create an assessment, you’ll need to assign it to a group during that process. That's why we recommend planning a grouping strategy for your assessments before you create assessments.
 
 ### What are groups
 
 Groups are containers that allow you to organize assessments. You can group assessments in a way that is logical to you, such as by year or regulation, or based on your organization's divisions or geographies. Below are examples of two groups and their underlying assessments:
 
-- **FFIEC IS assessments 2020**
-  - Office 365 + FFIEC IS
-  - Intune + FFIEC IS
+- **FFIEC IS assessment 2020**
+  - FFIEC IS
 - **Data security and privacy assessments**
-  - Office 365 + ISO 27001:2013
-  - Office 365 + ISO 27018:2014
+  - ISO 27001:2013
+  - ISO 27018:2014
 
 When two different assessments in the same group share improvement actions that are managed by you, any updates you make to an action's implementation details or status will automatically synchronize to the same action in any other assessment in the group. This synchronization allows you to implement one improvement action and meet several requirements across multiple regulations.
 
@@ -83,13 +82,13 @@ When two different assessments in the same group share improvement actions that 
 
 You create a group during the process of [creating a new assessment](#to-create-an-assessment).
 
-Groups cannot be created as standalone entities; a group must contain at least one assessment. In order to create a group, you must first create an assessment to put in the group.
+Groups can't be created as standalone entities. A group must contain at least one assessment. In order to create a group, you need to first create an assessment to put in the group.
 
 ### What to know when working with groups
 
 - Group names must be unique within your organization.
 - Groups don't have security properties. All permissions are associated with assessments.
-- Once you add an assessment to a group, the grouping cannot be changed.
+- Once you add an assessment to a group, the grouping can't be changed.
 - Related assessment controls in different assessments within the same group automatically update when completed.
 - If you add a new assessment to an existing group, common information from assessments in that group are copied to the new assessment.
 - Groups can contain assessments for the same certification or regulation, but each group can only contain one assessment for a specific product-certification pair. For example, a group can't contain two assessments for Office 365 and NIST CSF. A group can contain multiple assessments for the same product only if the corresponding certification or regulation for each one is different.
@@ -191,7 +190,7 @@ Deleting an assessment removes it from the list on your assessments page. Note t
 
 - **Deleting an assessment is permanent; you cannot get it back.** If you want the same assessment again, it must be re-created from scratch.
 - If the improvement actions in the assessment do not appear in any other assessment, they will be deleted when the assessment is deleted.
-- We recommend exporting a report of the assessment before you permanently delete it.
+- We recommend [exporting a report](#export-an-assessment-report) of the assessment before you permanently delete it.
 
 To delete an assessment, follow the steps below:
 
@@ -213,7 +212,7 @@ The overview tab contains a graph showing your percentage toward completion of t
 
 The key improvement actions for controls in the assessment are listed in order of greatest potential impact to earn points. The associated graph details the aggregated test status of your improvement actions so you can quickly gauge what has been tested and what still needs to be done.
 
-To access individual improvement actions, go to the controls tab.
+To access individual improvement actions, visit the **Controls** tab or the **Your improvement actions** tab.
 
 ### Controls tab
 
@@ -239,19 +238,15 @@ Select an improvement action from the list to drill into the improvement action�
 
 ### Your improvement actions tab
 
-The tab for your improvement actions lists all the controls in the assessment that are managed by your organization. The status bar details the aggregated test status of your improvement actions in the assessment so you can quickly gauge what has been tested and what still needs to be done. Beneath the bar is the full list of improvement actions and key details, including: test status, the number of potential and earned points, associated regulations and standards, applicable solution, action type, and control family. 
+The tab for your improvement actions lists all the controls in the assessment that are managed by your organization. The status bar details the aggregated test status of your improvement actions in the assessment so you can quickly gauge what has been tested and what still needs to be done. Beneath the bar is the full list of improvement actions and key details, including: test status, the number of potential and earned points, associated regulations and standards, applicable solution, action type, and control family. Learn more about [how actions contribute to your compliance score](compliance-score-calculation.md#action-types-and-points).
 
 Select an improvement action to view its details page, and select the **Launch now** link to open the solution to take action.
-
-> [!NOTE]
-> Learn more about [how improvement actions contribute to your compliance score](compliance-score-calculation.md#action-types-and-points).
 
 ### Microsoft actions tab
 
 The Microsoft actions tab lists all the actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
 
-#### Learn more
-[Understand how controls and improvement actions are tracked and scored by Compliance Manager.](compliance-score-calculation.md)
+Learn more about [how controls and improvement actions are tracked and scored.](compliance-score-calculation.md)
 
 ## Accepting updates to assessments
 
@@ -304,4 +299,4 @@ If you’re in the middle of completing an assessment, you may want to ensure yo
 
 You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators. On your assessment details page, select the **Generate report** button near the top of the page, which creates an Excel file you can save and share.
 
-The Excel file report is a snapshot of the assessment as of the date and time of the export. It contains the details for controls managed by both you and Microsoft, including implementation status, test date, test results, and links to uploaded evidence documents.
+The report is a snapshot of the assessment as of the date and time of the export. It contains the details for controls managed by both you and Microsoft, including implementation status, test date, and test results.
