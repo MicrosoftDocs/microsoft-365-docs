@@ -112,6 +112,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Learn the query language
                   href: mtp/advanced-hunting-query-language.md
+                - name: Get expert training
+                  href: mtp/advanced-hunting-expert-training.md
                 - name: Work with query results
                   href: mtp/advanced-hunting-query-results.md
                 - name: Take action on query results
@@ -124,10 +126,12 @@
                   href: mtp/advanced-hunting-go-hunt.md
                 - name: Apply query best practices
                   href: mtp/advanced-hunting-best-practices.md
-                - name: Service limits
-                  href: mtp/advanced-hunting-limits.md
+                - name: Apply query best practices
+                  href: mtp/advanced-hunting-best-practices.md
                 - name: Handle errors
                   href: mtp/advanced-hunting-errors.md
+                - name: Service limits
+                  href: mtp/advanced-hunting-limits.md
                 - name: Extend data coverage
                   href: mtp/advanced-hunting-extend-data.md
                 - name: Data schema
