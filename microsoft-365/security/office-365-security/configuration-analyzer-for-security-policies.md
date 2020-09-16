@@ -22,7 +22,7 @@ description: "Admins can learn how to use the configuration analyzer to find and
 # Configuration analyzer for protection policies in EOP and Office 365 ATP
 
 > [!NOTE]
-> The features described in this topic are in Preview, aren't available in all organizations, and are subject to change.
+> The features described in this topic are in Preview, aren't available in all organizations, and are subject to change. For information about the release schedule, check out the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=config%2Canalyzer).
 
 Configuration analyzer in the Security & Compliance center provides a central location to find and fix security policies where the settings are below the Standard protection and Strict protection profile settings in [preset security policies](preset-security-policies.md).
 
