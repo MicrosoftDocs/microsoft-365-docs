@@ -29,6 +29,8 @@ A template is a framework for creating an assessment in Compliance Manager. They
 
 ## List of pre-built templates for assessments
 
+Compliance Manager provides templates for building assessments to help you comply with various regulations and standards.  
+
 View the [list of templates](compliance-manager-templates-list.md) provided by Compliance Manager. New templates are added regularly, so check the page often.
 
 ## Viewing and managing templates from the assessment templates page
@@ -87,7 +89,7 @@ The **Template** tab is required. The information in this tab provides metadata 
 - **inScopeServices**: These are the services within the product that this assessment addresses (for example, if you listed Office 365 as the product, Microsoft Teams could be an in-scope service). You can list multiple services separated by two semi-colons.
 
 > [!NOTE]
-> The data you insert in the **product** and **certification** cells cannot be edited after you import the spreadsheet to create or customize a template. Also, a group cannot contain two assessments that have the same **product/certification** combination. You can have multiple templates that have the same product/certification combination.
+> The data you insert in the **product** and **certification** cells can't be edited after you import the spreadsheet to create or customize a template. Also, a group can't contain two assessments that have the same **product/certification** combination. You can have multiple templates with the same product/certification combination.
 
 ##### ControlFamily tab
 
@@ -116,7 +118,7 @@ The **Actions** tab is required.  It designates improvement actions managed by y
 
 - **actionScore**: In this required field, provide a numeric score value for your action. It must be a whole number ranging from 1 to 99; it cannot be 0, null, or blank. The higher the number, the greater its value toward improving your compliance posture. For guidance, see below how Microsoft scores its controls:
 
-![Compliance Manager controls point values](../media/compliance-score-controls-scoring.png "Compliance Manager controls point values")
+![Compliance Manager controls point values](../media/compliance-score-action-scoring.png "Compliance Manager controls point values")
 
 - **actionDescriptionTitle**: This is the title of the description and is required. This description title allows you to have the same action in multiple templates and surface a different description in each template.  This field helps you clarify what template the description is referencing. In most cases, you can put the name of the template you're creating in this field.
 
@@ -139,9 +141,6 @@ You may want to modify a template you’ve already created, such as to add contr
 
 However, there are particular details to be aware of as you format your file with changes to existing template data. Therefore, we recommend you review these instructions carefully to ensure you don’t overwrite existing data you want to retain as you make changes.
 
-> [!NOTE]
-> If you want to extend a pre-built Compliance Manager template for an assessment, visit the instructions for extending a Compliance Manager template.
-
 ### Template modification process steps
 
 To modify a template, follow the steps below:
@@ -159,6 +158,9 @@ To modify a template, follow the steps below:
 9. The last screen confirms that the template has been modified. Select **Done** to exit the wizard.
 
 Your template will now include the changes you made. Any assessments that use this modified template will now show pending updates, and you’ll need to accept the updates to the assessments to reflect the changes made in the template. Learn more about [updates to assessments](compliance-manager-assessments.md#accepting-updates-to-assessments).
+
+> [!NOTE]
+> If you use Compliance Manager in a language other than English, you’ll notice that some text appears in English when you export a template to Excel. The titles of actions (both your improvement actions and Microsoft actions) must be in English in order to be recognized when referenced in controls. If you make changes to an action title, be sure to write it in English so that the file imports correctly.
 
 ### Formatting your Excel file to modify a template
 
@@ -181,15 +183,6 @@ On the **Templates** tab, you can edit anything in the **title** column, the **i
 2. Go to your **ControlFamily** tab. Find the row containing the control your improvement action maps to. Add your new action to the **controlActionTitle** column in that row (remember to separate multiple actions in this field with two semi-colons, no space in between).
 3. Save your spreadsheet to your local machine.
 
-**Add actions in bulk to a template**
-
-You can add multiple improvement actions at one time to a template. To bulk add actions, you’ll assemble your spreadsheet in a slightly different way than you would to add just one action, as outlined below:
-
-- Your spreadsheet should only include the **Actions** tab and no other tabs.
-- The **Dimensions** tab is optional to include if you need to add new dimensions.
-- Don’t add any actions that already exist in the assessment.
-- Don’t add any net-new actions; all actions must currently exist in Compliance Manager.
-
 #### Edit an improvement action's information
 
 You can change any improvement action's information *except for its title*. You can edit any cell from columns B onward, and when you import the file back into the template, the improvement actions in that template will now contain the updated data.
@@ -204,6 +197,8 @@ If you want to change the name of an improvement action, you have to explicitly 
 2. In this new column, which is now column B, put as its header in row 1: **oldActionTitle**.
 3. Copy the contents of column A and paste them into column B. This puts your existing improvement action titles, which are what you want to change, into column B.
 4. In column A, **actionTitle**, delete the old name and replace it with the new name for your improvement action.
+
+Note that action titles, both for your improvement actions and for Microsoft actions, must be written in English in order to be recognized when referenced in controls.
 
 #### Remove an improvement action
 
@@ -230,7 +225,3 @@ You can export an Excel file that contains all of a template’s data. You’ll 
 To export your template, go to your template details page and select the **Export to Excel** button.
 
 Note that when exporting a template you extended from a Compliance Manager template, the exported file will only contain the attributes you added to the template. The exported file won’t include the original template data provided by Microsoft. To get such a report, see the instructions for [exporting an assessment report](compliance-manager-assessments.md#export-an-assessment-report).
-
-## Delete a template
-
-text
