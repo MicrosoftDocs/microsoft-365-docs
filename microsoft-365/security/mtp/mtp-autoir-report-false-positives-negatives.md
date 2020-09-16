@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/29/2020
+ms.date: 09/16/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,6 +19,7 @@ ms.collection:
 - M365-security-compliance 
 ms.topic: conceptual
 ms.custom: autoir
+ms.reviewer: evaldm, isco
 ---
 
 # Handle false positives/negatives in automated investigation and response capabilities
@@ -26,7 +27,7 @@ ms.custom: autoir
 **Applies to:**
 - Microsoft Threat Protection
 
-Did [automated investigation and response capabilities](mtp-autoir.md) in Microsoft Threat Protection miss or wrongly detect something? There are steps you can take to fix it. You can:
+Did [self-healing capabilities](mtp-autoir.md) in Microsoft Threat Protection miss or wrongly detect something? There are steps you can take to fix it. You can:
 
 - [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 
@@ -74,10 +75,8 @@ If a remediation action was taken on a device (such as a Windows 10 device) and 
 
 7. To undo the action, select **Delete remediation**.
 
-## Related articles
+## See also
 
-- [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
-
+- [Approve or reject actions related to self-healing](mtp-autoir-actions.md)
 - [Learn more about the Action center](mtp-action-center.md)
-
 - [Proactively hunt for threats with advanced hunting in Microsoft Threat Protection](advanced-hunting-overview.md)

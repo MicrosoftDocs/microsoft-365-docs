@@ -11,7 +11,7 @@ ms.date: 09/16/2020
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: M365-security-compliance.
-ms.custom: air
+ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH 
 ---
