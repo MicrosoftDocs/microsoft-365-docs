@@ -110,11 +110,11 @@ Switching to the SOC analyst point of view, you can now start to investigate the
 
 2.	Navigate to **Incidents** from the menu. 
 
-![Screenshot of incidents as shown on the Microsoft 365 Security Center’s left-hand side menu](../../media/mtp/fig1.png)
+    ![Screenshot of incidents as shown on the Microsoft 365 Security Center’s left-hand side menu](../../media/mtp/fig1.png)
 
 3.	The new incident for the simulated attack will appear in the incident queue.
  
-![Screenshot of the incident queue](../../media/mtp/fig2.png)
+    ![Screenshot of the incident queue](../../media/mtp/fig2.png)
 
 
 ### Investigate the attack as a single incident
@@ -127,11 +127,11 @@ To view the incident:
 
 1.	Navigate to the **Incidents** queue.
  
-![Screenshot of incidents from the navigation menu](../../media/mtp/fig1.png)
+    ![Screenshot of incidents from the navigation menu](../../media/mtp/fig1.png)
 
 2.	Select the newest item by clicking on the circle located left of the incident name. A side panel displays additional information about the incident, including all the related alerts. Each incident has a unique name that describes it based on the attributes of the alerts it includes.
 
-![Screenshot of the incidents page where generated alerts are aggregated during the simulation](../../media/mtp/fig4.png)
+    ![Screenshot of the incidents page where generated alerts are aggregated during the simulation](../../media/mtp/fig4.png)
 
 The alerts that shows in the dashboard can be filtered based on service resources: Azure ATP, Microsoft Cloud App Security, Microsoft Defender ATP, Microsoft Threat Protection, and Office ATP.  
 
