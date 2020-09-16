@@ -29,8 +29,7 @@ To maximize the business value of the Microsoft 365 for enterprise integrated su
 >Windows 7 reached end of support on **January 14, 2020**. For more information, click [here](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
 >
 
-Accomplishing all of these migrations over time gets your organization closer to the [modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), a secure and integrated environment that unlocks teamwork and creativity in your organization, all of which is enabled and empowered by Microsoft 365 for enterprise. 
-
+Accomplishing all of these migrations over time gets your organization closer to the [modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), a secure and integrated environment that unlocks teamwork and creativity in your organization, all of which is enabled and empowered by Microsoft 365 for enterprise.
 
 ## Migration for Microsoft Office client products
 
@@ -39,7 +38,7 @@ In many organizations both large and small, you might be using a combination of 
 - Can be [updated](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) with the latest security updates and support fixes, but the process is sometimes manual and might not scale across your organization.
 - Are not optimally enabled to leverage Microsoft’s cloud technologies and help you digitally transform your business.
 - Do not contain new features.
- 
+
 Microsoft 365 for enterprise includes Microsoft 365 Apps for enterprise, a version of the Office client products that is available with a Microsoft 365 for enterprise license and is installed and updated from the Microsoft cloud. Microsoft 365 Apps for enterprise includes security updates and the latest features. See [About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps) for more information.
 
 ### Office 2007
@@ -58,7 +57,7 @@ Microsoft 365 Apps for enterprise installs updates automatically and can take ad
 
 For versions of Office in the Office 2010 release, the end of support is **October 13, 2020**. For more information, see [Office 2010 end of support roadmap](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
 
-Rather than upgrading your computers running Office 2010 with Office 2013 or Office 2016, both of which must be manually updated, consider: 
+Rather than upgrading your computers running Office 2010 with Office 2013 or Office 2016, both of which must be manually updated, consider:
 
 1. Obtaining and assigning a Microsoft 365 license for your users.
 2. Uninstalling Office 2010 on their computers.
@@ -87,7 +86,7 @@ In many organizations both large and small, you might be using a combination of 
 - Do not include new productivity applications, such as Microsoft Teams.
 - Do not include the latest security features, such as Exchange Advanced Threat Protection.
 
-Microsoft 365 for enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are continually updated for security without involving IT, saving you the time it takes to maintain and update on-premises servers. These services also have new features enhancements that are not present in Office server software. 
+Microsoft 365 for enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are continually updated for security without involving IT, saving you the time it takes to maintain and update on-premises servers. These services also have new features enhancements that are not present in Office server software.
 
 For information about migrating users and data for specific Microsoft 365 workloads:
 
@@ -141,7 +140,7 @@ For server products in the Office 2016 release, the end of support has not been 
 
 ## Migration for Microsoft Windows 7 and 8.1
 
-Windows 7 reached end of support on **January 14, 2020**. To migrate your devices running Windows 7 or Windows 8.1, you can perform an in-place upgrade. 
+Windows 7 reached end of support on **January 14, 2020**. To migrate your devices running Windows 7 or Windows 8.1, you can perform an in-place upgrade.
 
 For additional methods, see [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). You can also [plan for Windows 10 deployment](https://aka.ms/planforwin10deployment) on your own.
 
@@ -167,11 +166,10 @@ You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-do
 
 ## How Microsoft does Microsoft 365 for enterprise
 
-See how IT experts at Microsoft migrated the company to Microsoft 365 for enterprise with these resources: 
+See how IT experts at Microsoft migrated the company to Microsoft 365 for enterprise with these resources:
 
 - [Deploying and updating Microsoft 365 Apps for enterprise](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft migrates 150,000 mailboxes to Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [SharePoint to the cloud: Learn how Microsoft ran its own migration](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [Deploying Windows 10 at Microsoft as an in-place upgrade](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
 - [Windows 10 deployment: tips and tricks from Microsoft IT](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (video)
-
