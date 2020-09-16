@@ -3,7 +3,6 @@ title: "Microsoft 365 Network Insights (preview)"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -168,7 +167,7 @@ Enable office location network connectivity visibility if you have not already d
 
 ## Related topics
 
-[Network performance recommendations in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
+[Network connectivity in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 network assessment (preview)](office-365-network-mac-perf-score.md)
 
