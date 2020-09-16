@@ -86,7 +86,7 @@ $i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encodin
 
 A few seconds later, <i>notepad.exe</i> will open. A simulated attack code will be injected into notepad.exe. Keep the automatically generated Notepad instance open to experience the full scenario.
 
-The simulated attack code will attempt to communicate to an external IP address (simulating the C2 server) and then attempt reconnaissance against the domain controller via SMB.
+The simulated attack code will attempt to communicate to an external IP address (simulating the C2 server) and then attempt reconnaissance against the domain controller through SMB.
 
 You will see a message displayed on the PowerShell console when this script completes.
 
