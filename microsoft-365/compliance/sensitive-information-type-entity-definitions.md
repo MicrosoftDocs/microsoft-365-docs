@@ -4746,14 +4746,14 @@ These are the entities in the EU Driver's License Number sensitive information t
 
 These are the entities in the EU National Identification Number sensitive information type.
 
-- [Austria](#austria-national-identification-number)
+- [Austria](#austria-identity-card)
 - [Belgium](#belgium-national-number)
-- [Bulgaria](#bulgaria-national-identification-number)
+- [Bulgaria](#bulgaria-uniform-civil-number)
 - [Croatia](#croatia-identity-card-number)
-- [Cyprus](#cyprus-national-identification-number)
+- [Cyprus](#cyprus-identity-card)
 - [Czech](#czech-personal-identity-number)
 - [Denmark](#denmark-personal-identification-number)
-- [Estonia](#estonia-national-identification-number)
+- [Estonia](#estonia-personal-identification-code)
 - [Finland](#finland-national-identification-number)
 - [France](#france-national-identification-card-cni)
 - [Germany](#germany-identity-card-number)
@@ -4833,14 +4833,7 @@ These are the entities that are in the EU Social Security Number or equivalent i
 These entities are in the EU Tax identification number sensitive information type.
 
 - [Austria](#austria-tax-identification-number)
-- [Belgium](#belgium-tax-identification-number)
-- [Bulgaria](#bulgaria-tax-identification-number)
-- [Croatia](#croatia-tax-identification-number)
 - [Cyprus](#cyprus-tax-identification-number)
-- [Czech](#czech-tax-identification-number)
-- [Denmark](#denmark-tax-identification-number)
-- [Estonia](#estonia-tax-identification-number)
-- [Finland](#finland-tax-identification-number)
 - [France](#france-tax-identification-number)
 - [Germany](#germany-tax-identification-number)
 - [Greece](#greece-tax-identification-number)

@@ -40,7 +40,7 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
 
 You can get a view into Yammer groups activity by looking at the **Groups** and **Activity** charts.<br/>![Yammer groups activity chart](../../media/4ba4ea03-2f74-4d86-8c63-2b18477c9769.png)
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |The **Yammer groups activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table (7) will show data for up to 28 days from the current date (not the date the report was generated).  <br/> |
 |2.  <br/> |The data in each report usually covers up to the last 24 to 48 hours. <br/> |

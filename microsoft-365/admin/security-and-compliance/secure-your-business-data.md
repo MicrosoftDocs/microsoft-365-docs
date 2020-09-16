@@ -153,7 +153,7 @@ To create a mail transport rule, view a [short training video](https://support.m
 
 6. Select **Save**.
     
-|**Setting**|**Warn users before opening attachments of Office files**|**Block file types that could contain ransomware or other malicious code**|
+| Setting | Warn users before opening attachments of Office files | Block file types that could contain ransomware or other malicious code |
 |:-----|:-----|:-----|
 |Name  <br/> |Anti-ransomware rule: warn users  <br/> |Anti-ransomware rule: block file types  <br/> |
 |Apply this rule if . . .  <br/> |Any attachment . . . file extension matches . . .  <br/> |Any attachment . . . file extension matches . . .  <br/> |
