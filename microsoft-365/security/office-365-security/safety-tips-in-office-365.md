@@ -34,12 +34,6 @@ The safety tip—a color-coded message—will warn you about potentially harmful
 
     A red safety tip in an email means that the message you received contains something suspicious, such as a phishing scam. We recommend that you delete this kind of email message from your inbox without opening it.
 
-- Spam (yellow safety tip).
-
-    ![Screenshot that shows a yellow safety tip.](../../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
-
-    A yellow safety tip in an email means that the message has been marked as spam. If you don't recognize and trust the sender of the message, don't download any attachments or pictures and don't click any links in the message. In Outlook on the web, you can click **It's not spam** in the yellow bar of a junk mail item to move the message to your inbox. If the yellow safety tip appears on a message that was delivered to your inbox, it's probably there because you've disabled moving spam to your Junk Email folder.
-
 - Safe mail (green safety tip).
 
     ![Screenshot that shows a green safety tip.](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
