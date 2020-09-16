@@ -194,15 +194,15 @@ In this detection, an alert is triggered when the SMB session enumeration runs a
 
 ### Review the device timeline [Microsoft Defender ATP]
 After exploring the various alerts in this incident, navigate back to the incident page you investigated earlier. Click the **Devices** tab in the incident page to review the devices involved in this incident as reported by Microsoft Defender ATP and Azure ATP.
-<p></p>
+
 Click the name of the device where the attack was conducted, to open the entity page for that specific device. In that page, you can see alerts that were triggered and related events.
-<p></p>
+
 Click the **Timeline** tab to open the device timeline and view all events and behaviors observed on the device in chronological order, interspersed with the alerts raised.
 
 ![Screenshot of the device timeline with behaviors](../../media/mtp/fig11.png) 
 
 Expanding some of the more interesting behaviors provides useful details, such as process trees.
-<p></p>
+
 For example, scroll down until you find the alert event **Suspicious process injection observed**. Click the **powershell.exe injected to notepad.exe process** event below it, to display the full process tree for this behavior under the **Event entities** graph on the side pane. Use the search bar for filtering if necessary.
 
 ![Screenshot of the process tree for selected PowerShell file creation behavior](../../media/mtp/fig12.png)
@@ -238,15 +238,15 @@ Click the alert that triggered an investigation to open the **Investigation deta
 ![Screenshot of Investigation details page](../../media/mtp/fig15.png)
 
 During the automated investigation, Microsoft Defender ATP identified the notepad.exe process, which was injected as one of the artifacts requiring remediation. Microsoft Defender ATP automatically stops the suspicious process injection as part of the automated remediation. 
-<p></p>
+
 You can see <i>notepad.exe</i> disappear from the list of running processes on the test device.
 
 ## Resolve the incident
 
 After the investigation is complete and confirmed to be remediated, close the incident.
-<p></p>
+
 Click **Manage incident**. Set the status to **Resolve incident** and select the relevant classification.
-<p></p>
+
 Once the incident is resolved, it will close all of the associated alerts in Microsoft Threat Protection and in the related portals.
 
 ![Screenshot of the incidents page with the open Manage incident panel where you can click the switch to resolve incident](../../media/mtp/fig16.png) 
