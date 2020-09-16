@@ -148,7 +148,7 @@ If the deployed add-in doesn't support add-in commands or if you want to view al
 
 [Deploy add-ins in the admin center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
 
-Learn more about creating and building [Office Add-ins](https://go.microsoft.com/fwlink/p/?linkid=846362).
+Learn more about creating and building [Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins).
   
 [Use Centralized Deployment PowerShell cmdlets to manage add-ins](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins).
   
