@@ -70,8 +70,29 @@ This task includes reviewing and potentially changing your organization's securi
    
    - [Create and manage device groups](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) 
 
-### Review security and alert policies in Office 365
+## Review your security and alert policies in Office 365
 
-Microsoft provides built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Certain alerts can trigger [automated investigation and response in Office 365](). 
+Microsoft provides built-in [alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Certain alerts can trigger [automated investigation and response in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). 
 
-1. 
+> [!TIP]
+> To learn more about the relationship between alerts and automated investigations, see [Alert policies in the security and compliance center](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
+
+In order for alert policies to work with automated investigation and response as expected, make sure your [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) features are configured correctly.
+
+### To view or change your security settings in Office 365
+
+Security settings in Office 365 help protect email and content. To view or change these settings, follow the guidance in [Protect against threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
+
+1. Review your [antimalware protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-1---anti-malware-protection) policy settings.
+
+2. Review your [anti-phishing protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-2---anti-phishing-protection) policy settings.
+
+3. Review your [antispam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-3---anti-spam-protection) policy settings. 
+
+4. Review your [safe attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#atp-safe-attachments-policies) policy settings. 
+
+5. Review your [safe links](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#atp-safe-links-policies) policy settings. 
+
+6. Make sure [Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-5---turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams-workloads) is turned on.
+
+7. Review your [zero-hour auto purge for email](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop) settings. 
