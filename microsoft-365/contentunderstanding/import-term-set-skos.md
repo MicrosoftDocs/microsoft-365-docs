@@ -1,6 +1,6 @@
 ---
-title: Import a term set using SKOS
-description: "Learn how to Import a term set using SKOS"
+title: Import a term set using a SKOS-based format
+description: "Learn how to Import a term set using a SKOS-based format"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -12,9 +12,11 @@ localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 
 ---
-# Import a term set using SKOS
+# Import a term set using a SKOS-based format
 
-You can import a term set using the SKOS format. We recommend keeping your import files to less than 20,000 terms. Larger files can increase the time taken for validation and import.
+You can import a term set using a SKOS-based format. For details about the format, see [SharePoint taxonomy SKOS format reference](skos-format-reference.md).
+
+We recommend keeping your import files to less than 20,000 terms. Larger files can increase the time taken for validation and import.
 
 1. In the SharePoint admin center, expand **Content services**, and then click **Term store**.
 
@@ -22,7 +24,7 @@ You can import a term set using the SKOS format. We recommend keeping your impor
 
 3. In the command bar, click **Import term set**.
  
-4.	If you want to download a sample file to use as a template, click **sample-metadata.ttl** to get a sample file that uses the SKOS format.
+4.	If you want to download a sample file to use as a template, click **sample-metadata.ttl** to get a sample file that uses the SKOS-based format.
  
 5.	Create the import file that contains the term sets & terms you wish to import.
 
@@ -36,12 +38,8 @@ On successful import of the file, a success message will be displayed, and the t
 
 ## See also
 
+[Introduction to managed metadata](https://docs.microsoft.com/sharepoint/managed-metadata)
 
+[Document understanding overview](document-understanding-overview.md)
 
-  
-
-
-
-
-
-
+[Import term sets (site level)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)
