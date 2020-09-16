@@ -3,7 +3,7 @@ title: "Network performance recommendations in the Microsoft 365 Admin Center (p
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/21/2020
+ms.date: 09/16/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -42,7 +42,7 @@ Measurement samples and office locations should start to appear 24 hours after t
 
 ### 2. Add locations and provide LAN Subnet information
 
-For this option neither Windows Location Services nor Wi-Fi are required. You need OneDrive for Windows version 20.161 or above installed on each commputer at the location. This is available now if you join the OneDrive insiders.
+For this option neither Windows Location Services nor Wi-Fi are required. You need OneDrive for Windows version 20.161 or above installed on each commputer at the location. This is available now if you join the [Windows Insiders program](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-install), or opt-in to the OneDrive Insiders Preview program in the **OneDrive settings | About** tab.
 
 You also need to add locations in the Admin Center network connectivity page or to import those from a CSV file. The locations added must include your office LAN Subnet information.
 
