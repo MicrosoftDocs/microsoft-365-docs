@@ -142,7 +142,7 @@ In the **Incident** page, you can see all the alerts and information related to 
 You can also click **Manage incident** from the right-hand menu, to tag the incident, assign it to yourself, and add comments.
 
     ![Screenshot of where to click Manage incident](../../media/mtp/fig5a.png)
-<br>
+
     ![Screenshot of the fields on the manage incident panel where you can tag the incident, assign it to yourself, and add comments ](../../media/mtp/fig5b.png)
 
 
