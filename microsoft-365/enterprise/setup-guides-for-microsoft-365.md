@@ -107,7 +107,7 @@ Use the [Plan your self-service password reset deployment wizard](https://aka.ms
 
 ### Active Directory Federation Services (AD FS) deployment advisor
 
-The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with step-by-step guidance on deploying an on-premises AD FS infrastructure that authenticates users for Microsoft 365 and Office 365 services. With this guide your organization can review AD FS components and requirements, acquire and install SSL certificates that are necessary for deployment, and install a required web application proxy server. 
+The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with step-by-step guidance on deploying an on-premises AD FS infrastructure that authenticates users for Microsoft 365 and Office 365 services. With this guide, your organization can review AD FS components and requirements, acquire and install SSL certificates that are necessary for deployment, and install a required web application proxy server. 
 
 ## Guides for security and compliance
 
@@ -134,7 +134,7 @@ Get an overview of the capabilities you can apply to your Information Protection
 
 ### Microsoft information governance setup guide
 
-The [Microsoft Information governance setup guide](https://aka.ms/migsetupguide) provides you with the information you'll need to set up and manage your organization's governance strategy, to ensure that your data is classified and managed according to the specific lifecycle guidelines you set. With this guide, you'll learn how to create, auto-apply or publish labels, label policies, and retention policies, that are applied to your organization's reusable content and compliance records. You'll also get information on importing CSV files with a file plan, for bulk scenarios or for applying them manually to individual documents. 
+The [Microsoft Information governance setup guide](https://aka.ms/migsetupguide) provides you with the information you'll need to set up and manage your organization's governance strategy, to ensure that your data is classified and managed according to the specific lifecycle guidelines you set. With this guide, you'll learn how to create, auto-apply, or publish labels, label policies, and retention policies that are applied to your organization's reusable content and compliance records. You'll also get information on importing CSV files with a file plan for bulk scenarios or for applying them manually to individual documents. 
 
 ## Guides for collaboration
 
