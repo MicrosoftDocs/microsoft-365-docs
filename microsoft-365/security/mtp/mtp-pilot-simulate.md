@@ -84,7 +84,7 @@ $i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encodin
 >[!NOTE]
 >If you're running PowerShell using remote desktop protocol (RDP), use the Type Clipboard Text command in the RDP client because the **CTRL-V** hotkey or right-click-paste method might not work.  Recent versions of PowerShell sometimes will also not accept that method, you might have to copy to Notepad in memory first, copy it in the virtual machine, and then paste it into PowerShell.
 
-A few seconds later, notepad.exe will open. A simulated attack code will be injected into notepad.exe. Keep the automatically generated Notepad instance open to experience the full scenario.
+A few seconds later, <i>notepad.exe</i> will open. A simulated attack code will be injected into notepad.exe. Keep the automatically generated Notepad instance open to experience the full scenario.
 
 The simulated attack code will attempt to communicate to an external IP address (simulating the C2 server) and then attempt reconnaissance against the domain controller via SMB.
 
@@ -143,7 +143,7 @@ The alerts that shows in the dashboard can be filtered based on service resource
 <br>  
 ![Screenshot of where to click Manage incident](../../media/mtp/fig5a.png)
 <br>
-![Screenshot of the fields on the manage incident panel where you can tag the incident, assign it to yourself, and add comments ](../../media/mtp/fig5a.png)
+![Screenshot of the fields on the manage incident panel where you can tag the incident, assign it to yourself, and add comments ](../../media/mtp/fig5b.png)
 
 
 ### Review generated alerts 
@@ -191,7 +191,7 @@ In this detection, an alert is triggered when the SMB session enumeration runs a
 ![Screenshot of the Azure ATP alert for User and IP address reconnaissance](../../media/mtp/fig10.png) 
 
 
-**Review the device timeline [Microsoft Defender ATP]**
+### Review the device timeline [Microsoft Defender ATP]
 After exploring the various alerts in this incident, navigate back to the incident page you investigated earlier. Click the **Devices** tab in the incident page to review the devices involved in this incident as reported by Microsoft Defender ATP and Azure ATP.
 
 Click the name of the device where the attack was conducted, to open the entity page for that specific device. In that page, you can see alerts that were triggered and related events.
@@ -206,6 +206,42 @@ For example, scroll down until you find the alert event **Suspicious process inj
 
 ![Screenshot of the process tree for selected PowerShell file creation behavior](../../media/mtp/fig12.png)
 
+### Review the user information [Microsoft Cloud App Security]
+
+On the incident page, click the **Users** tab to display the list of users involved in the attack. The table contains additional information about each user, including each user’s **Investigation Priority** score.
+
+<br>
+Click the username to open the user’s profile page where further investigation can be conducted. [Read more about investigating risky users](https://docs.microsoft.com/en-us/cloud-app-security/tutorial-ueba#identify).
+
+![Screenshot of Cloud App Security user page](../../media/mtp/fig13.png)
+
+
+## Automated investigation and remediation
+>[!NOTE]
+>Before we walk you through this simulation, watch the following video to get familiar with what automated self-healing is, where to find it in the portal, and how it can help in your security operations:
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
+
+Navigate back to the incident in the Microsoft Threat Protection portal. The **Investigations** tab in the **Incident** page shows the automated investigations that were triggered by Azure ATP and Microsoft Defender ATP. The screenshot below displays only the automated investigation triggered by Microsoft Defender ATP. By default, Microsoft Defender ATP automatically remediates the artifacts found in the queue which requires remediation.
+
+![Screenshot of automated investigations related to the incident](../../media/mtp/fig14.png)
+
+Click the alert that triggered an investigation to open the **Investigation details** page. You’ll see the following:
+- Alert(s) that triggered the automated investigation.
+- Impacted users and devices. If indicators are found on additional devices, these additional devices will be listed as well.
+- List of evidence. The entities found and analyzed, such as files, processes, services, drivers, and network addresses. These entities are analyzed for possible relationships to the alert and rated as benign or malicious.
+- Threats found. Known threats that are found during the investigation.
+
+>[!NOTE]
+>Depending on timing, the automated investigation might still be running. Wait a few minutes for the process to complete before you collect and analyze the evidence and review the results. Refresh the **Investigation details** page to get the latest findings.
+
+![Screenshot of Investigation details page](../../media/mtp/fig15.png)
+
+During the automated investigation, Microsoft Defender ATP identified the notepad.exe process, which was injected as one of the artifacts requiring remediation. Microsoft Defender ATP automatically stops the suspicious process injection as part of the automated remediation. 
+
+<br>
+You can see <i>notepad.exe</1> disappear from the list of running processes on the test device.
+
 ## Resolve the incident
 
 After the investigation is complete and confirmed to be remediated, close the incident.
@@ -216,28 +252,32 @@ Once the incident is resolved, it will close all of the associated alerts in Mic
 
 ![Screenshot of the incidents page with the open Manage incident panel where you can click the switch to resolve incident](../../media/mtp/fig17.png) 
 
+<br>
+This wraps up the attack simulation for the incident management and automated investigation and remediation scenarios. The next simulation will take you through proactive threat hunting for potentially-malicious files. 
 
 ## Advanced hunting scenario
 
 >[!NOTE]
->Before we walk you through the simulation, watch [this video](https://www.microsoft.com/videoplayer/embed/RE4Bp7O) to understand the advanced hunting concepts, see where you can find it in the portal, and know how it can help you in your security operations.
+>Before we walk you through the simulation, watch the following video to understand the advanced hunting concepts, see where you can find it in the portal, and know how it can help you in your security operations:
+<p></p> 
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
-### Test environment requirements
+### Hunting environment requirements
 There is a single internal mailbox and device required for this scenario. You will also need an external email account to send the test message.
 
-1.	Verify that your tenant has enabled [Microsoft Threat Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#starting-the-service).
-2.	Identify a target mailbox to be used for receiving email.
-a.	This mailbox must be monitored by Office 365 ATP
-b.	The device from requirement 3 needs to access this mailbox
-3.	Configure a test device:
-a.	Make sure you are using Windows 10 version 1903 or later version.
-b.	Join the test device to the test domain.
-c.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see [this troubleshooting topic](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
-d.	[Onboard to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+    1.	Verify that your tenant has enabled [Microsoft Threat Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable#starting-the-service).
+    2.	Identify a target mailbox to be used for receiving email.
+        a.	This mailbox must be monitored by Office 365 ATP
+        b.	The device from requirement 3 needs to access this mailbox
+    3.	Configure a test device:
+        a.	Make sure you are using Windows 10 version 1903 or later version.
+        b.	Join the test device to the test domain.
+        c.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see [this troubleshooting topic](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+        d.	[Onboard to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 ### Run the simulation
-1.	From an external email account, send an email to the mailbox identified in step 2 of the test environment requirements section.  Include an attachment that will be allowed through any existing email filter policies.  This file does not need to be malicious or an executable.  Suggested file types are <i>.pdf</i>, <i>.exe</i> (if allowed), or Office document such as a Word file.
-2.	Open the sent email from the device configured as defined in step 3 of the test environment requirements section. Either open the attachment or save the file to the device.
+    1.	From an external email account, send an email to the mailbox identified in step 2 of the test environment requirements section. Include an attachment that will be allowed through any existing email filter policies.  This file does not need to be malicious or an executable. Suggested file types are <i>.pdf</i>, <i>.exe</i> (if allowed), or Office document such as a Word file.
+    2.	Open the sent email from the device configured as defined in step 3 of the test environment requirements section. Either open the attachment or save the file to the device.
 
 
 **Go hunting**
