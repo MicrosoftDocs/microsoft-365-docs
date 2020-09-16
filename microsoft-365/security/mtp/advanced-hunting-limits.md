@@ -33,8 +33,8 @@ To keep the service performant and responsive, advanced hunting sets various lim
 | Timeout | 10 minutes | Every query | Each query can run for up to 10 minutes. If it does not complete within 10 minutes, the service displays an error.
 | CPU resources | Based on tenant size | - On the hour and then every 15 minutes<br>- Daily at 12 midnight | Query editor displays a warning message whenever on query if daily or  at 10% consumption and then blocks queries at 100%. |
 
->[!NOTE] A separate set of limits apply to advanced hunting queries performed through the API. [Read about advanced hunting APIs](https://docs.microsoft.com/microsoft-365/security/mtp/api-advanced-hunting)
-
+>[!NOTE] 
+>A separate set of limits apply to advanced hunting queries performed through the API. [Read about advanced hunting APIs](https://docs.microsoft.com/microsoft-365/security/mtp/api-advanced-hunting)
 
 Customers who run multiple queries regularly should track consumption and [apply optimization best practices](advanced-hunting-best-practices.md) to minimize disruption resulting from exceeding these limits.
 
