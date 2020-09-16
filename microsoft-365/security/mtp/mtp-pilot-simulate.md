@@ -380,4 +380,4 @@ From this page, you can select the detection rule which will open a details page
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 4: Closing & summary](../../media/prepare.png) <br>[Phase 4: Closing & summary](prepare-mtpeval.md) | Analyze your Microsoft Threat Protection pilot outcome, present them to your stakeholders, and take the next step.
+|![Phase 4: Closing & summary](../../media/close.png) <br>[Phase 4: Closing & summary]((mtp-pilot-close.md) | Analyze your Microsoft Threat Protection pilot outcome, present them to your stakeholders, and take the next step.
