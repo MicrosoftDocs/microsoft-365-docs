@@ -206,9 +206,13 @@ At a high level, here's how Safe Links protection works for URLs in Office docum
 
 ## Always blocked URLs for Safe Links
 
-The **Block the following URLs** list defines the links that are always blocked by Safe Links scanning. These blocked URLs apply to all types of Safe Links scanning: email messages, Microsoft Teams, and Office documents. The maximum number of blocked URL entries is 500.
+The **Block the following URLs** list defines the links that are always blocked by Safe Links scanning. These blocked URLs apply to all types of Safe Links scanning: email messages, Microsoft Teams, and Office documents.
 
-To add always blocked URLs to the list, see .
+- The maximum number of blocked URL entries is 500.
+- The maximum length of an entry is 128 characters.
+- The entire list of blocked URLs can't exceed 10,000 characters.
+
+To add blocked URLs to the list, see .
 
 When a user clicks a blocked link, they're taken to a warning page that looks like this:
 
@@ -245,13 +249,13 @@ The **Do not rewrite the following URLs** list in Safe Links policies specifies 
 
 The list of always allowed URLs apply to links in email messages or in Microsoft Teams.
 
-To add always allowed URLs to the list, see .
+To add allowed URLs to the list, see .
 
 Consider the following tips for defining always allowed URLs:
 
 - Consider adding commonly used internal URLs to the list list to improve the user experience. For example, if you have on-premises services, such as Skype for Business or SharePoint, you can add those URLs to exclude them from scanning.
 
-- If you already have a list of always URLs in your Safe Links policies, be sure to review the lists and add wildcards as appropriate. For example, your list has an entry like `https://contoso.com/a` and you want to also allow subptaths like `https://contoso.com/a/b`. Instead of adding a separate entry, add a wildcard to the existing entry so it becomes `https://contoso.com/a/*`.
+- If you already have a list of always URLs in your Safe Links policies, be sure to review the lists and add wildcards as appropriate. For example, your list has an entry like `https://contoso.com/a` and you want to also allow subpaths like `https://contoso.com/a/b`. Instead of adding a separate entry, add a wildcard to the existing entry so it becomes `https://contoso.com/a/*`.
 
 - You can include up to three wildcards (`*`) per URL entry. Wildcards explicitly include prefixes or subdomains. For example, the entry `contoso.com` is not the same as `*.contoso.com/*`, because `*.contoso.com/*` allows people to visit subdomains and paths in the specified domain.
 
