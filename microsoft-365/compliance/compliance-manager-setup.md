@@ -31,9 +31,9 @@ The Microsoft 365 global administrator for your organization will likely be the 
 ## Sign in
 
 1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and **sign in** with your Microsoft 365 global administrator account.
-2. Select **Compliance Manager** on the left navigation pane. You will then arrive at your [Compliance Manager dashboard](#understand-the-compliance-manger-dashboard).
+2. Select **Compliance Manager** on the left navigation pane. You'll arrive at your [Compliance Manager dashboard](#understand-the-compliance-manger-dashboard).
 
-The direct link to access Compliance Manager is [https://compliance.microsoft.com/compliancescore](https://compliance.microsoft.com/compliancescore).
+The direct link to access Compliance Manager is [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager).
 
 ## Set user permissions and assign roles
 
@@ -49,9 +49,9 @@ To set permissions and assign roles from within the Microsoft 365 compliance cen
 
 2. Near the top, select the link at **“To view and manage roles in Office 365, please go here.”** A new tab will open to the Office 365 Security & Compliance Center ([learn why you’re redirected](microsoft-365-compliance-center.md#frequently-asked-questions)).
 
-3. Find the role group to which you want to add one or more users ([see the list of roles and related functions below](#role-types); the role group names mimic the role name), and check the box to the left of the group name.
+3. Find the role group to which you want to add one or more users, and check the box to the left of the group name. (See the [list of roles and related functions below](#role-types). The role group names mimic the role name.)
 
-4. On the flyout pane for that group, under the **Members** header, select **Edit**.
+4. On the flyout pane for that group, select **Edit** under the **Members** header.
 
 5. Select **Choose members**. Another flyout window will appear.
 
@@ -80,19 +80,19 @@ The table below shows the functions allowed by each role in Compliance Manager. 
 
 ## Settings for automated testing and user history
 
-The Compliance Manager settings in the Microsoft 365 compliance center allow you to enable and disable automatic testing of improvement actions. The settings also allow you to manage the data of users associated to improvement actions, including the ability to reassign improvement actions to a different users.  Only people with a global administrator or Compliance Manager Administrator role can access the Compliance Manager settings.
+The Compliance Manager settings in the Microsoft 365 compliance center allow you to enable and disable automatic testing of improvement actions. The settings also allow you to manage the data of users associated to improvement actions, including the ability to reassign improvement actions to a different user.  Only people with a global administrator or Compliance Manager Administrator role can access the Compliance Manager settings.
 
 ### Set up automated testing
 
-Some improvement actions in Compliance Manager are also monitored by [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score). Compliance Manager allows you to set up automated testing of those actions so that any time an action is tested and updated in Secure Score, those results synch with the same actions in Compliance Manager and count toward your compliance score. Enabling automated testing in this way reduces the duplicative work of manually implementing those improvement actions.
+Some improvement actions in Compliance Manager are also monitored by [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score). You can set up automated testing of actions that are jointly monitored, which means that when an action is tested and updated in Secure Score, those results synch with the same actions in Compliance Manager and count toward your compliance score.
 
-Automatic testing is turned on by default for organizations new to Compliance Manger. When organizations first deploy Microsoft 365 or Office 365, it takes approximately seven days for Secure Score to fully collect data and factor it into your compliance score.  When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft managed control scores and Secure Score integration.
+Automatic testing is turned on by default for organizations new to Compliance Manger. When you first deploy Microsoft 365 or Office 365, it takes approximately seven days for Secure Score to fully collect data and factor it into your compliance score.  When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration.
 
 The global administrator for your organization can change the settings for automated testing at any time. You can turn off automated testing for common improvement actions, or turn it on for individual actions. Follow the instructions below to change your automated testing settings.
 
 #### To manage your automated testing settings:
 
-1. Select Settings on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+1. Select **Settings** on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 
 2. On the settings page, select **Compliance Manager**.
 
@@ -110,7 +110,7 @@ The global administrator for your organization can change the settings for autom
 
 The **Manage user history** settings help you quickly identify which users have worked with improvement actions in Compliance Manger. The identifiable user data associated with improvement actions includes any implementation and testing work done, documents they uploaded, and any notes they entered. Understanding and retrieving this type of data may be necessary for your organization’s own compliance needs.
 
-The user history settings also allow you to reassign all improvement actions from one user to another. This can be helpful, for example, when an employee leaves the organization.
+The user history settings also allow you to reassign all improvement actions from one user to another.
 
 **To find the user history settings:**
 
@@ -146,7 +146,7 @@ The report reflects the improvement action’s status as of its creation date. I
 
 #### Reassign improvement actions to another user
 
-You can reassign improvement actions from one user to another. This is useful when, for example, an employee leaves the organization and you need to remove any outstanding dependencies on that user’s account. When you reassign improvement actions, the document upload history does not change, but the name of the user who originally uploaded the documentation no longer appears within the improvement action.
+You can reassign improvement actions from one user to another. When you reassign an action, the document upload history doesn't change, but the name of the user who originally uploaded the documentation no longer appears within the improvement action.
 
 **Follow the steps below to reassign improvement actions to another user:**
 
@@ -229,7 +229,7 @@ After you apply a filter, you’ll see your score adjusted in real time. The com
 To remove filters:
 
 - At the **Applied filters** heading above your compliance score, select the **X** next to the individual filter you want to remove; or
-- Select **Filter** on the upper-right side of your dashboard, then select **Clear filters**.
+- Select **Filter** on the upper-right side of your dashboard, then on the **Filters** flyout pane, select **Clear filters**.
 
 ## Improvement actions page
 
