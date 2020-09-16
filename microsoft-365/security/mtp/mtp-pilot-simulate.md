@@ -133,7 +133,7 @@ To view the incident:
 
     ![Screenshot of the incidents page where generated alerts are aggregated during the simulation](../../media/mtp/fig4.png)
 
-The alerts that shows in the dashboard can be filtered based on service resources: Azure ATP, Microsoft Cloud App Security, Microsoft Defender ATP, Microsoft Threat Protection, and Office ATP.  
+    The alerts that shows in the dashboard can be filtered based on service resources: Azure ATP, Microsoft Cloud App Security, Microsoft Defender ATP, Microsoft Threat Protection, and Office ATP.  
 
 3.	Select **Open incident page** to get more information about the incident.
 
