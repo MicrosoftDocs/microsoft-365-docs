@@ -390,7 +390,7 @@ Custom detections will run the query according to the frequency you set, and the
 
 2.	Fill in the required fields with the  information that will allow the security team to understand the alert, why it was generated, and what actions you expect them to take. 
 
-![Screenshot of the create detection rule page where you can define the alert details] (../../media/mtp/fig24.png)
+![Screenshot of the create detection rule page where you can define the alert details](../../media/mtp/fig24.png)
 
 Ensure that you fill out the fields with clarity to help give the next user an informed decision about this detection rule alert 
 
