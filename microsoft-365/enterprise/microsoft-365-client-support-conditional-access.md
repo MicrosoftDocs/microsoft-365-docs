@@ -33,7 +33,7 @@ Learn more about [Azure AD Conditional Access](https://docs.microsoft.com/azure/
  - Web browsers
  - Android
  - iOS
- - macOS<sup>1</sup>
+ - macOS
 
 For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](https://products.office.com/office-system-requirements).
 
@@ -56,9 +56,6 @@ The latest versions of the following clients support Conditional Access:
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | ![Azure icon](../media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Exchange icon](../media/o365-exchange-64x64.png) <br> [Exchange Online <br> PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) | ![SharePoint icon](../media/o365-sharepoint-64x64.png) <br> [SharePoint Online <br> PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
-
-> [!NOTE]
-> <sup>1</sup> Support for OneDrive on macOS available soon.
 
 ## See also
 
