@@ -36,26 +36,26 @@ During the simulation, the attack injects shellcode into a seemingly innocent pr
 >For optimum results, follow the attack simulation instructions as closely as possible.
 
 
-## Test environment requirements
+## Simulation environment requirements
 
-There are two devices used in this scenario: a test device and a domain controller.
+Since you have already configured your pilot environment during the preparation phase, ensure that you have two devices for this scenario: a test device and a domain controller.
 
-1.	Verify your tenant has [Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable#starting-the-service)￼￼ .
-2.	Configure a test domain controller:
-    - Set up a device with Windows Server 2008 R2 or a later version.
-    - Onboard the test domain controller to [Azure Advanced Threat Protection](https://docs.microsoft.com/en-us/azure/security-center/security-center-wdatp) and enable [remote management](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    
-    - Enable [Azure ATP and Microsoft Cloud App Security integration](https://docs.microsoft.com/en-us/cloud-app-security/aatp-integration).
-    - Create a test user on your domain – no admin permissions needed.
+1.	Verify your tenant has [Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable#starting-the-service)￼￼.
+2.	Verify your test domain controller configuration:
+    - Device runs with Windows Server 2008 R2 or a later version.
+    - The test domain controller to [Azure Advanced Threat Protection](https://docs.microsoft.com/en-us/azure/security-center/security-center-wdatp) and enable [remote management](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    
+    - Verify that [Azure ATP and Microsoft Cloud App Security integration](https://docs.microsoft.com/en-us/cloud-app-security/aatp-integration) have been enabled.
+    - A test user is created on your domain – no admin permissions needed.
 
-3.	Configure a test device:
+3.	Verify test device configuration:
     <br>
-    a.	Requires Windows 10 version 1903 or a later version.
+    a.	Device runs with Windows 10 version 1903 or a later version.
     <br>
-    b.	Join the test device to the test domain.
+    b.	Test device is joined to the test domain.
     <br>
     c.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see this [troubleshooting topic](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
     <br>
-    d.	[Onboard to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+    d.	Verify that the test device is [onboarded to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 If you use an existing tenant and implement device groups, create a dedicated device group for the test device and push it to top level in configuration UX.
 
@@ -99,20 +99,21 @@ To see the Automated Incident and Response feature in action, keep the notepad.e
 
 ## Investigate an incident
 
-Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft Threat Protection portal. 
+NOTE: Before we walk you through this simulation, watch the following video to see how incident management helps you piece the related alerts together as part of the investigation process, where you can find it in the portal, and how it can help you in your security operations:
 
->[!NOTE]
->Before we walk you through this simulation, watch [this video](https://www.youtube.com/watch?v=Vfuf7KXXo5E) to see how incident management helps you piece the related alerts together, where you can find it in the portal, and how it can help you in your security operations.
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzwz?]
+
+Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft Threat Protection portal. 
 
 1.	Open the [Microsoft Threat Protection portal](https://security.microsoft.com/incidents) incident queue from any device.
 
 2.	Navigate to Incidents from the menu. 
 
-![Screenshot of incidents as shown on the Microsoft 365 Security Center’s left-hand side menu](../../media/mtp-pilot/fig1.png)
+![Screenshot of incidents as shown on the Microsoft 365 Security Center’s left-hand side menu](../../media/mtp/fig1.png)
 
 3.	The new incident for the simulated attack will appear in the incident queue.
  
-![Screenshot of the incident queue](../../media/mtp-pilot/fig2.png)
+![Screenshot of the incident queue](../../media/mtp/fig2.png)
 
 
 ### Investigate the attack as a single incident
@@ -123,13 +124,13 @@ The alerts generated during this simulation are associated with the same threat,
 
 To view the incident:
 
-1.	Navigate to the Incidents queue.
+1.	Navigate to the **Incidents** queue.
  
-![Screenshot of incidents from the navigation menu](../../media/mtp-pilot/fig1.png)
+![Screenshot of incidents from the navigation menu](../../media/mtp/fig1.png)
 
 2.	Select the newest item by clicking on the circle located left of the incident name. A side panel displays additional information about the incident, including all the related alerts. Each incident has a unique name that describes it based on the attributes of the alerts it includes.
 
-![Screenshot of the incidents page where generated alerts are aggregated during the simulation](../../media/mtp-pilot/fig4.png)
+![Screenshot of the incidents page where generated alerts are aggregated during the simulation](../../media/mtp/fig4.png)
 
 The alerts that shows in the dashboard can be filtered based on service resources: Azure ATP, Microsoft Cloud App Security, Microsoft Defender ATP, Microsoft Threat Protection, and Office ATP.  
 
@@ -139,9 +140,9 @@ The alerts that shows in the dashboard can be filtered based on service resource
 
 <br>You can also click **Manage incident** from the right-hand menu, to tag the incident, assign it to yourself, and add comments.
 <br>  
-![Screenshot of where to click Manage incident](../../media/mtp-pilot/fig5a.png)
+![Screenshot of where to click Manage incident](../../media/mtp/fig5a.png)
 <br>
-![Screenshot of the fields on the manage incident panel where you can tag the incident, assign it to yourself, and add comments ](../../media/mtp-pilot/fig5a.png)
+![Screenshot of the fields on the manage incident panel where you can tag the incident, assign it to yourself, and add comments ](../../media/mtp/fig5a.png)
 
 
 ### Review generated alerts 
@@ -149,7 +150,7 @@ The alerts that shows in the dashboard can be filtered based on service resource
 Let’s look at some of the alerts generated during the simulated attack.
 NOTE: We’ll walk through only a few of the alerts generated during the simulated attack. Depending on the version of Windows and the Microsoft Threat Protection products running on your test device, you might see more alerts that appear in a slightly different order.
 
-![Screenshot of generated alerts](../../media/mtp-pilot/fig6.png) 
+![Screenshot of generated alerts](../../media/mtp/fig6.png) 
 
 
 **Alert: Suspicious process injection observed (Source: Microsoft Defender ATP EDR)**
@@ -157,7 +158,7 @@ Advanced attackers use sophisticated and stealthy methods to persist in memory a
 
 To allow the SOC analysts to catch these advanced attacks, deep memory sensors in Microsoft Defender ATP provide our cloud service with unprecedented visibility into a variety of cross-process code injection techniques. The following figure shows how Microsoft Defender ATP detected and alerted on the attempt to inject code to <i>notepad.exe</i>.
 
-![Screenshot of the alert for injection of potentially malicious code](../../media/mtp-pilot/fig7.png) 
+![Screenshot of the alert for injection of potentially malicious code](../../media/mtp/fig7.png) 
 
 
 **Alert: Unexpected behavior observed by a process run with no command line arguments (Source: Microsoft Defender ATP EDR)**
@@ -174,17 +175,17 @@ Notice that the alert details include the external IP address—an indicator tha
 
 Click the IP address in the alert process tree to view the IP address details page.
 
-![Screenshot of the alert for unexpected behavior by a process run with no command line arguments](../../media/mtp-pilot/fig8.png) 
+![Screenshot of the alert for unexpected behavior by a process run with no command line arguments](../../media/mtp/fig8.png) 
 
 The following figure displays the selected IP Address details page (clicking on IP address in the Alert process tree).
-![Screenshot of the IP address details page](../../media/mtp-pilot/fig9.png)
+![Screenshot of the IP address details page](../../media/mtp/fig9.png)
 
 
 **Alert: User and IP address reconnaissance (SMB) (Source: Azure ATP)**
 Enumeration using Server Message Block (SMB) protocol enables attackers to get recent user logon information that helps them move laterally through the network to access a specific sensitive account.
 In this detection, an alert is triggered when the SMB session enumeration runs against a domain controller.
 
-![Screenshot of the Azure ATP alert for User and IP address reconnaissance](../../media/mtp-pilot/fig10.png) 
+![Screenshot of the Azure ATP alert for User and IP address reconnaissance](../../media/mtp/fig10.png) 
 
 
 **Review the device timeline [Microsoft Defender ATP]**
@@ -194,13 +195,13 @@ Click the name of the device where the attack was conducted, to open the entity 
 
 Click the **Timeline** tab to open the device timeline and view all events and behaviors observed on the device in chronological order, interspersed with the alerts raised.
 
-![Screenshot of the device timeline with behaviors](../../media/mtp-pilot/fig11.png) 
+![Screenshot of the device timeline with behaviors](../../media/mtp/fig11.png) 
 
 Expanding some of the more interesting behaviors provides useful details, such as process trees.
 
 For example, scroll down until you find the alert event **Suspicious process injection observed**. Click the **powershell.exe injected to notepad.exe process** event below it, to display the full process tree for this behavior under the **Event entities** graph on the side pane. Use the search bar for filtering if necessary.
 
-![Screenshot of the process tree for selected PowerShell file creation behavior](../../media/mtp-pilot/fig12.png)
+![Screenshot of the process tree for selected PowerShell file creation behavior](../../media/mtp/fig12.png)
 
 ## Resolve the incident
 
@@ -210,7 +211,7 @@ Click **Manage incident**. Set the status to **Resolve incident** and select the
 
 Once the incident is resolved, it will close all of the associated alerts in Microsoft Threat Protection and in the related portals.
 
-![Screenshot of the incidents page with the open Manage incident panel where you can click the switch to resolve incident](../../media/mtp-pilot/fig17.png) 
+![Screenshot of the incidents page with the open Manage incident panel where you can click the switch to resolve incident](../../media/mtp/fig17.png) 
 
 
 ## Advanced hunting scenario
@@ -240,7 +241,7 @@ d.	[Onboard to Microsoft Defender Advanced Threat Protection (MDATP)](https://do
 1.	Open the security.microsoft.com portal.
 2.	Navigate to Hunting > Advanced hunting.
 
-![Screenshot of advanced hunting in the M365 Security portal navigation bar](../../media/mtp-pilot/fig18.png) 
+![Screenshot of advanced hunting in the M365 Security portal navigation bar](../../media/mtp/fig18.png) 
 
 3.	Build a query that starts by gathering email events.
 a.	From the query pane, select New.
@@ -252,7 +253,7 @@ EmailEvents
 
 c.	Change the time frame to the last 24 hours. Assuming the email you sent when you ran the simulation above was in the past 24 hours, otherwise change the time frame.
 ![Screenshot of where you can change the time frame. Open the drop-down menu to choose from range of time frame options
-](../../media/mtp-pilot/fig19.png) 
+](../../media/mtp/fig19.png) 
 
 
 d.	Run the query.  You may have many results depending on the environment for the pilot.  
@@ -260,7 +261,7 @@ d.	Run the query.  You may have many results depending on the environment for th
 >[!NOTE]
 >See the next step for filtering options to limit data return.
 
-![Screenshot of the advanced hunting query results](../../media/mtp-pilot/fig20.png) 
+![Screenshot of the advanced hunting query results](../../media/mtp/fig20.png) 
 
 >[!NOTE]
 >Advanced hunting displays query results as tabular data. You can also opt to view the data in other format types such as charts.    
@@ -268,7 +269,7 @@ d.	Run the query.  You may have many results depending on the environment for th
 e.	Look at the results and see if you can identify the email you opened.  It may take up to 2 hours for the message to show up in advanced hunting. If the email environment is large and there are many results, you might want to use the Show Filters option to find the message. 
 
 In the sample, the email was sent from a Yahoo account. Click the + icon beside yahoo.com under the SenderFromDomain section and then click Apply to add the selected domain to the query.  You should use the domain or email account that was used to send the test message in step 1 of Run the Simulation to filter your results.  Run the query again to get a smaller result set to verify that you see the message from the simulation.
-![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp-pilot/fig21.png) 
+![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig21.png) 
 
 
 ```
@@ -277,7 +278,7 @@ EmailEvents
 ```
 
 f.	Click the resulting rows from the query so you can inspect the record.
-![Screenshot of the inspect record panel which opens up when an advanced hunting result is selected](../../media/mtp-pilot/fig22.png) 
+![Screenshot of the inspect record panel which opens up when an advanced hunting result is selected](../../media/mtp/fig22.png) 
 
 
 4.	Now that you have verified that you can see the email, add a filter for the attachments. Focus on all emails with attachments in the environment. For this scenario, focus on inbound emails, not those that are being sent out from your environment. Remove any filters you have added to locate your message and add “| where AttachmentCount > 0 and EmailDirection == “Inbound””
@@ -338,7 +339,7 @@ Custom detections will run the query according to the frequency you set, and the
 
 1.	On the query page, remove lines 7 and 8 that were added in step 7 of the Go hunting instructions and click **Create detection rule**. 
 
-![Screenshot of where yoy can click create detection rule in the the advanced hunting page ](../../media/mtp-pilot/fig23.png) 
+![Screenshot of where yoy can click create detection rule in the the advanced hunting page ](../../media/mtp/fig23.png) 
 
 >[!NOTE]
 >If you click **Create detection rule** and you have syntax errors in your query, your detection rule won’t be saved. Double-check your query to ensure there’s no errors. 
@@ -346,35 +347,35 @@ Custom detections will run the query according to the frequency you set, and the
 
 2.	Fill in the required fields with the  information that will allow the security team to understand the alert, why it was generated, and what actions you expect them to take. 
 
-![Screenshot of the create detection rule page where you can define the alert details (../../media/mtp-pilot/fig24.png)
+![Screenshot of the create detection rule page where you can define the alert details (../../media/mtp/fig24.png)
 
 Ensure that you fill out the fields with clarity to help give the next user an informed decision about this detection rule alert 
 
 3.	Select what entities are impacted in this alert. In this case, select the Device and the Mailbox.
 
-![Screenshot of the create detection rule page where you can choose the parameters of the impacted entities](../../media/mtp-pilot/fig25.png)
+![Screenshot of the create detection rule page where you can choose the parameters of the impacted entities](../../media/mtp/fig25.png)
  
 
 4.	Determine what actions should take place if the alert is triggered. In this case, run an antivirus scan, though other actions could be taken. 
 
-![Screenshot of the create detection rule page where you can run an antivirus scan when an alert is triggered to help address threats](../../media/mtp-pilot/fig26.png) 
+![Screenshot of the create detection rule page where you can run an antivirus scan when an alert is triggered to help address threats](../../media/mtp/fig26.png) 
 
 5.	Select the scope for the alert rule. Since this query involve devices, the device groups are relevant in this custom detection according to Microsoft Defender ATP context.  When creating a custom detection that does not include devices as impacted entities, scope does not apply.  
 
-![Screenshot of the create detection rule page where you can set the scope for the alert rule manages your expectations for the results that you’ll see](../../media/mtp-pilot/fig27.png) 
+![Screenshot of the create detection rule page where you can set the scope for the alert rule manages your expectations for the results that you’ll see](../../media/mtp/fig27.png) 
 
 For this pilot, you might want to limit this rule to a subset of testing devices in your production environment.
 
 6.	Select **Create**. Then, select **Custom detection rules** from the navigation panel.
  
-![Screenshot of Custom detection rules option in the menu](../../media/mtp-pilot/fig28a.png) 
+![Screenshot of Custom detection rules option in the menu](../../media/mtp/fig28a.png) 
 
 ![Screenshot of the detection rules page which displays the rule and execution details
-](../../media/mtp-pilot/fig28b.png) 
+](../../media/mtp/fig28b.png) 
 
 From this page, you can select the detection rule which will open a details page. 
 
-![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp-pilot/fig29.png) 
+![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig29.png) 
 
 ## Next step
 |||
