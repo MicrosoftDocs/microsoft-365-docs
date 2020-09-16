@@ -240,7 +240,7 @@ Click the alert that triggered an investigation to open the **Investigation deta
 During the automated investigation, Microsoft Defender ATP identified the notepad.exe process, which was injected as one of the artifacts requiring remediation. Microsoft Defender ATP automatically stops the suspicious process injection as part of the automated remediation. 
 
 <br>
-You can see <i>notepad.exe</1> disappear from the list of running processes on the test device.
+You can see <i>notepad.exe</i> disappear from the list of running processes on the test device.
 
 ## Resolve the incident
 
