@@ -186,6 +186,7 @@ The following figure displays the selected IP Address details page (clicking on 
 
 **Alert: User and IP address reconnaissance (SMB) (Source: Azure ATP)**
 Enumeration using Server Message Block (SMB) protocol enables attackers to get recent user logon information that helps them move laterally through the network to access a specific sensitive account.
+<p></p>
 In this detection, an alert is triggered when the SMB session enumeration runs against a domain controller.
 
 ![Screenshot of the Azure ATP alert for User and IP address reconnaissance](../../media/mtp/fig10.png) 
@@ -193,15 +194,15 @@ In this detection, an alert is triggered when the SMB session enumeration runs a
 
 ### Review the device timeline [Microsoft Defender ATP]
 After exploring the various alerts in this incident, navigate back to the incident page you investigated earlier. Click the **Devices** tab in the incident page to review the devices involved in this incident as reported by Microsoft Defender ATP and Azure ATP.
-
+<p></p>
 Click the name of the device where the attack was conducted, to open the entity page for that specific device. In that page, you can see alerts that were triggered and related events.
-
+<p></p>
 Click the **Timeline** tab to open the device timeline and view all events and behaviors observed on the device in chronological order, interspersed with the alerts raised.
 
 ![Screenshot of the device timeline with behaviors](../../media/mtp/fig11.png) 
 
 Expanding some of the more interesting behaviors provides useful details, such as process trees.
-
+<p></p>
 For example, scroll down until you find the alert event **Suspicious process injection observed**. Click the **powershell.exe injected to notepad.exe process** event below it, to display the full process tree for this behavior under the **Event entities** graph on the side pane. Use the search bar for filtering if necessary.
 
 ![Screenshot of the process tree for selected PowerShell file creation behavior](../../media/mtp/fig12.png)
@@ -209,8 +210,7 @@ For example, scroll down until you find the alert event **Suspicious process inj
 ### Review the user information [Microsoft Cloud App Security]
 
 On the incident page, click the **Users** tab to display the list of users involved in the attack. The table contains additional information about each user, including each user’s **Investigation Priority** score.
-
-<br>
+<p></p>
 Click the username to open the user’s profile page where further investigation can be conducted. [Read more about investigating risky users](https://docs.microsoft.com/en-us/cloud-app-security/tutorial-ueba#identify).
 
 ![Screenshot of Cloud App Security user page](../../media/mtp/fig13.png)
@@ -238,16 +238,15 @@ Click the alert that triggered an investigation to open the **Investigation deta
 ![Screenshot of Investigation details page](../../media/mtp/fig15.png)
 
 During the automated investigation, Microsoft Defender ATP identified the notepad.exe process, which was injected as one of the artifacts requiring remediation. Microsoft Defender ATP automatically stops the suspicious process injection as part of the automated remediation. 
-
-<br>
+<p></p>
 You can see <i>notepad.exe</i> disappear from the list of running processes on the test device.
 
 ## Resolve the incident
 
 After the investigation is complete and confirmed to be remediated, close the incident.
-
+<p></p>
 Click **Manage incident**. Set the status to **Resolve incident** and select the relevant classification.
-
+<p></p>
 Once the incident is resolved, it will close all of the associated alerts in Microsoft Threat Protection and in the related portals.
 
 ![Screenshot of the incidents page with the open Manage incident panel where you can click the switch to resolve incident](../../media/mtp/fig17.png) 
@@ -273,7 +272,7 @@ There is a single internal mailbox and device required for this scenario. You wi
     a.	Make sure you are using Windows 10 version 1903 or later version.
     b.	Join the test device to the test domain.
     c.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see [this troubleshooting topic](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
-        d.	[Onboard to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+    d.	[Onboard to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 ### Run the simulation
 1.	From an external email account, send an email to the mailbox identified in step 2 of the test environment requirements section. Include an attachment that will be allowed through any existing email filter policies.  This file does not need to be malicious or an executable. Suggested file types are <i>.pdf</i>, <i>.exe</i> (if allowed), or Office document such as a Word file.
@@ -287,8 +286,8 @@ There is a single internal mailbox and device required for this scenario. You wi
 ![Screenshot of advanced hunting in the M365 Security portal navigation bar](../../media/mtp/fig18.png) 
 
 3.	Build a query that starts by gathering email events.
-a.	From the query pane, select New.
-b.	Double-click on the EmailEvents table from the schema.
+    a.	From the query pane, select New.
+    b.	Double-click on the EmailEvents table from the schema.
 
 ```
 EmailEvents 
