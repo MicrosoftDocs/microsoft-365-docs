@@ -82,9 +82,9 @@ A [retention policy](retention.md) lets you proactively decide whether to retain
 
 When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect.
 
-You can quickly put a retention policy in place for multiple locations in your Microsoft 365 environment: Exchange mail and public folders, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. Known as an 'org-wide retention policy', there are no limits to the number of mailboxes or sites the policy can include. But if you need to get more specific, you can do so by configuring a retention policy for specific locations and then include or exclude sites or users.
+You can quickly put a retention policy in place for multiple locations in your Microsoft 365 environment such as Exchange mail, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. There are no limits to the number of mailboxes or sites this policy can automatically include. But if you need to get more selective, you can do so by configuring a retention policy for specific locations and include or exclude sites or users.
 
-For step-by-step guidance to configure a retention policy, see [Create and configure retention policies](create-retention-policies.md). For records management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
+For step-by-step guidance to configure a retention policy, see [Create and configure retention policies](create-retention-policies.md). If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
 
 ## Task 8: Configure sensitive information and offensive language policies
 
@@ -132,13 +132,13 @@ Now that you’ve configured the basics for compliance management for your organ
 
 While retention policies apply at the container level to locations such as SharePoint sites and Exchange mailboxes, [retention labels](retention.md#retention-labels) allow for more specific targeting for your retention and deletion policies. For example, at the document or email message level that end users can apply manually in addition to automatic application by administrators. You can also apply a retention label to a document library, folder, or document set in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
-Additionally, retention labels support [records management](records-management.md) to mark content as a record. When this happens, the label can't be changed or removed, and the content can't be edited or deleted. These restrictions might be needed to help your organization comply with regulatory requirements.
+Additionally, retention labels support [records management](records-management.md) to mark content as a record. When this happens, the label places additional restrictions on the content that might be needed to help your organization comply with regulatory requirements.
 
 For step-by-step guidance to create and publish retention labels, see the following guidance:
 - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
-For records management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
+To get started with records management, see [Get started with records management](get-started-with-records-management.md).
 
 ### Identify and define sensitive information types
 

@@ -1,5 +1,5 @@
 
-|**Geo location**             |**Code**|**eDiscovery data location**      |
+|  Geo location               |  Code  |  eDiscovery data location        |
 |:----------------------------|:-------|:---------------------------------|
 |Asia-Pacific                 |APC     |Southeast or East Asia datacenters|
 |Australia                    |AUS     |Southeast or East Asia datacenters|
