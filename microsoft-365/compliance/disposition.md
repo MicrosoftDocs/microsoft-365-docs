@@ -117,7 +117,7 @@ Content awaiting a disposition review is deleted only after a reviewer chooses t
 > [!NOTE]
 > The rollout for proof of disposal for records in SharePoint and OneDrive is complete.
 >
-> Proof of disposal for records in Exchange has just started to roll out. When this rollout is complete, we will update this note.
+> Rollout for proof of disposal for records in Exchange is almost complete when we will remote this note.
 
 Use the **Disposition** tab from the **Records Management** page to identify records that are now deleted, either automatically or after a disposition review. These items display **Records Disposed** in the **Type** column. For example:
 
