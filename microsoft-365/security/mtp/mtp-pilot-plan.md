@@ -24,9 +24,9 @@ ms.topic: conceptual
 **Applies to:**
 - Microsoft Threat Protection
 
-To effectively determine the benefit and adoption of Microsoft Threat Protection (MTP), you can run a pilot project. Before enabling Microsoft Threat Protection in your environment and starting with defined use cases, it is best to go through a planning process to determine the tasks that must be accomplished in this pilot project, and the success criteria. 
+To ensure that your pilot project is a success, it is essential to plan thoroughly with and get approvals from your stakeholders in the beginning. Elements of planning include identifying scope, use cases, requirements, and success criteria.. 
 
-This guide provides step-by-step guidance on how to set up your pilot project. 
+This guide walks you through how to plan your pilot project. 
 
 >[!IMPORTANT]
 >For optimum results, follow the pilot instructions as closely as possible.
