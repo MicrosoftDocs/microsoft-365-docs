@@ -106,7 +106,7 @@ You can also start from your assessment templates page by finding the template y
 
 ### To create an assessment
 
-1. Know which group you’ll assign your assessment to, or be prepared to create a new one for this assessment. Learn more about [groups](#understand-groups-before-creating-assessments).  
+1. Know which group you’ll assign your assessment to, or be prepared to create a new one for this assessment. [Learn more about groups](#understand-groups-before-creating-assessments).  
 
 2. Go to your **assessments** page in Compliance Manager and select **Add assessment**. An assessment wizard will appear in a large flyout pane.
 
@@ -114,7 +114,7 @@ You can also start from your assessment templates page by finding the template y
 
 4. **Name and group:** Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
 
-5. Assign your assessment to a [group](#understand-groups-before-creating-assessments). You can either:
+5. Assign your assessment to a group. You can either:
     - Select **Use existing group** to assign it to a group you’ve already created; or
     - Select **Create new group** to create a new group and assign this assessment to it:
         - Determine a name for your group and enter it in the field beneath the radio button.
@@ -269,7 +269,7 @@ The assessment details page also shows a **Pending update** label next to the as
 
 A message near the top of the assessment details page shows that an update is available for that assessment. Select the **Review update** button in the banner to review the specific changes and accept or defer the update.
 
-The assessment details page may also list improvement actions that have a **Pending update* label next to them. Those updates are for specific changes to the improvement actions themselves and need to be accepted separately. Visit [Accepting updates to improvement actions](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions) to learn more.
+The assessment details page may also list improvement actions that have a **Pending update** label next to them. Those updates are for specific changes to the improvement actions themselves and need to be accepted separately. Visit [Accepting updates to improvement actions](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions) to learn more.
 
 #### Review update to accept or defer
 
