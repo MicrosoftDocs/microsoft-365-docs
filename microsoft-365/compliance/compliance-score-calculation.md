@@ -20,60 +20,66 @@ ms.custom: seo-marvel-apr2020
 # Compliance score calculation
 
 > [!IMPORTANT]
-> Recommendations from Compliance Score and Compliance Manager should not be interpreted as a guarantee of compliance. It is up to you to evaluate and validate the effectiveness of customer controls per your regulatory environment. These services are currently in preview and subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910). See also [Microsoft 365 licensing guidance for security and compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Recommendations from Compliance Manager should not be interpreted as a guarantee of compliance. It is up to you to evaluate and validate the effectiveness of customer controls per your regulatory environment. These services are subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910). See also [Microsoft 365 licensing guidance for security and compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-## How Compliance Score works
+## How to read your compliance score
 
-The Compliance Score dashboard displays a score that measures your progress in completing improvement actions within controls. Each action has a different impact on your score, depending on the potential risks involved. Your score can help prioritize which action to focus on to improve your overall compliance posture.
+The Compliance Manager dashboard displays your overall compliance score. This score measures your progress in completing recommended improvement actions within controls. Your score can help you understand your current compliance posture. It can also help you prioritize actions based on their potential to reduce risk.
 
-The displayed Compliance Score values for the control are applied *in their entirety* to your total score on a pass/fail basis. Either the control is implemented and passes the subsequent assessment test, or it doesn't. 
+A score value is assigned at three levels:
 
-Points are added to your compliance score when the control has:
+1. **Improvement action score**: each action has a different impact on your score depending on the potential risk involved
 
-- **Implementation Status** equals **Implemented** or **Alternative Implementation**, and
-- **Test Result** equals **Passed**.
+2. **Control score**: this score is the sum of points earned by completing improvement actions within the control. This sum is applied in its entirety to your overall compliance score when the control meets both of the following conditions:
+    - **Implementation Status** equals **Implemented** or **Alternative Implementation**, and
+    - **Test Result** equals **Passed**.
 
-A control score is the sum of points earned by taking improvement actions. The sum of your control scores is the assessment score. **The sum of your assessment scores is your overall compliance score.**
+3. **Assessment score**: this score is the sum of your control scores. It is calculated using action scores. Each Microsoft action and each improvement action managed by your organization is counted once, regardless of how often it is referenced in a control.
+
+The overall compliance score is calculated using action scores, where each Microsoft action is counted once, each technical action you manage is counted once, and each non-technical action you manage is counted once per group. This logic is designed to provide the most accurate accounting of how actions are implemented and tested in your organization. You may notice that this can cause your overall compliance score to differ from the average of your assessment scores.
 
 ## Initial score based on Microsoft 365 data protection baseline
   
-Compliance Score gives you an initial score based on the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
+Compliance Manager gives you an initial score based on the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
-The data protection baseline assessment (provided by default to all organizations) is used to calculate your initial score before you configure any other assessments. Upon your first visit, Compliance Score is already collecting signals from your Microsoft 365 solutions. You’ll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
+Your initial score is calculated according to the default Data Protection Baseline assessment provided to all organizations. Upon your first visit, Compliance Manager is already collecting signals from your Microsoft 365 solutions. You’ll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
 
-Because every organization has specific needs, Compliance Score relies on you to set up and manage your own assessments to help minimize and mitigate risk as comprehensively as possible.
+Because every organization has specific needs, Compliance Manager relies on you to set up and manage assessments to help minimize and mitigate risk as comprehensively as possible.
 
-## How Compliance Score continuously assesses controls
+## How Compliance Manager continuously assesses controls
 
-Compliance Score automatically scans through your Microsoft 365 environment and detects your system settings, continuously and automatically updating your technical control status. Secure Score is the underlying engine that performs the monitoring.
+Compliance Manager automatically scans through your Microsoft 365 environment and detects your system settings, continuously and automatically updating your technical action status. Microsoft Secure Score is the underlying engine that performs the monitoring.
 
-Your control status is updated on your Compliance Score dashboard every 24 hours. Once you follow a recommendation to implement a control, you'll see the control status updated the next day.
+Your action status is updated on your dashboard every 24 hours. Once you follow a recommendation to implement a control, you’ll typically see the control status updated the next day.
 
-For example, if you turn on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflects that in the control access solution details. Conversely, if you didn't turn on MFA, Compliance Score flags that as a recommended action for you to take.
+For example, if you turn on multi-factor authentication (MFA) in the Azure AD portal, Compliance Manager detects the setting and reflects it in the control access solution details. Conversely, if you didn’t turn on MFA, Compliance Manager flags that as a recommended action for you to take.
 
-During public preview, continuous assessment is available to a portion of controls, but not all.
-
-#### Learn more
-[Read about Secure Score and how it works](../security/mtp/microsoft-secure-score-new.md).
+Learn more about [Secure Score and how it works](../security/mtp/microsoft-secure-score-new.md).
   
 ## Action types and points
 
-Compliance Score tracks two types of actions: actions you manage, and actions Microsoft manages. Both types of actions have points that count toward your overall score when completed:
+Compliance Manager tracks two types of actions:
 
-1. **Your points** contribute to your compliance score based on controls managed by your organization.
-2. **Microsoft managed points** contribute to your compliance score based on actions managed by Microsoft as a cloud service provider.
+1. **Your improvement actions**: actions that your organization manages.
+2. **Microsoft actions**: actions that Microsoft manages.
 
-Actions are assigned a score value based on whether they're mandatory or discretionary, and whether they're preventative, detective, or corrective.
+Both types of actions have points that count toward your overall score when completed.
 
 ### Technical and non-technical actions
 
-text...
+Actions are grouped by whether they are technical or non-technical in nature. The scoring impact of action type differs.
+
+**Technical actions** are implemented by interacting with the technology of a solution (for example, changing a configuration). The points for technical actions are granted in each instance of the action across your tenant.
+
+**Non-technical actions** apply to actions managed by your organization, adn are implemented in ways other than working with the technology of a solution. There are two types of non-technical actions: **documentation** and **operational**. The points for these actions are applied to your compliance score at a group level. This means that if a group contains more than one instance of the action, you are only granted the points for one instance of that action.
+
+Actions are assigned a score value based on whether they’re mandatory or discretionary, and whether they’re preventative, detective, or corrective.
 
 ### Mandatory and discretionary actions
 
- - **Mandatory actions** can't be bypassed, either intentionally or accidentally. An example is a centrally managed password policy that sets requirements for password length, complexity, and expiration. Users must follow these requirements to access the system.
+ - **Mandatory actions** can't be bypassed, either intentionally or accidentally. An example of a mandatory action is a centrally managed password policy that sets requirements for password length, complexity, and expiration. Users must follow these requirements to access the system.
   
- - **Discretionary actions** rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary action because it relies on the user.
+ - **Discretionary actions** rely upon users to understand and adhere to a policy. For example, a policy requiring users to lock their computer when they leave it is a discretionary action because completion relies on the user.
   
 ### Preventative, detective, and corrective actions
   
@@ -83,7 +89,7 @@ text...
   
 - **Corrective actions** try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage if possible. Privacy incident response is a corrective action to limit damage and restore systems to an operational state after a breach.
   
-Each improvement action has an assigned value in Compliance Manager based on the risk it represents:
+Each action has an assigned value in Compliance Manager based on the risk it represents:
 
 |**Type**|**Assigned score**|
 |:-----|:-----|
