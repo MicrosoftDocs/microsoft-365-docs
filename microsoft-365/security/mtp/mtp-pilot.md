@@ -52,24 +52,6 @@ There are four phases in running a Microsoft Threat Protection pilot:
 | ![Phase 3: Run attack simulation](../../media/config-onboard.png) <br>[Phase 3: Run attack simulation](mtp-pilot-simulate.md) | To simulate an attack, you will be guided to:<br><br>- Prepare the test environment requirements <br>-  Run the simulation <br>- Investigate an incident <br>- resolve the incident 
 | ![Phase 4: Close and summarize](../../media/config-onboard.png) <br>[Phase 3: Close and summarize](mtp-pilot-close.md) | When you've reached the end of the process, you will be guided to:<br><br>- Go through your final output<br>- Present your output to your stakeholders <br>- Provide feedback <br>- Take next steps 
 
-
-## In scope
-
-The following is in scope for this pilot guide:
--   One
--   Two
-    -   Sub-two
--   Three
-    -   Sub-three
-    
-## Out of scope
-
-The following are out of scope of this deployment guide:
-
--   Configuration of third-party solutions that might integrate with Microsoft
-    Threat Protection
--   Penetration testing in production environment
-
 ## Next step
 |||
 |:-------|:-----|
