@@ -14,7 +14,7 @@ ms.topic: article
 # What is Microsoft Managed Desktop?
 
 
-Microsoft Managed Desktop is a cloud-based service that brings together [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (including [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise and [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) and adding these features:
+Microsoft Managed Desktop is a cloud-based service that brings together [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (including [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise and [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) and adds these features:
 
 - User device deployment
 - IT service management and operations
