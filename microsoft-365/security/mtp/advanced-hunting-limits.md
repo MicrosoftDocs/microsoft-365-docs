@@ -41,5 +41,6 @@ Customers who run multiple queries regularly should track consumption and [apply
 ## Related topics
 
 - [Advanced hunting best practices](advanced-hunting-best-practices.md)
+- [Handle advanced hunting errors](advanced-hunting-errors.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Custom detections overview](custom-detections-overview.md)

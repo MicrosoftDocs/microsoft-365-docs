@@ -255,9 +255,7 @@ To learn about all supported parsing functions, [read about Kusto string functio
 
 ## Related topics
 - [Kusto query language documentation](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
+- [Service limits](advanced-hunting-limits.md)
+- [Handle advanced hunting errors](advanced-hunting-errors.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
-- [Work with query results](advanced-hunting-query-results.md)
-- [Use shared queries](advanced-hunting-shared-queries.md)
-- [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
-- [Understand the schema](advanced-hunting-schema-tables.md)
