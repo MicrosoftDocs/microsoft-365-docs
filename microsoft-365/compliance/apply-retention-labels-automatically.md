@@ -168,7 +168,9 @@ Examples queries:
 
 To identify Microsoft Teams meeting recordings that are stored in users' OneDrive accounts or in SharePoint, specify the following for the **Keyword query editor**:
 
-	ProgID:Media AND ProgID:Meeting
+```	
+ProgID:Media AND ProgID:Meeting
+```
 
 For this retention label, you must also publish it to the relevant users' OneDrive accounts or SharePoint sites by creating a label policy. Most of the time, the meeting recordings are saved to OneDrive, but for channel meetings, they are saved in SharePoint.
 
