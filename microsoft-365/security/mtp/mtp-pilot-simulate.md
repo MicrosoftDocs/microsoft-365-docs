@@ -30,7 +30,7 @@ In this simulation, our sample scenario starts with a PowerShell script. A user 
 
 During the simulation, the attack injects shellcode into a seemingly innocent process. In this scenario, we’ll use notepad.exe. We chose this process for the simulation, but attackers will more likely target a long-running system process, such as svchost.exe. The shellcode then goes on to contact the attacker’s command-and-control (C2) server to receive instructions on how to proceed. In addition, the script attempts executing reconnaissance queries against the domain controller (DC). This allows an attacker to get information about recent user login information. Once attackers have this information, they can move laterally in the network to get to a specific sensitive account
 
-[Fileless PowerShell attack with process injection and SMB reconnaisance attack diagram](../../media/mtp-pilot/mtpdiydiagram.png)
+[Fileless PowerShell attack with process injection and SMB reconnaisance attack diagram](../../media/mtp/mtpdiydiagram.png)
 
 >[!IMPORTANT]
 >For optimum results, follow the attack simulation instructions as closely as possible.
