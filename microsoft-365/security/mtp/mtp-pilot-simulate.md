@@ -1,7 +1,7 @@
 ---
 title: Run your Microsoft Threat Protection attack simulations 
-description: Run your pilot Microsoft Threat Protection project to effectively determine the benefit and adoption of Microsoft Threat Protection (MTP)
-keywords: Microsoft Threat Protection pilot, run pilot Microsoft Threat Protection project, evaluate Microsoft Threat Protection in production, Microsoft Threat Protection pilot project, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+description: Run attack simulations for your Microsoft Threat Protection pilot project to see how it unfolds and quickly addressed.
+keywords: Microsoft Threat Protection pilot attack simulation, run Microsoft Threat Protection pilot attack simulation, simulate attack in Microsoft Threat Protection, Microsoft Threat Protection pilot project, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -24,12 +24,13 @@ ms.topic: conceptual
 **Applies to:**
 - Microsoft Threat Protection
 
-To test the Microsoft Threat Protection capabilities for your pilot project, we will simulate a sophisticated attack that leverages advanced techniques to hide from detection. The attack enumerates opened Server Message Block (SMB) sessions on domain controllers and retrieves recent IP addresses of users’ devices. This category of attacks usually doesn’t include files dropped on the victim’s device—they occur solely in memory. They “live off the land” by using existing system and administrative tools and inject their code into system processes to hide their execution, allowing them to evade detection and persist on the device.
+After preparing your pilot environment, it’s time to test the Microsoft Threat Protection incident management and automated investigation and remediation capabilities. We will help you to simulate a sophisticated attack that leverages advanced techniques to hide from detection. The attack enumerates opened Server Message Block (SMB) sessions on domain controllers and retrieves recent IP addresses of users’ devices. This category of attacks usually doesn’t include files dropped on the victim’s device—they occur solely in memory. They “live off the land” by using existing system and administrative tools and inject their code into system processes to hide their execution, allowing them to evade detection and persist on the device.
 
 In this simulation, our sample scenario starts with a PowerShell script. A user might be tricked into running a script. Or the script might run from a remote connection to another computer from a previously infected device—the attacker attempting to move laterally in the network. Detection of these scripts can be difficult because administrators also often run scripts remotely to carry out various administrative activities.
 
 During the simulation, the attack injects shellcode into a seemingly innocent process. In this scenario, we’ll use notepad.exe. We chose this process for the simulation, but attackers will more likely target a long-running system process, such as svchost.exe. The shellcode then goes on to contact the attacker’s command-and-control (C2) server to receive instructions on how to proceed. In addition, the script attempts executing reconnaissance queries against the domain controller (DC). This allows an attacker to get information about recent user login information. Once attackers have this information, they can move laterally in the network to get to a specific sensitive account
 
+[Fileless PowerShell attack with process injection and SMB reconnaisance attack diagram](../../media/mtp-pilot/mtpdiydiagram.png)
 
 >[!IMPORTANT]
 >For optimum results, follow the attack simulation instructions as closely as possible.
