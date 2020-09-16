@@ -99,7 +99,8 @@ To see the Automated Incident and Response feature in action, keep the notepad.e
 
 ## Investigate an incident
 
-NOTE: Before we walk you through this simulation, watch the following video to see how incident management helps you piece the related alerts together as part of the investigation process, where you can find it in the portal, and how it can help you in your security operations:
+>[!NOTE]
+>Before we walk you through this simulation, watch the following video to see how incident management helps you piece the related alerts together as part of the investigation process, where you can find it in the portal, and how it can help you in your security operations:
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzwz?]
 
@@ -107,7 +108,7 @@ Switching to the SOC analyst point of view, you can now start to investigate the
 
 1.	Open the [Microsoft Threat Protection portal](https://security.microsoft.com/incidents) incident queue from any device.
 
-2.	Navigate to Incidents from the menu. 
+2.	Navigate to **Incidents** from the menu. 
 
 ![Screenshot of incidents as shown on the Microsoft 365 Security Center’s left-hand side menu](../../media/mtp/fig1.png)
 
@@ -148,7 +149,9 @@ The alerts that shows in the dashboard can be filtered based on service resource
 ### Review generated alerts 
 
 Let’s look at some of the alerts generated during the simulated attack.
-NOTE: We’ll walk through only a few of the alerts generated during the simulated attack. Depending on the version of Windows and the Microsoft Threat Protection products running on your test device, you might see more alerts that appear in a slightly different order.
+
+>[!NOTE]
+>We’ll walk through only a few of the alerts generated during the simulated attack. Depending on the version of Windows and the Microsoft Threat Protection products running on your test device, you might see more alerts that appear in a slightly different order.
 
 ![Screenshot of generated alerts](../../media/mtp/fig6.png) 
 
