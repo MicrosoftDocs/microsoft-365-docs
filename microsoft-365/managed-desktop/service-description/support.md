@@ -22,7 +22,7 @@ Customers can contact Microsoft Managed Desktop operations for:
 Microsoft Managed Desktop support includes:
 
 - A team of engineers dedicated to Microsoft Managed Desktop devices
-- Support options for end users with Microsoft Managed Desktop devices
+- Support options for users with Microsoft Managed Desktop devices
 - Grants limited administrative access to Microsoft Managed Desktop devices for engineers managing Microsoft Managed Desktop devices 
 
 Supported products:
@@ -43,4 +43,4 @@ Support details:
 ## Related topics
 
 - [Learn how IT administrators can get support](../working-with-managed-desktop/admin-support.md)
-- [Learn how end users can get support](../working-with-managed-desktop/end-user-support.md)
+- [Learn how users can get support](../working-with-managed-desktop/end-user-support.md)

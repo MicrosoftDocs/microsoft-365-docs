@@ -28,7 +28,7 @@ Use these resources to deploy modern desktops:
 
 You can also view the [Desktop Deployment series videos from Microsoft Mechanics](https://www.aka.ms/watchhowtoshift).
 
-You can also [find help](https://aka.ms/mddhelp) for your desktop deployment from Microsoft partners and FastTrack services.
+You can also find help for your desktop deployment from Microsoft partners and [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365).
 
 ## Windows and Office Deployment Lab Kit
 

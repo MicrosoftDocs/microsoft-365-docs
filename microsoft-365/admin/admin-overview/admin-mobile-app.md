@@ -84,6 +84,10 @@ The numbers are the total messages from the last week, not unread messages.
 
 If you select a specific service incident or a message, the share option will be in the top right corner. We currently support email sharing.
   
+### Can I use this app with multiple accounts or tenants?
+
+Yes, you can setup multiple accounts or tenants.
+  
 ### My app is acting funny. What can I do to troubleshoot weird app behavior?
 
 You can try some common mobile app troubleshooting steps:

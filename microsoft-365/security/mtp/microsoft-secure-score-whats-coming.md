@@ -21,13 +21,12 @@ search.appverid:
 
 # What's coming to Microsoft Secure Score
 
-To make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score may change.
+We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
 
 ## Proposed changes
 
-These these changes may be coming to your Microsoft Secure Score soon, depending on your license. To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score-whats-new.md)
-
-- Changing the maximum score from 7 to 8 for the Azure Active Directory improvement action called "Enable policy to block legacy authentication"
+### September 2020
+- No changes planned
 
 ## Related resources
 

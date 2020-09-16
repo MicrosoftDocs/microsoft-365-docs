@@ -52,69 +52,57 @@ If you don't have an existing Office 365 Enterprise E5 plan and want to try insi
 >[!Important]
 >By default, Global Administrators do not have access to communication compliance features. The roles assigned in this step are required before any communication compliance features will be accessible.
 
-There are five roles used to configure permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft 365 compliance center and to continue with these configuration steps, you must be assigned the *Communication Compliance Admin* role.
+There are five role groups used to configure permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft 365 compliance center and to continue with these configuration steps, you must be assigned to the *Communication Compliance* or *Communication Compliance Admin* role groups. To access and manage communication compliance features after initial configuration, users must be a member of at least one communication compliance role group.
 
-Depending on how you wish to manage communication policies and alerts, you'll need to create one or more new role groups for administrators, reviewers, and investigators. You have the option to assign users to specific role groups to manage different areas of communication compliance features. Or you may decide to create one role group and assign all the communication compliance roles to the group. Create a single role group or multiple role groups to best fit your compliance management requirements.
+Depending on how you wish to manage communication policies and alerts, you'll need to assign users to specific role groups. You have the option to assign users with different compliance responsibilities to specific role groups to manage different areas of communication compliance features. Or you may decide to assign all user accounts for designated administrators, analysts, investigators, and viewers to the *Communication Compliance* role group. Use a single role group or multiple role groups to best fit your compliance management requirements.
 
-Choose from these role options when configuring your communication compliance role groups:
+Choose from these role group options when configuring communication compliance:
 
 |**Role**|**Role permissions**|
 |:-----|:-----|
-| **Communication Compliance Admin** | Users assigned this role can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned this role cannot view message alerts. |
-| **Communication Compliance Analysis** | Users assigned this role can view policies where they are assigned as Reviewers, view message metadata (not message content), escalate to additional reviewers, or send notifications to users. Analysts cannot resolve pending alerts. |
-| **Communication Compliance Investigation** | Users assigned this role can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
-| **Communication Compliance Viewer** | Users assigned this role can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
-| **Communication Compliance Case Management** | Users assigned this role can manage cases and act on alerts. This role is required for when creating custom role groups for administrators, analysts, and investigators. Custom groups for viewers do not need this role assigned. |
+| **Communication Compliance** | Use this role group to manage communication compliance for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and viewers, you can configure communication compliance permissions in a single group. This role group contains all the communication compliance permission roles. This configuration is the easiest way to quickly get started with communication compliance and is a good fit for organizations that do not need separate permissions defined for separate groups of users. |
+| **Communication Compliance Admin** | Use this role group to initially configure communication compliance and later to segregate communication compliance administrators into a defined group. Users assigned to this role group can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned to this role group cannot view message alerts. |
+| **Communication Compliance Analyst** | Use this group to assign permissions to users that will act as communication compliance analysts. Users assigned to this role group can view policies where they are assigned as Reviewers, view message metadata (not message content), escalate to additional reviewers, or send notifications to users. Analysts cannot resolve pending alerts. |
+| **Communication Compliance Investigator** | Use this group to assign permissions to users that will act as communication compliance investigators. Users assigned to this role group can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
+| **Communication Compliance Viewer** | Use this group to assign permissions to users that will manage communication reports. Users assigned to this role group can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
 
-### Option 1: Create a new role group with all communication compliance roles
-
-1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
-
-2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
-
-3. Select **Create**.
-
-4. In the **Name** field, give the new role group a friendly name. Select **Next**.
-
-5. Select **Choose roles** and then select **Add**. Select the checkboxes for the following roles:
-
-    - Communication Compliance Admin
-    - Communication Compliance Analysis
-    - Communication Compliance Investigation
-    - Communication Compliance Viewer
-    - Communication Compliance Case Management
-
-    ![Communication compliance roles](../media/communication-compliance-case-roles.png)
-
-6. select **Add** and **Done**, then select **Next** to continue.
-
-7. Select **Choose members** and then select **Add**. Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**. Select **Next**.
-
-8. Select **Create role group** to finish.
-
-### Option 2: Create new role groups with different communication compliance roles
-
-Create multiple role groups to segment communication compliance access and responsibilities among different users in your organization. For each new role group, you'll assign different communication compliance roles.
+### Option 1: Assign all compliance users to the Communication Compliance role group
 
 1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
 
-3. Select **Create**.
+3. Select the *Communication Compliance* role group, then select **Edit role group**.
 
-4. In the **Name** field, give the new role group a friendly name. Select **Next**.
+4. Select **Choose members** from the left navigation pane, then select **Edit**.
 
-5. Select **Choose roles** and then select **Add**. Select the checkbox for the communication compliance roles you want to assign to this group. For example, if this role group is for compliance analysts in your organization, you would select the *Communication Compliance Analysis* and *Communication Compliance Case Management* roles. If this role group is for compliance investigators, you would select the *Communication Compliance Investigation* and *Communication Compliance Case Management* roles.
+5. Select **Add** and then select the checkbox for all users you want to add to the *Communication Compliance* role group.
 
-    ![Communication compliance roles](../media/communication-compliance-analysts-role-group.png)
+6. Select **Add**, then select **Done**.
 
-6. Select **Add** and **Done**, then select **Next** to continue.
+7. Select **Save** to add the users to the role group. Select **Close** to complete the steps
 
-7. Select **Choose members** and then select **Add**. Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**. Select **Next**.
+### Option 2: Assign users to specific communication compliance role groups
 
-8. Select **Create role group** to finish.
+Use this option to assign users to specific role groups to segment communication compliance access and responsibilities among different users in your organization.
 
-9. Create additional communication compliance role groups as needed.
+1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
+
+2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
+
+3. Select one of the communication compliance role groups, then select **Edit role group**.
+
+4. Select **Choose members** from the left navigation pane, then select **Edit**.
+
+5. Select **Add** and then select the checkbox for all users you want to add to the role group.
+
+6. Select **Add**, then select **Done**.
+
+7. Select **Save** to add the users to the role group.
+
+8. Select the next communication compliance role group, then repeat steps 4-7 for each required role group.
+
+9. Select **Close** to complete the steps.
 
 For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 

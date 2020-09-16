@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,13 +18,9 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: "Learn how to renew your Microsoft 365 for business subscription using a product key and turn recurring billing off or on. "
+description: "Learn how to renew your Microsoft 365 by turning recurring billing off or on."
 ---
 
 # Renew Microsoft 365 for business
@@ -53,18 +49,15 @@ If you prepaid for your subscription with a product key, your subscription will 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-2. Choose the subscription for which you want to manage recurring billing.
-
-3. Under **Billing**, next to **Renews on** or **Expiring on**, select **edit**.
-
-4. In the **Recurring billing settings** pane, select **Turn OFF** to turn it off. If recurring billing is already turned off, select **Monthly** or **Once** to turn it on.
-
-5. Select **Submit change**.
+2. Select the subscription for which you want to manage recurring billing.
+3. On the subscription details page, under **Subscription and payment settings**, select **Edit recurring billing**.
+4. In the **Edit recurring billing settings** pane, select **On**, **On, but renew once**, or **Turn off**.
+5. Select **Save**.
 
     > [!NOTE]
     > - You can only change the **Recurring billing** setting for active subscriptions. If your subscription has already expired or is disabled, you will need to [reactivate it](reactivate-your-subscription.md) before you can turn **Recurring billing** on or off.
-    > - When **Recurring billing** is turned off, the subscription isn't cancelled right away. It remains active until it expires. You can view the expiration date in the **Billing** section of the subscription details on the **Your products** page.
+    > - When **Recurring billing** is turned off, the subscription isn't cancelled. If you want to keep the subscription active, you must pay the bill manually.
+    > - If you turn off **Recurring billing**, the subscription remains active until it expires. You can view the expiration date on the subscription details page in the **Subscription and payment settings** section.
     > - To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).
 
 ::: moniker-end

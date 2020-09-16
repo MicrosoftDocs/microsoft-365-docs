@@ -3,7 +3,7 @@ title: Russian Personal Data Localization Requirements
 description: Learn how collecting personal data, Russian citizens’ personal data recording, systematization, accumulation, storage, clarification, and extraction are performed in Microsoft services and databases located in Russia.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

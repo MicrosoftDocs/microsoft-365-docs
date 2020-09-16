@@ -44,17 +44,17 @@ To view all history for that specific improvement action, select the history lin
 
 In the **Metrics & trends** tab, there are several graphs and charts to give you more visibility into trends and set goals. You can set the date range for the whole page of visualizations. The visualizations include:
 
-* **Your Secure Score zone** — Customized based on your organization's goals and definitions of good, okay, and bad score ranges.
-* **Regression trend** — A timeline of points that have regressed due to configuration, user, or device changes.  
-* **Comparison trend** — How your organization's Secure Score compares to others' over time. This view can include lines representing the score average of organizations with similar seat count and a custom comparison view that you can set.
-* **Risk acceptance trend** — Timeline of improvement actions marked as "risk accepted."
-* **Score changes** — The number of points achieved, points regressed, along with the subsequent score change, in the specified date range.
+* **Your Secure Score zone** - Customized based on your organization's goals and definitions of good, okay, and bad score ranges.
+* **Regression trend** - A timeline of points that have regressed because of configuration, user, or device changes.  
+* **Comparison trend** - How your organization's Secure Score compares to others' over time. This view can include lines representing the score average of organizations with similar seat count and a custom comparison view that you can set.
+* **Risk acceptance trend** - Timeline of improvement actions marked as "risk accepted."
+* **Score changes** - The number of points achieved, points regressed, along with the subsequent score change, in the specified date range.
 
 ### Compare your score to organizations like yours
 
-There are two place to see how your score compares to organizations that are similar to you.
+There are two places to see how your score compares to organizations that are similar to you.
 
-The first place is in the **Overview** tab, where you will be able to see a comparison bar graph. Hover over the chart to view the score and score opportunity.
+The first place is in the **Overview** tab, where you can see a comparison bar graph. Hover over the chart to view the score and score opportunity.
 
 ![Bar graph of similar organization's scores](../../media/secure-score/secure-score-comparison-bar.png)
 
@@ -62,11 +62,11 @@ The second place is in the **Metrics & trends** tab, where you can view how your
 
 ![Line graph of similar organization's scores over time](../../media/secure-score/secure-score-comparison-trend.png)
 
-In both charts, you can select **Manage comparisons** to view and edit your organization's information. You can also create a custom comparison based on industry, organization size, licenses, and regions. 
+In both charts, you can select **Manage comparisons** to view and edit your organization's information. You can also create a custom comparison based on industry, organization size, licenses, and regions.
 
 ## We want to hear from you
 
-If you have any issues, please let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
+If you have any issues, let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
 
 ## Related resources
 

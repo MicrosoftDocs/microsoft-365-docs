@@ -194,7 +194,7 @@ conceptualContent:
         - url: https://docs.microsoft.com/intune/apps/app-protection-policies-monitor
           itemType: overview
           text: Intune App Protection Policies report
-        - url: https://docs.microsoft.com/office365/enterprise/view-service-health
+        - url: https://docs.microsoft.com/microsoft-365/enterprise/view-service-health
           itemType: how-to-guide
           text: Health monitoring alerts
       # footerLink (optional)

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: 
@@ -33,15 +33,15 @@ You can set up a data connector in the Microsoft 365 compliance center to import
 
 ## Step 1: Create an app in Azure Active Directory
 
-The first step is to create and register a new app in Azure Active Directory (AAD). The app will correspond to the HR connector that you create in Step 3. Creating this app will allow AAD to authenticate the HR connector when it runs and attempts to access your organization. This app will also be used to authenticate the script that you run in Step 4 to upload your HR data to the Microsoft cloud. During the creation of this AAD app, be sure to save the following information. These values will be used in later steps.
+The first step is to create and register a new app in Azure Active Directory (Azure AD). The app will correspond to the HR connector that you create in Step 3. Creating this app will allow Azure AD to authenticate the HR connector when it runs and attempts to access your organization. This app will also be used to authenticate the script that you run in Step 4 to upload your HR data to the Microsoft cloud. During the creation of this Azure AD app, be sure to save the following information. These values will be used in later steps.
 
-- AAD application ID (also called the *app Id* or *client Id*)
+- Azure AD application ID (also called the *app Id* or *client Id*)
 
-- AAD application secret (also called the *client secret*)
+- Azure AD application secret (also called the *client secret*)
 
 - Tenant Id (also called the *directory Id*)
 
-For step-by-step instructions for creating an app in AAD, see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+For step-by-step instructions for creating an app in Azure AD, see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## Step 2: Prepare a CSV file with your HR data
 
@@ -60,11 +60,11 @@ The following table describes each column in the CSV file:
 |**Column name**|**Description**|
 |:-----|:-----|
 | **EmailAddress** <br/> |Specifies the email address of the terminated employee.|
-| **TerminationDate** <br/> |Specifies the date the person's employment was officially terminated in your organization. For example, this may be the date when the employee gave their notice about leaving your organization. This date may be the different than the date of the person's last day of work. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
-|**LastWorkingDate**|Specifies the last day of work for the terminated employee. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **TerminationDate** <br/> |Specifies the date the person's employment was officially terminated in your organization. For example, this may be the date when the employee gave their notice about leaving your organization. This date may be the different than the date of the person's last day of work. Use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
+|**LastWorkingDate**|Specifies the last day of work for the terminated employee. Use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-After you create the CSV file with the required HR data, store it on the same system as the script that you run in Step 4. You should also implement an update strategy to make sure the CSV file always contains the most current information so that whatever you run the script, the most current employee termination data will be uploaded to the Microsoft cloud.
+After you create the CSV file with the required HR data, store it on the same system as the script that you run in Step 4. Be sure to implement an update strategy so the CSV file always contains the most current information. Doing so ensures that that whatever you run the script, the most current employee termination data is uploaded to the Microsoft cloud.
 
 ## Step 3: Create the HR connector
 
@@ -78,7 +78,7 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 4. On the **Authentication credentials** page, do the following and then click **Next**:
 
-   a. Type or paste the AAD application ID for the Azure app that you created in Step 1.
+   a. Type or paste the Azure AD application ID for the Azure app that you created in Step 1.
 
    b. Type a name for the HR connector.
 
@@ -134,11 +134,11 @@ The last step in setting up an HR connector is to run a sample script that will 
 
    |**Parameter**|**Description**
    |:-----|:-----|:-----|
-   |`tenantId`|This is the Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenant Id for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
-   |`appId` |This is the AAD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. | 
-   |`appSecret`|This is the AAD application secret for the app that you created in Azure AD in Step 1. This also used for authentication.|
-   |`jobId`|This is the job ID for the HR connector that you created in Step 3. This is used to associate the HR data that is uploaded to the Microsoft cloud with the HR connector.|
-   |`csvFilePath`|This is the file path for the CSV file (stored on the same system as the script) that you created in Step 2. Try to avoid spaces in the file path; otherwise use single quotation marks.|
+   |`tenantId`|The Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenant Id for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
+   |`appId` |The Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. |
+   |`appSecret`|The Azure AD application secret for the app that you created in Azure AD in Step 1. This also used for authentication.|
+   |`jobId`|The job ID for the HR connector that you created in Step 3. This is used to associate the HR data that is uploaded to the Microsoft cloud with the HR connector.|
+   |`csvFilePath`|The file path for the CSV file (stored on the same system as the script) that you created in Step 2. Try to avoid spaces in the file path; otherwise use single quotation marks.|
    |||
    
    Here's an example of the syntax for the HR connector script using actual values for each parameter:
@@ -148,6 +148,9 @@ The last step in setting up an HR connector is to run a sample script that will 
     ```
 
    If the upload is successful, the script displays the **Upload Successful** message.
+
+   > [!NOTE]
+   > If you have problems running the previous command because of execution policies, see [About Execution Policies](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) and [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) for guidance about setting execution policies.
 
 ## Step 5: Monitor the HR connector
 

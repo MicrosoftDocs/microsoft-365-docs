@@ -96,6 +96,8 @@ Individual users can try out Cortana voice assistance in the Teams mobile app by
 
 4. Move the toggle to on or off, depending on whether you want Cortana voice assistance on this device.
 
+[Learn more about Cortana voice assistance in Teams](https://support.microsoft.com/en-us/office/using-cortana-voice-assistance-in-teams-274bb2f0-d962-4182-b45d-307435cea256?ui=en-us&rs=en-us&ad=us)
+
 ### Play My Emails
 
 Play My Emails (as connected to through Outlook mobile) is a voice-driven, hands-free experience for users to listen to new messages in their Focused Inbox and changes to their day via the speakers on their phone, headphones, or connected audio device. Users can ask Cortana to read their recent emails aloud, and ask Cortana to take actions such as flag, archive, delete, and skip messages. This feature is especially helpful to catch up on your email while commuting, multitasking, or on the go. When the user talks to Cortana in Play My Emails, the speech audio request goes directly to Cortana enterprise services. A text to speech readout of the user's email is processed inside the Office 365 cloud. During this process, no Office 365 data is processed on the user's mobile device and no email data is saved. A transcript of spoken commands (i.e. "mark as read," "next," "flag," etc.) may be retained in accordance with the Data Protection Terms in the Microsoft [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
@@ -128,7 +130,7 @@ Admins can configure Briefing for their organization using [PowerShell](https://
 
 We'll continue to introduce more experiences like the above to help increase your organization's productivity.
 
-Learn more about [Microsoft Compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home).
+[Learn more about Microsoft Compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home)
 
 ## How is the delivery of Cortana enterprise services different from the delivery of other Cortana features I may have previously experienced?
 
