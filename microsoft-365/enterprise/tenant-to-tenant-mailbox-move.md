@@ -54,16 +54,17 @@ Here is how the process works.
 
 :::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg" alt-text="Tenant preparation for mailbox migration.":::
 
+<!--
 [![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)
 
 [See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)
-
+--> 
 
 ### Prepare tenants
 
 At a high level, the following configuration actions take place when executing the setup scripts.
 
-#### Prepare the target tenant
+Prepare the target tenant:
 
 1. If an existing Azure Resource Group is not provided, a new one is created (SCRIPT).
 2. If an existing Key Vault is not provided, a new one is created (SCRIPT).
@@ -77,13 +78,13 @@ At a high level, the following configuration actions take place when executing t
 10. An Organization Relationship is created to the target tenant (SCRIPT).
 11. A migration endpoint is created to pull mailboxes to the target tenant (SCRIPT).
 
-#### Prepare the source tenant
+Prepare the source tenant:
 
 1. The source tenant admin accepts consent to Mailbox Migration app invitation from the Target tenant (MANUAL).
 2. The source tenant admin creates a mail-enabled security group in their tenant to contain the list of mailboxes allowed to be moved by the migration application (MANUAL).
 3. An Organization Relationship is created to the target tenant specifying the mailbox migration application should be used for OAuth verification to accept the move request (SCRIPT).
 
-#### Step-by-step instructions for target tenant admin
+#### Step-by-step instructions for the target tenant admin
 
 1. Download the SetupCrossTenantRelationshipForTargetTenant.ps1 script for the target tenant setup from the [GitHub repository](https://github.com/microsoft/cross-tenant). You may need to create a GitHub account to access the script if this is your first time using GitHub.
 2. Save the script (SetupCrossTenantRelationshipForTargetTenant.ps1) to the computer from which you will be executing the script.
@@ -96,7 +97,7 @@ At a high level, the following configuration actions take place when executing t
     | -ResourceTenantDomain                       | Source tenant domain, such as fabrikam\.onmicrosoft.com. | Required |
     | -ResourceTenantAdminEmail                   | Source tenant admin’s email address. This is the source tenant admin who will be consenting to the use of the mailbox migration application sent from the target admin. This is the admin who will receive the email invite for the application. | Required |
     | -TargetTenantDomain                         | Target tenant domain, such as contoso\.onmicrosoft.com. | Required |
-    | -ResourceTenantId                           | Source tenant organization ID (guid). | Required |
+    | -ResourceTenantId                           | Source tenant organization ID (GUID). | Required |
     | -SubscriptionId                             | The subscription to use for creating resources. | Required |
     | -ResourceGroup                              | Azure resource group name that contains or will contain the Key Vault. | Required |
     | -KeyVaultName                               | Azure Key Vault instance that will store your mailbox migration application certificate/secret. | Required |
@@ -151,7 +152,7 @@ At a high level, the following configuration actions take place when executing t
 
 The target admin setup is now complete!
 
-#### Step-by-step instructions for source tenant admin
+#### Step-by-step instructions for the source tenant admin
 
 1.  Sign in to your mailbox as the -ResourceTenantAdminEmail specified by the target admin during their setup. Find the email invitation from the target tenant, and then choose the **Get Started** button.
 
@@ -168,7 +169,7 @@ The target admin setup is now complete!
 
 4. Download the SetupCrossTenantRelationshipForTargetResource.ps1 script for the source tenant setup from the GitHub repository [here](https://github.com/microsoft/cross-tenant). You may need to create a GitHub account to access the script if this is your first time with GitHub.
 
-5. Create a Remote PowerShell connection to the source tenant with your Exchange Administrator permissions. Global Admin permissions are not required to configure the source tenant, only the target tenant becuase of the Azure app creation process.
+5. Create a Remote PowerShell connection to the source tenant with your Exchange Administrator permissions. Global Admin permissions are not required to configure the source tenant, only the target tenant because of the Azure app creation process.
 
 6. Change directory to the script location or verify that the script is currently saved to the location currently in your Remote PowerShell session.
 
@@ -325,7 +326,7 @@ You must ensure the following objects and attributes are set in the target organ
 2. If the source mailbox is on LitigationHold and the source mailbox Recoverable Items size is greater than our database default (30 GB), moves will not proceed since the target quota is less than the source mailbox size. You can update the target MailUser object to transition the ELC mailbox flags from the source environment to the target, which triggers the target system to expand the quota of the MailUser to 100 GB, thus allowing the move to the target. These instructions will work only for hybrid identity running Azure AD Connect, as the commands to stamp the ELC flags are not exposed to tenant administrators.
 
     >[!Note]
-    > SAMPLE – AS IS, NO WARRANTY<br/>This script assumes a connection to both source mailbox (to get source values) and the target on-premises Active Directory (to stamp the ADUser object). If source has litigation or single item recovery enabled then set this on the destination account.  This will increase the dumpster size of destination account to 100 GB.
+    > SAMPLE – AS IS, NO WARRANTY<br/>This script assumes a connection to both source mailbox (to get source values) and the target on-premises Active Directory (to stamp the ADUser object). If source has litigation or single item recovery enabled, set this on the destination account.  This will increase the dumpster size of destination account to 100 GB.
 
     ```powershell
     $ELCValue = 0 
@@ -421,7 +422,7 @@ Get-MoveRequest -Flags "CrossTenant"
 **Can you provide example scripts for copying attributes used in testing?**
 
 >[!Note]
-> SAMPLE – AS IS, NO WARRANTY<br/>This script assumes a connection to both source mailbox (to get source values) and the target on-premises Active Directory Domain Services (to stamp the ADUser object). If source has litigation or single item recovery enabled then set this on the destination account.  This will increase the dumpster size of destination account to 100 GB.
+> SAMPLE – AS IS, NO WARRANTY<br/>This script assumes a connection to both source mailbox (to get source values) and the target on-premises Active Directory Domain Services (to stamp the ADUser object). If source has litigation or single item recovery enabled, set this on the destination account.  This will increase the dumpster size of destination account to 100 GB.
 
 ```powershell
 #Dumps out the test mailboxes from SourceTenant 
@@ -448,7 +449,7 @@ Foreach ($i in $Mailboxes)
 } 
 $outArray | Export-CSV $outfile -notypeinformation  
 ################################################################# 
-#Copy the file $outfile to the desktop of the target onpremises 
+#Copy the file $outfile to the desktop of the target on-premises 
 #then run the below to create MEU in Target 
 #################################################################  
 $ImportUserList = import-csv "$home\desktop\UserListToImport.csv" 
@@ -632,7 +633,7 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
     proxytest@fabrikam.com    e2513482-1d5b-4066-936a-cbc7f8f6f817    SMTP:proxytest@fabrikam.com 
     ```
 
-   - When msExchRemoteRecipientType is set to 8 (DeprovisionMailbox), for onprem MailUsers that are migrated to the target tenant, the proxy scrubbing logic in Azure will remove nonowned domains and reset the primarySMTP to an owned domain. By clearing msExchRemoteRecipientType in the onpremises MailUser, the proxy scrub logic no longer applies. <br/><br>Below is the full set of possible Service Plans that include Exchange Online.
+   - When msExchRemoteRecipientType is set to 8 (DeprovisionMailbox), for on-premises MailUsers that are migrated to the target tenant, the proxy scrubbing logic in Azure will remove nonowned domains and reset the primarySMTP to an owned domain. By clearing msExchRemoteRecipientType in the on-premises MailUser, the proxy scrub logic no longer applies. <br/><br>Below is the full set of possible Service Plans that include Exchange Online.
 
    | Name                                              |
    |---------------------------------------------------|
