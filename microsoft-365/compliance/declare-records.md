@@ -23,11 +23,11 @@ description: "Declare records by using retention labels."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-To declare items as a record, you use [retention labels](retention.md#retention-labels) that mark the content as a record. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.
+To declare documents and emails as a record, you use [retention labels](retention.md#retention-labels) that mark items as a record. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.
 
 ## Configuring retention labels to declare records
 
-When you create or configure a retention label, select the option to mark the content as a record.
+When you create or configure a retention label, select the option to mark items as a record.
 
 >[!NOTE] 
 > The option to mark the content as a record is not available when you create or configure retention labels from **Information Governance** in the Microsoft 365 compliance center. Instead, you must use **Records Management**.
@@ -36,9 +36,9 @@ To create a new retention label that marks the content as a record:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Records Management** \> **File Plan**. On the **File plan** page, select **Create a label**.
 
-2. On the **Label settings** page in the wizard, choose the option to classify content as a record.
+2. On the **Define retention settings** page in the wizard, choose the option to mark items as records:
     
-   ![Click Use label to classify content as a Record checkbox](../media/recordversioning6.png)
+   ![Select retention setting to mark items as a record](../media/recordversioning6.png)
 
 3. Apply the retention label to SharePoint or OneDrive documents and Exchange emails, as needed. For instructions:
     

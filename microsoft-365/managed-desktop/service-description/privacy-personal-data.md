@@ -123,7 +123,7 @@ The following section discusses how Microsoft Managed Desktop helps controllers 
 
 ### IT Admin contact information
 
-A tenant administrator can view, correct, and delete their personal data directly in the Admin Contact section of the Microsoft Managed Desktop Portal.
+A tenant administrator can view, correct, and delete their own personal data (such as their own contact information) directly in the Admin Contact section of the Microsoft Managed Desktop Portal.
 
 ### User-related personal data
 
