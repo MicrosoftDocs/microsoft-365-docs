@@ -200,7 +200,7 @@ At this point, you can't reactivate the subscription. However, as a global or bi
 
 
 > [!NOTE]
-> If CSP license is supended, there is no 30 day grace period, services are disabled immediately. Data will be deleted after 90 days if tenant is not reactivated by adding new licenses or reactivating CSP licenses.
+> If a CSP license is suspended, there is no 30 day grace period, and services are disabled immediately. Data will be deleted after 90 days if the tenant is not reactivated by adding a new license or by reactivating the CSP license.
 
 ### What happens when my trial ends?
 
