@@ -67,7 +67,7 @@ A triggered alert creates an incident, which can start an automated investigatio
 Each investigation generates verdicts (*Malicious*, *Suspicious*, or *No threats found*) for each piece of evidence investigated. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization's security operations team. Pending and completed actions are listed in the [Action center](mtp-action-center.md).
 
 > [!TIP]
-> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
+> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives with self-healing in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
 While an investigation is running, any other related alerts that arise are added to the investigation until it completes. If an incriminated entity is seen elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run. 
 
