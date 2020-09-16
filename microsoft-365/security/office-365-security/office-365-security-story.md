@@ -28,7 +28,7 @@ Every Office 365 subscription comes with security capabilities. The goals and ac
 1. [Advanced Threat Protection, Plan 2](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (ATP P2)
 
 > [!NOTE]
-> If you bought your subscription and need to roll out security features *right now*, skip to the steps in the [Protect Against Threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide) article. Head back if you need to.
+> If you bought your subscription and need to roll out security features *right now*, skip to the steps in the [Protect Against Threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide) article. Head back if you need to. If you inherited this subscription and would like to know your licensing, browse Billing > Your Products in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/#/homepage).
 
 The Office 365 subscriptions build on the more immediate protections offered by EOP, which is present in any subscription where Exchange Online mailboxes can be found (remember, all the security products discussed  are Cloud-based).
 
