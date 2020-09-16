@@ -18,7 +18,7 @@ description: "Learn how perform implementation and testing on controls in Micros
 
 # Assign and complete improvement actions in Compliance Manager
 
-**In this article:** This article explains how to **manage your compliance workflow** with improvement actions. Learn how to **assign improvement actions** for implementation and testing, assign them to assessors for completion, and export **reports**.
+**In this article:** This article explains how to **manage your compliance workflow** with improvement actions. Learn how to **assign improvement actions** for implementation and testing, **manage updates**, and export **reports**.
 
 ## Manage compliance workflows with improvement actions
 
@@ -28,7 +28,7 @@ All of your improvement are listed on the improvement actions page. Learn more a
 
 ## Improvement actions details page
 
-Each improvement action has a details page showing its current status and the related standards and regulatory requirements. Detailed implementation guidance includes a **Launch now** link taking you into the appropriate solution for implementation. You can attach implementation and testing documentation directly into an improvement action's details page.
+Each improvement action has a details page showing its current status, the related standards and regulatory requirements, and recommended implementation guidance. [Technical actions](compliance-score-calculation.md#technical-and-non-technical-actions) include a **Launch now** link that takes you to the appropriate solution for implementation. You can attach implementation and testing documentation directly into an improvement action’s details page.
 
 To view an improvement action’s details page:
 

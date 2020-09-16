@@ -65,6 +65,10 @@ Compliance Score tracks two types of actions: actions you manage, and actions Mi
 
 Actions are assigned a score value based on whether they're mandatory or discretionary, and whether they're preventative, detective, or corrective.
 
+### Technical and non-technical actions
+
+text...
+
 ### Mandatory and discretionary actions
 
  - **Mandatory actions** can't be bypassed, either intentionally or accidentally. An example is a centrally managed password policy that sets requirements for password length, complexity, and expiration. Users must follow these requirements to access the system.
