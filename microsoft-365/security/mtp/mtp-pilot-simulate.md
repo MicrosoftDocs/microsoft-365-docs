@@ -259,7 +259,7 @@ This wraps up the attack simulation for the incident management and automated in
 
 >[!NOTE]
 >Before we walk you through the simulation, watch the following video to understand the advanced hunting concepts, see where you can find it in the portal, and know how it can help you in your security operations:
-<p></p> 
+
 [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
 ### Hunting environment requirements
