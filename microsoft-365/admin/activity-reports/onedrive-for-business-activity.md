@@ -51,7 +51,7 @@ You can get a view into OneDrive for Business activity by looking at the **Files
   
 ![OneDrive Activity Report](../../media/316b2a03-8e42-447c-aae8-080813eebe84.png)
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |The **OneDrive for Business activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table (7) will show data for up to 28 days from the current date (not the date the report was generated).  <br/> |
 |2.  <br/> |The data in each report usually covers up to the last 24 to 48 hours. <br/>|
