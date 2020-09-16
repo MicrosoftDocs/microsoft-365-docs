@@ -69,9 +69,9 @@ Both types of actions have points that count toward your overall score when comp
 
 Actions are grouped by whether they are technical or non-technical in nature. The scoring impact of action type differs.
 
-**Technical actions** are implemented by interacting with the technology of a solution (for example, changing a configuration). The points for technical actions are granted in each instance of the action across your tenant.
+**Technical actions** are implemented by interacting with the technology of a solution (for example, changing a configuration). The points for technical actions are granted for each instance of the action across your organization.
 
-**Non-technical actions** apply to actions managed by your organization, adn are implemented in ways other than working with the technology of a solution. There are two types of non-technical actions: **documentation** and **operational**. The points for these actions are applied to your compliance score at a group level. This means that if a group contains more than one instance of the action, you are only granted the points for one instance of that action.
+**Non-technical actions** are managed by your organization and implemented in ways other than working with the technology of a solution. There are two types of non-technical actions: **documentation** and **operational**. The points for these actions are applied to your compliance score at a group level. This means that if a group contains more than one instance of the action, you are only granted the points for one instance of that action.
 
 Actions are assigned a score value based on whether they’re mandatory or discretionary, and whether they’re preventative, detective, or corrective.
 
@@ -79,7 +79,7 @@ Actions are assigned a score value based on whether they’re mandatory or discr
 
  - **Mandatory actions** can't be bypassed, either intentionally or accidentally. An example of a mandatory action is a centrally managed password policy that sets requirements for password length, complexity, and expiration. Users must follow these requirements to access the system.
   
- - **Discretionary actions** rely upon users to understand and adhere to a policy. For example, a policy requiring users to lock their computer when they leave it is a discretionary action because completion relies on the user.
+ - **Discretionary actions** rely upon users to understand and adhere to a policy. For example, a policy requiring users to lock their computer when they leave it is a discretionary action because it relies on the user.
   
 ### Preventative, detective, and corrective actions
   
