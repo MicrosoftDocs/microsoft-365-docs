@@ -23,7 +23,7 @@ ms.topic: article
 
 Advanced hunting displays errors to notify for syntax mistakes and whenever queries hit [predefined limits](advanced-hunting-limits.md). Refer to the table below for tips on how to resolve or avoid errors. 
 
-| Error type | Cause | Resolution | Error strings examples |
+| Error type | Cause | Resolution | Error message examples |
 |--|--|--|--|
 | Syntax errors | The query contains unrecognized names, including references to nonexistent operators, columns, functions, or tables. | Ensure references to [Kusto operators and functions](https://docs.microsoft.com/azure/data-explorer/kusto/query/) are correct. Check [the schema](advanced-hunting-schema-tables.md) for the correct advanced hunting columns, functions, and tables. Enclose variable strings in quotes so they are recognized. While writing your queries, use the autocomplete suggestions from IntelliSense. | `A recognition error occurred.` |
 | Semantic errors | While the query uses valid operator, column, function, or table names, there are errors in its structure and resulting logic. In some cases, advanced hunting identifies the specific operator that caused the error. | Check for errors in the structure of query. Refer to [Kusto documentation](https://docs.microsoft.com/azure/data-explorer/kusto/query/) for guidance. While writing your queries, use the autocomplete suggestions from IntelliSense. |  `'project' operator: Failed to resolve scalar expression named 'x'`|
