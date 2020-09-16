@@ -27,7 +27,9 @@ ms.reviewer: evaldm, isco
 **Applies to:**
 - Microsoft Threat Protection
 
-As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts keep coming in while an investigation is going on. Security operations teams can feel overwhelmed by the sheer volume of threats they must monitor, protect against, and handle. Microsoft Threat Protection, with self-healing capabilities, can help. Watch the following video to see how self-healing works:
+As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts keep coming in while an investigation is going on. Security operations teams can feel overwhelmed by the sheer volume of threats they must monitor, protect against, and handle. Microsoft Threat Protection, with self-healing capabilities, can help. 
+
+Watch the following video to see how self-healing works:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
