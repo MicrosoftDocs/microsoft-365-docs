@@ -110,22 +110,30 @@
               items: 
                 - name: Advanced hunting overview
                   href: mtp/advanced-hunting-overview.md
-                - name: Learn the query language
-                  href: mtp/advanced-hunting-query-language.md
-                - name: Get expert training
-                  href: mtp/advanced-hunting-expert-training.md
-                - name: Apply query best practices
-                  href: mtp/advanced-hunting-best-practices.md
+                - name: Learn, train, & get examples
+                  items: 
+                    - name: Learn the query language
+                      href: mtp/advanced-hunting-query-language.md
+                    - name: Get expert training
+                      href: mtp/advanced-hunting-expert-training.md
+                    - name: Use shared queries
+                      href: mtp/advanced-hunting-shared-queries.md
+                    - name: Hunt across devices, emails, apps, and identities 
+                      href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Work with query results
                   href: mtp/advanced-hunting-query-results.md
                 - name: Take action on query results
                   href: mtp/advanced-hunting-take-action.md
-                - name: Use shared queries
-                  href: mtp/advanced-hunting-shared-queries.md
-                - name: Hunt across devices, emails, apps, and identities 
-                  href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Go hunt
                   href: mtp/advanced-hunting-go-hunt.md
+                - name: Optimize & handle errors
+                  items: 
+                    - name: Apply query best practices
+                      href: mtp/advanced-hunting-best-practices.md
+                    - name: Handle errors
+                      href: mtp/advanced-hunting-errors.md
+                    - name: Service limits
+                      href: mtp/advanced-hunting-limits.md
                 - name: Extend data coverage
                   href: mtp/advanced-hunting-extend-data.md
                 - name: Data schema

@@ -3,7 +3,7 @@ title: "Setup guides for Microsoft 365 and Office 365 services"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/03/2020
+ms.date: 09/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -46,7 +46,7 @@ The setup guides are accessible from the [Setup guidance](https://aka.ms/setupgu
 
 ## How do setup guides work in the Microsoft 365 admin center?
 
-Each guide provides you with step-by-step instructions, resources, articles, and when needed, scripts you can use to make configuration changes. These guides provide you with choices that reflect the specific needs of both small and large orgs. Additionally, the guidance provided includes assistance for both new and more experienced admins.
+Each guide provides you with step-by-step instructions, resources, articles, and when needed, scripts you can use to make configuration changes. These guides provide you with choices that reflect the specific needs of both small and large organizations. Additionally, the guidance provided includes assistance for both new and more experienced admins.
 
 ![Example of a setup guide](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
@@ -56,11 +56,11 @@ You can use the guides to learn more about specific Microsoft 365 and Office 365
 
 ### Prepare your environment
 
-The [Prepare your environment](https://aka.ms/prepareyourenvironment) guide helps you prepare your org's environment for Microsoft 365 and Office 365 services. Regardless of your goals, there are tasks you'll need to complete to ensure a successful deployment. To avoid any errors while preparing your environment, you're provided with step-by-step instructions to connect your domain, add users, assign licenses, set up email with Exchange Online, and install or deploy Office apps. 
+The [Prepare your environment](https://aka.ms/prepareyourenvironment) guide helps you prepare your organization's environment for Microsoft 365 and Office 365 services. Regardless of your goals, there are tasks you'll need to complete to ensure a successful deployment. To avoid any errors while preparing your environment, you're provided with step-by-step instructions to connect your domain, add users, assign licenses, set up email with Exchange Online, and install or deploy Office apps. 
 
 ### Email setup advisor
 
-The [Email setup advisor](https://aka.ms/office365setup) provides you with the step-by-step guidance needed for configuring Exchange Online for your organization. This includes setting up new email accounts, migrating email, and configuring email protection. For a successful email set up, use this advisor and you'll receive the recommended migration method based on your org's current mail system, the number of mailboxes being migrated, and how you want to manage users and their access.
+The [Email setup advisor](https://aka.ms/office365setup) provides you with the step-by-step guidance needed for configuring Exchange Online for your organization. This includes setting up new email accounts, migrating email, and configuring email protection. For a successful email set up, use this advisor and you'll receive the recommended migration method based on your organization's current mail system, the number of mailboxes being migrated, and how you want to manage users and their access.
 
 ### Gmail contacts and calendar advisor
 
@@ -89,7 +89,7 @@ The [Windows Virtual Desktop setup guide](https://aka.ms/wvdsetupguide) provides
 
 ### Azure AD setup guide
 
-The [Azure AD setup guide](https://aka.ms/aadpguidance) provides information to ensure your org has a strong security foundation. In this guide you’ll set up initial features, like Azure role-based access control (Azure RBAC) for admins, Azure AD Connect for your on-premises directory, and Azure AD Connect Health, so you can monitor your hybrid identity's health during automated syncs. 
+The [Azure AD setup guide](https://aka.ms/aadpguidance) provides information to ensure your organization has a strong security foundation. In this guide you’ll set up initial features, like Azure role-based access control (Azure RBAC) for admins, Azure AD Connect for your on-premises directory, and Azure AD Connect Health, so you can monitor your hybrid identity's health during automated syncs. 
 
 It also includes essential information on enabling self-service password resets, conditional access and integrated third-party sign-on including optional advanced ID protection, and user provisioning automation.
 
@@ -113,7 +113,7 @@ The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with st
 
 ### Microsoft Defender Advanced Threat Protection (ATP) advisor
 
-The [Microsoft Defender Advanced Threat Protection advisor](https://aka.ms/mdatpsetup) provides instructions that will help your enterprise network prevent, detect, investigate, and respond to advanced threats. Make an informed assessment of your org's vulnerability and decide which deployment package and configuration methods are best. 
+The [Microsoft Defender Advanced Threat Protection advisor](https://aka.ms/mdatpsetup) provides instructions that will help your enterprise network prevent, detect, investigate, and respond to advanced threats. Make an informed assessment of your organization's vulnerability and decide which deployment package and configuration methods are best. 
 
 >[!NOTE]
 >A Microsoft Volume License is required for Microsoft Defender ATP.
@@ -152,7 +152,7 @@ The [Microsoft Teams setup guide](https://aka.ms/teamsguidance) provides your or
 
 ### SharePoint setup guide
 
-The [SharePoint setup guide](https://aka.ms/spoguidance) helps you set up SharePoint document storage and content management, create sites, configure external sharing, migrate data and configure advanced settings, and drive user engagement and communication within your organization. You'll follow steps for configuring your content-sharing permission policies, choose your migration sync tools, as well as enable the security settings for your SharePoint environment. 
+The [SharePoint setup guide](https://aka.ms/spoguidance) helps you set up your SharePoint document storage and content management, create sites, configure external sharing, migrate data and configure advanced settings, and drive user engagement and communication within your organization. You'll follow steps for configuring your content-sharing permission policies, choose your migration sync tools, as well as enable the security settings for your SharePoint environment. 
 
 ### OneDrive setup guide
 
