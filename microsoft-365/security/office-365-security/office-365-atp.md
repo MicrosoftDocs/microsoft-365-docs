@@ -16,8 +16,10 @@ search.appverid:
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
-description: "Office 365 Advanced Threat Protection includes safe attachments, safe links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities."
+description: Office 365 Advanced Threat Protection (ATP) includes Safe Attachments, Safe Links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities.
+ms.custom: seo-marvel-jun2020
 ---
+
 # Office 365 Advanced Threat Protection
 
 > [!IMPORTANT]
