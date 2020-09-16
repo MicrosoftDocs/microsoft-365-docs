@@ -266,7 +266,7 @@ To access your message header and email download options, follow these steps:
 
 ## Related topics
 
-[Remediate malicious email delivered in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-worldwide)
+[Remediate malicious email delivered in Office 365](remediate-malicious-email-delivered-office-365.md)
 
 [Office 365 Advanced Threat Protection](office-365-ti.md)
 
