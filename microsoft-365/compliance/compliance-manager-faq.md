@@ -18,7 +18,7 @@ description: "Find answers to frequently asked questions about Microsoft Complia
 
 # Compliance Manager frequently asked questions
 
-## Is Compliance Manager and Compliance Score the same thing, or are they different? What should I use?
+## Is Compliance Manager and Compliance Score the same thing, or are they different?
 
 We’re here to walk you through this transition. Below is a basic overview. You may also find it helpful to jump directly to one of the sections below:
 
