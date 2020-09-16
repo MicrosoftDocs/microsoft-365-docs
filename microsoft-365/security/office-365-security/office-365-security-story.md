@@ -17,12 +17,7 @@ description: "Security in Office 365, from EOP to ATP Plans 1 and 2, Standard vs
 
 # Office 365 Security outline
 
-Because the security features in Office 365 are comprehensive, there's a lot to look at, and where you start with your Office 365 security can depend on the needs of your organization. You may sense there's more to it than can be seen by browsing Billing > Your Products in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/#/homepage), but it may not be obvious where to begin.
-
 This article will introduce you to your new security properties in the Cloud. Whether you've just accessed your Office 365 property for the first time, you're part of a Security Operations Center that uses Office 365 security, you're a Security Admin new to the space, or you want a refresher, let's get started.
-
-> [!TIP]
-> If you're using the docs.microsoft.com table of contents to reach [Office 365 Security](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap?view=o365-worldwide) articles, you'll notice that table of contents organization begins with Evaluation and Deployment (including migration) and then continues into prevention, detection, investigation, and response. <p> This structure is divided so that Security Administration topics are followed by Security Operations topics. If you're a new member of either job role, use the link in this tip, and your knowledge of the table of contents, to help learn the space. Remember to use feedback links and rate articles as you go. Feedback helps us improve.
 
 ## Office 365 security spelled out
 
@@ -117,3 +112,5 @@ This quick-reference will help you understand what capabilities come with each A
 > [!TIP]
 > If you're using the docs.microsoft.com table of contents to reach [Office 365 Security](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap?view=o365-worldwide) articles, you'll notice that table of contents organization begins with Evaluation and Deployment (including migration) and then continues into prevention, detection, investigation, and response. <p> This structure is divided so that Security Administration topics are followed by Security Operations topics. If you're a new member of either job role, use the link in this tip, and your knowledge of the table of contents, to help learn the space. Remember to use feedback links and rate articles as you go. Feedback helps us improve.
 
+> [!TIP]
+> If you're using the docs.microsoft.com table of contents to reach [Office 365 Security](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap?view=o365-worldwide) articles, you'll notice that table of contents organization begins with Evaluation and Deployment (including migration) and then continues into prevention, detection, investigation, and response. <p> This structure is divided so that Security Administration topics are followed by Security Operations topics. If you're a new member of either job role, use the link in this tip, and your knowledge of the table of contents, to help learn the space. Remember to use feedback links and rate articles as you go. Feedback helps us improve.
