@@ -56,20 +56,39 @@ If you have an Office 365 E3, or below, you have EOP, but with the option to buy
 > [!TIP]
 > If your subscription is neither Office 365 E3 or E5, you can still check to see if you have the option to evaluate and upgrade to ATP P1. If you're interested, [this webpage](https://www.microsoft.com/en-us/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids) lists subscriptions eligible for the ATP P1 upgrade (check the end of the page for the fine-print).
 
-## Exchange Online Protection
+## Capabilities
 
-What do you to to prevent and detect threats, investigate them, and then respond, if you have EOP?
+What makes adding ATP plans an advantage to pure EOP threat management can be difficult to tell at first glance. To help sort out if an upgrade path is right for your organization, let's look at the capabilities of each product when it comes to preventing and detecting threats, investigating them, and then responding.
+
+Starting with **EOP**:
 
 |Prevent/Detect  |Investigate  |Respond  |
 |---------|---------|---------|
-|         |         |         |
+| Technologies include:<ul><li>spam</li><li>phish</li><li>malware</li><li>bulk mail</li><li>spoof intelligence</li><li>impersonation detection</li><li>Admin Quarantine</li><li>Admin and user submissions of False Positives and False Negatives</li><li>Allow/Block for URLs and Files</li><li>Reports</li></u1>|<li>Audit log search</li><li>Message Trace</li>|<li>Zero-hour Auto-Purge (ZAP)</li><li>Refinement and testing of Allow and Block lists</li>|
 
+Because these products are cumulative, if you evaluate ATP P1 and decide to subscribe to it, you'll add these abilities.
 
+Gains with **ATP P1** (to date):
 
+|Prevent/Detect  |Investigate  |Respond  |
+|---------|---------|---------|
+| Technologies include everything in EOP plus:<u1><li>Safe attachments</li><li>Safe links<li>ATP protection for workloads (ex. SharePoint Online, Teams, OneDrive for Business)</li>Time-of-click protection in email, Office clients, and Teams</li><li>User and domain impersonation protection</li><li>Alerts, and SIEM integration API for alerts</li>|<li>SIEM integration API for detections</li><li>**Real-time detections tool**</li><li>URL trace</li>|<li>Same</li></u1>
+
+So, ATP P1 expands on the ***prevention*** side of the house, and adds extra forms of ***detection***.
+
+ATP P1 also adds **Real-time detections** for investigations. This threat hunting tool's name is in bold because having it is clear means of *knowing* you have ATP P1. It doesn't appear in ATP P2.
+
+Gains with **ATP P2** (to date):
+
+|Prevent/Detect  |Investigate  |Respond  |
+|---------|---------|---------|
+| Technologies include everything in EOP, and ATP P1 plus:<u1><li>Same</li>|<li>**Threat Explorer**</li><li>Threat Trackers</li><li>Campaign views</li>|<li>Automated Investigation and Response (AIR)</li><li>AIR from Threat Explorer</li><li>AIR for compromised users</li><li>SIEM Integration API for Automated Investigations</li>
+
+In ATP P2, the primary hunting tool is called **Threat Explorer** rather than Real-time detections. Though effective in itself, Threat Explorer is paired with automated threat hunting playbooks that have extra capabilities.
 
 ## Office 365 ATP Plan 1 and Plan 2
 
-The following table summarizes what's included in each plan.
+The breakdown of ATP plans, highlighting their differences.
 
 |Office 365 ATP Plan 1|Office 365 ATP Plan 2|
 |---|---|
