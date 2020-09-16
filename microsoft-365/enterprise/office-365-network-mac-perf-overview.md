@@ -138,19 +138,19 @@ When a user submits a report it appears in the admin center in about a minute an
 
 In the location select the View link in the user-submitted reports column of the table. You may need to scroll right to see this column. This will show you a fly out which let's you manage all of the user-submitted reports for this specific office location. Here you can select a specific report to be shown in the admin reports, you can delete a user-submitted report, delete all of the user-submitted reports for the location, and you can view each of the user-submitted reports individually. Note that if you delete a user-submitted report here, the user can no longer access it in the Reports tab in the Microsoft 365 network connectivity test tool.
 
-![listing individual user submitted reports](../media/m365-mac-perf/m365-mac-perf-user-submitted-report-view.png)
+![viewing individual user submitted reports](../media/m365-mac-perf/m365-mac-perf-user-submitted-report-view.png)
 
 Selecting **Show this report** will lock the specific report to show in the main location summary page and also be the one used for history and insights. If none are selected then the most recent report is used.
 
-Type of report is always set to **One time**.
+_Type of report_ is always set to **One time**.
 
-Expiration date shows when this report will be deleted automatically. The longest that we keep user-submitted reports is 90 days.
+_Expiration date_ shows when this report will be deleted automatically. The longest that we keep user-submitted reports is 90 days.
 
-The View link allows you to view the user submitted report data.
+The _View_ link allows you to view the user submitted report data.
 
 ### Use of user submitted reports in history reports
 
-The check box labelled "Include data from user-submitted reports in the connectivity summary and history for this location" determines whether a user-submitted report or a collected and aggregated report will be used for each days history in the history reporting. When the overnight data processing runs each day the history for this location will be based on this setting. This is configurable since in many cases you will see reports both from user-submissions and from collected tests from clients and this allows you to choose what is added to the history. If you select the user-submitted report here then it will show a straight line in the history until either the user-submitted report expires, or a new one is submitted, or you change this setting.
+The **Include data from user-submitted reports in the connectivity summary and history for this location** check box determines whether a user-submitted report or a collected and aggregated report will be used for each days history in the history reporting. When the overnight data processing runs each day the history for this location will be based on this setting. This is configurable since in many cases you will see reports both from user-submissions and from collected tests from clients and this allows you to choose what is added to the history. If you select the user-submitted report here then it will show a straight line in the history until either the user-submitted report expires, or a new one is submitted, or you change this setting.
 
 ## CSV Import for LAN subnet office locations
 
@@ -161,7 +161,7 @@ In the CSV file a discovered city location is labeled **City**, and a manually a
 1. In the main _Connectivity to Microsoft 365_ window, click the **Locations** tab.
 1. Click the **Import** button just above the locations list. The **Import office locations** flyout will appear.
 
-   ![CSV import error message](../media/m365-mac-perf/m365-mac-perf-import.png)
+   ![CSV import message](../media/m365-mac-perf/m365-mac-perf-import.png)
 
 1. Click the **Download current office locations (.csv)** link to export the current locations list to a CSV file, and save it to your local hard disk. This will provide you with a correctly formatted CSV with column headings to which you can add locations. You can leave the existing exported locations as they are; they will not be duplicated when you import the updated CSV. If you wish to change the address of an existing location, it will be updated when you import the CSV. You cannot change the address of a discovered city.
 1. Open the CSV and add your locations by filling out the following fields on a new line for each location you want to add. Leave all other fields blank; values you enter in other fields will be ignored.
