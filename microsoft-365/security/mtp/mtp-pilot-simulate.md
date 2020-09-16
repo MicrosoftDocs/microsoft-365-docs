@@ -137,9 +137,9 @@ To view the incident:
 
 3.	Select **Open incident page** to get more information about the incident.
 
-In the **Incident** page, you can see all the alerts and information related to the incident. This includes the entities and assets that are involved in the alert, the detection source of the alerts (Azure ATP, EDR), and the reason they were linked together. Reviewing the incident alert list shows the progression of the attack. From this view, you can see and investigate the individual alerts.
+    In the **Incident** page, you can see all the alerts and information related to the incident. This includes the entities and assets that are involved in the alert, the detection source of the alerts (Azure ATP, EDR), and the reason they were linked together. Reviewing the incident alert list shows the progression of the attack. From this view, you can see and investigate the individual alerts.
 
-You can also click **Manage incident** from the right-hand menu, to tag the incident, assign it to yourself, and add comments.
+    You can also click **Manage incident** from the right-hand menu, to tag the incident, assign it to yourself, and add comments.
 
     ![Screenshot of where to click Manage incident](../../media/mtp/fig5a.png)
 
