@@ -92,8 +92,10 @@ We suggest reaching out to the ISV Developer for the paid add-in to request a ma
     
 ## Which admin role do I need to manage add-ins for my organization?  
 
-You must have the Global admin role to manage add-ins. If you're the person who purchased your Microsoft 365 for business subscription, you are the Global admin. 
+Global Admin is the recommended role with complete access to add-in management lifecycle. Other Admin roles have a limited access to add-in deployment lifecycle. If you're the person who purchased your Microsoft 365 for business subscription, you are the Global admin. 
  
 Your subscription comes with a set of admin roles that you can assign to other users in your organization. Each admin role maps to common business functions and gives people in your organization permissions to perform specific tasks in the Microsoft 365 admin center.  
  
 For more information, see [Assign admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).  
+
+
