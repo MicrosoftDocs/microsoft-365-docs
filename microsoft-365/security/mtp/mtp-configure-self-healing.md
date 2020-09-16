@@ -40,11 +40,11 @@ Microsoft Threat Protection includes power self-healing capabilities that can sa
 
 1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. In the navigation pane, look for **Incidents**, **Action Center**, and **Hunting**, as shown in the following image:<br/>![Image of Microsoft 365 security center navigation pane with Microsoft Threat Protection features](../../media/mtp-enable/mtp-on.png)
+2. In the navigation pane, look for **Incidents**, **Action center**, and **Hunting**, as shown in the following image:<br/>![Image of Microsoft 365 security center navigation pane with Microsoft Threat Protection features](../../media/mtp-enable/mtp-on.png)
 
-   - If you see **Incidents**, **Action Center**, and **Hunting**, Microsoft Threat Protection is turned on. Proceed to the next procedure, [Review or change the automation level for self-healing](#review-or-change-the-automation-level-for-self-healing).
+   - If you see **Incidents**, **Action center**, and **Hunting**, Microsoft Threat Protection is turned on. Proceed to the next procedure, [Review or change the automation level for self-healing](#review-or-change-the-automation-level-for-self-healing).
 
-   - If you do *not* see **Incidents**, **Action Center**, or **Hunting**, then Microsoft Threat Protection might not be turned on. In this case, proceed to the next step.
+   - If you do *not* see **Incidents**, **Action center**, or **Hunting**, then Microsoft Threat Protection might not be turned on. In this case, proceed to the next step.
 
 3. In the navigation pane, choose **Settings** > **Microsoft Threat Protection**. Confirm that Microsoft Threat Protection is turned on. 
 
@@ -52,3 +52,12 @@ Microsoft Threat Protection includes power self-healing capabilities that can sa
 
 ## Review or change the automation level for self-healing
 
+Whether automated investigations run, and whether remediation actions are taken automatically or only upon approval depend on how certain settings, such as your device group policies, are configured. 
+
+This task includes reviewing and potentially changing your organization's security settings.
+
+### Review your device group settings
+
+1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+
+2. Go to **Settings** > **Permissions** > **Device groups**.  
