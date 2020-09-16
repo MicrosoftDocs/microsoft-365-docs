@@ -29,15 +29,13 @@ A template is a framework for creating an assessment in Compliance Manager. They
 
 ## List of pre-built templates for assessments
 
-Compliance Manager provides templates for building assessments to help you comply with various regulations and standards.  
-
-View the [list of templates](compliance-manager-templates-list.md) provided by Compliance Manager. New templates are added regularly, so check the page often.
+Compliance Manager provides templates for building assessments to help you comply with various regulations and standards. View the [list of templates](compliance-manager-templates-list.md) provided by Compliance Manager. New templates are added regularly, so check the list often.
 
 ## Viewing and managing templates from the assessment templates page
 
 The assessment templates page in Compliance Manager displays a list of templates and key details. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created. You can apply filters to find a template based on certification, product scope, country, industry, who created it, and whether the template is enabled for assessment creation.
 
-Select a template from its row to bring up its details page, which contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
+Select a template from its row to bring up its details page. This page contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
 
 ## Creating and modifying templates overview
 
@@ -59,7 +57,7 @@ To create your own new template (used for building custom assessments), follow t
 3. Choose the type of template you want to create. In this case, select **Create a custom template**, then select **Next**.
 4. At the **Upload file** screen, select **Browse** to find and upload your formatted Excel file containing all the required template data (see [instructions for properly formatting your file](#formatting-your-template-data-with-excel)).
 5. If there are no problems with your file, the name of the file uploaded will be displayed. Select **Next** to continue. (If you need to change the file, select Upload a different file).
-    - If there’s an error with your file, an error message at the top explains what’s wrong. You’ll need to fix and re-upload your file. Errors will result if your spreadsheet is formatted improperly, or if there’s invalid information in certain fields (refer again to the [formatting instructions](#formatting-your-template-data-with-excel)).  
+    - If there’s an error with your file, an error message at the top explains what’s wrong. You’ll need to fix your file and upload it again. Errors will result if your spreadsheet is formatted improperly, or if there’s invalid information in certain fields (refer again to the [formatting instructions](#formatting-your-template-data-with-excel)).  
     
 6. The **Review and finish** screen shows the number of improvement actions and controls and the maximum score for the template. When ready to approve, select **Create template.** (If you need to make changes, select **Back**.)
 7. The last screen confirms a new template has been created. Select **Done** to exit the wizard.
@@ -80,7 +78,7 @@ When filling out your spreadsheet with template data, the spreadsheet  **must in
 
 The **Template** tab is required. The information in this tab provides metadata about the template. There are four required columns. The columns must retain the order on the Excel sheet as listed below. You can add your own column **after** the four columns to provide your own dimensions. If you do this, be sure to add them to the **Dimensions** tab using the [instructions below](#dimensions-tab).
 
-- **title**: This is the title for your template, which must be unique. It can't share a name with another template you have in Compliance Manager, whether it's a template you already created, or a pre-configured template provided by Microsoft.
+- **title**: This is the title for your template, which must be unique. It can't share a name with another template you have in Compliance Manager, including your own templates or a Compliance Manager template.
 
 - **product**: This is a required dimension. List the product associated with the template.
 
@@ -116,7 +114,7 @@ The **Actions** tab is required.  It designates improvement actions managed by y
     - **Technical** - actions completed through the use of technology and mechanisms contained in the hardware, software, or firmware components of the information system to protect the confidentiality, integrity, and availability of organizational systems and data (example: multi-factor authentication)
     - **Documentation** - actions implemented through documented policies and procedures establishing and defining the controls required to protect the confidentiality, integrity, and availability of organizational systems, assets, data, and personnel (example: an information security policy)
 
-- **actionScore**: In this required field, provide a numeric score value for your action. It must be a whole number ranging from 1 to 99; it cannot be 0, null, or blank. The higher the number, the greater its value toward improving your compliance posture. For guidance, see below how Microsoft scores its controls:
+- **actionScore**: In this required field, provide a numeric score value for your action. It must be a whole number ranging from 1 to 99; it cannot be 0, null, or blank. The higher the number, the greater its value toward improving your compliance posture. The image below demonstrates how Microsoft scores controls:
 
 ![Compliance Manager controls point values](../media/compliance-score-action-scoring.png "Compliance Manager controls point values")
 
@@ -139,7 +137,7 @@ You can view your existing dimensions by going to **Tenant Management** and sele
 
 You may want to modify a template you’ve already created, such as to add controls, or add or remove improvement actions. The process is similar to the template creation process in that you’ll  upload formatted Excel file with your template data.
 
-However, there are particular details to be aware of as you format your file with changes to existing template data. Therefore, we recommend you review these instructions carefully to ensure you don’t overwrite existing data you want to retain as you make changes.
+However, there are particular details to be aware of as you format your file with changes to existing template data. **We recommend you review these instructions carefully to ensure you don’t overwrite any existing data that you want to retain.**
 
 ### Template modification process steps
 
@@ -147,12 +145,12 @@ To modify a template, follow the steps below:
 
 1. From your **assessment templates** page, select the template you want to modify, which will bring up its details page.
 2. Select **Export to Excel**. An Excel file with all your template data will download. Save the file to your local machine.
-3. Make your template changes by modifying the Excel file according to the [modification instructions listed below](#formatting-your-excel-file-to-modify-a-template).
+3. Make your template changes by modifying the Excel file according to the [modification instructions below](#formatting-your-excel-file-to-modify-a-template).
 4. When you're done making changes to your Excel file, save the file.
 5. At your template’s details page, select **Modify template** to initiate the modification wizard. 
 6. At the **Upload file** screen, select **Browse** to find and upload your Excel file.
 7. If there are no problems with your file, the next screen shows the name of the file uploaded. Select **Next** to continue (if you need to change the file, select **Upload a different file**).
-    - If there’s a problem with your file, an error message at the top explains what’s wrong. You’ll need to fix and re-upload your file. Errors will result if your spreadsheet is formatted improperly, or if there’s invalid information in certain fields.
+    - If there’s a problem with your file, an error message at the top explains what’s wrong. You’ll need to fix your file and upload it again. Errors will result if your spreadsheet is formatted improperly, or if there’s invalid information in certain fields.
 
 8. The **Review and finish** screen shows the number of improvement actions and controls and the maximum score for the template. When ready to approve, select **Next**.
 9. The last screen confirms that the template has been modified. Select **Done** to exit the wizard.
@@ -160,7 +158,7 @@ To modify a template, follow the steps below:
 Your template will now include the changes you made. Any assessments that use this modified template will now show pending updates, and you’ll need to accept the updates to the assessments to reflect the changes made in the template. Learn more about [updates to assessments](compliance-manager-assessments.md#accepting-updates-to-assessments).
 
 > [!NOTE]
-> If you use Compliance Manager in a language other than English, you’ll notice that some text appears in English when you export a template to Excel. The titles of actions (both your improvement actions and Microsoft actions) must be in English in order to be recognized when referenced in controls. If you make changes to an action title, be sure to write it in English so that the file imports correctly.
+> If you use Compliance Manager in a language other than English, you’ll notice that some text appears in English when you export a template to Excel. The titles of actions (both your improvement actions and Microsoft actions) must be in English so that they're recognized by controls. If you make changes to an action title, be sure to write it in English so that the file imports correctly.
 
 ### Formatting your Excel file to modify a template
 
@@ -179,7 +177,7 @@ On the **Templates** tab, you can edit anything in the **title** column, the **i
 
 #### Add an improvement action
 
-1. Go to the **Actions** tab and add your information in the required fields in the first empty row underneath your existing actions.
+1. Go to the **Actions** tab. Add your information in the required fields in the first empty row underneath your existing actions.
 2. Go to your **ControlFamily** tab. Find the row containing the control your improvement action maps to. Add your new action to the **controlActionTitle** column in that row (remember to separate multiple actions in this field with two semi-colons, no space in between).
 3. Save your spreadsheet to your local machine.
 
@@ -212,7 +210,7 @@ Deleting an improvement action from a row in a spreadsheet **does not** remove t
 
 When you import your spreadsheet back into the template, your action will be removed from the template. Removing an action from a template does not completely remove the action. That action can still be referenced by another template.
 
-If you are removing the last improvement action that a control references, then you need to remove the control.
+If you're removing the last improvement action that a control references, then you need to remove the control.
 
 #### Remove a control
 
@@ -220,7 +218,7 @@ To remove a control, follow the same process for removing an improvement action 
 
 ## Export a template
 
-You can export an Excel file that contains all of a template’s data. You’ll need to export a template in order to modify the template, as this will be the Excel file you edit and re-upload in the [modification process](#modify-a-template).
+You can export an Excel file that contains all of a template’s data. You’ll need to export a template in order to modify the template, as this will be the Excel file you edit and upload in the [modification process](#modify-a-template).
 
 To export your template, go to your template details page and select the **Export to Excel** button.
 
