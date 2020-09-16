@@ -49,10 +49,11 @@ And if you'd like to know what's new with other Microsoft cloud services:
 Welcome to Microsoft Ignite - our first online-only Ignite. We hope to see you in one of our sessions: [Microsoft Ignite 2020 Session Catalog](https://myignite.microsoft.com/sessions). Here's just a few of the things we'll be talking about at Ignite.
 
 ### Monitor your most important accounts
-With priority account monitoring, you can monitor and track failed or delayed email messages sent to your users who have a high business impact, like your CEO. You track priority accounts by adding users to your priority accounts list in the Microsoft 365 admin center. Add executives, leaders, managers or other users who have access to sensitive or high priority information. There are two ways to get started:
+
+With priority account monitoring, you can monitor and track failed or delayed email messages sent to your users who have a high business impact, like your CEO. You track priority accounts by adding users to your priority accounts list in the Microsoft 365 admin center. Add executives, managers, or other users who have access to sensitive or high priority information. There are two ways to get started:
 
 1. Go to Users, and then in the "more actions" menu select **Manage priority accounts** to add users to the list.
-2. Go to Setup, and then find the setup task **Monitor your most important accounts** to add users.
+2. Go to **Set up**, and then find the task **Monitor your most important accounts** to add users.
 
 ![Search box has moved to the banner region. Alt+S to search from any page.](../media/MAC-WN-PriorityAccounts.png)
 
@@ -66,38 +67,38 @@ We've started rolling out a new Search experience for the admin center, and we c
 - The Search box moved to the header area where it says "Microsoft 365 admin center" so you now search from any page, not just the Home page. We've even got a shortcut: **Alt+S**.
 - Search is smarter and will give you better results, even faster. Try typing "2fa" to get started.
 - Search results are organized by the type of item or action you can take.
-  - Users: Select the user's name and you can edit that user right there. If you select the "more actions" menu next to their name, you can reset their password. You can search by display name, last name, first name, username or primary email address, and email aliases. But to get an exaxt match, search by primary email address or username.
+  - Users: Select the user's name and you can edit that user right there. If you select the "more actions" menu next to their name, you can reset their password. You can search by display name, last name, first name, username or primary email address, and email aliases. However, to get an exact match, search by primary email address or username.
   - Groups: Edit the group from any page, add members, assign owners.
-  - Actions: Similar to how you can search for a user and then reset their password, you can also search "reset password" from any page and then reset one or more passwords for users.
+  - Actions: Similar to how you can search for a user to reset their password, you can also search "reset password" from any page and then reset one or more passwords.
   - Navigation: Results under Navigation can quickly help you get to a page in the admin center quickly. For example, searching "roles" will take you to the Roles page for Azure AD roles.
   - Settings: Search for any setting related to your organization, the services you subscribe to, and security and privacy settings. 
   - Domains: You can find quick links to your domains, and then the link will take you to that domain's Overview and health page.
   - Documentation: If we can't find a result for you, we'll try to find some documentation to help. It takes a little longer for the curated list of articles to find a match, so wait a second to let Search find the results. 
-  - Feedback: Didn't find what you were looking for? Send us feedback from Search. We will continue to add searching functionalty for more pages and more features across the admin center.
+  - Feedback: Didn't find what you were looking for? Send us feedback from Search. We will continue to add searching functionality for more pages and more features across the admin center.
 
 ### Multi-tenant management
 
 We've developed a set of features for multi-tenant admins like you to get your job done faster and more efficiently.
 
 - Your tenants: Quickly switch between the tenants you manage.
-- All tenants: A new page where you can quickly see the health of all your tenants' services, any open service requests, your products and billing, recommended setup tasks, and the number of users in that tenant.
-- Setup: The multi-tenant Setup page gives you a list view of the Setup page, but organized for many tenants. You can see which features aren't turned on, which tasks are complete for all tenants, tasks that tenants still need to complete. This will help you keep track of feature adoption and to make sure the recommended security setup tasks are always done.
-- Service health: The service health view shows you if any incidents or advisories are affecting the tenants. It'll even tell you how many tenants are affected. Just select an incident to get more information on the overview tab, then switch over to the Tenants affected tab to drill-down and support that tenant.
+- All tenants: A new page where you can quickly see the health of all your tenants' services, open service requests, products and billing, recommended setup tasks, and the number of users in each tenant.
+- Setup: The multi-tenant **Setup** page gives you a list view of the **Setup** page, but organized for many tenants. You can see which features aren't turned on, which tasks are complete for all tenants, and the tasks that tenants still need to complete. This will help you keep track of feature adoption and to make sure the recommended security setup tasks are always done.
+- Service health: The service health view shows you if any incidents or advisories are affecting the tenants. It'll even tell you how many tenants are affected. Just select an incident to get more information on the overview tab, then switch over to the **Tenants affected** tab to drill down and support that tenant.
 
 ![Service health page for multi-tenant with an incident selected and the Tenants affected tab open. The navigation menu has All tenants, Setup, and Service health as the only options.](../media/MAC-WN-MTinServiceHealth.png)
 
 ### Manage changes with Microsoft Planner
 
-In May we announced that you'll soon be able to sync Message center posts to Microsoft Planner and now it's available for everyone to use. This lets you create tasks from messages, assign them, and track them to completion. The first time, you select **Planner syncing** you'll need to do some set up to connect to Planner. 
+In May, we announced that you'll soon be able to sync Message center posts to Microsoft Planner. Now it's available for everyone to use. This feature lets you create tasks from messages, assign them, and track them to completion. The first time, you select **Class Schedule syncing** you'll need to connect to Class Schedule. 
 
 ![Message center page with 'planner syncing' highlighted in the command bar next to the preferences button.](../media/MAC-WN-MCPlannerSync.png)
 
-To learn more about it, checkout this article and video to see how it works: [Track your message center posts in Planner](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner)
+To learn more about it, check out this article and video to see how it works: [Track your message center posts in Planner](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner)
 
 ### Documentation, Training, and Videos
 
-- [What's new with Microsoft 365](https://youtu.be/m1Nu8WJgCDY) video series: This month, we cover new features available in Whiteboard for Teams and on the web, how to automate user provisioning to Azure AD, new Power Automate triggers and actions in Teams, and more. And stay tuned for next month, where we'll have a recap of all the great things happening at Ignite!
-- We did a re-design of the [Microsoft 365 documentation](https://docs.microsoft.com/microsoft-365) page that focuses on solutions first. We'll highlight new solutions as they become available on this page, so keep an eye out.
+- [What's new with Microsoft 365](https://youtu.be/m1Nu8WJgCDY) video series: This month, we cover new features available in Whiteboard for Teams and on the web, how to automate user provisioning to Azure AD, new Power Automate triggers and actions in Teams, and more. Stay tuned for next month, where we'll have a recap of all the great things happening at Ignite!
+- We did a redesign of the [Microsoft 365 documentation](https://docs.microsoft.com/microsoft-365) page that focuses on solutions first. We'll highlight new solutions as they become available on this page, so keep an eye out.
 
 ![New landing page for Microsoft 365 solutions documentation with solutions like "Empower remote workers".](../media/MAC-WN-M365Docspage.png)
 
@@ -107,11 +108,11 @@ To learn more about it, checkout this article and video to see how it works: [Tr
 
 As we're moving into Ignite season at Microsoft, we're not releasing as many features so that we have a lot to talk about during our sessions.
 
-The next update to this article will be on opening day of our first online-only Ignite. And this year, it is free to attend! Check it out, get signed up: [Microsoft Ignite 2020](https://www.microsoft.com/ignite).
+The next update to this article will be on opening day of our first online-only Ignite. And this year, it is free to attend! Check it out and get signed up: [Microsoft Ignite 2020](https://www.microsoft.com/ignite).
 
 ### Your products
 
-There has been a lot of work done in the subscriptions management to make the page faster to load, faster to find what you're looking for, and to meet the web acessibility standards ([WCAG 2.1 guidelines](http://www.w3.org/TR/WCAG21/)).
+There has been numerous work done in the subscriptions management to make the page faster to load, faster to find what you're looking for, and to meet the web accessibility standards ([WCAG 2.1 guidelines](http://www.w3.org/TR/WCAG21/)).
 
 - **Table redesign**: The table was redesigned so that you can group similar subscriptions. Go to **Billing** > **Your products**.
 - **Product details**: Get more details than ever about your subscriptions by selecting the product in the list.
@@ -127,13 +128,13 @@ Domain management can be complicated, and we've released a new feature to make t
 
 ### Docs, training, and videos (July 2020)
 
-[What's new with Microsoft 365](https://youtu.be/m1Nu8WJgCDY) video series: This month, we cover the new Yammer experience for web and mobile, how to integrate the Yammer Communities app for Microsoft Teams, new policy packages to support firstline workers and managers, and more.
+[What's new with Microsoft 365](https://youtu.be/m1Nu8WJgCDY) video series: This month, we cover the new Yammer experience for web and mobile, how to integrate the Yammer Communities app for Microsoft Teams, new policy packages to support Firstline Workers and managers, and more.
 
 ## June 2020
 
 ### Keeping up with Office What's New management
 
-A few months ago, we added a setting that lets you manage the [What's New messages that show up in a user's Office apps](#office-whats-new-management). This month, we released a new Home page card that will help you act quickly and keep track of the **What's New** messages that you want shown to the users in your organization.
+A few months ago, we added a setting that lets you manage the [What's New messages that show up in a user's Office apps](#office-whats-new-management). This month, we released a new **Home** page card that will help you act quickly and keep track of the **What's New** messages that you want shown to your users.
 
 ### Docs, training, and videos (June)
 
@@ -143,11 +144,11 @@ A few months ago, we added a setting that lets you manage the [What's New messag
 
 ### New update channel for Office
 
-On May 12, we announced the availability of a new update channel for Office:  Monthly Enterprise Channel. This update channel provides your users with new Office features once a month, on the 2nd Tuesday of the month.
+On May 12, we announced the availability of a new update channel for Office:  Monthly Enterprise Channel. This update channel provides your users with new Office features once a month, on the second Tuesday of the month.
 
-If you allow your users to self-install Office from the portal, you can select Monthly Enterprise Channel for them. To do this, sign in to the Microsoft 365 admin center and go to **Show all** >**Settings** > **Org settings** > **Services** > **Office software download settings**. If you select **Once a month (Monthly Enterprise Channel)**, then any new self-installs of Office will be configured to use Monthly Enterprise Channel.
+If you allow your users to self-install Office from the portal, you can select Monthly Enterprise Channel for them. To select it, sign in to the Microsoft 365 admin center and go to **Show all** >**Settings** > **Org settings** > **Services** > **Office software download settings**. Select **Once a month (Monthly Enterprise Channel)** for any new self-installs of Office to be configured to use Monthly Enterprise Channel.
 
-In conjunction with the release of Monthly Enterprise Channel, we’re also revising the names of the existing update channels. For example, Monthly Channel is being renamed to Current Channel. The new names take effect on June 9, 2020.
+In conjunction with the release of Monthly Enterprise Channel, we’re also revising the names of the existing update channels. For example, Monthly Channel is being renamed to Current Branch. The new names take effect on June 9, 2020.
 
 For more information, see [Changes to update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/update-channels-changes).
 
@@ -156,23 +157,23 @@ For more information, see [Changes to update channels for Microsoft 365 Apps](ht
 We've added some new Azure Active Directory admin roles to the Microsoft 365 admin center.
 
 - Hybrid identity admin role gives users permission to manage cloud provisioning and authentication services.
-- Network admin role lets users manage network locations and review network insights for Microsoft 365 Software as a Service apps.
+- Network admin role lets users manage network locations and review network insights for Microsoft 365 Software as Service apps.
 - Printer admin role grants permission to manage all aspects of printers and printer connections.
 - Printer technician is a subset of the Printer admin role where those users can register and unregister printers, and update printer status.
 To find out more about these roles, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ### Export groups list
 
-We've heard from a lot of admins that they need to share information about groups and their usage to people who don't have access to the admin centers. You can now export the Groups list to a CSV file for auditing purposes, which means you can throw out that old PowerShell script. To try it out, go to **Groups** > **Groups**, and then select **Export groups** from the command bar.
+We've heard from numerous admins that they need to share information about groups and their usage to people who don't have access to the admin centers. You can now export the Groups list to a CSV file for auditing purposes, which means you can throw out that old PowerShell script. To try it out, go to **Groups** > **Groups**, and then select **Export groups** from the command bar.
 
 ### Microsoft 365 solution and architecture center
 
-Just this month, we released a new site on [https://docs.microsoft.com](https://docs.microsoft.com) called the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center), which brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant collaboration. In this center, you'll find:
+This month, we released a new site on [https://docs.microsoft.com](https://docs.microsoft.com) called the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)to bring together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant collaboration. In this center, you'll find:
 
 - Foundational solution guidance
 - Workload solutions and scenario guidance
 - Solution and architecture illustrations (The posters!!!)
-- Industry specific guidance
+- Industry-specific guidance
 - Enterprise architecture design principals
 
 ### Docs, training, and videos (May)
