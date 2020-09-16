@@ -97,7 +97,7 @@ In ATP P2, the primary hunting tool is called **Threat Explorer** rather than Re
 
 ## Office 365 ATP Plan 1 vs. Plan 2 cheat sheet
 
-This section is included as a quick-reference, but is generally useful in understanding what you've gotten in your subscription.
+This quick-reference will help you understand what capabilities come with each ATP subscription. When combined with your knowledge of EOP features, it can help business decision makers determine what ATP is best for their needs.
 
 |Office 365 ATP Plan 1|Office 365 ATP Plan 2|
 |---|---|
