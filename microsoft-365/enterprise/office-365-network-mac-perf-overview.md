@@ -42,7 +42,7 @@ Measurement samples and office locations should start to appear 24 hours after t
 
 ### 2. Add locations and provide LAN subnet information
 
-For this option neither Windows Location Services nor Wi-Fi are required. You need OneDrive for Windows version 20.161 or above installed on each commputer at the location.
+For this option neither Windows Location Services nor Wi-Fi are required. You need OneDrive for Windows version 20.161 or above installed on each computer at the location.
 
 You also need to add locations in the Admin Center network connectivity page or to import those from a CSV file. The locations added must include your office LAN subnet information.
 
@@ -52,7 +52,7 @@ Measurement samples and office locations should start to appear 24 hours after t
 
 ### 3. Manually gather test reports with the Microsoft 365 network connectivity test tool
 
-For this option you need to identify a person at each location. Ask them to browser to [Microsoft 365 network connectivity test](https://connectivity.office.com) on a Windows machine that they have administrative permissions on. On the web site, they need to sign-in to their Office 365 account on the same tenant that you want to see the results. Then they click Run test. During the test there is a downloaded Connectivity test EXE. THey need to open and execute that also. Once the tests are completed, the test result is uploaded to Microsoft.
+For this option you need to identify a person at each location. Ask them to browser to [Microsoft 365 network connectivity test](https://connectivity.office.com) on a Windows machine that they have administrative permissions on. On the web site, they need to sign-in to their Office 365 account on the same tenant that you want to see the results. Then they click Run test. During the test there is a downloaded Connectivity test EXE. They need to open and execute that also. Once the tests are completed, the test result is uploaded to Microsoft.
 
 Test reports are linked to a location if it was added with LAN subnet information, otherwise they are shown at the city location only.
 
