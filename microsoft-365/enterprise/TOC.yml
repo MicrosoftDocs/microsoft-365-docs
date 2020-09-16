@@ -273,6 +273,8 @@
       items: 
         - name: Add a domain
           href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+        - name: Setup guides
+          href: setup-guides-for-microsoft-365.md
     - name: Multi-geo
       items: 
         - name: Microsoft 365 Multi-Geo
