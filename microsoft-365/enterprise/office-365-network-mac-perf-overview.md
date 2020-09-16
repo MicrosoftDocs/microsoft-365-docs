@@ -166,8 +166,8 @@ In the CSV file a discovered city location is labeled **City**, and a manually a
 1. Click the **Download current office locations (.csv)** link to export the current locations list to a CSV file, and save it to your local hard disk. This will provide you with a correctly formatted CSV with column headings to which you can add locations. You can leave the existing exported locations as they are; they will not be duplicated when you import the updated CSV. If you wish to change the address of an existing location, it will be updated when you import the CSV. You cannot change the address of a discovered city.
 1. Open the CSV and add your locations by filling out the following fields on a new line for each location you want to add. Leave all other fields blank; values you enter in other fields will be ignored.
    1. **Address** (required): The physical address of the office
-   1. **Latitude** (optional): Populated from Bing maps lookup if blank
-   1. **Longitude** (optional): Populated from Bing maps lookup if blank
+   1. **Latitude** (optional): Populated from Bing maps lookup of the Address if blank
+   1. **Longitude** (optional): Populated from Bing maps lookup of the Address if blank
    1. **Egress IP Address ranges 1-5** (optional): For each range, enter the circuit name followed by a space separated list of valid IPv4 or IPv6 CIDR addresses. These values are used to differentiate multiple office locations where you use the same LAN subnet IP Addresses.
    1. **LanIps** (required): List the LAN subnet ranges in use at this office location.
 1. When you have added your office locations and saved the file, click the **Browse** button next to the **Upload the completed** field and select the saved CSV file.
@@ -205,3 +205,5 @@ The internet egress location is the location where your network traffic exits yo
 [Microsoft 365 connectivity test in the M365 Admin Center (preview)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)
+
+[Microsoft 365 network connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)
