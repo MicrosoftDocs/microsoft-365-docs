@@ -249,7 +249,7 @@ Click **Manage incident**. Set the status to **Resolve incident** and select the
 <p></p>
 Once the incident is resolved, it will close all of the associated alerts in Microsoft Threat Protection and in the related portals.
 
-![Screenshot of the incidents page with the open Manage incident panel where you can click the switch to resolve incident](../../media/mtp/fig17.png) 
+![Screenshot of the incidents page with the open Manage incident panel where you can click the switch to resolve incident](../../media/mtp/fig16.png) 
 
 <br>
 This wraps up the attack simulation for the incident management and automated investigation and remediation scenarios. The next simulation will take you through proactive threat hunting for potentially-malicious files. 
@@ -264,7 +264,7 @@ This wraps up the attack simulation for the incident management and automated in
 ### Hunting environment requirements
 There is a single internal mailbox and device required for this scenario. You will also need an external email account to send the test message.
 
-1.	Verify that your tenant has enabled [Microsoft Threat Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable#starting-the-service).
+1.	Verify that your tenant has [enabled Microsoft Threat Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable#starting-the-service).
 2.	Identify a target mailbox to be used for receiving email.
     a.	This mailbox must be monitored by Office 365 ATP
     b.	The device from requirement 3 needs to access this mailbox
@@ -281,9 +281,9 @@ There is a single internal mailbox and device required for this scenario. You wi
 
 **Go hunting**
 1.	Open the security.microsoft.com portal.
-2.	Navigate to Hunting > Advanced hunting.
+2.	Navigate to **Hunting > Advanced hunting**.
 
-![Screenshot of advanced hunting in the M365 Security portal navigation bar](../../media/mtp/fig18.png) 
+![Screenshot of advanced hunting in the M365 Security portal navigation bar](../../media/mtp/fig17.png) 
 
 3.	Build a query that starts by gathering email events.
     a.	From the query pane, select New.
@@ -295,7 +295,7 @@ EmailEvents
 
 c.	Change the time frame to the last 24 hours. Assuming the email you sent when you ran the simulation above was in the past 24 hours, otherwise change the time frame.
 ![Screenshot of where you can change the time frame. Open the drop-down menu to choose from range of time frame options
-](../../media/mtp/fig19.png) 
+](../../media/mtp/fig18.png) 
 
 
 d.	Run the query.  You may have many results depending on the environment for the pilot.  
@@ -303,15 +303,15 @@ d.	Run the query.  You may have many results depending on the environment for th
 >[!NOTE]
 >See the next step for filtering options to limit data return.
 
-![Screenshot of the advanced hunting query results](../../media/mtp/fig20.png) 
+![Screenshot of the advanced hunting query results](../../media/mtp/fig19.png) 
 
 >[!NOTE]
 >Advanced hunting displays query results as tabular data. You can also opt to view the data in other format types such as charts.    
 
-e.	Look at the results and see if you can identify the email you opened.  It may take up to 2 hours for the message to show up in advanced hunting. If the email environment is large and there are many results, you might want to use the Show Filters option to find the message. 
+e.	Look at the results and see if you can identify the email you opened.  It may take up to 2 hours for the message to show up in advanced hunting. If the email environment is large and there are many results, you might want to use the **Show Filters option** to find the message. 
 
-In the sample, the email was sent from a Yahoo account. Click the + icon beside yahoo.com under the SenderFromDomain section and then click Apply to add the selected domain to the query.  You should use the domain or email account that was used to send the test message in step 1 of Run the Simulation to filter your results.  Run the query again to get a smaller result set to verify that you see the message from the simulation.
-![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig21.png) 
+In the sample, the email was sent from a Yahoo account. Click the **+** icon beside **yahoo.com** under the SenderFromDomain section and then click **Apply** to add the selected domain to the query.  You should use the domain or email account that was used to send the test message in step 1 of Run the Simulation to filter your results.  Run the query again to get a smaller result set to verify that you see the message from the simulation.
+![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
 
 
 ```
@@ -320,10 +320,10 @@ EmailEvents
 ```
 
 f.	Click the resulting rows from the query so you can inspect the record.
-![Screenshot of the inspect record panel which opens up when an advanced hunting result is selected](../../media/mtp/fig22.png) 
+![Screenshot of the inspect record side panel which opens up when an advanced hunting result is selected](../../media/mtp/fig21.png) 
 
 
-4.	Now that you have verified that you can see the email, add a filter for the attachments. Focus on all emails with attachments in the environment. For this scenario, focus on inbound emails, not those that are being sent out from your environment. Remove any filters you have added to locate your message and add “| where AttachmentCount > 0 and EmailDirection == “Inbound””
+4.	Now that you have verified that you can see the email, add a filter for the attachments. Focus on all emails with attachments in the environment. For this scenario, focus on inbound emails, not those that are being sent out from your environment. Remove any filters you have added to locate your message and add “| where **AttachmentCount > 0** and **EmailDirection** == **“Inbound””**
 
 The following query will show you the result with a shorter list than your initial query for all email events:
 
@@ -333,9 +333,9 @@ EmailEvents
 
 ```
 
-5.	Next, include the information about the attachment (such as: file name, hashes) to your result set. To do so, join the EmailAttachmentInfo table. The common fields to use for joining, in this case are NetworkMessageId and RecipientObjectId
+5.	Next, include the information about the attachment (such as: file name, hashes) to your result set. To do so, join the **EmailAttachmentInfo** table. The common fields to use for joining, in this case are **NetworkMessageId** and **RecipientObjectId**.
 
-The following query also includes an additional line “| project-rename EmailTimestamp=Timestamp” that will help identify which timestamp was related to the email versus timestamps related to file actions which you will add in the next step.
+The following query also includes an additional line “| **project-rename EmailTimestamp=Timestamp**” that will help identify which timestamp was related to the email versus timestamps related to file actions which you will add in the next step.
 
 ```
 EmailEvents 
@@ -344,7 +344,7 @@ EmailEvents
 | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
 ```
 
-6.	Next, use the SHA256 value from the EmailAttachmentInfo table to find DeviceFileEvents (file actions that happened on the endpoint) for that hash.  The common field here will be the SHA256 hash for the attachment.
+6.	Next, use the **SHA256** value from the **EmailAttachmentInfo** table to find **DeviceFileEvents** (file actions that happened on the endpoint) for that hash.  The common field here will be the SHA256 hash for the attachment.
 
 The resulting table now includes details from the endpoint (Microsoft Defender ATP) such as device name, what action was done (in this case, filtered to only include FileCreated events), and where the file was stored. The account name associated with the process will also be included.
 
@@ -359,7 +359,7 @@ EmailEvents
 
 You have now created a query that will identify all inbound emails where the user opened or saved the attachment. You can also refine this query to filter for specific sender domains, file sizes, file types, and so on.
 
-7.	Functions are a special sort of join which let you pull more TI data about a file like its prevalence, signer and issuer info, etc.  To get more details on the file, use the FileProfile() function enrichment:
+7.	Functions are a special sort of join which let you pull more TI data about a file like its prevalence, signer and issuer info, etc.  To get more details on the file, use the **FileProfile()** function enrichment:
 
 ```
 EmailEvents 
@@ -381,7 +381,7 @@ Custom detections will run the query according to the frequency you set, and the
 
 1.	On the query page, remove lines 7 and 8 that were added in step 7 of the Go hunting instructions and click **Create detection rule**. 
 
-![Screenshot of where yoy can click create detection rule in the the advanced hunting page](../../media/mtp/fig23.png) 
+![Screenshot of where you can click create detection rule in the the advanced hunting page](../../media/mtp/fig22.png) 
 
 >[!NOTE]
 >If you click **Create detection rule** and you have syntax errors in your query, your detection rule won’t be saved. Double-check your query to ensure there’s no errors. 
@@ -389,35 +389,35 @@ Custom detections will run the query according to the frequency you set, and the
 
 2.	Fill in the required fields with the  information that will allow the security team to understand the alert, why it was generated, and what actions you expect them to take. 
 
-![Screenshot of the create detection rule page where you can define the alert details](../../media/mtp/fig24.png)
+![Screenshot of the create detection rule page where you can define the alert details](../../media/mtp/fig23.png)
 
 Ensure that you fill out the fields with clarity to help give the next user an informed decision about this detection rule alert 
 
-3.	Select what entities are impacted in this alert. In this case, select the Device and the Mailbox.
+3.	Select what entities are impacted in this alert. In this case, select **Device** and **Mailbox**.
 
-![Screenshot of the create detection rule page where you can choose the parameters of the impacted entities](../../media/mtp/fig25.png)
+![Screenshot of the create detection rule page where you can choose the parameters of the impacted entities](../../media/mtp/fig24.png)
  
 
 4.	Determine what actions should take place if the alert is triggered. In this case, run an antivirus scan, though other actions could be taken. 
 
-![Screenshot of the create detection rule page where you can run an antivirus scan when an alert is triggered to help address threats](../../media/mtp/fig26.png) 
+![Screenshot of the create detection rule page where you can run an antivirus scan when an alert is triggered to help address threats](../../media/mtp/fig25.png) 
 
 5.	Select the scope for the alert rule. Since this query involve devices, the device groups are relevant in this custom detection according to Microsoft Defender ATP context.  When creating a custom detection that does not include devices as impacted entities, scope does not apply.  
 
-![Screenshot of the create detection rule page where you can set the scope for the alert rule manages your expectations for the results that you’ll see](../../media/mtp/fig27.png) 
+![Screenshot of the create detection rule page where you can set the scope for the alert rule manages your expectations for the results that you’ll see](../../media/mtp/fig26.png) 
 
 For this pilot, you might want to limit this rule to a subset of testing devices in your production environment.
 
 6.	Select **Create**. Then, select **Custom detection rules** from the navigation panel.
  
-![Screenshot of Custom detection rules option in the menu](../../media/mtp/fig28a.png) 
+![Screenshot of Custom detection rules option in the menu](../../media/mtp/fig27a.png) 
 
 ![Screenshot of the detection rules page which displays the rule and execution details
-](../../media/mtp/fig28b.png) 
+](../../media/mtp/fig27b.png) 
 
 From this page, you can select the detection rule which will open a details page. 
 
-![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig29.png) 
+![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
 
 ## Next step
 |||
