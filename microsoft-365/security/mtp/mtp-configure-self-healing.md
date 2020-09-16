@@ -28,6 +28,8 @@ Microsoft Threat Protection includes power self-healing capabilities that can sa
 
 3. [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups).
 
+4. [Review your security and alert policies in Office 365](#review-your-security-and-alert-policies-in-office-365).
+
 ## Prerequisites for self-healing in Microsoft Threat Protection
 
 |Requirement |Details |
