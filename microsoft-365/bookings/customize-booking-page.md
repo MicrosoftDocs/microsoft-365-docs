@@ -34,7 +34,7 @@ The section below gives you information about setting up your bookings page and 
 
 - **Booking page access control: Require a Microsoft 365 account from my organization to book**  Selecting this option will only allow those within your organization to view your page or book any services. Access to the page is authorized via credential checks to ensure the visitor belongs to an account within the tenant.
 
-- **Booking page access control: Disable direct search engine indexing of booking page** This setting prevents your page from appearing in the search results for Google, Bing, or other search engines. Deselecting this box will ensure access to the page is limited to the generated page link.
+- **Booking page access control: Disable direct search engine indexing of booking page** This setting prevents your page from appearing in the search results for Google, Bing, or other search engines. Selecting this box will ensure access to the page is limited to the generated page link.
 
 - **Customer data usage consent** When selected, text requesting the user's or customer's consent for your organization to use their data will appear on the Self-Service page. The box will have to be checked by the user in order to to complete the booking.
 
