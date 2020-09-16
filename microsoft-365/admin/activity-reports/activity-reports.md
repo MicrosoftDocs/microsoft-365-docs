@@ -136,13 +136,25 @@ Depending on your subscription, here are the available reports.
 
 ::: moniker range="o365-worldwide"
 
-- [Microsoft Teams user activity](microsoft-teams-user-activity.md)
+- [Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Microsoft Teams device usage](microsoft-teams-device-usage.md)
+- [Microsoft Teams user activity for Department of Defense and Government Community Cloud](microsoft-teams-user-activity.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Microsoft Teams device usage for Department of Defense and Government Community Cloud](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 
