@@ -76,7 +76,7 @@ Gains with **ATP P1** (to date):
 
 |Prevent/Detect  |Investigate  |Respond  |
 |---------|---------|---------|
-| Technologies include everything in EOP plus:<u1><li>Safe attachments</li><li>Safe links<li>ATP protection for workloads (ex. SharePoint Online, Teams, OneDrive for Business)</li>Time-of-click protection in email, Office clients, and Teams</li><li>User and domain impersonation protection</li><li>Alerts, and SIEM integration API for alerts</li>|<li>SIEM integration API for detections</li><li>**Real-time detections tool**</li><li>URL trace</li>|<li>Same</li></u1>
+| Technologies include everything in EOP plus:<u1><li>Safe attachments</li><li>Safe links<li>ATP protection for workloads (ex. SharePoint Online, Teams, OneDrive for Business)</li><li>Time-of-click protection in email, Office clients, and Teams</li><li>User and domain impersonation protection</li><li>Alerts, and SIEM integration API for alerts</li>|<li>SIEM integration API for detections</li><li>**Real-time detections tool**</li><li>URL trace</li>|<li>Same</li></u1>
 
 So, ATP P1 expands on the ***prevention*** side of the house, and adds extra forms of ***detection***.
 
