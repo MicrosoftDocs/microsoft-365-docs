@@ -4833,7 +4833,6 @@ These are the entities that are in the EU Social Security Number or equivalent i
 These entities are in the EU Tax identification number sensitive information type.
 
 - [Austria](#austria-tax-identification-number)
-- [Bulgaria](#bulgaria-tax-identification-number)
 - [Cyprus](#cyprus-tax-identification-number)
 - [France](#france-tax-identification-number)
 - [Germany](#germany-tax-identification-number)
