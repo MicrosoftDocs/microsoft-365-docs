@@ -265,19 +265,19 @@ This wraps up the attack simulation for the incident management and automated in
 ### Hunting environment requirements
 There is a single internal mailbox and device required for this scenario. You will also need an external email account to send the test message.
 
-    1.	Verify that your tenant has enabled [Microsoft Threat Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable#starting-the-service).
-    2.	Identify a target mailbox to be used for receiving email.
-        a.	This mailbox must be monitored by Office 365 ATP
-        b.	The device from requirement 3 needs to access this mailbox
-    3.	Configure a test device:
-        a.	Make sure you are using Windows 10 version 1903 or later version.
-        b.	Join the test device to the test domain.
-        c.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see [this troubleshooting topic](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+1.	Verify that your tenant has enabled [Microsoft Threat Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable#starting-the-service).
+2.	Identify a target mailbox to be used for receiving email.
+    a.	This mailbox must be monitored by Office 365 ATP
+    b.	The device from requirement 3 needs to access this mailbox
+3.	Configure a test device:
+    a.	Make sure you are using Windows 10 version 1903 or later version.
+    b.	Join the test device to the test domain.
+    c.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see [this troubleshooting topic](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
         d.	[Onboard to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 ### Run the simulation
-    1.	From an external email account, send an email to the mailbox identified in step 2 of the test environment requirements section. Include an attachment that will be allowed through any existing email filter policies.  This file does not need to be malicious or an executable. Suggested file types are <i>.pdf</i>, <i>.exe</i> (if allowed), or Office document such as a Word file.
-    2.	Open the sent email from the device configured as defined in step 3 of the test environment requirements section. Either open the attachment or save the file to the device.
+1.	From an external email account, send an email to the mailbox identified in step 2 of the test environment requirements section. Include an attachment that will be allowed through any existing email filter policies.  This file does not need to be malicious or an executable. Suggested file types are <i>.pdf</i>, <i>.exe</i> (if allowed), or Office document such as a Word file.
+2.	Open the sent email from the device configured as defined in step 3 of the test environment requirements section. Either open the attachment or save the file to the device.
 
 
 **Go hunting**
