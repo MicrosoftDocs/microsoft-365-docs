@@ -247,4 +247,4 @@ Congratulations! You've just created your Microsoft Threat Protection trial lab 
 Next, you can simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.
 
 ## Next steps
-[Generate a test alert](generate-test-alert.md).
+[Run the attack simulation]()
