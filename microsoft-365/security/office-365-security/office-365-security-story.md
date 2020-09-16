@@ -15,7 +15,7 @@ ms.collection:
 description: "Security in Office 365, from EOP to ATP Plans 1 and 2, Standard vs. Strict security configurations, and more, so that you can understand what you have, and how to secure your properties."
 ---
 
-# Office 365 Security
+# Office 365 Security outline
 
 Because the security features in Office 365 are comprehensive, there's a lot to look at, and where you start with your Office 365 security can depend on the needs of your organization. You may sense there's more to it than can be seen by browsing Billing > Your Products in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/#/homepage), but it may not be obvious where to begin.
 
@@ -24,7 +24,7 @@ This article will introduce you to your new security properties in the Cloud. Wh
 > [!TIP]
 > If you're using the docs.microsoft.com table of contents to reach [Office 365 Security](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap?view=o365-worldwide) articles, you'll notice that table of contents organization begins with Evaluation and Deployment (including migration) and then continues into prevention, detection, investigation, and response. <p> This structure is divided so that Security Administration topics are followed by Security Operations topics. If you're a new member of either job role, use the link in this tip, and your knowledge of the table of contents, to help learn the space. Remember to use feedback links and rate articles as you go. Feedback helps us improve.
 
-## Office 365 security features, spelled out
+## Office 365 security spelled out
 
 Every Office 365 subscription comes with security capabilities. The goals and actions that you can take depend on the focus of these different subscriptions. In Office 365 security, there are three main security services (or products) tied to your subscription type:
 
@@ -56,7 +56,7 @@ If you have an Office 365 E3, or below, you have EOP, but with the option to buy
 > [!TIP]
 > If your subscription is neither Office 365 E3 or E5, you can still check to see if you have the option to evaluate and upgrade to ATP P1. If you're interested, [this webpage](https://www.microsoft.com/en-us/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids) lists subscriptions eligible for the ATP P1 upgrade (check the end of the page for the fine-print).
 
-## Office 365 security capabilities from EOP to ATP P1/P2
+## The Office 365 security ladder from EOP to ATP
 
 What makes adding ATP plans an advantage to pure EOP threat management can be difficult to tell at first glance. To help sort out if an upgrade path is right for your organization, let's look at the capabilities of each product when it comes to:
 
@@ -95,7 +95,7 @@ In ATP P2, the primary hunting tool is called **Threat Explorer** rather than Re
 > [!TIP]
 > EOP and ATP are also different when it comes to end-users. In EOP and ATP P1, the focus is *awareness*, and so those two services include the *Report message Outlook add-in* so users can report emails they find suspicious, for further analysis. <p> In ATP P2 (which contains everything in EOP and P1), the focus shifts to *further training* for end-users, and so the Security Operations Center has access to a powerful *Threat Simulator* tool, and the end-user metrics it provides.
 
-## Office 365 ATP Plan 1 and Plan 2, Cheatsheet
+## Office 365 ATP Plan 1 vs. Plan 2 cheat sheet
 
 This section is included as a quick-reference, but is generally useful in understanding what you've gotten in your subscription.
 
