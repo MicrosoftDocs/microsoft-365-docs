@@ -77,7 +77,7 @@ Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to
 
 1. Must be running Windows 10 build 1809 or up.
 2. All devices must be [Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), or Hybrid Azure AD joined.
-3. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+3. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 ## Onboarding devices into device management
 
@@ -97,7 +97,7 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
    ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
    > [!NOTE]
-   > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft    support.
+   > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
 
 3. Choose **Device management** to open the **Devices** list. The list will be empty until you onboard devices.
 4. Choose **Onboarding** to begin the onboarding process.
