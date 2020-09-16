@@ -186,7 +186,7 @@ The following figure displays the selected IP Address details page (clicking on 
 
 **Alert: User and IP address reconnaissance (SMB) (Source: Azure ATP)**
 Enumeration using Server Message Block (SMB) protocol enables attackers to get recent user logon information that helps them move laterally through the network to access a specific sensitive account.
-<p></p>
+
 In this detection, an alert is triggered when the SMB session enumeration runs against a domain controller.
 
 ![Screenshot of the Azure ATP alert for User and IP address reconnaissance](../../media/mtp/fig10.png) 
@@ -283,7 +283,7 @@ There is a single internal mailbox and device required for this scenario. You wi
 1.	Open the security.microsoft.com portal.
 2.	Navigate to **Hunting > Advanced hunting**.
 
-![Screenshot of advanced hunting in the M365 Security portal navigation bar](../../media/mtp/fig17.png) 
+    ![Screenshot of advanced hunting in the M365 Security portal navigation bar](../../media/mtp/fig17.png) 
 
 3.	Build a query that starts by gathering email events.
     a.	From the query pane, select New.
@@ -293,24 +293,24 @@ There is a single internal mailbox and device required for this scenario. You wi
 EmailEvents 
 ```                                        
 
-c.	Change the time frame to the last 24 hours. Assuming the email you sent when you ran the simulation above was in the past 24 hours, otherwise change the time frame.
-![Screenshot of where you can change the time frame. Open the drop-down menu to choose from range of time frame options](../../media/mtp/fig18.png) 
+   c.	Change the time frame to the last 24 hours. Assuming the email you sent when you ran the simulation above was in the past 24 hours, otherwise change the time frame.
+   ![Screenshot of where you can change the time frame. Open the drop-down menu to choose from range of time frame options](../../media/mtp/fig18.png) 
 
 
-d.	Run the query.  You may have many results depending on the environment for the pilot.  
+   d.	Run the query.  You may have many results depending on the environment for the pilot.  
 
 >[!NOTE]
 >See the next step for filtering options to limit data return.
 
-![Screenshot of the advanced hunting query results](../../media/mtp/fig19.png) 
+   ![Screenshot of the advanced hunting query results](../../media/mtp/fig19.png) 
 
 >[!NOTE]
 >Advanced hunting displays query results as tabular data. You can also opt to view the data in other format types such as charts.    
 
-e.	Look at the results and see if you can identify the email you opened.  It may take up to 2 hours for the message to show up in advanced hunting. If the email environment is large and there are many results, you might want to use the **Show Filters option** to find the message. 
+   e.	Look at the results and see if you can identify the email you opened.  It may take up to 2 hours for the message to show up in advanced hunting. If the email environment is large and there are many results, you might want to use the **Show Filters option** to find the message. 
 
-In the sample, the email was sent from a Yahoo account. Click the **+** icon beside **yahoo.com** under the SenderFromDomain section and then click **Apply** to add the selected domain to the query.  You should use the domain or email account that was used to send the test message in step 1 of Run the Simulation to filter your results.  Run the query again to get a smaller result set to verify that you see the message from the simulation.
-![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
+   In the sample, the email was sent from a Yahoo account. Click the **+** icon beside **yahoo.com** under the SenderFromDomain section and then click **Apply** to add the selected domain to the query.  You should use the domain or email account that was used to send the test message in step 1 of Run the Simulation to filter your results.  Run the query again to get a smaller result set to verify that you see the message from the simulation.
+   ![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
 
 
 ```
@@ -318,8 +318,8 @@ EmailEvents
 | where SenderMailFromDomain == "yahoo.com"
 ```
 
-f.	Click the resulting rows from the query so you can inspect the record.
-![Screenshot of the inspect record side panel which opens up when an advanced hunting result is selected](../../media/mtp/fig21.png) 
+   f.	Click the resulting rows from the query so you can inspect the record.
+   ![Screenshot of the inspect record side panel which opens up when an advanced hunting result is selected](../../media/mtp/fig21.png) 
 
 
 4.	Now that you have verified that you can see the email, add a filter for the attachments. Focus on all emails with attachments in the environment. For this scenario, focus on inbound emails, not those that are being sent out from your environment. Remove any filters you have added to locate your message and add “| where **AttachmentCount > 0** and **EmailDirection** == **“Inbound””**
@@ -399,7 +399,7 @@ Ensure that you fill out the fields with clarity to help give the next user an i
 
 4.	Determine what actions should take place if the alert is triggered. In this case, run an antivirus scan, though other actions could be taken. 
 
-![Screenshot of the create detection rule page where you can run an antivirus scan when an alert is triggered to help address threats](../../media/mtp/fig25.png) 
+    ![Screenshot of the create detection rule page where you can run an antivirus scan when an alert is triggered to help address threats](../../media/mtp/fig25.png) 
 
 5.	Select the scope for the alert rule. Since this query involve devices, the device groups are relevant in this custom detection according to Microsoft Defender ATP context.  When creating a custom detection that does not include devices as impacted entities, scope does not apply.  
 
