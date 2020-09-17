@@ -1,5 +1,5 @@
 ---
-title: Configure self-healing capabilities in Microsoft Threat Protection
+title: Configure automated investigation and response capabilities in Microsoft Threat Protection
 description: Self-healing includes automated investigation and remediation actions
 search.appverid: MET150  
 author: denisebmsft
@@ -16,9 +16,9 @@ ms.reviewer: evaldm, isco
 f1.keywords: CSH 
 ---
 
-# Configure self-healing capabilities in Microsoft Threat Protection
+# Configure automated investigation and response capabilities in Microsoft Threat Protection
 
-Microsoft Threat Protection includes powerful [self-healing capabilities](mtp-autoir.md) that can save your security operations team much time and effort. Self-healing capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale. This article describes how to configure self-healing capabilities in Microsoft Threat Protection.
+Microsoft Threat Protection includes powerful [automated investigation and response capabilities](mtp-autoir.md) that can save your security operations team much time and effort. Self-healing capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale. This article describes how to configure self-healing capabilities in Microsoft Threat Protection.
 
 To configure self-healing capabilities, follow these steps:
 
@@ -33,7 +33,7 @@ To configure self-healing capabilities, follow these steps:
 Then, [review pending and completed actions in the Action center](#review-pending-and-completed-actions-in-the-action-center). 
 
 
-## Prerequisites for self-healing in Microsoft Threat Protection
+## Prerequisites for automated investigation and response in Microsoft Threat Protection
 
 |Requirement |Details |
 |--|--|
@@ -41,7 +41,7 @@ Then, [review pending and completed actions in the Action center](#review-pendin
 |Network requirements |- [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) enabled<br/>- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) configured<br/>- [Microsoft Cloud App Security integrated with Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
 |Windows machine requirements |- Windows 10, version 1709 or later installed (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information/)) with the following threat protection services configured:<br/>- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) <br/>- [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
 |Protection for email content and Office files |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) configured |
-|Permissions |- To configure self-healing capabilities, you must have the Global Administrator or Security Administrator role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).<br/><br/>- To work with self-healing capabilities, such as reviewing, approving, or rejecting pending actions, refer to [Required permissions for Action center tasks](mtp-action-center.md#required-permissions-for-action-center-tasks). |
+|Permissions |- To configure automated investigation and response capabilities, you must have the Global Administrator or Security Administrator role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)).<br/><br/>- To work with automated investigation and response capabilities, such as reviewing, approving, or rejecting pending actions, refer to [Required permissions for Action center tasks](mtp-action-center.md#required-permissions-for-action-center-tasks). |
 
 ## Make sure Microsoft Threat Protection is turned on
 
@@ -69,7 +69,7 @@ This task includes reviewing and potentially changing your organization's securi
 
 2. Go to **Settings** > **Permissions** > **Device groups**. 
 
-3. Review your device groups. In particular, look at the **Remediation level** column. We recommend using **Full - remediate threats automatically**.  You might need to create or edit your device groups to get the level of automation you want with self-healing. 
+3. Review your device groups. In particular, look at the **Remediation level** column. We recommend using **Full - remediate threats automatically**.  You might need to create or edit your device groups to get the level of automation you want with automated investigation and response. 
 
 To learn more, see the following articles:
 
@@ -109,7 +109,7 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 ## Review pending and completed actions in the Action center
 
-After you have configured self-healing in Microsoft Threat Protection, your next step is to visit the Action center. There, you can review and approve pending actions, and see remediation actions that were taken automatically.
+After you have configured automated investigation and response in Microsoft Threat Protection, your next step is to visit the Action center. There, you can review and approve pending actions, and see remediation actions that were taken automatically.
 
 To learn more, see [The Action center](mtp-action-center.md).
 

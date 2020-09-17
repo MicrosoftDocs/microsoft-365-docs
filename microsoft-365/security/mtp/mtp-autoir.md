@@ -1,5 +1,5 @@
 ---
-title: Self-healing capabilities in Microsoft Threat Protection 
+title: Automated investigation and response in Microsoft Threat Protection 
 description: Get an overview of automated investigation and response capabilities, also called self-healing, in Microsoft Threat Protection
 keywords: automated, investigation, alert, trigger, action, remediation, self-healing
 search.appverid: met150
@@ -22,12 +22,12 @@ ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
 ---
 
-# Self-healing in Microsoft Threat Protection
+# Automated investigation and response in Microsoft Threat Protection
 
 **Applies to:**
 - Microsoft Threat Protection
 
-As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts keep coming in while an investigation is going on. Security operations teams can feel overwhelmed by the sheer volume of threats they must monitor, protect against, and handle. Microsoft Threat Protection, with self-healing capabilities, can help. 
+As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts keep coming in while an investigation is going on. Security operations teams can feel overwhelmed by the sheer volume of threats they must monitor and protect against. Automated investigation and response capabilities, with self-healing, in Microsoft Threat Protection can help.
 
 Watch the following video to see how self-healing works:
 
@@ -35,9 +35,13 @@ Watch the following video to see how self-healing works:
 
 
 > [!TIP]
-> Self-healing capabilities in Microsoft Threat Protection bring together automated investigation and response capabilities in Office 365 Advanced Threat Protection, automated investigation and remediation in Microsoft Defender Advanced Threat Protection, and threat protection features in [Azure advanced threat detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection) & [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security). 
+> In Microsoft Threat Protection, automated investigation and response, with self-healing, works across your devices, email & content, and identities by bringing together capabilities from: 
+> - [Automated investigation and remediation in Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+> - [Automated investigation and response in Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
+> - [Azure advanced threat detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
+> - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
  
-Self-healing capabilities in Microsoft Threat Protection are a lot like having a virtual analyst in your security operations center. Read this article to learn more about how self-healing works. To configure these capabilities, see [Configure self-healing capabilities in Microsoft Threat Protection](mtp-configure-self-healing.md).
+Automated investigation and response capabilities in Microsoft Threat Protection are a lot like having a virtual analyst in your security operations center. Read this article to learn more about how automated investigation and response works. To configure these capabilities, see [Configure automated investigation and response capabilities in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md).
 
 ## Your virtual analyst
 
@@ -64,7 +68,7 @@ A triggered alert creates an incident, which can start an automated investigatio
 Each investigation generates verdicts (*Malicious*, *Suspicious*, or *No threats found*) for each piece of evidence investigated. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization's security operations team. Pending and completed actions are listed in the [Action center](mtp-action-center.md).
 
 > [!TIP]
-> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives with self-healing in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
+> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives with automated investigation and response in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
 While an investigation is running, any other related alerts that arise are added to the investigation until it completes. If an incriminated entity is seen elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run. 
 
@@ -74,7 +78,7 @@ While an investigation is running, any other related alerts that arise are added
 
 ## Next steps
 
-- [See the prerequisites for self-healing in Microsoft Threat Protection](mtp-configure-self-healing.md#prerequisites-for-self-healing-in-microsoft-threat-protection)
-- [Configure self-healing for your organization](mtp-configure-self-healing.md)
-- [Approve or reject actions related to self-healing](mtp-autoir-actions.md)
+- [See the prerequisites for automated investigation and response in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md#prerequisites-for-automated investigation and response-in-microsoft-threat-protection)
+- [Configure automated investigation and response for your organization](mtp-configure-auto-investigation-response.md)
+- [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
 - [Learn more about the Action center](mtp-action-center.md)

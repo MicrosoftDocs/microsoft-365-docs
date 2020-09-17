@@ -27,7 +27,7 @@ ms.reviewer: evaldm, isco
 **Applies to:**
 - Microsoft Threat Protection
 
-Did [self-healing capabilities](mtp-autoir.md) in Microsoft Threat Protection miss or wrongly detect something? There are steps you can take to fix it. You can:
+Did [automated investigation and response capabilities](mtp-autoir.md) in Microsoft Threat Protection miss or wrongly detect something? There are steps you can take to fix it. You can:
 
 - [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 
@@ -77,6 +77,6 @@ If a remediation action was taken on a device (such as a Windows 10 device) and 
 
 ## See also
 
-- [Approve or reject actions related to self-healing](mtp-autoir-actions.md)
+- [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
 - [Learn more about the Action center](mtp-action-center.md)
 - [Proactively hunt for threats with advanced hunting in Microsoft Threat Protection](advanced-hunting-overview.md)

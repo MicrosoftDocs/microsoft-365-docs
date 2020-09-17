@@ -97,7 +97,7 @@
                 - name: Overview of self-healing
                   href: mtp/mtp-autoir.md
                 - name: Configure self-healing
-                  href: mtp/mtp-configure-self-healing.md
+                  href: mtp/mtp-configure-auto-investigation-response.md
                 - name: Remediation actions
                   href: mtp/mtp-remediation-actions.md
                 - name: The Action center
