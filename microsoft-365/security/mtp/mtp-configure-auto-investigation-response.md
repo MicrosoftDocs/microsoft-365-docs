@@ -107,6 +107,6 @@ To learn more, see [The Action center](mtp-action-center.md).
 
 ## See also
 
-[Remediation actions in MIcrosoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)
+[Remediation actions in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)
 
 [Microsoft Threat Protection: Deploy supported services](https://docs.microsoft.com/microsoft-365/security/mtp/deploy-supported-services)
