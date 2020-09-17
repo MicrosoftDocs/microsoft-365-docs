@@ -81,6 +81,9 @@ Microsoft provides built-in [alert policies](https://docs.microsoft.com/microsof
 
 In order for alert policies to work with automated investigation and response as expected, make sure your [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) features are configured correctly.
 
+> [!NOTE]
+> Although certain alerts and security policies can trigger automated investigations, no remediation actions are taken automatically for email and content. Instead, all remediation actions are pending approval in the [Action center](mtp-action-center.md).
+
 ### To view or change your security settings in Office 365
 
 Security settings in Office 365 help protect email and content. To view or change these settings, follow the guidance in [Protect against threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
