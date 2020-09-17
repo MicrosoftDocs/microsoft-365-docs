@@ -180,7 +180,7 @@ Communication compliance built-in trainable and global classifiers scan communic
 - **Racy images**: Scans for images that are sexually suggestive in nature, but contain less explicit content than images deemed Adult.
 - **Gory images**: Scans for images that depict violence and gore.
 
-The *Adult*, *Racy*, and *Gory* image classifiers scan files in .JPEG, .PNG, .GIF, and .BMP formats. The size for image files must less than 4 megabytes (MB) and the dimensions of the images must be greater than 50x50 pixels and greater than 50 kilobytes (KB) for the image to qualify for evaluation. Image identification is supported for Exchange Online email messages and Microsoft Teams channels and chats.
+The *Adult*, *Racy*, and *Gory* image classifiers scan files in .JPEG, .PNG, .GIF, and .BMP formats. The size for image files must be less than 4 megabytes (MB) and the dimensions of the images must be greater than 50x50 pixels and greater than 50 kilobytes (KB) for the image to qualify for evaluation. Image identification is supported for Exchange Online email messages and Microsoft Teams channels and chats.
 
 The built-in trainable and global classifiers don't provide an exhaustive list of terms or images across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update classifiers at its discretion. While classifiers may assist your organization in monitoring these areas, classifiers aren't intended to provide your organization's sole means of monitoring or addressing such language or imagery. Your organization, not Microsoft, remains responsible for all decisions related to scanning and blocking language and images in these areas.
 
@@ -238,7 +238,7 @@ Protecting the privacy of users that have policy matches is important and can he
 For users with a communication compliance match, you can choose one of the following settings in **Communication compliance settings**:
 
 - **Show anonymized versions of usernames**: User names are anonymized to prevent admins, analysts, data investigators, and reviewers from seeing who is associated with policy alerts. For example, a user 'Grace Taylor' would appear with a randomized pseudonym such as 'AnonIS8-988' in all areas of the communication compliance experience. Choosing this setting anonymizes all users with current and past policy matches and applies to all policies. User profile information in the communication compliance alert details will not be available when this option is chosen. However, user names are displayed when adding new users to existing policies or when assigning users to new policies. If you choose to turn off this setting, user names are displayed for all users that have current or past policy matches.
-- **Do not show anonymized versions of usernames**: User names are displayed for all current and past policy matches for communication compliance alerts. User profile information (the name, title, alias, and organization or department) is displayed for the user for all insider risk management alerts and cases.
+- **Do not show anonymized versions of usernames**: User names are displayed for all current and past policy matches for communication compliance alerts. User profile information (the name, title, alias, and organization or department) is displayed for the user for all communication compliance alerts.
 
 ## Notice templates
 
@@ -329,16 +329,89 @@ If you'd like to change the severity level assigned in an alert policy for a spe
 
 7. Select **Close** to exit the alert policy details page.
 
+## Power Automate flows (preview)
+
+[Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started) is a workflow service that automates actions across applications and services. By using flows from templates or created manually, you can automate common tasks associated with these applications and services. When you enable Power Automate flows for communication compliance, you can automate important tasks for alerts and users. You can configure Power Automate flows to notify managers when users have communication compliance alerts and other applications.
+
+Customers with Microsoft 365 subscriptions that include communication compliance do not need additional Power Automate licenses to use the recommended default communication compliance Power Automate template. The default template can be customized to support your organization and cover core communication compliance scenarios. If you choose to use premium Power Automate features in these templates, create a custom template using the Microsoft 365 compliance connector, or use Power Automate templates for other compliance areas in Microsoft 365, you may need additional Power Automate licenses.
+
+The following Power Automate template is provided to customers to support process automation for communication compliance alerts:
+
+- **Notify manager when a user has a communication compliance alert**: Some organizations may need to have immediate management notification when a user has a communication compliance alert. When this flow is configured and selected, the manager for the case user is sent an email message with the following information about all alerts:
+    - Applicable policy for the alert
+    - Date/Time of the alert
+    - Severity level of the alert
+
+### Create a Power Automate flow
+
+To create a Power Automate flow from a recommended default template, you'll use the **Manage Power Automate flows** option from the **Automate** control when working directly in an alert. To create a Power Automate flow with **Manage Power Automate flows**, you must be a member of at least one communication compliance role group.
+
+Complete the following steps to create a Power Automate flow from a default template:
+
+1. In the Microsoft 365 compliance center, go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+2. From the policy, select the **Pending** tab and select a pending alert.
+3. Select **Power Automate** from the alert action menu.
+4. On the **Power Automate** page, select a default template from the **Communication compliance templates you may like** section on the page.
+5. The flow will list the embedded connections needed for the flow and will display if the connection statuses are available. If needed, update any connections that aren't displayed as available. Select **Continue**.
+6. By default, the recommended flows are pre-configured with the recommended communication compliance and Microsoft 365 service data fields required to complete the assigned task for the flow. If needed, customize the flow components by using the **Show advanced options** control and configuring the available properties for the flow component.
+7. If needed, add any additional steps to the flow by selecting the **New step** button. In most cases, this change should not be needed for the recommended default templates.
+8. Select **Save draft** to save the flow for further configuration later, or select **Save** to complete the configuration for the flow.
+9. Select **Close** to return to the Power Automate flow page. The new template will be listed as a flow on the **My flows** tab and is automatically available from the Power Automate control for the user that created the flow when working with communication compliance alerts.
+
+### Share a Power Automate flow
+
+By default, Power Automate flows created by a user are only available to that user. For other communication compliance users to have access and use a flow, the flow must be shared by the flow creator. To share a flow, you'll use the **Power Automate** control when working directly in an alert.
+
+To share a Power Automate flow, you must be a member of at least one communication compliance role group.
+Complete the following steps to share a Power Automate flow:
+
+1. In the Microsoft 365 compliance center, go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+2. From the policy, select the **Pending** tab and select a pending alert.
+3. Select **Power Automate** from the alert action menu.
+4. On the **Power Automate flows** page, select the **My flows** or **Team flows** tab.
+5. Select the flow to share, then select **Share** from the flow options menu.
+6. On the flow sharing page, enter the name of the user or group you want to add as an owner for the flow.
+7. On the **Connection Used** dialog, select **OK** to acknowledge that the added user or group will have full access to the flow.
+
+### Edit a Power Automate flow
+
+If you need to edit a flow, you'll use the **Power Automate** control when working directly in an alert. To edit a Power Automate flow, you must be a member of at least one communication compliance role group.
+
+Complete the following steps to edit a Power Automate flow:
+
+1. In the Microsoft 365 compliance center, go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+2. From the policy, select the **Pending** tab and select a pending alert.
+3. Select **Power Automate** from the alert action menu.
+4. On the **Power Automate flows** page, select flow to edit. Select **Edit** from the flow control menu.
+5. Select the **ellipsis** > **Settings** to change a flow component setting or **ellipsis** > **Delete** to delete a flow component.
+6. Select **Save** and then **Close** to complete editing the flow.
+
+### Delete a Power Automate flow
+
+If you need to delete a flow, you'll use the **Power Automate** control when working directly in an alert. To delete a Power Automate flow, you must be a member of at least one communication compliance role group.
+
+Complete the following steps to delete a Power Automate flow:
+
+1. In the Microsoft 365 compliance center, go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+2. From the policy, select the **Pending** tab and select a pending alert.
+3. Select **Power Automate** from the alert action menu.
+4. On the **Power Automate flows** page, select flow to delete. Select **Delete** from the flow control menu.
+5. On the deletion confirmation dialog, select **Delete** to remove the flow or select **Cancel** to exit the deletion action.
+
 ## Reports (preview)
 
-The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets is not exportable.
+The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets is not exportable. Detailed reports provide in-depth information related to specific communication compliance areas and offer the ability to filter, group, sort, and export information while reviewing.
 
-The **Reports** dashboard contains the following report widgets:
+The **Reports dashboard** contains the following report widgets and detailed reports links:
 
-- **Recent policy matches**: displays the number of matches by active policy over time.
-- **Resolved items by policy**: displays the number of policy match alerts resolved by policy over time.
-- **Users with most policy matches**: displays the users (or anonymized usernames) and number of policy matches for a given period.
-- **Policy with most matches**: displays the policies and the number of matches for a given period, ranked highest to lowest for matches.
+- **Recent policy matches** widget: displays the number of matches by active policy over time.
+- **Resolved items by policy** widget: displays the number of policy match alerts resolved by policy over time.
+- **Users with most policy match** widget: displays the users (or anonymized usernames) and number of policy matches for a given period.
+- **Policy with most matches** widget: displays the policies and the number of matches for a given period, ranked highest to lowest for matches.
+- **Escalations by policy** widget: displays the number of escalations per policy over a given time.
+- **Policy settings and status** detailed report: provides a detailed look at policy configuration and settings, as well as the general status for each of the policy (matches and actions) on messages. Use the *Export* option to create a .CSV file containing the report details.
+- **Items and actions per policy** detailed report: Review and export matching items and remediation actions per policy. Use the *Export* option to create a .CSV file containing the report details.
+- **Item and actions per location** detailed report: Review and export matching items and remediation actions per Microsoft 365 location. Use the *Export* option to create a .CSV file containing the report details.
 
 ## Audit
 
