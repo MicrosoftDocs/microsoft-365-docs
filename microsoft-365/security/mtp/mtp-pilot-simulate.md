@@ -428,7 +428,7 @@ To learn more about advanced hunting, the following webcasts will walk you throu
 >Be prepared with your own GitHub account to run the hunting queries in your pilot test lab environment.  
 
 ||||||
-|:------|:-----|:-----|:-----|:-----|
+|:------|:-----|:-----|:-----|:-------|
 | **Title** | **Description** | **Download MP4** | **Watch on YouTube** | **CSL file to use** |
 | Episode 1: KQL fundamentals | We’ll cover the basics of advanced hunting capabilities in Microsoft Threat Protection. Learn about available advanced hunting data and basic KQL syntax and operators. | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [Episode 1: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Episode 2: Joins | We’ll continue learning about data in advanced hunting and how to join tables together. Learn about inner, outer, unique, and semi joins, and the nuances of the default Kusto innerunique join. | [MP4](https://aka.ms/MTP22JUL20_MP4) | [YouTube](https://youtu.be/LMrO6K5TWOU) | [Episode 2: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
