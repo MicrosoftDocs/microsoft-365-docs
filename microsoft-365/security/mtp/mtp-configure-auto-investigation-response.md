@@ -100,9 +100,4 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 After you have configured automated investigation and response in Microsoft Threat Protection, your next step is to visit the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)). There, you can review and approve pending actions, and see remediation actions that were taken automatically. 
 
-To learn more, see [The Action center](mtp-action-center.md).
-
-## Next steps
-
-- [Learn more about remediation actions following automated investigations in Microsoft Threat Protection](mtp-remediation-actions.md)
-- [Visit the Action center](mtp-action-center.md)
+[Visit the Action center](mtp-action-center.md).
