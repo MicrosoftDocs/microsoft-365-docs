@@ -39,7 +39,7 @@ We hope you enjoyed this simulation and are encouraged to start implementing wha
 
 
 ## Next step
-|||
-|:-------|:-----|
-|Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) | Understand how to design the solution and architecture that is right for your organization.
+||
+|:-------|
+|Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to Understand how to design the solution and architecture that is right for your organization.
 
