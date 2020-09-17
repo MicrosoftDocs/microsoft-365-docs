@@ -20,7 +20,7 @@ description: "Find answers to frequently asked questions about Microsoft Complia
 
 ## Is Compliance Manager and Compliance Score the same thing, or are they different?
 
-There is now just one solution: Compliance Manager. This section will walk you through the transition, starting with a basic overview below. You may also find it helpful to jump directly to one of the following sections:
+There is now just one solution: Compliance Manager. This section walks you through the transition, starting with a basic overview below. You may also find it helpful to jump directly to one of the following sections:
 
 - [Your organization primarily used Compliance Manager (either the classic or public preview versions), located in the Microsoft Service Trust Portal](#your-organization-regularly-used-compliance-manger-in-the-service-trust-portal)
 
@@ -30,9 +30,9 @@ There is now just one solution: Compliance Manager. This section will walk you t
 )
 #### The basics
 
-Microsoft Compliance Manager began as a compliance management solution located in the Microsoft Service Trust Portal.  As compliance solutions came into in the Microsoft 365 compliance center, we developed a new experience with a more user-friendly design for this new location. This product was released as Compliance Score public preview in November 2019. Compliance Score shared the same backend as Compliance Manager, allowing customers to work in either or both places. Since November 2019, we’ve released several updates as we built new functionality and responded to customer feedback.
+Microsoft Compliance Manager began as a compliance management solution inside the Microsoft Service Trust Portal.  As compliance solutions came into in the Microsoft 365 compliance center, we developed a new experience with a more user-friendly design for this new location. Compliance Score public preview was released in the Microsoft 365 compliance center in November 2019. Compliance Score shared the same backend as Compliance Manager, allowing customers to work in both places. Since November 2019, we’ve released several updates as we built new functionality and responded to customer feedback.
 
-The general availability of Compliance Manager in the Microsoft 365 compliance center in September 2020 completes this evolution. Now, there’s one unified, robust product in one location, and it is called Compliance Manager. Your compliance score remains a key component of Compliance Manager, helping you understand your overall compliance posture and prioritize actions to improve it.
+The general availability of Compliance Manager in the Microsoft 365 compliance center in September 2020 completes this evolution. Compliance Manager is the unified, end-to-end compliance solution. Your compliance score remains a key component of Compliance Manager, helping you understand your overall compliance posture and prioritize actions to improve it.
 
 Read this [blog post](https://aka.ms/compliancemanager/GAblog) to learn more about what’s new with the GA release of Compliance Manager.
 
@@ -52,7 +52,7 @@ Below are some helpful resources:
 
 #### Your organization used Compliance Score (public preview) in the Microsoft 365 compliance center
 
-If you used the public preview version of Compliance Score, you’ll notice it looks mostly the same, with your score featured prominently on your dashboard. With this change, you no longer need to leave the tool in order to complete actions such as creating and modifying templates, and assessment management functions such as exporting reports.  Any data you had in the preview version of Compliance Score remains in the GA version of Compliance Manager.
+If you used the public preview version of Compliance Score, you’ll notice it looks mostly the same, with your score featured prominently on your dashboard. With the GA release, you no longer need to go to another solution in order to perform certain assessment management functions, such as creating and modifying templates for assessments. All functionality now resides in one place. Any data you had in the preview version of Compliance Score remains in the GA version of Compliance Manager.
 
 Note that if you filtered your Compliance Score dashboard view, those filters were reset when we deployed the update to Compliance Manager in September. You will need to reapply any filters you had.
 

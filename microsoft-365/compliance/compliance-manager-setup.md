@@ -168,7 +168,7 @@ You can reassign improvement actions from one user to another. When you reassign
 
 #### Delete user history
 
-Deleting a user’s history will remove them as an owner of improvement actions, and will remove their name from all other fields in Compliance Manger. When you delete a user’s history, the improvement actions they owned will not display an **Assigned to** value until a new user is assigned. Any documents uploaded to the improvement action will show **user removed** in place of the deleted user’s name. Deleting user history is permanent.
+Deleting a user’s history will remove them as an owner of improvement actions, and will remove their name from all other fields in Compliance Manger. When you delete a user’s history, the improvement actions they owned will not display an **Assigned to** value until a new user is assigned. Any documents uploaded to the improvement action will show **User removed** in place of the deleted user’s name. Deleting user history is permanent.
 
 To delete a user’s history, follow the steps below:
 
