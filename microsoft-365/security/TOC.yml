@@ -94,9 +94,9 @@
                       href: mtp/manage-incidents.md
             - name: Self-healing
               items: 
-                - name: Overview of self-healing
+                - name: Overview of automated investigation and response
                   href: mtp/mtp-autoir.md
-                - name: Configure self-healing
+                - name: Configure automated investigation and response
                   href: mtp/mtp-configure-auto-investigation-response.md
                 - name: Remediation actions
                   href: mtp/mtp-remediation-actions.md
