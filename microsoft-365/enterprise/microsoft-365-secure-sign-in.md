@@ -19,8 +19,6 @@ description: Require that your users sign in securely with multi-factor authenti
 
 # Secure user sign-ins to your Microsoft 365 tenant
 
-A common 
-
 To increase the security of user sign-ins:
 
 - Use Azure Active Directory (Azure AD) Password Protection
@@ -30,6 +28,8 @@ To increase the security of user sign-ins:
 ## Azure AD Password Protection
 
 Azure AD Password Protection detects and blocks known weak passwords and their variants, and can also block additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in an Azure AD tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.
+
+For more information, see [Configure Azure AD password protection](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad).
 
 ## MFA
 
@@ -43,11 +43,11 @@ Beyond this first step, Microsoft strongly recommends MFA For all users.
 
 There are three ways to require your users to use MFA based on your Microsoft 365 plan.
 
-|Plan  |Recommendation  |
+| Plan | Recommendation |
 |---------|---------|
 |All Microsoft 365 plans (without Azure AD Premium P1 or P2 licenses)     |[Enable Security defaults in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.   |
 |Microsoft 365 E3 (includes Azure AD Premium P1 licenses)     | Use [Common Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (includes Azure AD Premium P2 licenses)     | Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](../enterprise/identity-access-policies.md) by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Block clients that don't support modern authentication](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [High risk users must change password](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 (includes Azure AD Premium P2 licenses)     | Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](../enterprise/identity-access-policies.md) by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [High risk users must change password](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ### Security defaults
@@ -93,7 +93,7 @@ This table shows the results of enabling MFA with security defaults and Conditio
 
 ## Identity and device access policies
 
-Identity and device access settings and policies are prerequisite features and their settings combined with Conditional Access, Intune, and Azure AD Identity Protection policies that determine whether a given access request should be granted and under what conditions. This determination is based on the user account sign-in, the device being used, the apps the user is trying to access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
+Identity and device access settings and policies are prerequisite features and their settings combined with Conditional Access, Intune, and Azure AD Identity Protection policies that determine whether a given access request should be granted and under what conditions. This determination is based on the user account of the sign-in, the device being used, the app the user is using for access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
 
 >[!Note]
 >Azure AD Identity Protection requires Azure AD Premium P2 licenses, which are included with Microsoft 365 E5.
@@ -108,10 +108,6 @@ Identity and device access policies are defined to be used in three tiers:
 These tiers and their corresponding configurations provide consistent levels of protection across your data, identities, and devices.
 
 Microsoft highly recommends configuring and rolling out identity and device access policies in your organization, including specific settings for Microsoft Teams, Exchange Online, and SharePoint. For more information, see [Identity and device access configurations](microsoft-365-policies-configurations.md).
-
->[!Note]
->Azure AD Identity Protection requires Azure AD Premium P2 licenses, which are included with Microsoft 365 E5.
->
 
 <!--
 

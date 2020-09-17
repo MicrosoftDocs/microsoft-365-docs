@@ -8,7 +8,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.author: heidip
-ms.date: 09/12/2020
+ms.date: 09/17/2020
 ms.reviewer: anmorgan
 ms.custom: 
 - it-pro
@@ -67,28 +67,49 @@ This table lists the policies that need to be revisited and links to each policy
 |        |[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Include Teams and dependent services in this policy.|
 |**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams has Guest Access and External Access rules to consider as well, you'll learn more about these later in this article. Include Teams and dependent services in this policy.|
 |         |[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include Teams and dependent services in this policy.|
-|**Highly regulated**|[*Always* require MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Regardless of user identity, MFA will be used by your organization. Include Teams and dependent services in this policy.
+|**Highly regulated**|[*Always* require MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Regardless of user identity, MFA will be used by your organization. Include Teams and dependent services in this policy. |
 | | |
 
 ## Teams dependent services architecture
 
 For reference, the following diagram illustrates the services Teams relies on. For more information and additional illustrations, see [Microsoft Teams and related productivity services in Microsoft 365 for IT architects](../solutions/productivity-illustrations.md).
 
-![Diagram showing Teams dependencies on SharePoint, OneDrive for Business, and Exchange](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
+[![Diagram showing Teams dependencies on SharePoint, OneDrive for Business, and Exchange](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
-## Enabling guest and external access for Teams
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
-In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both. For recommended policies to allow guest access, see [Policies for allowing guest and external B2B access](identity-access-policies-guest-access.md).
+## Guest and external access for Teams
+
+Microsoft Teams defines the following:
+
+- **Guest access** uses an Azure AD B2B account for a guest or external user that can be added as a member of a team and have all permissioned access to the communication and resources of the team.
+
+- **External access** is for an external user that does not have an Azure AD B2B account. External access can include invitations and participation in calls, chats, and meetings, but does not include team membership and access to the resources of the team.
+
+Conditional Access policies only apply to guest access in Teams because there is a corresponding Azure AD B2B account.
+
+<!--
+In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both. 
+
+--> 
+
+For recommended policies to allow access for guest and external users with an Azure AD B2B account, see [Policies for allowing guest and external B2B account access](identity-access-policies-guest-access.md).
 
 ### Guest access in Teams
 
-In addition to the policies for users who are internal to your business or organization, administrators may enable guest access to allow, on a user-by-user basis, people who are external to your business or organization to access Teams resources and interact with internal people for things like group conversations, chat, and meetings. You can learn more about Guest Access at the following link: [Teams guest access](https://docs.microsoft.com/microsoftteams/guest-access)
+In addition to the policies for users who are internal to your business or organization, administrators may enable guest access to allow, on a user-by-user basis, people who are external to your business or organization to access Teams resources and interact with internal people for things like group conversations, chat, and meetings. 
+
+For more information about external access and how to implement it, see  [Teams guest access](https://docs.microsoft.com/microsoftteams/guest-access).
 
 ### External access in Teams
 
-External access is sometimes confused with guest access, so it's important to be clear that these two non-internal access mechanisms are actually quite different. While guest access occurs on a per-user basis (you add one user at a time), when an administrator enables external access it allows you to add all the users of an external domain at the same time to Teams. However those external users have less access and functionality than an individual who's been added via guest access would have. External access users can chat with your internal users via Teams.
+External access is sometimes confused with guest access, so it's important to be clear that these two non-internal access mechanisms are actually quite different. 
 
-For more reading about external access, and how to implement it if you need to, please review [Manage external access in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-external-access)
+While guest access occurs on a per-user account basis (you add one guest or external user account at a time as a team member), enabling external access allows you to add external users that don't have an Azure AD B2B user account at the same time to Teams. 
+
+However those external users have less access and functionality than an individual who's been added via guest access would have. For example, external access users can chat with your internal users with Teams but cannot access team files or other resources.
+
+For more information about external access and how to implement it, see [Manage external access in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-external-access).
 
 ## Teams policies
 
