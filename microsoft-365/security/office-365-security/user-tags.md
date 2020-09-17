@@ -19,7 +19,7 @@ description: "Admins can learn how to identify specific groups of users with use
 
 # User tags in the Microsoft Security Center
 
-User tags are identifiers for specific groups of users in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). [Priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) are a type of user tag. You can create custom user tags in addition to the priority accounts tag. After you apply tags to specific users, you can use those tags as filters in alerts, reports, and investigations:
+User tags are identifiers for specific groups of users in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). [Priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) are a type of user tag. If your organization has Office 365 Advanced Threat Protection (ATP) Plan 2, you can create custom user tags in addition to using the Priority accounts tag. After you apply tags to specific users, you can use those tags as filters in alerts, reports, and investigations:
 
 - [Alerts in the Security & Compliance Center](alerts.md)
 
@@ -36,6 +36,8 @@ This article explains how to configure user tags in the Security Center.
 - You open the Security Center at <https://security.microsoft.com/>. To go directly to the **User tags** page, open <https://security.microsoft.com/securitysettings/userTags>.
 
 - To create, modify, or remove user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
+- Priority accounts can also be managed and monitored in the [Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
 
 ## Use the Security Center to create user tags
 
