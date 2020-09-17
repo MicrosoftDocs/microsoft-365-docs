@@ -81,7 +81,7 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 5. Make sure [zero-hour auto purge for email](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop) protection is in effect. 
 
-8. (This is optional) Review your [Office 365 alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) in the Microsoft 365 compliance center ([https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies)). 
+8. (This is optional) Review your [Office 365 alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) in the Microsoft 365 compliance center ([https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies)). Several default alert policies are in the Threat management category. Some of these alerts can trigger automated investigation and response. To learn more, see [Default alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?#default-alert-policies).
  
 ## Make sure Microsoft Threat Protection is turned on
 
