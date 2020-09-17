@@ -18,6 +18,8 @@ ms.collection:
 - M365-security-compliance 
 ms.topic: conceptual
 ms.custom: autoir
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
 ---
 
 # Approve or reject pending actions following an automated investigation
@@ -58,7 +60,5 @@ Pending actions can be reviewed and approved by using the [Action center](#revie
 ## Next steps
 
 - [Learn more about the Action center](mtp-action-center.md)
-
 - [Learn more about incidents](incidents-overview.md)
-
 - [Learn about hunting](advanced-hunting-overview.md)
