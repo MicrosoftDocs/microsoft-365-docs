@@ -20,7 +20,7 @@ f1.keywords: CSH
 
 Microsoft Threat Protection includes powerful [self-healing capabilities](mtp-autoir.md) that can save your security operations team much time and effort. Self-healing capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale. This article describes how to configure self-healing capabilities in Microsoft Threat Protection.
 
-## Steps to configure self-healing capabilities
+To configure self-healing capabilities, follow these steps:
 
 1. [Review the prerequisites](#prerequisites-for-self-healing-in-microsoft-threat-protection).
 
@@ -29,6 +29,9 @@ Microsoft Threat Protection includes powerful [self-healing capabilities](mtp-au
 3. [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups).
 
 4. [Review your security and alert policies in Office 365](#review-your-security-and-alert-policies-in-office-365).
+
+Then, [review pending and completed actions in the Action center](#review-pending-and-completed-actions-in-the-action-center). 
+
 
 ## Prerequisites for self-healing in Microsoft Threat Protection
 
