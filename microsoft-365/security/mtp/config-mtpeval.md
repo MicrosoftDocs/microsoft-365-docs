@@ -247,4 +247,4 @@ Congratulations! You've just created your Microsoft Threat Protection trial lab 
 Next, you can simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.
 
 ## Next step
-![Pilot Phase 3: Run the attack simulation](../../media/run-sim.png) <br>[Pilot Phase 3: Run the attack simulation](mtp-pilot-simulate.md) <br>Run the attack simulation for your Microsoft Threat Protection pilot environment.
+![Attack simulation phase](../../media/run-sim.png) <br>[Attack simulation phase](mtp-pilot-simulate.md) <br>Run the attack simulation for your Microsoft Threat Protection pilot environment.
