@@ -315,7 +315,7 @@
         - name: Globanet data connectors
           items:  
             - name: Slack eDiscovery
-              href: archive-slackediscovery-data.md    
+              href: archive-slack-data.md    
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
         
