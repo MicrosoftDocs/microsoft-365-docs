@@ -35,10 +35,7 @@ Watch the following video to see how self-healing works:
 
 
 > [!TIP]
-> Self-healing capabilities are sometimes referred to as: <br/>
-> - Automated investigation and response <br/>
->    or 
-> - Automated investigation and remediation 
+> Self-healing capabilities in Microsoft Threat Protection bring together automated investigation and response capabilities in Office 365 Advanced Threat Protection, automated investigation and remediation in Microsoft Defender Advanced Threat Protection, and threat protection features in [Azure advanced threat detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection) & [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security). 
  
 Self-healing capabilities in Microsoft Threat Protection are a lot like having a virtual analyst in your security operations center. Read this article to learn more about how self-healing works. To configure these capabilities, see [Configure self-healing capabilities in Microsoft Threat Protection](mtp-configure-self-healing.md).
 
