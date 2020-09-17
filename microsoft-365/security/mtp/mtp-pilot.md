@@ -55,4 +55,4 @@ There are four phases in running a Microsoft Threat Protection pilot:
 ## Next step
 |||
 |:-------|:-----|
-|![Planning phase](../../media/plan.png) <br>[Planning phase](mtp-pilot-plan.md) | Plan your Microsoft Threat Protection pilot project
+|![Planning phase](../../media/mtp/plan.png) <br>[Planning phase](mtp-pilot-plan.md) | Plan your Microsoft Threat Protection pilot project
