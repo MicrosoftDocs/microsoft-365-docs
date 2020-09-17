@@ -251,4 +251,3 @@ Next, you can simulate an attack and see how the cross product capabilities dete
 ## Next step
 |![Attack simulation phase](../../media/mtp/run-sim.png) <br>[Attack simulation phase](mtp-pilot-simulate.md) | Run the attack simulation for your Microsoft Threat Protection pilot environment.
 |:-------|:-----|
-|:-------|:-----|
