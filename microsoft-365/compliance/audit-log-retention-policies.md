@@ -25,7 +25,7 @@ You can create and manage audit log retention policies in the Security & Complia
 
 - All activities in one or more Microsoft 365 services
 
-- Specific activities (in a specific service) performed by all users or by specific users
+- Specific activities (in a Microsoft 365 service) performed by all users or by specific users
 
 - A priority level that specifies which policy takes precedence in you have multiple policies in your organization
 
@@ -66,7 +66,11 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
    3. **Users:** Select one or more users to apply the policy to. If you leave this box blank, then the policy will apply to all users. If you leave the **Record type** blank, then you must select a user.
 
-   4. **Record type:** The audit record type the policy applies to. You can select multiple record types. If you leave this property blank, you must select a user in the **Users** box.
+   4. **Record type:** The audit record type the policy applies to. If you leave this property blank, you must select a user in the **Users** box. You can select a single record type or multiple record types:
+
+   - If you select a single record type, the **Activities** field is dynamically displayed. You can use the drop-down list to select activities from the selected record type to apply the policy to. If you don't choose specific activities, the policy will apply to all activities of the selected record type.
+
+   - If you select multiple record types, you don't have the ability to select activities. The policy will apply to all activities of the selected record types.
 
    5. **Duration:** The amount of time to retain the audit logs that meet the criteria of the policy.
 
@@ -85,7 +89,7 @@ You can also use Security & Compliance Center PowerShell to create audit log ret
 2. Run the following command to create an audit log retention policy.
 
    ```powershell
-   New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TwelveMonths -Priority 100
+   New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TenYears -Priority 100
    ```
 
     This example creates an audit log retention policy named "Microsoft Teams Audit Policy" with these settings:
