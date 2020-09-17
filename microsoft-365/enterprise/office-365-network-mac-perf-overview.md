@@ -3,6 +3,7 @@ title: "Network connectivity in the Microsoft 365 Admin Center (preview)"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,7 +18,11 @@ description: "Overview of network connectivity in the Microsoft 365 Admin Center
 
 # Network connectivity in the Microsoft 365 Admin Center (preview)
 
-The Microsoft 365 Admin Center now includes aggregated network connectivity metrics collected from your Microsoft 365 tenant and available to view only by administrative users in your tenant. **Network assessments** and **network insights** are displayed in the Microsoft 365 Admin Center under **Health | Connectivity**.
+The Microsoft 365 Admin Center now includes aggregated network connectivity metrics collected from your Microsoft 365 tenant and available to view only by administrative users in your tenant.
+
+![Network connectivity test tool](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
+
+**Network assessments** and **network insights** are displayed in the Microsoft 365 Admin Center under **Health | Connectivity**.
 
 ![Network performance page](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
