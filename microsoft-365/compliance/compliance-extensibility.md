@@ -66,40 +66,26 @@ High-level MIP SDK use cases include:
 
 To learn more about the MIP SDK, prerequisites, additional scenarios, and samples, see [MIP SDK Overview](https://docs.microsoft.com/information-protection/develop/overview).
 
-### Teams DLP API (preview)
-
-The Teams data loss prevention (DLP) scenario is made possible by Microsoft Graph Change Notification API. This API enables development of apps that can listen to Microsoft Teams messages in near-real time (without polling). This capability enables scenarios that assist with DLP and archiving solutions as well as building bots that listen to messages on which they aren’t @mentioned.
-
-You can get started by trying out the [sample app for change notifications](https://github.com/microsoftgraph/csharp-webhook-with-resource-data). See the [documentation](https://docs.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http) for more information about creating Microsoft Teams messaging webhooks.
-
-To learn more about Microsoft Graph APIs, see [Use the Microsoft Graph API](https://docs.microsoft.com/graph/use-the-api).
-
 ### Microsoft Graph API for Teams DLP
 
-[Data loss prevention (DLP)](dlp-microsoft-teams.md) capabilities are widely used in Microsoft Teams particularly as organizations have shifted to remote work. Earlier this year we [announced the public preview of the Microsoft Graph Change Notification API for messages in Teams](https://developer.microsoft.com/graph/blogs/announcing-change-notifications-for-microsoft-teams-messages/). This API enables developers to build apps that can listen to Microsoft Teams messages in near-real time and then implement DLP scenarios for both customers and ISVs. Additionally, Microsoft Graph Patch API lets you apply DLP actions to Teams messages.
+[Data loss prevention (DLP)](dlp-microsoft-teams.md) capabilities are widely used in Microsoft Teams particularly as organizations have shifted to remote work. Earlier this year we [announced the public preview](https://developer.microsoft.com/graph/blogs/announcing-change-notifications-for-microsoft-teams-messages/) of the Microsoft Graph Change Notification API for messages in Teams. This API enables developers to build apps that can listen to Microsoft Teams messages in near-real time and then implement DLP scenarios for both customers and partners. Additionally, Microsoft Graph Patch API lets you apply DLP actions to Teams messages.
 
-Together, these two APIs form the Microsoft Graph API for Teams DLP and today, You can get started by trying out the [sample app](https://github.com/microsoftgraph/csharp-webhook-with-resource-data). See the [documentation](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http) for more information about Microsoft Teams messaging webhooks.
+These two APIs form the Microsoft Graph API for Teams DLP. You can get started by trying out the [sample app](https://github.com/microsoftgraph/csharp-webhook-with-resource-data). For more information about Microsoft Teams messaging webhooks, see the [documentation](https://docs.microsoft.com/graph/api/subscription-post-subscriptions).
 
-You can find licensing requirements for the use of this API for Teams DLP on our service description page [here](https://docs.microsoft.com/en-us/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+For the licensing requirements for Teams DLP, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
-### 
+### Microsoft Graph API for eDiscovery (preview)
 
+With [Advanced eDiscovery](overview-ediscovery-20.md), organizations can discover data where it lives, and manage more end-to-end eDiscovery workflows with intelligent machine-learning and analytics capabilities to reduce data to the relevant set – all while the data stays within the Microsoft 365 security and compliance boundary.
 
+Graph APIs for Advanced eDiscovery can be used to create and manage cases, review sets, and review set queries in a scalable and repeatable manner. This enables customers and partners to create apps and workflows to automate common and repetitive processes such as creating cases and managing custodians and legal holds.
 
-### Prerequisites for the Teams DLP API
+The first set of Graph APIs for eDiscovery are available in public preview. We plan to add more capabilities by the end of the calendar year. To learn more about these APIs and other updates for Advanced eDiscovery, see this [blog](https://aka.ms/Ignite2020AeDAA).
 
-During the public preview, you can use the Teams DLP API without fees, subject to the [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). After the API is released for general availability, creating a message subscription for Teams chat messages with application permissions for `/teams/allMessages` and `/chats/allMessages` will require one of the following Microsoft 365 or Office 365 subscriptions:
+For the licensing requirements for Advanced eDiscovery and the API, see the "eDiscovery" section in the [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#ediscovery).
 
-- Microsoft 365 E5
+### Microsoft Graph API for Teams Export (preview)
 
-- Microsoft 365 A5
+Enterprise Information Archiving (EIA) for Microsoft Teams is a key scenario for our customers as it allows them to solve for regulatory requirements. In addition to our built-in capabilities for archiving content in Microsoft Teams, customers and partners can now use Teams Export APIs to solve for custom application and integration scenarios. The Teams Export API supports bulk-export (up to 200 requests per second/per app/per tenant) of Teams messages and message attachments. Deleted messages are also accessible by the API for up to 30 days after they are deleted. For more information about these Teams Export APIs and how to use them in your applications, see [this article](https://docs.microsoft.com/microsoftteams/export-teams-content).
 
-- Microsoft 365 E5/A5 Info Protection & Governance
-
-- Office 365 E5
-
-- Office 365 A5
-
-- Office 365 Advanced Compliance
-
-Because `/teams/allMessages` and `/chats/allMessages` deliver notifications for all users in an organization, all users must be licensed with the appropriate. Additionally, after release to general availability, Microsoft may require you (or your customers) to pay additional fees based on the amount of data accessed through the API.
+For the licensing requirements for the use of the Teams Export APIs, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
