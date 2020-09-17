@@ -192,7 +192,7 @@ This hierarchically relates a term to another term. A term could be a top level 
 The syntax to define a parent is  –
 
 ```SKOS
-ex:TermA1    sharepoint-taxonomy:parent    ex:TermA.
+ex:TermA1    sharepoint-taxonomy:parent    ex:TermA .
 ```
 
 This means that TermA1 has parent TermA. Inversely it also means that TermA1 is the child of TermA. Parent-child relationship is an inversible relationship.
@@ -204,7 +204,7 @@ This hierarchically relates a term to another term.
 The syntax to define a child is  –
 
 ```SKOS
-ex:TermA    sharepoint-taxonomy:child    ex:TermA1.
+ex:TermA    sharepoint-taxonomy:child    ex:TermA1  .
 ```
 
 This means that TermA has child TermA1. Inversely it also means that TermA is the parent of TermA1. Parent-child relationship is an inversible relationship.
@@ -218,7 +218,7 @@ This is a detailed explanation of any SharePoint Taxonomy vocabulary entity.
 The syntax to add a description is:
 
 ```SKOS
-ex:TermA    sharepoint-taxonomy:description    “Term A is the top level term of TermSetA”@en-us.
+ex:TermA    sharepoint-taxonomy:description    “Term A is the top level term of TermSetA”@en-us .
 ```
 
 ### CustomProperties
