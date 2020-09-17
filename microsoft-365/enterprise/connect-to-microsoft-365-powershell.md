@@ -51,13 +51,12 @@ These procedures are intended for users who are members of a Microsoft 365 admin
 
 ## Connect with the Azure Active Directory PowerShell for Graph module
 
-Commands in the Azure Active Directory PowerShell for Graph module have **AzureAD** in their cmdlet name. You can install the [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) module or [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-3.6.1).
+Commands in the Azure Active Directory PowerShell for Graph module have **AzureAD** in their cmdlet name. You can install the [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) module or [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps).
 
 For procedures that require the new cmdlets in the Azure Active Directory PowerShell for Graph module, use these steps to install the module and connect to your Microsoft 365 subscription.
 
->[!Note]
->See [Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) for information about the support for different versions of Microsoft Windows.
->
+> [!Note]
+> See [Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) for information about the support for different versions of Microsoft Windows.
 
 ### Step 1: Install required software
 

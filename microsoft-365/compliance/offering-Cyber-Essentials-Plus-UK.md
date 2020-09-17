@@ -3,7 +3,7 @@ title: United Kingdom Cyber Essentials PLUS
 description: Cyber Essentials PLUS is a UK government-defined scheme to help organizations protect against common cyber-security threats.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
