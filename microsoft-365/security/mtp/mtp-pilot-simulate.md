@@ -40,11 +40,11 @@ During the simulation, the attack injects shellcode into a seemingly innocent pr
 
 Since you have already configured your pilot environment during the preparation phase, ensure that you have two devices for this scenario: a test device and a domain controller.
 
-1.	Verify your tenant has [Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable#starting-the-service)￼￼.
+1.	Verify your tenant has [Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)￼￼.
 2.	Verify your test domain controller configuration:
     - Device runs with Windows Server 2008 R2 or a later version.
     - The test domain controller to [Azure Advanced Threat Protection](https://docs.microsoft.com/en-us/azure/security-center/security-center-wdatp) and enable [remote management](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    
-    - Verify that [Azure ATP and Microsoft Cloud App Security integration](https://docs.microsoft.com/en-us/cloud-app-security/aatp-integration) have been enabled.
+    - Verify that [Azure ATP and Microsoft Cloud App Security integration](https://docs.microsoft.com/cloud-app-security/aatp-integration) have been enabled.
     - A test user is created on your domain – no admin permissions needed.
 
 3.	Verify test device configuration:
@@ -55,7 +55,7 @@ Since you have already configured your pilot environment during the preparation 
     <br>
     c.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see this [troubleshooting topic](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
     <br>
-    d.	Verify that the test device is [onboarded to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+    d.	Verify that the test device is [onboarded to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 If you use an existing tenant and implement device groups, create a dedicated device group for the test device and push it to top level in configuration UX.
 
@@ -102,7 +102,7 @@ To see the Automated Incident and Response feature in action, keep the notepad.e
 >[!NOTE]
 >Before we walk you through this simulation, watch the following video to see how incident management helps you piece the related alerts together as part of the investigation process, where you can find it in the portal, and how it can help you in your security operations:
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzwz?]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
 Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft Threat Protection portal. 
 
@@ -214,7 +214,7 @@ For example, scroll down until you find the alert event **Suspicious process inj
 
 On the incident page, click the **Users** tab to display the list of users involved in the attack. The table contains additional information about each user, including each user’s **Investigation Priority** score.
 
-Click the username to open the user’s profile page where further investigation can be conducted. [Read more about investigating risky users](https://docs.microsoft.com/en-us/cloud-app-security/tutorial-ueba#identify).
+Click the username to open the user’s profile page where further investigation can be conducted. [Read more about investigating risky users](https://docs.microsoft.com/cloud-app-security/tutorial-ueba#identify).
 <br>
 ![Screenshot of Cloud App Security user page](../../media/mtp/fig13.png)
 
@@ -274,8 +274,8 @@ There is a single internal mailbox and device required for this scenario. You wi
 3.	Configure a test device:
     a.	Make sure you are using Windows 10 version 1903 or later version.
     b.	Join the test device to the test domain.
-    c.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see [this troubleshooting topic](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
-    d.	[Onboard to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+    c.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see [this troubleshooting topic](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+    d.	[Onboard to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 ### Run the simulation
 1.	From an external email account, send an email to the mailbox identified in step 2 of the test environment requirements section. Include an attachment that will be allowed through any existing email filter policies.  This file does not need to be malicious or an executable. Suggested file types are <i>.pdf</i>, <i>.exe</i> (if allowed), or Office document such as a Word file.
