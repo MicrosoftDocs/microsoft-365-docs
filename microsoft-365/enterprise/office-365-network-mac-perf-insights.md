@@ -81,7 +81,7 @@ This insight will be displayed if the network insights service detects that user
 
 This insight is abbreviated as "Routing" in some summary views.
 
-![Non-optimal front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
+![Non-optimal EXO front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
 ### What does this mean?
 
@@ -97,7 +97,7 @@ This insight will be displayed if the network insights service detects that user
 
 This insight is abbreviated as "Afd" in some summary views.
 
-![Non-optimal front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+![Non-optimal SPO front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
 
 ### What does this mean?
 
