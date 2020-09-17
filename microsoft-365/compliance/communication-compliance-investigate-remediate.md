@@ -90,7 +90,7 @@ No matter where you start to review alerts or the filtering you configure, the n
 
  Sometimes it's obvious from the source or subject that a message can be immediately remediated. It may be that the message is spurious or incorrectly matched to a policy and it should be resolved as a false positive. Select the **False Positive** control to immediately resolve the alert and remove from the pending alert queue. From the source or sender information, you may already know how the message should be routed or handled in these circumstances. Consider using the **Tag as** or **Escalate** controls to assign a tag to applicable messages or to send messages to a designated reviewer.
 
-    ![Communication compliance remediation controls](../media/communication-compliance-remediation-controls.png)
+![Communication compliance remediation controls](../media/communication-compliance-remediation-controls.png)
 
 ### Step 2: Examine the message details
 
