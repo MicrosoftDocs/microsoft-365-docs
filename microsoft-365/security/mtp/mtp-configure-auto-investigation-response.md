@@ -1,13 +1,13 @@
 ---
 title: Configure automated investigation and response capabilities in Microsoft Threat Protection
-description: Self-healing includes automated investigation and remediation actions
+description: Configure automated investigation and response with self-healing in Microsoft Threat Protection
 search.appverid: MET150  
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: article
-ms.date: 09/16/2020 
+ms.date: 09/17/2020 
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: M365-security-compliance.
@@ -18,11 +18,11 @@ f1.keywords: CSH
 
 # Configure automated investigation and response capabilities in Microsoft Threat Protection
 
-Microsoft Threat Protection includes powerful [automated investigation and response capabilities](mtp-autoir.md) that can save your security operations team much time and effort. Self-healing capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale. This article describes how to configure self-healing capabilities in Microsoft Threat Protection.
+Microsoft Threat Protection includes powerful [automated investigation and response capabilities](mtp-autoir.md) that can save your security operations team much time and effort. Automated investigation and response includes self-healing capabilities. These capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale. This article describes how to configure automated investigation and response in Microsoft Threat Protection.
 
-To configure self-healing capabilities, follow these steps:
+To configure automated investigation and response capabilities, follow these steps:
 
-1. [Review the prerequisites](#prerequisites-for-self-healing-in-microsoft-threat-protection).
+1. [Review the prerequisites](#prerequisites-for-automated-investigation-and-response-in-microsoft-threat-protection).
 
 2. [Make sure Microsoft Threat Protection is turned on](#make-sure-microsoft-threat-protection-is-turned-on).
 
