@@ -214,8 +214,6 @@
                   href: mtp/monitor-devices.md
                 - name: App monitoring and reporting
                   href: mtp/monitor-apps.md
-            - name: APIs
-              items: 
         - name: Reference
           items: 
             - name: Permissions & settings
