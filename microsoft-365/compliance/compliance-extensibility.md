@@ -26,7 +26,7 @@ description: "Learn about extending Microsoft 365 compliance solutions by using 
 
 Microsoft 365 compliance solutions help organizations intelligently assess their compliance risks, govern and protect sensitive data, and effectively respond to regulatory requirements. Microsoft 365 compliance is rich in extensibility scenarios and enables organizations to adapt, extend, integrate, accelerate, and support their compliance solutions.
 
-There are two key building blocks of compliance extensibility:
+There are two key building blocks for compliance extensibility:
 
 - **Data connectors**. Use to import and archive non-Microsoft data so you can apply Microsoft 365 protection and governance capabilities to third-party data.
 
@@ -34,7 +34,7 @@ There are two key building blocks of compliance extensibility:
 
 ## Data connectors
 
-Microsoft provides third-party data connectors that can be configured in the Microsoft 365 compliance center. For a list of data connectors provided by Microsoft, see the [Third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) table. This table also summarizes the compliance solutions that you can apply to third-party data after you import and archive data in Microsoft 365, and links to the step-by-step instructions for each connector.
+Microsoft provides third-party data connectors that can be configured in the Microsoft 365 compliance center. For a list of data connectors provided by Microsoft, see the [Third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) table. The table of third-party data connectors also summarizes the compliance solutions that you can apply to third-party data after you import and archive data in Microsoft 365, and links to the step-by-step instructions for each connector.
 
 To learn more about Microsoft 365 data connectors, see [Archiving third-party data](archiving-third-party-data.md). If a third-party data type isn't supported by the data connectors available in the Microsoft 365 compliance center, you can work with a partner who can provide you with a custom connector. For a list of partners you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data](work-with-partner-to-archive-third-party-data.md).
 
@@ -42,19 +42,9 @@ To learn more about Microsoft 365 data connectors, see [Archiving third-party da
 
 Many of the data connectors available in the Microsoft 365 compliance center to import and archive third-party data require that you prepare and perform configuration tasks in the third-party data source. These prerequisites are documented in detail for each third-party data connector.
 
-During public preview, you can implement a third-party data connector without additional fees or the appropriate licensing. After a data connector is released for general availability, users who benefit from the import and archiving a third-party data will require one of the following Microsoft 365 or Office 365 subscriptions:
+For data connectors in the Microsoft 365 compliance center provided by one of Microsoft's partners, your organization will need a business relationship with the partner before you can deploy a connector.
 
-- Microsoft 365 E5
-
-- Microsoft 365 A5
-
-- Microsoft 365 E5/A5 Info Protection & Governance
-
-- Microsoft 365 E5 Compliance
-
-- Office 365 E5
-
-- Office 365 Advanced Compliance
+You can find licensing requirements for third-party data connectors in the [Microsoft 365 Compliance Licensing Comparison](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx) document.
 
 ## APIs
 
@@ -83,6 +73,18 @@ The Teams data loss prevention (DLP) scenario is made possible by Microsoft Grap
 You can get started by trying out the [sample app for change notifications](https://github.com/microsoftgraph/csharp-webhook-with-resource-data). See the [documentation](https://docs.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http) for more information about creating Microsoft Teams messaging webhooks.
 
 To learn more about Microsoft Graph APIs, see [Use the Microsoft Graph API](https://docs.microsoft.com/graph/use-the-api).
+
+### Microsoft Graph API for Teams DLP
+
+[Data loss prevention (DLP)](dlp-microsoft-teams.md) capabilities are widely used in Microsoft Teams particularly as organizations have shifted to remote work. Earlier this year we [announced the public preview of the Microsoft Graph Change Notification API for messages in Teams](https://developer.microsoft.com/graph/blogs/announcing-change-notifications-for-microsoft-teams-messages/). This API enables developers to build apps that can listen to Microsoft Teams messages in near-real time and then implement DLP scenarios for both customers and ISVs. Additionally, Microsoft Graph Patch API lets you apply DLP actions to Teams messages.
+
+Together, these two APIs form the Microsoft Graph API for Teams DLP and today, You can get started by trying out the [sample app](https://github.com/microsoftgraph/csharp-webhook-with-resource-data). See the [documentation](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http) for more information about Microsoft Teams messaging webhooks.
+
+You can find licensing requirements for the use of this API for Teams DLP on our service description page [here](https://docs.microsoft.com/en-us/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+
+### 
+
+
 
 ### Prerequisites for the Teams DLP API
 
