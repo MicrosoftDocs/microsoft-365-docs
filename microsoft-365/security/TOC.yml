@@ -106,7 +106,7 @@
                       href: mtp/investigate-incidents.md
                     - name: Manage incidents
                       href: mtp/manage-incidents.md
-            - name: Self-healing
+            - name: Automated investigation and response
               items: 
                 - name: Overview of automated investigation and response
                   href: mtp/mtp-autoir.md
