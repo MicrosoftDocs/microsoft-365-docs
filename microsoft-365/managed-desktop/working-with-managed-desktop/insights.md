@@ -13,7 +13,7 @@ ms.topic: article
 
 # Work with insights
 
-Microsoft Managed Desktop provides a number of dashboards that IT admins in your tenant can use to understand various aspects of the population of devices. You access these through the Microsoft 365 Admin Center.
+Microsoft Managed Desktop provides a number of dashboards that IT admins in your tenant can use to understand various aspects of the population of devices. You access these directly, in the [Microsoft 365 Admin Center](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop).
 
 With these dashboards you can find the answers to questions like these:
 
@@ -26,10 +26,9 @@ With these dashboards you can find the answers to questions like these:
 - What is the current status of security updates on devices?
 - How long did it take for 95% of the devices to get current with the latest security update?
 
-To access these views from the Microsoft 365 Admin Center, select **View details** in the **Reports** area:
+To access these views from the [Microsoft Endopint Manager](http://endpoint.microsoft.com/), nvaigate to the Microsoft Managed Desktop tab on the homepage and select **View details** in the **Reports** area:
 
-![Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)
-
+<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->!
 
 
 ## Usage insights
