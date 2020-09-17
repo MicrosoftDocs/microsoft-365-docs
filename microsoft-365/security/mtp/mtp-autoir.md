@@ -35,7 +35,7 @@ Watch the following video to see how self-healing works:
 
 
 > [!TIP]
-> In Microsoft Threat Protection, automated investigation and response, with self-healing, works across your devices, email & content, and identities by bringing together capabilities from: 
+> In Microsoft Threat Protection, automated investigation and response with self-healing capabilities works across your devices, email & content, and identities. Microsoft Threat Protection brings together capabilities from: 
 > - [Automated investigation and remediation in Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 > - [Automated investigation and response in Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
 > - [Azure advanced threat detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
@@ -78,7 +78,7 @@ While an investigation is running, any other related alerts that arise are added
 
 ## Next steps
 
-- [See the prerequisites for automated investigation and response in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md#prerequisites-for-automated investigation and response-in-microsoft-threat-protection)
+- [See the prerequisites for automated investigation and response in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-threat-protection)
 - [Configure automated investigation and response for your organization](mtp-configure-auto-investigation-response.md)
 - [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
 - [Learn more about the Action center](mtp-action-center.md)
