@@ -78,4 +78,4 @@ Advanced hunting|-	Microsoft Threat Protection </br></br>- Microsoft Defender AT
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 2: Prepare](../../media/prepare.png) <br>[Phase 2: Prepare](prepare-mtpeval.md) | Prepare your Microsoft Threat Protection pilot environment
+|![Preparation phase](../../media/prepare.png) <br>[Preparation phase](prepare-mtpeval.md) | Prepare your Microsoft Threat Protection pilot environment
