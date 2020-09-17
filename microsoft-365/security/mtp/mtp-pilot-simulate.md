@@ -428,7 +428,6 @@ To learn more about advanced hunting, the following webcasts will walk you throu
 >[!NOTE]
 >Be prepared with your own GitHub account to run the hunting queries in your pilot test lab environment.  
 
-||||||
 | **Title** | **Description** | **Download MP4** | **Watch on YouTube** | **CSL file to use** |
 |:-----|:-----|:-----|:-----|:-----|
 | Episode 1: KQL fundamentals | We’ll cover the basics of advanced hunting capabilities in Microsoft Threat Protection. Learn about available advanced hunting data and basic KQL syntax and operators. | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [Episode 1: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
@@ -437,6 +436,5 @@ To learn more about advanced hunting, the following webcasts will walk you throu
 | Episode 4: Let’s hunt! Applying KQL to incident tracking|Time to track some attacker activity! In this episode, we’ll use our improved understanding of KQL and advanced hunting in Microsoft Threat Protection to track an attack. Learn some of the tips and tricks used in the field to track attacker activity, including the ABCs of cybersecurity and how to apply them to incident response. | [MP4](https://aka.ms/MTP5AUG20_MP4) | [YouTube](https://youtu.be/2EUxOc_LNd8) | [Episode 4: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) |
 
 ## Next step
-|||
 |![Closing and summary phase](../../media/mtp/close.png) <br>[Closing and summary phase](mtp-pilot-close.md) | Analyze your Microsoft Threat Protection pilot outcome, present them to your stakeholders, and take the next step. 
 |:-----|:-----|
