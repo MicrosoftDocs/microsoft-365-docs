@@ -1,5 +1,5 @@
 ---
-title: "What the DLP functions look for"
+title: "What the Data Loss Prevention (DLP) functions look for"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Learn what the data loss prevention (DLP) functions look for, to help you understand how the predefined sensitive information types work.
+description: Learn what the data loss prevention (DLP) functions look for.
 ---
 
 # What the DLP functions look for
 
-Data loss prevention (DLP) includes sensitive information types, such as Credit Card Number and EU Debit Card Number, which are ready for you to use in your DLP policies. These sensitive information types look for a specific pattern and corroborate it by ensuring proper formatting, enforcing checksums, and looking for relevant keywords or other information. Some of this functionality is performed by internal functions. For example, the Credit Card Number sensitive information type uses a function to look for dates formatted like an expiration date, to help corroborate that a number is a credit card number.
+Data loss prevention (DLP) includes sensitive information types, such as credit card Number and EU Debit card number, which are ready for you to use in your DLP policies. These sensitive information types look for a specific pattern and corroborate it by ensuring proper formatting, enforcing checksums, and looking for relevant keywords or other information. Some of this functionality is performed by internal functions. For example, the Credit Card Number sensitive information type uses a function to look for dates formatted like an expiration date, to help corroborate that a number is a credit card number.
   
-This topic explains what these functions look for, to help you understand how the predefined sensitive information types work. For more information, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
+This article explains what these functions look for, to help you understand how the predefined sensitive information types work. For more information, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
   
 ## Func_us_date
 
@@ -56,7 +56,7 @@ Accepted month names:
     
 ## Func_eu_date
 
-This function looks for a date in the format commonly used in the E.U. (and most places outside the U.S.). This includes the formats "day/month/year", "day-month-year", and "day month year". The names or abbreviations of months are not case sensitive.
+This function looks for a date in the format commonly used in the E.U. (and most places outside the U.S.), such as "day/month/year", "day-month-year", and "day month year". The names or abbreviations of months are not case sensitive.
   
 Examples:
   
@@ -178,7 +178,7 @@ Accepted month names:
     
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
     
-  - jan feb maart apr mei jun jul aug sep sept oct okt nov dec
+  - jan feb maart apr mei jun jul aug sep sept out okt nov dec
     
 ## Func_expiration_date
 
@@ -196,7 +196,7 @@ Examples:
     
 The following formats support YY or YYYY:
   
-- Month-YYYY -- for example, .Jan-2010 or january-2010 or Jan-10 or january-10
+- Month-YYYY -- for example Jan-2010 or january-2010 or Jan-10 or january-10
     
 - Month YYYY -- for example, 'january 2010' or 'Jan 2010' or 'january 10' or 'Jan 10'
     
@@ -214,7 +214,7 @@ Accepted month names:
     
 ## Func_us_address
 
-This function looks for a U.S. state name or postal abbreviation followed by a valid zip code, just as they are used in postal addresses. The zip code must be one of the correct zip codes associated with the U.S. state name or abbreviation. The U.S. state name and zip code cannot be separated by punctuation or letters.
+This function looks for a U.S. state name or postal abbreviation followed by a valid zip code, just as they're used in postal addresses. The zip code must be one of the correct zip codes associated with the U.S. state name or abbreviation. The U.S. state name and zip code cannot be separated by punctuation or letters.
   
 Examples:
   

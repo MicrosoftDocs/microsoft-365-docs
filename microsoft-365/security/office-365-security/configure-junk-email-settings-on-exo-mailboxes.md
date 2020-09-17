@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -52,7 +52,7 @@ Admins can use Exchange Online PowerShell to disable, enable, and view the statu
 ## Use Exchange Online PowerShell to enable or disable the junk email rule in a mailbox
 
 > [!NOTE]
-> You can only use the **Set-MailboxJunkEmailConfiguration** cmdlet to disable the junk email rule on a mailbox that's been opened in Outlook (in Cached Exchange mode) or Outlook on the web. If the mailbox hasn't been opened, you'll receive the error: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` If you want to suppress this error for bulk operations, you can add `-ErrorAction SlientlyContinue` to the **Set-MailboxJunkEmailConfiguration** command.
+> You can only use the **Set-MailboxJunkEmailConfiguration** cmdlet to disable the junk email rule on a mailbox that's been opened in Outlook (in Cached Exchange mode) or Outlook on the web. If the mailbox hasn't been opened, you'll receive the error: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` If you want to suppress this error for bulk operations, you can add `-ErrorAction SilentlyContinue` to the **Set-MailboxJunkEmailConfiguration** command.
 
 To enable or disable the junk email rule on a mailbox, use the following syntax:
 
@@ -75,9 +75,9 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 For detailed syntax and parameter information, see [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration).
 
 > [!NOTE]
-> 
-> - If the user has never opened their mailbox, you might receive an error when you run the previous command. To suppress this error for bulk operations, add `-ErrorAction SlientlyContinue` to the **Set-MailboxJunkEmailConfiguration** command.
-> 
+>
+> - If the user has never opened their mailbox, you might receive an error when you run the previous command. To suppress this error for bulk operations, add `-ErrorAction SilentlyContinue` to the **Set-MailboxJunkEmailConfiguration** command.
+>
 > - Even if you disable the junk email rule, the Outlook Junk Email Filter (depending on how it's configured) can also determine whether a message is spam, and can move messages to the Inbox or Junk Email folder based on it's own spam verdict and the the safelist collection on the mailbox. For more information, see the [About junk email settings in Outlook](#about-junk-email-settings-in-outlook) section in this topic.
 
 ### How do you know this worked?
@@ -94,9 +94,10 @@ To verify that you have successfully enabled or disabled the junk email rule on 
 
 The safelist collection on a mailbox includes the Safe Senders list, the Safe Recipients list, and the Blocked Senders list. By default, users can configure the safelist collection on their own mailbox in Outlook or Outlook on the web. Administrators can use the corresponding parameters on the **Set-MailboxJunkEmailConfiguration** cmdlet to configure the safelist collection on a user's mailbox. These parameters are described in the following table.
 
-|||
+****
+
+|Parameter on Set-MailboxJunkEmailConfiguration|Outlook on the web setting|
 |---|---|
-|**Parameter on Set-MailboxJunkEmailConfiguration**|**Outlook on the web setting**|
 |_BlockedSendersAndDomains_|**Move email from these senders or domains to my Junk Email folder**|
 |_ContactsTrusted_|**Trust email from my contacts**|
 |_TrustedListsOnly_|**Only trust email from addresses in my Safe senders and domains list and Safe mailing lists**|
@@ -138,11 +139,11 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 For detailed syntax and parameter information, see [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration).
 
 > [!NOTE]
-> 
-> - If the user has never opened their mailbox, you might receive an error when you run the previous commands. To suppress this error for bulk operations, add `-ErrorAction SlientlyContinue` to the **Set-MailboxJunkEmailConfiguration** command.
-> 
+>
+> - If the user has never opened their mailbox, you might receive an error when you run the previous commands. To suppress this error for bulk operations, add `-ErrorAction SilentlyContinue` to the **Set-MailboxJunkEmailConfiguration** command.
+>
 > - Even if the junk email rule is disabled on the mailbox, you can still configure the safelist collection, and the Outlook Junk Email Filter is able to move messages to the Inbox or the Junk Email folder. For more information, see the [About junk email settings in Outlook](#about-junk-email-settings-in-outlook) section in this topic.
-> 
+>
 > - The Outlook Junk Email Filter has additional safelist collection settings (for example, **Automatically add people I email to the Safe Senders list**). For more information, see [Use Junk Email Filters to control which messages you see](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
 
 ### How do you know this worked?

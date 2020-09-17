@@ -41,7 +41,7 @@ Select **Choose columns** to add or remove columns from the report.  <br/> ![Tea
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. The exported format for **audio time**, **video time** and **screen share time** follows ISO8601 date format.
 
-|||
+|Item|Description|
 |:-----|:-----|
 |**Metric**|**Definition**|
 |User name  <br/> |The email address of the user. You can display the actual email address or make this field anonymous.   <br/> |
@@ -50,8 +50,8 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |Total meetings   <br/> |The number of online meetings that the user participated in during the specified time period.  <br/> |
 |1:1 calls   <br/> | The number of 1:1 calls that the user participated in during the specified time period.  <br/> |
 |Last activity date (UTC)  <br/> |The last date that the user participated in a Microsoft Teams activity.<br/> |
-|Meetings participated adhoc   <br/> | The number of adhoc meetings that the user participated in during the specified time period.  <br/> |
-|Meetings organized adhoc <br/> |The number of adhoc meetings that the user organized during the specified time period. <br/>|
+|Meetings participated adhoc   <br/> | The number of  meetings not scheduled on the calendar that the user participated in during the specified time period.  <br/> |
+|Meetings organized adhoc <br/> |The number of meetings not scheduled on the calendar that the user organized during the specified time period. <br/>|
 |Meetings organized scheduled  <br/> |The number of scheduled meetings  a user organized during the specified time period.  <br/> |
 |Is licensed |Selected if the user is licensed to use Teams.|
 |Other activity|the User is considered active but has a zero value for the Chat Messages, 1:1 calls, Channel Messages, Total Meetings, and Meetings organized metric values. Examples actions are when a user opens a Channel Message post but does not reply or when a Private message is received and it is read but not responded to. |

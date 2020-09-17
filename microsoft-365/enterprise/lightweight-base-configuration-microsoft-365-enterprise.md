@@ -9,7 +9,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -17,29 +17,29 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Use this Test Lab Guide to create a lightweight test environment for testing Microsoft 365 Enterprise.
+description: Use this Test Lab Guide to create a lightweight test environment for testing Microsoft 365 for enterprise.
 ---
 
 # The lightweight base configuration
 
-*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+*This Test Lab Guide can be used for both Microsoft 365 for enterprise and Office 365 Enterprise test environments.*
 
 This article provides you with step-by-step instructions to create a simplified environment with a Microsoft 365 E5 subscription and a computer running Windows 10 Enterprise. 
 
 ![The lightweight Microsoft 3656 Enterprise test environment](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-Use the resulting environment to test the features and functionality of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
+Use the resulting environment to test the features and functionality of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise).
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Click [Microsoft 365 Enterprise Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [Microsoft 365 for enterprise Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
 
-## Phase 1: Create your Office 365 E5 subscription
+## Phase 1: Create your Microsoft 365 E5 subscription
 
-We start with an Office 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
+We start with an Microsoft 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
 
-To start your Office 365 E5 trial subscription, you first need a fictitious company name and a new Microsoft account.
+To start your Microsoft 365 E5 trial subscription, you first need a fictitious company name and a new Microsoft account.
   
 1. We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here: ![Line](../media/Common-Images/TableLine.png)
     
@@ -71,7 +71,7 @@ We have you create a trial subscription of Office 365 so that your test environm
 
 In this phase, you configure your subscription with additional users and assign them Office 365 E5 licenses.
   
-Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) to connect to your subscription with the Azure Active Directory PowerShell for Graph module from your computer.
+Use the instructions in [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) to connect to your subscription with the Azure Active Directory PowerShell for Graph module from your computer.
     
 In the **Windows PowerShell Credential Request** dialog box, type the global administrator name (example: jdoe@contosotoycompany.onmicrosoft.com) and password.
   
@@ -146,7 +146,7 @@ Record these values:
 
 If all you need is an Office 365 test environment, you can stop here. 
 
-See [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) for additional Test Lab Guides that apply to both Office 365 and Microsoft 365.
+See [Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) for additional Test Lab Guides that apply to both Office 365 and Microsoft 365.
   
 ## Phase 3: Add a Microsoft 365 E5 trial subscription
 
@@ -186,7 +186,7 @@ Your test environment now has:
 - A Microsoft 365 E5 trial subscription.
 - All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Microsoft 365 E5.
     
-Here is your resulting configuration, which adds Microsoft 365 E5, which includes both Office 365 and Enterprise Security + Management (EMS).
+Here is your resulting configuration, which adds Microsoft 365 E5.
   
 ![Phase 3 of the Microsoft 3656 Enterprise test environment](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
@@ -289,7 +289,7 @@ Next, join the WIN10 computer to the Azure AD tenant of your Microsoft 365 E5 su
     
 Next, install Microsoft 365 Apps for enterprise on the WIN10 computer.
   
-1. Open the Microsoft Edge browser and sign in to the Office portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Open the Microsoft Edge browser and sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with your global administrator account credentials.
     
 2. On the **Microsoft Office Home** tab, click **Install Office**.
     
@@ -307,7 +307,7 @@ This includes the WIN10 computer that has:
 - Enrolled as an Azure AD device in Microsoft Intune (EMS).
 - Has Microsoft 365 Apps for enterprise installed.
   
-You are now ready to experiment with additional features of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
+You are now ready to experiment with additional features of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise).
   
 ## Next steps
 
@@ -320,8 +320,8 @@ Explore these additional sets of Test Lab Guides:
 
 ## See also
 
-[Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
-[Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)

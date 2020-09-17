@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
@@ -15,8 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: Learn how to create and run a query in a review set to organize data for a more efficient review in an Advanced eDiscovery case.
+description: "Learn how to create and run a query in a review set to organize data for a more efficient review in an Advanced eDiscovery case."
 ms.custom: seo-marvel-mar2020
 ---
 
@@ -26,7 +25,7 @@ In most cases, it will be useful to be able to dig deeper into the data in a rev
 
 ## Creating and running a query in a review set
 
-To create and run a query on the documents in a review set, click **New query** in the review set. After you name your query and define the conditions, click **Save** to save and run the query. To run a query that has been previously saved, click a saved query.
+To create and run a query on the documents in a review set, select **New query** in the review set. After you name your query and define the conditions, select **Save** to save and run the query. To run a query that has been previously saved, select a saved query.
 
 ![Review set queries](../media/AeDReviewSetQueries.png)
 
@@ -52,9 +51,9 @@ There are multiple types of condition cards:
 
 In addition to condition cards, you can use a KQL-like query language in the Keywords card to build your query. The query language for review set queries supports standard Boolean operators, such as **AND**, **OR**, **NOT**, and **NEAR**. It also supports a single-character wildcard (?) and a multi-character wildcard (*).
 
-## Using filters
+## Filters
 
-In addition to queries that you can save, you can use review set filters to quickly apply additional conditions to a review set query. This helps you further refine the results displayed by a review set query.
+In addition to queries that you can save, you can use review set filters to quickly apply additional conditions to a review set query. Using filters help you further refine the results displayed by a review set query.
 
 ![Review set filters](../media/AeDReviewSetFilters.png)
 

@@ -28,12 +28,11 @@ ms.date: 07/01/2020
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> The admin center is changing. If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
-The people on your team each need a user account before they can sign in and access [Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395). The easiest way to add user accounts is to add them one at a time in the Microsoft 365 admin center. After you do this step, your users have Microsoft 365 licenses, sign in credentials, and Microsoft 365 mailboxes.
+The people on your team each need a user account before they can sign in and access [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business). The easiest way to add user accounts is to add them one at a time in the Microsoft 365 admin center. After you do this step, your users have Microsoft 365 licenses, sign in credentials, and Microsoft 365 mailboxes.
 
 ## Before you begin
 
@@ -50,7 +49,7 @@ You must be a Global, License, or a User admin to add users and assign licenses.
 
 ::: moniker range="o365-worldwide"
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the admin center at <https://admin.microsoft.com>.
 2. Go to **Users** > **Active users**, and select **Add a user**.
 3. In the **Set up the basics** pane, fill in the basic user information, and then select **Next**.
     - **Name** Fill in the first and last name, display name, and username.
@@ -66,7 +65,7 @@ You must be a Global, License, or a User admin to add users and assign licenses.
 
 ::: moniker range="o365-germany"
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
+1. Go to the admin center at <https://portal.office.de/adminportal>.
 2. Go to **Users** > **Active users**, and select **Add a user**.
 3. In the **New user** pane, fill in the following information. When you're finished, select **Add**.
     - **Name** Fill in first, last, display name, and user name.
@@ -80,7 +79,7 @@ You must be a Global, License, or a User admin to add users and assign licenses.
 
 ::: moniker range="o365-21vianet"
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+1. Go to the admin center at <https://portal.partner.microsoftonline.cn>.
 2. Go to **Users** > **Active users**, and select **Add a user**.
 3. In the **New user** pane, fill in the following information. When you're finished, select **Add**.
     - **Name** Fill in first, last, display name, and user name.
@@ -95,10 +94,10 @@ You must be a Global, License, or a User admin to add users and assign licenses.
 ## Add multiple users at the same time
 
 You can use any of the following methods to add multiple users at the same time:
-  
-- **Use a spreadsheet to add people in bulk.** See [Add several users at the same time](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time).
-- **Automate adding accounts and assigning licenses.** See [Create user accounts with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell). Choose this method if you're already familiar with using Windows PowerShell cmdlets.
-- **Using ActiveDirectory?** [Set up directory synchronization for Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization). Use the Azure AD Connect tool to replicate Active Directory user accounts (and other Active Directory objects) in Microsoft 365. The sync only adds the user accounts. You must assign licenses to the synced users before they can use email and other Office apps.
+
+- **Use a spreadsheet to add people in bulk.** See [Add several users at the same time](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time).
+- **Automate adding accounts and assigning licenses.** See [Create user accounts with Microsoft 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell). Choose this method if you're already familiar with using Windows PowerShell cmdlets.
+- **Using ActiveDirectory?** [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization). Use the Azure AD Connect tool to replicate Active Directory user accounts (and other Active Directory objects) in Microsoft 365. The sync only adds the user accounts. You must assign licenses to the synced users before they can use email and other Office apps.
 - **Migrating from Exchange?** See [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). When you migrate multiple mailboxes to Microsoft 365 by using either cutover, staged, or a hybrid Exchange method, you automatically add users as part of the migration. The migration only adds the user accounts. You must assign licenses to the users before they can use email and other Office apps. If you don't assign a license to a user, their mailbox is disabled after a grace period of 30 days. Learn how to [assign licenses to users](../manage/assign-licenses-to-users.md) in the Microsoft 365 admin center.
 
 ## Next steps
@@ -108,7 +107,7 @@ After you add a user, you get an email notification from Microsoft. The email co
 ## Related content
 
 [Add a new employee to Microsoft 365](add-new-employee.md) (article)\
-[Add several users at the same time to Microsoft 365](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time) (article)\
+[Add several users at the same time to Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time) (article)\
 [Restore a user in Microsoft 365](restore-user.md) (article)\
 [Assign licenses to users](../manage/assign-licenses-to-users.md) (article)\
 [Delete a user from your organization](delete-a-user.md) (article)

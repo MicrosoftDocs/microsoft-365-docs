@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -28,9 +28,10 @@ Bulk mailers vary in their sending patterns, content creation, and recipient acq
 
 The BCL thresholds are described in the following table.
 
-|||
+****
+
+|BCL|Description|
 |:---:|---|
-|**BCL**|**Description**|
 |0|The message isn't from a bulk sender.|
 |1, 2, 3|The message is from a bulk sender that generates few complaints.|
 |4, 5, 6, 7|The message is from a bulk sender that generates a mixed number of complaints.|

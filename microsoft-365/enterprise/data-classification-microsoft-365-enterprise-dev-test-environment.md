@@ -1,5 +1,5 @@
 ---
-title: "Data classification for your Microsoft 365 Enterprise test environment"
+title: "Data classification for your Microsoft 365 for enterprise test environment"
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,21 +13,21 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Use this Test Lab Guide to create and use retention labels on documents in your Microsoft 365 Enterprise test environment.
+description: Use this Test Lab Guide to create and use retention labels on documents in your Microsoft 365 for enterprise test environment.
 ---
 
-# Data classification for your Microsoft 365 Enterprise test environment
+# Data classification for your Microsoft 365 for enterprise test environment
 
-*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+*This Test Lab Guide can be used for both Microsoft 365 for enterprise and Office 365 Enterprise test environments.*
 
-With the instructions in this article, you configure data classification using retention labels in your Microsoft 365 Enterprise test environment.
+With the instructions in this article, you configure data classification using retention labels in your Microsoft 365 for enterprise test environment.
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
   
-## Phase 1: Build out your Microsoft 365 Enterprise test environment
+## Phase 1: Build out your Microsoft 365 for enterprise test environment
 
 If you just want to configure retention labels in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -86,7 +86,7 @@ In this phase, you discover the default retention label behavior for files in th
 
 First, create a sensitive-level SharePoint Online team site:
   
-1. Using a private instance of your browser, sign in to the [Office 365 portal](https://portal.office.com) using your global admin account.
+1. Using a private instance of your browser, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) using your global admin account.
     
 2. In the list of tiles, click **SharePoint**.
     
@@ -128,18 +128,16 @@ Next, create a new document in the SensitiveFiles site and change its retention 
     
 7. In the **Document.docx** pane, under **Apply retention label**, select the **Highly Confidential** label, and then click **Save**.
 
-See the [Configure classification for your environment](infoprotect-configure-classification.md) step in the **Information protection** phase for information and links to how to deploy retention labels in production.
-
 ## Next step
 
 Explore additional [information protection](m365-enterprise-test-lab-guides.md#information-protection) features and capabilities in your test environment.
 
 ## See also
 
-[Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
-[Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
 
  

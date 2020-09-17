@@ -15,7 +15,6 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
 ms.custom:
 - seo-marvel-apr2020
 description: Read an overview about processing various forms of data in the Advanced eDiscovery tool in Office 365.

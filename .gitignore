@@ -6,6 +6,11 @@ _themes*/
 _repo.*/
 .vscode/
 *.ini
+.DS_Store
+*.db
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
 
 .openpublishing.buildcore.ps1
 .vs/slnx.sqlite
