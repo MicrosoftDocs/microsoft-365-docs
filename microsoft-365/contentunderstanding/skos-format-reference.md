@@ -57,7 +57,6 @@ SharePoint taxonomy vocabulary derived from OWL
 
 |SharePoint taxonomy vocabulary|Derived from RDFS class|
 |:-----------------------------|:----------------------|
-|sharepoint-taxonomy:inTermGroup|owl:ObjectProperty|
 |sharepoint-taxonomy:isAvailableForTagging|owl:datatypeproperty|
 |sharepoint-taxonomy:SharedCustomPropertyForTerm|owl:ObjectProperty|
 |sharepoint-taxonomy:LocalCustomPropertyForTerm|owl:ObjectProperty|
@@ -72,23 +71,22 @@ A Term is the atomic unit of a SharePoint term store. Each term belongs to a Ter
 The syntax to define a term is  –
 
 ```SKOS
-ex:TermA    a    sharepoint-taxonomy:Term|;
-sharepoint-taxonomy:inTermSet    ex:TermSetA|;
-sharepoint-taxonomy:topLevelTermOf    ex:TermSetA|;
-sharepoint-taxonomy:child    ex:TermA1|;
-sharepoint-taxonomy:isAvailableForTagging    “true”^^xsd:Boolean ;
-sharePoint-taxonomy:defaultLabel    “Term A”@en-us   .
+ex:TermA    a    sharepoint-taxonomy:Term   ;
+    sharepoint-taxonomy:inTermSet    ex:TermSetA    ;
+    sharepoint-taxonomy:topLevelTermOf    ex:TermSetA   ;
+    sharepoint-taxonomy:child    ex:TermA1  ;
+    sharepoint-taxonomy:isAvailableForTagging    “true”^^xsd:Boolean    ;
+    sharePoint-taxonomy:defaultLabel    “Term A”@en-us   .
 ```
 
 A Term compulsorily exists within a TermSet. DefaultLabel is the name of the term as it will appear in the visual representation. The required fields for defining a Term are:
 
-- sharepoint-taxonomy:isAvailableForTagging
 - sharepoint-taxonomy:defaultLabel
 - sharepoint-taxonomy:inTermSet
 
 A Term can:
 
-- be hierarchically related to one another, provided they both belong to the same TermSet. 
+- be hierarchically related to another term, provided both the Terms belong to the same TermSet.
 - have multiple child Terms, but only a single parent Term.
 - not have a parent Term defined if it is a topLevelTermOf a TermSet.
 - have one defaultLabel, per term store working language.
@@ -104,22 +102,21 @@ As the name suggests this is a set of terms. A term in a term store must belong 
 The syntax to define a TermSet is:
 
 ```SKOS
-ex:TermSetA    a    sharepoint-taxonomy:TermSet |;
-sharepoint-taxonomy:termSetName    “TermSet A”;
-sharepoint-taxonomy:isAvailableForTagging    “true”^^xsd:Boolean ;
-sharepoint-taxonomy:hasTopLevelTerm    Ex:Term A   .
+ex:TermSetA    a    sharepoint-taxonomy:TermSet ;
+    sharepoint-taxonomy:termSetName    “TermSet A"   ;
+    sharepoint-taxonomy:isAvailableForTagging    “true”^^xsd:Boolean    ;
+    sharepoint-taxonomy:hasTopLevelTerm    Ex:Term A   .
 ```
 
 TermSets are logically grouped together in TermGroups. The required fields for defining a TermSet are:
 
-- sharepoint-taxonomy:isAvailableForTagging
 - sharepoint-taxonomy:termSetName
 
-In case the termSetName provided is not unique within the TermGroup, a number is appended at the end of the name to maintain the uniqueness of termSetName (s).
+In case the termSetName provided is not unique within the TermGroup, a number is appended at the end of the name to maintain the uniqueness of termSetName(s).
 
 #### sharepoint-taxonomy:hasTopLevelTerm
 
-This property is used to map the top most term in the TermSet, that is the entry point to the hierarchy of terms in a TermSet. This is an inverse relation to sharepoint-taxonomy:topLevelTermOf . 
+This property is used to map the top most term in the TermSet, that is the entry point to the hierarchy of terms in a TermSet. This is an inverse relation to sharepoint-taxonomy:topLevelTermOf. 
 
 The syntax to define this is:
 
@@ -137,13 +134,7 @@ ex:TermA    sharepoint-taxonomy:topLevelTermOf    ex:TermSetA   .
 
 #### sharepoint-taxonomy:inTermSet
 
-This is used to map a term to a TermSet. A term can only exist in a single TermSet. This property is required when defining a term.
-
-### TermGroup
-
-#### sharepoint-taxonomy:inTermGroup
-
-A TermSet must exist within a TermGroup.
+This is used to map a term to a TermSet. A term can only exist in a single TermSet. This property is required when [defining a term](#term).
 
 ### Required labels
 
@@ -187,7 +178,7 @@ ex:SharedCustomProperty1    sharepoint-taxonomy:propertyName    “Shared Custom
 
 This is the alternate lexical label for a term. 
 
-The syntax to define a otherLabel is:
+The syntax to define an otherLabel is:
 
 ```SKOS
 ex:TermA    sharepoint-taxonomy:otherLabel    “Term A”@en-us   .
@@ -197,7 +188,7 @@ ex:TermA    sharepoint-taxonomy:otherLabel    “Term A”@en-us   .
 
 #### sharepoint-taxonomy:parent
 
-This hierarchically relates a term to a another term. A term could be a top level term of a TermSet, but in case it doesn’t it must have a parent term. 
+This hierarchically relates a term to another term. A term could be a top level term of a TermSet, but in case it doesn’t it must have a parent term. 
 The syntax to define a parent is  –
 
 ```SKOS
@@ -208,7 +199,7 @@ This means that TermA1 has parent TermA. Inversely it also means that TermA1 is 
 
 #### sharepoint-taxonomy:child
 
-This hierarchically relates a term to a another term.
+This hierarchically relates a term to another term.
 
 The syntax to define a child is  –
 
@@ -239,22 +230,22 @@ Custom Properties are key-values pairs that can be defined for a Term or a TermS
 The syntax to define this is –
 
 ```SKOS
-ex:CustomProp1    rdf:type    sharepoint-taxonomy:CustomPropertyForTermSet|;
-|sharepoint-taxonomy:propertyName “Colour”   .
+ex:CustomProp1    rdf:type    sharepoint-taxonomy:CustomPropertyForTermSet  ;
+    sharepoint-taxonomy:propertyName “Colour”   .
 
 ex:TermSetA    ex:CustomProp1    “Red”@en-us   .
 ```
 
 #### sharepoint-taxonomy:SharedCustomPropertyForTerm
 
-If the custom property for a Term is such that it needs to be carried along with the Term when the Term is reused somewhere else, then it need to be defined under SharedCustomPropertyForTerm.
+If the custom property for a Term is such that it needs to be carried along with the Term when the Term is reused somewhere else, then it needs to be defined under SharedCustomPropertyForTerm.
 
 The syntax to define this is:
 
 
 ``` SKOS
 ex:CustomProp2    rdf:type sharepoint-taxonomy:SharedCustomPropertyForTerm    ;
-sharepoint-taxonomy:propertyName “Length”   .
+    sharepoint-taxonomy:propertyName “Length”   .
 
 ex:TermA    ex:CustomProp2    “5 cm”@en-us   .
 ```
@@ -266,8 +257,8 @@ If the custom property for a Term is such that it does not need to be carried al
 The syntax to define this is:
 
 ```SKOS
-ex:CustomProp3    rdf:type sharepoint-taxonomy:LocalCustomPropertyForTerm|;
-|sharepoint-taxonomy:propertyName “width”   .
+ex:CustomProp3    rdf:type sharepoint-taxonomy:LocalCustomPropertyForTerm   ;
+    sharepoint-taxonomy:propertyName “width”   .
 
 ex:TermA    ex:CustomProp3    “5 cm”@en-us   .
 ```
@@ -281,7 +272,7 @@ This is to specify if a Term or a TermSet will be available in the SharePoint Li
 The syntax for this is:
 
 ```SKOS
-ex:TermA    sharepoint-taxonomy:isAvailableForTagging     "true"^^xsd:Boolean |;
+ex:TermA    sharepoint-taxonomy:isAvailableForTagging     "true"^^xsd:Boolean   ;
 ```
 
 ## Domain and range of SharePoint taxonomy vocabulary
