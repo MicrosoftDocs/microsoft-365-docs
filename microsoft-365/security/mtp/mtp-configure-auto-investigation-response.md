@@ -63,6 +63,8 @@ Whether automated investigations run, and whether remediation actions are taken 
 
 Microsoft provides built-in [alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) that help identify certain risks. These risks include Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Some alerts can trigger [automated investigation and response in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Make sure your [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) features are configured correctly.
 
+Although certain alerts and security policies can trigger automated investigations, no remediation actions are taken automatically for email and content. Instead, all remediation actions for email and email content await approval by your security operations team in the [Action center](mtp-action-center.md).
+
 ### To view or change your security and alert policies in Office 365
 
 Security settings in Office 365 help protect email and content. To view or change these settings, follow the guidance in [Protect against threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
@@ -99,7 +101,7 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 ## Review pending and completed actions in the Action center
 
-After you have configured automated investigation and response in Microsoft Threat Protection, your next step is to visit the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)). There, you can review and approve pending actions, and see remediation actions that were taken automatically.
+After you have configured automated investigation and response in Microsoft Threat Protection, your next step is to visit the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)). There, you can review and approve pending actions, and see remediation actions that were taken automatically. 
 
 To learn more, see [The Action center](mtp-action-center.md).
 
