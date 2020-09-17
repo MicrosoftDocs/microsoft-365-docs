@@ -18,7 +18,7 @@ f1.keywords: CSH
 
 # Configure self-healing capabilities in Microsoft Threat Protection
 
-Microsoft Threat Protection includes power self-healing capabilities that can save your security operations team much time and effort. Self-healing capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster and with more ability to scale. To learn more about self-healing, see [Self-healing in Microsoft Threat Protection](mtp-autoir.md). 
+Microsoft Threat Protection includes powerful [self-healing capabilities](mtp-autoir.md) that can save your security operations team much time and effort. Self-healing capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale. This article describes how to configure self-healing capabilities in Microsoft Threat Protection.
 
 ## Steps to configure self-healing capabilities
 
@@ -56,7 +56,7 @@ Microsoft Threat Protection includes power self-healing capabilities that can sa
 
 ## Review or change the automation level for device groups
 
-Whether automated investigations run, and whether remediation actions are taken automatically or only upon approval for your devices depend on how certain settings, such as how your device group policies are configured. 
+Whether automated investigations run, and whether remediation actions are taken automatically or only upon approval for your devices depend on how certain settings, such as how your device group policies are configured. To learn more, see [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated).
 
 This task includes reviewing and potentially changing your organization's security settings.
 
@@ -66,7 +66,9 @@ This task includes reviewing and potentially changing your organization's securi
 
 2. Go to **Settings** > **Permissions** > **Device groups**. 
 
-3. Review your device groups. In particular, look at the **Remediation level** column. We recommend using **Full - remediate threats automatically**.  To learn more, see the following articles:
+3. Review your device groups. In particular, look at the **Remediation level** column. We recommend using **Full - remediate threats automatically**.  You might need to create or edit your device groups to get the level of automation you want with self-healing. 
+
+To learn more, see the following articles:
 
    - [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
    
@@ -101,3 +103,15 @@ Security settings in Office 365 help protect email and content. To view or chang
 6. Make sure [Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-5---turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams-workloads) is turned on.
 
 7. Review your [zero-hour auto purge for email](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop) settings. 
+
+## Review pending and completed actions in the Action center
+
+After you have configured self-healing in Microsoft Threat Protection, your next step is to visit the Action center. There, you can review and approve pending actions, and see remediation actions that were taken automatically.
+
+To learn more, see [The Action center](mtp-action-center.md).
+
+## See also
+
+[Remediation actions in MIcrosoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)
+
+[Microsoft Threat Protection: Deploy supported services](https://docs.microsoft.com/microsoft-365/security/mtp/deploy-supported-services)
