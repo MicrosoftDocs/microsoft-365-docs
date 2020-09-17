@@ -439,4 +439,4 @@ To learn more about advanced hunting, the following webcasts will walk you throu
 ## Next step
 |||
 |:-------|:-----|
-|![Closing and summary phase](../../media/close.png) <br>[Closing and summary phase](mtp-pilot-close.md) | Analyze your Microsoft Threat Protection pilot outcome, present them to your stakeholders, and take the next step. 
+|![Closing and summary phase](../../media/mtp/close.png) <br>[Closing and summary phase](mtp-pilot-close.md) | Analyze your Microsoft Threat Protection pilot outcome, present them to your stakeholders, and take the next step. 
