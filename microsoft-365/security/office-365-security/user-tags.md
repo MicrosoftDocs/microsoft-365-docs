@@ -29,13 +29,11 @@ User tags are identifiers for specific groups of users in [Office 365 Advanced T
 
 - [Campaign Views](campaigns.md)
 
-This article explains how to configure user tags in the Security Center and in Exchange Online PowerShell.
+This article explains how to configure user tags in the Security Center.
 
 ## What do you need to know before you begin?
 
 - You open the Security Center at <https://security.microsoft.com/>. To go directly to the **User tags** page, open <https://security.microsoft.com/securitysettings/userTags>.
-
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - To create, modify, or remove user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
