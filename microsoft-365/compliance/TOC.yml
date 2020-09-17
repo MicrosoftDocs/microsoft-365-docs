@@ -314,11 +314,28 @@
               href: archive-twitter-data-with-sample-connector.md
         - name: Globanet data connectors
           items:  
-            - name: Slack eDiscovery
+            - name: EML
+              href: archive-eml-data.md
+            - name: FX Connect
+              href: archive-fxconnect-data.md
+            - name: Reuters Eikon
+              href: archive-reuterseikon-data.md
+            - name: Slack
+              href: archive-slack-data.md    
+            - name: Symphony
+              href: archive-symphony-data.md
+            - name: Text-delimited
+              href: archive-text-delimited-data.md
+            - name: Webex Teams
+              href: archive-webexteams-data.md
+            - name: Workplace from Facebook
+              href: archive-workplacefromfacebook-data.md
+            - name: Zoom Meetings
+              href: archive-zoommeetings-data.md
+            - name: Slack
               href: archive-slack-data.md    
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
-        
         - name: TeleMessage data connectors
           items:  
             - name: Android
