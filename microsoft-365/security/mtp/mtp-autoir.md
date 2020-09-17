@@ -35,15 +35,15 @@ Watch the following video to see how self-healing works:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-
-> [!TIP]
-> In Microsoft Threat Protection, automated investigation and response with self-healing capabilities works across your devices, email & content, and identities. Microsoft Threat Protection brings together capabilities from: 
-> - [Automated investigation and remediation in Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-> - [Automated investigation and response in Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
-> - [Azure advanced threat detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
-> - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+In Microsoft Threat Protection, automated investigation and response with self-healing capabilities works across your devices, email & content, and identities. Microsoft Threat Protection brings together capabilities from: 
+- [Automated investigation and remediation in Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Automated investigation and response in Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
+- [Azure advanced threat detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
+- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
  
-Automated investigation and response capabilities in Microsoft Threat Protection are a lot like having a virtual analyst in your security operations center. Read this article to learn more about how automated investigation and response works. To configure these capabilities, see [Configure automated investigation and response capabilities in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md).
+Read this article to learn more about how automated investigation and response works. 
+
+To configure these capabilities, see [Configure automated investigation and response capabilities in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md).
 
 ## Your virtual analyst
 
@@ -69,13 +69,10 @@ A triggered alert creates an incident, which can start an automated investigatio
 
 Each investigation generates verdicts (*Malicious*, *Suspicious*, or *No threats found*) for each piece of evidence investigated. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization's security operations team. Pending and completed actions are listed in the [Action center](mtp-action-center.md).
 
-> [!TIP]
-> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives with automated investigation and response in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
-
 While an investigation is running, any other related alerts that arise are added to the investigation until it completes. If an incriminated entity is seen elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run. 
 
 > [!NOTE]
-> Not every alert triggers an automated investigation, and not every investigation results in automated remediation actions; this all depends on how automated investigation and response is configured for your organization. 
+> Not every alert triggers an automated investigation, and not every investigation results in automated remediation actions; this all depends on how automated investigation and response is configured for your organization. See [Configure automated investigation and response capabilities in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md).
 
 
 ## Next steps
