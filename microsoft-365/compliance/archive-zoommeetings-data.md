@@ -25,7 +25,7 @@ After Zoom Meetings data is stored in user mailboxes, you can apply Microsoft 36
 
 The following overview explains the process of using a connector to archive Zoom Meetings data in Microsoft 365.
 
-![Slack eDiscovery archiving workflow](../media/ZoomMeetingsConnectorWorkflow.png)
+![Zoom Meetings archiving workflow](../media/ZoomMeetingsConnectorWorkflow.png)
 
 1. Your organization works with Zoom Meetings to set up and configure a Zoom Meetings site.
 
