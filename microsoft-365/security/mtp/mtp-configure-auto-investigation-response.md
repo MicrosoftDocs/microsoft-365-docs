@@ -18,7 +18,7 @@ f1.keywords: CSH
 
 # Configure automated investigation and response capabilities in Microsoft Threat Protection
 
-Microsoft Threat Protection includes powerful [automated investigation and response capabilities](mtp-autoir.md) that can save your security operations team much time and effort. Automated investigation and response includes self-healing capabilities. These capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale. This article describes how to configure automated investigation and response in Microsoft Threat Protection.
+Microsoft Threat Protection includes powerful [automated investigation and response capabilities](mtp-autoir.md) that can save your security operations team much time and effort. These capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale. This article describes how to configure automated investigation and response in Microsoft Threat Protection.
 
 To configure automated investigation and response capabilities, follow these steps:
 
@@ -59,9 +59,7 @@ Then, [review pending and completed actions in the Action center](#review-pendin
 
 ## Review or change the automation level for device groups
 
-Whether automated investigations run, and whether remediation actions are taken automatically or only upon approval for your devices depend on how certain settings, such as how your device group policies are configured. To learn more, see [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated).
-
-This task includes reviewing and potentially changing your organization's security settings.
+Whether automated investigations run, and whether remediation actions are taken automatically or only upon approval for your devices depend on certain settings, such as device group policies. To learn more, see [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated).
 
 ### Review your device group settings
 
@@ -69,9 +67,7 @@ This task includes reviewing and potentially changing your organization's securi
 
 2. Go to **Settings** > **Permissions** > **Device groups**. 
 
-3. Review your device groups. In particular, look at the **Remediation level** column. We recommend using **Full - remediate threats automatically**.  You might need to create or edit your device groups to get the level of automation you want with automated investigation and response. 
-
-To learn more, see the following articles:
+3. Review your device groups. In particular, look at the **Remediation level** column. We recommend using **Full - remediate threats automatically**.  You might need to create or edit your device groups to get the level of automation you want. To get help with this task, see the following articles:
 
    - [How threats are remediated](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
    
@@ -107,9 +103,11 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 7. Review your [zero-hour auto purge for email](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop) settings. 
 
+8. Review your [alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
+ 
 ## Review pending and completed actions in the Action center
 
-After you have configured automated investigation and response in Microsoft Threat Protection, your next step is to visit the Action center. There, you can review and approve pending actions, and see remediation actions that were taken automatically.
+After you have configured automated investigation and response in Microsoft Threat Protection, your next step is to visit the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)). There, you can review and approve pending actions, and see remediation actions that were taken automatically.
 
 To learn more, see [The Action center](mtp-action-center.md).
 
