@@ -420,6 +420,21 @@ From this page, you can select the detection rule which will open a details page
 
 ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
 
+### Additional advanced hunting walk-through exercises
+
+To learn more about advanced hunting, the following webcasts will walk you through the capabilities of advanced hunting within Microsoft Threat Protection (MTP) to create cross-pillar queries, pivot to entities and create custom detections and remediation actions.
+
+>[!NOTE]
+>Be prepared with your own GitHub account to run the hunting queries in your pilot test lab environment.  
+
+|:------|:-----|:-----|:-----|:-----|
+|Title | Description | Download MP4 | Watch on YouTube | CSL file to use |
+|Episode 1: KQL fundamentals|We’ll cover the basics of advanced hunting capabilities in Microsoft Threat Protection. Learn about available advanced hunting data and basic KQL syntax and operators.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube]()|:-----|
+|Episode 2: Joins|We’ll continue learning about data in advanced hunting and how to join tables together. Learn about inner, outer, unique, and semi joins, and the nuances of the default Kusto innerunique join.|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube]()|:-----|
+|Episode 3: Summarizing, pivoting, and visualizing data|Now that we’re able to filter, manipulate, and join data, it’s time to start summarizing, quantifying, pivoting, and visualizing. In this episode, we’ll cover the summarize operator and some of the calculations you can perform while diving into additional tables in the advanced hunting schema. We turn our datasets into charts that can help improve analysis.|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube]()|:-----|
+|Episode 4: Let’s hunt! Applying KQL to incident tracking|Time to track some attacker activity! In this episode, we’ll use our improved understanding of KQL and advanced hunting in Microsoft Threat Protection to track an attack. Learn some of the tips and tricks used in the field to track attacker activity, including the ABCs of cybersecurity and how to apply them to incident response.
+|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube]()|:-----|
+
 ## Next step
 |||
 |:-------|:-----|
