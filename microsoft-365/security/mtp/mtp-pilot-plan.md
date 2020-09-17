@@ -1,6 +1,6 @@
 ---
 title: Planning your pilot Microsoft Threat Protection project 
-description: Run your pilot Microsoft Threat Protection project to effectively determine the benefit and adoption of Microsoft Threat Protection (MTP)
+description: Plan your pilot Microsoft Threat Protection project with stakeholders to manage expectations and ensure successful outcome.
 keywords: Microsoft Threat Protection pilot, plan pilot Microsoft Threat Protection project, evaluate Microsoft Threat Protection in production, Microsoft Threat Protection pilot project, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
