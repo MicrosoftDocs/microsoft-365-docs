@@ -56,8 +56,8 @@ How update deployment works:
     <tr><td>Feature updates for operating system</td><td>0 days</td><td>30 days</td><td>60 days</td><td>90 days</td></tr>
     <tr><td>Drivers/firmware</td><td colspan="4">Follows the schedule for quality updates</td></tr>
     <tr><td>Anti-virus definition</td><td colspan="4">Updated with each scan</td></tr>
-    <tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4"><a href="https://docs.microsoft.com/en-us/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">Learn more</a></td></tr>
-    <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/en-us/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">Learn more</a></td></tr>
+    <tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">Learn more</a></td></tr>
+    <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">Learn more</a></td></tr>
 </table>
 
 >[!NOTE]
