@@ -75,5 +75,4 @@ While an investigation is running, any other related alerts that arise are added
 
 - [See the prerequisites for automated investigation and response in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-threat-protection)
 - [Configure automated investigation and response for your organization](mtp-configure-auto-investigation-response.md)
-- [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
 - [Learn more about the Action center](mtp-action-center.md)
