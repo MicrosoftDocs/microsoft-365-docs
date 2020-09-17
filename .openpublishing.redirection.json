@@ -1504,11 +1504,26 @@
     "source_path": " microsoft-365/admin/security-and-compliance/multi-factor-authentication-plan.md",
     "redirect_url": " https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365",
     "redirect_document_id": true
+},
+    {
+      "source_path": "microsoft-365/compliance/compliance-manager-overview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/compliance-manager",
+      "redirect_document_id": true
     },
     {
-    "source_path": "microsoft-365/compliance/compliance-score.md",
-    "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/compliance-manager",
-    "redirect_document_id": true
+      "source_path": "microsoft-365/compliance/compliance-manager-release-notes.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/compliance-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/working-with-compliance-manager.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/compliance-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/compliance-score-release-notes.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/compliance-manager",
+      "redirect_document_id": false
     }
 
   ]
