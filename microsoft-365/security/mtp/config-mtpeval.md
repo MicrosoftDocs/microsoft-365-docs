@@ -4,7 +4,7 @@ description: Configure Microsoft Threat Protection pillars: Office 365 ATP, Azur
 keywords: configure Microsoft Threat Protection trial, Microsoft Threat Protection trial configuration, configure Microsoft Threat Protection pilot project, configure Microsoft Threat Protection  pillars, Microsoft Threat Protection pillars 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -56,7 +56,7 @@ Preparation is key to any successful deployment. In this article, you'll be guid
 
 ## Microsoft Threat Protection pillars
 Microsoft Threat Protection consists of four pillars. Although one pillar can already provide value to your network organization's security, enabling the four Microsoft Threat Protection pillars will give your organization the most value.
-
+<br>
 ![Image of_Microsoft Threat Protection solution for users, Azure Advanced Threat Protection, for endpoints Microsoft Defender Advanced Threat Protection, for cloud apps, Microsoft Cloud App Security, and for data, Office 365 Advanced Threat Protection  ](../../media/mtp-eval-31.png) <br>
 
 This section will guide you to configure:
@@ -134,7 +134,7 @@ There's a PowerShell Module called the *Office 365 Advanced Threat Protection Re
 <br>![Image of_Azure Advanced Threat Protection page where you should click next to follow the Azure ATP sensor wizard](../../media/mtp-eval-47.png) <br>
  
 7. Click **Next** at the sensor deployment type.
-<br>![Image of_Azure Advanced Threat Protection page where you should click next to follow the Azure ATP sensor wizard](../../media/mtp-eval-48.png) <br>
+<br>![Image of_Azure Advanced Threat Protection page where you should click next to go to next page](../../media/mtp-eval-48.png) <br>
  
 8. Copy the access key because you need to enter it next in the Wizard.
 ![Image of_the sensors page where you should copy the access key that you need to enter in the next Azure ATP sensor setup wizard page](../../media/mtp-eval-49.png) <br>
