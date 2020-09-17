@@ -3,7 +3,7 @@ title: Digital Production Partnership (DPP) United Kingdom
 description: Microsoft Azure has been awarded the DPP Committed to Security Mark for Broadcast.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

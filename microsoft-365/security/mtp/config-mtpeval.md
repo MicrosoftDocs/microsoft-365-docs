@@ -1,13 +1,15 @@
 ---
-title: Configure Microsoft Threat Protection pillars for the trial lab environment
-description: Configure Microsoft Threat Protection pillars, Office 365 ATP, Azure ATP, Microsoft Cloud App Security, and Microsoft Defender ATP for your trial lab environment
-keywords: configure Microsoft Threat Protection trial, Microsoft Threat Protection trial configuration, configure Microsoft Threat Protection  pillars, Microsoft Threat Protection pillars 
+title: Configure Microsoft Threat Protection pillars for the trial lab or pilot environment
+description: Configure Microsoft Threat Protection pillars: Office 365 ATP, Azure ATP, Microsoft Cloud App Security, and Microsoft Defender ATP, for your trial lab or pilot environment.
+keywords: configure Microsoft Threat Protection trial, Microsoft Threat Protection trial configuration, configure Microsoft Threat Protection pilot project, configure Microsoft Threat Protection  pillars, Microsoft Threat Protection pillars 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+f1.keywords:
+- NOCSH
 ms.author: dolmont  
 author: DulceMontemayor
 ms.localizationpriority: medium
@@ -17,30 +19,30 @@ ms.collection: M365-security-compliance
 ms.topic: article 
 ---
 
-# Configure Microsoft Threat Protection pillars for your trial lab environment
+# Configure Microsoft Threat Protection pillars for your trial lab or pilot environment
 
 **Applies to:**
 - Microsoft Threat Protection
 
 
-Creating a Microsoft Threat Protection trial lab environment and deploying it is a three-phase process:
+Creating a Microsoft Threat Protection trial lab or pilot environment and deploying it is a three-phase process:
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Prepare your Microsoft Threat Protection trial lab environment" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Prepare your Microsoft Threat Protection trial lab or pilot environment" />
       <br/>Phase 1: Prepare </a><br>
     </td>
      <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Set up your Microsoft Threat Protection trial lab environment" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab or pilot environment" title="Set up your Microsoft Threat Protection trial lab or pilot environment" />
       <br/>Phase 2: Setup </a><br>
     </td>
     <td align="center" bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab environment and onboard endpoints" />
+        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab or pilot environment and onboard endpoints" />
       <br/>Phase 3: Configure & Onboard </a><br>
 </td>
 
@@ -48,7 +50,7 @@ Creating a Microsoft Threat Protection trial lab environment and deploying it is
   </tr>
 </table>
 
-You are currently in the configuration phase.
+You're currently in the configuration phase.
 
 
 Preparation is key to any successful deployment. In this article, you'll be guided on the points you'll need to consider as you prepare to deploy Microsoft Defender ATP.
@@ -56,7 +58,7 @@ Preparation is key to any successful deployment. In this article, you'll be guid
 
 ## Microsoft Threat Protection pillars
 Microsoft Threat Protection consists of four pillars. Although one pillar can already provide value to your network organization's security, enabling the four Microsoft Threat Protection pillars will give your organization the most value.
-
+<br>
 ![Image of_Microsoft Threat Protection solution for users, Azure Advanced Threat Protection, for endpoints Microsoft Defender Advanced Threat Protection, for cloud apps, Microsoft Cloud App Security, and for data, Office 365 Advanced Threat Protection  ](../../media/mtp-eval-31.png) <br>
 
 This section will guide you to configure:
@@ -68,9 +70,9 @@ This section will guide you to configure:
 
 ## Configure Office 365 Advanced Threat Protection
 >[!NOTE]
->Skip this step if you have already enabled Office 365 Advanced Threat Protection. 
+>Skip this step if you've already enabled Office 365 Advanced Threat Protection. 
 
-There is a PowerShell Module called the *Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA)* that helps determine some of these settings. When run as an administrator in your tenant, get-ORCAReport will help generate an assessment of the anti-spam, anti-phish, and other message hygiene settings. You can download this module from https://www.powershellgallery.com/packages/ORCA/. 
+There's a PowerShell Module called the *Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA)* that helps determine some of these settings. When run as an administrator in your tenant, get-ORCAReport will help generate an assessment of the anti-spam, anti-phish, and other message hygiene settings. You can download this module from https://www.powershellgallery.com/packages/ORCA/. 
 
 1. Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Policy**.
 ![Image of_Office 365 Security & Compliance Center Threat management policy page](../../media/mtp-eval-32.png) <br>
@@ -96,7 +98,7 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
  
 7. Next, select the **ATP Safe Links** policy, then click the pencil icon to edit the default policy.
 
-8. Make sure that the **Do not track when users click safe links** option is not selected, while the rest of the options are selected. See [Safe Links settings](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) for details. Click **Save**. 
+8. Make sure that the **Do not track when users click safe links** option is not selected, while the rest of the options are selected. See [Safe Links settings](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) for details. Click **Save**. 
 ![Image of_Office 365 Security & Compliance Center page which shows that the option Do not track when users click safe is not selected](../../media/mtp-eval-38.png) <br>
 
 9. Next select the **Anti-malware** policy, select the default, and choose the pencil icon.
@@ -112,7 +114,7 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 
 ## Configure Azure Advanced Threat Protection
 >[!NOTE]
->Skip this step if you have already enabled Azure Advanced Threat Protection
+>Skip this step if you've already enabled Azure Advanced Threat Protection
 
 
 1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > select **More Resources** > **Azure Advanced Threat Protection**.
@@ -134,18 +136,18 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 <br>![Image of_Azure Advanced Threat Protection page where you should click next to follow the Azure ATP sensor wizard](../../media/mtp-eval-47.png) <br>
  
 7. Click **Next** at the sensor deployment type.
-<br>![Image of_Azure Advanced Threat Protection page where you should click next to follow the Azure ATP sensor wizard](../../media/mtp-eval-48.png) <br>
+<br>![Image of_Azure Advanced Threat Protection page where you should click next to go to next page](../../media/mtp-eval-48.png) <br>
  
-8. Copy the access key as you will need to enter it next in the Wizard.
+8. Copy the access key because you need to enter it next in the Wizard.
 ![Image of_the sensors page where you should copy the access key that you need to enter in the next Azure ATP sensor setup wizard page](../../media/mtp-eval-49.png) <br>
  
 9. Copy the access key into the Wizard and click **Install**. 
 <br>![Image of_Azure Advanced Threat Protection Azure ATP sensor wizard page where you should provide the access key and then click the install button](../../media/mtp-eval-50.png) <br>
 
-10. Congratulations, you have successfully configured Azure Advanced Threat Protection on your domain controller.
+10. Congratulations, you've successfully configured Azure Advanced Threat Protection on your domain controller.
 ![Image of_Azure Advanced Threat Protection Azure ATP sensor wizard installation completion where you should click the finish button](../../media/mtp-eval-51.png) <br>
  
-11. Under the [Azure Azure ATP](https://go.microsoft.com/fwlink/?linkid=2040449) settings section, select **Windows Defender ATP**, then turn the toggle on. Click **Save**. 
+11. Under the [Azure Azure ATP](https://go.microsoft.com/fwlink/?linkid=2040449) settings section, select **Windows Defender ATP**, then turn on the toggle. Click **Save**. 
 ![Image of_the Azure Azure ATP settings page where you should turn the Windows Defender ATP toggle on](../../media/mtp-eval-52.png) <br>
 
 >[!NOTE]
@@ -154,7 +156,7 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 
 ## Configure Microsoft Cloud App Security
 >[!NOTE]
->Skip this step if you have already enabled Microsoft Cloud App Security. 
+>Skip this step if you've already enabled Microsoft Cloud App Security. 
 
 1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Cloud App Security**.
 ![Image of_Microsoft 365 Security Center page where you can see Microsoft Cloud App card and should click the open button](../../media/mtp-eval-53.png) <br>
@@ -165,8 +167,8 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 >[!NOTE]
 >If you don’t see this prompt, it might mean that your Azure ATP data integration has already been enabled. However, if you are not sure, contact your IT Administrator to confirm. 
 
-3. Go to **Settings**, turn the **Azure ATP integration** toggle on, then click **Save**. 
-![Image of_the settings page where you should turn the Azure ATP integration toggle on then click save](../../media/mtp-eval-55.png) <br>
+3. Go to **Settings**, turn on the **Azure ATP integration** toggle, then click **Save**. 
+![Image of_the settings page where you should turn on the Azure ATP integration toggle then click save](../../media/mtp-eval-55.png) <br>
 >[!NOTE]
 >For new Azure ATP instances, this integration toggle is automatically turned on. Confirm that your Azure ATP integration has been enabled before you proceed to the next step.
  
@@ -178,7 +180,7 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 
 ## Configure Microsoft Defender Advanced Threat Protection
 >[!NOTE]
->Skip this step if you have already enabled Microsoft Defender Advanced Threat Protection.
+>Skip this step if you've already enabled Microsoft Defender Advanced Threat Protection.
 
 1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Defender Security Center**. Click **Open**.
 <br>![Image of_Microsoft Defender Security Center option in the Microsoft 365 Security Center page](../../media/mtp-eval-58.png) <br>
@@ -205,8 +207,8 @@ Click **Next**.
 7. On your endpoint, run the onboarding script as Administrator and choose Y. 
 <br>![Image of_the commandline where you run the onboarding script and choose Y to proceed](../../media/mtp-eval-63.png) <br>
 
-8. Congratulations, you have onboarded your first endpoint.  
-<br>![Image of_the commandline where you get the confirmation that you have onboarded your first endpoint. Press any key to continue](../../media/mtp-eval-64.png) <br>
+8. Congratulations, you've onboarded your first endpoint.  
+<br>![Image of_the commandline where you get the confirmation that you've onboarded your first endpoint. Press any key to continue](../../media/mtp-eval-64.png) <br>
 
 9. Copy-paste the detection test from the Microsoft Defender ATP wizard.
 <br>![Image of_the run a detection test step where you should click Copy to copy the detection test script that you should paste in the command prompt](../../media/mtp-eval-65.png) <br>
@@ -242,9 +244,11 @@ Go to [Microsoft 365 Security Center](https://security.microsoft.com/homepage). 
 
 For a more comprehensive guidance, see [Turn on Microsoft Threat Protection](mtp-enable.md). 
 
-Congratulations! You've just created your Microsoft Threat Protection trial lab environment! Now you can familiarize yourself with the Microsoft Threat Protection user interface! See what you can learn from and know how to use each dashboards for your day-to-day security operation tasks: [Microsoft Threat Protection interactive guide](https://aka.ms/MTP-Interactive-Guide).
+Congratulations! You've just created your Microsoft Threat Protection trial lab or pilot environment! Now you can familiarize yourself with the Microsoft Threat Protection user interface! See what you can learn from and know how to use each dashboard for your day-to-day security operation tasks: [Microsoft Threat Protection interactive guide](https://aka.ms/MTP-Interactive-Guide).
 
 Next, you can simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.
 
-## Next steps
-[Generate a test alert](generate-test-alert.md).
+## Next step
+|||
+|:-------|:-----|
+|![Attack simulation phase](../../media/mtp/run-sim.png) <br>[Attack simulation phase](mtp-pilot-simulate.md) | Run the attack simulation for your Microsoft Threat Protection pilot environment.

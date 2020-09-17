@@ -31,4 +31,4 @@ Now that you've completed your Microsoft Threat Protection evaluation lab setup 
 <br>![Image of simulation card in the Microsoft 365 Security dashboard](../../media/mtp-eval-73.png) <br>
 
 ## Next steps
-Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center?view=o365-worldwide) for guidance on how you want your security solutions implemented in your unique environment.
+[Run your pilot Microsoft Threat Protection project](mtp-pilot-plan.md) in production.

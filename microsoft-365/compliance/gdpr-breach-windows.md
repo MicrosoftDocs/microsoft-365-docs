@@ -4,7 +4,7 @@ description: How the data processor service for Windows Enterprise protects agai
 keywords: Data processor service for Windows Enterprise, Microsoft 365, Microsoft 365 documentation, GDPR
 localization_priority: Priority
 ROBOTS: NOINDEX, NOFOLLOW
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

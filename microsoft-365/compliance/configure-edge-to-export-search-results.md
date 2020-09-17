@@ -7,6 +7,7 @@ author: markjjo
 manager: laurawi
 audience: Admin
 ms.topic: how-to
+ms.service: O365-seccomp
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
