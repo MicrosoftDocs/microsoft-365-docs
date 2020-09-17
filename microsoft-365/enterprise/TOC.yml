@@ -363,7 +363,7 @@
           href: set-up-directory-synchronization.md
         - name: Secure user sign-ins
           href: microsoft-365-secure-sign-in.md
-          - name: Hybrid solutions
+        - name: Hybrid solutions
           items: 
             - name: Overview
               href: hybrid-solutions.md
