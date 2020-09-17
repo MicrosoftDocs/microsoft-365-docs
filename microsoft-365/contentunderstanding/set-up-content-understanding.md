@@ -14,9 +14,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 ---
 # Set up content understanding (Preview)
 
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
-
 Admins can use the Microsoft 365 admin center to set up and configure content understanding. 
 
 Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you will need to make considerations about the following:
@@ -27,6 +24,7 @@ An admin can also make changes to your selected settings anytime after setup thr
 
 
 ## Requirements 
+
 You must have Global Admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up content understanding.
 
 
@@ -77,13 +75,3 @@ You must have Global Admin or SharePoint admin permissions to be able to access 
 8. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
 
 ## See also
-
-
-
-  
-
-
-
-
-
-
