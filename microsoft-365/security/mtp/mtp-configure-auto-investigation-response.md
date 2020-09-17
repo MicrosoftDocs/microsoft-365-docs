@@ -102,8 +102,7 @@ After you have configured automated investigation and response in Microsoft Thre
 
 To learn more, see [The Action center](mtp-action-center.md).
 
-## See also
+## Next steps
 
-[Remediation actions in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)
-
-[Microsoft Threat Protection: Deploy supported services](https://docs.microsoft.com/microsoft-365/security/mtp/deploy-supported-services)
+- [Learn more about remediation actions following automated investigations in Microsoft Threat Protection](mtp-remediation-actions.md)
+- [Visit the Action center](mtp-action-center.md)
