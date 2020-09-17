@@ -24,7 +24,7 @@ ms.topic: conceptual
 **Applies to:**
 - Microsoft Threat Protection
 
-You’ve just simulated an advanced memory-only attack that executed code remotely on a domain controller. You’ve seen how Microsoft Defender ATP and Azure ATP detects and alerts on stealthy malicious activity. You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft Threat Protection portal, enabling SOC analysts to investigate and take necessary action. You’ve also created a query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.
+You’ve just simulated an advanced memory-only attack that executed code remotely on a domain controller. You’ve seen how Microsoft Defender ATP and Azure ATP detects and alerts on stealthy malicious activity. You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft Threat Protection portal, enabling SOC analysts to investigate and take necessary action. You’ve also created an advanced hunting query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.
 
 You’ve reached the end of the process after all tests have concluded.
 
@@ -33,7 +33,7 @@ The final output should be:
 - A detailed report of the findings of the pilot
 - A decision on how to move forward
 
-This information should be presented to both internal stakeholders (which you’ve identified during the Preparation phase)  and Microsoft contacts. This ensures that any feedback can be used to improve products and documentation.
+This information should be presented to both internal stakeholders (which you’ve identified during the [preparation](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/prepare-mtpeval) phase)  and Microsoft contacts. This ensures that any feedback can be used to improve products and documentation.
 
 We hope you enjoyed this simulation and are encouraged to start implementing what you've learned.
 
@@ -41,4 +41,5 @@ We hope you enjoyed this simulation and are encouraged to start implementing wha
 ## Next step
 |||
 |:-------|:-----|
-|![______________](../../media/prepare.png) <br>[______________](prepare-mtpeval.md) | __________
+|## Next steps
+Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to understand how to design the solution and architecture that is right for your organization.
