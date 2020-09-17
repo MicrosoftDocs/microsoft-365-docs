@@ -56,7 +56,7 @@ Microsoft Threat Protection includes power self-healing capabilities that can sa
 
 ## Review or change the automation level for device groups
 
-Whether automated investigations run, and whether remediation actions are taken automatically or only upon approval depend on how certain settings, such as your device group policies, are configured. 
+Whether automated investigations run, and whether remediation actions are taken automatically or only upon approval for your devices depend on how certain settings, such as how your device group policies are configured. 
 
 This task includes reviewing and potentially changing your organization's security settings.
 
@@ -74,7 +74,7 @@ This task includes reviewing and potentially changing your organization's securi
 
 ## Review your security and alert policies in Office 365
 
-Microsoft provides built-in [alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Certain alerts can trigger [automated investigation and response in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). 
+Microsoft provides built-in [alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) that help identify certain risks. These risks include Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Some alerts can trigger [automated investigation and response in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). 
 
 > [!TIP]
 > To learn more about the relationship between alerts and automated investigations, see [Alert policies in the security and compliance center](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
