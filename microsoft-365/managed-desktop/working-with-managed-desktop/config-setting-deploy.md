@@ -33,7 +33,7 @@ We’ll show Desktop background picture in these instructions. After you’ve st
 
 **To deploy changes**
 
-1. Sign in to [Microsoft Endpoint Manager](http://endpoint.microsoft.com/) and navigate to the **Devices** menu
+1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Devices** menu
 2. Look for the Microsoft Managed Desktop section, select **Settings**.
 3. In **Deployment status** workspace, select the setting you want to deploy, and then select the staged deployment to deploy.
 4. Select **Deploy** to deploy the change to one of the deployment groups.
@@ -56,7 +56,7 @@ After you’ve deployed a change, you can revert from **Deployment status**. Whe
 We’ll show the steps to revert a change using the Desktop background picture as an example. 
 
 **To revert a change**
-1. Sign in to [Microsoft Endpoint Manager](http://endpoint.microsoft.com/) and navigate to the **Devices** menu
+1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Devices** menu
 2. Look for the Microsoft Managed Desktop section, select **Settings**.
 3. In **Deployment status** workspace, select the setting you want to revert, and then select the staged deployment to revert.
 4. Under **Need to revert this change?**, select **Revert deployment**.

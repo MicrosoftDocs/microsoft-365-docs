@@ -19,7 +19,7 @@ You can submit support tickets or feedback requests to Microsoft using the Micro
 >Make sure that you [set up an Admin contact](../get-started/add-admin-contacts.md) for app packaging, devices, security, and other. You are unable to submit a support request in any of these areas if an admin contact is not configured.
 
 **To submit a support request**
-1. Sign in to [Microsoft Endpoint Manager](http://endpoint.microsoft.com/) and navigate to the **Troubleshooting + support** menu.
+1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Troubleshooting + support** menu.
 2. Look for the Microsoft Managed Desktop section, select **Sevice request**.
 3. On **Support requests**, select **+ New Support ticket**.
 4. Select the **Support request type** that matches the help you need. The table below outlines the options. 
@@ -63,4 +63,4 @@ Once a ticket is in the **Mitigated** or **Resolved** state, you can share your 
 ## Additional resources
 - [User support for Microsoft Managed Desktop](end-user-support.md). 
 - [Support for Microsoft Managed Desktop](../service-description/support.md). 
-- If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** page under the **Microsoft Managed Desktop** section of the **Tenant administration** menu in [Microsoft Endpoint Manager](http://endpoint.microsoft.com/).
+- If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** page under the **Microsoft Managed Desktop** section of the **Tenant administration** menu in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
