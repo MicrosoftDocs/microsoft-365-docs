@@ -87,4 +87,4 @@ After you create the Text- Delimited connector, you can view the connector statu
 
 ## Known issues
 
-- At this time, we don't support importing attachments larger than 10 MB but support for larger items will be available at a later date.
+- At this time, we don't support importing attachments or items that are larger than 10 MB. Support for larger items will be available at a later date.
