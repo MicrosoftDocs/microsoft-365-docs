@@ -70,10 +70,24 @@
               href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
             - name: Generate a test alert
               href: mtp/generate-test-alert.md
+        - name: Run a pilot in production
+          items: 
+            - name: Pilot overview
+              href: mtp/mtp-pilot.md
+            - name: Plan
+              href: mtp/mtp-pilot-plan.md
+            - name: Prepare
+              href: mtp/prepare-mtpeval.md
+            - name: Simulate attack
+              href: mtp/mtp-pilot-simulate.md
+            - name: Close and summarize
+              href: mtp/mtp-pilot-close.md
         - name: How-to guides
           items: 
             - name: Create a trial lab or pilot environment
-              href: mtp/mtp-evaluation.md             
+              href: mtp/mtp-evaluation.md
+            - name: Run pilot playbook
+              href: mtp/mtp-pilot.md
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
             - name: Turn on Microsoft Threat Protection
@@ -94,16 +108,18 @@
                       href: mtp/manage-incidents.md
             - name: Automated investigation and response
               items: 
-                - name: AIR overview
+                - name: Overview of automated investigation and response
                   href: mtp/mtp-autoir.md
-                - name: Remediation actions
+                - name: Configure automated investigation and response capabilities
+                  href: mtp/mtp-configure-auto-investigation-response.md
+                - name: Remediation actions following automated investigations
                   href: mtp/mtp-remediation-actions.md
-                - name: The Action center
+                - name: Visit the Action center
                   href: mtp/mtp-action-center.md
-                - name: View automated investigation details and results
-                  href: mtp/mtp-autoir-results.md
-                - name: Approve or reject pending actions
+                - name: Approve or reject pending remediation actions
                   href: mtp/mtp-autoir-actions.md
+                - name: View details and results of automated investigations
+                  href: mtp/mtp-autoir-results.md
                 - name: Report false positives/negatives
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Advanced hunting
@@ -214,8 +230,6 @@
                   href: mtp/monitor-devices.md
                 - name: App monitoring and reporting
                   href: mtp/monitor-apps.md
-            - name: APIs
-              items: 
         - name: Reference
           items: 
             - name: Permissions & settings
