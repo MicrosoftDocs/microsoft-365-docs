@@ -61,5 +61,3 @@ Pending actions can be reviewed and approved by using the [Action center](#revie
 
 - [View the details and results of an automated investigation](mtp-autoir-results.md)
 - [Handle false positives/negatives in automated investigation and response capabilities](mtp-autoir-report-false-positives-negatives.md)
-- [Learn more about incidents](incidents-overview.md)
-- [Learn about hunting](advanced-hunting-overview.md)
