@@ -53,6 +53,5 @@ There are four phases in running a Microsoft Threat Protection pilot:
 | ![Closing and summary](../../media/mtp/close.png) <br>[Closing and summary](mtp-pilot-close.md) | When you've reached the end of the process, you will be guided to:<br><br>- Go through your final output<br>- Present your output to your stakeholders <br>- Provide feedback <br>- Take next steps 
 
 ## Next step
-|||
 |:-------|:-----|
 |![Planning phase](../../media/mtp/plan.png) <br>[Planning phase](mtp-pilot-plan.md) | Plan your Microsoft Threat Protection pilot project
