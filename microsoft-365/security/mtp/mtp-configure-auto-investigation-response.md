@@ -18,7 +18,7 @@ f1.keywords: CSH
 
 # Configure automated investigation and response capabilities in Microsoft Threat Protection
 
-Microsoft Threat Protection includes powerful [automated investigation and response capabilities](mtp-autoir.md) that can save your security operations team much time and effort. These capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale. This article describes how to configure automated investigation and response in Microsoft Threat Protection.
+Microsoft Threat Protection includes powerful [automated investigation and response capabilities](mtp-autoir.md) that can save your security operations team much time and effort. With self-healing, these capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale. This article describes how to configure automated investigation and response in Microsoft Threat Protection.
 
 To configure automated investigation and response capabilities, follow these steps:
 
