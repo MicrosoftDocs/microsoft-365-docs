@@ -36,17 +36,8 @@ With the **Exchange Online** monitoring page, you can see whether the Exchange s
 
 This preview is enabled for customers who meet these requirements: 
 
-- Minimum 10,000 license count and a minimum of 50 monthly active users for Exchange 
-- You must also have purchased one of the following: 
-  - Office 365 E3 
-  - Office 365 E5 
-  - Microsoft 365 E3 
-  - Microsoft 365 E5 
-
-
->[!Note]
->INTERNAL: Exchange Admin Center-check for alternate set of requirements
->
+- Office 365 E3 or Microsoft 365 E3, or Office 365 E5 or Microsoft 365 E5
+- At least 10,000 licenses and at least 50 monthly active Exchange Online users
 
 With Exchange monitoring you can view the health for the following email clients based on email read activity:
 
@@ -86,14 +77,10 @@ There are two ways you can provide feedback:
 
 First, make sure you’ve enabled the new admin center on the **Home** page of the Microsoft 365 admin center. 
 
-Then make sure you meet these requirements: 
+Then make sure you meet both of the following requirements: 
 
-- Minimum 10,000 license count and a minimum of 50 monthly active users for Exchange 
-- You must also have purchased one of the following: 
-  - Office 365 E3 
-  - Office 365 E5 
-  - Microsoft 365 E3 
-  - Microsoft 365 E5 
+- Office 365 E3 or Microsoft 365 E3, or Office 365 E5 or Microsoft 365 E5
+- At least 10,000 licenses and at least 50 monthly active Exchange Online users
 
 If the license count for your organization goes below 10,000 users and the monthly active users goes below 50 users, Exchange monitoring won’t be enabled until these requirements are met.
 
