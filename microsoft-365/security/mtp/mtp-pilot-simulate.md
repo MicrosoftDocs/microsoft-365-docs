@@ -427,6 +427,7 @@ To learn more about advanced hunting, the following webcasts will walk you throu
 >[!NOTE]
 >Be prepared with your own GitHub account to run the hunting queries in your pilot test lab environment.  
 
+|||||
 |:------|:-----|:-----|:-----|:-----|
 |Title | Description | Download MP4 | Watch on YouTube | CSL file to use |
 |Episode 1: KQL fundamentals|We’ll cover the basics of advanced hunting capabilities in Microsoft Threat Protection. Learn about available advanced hunting data and basic KQL syntax and operators.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube]()|:-----|
