@@ -1,6 +1,6 @@
 ---
 title: Configure Microsoft Threat Protection pillars for the trial lab or pilot environment
-description: Configure Microsoft Threat Protection pillars: Office 365 ATP, Azure ATP, Microsoft Cloud App Security, and Microsoft Defender ATP, for your trial lab or pilot environment.
+description: Configure Microsoft Threat Protection pillars, such as Office 365 ATP, Azure ATP, Microsoft Cloud App Security, and Microsoft Defender ATP, for your trial lab or pilot environment.
 keywords: configure Microsoft Threat Protection trial, Microsoft Threat Protection trial configuration, configure Microsoft Threat Protection pilot project, configure Microsoft Threat Protection  pillars, Microsoft Threat Protection pillars 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
