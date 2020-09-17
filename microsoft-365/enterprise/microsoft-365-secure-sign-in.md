@@ -19,15 +19,17 @@ description: Require that your users sign in securely with multi-factor authenti
 
 # Secure user sign-ins to your Microsoft 365 tenant
 
+A common 
+
 To increase the security of user sign-ins:
 
-- Use Azure AD Password Protection for Active Directory Domain Services (AD DS)
+- Use Azure Active Directory (Azure AD) Password Protection
 - Use Multi-factor authentication (MFA)
 - Deploy identity and device access policies
 
 ## Azure AD Password Protection
 
-Azure AD Password Protection is an on-premises feature for AD DS that detects and blocks known weak passwords and their variants, and can also block additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in an Azure AD tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.
+Azure AD Password Protection detects and blocks known weak passwords and their variants, and can also block additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in an Azure AD tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.
 
 ## MFA
 
@@ -35,7 +37,9 @@ MFA requires that user sign-ins be subject to an additional verification beyond 
 
 ![The correct password plus an additional verification results in a successful sign-in](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-For all users, including and especially admins, Microsoft strongly recommends MFA.
+Your first step in using MFA is to ***require it for all administrator accounts***, also known as privileged accounts.
+
+Beyond this first step, Microsoft strongly recommends MFA For all users.
 
 There are three ways to require your users to use MFA based on your Microsoft 365 plan.
 
@@ -58,7 +62,7 @@ For more information, see this [overview of security defaults](https://docs.micr
 
 ### Conditional Access policies
 
-Conditional Access policies are a set of rules that specify the conditions under which sign-ins are evaluated and allowed. For example, you can create a Conditional Access policy that states:
+Conditional Access policies are a set of rules that specify the conditions under which sign-ins are evaluated and access is granted. For example, you can create a Conditional Access policy that states:
 
 - If the user account name is a member of a group for users that are assigned the Exchange, user, password, security, SharePoint, or global administrator roles, require MFA before allowing access.
 
@@ -91,14 +95,23 @@ This table shows the results of enabling MFA with security defaults and Conditio
 
 Identity and device access settings and policies are prerequisite features and their settings combined with Conditional Access, Intune, and Azure AD Identity Protection policies that determine whether a given access request should be granted and under what conditions. This determination is based on the user account sign-in, the device being used, the apps the user is trying to access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
 
-Identity and device access policies are defined to be used in three tiers: baseline protection, sensitive protection, and protection for environments with highly regulated or classified data. These tiers and their corresponding configurations provide consistent levels of protection across your data, identities, and devices.
-
-For more information, see [Identity and device access configurations](microsoft-365-policies-configurations.md).
-
 >[!Note]
 >Azure AD Identity Protection requires Azure AD Premium P2 licenses, which are included with Microsoft 365 E5.
 >
 
+Identity and device access policies are defined to be used in three tiers: 
+
+- Baseline protection is a minimum level of security for your identities and devices that access your apps and data.
+- Sensitive protection provides additional security for specific data. Identities and devices are subject to higher levels of security and device health requirements.
+- Protection for environments with highly regulated or classified data is for typically small amounts of data that are highly classified, contain trade secrets, or is subject to data regulations. Identities and devices are subject to much higher levels of security and device health requirements. 
+
+These tiers and their corresponding configurations provide consistent levels of protection across your data, identities, and devices.
+
+Microsoft highly recommends configuring and rolling out identity and device access policies in your organization, including specific settings for Microsoft Teams, Exchange Online, and SharePoint. For more information, see [Identity and device access configurations](microsoft-365-policies-configurations.md).
+
+>[!Note]
+>Azure AD Identity Protection requires Azure AD Premium P2 licenses, which are included with Microsoft 365 E5.
+>
 
 <!--
 
@@ -118,6 +131,8 @@ After deployment of MFA, your users:
 - Have completed the MFA registration process and are using MFA for all sign-ins.
 - Can use SSPR to reset their own passwords.
 
+- [Plan an Azure AD self-service password reset deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
+
 --> 
 
 ## Admin technical resources for MFA and secure sign-ins
@@ -126,5 +141,5 @@ After deployment of MFA, your users:
 - [Plan and deploy your Microsoft 365 identity infrastructure](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure#plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure)
 - [Azure Academy Azure AD training videos](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Configure the Azure Multi-Factor Authentication registration policy](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-- [Plan an Azure AD self-service password reset deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
+- [Identity and device access configurations](microsoft-365-policies-configurations.md)
 
