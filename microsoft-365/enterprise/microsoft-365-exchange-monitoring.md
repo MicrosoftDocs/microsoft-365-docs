@@ -3,7 +3,7 @@ title: "Exchange monitoring for Microsoft 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/08/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -26,13 +26,11 @@ You can use Exchange monitoring in the Microsoft 365 admin center to monitor the
 - **Third-party infrastructure**: Issue is detected in third-party infrastructure on which your organization has taken a dependency and requires action from your organization for resolution. For example, user authentication transactions are getting throttled by a third-party security token service (STS) provider that prevents users from connecting to Exchange Online.
 - **Customer infrastructure**: Issue is detected in your organization infrastructure and requires action from your organization for resolution. For example, users cannot access Exchange Online because they are unable to obtain an authentication token from STS provider hosted by your organization due to an expired certificate.
 
-Here is an example of the **Exchange monitoring** page in the Microsoft 365 admin center, available from the **Health** section.
+Here is an example of the **Exchange Online** monitoring page in the Microsoft 365 admin center, available from **Health > Service health > Exchange Online**.
 
 ![The Exchange monitoring page in the Microsoft 365 admin center](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example.png)
 
-Standalone experience-click Service Health
-
-With the **Service health** page, you can see whether the Exchange service is healthy or not and whether there are any associated incidents or advisories. With Exchange monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by scenario. 
+With the **Exchange Online** monitoring page, you can see whether the Exchange service is healthy or not and whether there are any associated incidents or advisories. With Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by scenario. 
 
 ## Requirements
 
@@ -45,7 +43,10 @@ This preview is enabled for customers who meet these requirements:
   - Microsoft 365 E3 
   - Microsoft 365 E5 
 
-Exchange Admin Center-check for alternate set of requirements
+
+>[!Note]
+>INTERNAL: Exchange Admin Center-check for alternate set of requirements
+>
 
 With Exchange monitoring you can view the health for the following email clients based on email read activity:
 
@@ -66,7 +67,7 @@ You can also monitor Exchange health for the following scenarios:
 - **Mail flow**: The number of messages successfully delivered to a mailbox without any delay after the message reached the Microsoft 365 network. 
 - **Basic Authentication and Modern Authentication**: The number of users successfully validated in the Exchange service.
 
-One more screen shot
+![An example of monitoring Exchange health for mail delivery](../media/microsoft-365-exchange-monitoring/exhange-monitoring-scenario-example.png)
 
 For all these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios shows the near real time trend for seven days with 30-minute aggregate compared with the previous week. 
 
@@ -78,8 +79,6 @@ There are two ways you can provide feedback:
 - Submit feedback using the **Is this post helpful?** link for a specific incident or advisory.
 
 ![The "Is this post helpful?" link for a specific incident or advisory](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example-incident-feedback.png)
-
-Screenshot-Krishnan to provide
 
 ## Frequently asked questions
 
@@ -108,22 +107,21 @@ Microsoft is integrated this experience directly inside the Service Health dashb
 
 #### 4.	What is the plan for general availability of this experience? 
 
-Microsoft is working on integrating this experience directly inside the Service Health dashboard in the Microsoft 365 admin center. 
+Microsoft has integrated Exchange Online monitoring directly on the **Service Health** dashboard in the Microsoft 365 admin center. 
 
-Your feedback will help us define our plan for general availability.
-
-With new integrated experiece, collevt FB and based on it, we will plan fr 
-
+With this new integrated experience, Microsoft's plan is to collect your feedback and then define our plan for general availability.
 
 #### 5.	Is this a free (included) or paid (extra) feature? 
 
 This feature is in Public preview and only available for customers that meet the requirements in question 1.
 
-That decision is pending
+>[!Note]
+>INTERNAL: That decision is pending
+>
 
 #### 6.	How do I provide feedback? 
 
-For general feedback, use the feedback icon on the bottom right corner of the Exchange monitoring page. 
+For general feedback, use the **Give feedback** icon on the bottom right corner of the **Exchange Online** monitoring page. 
 
 For feedback on incidents or advisories, use the **Is this post helpful?** link.
 
