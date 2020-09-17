@@ -47,9 +47,9 @@ Then, [review pending and completed actions in the Action center](#review-pendin
 
 1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. In the navigation pane, look for **Incidents**, **Action center**, and **Hunting**, as shown in the following image:<br/>![Image of Microsoft 365 security center navigation pane with Microsoft Threat Protection features](../../media/mtp-enable/mtp-on.png)
+2. In the navigation pane, look for **Incidents**, **Action center**, and **Hunting**, as shown in the following image:<br/> :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP on":::
 
-   - If you see **Incidents**, **Action center**, and **Hunting**, Microsoft Threat Protection is turned on. Proceed to the next procedure, [Review or change the automation level for self-healing](#review-or-change-the-automation-level-for-self-healing).
+   - If you see **Incidents**, **Action center**, and **Hunting**, Microsoft Threat Protection is turned on. Proceed to the next procedure, [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups).
 
    - If you do *not* see **Incidents**, **Action center**, or **Hunting**, then Microsoft Threat Protection might not be turned on. In this case, proceed to the next step.
 
