@@ -43,7 +43,7 @@ Since you have already configured your pilot environment during the preparation 
 1.	Verify your tenant has [Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)￼￼.
 2.	Verify your test domain controller configuration:
     - Device runs with Windows Server 2008 R2 or a later version.
-    - The test domain controller to [Azure Advanced Threat Protection](https://docs.microsoft.com/en-us/azure/security-center/security-center-wdatp) and enable [remote management](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    
+    - The test domain controller to [Azure Advanced Threat Protection](https://docs.microsoft.com/azure/security-center/security-center-wdatp) and enable [remote management](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    
     - Verify that [Azure ATP and Microsoft Cloud App Security integration](https://docs.microsoft.com/cloud-app-security/aatp-integration) have been enabled.
     - A test user is created on your domain – no admin permissions needed.
 
@@ -53,7 +53,7 @@ Since you have already configured your pilot environment during the preparation 
     <br>
     b.	Test device is joined to the test domain.
     <br>
-    c.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see this [troubleshooting topic](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+    c.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see this [troubleshooting topic](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
     <br>
     d.	Verify that the test device is [onboarded to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
@@ -267,7 +267,7 @@ This wraps up the attack simulation for the incident management and automated in
 ### Hunting environment requirements
 There is a single internal mailbox and device required for this scenario. You will also need an external email account to send the test message.
 
-1.	Verify that your tenant has [enabled Microsoft Threat Protection](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-enable#starting-the-service).
+1.	Verify that your tenant has [enabled Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service).
 2.	Identify a target mailbox to be used for receiving email.
     a.	This mailbox must be monitored by Office 365 ATP
     b.	The device from requirement 3 needs to access this mailbox
@@ -429,7 +429,6 @@ To learn more about advanced hunting, the following webcasts will walk you throu
 >Be prepared with your own GitHub account to run the hunting queries in your pilot test lab environment.  
 
 ||||||
-|:------|:-----|:-----|:-----|:-------|
 | **Title** | **Description** | **Download MP4** | **Watch on YouTube** | **CSL file to use** |
 | Episode 1: KQL fundamentals | We’ll cover the basics of advanced hunting capabilities in Microsoft Threat Protection. Learn about available advanced hunting data and basic KQL syntax and operators. | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [Episode 1: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Episode 2: Joins | We’ll continue learning about data in advanced hunting and how to join tables together. Learn about inner, outer, unique, and semi joins, and the nuances of the default Kusto innerunique join. | [MP4](https://aka.ms/MTP22JUL20_MP4) | [YouTube](https://youtu.be/LMrO6K5TWOU) | [Episode 2: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
@@ -438,5 +437,4 @@ To learn more about advanced hunting, the following webcasts will walk you throu
 
 ## Next step
 |||
-|:-------|:-----|
 |![Closing and summary phase](../../media/mtp/close.png) <br>[Closing and summary phase](mtp-pilot-close.md) | Analyze your Microsoft Threat Protection pilot outcome, present them to your stakeholders, and take the next step. 
