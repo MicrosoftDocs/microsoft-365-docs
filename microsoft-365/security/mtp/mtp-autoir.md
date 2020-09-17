@@ -77,7 +77,7 @@ While an investigation is running, any other related alerts that arise are added
 
 ## Next steps
 
-- [See the prerequisites for self-healing capabilities in Microsoft Threat Protection](mtp-configure-self-healing.md#requirements-for-automated-investigation-and-response-in-microsoft-threat-protection)
+- [See the prerequisites for self-healing in Microsoft Threat Protection](mtp-configure-self-healing.md#prerequisites-for-self-healing-in-microsoft-threat-protection)
 - [Configure self-healing for your organization](mtp-configure-self-healing.md)
 - [Approve or reject actions related to self-healing](mtp-autoir-actions.md)
 - [Learn more about the Action center](mtp-action-center.md)
