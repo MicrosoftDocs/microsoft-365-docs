@@ -22,9 +22,13 @@ description: "Choose an app and device management method."
 
 # Decide on a method to secure your devices and app data
 
-Microsoft Intune is a standalone product included with certain Microsoft 365 plans, while Basic Mobility and Security is part of the Microsoft 365 plans. Both are included in a variety of plans, described in the following table. 
+You can choose to use Intune, Intune together with an Azure Information Protection Premium plan, or Basic Mobility and Security to secure your devices and app data.  If your plan includes both Intune and Azure Information Protection Premium P1, or Azure Information Protection Premium P2 you get higher functionality for both mobile device management (MDM) and mobile app management (MAM) and you should not use Basic Mobility and Security. 
 
-If your plan includes both Intune and Azure Information Protection Premium P1, or Azure Information Protection Premium P2 you get higher functionality for both mobile device management (MDM) and mobile app management (MAM) than with Basic Mobility and Security. For details, see [Microsoft 365 and Office 365 platform service descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description).
+ Microsoft 365 Business Premium includes both Intune and Azure Information Protection Premium P1 but also includes a set of base-line security and device policy settings that are easier to set up and manage in the Microsoft 365 admin center.
+>[!NOTE]
+>You can't begin using Basic Mobility and Security if you're already using Microsoft Intune.
+
+Microsoft Intune and Azure Information Protection Premium P1 and Azure Information Protection Premium P2 are standalone products included with some Microsoft 365 plans. Basic Mobility and Security is included in all of the Microsoft 365 plans. See the following table for details. 
 
 |**Plan**|**Basic Mobility and Security**|**Microsoft Intune**|**Azure Information Protection Premium P1**|
 |:-----|:-----|:-----|:-----|
@@ -45,9 +49,7 @@ If your plan includes both Intune and Azure Information Protection Premium P1, o
 |Enterprise Mobility & Security E3 |No|Yes|Yes|
 |Enterprise Mobility & Security E5 |No|Yes||
 
->[!NOTE]
->You can't begin using Basic Mobility and Security if you're already using Microsoft Intune.
-
+ For details, see [Microsoft 365 and Office 365 platform service descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description). 
 ## Differences in capabilities
 
 Microsoft Intune and built-in Basic Mobility and Security both give you the ability to manage mobile devices in your organization, but there are key differences in capability, described in the following table.
