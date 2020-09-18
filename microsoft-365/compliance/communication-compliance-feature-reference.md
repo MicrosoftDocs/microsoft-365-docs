@@ -335,6 +335,8 @@ If you'd like to change the severity level assigned in an alert policy for a spe
 
 Customers with Microsoft 365 subscriptions that include communication compliance do not need additional Power Automate licenses to use the recommended default communication compliance Power Automate template. The default template can be customized to support your organization and cover core communication compliance scenarios. If you choose to use premium Power Automate features in these templates, create a custom template using the Microsoft 365 compliance connector, or use Power Automate templates for other compliance areas in Microsoft 365, you may need additional Power Automate licenses.
 
+![Communication compliance Power Automate](../media/communication-compliance-power-automate.png)
+
 The following Power Automate template is provided to customers to support process automation for communication compliance alerts:
 
 - **Notify manager when a user has a communication compliance alert**: Some organizations may need to have immediate management notification when a user has a communication compliance alert. When this flow is configured and selected, the manager for the case user is sent an email message with the following information about all alerts:
