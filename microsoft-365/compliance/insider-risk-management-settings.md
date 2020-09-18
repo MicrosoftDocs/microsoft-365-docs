@@ -216,6 +216,46 @@ Complete the following steps to delete a priority user group:
 
 ## Priority physical assets (preview)
 
+Identifying access to priority physical assets and correlating access activity to user events is an important component of your compliance infrastructure. These physical assets represent priority locations in your organization, such as company buildings, data centers, or server rooms. Insider risk activities may be associated with users working unusual hours, attempting to access these unauthorized sensitive or secure areas, and requests for access to high-level areas without legitimate needs.
+
+With priority physical assets enabled and the [Physical badging data connector](import-physical-badging-data.md) configured, insider risk management integrates signals from your physical control and access systems with other user risk activities. By examining patterns of behavior across physical access systems and correlating these activities with other insider risk events, insider risk management can help compliance investigators and analysts make more informed response decisions for alerts.
+
+For example, your organization has a badging system for users that monitors and approves physical access to normal working and sensitive project areas. You have several users working on a sensitive project and these users will return to other areas of your organization when the project is completed. As the sensitive project nears completion, you want to make sure that the project work remains confidential and that access to the project areas is tightly controlled. 
+
+You choose to enable the Physical badging data connector in Microsoft 365 to import access information from your physical badging system and enable priority physical assets in insider risk management. By importing information from your badging system and correlating access information with other risk activities identified in insider risk management, you notice that one of the users on the project is accessing the project area after normal working hours and is also exporting large amounts of data to a personal cloud storage service from their normal work area. This activity may indicate data theft and compliance investigators and analysts can take appropriate actions as dictated by the circumstances for this user.
+
+### Configure priority physical assets
+
+To configure priority physical assets, you'll configure the Physical badging connector and use setting controls in the **Insider risk management** solution in the Microsoft 365 compliance center. To configure priority physical assets, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin role group*.
+
+Complete the following steps to configure priority physical assets:
+
+1. Follow the configuration steps for insider risk management in the [Getting started with insider risk management](insider-risk-management-configure.md) article. In Step 3, make sure you configure the Physical badging connector.
+
+    >[!IMPORTANT]
+    >For insider risk management policies to use and correlate signal data related to departing and terminated users with event data from your physical control and access platforms, you must also configure the Microsoft 365 HR connector. If you enable the Physical badging connector without enabling the Microsoft 365 HR connector, insider risk management policies will only process events for physical access activities for users in your organization.
+
+2. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Priority physical assets**.
+3. On the **Priority physical assets** page, you can either manually add the physical asset IDs you want to monitor for the assets imported by the Physical badging connector or import a .CSV file of all physical assets IDs imported by the Physical badging connector:
+    a) To manually add physical assets IDs, choose **Add priority physical assets**, enter a physical asset ID, then select **Add**. Enter additional physical asset IDs and then select **Add priority physical assets** to save all the assets entered.
+    b) To add a list of physical asset IDs from a .CSV file, choose **Import priority physical assets**. From the file explorer dialog, select the .CSV file you wish to import, then select **Open**. The physical asset IDs from the .CSV files are added to the list.
+4. Navigate to the **Policy indicators** tab in Settings.
+5. On the **Policy indicators** page, navigate to the **Physical access indicators** section and select the checkbox for **Physical access after termination or failed access to sensitive asset**.
+6. Select **Save** to configure and exit.
+
+### Delete a priority physical asset
+
+To delete an existing priority physical asset, you'll use setting controls in the Insider risk management solution in the Microsoft 365 compliance center. To delete a priority physical asset, you must be a member of the Insider Risk Management or Insider Risk Management Admin role group.
+
+>[!IMPORTANT]
+>Deleting a priority physical asset removes it from examination by any active policy to which it was previously included. Alerts generated by activities associated with the priority physical asset aren't deleted.
+
+Complete the following steps to delete a priority physical asset:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Priority physical assets**.
+2. On the **Priority physical assets** page, select the asset you want to delete.
+3. Select **Delete** on the action menu to delete the asset.
+
 ## Power Automate flows (preview)
 
 [Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started) is a workflow service that automates actions across applications and services. By using flows from templates or created manually, you can automate common tasks associated with these applications and services. When you enable Power Automate flows for insider risk management, you can automate important tasks for cases and users. You can configure Power Automate flows to retrieve user, alert, and case information and share this information with stakeholders and other applications, as well as automate actions in insider risk management, such as posting to case notes. Power Automate flows are applicable for cases and any user in scope for a policy.
@@ -256,7 +296,7 @@ Complete the following steps to create a Power Automate flow from a recommended 
 
 ### Create a custom Power Automate flow for insider risk management
 
-Some processes and workflows for your organization may be outside of the recommended insider risk management flow templates and you may have the need to create custom Power Automate flows for insider risk management areas. Power Automate flows are very flexible and support extensive customization, but there are steps that need to be taken to integrate with insider risk management features.
+Some processes and workflows for your organization may be outside of the recommended insider risk management flow templates and you may have the need to create custom Power Automate flows for insider risk management areas. Power Automate flows are flexible and support extensive customization, but there are steps that need to be taken to integrate with insider risk management features.
 
 Complete the following steps to create a custom Power Automate template for insider risk management:
 
