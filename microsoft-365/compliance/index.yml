@@ -92,3 +92,5 @@ landingContent:
         links:
           - text: Information protection for data privacy regulations
             url: ../solutions/information-protection-deploy.md
+          - text: Secure collaboration with teams
+            url: ../solutions/setup-secure-collaboration-with-teams.md
