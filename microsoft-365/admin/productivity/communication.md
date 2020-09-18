@@ -33,7 +33,7 @@ We measure how frequently people use email, chat, and community posts to help yo
 
 ## How we calculate the score
 
-For Communication, we provide a primary insight, which contains the key metrics associated with communication in your org, combined with a scoring heuristic for using these metrics to calculate your score.
+For Communication, we provide a primary insight, which contains the key metrics associated with communication in your org, combined with a scoring model for using these metrics to calculate your score.
 
 ### Primary insight
 
