@@ -59,7 +59,9 @@ The **History** tab shows the history of incidents and advisories that have been
 
 If you're experiencing an issue with a Microsoft 365 service and you don’t see it listed on the **Service health** page, tell us about it by selecting **Report an issue**, and completing the short form. We’ll look at related data and reports from other organizations to see how widespread the issue is, and if it originated with our service. If it did, we’ll add it as a new incident or advisory on the **Service health** page, where you can track its resolution. If you don’t see it appear on the list within about 30 minutes, consider contacting support to resolve the issue.
 
-To sign up for email notifications of new incidents that affect your tenant and status changes for an active incident, select **Preferences**, click **Send me service heath notifications in email**, and then specify:
+To customize your view of which services show up on the dashboard, select **Preferences** > **Custom view**,  and clear the check boxes for the services you want to filter out of your Service health dashboard view. Make sure that the check box is selected for each service that you want to monitor.    
+
+To sign up for email notifications of new incidents that affect your tenant and status changes for an active incident, select **Preferences** > **Email**, click **Send me service heath notifications in email**, and then specify:
 
 - Up to two email addresses.
 - Whether you want notifications for incidents or advisories
