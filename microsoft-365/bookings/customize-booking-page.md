@@ -15,9 +15,6 @@ description: "Change the color theme of your booking page in the Microsoft Booki
 
 The Booking Page is where you set up what your external customer facing booking page will look like. Once you customize and publish your booking page, your customers will use it to book appointments with you.
 
-> [!NOTE]
-> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
-
 To customize your booking page, sign in to [Office.com](https://office.com), and then go to **Bookings** \> **Booking page**. You can customize the booking page with the following options. Once you've setup up your Booking Page, you can publish it so customers can start booking appointments with you.
 
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
