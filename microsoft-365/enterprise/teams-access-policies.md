@@ -99,17 +99,17 @@ For recommended policies to allow access for guest and external users with an Az
 
 In addition to the policies for users who are internal to your business or organization, administrators may enable guest access to allow, on a user-by-user basis, people who are external to your business or organization to access Teams resources and interact with internal people for things like group conversations, chat, and meetings. 
 
-For more information about external access and how to implement it, see  [Teams guest access](https://docs.microsoft.com/microsoftteams/guest-access).
+For more information about guest access and how to implement it, see  [Teams guest access](https://docs.microsoft.com/microsoftteams/guest-access).
 
 ### External access in Teams
 
 External access is sometimes confused with guest access, so it's important to be clear that these two non-internal access mechanisms are actually quite different. 
 
-While guest access occurs on a per-user account basis (you add one guest or external user account at a time as a team member), enabling external access allows you to add external users that don't have an Azure AD B2B user account at the same time to Teams. 
+External access is a way for Teams users from an entire external domain to find, call, chat, and set up meetings with your users in Teams. Teams administrators configure external access at the organization level. For more information, see [Manage external access in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-external-access).
 
-However those external users have less access and functionality than an individual who's been added via guest access would have. For example, external access users can chat with your internal users with Teams but cannot access team files or other resources.
+External access users have less access and functionality than an individual who's been added via guest access. For example, external access users can chat with your internal users with Teams but cannot access team channels, files, or other resources.
 
-For more information about external access and how to implement it, see [Manage external access in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-external-access).
+External access does not use Azure AD B2B user accounts and therefore does use Conditional Access policies. 
 
 ## Teams policies
 
