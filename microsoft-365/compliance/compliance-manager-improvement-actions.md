@@ -133,7 +133,7 @@ After selecting **Review update** from the improvement action details page, a fl
 Select **Accept update** to accept all the changes to the improvement action. **Accepted changes are permanent**.
 
 > [!NOTE]
-> When you accept an update to an action, you’re also accepting updates to any other versions or instances of this action. This means that updates will propagate tenant-wide for technical actions, and will propagate group-wide for non-technical actions.
+> When you accept an update to an action, you’re also accepting updates to any other versions or instances of this action. Updates will propagate tenant-wide for technical actions, and will propagate group-wide for non-technical actions.
 
 If you select **Cancel**, the update won’t be applied to the improvement action. However, you’ll continue to see the **Pending update** notification until you accept the update.
 
