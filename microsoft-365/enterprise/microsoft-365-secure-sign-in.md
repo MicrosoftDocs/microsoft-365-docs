@@ -22,7 +22,7 @@ description: Require that your users sign in securely with multi-factor authenti
 To increase the security of user sign-ins:
 
 - Use Azure Active Directory (Azure AD) Password Protection
-- Use Multi-factor authentication (MFA)
+- Use multi-factor authentication (MFA)
 - Deploy identity and device access policies
 
 ## Azure AD Password Protection
@@ -41,7 +41,7 @@ Your first step in using MFA is to ***require it for all administrator accounts*
 
 Beyond this first step, Microsoft strongly recommends MFA For all users.
 
-There are three ways to require your users to use MFA based on your Microsoft 365 plan.
+There are three ways to require your administrators or users to use MFA based on your Microsoft 365 plan.
 
 | Plan | Recommendation |
 |---------|---------|
@@ -93,7 +93,7 @@ This table shows the results of enabling MFA with security defaults and Conditio
 
 ## Identity and device access policies
 
-Identity and device access settings and policies are prerequisite features and their settings combined with Conditional Access, Intune, and Azure AD Identity Protection policies that determine whether a given access request should be granted and under what conditions. This determination is based on the user account of the sign-in, the device being used, the app the user is using for access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
+Identity and device access settings and policies are recommended prerequisite features and their settings combined with Conditional Access, Intune, and Azure AD Identity Protection policies that determine whether a given access request should be granted and under what conditions. This determination is based on the user account of the sign-in, the device being used, the app the user is using for access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
 
 >[!Note]
 >Azure AD Identity Protection requires Azure AD Premium P2 licenses, which are included with Microsoft 365 E5.
@@ -133,8 +133,8 @@ After deployment of MFA, your users:
 
 ## Admin technical resources for MFA and secure sign-ins
 
-- [MFA for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
-- [Plan and deploy your Microsoft 365 identity infrastructure](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure#plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure)
+- [MFA for Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365)
+- [Identity roadmap for Microsoft 365](identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD training videos](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Configure the Azure Multi-Factor Authentication registration policy](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [Identity and device access configurations](microsoft-365-policies-configurations.md)
