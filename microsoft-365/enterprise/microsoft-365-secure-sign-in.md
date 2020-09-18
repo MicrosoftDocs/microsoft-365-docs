@@ -133,7 +133,7 @@ After deployment of MFA, your users:
 
 ## Admin technical resources for MFA and secure sign-ins
 
-- [MFA for Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365)
+- [MFA for Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
 - [Identity roadmap for Microsoft 365](identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD training videos](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Configure the Azure Multi-Factor Authentication registration policy](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
