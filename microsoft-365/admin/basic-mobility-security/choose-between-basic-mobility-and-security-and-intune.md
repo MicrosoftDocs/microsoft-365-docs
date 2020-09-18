@@ -17,31 +17,33 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Basic Mobility and Security is part of the Microsoft 365 plans."
+description: "Choose an app and device management method."
 ---
 
-# Choose between Basic Mobility and Security and Intune
+# Decide on a method to secure your devices and app data
 
-Microsoft Intune is a standalone product included with certain Microsoft 365 plans, while Basic Mobility & Security is part of the Microsoft 365 plans. Both are included in a variety of plans, described in the following table.
+Microsoft Intune is a standalone product included with certain Microsoft 365 plans, while Basic Mobility and Security is part of the Microsoft 365 plans. Both are included in a variety of plans, described in the following table. 
 
-|**Plan**|**Basic Mobility and Security**|**Microsoft Intune**|
-|:-----|:-----|:-----|
-|Microsoft 365 Apps|Yes|No|
-|Microsoft 365 Business Basic|Yes|No|
-|Microsoft 365 Business Standard|Yes|No|
-|Office 365 E1 |Yes|No|
-|Office 365 E3 |Yes|No|
-|Office 365 E5 |Yes|No|
-|Microsoft 365 Business Premium |Yes|Yes|
-|Microsoft 365 Firstline 3 |Yes|Yes|
-|Microsoft 365 Enterprise E3 |Yes|Yes|
-|Microsoft 365 Enterprise E5 |Yes|Yes|
-|Microsoft 365 Eductation A1 |Yes|Yes|
-|Microsoft 365 Education A3 |Yes|Yes|
-|Microsoft 365 Education A5 |Yes|Yes|
-|Microsoft Intune |No|Yes|
-|Enterprise Mobility & Security E3 |No|Yes|
-|Enterprise Mobility & Security E5 |No|Yes|
+If your plan includes both Intune and Azure Information Protection Premium P1, or Azure Information Protection Premium P2 you get higher functionality for both mobile device management (MDM) and mobile app management (MAM) than with Basic Mobility and Security. For details, see [Microsoft 365 and Office 365 platform service descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description).
+
+|**Plan**|**Basic Mobility and Security**|**Microsoft Intune**|**Azure Information Protection Premium P1**|
+|:-----|:-----|:-----|:-----|
+|Microsoft 365 Apps|Yes|No|No|
+|Microsoft 365 Business Basic|Yes|No|No|
+|Microsoft 365 Business Standard|Yes|No|No|
+|Office 365 E1 |Yes|No|No|
+|Office 365 E3 |Yes|No|Yes|
+|Office 365 E5 |Yes|No|Yes|
+|Microsoft 365 Business Premium |Yes|Yes|Yes|
+|Microsoft 365 Firstline 3 |Yes|Yes|No|
+|Microsoft 365 Enterprise E3 |Yes|Yes|No|
+|Microsoft 365 Enterprise E5 |Yes|Yes|Yes|
+|Microsoft 365 Education A1 |Yes|Yes|No|
+|Microsoft 365 Education A3 |Yes|Yes|No|
+|Microsoft 365 Education A5 |Yes|Yes|No, but includes the higher functionality Azure Information Protection Premium P2|
+|Microsoft Intune |No|Yes|No|
+|Enterprise Mobility & Security E3 |No|Yes|Yes|
+|Enterprise Mobility & Security E5 |No|Yes||
 
 >[!NOTE]
 >You can't begin using Basic Mobility and Security if you're already using Microsoft Intune.
