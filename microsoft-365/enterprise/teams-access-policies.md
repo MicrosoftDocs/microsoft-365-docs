@@ -8,7 +8,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.author: heidip
-ms.date: 09/17/2020
+ms.date: 09/18/2020
 ms.reviewer: anmorgan
 ms.custom: 
 - it-pro
@@ -109,7 +109,7 @@ External access is a way for Teams users from an entire external domain to find,
 
 External access users have less access and functionality than an individual who's been added via guest access. For example, external access users can chat with your internal users with Teams but cannot access team channels, files, or other resources.
 
-External access does not use Azure AD B2B user accounts and therefore does use Conditional Access policies. 
+External access does not use Azure AD B2B user accounts and therefore does not use Conditional Access policies. 
 
 ## Teams policies
 
