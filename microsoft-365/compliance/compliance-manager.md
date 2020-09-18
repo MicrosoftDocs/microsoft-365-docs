@@ -54,7 +54,7 @@ Compliance Manager awards you points for completing improvement actions taken to
 
 Compliance Manager gives you an initial score based on the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance.
 
-#### Learn more
+##### Learn more
 
 [Understand how your compliance score is calculated](compliance-score-calculation.md).
 

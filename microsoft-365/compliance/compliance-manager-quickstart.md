@@ -32,12 +32,12 @@ The first time you visit Compliance Manager, you'll see a compliance score for y
 
 Our [Compliance Manager overview page](compliance-manager.md) is the best first stop for a comprehensive review of what Compliance Manager is and its key components. You may also want to jump right to key sections of our documentation using the links below:
 
-- [Understanding your compliance score](compliance-manager.md#understanding-your-compliance-score)
+- [Understand your compliance score](compliance-manager.md#understanding-your-compliance-score)
 - [Overview of key elements: controls, assessments, templates, and improvement actions](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
-- [Understanding the Compliance Manager dashboard](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
-- [Filtering your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
-- [Understanding improvement actions](compliance-manager-setup.md#improvement-actions-page)
-- [Understanding assessments](compliance-manager.md#assessments)
+- [Understand the Compliance Manager dashboard](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
+- [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
+- [Understand assessments](compliance-manager.md#assessments)
 
 ## Ramping up: configure Compliance Manager to manage your compliance activities
 
@@ -50,7 +50,7 @@ Once you're familiar with the basics, it's time to set things up to meet your or
 
 ## Scaling up: use advanced functionality to meet your custom needs
 
-When you're comfortable managing assessments in Compliance Manger, you can work with templates to modify a Compliance Manager assessment with your own actions and controls, or create your own custom assessment. Creating a custom assessment is helpful for:
+When you're comfortable managing assessments in Compliance Manger, you can work with templates to modify a Compliance Manager assessment with your own actions and controls. You can also create your own custom assessment. Custom assessments are helpful for:
 
 - Managing compliance for non-Microsoft 365 products such as third-party apps and  services, on-premises applications, and other assets.
 - Managing your own custom or business-specific compliance controls.
