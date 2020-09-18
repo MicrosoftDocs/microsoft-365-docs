@@ -28,9 +28,9 @@ These requirements must be met for a desktop background picture:
 ### Customize and deploy desktop background picture
 
 **To add a custom desktop background picture**
-1. Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mwaasportal)
-2. Under **Settings**, select **Configurable**.
-3. In **Configurable** workspace, select **Desktop background picture**. 
+1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Devices** menu
+2. Look for the Microsoft Managed Desktop section, select **Settings**.
+3. In **Settings** workspace, select **Desktop background picture**. 
 4. Enter the location of the picture you want to use. 
 5. Select **Stage deployment** to save your changes and deploy them to the Test group. 
 
@@ -44,9 +44,9 @@ You must provide the fully qualified domain name (FQDN) for intranet or Internet
 ### Customize and deploy browser start pages
 
 **To add a browser start page**
-1. Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mwaasportal)
-2. Under **Settings**, select **Configurable**.
-3. In **Configurable** workspace, select **Browser start pages**. 
+1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Devices** menu
+2. Look for the Microsoft Managed Desktop section, select **Settings**.
+3. In **Settings** workspace, select **Browser start pages**. 
 4. Select **Add start page**.
 5. On **Add browser start page**, enter the URL for the site you want to use, and then select **Add start page**. 
 6. Repeat steps 1-5 for additional browser start pages. 
@@ -75,11 +75,11 @@ These best practices are offered to help customers make decisions to modernize t
 
 **To add an enterprise site mode list location**
 
-1.	Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mwaasportal)
-2.	Under **Settings**, select **Configurable**.
-3.	In **Configurable** workspace, select **Enterprise mode site list location**. 
-4.	Enter the https location for your site list. 
-5.	Select **Stage deployment** to save your changes and deploy them to the Test group.
+1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Devices** menu
+2. Look for the Microsoft Managed Desktop section, select **Settings**.
+3. In **Settings** workspace, select **Enterprise mode site list location**. 
+4. Enter the https location for your site list. 
+5. Select **Stage deployment** to save your changes and deploy them to the Test group.
 
 ## Trusted sites
 
@@ -97,18 +97,18 @@ Provide the fully qualified domain name (FQDN) for intranet or Internet sites fo
 
 **To add a trusted site**
 
-1. Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mwaasportal)
-2. Under **Settings**, select **Configurable**.
-3. In **Configurable** workspace, select **Trusted sites**, and then select **Add trusted site**. 
+1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Devices** menu
+2. Look for the Microsoft Managed Desktop section, select **Settings**.
+3. In **Settings** workspace, select **Trusted sites**, and then select **Add trusted site**. 
 4. On **Add trusted site**, enter the URL, choose a security zone, and then select **Add trusted site**. 
 5. Repeat steps 1-4 for each trusted site you want to add. 
 6. Select **Stage deployment** to save your changes and deploy them to the Test group.
 
 **To remove a trusted site**
 
-1. Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mwaasportal)
-2. Under **Settings**, select **Configurable**.
-3. In **Configurable** workspace, select **Trusted sites**. 
+1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Devices** menu
+2. Look for the Microsoft Managed Desktop section, select **Settings**.
+3. In **Settings** workspace, select **Trusted sites**. 
 4. Select the site that you want to delete, and then select **Delete**. 
 5. Repeat steps 1-4 for each trusted site you want to delete. 
 6. Select **Stage deployment** to save your changes and deploy them to the Test group.
@@ -131,9 +131,9 @@ These requirements must be met for proxy server and proxy site exceptions:
 
 **To add an individual proxy site exception**
 
-1. Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mwaasportal)
-2. Under **Settings**, select **Configurable**.
-3. In **Configurable** workspace, select **Proxy**. 
+1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Devices** menu
+2. Look for the Microsoft Managed Desktop section, select **Settings**.
+3. In **Settings** workspace, select **Proxy**. 
 4. Enter the **Address** and **Port number** for you proxy server, and then select **Add proxy exception**. 
 5. Enter the URL of a valid http site, and then select **Add proxy exception**. 
 6. Repeat steps 1-5 for each trusted site you want to add. 
