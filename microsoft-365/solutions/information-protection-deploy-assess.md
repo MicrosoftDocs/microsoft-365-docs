@@ -163,7 +163,7 @@ Understanding your exposure to risk and data privacy regulation is an important 
 
 If you don't have personal data from consumers in your Microsoft 365 environment or it is confined to certain parts of the environment and the need for a technical control is predicated on there being consumer-type data exposure, then that technical control may only need to be employed in high risk parts of the environment, not everywhere.
 
-While an external organization or standard control set recommendation, such as from Compliance Score in Microsoft 365, may help inform your control strategy, your choice of implementation should be driven by data inventory awareness to quantify your real risk exposure.
+While an external organization or standard control set recommendation, such as from Compliance Manager in Microsoft 365, may help inform your control strategy, your choice of implementation should be driven by data inventory awareness to quantify your real risk exposure.
 
 Most organizations will have some exposure to one of the above scenarios. Taking a holistic approach to assessment is important.
 
