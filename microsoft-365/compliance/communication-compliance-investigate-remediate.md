@@ -133,6 +133,8 @@ Now that you've reviewed the details of the message for the alert, you can choos
 
     To learn more about retraining classifier for communication compliance, see the [How to retrain a classifier in communications compliance](classifier-how-to-retrain-comms-compliance.md) article.
 
+    ![Communication compliance improve classification](../media/communication-compliance-improve-classifier.png)
+
 - **Remove message in Teams**: Using the **Remove message in Teams** control, you can block inappropriate messages and content identified in alerts from Microsoft Teams channels and 1:1 and group chats. Removed messages and content are replaced with a policy tip that explains that it is blocked and the policy that applies to its removal from view. Recipients are provided a link in the policy tip to learn more about the applicable policy and the review process. The sender receives a policy tip for the blocked message and content but can review the details of the blocked message and content for context regarding the removal.
 
     ![Remove a message from Microsoft Teams](../media/communication-compliance-remove-teams-message.png)
