@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 09/18/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,9 +18,7 @@ description: "Learn how Exchange Online Protection (EOP) can help protect your o
 
 # Exchange Online Protection overview
 
-Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware. EOP is included in all Microsoft 365 organizations with Exchange Online mailboxes.
-
-But, EOP is also available in the following on-premises scenarios:
+Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware. EOP is included in all Microsoft 365 organizations with Exchange Online mailboxes. However, EOP is also available in the following on-premises scenarios:
 
 - **In a standalone scenario**: EOP provides cloud-based email protection for your on-premises Exchange organization or for any other on-premises SMTP email solution.
 
@@ -34,7 +32,8 @@ The rest of this topic explains how EOP works in standalone and hybrid environme
 
 To understand how EOP works, it helps to see how it processes incoming email:
 
-![Email process diagram](../../media/emailprocessingineop1.png)
+:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphic of email from either the Internet or Customer feedback passing into EOP and through the Connection, Anti-malware, Mailflow Rules-slash-Policy Filtering, and Content Filtering, before the verdict of either junk mail or quarantine, or end user mail delivery.":::
+
 
 - An incoming message initially passes through connection filtering, which checks the sender's reputation and inspects the message for malware. The majority of spam is stopped at this point and deleted by EOP. For more information, see [Configure connection filtering](configure-the-connection-filter-policy.md).
 
