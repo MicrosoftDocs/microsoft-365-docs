@@ -79,6 +79,5 @@ In the Investigation details view, you can see information on the **Investigatio
 
 ## Next steps
 
-- [Get an overview of Action center permissions](mtp-action-center.md#required-permissions-for-action-center-tasks)
 - [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
 

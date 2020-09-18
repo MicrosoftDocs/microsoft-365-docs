@@ -77,6 +77,5 @@ If a remediation action was taken on a device (such as a Windows 10 device) and 
 
 ## See also
 
-- [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
-- [Learn more about the Action center](mtp-action-center.md)
+- [View the details and results of an automated investigation](mtp-autoir-results.md)
 - [Proactively hunt for threats with advanced hunting in Microsoft Threat Protection](advanced-hunting-overview.md)
