@@ -159,5 +159,3 @@ For example:
 `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
 
 You can run this command multiple times to add multiple users. Note that you can only add Exchange Online Protection (EOP) Role Groups and not Azure Role Groups.
-
-FOO FOO
