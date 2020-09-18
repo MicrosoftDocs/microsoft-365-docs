@@ -88,7 +88,7 @@ landingContent:
     # Card
   - title: Deploy compliance solutions
     linkLists:
-      - linkListType: how-to
+      - linkListType: how-to-guide
         links:
           - text: Information protection for data privacy regulations
             url: ../solutions/information-protection-deploy.md
