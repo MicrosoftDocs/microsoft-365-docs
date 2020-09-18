@@ -1,6 +1,6 @@
 ---
 title: Migrate advanced hunting queries from Microsoft Defender ATP
-description: Learn how to adjust your Microsoft Defender ATP queries so you can use them on Microsoft Threat Protection
+description: Learn how to adjust your Microsoft Defender ATP queries so you can use them in Microsoft Threat Protection
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, microsoft defender atp, mdatp, search, query, telemetry, custom detections, schema, kusto, microsoft 365, mapping
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -80,16 +80,16 @@ Use this comparison to check how `DeviceAlertEvents` columns map to columns in t
 | | | `AdditionalFields` | Additional information about the event in JSON array format |
 
 
-## Adjusting existing Microsoft Defender ATP queries
+## Adjust existing Microsoft Defender ATP queries
 
-To allow your existing queries to work on Microsoft Threat Protection, apply these changes:
+Microsoft Defender ATP queries will work as-is unless they reference the `DeviceAlertEvents` table. To use these queries in Microsoft Threat Protection, apply these changes:
 
 - Replace `DeviceAlertEvents` with `AlertInfo`.
 - Join the `AlertInfo` and the `AlertEvidence` tables on `AlertId` to get equivalent data. Refer to the comparison to identify how columns generally map.
 - Use `DeviceInfo` or other tables to get `DeviceName` from `DeviceId`
 - Instead of using `ReportId` to check other tables for more information about the event that triggered an alert, parse the `AdditionalFields` column.
 
-The following query uses `DeviceAlertEvents` on Microsoft Defender ATP to get the names of processes that have triggered alerts after accessing _lsass.exe_:
+The following query uses `DeviceAlertEvents` in Microsoft Defender ATP to get the names of processes that have triggered alerts after accessing _lsass.exe_:
 
 ```kusto
 DeviceAlertEvents
@@ -98,7 +98,7 @@ DeviceAlertEvents
 | join DeviceEvents on ReportId
 | project AlertId, Title, InitiatingProcessFileName, FileName, DeviceName
 ```
-The following query has been adjusted to get the same information on Microsoft Threat Protection:
+The following query has been adjusted for use in Microsoft Threat Protection:
 
 ```kusto
 <TBD>
