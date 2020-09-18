@@ -84,3 +84,12 @@ landingContent:
             url: iso-action-plan.md
           - text: NIST compliance action plan
             url: nist-action-plan.md
+
+    # Card
+  - title: Deploy compliance solutions
+    linkLists:
+      - linkListType: how-to
+        links:
+          - text: Information protection for data privacy regulations
+            url: ../solutions/information-protection-deploy.md
+
