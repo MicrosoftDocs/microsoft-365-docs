@@ -54,7 +54,7 @@ The first step is to obtain a copy of the public keys for Secure Shell (SSH) and
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
 
-2. On the **Data connectors (preview)** page under **ICE Chat**, click **View**.
+2. On the **Data connectors** page under **ICE Chat**, click **View**.
 
 3. On the **ICE Chat** page, click **Add connector**.
 

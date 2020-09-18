@@ -214,7 +214,7 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** in the left nav.
 
-2. On the **Data connectors (preview)** page under **HR**, click **View**.
+2. On the **Data connectors** page under **HR**, click **View**.
 
 3. On the **HR Custom** page, click **Add connector**.
 

@@ -132,7 +132,7 @@ The next step is to create a physical badging connector in the Microsoft 365 com
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** in the left nav.
 
-2. On the **Data connectors (preview)** page under **Physical badging**, click **View**.
+2. On the **Data connectors** page under **Physical badging**, click **View**.
 
 3. On the **Physical badging** page, click **Add connector**.
 
@@ -161,6 +161,9 @@ The next step is to create a physical badging connector in the Microsoft 365 com
 The next step in setting up a physical badging connector is to run a script that will push the physical badging data in the JSON file (that you created in Step 2) to the API endpoint you created in Step 1. We provide a sample script for your reference and you can choose to use it or create your own script to post the JSON file to the API endpoint.
 
 After you run the script, the JSON file containing the physical badging data is pushed to your Microsoft 365 organization where it can accessed by the insider risk management solution. We recommend you post physical badging data daily. You can do this by automating the process to generate the JSON file every day from your physical badging system and then scheduling the script to push the data.
+
+> [!NOTE]
+> The maximum number of records in the JSON file that can be processed by the API is 50,000 records.
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) to access the sample script.
 

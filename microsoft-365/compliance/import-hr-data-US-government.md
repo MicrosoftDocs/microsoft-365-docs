@@ -72,7 +72,7 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** in the left nav.
 
-2. On the **Data connectors (preview)** page under **HR**, click **View**.
+2. On the **Data connectors** page under **HR**, click **View**.
 
 3. On the **HR** page, click **Add connector**.
 
