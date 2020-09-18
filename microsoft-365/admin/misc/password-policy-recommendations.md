@@ -127,8 +127,6 @@ Risk-based multi-factor authentication ensures that when our system detects susp
 
 - [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
-- [Download files from the web](https://go.microsoft.com/fwlink/p/?linkid=861029)
-
 ## Related articles
 
 [Reset passwords](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
