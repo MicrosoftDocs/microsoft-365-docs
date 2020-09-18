@@ -44,7 +44,7 @@ Data classification will scan your sensitive content and labeled content before 
 
 Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:
 
-- Microsoft 365 (E5)
+- Microsoft 365 (E5/A5)
 - Office 365 (E5)
 - Advanced Compliance (E5) add-on
 - Advanced Threat Intelligence (E5) add-on

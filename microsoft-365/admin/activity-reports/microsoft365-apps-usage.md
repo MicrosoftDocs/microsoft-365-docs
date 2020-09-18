@@ -42,7 +42,7 @@ You can get a view into your user's Microsoft 365 Apps activity by looking at th
 
 ![Microsoft 365 Apps usage report](../../media/proplususagenumbers.png)
 
-|||
+|Item|Description|
  |:-----|:-----|
  |1. <br/> |The **Microsoft 365 Apps usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table (7) will show data for up to 28 days from the current date (not the date the report was generated). <br/> |
  |2. <br/> |The data in each report usually covers up to the last seven days. <br/> |

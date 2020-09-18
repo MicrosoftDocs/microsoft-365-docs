@@ -356,7 +356,7 @@ For detailed syntax and parameter information, see [Get-HostedOutboundSpamFilter
 To view existing outbound spam filter rules, use the following syntax:
 
 ```PowerShell
-Get-HostedOutboundSpamFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled]
+Get-HostedOutboundSpamFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled>]
 ```
 
 To return a summary list of all outbound spam filter rules, run this command:
