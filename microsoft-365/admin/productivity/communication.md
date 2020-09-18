@@ -52,15 +52,15 @@ as a percentage of all people who are enabled for more than one of these product
 3. **Visualization of current state:**
       1. Horizontal bar where the blue portion represents the percentage expressed in the header
       2. Highlights the (numerator/denominator) used for computing the percentage expressed in the header
-            1. Numerator: # of people using more than one communication modes in the last 28 days
-            2. Denominator: # of people marked as enabled for more than one communication products in the last 28 days
+            1. **Numerator**: # of people using more than one communication modes in the last 28 days
+            2. **Denominator**: # of people marked as enabled for more than one communication products in the last 28 days
       3. Peer Benchmark value of the key metric is also shown as a percentage
 4. **Link to resources:** Clicking here would enlist all the support content in the form of videos/articles related to Communication. From these you can navigate to the custom playlist for Communication and subsequently, for all Productivity Score categories.
 5. **Visualization of trend:** This chart provides the trend of numerator of the key metric in the primary insight – that is, the number of people using more than one communication modes over the last 180 days. Here that the daily value is an aggregate of the number of people who use multiple forms of communication over the last 28 days.
 
 ### Scoring model
 
-The  WHAT SCORE DO WE MEAN?  score is computed based on the frequency of communicating using multiple modes over a 28-day window.
+The score is computed based on the frequency of communicating using multiple modes over a 28-day window.
 
 ## Explore how your organization communicates
 
