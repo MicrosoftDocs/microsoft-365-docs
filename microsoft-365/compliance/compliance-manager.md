@@ -78,7 +78,7 @@ Compliance Manager tracks the following types of controls:
 
 [Monitor progress of your controls](compliance-manager-assessments.md#monitor-assessment-progress-and-controls).
 
-[Learn how Compliance Manager continuously assesses controls](compliance-score-calculation.md#how-compliance-score-continuously-assesses-controls).
+[Learn how Compliance Manager continuously assesses controls](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
 ### Assessments
 
@@ -106,7 +106,7 @@ Compliance Manager provides templates to help you quickly create assessments. Yo
 
 [View the list of assessment templates provided by Compliance Manager](compliance-manager-templates-list.md).
 
-[Get detailed instructions for creating and modifying templates for assessments](compliance-manager-templates).
+[Get detailed instructions for creating and modifying templates for assessments](compliance-manager-templates.md).
 
 ### Improvement actions
 
