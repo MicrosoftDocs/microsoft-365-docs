@@ -184,7 +184,7 @@ The *Adult*, *Racy*, and *Gory* image classifiers scan files in .JPEG, .PNG, .GI
 
 The built-in trainable and global classifiers don't provide an exhaustive list of terms or images across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update classifiers at its discretion. While classifiers may assist your organization in monitoring these areas, classifiers aren't intended to provide your organization's sole means of monitoring or addressing such language or imagery. Your organization, not Microsoft, remains responsible for all decisions related to scanning and blocking language and images in these areas.
 
-For information about trainable classifiers in Microsoft 365, see [Getting started with trainable classifiers](classifier-getting-started-with.md).
+For information about trainable classifiers in Microsoft 365, see [Getting started with trainable classifiers](classifier-get-started-with.md).
 
 ### Conditional settings
 <a name="ConditionalSettings"> </a>
