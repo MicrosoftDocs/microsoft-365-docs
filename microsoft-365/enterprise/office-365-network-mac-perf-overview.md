@@ -26,11 +26,13 @@ The Microsoft 365 Admin Center now includes aggregated network connectivity metr
 
 ![Network performance page](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
-When you first navigate to the network connectivity page, you will see an overview pane containing a map of global network performance, a network assessment scoped to the entire tenant, and a list of current issues. From the overview, you can drill down to view specific network performance metrics and issues by location. For more information, see [Network performance overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
+You may be asked to join the public preview for this feature on behalf of your organization. Acceptance usualy happend immediately and then you will see the network connectivity page. 
+
+On navigating to the network connectivity page, you will see an overview pane containing a map of global network performance, a network assessment scoped to the entire tenant, and a list of current issues. To access this page you must be an administrator for the organization within Microsoft 365. The Report Reader administrative role will have read access to this information. To configure locations and other elements of network connectivity an administrator must be part of a server administrator role such as the Service support admin role. From the overview, you can drill down to view specific network performance metrics and issues by location. For more information, see [Network performance overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
 ## Pre-requisites for network connectivity assessments to appear
 
-There are three options for getting network assessments from your office locations:
+Whilst network connectivity can be evaluated across the organization, any network design improvements will need to be done for specific office locations. Network connectivity information is provided for each office location once those locations can be determined. There are three options for getting network assessments from your office locations:
 
 ### 1. Enable Windows Location Services
 
@@ -38,7 +40,7 @@ For this option you must have at least two computers running at each office loca
 
 Windows Location Service must be consented on the machines. You can test this by running the **Maps** app and locating yourself. It can be enabled on a single machine with **Settings | Privacy | Location** where the setting _Allow apps to access your location_ must be enabled. Windows Location Services consent can be deployed to PCs using MDM or Group Policy with the setting _LetAppsAccessLocation_.
 
-You do not need to add locations in the Admin Center with this method as they are automatically identified at the city resolution. You cannot show multiple office locations within a city using Windows Location Services.
+You do not need to add locations in the Admin Center with this method as they are automatically identified at the city resolution. You cannot show multiple office locations within a city using Windows Location Services. Location information is also rounded to the nearest 300 meters by 300 meters before being uploaded so thatmore  precise location information is not possible to access.
 
 The machines should have Wi-Fi networking rather than an ethernet cable. Machines with an ethernet cable do not have accurate location information.
 
@@ -46,7 +48,7 @@ Measurement samples and office locations should start to appear 24 hours after t
 
 ### 2. Add locations and provide LAN subnet information
 
-For this option neither Windows Location Services nor Wi-Fi are required. You need OneDrive for Windows version 20.161 or above installed on each computer at the location.
+For this option neither Windows Location Services nor Wi-Fi are required. You need OneDrive for Windows version **20.161** or above installed on each computer at the location.
 
 You also need to add locations in the Admin Center network connectivity page or to import those from a CSV file. The locations added must include your office LAN subnet information.
 
@@ -56,11 +58,11 @@ Measurement samples and office locations should start to appear 24 hours after t
 
 ### 3. Manually gather test reports with the Microsoft 365 network connectivity test tool
 
-For this option you need to identify a person at each location. Ask them to browser to [Microsoft 365 network connectivity test](https://connectivity.office.com) on a Windows machine that they have administrative permissions on. On the web site, they need to sign-in to their Office 365 account on the same tenant that you want to see the results. Then they click Run test. During the test there is a downloaded Connectivity test EXE. They need to open and execute that also. Once the tests are completed, the test result is uploaded to Microsoft.
+For this option you need to identify a person at each location. Ask them to browse to [Microsoft 365 network connectivity test](https://connectivity.office.com) on a Windows machine that they have administrative permissions on. On the web site, they need to sign-in to their Office 365 account for the same organization that you want to see the results. Then they click Run test. During the test there is a downloaded Connectivity test EXE. They need to open and execute that also. Once the tests are completed, the test result is uploaded to Office 365.
 
 Test reports are linked to a location if it was added with LAN subnet information, otherwise they are shown at the city location only.
 
-Measurement samples and office locations should start to appear 2-3 minutes after a test result is completed.
+Measurement samples and office locations should start to appear 2-3 minutes after a test report is completed. For more information, see [Microsoft 365 network connectivity test (preview)](office-365-network-mac-perf-onboarding-tool.md).
 
 ## How do I use this information?
 
@@ -83,7 +85,7 @@ Many enterprises have network perimeter configurations which have grown over tim
 
 Enterprises can improve general user experience and secure their environment by following [Office 365 connectivity principles](https://aka.ms/pnc) and by using the Microsoft 365 Admin Center network connectivity feature. In most cases, following these general principles will have a significant positive impact on end user latency, service reliability and overall performance of Microsoft 365.
 
-Microsoft is sometimes asked to investigate network performance issues with Microsoft 365 for large enterprise customers, and these frequently have a root cause related to the customers network egress infrastructure. When a common root cause of a customer network perimeter issue is found we seek to identify simple test measurements that identifies it. A test with a measurement threshold that identifies a specific problem is valuable because we can test the same measurement at any location, tell whether this root cause is present there and share it as a network insight with the administrator.
+Microsoft is sometimes asked to investigate network performance issues with Microsoft 365 for large enterprise customers, and these frequently have a root cause related to the customers network perimeter infrastructure. When a common root cause of a customer network perimeter issue is found we seek to identify simple test measurements that identifies it. A test with a measurement threshold that identifies a specific problem is valuable because we can test the same measurement at any location, tell whether this root cause is present there and share it as a network insight with the administrator.
 
 Some network insights will merely indicate a problem that needs further investigation. A network insight where we have enough tests to show a specific remediation action to correct the root cause is listed as a **recommended action**. These recommendations, based on live metrics that reveal values that fall outside a predetermined threshold, are much more valuable than general best practice advice since they are specific to your environment and will show the actual improvement once the recommended changes have been made.
 
@@ -119,7 +121,7 @@ The details tab on the office location page shows the specific measurement resul
 
 For LAN subnet office identification, you need to add each location in advance. Instead of adding individual office locations in the **Locations** tab you can import them from a CSV file. You may be able to obtain this data from other places you have stored it such as the Call Quality Dashboard or Active Directory Sites and Services
 
-In the CSV file a discovered city location is labeled **City**, and a manually added office location is labeled **Location**.
+In the CSV file a discovered city location shows in the userEntered column as blank, and a manually added office location shows as 1.
 
 1. In the main _Connectivity to Microsoft 365_ window, click the **Locations** tab.
 1. Click the **Import** button just above the locations list. The **Import office locations** flyout will appear.
@@ -128,9 +130,10 @@ In the CSV file a discovered city location is labeled **City**, and a manually a
 
 1. Click the **Download current office locations (.csv)** link to export the current locations list to a CSV file, and save it to your local hard disk. This will provide you with a correctly formatted CSV with column headings to which you can add locations. You can leave the existing exported locations as they are; they will not be duplicated when you import the updated CSV. If you wish to change the address of an existing location, it will be updated when you import the CSV. You cannot change the address of a discovered city.
 1. Open the CSV and add your locations by filling out the following fields on a new line for each location you want to add. Leave all other fields blank; values you enter in other fields will be ignored.
+   1. **userEntered** (required): Must be 1 for a new LAN Subnet office location
    1. **Address** (required): The physical address of the office
-   1. **Latitude** (optional): Populated from Bing maps lookup if blank
-   1. **Longitude** (optional): Populated from Bing maps lookup if blank
+   1. **Latitude** (optional): Populated from Bing maps lookup of the address if blank
+   1. **Longitude** (optional): Populated from Bing maps lookup of the address if blank
    1. **Egress IP Address ranges 1-5** (optional): For each range, enter the circuit name followed by a space separated list of valid IPv4 or IPv6 CIDR addresses. These values are used to differentiate multiple office locations where you use the same LAN subnet IP Addresses.
    1. **LanIps** (required): List the LAN subnet ranges in use at this office location.
 1. When you have added your office locations and saved the file, click the **Browse** button next to the **Upload the completed** field and select the saved CSV file.
