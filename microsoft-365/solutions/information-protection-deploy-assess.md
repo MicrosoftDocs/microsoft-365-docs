@@ -73,7 +73,7 @@ For later reference in the articles of this overall solution, this table provide
 |||||
 
 >[!Important]
->This is not intended to be an exhaustive list. Refer to [Compliance Manager](../compliance/compliance-manager-overview.md) or your legal or compliance advisor for further information on the applicability of the cited sections to the technical control categories listed.
+>This is not intended to be an exhaustive list. Refer to [Compliance Manager](../compliance/compliance-manager.md) or your legal or compliance advisor for further information on the applicability of the cited sections to the technical control categories listed.
 >
 
 ## Knowing your data
