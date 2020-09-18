@@ -36,7 +36,7 @@ It’s difficult to know where to go if you don’t know where you are. Meeting 
 
 [Microsoft Compliance Manager](compliance-manager.md) can help you understand your organization's compliance posture and highlight areas that may need improvement. Compliance Manager uses a centralized dashboard to calculate a risk-based score, measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. You can also use Compliance Manager as a tool to track all your risk assessments. It provides workflow capabilities to help you efficiently complete your risk assessments through a common tool.
 
-For step-by-step guidance to get started with Compliance Manager, see [Set up Compliance Manager](compliance-manager-setup.md).
+For step-by-step guidance to get started with Compliance Manager, see [Get started with Compliance Manager](compliance-manager-setup.md).
 
 >[!IMPORTANT]
 >Security and compliance are tightly integrated for most organizations. It’s important that your organization addresses basic security, threat protection, and identity and access management areas to help provide a defense in-depth approach to both security and compliance.
