@@ -31,7 +31,7 @@ This article provides an overview of Advanced Audit capabilities.
 
 Advanced Audit retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This is accomplished by a default audit log retention policy that retains any audit record that contains the value of **Exchange**, **SharePoint**, or **AzureActiveDirectory** for the **Workload** property (which indicates the service in which the activity occurred) for one year. Retaining audit records for longer periods can help with on-going forensic or compliance investigations. For more information, see the "Default audit log retention policy" section in [Manage audit log retention policies](audit-log-retention-policies.md#default-audit-log-retention-policy).
 
-To help support the length of an investigation or if your is a highly regulated industry, organizations can increase audit log retention for up to 10 years.
+10-year audit log retention helps support long running investigations and respond to regulatory, legal, and internal obligations.
 
 ### Audit log retention policies
 
@@ -87,7 +87,7 @@ The Send event is also a mailbox auditing action and is triggered when a user pe
 
 - Forwards an email message
 
-Investigators can use the Send event to identify email sent from a compromised account. The audit record for a Send event contains information about the message, such as when the message was sent, the InternetMessage ID, the subject line, message attachments, and whether the message is labeled as a [record](records-management.md). This auditing information can help investigators identify information about email messages sent from a compromised account or sent by a malicious user. Additionally, investigators can use a Microsoft 365 eDiscovery tool to search for the message (by using the subject line or message ID) to identify the recipients the message was sent to and the actual contents of the sent message.
+Investigators can use the Send event to identify email sent from a compromised account. The audit record for a Send event contains information about the message, such as when the message was sent, the InternetMessage ID, the subject line, message attachments, and whether the message is labeled as a [record](records-management.md). This auditing information can help investigators identify information about email messages sent from a compromised account or sent by an attacker. Additionally, investigators can use a Microsoft 365 eDiscovery tool to search for the message (by using the subject line or message ID) to identify the recipients the message was sent to and the actual contents of the sent message.
 
 To search for Send audit records, you can search for the **Sent message** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft 365 compliance center.
 
@@ -97,7 +97,7 @@ You can also run the [Search-UnifiedAuditLog -Operations Send](https://docs.micr
 
 ### SearchQueryInitiatedExchange
 
-The SearchQueryInitiatedExchange event is triggered when a person uses the Search bar in Outlook or Outlook on the web to search for items in a mailbox. Investigators can use the SearchQueryInitiatedExchange event to determine if a malicious user who may have compromised an account looked for or tried to access sensitive information in the mailbox. The audit record for a SearchQueryInitiatedExchange event contains information such as the actual search query text and whether the search was performed in Outlook desktop client or in Outlook on the web. By determining if a search event was performed, an investigator can understand the scope of the content that may have been compromised.
+The SearchQueryInitiatedExchange event is triggered when a person uses the Search bar in Outlook or Outlook on the web to search for items in a mailbox. Investigators can use the SearchQueryInitiatedExchange event to determine if an attacker who may have compromised an account looked for or tried to access sensitive information in the mailbox. The audit record for a SearchQueryInitiatedExchange event contains information such as the actual search query text and whether the search was performed in Outlook desktop client or in Outlook on the web. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent of the email data that was searched for.
 
 To search for SearchQueryInitiatedExchange audit records, you can search for the **Performed email search** activity in the **Search activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the compliance center.
 
@@ -107,7 +107,7 @@ You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExc
 
 ### SearchQueryInitiatedSharePoint
 
-Similar to searching for mailbox items, the SearchQueryInitiatedSharePoint event is triggered when a person searches for items in SharePoint. Investigators can use the SearchQueryInitiatedSharePoint event to determine if a malicious user tried to find (and possibly accessed) sensitive information in SharePoint. The audit record for a SearchQueryInitiatedSharePoint event contains also contains the actual search query text. By determining if a search event was performed, an investigator can understand the scope of the content that may have been compromised.
+Similar to searching for mailbox items, the SearchQueryInitiatedSharePoint event is triggered when a person searches for items in the SharePoint home site, Teams sites, collaboration sites, and hub sites in your organization. Investigators can use the SearchQueryInitiatedSharePoint event to determine if an attacker tried to find (and possibly accessed) sensitive information in SharePoint. The audit record for a SearchQueryInitiatedSharePoint event contains also contains the actual search query text. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent and scope of the file data being searched for.
 
 To search for SearchQueryInitiatedSharePoint audit records, you can search for the **Performed SharePoint search** activity in the **Search activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the compliance center.
 
