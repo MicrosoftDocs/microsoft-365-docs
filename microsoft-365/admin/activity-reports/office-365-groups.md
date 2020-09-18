@@ -41,7 +41,7 @@ You can get a view into groups activity by looking at the **Groups**, **Activity
   
 ![Microsoft 365 reports - groups activities](../../media/852027a4-8eab-47d1-b770-2bb874bdc403.png)
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |The **Microsoft 365 groups** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table (7) will show data for up to 28 days from the current date (not the date the report was generated).  <br/> |
 |2.  <br/> |The data in each report usually covers up to the last 24 to 48 hours.  <br/> |

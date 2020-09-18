@@ -50,7 +50,7 @@
             - name: Microsoft 365 optimization for China users
               href: microsoft-365-networking-china.md
             - name: Optimizing Microsoft 365 traffic for remote workers with the native Windows 10 VPN client
-              href: https://docs.microsoft.com/en-us/windows/security/identity-protection/vpn/vpn-office-365-optimization
+              href: https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization
         - name: ExpressRoute for Office 365
           href: azure-expressroute.md
           items: 
@@ -273,6 +273,8 @@
       items: 
         - name: Add a domain
           href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+        - name: Setup guides
+          href: setup-guides-for-microsoft-365.md
     - name: Multi-geo
       items: 
         - name: Microsoft 365 Multi-Geo
@@ -359,6 +361,8 @@
           href: prepare-a-non-routable-domain-for-directory-synchronization.md
         - name: Set up directory synchronization
           href: set-up-directory-synchronization.md
+        - name: Secure user sign-ins
+          href: microsoft-365-secure-sign-in.md
         - name: Hybrid solutions
           items: 
             - name: Overview
@@ -537,7 +541,7 @@
 - name: Manage Microsoft 365 with PowerShell
   href: manage-microsoft-365-with-microsoft-365-powershell.md
   items: 
-    - name: Getting started
+    - name: Get started
       href: getting-started-with-microsoft-365-powershell.md
       items: 
         - name: Why you need to use PowerShell
@@ -594,7 +598,7 @@
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
               href: manage-microsoft-365-groups-with-powershell.md
-    - name: Manage SharePoint Online
+    - name: Manage SharePoint
       href: manage-sharepoint-online-with-microsoft-365-powershell.md
       items: 
         - name: Create SharePoint Online sites and add users
@@ -605,7 +609,7 @@
           href: manage-sharepoint-site-groups-with-powershell.md
     - name: Manage Exchange Online
       href: https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell
-    - name: Use PowerShell for email migration to Microsoft 365
+    - name: Use PowerShell to migrate email to Microsoft 365
       href: use-powershell-for-email-migration-to-microsoft-365.md
       items: 
         - name: Use PowerShell to perform a cutover migration to Microsoft 365

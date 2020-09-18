@@ -43,7 +43,7 @@ information about system requirements and installation steps to enable Applicati
 
 * **Windows 10**: Windows 10 Enterprise edition, Client Build version 2004 (20H1) build 19041
 * **Office**: Office Beta Channel Build version 2008 16.0.13212 or later
-* **Update package**: Windows 10 cumulative monthly security updates [KB4566782](https://support.microsoft.com/help/4566782/windows-10-update-kb4566782) 
+* **Update package**: Windows 10 cumulative monthly security updates [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
 
 For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office Insider Preview builds, refer to [Getting started on deploying Office Insider builds](https://insider.office.com/business/deploy).
 
@@ -54,30 +54,11 @@ For detailed system requirements, refer to [System requirements for Microsoft De
 
 ### Enable Application Guard for Office
 
-1.  Download and install **Windows 10 cumulative monthly security updates KB4566782**. 
+1.  Download and install **Windows 10 cumulative monthly security updates KB4571756**. 
 
-2. Download and install [**Application Guard for Office Feature enablement package**](https://download.microsoft.com/download/e/4/c/e4c1180a-fcff-462a-8324-4151c44973a8/Windows%20Preview%20-%20WDAG%20Office%20070920%2001.msi). This package installs a group policy called "KB4559004 Issue 001 Preview" under **Computer Configuration\Administrative Templates**. Set this group policy  to **Enabled**.
-     ![Local Group Policy Editor](../../media/ag01-deploy.png)
-
-     ![KB4559004 Issue 001 Preview](../../media/ag02-deploy.png)
-
-    You can also directly set the following reg keys: 
-    
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 3457697930 /t REG_DWORD /d 1 
-    ```
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 94539402 /t REG_DWORD /d 1 
-    ```
-    Then, run this PowerShell command: 
-    
-    ```powershell
-    Get-ScheduledTask -TaskName "ReconcileFeatures" -TaskPath "\Microsoft\Windows\Flighting\FeatureConfig\" | Start-ScheduledTask 
-    ```
-
-3.  Select **Microsoft Defender Application Guard** under Windows Features and
+2.  Select **Microsoft Defender Application Guard** under Windows Features and
     select **OK**. Enabling the Application Guard feature will prompt a system
-    reboot. You can choose to reboot now or after step 4.
+    reboot. You can choose to reboot now or after step 3.
 
     ![Windows Features dialog box showing AG](../../media/ag03-deploy.png)
     
@@ -87,7 +68,7 @@ For detailed system requirements, refer to [System requirements for Microsoft De
     Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard 
     ```
 
-4.  Look for the Microsoft Defender Application Guard in Managed Mode group
+3.  Look for the Microsoft Defender Application Guard in Managed Mode group
     policy located at **Computer Configuration\\Administrative
     Templates\\Windows Components\\Microsoft Defender Application Guard**. Turn this policy on by setting the value under Options as **2** or **3** then
     selecting **OK** or **Apply**.
@@ -101,7 +82,7 @@ For detailed system requirements, refer to [System requirements for Microsoft De
     <br>Value: **2**
 
 
-5.  Reboot the system.
+4.  Reboot the system.
 
 ### Set Diagnostics & feedback to send full data
 
