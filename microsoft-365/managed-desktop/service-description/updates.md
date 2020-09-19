@@ -50,16 +50,15 @@ How update deployment works:
 
 
 <table>
-<tr><th colspan="5">Update deployment settings</th></tr>
-<tr><th>Update type</th><th>Test</th><th>First</th><th>Fast</th><th>Broad</th></tr>
-<tr><td>Quality updates for operating system</td><td>0 days</td><td>0 days</td><td>0 days</td><td>3 days</td></tr>
-<tr><td>Feature updates for operating system</td><td>0 days</td><td>30 days</td><td>60 days</td><td>90 days</td></tr>
-<tr><td>Drivers/firmware</td><td colspan="4">Follows the schedule for quality updates</td></tr>
-<tr><td>Anti-virus definition</td><td colspan="4">Updated with each scan</td></tr>
-<tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4">Follows Office's Current Channel
+    <tr><th colspan="5">Update deployment settings</th></tr>
+    <tr><th>Update type</th><th>Test</th><th>First</th><th>Fast</th><th>Broad</th></tr>
+    <tr><td>Quality updates for operating system</td><td>0 days</td><td>0 days</td><td>0 days</td><td>3 days</td></tr>
+    <tr><td>Feature updates for operating system</td><td>0 days</td><td>30 days</td><td>60 days</td><td>90 days</td></tr>
+    <tr><td>Drivers/firmware</td><td colspan="4">Follows the schedule for quality updates</td></tr>
+    <tr><td>Anti-virus definition</td><td colspan="4">Updated with each scan</td></tr>
+    <tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">Learn more</a></td></tr>
+    <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">Learn more</a></td></tr>
 </table>
-
-For more information about Current Channel for Microsoft 365 Apps for enterprise, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 >[!NOTE]
 >These deferral periods are intentionally designed to ensure high security and performance standards for all users. Furthermore, based on data gathered across all Microsoft Managed Desktop devices and the varying scope and impact of updates, Microsoft Managed Desktop reserves flexibility to modify the length of the above deferral periods for any and all deployment groups on an ad hoc basis.
