@@ -127,47 +127,21 @@ For more information, see the "API throttling" section in [Office 365 Management
 
 ## FAQs for Advanced Audit
 
-**Where can I access Advanced Audit?**
-
-After Advanced Audit is rolled out to your organization, you will be able to create audit log retention policies and search for MailItemsAccessed audit records using the Audit log search tool in the [Security & Compliance Center](https://protection.office.com). We're working to roll out Advanced Audit to the [Microsoft 365 compliance center](https://compliance.microsoft.com) in the coming weeks.
-
 **Does every user need an E5 license to benefit from Advanced Audit?**
 
 To benefit from user-level Advanced Audit capabilities, a user needs to be assigned an E5 license. There are some capabilities that will check for the appropriate license to expose the feature for the user. For example, if you're trying to retain the audit records for a user who isn't assigned an E5 license for longer than 90 days, the system will return an error message.
-
-**Why don't I see Advanced Audit in my organization, even though we have an E5 subscription and users that are assigned E5 licenses?**
-
-It's possible that Advanced Audit features (such as the ability to create audit log retention policies and the logging of crucial audit records) aren't available in your organization, even with the correct licensing in place. If this is happening to you, it's because the Advanced Audit package hasn't been rolled out to your organization yet. This is a temporary licensing backfill issue, which should be resolved for affected organizations soon. To mitigate this issue, please perform the following steps for each E5 user:
-
-1. In the Microsoft 365 admin center, go to **Users > Active users**, and then select a user.
-
-2. On the user properties flyout page, click **Licenses and Apps**.
-
-3. Expand the **Apps** section, and then do one of the following things:
-
-   a. If the **Microsoft 365 Advanced Auditing** checkbox is not selected, select it, and then click **Save changes.** Audit records for MailItemsAccessed actions for this user should be searchable within 24 hours.
-
-   b. If the **Microsoft 365 Advanced Auditing** checkbox is selected, clear it, and then click **Save changes.** See step 4.
-
-4. If you cleared the checkbox in step 3, wait 60 minutes, and then repeat step 3a to enable the Microsoft 365 Advanced Auditing app.
-
-For organizations that assign licenses to groups of users by using group-based licensing, you have to turn off the licensing assignment for Microsoft 365 Advanced Auditing for the group. After you save your changes, verify that Microsoft 365 Advanced Auditing is turned off for the group. Then turn the licensing assignment for the group back on. For instructions about group-based licensing, see [Assign licenses to users by group membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).
-
-**What happens if my organization was in the private preview for one-year retention of audit records?**
-
-Your audit retention policies from the preview program will persist as long as you don't override and change them with custom audit retention policies.
-
-**What if my organization wants to retain audit logs for longer than one year?**
-
-We're exploring options for how and if we can provide longer retention periods for audit records. You can provide any feedback about longer retention of audit records at [Office 365 User Voice](https://office365.uservoice.com/forums/289138-office-365-security-compliance?category_id=137187).
 
 **My organization has an E5 subscription, do I need to do anything to get access to audit records for crucial events?**
 
 For eligible customers, there is no action to get access to crucial auditing events. However, as previously explained in this topic, latency caused by the licensing backfill issue may prevent audit records for crucial events from being returned in an audit log search. If this happens, follow the instructions in the previous FAQ about the temporary licensing backfill issue.
 
-**Are you planning to release additional crucial events this year?**
+**When will the new 10-year audit log retention add-on license be available?**
 
-Yes. We plan to continually release new events that are crucial to investigations. We will post information about these new events in the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+The new 10-year audit log retention add-on will be available for purchase by customers with E5 subscriptions in early 2021.
+
+**What happens to my organization's audit log data if I create 10-year audit log retention policy the feature is released to general availability but before the required add-on license is available in early 2021?**
+
+Any audit log data covered by a 10-year audit log retention policy that you create after general availability will be retained for 10 years. When the 10-year audit log retention add-on license is available in early 2021, you will need to purchase add-on licenses for users who's audit data is being retained by an existing 10-year audit retention policy. Also, once the add-on license is available in early 2021, the appropriate licensing will be enforce when you create new 10-year audit log retention policies.
 
 **Are the new events in Advanced Audit available in the Office 365 Management Activity API?**
 
