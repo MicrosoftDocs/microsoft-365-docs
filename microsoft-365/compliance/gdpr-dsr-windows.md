@@ -4,7 +4,7 @@ description: Learn how to use Microsoft products, services, and admin tools to f
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 localization_priority: Priority
 ROBOTS: NOINDEX, NOFOLLOW
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

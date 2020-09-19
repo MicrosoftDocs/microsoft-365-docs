@@ -37,7 +37,7 @@ The following overview explains the process of using a data connector to archive
 
 ## Before you begin
 
-- Create a Globanet Merge1 account by accepting the terms and conditions for the Symphony connector. To do this, contact [Globanet Customer Support](https://globanet.com/contact-us). You need to sign into this account when you create the connector in Step 1.
+- Create a Globanet Merge1 account for Microsoft connectors. To do this, contact [Globanet Customer Support](https://globanet.com/ms-connectors-contact). You need to sign into this account when you create the connector in Step 1.
 
 - The user who creates the Symphony connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. By default, this role is not assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
@@ -57,13 +57,13 @@ The first step is to access to the **Data Connectors** page in the Microsoft 365
 
 ## Configure the Symphony connector on the Globanet Merge1 site
 
-The second step is to configure the Symphony connector on the Merge1 site. For information about configuring  the Symphony connector in the Globanet Merge1 site, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Symphony%20User%20Guide%20.pdf).
+The second step is to configure the Symphony connector on the Merge1 site. For information about configuring  the Symphony connector on the Globanet Merge1 site, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Symphony%20User%20Guide%20.pdf).
 
 After you click **Save & Finish**, you are returned to the Microsoft 365 compliance center, to the **User mapping** page of the connector wizard.
 
 ## Step 3: Map users and complete the connector setup
 
-To map users and complete the connector set up in the Microsoft 365 compliance center, follow these steps:
+To map users and complete the connector setup in the Microsoft 365 compliance center, follow these steps:
 
 1. On the **Map external users to Microsoft 365 users** page, enable automatic user mapping. The Symphony items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user’s mailbox.
 

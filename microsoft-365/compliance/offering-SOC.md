@@ -3,7 +3,7 @@ title: Service Organization Controls (SOC)
 description: Microsoft cloud services comply with Service Organization Controls standards for operational security.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

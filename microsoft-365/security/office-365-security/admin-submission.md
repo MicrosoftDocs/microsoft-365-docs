@@ -73,7 +73,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ### Send a suspect URL to Microsoft
 
-1. In the **Object type** section, select **URL**. In the box that appears, enter the full URL (for example, <https://www.fabrikam.com/marketing.html>).
+1. In the **Object type** section, select **URL**. In the box that appears, enter the full URL (for example, `https://www.fabrikam.com/marketing.html`).
 
 2. In the **Reason for submission** section, select one of the following options:
 
