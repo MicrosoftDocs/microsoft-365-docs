@@ -4,6 +4,7 @@ description:
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
@@ -28,7 +29,7 @@ The **Top issues** section details specific detected issues that affect at least
     - Critical errors, which occur when Windows has encountered an issue it can't recover from
 - The number of devices affected by the same issue
 - The percentage of managed devices that number represents
-- The total count of occurences of the specific issue
+- The total count of occurrences of the specific issue
 - The software component that appears to be the source of the problem
 - The category of the detected problem:
     - Browser (Edge, Chrome, IE)
