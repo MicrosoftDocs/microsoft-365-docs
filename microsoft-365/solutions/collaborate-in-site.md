@@ -38,7 +38,7 @@ To set External collaboration settings
 1. Log in to Microsoft Azure at [https://portal.azure.com](https://portal.azure.com).
 2. In the left navigation, click **Azure Active Directory**.
 3. Select **External Identities** and click on **External collaboration settings**.
-4. In the **Guest invite settings** pane, Ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
+4. In the **Guest invite settings** pane, ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
 5. If you made changes, click **Save**.
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
@@ -135,4 +135,3 @@ To invite guests to a group
 [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)
 
 [Create a B2B extranet with managed guests](b2b-extranet.md)
-
