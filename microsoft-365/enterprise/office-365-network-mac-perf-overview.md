@@ -101,17 +101,30 @@ The overview page also shows the network assessment for the customer as a weight
 
 ![Network assessment](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
+You can view a table view of the locations where they can be filtered, sorted, and edited in the locations tab. Locations with specific recommendations may also include an estimated potential latency improvement. This is calculated by taking the median latency of your organization users at the location and subtracting the median latency for all organizations in the same city.
+
+![Network insights locations](../media/m365-mac-perf/m365-mac-perf-locations.png)
+
 ## Specific office location network performance summary and insights
 
 Selecting an office location opens a location-specific summary page showing details of the network egress that has been identified from measurements for that office location.
 
 ![Network insights details by location](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
 
-The office location summary page additionally shows the location's network assessment, network assessment history, a comparison of this location's assessment to other customers in the same city, and a list of specific insights and recommendations that you can undertake to improve network performance and reliability. Locations with specific recommendations may also include an estimated potential latency improvement.
+A map of the perimeter network for your organization users at the location is shown with some or all of these elements:
+
+- **Office location** - The office location for the page you are looking at
+- **Network perimeter** - The location of the source IP Address for connections from the office location. This depends on the accuracy of geo-IP location databases
+- **Exchange optimal service front door** - One of the recommended Exchange service front doors that users in this office location should connect to
+- **Exchange sub-optimal front door** - An Exchange service front door that users are connected to, but is not recommended
+- **SharePoint optimal service front door** - One of the recommended SharePoint service front doors that users in this office location should connect to
+- **SharePoint sub-optimal service front door** - A SharePoint service front door that users are connected to, but is not recommended
+- **DNS recursive resolver server** - The location from a geo IP database of the detected DNS recursive resolver used for Exchange Online (if available)
+- **Your proxy server** - The location from a geo IP database of the detected proxy server (if avaiable) 
+
+The office location summary page additionally shows the location's network assessment, network assessment history, a comparison of this location's assessment to other customers in the same city, and a list of specific insights and recommendations that you can undertake to improve network performance and reliability.
 
 Comparisons between customers in the same city are based on the expectation that all customers have equal access to network service providers, telecommunications infrastructure, and nearby Microsoft network points of presence.
-
-![Network insights locations](../media/m365-mac-perf/m365-mac-perf-locations.png)
 
 The details tab on the office location page shows the specific measurement results that were used to come up with any insights, recommendations, and the network assessment. This is provided so that network engineers can validate the recommendations and factor in any constraints or specifics in their environment.
 
