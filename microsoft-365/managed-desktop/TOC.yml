@@ -106,6 +106,8 @@
               href: get-started/edge-browser-app.md
             - name: Microsoft 365 Apps for Enterprise
               href: get-started/m365-apps.md
+            - name: Microsoft Teams
+              href: get-started/teams.md
     - name: Working with Microsoft Managed Desktop
       href: working-with-managed-desktop/index.md
       items: 

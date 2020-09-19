@@ -3,7 +3,7 @@ title: "Microsoft 365 Network Insights (preview)"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/21/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -81,7 +81,7 @@ This insight will be displayed if the network insights service detects that user
 
 This insight is abbreviated as "Routing" in some summary views.
 
-![Non-optimal front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
+![Non-optimal EXO front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
 ### What does this mean?
 
@@ -97,7 +97,7 @@ This insight will be displayed if the network insights service detects that user
 
 This insight is abbreviated as "Afd" in some summary views.
 
-![Non-optimal front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+![Non-optimal SPO front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
 
 ### What does this mean?
 
@@ -168,7 +168,7 @@ Enable office location network connectivity visibility if you have not already d
 
 ## Related topics
 
-[Network performance recommendations in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
+[Network connectivity in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 network assessment (preview)](office-365-network-mac-perf-score.md)
 
