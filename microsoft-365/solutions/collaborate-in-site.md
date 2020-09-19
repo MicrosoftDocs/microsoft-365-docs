@@ -32,7 +32,7 @@ Check the External collaboration settings to ensure that sharing with guests is 
 
 ![Screenshot of Azure Active Directory External collaboration Settings page](../media/azure-ad-organizational-relationships-settings.png)
 
-To set External collaboration settings
+To set external collaboration settings:
 
 
 1. Log in to Microsoft Azure at [https://portal.azure.com](https://portal.azure.com).
