@@ -34,6 +34,8 @@ landingContent:
             url: protect-information.md#prevent-data-loss
           - text: Govern your data
             url: manage-information-governance.md
+          - text: Solution: Information protection for data privacy regulations
+            url: ../solutions/information-protection-deploy.md
           - text: "Learning path: Manage information protection and governance"
             url: /learn/paths/m365-compliance-information
 
@@ -92,5 +94,3 @@ landingContent:
         links:
           - text: Information protection for data privacy regulations
             url: ../solutions/information-protection-deploy.md
-          - text: Secure collaboration with teams
-            url: ../solutions/setup-secure-collaboration-with-teams.md
