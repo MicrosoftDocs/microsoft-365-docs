@@ -49,13 +49,13 @@ You can also specify how long to retain audit records that match the policy and 
 
 Advanced Audit helps organizations to conduct forensic and compliance investigations by providing access to crucial events such as when mail items were accessed, or when mail items were replied to and forwarded, and when and what a user searched for in Exchange Online and SharePoint Online. These crucial events can help you investigate possible breaches and determine the scope of compromise.  Advanced Auditing provides the following crucial events:
 
-- [MailItemsAccessed](#MailItemsAccessed)
+- [MailItemsAccessed](#mailItemsAccessed)
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#SearchQueryInitiatedExchange)
+- [SearchQueryInitiatedExchange](#searchQueryInitiatedExchange)
 
-- [SearchQueryInitiatedSharePoint](#SearchQueryInitiatedSharePoint)
+- [SearchQueryInitiatedSharePoint](#searchQueryInitiatedSharePoint)
 
 ### MailItemsAccessed
 
@@ -141,7 +141,7 @@ The new 10-year audit log retention add-on will be available for purchase by cus
 
 **What happens to my organization's audit log data if I create 10-year audit log retention policy the feature is released to general availability but before the required add-on license is available in early 2021?**
 
-Any audit log data covered by a 10-year audit log retention policy that you create after general availability will be retained for 10 years. When the 10-year audit log retention add-on license is available in early 2021, you will need to purchase add-on licenses for users who's audit data is being retained by an existing 10-year audit retention policy. Also, once the add-on license is available in early 2021, the appropriate licensing will be enforce when you create new 10-year audit log retention policies.
+Any audit log data covered by a 10-year audit log retention policy that you create after general availability will be retained for 10 years. When the 10-year audit log retention add-on license is available in early 2021, you will need to purchase add-on licenses for users who's audit data is being retained by an existing 10-year audit retention policy. Also, once the add-on license is available in early 2021, the appropriate licensing will be enforced when you create new 10-year audit log retention policies.
 
 **Are the new events in Advanced Audit available in the Office 365 Management Activity API?**
 
