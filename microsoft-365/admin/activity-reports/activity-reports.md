@@ -53,9 +53,8 @@ Watch this video for on overview: on how you can use the reports:
 
 ::: moniker-end
 
-   
-2. Select **Select a report** at the top of the dashboard to select from a list of all available reports. Or, select an at-a-glance activity widget for a service (such as email or OneDrive) to see more information. <br/>![The Usage dashboard](../../media/usage-report-dashboard.png)
-  
+2. Click on the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. In there different reports for the service are provided in tabs. <br/>![The Usage dashboard](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+
 ## Who can see reports
 
 People who have the following permissions:
@@ -136,13 +135,25 @@ Depending on your subscription, here are the available reports.
 
 ::: moniker range="o365-worldwide"
 
-- [Microsoft Teams user activity](microsoft-teams-user-activity.md)
+- [Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Microsoft Teams device usage](microsoft-teams-device-usage.md)
+- [Microsoft Teams user activity for US Government](microsoft-teams-user-activity.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Microsoft Teams device usage for US Government](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 
