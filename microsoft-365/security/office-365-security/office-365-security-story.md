@@ -65,12 +65,14 @@ What makes adding ATP plans an advantage to pure EOP threat management can be di
  - investigating
  - responding
 
-starting with **[Exchange Online Protection](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-21vianet&branch=tp_EOPOverview)**:
+starting with **Exchange Online Protection**:
 <p>
 
 |Prevent/Detect  |Investigate  |Respond  |
 |---------|---------|---------|
 | Technologies include:<ul><li>spam</li><li>phish</li><li>malware</li><li>bulk mail</li><li>spoof intelligence</li><li>impersonation detection</li><li>Admin Quarantine</li><li>Admin and user submissions of False Positives and False Negatives</li><li>Allow/Block for URLs and Files</li><li>Reports</li></u1>|<li>Audit log search</li><li>Message Trace</li>|<li>Zero-hour Auto-Purge (ZAP)</li><li>Refinement and testing of Allow and Block lists</li>|
+
+If you want to dig in to EOP, **[jump to this article](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-21vianet&branch=tp_EOPOverview)**.
 
 Because these products are cumulative, if you evaluate ATP P1 and decide to subscribe to it, you'll add these abilities.
 
@@ -96,7 +98,7 @@ So, ATP P2 expands on the ***investigation and response*** side of the house, an
 
 In ATP P2, the primary hunting tool is called **Threat Explorer** rather than Real-time detections. If you see Threat Explorer when you navigate to the Security center, you're in ATP P2.
 
-To get into the details of ATP P1 and P2, [jump to this article](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide).
+To get into the details of ATP P1 and P2, **[jump to this article](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)**.
 
 > [!TIP]
 > EOP and ATP are also different when it comes to end-users. In EOP and ATP P1, the focus is *awareness*, and so those two services include the *Report message Outlook add-in* so users can report emails they find suspicious, for further analysis. <p> In ATP P2 (which contains everything in EOP and P1), the focus shifts to *further training* for end-users, and so the Security Operations Center has access to a powerful *Threat Simulator* tool, and the end-user metrics it provides.
