@@ -36,7 +36,7 @@ A score value is assigned at three levels:
 
 3. **Assessment score**: this score is the sum of your control scores. It is calculated using action scores. Each Microsoft action and each improvement action managed by your organization is counted once, regardless of how often it is referenced in a control.
 
-The overall compliance score is calculated using action scores, where each Microsoft action is counted once, each technical action you manage is counted once, and each non-technical action you manage is counted once per group. This logic is designed to provide the most accurate accounting of how actions are implemented and tested in your organization. You may notice that this can cause your overall compliance score to differ from the average of your assessment scores.
+The overall compliance score is calculated using action scores, where each Microsoft action is counted once, each technical action you manage is counted once, and each non-technical action you manage is counted once per group. This logic is designed to provide the most accurate accounting of how actions are implemented and tested in your organization. You may notice that this can cause your overall compliance score to differ from the average of your assessment scores. Read more below on how [actions are scored](#action-types-and-points).
 
 ## Initial score based on Microsoft 365 data protection baseline
   
@@ -69,10 +69,18 @@ Both types of actions have points that count toward your overall score when comp
 
 Actions are grouped by whether they are technical or non-technical in nature. The scoring impact of action type differs.
 
-**Technical actions** are implemented by interacting with the technology of a solution (for example, changing a configuration). The points for technical actions are granted for each instance of the action across your organization.
+- **Technical actions** are implemented by interacting with the technology of a solution (for example, changing a configuration). The points for technical actions are granted once per action, regardless of how many groups it belongs to.
 
-**Non-technical actions** are managed by your organization and implemented in ways other than working with the technology of a solution. There are two types of non-technical actions: **documentation** and **operational**. The points for these actions are applied to your compliance score at a group level. This means that if a group contains more than one instance of the action, you are only granted the points for one instance of that action.
+- **Non-technical actions** are managed by your organization and implemented in ways other than working with the technology of a solution. There are two types of non-technical actions: **documentation** and **operational**. The points for these actions are applied to your compliance score at a group level. This means that if an action exists in multiple groups, you will receive its point value for each group it belongs to.
 
+**Example of how technical and non-technical actions are scored:**
+
+Let's say you have a technical action worth 3 points that exists in 5 groups, and you have a non-technical action worth 3 points that exists in the same 5 groups. If you successfully implement the technical action, the total number of points you receive is 3. If you successfully implement the non-technical action, the total number of points you receive is 15.
+
+The reason for the scoring difference is because a technical action only needs to be completed once per tenant. In contrast, a non-technical action needs to be completed once per group. This scoring logic is designed to provide the most accurate accounting of how actions are implemented in your organization.
+
+### How score values are determined
+ 
 Actions are assigned a score value based on whether they’re mandatory or discretionary, and whether they’re preventative, detective, or corrective.
 
 ### Mandatory and discretionary actions
