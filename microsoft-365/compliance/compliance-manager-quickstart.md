@@ -30,7 +30,7 @@ Compliance Manager is located in the Microsoft 365 compliance center at https://
 
 The first time you visit Compliance Manager, you'll see a compliance score for your organization. Compliance Manager is already assessing your current Microsoft 365 environment against the data protection baseline. The best way to start getting familiar with Compliance Manger is to understand what it's showing you, its key elements, and how to customize your dashboard.
 
-Our [Compliance Manager overview page](compliance-manager.md) is the best first stop for a comprehensive review of what Compliance Manager is and its key components. You may also want to jump right to key sections of our documentation using the links below:
+Our [Compliance Manager overview page](compliance-manager.md) is the best first stop for a comprehensive review of what Compliance Manager is and how it works. You may also want to jump right to key sections of our documentation using the links below:
 
 - [Understand your compliance score](compliance-manager.md#understanding-your-compliance-score)
 - [Overview of key elements: controls, assessments, templates, and improvement actions](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
@@ -60,5 +60,5 @@ You can also set up automated testing of all or a subset of improvement actions.
 - [Extend a Compliance Manager assessment by adding your own controls and improvement actions](compliance-manager-assessments.md#extend-a-pre-built-assessment)
 - [Create your own custom assessment](compliance-manager-assessments.md#create-your-own-custom-assessment)
 - [Modify an existing template to add or remove controls and actions](compliance-manager-templates.md#modify-a-template)
-- [Set up automated testing of certain improvement actions](compliance-manager-setup.md#set-up-automated-testing)
+- [Set up automated testing of improvement actions](compliance-manager-setup.md#set-up-automated-testing)
 - [Reassign improvement actions to another user](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

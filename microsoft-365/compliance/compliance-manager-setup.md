@@ -128,7 +128,7 @@ To the right of each user’s email address, the **Select** drop-down menu provi
 
 You can export an Excel file containing a list of improvement actions currently assigned to a user.  The report also lists any evidence files uploaded by that user. This information can help you reassign open improvement actions.
 
-The report reflects the improvement action’s status as of its creation date. It’s not a historical report of all previous changes to its status or assignment.  
+The report reflects the improvement action’s status as of its creation date. It’s not a historical report of all previous changes to its status or assignment (learn how to [export a report from your improvement actions page](compliance-manager-improvement-actions.md#export-a-report)).
 
 **Follow the steps below to export a report by user:**
 
@@ -260,7 +260,7 @@ The improvement actions page shows the following data points for each improvemen
     - **Failed low risk** - testing failed, low risk
     - **Failed medium risk** - testing failed, medium risk
     - **Failed high risk** - testing failed, high risk
-    - **Not in scope** – the action is not in scope for the assessment and doesn't impact your score
+    - **Out of scope** – the action is not in scope for the assessment and doesn't impact your score
     - **To be detected** - for manual test, indicates an action has been implemented but not tested; for automated test, indicates an action is waiting for automation result
     - **Could not be detected** - automated status can't be determined
     - **Partially tested** – automated scoring that awards partial points
