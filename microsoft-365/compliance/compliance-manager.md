@@ -30,6 +30,11 @@ What began as the public preview of Compliance Score has evolved into a centrali
 - Our [frequently asked questions](compliance-manager-faq.md) walk you through the evolution in greater detail.
 - Read about GA feature enhancements in [this blog post](https://aka.ms/compliancemanager/GAblog).
 
+Watch the video below to learn how Compliance Manager can help simplify how your organization manages compliance:
+<br>
+<br>
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
+
 ## What is Compliance Manager
 
 [Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that helps you manage your organization’s compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
