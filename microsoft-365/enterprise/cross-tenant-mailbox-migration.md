@@ -86,7 +86,7 @@ Prepare the source tenant:
 
 #### Step-by-step instructions for the target tenant admin
 
-1. Download the SetupCrossTenantRelationshipForTargetTenant.ps1 script for the target tenant setup from the [GitHub repository](https://github.com/microsoft/cross-tenant). 
+1. Download the SetupCrossTenantRelationshipForTargetTenant.ps1 script for the target tenant setup from the [GitHub repository](https://github.com/microsoft/cross-tenant/releases/tag/Preview). 
 2. Save the script (SetupCrossTenantRelationshipForTargetTenant.ps1) to the computer from which you will be executing the script.
 3. Create a Remote PowerShell connection to the Exchange Online target tenant. Again, make sure you have the necessary permissions to run the deployment scripts in order to configure the Azure Key Vault storage and certificate, Move Mailbox application, EXO Migration Endpoint, and the EXO Organization Relationship.
 4. Change the file folder directory to the script location or verify the script is currently saved to the location currently in your Remote PowerShell session.
@@ -168,7 +168,7 @@ The target admin setup is now complete!
 
 3. In either the Microsoft 365 admin center or a Remote PowerShell session, create one or more mail-enabled security groups to control the list of mailboxes allowed by the target tenant to pull (move) from the source tenant to the target tenant. You do not need to populate this group in advance, but at least one group must be provided to run the setup steps (script). Nest groups are not supported. 
 
-4. Download the SetupCrossTenantRelationshipForTargetResource.ps1 script for the source tenant setup from the GitHub repository [here](https://github.com/microsoft/cross-tenant). 
+4. Download the SetupCrossTenantRelationshipForTargetResource.ps1 script for the source tenant setup from the GitHub repository [here](https://github.com/microsoft/cross-tenant/releases/tag/Preview). 
 
 5. Create a Remote PowerShell connection to the source tenant with your Exchange Administrator permissions. Global Admin permissions are not required to configure the source tenant, only the target tenant because of the Azure application creation process.
 
