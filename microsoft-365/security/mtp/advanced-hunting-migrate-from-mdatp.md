@@ -66,11 +66,11 @@ Use this comparison to check how `DeviceAlertEvents` columns map to columns in t
 | `AlertId` | `AlertId` | `AlertId` | Unique identifier for the alert |
 | `Timestamp` | `Timestamp` | `Timestamp` | Date and time when the event was recorded |
 | `DeviceId` |  | `DeviceId` | Unique identifier for the machine in the service |
-| `DeviceName` |  |  | Fully qualified domain name (FQDN) of the device |
+| `DeviceName` |  | `DeviceName` | Fully qualified domain name (FQDN) of the device |
 | `Severity` | `Severity` |  | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert |
 | `Category` | `Category` |  | Type of threat indicator or breach activity identified by the alert |
 | `Title` | `Title` |  | Title of the alert |
-| `FileName` |  |  | Name of the file that the recorded action was applied to |
+| `FileName` |  | `FileName` | Name of the file that the recorded action was applied to |
 | `SHA1` |  | `SHA1` | SHA-1 of the file that the recorded action was applied to |
 | `RemoteUrl` |  | `RemoteUrl` | URL or fully qualified domain name (FQDN) that was being connected to |
 | `RemoteIP` |  | `RemoteIP` | IP address that was being connected to |
@@ -86,22 +86,23 @@ Microsoft Defender ATP queries will work as-is unless they reference the `Device
 
 - Replace `DeviceAlertEvents` with `AlertInfo`.
 - Join the `AlertInfo` and the `AlertEvidence` tables on `AlertId` to get equivalent data. Refer to the comparison to identify how columns generally map.
-- Use `DeviceInfo` or other tables to get `DeviceName` from `DeviceId`
 - Instead of using `ReportId` to check other tables for more information about the event that triggered an alert, parse the `AdditionalFields` column.
 
-The following query uses `DeviceAlertEvents` in Microsoft Defender ATP to get the names of processes that have triggered alerts after accessing _lsass.exe_:
+The following query uses `DeviceAlertEvents` in Microsoft Defender ATP to get the alerts that involve _powershell.exe_:
 
 ```kusto
 DeviceAlertEvents
 | where Timestamp > ago(7d) 
-| where FileName == "lsass.exe"
-| join DeviceEvents on ReportId
-| project AlertId, Title, InitiatingProcessFileName, FileName, DeviceName
+| where AttackTechniques has "PowerShell (T1086)" and FileName == "powershell.exe
 ```
-The following query has been adjusted for use in Microsoft Threat Protection:
+The following query has been adjusted for use in Microsoft Threat Protection. Instead of checking the file name directly from `DeviceAlertEvents`, it joins `AlertEvidence` and checks the file name in that table.
 
 ```kusto
-<TBD>
+AlertInfo 
+| where Timestamp > ago(7d) 
+| where AttackTechniques has "PowerShell (T1086)" 
+| join AlertEvidence on AlertId
+| where FileName == "powershell.exe"
 ```
 
 ## Related topics
@@ -109,4 +110,3 @@ The following query has been adjusted for use in Microsoft Threat Protection:
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Advanced hunting in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-
