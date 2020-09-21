@@ -24,7 +24,7 @@ description: "Learn how to perform implementation and testing on controls in Mic
 
 Improvement actions centralize your compliance activities. Each improvement action gives detailed implementation guidance to help you align with data protection regulations and standards. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the action.
 
-All of your improvement actions are listed on the improvement actions page. Learn more about [how to filter your view of your improvement actions and interpret status states](compliance-manager-setup.md#improvement-actions-page).
+All of your improvement actions are listed on the improvement actions page. Learn more about [viewing your improvement actions](compliance-manager-setup.md#improvement-actions-page).
 
 ## Improvement actions details page
 
@@ -45,7 +45,7 @@ To begin implementation work on an improvement action, you can do the work yours
 - An IT implementer
 - Another employee with responsibility to perform the task
 
-Once you identify the appropriate assignee, be sure they hold a sufficient [role in Compliance Manager](compliance-manager-setup.md#set-user-permissions-and-assign-roles) to perform the work. Then follow the steps below to assign the improvement action:
+Once you identify the appropriate assignee, be sure they hold a sufficient [Compliance Manager role](compliance-manager-setup.md#set-user-permissions-and-assign-roles) to perform the work. Then follow the steps below to assign the improvement action:
 
 1. From the improvement actions details page, select **Edit status** near the upper-left section of the screen.
 
