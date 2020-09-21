@@ -67,7 +67,7 @@ Both types of actions have points that count toward your overall score when comp
 
 ### Technical and non-technical actions
 
-Actions are grouped by whether they are technical or non-technical in nature. The scoring impact of action type differs.
+Actions are grouped by whether they are technical or non-technical in nature. The scoring impact of each action differs by type.
 
 - **Technical actions** are implemented by interacting with the technology of a solution (for example, changing a configuration). The points for technical actions are granted once per action, regardless of how many groups it belongs to.
 
@@ -77,7 +77,7 @@ Actions are grouped by whether they are technical or non-technical in nature. Th
 
 Let's say you have a technical action worth 3 points that exists in 5 groups, and you have a non-technical action worth 3 points that exists in the same 5 groups. If you successfully implement the technical action, the total number of points you receive is 3. If you successfully implement the non-technical action, the total number of points you receive is 15.
 
-The reason for the scoring difference is because a technical action only needs to be completed once per tenant. In contrast, a non-technical action needs to be completed once per group. This scoring logic is designed to provide the most accurate accounting of how actions are implemented in your organization.
+The reason for the scoring difference is because a technical action only needs to be completed once per tenant. In contrast, a non-technical action needs to be completed once per group. This scoring logic is designed to provide the most accurate accounting of how actions are implemented and tested in your organization.
 
 ### How score values are determined
  
