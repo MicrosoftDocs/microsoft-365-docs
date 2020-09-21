@@ -1,5 +1,5 @@
 ---
-title: Threat Explorer and real-time detections
+title: Threat Explorer and Real-time detections
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,20 +15,20 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: Learn about using Explorer and real-time detections in the Security &amp; Compliance Center to investigate and respond to threats effectively and efficiently.
+description: Learn about using Explorer and Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats effectively and efficiently.
 ms.custom: seo-marvel-apr2020
 ---
 
-# Threat Explorer and real-time detections
+# Threat Explorer and Real-time detections
 
-If your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **real-time detections** (formerly *real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
+If your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **Real-time detections** (formerly *Real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
 
 |With ATP Plan 2, you see:|With ATP Plan 1, you see:|
 |---|---|
 |![Threat explorer](../../media/threatmgmt-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
 |
 
-With Explorer (or real-time detections), you have a powerful report that enables your Security Operations team to investigate and respond to threats effectively and efficiently. The report resembles the following image:
+With Explorer (or Real-time detections), you have a powerful report that enables your Security Operations team to investigate and respond to threats effectively and efficiently. The report resembles the following image:
 
 ![Go to Threat management \> Explorer](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
@@ -39,9 +39,9 @@ With this report, you can:
 - [Start an automated investigation and response process from a view in Explorer](#start-automated-investigation-and-response) (ATP Plan 2 only)
 - ... [Investigate malicious email, and more](#more-ways-to-use-explorer-or-real-time-detections)!
 
-## Experience Improvements to Threat Explorer and Real-Time Detections
+## Experience Improvements to Threat Explorer and Real-time detections
 
-As part of improving the hunting process, we have made a few updates to Threat Explorer and Real-Time Detections. These are ‘experience’ improvements, with the focus on making the hunting experience more consistent. These changes are outlined below:
+As part of improving the hunting process, we have made a few updates to Threat Explorer and Real-time detections. These are ‘experience’ improvements, with the focus on making the hunting experience more consistent. These changes are outlined below:
 
 - [Timezone improvements](#timezone-improvements)
 - [Update in the Refresh process](#update-in-the-refresh-process)
@@ -109,9 +109,9 @@ Within the Main grid view, the Details flyout, and the Exported CSV, the connect
 
 ![Connector Details](../../media/Connector_Details.png)
 
-## New features in Threat Explorer and real-time detections
+## New features in Threat Explorer and Real-time detections
 
-Three new features added into Threat Explorer and real-time detections:
+Three new features added into Threat Explorer and Real-time detections:
 
 - [Preview email header and download email body](#preview-email-header-and-download-email-body)
 - [Email timeline](#email-timeline)
@@ -123,7 +123,7 @@ These new features are outlined below.
 
 The ability to preview an email header and download the email body are new features available in Threat Explorer. Admins will be able to analyze downloaded headers/email messages for threats. Because downloading email messages can risk the exposure of information, this process is controlled by roles-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails and preview headers in all-email messages view.
 
-But Explorer (and real-time detections) also adds fresh new fields designed to give you a more complete picture of where your email messages land. Part of the goal of this change is to make hunting easier for Security Ops people, but the net result is knowing the location of problem email messages at a glance.
+But Explorer (and Real-time detections) also adds fresh new fields designed to give you a more complete picture of where your email messages land. Part of the goal of this change is to make hunting easier for Security Ops people, but the net result is knowing the location of problem email messages at a glance.
 
 How is this done? Delivery Status is now broken out into two columns:
 
@@ -172,9 +172,9 @@ Also, you will now be able to export reports for URL clicks to Microsoft Excel i
 
 When you click on a URL in the list, you'll see a new Export button on the fly-out panel. Use this button to move data to an Excel spreadsheet for easier reporting.
 
-You can get to the same location in the real-time detections report as follows:
+You can get to the same location in the Real-time detections report as follows:
 
-**Explorer** \> **Real-time Detections** \> **View Phish** \> **URLs** \> **Top URLs or Top Clicks** \> **Click on any record to open URL flyout** \> **Navigate to the Clicks Tab.**
+**Explorer** \> **Real-time detections** \> **View Phish** \> **URLs** \> **Top URLs or Top Clicks** \> **Click on any record to open URL flyout** \> **Navigate to the Clicks Tab.**
 
 > [!TIP]
 > Network Message ID maps the click back to specific mails when you search through Explorer or associated 3rd party tools via Network Message ID. Searching through the Network Message ID will give admins the specific email associated with a click result. On export having, the correlating identification of Network Message ID makes for quicker and more powerful analysis.
@@ -183,7 +183,7 @@ You can get to the same location in the real-time detections report as follows:
 
 ## See malware detected in email by technology
 
-Suppose you want to see malware detected in email, by Microsoft 365 technology. To do this, use the [Email > Malware](threat-explorer-views.md#email--malware) view of Explorer (or real-time detections).
+Suppose you want to see malware detected in email, by Microsoft 365 technology. To do this, use the [Email > Malware](threat-explorer-views.md#email--malware) view of Explorer (or Real-time detections).
 
 1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
@@ -207,7 +207,7 @@ The report refreshes to show the results malware detected in email, using the te
 
 Suppose that you want to see phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. Identifying URLs that were clicked requires [ATP Safe links](atp-safe-links.md) to be configured. Make sure that you have set up [ATP Safe Links policies](set-up-atp-safe-links-policies.md) for time-of-click protection and logging of click verdicts by ATP Safe Links.
 
-To review phish URLs in messages and clicks on URLs in phish messages, use the [Email > Phish](threat-explorer-views.md#email--phish) view of Explorer (or real-time detections).
+To review phish URLs in messages and clicks on URLs in phish messages, use the [Email > Phish](threat-explorer-views.md#email--phish) view of Explorer (or Real-time detections).
 
 1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
@@ -252,7 +252,7 @@ Within the Email or URL flyouts, Top Clicks as well as within our filtering expe
 
 ## Review email messages reported by users
 
-Suppose that you want to see email messages that users in your organization have reported as Junk, Not Junk, or Phishing by using the [Report Message add-in for Outlook and Outlook on the web](enable-the-report-message-add-in.md). To do this, use the [Email > Submissions](threat-explorer-views.md#email--submissions) view of Explorer (or real-time detections).
+Suppose that you want to see email messages that users in your organization have reported as Junk, Not Junk, or Phishing by using the [Report Message add-in for Outlook and Outlook on the web](enable-the-report-message-add-in.md). To do this, use the [Email > Submissions](threat-explorer-views.md#email--submissions) view of Explorer (or Real-time detections).
 
 1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
@@ -277,24 +277,24 @@ The report refreshes to show data about email messages that people in your organ
 
 For details on this, see [Example: A security administrator triggers an investigation from Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
-## More ways to use Explorer (or real-time detections)
+## More ways to use Explorer (or Real-time detections)
 
-In addition to the scenarios outlined in this article, you have many more reporting options available with Explorer (or real-time detections).
+In addition to the scenarios outlined in this article, you have many more reporting options available with Explorer (or Real-time detections).
 
 - [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
 - [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
-- [Get an overview of the views in Threat Explorer (and real-time detections)](threat-explorer-views.md)
+- [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md)
 - [Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
 
 ## Required licenses and permissions
 
-You must have [Office 365 ATP](office-365-atp.md) to get Explorer or real-time detections.
+You must have [Office 365 ATP](office-365-atp.md) to get Explorer or Real-time detections.
 
 - Explorer is included in Office 365 ATP Plan 2.
-- The real-time detections report is included in Office 365 ATP Plan 1.
-- Plan to assign licenses for all users who should be protected by Office 365 ATP. (Explorer or real-time detections shows detection data for licensed users.)
+- The Real-time detections report is included in Office 365 ATP Plan 1.
+- Plan to assign licenses for all users who should be protected by Office 365 ATP. (Explorer or Real-time detections shows detection data for licensed users.)
 
-To view and use Explorer or real-time detections, you must have appropriate permissions, such as those granted to a security administrator or security reader.
+To view and use Explorer or Real-time detections, you must have appropriate permissions, such as those granted to a security administrator or security reader.
 
 - For the Security &amp; Compliance Center, you must have one of the following roles assigned:
 
@@ -314,11 +314,11 @@ To learn more about roles and permissions, see the following resources:
 - [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Feature permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
-## Some differences between Threat Explorer and real-time detections
+## Some differences between Threat Explorer and Real-time detections
 
-- The **real-time detections** report is available in Office 365 ATP Plan 1, whereas **Threat Explorer** is available in Office 365 ATP Plan 2.
-- The **real-time detections** report allows you to view detections in real-time. **Threat Explorer** does this as well, but also allows you to view additional details for a given attack.
-- An **All email** view is available in **Threat Explorer** (and is not in the **real-time detections** report).
+- The **Real-time detections** report is available in Office 365 ATP Plan 1, whereas **Threat Explorer** is available in Office 365 ATP Plan 2.
+- The **Real-time detections** report allows you to view detections in real-time. **Threat Explorer** does this as well, but also allows you to view additional details for a given attack.
+- An **All email** view is available in **Threat Explorer** (and is not in the **Real-time detections** report).
 - More filtering capabilities and available actions are included in **Threat Explorer**.
 
 For more details, see [Office 365 ATP Service Description: Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
