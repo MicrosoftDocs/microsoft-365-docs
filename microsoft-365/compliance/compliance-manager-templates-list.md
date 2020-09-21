@@ -77,7 +77,7 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - [California Consumer Privacy Act (CCPA)](offering-ccpa.md) (Microsoft 365)
 - Canada - Breach of Security Safeguards Regulations (Microsoft 365)
 - Canada - British Columbia - Information Privacy & Security - FOIPPA (Microsoft 365)
-- [Canada - Office of the Superintendents of Financial Institutions](offering-osfi-canada.md) (Microsoft 365)
+- [Canada - Office of the Superintendent of Financial Institutions](offering-osfi-canada.md) (Microsoft 365)
 - Canada - Personal Health Information Protection Act (PHIPA) (Microsoft 365)
 - Canada - Personal Information Protection and Electronic Documents Act (PIPEDA) (Microsoft 365)
 - Canada Cybersecure (Microsoft 365)
