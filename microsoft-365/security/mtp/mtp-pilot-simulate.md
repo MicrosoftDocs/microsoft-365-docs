@@ -104,9 +104,9 @@ To see the Automated Incident and Response feature in action, keep the notepad.e
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft Microsoft 365 Security Center portal. 
+Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft 365 Security Center portal. 
 
-1.	Open the [Microsoft Microsoft 365 Security Center portal](https://security.microsoft.com/incidents) incident queue from any device.
+1.	Open the [Microsoft 365 Security Center portal](https://security.microsoft.com/incidents) incident queue from any device.
 
 2.	Navigate to **Incidents** from the menu. 
 
@@ -225,7 +225,7 @@ Click the username to open the user’s profile page where further investigation
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Navigate back to the incident in the Microsoft Microsoft 365 Security Center portal. The **Investigations** tab in the **Incident** page shows the automated investigations that were triggered by Azure ATP and Microsoft Defender ATP. The screenshot below displays only the automated investigation triggered by Microsoft Defender ATP. By default, Microsoft Defender ATP automatically remediates the artifacts found in the queue which requires remediation.
+Navigate back to the incident in the Microsoft 365 Security Center portal. The **Investigations** tab in the **Incident** page shows the automated investigations that were triggered by Azure ATP and Microsoft Defender ATP. The screenshot below displays only the automated investigation triggered by Microsoft Defender ATP. By default, Microsoft Defender ATP automatically remediates the artifacts found in the queue which requires remediation.
 
 ![Screenshot of automated investigations related to the incident](../../media/mtp/fig14.png)
 
