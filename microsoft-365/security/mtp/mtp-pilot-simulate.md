@@ -250,7 +250,7 @@ After the investigation is complete and confirmed to be remediated, close the in
 
 Click **Manage incident**. Set the status to **Resolve incident** and select the relevant classification.
 
-Once the incident is resolved, it will close all of the associated alerts in Microsoft Threat Protection and in the related portals.
+Once the incident is resolved, it will close all of the associated alerts in Microsoft 365 Security Center and in the related portals.
 
 ![Screenshot of the incidents page with the open Manage incident panel where you can click the switch to resolve incident](../../media/mtp/fig16.png) 
 
