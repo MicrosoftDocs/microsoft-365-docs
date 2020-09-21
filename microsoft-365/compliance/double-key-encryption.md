@@ -146,10 +146,10 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
    ![Visual Studio Code master branch](../media/dke-vscode-master.png)
 
-6. Select the word **master,** and then select **public_preview** from the list of branches.
+6. Select the word **master** from the list of branches.
 
    > [!IMPORTANT]
-   > Selecting the public_preview branch ensures that you have the correct files to build the project. If you do not choose the correct branch your deployment will fail.
+   > Selecting the master branch ensures that you have the correct files to build the project. If you do not choose the correct branch your deployment will fail.
 
 You now have your DKE source repository set up locally. Next, [modify application settings](#modify-application-settings) for your organization.
 
@@ -319,11 +319,11 @@ Use the following instructions to build the DKE project locally:
 
    1. Choose **Create tasks.json from template**.
 
-   ![Create tasks.json file from template for DKE](../media/dke-createtasksjsonfromtemplate.png)
+      ![Create tasks.json file from template for DKE](../media/dke-createtasksjsonfromtemplate.png)
 
    2. From the list of template types, select **.NET Core**.
 
-   ![Create tasks.json file from template for DKE](../media/dke-tasksjsontemplate.png)
+      ![Create tasks.json file from template for DKE](../media/dke-tasksjsontemplate.png)
 
    3. In the build section, locate the path to the **customerkeystore.csproj** file. If it's not there, add the following line:
 
@@ -357,7 +357,7 @@ To publish the key store, you'll create an Azure App Service instance to host yo
 
 1. In your browser, sign in to the [Microsoft Azure portal](https://ms.portal.azure.com), and go to **App Services** > **Add**.
 
-1. Select your subscription and resource group and define your instance details.
+2. Select your subscription and resource group and define your instance details.
 
     - Enter the hostname of the computer where you want to install the DKE service. Make sure it's the same name as the one defined for the JwtAudience setting in the [**appsettings.json**](#tenant-and-key-settings) file. The value you provide for the name is also the WebAppInstanceName.
 
@@ -367,9 +367,9 @@ To publish the key store, you'll create an Azure App Service instance to host yo
 
    ![Add your App Service](../media/dke-azure-add-app-service.png)
 
-1. At the bottom of the page, select **Review + create**, and then select **Add**.
+3. At the bottom of the page, select **Review + create**, and then select **Add**.
 
-1. Do one of the following to publish your generated keys to Azure:
+4. Do one of the following to publish your generated keys to Azure:
 
     - [Publish via ZipDeployUI](#publish-via-zipdeployui)
     - [Publish via FTP](#publish-via-ftp)
