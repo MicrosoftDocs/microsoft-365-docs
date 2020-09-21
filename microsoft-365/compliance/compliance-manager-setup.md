@@ -61,13 +61,13 @@ To set permissions and assign roles from within the Microsoft 365 compliance cen
 
 8. When you’re done assigning users, select **Done**, then select **Save**, then **Close**.
 
-**More about the Office 365 Secruity & Compliance Center:**
+##### More about the Office 365 Secruity & Compliance Center
 
 Learn more about [permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
 If you don't have access to the Office 365 Security and Compliance Center, or if you need to access the classic version of Compliance Manager in the Microsoft Service Trust Portal,  the Admin settings in the Service Trust Portal provides another way to assign roles ([view instructions](/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud?view=o365-worldwide.md#assigning-compliance-manager-roles-to-users)). Be aware that such roles are more limited in their functionality.
 
-**More about Azure AD:**
+##### More about Azure AD
 
 To assign roles and set permissions in Azure AD, see [Assign administrator and non-administrator roles to users with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
@@ -85,7 +85,6 @@ The table below shows the functions allowed by each role in Compliance Manager. 
 | **Edit test results**| Compliance Manager Assessment | Compliance Administrator | 
 | **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  | 
 | **Assign users**| Global Administrator | Global Administrator | 
-
 
 ## Settings for automated testing and user history
 
@@ -178,7 +177,7 @@ You can reassign improvement actions from one user to another. When you reassign
 The new assignee receives an email that they've been assigned to an improvement action. The email contains a direct link into the improvement action's details page.
  
  > [!NOTE]
-> If you reassign an action that has a pending update, the direct link to the action in the assignee's email will be broken if the update was accepted after reassignment. You can fix this by re-assigning the action to the intended user after the update is accepted. Learn more about [updates to improvement actions](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions) 
+> If you reassign an action that has a pending update, the direct link to the action in the reassignment email will break if the update is accepted after reassignment. You can fix this by re-assigning the action to the user after the update is accepted. Learn more about [updates to improvement actions](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions).
 
 #### Delete user history
 
