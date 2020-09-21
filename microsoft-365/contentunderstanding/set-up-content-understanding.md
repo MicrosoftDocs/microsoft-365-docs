@@ -7,7 +7,7 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: 
-localization_priority: None
+localization_priority: Normal
 description: 'Learn how to set up SharePoint Syntex'
 ---
 
@@ -31,11 +31,12 @@ You must have global administrator or SharePoint administrator permissions to be
 ## To set up SharePoint Syntex
 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational knowledge** section.
+
 2. In the **Organizational knowledge** section, select **Automate content understanding**.<br/>
 
     ![Organizational knowledge setup page](../media/content-understanding/admin-org-knowledge-options.png)</br>
 
-3. On the **Automate SharePoint Syntex** page, click **Get started** to walk you through the setup process.<br/>
+3. On the **Automate SharePoint Syntex** page, click **Get started** to walk through the setup process.<br/>
 
     ![Begin setup](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
@@ -43,7 +44,7 @@ You must have global administrator or SharePoint administrator permissions to be
 4. On the **Configure Form Processing** page, you can choose if you want to let users be able to use AI Builder to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
      For **Which SharePoint libraries should show option to create a form processing model**, you can select:</br>
-    - **All SharePoint libraries** to make it available to all SharePoint libraries in your tenant.</br>
+    - **All SharePoint libraries** to make it available to all SharePoint libraries in your organization.</br>
     - **Only libraries in selected sites**, and then select the sites in which you want to make it available.</br>
     - **No SharePoint libraries** if you currently don't want to make it available to any sites (you can change this after setup).
 </br>
@@ -53,11 +54,10 @@ You must have global administrator or SharePoint administrator permissions to be
 
    > [!Note]
    > Enabling this setting on a SharePoint document library does not affect existing models applied to the library or the ability to apply document understanding models to a library. 
-
     
 5. On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models. </br>
     a. For **Site name**, type the name you want to give your content center site.</br>
-    b. The **Site address** will show the URL for your site, based on what you selected for the site name.</br>
+    b. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, click **Edit**.</br>
 
     > [!Note] 
     > While you can select any supported language, note that SharePoint Syntex models can only be created for English.</br>
@@ -66,42 +66,14 @@ You must have global administrator or SharePoint administrator permissions to be
 
 
     Select **Next**.
+
 6. On the **Finish and review** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
 
+7. On the confirmation page, click **Done**.
 
-
-7. The **SharePoint Syntex activated** page will display, confirming that the system has added your form processing preferences and creating the Content Center site. Select **Done**.
-
-8. You'll be returned to your **Automate SharePoint Syntex** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
+8. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
 
 ## Assign licenses
-
-
-
-For AI Builder to answer positively to users request to create form processing models, several things are required:
-•	AI Builder credits to create and run models. 
-These credits are automatically allocated by AI Builder to the default environment during set-up if the user’s tenant has credits entitled. Entitlement of credits happens if the tenant buys an ICS sku with 300+ seats: In that case 1M AI Builder credits are entitled to the tenant automatically. 
-Note: Tenant admins can also buy AI Builder credits independently if they wish.
-•	A user’s CDS license.
-In the context of SharePoint, the license required is called “Common Data Service for Intelligent Content Service” and is assigned by the SharePoint admin when assigning Intelligent Content Service (ICS) license to users. 
-
-
-Note: AI Builder relies on the credits ever allocated to the default environment to know when to stop allocating. That means if a tenant already manually allocated more than 1M AI Buildler credits in the default environment in the past (before a user ever uses AI Builder from a SharePoint), AI Builder won’t allocate any credit.
-
-
-
-
-Remediation: Buy ICS license with 300 seats to get entitles with 1M AIB credits. 
-If the credits were entitled but the automated credit allocation failed, connect as admin to the Power Platform Admin Center to manually assign AI Builder credits to the default environment. Learn more on Power Platform capacity management.
-
-
-
-
-[Power Platform capacity](https://admin.powerplatform.microsoft.com/resources/capacity)
-
-If the credits were entitled but the automated credit allocation failed, connect as admin to the Power Platform Admin Center to manually assign AI Builder credits to the default environment
-
-[Power Platform admin center](https://admin.powerplatform.microsoft.com)
 
 Once you have configured SharePoint Syntex, you must assign licenses for the users who will be using form processing and document understanding features.
 
@@ -121,8 +93,33 @@ To assign licenses
 
 If you have 300 or more licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits.
 
+
+## AI Builder
+
+For AI Builder to answer positively to users request to create form processing models, several things are required:
+•	AI Builder credits to create and run models. 
+These credits are automatically allocated by AI Builder to the default environment during set-up if the user’s tenant has credits entitled. Entitlement of credits happens if the tenant buys an ICS sku with 300+ seats: In that case 1M AI Builder credits are entitled to the tenant automatically. 
+Note: Tenant admins can also buy AI Builder credits independently if they wish.
+•	A user’s CDS license.
+In the context of SharePoint, the license required is called “Common Data Service for Intelligent Content Service” and is assigned by the SharePoint admin when assigning Intelligent Content Service (ICS) license to users. 
+
+
+Note: AI Builder relies on the credits ever allocated to the default environment to know when to stop allocating. That means if a tenant already manually allocated more than 1M AI Builder credits in the default environment in the past (before a user ever uses AI Builder from a SharePoint), AI Builder won’t allocate any credit.
+
+[Common Data Service (CDS)](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+Remediation: Buy ICS license with 300 seats to get entitles with 1M AIB credits. 
+If the credits were entitled but the automated credit allocation failed, connect as admin to the Power Platform Admin Center to manually assign AI Builder credits to the default environment. Learn more on Power Platform capacity management.
+
+[Power Platform capacity](https://admin.powerplatform.microsoft.com/resources/capacity)
+
+If the credits were entitled but the automated credit allocation failed, connect as admin to the Power Platform Admin Center to manually assign AI Builder credits to the default environment
+
+[Power Platform admin center](https://admin.powerplatform.microsoft.com)
+
+
+
 ## See also
 
 [Overview of the form processing model](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
-
-[Common Data Service (CDS)](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
