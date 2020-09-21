@@ -50,6 +50,17 @@ Welcome to Microsoft Ignite - our first online-only Ignite. We hope to see you i
 > [!NOTE]
 > Not all features are going to be available to everyone right away. If you aren't seeing the new features, [join Targeted Release](manage/release-options-in-office-365.md).
 
+### Multi-tenant management
+
+We've developed a set of features for multi-tenant admins like you to get your job done faster and more efficiently.
+
+- **Your tenants**: Quickly switch between the tenants you manage.
+- **All tenants**: A new page where you can quickly see the health of all your tenants' services, any open service requests, your products and billing, recommended setup tasks, and the number of users in that tenant.
+- **Setup**: The multi-tenant Setup page gives you a list view of the Setup page, but organized for many tenants. You can see which features aren't turned on, which tasks are complete for all tenants, tasks that tenants still need to complete. This view will help you keep track of feature adoption and to make sure the recommended security setup tasks are always done.
+- **Service health**: The service health view shows you if any incidents or advisories are affecting the tenants. It will even tell you how many tenants are affected. Just select an incident to get more information on the overview tab, then switch over to the Tenants affected tab to drill down and support that tenant.
+
+![Service health page for multi-tenant with an incident selected and the Tenants affected tab open. The navigation menu has All tenants, Setup, and Service health as the only options.](../media/MAC-WN-MTinServiceHealth.png)
+
 ### Monitor your most important accounts
 
 You can monitor and track failed or delayed email messages sent to your users who have a high business impact, like your CEO. You track priority accounts by adding users to your priority accounts list in the Microsoft 365 admin center. Add executives, leaders, managers, or other users who have access to sensitive or high priority information.
@@ -85,20 +96,34 @@ We've started rolling out a new Search experience for the admin center, and we c
   - **Documentation**: If we can't find a result for you, we'll try to find some documentation to help. It takes a little longer for the curated list of articles to find a match, so wait a second to let Search find the results. 
   - **Feedback**: Didn't find what you were looking for? Send us feedback from Search. We will add searching functionality for more pages and more features across the admin center.
 
-### Multi-tenant management
+### Microsoft 365 admin app
 
-We've developed a set of features for multi-tenant admins like you to get your job done faster and more efficiently.
+The [Microsoft 365 admin app](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app), which is included with your subscription, lets you manage Microsoft 365 from your mobile device so you can get away from your desk to do every day tasks. In fact, there are over 90 features in the app--and we just added a few more:
 
-- **Your tenants**: Quickly switch between the tenants you manage.
-- **All tenants**: A new page where you can quickly see the health of all your tenants' services, any open service requests, your products and billing, recommended setup tasks, and the number of users in that tenant.
-- **Setup**: The multi-tenant Setup page gives you a list view of the Setup page, but organized for many tenants. You can see which features aren't turned on, which tasks are complete for all tenants, tasks that tenants still need to complete. This view will help you keep track of feature adoption and to make sure the recommended security setup tasks are always done.
-- **Service health**: The service health view shows you if any incidents or advisories are affecting the tenants. It will even tell you how many tenants are affected. Just select an incident to get more information on the overview tab, then switch over to the Tenants affected tab to drill down and support that tenant.
+- **Support for Microsoft Intune's Mobile Application Management and Conditional Access policies**: You can now use your personal device to manage Microsoft 365 of your org has turned Intune's Mobile Application management and conditional access policies.
+- **Message center notifications**: Turn on message center notifications at **Settings** > **Notifications** if you wish to be alerted about new message center posts. Through notifications, we want to ensure you stay informed about important information and events across your tenant.
+- **Billing alerts**: You can also turn on billing notifications at **Settings** > **Notifications** > **{setting text}** if you want to get billing notifications on your device if a subscription or credit card is about to expire.
+- **Dark mode**: Welcome to the dark side of the mobile app. This was one of our most requested features. Go to **Settings** > **Themes** to turn it on.
+- **Report an issue**: You can now report an issue in the app or view issues reported by other admins. Visit **Service health** to check it out.
 
-![Service health page for multi-tenant with an incident selected and the Tenants affected tab open. The navigation menu has All tenants, Setup, and Service health as the only options.](../media/MAC-WN-MTinServiceHealth.png)
+![The Health page in Microsoft 365 admin app with notifications for message center, service health, billing alerts.](../media/MAC-WN-AdminMobileApp.png)
+
+### Remote work collection
+
+In light of the COVID-19 (Novel Coronavirus) outbreak, many business owners are unexpectedly finding themselves with a completely remote work staff. We've created new experiences to help you and your staff get online and working remotely.
+**Remote work essentials** setup is a curated list of all features Microsoft recommends to securely enable remote work and to collaborate effectively. Try it out in **Setup** > **Remote work essentials**.
+
+![Remote work essentials page in Setup with 7 tasks not started.](../media/MAC-WN-RemoteWork.png)
+
+For more information about how to securely allow remote work and a handy web address that's easy to remember and share, go to [aka.ms/remote-business](https://aka.ms/remote-business).
+
+### Usage recommendations for small and medium businesses
+
+Small and medium businesses might get a recommendation on the **Home** page if some of the people in the org aren't using OneNote, Teams, OneDrive, or Office apps. When you view the recommendation, you can quickly email Microsoft training to inactive users to help them get started with the app and to make sure you are getting the full value from your subscriptions.
 
 ### Manage changes with Microsoft Planner
 
-In May, we announced that you'll soon be able to sync Message center posts to Microsoft Planner and now it's available for everyone to use.  You can now create tasks from messages, assign them, and track them to completion. The first time, you select **Planner syncing** you'll need to do some setup to connect to Planner. 
+In May, we announced that you'll soon be able to sync Message center posts to Microsoft Planner and now it's available for everyone to use.  You can now create tasks from messages, assign them, and track them to completion. The first time, you select **Planner syncing** you'll need to connect to the appropriate plan.
 
 ![Message center page with 'planner syncing' highlighted in the command bar next to the preferences button.](../media/MAC-WN-MCPlannerSync.png)
 
