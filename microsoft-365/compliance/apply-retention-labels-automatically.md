@@ -171,6 +171,8 @@ To automatically apply a label by using this option, SharePoint sites and mailbo
 
 For more information about trainable classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md).
 
+> [!TIP]
+> If you use trainable classifiers for Exchange, see the recently released [How to retrain a classifier in content explorer (preview)](classifier-how-to-retrain-content-explorer.md).
 
 ## How long it takes for retention labels to take effect
 
