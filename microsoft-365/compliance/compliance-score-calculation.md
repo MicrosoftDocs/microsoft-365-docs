@@ -75,7 +75,11 @@ Actions are grouped by whether they are technical or non-technical in nature. Th
 
 **Example of how technical and non-technical actions are scored:**
 
-Let's say you have a technical action worth 3 points that exists in 5 groups, and you have a non-technical action worth 3 points that exists in the same 5 groups. If you successfully implement the technical action, the total number of points you receive is 3. If you successfully implement the non-technical action, the total number of points you receive is 15.
+Let's say you have a technical action worth 3 points that exists in 5 groups, and you have a non-technical action worth 3 points that exists in the same 5 groups.
+
+If you successfully implement the technical action, the total number of points you receive is 3. This is because you only need to implement the action once for your tenant. The implementation and test status for a technical actions will show the same in all instances of that action, in every group in which it exists.
+
+If you successfully implement the non-technical action, the total number of points you receive is 15. This is because you need to implement the action in each group. The implementation and test status for the non-technical action will differ across groups because the action is implemented separately within each of its groups.
 
 The reason for the scoring difference is because a technical action only needs to be completed once per tenant. In contrast, a non-technical action needs to be completed once per group. This scoring logic is designed to provide the most accurate accounting of how actions are implemented and tested in your organization.
 
