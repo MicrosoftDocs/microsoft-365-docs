@@ -26,7 +26,7 @@ The Microsoft 365 Admin Center now includes aggregated network connectivity metr
 
 ![Network performance page](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
-You may be asked to join the public preview for this feature on behalf of your organization. Acceptance usualy happend immediately and then you will see the network connectivity page. 
+You may be asked to join the public preview for this feature on behalf of your organization. Acceptance usually happened immediately and then you will see the network connectivity page. 
 
 On navigating to the network connectivity page, you will see an overview pane containing a map of global network performance, a network assessment scoped to the entire tenant, and a list of current issues. To access this page you must be an administrator for the organization within Microsoft 365. The Report Reader administrative role will have read access to this information. To configure locations and other elements of network connectivity an administrator must be part of a server administrator role such as the Service support admin role. From the overview, you can drill down to view specific network performance metrics and issues by location. For more information, see [Network performance overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
@@ -40,7 +40,7 @@ For this option you must have at least two computers running at each office loca
 
 Windows Location Service must be consented on the machines. You can test this by running the **Maps** app and locating yourself. It can be enabled on a single machine with **Settings | Privacy | Location** where the setting _Allow apps to access your location_ must be enabled. Windows Location Services consent can be deployed to PCs using MDM or Group Policy with the setting _LetAppsAccessLocation_.
 
-You do not need to add locations in the Admin Center with this method as they are automatically identified at the city resolution. You cannot show multiple office locations within a city using Windows Location Services. Location information is also rounded to the nearest 300 meters by 300 meters before being uploaded so thatmore  precise location information is not possible to access.
+You do not need to add locations in the Admin Center with this method as they are automatically identified at the city resolution. You cannot show multiple office locations within a city using Windows Location Services. Location information is also rounded to the nearest 300 meters by 300 meters before being uploaded so that more precise location information is not possible to access.
 
 The machines should have Wi-Fi networking rather than an ethernet cable. Machines with an ethernet cable do not have accurate location information.
 
@@ -120,7 +120,7 @@ A map of the perimeter network for your organization users at the location is sh
 - **SharePoint optimal service front door** - One of the recommended SharePoint service front doors that users in this office location should connect to
 - **SharePoint sub-optimal service front door** - A SharePoint service front door that users are connected to, but is not recommended
 - **DNS recursive resolver server** - The location from a geo IP database of the detected DNS recursive resolver used for Exchange Online (if available)
-- **Your proxy server** - The location from a geo IP database of the detected proxy server (if avaiable) 
+- **Your proxy server** - The location from a geo IP database of the detected proxy server (if available) 
 
 The office location summary page additionally shows the location's network assessment, network assessment history, a comparison of this location's assessment to other customers in the same city, and a list of specific insights and recommendations that you can undertake to improve network performance and reliability.
 
