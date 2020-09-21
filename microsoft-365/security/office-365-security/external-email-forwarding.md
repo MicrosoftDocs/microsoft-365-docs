@@ -26,7 +26,10 @@ External forwarding is controlled by the *outbound anti-spam policy* and scoped 
 
 - **Off** – Automatic external forwarding is disabled and will result in a Non-delivery report (NDR) to the end user.
 
-See [Configure outbound spam filtering in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide) for more information on how to configure these settings.
+See [Configure outbound spam filtering in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) for more information on how to configure these settings.
+
+> [!NOTE]
+> Disabling automatic forwarding will also dsable Inbox rules that redirect messages to external addresses.
 
 ## Controlling external email forwarding
 
@@ -37,7 +40,7 @@ Office 365 doesn't allow automatic external forwarding by either Inbox rules or 
 > [!NOTE]
 > Disabling automatic forwarding to external addresses in Office 365 is being rolled out in phases with details communicated via [Message Center](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) posts. To help administrators prepare for these changes have them modify policies ahead of time to ensure there is no disruption to their users.
 
-More information about users that are using automatic forwarding (inbox rules or SMTP forwarding) in your organization can be found in the [auto-forwarded messages report](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide).
+More information about users that are using automatic forwarding (inbox rules or SMTP forwarding) in your organization can be found in the [auto-forwarded messages report](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide&preserve-view=true).
 
 ## How does this policy work with other automatic forwarding controls
 

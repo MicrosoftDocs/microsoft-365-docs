@@ -50,7 +50,7 @@
             - name: Microsoft 365 optimization for China users
               href: microsoft-365-networking-china.md
             - name: Optimizing Microsoft 365 traffic for remote workers with the native Windows 10 VPN client
-              href: https://docs.microsoft.com/en-us/windows/security/identity-protection/vpn/vpn-office-365-optimization
+              href: https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization
         - name: ExpressRoute for Office 365
           href: azure-expressroute.md
           items: 
@@ -117,8 +117,6 @@
               href: azure-expressroute.md
             - name: How modern authentication works for Office 2013 and Office 2016 client apps
               href: modern-auth-for-office-2013-and-2016.md
-        - name: Inter-tenant collaboration
-          href: microsoft-365-inter-tenant-collaboration.md
         - name: Client app support
           items: 
             - name: Certificate-based authentication
@@ -273,6 +271,12 @@
       items: 
         - name: Add a domain
           href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+    - name: Multiple tenants
+      items: 
+        - name: Inter-tenant collaboration
+          href: microsoft-365-inter-tenant-collaboration.md
+        - name: Cross-tenant mailbox migration
+          href: cross-tenant-mailbox-migration.md
     - name: Multi-geo
       items: 
         - name: Microsoft 365 Multi-Geo
@@ -359,6 +363,8 @@
           href: prepare-a-non-routable-domain-for-directory-synchronization.md
         - name: Set up directory synchronization
           href: set-up-directory-synchronization.md
+        - name: Secure user sign-ins
+          href: microsoft-365-secure-sign-in.md
         - name: Hybrid solutions
           items: 
             - name: Overview
