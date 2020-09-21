@@ -172,6 +172,6 @@ Enable office location network connectivity visibility if you have not already d
 
 [Microsoft 365 network assessment (preview)](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 connectivity test in the M365 Admin Center (preview)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 network connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)
