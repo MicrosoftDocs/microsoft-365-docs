@@ -105,9 +105,6 @@ URLs in this category have the following characteristics:
 - Are able to have required security elements provided in the service rather than inline on the network
 - Account for around 70-80% of the volume of traffic to the Office 365 service
 
->[!NOTE]
->Microsoft has committed to suspending changes to **Optimize** endpoints for Office 365 until at least **June 30 2020**, allowing customers to focus on other challenges rather than maintaining the endpoint whitelist once initially implemented. This article will be updated to reflect any future changes.
-
 For more information about Office 365 endpoints and how they are categorized and managed, see the article [Managing Office 365 endpoints](managing-office-365-endpoints.md).
 
 #### Optimize URLs
