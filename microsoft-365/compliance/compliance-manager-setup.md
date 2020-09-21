@@ -76,7 +76,7 @@ The table below shows the functions allowed by each role in Compliance Manager. 
 | **Edit data**| Compliance Manager Contribution | Compliance Administrator | 
 | **Edit test results**| Compliance Manager Assessment | Compliance Administrator | 
 | **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  | 
-| **Assign users**| Azure AD global administrator | Global administrator | 
+| **Assign users**| Global Administrator | Global Administrator | 
 
 ## Settings for automated testing and user history
 
