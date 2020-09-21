@@ -318,7 +318,7 @@ To filter you view of assessments:
 
 1. Select **Filter** at the top-left corner of your assessments list.
 2. On the **Filters** flyout pane, check your desired criteria.
-3. Select the Apply button. The filter pane will close and you will see your filtered view.
+3. Select the **Apply** button. The filter pane will close and you will see your filtered view.
 
 You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.
 

@@ -31,7 +31,7 @@ Each assessment is created from an [assessment template](compliance-manager-temp
 
 All of your assessments are listed on the assessments page. Learn more about [how to filter your view of your assessments and interpret status states](compliance-manager-setup.md#assessments-page).
 
-## Data protection baseline default assessment
+## Data Protection Baseline default assessment
 
 To get you started, Microsoft provides a **default** assessment in Compliance Manager for the **Microsoft 365 data protection baseline**. This baseline assessment has a set of controls for key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
@@ -43,9 +43,9 @@ Compliance Manager becomes more helpful as you build and manage your own assessm
 
 There are three ways you can set up assessments:
 
-1. Use a pre-built assessment.
-2. Extend a pre-built assessment to suit your own needs.
-3. Create your own custom assessment.
+1. [Use a pre-built assessment](#use-a-pre-built-assessment).
+2. [Extend a pre-built assessment to suit your own needs](#extend-a-pre-built-assessment).
+3. [Create your own custom assessment](#create-your-own-custom-assessment).
 
 > [!NOTE]
 > Only users who hold a Global Administrator or  Compliance Manager Administration role can create and modify assessments. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
@@ -64,7 +64,7 @@ You can create your own assessment entirely from scratch to track precisely what
 
 ## Understand groups before creating assessments
 
-Before you create or modify assessments, it’s important to understand how groups work. When you create an assessment, you’ll need to assign it to a group during that process. That's why we recommend planning a grouping strategy for your assessments before you create assessments.
+Before you create or modify assessments, it’s important to understand how groups work. When you create an assessment, you’ll need to assign it to a group during the process. That's why we recommend planning a grouping strategy for your assessments before you create assessments.
 
 ### What are groups
 
@@ -144,7 +144,7 @@ To prepare for this process, you’ll first need to assemble a specially formatt
 - The spreadsheet can’t contain any of the controls or actions that already exist in the assessment you want to modify.
 - Consider including “extension” in your template’s title, for example, “GDPR – [your company name] extension.” This makes it easier to identify in the list on your **assessment templates** page as distinct from the standard Microsoft-provided template or a custom template with a similar name.
 
-After you format your spreadsheet, follow the steps immediately below.
+After you format your spreadsheet, follow the steps below.
 
 **Steps for extending a Compliance Manager template**
 
@@ -186,10 +186,10 @@ Creating a custom assessment in Compliance Manager requires you to create your o
 
 ## Delete an assessment
 
-Deleting an assessment removes it from the list on your assessments page. Note these important points about deleting assessments: 
+Deleting an assessment removes it from the list on your assessments page. Note these important points about deleting assessments:
 
-- **Deleting an assessment is permanent; you cannot get it back.** If you want the same assessment again, it must be re-created from scratch.
-- If the improvement actions in the assessment do not appear in any other assessment, they will be deleted when the assessment is deleted.
+- **Deleting an assessment is permanent; you cannot get it back.** If you want to use the same assessment again, you'll need to re-create it.
+- If the improvement actions in the assessment don't appear in any other assessment, they'll be deleted when the assessment is deleted.
 - We recommend [exporting a report](#export-an-assessment-report) of the assessment before you permanently delete it.
 
 To delete an assessment, follow the steps below:
@@ -258,7 +258,7 @@ An assessment update occurs when there are underlying template changes that impa
 
 If Microsoft updates a Compliance Manager template that you extended, your assessment will inherit those updates once you accept them. Your assessment will retain the additional attributes you applied to the assessment when you extended it.
 
-Custom assessments that you create do not receive any template updates from Microsoft. Custom assessments can receive improvement action updates, but any Microsoft updates to control mapping between assessments and improvement actions do not apply to custom templates.
+Custom assessments that you create do not receive any template updates from Microsoft. Custom assessments can receive improvement action updates, but any Microsoft updates to control mapping between assessments and improvement actions don't apply to custom templates.
 
 > [!NOTE]
 > Updates to assessments apply only at the group level. If you have two assessments built from the same template that exist in two different groups, each assessment will have a pending update notification, and you’ll need to accept the update to each assessment in its respective group individually.
