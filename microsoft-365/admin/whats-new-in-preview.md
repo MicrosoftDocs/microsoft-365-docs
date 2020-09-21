@@ -131,7 +131,7 @@ To learn more about it, check out this article and video to see how it works: [T
 
 ### Documentation, Training, and Videos
 
-- [What's new with Microsoft 365](https://youtu.be/m1Nu8WJgCDY) video series: This month, we cover new features available in Whiteboard for Teams and on the web, how to automate user provisioning to Azure AD, new Power Automate triggers and actions in Teams, and more. And stay tuned for next month, where we'll have a recap of all the great things happening at Ignite!
+- [What's new with Microsoft 365](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) video series: This month, we cover new features available in Whiteboard for Teams and on the web, how to automate user provisioning to Azure AD, new Power Automate triggers and actions in Teams, and more. And stay tuned for next month, where we'll have a recap of all the great things happening at Ignite!
 - We did a redesign of the [Microsoft 365 documentation](https://docs.microsoft.com/microsoft-365) page that focuses on solutions first. We'll highlight new solutions as they become available on this page, so keep an eye out.
 
 ![New landing page for Microsoft 365 solutions documentation with solutions like "Empower remote workers".](../media/MAC-WN-M365Docspage.png)
