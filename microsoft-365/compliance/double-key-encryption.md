@@ -311,7 +311,7 @@ Use the following instructions to build the DKE project locally:
 
 1. In Visual Studio Code, in the DKE service repository, select **View** \> **Command Palette** and then type **build** at the prompt.
 
-1. From the list, choose **Tasks: Run build task**.
+2. From the list, choose **Tasks: Run build task**.
 
    If there are no build tasks found, select **Configure Build Task** and create one for .NET core as follows.
 
@@ -331,15 +331,15 @@ Use the following instructions to build the DKE project locally:
       "${workspaceFolder}/src/customer-key-store/customerkeystore.csproj",
       ```
 
-  4. Run the build again.
+   4. Run the build again.
 
-1. Verify that there are no red errors in the output window.
+3. Verify that there are no red errors in the output window.
 
    If there are red errors, check the console output. Ensure that you completed all the previous steps correctly and the correct build versions are present.
 
-2. Select **Run** \> **Start Debugging** to debug the process. If you're prompted to select an environment, select **.NET core**.
+4. Select **Run** \> **Start Debugging** to debug the process. If you're prompted to select an environment, select **.NET core**.
 
-The .NET core debugger typically launches to ``https://localhost:5001`. To view your test key, go to `https://localhost:5001` and append a forward slash (/) and the name of your key. For example:
+The .NET core debugger typically launches to `https://localhost:5001`. To view your test key, go to `https://localhost:5001` and append a forward slash (/) and the name of your key. For example:
 
 ```https
 https://localhost:5001/TestKey1
@@ -388,17 +388,17 @@ To publish the key store, you'll create an Azure App Service instance to host yo
 
     For example: https://customerkeystoreforpublicpreview.scm.azurewebsites.net/ZipDeployUI
 
-1. In the codebase for the key store, go to the **customer-key-store\src\customer-key-store** folder, and verify that this folder contains the **customerkeystore.csproj** file.
+2. In the codebase for the key store, go to the **customer-key-store\src\customer-key-store** folder, and verify that this folder contains the **customerkeystore.csproj** file.
 
-1. Run: **dotnet publish**
+3. Run: **dotnet publish**
 
      The output window displays the directory where the publish was deployed.
 
     For example: `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
-1. Send all files in the publish directory to a .zip file. When creating the .zip file, make sure that all files in the directory are at the root level of the .zip file.
+4. Send all files in the publish directory to a .zip file. When creating the .zip file, make sure that all files in the directory are at the root level of the .zip file.
 
-1. Drag and drop the .zip file you create to the ZipDeployUI site you opened above. For example: https://customerkeystoreforpublicpreview.scm.azurewebsites.net/ZipDeployUI
+5. Drag and drop the .zip file you create to the ZipDeployUI site you opened above. For example: https://customerkeystoreforpublicpreview.scm.azurewebsites.net/ZipDeployUI
 
 DKE is deployed and you can browse to the test keys you've created. Continue to [Validate your deployment](#validate-your-deployment) below.
 
@@ -408,25 +408,25 @@ DKE is deployed and you can browse to the test keys you've created. Continue to 
 
     In your browser, go to: **Azure portal** > **App Service** > **Deployment Center** > **Manual Deployment** > **FTP** > **Dashboard**.
 
-1. Copy the connection strings displayed to a local file. You'll use these strings to connect to the Web App Service and upload files via FTP.
+2. Copy the connection strings displayed to a local file. You'll use these strings to connect to the Web App Service and upload files via FTP.
 
     For example:
 
    ![Copy connection strings from the FTP dashboard](../media/dke-ftp-dashboard.png)
 
-1. In the codebase for the key storage, go to the **customer-key-store\src\customer-key-store directory**.
+3. In the codebase for the key storage, go to the **customer-key-store\src\customer-key-store directory**.
 
-1. Verify that this directory contains the **customerkeystore.csproj** file.
+4. Verify that this directory contains the **customerkeystore.csproj** file.
 
-1. Run: **dotnet publish**
+5. Run: **dotnet publish**
 
     The output contains the directory where the publish was deployed.
 
     For example: `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
-1. Send all files in the publish directory to a zip file. When creating the .zip file, make sure that all files in the directory are at the root level of the .zip file.
+6. Send all files in the publish directory to a zip file. When creating the .zip file, make sure that all files in the directory are at the root level of the .zip file.
 
-1. From your FTP client, use the connection information you copied to connect to your App Service. Upload the .zip file you created in the previous step to the root directory of your Web App.
+7. From your FTP client, use the connection information you copied to connect to your App Service. Upload the .zip file you created in the previous step to the root directory of your Web App.
 
 DKE is deployed and you can browse to the test keys you'd created. Next, [Validate your deployment](#validate-your-deployment).
 
@@ -478,7 +478,7 @@ To register your key store:
     - If you're testing locally with Visual Studio, use **https://localhost:5001**.
     - In all cases, the scheme must be **https**.
 
-    Ensure the hostname exactly matches your App Service host name. You may have changed it to `localhost` to troubleshoot the build. In **appsettings.json**, this value is the hostname you set for `JwtAudience`.
+    Ensure the hostname exactly matches your App Service hostname. You may have changed it to `localhost` to troubleshoot the build. In **appsettings.json**, this value is the hostname you set for `JwtAudience`.
 
 9. Under **Implicit grant**, select the **ID tokens** checkbox.
 
@@ -496,7 +496,7 @@ To register your key store:
 
     4. Select **Add scope.**
 
-    Select **Save** at the top to save your changes.
+    5. Select **Save** at the top to save your changes.
 
 13. Still on the **Expose an API** page, in the **Authorized client applications** area, select **Add a client application**.
 
