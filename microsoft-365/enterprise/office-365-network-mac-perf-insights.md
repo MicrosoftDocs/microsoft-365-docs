@@ -152,7 +152,7 @@ It is an indication that the majority of your users are likely to be experiencin
 
 ### What should I do?
 
-Enable office location network connectivity visibility if you have not already done so. You want to identify which offices are impactred by poor network connectivity that is impacting Exchange and find ways to improve the network perimeter at each that connects the users to Microsoft's network.
+Enable office location network connectivity visibility if you have not already done so. You want to identify which offices are impacted by poor network connectivity that is impacting Exchange and find ways to improve the network perimeter at each that connects the users to Microsoft's network.
 
 ## SharePoint sampled connections impacted by connectivity issues
 
@@ -164,7 +164,7 @@ It is an indication that the majority of your users are likely to be experiencin
 
 ### What should I do?
 
-Enable office location network connectivity visibility if you have not already done so. You want to identify which offices are impactred by poor network connectivity that is impacting SharePoint and find ways to improve the network perimeter at each that connects the users to Microsoft's network.
+Enable office location network connectivity visibility if you have not already done so. You want to identify which offices are impacted by poor network connectivity that is impacting SharePoint and find ways to improve the network perimeter at each that connects the users to Microsoft's network.
 
 ## Related topics
 
@@ -172,6 +172,6 @@ Enable office location network connectivity visibility if you have not already d
 
 [Microsoft 365 network assessment (preview)](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 connectivity test in the M365 Admin Center (preview)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 network connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)

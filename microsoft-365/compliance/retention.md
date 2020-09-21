@@ -78,7 +78,7 @@ Unlike retention policies, retention settings from retention labels persist with
  
 - Options to start the retention period from when the content was labeled or based on an event, in addition to the age of the content or when it was last modified.
 
-- Use [trainable classifiers](classifier-getting-started-with.md) to identify content to label.
+- Use [trainable classifiers](classifier-learn-about.md) to identify content to label.
 
 - Apply a default label for SharePoint documents.
 
