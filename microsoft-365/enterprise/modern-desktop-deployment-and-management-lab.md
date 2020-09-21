@@ -49,46 +49,47 @@ PLUS, the lab is designed to be connected to trials for:
 Detailed lab guides take you through multiple deployment and management scenarios. The labs have been updated for the latest versions of Intune and Configuration Manager. 
 
 ### Plan and prepare infrastructure	
-Desktop Analytics	
-Cloud Management Gateway & Cloud Distribution Point 
-Tenant Attach, Co-Management and Switching Workloads	
-Remote Access
+- Desktop Analytics	
+- Cloud Management Gateway & Cloud Distribution Point 
+- Tenant attach, Co-management and switching workloads	
+- Remote access (VPN) 
 
 ### Prepare configuration	
-Optimize Windows 10 Update Delivery	
-Servicing Windows 10 using Group Policy
-Servicing Windows 10 using Microsoft Intune	
-Servicing Windows 10 with Configuration Manager	
-Servicing Microsoft 365 Apps for enterprise using Configuration Manager	
-Servicing Microsoft 365 Apps for enterprise using Intune	
-Security and Compliance	
+- Optimize Windows 10 update delivery	
+- Servicing Windows 10 using Group Policy
+- Servicing Windows 10 using Microsoft Intune	
+- Servicing Windows 10 with Configuration Manager	
+- Servicing Microsoft 365 Apps for enterprise using Configuration Manager	
+- Servicing Microsoft 365 Apps for enterprise using Intune	
+- Security and Compliance	
 
 ### Prepare applications	
-Readiness Toolkit for Office	
-MSIX Packaging and Conversion of Win32 Applications	
+- Readiness Toolkit for Office	
+- MSIX Packaging and Conversion of Win32 applications	
 
 ### Deploy Windows 10	
-OS Deployment Task Sequences in Configuration Manager
-OS Deployment Task Sequences in MDT	
-Windows Autopilot
-Deploy and manage the new Microsoft Edge	
+- OS Deployment task sequences in Configuration Manager
+- OS Deployment task sequences in MDT	
+- Windows Autopilot
+- Deploy and manage the new Microsoft Edge	
 
 ### Deploy Microsoft 365 Apps for enterprise	
-Cloud Managed Deployment	
-Locally Managed Deployment	
-Microsoft 365 Apps for enterprise Deployment on Non-AD Joined Devices	
-Enterprise Managed Deployment using Configuration Manager
-Enterprise Managed Deployment using Microsoft Intune	
-LOB Deployment and Management with Microsoft Intune
-Deploy Microsoft Teams
+- Cloud managed deployment	
+- Locally managed deployment	
+- Microsoft 365 Apps for enterprise Deployment on Non-AD Joined Devices	
+- Enterprise managed deployment using Configuration Manager
+- Enterprise managed deployment using Microsoft Intune	
+- LOB Deployment and Management with Microsoft Intune
+- Deploy Microsoft Teams
 
 ### Deploy Windows Virtual Desktop	
+- Prepare, deploy, optimize
  
 ### Download the Windows and Office Deployment Lab Kit
 
 [Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires December 4, 2020. A new version will be published prior to expiration.*
+*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires December 5, 2020. A new version will be published prior to expiration.*
 
 ## Additional guidance
 
