@@ -74,6 +74,55 @@ You must have global administrator or SharePoint administrator permissions to be
 
 8. You'll be returned to your **Automate SharePoint Syntex** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
 
+## Assign licenses
+
+
+
+For AI Builder to answer positively to users request to create form processing models, several things are required:
+•	AI Builder credits to create and run models. 
+These credits are automatically allocated by AI Builder to the default environment during set-up if the user’s tenant has credits entitled. Entitlement of credits happens if the tenant buys an ICS sku with 300+ seats: In that case 1M AI Builder credits are entitled to the tenant automatically. 
+Note: Tenant admins can also buy AI Builder credits independently if they wish.
+•	A user’s CDS license.
+In the context of SharePoint, the license required is called “Common Data Service for Intelligent Content Service” and is assigned by the SharePoint admin when assigning Intelligent Content Service (ICS) license to users. 
+
+
+Note: AI Builder relies on the credits ever allocated to the default environment to know when to stop allocating. That means if a tenant already manually allocated more than 1M AI Buildler credits in the default environment in the past (before a user ever uses AI Builder from a SharePoint), AI Builder won’t allocate any credit.
+
+
+
+
+Remediation: Buy ICS license with 300 seats to get entitles with 1M AIB credits. 
+If the credits were entitled but the automated credit allocation failed, connect as admin to the Power Platform Admin Center to manually assign AI Builder credits to the default environment. Learn more on Power Platform capacity management.
+
+
+
+
+[Power Platform capacity](https://admin.powerplatform.microsoft.com/resources/capacity)
+
+If the credits were entitled but the automated credit allocation failed, connect as admin to the Power Platform Admin Center to manually assign AI Builder credits to the default environment
+
+[Power Platform admin center](https://admin.powerplatform.microsoft.com)
+
+Once you have configured SharePoint Syntex, you must assign licenses for the users who will be using form processing and document understanding features.
+
+To assign licenses
+
+1. In the Microsoft 365 admin center, under **Users**, click **Active users**.
+
+2. Select the users that you want to license, and click **Manage product licenses**.
+
+3. Select **Assign more**.
+
+4. Select **Intelligent Content Services**. Under **Apps**, make sure **Common Data Service for Intelligent Content Services** and **Intelligent Content Services** are both selected.
+
+    ![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/sharepoint-syntex-licenses.png)
+
+5. Click **Save changes**.
+
+If you have 300 or more licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits.
+
 ## See also
 
 [Overview of the form processing model](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
+
+[Common Data Service (CDS)](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
