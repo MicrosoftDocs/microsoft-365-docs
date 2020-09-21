@@ -30,7 +30,7 @@ To declare documents and emails as [records](records-management.md#records), you
 
 If you're not sure whether to use a record or a regulatory record, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). If you need to use regulatory records, you must first run a PowerShell command, as described in the next section.
 
-You can then either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.
+You can then either publish those labels in a retention label policy so that users and administrators can apply them to content, or for labels that mark items as records (but not regulatory records), auto-apply those labels to content that you want to declare a record.
 
 ## How to display the option to mark content as a regulatory record
 
@@ -64,7 +64,7 @@ For full instructions:
 
 - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
 
-- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
+- [Apply a retention label to content automatically](apply-retention-labels-automatically.md) (not supported for regulatory records)
 
 
 ## Applying the configured retention label to content

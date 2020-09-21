@@ -23,6 +23,9 @@ description: Create and auto-publish retention labels so you can automatically a
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
+> [!NOTE]
+> This scenario is not supported for [regulatory records](records-management.md#records).
+
 One of the most powerful features of [retention labels](retention.md) is the ability to apply them automatically to content that matches specified conditions. In this case, people in your organization don't need to apply the retention labels. Microsoft 365 does the work for them.
   
 Auto-applying retention labels are powerful because:
