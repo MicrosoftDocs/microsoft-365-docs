@@ -1,6 +1,5 @@
 ---
-title: 'Set up content understanding (Preview) '
-description: 'How to set up Project Cortex.'
+title: 'Set up SharePoint Syntex'
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,33 +8,34 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: 
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-
+description: 'Learn how to set up SharePoint Syntex'
 ---
-# Set up content understanding (Preview)
 
-Admins can use the Microsoft 365 admin center to set up and configure content understanding. 
+# Set up SharePoint Syntex
 
-Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you will need to make considerations about the following:
+Admins can use the Microsoft 365 admin center to set up and Microsoft SharePoint Syntex. 
+
+Consider the following before you start:
+
 - Which SharePoint sites will you enable form processing? All of them, some, or select sites?
-- Name of your content center, and who is the primary site admin?
+- What will you name of your content center, and who is the primary site admin?
 
-An admin can also make changes to your selected settings anytime after setup through the content understanding management settings in the Microsoft 365 admin center.
+You can change your settings after initial setup in the Microsoft 365 admin center.
 
 
 ## Requirements 
 
-You must have Global Admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up content understanding.
+You must have global administrator or SharePoint administrator permissions to be able to access the Microsoft 365 admin center and set up SharePoint Syntex.
 
 
-## To set up content understanding
+## To set up SharePoint Syntex
 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational knowledge** section.
 2. In the **Organizational knowledge** section, select **Automate content understanding**.<br/>
 
     ![Organizational knowledge setup page](../media/content-understanding/admin-org-knowledge-options.png)</br>
 
-3. On the **Automate content understanding** page, click **Get started** to walk you through the setup process.<br/>
+3. On the **Automate SharePoint Syntex** page, click **Get started** to walk you through the setup process.<br/>
 
     ![Begin setup](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
@@ -60,7 +60,7 @@ You must have Global Admin or SharePoint admin permissions to be able to access 
     b. The **Site address** will show the URL for your site, based on what you selected for the site name.</br>
 
     > [!Note] 
-    > While you can select any supported language, note that content understanding models can only be created for English.</br>
+    > While you can select any supported language, note that SharePoint Syntex models can only be created for English.</br>
 
       ![Create content center](../media/content-understanding/admin-cu-create-cc.png)</br>
 
@@ -70,8 +70,10 @@ You must have Global Admin or SharePoint admin permissions to be able to access 
 
 
 
-7. The **Content understanding activated** page will display, confirming that the system has added your form processing preferences and creating the Content Center site. Select **Done**.
+7. The **SharePoint Syntex activated** page will display, confirming that the system has added your form processing preferences and creating the Content Center site. Select **Done**.
 
-8. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
+8. You'll be returned to your **Automate SharePoint Syntex** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
 
 ## See also
+
+[Overview of the form processing model](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
