@@ -126,7 +126,7 @@ This detects if you are using a VPN to connect to Office 365. A passing result w
 
 #### VPN Split Tunnel
 
-Each optimize category route for Exchange Online, SharePoint Online, and Microsoft Teams is tested to see if it is tunnelled on the VPN or not. A split out workload avoids the VPN entirely. A tunnelled workload is all sent over the VPN. A selective tunnelled workload has some routes sent over the VPN and some split out. A passing result will show if all workloads are split out or selective tunnelled.
+Each optimize category route for Exchange Online, SharePoint Online, and Microsoft Teams is tested to see if it is tunneled on the VPN or not. A split out workload avoids the VPN entirely. A tunneled workload is all sent over the VPN. A selective tunneled workload has some routes sent over the VPN and some split out. A passing result will show if all workloads are split out or selective tunneled.
 
 #### Customers in your metropolitan area with better performance
 
@@ -244,7 +244,7 @@ It is currently a preview and we plan to provide updates regularly until we reac
 
 ### What is required to run the advanced test client?
 
-The advanced test client requires .NET Core 3.1 Desktop Runtime. If you run the advanced test client without that installed you will be directed to [the .NET Core 3.1 installer page](https://dotnet.microsoft.com/download/dotnet-core/3.1). Be sure to install the Desktop Runtime and not the SDK, or the ASP.NET Core Runtime which are higher up on the page. Administrator permissions on the machine is reuqired to install .NET Core. 
+The advanced test client requires .NET Core 3.1 Desktop Runtime. If you run the advanced test client without that installed you will be directed to [the .NET Core 3.1 installer page](https://dotnet.microsoft.com/download/dotnet-core/3.1). Be sure to install the Desktop Runtime and not the SDK, or the ASP.NET Core Runtime which are higher up on the page. Administrator permissions on the machine is required to install .NET Core. 
 
 ### What is Microsoft 365 service front door?
 
