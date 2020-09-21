@@ -394,7 +394,7 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
 ## Sent and received email report
 
-The **Sent and received email** report is a smart report that shows information about incoming and outgoing email, including spam detections, malware, and email identified as "good." The difference between this report and the [Mailflow status report](#mailflow-status-report) is: this report doesn't include data about messages blocked by edge protection.
+The **Sent and received email** report is a smart report that shows information about incoming and outgoing email, including spam detections, malware, and email identified as "good." The difference between this report and the [Mailflow status report](#mailflow-status-report) is: this report doesn't include data about messages blocked by edge protection.It's important to understand that if a message is sent to five recipients we count it as one message.
 
 The aggregate view and the detail view of the report allow for 90 days of filtering.
 
