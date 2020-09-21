@@ -2,11 +2,11 @@
 # required metadata
 
 title: Double Key Encryption (DKE)
-description: DKE enables you to protect highly sensitive data while maintaining full control of your key.
+description: DKE enables you to protect highly sensitive data while maintaining full control of your keys.
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -17,9 +17,9 @@ ms.collection:
 
 ---
 
-# Double Key Encryption (DKE)
+# Double Key Encryption for Microsoft 365
 
-> *Applies to: Double Key Encryption for Microsoft 365 public preview, [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+> *Applies to: Double Key Encryption for Microsoft 365, [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
 > *Instructions for: [Azure Information Protection unified labeling client for Windows](https://docs.microsoft.com/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
@@ -31,12 +31,6 @@ Double Key Encryption supports both cloud and on-premises deployments. These dep
 
 For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
 
-<!--
-The following video shows how Double Key Encryption works to secure your content.
-
-> [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
--->
-
 If your organizations have any of the following requirements, you can use DKE to help secure your content:
 
 - You want to ensure that *only you* can ever decrypt protected content, under all circumstances.
@@ -47,7 +41,7 @@ If your organizations have any of the following requirements, you can use DKE to
 
 Double Key Encryption for Microsoft 365 comes with Microsoft 365 E5 and Office 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-**Office Insider** To use the public preview, you must be a member of the Office Insider program. To join Office Insider, go to [https://insider.office.com](https://insider.office.com). Once you're a member, prepare your environment to deploy Office Insider builds by choosing the right deployment method for your organization. For instructions, see [Getting started on deploying Office Insider builds](https://insider.office.com/business/deploy).
+**Office Insider**. To use DKE, you must be a member of the Office Insider program. To join Office Insider, go to [https://insider.office.com](https://insider.office.com). Once you're a member, prepare your environment to deploy Office Insider builds by choosing the right deployment method for your organization. For instructions, see [Getting started on deploying Office Insider builds](https://insider.office.com/business/deploy).
 
 **Azure Information Protection**. DKE works with sensitivity labels and requires Azure Information Protection.
 
@@ -57,19 +51,19 @@ Double Key Encryption for Microsoft 365 comes with Microsoft 365 E5 and Office 3
 
 **Online content support**. Documents and files stored online in both Microsoft SharePoint and OneDrive for Business are supported. You can share encrypted content by email, but you can't view encrypted documents and files online. Instead, you must view protected content using the desktop apps on your local computer.
 
-## About this public preview article
+## About this article
 
 There are several ways you can complete some of the steps to deploy Double Key Encryption. This article provides detailed instructions so that less experienced admins successfully deploy the service. If you're comfortable doing so, you can choose to use your own methods.
 
-This article includes step-by-step instructions on how to deploy the Double Key Encryption service to Azure. This scenario isn't something you'd likely do in production. For public preview, using Azure is a quick way to deploy DKE. Deploying to Azure lets you get started using Double Key Encryption right away.
+This article includes step-by-step instructions on how to deploy the Double Key Encryption service to Azure. This scenario isn't something you'd likely do in production. However, as a pilot deployment, using Azure provides a quick way to deploy and lets you get started using Double Key Encryption right away.
 
-You can deploy the service locally on your network or with another provider. You'll need to publish the key store using methods that are appropriate for that location.
+You can deploy the service locally on your network or with another provider. You'll need to publish the key store using methods that are appropriate for the location that you choose.
 
 ## Deploy Double Key Encryption
 
 This article and the deployment video use Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
 
-Watch the [Double Key Encryption deployment video](https://youtu.be/vDWfHN_kygg) to see step-by-step overview of concepts in the article. The video takes about 18 minutes to complete.
+Watch the [Double Key Encryption deployment video](https://youtu.be/vDWfHN_kygg) to see a step-by-step overview of the concepts in this article. The video takes about 18 minutes to complete.
 
 You'll follow these general steps to set up Double Key Encryption for your organization.
 
@@ -114,7 +108,7 @@ Install these prerequisites on the computer where you want to install the DKE se
 
 - [GitHub Enterprise](https://github.com/enterprise)
 
-**OpenSSL** You must have [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) installed to [generate test keys](#generate-test-keys) after you deploy DKE. Make sure you're invoking it correctly from your environment variables path. For example, see "Add the installation directory to PATH" at https://www.osradar.com/install-openssl-windows/ for details.
+**OpenSSL** You must have [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) installed to [generate test keys](#generate-test-keys) after you deploy DKE. Make sure you're invoking it correctly from your environment variables path. For example, see "Add the installation directory to PATH" at [https://www.osradar.com/install-openssl-windows/](https://www.osradar.com/install-openssl-windows/) for details.
 
 #### Double Key Encryption prerequisites for client computers
 
@@ -130,9 +124,9 @@ Microsoft supplies the DKE source files in a GitHub repository. You clone the re
 
 The following instructions are intended for inexperienced git or Visual Studio Code users:
 
-1. In your browser, go to: [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService)
+1. In your browser, go to: [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService).
 
-1. Towards the right side of the screen, select **Code**. Your version of the UI might show a **Clone or download** button. Then, in the dropdown that appears, select the copy icon to copy the URL to your clipboard.
+2. Towards the right side of the screen, select **Code**. Your version of the UI might show a **Clone or download** button. Then, in the dropdown that appears, select the copy icon to copy the URL to your clipboard.
 
     For example:
 
@@ -146,7 +140,7 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
 5. In the **Select Folder** dialog that appears, browse to and select a location to store the repository. At the prompt, select **Open**.
 
-    The repository is opened in Visual Studio Code, and displays the current Git branch at the bottom left. The branch should be **master**.
+    The repository opens in Visual Studio Code, and displays the current Git branch at the bottom left. The branch should be **master**.
 
     For example:
 
@@ -188,7 +182,7 @@ Choose whether to use email or role authorization. DKE supports only one of thes
    "AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
    ```
 
-3. Locate the `LDAPPath` setting and remove the text `If role authorization is used then this is the LDAP path` between the double quotes. Leave the double quotes in place. When you're finished, the setting should look like this.
+3. Locate the `LDAPPath` setting and remove the text `If you use role authorization (AuthorizedRoles) then this is the LDAP path.` between the double quotes. Leave the double quotes in place. When you're finished, the setting should look like this.
 
    ```json
    "LDAPPath": ""
@@ -240,8 +234,6 @@ DKE tenant and key settings are located in the **appsettings.json** file.
 
 Locate the `JwtAudience`. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run. For example:
 
-
-
   > [!IMPORTANT]
   > The value for `JwtAudience` must match the name of your host *exactly*. You may use **localhost:5001** while debugging. However, When you're done debugging, make sure to update this value to the server's hostname.
 
@@ -260,38 +252,38 @@ To generate keys:
 
 1. From the Windows Start menu, run the OpenSSL Command Prompt.
 
-1. Change to the folder where you want to save the test keys. The files you create by completing the steps in this task are stored in the same folder.
+2. Change to the folder where you want to save the test keys. The files you create by completing the steps in this task are stored in the same folder.
 
-1. Generate the new test key.
+3. Generate the new test key.
 
    ```dos
    openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
    ```
 
-2. Generate the private key.
+4. Generate the private key.
 
    ```dos
    openssl rsa -in key.pem -out privkeynopass.pem
    ```
 
-1. Generate the public key.
+5. Generate the public key.
 
    ```dos
    openssl rsa -in key.pem -pubout > pubkeyonly.pem
    ```
 
-1. In a text editor, open **pubkeyonly.pem**. Copy all of the content in the **pubkeyonly.pem** file, except the first and last lines, into the `PublicPem` section of the **appsettings.json** file.
+6. In a text editor, open **pubkeyonly.pem**. Copy all of the content in the **pubkeyonly.pem** file, except the first and last lines, into the `PublicPem` section of the **appsettings.json** file.
 
-1. In a text editor, open **privkeynopass.pem**. Copy all of the content in the **privkeynopass.pem** file, except the first and last lines, into the `PrivatePem` section of the **appsettings.json** file.
+7. In a text editor, open **privkeynopass.pem**. Copy all of the content in the **privkeynopass.pem** file, except the first and last lines, into the `PrivatePem` section of the **appsettings.json** file.
 
-1. Remove all blank spaces and newlines in both the `PublicPem` and `PrivatePem` sections.
+8. Remove all blank spaces and newlines in both the `PublicPem` and `PrivatePem` sections.
 
     > [!IMPORTANT]
     > When you copy this content, do not delete any of the PEM data.
 
-1. In Visual Studio Code, browse to the **Startup.cs** file. This file is located in the DoubleKeyEncryptionService repo you cloned locally under DoubleKeyEncryptionService\src\customer-key-store\.
+9. In Visual Studio Code, browse to the **Startup.cs** file. This file is located in the DoubleKeyEncryptionService repo you cloned locally under DoubleKeyEncryptionService\src\customer-key-store\.
 
-2. Locate the following lines:
+10. Locate the following lines:
 
    ```c#
         #if USE_TEST_KEYS
@@ -301,7 +293,7 @@ To generate keys:
         #endif
    ```
 
-3. Replace these lines with the following text:
+11. Replace these lines with the following text:
 
    ```csharp
    services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
@@ -475,9 +467,9 @@ To register your key store:
 5. In your new App Registration, in the left pane, under **Manage**, select **Authentication**.
 
 6. Select **Add a platform**.
- 
+
 7. On the **Configure platforms** popup, select **Web**.
- 
+
 8. Under **Redirect URIs**, enter the URI of your double key encryption service. Enter the App Service URL, including both the hostname and domain.
 
     For example: https://mycustomerkeystoretest.com
@@ -488,13 +480,13 @@ To register your key store:
 
     Ensure the hostname exactly matches your App Service host name. You may have changed it to `localhost` to troubleshoot the build. In **appsettings.json**, this value is the hostname you set for `JwtAudience`.
 
-6. Under **Implicit grant**, select the **ID tokens** checkbox.
+9. Under **Implicit grant**, select the **ID tokens** checkbox.
 
-1. Select **Save** to save your changes.
+10. Select **Save** to save your changes.
 
-7. On the left pane, select **Expose an API**, then next to Application ID URI, select **Set**.
+11. On the left pane, select **Expose an API**, then next to Application ID URI, select **Set**.
 
-9. Still on the **Expose an API** page, in the **Scopes defined by this API** area, select **Add a scope**. In the new scope:
+12. Still on the **Expose an API** page, in the **Scopes defined by this API** area, select **Add a scope**. In the new scope:
 
     1. Define the scope name as **user_impersonation**.
 
@@ -506,7 +498,7 @@ To register your key store:
 
     Select **Save** at the top to save your changes.
 
-10. Still on the **Expose an API** page, in the **Authorized client applications** area, select **Add a client application**.
+13. Still on the **Expose an API** page, in the **Authorized client applications** area, select **Add a client application**.
 
     In the new client application:
 
