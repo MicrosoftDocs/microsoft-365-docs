@@ -303,8 +303,7 @@ Click one of the following links to go to a specific table.
     :::column:::
         [SharePoint list activities](#sharepoint-list-activities)
     :::column-end:::
-:::row-end:::
-:::row:::
+:::row-end::::::row:::
     :::column:::
         [Sharing and access request activities](#sharing-and-access-request-activities)
     :::column-end:::
@@ -314,8 +313,7 @@ Click one of the following links to go to a specific table.
     :::column:::
         [Site permissions activities](#site-permissions-activities)
     :::column-end:::
-:::row-end:::
-:::row:::
+:::row-end::::::row:::
     :::column:::
         [Site administration activities](#site-administration-activities)
     :::column-end:::
@@ -355,8 +353,7 @@ Click one of the following links to go to a specific table.
     :::column:::
         [Microsoft Teams activities](#microsoft-teams-activities)
     :::column-end:::
-:::row-end:::
-:::row:::
+:::row-end::::::row:::
     :::column:::
         [Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)
     :::column-end:::
@@ -366,8 +363,7 @@ Click one of the following links to go to a specific table.
     :::column:::
         [Yammer activities](#yammer-activities)
     :::column-end:::
-:::row-end:::
-:::row:::
+:::row-end::::::row:::
     :::column:::
         [Microsoft Power Automate activities](#microsoft-power-automate-activities)
     :::column-end:::
@@ -377,8 +373,7 @@ Click one of the following links to go to a specific table.
     :::column:::
         [Microsoft Stream activities](#microsoft-stream-activities)
     :::column-end:::
-:::row-end:::
-:::row:::
+:::row-end::::::row:::
     :::column:::
         [Content explorer activities](#content-explorer-activities)
     :::column-end:::
@@ -388,8 +383,7 @@ Click one of the following links to go to a specific table.
     :::column:::
         [Microsoft Forms activities](#microsoft-forms-activities)
     :::column-end:::
-:::row-end:::
-:::row:::
+:::row-end::::::row:::
     :::column:::
         [Sensitivity label activities](#sensitivity-label-activities)
     :::column-end:::
