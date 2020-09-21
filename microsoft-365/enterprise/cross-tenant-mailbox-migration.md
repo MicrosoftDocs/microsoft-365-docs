@@ -284,7 +284,7 @@ You must ensure the following objects and attributes are set in the target organ
       -	TargetAddress/ExternalEmailAddress – MailUser will reference the user’s current mailbox hosted in source tenant (for example user@contoso.onmicrosoft.com). When assigning this value, verify that you have/are also assigning PrimarySMTPAddress or this value will set the PrimarySMTPAddress which will cause move failures. 
       -	You cannot add legacy smtp proxy addresses from source mailbox to target MailUser. For example, you cannot maintain contoso.com on the MEU in fabrikam.onmicrosoft.com tenant objects). Domains are associated with one Azure AD or Exchange Online tenant only.
  
-    Example target MailUser object
+    Example **target** MailUser object:
  
     | Attribute             | Value                                                                                                                    |
     |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -303,7 +303,7 @@ You must ensure the following objects and attributes are set in the target organ
     |                       | SMTP:Lara\.Newton@northwind.com                                                                                           |
     |||
 
-   Example source Mailbox object 
+   Example **source** Mailbox object:
 
    | Attribute             | Value                                                                    |
    |-----------------------|--------------------------------------------------------------------------|
