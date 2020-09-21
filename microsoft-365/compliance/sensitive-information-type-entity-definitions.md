@@ -23,6 +23,18 @@ description: "Data loss prevention (DLP) in the Security &amp; Compliance Center
 # Sensitive information type entity definitions
 
 Data loss prevention (DLP) in the Compliance Center includes many sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
+
+Sensitive information types require one of these subscriptions:
+- Microsoft 365 E3
+- Microsoft 365 E5
+
+Sensitive information types can be used in:
+- data loss prevention policies
+- communication compliance polcies
+- information governance
+- records management
+- Microsoft cloud app security
+
   
 ## ABA routing number
 
