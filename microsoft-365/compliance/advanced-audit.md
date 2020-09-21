@@ -52,13 +52,13 @@ You can also specify how long to retain audit records that match the policy and 
 
 Advanced Audit helps organizations to conduct forensic and compliance investigations by providing access to crucial events such as when mail items were accessed, or when mail items were replied to and forwarded, and when and what a user searched for in Exchange Online and SharePoint Online. These crucial events can help you investigate possible breaches and determine the scope of compromise.  Advanced Auditing provides the following crucial events:
 
-- [MailItemsAccessed](#mailItemsAccessed)
+- [MailItemsAccessed](#mailitemsaccessed)
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchQueryInitiatedExchange)
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
 
-- [SearchQueryInitiatedSharePoint](#searchQueryInitiatedSharePoint)
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
 
 ### MailItemsAccessed
 
