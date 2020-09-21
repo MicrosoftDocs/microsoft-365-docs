@@ -18,7 +18,7 @@ description: "Understand how to use and manage templates for building assessment
 
 # Working with assessment templates in Compliance Manager
 
-**In this article:** Understand how templates work and how to **manage them from your assessment templates** page. Get instructions for **creating** new templates, **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
+**In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. Get instructions for **creating** new templates, **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
 
 > [!IMPORTANT]
 > The assessment templates that are available to your organization depends on your licensing agreement. [Review the details](https://go.microsoft.com/fwlink/?linkid=2132371).
@@ -56,7 +56,7 @@ To create your own new template (used for building custom assessments), follow t
 2. Select **Create new template**. A template creation wizard will open.
 3. Choose the type of template you want to create. In this case, select **Create a custom template**, then select **Next**.
 4. At the **Upload file** screen, select **Browse** to find and upload your formatted Excel file containing all the required template data (see [instructions for properly formatting your file](#formatting-your-template-data-with-excel)).
-5. If there are no problems with your file, the name of the file uploaded will be displayed. Select **Next** to continue. (If you need to change the file, select Upload a different file).
+5. If there are no problems with your file, the name of the file uploaded will be displayed. Select **Next** to continue. (If you need to change the file, select **Upload a different file**).
     - If there’s an error with your file, an error message at the top explains what’s wrong. You’ll need to fix your file and upload it again. Errors will result if your spreadsheet is formatted improperly, or if there’s invalid information in certain fields (refer again to the [formatting instructions](#formatting-your-template-data-with-excel)).  
     
 6. The **Review and finish** screen shows the number of improvement actions and controls and the maximum score for the template. When ready to approve, select **Create template.** (If you need to make changes, select **Back**.)
@@ -114,7 +114,7 @@ The **Actions** tab is required.  It designates improvement actions managed by y
     - **Technical** - actions completed through the use of technology and mechanisms contained in the hardware, software, or firmware components of the information system to protect the confidentiality, integrity, and availability of organizational systems and data (example: multi-factor authentication)
     - **Documentation** - actions implemented through documented policies and procedures establishing and defining the controls required to protect the confidentiality, integrity, and availability of organizational systems, assets, data, and personnel (example: an information security policy)
 
-- **actionScore**: In this required field, provide a numeric score value for your action. It must be a whole number ranging from 1 to 99; it cannot be 0, null, or blank. The higher the number, the greater its value toward improving your compliance posture. The image below demonstrates how Microsoft scores controls:
+- **actionScore**: In this required field, provide a numeric score value for your action. It must be a whole number ranging from 1 to 99; it cannot be 0, null, or blank. The higher the number, the greater its value toward improving your compliance posture. The image below demonstrates how Compliance Manager scores controls:
 
 ![Compliance Manager controls point values](../media/compliance-score-action-scoring.png "Compliance Manager controls point values")
 
@@ -122,7 +122,7 @@ The **Actions** tab is required.  It designates improvement actions managed by y
 
 - **actionDescription**: Provide a description of the action. You can apply formatting such as bold text and hyperlinks. This is required field.
 
-- **dimension-Action Purpose**: This is an optional field. If you include it, the header must include the "dimension-" prefix. Any dimensions you include here will be used as [filters in Compliance Score](compliance-score-setup.md#filtering-your-dashboard-view) and appear on the improvement actions details page in Compliance Score.
+- **dimension-Action Purpose**: This is an optional field. If you include it, the header must include the "dimension-" prefix. Any dimensions you include here will be used as filters in Compliance Manager and appear on the improvement actions details page in Compliance Manager.
 
 ##### Dimensions tab
 
@@ -145,7 +145,7 @@ To modify a template, follow the steps below:
 
 1. From your **assessment templates** page, select the template you want to modify, which will bring up its details page.
 2. Select **Export to Excel**. An Excel file with all your template data will download. Save the file to your local machine.
-3. Make your template changes by modifying the Excel file according to the [modification instructions below](#formatting-your-excel-file-to-modify-a-template).
+3. Make your template changes by [modifying the Excel file using the instructions below](#formatting-your-excel-file-to-modify-a-template).
 4. When you're done making changes to your Excel file, save the file.
 5. At your template’s details page, select **Modify template** to initiate the modification wizard. 
 6. At the **Upload file** screen, select **Browse** to find and upload your Excel file.
@@ -158,7 +158,7 @@ To modify a template, follow the steps below:
 Your template will now include the changes you made. Any assessments that use this modified template will now show pending updates, and you’ll need to accept the updates to the assessments to reflect the changes made in the template. Learn more about [updates to assessments](compliance-manager-assessments.md#accepting-updates-to-assessments).
 
 > [!NOTE]
-> If you use Compliance Manager in a language other than English, you’ll notice that some text appears in English when you export a template to Excel. The titles of actions (both your improvement actions and Microsoft actions) must be in English so that they're recognized by controls. If you make changes to an action title, be sure to write it in English so that the file imports correctly.
+> If you use Compliance Manager in a language other than English, you’ll notice that some text appears in English when you export a template to Excel. The titles of actions (both your improvement actions and Microsoft actions) must be in English to be recognized by controls. If you make changes to an action title, be sure to write it in English so that the file imports correctly.
 
 ### Formatting your Excel file to modify a template
 
@@ -179,7 +179,7 @@ On the **Templates** tab, you can edit anything in the **title** column, the **i
 
 1. Go to the **Actions** tab. Add your information in the required fields in the first empty row underneath your existing actions.
 2. Go to your **ControlFamily** tab. Find the row containing the control your improvement action maps to. Add your new action to the **controlActionTitle** column in that row (remember to separate multiple actions in this field with two semi-colons, no space in between).
-3. Save your spreadsheet to your local machine.
+3. Save your spreadsheet.
 
 #### Edit an improvement action's information
 
@@ -206,7 +206,7 @@ Deleting an improvement action from a row in a spreadsheet **does not** remove t
 2. On the row for the improvement action you want to remove, put **Delete** in column A for that row.
 3. Ensure that this improvement action is no longer referenced by a control. Go to the **ControlFamily** tab and look for your improvement action's title in column F, which is **controlActionTitle**.
 4. When you find your improvement action listed in the **controlActionTitle** column, delete it.
-5. Save your spreadsheet to your local machine.
+5. Save your spreadsheet.
 
 When you import your spreadsheet back into the template, your action will be removed from the template. Removing an action from a template does not completely remove the action. That action can still be referenced by another template.
 
