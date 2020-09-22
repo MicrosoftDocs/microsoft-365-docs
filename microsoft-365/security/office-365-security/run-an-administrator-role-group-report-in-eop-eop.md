@@ -18,6 +18,9 @@ description: "Admins can learn how to run an administrator role group report in 
 
 # Run an administrator role group report in standalone EOP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, when an admin adds members to or removes members from administrative role groups, the service logs each occurrence. For more information about role groups in standalone EOP, see [Permissions in standalone EOP](feature-permissions-in-eop.md).
 
 When you run an administrator role group report in the Exchange admin center (EAC), entries are displayed as search results and include the role groups affected, who changed the role group membership and when, and what membership updates were made. Use this report to monitor changes to the administrative permissions assigned to users in your organization.

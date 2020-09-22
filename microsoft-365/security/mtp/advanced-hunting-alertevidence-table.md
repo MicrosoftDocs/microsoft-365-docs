@@ -21,6 +21,9 @@ ms.topic: article
 
 # AlertEvidence
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 

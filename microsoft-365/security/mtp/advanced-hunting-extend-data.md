@@ -21,6 +21,9 @@ ms.topic: article
 
 # Extend advanced hunting coverage with the right settings
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 
