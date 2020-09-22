@@ -1,27 +1,12 @@
 - name: Microsoft 365 security
   href: index.yml
   items: 
-    - name: Get started
+    - name: Get started 
       items: 
         - name: Top tasks to support working from home
           href: top-security-tasks-for-remote-work.md
         - name: Microsoft 365 Security for BDMs
           href: Microsoft-365-security-for-bdm.md
-        - name: Chief Information Security Officer (CISO) workshop training
-          href: ./office-365-security/ciso-workshop.md
-          items: 
-            - name: Module 1 - Microsoft cybersecurity briefing
-              href: ./office-365-security/ciso-workshop-module-1.md
-            - name: Module 2 - Security management
-              href: ./office-365-security/ciso-workshop-module-2.md
-            - name: Module 3 - Identity and Zero Trust User Access
-              href: ./office-365-security/ciso-workshop-module-3.md
-            - name: Module 4a - Threat protection strategy, Part I
-              href: ./office-365-security/ciso-workshop-module-4a.md
-            - name: Module 4b - Threat protection strategy, Part II
-              href: ./office-365-security/ciso-workshop-module-4b.md
-            - name: Module 5 - Information protection
-              href: ./office-365-security/ciso-workshop-module-5.md
     - name: Identity and device access configurations
       href: ../enterprise/microsoft-365-policies-configurations.md
       items: 
@@ -85,10 +70,24 @@
               href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
             - name: Generate a test alert
               href: mtp/generate-test-alert.md
+        - name: Run a pilot in production
+          items: 
+            - name: Pilot overview
+              href: mtp/mtp-pilot.md
+            - name: Plan
+              href: mtp/mtp-pilot-plan.md
+            - name: Prepare
+              href: mtp/prepare-mtpeval.md
+            - name: Simulate attack
+              href: mtp/mtp-pilot-simulate.md
+            - name: Close and summarize
+              href: mtp/mtp-pilot-close.md
         - name: How-to guides
           items: 
-            - name: Create a trial lab environment
-              href: mtp/mtp-evaluation.md             
+            - name: Create a trial lab or pilot environment
+              href: mtp/mtp-evaluation.md
+            - name: Run pilot playbook
+              href: mtp/mtp-pilot.md
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
             - name: Turn on Microsoft Threat Protection
@@ -109,36 +108,48 @@
                       href: mtp/manage-incidents.md
             - name: Automated investigation and response
               items: 
-                - name: AIR overview
+                - name: Overview of automated investigation and response
                   href: mtp/mtp-autoir.md
-                - name: Remediation actions
+                - name: Configure automated investigation and response capabilities
+                  href: mtp/mtp-configure-auto-investigation-response.md
+                - name: Remediation actions following automated investigations
                   href: mtp/mtp-remediation-actions.md
-                - name: The Action center
+                - name: Visit the Action center
                   href: mtp/mtp-action-center.md
-                - name: View automated investigation details and results
-                  href: mtp/mtp-autoir-results.md
-                - name: Approve or reject pending actions
+                - name: Approve or reject pending remediation actions
                   href: mtp/mtp-autoir-actions.md
+                - name: View details and results of automated investigations
+                  href: mtp/mtp-autoir-results.md
                 - name: Report false positives/negatives
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Advanced hunting
               items: 
                 - name: Advanced hunting overview
                   href: mtp/advanced-hunting-overview.md
-                - name: Learn the query language
-                  href: mtp/advanced-hunting-query-language.md
-                - name: Apply query best practices
-                  href: mtp/advanced-hunting-best-practices.md
+                - name: Learn, train, & get examples
+                  items: 
+                    - name: Learn the query language
+                      href: mtp/advanced-hunting-query-language.md
+                    - name: Get expert training
+                      href: mtp/advanced-hunting-expert-training.md
+                    - name: Use shared queries
+                      href: mtp/advanced-hunting-shared-queries.md
+                    - name: Hunt across devices, emails, apps, and identities 
+                      href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Work with query results
                   href: mtp/advanced-hunting-query-results.md
                 - name: Take action on query results
                   href: mtp/advanced-hunting-take-action.md
-                - name: Use shared queries
-                  href: mtp/advanced-hunting-shared-queries.md
-                - name: Hunt across devices, emails, apps, and identities 
-                  href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Go hunt
                   href: mtp/advanced-hunting-go-hunt.md
+                - name: Optimize & handle errors
+                  items: 
+                    - name: Apply query best practices
+                      href: mtp/advanced-hunting-best-practices.md
+                    - name: Handle errors
+                      href: mtp/advanced-hunting-errors.md
+                    - name: Service limits
+                      href: mtp/advanced-hunting-limits.md
                 - name: Extend data coverage
                   href: mtp/advanced-hunting-extend-data.md
                 - name: Data schema
@@ -187,6 +198,8 @@
                       href: mtp/advanced-hunting-emailpostdeliveryevents-table.md
                     - name: EmailUrlInfo
                       href: mtp/advanced-hunting-emailurlinfo-table.md
+                    - name: IdentityDirectoryEvents
+                      href: mtp/advanced-hunting-identitydirectoryevents-table.md
                     - name: IdentityInfo
                       href: mtp/advanced-hunting-identityinfo-table.md
                     - name: IdentityLogonEvents
@@ -194,7 +207,9 @@
                     - name: IdentityQueryEvents
                       href: mtp/advanced-hunting-identityqueryevents-table.md
                 - name: Functions
-                  items: 
+                  items:
+                    - name: AssignedIPAddresses()
+                      href: mtp/advanced-hunting-assignedipaddresses-function.md 
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
                 - name: Custom detections
@@ -215,24 +230,61 @@
                   href: mtp/monitor-devices.md
                 - name: App monitoring and reporting
                   href: mtp/monitor-apps.md
+        - name: Reference
+          items: 
             - name: Permissions & settings
               items: 
                 - name: Manage access
                   href: mtp/mtp-permissions.md
                 - name: Set time zone
                   href: mtp/mtp-time-zone.md
-            - name: View device profiles
-              href: mtp/device-profile.md
-            - name: Provide feedback
-              href: mtp/feedback.md
-            - name: Create ServiceNow tickets and tasks
+                - name: View device profiles
+                  href: mtp/device-profile.md
+                - name: Provide feedback
+                  href: mtp/feedback.md
+                - name: Create ServiceNow tickets and tasks
+                  items:
+                    - name: ServiceNow integration overview 
+                      href: ./mtp/tickets.md
+                    - name: ServiceNow tickets in the security center
+                      href: ./mtp/tickets-security-center.md
+            - name: Microsoft Threat Protection APIs (Preview)
               items:
-                - name: ServiceNow integration overview 
-                  href: ./mtp/tickets.md
-                - name: ServiceNow tickets in the security center
-                  href: ./mtp/tickets-security-center.md
-
-
+                - name: Overview of Microsoft Threat Protection APIs (Preview)
+                  href: mtp/api-overview.md
+                - name: Get started with Microsoft Threat Protection APIs (Preview)
+                  items:
+                    - name: Microsoft Threat Protection API license and terms of use
+                      href: mtp/api-terms.md
+                    - name: Access Microsoft Threat Protection APIs
+                      href: mtp/api-access.md
+                    - name: Hello World example
+                      href: mtp/api-hello-world.md
+                    - name: Get access with application context
+                      href: mtp/api-create-app-web.md
+                    - name:  Get access with user context
+                      href: mtp/api-create-app-user-context.md
+                    - name: Get partner application access
+                      href:  mtp/api-partner-access.md
+                    - name: Other API resources
+                      href: mtp/api-articles.md
+                - name: Microsoft Threat Protection APIs & schema (Preview)
+                  items:
+                    - name: Supported Microsoft Threat Protection APIs 
+                      href: mtp/api-supported.md
+                    - name: Common REST API error codes 
+                      href: mtp/api-error-codes.md
+                    - name: Advanced Hunting API
+                      href: mtp/api-advanced-hunting.md
+                    - name: Incident APIs
+                      items:
+                        - name: Incident methods and properties
+                          href: mtp/api-incident.md
+                        - name: List incidents
+                          href: mtp/api-list-incidents.md
+                        - name: Update incident
+                          href: mtp/api-update-incidents.md  
+ 
     - name: Office 365 security
       items: 
         - name: Get started
@@ -279,7 +331,7 @@
                       href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
                     - name: Spam confidence level (SCL)
                       href: ./office-365-security/spam-confidence-levels.md
-                    - name: Bulk complaint level (SCL)
+                    - name: Bulk complaint level (BCL)
                       href: ./office-365-security/bulk-complaint-level-values.md
                     - name: What's the difference between junk email and bulk email?
                       href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
@@ -311,6 +363,8 @@
                       href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
                     - name: Report junk email and phishing in Outlook on the web
                       href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+                    - name: Report junk email and phishing in Outlook for iOS and Android
+                      href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md
                     - name: Manually submit messages to Microsoft
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                     - name: Use mail flow rules to see what your users are reporting to Microsoft
@@ -380,6 +434,8 @@
                   href: ./office-365-security/support-for-validation-of-dkim-signed-messages.md
                 - name: Use DMARC to validate email
                   href: ./office-365-security/use-dmarc-to-validate-email.md
+            - name: Install Application Guard for Office
+              href: ./office-365-security/install-app-guard.md
             - name: Smart reports and insights in the Security & Compliance Center
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Security Dashboard overview

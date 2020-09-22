@@ -4094,7 +4094,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Yammer | Global Geography 1 – EMEA |
 | OneNote Services | Norway |
 | Stream | Global Geography 1 – EMEA |
-| Whiteboard | United States |
+| Whiteboard | Global Geography 1 – EMEA |
 | Forms | Global Geography 1 – EMEA |
 | Workplace Analytics | United States |
 </p></details>
@@ -4814,7 +4814,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Yammer | Global Geography 1 – EMEA |
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
-| Whiteboard | United States |
+| Whiteboard | Global Geography 1 – EMEA |
 | Forms | Global Geography 1 – EMEA |
 | Workplace Analytics | United States |
 </p></details>

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: 
@@ -16,9 +16,9 @@ ms.collection: M365-security-compliance
 description: "Administrators can set up a data connector to import employee data from their organization's human resources (HR) system to Microsoft 365. This lets you use HR data in insider risk management policies to help you detect activity by specific users that may pose an internal threat to your organization."
 ---
 
-# Set up a connector to import HR data (preview)
+# Set up a connector to import HR data
 
-You can set up a data connector in the Microsoft 365 compliance center to import human resources (HR) data related to events such as a user's resignation or a change in a user's job level. This HR data can then be used by the [insider risk management solution](insider-risk-management.md) to generate risk indicators that can help you identity possible malicious activity or data theft by users inside your organization.
+You can set up a data connector in the Microsoft 365 compliance center to import human resources (HR) data related to events such as a user's resignation or a change in a user's job level. The HR data can then be used by the [insider risk management solution](insider-risk-management.md) to generate risk indicators that can help you identity possible malicious activity or data theft by users inside your organization.
 
 Setting up a connector for HR data that insider risk management policies can use to generate risk indicators consists of creating a CSV file that contains that contains the HR data, creating an app in Azure Active Directory that's used for authentication, creating an HR data connector in the Microsoft 365 compliance center, and then running a script (on a scheduled basis) that ingests the HR data in CSV files to the Microsoft cloud so it's available to the insider risk management solution.
 
@@ -86,8 +86,8 @@ The following table describes each column in the CSV file for employee resignati
 | **Column**  |  **Description**|
 |:------------|:----------------|
 |**EmailAddress**| Specifies the email address (UPN) of the terminated user.|
-| **ResignationDate** | Specifies the date the user's employment was officially terminated in your organization. For example, this may be the date when the user gave their notice about leaving your organization. This date may be the different than the date of the person's last day of work. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **LastWorkingDate** | Specifies the last day of work for the terminated user. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **ResignationDate** | Specifies the date the user's employment was officially terminated in your organization. For example, this may be the date when the user gave their notice about leaving your organization. This date may be the different than the date of the person's last day of work. Use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **LastWorkingDate** | Specifies the last day of work for the terminated user. Use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
 ### CSV file for job level changes data
@@ -105,10 +105,10 @@ The following table describes each column in the CSV file for job level changes 
 | **Column**|**Description**|
 |:--------- |:------------- |
 | **EmailAddress**  | Specifies the user's email address (UPN).|
-| **EffectiveDate** | Specifies the date that the user's job level was officially changed. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **Remarks**| Specifies the remarks that evaluator has provided about the change of job level. This is a text parameter with a limit of 200 characters. This is an optional parameter. You don't have to include it in the CSV file.|
-| **OldLevel**| Specifies the user's job level before it was changed. This is a free-text parameter and can contain hierarchical taxonomy for your organization. This is an optional parameter. You don't have to include it in the CSV file.|
-| **NewLevel**| Specifies the user's job level after it was changed. This is a free-text parameter and can contain hierarchical taxonomy for your organization. This is an optional parameter. You don't have to include it in the CSV file.|
+| **EffectiveDate** | Specifies the date that the user's job level was officially changed. Use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **Remarks**| Specifies the remarks that evaluator has provided about the change of job level. You can enter a limit of 200 characters. This parameter is optional. You don't have to include it in the CSV file.|
+| **OldLevel**| Specifies the user's job level before it was changed. This is a free-text parameter and can contain hierarchical taxonomy for your organization. This parameter is optional. You don't have to include it in the CSV file.|
+| **NewLevel**| Specifies the user's job level after it was changed. This is a free-text parameter and can contain hierarchical taxonomy for your organization. This parameter is optional. You don't have to include it in the CSV file.|
 |||
 
 ### CSV file for performance review data
@@ -126,9 +126,9 @@ The following table describes each column in the CSV file for performance review
 | **Column**|**Description**|
 |:----------|:--------------|
 | **EmailAddress**  | Specifies the user's email address (UPN).|
-| **EffectiveDate** | Specifies the date that the user was officially informed about the result of their performance review. This can be the date when the performance review cycle ended. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **Remarks**| Specifies any remarks that evaluator has provided to the user for the performance review. This is a text parameter with a limit of 200 characters. This is an optional parameter. You don't have to include it in the CSV file.|
-| **Rating**| Specifies the rating provided for the performance review. This is a text parameter and can contain any free-form text that your organization uses to recognize the evaluation. For example, "3 Met expectations" or "2 Below average". This is a text parameter with a limit of 25 characters. This is an optional parameter. You don't have to include it in the CSV file.|
+| **EffectiveDate** | Specifies the date that the user was officially informed about the result of their performance review. This can be the date when the performance review cycle ended. Use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **Remarks**| Specifies any remarks that evaluator has provided to the user for the performance review. This is a text parameter with a limit of 200 characters. This parameter is optional. You don't have to include it in the CSV file.|
+| **Rating**| Specifies the rating provided for the performance review. This is a text parameter and can contain any free-form text that your organization uses to recognize the evaluation. For example, "3 Met expectations" or "2 Below average". This is a text parameter with a limit of 25 characters. This parameter is optional. You don't have to include it in the CSV file.|
 |||
 
 ### CSV file for performance improvement plan data
@@ -196,15 +196,15 @@ Based on your organization's HR systems and how you will export HR data to CSV f
 
 ## Step 2: Create an app in Azure Active Directory
 
-The next step is to create and register a new app in Azure Active Directory (AAD). The app will correspond to the HR connector that you create in Step 3. Creating this app will allow AAD to authenticate the HR connector when it runs and attempts to access your organization. This app will also be used to authenticate the script that you run in Step 4 to upload your HR data to the Microsoft cloud. During the creation of this AAD app, be sure to save the following information. These values will be used in Step 3 and Step 4.
+The next step is to create and register a new app in Azure Active Directory (Azure AD). The app will correspond to the HR connector that you create in Step 3. Creating this app will allow Azure AD to authenticate the HR connector when it runs and attempts to access your organization. This app will also be used to authenticate the script that you run in Step 4 to upload your HR data to the Microsoft cloud. During the creation of this Azure AD app, be sure to save the following information. These values will be used in Step 3 and Step 4.
 
-- AAD application ID (also called the *app Id* or *client Id*)
+- Azure AD application ID (also called the *app Id* or *client Id*)
 
-- AAD application secret (also called the *client secret*)
+- Azure AD application secret (also called the *client secret*)
 
 - Tenant Id (also called the *directory Id*)
 
-For step-by-step instructions for creating an app in AAD, see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+For step-by-step instructions for creating an app in Azure AD, see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## Step 3: Create the HR connector
 
@@ -214,13 +214,13 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** in the left nav.
 
-2. On the **Data connectors (preview)** page under **HR**, click **View**.
+2. On the **Data connectors** page under **HR**, click **View**.
 
 3. On the **HR Custom** page, click **Add connector**.
 
 4. On the **Setup the connection** page, do the following and then click **Next**:
 
-   a. Type or paste the AAD application ID for the Azure app that you created in Step 2.
+   a. Type or paste the Azure AD application ID for the Azure app that you created in Step 2.
 
    b. Type a name for the HR connector.
 
@@ -289,8 +289,8 @@ The last step in setting up an HR connector is to run a sample script that will 
    |**Parameter**|**Description**
    |:-----|:-----|:-----|
    |`tenantId`|This is the Id for your Microsoft 365 organization that you obtained in Step 2. You can also obtain the tenant Id for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
-   |`appId` |This is the AAD application Id for the app that you created in Azure AD in Step 2. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. | 
-   |`appSecret`|This is the AAD application secret for the app that you created in Azure AD in Step 2. This also used for authentication.|
+   |`appId` |This is the Azure AD application Id for the app that you created in Azure AD in Step 2. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. | 
+   |`appSecret`|This is the Azure AD application secret for the app that you created in Azure AD in Step 2. This also used for authentication.|
    |`jobId`|This is the job ID for the HR connector that you created in Step 3. This is used to associate the HR data that is uploaded to the Microsoft cloud with the HR connector.|
    |`csvFilePath`|This is the file path for the CSV file (stored on the same system as the script) that you created in Step 1. Try to avoid spaces in the file path; otherwise use single quotation marks.|
    |||
@@ -302,6 +302,9 @@ The last step in setting up an HR connector is to run a sample script that will 
     ```
 
    If the upload is successful, the script displays the **Upload Successful** message.
+
+   > [!NOTE]
+   > If you have problems running the previous command because of execution policies, see [About Execution Policies](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) and [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) for guidance about setting execution policies.
 
 ## Step 5: Monitor the HR connector
 

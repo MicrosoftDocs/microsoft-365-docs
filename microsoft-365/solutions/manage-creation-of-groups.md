@@ -118,7 +118,7 @@ Run the script by typing:
 
 `.\GroupCreators.ps1`
 
-and [sign in with your administrator account](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#step-2-connect-to-azure-ad-for-your-office-365-subscription) when prompted.
+and [sign in with your administrator account](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) when prompted.
 
 ```PowerShell
 $GroupName = "<SecurityGroupName>"
@@ -158,7 +158,7 @@ If in the future you want to change which security group is used, you can rerun 
 
 If you want to turn off the group creation restriction and again allow all users to create groups, set $GroupName to "" and $AllowGroupCreation to "True" and rerun the script.
     
-## Step 4: Verify that it works
+## Step 3: Verify that it works
 
 Changes can take thirty minutes or more to take effect. You can verify the new settings by doing the following:
 

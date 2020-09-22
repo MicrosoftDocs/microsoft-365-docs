@@ -3,7 +3,7 @@ title: Data protection impact assessments
 description: These documents provide data controllers with information that will help them to determine whether a DPIA is needed and, if so, what details to include.
 keywords: Data protection impact assessment, DPIA, Dynamics 365, Microsoft Professional Services, Microsoft 365, Microsoft 365 documentation, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

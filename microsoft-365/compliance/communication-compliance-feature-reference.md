@@ -44,19 +44,39 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 
 ## Permissions (preview)
 
-There are five roles used to configure permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the *Communication Compliance Admin* role.
+>[!Important]
+>By default, Global Administrators do not have access to communication compliance features. The roles assigned in this step are required before any communication compliance features will be accessible.
 
-Depending on how you wish to manage communication policies and alerts, you'll need to create one or more new role groups for administrators, reviewers, and investigators. You have the option to assign users to specific role groups to manage different sets of communication compliance features. Or you may decide to create one role group and assign all the communication compliance roles to the group. Create a single role group or multiple groups to best fit your compliance management requirements.
+There are five role groups used to configure permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft 365 compliance center and to continue with these configuration steps, you must be assigned to the *Communication Compliance* or *Communication Compliance Admin* role groups. To access and manage communication compliance features after initial configuration, users must be a member of at least one communication compliance role group.
 
-Choose from these role options when configuring your communication compliance role groups:
+Depending on how you wish to manage communication policies and alerts, you'll need to assign users to specific role groups. You have the option to assign users with different compliance responsibilities to specific role groups to manage different areas of communication compliance features. Or you may decide to assign all user accounts for designated administrators, analysts, investigators, and viewers to the *Communication Compliance* role group. Use a single role group or multiple role groups to best fit your compliance management requirements.
+
+Choose from these role group options when configuring communication compliance:
 
 |**Role**|**Role permissions**|
 |:-----|:-----|
-| **Communication Compliance Admin** | Users assigned this role can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned this role cannot view message alerts. |
-| **Communication Compliance Analysis** | Users assigned this role can view policies where they are assigned as Reviewers, view message metadata (not message content), escalate to additional reviewers, or send notifications to users. Analysts cannot resolve pending alerts. |
-| **Communication Compliance Investigation** | Users assigned this role can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
-| **Communication Compliance Viewer** | Users assigned this role can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
-| **Communication Compliance Case Management** | Users assigned this role can manage cases and act on alerts. This role is required for when creating custom role groups for administrators, analysts, and investigators. Custom groups for viewers do not need this role assigned. |
+| **Communication Compliance** | Use this role group to manage communication compliance for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and viewers, you can configure communication compliance permissions in a single group. This role group contains all the communication compliance permission roles. This configuration is the easiest way to quickly get started with communication compliance and is a good fit for organizations that do not need separate permissions defined for separate groups of users. |
+| **Communication Compliance Admin** | Use this role group to initially configure communication compliance and later to segregate communication compliance administrators into a defined group. Users assigned to this role group can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned to this role group cannot view message alerts. |
+| **Communication Compliance Analyst** | Use this group to assign permissions to users that will act as communication compliance analysts. Users assigned to this role group can view policies where they are assigned as Reviewers, view message metadata (not message content), escalate to additional reviewers, or send notifications to users. Analysts cannot resolve pending alerts. |
+| **Communication Compliance Investigator** | Use this group to assign permissions to users that will act as communication compliance investigators. Users assigned to this role group can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
+| **Communication Compliance Viewer** | Use this group to assign permissions to users that will manage communication reports. Users assigned to this role group can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
+
+### For organizations using the original permissions and role groups
+
+The new role group structure replaces initial role group structure for communication compliance. For organizations already using communication compliance, you needed to be assigned the Supervisory Review Administrator role to get started with communication compliance in the Microsoft 365 compliance center. Additionally, you had to create a new role group for reviewers with the Supervisory Review Administrator, Case Management, Compliance Administrator, and Review roles to investigate and remediate messages with policy matches. Essentially, all admins and reviewers were in a single role group and everyone had the same access and management permissions. With the latest updates to communication compliance, you should plan to migrate from the previous role group structure to the new role group structure. Support for the previous role group structure will be phased out.
+
+To help your migration planning, consider the following example. You currently have three types of users in your organization, IT admins, triage, and reviewers. These three types of users are in the previous role group structure and are all members of a single role group with the following roles assigned:
+
+- Supervisory Review Administrator
+- Case Management
+- Compliance Administrator
+- Review
+
+To update the roles for these users for the new role group structure, and to separate the access and management permissions for the users, you may consider three new groups and the associated new role group assignments:
+
+- **IT Admins**: Assigned to the new *Communication Compliance Admin* role group.
+- **Triage**: Assigned to the *Communication Compliance Analyst* role group.
+- **Reviewers**: Assigned to the new *Communication Compliance Investigator* role group.
 
 ## Supervised users
 
@@ -145,7 +165,7 @@ To learn more about sensitive information details and the patterns included in t
 
 ### Custom keyword dictionaries
 
-Configure custom keyword dictionaries (or lexicons) to provide simple management of keywords specific to your organization or industry. Keyword dictionaries support up to 100,000 terms per dictionary and support any language. If needed, you can apply multiple custom keyword dictionaries to a single policy or have a single keyword dictionary per policy. These dictionaries are assigned in a communication compliance policy and can be sourced from a file (such as a .csv or .txt list), or from a list you can [Import in the Compliance center](create-a-keyword-dictionary.md). Use custom dictionaries when you need to support terms or languages specific to your organization and policies.
+Configure custom keyword dictionaries (or lexicons) to provide simple management of keywords specific to your organization or industry. Keyword dictionaries support up to 100 KB of terms (post-compression) in the dictionary and support any language. The tenant limit is also 100 KB after compression. If needed, you can apply multiple custom keyword dictionaries to a single policy or have a single keyword dictionary per policy. These dictionaries are assigned in a communication compliance policy and can be sourced from a file (such as a .csv or .txt list), or from a list you can [Import in the Compliance center](create-a-keyword-dictionary.md). Use custom dictionaries when you need to support terms or languages specific to your organization and policies.
 
 ### Classifiers
 
@@ -156,15 +176,15 @@ Communication compliance built-in trainable and global classifiers scan communic
 - **Threat**: Scans for threats to commit violence or physical harm to a person or property.
 - **Targeted harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin.
 - **Profanity**: Scans for profane expressions that embarrass most people.
-- **Adult images**: Scans for images which are sexually explicit in nature.
-- **Racy images**: Scans for images which are sexually suggestive in nature, but contain less explicit content than images deemed Adult.
+- **Adult images**: Scans for images that are sexually explicit in nature.
+- **Racy images**: Scans for images that are sexually suggestive in nature, but contain less explicit content than images deemed Adult.
 - **Gory images**: Scans for images that depict violence and gore.
 
-The *Adult*, *Racy*, and *Gory* image classifiers scan files in .JPEG, .PNG, .GIF, and .BMP formats. The size for image files must less than 4 megabytes (MB) and the dimensions of the images must be greater than 50x50 pixels and greater than 50 kilobytes (KB) for the image to qualify for evaluation. Image identification is supported for Exchange Online email messages and Microsoft Teams channels and chats.
+The *Adult*, *Racy*, and *Gory* image classifiers scan files in .JPEG, .PNG, .GIF, and .BMP formats. The size for image files must be less than 4 megabytes (MB) and the dimensions of the images must be greater than 50x50 pixels and greater than 50 kilobytes (KB) for the image to qualify for evaluation. Image identification is supported for Exchange Online email messages and Microsoft Teams channels and chats.
 
 The built-in trainable and global classifiers don't provide an exhaustive list of terms or images across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update classifiers at its discretion. While classifiers may assist your organization in monitoring these areas, classifiers aren't intended to provide your organization's sole means of monitoring or addressing such language or imagery. Your organization, not Microsoft, remains responsible for all decisions related to scanning and blocking language and images in these areas.
 
-For information about trainable classifiers in Microsoft 365, see [Getting started with trainable classifiers](classifier-getting-started-with.md).
+For information about trainable classifiers in Microsoft 365, see [Getting started with trainable classifiers](classifier-get-started-with.md).
 
 ### Conditional settings
 <a name="ConditionalSettings"> </a>
@@ -175,7 +195,7 @@ The following table explains more about each condition.
   
 |**Condition**|**How to use this condition**|
 |:-----|:-----|
-| **Content matches any of these classifiers** | Apply to the policy when any classifiers are included or excluded in a message. Some classifiers are pre-defined in your tenant, and custom classifiers must be configured separately before they're available for this condition. Only one classifier can be defined as a condition in a policy. For more information about configuring classifiers, see [Classifiers](classifier-getting-started-with.md). |
+| **Content matches any of these classifiers** | Apply to the policy when any classifiers are included or excluded in a message. Some classifiers are pre-defined in your tenant, and custom classifiers must be configured separately before they're available for this condition. Only one classifier can be defined as a condition in a policy. For more information about configuring classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md). |
 | **Content contains any of these sensitive info types** | Apply to the policy when any sensitive information types are included or excluded in a message. Some classifiers are pre-defined in your tenant, and custom classifiers can be configured separately or as part of the condition assignment process. Each sensitive information type you choose is applied separately and only one of these sensitive information types must apply for the policy to apply to the message. For more information about custom sensitive information types, see [Custom sensitive information types](custom-sensitive-info-types.md). |
 | **Message is received from any of these domains**  <br><br> **Message is not received from any of these domains** | Apply the policy to include or exclude specific domains or email addresses in received messages. Enter each domain or email address and separate multiple domains or email addresses with a comma. Each domain or email address entered is applied separately, only one domain or email address must apply for the policy to apply to the message. <br><br> If you want to scan all email from a specific domain, but want to exclude messages that don't need review (newsletters, announcements, and so on), you must configure a **Message is not received from any of these domains** condition that excludes the email address (example "newsletter@contoso.com"). |
 | **Message is sent to any of these domains**  <br><br> **Message is not sent to any of these domains** | Apply the policy to include or exclude specific domains or email addresses in sent messages. Enter each domain or email address and separate multiple domains or email addresses with a comma. Each domain or email address is applied separately, only one domain or email address must apply for the policy to apply to the message. <br><br> If you want to scan all email sent to a specific domain, but want to exclude sent messages that don't need review, you must configure two conditions: <br> - A **Message is sent to any of these domains** condition that defines the domain ("contoso.com"), AND <br> - A **Message is not sent to any of these domains** condition that excludes the email address ("subscriptions@contoso.com"). |
@@ -218,7 +238,7 @@ Protecting the privacy of users that have policy matches is important and can he
 For users with a communication compliance match, you can choose one of the following settings in **Communication compliance settings**:
 
 - **Show anonymized versions of usernames**: User names are anonymized to prevent admins, analysts, data investigators, and reviewers from seeing who is associated with policy alerts. For example, a user 'Grace Taylor' would appear with a randomized pseudonym such as 'AnonIS8-988' in all areas of the communication compliance experience. Choosing this setting anonymizes all users with current and past policy matches and applies to all policies. User profile information in the communication compliance alert details will not be available when this option is chosen. However, user names are displayed when adding new users to existing policies or when assigning users to new policies. If you choose to turn off this setting, user names are displayed for all users that have current or past policy matches.
-- **Do not show anonymized versions of usernames**: User names are displayed for all current and past policy matches for communication compliance alerts. User profile information (the name, title, alias, and organization or department) is displayed for the user for all insider risk management alerts and cases.
+- **Do not show anonymized versions of usernames**: User names are displayed for all current and past policy matches for communication compliance alerts. User profile information (the name, title, alias, and organization or department) is displayed for the user for all communication compliance alerts.
 
 ## Notice templates
 
@@ -309,16 +329,91 @@ If you'd like to change the severity level assigned in an alert policy for a spe
 
 7. Select **Close** to exit the alert policy details page.
 
+## Power Automate flows (preview)
+
+[Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started) is a workflow service that automates actions across applications and services. By using flows from templates or created manually, you can automate common tasks associated with these applications and services. When you enable Power Automate flows for communication compliance, you can automate important tasks for alerts and users. You can configure Power Automate flows to notify managers when users have communication compliance alerts and other applications.
+
+Customers with Microsoft 365 subscriptions that include communication compliance do not need additional Power Automate licenses to use the recommended default communication compliance Power Automate template. The default template can be customized to support your organization and cover core communication compliance scenarios. If you choose to use premium Power Automate features in these templates, create a custom template using the Microsoft 365 compliance connector, or use Power Automate templates for other compliance areas in Microsoft 365, you may need additional Power Automate licenses.
+
+![Communication compliance Power Automate](../media/communication-compliance-power-automate.png)
+
+The following Power Automate template is provided to customers to support process automation for communication compliance alerts:
+
+- **Notify manager when a user has a communication compliance alert**: Some organizations may need to have immediate management notification when a user has a communication compliance alert. When this flow is configured and selected, the manager for the case user is sent an email message with the following information about all alerts:
+    - Applicable policy for the alert
+    - Date/Time of the alert
+    - Severity level of the alert
+
+### Create a Power Automate flow
+
+To create a Power Automate flow from a recommended default template, you'll use the **Manage Power Automate flows** option from the **Automate** control when working directly in an alert. To create a Power Automate flow with **Manage Power Automate flows**, you must be a member of at least one communication compliance role group.
+
+Complete the following steps to create a Power Automate flow from a default template:
+
+1. In the Microsoft 365 compliance center, go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+2. From the policy, select the **Pending** tab and select a pending alert.
+3. Select **Power Automate** from the alert action menu.
+4. On the **Power Automate** page, select a default template from the **Communication compliance templates you may like** section on the page.
+5. The flow will list the embedded connections needed for the flow and will display if the connection statuses are available. If needed, update any connections that aren't displayed as available. Select **Continue**.
+6. By default, the recommended flows are pre-configured with the recommended communication compliance and Microsoft 365 service data fields required to complete the assigned task for the flow. If needed, customize the flow components by using the **Show advanced options** control and configuring the available properties for the flow component.
+7. If needed, add any additional steps to the flow by selecting the **New step** button. In most cases, this change should not be needed for the recommended default templates.
+8. Select **Save draft** to save the flow for further configuration later, or select **Save** to complete the configuration for the flow.
+9. Select **Close** to return to the Power Automate flow page. The new template will be listed as a flow on the **My flows** tab and is automatically available from the Power Automate control for the user that created the flow when working with communication compliance alerts.
+
+### Share a Power Automate flow
+
+By default, Power Automate flows created by a user are only available to that user. For other communication compliance users to have access and use a flow, the flow must be shared by the flow creator. To share a flow, you'll use the **Power Automate** control when working directly in an alert.
+
+To share a Power Automate flow, you must be a member of at least one communication compliance role group.
+Complete the following steps to share a Power Automate flow:
+
+1. In the Microsoft 365 compliance center, go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+2. From the policy, select the **Pending** tab and select a pending alert.
+3. Select **Power Automate** from the alert action menu.
+4. On the **Power Automate flows** page, select the **My flows** or **Team flows** tab.
+5. Select the flow to share, then select **Share** from the flow options menu.
+6. On the flow sharing page, enter the name of the user or group you want to add as an owner for the flow.
+7. On the **Connection Used** dialog, select **OK** to acknowledge that the added user or group will have full access to the flow.
+
+### Edit a Power Automate flow
+
+If you need to edit a flow, you'll use the **Power Automate** control when working directly in an alert. To edit a Power Automate flow, you must be a member of at least one communication compliance role group.
+
+Complete the following steps to edit a Power Automate flow:
+
+1. In the Microsoft 365 compliance center, go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+2. From the policy, select the **Pending** tab and select a pending alert.
+3. Select **Power Automate** from the alert action menu.
+4. On the **Power Automate flows** page, select flow to edit. Select **Edit** from the flow control menu.
+5. Select the **ellipsis** > **Settings** to change a flow component setting or **ellipsis** > **Delete** to delete a flow component.
+6. Select **Save** and then **Close** to complete editing the flow.
+
+### Delete a Power Automate flow
+
+If you need to delete a flow, you'll use the **Power Automate** control when working directly in an alert. To delete a Power Automate flow, you must be a member of at least one communication compliance role group.
+
+Complete the following steps to delete a Power Automate flow:
+
+1. In the Microsoft 365 compliance center, go to **Communication compliance** > **Policies** and select the policy with the alert you want review.
+2. From the policy, select the **Pending** tab and select a pending alert.
+3. Select **Power Automate** from the alert action menu.
+4. On the **Power Automate flows** page, select flow to delete. Select **Delete** from the flow control menu.
+5. On the deletion confirmation dialog, select **Delete** to remove the flow or select **Cancel** to exit the deletion action.
+
 ## Reports (preview)
 
-The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets is not exportable.
+The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets is not exportable. Detailed reports provide in-depth information related to specific communication compliance areas and offer the ability to filter, group, sort, and export information while reviewing.
 
-The **Reports** dashboard contains the following report widgets:
+The **Reports dashboard** contains the following report widgets and detailed reports links:
 
-- **Recent policy matches**: displays the number of matches by active policy over time.
-- **Resolved items by policy**: displays the number of policy match alerts resolved by policy over time.
-- **Users with most policy matches**: displays the users (or anonymized usernames) and number of policy matches for a given period.
-- **Policy with most matches**: displays the policies and the number of matches for a given period, ranked highest to lowest for matches.
+- **Recent policy matches** widget: displays the number of matches by active policy over time.
+- **Resolved items by policy** widget: displays the number of policy match alerts resolved by policy over time.
+- **Users with most policy match** widget: displays the users (or anonymized usernames) and number of policy matches for a given period.
+- **Policy with most matches** widget: displays the policies and the number of matches for a given period, ranked highest to lowest for matches.
+- **Escalations by policy** widget: displays the number of escalations per policy over a given time.
+- **Policy settings and status** detailed report: provides a detailed look at policy configuration and settings, as well as the general status for each of the policy (matches and actions) on messages. Use the *Export* option to create a .CSV file containing the report details.
+- **Items and actions per policy** detailed report: Review and export matching items and remediation actions per policy. Use the *Export* option to create a .CSV file containing the report details.
+- **Item and actions per location** detailed report: Review and export matching items and remediation actions per Microsoft 365 location. Use the *Export* option to create a .CSV file containing the report details.
 
 ## Audit
 

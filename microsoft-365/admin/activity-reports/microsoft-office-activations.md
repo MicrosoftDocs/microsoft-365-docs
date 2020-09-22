@@ -43,7 +43,7 @@ You can get a view into your organization's Office activations by looking at the
   
 ![Count of Office activations](../../media/8c0ae08d-2d71-4437-9147-12c345bb5e9d.png)
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1  <br/> |The Office Activations report presents the current state of the office license activations data [as of the date of the report presented on the top right of the chart].  <br/> |
 |2  <br/> |The data in each report usually covers up to the last 24 to 48 hours.  <br/> |

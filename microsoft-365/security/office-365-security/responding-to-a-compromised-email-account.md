@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
@@ -127,7 +127,7 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 
 2. Find and select the user account, click ![More icon](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Edit sign-in status**.
 
-3. On the **Block sign-in** pane that appears, select **Block this user from sigining in**, and then click **Save changes**.
+3. On the **Block sign-in** pane that appears, select **Block this user from signing in**, and then click **Save changes**.
 
 4. Open the Exchange admin center (EAC) at <admin.protection.outlook.com/ecp/>, and go to **Recipients > Mailboxes**.
 

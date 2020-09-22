@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -44,9 +44,9 @@ In Microsoft 365 organizations with mailboxes in Exchange Online, you can use th
 
 2. In the dialog that appears, click **Report**. If you change your mind, click **Don't Report**.
 
-   ![Report as junk dialog](../../media/owa-report-as-junk-dialog.png)
-
-   ![Report as phishing dialog](../../media/owa-report-as-phishing-dialog.png)
+   |Junk|Phishing|
+   |:---:|:---:|
+   |![Report as junk dialog](../../media/owa-report-as-junk-dialog.png)|![Report as phishing dialog](../../media/owa-report-as-phishing-dialog.png)|
 
 3. The selected messages will be sent to Microsoft for analysis. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
 
@@ -62,9 +62,9 @@ In Microsoft 365 organizations with mailboxes in Exchange Online, you can use th
 
 2. In the dialog that appears, read the information and click **Report**. If you change your mind, click **Don't Report**.
 
-   ![Report as not junk dialog](../../media/owa-report-as-not-junk-dialog.png)
-
-   ![Report as phishing dialog](../../media/owa-report-as-phishing-dialog.png)
+   |Not Junk|Phishing|
+   |:---:|:---:|
+   |![Report as not junk dialog](../../media/owa-report-as-not-junk-dialog.png)|![Report as phishing dialog](../../media/owa-report-as-phishing-dialog.png)|
 
 3. The selected messages will be sent to Microsoft for analysis. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
 

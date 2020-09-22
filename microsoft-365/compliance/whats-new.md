@@ -1,5 +1,5 @@
 ---
-title: What's new in the compliance center
+title: What's new in Microsoft 365 compliance
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -16,17 +16,47 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: We're continuously adding new features to the Microsoft 365 compliance center. Find out what we've been up to this month.
+description: Whether it be adding new new solutions to the compliance center, updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Find out what we've been up to this month.
 ms.custom: seo-marvel-mar2020
 ---
 
-# What's new in the Microsoft 365 compliance center
+# What's new in Microsoft 365 compliance
 
-We're continuously adding new features to the [Microsoft 365 compliance center](microsoft-365-compliance-center.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, try adding yourself to [targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365).
+Whether it be adding new new solutions to the [Microsoft 365 compliance center](microsoft-365-compliance-center.md), updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Take a look below to see what’s new in Microsoft 365 compliance today. 
+
+> [!NOTE]
+> Some compliance features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, try adding yourself to [targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365).
+
 
 > [!TIP]
-> Interested in what's going on in other admin centers? Check out these articles:<br>[What's new in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
+> Interested in what's going on in other admin centers? Check out these articles:<br>[What's new in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[What's new in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
+
+## July 2020
+
+### Spotlight on help docs
+
+To help you understand which compliance solutions are used to protect and govern your organization’s sensitive data, we created two new landing pages with overviews of how the solutions work together to achieve those goals, including links to related docs so you can dive in further.
+
+[Microsoft Information Protection in Microsoft 365](protect-information.md)<br>
+[Microsoft Information Governance in Microsoft 365](manage-Information-governance.md)
+
+### Advanced eDiscovery: Add non-custodial data sources to your cases
+
+Add data to a case without having to associate it with a custodian (known as [non-custodial data sources](non-custodial-data-sources.md)). And if you need to place this non-custodial data on hold, you’ll be able to do so using our new Advanced Indexing feature.
+
+### Data connectors: HR connector enhancements
+
+(In preview) A new version of the [HR connector](import-hr-data.md) lets you to import data related to job level changes, performance reviews, and performance improvement plans. This data can then be used in several [insider risk policies](insider-risk-management-policies.md) to detect related activity.
+
+### Retention labels: New support for email
+
+You can now create a [retention label](retention.md#retention-labels) to start retaining email based on when messages were labeled. This doesn’t apply to calendar items, which will be retained based on when the item is sent.
+
+### Sensitivity labels: New feature and an improvement
+
+- (In preview) When configuring encryption settings for a label, look for the new option to use [Double Key Encryption](encryption-sensitivity-labels.md#double-key-encryption) to further protect labeled files and emails.
+- When creating or deleting sensitivity labels or creating, editing, or deleting their label policies, changes now synchronize within 1 hour to all users, apps, and services.
 
 ## June 2020
 
@@ -88,8 +118,6 @@ April includes a couple key updates to our records management solution:
 
 - The ‘Records management’ section is now fully available in the compliance center. Take advantage of updated user interfaces and functionality for file plan, retention labels and label policies, events, and disposition.
 - Speaking of disposition, we also rolled out [proof of disposition](disposition.md#disposition-of-records) for records in SharePoint and OneDrive. You can now see a list of items in those locations that have been disposed of automatically or after a disposition review.
-
-:::image type="content" source="../media/mcc-records-management-page.png" alt-text="Records management section in Microsoft 365 compliance center":::
 
 ### Sensitivity labels: Preview auto-labeling policies
 
@@ -236,7 +264,7 @@ Here's a summary of the new solutions you'll find. Keep an eye out for others co
 |Solution catalog (preview) <br/>|The solution catalog is your one-stop-shop for discovering, learning about, and quickly getting started with our compliance and risk management solutions. The catalog is organized into three compliance categories, each containing details about the solutions that make up that category. Categories include Information protection & governance, Insider risk management, and Discovery & response <br/>|[Overview of the solution catalog (preview)](microsoft-365-solution-catalog.md)|
 |Communication compliance (preview) <br/>|Communication compliance is part of the new insider risk management category that helps minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. The solution extends the capabilities of supervision policies in Office 365 by introducing several new enhancements such as intelligent templates, flexible remediation workflows, and actionable insights. <br/>|[Communication compliance in Microsoft 365 (preview)](communication-compliance.md)|
 |Data classification (preview) <br/>|Our new Data classification page contains powerful insights and tools to help you discover and evaluate how sensitive info and labels (retention and sensitivity) are being used in content across your organization. Review content that contains sensitive info or has labels applied, explore label activity across Microsoft 365 locations, create custom sensitive info types, and much more.<br/>|[Data classification overview (preview)](data-classification-overview.md)|
-|Trainable classifiers (preview) <br/>|This powerful new tool uses our machine learning engine to help identify categories of content in your org, like regulatory docs or employee agreements. Once created, classifiers can be used in several compliance solutions to detect related content and classify it, protect it, retain it, and more.<br/>|[Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)|
+|Trainable classifiers (preview) <br/>|This powerful new tool uses our machine learning engine to help identify categories of content in your org, like regulatory docs or employee agreements. Once created, classifiers can be used in several compliance solutions to detect related content and classify it, protect it, retain it, and more.<br/>|[Learn about trainable classifiers (preview)](classifier-learn-about.md)|
 
 #### Updated compliance solutions
 
@@ -285,21 +313,5 @@ Go to [Restrict access to content by using sensitivity labels to apply encryptio
 
 ### Update to data investigations
 
+When performing a data investigation, you can now delete items from their original locations. This means you can delete items from Exchange mailboxes, SharePoint sites, and OneDrive accounts across your organization. Because you collected the items as evidence, you'll have copies of them retained in the evidence set to you can investigate further or just keep as a reference. [Learn more](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data)
 When performing a data investigation, you can now delete items from their original locations. This means you can delete items from Exchange mailboxes, SharePoint sites, and OneDrive accounts across your organization. Because you collected the items as evidence, you'll have copies of them retained in the evidence set to you can investigate further or just keep as a reference. Go to [Manage a data spillage incident in Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) to learn more. 
-
-## July 2019
-
-### New admin roles
-
-We released two new admin roles to help manage security and compliance in your org. Tell all your friends.
-
-- **Compliance data admin**. Users with this role have permissions to protect and track data in the Microsoft 365 compliance center, Microsoft 365 admin center, and Azure. They can also manage everything the Exchange admin center, Compliance Manager, Teams & Skype for Business admin center and create support tickets for Azure and Microsoft 365.
-- **Security operator**. Users with this role can manage alerts and have global read-only access to security-related features, including everything in the Microsoft 365 security center, Azure Active Directory, Identity Protection, Privileged Identity Management and Office 365 Security & Compliance Center.
-
-[Learn more about these roles](https://docs.microsoft.com/microsoft-365/security//office-365-security/permissions-microsoft-365-compliance-security)
-
-### Search and filtering for reports
-
-No more scrolling through a sea of reports to find the ones you want. You can now search for reports (based on their titles) and filter on categories like 'Labels' and 'Compliance' and sources like 'Office 365' and 'Microsoft Cloud App Security'.
-
-![Screen capture of the search and filter buttons for reports with an applied filter](../media/mcc_report_filtering.png)

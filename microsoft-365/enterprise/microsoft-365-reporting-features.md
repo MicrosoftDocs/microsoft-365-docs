@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 reporting features"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -66,9 +66,9 @@ Exchange Online audit reports include details on mailbox access and changes made
 
 ## Device compliance Reports
 
-You manage and secure mobile devices connected to your subscription using Microsoft 365 Mobile Device Management (MDM). Mobile devices used to access work email, calendar, contacts, and documents play a significant part in making sure that employees are able to work anytime and from anywhere. It's critical that you protect your organization's information. You use Microsoft 365 MDM to set device security policies and access rules. If lost or stolen, you also use Microsoft 365 MDM to wipe mobile devices.
+You manage and secure mobile devices connected to your subscription using Basic Mobility and Security for Microsoft 365. Mobile devices used to access work email, calendar, contacts, and documents play a significant part in making sure that employees are able to work anytime and from anywhere. It's critical that you protect your organization's information. You use Basic Mobility and Security for Microsoft 365 to set device security policies and access rules. If lost or stolen, you also use Basic Mobility and Security for Microsoft 365 to wipe mobile devices.
 
-MDM compliance reports provide an overview of policies set up by an organization to secure mobile devices that access Microsoft 365 data. The report allows filtering of devices by compliance status, reported violations, blocked devices, and how many devices wiped as a result of security policies. For more information, see [Overview of Mobile Device Management for Microsoft 365](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
+Basic Mobility and Security compliance reports provide an overview of policies set up by an organization to secure mobile devices that access Microsoft 365 data. The report allows filtering of devices by compliance status, reported violations, blocked devices, and how many devices wiped as a result of security policies. For more information, see [Overview of Basic Mobility and Security for Microsoft 365](https://support.microsoft.com/office/overview-of-basic-mobility-and-security-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
 
 ## Data loss prevention
 

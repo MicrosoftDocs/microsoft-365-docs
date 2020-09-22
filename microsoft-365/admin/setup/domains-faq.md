@@ -48,6 +48,7 @@ In this article
 - [What happens if my DNS provider doesn't support certain record types?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
 - [How do I set or change the default domain in Microsoft 365?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
 - [Can I add custom subdomains or multiple domains to Microsoft 365?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- [How do I transfer a domain from Microsoft 365 to another host?](#how-do-i-transfer-a-domain-from-microsoft-365-to-another-host)
 - [Why do I have an "onmicrosoft.com" domain?](#why-do-i-have-an-onmicrosoftcom-domain)
 - [Why do I have an "onmicrosoft.de" domain?](#why-do-i-have-an-onmicrosoftde-domain)
 - [How do I verify my nonprofit or education status?](#how-do-i-verify-my-nonprofit-or-education-status)
@@ -190,6 +191,14 @@ When you add multiple domains to Microsoft 365, you can host any of the services
 
 > [!NOTE]
 > If you added a contoso.com domain to a Microsoft 365 subscription, you can also add the subdomain xyz.contoso.com to another Microsoft 365 organization. When adding the subdomain, you are prompted to add a TXT record in the DNS hosting provider.
+
+## How do I transfer a domain from Microsoft 365 to another host?
+
+For the procedure to transfer a domain, see [Transfer a domain from Microsoft to another host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host).
+
+## Pilot Microsoft 365 from my custom domain
+
+For the procedure to pilot Microsoft 365 email functionality from a custom domain to a Microsoft 365 mailbox, see [Pilot Microsoft 365 from my custom domain](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain).
 
 ## Why do I have an "onmicrosoft.com" domain?
 

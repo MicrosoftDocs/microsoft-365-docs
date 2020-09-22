@@ -48,7 +48,7 @@ You can also download this poster in [PDF](https://github.com/MicrosoftDocs/micr
 
 To help protect access to the team and its underlying SharePoint site, review the following best practices:
 - [Identity and device access policies](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies)
-- [SharePoint Online access policies](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies).
+- [SharePoint Online access policies](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies)
 - [Deploy teams with baseline protection](configure-teams-baseline-protection.md)
 
 ## Guest sharing
