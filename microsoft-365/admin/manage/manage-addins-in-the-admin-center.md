@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: "Learn to deploy add-ins to users and groups in your organization by using Centralized Deployment in the admin center."
+description: "Learn about using Centralized add-ins to deploy add-ins to users and groups in your organization."
 ---
 
 # Manage add-ins in the admin center

@@ -21,6 +21,9 @@ ms.topic: conceptual
 
 # Create a Microsoft Threat Protection trial lab or pilot environment 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 

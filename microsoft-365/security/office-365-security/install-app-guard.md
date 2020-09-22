@@ -19,6 +19,9 @@ description: "Get the latest in hardware-based isolation. Prevent current and em
 
 # Application Guard for Office (public preview) for admins
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 
 **Applies to:** Word, Excel, and PowerPoint for Microsoft 365, Windows 10
 Enterprise
