@@ -58,10 +58,10 @@ We've developed a set of features for multi-tenant admins like you to get your j
 - **All tenants**: A new page where you can quickly see the health of all your tenants' services, any open service requests, your products and billing, recommended setup tasks, and the number of users in that tenant.
 - **Setup**: The multi-tenant Setup page gives you a list view of the Setup page, but organized for many tenants. You can see which features aren't turned on, which tasks are complete for all tenants, tasks that tenants still need to complete. This view will help you keep track of feature adoption and to make sure the recommended security setup tasks are always done.
 - **Service health**: The service health view shows you if any incidents or advisories are affecting the tenants. It will even tell you how many of your managed tenants are affected. Just select an incident to get more information on the overview tab, then switch over to the Tenants affected tab to drill down and support that tenant.
-- **Cross-tenant mailbox migrations**: This is a new service that lets you move mailboxes between tenants without the need to offboard and then onboard mailboxes. 
-- **Cross-tenant domain sharing**: Soon, you'll be able to share a domain across multiple organizations. For example, if Contoso acquires Wingtip Toys, you can share the domain so that people in both tenants can use contoso.com as their email addresses.
+- **Cross-tenant mailbox migrations**: This is a new service, now in public preview, that lets you move mailboxes between tenants without the need to offboard and then onboard mailboxes. 
+- **Cross-tenant domain sharing**: Soon, you'll be able to join a private preview for capabilities that allow you to share a domain across multiple tenants. For example, if Contoso acquires Wingtip Toys, Contoso can share the domain with Wingtip Toys so that people in both tenants can use "contoso.com" as their email addresses.
 
-![Service health page for multi-tenant with an incident selected and the Tenants affected tab open. The navigation menu has All tenants, Setup, and Service health as the only options.](../media/MAC-WN-MTinServiceHealth.png)   
+![Service health page for multi-tenant with an incident selected and the Tenants affected tab open. The navigation menu has All tenants, Setup, and Service health as the only options.](../media/MAC-WN-MTinServiceHealth.png)
 
 ### Monitor your most important accounts
 
@@ -110,18 +110,29 @@ The [Microsoft 365 admin mobile app](https://www.microsoft.com/microsoft-365/bus
 
 ![The Health page in Microsoft 365 admin app with notifications for message center, service health, billing alerts.](../media/MAC-WN-AdminMobileApp.png)
 
+### Usage recommendations for small and medium businesses
+
+Small and medium businesses might get a recommendation on the **Home** page if some of the people in the org aren't actively using Teams, OneDrive, or Office apps. When you view the recommendation, you can quickly email Microsoft training to inactive users to help them get started with the app and to make sure you are getting the full value from your subscriptions.
+
 ### Remote work collection
 
-In light of the COVID-19 (Novel Coronavirus) outbreak, many business owners are unexpectedly finding themselves with a completely remote work staff. We've created new experiences to help you and your staff get online and working remotely.
-**Remote work essentials** setup is a curated list of all features Microsoft recommends to securely enable remote work and to collaborate effectively. Try it out in **Setup** > **Remote work essentials**.
+In October, we'll be adding a remote work collection to help small business owners and their staff get online and working remotely.  **Remote work essentials** setup is a curated list of all features Microsoft recommends to securely enable remote work and to collaborate effectively. In a couple of weeks, you can try it out in **Setup** > **Remote work essentials**.
 
 ![Remote work essentials page in Setup with 7 tasks not started.](../media/MAC-WN-RemoteWork.png)
 
 For more information about how to securely allow remote work and a handy web address that's easy to remember and share, go to [aka.ms/remote-business](https://aka.ms/remote-business).
 
-### Usage recommendations for small and medium businesses
+### Need help? moving to more admin centers
 
-Small and medium businesses might get a recommendation on the **Home** page if some of the people in the org aren't using OneNote, Teams, OneDrive, or Office apps. When you view the recommendation, you can quickly email Microsoft training to inactive users to help them get started with the app and to make sure you are getting the full value from your subscriptions.
+We're continuously looking at and updating the content and tools to keep up with changes in the product. We now have many more self-serve diagnostic tools to help you resolve issues quickly and efficiently. Here are a few that were recently added:
+
+- Change your Exchange Web Service throttling policy
+- Checking status of Teams provisioning and validation to specific users
+- Fix DKIM setup issues
+- Diagnose Intune user enrollment errors
+
+And we are rolling out the new and improved support experience you already see in the Microsoft 365 admin center to some of the other admin centers. Teams Admin Center and Security and Compliance Admin Centers already have this new experience. And soon, **Exchange admin center**, **SharePoint admin center**, and **Office.com** will be updated along with this new help experience for admins.
+
 
 ### Manage changes with Microsoft Planner
 
