@@ -52,9 +52,9 @@ Below are some helpful resources:
 
 #### Your organization used Compliance Score (public preview) in the Microsoft 365 compliance center
 
-If you used Compliance Score in public preview, you’ll notice Compliance Manager looks largely the same, with your score featured prominently on your dashboard. With the GA release, you no longer need to go to another solution in order to perform certain assessment management functions, such as creating and modifying templates for assessments. All functionality now resides in one place. Any data you had in the preview version of Compliance Score remains in the GA version of Compliance Manager.
+If you used Compliance Score in public preview, you’ll notice Compliance Manager looks largely the same, with your score featured prominently on your dashboard. With the GA release, you no longer need to leave the Microsoft 365 compliance center in order to perform certain assessment management functions, such as creating and modifying templates for assessments. All functionality now resides in one place. Any data you had in the preview version of Compliance Score remains in the GA version of Compliance Manager.
 
-Note that if you filtered your Compliance Score dashboard view, those filters were reset when we deployed the update to Compliance Manager in September. You will need to reapply any filters you had.
+Note that if you filtered your Compliance Score dashboard view, those filters were reset when we deployed the new Compliance Manager in September. You will need to reapply any filters you had.
 
 Compliance Manager also has new licensing terms. See the question below on licensing.
 
@@ -63,7 +63,7 @@ Compliance Manager also has new licensing terms. See the question below on licen
 Compliance Manager is an end-to-end solution in the Microsoft 365 compliance center for managing and tracking compliance activities. It’s a great place to begin your compliance journey because it gives you an initial assessment of your compliance posture the first time you visit. Below are good places to start learning more:
 
 - [Get an overview of Compliance Manager](compliance-manager.md)
-- [Use our quickstart guide to help you ramp up in stages](compliance-manager-quickstart.md)
+- [Use our quickstart guide to help ramp up in stages](compliance-manager-quickstart.md)
 - [Learn more about the Microsoft 365 compliance center](microsoft-365-compliance-center.md)
 
 ## Are there licensing requirements for using Compliance Manager?
