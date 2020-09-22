@@ -19,6 +19,9 @@ description: "Admins can learn how to configure URL entries in the Tenant Allow/
 
 # Manage URLs in the Tenant Allow/Block List
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 > [!NOTE]
 > The features described in this topic are in Preview, are subject to change, and are not available in all organizations.
 

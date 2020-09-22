@@ -23,6 +23,9 @@ description: Create and auto-publish retention labels so you can automatically a
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
+> [!NOTE]
+> This scenario is not supported for [regulatory records](records-management.md#records).
+
 One of the most powerful features of [retention labels](retention.md) is the ability to apply them automatically to content that matches specified conditions. In this case, people in your organization don't need to apply the retention labels. Microsoft 365 does the work for them.
   
 Auto-applying retention labels are powerful because:
@@ -34,6 +37,9 @@ Auto-applying retention labels are powerful because:
 - Users no longer need to know about data governance policies - they can focus on their work.
     
 You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md).
+
+> [!TIP]
+> Now in preview, use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
 
 The processes to automatically apply a retention label based on these conditions:
 
@@ -75,7 +81,7 @@ Navigation instructions depend on whether you're using [records management](reco
     
     - For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md)
     
-    - To use the retention label to declare a [record](records-management.md#records), enable the option **Mark items as a record**.
+    - To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Auto-apply this label to a specific type of content**, and then select **Done** to start the Create auto-labeling wizard that takes you directly to step 2 in the following procedure.
 
@@ -157,6 +163,29 @@ Examples queries:
 |Exchange   | `recipients:garthf@contoso.com` |
 |SharePoint | `contenttype:contract` |
 |SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
+
+##### Microsoft Teams meeting recordings
+
+> [!NOTE]
+> The ability to retain and delete Teams meeting recordings is rolling out in preview and won't work before recordings are saved to OneDrive or SharePoint. For more information, see [Use OneDrive for Business and SharePoint Online or Stream for meeting recordings](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
+
+To identify Microsoft Teams meeting recordings that are stored in users' OneDrive accounts or in SharePoint, specify the following for the **Keyword query editor**:
+
+```	
+ProgID:Media AND ProgID:Meeting
+```
+
+For this retention label, you must also publish it to the relevant users' OneDrive accounts or SharePoint sites by creating a label policy. Most of the time, the meeting recordings are saved to OneDrive, but for channel meetings, they are saved in SharePoint.
+
+When you have saved the auto-apply policy:
+
+1. Select **Label policies** tab > **Publish labels**
+
+2. When prompted to select a label, choose the label you created with the KQL query to identify Teams meeting recordings.
+
+3. When prompted for the location, choose **SharePoint sites** and **OneDrive accounts**. You can then keep the default of **All**, or specify individual locations, such as including or excluding specific OneDrive accounts.
+
+4. Complete the wizard and save this label policy.
 
 #### Auto-apply labels to content by using trainable classifiers
 
