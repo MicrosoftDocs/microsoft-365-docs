@@ -22,6 +22,9 @@ ms.custom: seo-marvel-apr2020
 
 # Safety tips in email messages
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Exchange Online Protection (EOP) and Microsoft 365 protect you with spam, phishing, and malware prevention. Today, some of these attacks are so well crafted that they look legitimate. Sending messages to the Junk Email folder isn't always enough. Now, when you check your email in Outlook or Outlook on the web or any email client, EOP automatically checks the sender and adds a safety tip to the top of the email.
 
 Safety tips in Outlook do not depend on what version of Outlook you're using because the safety tip is cracked open and inserted directly into the message body. This means that the safety tip will show up in whatever email client you're using. It's done at the email filter level and not rendered at the mail client level, so not only does it show up in any version of Outlook, it also shows up in any email client.

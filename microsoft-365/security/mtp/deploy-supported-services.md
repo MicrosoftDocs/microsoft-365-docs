@@ -23,6 +23,9 @@ search.appverid:
 
 # Deploy supported services
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 

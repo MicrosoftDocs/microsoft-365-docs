@@ -185,7 +185,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** in the left nav.
 
-2. On the **Data connectors (preview)** page under **Facebook Business pages**, click **View**.
+2. On the **Data connectors** page under **Facebook Business pages**, click **View**.
 
 3. On the **Facebook business pages** page, click **Add connector**.
 

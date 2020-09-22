@@ -22,6 +22,9 @@ ms.custom: seo-marvel-apr2020
 
 # SIEM integration with Advanced Threat Protection
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 If your organization is using a security incident and event management (SIEM) server, you can integrate Office 365 Advanced Threat Protection (Office 365 ATP) with your SIEM server. You can set up this integration by using the [Office 365 Activity Management API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
 SIEM integration enables you to view information, such as malware or phish detected by Office 365 ATP, in your SIEM server reports. 

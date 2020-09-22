@@ -21,6 +21,9 @@ ms.topic: conceptual
 
 # Run your Microsoft Threat Protection attack simulations  
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 
