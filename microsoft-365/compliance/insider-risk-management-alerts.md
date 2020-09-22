@@ -85,7 +85,7 @@ To triage an insider risk alert, complete the following steps:
 ## Activity explorer (preview)
 
 >[!NOTE]
->Activity explorer is available in the alert management area for alerts associated with triggering events for a user after September 16, 2020. For insider risk management alerts created prior to this date, the Activity explorer isn't available.
+>Activity explorer is available in the alert management area for users with triggering events after this feature is available in your organization.
 
 The Activity explorer provides risk investigators and analysts with a comprehensive analytic tool that provides detailed information about alerts. With the Activity explorer, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts. To filter alerts on the Activity explorer, select the Filter control. You can filter alerts by one or more attributes listed in the details pane for the alert. Activity explorer also supports customizable columns to help investigators and analysts focus the dashboard on the information most important to them.
 
