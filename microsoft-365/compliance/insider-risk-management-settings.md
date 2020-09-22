@@ -160,6 +160,35 @@ To use the APIs to review insider risk alert information:
 
 ![Insider risk management export alert settings](../media/insider-risk-settings-export.png)
 
+Alert information contains information from the security and compliance alert schema and the Office 365 Management Activity API common schema.
+
+The following fields and values are exported for insider risk management alerts for the security and compliance alert schema:
+
+| **Alert parameter** | **Description** |
+|:------------------|:----------------|
+| AlertType | Type of the alert is *Custom*.  |
+| AlertId | The GUID of the alert. Insider risk management alerts are mutable. As alert status changes, a new log with the same AlertID is generated. This AlertID can be used to correlate updates for an alert. |
+| Category | The category of the alert is *InsiderRiskManagement*. This category can be used to distinguish from these alerts from other Security & Compliance alerts. |
+| Comments | Default comments for the alert. Values are *New Alert* (logged when an alert is created) and *Alert Updated* (logged when there is an update to an alert). Use the AlertID to correlate updates for an alert. |
+| Data | The data for the alert, includes the unique user ID, user principal name, and date and time (UTC) when user was triggered into a policy. |
+| Name | Policy name for insider risk management policy that generated the alert. |
+| PolicyId | The GUID of the insider risk management policy that triggered the alert. |
+| Severity | The severity of the alert. Values are *High*, *Medium*, or *Low*. |
+| Source | The source of the alert. The value is *Office 365 Security & Compliance*. |
+| Status | The status of the alert. Values are *Active* (*Needs Review* in insider risk), *Investigating* (*Confirmed* in insider risk), *Resolved* (*Resolved* in insider risk), *Dismissed* (*Dismissed* in insider risk). |
+| Version | The version of the security and compliance alert schema. |
+
+The following fields and values are exported for insider risk management alerts for the [Office 365 Management Activity API common schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
+
+- UserId
+- Id
+- RecordType
+- CreationTime
+- Operation
+- OrganizationId
+- UserType
+- UserKey
+
 ## Priority user groups (preview)
 
 Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. Prioritizing the examination and scoring of the activities of these users can help alert you to potential risks that may have higher consequences for your organization. Priority user groups in insider risk management help define the users in your organization that need closer inspection and more sensitive risk scoring. Coupled with the *Security policy violations by priority users* and *Data leaks by priority users* policy templates, users added to a priority user group have an increased likelihood of insider risk alerts and alerts with higher severity levels.
@@ -218,11 +247,11 @@ Complete the following steps to delete a priority user group:
 
 Identifying access to priority physical assets and correlating access activity to user events is an important component of your compliance infrastructure. These physical assets represent priority locations in your organization, such as company buildings, data centers, or server rooms. Insider risk activities may be associated with users working unusual hours, attempting to access these unauthorized sensitive or secure areas, and requests for access to high-level areas without legitimate needs.
 
-With priority physical assets enabled and the [Physical badging data connector](import-physical-badging-data.md) configured, insider risk management integrates signals from your physical control and access systems with other user risk activities. By examining patterns of behavior across physical access systems and correlating these activities with other insider risk events, insider risk management can help compliance investigators and analysts make more informed response decisions for alerts.
+With priority physical assets enabled and the [Physical badging data connector](import-physical-badging-data.md) configured, insider risk management integrates signals from your physical control and access systems with other user risk activities. By examining patterns of behavior across physical access systems and correlating these activities with other insider risk events, insider risk management can help compliance investigators and analysts make more informed response decisions for alerts. Access to priority physical assets are scored and identified in insights differently from access to non-priority assets.
 
-For example, your organization has a badging system for users that monitors and approves physical access to normal working and sensitive project areas. You have several users working on a sensitive project and these users will return to other areas of your organization when the project is completed. As the sensitive project nears completion, you want to make sure that the project work remains confidential and that access to the project areas is tightly controlled. 
+For example, your organization has a badging system for users that monitors and approves physical access to normal working and sensitive project areas. You have several users working on a sensitive project and these users will return to other areas of your organization when the project is completed. As the sensitive project nears completion, you want to make sure that the project work remains confidential and that access to the project areas is tightly controlled.
 
-You choose to enable the Physical badging data connector in Microsoft 365 to import access information from your physical badging system and enable priority physical assets in insider risk management. By importing information from your badging system and correlating access information with other risk activities identified in insider risk management, you notice that one of the users on the project is accessing the project area after normal working hours and is also exporting large amounts of data to a personal cloud storage service from their normal work area. This activity may indicate data theft and compliance investigators and analysts can take appropriate actions as dictated by the circumstances for this user.
+You choose to enable the Physical badging data connector in Microsoft 365 to import access information from your physical badging system and specify priority physical assets in insider risk management. By importing information from your badging system and correlating physical access information with other risk activities identified in insider risk management, you notice that one of the users on the project is accessing the project offices after normal working hours and is also exporting large amounts of data to a personal cloud storage service from their normal work area. This physical access activity associated with the online activity may point to possible data theft and compliance investigators and analysts can take appropriate actions as dictated by the circumstances for this user.
 
 ### Configure priority physical assets
 
@@ -236,7 +265,7 @@ Complete the following steps to configure priority physical assets:
     >For insider risk management policies to use and correlate signal data related to departing and terminated users with event data from your physical control and access platforms, you must also configure the Microsoft 365 HR connector. If you enable the Physical badging connector without enabling the Microsoft 365 HR connector, insider risk management policies will only process events for physical access activities for users in your organization.
 
 2. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Priority physical assets**.
-3. On the **Priority physical assets** page, you can either manually add the physical asset IDs you want to monitor for the assets imported by the Physical badging connector or import a .CSV file of all physical assets IDs imported by the Physical badging connector:
+3. On the **Priority physical assets** page, you can either manually add the physical asset IDs you want to monitor for the asset events imported by the Physical badging connector or import a .CSV file of all physical assets IDs imported by the Physical badging connector:
     a) To manually add physical assets IDs, choose **Add priority physical assets**, enter a physical asset ID, then select **Add**. Enter additional physical asset IDs and then select **Add priority physical assets** to save all the assets entered.
     b) To add a list of physical asset IDs from a .CSV file, choose **Import priority physical assets**. From the file explorer dialog, select the .CSV file you wish to import, then select **Open**. The physical asset IDs from the .CSV files are added to the list.
 4. Navigate to the **Policy indicators** tab in Settings.
