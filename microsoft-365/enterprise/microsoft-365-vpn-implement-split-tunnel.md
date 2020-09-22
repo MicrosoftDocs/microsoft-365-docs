@@ -58,13 +58,13 @@ In the list below you'll see the most common VPN scenarios seen in enterprise en
 
 This is the most common starting scenario for most enterprise customers. A forced VPN is used, which means 100% of traffic is directed into the corporate network regardless of the fact the endpoint resides within the corporate network or not. Any external (Internet) bound traffic such as Office 365 or Internet browsing is then hairpinned back out of the on premises security equipment such as proxies. In the current climate with nearly 100% of users working remotely, this model therefore puts extremely high load on the VPN infrastructure and is likely to significantly hinder performance of all corporate traffic and thus the enterprise to operate efficiently at a time of crisis.
 
-![VPN Forced Tunnel model 1](../media/vpn-split-tunneling/vpn-model-1.png)
+![VPN Forced Tunnel model 1](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
 ### 2. VPN Forced Tunnel with a small number of trusted exceptions
 
 This model is significantly more efficient for an enterprise to operate under as it allows a small number of controlled and defined endpoints that are very high load and latency sensitive to bypass the VPN tunnel and go direct to the Office 365 service in this example. This significantly improves the performance for the offloaded services, and also decreases the load on the VPN infrastructure, thus allowing elements that still require it to operate with lower contention for resources. It is this model that this article concentrates on assisting with the transition to as it allows for simple, defined actions to be taken very quickly with numerous positive outcomes.
 
-![Split Tunnel VPN model 2](../media/vpn-split-tunneling/vpn-model-2.png)
+![Split Tunnel VPN model 2](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
 ### 3. VPN Forced Tunnel with broad exceptions
 
