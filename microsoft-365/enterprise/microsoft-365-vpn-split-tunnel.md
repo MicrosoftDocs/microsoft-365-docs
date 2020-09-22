@@ -92,9 +92,6 @@ From a security perspective, Microsoft has an array of security features which c
 
 In many cases, this implementation can be achieved in a matter of hours, allowing rapid resolution to one of the most pressing problems facing organizations as they rapidly shift to full scale remote working. For VPN split tunnel implementation guidance, see [Implementing VPN split tunneling for Office 365](microsoft-365-vpn-implement-split-tunnel.md).
 
->[!NOTE]
->Microsoft has committed to suspending changes to **Optimize** endpoints for Office 365 until at least **June 30 2020**, allowing customers to focus on other challenges rather than maintaining the endpoint whitelist once initially implemented.
-
 ## Related topics
 
 [Implementing VPN split tunneling for Office 365](microsoft-365-vpn-implement-split-tunnel.md)
