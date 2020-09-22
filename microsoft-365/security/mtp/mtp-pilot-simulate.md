@@ -28,9 +28,9 @@ After preparing your pilot environment, it’s time to test the Microsoft Threat
 
 In this simulation, our sample scenario starts with a PowerShell script. A user might be tricked into running a script. Or the script might run from a remote connection to another computer from a previously infected device—the attacker attempting to move laterally in the network. Detection of these scripts can be difficult because administrators also often run scripts remotely to carry out various administrative activities.
 
-During the simulation, the attack injects shellcode into a seemingly innocent process. In this scenario, we’ll use notepad.exe. We chose this process for the simulation, but attackers will more likely target a long-running system process, such as svchost.exe. The shellcode then goes on to contact the attacker’s command-and-control (C2) server to receive instructions on how to proceed. In addition, the script attempts executing reconnaissance queries against the domain controller (DC). This allows an attacker to get information about recent user login information. Once attackers have this information, they can move laterally in the network to get to a specific sensitive account
-
 ![Fileless PowerShell attack with process injection and SMB reconnaisance attack diagram](../../media/mtp/mtpdiydiagram.png)
+
+During the simulation, the attack injects shellcode into a seemingly innocent process. In this scenario, we’ll use notepad.exe. We chose this process for the simulation, but attackers will more likely target a long-running system process, such as svchost.exe. The shellcode then goes on to contact the attacker’s command-and-control (C2) server to receive instructions on how to proceed. In addition, the script attempts executing reconnaissance queries against the domain controller (DC). This allows an attacker to get information about recent user login information. Once attackers have this information, they can move laterally in the network to get to a specific sensitive account
 
 >[!IMPORTANT]
 >For optimum results, follow the attack simulation instructions as closely as possible.
@@ -104,9 +104,9 @@ To see the Automated Incident and Response feature in action, keep the notepad.e
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft Threat Protection portal. 
+Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft 365 Security Center portal. 
 
-1.	Open the [Microsoft Threat Protection portal](https://security.microsoft.com/incidents) incident queue from any device.
+1.	Open the [Microsoft 365 Security Center portal](https://security.microsoft.com/incidents) incident queue from any device.
 
 2.	Navigate to **Incidents** from the menu. 
 
@@ -225,7 +225,7 @@ Click the username to open the user’s profile page where further investigation
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Navigate back to the incident in the Microsoft Threat Protection portal. The **Investigations** tab in the **Incident** page shows the automated investigations that were triggered by Azure ATP and Microsoft Defender ATP. The screenshot below displays only the automated investigation triggered by Microsoft Defender ATP. By default, Microsoft Defender ATP automatically remediates the artifacts found in the queue which requires remediation.
+Navigate back to the incident in the Microsoft 365 Security Center portal. The **Investigations** tab in the **Incident** page shows the automated investigations that were triggered by Azure ATP and Microsoft Defender ATP. The screenshot below displays only the automated investigation triggered by Microsoft Defender ATP. By default, Microsoft Defender ATP automatically remediates the artifacts found in the queue which requires remediation.
 
 ![Screenshot of automated investigations related to the incident](../../media/mtp/fig14.png)
 
@@ -250,7 +250,7 @@ After the investigation is complete and confirmed to be remediated, close the in
 
 Click **Manage incident**. Set the status to **Resolve incident** and select the relevant classification.
 
-Once the incident is resolved, it will close all of the associated alerts in Microsoft Threat Protection and in the related portals.
+Once the incident is resolved, it will close all of the associated alerts in Microsoft 365 Security Center and in the related portals.
 
 ![Screenshot of the incidents page with the open Manage incident panel where you can click the switch to resolve incident](../../media/mtp/fig16.png) 
 
@@ -286,7 +286,7 @@ There is a single internal mailbox and device required for this scenario. You wi
 1.	Open the security.microsoft.com portal.
 2.	Navigate to **Hunting > Advanced hunting**.
 
-    ![Screenshot of advanced hunting in the M365 Security portal navigation bar](../../media/mtp/fig17.png) 
+    ![Screenshot of advanced hunting in the M365 Security Center portal navigation bar](../../media/mtp/fig17.png) 
 
 3.	Build a query that starts by gathering email events.
     a.	From the query pane, select New.
