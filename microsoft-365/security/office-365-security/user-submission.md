@@ -19,6 +19,9 @@ description: "Admins can learn how to configure a mailbox to collect spam and ph
 
 # Specify a mailbox for user submissions of spam and phishing messages in Exchange Online
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 In Microsoft 365 organizations with Exchange Online mailboxes, you can specify a mailbox to receive messages that users report as malicious or not malicious. When users submit messages using the various reporting options, you can use this mailbox to intercept messages (send to the custom mailbox only) or receive copies of messages (send to the custom mailbox and Microsoft). This feature works with the following message reporting options:
 
 - [The Report Message add-in](enable-the-report-message-add-in.md)
