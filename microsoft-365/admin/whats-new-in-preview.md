@@ -72,7 +72,7 @@ Priority accounts are only available to organizations that meet both of the foll
 - Office 365 E3 or Microsoft 365 E3, or Office 365 E5 or Microsoft 365 E5.
 - At least 10,000 licenses and at least 50 monthly active Exchange Online users.
 
-![Search box has moved to the banner region. Alt+S to search from any page.](../media/MAC-WN-PriorityAccounts.png)
+![Setup page for the feature: Monitor your most important accounts](../media/MAC-WN-PriorityAccounts.png)
 
 There are two ways to get started:
 
@@ -358,7 +358,7 @@ We received a lot of feedback from partners and admins about the challenges of m
 ![Screen capture: top of the Home page showing organization profile name with the switcher icon.](../media/MAC-Organization-switcher.png)
 
 2. In the organization switcher, select the org you want to manage.
-![Screen capture: top of the Home page showing organization profile name with the switcher icon.](../media/MAC-OrgSwitcherSelected.png)
+![Screen capture: My organizations tenant switcher with Consolidated Messenger tenant highlighted](../media/MAC-OrgSwitcherSelected.png)
 
 That's literally it!!!
 
