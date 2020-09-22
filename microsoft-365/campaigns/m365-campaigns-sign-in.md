@@ -2,8 +2,8 @@
 title: "Sign in to Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
-ms.author: supotter
-author: supotter
+ms.author: sirkkuw
+author: sirkkuw
 manager: scotv
 ms.audience: Admin
 ms.topic: article
