@@ -112,4 +112,4 @@ To run, manage, or create Power Automate flows for an insider risk management us
 2. Choose the Power Automate flow to run, then select **Run flow**.
 3. After the flow has completed, select **Done**.
 
-To learn more about Power Automate flows for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-setting.md#power-automate-flows).
+To learn more about Power Automate flows for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows).
