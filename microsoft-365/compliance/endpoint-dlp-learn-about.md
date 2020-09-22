@@ -115,7 +115,7 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 - device name
 - destination location type
 - application that performed the copy
-- MDATP device ID (if applicable)
+- Microsoft Defender for Endpoint device ID (if applicable)
 - removable media device manufacturer
 - removable media device model
 - removable media device serial number

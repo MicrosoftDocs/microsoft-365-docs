@@ -17,6 +17,9 @@ search.appverid: met150
 ---
 
 # Microsoft security portals and admin centers
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 While [Microsoft 365 security center](overview-security-center.md) is the new home for monitoring and managing security across your identities, data, devices, and apps, you will need to access various portals for certain specialized tasks.
 
 > [!TIP] 

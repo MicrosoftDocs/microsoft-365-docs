@@ -150,7 +150,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 Use this procedure to give others permissions to train, review and tune your custom trainable classifier.  
  
-1. As the creator of the classifier, a global admin or eDiscovery admin connect to the Compliance center using PowerShell using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+1. As the creator of the classifier, a global admin or eDiscovery admin connect to the Compliance center using PowerShell using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true).
 2. Run this command:
 ```powershell
 Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"

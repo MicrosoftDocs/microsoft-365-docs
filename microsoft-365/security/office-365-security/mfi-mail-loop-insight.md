@@ -17,6 +17,9 @@ description: "Admins can learn how to use the Fix possible mail loop insight in 
 
 # Fix possible mail loop insight in the Security & Compliance Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 A mail loop is bad because it wastes system resources, consumes your organization's mail volume quota, and sends confusing non-delivery reports (also known as NDRs or bounce messages) to the original senders.
 
 The **Fix possible mail loop** insight in the **Recommended for you** area of the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) notifies you when a mail loop is detected in your organization. This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).
