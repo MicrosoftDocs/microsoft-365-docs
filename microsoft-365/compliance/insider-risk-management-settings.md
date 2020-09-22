@@ -162,7 +162,7 @@ To use the APIs to review insider risk alert information:
 
 Alert information contains information from the security and compliance alert schema and the Office 365 Management Activity API common schema.
 
-The following fields and values are exported for insider risk management alerts for the security and compliance alert schema:
+The following fields and values are exported for insider risk management alerts for the Security & Compliance alert schema:
 
 | **Alert parameter** | **Description** |
 |:------------------|:----------------|
