@@ -19,6 +19,9 @@ ms.custom: seo-marvel-apr2020
 
 # App monitoring and reporting in the Microsoft 365 security center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 These reports provide more insight into how cloud apps are being used in your organization. Includes different kinds of apps, their level of risk, and alerts.
 
 ## Monitor email accounts at risk

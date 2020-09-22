@@ -21,6 +21,9 @@ ms.topic: article
 
 # Understand the advanced hunting schema
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 
