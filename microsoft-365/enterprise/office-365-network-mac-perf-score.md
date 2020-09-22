@@ -96,8 +96,6 @@ We calculate a mean opinion score from these UDP measurements for a scale from o
 
 [Microsoft 365 network performance insights (preview)](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 network connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)
-
-[Microsoft 365 network connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)
