@@ -28,14 +28,6 @@ Sensitive information types require one of these subscriptions:
 - Microsoft 365 E3
 - Microsoft 365 E5
 
-Sensitive information types can be used in:
-- data loss prevention policies
-- communication compliance polcies
-- information governance
-- records management
-- Microsoft cloud app security
-
-  
 ## ABA routing number
 
 ### Format
