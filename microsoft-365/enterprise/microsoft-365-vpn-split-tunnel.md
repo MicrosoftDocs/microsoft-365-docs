@@ -84,7 +84,7 @@ This tightly scoped set of endpoints can be split out of the forced VPN tunnel a
 
 Security elements such as DLP, AV protection, authentication and access control can all be delivered much more efficiently against these endpoints at different layers within the service. As we also divert the bulk of the traffic volume away from the VPN solution, this frees the VPN capacity up for business critical traffic which still relies on it. It also should remove the need in many cases to go through a lengthy and costly upgrade program to deal with this new way of operating.
 
-![Split Tunnel VPN configuration](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![Split Tunnel VPN configuration details](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _Figure 3: A VPN split tunnel solution with defined Office 365 exceptions sent direct to the service. All other traffic is forced back into the corporate network regardless of destination._
 
