@@ -4,7 +4,7 @@ description: This document provides data controllers with information about Prof
 keywords: DPIA, Microsoft Professional Services, Microsoft 365 documentation, GDPR
 robots:  "NOINDEX,NOFOLLOW"
 ms.localizationpriority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

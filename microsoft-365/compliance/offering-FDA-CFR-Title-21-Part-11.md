@@ -3,7 +3,7 @@ title: Food and Drug Administration CFR Title 21 Part 11
 description: Microsoft helps customers comply with these US Food and Drug Administration regulations.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

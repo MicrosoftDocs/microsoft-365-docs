@@ -3,7 +3,7 @@ title: Dynamics 365 Data Subject Requests for the GDPR and CCPA
 description: Learn how to find and act on personal data and respond to DSR and CCPA requests made by Dynamics 365 customers.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
