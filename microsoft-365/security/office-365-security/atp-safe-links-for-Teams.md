@@ -19,6 +19,9 @@ description: "Teams will now have access to safe links at the time of your click
 
 # Safe Links in Teams
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 > [!IMPORTANT]
 > This feature is in **Public Preview** for customers in the Microsoft Teams Technology Adoption Program (TAP) as of Feb 28, 2020. This note will be removed from the article when Safe Links for Teams is more widely available.
 
