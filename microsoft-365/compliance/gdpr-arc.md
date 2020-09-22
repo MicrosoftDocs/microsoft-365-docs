@@ -106,9 +106,9 @@ Another product our customer might need records of processing information for pr
 
 You can also view the information for Dynamics 365 using the Security & Compliance center.  In order to view the Security & Compliance center page, ensure that you have the correct license. Learn more about licensing with the [Security & Compliance Center service description](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) article. To search for Dynamics 365 events, visit the Unified Audit Log in the [Security & Compliance center](https://protection.office.com/unifiedauditlog).
 
-As for Professional Services, the Professional Services Support Data is provided by the customer to the support engineer by the customer's representative.  This may take place when a customer submits a Service Request either through the online product portal, Services Hub or via phone.
-
 ### Professional services information
+
+As for Professional Services, the Professional Services Support Data is provided by the customer to the support engineer by the customer's representative.  This may take place when a customer submits a Service Request either through the online product portal, Services Hub or via phone.
 
 The information is stored in our CRM systems and only used for the following purposes:
 
