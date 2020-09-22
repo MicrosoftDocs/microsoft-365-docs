@@ -104,9 +104,9 @@ For an overview of the steps federal agencies must take to successfully navigate
 
 Yes. You may use the certifications of Microsoft cloud services as the foundation for any program or initiative that requires an ATO from a federal government agency. However, you need to achieve your own authorizations for components outside these services.
 
-## Use Microsoft Compliance Score to assess your risk
+## Use Microsoft Compliance Manager to assess your risk
 
-[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [FedRAMP template](https://go.microsoft.com/fwlink/?linkid=2118102) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

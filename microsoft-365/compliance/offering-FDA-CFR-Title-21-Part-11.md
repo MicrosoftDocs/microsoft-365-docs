@@ -66,17 +66,21 @@ Using the formal audits prepared by third parties for SOC 1 Type 2, SOC 2 Type 2
 
 Audited controls implemented by Microsoft help ensure the confidentiality, integrity, and availability of data, and correspond to the applicable regulatory requirements defined in Title 21 Part 11 that have been identified as the responsibility of Microsoft. The qualification guidelines for Azure and Office 365 detail how Microsoft audit controls correspond to those requirements.
 
-**How can I get copies of the auditor’s reports?**
+**How can I get copies of the auditor's reports?**
 
 The [Service Trust Portal](https://aka.ms/stphelp) provides independently audited compliance reports. You can use the portal to request audit reports so that your auditors can compare Microsoft's cloud services results with your own legal and regulatory requirement.
 
-**Can I use Microsoft’s compliance in the certification process for my organization?**
+**Can I use Microsoft's compliance in the certification process for my organization?**
 
 Yes. The independent third-party compliance reports of the IEC/ISO 27001, ISO/IEC 27018, SOC 1, and SOC 2 standards attest to the effectiveness of Microsoft controls. Microsoft enterprise cloud customers may use the audited controls described in these related reports as part of their own CFR Title 21 Part 11 risk analysis and qualification efforts. Customers who build and deploy applications subject to FDA regulation are responsible for ensuring that their applications meet FDA requirements.
 
-**What are Microsoft’s responsibilities for maintaining compliance with this standard?**
+**What are Microsoft's responsibilities for maintaining compliance with this standard?**
 
 Microsoft ensures that its enterprise cloud services meet the terms defined within the governing [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) and applicable Service Level Agreements (SLAs). These define our responsibility for implementing and maintaining controls adequate to secure and monitor the system.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 
