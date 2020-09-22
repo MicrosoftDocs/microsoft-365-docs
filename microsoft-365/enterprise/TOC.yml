@@ -342,6 +342,8 @@
             href: ms-cloud-germany-transition.md
           - name: Customer experience during the migration
             href: ms-cloud-germany-transition-experience.md
+          - name: Migration phases actions and impacts
+            href: ms-cloud-germany-transition-migration-phases.md
           - name: Opt-in for migration
             href: ms-cloud-germany-migration-opt-in.md
 
