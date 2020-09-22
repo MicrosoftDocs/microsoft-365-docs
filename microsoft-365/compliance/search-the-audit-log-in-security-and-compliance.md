@@ -293,8 +293,7 @@ These tables group related activities or the activities from a specific service.
 
 Click one of the following links to go to a specific table.
 
-:::row:::
-:::row-end:::
+:::row-end::::::row:::
     :::column:::
         [File and page activities](#file-and-page-activities)
     :::column-end:::
