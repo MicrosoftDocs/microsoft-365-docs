@@ -50,7 +50,7 @@ You can find licensing requirements for third-party data connectors in the [Micr
 
 Microsoft 365 compliance APIs are available in the Microsoft Information Protection SDK, Microsoft Graph API, and the Office 365 Management Activity API. Some compliance APIs are part of a new set of security and compliance APIs that enable developers for Microsoft 365 customers, independent software vendors, system integrators, and managed security service providers to build high-value security and compliance solutions.
 
-To learn more about how to access Graph APIs, see [Overview of Microsoft Graph](https://docs.microsoft.com/graph/overview?view=graph-rest-1.0).
+To learn more about how to access Graph APIs, see [Overview of Microsoft Graph](https://docs.microsoft.com/graph/overview).
 
 ### Microsoft Information Protection (MIP) SDK
 
