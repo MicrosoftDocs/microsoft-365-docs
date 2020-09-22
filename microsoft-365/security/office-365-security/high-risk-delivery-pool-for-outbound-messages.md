@@ -20,6 +20,9 @@ description: "Learn how the delivery pools are used to protect the reputation of
 
 # Outbound delivery pools
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Email servers in the Microsoft 365 datacenters might be temporarily guilty of sending spam. For example, a malware or malicious spam attack in an on-premises email organization that sends outbound mail through Microsoft 365, or compromised Microsoft 365 accounts. Attackers also try to avoid detection by relaying messages through Microsoft 365 forwarding.
 
 These scenarios can result in the IP address of the affected Microsoft 365 datacenter servers appearing on third-party block lists. Destination email organizations that use these block lists will reject email from those messages sources.

@@ -24,6 +24,9 @@ ms.date: 09/16/2020
 
 # Approve or reject pending actions following an automated investigation
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 
