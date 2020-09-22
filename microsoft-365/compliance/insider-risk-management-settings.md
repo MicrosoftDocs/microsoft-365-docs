@@ -104,7 +104,7 @@ Anomalous detections include settings for file type exclusions and file volume l
 ### Offensive language detections
 
 >[!IMPORTANT]
->Starting October 16, 2020, you will no longer be able to create policies using this template. Any active policies that use this template will work until they're permanently removed in January 2021. We are deprecating the Offensive Language built-in classifier that supports this template because it has been producing a high number of false positives. To address risk issues for offensive language, we recommend using Microsoft 365 [communication compliance](communication-compliance.md) policies. For more information about built-in classifiers, see [Getting started with trainable classifiers](classifier-getting-started-with.md#understanding-built-in-classifiers).
+>Starting October 16, 2020, you will no longer be able to create policies using this template. Any active policies that use this template will work until they're permanently removed in January 2021. We are deprecating the Offensive Language built-in classifier that supports this template because it has been producing a high number of false positives. To address risk issues for offensive language, we recommend using Microsoft 365 [communication compliance](communication-compliance.md) policies. For more information about built-in classifiers, see [Getting started with trainable classifiers](classifier-get-started-with.md#understanding-built-in-classifiers).
 
 To adjust the sensitivity of the offensive language classifier for policies using the *Offensive language in email* template, choose one of the following settings:
 
