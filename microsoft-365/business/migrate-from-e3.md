@@ -109,6 +109,11 @@ You can also complete these steps on the Devices page:
   - See [Set up Windows devices for Microsoft 365 Business Premium users](set-up-windows-devices.md) for steps for Windows devices. 
     
   - See [Set up mobile devices for Microsoft 365 Business Premium users](set-up-mobile-devices.md) for steps for Android phones and iPhones. 
+  
+### Mailbox Size
+
+Microsoft 365 Business premium has 50Gb storage limit as it uses Exchange Online Plan 1. While Migrating to Microsoft 365 Business Premium, If any of your users are exceeding 50GB mailbox storage  it is recommended that you assign this user Exchange Plan 2 and remove the Exchange Online Plan 1 as It's not feasible to assign both.
+
 
 ### Threat protection
 
