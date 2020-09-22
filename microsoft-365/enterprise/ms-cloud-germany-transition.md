@@ -64,7 +64,7 @@ These articles that include the Experiences, Frequently Asked Questions, and Act
 
 This figure represents the various components of Office 365 and Dynamics 365 in the migration to the new German datacenters.
 
-![](RackMultipart20200922-4-j3o787_html_305974e51ea93789.png)
+![migration-organization](../media/ms-cloud-germany-migration-opt-in/migration-organization.jpg)
 
 Migration is executed in phases that all start when you [opt-in for migration](https://aka.ms/office365germanymoveoptin). Most of the migration phases are executed as back-end service operations with minimal customer interaction required and are executed one phase after the other. The start for additional customer-led tasks and overall migration status will be communicated through the Message center of the Microsoft 365 admin center during the migration process. Example of tasks may include customer-managed DNS updates, reconfiguration of hybrid setup for Exchange hybrid customers, or Azure migration.
 
