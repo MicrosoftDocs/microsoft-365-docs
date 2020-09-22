@@ -38,6 +38,9 @@ Auto-applying retention labels are powerful because:
     
 You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md).
 
+> [!TIP]
+> Now in preview, use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
+
 The processes to automatically apply a retention label based on these conditions:
 
 ![Diagram of roles and tasks for auto-apply labels](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
@@ -160,6 +163,29 @@ Examples queries:
 |Exchange   | `recipients:garthf@contoso.com` |
 |SharePoint | `contenttype:contract` |
 |SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
+
+##### Microsoft Teams meeting recordings
+
+> [!NOTE]
+> The ability to retain and delete Teams meeting recordings is rolling out in preview and won't work before recordings are saved to OneDrive or SharePoint. For more information, see [Use OneDrive for Business and SharePoint Online or Stream for meeting recordings](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
+
+To identify Microsoft Teams meeting recordings that are stored in users' OneDrive accounts or in SharePoint, specify the following for the **Keyword query editor**:
+
+```	
+ProgID:Media AND ProgID:Meeting
+```
+
+For this retention label, you must also publish it to the relevant users' OneDrive accounts or SharePoint sites by creating a label policy. Most of the time, the meeting recordings are saved to OneDrive, but for channel meetings, they are saved in SharePoint.
+
+When you have saved the auto-apply policy:
+
+1. Select **Label policies** tab > **Publish labels**
+
+2. When prompted to select a label, choose the label you created with the KQL query to identify Teams meeting recordings.
+
+3. When prompted for the location, choose **SharePoint sites** and **OneDrive accounts**. You can then keep the default of **All**, or specify individual locations, such as including or excluding specific OneDrive accounts.
+
+4. Complete the wizard and save this label policy.
 
 #### Auto-apply labels to content by using trainable classifiers
 
