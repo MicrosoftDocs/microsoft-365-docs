@@ -22,6 +22,9 @@ ms.custom: seo-marvel-apr2020
 
 # Dynamic Delivery and previewing with ATP Safe Attachments
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 ## Basic features of Dynamic Delivery
 
 Dynamic Delivery is an option that can be selected for [ATP Safe Attachments](atp-safe-attachments.md). Read this article to learn about Dynamic Delivery and attachment preview capabilities in [ATP Safe Attachments in Office 365](atp-safe-attachments.md).
