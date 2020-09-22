@@ -34,7 +34,7 @@ There is a specific guide for four Microsoft product and services families:
 - [Azure](gdpr-arc-Azure.md)
 - [Microsoft Support and Professional Services](gdpr-arc-prof-services.md)
 
-You can manage the items in this checklist with [Compliance Score](compliance-score.md) by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile.
+You can manage the items in this checklist with [Compliance Manager](compliance-manager.md) by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile.
 
 The checklists include the four basic categories of considerations for a privacy program supporting GDPR listed below, along with example requirements.
 
@@ -69,7 +69,7 @@ The checklists include the four basic categories of considerations for a privacy
 
 ## GDPR compliance controls
 
-- **Use Compliance Score**: Review and incorporate controls Microsoft uses to support obligations in the GDPR with [Compliance Score](compliance-score.md).
+- **Use Compliance Manager**: Review and incorporate controls Microsoft uses to support obligations in the GDPR with [Compliance Manager](compliance-manager.md).
 - **GDPR control mapping**: Access a [comprehensive mapping](https://go.microsoft.com/fwlink/p/?linkid=2052220) of Microsoft controls to GDPR obligations.
 
 ## Learn more

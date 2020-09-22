@@ -18,6 +18,9 @@ description: "In this article, you'll learn how to use PowerShell to apply confi
 
 # Sample script for applying EOP settings to multiple tenants
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 The following sample script lets Microsoft Exchange Online Protection (EOP) admins who manage multiple tenants (companies) use Windows PowerShell to apply configuration settings to their tenants.
 
 ## To run a script or cmdlet on multiple tenants

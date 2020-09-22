@@ -20,6 +20,9 @@ ms.custom: seo-marvel-apr2020
 ---
 # Detect and Remediate Outlook Rules and Custom Forms Injections Attacks
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 **Summary** Learn how to recognize and remediate the Outlook rules and custom Forms injections attacks in Office 365.
 
 ## What is the Outlook Rules and Custom Forms injection attack?

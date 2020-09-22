@@ -19,6 +19,9 @@ ms.custom: seo-marvel-apr2020
 
 # Views in Threat Explorer and real-time detections
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 ![Threat Explorer](../../media/ThreatExplorerFirstOpened.png)
 
 [Threat Explorer](threat-explorer.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Security &amp; Compliance Center. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.

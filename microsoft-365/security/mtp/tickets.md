@@ -22,6 +22,9 @@ ms.custom:
 ---
 # Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 [!include[Prerelease information](../includes/prerelease.md)]
 
 ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations. Their Now platform has IT workflows, employee workflows, and customer workflows. [Learn more about ServiceNow](https://www.servicenow.com/)

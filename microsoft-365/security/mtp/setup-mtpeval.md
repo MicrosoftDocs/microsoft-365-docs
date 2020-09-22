@@ -19,6 +19,9 @@ ms.topic: article
 
 # Set up your Microsoft Threat Protection trial lab environment 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection 
 
