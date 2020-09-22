@@ -35,7 +35,7 @@ Sensitivity labels appear as an option in the **Content contains** list.
 
 ![sensitivity label as a condition](../media/dlp-sensitivity-label-as-a-condition.png)
 
-## Supported items and scenarios
+## Supported items, scenarios, and policy tips
 
 You can use sensitivity labels as conditions on these items and in these scenarios.
 
@@ -63,3 +63,15 @@ You can use sensitivity labels as conditions on these items and in these scenari
 - DLP policy tips will continue to be shown across workloads (except Outlook Win32) for DLP policies which contain sensitivity label as a condition.
 - Sensitivity labels will also appear as a part of the incident report email if a DLP policy with sensitivity label as a condition is matched.
 - Sensitivity label details will also be shown in the DLP rule match audit log for a DLP policy match which contains sensitivity label as a condition.
+
+
+### Support policy tips
+
+
+|workload  |policy tips supported/not supported  |
+|---------|---------|
+|OWA |    supported     |
+|Outlook Win 32    |  not supported       |
+|SharePoint   |   supported      |
+|OneDrive for Business    |    supported     |
+|endpoint devices   |  not supported       |
