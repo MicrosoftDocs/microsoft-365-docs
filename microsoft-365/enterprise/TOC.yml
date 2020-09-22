@@ -271,6 +271,8 @@
       items: 
         - name: Add a domain
           href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+        - name: Setup guides
+          href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
       items: 
         - name: Inter-tenant collaboration
@@ -579,7 +581,7 @@
               href: block-user-accounts-with-microsoft-365-powershell.md
         - name: Licenses and services
           items: 
-            - name: View
+            - name: View licenses and services
               href: view-licenses-and-services-with-microsoft-365-powershell.md
             - name: View licensed and unlicensed users
               href: view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md
@@ -587,6 +589,8 @@
               href: assign-licenses-to-user-accounts-with-microsoft-365-powershell.md
             - name: View account license and service details
               href: view-account-license-and-service-details-with-microsoft-365-powershell.md
+            - name: Remove licenses from user accounts
+              href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
             - name: Disable access to services
               href: disable-access-to-services-with-microsoft-365-powershell.md
               items: 
@@ -594,8 +598,6 @@
                   href: disable-access-to-sway-with-microsoft-365-powershell.md
                 - name: Disable access to services while assigning user licenses
                   href: disable-access-to-services-while-assigning-user-licenses.md
-                - name: Remove licenses from user accounts
-                  href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
         - name: Groups
           items: 
             - name: Maintain group membership
