@@ -200,7 +200,7 @@ The following table lists the roles that are required to view alerts from the si
 
 To see which category a default alert policy is assigned to, see the table in the [Default alert policies](#default-alert-policies) section.
 
-|&nbsp;|Information governance|Data loss prevention|Mail flow|Permissions|Threat management|Others|
+|Role|Information governance|Data loss prevention|Mail flow|Permissions|Threat management|Others|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Audit Logs|||||||
 |Case Management|||||||
