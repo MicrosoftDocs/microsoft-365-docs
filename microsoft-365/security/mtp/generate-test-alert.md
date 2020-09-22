@@ -21,6 +21,9 @@ ms.topic: conceptual
 
 # Generate a test alert in your Microsoft Threat Protection evaluation lab  
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 
