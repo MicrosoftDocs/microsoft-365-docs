@@ -19,6 +19,9 @@ description: "Learn about remediation actions in automated investigation and res
 
 # View pending or completed remediation actions following an automated investigation in Office 365
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 
 ![AIR investigations action page](../../media/air-investigationactionspage.png)
 

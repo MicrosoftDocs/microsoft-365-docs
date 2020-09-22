@@ -25,6 +25,9 @@ description: "Learn about Office 365 Advanced Threat Protection for files in Sha
 
 # ATP for SharePoint, OneDrive, and Microsoft Teams
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 ## Overview of Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams
 
 People regularly share files and collaborate using SharePoint, OneDrive, and Microsoft Teams. With [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), your organization can collaborate in a safer manner. ATP helps detect and block files that are identified as malicious in team sites and document libraries.

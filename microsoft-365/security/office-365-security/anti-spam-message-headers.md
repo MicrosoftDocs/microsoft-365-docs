@@ -20,6 +20,9 @@ ms.custom: seo-marvel-apr2020
 
 # Anti-spam message headers in Microsoft 365
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 In all Microsoft 365 organizations, Exchange Online Protection (EOP) scans all incoming messages for spam, malware, and other threats. The results of these scans are added to the following header fields in messages:
 
 - **X-Forefront-Antispam-Report**: Contains information about the message and about how it was processed.
