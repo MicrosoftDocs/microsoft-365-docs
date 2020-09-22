@@ -90,10 +90,7 @@ The Send event is also a mailbox auditing action and is triggered when a user pe
 
 - Forwards an email message
 
-Investigators can use the Send event to identify email sent from a compromised account. The audit record for a Send event contains information about the message, such as when the message was sent, the InternetMessage ID, the subject line, message attachments, and whether the message is labeled as a [record](records-management.md). This auditing information can help investigators identify information about email messages sent from a compromised account or sent by an attacker. Additionally, investigators can use a Microsoft 365 eDiscovery tool to search for the message (by using the subject line or message ID) to identify the recipients the message was sent to and the actual contents of the sent message.
-
-> [!NOTE]
-> The **IsRecord** property in the audit log identifies whether the sent message is labeled as a record or not. The value of `True` indicates the message is a record. The value of `False` means the record isn't labeled as a record.
+Investigators can use the Send event to identify email sent from a compromised account. The audit record for a Send event contains information about the message, such as when the message was sent, the InternetMessage ID, the subject line, and if the message contained attachments. This auditing information can help investigators identify information about email messages sent from a compromised account or sent by an attacker. Additionally, investigators can use a Microsoft 365 eDiscovery tool to search for the message (by using the subject line or message ID) to identify the recipients the message was sent to and the actual contents of the sent message.
 
 To search for Send audit records, you can search for the **Sent message** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft 365 compliance center.
 
@@ -111,6 +108,9 @@ To search for SearchQueryInitiatedExchange audit records, you can search for the
 
 You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell.
 
+> [!NOTE]
+> You must run the following command in Exchange Online PowerShell so that SearchQueryInitiatedExchange events (performed by the specified E5 user) are included in audit log search results: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.
+
 ### SearchQueryInitiatedSharePoint
 
 Similar to searching for mailbox items, the SearchQueryInitiatedSharePoint event is triggered when a person searches for items in the SharePoint home site, Teams sites, collaboration sites, and hub sites in your organization. Investigators can use the SearchQueryInitiatedSharePoint event to determine if an attacker tried to find (and possibly accessed) sensitive information in SharePoint. The audit record for a SearchQueryInitiatedSharePoint event contains also contains the actual search query text. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent and scope of the file data being searched for.
@@ -120,6 +120,9 @@ To search for SearchQueryInitiatedSharePoint audit records, you can search for t
 ![Searching for Performed SharePoint search actions in the audit log search tool](../media/AdvAudit_SearchSharePoint.png)
 
 You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell.
+
+> [!NOTE]
+> You must run the following command in Exchange Online PowerShell so that SearchQueryInitiatedSharePoint events (performed by the specified E5 user) are included in audit log search results: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.
 
 ## High-bandwidth access to the Office 365 Management Activity API
 
