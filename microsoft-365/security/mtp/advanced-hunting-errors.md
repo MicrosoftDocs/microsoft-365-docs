@@ -21,6 +21,9 @@ ms.topic: article
 
 # Handle advanced hunting errors
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 Advanced hunting displays errors to notify for syntax mistakes and whenever queries hit [predefined limits](advanced-hunting-limits.md). Refer to the table below for tips on how to resolve or avoid errors. 
 
 | Error type | Cause | Resolution | Error message examples |

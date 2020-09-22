@@ -21,6 +21,9 @@ ms.topic: conceptual
 
 # Run your pilot Microsoft Threat Protection project 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 
