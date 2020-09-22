@@ -499,10 +499,10 @@
               href: ./office-365-security/attack-simulator.md
             - name: Safe Documents in Office 365 ATP
               href: ./office-365-security/safe-docs.md
-            - name: Threat Explorer (and real-time detections)
-              href: ./office-365-security/threat-explorer.md
             - name: User tags in Office 365 ATP
               href: ./office-365-security/user-tags.md
+            - name: Threat Explorer (and real-time detections)
+              href: ./office-365-security/threat-explorer.md
               items: 
                 - name: Threat Explorer views
                   href: ./office-365-security/threat-explorer-views.md

@@ -412,3 +412,5 @@ To create a team for a case, you'll use the Create Microsoft Team control when w
 2. On the case action menu, select **Create Microsoft Team**.
 3. In the **Team name** field, enter a name for the new Microsoft Teams team.
 4. Select **Create Microsoft team** and then select **Close**.
+
+Depending on the number of users assigned to insider risk management role groups, it may take 15 minutes for all investigators and analysts to be added to the Microsoft Teams team for a case.
