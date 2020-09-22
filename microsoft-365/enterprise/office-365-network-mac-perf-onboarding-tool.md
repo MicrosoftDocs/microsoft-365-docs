@@ -21,7 +21,7 @@ description: "Microsoft 365 connectivity test in the M365 Admin Center (preview)
 The Microsoft 365 connectivity test is located at <https://connectivity.office.com>. It is an adjunct tool to the network insights and network score information available in the Microsoft 365 admin center under the **Health | Network Performance** menu.
 
 >[!NOTE]
->The onboarding tool supports tenants in WW Commercial and GCC Moderate but not GCC High, DoD, Germany or China.
+>The connectivity test tool supports tenants in WW Commercial and GCC Moderate but not GCC High, DoD, Germany or China.
 
 The network insights in the Microsoft 365 Admin Center are based on in-product measurements for your Microsoft 365 tenant. In comparison, the network insights from the Microsoft 365 connectivity test are run locally in the tool. Testing that can be done in-product is limited and by running tests local to the user more data can be gathered resulting in deeper insights. Consider then that the network insights in the Microsoft 365 Admin Center will show that there is a networking problem for use of Microsoft 365 at a specific office location. The Microsoft 365 connectivity test can help to identify the root cause of that problem leading to a recommended network performance improvement action.
 
