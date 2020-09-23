@@ -28,7 +28,7 @@ You can choose to use Intune, Intune together with an Azure Information Protecti
 >[!NOTE]
 >You can't begin using Basic Mobility and Security if you're already using Microsoft Intune.
 
-Microsoft Intune and Azure Information Protection Premium P1 and Azure Information Protection Premium P2 are standalone products included with some Microsoft 365 plans. Basic Mobility and Security is included in all of the Microsoft 365 plans. See the following table for details. 
+Microsoft Intune and C and Azure Information Protection Premium P2 are standalone products included with some Microsoft 365 plans. Basic Mobility and Security is included in all of the Microsoft 365 plans. See the following table for details. 
 
 |**Plan**|**Basic Mobility and Security**|**Microsoft Intune**|**Azure Information Protection Premium P1**|
 |:-----|:-----|:-----|:-----|
@@ -61,13 +61,36 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 |:-----|:-----|:-----|:-----|
 |Device types|Different OS platforms and major management mode variants. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS<br/>iPad OS|
 |Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. For details, see [Capabilities of Basic Mobility and Security](capabilities.md).|Yes|
-|Conditional access based on device compliance |Prevent noncompliant devices from accessing corporate email and data from the cloud. |- Not supported on Windows 10.<br/>- Limited to controlling access to Exchange Online, Sharepoint Online, and Outlook services. |No|
+|Conditional access based on device compliance |Prevent noncompliant devices from accessing corporate email and data from the cloud. |- Not supported on Windows 10.<br/>- Limited to controlling access to Exchange Online, Sharepoint Online, and Outlook services. |No <br/> Yes with Azure Information Protection Premium plan |
 |Device configuration  |Configure device settings (e.g. disabling the camera). |Limited set of settings. For details, see [Capabilities of Basic Mobility and Security](capabilities.md). |Yes|
-|Remote actions  |Send commands to devices over the internet. For example, remove Office data from an employee’s device while leaving personal data in place (Retire). |Retire<br/>Wipe<br/>Delete|-   Autopilot reset (Windows only)<br/>- [Bitlocker key rotation](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys) (Windows only)<br/>- [Delete](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)<br/>- [Disable activation loc](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable) (iOS only)<br/>- [Fresh start](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start) (Windows only)<br/>- [Full scan](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10 only)<br/>- [Locate device](https://docs.microsoft.com/mem/intune/remote-actions/device-locate) (iOS only)<br/>- [Lost mode](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode) (iOS only)<br/>- [Quick scan](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(Windows 10 only)<br/>- [Remote control for Android](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)<br/>- [Remote lock](https://docs.microsoft.com/mem/intune/remote-actions/device-remote-lock)<br/>- [Rename device](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)<br/>- [Reset passcode](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset)<br/>- [Restart](https://docs.microsoft.com/mem/intune/remote-actions/device-restart) (Windows only)<br/>- [Retire](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#retire)<br/>- Update Windows Defender Security Intelligence (Windows only)<br/>- Windows 10 PIN reset (Windows only)<br/>- [Wipe](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#wipe)<br/>- [Send custom notifications](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android, iOS, iPad OS)<br/>- [Synchronize device](https://docs.microsoft.com/mem/intune/remote-actions/device-sync)|
 |Email profiles  |Provision a native email profile on the device. |Yes|Yes|
-|WIFI profiles |Provision a native WIFI profile on the device. |No|Yes|
+|WiFi profiles |Provision a native WiFi profile on the device. |No|Yes|
 |VPN profiles |Provision a native VPN profile on the device. |No|Yes|
 |MDM application management  |Deploy your internal line-of-business apps and from apps stores to users. |No|Yes|
-|Mobile application protection  |Enable your users to securely access corporate information using the Office mobile and line-of-business apps they know, while ensuring security of data by helping to restrict actions like copy, cut, paste, and save as, to only those apps managed approved for corporate data. Works even if the devices are not enrolled to MDM. See Protect app data using MAM policies. |No|Yes|
+|MAM <br/> Mobile application protection  |Ensure your users can securely access corporate information using the Office mobile and line-of-business apps, by helping to restrict actions like copy, cut, paste, and save as, to only those apps managed approved for corporate data. |No|Yes|
 |Managed browser  |Enable more secure web browsing using the Edge app. |No|Yes|
-|Zero touch enrollment programs |Enroll large numbers of corporate-owned devices, while simplifying user set up. |No|Yes|
+|Zero touch enrollment programs Autopilot) |Enroll large numbers of corporate-owned devices, while simplifying user set up. |No|Yes|
+|||
+
+Additionally, remote actions that send commands to devices over the internet. For example, remove Office data from an employee’s device while leaving personal data in place (Retire). For Basic Mobility and Security includes Retire, Wipe, and Delete
+
+With Intune you have the following set of actions:
+
+-   Autopilot reset (Windows only
+-  [Bitlocker key rotation](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys) (Windows only)
+-  [Delete](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
+-  [Disable activation loc](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable) (iOS only)
+-  [Fresh start](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start) (Windows only)
+- [Full scan](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10 only)
+- [Locate device](https://docs.microsoft.com/mem/intune/remote-actions/device-locate) (iOS only)
+- [Lost mode](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode) (iOS only)- [Quick scan](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(Windows 10 only)
+- [Remote control for Android](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)
+- [Remote lock](https://docs.microsoft.com/mem/intune/remote-actions/device-remote-lock)
+- [Rename device](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)
+-  [Reset passcode](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset) [Restart](https://docs.microsoft.com/mem/intune/remote-actions/device-restart) (Windows only)
+- [Retire](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#retire)
+-  Update Windows Defender Security Intelligence (Windows only)
+-  Windows 10 PIN reset (Windows only)
+-  [Wipe](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#wipe)
+-  [Send custom notifications](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android, iOS, iPad OS)
+-  [Synchronize device](https://docs.microsoft.com/mem/intune/remote-actions/device-sync)
