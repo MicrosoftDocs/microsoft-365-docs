@@ -93,22 +93,92 @@ To find out more information about any actions needed during the migration phase
 - Office 365 Video is being retired on March 1, 2021 and Office 365 Video will not be supported after the SharePoint Online migration to the new German datacenter regions is completed. Content from Office 365 Video will be migrated as part of the SharePoint Online migration. However, Videos in Office 365 Video will not play back in the Office 365 Video UI after the SharePoint migration. Learn [more](https://docs.microsoft.com/en-us/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline) on the Office 365 Video transition to Microsoft Stream.
 
 ## Key differences between Microsoft Cloud Deutschland and Office 365 services in the new German datacenter regions
-
-|
- | **Microsoft Cloud Deutschland (Microsoft Cloud Deutschland)** | **Office 365 services in the new German datacenter regions** |
-| --- | --- | --- |
-| Microsoft 365 services available for subscription with just one Office 365 tenant | 15 services (see [the FAQ](link to &quot;What is the service availability between the different Office 365 cloud service offerings?&quot; question in FAQ)) | 29 services (see [the FAQ](link to &quot;What is the service availability between the different Office 365 cloud service offerings?&quot; question in FAQ)) |
-| --- | --- | --- |
-| New features | No new features are available. | New features will be available consistent with Office 365 services. |
-| Data trustee | Yes | No |
-| Cross-tenant collaboration with global Office 365 tenants | No | Yes |
-| Customer data residency | Customer Data will be stored solely within German Data Centers. | Microsoft will store the following Customer Data at rest exclusively within Germany:
-- Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments)
-- SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business
- |
-| Applicable terms | [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46) with [supplement](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=64) | [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46) |
-|
- |
- |
- |
-
+<table width="100%">
+<thead>
+<tr>
+<td width="20%">&nbsp;</td>
+<td width="25%">
+<p><strong>Microsoft Cloud Deutschland (Microsoft Cloud Deutschland)</strong></p>
+</td>
+<td width="53%">
+<p><strong>Office 365 services in the new German datacenter regions</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="20%">
+<p>Microsoft 365 services available for subscription with just one Office 365 tenant</p>
+</td>
+<td width="25%">
+<p>15 services (see [the FAQ](link to &ldquo;What is the service availability between the different Office 365 cloud service offerings?&rdquo; question in FAQ))</p>
+</td>
+<td width="53%">
+<p>29 services (see [the FAQ](link to &ldquo;What is the service availability between the different Office 365 cloud service offerings?&rdquo; question in FAQ))</p>
+</td>
+</tr>
+<tr>
+<td width="20%">
+<p>New features</p>
+</td>
+<td width="25%">
+<p>No new features are available.</p>
+</td>
+<td width="53%">
+<p>New features will be available consistent with Office 365 services.</p>
+</td>
+</tr>
+<tr>
+<td width="20%">
+<p>Data trustee</p>
+</td>
+<td width="25%">
+<p>Yes</p>
+</td>
+<td width="53%">
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td width="20%">
+<p>Cross-tenant collaboration with global Office 365 tenants</p>
+</td>
+<td width="25%">
+<p>No</p>
+</td>
+<td width="53%">
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td width="20%">
+<p>Customer data residency</p>
+</td>
+<td width="25%">
+<p>Customer Data will be stored solely within German Data Centers.</p>
+</td>
+<td width="53%">
+<p>Microsoft will store the following Customer Data at rest exclusively within Germany:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments)</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business</p>
+</td>
+</tr>
+<tr>
+<td width="20%">
+<p>Applicable terms</p>
+</td>
+<td width="25%">
+<p><a href="https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46">Online Services Terms</a>&nbsp;with&nbsp;<a href="https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=64">supplement</a></p>
+</td>
+<td width="53%">
+<p><a href="https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46">Online Services Terms</a></p>
+</td>
+</tr>
+<tr>
+<td width="20%">&nbsp;</td>
+<td width="25%">&nbsp;</td>
+<td width="53%">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
