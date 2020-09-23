@@ -55,24 +55,26 @@ Microsoft Intune and C and Azure Information Protection Premium P2 are standalon
 Microsoft Intune and built-in Basic Mobility and Security both give you the ability to manage mobile devices in your organization, but there are key differences in capability, described in the following table.
 
 >[!NOTE]
->You can manage users and their mobile devices using both Intune and Basic Mobility and Security in the same Microsoft 365 Business Standard organization by setting up Basic Mobility and Security first, and then adding Microsoft Intune. This allows you to choose whether you manage a user’s devices with Basic Mobility and Security or the more feature-rich Intune solution. In the mode, the license assignment determines which service the device is enrolled with. Assign an Intune license to enable the Intune-only features.
+>You can manage users and their mobile devices using both Intune and Basic Mobility and Security in the same Microsoft 365 Business Standard organization *by setting up Basic Mobility and Security first, and then adding Microsoft Intune*. This allows you to choose Basic Mobility and Security or the more feature-rich Intune solution. Assign an Intune license to enable the Intune-only features.
 
 |**Feature area**|**Feature highlights**|**Basic Mobility and Security**|**Microsoft Intune**|
 |:-----|:-----|:-----|:-----|
-|Device types|Different OS platforms and major management mode variants. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS<br/>iPad OS|
-|Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. For details, see [Capabilities of Basic Mobility and Security](capabilities.md).|Yes|
-|Conditional access based on device compliance |Prevent noncompliant devices from accessing corporate email and data from the cloud. |- Not supported on Windows 10.<br/>- Limited to controlling access to Exchange Online, Sharepoint Online, and Outlook services. |No <br/> Yes with Azure Information Protection Premium plan |
-|Device configuration  |Configure device settings (e.g. disabling the camera). |Limited set of settings. For details, see [Capabilities of Basic Mobility and Security](capabilities.md). |Yes|
+|Device types|Managing different OS platforms and major management mode variants. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, iPad OS|
+|Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. |Yes|
+|Conditional access based on device compliance |Prevent noncompliant devices from accessing corporate email and data from the cloud. |Not supported on Windows 10.<br/>Limited to controlling access to Exchange Online, SharePoint Online, and Outlook. |No <br/> Yes with Azure Information Protection Premium plan |
+|Device configuration  |Configure device settings (e.g. disabling the camera). |Limited set of settings. |Yes|
 |Email profiles  |Provision a native email profile on the device. |Yes|Yes|
 |WiFi profiles |Provision a native WiFi profile on the device. |No|Yes|
 |VPN profiles |Provision a native VPN profile on the device. |No|Yes|
-|MDM application management  |Deploy your internal line-of-business apps and from apps stores to users. |No|Yes|
-|MAM <br/> Mobile application protection  |Ensure your users can securely access corporate information using the Office mobile and line-of-business apps, by helping to restrict actions like copy, cut, paste, and save as, to only those apps managed approved for corporate data. |No|Yes|
+|MDM |Deploy your internal line-of-business apps and from apps stores to users. |No|Yes|
+|MAM |Ensure your users can securely access corporate information using the Office mobile and line-of-business apps, by helping to restrict actions like copy, cut, paste, and save as, to only those apps approved for corporate data. |No|Yes|
 |Managed browser  |Enable more secure web browsing using the Edge app. |No|Yes|
 |Zero touch enrollment programs Autopilot) |Enroll large numbers of corporate-owned devices, while simplifying user set up. |No|Yes|
 |||
 
-Additionally, remote actions that send commands to devices over the internet. For example, remove Office data from an employee’s device while leaving personal data in place (Retire). For Basic Mobility and Security includes Retire, Wipe, and Delete
+Additionally to features listed in the preceding table above, Basic Mobility and Security and Intune both include a set remote actions that send commands to devices over the internet. For example, you can remove Office data from an employee’s device while leaving personal data in place (Retire). For more information on all of the Basic Mobility and Security, see [capabilities of Basic Mobility and Security](capabilities.md).
+
+For Basic Mobility and Security remote actions include Retire, Wipe, and Delete.
 
 With Intune you have the following set of actions:
 
