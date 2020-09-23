@@ -11,11 +11,10 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Admins can set up a connector to import and archive data from Globanet Zoom Meetings into Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive Zoom Meetings data (preview)
+# Set up a connector to archive Zoom Meetings data
 
 Use a Globanet connector in the Microsoft 365 compliance center to import and archive data from Zoom Meetings to user mailboxes in your Microsoft 365 organization. Globanet provides a [Zoom Meetings](https://globanet.com/zoom/) connector that is configured to capture items from the third-party data source (on a regular basis) and import those items to Microsoft 365. The connector converts the content of the meetings (including chats, recorded files, and metadata) from the Zoom Meetings account to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
@@ -25,7 +24,7 @@ After Zoom Meetings data is stored in user mailboxes, you can apply Microsoft 36
 
 The following overview explains the process of using a connector to archive Zoom Meetings data in Microsoft 365.
 
-![Slack eDiscovery archiving workflow](../media/ZoomMeetingsConnectorWorkflow.png)
+![Zoom Meetings archiving workflow](../media/ZoomMeetingsConnectorWorkflow.png)
 
 1. Your organization works with Zoom Meetings to set up and configure a Zoom Meetings site.
 
@@ -37,7 +36,7 @@ The following overview explains the process of using a connector to archive Zoom
 
 ## Before you begin
 
-- Create a Globanet Merge1 account by accepting the terms and conditions for a Slack eDiscovery connector. To do this, contact [Globanet Customer Support](https://globanet.com/contact-us). You need to sign into this account when you create the connector in Step 1.
+- Create a Globanet Merge1 account for Microsoft connectors. To do this, contact [Globanet Customer Support](https://globanet.com/ms-connectors-contact). You need to sign into this account when you create the connector in Step 1.
 
 - Obtain the username and password for your organization's Zoom Business or Zoom Enterprise account. You'll need to sign into this account in Step 2 when you configure the Zoom Meetings connector.
 
@@ -97,6 +96,6 @@ After you create the Zoom Meetings connector, you can view the connector status 
 
 ## Known issues
 
-- At this time, we don't support importing attachments larger than 10 MB but support for larger items will be available at a later date.
+- At this time, we don't support importing attachments or items that are larger than 10 MB. Support for larger items will be available at a later date.
 
 - For the Zoom Meetings connector to work, you must enable recordings when setting up Zoom Meetings.

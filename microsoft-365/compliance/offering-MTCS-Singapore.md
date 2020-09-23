@@ -3,7 +3,7 @@ title: Multi-Tier Cloud Security (MTCS) Standard for Singapore
 description: Microsoft received certification for the Multi-Tier Cloud Security Standard for Singapore.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -20,7 +20,7 @@ titleSuffix: Microsoft Compliance
 
 ## MTCS overview
 
-The Multi-Tier Cloud Security (MTCS) Standard for Singapore was prepared under the direction of the Information Technology Standards Committee (ITSC) of the Infocomm Development Authority of Singapore (IDA). The ITSC promotes and facilitates national programs to standardize IT and communications, and Singapore’s participation in international standardization activities.
+The Multi-Tier Cloud Security (MTCS) Standard for Singapore was prepared under the direction of the Information Technology Standards Committee (ITSC) of the Infocomm Development Authority of Singapore (IDA). The ITSC promotes and facilitates national programs to standardize IT and communications, and Singapore's participation in international standardization activities.
 
 The purpose of the MTCS is to provide:
 
@@ -35,7 +35,7 @@ MTCS is the first cloud security standard with different levels of security, so 
 
 After rigorous assessments conducted by the MTCS Certification Body, Microsoft cloud services received MTCS 584:2013 certification across all three service classifications — Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Microsoft was the first global CSP to receive this certification across all three classifications.
 
-Certifications were granted at Level 3 for Microsoft Azure services (IaaS and PaaS), Microsoft Dynamics 365 services (SaaS), and Microsoft Office 365 services (SaaS). A Level 3 certification means that in-scope Microsoft cloud services can host high-impact data for regulated organizations with the strictest security requirements. It’s required for certain cloud solution implementations by the Singapore government.
+Certifications were granted at Level 3 for Microsoft Azure services (IaaS and PaaS), Microsoft Dynamics 365 services (SaaS), and Microsoft Office 365 services (SaaS). A Level 3 certification means that in-scope Microsoft cloud services can host high-impact data for regulated organizations with the strictest security requirements. It's required for certain cloud solution implementations by the Singapore government.
 
 ## Microsoft in-scope cloud services
 
@@ -84,13 +84,17 @@ MTCS has a total of 535 controls that cover three levels of security:
 - Level 2 addresses the needs of most organizations that are concerned about data security, with a set of more stringent controls targeted at security risks and threats to data. Level 2 is applicable for most cloud usage, including mission-critical business applications.
 - Level 3 is designed for regulated organizations with specific requirements and those willing to pay for stricter security requirements. Level 3 adds a set of security controls to supplement those in Levels 1 and 2. They address security risks and threats in high-impact information systems using cloud services, such as hosting applications with sensitive information and in regulated systems.
 
-**Where do I start with my organization’s own compliance effort?**
+**Where do I start with my organization's own compliance effort?**
 
 The [MTCS Certification Scheme](https://go.microsoft.com/fwlink/p/?linkid=2099490) provides guidance on audit controls and security requirements.
 
-**Can I use Microsoft’s compliance in my organization’s certification process?**
+**Can I use Microsoft's compliance in my organization's certification process?**
 
 Yes. If you have a requirement to certify your services built on these Microsoft cloud services, you can use the MTCS certification to reduce the impact of auditing your IT infrastructure, if it relies on them. However, you are responsible for engaging an assessor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

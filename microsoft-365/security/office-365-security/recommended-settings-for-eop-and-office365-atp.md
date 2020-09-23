@@ -20,6 +20,9 @@ description: "What are best practices for Exchange Online Protection (EOP) and A
 
 # Recommended settings for EOP and Office 365 ATP security
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 **Exchange Online Protection (EOP)** is the core of security for Microsoft 365 subscriptions and helps keep malicious emails from reaching your employee's inboxes. But with new, more sophisticated attacks emerging every day, improved protections are often required. **Office 365 Advanced Threat Protection (ATP)** ATP Plan 1 or ATP Plan 2 contain additional features that give admins more layers of security, control, and investigation.
 
 Although we empower security administrators to customize their security settings, there are two security levels in EOP and Office 365 ATP that we recommend: **Standard** and **Strict**. Each customer's environment and needs are different, but we believe that these levels of mail filtering configurations will help prevent unwanted mail from reaching your employees' inbox in most situations.
@@ -141,7 +144,7 @@ Additional security benefits come with an Office 365 Advanced Threat Protection 
 Office 365 ATP includes the Safe Attachment and Safe Links policies to prevent email with potentially malicious attachments from being delivered, and to keep users from clicking potentially unsafe URLs.
 
 > [!IMPORTANT]
-> Advanced anti-phishing is one of the benefits of an Office 365 ATP subscription. Although it's enabled by default, you ***must*** configure at least one anti-phishing policy before it can start filtering mail. Forgetting to configure anti-phishing policies could exposes users to risky emails. Be sure to configure your anti-phishing policies after you add an Office 365 ATP subscription.
+> Advanced anti-phishing is one of the benefits of an Office 365 ATP subscription. The default ATP anti-phishing policy provides [spoof protection](set-up-anti-phishing-policies.md#spoof-settings) for all recipients. However, the available [impersonation protection](#impersonation-settings-in-atp-anti-phishing-policies) settings for specific senders or sending domains are not configured or enabled in the default policy. To enable impersonation protection, you need to configure at least one ATP anti-phishing policy.
 
 If you've added an Office 365 ATP subscription to your EOP, set the following configurations.
 
@@ -208,14 +211,14 @@ To configure these settings, see [Set up Office 365 ATP Safe Links policies](set
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Use Safe Links in: Office 365 applications** <br/><br/> _EnableSafeLinksForO365Clients_|On <br/><br/> `$true`|On <br/><br/> `$true`|Use ATP Safe Links in Office 365 desktop and mobile (iOS and Android) clients.|
-|**Use Safe Links in: Office Web Access Companions** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|On <br/><br/> `$true`|On <br/><br/> `$true`|Use ATP Safe Links in Office Web Apps.|
+|**Use Safe Links in: Office Web Access Companions** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|On <br/><br/> `$true`|On <br/><br/> `$true`|Use ATP Safe Links in Office Web Apps. Note that this setting is not configurable.|
 |**Do not track when users click safe links** <br/><br/> _TrackClicks_|Off <br/><br/> `$true`|Off <br/><br/> `$true`||
 |**Do not let users click through safe links to original URL** <br/><br/> _AllowClickThrough_|On <br/><br/> `$false`|On <br/><br/> `$false`||
 |
 
 #### Safe Links policy settings in custom policies for specific users
 
-**Note**: In PowerShell, you use the [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) and [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy] cmdlets for these settings.
+**Note**: In PowerShell, you use the [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) and [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlets for these settings.
 
 ****
 

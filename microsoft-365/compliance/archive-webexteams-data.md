@@ -11,17 +11,16 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Admins can set up a connector to import and archive data from Globanet's Webex Teams connector in Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive Webex Teams data (preview)
+# Set up a connector to archive Webex Teams data
 
 Use a Globanet connector in the Microsoft 365 compliance center to import and archive data from Webex Teams to user mailboxes in your Microsoft 365 organization. Globanet provides a [Webex Teams](https://globanet.com/webex-teams/) connector that is configured to capture Webex Teams communication items and import them to Microsoft 365. The connector converts content from Webex Teams, such as 1:1 chats, group conversations, channel conversations, and attachments from your organization's Webex Teams account, to an email message format and then imports those items to the user's mailbox in Microsoft 365.
 
 After Webex Teams data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Webex Teams connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
-## Overview of archiving Webex Teams
+## Overview of archiving Webex Teams data
 
 The following overview explains the process of using a connector to archive Webex Teams data in Microsoft 365.
 
@@ -37,7 +36,7 @@ The following overview explains the process of using a connector to archive Webe
 
 ## Before you begin
 
-- Create a Globanet Merge1 account by accepting the terms and conditions for a Webex Teams connector. To do this, contact [Globanet Customer Support](https://globanet.com/contact-us). You need to sign into this account when you create the connector in Step 1.
+- Create a Globanet Merge1 account for Microsoft connectors. To do this, contact [Globanet Customer Support](https://globanet.com/ms-connectors-contact). You need to sign into this account when you create the connector in Step 1.
 
 - Create an application at [https://developer.webex.com/](https://developer.webex.com) to fetch data from your Webex Teams account. For step-by step instructions about creating the application, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf)
 
@@ -89,4 +88,4 @@ After you create the Webex Teams connector, you can view the connector status in
 
 ## Known issues
 
-- At this time, we don't support importing attachments larger than 10 MB but support for larger items will be available at a later date.
+- At this time, we don't support importing attachments or items that are larger than 10 MB. Support for larger items will be available at a later date.

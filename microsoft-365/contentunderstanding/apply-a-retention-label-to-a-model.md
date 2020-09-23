@@ -5,7 +5,8 @@ author: efrene
 manager: pamgreen
 ms.date: 10/1/2020
 audience: admin
-ms.topic: articlems.service: 
+ms.topic: article
+ms.service: o365-administration
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW

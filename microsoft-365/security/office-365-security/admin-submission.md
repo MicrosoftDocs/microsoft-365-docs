@@ -21,6 +21,9 @@ description: "Admins can learn how to use the Submissions portal in the Security
 
 # Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 In Microsoft 365 organizations with mailboxes in Exchange Online, admins can use the Submissions portal in the Security & Compliance Center to submit email messages, URLs, and attachments to Microsoft for scanning.
 
 When you submit an email, you will get information about any policies that may have allowed the incoming email into your tenant, as well as examination of any URLs and attachments in the mail. Policies that may have allowed a mail include an individual user's safe sender list as well as tenant level policies such as Exchange mail flow rules (also known as transport rules).
@@ -73,7 +76,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ### Send a suspect URL to Microsoft
 
-1. In the **Object type** section, select **URL**. In the box that appears, enter the full URL (for example, <https://www.fabrikam.com/marketing.html>).
+1. In the **Object type** section, select **URL**. In the box that appears, enter the full URL (for example, `https://www.fabrikam.com/marketing.html`).
 
 2. In the **Reason for submission** section, select one of the following options:
 

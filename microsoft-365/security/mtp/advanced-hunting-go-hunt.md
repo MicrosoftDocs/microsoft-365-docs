@@ -21,6 +21,9 @@ ms.topic: article
 
 # Quickly hunt for entity or event information with go hunt
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 

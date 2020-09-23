@@ -3,7 +3,7 @@ title: US Department of Defense (DoD) Provisional Authorization
 description: Microsoft received Department of Defense (DoD) Provisional Authorizations at Impact Levels 5, 4, and 2.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

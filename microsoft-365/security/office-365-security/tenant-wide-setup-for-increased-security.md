@@ -23,6 +23,9 @@ description: "This topic walks you through recommended configuration for tenant-
 
 # Configure your Microsoft 365 tenant for increased security
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment. Your security needs might require more or less security. Use these recommendations as a starting point.
 
 ## Check Office 365 Secure Score

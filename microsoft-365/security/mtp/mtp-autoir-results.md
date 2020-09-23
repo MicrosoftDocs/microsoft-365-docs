@@ -18,9 +18,14 @@ ms.collection:
 - M365-security-compliance 
 ms.topic: conceptual
 ms.custom: autoir
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
 ---
 
 # Details and results of an automated investigation
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 - Microsoft Threat Protection
@@ -76,8 +81,6 @@ In the Investigation details view, you can see information on the **Investigatio
 |Pending actions	|Lists items that require approval to proceed.|
 
 ## Next steps
-
-- [Get an overview of Action center permissions](mtp-action-center.md#required-permissions-for-action-center-tasks)
 
 - [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
 

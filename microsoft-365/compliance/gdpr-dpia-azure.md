@@ -3,7 +3,7 @@ title: DPIA Azure for the GDPR
 description: Find information to determine if a Data Protection Impact Assessment (DPIA) is necessary when using Microsoft Azure.
 keywords: DPIA, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

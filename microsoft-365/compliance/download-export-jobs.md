@@ -1,5 +1,5 @@
 ---
-title: Download export jobs for a case
+title: Download export jobs for an Advanced eDiscovery case
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
+ROBOTS: NOINDEX, NOFOLLOW 
 ms.custom: seo-marvel-mar2020
 description: "Install and use the Azure Storage Explorer to download documents that were exported from a review set in Advanced eDiscovery."
 ---
 
-# Download export jobs
+# Download export jobs in an Advanced eDiscovery case
 
 When you export documents from a review set in an Advanced eDiscovery case, the documents are uploaded to a Microsoft-provided Azure Storage location or to an Azure Storage location managed by your organization. The type of Azure Storage location used depends on which option was selected when the documents were exported.
 

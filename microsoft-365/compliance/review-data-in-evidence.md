@@ -7,16 +7,14 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: Learn about methods to review the data in your evidence, such as viewing in native, text, or near-native formats.
+description: "Learn about methods to review the data in your evidence, such as viewing in native, text, or near-native formats."
 ms.custom: seo-marvel-mar2020
 ---
 
@@ -30,7 +28,7 @@ To group documents and get more assistance for your review, select an evidence s
 
 ## View documents in evidence
 
-Data Investigations (Preview) allows you to display content in several different viewers, with each viewer having a different purpose. These viewers are:
+The Data Investigations (preview) tool allows you to display content in several different viewers, with each viewer having a different purpose. These viewers are:
 
 - File metadata
 - Native view
@@ -49,14 +47,14 @@ Here's an example of the file metadata for a document. For more information abou
 
 ## Native view
 
-The Native viewer displays the most accurate view of a document in it's native format. Native view is supported for hundreds of file types and is meant to display documents in the truest native experience possible. For Microsoft Office files, the Native viewer uses the web version of Office apps. This allows you to view content such as comments in different Office documents, formulas and hidden rows/columns in Excel, and the Notes view in PowerPoint.
+The Native viewer displays the most accurate view of a document in its native format. Native view is supported for hundreds of file types and is meant to display documents in the truest native experience possible. For Microsoft Office files, the Native viewer uses the web version of Office apps. This allows you to view content such as comments in different Office documents, formulas and hidden rows/columns in Excel, and the Notes view in PowerPoint.
 
 ![Native view
 ](../media/Reviewimage3.png)
 
 ## Text view
 
-The Text viewer provides a view of the extracted text of a file. It ignores any embedded images and formatting, but this view is very useful if you're trying to quickly review and understand the content in a document. Text view also includes these features:
+The Text viewer provides a view of the extracted text of a file. It ignores any embedded images and formatting, but this view is useful if you're trying to quickly review and understand the content in a document. Text view also includes these features:
 
   - A line counter, which makes it easier to reference specific portions of a document.
 
@@ -84,7 +82,7 @@ The Annotate view provides features that allow you to apply markup on a document
 
   - **Select annotations** - You can select and delete annotations in a document.
 
-  - **Toggle annotation transparency** – You can toggle the transparency of annotations (between opaque and semi-transparent)so you can view the content behind the annotation. This includes toggling the transparency of pencil annotations and redactions.
+  - **Toggle annotation transparency** – You can toggle the transparency of annotations (between opaque and semi-transparent) so you can view the content behind the annotation. This includes toggling the transparency of pencil annotations and redactions.
 
 The Annotate view also provides the following navigation functionality:
 
