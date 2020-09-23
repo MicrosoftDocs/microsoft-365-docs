@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 
 # View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 [Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) protects your organization from malicious files in document libraries and team sites. When a malicious file is detected, that file is blocked so that no one can open, copy, move, or share it until further actions are taken by the organization's security team. Read this article to learn how to view information about detected files and what actions to take.
 
 In order to perform the tasks described in this article, you must have the necessary [permissions for the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).

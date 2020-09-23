@@ -29,10 +29,12 @@ description: "In this article, admins can learn about Safe Links protection in O
 
 # Safe Links in Office 365 ATP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 > [!IMPORTANT]
 > This article is intended for business customers who have [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). If you're using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Safe Links is a feature in [Office 365 Advanced Threat Protection](office-365-atp.md) that provides time-of-click verification of URLs and links in email messages and other locations. Safe Links scanning of URLs occurs in addition to the regular scanning of spam and malware in inbound email messages in Exchange Online Protection (EOP).
+Safe Links is a feature in [Office 365 Advanced Threat Protection](office-365-atp.md) that provides URL scanning of inbound email messages in mail flow, and time-of-click verification of URLs and links in email messages and other locations. Safe Links scanning occurs in addition to the regular [anti-spam and anti-malware protection](anti-spam-and-anti-malware-protection.md) in inbound email messages in Exchange Online Protection (EOP).
 
 Safe Links protection is available in the following locations:
 

@@ -1,5 +1,5 @@
 ---
-title: "Virus detection in SharePoint Online"
+title: "Built-in virus detection in SharePoint Online, OneDrive for Business, and Microsoft Teams"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -21,16 +21,18 @@ description: Learn about how SharePoint Online detects viruses in files that use
 ms.custom: seo-marvel-apr2020
 ---
 
-# Virus detection in SharePoint Online, OneDrive, and Microsoft Teams
+# Built-in virus detection in SharePoint Online, OneDrive, and Microsoft Teams
 
-Microsoft 365 uses a common virus detection engine to help protect files that users upload to SharePoint Online, OneDrive, and Microsoft Teams. This protection is included with all subscriptions that include SharePoint Online, OneDrive, and Microsoft Teams.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+Microsoft 365 uses a common virus detection engine for scanning files that users upload to SharePoint Online, OneDrive for Business, and Microsoft Teams. This protection is included with all subscriptions that include SharePoint Online, OneDrive for Business, and Microsoft Teams.
 
 > [!IMPORTANT]
-> The built-in anti-virus capabilities in SharePoint Online are a way to contain viruses. They aren't intended as a single point of defense against malware for your environment. We encourage all customers to investigate and implement anti-malware protection at various layers and apply best practices for securing their enterprise infrastructure. For more information about strategies and best practices, see [Security roadmap](security-roadmap.md).
+> The built-in anti-virus capabilities are a way to help contain viruses. They aren't intended as a single point of defense against malware for your environment. We encourage all customers to investigate and implement anti-malware protection at various layers and apply best practices for securing their enterprise infrastructure. For more information about strategies and best practices, see [Security roadmap](security-roadmap.md).
 
 ## What happens when an infected file is uploaded to SharePoint Online?
 
-The Microsoft 365 virus detection engine runs asynchronously within SharePoint Online. All files are not automatically scanned on upload. Heuristics determine the files to scan. When a file is found to contain a virus, the file is flagged so that it can't be downloaded again. In April 2018, we removed the 25 MB limit for scanned files.
+The Microsoft 365 virus detection engine runs asynchronously within SharePoint Online. **All files are not automatically scanned on upload**. Heuristics determine the files to scan. When a file is found to contain a virus, the file is flagged so that it can't be downloaded again. In April 2018, we removed the 25 MB limit for scanned files.
 
 Here's what happens:
 
@@ -41,7 +43,7 @@ Here's what happens:
 
 ## What happens when a user tries to download an infected file by using the browser?
 
-If a file is infected, users can't download the file from SharePoint Online by using the browser.
+If a file is infected, users can't download the file from SharePoint Online by using a browser.
 
 Here's what happens:
 
@@ -60,7 +62,7 @@ OneDrive sync clients wil not download files that contain viruses. The sync clie
 
 ## Extended capabilities with Office 365 Advanced Threat Protection
 
-Microsoft 365 organizations that have [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) (included in their subscription or purchased as an add-on) can enable ATP for SharePoint, OneDrive, and Microsoft Teams for enhanced reporting and protection. For more information, see [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Microsoft 365 organizations that have [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) included in their subscription or purchased as an add-on can enable ATP for SharePoint, OneDrive, and Microsoft Teams for enhanced reporting and protection. For more information, see [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 ## More information
 

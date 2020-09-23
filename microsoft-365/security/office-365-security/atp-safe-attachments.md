@@ -22,9 +22,9 @@ description: "Admins can learn about the Safe Attachments feature in Office 365 
 
 # Safe Attachments in Office 365 ATP
 
-All inbound messages in Microsoft 365 are automatically scanned for malware by Exchange Online Protection (EOP). For more information, see [Anti-malware protection in EOP](anti-malware-protection.md).
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Safe Attachments in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) provides an additional layer of protection for email attachments that have already been scanned by EOP. Specifically, Safe Attachments uses a virtual environment to check attachments in email messages before they're delivered to recipients (a process known as _detonation_).
+Safe Attachments in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) provides an additional layer of protection for email attachments that have already been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md). Specifically, Safe Attachments uses a virtual environment to check attachments in email messages before they're delivered to recipients (a process known as _detonation_).
 
 Safe Attachments protection for email messages is controlled by Safe Attachments policies. There is no default Safe Attachments policy, **so to get the protection of Safe Attachments, you need to create one or more Safe Attachments policies**. For instructions, see [Set up Safe Attachments policies in ATP](set-up-atp-safe-attachments-policies.md).
 
@@ -43,7 +43,7 @@ The following table describes scenarios for Safe Attachments in Microsoft 365 an
 Safe Attachments scanning takes place in the same region where your Microsoft 365 data resides. For more information about datacenter geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> The following features are associated with Safe Attachments policies in the Security & Compliance Center, but these settings are enabled or disabled globally, and don't require a Safe Attachments policy:
+> The following features are located with Safe Attachments policies in the Security & Compliance Center, but these settings are enabled or disabled globally, and don't require Safe Attachments policies:
 >
 > - [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
 >
@@ -51,9 +51,9 @@ Safe Attachments scanning takes place in the same region where your Microsoft 36
 
 ## Safe Attachments policy settings
 
-These are the important settings in Safe Attachments policies:
+This section describes the settings in Safe Attachments policies:
 
-- **Unknown malware response**: This setting controls the action for Safe Attachments malware scanning in email messages. The available options are described in the following table:
+- **Safe Attachments unknown malware response**: This setting controls the action for Safe Attachments malware scanning in email messages. The available options are described in the following table:
 
   ****
 
@@ -89,11 +89,11 @@ These are the important settings in Safe Attachments policies:
 > [!NOTE]
 > Dynamic Delivery works only for Exchange Online mailboxes.
 
-The Dynamic Delivery action in Safe Attachments policies seeks to eliminate any email delivery delays that might be caused by Safe Attachments scanning. The body of the email message is delivered to the recipient with a placeholder for each attachment. The placeholder remains until the attachment is determined to be safe, and then the attachment becomes available to open or download.
+The Dynamic Delivery action in Safe Attachments policies seeks to eliminate any email delivery delays that might be caused by Safe Attachments scanning. The body of the email message is delivered to the recipient with a placeholder for each attachment. The placeholder remains until the attachment is found to be safe, and then the attachment becomes available to open or download.
 
-If an attachment is determined to be malicious, the message is quarantined. Only admins (not end-users) can review, release, or delete messages that were quarantined by Safe Attachments scanning. For more information, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
+If an attachment is found to be malicious, the message is quarantined. Only admins (not end-users) can review, release, or delete messages that were quarantined by Safe Attachments scanning. For more information, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
 
-Most PDFs and Office documents can be previewed in safe mode while Safe Attachments scanning is underway. If an attachment is not compatible with the Dynamic Delivery previewer, email recipients see a placeholder for the attachment until Safe Attachments scanning is complete.
+Most PDFs and Office documents can be previewed in safe mode while Safe Attachments scanning is underway. If an attachment is not compatible with the Dynamic Delivery previewer, the recipients will see a placeholder for the attachment until Safe Attachments scanning is complete.
 
 If you're using a mobile device, and PDFs aren't rendering in the Dynamic Delivery previewer on your mobile device, try opening the message in Outlook on the web (formerly known as Outlook Web App) using your mobile browser.
 
@@ -105,7 +105,7 @@ Here are some considerations for Dynamic Delivery and forwarded messages:
 
 ## Scenarios where Safe Attachments doesn't scan messages
 
-There are scenarios where Safe Attachments is unable to scan messages. These scenarios are described in the following list:
+There are scenarios where Safe Attachments is unable to scan messages:
 
 - Messages in public folders.
 
@@ -117,11 +117,11 @@ There are scenarios where Safe Attachments is unable to scan messages. These sce
 
 - The user's mailbox search folder is in an error state.
 
-- Exchange Online organization where Exclaimer is enabled. To resolve this, see [KB4014438](https://support.microsoft.com/help/4014438).
+- Exchange Online organizations where Exclaimer is enabled. To resolve this, see [KB4014438](https://support.microsoft.com/help/4014438).
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) encrypted messages.
 
-- You configured the Dynamic Delivery action in a Safe Attachments policy, but the recipient doesn't support Dynamic Delivery (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Office 365 ATP](set-up-atp-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the Safe Links policies are configured).
+- You configured the Dynamic Delivery action in a Safe Attachments policy, but the recipient doesn't support Dynamic Delivery (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Office 365 ATP](set-up-atp-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the Safe Links is configured).
 
 ## Submitting files for malware analysis
 

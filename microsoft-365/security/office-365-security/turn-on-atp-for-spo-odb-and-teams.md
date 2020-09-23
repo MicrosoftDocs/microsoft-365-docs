@@ -23,14 +23,15 @@ ms.custom: seo-marvel-apr2020
 
 # Turn on ATP for SharePoint, OneDrive, and Microsoft Teams
 
-> [!IMPORTANT]
-> This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are a home user looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files. For more information, see [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 This article contains the steps for enabling and configuring ATP for SharePoint, OneDrive, and Microsoft Teams.
 
 ## What do you need to know before you begin?
+
+- You open the Security & Compliance Center at <https://protection.office.com>. To go directly to the **ATP Safe Attachments** page, open <https://protection.office.com/safeattachmentv2>.
 
 - To turn on ATP for SharePoint, OneDrive, and Microsoft Teams, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -42,17 +43,15 @@ This article contains the steps for enabling and configuring ATP for SharePoint,
 
 ## Step 1: Use the Security & Compliance Center to turn on ATP for SharePoint, OneDrive, and Microsoft Teams
 
-1. In the [Security & Compliance Center](https://protection.office.com), go to **Threat management** \> **Policy** \> **ATP Safe Attachments** or open <https://protection.office.com/safeattachmentv2>.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**, and click **Global settings**.
 
-2. Select **Global settings**.
-
-3. In the **Global settings** fly out that appears, go to the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** setting. Move the toggle to the right ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to turn on ATP for SharePoint, OneDrive, and Microsoft Teams.
+2. In the **Global settings** fly out that appears, go to the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** setting. Move the toggle to the right ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to turn on ATP for SharePoint, OneDrive, and Microsoft Teams.
 
    When you're finished, click **Save**.
 
 ### Use Exchange Online PowerShell to turn on ATP for SharePoint, OneDrive, and Microsoft Teams
 
-If you'd rather use PowerShell, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) and run the following command to turn on ATP for SharePoint, OneDrive, and Microsoft Teams:
+If you'd rather use PowerShell to turn on ATP for SharePoint, OneDrive, and Microsoft Teams, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
 
 ```powershell
 Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
@@ -62,7 +61,7 @@ For detailed syntax and parameter information, see [Set-AtpPolicyForO365](https:
 
 ## Step 2: (Recommended) Use SharePoint Online PowerShell to prevent users from downloading malicious files
 
-By default, users can't open, move, copy, or share malicious files that are detected by ATP for SharePoint, OneDrive, and Microsoft Teams. However, they can delete and download malicious files.
+By default, users can't open, move, copy, or share malicious files that are detected by ATP. However, they can delete and download malicious files.
 
 To prevent users from downloading malicious files, [connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) and run the following command:
 
@@ -79,7 +78,7 @@ For detailed syntax and parameter information, see [Set-SPOTenant](https://docs.
 
 ## Step 3 (Recommended) Use the Security & Compliance Center to create an alert policy for detected files
 
-You can create an alert policy that notifies you and other admins when ATP for SharePoint, OneDrive, and Microsoft Teams detects a malicious file.
+You can create an alert policy that notifies you and other admins when ATP for SharePoint, OneDrive, and Microsoft Teams detects a malicious file. To learn more about alerts, see [Create activity alerts in the Security & Compliance Center](../../compliance/create-activity-alerts.md).
 
 1. In the [Security & Compliance Center](https://protection.office.com), go to **Alerts** \> **Alert policies** or open <https://protection.office.com/alertpolicies>.
 
@@ -116,7 +115,7 @@ You can create an alert policy that notifies you and other admins when ATP for S
 
 ### Use Security & Compliance PowerShell to create an alert policy for detected files
 
-If you'd rather use PowerShell, [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and run the following command to create the same alert policy as described in the previous section:
+If you'd rather use PowerShell to create the same alert policy as described in the previous section, [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and run the following command:
 
 ```powershell
 New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams" -Category ThreatManagement -Operation FileMalwareDetected -NotifyUser "admin1@contoso.com","admin2@contoso.com"
@@ -125,8 +124,6 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 **Note**: The default _Severity_ value is Low. To specify Medium or High, include the _Severity_ parameter and value in the command.
 
 For detailed syntax and parameter information, see [New-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/new-activityalert).
-
-To learn more about alerts, see [Create activity alerts in the Security & Compliance Center](../../compliance/create-activity-alerts.md).
 
 ### How do you know these procedures worked?
 

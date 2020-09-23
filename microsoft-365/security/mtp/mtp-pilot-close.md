@@ -21,6 +21,9 @@ ms.topic: conceptual
 
 # Closing and summarizing your Microsoft Threat Protection pilot  
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 

@@ -20,6 +20,8 @@ description: "The Safe Links feature provides time-of-click verification of hype
 
 # How Safe Links in Office 365 ATP works
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 > [!IMPORTANT]
 > For Office 365 Safe Links to operate correctly, all of the services need to be at the same version.
 
