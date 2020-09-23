@@ -32,7 +32,7 @@ Microsoft 365 uses a common virus detection engine for scanning files that users
 
 ## What happens when an infected file is uploaded to SharePoint Online?
 
-The Microsoft 365 virus detection engine runs asynchronously within SharePoint Online. **All files are not automatically scanned on upload**. Heuristics determine the files to scan. When a file is found to contain a virus, the file is flagged so that it can't be downloaded again. In April 2018, we removed the 25 MB limit for scanned files.
+The Microsoft 365 virus detection engine runs asynchronously within SharePoint Online. **All files are not automatically scanned on upload**. Heuristics determine the files to scan. When a file is found to contain a virus, the file is flagged so it can't be downloaded again. In April 2018, we removed the 25 MB limit for scanned files.
 
 Here's what happens:
 
@@ -58,7 +58,7 @@ Here's what happens:
 
 ## What happens when the OneDrive sync client tries to sync an infected file?
 
-OneDrive sync clients wil not download files that contain viruses. The sync client will display a notification that the file can't be synced.
+OneDrive sync clients will not download files that contain viruses. The sync client will display a notification that the file can't be synced.
 
 ## Extended capabilities with Office 365 Advanced Threat Protection
 
@@ -66,4 +66,4 @@ Microsoft 365 organizations that have [Office 365 Advanced Threat Protection (AT
 
 ## More information
 
-See [Protect against threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide#requirements) and [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-worldwide) for more information on how to configure SharePoint Online antivirus.
+For more information about anti-virus in SharePoint Online, OneDrive for Business, and Microsoft Teams, see [Protect against threats](protect-against-threats.md) and [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).

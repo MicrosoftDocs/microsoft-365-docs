@@ -2,12 +2,11 @@
 title: "Set up Office 365 ATP Safe Attachments policies"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 02/06/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -24,11 +23,10 @@ ms.custom: seo-marvel-apr2020
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 > [!IMPORTANT]
-> This article is intended for business customers who have [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). If you're a home user looking for information about Safe Attachments in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> This article is intended for business customers who have [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). If you're a home user looking for information about attachment scanning in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Safe Attachments is a feature in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) that uses a virtual environment to check attachments in inbound email messages before delivery to recipients. For more information, see [Safe Attachments in Office 365 ATP](atp-safe-attachments.md).
+Safe Attachments is a feature in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) that uses a virtual environment to check attachments in inbound email messages after they've been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md), but before delivery to recipients. For more information, see [Safe Attachments in Office 365 ATP](atp-safe-attachments.md).
 
 There's no built-in or default Safe Attachments policy. To get Safe Attachments scanning of email message attachments, you need to create one or more Safe Attachments policies as described in this article.
 
@@ -90,7 +88,7 @@ Creating a custom Safe Attachments policy in the Security & Compliance Center cr
 
      These values are explained in [Safe Attachments policy settings](atp-safe-attachments.md#safe-attachments-policy-settings).
 
-   - **Send the attachment to the following email address**: For the action values **Block**, **Monitor**, or **Replace** , you can select **Enable redirect** to send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
+   - **Send the attachment to the following email address**: For the action values **Block**, **Monitor**, or **Replace**, you can select **Enable redirect** to send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
 
      The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [ATP Safe Attachments policy settings](recommended-settings-for-eop-and-office365-atp.md#atp-safe-attachments-policy-settings).
 
@@ -214,7 +212,6 @@ Creating a Safe Attachments policy in PowerShell is a two-step process:
 - You can create a new safe attachment rule and assign an existing, unassociated safe attachment policy to it. A safe attachment rule can't be associated with more than one safe attachment policy.
 
 - You can configure the following settings on new safe attachment policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:
-
   - Create the new policy as disabled (_Enabled_ `$false` on the **New-SafeAttachmentRule** cmdlet).
   - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-SafeAttachmentRule** cmdlet).
 
@@ -288,7 +285,7 @@ For detailed syntax and parameter information, see [Get-SafeAttachmentPolicy](ht
 To view existing safe attachment rules, use the following syntax:
 
 ```PowerShell
-Get-SafeAttachmentRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled] [| <Format-Table | Format-List> <Property1,Property2,...>]
+Get-SafeAttachmentRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled>] [| <Format-Table | Format-List> <Property1,Property2,...>]
 ```
 
 This example returns a summary list of all safe attachment rules.
