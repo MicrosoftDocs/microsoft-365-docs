@@ -106,7 +106,7 @@ Once these settings are enabled, the group owner will be able to choose a classi
 
 ![Choose Microsoft 365 Group classification](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
 
-## Hide MIcrosoft 365 Groups from GAL
+## Hide Microsoft 365 Groups from the global address list.
 <a name="BKMK_CreateClassification"> </a>
 
 You can specify whether an MIcrosoft 365 Group appears in the global address list (GAL) and other lists in your organization. For example, if you have a legal department group that you don't want to show up in the address list, you can stop that group from appearing in GAL. Run the Set-Unified Group cmdlet to hide the group from address list like this:
