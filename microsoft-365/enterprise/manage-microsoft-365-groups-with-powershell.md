@@ -143,7 +143,7 @@ Along with MailTip, you can also set MailTipTranslations, which specifies additi
 Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" -MailTipTranslations "@{Add="ES:Esta caja no se supervisa."
 ```
 
-## Change Display name of the MIcrosoft 365 Group
+## Change the display name of the Microsoft 365 Group
 
 The display name specifies the name of the Microsoft 365 Group. You can see this name in your exchange admin center or Microsoft 365 admin center. You can edit the display name of the group or assign a display name to an existing Microsoft 365 Group by running the Set-UnifiedGroup command:
 
