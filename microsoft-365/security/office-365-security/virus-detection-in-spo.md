@@ -1,5 +1,5 @@
 ---
-title: "Built-in virus detection in SharePoint Online, OneDrive for Business, and Microsoft Teams"
+title: "Built-in virus detection in SharePoint Online, OneDrive, and Microsoft Teams"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Microsoft 365 uses a common virus detection engine for scanning files that users upload to SharePoint Online, OneDrive for Business, and Microsoft Teams. This protection is included with all subscriptions that include SharePoint Online, OneDrive for Business, and Microsoft Teams.
+Microsoft 365 uses a common virus detection engine for scanning files that users upload to SharePoint Online, OneDrive, and Microsoft Teams. This protection is included with all subscriptions that include SharePoint Online, OneDrive, and Microsoft Teams.
 
 > [!IMPORTANT]
 > The built-in anti-virus capabilities are a way to help contain viruses. They aren't intended as a single point of defense against malware for your environment. We encourage all customers to investigate and implement anti-malware protection at various layers and apply best practices for securing their enterprise infrastructure. For more information about strategies and best practices, see [Security roadmap](security-roadmap.md).
@@ -66,4 +66,4 @@ Microsoft 365 organizations that have [Office 365 Advanced Threat Protection (AT
 
 ## More information
 
-For more information about anti-virus in SharePoint Online, OneDrive for Business, and Microsoft Teams, see [Protect against threats](protect-against-threats.md) and [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+For more information about anti-virus in SharePoint Online, OneDrive, and Microsoft Teams, see [Protect against threats](protect-against-threats.md) and [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
