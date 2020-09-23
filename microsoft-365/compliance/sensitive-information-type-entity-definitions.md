@@ -202,6 +202,13 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - iaea
 
 ## Australia business number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
+
 
 ### Format
 
@@ -257,6 +264,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - businessno#
 
 ## Australia company number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -918,6 +931,12 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - tax number
  
 ## Austria value added tax
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -1734,6 +1753,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Belgium value added tax number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -5055,6 +5080,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Finland european health insurance number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -5384,6 +5415,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## France health insurance number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -5686,6 +5723,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## France value added tax number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -6080,6 +6123,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Germany value added tax number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -6759,6 +6808,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Hungary value added tax number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -7638,6 +7693,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - passeport italien
 
 ## Italy value added tax number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -7866,6 +7927,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Japan My Number - Corporate
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -7921,6 +7988,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Japan My Number - Personal
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -9398,6 +9471,12 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 
 ## Netherlands value added tax number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -9454,6 +9533,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## New Zealand bank account number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -9510,6 +9595,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## New Zealand driver's license number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -9619,6 +9710,12 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 
 ## New Zealand inland revenue number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -9716,6 +9813,12 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 
 ## New Zealand social wlefare number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -10062,6 +10165,12 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - Paszport
 
 ## Poland REGON number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -10628,6 +10737,12 @@ numerele pașaportului
 Pașaport nr
 
 ## Russia passport number domestic
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -10684,6 +10799,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Russia passport number international
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -12208,7 +12329,13 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - code identificateur de banque 
 
 
-## Swiss SSN AHV number
+## Switzerland SSN AHV number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -13270,6 +13397,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Passeportn ° 
 
 ## Ukraine passport domestic
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -13312,6 +13445,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Ukraine passport international
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
