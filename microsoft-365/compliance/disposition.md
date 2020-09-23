@@ -138,6 +138,3 @@ You can export information about the items in either view as a .csv file that yo
 
 ![Export option for disposition](../media/retention-export-option.png)
 
-Example exported data in Excel:
-
-![Exported disposition data in Excel](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
