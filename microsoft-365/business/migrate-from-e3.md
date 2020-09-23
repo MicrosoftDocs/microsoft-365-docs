@@ -112,7 +112,7 @@ You can also complete these steps on the Devices page:
   
 ### Mailbox Size
 
-Microsoft 365 Business premium has 50Gb storage limit as it uses Exchange Online Plan 1. While Migrating to Microsoft 365 Business Premium, If any of your users are exceeding 50GB mailbox storage  it is recommended that you assign this user Exchange Plan 2 and remove the Exchange Online Plan 1 as It's not feasible to assign both.
+Microsoft 365 Business Premium has a 50 GB storage limit as it uses Exchange Online Plan 1. While migrating to Microsoft 365 Business Premium, if any of your users exceed 50 GB of mailbox storage, it is recommended that you assign this user an Exchange Online Plan 2 and remove the Exchange Online Plan 1 as it's not feasible to assign both.
 
 
 ### Threat protection
