@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: Priority
 description: 'Learn how to set up SharePoint Syntex'
