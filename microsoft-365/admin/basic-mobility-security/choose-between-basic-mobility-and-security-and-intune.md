@@ -24,7 +24,7 @@ description: "Choose an app and device management method."
 
 You can choose to use Intune, Intune together with an Azure Information Protection Premium plan, or Basic Mobility and Security to secure your devices and app data.  
 
-If your plan includes both Intune and Azure Information Protection Premium P1, or Azure Information Protection Premium P2 you get higher functionality for both mobile device management (MDM) and mobile app management (MAM) and you should not use Basic Mobility and Security. 
+If your plan includes both Intune and Azure Information Protection Premium P1, or Azure Information Protection Premium P2 you get higher functionality for both mobile device management (MDM) and mobile app management (MAM), you should use Intune. 
 
 For more information on the Azure Information Protection plans, see [Azure Information Protection documentation](https://docs.microsoft.com/azure/information-protection/).
 
