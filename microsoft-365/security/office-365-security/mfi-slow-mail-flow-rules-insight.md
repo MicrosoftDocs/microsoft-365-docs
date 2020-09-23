@@ -18,6 +18,9 @@ description: "Admins can learn how to use the Fix slow mail flow rules insight i
 
 # Fix slow mail flow rules insight in the Security & Compliance Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Inefficient mail flow rules (also known as transport rules) can lead to mail flow delays for your organization. This insight reports mail flow rules that have an impact on your organization's mail flow. Examples of these types of rules include:
 
 - Conditions that use **Is member of** for large groups.

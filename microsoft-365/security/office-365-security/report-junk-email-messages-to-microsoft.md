@@ -20,6 +20,9 @@ description: "Admins can learn about the different ways to report good and bad m
 
 # Report messages and files to Microsoft
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, both users and admins have several different methods for reporting email messages and files to Microsoft.
 
 ****

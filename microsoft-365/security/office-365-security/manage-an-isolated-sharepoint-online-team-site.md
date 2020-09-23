@@ -20,6 +20,9 @@ description: Manage an isolated SharePoint Online team site, add new users and g
 
 # Manage an isolated SharePoint Online team site
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
  **Summary:** Manage your isolated SharePoint Online team site with these procedures.
   
 This article describes common management operations for an isolated SharePoint Online team site.

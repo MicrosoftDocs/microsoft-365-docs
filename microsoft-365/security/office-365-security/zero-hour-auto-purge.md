@@ -25,6 +25,9 @@ description: "Admins can learn about how zero-hour auto purge (ZAP) can retroact
 
 # Zero-hour auto purge (ZAP) in Exchange Online
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 ## Basic features of ZAP
 
 In Microsoft 365 organizations with mailboxes in Exchange Online, zero-hour auto purge (ZAP) is an email protection feature that retroactively detects and neutralizes malicious phishing, spam, or malware messages that have already been delivered to Exchange Online mailboxes.

@@ -22,6 +22,9 @@ ms.reviewer: vippand
 
 # What's new in Office 365 ATP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 **Applies to:**
 
 - [Office 365 Advanced Threat Protection (Office 365 ATP)](office-365-atp.md)

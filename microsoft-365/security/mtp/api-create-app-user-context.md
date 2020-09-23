@@ -23,6 +23,9 @@ search.appverid:
 
 # Access Microsoft Threat Protection APIs on behalf of user
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 

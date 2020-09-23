@@ -22,6 +22,9 @@ description: "This article provides troubleshooting information for issues with 
 
 # Troubleshooting mail sent to Microsoft 365
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 This article provides troubleshooting information for senders who are experiencing issues when trying to send email to inboxes in Microsoft 365 and best practices for bulk mailing to customers.
 
 ## Are you managing your IP and domain's sending reputation?
