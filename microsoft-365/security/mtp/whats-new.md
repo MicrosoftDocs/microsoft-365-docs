@@ -19,6 +19,9 @@ ms.topic: conceptual
 
 # What's new in Microsoft Threat Protection
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 The following features are generally available (GA) in the latest release of Microsoft Threat Protection.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:

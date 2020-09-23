@@ -22,6 +22,9 @@ ms.custom:
 
 # Security Incident Response
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
  **Summary:** This solution tells you what the indicators are for the most common cybersecurity attacks in Office 365, how to positively confirm any given attack, and how to respond to it.
 
 ## Learn how to respond to cyberattacks

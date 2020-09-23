@@ -1,7 +1,7 @@
 - name: Microsoft 365 security
   href: index.yml
   items: 
-    - name: Get started 
+    - name: Get started
       items: 
         - name: Top tasks to support working from home
           href: top-security-tasks-for-remote-work.md
@@ -55,7 +55,7 @@
             - name: Troubleshoot issues
               href: ./mtp/troubleshoot.md
             - name: Industry tests
-              href: ./mtp/top-scoring-industry-tests.md 
+              href: ./mtp/top-scoring-industry-tests.md
         - name: Evaluate capabilities
           items: 
             - name: Trial lab overview
@@ -134,7 +134,7 @@
                       href: mtp/advanced-hunting-expert-training.md
                     - name: Use shared queries
                       href: mtp/advanced-hunting-shared-queries.md
-                    - name: Hunt across devices, emails, apps, and identities 
+                    - name: Hunt across devices, emails, apps, and identities
                       href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Work with query results
                   href: mtp/advanced-hunting-query-results.md
@@ -209,7 +209,7 @@
                 - name: Functions
                   items:
                     - name: AssignedIPAddresses()
-                      href: mtp/advanced-hunting-assignedipaddresses-function.md 
+                      href: mtp/advanced-hunting-assignedipaddresses-function.md
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
                 - name: Custom detections
@@ -244,7 +244,7 @@
                   href: mtp/feedback.md
                 - name: Create ServiceNow tickets and tasks
                   items:
-                    - name: ServiceNow integration overview 
+                    - name: ServiceNow integration overview
                       href: ./mtp/tickets.md
                     - name: ServiceNow tickets in the security center
                       href: ./mtp/tickets-security-center.md
@@ -270,9 +270,9 @@
                       href: mtp/api-articles.md
                 - name: Microsoft Threat Protection APIs & schema (Preview)
                   items:
-                    - name: Supported Microsoft Threat Protection APIs 
+                    - name: Supported Microsoft Threat Protection APIs
                       href: mtp/api-supported.md
-                    - name: Common REST API error codes 
+                    - name: Common REST API error codes
                       href: mtp/api-error-codes.md
                     - name: Advanced Hunting API
                       href: mtp/api-advanced-hunting.md
@@ -283,8 +283,8 @@
                         - name: List incidents
                           href: mtp/api-list-incidents.md
                         - name: Update incident
-                          href: mtp/api-update-incidents.md  
- 
+                          href: mtp/api-update-incidents.md
+
     - name: Office 365 security
       items: 
         - name: Get started
@@ -499,6 +499,8 @@
               href: ./office-365-security/attack-simulator.md
             - name: Safe Documents in Office 365 ATP
               href: ./office-365-security/safe-docs.md
+            - name: User tags in Office 365 ATP
+              href: ./office-365-security/user-tags.md
             - name: Threat Explorer (and real-time detections)
               href: ./office-365-security/threat-explorer.md
               items: 
@@ -553,7 +555,7 @@
                 - name: Fix possible mail loop insight
                   href: ./office-365-security/mfi-mail-loop-insight.md
                 - name: Fix slow mail flow rules insight
-                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md  
+                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
                 - name: Mail flow map
                   href: ./office-365-security/mfi-mail-flow-map-report.md
                 - name: New domains being forwarded email insight
@@ -581,7 +583,7 @@
                   href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
                 - name: Create team sites in a political campaign dev/test environment
                   href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-             
+
             - name: SIEM server integration
               href: ./office-365-security/siem-server-integration.md
             - name: Exchange Online Protection overview

@@ -19,6 +19,9 @@ ms.custom: seo-marvel-apr2020
 
 # Device monitoring and reporting in the Microsoft 365 security center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 Keep your devices secure, up-to-date, and spot potential threats in the Microsoft 365 security center.
 
 ## View device alerts
