@@ -178,7 +178,7 @@ The following cmdlets can be used with Microsoft 365 Groups.
 |[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |Update the properties of a specific Microsoft 365 Group  <br/> |
 |[New-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |Create a new Microsoft 365 Group. This cmdlet provides a minimal set of parameters. To set values for extended properties, use Set-UnifiedGroup after creating the new group  <br/> |
 |[Remove-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |Delete an existing Microsoft 365 Group  <br/> |
-|[Get-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |Retrieve membership and owner information for an MIcrosoft 365 Group  <br/> |
+|[Get-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |Retrieve membership and owner information for a Microsoft 365 Group  <br/> |
 |[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |Add hundred or thousands of users, or new owners, to an existing MIcrosoft 365 Group  <br/> |
 |[Remove-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |Remove owners and members from an existing MIcrosoft 365 Group  <br/> |
 |[Get-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |Used to view information about the user photo associated with an account. User photos are stored in Active Directory  <br/> |
