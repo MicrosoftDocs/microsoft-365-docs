@@ -22,13 +22,17 @@ description: "Choose an app and device management method."
 
 # Decide on a method to secure your devices and app data
 
-You can choose to use Intune, Intune together with an Azure Information Protection Premium plan, or Basic Mobility and Security to secure your devices and app data.  If your plan includes both Intune and Azure Information Protection Premium P1, or Azure Information Protection Premium P2 you get higher functionality for both mobile device management (MDM) and mobile app management (MAM) and you should not use Basic Mobility and Security. 
+You can choose to use Intune, Intune together with an Azure Information Protection Premium plan, or Basic Mobility and Security to secure your devices and app data.  
 
- Microsoft 365 Business Premium includes both Intune and Azure Information Protection Premium P1 but also includes a set of base-line security and device policy settings that are easier to set up and manage in the Microsoft 365 admin center.
+If your plan includes both Intune and Azure Information Protection Premium P1, or Azure Information Protection Premium P2 you get higher functionality for both mobile device management (MDM) and mobile app management (MAM) and you should not use Basic Mobility and Security. 
+
+For more information on the Azure Information Protection plans, see [Azure Information Protection documentation](https://docs.microsoft.com/azure/information-protection/).
+
+ Microsoft 365 Business Premium includes both Intune and Azure Information Protection Premium P1 but also includes a set of base-line security and device policy settings that are easier to set up and manage in the Microsoft 365 admin center. For more information, see [Microsoft 365 Business Premium](../../business/index.md).
 >[!NOTE]
 >You can't begin using Basic Mobility and Security if you're already using Microsoft Intune.
 
-Microsoft Intune and C and Azure Information Protection Premium P2 are standalone products included with some Microsoft 365 plans. Basic Mobility and Security is included in all of the Microsoft 365 plans. See the following table for details. 
+Microsoft Intune, Azure Information Protection Premium P1, and Azure Information Protection Premium P2 are standalone products included with some Microsoft 365 plans. Basic Mobility and Security is included in all of the Microsoft 365 plans. See the following table for details. 
 
 |**Plan**|**Basic Mobility and Security**|**Microsoft Intune**|**Azure Information Protection Premium P1**|
 |:-----|:-----|:-----|:-----|
@@ -50,6 +54,7 @@ Microsoft Intune and C and Azure Information Protection Premium P2 are standalon
 |Enterprise Mobility & Security E5 |No|Yes||
 
  For details, see [Microsoft 365 and Office 365 platform service descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description). 
+
 ## Differences in capabilities
 
 Microsoft Intune and built-in Basic Mobility and Security both give you the ability to manage mobile devices in your organization, but there are key differences in capability, described in the following table.
@@ -72,15 +77,15 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 |Zero touch enrollment programs Autopilot) |Enroll large numbers of corporate-owned devices, while simplifying user set up. |No|Yes|
 |||
 
-Additionally to features listed in the preceding table above, Basic Mobility and Security and Intune both include a set remote actions that send commands to devices over the internet. For example, you can remove Office data from an employee’s device while leaving personal data in place (Retire). For more information on all of the Basic Mobility and Security, see [capabilities of Basic Mobility and Security](capabilities.md).
+Additionally to features listed in the preceding table, Basic Mobility and Security and Intune both include a set remote actions that send commands to devices over the internet. For example, you can remove Office data from an employee’s device while leaving personal data in place (retire), remove Office apps from a employee's device (wipe), or reset a device to its factory settings (full wipe). 
 
-For Basic Mobility and Security remote actions include Retire, Wipe, and Delete.
+For Basic Mobility and Security remote actions include retire, wipe and full wipe. For more information on Basic Mobility and Security actions, see [capabilities of Basic Mobility and Security](capabilities.md).
 
 With Intune you have the following set of actions:
 
 -   Autopilot reset (Windows only
 -  [Bitlocker key rotation](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys) (Windows only)
--  [Delete](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
+-  [Use wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
 -  [Disable activation loc](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable) (iOS only)
 -  [Fresh start](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start) (Windows only)
 - [Full scan](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10 only)
@@ -90,9 +95,9 @@ With Intune you have the following set of actions:
 - [Remote lock](https://docs.microsoft.com/mem/intune/remote-actions/device-remote-lock)
 - [Rename device](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)
 -  [Reset passcode](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset) [Restart](https://docs.microsoft.com/mem/intune/remote-actions/device-restart) (Windows only)
-- [Retire](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#retire)
 -  Update Windows Defender Security Intelligence (Windows only)
 -  Windows 10 PIN reset (Windows only)
--  [Wipe](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#wipe)
 -  [Send custom notifications](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android, iOS, iPad OS)
 -  [Synchronize device](https://docs.microsoft.com/mem/intune/remote-actions/device-sync)
+
+For more information on Intune actions, see [Microsoft Intune documentation](https://docs.microsoft.com/mem/intune/).
