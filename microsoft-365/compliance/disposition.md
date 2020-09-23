@@ -83,9 +83,11 @@ The following diagram shows the basic workflow for a disposition review when a r
   
 Triggering a disposition review at the end of the retention period is a configuration option that's available only with a retention label. This option is not available for a retention policy. For more information about these two retention solutions, see [Learn about retention policies and retention labels](retention.md).
 
+From the **Define retention settings** page for a retention label:
+
 ![Retention settings for a label](../media/disposition-review-option.png)
  
-When you select the option **Trigger a disposition review**, you specify the disposition reviewers on the next page of the wizard:
+When you select this **Trigger a disposition review** option, you specify the disposition reviewers on the next page of the wizard:
 
 ![Specifying disposition reviewers](../media/disposition-reviewers.png)
 
