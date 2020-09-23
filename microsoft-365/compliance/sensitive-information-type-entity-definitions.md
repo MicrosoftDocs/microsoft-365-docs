@@ -698,6 +698,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - fuhrerschein republik osterreich
 
 ## Austria identity card
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -2075,6 +2081,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Bulgaria uniform civil number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -3558,6 +3570,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Cyprus identity card
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -3663,6 +3681,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Αρ. Διαβατηρίου
 
 ## Cyprus tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -4383,6 +4407,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Estonia Personal Identification Code
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -6352,6 +6382,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - αριθμός διαβατηριο
 
 ## Greece tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -6554,6 +6590,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Hungary personal identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -6733,6 +6775,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Hungary tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -7550,6 +7598,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - patente di guida 
 
 ## Italy fiscal code
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -8526,6 +8580,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - vairuotojo pažymėjimas
 
 ## Lithuania personal code
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -8712,6 +8772,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - fahrerlaubnis
 
 ## Luxemburg national identification number (natural persons)
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -9034,6 +9100,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - liċenzja tas-sewqan
 
 ## Malta identity card number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -9394,6 +9466,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - paspoortnummer
 
 ## Netherlands tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -10232,6 +10310,12 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 
 ## Poland tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -10589,6 +10673,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - permis de conducere
 
 ## Romania personal numeric code (CNP)
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -11007,6 +11097,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - vodičský preukaz
 
 ## Slovakia personal number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -11202,6 +11298,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - vozniško dovoljenje
 
 ## Slovenia Unique Master Citizen Number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -11335,6 +11437,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - številke potnih listov
 
 ## Slovenia tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -11571,6 +11679,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - carnet conducir
 
 ## Spain DNI
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -11753,6 +11867,12 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 None
 
 ## Spain tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -12183,6 +12303,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - identifikationsnumret#
 
 ## Sweden tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -12904,6 +13030,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
     
 ## U.K. Unique Taxpayer Reference Number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
