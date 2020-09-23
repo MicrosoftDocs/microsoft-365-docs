@@ -118,7 +118,7 @@ Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $tr
 ## Allow only internal users to send message to MIcrosoft 365 Groups
 <a name="BKMK_CreateClassification"> </a>
 
-If you don't want users from other organization to send email to an MIcrosoft 365 Group, you can change the settings for that group. It will allow only internal users to send an email to your group. If external user try to send message to that group they will be rejected.
+If you don't want users from other organizations to send emails to a Microsoft 365 Group, you can change the settings for that group. It will allow only internal users to send an email to your group. If an external user tries to send a message to that group, it will be rejected.
 
 Run the Set-UnifiedGroup cmdlet to update this setting, like this:
 
