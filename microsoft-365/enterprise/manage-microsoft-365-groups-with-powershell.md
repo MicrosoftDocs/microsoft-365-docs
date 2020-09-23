@@ -104,7 +104,7 @@ Check out [Using PowerShell with Exchange Online](https://docs.microsoft.com/pow
 
 Once these settings are enabled, the group owner will be able to choose a classification from the drop down menu in Outlook on the Web and Outlook, and save it from the **Edit** group page.
 
-![Choose MIcrosoft 365 Group classification](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
+![Choose Microsoft 365 Group classification](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
 
 ## Hide MIcrosoft 365 Groups from GAL
 <a name="BKMK_CreateClassification"> </a>
