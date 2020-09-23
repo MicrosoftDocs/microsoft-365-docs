@@ -25,11 +25,15 @@ ms.collection:
 >
 > *Service description for: [Microsoft 365 Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Double Key Encryption (DKE) uses two keys together to access protected content. You store one key in Microsoft Azure, and you hold the other key. The Azure Information Protection unified labeling client protects highly sensitive content while you maintain full control of one of your keys.
+Double Key Encryption (DKE) uses two keys together to access protected content. Microsoft stores one key in Microsoft Azure, and you hold the other key. The Azure Information Protection unified labeling client protects highly sensitive content. You maintain full control of one of your keys using the Double Key Encryption service.
 
 Double Key Encryption supports both cloud and on-premises deployments. These deployments help to ensure that encrypted data remains opaque wherever you store the protected data.
 
 For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
+
+## When your organization should adopt DKE
+
+We recommend organizations use Microsoft Information protection capabilities (classification and labeling) to protect most of their sensitive data and only use DKE for their mission-critical data. Double Key Encryption is particularly relevant for extremely sensitive data in highly regulated industries such as Financial services and Healthcare.
 
 If your organizations have any of the following requirements, you can use DKE to help secure your content:
 
@@ -37,11 +41,17 @@ If your organizations have any of the following requirements, you can use DKE to
 - You don't want Microsoft to have access to protected data on its own.
 - You have regulatory requirements to hold keys within a geographical boundary. All of the keys that you hold for data encryption and decryption are maintained in your data center.
 
-## System and licensing requirements for DKE
+## System prerequisites and licensing requirements for DKE
 
-Double Key Encryption for Microsoft 365 comes with Microsoft 365 E5 and Office 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+**Double Key Encryption for Microsoft 365** comes with Microsoft 365 E5 and Office 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Azure Information Protection**. DKE works with sensitivity labels and requires Azure Information Protection.
+
+DKE sensitivity labels are made available to end-users through the sensitivity ribbon in Office Desktop Apps. Install these prerequisites on each client computer where you want to protect and consume protected documents.
+
+**Microsoft Office Apps for enterprise** version *.12711 or later (Desktop versions of Word, PowerPoint, and Excel) on Windows.
+
+**Azure Information Protection Unified Labeling Client** versions 2.7.93.0 or later. Download and install the Unified Labeling client from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
 
 ## Supported environments for storing and viewing DKE-protected content
 
@@ -49,15 +59,19 @@ Double Key Encryption for Microsoft 365 comes with Microsoft 365 E5 and Office 3
 
 **Online content support**. Documents and files stored online in both Microsoft SharePoint and OneDrive for Business are supported. You can share encrypted content by email, but you can't view encrypted documents and files online. Instead, you must view protected content using the desktop apps on your local computer.
 
-## About this article
+## Overview of deploying DKE
+
+You'll follow these general steps to set up DKE. Once you've completed these steps, your end users will be able to protect your highly sensitive data with Double Key Encryption.
+
+1. Deploy the DKE service as described in this article.
+
+2. Create a label with Double Key Encryption. Navigate to Information protection under the [Microsoft 365 compliance center](https://compliance.microsoft.com) and create a new label with Double Key Encryption. See [Restrict access to content by using sensitivity labels to apply encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels).
+
+3. Use Double Key Encryption labels. Protect data by selecting the Double Key Encrypted label from the Sensitivity ribbon in Microsoft Office.
 
 There are several ways you can complete some of the steps to deploy Double Key Encryption. This article provides detailed instructions so that less experienced admins successfully deploy the service. If you're comfortable doing so, you can choose to use your own methods.
 
-This article tells you how to deploy the Double Key Encryption service to Azure. This scenario isn't something you'd likely do in production. Using Azure provides a quick way to deploy a pilot and lets you get started using Double Key Encryption right away.
-
-You can deploy the service locally on your network or with another provider. You'll need to publish the key store using methods that are appropriate for the location.
-
-## Deploy Double Key Encryption
+## Deploy DKE
 
 This article and the deployment video use Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
 
@@ -74,6 +88,8 @@ You'll follow these general steps to set up Double Key Encryption for your organ
 1. [Validate your deployment](#validate-your-deployment)
 1. [Register your key store](#register-your-key-store)
 1. [Create sensitivity labels](#create-labels-using-dke)
+1. [Enable DKE in your client](#enable-dke-in-your-client)
+1. [Migrate protected files from HYOK labels to DKE labels](#migrate-protected-files-from-hyok-labels-to-dke-labels)
 
 When you're done, you can encrypt documents and files using DKE. For information, see [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
@@ -105,14 +121,6 @@ Install these prerequisites on the computer where you want to install the DKE se
 - [GitHub Enterprise](https://github.com/enterprise)
 
 **OpenSSL** You must have [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) installed to [generate test keys](#generate-test-keys) after you deploy DKE. Make sure you're invoking it correctly from your environment variables path. For example, see "Add the installation directory to PATH" at [https://www.osradar.com/install-openssl-windows/](https://www.osradar.com/install-openssl-windows/) for details.
-
-#### Double Key Encryption prerequisites for client computers
-
-Install these prerequisites on each client computer where you want to protect and consume protected documents.
-
-**Microsoft Office** version *.12711 or later.
-
-**Azure Information Protection Unified Labeling Client** versions 2.7.93.0 or later. Download and install the Unified Labeling client from [Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
 
 ### Clone the DKE GitHub repository
 
@@ -345,11 +353,17 @@ The key should display in JSON format.
 
 Your setup is now complete. Before you publish the keystore, in appsettings.json, for the JwtAudience setting, ensure the value for hostname exactly matches your App Service host name. You may have changed it to localhost to troubleshoot the build.
 
-### Publish the key store
+### Deploy the DKE service and publish the key store
 
-To publish the key store, you'll create an Azure App Service instance to host your DKE deployment. Next, you'll publish your generated keys to Azure.
+For production deployments, deploy the service either in a third-party cloud or [publish to an on-premises system](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&preserve-view=true&tabs=netcore-cli).
+
+You may prefer other methods to deploy your keys. Select the method that works best for your organization.
+
+For pilot deployments, you can deploy in Azure and get started right away.
 
 **To create an Azure Web App instance to host your DKE deployment**
+
+To publish the key store, you'll create an Azure App Service instance to host your DKE deployment. Next, you'll publish your generated keys to Azure.
 
 1. In your browser, sign in to the [Microsoft Azure portal](https://ms.portal.azure.com), and go to **App Services** > **Add**.
 
@@ -365,18 +379,11 @@ To publish the key store, you'll create an Azure App Service instance to host yo
 
 3. At the bottom of the page, select **Review + create**, and then select **Add**.
 
-4. Do one of the following to publish your generated keys to Azure:
+4. Do one of the following to publish your generated keys:
 
     - [Publish via ZipDeployUI](#publish-via-zipdeployui)
     - [Publish via FTP](#publish-via-ftp)
     - [Publish via Visual Studio 2019 or later](https://docs.microsoft.com/aspnet/core/tutorials/)
-    - [Publish to an on-premises system](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&preserve-view=true&tabs=netcore-cli)
-
-    > [!NOTE]
-    > You may prefer other methods to deploy your keys. Select the method that works best for your organization.
-
-    > [!TIP]
-    > [Publishing via Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/) and to an [on-premises system](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&preserve-view=true&tabs=netcore-cli) is described in the [ASP .NET documentation](https://docs.microsoft.com/aspnet/core/). If you use one of these methods, open the instructions in a separate tab so that you can return here easily when you're done.
 
 #### Publish via ZipDeployUI
 
@@ -442,9 +449,9 @@ Ensure that no errors appear in the output. When you're ready, [register your ke
 
 ## Register your key store
 
-The following steps enable you to register your key store. Registering your key store is the last step in deploying DKE before you can start creating labels.
+The following steps enable you to register your DKE service. Registering your DKE service is the last step in deploying DKE before you can start creating labels.
 
-To register your key store:
+To register the DKE service:
 
 1. In your browser, open the [Microsoft Azure portal](https://ms.portal.azure.com/), and go to **All Services** \> **Identity** \> **App Registrations**.
 
@@ -470,7 +477,7 @@ To register your key store:
 
     For example: https://mydkeservicetest.com
 
-    - The URL you enter must match the hostname where your key store is deployed.
+    - The URL you enter must match the hostname where your DKE service is deployed.
     - If you're testing locally with Visual Studio, use **https://localhost:5001**.
     - In all cases, the scheme must be **https**.
 
@@ -490,7 +497,7 @@ To register your key store:
 
     3. Define any remaining values required.
 
-    4. Select **Add scope.**
+    4. Select **Add scope**.
 
     5. Select **Save** at the top to save your changes.
 
@@ -506,7 +513,7 @@ To register your key store:
 
     4. Select **Save** at the top to save your changes.
 
-Your DKE key store is now registered. Continue by [creating labels using DKE](#create-labels-using-dke).
+Your DKE service is now registered. Continue by [creating labels using DKE](#create-labels-using-dke).
 
 ## Create labels using DKE
 
@@ -536,3 +543,5 @@ If you're an Office Insider, DKE is enabled for you. Otherwise, enable DKE for y
 ## Migrate protected files from HYOK labels to DKE labels
 
 If you want, once you're finished setting up DKE, you can migrate content that you've protected using HYOK labels to DKE labels. To migrate, you'll use the AIP scanner. To get started using the scanner, see [What is the Azure Information Protection unified labeling scanner?](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner).
+
+If you don't migrate content, your HYOK protected content will remain unaffected.
