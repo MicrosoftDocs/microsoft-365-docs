@@ -18,7 +18,6 @@ ms.topic: article
 
 This topic outlines the infrastructure requirements you must meet to assure success with Microsoft Managed Desktop. 
 
-Microsoft FastTrack is available to help you meet these requirements and help you prepare to participate in Microsoft Managed Desktop. For more information, see [Microsoft FastTrack](https://fasttrack.microsoft.com/about). 
 
 Area | Prerequisite details
 --- | ---
