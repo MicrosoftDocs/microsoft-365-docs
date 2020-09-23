@@ -115,7 +115,7 @@ You can specify whether an MIcrosoft 365 Group appears in the global address lis
 Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $true
 ```
 
-## Allow only internal users to send message to MIcrosoft 365 Groups
+## Allow only internal users to send message to Microsoft 365 Groups
 <a name="BKMK_CreateClassification"> </a>
 
 If you don't want users from other organizations to send emails to a Microsoft 365 Group, you can change the settings for that group. It will allow only internal users to send an email to your group. If an external user tries to send a message to that group, it will be rejected.
