@@ -170,7 +170,7 @@ To learn more, see [Set-OrganizationConfig](https://docs.microsoft.com/powershel
 
 ## MIcrosoft 365 Groups cmdlets
 
-The following cmdlets can be used with MIcrosoft 365 Groups.
+The following cmdlets can be used with Microsoft 365 Groups.
 
 |**Cmdlet name**|**Description**|
 |:-----|:-----|
