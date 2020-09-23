@@ -30,6 +30,8 @@ To learn more about the different types of classifiers, see [Learn about trainab
 To access classifiers in the Microsoft 365 Compliance center:
 
 - the Compliance admin role or Compliance Data Administrator is required to train a classifier
+- the Data Classification Feedback Reviewer role is required to give feedback and retrain a classifier 
+- the Data Classification Feedback Provider role is required to give feedback to classifiers 
 
 You'll need accounts with these permissions to use classifiers in these scenarios:
 

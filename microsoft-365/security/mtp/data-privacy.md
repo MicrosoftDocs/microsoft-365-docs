@@ -23,6 +23,9 @@ search.appverid:
 
 # Microsoft Threat Protection data security and privacy
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 

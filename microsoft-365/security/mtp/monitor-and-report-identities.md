@@ -19,6 +19,9 @@ ms.custom: seo-marvel-apr2020
 
 # Identity monitoring and reporting in the Microsoft 365 security center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 Monitor the identities in your organization and keep track of suspicious or risky behaviors. In the **Identities** category of **Reports**, you can track:
 
 * Users with the most detected anomalies

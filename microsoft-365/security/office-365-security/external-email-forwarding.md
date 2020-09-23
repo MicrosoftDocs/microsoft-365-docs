@@ -18,6 +18,9 @@ description: "."
 
 # Configuring external email forwarding in Office 365
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 External forwarding is controlled by the *outbound anti-spam policy* and scoped to users based on the configured setting. Currently 3 settings are supported:
 
 - **Automatic** – In this mode the system is responsible for deciding if a forwarded message is allowed or not.  This is the default mode and in this mode the system will block automatic external forwarding.

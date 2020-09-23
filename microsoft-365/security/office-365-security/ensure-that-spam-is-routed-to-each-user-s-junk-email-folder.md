@@ -21,6 +21,9 @@ ms.custom: seo-marvel-apr2020
 
 # Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 > [!IMPORTANT]
 > This topic is only for standalone EOP customers in hybrid environments. This topic does not apply to Microsoft 365 customers with Exchange Online mailboxes.
 
