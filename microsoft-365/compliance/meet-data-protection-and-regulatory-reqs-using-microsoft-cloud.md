@@ -20,8 +20,8 @@ ms.custom: seo-marvel-apr2020
 
 # Microsoft Compliance Manager (classic)
 
-> [!NOTE]
-> This documentation describes a previous version of this product. Users are *strongly discouraged from using this version of Compliance Manager*. **If you're using the current preview version of Compliance Manager, refer to the [Compliance Manager (preveiw) documentation](working-with-compliance-manager.md).**
+> [!IMPORTANT]
+> **Compliance Manager is now generally available in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). We highly recommend customers discontinue using Compliance Manager (classic) and move to the new Compliance Manager to benefit from its rich user experience and updated control mapping. Please refer to our [Compliance Manager documentation](compliance-manager.md) to set up and start using the new Compliance Manager in the Microsoft 365 compliance center.**
 
  *Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.*
   
@@ -38,9 +38,6 @@ Compliance Manager:
 - Provides a secure repository for you to upload and manage evidence and other artifacts related to your compliance activities.
     
 - Produces richly detailed reports in Microsoft Excel that document the compliance activities performed by Microsoft and your organization, which can be provided to auditors, regulators, and other compliance stakeholders.
-
-For a brief demo of Compliance Manager, see this [Compliance Manager](https://www.youtube.com/watch?v=r1vs8NdSXKQ) video.
-
     
 > [!IMPORTANT]
 > Compliance Manager is a dashboard that provides a summary of your data protection and compliance stature and recommendations to improve data protection and compliance. The Customer Actions provided in Compliance Manager are recommendations; it is up to each organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance.
@@ -825,11 +822,3 @@ Compliance Manager is designed to be regularly updated to keep pace with changes
 |B.8.4.7  <br/> |8.5.7  <br/> |
 |B.8.4.8  <br/> |8.5.8  <br/> |
 |
-   
-## See also
-
-- [Compliance Manager Interactive guide](https://content.cloudguides.com/guides/Compliance%20Manager)
-
-- [Announcing Compliance Manager general availability](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
-
-- [Microsoft 365 provides an information protection strategy to help with the GDPR](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)

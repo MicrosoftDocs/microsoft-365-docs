@@ -21,6 +21,9 @@ ms.custom: seo-marvel-apr2020
 
 # Quarantined messages FAQ
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 This topic provides frequently asked questions and answers about quarantined email messages for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
 
 For questions and answers about anti-spam protection, see [Anti-spam protection FAQ](anti-spam-protection-faq.md).
