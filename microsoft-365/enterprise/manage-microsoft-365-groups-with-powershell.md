@@ -191,6 +191,6 @@ The following cmdlets can be used with Microsoft 365 Groups.
 
 [Manage who can create MIcrosoft 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
 
-[Manage guest access to MIcrosoft 365 Groups](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Manage guest access to Microsoft 365 Groups](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Change static group membership to dynamic in](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)
