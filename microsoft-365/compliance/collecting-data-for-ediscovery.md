@@ -2,7 +2,7 @@
 title: "Collect data for a case in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
-ms.author: esclee
+ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 

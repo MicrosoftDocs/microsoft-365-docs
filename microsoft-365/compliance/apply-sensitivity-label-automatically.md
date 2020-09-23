@@ -131,7 +131,7 @@ When you select the **Trainable classifiers** option, select one or more of the 
 > [!CAUTION]
 > We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use this built-in classifier and if you are currently using it, you should move your business processes off it. We recommend using the **Targeted Harassment**, **Profanity**, and **Threat** built-in classifiers instead.
 
-For more information about these classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
+For more information about these classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md).
 
 During the preview period for this option, the following apps support trainable classifiers for sensitivity labels:
 
@@ -310,9 +310,9 @@ You can also see the results of your auto-labeling policy by using [content expl
 
 ### Use PowerShell for auto-labeling policies
 
-You can now use [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell) to create and configure auto-labeling policies. This means you can now fully script the creation and maintenance of your auto-labeling policies, which also provides a more efficient method of specifying multiple URLs for OneDrive and SharePoint locations.
+You can now use [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell) to create and configure auto-labeling policies. This means you can now fully script the creation and maintenance of your auto-labeling policies, which also provides a more efficient method of specifying multiple URLs for OneDrive and SharePoint locations.
 
-Before you run the commands in PowerShell, you must first [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Before you run the commands in PowerShell, you must first [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 To create a new auto-labeling policy: 
 
