@@ -189,7 +189,7 @@ The following cmdlets can be used with Microsoft 365 Groups.
 
 [Upgrade distribution lists to Microsoft 365 Groups](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
-[Manage who can create MIcrosoft 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
+[Manage who can create Microsoft 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
 
 [Manage guest access to Microsoft 365 Groups](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
