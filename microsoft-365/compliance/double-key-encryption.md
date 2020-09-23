@@ -53,9 +53,9 @@ Double Key Encryption for Microsoft 365 comes with Microsoft 365 E5 and Office 3
 
 There are several ways you can complete some of the steps to deploy Double Key Encryption. This article provides detailed instructions so that less experienced admins successfully deploy the service. If you're comfortable doing so, you can choose to use your own methods.
 
-This article includes step-by-step instructions on how to deploy the Double Key Encryption service to Azure. This scenario isn't something you'd likely do in production. However, as a pilot deployment, using Azure provides a quick way to deploy and lets you get started using Double Key Encryption right away.
+This article tells you how to deploy the Double Key Encryption service to Azure. This scenario isn't something you'd likely do in production. Using Azure provides a quick way to deploy a pilot and lets you get started using Double Key Encryption right away.
 
-You can deploy the service locally on your network or with another provider. You'll need to publish the key store using methods that are appropriate for the location that you choose.
+You can deploy the service locally on your network or with another provider. You'll need to publish the key store using methods that are appropriate for the location.
 
 ## Deploy Double Key Encryption
 
@@ -523,7 +523,7 @@ Any DKE labels you add will start appearing for users in the latest versions of 
 
 ### Enable DKE in your client
 
-If you are an Office Insider, DKE is automatically enabled for you. Otherwise, enable DKE for your client by adding the following registry keys:
+If you're an Office Insider, DKE is enabled for you. Otherwise, enable DKE for your client by adding the following registry keys:
 
 ```properties
     [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
@@ -535,4 +535,4 @@ If you are an Office Insider, DKE is automatically enabled for you. Otherwise, e
 
 ## Migrate protected files from HYOK labels to DKE labels
 
-If you want, once you're finished setting up DKE, you can migrate content that you've protected using HYOK labels to DKE labels. To do this, you'll use the AIP scanner. To get started using the scanner, see [What is the Azure Information Protection unified labeling scanner?](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner).
+If you want, once you're finished setting up DKE, you can migrate content that you've protected using HYOK labels to DKE labels. To migrate, you'll use the AIP scanner. To get started using the scanner, see [What is the Azure Information Protection unified labeling scanner?](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner).
