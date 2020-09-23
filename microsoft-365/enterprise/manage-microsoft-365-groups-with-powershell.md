@@ -168,7 +168,7 @@ To verify the setting:
 
 To learn more, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) and [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig).
 
-## MIcrosoft 365 Groups cmdlets
+## Microsoft 365 Groups cmdlets
 
 The following cmdlets can be used with Microsoft 365 Groups.
 
