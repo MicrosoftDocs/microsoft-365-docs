@@ -94,6 +94,8 @@ Here are the actions that should be done _before tenant migration begins_.
 </tr>
 <tr>
 <td width="23%">&nbsp;</td>
+<p>Review and prepare for migration-related DNS changes</p>
+</td>
 <td width="26%">
 <p>Customer prepare DNS entries for Exchange Online/Exchange online protection (MX record, etc.)</p>
 </td>
@@ -106,6 +108,8 @@ Here are the actions that should be done _before tenant migration begins_.
 </tr>
 <tr>
 <td width="23%">&nbsp;</td>
+<p>Review and prepare for migration-related DNS changes</p>
+</td>
 <td width="26%">&nbsp;</td>
 <td width="24%">
 <p>Skype For Business Online customers</p>
@@ -117,6 +121,8 @@ Here are the actions that should be done _before tenant migration begins_.
 </tr>
 <tr>
 <td width="23%">&nbsp;</td>
+<p>Prepare End User and Administration training and readiness for the transition to Microsoft Teams</p>
+</td>
 <td width="26%">
 <p>Be successful in your transition from Skype to Teams by planning user communication and readiness.</p>
 </td>
