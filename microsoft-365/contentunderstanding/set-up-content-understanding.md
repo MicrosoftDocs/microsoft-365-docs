@@ -27,7 +27,6 @@ You can change your settings after initial setup in the Microsoft 365 admin cent
 
 You must have global administrator or SharePoint administrator permissions to be able to access the Microsoft 365 admin center and set up SharePoint Syntex.
 
-
 ## To set up SharePoint Syntex
 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational knowledge** section.
@@ -91,7 +90,11 @@ To assign licenses
 
 5. Click **Save changes**.
 
-If you have 300 or more licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits.
+## AI Builder credits
+
+If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits. If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.
+
+Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.
 
 ## See also
 
