@@ -355,22 +355,6 @@ Here are the actions that should be done _before tenant migration begins_.
 </tbody>
 </table>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 
 To find out more information about any actions needed during the migration phase of this workload or impact to administration or usage, review the [Azure AD](#_Azure_Active_Directory_1) section of Migration Phases Actions and Impacts.
 
