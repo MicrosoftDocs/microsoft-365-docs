@@ -175,7 +175,7 @@ The following cmdlets can be used with Microsoft 365 Groups.
 |**Cmdlet name**|**Description**|
 |:-----|:-----|
 |[Get-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |Use this cmdlet to look up existing Microsoft 365 Groups, and to view properties of the group object  <br/> |
-|[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |Update the properties of a specific MIcrosoft 365 Group  <br/> |
+|[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |Update the properties of a specific Microsoft 365 Group  <br/> |
 |[New-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |Create a new MIcrosoft 365 Group. This cmdlet provides a minimal set of parameters, for setting values for extended properties use Set-UnifiedGroup after creating the new group  <br/> |
 |[Remove-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |Delete an existing MIcrosoft 365 Group  <br/> |
 |[Get-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |Retrieve membership and owner information for an MIcrosoft 365 Group  <br/> |
