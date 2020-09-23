@@ -29,7 +29,7 @@ The Microsoft 365 Admin Center now includes aggregated network connectivity metr
 >[!NOTE]
 >The network connectivity test tool supports tenants in WW Commercial and Germany but not GCC Moderate, GCC High, DoD or China.
 
-When you first navigate to the network performance page, you will see an overview pane containing a map of global network performance, a network assessment scoped to the entire tenant, and a list of current issues. From the overview, you can drill down to view specific network performance metrics and issues by location. For more information, see [Network performance overview in the Microsoft 365 Admin Center](#network-performance-overview-in-the-microsoft-365-admin-center).
+When you first navigate to the network performance page, you will see an overview pane containing a map of global network performance, a network assessment scoped to the entire tenant, and a list of current issues. From the overview, you can drill down to view specific network performance metrics and issues by location. For more information, see [Network connectivity overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
 You may be asked to join the public preview for this feature on behalf of your organization. Acceptance usually happened immediately and then you will see the network connectivity page. 
 
