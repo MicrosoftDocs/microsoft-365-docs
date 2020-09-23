@@ -1,5 +1,5 @@
 ---
-title: "Built-in virus detection in SharePoint Online, OneDrive, and Microsoft Teams"
+title: "Built-in virus protection in SharePoint Online, OneDrive, and Microsoft Teams"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -21,7 +21,7 @@ description: Learn about how SharePoint Online detects viruses in files that use
 ms.custom: seo-marvel-apr2020
 ---
 
-# Built-in virus detection in SharePoint Online, OneDrive, and Microsoft Teams
+# Built-in virus protection in SharePoint Online, OneDrive, and Microsoft Teams
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
