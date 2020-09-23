@@ -87,7 +87,7 @@ From the **Define retention settings** page for a retention label:
 
 ![Retention settings for a label](../media/disposition-review-option.png)
  
-When you select this **Trigger a disposition review** option, you specify the disposition reviewers on the next page of the wizard:
+After you select this **Trigger a disposition review** option, you specify the disposition reviewers on the next page of the wizard:
 
 ![Specifying disposition reviewers](../media/disposition-reviewers.png)
 
@@ -141,5 +141,3 @@ You can export information about the items in either view as a .csv file that yo
 Example exported data in Excel:
 
 ![Exported disposition data in Excel](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
-
-
