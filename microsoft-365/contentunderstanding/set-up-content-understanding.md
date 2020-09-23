@@ -7,7 +7,7 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: 
-localization_priority: Normal
+localization_priority: Priority
 description: 'Learn how to set up SharePoint Syntex'
 ---
 
