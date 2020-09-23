@@ -126,7 +126,7 @@ Run the Set-UnifiedGroup cmdlet to update this setting, like this:
 Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationEnabled $true
 ```
 
-## Add MailTips to the MIcrosoft 365 Groups
+## Add MailTips to Microsoft 365 Groups
 <a name="BKMK_CreateClassification"> </a>
 
 Whenever a sender tries to send an email to an MIcrosoft 365 Group, a MailTip can be shown to them.
