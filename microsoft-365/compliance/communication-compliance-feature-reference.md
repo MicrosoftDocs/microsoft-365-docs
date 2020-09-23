@@ -280,7 +280,7 @@ Communication compliance filters allow you to filter and sort alert messages for
 
 |**Filter**|**Details**|
 |:-----|:-----|
-| **Date** | The date the message was sent or received by a user in your organization. |
+| **Date** | The date the message was sent or received by a user in your organization. To filter for a single day, select a date range that starts with the day you want results for and end with the following day. For example, if you wanted to filter results for 9/20/2020, you would choose a filter date range of 9/20/2020-9/21/2020.|
 | **File class** | The class of the message based on the message type, either *message* or *attachment*. |
 | **Has attachment** | The attachment presence in the message. |
 | **Item class** | The source of the message based on the message type, email, Microsoft Team chat, Bloomberg, etc. For more information on common Item Types and Message Classes, see [Item Types and Message Classes](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
