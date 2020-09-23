@@ -319,7 +319,7 @@ Use the following instructions to build the DKE project locally:
 
    2. From the list of template types, select **.NET Core**.
 
-      ![Create tasks.json file from template for DKE](../media/dke-tasksjsontemplate.png)
+      ![Select the correct template for DKE](../media/dke-tasksjsontemplate.png)
 
    3. In the build section, locate the path to the **customerkeystore.csproj** file. If it's not there, add the following line:
 
@@ -370,13 +370,13 @@ To publish the key store, you'll create an Azure App Service instance to host yo
     - [Publish via ZipDeployUI](#publish-via-zipdeployui)
     - [Publish via FTP](#publish-via-ftp)
     - [Publish via Visual Studio 2019 or later](https://docs.microsoft.com/aspnet/core/tutorials/)
-    - [Publish to an on-premises system](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&tabs=netcore-cli)
+    - [Publish to an on-premises system](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&preserve-view=true&tabs=netcore-cli)
 
     > [!NOTE]
     > You may prefer other methods to deploy your keys. Select the method that works best for your organization.
 
     > [!TIP]
-    > [Publishing via Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/) and to an [on-premises system](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&tabs=netcore-cli) is described in the [ASP .NET documentation](https://docs.microsoft.com/aspnet/core/). If you use one of these methods, open the instructions in a separate tab so that you can return here easily when you're done.
+    > [Publishing via Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/) and to an [on-premises system](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&preserve-view=true&tabs=netcore-cli) is described in the [ASP .NET documentation](https://docs.microsoft.com/aspnet/core/). If you use one of these methods, open the instructions in a separate tab so that you can return here easily when you're done.
 
 #### Publish via ZipDeployUI
 
