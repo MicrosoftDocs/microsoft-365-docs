@@ -6,7 +6,7 @@ description: DKE enables you to protect highly sensitive data while maintaining 
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 09/21/2020
+ms.date: 09/22/2020
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -40,8 +40,6 @@ If your organizations have any of the following requirements, you can use DKE to
 ## System and licensing requirements for DKE
 
 Double Key Encryption for Microsoft 365 comes with Microsoft 365 E5 and Office 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
-
-**Office Insider**. To use DKE, you must be a member of the Office Insider program. To join Office Insider, go to [https://insider.office.com](https://insider.office.com). Once you're a member, prepare your environment to deploy Office Insider builds by choosing the right deployment method for your organization. For instructions, see [Getting started on deploying Office Insider builds](https://insider.office.com/business/deploy).
 
 **Azure Information Protection**. DKE works with sensitivity labels and requires Azure Information Protection.
 
@@ -97,8 +95,6 @@ Install these prerequisites on the computer where you want to install the DKE se
 - C# for Visual Studio Code
 
 - NuGet Package Manager
-
-**Microsoft Office Insider**. Set up at least one [deployment method](https://insider.office.com/business/deploy).
 
 **Git resources**. Download and install one of the following.
 
@@ -288,7 +284,7 @@ To generate keys:
    ```c#
         #if USE_TEST_KEYS
         #error !!!!!!!!!!!!!!!!!!!!!! Use of test keys is only supported for testing,
-        DO NOT USE  FOR PRODUCTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        DO NOT USE FOR PRODUCTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
         #endif
    ```
@@ -386,7 +382,7 @@ To publish the key store, you'll create an Azure App Service instance to host yo
 
 1. Go to `https://<WebAppInstanceName>.scm.azurewebsites.net/ZipDeployUI`.
 
-    For example: https://customerkeystoreforpublicpreview.scm.azurewebsites.net/ZipDeployUI
+    For example: https://dkeservice.scm.azurewebsites.net/ZipDeployUI
 
 2. In the codebase for the key store, go to the **customer-key-store\src\customer-key-store** folder, and verify that this folder contains the **customerkeystore.csproj** file.
 
@@ -398,7 +394,7 @@ To publish the key store, you'll create an Azure App Service instance to host yo
 
 4. Send all files in the publish directory to a .zip file. When creating the .zip file, make sure that all files in the directory are at the root level of the .zip file.
 
-5. Drag and drop the .zip file you create to the ZipDeployUI site you opened above. For example: https://customerkeystoreforpublicpreview.scm.azurewebsites.net/ZipDeployUI
+5. Drag and drop the .zip file you create to the ZipDeployUI site you opened above. For example: https://dkeservice.scm.azurewebsites.net/ZipDeployUI
 
 DKE is deployed and you can browse to the test keys you've created. Continue to [Validate your deployment](#validate-your-deployment) below.
 
@@ -436,11 +432,11 @@ After deploying DKE using one of the methods described above, validate the deplo
 
 Run:
 
-src\customer-key-store\scripts\key_store_tester.ps1 mykeystoreurl/mykey
+src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
 
 For example:
 
-key_store_tester.ps1 https://mycustomerkeystore.com/mykey
+key_store_tester.ps1 https://mydkeservice.com/mykey
 
 Ensure that no errors appear in the output. When you're ready, [register your key store](#register-your-key-store).
 
@@ -472,7 +468,7 @@ To register your key store:
 
 8. Under **Redirect URIs**, enter the URI of your double key encryption service. Enter the App Service URL, including both the hostname and domain.
 
-    For example: https://mycustomerkeystoretest.com
+    For example: https://mydkeservicetest.com
 
     - The URL you enter must match the hostname where your key store is deployed.
     - If you're testing locally with Visual Studio, use **https://localhost:5001**.
@@ -527,7 +523,7 @@ Any DKE labels you add will start appearing for users in the latest versions of 
 
 ### Enable DKE in your client
 
-Enable DKE for your client by adding the following registry keys:
+If you are an Office Insider, DKE is automatically enabled for you. Otherwise, enable DKE for your client by adding the following registry keys:
 
 ```properties
     [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
@@ -536,3 +532,7 @@ Enable DKE for your client by adding the following registry keys:
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\flighting]
     "DoubleKeyProtection"=dword:00000001
 ```
+
+## Migrate protected files from HYOK labels to DKE labels
+
+If you want, once you're finished setting up DKE, you can migrate content that you've protected using HYOK labels to DKE labels. To do this, you'll use the AIP scanner. To get started using the scanner, see [What is the Azure Information Protection unified labeling scanner?](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner).
