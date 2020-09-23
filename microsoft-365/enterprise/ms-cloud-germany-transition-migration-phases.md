@@ -115,7 +115,7 @@ Here are the actions that should be done _before tenant migration begins_.
 <p>Skype For Business Online customers</p>
 </td>
 <td width="25%">
-<p>It is recommended to update customer owned domain DNS record TTLs to 5minutes so as to expedite the DNS record refresh, however the Microsoft managed cutover associated with this DNS change may occur anytime with in the provided 24 hour change window.</p>
+<p>It is recommended to update customer owned domain DNS record TTLs to 5 minutes so as to expedite the DNS record refresh, however the Microsoft managed cutover associated with this DNS change may occur anytime with in the provided 24 hour change window.</p>
 <p>Future availability service disruption possible. Users will not be able to log into Skype for Business be redirected to the migrated Teams experience in the Office 365 services.</p>
 </td>
 </tr>
