@@ -96,6 +96,21 @@ As another example, you can check the enabled status of a specific user account 
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
 ```
 
+### View account Synchronization Status
+
+The User accounts have two sources, Windows Server AD which are  accounts that sync from on-prem AD to  cloud and Azure Active Directory which are accounts directly created in cloud.
+
+```powershell
+Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
+```
+This command instructs PowerShell to get all users who have the attributte Dirsyncenabled set to True. This can be used to pull up accounts synchronozing from on premise AD.
+
+
+```powershell
+Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
+```
+This command instructs PowerShell to get all users who have the attributte Dirsyncenabled set to False. This can be used to pull up Cloud only accounts.
+
 ### View some accounts based on a common property
 
 To be more selective about the list of accounts to display, you can use the **Where** cmdlet in combination with the **Get-AzureADUser** cmdlet. To combine the two cmdlets, we use the "pipe" character "|", which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command. Here is an example command that displays only those user accounts that have an unspecified usage location:
