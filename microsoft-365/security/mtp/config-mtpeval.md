@@ -247,7 +247,9 @@ Go to [Microsoft 365 Security Center](https://security.microsoft.com/homepage). 
 
 For a more comprehensive guidance, see [Turn on Microsoft Threat Protection](mtp-enable.md). 
 
-Congratulations! You've just created your Microsoft Threat Protection trial lab or pilot environment! Now you can familiarize yourself with the Microsoft Threat Protection user interface! See what you can learn from and know how to use each dashboard for your day-to-day security operation tasks: [Microsoft Threat Protection interactive guide](https://aka.ms/MTP-Interactive-Guide).
+Congratulations! You've just created your Microsoft Threat Protection trial lab or pilot environment! Now you can familiarize yourself with the Microsoft Threat Protection user interface! See what you can learn from the following Microsoft Threat Protection interactive guide and know how to use each dashboard for your day-to-day security operation tasks.
+
+>[!VIDEO https://aka.ms/MTP-Interactive-Guide]
 
 Next, you can simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.
 
