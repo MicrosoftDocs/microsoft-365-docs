@@ -578,30 +578,30 @@ To find out more information about the differences for organizations in migratio
 <table width="100%">
 <tbody>
 <tr>
-<td width="24%">
+<td style="width: 24%;">
 <p>Step(s)</p>
 </td>
-<td width="26%">
+<td style="width: 26%;">
 <p>Description</p>
 </td>
-<td width="24%">
+<td style="width: 23.8049%;">
 <p>Applies to</p>
 </td>
-<td width="25%">
+<td style="width: 25.1951%;">
 <p>Impact</p>
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td style="width: 24%;">
 <p>New Germany region is added to existing organization setup and mailboxes are moved to Office 365 services</p>
 </td>
-<td width="26%">
+<td style="width: 26%;">
 <p>Exchange Online configuration adds the new go-local German region to the transitioning organization. This Office 365 services region is set as &lsquo;default&rsquo;, which enables the internal load balancing service to re-distribute mailboxes to the appropriate default region in Office 365 services. In this transition, users on either side (Germany or Office 365 services) are in the same organization and can use either URL endpoint.</p>
 </td>
-<td width="24%">
+<td style="width: 23.8049%;">
 <p>Exchange Online</p>
 </td>
-<td width="25%">
+<td style="width: 25.1951%;">
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Transition users and services off Germany URLs to Office 365 services URLs (<a href="https://outlook.office365.com">https://outlook.office365.com</a>) to aide in future retirement of the Germany service endpoints.</p>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In case,&nbsp; user mailbox has been migrated but admin mailbox has not been migrated and vice-versa, Admins won&rsquo;t be able to run Set-UserPhoto cmdlet . Admin need to pass additional string in ConnectionUri during connection setup. Below syntax mentions the change &ndash; <a href="%20https:/outlook.office.de/PowerShell-LiveID?email=%3cuser_email%20%3e">&nbsp;https://outlook.office.de/PowerShell-LiveID?email=&lt;user_email &gt;</a></p>
 <p>o&nbsp;&nbsp;&nbsp; Here user_email is the placeholder for email-id of the user whose Photo needs to be changed using Set-UserPhoto cmdlet.</p>
@@ -613,7 +613,7 @@ To find out more information about the differences for organizations in migratio
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td style="width: 24%;">
 <p>Stop / delete any onboarding or offboarding moves of their mailboxes.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -623,13 +623,13 @@ To find out more information about the differences for organizations in migratio
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 </td>
-<td width="26%">
+<td style="width: 26%;">
 <p>This ensures the move requests don&rsquo;t fail with error.</p>
 </td>
-<td width="24%">
+<td style="width: 23.8049%;">
 <p>Exchange Online customers with Hybrid (on-premises) deployments</p>
 </td>
-<td width="25%">
+<td style="width: 25.1951%;">
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Required action &ndash; non action may result in service / client failure.</p>
 <p>&nbsp;</p>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Before Exchange mailbox migration begins (+5 days&rsquo; notice) clients to be notified that they should stop / delete any onboarding or offboarding moves of their mailboxes.&nbsp; [If they don't, they'll see errors in their move request]</p>
@@ -644,13 +644,16 @@ To find out more information about the differences for organizations in migratio
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td style="width: 24%;">
 <p>New Germany region is added to existing organization setup and mailboxes are moved to Office 365 services</p>
 </td>
-<td width="26%">&nbsp;</td>
-<td width="24%">&nbsp;</td>
-<td width="25%">
-<p>&nbsp;</p>
+<td style="width: 26%;">Exchange Online configuration adds the new go-local German region to the transitioning organization. The Germany region continues set as &lsquo;default&rsquo;. Individual mailboxes tagged with the Germany region in Office 365 services will migrate automatically by the Load Balancing service when set by Customer during initial validation. Subsequently changing the &ldquo;default&rdquo; to the appropriate Office 365 services region will move the bulk of mailboxes at scale. In this transition, users on either side (Microsoft Cloud Deutschland or Office 365 services) are in the same organization and can use either URL endpoint</td>
+<td style="width: 23.8049%;">&nbsp;Exchange Online; Deutsche Telekom</td>
+<td style="width: 25.1951%;">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stamp MailboxRegion on individual mailboxes to Germany region code &ldquo;GER&rdquo; to individually move specific mailboxes during &lsquo;validation&rsquo; phase.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transition users and services off Microsoft Cloud Deutschland URLs to Office 365 services URLs (<a href="https://outlook.office365.com">https://outlook.office365.com</a>) to aide in future retirement of the Germany service endpoints.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upon completion of validation phase, the DefaultMailboxRegion is changed to GER to allow all mailboxes to rebalance to Office 365 services.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Users will continue to access the service via legacy Germany URLs. No immediate action needed. [see admin impact]</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -658,17 +661,17 @@ To find out more information about the differences for organizations in migratio
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td style="width: 24%;">
 <p>Re-run Hybrid Configuration Wizard against Office 365 services</p>
 <p>&nbsp;</p>
 </td>
-<td width="26%">
+<td style="width: 26%;">
 <p>Existing Hybrid Configuration Wizard configuration is configured to support Microsoft Cloud Deutschland. With migration complete of Exchange services, we decouple on-premises configuration from Microsoft Cloud Deutschland.</p>
 </td>
-<td width="24%">
+<td style="width: 23.8049%;">
 <p>Exchange Online customers running Hybrid deployment</p>
 </td>
-<td width="25%">
+<td style="width: 25.1951%;">
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Required action &ndash; non action may result in service / client failure.</p>
 </td>
 </tr>
