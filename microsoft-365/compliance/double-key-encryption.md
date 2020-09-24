@@ -2,7 +2,7 @@
 # required metadata
 
 title: Double Key Encryption (DKE)
-description: DKE enables you to protect highly sensitive data while maintaining full control of your keys.
+description: DKE enables you to protect highly sensitive data while maintaining full control of your key.
 author: kccross
 ms.author: krowley
 manager: laurawi
@@ -32,6 +32,18 @@ Double Key Encryption supports both cloud and on-premises deployments. These dep
 For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
 
 ## When your organization should adopt DKE
+
+Double Key Encryption is intended for customers’ most sensitive data that is subject to the strictest protection requirements. It is not intended for all data, and in general, customers will be using Double Key Encryption to protect a very small part of their overall data. Microsoft 365 supports Double Key Encryption with the Azure Information Protection unified labeling client and Microsoft Information Protection labels. You should due diligence in identifying the right data to cover with this solution before you deploy. In some cases, you might need to narrow your deployment and make use of other solutions for the majority of your data such as Microsoft Information Protection with Microsoft-managed keys or BYOK. These solutions are probably sufficient for most of your documents which aren't subject to enhanced protections and regulatory requirements. These solutions also enable you to use the most powerful Office 365 services which aren't available to DKE encrypted content. For example:
+
+- Transport rules including anti-malware and spam that require visibility into the attachment
+- Microsoft Delve
+- eDiscovery
+- Content search and indexing
+- Office Web Apps including co-authoring functionality
+
+Any external applications or services that are not integrated with DKE through the MIP SDK will be unable to perform actions on the encrypted data.
+
+The Microsoft Information Protection SDK 1.7+ supports Double Key Encryption; applications that integrate with our SDK will be able to reason over this data with sufficient permissions and integrations in place . 
 
 We recommend organizations use Microsoft Information protection capabilities (classification and labeling) to protect most of their sensitive data and only use DKE for their mission-critical data. Double Key Encryption is particularly relevant for extremely sensitive data in highly regulated industries such as Financial services and Healthcare.
 
