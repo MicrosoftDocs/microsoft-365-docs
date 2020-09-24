@@ -280,7 +280,7 @@ In Step 4, you have to assign the new retention policy to existing mailboxes. Bu
 
 - The following table provides more information about each retention tag that is added to the custom retention policy that was created by following the steps in this topic.
 
-    |**Retention tag**|**What this tag does**|**Built-in or custom?**|**Type**|
+    | Retention tag | What this tag does | Built-in or custom? | Type |
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 Year Move to Archive  <br/> |Moves items that are 1095 days (3 years) old to the archive mailbox.  <br/> |Custom (See [Step 2: Create new retention tags for the archive and deletion policies](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Default Policy Tag (archive); this tag is automatically applied to the entire mailbox.  <br/> |
     |Alpine House 7 Year Permanently Delete  <br/> |Permanently deletes items in the primary mailbox or the archive mailbox when they are 7 years old.  <br/> |Custom (See [Step 2: Create new retention tags for the archive and deletion policies](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Default Policy Tag (deletion); this tag is automatically applied to the entire mailbox.  <br/> |
