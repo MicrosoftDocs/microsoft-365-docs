@@ -39,6 +39,9 @@ You must have global administrator or SharePoint administrator permissions to be
 
     ![Begin setup](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
+4. On the Turn on image tagging page, choose if you want to allow [image tagging](image-tagging.md).
+
+    ![Screenshot of image tagging options](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
 
 4. On the **Configure Form Processing** page, you can choose if you want to let users be able to use AI Builder to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
@@ -58,15 +61,12 @@ You must have global administrator or SharePoint administrator permissions to be
     a. For **Site name**, type the name you want to give your content center site.</br>
     b. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, click **Edit**.</br>
 
-    > [!Note] 
-    > While you can select any supported language, note that SharePoint Syntex models can only be created for English.</br>
-
       ![Create content center](../media/content-understanding/admin-cu-create-cc.png)</br>
 
 
     Select **Next**.
 
-6. On the **Finish and review** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
+6. On the **Review and finish** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
 
 7. On the confirmation page, click **Done**.
 
