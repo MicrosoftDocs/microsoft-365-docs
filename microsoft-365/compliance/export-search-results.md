@@ -66,7 +66,7 @@ Exporting the results of a Content Search involves preparing the results, and th
     
     Add the following lines to the  *machine.config*  file somewhere between the  `<configuration>` and  `</configuration>` tags. Be sure to replace  `ProxyServer` and  `Port` with the correct values for your organization; for example,  `proxy01.contoso.com:80` . 
     
-    ```text
+    ```xml
     <system.net>
        <defaultProxy enabled="true" useDefaultCredentials="true">
          <proxy proxyaddress="https://ProxyServer :Port " 
@@ -276,11 +276,11 @@ Here's more information about exporting search results.
     ![Choose the export option based on whether a site contains an indexed item that matches the search criteria](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
-    a. Only indexed items that match the search criteria are exported. No partially indexed items are exported.
+    1. Only indexed items that match the search criteria are exported. No partially indexed items are exported.
     
-    b. If no indexed items from a site match the search criteria, then partially indexed items from that same site aren't exported. If indexed items from a site are returned in the search results, then the partially indexed items from that site are exported. In other words, only the partially indexed items from sites that contain items that match the search criteria are exported.
+    1. If no indexed items from a site match the search criteria, then partially indexed items from that same site aren't exported. If indexed items from a site are returned in the search results, then the partially indexed items from that site are exported. In other words, only the partially indexed items from sites that contain items that match the search criteria are exported.
     
-    c. All partially indexed items from all sites in the search are exported, regardless of whether a site contains items that match the search criteria.
+    1. All partially indexed items from all sites in the search are exported, regardless of whether a site contains items that match the search criteria.
     
     If you choose to export partially indexed items, partially indexed mailbox items are exported in a separate PST file regardless of the option that you choose under **Export Exchange content as**.
 
