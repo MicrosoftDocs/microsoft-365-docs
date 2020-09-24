@@ -550,6 +550,8 @@ Here are the actions that should be done after your pre-migration work that impa
 <p>Office Clients, Office Online</p>
 </td>
 <td width="26%">&nbsp;</td>
+<p>During Office client cutover, Azure AD finalizes the tenant scope to point to the Office 365 services. This configuration change enables Office clients to update and point to the Office 365 services endpoints.</p>
+<p>&nbsp;</p>
 <td width="24%">
 <p>All Office customers</p>
 </td>
