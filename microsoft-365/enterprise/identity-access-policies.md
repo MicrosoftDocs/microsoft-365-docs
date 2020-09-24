@@ -151,6 +151,8 @@ In the **Assignments** section:
 |Conditions| **Client apps** | Choose **Yes** for **Configure** <br> Clear the check marks for **Browser** and **Mobile apps and desktop clients** | |
 ||||
 
+For Exchange Online, you can use authentication policies to [disable Basic authentication](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), which forces all client access requests to use modern authentication.
+
 In the **Access controls** section:
 
 |Setting|Properties|Values|Action|
