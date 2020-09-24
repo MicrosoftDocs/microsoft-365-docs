@@ -400,9 +400,6 @@ If you click **Filters**, you can modify the report with the following filters:
 - **Domain**
 - **Recipients** (Note that this filterable property is only available in the details table view.)
 
-> [!NOTE]
-> **Protected by**, **Tag** and **Domain** are Office 365 ATP only. These filterable properties are not available in **View data by: Content \> Malware**.
-
 ## Top malware report
 
 The **Top malware** report shows the various kinds of malware that was detected by [anti-malware protection in EOP](anti-malware-protection.md).
