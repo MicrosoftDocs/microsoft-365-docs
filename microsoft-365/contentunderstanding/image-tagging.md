@@ -43,3 +43,4 @@ To turn image tagging on or off
 
 ## See also
 
+[Set up content understanding](set-up-content-understanding.md)
