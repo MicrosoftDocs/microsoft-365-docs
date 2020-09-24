@@ -366,30 +366,34 @@ Here are the actions that should be done after your pre-migration work that impa
 <table width="100%">
 <tbody>
 <tr>
-<td width="24%">
+<td style="width: 19%;">
 <p>Step(s)</p>
 </td>
-<td width="26%">
+<td style="width: 34.7398%;">
 <p>Description</p>
 </td>
-<td width="24%">
+<td style="width: 17.2602%;">
 <p>Applies to</p>
 </td>
-<td width="25%">
+<td style="width: 25%;">
 <p>Impact</p>
 </td>
 </tr>
+</tbody>
+</table>
+<table width="100%">
+<tbody>
 <tr>
-<td width="24%">
+<td style="width: 19%;">
 <p>Microsoft Cloud Deutschland Azure AD tenant copied to Office 365 Services</p>
 </td>
-<td width="26%">
+<td style="width: 34.5854%;">
 <p>Azure AD copies tenant to Office 365 Services. Tenant and User identifiers are preserved.&nbsp; AAD service calls are redirected from Microsoft Cloud Deutschland to Office 365 Services transparent to services.</p>
 </td>
-<td width="24%">
+<td style="width: 17.4146%;">
 <p>All Office customers</p>
 </td>
-<td width="25%">
+<td style="width: 25%;">
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tenant admin can now sign in with existing credentials to http://portal.microsoftazure.de/ and https://portal.azure.com.</p>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Azure Cloud Germany subscriptions are visible only in Germany portal and vice versa.</p>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GDPR Data Subject Requests (DSRs) are executed from Office 365 Services Azure Admin portal for future requests. Any legacy/non-customer diagnostic data information resident Microsoft Cloud Deutschland is deleted at or before 30 days.</p>
@@ -399,9 +403,13 @@ Here are the actions that should be done after your pre-migration work that impa
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All customers using federated authentications with Active Directory Federation Services (AD FS), should not make changes to Issuer URIs used for all authentications with on-premises Active Directory during migration. Changing Issuer URIs will lead to authentication failures for users in the domain. Issuer URIs can be changed directly in AD FS or when a domain is converted from managed to federated and vice versa. Microsoft recommends customers do not add/remove/convert a federated domain in the Azure AD tenant been migrated. Issuer URIs can be changed once the migration is fully complete.</p>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; External sharing with non-migrated tenants (those present still in Microsoft Cloud Deutschland Azure AD) will no longer work</p>
 <p>&nbsp;</p>
-<p>Password resets, password changes, password reset by admin for managed (non AD FS) organizations must be performed via the Office 365 services portals.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Password resets, password changes, password reset by admin for managed (non AD FS) organizations must be performed via the Office 365 services portals.</p>
 </td>
 </tr>
+</tbody>
+</table>
+<table width="100%">
+<tbody>
 <tr>
 <td width="24%">
 <p>Establish AuthServer in on-premises pointing to global STS service</p>
@@ -565,8 +573,7 @@ Here are the actions that should be done after your pre-migration work that impa
 </tbody>
 </table>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><a href="#_ftnref1" name="_ftn1"></a>&nbsp;</p>
+<p><a href="#_ftnref1" name="_ftn1">[1]</a> (i) Customers with Azure resources must take action in this migration scenario as defined by the Azure Migration Playbook. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii)When Microsoft is unable to complete the migration due to the customer&rsquo;s inaction, then the customer&rsquo;s subscription will expire on October 29, 2021.&nbsp;</p>
 <p>&nbsp;</p>
 
 To find out more information about the differences for organizations in migration and after Azure Active Directory is migrated, review the [Customer experience during the migration to Office 365 services in the new German datacenter regions](#_Azure_Active_Directory)
