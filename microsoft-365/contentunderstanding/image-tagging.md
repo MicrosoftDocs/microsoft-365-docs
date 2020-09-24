@@ -115,7 +115,17 @@ To turn image tagging on or off
 
 1. In the Microsoft 365 admin center, click **Setup**.
 
-  
+2. Under **Organizational knowledge**, click **Automate content understanding**.
+
+3. Click **Manage**.
+
+4. On the **Image tagging** tab, click **Edit**.
+
+5. Choose to allow **Basic tagging** or turn tagging **Off**.
+
+6. Click **Save**.
+
+    ![Screenshot of image tagging control](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)
 
  
 
