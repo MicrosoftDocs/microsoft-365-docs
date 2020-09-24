@@ -359,8 +359,13 @@ The following views are available:
 If you click **Filters**, you can modify the report with the following filters:
 
 - **Start date** and **End date**
-- Detection value
-- **Protected by** (Office 365 ATP only): **ATP** or **EOP**. Note that this filterable property isn't available in **View data by: Content \> Malware**.
+- **Detection**
+- **Protected by**
+- **Tag**
+- **Domain**
+
+> [!NOTE]
+> **Protected by**, **Tag** and **Domain** are Office 365 ATP only: **ATP** or **EOP**. These filterable properties are not available in **View data by: Content \> Malware**.
 
 ### Details table view for the Threat protection status report
 
