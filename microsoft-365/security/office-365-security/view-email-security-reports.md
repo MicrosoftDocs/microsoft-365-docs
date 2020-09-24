@@ -382,8 +382,8 @@ If you click **View details table**, the information that's shown depends on the
 
 If you click **Filters** in this view, you can modify the report with the following filters:
 
-  -**Start date** and **End date**
-  -**Detection**
+- **Start date** and **End date**
+- **Detection**
 
 - All other charts:
 
