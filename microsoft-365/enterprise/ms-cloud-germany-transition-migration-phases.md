@@ -357,7 +357,7 @@ Here are the actions that should be done _before tenant migration begins_.
 </tbody>
 </table>
 <p>&nbsp;</p>
-To find out more information about any actions needed during the migration phase of this workload or impact to administration or usage, review the [Azure AD](#_Azure_Active_Directory_1) section of Migration Phases Actions and Impacts.
+To find out more information about any actions needed during the migration phase of this workload or impact to administration or usage, review the Azure Active Directory section below.
 
 ## Azure Active Directory
 
@@ -366,7 +366,7 @@ Here are the actions that should be done after your pre-migration work that impa
 <table width="100%">
 <tbody>
 <tr>
-<td width="24%">
+<td width="23%">
 <p>Step(s)</p>
 </td>
 <td width="26%">
@@ -380,7 +380,7 @@ Here are the actions that should be done after your pre-migration work that impa
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td width="23%">
 <p>Microsoft Cloud Deutschland Azure AD tenant copied to Office 365 Services</p>
 </td>
 <td width="26%">
@@ -403,7 +403,7 @@ Here are the actions that should be done after your pre-migration work that impa
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td width="23%">
 <p>Establish AuthServer in on-premises pointing to global STS service</p>
 </td>
 <td width="26%">
@@ -424,13 +424,13 @@ Here are the actions that should be done after your pre-migration work that impa
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td width="23%">
 <p>Migration of Azure resources</p>
 </td>
-<td width="26%">
+<td width="24%">
 <p>Customers using Office 365 and Azure resources (e.g., Networking, Compute, Storage, etc) <a href="#_ftn1" name="_ftnref1"></a></p>
 </td>
-<td width="24%">
+<td width="26%">
 <p>Azure Customers</p>
 </td>
 <td width="25%">
@@ -438,13 +438,13 @@ Here are the actions that should be done after your pre-migration work that impa
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td width="23%">
 <p>Azure AD cutover to Office 365 services is completed</p>
 </td>
-<td width="26%">
+<td width="24%">
 <p>Azure AD tenant is finalized against the Office 365 services. Microsoft Cloud Deutschland services no longer recognize the transitioned organization.</p>
 </td>
-<td width="24%">
+<td width="26%">
 <p>All Office Customers</p>
 </td>
 <td width="25%">
@@ -454,13 +454,13 @@ Here are the actions that should be done after your pre-migration work that impa
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td width="23%">
 <p>Update AADConnect</p>
 </td>
-<td width="26%">
+<td width="24%">
 <p>Once AAD cutover is completed, the organization is fully Office 365 services organization (no longer connected to Microsoft Cloud Deutschland). At this point the customer needs to uninstall and then re-install AAD Connect to repoint to the WW AAD endpoints for sync. If no re-installation is possible, the string value &ldquo;AzureInstance&rdquo; needs to be set from 3 (Black Forest) to 0 in the registry path &ldquo;Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect&rdquo;. Once the registry value has been changed, the AAD Sync service has to be restarted.</p>
 </td>
-<td width="24%">
+<td width="26%">
 <p>Hybrid AAD connected organizations</p>
 </td>
 <td width="25%">
@@ -470,13 +470,13 @@ Here are the actions that should be done after your pre-migration work that impa
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td width="23%">
 <p>Remove Black Forest AD FS Relying Party Trusts</p>
 </td>
-<td width="26%">
+<td width="24%">
 <p>Once AAD cutover is completed, the organization is fully Office 365 services organization (no longer connected to Microsoft Cloud Deutschland). At this point the customer will need to remove the Relying Party Trust to the Black Forest endpoints. This can only be done, when no applications of the customer point to Black Forest endpoints when AAD is leveraged as IdP.</p>
 </td>
-<td width="24%">
+<td width="26%">
 <p>Federated Authentication organizations</p>
 </td>
 <td width="25%">
@@ -484,13 +484,13 @@ Here are the actions that should be done after your pre-migration work that impa
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td width="23%">
 <p>Request to join a group in last 30 days before migration will need to be requested again if the original request was not approved</p>
 </td>
-<td width="26%">
+<td width="24%">
 <p>End user customer will need to use <a href="https://account.activedirectory.windowsazure.com/r#/joinGroups">Access panel</a> to submit request to join a group again if those requests were not approved in the last 30 days before the migration.</p>
 </td>
-<td width="24%">
+<td width="26%">
 <p>End users whose group approval requests were not approved in last 30 days before migration</p>
 </td>
 <td width="25%">
@@ -501,13 +501,13 @@ Here are the actions that should be done after your pre-migration work that impa
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td width="23%">
 <p>Remove legacy Application URI and ReplyURL</p>
 </td>
-<td width="26%">
+<td width="24%">
 <p>&nbsp;</p>
 </td>
-<td width="24%">
+<td width="26%">
 <p>&nbsp;</p>
 </td>
 <td width="25%">
@@ -515,13 +515,13 @@ Here are the actions that should be done after your pre-migration work that impa
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td width="23%">
 <p>Update on-premises DNS services for Office 365 services endpoints</p>
 </td>
-<td width="26%">
+<td width="24%">
 <p>Customer managed DNS entries which point to Office365 Germany need to repoint to the Office 365 services endpoints.</p>
 </td>
-<td width="24%">
+<td width="26%">
 <p>All Office customers</p>
 </td>
 <td width="25%">
@@ -529,16 +529,16 @@ Here are the actions that should be done after your pre-migration work that impa
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td width="23%">
 <p>Update partners and 3<sup>rd</sup> party services for Office 365 services endpoints</p>
 </td>
-<td width="26%">
+<td width="24%">
 <p>3<sup>rd</sup> party services and partners which point to Office365 Germany need to repoint to the Office 365 services endpoints. Example given:</p>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Re-Register, in alignment with your vendors/partners, gallery app version of applications, if available</p>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Point all custom applications which leverage e.g. Graph API from graph.microsoft.de to graph.microsoft.com. Other APIs with changed endpoints also need to be adjusted, if leveraged.</p>
 <p>&nbsp;</p>
 </td>
-<td width="24%">
+<td width="26%">
 <p>All Office customers</p>
 </td>
 <td width="25%">
@@ -546,13 +546,13 @@ Here are the actions that should be done after your pre-migration work that impa
 </td>
 </tr>
 <tr>
-<td width="24%">
+<td width="23%">
 <p>Office Clients, Office Online</p>
 </td>
-<td width="26%">&nbsp;</td>
+<td width="24%">&nbsp;</td>
 <p>During Office client cutover, Azure AD finalizes the tenant scope to point to the Office 365 services. This configuration change enables Office clients to update and point to the Office 365 services endpoints.</p>
 <p>&nbsp;</p>
-<td width="24%">
+<td width="26%">
 <p>All Office customers</p>
 </td>
 <td width="25%">
