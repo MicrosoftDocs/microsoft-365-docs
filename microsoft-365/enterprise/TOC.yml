@@ -396,14 +396,18 @@
           href: microsoft-365-secure-sign-in.md
     - name: Manage
       items: 
-        - name: Assign licenses to user accounts
-          href: assign-licenses-to-user-accounts.md
-        - name: Microsoft 365 help center
-          href: https://docs.microsoft.com/office365/admin/admin-home
-        - name: Tools to manage user accounts
-          href: manage-microsoft-365-accounts.md
-        - name: Add several users at the same time
-          href: add-several-users-at-the-same-time.md
+        - name: User accounts and licenses
+          items: 
+          - name: Tools to manage user accounts
+            href: manage-microsoft-365-accounts.md
+          - name: Add several users at the same time
+            href: add-several-users-at-the-same-time.md
+          - name: Assign licenses to user accounts
+            href: assign-licenses-to-user-accounts.md
+          - name: Microsoft 365 help center
+            href: https://docs.microsoft.com/office365/admin/admin-home
+        - name: Passwords
+          href: manage-microsoft-365-passwords.md
         - name: Recover deleted items in a user mailbox
           href: recover-deleted-items-in-a-mailbox.md
         - name: Directory synchronization
