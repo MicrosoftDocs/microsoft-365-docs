@@ -371,8 +371,6 @@ If you click **Filters**, you can modify the report with the following filters:
 
 If you click **View details table**, the information that's shown depends on the chart you were looking at:
 
-- **View data by: Overview**: No **View details table** button is available.
-
 - **View data by: Content \> Malware**:
 
   - **Date**
@@ -384,6 +382,8 @@ If you click **Filters** in this view, you can modify the report with the follow
 
 - **Start date** and **End date**
 - **Detection**
+
+**View data by: Overview**: No **View details table** button is available.
 
 - All other charts:
 
