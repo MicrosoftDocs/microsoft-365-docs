@@ -43,7 +43,7 @@ You must have global administrator or SharePoint administrator permissions to be
 
     ![Screenshot of image tagging options](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
 
-4. On the **Configure Form Processing** page, you can choose if you want to let users be able to use AI Builder to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
+5. On the **Configure Form Processing** page, you can choose if you want to let users be able to use AI Builder to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
      For **Which SharePoint libraries should show option to create a form processing model**, you can select:</br>
     - **All SharePoint libraries** to make it available to all SharePoint libraries in your organization.</br>
@@ -57,20 +57,19 @@ You must have global administrator or SharePoint administrator permissions to be
    > [!Note]
    > Enabling this setting on a SharePoint document library does not affect existing models applied to the library or the ability to apply document understanding models to a library. 
     
-5. On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models. </br>
+6. On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models. </br>
     a. For **Site name**, type the name you want to give your content center site.</br>
     b. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, click **Edit**.</br>
 
       ![Create content center](../media/content-understanding/admin-cu-create-cc.png)</br>
 
-
     Select **Next**.
 
-6. On the **Review and finish** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
+7. On the **Review and finish** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
 
-7. On the confirmation page, click **Done**.
+8. On the confirmation page, click **Done**.
 
-8. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
+9. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
 
 ## Assign licenses
 
