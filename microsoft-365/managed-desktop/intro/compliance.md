@@ -15,7 +15,7 @@ ms.topic: article
 
 When you use Microsoft Managed Desktop IT-as-a-service, Microsoft provides you with a comprehensive set of compliance offerings. This effort helps your organization comply with the various compliance requirements.
 
-## Compliance offerings
+## Compliance coverage
 
 Microsoft Managed Desktop has achieved the following certifications:
 
