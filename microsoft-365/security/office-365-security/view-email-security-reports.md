@@ -361,7 +361,7 @@ If you click **Filters**, you can modify the report with the following filters:
 - **Start date** and **End date**
 - **Detection**
 - **Protected by**: **ATP** or **EOP**
-- **Tag**: filter by users that have had a specific tag assigned. For more information about user tags, see [User tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)
+- **Tag**: filter by tag to return users or groups that have had a specific tag assigned. For more information about user tags, see [User tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)
 - **Domain**
 
 > [!NOTE]
@@ -396,7 +396,7 @@ If you click **Filters**, you can modify the report with the following filters:
 - **Start date** and **End date**
 - **Detection**
 - **Protected by** (Office 365 ATP only):**ATP** or **EOP**
-- **Tag**: filter by users that have had a specific tag assigned. For more information about user tags, see [User tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)
+- **Tag**: filter by tag to return users or groups that have had a specific tag assigned. For more information about user tags, see [User tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)
 - **Domain**
 - **Recipients** (Note that this filterable property is only available in the details table view.)
 
