@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -82,11 +82,16 @@ The following diagram shows the basic workflow for a disposition review when a r
 ![Chart showing flow of how disposition works](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
 Triggering a disposition review at the end of the retention period is a configuration option that's available only with a retention label. This option is not available for a retention policy. For more information about these two retention solutions, see [Learn about retention policies and retention labels](retention.md).
-  
-![Retention settings for a label](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
+
+From the **Define retention settings** page for a retention label:
+
+![Retention settings for a label](../media/disposition-review-option.png)
  
-> [!NOTE]
-> When you select the option **Notify these people when there are items ready to review**, specify a user or mail-enabled security group. Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) are not supported for this option.
+After you select this **Trigger a disposition review** option, you specify the disposition reviewers on the next page of the wizard:
+
+![Specifying disposition reviewers](../media/disposition-reviewers.png)
+
+For the reviewers, specify a user or mail-enabled security group. Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) are not supported for this option.
 
 ### Viewing and disposing of content
 
@@ -132,7 +137,4 @@ For pending dispositions, the time range is based on the expiration date. For di
 You can export information about the items in either view as a .csv file that you can then sort and manage using Excel:
 
 ![Export option for disposition](../media/retention-export-option.png)
-  
-![Exported disposition data in Excel](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
-
 
