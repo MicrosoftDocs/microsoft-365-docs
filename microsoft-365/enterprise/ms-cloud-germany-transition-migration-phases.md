@@ -565,6 +565,7 @@ Here are the actions that should be done after your pre-migration work that impa
 </tbody>
 </table>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <p><a href="#_ftnref1" name="_ftn1"></a>&nbsp;</p>
 <p>&nbsp;</p>
 
@@ -572,30 +573,105 @@ To find out more information about the differences for organizations in migratio
 
 ## Exchange Online
 
-| Step(s) | Description | Applies to | Impact |
-| --- | --- | --- | --- |
-| New Germany region is added to existing organization setup and mailboxes are moved to Office 365 services | Exchange Online configuration adds the new go-local German region to the transitioning organization. This Office 365 services region is set as &#39;default&#39;, which enables the internal load balancing service to re-distribute mailboxes to the appropriate default region in Office 365 services. In this transition, users on either side (Germany or Office 365 services) are in the same organization and can use either URL endpoint. | Exchange Online |
-- Transition users and services off Germany URLs to Office 365 services URLs ([https://outlook.office365.com](https://outlook.office365.com/)) to aide in future retirement of the Germany service endpoints.
-- In case, user mailbox has been migrated but admin mailbox has not been migrated and vice-versa, Admins won&#39;t be able to run Set-UserPhoto cmdlet . Admin need to pass additional string in ConnectionUri during connection setup.Below syntax mentions the change –  https://outlook.office.de/PowerShell-LiveID?email=\&lt;user\_email \&gt;
-  - Here user\_email is the placeholder for email-id of the user whose Photo needs to be changed using Set-UserPhoto cmdlet.
-- Users will continue to access the service via legacy Germany URLs. No immediate action needed. [see admin impact]
-- Users should begin to use the office.com portal for Office Online features (Calendar, Mail, People). Navigation to services not yet migrated to Office 365 services (eg Dynamics) will not function until migrated.
-- Public folder Outlook Web Access experience during migration is not available.|
-| Stop / delete any onboarding or offboarding moves of their mailboxes.
- | This ensures the move requests don&#39;t fail with error. | Exchange Online customers with Hybrid (on-premises) deployments |
-- Required action – non action may result in service / client failure.
-- Before Exchange mailbox migration begins (+5 days&#39; notice) clients to be notified that they should stop / delete any onboarding or offboarding moves of their mailboxes. [If they don&#39;t, they&#39;ll see errors in their move request]
-- After Exchange mailbox migration is complete, again clients are to be signaled that they can resume onboarding/offboarding moves.
-Running Test-MigrationServerAvailabiilty cmdlet during Microsoft Cloud Deutschland to Office 365 services Migration of Exchange may not work. It will work properly after migration completion
-If clients run into credential / authorization issues after mailbox migrations, they can re-enter the on-prem admin credentials in the migration endpoint by:Running &quot;Set-MigrationEndpoint endpointName -Credential $(Get-Credential)&quot; or by setting the same using ECP|
-| New Germany region is added to existing organization setup and mailboxes are moved to Office 365 services | Exchange Online configuration adds the new go-local German region to the transitioning organization. The Germany region continues set as &#39;default&#39;. Individual mailboxes tagged with the Germany region in Office 365 services will migrate automatically by the Load Balancing service when set by Customer during initial validation. Subsequently changing the &quot;default&quot; to the appropriate Office 365 services region will move the bulk of mailboxes at scale. In this transition, users on either side (Microsoft Cloud Deutschland or Office 365 services) are in the same organization and can use either URL endpoint. | Exchange Online; Deutsche Telekom |
-- Stamp MailboxRegion on individual mailboxes to Germany region code &quot;GER&quot; to individually move specific mailboxes during &#39;validation&#39; phase.
-- Transition users and services off Microsoft Cloud Deutschland URLs to Office 365 services URLs ([https://outlook.office365.com](https://outlook.office365.com/)) to aide in future retirement of the Germany service endpoints.
-- Upon completion of validation phase, the DefaultMailboxRegion is changed to GER to allow all mailboxes to rebalance to Office 365 services.
-- Users will continue to access the service via legacy Germany URLs. No immediate action needed. [see admin impact]|
-| Re-run Hybrid Configuration Wizard against Office 365 services
- | Existing Hybrid Configuration Wizard configuration is configured to support Microsoft Cloud Deutschland. With migration complete of Exchange services, we decouple on-premises configuration from Microsoft Cloud Deutschland. | Exchange Online customers running Hybrid deployment |
-- Required action – non action may result in service / client failure.|
+<table width="100%">
+<tbody>
+<tr>
+<td width="24%">
+<p>Step(s)</p>
+</td>
+<td width="26%">
+<p>Description</p>
+</td>
+<td width="24%">
+<p>Applies to</p>
+</td>
+<td width="25%">
+<p>Impact</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>New Germany region is added to existing organization setup and mailboxes are moved to Office 365 services</p>
+</td>
+<td width="26%">
+<p>Exchange Online configuration adds the new go-local German region to the transitioning organization. This Office 365 services region is set as &lsquo;default&rsquo;, which enables the internal load balancing service to re-distribute mailboxes to the appropriate default region in Office 365 services. In this transition, users on either side (Germany or Office 365 services) are in the same organization and can use either URL endpoint.</p>
+</td>
+<td width="24%">
+<p>Exchange Online</p>
+</td>
+<td width="25%">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Transition users and services off Germany URLs to Office 365 services URLs (<a href="https://outlook.office365.com">https://outlook.office365.com</a>) to aide in future retirement of the Germany service endpoints.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In case,&nbsp; user mailbox has been migrated but admin mailbox has not been migrated and vice-versa, Admins won&rsquo;t be able to run Set-UserPhoto cmdlet . Admin need to pass additional string in ConnectionUri during connection setup. Below syntax mentions the change &ndash; <a href="%20https:/outlook.office.de/PowerShell-LiveID?email=%3cuser_email%20%3e">&nbsp;https://outlook.office.de/PowerShell-LiveID?email=&lt;user_email &gt;</a></p>
+<p>o&nbsp;&nbsp;&nbsp; Here user_email is the placeholder for email-id of the user whose Photo needs to be changed using Set-UserPhoto cmdlet.</p>
+<p>&nbsp;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Users will continue to access the service via legacy Germany URLs. No immediate action needed. [see admin impact]</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Users should begin to use the office.com portal for Office Online features (Calendar, Mail, People). Navigation to services not yet migrated to Office 365 services (eg Dynamics) will not function until migrated.</p>
+<p>&nbsp; folder Outlook Web Access experience during migration is not available.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>Stop / delete any onboarding or offboarding moves of their mailboxes.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td width="26%">
+<p>This ensures the move requests don&rsquo;t fail with error.</p>
+</td>
+<td width="24%">
+<p>Exchange Online customers with Hybrid (on-premises) deployments</p>
+</td>
+<td width="25%">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Required action &ndash; non action may result in service / client failure.</p>
+<p>&nbsp;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Before Exchange mailbox migration begins (+5 days&rsquo; notice) clients to be notified that they should stop / delete any onboarding or offboarding moves of their mailboxes.&nbsp; [If they don't, they'll see errors in their move request]</p>
+<p>&nbsp;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After Exchange mailbox migration is complete, again clients are to be signaled that they can resume onboarding/offboarding moves.</p>
+<p>&nbsp;</p>
+<p>Running Test-MigrationServerAvailabiilty cmdlet during Microsoft Cloud Deutschland to Office 365 services Migration of Exchange may not work. It will work properly after migration completion</p>
+<p>&nbsp;</p>
+<p>If clients run into credential / authorization issues after mailbox migrations, they can re-enter the on-prem admin credentials in the migration endpoint by:</p>
+<p>Running &ldquo;Set-MigrationEndpoint endpointName -Credential $(Get-Credential)&rdquo; or by setting the same using ECP</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>New Germany region is added to existing organization setup and mailboxes are moved to Office 365 services</p>
+</td>
+<td width="26%">&nbsp;</td>
+<td width="24%">&nbsp;</td>
+<td width="25%">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>Re-run Hybrid Configuration Wizard against Office 365 services</p>
+<p>&nbsp;</p>
+</td>
+<td width="26%">
+<p>Existing Hybrid Configuration Wizard configuration is configured to support Microsoft Cloud Deutschland. With migration complete of Exchange services, we decouple on-premises configuration from Microsoft Cloud Deutschland.</p>
+</td>
+<td width="24%">
+<p>Exchange Online customers running Hybrid deployment</p>
+</td>
+<td width="25%">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Required action &ndash; non action may result in service / client failure.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 To find out more information about the differences for organizations in migration and after Exchange Online resources are migrated, review the [Customer experience during the migration to Office 365 services in the new German datacenter regions](#_Exchange_Online)
 
@@ -603,102 +679,335 @@ To find out more information about the differences for organizations in migratio
 
 Backend Exchange Online Protection features are copied to new Germany region.
 
-| Step(s) | Description | Applies to | Impact |
-| --- | --- | --- | --- |
-| During migration, eDiscovery searches will fail or return 0 results for SharePoint Online, OneDrive for Business and Exchange Online locations that have been migrated | During migration, customers can continue to create cases, holds, searches and exports in the [Security &amp; Compliance Center](https://docs.microsoft.com/en-us/microsoft-365/compliance/manage-legal-investigations), including [Content Search](https://docs.microsoft.com/en-us/microsoft-365/compliance/search-for-content).  However, searches against SharePoint Online, OneDrive for Business and Exchange Online locations that have been migrated will either return 0 results or produce an error.  See steps column to the right for remediation.  | All customers using eDiscovery  | In the event that a search returns 0 results or an error during migration, please take the following action.
-- SharePoint Online - Download sites directly from SharePoint Online/ OneDrive for Business site using  [Download files and folders from OneDrive or SharePoint](https://support.office.com/en-us/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05) - this will require SharePoint Online admin or R/O permissions on the site
-If limits are exceeded, explained in the above documentation, customer can utilize the OneDrive for Business sync client following [this guidance](https://support.office.com/en-us/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88).
-- Exchange Online - [In-Place eDiscovery in Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/ediscovery/ediscovery?view=exchserver-2019)|
-| All SharePoint Online, OneDrive for Business and Exchange Online locations have been migrated along with SCC.  | Searches will now be 100% successful.  Any failures or errors should follow normal support channels  | All customers using eDiscovery  | None |
-| Migration of Exchange Online routing and historical message detail. | Exchange Online enables routing from external hosts to Office365. The external MX records are transitioned to route to Office 365 services EOP services. Tenant configuration and historical details are migrated. | Exchange Online customers |
-- Microsoft managed DNS entries update from Office365 Germany EOP to Office 365 services.
-- \&lt;placeholder for SCC\&gt;
-- Customer should wait for 30 days after EOP dual write for EOP migration, otherwise may cause data loss.|
-| Remove org-wide retention policy created during pre-steps  | Customer can remove the org-wide [Retention Policy](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fmicrosoft-365%2Fcompliance%2Fretention-policies%23a-policy-that-applies-to-entire-locations&amp;data=04%7C01%7Cmahage%40microsoft.com%7Cb24c0601b09a4469c8ef08d74c067382%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637061468969562472%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=oFRoKU52BMfZiL9G3SeSr5GmfXmk1Ic1PnlYO8e4EX0%3D&amp;reserved=0) created during Customer Pre-Work steps  | All customers who applied a retention policy during pre-work steps  | None |
+<table width="100%">
+<tbody>
+<tr>
+<td width="24%">
+<p>Step(s)</p>
+</td>
+<td width="26%">
+<p>Description</p>
+</td>
+<td width="24%">
+<p>Applies to</p>
+</td>
+<td width="25%">
+<p>Impact</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>During migration, eDiscovery searches will fail or return 0 results for SharePoint Online, OneDrive for Business and Exchange Online locations that have been migrated</p>
+</td>
+<td width="26%">
+<p>During migration, customers can continue to&nbsp;create cases, holds, searches and&nbsp;exports in&nbsp;the&nbsp;<a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/manage-legal-investigations">Security &amp; Compliance&nbsp;Center</a>, including&nbsp;<a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/search-for-content">Content Search</a>.&nbsp; However,&nbsp;searches&nbsp;against&nbsp;SharePoint Online, OneDrive for Business and Exchange Online locations that have been migrated will either&nbsp;return 0 results or produce an error.&nbsp; See steps column to the right for&nbsp;remediation.&nbsp;</p>
+</td>
+<td width="24%">
+<p>All customers using eDiscovery&nbsp;</p>
+</td>
+<td width="25%">
+<p>In the event that&nbsp;a search returns 0 results or an error during migration, please take the following action.&nbsp;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SharePoint Online - Download sites directly from SharePoint Online/ OneDrive for Business site using&nbsp;&nbsp;<a href="https://support.office.com/en-us/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05">Download files and folders from OneDrive or SharePoint</a>&nbsp;- this will require SharePoint Online admin or R/O permissions on the site&nbsp;</p>
+<p>If limits are exceeded, explained in the above documentation, customer can utilize the OneDrive for Business sync client following&nbsp;<a href="https://support.office.com/en-us/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88">this guidance</a>.&nbsp;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Exchange Online -&nbsp;<a href="https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/ediscovery/ediscovery?view=exchserver-2019">In-Place eDiscovery in Exchange Server</a>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>All&nbsp;SharePoint Online, OneDrive for Business and Exchange Online locations have been migrated along with SCC.&nbsp;</p>
+</td>
+<td width="26%">
+<p>Searches will now be 100% successful.&nbsp; Any failures or errors should follow normal support channels&nbsp;</p>
+</td>
+<td width="24%">
+<p>All customers using eDiscovery&nbsp;</p>
+</td>
+<td width="25%">
+<p>None</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>Migration of Exchange Online routing and historical message detail.</p>
+</td>
+<td width="26%">
+<p>Exchange Online enables routing from external hosts to Office365. The external MX records are transitioned to route to Office 365 services EOP services. Tenant configuration and historical details are migrated.</p>
+</td>
+<td width="24%">
+<p>Exchange Online customers</p>
+</td>
+<td width="25%">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Microsoft managed DNS entries update from Office365 Germany EOP to Office 365 services.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;placeholder for SCC&gt;&nbsp;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Customer should wait for 30 days after EOP dual write for EOP migration, otherwise may cause data loss.</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>Remove org-wide retention policy created during pre-steps&nbsp;</p>
+</td>
+<td width="26%">
+<p>Customer can remove the org-wide&nbsp;<a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fmicrosoft-365%2Fcompliance%2Fretention-policies%23a-policy-that-applies-to-entire-locations&amp;data=04%7C01%7Cmahage%40microsoft.com%7Cb24c0601b09a4469c8ef08d74c067382%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637061468969562472%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=oFRoKU52BMfZiL9G3SeSr5GmfXmk1Ic1PnlYO8e4EX0%3D&amp;reserved=0">Retention Policy</a>&nbsp;created during&nbsp;Customer Pre-Work steps&nbsp;</p>
+</td>
+<td width="24%">
+<p>All customers who applied a retention policy during pre-work steps&nbsp;</p>
+</td>
+<td width="25%">
+<p>None</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## SharePoint Online
 
-| Step(s) | Description | Applies to | Impact |
-| --- | --- | --- | --- |
-| SharePoint and OneDrives are transitioned | SharePoint and OneDrives are migrated from Microsoft Cloud Deutschland to Office 365 services in this phase. Existing Microsoft Cloud Deutschland URLs are preserved (contoso.sharepoint.de). Tokens issued by Microsoft Cloud Deutschland or Office 365 services token issuer are valid during the transition. | SharePoint customers |
-- Content will be read-only for two brief periods during migration (\&lt;x minutes), expect &quot;you can&#39;t edit content&quot; banner in SharePoint.
-- Search index will not be preserved, may take up to 10 days to rebuild.
-- Inflight SharePoint 2013 workflows will be broken during migration and must be republished post-migration
-- SharePoint/OneDrive content will be read-only for two brief periods during migration (\&lt;x minutes). Users will see &quot;you can&#39;t edit content&quot; banner briefly during this window.
-- Search Index may be unavailable while re-index completes. During this period search queries may not return complete results.
-- Existing site are preserved|
-| Republish SharePoint 2013 workflows | In Pre-work we reduced SharePoint 2013 workflows. Now with migration complete, the customer can republish the workflows. | All Office customers |
-- Required action – non action may result in user confusion, helpdesk calls.|
+<table width="100%">
+<tbody>
+<tr>
+<td width="24%">
+<p>Step(s)</p>
+</td>
+<td width="26%">
+<p>Description</p>
+</td>
+<td width="24%">
+<p>Applies to</p>
+</td>
+<td width="25%">
+<p>Impact</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>SharePoint and OneDrives are transitioned</p>
+</td>
+<td width="26%">
+<p>SharePoint and OneDrives are migrated from Microsoft Cloud Deutschland to Office 365 services in this phase. Existing Microsoft Cloud Deutschland URLs are preserved (contoso.sharepoint.de). Tokens issued by Microsoft Cloud Deutschland or Office 365 services token issuer are valid during the transition.</p>
+</td>
+<td width="24%">
+<p>SharePoint customers</p>
+</td>
+<td width="25%">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Content will be read-only for two brief periods during migration (&lt;x minutes), expect &ldquo;you can&rsquo;t edit content&rdquo; banner in SharePoint.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Search index will not be preserved, may take up to 10 days to rebuild.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Inflight SharePoint 2013 workflows will be broken during migration and must be republished post-migration</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SharePoint/OneDrive content will be read-only for two brief periods during migration (&lt;x minutes). Users will see &ldquo;you can&rsquo;t edit content&rdquo; banner briefly during this window.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Search Index may be unavailable while re-index completes. During this period search queries may not return complete results.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Existing site are preserved</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>Republish SharePoint 2013 workflows</p>
+</td>
+<td width="26%">
+<p>In Pre-work we reduced SharePoint 2013 workflows. Now with migration complete, the customer can republish the workflows.</p>
+</td>
+<td width="24%">
+<p>All Office customers</p>
+</td>
+<td width="25%">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Required action &ndash; non action may result in user confusion, helpdesk calls.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 ## Skype for Business Online
 
-| Step(s) | Description | Applies to | Impact |
-| --- | --- | --- | --- |
-| Migration of Skype for Business to Teams | Existing Skype for Business customers are migrated to Office 365 services in Europe and then transitioned to Microsoft Teams in the Germany region of Office 365 services. | Skype for Business customers |
-- Users will no longer be able to sign-into Skype for Business on migration date. 10 days prior to migration we will notify end users via inband on the Skype for Business client that they will be upgraded to Teams. We will also post in Admin Center that these changes will occur after the 10 days.
-- Policy configuration is migrated
-- Users will be migrated to Teams and will no longer have Skype for Business post migration
-- Users must have Teams desktop client installed. This will happen during the 10 days via policy on the Skype for Business infrastructure, but if this fails they will still need to download the client or have to connect with a supported browser
-- Contacts and meetings will be migrated to Teams.
-- Users will not be able to sign in to Skype for Business between time service transitions to Office 365 services and customer DNS entries are completed.
-- Contacts and existing meetings will continue to function as Skype for Business meetings.
+<table width="100%">
+<tbody>
+<tr>
+<td width="24%">
+<p>Step(s)</p>
+</td>
+<td width="26%">
+<p>Description</p>
+</td>
+<td width="24%">
+<p>Applies to</p>
+</td>
+<td width="25%">
+<p>Impact</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>Migration of Skype for Business to Teams</p>
+</td>
+<td width="26%">
+<p>Existing Skype for Business customers are migrated to Office 365 services in Europe and then transitioned to Microsoft Teams in the Germany region of Office 365 services. &nbsp;</p>
+</td>
+<td width="24%">
+<p>Skype for Business customers</p>
+</td>
+<td width="25%">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Users will no longer be able to sign-into Skype for Business on migration date. 10 days prior to migration we will notify end users via inband on the Skype for Business client that they will be upgraded to Teams. We will also post in Admin Center that these changes will occur after the 10 days.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Policy configuration is migrated</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Users will be migrated to Teams and will no longer have Skype for Business post migration</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Users must have Teams desktop client installed. This will happen during the 10 days via policy on the Skype for Business infrastructure, but if this fails they will still need to download the client or have to connect with a supported browser</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contacts and meetings will be migrated to Teams.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Users will not be able to sign in to Skype for Business between time service transitions to Office 365 services and customer DNS entries are completed.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contacts and existing meetings will continue to function as Skype for Business meetings.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Dynamics
 
-| Step(s) | Description | Applies to | Impact |
-| --- | --- | --- | --- |
-| Microsoft of Dynamics resources | Customers with Microsoft Dynamics will be engaged by Engineering or FastTrack to perform transition of Dynamics to the Office 365 services instance.
- | Microsoft Dynamics 365 customers |
-- Post migration Admin validates organization
-- Admin modifies workflows as necessary
-- Admin clears AdminOnly mode as appropriate
-- Admin changes organization type from Sandbox as appropriate
-- Notify end-users of the new URL to access the Instance (Org).
-- Update any &quot;inbound&quot; connections to the new endpoint URL.
-- Dynamics service will be unavailable to users during the transition.
-- Users are required to validate the org health and features after migration of each org.|
+<table width="100%">
+<tbody>
+<tr>
+<td width="24%">
+<p>Step(s)</p>
+</td>
+<td width="26%">
+<p>Description</p>
+</td>
+<td width="24%">
+<p>Applies to</p>
+</td>
+<td width="25%">
+<p>Impact</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>Microsoft of Dynamics resources</p>
+</td>
+<td width="26%">
+<p>Customers with Microsoft Dynamics will be engaged by Engineering or FastTrack to perform transition of Dynamics to the Office 365 services instance.<a href="#_ftn1" name="_ftnref1"></a></p>
+</td>
+<td width="24%">
+<p>Microsoft Dynamics 365 customers</p>
+</td>
+<td width="25%">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Post migration Admin validates organization</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Admin modifies workflows as necessary</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Admin clears AdminOnly mode as appropriate</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Admin changes organization type from Sandbox as appropriate</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Notify end-users of the new URL to access the Instance (Org).</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Update any &ldquo;inbound&rdquo; connections to the new endpoint URL.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dynamics service will be unavailable to users during the transition.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Users are required to validate the org health and features after migration of each org.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Power BI
 
-| Step(s) | Description | Applies to | Impact |
-| --- | --- | --- | --- |
-| Microsoft of Power BI resources | Customers with Microsoft Power BI will be engaged by Engineering or FastTrack after manually triggering an existing PBI migration tool to transition of Power BI to the Office 365 services instance.
- | Microsoft Power BI customers |
-- The following Power BI items will NOT be transitioned and they will have to be re-created.
-Real-Time datasets (e.g., streaming or push datasets).
-- Power BI on-premises Data Gateway configuration and data source.
-- The reports built on top of the real-time datasets will not be
-available after migration and are required to be recreated.
-- Power BI services will be unavailable to users during the transition. The unavailability of the service should not be more than 24 hrs.
-- Users will be required to reconfigure data sources and their on-premise data gateways with the Power BI Service after migration. Until they do so, users will be unable to use these data sources to perform scheduled refresh and/or Direct Query against these data sources.
-- Capacities and Premium workspaces cannot be migrated. Customer needs to delete all the capacities before the migration, re-create them after the migration and move the workspaces back to capacities as desired.|
+<table width="100%">
+<tbody>
+<tr>
+<td width="24%">
+<p>Step(s)</p>
+</td>
+<td width="26%">
+<p>Description</p>
+</td>
+<td width="24%">
+<p>Applies to</p>
+</td>
+<td width="25%">
+<p>Impact</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>Microsoft of Power BI resources</p>
+</td>
+<td width="26%">
+<p>Customers with Microsoft Power BI will be engaged by Engineering or FastTrack after manually triggering an existing PBI migration tool to transition of Power BI to the Office 365 services instance..<a href="#_ftn1" name="_ftnref1">[1]</a></p>
+</td>
+<td width="24%">
+<p>Microsoft Power BI customers</p>
+</td>
+<td width="25%">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The following Power BI items will NOT be transitioned and they will have to be re-created.</p>
+<p>Real-Time datasets (e.g., streaming or push datasets).</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Power BI on-premises Data Gateway configuration and data source.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The reports built on top of the real-time datasets will not be</p>
+<p>available after migration and are required to be recreated.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Power BI services will be unavailable to users during the transition. The unavailability of the service should not be more than 24 hrs.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Users will be required to reconfigure data sources and their on-premise data gateways with the Power BI Service after migration.&nbsp; Until they do so, users will be unable to use these data sources to perform scheduled refresh and/or Direct Query against these data sources.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Capacities and Premium workspaces cannot be migrated. Customer needs to delete all the capacities before the migration, re-create them after the migration and move the workspaces back to capacities as desired.&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 
 ## Subscription
 
-| Step(s) | Description | Applies to | Impact |
-| --- | --- | --- | --- |
-| We cannot migrate customers without consent. | Microsoft gains the right to migrate in one of two ways, which enables Microsoft to orchestrate the transition of data and services to the Office 365 services instance.
-Admin [opts-in](https://docs.microsoft.com/en-us/microsoft-365/enterprise/ms-cloud-germany-migration-opt-in?view=o365-worldwide) to the Microsoft-driven migration.
-Customer renews any subscription in their Microsoft Cloud Deutschland tenant after May 1, 2020. We will notify these customers of the migration right each month, wait 30 days to give customers a chance to cancel, and then directly opt-in, tracked in ICM.
- | All Office Customers |
-- Tenant is marked as consented for migration and confirmation displayed in Admin Center.
-- Acknowledgment is posted to Cloud Germany Message Center Tenant / Service configuration continues from Microsoft Cloud Deutschland endpoints.
-- Monitor Message Center for updates on Migration phase status.|
-| Subscription are Transferred and Licenses Re-Assigned | After the tenant is transitioned to Office 365 services, corresponding Office 365 services subscriptions are purchased for transferred Microsoft Cloud Deutschland subscriptions. Users with Microsoft Cloud Deutschland licenses assigned will be assigned Office 365 services licenses. Legacy Microsoft Cloud Deutschland subscriptions are removed from the Office 365 services tenant on completion. | All Office customers |
-- Changes to existing subscriptions will be blocked (e.g., no new subscription purchases, seat count changes) during this phase
-- License assignment changes will be blocked
-- Black Forest subscription will be migrated to corresponding Office 365 services subscription. The Office 365 services offer of that subscription is defined by Microsoft (aka Offer mapping)
-- The Office 365 services offer features&#39; number (Service plans) can be larger than in the original Black Forest offer. User licenses in Office 365 services will be equivalently assigned to similar Black Forest features (service plans). User licenses of All users will be automatically assigned to the new features. Admin needs to take an explicit action to disable those licenses, if needed.
-- When subscription migration is complete, both Office 365 services and Germany subscriptions will be visible in the Office365 Admin Portal, with the status of Germany subscriptions as deprovisioned.
-- Users will be reassigned licenses tied to the new Office 365 services subscriptions. Any Customer processes with dependencies taken on Germany subscriptions or SKU GUIDs will be broken and need to be revised with the Office 365 services offering.
-- New Subscriptions in the Office 365 services will be purchased with the new term (monthly/quarterly/yearly) and the customer will receive prorated refund for the balance not used in Black Forest subscription.
-- Partner Black Forest Tenant will not be migrated. CSP Customers will be migrated to Office 365 services under new Office 365 services Tenant of the same Partner. After Customer migration the Partner can manage this customer only from the Office 365 services tenant.
-- Additional functionality available (e.g., Microsoft Planner, Microsoft Flo\*w, etc) [Unless disabled by tenant admin, see [https://docs.microsoft.com/en-us/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses](https://docs.microsoft.com/en-us/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses) for references on how to disable service plans assigned to users&#39; licenses].|
-
-[1](#sdfootnote1anc) (i) Customers with Azure resources must take action in this migration scenario as defined by the Azure Migration Playbook. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii)When Microsoft is unable to complete the migration due to the customer&#39;s inaction, then the customer&#39;s subscription will expire on October 29, 2021.
-
-[2](#sdfootnote2anc) (i) Customers with Microsoft Dynamics 365 must take action in this migration scenario as defined by the Migration process provided. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii)When Microsoft is unable to complete the migration due to the customer&#39;s inaction, then the customer&#39;s subscription will expire on September 30, 2020.
-
-[3](#sdfootnote3anc) (i) Customers with Microsoft Power BI must take action in this migration scenario as defined by the Migration process provided. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii)When Microsoft is unable to complete the migration due to the customer&#39;s inaction, then the customer&#39;s subscription will expire on September 30, 2020.
+<table width="100%">
+<tbody>
+<tr>
+<td width="24%">
+<p>Step(s)</p>
+</td>
+<td width="26%">
+<p>Description</p>
+</td>
+<td width="24%">
+<p>Applies to</p>
+</td>
+<td width="25%">
+<p>Impact</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>We cannot migrate customers without consent.</p>
+</td>
+<td width="26%">
+<p>Microsoft gains the right to migrate in one of two ways, which enables Microsoft to orchestrate the transition of data and services to the Office 365 services instance.</p>
+<p>&nbsp;</p>
+<p>Admin <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/ms-cloud-germany-migration-opt-in?view=o365-worldwide">opts-in</a> to the Microsoft-driven migration.</p>
+<p>&nbsp;</p>
+<p>Customer renews any subscription in their Microsoft Cloud Deutschland tenant after May 1, 2020. We will notify these customers of the migration right each month, wait 30 days to give customers a chance to cancel, and then directly opt-in, tracked in ICM.</p>
+<p>&nbsp;</p>
+</td>
+<td width="24%">
+<p>All Office Customers</p>
+</td>
+<td width="25%">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tenant is marked as consented for migration and confirmation displayed in Admin Center.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Acknowledgment is posted to Cloud Germany Message Center Tenant / Service configuration continues from Microsoft Cloud Deutschland endpoints.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monitor Message Center for updates on Migration phase status.</p>
+</td>
+</tr>
+<tr>
+<td width="24%">
+<p>Subscription are Transferred and Licenses Re-Assigned</p>
+</td>
+<td width="26%">
+<p>After the tenant is transitioned to Office 365 services, corresponding Office 365 services subscriptions are purchased for transferred Microsoft Cloud Deutschland subscriptions. Users with Microsoft Cloud Deutschland licenses assigned will be assigned Office 365 services licenses. Legacy Microsoft Cloud Deutschland subscriptions are removed from the Office 365 services tenant on completion.</p>
+</td>
+<td width="24%">
+<p>All Office customers</p>
+</td>
+<td width="25%">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New Subscriptions in the Office 365 services will be purchased with the new term (monthly/quarterly/yearly) and the customer will receive prorated refund for the balance not used in Black Forest subscription.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Partner Black Forest Tenant will not be migrated. CSP Customers will be migrated to Office 365 services under new Office 365 services Tenant of the same Partner. After Customer migration the Partner can manage this customer only&nbsp; from the Office 365 services tenant.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Additional functionality available (e.g., Microsoft Planner, Microsoft Flo*w, etc) [Unless disabled by tenant admin, see <a href="https://docs.microsoft.com/en-us/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses">https://docs.microsoft.com/en-us/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses</a> for references on how to disable service plans assigned to users&rsquo; licenses].</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
 
