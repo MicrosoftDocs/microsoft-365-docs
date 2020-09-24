@@ -35,7 +35,7 @@ You can apply a pre-existing retention label to your document understanding mode
 
 1. On the model home page, select **Model settings**.</br>
 2. In **Model settings**, in the **Security and compliance** section, select the **Retention label** menu to see a list of retention labels that are available for your to apply to the model.</br>
- ![Retention label menu](../media/content-understanding/retention-label.png)</br> 
+ ![Retention label menu](../media/content-understanding/retention-labels-menu.png)</br> 
 3. Select the retention label you want to apply to the model, and then select **Save**.</br>
 
 After applying the retention label to your model, you are able to:
@@ -51,10 +51,15 @@ If your document understanding model has already been applied to a document libr
  ![Sync model](../media/content-understanding/sync-model.png)</br> 
 
 
-After applying the update, you can confirm that it has been applied by selecting your document library link and checking your document library view. In your document library view, select the information icon to check the model properties.  In the **Active models** list, select your updated model, and in the **Retention label** section you will see the name of the applied retention label.
+After applying the update and syncing it to your model, you can confirm that it has been applied by doing the following:
+
+1. In the content center, in the **Libraries with this model** section, click on the library to which your updated model was applied. </br>
+1. In your document library view, select the information icon to check the model properties.</br>  
+2. In the **Active models** list, select your updated model.</br>
+3. In the **Retention label** section you will see the name of the applied retention label.</br>
 
 
-Select the link to your document library. On the view page, a new **Retention label** column will display in your library view page.  As your model classifies files it identifies as belonging to it's content type and lists them in the library view, the Retention label column will also display the name of the retention label that has been applied to it through the model.
+On your model's view page in your document library, a new **Retention label** column will display.  As your model classifies files it identifies as belonging to it's content type and lists them in the library view, the Retention label column will also display the name of the retention label that has been applied to it through the model.
 
 
 For example, all *Insurance notice* documents that your model identifies will also have the *Business* retention label applied to them, preventing them from being deleted from the document library for five months. If an attempt is made to delete the file from the document library, an error will display saying it is not allowed because of the applied retention label.
