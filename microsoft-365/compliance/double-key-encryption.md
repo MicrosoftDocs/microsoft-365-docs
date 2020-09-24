@@ -33,7 +33,7 @@ For more information about the default, cloud-based tenant root keys, see [Plann
 
 ## When your organization should adopt DKE
 
-Double Key Encryption is intended for customers’ most sensitive data that is subject to the strictest protection requirements. It is not intended for all data, and in general, customers will be using Double Key Encryption to protect a very small part of their overall data. Microsoft 365 supports Double Key Encryption with the Azure Information Protection unified labeling client and Microsoft Information Protection labels. You should due diligence in identifying the right data to cover with this solution before you deploy. In some cases, you might need to narrow your deployment and make use of other solutions for the majority of your data such as Microsoft Information Protection with Microsoft-managed keys or BYOK. These solutions are probably sufficient for most of your documents which aren't subject to enhanced protections and regulatory requirements. These solutions also enable you to use the most powerful Office 365 services which aren't available to DKE encrypted content. For example:
+Double Key Encryption is intended for your most sensitive data that is subject to the strictest protection requirements. DKE is not intended for all data. In general, you'll be using Double Key Encryption to protect only a very small part of your overall data. You should do due diligence in identifying the right data to cover with this solution before you deploy. In some cases, you might need to narrow your scope and make use of other solutions for the majority of your data such as Microsoft Information Protection with Microsoft-managed keys or BYOK. These solutions are probably sufficient for most documents that aren't subject to enhanced protections and regulatory requirements. These solutions enable you to use the most powerful Office 365 services. Services that you can't use with DKE encrypted content. For example:
 
 - Transport rules including anti-malware and spam that require visibility into the attachment
 - Microsoft Delve
@@ -43,7 +43,7 @@ Double Key Encryption is intended for customers’ most sensitive data that is s
 
 Any external applications or services that are not integrated with DKE through the MIP SDK will be unable to perform actions on the encrypted data.
 
-The Microsoft Information Protection SDK 1.7+ supports Double Key Encryption; applications that integrate with our SDK will be able to reason over this data with sufficient permissions and integrations in place . 
+The Microsoft Information Protection SDK 1.7+ supports Double Key Encryption; applications that integrate with our SDK will be able to reason over this data with sufficient permissions and integrations in place.
 
 We recommend organizations use Microsoft Information protection capabilities (classification and labeling) to protect most of their sensitive data and only use DKE for their mission-critical data. Double Key Encryption is particularly relevant for extremely sensitive data in highly regulated industries such as Financial services and Healthcare.
 
@@ -53,7 +53,7 @@ If your organizations have any of the following requirements, you can use DKE to
 - You don't want Microsoft to have access to protected data on its own.
 - You have regulatory requirements to hold keys within a geographical boundary. All of the keys that you hold for data encryption and decryption are maintained in your data center.
 
-## System prerequisites and licensing requirements for DKE
+## System and licensing requirements for DKE
 
 **Double Key Encryption for Microsoft 365** comes with Microsoft 365 E5 and Office 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
@@ -91,28 +91,21 @@ Watch the [Double Key Encryption deployment video](https://youtu.be/vDWfHN_kygg)
 
 You'll follow these general steps to set up Double Key Encryption for your organization.
 
-1. [Install software prerequisites](#install-software-prerequisites)
+1. [Install software prerequisites for the DKE service](#install-software-prerequisites-for-the-dke-service)
 1. [Clone the Double Key Encryption GitHub repository](#clone-the-dke-github-repository)
 1. [Modify application settings](#modify-application-settings)
 1. [Generate test keys](#generate-test-keys)
 1. [Build the project](#build-the-project)
-1. [Publish the key store](#publish-the-key-store)
+1. [Deploy the DKE service and publish the key store](#deploy-the-dke-service-and-publish-the-key-store)
 1. [Validate your deployment](#validate-your-deployment)
 1. [Register your key store](#register-your-key-store)
-1. [Create sensitivity labels](#create-labels-using-dke)
+1. [Create sensitivity labels using DKE](#create-sensitivity-labels-using-dke)
 1. [Enable DKE in your client](#enable-dke-in-your-client)
 1. [Migrate protected files from HYOK labels to DKE labels](#migrate-protected-files-from-hyok-labels-to-dke-labels)
 
 When you're done, you can encrypt documents and files using DKE. For information, see [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
-### Install software prerequisites
-
-There are two types of software prerequisites for Double Key Encryption
-
-- [Double Key Encryption service prerequisites](#double-key-encryption-service-prerequisites)
-- [Double Key Encryption prerequisites for client computers](#double-key-encryption-prerequisites-for-client-computers)
-
-#### Double Key Encryption service prerequisites
+### Install software prerequisites for the DKE service
 
 Install these prerequisites on the computer where you want to install the DKE service.
 
@@ -527,7 +520,7 @@ To register the DKE service:
 
 Your DKE service is now registered. Continue by [creating labels using DKE](#create-labels-using-dke).
 
-## Create labels using DKE
+## Create sensitivity labels using DKE
 
 In the Microsoft 365 compliance center, create a new sensitivity label and apply encryption as you would otherwise. Select **Use Double Key Encryption** and enter the endpoint URL for your key.
 
