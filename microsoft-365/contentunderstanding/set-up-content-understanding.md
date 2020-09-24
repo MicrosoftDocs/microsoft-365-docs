@@ -86,7 +86,7 @@ To assign licenses
 
 4. Select **Intelligent Content Services**. Under **Apps**, make sure **Common Data Service for Intelligent Content Services** and **Intelligent Content Services** are both selected.
 
-    ![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/sharepoint-syntex-licenses.png)
+    ![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. Click **Save changes**.
 
