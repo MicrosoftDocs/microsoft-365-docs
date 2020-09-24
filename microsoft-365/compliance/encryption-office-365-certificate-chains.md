@@ -79,7 +79,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-256)** | 4348A0E9444C78CB265E058D5E8944B4D84F9662BD26DB257F8934A443C70161 |
 | **Pin (SHA-256)** | r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E= |
 
-## **DigiCert Global Root G2**
+### **DigiCert Global Root G2**
 
 | **Subject** | CN=DigiCert Global Root G2<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
@@ -197,7 +197,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **Pin (SHA-256)** | iie1VXtL7HzAMF+/PVPR9xzT80kQxdZeJ+zduCB3uj0= |
 | **CRL URLs** | http://crl.globalsign.net/root-r2.crl |
 
-## **GlobalSign**
+### **GlobalSign**
 
 | **Subject** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R3 |
 | --- | --- |
@@ -331,7 +331,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl4.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl3.digicert.com/DigiCertGlobalRootCA.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
-## **DigiCert SHA2 Extended Validation Server CA**
+### **DigiCert SHA2 Extended Validation Server CA**
 
 | **Subject** | CN=DigiCert SHA2 Extended Validation Server CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
@@ -492,7 +492,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl.globalsign.net/root.crl |
 | **OCSP URLs** | http://ocsp.globalsign.com/rootr1 |
 
-## **GlobalSign Organization Validation CA - SHA256 - G3**
+### **GlobalSign Organization Validation CA - SHA256 - G3**
 
 | **Subject** | CN=GlobalSign Organization Validation CA - SHA256 - G3<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
@@ -509,7 +509,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl.globalsign.com/root.crl |
 | **OCSP URLs** | http://ocsp.globalsign.com/rootr1 |
 
-## **GlobalSign RSA OV SSL CA 2018**
+### **GlobalSign RSA OV SSL CA 2018**
 
 | **Subject** | CN=GlobalSign RSA OV SSL CA 2018<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
@@ -545,7 +545,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl.identrust.com/DSTROOTCAX3CRL.crl |
 | **OCSP URLs** | http://isrg.trustid.ocsp.identrust.com |
 
-## **Microsoft Azure TLS Issuing CA 01**
+### **Microsoft Azure TLS Issuing CA 01**
 
 | **Subject** | CN=Microsoft Azure TLS Issuing CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -562,7 +562,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
-## **Microsoft Azure TLS Issuing CA 02**
+### **Microsoft Azure TLS Issuing CA 02**
 
 | **Subject** | CN=Microsoft Azure TLS Issuing CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -579,7 +579,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
-## **Microsoft Azure TLS Issuing CA 05**
+### **Microsoft Azure TLS Issuing CA 05**
 
 | **Subject** | CN=Microsoft Azure TLS Issuing CA 05<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -596,7 +596,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
-## **Microsoft Azure TLS Issuing CA 06**
+### **Microsoft Azure TLS Issuing CA 06**
 
 | **Subject** | CN=Microsoft Azure TLS Issuing CA 06<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -685,7 +685,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl3.digicert.com/Omniroot2025.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
-## **Microsoft RSA TLS CA 01**
+### **Microsoft RSA TLS CA 01**
 
 | **Subject** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -702,7 +702,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl3.digicert.com/Omniroot2025.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
-## **Microsoft RSA TLS CA 02**
+### **Microsoft RSA TLS CA 02**
 
 | **Subject** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |

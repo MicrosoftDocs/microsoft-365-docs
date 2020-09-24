@@ -83,7 +83,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-256)** | 4348A0E9444C78CB265E058D5E8944B4D84F9662BD26DB257F8934A443C70161 |
 | **Pin (SHA-256)** | r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E= |
 
-## **DigiCert Global Root G2**
+### **DigiCert Global Root G2**
 
 | **Subject** | CN=DigiCert Global Root G2<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
@@ -127,7 +127,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-1)** | 7E2F3A4F8FE8FA8A5730AECA029696637E986F3F |
 | **Thumbprint (SHA-256)** | 403E062A2653059113285BAF80A0D4AE422C848C9F78FAD01FC94BC5B87FEF1A |
 
-## **DigiCert SHA2 Secure Server CA**
+### **DigiCert SHA2 Secure Server CA**
 
 | **Subject** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
@@ -256,7 +256,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl.entrust.net/g2ca.crl |
 | **OCSP URLs** | http://ocsp.entrust.net |
 
-## **Microsoft Azure TLS Issuing CA 01**
+### **Microsoft Azure TLS Issuing CA 01**
 
 | **Subject** | CN=Microsoft Azure TLS Issuing CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -273,7 +273,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
-## **Microsoft Azure TLS Issuing CA 02**
+### **Microsoft Azure TLS Issuing CA 02**
 
 | **Subject** | CN=Microsoft Azure TLS Issuing CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -290,7 +290,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
-## **Microsoft Azure TLS Issuing CA 05**
+### **Microsoft Azure TLS Issuing CA 05**
 
 | **Subject** | CN=Microsoft Azure TLS Issuing CA 05<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -307,7 +307,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
-## **Microsoft Azure TLS Issuing CA 06**
+### **Microsoft Azure TLS Issuing CA 06**
 
 | **Subject** | CN=Microsoft Azure TLS Issuing CA 06<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -396,7 +396,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl3.digicert.com/Omniroot2025.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
-## **Microsoft RSA TLS CA 01**
+### **Microsoft RSA TLS CA 01**
 
 | **Subject** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -413,7 +413,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **CRL URLs** | http://crl3.digicert.com/Omniroot2025.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
-## **Microsoft RSA TLS CA 02**
+### **Microsoft RSA TLS CA 02**
 
 | **Subject** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
