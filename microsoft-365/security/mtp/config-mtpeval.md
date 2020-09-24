@@ -249,7 +249,7 @@ For a more comprehensive guidance, see [Turn on Microsoft Threat Protection](mtp
 
 Congratulations! You've just created your Microsoft Threat Protection trial lab or pilot environment! 
 
-Now you can familiarize yourself with the Microsoft Threat Protection user interface! See the following Microsoft Threat Protection interactive guide to learn from and know how to use each dashboard for your day-to-day security operation tasks: 
+Now you can familiarize yourself with the Microsoft Threat Protection user interface! See the following Microsoft Threat Protection interactive guide to learn from and know how to use each dashboard elements for your day-to-day security operation tasks: 
 
 >[!VIDEO https://aka.ms/MTP-Interactive-Guide]
 
