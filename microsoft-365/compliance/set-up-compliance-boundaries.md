@@ -50,14 +50,6 @@ Here's the process for setting up compliance boundaries:
 [Step 4: Create a search permissions filter to enforce the compliance boundary](#step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
 
 [Step 5: Create an eDiscovery case for an intra-agency investigations](#step-5-create-an-ediscovery-case-for-intra-agency-investigations)
-  
-## Before you set up compliance boundaries
-
-You have to meet the following prerequisites before the attribute that you identity (in Step 1) can be successfully synched to user's OneDrive account (in Step 2):
-
-- Users must be assigned Exchange Online and SharePoint Online licenses.
-
-- User mailboxes and OneDrive accounts must be at least 10 MB in size. If mailbox and OneDrive locations are less than 10 MB, the attribute used to define your agencies won't be synched to those users.
 
 ## Step 1: Identify a user attribute to define your agencies
 
