@@ -46,25 +46,24 @@ Safe Links protection is available in the following locations:
 
   For more information about Safe Links protection in Teams, see the [Safe Links settings for Microsoft Teams](#safe-links-settings-for-microsoft-teams) section later in this topic.
 
-- **Office documents**: Safe Links protection for Office is available in Microsoft 365 Apps for enterprise or Business Premium desktop clients, web, and mobile apps. Safe Links protection in Office documents does not depend on Safe Links policies. You enable, disable, and configure the settings globally for all recipients in your organization. For instructions, see .
+- **Office documents**: Safe Links protection for Office documents is available in Microsoft 365 Apps for enterprise or Business Premium desktop clients, web, and mobile apps. **Turning on** Safe Links protection for Office documents is a global setting that you configure **outside** of Safe Links policies themselves. For instructions, see .
+
+  But, the **application** of Safe Links protection for Office documents requires a user to be in included in at least one Safe Links policy. In other words, when Safe Links protection for Office documents is turned on globally, the protection is applied to all users that are included in any Safe Links policies. The protection is not applied to users who aren't included in Safe Links policies.
 
   For more information about the requirements and settings that are available in Safe Links for Office documents, see the [Safe Links settings for Office documents](#safe-links-settings-for-office-documents) section later in this article.
 
-You can categorize the settings for Safe Links protection into two different areas:
+You can pivot and categorize Safe Links settings into the following areas:
 
-- **Settings in Safe Links policies**: These settings apply only to the users who are included in the policies. As previously described, there is no default Safe Links policy, so you need to create Safe Links policies for users to get these protections. These settings include:
+- **Settings in Safe Links policies**: These settings apply only to the users who are included in the specific policies where the settings are configured. As previously described, there is no default Safe Links policy, so you need to create Safe Links policies for users to get these protections. These settings include:
 
   - [Safe Links settings for email messages](#safe-links-settings-for-email-messages)
   - [Safe Links settings for Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - [Always allowed URLs for Safe Links](#always-allowed-urls-for-safe-links)
 
-- **Global Safe Links settings**: These settings apply to the entire organization. Global Safe Links settings do not involve Safe Links policies, and can be configured independently. These settings include:
+- **Global Safe Links settings**: These settings are configured globally, not in Safe Links policies themselves. The settings apply to all users that are included in Safe Links policies. These settings include:
 
   - [Safe Links settings for Office documents](#safe-links-settings-for-office-documents)
   - [Always blocked URLs for Safe Links](#always-blocked-urls-for-safe-links)
-
-  > [!NOTE]
-  > Safe Documents settings are available in the same location as the global Safe Links settings, but Safe Documents protection has no direct relationship to Safe Links protection in Office 365 ATP. For more information, see [Safe Documents in Microsoft 365 E5](safe-docs.md).
 
 The following table describes scenarios for Safe Links in Microsoft 365 and Office 365 organizations that include ATP (in other words, lack of licensing is never an issue in the examples).
 
@@ -72,15 +71,15 @@ The following table describes scenarios for Safe Links in Microsoft 365 and Offi
 
 |Scenario|Result|
 |---|---|
-|Jean is a member of the marketing department. Safe Links protection for Office documents is enabled in Jean's organization, and a Safe Links policy that applies to members of the marketing department exists. Jean opens a PowerPoint presentation in an email message, and then clicks a URL in the presentation.|Jean is protected by Safe Links. <br/><br/> The Safe Links policies apply to Jean's email messages. The global Safe Links settings apply to Word, Excel, PowerPoint, or Visio documents that Jean opens, so long as Jean is signed in and using Microsoft 365 Apps for enterprise on Windows, iOS, or Android devices.|
+|Jean is a member of the marketing department. Safe Links protection for Office documents is turned on in Jean's organization, and a Safe Links policy that applies to members of the marketing department exists. Jean opens a PowerPoint presentation in an email message, and then clicks a URL in the presentation.|Jean is protected by Safe Links in Office documents. <br/><br/> Jean is included in a Safe Links policy, and Safe Links protection for Office documents is turned on. <br/><br/> For more information about the user and client requirements for Safe Links protection in Office documents, see the [Safe Links settings for Office documents](#safe-links-settings-for-office-documents) section later in this article.|
 |Chris's Microsoft 365 E5 organization has no Safe Links policies configured. Chris receives an email that contains a URL to a malicious website that he ultimately clicks.|Chris is not protected by Safe Links. <br/><br/> An admin must create at least one Safe Links policy for Safe Links protection in email messages to be active. Furthermore, the conditions of the policy must include Chris if Chris's incoming email is to be protected by Safe Links.|
-|In Pat's organization, no admins have created any Safe Links policies. Pat opens a Word document and clicks a URL in the file.|No. A policy that includes Office documents must be defined in order for protection to be in place. See [Set up ATP Safe Links policies in Office 365](set-up-atp-safe-links-policies.md).|
-|The Safe Links configuration in Lee's organization identifies <https://tailspintoys.com> as an always blocked website. Lee receives an email message that contains the URL <https://tailspintoys.com/aboutus/trythispage>. Lee clicks the URL.|The URL may or may not be automatically blocked for Lee. It depends on whether the entry for <https://tailspintoys.com> includes the entire site and all subpages, or just the parent site itself. For more information, see the  [Always blocked URLs for Safe Links](#always-blocked-urls-for-safe-links) section later in this topic.|
+|In Pat's organization, no admins have created any Safe Links policies, but Safe Links protection for Office documents is turned on. Pat opens a Word document and clicks a URL in the file.|Pat is not protected by Safe Links. <br/><br/> Although Safe Links protection for Office documents is turned on globally, no Safe Links policies are applied to Pat, so the protection can't be applied.|
+|In Lee's organization, <https://tailspintoys.com> is as a blocked website in the global Safe Links settings. A Safe Links policy that includes Lee already exists. Lee receives an email message that contains the URL <https://tailspintoys.com/aboutus/trythispage>. Lee clicks the URL.|The URL may or may not be automatically blocked for Lee. <br/><br/> Whether the link is blocked depends on the entry for <https://tailspintoys.com> in the block list. Does it include the entire site and all subpages, or just the parent site itself? For more information, see the  [Always blocked URLs for Safe Links](#always-blocked-urls-for-safe-links) section later in this topic.|
 |Jamie and Julia both work for contoso.com. A long time ago, admins configured Safe Links policies that apply to both of Jamie and Julia. Jamie sends an email to Julia, not knowing that the email contains a malicious URL.|Julia is protected by Safe Links **if** the Safe Links policy that applies to her is configured to apply to messages between internal recipients. For more information, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this topic.|
 
 ## Safe Links settings for email messages
 
-Safe Links settings in Safe Links policies that apply to email messages are described in the following list:
+Settings in Safe Links policies that apply to email messages are described in the following list:
 
 - **Select the action for unknown potentially malicious URLs in messages**: This setting enables or disables Safe Links scanning in email messages. When this setting is turned on, URLs are rewritten and checked against a list of known malicious links when the user clicks the link. The recommended value is **On**.
 
@@ -160,9 +159,9 @@ The following settings in Safe Links policies that apply to links in email messa
 
 ## Safe Links settings for Office documents
 
-As described earlier, Safe Links protection for links in Office documents don't depend on Safe Links policies. When enabled, these settings apply to all recipients in your organization. **Note that Safe Links for Office documents is enabled by default**.
+As described earlier, you turn on or turn off Safe Links protection for Office documents globally and outside of Safe Links policies. Yet, in order for the protection to be applied, the user who opens the Office document must be included in a Safe Links policy.
 
-Safe Links protection for Office documents has the following requirements:
+Safe Links protection for Office documents has the following client requirements:
 
 - Microsoft 365 client apps are configured to use Modern Authentication. For more information, see [Modern Authentication for Office 2016](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).
 
@@ -181,13 +180,13 @@ The following settings are available in Safe Links for Office documents:
 
 - **Do not track when users click safe links**: Enables or disables tracking of user clicks related to blocked URLs in Office documents. The recommended value for this setting is Off.
 
-- **Do not let users click through safe links to original URL**: Allows or blocks users from clicking through to the original blocked URL. The default and recommended value for this setting is On.
+- **Do not let users click through safe links to original URL**: Allows or blocks users from clicking through to the original blocked URL in Office documents. The default and recommended value for this setting is On.
 
 For more information about the recommended values for Standard and Strict policy settings, see [Safe Links policy settings in custom policies for specific users](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users).
 
 ### How Safe Links works in Office documents
 
-At a high level, here's how Safe Links protection works for URLs in Office documents. The supported versions of Office and the supported Office apps are described in the previous [Safe Links settings for Office documents](#safe-links-settings-for-office-documents) section.
+At a high level, here's how Safe Links protection works for URLs in Office documents. The supported versions of Office and the supported Office apps are described in the previous section.
 
 1. A user who is signed in to Office 365 Enterprise using their work or school account opens a supported Office document and clicks a link in the document.
 
