@@ -57,9 +57,6 @@ You have to meet the following prerequisites before the attribute that you ident
 
 - Users must be assigned Exchange Online and SharePoint Online licenses.
 
-   > [!NOTE]
-   > If a user's Exchange Online license is removed or if the user account is deleted, the attribute used to define your agencies will no longer be synched for that user (even if the mailbox is on hold when it's deleted). This means that compliance boundaries don't support [inactive mailboxes](inactive-mailboxes-in-office-365.md).
-
 - User mailboxes and OneDrive accounts must be at least 10 MB in size. If mailbox and OneDrive locations are less than 10 MB, the attribute used to define your agencies won't be synched to those users.
 
 ## Step 1: Identify a user attribute to define your agencies
