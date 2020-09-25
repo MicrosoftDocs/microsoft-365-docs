@@ -25,7 +25,7 @@ ms.collection:
 >
 > *Service description for: [Microsoft 365 Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Double Key Encryption (DKE) uses two keys together to access protected content. Microsoft stores one key in Microsoft Azure, and you hold the other key. The Azure Information Protection unified labeling client protects highly sensitive content. You maintain full control of one of your keys using the Double Key Encryption service.
+Double Key Encryption (DKE) uses two keys together to access protected content. Microsoft stores one key in Microsoft Azure, and you hold the other key. You maintain full control of one of your keys using the Double Key Encryption service. You apply protection using The Azure Information Protection unified labeling client to your highly sensitive content.
 
 Double Key Encryption supports both cloud and on-premises deployments. These deployments help to ensure that encrypted data remains opaque wherever you store the protected data.
 
@@ -33,7 +33,7 @@ For more information about the default, cloud-based tenant root keys, see [Plann
 
 ## When your organization should adopt DKE
 
-Double Key Encryption is intended for your most sensitive data that is subject to the strictest protection requirements. DKE is not intended for all data. In general, you'll be using Double Key Encryption to protect only a very small part of your overall data. You should do due diligence in identifying the right data to cover with this solution before you deploy. In some cases, you might need to narrow your scope and make use of other solutions for the majority of your data such as Microsoft Information Protection with Microsoft-managed keys or BYOK. These solutions are probably sufficient for most documents that aren't subject to enhanced protections and regulatory requirements. These solutions enable you to use the most powerful Office 365 services. Services that you can't use with DKE encrypted content. For example:
+Double Key Encryption is intended for your most sensitive data that is subject to the strictest protection requirements. DKE is not intended for all data. In general, you'll be using Double Key Encryption to protect only a very small part of your overall data. You should do due diligence in identifying the right data to cover with this solution before you deploy. In some cases, you might need to narrow your scope and make use of other solutions for the majority of your data such as Microsoft Information Protection with Microsoft-managed keys or BYOK. These solutions are sufficient for documents that aren't subject to enhanced protections and regulatory requirements. Also, these solutions enable you to use the most powerful Office 365 services; services that you can't use with DKE encrypted content. For example:
 
 - Transport rules including anti-malware and spam that require visibility into the attachment
 - Microsoft Delve
@@ -412,7 +412,7 @@ DKE is deployed and you can browse to the test keys you've created. Continue to 
 
 #### Publish via FTP
 
-1. Connect to the App Service you created [above](#publish-the-key-store).
+1. Connect to the App Service you created [above](#deploy-the-dke-service-and-publish-the-key-store).
 
     In your browser, go to: **Azure portal** > **App Service** > **Deployment Center** > **Manual Deployment** > **FTP** > **Dashboard**.
 
@@ -518,7 +518,7 @@ To register the DKE service:
 
     4. Select **Save** at the top to save your changes.
 
-Your DKE service is now registered. Continue by [creating labels using DKE](#create-labels-using-dke).
+Your DKE service is now registered. Continue by [creating labels using DKE](#create-sensitivity-labels-using-dke).
 
 ## Create sensitivity labels using DKE
 
