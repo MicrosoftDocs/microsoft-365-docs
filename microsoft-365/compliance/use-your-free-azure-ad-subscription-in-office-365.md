@@ -25,7 +25,7 @@ If your organization has a paid subscription to Microsoft 365, Microsoft Dynamic
 
 ## Open a private browsing session
 
-Use a private browsing session (not a regular session) to access the Azure portal (in step 1 below) because this prevents the credentials that you're currently logged on with from being passed to Azure. To open an private browsing session:
+Use a private browsing session (not a regular session) to access the Azure portal (in step 1 below). This prevents the credentials that you're currently logged on with from being passed to Azure. To open a private browsing session:
 
 - In Microsoft Edge (legacy version), Internet Explorer, or Mozilla FireFox, press `CTRL+SHIFT+P`.
 
@@ -43,7 +43,7 @@ Use a private browsing session (not a regular session) to access the Azure porta
 
 ## More information
 
-- A free Azure Active Directory subscription does not include the Sign-ins activity report. To record sign-in activity (which can be useful in the event of a data breach), you need an Azure Active Directory Premium subscription. For more information, see [How long does Azure AD store the data?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+- A free Azure Active Directory subscription does not include the Sign-ins activity report. To record sign-in activity (which can be useful in a data breach), you need an Azure Active Directory Premium subscription. For more information, see [How long does Azure AD store the data?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 - You can also access the **Azure Active Directory** admin center from the Microsoft 365 admin center. In the left navigation pane of the Microsoft 365 admin center, click **Admin centers** \> **Azure Active Directory**.
 

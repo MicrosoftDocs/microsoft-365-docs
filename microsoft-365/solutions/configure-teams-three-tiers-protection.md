@@ -14,7 +14,9 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-overview
+- m365solution-securecollab
 ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
@@ -35,11 +37,8 @@ The configurations in this article align with Microsoft's recommendations for th
 
 - Highly sensitive protection
 
-For more information about these tiers and capabilities recommended for each tier, see the following resources.
+For more information about these tiers and capabilities recommended for each tier, see [Microsoft cloud for enterprise architects illustrations](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
 
-- [Identity and Device Protection for Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#identity-and-device-protection-for-office-365)
-
-- [File Protection Solutions in Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#file-protection-solutions-in-office-365)
 
 ## Three tiers at a glance
 

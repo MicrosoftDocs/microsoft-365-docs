@@ -265,7 +265,7 @@ Keep the following in mind when using search conditions.
     
 - You can use the drag and drop control to resequence the order of conditions. Click on the control for a condition and move it up or down.
     
-- As previously explained, some condition properties allow you to type multiple values. Each value is logically connected by the **OR** operator. This results in the same logic as having multiple instances of the same condition, where each has a single value. The following illustrations show an example of a single condition with multiple values and an example of multiple conditions (for the same property) with a single value. Both examples result in the same query:  `(filetype="docx") OR (filetype="pptx") OR (filetype="xlsx")`
+- As previously explained, some condition properties allow you to type multiple values. Each value is logically connected by the **OR** operator. This results in the same logic as having multiple instances of the same condition, where each has a single value. The following illustrations show an example of a single condition with multiple values and an example of multiple conditions (for the same property) with a single value. Both examples result in the same query:  `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)`
     
     ![One condition with multiple values](../media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
   
@@ -304,11 +304,11 @@ This example returns email items or documents that contain the keyword "report",
   
  **Search query syntax**
   
- `report(c:c)(date<2016-04-01)(subjecttitle:"northwind")(-filetype="aspx")`
+ `report(c:c)(date<2016-04-01)(subjecttitle:"northwind")(-filetype:aspx)`
   
  **Search query logic**
   
- `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype="aspx")`
+ `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
   
 #### Example 3
 

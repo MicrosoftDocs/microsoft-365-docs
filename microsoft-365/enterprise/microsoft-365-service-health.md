@@ -22,7 +22,7 @@ description: "Microsoft 365 service health status"
 
 Due to the increased demand for Microsoft's cloud services during the COVID-19 crisis, we are providing information about the health of Microsoft's global network as well as information about network quality issues that our customers might experience but that we don't control.
 
-This information includes network issues that affect all of our software as service offerings, including Office 365.
+This information includes network issues that affect all of our software as service offerings, including Microsoft 365.
 
 _There might be delays in the updates to this page. We are updating it manually while we build a more automated solution._
 
@@ -38,6 +38,6 @@ When we detect significant issues within Microsoft's global network or with inte
 
 Use these resources to improve your network utilization for Microsoft services.
 
-- [Optimize Office 365 connectivity for remote users using VPN split tunneling](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)
-- [Office 365 principles of network connectivity](https://aka.ms/pnc)
+- [Optimize Microsoft 365 connectivity for remote users using VPN split tunneling](microsoft-365-vpn-split-tunnel.md)
+- [Microsoft 365 principles of network connectivity](https://aka.ms/pnc)
 - [Working remotely using Azure Networking services](https://docs.microsoft.com/azure/networking/working-remotely-support)

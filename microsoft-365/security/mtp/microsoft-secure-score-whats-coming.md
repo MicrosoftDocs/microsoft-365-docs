@@ -1,5 +1,5 @@
 ---
-title: What's coming to Microsoft Secure Score?
+title: What's coming to Microsoft Secure Score
 description: Describes what new changes are coming to Microsoft Secure Score in the Microsoft 365 security center.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: microsoft-365-enterprise
@@ -19,23 +19,23 @@ search.appverid:
 - MET150
 ---
 
-# What's coming to Microsoft Secure Score?
+# What's coming to Microsoft Secure Score
 
-To make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
 
-## August 2020
+We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
 
-### Add improvement actions for Azure Advanced Threat Protection
+## Proposed changes
 
-- Risky lateral movement paths
-- Unsecure account attributes
-- Enable security features on Active Directory trusts
-- Remove unsecure SID history attributes from entities
+### October 2020
+
+#### Remove improvement action for Microsoft Defender Advanced Threat Protection
+- Set Microsoft Defender SmartScreen Windows Store app web content checking to warn
 
 ## Related resources
 
 - [Microsoft Secure Score overview](microsoft-secure-score.md)
-- [Gain visibility into your security posture](microsoft-secure-score-improvement-actions.md)
+- [Assess your security posture](microsoft-secure-score-improvement-actions.md)
 - [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
+- [What's new](microsoft-secure-score-whats-new.md)

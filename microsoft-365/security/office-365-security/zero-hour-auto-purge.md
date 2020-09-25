@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -24,6 +24,9 @@ description: "Admins can learn about how zero-hour auto purge (ZAP) can retroact
 ---
 
 # Zero-hour auto purge (ZAP) in Exchange Online
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## Basic features of ZAP
 

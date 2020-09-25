@@ -20,6 +20,9 @@ ms.custom: seo-marvel-apr2020
 ---
 # Detect and Remediate Illicit Consent Grants
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 **Summary**  Learn how to recognize and remediate the illicit consent grants attack in Office 365.
 
 ## What is the illicit consent grant attack in Office 365?
@@ -48,11 +51,11 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 5. Click on the result to see the details of the activity. Click **More Information** to get details of the activity. Check to see if IsAdminContent is set to True.
 
 > [!NOTE]
-> 
+>
 > It can take from 30 minutes up to 24 hours for the corresponding audit log entry to be displayed in the search results after an event occurs.
-> 
+>
 > The length of time that an audit record is retained and searchable in the audit log depends on your Microsoft 365 subscription, and specifically the type of the license that is assigned to a specific user. For more information, see [Audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md).
-> 
+>
 > If this value is true, it indicates that someone with Global Administrator access may have granted broad access to data. If this is unexpected, take steps to [confirm an attack](#how-to-confirm-an-attack).
 
 ## How to confirm an attack

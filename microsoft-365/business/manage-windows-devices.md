@@ -45,8 +45,7 @@ See [Synchronize domain users to Microsoft](manage-domain-users.md) for the step
 
 ## 1. Verify MDM Authority in Intune
 
-Go to portal.azure.com and on the top of the page search for Intune.
-On the Microsoft Intune page, select **Device enrollment** and on the **Overview** page make sure **MDM authority** is **Intune**.
+Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview) and on the Microsoft Intune page, select **Device enrollment**, then on the **Overview** page, make sure **MDM authority** is **Intune**.
 
 - If **MDM authority** is **None**, click the **MDM authority** to set it to **Intune**.
 - If **MDM authority** is **Microsoft Office 365**,go to **Devices** > **Enroll devices** and use the **Add MDM authority** dialog on the right to add **Intune MDM** authority (the **Add MDM Authority** dialog is only available if the **MDM Authority** is set to Microsoft Office 365).
@@ -72,44 +71,32 @@ On the Microsoft Intune page, select **Device enrollment** and on the **Overview
         -  Add the desired domain users synced in Azure AD to a [security group](../admin/create-groups/create-groups.md).
         -  Choose **Select groups** to enable MDM user scope for that security group.
 
-## 4. Set up Service connection point (SCP)
+## 4. Create the required resources 
 
-These steps are simplified from [configure hybrid azure AD join](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join). To complete the steps you need to use Azure AD Connect and your Microsoft 365 Business Premium global admin and Active Directory admin passwords.
+Performing the required tasks to [configure hybrid Azure AD join](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) has been simplified through the use of the [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) cmdlet found in the [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell module. When you invoke this cmdlet it will create and configure the required service connection point and group policy.
 
-1.	Start Azure AD Connect, and then select **Configure**.
-2.	On the **Additional tasks**  page, select **Configure device options**, and then select **Next**.
-3.	On the **Overview** page, select **Next**.
-4.	On the **Connect to Azure AD** page, enter the credentials of a global administrator for Microsoft 365 Business Premium.
-5.	On the **Device options** page, select **Configure Hybrid Azure AD join**, and then select **Next**.
-6.	On the **SCP** page, for each forest where you want Azure AD Connect to configure the SCP, complete the following steps, and then select **Next**:
-    - Check the box beside the forest name. The forest should be your AD domain name.
-    - Under the **Authentication Service** column, open the dropdown and select matching domain name (there should only be one only option).
-    - Select **Add** to enter the domain administrator credentials.  
-7.	On the **Device operating systems** page, select Windows 10 or later domain-joined devices only.
-8.	On the **Ready to configure** page, select **Configure**.
-9.	On the **Configuration complete** page, select **Exit**.
+You can install this module by invoking the following from an instance of PowerShell:
 
-
-## 5. Create a GPO for Intune Enrollment – ADMX method
-
-Use .ADMX template file.
-
-1.	Log on to AD server, search and open **Server Manager** > **Tools** > **Group Policy Management**.
-2.	Select your domain name under **Domains** and right-click **Group Policy Objects** to select **New**.
-3.	Give the new GPO an name, for example “*Cloud_Enrollment*” and then select **OK**.
-4.	Right-click the new GPO under **Group Policy Objects** and select **Edit**.
-5.	In the **Group Policy Management Editor**, go to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM**.
-6. Right-click **Enable automatic MDM enrollment using default Azure AD credentials** and then select **Enabled** > **OK**. Close the editor window.
+```powershell
+Install-Module SecMgmt
+```
 
 > [!IMPORTANT]
-> If you do not see the policy **Enable automatic MDM enrollment using default Azure AD credentials**, see [Get the latest Administrative Templates](#get-the-latest-administrative-templates).
+> It is recommended that you install this module on the Windows Server running Azure AD Connect.
 
-## 6. Deploy the Group Policy
+To create the required service connection point and group policy, you will invoke the  [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) cmdlet. You will need your Microsoft 365 Business Premium global admin credentials when performing this task. When you are ready to create the resources, invoke the following:
 
-1.	In the Server Manager, under **Domains** > Group Policy objects, select the GPO from Step 3 above, for example “Cloud_Enrollment”.
-2.	Select the **Scope** tab for your GPO.
-3.	In the GPO’s Scope tab, right-click the link to the domain under **Links**.
-4.	Select **Enforced** to deploy the GPO and then **OK** in the confirmation screen.
+```powershell
+PS C:\> Connect-SecMgmtAccount
+PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device Management'
+```
+
+The first command will establish a connection with the Microsoft cloud, and when you are prompted, specify your Microsoft 365 Business Premium global admin credentials.
+
+## 5. Link the Group Policy
+
+1. In the Group Policy Management Console (GPMC), right-click on the location where you want to link the policy and select *Link an existing GPO...* from the context menu.
+2. Select the policy created in the above step, then click **OK**.
 
 ## Get the latest Administrative Templates
 
@@ -124,4 +111,3 @@ If you do not see the policy **Enable automatic MDM enrollment using default Azu
 6.	Restart the Primary Domain Controller for the policy to be available. This procedure will work for any future version as well.
 
 At this point you should be able to see the policy **Enable automatic MDM enrollment using default Azure AD credentials** available.
-

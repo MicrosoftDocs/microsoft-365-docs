@@ -13,7 +13,6 @@ localization_priority: Priority
 ms.collection: 
 - Strat_O365_Enterprise
 - M365-subscription-management
-- M365solutions
 ms.custom:
 description: How a fictional but representative global organization has deployed Microsoft 365 solutions.
 ---

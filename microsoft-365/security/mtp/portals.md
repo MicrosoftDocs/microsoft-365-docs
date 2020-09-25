@@ -17,6 +17,9 @@ search.appverid: met150
 ---
 
 # Microsoft security portals and admin centers
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 While [Microsoft 365 security center](overview-security-center.md) is the new home for monitoring and managing security across your identities, data, devices, and apps, you will need to access various portals for certain specialized tasks.
 
 > [!TIP] 
@@ -48,4 +51,4 @@ While these portals are not specifically for managing security, they support var
 | Microsoft 365 compliance center | Manage data handling policies and ensure [compliance with regulations](https://docs.microsoft.com/microsoft-365/compliance/offering-home?view=o365-worldwide) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
 | Microsoft 365 admin center | Configure Microsoft 365 services; manage roles, licenses, and track updates to your Microsoft 365 services | [admin.microsoft.com](https://admin.microsoft.com/) |
 | Microsoft Endpoint Manager admin center | Use [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/configmgr/) to manage and secure devices using combined Intune and Configuration Manager capabilities | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
-| Microsoft Intune portal | Use [Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune) to deploy device policies and monitor devices for compliance | [portal.azure.com/#blade/Microsoft_Intune_DeviceSettings](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)
+| Microsoft Intune portal | Use [Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune) to deploy device policies and monitor devices for compliance | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)

@@ -3,7 +3,7 @@ title: Go to the Action center to view and approve your automated investigation 
 description: Use the Action Center to view details about automated investigation and approve pending actions
 keywords: Action Center, threat protection, investigation, alert, pending, automated, detection
 search.appverid: met150
-ms.prod: M365-security-compliance
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,9 +18,14 @@ ms.collection:
 - M365-security-compliance 
 ms.topic: conceptual
 ms.custom: autoir
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
 ---
 
 # The Action center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 - Microsoft Threat Protection
@@ -61,6 +66,20 @@ Your security operations team can operate more effectively and efficiently, beca
 > [!TIP]
 > If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
+## Available actions
+
+As remediation actions are taken, they're listed on the History tab in the Action center. Such actions include the following:
+
+- Collect investigation package 
+- Isolate device (this action can be undone) 
+- Offboard machine 
+- Release code execution 
+- Release from quarantine 
+- Request sample 
+- Restrict code execution (this action can be undone) 
+- Run antivirus scan 
+- Stop and quarantine 
+
 ## Required permissions for Action center tasks
 
 To approve or reject pending actions in the Action center, you must have permissions assigned as listed in the following table:
@@ -75,9 +94,6 @@ To approve or reject pending actions in the Action center, you must have permiss
 
 ## Next steps 
 
-- [Learn more about incidents in Microsoft Threat Protection](incidents-overview.md)
-
+- [Approve or reject pending actions following an automated investigation](mtp-autoir-actions.md)
 - [View the results of an automated investigation](mtp-autoir-results.md)
-
-- [Learn about hunting in Microsoft Threat Protection](advanced-hunting-overview.md)
 

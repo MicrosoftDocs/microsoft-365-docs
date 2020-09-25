@@ -3,7 +3,7 @@ title: General Data Protection Regulation
 description: Learn about Microsoft technical guidance and find helpful information for the General Data Protection Regulation (GDPR).
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -51,6 +51,10 @@ The following tasks are involved to meet GDPR standards. Follow the links in the
 - **[Data protection impact assessment (DPIA)](gdpr-data-protection-impact-assessments.md)**. Data controllers are required under GDPR to prepare a DPIA for data operations that are 'likely to result in a high risk to the rights and freedoms of natural persons.'
 
 As mentioned above, the Recommended action plan for GDPR and Accountability Readiness Checklists provide a guide to implementing or assessing GDPR conformance using Microsoft products and services.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager has a pre-built assessment for this regulation for Enterprise E5 customers. Find the template for building the assessment in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Data Subject Request (DSR)
 
@@ -172,7 +176,7 @@ Microsoft has policies and procedures in place to notify you promptly. To satisf
 
 ## Accountability Readiness Checklists for the GDPR
 
-These [checklists](gdpr-arc.md) provide a convenient way to access information you may need to support the GDPR using Microsoft products. You can manage checklist items with [Microsoft Compliance Score](compliance-score.md) by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile.
+These [checklists](gdpr-arc.md) provide a convenient way to access information you may need to support the GDPR using Microsoft products. You can manage checklist items with [Microsoft Compliance Manager](compliance-manager.md) by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile.
 
 ## GDPR FAQs
 
@@ -204,7 +208,7 @@ Microsoft has long used the Standard Contractual Clauses (also known as the Mode
 
 **What are the other Microsoft compliance offerings?**
 
-As a global company with customers in nearly every country in the world, Microsoft has a robust compliance portfolio to assist our customers. To view a complete list of our compliance offerings including FedRamp, HIPAA/HITECH, ISO 27001, ISO 27002, ISO 27018, NIST 800-171, UK G-Cloud, and many others visit our [compliance offering topics](offering-home.md).
+As a global company with customers in nearly every country in the world, Microsoft has a robust compliance portfolio to assist our customers. To view a complete list of our compliance offerings including FedRamp, HIPAA/HITECH, ISO 27001, ISO 27002, ISO 27018, NIST 800-171, UK G-Cloud, and many others visit our [compliance offering topics](offering-home.yml).
 
 **How will GDPR affect my company?**
 

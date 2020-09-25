@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
@@ -15,6 +15,9 @@ description: "Admins can learn how to assign or remove permissions in the Exchan
 ---
 
 # Manage role groups in standalone EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can use the Exchange admin center (EAC) to add users to role groups. Adding a users to a role group gives the user permissions to do specific admin tasks. You can also remove users from role groups.
 
@@ -81,7 +84,7 @@ The same options are available when you modify role groups as when you create ro
 
 1. In the EAC, go to **Permissions** \> **Admin roles**, select the role group that you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).
 
-2. In the role group properties page that opens, in the **Memebers** section, do either of the following steps:
+2. In the role group properties page that opens, in the **Members** section, do either of the following steps:
 
    - Click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png). In the page that appears, find the user that wou want to add, and then click **add ->**. Select users and click **add ->** many times as necessary. When you're finished, click **OK**.
 

@@ -37,13 +37,13 @@ This solution is intended to help organizations discover and protect personal da
 
 The first step towards GDPR compliance is to assess whether the GDPR applies to your organization, and, if so, to what extent. This analysis includes understanding the data your organization processes and where it resides.
 
-### Step 1 — Use Compliance Score to view the regulation requirements and track your progress
+### Step 1 — Use Compliance Manager to view the regulation requirements and track your progress
 
-Compliance Score provides tools to track, implement, and manage the auditing controls to help your organization reach compliance against various standards, including GDPR.
+Compliance Manager helps you track, implement, and manage the auditing controls to help your organization reach compliance against various standards, including GDPR.
 
-![Use Compliance Score and Compliance Manager to view requirements and track progress](../media/Overview-image1.png)
+![Use Compliance Manager to view requirements and track progress](../media/Overview-image1.png)
 
-For more information, see [Compliance Score](compliance-score.md).
+For more information, see [Compliance Manager](compliance-manager.md).
 
 ### Step 2 — Use Content Search and sensitive information types to find personal data 
 

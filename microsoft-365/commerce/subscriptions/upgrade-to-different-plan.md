@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,12 +18,8 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-description: "Learn how to upgrade to a new subscription."
+description: "Learn how to upgrade to a different plan."
 ---
 
 # Upgrade to a different plan
@@ -74,6 +70,10 @@ When you use the **Upgrade** tab, the plans that you can upgrade to are displaye
 
 If you want to move to a plan with fewer services, you can [change plans manually](change-plans-manually.md), or [call support](../../admin/contact-support-for-business-products.md) for help.
 
+## I only want to upgrade some of my users. How do I do that?
+
+If you only want to upgrade some users to a different plan, but need to buy the new subscription first, see [Change plans manually](change-plans-manually.md). If you already have the subscription that you want to upgrade users to, see [Move users to a different subscription](move-users-different-subscription.md).
+
 ## Why some changes take longer
 
 **Number of assigned users:** If you have a large number of assigned users, it will take longer to do the upgrade to move them to the new plan.
@@ -84,7 +84,7 @@ If you want to move to a plan with fewer services, you can [change plans manuall
 
 If you don't see any plans on the **Upgrade** tab, it means your plan can't be upgraded automatically. In some cases, you might be able to resolve the issue so that you can view plans available for upgrade, or you might be able to upgrade or change plans manually, instead.
 
- ### Why are there no plans listed to upgrade?
+### Why are there no plans listed to upgrade?
 
 #### You can't upgrade subscriptions now because you have more users than licenses.
 
