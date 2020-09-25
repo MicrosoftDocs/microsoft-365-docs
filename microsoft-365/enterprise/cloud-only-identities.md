@@ -3,7 +3,7 @@ title: "Microsoft 365 cloud-only identity"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 09/25/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -55,15 +55,16 @@ You can use groups in Azure AD for several purposes that simplify management of 
 
 You create new ***users*** with:
 
-- [The Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/add-users/add-users)
+- [The Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)
 - [PowerShell for Microsoft 365](create-user-accounts-with-microsoft-365-powershell.md)
 
 You create new ***groups*** with:
 
-- [The Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
+- [The Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)
 - [PowerShell for Microsoft 365](manage-microsoft-365-groups-with-powershell.md)
 
 
-## Next step for cloud-only identity
+## Next steps for cloud-only identity
 
-[Assign licenses to user accounts](assign-licenses-to-user-accounts.md)
+- [Manage user accounts](manage-microsoft-365-accounts.md)
+- [Assign licenses to user accounts](assign-licenses-to-user-accounts.md)

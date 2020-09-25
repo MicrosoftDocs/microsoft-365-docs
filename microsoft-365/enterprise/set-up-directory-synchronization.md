@@ -3,7 +3,7 @@ title: "Set up directory synchronization for Microsoft 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/25/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -46,7 +46,7 @@ Azure AD Connect runs on an on-premises server and synchronizes your AD DS with 
 
 - Federated authentication
 
-  Azure AD redirects the client computer requesting authentication to contact another identity provider.
+  Azure AD refers the client computer requesting authentication to another identity provider.
 
 See [Hybrid identities](plan-for-directory-synchronization.md) for more information.
   

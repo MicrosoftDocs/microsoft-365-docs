@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.date: 06/09/2020
+ms.date: 09/25/2020
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -53,7 +53,7 @@ Here are the two types of identity and their best fit and benefits.
 
 ## Cloud-only identity
 
-A cloud-only identity uses user accounts that exist only in Azure AD. Cloud identity is typically used by small organizations that do not have on-premises servers or do not use AD DS to manage local identities. 
+A cloud-only identity uses user accounts that exist only in Azure AD. Cloud-only identity is typically used by small organizations that do not have on-premises servers or do not use AD DS to manage local identities. 
 
 Here are the basic components of cloud-only identity.
  
@@ -84,7 +84,7 @@ The Azure AD tenant has a copy of the AD DS accounts. In this configuration, bot
 
 ### Administration
 
-Because the original and authoritative user accounts are stored in the on-premises AD DS, you manage your identities with the same tools as AD DS, such as the Active Directory Users and Computers tool. 
+Because the original and authoritative user accounts are stored in the on-premises AD DS, you manage your identities with the same tools as you manage your AD DS. 
 
 You don't use the Microsoft 365 admin center or PowerShell for Microsoft 365 to manage synchronized user accounts in Azure AD.
 

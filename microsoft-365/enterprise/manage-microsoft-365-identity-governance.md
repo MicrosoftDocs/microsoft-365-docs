@@ -1,0 +1,56 @@
+---
+title: "Manage Microsoft 365 identity governance"
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+audience: Admin
+ms.topic: overview
+ms.prod: office-online-server
+localization_priority: Normal
+f1.keywords:
+- CSH
+ms.custom: 
+ - Adm_O365
+ - seo-marvel-mar2020
+ms.collection:
+- Ent_O365
+- M365-subscription-management
+search.appverid:
+- MET150
+- MOE150
+- MED150
+- BCS160
+ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
+description: "Learn about how to manage Microsoft 365 identity governance."
+---
+
+# Manage Microsoft 365 identity governance
+
+Identity governance is all about protecting, monitoring, and auditing access to critical assets while ensuring employee productivity. For example, with identity governance, you can ensure that the right users have the right access to the right resources and determine if that access changes over time.
+
+See [this article](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) for more information about identity governance for Azure Active Directory (Azure AD).
+
+## Set up Azure AD access reviews
+
+Azure AD access reviews allow you to review a user's access to ensure only the right people have continued access. For example:
+
+- As a new employee joins your organization, you need to ensure they have the right access to be productive.
+- As that employee moves to other teams, locations, or departments, you need to ensure that their access to previous teams, locations, or departments are removed as needed.
+- When that employee or a guest leaves your organization, you need to ensure their access is removed.
+
+This is especially important if your organization is subject to security audits to determine if user accounts have too much access, which could result in fines if in violation of industry or regional regulations.
+
+See [this article](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) for more information about Azure AD access reviews.
+
+Azure AD Privileged Identity Management (PIM) provides additional controls tailored to securing access rights for resources, across Azure AD, Azure, and other Microsoft cloud service. Azure AD PIM provides a comprehensive set of governance controls to help secure your company's resources such as directory, Office 365, and Azure resource roles. As with other forms of access, organizations can use access reviews to configure recurring access recertification for all users in administrator roles. Azure AD PIM is only available with the E5 version of Microsoft 365 Enterprise.
+
+See these articles to configure different types of access reviews:
+
+- [Groups and apps](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+- [Azure AD roles](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+- [Azure resource roles](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+
+
+<!--
+## Set up Azure AD entitlement management
+--> 

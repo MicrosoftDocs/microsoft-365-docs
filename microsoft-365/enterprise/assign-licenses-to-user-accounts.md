@@ -34,7 +34,7 @@ description: "Describes how to assign Microsoft 365 licenses to user accounts, e
 
 For the cloud-only identity model, you can assign Microsoft 365 licenses to user accounts as they are created, depending on how you create them.
 
-For the hybrid identity model, when Active Directory Domain Services (AD DS) user accounts are synchronized for the first time, they are not automatically assigned a location or a Microsoft 365 license. You must configure each user account with a user location prior to or along with assigning a license.
+For the hybrid identity model, when Active Directory Domain Services (AD DS) user accounts are synchronized for the first time, they are not automatically assigned a location or a Microsoft 365 license. **You must configure each user account with a user location prior to or along with assigning a license.**
 
 In either case, you must assign a license to user accounts so your users can access Microsoft 365 services, such as email and Microsoft Teams.
 
@@ -43,8 +43,8 @@ You can assign licenses to user accounts either individually or automatically th
 To assign Microsoft 365 licenses to individual user accounts, you can use:
 
 - [The Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
-- [PowerShell for Microsoft 365](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
-
+- [PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
+- The Azure AD portal
 
 ## Group-based licensing
 
@@ -57,7 +57,6 @@ Make sure you have enough licenses for all the group members. If you run out of 
 >
 
 For automatic license assignment, see [group-based licensing in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
-
 
 ## Next steps
 
