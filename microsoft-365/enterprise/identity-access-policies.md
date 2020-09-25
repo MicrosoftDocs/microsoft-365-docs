@@ -165,6 +165,8 @@ Finally, select **On** for **Enable policy**, and then choose **Create**.
 
 Consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy.
 
+For Exchange Online, you can use authentication policies to [disable Basic authentication](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), which forces all client access requests to use modern authentication.
+
 ## High risk users must change password
 
 To ensure that all high-risk users' compromised accounts are forced to perform a password change when signing-in, you must apply the following policy.
