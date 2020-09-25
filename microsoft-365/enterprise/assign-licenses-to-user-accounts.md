@@ -3,7 +3,7 @@ title: "Assign Microsoft 365 licenses to user accounts"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 09/24/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -34,7 +34,7 @@ description: "Describes how to assign Microsoft 365 licenses to user accounts, e
 
 For the cloud-only identity model, you can assign Microsoft 365 licenses to user accounts as they are created, depending on how you create them.
 
-For the hybrid identity model, when Active Directory Domain Services (AD DS) user accounts are synchronized for the first time, they are not automatically assigned a Microsoft 365 license. You must first configure each user account with a user location.
+For the hybrid identity model, when Active Directory Domain Services (AD DS) user accounts are synchronized for the first time, they are not automatically assigned a location or a Microsoft 365 license. You must configure each user account with a user location prior to or along with assigning a license.
 
 In either case, you must assign a license to user accounts so your users can access Microsoft 365 services, such as email and Microsoft Teams.
 
@@ -45,7 +45,19 @@ To assign Microsoft 365 licenses to individual user accounts, you can use:
 - [The Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
 - [PowerShell for Microsoft 365](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
 
+
+## Group-based licensing
+
+You can configure security groups in Azure AD to automatically assign licenses from a set of subscriptions to all the members of the group. This is known as *group-based licensing*. If a user account is added to or removed from the group, the licenses for the group's subscriptions will be automatically assigned or unassigned from the user account.
+
+Make sure you have enough licenses for all the group members. If you run out of licenses, new users won't be assigned licenses until licenses become available.
+
+>[!Note]
+>You should not configure group-based licensing for groups that contain Azure business to business (B2B) accounts.
+>
+
 For automatic license assignment, see [group-based licensing in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+
 
 ## Next steps
 

@@ -167,9 +167,9 @@ In this step, you'll enable privileged access management in your tenant and conf
 
 One configured, privileged access management will enable your organization to operate with zero standing privileges and provide a layer of defense against vulnerabilities arising because of such standing administrative access. Privileged access requires approvals for executing any task that has an associated approval policy defined. Users needing to execute tasks included in the an approval policy must request and be granted access approval in order to have permissions necessary to execute tasks defined in the policy.
 
-To enable privileged access management, see the [Configure privileged access management](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) topic.
+To enable privileged access management, see [Configure privileged access management](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
 
-For more information, see the [Privileged access management](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) topic.
+For more information, see [Privileged access management](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
 ### Security information and event management (SIEM) software for Microsoft 365 logging
 
