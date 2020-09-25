@@ -152,8 +152,10 @@
       items: 
         - name: Understand encryption
           href: encryption.md
-        - name: Double Key Encryption (preview)
+        - name: Double Key Encryption (DKE)
           href: double-key-encryption.md
+        - name: Double Key Encryption FAQ
+          href: double-key-encryption-overview.md  
         - name: Office 365 Service encryption
           href: office-365-service-encryption.md
         - name: Customer Key

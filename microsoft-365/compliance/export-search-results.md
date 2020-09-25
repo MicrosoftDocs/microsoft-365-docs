@@ -312,7 +312,7 @@ Here's more information about exporting search results.
 
   ![eDiscovery Export Tool](../media/eDiscoveryExportTool.png)
 
-  Click in the export key box and then press `CTRL + V` to paste the export key (the script copies the export key to the clipboard so you can paste it the box). Click **Browse** to specify the location where you want to download the search result files, and then start the download.
+  Click in the export key box and then press `CTRL + V` to paste the export key (the script copies the export key to the clipboard). Click **Browse** to specify the location where you want to download the files, and then start the download.
 
   As previously stated, we recommend that you download search results to a local disk drive due to the high amount of disk activity (reads and writes). Don't download search results to a mapped network drive or other network location.
 
