@@ -338,9 +338,7 @@
             - name: Webex Teams
               href: archive-webexteams-data.md
             - name: Workplace from Facebook
-              href: archive-workplacefromfacebook-data.md
-            - name: Slack
-              href: archive-slack-data.md    
+              href: archive-workplacefromfacebook-data.md    
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
         - name: TeleMessage data connectors
