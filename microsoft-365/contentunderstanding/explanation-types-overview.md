@@ -72,46 +72,8 @@ Additionally, if you have capitalization requirements in your pattern list, you 
 
    ![Only exact capitalization](../media/content-understanding/exact-caps.png)
 
-## Use the explanation library
-
-While you can manually add various pattern list values for your explanation, it can be much easier to use the pre-created templates provided to you in the explanation library.
-
-For example, instead of manually adding all the variations for *Date*, you can use the pattern list template for *Date*, that already includes a number of pattern lists values:</br>
-
-   ![Explanation library template for date](../media/content-understanding/explanation-template.png)</br>
- 
-The explanation library includes a number of commonly used pattern list explanations, including:</br>
-
-- Date</br>
-- Date (numeric)</br>
-- Time</br>
-- Number</br>
-- Phone number</br>
-- Zip code</br>
-- First word of sentence</br>
-- Credit card</br>
-- Social security number</br>
-
-Note that the explanation library also includes templates for phrase list explanations as well, including:
-- End of sentence
-- Currency
-
-#### To use a template from the explanation library
-
-1. On the **Explanations** section of your model's **Train** page, select **New**, and then select **From a template**.</br>
-
-   ![Create from template](../media/content-understanding/from-template.png)</br>
-
-2.  On the **Explanation templates** page, select the explanation you want to use, and then select **Add**.</br>
-
-       ![Select a template](../media/content-understanding/phone-template.png)</br>
-
-3. The information for the template you selected will display on the **Create an explanation** page. If needed, you can edit the explanation name, and add or remove items from the pattern list. </br> 
-
-   ![Edit template](../media/content-understanding/phone-template-live.png)</br>
-
-4. When finished, select **Save**.
-
+> [!Note]
+> Instead of manually creating your pattern list explanation, you can use the [explanation library]() to use pre-made pattern list templates for common pattern list, such as *date*, *phone number*, *credit card number*, etc.. 
 
 ## Proximity 
 
@@ -166,6 +128,51 @@ There are three tokens in *(mobile)*:
 We would then configure the proximity setting to have a range of 0 through 3.
 
    ![Proximity](../media/content-understanding/proximity-example.png)</br>
+
+
+
+## Use the explanation library
+
+While you can manually add various pattern list values for your explanation, it can be much easier to use the pre-created templates provided to you in the explanation library.
+
+For example, instead of manually adding all the variations for *Date*, you can use the pattern list template for *Date*, that already includes a number of pattern lists values:</br>
+
+   ![Explanation library template for date](../media/content-understanding/explanation-template.png)</br>
+ 
+The explanation library includes a number of commonly used pattern list explanations, including:</br>
+
+- Date</br>
+- Date (numeric)</br>
+- Time</br>
+- Number</br>
+- Phone number</br>
+- Zip code</br>
+- First word of sentence</br>
+- Credit card</br>
+- Social security number</br>
+
+Note that the explanation library also includes templates for phrase list explanations as well, including:
+- End of sentence
+- Currency
+
+#### To use a template from the explanation library
+
+1. On the **Explanations** section of your model's **Train** page, select **New**, and then select **From a template**.</br>
+
+   ![Create from template](../media/content-understanding/from-template.png)</br>
+
+2.  On the **Explanation templates** page, select the explanation you want to use, and then select **Add**.</br>
+
+       ![Select a template](../media/content-understanding/phone-template.png)</br>
+
+3. The information for the template you selected will display on the **Create an explanation** page. If needed, you can edit the explanation name, and add or remove items from the pattern list. </br> 
+
+   ![Edit template](../media/content-understanding/phone-template-live.png)</br>
+
+4. When finished, select **Save**.
+
+
+
 
 
 ## See also
