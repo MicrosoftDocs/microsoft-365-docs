@@ -100,3 +100,5 @@ Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.co
 ## See also
 
 [Overview of the form processing model](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
+
+[Step-by-Step: How to Build a Document Understanding Model (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
