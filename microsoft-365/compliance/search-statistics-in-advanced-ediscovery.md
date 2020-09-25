@@ -14,8 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: ""
+description: "Validate your search results by viewing the statistics that are generated after you run a collection search in Advanced eDiscovery."
 ---
 
 # Search statistics in Advanced eDiscovery

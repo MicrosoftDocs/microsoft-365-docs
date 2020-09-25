@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 ROBOTS: NOINDEX, NOFOLLOW
-description: ""
+description: "Tag documents in an evidence set to identify their relevance to your investigation."
 ---
 
 # Tag documents in evidence
