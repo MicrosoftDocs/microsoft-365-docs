@@ -96,7 +96,7 @@ As another example, you can check the enabled status of a specific user account 
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
 ```
 
-### View account Synchronization Status
+### View account synchronization status
 
 The User accounts have two sources, Windows Server AD which are  accounts that sync from on-prem AD to  cloud and Azure Active Directory which are accounts directly created in cloud.
 
@@ -316,4 +316,3 @@ Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipa
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-
