@@ -72,6 +72,61 @@ Additionally, if you have capitalization requirements in your pattern list, you 
 
    ![Only exact capitalization](../media/content-understanding/exact-caps.png)
 
+## Proximity 
+
+The proximity explanation type helps your model to identify data through defining how close another piece of data is to it. For example, in your model, you have defined two explanations that label both the customer *Street address number* and *Phone number*. 
+
+You also notice that customer phone numbers always appear before the street address number. 
+
+Alex Wilburn<br>
+555-555-5555<br>
+One Microsoft Way<br>
+Redmond, WA 98034<br>
+
+You can use the proximity explanation to define how far away the phone number explanation is to better identify the street address number in your documents.
+
+   ![Proximity](../media/content-understanding/proximity.png)</br>
+
+
+#### What are tokens?
+
+In order to use the proximity explanation type, you need to know what a token is, as the number of tokens is how the proximity explanation measures distance from one explanation to another.  
+
+ A token is a continuous span (no spaces or punctuation) of letters and numbers. A space is NOT a token. Each punctuation character is a token. The following table shows some examples of how to determine the number of tokens in a phrase.
+
+|Phrase|Number of tokens|Explanation|
+|--|--|--|
+|`Dog`|1|A single word with no punctuation or spaces.|
+|`RMT33W`|1|A record locator number. It may have numbers and letters, but does not have any punctuation.|
+|`425-555-5555`|5|A phone number. Each punctuation mark is a single token so  `425-555-5555` would be 5 tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
+|`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
+
+#### Configure the proximity explanation type
+
+For our example, we want to configure the proximity setting so that we can define the range of the number of tokens the *Phone number* explanation is from the *Street address number* explanation.
+
+We can already see that the minimum range is "0" since there are no tokens between the phone number and street address number.
+
+However, we see that some phone numbers in your sample documents are appended with *(mobile)*.
+
+Nestor Wilke<br>
+111-111-1111 (mobile)<br>
+One Microsoft Way<br>
+Redmond, WA 98034<br>
+
+There are three tokens in *(mobile)*:
+
+|Phrase|Token count|
+|--|--|
+|(|1|
+|mobile|2|
+|)|3|
+
+We would then configure the proximity setting to have a range of 0 through 3.
+
+   ![Proximity](../media/content-understanding/proximity-example.png)</br>
+
+
 ## Use the explanation library
 
 While you can manually add various pattern list values for your explanation, it can be much easier to use the pre-created templates provided to you in the explanation library.
@@ -96,68 +151,22 @@ Note that the explanation library also includes templates for phrase list explan
 - End of sentence
 - Currency
 
-### To use a template from the explanation library
+#### To use a template from the explanation library
 
 1. On the **Explanations** section of your model's **Train** page, select **New**, and then select **From a template**.</br>
+
    ![Create from template](../media/content-understanding/from-template.png)</br>
+
 2.  On the **Explanation templates** page, select the explanation you want to use, and then select **Add**.</br>
+
    ![Select a template](../media/content-understanding/phone-template.png)</br>
+
 3. The information for the template you selected will display on the **Create an explanation** page. If needed, you can edit the explanation name, and add or remove items from the pattern list. </br> 
+
    ![Edit template](../media/content-understanding/phone-template-live.png)</br>
+
 4. When finished, select **Save**.
 
 
 
-## Proximity 
 
-The proximity explanation type helps your model to identify data through defining how close another piece of data is to it. For example, in your model, you have defined two explanations that label both the customer *Street address number* and *Phone number*. 
-
-You also notice that customer phone numbers always appear before the street address number. 
-
-Alex Wilburn<br>
-555-555-5555<br>
-One Microsoft Way<br>
-Redmond, WA 98034<br>
-
-You can use the proximity explanation to define how far away the phone number explanation is to better identify the street address number in your documents.
-
-   ![Proximity](../media/content-understanding/proximity.png)</br>
-
-
-### What are tokens?
-
-In order to use the proximity explanation type, you need to know what a token is, as the number of tokens is how the proximity explanation measures distance from one explanation to another.  
-
- A token is a continuous span (no spaces or punctuation) of letters and numbers. A space is NOT a token. Each punctuation character is a token. The following table shows some examples of how to determine the number of tokens in a phrase.
-
-|Phrase|Number of tokens|Explanation|
-|--|--|--|
-|`Dog`|1|A single word with no punctuation or spaces.|
-|`RMT33W`|1|A record locator number. It may have numbers and letters, but does not have any punctuation.|
-|`425-555-5555`|5|A phone number. Each punctuation mark is a single token so  `425-555-5555` would be 5 tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
-|`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
-
-### Configure the proximity explanation type
-
-For our example, we want to configure the proximity setting so that we can define the range of the number of tokens the *Phone number* explanation is from the *Street address number* explanation.
-
-We can already see that the minimum range is "0" since there are no tokens between the phone number and street address number.
-
-However, we see that some phone numbers in your sample documents are appended with *(mobile)*.
-
-Nestor Wilke<br>
-111-111-1111 (mobile)<br>
-One Microsoft Way<br>
-Redmond, WA 98034<br>
-
-There are three tokens in *(mobile)*:
-
-|Phrase|Token count|
-|--|--|
-|(|1|
-|mobile|2|
-|)|3|
-
-We would then configure the proximity setting to have a range of 0 through 3.
-
-   ![Proximity](../media/content-understanding/proximity-example.png)</br>
