@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
+monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
