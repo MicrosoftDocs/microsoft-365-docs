@@ -23,7 +23,7 @@ Explanations are used to help to define the information you want to label and ex
 
 
 
-## Explanation types
+## Your three explanation types
 
 The three explanation types that are available to you when creating an explanation are:
 
@@ -31,7 +31,7 @@ The three explanation types that are available to you when creating an explanati
 
 - **Pattern list**: List patterns of numbers, letters, or other characters that can be used to identify the information you are trying to extract.  For example, you might want to extract the **Phone number** of the referring doctor from all Medical Referral document that the model identifies.</br>
 
-- **Proximity**: Describe how close explanations are to each other. For example, a street number pattern goes right before the street name phrase list, with no tokens in between. 
+- **Proximity**: Describes how close explanations are to each other. For example, a *street number* pattern list goes right before the *street name* phrase list, with no tokens in between (you'll learn about tokens later in this article). 
  
  
 ## Phrase list
