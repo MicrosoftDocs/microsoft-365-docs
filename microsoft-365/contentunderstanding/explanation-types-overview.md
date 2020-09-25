@@ -50,22 +50,23 @@ A pattern list type is especially useful when you are creating an explanation th
 
 For the **Phone number** example, we are trying to extract the phone number for each referring doctor from all Medical Referral document that the model identifies. When we create the explanation, selecting the Pattern list type allows us to type in the different formats that we might expect if there is variation.
 
+   ![Phone number pattern list](../media/content-understanding/pattern-list.png)
 
 For this example, we want to select the **Any digit from 0-9** checkbox. Selecting this will recognize each "0" value we used in our pattern list to be any digit from 0 through 9.
 
-   ![Any digit from 0-9](../media/content-understanding/pattern-list.png)
+   ![Any digit from 0-9](../media/content-understanding/digit-identity.png)
 
 Similarly, if we are creating a pattern list that might include text characters, you will want to select **Any letter from a-z** checkbox. Selecting this will recognize each "a" character we used in our patter list to be any character from "a" to "z".
 
 For example, if we are creating a **Date** pattern list, and want to make sure that a date format such as *Jan 1, 2020* is recognized, you need to:
-- Add *aaa 1, 1111* and *aaa 11, 1111* to your pattern list.
+- Add *aaa 0, 0000* and *aaa 00, 0000* to your pattern list.
 - Make sure that **Any letter from a-z** is also selected.
 
    ![Any letter from a-z](../media/content-understanding/any-letter.png)
 
 Additionally, if you have capitalization requirements in your pattern list, you have the option to select the **Only exact capitalization** checkbox. For the Date example, if you require the first letter of the month to be capitalized, you need to:
 
-- Add *Aaa 1, 1111* and *Aaa 11, 1111* to your pattern list.
+- Add *Aaa 0, 0000* and *Aaa 00, 0000* to your pattern list.
 - Make sure that **Only exact capitalization** is also selected.
 
    ![Only exact capitalization](../media/content-understanding/exact-caps.png)
