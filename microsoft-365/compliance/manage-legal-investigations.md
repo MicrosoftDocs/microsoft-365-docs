@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: Use eDiscovery cases in the Security & Compliance Center in Office 365 to manage your organization's legal investigation.
+description: "Use eDiscovery cases in the Security & Compliance Center in Office 365 to manage your organization's legal investigation."
 ---
 
 # Manage legal investigations in Microsoft 365
