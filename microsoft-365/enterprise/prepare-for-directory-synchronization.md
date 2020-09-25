@@ -30,7 +30,7 @@ description: "Describes how to prepare to provision users to Microsoft 365 by us
 
 # Prepare for directory synchronization to Microsoft 365
 
-*This article applies to both Microsoft 365 Enterprise and Microsoft 365 Enterprise.*
+*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
 The benefits to hybrid identity and directory synchronization your organization include:
 
