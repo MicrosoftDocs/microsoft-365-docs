@@ -39,7 +39,7 @@ For Communication, we provide a primary insight, which contains the key metrics 
 
 Microsoft 365 provides people the flexibility to fit everyone's communication style by offering multiple modes. The primary insight provides a measure of people in your org that are using multiple modes to communicate.
 
-![](RackMultipart20200918-4-1hhcj90_html_d963b4bd8ff69a70.png)
+:::image type="content" source="../../media/primaryinsight.png" alt-text="Primary insight to communications modes.":::
 
 1. **Header:** Provides the key metric of people using more than one of communication modes, namely
       1. Sending emails through Exchange
@@ -50,13 +50,15 @@ as a percentage of all people who are enabled for more than one of these product
 
 2. **Body:** Provides more information on how flexibility in the modes of communication is valuable to people in your org
 3. **Visualization of current state:**
-      1. Horizontal bar where the blue portion represents the percentage expressed in the header
-      2. Highlights the (numerator/denominator) used for computing the percentage expressed in the header
-            1. **Numerator**: # of people using more than one communication modes in the last 28 days
-            2. **Denominator**: # of people marked as enabled for more than one communication products in the last 28 days
-      3. Peer Benchmark value of the key metric is also shown as a percentage
-4. **Link to resources:** Clicking here would enlist all the support content in the form of videos/articles related to Communication. From these you can navigate to the custom playlist for Communication and subsequently, for all Productivity Score categories.
-5. **Visualization of trend:** This chart provides the trend of numerator of the key metric in the primary insight – that is, the number of people using more than one communication modes over the last 180 days. Here that the daily value is an aggregate of the number of people who use multiple forms of communication over the last 28 days.
+1. Horizontal bar where the blue portion represents the percentage expressed in the header
+2. Highlights the (numerator/denominator) used for computing the percentage expressed in the header
+
+      - **Numerator**: # of people using more than one communication modes in the last 28 days
+      - **Denominator**: # of people marked as enabled for more than one communication products in the last 28 days
+6. **Peer Benchmark** value of the key metric is also shown as a percentage
+
+- **Link to resources:** Clicking here would enlist all the support content in the form of videos/articles related to Communication. From these you can navigate to the custom playlist for Communication and subsequently, for all Productivity Score categories.
+- **Visualization of trend:** This chart provides the trend of numerator of the key metric in the primary insight – that is, the number of people using more than one communication modes over the last 180 days. Here that the daily value is an aggregate of the number of people who use multiple forms of communication over the last 28 days.
 
 ### Scoring model
 
@@ -68,69 +70,62 @@ We also provide you with information that help you gain visibility into how peop
 
 ### Breakdown of communication by modes
 
-![](RackMultipart20200918-4-1hhcj90_html_5b78c898b82a2a2e.png)
+:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="![Breakdown of communication modes.]":::
 
 1. **Header:** Highlights the goal of the insight to provide a detailed breakdown across the different communication modes being considered within Communication
 2. **Body:** Provides information on the value of using different modes for sharing knowledge
 3. **Visualization:** The breakdown represents the ues for each mode. The colored portion and the fraction on each bar represent the number of people sending emails,messages, or community posts as a percentage of number of people enabled for that mode:
-      1. **People sending emails:** The colored portion and the fraction represent the percentage of users enabled for Exchange that are sending emails. This fraction is constructed from:
-            1. **Numerator**: People sending emails in the last 28 days
-            2. **Denominator**: People enabled for Exchange in the last 28 days
-      2. **People sending messages in Microsoft Teams:** The colored portion and the fraction represent the percentage of users enabled for Microsoft Teams that are sending messages. This fraction is constructed from:
-            1. **Numerator**: People sending messages on Microsoft Teams in the last 28 days
-            2. **Denominator**: People enabled for Microsoft Teams in the last 28 days
-      3. **People posting in communities:** The colored portion and the fraction represent the percentage of users enabled for Yammer that are posting in communities. This fraction is constructed from:
-            1. **Numerator:** People posting in Yammer communities in the last 28 days
-            2. **Denominator:** People enabled for Yammer in the last 28 days
-4. **Link to resources:**
+      - **People sending emails:** The colored portion and the fraction represent the percentage of users enabled for Exchange that are sending emails. This fraction is constructed from:
+          - **Numerator**: People sending emails in the last 28 days
+          - **Denominator**: People enabled for Exchange in the last 28 days
+      - **People sending messages in Microsoft Teams:** The colored portion and the fraction represent the percentage of users enabled for Microsoft Teams that are sending messages. This fraction is constructed from:
+          - **Numerator**: People sending messages on Microsoft Teams in the last 28 days
+          - **Denominator**: People enabled for Microsoft Teams in the last 28 days
+      - **People posting in communities:** The colored portion and the fraction represent the percentage of users enabled for Yammer that are posting in communities. This fraction is constructed from:
+          - **Numerator:** People posting in Yammer communities in the last 28 days
+          - **Denominator:** People enabled for Yammer in the last 28 days
 
-    Choose this to view all the support content related to this insight.
 
 ### @mentions in emails
 
-![](RackMultipart20200918-4-1hhcj90_html_ec91362f19dcd31a.png)
+:::image type="content" source="../../media/emailmentions.png" alt-text="![Emails with mentions.]":::
 
 1. **Header:** Highlights the increase in response rate for new email threads started in the last 28 days when they contain @mentions
 2. **Body:** Provides information on the value of using @mentions in emails. Additionally, people using @mentions is expressed as a percentage of all users who have sent an email in the last 28 days.
 3. **Visualization:** Breaks down the response rate for new email threads based on whether they had @mentions or not:
-      1. **Responses to emails with @mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
-            1. **Numerator:** New email threads containing @mentions that were started and also received a response in the last 28 days.
-            2. **Denominator:** New email threads containing @mentions that were started in the last 28 days
-      2. **Responses to emails without @mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
-            1. **Numerator:** New email threads that do not contain @mentions, which were started and also received a response in the last 28 days.
-            2. **Denominator:** New email threads not containing @mentions that were started in the last 28 days.
-4. **Link to resources:**
+      - **Responses to emails with @mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
+          - **Numerator:** New email threads containing @mentions that were started and also received a response in the last 28 days.
+          - **Denominator:** New email threads containing @mentions that were started in the last 28 days
+      - **Responses to emails without @mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions. This fraction is constructed from:
+          - **Numerator:** New email threads that do not contain @mentions, which were started and also received a response in the last 28 days.
+          - **Denominator:** New email threads not containing @mentions that were started in the last 28 days.
 
-    Choose this link to view all the support content related to this insight.
 
 ### Breakdown of messages by type in Microsoft Teams
 
-![](RackMultipart20200918-4-1hhcj90_html_2921e5275fad6879.png)
+:::image type="content" source="../../media/teamsmessages.png" alt-text="![Teams message types.]":::
 
 1. **Header:** Highlights the people who sent channel messages as a percentage of people who sent any kind of message (including chat and channel messages) in the last 28 days
 2. **Body:** Provides information on the value of using channel messages within Microsoft Teams
 3. **Visualization:** Breaks down the use of chat and channel messages:
-  1. **People sending chat messages:** The colored portion and the fraction represent the use of chat messages within people who sent messages on Microsoft Teams. The fraction is constructed from:
-    1. **Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days
-    2. **Denominator:** People sent messages on Microsoft Teams in the last 28 days
-  2. **People sending chat messages:** The colored portion and the fraction represent the use of channel messages within people sending messages on Microsoft Teams. The fraction is constructed from:
-    1. **Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days.
-    2. **Denominator:** People who sent messages on Microsoft Teams in the last 28 days.
+  - **People sending chat messages:** The colored portion and the fraction represent the use of chat messages within people who sent messages on Microsoft Teams. The fraction is constructed from:
+    - **Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days
+    - **Denominator:** People sent messages on Microsoft Teams in the last 28 days
+  - **People sending chat messages:** The colored portion and the fraction represent the use of channel messages within people sending messages on Microsoft Teams. The fraction is constructed from:
+    - **Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days.
+    - **Denominator:** People who sent messages on Microsoft Teams in the last 28 days.
 
-1. **Link to resources:**
-
-Choose this link to view all the support content related to this insight. 
 
 ### Questions and Answers in Yammer
 
-![](RackMultipart20200918-4-1hhcj90_html_9bed744e95dc4ce9.png)
+:::image type="content" source="../../yammerqsandas.png" alt-text="[Questions and answers in Yammer]":::
 
 1. **Header:** Highlights the posts marked as questions on Yammer that have received an answer marked as &quot;Best answer&quot; as a percentage of all posts marked as questions on Yammer in the last 28 days
 2. **Body:** Provides information on the value of using questions and answers in Yammer to share knowledge.
 3. **Visualization:** Breaks down the use of the questions and answers feature in your org:
-      1. **Questions:** The colored portion of the bar and associated number represents the total number of posts marked as questions in the last 28 days.
-      2. **Questions with answers:** The colored portion of the bar and the associated number represents the number of posts marked as questions and have received answers in the last 28 days.
-      3. **Questions with best answers:** The colored portion of the bar and the associated number represents the number of posts that were marked as questions and have also received a &quot;best answer&quot; in the last 28 days.
+      - **Questions:** The colored portion of the bar and associated number represents the total number of posts marked as questions in the last 28 days.
+      - **Questions with answers:** The colored portion of the bar and the associated number represents the number of posts marked as questions and have received answers in the last 28 days.
+      - **Questions with best answers:** The colored portion of the bar and the associated number represents the number of posts that were marked as questions and have also received a &quot;best answer&quot; in the last 28 days.
 
 ## Explore how people in your organization communicate
 
