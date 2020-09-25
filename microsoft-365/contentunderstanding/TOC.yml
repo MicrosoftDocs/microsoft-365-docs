@@ -1,21 +1,31 @@
     - name: Get started with content understanding
       items: 
+        - name: Introduction to Microsoft SharePoint Syntex
+          href: microsoft-sharepoint-syntex-overview.md
         - name: Document understanding overview
           href: document-understanding-overview.md
         - name: Form processing overview 
           href: form-processing-overview.md
         - name: Difference between document understanding and form processing models 
           href: difference-between-document-understanding-and-form-processing-model.md   
+        - name: Learn about models through the sample model 
+          href: learn-about-document-understanding-models-through-the-sample-model.md
         - name: Create a content center 
           href: create-a-content-center.md
         - name: Create a classifier
           href: create-a-classifier.md
         - name: Create an extractor
           href: create-an-extractor.md
+        - name: Explanation types overview 
+          href: explanation-types-overview.md
         - name: Apply a model
           href: apply-a-model.md
         - name: Create a form processing model 
           href: create-a-form-processing-model.md
+        - name: Apply a retention label 
+          href: apply-a-retention-label.md
+        - name: Model usage analytics
+          href: model-usage-analytics.md
 
 
     - name: Get started with setup

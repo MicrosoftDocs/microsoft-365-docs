@@ -10,65 +10,100 @@ ms.service:
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: ""
+description: "Learn more about explanation types."
 ---
 
 # Explanation types overview
 
 
-</br>
+Explanations are used to help to define the information you want to label and extract in your document understanding models.  When creating an explanation, you need to select an explanation type. This article provides you an overview to help you better understand the explanation types.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+   ![Explanation types](../media/content-understanding/explanation-types.png) 
 
-</br>
 
-You can easily apply a [retention label](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide#retention-labels) to a document understanding model in Project Cortex.
 
-Retention labels let you apply retention settings to the documents that your document understanding model identify.  For example, you want your model to not only identify any *Insurance notice* documents that are uploaded to your document library, but to also apply a *Business* retention tag to them so that these documents cannot be deleted from the document library for the specified time period (the next five months, for example).
 
-You can apply a retention label to your document understanding model through your model settings on your model's home page. 
+## Explanation types
 
-> [!Important]
-> For retention labels to be available to apply to your content understanding model, they need to be [created and published in the Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels?view=o365-worldwide#how-to-create-and-publish-retention-labels).
 
-### To add a retention label to a document understanding model
+- Phrase list: A list of words, phrases, numbers, or other characters that can be used to the document or information you are trying to extract. For example, the text string **Referring Doctor** is in all Medical Referral documents you are trying to identify.</br>
 
-1. On the model home page, select **Model settings**.</br>
-2. In **Model settings**, in the **Security and compliance** section, select the **Retention label** menu to see a list of retention labels that are available for your to apply to the model.</br>
-Image
-3. Select the retention label you want to apply to the model, and then select **Save**.</br>
+- Pattern list: List patterns of numbers, letters, or other characters that can be used to identify the information you are trying to extract.  For example, you might want to extract the **Phone number** of the referring doctor from all Medical Referral document that the model identifies.</br>
 
-After applying the retention label to your model, you are able to:
-- Apply the updated model to a new document library.
-- Apply the updated model to a document library to which the model is already applied.
+- Proximity:?  
  
-### Apply the retention label to a document library to which the model is already applied
+ 
+## Phrase lists
 
-If your document understanding model has already been applied to a document library, you can do the following to sync your retention label update to apply it to the document library:</br>
+A phrase list explanation type is more commonly used to identify and classify a document through your model, as described in the *Referring Doctor* label example. 
 
-1. On your model home page, in the **Libraries with this model** section, select the document library to which you want to apply the retention label update. </br> Image
-2. Select **Sync**. </br>
-Image 
+While not a requirement, you will have better success with your explanation if the phrase your are trying to capture is located in a consistent location in your document.  For example, the *Referring Doctor* label might be consistently in the first paragraph of the document.
 
+If case sensitivity is a requirement in identifying your label, using the phrase list type allows you to specify it in your explanation by selecting the **Only exact capitalization** checkbox.
 
-After applying the update, you can confirm that it has been applied by selecting your document library link and checking your document library view. In your document library view, select the information icon to check the model properties.  In the **Active models** list, select your updated model, and in the **Retention label** section you will see the name of the applied retention label.
-
-Image
-
-Select the link to your document library. On the view page, a new **Retention label** column will display in your library view page.  As your model classifies files it identifies as belonging to it's content type and lists them in the library view, the Retention label column will also display the name of the retention label that has been applied to it through the model.
+   ![Explanation types](../media/content-understanding/case-sensitivity.png) 
 
 
-For example, all *Insurance notice* documents that your model identifies will also have the *Business* retention label applied to them, preventing them from being deleted from the document library for five months. If an attempt is made to delete the file from the document library, an error will display saying it is not allowed because of the applied retention label.
+## Pattern lists
 
-image
+A pattern list type is especially useful when you are creating an explanation that is trying to identify and extract information from a document that is commonly presented in different formats, such as dates, phone numbers, or credit card numbers. For example, a date can be a displayed in a number of different formats (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, Jan 1,2020, etc.). Defining a pattern list makes your explanation more efficient in being able to capture any possible variations in the data you are trying to identify and extract. 
+
+For the **Phone number** example, we are trying to extract the phone number for each referring doctor from all Medical Referral document that the model identifies. When we create the explanation, selecting the Pattern list type allows us to type in the different formats that we might expect if there is variation.
 
 
+For this example, we want to select the **Any digit from 0-9** checkbox. Selecting this will recognize each "0" value we used in our pattern list to be any digit from 0 through 9.
 
-## See Also
-[Create a classifier](create-a-classifier.md)</br>
-[Create an extractor](create-an-extractor.md)</br>
-[Document Understanding overview](document-understanding-overview.md)</br>
-[Create a form processing model](create-a-form-processing-model.md)  
+   ![Any digit from 0-9](../media/content-understanding/pattern-list.png)
+
+Similarly, if we are creating a pattern list that might include text characters, you will want to select **Any letter from a-z** checkbox. Selecting this will recognize each "a" character we used in our patter list to be any character from "a" to "z".
+
+For example, if we are creating a **Date** pattern list, and want to make sure that a date format such as *Jan 1, 2020* is recognized, you need to:
+- Add *aaa 1, 1111* and *aaa 11, 1111* to your pattern list.
+- Make sure that **Any letter from a-z** is also selected.
+
+   ![Any letter from a-z](../media/content-understanding/any-letter.png)
+
+Additionally, if you have capitalization requirements in your pattern list, you have the option to select the **Only exact capitalization** checkbox. For the Date example, if you require the first letter of the month to be capitalized, you need to:
+
+- Add *Aaa 1, 1111* and *Aaa 11, 1111* to your pattern list.
+- Make sure that **Only exact capitalization** is also selected.
+
+   ![Only exact capitalization](../media/content-understanding/exact-caps.png)
+
+## Use the explanation library
+
+While you can manually add various pattern list values for your explanation, it can be much easier to use the pre-made ones that are defined through templates provided to you in the explanation library.
+
+For example, instead of manually adding all the variations for *Date*, you can use the Pattern List template for *Date*, that already includes a number of pattern lists values:</br>
+
+   ![Explanation library template for date](../media/content-understanding/explanation-template.png)</br>
+ 
+The explanation library includes a number of commonly used explanations, including:</br>
+
+- Date</br>
+- Date (numeric)</br>
+- Time</br>
+- Number</br>
+- Phone number</br>
+- Zip code</br>
+- First word of sentence</br>
+- Credit card</br>
+- Social security number</br>
+
+Note that the explanation library also includes templates for phrase list explanations as well, including:
+- End of sentence
+- Currency
+
+### To use a template from the explanation library
+
+1. On the **Explanations** section of your model's **Train** page, select **New**, and then select **From a template**.</br>
+   ![Create from template](../media/content-understanding/from-template.png)</br>
+2.  On the **Explanation templates** page, select the explanation you want to use, and then select **Add**.</br>
+   ![Select a template](../media/content-understanding/phone-template.png)</br>
+3. The information for the template you selected will display on the **Create an explanation** page. If needed, you can edit the explanation name, and add or remove items from the pattern list. </br> 
+   ![Edit template](../media/content-understanding/phone-template-live.png)</br>
+4. When finished, select **Save**.
+
 
 
 
