@@ -20,6 +20,6 @@ description: "You can annotate and redact documents in a review set in Advanced 
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
-# View documents in a review set in Advanced eDiscovery
+# Annotate and redact documents in a review set in Advanced eDiscovery
 
 Content coming soon.
