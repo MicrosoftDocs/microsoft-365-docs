@@ -98,7 +98,7 @@ Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayNam
 
 ### View account synchronization status
 
-The User accounts have two sources, Windows Server AD which are  accounts that sync from on-prem AD to  cloud and Azure Active Directory which are accounts directly created in cloud.
+User accounts have two sources; Windows Server Active Directory (AD) which are accounts that sync from on-premises AD to the cloud and Azure AD which are accounts directly created in the cloud.
 
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
