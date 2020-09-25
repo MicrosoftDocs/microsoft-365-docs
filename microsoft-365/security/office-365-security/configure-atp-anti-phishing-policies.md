@@ -18,6 +18,9 @@ description: "Admins can learn how to create, modify, and delete the advanced an
 
 # Configure ATP anti-phishing policies
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 ATP anti-phishing policies are part of [Office 365 Advanced Threat Protection](office-365-atp.md). ATP anti-phishing policies can help protect your organization from malicious impersonation-based phishing attacks and other types of phishing attacks. For more information about the differences between anti-phishing policies in Exchange Online Protection (EOP) and ATP anti-phishing policies, see [Anti-phishing protection](anti-phishing-protection.md).
 
 Admins can view, edit, and configure (but not delete) the default ATP anti-phishing policy. For greater granularity, you can also create custom ATP anti-phishing policies that apply to specific users, groups, or domains in your organization. Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.

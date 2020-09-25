@@ -23,6 +23,9 @@ ms.custom: seo-marvel-apr2020
 
 # Virus detection in SharePoint Online, OneDrive, and Microsoft Teams
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Microsoft 365 can help protect your environment from malware by detecting viruses in files that users upload to SharePoint Online, OneDrive, and Microsoft Teams. Files may be scanned for viruses after they are uploaded. If a file is found to be infected, a property is set so that users can't download or sync the file.
 
 > [!IMPORTANT]

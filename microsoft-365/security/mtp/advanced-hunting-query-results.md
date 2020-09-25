@@ -21,6 +21,9 @@ ms.topic: article
 
 # Work with advanced hunting query results
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 
