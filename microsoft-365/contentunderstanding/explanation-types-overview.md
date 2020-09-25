@@ -30,7 +30,7 @@ Explanations are used to help to define the information you want to label and ex
 
 - Pattern list: List patterns of numbers, letters, or other characters that can be used to identify the information you are trying to extract.  For example, you might want to extract the **Phone number** of the referring doctor from all Medical Referral document that the model identifies.</br>
 
-- Proximity:?  
+- Proximity: Describe how close explanations are to each other. For example, a street number pattern goes right before the street name phrase list with no tokens in between. 
  
  
 ## Phrase lists
@@ -106,5 +106,56 @@ Note that the explanation library also includes templates for phrase list explan
 
 
 
+## Proximity 
+
+The proximity explanation type helps you model to identify data through defining how close another piece of data is to it. For example, in your model, you have defined two explanations that label both the customer *Street address number* and *Phone number*. 
+
+You also notice that customer phone numbers always appear before the address. 
+
+Alex Wilburn<br>
+555-555-5555<br>
+One Microsoft Way<br>
+Redmond, WA 98034<br>
+
+You can use the proximity explanation to define how far away the phone number explanation is to better identify the street address number in your documents.
+
+   ![Proximity](../media/content-understanding/proximity.png)</br>
 
 
+### What are tokens?
+
+In order to use the proximity explanation type, you need to know what a token is, as the number of tokens is how the proximity explanation measures distance from one explanation to another.  
+
+For **English**, a token is a continuous span (no spaces or punctuation) of letters and numbers. A space is NOT a token. A punctuation character is a token. The following table shows some examples of how to determine the number of tokens in a phrase.
+
+|Phrase|Number of tokens|Explanation|
+|--|--|--|
+|`Dog`|1|A single word with no punctuation or spaces.|
+|`RMT33W`|1|A record locator number. It may have numbers and letters, but does not have any punctuation.|
+|`425-555-5555`|5|A phone number. Each punctuation mark is a single token so  `425-555-5555` would be 5 tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
+|`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
+
+### Configure the proximity explanation type
+
+For our example, we want to configure the proximity setting so that we can define the range of the number of tokens the *Phone number* explanation is from the *Street address number* explanation.
+
+We can already see that the minimum range is "0" since there are no tokens between the phone number and street address number.
+
+However, we see that some phone numbers in your sample documents are appended with *(mobile)*.
+
+Nestor Wilke<br>
+111-111-1111 (mobile)<br>
+One Microsoft Way<br>
+Redmond, WA 98034<br>
+
+There are three tokens in *(mobile)*:
+
+|Phrase|Token count|
+|--|--|
+|(|1|
+|mobile|2|
+|)|3|
+
+We would then configure the proximity setting to have a range of 0 through 3.
+
+   ![Proximity](../media/content-understanding/proximity-example.png)</br>
