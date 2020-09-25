@@ -21,8 +21,6 @@ Microsoft SharePoint Syntex provides you a sample model that you can examine to 
 
 To be able to access the sample model, you first need to import it to your content center.
 
-### To import the sample model
-
 1. On the content center, select **Models** to see your models list.</br>
 2. In **Models** page, select **Import sample model**.</br>
 
@@ -40,7 +38,7 @@ From the model home page, you can examine the model more closely to see how it w
 
  
 - View the sample files that were used to train the model.
-- Examine the model's extractors more closely to see how the explanations were configured.
+- Examine the model's entity extractors more closely to see how the explanations were configured.
 
    ![Sample model extractors](../media/content-understanding/entity-extractors.png)  
 
