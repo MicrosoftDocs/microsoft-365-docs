@@ -72,7 +72,7 @@ The experience proceeds as follows:
 1. The Autopilot experience starts and the user enters their credentials.
 2. The device opens the Enrollment Status Page and proceeds through Device Preparation and Device Setup phases. The third step (Account Setup) is *currently skipped* in the Microsoft Managed Desktop configuration because User ESP is disabled. The device restarts.
 3. After restart, the device opens the Windows sign-in page with **Other user**.
-4. The users enters their credentials again and the desktop opens.
+4. The users enter their credentials again and the desktop opens.
 
 > [!NOTE]
 > Win32 apps are only deployed during ESP if the Windows 10 version is 1903 or later.
