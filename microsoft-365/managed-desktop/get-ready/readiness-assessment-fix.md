@@ -13,3 +13,31 @@ ms.topic: article
 
 # Fix issues found by the readiness assessment tool
 
+
+
+## Microsoft Intune
+
+### Mobile Device Management (MDM) authority
+
+
+### Windows devices managed by Intune
+
+
+
+### MDM user scope
+
+
+
+### Device type restrictions
+
+
+
+### Enrollment Status Page
+
+
+
+
+
+
+
+## Azure
