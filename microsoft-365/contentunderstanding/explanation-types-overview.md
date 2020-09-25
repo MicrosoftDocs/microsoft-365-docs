@@ -16,7 +16,7 @@ description: "Learn more about explanation types."
 # Explanation types overview
 
 
-Explanations are used to help to define the information you want to label and extract in your document understanding models.  When creating an explanation, you need to select an explanation type. This article provides you an overview to help you better understand the explanation types.
+Explanations are used to help to define the information you want to label and extract in your document understanding models.  When creating an explanation, you need to select an explanation type. This article will help you learn more to better understand the different explanation types and how they are used.
 
    ![Explanation types](../media/content-understanding/explanation-types.png) 
 
@@ -25,17 +25,18 @@ Explanations are used to help to define the information you want to label and ex
 
 ## Explanation types
 
+The three explanation types that are available to you when creating an explanation are:
 
-- Phrase list: A list of words, phrases, numbers, or other characters that can be used to the document or information you are trying to extract. For example, the text string **Referring Doctor** is in all Medical Referral documents you are trying to identify.</br>
+- **Phrase list**: A list of words, phrases, numbers, or other characters that can be used to the document or information you are trying to extract. For example, the text string **Referring Doctor** is in all Medical Referral documents you are trying to identify.</br>
 
-- Pattern list: List patterns of numbers, letters, or other characters that can be used to identify the information you are trying to extract.  For example, you might want to extract the **Phone number** of the referring doctor from all Medical Referral document that the model identifies.</br>
+- **Pattern list**: List patterns of numbers, letters, or other characters that can be used to identify the information you are trying to extract.  For example, you might want to extract the **Phone number** of the referring doctor from all Medical Referral document that the model identifies.</br>
 
-- Proximity: Describe how close explanations are to each other. For example, a street number pattern goes right before the street name phrase list with no tokens in between. 
+- **Proximity**: Describe how close explanations are to each other. For example, a street number pattern goes right before the street name phrase list, with no tokens in between. 
  
  
-## Phrase lists
+## Phrase list
 
-A phrase list explanation type is more commonly used to identify and classify a document through your model, as described in the *Referring Doctor* label example. 
+A phrase list explanation type is more commonly used to identify and classify a document through your model. As described in the *Referring Doctor* label example, it is a string of words, phrases, numbers, or characters that is consistently in the documents you are trying to identify.
 
 While not a requirement, you will have better success with your explanation if the phrase your are trying to capture is located in a consistent location in your document.  For example, the *Referring Doctor* label might be consistently in the first paragraph of the document.
 
@@ -46,7 +47,7 @@ If case sensitivity is a requirement in identifying your label, using the phrase
 
 ## Pattern lists
 
-A pattern list type is especially useful when you are creating an explanation that is trying to identify and extract information from a document that is commonly presented in different formats, such as dates, phone numbers, or credit card numbers. For example, a date can be a displayed in a number of different formats (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, Jan 1,2020, etc.). Defining a pattern list makes your explanation more efficient in being able to capture any possible variations in the data you are trying to identify and extract. 
+A pattern list type is especially useful when you are creating an explanation that is trying to identify and extract information from a document, and is commonly presented in different formats, such as dates, phone numbers, or credit card numbers. For example, a date can be  displayed in a number of different formats (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, Jan 1,2020, etc.). Defining a pattern list makes your explanation more efficient in being able to capture any possible variations in the data you are trying to identify and extract. 
 
 For the **Phone number** example, we are trying to extract the phone number for each referring doctor from all Medical Referral document that the model identifies. When we create the explanation, selecting the Pattern list type allows us to type in the different formats that we might expect if there is variation.
 
@@ -56,7 +57,7 @@ For this example, we want to select the **Any digit from 0-9** checkbox. Selecti
 
    ![Any digit from 0-9](../media/content-understanding/digit-identity.png)
 
-Similarly, if we are creating a pattern list that might include text characters, you will want to select **Any letter from a-z** checkbox. Selecting this will recognize each "a" character we used in our patter list to be any character from "a" to "z".
+Similarly, if we are creating a pattern list that might include text characters, you will want to select the **Any letter from a-z** checkbox. Selecting this will recognize each "a" character we used in our patter list to be any character from "a" to "z".
 
 For example, if we are creating a **Date** pattern list, and want to make sure that a date format such as *Jan 1, 2020* is recognized, you need to:
 - Add *aaa 0, 0000* and *aaa 00, 0000* to your pattern list.
@@ -73,13 +74,13 @@ Additionally, if you have capitalization requirements in your pattern list, you 
 
 ## Use the explanation library
 
-While you can manually add various pattern list values for your explanation, it can be much easier to use the pre-made ones that are defined through templates provided to you in the explanation library.
+While you can manually add various pattern list values for your explanation, it can be much easier to use the pre-created templates provided to you in the explanation library.
 
 For example, instead of manually adding all the variations for *Date*, you can use the Pattern List template for *Date*, that already includes a number of pattern lists values:</br>
 
    ![Explanation library template for date](../media/content-understanding/explanation-template.png)</br>
  
-The explanation library includes a number of commonly used explanations, including:</br>
+The explanation library includes a number of commonly used pattern list explanations, including:</br>
 
 - Date</br>
 - Date (numeric)</br>
@@ -109,9 +110,9 @@ Note that the explanation library also includes templates for phrase list explan
 
 ## Proximity 
 
-The proximity explanation type helps you model to identify data through defining how close another piece of data is to it. For example, in your model, you have defined two explanations that label both the customer *Street address number* and *Phone number*. 
+The proximity explanation type helps your model to identify data through defining how close another piece of data is to it. For example, in your model, you have defined two explanations that label both the customer *Street address number* and *Phone number*. 
 
-You also notice that customer phone numbers always appear before the address. 
+You also notice that customer phone numbers always appear before the street address number. 
 
 Alex Wilburn<br>
 555-555-5555<br>
@@ -127,7 +128,7 @@ You can use the proximity explanation to define how far away the phone number ex
 
 In order to use the proximity explanation type, you need to know what a token is, as the number of tokens is how the proximity explanation measures distance from one explanation to another.  
 
-For **English**, a token is a continuous span (no spaces or punctuation) of letters and numbers. A space is NOT a token. A punctuation character is a token. The following table shows some examples of how to determine the number of tokens in a phrase.
+ A token is a continuous span (no spaces or punctuation) of letters and numbers. A space is NOT a token. Each punctuation character is a token. The following table shows some examples of how to determine the number of tokens in a phrase.
 
 |Phrase|Number of tokens|Explanation|
 |--|--|--|
