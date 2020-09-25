@@ -17,7 +17,7 @@ search.appverid:
 ms.assetid: 
 ms.custom:
 - seo-marvel-apr2020
-description: "Overview about processing various forms of data in Advanced eDiscovery".
+description: "Overview about processing various forms of data in Advanced eDiscovery."
 ---
 
 # Work with processing errors in Advanced eDiscovery

@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to use error remediation to correct data issues in Data Investigations (Preview) that might prevent proper processing of content."
+description: "Learn how to use error remediation to correct data issues in Data Investigations (preview) that might prevent proper processing of content."
 ms.custom: 
  - seo-marvel-mar2020
  - seo-marvel-apr2020
@@ -22,9 +22,9 @@ ms.custom:
 
 # Error remediation when processing data for an investigation
 
-Error remediation allows investigators the ability to rectify data issues that prevent Data Investigations (Preview) from properly processing the content. For example, files that are password protected cannot be processed since the files are locked or encrypted. Using error remediation, investigators can download files with such errors, remove the password protection, and upload the remediated files.
+Error remediation allows investigators the ability to rectify data issues that prevent Data Investigations (preview) from properly processing the content. For example, files that are password protected cannot be processed since the files are locked or encrypted. Using error remediation, investigators can download files with such errors, remove the password protection, and upload the remediated files.
 
-Use the following workflow to remediate files with errors in Data Investigations (Preview) cases.
+Use the following workflow to remediate files with errors in Data Investigations (preview) cases.
 
 ## Creating an error remediation session to remediate files with processing errors
 
@@ -69,7 +69,7 @@ Use the following workflow to remediate files with errors in Data Investigations
    > [!NOTE]
     > It's important that you retain the directory structure and file names of the remediated files. The path names of the downloaded files and folders make it possible to associate the remediated files with the original files.  If the directory structure or file names are changed, you'll receive the following error: `Cannot apply Error Remediation to the current Evidenceset`.
 
-8. Now, return to Data Investigations (Preview) and click **Next: Upload files**.  This will move to the next step where you can now upload the files.
+8. Now, return to Data Investigations (preview) and click **Next: Upload files**.  This will move to the next step where you can now upload the files.
 
     ![Upload Files](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
@@ -79,7 +79,7 @@ Use the following workflow to remediate files with errors in Data Investigations
 
     ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. Finally, return to Data Investigations (Preview) and click **Next: Process files**.
+11. Finally, return to Data Investigations (preview) and click **Next: Process files**.
 
 12. When processing is complete.  You can return to the working set and see the remediated file.
 
@@ -97,4 +97,4 @@ When remediated files are uploaded, the original metadata is preserved except fo
 - WordCount
 - WorkingsetId
 
-For a definition of all document metadata fields in Data Investigations (Preview), see [Document metadata fields](document-metadata-fields.md).
+For a definition of all document metadata fields in Data Investigations (preview), see [Document metadata fields](document-metadata-fields.md).

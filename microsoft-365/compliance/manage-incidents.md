@@ -19,7 +19,7 @@ ms.assetid:
 description: ""
 ---
 
-# Manage evidence sets in Data Investigations (Preview)  
+# Manage evidence sets in Data Investigations (preview)  
 
 Content coming soon.
 

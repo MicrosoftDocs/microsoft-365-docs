@@ -1,5 +1,5 @@
 ---
-title: "Manage load sets"
+title: "Manage load sets in Data Investigations (preview)"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,6 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: ""
 ---
 
-# Manage load sets
+# Manage load sets in Data Investigations (preview)
 
 Content coming soon.
