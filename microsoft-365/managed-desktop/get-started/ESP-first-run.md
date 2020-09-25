@@ -103,3 +103,5 @@ You might want to request a different device name template. You cannot, however,
 - No applications should require the device to restart. We recommend that applications be set to "Do nothing" when you build the application package if they will require a restart.
 - Limit required applications to only the core applications that a user needs immediately when they sign in to the device.
 - Keep the total size of all applications collectively under 1 GB to avoid timeouts during the application installation phase.
+- You should consider, configure, test, and validate application dependencies as part of your ESP evaluation.
+- No applications that require the "user" context (for example, Teams) can be included in the public preview of ESP.
