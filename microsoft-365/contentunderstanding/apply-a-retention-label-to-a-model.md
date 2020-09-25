@@ -24,7 +24,7 @@ description: "Learn how to apply a retention label to a document understanding m
 
 You can easily apply a [retention label](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide#retention-labels) to a document understanding model in Project Cortex.
 
-Retention labels let you apply retention settings to the documents that your document understanding model identify.  For example, you want your model to not only identify any *Insurance notice* documents that are uploaded to your document library, but to also apply a *Business* retention tag to them so that these documents cannot be deleted from the document library for the specified time period (the next five months, for example).
+Retention labels let you apply retention settings to the documents that your document understanding models identify.  For example, you want your model to not only identify any *Insurance notice* documents that are uploaded to your document library, but to also apply a *Business* retention tag to them so that these documents cannot be deleted from the document library for the specified time period (the next five months, for example).
 
 You can apply a pre-existing retention label to your document understanding model through your model settings on your model's home page. 
 
@@ -54,9 +54,9 @@ If your document understanding model has already been applied to a document libr
 After applying the update and syncing it to your model, you can confirm that it has been applied by doing the following:
 
 1. In the content center, in the **Libraries with this model** section, click on the library to which your updated model was applied. </br>
-1. In your document library view, select the information icon to check the model properties.</br>  
-2. In the **Active models** list, select your updated model.</br>
-3. In the **Retention label** section you will see the name of the applied retention label.</br>
+2. In your document library view, select the information icon to check the model properties.</br>  
+3. In the **Active models** list, select your updated model.</br>
+4. In the **Retention label** section you will see the name of the applied retention label.</br>
 
 
 On your model's view page in your document library, a new **Retention label** column will display.  As your model classifies files it identifies as belonging to it's content type and lists them in the library view, the Retention label column will also display the name of the retention label that has been applied to it through the model.

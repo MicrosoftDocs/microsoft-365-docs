@@ -33,14 +33,16 @@ To be able to access the sample model, you first need to import it to your conte
     ![Sample model](../media/content-understanding/sample-model.png) </br>
 
 4. Select the *BenefitsChangeNotice.classifier* to open the model home page.</br>
+  
+     ![Sample model](../media/content-understanding/sample-home-page.png)
 
-5. On the model home page, in the **Example files for training** section, select **Add sample files**. </br>
+From the model home page, you can examine the model more closely to see how it was created.
 
+ 
+- View the sample files that were used to train the model.
+- Examine the model's extractors more closely to see how the explanations were configured.
 
-6. On the **Select sample files for your model**, page, open the  the **BenefitsChangeNotice Training Files** folder, and select the example files you want to train your model.  Then select **Add**.</br> 
-
-    ![Sample model](../media/content-understanding/select-files.png) </br> 
-
+   ![Sample model extractors](../media/content-understanding/entity-extractors.png)  
 
 
 
