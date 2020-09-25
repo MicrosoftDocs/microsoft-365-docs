@@ -18,7 +18,7 @@ Microsoft Managed Desktop uses both [Windows Autopilot](https://docs.microsoft.c
 
 The Enrollment Status Page is currently in public preview.
 
-## Initial deployment of ESP
+## Initial deployment
 
 To provide the ESP experience, you must register devices in the Microsoft Managed Desktop service. For more about registration, see [Register new devices yourself](../get-started/register-devices-self.md) or [Steps for Partners to register devices](../get-started/register-devices-partner.md).
 
