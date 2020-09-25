@@ -159,7 +159,7 @@ Note that the explanation library also includes templates for phrase list explan
 
 2.  On the **Explanation templates** page, select the explanation you want to use, and then select **Add**.</br>
 
-   ![Select a template](../media/content-understanding/phone-template.png)</br>
+       ![Select a template](../media/content-understanding/phone-template.png)</br>
 
 3. The information for the template you selected will display on the **Create an explanation** page. If needed, you can edit the explanation name, and add or remove items from the pattern list. </br> 
 
