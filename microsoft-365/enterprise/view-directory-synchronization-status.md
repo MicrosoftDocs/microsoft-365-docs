@@ -54,8 +54,6 @@ If there is a problem with your directory synchronization, the errors are listed
 
 In this section, you'll install an Azure AD Connect Health agent on each of your on-premises AD DS domain controllers to monitor your identity infrastructure and the synchronization services provided by Azure AD Connect. The monitoring information is made available in an Azure AD Connect Health portal, where you can view alerts, performance monitoring, usage analytics, and other information.
 
-![Components of Azure AD Connect Health](../media/identity-add-user-accounts/identity-azure-ad-connect-health.png)
-
 The key design decision of how to use Azure AD Connect Health is based on how you are using Azure AD Connect:
 
 - If you’re using the **managed authentication** option, start with [Using Azure AD Connect Health with sync](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) to understand and configure Azure AD Connect Health.
