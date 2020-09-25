@@ -22,7 +22,7 @@ The Enrollment Status Page is currently in public preview.
 
 To provide the ESP experience, you must register devices in the Microsoft Managed Desktop service. For more about registration, see [Register new devices yourself](../get-started/register-devices-self.md) or [Steps for Partners to register devices](../get-started/register-devices-partner.md).
 
-Once your devices are registered with the service, you can enable ESP for your Microsoft Managed Desktop devices by filing a support ticket through the [Admin Portal](https://portal.azure.com/). We will initially deploy the ESP configuration to the Test Group when you file the ticket. It is deployed to the other subsequent deployment groups (First, Fast, and Broad) each 24 hours. To pause the deployment, file another ticket asking Operations to hold.
+Once your devices are registered with the service, you can enable ESP for your Microsoft Managed Desktop devices by filing a support ticket through the [Admin Portal](https://portal.azure.com/). We will initially deploy the ESP configuration to the Test group when you file the ticket. It is deployed to the other subsequent deployment groups (First, Fast, and Broad) each 24 hours. To pause the deployment, file another ticket asking Operations to hold.
 
 ## Autopilot profile settings
 
@@ -81,9 +81,7 @@ The experience proceeds as follows:
 
 ## White glove provisioning
 
-You can use the "white glove" feature of Autopilot to pre-provision a device so that it is completely set up and ready for business. The experience looks the same to the end user, but proceeds faster. For more information, see [Windows Autopilot for white glove deployment](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove).
-
-In the implementation used by Microsoft Managed Desktop, the Account Setup phase is not used. See the "[Technician flow](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#scenarios)" scenario for more information about using white glove provisioning.
+Microsoft Managed Desktop doesn't currently support the "white glove" feature of Windows Autopilot.
 
 ## Exceptions
 
@@ -101,7 +99,7 @@ You might want to request a different device name template. You cannot, however,
 
 ## Required applications
 
-- You must target applications in the Modern Workplace *device groups* Test, First, Fast, and Broad. Make sure to complete testing with ESP in the Test group before you assign them to all groups.
+- You must target applications in the Modern Workplace *device groups* Test, First, Fast, and Broad. Applications must install in the "System" context. Make sure to complete testing with ESP in the Test group before you assign them to all groups.
 - No applications should require the device to restart. We recommend that applications be set to "Do nothing" when you build the application package if they will require a restart.
 - Limit required applications to only the core applications that a user needs immediately when they sign in to the device.
-- Keep applications under 1 GB in size to avoid timeouts during the application installation phase.
+- Keep the total size of all applications collectively under 1 GB to avoid timeouts during the application installation phase.
