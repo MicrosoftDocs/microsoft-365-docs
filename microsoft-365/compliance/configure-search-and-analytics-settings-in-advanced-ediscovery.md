@@ -19,7 +19,7 @@ ms.custom: seo-marvel-mar2020
 description: "Configure Advanced eDiscovery settings that apply to all review set in a case. This includes settings for analytics and Optical character recognition."
 ---
 
-# Configure search and analytics settings
+# Configure search and analytics settings in Advanced eDiscovery
 
 You can configure settings for each Advanced eDiscovery case to control the following functionality.
 
