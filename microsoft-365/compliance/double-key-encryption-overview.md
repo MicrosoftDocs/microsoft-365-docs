@@ -23,13 +23,15 @@ Have a question about how Double Key Encryption works? Check for an answer here.
 
 ## What is Double Key Encryption for Microsoft 365 (DKE)?
 
-Double Key Encryption for Microsoft 365 enables customers to protect their highly sensitive data to meet specialized requirements. It helps customers maintain full control of their encryption keys. It uses two keys to protect data; one key in the your control and a second key stored securely in Microsoft Azure. Viewing data protected with Double Key Encryption requires access to both keys. Since Microsoft can access only one of these keys, protected data remains inaccessible to Microsoft, ensuring that you have full control over your data privacy and security.  
+Double Key Encryption for Microsoft 365 enables customers to protect their highly sensitive data to meet specialized requirements. It helps customers maintain full control of their encryption keys. It uses two keys to protect data; one key in your control and a second key stored securely in Microsoft Azure. Viewing data protected with Double Key Encryption requires access to both keys. Since Microsoft can access only one of these keys, protected data remains inaccessible to Microsoft, ensuring that you have full control over your data privacy and security.  
 
-You can host the Double Key Encryption service used to request your key, in a location of your choice (on-premises key management server or in the cloud). You maintain the service as you would any other application. Double Key Encryption enables you to control access to the Double Key Encryption service. You can store your highly sensitive data on-premises or move it to the cloud and be confident about preventing third-party access as you maintain full control of your key. Double Key Encryption allows you to store your data and key in the same location. Finally, DKE helps you meet regulatory requirements across several regulations and standards such as the General Data Protection Regulation (GDPR), the Health Insurance Portability and Accountability Act (HIPAA), the Gramm-Leach-Bliley Act (GLBA), Russia’s data localization law – Federal Law No. 242-FZ, Australia’s Federal Privacy Act 1988, and New Zealand’s Privacy Act 1993.
+You can host the Double Key Encryption service used to request your key, in a location of your choice (on-premises key management server or in the cloud). You maintain the service as you would any other application. Double Key Encryption enables you to control access to the Double Key Encryption service. You can store your highly sensitive data on-premises or move it to the cloud. You can be confident about preventing third-party access because you maintain full control of your key. Double Key Encryption allows you to store your data and key in the same location.
+
+DKE helps you meet regulatory requirements across several regulations and standards such as the General Data Protection Regulation (GDPR), the Health Insurance Portability and Accountability Act (HIPAA), the Gramm-Leach-Bliley Act (GLBA), Russia’s data localization law – Federal Law No. 242-FZ, Australia’s Federal Privacy Act 1988, and New Zealand’s Privacy Act 1993.
 
 ## Can I use Double Key Encryption with Microsoft Office built-in sensitivity labeling?
 
-Currently documents protected using Double Key Encryption do not support Microsoft Office built-in sensitivity labeling. You'll need to use the Azure Information Protection unified labeling client.
+You'll need to use the Azure Information Protection unified labeling client to protect documents with Double Key Encryption. Currently, you can't use Microsoft Office built-in sensitivity labeling. 
 
 ## What Microsoft 365 Apps can I use with DKE?
 
@@ -53,17 +55,17 @@ Deploying Double Key Encryption won't affect your existing HYOK setup. However, 
 
 ## Can I run Double Key Encryption in my non-Microsoft air-gapped environment?
 
-Double Key Encryption does not support this scenario. The Double Key Encryption service requires access to Microsoft Azure.
+DKE doesn't support these environments because the service requires access to Microsoft Azure.
 
 ## Where can I store Double Key Encrypted documents?
 
-You can store Double Key Encrypted documents on-premises or in the cloud. You can move encrypted content to SharePoint Online and OneDrive for Business. Since Microsoft doesn't have access to your private key, the encrypted data remains opaque to Microsoft. As a result, you won't be able to view the encrypted documents online in Office Web Apps.
+You can store Double Key Encrypted documents on-premises or in the cloud. In the cloud, you can move encrypted content to SharePoint Online and OneDrive for Business. Since Microsoft doesn't have access to your private key, the encrypted data remains opaque to Microsoft. This also means that you can't view the encrypted documents online in Office Web Apps.
 
 ## What regions and languages is Double Key Encryption available in? Is Double Key Encryption available worldwide?
 
-Double Key Encryption labels are localized in the same languages as other sensitivity labels in Microsoft Information Protection. Double Key Encryption is available worldwide.
+DKE labels are localized to the same languages as other sensitivity labels in Microsoft Information Protection. Double Key Encryption is available worldwide.
 
-## Can I convert a non-DKE label to a DKE label and vice versa?
+## Can I convert a non-DKE label to a DKE label?
 
 No. You can’t add DKE to a label after you create it. Instead, you must choose **Use Double Key Encryption** and provide the URL of your Double Key Encryption service when you create the label.
 
@@ -73,4 +75,4 @@ For instructions on rolling (also called rotating or rekeying) the key you store
 
 See [Tenant and key settings](double-key-encryption.md#tenant-and-key-settings) for information on creating a new key for the DKE service.
 
-When you setup a key you setup a name and a GUID.  When you rotate a key, you keep the old record with the name and GUID but add a new record with the same name but different GUID. The new key gets set as active so that the public key API starts returning it for new encryption. Both keys are available for decryption so that new content and old content can be decrypted.
+When you create a key, you set up a name and a GUID. Then, if you rotate a key, you keep the old record with the name and GUID but add a new record with the same name but different GUID. The new key gets set as active so that the public key API starts returning it for new encryption. Both keys are available for decryption so that new content and old content can be decrypted.
