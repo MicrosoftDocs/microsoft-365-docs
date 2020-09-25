@@ -109,7 +109,7 @@ Note that the explanation library also includes templates for phrase list explan
 
 ## Proximity 
 
-The proximity explanation type helps you model to identify data through defining how close another piece of data is to it. For example, in your model, you have defined two explanations that label both the customer *Street address number* and *Phone number*. 
+The proximity explanation type helps your model to identify data through defining how close another piece of data is to it. For example, in your model, you have defined two explanations that label both the customer *Street address number* and *Phone number*. 
 
 You also notice that customer phone numbers always appear before the address. 
 
