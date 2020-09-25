@@ -35,6 +35,8 @@ You can pilot Microsoft 365 with these requirements and limitations:
 
 - Users might not be able to use Microsoft 365 spam filtering.
 
+- This is recommended for a very small number of users and only applies to the use of email for a pilot.
+
 ## Set up a Microsoft 365 pilot
 
 Follow these steps to set up a Microsoft 365 pilot:
