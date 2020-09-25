@@ -103,7 +103,7 @@ User accounts have two sources; Windows Server Active Directory (AD) which are a
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
 ```
-This command instructs PowerShell to get all users who have the attributte Dirsyncenabled set to True. This can be used to pull up accounts synchronozing from on premise AD.
+This command instructs PowerShell to get all users who have the attribute Dirsyncenabled set to True. It can be used to pull up accounts synchronizing from on-premise AD.
 
 
 ```powershell
