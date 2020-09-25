@@ -1,5 +1,5 @@
 ---
-title: "Explanation types overview"
+title: "Explanation types"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn more about explanation types."
 ---
 
-# Explanation types overview
+# Explanation types
 
 
 Explanations are used to help to define the information you want to label and extract in your document understanding models.  When creating an explanation, you need to select an explanation type. This article will help you learn more to better understand the different explanation types and how they are used.
