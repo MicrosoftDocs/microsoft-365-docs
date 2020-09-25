@@ -20,7 +20,7 @@ description: Find information about description, indexing, search, export, and d
 ms.custom: seo-marvel-mar2020
 ---
 
-# Data Investigations (Preview) limits
+# Limits in Data Investigations (Preview)
 
 This article describes the limits in Data Investigations (Preview).
 

@@ -15,8 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: Learn how to select documents from one review set and work with them individually in another set in an Advanced eDiscovery case.
+description: "Learn how to select documents from one review set and work with them individually in another set in an Advanced eDiscovery case."
 ms.custom: 
 - seo-marvel-mar2020
 - seo-marvel-apr2020

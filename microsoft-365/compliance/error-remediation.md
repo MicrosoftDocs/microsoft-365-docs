@@ -14,9 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: Learn how to use error remediation to correct data issues in Data Investigations (Preview) that might prevent proper processing of content.
+description: "Learn how to use error remediation to correct data issues in Data Investigations (Preview) that might prevent proper processing of content."
 ms.custom: 
  - seo-marvel-mar2020
  - seo-marvel-apr2020
