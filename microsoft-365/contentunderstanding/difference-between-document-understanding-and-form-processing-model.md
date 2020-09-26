@@ -1,24 +1,22 @@
 ---
-title: "Difference between document understanding and form processing models (Preview)"
+title: "Difference between document understanding and form processing models"
 ms.author: efrene
 author: efrene
 manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Describes key difference between document understanding and form processing models."
 ---
 
-# Difference between document understanding and form processing models (Preview)
+# Difference between document understanding and form processing models 
 
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
-Content understanding in Project Cortex allows you to identify and classify documents that are uploaded to SharePoint document libraries, as well as extracting relevant information from each file.  For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such and displayed in a custom document library view in which they are displayed. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it in a column in your document library view. 
+Microsoft SharePoint Syntex allows you to identify and classify documents that are uploaded to SharePoint document libraries, as well as extracting relevant information from each file.  For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such and displayed in a custom document library view in which they are displayed. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it in a column in your document library view. 
 
 
 Content understanding lets you create *models* to identify and extract the information you need.  There are two types of models that can be used:

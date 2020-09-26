@@ -1,22 +1,20 @@
 ---
-title: "Create a classifier (Preview)"
+title: "Create a classifier"
 ms.author: efrene
 author: efrene
 manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to create a classifier"
 ---
 
-# Create a classifier (Preview)
+# Create a classifier in Microsoft SharePoint Syntex
 
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
 </br>
 

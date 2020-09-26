@@ -1,22 +1,20 @@
 ---
-title: "Create a content center (Preview)"
+title: "Create a content center in Microsoft SharePoint Syntex"
 ms.author: efrene
 author: efrene
 manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to create a content center."
 ---
 
-# Create a content center (Preview)
+# Create a content center in Microsoft SharePoint Syntex
 
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).</br>
 
 </br>
 

@@ -1,21 +1,19 @@
 ---
-title: "Create an extractor (Preview)"
+title: "Create an extractor"
 ms.author: efrene
 author: efrene
 manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to create an extractor"
+description: "Learn how to create an extractor in Microsoft SharePoint Syntex."
 ---
 
-# Create an extractor (Preview)
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+# Create an extractor in Microsoft SharePoint Syntex
 
 </br>
 

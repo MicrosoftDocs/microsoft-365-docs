@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 10/1/2020
 audience: admin
 ms.topic: article
-ms.service: 
+ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn more about explanation types."
+description: "Learn more about explanation types in Microsoft SharePoint Syntex."
 ---
 
 # Explanation types
 
 
-Explanations are used to help to define the information you want to label and extract in your document understanding models.  When creating an explanation, you need to select an explanation type. This article will help you learn more to better understand the different explanation types and how they are used.
+Explanations are used to help to define the information you want to label and extract in your document understanding models when using Microsoft SharePoint Syntex.  When creating an explanation, you need to select an explanation type. This article will help you learn more to better understand the different explanation types and how they are used.
 
    ![Explanation types](../media/content-understanding/explanation-types.png) 
 

@@ -6,7 +6,7 @@ manager: pamgreen
 ms.date: 10/1/2020
 audience: admin
 ms.topic: article
-ms.service: 
+ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW

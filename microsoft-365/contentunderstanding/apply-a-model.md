@@ -1,22 +1,20 @@
 ---
-title: "Apply a Document understanding model to a document library (Preview)"
+title: "Apply a Document understanding model to a document library"
 ms.author: efrene
 author: efrene
 manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to apply a published a model to a SharePoint document library."
+description: "Learn how to apply a published a model to a SharePoint document library when using Microsoft SharePoint Syntex."
 ---
 
-# Apply a document understanding model (Preview)
+# Apply a document understanding model in Microsoft SharePoint Syntex
 
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
 </br>
 

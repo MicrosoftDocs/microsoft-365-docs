@@ -6,7 +6,7 @@ manager: pamgreen
 ms.date: 10/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
@@ -22,7 +22,7 @@ description: "Learn how to apply a retention label to a document understanding m
 
 </br>
 
-You can easily apply a [retention label](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide#retention-labels) to a document understanding model in Project Cortex.
+You can easily apply a [retention label](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide#retention-labels) to a document understanding model in Microsoft SharePoint Syntex.
 
 Retention labels let you apply retention settings to the documents that your document understanding models identify.  For example, you want your model to not only identify any *Insurance notice* documents that are uploaded to your document library, but to also apply a *Business* retention tag to them so that these documents cannot be deleted from the document library for the specified time period (the next five months, for example).
 

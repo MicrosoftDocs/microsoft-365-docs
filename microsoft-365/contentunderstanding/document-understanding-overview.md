@@ -1,21 +1,20 @@
 ---
-title: "Document understanding overview (Preview)"
+title: "Document understanding overview"
 ms.author: efrene
 author: efrene
 manager: pamgreen
 ms.date: 08/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Get an overview of the document understanding in Project Cortex."
+description: "Get an overview of the document understanding in Microsoft SharePoint Syntex."
 ---
 
-# Document understanding overview (Preview)
-> [!Note] 
-> Project Cortex is currently in Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+# Document understanding overview
+
 
 </br>
 
@@ -23,7 +22,7 @@ description: "Get an overview of the document understanding in Project Cortex."
 
 </br>
 
-Document understanding uses AI models to automate classification of files and extraction of information. It works best with unstructured documents, like letters or contracts. The documents should have text that can be identified based on phrases or patterns. The identified text can designate both the type of file it is (its classification) and what you'd like to extract (its extractors).
+In Microsoft SharePoint Syntex, document understanding uses AI models to automate classification of files and extraction of information. It works best with unstructured documents, like letters or contracts. The documents should have text that can be identified based on phrases or patterns. The identified text can designate both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
 Document understanding models are created and managed in a type of SharePoint site called a content center. When applied to a SharePoint document library, the model is associated with a content type which has columns to store the information extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types in order to use their schema.
 
