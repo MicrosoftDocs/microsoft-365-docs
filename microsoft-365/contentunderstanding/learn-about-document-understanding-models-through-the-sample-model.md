@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn about document understanding models through the sample model."
+description: "Learn about document understanding models through the sample model"
 ---
 
-# Learn about document understanding models through the sample model
+# Learn about document understanding models through a sample model
 
-Microsoft SharePoint Syntex provides you a with sample model that you can use to examine, giving you a better understanding of how to create your own models. It also allows you to examine model components, such as its classifier, extractors, and explanations. You can also use the sample files to train the model.
+Microsoft SharePoint Syntex provides you a with a sample model you can use to examine, giving you a better understanding of how to create your own models. The sample model also allows you to examine model components, such as its classifier, extractors, and explanations. You can also use the sample files to train the model.
 
 ## Import the sample model
 
-To access the sample model, first you need to import the model to your content center.
+To access the sample model, you need to first import the model to your content center.
 
 1. From the content center, select **Models** to see your models list.</br>
 2. On the **Models** page, select **Import sample model**.</br>
