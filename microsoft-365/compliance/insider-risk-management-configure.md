@@ -51,6 +51,9 @@ Depending on the structure of your compliance management team, you have options 
 | **Insider Risk Management Analysts** | Use this group to assign permissions to users that will act as insider risk case analysts. Users in this role group can access all insider risk management alerts, cases, and notices templates. They cannot access the insider risk Content Explorer. |
 | **Insider Risk Management Investigators** | Use this group to assign permissions to users that will act as insider risk data investigators. Users in this role group can access all insider risk management alerts, cases, notices templates, and the Content Explorer. |
 
+>[!Note]
+>These Role groups are currently not supported on Privileged Identity Management (PIM). To Learn more about PIM, See [Azure AD roles in Privileged Identity Management](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)
+
 ### Add users to an insider risk management role group
 
 Complete the following steps to add users to an insider risk management role group:
