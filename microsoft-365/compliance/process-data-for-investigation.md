@@ -24,7 +24,7 @@ Processing is the process of file identification, expansion of embedded document
 
 When a person is added in **People of interest** tab, all partially indexed items from Microsoft 365 are processed to make them fully searchable.  Likewise, when data is added to the **Evidence** tab from Microsoft 365 or non-Microsoft 365 data sources, the content is also processed.
 
-The **Processing** tab in Data Investigations (Preview) provides transparency into the status of *Advanced Indexing* for all of these scenarios.
+The **Processing** tab in Data Investigations (preview) provides transparency into the status of *Advanced Indexing* for all of these scenarios.
 
 See the following articles for more details.
 
