@@ -32,7 +32,7 @@ The resources on this page are designed to get you started with learning about a
 
 ## Get started
 
-The resources in this section can help you learn more about the two methods used by SharePoint Syntex, form processing and document understanding.
+The resources in this section help you learn more about the two methods used by SharePoint Syntex: form processing and document understanding.
 
 |**If you're looking for this information:**|**Go to this resource:**|
 |:-----|:-----|
@@ -40,9 +40,9 @@ The resources in this section can help you learn more about the two methods used
 |Understand the differences between the two methods|[Difference between document understanding and form processing models](/https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
 
   
-## Setup
+## Set up SharePoint Syntex
 
-The resources in this section will help your admin in your organization to set up and configure Microsoft SharePoint Syntex in your Microsoft 365 environment.
+The resources in this section help your admin in your organization to set up and configure Microsoft SharePoint Syntex in your Microsoft 365 environment.
 
 |**If you're looking for this information:**|**Go to this resource:**|
 |:-----|:-----|
@@ -51,7 +51,7 @@ The resources in this section will help your admin in your organization to set u
  
 ## Models
 
-The resources in this section will help your users to learn how to create and configure document understanding and form processing models.
+The resources in this section help your users learn how to create and configure document understanding and form processing models.
 
 |**If you're looking for this information:**|**Go to this resource:**|
 |:-----|:-----|
@@ -61,9 +61,7 @@ The resources in this section will help your users to learn how to create and co
 
 ## Premium services
 
-A SharePoint Syntex license gives your users premium content services that give you additional functionality in your Microsoft 365 environment. The resources in this section.....
-
-For more information about premium content services provided through SharePoint Syntex, see the [Microsoft SharePoint Syntex service description](). 
+A SharePoint Syntex license gives your users premium content services for accessing additional functionality in your Microsoft 365 environment. For more information about premium content services provided through SharePoint Syntex, see the [Microsoft SharePoint Syntex service description](). 
 
 
 |**If you're looking for this information:**|**Go to this resource:**|
