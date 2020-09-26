@@ -1,9 +1,9 @@
 ---
-title: "Configure Safe Links policies and global settings"
+title: "Set up Safe Links policies in Office 365 ATP"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: article
@@ -19,7 +19,7 @@ ms.collection:
 description: "Admins can learn how to view, create, modify, and delete Safe Links policies and global Safe Links settings in Office 365 Advanced Threat Protection (ATP)."
 ---
 
-# Configure Safe Links policies and global settings in Office 365 ATP
+# Set up Safe Links policies in Office 365 ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -28,15 +28,13 @@ description: "Admins can learn how to view, create, modify, and delete Safe Link
 
 Safe Links is a feature in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) that provides URL scanning of inbound email messages in mail flow, and time of click verification of URLs and links in email messages and in other locations. For more information, see [Safe Links in Office 365 ATP](atp-safe-links.md).
 
-There's no built-in or default Safe Links policy. To get Safe Links scanning of URLs in email messages and Microsoft Teams, you need to create one or more Safe Links policies as described in this article.
+There's no built-in or default Safe Links policy. To get Safe Links scanning of URLs, you need to create one or more Safe Links policies as described in this article.
 
-Safe Links also uses global settings that apply to users who are included in active Safe Links policies. Global settings are the **Block the following URLs** list and Safe Links protection for supported Office 365 apps. Configuration instructions for these global settings are also included in this article.
-
-You can configure Safe Links policies and global Safe Links settings in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Office 365 ATP add-on subscriptions).
+You can configure Safe Links policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Office 365 ATP add-on subscriptions).
 
 The basic elements of a Safe Links policy are:
 
-- **The safe links policy**: Turn on URL scanning in email messages and Microsoft Teams, turn on real-time URL scanning, specify whether to wait for real-time scanning to complete before delivering the message, turn on scanning for internal messages, specify whether to track user clicks on URLs, and specify whether to allow users to click trough to the original URL.
+- **The safe links policy**: Turn on Safe Links protection, turn on real-time URL scanning, specify whether to wait for real-time scanning to complete before delivering the message, turn on scanning for internal messages, specify whether to track user clicks on URLs, and specify whether to allow users to click trough to the original URL.
 - **The safe links rule**: Specifies the priority and recipient filters (who the policy applies to).
 
 The difference between these two elements isn't obvious when you manage Safe Links polices in the Security & Compliance Center:
@@ -46,6 +44,9 @@ The difference between these two elements isn't obvious when you manage Safe Lin
 - When you remove a Safe Links policy, the safe links rule and the associated safe links policy are removed.
 
 In Exchange Online PowerShell or standalone EOP PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Links policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) section later in this article.
+
+> [!NOTE]
+> You configure the global settings for Safe Links protection **outside** of Safe Links policies. For instructions, see [Configure global settings for Safe Links in Office 365 ATP](configure-global-settings-for-safe-links.md).
 
 ## What do you need to know before you begin?
 
@@ -58,7 +59,7 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
   - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
   - **Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- For our recommended settings for Safe Links policies, see [ATP Safe Links policy settings](recommended-settings-for-eop-and-office365-atp.md#atp-safe-links-policy-settings).
+- For our recommended settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 
 - Allow up to 30 minutes for a new or updated policy to be applied.
 
@@ -94,11 +95,19 @@ Creating a custom Safe Links policy in the Security & Compliance Center creates 
 
    - **Do not track user clicks**: Leave this setting unselected to enable the tracking user clicks on URLs in email messages.
 
-   - **Do not allow users to click through to original URL**: Select this setting to blocks users from clicking through to the original URL.
+   - **Do not allow users to click through to original URL**: Select this setting to block users from clicking through to the original URL in [warning pages](atp-safe-links.md#warning-pages-from-safe-links).
 
-   - **Do not rewrite the following URLs**: Specifies the URLs that skip Safe List scanning and are always allowed in email messages and Teams. For more information, see .
+   - **Do not rewrite the following URLs**: Allows access the specified URLs that would otherwise be blocked by Safe Links.
 
-   For more information about the recommended values for Standard and Strict policy settings, see [Safe Links policy settings in custom policies for specific users](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users).
+     In the box, type the URL or value that you want, and then click ![Add button icon](../../media/ITPro-EAC-AddIcon.png).
+
+     To remove an existing entry, select it and then click ![Delete button icon](../../media/ITPro-EAC-DeleteIcon.png).
+
+     For entry syntax, see [Entry syntax for the "Do not rewrite the following URLs" list](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
+
+   For detailed information about these settings, see [Safe Links settings for email messages](atp-safe-links.md#safe-links-settings-for-email-messages) and [Safe Links settings for Microsoft Teams](atp-safe-links.md#safe-links-settings-for-microsoft-teams).
+
+   For more the recommended values for Standard and Strict policy settings, see [Safe Links policy settings in custom policies for specific users](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users).
 
    When you're finished, click **Next**.
 
@@ -156,9 +165,9 @@ To enable or disable a policy or set the policy priority order, see the followin
 
 2. Notice the value in the **Status** column:
 
-   - Move the toggle to the left ![Turn policy off](../../media/scc-toggle-off.png) to disable the policy.
+   - Move the toggle to the left to disable the policy: ![Turn policy off](../../media/scc-toggle-off.png).
 
-   - Move the toggle to the right ![Turn policy on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to enable the policy.
+   - Move the toggle to the right to enable the policy: ![Turn policy on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
 
 ### Set the priority of Safe Links policies
 
@@ -176,7 +185,7 @@ To change the priority of a policy, move the policy up or down in the list (you 
 
 2. On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).
 
-3. In the policy details fly out that appears, click the available priority button.
+3. In the policy details fly out that appears, click the available priority button:
 
    - The Safe Links policy with the **Priority** value **0** has only the **Decrease priority** button available.
 
@@ -229,24 +238,28 @@ Creating a Safe Links policy in PowerShell is a two-step process:
 To create a safe links policy, use this syntax:
 
 ```PowerShell
-New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls <"SafeURL1","SafeURL2,..."SafeURLN"">]
+New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
+
+**Notes**:
+
+- For details about the entry syntax to use for the _DoNotRewriteUrls_ parameter, see [Entry syntax for the "Do not rewrite the following URLs" list](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
+
+- For additional syntax that you can use for the _DoNotRewriteUrls_ parameter when you modify existing safe links policies by using the **Set-SafeLinksPolicy** cmdlet, see the [Use PowerShell to modify safe links policies](#use-powershell-to-modify-safe-links-policies) section later in this article.
 
 This example creates a safe links policy named Contoso All with the following values:
 
-- Turn on URL scanning in email messages.
-- Turn on URL scanning in Teams.
-- Turn on real-time scanning of URLs.
-- Wait for real-time scanning to complete before delivering the message.
-- Turn on URL scanning for internal messages.
-- Track user clicks (we aren't using the DoNotTrackUserClicks parameter, and the default value is $false).
+- Turn on URL scanning and rewriting in email messages.
+- Turn on URL scanning in Teams (TAP Preview only).
+- Turn on real-time scanning of clicked URLs, including clicked links that point to files.
+- Wait for URL scanning to complete before delivering the message.
+- Turn on URL scanning and rewriting for internal messages.
+- Track user clicks related to Safe Links protection (we aren't using the _DoNotTrackUserClicks_ parameter, and the default value is $false, which means user clicks are tracked).
 - Do not allow users to click through to the original URL.
 
 ```PowerShell
 New-SafeLinksPolicy -Name "Contoso All" -IsEnabled $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -DoNotAllowClickThrough $true
 ```
-
-**Note**: To configure URLs that skip Safe Links filtering, see .
 
 For detailed syntax and parameter information, see [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy).
 
@@ -328,6 +341,11 @@ For detailed syntax and parameter information, see [Get-SafeLinksRule](https://d
 ### Use PowerShell to modify safe links policies
 
 You can't rename a safe links policy in PowerShell (the **Set-SafeLinksPolicy** cmdlet has no _Name_ parameter). When you rename a Safe Links policy in the Security & Compliance Center, you're only renaming the safe links _rule_.
+
+The only additional consideration for modifying safe links policies in PowerShell is the available syntax for the _DoNotRewriteUrls_ parameter (the ["Do not rewrite the following URLs" list](atp-safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)):
+
+- To add values that will replace any existing entries, use the following syntax: `"Entry1","Entry2,..."EntryN"`.
+- To add or remove values without affecting other existing entries, use the following syntax: `@{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}`
 
 Otherwise, the same settings are available when you create a safe links policy as described in the [Step 1: Use PowerShell to create a safe links policy](#step-1-use-powershell-to-create-a-safe-links-policy) section earlier in this article.
 
@@ -433,6 +451,8 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 For detailed syntax and parameter information, see [Remove-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/remove-safelinksrule).
 
+To verify that Safe Links is scanning messages, check the available Advanced Threat Protection reports. For more information, see [View reports for Office 365 ATP](view-reports-for-atp.md) and [Use Explorer in the Security & Compliance Center](threat-explorer.md).
+
 ## How do you know these procedures worked?
 
 To verify that you've successfully created, modified, or removed Safe Links policies, do any of the following steps:
@@ -448,93 +468,3 @@ To verify that you've successfully created, modified, or removed Safe Links poli
   ```PowerShell
   Get-SafeLinksRule -Identity "<Name>"
   ```
-
-To verify that Safe Links is scanning messages, check the available Advanced Threat Protection reports. For more information, see [View reports for Office 365 ATP](view-reports-for-atp.md) and [Use Explorer in the Security & Compliance Center](threat-explorer.md).
-
-## Configure the "Block the following URLs" list in the Security & Compliance Center
-
-The **Block the following URLs** list defines the links that are always blocked by Safe Links scanning in supported apps. For more information, see ["Block the following URLs" list for Safe Links](atp-safe-links.md#block-the-following-urls-list-for-safe-links).
-
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**, and then click **Global settings**.
-
-2. In the **Safe Links policy for your organization** fly out that appears, go to the **Block the following URLs** box.
-
-3. Configure one or more entries as described in [Entry syntax for the "Block the following URLs" list](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list).
-
-   When you're finished, click **Save**.
-
-### Configure the "Block the following URLs" list in PowerShell
-
-If you'd rather use PowerShell to configure the **Block the following URLs** list for Safe Links, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
-
-```powershell
-Set-AtpPolicyForO365 -BlockUrls "Entry1","Entry2",..."EntryN"
-```
-
-For details about the entry syntax, see [Entry syntax for the "Block the following URLs" list](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list).
-
-## Configure Safe Links settings for Office 365 apps in the Security & Compliance Center
-
-### Configure Safe Links settings for Office 365 apps in PowerShell
-
-If you'd rather use PowerShell to configure the Safe Links settings for Office 365 apps, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
-
-```powershell
-Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowClickThrough <$true | $false>] [-TrackClicks <$true | $false>]
-```
-
-## Step 2: Define (or review) the ATP Safe Links policy that applies to everyone
-
-When you have [Office 365 Advanced Threat Protection](office-365-atp.md), you will have a default ATP Safe Links policy that applies to everyone in your organization. Make sure to review, and if needed, edit your default policy.
-
-1. Go to <https://protection.office.com> and sign in with your work or school account.
-
-2. In the left navigation, under **Threat management**, choose **Policy \>** **Safe Links**.
-
-3. In the **Policies that apply to the entire organization** section, select **Default**, and then choose **Edit** (the Edit button resembles a pencil).
-
-   ![Click Edit to edit your default policy for Safe Links protection](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
-
-4. In the **Block the following URLs** section, specify one or more URLs that you want to prevent people in your organization from visiting. (See [Set up a custom blocked URLs list using ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).)
-
-5. In the **Settings that apply to content except email** section, select (or clear) the options you want to use. (We recommend that you select all the options.)
-
-6. Choose **Save**.
-
-## Step 4: Learn about ATP Safe Links policy options
-
-As you set up or edit your ATP Safe Links policies, will see several options available. In case you are wondering what these options are, the following table describes each one and its effect. Remember that there are two main kinds of ATP Safe Links policies to define or edit:
-
-- a [default policy](#default-policy-options) that applies to everyone; and
-- additional [policies for specific recipients](#policies-that-apply-to-specific-email-recipients)
-
-### Default policy options
-
-Default policy options apply to everyone in your organization.
-
-****
-
-|This option|Does this|
-|---|---|
-|**Block the following URLs**|Enables your organization to have a custom list of URLs that are automatically blocked. When users click a URL in this list, they'll be taken to a warning page that explains why the URL is blocked. To learn more, see [Set up a custom blocked URLs list using Office 365 ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).|
-|**Microsoft 365 Apps for enterprise, Office for iOS and Android**| When this option is selected, ATP Safe Links protection is applied to URLs in Word, Excel, and PowerPoint files on Windows or Mac OS, email messages in Outlook, Office documents on iOS or Android devices, Visio 2016 files on Windows, and files open in the web versions of Office apps (Word, PowerPoint, Excel, Outlook, and OneNote), provided the user has signed in to Office 365.|
-|**Don't track when users click ATP Safe Links**|When this option is selected, click data for URLs in Word, Excel, PowerPoint, Visio documents, and Outlook email messages is not stored.|
-|**Don't let users click through ATP Safe Links to original URL**|When this option is selected, users cannot proceed past a warning page to a URL that is determined to be malicious.|
-|
-
-### Policies that apply to specific email recipients
-
-****
-
-|This option|Does this|
-|---|---|
-|**Off**|Does not scan URLs in email messages.  <br/> Enables you to define an exception rule, such as a rule that does not scan URLs in email messages for a specific group of recipients.|
-|**On**|Rewrites URLs to route users through ATP Safe Links protection when the users click URLs in email messages and enables ATP Safe Links within Outlook (C2R) on Windows.  <br/> Checks a URL when clicked against a list of blocked or malicious URLs and triggers a detonation of the URL in the background asynchronously if the URL does not have a valid reputation.|
-|**Apply real-time URL scanning for suspicious links and links that point to files**|When this option is selected, suspicious URLs and links that point to downloadable content are scanned.|
-|**Wait for URL scanning to complete before delivering the message**|When this option is selected, messages that contain URLs to be scanned will be held until the URLs finish scanning and are confirmed to be safe before the messages are delivered.|
-|**Apply Safe Links to messages sent within the organization** <br/> | When this option is available and selected, ATP Safe Links protection is applied to email messages sent between people in your organization, provided the email accounts are hosted in Office 365.|
-|**Do not track user clicks**|When this option is selected, click data for URLs in email from external senders is not stored. URL click tracking for links within email messages sent within the organization is currently not supported.|
-|**Do not allow users to click through to original URL**|When this option is selected, users cannot proceed past a warning page to a URL that is determined to be malicious.|
-|**Do not rewrite the following URLs**|Leaves URLs as they are. Keeps a custom list of safe URLs that don't need scanning for a specific group of email recipients in your organization. See [Set up a custom "Do not rewrite" URLs list using ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) for more details, including recent changes to support for wildcard asterisks (\*).|
-|
-

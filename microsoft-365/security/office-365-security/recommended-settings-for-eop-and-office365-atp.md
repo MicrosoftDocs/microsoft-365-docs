@@ -22,7 +22,6 @@ description: "What are best practices for Exchange Online Protection (EOP) and A
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 **Exchange Online Protection (EOP)** is the core of security for Microsoft 365 subscriptions and helps keep malicious emails from reaching your employee's inboxes. But with new, more sophisticated attacks emerging every day, improved protections are often required. **Office 365 Advanced Threat Protection (ATP)** ATP Plan 1 or ATP Plan 2 contain additional features that give admins more layers of security, control, and investigation.
 
 Although we empower security administrators to customize their security settings, there are two security levels in EOP and Office 365 ATP that we recommend: **Standard** and **Strict**. Each customer's environment and needs are different, but we believe that these levels of mail filtering configurations will help prevent unwanted mail from reaching your employees' inbox in most situations.
@@ -198,27 +197,31 @@ For more information about this setting, see [Advanced phishing thresholds in AT
 |---|---|---|---|
 |**Advanced phishing thresholds** <br/><br/> _PhishThresholdLevel_|**2 - Aggressive** <br/><br/> `2`|**3 - More aggressive** <br/><br/> `3`||
 
-### ATP Safe Links policy settings
+### ATP Safe Links settings
 
-To configure these settings, see [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-links-policies.md).
+Safe Links in Office 365 ATP includes global settings that apply to all users who are included in active Safe Links policies, and settings that are specific to each Safe Links policy. For more information, see [Safe Links in Office 365 ATP](atp-safe-links.md).
 
-#### Safe Links policy settings in the default policy for all users
+#### Global settings for Safe Links
 
-**Note**: In PowerShell, you use the [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
+To configure these settings, see [Configure global settings for Safe Links in Office 365 ATP](configure-global-settings-for-safe-links.md).
+
+In PowerShell, you use the [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
 
 ****
 
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
-|**Use Safe Links in: Office 365 applications** <br/><br/> _EnableSafeLinksForO365Clients_|On <br/><br/> `$true`|On <br/><br/> `$true`|Use ATP Safe Links in Office 365 desktop and mobile (iOS and Android) clients.|
-|**Use Safe Links in: Office Web Access Companions** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|On <br/><br/> `$true`|On <br/><br/> `$true`|Use ATP Safe Links in Office Web Apps. Note that this setting is not configurable.|
-|**Do not track when users click safe links** <br/><br/> _TrackClicks_|Off <br/><br/> `$true`|Off <br/><br/> `$true`||
-|**Do not let users click through safe links to original URL** <br/><br/> _AllowClickThrough_|On <br/><br/> `$false`|On <br/><br/> `$false`||
+|**Use Safe Links in: Office 365 applications** <br/><br/> _EnableSafeLinksForO365Clients_|On <br/><br/> `$true`|On <br/><br/> `$true`|Use ATP Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office 365 apps](atp-safe-links.md#safe-links-settings-for-office-365-apps).|
+|**Do not track when users click Safe Links** <br/><br/> _TrackClicks_|Off <br/><br/> `$true`|Off <br/><br/> `$true`|This setting is related to tracking user clicks in supported Office 365 apps.|
+|**Do not let users click through Safe Links to original URL** <br/><br/> _AllowClickThrough_|On <br/><br/> `$false`|On <br/><br/> `$false`|This setting is related to click through in supported Office 365 apps.|
+|Use Safe Links in: Office Web Access Companions <br/><br/> _EnableSafeLinksForWebAccessCompanion_|On <br/><br/> `$true`|On <br/><br/> `$true`|Use Safe Links in Office Web Apps. Note that this setting is not configurable.|
 |
 
-#### Safe Links policy settings in custom policies for specific users
+#### Safe Links policy settings
 
-**Note**: In PowerShell, you use the [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) and [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlets for these settings.
+To configure these settings, see [Set up Safe Links policies in Office 365 ATP](set-up-atp-safe-links-policies.md).
+
+In PowerShell, you use the [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) and [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlets for these settings.
 
 ****
 
@@ -233,13 +236,15 @@ To configure these settings, see [Set up Office 365 ATP Safe Links policies](set
 |**Do not let users click through safe links to original URL** <br/><br/> _DoNotAllowClickThrough_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |
 
-### ATP Safe Attachments policy settings
+### ATP Safe Attachments settings
 
-To configure these settings, see [Set up Office 365 ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md).
+Safe Attachments in Office 365 ATP includes global settings that apply to all users who are included in active Safe Attachments policies, and settings that are specific to each Safe Links policy. For more information, see [Safe Attachments in Office 365 ATP](atp-safe-attachments.md).
 
-#### Safe Attachments policy settings in the default policy for all users
+#### Global settings for Safe Attachments
 
-**Note**: In PowerShell, you use the [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
+To configure these settings, see [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) and [Safe Documents in Microsoft 365 E5](safe-docs.md).
+
+In PowerShell, you use the [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
 
 ****
 
@@ -247,12 +252,14 @@ To configure these settings, see [Set up Office 365 ATP Safe Attachments policie
 |---|---|---|---|
 |**Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** <br/><br/> _EnableATPForSPOTeamsODB_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Turn on Safe Documents for Office clients** <bt/><br/> _EnableSafeDocs_|On <br/><br/> `$true`|On <br/><br/> `$true`||This setting is only available with Microsoft 365 E5 or Microsoft 365 E5 Security licenses. For more information, see [Safe Documents in Office 365 Advanced Threat Protection](safe-docs.md).|
-|**Allow people to click through Protected View even if Safe Documents identified the file as malicious** <bt/><br/> _AllowSafeDocsOpen_|Off <br/><br/> `$false`|Off <br/><br/> `$false`||
+|**Allow people to click through Protected View even if Safe Documents identified the file as malicious** <bt/><br/> _AllowSafeDocsOpen_|Off <br/><br/> `$false`|Off <br/><br/> `$false`|This setting is related to Safe Documents.|
 |
 
-#### Safe Attachments policy settings in custom policies for specific users
+#### Safe Attachments policy settings
 
-**Note**: In PowerShell, you use the [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) and [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlets for these settings.
+To configure these settings, see [Set up Safe Attachments policies in Office 365 ATP](set-up-atp-safe-attachments-policies.md).
+
+In PowerShell, you use the [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) and [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlets for these settings.
 
 ****
 
