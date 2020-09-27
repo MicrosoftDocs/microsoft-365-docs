@@ -159,8 +159,8 @@ To find out more information about any actions needed during the migration phase
 </td>
 <td width="53%">
 <p>Microsoft will store the following Customer Data at rest exclusively within Germany:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments)</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business</p>
+<p>Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments)</p>
+<p>SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business</p>
 </td>
 </tr>
 <tr>
