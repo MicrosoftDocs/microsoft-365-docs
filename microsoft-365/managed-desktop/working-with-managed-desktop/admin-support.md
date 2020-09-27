@@ -19,10 +19,11 @@ You can submit support tickets or feedback requests to Microsoft using the Micro
 >Make sure that you [set up an Admin contact](../get-started/add-admin-contacts.md) for app packaging, devices, security, and other. You are unable to submit a support request in any of these areas if an admin contact is not configured.
 
 **To submit a support request**
-1. Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mwaasportal). 
-2. On **Support requests**, select **+ New Support ticket**.
-3. Select the **Support request type** that matches the help you need. The table below outlines the options. 
-4. Select the **Severity level**. For more information, see [Support request severity definitions](#sev). 
+1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Troubleshooting + support** menu.
+2. Look for the Microsoft Managed Desktop section, select **Sevice request**.
+3. On **Support requests**, select **+ New Support ticket**.
+4. Select the **Support request type** that matches the help you need. The table below outlines the options. 
+5. Select the **Severity level**. For more information, see [Support request severity definitions](#sev). 
 
 Support request type | When to use
 --- | ---
@@ -53,13 +54,13 @@ Additional details:
 
 We appreciate your feedback and use it to improve the admin support experience.
 
-Once a ticket is in the **Mitigated** or **Resolved** state, you can share your feedback on your experience with that particular issue. To do this, go to the **Support requests** page in the Admin portal. Select the specific ticket. In the fly-in that appears on the right side, select the **Feedback** tab, and provide the requested information. Be careful not to include any personal information in the feedback form. For more information about privacy, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+Once a ticket is in the **Mitigated** or **Resolved** state, you can share your feedback on your experience with that particular issue. To do this, go to the **Service requests** page in the **Troubleshooting + support** menu of the MEM portal. Select the specific ticket. The ticket details will appear in the fly-in on the right side, select the **Feedback** tab, and provide the requested information. Be careful not to include any personal information in the feedback form. For more information about privacy, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ![Feedback form](../../media/feedback_form.png)
 
 
 
 ## Additional resources
-- [End user support for Microsoft Managed Desktop](end-user-support.md). 
+- [User support for Microsoft Managed Desktop](end-user-support.md). 
 - [Support for Microsoft Managed Desktop](../service-description/support.md). 
-- If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** section of the [Microsoft Managed Desktop Admin Portal](https://aka.ms/mwaasportal).
+- If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** page under the **Microsoft Managed Desktop** section of the **Tenant administration** menu in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).

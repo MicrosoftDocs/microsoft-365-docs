@@ -45,7 +45,7 @@ Most of the setup steps can be done in the setup wizard, but the other options a
 
    - **Add users**. You can add users in any of the three ways:
         - In the [wizard](set-up.md#add-users-in-the-wizard).
-        - Use directory synchronization to [add users by using Azure AD Connect](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) if you have an on-premises Active directory.
+        - Use directory synchronization to [add users by using Azure AD Connect](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) if you have an on-premises Active directory.
         - You can also [add users later](add-users-m365b.md) in the admin center.
 ## Step 2: Set up security policies and configure devices 
 

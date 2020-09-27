@@ -29,7 +29,7 @@ ms.date: 7/28/2020
 > [!IMPORTANT]
 > You must be an admin for a business subscription to use these support methods. If you're not a business admin, please use [this support page](https://support.microsoft.com/help/contactus).
 
-Start by [checking the current health of your services](https://docs.microsoft.com/office365/enterprise/view-service-health). You can view detailed information about current and past issues on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health dashboard</a>. If you're experiencing an issue that isn't listed, you can get support in one of the following ways:
+Start by [checking the current health of your services](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). You can view detailed information about current and past issues on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health dashboard</a>. If you're experiencing an issue that isn't listed, you can get support in one of the following ways:
 
 ## Online support
 
@@ -50,6 +50,9 @@ Save time by starting your service request online. We'll help you find a solutio
 Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday-Friday.\
 Technical support is provided in English 24 hours a day, 7 days a week.\
 Admins, have your account details ready when you call.
+
+> [!NOTE]
+> To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization’s account.
 
 - **In the United States, call 1 800 865 9408.**
 

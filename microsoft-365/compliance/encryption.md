@@ -59,7 +59,7 @@ To learn more, see the following resources:
   
 - [What is Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [Activate Rights Management in the admin center](https://docs.microsoft.com/office365/enterprise/activate-rms-in-office-365)
+- [Activate Rights Management in the admin center](https://docs.microsoft.com/microsoft-365/enterprise/activate-rms-in-microsoft-365)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
@@ -81,3 +81,5 @@ To learn more, see the following resources:
 [Plan for Microsoft 365 security and information protection capabilities](plan-for-security-and-compliance.md)
 
 [Top 10 ways to secure Microsoft 365 for business plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
+
+[Microsoft Stream Video level encryption and playback flow](https://docs.microsoft.com/stream/network-overview#video-level-encryption-and-playback-flow)

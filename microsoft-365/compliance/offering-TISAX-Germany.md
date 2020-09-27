@@ -3,7 +3,7 @@ title: Trusted Information Security Assessment Exchange (TISAX) Germany
 description: An independent, ENX-accredited auditor assessed Microsoft cloud datacenters against TISAX security requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -44,7 +44,7 @@ The TISAX assessment focused on the following Microsoft services:
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - Intune
-- [Microsoft 365 and Power BI cloud service as included in an Office 365 branded plan or suite](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- [Microsoft Power BI, whether enrolled standalone or included in an Office 365 or Microsoft Dynamics 365 branded plan or suite](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
 ## Audits, reports, and certificates
 
@@ -64,9 +64,13 @@ Use case overviews, solution guides, tutorials, and other resources to help buil
 
 ## Frequently asked questions
 
-**Why I can’t see a copy of the Microsoft TISAX certification?**
+**Why I can't see a copy of the Microsoft TISAX certification?**
 
 ENX provides certification confirmation only to registered industry representatives through the ENX portal. For details about how to proceed, see the “Audits, reports, and certificates” section above.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

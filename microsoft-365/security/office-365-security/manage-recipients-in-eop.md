@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
@@ -17,6 +17,9 @@ description: "Admins can learn about the different types of recipient objects in
 ---
 
 # Manage recipients in standalone EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes support the following types of recipients:
 

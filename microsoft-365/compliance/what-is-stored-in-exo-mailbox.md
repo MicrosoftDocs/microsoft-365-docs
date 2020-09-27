@@ -37,6 +37,7 @@ The following table lists the apps that either stores or associates data with a 
 |Tasks|Tasks in the Tasks app (which are the same tasks as the ones accessible in Outlook) are stored in a user's mailbox.|
 |Teams|Conversations that are part of a Teams channel are associated with the Teams mailbox. Conversations that are part of the Chat list in Teams (also called *1 x N chats*) are associated with the mailbox of the users who participate in the chat. Also, summary information for meetings and calls in a Teams channel are associated with mailboxes of users who dialed into the meeting or call. So when searching for Teams content, you would search the Teams mailbox for content in channel conversations and search user mailboxes for content in 1 x N chats.| 
 |To-Do|Tasks (called *to-dos*, which are saved in to-do lists) in the To-Do app are stored in a user's mailbox.|
+|Yammer|Conversations and comments within a Yammer community are associated with the Microsoft 365 Group mailbox, as well as the user mailbox of the author and any named recipients (@mentioned or cc'ed users). Private messages sent outside of a Yammer community are stored in the mailbox of the users who participate in the private message.|  
 ||||
 
 > [!NOTE]

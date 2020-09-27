@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
@@ -16,12 +16,20 @@ description: "Admins can learn how to view and search the admin audit log in sta
 
 # View the admin audit log in standalone EOP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can use the Exchange admin center (EAC) or standalone EOP PowerShell to search for and view entries in the admin audit log.
 
 The admin audit log records specific actions, based on standalone EOP PowerShell cmdlets, done by admins and users who have been assigned administrative privileges. Entries in the admin audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.
 
 > [!NOTE]
-> <ul><li>Admin auditing logging is enabled by default, and you can't disable it.</li><li>The admin audit log doesn't record actions based on cmdlets that begins with the verbs **Get**, **Search**, or **Test**.</li><li>Audit log entries are kept for 90 days. When an entry is older than 90 days, it's deleted</li></ul>
+>
+> - Admin auditing logging is enabled by default, and you can't disable it.
+>
+> - The admin audit log doesn't record actions based on cmdlets that begins with the verbs **Get**, **Search**, or **Test**.
+>
+> - Audit log entries are kept for 90 days. When an entry is older than 90 days, it's deleted
 
 ## What do you need to know before you begin?
 
@@ -128,9 +136,10 @@ To view the contents of the **CmdletParameters** and **ModifiedProperties** fiel
 
 Each audit log entry contains the information described in the following table. The audit log contains one or more audit log entries.
 
-|||
+****
+
+|Field|Description|
 |---|---|
-|**Field**|**Description**|
 |`RunspaceId`|This field is used internally by EOP.|
 |`ObjectModified`|This field contains the object that was modified by the cmdlet specified in the `CmdletName` field.|
 |`CmdletName`|This field contains the name of the cmdlet that was run by the user in the `Caller` field.|

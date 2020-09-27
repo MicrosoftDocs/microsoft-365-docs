@@ -9,7 +9,7 @@ ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - Strat_O365_Enterprise
 - M365-subscription-management
@@ -104,6 +104,6 @@ Here are the products, their channels, and the deployment groups used by this ex
 
 [Deployment and update channel example configurations](deploy-update-channels-examples.md)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)

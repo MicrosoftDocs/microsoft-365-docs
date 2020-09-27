@@ -22,6 +22,9 @@ description: "Learn how to update a Domain Name Service (DNS) record to use Send
 
 # Set up SPF to help prevent spoofing
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
  **Summary:** This article describes how to update a Domain Name Service (DNS) record so that you can use Sender Policy Framework (SPF) with your custom domain in Office 365. Using SPF helps to validate outbound email sent from your custom domain.
 
 In order to use a custom domain, Office 365 requires that you add a Sender Policy Framework (SPF) TXT record to your DNS record to help prevent spoofing. SPF identifies which mail servers are allowed to send mail on your behalf. Basically, SPF, along with DKIM, DMARC, and other technologies supported by Office 365, help prevent spoofing and phishing. SPF is added as a TXT record that is used by DNS to identify which mail servers can send mail on behalf of your custom domain. Recipient mail systems refer to the SPF TXT record to determine whether a message from your custom domain comes from an authorized messaging server.
@@ -56,8 +59,10 @@ Gather this information:
 
 1. Ensure that you're familiar with the SPF syntax in the following table.
 
-   ||**If you're using...**|**Common for customers?**|**Add this...**|
-   |:-----|:-----|:-----|:-----|
+   ****
+
+   |<!-- -->|If you're using...|Common for customers?|Add this...|
+   |---|---|---|---|
    |1|Any email system (required)|Common. All SPF TXT records start with this value|v=spf1|
    |2|Exchange Online|Common|include:spf.protection.outlook.com|
    |3|Exchange Online dedicated only|Not common|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
@@ -65,6 +70,7 @@ Gather this information:
    |5|Third-party email system|Not common|include:\<domain name\>  <br/> Where domain name is the domain name of the third party email system.|
    |6|On-premises mail system. For example, Exchange Online Protection plus another mail system|Not common| Use one of these for each additional mail system: <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  include:\<_domain name_\>  <br/>  Where the value for \<_IP address_\> is the IP address of the other mail system and \<_domain name_\> is the domain name of the other mail system that sends mail on behalf of your domain.|
    |7|Any email system (required)|Common. All SPF TXT records end with this value|\<_enforcement rule_\>  <br/> This can be one of several values. We recommend that you use **-all**.|
+   |
 
 2. If you haven't already done so, form your SPF TXT record by using the syntax from the table:
 
@@ -83,6 +89,16 @@ Gather this information:
 3. Once you have formed your SPF TXT record, you need to update the record in DNS. You can only have one SPF TXT record for a domain. If an SPF TXT record exists, instead of adding a new record, you need to update the existing record. Go to [Create DNS records for Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), and then click the link for your DNS host.
 
 4. Test your SPF TXT record.
+
+## How to handle subdomains?
+
+It is important to note that you need to create a separate record for each subdomain as subdomains don't inherit the SPF record of their top level domain.
+
+An additional wildcard SPF record (`*.`) is required for every domain and subdomain to prevent attackers from sending email claiming to be from non-existent subdomains. For example:
+
+```console
+*.subdomain.contoso.com. IN TXT "v=spf1 –all"
+```
 
 ## More information about SPF
 
