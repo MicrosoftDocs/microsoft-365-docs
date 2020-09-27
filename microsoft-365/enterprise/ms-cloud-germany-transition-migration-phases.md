@@ -647,10 +647,10 @@ To find out more information about the differences for organizations in migratio
 <td style="width: 26%;">Exchange Online configuration adds the new go-local German region to the transitioning organization. The Germany region continues set as &lsquo;default&rsquo;. Individual mailboxes tagged with the Germany region in Office 365 services will migrate automatically by the Load Balancing service when set by Customer during initial validation. Subsequently changing the &ldquo;default&rdquo; to the appropriate Office 365 services region will move the bulk of mailboxes at scale. In this transition, users on either side (Microsoft Cloud Deutschland or Office 365 services) are in the same organization and can use either URL endpoint</td>
 <td style="width: 23.8049%;">&nbsp;Exchange Online; Deutsche Telekom</td>
 <td style="width: 25.1951%;">
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stamp MailboxRegion on individual mailboxes to Germany region code &ldquo;GER&rdquo; to individually move specific mailboxes during &lsquo;validation&rsquo; phase.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transition users and services off Microsoft Cloud Deutschland URLs to Office 365 services URLs (<a href="https://outlook.office365.com">https://outlook.office365.com</a>) to aide in future retirement of the Germany service endpoints.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upon completion of validation phase, the DefaultMailboxRegion is changed to GER to allow all mailboxes to rebalance to Office 365 services.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Users will continue to access the service via legacy Germany URLs. No immediate action needed. [see admin impact]</p>
+<p>Stamp MailboxRegion on individual mailboxes to Germany region code &ldquo;GER&rdquo; to individually move specific mailboxes during &lsquo;validation&rsquo; phase.</p>
+<p>Transition users and services off Microsoft Cloud Deutschland URLs to Office 365 services URLs (<a href="https://outlook.office365.com">https://outlook.office365.com</a>) to aide in future retirement of the Germany service endpoints.</p>
+<p>Upon completion of validation phase, the DefaultMailboxRegion is changed to GER to allow all mailboxes to rebalance to Office 365 services.</p>
+<p>Users will continue to access the service via legacy Germany URLs. No immediate action needed. [see admin impact]</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
