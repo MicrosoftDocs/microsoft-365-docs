@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
-description: 'SKOS format reference for SharePoint taxonomy.'
+description: 'SKOS format reference for SharePoint taxonomy'
 ---
 # SKOS format reference for SharePoint taxonomy
 
@@ -41,6 +41,8 @@ The following table displays the entities of the SharePoint taxonomy vocabulary 
 |sharepoint-taxonomy:CustomPropertyForTermSet|owl:ObjectProperty|
 
 ## SharePoint taxonomy vocabulary
+
+A taxonomy is a formal classification system. A taxonomy groups the words, labels, and terms that describe something, and then arranges the groups into a hierarchy.
 
 **sharepoint-taxonomy:Term**
 
@@ -119,6 +121,8 @@ Use this to map a [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepo
 
 ## Required labels
 
+Your organization may want to do careful planning before you start to use managed metadata. The amount of planning that you must do depends on how formal your taxonomy is. It also depends on how much control that you want to impose on metadata. At each level of the hierarchy, you need to configure required lables for a Term or TermSet.
+
 **sharepoint-taxonomy:defaultLabel**
 
 Use this default lexical label for a [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) that is a required parameter for a [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term). Use to visually representing the [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term).
@@ -155,6 +159,8 @@ ex:SharedCustomProperty1    sharepoint-taxonomy:propertyName    “Shared Custom
 
 ## Optional labels
 
+You can also add optional labels to your taxonomy.
+
 **sharepoint-taxonomy:otherLabel**
 
 This is the alternate lexical label for a [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term). 
@@ -166,6 +172,8 @@ ex:TermA    sharepoint-taxonomy:otherLabel    “Term A”@en-us.
 ```
 
 ## Semantic relationships
+
+Taxonomies have hierarchical and sometimes a simple “related term” associative relationship, but some have "semantic relationships" or custom-created relationships. 
 
 **sharepoint-taxonomy:parent**
 
@@ -192,6 +200,8 @@ ex:TermA    sharepoint-taxonomy:child    ex:TermA1.
 This means that TermA has child TermA1. Inversely it also means that TermA is the parent of TermA1 parent-child relationship is an inversible relationship.
 
 ## Documentation notes
+
+This section discusses the taxonomy detailed in the Microsoft.SharePoint.Taxonomy Namespace.
 
 **sharepoint-taxonomy:description**
 
@@ -246,6 +256,8 @@ ex:TermA    ex:CustomProp3    “5 cm”@en-us.
 
 ## Data properties
 
+At each level of the hierarchy, you can configure specific data properties for a Term or TermSet.
+
 **sharepoint-taxonomy:isAvailableForTagging**
 
 Use this to specify if a [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) or a [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) available in SharePoint Lists and Libraries.  
@@ -256,7 +268,9 @@ The syntax for this is:
 ex:TermA    sharepoint-taxonomy:isAvailableForTagging     "true"^^xsd:Boolean;
 ```
 
-## Domain and range of SharePoint taxonomy vocabulary
+## Domain and range
+
+The table below describes the domain and range of SharePoint taxonomy vocabulary.
 
 |Predicates/verb|Meaning|Domain|Range|
 |:--------------|:------|:-----|:----|
