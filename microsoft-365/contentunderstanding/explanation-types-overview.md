@@ -148,7 +148,7 @@ Note that the explanation library also includes templates for phrase list explan
 
 #### To use a template from the explanation library
 
-1. From the **Explanations** section of your model's **Train** page, select **New**, and then select **From a template**.</br>
+1. From the **Explanations** section of your model's **Train** page, select **New**, then select **From a template**.</br>
 
    ![Create from template](../media/content-understanding/from-template.png)</br>
 
