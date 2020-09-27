@@ -46,6 +46,8 @@ A taxonomy is a formal classification system. A taxonomy groups the words, label
 
 **sharepoint-taxonomy:Term**
 
+Represents a Term or a Keyword in a managed metadata hierarchy.
+
 A [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) is the atomic unit of a SharePoint [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore). Each [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) belongs to a [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) that belongs to a [TermGroup](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.group). 
 
 The syntax to define a [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) is as follows:
@@ -74,6 +76,8 @@ A [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.ter
 - Have only a unique defaultLabel in the same hierarchical level.
 
 **sharepoint-taxonomy:TermSet**
+
+Represents a hierarchical or flat set of Term objects known as a "TermSet".
 
 As the name suggests, TermSet is a set of [Terms](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term). A [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) in a [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore) must belong to a [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset). No [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) can exist independently. 
 
@@ -123,6 +127,8 @@ Use this to map a [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepo
 
 Your organization may want to do careful planning before you start to use managed metadata. The amount of planning that you must do depends on how formal your taxonomy is. It also depends on how much control that you want to impose on metadata. At each level of the hierarchy, you need to configure required lables for a Term or TermSet.
 
+A Term can have one or more labels in the default language, and zero or more labels in the non-default language. If the term has labels in a language, one of the labels must be the default label.
+
 **sharepoint-taxonomy:defaultLabel**
 
 Use this default lexical label for a [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) that is a required parameter for a [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term). Use to visually representing the [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term).
@@ -137,6 +143,8 @@ The defaultLabel contains two parts to it – the string and the language tag. T
 
 **sharepoint-taxonomy:termSetName**
 
+Gets and sets the name for the current TermSet object.
+
 This the lexical label for a [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset), in a [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore) working language. This is a required parameter for a [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset). Use to visually representing a [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset).
 
 The syntax to define a termSetName is:
@@ -146,6 +154,8 @@ ex:TermA    sharepoint-taxonomy:TermSetName    “Term Set A”@en-us.
 ```
 
 **sharepoint-taxonomy:propertyName**
+
+Gets and sets the property name for the current TermSet object.
 
 This is the lexical label for a sharepoint-taxonomy:SharedCustomPropertyForTerm, sharepoint-taxonomy:LocalCustomPropertyForTerm and sharepoint-taxonomy:CustomPropertyForTermSet in a [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore) working language.
 
@@ -189,6 +199,8 @@ This means that TermA1 has parent TermA. Inversely it also means that TermA1 is 
 
 **sharepoint-taxonomy:child**
 
+The object contains one or more child TermSet instances, and these can be accessed through the TermSets property. This class also provides methods for creating new child TermSet objects. Permissions for editing child Term and TermSet instances is specified on the group. 
+
 This hierarchically relates a [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) to another [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term).
 
 The syntax to define a child is:
@@ -215,6 +227,8 @@ ex:TermA    sharepoint-taxonomy:description    “Term A is the top level term o
 
 ## Custom properties
 
+Gets the collection of custom property objects for the current Term object from the read-only dictionary.
+
 Custom Properties are key-values pairs that can be defined for a [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) or a [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset), to further the description of the [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) or a [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset). SharePoint specifies the key of the custom property with the help of propertyName.
 
 **sharepoint-taxonomy:CustomPropertyForTermSet**
@@ -233,7 +247,6 @@ ex:TermSetA    ex:CustomProp1    “Red”@en-us.
 If the custom property for a [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) needs to be carried along with the [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term), when you reuse the [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) somewhere else, then you need to be define it under SharedCustomPropertyForTerm.
 
 The syntax to define this is:
-
 
 ``` SKOS
 ex:CustomProp2    rdf:type sharepoint-taxonomy:SharedCustomPropertyForTerm;
@@ -292,11 +305,11 @@ propertyName|Has Property Label|SharedCustomPropertyForTerm, LocalCustomProperty
 
 [SKOS](https://www.w3.org/TR/skos-primer/) valid scenarios that [SharePoint taxonomy](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy) does not allow:
 
-1. Hierarchical redundancy - A [SKOS](https://www.w3.org/TR/skos-primer/) concept can be attached to several broader concepts at the same time, but a sharepoint-taxonomy:Term can have only one sharepoint-taxonomy:parent, hence cyclic dependency, of Terms is also not allowed.
-2. Orphaned terms are not allowed in SharePoint taxonomy. Every sharepoint-taxonomy:Term should either have a sharepoint-taxonomy:parent or it should be the sharepoint-taxonomy:topLevelTermOf a TermSet.
-3. SharePoint taxonomy does not support associative relations.
-4. SharePoint taxonomy only allows 2 types of Hierarchical relations – sharepoint-taxonomy:parent and sharepoint-Taxonomy:child. 
-5. Unlike [SKOS](https://www.w3.org/TR/skos-primer/) the hierarchical relationship in SharePoint taxonomy vocabulary, can only be established with Terms within the same TermSet.
+- Hierarchical redundancy - A [SKOS](https://www.w3.org/TR/skos-primer/) concept can be attached to several broader concepts at the same time, but a sharepoint-taxonomy:Term can have only one sharepoint-taxonomy:parent, hence cyclic dependency, of Terms is also not allowed.
+- Orphaned terms are not allowed in SharePoint taxonomy. Every sharepoint-taxonomy:Term should either have a sharepoint-taxonomy:parent or it should be the sharepoint-taxonomy:topLevelTermOf a TermSet.
+- SharePoint taxonomy does not support associative relations.
+- SharePoint taxonomy only allows 2 types of Hierarchical relations – sharepoint-taxonomy:parent and sharepoint-Taxonomy:child. 
+- Unlike [SKOS](https://www.w3.org/TR/skos-primer/) the hierarchical relationship in SharePoint taxonomy vocabulary, can only be established with Terms within the same TermSet.
 
 ## See also
 
