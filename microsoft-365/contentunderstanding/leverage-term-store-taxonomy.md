@@ -40,8 +40,7 @@ Term sets are configured in the Managed Metadata services term store in the Shar
 ## Configure your document library site column for a managed metadata field
 
 
-
-   ![Term store](../media/content-understanding/creative.png)</br>
+   ![Create managed metadata](../media/content-understanding/creative.png)</br>
 
 ## See Also
 [Introduction to Managed Metadata](https://docs.microsoft.com/sharepoint/managed-metadata#terms)</br>
