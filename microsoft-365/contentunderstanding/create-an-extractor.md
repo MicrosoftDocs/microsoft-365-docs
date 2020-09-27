@@ -28,7 +28,7 @@ Before or after you create a classifier model to automate identification and cla
 You need to create an extractor for each entity in the document that you want to extract. In the sample, you want to extract the *Service Start Date* for each *Contract Renewal* document that is identified by the model. This must happen when you want to see a view in the document library of all the *Contract Renewal* documents with a column showing the Service Start date value for each document.
 
 > [!NOTE]
-> Before creating an extractor, you need to [add your example files](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier?view=o365-worldwide#add-your-example-files) to help train the model to identify the information you want to extract. Use the same sample files you used to create your classifier.
+> Before creating an extractor, you need to [add your example files](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier#add-your-example-files) to help train the model to identify the information you want to extract. Use the same sample files you used to create your classifier.
 
 ## Name your extractor
 
@@ -115,7 +115,7 @@ For the sample, notice that the text string *Start Service date of* always prece
 
     ![Prefix string](../media/content-understanding/prefix-string.png) 
 
-## Train the model
+## Train the model again
 
 Saving the explanation starts the training again, this time using both explanations in the sample. If your model has enough information to extract the data from the labeled sample files, you see each file labeled with **Match**. 
 
