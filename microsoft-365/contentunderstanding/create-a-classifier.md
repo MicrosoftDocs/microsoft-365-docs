@@ -123,7 +123,7 @@ To create an explanation:
  
 5. The model now checks to see if the explanation you created was good enough to identify the remaining labeled example files correctly, as positive and negative examples. In the Trained Files section, check the **Evaluation** column after the training has completed to see the results. The files show a value of **Match**, if the explanations you created was enough to match what you labeled as positive or negative.
 
-    ![Match](../media/content-understanding/match.png) 
+    ![Match value](../media/content-understanding/match.png) 
 
 If you receive a **Mismatch** on the labeled files, you may need to create an additional explanation to provide the model more information to identify the document type. If this happens, click on the file to get more information about why the mismatch occurred.
 
