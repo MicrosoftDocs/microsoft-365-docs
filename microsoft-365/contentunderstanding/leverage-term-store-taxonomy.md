@@ -29,7 +29,7 @@ As an example, your model identifies and classifies all **Contract** documents t
    ![Term store](../media/content-understanding/design.png)</br>
 
 
-## How do I configure synonyms for my
+## Term set synonyms 
 
 Term sets are configured in the Managed Metadata services term store in the SharePoint admin center. In the the example below, the *Contract Services* [term set](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) is configured to include a number of terms, including *Creative*.  The details for it show that the term has three synonyms (*Design*, *Graphics*, and *Topography*) and the synonyms should be translated to *Creative*.
 
@@ -37,7 +37,7 @@ Term sets are configured in the Managed Metadata services term store in the Shar
 
 <Mike, here is where I am unsure about how to describe this.  What action tells the model that when I create an extractor to extract and display a Contract Services column, how is that column "marked" to use the managed metadata term set for Creative Services?>
 
-
+## Configure your document library site column for a managed metadata field
 
 
 
