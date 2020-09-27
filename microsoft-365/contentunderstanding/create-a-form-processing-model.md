@@ -88,7 +88,7 @@ After analyzing the documents for fields, you can now see the fields that were f
 
 4. Click **Confirm fields** after you have selected the fields that you want to save. </br>
  
-    ![Confirm fields](../media/content-understanding/confirm-fields.png)</br> 
+    ![Confirm fields after selecting fields](../media/content-understanding/confirm-fields.png)</br> 
  
 5. On the **Select the form fields you want to save** page, it shows the number of fields you have selected. Select **Done**.
 
