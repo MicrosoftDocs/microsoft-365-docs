@@ -10,11 +10,10 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to apply a retention label to a document understanding model"
+description: "This article discusses how to apply a retention label to a document understanding model"
 ---
 
 # Apply a retention label to a document understanding model
-
 
 </br>
 
@@ -31,7 +30,7 @@ You can apply a pre-existing retention label to your document understanding mode
 > [!Important]
 > For retention labels to be available to apply to your content understanding model, they need to be [created and published in the Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
 
-### To add a retention label to a document understanding model
+## To add a retention label to a document understanding model
 
 1. From the model home page, select **Model settings**.</br>
 2. In **Model settings**, in the **Security and compliance** section, select the **Retention label** menu to see a list of retention labels that are available for your to apply to the model.</br>
@@ -42,7 +41,7 @@ After applying the retention label to your model, you are able to apply it to a:
 - New document library
 - Document library to which the model is already applied
  
-### Apply the retention label to a document library to which the model is already applied
+## Apply the retention label to a document library to which the model is already applied
 
 If your document understanding model has already been applied to a document library, you can do the following to sync your retention label update to apply it to the document library:</br>
 
