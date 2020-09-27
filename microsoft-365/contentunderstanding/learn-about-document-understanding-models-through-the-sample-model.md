@@ -32,7 +32,7 @@ To access the sample model, you need to first import the model to your content c
 
 4. Select the *BenefitsChangeNotice.classifier*, to open the model's home page.</br>
   
-     ![Sample model](../media/content-understanding/sample-home-page.png)
+     ![Sample home page](../media/content-understanding/sample-home-page.png)
 
 5. From the model home page, examine the model more closely to see how it was created.
  

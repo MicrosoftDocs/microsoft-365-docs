@@ -93,7 +93,7 @@ After adding your example files, you then need to label them as either positive 
 2. In the viewer, on the top of the first example file, you will see text asking you if the file is an example of the model you just created. If it is a positive example, select **Yes**. If it is a negative example, select **No**.
 3. From the **Labeled examples** list on the left, select additional files that you want to use as examples, and label them as well. 
 
-    ![Classifier model home page](../media/content-understanding/classifier-home-page.png) 
+    ![Classifier home page](../media/content-understanding/classifier-home-page.png) 
 
 
 > [!Note]
@@ -122,7 +122,7 @@ To create an explanation:
  
 5.  The model will now check to see if the explanation you created was good enough to identify your remaining labeled example files correctly as positive and negative examples. In Trained Files section, check the **Evaluation** column after the training has completed to see the results.  The files will show a value of **Match** if the explanation you created was enough to match what you had labeled them as (positive or negative).
 
-    ![Create explanation](../media/content-understanding/match.png) 
+    ![Match](../media/content-understanding/match.png) 
 
 If you receive a **Mismatch** on your labeled files, you may need to create an additional explanation to provide the model more information to identify the document type. You can click on the file to get more information about why the mismatch occurred.
 

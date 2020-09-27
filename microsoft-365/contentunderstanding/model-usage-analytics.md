@@ -39,11 +39,11 @@ Each model also shows the **Completeness Rate**, the percentage of uploaded file
 
 ## Files processed over time
 
-   ![Total model percentage](../media/content-understanding/files-processed-over-time.png) </br>
+   ![Files processed](../media/content-understanding/files-processed-over-time.png) </br>
 
 The **Files processed over time** bar chart shows you not only the number of files processed over time for each model, but also shows you the document libraries to which the model was applied.
 
-   ![Total model percentage](../media/content-understanding/bar-chart-models.png) </br>
+   ![Bar chart](../media/content-understanding/bar-chart-models.png) </br>
 
 ## See Also
 [Create a classifier](create-a-classifier.md)</br>

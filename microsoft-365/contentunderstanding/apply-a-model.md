@@ -1,5 +1,5 @@
 ---
-title: "Apply a Document understanding model to a document library"
+title: "Apply a document understanding model to a document library"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -54,11 +54,11 @@ To apply your model to to a SharePoint document library:
 5. Select **Add** to apply the model to the library. 
 6. On the model home page, in the **Libraries with this model** section, you will see the URL to the SharePoint site listed.</br>
 
-    ![Library view](../media/content-understanding/selected-library.png)</br>
+    ![Selected library](../media/content-understanding/selected-library.png)</br>
 
 7. Go to your document library and make sure you are in the model's document library view. You'll notice that if you select the information button next to the document library name, a message will note that your model has been applied to the document library.
 
-    ![Library view](../media/content-understanding/info-du.png)</br> 
+    ![Information view](../media/content-understanding/info-du.png)</br> 
 
 
 After applying the model to the document library, you can begin uploading documents to the site and see the results.

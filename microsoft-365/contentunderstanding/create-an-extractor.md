@@ -92,14 +92,14 @@ For our *Service Start Date* example, it is more efficient to use the pre-built 
 
 4. On the **Create an explanation** page, the *Date* information from the explanation library will autofill the fields. Select **Save**.</br>
 
-    ![Explanation library](../media/content-understanding/date-explanation-library.png) 
+    ![Date](../media/content-understanding/date-explanation-library.png) 
 
  
 ## Train the model 
 
 Saving your explanation will start the training. If your model has enough information to extract the data from your labeled example files, you will see each file labeled with **Match**.  
 
-![Explanation library](../media/content-understanding/match2.png) 
+![Match](../media/content-understanding/match2.png) 
 
 If the explanation does not have enough information to find the data you want to extract, each file will be labeled with **Mismatch**. You can click on the Mismatched files to see more information about why there was a mismatch.
 
@@ -115,7 +115,7 @@ For our example, we notice that the text string *Start Service date of* always p
 3. Use *Service Start Date of* as the value.
 4. Select **Save**.
 
-    ![Explanation library](../media/content-understanding/prefix-string.png) 
+    ![Prefix string](../media/content-understanding/prefix-string.png) 
 
 
 ## Train the model

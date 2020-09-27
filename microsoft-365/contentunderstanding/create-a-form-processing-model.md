@@ -39,7 +39,7 @@ The first step in creating a form processing model is to name it to create the d
 
 1. In your document library, select the **Automate** menu, select **AI Builder**, and then select **Create a Form Processing model**.
 
-    ![Create an AI Builder model](../media/content-understanding/create-ai-builder-model.png)</br>
+    ![Create a model](../media/content-understanding/create-ai-builder-model.png)</br>
 2. In the **New form processing model** pane, in the  **Name** field, type a name for your model (for example, *Purchase Orders*).
 
     ![New form processing model](../media/content-understanding/new-form-model.png)</br> 
@@ -77,7 +77,7 @@ After analyzing your documents for fields, you can now see which fields were fou
 
 1. The next page will display one of your sample files and will highlight all common fields that were automatically detected by the system. </br>
 
-    ![Select form fields](../media/content-understanding/select-fields-page.png)</br> 
+    ![Select fields page](../media/content-understanding/select-fields-page.png)</br> 
 
 2. Select the fields you want to save, and select the checkbox to confirm your selection. For example, in the Purchase Order model, you can choose to select the *Date*, *PO*, and *Total* fields.  Note that you can also choose to rename a field if you choose. </br>
 
@@ -95,7 +95,7 @@ After analyzing your documents for fields, you can now see which fields were fou
 After selecting the fields you want to save, the **Model Summary** page will let you train and test your model.
 
 1. On the **Model Summary** page, the saved fields will show in the **Selected fields** section. Select **Train** to begin training on your example files. Note that this may take a few minutes to complete.</br>
-    ![Confirm fields](../media/content-understanding/select-fields-train.png)</br> 
+    ![Select fields train](../media/content-understanding/select-fields-train.png)</br> 
 2. When you see the notification that training has completed, select **Go to details page**. 
 3. On the **Model details** page, you can choose to test how your model works by selecting **Quick test**. This lets you drag and drop files to the page and see if the fields are detected.
 
@@ -115,23 +115,18 @@ After publishing your model and creating it's PowerAutomate flow, you can use yo
 1. After publishing your model , select **Go to SharePoint** to go to your document library.
 2. On your document library model view, notice that the fields you selected now display as columns.</br>
 
-    ![Document library with model applied](../media/content-understanding/doc-lib-view.png)</br> 
+    ![Document library model applied](../media/content-understanding/doc-lib-view.png)</br> 
 
     Also notice that the information link next to **Documents** will note that a forms processing model is applied to this document library.
 
-    ![Extracted](../media/content-understanding/info-button.png)</br>  
+    ![Info button](../media/content-understanding/info-button.png)</br>  
 
 3. Upload files to your document library. Any files that the model identifies as it's content type will list the files in your view, and will display the extracted data in the columns.</br>
 
-    ![Extracted](../media/content-understanding/doc-lib-done.png)</br>  
-
-
+    ![Done](../media/content-understanding/doc-lib-done.png)</br>  
 
 ## See Also
   
 [Power Automate documentation](https://docs.microsoft.com/power-automate/)</br>
 [Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
-
-
-
 

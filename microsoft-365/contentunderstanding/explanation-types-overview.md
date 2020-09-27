@@ -37,7 +37,7 @@ While not a requirement, you can acheive better success with your explanation if
 
 If case sensitivity is a requirement in identifying your label, using the phrase list type allows you to specify it in your explanation by selecting the **Only exact capitalization** checkbox.
 
-   ![Explanation types](../media/content-understanding/case-sensitivity.png) 
+   ![Case sensitivity](../media/content-understanding/case-sensitivity.png) 
 
 ## Pattern lists
 
@@ -120,7 +120,7 @@ There are three tokens in *(mobile)*:
 
 Configure the proximity setting to have a range of 0 through 3.
 
-   ![Proximity](../media/content-understanding/proximity-example.png)</br>
+   ![Proximity example](../media/content-understanding/proximity-example.png)</br>
 
 ## Use the explanation library
 
@@ -128,7 +128,7 @@ While you can manually add various pattern list values for your explanation, it'
 
 For example, instead of manually adding all the variations for *Date*, use the pattern list template for *Date*, that already includes a number of pattern lists values:</br>
 
-   ![Explanation library template for date](../media/content-understanding/explanation-template.png)</br>
+   ![Explanation library](../media/content-understanding/explanation-template.png)</br>
  
 The explanation library includes a number of commonly used pattern list explanations, including:</br>
 
