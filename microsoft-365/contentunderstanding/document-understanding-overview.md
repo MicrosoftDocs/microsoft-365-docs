@@ -1,21 +1,20 @@
 ---
-title: "Document understanding overview (Preview)"
+title: "Document understanding overview"
 ms.author: efrene
 author: efrene
 manager: pamgreen
 ms.date: 08/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Get an overview of the document understanding in Project Cortex."
+description: "Get an overview of the document understanding in Microsoft SharePoint Syntex."
 ---
 
-# Document understanding overview (Preview)
-> [!Note] 
-> Project Cortex is currently in Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+# Document understanding overview
+
 
 </br>
 

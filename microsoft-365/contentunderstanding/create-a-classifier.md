@@ -1,22 +1,21 @@
 ---
-title: "Create a classifier (Preview)"
+title: "Create a classifier"
 ms.author: efrene
 author: efrene
 manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to create a classifier"
 ---
 
-# Create a classifier (Preview)
+# Create a classifier in Microsoft SharePoint Syntex
 
-> [!NOTE] 
-> The content in this article is for the Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+The content in this article is for the Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
 </br>
 
@@ -95,7 +94,7 @@ After adding your example files, you need to label them as either positive or ne
 2. In the viewer on the top of the first example file, you should see text asking if the file is an example of the model you just created. If it is a positive example, select **Yes**. If it is a negative example, select **No**.
 3. From the **Labeled examples** list on the left, select additional files that you want to use as examples, and label them. 
 
-    ![Classifier model home page](../media/content-understanding/classifier-home-page.png) 
+    ![Classifier home page](../media/content-understanding/classifier-home-page.png) 
 
 
 > [!NOTE]
@@ -124,7 +123,7 @@ To create an explanation:
  
 5. The model now checks to see if the explanation you created was good enough to identify the remaining labeled example files correctly, as positive and negative examples. In the Trained Files section, check the **Evaluation** column after the training has completed to see the results. The files show a value of **Match**, if the explanations you created was enough to match what you labeled as positive or negative.
 
-    ![Create explanation](../media/content-understanding/match.png) 
+    ![Match value](../media/content-understanding/match.png) 
 
 If you receive a **Mismatch** on the labeled files, you may need to create an additional explanation to provide the model more information to identify the document type. If this happens, click on the file to get more information about why the mismatch occurred.
 

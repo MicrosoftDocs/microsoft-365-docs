@@ -1,16 +1,16 @@
 ---
-title: "Create an extractor (Preview)"
+title: "Create an extractor"
 ms.author: efrene
 author: efrene
 manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to create an extractor"
+description: "Learn how to create an extractor in Microsoft SharePoint Syntex."
 ---
 
 # Create an extractor (Preview)
@@ -28,7 +28,7 @@ Before or after you create a classifier model to automate identification and cla
 You need to create an extractor for each entity in the document that you want to extract. In the sample, you want to extract the *Service Start Date* for each *Contract Renewal* document that is identified by the model. This must happen when you want to see a view in the document library of all the *Contract Renewal* documents with a column showing the Service Start date value for each document.
 
 > [!NOTE]
-> Before creating an extractor, you need to [add your example files](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier?view=o365-worldwide#add-your-example-files) to help train the model to identify the information you want to extract. Use the same sample files you used to create your classifier.
+> Before creating an extractor, you need to [add your example files](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier#add-your-example-files) to help train the model to identify the information you want to extract. Use the same sample files you used to create your classifier.
 
 ## Name your extractor
 
@@ -91,13 +91,13 @@ For the *Service Start Date* sample, it is more efficient to use the pre-built e
 
 4. On the **Create an explanation** page, the *Date* information from the explanation library auto fills the fields. Select **Save**.</br>
 
-    ![Explanation library](../media/content-understanding/date-explanation-library.png) 
+    ![Date](../media/content-understanding/date-explanation-library.png) 
 
 ## Train the model 
 
 Saving your explanation start the training. If your model has enough information to extract the data from your labeled example files, you will see each file labeled with **Match**.  
 
-![Explanation library](../media/content-understanding/match2.png) 
+![Match](../media/content-understanding/match2.png) 
 
 If the explanation does not have enough information to find the data you want to extract, each file will be labeled with **Mismatch**. You can click on the **Mismatched** files to see more information about why there was a mismatch.
 
@@ -113,9 +113,9 @@ For the sample, notice that the text string *Start Service date of* always prece
 3. Use *Service Start Date of* as the value.
 4. Select **Save**.
 
-    ![Explanation library](../media/content-understanding/prefix-string.png) 
+    ![Prefix string](../media/content-understanding/prefix-string.png) 
 
-## Train the model
+## Train the model again
 
 Saving the explanation starts the training again, this time using both explanations in the sample. If your model has enough information to extract the data from the labeled sample files, you see each file labeled with **Match**. 
 
