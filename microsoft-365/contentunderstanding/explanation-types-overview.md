@@ -82,7 +82,7 @@ Redmond, WA 98034<br>
 
 Use the proximity explanation to define how far away the phone number explanation is to better identify the street address number in your documents.
 
-   ![Proximity](../media/content-understanding/proximity.png)</br>
+   ![Proximity explanation](../media/content-understanding/proximity.png)</br>
 
 #### What are tokens?
 
