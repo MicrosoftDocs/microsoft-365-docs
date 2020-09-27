@@ -7,7 +7,6 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: Priority
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Set up content understanding in Project Cortex"
@@ -23,7 +22,7 @@ Consider the following before you start:
 - What will you name of your content center, and who is the primary site admin?
 
 You can change your settings after initial setup in the Microsoft 365 admin center.
-=======
+
 The content in this article is for the Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
 Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make considerations about the following names of:
