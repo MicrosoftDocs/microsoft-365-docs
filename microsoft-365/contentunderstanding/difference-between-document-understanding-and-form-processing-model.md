@@ -10,7 +10,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Describes key difference between document understanding and form processing models."
+description: "Describes key difference between document understanding and form processing models"
 ---
 
 # Difference between document understanding and form processing models 
@@ -24,7 +24,7 @@ Content understanding lets you create *models* to identify and extract the infor
 - [Document understanding models](document-understanding-overview.md)
 - [Form processing models](form-processing-overview.md)
 
-While both models are used for generally the same purpose, there are key differences that will affect which one you might choose to use.
+While both models are generally used for the same purpose, the key differences listed below affect which ones you can use.
 
 
 ## Structured versus unstructured and semi-structured content
@@ -35,7 +35,10 @@ Use form processing models to identify files and extract data from structured or
 
 ## Where they are created
 
-Document understanding models are created and managed in a SharePoint content center site. You must have access to a content center site to create a document understanding model or to apply one to a SharePoint document library. 
+Document understanding models are created and managed in a SharePoint content center site. 
+
+> [!NOTE]
+> You must have access to a content center site to create a document understanding model or to apply one to a SharePoint document library. 
 
 When you create a document understanding model, you create a new [SharePoint content type](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) that is saved to the SharePoint Content Types gallery. You can optionally use existing content types to define your model if needed.
 
