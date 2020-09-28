@@ -21,9 +21,11 @@ description: Require that your users sign in securely with multi-factor authenti
 
 To increase the security of user sign-ins:
 
+- Use Windows Hello for Business
 - Use Azure Active Directory (Azure AD) Password Protection
 - Use multi-factor authentication (MFA)
-- Deploy identity and device access policies
+- Deploy identity and device access configurations
+- Protect against credential compromise
 
 
 ## Use Windows Hello for Business

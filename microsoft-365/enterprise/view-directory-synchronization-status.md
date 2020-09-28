@@ -25,7 +25,7 @@ description: In this article, learn how you can check the status of your directo
 
 # View directory synchronization status in Microsoft 365
 
-If you have integrated your on-premises Active Directory Domain Services (AD DS) with Azure AD by synchronizing your on-premises environment with Microsoft 365, you can also check the status of your synchronization.
+If you have integrated your on-premises Active Directory Domain Services (AD DS) with Azure Active Directory (Azure AD) by synchronizing your on-premises environment with Microsoft 365, you can also check the status of your synchronization.
   
 ## View directory synchronization status
 
