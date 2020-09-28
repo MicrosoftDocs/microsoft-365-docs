@@ -18,9 +18,14 @@ ms.collection:
 - M365-security-compliance 
 ms.topic: conceptual
 ms.custom: autoir
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
 ---
 
 # Approve or reject pending actions following an automated investigation
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 - Microsoft Threat Protection
@@ -57,8 +62,5 @@ Pending actions can be reviewed and approved by using the [Action center](#revie
 
 ## Next steps
 
-- [Learn more about the Action center](mtp-action-center.md)
-
-- [Learn more about incidents](incidents-overview.md)
-
-- [Learn about hunting](advanced-hunting-overview.md)
+- [View the details and results of an automated investigation](mtp-autoir-results.md)
+- [Handle false positives/negatives in automated investigation and response capabilities](mtp-autoir-report-false-positives-negatives.md)

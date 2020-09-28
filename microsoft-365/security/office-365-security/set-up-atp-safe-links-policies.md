@@ -21,12 +21,14 @@ description: "Set up Safe Links policies to protect your organization from malic
 
 # Set up Office 365 ATP Safe Links policies
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 > [!IMPORTANT]
 > This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are a home user looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-[ATP Safe Links](atp-safe-links.md), a feature of [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), can help protect your organization from malicious links used in phishing and other attacks. If you have the necessary [permissions for the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md), you can set up ATP Safe Links policies to help ensure that when people click web addresses (URLs), your organization is protected. Your ATP Safe Links policies can be configured to scan URLs in email and URLs in Office documents.
+[ATP Safe Links](atp-safe-links.md) is a feature in [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) that can help protect your organization from malicious links used in phishing and other attacks. If you have the necessary [permissions for the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md), you can set up ATP Safe Links policies to help ensure that when people click web addresses (URLs), your organization is protected. Your ATP Safe Links policies can be configured to scan URLs in email and URLs in Office documents. ATP Safe Links scans incoming email for known malicious hyperlinks and for attachments containing malware. This feature rewrites scanned URLs to Microsoft’s standard URL format prefix <https://nam01.safelinks.protection.outlook.com>. Once a link is rewritten, it is analyzed for any potential malicious content. With ATP Safe Links enabled, if a user clicks on a link in an email and the URL has been blocked by your organization's custom blocked URL list or if the URL is determined to be malicious, a warning page will open.
 
-With ATP Safe Links enabled, if a user clicks on a link in an email and the URL has been blocked by your organization's custom blocked URL list or if the URL is determined to be malicious, a warning page will open.
+Once ATP Safe Links has rewritten a URL, if the message is forwarded or replied to, the URL will remain rewritten. Additional links added to the message being replied to or forwarded will not be rewritten.
 
 [New features are continually being added to ATP](office-365-atp.md#new-features-in-office-365-atp). As new features are added, you may need to make adjustments to your existing ATP Safe Links policies.
 

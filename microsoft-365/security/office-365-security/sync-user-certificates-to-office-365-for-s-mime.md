@@ -20,6 +20,9 @@ description: "In this article, you'll learn how to publish appropriate certifica
 
 # Sync user certificates to Office 365 for S/MIME
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Before anyone can send S/MIME-protected messages in Exchange Online, the appropriate certificates must be set up. To send encrypted messages through Exchange Online, the sender's email app uses the public certificate of the recipient to encrypt the message. This public X.509 certificate has to be published to Office 365.
 
 ## To Sync certificates that support S/MIME

@@ -14,6 +14,9 @@
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan for security and compliance in Office 365
       href: plan-for-security-and-compliance.md
+    - name: Compliance extensibility
+      href: compliance-extensibility.md
+
 - name: Manage insider risks
   items:
     - name: Insider risk management
@@ -107,12 +110,14 @@
           href: what-the-dlp-functions-look-for.md
     - name: Trainable classifiers
       items: 
+        - name: Learn about trainable classifiers (preview)
+          href: classifier-learn-about.md
         - name: Get started with trainable classifiers (preview)
-          href: classifier-getting-started-with.md
-        - name: Using a built-in classifier (preview)
-          href: classifier-using-a-ready-to-use-classifier.md
-        - name: Creating and training a classifier (preview)
-          href: classifier-creating-a-trainable-classifier.md
+          href: classifier-get-started-with.md
+        - name: How to retrain a classifier in communications compliance (preview)
+          href: classifier-how-to-retrain-comms-compliance.md
+        - name: How to retrain a classifier in content explorer (preview)
+          href: classifier-how-to-retrain-content-explorer.md
     - name: Data classification
       items: 
         - name: Understand data classification
@@ -147,8 +152,10 @@
       items: 
         - name: Understand encryption
           href: encryption.md
-        - name: Double Key Encryption (preview)
+        - name: Double Key Encryption (DKE)
           href: double-key-encryption.md
+        - name: Double Key Encryption FAQ
+          href: double-key-encryption-overview.md  
         - name: Office 365 Service encryption
           href: office-365-service-encryption.md
         - name: Customer Key
@@ -242,6 +249,8 @@
           href: form-a-query-to-find-sensitive-data-stored-on-sites.md
         - name: How DLP works between the Security & Compliance Center and Exchange admin center
           href: how-dlp-works-between-admin-centers.md
+        - name: Use sensitivity labels as a condition in DLP policies (preview)
+          href: dlp-sensitivity-label-as-condition.md  
 - name: Manage information governance
   items: 
     - name: Govern your data
@@ -256,6 +265,8 @@
               href: retention-policies-sharepoint.md
             - name: Retention for Microsoft Teams
               href: retention-policies-teams.md
+            - name: Retention for Yammer
+              href: retention-policies-yammer.md
             - name: Retention for Exchange
               href: retention-policies-exchange.md
         - name: Get started with retention
@@ -308,8 +319,48 @@
               href: archive-instant-bloomberg-data.md
             - name: LinkedIn
               href: archive-linkedin-data.md
+            - name: Physical badging data
+              href: import-physical-badging-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
+        - name: Globanet data connectors
+          items:  
+            - name: EML
+              href: archive-eml-data.md
+            - name: FX Connect
+              href: archive-fxconnect-data.md
+            - name: Reuters Eikon
+              href: archive-reuterseikon-data.md
+            - name: Slack
+              href: archive-slack-data.md    
+            - name: Symphony
+              href: archive-symphony-data.md
+            - name: Text-delimited
+              href: archive-text-delimited-data.md
+            - name: Webex Teams
+              href: archive-webexteams-data.md
+            - name: Workplace from Facebook
+              href: archive-workplacefromfacebook-data.md    
+            - name: Zoom Meetings
+              href: archive-zoommeetings-data.md
+        - name: TeleMessage data connectors
+          items:  
+            - name: Android
+              href: archive-android-archiver-data.md
+            - name: AT&T Network
+              href: archive-att-network-archiver-data.md
+            - name: Bell Network
+              href: archive-bell-network-data.md
+            - name: Enterprise Number 
+              href: archive-enterprise-number-data.md
+            - name: O2 Network
+              href: archive-o2-network-data.md
+            - name: TELUS Network
+              href: archive-telus-network-data.md
+            - name: Verizon Network
+              href: archive-verizon-network-data.md
+            - name: WhatsApp
+              href: archive-whatsapp-data.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
         - name: Search for third-party data
@@ -373,7 +424,7 @@
             href: configure-edge-to-export-search-results.md
           - name: Search for and delete email messages
             href: search-for-and-delete-messages-in-your-organization.md
-          - name: Search the cloud-based mailboxes of on-premises users
+          - name: Search for Teams chat data for on-premises users
             href: search-cloud-based-mailboxes-for-on-premises-users.md
           - name: Bulk edit multiple content searches
             href: bulk-edit-content-searches.md
@@ -792,31 +843,30 @@
       href: alert-policies.md
 - name: Manage compliance risks
   items: 
+    - name: Compliance Manager
+      items: 
+        - name: Learn about Compliance Manager
+          href: compliance-manager.md
+        - name: Compliance Manager quickstart
+          href: compliance-manager-quickstart.md
+        - name: Get started with Compliance Manager
+          href: compliance-manager-setup.md
+        - name: Build and manage assessments
+          href: compliance-manager-assessments.md
+        - name: Working with assessment templates
+          href: compliance-manager-templates.md
+        - name: Compliance Manager templates list
+          href: compliance-manager-templates-list.md
+        - name: Assign and complete improvement actions
+          href: compliance-manager-improvement-actions.md
+        - name: How your compliance score is calculated
+          href: compliance-score-calculation.md
+        - name: Frequently asked questions (FAQ)
+          href: compliance-manager-faq.md
+        - name: Compliance Manager (classic)
+          href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
-    - name: Compliance Score and Compliance Manager (preview)
-      items: 
-        - name: Compliance Score (preview)
-          href: compliance-score.md
-        - name: Set up Compliance Score
-          href: compliance-score-setup.md
-        - name: Customize Compliance Score with assessments
-          href: compliance-score-assessments.md
-        - name: Assign and perform work with improvement actions
-          href: compliance-score-improvement-actions.md
-        - name: How your score is calculated
-          href: compliance-score-methodology.md
-        - name: Frequently asked questions (FAQ)
-          href: compliance-score-faq.md
-        - name: Compliance Manager (preview)
-          href: compliance-manager-overview.md
-          items: 
-            - name: What's new in Compliance Manager (preview)
-              href: compliance-manager-release-notes.md
-            - name: Working with Compliance Manager (preview)
-              href: working-with-compliance-manager.md
-            - name: Compliance Manager (classic)
-              href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: GDPR data subject request tool
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
     - name: Office 365 Information Protection for GDPR

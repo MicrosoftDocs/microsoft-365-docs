@@ -23,6 +23,9 @@ ms.custom: autoir
 
 # How to report false positives/negatives in automated investigation and response capabilities
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 **Applies to:**
 - Office 365 Advanced Threat Protection
 

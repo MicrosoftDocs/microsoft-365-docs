@@ -42,7 +42,7 @@ You can get a view into your user's Forms Pro activity by looking at the **Activ
 
 ![Forms activity report](../../media/formsproactivity.png)
 
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |The **Forms Pro** activity report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table (7) will show data for up to 28 days from the current date (not the date the report was generated).   <br/> |
 |2.  <br/> |The data in each report is usually as recent as the last 48 hours.  <br/> |

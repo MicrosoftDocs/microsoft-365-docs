@@ -29,6 +29,8 @@ description: "In this article, you'll learn how to use Safe links to protect you
 
 # ATP Safe Links
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 ## Overview of Office 365 ATP Safe Links
 
 > [!IMPORTANT]

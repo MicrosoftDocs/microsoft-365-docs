@@ -15,9 +15,6 @@ description: "Follow these instructions to create an appointment and assign an e
 
 Bookings can be scheduled and staffed in two different ways. The first way is by the customer using a standalone booking page or an embedded booking page that you add to your website. The other way is for you or one of your employees to enter the bookings manually, such as when a customer calls for an appointment. This article covers the manual scenario.
 
-> [!NOTE]
-> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
-
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
    ![Image of Bookings in App launcher](../media/bookings-applauncher.png)

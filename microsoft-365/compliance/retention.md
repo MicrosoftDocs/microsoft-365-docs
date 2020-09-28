@@ -26,6 +26,7 @@ description: Learn about retention policies and retention labels that help you t
 For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
   
 - **Comply proactively with industry regulations and internal policies** that require you to retain content for a minimum period of time—for example, the Sarbanes-Oxley Act might require you to retain certain types of content for seven years. 
+
 - **Reduce your risk in the event of litigation or a security breach** by permanently deleting old content that you're no longer required to keep. 
     
 - **Help your organization to share knowledge effectively and be more agile** by ensuring that your users work only with content that's current and relevant to them. 
@@ -53,7 +54,7 @@ When content has retention settings assigned to it, that content remains in its 
 
 - For Exchange mailboxes: The copy is retained in the **Recoverable Items** folder. 
 
-- For Teams channel and chat messages: The copy is retained in a hidden folder named **SubstrateHolds** as a subfolder in the Exchange **Recoverable Items** folder.
+- For Teams and Yammer messages: The copy is retained in a hidden folder named **SubstrateHolds** as a subfolder in the Exchange **Recoverable Items** folder.
 
 > [!NOTE]
 > The Preservation Hold library consumes storage that isn't exempt from a site's storage quota. You might need to increase your storage when you use retention settings for SharePoint and Microsoft 365 groups.
@@ -64,6 +65,7 @@ For more detailed information about how retention settings work for different wo
 
 - [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)
 - [Learn about retention for Microsoft Teams](retention-policies-teams.md)
+- [Learn about retention for Yammer](retention-policies-yammer.md)
 - [Learn about retention for Exchange](retention-policies-exchange.md)
 
 ## Retention policies and retention labels
@@ -72,13 +74,13 @@ You can use both retention policies and retention labels to assign your retentio
 
 Use a retention policy to assign the same retention settings for content at a site or mailbox level, and use a retention label to assign retention settings at an item level (folder, document, email).
 
-For example, if all documents in a SharePoint site should be retained for five years, it's more efficient to do this with a retention policy than apply the same retention label to all documents in that site. However, if some documents in that site should be retained for five years and others retained for ten years, a retention policy wouldn't be able to do this. When you need to specify retention settings at the item level, use retention labels. 
+For example, if all documents in a SharePoint site should be retained for 5 years, it's more efficient to do this with a retention policy than apply the same retention label to all documents in that site. However, if some documents in that site should be retained for 5 years and others retained for 10 years, a retention policy wouldn't be able to do this. When you need to specify retention settings at the item level, use retention labels. 
 
 Unlike retention policies, retention settings from retention labels persist with the content if it’s copied or moved to a different Microsoft 365 location. In addition, retention labels have the following capabilities that retention policies don't support: 
  
 - Options to start the retention period from when the content was labeled or based on an event, in addition to the age of the content or when it was last modified.
 
-- Use [trainable classifiers](classifier-getting-started-with.md) to identify content to label.
+- Use [trainable classifiers](classifier-learn-about.md) to identify content to label.
 
 - Apply a default label for SharePoint documents.
 
@@ -97,6 +99,8 @@ Retention policies can be applied to the following locations:
 - Exchange public folders
 - Teams channel messages
 - Teams chats
+- Yammer community messages
+- Yammer private messages
 
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
     
@@ -161,7 +165,7 @@ With retention labels, you can:
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
-Additionally, retention labels support [records management](records-management.md) for email and documents across Microsoft 365 apps and services. You can use a retention label to classify content as a record. When this happens and the content remains in Microsoft 365, the label places further restrictions on the content that might be needed for regulatory reasons. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+Additionally, retention labels support [records management](records-management.md) for email and documents across Microsoft 365 apps and services. You can use a retention label to mark items as a record. When this happens and the content remains in Microsoft 365, the label places further restrictions on the content that might be needed for regulatory reasons. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 Retention labels, unlike [sensitivity labels](sensitivity-labels.md), do not persist if the content is moved outside Microsoft 365.
 
@@ -173,7 +177,7 @@ Although the main purpose of retention labels is to retain or delete content, yo
   
 For example, you can create and apply a retention label named "Review later" with no actions, and then use that label to find that content later.
   
-![Label settings page with retention turned off](../media/retention-label-retentionoff.png)
+![Label settings to classify-only](../media/retention-label-retentionoff.png)
 
 #### Using a retention label as a condition in a DLP policy
 
@@ -209,7 +213,7 @@ Different types of retention labels can be published to different locations, dep
    
 In Exchange, auto-apply retention labels are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types and trainable classifiers apply to all mailboxes; you can't select specific mailboxes.
   
-Exchange public folders, Skype, and Teams channel messages and chats do not support retention labels. To retain and delete contain from these locations, use retention policies instead.
+Exchange public folders, Skype, Teams and Yammer messages do not support retention labels. To retain and delete contain from these locations, use retention policies instead.
 
 #### Only one retention label at a time
 
@@ -260,8 +264,9 @@ Use the following table to help you identify whether to use a retention policy o
 |Capability|Retention policy |Retention label|
 |:-----|:-----|:-----|:-----|
 |Retention settings that can retain and then delete, retain-only, or delete-only |Yes |Yes |
-|Workloads supported: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No  |
+|Workloads supported: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No <br /> No |
 |Retention applied automatically | Yes | Yes |
+|Retention applied based on conditions <br /> - sensitive info types, KQL queries, trainable classifiers| No | Yes |
 |Retention applied manually | No | Yes |
 |UI presence for end users | No | Yes |
 |Persists if the content is moved | No | Yes, within Microsoft 365 |

@@ -232,4 +232,4 @@ Or, you can use the following steps to onboard mailboxes directly in a specific 
 
 ## See also
 
-[Managing Microsoft 365 and Exchange Online with Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6)
+[Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)

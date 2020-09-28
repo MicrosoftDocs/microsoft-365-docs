@@ -31,6 +31,10 @@ The following diagram illustrates the recommended set of policies. It shows whic
 [![Common policies for configuring identity and device access](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 [See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
+Here's a one-page PDF summary with links to the individual policies:
+
+[![Thumb image for Identity and device protection for Microsoft 365 handout](../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [View as a PDF](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)  
+
 The rest of this article describes how to configure these policies. 
 
 >[!Note]
@@ -160,6 +164,8 @@ Choose **Select** to save the **Grant** settings.
 Finally, select **On** for **Enable policy**, and then choose **Create**.
 
 Consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy.
+
+For Exchange Online, you can use authentication policies to [disable Basic authentication](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), which forces all client access requests to use modern authentication.
 
 ## High risk users must change password
 
@@ -369,7 +375,6 @@ To require compliance for all devices:
 
 ## Next step
 
-![Step 3: Policies for guest and external users](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)
-
+[![Step 3: Policies for guest and external users](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 
 [Learn about policy recommendations for guest and external users](identity-access-policies-guest-access.md)
