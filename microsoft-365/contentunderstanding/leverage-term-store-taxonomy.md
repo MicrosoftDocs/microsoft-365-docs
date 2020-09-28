@@ -16,11 +16,7 @@ description: "Leverage term store taxonomy when creating an extractor in your do
 # Leverage term store taxonomy when creating an extractor
 
 
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
-
-</br>
+Video will be embedded here.
 
 When you create an extractor in your document understanding model in SharePoint Syntex, you can take advantage of [Managed Metadata services](https://docs.microsoft.com/sharepoint/managed-metadata#terms) term store taxonomy to display preferred terms for data that you extract.  
 
@@ -29,19 +25,25 @@ As an example, your model identifies and classifies all **Contract** documents t
    ![Term store](../media/content-understanding/design.png)</br>
 
 
-## Term set synonyms 
+## Use a Managed metadata column in your extractor
 
-Term sets are configured in the Managed Metadata services term store in the SharePoint admin center. In the the example below, the *Contract Services* [term set](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) is configured to include a number of terms, including *Creative*.  The details for it show that the term has three synonyms (*Design*, *Graphics*, and *Topography*) and the synonyms should be translated to *Creative*.
+Term sets are configured in the Managed Metadata services term store in the SharePoint admin center. In the the example below, the *Contract Services* [term set](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) is configured to include a number of terms, including *Creative*.  The details for it show that the term has three synonyms (*Design*, *Graphics*, and *Topography*) and the synonyms should be translated to *Creative*. 
 
    ![Term store](../media/content-understanding/term-store.png)</br>
 
-<Mike, here is where I am unsure about how to describe this.  What action tells the model that when I create an extractor to extract and display a Contract Services column, how is that column "marked" to use the managed metadata term set for Creative Services?>
+There could be a number of reasons why you might want to use a synonym in your term set. For example, there could be outdated terms, renamed terms, or variations between your organizations departments on naming.
 
-## Configure your document library site column for a managed metadata field
+To make the managed metadata field available for you to select when you create your extractor in your model, you need to [add it as a managed-metadata column](https://docs.microsoft.com/sharepoint/add-columns-content-type) in the content type. For example, when you created your model, you created a *Contracts* content type.  Using the Content Type gallery in the SharePoint admin center, you can now add the *Contract Services* managed metadata column that includes the synonyms and preferred value.
+
+After you add the column, the *Contract Services* managed metadata field will now be available for you to select when you create the extractor for your model.
+
+   ![Contract service column](../media/content-understanding/contract-services.png)</br>
 
 
+After applying your model to the document library, when documents are uploaded to library, the *Creative Services* column will display the preferred term (Creative) when the extractor finds any of the synonym values (*Design*, *Graphics*, and *Topography*).
 
-   ![Term store](../media/content-understanding/creative.png)</br>
+   ![Contract service column](../media/content-understanding/creative.png)</br>
+
 
 ## See Also
 [Introduction to Managed Metadata](https://docs.microsoft.com/sharepoint/managed-metadata#terms)</br>
