@@ -237,6 +237,8 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     ![Auto-labeling tab](../media/auto-labeling-tab.png)
     
+    > [!NOTE]
+    > If you don't see the **Auto-labeling** tab, this functionality isn't currently available in your region.
 
 3. Select **+ Create auto-labeling policy**. This starts the New policy wizard:
     
