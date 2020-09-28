@@ -25,7 +25,7 @@ description: "The Safe Links feature provides time-of-click verification of hype
 > [!IMPORTANT] 
 > For Office 365 ATP Safe Links to operate correctly, all of the services need to be at the same version.
          
-## How ATP Safe Links works
+## How ATP Safe Links works with URLs in email
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
  with URLs in email
@@ -52,10 +52,7 @@ At a high level, here's how [ATP Safe Links](atp-safe-links.md) protection works
     
    - If the URL is determined to be safe, the website opens.
     
-## How ATP Safe Links works
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
- with URLs in Office documents 
+## How ATP Safe Links works with URLs in Office documents
 
 At a high level, here's how [ATP Safe Links](atp-safe-links.md) protection works for URLs in Microsoft 365 Apps for enterprise or Business Premium applications (current versions of Word, Excel, and PowerPoint on Windows, Mac, or in a browser, Office apps on iOS or Android devices, Visio on Windows, OneNote in a browser):
   
