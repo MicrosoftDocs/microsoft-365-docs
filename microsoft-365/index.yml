@@ -82,6 +82,8 @@ productDirectory:
           text: File collaboration in SharePoint
         - url: /onedrive/plan-onedrive-enterprise
           text: OneDrive guide for enterprises
+        - url: solutions/collaboration-governance-overview.md
+          text: Collaboration governance
     # Card
     - title: Architecture resources
       # imageSrc should be square in ratio with no whitespace
@@ -217,7 +219,7 @@ additionalContent:
         # Card
         - title: SharePoint
           links:
-            - text: SharePoint Online
+            - text: SharePoint in Microsoft 365
               url: /sharepoint/sharepoint-online
             - text: SharePoint Server
               url: /sharepoint/sharepoint-server

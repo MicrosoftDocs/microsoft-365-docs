@@ -218,6 +218,8 @@
            href: setup/upgrade-users-to-latest-office-client.md
          - name: Requirements for centralized deployment of add-ins
            href: manage/centralized-deployment-of-add-ins.md
+         - name: Manage industry news
+           href: manage/manage-industry-news.md
          - name: Deploy add-ins in the admin center 
            href: manage/manage-deployment-of-add-ins.md
          - name: Manage add-ins in the admin center 
