@@ -41,7 +41,7 @@ Microsoft Managed Desktop uses these settings in the Autopilot profile used for 
 |User account type     |  Standard       |
 |Allow White Glove OOBE     |  Yes       |
 |Apply device name template     | Yes        |
-|Enter a name     | MMD-%RAND:7%        |
+|Enter a name     | MMD-%RAND:11%        |
 
 
 
