@@ -411,7 +411,7 @@ To find out more information about the differences for organizations in migratio
 <td style="width: 25.1951%;">
 <p>Transition users and services off Germany URLs to Office 365 services URLs (<a href="https://outlook.office365.com">https://outlook.office365.com</a>) to aide in future retirement of the Germany service endpoints.</p>
 <p>In case,&nbsp; user mailbox has been migrated but admin mailbox has not been migrated and vice-versa, Admins won&rsquo;t be able to run Set-UserPhoto cmdlet . Admin need to pass additional string in ConnectionUri during connection setup. Below syntax mentions the change &ndash; <a href="%20https:/outlook.office.de/PowerShell-LiveID?email=%3cuser_email%20%3e">&nbsp;https://outlook.office.de/PowerShell-LiveID?email=&lt;user_email &gt;</a></p>
-<p>o&nbsp;&nbsp;&nbsp; Here user_email is the placeholder for email-id of the user whose Photo needs to be changed using Set-UserPhoto cmdlet.</p>
+<p>Here user_email is the placeholder for email-id of the user whose Photo needs to be changed using Set-UserPhoto cmdlet.</p>
 <p>&nbsp;</p>
 <p>Users will continue to access the service via legacy Germany URLs. No immediate action needed. [see admin impact]</p>
 <p>Users should begin to use the office.com portal for Office Online features (Calendar, Mail, People). Navigation to services not yet migrated to Office 365 services (eg Dynamics) will not function until migrated.</p>
