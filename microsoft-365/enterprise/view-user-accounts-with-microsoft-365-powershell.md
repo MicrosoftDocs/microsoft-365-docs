@@ -109,7 +109,7 @@ This command instructs PowerShell to get all users who have the attribute **DirS
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
 ```
-This command instructs PowerShell to get all users who have the attribute Dirsyncenabled set to False. It can be used to pull up cloud-only accounts.
+This command instructs PowerShell to get all users who have the attribute **DirSyncEnabled** set to False. It can be used to pull up cloud-only accounts.
 
 ### View some accounts based on a common property
 
