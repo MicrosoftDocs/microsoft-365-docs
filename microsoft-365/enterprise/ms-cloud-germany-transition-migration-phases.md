@@ -428,7 +428,7 @@ Here are the actions that should be done after your pre-migration work that impa
 <p>Migration of Azure resources</p>
 </td>
 <td width="25%">
-<p>Customers using Office 365 and Azure resources (e.g., Networking, Compute, Storage, etc) will perform&nbsp;the migration&nbsp;of resources to the Office 365 Services instance. This migration is&nbsp;customer&nbsp;responsibility. Message&nbsp;Center posts will signal start.<a href="#_ftn1" name="_ftnref1">[1]</a> and migration must be completed prior to finalization of the Azure AD organization in the Office 365 services environment.</p>
+<p>Customers using Office 365 and Azure resources (e.g., Networking, Compute, Storage, etc) will perform&nbsp;the migration&nbsp;of resources to the Office 365 Services instance. This migration is&nbsp;customer&nbsp;responsibility. Message&nbsp;Center posts will signal start and migration must be completed prior to finalization of the Azure AD organization in the Office 365 services environment.</p>
 </td>
 <td width="25%">
 <p>Azure Customers</p>
@@ -568,7 +568,7 @@ Here are the actions that should be done after your pre-migration work that impa
 </table>
 <p>&nbsp;</p>
 
-To find out more information about the differences for organizations in migration and after Azure Active Directory is migrated, review the [Customer experience during the migration to Office 365 services in the new German datacenter regions](##-azure-active-directory)
+To find out more information about the differences for organizations in migration and after Azure Active Directory is migrated, review the [Customer experience during the migration to Office 365 services in the new German datacenter regions](https://docs.microsoft.com/microsoft-365/enterprise/ms-cloud-germany-transition-migration-phases?view=o365-worldwide&branch=Josephd-Germany-cloud)
 
 ## Exchange Online
 
@@ -675,7 +675,7 @@ To find out more information about the differences for organizations in migratio
 </tbody>
 </table>
 
-To find out more information about the differences for organizations in migration and after Exchange Online resources are migrated, review the [Customer experience during the migration to Office 365 services in the new German datacenter regions](##-exchange-online)
+To find out more information about the differences for organizations in migration and after Exchange Online resources are migrated, review the [Customer experience during the migration to Office 365 services in the new German datacenter regions](https://docs.microsoft.com/microsoft-365/enterprise/ms-cloud-germany-transition-experience?view=o365-worldwide&branch=josephd-germany-cloud)
 
 ## Exchange Online Protection
 
@@ -886,7 +886,7 @@ Backend Exchange Online Protection features are copied to new Germany region.
 <p>Microsoft of Dynamics resources</p>
 </td>
 <td width="26%">
-<p>Customers with Microsoft Dynamics will be engaged by Engineering or FastTrack to perform transition of Dynamics to the Office 365 services instance.<a href="#_ftn1" name="_ftnref1"></a></p>
+<p>Customers with Microsoft Dynamics will be engaged by Engineering or FastTrack to perform transition of Dynamics to the Office 365 services instance.</p>
 </td>
 <td width="24%">
 <p>Microsoft Dynamics 365 customers</p>
@@ -928,7 +928,7 @@ Backend Exchange Online Protection features are copied to new Germany region.
 <p>Microsoft of Power BI resources</p>
 </td>
 <td width="26%">
-<p>Customers with Microsoft Power BI will be engaged by Engineering or FastTrack after manually triggering an existing PBI migration tool to transition of Power BI to the Office 365 services instance..<a href="#_ftn1" name="_ftnref1">[1]</a></p>
+<p>Customers with Microsoft Power BI will be engaged by Engineering or FastTrack after manually triggering an existing PBI migration tool to transition of Power BI to the Office 365 services instance.</p>
 </td>
 <td width="24%">
 <p>Microsoft Power BI customers</p>
