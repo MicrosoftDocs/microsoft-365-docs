@@ -49,7 +49,6 @@ When you convert a user's mailbox to a shared mailbox, all of the existing email
 > [!NOTE]
 > It's not required to reset the user's password during mailbox conversion. However, if the password is not reset, **the original username and password continue to work** after the mailbox conversion is finished.
 
-    
 For everything else you need to know about shared mailboxes, see [About shared mailboxes](about-shared-mailboxes.md) and [Create a shared mailbox](create-a-shared-mailbox.md).
 
 > [!NOTE]
