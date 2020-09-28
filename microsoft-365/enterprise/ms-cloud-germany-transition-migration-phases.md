@@ -231,7 +231,7 @@ Here are the actions that should be done _before tenant migration begins_.
 </tr>
 <tr style="height: 270px;">
 <td style="height: 270px;" width="23%">
-<p>Determine which Azure services are in use and prepare for future migration from Germany to the Office 365 Services tenant by working with your partners. Follow steps described in the <a href="https://docs.microsoft.com/en-us/azure/germany/germany-migration-main">Azure migration playbook</a></p>
+<p>Determine which Azure services are in use and prepare for future migration from Germany to the Office 365 Services tenant by working with your partners. Follow steps described in the <a href="https://docs.microsoft.com/azure/germany/germany-migration-main">Azure migration playbook</a></p>
 <p>&nbsp;</p>
 </td>
 <td style="height: 270px;" width="26%">
@@ -257,7 +257,7 @@ Here are the actions that should be done _before tenant migration begins_.
 <p>All customers</p>
 </td>
 <td style="height: 238px;" width="25%">
-<p>Analyze License Feature differences between Microsoft Cloud Deutschland and Office 365 Services. Start with the <a href="https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description">Office 365 platform Service Description</a>.</p>
+<p>Analyze License Feature differences between Microsoft Cloud Deutschland and Office 365 Services. Start with the <a href="https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description">Office 365 platform Service Description</a>.</p>
 <p>&nbsp;</p>
 <p>Determine if any new Office 365 Services features should be initially disabled to limit user impact on user change management &amp; alter user license assignments as needed</p>
 <p>&nbsp;</p>
@@ -307,7 +307,7 @@ Here are the actions that should be done _before tenant migration begins_.
 <p>Office customers</p>
 </td>
 <td style="height: 179px;" width="25%">
-<p>Apply retention policy as described <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/retention-policies#a-policy-that-applies-to-entire-locations">here.&nbsp;</a></p>
+<p>Apply retention policy as described <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies#a-policy-that-applies-to-entire-locations">here.&nbsp;</a></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 </td>
@@ -434,7 +434,7 @@ Here are the actions that should be done after your pre-migration work that impa
 <p>Azure Customers</p>
 </td>
 <td width="25%">
-<p>For Azure migrations, see <a href="https://docs.microsoft.com/en-us/azure/germany/germany-migration-main">Azure migration playbook</a></p>
+<p>For Azure migrations, see <a href="https://docs.microsoft.com/azure/germany/germany-migration-main">Azure migration playbook</a></p>
 </td>
 </tr>
 <tr>
@@ -567,8 +567,8 @@ Here are the actions that should be done after your pre-migration work that impa
 </tbody>
 </table>
 <p>&nbsp;</p>
-<p><a href="#_ftnref1" name="_ftn1".></a>&nbsp;</p>
-To find out more information about the differences for organizations in migration and after Azure Active Directory is migrated, review the [Customer experience during the migration to Office 365 services in the new German datacenter regions](#azure-active-directory)
+
+To find out more information about the differences for organizations in migration and after Azure Active Directory is migrated, review the [Customer experience during the migration to Office 365 services in the new German datacenter regions](##-azure-active-directory)
 
 ## Exchange Online
 
@@ -675,7 +675,7 @@ To find out more information about the differences for organizations in migratio
 </tbody>
 </table>
 
-To find out more information about the differences for organizations in migration and after Exchange Online resources are migrated, review the [Customer experience during the migration to Office 365 services in the new German datacenter regions](#_Exchange_Online)
+To find out more information about the differences for organizations in migration and after Exchange Online resources are migrated, review the [Customer experience during the migration to Office 365 services in the new German datacenter regions](##-exchange-online)
 
 ## Exchange Online Protection
 
@@ -702,16 +702,16 @@ Backend Exchange Online Protection features are copied to new Germany region.
 <p>During migration, eDiscovery searches will fail or return 0 results for SharePoint Online, OneDrive for Business and Exchange Online locations that have been migrated</p>
 </td>
 <td width="26%">
-<p>During migration, customers can continue to&nbsp;create cases, holds, searches and&nbsp;exports in&nbsp;the&nbsp;<a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/manage-legal-investigations">Security &amp; Compliance&nbsp;Center</a>, including&nbsp;<a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/search-for-content">Content Search</a>.&nbsp; However,&nbsp;searches&nbsp;against&nbsp;SharePoint Online, OneDrive for Business and Exchange Online locations that have been migrated will either&nbsp;return 0 results or produce an error.&nbsp; See steps column to the right for&nbsp;remediation.&nbsp;</p>
+<p>During migration, customers can continue to&nbsp;create cases, holds, searches and&nbsp;exports in&nbsp;the&nbsp;<a href="https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations">Security &amp; Compliance&nbsp;Center</a>, including&nbsp;<a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-content">Content Search</a>.&nbsp; However,&nbsp;searches&nbsp;against&nbsp;SharePoint Online, OneDrive for Business and Exchange Online locations that have been migrated will either&nbsp;return 0 results or produce an error.&nbsp; See steps column to the right for&nbsp;remediation.&nbsp;</p>
 </td>
 <td width="24%">
 <p>All customers using eDiscovery&nbsp;</p>
 </td>
 <td width="25%">
 <p>In the event that&nbsp;a search returns 0 results or an error during migration, please take the following action:&nbsp;</p>
-<p>SharePoint Online - Download sites directly from SharePoint Online/ OneDrive for Business site using&nbsp;&nbsp;<a href="https://support.office.com/en-us/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05">Download files and folders from OneDrive or SharePoint</a>&nbsp;- this will require SharePoint Online admin or R/O permissions on the site&nbsp;</p>
-<p>If limits are exceeded, explained in the above documentation, customer can utilize the OneDrive for Business sync client following&nbsp;<a href="https://support.office.com/en-us/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88">this guidance</a>.&nbsp;</p>
-<p>Exchange Online -&nbsp;<a href="https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/ediscovery/ediscovery?view=exchserver-2019">In-Place eDiscovery in Exchange Server</a>&nbsp;</p>
+<p>SharePoint Online - Download sites directly from SharePoint Online/ OneDrive for Business site using&nbsp;&nbsp;<a href="https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05">Download files and folders from OneDrive or SharePoint</a>&nbsp;- this will require SharePoint Online admin or R/O permissions on the site&nbsp;</p>
+<p>If limits are exceeded, explained in the above documentation, customer can utilize the OneDrive for Business sync client following&nbsp;<a href="https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88">this guidance</a>.&nbsp;</p>
+<p>Exchange Online -&nbsp;<a href="https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery?view=exchserver-2019">In-Place eDiscovery in Exchange Server</a>&nbsp;</p>
 <p>&nbsp;</p>
 </td>
 </tr>
@@ -973,7 +973,7 @@ Backend Exchange Online Protection features are copied to new Germany region.
 <td width="26%">
 <p>Microsoft gains the right to migrate in one of two ways, which enables Microsoft to orchestrate the transition of data and services to the Office 365 services instance.</p>
 <p>&nbsp;</p>
-<p>Admin <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/ms-cloud-germany-migration-opt-in?view=o365-worldwide">opts-in</a> to the Microsoft-driven migration.</p>
+<p>Admin <a href="https://docs.microsoft.com/microsoft-365/enterprise/ms-cloud-germany-migration-opt-in?view=o365-worldwide">opts-in</a> to the Microsoft-driven migration.</p>
 <p>&nbsp;</p>
 <p>Customer renews any subscription in their Microsoft Cloud Deutschland tenant after May 1, 2020. We will notify these customers of the migration right each month, wait 30 days to give customers a chance to cancel, and then directly opt-in, tracked in ICM.</p>
 <p>&nbsp;</p>
@@ -1006,7 +1006,7 @@ Backend Exchange Online Protection features are copied to new Germany region.
 <p>&nbsp;&nbsp;</p>
 <p>New Subscriptions in the Office 365 services will be purchased with the new term (monthly/quarterly/yearly) and the customer will receive prorated refund for the balance not used in Black Forest subscription.</p>
 <p>Partner Black Forest Tenant will not be migrated. CSP Customers will be migrated to Office 365 services under new Office 365 services Tenant of the same Partner. After Customer migration the Partner can manage this customer only&nbsp; from the Office 365 services tenant.</p>
-<p>Additional functionality available (e.g., Microsoft Planner, Microsoft Flo*w, etc) [Unless disabled by tenant admin, see <a href="https://docs.microsoft.com/en-us/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses">https://docs.microsoft.com/en-us/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses</a> for references on how to disable service plans assigned to users&rsquo; licenses].</p>
+<p>Additional functionality available (e.g., Microsoft Planner, Microsoft Flo*w, etc) [Unless disabled by tenant admin, see <a href="https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses">https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses</a> for references on how to disable service plans assigned to users&rsquo; licenses].</p>
 <p>&nbsp;</p>
 </td>
 </tr>
