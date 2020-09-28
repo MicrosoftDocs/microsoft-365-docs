@@ -33,9 +33,7 @@ Term sets are configured in the Managed Metadata services term store in the Shar
 
 There could be a number of reasons why you might want to use a synonym in your term set. For example, there could be outdated terms, renamed terms, or variations between your organizations departments on naming.
 
-To make the managed metadata field available for you to select when you create your extractor in your model, you need to [add it as a managed-metadata column](https://docs.microsoft.com/sharepoint/add-columns-content-type) in the content type. For example, when you created your model, you created a *Contracts* content type.  Using the Content Type gallery in the SharePoint admin center, you can now add the *Contract Services* managed metadata column that includes the synonyms and preferred value.
-
-After you add the column, the *Contract Services* managed metadata field will now be available for you to select when you create the extractor for your model.
+To make the managed metadata field available for you to select when you create your extractor in your model, you need to [add it as a managed-metadata site column](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). After you add the site column, it will be available for you to select when you create the extractor for your model.
 
    ![Contract service column](../media/content-understanding/contract-services.png)</br>
 
