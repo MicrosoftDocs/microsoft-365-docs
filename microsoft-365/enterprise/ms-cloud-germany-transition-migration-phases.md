@@ -568,7 +568,7 @@ Here are the actions that should be done after your pre-migration work that impa
 </table>
 <p>&nbsp;</p>
 <p><a href="#_ftnref1" name="_ftn1".></a>&nbsp;</p>
-To find out more information about the differences for organizations in migration and after Azure Active Directory is migrated, review the [Customer experience during the migration to Office 365 services in the new German datacenter regions](##azure-active-directory)
+To find out more information about the differences for organizations in migration and after Azure Active Directory is migrated, review the [Customer experience during the migration to Office 365 services in the new German datacenter regions](#azure-active-directory)
 
 ## Exchange Online
 
