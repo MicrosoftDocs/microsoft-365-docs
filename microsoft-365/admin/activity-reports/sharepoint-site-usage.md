@@ -34,9 +34,12 @@ Microsoft 365 Reports in the admin center is not supported for GCC High and DoD 
 ## How to get to the SharePoint site usage report
 
 1. In the admin center, go to **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a>.
-
     
-2. From the **Select a report** drop-down, select **SharePoint** \> **Site usage**.
+2. Under **SharePoint files** click **View more**. 
+
+3. Next to **SharePoint Activity**, click the down arrow to open the menu.
+
+4. Select **SharePoint** \> **Site usage**.
   
 ## Interpreting the SharePoint site usage report
 
