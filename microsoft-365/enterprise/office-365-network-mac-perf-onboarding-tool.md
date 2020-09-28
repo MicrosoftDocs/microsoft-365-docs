@@ -200,7 +200,7 @@ This tests for UDP connectivity to the Microsoft Teams service front door. If th
 
 Shows the UDP packet loss measured in a 10 second test audio call from the client to the Microsoft Teams service front door. This should be lower than **1.00%** for a pass.
 
-### Latency
+#### Latency
 
 Shows the measured UDP latency, which should be lower than **100ms**.
 

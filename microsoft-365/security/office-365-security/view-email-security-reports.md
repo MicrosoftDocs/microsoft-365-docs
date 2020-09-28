@@ -359,8 +359,13 @@ The following views are available:
 If you click **Filters**, you can modify the report with the following filters:
 
 - **Start date** and **End date**
-- Detection value
-- **Protected by** (Office 365 ATP only): **ATP** or **EOP**. Note that this filterable property isn't available in **View data by: Content \> Malware**.
+- **Detection**
+- **Protected by**: **ATP** or **EOP**
+- **Tag**: filter by tag to return users or groups that have had a specific tag applied. For more information about user tags, see [User tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Domain**
+
+> [!NOTE]
+> **Protected by**, **Tag** and **Domain** are Office 365 ATP only. These filterable properties are not available in **View data by: Content \> Malware**.
 
 ### Details table view for the Threat protection status report
 
@@ -373,7 +378,12 @@ If you click **View details table**, the information that's shown depends on the
   - **Directed by**
   - **Malware name**
 
-- **View data by: Overview**: No **View details table** button is available.
+If you click **Filters** in this view, you can modify the report with the following filters:
+
+- **Start date** and **End date**
+- **Detection**
+
+**View data by: Overview**: No **View details table** button is available.
 
 - All other charts:
 
@@ -384,12 +394,16 @@ If you click **View details table**, the information that's shown depends on the
   - **Detected by**
   - **Delivery status**
   - **Source of compromise**
+  - **Tags**
 
 If you click **Filters**, you can modify the report with the following filters:
 
 - **Start date** and **End date**
-- Detection value
-- **Protected by** (Office 365 ATP only): **ATP** or **EOP**. Note that this filterable property isn't available in **View data by: Content \> Malware**.
+- **Detection**
+- **Protected by** (Office 365 ATP only): **ATP** or **EOP**
+- **Tag**: filter by tag to return users or groups that have had a specific tag applied. For more information about user tags, see [User tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Domain**
+- **Recipients** (Note that this filterable property is only available in the details table view)
 
 ## Top malware report
 
