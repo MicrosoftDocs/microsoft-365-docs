@@ -1,5 +1,5 @@
 ---
-title: Build search queries - Data investigations 
+title: Build search queries in Data investigations 
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,10 +16,10 @@ search.appverid:
 - MET150
 ms.assetid: 
 ms.custom: seo-marvel-mar2020
-description: Use keywords and conditions to narrow the search scope when searching for data using Data Investigation in Microsoft 365.
+description: "Use keywords and conditions to narrow the search scope when searching for data using Data Investigation in Microsoft 365."
 ---
 
-# Build search queries
+# Build search queries in Data Investigations (preview)
 
 When building search queries, you can use keywords to find specific content and conditions to narrow the scope of the search to return items that are most relevant to your investigation.
 

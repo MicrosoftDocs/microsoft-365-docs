@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
@@ -15,12 +15,11 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: Tagging documents in a review set helps remove unnecessary content and identify relevant content in an Advanced eDiscovery case.
+description: "Tagging documents in a review set helps remove unnecessary content and identify relevant content in an Advanced eDiscovery case."
 ms.custom: seo-marvel-mar2020
 ---
 
-# Tag documents in a review set
+# Tag documents in a review set in Advanced eDiscovery
 
 Organizing content in a review set is important to complete various workflows in the eDiscovery process. This includes:
 
