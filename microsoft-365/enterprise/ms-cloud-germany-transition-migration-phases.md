@@ -458,7 +458,7 @@ Here are the actions that should be done after your pre-migration work that impa
 <p>Update AADConnect</p>
 </td>
 <td width="25%">
-<p>Once AAD cutover is completed, the organization is fully Office 365 services organization (no longer connected to Microsoft Cloud Deutschland). At this point the customer needs to uninstall and then re-install AAD Connect to repoint to the WW AAD endpoints for sync. If no re-installation is possible, the string value &ldquo;AzureInstance&rdquo; needs to be set from 3 (Black Forest) to 0 in the registry path &ldquo;Computer\HKEY_LOCAL_<br/>MACHINE\SOFTWARE\Microsoft\Azure AD Connect&rdquo;. Once the registry value has been changed, the AAD Sync service has to be restarted.</p>
+<p>Once AAD cutover is completed, the organization is fully Office 365 services organization (no longer connected to Microsoft Cloud Deutschland). At this point the customer needs to uninstall and then re-install AAD Connect to repoint to the WW AAD endpoints for sync. If no re-installation is possible, the string value &ldquo;AzureInstance&rdquo; needs to be set from 3 (Black Forest) to 0 in the registry path &ldquo;Computer\HKEY_LOCAL_<br/>MACHINE\SOFTWARE\<br/>Microsoft\Azure AD Connect&rdquo;. Once the registry value has been changed, the AAD Sync service has to be restarted.</p>
 </td>
 <td width="25%">
 <p>Hybrid AAD connected organizations</p>
