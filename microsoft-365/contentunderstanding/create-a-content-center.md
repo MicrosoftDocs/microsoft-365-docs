@@ -27,23 +27,25 @@ To create and manage document understanding models, you first need a content cen
 
    ![Select a doc library](../media/content-understanding/content-center-page.png)</br>
 
-You create an initial content center during [setup](set-up-content-understanding.md). But a SharePoint admin can also choose to create additional centers as needed. While a single content center may be fine for environments for which you want a roll-up of all model activity, you may want to have additional centers for multiple departments within your organization, which may have different needs and requirements for their models.
+You create a default content center during [setup](set-up-content-understanding.md). But a SharePoint admin can also choose to create additional centers as needed. While a single content center may be fine for environments for which you want a roll-up of all model activity, you may want to have additional centers for multiple departments within your organization, which may have different needs and permission requirements for their models.
 
 > [!NOTE]
-> A SharePoint admin can create a content center site like they would [create any other SharePoint site](https://docs.microsoft.com/sharepoint/create-site-collection) by using a site template.
+> A SharePoint admin can create a content center site like they would [create any other SharePoint site](https://docs.microsoft.com/sharepoint/create-site-collection) through the admin center site provisioning panel.
 
 To create a new content center:
 
-1. From the Microsoft 365 admin center, go to the SharePoint admin center.
-2. In the SharePoint admin center, under **Sites**, select **Active Sites**.
+1. On the Microsoft 365 admin center, go to the SharePoint admin center.
+2. On the SharePoint admin center, under **Sites**, select **Active Sites**.
 3. On the **Active Sites** page, click **Create**, and then select **Other options**.
 4. On the **Choose a template** menu, select **Content Center**.
 5. For the new site, provide a **Site Name**, **Primary administrator**, and a **Language**.</br>
 
 > [!NOTE] 
-> You can optionally select a content center site to render in any of the available languages. Only current models can be created for English files.</br>
+> You can select a content center site to render in any of the available languages, but note that currently models can only be created for English files. Also note that like other site templates, the default site language isn't editable after the site is created.</br>
 
 6. Select **Finished**.
+ 
+After you create a content center site, you will see it listed on the **Active sites** page in the SharePoint admin center. 
 
 ### Give access to additional users
  
