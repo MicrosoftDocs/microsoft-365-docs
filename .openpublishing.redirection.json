@@ -1559,7 +1559,21 @@
       "source_path": "microsoft-365/compliance/compliance-score-faq.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-faq",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/classifier-getting-started-with.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/classifier-get-started-with",
+      "redirect_document_id":true
+    },
+    {
+      "source_path": "microsoft-365/compliance/classifier-creating-a-trainable-classifier.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/classifier-get-started-with",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/classifier-using-a-ready-to-use-classifier.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/classifier-learn-about",
+      "redirect_document_id": true
     }
-
   ]
 }
