@@ -22,7 +22,7 @@ Users with permissions to the image file can see and edit the tags in the file i
 If you turn tagging off, images will no longer be automatically tagged. Existing tags will not be removed.
 
 > [!NOTE]
-> System generated tags may change with updates to the image or our tag technology. Users may also add or delete tags from individual images.
+> System generated tags may change with updates to the image or our tag technology.
 
 
 ## Configure image tagging
