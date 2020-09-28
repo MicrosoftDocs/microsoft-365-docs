@@ -41,9 +41,13 @@ You may be accustomed to seeing these three components discussed in this way:
 |---------|---------|---------|
 |Prevents broad, volume-based, known attacks.    |  Protects email and collaboration from zero-day malware, phish, and business email compromise.       | Adds post-breach investigation, hunting, and response, as well as automation, and simulation (for training).         |
 
-But in terms of architecture, let's start by thinking of each as stable and cumulative layer of security in a suite. More like this:
+But in terms of architecture, let's start by thinking of each piece as cumulative layers of security, each with a security emphasis. More like this:
 
-:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="EOP and ATP and their relationships to one another, including a note for email authentication.":::
+<!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
+
+:::image type="content" source="../../media/tp_EOPandATPGraphic.png" alt-text="EOP and ATP and their relationships to one another with service emphasis, including a note for email authentication.":::
+
+Though each of these services emphasizes a specific goal from among Protect, Detect, Investigate, and Respond, ***all*** the services can carry out ***any*** of the goals of protecting, detecting, investigating, and responding.
 
 The core of Office 365 security is EOP protection. ATP P1 contains EOP in it. ATP P2 contains P1 and EOP. The structure is cumulative. That's why, when configuring ATP, you should start with EOP and work up through the layers.
 
