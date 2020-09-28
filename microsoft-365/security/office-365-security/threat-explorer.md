@@ -177,7 +177,7 @@ You can get to the same location in the Real-time detections report as follows:
 **Explorer** \> **Real-time detections** \> **View Phish** \> **URLs** \> **Top URLs or Top Clicks** \> **Click on any record to open URL flyout** \> **Navigate to the Clicks Tab.**
 
 > [!TIP]
-> Network Message ID maps the click back to specific mails when you search through Explorer or associated 3rd party tools via Network Message ID. Searching through the Network Message ID will give admins the specific email associated with a click result. On export having, the correlating identification of Network Message ID makes for quicker and more powerful analysis.
+> Network Message ID maps the click back to specific mails when you search through Explorer or associated third-party tools via Network Message ID. Searching through the Network Message ID will give admins the specific email associated with a click result. On export, having the correlating identification of Network Message ID makes for quicker and more powerful analysis.
 
 ![tp_ExportClickResultAndNetworkID.png](../../media/tp_ExportClickResultAndNetworkID.png)
 
