@@ -20,7 +20,7 @@ ms.custom: seo-marvel-mar2020
 
 # Review the data in evidence
 
-The data in an evidence set in a data investigation is a snapshot of the search results that you collected and added to the evidence set. When you add search results to evidence, a process is triggered to extract files, metadata, and text from the items returned by the search. Then the Data Investigations (Preview) tool then builds a new index (by a process called *Advanced indexing*) of all the data and adds to an evidence set on the **Evidence** tab. 
+The data in an evidence set in a data investigation is a snapshot of the search results that you collected and added to the evidence set. When you add search results to evidence, a process is triggered to extract files, metadata, and text from the items returned by the search. Then the Data Investigations (preview) tool then builds a new index (by a process called *Advanced indexing*) of all the data and adds to an evidence set on the **Evidence** tab. 
 
 For time-sensitive investigations, this allows you to quickly contain the environment by deleting the actual spilled or malicious data located in the at original data source, while at the same time allowing you to investigate the re-created evidence in a quarantined environment, which in this case is the data copied to the evidence set). After the evidence is collected and added to the evidence set, you can review individual documents in their native format, text format, or a near-native format that you can use to annotate and redact documents. Additionally, you can run queries to narrow the data set by time range, file types, data owners, and many other properties and search conditions. For example, by using the Author, Sender, or Recipient conditions, you can quickly identify the people are involved in the incident and if any data from your organization has been shared with external users. For more information about searching through data in an evidence set, see [Query the data in evidence](evidence-query.md).
 
@@ -41,7 +41,7 @@ To access any of these viewers, just select a document in an evidence set.
 
 This view displays various metadata properties associated with the selected document. You can toggle this view on and off by clicking **File metadata**. When reviewing a document, you can view the file metadata and still change between the different viewers.
 
-Here's an example of the file metadata for a document. For more information about the metadata fields, see [Document metadata fields in Data Investigations (Preview)](document-metadata-fields.md).
+Here's an example of the file metadata for a document. For more information about the metadata fields, see [Document metadata fields in Data Investigations (preview)](document-metadata-fields.md).
 
 ![File metadata panel](../media/Reviewimage2.png)
 
