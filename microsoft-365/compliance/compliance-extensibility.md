@@ -72,7 +72,7 @@ To learn more about the MIP SDK, prerequisites, additional scenarios, and sample
 
 These two APIs form the Microsoft Graph API for Teams DLP. You can get started by trying out the [sample app](https://github.com/microsoftgraph/csharp-webhook-with-resource-data). For more information about Microsoft Teams messaging webhooks, see the [documentation](https://docs.microsoft.com/graph/api/subscription-post-subscriptions).
 
-For the licensing requirements for Teams DLP, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
+For the licensing requirements for Teams DLP, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams).
 
 ### Microsoft Graph API for eDiscovery (preview)
 

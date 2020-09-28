@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "A table listing the supported file types and what viewers they can be viewed in for Data Investigations (Preview)."
+description: "A table listing the supported file types and what viewers they can be viewed in for Data Investigations (preview)."
 ms.custom: seo-marvel-mar2020
 ---
 
