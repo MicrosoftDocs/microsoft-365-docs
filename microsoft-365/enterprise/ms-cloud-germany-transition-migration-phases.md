@@ -363,208 +363,22 @@ To find out more information about any actions needed during the migration phase
 
 Here are the actions that should be done after your pre-migration work that impacts Azure AD tenant migration.
 
-<table style="width: 100%;">
-<tbody>
-<tr>
-<td style="width: 25%;">
-<p>Step(s)</p>
-</td>
-<td style="width: 25%;">
-<p>Description</p>
-</td>
-<td style="width: 25%;">
-<p>Applies to</p>
-</td>
-<td style="width: 25%;">
-<p>Impact</p>
-</td>
-</tr>
-<tr>
-<td style="width: 25%;">
-<p>Microsoft Cloud Deutschland Azure AD tenant copied to Office 365 Services</p>
-</td>
-<td style="width: 25%;">
-<p>Azure AD copies tenant to Office 365 Services. Tenant and User identifiers are preserved.&nbsp; AAD service calls are redirected from Microsoft Cloud Deutschland to Office 365 Services transparent to services.</p>
-</td>
-<td style="width: 25%;">
-<p style="text-align: left;">All Office customers</p>
-</td>
-<td style="width: 25%;">
-<p>Tenant admin can now sign in with existing credentials to http://portal.microsoftazure.de/ and https://portal.azure.com:</p>
-<p>Azure Cloud Germany subscriptions are visible only in Germany portal and vice versa.</p>
-<p>GDPR Data Subject Requests (DSRs) are executed from Office 365 Services Azure Admin portal for future requests. Any legacy/non-customer diagnostic data information resident Microsoft Cloud Deutschland is deleted at or before 30 days.</p>
-<p>Azure AD tenant transition to Office 365 Services represents the &lsquo;point of no return&rsquo; for the tenant.</p>
-<p>Azure Sign-In are presented in the portal where the user attempts access. Audit Logs are available from only the Office 365 services endpoint after transition.</p>
-<p>Sign-in and Audit logs from the Microsoft Cloud Deutschland portal should be saved by the admin prior to completion of migration</p>
-<p>All customers using federated authentications with Active Directory Federation Services (AD FS), should not make changes to Issuer URIs used for all authentications with on-premises Active Directory during migration. Changing Issuer URIs will lead to authentication failures for users in the domain. Issuer URIs can be changed directly in AD FS or when a domain is converted from managed to federated and vice versa. Microsoft recommends customers do not add/remove/convert a federated domain in the Azure AD tenant been migrated. Issuer URIs can be changed once the migration is fully complete.</p>
-<p>External sharing with non-migrated tenants (those present still in Microsoft Cloud Deutschland Azure AD) will no longer work</p>
-<p>&nbsp;</p>
-<p>Password resets, password changes, password reset by admin for managed (non AD FS) organizations must be performed via the Office 365 services portals.</p>
-</td>
-</tr>
-<tr>
-<td style="width: 25%;">
-<p>Establish AuthServer in on-premises pointing to global STS service</p>
-</td>
-<td style="width: 25%;">
-<p>This ensures that requests from users who migrate to the Microsoft Cloud Deutschland service for Exchange availability requests targeting the hybrid on-premises environment are authenticated to access the on-premises service.</p>
-<p>&nbsp;</p>
-</td>
-<td style="width: 25%;">
-<p>Exchange Online customers with Hybrid (on-premises) deployments</p>
-</td>
-<td style="width: 25%;">
-<p>After Azure AD migration is signaled complete, the administrator of the on-premises Exchange (hybrid) topology must add a new authentication service endpoint for the Office 365 services. Using the below commandlet from Exchange Powershell, replace &lt;tenantID&gt; with your organizations Tenant ID (found in Azure portal/AAD blade)</p>
-<p>New-AuthServer</p>
-<p>&nbsp;GlobalMicrosoftSts&nbsp;-AuthMetadataUrl</p>
-<p>https://accounts.accesscontrol</p>
-<p>.windows.net/&lt;TenantId&gt;/metadata/</p>
-<p>json/1</p>
-<p>Failing to complete this task, as Mailbox users migrate from Microsoft Cloud Deutschland to Office 365 services their hybrid free-busy requests may fail to provide information.</p>
-</td>
-</tr>
-<tr>
-<td style="width: 25%;">
-<p>Migration of Azure resources</p>
-</td>
-<td style="width: 25%;">
-<p>Customers using Office 365 and Azure resources (e.g., Networking, Compute, Storage, etc) <a href="#_ftn1" name="_ftnref1"></a></p>
-</td>
-<td style="width: 25%;">
-<p>Azure Customers</p>
-</td>
-<td style="width: 25%;">
-<p>For Azure migrations, see <a href="https://docs.microsoft.com/en-us/azure/germany/germany-migration-main">Azure migration playbook</a></p>
-</td>
-</tr>
-<tr>
-<td style="width: 25%;">
-<p>Azure AD cutover to Office 365 services is completed</p>
-</td>
-<td style="width: 25%;">
-<p>Azure AD tenant is finalized against the Office 365 services. Microsoft Cloud Deutschland services no longer recognize the transitioned organization.</p>
-</td>
-<td style="width: 25%;">
-<p>All Office Customers</p>
-</td>
-<td style="width: 25%;">
-<p>Tenant admin can only sign in with existing credentials to services in the Office 365 services instance (eg <a href="https://portal.azure.com">https://portal.azure.com</a>).</p>
-<p>External sharing with non-migrated tenants (those present still in Microsoft Cloud Deutschland Azure AD) will no longer work.</p>
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td style="width: 25%;">
-<p>Update AADConnect</p>
-</td>
-<td style="width: 25%;">
-<p>Once AAD cutover is completed, the organization is fully Office 365 services organization (no longer connected to Microsoft Cloud Deutschland). At this point the customer needs to uninstall and then re-install AAD Connect to repoint to the WW AAD endpoints for sync. If no re-installation is possible, the string value &ldquo;AzureInstance&rdquo; needs to be set from 3 (Black Forest) to 0 in the registry path &ldquo;Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect&rdquo;. Once the registry value has been changed, the AAD Sync service has to be restarted.</p>
-</td>
-<td style="width: 25%;">
-<p>Hybrid AAD connected organizations</p>
-</td>
-<td style="width: 25%;">
-<p>Re-run AAD Connect installation or change registry key value (incl. service restart).</p>
-<p>Failing to do so, will lead to users not being synced once the Microsoft Cloud Deutschland endpoints are not available anymore.</p>
-<p>Failing to do so, will lead to users not being synced once the Black Forest endpoints are not available anymore.</p>
-</td>
-</tr>
-<tr>
-<td style="width: 25%;">
-<p>Remove Black Forest AD FS Relying Party Trusts</p>
-</td>
-<td style="width: 25%;">
-<p>Once AAD cutover is completed, the organization is fully Office 365 services organization (no longer connected to Microsoft Cloud Deutschland). At this point the customer will need to remove the Relying Party Trust to the Black Forest endpoints. This can only be done, when no applications of the customer point to Black Forest endpoints when AAD is leveraged as IdP.</p>
-</td>
-<td style="width: 25%;">
-<p>Federated Authentication organizations</p>
-</td>
-<td style="width: 25%;">
-<p>None</p>
-</td>
-</tr>
-<tr>
-<td style="width: 25%;">
-<p>Request to join a group in last 30 days before migration will need to be requested again if the original request was not approved</p>
-</td>
-<td style="width: 25%;">
-<p>End user customer will need to use <a href="https://account.activedirectory.windowsazure.com/r#/joinGroups">Access panel</a> to submit request to join a group again if those requests were not approved in the last 30 days before the migration.</p>
-</td>
-<td style="width: 25%;">
-<p>End users whose group approval requests were not approved in last 30 days before migration</p>
-</td>
-<td style="width: 25%;">
-<p>As an end user, navigate to <a href="https://account.activedirectory.windowsazure.com/r#/joinGroups">Access panel</a>.</p>
-<p>Find the group for which membership approval was pending in 30 days before migration.</p>
-<p>Request to join the group again.</p>
-<p>Active group membership requests which are less than 30 days before migration cannot be approved, unless they are re-requested post migration</p>
-</td>
-</tr>
-<tr>
-<td style="width: 25%;">
-<p>Remove legacy Application URI and ReplyURL</p>
-</td>
-<td style="width: 25%;">
-<p>&nbsp;</p>
-</td>
-<td style="width: 25%;">
-<p>&nbsp;</p>
-</td>
-<td style="width: 25%;">
-<p>None</p>
-</td>
-</tr>
-<tr>
-<td style="width: 25%;">
-<p>Update on-premises DNS services for Office 365 services endpoints</p>
-</td>
-<td style="width: 25%;">
-<p>Customer managed DNS entries which point to Office365 Germany need to repoint to the Office 365 services endpoints.</p>
-</td>
-<td style="width: 25%;">
-<p>All Office customers</p>
-</td>
-<td style="width: 25%;">
-<p>Required action &ndash; non action may result in service / client failure.</p>
-</td>
-</tr>
-<tr>
-<td style="width: 25%;">
-<p>Update partners and 3<sup>rd</sup> party services for Office 365 services endpoints</p>
-</td>
-<td style="width: 25%;">
-<p>3<sup>rd</sup> party services and partners which point to Office365 Germany need to repoint to the Office 365 services endpoints. Example given:</p>
-<p>Re-Register, in alignment with your vendors/partners, gallery app version of applications, if available</p>
-<p>Point all custom applications which leverage e.g. Graph API from graph.microsoft.de to graph.microsoft.com. Other APIs with changed endpoints also need to be adjusted, if leveraged.</p>
-<p>&nbsp;</p>
-</td>
-<td style="width: 25%;">
-<p>All Office customers</p>
-</td>
-<td style="width: 25%;">
-<p>Required action &ndash; non action may result in service / client failure.</p>
-</td>
-</tr>
-<tr>
-<td style="width: 25%;">
-<p>Office Clients, Office Online</p>
-</td>
-<td style="width: 25%;">&nbsp;</td>
-<td style="width: 25%;">
-<p>All Office customers</p>
-</td>
-<td style="width: 25%;">
-<p>Remove MSOID CName from customer owned DNS if existed.</p>
-<p>Notify users to close ALL Office apps and then sign back in (or force client restart, user sign-in) to enable Office clients to pick up the change.</p>
-<p>Notify users/helpdesk that users &lsquo;may&rsquo; see office banner prompting them to re-activate Office apps within 72 hours of cutover.</p>
-<p>Personal machines must close all Office applications, sign out, then back in. In the Yellow activation bar sign-in to re-activate against the Office 365 services service</p>
-<p>Shared machines &ndash; No extra impact. Similar experience as Personal machines</p>
-<p>Mobile devices &ndash; Mobile devices must close then sign out and back into mobile applications.</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
+| Step(s) | Description | Applies to | Impact |
+| --- | --- | --- | --- |
+| Microsoft Cloud Deutschland Azure AD tenant copied to Office 365 Services | Azure AD copies tenant to Office 365 Services. Tenant and User identifiers are preserved. AAD service calls are redirected from Microsoft Cloud Deutschland to Office 365 Services transparent to services. | All Office customers | Tenant admin can now sign in with existing credentials to http://portal.microsoftazure.de/ and https://portal.azure.com.Azure Cloud Germany subscriptions are visible only in Germany portal and vice versa.GDPR Data Subject Requests (DSRs) are executed from Office 365 Services Azure Admin portal for future requests. Any legacy/non-customer diagnostic data information resident Microsoft Cloud Deutschland is deleted at or before 30 days.Azure AD tenant transition to Office 365 Services represents the &#39;point of no return&#39; for the tenant.Azure Sign-In are presented in the portal where the user attempts access. Audit Logs are available from only the Office 365 services endpoint after transition.Sign-in and Audit logs from the Microsoft Cloud Deutschland portal should be saved by the admin prior to completion of migrationAll customers using federated authentications with Active Directory Federation Services (AD FS), should not make changes to Issuer URIs used for all authentications with on-premises Active Directory during migration. Changing Issuer URIs will lead to authentication failures for users in the domain. Issuer URIs can be changed directly in AD FS or when a domain is converted from managed to federated and vice versa. Microsoft recommends customers do not add/remove/convert a federated domain in the Azure AD tenant been migrated. Issuer URIs can be changed once the migration is fully complete.External sharing with non-migrated tenants (those present still in Microsoft Cloud Deutschland Azure AD) will no longer workMulti-Factor Auth requests using the Microsoft Authenticator application display as UserObjectID (GUID) while the tenant is copied to Office 365 services. MFA requests will perform as expected despite this display behavior. Microsoft Authenticator accounts activated using Office 365 services endpoints will display Username (UPN). Accounts added using Microsoft Cloud Deutschland endpoints will display UserObjectID (GUID) but will work with both Microsoft Cloud Deutschland and Office 365 services endpoints.Password resets, password changes, password reset by admin for managed (non AD FS) organizations must be performed via the Office 365 services portals. |
+| Establish AuthServer in on-premises pointing to global STS service | This ensures that requests from users who migrate to the Microsoft Cloud Deutschland service for Exchange availability requests targeting the hybrid on-premises environment are authenticated to access the on-premises service.
+ | Exchange Online customers with Hybrid (on-premises) deployments | After Azure AD migration is signaled complete, the administrator of the on-premises Exchange (hybrid) topology must add a new authentication service endpoint for the Office 365 services. Using the below commandlet from Exchange Powershell, replace \&lt;tenantID\&gt; with your organizations Tenant ID(found in Azure portal/AAD blade)New-AuthServerGlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/\&lt;TenantId\&gt;/metadata/json/1Failing to complete this task, as Mailbox users migrate from Microsoft Cloud Deutschland to Office 365 services their hybrid free-busy requests may fail to provide information. |
+| Migration of Azure resources | Customers using Office 365 and Azure resources (e.g., Networking, Compute, Storage, etc) will perform the migration of resources to the Office 365 Services instance. This migration is customer responsibility. Message Center posts will signal start and migration must be completed prior to finalization of the Azure AD organization in the Office 365 services environment. | Azure Customers | For Azure migrations, see [Azure migration playbook](https://docs.microsoft.com/en-us/azure/germany/germany-migration-main) |
+| Azure AD cutover to Office 365 services is completed | Azure AD tenant is finalized against the Office 365 services. Microsoft Cloud Deutschland services no longer recognize the transitioned organization. | All Office Customers | Tenant admin can only sign in with existing credentials to services in the Office 365 services instance (e.g. [https://portal.azure.com](https://portal.azure.com/)).External sharing with non-migrated tenants (those present still in Microsoft Cloud Deutschland Azure AD) will no longer work.|
+| Update AADConnect | Once AAD cutover is completed, the organization is fully Office 365 services organization (no longer connected to Microsoft Cloud Deutschland). At this point the customer needs to uninstall and then re-install AAD Connect to repoint to the WW AAD endpoints for sync. If no re-installation is possible, the string value &quot;AzureInstance&quot; needs to be set from 3 (Black Forest) to 0 in the registry path &quot;Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\Azure AD Connect&quot;. Once the registry value has been changed, the AAD Sync service has to be restarted. | Hybrid AAD connected organizations | Re-run AAD Connect installation or change registry key value (incl. service restart).Failing to do so, will lead to users not being synced once the Microsoft Cloud Deutschland endpoints are not available anymore.Failing to do so, will lead to users not being synced once the Black Forest endpoints are not available anymore. |
+| Remove Black Forest AD FS Relying Party Trusts | Once AAD cutover is completed, the organization is fully Office 365 services organization (no longer connected to Microsoft Cloud Deutschland). At this point the customer will need to remove the Relying Party Trust to the Black Forest endpoints. This can only be done, when no applications of the customer point to Black Forest endpoints when AAD is leveraged as IdP. | Federated Authentication organizations | None |
+| Request to join a group in last 30 days before migration will need to be requested again if the original request was not approved | End user customer will need to use [Access panel](https://account.activedirectory.windowsazure.com/r#/joinGroups) to submit request to join a group again if those requests were not approved in the last 30 days before the migration. | End users whose group approval requests were not approved in last 30 days before migration | As an end user, navigate to [Access panel](https://account.activedirectory.windowsazure.com/r#/joinGroups).Find the group for which membership approval was pending in 30 days before migration.Request to join the group again.Active group membership requests which are less than 30 days before migration cannot be approved, unless they are re-requested post migration |
+| Remove legacy Application URI and ReplyURL |
+ |
+ | None |
+| Update on-premises DNS services for Office 365 services endpoints | Customer managed DNS entries which point to Office365 Germany need to repoint to the Office 365 services endpoints. | All Office customers | Required action – non action may result in service / client failure. |
+| Update partners and 3rd party services for Office 365 services endpoints | 3rd party services and partners which point to Office365 Germany need to repoint to the Office 365 services endpoints. Example given:Re-Register, in alignment with your vendors/partners, gallery app version of applications, if availablePoint all custom applications which leverage e.g. Graph API from graph.microsoft.de to graph.microsoft.com. Other APIs with changed endpoints also need to be adjusted, if leveraged.Change all non-first party Enterprise Applications to redirect to the WW endpoints. | All Office customers | Required action – non action may result in service / client failure. |
+| Office Clients, Office Online | During Office client cutover, Azure AD finalizes the tenant scope to point to the Office 365 services. This configuration change enables Office clients to update and point to the Office 365 services endpoints. | All Office customers | Remove MSOID CName from customer owned DNS if existed. Notify users to close ALL Office apps and then sign back in (or force client restart, user sign-in) to enable Office clients to pick up the change.Notify users/helpdesk that users &#39;may&#39; see office banner prompting them to re-activate Office apps within 72 hours of cutover.Personal machines must close all Office applications, sign out, then back in. In the Yellow activation bar sign-in to re-activate against the Office 365 services serviceShared machines – No extra impact. Similar experience as Personal machinesMobile devices – Mobile devices must close then sign out and back into mobile applications. |
 
 To find out more information about the differences for organizations in migration and after Azure Active Directory is migrated, review the [Customer experience during the migration to Office 365 services in the new German datacenter regions](##-azure-active-directory)
 
