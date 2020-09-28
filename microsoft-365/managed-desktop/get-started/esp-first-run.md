@@ -39,11 +39,12 @@ Microsoft Managed Desktop uses these settings in the Autopilot profile used for 
 |Privacy settings     | Hide        |
 |Hide change account options     | Show        |
 |User account type     |  Standard       |
-|Allow White Glove OOBE     |  Yes       |
+|Allow White Glove OOBE     |  Yes*       |
 |Apply device name template     | Yes        |
 |Enter a name     | MMD-%RAND:7%        |
 
-
+> [!NOTE]
+> While White Glove Provisioning is only enabled for customers with ESP turned on, White Glove Provisioning is currently supported in Microsoft Managed Desktop.
 
 ## Enrollment Status Page settings
 
