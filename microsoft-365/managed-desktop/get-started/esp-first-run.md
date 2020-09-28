@@ -43,7 +43,8 @@ Microsoft Managed Desktop uses these settings in the Autopilot profile used for 
 |Apply device name template     | Yes        |
 |Enter a name     | MMD-%RAND:11%        |
 
-
+> [!NOTE]
+> While "white glove" rovisioning is only enabled for customers with ESP turned on, it is not currently supported in Microsoft Managed Desktop.
 
 ## Enrollment Status Page settings
 
