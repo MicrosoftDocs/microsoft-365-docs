@@ -10,11 +10,10 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to apply a retention label to a document understanding model."
+description: "This article discusses how to apply a retention label to a document understanding model"
 ---
 
 # Apply a retention label to a document understanding model
-
 
 </br>
 
@@ -22,27 +21,27 @@ description: "Learn how to apply a retention label to a document understanding m
 
 </br>
 
-You can easily apply a [retention label](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide#retention-labels) to a document understanding model in Microsoft SharePoint Syntex.
+You can easily apply a [retention label](https://docs.microsoft.com/microsoft-365/compliance/retention) to a document understanding model in Microsoft SharePoint Syntex.
 
 Retention labels let you apply retention settings to the documents that your document understanding models identify.  For example, you want your model to not only identify any *Insurance notice* documents that are uploaded to your document library, but to also apply a *Business* retention tag to them so that these documents cannot be deleted from the document library for the specified time period (the next five months, for example).
 
 You can apply a pre-existing retention label to your document understanding model through your model settings on your model's home page. 
 
 > [!Important]
-> For retention labels to be available to apply to your content understanding model, they need to be [created and published in the Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels?view=o365-worldwide#how-to-create-and-publish-retention-labels).
+> For retention labels to be available to apply to your content understanding model, they need to be [created and published in the Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
 
-### To add a retention label to a document understanding model
+## To add a retention label to a document understanding model
 
-1. On the model home page, select **Model settings**.</br>
+1. From the model home page, select **Model settings**.</br>
 2. In **Model settings**, in the **Security and compliance** section, select the **Retention label** menu to see a list of retention labels that are available for your to apply to the model.</br>
  ![Retention label menu](../media/content-understanding/retention-labels-menu.png)</br> 
 3. Select the retention label you want to apply to the model, and then select **Save**.</br>
 
-After applying the retention label to your model, you are able to:
-- Apply the updated model to a new document library.
-- Apply the updated model to a document library to which the model is already applied.
+After applying the retention label to your model, you are able to apply it to a:
+- New document library
+- Document library to which the model is already applied
  
-### Apply the retention label to a document library to which the model is already applied
+## Apply the retention label to a document library to which the model is already applied
 
 If your document understanding model has already been applied to a document library, you can do the following to sync your retention label update to apply it to the document library:</br>
 
@@ -64,14 +63,8 @@ On your model's view page in your document library, a new **Retention label** co
 
 For example, all *Insurance notice* documents that your model identifies will also have the *Business* retention label applied to them, preventing them from being deleted from the document library for five months. If an attempt is made to delete the file from the document library, an error will display saying it is not allowed because of the applied retention label.
 
-
-
 ## See Also
 [Create a classifier](create-a-classifier.md)</br>
 [Create an extractor](create-an-extractor.md)</br>
 [Document Understanding overview](document-understanding-overview.md)</br>
 [Create a form processing model](create-a-form-processing-model.md)  
-
-
-
-

@@ -29,7 +29,7 @@ As an example, your model identifies and classifies all **Contract** documents t
 
 Term sets are configured in the Managed Metadata services term store in the SharePoint admin center. In the the example below, the *Contract Services* [term set](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) is configured to include a number of terms, including *Creative*.  The details for it show that the term has three synonyms (*Design*, *Graphics*, and *Topography*) and the synonyms should be translated to *Creative*. 
 
-   ![Term store](../media/content-understanding/term-store.png)</br>
+   ![Term set](../media/content-understanding/term-store.png)</br>
 
 There could be a number of reasons why you might want to use a synonym in your term set. For example, there could be outdated terms, renamed terms, or variations between your organizations departments on naming.
 
@@ -40,7 +40,7 @@ After you add the column, the *Contract Services* managed metadata field will no
    ![Contract service column](../media/content-understanding/contract-services.png)</br>
 
 
-After applying your model to the document library, when documents are uploaded to library, the *Creative Services* column will display the preferred term (Creative) when the extractor finds any of the synonym values (*Design*, *Graphics*, and *Topography*).
+After applying your model to the document library, when documents are uploaded to library, the *Creative Services* column will display the preferred term (*Creative*) when the extractor finds any of the synonym values (*Design*, *Graphics*, and *Topography*).
 
    ![Contract service column](../media/content-understanding/creative.png)</br>
 

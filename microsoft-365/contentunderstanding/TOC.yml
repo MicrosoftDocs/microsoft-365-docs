@@ -23,7 +23,7 @@
         - name: Create a form processing model 
           href: create-a-form-processing-model.md
         - name: Apply a retention label 
-          href: apply-a-retention-label.md
+          href: apply-a-retention-label-to-a-model.md
         - name: Model usage analytics
           href: model-usage-analytics.md
 
