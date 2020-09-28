@@ -77,7 +77,7 @@ The experience proceeds as follows:
 > [!NOTE]
 > Win32 apps are only deployed during ESP if the Windows 10 version is 1903 or later.
 
-![Start page of Autopilot setup showing "device preparation" and "device setup" phases.](../../media/MMD-autopilot-screenshot.png)
+![Start page of Autopilot setup showing "device preparation" and "device setup" phases.](../../media/mmd-autopilot-screenshot.png)
 
 ## White glove provisioning
 
