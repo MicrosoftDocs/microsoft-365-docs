@@ -96,7 +96,7 @@
         - name: Get your users ready to use devices
           href: get-started/get-started-devices.md
         - name: First-run experience with Autopilot and the Enrollment Status Page 
-          href: get-started/ESP-first-run.md
+          href: get-started/esp-first-run.md
         - name: Get started with app control
           href: get-started/get-started-app-control.md
         - name: Deploy apps
