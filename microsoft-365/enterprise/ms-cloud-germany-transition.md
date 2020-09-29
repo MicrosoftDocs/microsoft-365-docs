@@ -56,8 +56,6 @@ The following services will be migrated as part of the Microsoft-driven approach
 
 Office 365 Video is being retired on March 1, 2021. If you choose to migrate your Office 365 tenant to the new German datacenter regions, Office 365 Video will not be supported after the SharePoint Online migration is completed. Click [here](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline) to learn more.
 
-These articles that include the Experiences, Frequently Asked Questions, and Actions Required content may be updated over time, so bookmark this page to ensure you can quickly access the latest information.
-
 ## How is the migration organized?
 
 This figure represents the various components of Office 365 and Dynamics 365 in the migration to the new German datacenters.
@@ -185,7 +183,7 @@ If you are an Azure customer only, you can begin [migrating](https://docs.micros
 
 **Dynamics 365 and Power BI**
 
-Opt-in to the Microsoft-driven migration for [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) and [Power BI today](https://aka.ms/PBIOptIn). When we are ready to start your migration, we will inform you through the Message center in the Microsoft 365 admin center.
+Opt-in to the Microsoft-driven migration for [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) and [Power BI](https://aka.ms/PBIOptIn) today. When we are ready to start your migration, we will inform you through the Message center in the Microsoft 365 admin center.
 
 ### Will the price change for the Office 365 services that I use?
 
@@ -253,6 +251,7 @@ During the migration from Microsoft Cloud Deutschland to the Office 365 services
 | Visio Online Plan 2\_DE (VISIOCLIENT\_DE) | Visio Online Plan 2 (VISIOCLIENT) |
 | Visio Plan 1\_DE (VISIOONLINE\_PLAN1\_DE) | Visio Plan 1 (VISIOONLINE\_PLAN1) |
 | Visio Plan 2\_DE (VISIOCLIENT\_DE) | Visio Plan 2 (VISIOCLIENT) |
+|||
 
 ### How do I get help from Microsoft to migrate to a new region or answer support questions?
 
@@ -269,7 +268,4 @@ If you have questions, you can contact us or your partner:
 - [Dynamics 365 migration program information](https://aka.ms/d365ceoptin)
 - [Power BI migration program information](https://aka.ms/pbioptin)
 - [Office 365 URLs and IP address ranges](https://aka.ms/o365endpoints)
-- [Office 365 Hybrid Configuration Wizard](https://aka.ms/HybridWizard)
 - [Getting started with your Microsoft Teams upgrade](https://aka.ms/SkypeToTeams-Home)
-
-
