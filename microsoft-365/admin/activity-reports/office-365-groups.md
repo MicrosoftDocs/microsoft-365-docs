@@ -32,8 +32,8 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
 
-    
-2. From the **Select a report** drop-down, select **Office 365** \> **Groups activity**.
+2. From the options, select **View more** under **Active users - Microsoft 365 Services**.
+3. From the **Select a report** drop-down, select **Office 365** \> **Groups activity**.
   
 ## Interpret the groups report
 
@@ -56,4 +56,3 @@ You can get a view into groups activity by looking at the **Groups**, **Activity
 |11,  <br/> |You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data.  <br/> |
 |||
    
-
