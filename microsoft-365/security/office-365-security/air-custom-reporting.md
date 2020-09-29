@@ -1,6 +1,6 @@
 ---
 title: "Using custom reporting solutions with automated investigation and response"
-keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
+keywords: SIEM, API, AIR, autoIR, ATP, automated investigation, integration, custom report
 f1.keywords:
 - NOCSH
 ms.author: deniseb
