@@ -225,7 +225,7 @@ An email or document can have only a single retention label assigned to it at a 
     
 - If content has a published retention label assigned, an auto-apply label cannot replace it.
     
-- If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the retention label for the oldest rule is assigned.
+- If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the retention label for the oldest rule (by date created) is assigned.
     
 To understand how and why one retention label is applied rather than another, it's helpful to understand the difference between explicitly assign a label, and implicitly assigned a label:
 
