@@ -38,9 +38,9 @@ View the [full list of assessment templates](../compliance/compliance-manager-te
 
 Compliance Manager also provides you with a compliance score that measures your progress in completing recommended improvement actions within controls. You can use this score to help monitor your progress and prioritize actions based on their potential to reduce risk.
 
-### Compliance Manager quickstart guide
+#### Use the Compliance Manager quickstart guide
 
-The [Compliance Manager quickstart](../compliance/compliance-manager-quickstart.md) guide provides graduated steps and links to key resources to help you work with Compliance Manager.
+The [Compliance Manager quickstart](../compliance/compliance-manager-quickstart.md) guide provides graduated steps and links to key resources to help you work with Compliance Manager:
 
 - [First visit: get familiar with Compliance Manager.](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager) Topics include:
     - Working with your Compliance Manager dasbhoard
