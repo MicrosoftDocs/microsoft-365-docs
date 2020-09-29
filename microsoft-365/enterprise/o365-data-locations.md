@@ -79,6 +79,18 @@ Microsoft 365 uses service-side technologies that encrypt customer data at rest 
 
 Please review the [Products available by region](https://go.microsoft.com/fwlink/p/?linkid=2093451) page to find data residency information for Microsoft Azure.
 
+### Where can I find data residency information for MIcrosoft Bookings?
+
+All customer content is stored in the Exchange Online mailbox that hosts the organization's Bookings.
+
+### Where can I find data residency information for MIcrosoft Shifts?
+
+Microsoft Shift is a native app of MS Teams so this adheres to the MS team's data location.
+
+### Where can I find data residency information for Microsoft To Do?
+
+Microsoft To do Data is stored as tasks in your Exchange Online mailbox, which also hosts data from other Exchange modules such as emails, events, contacts, and/or notes.
+
 ### What are Multi-Geo Capabilities in Microsoft 365?
 
 [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) gives customers the ability to allocate core customer data at rest to our available locations in the Microsoft 365 cloud.   
