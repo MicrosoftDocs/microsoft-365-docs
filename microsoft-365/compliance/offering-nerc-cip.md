@@ -83,6 +83,7 @@ The NERC ERO Enterprise [released](https://www.nerc.com/pa/comp/guidance/Pages/d
 ## Resources
 
 - [NERC Compliance Guidance](https://www.nerc.com/pa/comp/guidance/)
+- [NERC Cyber Security - Supply Chain Risk Management](https://www.nerc.com/pa/Stand/Pages/CIP0131RI.aspx)
 - [NERC Compliance and Enforcement](https://www.nerc.com/pa/comp/Pages/default.aspx)
 - [NERC Organization and Certification](https://www.nerc.com/pa/comp/Pages/Registration.aspx)
 - [Microsoft and FedRAMP](offering-fedramp.md)
