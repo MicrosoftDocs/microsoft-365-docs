@@ -20,9 +20,9 @@ description: Understand how Contoso uses the information protection features in 
 
 # Information protection for the Contoso Corporation
 
-Contoso is serious about their information security and protection. For example, leakage or destruction of their intellectual property describing product designs and proprietary manufacturing techniques would place them at a competitive disadvantage.
+Contoso is serious about their information security and protection. Leakage or destruction of their intellectual property describing product designs and proprietary manufacturing techniques would place them at a competitive disadvantage.
 
-Before moving their sensitive and most valuable digital assets to the cloud, they made sure that their on-premises information classification and protection requirements were supported and implemented in the cloud-based services of Microsoft 365 for enterprise.
+Before moving their sensitive and most valuable digital assets to the cloud, Contoso made sure that their on-premises information classification and protection requirements were supported by the cloud-based services of Microsoft 365 for enterprise.
 
 ## Contoso's data security classification
 
@@ -30,10 +30,10 @@ Contoso performed an analysis of their data and determined the following levels.
 
 | Level 1: Baseline | Level 2: Sensitive | Level 3: Highly regulated |
 |:-------|:-----|:-----|
-| Data is encrypted and available only to authenticated users. <BR> <BR> Provided for all data stored on-premises and in cloud-based storage and workloads. Data is encrypted while it resides in the service and in transit between the service and client devices. <BR><BR> Examples of Level 1 data are normal business communications (email) and files for administrative, sales, and support workers. | Level 1 plus strong authentication and data loss protection. <BR> <BR> Strong authentication includes Azure Multi-Factor Authentication (MFA) with SMS validation. Data loss prevention ensures that sensitive or critical information does not travel outside the Microsoft cloud. <BR><BR> Examples of Level 2 data are financial and legal information and research and development data for new products. | Level 2 plus the highest levels of encryption, authentication, and auditing. <BR> <BR>  The highest levels of encryption for data at rest and in the cloud, compliant with regional regulations, combined with MFA with smart cards and granular auditing and alerting. <BR> <BR> Examples of Level 3 data are customer and partner personally identifiable information, product engineering specifications, and proprietary manufacturing techniques.  |
+| Data is encrypted and available only to authenticated users.<BR> <BR> Provided for all data stored on-premises and in cloud-based storage and workloads. Data is encrypted while it resides in the service and in transit between the service and client devices. <BR><BR>Examples of Level 1 data are normal business communications (email) and files for administrative, sales, and support workers. | Level 1 plus strong authentication and data loss protection.<BR> <BR> Strong authentication includes Azure Multi-Factor Authentication (MFA) with SMS validation. Data loss prevention ensures that sensitive or critical information doesn't travel outside the Microsoft cloud.<BR><BR>Examples of Level 2 data are financial and legal information and research and development data for new products. | Level 2 plus the highest levels of encryption, authentication, and auditing.<BR><BR>The highest levels of encryption for data at rest and in the cloud, compliant with regional regulations, combined with MFA with smart cards and granular auditing and alerting.<BR> <BR>Examples of Level 3 data are customer and partner personal information, product engineering specifications, and proprietary manufacturing techniques.  |
 ||||
 
-## Contoso's information policies
+## Contoso information policies
 The following table lists Contoso's information policies.
 
 
@@ -44,9 +44,9 @@ The following table lists Contoso's information policies.
 | High business value (Level 3: Highly regulated) | Allow access to executives and leads in engineering and manufacturing. <BR> <BR> Rights Management System (RMS) with managed network devices only.  | 7 years  | Use digital signatures for non-repudiation.  |
 |||||
 
-## Contoso’s path to information protection with Microsoft 365 for enterprise
+## The Contoso path to information protection with Microsoft 365 for enterprise
 
-Contoso used the following steps to prepare Microsoft 365 for enterprise for their information protection requirements:
+Contoso followed these steps to prepare Microsoft 365 for enterprise for their information protection requirements:
 
 1. Identified what information to protect
 
@@ -64,13 +64,13 @@ Contoso used the following steps to prepare Microsoft 365 for enterprise for the
 
     The files migrated to the new SharePoint sites inherited the default retention labels assigned to the site.
 
-5.	Trained employees on how to use sensitivity labels for new documents, how to interact with Contoso IT when creating new SharePoint sites, and to always store digital assets on SharePoint sites
+5.	Trained employees how to use sensitivity labels for new documents, how to interact with Contoso IT when creating new SharePoint sites, and to always store digital assets on SharePoint sites
 
-    Considered the hardest part of the information protection transition for the cloud, Contoso IT and management needed to change the bad information storage habits of the organization’s employees to always label and store their digital assets in the cloud, refrain from using on-premises file shares, and never use third-party cloud storage services or USB drives.
+    Changing worker's bad information-storage habits is often considered the hardest part of the information protection transition for the cloud. Contoso IT and management needed to get employees to always label and store their digital assets in the cloud, refrain from using on-premises file shares, and not use third-party cloud storage services or USB drives.
 
 ## Conditional Access policies for information protection
 
-In conjunction with their identity and mobile device management infrastructure and as part of their rollout of Exchange Online and SharePoint, Contoso configured the following set of Conditional Access policies and applied them to the appropriate groups:
+As part of their rollout of Exchange Online and SharePoint, Contoso configured the following set of Conditional Access policies and applied them to the appropriate groups:
 
 - [Managed and unmanaged application access on devices policies](identity-access-policies.md)
 - [Exchange Online access policies](secure-email-recommended-policies.md)
@@ -86,21 +86,21 @@ Here is Contoso's resulting set of policies for information protection.
 
 These policies ensure that:
 
-- Apps are allowed and the actions they can take with your organization data are defined by app protection policies.
+- Apps that are allowed and the actions they can take with the organization's data are defined by app protection policies.
 - PCs and mobile devices must be compliant.
 - Exchange Online uses Office 365 message encryption (OME) for Exchange Online.
-- SharePoint uses app enforced restrictions.
+- SharePoint uses app-enforced restrictions.
 - SharePoint uses access control policies for browser-only access and to block access for unmanaged devices.
 
 ## Mapping Microsoft 365 for enterprise features to Contoso's data levels
 
-The following table maps Contoso's data levels to information protection features in Microsoft 365 for enterprise.
+The following table maps Contoso data levels to information protection features in Microsoft 365 for enterprise.
 
 | Level | Microsoft 365 cloud services | Windows 10 and Microsoft 365 Apps for enterprise | Security and compliance |
 |:-------|:-----|:-----|:-----|
 | Level 1: Baseline  | SharePoint and Exchange Online Conditional Access policies <BR> Permissions on SharePoint sites | Sensitivity labels <BR> BitLocker <BR> Windows Information Protection | Device Conditional Access policies and Mobile Application Management policies |
 | Level 2: Sensitive | Level 1 plus: <BR> <BR> Sensitivity labels <BR> Microsoft 365 retention labels on SharePoint sites <BR> Data Loss Prevention for SharePoint and Exchange Online <BR> Isolated SharePoint sites  | Level 1 plus: <BR> <BR> Sensitivity labels on digital assets  | Level 1 |
-| Level 3: Highly regulated | Level 2 plus: <BR><BR> Bring Your Own Key (BYOK) encryption and protection for trade secret information <BR> Azure Key Vault for line of business applications that interact with Microsoft 365 services | Level 2 | Level 1 |
+| Level 3: Highly regulated | Level 2 plus: <BR><BR> Bring Your Own Key (BYOK) encryption and protection for trade secret information <BR> Azure Key Vault for line-of-business applications that interact with Microsoft 365 services | Level 2 | Level 1 |
 |||||
 
 Here is Contoso's resulting information protection configuration.
