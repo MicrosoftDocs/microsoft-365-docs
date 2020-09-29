@@ -3,13 +3,11 @@ title: "Form processing overview"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: Priority
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn about form processing in Microsoft SharePoint Syntex"
 ---
 
@@ -38,7 +36,10 @@ An Office 365 admin needs to [enable Form processing](https://docs.microsoft.com
 
 ## See Also
   
-[Power Automate documentation](https://docs.microsoft.com/power-automate/)</br>
-[Create a form processing model](create-a-form-processing-model.md)</br>
-[Document understanding overview](document-understanding-overview.md)</br>
-[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
+[Power Automate documentation](https://docs.microsoft.com/power-automate/)
+
+[Create a form processing model](create-a-form-processing-model.md)
+
+[Document understanding overview](document-understanding-overview.md)
+
+[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)

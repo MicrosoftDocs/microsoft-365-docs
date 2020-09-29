@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: Priority
-ROBOTS: NOINDEX, NOFOLLOW
+
 
 ---
 # Term store reports

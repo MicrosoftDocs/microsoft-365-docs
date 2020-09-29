@@ -3,13 +3,11 @@ title: "Create a content center in Microsoft SharePoint Syntex"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: Priority
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to create a content center."
 ---
 
@@ -51,9 +49,14 @@ After you create a content center site, you will see it listed on the **Active s
 After you create the site, you can give additional users access to the site through the standard [SharePoint site permissions model](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions).
 
 ## See Also
-[Create a classifier](create-a-classifier.md)</br>
-[Create an extractor](create-an-extractor.md)</br>
+[Create a classifier](create-a-classifier.md)
+
+[Create an extractor](create-an-extractor.md)
+
 [Create a content center](create-a-content-center.md)
-[Document understanding overview](document-understanding-overview.md)</br>
-[Create a form processing model](create-a-form-processing-model.md)</br>
+
+[Document understanding overview](document-understanding-overview.md)
+
+[Create a form processing model](create-a-form-processing-model.md)
+
 [Apply a model](apply-a-model.md)    

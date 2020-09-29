@@ -3,13 +3,11 @@ title: "Introduction to Microsoft SharePoint Syntex"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 08/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: Priority
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to find resources for Microsoft SharePoint Syntex."
 ---
 

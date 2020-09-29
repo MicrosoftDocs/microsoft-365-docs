@@ -3,13 +3,11 @@ title: "Difference between document understanding and form processing models"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: Priority
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Describes key difference between document understanding and form processing models"
 ---
 
@@ -53,8 +51,12 @@ You can apply document understanding models to SharePoint document libraries tha
 Form processing models can currently only be applied to the SharePoint document library from which you created them. This allows licensed users with access to the site to be able to create a form processing model.
 
  ## See Also
-[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
-[Create a classifier](create-a-classifier.md)</br>
-[Create an extractor](create-an-extractor.md)</br>
-[Apply a document understanding model](apply-a-model.md)</br>
-[Create a form processing model](create-a-form-processing-model.md)</br>
+[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+
+[Create a classifier](create-a-classifier.md)
+
+[Create an extractor](create-an-extractor.md)
+
+[Apply a document understanding model](apply-a-model.md)
+
+[Create a form processing model](create-a-form-processing-model.md)

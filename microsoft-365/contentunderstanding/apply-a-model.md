@@ -3,13 +3,11 @@ title: "Apply a document understanding model to a document library"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: Priority
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to apply a published a model to a SharePoint document library"
 ---
 
@@ -75,7 +73,10 @@ While an applied model processes all files uploaded to the document library afte
       ![Classify and extract](../media/content-understanding/extract-classify.png)</br> 
 
 ## See Also
-[Create a classifier](create-a-classifier.md)</br>
-[Create an extractor](create-an-extractor.md)</br>
-[Document Understanding overview](document-understanding-overview.md)</br>
+[Create a classifier](create-a-classifier.md)
+
+[Create an extractor](create-an-extractor.md)
+
+[Document Understanding overview](document-understanding-overview.md)
+
 [Create a form processing model](create-a-form-processing-model.md)  
