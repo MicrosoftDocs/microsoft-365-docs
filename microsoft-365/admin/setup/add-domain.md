@@ -131,7 +131,7 @@ In the wizard, we'll just confirm that you own the domain, and then automaticall
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
-- [WordPress](https://wordpress.com/)
+- [WordPress.com](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)
