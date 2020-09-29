@@ -102,27 +102,7 @@ If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your
 
 You can estimate the AI Builder capacity that’s right for you with the [AI Builder calculator](https://powerapps.microsoft.com/ai-builder-calculator).
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.
-
-    > [!NOTE]
-    > Enable this setting on a SharePoint document library does not affect existing models applied to the library or the ability to apply document understanding models to a library. 
-    
-2. From the **Create Content Center** page, you can create a SharePoint content center site for which users can create and manage document understanding models. </br>
-    a. For **Site name**, type the name you want for the content center site.</br>
-    b. The **Site address** shows the URL for your site, based on the site name.</br>
-
-    > [!NOTE] 
-    > While you can select any supported language, content understanding models can only be created for English.</br>
-
-      ![Create content center](../media/content-understanding/admin-cu-create-cc.png)</br>
-
-3. Select **Next**.
-
-4. On the **Finish and review** page, look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
-
-5. The **Content understanding activated** page displays, confirming the system added your form processing preferences and created the Content Center site. Select **Done**.
-
-6. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
+Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.
 
 ## See also
 
