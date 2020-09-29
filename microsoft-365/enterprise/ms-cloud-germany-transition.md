@@ -60,7 +60,7 @@ Office 365 Video is being retired on March 1, 2021. If you choose to migrate you
 
 This figure represents the various components of Office 365 and Dynamics 365 in the migration to the new German datacenters.
 
-![migration-organization](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![Components of Office 365 and Dynamics 365 in the migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 Migration is executed in phases that all start when you [opt-in for migration](https://aka.ms/office365germanymoveoptin). Most of the migration phases are executed as back-end service operations with minimal customer interaction required and are executed one phase after the other. The start for additional customer-led tasks and overall migration status will be communicated through the Message center of the Microsoft 365 admin center during the migration process. Example of tasks may include customer-managed DNS updates, reconfiguration of hybrid setup for Exchange hybrid customers, or Azure migration.
 
