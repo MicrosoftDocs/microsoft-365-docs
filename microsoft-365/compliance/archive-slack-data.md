@@ -11,13 +11,12 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Admins can set up a connector to import and archive data from Globanet Slack into Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
+description: "Admins can set up a connector to import and archive data from Globanet Slack into Microsoft 365. This data connector lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive Slack data (preview)
+# Set up a connector to archive Slack data
 
-Use a Globanet connector in the Microsoft 365 compliance center to import and archive third-party data from social media, instant messaging, and document collaboration platforms to mailboxes in your Microsoft 365 organization. Globanet provides a [Slack data connector](https://globanet.com/slack/) connector in the Microsoft 365 compliance center that you can configured to capture items from the third-party data source (on a regular basis) and then import those items to Microsoft 365. Slack pulls messages and files from the Slack API and converts them an email messages format and then imports them to user mailboxes in Microsoft 365.
+Use a Globanet connector in the Microsoft 365 compliance center to import and archive third-party data from social media, instant messaging, and document collaboration platforms to mailboxes in your Microsoft 365 organization. Globanet provides a Slack connector that is configured to capture items from the third-party data source (on a regular basis) and then import those items to Microsoft 365. Slack pulls messages and files from the Slack API and converts them to an email message format and then imports the item to user mailboxes.
 
 After Slack data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Slack connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
@@ -87,4 +86,4 @@ After you create the Slack connector, you can view the connector status in the M
 
 ## Known issues
 
-- At this time, we don't support importing attachments and items that are larger than 10 MB. Support for larger items will be available at a later date.
+- At this time, we don't support importing attachments or items that are larger than 10 MB. Support for larger items will be available at a later date.

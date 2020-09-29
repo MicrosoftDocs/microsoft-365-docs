@@ -15,8 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: ""
+ROBOTS: NOINDEX, NOFOLLOW
+description: "You can annotate and redact evidence documents in Data Investigations (preview)."
 ---
 
 # Annotate and redact documents in evidence

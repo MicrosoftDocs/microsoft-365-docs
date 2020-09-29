@@ -19,7 +19,7 @@ description: During a data investigation, use Themes to organize documents by fi
 ms.custom: seo-marvel-mar2020
 ---
 
-# Themes
+# Themes in Data Investigations (preview)
 
 When someone composes a document, they do not choose words randomly; they are trying to convey some ideas or concepts, and the words are chosen accordingly. Themes modules clusters documents that discuss similar subject matters so that reviewers can be more efficient in going through documents.
 
