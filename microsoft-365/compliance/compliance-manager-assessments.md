@@ -202,6 +202,9 @@ To delete an assessment, follow the steps below:
 
 If you delete the only assessment in a group, then that group is also deleted from Compliance Manager.
 
+> [!NOTE]
+> You can't delete all of your assessments. Organizations need at least one assessment for Compliance Manager to function properly. If the assessment you want to delete is the only one, add another assessment before deleting the other assessment.
+
 ## Monitor assessment progress and controls
 
 Each assessment has a details page that gives an at-a-glance view of your progress in completing the assessment. The page shows your progress in completing controls, and the test status of key improvement actions within those controls.
