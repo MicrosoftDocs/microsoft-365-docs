@@ -3,13 +3,11 @@ title: "Apply a retention label to a document understanding model"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: Priority
-ROBOTS: NOINDEX, NOFOLLOW
 description: "This article discusses how to apply a retention label to a document understanding model"
 ---
 
@@ -58,7 +56,10 @@ On your model's view page in your document library, a new **Retention label** co
 For example, all *Insurance notice* documents that your model identifies will also have the *Business* retention label applied to them, preventing them from being deleted from the document library for five months. If an attempt is made to delete the file from the document library, an error will display saying it is not allowed because of the applied retention label.
 
 ## See Also
-[Create a classifier](create-a-classifier.md)</br>
-[Create an extractor](create-an-extractor.md)</br>
-[Document Understanding overview](document-understanding-overview.md)</br>
+[Create a classifier](create-a-classifier.md)
+
+[Create an extractor](create-an-extractor.md)
+
+[Document Understanding overview](document-understanding-overview.md)
+
 [Create a form processing model](create-a-form-processing-model.md)  

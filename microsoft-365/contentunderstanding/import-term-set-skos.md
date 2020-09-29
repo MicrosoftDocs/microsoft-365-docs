@@ -10,7 +10,6 @@ ms.topic: article
 ms.service: 
 search.appverid: 
 localization_priority: Priority
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 # Import a term set using a SKOS-based format

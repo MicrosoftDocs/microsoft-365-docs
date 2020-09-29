@@ -3,13 +3,11 @@ title: "Leverage term store taxonomy when creating an extractor"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: Priority
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Leverage term store taxonomy when creating an extractor in your document understanding model in Microsoft SharePoint Syntex."
 ---
 
@@ -32,7 +30,7 @@ There could be a number of reasons why you might want to use a synonym in your t
 
 To make the managed metadata field available for you to select when you create your extractor in your model, you need to [add it as a managed-metadata site column](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). After you add the site column, it will be available for you to select when you create the extractor for your model.
 
-   ![Contract service column](../media/content-understanding/contract-services.png)</br>
+   ![Contract service](../media/content-understanding/contract-services.png)</br>
 
 
 After applying your model to the document library, when documents are uploaded to library, the *Creative Services* column will display the preferred term (*Creative*) when the extractor finds any of the synonym values (*Design*, *Graphics*, and *Topography*).
@@ -41,9 +39,11 @@ After applying your model to the document library, when documents are uploaded t
 
 
 ## See Also
-[Introduction to Managed Metadata](https://docs.microsoft.com/sharepoint/managed-metadata#terms)</br>
-[Create an extractor](create-an-extractor.md)</br>
-[Create a managed metadata column](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)</br>
+[Introduction to Managed Metadata](https://docs.microsoft.com/sharepoint/managed-metadata#terms)
+
+[Create an extractor](create-an-extractor.md)
+
+[Create a managed metadata column](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)
 
 
 

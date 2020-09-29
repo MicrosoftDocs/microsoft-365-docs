@@ -3,13 +3,11 @@ title: "Create a form processing model"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: Priority
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Create a form processing model in Microsoft SharePoint Syntex."
 ---
 
@@ -137,5 +135,6 @@ After publishing your model and creating it's PowerAutomate flow, you can use yo
 
 ## See Also
   
-[Power Automate documentation](https://docs.microsoft.com/power-automate/)</br>
-[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
+[Power Automate documentation](https://docs.microsoft.com/power-automate/)
+
+[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)

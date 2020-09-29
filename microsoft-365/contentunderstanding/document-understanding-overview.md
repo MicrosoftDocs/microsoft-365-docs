@@ -3,13 +3,11 @@ title: "Document understanding overview"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 08/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: Priority
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Get an overview of the document understanding in Microsoft SharePoint Syntex."
 ---
 
@@ -38,10 +36,16 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 
 ## See Also
-[Create a classifier](create-a-classifier.md)</br>
-[Create an extractor](create-an-extractor.md)</br>
+[Create a classifier](create-a-classifier.md)
+
+[Create an extractor](create-an-extractor.md)
+
 [Create a content center](create-a-content-center.md)
-[Create a form processing model](create-a-form-processing-model.md)</br>
+
+[Create a form processing model](create-a-form-processing-model.md)
+
 [Apply a model](apply-a-model.md)   
-[Difference between a document understanding and a form processing model](difference-between-document-understanding-and-form-processing-model.md)  
+
+[Difference between a document understanding and a form processing model](difference-between-document-understanding-and-form-processing-model.md)
+  
 [Form processing overview](form-processing-overview.md)

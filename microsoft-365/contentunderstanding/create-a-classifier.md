@@ -3,13 +3,11 @@ title: "Create a classifier"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: Priority
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to create a classifier"
 ---
 
@@ -136,7 +134,10 @@ If you received a match on your labeled sample files, you can now  test your mod
     ![Test of unlabeled files](../media/content-understanding/test-on-files.png) 
 
 ## See Also
-[Create an extractor](create-an-extractor.md)</br>
-[Document Understanding overview](document-understanding-overview.md)</br>
-[Create a form processing model](create-a-form-processing-model.md)</br>
+[Create an extractor](create-an-extractor.md)
+
+[Document Understanding overview](document-understanding-overview.md)
+
+[Create a form processing model](create-a-form-processing-model.md)
+
 [Apply a model](apply-a-model.md) 
