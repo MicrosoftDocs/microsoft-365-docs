@@ -46,11 +46,12 @@ Currently for AIR, alerts generated from the following kinds of alert policies a
 - Email reported by user as phish`*`
 - Email messages containing malware removed after delivery`*`
 - Email messages containing phish URLs removed after delivery`*`
-- Suspicious email sending patterns detected`#`
-- User restricted from sending email`#`
+- Suspicious email sending patterns detected
+- User restricted from sending email
+- Admin triggered manual investigation of email`*`
 
 > [!NOTE]
-> The alerts marked with an asterisk (`*`) are assigned an *Informational* severity in the respective alert policies within the Security & Compliance Center, with email notifications turned off. Email notifications can be turned on through [Alert policy configuration](../../compliance/alert-policies.md#alert-policy-settings). Alerts marked with a hash (`#`) are generally available alerts associated with public preview playbooks.
+> The alerts marked with an asterisk (`*`) are assigned an *Informational* severity in the respective alert policies within the Security & Compliance Center, with email notifications turned off. Email notifications can be turned on through [Alert policy configuration](../../compliance/alert-policies.md#alert-policy-settings). 
 
 To view alerts, in the Security & Compliance Center, choose **Alerts** > **View alerts**. Select an alert to view its details, and from there, use the **View investigation** link to go to the corresponding [investigation](air-view-investigation-results.md#investigation-graph).  
 
@@ -67,22 +68,14 @@ Security playbooks are back-end policies that are at the heart of automation in 
 
 The security playbooks you'll get with AIR are designed to tackle the most frequent threats that organizations encounter today with email. They're based on input from Security Operations and Incident Response teams, including people who help defend Microsoft and our customers' assets.
 
-### Security playbooks are rolling out in phases
-
-As part of AIR, security playbooks are rolling out in phases. Phase 1 is now generally available and includes several playbooks that provide recommendations for actions that security administrators can review and approve:
-
 - User-reported phish message
 - URL-click verdict change
 - Malware detected post-delivery (Malware ZAP)
 - Phish detected post-delivery ZAP (Phish ZAP)
+- User reported as compromised 
+- Manual email investigation (triggered by administrator from Explorer Malware, Phish, or All Email view)
 
-Phase 1 also includes support for administrator triggered e-mail investigations (using [Threat Explorer](threat-explorer.md)).
-
-Phase 2 is now progress with the following playbooks in **public preview**, providing recommendations for actions, and aiding security administrators in investigating issues:
-
-- User reported as compromised (public preview)
-
-More playbooks will be released as they are completed. Visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to see what else is planned and coming soon.
+More playbooks and playbook updates will be released as they are completed. Visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to see what else is planned and coming soon.
 
 ### Playbooks include investigation and recommendations
 
@@ -125,7 +118,7 @@ Remediation is the final phase of the playbook. During this phase, remediation s
 
 ## Example: A security administrator triggers an investigation from Threat Explorer
 
-In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer.md).
+In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer.md).  This investigation also creates an alert, so that Microsoft Defender Incidents and external SIEM tools can see that this investigation was triggered. 
 
 For example, suppose that you are using the **Malware** view in Threat Explorer. Using the tabs below the chart, you select the **Email** tab. If you select one or more items in the list, the **+ Actions** button activates. 
 
@@ -139,7 +132,7 @@ Similar to playbooks triggered by an alert, automatic investigations that are tr
 
 ## Example: A security operations team integrates AIR with their SIEM using the Office 365 Management Activity API
 
-AIR capabilities in Office 365 ATP include [reports & details](air-view-investigation-results.md) that security operations team can use to monitor and address threats. But you can also integrate AIR capabilities with other solutions. Examples include a security information and event management (SIEM) system, a case management system, or a custom reporting solution. These kinds of integration can be done by using the [Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+AIR capabilities in Office 365 ATP include [reports & details](air-view-investigation-results.md) that security operations team can use to monitor and address threats. But you can also integrate AIR capabilities with other solutions. Examples include a Security Information and Event Management (SIEM) system, a case management system, or a custom reporting solution. These kinds of integration can be done by using the [Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
 For example, recently, an organization set up a way for their security operations team to view user-reported phish alerts that were already processed by AIR. Their solution integrates relevant alerts with the organization's SIEM server and their case-management system. The solution greatly reduces the number of false positives so that their security operations team can focus their time and effort on real threats. To learn more about this custom solution, see [Tech Community blog: Improve the Effectiveness of your SOC with Office 365 ATP and the O365 Management API](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
