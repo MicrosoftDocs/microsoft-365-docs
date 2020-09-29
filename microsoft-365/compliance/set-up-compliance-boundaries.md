@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 
 The guidance in this article can be applied when using either Core eDiscovery or Advanced eDiscovery to manage investigations.
 
-Compliance boundaries create logical boundaries within an organization that control the user content locations (such as mailboxes, SharePoint sites, and OneDrive accounts) that eDiscovery managers can search. Also, compliance boundaries control who can access eDiscovery cases used to manage the legal, human resources, or other investigations within your organization. The need for compliance boundaries is often necessary for multi-national corporations that have to respect geographical boarders and regulations and for governments, which are often divided into different agencies. In Microsoft 365, compliance boundaries help you meet these requirements when performing content searches and managing investigations with eDiscovery cases.
+Compliance boundaries create logical boundaries within an organization that control the user content locations (such as mailboxes, OneDrive accounts, and SharePoint sites) that eDiscovery managers can search. Also, compliance boundaries control who can access eDiscovery cases used to manage the legal, human resources, or other investigations within your organization. The need for compliance boundaries is often necessary for multi-national corporations that have to respect geographical boarders and regulations and for governments, which are often divided into different agencies. In Microsoft 365, compliance boundaries help you meet these requirements when performing content searches and managing investigations with eDiscovery cases.
   
 We use the example in the following illustration to explain how compliance boundaries work.
   
@@ -50,6 +50,16 @@ Here's the process for setting up compliance boundaries:
 [Step 4: Create a search permissions filter to enforce the compliance boundary](#step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
 
 [Step 5: Create an eDiscovery case for an intra-agency investigations](#step-5-create-an-ediscovery-case-for-intra-agency-investigations)
+
+## Before you set up compliance boundaries
+
+You have to meet the following prerequisites before the attribute that you identity (in Step 1) can be successfully synched to a user's OneDrive account (in Step 2):
+
+- Users must be assigned an Exchange Online license and a SharePoint Online license.
+
+- User mailboxes must be at least 10 MB in size. If a user's mailbox is less than 10 MB, the attribute used to define your agencies won't be synched to the user's OneDrive account.
+
+- Compliance boundaries and the attributes that are used to create search permissions filters require that Azure Active Directory (Azure AD) attributes are synchronized to user mailboxes. To verify that the attributes that you want to use have been synchronized, you can run the [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) cmdlet in Exchange Online PowerShell.
 
 ## Step 1: Identify a user attribute to define your agencies
 
@@ -87,7 +97,7 @@ Include the following information when you submit the request to Microsoft suppo
 After the engineering change is made and the attribute is synchronized to OneDrive, Microsoft Support will send you the build number that the change was made in and an estimated deployment date. The deployment process usually takes 4–6 weeks after you submit the support request.
   
 > [!IMPORTANT]
-> You can complete Step 3 through Step 5 before this attribute change is deployed. But running content searches won't return documents from OneDrive sites specified in the search permissions filter until after the change is deployed.
+> You can complete Step 3 through Step 5 before this attribute change is deployed. But running content searches won't return documents from OneDrive accounts that are specified in a search permissions filter until after the attribute synch is deployed.
   
 ## Step 3: Create a role group for each agency
 
@@ -296,3 +306,6 @@ If the region specified in the search permissions filter doesn't exist in your o
 **What is the maximum number of search permissions filters that can be created in an organization?**
   
 There is no limit to the number of search permissions filters that can be created in an organization. However, search performance will be impacted when there are more than 100 search permissions filters. To keep the number of search permissions filters in your organization as small as possible, create filters that combine rules for Exchange, SharePoint, and OneDrive into a single search permissions filter whenever possible.
+
+## More information
+
