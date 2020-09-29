@@ -1,6 +1,6 @@
 ---
 title: First-run experience with Autopilot and the Enrollment Status Page 
-description: How to deploy the ESP experience, the settings used, and exceptions
+description: How to deploy the ESP experience, the settings used, and configuration changes
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -44,7 +44,7 @@ Microsoft Managed Desktop uses these settings in the Autopilot profile used for 
 |Enter a name     | MMD-%RAND:11%        |
 
 > [!NOTE]
-> While "white glove" rovisioning is only enabled for customers with ESP turned on, it is not currently supported in Microsoft Managed Desktop.
+> While "white glove" provisioning is only enabled for customers with ESP turned on, it is not currently supported in Microsoft Managed Desktop.
 
 ## Enrollment Status Page settings
 
@@ -84,15 +84,15 @@ The experience proceeds as follows:
 
 Microsoft Managed Desktop doesn't currently support the "white glove" feature of Windows Autopilot.
 
-## Exceptions
+## Change to Autopilot and Enrollment Status Page settings
 
-If the setup used by Microsoft Managed Desktop doesn't exactly match your needs, you can file a request for an exception. To do this, see details in [Request an exception](../service-description/customizing.md#request-an-exception). Here are some examples of the types of exceptions you might need:
+If the setup used by Microsoft Managed Desktop doesn't exactly match your needs, you can  file a support ticket through the [Admin Portal](https://portal.azure.com/). Here are some examples of the types of configuration you might need:
 
-### Autopilot exception
+### Autopilot settings change
 
 You might want to request a different device name template. You cannot, however, change Deployment Mode, Join to Azure As, Privacy Settings, or User Account Type.
 
-### Enrollment Status Page exception
+### Enrollment Status Page settings change
 
 - A longer number of minutes for the "Show an error when installation takes longer than specified number of minutes" setting.
 - The error message displayed
