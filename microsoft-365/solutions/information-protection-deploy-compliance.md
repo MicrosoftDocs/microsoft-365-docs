@@ -32,7 +32,9 @@ This article provides guidance on the use of this tool for data privacy purposes
 
 [Compliance Manager](../compliance/compliance-manager.md) is a workflow-based risk assessment tool in the Microsoft 365 compliance center for managing regulatory compliance activities related to Microsoft cloud services. As part of your Microsoft 365 or Azure Active Directory (Azure AD) subscription, Compliance Manager helps you manage regulatory compliance within the shared responsibility model for Microsoft cloud services.
 
-Compliance Manager provides pre-built templates for building assessments that are aligned to data privacy-related regulations. The templates have built-in control mapping to help you take improvement actions for meeting the regulation's requirements. Each assessment provides information about the controls each regulation calls for specific to the target service, separated by Microsoft vs. customer-managed controls.
+Compliance Manager provides pre-built templates for building assessments that are aligned to data privacy-related regulations. The templates have built-in control mapping to help you take improvement actions for meeting the regulation's requirements. Each assessment provides information about the controls each regulation calls for specific to the target service, broken out by controls you manage and controls Microsoft manages.
+
+View the [full list of assessment templates](../compliance/compliance-manager-templates-list.md).
 
 Compliance Manager also provides you with a compliance score that measures your progress in completing recommended improvement actions within controls. You can use this score to help monitor your progress and prioritize actions based on their potential to reduce risk.
 
