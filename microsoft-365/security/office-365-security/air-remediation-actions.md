@@ -14,8 +14,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: "Learn about remediation actions in automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
+description: "Learn about remediation actions following automated investigation in Microsoft Defender for Office 365."
 ms.date: 09/29/2020
+ms.custom: 
+- air
 ---
 
 # Remediation actions following automated investigation in Microsoft Defender for Office 365
