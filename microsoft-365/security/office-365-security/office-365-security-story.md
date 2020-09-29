@@ -8,6 +8,7 @@ audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.service: ATP
 search.appverid:
 - MET150
 - MOE150
@@ -61,7 +62,9 @@ If you have an Office 365 E3, or below, you have EOP, but with the option to buy
 
 ## The Office 365 security ladder from EOP to ATP
 
-:::image type="content" source="../../media/tp_EOPATPEmailAuth4.gif" alt-text="EOP and ATP and their specific strengths, going from Protect and Detect to Investigate and Respond, respectively. Also, Email Authentication configuration is shown as needed as of EOP up.":::
+<br/>
+
+[ ![From EOP to ATP.](../../media/tp_EOPATPP1P2Take6.gif) ](#lightbox)
 
 > [!IMPORTANT]
 > Learn the details on these pages: [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide), and [Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide).
