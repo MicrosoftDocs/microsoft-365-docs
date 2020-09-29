@@ -147,7 +147,7 @@ Office 365 ATP includes the Safe Attachment and Safe Links policies to prevent e
 
 If you've added an Office 365 ATP subscription to your EOP, set the following configurations.
 
-### Office ATP anti-phishing policy settings
+### ATP anti-phishing policy settings
 
 EOP customers get basic anti-phishing as previously described, but Office 365 ATP includes more features and control to help prevent, detect, and remediate against attacks. To create and configure these policies, see [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).
 

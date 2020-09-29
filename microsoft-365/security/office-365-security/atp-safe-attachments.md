@@ -43,7 +43,7 @@ The following table describes scenarios for Safe Attachments in Microsoft 365 an
 Safe Attachments scanning takes place in the same region where your Microsoft 365 data resides. For more information about datacenter geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> The following features are located with Safe Attachments policies in the Security & Compliance Center, but these settings are enabled or disabled globally, and don't require Safe Attachments policies:
+> The following features are located in the global settings are of Safe Attachments policies in the Security & Compliance Center, but these settings are enabled or disabled globally, and don't require Safe Attachments policies:
 >
 > - [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
 >
