@@ -24,28 +24,28 @@ titleSuffix: Microsoft GDPR
 
 The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called in this document a *Data Subject Rights Request* or DSR request.
 
-Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR's Data Subject Rights, such as the right to delete, access and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and "opt-out/ opt-in" requirements for certain data transfers classified as "sales". Sales are broadly defined to include the sharing of data for a valuable consideration. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
+Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR's Data Subject Rights, such as the right to delete, access, and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and "opt-out/ opt-in" requirements for certain data transfers classified as "sales". Sales are broadly defined to include the sharing of data for a valuable consideration. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
 
 The guide discusses how to use Microsoft's products, services, and administrative tools to help our controller customers find and act on personal data to respond to DSR requests. Specifically, this includes how to find, access, and act on personal data or personal information that reside in Microsoft's cloud. Here's a quick overview of the processes outlined in this guide:
 
 - **Discover:** Use search and discovery tools to more easily find customer- data that may be the subject of a DSR request. Once potentially responsive documents are collected, you can perform one or more of the DSR actions described in the following steps to respond to the request. Alternatively, you may determine that the request doesn't meet your organizations guidelines for responding to DSR requests.
-- **Access:** Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it that can be available to the data subject.
+- **Access:** Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it that is available to the data subject.
 - **Rectify:** Make changes or implement other requested actions on the personal data, where applicable.
 - **Restrict:** Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can a
 - **Delete:** Permanently remove personal data that resided in Microsoft's cloud.
-- **Export/Receive (Portability):** Provide an electronic copy (in a machine-readable format) of personal data or personal information to the data subject. Personal information under the CCPA is any information relating to an identified or identifiable person. There is no distinction between a person's private, public, or work roles. The defined term "personal information" roughly lines up with "personal data" under GDPR. However, the CCPA also includes family and household data. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
+- **Export/Receive (Portability):** Provide an electronic copy (in a machine-readable format) of personal data or personal information to the data subject. Personal information under the CCPA is any information relating to an identified or identifiable person. There is no distinction between a person's private, public, or work roles. The defined term "personal information" roughly aligns with "personal data" under GDPR. However, the CCPA also includes family and household data. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
 
 Each section in this guide outlines the technical procedures that a data controller organization can take to respond to a DSR request for personal data in Microsoft's cloud
 
 ## GDPR terminology
 
-The following provides definitions of terms that are relevant to this guide:
+The following list provides definitions of terms that are relevant to this guide:
 
 - **Controller:** The natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by Union or Member State law, the controller, or the specific criteria for its nomination may be provided for by Union or Member State law.
 - **Personal data and data subject:** Any information relating to an identified or identifiable natural person ('data subject'); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that natural person.
 - **Processor:** A natural or legal person, public authority, agency, or other body, which processes personal data on behalf of the controller.
 - **Customer Data:** All data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, a customer through use of the enterprise service. Customer Data includes both (1) identifiable information of end users (for example, user names and contact information in Azure Active Directory) and Customer Content that a customer uploads into or creates in specific services (for example, customer content in an Azure Storage account, customer content of an Azure SQL Database, or a customer's virtual machine image in Azure Virtual Machines).
-- **System-Generated Logs:** Logs and related data generated by Microsoft that help Microsoft provide enterprise services to users. System-generated logs contain primarily pseudonymized data, such as unique identifiers — typically a number generated by the system that cannot on its own identify an individual person but is used to deliver the enterprise services to users. System-generated logs may also contain identifiable information about end users, such as a user name.
+- **System-Generated Logs:** Logs and related data generated by Microsoft that help Microsoft provide enterprise services to users. System-generated logs contain primarily pseudonymized data, such as unique identifiers—typically a number generated by the system that cannot on its own identify an individual person but is used to deliver the enterprise services to users. System-generated logs may also contain identifiable information about end users, such as a user name.
 
 ## How this guide can help you meet your controller responsibilities
 
@@ -58,14 +58,14 @@ The guide, divided into two parts, describes how to use Dynamics 365 products, s
 
 When data subjects exercise their rights and make requests, consider the following points:
 
-- Properly identify the person and role — such as employee, customer, vendor — by using information that the data subject gave you as part of his or her request. This information might be a name, an employee ID or customer number, or other identifier.
+- Properly identify the person and role—such as employee, customer, vendor—by using information that the data subject gave you as part of his or her request. This information might be a name, an employee ID or customer number, or other identifier.
 - Record the data and time of the request. (You have 30 days to complete the request.)
 - Affirm that the request meets your organization's requirements for honoring or declining a data subject's request. For example, you must make sure that executing the request doesn't conflict with any other legal, financial, or regulatory obligations that you have, or infringe on the rights and freedoms of others.
 - Verify that you have the information that is related to the request.
 
 ## Part 1: Responding to Data Subject Rights Requests for personal data Included in customer data
 
-In the articles below, you'll find information to help you prepare for and respond to DSR requests for personal data included in customer data processed in Dynamics 365. It is important to note that personal data could be present in other categories of data processed by Microsoft during the course of the service of an online services subscription, such as administrator data or support data defined in the Microsoft Privacy Statement. This document is limited to assist you in the process of discovery and management of DSR requests affecting personal data present in the customer data that you have provided to Dynamics 365.
+In the following articles, you'll find information to help you prepare for and respond to DSR requests for personal data included in customer data processed in Dynamics 365. It is important to note that personal data could be present in other categories of data processed by Microsoft during the course of the service of an online services subscription, such as administrator data or support data defined in the Microsoft Privacy Statement. This document is limited to assist you in the process of discovery and management of DSR requests affecting personal data present in the customer data that you have provided to Dynamics 365.
 
 Dynamics 365 is an online service that offers multiple data processing capabilities as a software-as-a-service (SaaS). As such, Dynamics 365 offers a broad array of functionality intended to process a diverse collection of data, which could vary by nature, purpose or other specific attributes, such as sales data, transactions, financials, HR information, etc. In light of this diversity, Dynamics 365 offers multiple forms, fields, schemas, end points, and logic to process customer data, which is also reflected in the multiple ways in which DSR requests could be addressed in each application. When Dynamics 365 applications offer several ways to address specific DSR requests, we will note those in this guide by pointing to the technical descriptions offered by each application.
 
@@ -133,7 +133,7 @@ In ***Dynamics 365 for Talent***, you may use [Extend the Person search report](
 Additionally, for Dynamics 365 for Marketing you can also:
 
 - Update-my-data landing page, by editing single or multiple rows directly
-- Prepare a [subscription centers](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/set-up-subscription-center) page that has as many editable contact fields that can be included. This enables an end user to update their own information as much as possible.
+- Prepare a [subscription centers](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/set-up-subscription-center) page that has as many editable contact fields that can be included. This page enables an end user to update their own information as much as possible.
 
 ***Dynamics 365 Customer Service Insights*** also provides capabilities that enable organizations to [rectify or make changes to customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary).
 
@@ -143,7 +143,7 @@ In ***Dynamics 365 for Finance and Operations***, you may also use of [*customiz
 
 To quickly bulk-edit multiple Business Central records, you can export lists to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to correct multiple records, and then publish the modified data from Excel in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 
-You can change customer data stored in any field — such as information about a customer in the Customer card — by manually editing the data element containing the target personal data. For details, see [Entering data](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data).
+You can change customer data stored in any field—such as information about a customer in the Customer card—by manually editing the data element containing the target personal data. For details, see [Entering data](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data).
 
 #### Brief note about modifying entries in business transactions
 
@@ -170,7 +170,7 @@ Additionally, For Dynamics 365 Marketing, deletion of a contact will assure that
 
 Alternatively, in ***Dynamics 365 for Finance and Operations*** you may use [*customization tools*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page) to erase/modify customer data.
 
-In ***Dynamics 365 Business Central***, when a data subject asks you to delete their personal data which happens to be included in your customer data, there are several ways to address this request:
+In ***Dynamics 365 Business Central***, when a data subject asks you to delete their personal data that happens to be included in your customer data, there are several ways to address this request:
 
 - To quickly bulk-edit multiple Business Central records, you can export data to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to delete multiple records, and then publish these changes from Excel back in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 - You can delete customer data stored in any field by manually deleting the data element containing the target customer data. For details, see [Entering data](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data).
@@ -187,7 +187,7 @@ Additionally, for Dynamics 365 for Marketing a [dedicated API](https://docs.micr
 
 For ***Dynamics 365 Customer Service Insights***, you [export customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export) through the Azure management portal.
 
-***Dynamics 365 for Finance and Operations*** offers [Data management and integration entities](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity) which enables provided entities, newly created entities, or extended entities for a repeatable personal data export to Excel or a number of other common formats using [Data import and export jobs](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job).  Alternatively, many lists can be exported to a static Excel file to facilitate a data portability request. When customer data is exported to Excel in this fashion, you can then edit the personal data to be included in the portability request and then save the file as a commonly used, machine-readable format such as .csv or .xml.
+***Dynamics 365 for Finance and Operations*** offers [Data management and integration entities that enables provided entities, newly created entities, or extended entities for a repeatable personal data export to Excel or a number of other common formats using [Data import and export jobs](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job).  Alternatively, many lists can be exported to a static Excel file to facilitate a data portability request. When customer data is exported to Excel in this fashion, you can then edit the personal data to be included in the portability request and then save the file as a commonly used, machine-readable format such as .csv or .xml.
 
 Both Dynamics 365 for Finance and Operations and ***Dynamics 365 for Talent*** offer Person Search Report to provide the data subject with data that you've classified as personal data.
 
@@ -205,7 +205,7 @@ Microsoft also provides you with the ability to access, export, and delete syste
 - User search requests and query data
 - Data generated by product and services as a product of system functionality and interaction by users or other systems
 
-Note that the ability to restrict or rectify data in system-generated logs is not supported. Data in system-generated logs constitutes factual actions conducted within the Microsoft cloud and diagnostic data, and modifications to such data would compromise the historical record of actions and increase fraud and security risks.
+The ability to restrict or rectify data in system-generated logs is not supported. Data in system-generated logs constitutes factual actions conducted within the Microsoft cloud and diagnostic data, and modifications to such data would compromise the historical record of actions and increase fraud and security risks.
 
 ### Accessing and exporting system-generated logs
 
@@ -218,9 +218,9 @@ Admins can access system-generated logs associated with a particular user's use 
     > The **Data Log Export** is displayed. Note that a list of export data requests submitted by your organization is displayed.
 4. To create a new request for a user, click **Create Export Data Request**.
 
-After you create a new request, it will be listed on the **Data Log Export** page where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization's Azure storage location within 30 days of creating the request. The data will be saved in common, machine-readable file formats such as JSON or XML. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs.
+After you create a new request, it will be listed on the **Data Log Export** page where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization's Azure Storage location within 30 days of creating the request. The data will be saved in common, machine-readable file formats such as JSON or XML. If you don't have an Azure account and Azure Storage location, you'll need to create an Azure account and/or Azure Storage location for your organization so that the Data Log Export tool can export the system-generated logs.
 
-Azure supports this by enabling your organization to export the data in the native JSON format, to your specified Azure Storage Container[. Introduction to Microsoft Azure Storage — Blob storage](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage) article. The data retrieved will not include data that may compromise the security and stability of the service.
+Azure supports this request by enabling your organization to export the data in the native JSON format, to your specified Azure Storage Container[. Introduction to Microsoft Azure Storage—Blob storage](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage) article. The data retrieved will not include data that may compromise the security and stability of the service.
 
 > [!IMPORTANT]
 > You must be a tenant administrator to export user data from the tenant.
@@ -234,12 +234,12 @@ The following table summarizes accessing and exporting system-generated logs:
 |**What format will the output be in?**| The output will be structured machine-readable files such as XML, CSV, or JSON. |
 |**What data does the Data Log Export tool return?**| The Data Log Export tool returns system-generated logs that Microsoft stores. Exported data will span across various Microsoft services including Office 365, Azure, and Dynamics. |
 |***Who has access to Data Log Export tool to submit access requests for system-generated logs?**| Dynamics 365 global administrators will have access to the GDPR Log Manager utility. |
-|**How is data returned to the user?**| Data will be exported to your organization&#39;s Azure storage location; it will be up to admins in your organization to determine how they will show/return this data to users. |
+|**How is data returned to the user?**| Data will be exported to your organization&#39;s Azure Storage location; it will be up to admins in your organization to determine how they will show/return this data to users. |
 |**What will data in system-generated logs look like?**| Example of a system-generated log record in JSON format: <br><br> "DateTime": "2017-04-28T12:09:29-07:00", <br> "AppName": "SharePoint", <br> "Action": "OpenFile", <br> "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" |
 
 ### Deleting system-generated logs
 
-To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Azure Active Directory account. For instructions on how to permanently delete a user, see the [Step 5: Delete](gdpr-dsr-azure.md#step-5-delete) section in the Azure Data Subject Requests topic. It's important to note that permanently deleting a user account is irreversible once initiated. Permanently deleting a user account removes the user’s data from system-generated logs, except for data that may compromise the security or stability of the service, for nearly all Dynamics 365 services within 30 days.
+To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Azure Active Directory account. For instructions on how to permanently delete a user, see the [Step 5: Delete](gdpr-dsr-azure.md#step-5-delete) section in the Azure Data Subject Requests topic. It's important to note that permanently deleting a user account is irreversible once initiated. Permanently deleting a user account removes the user's data from system-generated logs, except for data that may compromise the security or stability of the service, for nearly all Dynamics 365 services within 30 days.
 
 ## Learn more
 
