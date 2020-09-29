@@ -47,6 +47,6 @@ Based on a self-assessment, Microsoft has documented Azure and Azure Government 
 
 ## Resources
 
-- [Azure standard response for request for information](https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6)
+- [Azure standard response for request for information](https://azure.microsoft.com/resources/azure-standard-response-to-rfi-on-security-privacy-and-compliance/)
 - [Microsoft and the CSA STAR Self-Assessment](offering-csa-star-self-assessment.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
