@@ -32,12 +32,18 @@ Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 - **Fast**: Prioritizes speed over stability. Useful for detecting quality issues before they are offered to the Broad group. This group serves as a next layer of validation but is generally more stable than the Test and First groups. 
 - **Broad**: Last group to have feature and quality updates available. This group contains the majority of users in the tenant, and therefore favors stability over speed in deployment. Testing of apps should be done here as the environment is most stable. 
 
+### Moving Devices between Update Groups
+You may want some devices to receive updates last and others that you want to go first. To move these devices into the appropriate Update Group [submit an administrator support request](https://docs.microsoft.com/en-us/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support?view=o365-worldwide) and we will move the devices for you. 
+
 > [!NOTE]
-> If you need to move a user to a different update group, submit a support request. See [Support for Microsoft Managed Desktop](support.md) for more information on submitting support requests. If you move a user yourself, the move will be reverted.
+> If you need to move a user to a different update group, submit a support request. Do not move devices between update groups yourself, there are serious consequences if a device is moved incorrectly: the device may update unexpectedly and policies may conflict, changing the device configuration.
 
 For more information roles and responsibilities with these deployment groups, see [Microsoft Managed Desktop Roles and responsibilities](../intro/roles-and-responsibilities.md)
 
-How update deployment works:
+### Using Microsoft Managed Desktop Update Groups 
+There are parts of the service, like app deployment, which you manage where it may be necessary to target all managed devices. In these instances, it makes sense to use the Update Groups to reach those users with the understanding that you cannot add, remove, or change the membership of those groups. 
+
+## How update deployment works:
 - Microsoft Managed Desktop deploys a new feature or quality update according the schedule specified below.
 - During deployment, Microsoft Managed Desktop monitors for signs of failure or disruption (based on diagnostic data and the user support system). If any are detected, then the deployment to all current and future groups is immediately paused.
     - Example: if an issue is discovered while deploying a quality update to the First group, then update deployments to First, Fast, and Broad will all be paused until the issue is resolved.
@@ -58,6 +64,7 @@ How update deployment works:
     <tr><td>Anti-virus definition</td><td colspan="4">Updated with each scan</td></tr>
     <tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">Learn more</a></td></tr>
     <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">Learn more</a></td></tr>
+    <tr><td>Microsoft Teams</td><td colspan="4"><a href="https://docs.microsoft.com/en-us/microsoft-365/managed-desktop/get-started/teams#updates">Learn more</a></td></tr>
 </table>
 
 >[!NOTE]
