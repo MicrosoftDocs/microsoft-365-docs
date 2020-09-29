@@ -47,7 +47,7 @@ But in terms of architecture, let's start by thinking of each piece as cumulativ
 
 <!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
 
-:::image type="content" source="../../media/tp_EOPandATPGraphic.png" alt-text="EOP and ATP and their relationships to one another with service emphasis, including a note for email authentication.":::
+:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP and ATP and their relationships to one another with service emphasis, including a note for email authentication.":::
 
 Though each of these services emphasizes a specific goal from among Protect, Detect, Investigate, and Respond, ***all*** the services can carry out ***any*** of the goals of protecting, detecting, investigating, and responding.
 
