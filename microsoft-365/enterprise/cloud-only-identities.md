@@ -53,18 +53,9 @@ You can use groups in Azure AD for several purposes that simplify management of 
 - Automatically provision users for Software as a Service (SaaS) applications and to protect access to those applications with multi-factor authentication (MFA) and other Conditional Access policies.
 - Provision permissions and levels of access for SharePoint Online team sites.
 
-You create new ***users*** with:
-
-- [The Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)
-- [PowerShell for Microsoft 365](create-user-accounts-with-microsoft-365-powershell.md)
-
-You create new ***groups*** with:
-
-- [The Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)
-- [PowerShell for Microsoft 365](manage-microsoft-365-groups-with-powershell.md)
-
-
 ## Next steps for cloud-only identity
 
 - [Manage user accounts](manage-microsoft-365-accounts.md)
 - [Assign licenses to user accounts](assign-licenses-to-user-accounts.md)
+- [Manage groups and group membership](manage-microsoft-365-groups.md)
+- [Manage user account passwords](manage-microsoft-365-passwords.md)

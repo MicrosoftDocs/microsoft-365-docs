@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/16/2020
+ms.date: 09/28/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -26,7 +26,6 @@ To increase the security of user sign-ins:
 - Use multi-factor authentication (MFA)
 - Deploy identity and device access configurations
 - Protect against credential compromise
-
 
 ## Use Windows Hello for Business
 
