@@ -64,7 +64,7 @@ If you have an Office 365 E3, or below, you have EOP, but with the option to buy
 
 <br/>
 
-![EOP and ATP and their specific strengths, going from Protect and Detect to Investigate and Respond. Email Authentication configuration (at least DKIM and DMARC) should be set up for EOP and up.](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
+![EOP and ATP and their security emphasis, going from Protect and Detect to Investigate and Respond. Email Authentication configuration (at least DKIM and DMARC) should be set up for EOP and up.](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
 
 
 > [!IMPORTANT]
