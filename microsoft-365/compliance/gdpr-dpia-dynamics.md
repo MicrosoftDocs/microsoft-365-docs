@@ -25,7 +25,7 @@ Under the General Data Protection Regulation (GDPR), data controllers are requir
 
 The purpose of this document is to provide data controllers with information about Dynamics 365 that will help them to determine whether a DPIA is needed and, if so, what details to include.
 
-## Part 1 — Determining whether a DPIA is needed
+## Part 1: Determining whether a DPIA is needed
 
 Article 35 of the GDPR requires a data controller to create a Data Protection Impact Assessment '[w]here a type of processing in particular using new technologies, and taking into account the nature, scope, context, and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons.' It further sets out particular factors that would indicate such a high risk, which are discussed in the following table: In determining whether a DPIA is needed, a data controller should consider these factors, along with any other relevant factors, in light of the controller's specific implementation(s) and use(s) of Dynamics 365.
 
@@ -39,7 +39,7 @@ Article 35 of the GDPR requires a data controller to create a Data Protection Im
 >[!Note]
 ><sup>1</sup> With respect to the criteria that the processing be on a 'large scale,' Recital 91 of the GDPR clarifies that: 'The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional, or lawyer. In such cases, a data protection impact assessment should not be mandatory.'
 
-## Part 2 — Contents of a DPIA
+## Part 2: Contents of a DPIA
 
 Article 35(7) mandates that a Data Protection Impact Assessment specifies the purposes of processing and a systematic description of the envisioned processing. A systematic description of a comprehensive DPIA might include factors such as the types of data processed, how long data is retained, where the data is located and transferred, and what third parties may have access to the data. In addition, the DPIA must include:
 
