@@ -16,6 +16,8 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: "Learn how to integrate automated investigation and response with a custom or third-party reporting solution."
 ms.date: 09/29/2020
+ms.custom: 
+- air
 ---
 
 # Use the Management Activity API for custom or third-party reporting solutions
