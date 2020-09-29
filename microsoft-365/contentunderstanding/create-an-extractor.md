@@ -8,14 +8,13 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
+localization_priority: Priority
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to create an extractor in Microsoft SharePoint Syntex."
 ---
 
 # Create an extractor (Preview)
 
-The content in this article is for the Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
 </br>
 

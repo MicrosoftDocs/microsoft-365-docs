@@ -8,14 +8,13 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
+localization_priority: Priority
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn about form processing in Microsoft SharePoint Syntex"
 ---
 
 # Form Processing overview (Preview)
 
-The content in this article is for the Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
 Project Cortex uses Microsoft PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview) form processing to create models within SharePoint document libraries.
 

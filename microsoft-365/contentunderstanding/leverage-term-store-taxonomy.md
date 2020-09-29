@@ -8,15 +8,12 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
+localization_priority: Priority
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Leverage term store taxonomy when creating an extractor in your document understanding model in Microsoft SharePoint Syntex."
 ---
 
 # Leverage term store taxonomy when creating an extractor
-
-
-Video will be embedded here.
 
 When you create an extractor in your document understanding model in SharePoint Syntex, you can take advantage of [Managed Metadata services](https://docs.microsoft.com/sharepoint/managed-metadata#terms) term store taxonomy to display preferred terms for data that you extract.  
 

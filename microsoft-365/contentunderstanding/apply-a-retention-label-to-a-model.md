@@ -8,18 +8,12 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
+localization_priority: Priority
 ROBOTS: NOINDEX, NOFOLLOW
 description: "This article discusses how to apply a retention label to a document understanding model"
 ---
 
 # Apply a retention label to a document understanding model
-
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
-
-</br>
 
 You can easily apply a [retention label](https://docs.microsoft.com/microsoft-365/compliance/retention) to a document understanding model in Microsoft SharePoint Syntex.
 

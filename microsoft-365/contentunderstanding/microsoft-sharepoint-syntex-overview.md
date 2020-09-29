@@ -8,19 +8,13 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
+localization_priority: Priority
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to find resources for Microsoft SharePoint Syntex."
 ---
 
 # Introduction to SharePoint Syntex
 
-
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7] 
-
-</br>
 
 SharePoint Syntex is an Office 365 service that helps organizations to:
 
@@ -60,12 +54,9 @@ The resources in this section help your users learn how to create and configure 
 
 
 
-
 ## Premium services
 
 A SharePoint Syntex license gives your users premium content services that give you additional functionality in your Microsoft 365 environment. The resources in this section give you more details on these feature and how to use them.
-
-For more information about premium content services provided through SharePoint Syntex, see the [Microsoft SharePoint Syntex service description](). 
 
 
 |**If you're looking for this information:**|**Go to this resource:**|

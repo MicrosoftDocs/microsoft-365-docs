@@ -8,8 +8,7 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+localization_priority: Priority
 description: "Learn about document understanding models through the sample model"
 ---
 
@@ -26,20 +25,15 @@ To access the sample model, you need to first import the model to your content c
 
     ![Import sample model](../media/content-understanding/import-sample-model.png) </br>
 
-3. Look for the sample model titled *BenefitsChangeNotice.classifier* that appears in your models list.</br>
+3. When the import completes, the **BenefitsChangeNotice** model home page will open. </br>
 
-    ![Sample model](../media/content-understanding/sample-model.png) </br>
+     ![Sample home page](../media/content-understanding/sample-home-page.png)</br>
 
-4. Select the *BenefitsChangeNotice.classifier*, to open the model's home page.</br>
-  
-     ![Sample home page](../media/content-understanding/sample-home-page.png)
+You can not only look through analyze the sample model to get a better understanding of how the model is constructed, but as a working model can go further and do things such as:
 
-5. From the model home page, examine the model more closely to see how it was created.
- 
-- View the sample files used to train the model.
-- Examine the model's entity extractors more closely to see how the sample model configured the explanations.
+- Add a another extractor. For example, add one that extracts the *discount fee*.
+- Apply the model to a document library, and upload some of the training files to it to see how the model classifies files and extracts data from them.
 
-   ![Sample model extractors](../media/content-understanding/entity-extractors.png)  
 
 ## See Also
 [Create a classifier](create-a-classifier.md)</br>

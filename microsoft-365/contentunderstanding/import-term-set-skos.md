@@ -9,7 +9,7 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.service: 
 search.appverid: 
-localization_priority: None
+localization_priority: Priority
 ROBOTS: NOINDEX, NOFOLLOW
 
 ---
