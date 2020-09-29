@@ -322,9 +322,9 @@
         - name: Basic Mobility and Security
           items:
             - name: Basic Mobility and Security FAQ
-              href: basic-mobility-security/basic-mobility-and-security-frequently-asked-questions.md
+              href: basic-mobility-security/frequently-asked-questions.md
             - name: Capabilities of Basic Mobility and Security
-              href: basic-mobility-security/capabilities-of-basic-mobility-and-security.md
+              href: basic-mobility-security/capabilities.md
     - name: Work with customers
       href: work-with-customers/index.yml
       items: 

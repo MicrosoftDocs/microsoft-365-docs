@@ -17,41 +17,38 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Choose an app and device management method."
+description: "Basic Mobility and Security is part of the Microsoft 365 plans."
 ---
 
-# Decide on a method to secure your devices and app data
+# Choose between Basic Mobility and Security and Intune
 
-You can choose to use Intune, Intune together with an Azure Information Protection Premium plan, or Basic Mobility and Security to secure your devices and app data.  
+Microsoft Intune is a standalone product included with certain Microsoft 365 plans, while Basic Mobility & Security is part of the Microsoft 365 plans. 
 
-If your plan includes both Intune and Azure Information Protection Premium P1, or Azure Information Protection Premium P2 you get higher functionality for both mobile device management (MDM) and mobile app management (MAM), you should use Intune. 
+ ## Availability of Basic Mobility and Security and Intune
+ 
+Both Basic Mobility and Security and Intune are included in a variety of plans, described in the following table.
 
-For more information on the Azure Information Protection plans, see [Azure Information Protection documentation](https://docs.microsoft.com/azure/information-protection/).
+|**Plan**|**Basic Mobility and Security**|**Microsoft Intune**|
+|:-----|:-----|:-----|
+|Microsoft 365 Apps|Yes|No|
+|Microsoft 365 Business Basic|Yes|No|
+|Microsoft 365 Business Standard|Yes|No|
+|Office 365 E1 |Yes|No|
+|Office 365 E3 |Yes|No|
+|Office 365 E5 |Yes|No|
+|Microsoft 365 Business Premium |Yes|Yes|
+|Microsoft 365 Firstline 3 |Yes|Yes|
+|Microsoft 365 Enterprise E3 |Yes|Yes|
+|Microsoft 365 Enterprise E5 |Yes|Yes|
+|Microsoft 365 Eductation A1 |Yes|Yes|
+|Microsoft 365 Education A3 |Yes|Yes|
+|Microsoft 365 Education A5 |Yes|Yes|
+|Microsoft Intune |No|Yes|
+|Enterprise Mobility & Security E3 |No|Yes|
+|Enterprise Mobility & Security E5 |No|Yes|
 
- Microsoft 365 Business Premium includes both Intune and Azure Information Protection Premium P1 but also includes a set of base-line security and device policy settings that are easier to set up and manage in the Microsoft 365 admin center. For more information, see [Microsoft 365 Business Premium](../../business/index.md).
 >[!NOTE]
 >You can't begin using Basic Mobility and Security if you're already using Microsoft Intune.
-
-Microsoft Intune, Azure Information Protection Premium P1, and Azure Information Protection Premium P2 are standalone products included with some Microsoft 365 plans. Basic Mobility and Security is included in all of the Microsoft 365 plans. See the following table for details. 
-
-|**Plan**|**Basic Mobility and Security**|**Microsoft Intune**|**Azure Information Protection Premium P1**|
-|:-----|:-----|:-----|:-----|
-|Microsoft 365 Apps|Yes|No|No|
-|Microsoft 365 Business Basic|Yes|No|No|
-|Microsoft 365 Business Standard|Yes|No|No|
-|Office 365 E1 |Yes|No|No|
-|Office 365 E3 |Yes|No|Yes|
-|Office 365 E5 |Yes|No|Yes|
-|Microsoft 365 Business Premium |Yes|Yes|Yes|
-|Microsoft 365 Firstline 3 |Yes|Yes|No|
-|Microsoft 365 Enterprise E3 |Yes|Yes|No|
-|Microsoft 365 Enterprise E5 |Yes|Yes|Yes|
-|Microsoft 365 Education A1 |Yes|Yes|No|
-|Microsoft 365 Education A3 |Yes|Yes|No|
-|Microsoft 365 Education A5 |Yes|Yes|No, but includes the higher functionality Azure Information Protection Premium P2|
-|Microsoft Intune |No|Yes|No|
-|Enterprise Mobility & Security E3 |No|Yes|Yes|
-|Enterprise Mobility & Security E5 |No|Yes||
 
  For details, see [Microsoft 365 and Office 365 platform service descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description). 
 
@@ -66,7 +63,7 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 |:-----|:-----|:-----|:-----|
 |Device types|Managing different OS platforms and major management mode variants. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, iPad OS|
 |Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. |Yes|
-|Conditional access based on device compliance |Prevent noncompliant devices from accessing corporate email and data from the cloud. |Not supported on Windows 10.<br/>Limited to controlling access to Exchange Online, SharePoint Online, and Outlook. |No <br/> Yes with Azure Information Protection Premium plan |
+|Conditional access based on device compliance |Prevent noncompliant devices from accessing corporate email and data from the cloud. |Not supported on Windows 10.<br/>Limited to controlling access to Exchange Online, SharePoint Online, and Outlook. |No |
 |Device configuration  |Configure device settings (e.g. disabling the camera). |Limited set of settings. |Yes|
 |Email profiles  |Provision a native email profile on the device. |Yes|Yes|
 |WiFi profiles |Provision a native WiFi profile on the device. |No|Yes|
