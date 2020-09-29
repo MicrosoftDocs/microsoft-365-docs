@@ -36,7 +36,7 @@ Compliance Manager provides pre-built templates for building assessments that ar
 
 Compliance Manager also provides you with a compliance score that measures your progress in completing recommended improvement actions within controls. You can use this score to help monitor your progress and prioritize actions based on their potential to reduce risk.
 
-### Get started with the Compliance Manager quickstart guide
+### Compliance Manager quickstart guide
 
 The [Compliance Manager quickstart](../compliance/compliance-manager-quickstart.md) guide provides graduated steps and links to key resources to help you work with Compliance Manager.
 
@@ -45,7 +45,7 @@ The [Compliance Manager quickstart](../compliance/compliance-manager-quickstart.
     - Understanding your compliance score
     - Learning about improvement actions
     - Understanding assessments and templates
-- [Ramping up: configure Compliance Manager to manage your compliance activities.](../compliance/compliance-manager-quickstart.md#amping-up-configure-compliance-manager-to-manage-your-compliance-activities) Topics include:
+- [Ramping up: configure Compliance Manager to manage your compliance activities.](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities) Topics include:
     - Building and managing your first assessment
     - Performing implementation and testing work on improvement actions to complete controls in your assessments
     - Understanding how different actions impact your compliance score
@@ -56,7 +56,7 @@ The [Compliance Manager quickstart](../compliance/compliance-manager-quickstart.
 
 ## How your compliance score is calculated
 
-Your compliance score is calculated based on a combination of Microsoft and customer-managed control implementations, as explained in more detail in the [Compliance score calculation article](../compliance/compliance-score-calculation.md).
+Your compliance score is calculated based on a combination of Microsoft and customer-managed control implementations, as explained in more detail in the [compliance score calculation article](../compliance/compliance-score-calculation.md).
 
 Controls are assigned a score value based on whether they're mandatory or discretionary, and whether they're preventative, detective, or corrective. These collectively represent the risk of not implementing it relative to other controls.
 
@@ -76,7 +76,7 @@ Here are a few important tips for using Compliance Manager to help you achieve d
 
 - Each data privacy regulation has a combination of technical controls, documentation specifications, and operational, process, and reporting requirements. All of these show up in the improvement actions.
 
-- To focus the view of improvement actions to your area of interest, you can filter by action type in the **Solutions** tab in the Compliance Manager admin. Learn more about [filtering your Compliance Manager dashboard view](../compliance/ompliance-manager-setup.md#filtering-your-dashboard-view).
+- To focus the view of improvement actions to your area of interest, you can filter by action type in the **Solutions** tab in the Compliance Manager admin. Learn more about [filtering your Compliance Manager dashboard view](../compliance/compliance-manager-setup.md#filtering-your-dashboard-view).
 
 - The relative importance and priority of improvement actions identified in Compliance Manager should be considered as part of a broader risk review along with the data privacy risk you've determined your organization needs to manage.
 
