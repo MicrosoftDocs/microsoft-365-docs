@@ -14,14 +14,10 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: ""
+ROBOTS: NOINDEX, NOFOLLOW 
+description: "Manage evidence that you've added to a data investigation."
 ---
 
-# Manage evidence sets in Data Investigations (Preview)  
+# Manage evidence sets in Data Investigations (preview)  
 
 Content coming soon.
-
-  
-
