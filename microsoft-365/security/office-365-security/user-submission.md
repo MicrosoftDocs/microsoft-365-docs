@@ -37,6 +37,22 @@ You can also configure third-party message reporting tools to forward messages t
 
 Delivering user reported messages to a custom mailbox instead of directly to Microsoft allows your admins to selectively and manually report messages to Microsoft using [Admin submission](admin-submission.md).
 
+## Custom mailbox prerequisites
+
+Use the following articles to setup the prerequisites required for your custom mailbox:
+
+- Set the spam confidence level for messages going to this folder to skip spam filtering. See [Use the EAC to create a mail flow rule that sets the SCL of a message](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to create and an exchange mail flow rule with **Specify SCL** SCL set to **-1**.
+
+- Turn off the scanning of attachments for malware for messages going to this folder. Use [Set up (or edit) an ATP Safe Attachments policy](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide#step-2-set-up-or-edit-an-atp-safe-attachments-policy) to set the safe attachment policy to **Off**.
+
+- Turn off URL scanning for messages going to this folder. Use [Add (or edit) ATP Safe Links policies that apply to all or specific email recipients](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-worldwide#step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients) to set the safe links policy to **Off**.
+
+- Turn off ZAP settings for this mailbox via a scoped policy with higher priority in the Antimalware and Antispam.
+
+- Turn off JMRC on the mailbox
+
+After you've verified that your mailbox meets all applicable prerequisites, Use the Security & Compliance Center to configure the user submissions mailbox.
+
 ## What do you need to know before you begin?
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **User submissions** page, use <https://protection.office.com/userSubmissionsReportMessage>.
