@@ -139,10 +139,14 @@ Given the sheer volume of email that users in an organization send and receive, 
 
 can take significant time. AIR now automates this process, saving your organization's security team time and effort.
 
-Two different types of email clusters may be identified during the email analysis step: similarity clusters and indicator clusters.
+Three different types of email clusters may be identified during the email analysis step: similarity clusters (all investigations), indicator clusters (all investigations), and mailbox/user clusters.
 
 - Similarity clusters are email messages identified by hunting for emails with similar sender and content attributes. These clusters are evaluated for malicious content based on the original detection findings. Email clusters that contain enough malicious email detections are considered malicious.
-- Indicator clusters are email messages that are identified by hunting for the same indicator entity (file hash or URL) from the original email. When the original file/URL entity is identified as malicious, AIR applies the indicator verdict to the entire cluster of email messages containing that entity. A file identified as malware means that the cluster of email messages containing that file are treated as malware email messages.
+- Indicator clusters are email messages that are identified by hunting for the same indicator entity (file hash or URL) from the original email. When the ouserriginal file/URL entity is identified as malicious, AIR applies the indicator verdict to the entire cluster of email messages containing that entity. A file identified as malware means that the cluster of email messages containing that file are treated as malware email messages.
+- Mailbox/user clusters are email messages related to the user involved in a user compromise investigation.  Note that these email clusters are for further analysis by the security operations team and will not generate email remediation actions.  The compromise playbook's mailbox/user clusters reviews the emails being sent by the user being analyzed, in order to understand the potential impact of the emails being sent from the mailbox:
+    - Malicious emails sent from the mailbox/user, which indicate potential compromise of the mailbox/account and will show other users/mailboxes potentially impacted by malicious sent as part of a compromise.
+    - Suspicious emails sent by the mailbox/user, showing any spam/bulk email sent from the mailbox, which may be related to potential compromise or at least indicate potential unwanted activity from the email account.
+    - Clean emails sent by the mailbox/user, which will provide the security operations team a view of legitimate user emails sent, but may include exfiltration of data when the email account is compromised.
 
 The goal of clustering is to hunt and find other related email messages that are sent by the same sender as part of an attack or a campaign.  In some cases, legitimate email may trigger an investigation (for example, a user reports a marketing email).  In these scenarios, the email clustering should identify that email clusters are not malicious – when it appropriately does so, it will **not** indicate a threat nor will it recommend email removal.
 
@@ -227,7 +231,7 @@ You can:
 |DLP violations investigation|Investigate any violations detected by [Data Loss Prevention](../../compliance/data-loss-prevention-policies.md) (DLP)|
 |Email indicators extraction|Extract indicators from the header, body, and content of an email message for investigation|
 |File Hash Reputation|Detect anomalies based on file hashes for users and machines in your organization|
-|Mail cluster identification|Email cluster analysis based on header, body, content, and URLs|
+|Mail cluster identification|Email cluster analysis based on header, body, content, files, and URLs|
 |Mail cluster volume analysis|Email cluster analysis based on outbound mail flow volume patterns|
 |Mail delegation investigation|Investigate mail delegation access for user mailboxes related to this investigation|
 |Mail forwarding rules investigation|Investigate any mail forwarding rules for user mailboxes related to this investigation|
