@@ -209,7 +209,7 @@ Recording Time Off within the Bookings Web app will always trigger a notificatio
 
 ### Can Bookings calendars be cloned or duplicated, and can they be templatized for easy scaling?
 
-The ability to duplicate pages is currently available via PowerShell. The process would be to use the Graph API to get mailbox details, and then use those details to create a new mailbox. API documentation is [here](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
+The process would be to use the Graph API to get mailbox details, and then use those details to create a new mailbox. API documentation is [here](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
 
 ### What reporting is available in Bookings?
 
