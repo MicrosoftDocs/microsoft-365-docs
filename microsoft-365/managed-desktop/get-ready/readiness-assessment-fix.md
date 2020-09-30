@@ -13,11 +13,16 @@ ms.topic: article
 
 # Fix issues found by the readiness assessment tool
 
+For each check, the tool will report one of three possible results:
 
 
-## Microsoft Intune
+|Result  |Meaning  |
+|---------|---------|
+|Ready     | No action is required before completing enrollment.        |
+|Advisory    | Follow the steps in the tool or this article for the best experience with enrollment and for users. You *can* complete enrollment, but you must fix these issues before you deploy your first device.        |
+|Not ready | *You can't complete enrollment without fixing these issues.* Follow the steps in the tool or this article to resolve them.        |
 
-
+## Microsoft Intune settings
 
 ### Mobile Device Management (MDM) authority
 
@@ -79,70 +84,144 @@ For more information, see [Set up the Enrollment Status Page](https://docs.micro
 
 ### Autopilot profile
 
-You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups with Autopilot profiles used by Microsoft Managed Desktop.
+You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups with Autopilot profiles used by Microsoft Managed Desktop. This is because Microsoft Managed Desktop uses Autopilot to provision new devices.
 
+If you use Azure AD dynamic groups to assign Autopilot profiles with membership rules that use the ZTDID field to assign devices, follow these steps depending on your situation:
 
+If your dynamic group uses a generic rule that could include both Microsoft Managed Desktop devices and other devices Use the example guidance below to help you’re your required remediation actions:  {IT'S UNCLEAR IF THIS AND THE PRECEDING PARA ARE TWO DIFFERENT SCENARIOS, TWO WAYS OF STATING THE SAME ONE, OR IF ONE IS A SUBSET OF THE OTHER--PLZ CLARIFY}
+
+**I use the Autopilot "catch all devices" rule:**
+
+An example is **(device.devicePhysicalIDs -any _ -contains "[ZTDId]")**. Instead, either use a different group that doesn't use the ZTDID query or modify the membership rule to use a less generic query. For example, you could use OrderIDs to limit the group to include only the ones that have a specific **Order ID:  (device.devicePhysicalIds -any _ -eq "[OrderID]:123456789")**.
+
+**I use a Windows-based "catch all devices" rule*:**
+
+Any group using this rule will include devices including those managed by Microsoft Managed Desktop, since those are also based on Windows.
+
+Instead, either use a more specific assignment group or exclude the Modern Workplace Devices -all group from each device-targeted assignment.
+
+**I use a hardware-based "catch all devices" rule:**
+
+An example is **(device.deviceModel -contains "Surface")**. Any group that uses this rule could include Microsoft Managed Desktop devices that happen to have the same manufacturer or model.
+
+Instead, either use a more specific assignment group or exclude the Modern Workplace Devices -all group from each device-targeted assignment.
 
 ### Autopilot devices
 
+{PER SPEC: "One or multiple (documentation to be written)"}
 
 ### Windows Hello for Business
 
+Microsoft Managed Desktop requires Windows Hello for Business to be enabled. For more information, see [Integrate Windows Hello for Business with Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/windows-hello)
 
 ### Device compliance policies
 
+Make sure that device compliance policies in your Azure AD organization do *not* target any Microsoft Manage Desktop devices or users.
+
 ### Device configuration policies
+
+Make sure that device configuration policies in your Azure AD organization do *not* target any Microsoft Manage Desktop devices or users.
 
 ### PowerShell scripts
 
+Make sure that Windows PowerShell scripts in your Azure AD organization do *not* target any Microsoft Manage Desktop devices or users. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)
 
+### Certificate connectors
 
-### Certificate Connectors
-
-
+No certificate connectors are present. You need at least one and it must have no errors. For more information, see [Use certificates for authentication in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure)
 
 ### Conditional access policies
 
+Make sure that no conditional access policies in your Azure AD organization target any Microsoft Managed Desktop users. For more information, see [Adjust conditional access](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access?view=o365-worldwide)
 
 ### Review apps
 
+Review the listed apps. {LOOKING FOR WHAT?}
 
 ### Microsoft Store for Business
 
-
+Microsoft Store for Business must be enabled and syncing with Intune. For more information, see [Deploy apps to devices](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/deploy-apps?view=o365-worldwide)
 
 ### Windows deployment groups
 
-
+Ensure that any policies you might have regarding Windows update deployment groups do *not* target any Microsoft Managed Desktop devices or users. {DO YOU WANT TO MENTION UPDATE BASELINES?}
 
 ### Security baselines
 
+Ensure that any security baselines you might have in your Azure AD organization do *not* target any Microsoft Managed Desktop devices or users.
 
 
-## Azure
+## Azure Active Directory settings
 
 
 ### Azure Active Directory device registration
 
+Make sure that the **Users may join devices to Azure AD** setting is set to **All** or **Selected**. This allows Microsoft Managed Desktop users to successfully enroll in the service.
+
+If you use the **Selected** setting, it must include the Modern Workplace -all group once you have enrolled in Microsoft Managed Desktop. 
+
 ### Users as local administrators
 
-
+Check that the reported number of local administrators is correct and in accordance with your policy.
 
 ### Enterprise State Roaming
 
+Make sure that Enterprise State Roaming is enabled for all or for select groups. For more information, see [Enable Enterprise State Roaming](../get-started/enterprise-state-roaming.md).
 
 
 ### Multi-factor authentication
 
-
+Ensure that any multi-factor authentication configurations you might have in your Azure AD organization do *not* target any Microsoft Managed Desktop devices or users.
 
 ### Reserved names
 
+If you have any of these names in an account in your Azure AD organization, rename them:
+
+- Msadmin
+- Msadminint
+- Mwaas_wdgsoc
+- Mwaas_soc_ro
+- MSTest
 
 ### Reserved roles
+
+If you have any accounts with any of these roles assigned, make sure they have {MDATP RBAC --i think this has a new name}. Otherwise, they won't be able to access the console.
+
+- Use of Security Reader
+- Security Operator
+- Global Reader
+
+
+### Self-service Password Reset
+
+Make sure that Self-service Password Reset (SSPR) is enabled for all users. If it isn't, the Microsoft Managed Desktop service accounts can't work. For more information, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)
+
+
+### Ad-hoc subscriptions
+
+Ensure that **AllowAdHocSubscriptions** is set to **True**. Otherwise, Enterprise State Roaming might not work. For more information, see [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
 
 
 ## Microsoft 365 Apps for enterprise
 
 ### OneDrive
 
+Make sure that OneDrive is configured using a CA policy {WHAT'S CA?} instead of the domain GUID.
+
+## {OnMMD what does this mean?}
+
+### Region
+
+Your region isn't currently supported by Microsoft Managed Desktop. For more information, see [Microsoft Managed Desktop supported regions and languages](../service-description/regions-languages.md).
+
+### Licenses
+
+The listed licenses will expire in the stated number of days. You must renew these licenses to enroll in the service. For more information, see [Microsoft Managed Desktop technologies](../intro/technologies.md) and [More about licenses](prerequisites.md#more-about-licenses).
+
+### Co-management
+
+Co-management should *not* be enabled. For more information, see [What is co-management?](https://docs.microsoft.com/mem/configmgr/comanage/overview).
+
+### Configuration Manager agent
+
+Ensure that the Configuration Manager agent does *not* target any Microsoft Managed Desktop devices or users. For more information, see [What is co-management?](https://docs.microsoft.com/mem/configmgr/comanage/overview). 

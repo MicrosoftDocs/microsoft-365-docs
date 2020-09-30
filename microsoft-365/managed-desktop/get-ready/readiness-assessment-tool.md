@@ -47,7 +47,7 @@ The assessment tool checks these items:
 |Licenses     | Checks that you have obtained the necessary [licenses](prerequisites.md#more-about-licenses)         |
 |Windows apps     | Review which apps you want to assign to Microsoft Managed Desktop devices      |
 |Standard user role     | Verifies that users are standard users and do not have local administrator rights         |
-| Security defaults | Checks whether your Azure AD organization has security defaults enabled in Azure Active Directory |
+|Security defaults | Checks whether your Azure AD organization has security defaults enabled in Azure Active Directory |
 
 For each check, the tool will report one of three possible results:
 
