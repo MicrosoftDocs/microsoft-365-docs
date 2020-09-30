@@ -1,7 +1,7 @@
 ---
 title: What's coming to Microsoft Secure Score
 description: Describes what new changes are coming to Microsoft Secure Score in the Microsoft 365 security center.
-keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -21,13 +21,17 @@ search.appverid:
 
 # What's coming to Microsoft Secure Score
 
-To make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score may change.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
 
 ## Proposed changes
 
-These these changes may be coming to your Microsoft Secure Score soon, depending on your license. To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score-whats-new.md)
+### October 2020
 
-- Changing the maximum score from 7 to 8 for the Azure Active Directory improvement action called "Enable policy to block legacy authentication"
+#### Remove improvement action for Microsoft Defender Advanced Threat Protection
+- Set Microsoft Defender SmartScreen Windows Store app web content checking to warn
 
 ## Related resources
 

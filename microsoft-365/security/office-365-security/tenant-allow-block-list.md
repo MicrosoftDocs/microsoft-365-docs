@@ -19,6 +19,9 @@ description: "Admins can learn how to configure URL entries in the Tenant Allow/
 
 # Manage URLs in the Tenant Allow/Block List
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 > [!NOTE]
 > The features described in this topic are in Preview, are subject to change, and are not available in all organizations.
 
@@ -34,7 +37,7 @@ This topic describes how to configure entries in the Tenant Allow/Block List in 
 
 - The available URL values are described in the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this topic.
 
-- The Tenant Allow/Block List allows a maximum of 500 entries for URLss.
+- The Tenant Allow/Block List allows a maximum of 500 entries for URLs.
 
 - An entry should be active within 15 minutes.
 

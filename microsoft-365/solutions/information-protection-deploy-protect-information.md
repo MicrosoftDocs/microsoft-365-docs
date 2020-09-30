@@ -68,6 +68,7 @@ Microsoft [information protection solutions](../compliance/protect-information.m
   - Client-side/content-level
   - Automated for data-at-rest in SharePoint and OneDrive
 - Data Loss Prevention (DLP)
+- [Microsoft 365 Endpoint data loss prevention (preview)](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide)
 - [Office 365 Message Encryption new capabilities (OME)](../compliance/ome.md) and OME [Advanced Message Encryption](../compliance/ome-advanced-message-encryption.md)
 
 In addition, site and library level protection are important mechanisms to include in any protection scheme.

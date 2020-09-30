@@ -37,9 +37,9 @@ Update deployment | Use Windows Update for Business to perform gradual deploymen
 Metered connections | By default, updates over metered connections (such as LTE networks) are turned off, though each user can independently turn on this feature in **Settings > Updates > Advanced options**. If you want to allow all users to enable updates over metered connections, [submit a change request](../working-with-managed-desktop/admin-support.md), which will turn on this setting for all devices.
 | Device compliance | These policies are configured for all Microsoft Managed Desktop devices. A device is reported as non-compliant when it drifts from our required security configuration.
 
-## Diagnostic data
+## Windows diagnostic data
 
- Devices will be set to provide enhanced diagnostic data to Microsoft under a known commercial identifier. As part of Microsoft Managed Desktop, IT admins can not change these settings. For customers in General Data Protection Regulation (GDPR) regions, end users can reduce the level of diagnostic data that is provided, but there will be a reduction in service. For example, Microsoft Managed Desktop will be unable to collect the data necessary to iterate on settings and policies to best serve performance and security needs. For more information, see [Configure Windows diagnostic data in your organization.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
+ Devices will be set to provide enhanced diagnostic data to Microsoft under a known commercial identifier. As part of Microsoft Managed Desktop, IT admins can not change these settings. For customers in General Data Protection Regulation (GDPR) regions, users can reduce the level of diagnostic data that is provided, but there will be a reduction in service. For example, Microsoft Managed Desktop will be unable to collect the data necessary to iterate on settings and policies to best serve performance and security needs. For more information, see [Configure Windows diagnostic data in your organization.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
 ## Security addendum
 

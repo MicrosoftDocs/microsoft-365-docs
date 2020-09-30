@@ -20,6 +20,9 @@ description: "Summary: Configure a SharePoint Online team site that is isolated 
 
 # Isolated SharePoint Online team site dev/test environment
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
  **Summary:** Configure a SharePoint Online team site that is isolated from the rest of the organization in your Microsoft 365 dev/test environment.
 
 SharePoint Online team sites in Microsoft 365 are locations for collaboration using a common document library, a OneNote notebook, and other services. In many cases, you want wide access and collaboration across departments or organizations. However, in some cases, you want to tightly control the access and permissions for collaboration among a small group of people.
@@ -60,7 +63,7 @@ If you want to create an isolated SharePoint Online team site in a simulated ent
 
 ## Phase 2: Create user accounts and access groups
 
-Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) to connect to your trial subscription with your global administrator account from:
+Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell) to connect to your trial subscription with your global administrator account from:
 
 - Your computer (for the lightweight Microsoft 365 dev/test environment).
 
@@ -281,7 +284,7 @@ When you are ready to deploy an isolated SharePoint Online team site in producti
 
 [Isolated SharePoint Online team sites](isolated-sharepoint-online-team-sites.md)
 
-[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
 [The simulated enterprise base configuration](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 

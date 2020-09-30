@@ -27,7 +27,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 The tables below shows where customer data is stored at-rest for Microsoft 365 services across all of Microsoft's global cloud locations. Expand the location of your billing address country to find out where customer data for each service would be stored.
 
-Customers should view tenant specific data location information in your Office 365 Admin Center in **Settings | Organization profile | Data location card**.
+Customers should view tenant specific data location information in your Microsoft 365 Admin Center in **Settings | Org settings | Organization Profile | Data location**.
 
 New Microsoft 365 tenants are defaulted to Geo based on the country of the transaction associated with that tenant's first subscription.
 
@@ -4094,7 +4094,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Yammer | Global Geography 1 – EMEA |
 | OneNote Services | Norway |
 | Stream | Global Geography 1 – EMEA |
-| Whiteboard | United States |
+| Whiteboard | Global Geography 1 – EMEA |
 | Forms | Global Geography 1 – EMEA |
 | Workplace Analytics | United States |
 </p></details>
@@ -4814,7 +4814,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Yammer | Global Geography 1 – EMEA |
 | OneNote Services | Global Geography 1 – EMEA |
 | Stream | Global Geography 1 – EMEA |
-| Whiteboard | United States |
+| Whiteboard | Global Geography 1 – EMEA |
 | Forms | Global Geography 1 – EMEA |
 | Workplace Analytics | United States |
 </p></details>

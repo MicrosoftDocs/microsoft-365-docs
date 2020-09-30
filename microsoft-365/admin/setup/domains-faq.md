@@ -48,7 +48,7 @@ In this article
 - [What happens if my DNS provider doesn't support certain record types?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
 - [How do I set or change the default domain in Microsoft 365?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
 - [Can I add custom subdomains or multiple domains to Microsoft 365?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
-- [How do I transfer a domain from Microsoft 365 to another host?]
+- [How do I transfer a domain from Microsoft 365 to another host?](#how-do-i-transfer-a-domain-from-microsoft-365-to-another-host)
 - [Why do I have an "onmicrosoft.com" domain?](#why-do-i-have-an-onmicrosoftcom-domain)
 - [Why do I have an "onmicrosoft.de" domain?](#why-do-i-have-an-onmicrosoftde-domain)
 - [How do I verify my nonprofit or education status?](#how-do-i-verify-my-nonprofit-or-education-status)
