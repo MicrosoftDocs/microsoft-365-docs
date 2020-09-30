@@ -32,17 +32,17 @@ You’ve just simulated an advanced memory-only attack that executed code remote
 You’ve reached the end of the process after all tests have concluded.
 
 The final output should be:
+
 - A completed scorecard
 - A detailed report of the findings of the pilot
 - A decision on how to move forward
 
-This information should be presented to both internal stakeholders (which you’ve identified during the [preparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) phase)  and Microsoft contacts. This ensures that any feedback can be used to improve products and documentation.
+This information should be presented to both internal stakeholders (which you’ve identified during the [preparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) phase) and Microsoft contacts. This ensures that any feedback can be used to improve products and documentation.
 
 We hope you enjoyed this simulation and are encouraged to start implementing what you've learned.
 
-
 ## Next step
-||
-|:-------|
-|Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to Understand how to design the solution and architecture that is right for your organization.
 
+****
+
+Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to Understand how to design the solution and architecture that is right for your organization.
