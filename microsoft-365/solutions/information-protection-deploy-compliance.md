@@ -50,16 +50,16 @@ Compliance Manager also provides you with a compliance score that measures your 
 
 The [Compliance Manager quickstart](../compliance/compliance-manager-quickstart.md) guide provides graduated steps and links to key resources to help you work with Compliance Manager:
 
-- [First visit: get familiar with Compliance Manager.](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
+- [First visit: get familiar with Compliance Manager](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - Working with your Compliance Manager dashboard
     - Understanding your compliance score
     - Learning about improvement actions
     - Understanding assessments and templates
-- [Ramping up: configure Compliance Manager to manage your compliance activities.](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
+- [Ramping up: configure Compliance Manager to manage your compliance activities](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - Building and managing your first assessment
     - Performing implementation and testing work on improvement actions to complete controls in your assessments
     - Understanding how different actions impact your compliance score
-- [Scaling up: use advanced functionality to meet your custom needs.](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
+- [Scaling up: use advanced functionality to meet your custom needs](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
     - Creating your custom assessments to track non-Microsoft 365 products
     - Modifying existing templates to add or remove controls
     - Setting up automated testing of improvement actions
