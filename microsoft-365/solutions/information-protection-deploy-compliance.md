@@ -50,29 +50,29 @@ Compliance Manager also provides you with a compliance score that measures your 
 
 The [Compliance Manager quickstart](../compliance/compliance-manager-quickstart.md) guide provides graduated steps and links to key resources to help you work with Compliance Manager:
 
-- [First visit: get familiar with Compliance Manager.](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager) Topics include:
-    - Working with your Compliance Manager dasbhoard
+- [First visit: get familiar with Compliance Manager.](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
+    - Working with your Compliance Manager dashboard
     - Understanding your compliance score
     - Learning about improvement actions
     - Understanding assessments and templates
-- [Ramping up: configure Compliance Manager to manage your compliance activities.](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities) Topics include:
+- [Ramping up: configure Compliance Manager to manage your compliance activities.](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - Building and managing your first assessment
     - Performing implementation and testing work on improvement actions to complete controls in your assessments
     - Understanding how different actions impact your compliance score
-- [Scaling up: use advanced functaionality to meet your custom needs.](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs) Topics include:
+- [Scaling up: use advanced functionality to meet your custom needs.](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
     - Creating your custom assessments to track non-Microsoft 365 products
     - Modifying existing templates to add or remove controls
     - Setting up automated testing of improvement actions
 
 ## How your compliance score is calculated
 
-Your compliance score is calculated based on a combination of Microsoft and customer-managed control implementations, as explained in more detail in the [compliance score calculation article](../compliance/compliance-score-calculation.md).
+Your compliance score is calculated based on a combination of Microsoft and customer-managed control implementations. See [compliance score calculation](../compliance/compliance-score-calculation.md) for a detailed explanation.
 
 Controls are assigned a score value based on whether they're mandatory or discretionary, and whether they're preventative, detective, or corrective. These collectively represent the risk of not implementing it relative to other controls.
 
 As presented in the compliance score calculation article, preventative controls get a higher score than detective and corrective ones, and mandatory controls get a higher score than discretionary ones.
 
-Note that the Compliance Score admin UI does not list these parameters, nor does it provide the ability to filter by them. However, if you download the associated template from  Compliance Manager, the resulting data set does list these parameters for most regulations.
+The Compliance Score admin UI does not list these parameters, nor does it provide the ability to filter by them. However, if you download the associated template from  Compliance Manager, the resulting data set does list these parameters for most regulations.
 
 For technical controls, Compliance Manager automatically updates the improvement action score once the action has been successfully implemented and tested. Other, non-technical control actions&mdash;such as those that are operational or related to documentation&mdash;need to be recorded manually as implemented before points count toward your score.
 
