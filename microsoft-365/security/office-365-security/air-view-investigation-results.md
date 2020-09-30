@@ -266,6 +266,6 @@ You can:
 
 ## Next steps
 
-- [Review and approve pending actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
+- [Review and approve pending actions](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-action)
 
 - [Learn about automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
