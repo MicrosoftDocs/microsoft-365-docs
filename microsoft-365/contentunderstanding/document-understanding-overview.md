@@ -34,8 +34,7 @@ You can use example files to train and test your classifiers and extractors in y
 
 After publishing your model, use the content center to apply it to any SharePoint document library that you have access to.  
 
-> [!NOTE]
-> See the [SharePoint Syntex adoption: Get started guide](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#document-understanding-scenario-example) for more information about document understanding scenario examples.
+
 
 ## See Also
 [Create a classifier](create-a-classifier.md)

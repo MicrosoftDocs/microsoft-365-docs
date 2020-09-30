@@ -36,9 +36,6 @@ The resources in this section help you learn more about the two methods used by 
 
 Learn more about how to use and implement SharePoint Syntex in your organization to help you solve your business problems.
 
-|**If you're looking for this information:**|**Go to this resource:**|
-|:-----|:-----|
-|Learn how to start your planning to use SharePoint Syntex. |[SharePoint Syntex adoption: get started](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted)<br><br>|  
 
 
 ## Set up SharePoint Syntex
