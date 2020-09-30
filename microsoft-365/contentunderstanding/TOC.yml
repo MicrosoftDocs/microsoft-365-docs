@@ -1,4 +1,4 @@
-    - name: Get started with content understanding
+    - name: Get started with Microsoft SharePoint Syntex
       items: 
         - name: Introduction to Microsoft SharePoint Syntex
           href: microsoft-sharepoint-syntex-overview.md
@@ -16,7 +16,7 @@
           href: create-a-classifier.md
         - name: Create an extractor
           href: create-an-extractor.md
-        - name: Explanation types overview 
+        - name: Explanation types 
           href: explanation-types-overview.md
         - name: Apply a model
           href: apply-a-model.md
@@ -26,7 +26,13 @@
           href: apply-a-retention-label-to-a-model.md
         - name: Model usage analytics
           href: model-usage-analytics.md
-
+        - name: Leverage term store taxonomy when creating an extractor
+          href: leverage-term-store-taxonomy.md
+    
+    - name: Adoption
+      items:
+        - name: Get started with adoption
+          href: adoption-getstarted.md
 
     - name: Setup and administration
       items:

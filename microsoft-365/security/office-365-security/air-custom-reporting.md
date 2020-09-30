@@ -1,6 +1,6 @@
 ---
 title: "Using custom reporting solutions with automated investigation and response"
-keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
+keywords: SIEM, API, AIR, autoIR, ATP, automated investigation, integration, custom report
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,6 +15,9 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: "Learn how to integrate automated investigation and response with a custom or third-party reporting solution."
+ms.date: 09/29/2020
+ms.custom: 
+- air
 ---
 
 # Use the Management Activity API for custom or third-party reporting solutions
@@ -22,7 +25,7 @@ description: "Learn how to integrate automated investigation and response with a
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-With [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp), you get [detailed information about automated investigations](air-view-investigation-results.md). However, some organizations also use a custom or third-party reporting solution. If your organization wants to integrate information about automated investigations with such a solution, you can use the Office 365 Management Activity API.
+With [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp), you get [detailed information about automated investigations](air-view-investigation-results.md). However, some organizations also use a custom or third-party reporting solution. If your organization wants to integrate information about automated investigations with such a solution, you can use the Office 365 Management Activity API.
 
 Use the following resources to set this up:
 
@@ -36,8 +39,8 @@ Use the following resources to set this up:
 |[Office 365 Management Activity API schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)|Get an overview of the [Common schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) and the [Office 365 ATP and threat investigation and response schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) to learn about specific kinds of data available through the Office 365 Management Activity API.|
 |
 
-## Related articles
+## See also
 
-- [Office 365 Advanced Threat Protection](office-365-atp.md)
+- [Microsoft Defender for Office 365](office-365-atp.md)
 
-- [Learn about automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Automated investigation and response in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
