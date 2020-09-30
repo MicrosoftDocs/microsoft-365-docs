@@ -653,7 +653,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/how-atp-safe-attachments-works.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-safe-links-for-Teams.md",
@@ -662,18 +662,18 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-safe-links-warning-pages.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe links#warning-pages-from-safe-links",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links#warning-pages-from-safe-links",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/security/office-365-security/how-atp-safe-links-works.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe links",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/security/office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links#do-not-rewrite-the-following-urls-lists-in-safe-links-policies",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/malicious-files-detected-in-spo-odb-or-teams.md",

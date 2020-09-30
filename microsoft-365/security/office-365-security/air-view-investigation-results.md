@@ -242,7 +242,7 @@ You can:
 |Outbound malware and spam anomaly investigation|Detect intra-org and outbound malware, phish, or spam originating from users in your organization|
 |Sender domain investigation|On-demand check of domain reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources|
 |Sender IP investigation| On-demand check of IP reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources|
-|URL clicks investigation| Investigate clicks  from users protected by [Office 365 ATP Safe Links](atp-safe-links.md) in your organization|
+|URL clicks investigation| Investigate clicks from users protected by [Safe Links in Office 365 ATP](atp-safe-links.md) in your organization|
 |URL reputation investigation|On-demand check on URL reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources|
 |User activity investigation|Analyze user activity anomalies in [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|
 |User-reported emails indicators extraction|Extract indicators from the header, body, and content of [user-reported email](enable-the-report-message-add-in.md) for investigation|
