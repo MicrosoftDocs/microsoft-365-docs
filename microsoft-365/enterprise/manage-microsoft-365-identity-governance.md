@@ -28,7 +28,7 @@ description: "Learn about how to use Microsoft 365 identity governance features.
 
 Identity governance is all about protecting, monitoring, and auditing access to critical assets while ensuring employee productivity. For example, with identity governance, you can ensure that the right users have the right access to the right resources and determine if that access changes over time.
 
-See [this article](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) for more information about identity governance for Azure Active Directory (Azure AD).
+For more information, See this [overview of identity governance for Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview).
 
 ## Set up Azure AD access reviews
 
@@ -40,7 +40,7 @@ Azure AD access reviews allow you to review a user's access to ensure only the r
 
 This is especially important if your organization is subject to security audits to determine if user accounts have too much access, which could result in fines if in violation of industry or regional regulations.
 
-See [this article](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) for more information about Azure AD access reviews.
+For more information, see the [overview of access reviews](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview).
 
 Azure AD Privileged Identity Management (PIM) provides additional controls tailored to securing access rights for resources, across Azure AD, Azure, and other Microsoft cloud service. Azure AD PIM provides a comprehensive set of governance controls to help secure your company's resources such as directory, Office 365, and Azure resource roles. As with other forms of access, organizations can use access reviews to configure recurring access recertification for all users in administrator roles. Azure AD PIM is only available with the E5 version of Microsoft 365 Enterprise.
 
@@ -58,4 +58,4 @@ Your employees need access to various groups, applications, and sites to perform
 
 Azure AD entitlement management can help you more efficiently manage access to groups, applications, and SharePoint sites for internal and outside users.
  
-For more information, see [this overview of Azure AD entitlement management](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview).
+For more information, see the [overview of Azure AD entitlement management](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview).

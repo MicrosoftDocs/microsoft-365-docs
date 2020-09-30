@@ -138,5 +138,5 @@ Directory synchronization is required for the following features and functionali
 
 ## Next step
 
-When you are ready to deploy hybrid identity, see [prepare to provision users](prepare-for-directory-synchronization.md).
+When you are ready to deploy hybrid identity, see [prepare for directory synchronization](prepare-for-directory-synchronization.md).
   

@@ -25,9 +25,9 @@ To increase the security of user sign-ins:
 - Use Azure Active Directory (Azure AD) Password Protection
 - Use multi-factor authentication (MFA)
 - Deploy identity and device access configurations
-- Protect against credential compromise
+- Protect against credential compromise with Azure AD Identity Protection
 
-## Use Windows Hello for Business
+## Windows Hello for Business
 
 Windows Hello for Business in Windows 10 Enterprise replaces passwords with strong two-factor authentication when signing on a Windows device. The two factors are a new type of user credential that is tied to a device and a biometric or PIN.
 
@@ -67,7 +67,7 @@ Users have 14 days to register for MFA with the Microsoft Authenticator app from
 
 Security defaults ensure that all organizations have a basic level of security for user sign-in that is enabled by default. You can disable security defaults in favor of MFA with Conditional Access policies or for individual accounts.
 
-For more information, see this [overview of security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+For more information, see the [overview of security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 ### Conditional Access policies
 
@@ -81,7 +81,7 @@ You can also use Conditional Access policies for more advanced capabilities, suc
 
 Conditional Access requires Azure AD Premium P1 licenses, which are included with Microsoft 365 E3 and E5.
 
-For more information, see this [overview of Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+For more information, see the [overview of Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### Using these methods together
 
@@ -118,7 +118,7 @@ These tiers and their corresponding configurations provide consistent levels of 
 
 Microsoft highly recommends configuring and rolling out identity and device access policies in your organization, including specific settings for Microsoft Teams, Exchange Online, and SharePoint. For more information, see [Identity and device access configurations](microsoft-365-policies-configurations.md).
 
-## Protect against credential compromise
+## Azure AD Identity Protection
 
 In this section, you'll learn how to configure policies that protect against credential compromise, where an attacker determines a user’s account name and password to gain access to an organization’s cloud services and data. Azure AD Identity Protection provides a number of ways to help prevent an attacker from compromising a user account's credentials.
 
@@ -143,3 +143,6 @@ See the [steps to enable Azure AD Identity Protection](https://docs.microsoft.co
 - [Configure the Azure Multi-Factor Authentication registration policy](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [Identity and device access configurations](microsoft-365-policies-configurations.md)
 
+## Next step
+
+[Manage your user accounts](manage-microsoft-365-accounts.md)

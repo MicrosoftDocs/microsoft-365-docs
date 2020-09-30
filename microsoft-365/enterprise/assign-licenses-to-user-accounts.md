@@ -44,7 +44,7 @@ To assign Microsoft 365 licenses to individual user accounts, you can use:
 
 - [The Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
 - [PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
-- The Azure AD portal
+- The Azure AD admin center
 
 ## Group-based licensing
 

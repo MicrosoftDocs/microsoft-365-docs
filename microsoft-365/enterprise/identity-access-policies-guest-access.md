@@ -55,21 +55,11 @@ Microsoft Teams defines the following:
 
 - **External access** is for an external user that does not have a B2B account. External access can include invitations and participation in calls, chats, and meetings, but does not include team membership and access to the resources of the team.
 
-For more information, see [this comparison between guest and external access for teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
+For more information, see the [comparison between guest and external access for teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
 
 Conditional Access policies only apply to guest access in Teams because there is a corresponding Azure AD B2B account.
 
 See [Policy recommendations for securing Teams chats, groups, and files](teams-access-policies.md) for more information about securing identity and device access policies for Teams.
-
-<!--
-ount treats guest and external users that have an Azure AD B2B account differently than external access  .
-
-
-to a meeting, call, or chat with
-
-
-differentiates between guest users and external users within the app. Guest users have Azure AD B2B accounts and can be added to teams. External users can only participate in calls, chats, and meetings. 
---> 
 
 ### Require MFA always for guest and external users
 This policy prompts guests to register for MFA in your tenant, regardless of whether they're registered for MFA in their home tenant. When accessing resources in your tenant, guest and external users are required to use MFA for every request. 

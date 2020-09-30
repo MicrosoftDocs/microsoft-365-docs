@@ -33,6 +33,8 @@ Microsoft 365 uses Azure Active Directory (Azure AD), a cloud-based user identit
 
 Before you begin, watch this video for an overview of identity models and authentication for Microsoft 365.
 
+<p> </p>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
 Your first planning choice is the Microsoft 365 identity model.
