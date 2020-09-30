@@ -495,36 +495,36 @@
               href: ./office-365-security/walkthrough-spoof-intelligence-insight.md
         - name: Respond
           items: 
-            - name: Recover from a ransomware attack
-              href: ./office-365-security/recover-from-ransomware.md
-            - name: Tune anti-phishing protection
-              href: ./office-365-security/tuning-anti-phishing.md
-            - name: Remove blocked users from the Restricted Users portal
-              href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
-            - name: Use the delist portal to remove yourself from the blocked senders list
-              href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-            - name: Manage quarantined messages and files as an admin
-              href: ./office-365-security/manage-quarantined-messages-and-files.md
-            - name: Find and release quarantined messages as a user
-              href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
-            - name: Review and approve (or reject) pending actions
-              href: ./office-365-security/air-review-approve-pending-completed-actions.md
-            - name: Handle false positives/negatives
-              href: ./office-365-security/air-report-false-positives-negatives.md
-            - name: Remediate malicious email
-              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
             - name: Detect and address compromised user accounts quickly
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: Responding to a Compromised Email Account in Office 365
-              href: ./office-365-security/responding-to-a-compromised-email-account.md
-            - name: Fix possible mail loop insight
-              href: ./office-365-security/mfi-mail-loop-insight.md
-            - name: Fix slow mail flow rules insight
-              href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
             - name: Detect and Remediate Illicit Consent Grants in Office 365
               href: ./office-365-security/detect-and-remediate-illicit-consent-grants.md
             - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
               href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
+            - name: Handle false positives/negatives
+              href: ./office-365-security/air-report-false-positives-negatives.md
+            - name: Recover from a ransomware attack
+              href: ./office-365-security/recover-from-ransomware.md
+            - name: Remediate malicious email
+              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
+            - name: Responding to a Compromised Email Account in Office 365
+              href: ./office-365-security/responding-to-a-compromised-email-account.md
+            - name: Review and approve (or reject) pending actions
+              href: ./office-365-security/air-review-approve-pending-completed-actions.md
+            - name: Tune anti-phishing protection
+              href: ./office-365-security/tuning-anti-phishing.md
+            - name: Find and release quarantined messages as a user
+              href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
+            - name: Fix possible mail loop insight
+              href: ./office-365-security/mfi-mail-loop-insight.md
+            - name: Fix slow mail flow rules insight
+              href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+            - name: Manage quarantined messages and files as an admin
+              href: ./office-365-security/manage-quarantined-messages-and-files.md
+            - name: Remove blocked users from the Restricted Users portal
+              href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
+            - name: Use the delist portal to remove yourself from the blocked senders list
+              href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
         - name: FAQ
           items: 
             - name: Delegated administration FAQ
