@@ -1,5 +1,5 @@
 ---
-title: Office 365 Security
+title: Office 365 Security, Office 365 ATP, EOP, ATP, MSDO
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -17,7 +17,7 @@ ms.collection:
 description: "Security in Office 365, from EOP to ATP Plans 1 and 2, Standard vs. Strict security configurations, and more, so that you can understand what you have, and how to secure your properties."
 ---
 
-# Office 365 Security outline
+# Office 365 Security overview
 
 This article will introduce you to your new security properties in the Cloud. Whether you're part of a Security Operations Center, you're a Security Administrator new to the space, or you want a refresher, let's get started.
 
