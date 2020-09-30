@@ -1,6 +1,6 @@
     - name: Get started with Microsoft SharePoint Syntex
       items: 
-        - name: Introduction to Microsoft SharePoint Syntex
+        - name: Introduction to SharePoint Syntex
           href: microsoft-sharepoint-syntex-overview.md
         - name: Document understanding overview
           href: document-understanding-overview.md
