@@ -6,20 +6,19 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: 
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+search.appverid: MET150
+localization_priority: Priority
 description: "Set up content understanding in Project Cortex"
 ---
 
 # Set up SharePoint Syntex
 
-Admins can use the Microsoft 365 admin center to set up and Microsoft SharePoint Syntex. 
+Admins can use the Microsoft 365 admin center to set up [Microsoft SharePoint Syntex](document-understanding-overview.md). 
 
 Consider the following before you start:
 
 - Which SharePoint sites will you enable form processing? All of them, some, or select sites?
-- What will you name of your content center, and who is the primary site admin?
+- What will you name of your default content center?
 
 You can change your settings after initial setup in the Microsoft 365 admin center.
 
@@ -45,7 +44,7 @@ As an admin, you can also make changes to your selected settings anytime after s
 
     ![Organizational knowledge setup page](../media/content-understanding/admin-org-knowledge-options.png)</br>
 
-3. On the **Automate SharePoint Syntex** page, click **Get started** to walk through the setup process.<br/>
+3. On the **Automate content understanding** page, click **Get started** to walk through the setup process.<br/>
 
     ![Begin setup](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
@@ -53,16 +52,17 @@ As an admin, you can also make changes to your selected settings anytime after s
 
     ![Screenshot of image tagging options](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
 
-5. On the **Configure Form Processing** page, you can choose if you want to let users be able to use AI Builder to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
+5. On the **Configure Form Processing** page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
      For **Which SharePoint libraries should show option to create a form processing model**, you can select:</br>
       - **All SharePoint libraries** to make it available to all SharePoint libraries in your organization.</br>
-      - **Only libraries in selected sites**, and then select the sites in which you want to make it available.</br>
+      - **Only libraries in selected sites**, and then select the sites in which you want to make it available or upload a list of up to 50 sites.</br>
+      - **No SharePoint libraries** if you don't want to make it available to any sites (you can change this after setup).
 
    ![Configure form processing](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
-   > Enabling this setting on a SharePoint document library does not affect existing models applied to the library or the ability to apply document understanding models to a library. 
+   > Removing a site after it has been included does not affect existing models applied to the libraries in that site or the ability to apply document understanding models to a library. 
     
 6. On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models. </br>
     a. For **Site name**, type the name you want to give your content center site.</br>
@@ -80,7 +80,7 @@ As an admin, you can also make changes to your selected settings anytime after s
 
 ## Assign licenses
 
-Once you have configured SharePoint Syntex, you must assign licenses for the users who will be using form processing and document understanding features.
+Once you have configured SharePoint Syntex, you must assign licenses for the users who will be using any SharePoint Syntex features.
 
 To assign licenses:
 
