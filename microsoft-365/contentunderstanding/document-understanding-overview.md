@@ -30,7 +30,7 @@ Add *classifiers* and *extractors* to your document understanding models to do t
 
 - Extractors pull information from these documents. For example, for all contract renewal documents identified in your document library, columns display in your view that also show the *Service Start Date* and  *Client* for each contract renewal document. 
 
-You can use sample files to train and test your classifiers and extractors in your model. Sample files provide your model examples of what to look for when trying to identify and extract data from files. For example, you would train your contract renewal classifiers and extractors with samples of contract renewal documents your company works with. You can also use sample files to test the effectiveness of your model.
+You can use example files to train and test your classifiers and extractors in your model. Example files provide your model examples of what to look for when trying to identify and extract data from files. For example, you would train your contract renewal classifiers and extractors with examples of contract renewal documents your company works with. You can also use example files to test the effectiveness of your model.
 
 After publishing your model, use the content center to apply it to any SharePoint document library that you have access to.  
 

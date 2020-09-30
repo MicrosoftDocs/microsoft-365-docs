@@ -1,4 +1,4 @@
-    - name: Get started with content understanding
+    - name: Get started with Microsoft SharePoint Syntex
       items: 
         - name: Introduction to Microsoft SharePoint Syntex
           href: microsoft-sharepoint-syntex-overview.md
@@ -16,7 +16,7 @@
           href: create-a-classifier.md
         - name: Create an extractor
           href: create-an-extractor.md
-        - name: Explanation types overview 
+        - name: Explanation types 
           href: explanation-types-overview.md
         - name: Apply a model
           href: apply-a-model.md

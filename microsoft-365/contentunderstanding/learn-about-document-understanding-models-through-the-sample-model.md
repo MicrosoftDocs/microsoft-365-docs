@@ -24,7 +24,7 @@ To access the sample model, you need to first import the model to your content c
 
     ![Import sample model](../media/content-understanding/import-sample-model.png) </br>
 
-3. When the import completes, the **BenefitsChangeNotice** model home page will open. </br>
+3. When the import completes, the **BenefitsChangeNotice** model home page will open. If you need to open the sample model in the future, you can do this from the models list in the content center. </br>
 
      ![Sample home page](../media/content-understanding/sample-home-page.png)</br>
 

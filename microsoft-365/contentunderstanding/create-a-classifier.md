@@ -66,7 +66,7 @@ On the model home page, add your examples files you will need to help train the 
 </br>
 
 > [!NOTE]
-> You should use the same files for both classifier and [extractor training](create-an-extractor.md). You always have the option to add more later, but typically you add a full set of sample files. Label some to train your model, and test the remaining unlabeled ones to evaluate model fitness. 
+> You should use the same files for both classifier and [extractor training](create-an-extractor.md). You always have the option to add more later, but typically you add a full set of example files. Label some to train your model, and test the remaining unlabeled ones to evaluate model fitness. 
 
 For your training set, you want to use both positive and negative examples:
 - Positive example: Documents that represent the document type. These contain strings and information that would always be in this type of document.
@@ -76,8 +76,8 @@ Be sure to use at least five positive examples and at least one negative example
 
 To add example files:
 
-1. From the model home page, in the **Build sample library** tile, click **Add files**.
-2. On the **Select sample files for your model** page, select your example files from the Sample files library in the Content Center. If you had not already uploaded them there, choose to upload them now by clicking **Upload** to move them the Sample file library.
+1. On the model home page, in the **Add example files** tile, click **Add files**.
+2. On the **Select example files for your model** page, select your example files from the Training files library in the content center. If you had not already uploaded them there, choose to upload them now by clicking **Upload** to copy them to the Training files library.
 3. After selecting your example files to use to train the model, click **Add**.
 
     ![Select example files](../media/content-understanding/select-sample.png) 
