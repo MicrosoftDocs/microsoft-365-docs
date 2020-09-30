@@ -79,7 +79,7 @@ In the **Enrollment Status Page** section, select **Create Profile** and create 
 
 Review the settings for your multiple enrollment status page profiles and ensure that any that have **Show app and profile installation progress** set to **Yes** don't have an assignment or priority that would mean they apply to Microsoft Managed Desktop devices.
 
-For more information, see [Set up the Enrollment Status Page](https://docs.microsoft.com/en-au/mem/intune/enrollment/windows-enrollment-status).
+For more information, see [Set up the Enrollment Status Page](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
 
 
 ### Autopilot profile
