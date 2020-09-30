@@ -51,4 +51,4 @@ Or the subscriptions that include some, or all of the previous standalone plans.
 
 - **Microsoft 365 for enterprise** subscriptions include Microsoft Intune and E5 also includes the Azure AD premium plans 1 and 2.
 
-    Microsoft 365 E5 offers the highest level of security and threat protection of all the Microsoft 365 subscriptions. For more information, see [Microsoft 365 for enterprise overview](../../enterprise/microsoft-365-overview.md)
+    Microsoft 365 E5 offers the highest level of security and threat protection of all the Microsoft 365 subscriptions. For more information, see [Microsoft 365 for enterprise overview](../../enterprise/microsoft-365-overview.md).
