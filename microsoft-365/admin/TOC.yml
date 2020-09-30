@@ -284,7 +284,9 @@
       href: devices/index.yml
       items:
         - name: Decide which method to use 
-          href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+          href: devices/choose-device-security.md
+        - name: Microsoft Intune documentation
+          href: https://docs.microsoft.com/mem/intune/
         - name: Microsoft 365 Business Premium
           items:
             - name: View and edit policies and devices
@@ -319,8 +321,14 @@
                   href: ../business/create-and-edit-autopilot-devices.md
                 - name: AutoPilot Profile settings
                   href: ../business/autopilot-profile-settings.md
+        - name: Microsoft 365 for enterprise documentation
+          href: ../../enterprise/index.yml
         - name: Basic Mobility and Security
           items:
+            - name: Overview of Basic Mobility and Security
+              href: basic-mobility-security/overview.md
+            - name: Compare Basic Mobility and Security and Intune
+              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
             - name: Basic Mobility and Security FAQ
               href: basic-mobility-security/frequently-asked-questions.md
             - name: Capabilities of Basic Mobility and Security
