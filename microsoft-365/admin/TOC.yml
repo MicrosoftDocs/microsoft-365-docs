@@ -280,10 +280,10 @@
           href: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
-    - name: Manage devices
+    - name: Manage devices and app data
       href: devices/index.yml
       items:
-        - name: Decide which method to use 
+        - name: Device and app data protection methods 
           href: devices/choose-device-security.md
         - name: Microsoft Intune documentation
           href: https://docs.microsoft.com/mem/intune/
@@ -322,7 +322,7 @@
                 - name: AutoPilot Profile settings
                   href: ../business/autopilot-profile-settings.md
         - name: Microsoft 365 for enterprise documentation
-          href: ../../enterprise/index.yml
+          href: ../../../enterprise/index.yml
         - name: Basic Mobility and Security
           items:
             - name: Overview of Basic Mobility and Security
