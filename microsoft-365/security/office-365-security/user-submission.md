@@ -41,7 +41,7 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
 Use the following articles to set up the prerequisites required for your custom mailbox:
 
-- Mark messages going to this folder so they'll skip spam filtering. See [Use the EAC to create a mail flow rule that sets the SCL of a message](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to create an exchange mail flow rule to set the spam confidence level to **-1**.
+- Set the spam confidence level for messages going to this folder so they'll skip spam filtering. See [Use the EAC to create a mail flow rule that sets the SCL of a message](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to create an exchange mail flow rule to set the spam confidence level to **-1**.
 
 - Turn off scanning attachments for malware for messages going to this folder. Use [Set up (or edit) an ATP Safe Attachments policy](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide#step-2-set-up-or-edit-an-atp-safe-attachments-policy) to set the Safe Attachments policy to **Off**.
 
