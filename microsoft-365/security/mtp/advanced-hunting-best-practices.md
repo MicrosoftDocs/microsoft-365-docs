@@ -21,12 +21,20 @@ ms.topic: article
 
 # Advanced hunting query best practices
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 
 Apply these recommendations to get results faster and avoid timeouts while running complex queries. For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## General guidance
+## Understand CPU resource limits
+Depending on its size, each tenant has access to a set amount of CPU resources allocated for running advanced hunting queries. For detailed information about various service limits, [read about advanced hunting limits](advanced-hunting-limits.md).
+
+Customers who run multiple queries regularly should track consumption and apply the optimization guidance in this article to minimize disruption resulting from exceeding the limits.
+
+## General optimization tips
 
 - **Size new queries**—If you suspect that a query will return a large result set, assess it first using the [count operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator). Use [limit](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) or its synonym `take` to avoid large result sets.
 - **Apply filters early**—Apply time filters and other filters to reduce the data set, especially before using transformation and parsing functions, such as [substring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction), [replace()](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction), [trim()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction), [toupper()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction), or [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). In the example below, the parsing function [extractjson()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) is used after filtering operators have reduced the number of records.
@@ -250,9 +258,7 @@ To learn about all supported parsing functions, [read about Kusto string functio
 
 ## Related topics
 - [Kusto query language documentation](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
+- [Service limits](advanced-hunting-limits.md)
+- [Handle advanced hunting errors](advanced-hunting-errors.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
-- [Work with query results](advanced-hunting-query-results.md)
-- [Use shared queries](advanced-hunting-shared-queries.md)
-- [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
-- [Understand the schema](advanced-hunting-schema-tables.md)

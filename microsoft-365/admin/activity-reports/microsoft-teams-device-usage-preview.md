@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Microsoft Teams device usage"
+title: "Microsoft Teams device usage"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -43,7 +43,7 @@ Select **Choose columns** to add or remove columns from the report.  <br/> ![Tea
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
   
-|||
+|Item|Description|
 |:-----|:-----|
 |**Metric**|**Definition**|
 |User name  <br/> |The display name of the user. You can click the display name to go to the user's setting page in the Microsoft Teams admin center.  <br/> |

@@ -22,6 +22,9 @@ ms.custom: seo-marvel-apr2020
 
 # Protect against threats
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Here's a quick-start guide that breaks the configuration of Advanced Threat Protection into chunks. If you're new to threat protection features in Office 365, not sure where to begin, or if you learn best by *doing*, use this guidance as a checklist and a starting point.
 
 > [!IMPORTANT]
@@ -262,9 +265,10 @@ To learn more about alerts, see [Create activity alerts in the Security & Compli
 > [!NOTE]
 > When you're finished configuring, use these links to start workload investigations:
 >
-> - [View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
-> - [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
-> - [Manage quarantined messages and files as an administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
+>- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+>- [Use the Security & Compliance Center to manage quarantined files](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files)
+>- [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+>- [Manage quarantined messages and files as an administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
 
 ## Part 6 - Additional settings to configure
 

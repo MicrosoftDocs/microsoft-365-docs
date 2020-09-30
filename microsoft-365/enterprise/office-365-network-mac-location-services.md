@@ -3,7 +3,7 @@ title: "Microsoft 365 Network Connectivity Location Services (preview)"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -33,3 +33,13 @@ In the Microsoft 365 Admin Center, Bing map controls are used to show where orga
 Any content provided through Bing Maps, including geocodes, can only be used within the product through which the content is provided. Customer's use of the Microsoft 365 Admin Center Location Services feature, powered by Bing Maps, is governed by the _Bing Maps End User Terms of Use_ available at <https://go.microsoft.com/?linkid=9710837> and the _Microsoft Privacy Statement_ available at <https://go.microsoft.com/fwlink/?LinkID=248686.>
 
 This feature, provided through Bing Maps, is also supported by **Here Technologies**. How Bing Maps leverages location services provided by Here Technologies is governed by the _Here Technologies Service Terms_ available at <https://legal.here.com/en-gb/terms>.
+
+## Related topics
+
+[Network connectivity in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
+
+[Microsoft 365 network performance insights (preview)](office-365-network-mac-perf-insights.md)
+
+[Microsoft 365 network assessment (preview)](office-365-network-mac-perf-score.md)
+
+[Microsoft 365 connectivity test in the M365 Admin Center (preview)](office-365-network-mac-perf-onboarding-tool.md)

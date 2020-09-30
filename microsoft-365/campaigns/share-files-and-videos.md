@@ -2,7 +2,7 @@
 title: "Share files and videos"
 f1.keywords:
 - NOCSH
-ms.author: stevhord
+ms.author: twerner
 author: twerner
 manager: scotv
 ms.audience: Admin

@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Administrators can set up a data connector to import and archive data from the Bloomberg Message email tool into Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive Bloomberg Message data (preview)
+# Set up a connector to archive Bloomberg Message data
 
 Use a data connector in the Microsoft 365 compliance center to import and archive financial services email data from the [Bloomberg Message](https://www.bloomberg.com/professional/product/collaboration/) collaboration tool. After you set up and configure a connector, it connects to your organization's Bloomberg secure FTP (SFTP) site once every day, and imports email items to mailboxes in Microsoft 365.
 

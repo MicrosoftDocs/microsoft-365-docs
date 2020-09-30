@@ -20,6 +20,9 @@ description: "Admins can view frequently asked questions and answers about anti-
 
 # Anti-spoofing protection FAQ
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 This article provides frequently asked questions and answers about anti-spoofing protection for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
 
 For questions and answers about anti-spam protection, see [Anti-spam protection FAQ](anti-spam-protection-faq.md).
