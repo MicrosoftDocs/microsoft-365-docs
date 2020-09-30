@@ -33,7 +33,7 @@ Before you get started you should set up your DLP settings which are applied to 
 
 Or
 
-- If you what to exclude noisy file paths from monitoring
+- If you want to exclude noisy file paths from monitoring
 
 ![DLP settings](../media/endpoint-dlp-1-using-dlp-settings.png)
 
