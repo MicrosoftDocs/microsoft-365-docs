@@ -3,21 +3,17 @@ title: "Explanation types"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+localization_priority: Priority
 description: "Learn more about explanation types in Microsoft SharePoint Syntex"
 ---
 
 # Introduction to explanation types
 
-Use explanations to help to define the information that you want to label, and extract in your document the understanding models for Microsoft SharePoint Syntex. When you create an explanation, be sure to select an explanation type. 
-
-This article helps you understand the different explanation types and how they are used.
+Explanations are used to help to define the information you want to label and extract in your document understanding models in Microsoft SharePoint Syntex. When creating an explanation, you need to select an explanation type. This article will help you learn more to better understand the different explanation types and how they are used. 
 
    ![Explanation types](../media/content-understanding/explanation-types.png) 
    
@@ -27,7 +23,7 @@ These explanation types are available:
 
 - **Pattern list**: List patterns of numbers, letters, or other characters that you can use to identify the information that you are extracting. For example, you can extract the **Phone number** of the referring doctor from all Medical Referral document that you are identifying.</br>
 
-- **Proximity**: Describes how close explanations are to each other. For example, a *street number* pattern list goes right before the *street name* phrase list, with no tokens in between (you'll learn about tokens later in this article). 
+- **Proximity**: Describes how close explanations are to each other. For example, a *street number* pattern list goes right before the *street name* phrase list, with no tokens in between (you'll learn about tokens later in this article). Using the proximity type requires you to have at least two explanations in your model, or the option will be disabled. 
  
 ## Phrase list
 
@@ -122,11 +118,11 @@ Configure the proximity setting to have a range of 0 through 3.
 
    ![Proximity example](../media/content-understanding/proximity-example.png)</br>
 
-## Use the explanation library
+## Use explanation templates
 
-While you can manually add various pattern list values for your explanation, it's much easier to use the pre-created templates provided to you in the explanation library.
+While you can manually add various pattern list values for your explanation, it can be much easier to use the pre-created templates provided to you in the explanation library.
 
-For example, instead of manually adding all the variations for *Date*, use the pattern list template for *Date*, that already includes a number of pattern lists values:</br>
+For example, instead of manually adding all the variations for *Date*, you can use the pattern list template for *Date*, that already includes a number of pattern lists values:</br>
 
    ![Explanation library](../media/content-understanding/explanation-template.png)</br>
  
