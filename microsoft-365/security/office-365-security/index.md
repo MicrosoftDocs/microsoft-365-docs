@@ -138,11 +138,14 @@ This quick-reference will help you understand what capabilities come with each A
 
 ## Where to go next
 
-You may need to configure DKIM or DMARC for your mail, or you may be looking for what's new in the product. Here are some additional recommendations for what to look at next.
+If you're a Security Admin, you may need to configure DKIM or DMARC for your mail, roll out 'Strict' security presets for your priority users, or you may be looking for what's new in the product. If you're with Security Ops, you may want to leverage Real-time detections or Threat Explorer to investigate and respond, or train end-user detection with Attack Simulator. Here are some additional recommendations for what to look at next.
 
 [Email Authentication, including SPF, DKIM, and DMARC (with links to setup of all three)](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication?view=o365-worldwide)
 
-[What's new in Office 365 ATP (including EOP developments)](https://docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?view=o365-worldwide)
+[See the specific recommended 'golden' configs](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) and [use their recommended presets to configure security policies quickly](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/preset-security-policies?view=o365-worldwide)
+
+Catch up on [what's new in Office 365 ATP (including EOP developments)](https://docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?view=o365-worldwide)
 
 [Use Threat Explorer or Real-time detections](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-explorer?view=o365-worldwide)
 
+Use [Attack Simulator in Office 365 ATP](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/attack-simulator?view=o365-worldwide)
