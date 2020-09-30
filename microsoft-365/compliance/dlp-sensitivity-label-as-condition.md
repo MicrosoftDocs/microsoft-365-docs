@@ -54,7 +54,7 @@ You can use sensitivity labels as conditions on these items and in these scenari
 
 \* DLP detection of sensitivity labels on emails are supported. DLP detection of sensitivity labeled email attachments are not.
 
-\** Attachments sent in Teams over 1:1 chat or channels are automatically uploaded to One drive for business and SharePoint. So if SharePoint Online or One Drive for Business are included as locations in your DLP policy, then labeled attachments sent in Teams will be automatically included in the scope of this condition. Teams as a location does not need to be selected in the DLP policy.
+\** Attachments sent in Teams over 1:1 chat or channels are automatically uploaded to OneDrive for Business and SharePoint. So if SharePoint Online or OneDrive for Business are included as locations in your DLP policy, then labeled attachments sent in Teams will be automatically included in the scope of this condition. Teams as a location does not need to be selected in the DLP policy.
 
 ### Supported scenarios
 
