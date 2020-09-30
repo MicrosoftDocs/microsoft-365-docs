@@ -28,6 +28,11 @@
           href: model-usage-analytics.md
         - name: Leverage term store taxonomy when creating an extractor
           href: leverage-term-store-taxonomy.md
+    
+    - name: Adoption
+      items:
+        - name: Get started with Adoption
+          href: adoption-get-started
 
     - name: Setup and administration
       items:
