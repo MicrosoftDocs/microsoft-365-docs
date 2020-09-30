@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: "Learn about how to manage Microsoft 365 identity governance."
+description: "Learn about how to use Microsoft 365 identity governance features."
 ---
 
 # Manage Microsoft 365 identity governance
@@ -50,7 +50,12 @@ See these articles to configure different types of access reviews:
 - [Azure AD roles](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 - [Azure resource roles](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 
-
-<!--
 ## Set up Azure AD entitlement management
---> 
+
+Wiht Azure AD entitlement management, you can manage the identity and access lifecycle at scale by automating access request workflows, access assignments, reviews, and expiration.
+
+Your employees need access to various groups, applications, and sites to perform their job. Managing this access can be challenging because requirements change, new applications are added, or users need additional access rights. When you collaborate with other organizations, you may not know who in the other organization needs access to your organization's resources, and outside users won't know what applications, groups, or sites your organization is using.
+
+Azure AD entitlement management can help you more efficiently manage access to groups, applications, and SharePoint sites for internal and outside users.
+ 
+For more information, see [this overview of Azure AD entitlement management](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview).

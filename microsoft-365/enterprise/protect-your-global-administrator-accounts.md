@@ -3,7 +3,7 @@ title: "Protect your Microsoft 365 global administrator accounts"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/08/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -155,7 +155,7 @@ In this step, you'll enable privileged access management in your tenant and conf
 - Enabling privileged access
 - Creating approval policies
 
-Privileged access management enables your organization to operate with zero standing privileges and provide a layer of defense against vulnerabilities arising because of such standing administrative access. Privileged access requires approvals for executing any task that has an associated approval policy defined. Users needing to execute tasks included in the an approval policy must request and be granted access approval in order to have permissions necessary to execute tasks defined in the policy.
+Privileged access management enables your organization to operate with zero standing privileges and provide a layer of defense against vulnerabilities arising because of such standing administrative access. Privileged access requires approvals for executing any task that has an associated approval policy defined. Users needing to execute tasks included in the approval policy must request and be granted access approval.
 
 To enable privileged access management, see [Configure privileged access management](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
 

@@ -28,7 +28,7 @@ description: "Learn about how to manage Microsoft 365 user account passwords."
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can manage Microsoft 365 user account passwords in several different ways, depending on your identity configuration. You can manage user accounts in the [Microsoft 365 admin center](https://admin.microsoft.com), in Active Directory Domain Services (AD DS), or in the Azure Active Directory (Azure AD) portal.
+You can manage Microsoft 365 user account passwords in several different ways, depending on your identity configuration. You can manage user accounts in the [Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/add-users/), in Active Directory Domain Services (AD DS), or in the Azure Active Directory (Azure AD) portal.
 
 ## Plan for where and how you will manage your user account passwords
 
@@ -38,14 +38,14 @@ Where and how you can manage your user accounts depends on the identity model yo
 
 You manage user account passwords in:
 
-- [The Microsoft 365 admin center](../admin/add-users/reset-passwords.md)
+- [The Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/add-users/)
 - The Azure AD portal
     
 ### Hybrid
 
 With hybrid identity, passwords are stored in AD DS so you must use on-premises AD DS tools to manage user account passwords. Even when using Password Hash Synchronization (PHS), in which Azure AD stores a hashed version of the already hashed version in AD DS, you and users must manage their passwords in AD DS.
 
-With [password writeback](#pw_writeback), your users can change their AD DS through Azure AD.
+With [password writeback](#pw_writeback), your users can change their AD DS passwords through Azure AD.
 
 ## Prevent bad passwords
 
@@ -70,7 +70,7 @@ You configure Azure AD Seamless SSO with the Azure AD Connect tool. See the [ins
 <a name="pw_writeback"></a>
 ## Simplify password updates to AD DS
 
-In this section, you'll allow users to reset their passwords through Azure AD, which is then replicated to AD DS. This process is known as password writeback. With password writeback, users don’t need to update their passwords through the on-premises AD DS where user accounts and their attributes are stored. This is valuable to roaming or remote users who do not have a remote access connection to the on-premises network.
+With password writeback, you can allow users to reset their passwords through Azure AD, which is then replicated to AD DS. Users don’t need to access their on-premises AD DS to update their passwords. This is valuable to roaming or remote users who do not have a remote access connection to the on-premises network.
 
 Password writeback is required to fully utilize Azure AD Identity Protection capabilities, such as requiring users to change their on-premises passwords when there has been a high risk of account compromise detected.
 
@@ -85,3 +85,4 @@ For additional information and configuration instructions, see [Azure AD SSPR wi
 Self-service password reset (SSPR) allows users to reset or unlock their passwords or accounts. To alert you to misuse or abuse, you can use the detailed reporting that tracks when users access the system, along with notifications. You must enable [password writeback](#pw_writeback) before you can deploy password resets.
 
 See the [instructions to roll out password reset](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
+

@@ -26,7 +26,7 @@ description: "Learn how to manage Microsoft 365 user accounts."
 
 # Manage Microsoft 365 user accounts
 
-You can manage Microsoft 365 user accounts in several different ways, depending on your configuration. You can manage user accounts in the [Microsoft 365 admin center](https://admin.microsoft.com), PowerShell, in Active Directory Domain Services (AD DS), or in the Azure Active Directory (Azure AD) admin portal. 
+You can manage Microsoft 365 user accounts in several different ways, depending on your configuration. You can manage user accounts in the [Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/add-users/), [PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md), in Active Directory Domain Services (AD DS), or in the Azure Active Directory (Azure AD) admin portal. 
 
 As soon as you purchase Microsoft 365, the Microsoft 365 admin center and PowerShell can be used to manage accounts. When managing cloud identities, every person in your organization has a separate user account name and password. If you want to integrate with your on-premises infrastructure and have user accounts synchronized with Microsoft 365, you can use Azure AD Connect to provide synchronization of identities and passwords for single sign-on (SSO) functionality.
   
@@ -70,7 +70,7 @@ The following table lists the different account management tools.
     > [!IMPORTANT]
     > Creating accounts in Microsoft 365 without assigning a license (to SharePoint Online, for example) means that the account owner can view the Microsoft 365 center but can't access any of the services within your company's subscription. After you assign a location and the license, the account is replicated to the service or services that you assigned. The user can sign in to their account and use the services that you assigned to them. 
   
-## See Also
+## See also
 
-[Manage users and groups in Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users)
-  
+[Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/add-users)
+[PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)  
