@@ -31,7 +31,7 @@ Office 365 Advanced Threat Protection (ATP) organizations (for example, Microsof
 
 ## Advanced Threat Protection file types report
 
-The **Advanced Threat Protection file types report** report shows you the type of files detected as malicious by [ATP Safe Attachments](atp-safe-attachments.md).
+The **Advanced Threat Protection file types report** report shows you the type of files detected as malicious by [Safe Attachments](atp-safe-attachments.md).
 
  The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for 10 days of filtering.
 
@@ -57,7 +57,7 @@ The following views are available:
   - **Malicious executable attachments**
   - **Others**
 
-  When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [ATP Safe Attachments](atp-safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).
+  When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [Safe Attachments](atp-safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).
 
   ![File view in the ATP file types report](../../media/atp-file-types-report-file-view.png)
 
@@ -153,7 +153,7 @@ The following views are available:
   - **Malicious executable attachments**
   - **Others**
 
-  When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [ATP Safe Attachments](atp-safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).
+  When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [Safe Attachments](atp-safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).
 
   ![File view in the ATP file types report](../../media/atp-file-types-report-file-view.png)
 
@@ -201,7 +201,7 @@ The **Threat protection status** report is a single view that brings together in
 
 ## URL threat protection report
 
-The **URL threat protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [ATP Safe Links](atp-safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
+The **URL threat protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](atp-safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **URL protection report**. To go directly to the report, open <https://protection.office.com/reportv2?id=URLProtectionActionReport>.
 
@@ -229,7 +229,7 @@ The **URL threat protection** report has two aggregated views that are refreshed
 
   ![URL click protection action view in the URL threat protection report](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- **URL click by application**: Shows the number of URL clicks by applications that support Office 365 ATP Safe Links:
+- **URL click by application**: Shows the number of URL clicks by applications that support Safe Links:
 
   - **Email client**
   - **PowerPoint**
@@ -270,7 +270,7 @@ In addition to the ATP reports described in this topic, several other reports ar
 |**Explorer** (ATP Plan 2) or **real-time detections** (ATP Plan 1)|[Threat Explorer (and real-time detections)](threat-explorer.md)|
 |**Email security reports**, such as the Top senders and recipients report, the Spoof mail report, and the Spam detections report.|[View email security reports in the Security & Compliance Center](view-email-security-reports.md)|
 |**Mail flow reports**, such as the Forwarding report, the Mailflow status report, and the Top senders and recipients report.|[View mail flow reports in the Security & Compliance Center](view-mail-flow-reports.md)|
-|**URL trace for ATP Safe Links** (PowerShell only). The output of this cmdlet shows you the results of ATP Safe Links actions over the past seven days.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**URL trace for Safe Links** (PowerShell only). The output of this cmdlet shows you the results of Safe Links actions over the past seven days.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
 |**Mail traffic results for EOP and ATP** (PowerShell only). The output of this cmdlet contains information about Domain, Date, Event Type, Direction, Action, and Message Count.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**Mail detail reports for EOP and ATP detections** (PowerShell only). The output of this cmdlet contains details about malicious files or URLs, phishing attempts, impersonation, and other potential threats in email or files.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 |
@@ -301,7 +301,7 @@ To learn more, see the following resources:
 
 ## What if the reports aren't showing data?
 
-If you are not seeing data in your ATP reports, double-check that your policies are set up correctly. Your organization must have [ATP Safe Links policies](set-up-atp-safe-links-policies.md) and [ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md) defined in order for ATP protection to be in place. Also see [Anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md).
+If you are not seeing data in your ATP reports, double-check that your policies are set up correctly. Your organization must have [Safe Links policies](set-up-atp-safe-links-policies.md) and [Safe Attachments policies](set-up-atp-safe-attachments-policies.md) defined in order for ATP protection to be in place. Also see [Anti-spam and anti-malware protection](anti-spam-and-anti-malware-protection.md).
 
 ## Related topics
 
