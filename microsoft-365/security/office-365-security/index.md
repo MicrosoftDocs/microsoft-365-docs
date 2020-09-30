@@ -135,3 +135,14 @@ This quick-reference will help you understand what capabilities come with each A
 
 > [!TIP]
 > ***Insider tip***. You can use the docs.microsoft.com table of contents to learn about EOP and ATP. Navigate to [Office 365 Security](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap?view=o365-worldwide) articles, and you'll notice that table of contents organization begins with Evaluation and Deployment (including migration) and then continues into prevention, detection, investigation, and response. <p> This structure is divided so that **Security Administration** topics are followed by **Security Operations** topics. If you're a new member of either job role, use the link in this tip, and your knowledge of the table of contents, to help learn the space. Remember to use *feedback links* and *rate articles* as you go. Feedback helps us improve what we offer you.
+
+## Where to go next
+
+You may need to configure DKIM or DMARC for your mail, or you may be looking for what's new in the product. Here are some additional recommendations for what to look at next.
+
+[Email Authentication, including SPF, DKIM, and DMARC (with links to setup of all three)](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication?view=o365-worldwide)
+
+[What's new in Office 365 ATP (including EOP developments)](https://docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?view=o365-worldwide)
+
+[Use Threat Explorer or Real-time detections](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-explorer?view=o365-worldwide)
+
