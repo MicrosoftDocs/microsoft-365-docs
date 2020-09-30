@@ -1,5 +1,5 @@
 ---
-title: Configure search and analytics settings - eDiscovery
+title: Configure search and analytics settings - Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,10 +16,10 @@ search.appverid:
 - MET150
 ms.assetid: 
 ms.custom: seo-marvel-mar2020
-description: "Configure Advanced eDiscovery settings that apply to all review set in a case. This includes settings for analytics and OCR."
+description: "Configure Advanced eDiscovery settings that apply to all review set in a case. This includes settings for analytics and Optical character recognition."
 ---
 
-# Configure search and analytics settings
+# Configure search and analytics settings in Advanced eDiscovery
 
 You can configure settings for each Advanced eDiscovery case to control the following functionality.
 
@@ -79,7 +79,15 @@ There are situations where certain text will diminish the quality of analytics, 
 
 ## Optical character recognition (OCR)
 
-When this setting is turned on, OCR will be run on image files that are added to review sets so that image text can be reviewed, searched, tagged, and analyzed. You can view the extracted text in the Text viewer of the selected image file in the review set. For more information, see:
+When this setting is turned on, OCR processing will be run on image files. OCR processing is run in the following situations:
+
+- When custodians and [non-custodial data sources](non-custodial-data-sources.md) are added to a case. OCR processing is performed during the Advanced indexing process. This means that text in image files that matches the search criteria will be returned in a collection search.
+
+- When content from other data sources (that aren't associated with a custodian and added to the case in a non-custodial data source) is added to a review set.
+
+After data is added to a review set, image text can be reviewed, searched, tagged, and analyzed. You can view the extracted text in the Text viewer of the selected image file in the review set. For more information, see:
+
+- [Advanced indexing of custodian data](indexing-custodian-data.md)
 
 - [Add search results to a review set](add-data-to-review-set.md#optical-character-recognition)
 

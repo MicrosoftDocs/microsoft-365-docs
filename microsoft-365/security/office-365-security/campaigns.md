@@ -21,7 +21,10 @@ description: "Learn about Campaign Views in Office 365 Advanced Threat Protectio
 
 # Campaign Views in Office 365 ATP
 
-Campaign Views is a feature in Advanced Threat Protection (ATP) Plan 2 (for example Microsoft 365 E5 or organizations with an ATP Plan 2 add-on). Campaing Views in the Security & Compliance Center identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+Campaign Views is a feature in Advanced Threat Protection (ATP) Plan 2 (for example Microsoft 365 E5 or organizations with an ATP Plan 2 add-on). Campaign Views in the Security & Compliance Center identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
 
 - Efficiently investigate and respond to phishing attacks.
 - Better understand the scope of the attack.
@@ -42,7 +45,7 @@ Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malwa
 
 A campaign might be short-lived, or could span several days, weeks, or months with active and inactive periods. A campaign might be launched against your specific organization, or your organization might be part of a larger campaign across multiple companies.
 
-## Campaign Views the Security & Compliance Center
+## Campaign Views in the Security & Compliance Center
 
 Campaign Views is available in the [Security & Compliance Center](https://protection.office.com) at **Threat management** \> **Campaigns**, or directly at <https://protection.office.com/campaigns>.
 

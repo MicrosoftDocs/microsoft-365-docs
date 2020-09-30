@@ -22,6 +22,9 @@ ms.custom: seo-marvel-apr2020
 
 # View reports for Office 365 Advanced Threat Protection
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Office 365 Advanced Threat Protection (ATP) organizations (for example, Microsoft 365 E5 subscriptions or ATP Plan 1 or ATP Plan 2 add-ons) contain a variety of security-related reports. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-atp-reports), you can view these reports in the Security & Compliance Center by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
 
 ![The Reports dashboard in the Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
@@ -68,7 +71,7 @@ The following views are available:
   - **Block access**
   - **Messages replaced**
   - **Messages monitored**
-  - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery and previewing with ATP Safe Attachments](dynamic-delivery-and-previewing.md).
+  - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Message view in the ATP file types report](../../media/atp-file-types-report-message-view.png)
 
@@ -130,7 +133,7 @@ The following views are available:
   - **Block access**
   - **Messages replaced**
   - **Messages monitored**
-  - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery and previewing with ATP Safe Attachments](dynamic-delivery-and-previewing.md).
+  - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Message view in the ATP file types report](../../media/atp-file-types-report-message-view.png)
 

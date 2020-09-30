@@ -23,6 +23,9 @@ search.appverid:
 
 # Hello World for Microsoft Threat Protection REST API 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 

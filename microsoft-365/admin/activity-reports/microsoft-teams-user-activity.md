@@ -39,7 +39,7 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
 
 You can get a view into Microsoft Teams user activity by looking at the **Activity** and **Users** charts.<br/>![Microsoft 365 reports - Microsoft Teams user activity.](../../media/40359f81-25f7-416d-bb1e-37289133ef6b.png)
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |The **Microsoft Teams user activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table (7) will show data for up to 28 days from the current date (not the date the report was generated).  <br/> |
 |2.  <br/> |The data in each report usually covers up to the last 24 to 48 hours.  <br/> |
