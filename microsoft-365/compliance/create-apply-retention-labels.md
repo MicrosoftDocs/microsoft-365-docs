@@ -140,6 +140,8 @@ Use the following sections to learn how published retention labels can be applie
 
 - [Automatically applying a retention label to email by using rules](#automatically-applying-a-retention-label-to-email-by-using-rules)
 
+- [Apply a retention label to a document understanding model](../contentunderstanding/apply-a-retention-label-to-a-model.md)
+
 ### Manually apply retention labels 
 
 End users, as well as administrators, can manually apply retention labels from the following locations:  
