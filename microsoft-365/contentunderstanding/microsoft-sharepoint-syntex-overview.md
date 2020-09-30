@@ -13,7 +13,6 @@ description: "Learn how to find resources for Microsoft SharePoint Syntex."
 
 # Introduction to SharePoint Syntex
 
-
 SharePoint Syntex is an Office 365 service that helps organizations to:
 
 - Use advanced AI and machine teaching to amplify human experiences
@@ -34,9 +33,7 @@ The resources in this section help you learn more about the two methods used by 
 
 ## Adoption
 
-Learn more about how to use and implement SharePoint Syntex in your organization to help you solve your business problems.
-
-
+Learn more about how to use and implement SharePoint Syntex in your organization to help you solve your business problems: [Microsoft SharePoint Syntex adoption: Get started](adoption-getstarted.md).
 
 ## Set up SharePoint Syntex
 
@@ -46,7 +43,7 @@ The resources in this section help your admin in your organization to set up and
 |:-----|:-----|
 |Set up and configure SharePoint Syntex|[Set up Microsoft SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding)|
 |Learn about image tagging and how to disable|[Image tagging in SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/image-tagging)|
- 
+
 ## Models
 
 The resources in this section help your users learn how to create and configure document understanding and form processing models.
@@ -58,12 +55,9 @@ The resources in this section help your users learn how to create and configure 
 |Use Managed Metadata services term store taxonomy when creating an extractor|[Leverage term store taxonomy when creating an extractor](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |Learn how to see data about your models|[Model usage analytics](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
 
-
-
 ## Premium services
 
 A SharePoint Syntex license gives your users premium content services that give you additional functionality in your Microsoft 365 environment. The resources in this section give you more details on these feature and how to use them.
-
 
 |**If you're looking for this information:**|**Go to this resource:**|
 |:-----|:-----|
@@ -71,11 +65,4 @@ A SharePoint Syntex license gives your users premium content services that give 
 |Learn how to make content types more consistently available to SharePoint libraries and lists|[Push content types to a hub](https://docs.microsoft.com/microsoft-365/contentunderstanding/push-content-type-to-hub)|
 |Learn about the term store reports that are available to you|[Term store reports](https://docs.microsoft.com/microsoft-365/contentunderstanding/term-store-analytics)|
 
-
-
-
 ## See Also
-
-
-
-
