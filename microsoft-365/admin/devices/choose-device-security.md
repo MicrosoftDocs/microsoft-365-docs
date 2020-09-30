@@ -24,7 +24,6 @@ description: "Choose between different MDM and MAM methods."
 
 You have a few different ways to secure your organizations devices and data on them with Microsoft 365 for business and enterprise. You can use the following stand-alone plans:
 - Basic Mobility and Security (included in most Microsoft 365 for business and enterprise plans)
-
 - Intune (a part of Microsoft Endpoint Management)
 - Azure Active Directory Premium plans.
 
