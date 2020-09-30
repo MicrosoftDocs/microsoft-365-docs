@@ -48,7 +48,7 @@ You can use sensitivity labels as conditions on these items and in these scenari
 |SharePoint Online     |items in SharePoint Online         |yes         |yes         |
 |OneDrive for Business     |items         |yes         |yes         |
 |Teams     |Teams and channel messages         |not applicable         |not applicable         |
-|Teams     |attachements         |yes **         |yes **         |
+|Teams     |attachments         |yes **         |yes **         |
 |Windows 10 devices (preview)     |items         |yes         |yes         |
 |MCAS (preview) |items         |yes         |yes         |
 
