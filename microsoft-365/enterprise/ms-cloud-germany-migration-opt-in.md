@@ -3,7 +3,7 @@ title: "How to opt-in for migration from Microsoft Cloud Germany (Microsoft Clou
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: 09/30/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
