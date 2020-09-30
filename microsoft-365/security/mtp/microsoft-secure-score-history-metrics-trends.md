@@ -1,7 +1,7 @@
 ---
 title: Track your Microsoft Secure Score history and meet goals
-description: Gain insights into activity that has affected your Secure Score. Discover trends and set goals.
-keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
+description: Gain insights into activity that has affected your Microsoft Secure Score. Discover trends and set goals.
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -23,6 +23,9 @@ ms.custom:
 ---
 
 # Track your Microsoft Secure Score history and meet goals
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 [Microsoft Secure Score](microsoft-secure-score.md) is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 

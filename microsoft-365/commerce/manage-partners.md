@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,7 +15,6 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to purchase and manage products and services for your organization or school."
-keywords: partner, solution provider
 ---
 
 # Manage partner relationships
@@ -30,9 +29,13 @@ keywords: partner, solution provider
 
 You can work with Microsoft-certified solution providers (partners) to purchase and manage products and services for your organization or school. There are a few steps involved in getting things set up.
 
-- Admins find and contact a partner using the form at <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a>.
-- Partners send an email request to customers to establish a partner relationship.
-- Customers accept the invitation in Microsoft 365 admin center and start working with the partner.
+1. Admins find and contact a partner using the form at <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a>.
+2. Partners send an email request to customers to establish a partner relationship.
+3. Customers accept the invitation in Microsoft 365 admin center and start working with the partner.
+
+## Before you begin
+
+You must be either a Global or Billing admin to do these steps. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 ## What can a partner do for my organization or school?
 
@@ -46,7 +49,6 @@ There are several ways that a partner can work with you. Based on your stated bu
 | Partner | You give your partner a user account in your tenant, and they work with other Microsoft services on your behalf. |
 | Advisor | Partners can reset passwords and handle support incidents for you. |
 | Microsoft Products & Services Agreement (MPSA) partner | If you've worked with multiple partners through the MPSA program, you can allow them to see purchases made by each other. |
-| OEM PC partner | Partners can upload device IDs for PCs that you're [managing with Autopilot](https://docs.microsoft.com/microsoft-store/add-profile-to-devices). |
 | Line-of-business (LOB) partner | Partners can develop, submit, and manage LOB apps specific for your organization or school. |
 
 ## Find a partner
@@ -78,24 +80,16 @@ If you already have a partner but haven’t yet signed a Microsoft Customer Agre
 4. Select **Accept**.
 5. The list of partners that you’re working with is displayed. Select any partner to see details.
 
-## Remove partner admin privileges
+## Remove partner admin roles
 
-Depending on the request made by the partner, part of accepting the invitation includes agreeing to give delegated admin privileges to the them. For more information, see [Delegated admin privileges in Azure AD](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
+Depending on the request made by the partner, when you accept the invitation, you agree to give them Global and Helpdesk admin roles. When you give these admin roles to a partner, you automatically grant them delegated admin privileges in Azure AD. To learn more, see [Delegated admin privileges in Azure AD](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
 
-If you don't want to delegate admin privileges to the partner, cancel the invitation instead of accepting it.
+If you don't want to give the admin roles to the partner, cancel the invitation instead of accepting it.
 
-If you delegate admin privileges to a partner, you can remove those privileges at any time. Removing admin privileges doesn’t remove the partner relationship. They can still work with you, for example, as a Reseller.
+You can remove admin roles from a partner at any time. Removing the admin roles doesn’t remove the partner relationship. They can still work with you in a different capacity, such as a Reseller. If you decide that you don’t want to work with a partner anymore, contact your partner to end the relationship.
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing accounts</a> page.
-2. On the **Billing accounts** page, select the **Partner relationships** tab.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> page.
+2. On the **Partner relationships** page, select the row that contains the name of the partner that you want to remove.
 3. Select the row that contains the name of the partner.
-4. On the partner page, select **Remove admin roles**.
-
-## Delete a partner relationship
-
-If you decide that you don’t want to work with a partner anymore, you can end the relationship. However, you can only delete relationships where the partner is either a Delegated Administrator or an Advisor. For all other partner types, contact your partner to end the relationship.
-
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing accounts</a> page.
-2. On the **Billing accounts** page, select the **Partner relationships** tab.
-3. Select the row that contains the name of the partner.
-4. On the partner detail page, select **Delete partner**.
+4. On the partner page, select **Remove roles**.
+5. In the **Remove roles?** dialog box, select **Yes**.

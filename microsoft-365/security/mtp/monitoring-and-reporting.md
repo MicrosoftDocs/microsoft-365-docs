@@ -19,6 +19,9 @@ ms.custom: seo-marvel-apr2020
 
 # Monitor and view reports in the Microsoft 365 security center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 The Microsoft 365 security center provides a summary of protection and security statuses across your Microsoft 365 environment.
 
 The security center includes a **Reports** section which features a host of cards covering a variety of areas. Security analysts and administrators can track the cards as part of their day-to-day operations. On drill-down, cards provide detailed reports and, in some cases, management options.

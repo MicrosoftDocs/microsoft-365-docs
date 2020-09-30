@@ -16,6 +16,9 @@ ms.custom: seo-marvel-apr2020
 
 # Mail flow insights in the Security & Compliance Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Admins can use Mail flow dashboard in the Security & Compliance Center to discover trends, insights, and take actions to fix issues related to mail flow in their organization.
 
 ![The Mail flow dashboard in the Security & Compliance Center](../../media/mail-flow-dashboard-v2.png)

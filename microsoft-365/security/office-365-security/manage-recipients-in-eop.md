@@ -18,6 +18,9 @@ description: "Admins can learn about the different types of recipient objects in
 
 # Manage recipients in standalone EOP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes support the following types of recipients:
 
 - **Mail users**: Mail users are the fundamental type of user accounts in your standalone EOP organization. Mail users have logon credentials in your EOP organization, but they have external email addresses (their mailboxes are located outside of your EOP organization).

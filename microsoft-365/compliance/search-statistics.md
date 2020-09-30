@@ -14,13 +14,11 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: Search statistics are an effective way to validate your search results, and display under Status on the search details flyout page.
+description: "Search statistics are an effective way to validate your search results, and display under Status on the search details flyout page."
 ms.custom: seo-marvel-mar2020
 ---
 
-# Search statistics
+# Search statistics in Data Investigations (preview)
 
 An effective way to validate your search results when investigation a data incident is to view the statistics about your search results to make sure they align with your expectations. When a search as finished running, the following high-level statistics are displayed under **Status** on the search details flyout page:
 

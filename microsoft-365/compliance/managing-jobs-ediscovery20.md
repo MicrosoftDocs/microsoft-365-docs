@@ -7,15 +7,13 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
 description: "Advanced eDiscovery jobs help you track the status of long-running processes related to performing various Advanced eDiscovery tasks."
 ---
 
