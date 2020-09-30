@@ -1,5 +1,5 @@
 ---
-title: Office 365 Security
+title: Office 365 Security, Office 365 ATP, EOP, ATP, MSDO
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -8,6 +8,7 @@ audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.service: ATP
 search.appverid:
 - MET150
 - MOE150
@@ -16,7 +17,7 @@ ms.collection:
 description: "Security in Office 365, from EOP to ATP Plans 1 and 2, Standard vs. Strict security configurations, and more, so that you can understand what you have, and how to secure your properties."
 ---
 
-# Office 365 Security outline
+# Office 365 Security overview
 
 This article will introduce you to your new security properties in the Cloud. Whether you're part of a Security Operations Center, you're a Security Administrator new to the space, or you want a refresher, let's get started.
 
@@ -46,7 +47,7 @@ But in terms of architecture, let's start by thinking of each piece as cumulativ
 
 <!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
 
-:::image type="content" source="../../media/tp_EOPandATPGraphic.png" alt-text="EOP and ATP and their relationships to one another with service emphasis, including a note for email authentication.":::
+:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP and ATP and their relationships to one another with service emphasis, including a note for email authentication.":::
 
 Though each of these services emphasizes a specific goal from among Protect, Detect, Investigate, and Respond, ***all*** the services can carry out ***any*** of the goals of protecting, detecting, investigating, and responding.
 
@@ -61,7 +62,10 @@ If you have an Office 365 E3, or below, you have EOP, but with the option to buy
 
 ## The Office 365 security ladder from EOP to ATP
 
-:::image type="content" source="../../media/tp_EOPATPEmailAuth4.gif" alt-text="EOP and ATP and their specific strengths, going from Protect and Detect to Investigate and Respond, respectively. Also, Email Authentication configuration is shown as needed as of EOP up.":::
+<br/>
+
+![EOP and ATP and their security emphasis, going from Protect and Detect to Investigate and Respond. Email Authentication configuration (at least DKIM and DMARC) should be set up for EOP and up.](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
+
 
 > [!IMPORTANT]
 > Learn the details on these pages: [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide), and [Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide).
@@ -131,3 +135,17 @@ This quick-reference will help you understand what capabilities come with each A
 
 > [!TIP]
 > ***Insider tip***. You can use the docs.microsoft.com table of contents to learn about EOP and ATP. Navigate to [Office 365 Security](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap?view=o365-worldwide) articles, and you'll notice that table of contents organization begins with Evaluation and Deployment (including migration) and then continues into prevention, detection, investigation, and response. <p> This structure is divided so that **Security Administration** topics are followed by **Security Operations** topics. If you're a new member of either job role, use the link in this tip, and your knowledge of the table of contents, to help learn the space. Remember to use *feedback links* and *rate articles* as you go. Feedback helps us improve what we offer you.
+
+## Where to go next
+
+If you're a Security Admin, you may need to configure DKIM or DMARC for your mail, roll out 'Strict' security presets for your priority users, or you may be looking for what's new in the product. If you're with Security Ops, you may want to leverage Real-time detections or Threat Explorer to investigate and respond, or train end-user detection with Attack Simulator. Here are some additional recommendations for what to look at next.
+
+[Email Authentication, including SPF, DKIM, and DMARC (with links to setup of all three)](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication?view=o365-worldwide)
+
+[See the specific recommended 'golden' configs](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) and [use their recommended presets to configure security policies quickly](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/preset-security-policies?view=o365-worldwide)
+
+Catch up on [what's new in Office 365 ATP (including EOP developments)](https://docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?view=o365-worldwide)
+
+[Use Threat Explorer or Real-time detections](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-explorer?view=o365-worldwide)
+
+Use [Attack Simulator in Office 365 ATP](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/attack-simulator?view=o365-worldwide)
