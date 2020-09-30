@@ -37,6 +37,9 @@ After you train and publish your model, your model creates a [Power Automate Flo
 
 An Office 365 admin needs to [enable Form processing](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding#to-set-up-content-understanding) for the SharePoint document library for users to be able to [create a form processing model](create-a-form-processing-model.md) in it.
 
+> [!NOTE]
+> See the [SharePoint Syntex adoption: Get started guide](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example) for more information about form processing scenario examples.
+
 ## See Also
   
 [Power Automate documentation](https://docs.microsoft.com/power-automate/)

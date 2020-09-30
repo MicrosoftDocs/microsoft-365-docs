@@ -25,6 +25,9 @@ There are two model types that you can use:
 
 While both models are generally used for the same purpose, the key differences listed below affect which ones you can use.
 
+> [!NOTE]
+> See the [SharePoint Syntex adoption: Get started guide](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example) for more information about form processing and document understanding scenario examples.
+
 ## Structured versus unstructured and semi-structured content
 
 Use document understanding models to identify and extract data from unstructured documents, such as letters or contracts, where the text entities you want to extract reside in sentences or specific regions of the document. For example, an unstructured document could be a contract renewal letter that can be written in different ways. However, information exists consistently in the body of each contract renewal document, such as the text string *Service start date of* followed by an actual date.   
