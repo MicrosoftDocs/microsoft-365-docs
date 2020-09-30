@@ -32,7 +32,7 @@
     - name: Adoption
       items:
         - name: Get started with Adoption
-          href: adoption-getstarted
+          href: adoption-getstarted.md
 
     - name: Setup and administration
       items:
