@@ -63,7 +63,7 @@ This section describes the settings in Safe Attachments policies:
   |**Monitor**|Delivers messages with attachments and then tracks what happens with detected malware. <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|See where detected malware goes in your organization.|
   |**Block**|Prevents messages with detected malware attachments from being delivered. <br/><br/> Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages. <br/><br/> Automatically blocks future instances of the messages and attachments. <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Protects your organization from repeated attacks using the same malware attachments. <br/><br/> This is the default value, and the recommended value in Standard and Strict [preset security policies](preset-security-policies.md).|
   |**Replace**|Removes detected malware attachments. <br/><br/> Notifies recipients that attachments have been removed. <br/><br/>  Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not end-users) can review, release, or delete the messages. <br/><br/> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Raise visibility to recipients that attachments were removed because of detected malware.|
-  |**Dynamic Delivery**|Delivers messages immediately, but replaces attachments with placeholders until Safe Attachments scanning is complete. <br/><br/> For details, see the [Dynamic Delivery](#dynamic-delivery) section later in this topic.|Avoid message delays while protecting recipients from malicious files <br/> <br/> Enable recipients to preview attachments in safe mode while scanning is taking place|
+  |**Dynamic Delivery**|Delivers messages immediately, but replaces attachments with placeholders until Safe Attachments scanning is complete. <br/><br/> For details, see the [Dynamic Delivery in Safe Attachments policies](#dynamic-delivery-in-safe-attachments-policies) section later in this topic.|Avoid message delays while protecting recipients from malicious files <br/> <br/> Enable recipients to preview attachments in safe mode while scanning is taking place|
   |
 
 - **Redirect attachment on detection: Enable redirect** and **Send the attachment to the following email address**: For **Block**, **Monitor**, or **Replace** actions, send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
@@ -84,7 +84,7 @@ This section describes the settings in Safe Attachments policies:
 
   For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
-### Dynamic Delivery
+### Dynamic Delivery in Safe Attachments policies
 
 > [!NOTE]
 > Dynamic Delivery works only for Exchange Online mailboxes.
