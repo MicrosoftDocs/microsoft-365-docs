@@ -71,7 +71,7 @@ The following views are available:
   - **Block access**
   - **Messages replaced**
   - **Messages monitored**
-  - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery and previewing with ATP Safe Attachments](dynamic-delivery-and-previewing.md).
+  - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Message view in the ATP file types report](../../media/atp-file-types-report-message-view.png)
 
@@ -133,7 +133,7 @@ The following views are available:
   - **Block access**
   - **Messages replaced**
   - **Messages monitored**
-  - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery and previewing with ATP Safe Attachments](dynamic-delivery-and-previewing.md).
+  - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Message view in the ATP file types report](../../media/atp-file-types-report-message-view.png)
 
