@@ -8,8 +8,7 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+localization_priority: Priority
 
 ---
 # Push content types to a hub

@@ -9,8 +9,7 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.service: 
 search.appverid: 
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+localization_priority: Priority
 
 ---
 # Import a term set using a SKOS-based format
