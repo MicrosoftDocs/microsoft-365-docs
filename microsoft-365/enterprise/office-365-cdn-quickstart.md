@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection: 
 - Ent_O365
 - SPO_Content
+- M365initiative-CoreDeploy
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
