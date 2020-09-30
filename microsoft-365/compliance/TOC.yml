@@ -152,8 +152,10 @@
       items: 
         - name: Understand encryption
           href: encryption.md
-        - name: Double Key Encryption (preview)
+        - name: Double Key Encryption (DKE)
           href: double-key-encryption.md
+        - name: Double Key Encryption FAQ
+          href: double-key-encryption-overview.md  
         - name: Office 365 Service encryption
           href: office-365-service-encryption.md
         - name: Customer Key
@@ -338,11 +340,7 @@
             - name: Webex Teams
               href: archive-webexteams-data.md
             - name: Workplace from Facebook
-              href: archive-workplacefromfacebook-data.md
-            - name: Zoom Meetings
-              href: archive-zoommeetings-data.md
-            - name: Slack
-              href: archive-slack-data.md    
+              href: archive-workplacefromfacebook-data.md    
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
         - name: TeleMessage data connectors
@@ -391,8 +389,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Delete an inactive mailbox
           href: delete-an-inactive-mailbox.md
-    - name: Videos from the Data Governance team
-      href: https://go.microsoft.com/fwlink/?linkid=867039
     - name: Records management
       items: 
         - name: Learn about records management
@@ -426,7 +422,7 @@
             href: configure-edge-to-export-search-results.md
           - name: Search for and delete email messages
             href: search-for-and-delete-messages-in-your-organization.md
-          - name: Search the cloud-based mailboxes of on-premises users
+          - name: Search for Teams chat data for on-premises users
             href: search-cloud-based-mailboxes-for-on-premises-users.md
           - name: Bulk edit multiple content searches
             href: bulk-edit-content-searches.md
