@@ -31,6 +31,7 @@ The resources in this section help you learn more about the two methods used by 
 |Understand the differences between the two methods|[Difference between document understanding and form processing models](/https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
 |See resources in the Microsoft Tech Community Resource Center|[SharePoint Syntex - Content services in Microsoft 365](https://resources.techcommunity.microsoft.com/sharepoint-syntex/)|
 |SharePoint Syntex FAQ on the Microsoft Tech Community Resource Center |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/project-cortex-microsoft-365/faq/)|
+|How to get SharePoint Syntex |[SharePoint Syntex product page](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
 
 ## Adoption
 
