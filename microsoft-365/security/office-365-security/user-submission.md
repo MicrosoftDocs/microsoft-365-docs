@@ -39,7 +39,7 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
 ## Custom mailbox prerequisites
 
-To ensure your custom mailbox can receive user reported messages, you must configure the following required prerequisites:
+Use the following articles to configure the prerequisites required to ensure your custom mailbox can receive user reported messages:
 
 - To skip spam filtering for messages going to this mailbox, create an exchange mail flow rule to set the spam confidence level. See [Use the EAC to create a mail flow rule that sets the SCL of a message](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to **-1**.
 
