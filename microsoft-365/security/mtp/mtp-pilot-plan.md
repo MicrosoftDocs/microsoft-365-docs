@@ -121,5 +121,5 @@ One way to bring all elements of your plan together can be to create a scorecard
 
 
 ## Next step
-|![Preparation phase](../../media/prepare.png) <br>[Preparation phase](prepare-mtpeval.md) | Prepare your Microsoft Threat Protection pilot environment
+|![Preparation phase](../../media/mtp/prep.png) <br>[Preparation phase](prepare-mtpeval.md) | Prepare your Microsoft Threat Protection pilot environment
 |:-------|:-----|
