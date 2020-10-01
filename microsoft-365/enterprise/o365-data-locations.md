@@ -85,7 +85,7 @@ All customer content is stored in the Exchange Online mailbox that hosts the org
 
 ### Where can I find data residency information for Microsoft Shifts?
 
-Microsoft Shift is a native app of MS Teams so this adheres to the MS team's data location.
+Microsoft Shifts is a native app of Microsoft Teams so this adheres to the data location of Microsoft Teams.
 
 ### Where can I find data residency information for Microsoft To Do?
 
