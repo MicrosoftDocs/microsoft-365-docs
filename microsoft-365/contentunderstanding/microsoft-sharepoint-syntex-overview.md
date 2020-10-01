@@ -11,9 +11,9 @@ localization_priority: Priority
 description: "Learn how to find resources for Microsoft SharePoint Syntex."
 ---
 
-# Introduction to SharePoint Syntex
+# Introduction to Microsoft SharePoint Syntex
 
-SharePoint Syntex is an Office 365 service that helps organizations to:
+Microsoft SharePoint Syntex is an Office 365 service that helps organizations to:
 
 - Use advanced AI and machine teaching to amplify human experiences
 - Automate content processing
@@ -27,8 +27,9 @@ The resources in this section help you learn more about the two methods used by 
 
 |**If you're looking for this information:**|**Go to this resource:**|
 |:-----|:-----|
-|Learn more about form processing and document understanding|[Document understanding overview](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview)<br><br>[Form processing overview](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>|
-|Understand the differences between the two methods|[Difference between document understanding and form processing models](/https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
+|Learn more about document understanding|[Document understanding overview](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview)|
+|Learn more about form processing|[Form processing overview](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)|
+|Understand the differences between the two methods|[Difference between document understanding and form processing models](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
 |See resources in the Microsoft Tech Community Resource Center|[SharePoint Syntex - Content services in Microsoft 365](https://resources.techcommunity.microsoft.com/sharepoint-syntex/)|
 
 ## Adoption
