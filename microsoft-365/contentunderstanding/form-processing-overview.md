@@ -21,6 +21,9 @@ You can use AI Builder form processing to create AI models that use machine lear
 
 Organizations often receive invoices in large quantities from a variety of sources, such as mail, fax, email, etc. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key/value pairs, and tables from your documents, form processing automates this process. 
 
+> [!NOTE]
+> See the [SharePoint Syntex adoption: Get started guide](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example) for more information about form processing scenario examples.
+
 For example, you can create a form processing model that identifies all purchase order documents that are uploaded to the document library. From each purchase order you can then extract and display specific data that is important to you, such as *PO Number*, *Date*, or *Total Cost*.
 
 ![Doc library view](../media/content-understanding/doc-lib-done.png)</br>  

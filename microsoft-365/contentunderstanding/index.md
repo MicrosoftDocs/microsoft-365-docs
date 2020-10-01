@@ -30,10 +30,15 @@ The resources in this section help you learn more about the two methods used by 
 |Learn more about form processing and document understanding|[Document understanding overview](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview)<br><br>[Form processing overview](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>|
 |Understand the differences between the two methods|[Difference between document understanding and form processing models](/https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
 |See resources in the Microsoft Tech Community Resource Center|[SharePoint Syntex - Content services in Microsoft 365](https://resources.techcommunity.microsoft.com/sharepoint-syntex/)|
+|SharePoint Syntex FAQ on the Microsoft Tech Community Resource Center |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/project-cortex-microsoft-365/faq/)|
 
 ## Adoption
 
-Learn more about how to use and implement SharePoint Syntex in your organization to help you solve your business problems: [Microsoft SharePoint Syntex adoption: Get started](adoption-getstarted.md).
+Learn more about how to use and implement SharePoint Syntex in your organization to help you solve your business problems: 
+
+|**If you're looking for this information:**|**Go to this resource:**|
+|:-----|:-----|
+|Learn how to start planning to use SharePoint Syntex. |[SharePoint Syntex adoption: get started](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted)<br><br>|  
 
 ## Set up SharePoint Syntex
 
