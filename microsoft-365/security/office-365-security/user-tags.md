@@ -1,5 +1,5 @@
 ---
-title: "User tags"
+title: "User tags in Office 365 ATP"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,10 +14,10 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn how to identify specific groups of users with user tags in Oiffce 365 ATP Plan 2. Tag filtering is available across alerts, reports, and investigations in Office 365 ATP to quickly identify the tagged users."
+description: "Admins can learn how to identify specific groups of users with user tags in Office 365 ATP Plan 2. Tag filtering is available across alerts, reports, and investigations in Office 365 ATP to quickly identify the tagged users."
 ---
 
-# User tags in the Microsoft Security Center
+# User tags in Office 365 ATP
 
 User tags are identifiers for specific groups of users in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). [Priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) are a type of user tag. If your organization has Office 365 ATP Plan 2 (included in your subscription or as an add-on), you can create custom user tags in addition to using the priority accounts tag.
 
@@ -28,11 +28,11 @@ After you apply tags to specific users, you can use those tags as filters in ale
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Campaign Views](campaigns.md)
 
-This article explains how to configure user tags in the Security Center.
+This article explains how to configure user tags in the Security & Compliance Center. There are no cmdlets in Security & Compliance Center to manage user tags.
 
 ## What do you need to know before you begin?
 
-- You open the Security Center at <https://security.microsoft.com/>. To go directly to the **User tags** page, open <https://security.microsoft.com/securitysettings/userTags>.
+- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **User tags** page, open <https://protection.office.com/userTags>.
 
 - To create, modify, or remove user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -40,7 +40,7 @@ This article explains how to configure user tags in the Security Center.
 
 ## Use the Security Center to create user tags
 
-1. In the Security Center, go to **Settings** \> **Email & collaboration** \> **User tags**.
+1. In the Security Center, go to **Threat management** \> **User tags**.
 
 2. On the **User tags** page that opens, click **Create tag**.
 
@@ -74,7 +74,7 @@ This article explains how to configure user tags in the Security Center.
 
 ## Use the Security Center to view user tags
 
-1. In the Security Center, go to **Settings** \> **Email & collaboration** \> **User tags**.
+1. In the Security Center, go to **Threat management** \> **User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to view (don't click on the checkbox).
 
@@ -84,7 +84,7 @@ This article explains how to configure user tags in the Security Center.
 
 ## Use the Security Center to modify user tags
 
-1. In the Security Center, go to **Settings** \> **Email & collaboration** \> **User tags**.
+1. In the Security Center, go to **Threat management** \> **User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to view, and then click **Edit tag**.
 
@@ -96,6 +96,6 @@ This article explains how to configure user tags in the Security Center.
 
 **Note**: You can't remove the built-in **Priority account** tag.
 
-1. In the Security Center, go to **Settings** \> **Email & collaboration** \> **User tags**.
+1. In the Security Center, go to **Threat management** \> **User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to remove, click **Delete tag**, and then select **Yes, remove** in the warning that appears.
