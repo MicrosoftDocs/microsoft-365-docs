@@ -44,7 +44,7 @@ ms.topic: conceptual
         <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Run your Microsoft Threat Protection attack simulations" />
       <br/>Simulate attack </a><br>
     </td>
-    <td align="center"  >
+    <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
         <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Close and summarize your Microsoft Threat Protection pilot" />
       <br/>Close and summarize </a><br>
