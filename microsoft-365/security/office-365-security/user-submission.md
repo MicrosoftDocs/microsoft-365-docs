@@ -39,15 +39,15 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
 ## Custom mailbox prerequisites
 
-Use the following articles to configure the prerequisites required for user reported messages going to the custom mailbox:
+Use the following articles to configure the required prerequisites on your custom mailbox:
 
 - Skip spam filtering by creating an exchange mail flow rule to set the spam confidence level. See [Use the EAC to create a mail flow rule that sets the SCL of a message](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to **-1**.
 
-- Turn off scanning attachments for malware. Use [Set up (or edit) an ATP Safe Attachments policy](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide#step-2-set-up-or-edit-an-atp-safe-attachments-policy) to create a Safe Attachments policy with the setting **Off - Attachment will not be scanned for malware** enabled.
+- Turn off scanning attachments for malware on messages going to this folder. Use [Set up (or edit) an ATP Safe Attachments policy](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide#step-2-set-up-or-edit-an-atp-safe-attachments-policy) to create a Safe Attachments policy with the setting **Off - Attachment will not be scanned for malware** enabled.
 
-- Turn off URL scanning. Use [Add (or edit) ATP Safe Links policies that apply to all or specific email recipients](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-worldwide#step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients) to create a Safe Links policy with **Select the action for unknown potentially malicious URLs in messages** set to **Off**.
+- Turn off URL scanning on messages going to this folder. Use [Add (or edit) ATP Safe Links policies that apply to all or specific email recipients](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-worldwide#step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients) to create a Safe Links policy with **Select the action for unknown potentially malicious URLs in messages** set to **Off**.
 
-- Create an anti-malware policy to turn off Malware Zero-hour Auto Purge. See [Use the Security & Compliance Center to create anti-malware policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) to set **Malware Zero-hour Auto Purge** to **Off**.
+- Create an anti-malware policy to turn off Malware Zero-hour Auto Purge for this mailbox. See [Use the Security & Compliance Center to create anti-malware policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) to set **Malware Zero-hour Auto Purge** to **Off**.
 
 - Create a spam filter policy to turn off Zero-hour Auto Purge (ZAP) for Spam ZAP and Phish ZAP for this mailbox. See [Use the Security & Compliance Center to create anti-malware policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-malware-policies).
 
