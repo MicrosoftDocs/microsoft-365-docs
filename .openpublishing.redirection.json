@@ -646,6 +646,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/dynamic-delivery-and-previewing.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments#dynamic-delivery-in-safe-attachments-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/how-atp-safe-attachments-works.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/atp-safe-links-for-Teams.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links#safe-links-settings-for-microsoft-teams",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/atp-safe-links-warning-pages.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links#warning-pages-from-safe-links",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/how-atp-safe-links-works.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links#do-not-rewrite-the-following-urls-lists-in-safe-links-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/malicious-files-detected-in-spo-odb-or-teams.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/atp-anti-phishing.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business/set-up-mfa.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication",
       "redirect_document_id": false
@@ -692,7 +732,7 @@
     },
     {
       "source_path": "./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-a-custom-blocked-urls-list-atp",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links#block-the-following-urls-list-for-safe-links",
       "redirect_document_id": true
     },
     {
