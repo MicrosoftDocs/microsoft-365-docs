@@ -109,7 +109,7 @@ Teams files are stored in SharePoint Online and Teams chat files are stored in O
 
 ## Skype for Business
 
-Skype for Business moves are no longer available.  [Skype for Business Online will be retired](https://docs.microsoft.com/en-us/lifecycle/announcements/skype-for-business-online-retirement) on July 31, 2021. After that time, the service will no longer be accessible. 
+Skype for Business moves are no longer available.  [Skype for Business Online will be retired](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) on July 31, 2021. After that time, the service will no longer be accessible. 
   
 ## Related topics 
  
