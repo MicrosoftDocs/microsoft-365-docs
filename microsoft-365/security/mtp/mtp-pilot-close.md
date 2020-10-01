@@ -28,7 +28,8 @@ ms.topic: conceptual
 - Microsoft Threat Protection
 
 <br>
-You're currently in the close and summary phase.
+You're currently in the closing and summarizing phase.
+</br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
