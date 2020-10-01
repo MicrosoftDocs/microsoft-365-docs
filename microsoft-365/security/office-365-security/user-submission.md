@@ -47,6 +47,10 @@ Use the following articles to set up the prerequisites required for your custom 
 
 - Turn off URL scanning for messages going to this folder. Use [Add (or edit) ATP Safe Links policies that apply to all or specific email recipients](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-worldwide#step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients) to set the Safe Links policy to **Off**.
 
+- Create an anti-malware policy to set Malware Zero-Hour Auto Purge (ZAP) to **Off** for this mailbox. Use [Use the Security & Compliance Center to create anti-malware policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-malware-policies) for steps on how to create the policy. Ensure on the **Applied to** the policy is only set for this mailbox. 
+- 
+- 
+
 - Disable the junk email rule on this mailbox. Use [Configure junk email settings on Exchange Online mailboxes](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-worldwide) to disable the junk email rule. Once disabled, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action **Move message to Junk Email folder** or the safelist collection on the mailbox.
 
 After you've verified that your mailbox meets all applicable prerequisites, [Use the Security & Compliance Center to configure the user submissions mailbox](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) (in this article).
