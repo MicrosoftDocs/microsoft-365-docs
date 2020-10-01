@@ -5744,6 +5744,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Office Online &amp; Mobile | United States |
 | EOP | United States |
 | Intune | United States |
+| Microsoft Managed Desktop | United States |
 | MyAnalytics | United States |
 | Planner | United States |
 | Sway | United States |
