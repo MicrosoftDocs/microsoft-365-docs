@@ -49,7 +49,7 @@ Use the following articles to configure the prerequisites required so user repor
 
 - Create an anti-malware policy to turn off Malware Zero-hour Auto Purge. See [Use the Security & Compliance Center to create anti-malware policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) to set **Malware Zero-hour Auto Purge** to **Off**.
 
-- Create a spam filter policy to disable Zero-hour Auto Purge (ZAP) for Spam ZAP and Phish ZAP. See [Use the Security & Compliance Center to create anti-spam policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) and clear the **On** checkbox to disable it.
+- Create a spam filter policy to disable Zero-hour Auto Purge (ZAP) for Spam ZAP and Phish ZAP. See [Use the Security & Compliance Center to create anti-spam policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) and clear the **On** checkboxes for Spam ZAP and Phish ZAP.
 
 - Disable the junk email rule. Use [Configure junk email settings on Exchange Online mailboxes](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-worldwide) to disable the junk email rule. Once disabled, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action **Move message to Junk Email folder** or the safelist collection on the mailbox.
 
