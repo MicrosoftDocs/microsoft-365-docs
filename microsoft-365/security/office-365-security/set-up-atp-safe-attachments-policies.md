@@ -1,5 +1,5 @@
 ---
-title: "Set up Office 365 ATP Safe Attachments policies"
+title: "Set up Safe Attachments policies in Office 365 ATP"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,7 +19,7 @@ description: Learn about how to define Safe Attachments policies to protect your
 ms.custom: seo-marvel-apr2020
 ---
 
-# Set up Office 365 ATP Safe Attachments policies
+# Set up Safe Attachments policies in Office 365 ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -59,7 +59,7 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
   - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
   - **Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- For our recommended settings for Safe Attachments policies, see [ATP Safe Attachments settings](recommended-settings-for-eop-and-office365-atp.md#atp-safe-attachments-settings).
+- For our recommended settings for Safe Attachments policies, see [Safe Attachments settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
 - Allow up to 30 minutes for a new or updated policy to be applied.
 
@@ -93,7 +93,7 @@ Creating a custom Safe Attachments policy in the Security & Compliance Center cr
 
    - **Send the attachment to the following email address**: For the action values **Block**, **Monitor**, or **Replace**, you can select **Enable redirect** to send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
 
-     The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [ATP Safe Attachments settings](recommended-settings-for-eop-and-office365-atp.md#atp-safe-attachments-settings).
+     The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [Safe Attachments settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
    - **Apply the above selection if malware scanning for attachments times out or error occurs**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete. Always select this option if you select **Enabled redirect**. Otherwise, messages might be lost.
 
