@@ -70,7 +70,7 @@ Use the following table to help you identify the differences in behavior for the
 
 |Feature or behavior|Label setting: Auto-labeling for Office apps |Policy: Auto-labeling|
 |:-----|:-----|:-----|
-|App dependency|[Yes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
+|App dependency|[Yes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No \* |
 |Restrict by location|No |Yes |
 |Conditions: Trainable classifiers|Yes |No |
 |Conditions: Sharing options and additional options for email|No |Yes |
@@ -80,6 +80,8 @@ Use the following table to help you identify the differences in behavior for the
 |Apply visual markings |Yes |Yes (email only) |
 |Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
 |Label incoming email|No |Yes (encryption not applied) |
+
+\* Auto-labeling isn't currently available in all regions. If your tenant can't support this functionality, the Auto-labeling tab isn't visible in the admin labeling center.
 
 > [!NOTE]
 > When content has been manually labeled, that label will never be replaced by automatic labeling. However, auto-labeling policies can replace a [lower priority label](sensitivity-labels.md#label-priority-order-matters) that was applied by using auto-labeling for Office apps.
@@ -131,7 +133,7 @@ When you select the **Trainable classifiers** option, select one or more of the 
 > [!CAUTION]
 > We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use this built-in classifier and if you are currently using it, you should move your business processes off it. We recommend using the **Targeted Harassment**, **Profanity**, and **Threat** built-in classifiers instead.
 
-For more information about these classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
+For more information about these classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md).
 
 During the preview period for this option, the following apps support trainable classifiers for sensitivity labels:
 
@@ -237,6 +239,8 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     ![Auto-labeling tab](../media/auto-labeling-tab.png)
     
+    > [!NOTE]
+    > If you don't see the **Auto-labeling** tab, this functionality isn't currently available in your region.
 
 3. Select **+ Create auto-labeling policy**. This starts the New policy wizard:
     

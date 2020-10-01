@@ -57,9 +57,12 @@ Depending on the size of the target audience, you can add or remove roll-out ste
 
 Before you begin, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
   
-1. In the admin center, go to the **Settings** \> **Add-ins** page.
+1. In the admin center, go to the **Settings** \> **Add-ins** page. If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** page.
     
 2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
+ 
+    > [!NOTE]
+    > The admin center is getting updated to deployment experience with Integrated Apps . If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
     
 3. Select an option and follow the instructions.
   

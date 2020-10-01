@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 description: "Administrators can set up a data connector to import employee data from their organization's human resources (HR) system to Microsoft 365. This lets you use HR data in insider risk management policies to help you detect activity by specific users that may pose an internal threat to your organization."
 ---
 
-# Set up a connector to import HR data (preview)
+# Set up a connector to import HR data
 
 You can set up a data connector in the Microsoft 365 compliance center to import human resources (HR) data related to events such as a user's resignation or a change in a user's job level. The HR data can then be used by the [insider risk management solution](insider-risk-management.md) to generate risk indicators that can help you identity possible malicious activity or data theft by users inside your organization.
 
@@ -214,7 +214,7 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** in the left nav.
 
-2. On the **Data connectors (preview)** page under **HR**, click **View**.
+2. On the **Data connectors** page under **HR**, click **View**.
 
 3. On the **HR Custom** page, click **Add connector**.
 

@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Admins can set up a connector to import and archive data from the ICE Chat tool into Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive ICE Chat data (preview)
+# Set up a connector to archive ICE Chat data
 
 Use a native connector in the Microsoft 365 compliance center to import and archive financial services chat data from the ICE Chat collaboration tool. After you set up and configure a connector, it connects to your organization's ICE Chat secure FTP (SFTP) site once every day, converts the content of chat messages to an email message format, and then import those items to mailboxes in Microsoft 365.
 
@@ -54,7 +54,7 @@ The first step is to obtain a copy of the public keys for Secure Shell (SSH) and
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
 
-2. On the **Data connectors (preview)** page under **ICE Chat**, click **View**.
+2. On the **Data connectors** page under **ICE Chat**, click **View**.
 
 3. On the **ICE Chat** page, click **Add connector**.
 

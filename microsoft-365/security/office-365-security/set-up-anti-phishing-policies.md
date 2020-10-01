@@ -20,6 +20,9 @@ description: "Admins can learn about the anti-phishing policies that are availab
 
 # Anti-phishing policies in Microsoft 365
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Policies to configure anti-phishing protection settings are available in Microsoft 365 organizations with Exchange Online mailboxes, standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, and Office 365 Advanced Threat Protection (Office 365 ATP) organizations.
 
 ATP anti-phishing policies are only available in organizations that have Office 365 ATP. For example:
@@ -212,4 +215,4 @@ The following advanced phishing thresholds are only available in ATP anti-phishi
 
 - **4 - Most aggressive**: Messages that are identified as phishing with a low, medium, or high degree of confidence are treated as if they were identified with a very high degree of confidence.
 
-The chance of false positives (good messages marked as bad) increases as you increase this setting. For information about the recommended settings, see [Office ATP anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
+The chance of false positives (good messages marked as bad) increases as you increase this setting. For information about the recommended settings, see [ATP anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings).

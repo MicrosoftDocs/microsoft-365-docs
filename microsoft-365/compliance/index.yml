@@ -74,8 +74,8 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Compliance Score
-            url: compliance-score.md
+          - text: Compliance Manager
+            url: compliance-manager.md
           - text: GDPR compliance action plan
             url: gdpr-action-plan.md
           - text: Information protection for GDPR
@@ -84,3 +84,11 @@ landingContent:
             url: iso-action-plan.md
           - text: NIST compliance action plan
             url: nist-action-plan.md
+
+    # Card
+  - title: Deploy compliance solutions
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Deploy information protection for data privacy regulations
+            url: ../solutions/information-protection-deploy.md

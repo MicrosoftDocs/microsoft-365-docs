@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "This article describes using the new Data Investigations (Preview) tool in the Security & Compliance Center to manage a data spillage incident."
+description: "This article describes using the new Data Investigations (preview) tool in the Security & Compliance Center to manage a data spillage incident."
 ---
 
 # Manage a data spillage incident in Microsoft 365
 
-Data spillage is when a document containing confidential, sensitive, or malicious information is released in an untrusted environment. When a data spillage incident is detected, it's important to quickly contain the environment, assess the size and locations of the spillage, examine user activities around it, and then delete the spilled data from the service. Using the Data Investigations (Preview) tool, you can search for sensitive, malicious, or misplaced data across Office 365, investigate to find out what happened, and then take appropriate actions.  
+Data spillage is when a document containing confidential, sensitive, or malicious information is released in an untrusted environment. When a data spillage incident is detected, it's important to quickly contain the environment, assess the size and locations of the spillage, examine user activities around it, and then delete the spilled data from the service. Using the Data Investigations (preview) tool, you can search for sensitive, malicious, or misplaced data across Office 365, investigate to find out what happened, and then take appropriate actions.  
 
 ## Scope of this article
 
@@ -39,7 +39,7 @@ You're informed of a data spillage incident where an employee unknowingly shared
 
 ## Workflow
 
-Here's the workflow for using Data Investigations (Preview) to manage a data spillage incident:
+Here's the workflow for using Data Investigations (preview) to manage a data spillage incident:
 
 1.	Create a data investigation.
 
@@ -60,7 +60,7 @@ Here's the workflow for using Data Investigations (Preview) to manage a data spi
 
 ## Step 1: Create a data investigation
 
-To create an investigation in the Data Investigations (Preview) tool:
+To create an investigation in the Data Investigations (preview) tool:
 
 1. Go to [https://protection.office.com](https://protection.office.com).
     
@@ -68,7 +68,7 @@ To create an investigation in the Data Investigations (Preview) tool:
     
 3. In the security and compliance center, click **Data Investigations**.
  
-4. On the **Data Investigations (Preview)** page, click **Create new investigation**.
+4. On the **Data Investigations (preview)** page, click **Create new investigation**.
     
 5. On the **New data investigation** flyout page, give the investigation a name (required), and then type an optional investigation number and description. The name must be unique in your organization.
 
@@ -76,11 +76,11 @@ To create an investigation in the Data Investigations (Preview) tool:
 
     - Click **Yes** to create the investigation, and display the **Settings** page in the new case. This allows you to add members to the investigation.
     
-    - Click **No** to create the investigation and display it in the list of cases on the **Data Investigations (Preview)** page. If you choose this option, you will be added as the only member of the investigation and the default search and analytics settings will be used. You can add members or change settings anytime after the investigation is created.
+    - Click **No** to create the investigation and display it in the list of cases on the **Data Investigations (preview)** page. If you choose this option, you will be added as the only member of the investigation and the default search and analytics settings will be used. You can add members or change settings anytime after the investigation is created.
 
 7. Click **Save** to create the investigation.
 
-    The new investigation is displayed in the list on the **Data Investigations (Preview)** page. 
+    The new investigation is displayed in the list on the **Data Investigations (preview)** page. 
 
 8. To open an investigation, click the name of the investigation. 
 

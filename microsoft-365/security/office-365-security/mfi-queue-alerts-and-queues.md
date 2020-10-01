@@ -15,6 +15,9 @@ description: "Admins can learn how to use the Queues widget in the Mail flow das
 
 # Queues insight in the Security & Compliance Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 When messages can't be sent from your organization to your on-premises or partner email servers using connectors, the messages are queued in Microsoft 365. Common examples that cause this condition are:
 
 - The connector is incorrectly configured.
