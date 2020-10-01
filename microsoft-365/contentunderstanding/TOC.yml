@@ -8,7 +8,9 @@
           href: form-processing-overview.md
         - name: Difference between document understanding and form processing models 
           href: difference-between-document-understanding-and-form-processing-model.md   
-    - name: Get started with models
+ 
+     - name: Get started with models
+       items: 
         - name: Learn about models through the sample model 
           href: learn-about-document-understanding-models-through-the-sample-model.md
         - name: Create a content center 
