@@ -42,7 +42,8 @@ This information should be presented to both internal stakeholders (which you’
 We hope you enjoyed this simulation and are encouraged to start implementing what you've learned.
 
 ## Next step
-
-****
-
-Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to Understand how to design the solution and architecture that is right for your organization.
+Learn more about the Microsoft Threat Protection pillars through the following interactive guides:
+- [Safeguard your organization with Microsoft Defender for Office 365](https://aka.ms/O365ATP-Interactive-Guide)
+- [Detect suspicious activities and potential attacks with Microsoft Defender for Identity](https://aka.ms/AATP-Interactive-Guide)
+- [Detect threats and manage alerts with Microsoft Cloud App Security](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
+- [Investigate and remediate threats with Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
