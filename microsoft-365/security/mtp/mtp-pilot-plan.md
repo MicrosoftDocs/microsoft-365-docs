@@ -34,7 +34,7 @@ ms.topic: conceptual
         <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="Plan your pilot Microsoft Threat Protection project" />
       <br/>Plan </a><br>
     </td>
-    <td align="center"  >
+    <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
         <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Prepare your Microsoft Threat Protection trial lab or pilot environment" />
       <br/>Prepare </a><br>
@@ -44,7 +44,7 @@ ms.topic: conceptual
         <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Run your Microsoft Threat Protection attack simulations" />
       <br/>Simulate attack </a><br>
     </td>
-    <td align="center"  >
+    <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
         <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Close and summarize your Microsoft Threat Protection pilot" />
       <br/>Close and summarize </a><br>
