@@ -51,7 +51,7 @@ ms.topic: conceptual
     </td>
   </tr>
   <tr>
-    <td style="width:25%; border:0;">
+    <td valign="top" style="width:25%; border:0;">
    
     </td>
     <td valign="top" style="width:25%; border:0;">
