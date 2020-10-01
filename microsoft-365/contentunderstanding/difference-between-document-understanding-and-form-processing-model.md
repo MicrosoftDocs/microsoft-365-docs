@@ -25,6 +25,8 @@ There are two model types that you can use:
 
 While both models are generally used for the same purpose, the key differences listed below affect which ones you can use.
 
+> [!NOTE]
+> See the [SharePoint Syntex adoption: Get started guide](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example) for more information about form processing and document understanding scenario examples.
 
 
 ## Structured versus unstructured and semi-structured content
