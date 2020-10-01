@@ -92,7 +92,7 @@ If you have previously turned on per person MFA, you must turn it off before ena
 1. On the multi-factor authentication page, select each user and set their Multi-Factor auth status to **Disabled**.
 
 ## Next steps
-
+- [What is: Multifactor Authentication](https://support.microsoft.com/en-us/help/4577374/what-is-multifactor-authentication)
 - [How to sign-in after registration](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [How to change their additional verification method](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
 
