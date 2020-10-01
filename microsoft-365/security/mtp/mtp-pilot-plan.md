@@ -66,7 +66,9 @@ ms.topic: conceptual
   </tr>
 </table>
 
-To ensure that your pilot project is a success, it is essential to plan thoroughly with and get approvals from your stakeholders in the beginning. Elements of planning include identifying scope, use cases, requirements, and success criteria.. 
+You're currently in the planning phase.
+
+To ensure that your pilot project is a success, it is essential to plan thoroughly with and get approvals from your stakeholders in the beginning. Elements of planning include identifying scope, use cases, requirements, and success criteria.
 
 This guide walks you through how to plan your pilot project. 
 
