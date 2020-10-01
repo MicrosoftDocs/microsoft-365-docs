@@ -95,14 +95,13 @@ For an overview, including a summary of plans, see [Office 365 Advanced Threat P
 
 Your Global Administrator can configure these protections:
 
-- [Set up ATP Safe Links](office-365-security/set-up-atp-safe-links-policies.md)
-- [Set up ATP Safe Attachments policies](office-365-security/set-up-atp-safe-attachments-policies.md)
-- [Set up a custom "do not rewrite" URLs list](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [Set up a custom blocked URLs list](office-365-security/set-up-a-custom-blocked-urls-list-atp.md)
+- [Set up Safe Links policies](office-365-security/set-up-atp-safe-links-policies.md)
+- [Configure global settings for Safe Links](office-365-security/configure-global-settings-for-safe-links.md)
+- [Set up Safe Attachments policies](office-365-security/set-up-atp-safe-attachments-policies.md)
 
 You'll need to work with your Exchange Online administrator and SharePoint Online administrator to configure ATP for these workloads:
 
-- [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
+- [ATP for SharePoint, OneDrive, and Microsoft Teams](office-365-security/atp-for-spo-odb-and-teams.md)
 
 ## 4: Configure Azure Advanced Threat Protection
 

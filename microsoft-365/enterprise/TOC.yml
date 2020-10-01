@@ -416,13 +416,13 @@
           href: recover-deleted-items-in-a-mailbox.md
         - name: Directory synchronization
           items: 
-            - name: View directory synchronization status
+            - name: View status
               href: view-directory-synchronization-status.md
-            - name: Identify directory synchronization errors
+            - name: Identify errors
               href: identify-directory-synchronization-errors.md
-            - name: Fixing problems with directory synchronization
+            - name: Fix problems
               href: fix-problems-with-directory-synchronization.md
-            - name: Turn off directory synchronization
+            - name: Turn it off
               href: turn-off-directory-synchronization.md
 
 - name: Client and server software
@@ -665,7 +665,7 @@
           href: simulated-ent-base-configuration-microsoft-365-enterprise.md
     - name: Identity
       items: 
-        - name: Password hash sync
+        - name: Password hash synchronization
           href: password-hash-sync-m365-ent-test-environment.md
         - name: Pass-through authentication
           href: pass-through-auth-m365-ent-test-environment.md

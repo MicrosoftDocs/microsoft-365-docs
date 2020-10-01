@@ -197,7 +197,7 @@ For more information about this setting, see [Advanced phishing thresholds in AT
 |---|---|---|---|
 |**Advanced phishing thresholds** <br/><br/> _PhishThresholdLevel_|**2 - Aggressive** <br/><br/> `2`|**3 - More aggressive** <br/><br/> `3`||
 
-### ATP Safe Links settings
+### Safe Links settings
 
 Safe Links in Office 365 ATP includes global settings that apply to all users who are included in active Safe Links policies, and settings that are specific to each Safe Links policy. For more information, see [Safe Links in Office 365 ATP](atp-safe-links.md).
 
@@ -236,7 +236,7 @@ In PowerShell, you use the [New-SafeLinksPolicy](https://docs.microsoft.com/powe
 |**Do not let users click through safe links to original URL** <br/><br/> _DoNotAllowClickThrough_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |
 
-### ATP Safe Attachments settings
+### Safe Attachments settings
 
 Safe Attachments in Office 365 ATP includes global settings that apply to all users who are included in active Safe Attachments policies, and settings that are specific to each Safe Links policy. For more information, see [Safe Attachments in Office 365 ATP](atp-safe-attachments.md).
 
