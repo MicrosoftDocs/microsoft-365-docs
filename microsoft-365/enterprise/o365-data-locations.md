@@ -79,7 +79,7 @@ Microsoft 365 uses service-side technologies that encrypt customer data at rest 
 
 Please review the [Products available by region](https://go.microsoft.com/fwlink/p/?linkid=2093451) page to find data residency information for Microsoft Azure.
 
-### Where can I find data residency information for MIcrosoft Bookings?
+### Where can I find data residency information for Microsoft Bookings?
 
 All customer content is stored in the Exchange Online mailbox that hosts the organization's Bookings.
 
