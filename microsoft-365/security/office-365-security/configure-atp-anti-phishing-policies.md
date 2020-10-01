@@ -20,7 +20,6 @@ description: "Admins can learn how to create, modify, and delete the advanced an
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 ATP anti-phishing policies are part of [Office 365 Advanced Threat Protection](office-365-atp.md). ATP anti-phishing policies can help protect your organization from malicious impersonation-based phishing attacks and other types of phishing attacks. For more information about the differences between anti-phishing policies in Exchange Online Protection (EOP) and ATP anti-phishing policies, see [Anti-phishing protection](anti-phishing-protection.md).
 
 Admins can view, edit, and configure (but not delete) the default ATP anti-phishing policy. For greater granularity, you can also create custom ATP anti-phishing policies that apply to specific users, groups, or domains in your organization. Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.
@@ -58,7 +57,7 @@ To increase the effectiveness of anti-phishing protection, you can create custom
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions before you can do the procedures in this topic:
+- You need to be assigned permissions before you can do the procedures in this article:
 
   - To add, modify, and delete ATP anti-phishing policies, you need to be a member of one of the following role groups:
 
@@ -171,6 +170,8 @@ Use the following procedures to modify ATP anti-phishing policies: a new policy 
 
      - **Automatically include the domains I own**: The default value is **Off**. To turn it on, slide the toggle to **On**.
      - **Include custom domains**: The default value is **Off**. To turn it on, slide the toggle to **On**, and in the **Add domains** box, enter the domain name (for example, contoso.com), press ENTER, and repeat as necessary.
+
+       **Note**: In the Security & Compliance Center, you can enter a maximum of 20 domains. In Exchange Online PowerShell, you can enter a maximum of 50 domains.
 
    - **Actions**: Click **Edit**
 

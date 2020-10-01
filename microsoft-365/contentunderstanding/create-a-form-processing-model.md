@@ -26,6 +26,13 @@ Creating a form processing model involves the following:
 
 ## Requirements
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
+
+</br>
+
+
 You can only create a form processing model in SharePoint document libraries for which it is enabled. If form processing is enabled, you are able to see the **AI Builder** **"Create a form processing model'** under the **Automate** menu in your document library.  If you need processing enabled on your document library, you must contact your SharePoint administrator.
 
  ![Create an AI Builder model](../media/content-understanding/create-ai-builder-model.png)</br>
