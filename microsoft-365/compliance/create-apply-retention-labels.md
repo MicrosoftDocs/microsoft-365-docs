@@ -140,7 +140,7 @@ Use the following sections to learn how published retention labels can be applie
 
 - [Automatically applying a retention label to email by using rules](#automatically-applying-a-retention-label-to-email-by-using-rules)
 
-In addition, when you use [SharePoint Syntex](../contentunderstanding/microsoft-sharepoint-syntex-overview.md), you can [apply a retention label to a document understanding model](../contentunderstanding/apply-a-retention-label-to-a-model.md) so that identified documents are automatically labeled.
+In addition, when you use [SharePoint Syntex](../contentunderstanding/microsoft-sharepoint-syntex-overview.md) and publish retention labels to SharePoint, you can [apply a retention label to a document understanding model](../contentunderstanding/apply-a-retention-label-to-a-model.md) so that identified documents are automatically labeled.
 
 ### Manually apply retention labels 
 
