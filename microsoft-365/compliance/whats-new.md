@@ -22,7 +22,7 @@ ms.custom: seo-marvel-mar2020
 
 # What's new in Microsoft 365 compliance
 
-Whether it be adding new new solutions to the [Microsoft 365 compliance center](microsoft-365-compliance-center.md), updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Take a look below to see what’s new in Microsoft 365 compliance today. 
+Whether it be adding new solutions to the [Microsoft 365 compliance center](microsoft-365-compliance-center.md), updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Take a look below to see what’s new in Microsoft 365 compliance today. 
 
 > [!NOTE]
 > Some compliance features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, try adding yourself to [targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365).
@@ -47,7 +47,7 @@ Add data to a case without having to associate it with a custodian (known as [no
 
 ### Data connectors: HR connector enhancements
 
-(In preview) A new version of the [HR connector](import-hr-data.md) lets you to import data related to job level changes, performance reviews, and performance improvement plans. This data can then be used in several [insider risk policies](insider-risk-management-policies.md) to detect related activity.
+(In preview) A new version of the [HR connector](import-hr-data.md) lets you import data related to job level changes, performance reviews, and performance improvement plans. This data can then be used in several [insider risk policies](insider-risk-management-policies.md) to detect related activity.
 
 ### Retention labels: New support for email
 
