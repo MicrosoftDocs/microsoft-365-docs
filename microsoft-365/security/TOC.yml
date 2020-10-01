@@ -335,6 +335,10 @@
               href: ./office-365-security/anti-phishing-protection.md
             - name: Anti-spoofing protection
               href: ./office-365-security/anti-spoofing-protection.md
+            - name: Safe Attachments in Office 365 ATP
+              href: ./office-365-security/atp-safe-attachments.md            
+            - name: Safe Links in Office 365 ATP
+              href: ./office-365-security/atp-safe-links.md
             - name: Outbound spam protection
               href: ./office-365-security/outbound-spam-controls.md
             - name: Security Dashboard overview
@@ -381,6 +385,8 @@
               href: ./office-365-security/configure-your-spam-filter-policies.md
             - name: Configure connection filtering
               href: ./office-365-security/configure-the-connection-filter-policy.md
+            - name: Configure global settings for Safe Links in Office 365 ATP
+              href: ./office-365-security/configure-global-settings-for-safe-links.md
             - name: Configure junk email settings on Exchange Online mailboxes
               href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
             - name: Configure outbound spam filtering
@@ -401,10 +407,6 @@
               href: ./office-365-security/set-up-atp-safe-links-policies.md
             - name: Set up ATP Safe Attachments policies
               href: ./office-365-security/set-up-atp-safe-attachments-policies.md
-            - name: Set up a custom blocked URLs list
-              href: ./office-365-security/set-up-a-custom-blocked-urls-list-atp.md
-            - name: Set up a custom "do not rewrite" URLs list
-              href: ./office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md
             - name: Set up SPF to help prevent spoofing
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
             - name: Specify a mailbox for user submissions
@@ -510,8 +512,6 @@
               href: ./office-365-security/air-view-investigation-results.md
             - name: View email security reports in the Security & Compliance Center
               href: ./office-365-security/view-email-security-reports.md
-            - name: View information about malicious files
-              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
             - name: View mail flow reports in the Security & Compliance Center
               href: ./office-365-security/view-mail-flow-reports.md
             - name: View the admin audit log in standalone EOP
@@ -604,10 +604,6 @@
               href: ./office-365-security/help-and-support-for-eop.md
             - name: Troubleshooting mail sent to Microsoft 365
               href: ./office-365-security/troubleshooting-mail-sent-to-office-365.md
-            - name: How ATP Safe Links works
-              href: ./office-365-security/how-atp-safe-links-works.md
-            - name: How ATP Safe Attachments works
-              href: ./office-365-security/how-atp-safe-attachments-works.md
             - name: How Microsoft 365 uses SPF to prevent spoofing
               href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md
             - name: How Office 365 validates the From address to prevent phishing
@@ -622,8 +618,6 @@
               href: ./office-365-security/backscatter-messages-and-eop.md
             - name: Bulk complaint level (SCL)
               href: ./office-365-security/bulk-complaint-level-values.md
-            - name: Dynamic Delivery and previewing details
-              href: ./office-365-security/dynamic-delivery-and-previewing.md
             - name: End-user spam notifications
               href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
             - name: Outbound delivery pools
@@ -646,8 +640,6 @@
               href: ./office-365-security/support-for-validation-of-dkim-signed-messages.md
             - name: Virus detection in SharePoint Online
               href: ./office-365-security/virus-detection-in-spo.md
-            - name: What ATP Safe Links warning pages mean
-              href: ./office-365-security/atp-safe-links-warning-pages.md
             - name: What's the difference between junk email and bulk email?
               href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
         - name: Employee training resources
