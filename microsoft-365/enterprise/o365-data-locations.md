@@ -83,7 +83,7 @@ Please review the [Products available by region](https://go.microsoft.com/fwlink
 
 All customer content is stored in the Exchange Online mailbox that hosts the organization's Microsoft Bookings.
 
-### Where can I find data residency information for MIcrosoft Shifts?
+### Where can I find data residency information for Microsoft Shifts?
 
 Microsoft Shift is a native app of MS Teams so this adheres to the MS team's data location.
 
