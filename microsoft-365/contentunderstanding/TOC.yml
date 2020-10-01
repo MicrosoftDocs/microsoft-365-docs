@@ -1,13 +1,16 @@
-    - name: Get started with Microsoft SharePoint Syntex
+    - name: Learn about Microsoft SharePoint Syntex
       items: 
-        - name: Introduction to Microsoft SharePoint Syntex
-          href: microsoft-sharepoint-syntex-overview.md
+        - name: Introduction to SharePoint Syntex
+          href: index.md
         - name: Document understanding overview
           href: document-understanding-overview.md
         - name: Form processing overview 
           href: form-processing-overview.md
         - name: Difference between document understanding and form processing models 
           href: difference-between-document-understanding-and-form-processing-model.md   
+ 
+    - name: Get started with models
+      items: 
         - name: Learn about models through the sample model 
           href: learn-about-document-understanding-models-through-the-sample-model.md
         - name: Create a content center 
