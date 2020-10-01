@@ -81,7 +81,7 @@ Please review the [Products available by region](https://go.microsoft.com/fwlink
 
 ### Where can I find data residency information for Microsoft Bookings?
 
-All customer content is stored in the Exchange Online mailbox that hosts the organization's Bookings.
+All customer content is stored in the Exchange Online mailbox that hosts the organization's Microsoft Bookings.
 
 ### Where can I find data residency information for MIcrosoft Shifts?
 
