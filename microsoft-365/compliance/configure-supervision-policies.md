@@ -49,7 +49,7 @@ Follow these steps to set up and use supervision in your organization:
 
 - **Step 2 (required)**: [Make supervision available in your organization](#step-2-make-supervision-available-in-your-organization-required)
 
-    Add yourself to the Supervisory Review role group so you can set up policies. Anyone who has this role assigned can access the **Supervision** page in the Security & Compliance Center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Add yourself to the Supervisory Review role group so you can set up policies. Anyone who has this role assigned can access the **Supervision** page in the Security & Compliance Center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell).
 
 - **Step 3 (optional)**: [Create custom sensitive information types and custom keyword dictionaries](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
@@ -78,7 +78,7 @@ When you select a Microsoft 365 group for supervised users, the policy monitors 
 
 To manage supervised users in large enterprise organizations, you may need to monitor all users across large groups. You can use PowerShell to configure a distribution group for a global supervision policy for the assigned group. This enables you to monitor thousands of users with a single policy and keep the supervision policy updated as new employees join your organization.
 
-1. Create a dedicated [distribution group](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup?view=exchange-ps) for your global supervision policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
+1. Create a dedicated [distribution group](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) for your global supervision policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
 
     - **MemberDepartRestriction = Closed**. Ensures that users cannot remove themselves from the distribution group.
     - **MemberJoinRestriction = Closed**. Ensures that users cannot add themselves to the distribution group.
@@ -141,7 +141,7 @@ For more information about role groups and permissions, see [Permissions in the 
 
 ### Enable remote PowerShell access for reviewers (if email is hosted on Exchange Online)
 
-1. Follow the guidance in [Enable or disable access to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+1. Follow the guidance in [Enable or disable access to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell).
 
 ## Step 3: Create custom sensitive information types and custom keyword dictionaries (optional)
 

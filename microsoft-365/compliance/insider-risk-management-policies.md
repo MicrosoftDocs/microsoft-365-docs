@@ -3,7 +3,7 @@ title: Insider risk management policies
 description: Learn about insider risk management policies in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -66,7 +66,7 @@ When creating or modifying DLP policies for use with insider risk management pol
 
 Each insider risk management policy created from the **Data leaks** template can only have one DLP policy assigned. Consider creating a dedicated DLP policy that combines the different activities you want to detect and act as triggering events for  insider risk policies that use the **Data leaks** template.
 
-See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) topic for step-by-step guidance to configure DLP policies for your organization.
+See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article for step-by-step guidance to configure DLP policies for your organization.
 
 ### Data leaks by priority users (preview)
 
@@ -110,6 +110,9 @@ You'll also need to have Microsoft Defender ATP configured in your organization 
 
 ### Offensive language in email
 
+>[!IMPORTANT]
+>Starting October 16, 2020, you will no longer be able to create policies using this template. Any active policies that use this template will work until they're permanently removed in January 2021. We are deprecating the Offensive Language built-in classifier that supports this template because it has been producing a high number of false positives. To address risk issues for offensive language, we recommend using Microsoft 365 [communication compliance](communication-compliance.md) policies. For more information about built-in classifiers, see [Getting started with trainable classifiers](classifier-get-started-with.md).
+
 Detecting and taking action to prevent offensive and abusive behavior is a critical component of preventing risk. Built-in classifiers in Microsoft 365 scan sent email messages from Exchange Online mailboxes in your organization for different types of compliance issues. These classifiers use a combination of artificial intelligence and keywords to identify language in email likely to violate anti-harassment policies. Use this template to quickly create a policy that uses these classifiers to automatically detect email message content that may be considered abusive or offensive. Insider risk management uses classifiers that scan sent email messages for English language terms and sentiment for offensive language.
 
 ### Policy template prerequisites and triggering events
@@ -134,7 +137,7 @@ The following table lists the triggering events and prerequisites for policies c
 
 Insider risk management policies support specifying a higher priority for content depending where it is stored or how it is classified. Specifying content as a priority increases the risk score for any associated activity, which in turn increases the chance of generating a high severity alert. However, some activities won't generate an alert at all unless the related content contains built-in or custom sensitive info types or was specified as a priority in the policy.
 
-For example, your organization has a dedicated SharePoint site for a highly confidential project. Data leaks for information in this SharePoint site could compromise the project and would have a significant impact on its success. By prioritizing this SharePoint site in a Data leaks policy, risk scores for qualifying activities are automatically increased. This increases the likelihood that these activities generate an insider risk alert and raises the severity level for the alert.
+For example, your organization has a dedicated SharePoint site for a highly confidential project. Data leaks for information in this SharePoint site could compromise the project and would have a significant impact on its success. By prioritizing this SharePoint site in a Data leaks policy, risk scores for qualifying activities are automatically increased. This prioritization increases the likelihood that these activities generate an insider risk alert and raises the severity level for the alert.
 
 When you create an insider risk management policy in the policy wizard, you can choose from the following priorities:
 

@@ -82,9 +82,9 @@ To initiate the template app, you have to be either a **global administrator**, 
 
 6.	After clicking **Connect**, on the **Connect to Microsoft 365 usage analytics** screen, type in the tenant Id (without dashes) you copied in step (1), and select **Next**.
     
-7. On the next screen, select **Microsoft account** as the **Authentication method** \> **Sign in**. If you choose any other authentication method, the connection to the template app will fail.
+7. On the next screen, select **OAuth2** as the **Authentication method** \> **Sign in**. If you choose any other authentication method, the connection to the template app will fail.
     
-    ![Choose Microsoft account as authentication method](../../media/ab6f0463-c3f7-4088-a605-67c699fa86ad.png)
+    ![Choose Microsoft account as authentication method](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
   
 8. Once the template app is instantiated the Microsoft 365 usage analytics dashboard will be available in Power BI on the web. The initial loading of the dashboard will take between 2 to 30 minutes.
   

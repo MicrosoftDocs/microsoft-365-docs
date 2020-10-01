@@ -55,16 +55,17 @@ Use the following table to help you map your business requirements to retention 
 
 |I want to ...|Documentation|
 |----------------|---------------|
-|Efficiently set retain and delete actions for the organization, or by Microsoft 365 service: <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 Groups <br />- Skype for Business  <br />- Microsoft Teams  |[Create and configure retention policies](create-retention-policies.md)|
-|Let admins and users manually apply a set of retain and delete actions for documents and emails: <br />-  SharePoint <br />- OneDrive <br />- Outlook and Outlook on the web|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
-|Let site admins set a default retention label for all content in a SharePoint library, folder, or document set|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
-|Let users automatically apply a retention label to emails by using Outlook rules|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
-|Automatically apply a set of retain and delete actions to documents and emails |[Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
+|Efficiently set retain and delete actions by Microsoft 365 service: <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 Groups <br />- Skype for Business  <br />- Microsoft Teams <br />- Yammer network |[Create and configure retention policies](create-retention-policies.md)|
+|Let admins and users manually apply retain and delete actions for documents and emails: <br />-  SharePoint <br />- OneDrive <br />- Outlook and Outlook on the web|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
+|Let site admins set default retain and delete actions for all content in a SharePoint library, folder, or document set|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
+|Let users automatically apply retain and delete actions to emails by using Outlook rules|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
+|Let admins apply retain and delete actions to a document understanding model, so that these are automatically applied to identified documents in a SharePoint library|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
+|Automatically apply retain and delete actions to documents and emails |[Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |Start the retention period when an event occurs, such as:  <br />- Employees leave the organization <br />- Contracts expire <br />- End of product lifetime| [Start retention when an event occurs](event-driven-retention.md)|
 |Manage the lifecycle of different document types in SharePoint| [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)|
 |Comply with SEC Rule 17a-4|[Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
-|Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
-| Monitor how and where retention labels are applied | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
+|Make sure somebody reviews and approves before content is permanently deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
+| Monitor how and where retain and delete settings are applied to items | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
 |Use a single records management solution for documents and emails |[Learn about records management](records-management.md) |
 
 If you use retention labels for records management, there are additional scenarios that are unique to retention labels that mark content as a record. See [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).

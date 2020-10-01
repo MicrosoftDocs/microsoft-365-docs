@@ -22,6 +22,9 @@ ms.custom: seo-marvel-apr2020
 
 # How EOP validates the From address to prevent phishing
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Phishing attacks are a constant threat to any email organization. In addition to using [spoofed (forged) sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Exchange Online Protection (EOP) and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this topic. This enforcement was enabled in November 2017.
 
 **Notes**:

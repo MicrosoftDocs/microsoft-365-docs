@@ -23,6 +23,9 @@ search.appverid:
 
 # What's new in Microsoft 365 Security
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
 - Microsoft Threat Protection
 

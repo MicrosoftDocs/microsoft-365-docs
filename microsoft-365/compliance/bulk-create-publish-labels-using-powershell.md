@@ -731,7 +731,7 @@ if ($ResultCSV)
 
 ## Step 4: Run the PowerShell script
 
-First, [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+First, [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 Then, run the script that creates and publishes the retention labels:
   

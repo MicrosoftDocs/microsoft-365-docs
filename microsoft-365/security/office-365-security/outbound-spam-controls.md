@@ -23,6 +23,9 @@ description: "Admins can learn about the outbound spam controls in Exchange Onli
 
 # Outbound spam protection in EOP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, we take managing outbound spam seriously. One customer who intentionally or unintentionally sends spam from their organization can degrade the reputation of the whole service, and can affect email delivery for other customers.
 
 This topic describes the controls and notifications that are designed to help prevent outbound spam, and what you can do if you need to send mass mailings.

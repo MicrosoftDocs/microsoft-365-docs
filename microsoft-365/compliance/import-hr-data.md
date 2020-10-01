@@ -16,9 +16,9 @@ ms.collection: M365-security-compliance
 description: "Administrators can set up a data connector to import employee data from their organization's human resources (HR) system to Microsoft 365. This lets you use HR data in insider risk management policies to help you detect activity by specific users that may pose an internal threat to your organization."
 ---
 
-# Set up a connector to import HR data (preview)
+# Set up a connector to import HR data
 
-You can set up a data connector in the Microsoft 365 compliance center to import human resources (HR) data related to events such as a user's resignation or a change in a user's job level. This HR data can then be used by the [insider risk management solution](insider-risk-management.md) to generate risk indicators that can help you identity possible malicious activity or data theft by users inside your organization.
+You can set up a data connector in the Microsoft 365 compliance center to import human resources (HR) data related to events such as a user's resignation or a change in a user's job level. The HR data can then be used by the [insider risk management solution](insider-risk-management.md) to generate risk indicators that can help you identity possible malicious activity or data theft by users inside your organization.
 
 Setting up a connector for HR data that insider risk management policies can use to generate risk indicators consists of creating a CSV file that contains that contains the HR data, creating an app in Azure Active Directory that's used for authentication, creating an HR data connector in the Microsoft 365 compliance center, and then running a script (on a scheduled basis) that ingests the HR data in CSV files to the Microsoft cloud so it's available to the insider risk management solution.
 
@@ -86,8 +86,8 @@ The following table describes each column in the CSV file for employee resignati
 | **Column**  |  **Description**|
 |:------------|:----------------|
 |**EmailAddress**| Specifies the email address (UPN) of the terminated user.|
-| **ResignationDate** | Specifies the date the user's employment was officially terminated in your organization. For example, this may be the date when the user gave their notice about leaving your organization. This date may be the different than the date of the person's last day of work. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **LastWorkingDate** | Specifies the last day of work for the terminated user. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **ResignationDate** | Specifies the date the user's employment was officially terminated in your organization. For example, this may be the date when the user gave their notice about leaving your organization. This date may be the different than the date of the person's last day of work. Use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **LastWorkingDate** | Specifies the last day of work for the terminated user. Use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
 ### CSV file for job level changes data
@@ -105,10 +105,10 @@ The following table describes each column in the CSV file for job level changes 
 | **Column**|**Description**|
 |:--------- |:------------- |
 | **EmailAddress**  | Specifies the user's email address (UPN).|
-| **EffectiveDate** | Specifies the date that the user's job level was officially changed. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **Remarks**| Specifies the remarks that evaluator has provided about the change of job level. This is a text parameter with a limit of 200 characters. This is an optional parameter. You don't have to include it in the CSV file.|
-| **OldLevel**| Specifies the user's job level before it was changed. This is a free-text parameter and can contain hierarchical taxonomy for your organization. This is an optional parameter. You don't have to include it in the CSV file.|
-| **NewLevel**| Specifies the user's job level after it was changed. This is a free-text parameter and can contain hierarchical taxonomy for your organization. This is an optional parameter. You don't have to include it in the CSV file.|
+| **EffectiveDate** | Specifies the date that the user's job level was officially changed. Use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **Remarks**| Specifies the remarks that evaluator has provided about the change of job level. You can enter a limit of 200 characters. This parameter is optional. You don't have to include it in the CSV file.|
+| **OldLevel**| Specifies the user's job level before it was changed. This is a free-text parameter and can contain hierarchical taxonomy for your organization. This parameter is optional. You don't have to include it in the CSV file.|
+| **NewLevel**| Specifies the user's job level after it was changed. This is a free-text parameter and can contain hierarchical taxonomy for your organization. This parameter is optional. You don't have to include it in the CSV file.|
 |||
 
 ### CSV file for performance review data
@@ -126,9 +126,9 @@ The following table describes each column in the CSV file for performance review
 | **Column**|**Description**|
 |:----------|:--------------|
 | **EmailAddress**  | Specifies the user's email address (UPN).|
-| **EffectiveDate** | Specifies the date that the user was officially informed about the result of their performance review. This can be the date when the performance review cycle ended. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **Remarks**| Specifies any remarks that evaluator has provided to the user for the performance review. This is a text parameter with a limit of 200 characters. This is an optional parameter. You don't have to include it in the CSV file.|
-| **Rating**| Specifies the rating provided for the performance review. This is a text parameter and can contain any free-form text that your organization uses to recognize the evaluation. For example, "3 Met expectations" or "2 Below average". This is a text parameter with a limit of 25 characters. This is an optional parameter. You don't have to include it in the CSV file.|
+| **EffectiveDate** | Specifies the date that the user was officially informed about the result of their performance review. This can be the date when the performance review cycle ended. Use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **Remarks**| Specifies any remarks that evaluator has provided to the user for the performance review. This is a text parameter with a limit of 200 characters. This parameter is optional. You don't have to include it in the CSV file.|
+| **Rating**| Specifies the rating provided for the performance review. This is a text parameter and can contain any free-form text that your organization uses to recognize the evaluation. For example, "3 Met expectations" or "2 Below average". This is a text parameter with a limit of 25 characters. This parameter is optional. You don't have to include it in the CSV file.|
 |||
 
 ### CSV file for performance improvement plan data
@@ -214,7 +214,7 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** in the left nav.
 
-2. On the **Data connectors (preview)** page under **HR**, click **View**.
+2. On the **Data connectors** page under **HR**, click **View**.
 
 3. On the **HR Custom** page, click **Add connector**.
 

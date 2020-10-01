@@ -1,5 +1,5 @@
 ---
-title: Investigate incidents in Microsoft Threat Protection
+title: Incidents overview in Microsoft Threat Protection
 description: Investigate incidents seen across devices, users, and mailboxes.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
@@ -22,6 +22,9 @@ search.appverid:
 ---
 
 # Incidents overview in Microsoft Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 - Microsoft Threat Protection

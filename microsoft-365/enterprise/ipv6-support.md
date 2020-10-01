@@ -45,6 +45,10 @@ If the program that you use to connect to SharePoint Online supports IPv6, it wi
 ### Skype for Business and IPv6
 
 Please be aware IPv6 is not supported in Skype for Business and can no longer be enabled.
+
+### Microsoft Teams and IPV6
+
+Microsoft Teams Direct Routing only supports IPv4. The Microsoft Teams service and client support both IPv4 and IPv6. If you want to control communications to Microsoft Teams, use the IP address ranges in [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md).
   
 ### Exchange Online Protection and IPv6
 
