@@ -14,7 +14,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
-- M365initiative-CoreDeploy
+- M365initiative-coredeploy
 f1.keywords:
 - NOCSH
 description: "Guidance for using VPN split tunneling with Office 365 to optimize Office 365 connectivity for remote users."
