@@ -3,6 +3,7 @@ title: "Introduction to Microsoft SharePoint Syntex"
 ms.author: efrene
 author: efrene
 manager: pamgreen
+ms.reviewer: ssquires, toresing
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
