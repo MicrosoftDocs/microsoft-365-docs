@@ -103,9 +103,7 @@ Here are some considerations for Dynamic Delivery and forwarded messages:
 
 - If the forwarded recipient is not protected by a Safe Attachments policy, the message and attachments will be delivered without any Safe Attachments scanning or attachment placeholders.
 
-## Scenarios where Safe Attachments doesn't scan messages
-
-There are scenarios where Safe Attachments is unable to scan messages:
+There are scenarios where Dynamic Delivery is unable to replace attachments in messages. These scenarios include:
 
 - Messages in public folders.
 
@@ -121,7 +119,7 @@ There are scenarios where Safe Attachments is unable to scan messages:
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) encrypted messages.
 
-- You configured the Dynamic Delivery action in a Safe Attachments policy, but the recipient doesn't support Dynamic Delivery (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Office 365 ATP](set-up-atp-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the Safe Links is configured).
+- You configured the Dynamic Delivery action in a Safe Attachments policy, but the recipient doesn't support Dynamic Delivery (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Office 365 ATP](set-up-atp-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the [global settings for Safe Links](configure-global-settings-for-safe-links.md) are configured).
 
 ## Submitting files for malware analysis
 
