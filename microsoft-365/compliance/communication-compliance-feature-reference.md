@@ -189,7 +189,7 @@ For information about trainable classifiers in Microsoft 365, see [Getting start
 ### Conditional settings
 <a name="ConditionalSettings"> </a>
 
-The conditions you choose for the policy apply to communications from both email and third-party sources in your organization (like from Instant Bloomberg or DropBox).
+The conditions you choose for the policy apply to communications from both email and third-party sources in your organization (like from Instant Bloomberg).
 
 The following table explains more about each condition.
   

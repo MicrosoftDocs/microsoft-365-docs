@@ -215,4 +215,4 @@ The following advanced phishing thresholds are only available in ATP anti-phishi
 
 - **4 - Most aggressive**: Messages that are identified as phishing with a low, medium, or high degree of confidence are treated as if they were identified with a very high degree of confidence.
 
-The chance of false positives (good messages marked as bad) increases as you increase this setting. For information about the recommended settings, see [Office ATP anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
+The chance of false positives (good messages marked as bad) increases as you increase this setting. For information about the recommended settings, see [ATP anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings).

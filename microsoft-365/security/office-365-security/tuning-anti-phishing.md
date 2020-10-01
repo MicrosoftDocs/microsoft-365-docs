@@ -27,11 +27,11 @@ If a recipient's account was compromised as a result of the phishing message, fo
 
 If your subscription includes Advanced Threat Protection (ATP), you can use [Office 365 Threat Intelligence](office-365-ti.md) to identify other users who also received the phishing message. You have additional options to block phishing messages:
 
-- [ATP Safe Links](set-up-atp-safe-links-policies.md)
+- [Safe Links in Office 365 ATP](set-up-atp-safe-links-policies.md)
 
-- [ATP Safe Attachments](set-up-atp-safe-attachments-policies.md)
+- [Safe Attachments in Office 365 ATP](set-up-atp-safe-attachments-policies.md)
 
-- [ATP anti-phishing policies in Microsoft 365](configure-atp-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
+- [Anti-phishing policies in Office 365 ATP](configure-atp-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
 
 Verify these ATP features are turned on.
 
