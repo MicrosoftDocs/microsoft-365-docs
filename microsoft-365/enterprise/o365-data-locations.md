@@ -89,7 +89,7 @@ Microsoft Shifts is a native app of Microsoft Teams so this adheres to the data 
 
 ### Where can I find data residency information for Microsoft To Do?
 
-Microsoft To do Data is stored as tasks in your Exchange Online mailbox, which also hosts data from other Exchange modules such as emails, events, contacts, and/or notes.
+Microsoft To Do data is stored as tasks in your Exchange Online mailbox, which also hosts data from other Exchange modules such as emails, events, contacts, and/or notes.
 
 ### What are Multi-Geo Capabilities in Microsoft 365?
 
