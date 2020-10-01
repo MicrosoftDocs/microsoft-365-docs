@@ -53,7 +53,7 @@ SharePoint Syntex integrates with Microsoft 365 compliance features like:
 - Retention labels that define records policy based on document age or external events.
 - Sensitivity labels that set DLP, encryption, sharing, and conditional access policies.
 
-Users can apply labels, or they can be applied automatically by SharePoint SharePoint Syntex AI models. Analytics and file plans provide scaled management of label usage and policies.
+Users can apply labels, or they can be applied automatically by SharePoint Syntex AI models. Analytics and file plans provide scaled management of label usage and policies.
 
 ## Identify pilot business scenarios to optimize
 
