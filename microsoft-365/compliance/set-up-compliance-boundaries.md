@@ -277,6 +277,31 @@ Keep the following limitations in mind when managing eDiscovery cases and invest
 
 - Search permissions filters aren't applied to Exchange public folders.
 
+## More information
+
+For OneDrive boundaries
+-	Note that OneDrive boundary values are synchronized from Exchange
+-	This synchronization is updated every 7 days
+-	Synchronization occurs only if the user owning the OneDrive has a full Exchange License and at least 10mb of user content in the mailbox
+-	This requires that the user as viewed in Exchange has the right AD attributes and is synchronized from Active Directory, use the Get-User cmdlet in Exchange to verify
+
+o	The attribute “C” maps to the CountryOrRegion property returned by Get-User  cmdlet,  the cmdlet returns a localized country name, which it translates from the two letter country code, for more details on this look at set-user.
+-	When the Exchange user mailbox is de-licensed or soft deleted synchronization to OneDrive will cease and the last stamped value will remain in effect
+
+o	If depending on compliance boundaries we do not recommend deleting the exchange mailbox independent of the onedrive
+
+-	There are circumstances when a user can have more than one onedrive (returning employee etc.) in these case only the primary onedrive associated with the user in AAD will be synchronized 
+
+
+For Exchange Boundaries
+-	This requires that the user as viewed in Exchange has the right AD attributes and is synchronized from Active Directory, use the Get-User cmdlet in Exchange to verify
+-	When the Exchange user mailbox is de-licensed or soft deleted AAD attributes are no longer synced to the user, if the user is on hold the held content will be subject to the last AAD attribute applied to the mailbox
+
+For SharePoint/OneDrive/Mailbox Content boundaries:
+-	We depend on content being stamped with attributes and available in the index for boundaries on SharePoint/OneDrive and Mailbox Content filters
+-	We do not recommend the use of -not() or exclusion filters for content based boundaries as it can have unexpected results for content that has not yet been marked in the index
+
+
 ## Frequently asked questions
 
 **Who can create and manage search permissions filters (using New-ComplianceSecurityFilter and Set-ComplianceSecurityFilter cmdlets)?**
@@ -306,6 +331,3 @@ If the region specified in the search permissions filter doesn't exist in your o
 **What is the maximum number of search permissions filters that can be created in an organization?**
   
 There is no limit to the number of search permissions filters that can be created in an organization. However, search performance will be impacted when there are more than 100 search permissions filters. To keep the number of search permissions filters in your organization as small as possible, create filters that combine rules for Exchange, SharePoint, and OneDrive into a single search permissions filter whenever possible.
-
-## More information
-
