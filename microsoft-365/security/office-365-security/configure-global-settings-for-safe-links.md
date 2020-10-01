@@ -50,11 +50,11 @@ You can configure the global Safe Links settings in the Security & Compliance Ce
   - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
   - **Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- For our recommended values for the global settings for Safe Links, see [ATP Safe Links settings](recommended-settings-for-eop-and-office365-atp.md#atp-safe-links-settings).
+- For our recommended values for the global settings for Safe Links, see [Safe Links settings](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings).
 
 - Allow up to 30 minutes for a new or updated policy to be applied.
 
-- [New features are continually being added to ATP](office-365-atp.md#new-features-in-office-365-atp). As new features are added, you may need to make adjustments to your existing ATP Safe Links policies.
+- [New features are continually being added to ATP](office-365-atp.md#new-features-in-office-365-atp). As new features are added, you may need to make adjustments to your existing Safe Links policies.
 
 ## Configure the "Block the following URLs" list in the Security & Compliance Center
 

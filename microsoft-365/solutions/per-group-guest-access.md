@@ -16,9 +16,9 @@ f1.keywords: NOCSH
 description: "Block guest users from a specific group"
 ---
 
-# Block guest users from a specific group
+# Block guest users from a specific Microsoft 365 group or Microsoft Teams team
 
-If you want to allow guest access to most groups, but have some where you want to prevent guest access, you can block guest access for individual groups.
+If you want to allow guest access to most groups and teams, but have some where you want to prevent guest access, you can block guest access for individual groups and teams. (Blocking guest access to a team is done by blocking guest access to the associated group.)
 
 If you use sensitivity labels in your organization, we recommend using them to control guest access on a per-group basis. For information about how to do this, [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites). This is the recommended approach.
 
