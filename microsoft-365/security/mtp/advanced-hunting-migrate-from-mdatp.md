@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 **Applies to:**
 - Microsoft Threat Protection
 
-Move your advanced hunting workflows from Microsoft Defender ATP to proactively hunt for threats using a broader set of data. In Microsoft Threat Protection, advanced hunting gives you access to data from other Microsoft 365 security solutions you've deployed, including:
+Move your advanced hunting workflows from Microsoft Defender ATP to proactively hunt for threats using a broader set of data. In Microsoft Threat Protection, you get access to data from other Microsoft 365 security solutions, including:
 
 - Microsoft Defender Advanced Threat Protection
 - Office 365 Advanced Threat Protection
@@ -35,9 +35,7 @@ Move your advanced hunting workflows from Microsoft Defender ATP to proactively 
 >[!NOTE]
 >Most Microsoft Defender ATP customers can [use Microsoft Threat Protection without additional licenses](prerequisites.md#licensing-requirements). To start transitioning your advanced hunting workflows from Microsoft Defender ATP, [turn on Microsoft Threat Protection](mtp-enable.md).
 
-You can transition without affecting your existing Microsoft Defender ATP workflows. Saved queries remain intact, and custom detection rules in Microsoft Defender ATP continue to run and generate alerts. They will, however, be visible in Microsoft Threat Protection. 
-
-With Microsoft Threat Protection, existing queries might return syntax errors because of schema differences.
+You can transition without affecting your existing Microsoft Defender ATP workflows. Saved queries remain intact, and custom detection rules continue to run and generate alerts. They will, however, be visible in Microsoft Threat Protection. 
 
 ## Schema tables in Microsoft Threat Protection only
 The [Microsoft Threat Protection advanced hunting schema](advanced-hunting-schema-tables.md) provides additional tables containing data from various Microsoft 365 security solutions. The following tables are available only in Microsoft Threat Protection:
@@ -45,39 +43,42 @@ The [Microsoft Threat Protection advanced hunting schema](advanced-hunting-schem
 | Table name | Description |
 |------------|-------------|
 | [AlertEvidence](advanced-hunting-alertevidence-table.md) | Files, IP addresses, URLs, users, or devices associated with alerts |
-| [AlertInfo](advanced-hunting-alertinfo-table.md) | Alerts from Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security, and Azure ATP, including severity information and threat categorization  |
+| [AlertInfo](advanced-hunting-alertinfo-table.md) | Alerts from Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security, and Azure ATP, including severity information and threat categories  |
 | [AppFileEvents](advanced-hunting-appfileevents-table.md) | File-related activities in cloud apps and services |
 | [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | Information about files attached to emails |
 | [EmailEvents](advanced-hunting-emailevents-table.md) | Microsoft 365 email events, including email delivery and blocking events |
 | [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | Security events that occur post-delivery, after Microsoft 365 has delivered the emails to the recipient mailbox |
 | [EmailUrlInfo](advanced-hunting-emailurlinfo-table.md) | Information about URLs on emails |
-| [IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) | Events involving an on-premises domain controller running Active Directory (AD). This table covers a range of identity-related events as well as system events on the domain controller. |
+| [IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) | Events involving an on-premises domain controller running Active Directory (AD). This table covers a range of identity-related events and system events on the domain controller. |
 | [IdentityInfo](advanced-hunting-identityinfo-table.md) | Account information from various sources, including Azure Active Directory |
 | [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md) | Authentication events on Active Directory and Microsoft online services |
-| [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | Query activities performed against Active Directory objects, such as users, groups, devices, and domains |
+| [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | Queries for Active Directory objects, such as users, groups, devices, and domains |
 
-## Map missing device alert table
-The `AlertInfo` and `AlertEvidence` tables replace the `DeviceAlertEvents` table in the Microsoft Defender ATP schema. In addition to device alerts, these two tables include data about alerts for identities, apps, and emails.
+## Map DeviceAlertEvents table
+The `AlertInfo` and `AlertEvidence` tables replace the `DeviceAlertEvents` table in the Microsoft Defender ATP schema. In addition to data about device alerts, these two tables include data about alerts for identities, apps, and emails.
 
-Use this comparison to check how `DeviceAlertEvents` columns map to columns in the `AlertInfo` and `AlertEvidence` tables. The `AlertEvidence` table has many other columns that aren't listed. 
+Use the comparison in the following table to check how `DeviceAlertEvents` columns map to columns in the `AlertInfo` and `AlertEvidence` tables. 
+
+>[!TIP]
+>In addition to the columns in the comparison, the `AlertEvidence` table includes many other columns that provide a more holistic picture of alerts from various sources. [See all AlertEvidence columns](advanced-hunting-alertevidence-table.md) 
 
 | DeviceAlertEvents | AlertInfo | AlertEvidence | Description |
 |-------------|-----------|-------------|-------------|
 | `AlertId` | `AlertId` | `AlertId` | Unique identifier for the alert |
 | `Timestamp` | `Timestamp` | `Timestamp` | Date and time when the event was recorded |
-| `DeviceId` |  | `DeviceId` | Unique identifier for the machine in the service |
-| `DeviceName` |  | `DeviceName` | Fully qualified domain name (FQDN) of the device |
-| `Severity` | `Severity` |  | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert |
-| `Category` | `Category` |  | Type of threat indicator or breach activity identified by the alert |
-| `Title` | `Title` |  | Title of the alert |
-| `FileName` |  | `FileName` | Name of the file that the recorded action was applied to |
-| `SHA1` |  | `SHA1` | SHA-1 of the file that the recorded action was applied to |
-| `RemoteUrl` |  | `RemoteUrl` | URL or fully qualified domain name (FQDN) that was being connected to |
-| `RemoteIP` |  | `RemoteIP` | IP address that was being connected to |
-| `AttackTechniques` | `AttackTechniques` |  | MITRE ATT&CK techniques associated with the activity that triggered the alert |
-| `ReportId` |  |  | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
-| `Table` |  |  | Table that contains the details of the event |
-| | | `AdditionalFields` | Additional information about the event in JSON array format |
+| `DeviceId` | - | `DeviceId` | Unique identifier for the device in Microsoft Defender ATP |
+| `DeviceName` | - | `DeviceName` | Fully qualified domain name (FQDN) of the device |
+| `Severity` | `Severity` | - | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert |
+| `Category` | `Category` | - | Type of threat indicator or breach activity identified by the alert |
+| `Title` | `Title` | - | Title of the alert |
+| `FileName` | - | `FileName` | Name of the file that the recorded action was applied to |
+| `SHA1` | - | `SHA1` | SHA-1 of the file that the recorded action was applied to |
+| `RemoteUrl` | - | `RemoteUrl` | URL or fully qualified domain name (FQDN) that was being connected to |
+| `RemoteIP` | - | `RemoteIP` | IP address that was being connected to |
+| `AttackTechniques` | `AttackTechniques` | - | MITRE ATT&CK techniques associated with the activity that triggered the alert |
+| `ReportId` | - | - | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
+| `Table` | - | - | Table that contains the details of the event |
+| - | - | `AdditionalFields` | Additional information about the event in JSON array format |
 
 
 ## Adjust existing Microsoft Defender ATP queries
@@ -86,14 +87,13 @@ Microsoft Defender ATP queries will work as-is unless they reference the `Device
 
 - Replace `DeviceAlertEvents` with `AlertInfo`.
 - Join the `AlertInfo` and the `AlertEvidence` tables on `AlertId` to get equivalent data. Refer to the comparison to identify how columns generally map.
-- Instead of using `ReportId` to check other tables for more information about the event that triggered an alert, parse the `AdditionalFields` column.
 
 The following query uses `DeviceAlertEvents` in Microsoft Defender ATP to get the alerts that involve _powershell.exe_:
 
 ```kusto
 DeviceAlertEvents
 | where Timestamp > ago(7d) 
-| where AttackTechniques has "PowerShell (T1086)" and FileName == "powershell.exe
+| where AttackTechniques has "PowerShell (T1086)" and FileName == "powershell.exe"
 ```
 The following query has been adjusted for use in Microsoft Threat Protection. Instead of checking the file name directly from `DeviceAlertEvents`, it joins `AlertEvidence` and checks the file name in that table.
 
