@@ -26,6 +26,7 @@ ms.topic: conceptual
 
 **Applies to:**
 - Microsoft Threat Protection
+You're currently in the close and summary phase.
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
@@ -65,8 +66,6 @@ ms.topic: conceptual
 </td>
   </tr>
 </table>
-
-You're currently in the close and summarize phase.
 
 You’ve just simulated an advanced memory-only attack that executed code remotely on a domain controller. You’ve seen how Microsoft Defender ATP and Azure ATP detects and alerts on stealthy malicious activity. You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft 365 Security Center portal, enabling SOC analysts to investigate and take necessary action. You’ve also created an advanced hunting query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.
 
