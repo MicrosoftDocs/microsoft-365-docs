@@ -1,5 +1,5 @@
 ---
-title: "Overview of the Contoso Corporation"
+title: "Overview of Contoso Corporation"
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -18,11 +18,11 @@ ms.custom:
 description: Understand the Contoso Corporation as a business and the tiered structure of its worldwide offices.
 ---
 
-# Overview of the Contoso Corporation
+# Overview of Contoso Corporation
 
 ![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
-The Contoso Corporation is a multi-national business with headquarters in Paris, France. It's a manufacturing, sales, and support organization with more than 100,000 products.
+The Contoso Corporation is a multinational business with headquarters in Paris. It's a manufacturing, sales, and support organization with more than 100,000 products.
 
 ## Contoso around the world
 
@@ -32,11 +32,11 @@ Figure 1 shows the headquarters office in Paris and regional hub and satellite o
 
 **Figure 1: Contoso offices around the world**
  
-Contoso's offices around the world have a three-tier design.
+Contoso has three tiers of offices:
 
 - Headquarters
 
-  Contoso headquarters is a large corporate campus on the outskirts of Paris with dozens of buildings for administrative, engineering, and manufacturing facilities. All of the Contoso datacenters and its internet presence are housed in the Paris headquarters.
+  Contoso headquarters is a corporate campus on the outskirts of Paris with dozens of buildings for administrative, engineering, and manufacturing facilities. All of the Contoso datacenters and its internet presence are housed in the Paris headquarters.
 
   The headquarters has 25,000 workers.
 
@@ -48,20 +48,20 @@ Contoso's offices around the world have a three-tier design.
 
 - Satellite offices
 
-  Satellite offices contain 80-percent sales and support staff. They and provide an on-site presence for Contoso customers in key cities or subregions. Each satellite office is connected to a regional hub through a high-bandwidth WAN link.
+  Satellite offices contain 80-percent sales and support staff. They provide an on-site presence for Contoso customers in key cities or subregions. Each satellite office is connected to a regional hub through a high-bandwidth WAN link.
 
   The satellite offices have an average of 250 workers.
 
-25 percent of the Contoso workforce is mobile-only, with a higher percentage of mobile-only workers in the regional hubs and satellite offices. Providing better support for mobile-only workers is an important business goal for Contoso.
+About 25 percent of the Contoso workforce is mobile-only. The regional hubs and satellite offices have a higher percentage of these workers. Providing better support for mobile-only workers is an important business goal for Contoso.
 
 ## Design considerations for Microsoft 365 for enterprise
 
-The Contoso IT architects identified the following design requirements and considerations for deploying Microsoft 365 for enterprise:
+The Contoso IT architects identified the following design requirements factors for deploying Microsoft 365 for enterprise:
 
 - Multiple geographic locations with local regulations and compliance requirements
 - A central intranet datacenter in the headquarters office and regional application servers that host internal line-of-business applications
 - An existing Microsoft Endpoint Configuration Manager infrastructure
-- A mix of client computing devices, including Windows, Mac, and Linux
+- A mix of client computing devices, that run Windows, Mac, and Linux
 - A mix of personal and company-owned mobile devices, including iOS (iPhone and iPad) and Android smart phones and tablets
 - Many remote and mobile workers
 - Many business partners
@@ -70,7 +70,7 @@ The Contoso IT architects identified the following design requirements and consi
 
 ## Next step
 
-[Learn](contoso-infra-needs.md) about the Contoso Corporation on-premises IT infrastructure and how their business needs are addressed with Microsoft 365 for enterprise.
+[Learn](contoso-infra-needs.md) about the Contoso Corporation on-premises IT infrastructure and how the company's business needs are addressed with Microsoft 365 for enterprise.
 
 ## See also
 

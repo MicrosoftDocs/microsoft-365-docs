@@ -24,12 +24,12 @@ Contoso upgraded their PCs to Windows 10 Enterprise and Microsoft 365 Apps for e
 
 - All PCs should run Microsoft 365 Apps for enterprise.
 - Deployment should use existing management tools and infrastructure when possible.
-- Deployment must support multiple languages and existing architectures on user's devices.
-- PCs should stay up-to-date and secure with minimal IT administrative costs and with minimal impact to users.
+- Deployment must support multiple languages and existing architectures on users' devices.
+- PCs should stay up-to-date and secure with minimal IT administrative costs and minimal impact to users.
 
 ## Deployment tools
 
-Based on their requirements, Contoso chose to deploy Windows 10 Enterprise and Microsoft 365 Apps for enterprise with Configuration Manager (Current Branch). Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Office, including:
+Based on their requirements, Contoso chose to deploy Windows 10 Enterprise and Microsoft 365 Apps for enterprise through Configuration Manager (Current Branch). Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Office, including:
 
 - Peer cache, which can help with limited network capacity when deploying to devices in remote locations.
 - The Office Client Management dashboard, which makes it easy to deploy Office and monitor updates and gives administrators access to the latest deployment and management features.
@@ -40,7 +40,7 @@ In addition to Configuration Manager, Contoso used the [Readiness Toolkit for Of
 
 ## Managing the deployment and updates
 
-Microsoft 365 Apps for enterprise has a new release model: Office as a service. The service model makes it easy to stay up to date with new features. But it often requires a change in approach for IT departments in how new releases are deployed and tested. To minimize compatibility issues and to ensure their computers stayed up to date, Contoso deployed Windows and Office in two stages: 
+Microsoft 365 Apps for enterprise has a new release model: Office as a service. The service model makes it easy to stay up to date with new features. But it often requires a change in approach for IT departments in how new releases are deployed and tested. To minimize compatibility issues and to ensure their computers stay up to date, Contoso deployed Windows and Office in two stages:
 
 - First, they deployed Microsoft 365 Apps for enterprise to a small set of representative devices across the organization. This pilot group was used to test apps, add-ins, and hardware with Microsoft 365 Apps for enterprise.
 - Four months later, after addressing all critical issues with apps, add-ins, and hardware in the pilot group, Contoso deployed Microsoft 365 Apps for enterprise to the rest of the devices in the organization (the broad group).

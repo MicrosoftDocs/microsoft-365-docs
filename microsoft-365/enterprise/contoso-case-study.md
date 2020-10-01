@@ -18,13 +18,13 @@ ms.custom:
 description: How a fictional but representative global organization adopted Microsoft 365 for enterprise.
 ---
 
-# Microsoft 365 for enterprise for the Contoso Corporation
+# Microsoft 365 for enterprise for Contoso Corporation
 
-Microsoft 365 for enterprise is Microsoft’s premier cloud offering that combines local and cloud-based productivity apps and services with Windows 10 Enterprise and advanced security features. It's a complete, intelligent solution that that enables everyone to work together creatively and securely.
+Microsoft 365 for enterprise is the Microsoft premier cloud offering that combines local and cloud-based productivity apps and services with Windows 10 Enterprise and advanced security features. It's a complete, intelligent solution that that enables everyone to work together creatively and securely.
 
-The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. The company has deployed Microsoft 365 for enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security.
+Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. The company deployed Microsoft 365 for enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security.
 
-The overall goal of Contoso for Microsoft 365 for enterprise is to accelerate the company's digital transformation by using cloud services to bring together its employees, partners, data, and processes to create customer value and maintain its competitive advantage in a digital-first world.
+The company's overall goal for Microsoft 365 for enterprise is to accelerate its digital transformation by using cloud services to bring together its employees, partners, data, and processes to create customer value and maintain its competitive advantage in a digital-first world.
 
 See these articles for the details:
 
@@ -32,17 +32,16 @@ See these articles for the details:
 
   Contoso is a global manufacturing, sales, and support organization with more than 100,000 products.
 
-- [Contoso's IT infrastructure and needs](contoso-infra-needs.md)
-Contoso has been transitioning from an on-premises, centralized IT infrastructure to a cloud-inclusive setup that incorporates cloud-based personal productivity workloads, applications, and hybrid scenarios
-  .
+- [Contoso IT infrastructure and needs](contoso-infra-needs.md)
+Contoso is transitioning from an on-premises, centralized IT infrastructure to a cloud-inclusive setup that incorporates cloud-based personal productivity workloads, applications, and hybrid scenarios
 
 - [Networking](contoso-networking.md)
 
-  Contoso network engineers have optimized traffic for their on-premises users to their intranet edge and to the closest Microsoft network location on the Internet.
+  Contoso network engineers optimized traffic for their on-premises users to their intranet edge and to the closest Microsoft network location on the Internet.
 
 - [Identity](contoso-identity.md)
 
-  The Contoso identity in the cloud solution leverages their on-premises Active Directory Domain Services (AD DS) forest. It includes federated authentication with their existing trusted, third-party identity providers.
+  The Contoso identity-in-the-cloud solution leverages their on-premises Active Directory Domain Services (AD DS) forest. It includes federated authentication with their existing trusted, third-party identity providers.
 
 - [Windows 10 Enterprise](contoso-win10.md)
 
@@ -54,11 +53,11 @@ Contoso has been transitioning from an on-premises, centralized IT infrastructur
 
 - [Mobile device management](contoso-mdm.md)
 
-  With many roaming employees and both company and personal smart phones and tablets, Contoso uses mobile device management to enroll and secure the devices and their data and manage apps.
+  With many roaming employees with both company and personal smart phones and tablets, Contoso uses mobile device management to enroll and secure devices and their data and manage apps.
 
 - [Information protection](contoso-info-protect.md)
 
-  To ensure that both common and high-value data are identified, labeled, and subject to layers of security, Contoso enforces its data security policies with Microsoft 365 for enterprise information protection.
+  To ensure that both common and high-value data are identified, labeled, and subject to layers of security, Contoso enforces its data-security policies with Microsoft 365 for enterprise information protection.
 
 - [Summary of Microsoft 365 for enterprise security](contoso-security-summary.md)
 
@@ -66,15 +65,15 @@ Contoso has been transitioning from an on-premises, centralized IT infrastructur
 
 - [Team for a top-secret project](../solutions/contoso-team-for-top-secret-project.md)
 
-  To create a secure collaboration environment for a top secret project, Contoso used a team with security isolation.
+  To create a secure collaboration environment for a top-secret project, Contoso used a team with security isolation.
 
 - [Teams voice migration overview](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
 
-  Learn how Contoso migrated their on-premises users to Teams for unified communication, collaboration, and voice.
+  Learn how Contoso migrated their on-premises users to Microsoft Teams for unified communication, collaboration, and voice.
 
 ## Next step
 
-[Learn](contoso-overview.md) about the Contoso Corporation, their worldwide offices, and the design considerations that were addressed when they deployed Microsoft 365 for enterprise.
+[Learn](contoso-overview.md) about the Contoso Corporation and the design considerations that were addressed when they deployed Microsoft 365 for enterprise.
 
 
 ## See also

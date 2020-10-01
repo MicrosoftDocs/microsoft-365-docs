@@ -15,7 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 
-description: Understand the basic structure of the Contoso on-premises IT infrastructure and how its business needs are met by Microsoft 365 for enterprise.
+description: Understand the basic structure of the Contoso on-premises IT infrastructure and how the company's business needs are met by Microsoft 365 for enterprise.
 ---
 
 # Contoso IT infrastructure and business needs
@@ -86,7 +86,7 @@ Remote and mobile access and business partners:
 
 - Improve security for remote and mobile workers
 
-  Institute bring your own device (BYOD) and company-owned device management to ensure secured access, correct application behavior, and company data protection.
+  Implement bring your own device (BYOD) and company-owned device management to ensure secured access, correct application behavior, and company data protection.
 
 - Reduce remote access infrastructure for employees
 
@@ -100,7 +100,7 @@ Compliance:
 
 - Adhere to regional regulatory requirements
 
-  Become and remain compliant with industry and regional regulations for data storage, encryption, data privacy, and personal data regulations, such as the General Data Protection Regulation (GDPR) for the Europe Union.
+  Ensure compliance with industry and regional regulations for data storage, encryption, data privacy, and personal data regulations, such as the General Data Protection Regulation (GDPR) for the Europe Union.
 
 Management:
 

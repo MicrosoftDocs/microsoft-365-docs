@@ -20,17 +20,17 @@ description: How Contoso takes advantage of Identity as a Service (IDaaS) and pr
 
 # Identity for the Contoso Corporation
 
-Microsoft provides Identity as a Service (IDaaS) across its cloud offerings with Azure Active Directory (Azure AD). To adopt Microsoft 365 for enterprise, the Contoso IDaaS solution had to use their on-premises identity provider and still include federated authentication with their existing trusted, third-party identity providers.
+Microsoft provides Identity as a Service (IDaaS) across its cloud offerings through Azure Active Directory (Azure AD). To adopt Microsoft 365 for enterprise, the Contoso IDaaS solution had to use their on-premises identity provider and include federated authentication with their existing trusted, third-party identity providers.
 
 ## The Contoso Active Directory Domain Services forest
 
 Contoso uses a single Active Directory Domain Services (AD DS) forest for contoso.com with seven subdomains, one for each region of the world. The headquarters, regional hub offices, and satellite offices contain domain controllers for local authentication and authorization.
 
-Here is the Contoso forest with regional domains for the different parts of the world that contain regional hubs.
+Here's the Contoso forest with regional domains for the different parts of the world that contain regional hubs.
 
 ![Contoso's forest and domains worldwide](../media/contoso-identity/contoso-identity-fig1.png)
  
-Contoso wanted to use the accounts and groups in the contoso.com forest for authentication and authorization for its Microsoft 365 workloads and services.
+Contoso decided to use the accounts and groups in the contoso.com forest for authentication and authorization for its Microsoft 365 workloads and services.
 
 ## The Contoso federated authentication infrastructure
 
@@ -39,7 +39,7 @@ Contoso allows:
 - Customers to use their Microsoft, Facebook, or Google Mail accounts to sign in to the company's public web site.
 - Vendors and partners to use their LinkedIn, Salesforce, or Google Mail accounts to sign in to the company's partner extranet.
 
-Here is the Contoso DMZ containing a public web site, a partner extranet, and a set of AD FS servers. The DMZ is connected to the internet that contains customers, partners, and Internet services.
+Here's the Contoso DMZ containing a public web site, a partner extranet, and a set of AD FS servers. The DMZ is connected to the internet that contains customers, partners, and Internet services.
 
 ![Contoso support for federated authentication for customers and partners](../media/contoso-identity/contoso-identity-fig2.png)
  
@@ -55,7 +55,7 @@ PHS synchronizes the on-premises AD DS forest with the Azure AD tenant of their 
 
 To do directory synchronization, Contoso deployed the Azure AD Connect tool on a server in its Paris datacenter.
 
-Here is the server running Azure AD Connect polling the Contoso AD DS forest for changes and then synchronizing those changes with the Azure AD tenant.
+Here's the server running Azure AD Connect polling the Contoso AD DS forest for changes and then synchronizing those changes with the Azure AD tenant.
 
 ![The Contoso PHS directory synchronization infrastructure](../media/contoso-identity/contoso-identity-fig4.png)
  
@@ -67,7 +67,7 @@ Contoso created a set of Azure AD and Intune [Conditional Access policies](ident
 - **Sensitive** protections apply to senior leadership and executive staff.
 - **Highly Regulated** protections apply to specific users in the finance, legal, and research departments that have access to highly regulated data.
 
-Here is the resulting set of Contoso identity and device Conditional Access policies.
+Here's the resulting set of Contoso identity and device Conditional Access policies.
 
 ![Contoso’s identity and device Conditional Access policies](../media/contoso-identity/contoso-identity-fig5.png)
  
