@@ -8,12 +8,11 @@ audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.service: ATP
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- microsoft-365-docs-pr
+- M365-security-compliance
 description: "Security in Office 365, from EOP to ATP Plans 1 and 2, Standard vs. Strict security configurations, and more, so that you can understand what you have, and how to secure your properties."
 ---
 
