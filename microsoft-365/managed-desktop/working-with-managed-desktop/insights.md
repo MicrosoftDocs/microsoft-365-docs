@@ -30,7 +30,7 @@ With these dashboards you can find the answers to questions like these:
 To access these views from the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), navigate to the Microsoft Managed Desktop tab on the homepage and select **View details** in the **Reporting** area:
 
 
-![Admin center main page with Reporting area in lower left and View details link](../../media/insights_main.png)
+![Admin center main page with Reporting area in lower left and View details link](../../media/insights-main.png)
 
 
 ## Usage insights
