@@ -244,17 +244,17 @@
                 - name: Provide feedback
                   href: mtp/feedback.md
                 - name: Create ServiceNow tickets and tasks
-                  items:
+                  items: 
                     - name: ServiceNow integration overview
                       href: ./mtp/tickets.md
                     - name: ServiceNow tickets in the security center
                       href: ./mtp/tickets-security-center.md
             - name: Microsoft Threat Protection APIs (Preview)
-              items:
+              items: 
                 - name: Overview of Microsoft Threat Protection APIs (Preview)
                   href: mtp/api-overview.md
                 - name: Get started with Microsoft Threat Protection APIs (Preview)
-                  items:
+                  items: 
                     - name: Microsoft Threat Protection API license and terms of use
                       href: mtp/api-terms.md
                     - name: Access Microsoft Threat Protection APIs
@@ -263,14 +263,14 @@
                       href: mtp/api-hello-world.md
                     - name: Get access with application context
                       href: mtp/api-create-app-web.md
-                    - name:  Get access with user context
+                    - name: Get access with user context
                       href: mtp/api-create-app-user-context.md
                     - name: Get partner application access
-                      href:  mtp/api-partner-access.md
+                      href: mtp/api-partner-access.md
                     - name: Other API resources
                       href: mtp/api-articles.md
                 - name: Microsoft Threat Protection APIs & schema (Preview)
-                  items:
+                  items: 
                     - name: Supported Microsoft Threat Protection APIs
                       href: mtp/api-supported.md
                     - name: Common REST API error codes
@@ -278,14 +278,13 @@
                     - name: Advanced Hunting API
                       href: mtp/api-advanced-hunting.md
                     - name: Incident APIs
-                      items:
+                      items: 
                         - name: Incident methods and properties
                           href: mtp/api-incident.md
                         - name: List incidents
                           href: mtp/api-list-incidents.md
                         - name: Update incident
                           href: mtp/api-update-incidents.md
-
     - name: Office 365 security
       href: ./office-365-security/index.md
       items: 
@@ -336,7 +335,7 @@
             - name: Anti-spoofing protection
               href: ./office-365-security/anti-spoofing-protection.md
             - name: Safe Attachments in Office 365 ATP
-              href: ./office-365-security/atp-safe-attachments.md            
+              href: ./office-365-security/atp-safe-attachments.md
             - name: Safe Links in Office 365 ATP
               href: ./office-365-security/atp-safe-links.md
             - name: Outbound spam protection
@@ -351,8 +350,6 @@
               href: ./office-365-security/mail-flow-insights-v2.md
             - name: Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
               href: ./office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
-        - name: Evaluate
-        - name: Plan
         - name: Deploy
           items: 
             - name: Exchange Online Protection
@@ -642,7 +639,6 @@
               href: ./office-365-security/virus-detection-in-spo.md
             - name: What's the difference between junk email and bulk email?
               href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
-        - name: Employee training resources
     - name: Microsoft 365 for Enterprise
       href: https://docs.microsoft.com/microsoft-365/enterprise
     - name: Microsoft 365 for Business
