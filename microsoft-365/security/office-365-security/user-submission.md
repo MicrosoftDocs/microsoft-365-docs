@@ -1,5 +1,5 @@
 ---
-title: "Specify a mailbox for user submissions of spam and phishing messages"
+title: "User Submission policies"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,7 +17,7 @@ ms.collection:
 description: "Admins can learn how to configure a mailbox to collect spam and phishing email that are reported by users."
 ---
 
-# Specify a mailbox for user submissions of spam and phishing messages in Exchange Online
+# User Submission policies
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
