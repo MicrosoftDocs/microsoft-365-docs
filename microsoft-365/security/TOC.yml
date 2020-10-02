@@ -402,9 +402,9 @@
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
             - name: Safe Documents in Office 365 ATP
               href: ./office-365-security/safe-docs.md
-            - name: Set up ATP Safe Links policies
+            - name: Set up Safe Links policies in Office 365 ATP
               href: ./office-365-security/set-up-atp-safe-links-policies.md
-            - name: Set up ATP Safe Attachments policies
+            - name: Set up Safe Attachments policies in Office 365 ATP
               href: ./office-365-security/set-up-atp-safe-attachments-policies.md
             - name: Set up SPF to help prevent spoofing
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
