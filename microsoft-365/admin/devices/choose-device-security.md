@@ -22,17 +22,17 @@ description: "Choose between different MDM and MAM methods."
 
 # Use Microsoft 365 to protect your devices and app data
 
-You have a few different ways to secure your organizations devices and data on them with Microsoft 365 for business and enterprise. You can use the following stand-alone plans:
+You have several ways to secure your organizations devices and data on them with Microsoft 365 for business and enterprise. You can use the following stand-alone plans:
 - Basic Mobility and Security (included in most Microsoft 365 for business and enterprise plans)
 - Intune (a part of Microsoft Endpoint Management)
 - Azure Active Directory Premium plans.
 
-Or the subscriptions that include some, or all of the previous standalone plans.
+Or use the subscriptions that include some, or all of the previous standalone plans.
 
-- Microsoft 365 Business Premium that includes security and threat protection for small business under 300 users.
+- A Microsoft 365 Business Premium subscription, which includes security and threat protection for small business under 300 users.
 - Microsoft 365 Enterprise plans that include advanced security and threat protection.
 
-## Available methods (help with title?)
+## Device management options
 
 - **Basic Mobility and Security** is a good basic level of security and is offered with most Microsoft 365 plans. For more information, see [availability of Basic Mobility and Security](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune). 
 
