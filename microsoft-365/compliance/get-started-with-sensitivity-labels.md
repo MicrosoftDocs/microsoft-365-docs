@@ -16,6 +16,8 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
+- m365solution-mip
+- m365initiative-compliance
 description: "Ready to start implementing sensitivity labels to help protect your organization's data, but not sure where to start? Read some practical guidance to help get you on your labeling journey."
 ---
 
