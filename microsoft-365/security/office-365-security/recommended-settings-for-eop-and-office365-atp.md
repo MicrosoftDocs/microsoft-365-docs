@@ -1,5 +1,5 @@
 ---
-title: "Microsoft recommendations for EOP and Office 365 ATP security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for ATP, setup ATP, setup EOP, configure ATP, configure EOP, security configuration"
+title: "Microsoft recommendations for EOP and Office 365 ATP security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for ATP, set up ATP, set up EOP, configure ATP, configure EOP, security configuration"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -56,7 +56,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |Quarantine retention period <br/><br/> _QuarantineRetentionPeriod_|15 days|30 days|30 days||
 |**Safety Tips** <br/><br/> _InlineSafetyTipsEnabled_|On <br/><br/> `$true`|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |Allowed Senders <br/><br/> _AllowedSenders_|None|None|None||
-|Allowed Sender Domains <br/><br/> _AllowedSenderDomains_|None|None|None|Adding domains that you own (_accepted domains_) to the allowed senders list is a very, very bad idea. Attackers would be able to send you email that would otherwise be filtered out. <br/><br/> Use [spoof intelligence](learn-about-spoof-intelligence.md) in the Security & Compliance Center on the **Anti-spam settings** page to review all senders who are spoofing sender email addresses in your organization's email domains or spoofing sender email addresses in external domains.|
+|Allowed Sender Domains <br/><br/> _AllowedSenderDomains_|None|None|None|Adding domains that you own (_accepted domains_) to the allowed senders list is a very bad idea. Attackers would be able to send you email that would otherwise be filtered out. <br/><br/> Use [spoof intelligence](learn-about-spoof-intelligence.md) in the Security & Compliance Center on the **Anti-spam settings** page to review all senders who are spoofing sender email addresses in your organization's email domains or spoofing sender email addresses in external domains.|
 |Blocked Senders <br/><br/> _BlockedSenders_|None|None|None||
 |Blocked Sender Domains <br/><br/> _BlockedSenderDomains_|None|None|None||
 |**Enable end-user spam notifications** <br/><br/> _EnableEndUserSpamNotifications_|Disabled <br/><br/> `$false`|Enabled <br/><br/> `$true`|Enabled <br/><br/> `$true`||
@@ -132,7 +132,7 @@ For more information about these settings, see [Spoof settings](set-up-anti-phis
 |---|:---:|:---:|:---:|---|
 |**Enable anti-spoofing protection** <br/><br/> _EnableAntispoofEnforcement_|On <br/><br/> `$true`|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Enable Unauthenticated Sender** <br/><br/> _EnableUnauthenticatedSender_|On <br/><br/> `$true`|On <br/><br/> `$true`|On <br/><br/> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
-|**If email is sent by someone who's not allowed to spoof your domain** <br/><br/> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br/><br/> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <br/><br/> `MoveToJmf`|**Quarantine the message** <br/><br/> `Quarantine`|This applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
+|**If email is sent by someone who's not allowed to spoof your domain** <br/><br/> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br/><br/> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <br/><br/> `MoveToJmf`|**Quarantine the message** <br/><br/> `Quarantine`|This setting applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
 |
 
 ## Office 365 Advanced Threat Protection security
@@ -161,7 +161,7 @@ For more information about these settings, see [Impersonation settings in ATP an
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|Protected users: **Add users to protect** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Off <br/><br/> `$false` <br/><br/> none|On <br/><br/> `$true` <br/><br/> \<list of users\>|On <br/><br/> `$true` <br/><br/> \<list of users\>|Depending on your organization, we recommend adding users (message senders) in key roles. Internally, these might be your CEO, CFO, and other senior leaders. Externally, these could include council members or your board of directors.|
+|Protected users: **Add users to protect** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Off <br/><br/> `$false` <br/><br/> none|On <br/><br/> `$true` <br/><br/> \<list of users\>|On <br/><br/> `$true` <br/><br/> \<list of users\>|Depending on your organization, we recommend adding users (message senders) in key roles. Internally, protected senders might be your CEO, CFO, and other senior leaders. Externally, protected senders could include council members or your board of directors.|
 |Protected domains: **Automatically include the domains I own** <br/><br/> _EnableOrganizationDomainsProtection_|Off <br/><br/> `$false`|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |Protected domains: **Include custom domains** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Off <br/><br/> `$false` <br/><br/> none|On <br/><br/> `$true` <br/><br/> \<list of domains\>|On <br/><br/> `$true` <br/><br/> \<list of domains\>|Depending on your organization, we recommend adding domains (sender domains) that you don't own, but you frequently interact with.|
 |Protected users: **If email is sent by an impersonated user** <br/><br/> _TargetedUserProtectionAction_|**Don't apply any action** <br/><br/> `NoAction`|**Quarantine the message** <br/><br/> `Quarantine`|**Quarantine the message** <br/><br/> `Quarantine`||
@@ -186,7 +186,7 @@ Note that these are the same settings that are available in [anti-spam policy se
 |---|---|---|---|
 |**Enable anti-spoofing protection** <br/><br/> _EnableAntispoofEnforcement_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Enable Unauthenticated Sender** <br/><br/> _EnableUnauthenticatedSender_|On <br/><br/> `$true`|On <br/><br/> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
-|**If email is sent by someone who's not allowed to spoof your domain** <br/><br/> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br/><br/> `MoveToJmf`|**Quarantine the message** <br/><br/> `Quarantine`|This applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
+|**If email is sent by someone who's not allowed to spoof your domain** <br/><br/> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br/><br/> `MoveToJmf`|**Quarantine the message** <br/><br/> `Quarantine`|This setting applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
 |
 
 #### Advanced settings in ATP anti-phishing policies
@@ -215,8 +215,8 @@ In PowerShell, you use the [Set-AtpPolicyForO365](https://docs.microsoft.com/pow
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Use Safe Links in: Office 365 applications** <br/><br/> _EnableSafeLinksForO365Clients_|On <br/><br/> `$true`|On <br/><br/> `$true`|On <br/><br/> `$true`|Use ATP Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office 365 apps](atp-safe-links.md#safe-links-settings-for-office-365-apps).|
-|**Do not track when users click Safe Links** <br/><br/> _TrackClicks_|On <br/><br/> `$false`|Off <br/><br/> `$true`|Off <br/><br/> `$true`|Turning this setting off (setting _TrackClicks_ to `$true`) tracks user clicks in supported Office 365 apps.|
-|**Do not let users click through Safe Links to original URL** <br/><br/> _AllowClickThrough_|On <br/><br/> `$false`|On <br/><br/> `$false`|On <br/><br/> `$false`|Turning this setting on (setting _AllowClickThrough_ to `$false`) prevents click through to the original URL in supported Office 365 apps.|
+|**Do not track when users click Safe Links** <br/><br/> _TrackClicks_|On <br/><br/> `$false`|Off <br/><br/> `$true`|Off <br/><br/> `$true`|Turning off this setting (setting _TrackClicks_ to `$true`) tracks user clicks in supported Office 365 apps.|
+|**Do not let users click through Safe Links to original URL** <br/><br/> _AllowClickThrough_|On <br/><br/> `$false`|On <br/><br/> `$false`|On <br/><br/> `$false`|Turning on this setting (setting _AllowClickThrough_ to `$false`) prevents click through to the original URL in supported Office 365 apps.|
 |
 
 #### Safe Links policy settings
@@ -236,8 +236,8 @@ In PowerShell, you use the [New-SafeLinksPolicy](https://docs.microsoft.com/powe
 |**Apply real-time URL scanning for suspicious links and links that point to files** <br/><br/> _ScanUrls_|Off <br/><br/> `$false`|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Wait for URL scanning to complete before delivering the message** <br/><br/> _DeliverMessageAfterScan_|Off <br/><br/> `$false`|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Apply Safe Links to email messages sent within the organization** <br/><br/> _EnableForInternalSenders_|Off <br/><br/> `$false`|On <br/><br/> `$true`|On <br/><br/> `$true`||
-|**Do not track user clicks** <br/><br/> _DoNotTrackUserClicks_|Off <br/><br/> `$false`|Off <br/><br/> `$false`|Off <br/><br/> `$false`|Turning this setting off (setting _DoNotTrackUserClicks_ to `$false`) tracks users clicks.|
-|**Do not allow users to click through to original URL** <br/><br/> _DoNotAllowClickThrough_|Off <br/><br/> `$false`|On <br/><br/> `$true`|On <br/><br/> `$true`|Turning this setting on (setting _DoNotAllowClickThrough_ to `$true`) prevents click through to the original URL.|
+|**Do not track user clicks** <br/><br/> _DoNotTrackUserClicks_|Off <br/><br/> `$false`|Off <br/><br/> `$false`|Off <br/><br/> `$false`|Turning off this setting (setting _DoNotTrackUserClicks_ to `$false`) tracks users clicks.|
+|**Do not allow users to click through to original URL** <br/><br/> _DoNotAllowClickThrough_|Off <br/><br/> `$false`|On <br/><br/> `$true`|On <br/><br/> `$true`|Turning on this setting (setting _DoNotAllowClickThrough_ to `$true`) prevents click through to the original URL.|
 |
 
 ### Safe Attachments settings
@@ -272,7 +272,7 @@ In PowerShell, you use the [New-SafeAttachmentPolicy](https://docs.microsoft.com
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Safe Attachments unknown malware response** <br/><br/> _Action_|Block <br/><br/> `Block`|Block <br/><br/> `Block`|Block <br/><br/> `Block`||
-|**Redirect attachment on detection** : **Enable redirect** <br/><br/> _Redirect_ <br/><br/> _RedirectAddress_|Off and no email address specified. <br/><br/> `$true` <br/><br/> none|On and specify an email address. <br/><br/> `$true` <br/><br/> an email address|On and specify an email address. <br/><br/> `$true` <br/><br/> an email address|Redirect messages to a security admin for review.|
+|**Redirect attachment on detection** : **Enable redirect** <br/><br/> _Redirect_ <br/><br/> _RedirectAddress_|Off, and no email address specified. <br/><br/> `$true` <br/><br/> none|On, and specify an email address. <br/><br/> `$true` <br/><br/> an email address|On, and specify an email address. <br/><br/> `$true` <br/><br/> an email address|Redirect messages to a security admin for review.|
 |**Apply the above selection if malware scanning for attachments times out or error occurs.** <br/><br/> _ActionOnError_|On <br/><br/> `$true`|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |
 
@@ -284,4 +284,4 @@ In PowerShell, you use the [New-SafeAttachmentPolicy](https://docs.microsoft.com
 
 - Use these links for info on how to **set up** your [EOP service](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service), and **configure** [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). Don't forget the helpful directions in '[Protect Against Threats in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)'.
 
-- **Security baselines for Windows** can be found [here](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) for GPO/on-premises options, and [here](https://docs.microsoft.com/intune/protect/security-baselines) for Intune-based security. Finally, a comparison between Microsoft Defender Advanced Threat Protection (ATP) and Windows Intune security baselines is available [here](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).
+- **Security baselines for Windows** can be found [here](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) for GPO/on-premises options, and [here](https://docs.microsoft.com/intune/protect/security-baselines) for Intune-based security. Finally, a comparison between Microsoft Defender Advanced Threat Protection (ATP) and Microsoft Intune security baselines is available [here](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).
