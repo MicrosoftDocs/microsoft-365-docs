@@ -376,11 +376,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/office-365-security/index.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/compliance/use-network-upload-to-import-rms-encrypted-pst-files.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files",
       "redirect_document_id": false
