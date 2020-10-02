@@ -408,7 +408,7 @@
               href: ./office-365-security/set-up-atp-safe-attachments-policies.md
             - name: Set up SPF to help prevent spoofing
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
-            - name: Specify a mailbox for user submissions
+            - name: User submissions policies
               href: ./office-365-security/user-submission.md
             - name: Turn on ATP for SharePoint, OneDrive, and Microsoft Teams
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md

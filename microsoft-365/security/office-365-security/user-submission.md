@@ -1,5 +1,5 @@
 ---
-title: "Set up User Submission policies"
+title: "User submissions policies"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,7 +17,7 @@ ms.collection:
 description: "Admins can learn how to configure a mailbox to collect spam and phishing email that are reported by users."
 ---
 
-# Set up User Submission policies
+# User submissions policies
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
