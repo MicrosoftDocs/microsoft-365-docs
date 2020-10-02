@@ -221,14 +221,14 @@ additionalContent:
           links:
             - text: SharePoint in Microsoft 365
               url: /sharepoint/sharepoint-online
+            - text: SharePoint Syntex
+              url: contentunderstanding/index.md
             - text: SharePoint Server
               url: /sharepoint/sharepoint-server
             - text: Hybrid
               url: /sharepoint/hybrid/hybrid
             - text: PowerShell reference for SharePoint
               url: /powershell/sharepoint
-            - text: SharePoint Syntex
-              url: contentunderstanding/index.md
             - text: More >
               url: /sharepoint
         # Card
