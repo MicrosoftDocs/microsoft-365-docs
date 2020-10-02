@@ -7,7 +7,7 @@ author: MSFTTracyP
 ms.date:
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
