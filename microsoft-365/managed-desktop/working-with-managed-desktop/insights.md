@@ -29,10 +29,9 @@ With these dashboards you can find the answers to questions like these:
 
 To access these views from the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), navigate to the Microsoft Managed Desktop tab on the homepage and select **View details** in the **Reporting** area:
 
-[:::image type="complex" source="../../media/insights-overview.png" alt-text="Admin center with Reporting area in the lower left including the "view details" link.":::
 
+![Admin center main page with Reporting area in lower left and View details link](media/project-name/insights-overview.png)
 
-:::image-end:::](../../media/insights-overview.png)
 
 ## Usage insights
 This view provides usage metrics for your Microsoft Managed Desktop devices. 
