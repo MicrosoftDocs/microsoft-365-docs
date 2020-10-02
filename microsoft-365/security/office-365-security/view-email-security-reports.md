@@ -297,6 +297,20 @@ The following views are available:
 
   ![Content malware view in the Threat protection status report](../../media/threat-protection-status-report-content-malware-view.png)
 
+- **View data by: Message Override**: The following information is shown:
+
+  - **On-premises skip**
+  - **IP Allow**
+  - **Mail flow rule**
+  - **Sender allow**
+  - **Domain allow**
+  - **ZAP not enabled**
+  - **Junk Mail folder not enabled**
+  - **User Safe Sender**
+  - **User Safe Domain**
+
+  ![Message override view in the Threat protection status report](../../media/threat-protection-status-report-message-override-view.png)
+
 - **Break down by: Detection technology** and **View data by: Email \> Phish**: The following information is shown:
 
   - **ATP-generated URL reputation**<sup>1</sup>
@@ -383,6 +397,25 @@ If you click **Filters** in this view, you can modify the report with the follow
 - **Start date** and **End date**
 - **Detection**
 
+- **View data by: Message Override**:
+
+  - **Date**
+  - **Subject**
+  - **Sender**
+  - **Recipients**
+  - **Detected by**
+  - **Override Reason**
+  - **Source of Compromise**
+  - **Tags**
+
+If you click **Filters** in this view, you can modify the report with the following filters:
+
+- **Start date** and **End date**
+- **Override Reason**
+- **Tag**: filter by tag to return users or groups that have had a specific tag applied. For more information about user tags, see [User tags](user-tags.md).
+- **Domain**
+- **Recipients** (Note that this filterable property is only available in the details table view)
+
 **View data by: Overview**: No **View details table** button is available.
 
 - All other charts:
@@ -392,8 +425,8 @@ If you click **Filters** in this view, you can modify the report with the follow
   - **Sender**
   - **Recipients**
   - **Detected by**
-  - **Delivery status**
-  - **Source of compromise**
+  - **Delivery Status**
+  - **Source of Compromise**
   - **Tags**
 
 If you click **Filters**, you can modify the report with the following filters:
