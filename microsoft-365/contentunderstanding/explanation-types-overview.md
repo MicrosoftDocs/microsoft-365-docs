@@ -63,7 +63,7 @@ Additionally, if you have capitalization requirements in your pattern list, you 
    ![Only exact capitalization](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> Instead of manually creating pattern list explanation, use the [explanation library](https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) to use pre-made pattern list templates for common pattern list, such as *date*, *phone number*, *credit card number*, etc.. 
+> Instead of manually creating pattern list explanation, use the [explanation library](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) to use pre-made pattern list templates for common pattern list, such as *date*, *phone number*, *credit card number*, etc.. 
 
 ## Proximity 
 
