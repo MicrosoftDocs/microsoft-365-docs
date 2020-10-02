@@ -69,4 +69,4 @@ For example, all *Insurance notice* documents that your model identifies will al
 
 [Document Understanding overview](document-understanding-overview.md)
 
-[Create a form processing model](create-a-form-processing-model.md)  
+
