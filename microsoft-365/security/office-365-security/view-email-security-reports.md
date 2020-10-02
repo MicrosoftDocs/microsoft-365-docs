@@ -370,16 +370,27 @@ The following views are available:
 
 <sup>2</sup> Zero-hour auto purge (ZAP) isn't available in standalone EOP (it only works in Exchange Online mailboxes).
 
-If you click **Filters**, you can modify the report with the following filters:
+If you click **Filters**, the filters available depends on the chart you were looking at:
+
+For **Message Override**, you can modify the view with the following filters:
+
+- **Start date** and **End date**
+- **Override Reason**
+- **Tag**: filter by tag to return users or groups that have had a specific tag applied. For more information about user tags, see [User tags](user-tags.md).
+- **Domain**
+
+For **Content \> Malware**, you can modify the report with the following filters:
+
+- **Start date** and **End date**
+- **Detection**
+
+For all other views, you can modify the report with the following filters:
 
 - **Start date** and **End date**
 - **Detection**
 - **Protected by**: **ATP** or **EOP**
 - **Tag**: filter by tag to return users or groups that have had a specific tag applied. For more information about user tags, see [User tags](user-tags.md).
 - **Domain**
-
-> [!NOTE]
-> **Protected by**, **Tag** and **Domain** are Office 365 ATP only. These filterable properties are not available in **View data by: Content \> Malware**.
 
 ### Details table view for the Threat protection status report
 
