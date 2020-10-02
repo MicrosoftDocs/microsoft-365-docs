@@ -297,7 +297,7 @@ The following views are available:
 
   ![Content malware view in the Threat protection status report](../../media/threat-protection-status-report-content-malware-view.png)
 
-- **View data by: Message Override**: The following information is shown:
+- **View data by: Message Override**: The following override reason information is shown:
 
   - **On-premises skip**
   - **IP Allow**
@@ -372,17 +372,17 @@ The following views are available:
 
 If you click **Filters**, the filters available depends on the chart you were looking at:
 
+For **Content \> Malware**, you can modify the report with the following filters:
+
+- **Start date** and **End date**
+- **Detection**
+
 For **Message Override**, you can modify the view with the following filters:
 
 - **Start date** and **End date**
 - **Override Reason**
 - **Tag**: filter by tag to return users or groups that have had a specific tag applied. For more information about user tags, see [User tags](user-tags.md).
 - **Domain**
-
-For **Content \> Malware**, you can modify the report with the following filters:
-
-- **Start date** and **End date**
-- **Detection**
 
 For all other views, you can modify the report with the following filters:
 
@@ -407,6 +407,8 @@ If you click **Filters** in this view, you can modify the report with the follow
 
 - **Start date** and **End date**
 - **Detection**
+
+Test Text 
 
 - **View data by: Message Override**:
 
