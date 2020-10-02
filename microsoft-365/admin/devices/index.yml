@@ -8,7 +8,7 @@ metadata:
   description: Manage and protect devices and app data # Required; article description that is displayed in search results. < 160 chars.
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: sirkkuw #Required; your GitHub user alias, with correct capitalization.
+  author: Sirkkuw #Required; your GitHub user alias, with correct capitalization.
   ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
   ms.date: 09/09/2020 #Required; mm/dd/yyyy format.
   localization_priority: Priority
@@ -24,8 +24,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft Intune, Microsoft 365 Business Premium, or Basic Mobility and Security?
-            url: ../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+          - text: Review device and app data protection options
+            url: choose-device-security.md
   # Card (optional)
   - title: Manage devices and app data with Microsoft Intune
     linkLists:
@@ -47,11 +47,20 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: View and manage app and device managements policies
-            url: ../..business/view-policies-and-devices.md
+            url: ../../business/view-policies-and-devices.md
           - text: Remove company data from devices
             url: ../..business/remove-company-data.md
           - text: Reset Windows devices to factory settings
-            url: ../..business/reset-devices-to-factory-settings.md
+            url: ../../business/reset-devices-to-factory-settings.md
+  # Card (optional)
+  - title: Manage devices and app data with Microsoft 365 for enterprise
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of Microsoft 365 for enterprise
+            url: ../../enterprise/microsoft-365-overview/index.yml
+          - text: Device management road-map for Microsoft 365 for enterprise
+            url: ../../enterprise/device-management-roadmap-microsoft-365.md
    # Card (optional)
   - title: Manage devices and app data with Basic mobility and security
     linkLists:
