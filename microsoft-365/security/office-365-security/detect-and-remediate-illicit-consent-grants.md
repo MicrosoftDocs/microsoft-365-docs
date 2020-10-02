@@ -20,6 +20,9 @@ ms.custom: seo-marvel-apr2020
 ---
 # Detect and Remediate Illicit Consent Grants
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 **Summary**  Learn how to recognize and remediate the illicit consent grants attack in Office 365.
 
 ## What is the illicit consent grant attack in Office 365?

@@ -129,7 +129,7 @@ You can use Azure AD Identity Protection and risk-based Conditional Access polic
 
 For more information, see this [overview of Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
 
-### MFA for an individual user account (not recommended)
+### Legacy per person MFA (not recommended)
 
 You should be using either security defaults or Conditional Access policies to require MFA for your user account sign-ins. However, if either of these cannot be used, Microsoft strongly recommends MFA for user accounts that have administrator roles, especially the global administrator role, for any size subscription. 
 
@@ -147,7 +147,7 @@ This table shows the results of enabling MFA with security defaults, Conditional
 |:-------|:-----|:-------|:-------|
 | **Security defaults** | Can’t use Conditional Access policies |	Can use Conditional Access policies | Microsoft Authenticator app |
 | **Conditional Access policies** |If any are enabled, you can’t enable security defaults | If all are disabled, you can enable security defaults | User-specified during MFA registration |
-| **Per-user account setting (not recommended)** | Overrides security defaults and Conditional Access policies requiring MFA at each sign in | Overridden by security defaults and Conditional Access policies | User-specified during MFA registration|
+| **Legacy Per Person MFA (not recommended)** | Overrides security defaults and Conditional Access policies requiring MFA at each sign in | Overridden by security defaults and Conditional Access policies | User-specified during MFA registration|
 ||||
 
 If security defaults are enabled, all new users are prompted for MFA registration and the use of the Microsoft Authenticator app at their next sign-in.
@@ -166,4 +166,3 @@ In the Microsoft 365 admin center, you can configure per-user and service MFA se
 ## Your next step
 
 [Set up MFA for Microsoft 365](set-up-multi-factor-authentication.md)
-

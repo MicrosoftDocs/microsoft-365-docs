@@ -3,7 +3,7 @@ title: "Assign Microsoft 365 licenses to user accounts with PowerShell"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -32,6 +32,10 @@ Users can't use any Microsoft 365 services until their account has been assigned
 
 >[!Note]
 >User accounts must be assigned a location. You can do this from the properties of a user account in the Microsoft 365 admin center or from PowerShell.
+>
+
+>[!Note]
+>[Learn how to assign licenses to user accounts](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
 >
 
 ## Use the Azure Active Directory PowerShell for Graph module
