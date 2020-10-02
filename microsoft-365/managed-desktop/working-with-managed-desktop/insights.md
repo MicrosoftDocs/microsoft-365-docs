@@ -1,6 +1,6 @@
 ---
 title: Work with insights
-description:  
+description: Overview of the insights available in Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
