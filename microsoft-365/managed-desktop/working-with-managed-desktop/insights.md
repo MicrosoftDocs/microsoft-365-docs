@@ -26,7 +26,7 @@ With these dashboards you can find the answers to questions like these:
 - What is the current status of security updates on devices?
 - How long did it take for 95% of the devices to get current with the latest security update?
 
-To access these views from the [Microsoft Endopint Manager](https://endpoint.microsoft.com/), nvaigate to the Microsoft Managed Desktop tab on the homepage and select **View details** in the **Reports** area:
+To access these views from the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), navigate to the Microsoft Managed Desktop tab on the homepage and select **View details** in the **Reports** area:
 
 <!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->!
 
