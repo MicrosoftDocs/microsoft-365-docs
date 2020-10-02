@@ -26,9 +26,11 @@ With these dashboards you can find the answers to questions like these:
 - What is the current status of security updates on devices?
 - How long did it take for 95% of the devices to get current with the latest security update?
 
+
 To access these views from the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), navigate to the Microsoft Managed Desktop tab on the homepage and select **View details** in the **Reporting** area:
 
 [:::image type="complex" source="../../media/insights-overview.png" alt-text="Admin center with Reporting area in the lower left including the "view details" link.":::
+
 
 :::image-end:::](../../media/insights-overview.png)
 
@@ -50,7 +52,6 @@ This view shows you information about the energy consumption of apps and project
 Learn more about [Battery insights](battery-insights.md).
 
 ## Windows security update insights
-
-This view shows you information about the status of security updates for your Microsoft Managed Desktop devices. To view this information, select the **Windows security udates** tab.
+This view shows you information about the status of security updates for your Microsoft Managed Desktop devices. To view this information, select the **Windows security updates** tab.
 
 Learn more about [Security update insights](security-update-insights.md).
