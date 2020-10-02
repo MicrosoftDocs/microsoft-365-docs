@@ -125,11 +125,11 @@ If you receive a match on your labeled sample files, you can now test your model
     ![Test on your files](../media/content-understanding/test-filies-extractor.png) 
 
 ## See Also
-[Create a classifier](create-an-classifier.md)
+[Create a classifier](create-a-classifier.md)
 
 [Explanation types](explanation-types-overview.md)
 
-[Leverage term store taxonomy when creating an extractor](leverage-term-store-taxomony.md)
+[Leverage term store taxonomy when creating an extractor](leverage-term-store-taxonomy.md)
 
 [Document Understanding overview](document-understanding-overview.md)
 
