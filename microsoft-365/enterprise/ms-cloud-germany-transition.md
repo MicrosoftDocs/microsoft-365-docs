@@ -263,6 +263,8 @@ If you have questions, you can contact us or your partner:
 
 ## More information
 
+Additonal information about migrating to the new German datacenter regions is coming. Bookmark this page so that you can check in and keep current.
+
 - [Microsoft Cloud Deutschland Migration Assistance](https://aka.ms/germanymigrateassist)
 - [How to opt-in for migration](https://aka.ms/office365germanymoveoptin)
 - [Dynamics 365 migration program information](https://aka.ms/d365ceoptin)

@@ -26,6 +26,47 @@ ms.topic: conceptual
 
 **Applies to:**
 - Microsoft Threat Protection
+<br>
+<table border="0" width="100%" align="center">
+  <tr style="text-align:center;">
+    <td align="center" style="width:25%; border:0;" >
+      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
+        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="Plan your pilot Microsoft Threat Protection project" />
+      <br/>Plan </a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
+        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Prepare your Microsoft Threat Protection trial lab or pilot environment" />
+      <br/>Prepare </a><br>
+    </td>
+    <td align="center"bgcolor="#d5f5e3">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
+        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Run your Microsoft Threat Protection attack simulations" />
+      <br/>Simulate attack </a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
+        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Close and summarize your Microsoft Threat Protection pilot" />
+      <br/>Close and summarize </a><br>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:25%; border:0;">
+   
+    </td>
+    <td valign="top" style="width:25%; border:0;">
+    
+</td>
+    <td valign="top" style="width:25%; border:0;">
+
+</td>    
+    <td valign="top" style="width:25%; border:0;">
+
+</td>
+  </tr>
+</table>
+
+You're currently in the attack simulation phase.
 
 After preparing your pilot environment, it’s time to test the Microsoft Threat Protection incident management and automated investigation and remediation capabilities. We will help you to simulate a sophisticated attack that leverages advanced techniques to hide from detection. The attack enumerates opened Server Message Block (SMB) sessions on domain controllers and retrieves recent IP addresses of users’ devices. This category of attacks usually doesn’t include files dropped on the victim’s device—they occur solely in memory. They “live off the land” by using existing system and administrative tools and inject their code into system processes to hide their execution, allowing them to evade detection and persist on the device.
 
