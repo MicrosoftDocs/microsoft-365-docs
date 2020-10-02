@@ -49,7 +49,7 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 
 - The Report Message add-in is not available for mailboxes in on-premises Exchange organizations.
 
-- You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [Specify a mailbox for user submissions of spam and phishing messages in Exchange Online](user-submission.md).
+- You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).
 
 - Your existing web browser should work with the Report Message add-in. But, if you notice the add-in is not available or not working as expected, try a different browser.
 

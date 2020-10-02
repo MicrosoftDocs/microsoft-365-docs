@@ -29,7 +29,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 - If you're an admin in an organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-- You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [Specify a mailbox for user submissions of spam and phishing messages in Exchange Online](user-submission.md).
+- You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User Submissions policies](user-submission.md).
 
 - For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
