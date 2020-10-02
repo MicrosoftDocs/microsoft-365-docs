@@ -136,6 +136,8 @@
                       href: mtp/advanced-hunting-shared-queries.md
                     - name: Hunt across devices, emails, apps, and identities
                       href: mtp/advanced-hunting-query-emails-devices.md
+                    - name: Transition from Microsoft Defender ATP 
+                      href: mtp/advanced-hunting-migrate-from-mdatp.md
                 - name: Work with query results
                   href: mtp/advanced-hunting-query-results.md
                 - name: Take action on query results
