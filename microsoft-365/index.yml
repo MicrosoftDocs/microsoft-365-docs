@@ -227,6 +227,8 @@ additionalContent:
               url: /sharepoint/hybrid/hybrid
             - text: PowerShell reference for SharePoint
               url: /powershell/sharepoint
+            - text: SharePoint Syntex
+              url: contentunderstanding/index.md
             - text: More >
               url: /sharepoint
         # Card
