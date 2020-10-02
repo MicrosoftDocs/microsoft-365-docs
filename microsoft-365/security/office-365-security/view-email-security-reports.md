@@ -372,12 +372,9 @@ The following views are available:
 
 If you click **Filters**, the filters available depends on the chart you were looking at:
 
-For **Content \> Malware**, you can modify the report with the following filters:
+For **Content \> Malware**, you can modify the report by **Start date** and **End date**, and the **Detection** value.
 
-- **Start date** and **End date**
-- **Detection**
-
-For **Message Override**, you can modify the view with the following filters:
+For **Message Override**, you can modify the report with the following filters:
 
 - **Start date** and **End date**
 - **Override Reason**
@@ -403,12 +400,7 @@ If you click **View details table**, the information that's shown depends on the
   - **Directed by**
   - **Malware name**
 
-If you click **Filters** in this view, you can modify the report with the following filters:
-
-- **Start date** and **End date**
-- **Detection**
-
-Test Text 
+If you click **Filters** in this view, you can modify the report by **Start date** and **End date**, and the **Detection** value.
 
 - **View data by: Message Override**:
 
