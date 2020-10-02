@@ -11,7 +11,10 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
 ---
 
 # Get started with insider risk management settings
