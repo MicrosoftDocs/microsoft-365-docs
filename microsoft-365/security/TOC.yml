@@ -495,6 +495,8 @@
               href: ./office-365-security/mail-flow-rules-transport-rules-0.md
             - name: Report junk email and phishing in Outlook on the web
               href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+            - name: Report junk email and phishing in Outlook for ios and android
+              href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
             - name: Run an administrator role group report in standalone EOP
               href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
         - name: Investigate
