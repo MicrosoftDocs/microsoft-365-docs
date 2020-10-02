@@ -35,11 +35,18 @@ Advanced hunting is a query-based threat-hunting tool that lets you explore up t
 
 You can use the same threat-hunting queries to build custom detection rules. These rules run automatically to check for and then respond to suspected breach activity, misconfigured machines, and other findings.
 
-This capability is similar to [advanced hunting in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Available in Microsoft 365 security center, this capability supports queries that check a broader data set from Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security, and Azure ATP. To use advanced hunting, [turn on Microsoft Threat Protection](mtp-enable.md).
+This capability is similar to [advanced hunting in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Available in Microsoft 365 security center, this capability supports queries that check a broader data set from:
+
+- Microsoft Defender Advanced Threat Protection
+- Office 365 Advanced Threat Protection
+- Microsoft Cloud App Security
+- Azure Advanced Threat Protection
+
+To use advanced hunting, [turn on Microsoft Threat Protection](mtp-enable.md).
 
 ## Get started with advanced hunting
 
-We recommend going through several steps to quickly get up and running with advanced hunting.
+We recommend going through several steps to quickly get started with advanced hunting.
 
 | Learning goal | Description | Resource |
 |--|--|--|
@@ -57,7 +64,7 @@ To use advanced hunting or other [Microsoft Threat Protection](microsoft-threat-
 Advanced hunting data can be categorized into two distinct types, each consolidated differently.
 
 - **Event or activity data**—populates tables about alerts, security events, system events, and routine assessments. Advanced hunting receives this data almost immediately after the sensors that collect them successfully transmit them to the corresponding cloud services. For example, you can query event data from healthy sensors on workstations or domain controllers almost immediately after they are available on Microsoft Defender ATP and Azure ATP.
-- **Entity data**—populates tables with consolidated information about users and devices. This data comes from both relatively static data sources and dynamic sources, such as Active Directory entries and event logs. To provide fresh data, tables are updated with any new information every 15 minutes, adding rows that might not be fully populated. Every 24 hours, data is consolidated to insert a record that contains the latest, most comprehensive data set about each entity.
+- **Entity data**—populates tables with information about users and devices. This data comes from both relatively static data sources and dynamic sources, such as Active Directory entries and event logs. To provide fresh data, tables are updated with any new information every 15 minutes, adding rows that might not be fully populated. Every 24 hours, data is consolidated to insert a record that contains the latest, most comprehensive data set about each entity.
 
 ## Time zone
 Time information in advanced hunting is in the UTC time zone.
