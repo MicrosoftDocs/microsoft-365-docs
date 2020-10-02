@@ -11,7 +11,7 @@ localization_priority: Priority
 description: "Learn how to create an extractor in Microsoft SharePoint Syntex."
 ---
 
-# Create an extractor (Preview)
+# Create an extractor in Microsoft SharePoint Syntex
 
 
 </br>
@@ -117,9 +117,20 @@ If you again receive a **Mismatch** on your labeled files, you likely need to cr
 
 ## Test your model
 
-If you receive a match on your labeled sample files, you can now test your model on the remaining unlabeled example files. This is a useful step to evaluate the “fitness” or readiness of the model before using it, by testing it on files the model hasn’t seen before.
+If you receive a match on your labeled sample files, you can now test your model on the remaining unlabeled example files. This is optional, but a useful step to evaluate the “fitness” or readiness of the model before using it, by testing it on files the model hasn’t seen before.
 
 1. From the model home page, click the **Test** tab.  This runs the model on your unlabeled sample files.
 2. In the **Test files** list, your example files display to show if the model is able to extract the information you need. Use this information to help determine the effectiveness of your classifier in identifying your documents.
 
     ![Test on your files](../media/content-understanding/test-filies-extractor.png) 
+
+## See Also
+[Create a classifier](create-an-classifier.md)
+
+[Explanation types](explanation-types-overview.md)
+
+[Leverage term store taxonomy when creating an extractor](leverage-term-store-taxomony.md)
+
+[Document Understanding overview](document-understanding-overview.md)
+
+[Apply a model](apply-a-model.md) 
