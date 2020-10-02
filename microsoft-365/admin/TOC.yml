@@ -333,6 +333,8 @@
               href: basic-mobility-security/frequently-asked-questions.md
             - name: Capabilities of Basic Mobility and Security
               href: basic-mobility-security/capabilities.md
+            - name: Compare Basic Mobility and Security and Intune
+              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
     - name: Work with customers
       href: work-with-customers/index.yml
       items: 
