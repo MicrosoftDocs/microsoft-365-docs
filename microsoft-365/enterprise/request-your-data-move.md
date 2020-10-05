@@ -26,7 +26,7 @@ Eligible Microsoft 365 customers may request migration for their entire organiza
   
 ## When can I request a move?
 
-|**Customers with signup country in**|**Request period begins**|**Request deadline**|
+| Customers with signup country in | Request period begins | Request deadline |
 |:-----|:-----|:-----|
 |Japan  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
 |Australia, New Zealand, Fiji  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
