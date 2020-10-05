@@ -24,8 +24,9 @@ ms.custom:
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->[!IMPORTANT]
->The preview period for the ServiceNow connector has ended, and this capability is no longer available. Thank you for your feedback and continued support.
+>[!CAuTION]
+>**The preview period for the ServiceNow connector has ended**<br>
+>This capability is no longer available. Thank you for your feedback and continued support while we determine next steps.
 
 ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations. Their Now platform has IT workflows, employee workflows, and customer workflows. [Learn more about ServiceNow](https://www.servicenow.com/)
 
