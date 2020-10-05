@@ -31,12 +31,12 @@ You shouldn't have any existing Autopilot profiles that target assigned or dynam
 **Not ready**
 
 You have an Autopilot profile that is assigned to all devices. Reset the profile to target an assigned or dynamic group that does not conflict with the profile for Microsoft Managed Desktop. For steps, see 
-[Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/en-us/mem/autopilot/enrollment-autopilot).
+[Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot).
 
 **Advisory**
 
 Make sure that your Autopilot profiles target an assigned or dynamic group that does not conflict with the profile for Microsoft Managed Desktop. For steps, see 
-[Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/en-us/mem/autopilot/enrollment-autopilot).
+[Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot).
 
 
 ### Certificate connectors
@@ -61,7 +61,7 @@ Conditional access policies in your Azure AD organization must not target any Mi
 
 **Not ready**
 
-You have at least one conditional access policy that targets all devices. Reset the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop devices. For steps, see [Conditional Access: Users and groups](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-users-groups).
+You have at least one conditional access policy that targets all devices. Reset the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop devices. For steps, see [Conditional Access: Users and groups](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups).
 
 **Advisory**
 
@@ -88,11 +88,11 @@ Device configuration policies in your Azure AD organization must not target any 
 
 **Not ready**
 
-You have at least one configuration policy that targets all devices. Reset the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop devices. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/configuration/custom-settings-configure).
+You have at least one configuration policy that targets all devices. Reset the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop devices. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure).
 
 **Advisory**
 
-Make sure that any compliance policies you have that have assigned or dynamic groups do not include any Microsoft Managed Desktop devices. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/configuration/custom-settings-configure).
+Make sure that any compliance policies you have that have assigned or dynamic groups do not include any Microsoft Managed Desktop devices. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure).
 
 
 
@@ -135,11 +135,11 @@ Make sure that Windows PowerShell scripts in your Azure AD organization do *not*
 
 **Not ready**
 
-You have a security baseline profile that targets all devices. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](https://docs.microsoft.com/en-us/mem/intune/protect/security-baselines).
+You have a security baseline profile that targets all devices. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines).
 
 **Advisory**
 
-Make sure that any security baseline policies you have exclude the **Modern Workplace -All** Azure AD group. For steps, see [Use security baselines to configure Windows 10 devices in Intune](https://docs.microsoft.com/en-us/mem/intune/protect/security-baselines).
+Make sure that any security baseline policies you have exclude the **Modern Workplace -All** Azure AD group. For steps, see [Use security baselines to configure Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines).
 
 ### Region
 
