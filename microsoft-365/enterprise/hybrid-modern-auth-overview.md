@@ -138,7 +138,7 @@ Verify and check these items off your list before you continue:
   - If you are using Exchange Server 2013, at least one server must have the Mailbox and Client Access server roles installed. While it is possible to install the Mailbox and Client Access roles on separate servers, we strongly recommend that you install both roles on the same server to provide additional reliability and improved performance.
   - If you are using Exchange server 2016 or later version, at least one server must have the Mailbox server role installed.
   - There is no Exchange server 2007 or 2010 in the Hybrid environment.
-  - All Exchange servers must have the latest cumulative updates installed, see [Upgrade Exchange to the latest Cumulative Updates](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) to find and manage all available updates.
+  - All Exchange servers must have the latest cumulative updates installed, see [Upgrade Exchange to the latest Cumulative Updates](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates) to find and manage all available updates.
 
 - **Exchange client and protocol requirements**
 
