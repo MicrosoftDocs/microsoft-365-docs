@@ -231,7 +231,7 @@ Make sure that any MFA policies you have exclude the **Modern Workplace -All** A
 You have at least one account name that will conflict with ones created by Microsoft Managed Desktop. {WE CAN add a link to the STP-hosted doc on this once it exists}
 
 
-### Reserved roles {SECURITY administrator roles in the spec--but proposing this change for simialr reasons.}
+### Reserved roles {SECURITY administrator roles in the spec--but proposing this change for similar reasons.}
 
 **Advisory**
 
