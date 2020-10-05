@@ -71,7 +71,7 @@ If you need help with creating or editing a sensitivity label, see the instructi
 
 On this new **Site and group settings** page, configure the settings:
 
-- **Privacy of Office 365 group-connected teams sites**: Keep the default of **Public - anyone in the organization can access the site** if you want anyone in your organization to access the team site or group where this label is applied.
+- **Privacy of Microsoft 365 group-connected teams sites**: Keep the default of **Public - anyone in the organization can access the site** if you want anyone in your organization to access the team site or group where this label is applied.
 
   Select **Private** if you want access to be restricted to only approved members in your organization.
 
