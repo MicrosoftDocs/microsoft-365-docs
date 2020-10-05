@@ -13,6 +13,7 @@ localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
+- M365initiative-coredeploy
 ms.custom: 
 description: Require that your users sign in securely with multi-factor authentication (MFA) and other features.
 ---
