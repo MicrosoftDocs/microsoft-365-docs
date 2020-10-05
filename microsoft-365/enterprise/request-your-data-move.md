@@ -39,7 +39,7 @@ Eligible Microsoft 365 customers may request migration for their entire organiza
 |South Africa  <br/> |July 25, 2019  <br/> |June 30, 2020  <br/> |
 |Switzerland, Liechtenstein  <br/> |December 10, 2019  <br/> |June 30, 2020  <br/> |
 |Norway  <br/> |April 15, 2020  <br/> |October 31, 2020  <br/> |
-|Germany  <br/> |October 1, 2020  <br/> |March 31, 2021  <br/> |
+|Germany  <br/> |Planned  <br/> |Planned  <br/> |
 
 ## How to request a move
 
