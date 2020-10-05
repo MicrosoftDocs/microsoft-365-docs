@@ -117,12 +117,18 @@ You have the ESP default profile set to **Show app and profile configuration pro
 
 Make sure that any profiles that have the **Show app and profile configuration progress** setting are not assigned to any Azure AD group that include Microsoft Managed Desktop devices. For more information, see [Set up the Enrollment Status Page](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
 
+### Intune enrollment
+
+**Not ready**
+
+Users in your Azure AD organization aren't automatically enrolled in Microsoft Intune. Change the MDM User scope to exclude the **Modern Workplace -All** Azure AD group.
+
 
 ### Microsoft Store for Business
 
 **Not ready**
 
-Microsoft Store for Business must be enabled and syncing with Intune. For more information, see [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business)
+Microsoft Store for Business must be enabled and syncing with Intune. For more information, see [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business).
 
 ### PowerShell scripts
 
@@ -150,6 +156,13 @@ Your Azure AD organization region isn't currently supported by Microsoft Managed
 **Advisory**
 
 One or more of the countries where your Azure AD organization is located isn't supported by Microsoft Managed Desktop. For more information, see [Microsoft Managed Desktop supported regions and languages](../service-description/regions-languages.md).
+
+
+### Standard user role
+
+**Advisory**
+
+{Microsoft Managed Desktop users are set as standard user without any local admin privileges -- I'M CONFUSED--should they be or not?} 
 
 ### Windows apps
 
@@ -265,7 +278,7 @@ Make sure that the SSPR **Selected** setting doesn't exclude any Azure AD groups
 
 ## Microsoft 365 Apps for enterprise
 
-### OneDrive
+### OneDrive for Business
 
 **Advisory**
 
