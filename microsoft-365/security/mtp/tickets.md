@@ -24,7 +24,7 @@ ms.custom:
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->[!CAuTION]
+>[!CAUTION]
 >**The preview period for the ServiceNow connector has ended**<br>
 >This capability is no longer available. Thank you for your feedback and continued support while we determine next steps.
 
