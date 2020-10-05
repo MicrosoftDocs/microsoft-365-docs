@@ -10,26 +10,27 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.collection: 
+- M365-subscription-management
+- M365initiative-coredeploy
 ms.custom: it-pro
 description: The roadmap to set up your tenants for Microsoft 365.
 ---
 
 # Tenant roadmap for Microsoft 365
 
-Your Microsoft 365 tenant is the set of services assigned to your organization. This tenant is typically associated with one or more of your DNS domain names and acts as a central container for different subscriptions and the licenses within them that you assign to user accounts. 
+Your Microsoft 365 tenant is the set of services assigned to your organization. Typically, this tenant is associated with one or more of your DNS domain names and acts as a central container for different subscriptions and the licenses within them that you assign to user accounts.
 
 When you create a Microsoft 365 tenant, you assign it to a specific geographical location. You can also have a tenant with multiple geographical locations and move your tenant from one location to another.
 
-A well-planned and executed tenant configuration is critical to getting it ready for the foundational services of networking and identity.
+To get your tenant ready for the foundational services of networking and identity, it's critical to carefully plan and execute your tenant configuration.
 
 ## Plan
 
-In the planning phase of your tenant implementation:
+To plan for your tenant implementation:
 
 - [Understand subscriptions, licenses, and Azure Active Directory (Azure AD) tenants](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [Understand how to use third-party SSL certificates](plan-for-third-party-ssl-certificates.md)
-- [Access setup guides in the Microsoft 365 admin center](setup-guides-for-microsoft-365.md)
 - [Understand the ways a Microsoft 365 tenant is integrated with Azure AD services](integrated-apps-and-azure-ads.md)
 - [Plan for client app support](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determine how to use hybrid modern authentication](hybrid-modern-auth-overview.md)
@@ -39,19 +40,19 @@ In the planning phase of your tenant implementation:
 
 ## Deploy
 
-In the deployment phase of your tenant implementation, [add the DNS domains](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) for your organization.
+To deploy your tenant, [add the DNS domains](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) for your organization and use the [setup guides in the Microsoft 365 admin center](setup-guides-for-microsoft-365.md).
 
 ## Tenants with multiple geographic locations
 
 With Microsoft 365 Multi-Geo, your organization can expand its Microsoft 365 presence to multiple geographic regions and/or countries within your existing tenant.
 
-[Get started](microsoft-365-multi-geo.md) in understanding, planning, configuring, and then administering with Microsoft 365 Multi-Geo.
+For information about Microsoft 365 Multi-Geo, including how to plan, configure, and administer it, [start here](microsoft-365-multi-geo.md).
 
-## Moving a tenant's geographic locations
+## Move a tenant's geographic locations
 
 Microsoft continues to open new datacenter geographic locations (geos) for Microsoft 365 services. These new datacenter geos add capacity and compute resources to support customer demand and usage growth. Additionally, the new datacenter geos offer in-geo data residency for core customer data.
 
-Get started in understanding and requesting a geo data move with [Moving core data to new Microsoft 365 datacenter geo](moving-data-to-new-datacenter-geos.md).
+For information about Microsoft 365 datacenter geo, including how to request a geo data move, [start here](moving-data-to-new-datacenter-geos.md).
 
 ## Next step
 

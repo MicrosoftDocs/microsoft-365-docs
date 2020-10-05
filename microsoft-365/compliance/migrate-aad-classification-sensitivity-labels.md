@@ -1,5 +1,5 @@
 ---
-title: "Azure Active Directory classification and sensitivity labels for Microsoft 365 groups"
+title: Azure Active Directory classification and sensitivity labels for Microsoft 365 groups
 ms.reviewer: vijagan
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -7,7 +7,7 @@ manager: pamgreen
 audience: ITPro
 f1.keywords: NOCSH
 ms.topic: article
-ms.service: o365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 description: "This article discusses classic Azure Active Directory classification and sensitivity labels."
 ---
@@ -43,11 +43,13 @@ Table 1. Behavior of compatible and non-compatible workloads – create, edit, o
 
 > [!NOTE]
 > In the case of Outlook desktop client (Win 32), after admin enables sensitivity labels on their tenant, and their user is on an older version of the Outlook desktop client (Win 32):
+>
 > - User sees sensitivity labels appear on the older version of the Outlook desktop client.
 > - However, when the user edits a group, and saves the group with a sensitivity label, the selected privacy setting is overridden by the privacy setting of the applied sensitivity label.
+>
 > We recommend that your users on an old version of Outlook client upgrading to the newer version.
 
-## Scenario 2: Tenant is already using classic AAD [classifications](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell#create-classifications-for-office-groups-in-your-organization)
+## Scenario 2: Tenant is already using classic AAD [classifications](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
 
 ### Case A: Tenant never used sensitivity labels for documents and emails
 
@@ -71,8 +73,10 @@ Table 2. Behavior of compatible and non-compatible workloads – create, edit, o
 
 > [!NOTE]
 > In the case of Outlook desktop client (Win 32), after admin enables sensitivity labels on their tenant, and their user is on an older version of the Outlook desktop client (Win 32):
+>
 > - User sees sensitivity labels appear on the older version of the Outlook desktop client.
 > - However, when the user edits a group, and saves the group with a sensitivity label, the selected privacy setting is overridden by the privacy setting of the applied sensitivity label.
+>
 > We recommend that your users on an old version of Outlook client upgrading to the newer version.
 
 ### Case B: Tenant used sensitivity labels for documents and emails
@@ -85,4 +89,3 @@ Table 2. Behavior of compatible and non-compatible workloads – create, edit, o
 ## Sample script
 
 For a sample script to migrate groups with classic AAD labels to sensitivity labels, see [Classic Azure AD group classification](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification).
-

@@ -2,9 +2,9 @@
 title: "Plan your setup of Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sirkkuw
+author: Sirkkuw
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -55,7 +55,7 @@ If you get stuck at any point, call us. [We're here to help!](../contact-support
 
 There are a couple of scenarios that include either migrating data or users from on-premises environments or setting up a hybrid system that includes directory synchronization. If you're in either category, follow the instructions in these articles:
   
-- To set up directory synchronization with your on-premises Active Directory, see [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization), and to understand the different identity models in Microsoft 365, read [Understanding Microsoft 365 identity and Azure Active Directory](https://docs.microsoft.com/office365/enterprise/about-office-365-identity).
+- To set up directory synchronization with your on-premises Active Directory, see [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization), and to understand the different identity models in Microsoft 365, read [Understanding Microsoft 365 identity and Azure Active Directory](https://docs.microsoft.com/microsoft-365/enterprise/about-microsoft-365-identity).
 
 - To set-up an Exchange hybrid, the full set of instructions that guide you through all the different ways of setting up a hybrid exchange (including setting up DNS records) can be found here: [Exchange Server Deployment Assistant](https://aka.ms/exdeploy)
 
@@ -122,7 +122,7 @@ For larger organizations or if you're starting from Skype for Business, on-premi
   
 ## Plan for integration with Active Directory or other software
 
-- **Do you want to integrate with your on-premises Active Directory?** You can integrate your on-premises Active Directory with Microsoft 365 by using Azure Active Directory Connect. For instructions, see [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization).
+- **Do you want to integrate with your on-premises Active Directory?** You can integrate your on-premises Active Directory with Microsoft 365 by using Azure Active Directory Connect. For instructions, see [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization).
   
 - **Do you want to integrate Microsoft 365 with software made by other companies?** If you need to integrate Microsoft 365 with other software in your organization, we recommend you consider [hiring a partner](https://go.microsoft.com/fwlink/?linkid=391089) to help you with your deployment.
   
