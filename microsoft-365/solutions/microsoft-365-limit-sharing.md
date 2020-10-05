@@ -2,7 +2,7 @@
 title: "Limit sharing in Microsoft 365"
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -28,15 +28,16 @@ The methods of sharing files are listed in the table below. Click the link in th
 
 |Sharing method|Description|Limiting options|
 |:-------------|:----------|:-------------|
-|[Microsoft 365 group or team](#microsoft-365-group-or-team)|People granted access to a Microsoft Teams team or Microsoft 365 group have edit access to files in the associated SharePoint site.|If the group or team is private, sharing invitations to join the team go to the owner for approval. Admins can disable guest access to prevent access by people from outside the organization.|
-|[SharePoint site](#sharepoint-site)|People can be granted Owner, Member, or Visitor access to a SharePoint site and will have that level of access to files in the site.|Site permissions can be restricted so that only site owners can share the site.|
+|[Microsoft 365 group or team](#microsoft-365-group-or-team)|People granted access to a Microsoft Teams team or Microsoft 365 group have edit access to files in the associated SharePoint site.|If the group or team is private, sharing invitations to join the team go to the owner for approval. Admins can disable guest access or use sensitivity labels to prevent access by people from outside the organization.|
+|[SharePoint site](#sharepoint-site)|People can be granted Owner, Member, or Visitor access to a SharePoint site and will have that level of access to files in the site.|Site permissions can be restricted so that only site owners can share the site. Admins can set a site to read-only or block access entirely.|
 |[Sharing with specific people](#sharing-with-specific-people)|Site members and people with edit permissions can give direct permissions to files and folders or share them by using *Specific people* links.|Site permissions can be restricted so that only site owners can share files and folders. In this case, direct access and *Specific people* link sharing by site members goes to site owner for approval.|
 |[SharePoint guest sharing](#sharepoint-guest-sharing)|SharePoint site owners and members can share files and folders with people outside the organization.|Guest sharing can be disabled for the entire organization or for individual sites.|
 |[*People in your organization* sharing links](#people-in-your-organization-sharing-links)|SharePoint site owners and members can share files using *People in your organization* links, which will work for anyone inside the organization.|*People in your organization* links can be disabled at the site level.|
+|[Create sites, groups, and teams](#create-sites-groups-and-teams)|By default, users can create new sites, groups, and teams from which they can share content.|Admins can restrict who can create sites, groups, and teams.|
 |[Email](#email)|People with access to a file can send it to others via email.|Admins can encrypt files by using sensitivity labels to prevent them being shared with unauthorized people.|
 |[Download or file copy](#download-or-file-copy)|People with access to a file can download or copy it and share it with others outside the scope of Microsoft 365.|Admins can encrypt files by using sensitivity labels to prevent them being shared with unauthorized people.|
 
-While you can use the admin controls described in this article to limit sharing in your organization, we highly recommend that you consider using the security and compliance features available in Microsoft 365 to create a secure sharing environment. See [File collaboration in SharePoint with Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration) and [Teams for highly regulated data](https://docs.microsoft.com/microsoft-365/enterprise/secure-teams-highly-regulated-data-scenario) for information.
+While you can use the admin controls described in this article to limit sharing in your organization, we highly recommend that you consider using the security and compliance features available in Microsoft 365 to create a secure sharing environment. See [File collaboration in SharePoint with Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration) and [Configure a team with security isolation](secure-teams-security-isolation.md) for information.
 
 To understand how sharing is being used in your organization, [run a report on file and folder sharing](https://docs.microsoft.com/sharepoint/sharing-reports).
 
@@ -64,7 +65,7 @@ To turn off guest sharing in Microsoft 365 Groups
     ![Screenshot of Microsoft 365 Groups sharing settings in the Microsoft 365 admin center](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
-> If you want to prevent guest sharing for a particular group or team, you can do so by using Microsoft PowerShell. See [Block guest users from a specific group](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#block-guest-users-from-a-specific-group) for details.
+> If you want to prevent guest sharing for a particular group or team, you can do so by using [Microsoft PowerShell](per-group-guest-access.md) or [sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 You can limit guest sharing to users from specific domains by allowing or blocking domains in Azure Active Directory. This will also affect guest sharing in SharePoint if you have enabled [SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
 
@@ -106,6 +107,14 @@ To limit site sharing by domain
 6. Click **Save**.
 
     ![Screenshot of allowed domains site-level setting](../media/limit-site-sharing-by-domain.png)
+
+### Block access to a site
+
+You can block access to a site or make a site read-only by changing the lock state of the site. For details, see [Lock and unlock sites](https://docs.microsoft.com/sharepoint/manage-lock-status).
+
+### Permissions inheritance
+
+While not recommended, you can use [SharePoint permissions inheritance](https://docs.microsoft.com/sharepoint/what-is-permissions-inheritance) to customize access levels to sites and subsites.
 
 ## Sharing with specific people
 
@@ -165,6 +174,12 @@ By default, members of a site can share files and folders with other people in y
 For example:
 
 `Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks`
+
+## Create sites, groups, and teams
+
+By default, users can create new sites, groups, and teams from which they can share content. You can restrict who can create sites, groups, and teams. See the following references:
+
+
 
 ## Email
 
