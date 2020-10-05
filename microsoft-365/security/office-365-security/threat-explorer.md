@@ -101,12 +101,13 @@ Note: Since there would be new fields and values for Detection technologies and 
 ### System overrides 
 
 System overrides are a method of making exceptions to the intended delivery location of a message by overriding the delivery location provided by system (based on the threats and other detections identified by our filtering stack). System overrides can be set through tenant or user policy to deliver the message as suggested by the policy. Overrides are very useful in identifying any unintentional delivery of malicious messages due to configurations gaps (example, a very broad Safe Sender policy set at by a user)  
-These overrides can be:
-a.	Allowed by user policy: This is when a user allows domains or senders by creating policies at the mailbox level
-b.	Blocked by user policy: This is when a user blocks domains or senders by creating policies at the mailbox level
-c.	Allowed by org policy: This is when the organization’s security teams set policies / exchange transport rules to allow senders and domains for users in their organization. This can be for a set of users or the entire organization
-d.	Blocked by org policy: This is when the organization’s security teams set policies / exchange transport rules to block senders, domains, language, IP for users in their organization. This can also be for a set of users or the entire organization
-e.	File extension blocked by org policy: This is when a file type extension is blocked by the security teams of an organization through the anti-malware policy settings
+These override values can be:
+
+- Allowed by user policy: This is when a user allows domains or senders by creating policies at the mailbox level
+- Blocked by user policy: This is when a user blocks domains or senders by creating policies at the mailbox level
+- Allowed by org policy: This is when the organization’s security teams set policies / exchange transport rules to allow senders and domains for users in their organization. This can be for a set of users or the entire organization
+- Blocked by org policy: This is when the organization’s security teams set policies / exchange transport rules to block senders, domains, language, IP for users in their organization. This can also be for a set of users or the entire organization
+- File extension blocked by org policy: This is when a file type extension is blocked by the security teams of an organization through the anti-malware policy settings
 These values will now be exposed in email details to help investigate the secops teams better. Secops teams can also apply filtering on this using the rich filtering capability.
 
 ![System_Overrides](../../media/System_Overrides.png)
