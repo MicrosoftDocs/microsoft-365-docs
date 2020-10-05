@@ -25,6 +25,10 @@ ms.custom:
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+>[!IMPORTANT]
+>**The preview period for the ServiceNow connector has ended**<br>
+>This capability is no longer available. Thank you for your feedback and continued support while we determine next steps.
+
 
 The [Microsoft 365 security center](overview-security-center.md) has been enhanced with the ability to natively create and track tickets in ServiceNow. [Learn more about ServiceNow](https://www.servicenow.com/)
 
