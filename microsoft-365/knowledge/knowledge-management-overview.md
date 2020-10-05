@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Overview of the knowledge management in Project Cortex."
 ---
 
-# Knowledge management 0verview (Preview)
+# Knowledge management Overview (Preview)
 
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex) 
