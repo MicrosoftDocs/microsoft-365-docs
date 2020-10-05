@@ -177,9 +177,12 @@ For example:
 
 ## Create sites, groups, and teams
 
-By default, users can create new sites, groups, and teams from which they can share content. You can restrict who can create sites, groups, and teams. See the following references:
+By default, users can create new sites, groups, and teams from which they may be able to share content (depending on your sharing settings). You can restrict who can create sites, groups, and teams. See the following references:
 
+- [Manage site creation in SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
+- [Manage who can create Microsoft 365 Groups](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
 
+Note that restricting group creation restricts team creation.
 
 ## Email
 
@@ -188,6 +191,15 @@ You can prevent unwanted sharing of emails by using encryption. This prevents em
 ## Download or file copy
 
 Users who have access to files and folders in Microsoft 365 can download files and copy them to external media. To reduce the risk of unwanted file sharing, you can encrypt the content by using sensitivity labels.
+
+## Conditional access
+
+Azure Active Directory conditional access provides options to limit or prevent sharing with people based on network location, device health, sign-in risk, and other factors. See [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+
+SharePoint provides direct integration with Azure AD conditional access for both unmanaged devices and network location. See the following references for details:
+
+- [Control access from unmanaged devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
+- [Control access to SharePoint and OneDrive data based on network location](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)
 
 ## See also
 
