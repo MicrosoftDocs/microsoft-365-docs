@@ -13,7 +13,7 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: "Security in Office 365, from EOP to ATP Plans 1 and 2, Standard vs. Strict security configurations, and more, so that you can understand what you have, and how to secure your properties."
+description: "Security in Office 365, from EOP to ATP Plans 1 and 2, Standard vs. Strict security configurations, and more. Understand what you have, and how to secure your properties."
 ---
 
 # Office 365 Security overview
@@ -48,9 +48,9 @@ But in terms of architecture, let's start by thinking of each piece as cumulativ
 
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP and ATP and their relationships to one another with service emphasis, including a note for email authentication.":::
 
-Though each of these services emphasizes a specific goal from among Protect, Detect, Investigate, and Respond, ***all*** the services can carry out ***any*** of the goals of protecting, detecting, investigating, and responding.
+Though each of these services emphasizes a goal from among Protect, Detect, Investigate, and Respond, ***all*** the services can carry out ***any*** of the goals of protecting, detecting, investigating, and responding.
 
-The core of Office 365 security is EOP protection. ATP P1 contains EOP in it. ATP P2 contains P1 and EOP. The structure is cumulative. That's why, when configuring ATP, you should start with EOP and work up through the layers.
+The core of Office 365 security is EOP protection. ATP P1 contains EOP in it. ATP P2 contains P1 and EOP. The structure is cumulative. That's why, when configuring this product, you should start with EOP and work to ATP.
 
 Though email authentication configuration takes place in public DNS, it's important to configure this feature to help defend against spoofing. *If you have EOP,* ***you should [configure email authentication](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)***.
 
@@ -137,7 +137,7 @@ This quick-reference will help you understand what capabilities come with each A
 
 ## Where to go next
 
-If you're a Security Admin, you may need to configure DKIM or DMARC for your mail, roll out 'Strict' security presets for your priority users, or you may be looking for what's new in the product. If you're with Security Ops, you may want to leverage Real-time detections or Threat Explorer to investigate and respond, or train end-user detection with Attack Simulator. Here are some additional recommendations for what to look at next.
+If you're a Security Admin, you may need to configure DKIM or DMARC for your mail. You may want to roll out 'Strict' security presets for your priority users, or look for what's new in the product. And if you're with Security Ops, you may want to leverage Real-time detections or Threat Explorer to investigate and respond, or train end-user detection with Attack Simulator. Either way, here are some additional recommendations for what to look at next.
 
 [Email Authentication, including SPF, DKIM, and DMARC (with links to setup of all three)](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)
 
