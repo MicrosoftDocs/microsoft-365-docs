@@ -39,9 +39,9 @@ Example showing available sensitivity labels in Excel, from the **Home** tab on 
 To apply sensitivity labels, users must be signed in with their Microsoft 365 work or school account.
 
 > [!NOTE]
-> For US Government Community (GCC and GCC-HC) tenants, sensitivity labels are currently supported only for the Azure Information Protection unified labeling client and scanner. 
+> For US Government Community (GCC, GCC-H, and DoD) tenants, sensitivity labels are currently supported only for the Azure Information Protection unified labeling client and scanner. 
 > 
-> For more information, see the blog post, [Announcing General Availability of Unified Labeling in GCC and GCC-H Environments](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-general-availability-of-unified-labeling-in-gcc-and/ba-p/1563215).
+> For more information, see [Azure Information Protection Premium Government Service Description](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 You can use sensitivity labels to:
   
