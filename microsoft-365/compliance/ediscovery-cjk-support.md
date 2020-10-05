@@ -49,4 +49,4 @@ No, none of your existing searches and review sets will change. You don't need t
 - Optical character recognition(OCR) does not process CJK characters from image files
 - CJK characters are broken when displaying emails (*.eml, *.msg) in [Annotate view](./view-documents-in-review-set.md#annotate-view).
 - CJK support for [the Relevance module to analyze data](./using-relevance.md) is not in scope for this release.
-- CJK support for the query-based hold is not in scope for this release. For more information on query-based hold, see [Manage non-custodial holds](./manage-non-custodial-holds.md)
+- CJK support for the query-based hold is not in scope for this release. For more information on query-based hold, see [Manage non-custodial holds](./managing-holds.md#manage-non-custodial-holds)
