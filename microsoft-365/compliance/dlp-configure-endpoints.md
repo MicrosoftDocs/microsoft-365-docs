@@ -28,10 +28,10 @@ Devices in your organization must be configured so that the Microsoft 365 Endpoi
 
 The following deployment tools and methods are supported:
 
-- Group Policy
+- group policy
 - Microsoft Endpoint Configuration Manager
 - Mobile Device Management (including Microsoft Intune)
-- Local script
+- local script
 
 ## In this section
 Topic | Description
