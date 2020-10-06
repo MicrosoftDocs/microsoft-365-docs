@@ -7,7 +7,7 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
+localization_priority: Priority
 description: 'SKOS format reference for SharePoint taxonomy'
 ---
 # SKOS format reference for SharePoint taxonomy
@@ -94,7 +94,7 @@ ex:TermSetA    a    sharepoint-taxonomy:TermSet;
 
 - sharepoint-taxonomy:termSetName
 
-In the case of the termSetName provided is not unique within the [TermGroup](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.group), SharPoint appends a number at the end of the name to maintain the uniqueness of termSetName(s).
+In the case of the termSetName provided is not unique within the [TermGroup](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.group), SharePoint appends a number at the end of the name to maintain the uniqueness of termSetName(s).
 
 **sharepoint-taxonomy:hasTopLevelTerm**
 
@@ -125,7 +125,7 @@ Use this to map a [Term](https://docs.microsoft.com/dotnet/api/microsoft.sharepo
 
 ## Required labels
 
-Your organization may want to do careful planning before you start to use managed metadata. The amount of planning that you must do depends on how formal your taxonomy is. It also depends on how much control that you want to impose on metadata. At each level of the hierarchy, you need to configure required lables for a Term or TermSet.
+Your organization may want to do careful planning before you start to use managed metadata. The amount of planning that you must do depends on how formal your taxonomy is. It also depends on how much control that you want to impose on metadata. At each level of the hierarchy, you need to configure required labels for a Term or TermSet.
 
 A Term can have one or more labels in the default language, and zero or more labels in the non-default language. If the term has labels in a language, one of the labels must be the default label.
 
@@ -195,7 +195,7 @@ The syntax to define a parent is:
 ex:TermA1    sharepoint-taxonomy:parent    ex:TermA.
 ```
 
-This means that TermA1 has parent TermA. Inversely it also means that TermA1 is the child of TermA. Parent-child relationship is an inversible relationship.
+This means that TermA is the parent and  TermA is the child.
 
 **sharepoint-taxonomy:child**
 
@@ -209,7 +209,7 @@ The syntax to define a child is:
 ex:TermA    sharepoint-taxonomy:child    ex:TermA1.
 ```
 
-This means that TermA has child TermA1. Inversely it also means that TermA is the parent of TermA1 parent-child relationship is an inversible relationship.
+This means that TermA is the parent and  TermA is the child.
 
 ## Documentation notes
 

@@ -221,6 +221,8 @@ additionalContent:
           links:
             - text: SharePoint in Microsoft 365
               url: /sharepoint/sharepoint-online
+            - text: SharePoint Syntex
+              url: contentunderstanding/index.md
             - text: SharePoint Server
               url: /sharepoint/sharepoint-server
             - text: Hybrid

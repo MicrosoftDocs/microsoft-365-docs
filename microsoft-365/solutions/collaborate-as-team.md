@@ -100,7 +100,7 @@ If you want to allow file and folder sharing with unauthenticated people, choose
 To set SharePoint organization level sharing settings
 
 1. In the Microsoft 365 admin center, in the left navigation, under **Admin centers**, click **SharePoint**.
-2. In the SharePoint admin center, in the left navigation, click **Sharing**.
+2. In the SharePoint admin center, in the left navigation, expand **Policies** and then click **Sharing**.
 3. Ensure that external sharing for SharePoint is set to **Anyone** or **New and existing guests**.
 4. If you made changes, click **Save**.
 
@@ -179,3 +179,5 @@ To invite guests to a team
 [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)
 
 [Create a B2B extranet with managed guests](b2b-extranet.md)
+
+[SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
