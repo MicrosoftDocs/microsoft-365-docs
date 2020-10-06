@@ -26,13 +26,21 @@ ms.custom:
 
 Taxes for Microsoft 365 admin center purchases that you make through Microsoft are determined by your business address, or, if it's different, by your shipping address. If you are in the United States, you must provide a Federal Employer Identification Number (FEIN).
 
-Businesses in these countries can provide their VAT number:
+Businesses in the following countries can provide their VAT number or local equivalent:
 
 :::row:::
     :::column:::
+- Armenia
+- Australia
 - Austria
+- Bahamas
+- Bangladesh
+- Belarus
 - Belgium
+- Brazil*
 - Bulgaria
+- Chile
+- Colombia
 - Croatia
 - Cyprus
 - Czech Republic
@@ -43,50 +51,48 @@ Businesses in these countries can provide their VAT number:
 - Germany
 - Greece
 - Hungary
+- India*
+- Indonesia
 - Ireland
+- Isle of Man
 - Italy
-- Latvia
+- Korea
     :::column-end:::
     :::column:::
+- Latvia
 - Liechtenstein
 - Lithuania
 - Luxembourg
+- Malaysia
 - Malta
+- Mexico
 - Monaco
 - Netherlands
+- New Zealand
 - Norway
 - Poland
 - Portugal
 - Romania
+- Saudi Arabia
 - Slovakia
+- Slovenia
 - South Africa
 - Spain
 - Sweden
 - Switzerland
+- Taiwan
+- Turkey
+- United Arab Emirates
 - United Kingdom
     :::column-end:::
 :::row-end:::
 
-These countries can provide their VAT number or local equivalent on their billing account information.
-
-|Market| Tax identifier |
-|------|----------------|
-| Australia | ABN (optional) |
-| Brazil | CNPJ (required) |
-| India | GSTIN (optional), PAN ID (required) |
-| Isle of Man | VAT ID (optional) |
-| New Zealand | GST Registration number (optional) |
-| Monaco | VAT ID (optional) |
-| Taiwan | VAT ID (optional) |
+*For most of the countries listed, providing a VAT number or local equivalent is optional. For Brazil and India, the tax identifier number is required.
 
 > [!Note]
 > If you need to contact support, have your FEIN, VAT number, or local equivalent ready to give to the support agent.
 
-## What tax will I be charged?
-
-Find out what tax you're charged in the following regions. You can also [apply for tax exempt status](tax-information.md#apply-for-tax-exempt-status) by providing the proper documentation to Support.
-  
-### Europe, the Middle East, and Africa (EMEA)
+## Europe, the Middle East, and Africa (EMEA)
 
 When you buy Microsoft 365 services in the European Union, this purchase is subject to Value-Added Tax (VAT).
   
@@ -104,51 +110,30 @@ You might qualify for VAT zero-rating:
 
 - **If you're in Ireland and you have relevant valid VAT exemption certification:** Microsoft Ireland Operations Ltd. may be entitled to exempt the transaction from VAT. If you don't, Microsoft Ireland Operations Ltd. applies the current Irish VAT rate, whether you provide a VAT ID or not.
 
-::: moniker range="o365-worldwide"
-
-#### Add your VAT ID (EU countries only)
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-2. Find the subscription card for the subscription you want to update.
-
-3. In the **Settings & Actions** section, select **Edit service usage address**.
-
-4. On the **Edit your service usage address** page, in the **VAT number** box, enter your VAT ID, including the prefix, and without any spaces. Select **Save**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-#### Add your VAT ID (EU countries only)
-  
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-
-2. Select the subscription name, and then select **More actions** \> **Edit VAT number**.
-  
-3. On the **Edit your service usage address** page, in the **VAT number** box, enter your VAT ID, including the prefix, and without any spaces. Select **Save**.
-
-::: moniker-end
-
-### Asia Pacific countries (APAC)
+## Asia Pacific countries (APAC)
 
 If you're billed by the Microsoft Regional Sales office, "Microsoft Regional Sales" appears on your invoice, and you're usually not charged a consumption or Value-Added Tax (VAT) tax unless it is a domestic sale.
   
 If you're billed from another location, the current local tax is applied. You'll see the following [on your invoice](view-your-bill-or-invoice.md):
   
 - Singapore to Singapore
-
 - Korea to Korea
-
 - Japan to Japan
-
 - Taiwan to Taiwan
 
-### North, Central, and South America
+## North, Central, and South America
 
 In the United States and Canada, various tax rates apply depending on your location. In Puerto Rico, local Value-Added Tax (VAT) charges apply.
   
 If your billing is done by Microsoft Corporation ([see your invoice](view-your-bill-or-invoice.md)), and you signed up for Microsoft 365 outside of the United States, Canada, and Puerto Rico, then tax is generally not charged.
+
+## Add your VAT ID
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+2. On the **Products** tab, select the subscription that you want to update.
+3. On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.
+4. On the **Edit your service usage address** pane, in the **VAT number** box, enter your VAT ID, including the prefix, and without any spaces. 
+5. Select **Save**.
 
 ## How taxes are calculated
 
@@ -170,10 +155,11 @@ Have the following documentation ready:
 
 |Country or locale | Documentation |
 |------------------|----------------|
-| United States | Sales Tax Exemption Certificate |
 | Canada | Certificate of Exemption (or equivalent letter of authorization) |
-| Ireland | 13B/56A Tax Exemption Certificate|
+| Colombia |  |
 | International organizations that hold tax exemption | Certification / letter confirmation from local tax authorities |
+| Ireland | 13B/56A Tax Exemption Certificate|
+| United States | Sales Tax Exemption Certificate |
 | Puerto Rico | Certificado de Compras Exentas |
   
 ## Related content
