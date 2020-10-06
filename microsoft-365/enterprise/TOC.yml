@@ -714,7 +714,7 @@
   items: 
     - name: Overview
       href: contoso-overview.md
-    - name: Contoso's IT infrastructure and needs
+    - name: Contoso IT infrastructure and needs
       href: contoso-infra-needs.md
     - name: Networking
       href: contoso-networking.md

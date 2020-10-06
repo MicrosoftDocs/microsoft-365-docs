@@ -15,7 +15,7 @@ ms.collection:
 - M365-subscription-management
 ms.custom:
 
-description: How a fictional but representative global organization adopted Microsoft 365 for enterprise.
+description: How a fictional but representative global organization adopted Microsoft 365 for enterprise. 
 ---
 
 # Microsoft 365 for enterprise for Contoso Corporation
