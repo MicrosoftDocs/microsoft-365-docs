@@ -229,7 +229,7 @@
           href: endpoint-dlp-using.md
         - name: Onboarding tools and methods for Windows 10 devices
           items:
-          href: dlp-configure-endpoints.md
+              href: dlp-configure-endpoints.md
             - name: Onboard Windows 10 devices via Group Policy
               href: dlp-configure-endpoints-gp.md
             - name: Onboard Windows 10 devices using Mobile Device Management tools
