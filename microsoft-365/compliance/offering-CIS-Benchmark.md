@@ -3,7 +3,7 @@ title: Center for Internet Security (CIS) Benchmarks
 description: The Center for Internet Security (CIS) has published a series of benchmarks for Microsoft products and services
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -80,6 +80,10 @@ The release of revised CIS Benchmarks changes depending on the community of IT p
 **Who contributed to the development of Microsoft CIS Benchmarks?**
 
 CIS notes that its 'Benchmarks are developed through the generous volunteer efforts of subject matter experts, technology vendors, public and private CIS Benchmark community members, and the CIS Benchmark Development team.' For example, you'll find a list of Azure contributors on [CIS Microsoft Azure Foundations Benchmark v1.0.0 Now Available](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/).
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

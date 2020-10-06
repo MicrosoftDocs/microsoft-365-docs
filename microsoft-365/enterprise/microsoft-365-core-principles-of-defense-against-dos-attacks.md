@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 core principles of defense against denial-of-service attacks"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article

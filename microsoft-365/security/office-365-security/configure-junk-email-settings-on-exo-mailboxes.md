@@ -20,6 +20,9 @@ description: "Admins can learn how to configure the junk email settings in Excha
 
 # Configure junk email settings on Exchange Online mailboxes
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 In Microsoft 365 organizations with mailboxes in Exchange Online, organizational anti-spam settings are controlled by Exchange Online Protection (EOP). For more information, see [Anti-spam protection in EOP](anti-spam-protection.md).
 
 But, there are also specific anti-spam settings that admins can configure on individual mailboxes in Exchange Online:

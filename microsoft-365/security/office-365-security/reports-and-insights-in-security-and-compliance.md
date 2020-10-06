@@ -22,6 +22,9 @@ ms.custom: seo-marvel-apr2020
 
 # Smart reports and insights in the Security & Compliance Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 If you are part of your organization's Microsoft for 365 for business security team and have the necessary [permissions assigned in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md), you can access a variety of reports, including smart reports and insights. Read this article to get an overview of these reports and insights, and where to go to learn more about specific reports.
 
 ## Smart reports and insights overview

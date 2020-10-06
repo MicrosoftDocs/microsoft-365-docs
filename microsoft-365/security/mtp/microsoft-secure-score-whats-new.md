@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Secure Score
 description:  Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 security center.
-keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -23,6 +23,9 @@ ms.custom:
 ---
 
 # What's new in Microsoft Secure Score
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 

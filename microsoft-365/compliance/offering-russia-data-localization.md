@@ -3,7 +3,7 @@ title: Russian Personal Data Localization Requirements
 description: Learn how collecting personal data, Russian citizens’ personal data recording, systematization, accumulation, storage, clarification, and extraction are performed in Microsoft services and databases located in Russia.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -18,7 +18,7 @@ titleSuffix: Microsoft Compliance
 
 # Russian Personal Data Localization Requirements
 
-As of September 1, 2015, organizations that are considered personal data operators must ensure that, when collecting personal data, Russian citizens’ personal data recording, systematization, accumulation, storage, clarification (updating, changing), and extraction are performed through the databases located in Russia ('personal data localization requirement').<sup>1</sup>
+As of September 1, 2015, organizations that are considered personal data operators must ensure that, when collecting personal data, Russian citizens' personal data recording, systematization, accumulation, storage, clarification (updating, changing), and extraction are performed through the databases located in Russia ('personal data localization requirement').<sup>1</sup>
 
 Microsoft Online Services available to organizations (including but not limited to educational institutions) (hereinafter referred to as 'customer'), including those enabling personal data processing such as Microsoft Azure, Microsoft 365, Dynamics 365, and Power Platform, are provided from data processing centers located outside of Russia (for more information visit the [Microsoft Trust Center](https://www.microsoft.com/trust-center)).
 
@@ -35,6 +35,10 @@ Microsoft invites customers to consider subscribing to Microsoft Online Services
 ### Managing User Identity and Access for Microsoft Online Services
 
 For Microsoft Online Services such as Microsoft Azure, Microsoft 365, Dynamics 365, and Power Platform, user verification and access management are performed through [Azure Active Directory (AAD)](https://azure.microsoft.com/services/active-directory/). Note that cases where a Microsoft customer uses a local identification management system for Microsoft cloud services (such as the Windows Server Active Directory (AD) or any other ID management system), the customer has an opportunity to swiftly integrate such system with the Azure Active Directory (AAD) through Azure AD Connect. See the [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/cloud-provisioning/) option for more information. Microsoft customers may also consider using applications and solutions of third-party vendors for managing their users and integrating their local identification system with the Azure AD.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Questions and support
 

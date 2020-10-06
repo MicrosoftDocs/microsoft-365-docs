@@ -1,0 +1,53 @@
+### YamlMime:Hub
+
+title: Microsoft Bookings # < 60 chars
+summary: Learn how to set up Microsoft Bookings to provide services to customers on an appointment basis. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft Bookings # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to set up Microsoft Bookings to provide services to customers on an appointment basis. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: bookings #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  author: dmaguire #Required; your GitHub user alias, with correct capitalization.
+  ms.author: dmaguire #Required; microsoft alias of author; optional team alias.
+  manager: serdars
+  audience: Admin
+  ms.date: 09/04/2020 #Required; mm/dd/yyyy format.
+
+
+
+
+
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - items:
+        # Card
+        - title: What is Microsoft Bookings?
+          summary: Schedule and manage appointments with a web-based booking calendar and app, including Outlook integration for your staff and automated notification emails.
+          url: bookings-overview.md
+        # Card
+        - title: Enter your business information
+          summary: Enter your create your About Us page, including business name, address, phone number, website URL, logo, and business hours in Microsoft Bookings.
+          url: enter-business-information.md
+        # Card
+        - title: Get the Bookings app
+          summary: Change the color theme and set up what your external customer facing booking page will look like.
+          url: customize-booking-page.md
+        # Card
+        - title: Add staff to Bookings
+          summary: Create your staff list and manage staff member details such as name, phone number, and email address.
+          url: add-staff.md
+        # Card
+        - title: Schedule business closures, time off, and vacation time
+          summary: Schedule office closures and employee time off from the Bookings calendar so that employees are marked as unavailable for bookings during the specified times.
+          url: schedule-closures-time-off-vacation.md
+        # Card
+        - title: Employee working hours in Microsoft Bookings
+          summary: Set employee working hours and availability in Microsoft Bookings.
+          url: employee-hours.md

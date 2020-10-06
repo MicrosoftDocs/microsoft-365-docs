@@ -75,7 +75,7 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 
 7. Select **Save**.
 
-    It can take up to 48 hours for changes to Office Script settings to take effect.
+    It can take up to 48 hours for changes to Office Scripts settings to take effect.
 
 ## Next steps
 

@@ -24,19 +24,16 @@ description: "Learn about the Microsoft 365 self-service sign up and available s
 
 # Using self-service sign up in your organization
 
-We're listening to your feedback and have made it easier for users in your organization to sign up for online services from Microsoft. We call this new sign up process "self-service sign up" because your users can sign up to use services paid by your subscription, or use free services, without asking you to take action on their behalf.
+Self-service sign up makes it easier for users in your organization to sign up for online services from Microsoft. We call this sign up process "self-service sign up" because your users can sign up to use services paid by your subscription, or use free services, without asking you to take action on their behalf.
   
 ## How self-service sign up works
 
 The following example describes how self-sign up works for a school. The same process works for any organization that has self-service programs enabled in their tenant.
   
-1. Students and faculty members have school email addresses that indicate they are associated with your institution. For example, the email address jakob@uw.edu may indicate a student from the University of Washington.
-
+1. Students and faculty members have school email addresses that indicate they are associated with your institution. For example, the email address jakob@uw.edu may indicate a student at the University of Washington.
 2. Students and faculty go to [our web site](https://go.microsoft.com/fwlink/p/?LinkId=536628), and use their email address to sign up for the services that your organization offers, such Microsoft 365 Apps for enterprise. They can also sign up for other free services that we offer.
-
 3. We validate their email address, and then they can start using Microsoft 365, Power BI, or other services right away.
-
-4. As the business admin, you see who has signed up for a subscription by viewing the **Your products** page in the admin center. This way you can see when there are new or unrecognized licenses for services in your tenant. To control whether users can sign up for self-service subscriptions, use the [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell cmdlet with the **AllowAdHocSubscriptions** parameter. For more information, see [How do I control self-service settings?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+4. As the business admin, you can see who has signed up for a subscription by selecting the subscription on the **Licensing** page in the Microsoft 365 admin center. This way you can see when there are new or unrecognized licenses for services in your tenant. To control whether users can sign up for self-service subscriptions, use the [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell cmdlet with the **AllowAdHocSubscriptions** parameter. For more information, see [How do I control self-service settings?](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
 
 ## Available self-service programs
 
@@ -45,7 +42,7 @@ Following are the currently available self-service programs. This list will be u
 |||||
 |:-----|:-----|:-----|:-----|
 |**Program** <br/> |**Description** <br/> |**Additional Info** <br/> |****Website for self-service sign up**** <br/> |
-|****Office 365 A1**** <br/> |Any student or teacher can use a school email address to sign up for free Office 365 and get Office apps for the web, 1TB of OneDrive cloud storage and SharePoint Online for class, team and project sites.  <br/> |[Office 365 Education Technical FAQ](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
+|****Office 365 A1**** <br/> |Any student or teacher can use a school email address to sign up for free Office 365 and get Office apps for the web, 1 TB of OneDrive cloud storage and SharePoint Online for class, team and project sites.  <br/> |[Office 365 Education Technical FAQ](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Office 365 A1 Plus** <br/> |Eligible students and teachers can sign up for Office 365 A1 Plus, which includes everything mentioned above plus Microsoft 365 Apps for enterprise. Microsoft 365 Apps for enterprise is productivity software, including Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access, and Skype for Business, that is installed on your desktop or laptop computer.  <br/> |[Office 365 Education Technical FAQ](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BI enables users to visualize data, share discoveries, and collaborate in intuitive new ways. <br/> If your organization already subscribes you may additionally see licenses for "Power BI Pro Individual User Trial," which offer users limited, free access to advanced capabilities.  <br/> |[Power BI in your organization](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
 |**Rights Management Services (RMS)** <br/> |RMS for individuals is a free self-service subscription for users in an organization who have been sent sensitive files that have been protected by Azure Rights Management (Azure RMS), but their IT department has not implemented Azure Rights Management (Azure RMS), or Active Directory Rights Management Services (AD RMS).  <br/> |[RMS for Individuals and Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=536627) <br/> |[Microsoft Rights Management portal](https://portal.azure.com/) so you can check whether you can open a given rights-protected document.  <br/> |

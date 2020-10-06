@@ -3,7 +3,7 @@ title: Shared Assessments Program
 description: Azure and Azure Government support the risk assessment tools of the Shared Assessments program based on their CSA STAR self-assessment.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -47,6 +47,6 @@ Based on a self-assessment, Microsoft has documented Azure and Azure Government 
 
 ## Resources
 
-- [Azure standard response for request for information](https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6)
+- [Azure standard response for request for information](https://azure.microsoft.com/resources/azure-standard-response-to-rfi-on-security-privacy-and-compliance/)
 - [Microsoft and the CSA STAR Self-Assessment](offering-csa-star-self-assessment.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
