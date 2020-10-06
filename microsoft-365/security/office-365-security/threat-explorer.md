@@ -43,15 +43,15 @@ With this report, you can:
 
 ### Updated Threat Information for Emails
 
-We have focused on platform and data quality improvements to increase data accuracy and consistency for email records. 
-These set of updates includes consolidation of pre-delivery and post-delivery information (example action executed on an email as part of ZAP process) into a single record  along with added richness like Spam verdict, Entity level threats (e.g. which URL was malicious) and latest delivery locations. 
+We have focused on platform and data quality improvements to increase data accuracy and consistency for email records. These set of updates includes consolidation of pre-delivery and post-delivery information (example action executed on an email as part of ZAP process) into a single record  along with added richness like Spam verdict, Entity level threats (e.g. which URL was malicious) and latest delivery locations. 
 
 After these updates, you would be seeing a single entry for each message, regardless of the different post-delivery events that have taken place on the message. This could include ZAP, Manual Remediation (which means admin action), Dynamic Delivery etc. 
 
-In addition to showing Malware and Phish threats, we have now updated the information to show Spam verdict associated with an email. Within the email, you will be able to see all the threats associated with the email along with the corresponding detection technologies. Each email can have 0, 1 or more than 1 threats, and you would be seeing the current Threats in the Details section of the Email flyout. Additionally, for multiple threats e.g. an email having both Malware and Phish, Detection tech field would give the Threat-Detection mapping, meaning which detection tech led to the identification of the Threat.
-The set of detection technologies has been updated to include new detection methods, as well as spam detection technologies, and aross all the different email views (Malware, Phish, All Email), you will have the same, consistent set of Detection technologies to filter the results. 
+In addition to showing Malware and Phish threats, we have now updated the information to show Spam verdict associated with an email. Within the email, you will be able to see all the threats associated with the email along with the corresponding detection technologies. Each email can have 0, 1, or multiple threats. You'll see the current Threats in the Details section of the Email flyout. Additionally, for multiple threats (e.g., an email having both Malware and Phish), Detection tech field would give the Threat-Detection mapping, meaning which detection tech led to the identification of the Threat.
 
- Note: Our verdict analysis may not necessarily be tied to entities. As an example, an email might be classified as Phish or Spam, but there are no URLs which have any Phish/Spam verdict stamped on them: This is because our filters also evaluate content and other details for an email, before assigning a verdict. 
+The set of detection technologies has been updated to include new detection methods, as well as spam detection technologies, and aross all the different email views (Malware, Phish, All Email), you'll have the same, consistent set of Detection technologies to filter the results. 
+
+**Note**: Our verdict analysis may not necessarily be tied to entities. As an example, an email might be classified as Phish or Spam, but there are no URLs which have any Phish/Spam verdict stamped on them. This is because our filters also evaluate content and other details for an email, before assigning a verdict. 
  
 #### Threats in URLs
 
@@ -64,74 +64,75 @@ Within email flyout-> Details tab, you would now be able to see the specific thr
 ![Updated Timeline View](../../media/Email_Timeline.png)
 
 In addition to identifying all delivery and post-delivery events, timeline view would also give the information about the Threat identified at that point of time for a subset of these events. It will also give you more information about Additional Actions (e.g. ZAP, Manual Remediation) along with the Result of that action. Timeline view would contain information about the Original delivery and subsequently any post-delivery events performed on an email.
-•	Source: This can be Admin/System/user based on what was the source of the event
-•	Event: This includes top level events like Original Delivery, Manual Remediation, ZAP, Submissions, and Dynamic Delivery 
-•	Action: This covers the specific action that was taken either as part of ZAP or Admin Action (e.g. Soft Delete)
-•	Threats: Covers the Threats (Malware, Phish, Spam) identified at that point of time 
-•	Result/Details: Covers more information about the Result of the Action, whether it was performed as part of ZAP/Admin Action
+
+-	Source: This can be Admin/System/user based on what was the source of the event.
+-	Event: This includes top level events like Original Delivery, Manual Remediation, ZAP, Submissions, and Dynamic Delivery .
+-	Action: This covers the specific action that was taken either as part of ZAP or Admin Action (e.g., Soft Delete).
+-	Threats: Covers the Threats (Malware, Phish, Spam) identified at that point of time.
+-	Result/Details: Covers more information about the Result of the Action, whether it was performed as part of ZAP/Admin Action.
 
 ### Original and Latest Delivery location
 
-Today, we surface Delivery Location within Email grid and Email flyout. Going forward, the delivery location field will be renamed to Original Delivery Location. In addition to that, we are also introducing another field called Latest delivery location. 
+Today, we surface Delivery Location within Email grid and Email flyout. Going forward, the delivery location field will be renamed to Original Delivery Location. Additionally, we're also introducing another field called Latest delivery location. 
 
-The original delivery location would give more information about where an email was delivered initially. The latest delivery location would include location where an email may have landed after system actions like ZAP or admin actions like Move to Deleted Items. Latest delivery location is intended to inform admins of the message's last known location post-delivery or any system/admin actions.  By design, it does not include any end user related actions on the email. For example: if a user deletes a message, moves to archive/pst, the message "delivery" location will not be updated.  However, if there has been a system action that has taken place and has updated the location (e.g. ZAP resulting in an email moving to Quarantine), you would see the Latest delivery location as Quarantine. 
+The original delivery location would give more information about where an email was delivered initially. The latest delivery location would include location where an email may have landed after system actions like ZAP or admin actions like Move to Deleted Items. Latest delivery location is intended to inform admins of the message's last known location post-delivery or any system/admin actions. By design, it doesn't include any end user related actions on the email. For example: if a user deletes a message or moves the message to archive/pst, the message "delivery" location will not be updated. However, if a system action updated the location (e.g., ZAP resulting in an email moving to Quarantine), you would see the Latest delivery location as Quarantine. 
 
 ![Updated Delivery Locations](../../media/Updated_Delivery_Location.png)
 
-#### Note: 
-There are few cases where Delivery Location and Delivery Action may show ‘Unknown’ as the value:
-•	You may see Delivery location as Delivered and Delivery Location as Unknown for cases, where delivery may have happened to a Cloud mailbox, but the folder is unknown (where the messages were moved to Default Folders (Draft, Archive, etc.) by Inbox Rule, and did not come under folders like Inbox, Junk etc. 
-In these scenarios, you would see Delivery Action as Delivered and Original Delivery Location as Unknown.  
-•	Latest Delivery Location  can be unknown if an admin/system action (e.g. ZAP, Admin Action) is attempted, and the message cannot be found. Typically, it can happen, after the user has moved or deleted the Message- For such cases, would be good to verify Result/Details Column in timeline view, and look for the message: Message moved or deleted by the user
+**Note**: There are few cases where Delivery Location and Delivery Action may show 'Unknown' as the value:
+
+- You might see Delivery location as Delivered, and Delivery Location as Unknown. This happens when the message was delivered, but an Inbox rule moved the message to a default folder (Draft, Archive, etc.) instead of the Inbox or Junk Email folders. 
+
+- Latest Delivery Location can be unknown if an admin/system action (e.g., ZAP, Admin Action) is attempted, but the message isn't found. Typically, the action happens after the user has moved or deleted the Message. In such cases, verify the Result/Details Column in timeline view. Look for the message: Message moved or deleted by the user.
 
 ![Delivery Locations for Timeline](../../media/Updated_Timeline_Delivery_Location.png)
 
 ### Additional Actions 
 
-Additional Actions consist of the actions that were applied post the delivery of the Email, and can include ZAP, Manual Remediation (action taken by an Admin e.g. Soft Delete), Dynamic Delivery and Reprocessed (an email was retroactively detected as good). 
-
-Note: As part of this change, the Removed by ZAP value currently surfaced in Delivery Action filter, would be going away and you will have a way to search for all emails with ZAP attempt through the Additional Actions.
+Additional Actions consist of the actions that were applied post the delivery of the Email, and can include ZAP, Manual Remediation (action taken by an Admi;n e.g., Soft Delete), Dynamic Delivery, and Reprocessed (an email was retroactively detected as good). 
 
 > [!NOTE]
-
-Note: Since there would be new fields and values for Detection technologies and Additional actions (especially for ZAP scenarios), you should evaluate your existing Saved Queries and Tracked queries, to make sure they work with the new values. 
+>
+> - As part of this change, the Removed by ZAP value currently surfaced in the Delivery Action filter is going away. You'll have a way to search for all email with the ZAP attempt through the Additional Actions.
+>
+> -There will be new fields and values for Detection technologies and Additional actions (especially for ZAP scenarios). Evaluate your existing Saved Queries and Tracked queries to make sure they work with the new values. 
 
 ![Additional_Actions](../../media/Additional_Actions.png)
 
 ### System overrides 
 
-System overrides are a method of making exceptions to the intended delivery location of a message by overriding the delivery location provided by system (based on the threats and other detections identified by our filtering stack). System overrides can be set through tenant or user policy to deliver the message as suggested by the policy. Overrides are very useful in identifying any unintentional delivery of malicious messages due to configurations gaps (example, a very broad Safe Sender policy set at by a user)  
-These override values can be:
+System overrides are a method of making exceptions to the intended delivery location of a message by overriding the delivery location provided by system (based on the threats and other detections identified by our filtering stack). System overrides can be set through tenant or user policy to deliver the message as suggested by the policy. Overrides are useful in identifying any unintentional delivery of malicious messages due to configurations gaps (for example, a very broad Safe Sender policy set by a user). These override values can be:
 
-- Allowed by user policy: This is when a user allows domains or senders by creating policies at the mailbox level
-- Blocked by user policy: This is when a user blocks domains or senders by creating policies at the mailbox level
-- Allowed by org policy: This is when the organization’s security teams set policies / exchange transport rules to allow senders and domains for users in their organization. This can be for a set of users or the entire organization
-- Blocked by org policy: This is when the organization’s security teams set policies / exchange transport rules to block senders, domains, language, IP for users in their organization. This can also be for a set of users or the entire organization
-- File extension blocked by org policy: This is when a file type extension is blocked by the security teams of an organization through the anti-malware policy settings
-These values will now be exposed in email details to help investigate the secops teams better. Secops teams can also apply filtering on this using the rich filtering capability.
+- Allowed by user policy: This is when a user allows domains or senders by creating policies at the mailbox level.
+- Blocked by user policy: This is when a user blocks domains or senders by creating policies at the mailbox level.
+- Allowed by org policy: This is when the organization's security teams set policies or Exchange mail flow rules (also known as transport rules) to allow senders and domains for users in their organization. This can be for a set of users or the entire organization.
+- Blocked by org policy: This is when the organization's security teams set policies or mail flow rules to block senders, domains, message languages, or source IPs for users in their organization. This can also be for a set of users or the entire organization.
+- File extension blocked by org policy: This is when a file type extension is blocked by the security teams of an organization through the anti-malware policy settings. These values will now be displayed in email details to help with investigations. Secops teams can also filter on blocked file extensions using the rich filtering capability.
 
 ![System_Overrides](../../media/System_Overrides.png)
 
 ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
 
-
 ### Improvements around URL and Clicks Experience
-The set of improvements focussed towards URL and URL clicks data include: 
-•	Showing full Clicked URL (including any query Parameters which are part of URL) within the Clicks Section in URL Flyout – currently we show  URL domain and path in title bar, and we would be extending that information to show the full URL . 
-•	Fixes across URL filters (URL vs URL domain vs URL Domain and path): We have made updates around searching for messages containing a URL/Click verdict, and as part of that, have enabled support for protocol agnostic searches (which means you can directly search for URL without putting http). By default, the URL search map to http, unless explicitly specified. See the different search patterns below for an example.  
 
-a.	Search with and without http:// prefix in “URL”, “URL Domain”, “URL Domain and Path” filter fields is consistent, and should show the same result.
-b.	Search for URLs with prefix https:// needs to have https:// in “URL” search field. When not present http:// prefix is assumed.
-c.	 “/” in beginning and end of “URL path”, “URL Domain”, “URL domain and path” field is ignored. “/” in the end of “URL” is ignored. 
+The set of improvements focussed towards URL and URL clicks data include:
+
+-	Showing full Clicked URL (including any query Parameters which are part of URL) within the Clicks Section in URL Flyout. Currently we show the URL domain and path in title bar. We're extending that information to show the full URL.
+-	Fixes across URL filters (URL vs URL domain vs URL Domain and path): We've made updates around searching for messages that contain a URL/Click verdict. As part of that, we've enabled support for protocol agnostic searches (meaning, you can directly search for a URL without http). By default, the URL search maps to http, unless explicitly specified. For example:
+
+  a.	Search with and without the `http://` prefix in "URL", "URL Domain", and "URL Domain and Path" filter fields. This behavior is consistent, and should show the same result.
+  b.	Search for the `https://` prefix in "URL". When not present, the `http://` prefix is assumed.
+  c.	 `/` in beginning and end of the "URL path", "URL Domain", "URL domain and path" fields is ignored. `/` at the end of the "URL" field is ignored. 
 
 ### Phish Confidence Level
-Phish confidence level helps to identify the degree of confidence, with which an email was categorized as Phish. The 2 sets of values are High and Normal. In initial stages, this would be  available to filter only in Phish view of Threat Explorer.
+
+Phish confidence level helps to identify the degree of confidence, with which an email was categorized as Phish. The two possible values are High and Normal. In the initial stages, this filter will be available only in the Phish view of Threat Explorer.
 
 ![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png)
 
 ### ZAP URL Signal 
 
-Typically used for ZAP Phish Alert (An email identified as Phish was removed after delivery) scenarios, this is used to connect the alert with the corresponding results in Explorer. It is one of the IOCs for the alert. 
+Typically used for ZAP Phish Alert scenarios where an was email identified as Phish and removed after delivery. This is used to connect the alert with the corresponding results in Explorer. It is one of the IOCs for the alert. 
 
 ## Experience Improvements to Threat Explorer and Real-Time Detections
 
