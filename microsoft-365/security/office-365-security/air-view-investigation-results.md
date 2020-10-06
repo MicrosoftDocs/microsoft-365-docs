@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: "During and after an automated investigation in Microsoft 365, you can view the results and key findings."
+ms.date: 09/29/2020
 ---
 
 # Details and results of an automated investigation in Microsoft 365
@@ -139,10 +140,14 @@ Given the sheer volume of email that users in an organization send and receive, 
 
 can take significant time. AIR now automates this process, saving your organization's security team time and effort.
 
-Two different types of email clusters may be identified during the email analysis step: similarity clusters and indicator clusters.
+Three different types of email clusters may be identified during the email analysis step: similarity clusters (all investigations), indicator clusters (all investigations), and mailbox/user clusters.
 
 - Similarity clusters are email messages identified by hunting for emails with similar sender and content attributes. These clusters are evaluated for malicious content based on the original detection findings. Email clusters that contain enough malicious email detections are considered malicious.
-- Indicator clusters are email messages that are identified by hunting for the same indicator entity (file hash or URL) from the original email. When the original file/URL entity is identified as malicious, AIR applies the indicator verdict to the entire cluster of email messages containing that entity. A file identified as malware means that the cluster of email messages containing that file are treated as malware email messages.
+- Indicator clusters are email messages that are identified by hunting for the same indicator entity (file hash or URL) from the original email. When the ouserriginal file/URL entity is identified as malicious, AIR applies the indicator verdict to the entire cluster of email messages containing that entity. A file identified as malware means that the cluster of email messages containing that file are treated as malware email messages.
+- Mailbox/user clusters are email messages related to the user involved in a user compromise investigation.  Note that these email clusters are for further analysis by the security operations team and will not generate email remediation actions.  The compromise playbook's mailbox/user clusters reviews the emails being sent by the user being analyzed, in order to understand the potential impact of the emails being sent from the mailbox:
+    - Malicious emails sent from the mailbox/user, which indicate potential compromise of the mailbox/account and will show other users/mailboxes potentially impacted by malicious sent as part of a compromise.
+    - Suspicious emails sent by the mailbox/user, showing any spam/bulk email sent from the mailbox, which may be related to potential compromise or at least indicate potential unwanted activity from the email account.
+    - Clean emails sent by the mailbox/user, which will provide the security operations team a view of legitimate user emails sent, but may include exfiltration of data when the email account is compromised.
 
 The goal of clustering is to hunt and find other related email messages that are sent by the same sender as part of an attack or a campaign.  In some cases, legitimate email may trigger an investigation (for example, a user reports a marketing email).  In these scenarios, the email clustering should identify that email clusters are not malicious – when it appropriately does so, it will **not** indicate a threat nor will it recommend email removal.
 
@@ -150,7 +155,7 @@ The **Email** tab also shows email items related to the investigation, such as t
 
 The email count identified on the email tab currently represents the sum total of all email messages shown on the **Email** tab. Because email messages are present in multiple clusters, the actual total count of email messages identified (and affected by remediation actions) is the count of unique email messages present across all of the clusters and original recipients' email messages.
 
-Both Explorer and AIR count email messages on a per recipient basis, since the security verdicts, actions, and delivery locations vary on a per recipient basis. Thus an original email sent to three users count as a total of three email messages instead of one email. Note there may be cases where an email gets counted two or more times, since the email may have multiple actions on it and there may be multiple copies of the email once all actions occur. For example, a malware email that is detected at delivery may result in both a blocked (quarantined) email and a replaced email (threat file replaced with a warning file, then delivered to user's mailbox). Since there are literally two copies of the email in the system, both might be counted in cluster counts.
+Both Explorer and AIR count email messages on a per recipient basis, because the security verdicts, actions, and delivery locations vary on a per-recipient basis. Thus, an original email sent to three users counts as a total of three email messages instead of one email. There might be cases where an email gets counted two or more times, such as when an email has multiple actions on it, or when there are multiple copies of the email when all the actions occur. For example, a malware email that is detected at delivery can result in both a blocked (quarantined) email and a replaced email (threat file replaced with a warning file, then delivered to user's mailbox). Because there are literally two copies of the email in the system, both might be counted in cluster counts.
 
 Email counts are calculated at the time of the investigation and some counts are recalculated when you open investigation flyouts (based on an underlying query). The email counts shown for the email clusters on the email tab and the email quantity value shown on cluster flyout are calculated at the time of investigation and do not change. The email count shown at the bottom of the email tab of the email cluster flyout and the count of email messages shown in Explorer reflect email messages received after the investigation's initial analysis. Thus an email cluster that shows an original quantity of 10 email messages would show an email list total of 15 when five more email messages arrive between the investigation analysis phase and when the admin reviews the investigation.  Likewise old investigations may start having bigger counts than Explorer queries show, since ATP P2 expires data after 7 days for trials and 30 days for paid licenses.  Showing both count historical and current counts in different views is done to indicate the email impact at the time of investigation and the current impact up until the time that remediation is run.
 
@@ -227,7 +232,7 @@ You can:
 |DLP violations investigation|Investigate any violations detected by [Data Loss Prevention](../../compliance/data-loss-prevention-policies.md) (DLP)|
 |Email indicators extraction|Extract indicators from the header, body, and content of an email message for investigation|
 |File Hash Reputation|Detect anomalies based on file hashes for users and machines in your organization|
-|Mail cluster identification|Email cluster analysis based on header, body, content, and URLs|
+|Mail cluster identification|Email cluster analysis based on header, body, content, files, and URLs|
 |Mail cluster volume analysis|Email cluster analysis based on outbound mail flow volume patterns|
 |Mail delegation investigation|Investigate mail delegation access for user mailboxes related to this investigation|
 |Mail forwarding rules investigation|Investigate any mail forwarding rules for user mailboxes related to this investigation|
@@ -237,7 +242,7 @@ You can:
 |Outbound malware and spam anomaly investigation|Detect intra-org and outbound malware, phish, or spam originating from users in your organization|
 |Sender domain investigation|On-demand check of domain reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources|
 |Sender IP investigation| On-demand check of IP reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources|
-|URL clicks investigation| Investigate clicks  from users protected by [Office 365 ATP Safe Links](atp-safe-links.md) in your organization|
+|URL clicks investigation| Investigate clicks from users protected by [Safe Links in Office 365 ATP](atp-safe-links.md) in your organization|
 |URL reputation investigation|On-demand check on URL reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources|
 |User activity investigation|Analyze user activity anomalies in [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|
 |User-reported emails indicators extraction|Extract indicators from the header, body, and content of [user-reported email](enable-the-report-message-add-in.md) for investigation|
@@ -261,6 +266,6 @@ You can:
 
 ## Next steps
 
-- [Review and approve pending actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
+- [Review and approve pending actions](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 
 - [Learn about automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

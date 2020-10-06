@@ -3,13 +3,11 @@ title: "Document understanding model usage analytics"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+localization_priority: Priority
 description: "Learn how to apply a retention label to a document understanding model"
 ---
 
@@ -17,9 +15,10 @@ description: "Learn how to apply a retention label to a document understanding m
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJY]  
 
 </br>
+
 
 Your Microsoft SharePoint Syntex content center provides you model usage analytics to provide more information about how your models that have been published from the content center are being used. This includes a roll-up of the following information:
 
@@ -45,7 +44,10 @@ The **Files processed over time** bar chart shows you not only the number of fil
    ![Bar chart](../media/content-understanding/bar-chart-models.png) </br>
 
 ## See Also
-[Create a classifier](create-a-classifier.md)</br>
-[Create an extractor](create-an-extractor.md)</br>
-[Document Understanding overview](document-understanding-overview.md)</br>
+[Create a classifier](create-a-classifier.md)
+
+[Create an extractor](create-an-extractor.md)
+
+[Document Understanding overview](document-understanding-overview.md)
+
 [Create a form processing model](create-a-form-processing-model.md)  

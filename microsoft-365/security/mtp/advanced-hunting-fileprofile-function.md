@@ -56,8 +56,8 @@ invoke FileProfile(x,y)
 
 ## Arguments
 
-- **x** — file ID column to use: `SHA1`, `SHA256`, `InitiatingProcessSHA1` or `InitiatingProcessSHA256`; function uses `SHA1` if unspecified
-- **y** — limit to the number of records to enrich, 1-1000; function uses 100 if unspecified
+- **x**—file ID column to use: `SHA1`, `SHA256`, `InitiatingProcessSHA1`, or `InitiatingProcessSHA256`; function uses `SHA1` if unspecified
+- **y**—limit to the number of records to enrich, 1-1000; function uses 100 if unspecified
 
 ## Examples
 
