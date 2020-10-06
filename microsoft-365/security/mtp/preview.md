@@ -25,10 +25,11 @@ search.appverid:
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+>[!IMPORTANT]
+>The preview versions are provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
 
 **Applies to:**
 - Microsoft Threat Protection
-
 
 The Microsoft Threat Protection service is constantly being updated to include new feature enhancements and capabilities.
 
