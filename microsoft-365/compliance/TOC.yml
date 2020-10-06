@@ -90,8 +90,6 @@
           href: sensitive-information-type-entity-definitions.md
         - name: What the DLP functions look for
           href: what-the-dlp-functions-look-for.md
-        - name: Watch an extended overview of customizing DLP
-          href: https://go.microsoft.com/fwlink/?linkid=852306
         - name: Customize a built-in sensitive information type
           href: customize-a-built-in-sensitive-information-type.md
         - name: Custom sensitive information types
@@ -223,12 +221,25 @@
           href: data-loss-prevention-policies.md
         - name: DLP and Microsoft Teams
           href: dlp-microsoft-teams.md
-        - name: Learn about Endpoint data loss prevention (preview)
+        - name: Learn about Endpoint data loss prevention
           href: endpoint-dlp-learn-about.md
-        - name: Get started with Endpoint data loss prevention (preview)
+        - name: Get started with Endpoint data loss prevention
           href: endpoint-dlp-getting-started.md
-        - name: Using Endpoint data loss prevention (preview)
+        - name: Using Endpoint data loss prevention
           href: endpoint-dlp-using.md
+        - name: Onboarding tools and methods for Windows 10 devices
+          items:
+          href: dlp-configure-endpoints.md
+            - name: Onboard Windows 10 devices via Group Policy
+              href: dlp-configure-endpoints-gp.md
+            - name: Onboard Windows 10 devices using Mobile Device Management tools
+              href: dlp-configure-endpoints-mdm.md
+            - name: Onboard Windows 10 devices using Configuration Manager
+              href: dlp-configure-endpoints-sccm.md
+            - name: Onboard Windows 10 devices using a local script
+              href: dlp-configure-endpoints-script.md
+            - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
+              href: dlp-configure-endpoints-vdi.md
         - name: Get started with DLP policy recommendations
           href: get-started-with-dlp-policy-recommendations.md
         - name: Get started with the default DLP policy
