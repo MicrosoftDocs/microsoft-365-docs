@@ -227,8 +227,9 @@
           href: endpoint-dlp-getting-started.md
         - name: Using Endpoint data loss prevention
           href: endpoint-dlp-using.md
-        - name: Onboarding tools and methods for Windows 10 devices
+        - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
           items:
+            - name: Onboarding tools and methods for Windows 10 devices   
               href: dlp-configure-endpoints.md
             - name: Onboard Windows 10 devices via Group Policy
               href: dlp-configure-endpoints-gp.md
