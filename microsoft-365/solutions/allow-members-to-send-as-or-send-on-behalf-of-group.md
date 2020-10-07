@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
