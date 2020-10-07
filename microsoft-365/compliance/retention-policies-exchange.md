@@ -25,9 +25,11 @@ The information in this article supplements [Learn about retention](retention.md
 
 ## What's included for retention and deletion
 
-The following Exchange items can be retained and deleted by using retention settings: Mail messages (includes drafts) with any attachments, tasks and calendar items when they have an end date, and notes. 
+The following Exchange items can be retained and deleted by using retention policies and retention labels: Mail messages (includes drafts) with any attachments, tasks when they have an end date, and notes. 
 
-Contacts, and any tasks and calendar items that don't have an end date are not included.
+Calendar items that have an end date are supported for retention policies but aren't supported for retention labels.
+
+Contacts, and any tasks and calendar items that don't have an end date are not supported.
 
 Other items stored in a mailbox, such as Skype and Teams saved messages, aren't included with this location. These items have their own retention locations.
 

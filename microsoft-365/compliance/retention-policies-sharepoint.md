@@ -27,7 +27,7 @@ The information in this article supplements [Learn about retention](retention.md
 
 ## What's included for retention and deletion
 
-All files stored in a SharePoint or OneDrive site can be retained by applying a retention policy or retention label.
+All files stored in SharePoint or OneDrive sites can be retained by applying a retention policy or retention label.
 
 The following files can be deleted:
 
