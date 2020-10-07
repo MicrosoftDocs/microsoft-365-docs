@@ -71,7 +71,7 @@ Contoso architected its line-of-business application and server intranet infrast
 - Regional hubs use regional application servers for the regional and satellite offices. These servers synchronize with servers in the Paris headquarters.
 - The Paris campus datacenters contain centralized application servers that serve the entire organization.
 
-Figure 2 shows the percentage of network traffic when accessing servers across Contoso intranet.
+Figure 2 shows the percentage of network traffic capacity used when accessing servers across the Contoso intranet.
 
 ![The Contoso infrastructure for internal applications](../media/contoso-networking/contoso-networking-fig2.png)
  
