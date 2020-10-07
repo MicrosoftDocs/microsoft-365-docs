@@ -20,7 +20,7 @@ description: Understand the Contoso networking infrastructure and how the compan
 
 # Networking for the Contoso Corporation
 
-To adopt a cloud-inclusive infrastructure, Contoso devised a fundamental shift in the way that network traffic to cloud services travels. Instead of an internal hub-and-spoke model that focuses network connectivity and traffic for the next level of the office hierarchy, they mapped user locations to local internet egress and local connections to the closest Microsoft 365 network location on the internet.
+To adopt a cloud-inclusive infrastructure, Contoso devised a fundamental shift in how network traffic to cloud services travels. Instead of an internal hub-and-spoke model that focuses network connectivity and traffic for the next level of the office hierarchy, they mapped user locations to local internet egress and local connections to the closest Microsoft 365 network location on the internet.
 
 ## Networking infrastructure
 
@@ -28,15 +28,15 @@ These are the network elements that link Contoso offices across the globe:
 
 - Multiprotocol Label Switching (MPLS) WAN network
 
-  An MPLS WAN network connects the Paris headquarters to regional offices and regional offices to satellite offices in a spoke-and-hub configuration. The network enables users to access on-premises servers that make up line-of-business applications in the Paris headquarters. It also routes any generic Internet traffic to the Paris office, where network security devices scrub the requests. Within each office, routers deliver traffic to wired hosts or wireless access points on subnets, which use the private IP address space.
+  An MPLS WAN network connects the Paris headquarters to regional offices and regional offices to satellite offices in a spoke-and-hub configuration. The network enables users to access on-premises servers that make up line-of-business applications in the Paris headquarters. It also routes any generic internet traffic to the Paris office, where network security devices scrub the requests. Within each office, routers deliver traffic to wired hosts or wireless access points on subnets, which use the private IP address space.
 
-- Local direct Internet access for Microsoft 365 traffic
+- Local direct internet access for Microsoft 365 traffic
 
   Each office has a software-defined WAN (SD-WAN) device that has one or more local internet ISP network circuits with its own internet connectivity through a proxy server. This is typically implemented as a WAN link to a local ISP that also provides public IP addresses and a local DNS server.
 
 - Internet presence
 
-  Contoso owns the contoso.com public domain name. The Contoso public web site for ordering products is a set of servers in an internet-connected datacenter in the Paris campus. Contoso uses a /24 public IP address range on the internet.
+  Contoso owns the contoso\.com public domain name. The Contoso public web site for ordering products is a set of servers in an internet-connected datacenter in the Paris campus. Contoso uses a /24 public IP address range on the internet.
 
 Figure 1 shows the Contoso networking infrastructure and its connections to the internet.
 
@@ -53,7 +53,7 @@ Contoso followed [Microsoft 365 network connectivity principles](microsoft-365-n
 - Avoid network hairpins
 - Bypass duplicate network security devices
 
-There are three categories of network traffic for Microsoft 365: Optimize, Allow, and Default. Optimize and Allow traffic is trusted network traffic that's encrypted and secured at the endpoints and is destined for the Microsoft 365 network.
+There are three categories of network traffic for Microsoft 365: *Optimize*, *Allow*, and *Default*. Optimize and Allow traffic is trusted network traffic that's encrypted and secured at the endpoints and is destined for the Microsoft 365 network.
 
 Contoso decided to:
 
@@ -81,33 +81,33 @@ For the satellite or regional hub offices, 60 percent of the resources needed by
 
 ## Network analysis and preparation for Microsoft 365 for enterprise
 
-Successful adoption of Microsoft 365 for enterprise services by Contoso users depends on highly available and performant connectivity to the internet, or directly to Microsoft cloud services. Contoso took these steps to plan and implement optimized connectivity to Microsoft 365 for enterprise cloud services:
+Successful adoption of Microsoft 365 for enterprise services by Contoso users depends on highly available and performant connectivity to the internet or directly to Microsoft cloud services. Contoso took these steps to plan and implement optimized connectivity to Microsoft 365 for enterprise cloud services:
 
-1. Created a company WAN network diagram to aid with planning
+1. Create a company WAN network diagram to aid with planning
 
-   Contoso started their network planning by creating a diagram showing their locations, the existing network connectivity, their existing network perimeter devices, and classes of service that are managed on the network. They used this diagram for each subsequent step in the planning and implementation of networking connectivity.
+   To start their network planning, Contoso created a diagram showing their office locations, existing network connectivity, existing network perimeter devices, and classes of service that are managed on the network. They used this diagram for each subsequent step in the planning and implementation of networking connectivity.
 
-2. Created a plan for Microsoft 365 for enterprise network connectivity
+2. Create a plan for Microsoft 365 for enterprise network connectivity
 
    Contoso used the [Microsoft 365 network connectivity principles](microsoft-365-network-connectivity-principles.md) and sample reference network architectures to identify SD-WAN as their preferred topology for Microsoft 365 connectivity.
 
-3. Analyzed internet-connection utilization and MPLS-WAN bandwidth at each office, and increased bandwidth as needed
+3. Analyze internet-connection utilization and MPLS-WAN bandwidth at each office, and increase bandwidth as needed
 
    Each office's current usage was analyzed, and circuits were increased so that predicted Microsoft 365 cloud-based traffic would operate with an average of 20-percent unused capacity.
 
-4. Optimized performance to Microsoft network services
+4. Optimize performance to Microsoft network services
 
    Contoso determined the set of Office 365, Intune, and Azure endpoints and configured firewalls, security devices, and other systems in the internet path for optimal performance. Endpoints for Office 365 Optimize and Allow category traffic were configured into the SD-WAN devices for routing over the ISP circuit.
 
-5. Configured internal DNS
+5. Configure internal DNS
 
    DNS is required to be functional and to be looked up locally for Microsoft 365 traffic.
 
-6. Validated network endpoint and port connectivity
+6. Validate network endpoint and port connectivity
 
    Contoso ran Microsoft network connectivity test tools to validate connectivity for Microsoft 365 for enterprise cloud services.
 
-7. Optimized employee computers for network connectivity
+7. Optimize employee computers for network connectivity
 
    Individual computers were checked to ensure that the latest operating system updates were installed and that endpoint security monitoring was active on all clients.
 

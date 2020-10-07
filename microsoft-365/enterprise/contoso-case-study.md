@@ -22,7 +22,7 @@ description: How a fictional but representative global organization adopted Micr
 
 Microsoft 365 for enterprise is the Microsoft premier cloud offering that combines local and cloud-based productivity apps and services with Windows 10 Enterprise and advanced security features. It's a complete, intelligent solution that that enables everyone to work together creatively and securely.
 
-Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. The company deployed Microsoft 365 for enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security.
+Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris. The company deployed Microsoft 365 for enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security.
 
 The company's overall goal for Microsoft 365 for enterprise is to accelerate its digital transformation by using cloud services to bring together its employees, partners, data, and processes to create customer value and maintain its competitive advantage in a digital-first world.
 
@@ -37,23 +37,23 @@ Contoso is transitioning from an on-premises, centralized IT infrastructure to a
 
 - [Networking](contoso-networking.md)
 
-  Contoso network engineers optimized traffic for their on-premises users to their intranet edge and to the closest Microsoft network location on the Internet.
+  Contoso network engineers optimized traffic for their on-premises users to their intranet edge and to the closest Microsoft network location on the internet.
 
 - [Identity](contoso-identity.md)
 
-  The Contoso identity-in-the-cloud solution leverages their on-premises Active Directory Domain Services (AD DS) forest. It includes federated authentication with their existing trusted, third-party identity providers.
+  The Contoso identity-in-the-cloud solution leverages the company's on-premises Active Directory Domain Services (AD DS) forest. It includes federated authentication with their existing trusted, third-party identity providers.
 
 - [Windows 10 Enterprise](contoso-win10.md)
 
-  The Contoso Windows 10 Enterprise infrastructure deploys and automatically installs updates for devices that are running their primary PC and device operating system.
+  The Contoso Windows 10 Enterprise infrastructure deploys and automatically installs updates for devices that are running the company's primary PC and device operating system.
 
 - [Microsoft 365 Apps for enterprise](contoso-o365pp.md)
 
-  Contoso Microsoft 365 Apps for enterprise infrastructure deploys and automatically installs updates for the Microsoft Office suite of productivity software.
+  The infrastructure of Contoso Microsoft 365 Apps for enterprise deploys and automatically installs updates for the Microsoft Office suite of productivity software.
 
 - [Mobile device management](contoso-mdm.md)
 
-  With many roaming employees with both company and personal smart phones and tablets, Contoso uses mobile device management to enroll and secure devices and their data and manage apps.
+  With many roaming employees who have both company and personal smart phones and tablets, Contoso uses mobile device management to enroll and secure devices and their data and manage apps.
 
 - [Information protection](contoso-info-protect.md)
 

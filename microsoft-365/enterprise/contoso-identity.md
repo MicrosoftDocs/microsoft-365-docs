@@ -24,13 +24,13 @@ Microsoft provides Identity as a Service (IDaaS) across its cloud offerings thro
 
 ## The Contoso Active Directory Domain Services forest
 
-Contoso uses a single Active Directory Domain Services (AD DS) forest for contoso.com with seven subdomains, one for each region of the world. The headquarters, regional hub offices, and satellite offices contain domain controllers for local authentication and authorization.
+Contoso uses a single Active Directory Domain Services (AD DS) forest for contoso\.com with seven subdomains, one for each region of the world. The headquarters, regional hub offices, and satellite offices contain domain controllers for local authentication and authorization.
 
 Here's the Contoso forest with regional domains for the different parts of the world that contain regional hubs.
 
 ![Contoso's forest and domains worldwide](../media/contoso-identity/contoso-identity-fig1.png)
  
-Contoso decided to use the accounts and groups in the contoso.com forest for authentication and authorization for its Microsoft 365 workloads and services.
+Contoso decided to use the accounts and groups in the contoso\.com forest for authentication and authorization for its Microsoft 365 workloads and services.
 
 ## The Contoso federated authentication infrastructure
 

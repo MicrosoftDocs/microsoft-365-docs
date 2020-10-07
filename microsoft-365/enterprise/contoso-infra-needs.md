@@ -20,7 +20,7 @@ description: Understand the basic structure of the Contoso on-premises IT infras
 
 # Contoso IT infrastructure and business needs
 
-Contoso is transitioning from an on-premises, centralized IT infrastructure to a cloud-inclusive one that incorporates cloud-based personal productivity workloads and applications.
+Contoso is transitioning from an on-premises, centralized IT infrastructure to a cloud-inclusive setup that incorporates cloud-based personal productivity workloads and applications.
 
 ## Existing Contoso IT infrastructure
 
@@ -50,21 +50,21 @@ In the Contoso headquarters DMZ, different sets of servers provide:
 
 ## Contoso business needs
 
-Contoso business needs fall into five main categories.
+Contoso business needs fall into five main categories:
 
-Productivity:
+**Productivity**
 
 - Make collaboration easier
 
   Replace email and file share-based collaboration with an online model that allows real-time changes on documents, easier online meetings, and captured conversation threads.
 - Improve productivity for remote and mobile workers
 
-  With many employees working from homes or in the field, replace the bottlenecked VPN solution with performant access to Contoso data and resources in the cloud.
+  With many employees working from home or in the field, replace the bottlenecked VPN solution with performant access to Contoso data and resources in the cloud.
 - Increase creativity and innovation
 
   Take advantage of the latest visual learning and idea development methods, including inking and 3D visualization.
 
-Security:
+**Security**
 
 - Identity and access management
 
@@ -82,7 +82,7 @@ Security:
 
   Monitor security posture and detect and respond to threats in real time.
 
-Remote and mobile access and business partners:
+**Remote and mobile access and business partners**
 
 - Improve security for remote and mobile workers
 
@@ -92,21 +92,21 @@ Remote and mobile access and business partners:
 
   Reduce maintenance and support costs and improve performance for remote access solution by moving commonly accessed resources to the cloud.
 
-- Provide better connectivity and lower overhead for Business-to-Business (B2B) transactions
+- Provide better connectivity and lower overhead for business-to-susiness (B2B) transactions
 
   Replace an aging and expensive partner extranet with a cloud-based solution that uses federated authentication.
 
-Compliance:
+**Compliance**
 
 - Adhere to regional regulatory requirements
 
   Ensure compliance with industry and regional regulations for data storage, encryption, data privacy, and personal data regulations, such as the General Data Protection Regulation (GDPR) for the Europe Union.
 
-Management:
+**Management**
 
 - Lower IT overhead for managing software running on client PCs and devices
 
-  Automate the installation of updates to the Windows operating system and Microsoft 365 Apps for enterprise across the organization.
+  Automate installation of updates to the Windows operating system and Microsoft 365 Apps for enterprise across the organization.
 
 ## Mapping Contoso business needs to Microsoft 365 for enterprise
 
