@@ -112,7 +112,7 @@ You might qualify for VAT zero-rating:
 
 ## Asia Pacific countries (APAC)
 
-If you're billed by the Microsoft Regional Sales office, "Microsoft Regional Sales" appears on your invoice, and you're usually not charged a consumption or Value-Added Tax (VAT) tax unless it is a domestic sale.
+If you're billed by the Microsoft Regional Sales office, "Microsoft Regional Sales" appears on your invoice.
   
 If you're billed from another location, the current local tax is applied. You'll see the following [on your invoice](view-your-bill-or-invoice.md):
   
@@ -123,9 +123,9 @@ If you're billed from another location, the current local tax is applied. You'll
 
 ## North, Central, and South America
 
-In the United States and Canada, various tax rates apply depending on your location. In Puerto Rico, local Value-Added Tax (VAT) charges apply.
+In the United States, Canada, Mexico, Chile, and Colombia, various tax rates apply depending on the product nature and your location.
   
-If your billing is done by Microsoft Corporation ([see your invoice](view-your-bill-or-invoice.md)), and you signed up for Microsoft 365 outside of the United States, Canada, and Puerto Rico, then tax is generally not charged.
+If your billing is done by Microsoft Corporation ([see your invoice](view-your-bill-or-invoice.md)), and you signed up for Microsoft 365 outside of the United States, Canada, Puerto Rico, Chile, and Colombia, then tax is generally not charged.
 
 ## Add your VAT ID
 
@@ -151,12 +151,11 @@ For example:
 
 If you qualify for tax-exempt status in your market, [start a service request](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) to establish tax exempt status for your organization.
 
-Have the following documentation ready:
-
 |Country or locale | Documentation |
 |------------------|----------------|
 | Canada | Certificate of Exemption (or equivalent letter of authorization) |
-| Colombia |  |
+| Chile | IVA status/RUT (Registro Unico Tributario) |
+| Colombia | IVA status/RUT (Registro Unico Tributario) |
 | International organizations that hold tax exemption | Certification / letter confirmation from local tax authorities |
 | Ireland | 13B/56A Tax Exemption Certificate|
 | United States | Sales Tax Exemption Certificate |
