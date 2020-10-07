@@ -254,19 +254,19 @@ For example, if a policy includes all Exchange email and all SharePoint sites, a
 
 ### A policy with specific inclusions or exclusions
 
-You can also apply a retention policy to specific users, specific Microsoft 365 groups, or specific sites. To do so, make sure the **Status** of that location is **On**, and then use the links to include or exclude specific users, Microsoft 365 groups, or sites.
+Only if you use the optional configuration to scope your retention settings to specific users, specific Microsoft 365 groups, or specific sites, there are some limits to be aware of: 
 
-However, using this configuration, there are some limits when your retention policy includes or excludes over 1,000 specific objects:
-
-- Maximum numbers for the retention policy:
+- Maximum numbers for a retention policy:
   - 1,000 mailboxes
   - 1,000 Microsoft 365 groups
   - 1,000 users for Teams private chats
   - 100 sites (OneDrive or SharePoint)
 
-There is a maximum number of policies that are supported for a tenant: 10,000. These items include retention policies, retention label policies, and auto-apply retention policies.
+There is also a maximum number of policies that are supported for a tenant: 10,000. These items include retention policies, retention label policies, and auto-apply retention policies.
 
-If your retention policies are likely to be subject to these limitations, choose the configuration options that apply to entire locations.
+If your retention policies are likely to be subject to these limitations, use the default configuration that applies to the entire location because these policies don't have any limitations.
+
+To use the optional configuration to scope your retention settings, make sure the **Status** of that location is **On**, and then use the links to include or exclude specific users, Microsoft 365 groups, or sites.
 
 > [!WARNING]
 > If you configure includes and then remove the last one, the configuration reverts to **All** for the location.  Make sure this is the configuration that you intend before you save the policy.
