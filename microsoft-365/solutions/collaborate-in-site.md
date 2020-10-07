@@ -132,6 +132,7 @@ To invite guests to a group
 3. click **Add members**.
 4. Type the email addresses of the guests that you want to invite, and then click **Add**.
 5. Click **Close**.
+Note that you need to click **Close** only if you are not the owner of the group and a a result, you are not allowed to add the guest into the group. In such cases, the request to add the guest into the group is transferred to the group owner for approval.
 
 ## See Also
 
