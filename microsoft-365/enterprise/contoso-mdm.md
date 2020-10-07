@@ -54,12 +54,12 @@ This is how Contoso set up their mobile device management infrastructure:
   - Device encryption to help prevent unauthorized access.
   - A six-digit PIN or password.
   - An inactivity-timeout period.
-  - Antivirus and malware protection, and signature updates with Windows Defender on Windows 10 devices
+  - Antivirus and malware protection, and signature updates with Windows Defender on Windows 10 devices.
   - Automatic updates on Windows 10 devices that include the latest security updates.
   - Pushing certificates to managed devices.
   - A clear separation of business and personal data. Users or admins can selectively wipe corporate data from the device, while leaving personal data such as pictures, personal email accounts, and personal files untouched.
 
-Contoso enrolled deployed PCs and company-owned smartphones and tablets by adding them to the appropriate Intune device groups. They also established a BYOD program for employees to enroll their personal devices. Enrolled devices receive Intune policies, which result in managed and secured devices and their applications. Devices that aren't enrolled have Mobile Application Management (MAM) policies that specify allowed applications.
+Contoso enrolled deployed PCs and company-owned smartphones and tablets by adding them to the appropriate Intune device groups. They also established a BYOD program for employees to enroll their personal devices. Enrolled devices receive Intune policies, which results in managed and secured devices and their applications. Devices that aren't enrolled have Mobile Application Management (MAM) policies that specify allowed applications.
 
 Here is the Contoso mobile device management deployment architecture.
 

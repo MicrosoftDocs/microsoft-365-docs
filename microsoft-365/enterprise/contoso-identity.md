@@ -39,13 +39,13 @@ Contoso allows:
 - Customers to use their Microsoft, Facebook, or Google Mail accounts to sign in to the company's public web site.
 - Vendors and partners to use their LinkedIn, Salesforce, or Google Mail accounts to sign in to the company's partner extranet.
 
-Here's the Contoso DMZ containing a public web site, a partner extranet, and a set of AD FS servers. The DMZ is connected to the internet that contains customers, partners, and Internet services.
+Here's the Contoso DMZ containing a public web site, a partner extranet, and a set of AD FS servers. The DMZ is connected to the internet that contains customers, partners, and internet services.
 
 ![Contoso support for federated authentication for customers and partners](../media/contoso-identity/contoso-identity-fig2.png)
  
 AD FS servers in the DMZ facilitate authentication of customer credentials by their identity providers for access to the public web site and partner credentials for access to the partner extranet.
 
-Contoso decided to keep this infrastructure and dedicate it to customer and partner authentications. Contoso identity architects are investigating the conversion of this infrastructure to Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) and [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) solutions.
+Contoso decided to keep this infrastructure and dedicate it to customer and partner authentication. Contoso identity architects are investigating the conversion of this infrastructure to Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) and [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) solutions.
 
 ## Hybrid identity with password hash synchronization for cloud-based authentication
 
@@ -63,9 +63,9 @@ Here's the server running Azure AD Connect polling the Contoso AD DS forest for 
 
 Contoso created a set of Azure AD and Intune [Conditional Access policies](identity-access-policies.md) for three protection levels:
 
-- **Baseline** protections apply to all user accounts.
-- **Sensitive** protections apply to senior leadership and executive staff.
-- **Highly Regulated** protections apply to specific users in the finance, legal, and research departments that have access to highly regulated data.
+- *Baseline* protections apply to all user accounts.
+- *Sensitive* protections apply to senior leadership and executive staff.
+- *Highly Regulated* protections apply to specific users in the finance, legal, and research departments who have access to highly regulated data.
 
 Here's the resulting set of Contoso identity and device Conditional Access policies.
 

@@ -40,7 +40,7 @@ Contoso followed these steps to prepare their security for their deployment of M
 
 2. Classify data into three security levels
 
-   Contoso did a careful review and determined the three levels, which were used to determine the Microsoft 365 for enterprise features to protect the most valuable data.
+   Contoso did a careful review and determined the three levels, which were used to identify the Microsoft 365 for enterprise features to protect the most valuable data.
 
 3. Determine access, retention, and information protection policies for data levels
 
@@ -89,7 +89,7 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
   Contoso is using Exchange Online Protection and [Office 365 Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) to protect against unknown malware, viruses, and malicious URLs transmitted through emails.
 
-  Contoso also enabled mailbox audit logging to identify who logs into user mailboxes, sends messages, and does other activities performed by the mailbox owner, a delegated user, or an administrator.
+  Contoso also enabled mailbox audit logging to identify who logs in to user mailboxes, sends messages, and does other activities performed by the mailbox owner, a delegated user, or an administrator.
 
 - Attack monitoring and prevention with Office 365 threat investigation and response
 
@@ -103,7 +103,7 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 - Protect sensitive and highly regulated digital assets with Azure Information Protection labels
 
-  Contoso determined three levels of data protection and deployed [Microsoft 365 sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) that users apply to digital assets. For its trade secrets and other intellectual property, Contoso uses sensitivity sublabels highly regulated data. This process encrypts content and restricts access to specific user accounts and groups.
+  Contoso determined three levels of data protection and deployed [Microsoft 365 sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) that users apply to digital assets. For its trade secrets and other intellectual property, Contoso uses sensitivity sublabels for highly regulated data. This process encrypts content and restricts access to specific user accounts and groups.
 
 - Prevent intranet data leaks with Data Loss Prevention
 
@@ -125,7 +125,7 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 - Central security dashboard for IT with Azure Security Center
 
-  Contoso uses the [Azure Security Center](https://azure.microsoft.com/services/security-center/) to present a unified view of security and threat protection, to manage security policies across its workloads and to respond to cyberattacks.
+  Contoso uses the [Azure Security Center](https://azure.microsoft.com/services/security-center/) to present a unified view of security and threat protection, to manage security policies across its workloads, and to respond to cyberattacks.
 
 - Central security dashboard for users with Windows Defender Security Center
 

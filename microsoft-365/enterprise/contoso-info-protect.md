@@ -20,7 +20,7 @@ description: Understand how Contoso uses the information protection features in 
 
 # Information protection for the Contoso Corporation
 
-Contoso is serious about their information security. Leakage or destruction of their intellectual property that describes product designs and proprietary manufacturing techniques would place them at a competitive disadvantage.
+Contoso is serious about their information security. Leakage or destruction of intellectual property that describes their product designs and proprietary manufacturing techniques would place them at a competitive disadvantage.
 
 Before moving their sensitive digital assets to the cloud, Contoso made sure that their on-premises information classification and protection requirements were supported by the cloud-based services of Microsoft 365 for enterprise.
 
@@ -39,8 +39,8 @@ The following table lists the Contoso information policies.
 
 | Value | Access | Data retention | Information protection |
 |:-------|:-----|:-----|:-----|
-| Low business value (Level 1: Baseline) | Allow access to all  | 6 months | Use encryption. |
-| Medium business value (Level 2: Sensitive) | Allow access to Contoso employees, subcontractors, and partners <BR> <BR> Use MFA, Transport Layer Security (TLS), and Mobile Application Management (MAM). | 2 years  | Use hash values for data integrity.  |
+| Low business value (Level 1: Baseline) | Allow access to all.  | 6 months | Use encryption. |
+| Medium business value (Level 2: Sensitive) | Allow access to Contoso employees, subcontractors, and partners. <BR><BR> Use MFA, Transport Layer Security (TLS), and Mobile Application Management (MAM). | 2 years  | Use hash values for data integrity.  |
 | High business value (Level 3: Highly regulated) | Allow access to executives and leads in engineering and manufacturing. <BR> <BR> Rights Management System (RMS) with managed network devices only.  | 7 years  | Use digital signatures for non-repudiation.  |
 |||||
 
@@ -76,7 +76,7 @@ As part of their rollout of Exchange Online and SharePoint, Contoso configured t
 - [Exchange Online access policies](secure-email-recommended-policies.md)
 - [SharePoint access policies](sharepoint-file-access-policies.md)
 
-Here is resulting set of Contoso policies for information protection.
+Here's resulting set of Contoso policies for information protection.
 
 ![Device, Exchange Online, and SharePoint Conditional Access policies](../media/contoso-info-protect/contoso-info-protect-fig1.png)
 
@@ -103,7 +103,7 @@ The following table maps Contoso data levels to information protection features 
 | Level 3: Highly regulated | Level 2 plus: <BR><BR> Bring your own key (BYOK) encryption and protection for trade secret information <BR> Azure Key Vault for line-of-business applications that interact with Microsoft 365 services | Level 2 | Level 1 |
 |||||
 
-Here is the resulting Contoso information-protection configuration.
+Here's the resulting Contoso information-protection configuration.
 
 ![Contoso's resulting information protection configuration](../media/contoso-info-protect/contoso-info-protect-fig2.png)
 
