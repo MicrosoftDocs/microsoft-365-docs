@@ -95,6 +95,20 @@ To set the permission for the sharing link, under **Choose the permission that's
 1. Select **View** if you do not want unauthenticated users to make changes to the files and folders.
 2. Select **Edit** if you want to allow unauthenticated users to make changes to the files and folders.
 
+Note that the above two premission-options can be applied not only for guests/external users but also for internal users. The permission-option you choose is determined by self-discretion.
+
+To set permissions for links that allow sharing with anyone
+
+1. Under the **These links can give these permissions:** sub-pane, 
+    1. From the **Files** drop-down list, 
+        1. Select **View and edit** if you want to allow unauthenticated users to make changes to the files.
+        2. Select **View** if you do not want unauthenticated users to make changes to the files.
+    2. From the **Folders** drop-down list,
+        1. Select **View, edit, and upload** if you want to allow unauthenticated users to make changes to the folders.
+        2. Select **View** if you do not want unauthenticated users to make changes to the folders.
+
+Note that the above permissions are specific to the case wherein sharing is for anyone.
+
 ## SharePoint site-level sharing settings
 
 If you're sharing files and folders that are in a SharePoint site, you also need to check the site-level sharing settings for that site.
