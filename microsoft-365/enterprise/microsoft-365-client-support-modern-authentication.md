@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Modern Authentication enables Active Directory Authentication Library (ADAL)-based sign-in for Office client apps across different platforms. This enables sign-in features such as Multi-Factor Authentication (MFA), smart card, and certificate-based authentication.
+Modern Authentication enables Active Directory Authentication Library (ADAL)-based sign-in for Office client apps across different platforms. This enables sign-in features such as multi-factor authentication (MFA), smart card, and certificate-based authentication.
 
 Learn more about [multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication) and [certificate-based authentication](https://docs.microsoft.com/azure/active-directory/active-directory-certificate-based-authentication-get-started).
 
@@ -35,7 +35,7 @@ Learn more about [multi-factor authentication](https://docs.microsoft.com/azure/
  - iOS
  - macOS
 
-For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](https://products.office.com/office-system-requirements).
+For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## Supported clients
 
