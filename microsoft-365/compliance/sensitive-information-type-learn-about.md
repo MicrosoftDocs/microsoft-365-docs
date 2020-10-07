@@ -20,27 +20,26 @@ description: ""
 
 # Learn about sensitive information types
 
+- What is the business need for sensitive information types?
+- what is a sensitive information type?
+- where can they be used?
 
-
-Why sensitive information types? business need
-
-what is a sensitive information type?
-
-where can they be used?
-
-anatomy of a sensitive information type
-
+## anatomy of a sensitive information type
+<!-- provide brief explanatory text for each -->
 - name
 - format
 - pattern
 - checksum
 - definition
-    - pattern confidence level
-    - recommended confidence level
+    - pattern confidence level - explanation
+    - recommended confidence level - explanation
 - XML
 - keywords
 - (optional) keyword exclusions
- 
+
+### Example sensitive information type
+
+
 ## Argentina national identity (DNI) number
 
 ### Format
@@ -90,6 +89,13 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Identidad 
 - Identificación 
 
+### More on confidence levels
 
+<!-- deeper dive on confidence levels>
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->
+
+## For further information
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
+- [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
+- [Create a custom sensitive information type in PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
