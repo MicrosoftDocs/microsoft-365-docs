@@ -15,11 +15,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ---
 
 # Generate a test alert in your Microsoft Threat Protection evaluation lab  
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 - Microsoft Threat Protection
@@ -31,4 +36,6 @@ Now that you've completed your Microsoft Threat Protection evaluation lab setup 
 <br>![Image of simulation card in the Microsoft 365 Security dashboard](../../media/mtp-eval-73.png) <br>
 
 ## Next steps
-Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center?view=o365-worldwide) for guidance on how you want your security solutions implemented in your unique environment.
+
+Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to understand how to design the solution and architecture that is right for your organization.
+

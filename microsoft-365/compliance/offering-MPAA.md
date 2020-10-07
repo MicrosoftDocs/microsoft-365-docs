@@ -3,7 +3,7 @@ title: Motion Picture Association of America (MPAA)
 description: Azure successfully completed a formal assessment by the Motion Picture Association of America.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -54,6 +54,10 @@ MPAA guidelines provide major studio vendors and partners with a set of best pra
 **Does my organization still need to undergo an MPAA audit, or can we use the Azure audit?**
 
 Production facilities, visual effects houses, and other service partners should work with their executive producers and directors to understand the new security requirements, and whether a formal MPAA audit is necessary. Compliance with MPAA guidelines is voluntary, but Microsoft elected to carry out an independent assessment so that media customers can be confident in the content security and protection capabilities of Azure. However, Azure does not manage the individual cloud environments of customers, which may be subject to additional MPAA regulation that is best addressed by your own audit of your environment.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

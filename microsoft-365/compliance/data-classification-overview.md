@@ -12,6 +12,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -29,7 +31,7 @@ As a Microsoft 365 administrator or compliance administrator, you can evaluate a
 - the locations of your sensitive and retained data
 
 You also manage these features on the data classification page:
-- [trainable classifiers](classifier-getting-started-with.md)
+- [trainable classifiers](classifier-learn-about.md)
 - [sensitive information types](what-the-sensitive-information-types-look-for.md)
 
 You can find data classification in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.
@@ -44,7 +46,7 @@ Data classification will scan your sensitive content and labeled content before 
 
 Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:
 
-- Microsoft 365 (E5)
+- Microsoft 365 (E5/A5)
 - Office 365 (E5)
 - Advanced Compliance (E5) add-on
 - Advanced Threat Intelligence (E5) add-on
@@ -132,4 +134,4 @@ The point of the data classification reporting is to provide visibility into the
 - [Learn about sensitivity labels](sensitivity-labels.md)
 - [Learn about retention policies and retention labels](retention.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-- [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
+- [Learn about trainable classifiers (preview)](classifier-learn-about.md)

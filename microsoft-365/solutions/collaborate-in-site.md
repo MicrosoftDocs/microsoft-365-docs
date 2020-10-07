@@ -30,22 +30,22 @@ This video shows the configuration steps described in this document.</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44Llg?autoplay=false]
 
-## Azure Organizational relationships settings
+## Azure external collaboration settings
 
 Sharing in Microsoft 365 is governed at its highest level by the [organizational relationships settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this will override any sharing settings that you configure in Microsoft 365.
 
-Check the organizational relationships settings to ensure that sharing with guests is not blocked.
+Check the external collaboration settings to ensure that sharing with guests is not blocked.
 
-![Screenshot of Azure Active Directory Organizational Relationships Settings page](../media/azure-ad-organizational-relationships-settings.png)
+![Screenshot of Azure Active Directory External collaboration Settings page](../media/azure-ad-organizational-relationships-settings.png)
 
-To set organizational relationship settings
+To set external collaboration settings:
+
 
 1. Log in to Microsoft Azure at [https://portal.azure.com](https://portal.azure.com).
 2. In the left navigation, click **Azure Active Directory**.
-3. In the **Overview** pane, click **Organizational relationships**.
-4. In the **Organizational relationships** pane, click **Settings**.
-5. Ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
-6. If you made changes, click **Save**.
+3. Select **External Identities** and click on **External collaboration settings**.
+4. In the **Guest invite settings** pane, ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
+5. If you made changes, click **Save**.
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
 
@@ -142,3 +142,4 @@ To invite guests to a group
 
 [Create a B2B extranet with managed guests](b2b-extranet.md)
 
+[SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)

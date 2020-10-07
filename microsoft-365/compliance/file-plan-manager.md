@@ -76,6 +76,7 @@ All columns except the label **Name** can be displayed or hidden by selecting th
 - **Is record** identifies if the item is marked as a record when the label is applied. Valid values:
     - No
     - Yes
+    - Yes(Regulatory)
 
 - **Retention duration** identifies the retention period. Valid values:
     - Days
@@ -158,7 +159,7 @@ To import new retention labels and modify existing retention labels:
    |CitationUrl|String|This property specifies the URL that's displayed in the **Provision/citation** file plan descriptor.|
    |CitationJurisdiction|String|This property specifies the jurisdiction or agency that's displayed in the **Provision/citation** file plan descriptor. For example, "U.S. Securities and Exchange Commission (SEC)".|
    |Regulatory|String|Leave blank. This property isn't used at this time.|
-   |EventType|String|This property specifies the retention rule that's associated with the label. You can use any value that uniquely identifies the rule. For example:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>You can use the [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule?view=exchange-ps) cmdlet to view the available retention rules. Note that because the EventType values are unique to an organization, if you export labels from one organization, you can't use the values for the EventType property from that organization to import labels into a different organization.|
+   |EventType|String|This property specifies the retention rule that's associated with the label. You can use any value that uniquely identifies the rule. For example:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>You can use the [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule) cmdlet to view the available retention rules. Note that because the EventType values are unique to an organization, if you export labels from one organization, you can't use the values for the EventType property from that organization to import labels into a different organization.|
    |||
 
    Here's an example of the template containing the information about retention labels.

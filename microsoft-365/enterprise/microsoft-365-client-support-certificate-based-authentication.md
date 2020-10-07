@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
 - Strat_O365_Enterprise
@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Certificate-based authentication enables you to authenticate to Azure Active Directory with a client certificate on Windows, Android, or iOS devices. Configuring this feature eliminates the need to enter a username and password combination into certain mail and Microsoft Office applications on your mobile device.
+Certificate-based authentication enables you to authenticate to Azure Active Directory (Azure AD) with a client certificate on Windows, Android, or iOS devices. Configuring this feature eliminates the need to enter a username and password combination into certain mail and Microsoft Office applications on your mobile device.
 
 Learn more about [certificate-based authentication](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
 
@@ -35,7 +35,7 @@ Learn more about [certificate-based authentication](https://docs.microsoft.com/a
  - iOS
  - macOS<sup>1</sup> <sup>2</sup>
 
-For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](https://products.office.com/office-system-requirements).
+For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## Supported clients
 
@@ -55,7 +55,7 @@ The latest versions of the following clients support certificate-based authentic
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Azure icon](../media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Exchange icon](../media/o365-exchange-64x64.png) <br> [Exchange Online <br> PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![SharePoint icon](../media/o365-sharepoint-64x64.png) <br> [SharePoint Online <br> PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+| ![Azure icon](../media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Exchange icon](../media/o365-exchange-64x64.png) <br> [Exchange Online <br> PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) | ![SharePoint icon](../media/o365-sharepoint-64x64.png) <br> [SharePoint Online <br> PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 > [!NOTE]
 > <sup>1</sup> Support for OneDrive on macOS available soon. <br>

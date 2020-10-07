@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: 
 description: Use Microsoft 365 retention labels and policies to manage personal data in your Microsoft 365 environment.
 ---
@@ -76,27 +77,13 @@ Keep the following in mind:
 
 - Once the personal information types in your environment are better known, establish retention and deletion schedules for this type of content and adjust your information architecture to make governance of this sort of information easier. For example, isolate personal information in separate sites, libraries, or folders with controlled access.
 
-### Retention policies
+### Retention policies and retention labels
 
-Create and deploy [retention policies](../compliance/retention-policies.md) for content in sites that are automatically applied.
-
-For data privacy for sites that contain or are expected to contain personal data, specify retention or deletion rules to address organizational standards.
-
-### Retention labels
-
-Create and deploy [retention labels](../compliance/labels.md) for content and email.
-
-For data privacy for sites, libraries, folders, and email that contain or are expected to contain personal data, specify auto retention or deletion rules to address organizational standards.
+Use [retention policies and retention labels](../compliance/retention.md) to retain or delete content in Microsoft 365 that contains or is expected to contain personal data.
 
 ### Records management
 
-Create and deploy retention labels for records management based on a records retention schedule and file plan.
+Use retention labels that declare content a record to implement a [records management solution](../compliance/records-management.md) for data in Microsoft 365.
 
-For data privacy, data subject requests (DSRs) received by the legal department are declared a record and stored indefinitely to adhere to regulatory activity retention specifications.
+For data privacy, data subject requests (DSRs) received by the legal department are declared a record and can be stored indefinitely or disposed of with proof, to adhere to regulatory activity retention specifications.
 
-See these resources for more information: 
-
-- [Records Management](../compliance/records-management.md)
-- [File plan manager](../compliance/file-plan-manager.md)
-- [Event-based retention for records management](../compliance/automate-event-driven-retention.md)
-- [Disposition of content](../compliance/disposition-reviews.md)

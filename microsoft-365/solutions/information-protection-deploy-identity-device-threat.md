@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: 
 description: Prevent personal data breaches with identity, device, and threat protection services of Microsoft 365.
 ---
@@ -28,17 +29,17 @@ While the data privacy regulations vary in their specificity, the essence of wha
 
 - Personal data shall be processed in a manner that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organizational measures ('integrity and confidentiality').
 
-Because personal data breaches are often caused by administrative or end-user account compromise and malicious system access. For example, an admin account hack can result in exfiltration of customer credit card numbers or other personal information. All the generally advisable identity, device, and threat protection available with Microsoft 365 potentially should be implemented, which will be reflected in your Compliance Score.
+Because personal data breaches are often caused by administrative or end-user account compromise and malicious system access. For example, an admin account hack can result in exfiltration of customer credit card numbers or other personal information. All the generally advisable identity, device, and threat protection available with Microsoft 365 potentially should be implemented, which will be reflected in your compliance score, found in Compliance Manager.
 
-## Using the results of your assessment work and Compliance Score
+## Using the results of your assessment work and Compliance Manager
 
-Compliance Score includes identity, device, and threat protection using these categories:
+Compliance Manager includes identity, device, and threat protection using these categories:
 
 - Identity corresponds to the **Control Access** category
 - Device corresponds to the **Manage Devices** category
 - Threat protection corresponds to the **Protect Against Threats** category
  
-If these are selected across our sample set of four major data privacy regulations, Compliance Score specifies 90 improvement actions, most of which are scored a "27". Since such a large number are called out by Compliance Score for these categories, some of the more common ones are listed here, for reference.
+If these are selected across our sample set of four major data privacy regulations, Compliance Manager specifies 90 improvement actions, most of which are scored a "27". Since such a large number are called out by Compliance Manager for these categories, some of the more common ones are listed here, for reference.
 
 Use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) for identity and the **Control Access** category, with which you can:
 
