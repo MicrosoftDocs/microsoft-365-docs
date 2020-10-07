@@ -38,7 +38,7 @@ The following overview explains the process of using a connector to archive webp
 
 - Create a Globanet Merge1 account for Microsoft connectors. To do this, contact [Globanet Customer Support](https://globanet.com/ms-connectors-contact/). You need to sign into this account when you create the connector in Step 1.
 
-- You need to work with Globanet support to set up a custom file format to convert the webpage items to. For more information, see the Merge1 Third-Party Connectors User Guide in [Step 3](#step-3-map-users-and-complete-the-connector-setup).
+- You need to work with Globanet support to set up a custom file format to convert the webpage items to. For more information, see the Merge1 Third-Party Connectors User Guide in 
 
 - The user who creates the Webpage Capture connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. By default, this role is not assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
@@ -68,7 +68,7 @@ To map users and complete the connector setup in the Microsoft 365 compliance ce
 
 1. On the **Map Webpage Capture users to Microsoft 365 users** page, enable automatic user mapping. The Webpage Capture items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user's mailbox.
 
-2. On the **Admin Consent** page, click the **Provide Consent** button. You will be redirected to the Microsoft site. Click **Accept** to provide the consent.
+2. On the **Admin Consent** page, click **Provide Consent**. You will be redirected to the Microsoft site. Click **Accept** to provide the consent.
 
    Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. To provide admin consent, you must be signed in with the credentials of a Microsoft 365 global admin, and then accept the consent request. If you aren't signed in as a global admin, you can go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign in using global admin credentials to accept the request.
 
