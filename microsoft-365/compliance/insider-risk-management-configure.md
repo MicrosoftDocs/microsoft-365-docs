@@ -11,7 +11,10 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
 ---
 
 # Get started with insider risk management
@@ -50,6 +53,9 @@ Depending on the structure of your compliance management team, you have options 
 | **Insider Risk Management Admin** | Use this role group to initially configure insider risk management and later to segregate insider risk administrators into a defined group.  Users in this role group can create, read, update, and delete insider risk management policies, global settings, and role group assignments. |
 | **Insider Risk Management Analysts** | Use this group to assign permissions to users that will act as insider risk case analysts. Users in this role group can access all insider risk management alerts, cases, and notices templates. They cannot access the insider risk Content Explorer. |
 | **Insider Risk Management Investigators** | Use this group to assign permissions to users that will act as insider risk data investigators. Users in this role group can access all insider risk management alerts, cases, notices templates, and the Content Explorer. |
+
+> [!NOTE]
+> These role groups are currently not supported on Privileged Identity Management (PIM). To learn more about PIM, see [Assign Azure AD roles in Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
 
 ### Add users to an insider risk management role group
 

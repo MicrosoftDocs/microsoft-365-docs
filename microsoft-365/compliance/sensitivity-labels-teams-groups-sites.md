@@ -30,7 +30,7 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 - Access from unmanaged devices
 
 > [!IMPORTANT]
-> The **Access from unmanaged devices** setting works in conjunction with the SharePoint feature to [control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). You must configure this dependent SharePoint feature for your tenant to use a sensitivity label that has this setting configured. Additional information is included in the instructions that follow.
+> The **Access from unmanaged devices** setting works in conjunction with the SharePoint feature to [control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). You must configure this dependent SharePoint feature to use a sensitivity label that has this setting configured. Additional information is included in the instructions that follow.
 
 When you apply this sensitivity label to a supported container, the label automatically applies the classification and protection settings to the connected site or group.
 
@@ -71,7 +71,7 @@ If you need help with creating or editing a sensitivity label, see the instructi
 
 On this new **Site and group settings** page, configure the settings:
 
-- **Privacy of Office 365 group-connected teams sites**: Keep the default of **Public - anyone in the organization can access the site** if you want anyone in your organization to access the team site or group where this label is applied.
+- **Privacy of Microsoft 365 group-connected teams sites**: Keep the default of **Public - anyone in the organization can access the site** if you want anyone in your organization to access the team site or group where this label is applied.
 
   Select **Private** if you want access to be restricted to only approved members in your organization.
 
@@ -81,13 +81,13 @@ On this new **Site and group settings** page, configure the settings:
 
 - **External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **Unmanaged devices**: For this option, you must also configure the SharePoint feature that uses Azure AD conditional access to block or limit access to SharePoint and OneDrive content from unmanaged devices. For instructions, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). The option you specify for this label setting is the equivalent of [blocking or limiting access to a specific SharePoint site or OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
+- **Unmanaged devices**: This option uses the SharePoint feature that uses Azure AD conditional access to block or limit access to SharePoint and OneDrive content from unmanaged devices. For more information, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). The option you specify for this label setting is the equivalent of running a PowerShell command for a site, as described in steps 7-9 from [Block or limit access to a specific SharePoint site or OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
     
-    If you don't configure the dependent SharePoint feature, the option you specify here will have no effect. Additionally, it will have no effect if it's less restrictive than the configured setting at the tenant level. Choose a label setting that's either the same as the tenant-level setting or more restrictive.
+    If you don't configure the dependent conditional access policy as documented in steps 1-6 in the SharePoint instructions, the option you specify here will have no effect. Additionally, it will have no effect if it's less restrictive than a configured setting at the tenant level. If you have configured an organization-wide setting for unmanaged devices, choose a label setting that's either the same or more restrictive.
     
     For example, if your tenant is configured for **Allow limited, web-only access**, the label setting that allows full access will have no effect because it's less restrictive. For this tenant-level setting, choose the label setting to block access (more restrictive) or the label setting for limited access (the same as the tenant setting).
     
-    Because you can configure the SharePoint feature independently from the label configuration, there's no check in the sensitivity label wizard that the dependencies are in place.
+    Because you can configure the SharePoint settings separately from the label configuration, there's no check in the sensitivity label wizard that the dependencies are in place.
 
 ![The site and group settings tab](../media/edit-sensitivity-label-site-group2.png)
 
