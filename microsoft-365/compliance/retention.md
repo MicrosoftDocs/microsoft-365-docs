@@ -16,6 +16,8 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
+- m365solution-mig
+- m365initiative-compliance
 description: Learn about retention policies and retention labels that help you to retain what you need and delete what you don't.
 ---
 
