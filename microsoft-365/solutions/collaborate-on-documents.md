@@ -120,3 +120,5 @@ Guest-sharing settings are now configured; so users can now share files and fold
 [Best practices for sharing files and folders with unauthenticated users](best-practices-anonymous-sharing.md)
 
 [Limit accidental exposure to files when sharing with guests](share-limit-accidental-exposure.md)
+
+[SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)

@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: 
+- Strat_O365_IP
+- M365initiative-coredeploy
 search.appverid:
 - MET150
 - MOE150

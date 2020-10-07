@@ -34,28 +34,23 @@ Existing customers that have their core customer data stored in an already exist
 |**Japan**| Asia/Pacific | Japan | December 2014 |
 |**Australia, New Zealand, Fiji**| Asia/Pacific | Australia | March 2015 |
 |**India**| Asia/Pacific | India | October 2015 |
-|**Canada**| North America | Canada | May 2016 |
-|**United Kingdom**| Europe | United Kingdom | September 2016 |
+|**Canada**| United States | Canada | May 2016 |
+|**United Kingdom**| European Union | United Kingdom | September 2016 |
 |**South Korea**| Asia/Pacific | South Korea | April 2017 |
-|**France**| Europe | France | March 2018 |
-|**United Arab Emirates**| Europe | United Arab Emirates | June 2019 |
-|**South Africa**| Europe | South Africa | July 2019 |
-|**Switzerland, Liechtenstein**| Europe | Switzerland | December 2019 |
-|**Germany**| Europe | Germany | December 2019 |
-|**Norway**| Europe | Norway | April 2020 |
-  
-New customers or Office 365 tenants created after the availability of the new datacenter geo will have their core customer data stored at rest in the new datacenter geo automatically.
+|**France**| European Union | France | March 2018 |
+|**United Arab Emirates**| European Union | United Arab Emirates | June 2019 |
+|**South Africa**| European Union | South Africa | July 2019 |
+|**Switzerland, Liechtenstein**| European Union | Switzerland | December 2019 |
+|**Germany**| European Union | Germany | December 2019 |
+|**Norway**| European Union | Norway | April 2020 |
 
+As of October 1, 2020 customers with an Office 365 Education subscription included in the tenant are not eligible for migration.
 
->[!Note]
->We launched the Germany datacenter region in December 2019. New Microsoft 365 customers with a German signup address associated with their tenant will have their core customer data stored at rest in Germany. We plan to offer migration from Europe to Germany for German customers in the future. Today, Microsoft Cloud Germany/Deutschland customers can request migration to Office 365 services in the new German datacenter regions. Please see [How to opt-in for migration from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter regions](https://aka.ms/office365germanymoveoptin) for more information.
->
-  
 A complete list of all datacenter geos, datacenters, and the location of customer data at rest is available as part of the [interactive datacenter maps](https://office.com/datamaps). 
   
 ## Data residency option
 
-We provide a data residency option to existing Microsoft 365 customers who are covered by the datacenter geos listed in the table above. With this option, customers with data residency requirements can request early migration of their organization's core customer data at rest to their new datacenter geo.  Microsoft will offer a committed deadline to all eligible customers who request early migration during the enrollment window.  Review the [How to request your data move](request-your-data-move.md) page for more details about the enrollment window for your geo and the steps to enroll into the program.  Data moves can take up to 24 months after the request period to complete.
+We provide a data residency option to eligible Microsoft 365 customers who are covered by the datacenter geos listed in the table above. With this option, eligible customers with data residency requirements can request migration of their organization's core customer data at rest to their new datacenter geo.  Microsoft will offer a committed deadline to all eligible customers who request migration during the enrollment window.  Review the [How to request your data move](request-your-data-move.md) page for more details about the open enrollment window for your datacenter geo and the steps to enroll into the program.  Data moves can take up to 24 months after the request period ends to complete.
 
 We introduce no unique capabilities, features or compliance certifications with the new datacenter geo.
     

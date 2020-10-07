@@ -141,3 +141,5 @@ To invite guests to a group
 [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)
 
 [Create a B2B extranet with managed guests](b2b-extranet.md)
+
+[SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
