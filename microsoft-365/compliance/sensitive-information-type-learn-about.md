@@ -91,6 +91,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### More on confidence levels
 
+- How the values you put in impact how the SIT performs (pull this lever to get this result)
+
 <!-- deeper dive on confidence levels>
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->
