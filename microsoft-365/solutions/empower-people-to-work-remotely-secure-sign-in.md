@@ -15,6 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - remotework
 - m365solution-remotework
+- m365solution-scenario
 ms.custom: 
 description: Require that your remote workers sign in with multi-factor authentication (MFA).
 ---
