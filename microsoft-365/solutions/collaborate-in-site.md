@@ -42,7 +42,7 @@ To set external collaboration settings:
 
 
 1. Log in to Microsoft Azure at [https://portal.azure.com](https://portal.azure.com).
-2. In the left navigation, click **Azure Active Directory**.
+2. In the left navigation pane, click **Azure Active Directory**.
 3. Select **External Identities** and click on **External collaboration settings**.
 4. In the **Guest invite settings** pane, ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
 5. If you made changes, click **Save**.
@@ -60,27 +60,27 @@ Modern SharePoint sites use Microsoft 365 Groups to control site access. The Mic
 To set Microsoft 365 Groups guest settings
 
 1. In the Microsoft 365 admin center, in the left navigation, expand **Settings**.
-2. Click **Services & add-ins**.
+2. Click **Org settings**.
 3. In the list, click **Microsoft 365 Groups**.
-4. Ensure that the **Let group members outside your organization access group content** and **Let group owners add people outside your organization to groups** check boxes are both checked.
+4. Ensure that the **Let group owners add people outside your organization to Microsoft 365 Groups as guests** and **Let guest group members access group content** check boxes are both checked.
 5. If you made changes, click **Save changes**.
 
 
-## SharePoint organization level sharing settings
+## SharePoint organization-level sharing settings
 
 In order for guests to have access to SharePoint sites, the SharePoint organization-level sharing settings must allow for sharing with guests.
 
-The organization-level settings determine what settings are available for individual sites. Site settings cannot be more permissive than the organization-level settings.
+The organization-level settings determine the settings that are available for individual sites. Site settings cannot be more permissive than the organization-level settings.
 
 If you want to allow unauthenticated file and folder sharing, choose **Anyone**. If you want to ensure that all people outside your organization have to authenticate, choose **New and existing guests**. Choose the most permissive setting that will be needed by any site in your organization.
 
 ![Screenshot of SharePoint organization-level sharing settings](../media/sharepoint-organization-external-sharing-controls.png)
 
 
-To set SharePoint organization level sharing settings
+To set SharePoint organization-level sharing settings
 
-1. In the Microsoft 365 admin center, in the left navigation, under **Admin centers**, click **SharePoint**.
-2. In the SharePoint admin center, in the left navigation, click **Sharing**.
+1. In the Microsoft 365 admin center, in the left navigation pane, under **Admin centers**, click **SharePoint**.
+2. In the SharePoint admin center, in the left navigation pane, under **Policies**, click **Sharing**.
 3. Ensure that external sharing for SharePoint is set to **Anyone** or **New and existing guests**.
 4. If you made changes, click **Save**.
 
@@ -99,7 +99,7 @@ To create a site
 
 We'll invite users later. Next, it's important to check the site-level sharing settings for this site.
 
-## SharePoint site level sharing settings
+## SharePoint site-level sharing settings
 
 Check the site-level sharing settings to make sure that they allow the type of access that you want for this site. For example, if you set the organization-level settings to **Anyone**, but you want all guests to authenticate for this site, then make sure the site-level sharing settings are set to **New and existing guests**.
 
@@ -109,8 +109,8 @@ Note that the site cannot be shared with unauthenticated people (**Anyone** sett
 
 To set site-level sharing settings
 1. In the SharePoint admin center, in the left navigation, expand **Sites** and click **Active sites**.
-2. Select the site that you just created.
-3. In the ribbon, click **Sharing**.
+2. Select the site that you want to share.
+3. Click ..., and click **Sharing**.
 4. Ensure that sharing is set to **Anyone** or **New and existing guests**.
 5. If you made changes, click **Save**.
 
@@ -120,7 +120,7 @@ Guest sharing settings are now configured, so you can start adding internal user
 
 To invite internal users to a group
 1. Navigate to the site where you want to add users.
-2. Click **Members** in the upper right.
+2. Click **Members** link in the upper right which denotes the member count.
 3. Click **Add members**.
 4. Type the names or email addresses of the users that you want to invite to the site, and then click **Save**.
 
@@ -128,9 +128,10 @@ Guest users can't be added from the site. You need to add them using Outlook on 
 
 To invite guests to a group
 1. In Outlook on the web, under **Groups**, click the group where you want to add members.
-2. Open the group contact card, and then, under **More options** (...), click **Add members**.
-3. Type the email addresses of the guests that you want to invite, and then click **Add**.
-4. Click **Close**.
+2. Open the group contact card, click **Members** link in the upper right which denotes the member count.
+3. click **Add members**.
+4. Type the email addresses of the guests that you want to invite, and then click **Add**.
+5. Click **Close**.
 
 ## See Also
 
