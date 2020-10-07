@@ -15,6 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - remotework
 - m365solution-remotework
+- m365solution-scenario
 ms.custom: 
 description: Use Microsoft Endpoint Manager to manage your manage devices, PCs, and other endpoints.
 ---
