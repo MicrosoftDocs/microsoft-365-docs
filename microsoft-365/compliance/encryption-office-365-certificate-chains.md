@@ -19,7 +19,7 @@ ms.collection:
 description: "View a complete list of root certificates and certificate authorities (CAs) in Microsoft 365."
 ---
 
-# Encryption chains
+# Microsoft 365 Encryption chains
 
 Microsoft 365 leverages a number of different certificate providers. The following describes the complete list of known Microsoft 365 root certificates that customers may encounter when accessing Microsoft 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates). The following certificate information applies to all worldwide and national cloud instances of Microsoft 365.
 
