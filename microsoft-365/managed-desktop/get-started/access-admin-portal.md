@@ -31,8 +31,8 @@ Each of the roles below can be assigned to provide different levels of access:
 |---------|---------|
 |Global Administrator     | Admins with this role will have **read and write permissions to all features** in the Microsoft Managed Desktop Admin portal.         |
 |Global Reader     | Admins with this role will have **read-only permissions to all features** in the Microsoft Managed Desktop Admin portal.         |
-|Intune Service Administrator     |  Admins with this role will have **read & write permissions to features not related to security** in the Microsoft Managed Desktop Admin portal.       |
-|Service Support Administrator     | Admins with this role will have **read & write permissions to features not related to security** in the Microsoft Managed Desktop Admin portal.         |
+|Intune Service Administrator     |  Admins with this role will have **read and write permissions to features not related to security** in the Microsoft Managed Desktop Admin portal.       |
+|Service Support Administrator     | Admins with this role will have **read and write permissions to features not related to security** in the Microsoft Managed Desktop Admin portal.         |
 |Security Admin | Admins with this role will have **read-only permissions to all features** and **write permissions for security related features** in Microsoft Managed Desktop in the Admin portal. |
 |Security Reader |Admins with this role will have **read-only permissions to all features** in the Microsoft Managed Desktop Admin portal.|
 
@@ -42,9 +42,9 @@ Each of the roles below can be assigned to provide different levels of access:
  
 |Custom role  |Microsoft Managed Desktop permissions  |
 |---------|---------|
-|Microsoft Managed Desktop Service Administrator  | When assigned to a user, this role gives the admin **read & write permissions to features not related to security** in the Microsoft Managed Desktop Admin portal.  |
-|Microsoft Managed Desktop Service Reader | When assigned to a user, this role gives the admin **read only permissions to features not related to security** in the Microsoft Managed Desktop Admin portal. |
-|Microsoft Managed Desktop Security Manager |When assigned to a user, this role gives that admin **read & write permissions only for security related features** in the Microsoft Managed Desktop Admin portal.   |
+|Microsoft Managed Desktop Service Administrator  | When assigned to a user, this role gives the admin **read and write permissions to features not related to security** in the Microsoft Managed Desktop Admin portal.  |
+|Microsoft Managed Desktop Service Reader | When assigned to a user, this role gives the admin **read-only permissions to features not related to security** in the Microsoft Managed Desktop Admin portal. |
+|Microsoft Managed Desktop Security Manager |When assigned to a user, this role gives that admin **read and write permissions only for security related features** in the Microsoft Managed Desktop Admin portal.   |
 
 > [!NOTE]
 > Security features include security-related communications, management of security contacts, management of security-related support requests, and access to security related reports. 
