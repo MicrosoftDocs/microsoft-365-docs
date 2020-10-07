@@ -18,7 +18,7 @@ description: "Admins can set up a connector to import and archive EML data from 
 
 Use a Globanet connector in the Microsoft 365 compliance center to import and archive EML data to user mailboxes in your Microsoft 365 organization. EML is the file extension for an email message saved to a file. The connector converts the content of an item from the source format to an email message format and then imports the item to a user mailbox.
 
-After EML messages are stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using an EML connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+After EML messages are stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, and retention policies and retention labels. Using an EML connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 ## Overview of archiving EML data
 

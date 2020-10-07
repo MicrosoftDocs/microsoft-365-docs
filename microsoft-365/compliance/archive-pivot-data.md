@@ -26,7 +26,7 @@ The following overview explains the process of using a connector to archive the 
 
 ![Archiving workflow for Pivot data](../media/PivotConnectorWorkflow.png)
 
-1. Your organization works with Pivot to set up and configure a Pivot FTP site.
+1. Your organization works with Pivot to set up and configure a Pivot source site.
 
 2. Once every 24 hours, Pivot items are copied to the Globanet Merge1 site. The connector also converts the Pivot items to an email message format.
 
@@ -37,8 +37,6 @@ The following overview explains the process of using a connector to archive the 
 ## Before you begin
 
 - Create a Globanet Merge1 account for Microsoft connectors. To do this, contact [Globanet Customer Support](https://globanet.com/ms-connectors-contact/). You need to sign into this account when you create the connector in Step 1.
-
-- You must set up a Pivot FTP site before creating the connector in Step 1. After working with Pivot to set up the FTP site, data from Pivot is uploaded to the FTP site and the copied to the Globanet Merge 1 site.
 
 - The user who creates the Pivot connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the Data connectors page in the Microsoft 365 compliance center. By default, this role is not assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
@@ -60,7 +58,7 @@ The first step is to access to the **Data Connectors** page in the Microsoft com
 
 The second step is to configure the Pivot connector on the Merge1 site. For information about how to configure the Pivot connector on the Globanet Merge1 site, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Pivot%20User%20Guide%20.pdf).
 
-After you click **Save & Finish,** you are directed back to the Microsoft 365 compliance center, to the **User mapping** page in the connector wizard.
+After you click **Save & Finish**, you are directed back to the Microsoft 365 compliance center, to the **User mapping** page in the connector wizard.
 
 ## Step 3: Map users and complete the connector setup
 

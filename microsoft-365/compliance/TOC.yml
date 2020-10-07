@@ -349,6 +349,8 @@
               href: archive-webexteams-data.md
             - name: Workplace from Facebook
               href: archive-workplacefromfacebook-data.md    
+            - name: XSLT/XML 
+              href: archive-xslt-xml-data.md
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
         - name: TeleMessage data connectors

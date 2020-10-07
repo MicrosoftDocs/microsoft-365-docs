@@ -56,7 +56,7 @@ The first step is to access to the **Data Connectors** page in the Microsoft 365
 
 ## Step 2: Configure the Jive connector
 
-The second step is to configure the Jive connector in the Merge1 site. For information about how to configure the Jive connector, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Jive%20User%20Guide.pdf).
+The second step is to configure the Jive connector on the Merge1 site. For information about how to configure the Jive connector, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Jive%20User%20Guide.pdf).
 
 After you click **Save & Finish**, you are directed back to the Microsoft 365 compliance center, to the **User mapping** page in the connector wizard.
 
