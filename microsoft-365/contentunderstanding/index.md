@@ -24,7 +24,7 @@ The resources on this page are designed to get you started with learning about a
 
 ## Get started
 
-The resources in this section help you learn more about the two methods used by SharePoint Syntex: form processing and document understanding.
+The resources in this section help you learn more about the two methods of data classification and extraction used by SharePoint Syntex: form processing and document understanding.
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
