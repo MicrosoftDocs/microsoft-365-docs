@@ -80,5 +80,5 @@ Configure Conditional Access policies for:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
-- [SharePoint](secure-email-recommended-policies.md)
+- [SharePoint](sharepoint-file-access-policies.md)
 

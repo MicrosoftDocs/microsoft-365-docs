@@ -93,8 +93,8 @@ The following clients are recommended when a secure documents policy has been ap
 
 For more information about client support in Microsoft 365, see the following articles:
 
-- [Microsoft 365 Client App Support - Conditional Access](microsoft-365-client-support-conditional-access.md)
-- [Microsoft 365 Client App Support - Modern Authentication](microsoft-365-client-support-modern-authentication.md)
+- [Microsoft 365 Client App Support - Conditional Access](../enterprise/microsoft-365-client-support-conditional-access.md)
+- [Microsoft 365 Client App Support - Modern Authentication](../enterprise/microsoft-365-client-support-modern-authentication.md)
 
 ## Protecting administrator accounts
 

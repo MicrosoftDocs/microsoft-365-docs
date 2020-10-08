@@ -72,4 +72,4 @@ For more information, see [Set up new Office 365 Message Encryption capabilities
 Configure Conditional Access policies for:
 
 - [Microsoft Teams](teams-access-policies.md)
-- [SharePoint](secure-email-recommended-policies.md)
+- [SharePoint](sharepoint-file-access-policies.md)

@@ -44,7 +44,7 @@ Customers who sail over these hurdles have good partnerships between the Operati
 
 Next, adopt a Zero Trust architecture approach. This starts with building a modern, identity-based security perimeter. Design the security architecture where every access attempt, whether on-prem or cloud, is treated as untrusted until it is verified — “never trust, always verify.” This design approach not only increases security and productivity, but it also allows users to work from anywhere with any device type. The sophisticated cloud controls included with Microsoft 365 help you protect users’ identities while controlling access to valuable resources based on user risk level.
 
-For a recommended configuration, see [Identity and device access configurations](../enterprise/microsoft-365-policies-configurations.md). 
+For a recommended configuration, see [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md). 
 
 ## Transition security controls to the cloud
 

@@ -143,5 +143,5 @@ For more reading about App Permission Policies, check out [Manage app permission
 Configure Conditional Access policies for:
 
 - [Exchange Online](secure-email-recommended-policies.md)
-- [SharePoint](secure-email-recommended-policies.md)
+- [SharePoint](sharepoint-file-access-policies.md)
 

@@ -129,11 +129,11 @@ This guidance shows you how to create recommended policies to enforce the use of
 
 This guidance shows you how to implement a set of policies to protect access to Microsoft 365 cloud services, including Microsoft Teams, Exchange Online, SharePoint Online, and OneDrive for Business. In addition to implementing these policies, we recommend you also raise the level of protection for your tenant using these resources:
 
-- [Configure your tenant for increased security](../security/office-365-security/tenant-wide-setup-for-increased-security.md)
+- [Configure your tenant for increased security](tenant-wide-setup-for-increased-security.md)
 
   Recommendations that apply to baseline security for your tenant.
 
-- [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](../security/office-365-security/security-roadmap.md)
+- [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md)
 
   Recommendations that include logging, data governance, admin access, and threat protection.
 

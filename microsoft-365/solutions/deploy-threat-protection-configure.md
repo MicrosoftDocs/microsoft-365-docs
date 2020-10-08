@@ -35,13 +35,13 @@ Microsoft has tested and recommends a specific set of conditional access and rel
 
 ![Process for deploying baseline protection](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
 
-1. [Configure prerequisites, including Azure Identity Protection](../enterprise/identity-access-prerequisites.md).
-2. [Configure common identity and device access policies](../enterprise/identity-access-policies.md) for baseline protection.
-3. Configure policies for [guest users](../enterprise/identity-access-policies-guest-access.md), [Microsoft Teams](../enterprise/teams-access-policies.md), [Exchange Online](../enterprise/secure-email-recommended-policies.md), and [SharePoint Online and OneDrive](../enterprise/sharepoint-file-access-policies.md).
+1. [Configure prerequisites, including Azure Identity Protection](../security/office-365-security/identity-access-prerequisites.md).
+2. [Configure common identity and device access policies](../security/office-365-security/identity-access-policies.md) for baseline protection.
+3. Configure policies for [guest users](../security/office-365-security/identity-access-policies-guest-access.md), [Microsoft Teams](../security/office-365-security/teams-access-policies.md), [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md), and [SharePoint Online and OneDrive](sharepoint-file-access-policies.md).
 
 ### More information about protecting identities
 
-- [Identity and device access configurations](../enterprise/microsoft-365-policies-configurations.md)
+- [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md)
 - [Security guidance for Azure MFA](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## Step 2: Configure Azure Advanced Threat Protection

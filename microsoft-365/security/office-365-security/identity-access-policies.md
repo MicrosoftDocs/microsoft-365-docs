@@ -139,7 +139,7 @@ Also consider using the [What if](https://docs.microsoft.com/azure/active-direct
 
 Use the settings in these tables for a Conditional Access policy to block clients that don't support modern authentication.
 
-See [this article](microsoft-365-client-support-modern-authentication.md) for a list of clients in Microsoft 365 that do suppport modern authentication.
+See [this article](../enterprise/microsoft-365-client-support-modern-authentication.md) for a list of clients in Microsoft 365 that do suppport modern authentication.
 
 In the **Assignments** section:
 
