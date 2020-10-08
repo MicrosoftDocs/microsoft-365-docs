@@ -175,7 +175,7 @@ You can define mail flow rules for triggering remove message encryption without 
 
 #### Use the EAC to create a rule for removing encryption from email replies encrypted without the new OME capabilities
 
-When your email users send encrypted messages without the new OME capabilities, recipients of those messages need to sign in to the encryption portal to view and respond the encrypted replies. You can create mail flow rules to automatically remove encryption from replies so email users in your organization can view the replies directly in the mail client.
+When your email users send encrypted messages without the new OME capabilities, recipients of those messages need to sign in to the encryption portal to view and respond to the encrypted replies. You can create mail flow rules to automatically remove encryption from replies so email users in your organization can view the replies directly in the mail client.
 
 1. In a web browser, using a work or school account that has been granted admin permissions, [sign in to Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
