@@ -56,9 +56,9 @@ Businesses in the following countries can provide their VAT number or local equi
 - Ireland
 - Isle of Man
 - Italy
-- Korea
     :::column-end:::
     :::column:::
+- Korea
 - Latvia
 - Liechtenstein
 - Lithuania
