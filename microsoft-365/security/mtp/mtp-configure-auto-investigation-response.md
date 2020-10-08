@@ -7,10 +7,11 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: article
-ms.date: 10/07/2020 
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
-ms.collection: M365-security-compliance.
+ms.collection: 
+- M365-security-compliance 
+- m365-initiative-m365-defender
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH 
