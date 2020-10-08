@@ -44,7 +44,7 @@ Azure Active Directory and other Microsoft 365 capabilities provide a rich set o
 
 Microsoft provides a recommended configuration you can use as a starting point:
 
-- [Identity and device access configurations](../enterprise/microsoft-365-policies-configurations.md): Recommended policy configurations to achieve three tiers of protection (baseline, sensitive, highly regulated). This guidance includes recommended policies for Exchange Online and SharePoint Online (including OneDrive for Business).
+- [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md): Recommended policy configurations to achieve three tiers of protection (baseline, sensitive, highly regulated). This guidance includes recommended policies for Exchange Online and SharePoint Online (including OneDrive for Business).
 - [Security guidance for political campaigns, nonprofits, and other agile organizations](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o): This includes the same set of policies but provides more guidance for BYOD environments and for B2B accounts.
 
 ## Threat Protection

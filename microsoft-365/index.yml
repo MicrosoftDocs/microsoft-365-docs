@@ -108,7 +108,7 @@ productDirectory:
           text: Deploy Microsoft Defender Advanced Threat Protection
         - url: security/office-365-security/office-365-atp.md
           text: Deploy Office 365 Advanced Threat Protection
-        - url: enterprise/microsoft-365-policies-configurations.md
+        - url: security/office-365-security/microsoft-365-policies-configurations.md
           text: Configure identity and device access protection
     # Card
     - title: Protect your information and comply with regulations
