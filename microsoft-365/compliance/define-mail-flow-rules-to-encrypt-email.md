@@ -171,7 +171,7 @@ If you haven't yet moved your organization to the new OME capabilities, use thes
 
 ### Remove encryption from email without the new OME capabilities
 
-You can define mail flow rules for triggering remove message encryption without the new OME capabilities by using the EAC or Windows PowerShell cmdlets.  When your email users send encrypted messages, you can define these rules to decrypt messages from within your organization. You cannot decrypt encrypted messages originating from outside of your organization.
+You can define mail flow rules for triggering remove message encryption without the new OME capabilities by using the EAC or Windows PowerShell cmdlets.  When your email users send encrypted messages, you can define these rules to decrypt messages from within your organization. You cannot decrypt encrypted messages originating from outside your organization.
 
 #### Use the EAC to create a rule for removing encryption from email replies encrypted without the new OME capabilities
 
