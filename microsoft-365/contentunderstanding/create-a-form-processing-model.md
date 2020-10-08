@@ -3,21 +3,23 @@ title: "Create a form processing model"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+localization_priority: Priority
 description: "Create a form processing model in Microsoft SharePoint Syntex."
 ---
 
 # Create a form processing model in Microsoft SharePoint Syntex
 
-The content in this article is for the Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+</br>
 
-Using [AI Builder](https://docs.microsoft.com/ai-builder/overview) - a feature in Microsoft PowerApps - Project Cortex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
+
+</br>
+
+Using [AI Builder](https://docs.microsoft.com/ai-builder/overview) - a feature in Microsoft PowerApps - SharePoint Syntex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
 
 Creating a form processing model involves the following:
  - Step 1: Create the from processing model to create the content type
@@ -138,5 +140,6 @@ After publishing your model and creating it's PowerAutomate flow, you can use yo
 
 ## See Also
   
-[Power Automate documentation](https://docs.microsoft.com/power-automate/)</br>
-[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
+[Power Automate documentation](https://docs.microsoft.com/power-automate/)
+
+[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)

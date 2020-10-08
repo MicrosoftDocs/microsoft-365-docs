@@ -17,6 +17,8 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
+- m365solution-mig
+- m365initiative-compliance
 description: With records management in Microsoft 365, you can apply your retention schedules into a file plan that manages retention, records declaration, and disposition.
 ---
 
