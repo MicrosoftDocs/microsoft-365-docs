@@ -20,11 +20,11 @@ description: "Summary: Understand why you must use PowerShell to manage Microsof
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-With the Microsoft 365 admin center, you can not only manage your Microsoft 365 user accounts and licenses, but you can also manage your Microsoft 365 services such as Exchange Online, Teams, and SharePoint Online. However, you can also manage these elements with PowerShell commands, taking advantage of a command-line and scripting language environment for speed, automation, and additional capability.
+With the Microsoft 365 admin center, you can manage your Microsoft 365 user accounts and licenses. You can also manage your Microsoft 365 services such as Exchange Online, Teams, and SharePoint Online. However, you can also manage these service by using PowerShell commands to take advantage of a command-line and scripting language environment for speed, automation, and additional capability.
   
-In this article, we'll show you these ways in which you can use PowerShell to manage Microsoft 365:
+In this article, we show you these ways to use PowerShell to manage Microsoft 365:
   
-- Reveal additional information that you cannot see with the Microsoft 365 admin center
+- Reveal additional information that you can't see with the Microsoft 365 admin center
     
 - Configure features and settings only possible with PowerShell
     
@@ -36,15 +36,15 @@ In this article, we'll show you these ways in which you can use PowerShell to ma
     
 - Manage across services
     
-Before you begin, understand that PowerShell for Microsoft 365 is a set of modules for Windows PowerShell, a command-line environment for Windows-based services and platforms. This environment creates a command shell language that can be extended with additional modules and provides a way to execute simple or complex commands or scripts. For example, after you install the PowerShell for Microsoft 365 modules and connect to your Microsoft 365 subscription, you can run this command to list all of the user mailboxes for Microsoft Exchange Online:
+Before you begin, you need to understand that PowerShell for Microsoft 365 is a set of modules for Windows PowerShell, which is a command-line environment for Windows-based services and platforms. This environment creates a command shell language that can be extended with additional modules. It provides a way to execute simple or complex commands or scripts. For example, after you install the PowerShell for Microsoft 365 modules and connect to your Microsoft 365 subscription, you can run the following command to list all the user mailboxes for Microsoft Exchange Online:
   
 ```powershell
 Get-Mailbox
 ```
 
-Getting the list of mailboxes can also be easily done using the Microsoft 365 admin center, but counting the number of items in all of the lists for all of the sites for all of your web apps cannot be easily done.
+You can also getting the list of mailboxes by using the Microsoft 365 admin center but counting the number of items in all the lists for all of the sites for all of your web apps isn't easily done.
   
-Please note that PowerShell for Microsoft 365 is designed to augment and enhance your ability to manage Microsoft 365, not to replace the Microsoft 365 admin center. As an administrator, you must become at least comfortable with using PowerShell for Microsoft 365 because there are some configuration procedures that can only be done with PowerShell for Microsoft 365 commands. In these cases, you will be required to understand how to:
+PowerShell for Microsoft 365 is designed to augment your ability to manage Microsoft 365, not to replace the Microsoft 365 admin center. As an administrator, you must become at least comfortable with using PowerShell for Microsoft 365 because there are some configuration procedures that can only be done with PowerShell for Microsoft 365 commands. In these cases, you will be required to understand how to:
   
 - Install the PowerShell for Microsoft 365 modules (done only once for each administrator computer).
     

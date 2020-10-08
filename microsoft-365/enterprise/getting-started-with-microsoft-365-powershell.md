@@ -23,7 +23,7 @@ description: "Summary: Understand the value of PowerShell for Microsoft 365, get
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can use commands and scripts in PowerShell for Microsoft 365 to manage Microsoft 365 and streamline your daily work. Learn why PowerShell for Microsoft 365 is crucial to managing Microsoft 365, how to connect to your Microsoft 365 subscription and create reports, and where to get more information and help from the Microsoft 365 community.
+You can use commands and scripts in PowerShell for Microsoft 365 to manage Microsoft 365 and streamline your daily work. Use the following information to learn why PowerShell for Microsoft 365 is crucial to managing Microsoft 365, how to connect to your Microsoft 365 subscription and create reports, and where to get more information and help from the Microsoft 365 community.
   
 Select from these topics:
   
