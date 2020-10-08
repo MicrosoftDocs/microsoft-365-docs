@@ -93,8 +93,8 @@ The following clients are recommended when a secure documents policy has been ap
 
 For more information about client support in Microsoft 365, see the following articles:
 
-- [Microsoft 365 Client App Support - Conditional Access](../enterprise/microsoft-365-client-support-conditional-access.md)
-- [Microsoft 365 Client App Support - Modern Authentication](../enterprise/microsoft-365-client-support-modern-authentication.md)
+- [Microsoft 365 Client App Support - Conditional Access](../../enterprise/microsoft-365-client-support-conditional-access.md)
+- [Microsoft 365 Client App Support - Modern Authentication](../../enterprise/microsoft-365-client-support-modern-authentication.md)
 
 ## Protecting administrator accounts
 
@@ -105,12 +105,12 @@ For editions of Microsoft 365 or Office 365 that do not support Conditional Acce
 Here are some additional recommendations:
 
 - Use [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) to reduce the number of persistent administrative accounts. 
-- [Use privileged access management](../compliance/privileged-access-management-overview.md) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. 
+- [Use privileged access management](../../compliance/privileged-access-management-overview.md) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. 
 - Create and use separate accounts that are assigned [Microsoft 365 administrator roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function. 
 - Follow [best practices](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) for securing privileged accounts in Azure AD.
 
 ## Next step
 
-[![Step 2: Configure the common identity and access Conditional Access policies](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
+[![Step 2: Configure the common identity and access Conditional Access policies](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 
 [Configure the common identity and device access policies](identity-access-policies.md)

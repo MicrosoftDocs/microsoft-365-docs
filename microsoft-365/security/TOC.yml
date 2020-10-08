@@ -9,20 +9,20 @@
         - name: Microsoft 365 Security for BDMs
           href: Microsoft-365-security-for-bdm.md
     - name: Identity and device access configurations
-      href: microsoft-365-policies-configurations.md
+      href: ./office-365-security/microsoft-365-policies-configurations.md
       items: 
         - name: Prerequisite work
-          href: identity-access-prerequisites.md
+          href: ./office-365-security/identity-access-prerequisites.md
         - name: Common identity and device access policies
-          href: identity-access-policies.md
+          href: ./office-365-security/identity-access-policies.md
         - name: Policies for guest and external users
-          href: identity-access-policies-guest-access.md
+          href: ./office-365-security/identity-access-policies-guest-access.md
         - name: Recommended Teams access policies
-          href: 
+          href: ./office-365-security/teams-access-policies.md
         - name: Recommended Exchange Online access policies
-          href: secure-email-recommended-policies.md
+          href: ./office-365-security/secure-email-recommended-policies.md
         - name: Recommended SharePoint Online access policies
-          href: sharepoint-file-access-policies.md
+          href: ./office-365-security/sharepoint-file-access-policies.md
     - name: Microsoft Secure Score
       items: 
         - name: Secure Score overview
