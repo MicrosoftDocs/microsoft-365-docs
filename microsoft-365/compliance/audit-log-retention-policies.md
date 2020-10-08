@@ -78,8 +78,6 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
 4. Click **Save** to create the new audit log retention policy.
 
-The new audit retention policy is listed on the **Audit retention policies** tab.
-
 ## Create an audit log retention policy in PowerShell
 
 You can also use Security & Compliance Center PowerShell to create audit log retention policies.
