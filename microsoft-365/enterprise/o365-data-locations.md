@@ -3,7 +3,6 @@ title: "Microsoft 365 data locations"
 ms.author: deanw
 author: dmwmsft
 manager: laurawi
-ms.date: 07/22/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,7 +15,7 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: "Summary: Microsoft 365 data locations"
+description: "Determine where your Microsoft 365 customer data is stored worldwide"
 ---
 
 <!--
@@ -24,6 +23,10 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 -->
 
 # Where your Microsoft 365 customer data is stored
+
+>[!Note]
+>Updates to this article are strictly controlled by Microsoft. Direct edits will not be published. If you have changes to suggest, please submit it as feedback at the end of the article.
+>
 
 The tables below shows where customer data is stored at-rest for Microsoft 365 services across all of Microsoft's global cloud locations. Expand the location of your billing address country to find out where customer data for each service would be stored.
 
@@ -101,6 +104,10 @@ Microsoft will not store Intune customer data at rest outside the stated Geo. ex
   - Preview, beta, or other prerelease services, which typically store customer data in the United States but may store it globally.
 
 Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. 
+
+### Can I edit the information in this article?
+
+No. Updates to this article are strictly controlled by Microsoft. Direct edits will not be published. If you have changes to suggest, please submit it as feedback at the end of the article.
 
 ## Data Center Locations
 
