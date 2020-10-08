@@ -34,7 +34,7 @@ Sensitive information types are used in:
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](retention.md)
 - [Communication compliance](communication-compliance.md)
-- [Auto-labelling policies](apply-sensitivity-label-automatically#how-to-configure-auto-labeling-for-office-apps)
+- [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
 ## anatomy of a sensitive information type
 
