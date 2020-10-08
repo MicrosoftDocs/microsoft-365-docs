@@ -15,7 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - remotework
 - m365solution-remotework
-- m365solution-overview
+- m365solution-scenario
 ms.custom: 
 description: Train your users and ensure that issues are dealt with quickly.
 ---
