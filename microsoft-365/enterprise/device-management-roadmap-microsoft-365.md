@@ -49,10 +49,10 @@ Based on your assessment, get started managing your devices with:
  
 ## Identity and device access recommendations
 
-Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. For device access, use the recommendations and settings in these articles:
+Microsoft provides a set of recommendations for [identity and device access](../security/office-365-security/microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. For device access, use the recommendations and settings in these articles:
 
-- [Prerequisites](identity-access-prerequisites.md)
-- [Common identity and device access policies](identity-access-policies.md)
+- [Prerequisites](../security/office-365-security/identity-access-prerequisites.md)
+- [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
 
 ## How Contoso did device management for Microsoft 365
 
