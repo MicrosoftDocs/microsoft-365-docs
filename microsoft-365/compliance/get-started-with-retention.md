@@ -76,6 +76,6 @@ If you use retention labels for records management, there are additional scenari
 
 Retention labels, unlike retention policies, have a UI presence in Microsoft 365 apps. Make sure you provide guidance for end users and your help desk before you deploy retention labels to your production network.
 
-The most effective end-user documentation will be customized guidance and instructions you provide for the retention label names and configurations you choose. However, you can use the following information for basic instructions:
+The most effective end-user documentation will be customized guidance and instructions you provide for the retention label names and configurations you choose. See the following blog post for a download package that you can use to train users and drive adoption: [End User Training for Retention Labels in M365 – How to Accelerate Your Adoption](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
 
-- [Manually apply retention labels](create-apply-retention-labels.md#manually-apply-retention-labels)
+You will also find basic user instructions in the follow section: [Manually apply retention labels](create-apply-retention-labels.md#manually-apply-retention-labels).
