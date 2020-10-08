@@ -89,11 +89,11 @@ You can define mail flow rules for triggering message encryption with the new OM
 
 8. Choose **Save**.
 
-## Create mail flow rules to remove encryption for outgoing email messages with the new OME capabilities
+## Create mail flow rules to remove encryption for email messages with the new OME capabilities
 
 You can define mail flow rules for triggering remove message encryption with the new OME capabilities by using the EAC or Windows PowerShell cmdlets.  When your email users send encrypted messages, you can define these rules to decrypt messages that are from within your organization.  You cannot decrypt encrypted messages originating from outside of your organization.
 
-### Use the EAC to create a rule to remove encryption from email messages with the new OME capabilities
+### Use the EAC to create a rule to remove encryption from outgoing email messages with the new OME capabilities
 
 1. In a web browser, using a work or school account that has been granted global administrator permissions, [sign in to Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
