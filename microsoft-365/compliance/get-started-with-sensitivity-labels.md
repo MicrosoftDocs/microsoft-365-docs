@@ -13,11 +13,11 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+- m365solution-mip
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
-- m365solution-mip
-- m365initiative-compliance
 description: "Ready to start implementing sensitivity labels to help protect your organization's data, but not sure where to start? Read some practical guidance to help get you on your labeling journey."
 ---
 
