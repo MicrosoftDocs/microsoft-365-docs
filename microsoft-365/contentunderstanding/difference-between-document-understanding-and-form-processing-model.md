@@ -63,10 +63,10 @@ Form processing models can currently only be applied to the SharePoint document 
  ## See Also
 [Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
-[Create a classifier](create-a-classifier.md)
 
-[Create an extractor](create-an-extractor.md)
 
-[Apply a document understanding model](apply-a-model.md)
+[Document understanding overview](document-understanding-overview.md)
 
-[Create a form processing model](create-a-form-processing-model.md)
+[Form processing overview](form-processing-overview.md)
+
+[Introduction to SharePoint Syntex](index.md)

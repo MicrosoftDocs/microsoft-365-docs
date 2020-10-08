@@ -11,6 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 localization_priority: None
 description: Learn how to define policies for information barriers in Microsoft Teams.
 ms.custom: seo-marvel-apr2020
