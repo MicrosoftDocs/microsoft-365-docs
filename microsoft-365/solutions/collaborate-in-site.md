@@ -20,7 +20,7 @@ description: "Learn about the Microsoft 365 configuration steps necessary to set
 
 # Collaborate with guests in a site
 
-If you need to collaborate with guests across documents, data, and lists, you can use a SharePoint site. Modern SharePoint sites are connected to Microsoft 365 Groups and can manage the site membership and provide additional collaboration tools such as a shared mailbox and calendar.
+If you need to collaborate with guests across documents, data, and lists, you can use a SharePoint site. Modern SharePoint sites are connected to Microsoft 365 Groups and can manage the site membership and provide additional collaboration tools such as a shared mailbox and a calendar.
 
 In this article, we'll walk through the Microsoft 365 configuration steps necessary to set up a SharePoint site for collaboration with guests.
 
@@ -32,17 +32,17 @@ This video shows the configuration steps described in this document.</br>
 
 ## Azure external collaboration settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [organizational relationships settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this will override any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [organizational relationships settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
 Check the external collaboration settings to ensure that sharing with guests is not blocked.
 
 ![Screenshot of Azure Active Directory External collaboration Settings page](../media/azure-ad-organizational-relationships-settings.png)
 
-To set external collaboration settings:
+To set external collaboration settings
 
 
 1. Log in to Microsoft Azure at [https://portal.azure.com](https://portal.azure.com).
-2. In the left navigation pane, click **Azure Active Directory**.
+2. In the left navigation pane, under **FAVORITES**, click **Azure Active Directory**.
 3. Select **External Identities** and click on **External collaboration settings**.
 4. In the **Guest invite settings** pane, ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
 5. If you made changes, click **Save**.
@@ -59,18 +59,17 @@ Modern SharePoint sites use Microsoft 365 Groups to control site access. The Mic
 
 To set Microsoft 365 Groups guest settings
 
-1. In the Microsoft 365 admin center, in the left navigation, expand **Settings**.
+1. In the Microsoft 365 admin center, in the left navigation pane, expand **Settings**.
 2. Click **Org settings**.
 3. In the list, click **Microsoft 365 Groups**.
 4. Ensure that the **Let group owners add people outside your organization to Microsoft 365 Groups as guests** and **Let guest group members access group content** check boxes are both checked.
 5. If you made changes, click **Save changes**.
 
-
 ## SharePoint organization-level sharing settings
 
 In order for guests to have access to SharePoint sites, the SharePoint organization-level sharing settings must allow for sharing with guests.
 
-The organization-level settings determine the settings that are available for individual sites. Site settings cannot be more permissive than the organization-level settings.
+The organization-level settings determine the settings that will be available for individual sites. Site settings cannot be more permissive than the organization-level settings.
 
 If you want to allow unauthenticated file and folder sharing, choose **Anyone**. If you want to ensure that all people outside your organization have to authenticate, choose **New and existing guests**. Choose the most permissive setting that will be needed by any site in your organization.
 
@@ -93,7 +92,7 @@ To create a site
 2. Click **Create**.
 3. Click **Team site**.
 4. Type a site name and enter a name for the Group owner (site owner).
-5. Under **Advanced settings**, choose if you want this to be a public or private site.
+5. Under **Advanced settings**, choose if you want this site to be a public or private one.
 6. Click **Next**.
 7. Click **Finish**.
 
@@ -124,17 +123,17 @@ To invite internal users to a group
 3. Click **Add members**.
 4. Type the names or email addresses of the users that you want to invite to the site, and then click **Save**.
 
-Guest users can't be added from the site. You need to add them using Outlook on the web.
+Guest users can't be added from the site. You need to add them using Outlook on the web. Therefore, as a prerequisite to add and invite guests to a group, click the URL of the site in the **URL**  column to navigate to the site-specific page. From this page, click the **App launcher** icon and select **Outlook**. This is the screen from which you can invite guests into a group, for which procedure is described below.
 
 To invite guests to a group
-1. In Outlook on the web, under **Groups**, click the group where you want to add members.
-2. Open the group contact card, click **Members** link in the upper right which denotes the member count.
+1. Under **Groups**, click the group to which you want to invite guests.
+2. Open the group contact card, click **Members** link in the upper right (the link which denotes the member count).
 3. click **Add members**.
 4. Type the email addresses of the guests that you want to invite, and then click **Add**.
 5. Click **Close**.
-Note that you need to click **Close** only if you are not the owner of the group and a a result, you are not allowed to add the guest into the group. In such cases, the request to add the guest into the group is transferred to the group owner for approval.
+Note that you need to click **Close** only if you are not the owner of the group and as a result, you are not allowed to add the guest into the group. In such cases, the request to add the guest into the group is transferred to the group owner for approval.
 
-## See Also
+## See also
 
 [Best practices for sharing files and folders with unauthenticated users](best-practices-anonymous-sharing.md)
 
