@@ -286,9 +286,12 @@ additionalContent:
         - title: End users
           summary: Find training, how-to, and help content for users of Microsoft 365 on support.microsoft.com.
           url: https://support.microsoft.com/microsoft-365
-        - title: Educators
+        - title: Education IT
           summary: Learn how to unlock creativity, promote teamwork, and have a safe and simple experience with Microsoft 365 Education.
           url: /education
+        - title: Educators
+          summary: Find training, how-to, and help content for educators using Microsoft 365 Education.
+          url: https://support.microsoft.com/education
         - title: Tech community
           summary: Join the Microsoft 365 Tech community to share experiences, engage and learn from experts.
           url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
