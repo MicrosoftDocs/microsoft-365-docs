@@ -16,6 +16,7 @@ ms.collection:
 - remotework
 - m365solution-remotework
 - m365solution-overview
+- M365initiative-coredeploy
 ms.custom: 
 description: Configure the security and service infrastructure that allows your workers to work remotely from anywhere and at any time.
 ---
