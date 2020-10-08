@@ -22,6 +22,12 @@ Microsoft SharePoint Syntex is an Office 365 service that helps organizations to
 
 The resources on this page are designed to get you started with learning about and using SharePoint Syntex in your organization.
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
+
+</br>
+
 ## Get started
 
 The resources in this section help you learn more about the two methods of data classification and extraction used by SharePoint Syntex: form processing and document understanding.
