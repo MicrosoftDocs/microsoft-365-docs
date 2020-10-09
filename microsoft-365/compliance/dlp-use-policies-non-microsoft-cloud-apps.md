@@ -46,11 +46,11 @@ DLP policies to non-Microsoft cloud apps use Cloud App Security DLP capabilities
 
 To use DLP policy to a specific non-Microsoft cloud app, the app must be connected to Cloud App Security. For information, see:
 
-- [Connect Box](https://docs.microsoft.com/en-us/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
-- [Connect Dropbox](https://docs.microsoft.com/en-us/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [Connect G-Suite](https://docs.microsoft.com/en-us/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
-- [Connect Salesforce](https://docs.microsoft.com/en-us/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
-- [Connect Cisco Webex](https://docs.microsoft.com/en-us/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
+- [Connect Box](https://docs.microsoft.com/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
+- [Connect Dropbox](https://docs.microsoft.com/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
+- [Connect G-Suite](https://docs.microsoft.com/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
+- [Connect Salesforce](https://docs.microsoft.com/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
+- [Connect Cisco Webex](https://docs.microsoft.com/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 
 After you connect your cloud apps to Cloud App Security, you can create Microsoft 365 DLP policies for them.
 
@@ -76,10 +76,10 @@ When you create a rule in the DLP policy, you can select an action for non-Micro
 
 ![Restrict third-party apps](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
-For information about creating and configuring DLP policies, see [Create test and tune a DLP policy](https://docs.microsoft.com/en-us/microsoft-365/compliance/create-test-tune-dlp-policy?view=o365-worldwide).
+For information about creating and configuring DLP policies, see [Create test and tune a DLP policy](https://docs.microsoft.com/microsoft-365/compliance/create-test-tune-dlp-policy?view=o365-worldwide).
 
 ## See Also
 
-- [Create test and tune a DLP policy](https://docs.microsoft.com/en-us/microsoft-365/compliance/create-test-tune-dlp-policy?view=o365-worldwide)
-- [Get started with the default DLP policy](https://docs.microsoft.com/en-us/microsoft-365/compliance/get-started-with-the-default-dlp-policy?view=o365-worldwide)
-- [Create a DLP policy from a template](https://docs.microsoft.com/en-us/microsoft-365/compliance/create-a-dlp-policy-from-a-template?view=o365-worldwide)
+- [Create test and tune a DLP policy](https://docs.microsoft.com/microsoft-365/compliance/create-test-tune-dlp-policy?view=o365-worldwide)
+- [Get started with the default DLP policy](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-the-default-dlp-policy?view=o365-worldwide)
+- [Create a DLP policy from a template](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template?view=o365-worldwide)
