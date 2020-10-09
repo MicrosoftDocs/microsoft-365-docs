@@ -40,8 +40,8 @@ Check the organizational relationships settings to ensure that sharing with gues
 
 To set organizational relationship settings
 
-1. Log in to Microsoft Azure at [https://portal.azure.com](https://portal.azure.com).
-2. In the left navigation pane, under **FAVORITES**, click **Azure Active Directory**.
+1. Log in to Azure Active Directory at [https://aad.portal.azure.com](https://aad.portal.azure.com).
+2. In the left navigation pane, click **Azure Active Directory**.
 3. Click **External identities**.
 4. On the **Get started** screen, in the left navigation pane, click **External collaboration settings**.
 5. Ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
