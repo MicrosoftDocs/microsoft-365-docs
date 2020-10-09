@@ -841,7 +841,7 @@
               href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference  
             - name: Office 365 Management Activity API schema
               href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema 
-            - name: Troubleshooting the Office 365 Management Activity API schema
+            - name: Office 365 Management Activity API FAQs and troubleshooting
               href: https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
     - name: Mailbox auditing
       href: enable-mailbox-auditing.md
