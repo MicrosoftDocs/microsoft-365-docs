@@ -48,13 +48,13 @@ With this report, you can:
 
 We have focused on platform and data quality improvements to increase data accuracy and consistency for email records. These set of updates includes consolidation of pre-delivery and post-delivery information (example action executed on an email as part of ZAP process) into a single record  along with added richness like Spam verdict, Entity level threats (e.g. which URL was malicious) and latest delivery locations. 
 
-After these updates, you would be seeing a single entry for each message, regardless of the different post-delivery events that have taken place on the message. This could include ZAP, Manual Remediation (which means admin action), Dynamic Delivery etc. 
+After these updates, you'll see a single entry for each message, regardless of the different post-delivery events that have taken place on the message. Actions can include ZAP, Manual Remediation (which means admin action), Dynamic Delivery etc. 
 
-In addition to showing malware and phish threats, we have now updated the information to show Spam verdict associated with an email. Within the email, you will be able to see all the threats associated with the email along with the corresponding detection technologies. Each email can have 0, 1, or multiple threats. You'll see the current Threats in the Details section of the Email flyout. Additionally, for multiple threats (e.g., an email having both Malware and Phish), Detection tech field would give the Threat-Detection mapping, meaning which detection tech led to the identification of the Threat.
+In addition to showing malware and phish threats, you'll now be able to see spam verdict associated with an email. Within the email, you will be able to see all the threats associated with the email along with the corresponding detection technologies. Each email can have 0, 1, or multiple threats. You'll see the current Threats in the Details section of the Email flyout. Additionally, for multiple threats (e.g., an email having both Malware and Phish), Detection tech field would give the Threat-Detection mapping, meaning which detection tech led to the identification of the Threat.
 
 The set of detection technologies has been updated to include new detection methods, as well as spam detection technologies, and aross all the different email views (Malware, Phish, All Email), you'll have the same, consistent set of Detection technologies to filter the results. 
 
-**Note**: Our verdict analysis may not necessarily be tied to entities. As an example, an email might be classified as Phish or Spam, but there are no URLs which have any Phish/Spam verdict stamped on them. This is because our filters also evaluate content and other details for an email, before assigning a verdict. 
+**Note**: Verdict analysis might not necessarily be tied to entities. As an example, an email might be classified as Phish or Spam, but there are no URLs which have any Phish/Spam verdict stamped on them. This is because our filters also evaluate content and other details for an email, before assigning a verdict. 
  
 #### Threats in URLs
 
@@ -66,7 +66,7 @@ Within email flyout-> Details tab, you would now be able to see the specific thr
 
 ![Updated Timeline View](../../media/Email_Timeline.png)
 
-In addition to identifying all delivery and post-delivery events, timeline view would also give the information about the Threat identified at that point of time for a subset of these events. It will also give you more information about Additional Actions (e.g. ZAP, Manual Remediation) along with the Result of that action. Timeline view would contain information about the Original delivery and subsequently any post-delivery events performed on an email.
+In addition to identifying all delivery and post-delivery events, timeline view also gives information about the Threat identified at that point of time for a subset of these events. It also gives you more information about Additional Actions (e.g. ZAP, Manual Remediation) along with the Result of that action. Timeline view contains information about the Original delivery and subsequently any post-delivery events performed on an email.
 
 -	Source: This can be Admin/System/user based on what was the source of the event.
 -	Event: This includes top level events like Original Delivery, Manual Remediation, ZAP, Submissions, and Dynamic Delivery .
@@ -148,13 +148,14 @@ As part of improving the hunting process, we have made a few updates to Threat E
 
 ### Timezone improvements
 
-We will show the timezone for the email records within the Portal, as well as for Exported data. The timezone will be visible across experiences like Email Grid, Details Flyout, Email Timeline, and Similar Emails, so that the timezone for the result set is clear to the user.
+You will see the timezone for the email records within the Portal, as well as for Exported data. The timezone will be visible across experiences like Email Grid, Details Flyout, Email Timeline, and Similar Emails, so that the timezone for the result set is clear to the user.
 
 ![View Timezone in Explorer](../../media/TimezoneImprovements.png)
 
 ### Update in the Refresh process
 
 We have heard feedback around confusion with automatic refresh (e.g. for date, as soon as you change the date, the page would refresh) and manual refresh (for other filters). Similarly, removing filters leads to automatic refresh, this causes situations where changing the different filters while modifying the query can cause inconsistent search experiences. To solve this, we are moving to a manual filtering mechanism.
+
 From an experience standpoint, the user can apply and remove the different range of filters (from the filter set, and date), and press the refresh button to filter the results once they are done with defining the query. The refresh button has also been updated to call it out clearly on the screen. We have also updated tooltips and in-product documentation around this change.
 
 ![Click on Refresh to filter results](../../media/ManualRefresh.png)
