@@ -52,6 +52,16 @@ As part of improving the hunting process, we have made a few updates to Threat E
 - [Chart drilldown to add to filters](#chart-drilldown-to-add-to-filters)
 - [In product information updates](#in-product-information-updates)
 
+### Filter by user tags
+
+You can now sort and filter by either system or custom user tags, to quickly grasp the scope of threats. See [User tags in Office 356 ATP](user-tags.md) to learn more.
+
+> [!IMPORTANT]
+> Filtering and sorting by user tags is currently in public preview.
+> It may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided about it.
+
+![Tags column in Explorer](../../media/threat-explorer-tags.png)
+
 ### Timezone improvements
 
 We will show the timezone for the email records within the Portal, as well as for Exported data. The timezone will be visible across experiences like Email Grid, Details Flyout, Email Timeline, and Similar Emails, so that the timezone for the result set is clear to the user.
