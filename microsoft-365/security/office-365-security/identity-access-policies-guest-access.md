@@ -29,7 +29,7 @@ Providing a path for B2B accounts to authenticate with your Azure AD tenant does
 
 To protect guest and external access with Azure AD B2B accounts, the following diagram illustrates which policies to add or update from the the common identity and device access policies. 
 
-[![Summary of policy updates for protecting guest access](../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
+[![Summary of policy updates for protecting guest access](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
 
 [See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
 
@@ -43,7 +43,7 @@ The following table lists the policies you either need to create and update. The
 
 To include or exclude guest and external users in Conditional Access policies, for **Assignments > Users and groups > Include** or **Exclude**, check **All guest and external users**.
 
-![screen capture of controls for excluding guest and external users](../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
+![screen capture of controls for excluding guest and external users](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
 ## More information
 
@@ -74,11 +74,11 @@ Only one organization can manage a device. If you don't exclude guest and extern
 
 ## Next step
 
-![Step 4: Policies for Microsoft 365 cloud apps](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Step 4: Policies for Microsoft 365 cloud apps](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configure Conditional Access policies for:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
-- [SharePoint](secure-email-recommended-policies.md)
+- [SharePoint](sharepoint-file-access-policies.md)
 

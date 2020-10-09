@@ -35,7 +35,7 @@ Contoso IT staff used a [team with security isolation](secure-teams-security-iso
 
 ## Step 1: Created a private team
 
-First, to protect access to the underlying SharePoint site for the team, Contoso IT administrators configured the [recommended SharePoint access policies](../enterprise/sharepoint-file-access-policies.md).
+First, to protect access to the underlying SharePoint site for the team, Contoso IT administrators configured the [recommended SharePoint access policies](../security/office-365-security/sharepoint-file-access-policies.md).
 
 Next, a Contoso IT administrator created a new private team named Project 2X and added the user accounts of Project 2X staff as members. They also configured the team so that only Project 2X team owners can create private channels.
 
@@ -59,7 +59,7 @@ For the configuration details, see [Create a sensitivity label](secure-teams-sec
 
 ## Step 3: Configured the underlying SharePoint site
 
-First, to protect access to the underlying SharePoint site for the team, Contoso IT administrators configured the [recommended SharePoint access policies](../enterprise/sharepoint-file-access-policies.md).
+First, to protect access to the underlying SharePoint site for the team, Contoso IT administrators configured the [recommended SharePoint access policies](../security/office-365-security/sharepoint-file-access-policies.md).
 
 Next, they configured additional permission settings for the site:
 

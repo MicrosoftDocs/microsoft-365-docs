@@ -72,9 +72,9 @@ Contoso used the following steps to prepare Microsoft 365 for enterprise for the
 
 In conjunction with their identity and mobile device management infrastructure and as part of their rollout of Exchange Online and SharePoint, Contoso configured the following set of Conditional Access policies and applied them to the appropriate groups:
 
-- [Managed and unmanaged application access on devices policies](identity-access-policies.md)
-- [Exchange Online access policies](secure-email-recommended-policies.md)
-- [SharePoint access policies](sharepoint-file-access-policies.md)
+- [Managed and unmanaged application access on devices policies](../security/office-365-security/identity-access-policies.md)
+- [Exchange Online access policies](../security/office-365-security/secure-email-recommended-policies.md)
+- [SharePoint access policies](../security/office-365-security/sharepoint-file-access-policies.md)
 
 Here is Contoso's resulting set of policies for information protection.
 
