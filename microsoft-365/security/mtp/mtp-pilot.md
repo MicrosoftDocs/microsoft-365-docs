@@ -35,7 +35,7 @@ To effectively determine the benefit and adoption of Microsoft Threat Protection
 
 ## How to use this pilot playbook
 
-This guide provides an overview of Microsoft Threat Protection and step-by-step guidance on how to set up your pilot project. 
+This guide provides an overview of Microsoft Threat Protection and step-by-step instructions on how to set up your pilot project. 
 
 ![Phases in running a Microsoft Threat Protection pilot](../../media/pilotphases.png)
 
