@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -23,6 +23,9 @@ description: "Admins can learn about spoof intelligence in Exchange Online Prote
 
 # Configure spoof intelligence in EOP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound email messages are automatically protected against spoofing by EOP as of October 2018. EOP uses spoof intelligence as part of your organization's overall defense against phishing. For more information, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
 When a sender spoofs an email address, they appear to be a user in one of your organization's domains, or a user in an external domain that sends email to your organization. Attackers who spoof senders to send spam or phishing email need to be blocked. But there are scenarios where legitimate senders are spoofing. For example:
@@ -30,17 +33,13 @@ When a sender spoofs an email address, they appear to be a user in one of your o
 - Legitimate scenarios for spoofing internal domains:
 
   - Third-party senders use your domain to send bulk mail to your own employees for company polls.
-
   - An external company generates and sends advertising or product updates on your behalf.
-
   - An assistant regularly needs to send email for another person within your organization.
-
   - An internal application sends email notifications.
 
 - Legitimate scenarios for spoofing external domains:
 
   - The sender is on a mailing list (also known as a discussion list), and the mailing list relays email from the original sender to all the participants on the mailing list.
-
   - An external company sends email on behalf of another company (for example, an automated report or a software-as-a-service company).
 
 Spoof intelligence, and specifically the default (and only) spoof intelligence policy, helps ensure that the spoofed email sent by legitimate senders doesn't get caught up in EOP spam filters or external email systems, while protecting your users from spam or phishing attacks.

@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 search.appverid:
 - MET150
@@ -15,6 +15,7 @@ ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
+- m365-initiative-defender-office365
 ms.custom: 
 - TopSMBIssues
 - seo-marvel-apr2020
@@ -23,6 +24,9 @@ description: "Admins can learn about the anti-spoofing features that are availab
 ---
 
 # Anti-spoofing protection in EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP includes features to help protect your organization from spoofed (forged) senders.
 
@@ -36,7 +40,7 @@ The following anti-spoofing technologies are available in EOP:
 
 - **Email authentication**: An integral part of any anti-spoofing effort is the use of email authentication (also known as email validation) by SPF, DKIM, and DMARC records in DNS. You can configure these records for your domains so destination email systems can check the validity of messages that claim to be from senders in your domains. For inbound messages, Microsoft 365 requires email authentication for sender domains. For more information, see [Email authentication in Microsoft 365](email-validation-and-authentication.md).
 
-As of October 2018, anti-spoofing protection is available in EOP. Before then, anti-spoofing protection was only available in organizatons with Office 365 ATP.
+As of October 2018, anti-spoofing protection is available in EOP. Before then, anti-spoofing protection was only available in organizations with Office 365 ATP.
 
 EOP analyzes and blocks messages that can't be authenticated by the combination of standard email authentication methods and sender reputation techniques.
 
@@ -138,7 +142,7 @@ To help mailing list messages pass anti-spoofing checks, do following steps base
 
   - Read the instructions at this blog post: [A tip for mailing list operators to interoperate with DMARC to avoid failures](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/).
 
-  - Consider installing updates on your mailing list server to support ARC, see [https://arc-spec.org](https://arc-spec.org/)
+  - Consider installing updates on your mailing list server to support ARC, see <http://arc-spec.org>.
 
 - Your organization doesn't own the mailing list:
 
@@ -157,3 +161,7 @@ You may also contact your admin who can raise it as a support ticket with Micros
 ## Considerations for anti-spoofing protection
 
 If you're an admin who currently sends messages to Microsoft 365, you need to ensure that your email is properly authenticated. Otherwise, it might be marked as spam or phish. For more information, see [Solutions for legitimate senders who are sending unauthenticated email](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+
+Senders in an individual user's (or admin's) Safe Senders list will bypass parts of the filtering stack, including spoof protection. For more information, see [Outlook Safe Senders](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
+
+Admins should avoid (when possible) using allowed sender lists or allowed domain lists. These senders bypass all spam, spoofing, and phishing protection, and also sender authentication (SPF, DKIM, DMARC). For more information, see [Use allowed sender lists or allowed domain lists](create-safe-sender-lists-in-office-365.md#use-allowed-sender-lists-or-allowed-domain-lists).

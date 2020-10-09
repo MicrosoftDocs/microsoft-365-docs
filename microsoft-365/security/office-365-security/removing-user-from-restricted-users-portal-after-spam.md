@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
 ms.service: O365-seccomp
@@ -22,6 +22,9 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Remove blocked users from the Restricted Users portal in Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 If a user exceeds one of the outbound sending limits as specified in [the service limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or in [outbound spam policies](configure-the-outbound-spam-policy.md), the user is restricted from sending email, but they can still receive email.
 

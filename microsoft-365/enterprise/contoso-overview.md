@@ -9,7 +9,7 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -54,9 +54,9 @@ Contoso's offices around the world follow a three-tier design.
 
 25% of Contoso's workforce is mobile-only, with a higher percentage of mobile-only workers in the regional hubs and satellite offices. Providing better support for mobile-only workers is an important business goal for Contoso.
 
-## Design considerations for Microsoft 365 Enterprise
+## Design considerations for Microsoft 365 for enterprise
 
-Contoso's IT architects identified the following design requirements and considerations when deploying Microsoft 365 Enterprise: 
+Contoso's IT architects identified the following design requirements and considerations when deploying Microsoft 365 for enterprise: 
 
 - Multiple geographic locations with local regulations and compliance requirements
 - A central intranet datacenter in the headquarters office and regional application servers that host internal line of business applications
@@ -70,11 +70,11 @@ Contoso's IT architects identified the following design requirements and conside
 
 ## Next step
 
-[Learn](contoso-infra-needs.md) about the Contoso Corporation’s on-premises IT infrastructure and how their business needs were addressed with Microsoft 365 Enterprise.
+[Learn](contoso-infra-needs.md) about the Contoso Corporation’s on-premises IT infrastructure and how their business needs were addressed with Microsoft 365 for enterprise.
 
 ## See also
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)
 

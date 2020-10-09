@@ -22,6 +22,9 @@ description: "Top recommendations from Microsoft's cybersecurity team for implem
 
 # Security roadmap - Top priorities for the first 30 days, 90 days, and beyond
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 This article includes top recommendations from Microsoft's cybersecurity team for implementing security capabilities to protect your Microsoft 365 environment. This article is adapted from a Microsoft Ignite session — [Secure Microsoft 365 like a cybersecurity pro: Top priorities for the first 30 days, 90 days, and beyond](https://www.youtube.com/watch?v=luignzNyR-o). This session was developed and presented by Mark Simos and Matt Kemelhar, Enterprise Cybersecurity Architects.
 
 In this article:
@@ -72,9 +75,9 @@ These tasks take a bit more time to plan and implement but greatly increase your
 
 |Area|Task|
 |---|---|
-|Security management|* Check Secure Score for recommended actions for your environment ([https://securescore.office.com](https://securescore.office.com)).  <br/>  * Continue to regularly review dashboards and reports in the Microsoft 365 security center, Cloud App Security, and SIEM tools. <br/> * Look for and implement software updates. <br/> * Conduct attack simulations for spear-phishing, password-spray, and brute-force password attacks using [Attack Simulator](attack-simulator.md) (included with [Office 365 Threat Intelligence](office-365-ti.md)).  <br/> * Look for sharing risk by reviewing the built-in reports in Cloud App Security (on the Investigate tab). <br/> * Check [Compliance Score](https://docs.microsoft.com/microsoft-365/compliance/compliance-score) to review status for regulations that apply to your organization (such as GDPR, NIST 800-171).|
+|Security management|* Check Secure Score for recommended actions for your environment ([https://securescore.office.com](https://securescore.office.com)).  <br/>  * Continue to regularly review dashboards and reports in the Microsoft 365 security center, Cloud App Security, and SIEM tools. <br/> * Look for and implement software updates. <br/> * Conduct attack simulations for spear-phishing, password-spray, and brute-force password attacks using [Attack Simulator](attack-simulator.md) (included with [Office 365 Threat Intelligence](office-365-ti.md)).  <br/> * Look for sharing risk by reviewing the built-in reports in Cloud App Security (on the Investigate tab). <br/> * Check [Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) to review status for regulations that apply to your organization (such as GDPR, NIST 800-171).|
 |Threat protection| Implement enhanced protections for admin accounts: <br/> * Configure [Privileged Access Workstations](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) for admin activity. <br/> * Configure [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure). <br/> * Configure a security information and event management (SIEM) tool to collect logging data from Office 365, Cloud App Security, and other services, including AD FS. The audit log stores data for only 90 days. Capturing this data in SIEM tool allows you to store data for a longer period.|
-|Identity and access management|* Enable and enforce MFA for all users. <br/> * Implement a set of [conditional access and related policies](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations). |
+|Identity and access management|* Enable and enforce MFA for all users. <br/> * Implement a set of [conditional access and related policies](microsoft-365-policies-configurations.md). |
 |Information protection| Adapt and implement information protection policies. These resources include examples: <br/> * [Office 365 Information Protection for GDPR](https://aka.ms/o365gdpr) <br/> * [Configure Teams with three tiers of protection](../../solutions/configure-teams-three-tiers-protection.md) <br/> <br> Use data loss prevention policies and monitoring tools in Microsoft 365 for data stored in Microsoft 365 (instead of Cloud App Security). <br><br>Use Cloud App Security with Microsoft 365 for advanced alerting features (other than data loss prevention).|
 |
 

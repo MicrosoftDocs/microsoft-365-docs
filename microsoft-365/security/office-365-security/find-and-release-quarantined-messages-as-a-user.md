@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: Consumer/IW
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
@@ -22,6 +22,9 @@ description: "Users can learn how to view and manage quarantined messages in Exc
 ---
 
 # Find and release quarantined messages as a user in EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantine in EOP](quarantine-email-messages.md).
 

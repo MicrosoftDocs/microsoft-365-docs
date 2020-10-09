@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
@@ -17,13 +17,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. "
+description: "Use the Office 365 Security & Compliance Center or the Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization."
 ms.custom: seo-marvel-apr2020
 ---
 
-# Search the audit log in the Security & Compliance Center
+# Search the audit log in the compliance Center
 
-Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of [user and admin activity](#audited-activities) in Office 365:
+Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of [user and admin activity](#audited-activities) in Microsoft 365:
 
 - User activity in SharePoint Online and OneDrive for Business
 
@@ -31,11 +31,9 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 - Admin activity in SharePoint Online
 
-- Admin activity in Azure Active Directory (the directory service for Office 365)
+- Admin activity in Azure Active Directory (the directory service for Microsoft 365)
 
 - Admin activity in Exchange Online (Exchange admin audit logging)
-
-- User and admin activity in Sway
 
 - eDiscovery activities in the security and compliance center
 
@@ -125,7 +123,6 @@ Be sure to read the following items before you start searching the audit log.
   |Security & Compliance Center|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sensitivity labels||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |SharePoint Online and OneDrive for Business|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sway||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Yammer||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Forms|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -184,9 +181,9 @@ Here's the process for searching the audit log in Office 365.
 
       > [!TIP]
       >
-      > - If you're looking for all activities related to a **site**, add the wildcard symbol (\*) after the URL to return all entries for that site; for example, **"https://contoso-my.sharepoint.com/personal/*"**.
+      > - If you're looking for all activities related to a **site**, add the wildcard symbol (\*) after the URL to return all entries for that site; for example, `"https://contoso-my.sharepoint.com/personal*"`.
       >
-      > - If you're looking for all activities related to a **file**, add the wildcard symbol (\*) before the file name to return all entries for that file; for example, **"*Customer_Profitability_Sample.csv"**.
+      > - If you're looking for all activities related to a **file**, add the wildcard symbol (\*) before the file name to return all entries for that file; for example, `"*Customer_Profitability_Sample.csv"`.
 
 5. Click **Search** to run the search using your search criteria.
 
@@ -296,19 +293,125 @@ These tables group related activities or the activities from a specific service.
 
 Click one of the following links to go to a specific table.
 
-||||
-|:-----|:-----|:-----|
-|[File and page activities](#file-and-page-activities)|[Folder activities](#folder-activities)|[SharePoint list activities](#sharepoint-list-activities)|
-|[Sharing and access request activities](#sharing-and-access-request-activities)|[Synchronization activities](#synchronization-activities)|[Site permissions activities](#site-permissions-activities)|
-|[Site administration activities](#site-administration-activities)|[Exchange mailbox activities](#exchange-mailbox-activities)|[Sway activities](#sway-activities)|
-|[User administration activities](#user-administration-activities)|[Azure AD group administration activities](#azure-ad-group-administration-activities)|[Application administration activities](#application-administration-activities)|
-|[Role administration activities](#role-administration-activities)|[Directory administration activities](#directory-administration-activities)|[eDiscovery activities](#ediscovery-activities)|
-|[Advanced eDiscovery activities](#advanced-ediscovery-activities)|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Microsoft Teams Shifts activities](#microsoft-teams-shifts-activities)|
-|[Yammer activities](#yammer-activities)|[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|
-|[Microsoft Stream activities](#microsoft-stream-activities)|[Content explorer activities](#content-explorer-activities)|[Quarantine activities](#quarantine-activities)|
-|[Microsoft Forms activities](#microsoft-forms-activities)|[Sensitivity label activities](#sensitivity-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)|
-|[Retention policy and retention label activities](#retention-policy-and-retention-label-activities)|||
+:::row:::
+    :::column:::
+        [File and page activities](#file-and-page-activities)
+    :::column-end:::
+    :::column:::
+        [Folder activities](#folder-activities)
+    :::column-end:::
+    :::column:::
+        [SharePoint list activities](#sharepoint-list-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Sharing and access request activities](#sharing-and-access-request-activities)
+    :::column-end:::
+    :::column:::
+        [Synchronization activities](#synchronization-activities)
+    :::column-end:::
+    :::column:::
+        [Site permissions activities](#site-permissions-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Site administration activities](#site-administration-activities)
+    :::column-end:::
+    :::column:::
+        [Exchange mailbox activities](#exchange-mailbox-activities)
+    :::column-end:::
+    :::column:::
+        [User administration activities](#user-administration-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Azure AD group administration activities](#azure-ad-group-administration-activities)
+    :::column-end:::
+    :::column:::
+        [Application administration activities](#application-administration-activities)
+    :::column-end:::
+    :::column:::
+        [Role administration activities](#role-administration-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Directory administration activities](#directory-administration-activities)
+    :::column-end:::
+    :::column:::
+        [eDiscovery activities](#ediscovery-activities)
+    :::column-end:::
+    :::column:::
+        [Advanced eDiscovery activities](#advanced-ediscovery-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Power BI activities](#power-bi-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Teams activities](#microsoft-teams-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Teams Shifts activities](#microsoft-teams-shifts-activities)
+    :::column-end:::
+    :::column:::
+        [Yammer activities](#yammer-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Microsoft Power Automate activities](#microsoft-power-automate-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Power Apps activities](#microsoft-power-apps-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Stream activities](#microsoft-stream-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Content explorer activities](#content-explorer-activities)
+    :::column-end:::
+    :::column:::
+        [Quarantine activities](#quarantine-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Forms activities](#microsoft-forms-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Sensitivity label activities](#sensitivity-label-activities)
+    :::column-end:::
+    :::column:::
+        [Retention policy and retention label activities](#retention-policy-and-retention-label-activities)
+    :::column-end:::
+    :::column:::
+        [Exchange admin activities](#exchange-admin-audit-log)
+    :::column-end:::
+:::row-end:::
 
 ### File and page activities
 
@@ -552,28 +655,6 @@ The following table lists the activities that can be logged by mailbox audit log
 |Updated message|Update|A message or its properties was changed.|
 |User signed in to mailbox|MailboxLogin|The user signed in to their mailbox.|
 |Label message as a record||A user applied a retention label to an email message and that label is configured to mark the item as a record. |
-||||
-
-### Sway activities
-
-The following table lists user and admin activities in Sway. Sway is a Microsoft 365 app that helps users gather, format, and share ideas, stories, and presentations on an interactive, web-based canvas. For more information, see [Frequently asked questions about Sway - Admin Help](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
-
-|Friendly name|Operation|Description|
-|:-----|:-----|:-----|
-|Changed Sway share level|SwayChangeShareLevel|User changes the share level of a Sway. This event captures the user changing the scope of sharing associated with a Sway; for example, public versus inside the organization.|
-|Created Sway|SwayCreate|User creates a Sway.|
-|Deleted Sway|SwayDelete|User deletes a Sway.|
-|Disabled Sway duplication|SwayDisableDuplication|User disables duplication of a Sway.|
-|Duplicated Sway|SwayDuplicate|User duplicates a Sway.|
-|Edited Sway|SwayEdit|User edits a Sway.|
-|Enabled Sway duplication|EnableDuplication|User enables duplication of a Sway. The ability for a user to enable duplication of a Sway is enabled by default.|
-|Revoked Sway sharing|SwayRevokeShare|User stops sharing a Sway by revoking access to it. Revoking access changes the links associated with a Sway.|
-|Shared Sway|SwayShare|User intends to share a Sway. This event captures the user action of clicking a specific share destination within the Sway share menu. The event doesn't indicate whether the user completed the share action.|
-|Turned off external sharing of Sway|SwayExternalSharingOff|Administrator disables external Sway sharing for the entire organization by using the Microsoft 365 admin center.|
-|Turned on external sharing of Sway|SwayExternalSharingOn|Administrator enables external Sway sharing for the entire organization by using the Microsoft 365 admin center.|
-|Turned off Sway service|SwayServiceOff|Administrator disables Sway for the entire organization by using the Microsoft 365 admin center.|
-|Turned on Sway service|SwayServiceOn|Administrator enables Sway for the entire organization by using the Microsoft 365 admin center (Sway service is enabled by default).|
-|Viewed Sway|SwayView|User views a Sway.|
 ||||
 
 ### User administration activities
@@ -848,14 +929,14 @@ The following table lists events that result from labeling activities for ShareP
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-| Configured settings for a retention policy |NewRetentionComplianceRule |Administrator configured the retention settings for a new retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) cmdlet.|
+| Configured settings for a retention policy |NewRetentionComplianceRule |Administrator configured the retention settings for a new retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) cmdlet.|
 | Created retention label |NewComplianceTag |Administrator created a new retention label.|
 | Created retention policy |NewRetentionCompliancePolicy|Administrator created a new retention policy.|
 | Deleted settings from a retention policy| RemoveRetentionComplianceRule<br/>| Administrator deleted the configuration settings of a retention policy. Most likely, this activity is logged when an administrator deletes a retention policy or runs the [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionComplianceRule) cmdlet.|
 | Deleted retention label |RemoveComplianceTag | Administrator deleted a retention label.|
 | Deleted retention policy |RemoveRetentionCompliancePolicy<br/> |Administrator deleted a retention policy. |
 | Enabled regulatory record option for retention labels<br/> |SetRestrictiveRetentionUI |Administrator ran the [Set-RegulatoryComplianceUI](https://docs.microsoft.com/powershell/module/exchange/set-regulatorycomplianceui) cmdlet so that an administrator can then select the UI configuration option for a retention label to mark content as a regulatory record.|
-| Updated settings for a retention policy | SetRetentionComplianceRule | Administrator changed the retention settings for an existing retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) cmdlet. |
+| Updated settings for a retention policy | SetRetentionComplianceRule | Administrator changed the retention settings for an existing retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) cmdlet. |
 | Updated retention label |SetComplianceTag  | Administrator updated an existing retention label.|
 | Updated retention policy |SetRetentionCompliancePolicy |Administrator updated an existing a retention policy. Updates that trigger this event include adding or excluding content locations that the retention policy is applied to.|
 

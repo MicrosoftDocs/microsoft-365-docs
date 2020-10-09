@@ -15,11 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365-initiative-m365-defender
 ms.topic: article
 ---
 
 # DeviceEvents
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 - Microsoft Threat Protection
@@ -27,6 +32,9 @@ ms.topic: article
 
 
 The miscellaneous device events or `DeviceEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about various event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from this table.
+
+>[!TIP]
+> For detailed information about the events types (`ActionType` values) supported by a table, use the [built-in schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) available in the security center.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -36,7 +44,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | datetime | Date and time when the event was recorded |
 | `DeviceId` | string | Unique identifier for the machine in the service |
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
-| `ActionType` | string | Type of activity that triggered the event |
+| `ActionType` | string | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details |
 | `FileName` | string | Name of the file that the recorded action was applied to |
 | `FolderPath` | string | Folder containing the file that the recorded action was applied to |
 | `SHA1` | string | SHA-1 of the file that the recorded action was applied to |

@@ -12,12 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 ms.collection: 
-- M365-security-compliance
+- M365-security-compliance 
+- m365-initiative-defender-office365
 description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Security &amp; Compliance Center.
 ms.custom: seo-marvel-apr2020
 ---
 
 # Views in Threat Explorer and real-time detections
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ![Threat Explorer](../../media/ThreatExplorerFirstOpened.png)
 
@@ -132,7 +136,7 @@ Clicking **ATP Detonation** in this chart results in a view like this:
 
 ![Explorer filtered to display only ATP Detonation results](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-In this view, we are now looking at data for files that were detonated by [Office 365 ATP Safe Attachments](atp-safe-attachments.md). Below the chart, we can see details about specific email messages that had attachments that were detected by ATP Safe Attachments.
+In this view, we are now looking at data for files that were detonated by [Safe Attachments](atp-safe-attachments.md). Below the chart, we can see details about specific email messages that had attachments that were detected by Safe Attachments.
 
 ![Specific details about email messages with detected attachments](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 

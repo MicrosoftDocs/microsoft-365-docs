@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - 'ms.o365.cc.PermissionsHelp'
 ms.service: O365-seccomp
@@ -23,6 +23,9 @@ ms.custom: seo-marvel-apr2020
 
 # Give users access to the Security & Compliance Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Users need to be assigned permissions in the Security & Compliance Center before they can manage any of its security or compliance features. As a global admin or member of the OrganizationManagement role group in the Security & Compliance Center, you can give these permissions to users. Users will only be able to manage the security or compliance features that you give them access to.
 
 For more information about the different permissions you can give to users in the Security & Compliance Center, check out [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -37,54 +40,48 @@ For more information about the different permissions you can give to users in th
 
 - Delegated Access Permission (DAP) partners with Administer On Behalf Of (AOBO) permissions can't access the Security & Compliance Center.
 
-## Use the admin center to give another user access to the Security & Compliance Center
+## Use the Security & Compliance Center to give another user access to the Security & Compliance Center
 
-1. [Sign in and go to the admin center](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center).
+1. Open the Security & Compliance Center at <https://protection.office.com> and then go to **Permissions**. To go directly to the **Permissions** tab, open <https://protection.office.com/permissions>.
 
-2. In the Microsoft 365 admin center, open **Admin centers** and then click **Security & Compliance**.
+2. From the list of role groups, choose the role group, and then click **Edit** ![Edit icon](../../media/O365-MDM-CreatePolicy-EditIcon.gif).
 
-3. In the Security & Compliance Center, go to **Permissions**.
+3. In the role group's properties page under **Members**, click **Add**![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and select the name of the user (or users) you want to add.
 
-4. From the list, choose the role group that you want to add the user to and click **Edit** ![Edit icon](../../media/O365-MDM-CreatePolicy-EditIcon.gif).
+4. When you've selected all of the users you want to add to the role group, click **add-\>** and then **OK**.
 
-5. In the role group's properties page under **Members**, click **Add**![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and select the name of the user (or users) you want to add.
+5. When you're finished, click **Save**.
 
-6. When you've selected all of the users you want to add to the role group, click **add-\>** and then **OK**.
-
-7. Click **Save** to save the changes to the role group.
-
-### How do you know this worked?
-
-1. In the Security & Compliance Center, go to **Permissions**.
-
-2. From the list, select the role group to view the members.
-
-3. On the right, in the role group details, you can view the members of the role group.
-
-## Use PowerShell to give another user access to the Security & Compliance Center
+## Use Security & Compliance Center PowerShell to give another user access to the Security & Compliance Center
 
 1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
-2. Use the **Add-RoleGroupMember** command to add a user to the Organization Management Role, as shown in the following example.
+2. Use the following syntax:
+
+   ```powershell
+   Add-RoleGroupMember -Identity <RoleGroup> -Member <UserIdentity>
+
+   - _Identity_ is the role group.
+   - _Member_ is the user or universal security group (USG). You can specify only one member at a time.
+
+   This example adds MatildaS to the Organization Management role group.
 
    ```PowerShell
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-   **Parameters**:
-
-   - _Identity_ is the role group to add a member to.
-
-   - _Member_ is the mailbox, universal security group (USG), or computer to add to the role group. You can specify only one member at a time.
-
-For detailed information on syntax and parameters, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).
+For detailed syntax and parameter issues, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
 
 ### How do you know this worked?
 
-To verify that you've given users access to the Security & Compliance Center, use the **Get-RoleGroupMember** cmdlet to view the members in the Organization Management role group, as shown in the following example.
+To verify that you've successfully granted access to the Security & Compliance Center, do either of the following steps:
 
-```PowerShell
-Get-RoleGroupMember -Identity "Organization Management"
-```
+- In the Security & Compliance Center, go to **Permissions** and select the role group. In the details flyout that opens, verify the members of the role group. 
 
-For detailed information on syntax and parameters, see [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).
+- In Security & Compliance Center PowerShell, replace \<RoleGroupName\> with the name of the role group, and run the following command:
+
+  ```powershell
+  Get-RoleGroupMember -Identity "<RoleGroupName>"
+  ```
+
+  For detailed syntax and parameter information, see [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).

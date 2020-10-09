@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
@@ -18,13 +18,16 @@ description: "Admins can learn how to use the Fix slow mail flow rules insight i
 
 # Fix slow mail flow rules insight in the Security & Compliance Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Inefficient mail flow rules (also known as transport rules) can lead to mail flow delays for your organization. This insight reports mail flow rules that have an impact on your organization's mail flow. Examples of these types of rules include:
 
 - Conditions that use **Is member of** for large groups.
 - Conditions that use complex regular expression (regex) pattern matching.
 - Conditions that use content checking in attachments.
 
-The **Fix slow mail flow rules** insight in the **Recommended for you** area of the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center notifies you when a mail flow rule is taking too long to complete. This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).
+The **Fix slow mail flow rules** insight in the **Recommended for you** area of the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) notifies you when a mail flow rule is taking too long to complete. This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).
 
 You can use this notification to help you to identify and fine-tune mail flow rules to help reduce mail flow delays.
 

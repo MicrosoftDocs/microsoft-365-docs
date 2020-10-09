@@ -20,7 +20,7 @@ App control is an optional security practice in Microsoft Managed Desktop that r
 Microsoft Managed Desktop simplifies the management of app control policies by creating a base policy that enables core productivity scenarios. You can extend trust to additional signers that are specific to the apps and scripts in your environment. 
 
 
-Any security technology requires a balance among user experience, security, and cost. App control reduces the threat of malicious software in your environment, but there are consequences to the end user and additional actions for your IT administrator.
+Any security technology requires a balance among user experience, security, and cost. App control reduces the threat of malicious software in your environment, but there are consequences to the user and additional actions for your IT administrator.
 
 **Additional security:**
 
@@ -69,7 +69,7 @@ This policy creates logs to record whether an app or script would be blocked by 
 ### Enforced policy
 This policy blocks untrusted apps and scripts from running and creates logs whenever an app or script is blocked. Enforced policies prevent standard users from executing apps or scripts stored in user-writable directories.
 
-Devices in the Test group have an Audit policy applied so that you can use them to validate whether any applications will cause issues. All other groups (First, Fast, and Broad) use an Enforced policy, so end users in those groups won't be able to run untrusted apps or scripts.
+Devices in the Test group have an Audit policy applied so that you can use them to validate whether any applications will cause issues. All other groups (First, Fast, and Broad) use an Enforced policy, so users in those groups won't be able to run untrusted apps or scripts.
 
 
 

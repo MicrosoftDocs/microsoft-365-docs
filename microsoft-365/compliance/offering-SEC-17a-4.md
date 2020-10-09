@@ -3,7 +3,7 @@ title: Securities and Exchange Commission (SEC) Rule 17a-4(f) United States
 description: An independent assessment firm validated that Azure and Office 365 can help financial firms meet SEC Rule 17a-4(f) records retention and immutable storage requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -65,6 +65,10 @@ Create a governance model for risk assessment of Microsoft cloud services, and r
 ### Financial use cases
 
 Use case overviews, tutorials, and other resources to build Azure solutions for financial services. [Learn more](https://docs.microsoft.com/azure/industry/financial/)
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

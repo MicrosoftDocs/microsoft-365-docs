@@ -191,10 +191,10 @@ This option is great if you want to have a company email address such as info@co
 
 [Manage guest access to Microsoft 365 groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[Choose the domain to use when creating Microsoft 365 groups](choose-domain-to-create-groups.md)
+[Choose the domain to use when creating Microsoft 365 groups](../../solutions/choose-domain-to-create-groups.md)
 
-[Allow members to send as or send on behalf of a Microsoft 365 group](allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[Allow members to send as or send on behalf of a Microsoft 365 group](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
 [Upgrade distribution lists to Microsoft 365 groups](../manage/upgrade-distribution-lists.md)
 
-[Manage Microsoft 365 groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Manage Microsoft 365 groups with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
