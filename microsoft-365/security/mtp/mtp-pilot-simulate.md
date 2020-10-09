@@ -376,7 +376,7 @@ There is a single internal mailbox and device required for this scenario. You wi
    ```
 
    1.	Click the resulting rows from the query so you can inspect the record.
-    
+   
       ![Screenshot of the inspect record side panel which opens up when an advanced hunting result is selected](../../media/mtp/fig21.png) 
 
 4.	Now that you have verified that you can see the email, add a filter for the attachments. Focus on all emails with attachments in the environment. For this scenario, focus on inbound emails, not those that are being sent out from your environment. Remove any filters you have added to locate your message and add “| where **AttachmentCount > 0** and **EmailDirection** == **“Inbound””**
@@ -439,8 +439,8 @@ Custom detections will run the query according to the frequency you set, and the
     
     ![Screenshot of where you can click create detection rule in the the advanced hunting page](../../media/mtp/fig22.png) 
 
->[!NOTE]
->If you click **Create detection rule** and you have syntax errors in your query, your detection rule won’t be saved. Double-check your query to ensure there’s no errors. 
+    > [!NOTE]
+    > If you click **Create detection rule** and you have syntax errors in your query, your detection rule won’t be saved. Double-check your query to ensure there’s no errors. 
 
 
 2.	Fill in the required fields with the  information that will allow the security team to understand the alert, why it was generated, and what actions you expect them to take. 
