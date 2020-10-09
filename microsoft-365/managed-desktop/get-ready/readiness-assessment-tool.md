@@ -41,7 +41,7 @@ The assessment tool checks these items:
 |PowerShell scripts     | Checks that Windows PowerShell scripts are *not* assigned in a way that would target Microsoft Managed Desktop devices    |
 |Certificate connectors     | Checks the state of certificate connectors to ensure they are active   |
 |OneDrive for Business     | Checks whether OneDrive for Business is using unsupported settings.        |
-|Security administrator roles     | Confirms that users with Security Reader, Security Operator, or Global Reader roles have been assigned those roles in Microsoft Defender Advanced Threat Protection         |
+|Security administrator roles     | Confirms that users with Security Reader, Security Operator, or Global Reader roles have been assigned those roles in Microsoft Defender for Endpoint         |
 |"Ad hoc" subscriptions for Enterprise State Roaming     | Advises how to check a setting that (if set to "false") might prevent Enterprise State Roaming from working correctly  |
 |Supported regions     | Checks that your region is supported by Microsoft Managed Desktop        |
 |Licenses     | Checks that you have obtained the necessary [licenses](prerequisites.md#more-about-licenses)         |
