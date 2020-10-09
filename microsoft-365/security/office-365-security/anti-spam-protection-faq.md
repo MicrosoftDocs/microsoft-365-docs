@@ -12,8 +12,9 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365-initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: "Admins can view frequently asked questions and answers about anti-spam protection in Exchange Online Protection (EOP)."
