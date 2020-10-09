@@ -33,7 +33,7 @@ Advanced hunting is based on the [Kusto query language](https://docs.microsoft.c
 
 ## Try your first query
 
- Microsoft 365 security center, go to **Hunting** to run your first query. Use the following example:
+In Microsoft 365 security center, go to **Hunting** to run your first query. Use the following example:
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
