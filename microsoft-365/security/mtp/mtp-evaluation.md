@@ -18,7 +18,6 @@ audience: ITPro
 ms.collection: 
 - M365-security-compliance
 - m365solution-overview
-- m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ---
