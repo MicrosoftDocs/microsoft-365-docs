@@ -56,13 +56,13 @@ The global admin for your organization has full permissions to create and manage
     
     Note: By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
-3. On the **Decide where this label will be used** page, the options selected determine the label's scope for the settings that you can configure and where they will be visible when they are published:
+3. On the **Define the scope for this label** page, the options selected determine the label's scope for the settings that you can configure and where they will be visible when they are published:
     
     ![Scopes for sensitivity labels](../media/sensitivity-labels-scopes.png)
     
-    - If **Files and emails** is selected, you can configure settings in this wizard that apply to apps that support sensitivity labels, such as Office Word and Outlook. If this option isn't selected, the wizard displays the settings but you can't configure them and the labels won't be available for users to select in these apps.
+    - If **Files & emails** is selected, you can configure settings in this wizard that apply to apps that support sensitivity labels, such as Office Word and Outlook. If this option isn't selected, the wizard displays the settings but you can't configure them and the labels won't be available for users to select in these apps.
     
-    - If **Groups and sites** is selected, you can configure settings in this wizard that apply to Microsoft 365 groups and sites. If this option isn't selected, the wizard displays the settings but you can't configure them and the labels won't be available for users to select for groups and site.
+    - If **Groups & sites** is selected, you can configure settings in this wizard that apply to Microsoft 365 groups, and sites for Teams and SharePoint. If this option isn't selected, the wizard displays the settings but you can't configure them and the labels won't be available for users to select for groups and site.
 
 4. Follow the prompts in the wizard for the label settings.
     
