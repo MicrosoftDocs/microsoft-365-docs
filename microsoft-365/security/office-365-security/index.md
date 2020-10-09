@@ -11,8 +11,9 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365-initiative-m365-defender
 description: "Security in Office 365, from EOP to ATP Plans 1 and 2, Standard vs. Strict security configurations, and more. Understand what you have, and how to secure your properties."
 ---
 
@@ -21,7 +22,7 @@ description: "Security in Office 365, from EOP to ATP Plans 1 and 2, Standard vs
 This article will introduce you to your new security properties in the Cloud. Whether you're part of a Security Operations Center, you're a Security Administrator new to the space, or you want a refresher, let's get started.
 
 > [!CAUTION]
-> Hi. If you're using **Outlook.com**, **Microsoft 365 Family**, or **Microsoft 365 Personal**, and need *Safe Links* or *Safe Attachments* info, ***click this link***: [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2). Thanks!
+> If you're using **Outlook.com**, **Microsoft 365 Family**, or **Microsoft 365 Personal**, and need *Safe Links* or *Safe Attachments* info, ***click this link***: [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## Office 365 security spelled out
 

@@ -42,8 +42,6 @@
 
         - name: Set up content understanding
           href: set-up-content-understanding.md
-        - name: Image tagging
-          href: image-tagging.md
         
     - name: Content services
       items:

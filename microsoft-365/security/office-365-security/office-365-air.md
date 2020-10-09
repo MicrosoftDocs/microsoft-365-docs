@@ -14,7 +14,9 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365-initiative-m365-defender
 description: "Get started using automated investigation and response capabilities in Microsoft Defender for Office 365."
 ms.custom: 
 - air

@@ -13,8 +13,9 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365-initiative-defender-office365
 description: Learn about using Explorer and real-time detections in the Security &amp; Compliance Center to investigate and respond to threats effectively and efficiently.
 ms.custom: seo-marvel-apr2020
 ---
