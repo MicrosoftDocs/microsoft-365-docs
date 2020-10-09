@@ -25,4 +25,3 @@ To learn how to create mail flow rules for encryption, see [Define rules to encr
 ## See also
 
 [Encryption in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=392525)
-
