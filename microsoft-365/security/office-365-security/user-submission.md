@@ -112,7 +112,7 @@ Messages sent to custom mailboxes need to follow a specific submission mail form
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
-were SafetyAPIAction is one of the following integer values:
+where SafetyAPIAction is one of the following integer values:
 
 - 1: Junk
 - 2: NotJunk
