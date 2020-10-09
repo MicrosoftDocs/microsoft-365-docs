@@ -15,7 +15,7 @@ description: "Learn how to apply a retention label to a document understanding m
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJY]  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhX]  
 
 </br>
 
@@ -23,7 +23,7 @@ description: "Learn how to apply a retention label to a document understanding m
 Your Microsoft SharePoint Syntex content center provides you model usage analytics to provide more information about how your models that have been published from the content center are being used. This includes a roll-up of the following information:
 
 - Where your models are being applied
-- How many files are being processes over time
+- How many files are being processed over time
 
  ![Model analytics](../media/content-understanding/model-analytics.png) </br>
 
