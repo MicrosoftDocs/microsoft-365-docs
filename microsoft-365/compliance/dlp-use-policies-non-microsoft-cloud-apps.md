@@ -24,9 +24,9 @@ description: foo
 
 # Use data loss prevention policies for non-Microsoft cloud apps (preview)
 
-Data loss prevention (DLP) policies to non-Microsoft cloud apps is part of the Microsoft 365 DLP suite of features that you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all Microsoft DLP offerings, see [Overview of data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide).
+Data loss prevention (DLP) policies to non-Microsoft cloud apps are part of the Microsoft 365 DLP suite of features; using these features, you can discover and protect sensitive items across Microsoft 365 services. For more information about all Microsoft DLP offerings, see [Overview of data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide).
 
-You can use DLP policies to non-Microsoft cloud apps to monitor and detect when sensitive items are used and shared via non-Microsoft cloud apps. This gives you the visibility and control that you need to ensure that they're correctly used and protected, and it helps prevent risky behavior that might compromise them.
+You can use DLP policies to non-Microsoft cloud apps to monitor and detect when sensitive items are used and shared via non-Microsoft cloud apps. Using these policies gives you the visibility and control that you need to ensure that they're correctly used and protected, and it helps prevent risky behavior that might compromise them.
 
 ## Before you begin
 
@@ -68,11 +68,11 @@ When you select a location for the DLP policy, turn on the **Microsoft Cloud App
 
    ![Box-US and Box-General](../media/2-dlp-non-microsoft-cloud-app-box.png)
 
-You can choose various actions for every supported non-Microsoft cloud app. Note that for every app, there are different possible actions (depends on the cloud app API).
+You can choose various actions for every supported non-Microsoft cloud app. For every app, there are different possible actions (depends on the cloud app API).
 
 ![Create rule](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
 
-When you create a rule in the DLP policy, you can select an action for non-Microsoft cloud apps. To do this, select **Restrict Third Party Apps**.
+When you create a rule in the DLP policy, you can select an action for non-Microsoft cloud apps. To restrict third-party apps, select **Restrict Third Party Apps**.
 
 ![Restrict third-party apps](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
