@@ -13,7 +13,9 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365-initiative-defender-office365
 description: "During and after an automated investigation in Microsoft 365, you can view the results and key findings."
 ms.date: 09/29/2020
 ---
