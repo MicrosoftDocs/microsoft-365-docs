@@ -90,8 +90,6 @@
           href: sensitive-information-type-entity-definitions.md
         - name: What the DLP functions look for
           href: what-the-dlp-functions-look-for.md
-        - name: Watch an extended overview of customizing DLP
-          href: https://go.microsoft.com/fwlink/?linkid=852306
         - name: Customize a built-in sensitive information type
           href: customize-a-built-in-sensitive-information-type.md
         - name: Custom sensitive information types
