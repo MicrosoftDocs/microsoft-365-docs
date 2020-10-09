@@ -25,8 +25,9 @@ description: "Use sensitivity labels to protect content in SharePoint and Micros
 
 In addition to using [sensitivity labels](sensitivity-labels.md) to classify and protect documents and emails, you can also use sensitivity labels to protect content in the following containers: Microsoft Teams sites, Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), and SharePoint sites. For this container-level classification and protection, use the following label settings:
 
-- Privacy (public or private) of Microsoft 365 group-connected teams sites
+- Privacy (public or private) of teams sites and Microsoft 365 groups
 - External users access
+- External sharing from SharePoint sites
 - Access from unmanaged devices
 
 > [!IMPORTANT]
@@ -65,7 +66,7 @@ After you enable and configure sensitivity labels for containers, users can addi
 
 ## How to configure site and group settings
 
-You're now ready to create or edit sensitivity labels that you want to be available for sites and groups. Enabling sensitivity labels for containers makes a new page visible in the sensitivity labeling wizards: **Site and group settings**
+Enabling sensitivity labels for containers means that you can now configure protection settings for groups and sites in the sensitivity labeling wizard. Until you enable this support, the settings are visible in the wizard but you can't configure them.
 
 1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Groups & sites** for the label's scope: 
     
@@ -74,15 +75,15 @@ You're now ready to create or edit sensitivity labels that you want to be availa
 2. Then, on the **Define protection settings for groups and sites** page, select one or both of the available options:
     
     - **Privacy and external user access settings** to configure the **Privacy** and **External users access** settings. 
-    - **Device access and external sharing settings** to configure the **Access from unmanaged devices** setting.
+    - **Device access and external sharing settings** to configure the **Control external sharing from labeled SharePoint sites** and **Access from unmanaged devices** setting.
 
-3. If you selected **Protection settings for groups**, now configure the following settings:
+3. If you selected **Privacy and external user access settings**, now configure the following settings:
     
     - **Privacy**: Keep the default of **Public** if you want anyone in your organization to access the team site or group where this label is applied.
         
         Select **Private** if you want access to be restricted to only approved members in your organization.
         
-        Select **None - let user chose who can access the site** when you want to protect content in the container by using the sensitivity label, but still let users configure the privacy setting themselves.
+        Select **None** when you want to protect content in the container by using the sensitivity label, but still let users configure the privacy setting themselves.
         
         The settings of **Public** or **Private** set and lock the privacy setting when you apply this label to the container. Your chosen setting replaces any previous privacy setting that might be configured for the team or group, and locks the privacy value so it can be changed only by first removing the sensitivity label from the container. After you remove the sensitivity label, the privacy setting from the label remains and users can now change it again.
     
@@ -90,7 +91,7 @@ You're now ready to create or edit sensitivity labels that you want to be availa
 
 4. If you selected **Device access and external sharing setting**, now configure the following settings:
     
-    - **Control external sharing from labeled SharePoint sites**: Select this option to configure external sharing for anyone, new and existing guests, existing guests, or only people in your organization. For more information about this configuration and settings, see [Turn external sharing on or off for a site](https://docs.microsoft.com/sharepoint/change-external-sharing-site).
+    - **Control external sharing from labeled SharePoint sites**: Select this option to then select either external sharing for anyone, new and existing guests, existing guests, or only people in your organization. For more information about this configuration and settings, see [Turn external sharing on or off for a site](https://docs.microsoft.com/sharepoint/change-external-sharing-site).
 
     - **Access from unmanaged devices**: This option uses the SharePoint feature that uses Azure AD conditional access to block or limit access to SharePoint and OneDrive content from unmanaged devices. For more information, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). The option you specify for this label setting is the equivalent of running a PowerShell command for a site, as described in steps 7-9 from [Block or limit access to a specific SharePoint site or OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
     
@@ -366,7 +367,7 @@ All these auditing events can be found in the [Sensitivity label activities](sea
 
 You can turn off sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites by using the same instructions from [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). However, to disable the feature, in step 5, specify `$setting["EnableMIPLabels"] = "False"`.
 
-In addition to hiding the **Sites and group settings** page when you create or edit sensitivity labels, this action reverts which property the containers use for their configuration. Enabling sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites switches the property used from **Classification** (used for [Azure AD group classification](#classic-azure-ad-group-classification)) to **Sensitivity**. When you disable sensitivity labels for containers, the containers ignore the Sensitivity property and use the Classification property again.
+In addition to making all the settings unavailable for groups and sites when you create or edit sensitivity labels, this action reverts which property the containers use for their configuration. Enabling sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites switches the property used from **Classification** (used for [Azure AD group classification](#classic-azure-ad-group-classification)) to **Sensitivity**. When you disable sensitivity labels for containers, the containers ignore the Sensitivity property and use the Classification property again.
 
 This means that any label settings from sites and groups previously applied to containers won't be enforced, and containers no longer display the labels.
 
