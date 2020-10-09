@@ -23,7 +23,7 @@ description: "."
 
 External forwarding is controlled by the *outbound anti-spam policy* and scoped to users based on the configured setting. Currently 3 settings are supported:
 
-- **Automatic** – This is System-controlled: Allows outbound spam filtering to control automatic external email forwarding. This is the default value.
+- **Automatic** – This is system-controlled: It allows outbound spam filtering to control automatic external email forwarding. This is the default setting.
 
 - **On** – Automatic external forwarding is allowed and not restricted.
 
