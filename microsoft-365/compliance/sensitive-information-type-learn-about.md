@@ -26,7 +26,7 @@ Know your data, in other words, identifying and classifying sensitive items that
 - pattern recognition
 - [machine learning](classifier-learn-about.md)
 
-Sensitive information types use previously identified patterns of sensitive information like social security, credit card or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md)
+Sensitive information types are pattern based classifiers which detect sensitive informaiton like social security, credit card or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md)
 
 Sensitive information types are used in:
 
@@ -41,13 +41,13 @@ Sensitive information types are used in:
 Every sensitive information type entity is defined by these fields:
 
 - name: how the sensitive information type is referred to
-- format: the arrangement of the characters of the sensitive information
-- pattern: the details of how the characters are presented
-- checksum: whether or not a checksum is included
-- definition: how likely or confident that an item identified as being a match for the sensitive information type actually is. This is referred to as confidence level.
-- XML: code used in the evaluation of an item
-- keywords: words, that if included in the item increase the likelihood that it is a match for the sensitive information type.
-- (optional) keyword exclusions
+- description – describes what the sensitive information type is looking for
+- pattern: A pattern defines what a sensitive information type detects. It consists of the following components
+    - Primary element – the main element which the sensitive information type is looking for. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
+    - Supporting element – elements that act as supporting evidence that help in increasing the confidence of the match. For example, keyword “SSN” in proximity of an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
+    - Proximity – Number of characters between primary and supporting element
+    - Confidence Level - Confidence levels (high, medium, low) reflect how much supporting evidence was detected along with the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.
+
 
 ### Example sensitive information type
 
@@ -111,10 +111,12 @@ A high confidence level returns the fewest false positives but might result in m
 - **medium confidence**: value of 75, matched items will contain an average amount of false positives and false negatives.  
 - **high confidence**: value of 85, matched items will contain the fewest false positives but the most false negatives.  
 
+You should use high confidence level patterns with low counts, say five to ten, and low confidence patterns with higher counts, say 20 or more.
 
-<!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->
 
 ## For further information
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
 - [Create a custom sensitive information type in PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+
+<!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->
