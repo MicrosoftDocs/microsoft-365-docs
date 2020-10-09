@@ -29,11 +29,11 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in specialized [schema](advanced-hunting-schema-tables.md). To understand these concepts better, run your first query.
+Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md). To understand these concepts better, run your first query.
 
 ## Try your first query
 
-In Microsoft 365 security center, go to **Hunting** to run your first query. Use the following example:
+ Microsoft 365 security center, go to **Hunting** to run your first query. Use the following example:
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
