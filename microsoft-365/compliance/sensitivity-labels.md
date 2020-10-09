@@ -71,7 +71,7 @@ When you assign a sensitivity label to a document or email, it's like a stamp th
 
 In Office apps, a sensitivity label appears like a tag to users on an email or document.
 
-Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](retention.md#retention-labels) applied to it.
+Each item that supports sensitivity labels can have a single sensitivity label applied to it. Documents and emails can have both a sensitivity label and a [retention label](retention.md#retention-labels) applied to them.
 
 > [!div class="mx-imgBorder"]
 > ![Sensitivity label applied to an email](../media/Sensitivity-label-on-email.png)
@@ -94,7 +94,7 @@ After a sensitivity label is applied to an email or document, any configured pro
 
 - **Protect content in containers such as sites and groups** when you enable the capability to [use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
     
-    You can't configure protection settings for groups and sites until you enable this capability. Be aware that this label configuration doesn't result in documents being automatically labeled but instead, the label settings protect content by controlling access to the container where documents can be stored. These settings include privacy settings, external user access and external sharing, and access from unmanaged devices.
+    You can't configure protection settings for groups and sites until you enable this capability. This label configuration doesn't result in documents or emails being automatically labeled but instead, the label settings protect content by controlling access to the container where content can be stored. These settings include privacy settings, external user access and external sharing, and access from unmanaged devices.
 
 - **Apply the label automatically in Office apps, or recommend a label.** You can choose what types of sensitive information that you want labeled, and the label can either be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays whatever text you choose. For example:
     
