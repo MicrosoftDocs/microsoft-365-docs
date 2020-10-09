@@ -157,7 +157,7 @@ You can use the following filters to view a subset of all the alerts on the **Vi
 
 - **Category.** Use this filter to show alerts from one or more alert categories.
 
-- **Tags.** Use this filter to show alerts from one or more user tags. See [User tags in Office 356 ATP](..\security\user-tags.md) to learn more.
+- **Tags.** Use this filter to show alerts from one or more user tags. See [User tags in Office 356 ATP](..\security\office-365-security\user-tags.md) to learn more.
 
 - **Source.** Use this filter to show alerts triggered by alert policies in the security and compliance center or alerts triggered by Office 365 Cloud App Security policies, or both. For more information about Office 365 Cloud App Security alerts, see the [Viewing Cloud App Security alerts](#viewing-cloud-app-security-alerts) section.
 
