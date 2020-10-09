@@ -252,7 +252,7 @@
         - name: Use sensitivity labels as a condition in DLP policies (preview)
           href: dlp-sensitivity-label-as-condition.md
         - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
-          href: dlp-use-policies-non-msft-cloud-apps.md  
+          href: dlp-use-policies-non-microsoft-cloud-apps.md  
 - name: Manage information governance
   items: 
     - name: Govern your data
