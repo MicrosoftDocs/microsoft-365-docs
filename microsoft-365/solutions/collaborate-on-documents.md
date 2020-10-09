@@ -20,7 +20,7 @@ description: "In this article, you'll learn how to collaborate with guests on a 
 
 # Collaborate with guests on a document
 
-If you need to collaborate with people outside your organization on documents in SharePoint or OneDrive, you can send them a sharing link to the document. In this article, we'll walk through the Microsoft 365 configuration steps necessary to set up sharing links for SharePoint and OneDrive for the needs of your organization.
+If you need to collaborate with people outside your organization on documents in SharePoint or OneDrive, you can send them a sharing-link to the document. In this article, we'll walk through the Microsoft 365 configuration steps necessary to set up sharing-links for SharePoint and OneDrive for the needs of your organization.
 
 ## Video demonstration
 
@@ -30,7 +30,7 @@ This video shows the configuration steps described in this document.</br>
 
 ## Azure organizational relationships settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [organizational relationships settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [organizational relationships settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest-sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
 Check the organizational relationships settings to ensure that sharing with guests is not blocked.
 
@@ -53,9 +53,9 @@ If you work with guests from multiple organizations, you may want to restrict th
 
 In order for people outside your organization to have access to a document in SharePoint or OneDrive, the SharePoint and OneDrive organization-level sharing settings must allow for sharing with people outside your organization.
 
-The organization-level settings for SharePoint determine what settings are available for individual SharePoint sites. Site settings cannot be more permissive than the organization-level settings. The organization-level setting for OneDrive determines what level of sharing is available in users' OneDrive libraries.
+The organization-level settings for SharePoint determine the settings that will be available for individual SharePoint sites. Site settings cannot be more permissive than the organization-level settings. The organization-level setting for OneDrive determines the level of sharing that will be available in users' OneDrive libraries.
 
-For SharePoint and OneDrive, if you want to allow unauthenticated file and folder sharing, choose **Anyone**. If you want to ensure that people outside your organization have to authenticate, choose **New and existing guests**. *Anyone* links are the easiest way to share: people outside your organization can open the link without authentication and are free to pass it on to others.
+For SharePoint and OneDrive, if you want to allow unauthenticated file and folder sharing, choose **Anyone**. If you want to ensure that people outside your organization have to authenticate, choose **New and existing guests**. *Anyone* links is the easiest way to share: people outside your organization can open the link without authentication and are free to pass it on to others.
 
 For SharePoint, choose the most permissive setting that will be needed by any site in your organization.
 
@@ -71,11 +71,11 @@ To set SharePoint organization-level sharing settings
 
 ## SharePoint organization-level default link settings
 
-The default file and folder link settings determine which link option is shown to users by default when they share a file or folder. Users can change the link type to one of the other options before sharing, if desired.
+The default file and folder link settings determine the link option that will be shown to users by default when they share a file or folder. Users can change the link type to one of the other options before sharing, if desired.
 
 Keep in mind that this setting affects SharePoint sites in your organization, as well as OneDrive.
 
-Choose the link from any of the following types which is then selected by default when users share files and folders:
+Choose a link from any of the following types which is then selected by default when users share files and folders:
 
 - **Anyone with the link** - Choose this option if you expect to do a lot of unauthenticated file and folder sharing. If you want to allow *Anyone* links but are concerned about accidental unauthenticated sharing, consider one of the other options as the default. This link type is only available if you've enabled **Anyone** sharing.
 - **Only people in your organization** - Choose this option if you expect most file and folder sharing to be with people inside your organization.
@@ -107,8 +107,6 @@ To set permissions for links that allow sharing with anyone
         1. Select **View, edit, and upload** if you want to allow unauthenticated users to make changes to the folders.
         2. Select **View** if you do not want unauthenticated users to make changes to the folders.
 
-Note that the above permissions are specific to the case wherein sharing is for anyone.
-
 ## SharePoint site-level sharing settings
 
 If you're sharing files and folders that are in a SharePoint site, you also need to check the site-level sharing settings for that site.
@@ -118,7 +116,7 @@ If you're sharing files and folders that are in a SharePoint site, you also need
 To set site-level sharing settings
 
 1. In the SharePoint admin center, in the left navigation pane, expand **Sites** and click **Active sites**.
-2. Select the site over which you want to share files and folders with guests.
+2. Select the site on which you want to share files and folders with guests.
 3. Scroll right across the row (in which the selected site is present) and click anywhere in the **External sharing** column.
 4. From the page that pops up, click **Policies** tab.
 5. Under the **External sharing** pane, click **Edit**.
