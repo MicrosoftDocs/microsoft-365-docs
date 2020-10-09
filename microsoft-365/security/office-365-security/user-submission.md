@@ -12,8 +12,9 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365-initiative-defender-office365
 description: "Admins can learn how to configure a mailbox to collect spam and phishing email that are reported by users."
 ---
 

@@ -13,8 +13,9 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365-initiative-defender-office365
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
