@@ -26,6 +26,176 @@ Data loss prevention (DLP) includes sensitive information types, such as credit 
   
 This article explains what these functions look for, to help you understand how the predefined sensitive information types work. For more information, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
   
+## Func_Argentina_Unique_Tax_Key
+
+Function to detect & perform validations to detect Argentina Unique tax key
+
+## Func_australian_business_number
+
+## Func_austria_eu_ssn_or_equivalent
+
+Function to detect & perform validations to detect Austria Social Security Number 
+
+## Func_austria_eu_tax_file_number
+
+Function to detect & perform validations to detect Austria  SSN 
+
+## Func_Austria_Value_Added_Tax
+
+## Func_belgium_eu_ssn_or_equivalent
+
+## Func_belgium_value_added_tax_number
+
+## Func_bulgaria_eu_national_id_card
+
+## Func_bulgaria_eu_tax_file_number
+
+## Func_credit_card
+
+Function to detect & perform validations to detect credit card
+
+## Func_croatia_eu_ssn_or_equivalent
+
+## Func_croatia_eu_tax_file_number
+
+## Func_cyprus_eu_tax_file_number
+
+## Func_czech_republic_eu_ssn_or_equivalent
+
+## Func_denmark_eu_ssn_or_equivalent
+
+## Func_denmark_eu_tax_file_number
+
+## Func_estonia_eu_national_id_card
+
+## Func_estonia_eu_tax_file_number
+
+## Func_finland_eu_ssn_or_equivalent
+
+## Func_finland_eu_tax_file_number
+
+## Func_france_eu_tax_file_number
+
+## Func_france_value_added_tax_number
+
+## Func_germany_eu_tax_file_number
+
+## Func_germany_value_added_tax_number
+
+## Func_greece_eu_ssn
+
+## Func_hungarian_value_added_tax_number
+
+## Func_hungary_eu_national_id_card
+
+## Func_hungary_eu_ssn_or_equivalent
+
+## Func_hungary_eu_tax_file_number
+
+## Func_ireland_eu_national_id_card
+
+## Func_ireland_eu_tax_file_number
+
+## Func_italy_eu_national_id_card
+
+## Func_italy_eu_tax_file_number
+
+## Func_italy_value_added_tax_number
+
+## Func_japanese_my_number_corporate
+
+## Func_japanese_my_number_personal
+
+## Func_latvia_eu_national_id_card
+
+## Func_latvia_eu_tax_file_number
+
+## Func_lithuania_eu_national_id_card
+
+## Func_lithuania_eu_tax_file_number
+
+## Func_luxemburg_eu_tax_file_number
+
+## Func_luxemburg_eu_tax_file_number_non_natural
+
+## Func_mexico_population_registry_code
+
+Function to detect & perform validations to detect Mexico Population registry code
+
+## Func_netherlands_eu_national_id_card
+
+## Func_netherlands_eu_tax_file_number
+
+## Func_netherlands_value_added_tax_number
+
+## Func_new_zealand_bank_account_number
+
+## Func_new_zealand_inland_revenue_number
+
+## Func_newzealand_driver_license_number
+
+## Func_newzealand_social_welfare_number
+
+## Func_poland_eu_tax_file_number
+
+## Func_polish_regon_number
+
+## Func_portugal_eu_national_id_card
+
+## Func_portugal_eu_tax_file_number
+
+## Func_randomized_formatted_ssn
+
+Function to detect & perform validations to detect formatted U.S Social Security Number issued post-2011
+
+## Func_randomized_unformatted_ssn
+
+Function to detect & perform validations to detect unformatted U.S Social Security Number issued post-2011
+
+## Func_romania_eu_national_id_card
+
+## Func_slovakia_eu_national_id_card
+
+## Func_slovenia_eu_national_id_card
+
+## Func_slovenia_eu_tax_file_number
+
+## Func_south_korea_resident_number
+
+Function to detect & perform validations to detect South Korea resident number
+
+## Func_spain_eu_DL_and_NI_number_citizen
+
+## Func_spain_eu_DL_and_NI_number_foreigner
+
+## Func_spain_eu_driver's_license_number
+
+## Func_spain_eu_tax_file_number
+
+## Func_ssn
+
+Function to detect & perform validations to detect formatted U.S Social Security Number issued pre-2011
+
+## Func_sweden_eu_ssn_or_equivalent
+
+## Func_sweden_eu_tax_file_number
+
+## Func_swiss_social_security_number_ahv
+
+## Func_Thai_Citizen_Id
+
+Function to detect & perform validations to detect Thai citizen ID
+
+## Func_Turkish_National_Id
+
+Function to detect & perform validations to detect Turkish National ID
+
+## Func_unformatted_ssn
+
+Function to detect & perform validations to detect unformatted U.S Social Security Number issued pre-2011
+
+## Func_uk_eu_tax_file_number
+
 ## Func_us_date
 
 This function looks for a date in the format commonly used in the U.S. This includes the formats "month/day/year", "month-day-year", and "month day year ". The names or abbreviations of months are not case sensitive. 
