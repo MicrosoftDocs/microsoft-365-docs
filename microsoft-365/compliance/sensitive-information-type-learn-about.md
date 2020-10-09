@@ -28,7 +28,7 @@ Know your data, in other words, identifying and classifying sensitive items that
 
 Sensitive information types are pattern based classifiers which detect sensitive informaiton like social security, credit card or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md)
 
-Sensitive information types are used in:
+## Sensitive information types are used in
 
 - [Data loss prevention policies](data-loss-prevention-policies.md) 
 - [Sensitivity labels](sensitivity-labels.md)
