@@ -35,7 +35,7 @@ Learn more about [Azure AD Conditional Access](https://docs.microsoft.com/azure/
  - iOS
  - macOS<sup>1</sup>
 
-For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](https://products.office.com/office-system-requirements).
+For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## Supported clients
 
