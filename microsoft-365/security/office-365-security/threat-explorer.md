@@ -50,7 +50,7 @@ We have focused on platform and data quality improvements to increase data accur
 
 After these updates, you would be seeing a single entry for each message, regardless of the different post-delivery events that have taken place on the message. This could include ZAP, Manual Remediation (which means admin action), Dynamic Delivery etc. 
 
-In addition to showing Malware and Phish threats, we have now updated the information to show Spam verdict associated with an email. Within the email, you will be able to see all the threats associated with the email along with the corresponding detection technologies. Each email can have 0, 1, or multiple threats. You'll see the current Threats in the Details section of the Email flyout. Additionally, for multiple threats (e.g., an email having both Malware and Phish), Detection tech field would give the Threat-Detection mapping, meaning which detection tech led to the identification of the Threat.
+In addition to showing malware and phish threats, we have now updated the information to show Spam verdict associated with an email. Within the email, you will be able to see all the threats associated with the email along with the corresponding detection technologies. Each email can have 0, 1, or multiple threats. You'll see the current Threats in the Details section of the Email flyout. Additionally, for multiple threats (e.g., an email having both Malware and Phish), Detection tech field would give the Threat-Detection mapping, meaning which detection tech led to the identification of the Threat.
 
 The set of detection technologies has been updated to include new detection methods, as well as spam detection technologies, and aross all the different email views (Malware, Phish, All Email), you'll have the same, consistent set of Detection technologies to filter the results. 
 
@@ -71,14 +71,14 @@ In addition to identifying all delivery and post-delivery events, timeline view 
 -	Source: This can be Admin/System/user based on what was the source of the event.
 -	Event: This includes top level events like Original Delivery, Manual Remediation, ZAP, Submissions, and Dynamic Delivery .
 -	Action: This covers the specific action that was taken either as part of ZAP or Admin Action (e.g., Soft Delete).
--	Threats: Covers the Threats (Malware, Phish, Spam) identified at that point of time.
+-	Threats: Covers the threats (Malware, Phish, Spam) identified at that point of time.
 -	Result/Details: Covers more information about the Result of the Action, whether it was performed as part of ZAP/Admin Action.
 
 ### Original and Latest Delivery location
 
-Today, we surface Delivery Location within Email grid and Email flyout. Going forward, the delivery location field will be renamed to Original Delivery Location. Additionally, we're also introducing another field called Latest delivery location. 
+Today, we surface delivery Location within email grid and email flyout. Going forward, the Delivery Location field will be renamed to Original Delivery Location. Additionally, we're also introducing another field called Latest delivery location. 
 
-The original delivery location would give more information about where an email was delivered initially. The latest delivery location would include location where an email may have landed after system actions like ZAP or admin actions like Move to Deleted Items. Latest delivery location is intended to inform admins of the message's last known location post-delivery or any system/admin actions. By design, it doesn't include any end user related actions on the email. For example: if a user deletes a message or moves the message to archive/pst, the message "delivery" location will not be updated. However, if a system action updated the location (e.g., ZAP resulting in an email moving to Quarantine), you would see the Latest delivery location as Quarantine. 
+The original delivery location would give more information about where an email was delivered initially. The latest delivery location would include location where an email may have landed after system actions like ZAP or admin actions like **Move to Deleted Items**. Latest delivery location is intended to inform admins of the message's last known location post-delivery or any system/admin actions. By design, it doesn't include any end user related actions on the email. For example: if a user deletes a message or moves the message to archive/pst, the message "delivery" location will not be updated. However, if a system action updated the location (e.g., ZAP resulting in an email moving to Quarantine), you would see the Latest delivery location as Quarantine. 
 
 ![Updated Delivery Locations](../../media/Updated_Delivery_Location.png)
 
