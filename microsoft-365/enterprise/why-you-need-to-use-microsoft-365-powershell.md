@@ -20,7 +20,7 @@ description: "Summary: Understand why you must use PowerShell to manage Microsof
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-With the Microsoft 365 admin center, you can manage your Microsoft 365 user accounts and licenses. You can also manage your Microsoft 365 services such as Exchange Online, Teams, and SharePoint Online. However, you can also manage these service by using PowerShell commands to take advantage of a command-line and scripting language environment for speed, automation, and additional capability.
+With the Microsoft 365 admin center, you can manage your Microsoft 365 user accounts and licenses. You can also manage your Microsoft 365 services such as Exchange Online, Teams, and SharePoint Online. However, you can also  use PowerShell commands to manage these services and take advantage of the command-line and scripting language environment for speed, automation, and additional capability.
   
 In this article, we show you these ways to use PowerShell to manage Microsoft 365:
   
@@ -28,7 +28,7 @@ In this article, we show you these ways to use PowerShell to manage Microsoft 36
     
 - Configure features and settings only possible with PowerShell
     
-- Perform bulk operations
+- Do bulk operations
     
 - Filtering data
     
@@ -36,15 +36,15 @@ In this article, we show you these ways to use PowerShell to manage Microsoft 36
     
 - Manage across services
     
-Before you begin, you need to understand that PowerShell for Microsoft 365 is a set of modules for Windows PowerShell, which is a command-line environment for Windows-based services and platforms. This environment creates a command shell language that can be extended with additional modules. It provides a way to execute simple or complex commands or scripts. For example, after you install the PowerShell for Microsoft 365 modules and connect to your Microsoft 365 subscription, you can run the following command to list all the user mailboxes for Microsoft Exchange Online:
+Keep in mind that PowerShell for Microsoft 365 is a set of modules for Windows PowerShell, which is a command-line environment for Windows-based services and platforms. This environment creates a command shell language that can be extended with additional modules. It provides a way to execute simple or complex commands or scripts. For example, after you install the PowerShell for Microsoft 365 modules and connect to your Microsoft 365 subscription, you can run the following command to list all the user mailboxes for Microsoft Exchange Online:
   
 ```powershell
 Get-Mailbox
 ```
 
-You can also getting the list of mailboxes by using the Microsoft 365 admin center but counting the number of items in all the lists for all of the sites for all of your web apps isn't easily done.
+You can also gett the list of mailboxes by using the Microsoft 365 admin center but counting the number of items in all the lists for all the sites for all of your web apps isn't easily done.
   
-PowerShell for Microsoft 365 is designed to augment your ability to manage Microsoft 365, not to replace the Microsoft 365 admin center. As an administrator, you must at least be comfortable using PowerShell for Microsoft 365 because there are some configuration procedures that can only be done through PowerShell for Microsoft 365 commands. In these cases, you need to know how to:
+PowerShell for Microsoft 365 is designed to augment your ability to manage Microsoft 365, not to replace the Microsoft 365 admin center. As an administrator, you need to be able to use PowerShell for Microsoft 365 because there are some configuration procedures that can only be done through PowerShell for Microsoft 365 commands. In these cases, you need to know how to:
   
 - Install the PowerShell for Microsoft 365 modules (done only one time for each administrator computer).
     
@@ -58,11 +58,11 @@ After you learn these basic skills, you don't have to list your mailbox users by
   
 ## PowerShell for Microsoft 365 can reveal additional information that you can't see with the Microsoft 365 admin center
 
-The Microsoft 365 admin center displays a lot of useful information. BUt it doesn't displays all the possible information that Microsoft 365 stores on users, licenses, mailboxes, and sites. Here is an example for *users and groups* in the Microsoft 365 admin center:
+The Microsoft 365 admin center displays much useful information. But it doesn't displays all the possible information that Microsoft 365 stores on users, licenses, mailboxes, and sites. Here is an example for *users and groups* in the Microsoft 365 admin center:
   
 ![Example of the display of users and groups in the Microsoft 365 admin center.](../media/o365-powershell-users-and-groups.png)
   
-For many purposes, this displays the information that you need to know. However, there are times when you need more. For example, Microsoft 365 licensing (and the Microsoft 365 features available to a user) depend in part on that user's geographic location. The policies and features that you can extend to a user who lives in the United States might not be the same as these that you can extend to a user who lives in India or Belgium. Follow these steps in the Microsoft 365 admin center to determine a user's geographic location:
+This view shows the information that you need to know in many cases. However, there are times when you need more. For example, Microsoft 365 licensings (and the Microsoft 365 features available to a user) depend in part on that user's geographic location. The policies and features that you can extend to a user who lives in the United States might not be the same as those that you can extend to a user who lives in India or Belgium. Follow these steps in the Microsoft 365 admin center to determine a user's geographic location:
   
 1. Double-click the user's **Display Name**.
     
@@ -70,7 +70,7 @@ For many purposes, this displays the information that you need to know. However,
     
 3. In the details display, select **additional details**.
     
-4. Scroll down until you see the heading **Country or region**:
+4. Scroll until you find the heading **Country or region**:
     
      ![Example of the region information for a user in the Microsoft 365 admin center.](../media/o365-powershell-usage-location.png)
   
@@ -145,7 +145,7 @@ Fabrice Canel                                         BR
   
  **A quick note regarding large domains**
   
-If you have a very large domain with tens of thousands of users, trying some of the examples we show in this article could lead to "throttling." That means that, based on factors like computing power and available network bandwidth, you're trying to do a little too much at one time. Large organizations might want to split some of these PowerShell for Microsoft 365 operations into two commands. 
+If you have a large domain with tens of thousands of users, trying some of the examples we show in this article could lead to "throttling." That means that, based on factors like computing power and available network bandwidth, you're trying to do a little too much at one time. Large organizations might want to split some of these PowerShell for Microsoft 365 operations into two commands. 
 
 For example, the following command returns all the user accounts and shows the name and location for each:
   
@@ -198,33 +198,33 @@ To restore these default settings (enable the options), run this command:
 Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceRecording $True -DesignateAsPresenter "Company"
 ```
 
-This is just one example. There are others, which is why you as an administrator need to be comfortable with running PowerShell for Microsoft 365 commands.
+There are other similar scenarios, which is why administrators need to be comfortable running PowerShell for Microsoft 365 commands.
   
-## PowerShell for Microsoft 365 is great at carrying out bulk operations
+## PowerShell for Microsoft 365 is great for bulk operations
 
-Historically, visual interfaces like the Microsoft 365 admin center are most valuable when you have a single operation to perform. For example, if you need to disable one user account, you can use the Microsoft 365 admin center to quickly locate and clear a checkbox. This can be simpler than performing a similar operation in PowerShell.
+Visual interfaces like the Microsoft 365 admin center are most valuable when you have a single operation to perform. For example, if you need to disable one user account, you can use the Microsoft 365 admin center to quickly locate and clear a checkbox. This may be simpler than performing a similar operation in PowerShell.
   
-But if you have to change many things or some selected things within a large set of other things, the Microsoft 365 admin center might not be the best use of your time. For example, if you had to change the prefix on thousands of phone numbers or you needed to remove a specific user, Ken Myer, from all of your SharePoint Online sites, how would you do that in the Microsoft 365 admin center?
+But if you have to change many things or some selected things within a large set of other things, the Microsoft 365 admin center might not be the best tool. For example, say you had to change the prefix on thousands of phone numbers or remove the specific user Ken Myer from all your SharePoint Online sites. How would you do that in the Microsoft 365 admin center?
   
-For the latter example, you have several hundred SharePoint Online sites and you don't know even know which ones of which Ken Meyer is a member. That means you'll have to start at the Microsoft 365 admin center and then perform this procedure for each site:
+For the last example, say you have several hundred SharePoint Online sites, and you don't know which ones Ken Meyer is a member of. You would have to start at the Microsoft 365 admin center and then perform this procedure for each site:
   
-1. Click the **URL** of the site.
+1. Select the **URL** of the site.
     
-2. In the **site collection properties** box, click the **Web Site Address** link to open the site.
+2. In the **site collection properties** box, select the **Web Site Address** link to open the site.
     
-3. On the site, click **Share**.
+3. On the site, select **Share**.
     
-4. In the **Share** dialog box click the link that shows you all the users who have permissions to the site:
+4. In the **Share** dialog box, select the link that shows you all the users who have permissions to the site:
     
      ![Example of viewing the members of a SharePoint Online site in the SharePoint Online Admin center.](../media/o365-powershell-view-permissions.png)
   
-5. In the **Shared With** dialog box, click **Advanced**.
+5. In the **Shared With** dialog box, select **Advanced**.
     
-6. Scroll down the list of users, find and select Ken Myer (assuming he has permissions to the site), and then click **Remove User Permissions**.
+6. Scroll down the list of users, find and select Ken Myer (assuming he has permissions to the site), and then select **Remove User Permissions**.
     
-This can take a long time for several hundred sites.
+This would take a long time for several hundred sites.
   
-The alternative is to use PowerShell for Microsoft 365 and the following command to remove Ken Myer from all of your sites:
+The alternative is to use PowerShell for Microsoft 365 and the following command to remove Ken Myer from all your sites:
   
 ```powershell
 Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwareinc.com"}
@@ -234,36 +234,36 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 > This command requires that you install the [SharePoint Online PowerShell module](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps). 
   
 > [!TIP]
->  The interpretation of this PowerShell command is:  Get all of the SharePoint sites in the current Microsoft 365 subscription ( **Get-SPOSite** ) and for each site, remove Ken Meyer from the list of users who can access it ( **ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}** ).
+>  The interpretation of this PowerShell command is: Get all of the SharePoint sites in the current Microsoft 365 subscription (**Get-SPOSite**) and for each site, remove Ken Meyer from the list of users who can access it (**ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}**).
   
-Because we are telling Microsoft 365 to remove Ken Meyer from every site, including those in which he does not have access, the display of this command will show errors for those sites in which he does not currently have access. We can use an additional condition on this command to remove Key Meyer only from the sites that have him in their login list, but the listed errors cause no harm to the sites themselves. This command might take a few minutes to run against hundreds of sites, rather than hours of working through the Microsoft 365 admin center.
+Because we are tell Microsoft 365 to remove Ken Meyer from every site, including those that he doesn't have access to, the results will show errors for those sites that he doesn't have access to. We can use an additional condition on this command to remove Key Meyer only from the sites that have him on their login list. But the errors that are returned cause no harm to the sites themselves. This command might take a few minutes to run against hundreds of sites, rather than hours of working through the Microsoft 365 admin center.
   
-Here is another bulk operation example. Use this command to add Bonnie Kearney, a new SharePoint administrator, to all of the sites in the organization:
+Here's another bulk operation example. Use this command to add Bonnie Kearney, a new SharePoint administrator, to all sites in the organization:
   
 ```powershell
 Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}
 ```
 
 > [!TIP]
->  The interpretation of this PowerShell command is:  Get all of the SharePoint sites in the current Microsoft 365 subscription and for each site, allow Bonnie Kearney access by adding her login name to the Members group of the site ( **ForEach {Add-SPOUser -Site $\_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}** ).
+> The interpretation of this PowerShell command is: Get all the SharePoint sites in the current Microsoft 365 subscription and for each site allow Bonnie Kearney access by adding her login name to the Members group of the site (**ForEach {Add-SPOUser -Site $\_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}**).
   
 ## PowerShell for Microsoft 365 is great at filtering data
 
-The Microsoft 365 admin center provides several different ways to filter your data to quickly and easily locate a targeted subset of information. For example, Exchange makes it easy to filter on practically any property of a user mailbox. For example, here is the list of mailboxes for all the users who live in the city of Bloomington:
+The Microsoft 365 admin center provides several ways to filter your data to easily locate a targeted subset of information. For example, Exchange makes it easy to filter on practically any property of a user mailbox. For example, here's the list of mailboxes for all the users who live in the city of Bloomington:
   
 ![Example of doing an advanced search in the Microsoft 365 admin center for the list of mailboxes for all the users who live in the city of Bloomington.](../media/o365-powershell-advanced-search.png)
   
-The Exchange Admin center also lets you combine filter criteria. For example, you can find the mailboxes for all the people who live in Bloomington and who work in the Finance department. 
+The Exchange Admin center also lets you combine filter criteria. For example, you can find the mailboxes for all the people who live in Bloomington and work in the Finance department.
   
-However, there are limitations to what you can do in the Exchange Admin center. For example, maybe you'd like to find the mailboxes of people who live in Bloomington or San Diego, or the mailboxes for all the people who don't live in Bloomington. 
+But there are limitations to what you can do in the Exchange Admin center. For example, you couldn't as easily find the mailboxes of people who live in Bloomington *or* San Diego, or the mailboxes for all people who don't live in Bloomington.
   
-With PowerShell for Microsoft 365, you can get a list of mailboxes for all the people who live in the cities of Bloomington or San Diego with this command:
+You can use the following PowerShell for Microsoft 365 command to get a list of mailboxes for all the people who live in the cities of Bloomington or San Diego:
   
 ```powershell
 Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and ($_.City -eq "San Diego" -or $_.City -eq "Bloomington")} | Select DisplayName, City
 ```
 
-Here is an example of the display:
+Here's an example of the results:
   
 ```powershell
 DisplayName                              City
@@ -275,15 +275,15 @@ Rob Young                                Bloomington
 ```
 
 > [!TIP]
->  The interpretation of this PowerShell command is: Get all of the users in the current Microsoft 365 subscription who have a mailbox in the cities of either San Diego or Bloomington ( **Where {$\_.RecipientTypeDetails -eq "UserMailbox" -and ($\_.City -eq "San Diego" -or $\_.City -eq "Bloomington")}** ), then display the name and city for each ( **Select DisplayName, City** ).
+>  The interpretation of this PowerShell command is: Get all the users in the current Microsoft 365 subscription who have a mailbox in the cities of San Diego or Bloomington (**Where {$\_.RecipientTypeDetails -eq "UserMailbox" -and ($\_.City -eq "San Diego" -or $\_.City -eq "Bloomington")}**), then display the name and city for each (**Select DisplayName, City**).
   
-To list all the mailboxes for people who live anywhere except Bloomington, here is the command:
+And here's the command to list all the mailboxes for people who live anywhere except Bloomington:
   
 ```powershell
 Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and $_.City -ne "Bloomington"} | Select DisplayName, City
 ```
 
-Here is an example of the display:
+Here's an example of the results:
   
 ```powershell
 DisplayName                               City
@@ -303,9 +303,9 @@ Janet Schorr                              Bellevue
 ```
 
 > [!TIP]
->  The interpretation of this PowerShell command is: Get all of the users in the current Microsoft 365 subscription who have a mailbox not located in the city of Bloomington ( **Where {$\_.RecipientTypeDetails -eq "UserMailbox" -and $\_.City -ne "Bloomington"}** ), then display the name and city for each.
+> The interpretation of this PowerShell command is: Get all othe users in the current Microsoft 365 subscription who have a mailbox not located in the city of Bloomington (**Where {$\_.RecipientTypeDetails -eq "UserMailbox" -and $\_.City -ne "Bloomington"}**), and then display the name and city for each.
   
-You can also use wildcard characters in your PowerShell filters to match part of a name. For example, suppose you're looking for a user account, and all you can remember is that their last name was Anderson, or maybe Henderson, or maybe it was Jorgenson.
+You can also use wildcard characters in your PowerShell filters to match part of a name. For example, suppose you're looking for a user account. All you can remember is that the user's last name was Anderson or maybe Henderson, or maybe it was Jorgenson.
   
 You could track down that user in the Microsoft 365 admin center by using the search tool and carrying out three different searches:
   
@@ -315,39 +315,39 @@ You could track down that user in the Microsoft 365 admin center by using the se
     
 - One for  *Jorgenson* 
     
-Because all three of these names end in "son", you can tell PowerShell to display all the users whose name ends in "son". Here is the command:
+Because all three of these names end in "son", you can tell PowerShell to display all the users whose name ends in "son". Here's the command:
   
 ```powershell
 Get-User -Filter '{LastName -like "*son"}'
 ```
 
 > [!TIP]
->  The interpretation of this PowerShell command is: Get all of the users in the current Microsoft 365 subscription, but use a filter that only lists the users whose last names end in "son" ( **-Filter '{LastName -like "\*son"}'** ). The \* stands for any set of characters, which are letters in the case of the user's last name.
+>  The interpretation of this PowerShell command is: Get all the users in the current Microsoft 365 subscription, but use a filter that only lists the users whose last names end in "son" (**-Filter '{LastName -like "\*son"}'**). The \* stands for any set of characters, which are letters in the user's last name.
   
 ## PowerShell for Microsoft 365 makes it easy to print or save data
 
-The Microsoft 365 admin center lets you view lists of data. Here is an example of the Skype for Business Online Admin center displaying a list of users who have been enabled for Skype for Business Online:
+The Microsoft 365 admin center lets you view lists of data. Here's an example of the Skype for Business Online Admin center displaying a list of users who have been enabled for Skype for Business Online:
   
 ![Example of the Skype for Business Online Admin center displaying a list of users who have been enabled for Skype for Business Online.](../media/o365-powershell-lync-users.png)
   
-To save that information to a file, you must copy and paste it into a document or Excel. In either case, the copy might require additional formatting. Additionally, the Microsoft 365 admin center does not provide a way to directly print the displayed list.
+To save that information to a file, you must copy and paste it into a document or Microsoft Excel. In either case, the copy might require additional formatting. Additionally, the Microsoft 365 admin center doesn't provide a way to directly print the displayed list.
   
-Fortunately, you can use PowerShell to not only display the list, but save it to a file that can be easily imported into Excel. Here is an example command to save Skype for Business Online user data to a comma-separated values (CSV) file, a file that can be easily imported as a table in an Excel worksheet:
+Fortunately, you can use PowerShell to not only display the list but save it to a file that can be easily imported into Excel. Here's an example command to save Skype for Business Online user data to a comma-separated values (CSV) file, which can then be easily imported as a table in an Excel worksheet:
   
 ```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export-Csv -Path "C:\Logs\SfBUsers.csv" -NoTypeInformation
 ```
 
-Here is an example of the display:
+Here's an example of the results:
   
-![Example of a table imported into an Excel worksheet for Skype for Business Online user data that was saved to a comma-separated values (CSV) file.](../media/o365-powershell-data-in-excel.png)
+![Example of a table imported into an Excel worksheet for Skype for Business Online user data that was saved to a comma-separated values file.](../media/o365-powershell-data-in-excel.png)
   
 > [!TIP]
->  The interpretation of this PowerShell command is: Get all of the Skype for Business Online users in the current Microsoft 365 subscription ( **Get-CsOnlineUser** ), obtain only the user name, UPN, and location ( **Select DisplayName, UserPrincipalName, UsageLocation** ), and then save that information in CSV file named C:\\Logs\\SfBUsers.csv ( **Export-Csv -Path "C:\\Logs\\SfBUsers.csv" -NoTypeInformation** ).
+>  The interpretation of this PowerShell command is: Get all the Skype for Business Online users in the current Microsoft 365 subscription (**Get-CsOnlineUser**); obtain only the user name, UPN, and location (**Select DisplayName, UserPrincipalName, UsageLocation**); and then save that information in CSV file named C:\\Logs\\SfBUsers.csv (**Export-Csv -Path "C:\\Logs\\SfBUsers.csv" -NoTypeInformation**).
   
-You can also use options to save this list as an XML file or as an HTML page. In fact, with additional PowerShell commands, you could save it directly as an Excel file, with any custom formatting you desire. 
+You can also use options to save this list as an XML file or as an HTML page. In fact, with additional PowerShell commands, you could save it directly as an Excel file, with any custom formatting you desire.
   
-You can also send the output of a PowerShell command that displays a list directly to the default printer in Windows. Here is an example command:
+You can also send the output of a PowerShell command that displays a list directly to the default printer in Windows. Here's an example command:
   
 ```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Printer
@@ -358,15 +358,15 @@ Here's what your printed document will look like:
 ![Example of a printed document that was the output of a PowerShell command listed directly to the default printer in Windows.](../media/o365-powershell-printed-data.png)
   
 > [!TIP]
->  The interpretation of this PowerShell command is:  Get all of the Skype for Business Online users in the current Microsoft 365 subscription, obtain only the user name, UPN, and location, and then send that information to the default Windows printer ( **Out-Printer** ).
+>  The interpretation of this PowerShell command is: Get all the Skype for Business Online users in the current Microsoft 365 subscription; obtain only the user name, UPN, and location; and then send that information to the default Windows printer (**Out-Printer**).
   
-The printed document has the same simple formatting as the display within the PowerShell command window, but once you have created a PowerShell command to list what you need, you just add **| Out-Printer** to the end of the command to get a hard copy to work from.
+The printed document has the same simple formatting as the display within the PowerShell command window. But after you create a PowerShell command to list what you need, you just add **| Out-Printer** to the end of the command to get a hard copy to work from.
   
 ## PowerShell for Microsoft 365 lets you manage across server products
 
-The different components that make up Microsoft 365 are designed to work together. For example, suppose you add a new user to Microsoft 365 and, when you do, you specify such information as the user's department and phone number. That information will then be available if you access the user's information using any of the Microsoft 365 services: Skype for Business Online, Exchange, or SharePoint Online.
+The different components that make up Microsoft 365 are designed to work together. For example, suppose you add a new user to Microsoft 365 and you specify such information as the user's department and phone number. That information will then be available if you access the user's information in any of the Microsoft 365 services: Skype for Business Online, Exchange, or SharePoint.
   
-But that's for common information that spans the suite of products. Product-specific information-for example, information about a user's Exchange mailbox-is typically not available across the suite. For example, if you want to know if a user's mailbox is enabled or not, that information is available only in the Exchange Admin center. 
+But that's for common information that spans the suite of products. Product-specific information, for example, information about a user's Exchange mailbox, isn't typically available across the suite. For example, if you want to know if a user's mailbox is enabled or not, that information is available only in the Exchange Admin center. 
   
 Suppose you'd like to make a report that shows the following information for all your users:
   
@@ -378,11 +378,11 @@ Suppose you'd like to make a report that shows the following information for all
     
 - Whether the user is enabled for Skype for Business Online
     
-You currently cannot use the Microsoft 365 admin center to easily produce such a report. Instead, you'll have to create a separate document to store the information, like an Excel worksheet, and get all the user names and licensing information from the Microsoft 365 admin center, get mailbox information from the Exchange Admin center, get Skype for Business Online information from the Skype for Business Online Admin center, and then collate and combine that information.
+You can't easily produce such a report in the Microsoft 365 admin center. Instead, you have to create a separate document to store the information, like an Excel worksheet. Then, get all the user names and licensing information from the Microsoft 365 admin center, get mailbox information from the Exchange Admin center, get Skype for Business Online information from the Skype for Business Online Admin center, and then combine that information.
   
 The alternative is to use a PowerShell script to compile that report for you.
   
-The following example script is more complicated than the commands you have seen so far in this article. But, it shows the potential of using PowerShell to create views of information that are very difficult to do otherwise. Here is the script that can compile and display the needed list:
+The following example script is more complicated than the commands you've seen so far in this article. But, it shows the potential of using PowerShell to create views of information that are difficult to get otherwise. Here's the script that can compile and display the needed list:
   
 ```powershell
 $x = Get-AzureADUser
@@ -399,7 +399,7 @@ foreach ($i in $x)
 $x | Select DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB
 ```
 
-Here is an example of the display:
+Here's an example of the results:
   
 ```powershell
 DisplayName             IsLicensed   IsMailboxEnabled   EnabledForSfB
@@ -416,13 +416,13 @@ Molly Dempsey           False        True               False
 
 The interpretation of this PowerShell script is:  
 
-- Get all of the users in the current Microsoft 365 subscription and store the information in a variable named $x ( **$x = Get-AzureADUser** ).
-- Start a loop that runs over all the users in the variable named $x ( **foreach ($i in $x)** ).  
-- Define a variable named $y and store the user's mailbox information in it ( **$y = Get-Mailbox -Identity $i.UserPrincipalName** ).
-- Add a new property to the user information named IsMailBoxEnabled and set it to the value of the IsMailBoxEnabled property of the user's mailbox ( **$i | Add-Member -MemberType NoteProperty -Name IsMailboxEnabled -Value $y.IsMailboxEnabled** ).
-- Define a variable named $y and store the user's Skype for Business Online information in it ( **$y = Get-CsOnlineUser -Identity $i.UserPrincipalName** ).
-- Add a new property to the user information named EnabledForSfB and set it to the value of the Enabled property of the user's Skype for Business Online information ( **$i | Add-Member -MemberType NoteProperty -Name EnabledForSfB -Value $y.Enabled** ).
-- Display the list of users, but include only their name, whether they are licensed, and the two new properties that indicate whether their mailbox is enabled and whether they are enabled for Skype for Business Online ( **$x | Select DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB** ).
+- Get all the users in the current Microsoft 365 subscription and store the information in a variable that's named $x (**$x = Get-AzureADUser**).
+- Start a loop that runs over all the users in the variable $x (**foreach ($i in $x)**).  
+- Define a variable named $y and store the user's mailbox information in it (**$y = Get-Mailbox -Identity $i.UserPrincipalName**).
+- Add a new property to the user information that's named IsMailBoxEnabled, and set it to the value of the IsMailBoxEnabled property of the user's mailbox (**$i | Add-Member -MemberType NoteProperty -Name IsMailboxEnabled -Value $y.IsMailboxEnabled**).
+- Define a variable named $y, and store the user's Skype for Business Online information in it (**$y = Get-CsOnlineUser -Identity $i.UserPrincipalName**).
+- Add a new property to the user information that's named EnabledForSfB, and set it to the value of the Enabled property of the user's Skype for Business Online information (**$i | Add-Member -MemberType NoteProperty -Name EnabledForSfB -Value $y.Enabled**).
+- Display the list of users, but include only their name, whether they are licensed, and the two new properties that indicate whether their mailbox is enabled and whether they are enabled for Skype for Business Online (**$x | Select DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB**).
   
 ## See also
 
@@ -431,4 +431,3 @@ The interpretation of this PowerShell script is:
 [Manage Microsoft 365 user accounts, licenses, and groups with PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
 [Use Windows PowerShell to create reports in Microsoft 365](use-windows-powershell-to-create-reports-in-microsoft-365.md)
-
