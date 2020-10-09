@@ -13,6 +13,7 @@ localization_priority: High
 search.appverid: 
 - MOE150
 - MET150
+ms.collection: 
 - m365solution-mip
 - m365initiative-compliance
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
