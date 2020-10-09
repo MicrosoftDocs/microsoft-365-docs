@@ -51,6 +51,8 @@ You can use sensitivity labels to:
 
 - **Protect content in third-party apps and services** by using Microsoft Cloud App Security. With Cloud App Security, you can detect, classify, label, and protect content in third-party apps and services, such as SalesForce, Box, or DropBox, even if the third-party app or service does not read or support sensitivity labels.
 
+- **Protect containers** that include Teams, Microsoft 365 Groups and SharePoint sites. For example, set privacy settings, external user access and external sharing, and access from unmanaged devices.
+
 - **Extend sensitivity labels to third-party apps and services.** Using the Microsoft Information Protection SDK, third-party apps can read sensitivity labels and apply protection settings.
 
 - **Classify content without using any protection settings.** You can also simply assign a classification to content (like a sticker) that persists and roams with the content as it's used and shared. You can use this classification to generate usage reports and see activity data for your sensitive content. Based on this information, you can always choose to apply protection settings later.
@@ -90,10 +92,9 @@ After a sensitivity label is applied to an email or document, any configured pro
     
     String lengths: Watermarks are limited to 255 characters. Headers and footers are limited to 1024 characters, except in Excel. Excel has a total limit of 255 characters for headers and footers but this limit includes characters that aren't visible, such as formatting codes. If that limit is reached, the string you enter is not displayed in Excel.
 
-
 - **Protect content in containers such as sites and groups** when you enable the capability to [use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
     
-    Configuration options for **Site and group settings** don't display until you enable this capability. Be aware that this label configuration doesn't result in documents being automatically labeled but instead, the label settings protect content by controlling access to the container where documents are stored. These settings include the privacy level, whether a Microsoft 365 group owner can add guests to the group, and the level of access granted to an unmanaged device.
+    You can't configure protection settings for groups and sites until you enable this capability. Be aware that this label configuration doesn't result in documents being automatically labeled but instead, the label settings protect content by controlling access to the container where documents can be stored. These settings include privacy settings, external user access and external sharing, and access from unmanaged devices.
 
 - **Apply the label automatically in Office apps, or recommend a label.** You can choose what types of sensitive information that you want labeled, and the label can either be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays whatever text you choose. For example:
     
@@ -111,19 +112,17 @@ This scope configuration lets you have sensitivity labels that are just for docu
 
 ![Scope options for sensitivity labels](../media/sensitivity-labels-scopes.png)
 
-When you change this default and select just one scope, you still see the configuration settings for the other scopes but you can't configure them. For example, if you clear the scope for files and emails, their settings become unavailable:
+When you change this default and select just one scope, you still see the first page of the configuration settings for the other scope but you can't select them. For example, if the scope for files and emails is not selected, you can't select the options on the next page:
 
 ![Unavailable options for sensitivity labels](../media/sensitivity-labels-unavailable-settings.png)
 
-
-
-
+For these pages that have unavailable options, select **Next** to continue. Or, select **Back** to change the label's scope.
 
 ### Label priority (order matters)
 
 When you create your sensitivity labels in your admin center, they appear in a list on the **Sensitivity** tab on the **Labels** page. In this list, the order of the labels is important because it reflects their priority. You want your most restrictive sensitivity label, such as Highly Confidential, to appear at the **bottom** of the list, and your least restrictive sensitivity label, such as Public, to appear at the **top**.
 
-You can apply just one sensitivity label to a document or email. If you set an option that requires your users to provide a justification for changing a label to a lower classification, the order of this list identifies the lower classifications. However, this option does not apply to sublabels.
+You can apply just one sensitivity label to an item such as a document, email, or container. If you set an option that requires your users to provide a justification for changing a label to a lower classification, the order of this list identifies the lower classifications. However, this option does not apply to sublabels.
 
 The ordering of sublabels is used with [automatic labeling](apply-sensitivity-label-automatically.md), though. When you configure labels to be applied automatically or as a recommendation, multiple matches can result for more than one label. To determine the label to apply or recommend, the label ordering is used: The last sensitive label is selected, and then if applicable, the last sublabel.
 
@@ -155,7 +154,7 @@ With a label policy, you can:
 
 - **Choose which users and groups see the labels.** Labels can be published to any specific user or email-enabled security group, distribution group, or Microsoft 365 group (which can have [dynamic membership](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)) in Azure AD.
 
-- **Apply a default label** to all new documents and email created by the users and groups included in the label policy, and the same or different default label to containers, if you've [enabled sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md). Users can always change the default label if it's not the right label for their document or email. 
+- **Apply a default label** to all new documents and email created by the users and groups included in the label policy, and the same or different default label to containers (if you've [enabled sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md)). Users can always change the default label if it's not the right label for their document or email. 
     
     Consider using a default label to set a base level of protection settings that you want applied to all your content. However, without user training and other controls, this setting can also result in inaccurate labeling. It's usually not a good idea to select a label that applies encryption as a default label to documents. For example, many organizations need to send and share documents with external users who might not have apps that support the encryption or they might not use an account that can be authorized. For more information about this scenario, see [Sharing encrypted documents with external users](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
 
@@ -253,5 +252,5 @@ You can also learn about [partner solutions that are integrated with Microsoft I
 
 ## Deployment guidance
 
-See [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
+For deployment planning and guidance that includes licensing information, permissions, deployment strategy, and a list of resources for supported scenarios and end user documentation, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
 
