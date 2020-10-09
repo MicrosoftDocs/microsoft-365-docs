@@ -1606,6 +1606,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/enterprise/microsoft-365-policies-configurations.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/microsoft-365-policies-configurations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/identity-access-prerequisites.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/identity-access-prerequisites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/identity-access-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/identity-access-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/identity-access-policies-guest-access.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/identity-access-policies-guest-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/teams-access-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/teams-access-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/secure-email-recommended-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/secure-email-recommended-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/sharepoint-file-access-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/sharepoint-file-access-policies",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/classifier-using-a-ready-to-use-classifier.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/classifier-learn-about",
       "redirect_document_id": true

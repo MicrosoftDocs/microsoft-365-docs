@@ -327,22 +327,32 @@
               href: archive-twitter-data-with-sample-connector.md
         - name: Globanet data connectors
           items:  
+            - name: Cisco Jabber
+              href: archive-ciscojabberonmssql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: FX Connect
               href: archive-fxconnect-data.md
+            - name: Jive
+              href: archive-jive-data.md
+            - name: Pivot
+              href: archive-pivot-data.md
             - name: Reuters Eikon
               href: archive-reuterseikon-data.md
-            - name: Slack
+            - name: Slack eDiscovery
               href: archive-slack-data.md    
             - name: Symphony
               href: archive-symphony-data.md
             - name: Text-delimited
               href: archive-text-delimited-data.md
+            - name: Webpages
+              href: archive-webpagecapture-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
             - name: Workplace from Facebook
               href: archive-workplacefromfacebook-data.md    
+            - name: XSLT/XML 
+              href: archive-xslt-xml-data.md
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
         - name: TeleMessage data connectors

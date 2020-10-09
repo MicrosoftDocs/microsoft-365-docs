@@ -11,7 +11,9 @@ ms.author: lomayor
 author: lomayor
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: 
+- M365-security-compliance 
+- m365-initiative-m365-defender 
 ms.topic: article
 search.appverid: met150
 ---
