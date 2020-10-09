@@ -40,12 +40,12 @@ Check the external collaboration settings to ensure that sharing with guests is 
 
 To set external collaboration settings
 
-
-1. Log in to Microsoft Azure at [https://portal.azure.com](https://portal.azure.com).
-2. In the left navigation pane, under **FAVORITES**, click **Azure Active Directory**.
-3. Select **External Identities** and click on **External collaboration settings**.
-4. In the **Guest invite settings** pane, ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
-5. If you made changes, click **Save**.
+1. Log in to Azure Active Directory at [https://aad.portal.azure.com](https://aad.portal.azure.com).
+2. In the left navigation pane, click **Azure Active Directory**.
+3. Click **External identities**.
+4. On the **Get started** screen, in the left navigation pane, click **External collaboration settings**.
+5. Ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
+6. If you made changes, click **Save**.
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
 
