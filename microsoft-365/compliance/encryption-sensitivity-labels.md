@@ -54,7 +54,7 @@ When you use this encryption solution, the **super user** feature ensures that a
     
     ![Sensitivity label scope options for files and emails](../media/filesandemails-scope-options-sensitivity-label.png)
 
-2. Then, on the **Choose protection settings for files and emails** page, select **Encrypt files and emails**
+2. Then, on the **Choose protection settings for files and emails** page, make sure you select **Encrypt files and emails**
     
     ![Sensitivity label protection options for files and emails](../media/protection-options-sensitivity-label.png)
 
