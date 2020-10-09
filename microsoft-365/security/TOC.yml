@@ -490,7 +490,7 @@
             - name: Use Threat Trackers
               href: ./office-365-security/threat-trackers.md
             - name: View alerts
-              href: ../../compliance/alert-policies.md
+              href: ../compliance/alert-policies.md
             - name: Smart reports and insights in the Security & Compliance Center
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Enable the Report Message add-in
