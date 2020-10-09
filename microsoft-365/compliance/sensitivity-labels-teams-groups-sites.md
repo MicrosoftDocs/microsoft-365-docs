@@ -33,16 +33,16 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 > [!IMPORTANT]
 > The **Access from unmanaged devices** setting works in conjunction with the SharePoint feature to [control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). You must configure this dependent SharePoint feature to use a sensitivity label that has this setting configured. Additional information is included in the instructions that follow.
 
-When you apply this sensitivity label to a supported container, the label automatically applies the classification and protection settings to the connected site or group.
+When you apply this sensitivity label to a supported container, the label automatically applies the classification and configured protection settings to the site or group.
 
-Content in these containers however, do not inherit the labels for the classification and settings such as visual markings, or encryption. So that users can label their documents in SharePoint sites or team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Content in these containers however, do not inherit the labels for the classification or settings for files and emails, such as visual markings and encryption. So that users can label their documents in SharePoint sites or team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 > [!NOTE]
 > Sensitivity labels for containers aren't supported with Office 365 Content Delivery Networks (CDNs).
 
 ## Using sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites
 
-Before you enable sensitivity labels for containers and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
+Before you enable sensitivity labels for containers and configure sensitivity labels for the new settings, users could see and apply sensitivity labels in their apps. For example, from Word:
 
 ![A sensitivity label displayed in the Word desktop app](../media/sensitivity-label-word.png)
 
@@ -64,7 +64,7 @@ After you enable and configure sensitivity labels for containers, users can addi
     Execute-AzureAdLabelSync
     ```
 
-## How to configure site and group settings
+## How to configure groups and site settings
 
 Enabling sensitivity labels for containers means that you can now configure protection settings for groups and sites in the sensitivity labeling wizard. Until you enable this support, the settings are visible in the wizard but you can't configure them.
 

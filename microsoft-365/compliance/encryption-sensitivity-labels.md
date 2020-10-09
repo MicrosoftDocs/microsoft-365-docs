@@ -50,7 +50,7 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 ## How to configure a label for encryption
 
-1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Files & emails** for the label's scope: 
+1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure **Files & emails** is selected for the label's scope: 
     
     ![Sensitivity label scope options for files and emails](../media/filesandemails-scope-options-sensitivity-label.png)
 
