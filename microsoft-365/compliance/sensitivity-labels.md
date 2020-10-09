@@ -13,11 +13,11 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+- m365solution-mip
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
-- m365solution-mip
-- m365initiative-compliance
 description: Use sensitivity labels from the Microsoft Information Protection framework to classify and protect sensitive content with encryption and watermarks.
 ms.custom: 
 - seo-marvel-apr2020

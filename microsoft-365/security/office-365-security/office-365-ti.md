@@ -14,8 +14,9 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365-initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
 description: "Learn about threat investigation and response capabilities in Office 365 Advanced Threat Protection Plan."
