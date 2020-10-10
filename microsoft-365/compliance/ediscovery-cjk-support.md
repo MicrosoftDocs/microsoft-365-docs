@@ -43,11 +43,11 @@ Yes, CJK languages are supported in search capabilities in both Content Search a
 
 No, none of your existing searches and review sets will change. You don't need to reindex existing data. For English text, all search results will be the same.
 
-### How do I change my display language to Chinese, Japanese, or Korean?
+**How do I change my display language to Chinese, Japanese, or Korean?**
 
 For information about how to change display language and time zone, see [How to set language and region settings for Office 365](https://docs.microsoft.com/office365/troubleshoot/access-management/set-language-and-region).
 
-## Known Issues
+## Known issues
 
 - OCR doesn't support CJK characters from image files
 
