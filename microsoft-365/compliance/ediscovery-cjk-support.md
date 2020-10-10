@@ -22,7 +22,7 @@ description: "Learn how Advanced eDiscovery in Microsoft 365 supports Chinese, J
 
 Microsoft 365 Advanced eDiscovery supports double-byte character set languages (this includes Simplified Chinese, Traditional Chinese, Japanese, and Korean, which are collectively known as *CJK* languages) for the following scenarios:
 
-- When you [collect data for a case](./collecting-data-for-ediscovery.md), you can use CJK characters for [keyword searches](building-search-queries.md#keyword-searches), [keyword queries and search conditions](keyword-queries-and-search-conditions.md) for a search. We provide CJK support for all [search operators](keyword-queries-and-search-conditions.md#search-operators) and [search conditions](keyword-queries-and-search-conditions.md#search-conditions), including the boolean operators **AND, OR, NOT, and NEAR**.
+- When you [collect data for a case](collecting-data-for-ediscovery.md), you can use CJK characters for [keyword searches](building-search-queries.md#keyword-searches), [keyword queries and search conditions](keyword-queries-and-search-conditions.md) for a search. We provide CJK support for all [search operators](keyword-queries-and-search-conditions.md#search-operators) and [search conditions](keyword-queries-and-search-conditions.md#search-conditions), including the boolean operators **AND, OR, NOT, and NEAR**.
 
 - When you [query the data in a review set](review-set-search.md).
 
@@ -51,8 +51,8 @@ For information about how to change display language and time zone, see [How to 
 
 - OCR doesn't support CJK characters from image files
 
-- Email files (*.eml, *.msg) in [Annotate view](view-documents-in-review-set.md#annotate-view) aren't supported.
+- Email files (such as *.eml and *.msg) in [Annotate view](view-documents-in-review-set.md#annotate-view) aren't supported.
 
-- [the Relevance module to analyze data](using-relevance.md) does not support CJK languages.
+- The [Relevance module](using-relevance.md) used to to analyze data doesn't support CJK languages.
 
-- Query-based holds are not supported. For more information on query-based holds, see [Manage non-custodial holds](managing-holds.md#manage-non-custodial-holds)
+- Query-based holds aren't supported. For more information on query-based holds, see [Manage non-custodial holds](managing-holds.md#manage-non-custodial-holds).
