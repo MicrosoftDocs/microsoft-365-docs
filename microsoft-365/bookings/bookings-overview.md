@@ -33,7 +33,7 @@ Bookings has three primary components:
 
 3. Next, select the **Add Service** button, choose **Microsoft Bookings**, and select the **Add Service** option.
 
-4)Instantly, a new tab will open. When it is visible, sign into your Office 365 account and find your booking calendars. Here, select the calendar you want to connect to your Facebook page and choose the Connect option.
+4. A new tab will open instantly. When it is visible, sign in to your Office 365 account and find your Bookings calendars. Select the calendar you want to connect to your Facebook page and choose the **Connect** option.
 
 5. Once you've completed the previous step, the tab will close and you’ll be returned to Facebook. Now you’re all set to receive Bookings through your Facebook page.
 
