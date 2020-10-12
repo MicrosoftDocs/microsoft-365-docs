@@ -35,7 +35,7 @@ Bookings has three primary components:
 
 4)Instantly, a new tab will open. When it is visible, sign into your Office 365 account and find your booking calendars. Here, select the calendar you want to connect to your Facebook page and choose the Connect option.
 
-5)Once you complete the above step, the tab will close, and you’ll return to Facebook. Now you’re all set to receive Bookings through your Facebook page.
+5. Once you've completed the previous step, the tab will close and you’ll be returned to Facebook. Now you’re all set to receive Bookings through your Facebook page.
 
 6. If you would like to remove Microsoft Bookings from your Facebook page, simply select **Remove Service** on the **Page Action** button in the Microsoft Bookings tab.
 
