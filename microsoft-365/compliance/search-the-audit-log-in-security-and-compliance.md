@@ -454,7 +454,7 @@ The following table describes the file and page activities in SharePoint Online 
 
 #### Frequently asked questions regarding the “File Previewed” and “File Accessed” events
 
-<b>Q: Could any non-user action trigger log entries with Event Name = "File Previewed" and user-agent like "OneDriveMpc-Transform_Thumbnail"? </b> <br>
+<b>Q: Could any non-user action trigger log entries with Event Name = "File Previewed" and user-agent like "OneDriveMpc-Transform_Thumbnail"?</b>
 A: We are not aware of scenarios where non-user actions generate events like these. User actions like opening a user profile card by clicking their name or email address from OWA would generate similar events.
 <b>Q: Are calls to the OneDriveMpc-Transform_Thumbnail always intentionally being triggered by the user?</b>
 A: No, similar events can be logged to a browser pre-fetch. <br>
