@@ -138,7 +138,11 @@ After you select a policy template, you can add or remove any types of sensitive
 For more information about these options, see the following guidance from the DLP documentation [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
     
 ![Options for identifying sensitive information types](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
-  
+
+To consider when using this method to auto-apply retention labels:
+
+- New and modified items are labeled but not existing items.
+
 #### Auto-apply labels to content with keywords or searchable properties
 
 You can auto-apply labels to content by using a query that contains specific words, phrases, or values of searchable properties. You can refine your query by using search operators such as AND, OR, and NOT.
@@ -152,8 +156,16 @@ Query-based labels use the search index to identify content. For more informatio
 - [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
 - [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
-> [!NOTE]
-> Although SharePoint managed properties support aliases, don't use these when you configure your retention labels. Always specify the actual name of the managed property, for example, "RefinableString01".
+Some things to consider when using this method to auto-apply retention labels:
+
+- Unlike the other methods to auto-apply labels, all items can be labeled with no time restrictions when they were created.
+
+- Although SharePoint managed properties support aliases, don't use these when you configure your retention labels. Always specify the actual name of the managed property, for example, "RefinableString01".
+
+- If you map properties, do this at the tenant level and not at the site level.
+
+- Partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
+
 
 Examples queries:
 
@@ -202,6 +214,10 @@ For more information about trainable classifiers, see [Learn about trainable cla
 
 > [!TIP]
 > If you use trainable classifiers for Exchange, see the recently released [How to retrain a classifier in content explorer (preview)](classifier-how-to-retrain-content-explorer.md).
+
+To consider when using this method to auto-apply retention labels:
+
+- New and modified items are labeled, and existing items from the last six months.
 
 ## How long it takes for retention labels to take effect
 
