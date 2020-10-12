@@ -13,7 +13,9 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365-initiative-defender-office365
 description: "Learn how to integrate automated investigation and response with a custom or third-party reporting solution."
 ms.date: 09/29/2020
 ms.custom: 

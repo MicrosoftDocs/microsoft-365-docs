@@ -14,8 +14,9 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365-initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: "Admins can learn about the anti-spam settings and filters that will help prevent spam in Exchange Online Protection (EOP)."

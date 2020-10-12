@@ -16,6 +16,8 @@ search.appverid:
 ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 description: "Compare encryption options including Office Message Encryption (OME), S/MIME, Information Rights Management (IRM), and learn about Transport Layer Security (TLS)."
 ---
 
