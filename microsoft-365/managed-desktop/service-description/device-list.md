@@ -32,20 +32,16 @@ The links to devices here are for your reference only. If you want to order devi
 
 | Model    | Minimum specifications  | Additional requirements   | Archive date   | Retirement date   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Dell Precision 3530](https://www.dell.com/en-us/work/shop/cty/pdp/spd/precision-15-3530-laptop?cid=265720&st=dell%2Bprecision%2B3530&VEN1=ihEzXzFB,73667408703289,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Bprecision%2B3530&lid=42076560130&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 22, 2020  | May 22, 2023 |
-| [Dell Latitude 5300](https://www.dell.com/en-us/work/shop/laptops/13-5300/spd/latitude-13-5300-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | June 1, 2021  | June 1, 2024  |
-| **\*[Dell Latitude 5300 2-in-1](https://www.dell.com/en-us/work/shop/laptops/13-5300-2-in-1/spd/latitude-13-5300-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
-| [Dell Latitude 5400](https://www.dell.com/en-us/work/shop/laptops/14-5400/spd/latitude-14-5400-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | June 1, 2021  | June 1, 2024  |
-| [Dell Latitude 5500](https://www.dell.com/en-us/work/shop/laptops/15-5500/spd/latitude-15-5500-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | June 1, 2021  | June 1, 2024  |
-| [Dell Latitude 7200 2-in-1](https://www.dell.com/en-us/work/shop/laptops/12-7200-2-in-1/spd/latitude-12-7200-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
-| **\*[Dell Latitude 7210 2-in-1](https://www.dell.com/en-us/work/shop/laptops/new-12-7210/spd/latitude-12-7210-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 19, 2022  | May 19, 2025  |
-| [Dell Latitude 7300](https://www.dell.com/en-us/work/shop/laptops/13-7300/spd/latitude-13-7300-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
-| [Dell Latitude 7400](https://www.dell.com/en-us/work/shop/laptops/new-14/spd/latitude-14-7400-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
-| [Dell Latitude 7400 2-in-1](https://www.dell.com/en-us/work/shop/laptops/14-2-in-1/spd/latitude-14-7400-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
-| **\*[Dell Latitude 7410](https://www.dell.com/en-us/work/shop/laptops/new-14-7410/spd/latitude-14-7410-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 19, 2022  | May 19, 2025  |
-| **\*[Dell Latitude 7410 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 19, 2022 | May 19, 2025
-| **\*[Dell Latitude 9410 2-in-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 19, 2022  | May 19, 2025  |
-| [Dell Optiplex 3070](https://www.dell.com/en-us/work/shop/desktops-n-workstations/3070/spd/optiplex-3070-desktop) | 128 GB / Intel i3 / 8 GB RAM | None | May 1, 2022  | May 1, 2025  |
+| **\*[Dell Precision 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022  | April 28, 2025 |
+| **\*[Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022 | April 28, 2025  |
+| **\*[Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022 | April 28, 2025 |
+| **\*[Dell Latitude 7310 / 7310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 4, 2022  | May 4, 2025  |
+| [Dell Latitude 7410 / 7410 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 19, 2022  | May 19, 2025  |
+| [Dell Latitude 9410 2-in-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 5, 2022  | May 5, 2025  |
+| **\*[Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 5, 2022  | May 5, 2025  |
+| **\*[Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop)** | 128 GB / Intel i3 / 8 GB RAM | None | May 27, 2022  | May 27, 2025  |
+| **\*[Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio)** | 128 GB / Intel i3 / 8 GB RAM | None | May 15, 2022  | May 15, 2025  |
+| **\*[Dell 5550 Workstation](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop)** | 256 GB / Intel i5 / 8 GB RAM | None | May 27, 2022  | May 27, 2025  |
 
 ### HP
 
@@ -74,7 +70,7 @@ The links to devices here are for your reference only. If you want to order devi
 
 In addition, the device must also meet these criteria:     
 
-- Have an image approved by Microsoft Managed Desktop. When you order devices, make sure you specify that they are being used with Microsoft Managed Desktop.
+- If there is a SKU listed in the requirements of the device to be ordered, ensure it is utilized during the ordering process. This will ensure devices are in compliance with Microsoft Managed Desktop software requirements. 
 - Not have completed the Windows first-run experience.
 - Be registered with Microsoft Managed Desktop using the [Device Registration](https://aka.ms/mmddrhelp) feature
 
