@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: foo
+description: learn how to use dlp policies for non-Microsoft cloud apps
 ---
 
 # Use data loss prevention policies for non-Microsoft cloud apps (preview)
