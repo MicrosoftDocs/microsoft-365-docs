@@ -70,7 +70,7 @@ The links to devices here are for your reference only. If you want to order devi
 
 In addition, the device must also meet these criteria:     
 
-- If there is a SKU listed in the requirements of the device to be ordered, ensure it is utilized during the ordering process. This will ensure devices are in compliance with Microsoft Managed Desktop software requirements. 
+- If a specific SKU is listed in the devide requirements, make sure you use it when you order. This ensures that devices comply with Microsoft Managed Desktop software requirements. 
 - Not have completed the Windows first-run experience.
 - Be registered with Microsoft Managed Desktop using the [Device Registration](https://aka.ms/mmddrhelp) feature
 
