@@ -2,8 +2,8 @@
 title: "Remove license from shared mailbox"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
