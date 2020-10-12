@@ -82,7 +82,7 @@ Use the proximity explanation to define how far away the phone number explanatio
 
 #### What are tokens?
 
-In order to use the proximity explanation type, understand what a token is, as the number of tokens is how the proximity explanation measures distance from one explanation to another.  
+In order to use the proximity explanation type, you need to understand what a token is, as the number of tokens is how the proximity explanation measures distance from one explanation to another.  
 
 A token is a continuous span (no spaces or punctuation) of letters and numbers. A space is NOT a token. Each punctuation character is a token. The following table shows some examples of how to determine the number of tokens in a phrase.
 
