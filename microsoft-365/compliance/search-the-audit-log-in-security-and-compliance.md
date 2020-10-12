@@ -459,7 +459,7 @@ A: We are not aware of scenarios where non-user actions generate events like the
 <b>Q: Are calls to the OneDriveMpc-Transform_Thumbnail always intentionally being triggered by the user?</b>
 A: No, similar events can be logged to a browser pre-fetch.
 <b>Q: If we see a "File Previewed" event coming from a Microsoft registered IP address, does that mean that the preview has been shown on the screen of the device of the end user?</b>
-A: No, it could have been due to a browser pre-fetch. <br>
+A: No, it could have been due to a browser pre-fetch.
 <b>Q: Are there scenarios where a user previewing a document generates "File Accessed" events? </b> <br>
 A: Both preview and access indicate that a user’s call led to a read of the file (or a read of a thumbnail rendering of the file); while the events are intended to align with preview versus access intention, the event distinction isn’t a guarantee of the user’s intent.
 #### The app\@sharepoint user in audit records
