@@ -38,11 +38,13 @@ Check the organizational relationships settings to ensure that sharing with gues
 
 To set organizational relationship settings
 
-1. Log in to Microsoft Azure at [https://aad.portal.azure.com](https://aad.portal.azure.com).
-2. In the left navigation pane, under **FAVORITES**, click **Azure Active Directory**.
-3. In the **Manage** pane, click **External Identities**.
-4. On the left navigation pane, click **External collaboration settings**.
-5. Ensure that **Members can invite** is set to **Yes**.
+To set external collaboration settings
+
+1. Log in to Azure Active Directory at [https://aad.portal.azure.com](https://aad.portal.azure.com).
+2. In the left navigation pane, click **Azure Active Directory**.
+3. Click **External identities**.
+4. On the **Get started** screen, in the left navigation pane, click **External collaboration settings**.
+5. Ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
 6. If you made changes, click **Save**.
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
