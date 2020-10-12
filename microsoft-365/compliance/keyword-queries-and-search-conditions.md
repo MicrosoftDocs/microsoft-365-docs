@@ -81,7 +81,7 @@ To prevent recipient expansion, add a wild card character (asterisk) to the end 
 However, be aware that preventing recipient expansion in the search query may result in relevant items not being returned in the search results. Email messages in Exchange can be saved with different text formats in the recipient fields. Recipient expansion is intended to help mitigate this fact by returning messages that may contain different text formats. So preventing recipient expansion may result in the search query not returning all items that may be relevant to your investigation.
 
 > [!NOTE]
-> If you need to review or reduce the items returned by a search query due to recipient expansion, consider using Advanced eDiscovery. You can search items (taking advantage of recipient expansion), add them to a review set, and then use review set queries or filters to narrow your results. For more information, see [Collect data for a case](collecting-data-for-ediscovery.md) and [Query the data in a review set](review-set-search.md).
+> If you need to review or reduce the items returned by a search query due to recipient expansion, consider using Advanced eDiscovery. You can search for messages (taking advantage of recipient expansion), add them to a review set, and then use review set queries or filters to narrow and review the results. For more information, see [Collect data for a case](collecting-data-for-ediscovery.md) and [Query the data in a review set](review-set-search.md).
 
 ## Searchable site properties
 
