@@ -37,7 +37,7 @@ Bookings has three primary components:
 
 5)Once you complete the above step, the tab will close, and you’ll return to Facebook. Now you’re all set to receive Bookings through your Facebook page.
 
-6)If you would like to remove Microsoft Bookings and Facebook page, simply select Remove Service on the Page Action button in the Microsoft Bookings tab.
+6. If you would like to remove Microsoft Bookings from your Facebook page, simply select **Remove Service** on the **Page Action** button in the Microsoft Bookings tab.
 
 ## Get started using Bookings
 
