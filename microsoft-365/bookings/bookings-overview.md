@@ -29,7 +29,7 @@ Bookings has three primary components:
 
 1. To remove or connect Microsoft Bookings and your Facebook page, open the Facebook page of your organization.
 
-2)Select **Settings** from the upper right corner and chose **Partner Apps and Services** option from the left panel. 
+2. Select **Settings** from the upper right corner and chose the **Partner Apps and Services** option from the left panel. 
 
 3. Next, select the **Add Service** button, choose **Microsoft Bookings**, and select the **Add Service** option.
 
