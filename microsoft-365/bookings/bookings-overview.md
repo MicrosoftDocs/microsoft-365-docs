@@ -25,7 +25,7 @@ Bookings has three primary components:
 
 - A business-facing mobile app where Bookings calendar owners and administrators can see all of their appointments, access customer lists and contact information, and make manual bookings on the go.
 
-## Connect Microsoft Bookings to Facebook Page.
+## Connect Microsoft Bookings to your Facebook page
 
 1)To remove or connect Microsoft Bookings and Facebook page, open your business Facebook page.
 
