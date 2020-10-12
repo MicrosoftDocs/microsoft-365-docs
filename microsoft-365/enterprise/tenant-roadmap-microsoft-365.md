@@ -12,7 +12,7 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 ms.custom: it-pro
 description: The roadmap to set up your tenants for Microsoft 365.
 ---
