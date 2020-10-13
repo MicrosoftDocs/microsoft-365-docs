@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance 
-- m365-initiative-m365-defender
+- m365initiative-m365-defender 
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH 
