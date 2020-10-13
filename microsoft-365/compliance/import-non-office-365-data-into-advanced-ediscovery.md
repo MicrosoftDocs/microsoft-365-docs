@@ -73,7 +73,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
         
     For more information on Azcopy syntax see, [Transfer data with the AzCopy on Windows](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) . 
     
-    For more details on Advanced eDiscovery Processing see, [Run the Process module and load data in Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md) 
+    For more details on Advanced eDiscovery Processing, see [Run the Process module and load data in Advanced eDiscovery (classic)](run-the-process-module-and-load-data-in-advanced-ediscovery.md). 
     
     > [!IMPORTANT]
     > There must be one root folder per user and the folder name must be in the  *alias@domainname*  format. 
