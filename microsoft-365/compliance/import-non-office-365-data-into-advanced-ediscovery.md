@@ -71,7 +71,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
 
 11. The next tab is **3. Process files** where you will see the custodians that have data associated with them and will also show you the progress of the data being imported.
         
-    For more information on Azcopy syntax see, [Transfer data with the AzCopy on Windows](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) . 
+    For more information on Azcopy syntax, see [Transfer data with the AzCopy on Windows](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy). 
     
     For more details on Advanced eDiscovery Processing, see [Run the Process module and load data in Advanced eDiscovery (classic)](run-the-process-module-and-load-data-in-advanced-ediscovery.md). 
     
