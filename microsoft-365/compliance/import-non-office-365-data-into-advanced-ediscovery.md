@@ -55,7 +55,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
 
 4. Select an existing Review Set or choose **Add Review Set**.
 
-5. Select **Manage review set**
+5. Select **Manage review set**.
 
 6. In the Non-Office 365 data card, click on **View Uploads**
 
