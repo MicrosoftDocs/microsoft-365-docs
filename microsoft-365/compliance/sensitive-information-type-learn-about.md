@@ -26,7 +26,7 @@ Know your data, in other words, identifying and classifying sensitive items that
 - pattern recognition
 - [machine learning](classifier-learn-about.md)
 
-Sensitive information types are pattern based classifiers which detect sensitive informaiton like social security, credit card or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md)
+Sensitive information types are pattern based classifiers which detect sensitive information like social security, credit card or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md)
 
 ## Sensitive information types are used in
 
@@ -36,7 +36,7 @@ Sensitive information types are pattern based classifiers which detect sensitive
 - [Communication compliance](communication-compliance.md)
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
-## anatomy of a sensitive information type
+## Fundamental parts of a sensitive information type
 
 Every sensitive information type entity is defined by these fields:
 
@@ -46,6 +46,9 @@ Every sensitive information type entity is defined by these fields:
     - Primary element – the main element which the sensitive information type is looking for. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
     - Supporting element – elements that act as supporting evidence that help in increasing the confidence of the match. For example, keyword “SSN” in proximity of an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
     - Proximity – Number of characters between primary and supporting element
+    
+![Diagram of corroborative evidence and proximity window](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+
     - Confidence Level - Confidence levels (high, medium, low) reflect how much supporting evidence was detected along with the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.
 
 
@@ -113,6 +116,34 @@ A high confidence level returns the fewest false positives but might result in m
 
 You should use high confidence level patterns with low counts, say five to ten, and low confidence patterns with higher counts, say 20 or more.
 
+## Creating custom sensitive information types
+
+To create custom sensitive information types in the Security & Compliance Center, you can choose from several options:
+
+- **Use the UI** You can set up a custom sensitive information type using the Security & Compliance Center UI. With this method, you can use regular expressions, keywords, and keyword dictionaries. To learn more, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).
+- 
+- **Use EDM** You can set up custom sensitive information types using Exact Data Match (EDM)-based classification. This method enables you to create a dynamic sensitive information type using a secure database that you can refresh periodically. See [Create a custom sensitive information type with Exact Data Match based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+
+- **Use PowerShell** You can set up custom sensitive information types using PowerShell. Although this method is more complex than using the UI, you have more configuration options. See [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
+
+
+
+> [!NOTE]
+> Microsoft 365 Information Protection now  supports in preview double byte character set languages for:
+> - Chinese (simplified)
+> - Chinese (traditional)
+> - Korean
+> - Japanese
+> 
+>This preview is only in the commercial cloud and the rollout is limited to:
+> - Japan
+> - Korea
+> - China
+> - Hong Kong
+> - Macau
+> - Taiwan
+>
+>This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
 
 ## For further information
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
