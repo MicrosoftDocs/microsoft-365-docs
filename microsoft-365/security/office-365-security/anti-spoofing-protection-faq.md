@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid:
 ms.collection: 
 - M365-security-compliance 
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: "Admins can view frequently asked questions and answers about anti-spoofing protection in Exchange Online Protection (EOP)."
 ---
 
