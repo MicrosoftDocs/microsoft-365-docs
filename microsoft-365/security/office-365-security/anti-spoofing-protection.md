@@ -15,7 +15,7 @@ ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 ms.custom: 
 - TopSMBIssues
 - seo-marvel-apr2020

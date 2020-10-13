@@ -1,6 +1,6 @@
 ---
 title: Evaluate Microsoft Threat Protection 
-description: Set up your Microsoft Threat Protection trial lab or pilot environment to try out how the coordinated threat protection solution designed to protect devices, identity, data, and applications can help your organization
+description: Set up your Microsoft Threat Protection trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
 keywords: Microsoft Threat Protection trial, try Microsoft Threat Protection, evaluate Microsoft Threat Protection, Microsoft Threat Protection evaluation lab, Microsoft Threat Protection pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,6 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance
+- m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ---
@@ -29,9 +30,9 @@ ms.topic: conceptual
 **Applies to:**
 - Microsoft Threat Protection
 
-The purpose of creating this trial lab or pilot environment is to illustrate the comprehensive, integrated, and intelligent capabilities of Microsoft Threat Protection in detection, prevention, investigation, and response that you can use in your organization. 
+The purpose of creating this trial lab or pilot environment is to illustrate the comprehensive and integrated Microsoft Threat Protection capabilities. Experience how this intelligent security solution detects, prevents, automatically investigates, and responds to advanced threats your organization. 
 
-This guide takes you through the steps to start your Microsoft Threat Protection evaluation based on the recommended deployment paths. The goal is to help you set up the integrated Microsoft Threat Protection services in a lab environment when using a trial account, or in a pilot environment in production when using a full license. The results of which will be useful in presenting security operation use cases to security solution decision makers in your organization. When you’re done running your attack simulations, and are satisfied with the results, you can fully deploy and operationalize it in your organization with the help of Microsoft Technical Sales Professionals or experts in your organization. 
+This guide takes you through the steps to start your Microsoft Threat Protection evaluation based on the recommended deployment paths. The goal is to help you set up the security solution either in a lab environment with a trial account, or in a pilot environment in production with a full license. Preparing your trial lab or pilot environment can help you present security operation use cases to decision makers in your organization. When you’re done running your attack simulations and are satisfied with the results, you can fully deploy and operationalize it in your organization with the help of Microsoft Technical Sales Professionals or experts in your organization. 
 
 This guide will help you:
 - Set up your lab server and computers

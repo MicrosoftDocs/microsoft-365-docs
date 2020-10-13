@@ -150,7 +150,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Format
 
-six to twn digits with or without a bank state branch number
+six to ten digits with or without a bank state branch number
 
 ### Pattern
 

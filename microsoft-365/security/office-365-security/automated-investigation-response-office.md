@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 ms.collection: 
 - M365-security-compliance 
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 keywords: automated incident response, investigation, remediation, threat protection
 ms.date: 09/29/2020
 description: "Get an overview of automated investigation and response capabilities in Microsoft Defender for Office 365"
