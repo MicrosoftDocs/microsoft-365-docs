@@ -17,7 +17,7 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
