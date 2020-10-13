@@ -11,8 +11,9 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 description: "Security in Office 365, from EOP to ATP Plans 1 and 2, Standard vs. Strict security configurations, and more. Understand what you have, and how to secure your properties."
 ---
 
@@ -21,7 +22,7 @@ description: "Security in Office 365, from EOP to ATP Plans 1 and 2, Standard vs
 This article will introduce you to your new security properties in the Cloud. Whether you're part of a Security Operations Center, you're a Security Administrator new to the space, or you want a refresher, let's get started.
 
 > [!CAUTION]
-> Hi. If you're using **Outlook.com**, **Microsoft 365 Family**, or **Microsoft 365 Personal**, and need *Safe Links* or *Safe Attachments* info, ***click this link***: [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2). Thanks!
+> If you're using **Outlook.com**, **Microsoft 365 Family**, or **Microsoft 365 Personal**, and need *Safe Links* or *Safe Attachments* info, ***click this link***: [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## Office 365 security spelled out
 
@@ -82,7 +83,7 @@ starting with **Exchange Online Protection**:
 |---------|---------|---------|
 | Technologies include:<ul><li>spam</li><li>phish</li><li>malware</li><li>bulk mail</li><li>spoof intelligence</li><li>impersonation detection</li><li>Admin Quarantine</li><li>Admin and user submissions of False Positives and False Negatives</li><li>Allow/Block for URLs and Files</li><li>Reports</li></u1>|<li>Audit log search</li><li>Message Trace</li>|<li>Zero-hour Auto-Purge (ZAP)</li><li>Refinement and testing of Allow and Block lists</li>|
 
-If you want to dig in to EOP, **[jump to this article](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-21vianet&branch=tp_EOPOverview)**.
+If you want to dig in to EOP, **[jump to this article](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide#:~:text=Exchange%20Online%20Protection%20%28EOP%29%20is%20the%20cloud-based%20filtering,is%20also%20available%20in%20the%20following%20on-premises%20scenarios%3A)**.
 
 Because these products are cumulative, if you evaluate ATP P1 and decide to subscribe to it, you'll add these abilities.
 

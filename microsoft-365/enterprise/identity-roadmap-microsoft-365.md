@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - Strat_O365_Enterprise
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 ms.custom:
 description: The roadmap to identity for Microsoft 365.
 ---
