@@ -65,4 +65,4 @@ Watch this video or follow the steps below to publish or unpublish your booking 
 
 ## Unpublish the booking page
 
-1. To unpublish the booking page, go to the Booking page and select **Unpublish**.
+ - To unpublish the booking page, go to the Booking page and select **Unpublish**.
