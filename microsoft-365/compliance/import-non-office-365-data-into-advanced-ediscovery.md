@@ -53,7 +53,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
 
 3. Select **Review Sets** from the menu.
 
-4. Select and existing Review Set or click on **Add Review Set**
+4. Select an existing Review Set or choose **Add Review Set**.
 
 5. Select **Manage review set**
 
