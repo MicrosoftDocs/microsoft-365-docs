@@ -40,10 +40,11 @@ For more information about Azure AD versions and licensing, see [Azure Active Di
 
 ****
 
-|Required Azure AD version|Microsoft 365/Office 365 availability|Feature|Comments|
+|Azure AD version|Microsoft 365 availability|Feature|Comments|
 |---|---|---|---|
-|Free|All|Security defaults|Turns on MFA and disables legacy authentication protocols for all users in the organization. For instructions, see [Enabling security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults).|
-|Office 365 Apps||||
+|Free and Office 365 Apps|All|Security defaults|Turns on MFA and disables legacy authentication protocols for all users in the organization. For instructions, see [Enabling security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults).|
+|Premium P1||Conditional access policies|[Require multi-factor authentication and set up conditional access policies](https://docs.microsoft.com/microsoft-365/campaigns/m365-campaigns-conditional-access)|
+|Premium P2||Risk policies|[How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies)|
 |
 
 ## Use the Strict preset security policies for HVEs in Office 365 ATP
@@ -52,13 +53,13 @@ For HVEs, we recommend applying the Strict profile in preset security policies.
 
 Preset security policies are a central location to apply the recommended Standard or Strict policy settings in EOP and Office 365 ATP. For more information, see [Preset security policies in EOP and Office 365 ATP](preset-security-policies.md).
 
-For information about the Strict policies and settings, see [Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md).
+For details about the Strict policies and settings, see [Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md).
 
-## Use priority accounts and/or user tags for HVEs
+## User tags in Microsoft 365 or Office 365 E3 or E5
 
 User tags are a way to quickly identify and classify specific users or groups of users in reports and incident investigations.
 
-Priority accounts is a type of built-in user tag (known as a _system tag_) that you can use to identify HVEs. For more information, see [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). Note that priority accounts has specific subscription requirements (E3 or E5) and requirements based on the number of licenses and active users in the organization.
+Priority accounts is a type of built-in user tag (known as a _system tag_) that you can use to identify HVEs. For more information, see [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). Note that priority accounts has specific subscription, number of licenses, and active user requirements.
 
 For more information about priority accounts in action, see this blog post: [Announcing Priority Account Protection in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385).
 
