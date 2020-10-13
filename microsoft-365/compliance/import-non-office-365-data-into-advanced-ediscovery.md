@@ -67,7 +67,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
 
   `"%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy\AzCopy.exe" /Source:"c:\upload" /Dest:"https://spnam03salinkexternal003.blob.core.windows.net/16d13440-a6a4-4bc5-a82b-10ac9cfe9d7c-1601401811-externalstore?sv=2017-07-29&sr=c&si=ExternalStore63%7C0&sig=9Dq5v20TwkxByYDHhIEx%2FHSLlmlqUjY0njkJyTO0zGA%3D" /s`
   
-10. Open a command prompt window and execute the AzCopy.exe command to import the data into Azure.  Once it has loaded all of the data then click on **Next: Process files**
+10. Open a command prompt window and execute the AzCopy.exe command to import the data into Azure. Once it has loaded all of the data, select **Next: Process files**.
 
 11. The next tab is **3. Process files** where you will see the custodians that had data associated with them and will show you the progress of the data being imported.
         
