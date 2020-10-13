@@ -20,7 +20,7 @@ description: This article provides community resources to connect to your peers 
 
 # Microsoft 365 community resources for PowerShell
 
-Use these communities to get you connected to your peers and get your PowerShell for Microsoft 365 questions answered quickly and correctly. 
+Use these communities to connect to your peers and get answers for your PowerShell for Microsoft 365 questions. 
   
 - [Microsoft 365 Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
     
@@ -31,4 +31,3 @@ Use these communities to get you connected to your peers and get your PowerShell
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

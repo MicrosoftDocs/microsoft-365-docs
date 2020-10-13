@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: "Summary: Use PowerShell for Microsoft 365 to create reports that you cannot produce in the Microsoft 365 admin center."
+description: "Summary: Use PowerShell for Microsoft 365 to create reports that you can't produce in the Microsoft 365 admin center."
 ---
 
 # Use PowerShell to create reports for Microsoft 365
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-There are many different reports available in the Microsoft 365 admin center. However, these reports only provide so much information and sometimes you need more. That's when you need PowerShell for Microsoft 365
+There are many different reports available in the Microsoft 365 admin center. But these reports only provide so much information, and sometimes you need more. That's when you need PowerShell for Microsoft 365.
   
-These articles that describe how to use PowerShell for Microsoft 365 to obtain information from your Microsoft 365 tenant:
+These articles describe how to use PowerShell for Microsoft 365 to obtain information from your Microsoft 365 tenant:
   
-- Getting started with reporting using PowerShell for Microsoft 365:
+- Get started with reporting using PowerShell for Microsoft 365:
     
   - [PowerShell for Microsoft 365 can reveal additional information that you cannot see with the Admin center](https://technet.microsoft.com/library/dn568034.aspx#reveal)
     

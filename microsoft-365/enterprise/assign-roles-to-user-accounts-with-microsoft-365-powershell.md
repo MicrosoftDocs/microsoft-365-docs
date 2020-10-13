@@ -26,7 +26,7 @@ description: In this article, learn how quickly and easily use PowerShell for Mi
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can quickly and easily assign roles to user accounts using PowerShell for Microsoft 365.
+You can easily assign roles to user accounts by using PowerShell for Microsoft 365.
 
 >[!Note]
 >[Learn how to assign roles to user accounts](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
@@ -34,17 +34,17 @@ You can quickly and easily assign roles to user accounts using PowerShell for Mi
 
 ## Use the Azure Active Directory PowerShell for Graph module
 
-First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) using a global administrator account.
+First, use a global administrator account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
-Next, determine the sign-in name of the user account that you want to add to a role (example: fredsm@contoso.com). This is also known as the user principal name (UPN).
+Next, identify the sign-in name of the user account that you want to add to a role (example: fredsm@contoso.com). This is also known as the user principal name (UPN).
 
-Next, determine the name of the role. Use this [list of administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+Next, determine the name of the role. See the [list of administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 >[!Note]
->Pay attention to the notes in this article. Some role names are different for Azure AD PowerShell. For example, the "SharePoint Administrator" role in the Microsoft 365 admin center is named "SharePoint Service Administrator" for Azure AD PowerShell.
+>Pay attention to the notes in this article. Some role names are different for Azure Active Directory (Azure AD) PowerShell. For example, the *SharePoint Administrator* role in the Microsoft 365 admin center is *SharePoint Service Administrator"* for Azure AD PowerShell.
 >
 
-Next, fill in the sign-in and role names and run these commands.
+Next, fill in the sign-in and role names and run these commands:
   
 ```powershell
 $userName="<sign-in name of the account>"
@@ -58,7 +58,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-Here is an example of a completed command set that assigns the SharePoint Service Administrator role to the belindan@contoso.com account:
+Here's an example of a completed command set that assigns the SharePoint Service Administrator role to the belindan\@contoso.com account:
   
 ```powershell
 $userName="belindan@contoso.com"
@@ -72,7 +72,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-To display the list of user names for a specific role, use these commands.
+To display the list of user names for a specific role, use these commands:
 
 ```powershell
 $roleName="<role name>"
@@ -81,28 +81,28 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
 
 ## Use the Microsoft Azure Active Directory Module for Windows PowerShell
 
-First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) using a global administrator account.
+First, use a global administrator account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
   
 ### For a single role change
 
-The most common ways of specific user account is with its display name or its email name, also known its sign-in name or user principal name (UPN).
+The most common ways to specify the user account is by using its display name or its email name, which also known its sign-in name or user principal name (UPN).
 
 #### Display names of user accounts
 
-If you are used to working with the display names of user accounts, determine the following:
+If you're used to working with the display names of user accounts, determine the following information:
   
 - The user account that you want to configure.
     
-    To specify the user account, you must determine its Display Name. To get a complete list accounts, use this command:
+    To specify the user account, you must determine its Display Name. To get a complete list of accounts, use this command:
     
   ```powershell
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
   ```
 
-    This command lists the Display Name of your user accounts, sorted by the Display Name, one screen at a time. You can filter the list to a smaller set by using the **Where** cmdlet. Here is an example:
+    This command lists the Display Name of your user accounts, sorted by the Display Name, one screen at a time. You can filter the list to a smaller set by using the **Where** cmdlet. Here's an example:
 
    >[!Note]
-   >PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
+   >PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. You have to run these cmdlets from Windows PowerShell.
    >
     
   ```powershell
@@ -119,7 +119,7 @@ If you are used to working with the display names of user accounts, determine th
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Once you have determined the Display Name of the account and the Name of the role, use these commands to assign the role to the account:
+After you determine the Display Name of the account and the Name of the role, use these commands to assign the role to the account:
   
 ```powershell
 $dispName="<The Display Name of the account>"
@@ -127,9 +127,9 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-Copy the commands and paste them into Notepad. For the **$dispName** and **$roleName** variables, replace the description text with their values, remove the \< and > characters, and leave the quotes. Copy the modified lines and paste them into your Windows Azure Active Directory Module for Windows PowerShell window to run them. Alternately, you can use the Windows PowerShell Integrated Script Environment (ISE).
+Copy the commands and paste them into Notepad. For the **$dispName** and **$roleName** variables. Replace the description text with their values, remove the \< and > characters but keep the quotation marks. Paste the modified into Microsoft Azure Active Directory Module for Windows PowerShell window to run them. Alternately, you can use the Windows PowerShell Integrated Script Environment (ISE).
   
-Here is an example of a completed command set:
+Here's an example of a completed command set:
   
 ```powershell
 $dispName="Scott Wallace"
@@ -139,7 +139,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayNam
 
 #### Sign-in names of user accounts
 
-If you are used to working with the sign-in names or UPNs of user accounts, determine the following:
+If you're used to working with the sign-in names or UPNs of user accounts, determine the following information:
   
 - The user account's UPN.
     
@@ -149,7 +149,7 @@ If you are used to working with the sign-in names or UPNs of user accounts, dete
   Get-MsolUser -All | Sort UserPrincipalName | Select UserPrincipalName | More
   ```
 
-    This command lists the UPN of your user accounts, sorted by the UPN, one screen at a time. You can filter the list to a smaller set by using the **Where** cmdlet. Here is an example:
+    This command lists the UPN of your user accounts, sorted by the UPN, one screen at a time. You can use the **Where** cmdlet to filter the list. Here's an example:
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort UserPrincipalName | Select UserPrincipalName | More
@@ -165,7 +165,7 @@ If you are used to working with the sign-in names or UPNs of user accounts, dete
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Once you have the UPN of the account and the name of the role, use these commands to assign the role to the account:
+After you have the UPN of the account and the name of the role, use these commands to assign the role to the account:
   
 ```powershell
 $upnName="<The UPN of the account>"
@@ -173,9 +173,9 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-Copy the commands and paste them into Notepad. For the **$upnName** and **$roleName** variables, replace the description text with their values, remove the \< and > characters, and leave the quotes. Copy the modified lines and paste them into your Windows Azure Active Directory Module for Windows PowerShell window to run them. Alternately, you can use the Windows PowerShell ISE.
+Copy the commands and paste them into Notepad. For the **$upnName** and **$roleName** variables, replace the description text with their values, remove the \< and > characters but keep the quotation marks. Paste the modified lines into Microsoft Azure Active Directory Module for Windows PowerShell window to run them. Alternately, you can use the Windows PowerShell ISE.
   
-Here is an example of a completed command set:
+Here's an example of a completed command set:
   
 ```powershell
 $upnName="scottw@contoso.com"
@@ -187,7 +187,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 
 For multiple role changes, determine the following:
   
-- Which user accounts that you want to configure. You can use the methods in the previous section to gather the set of display names or UPNs.
+- Which user accounts you want to configure. You can use the methods in the previous section to gather the set of display names or UPNs.
     
 - Which roles you want to assign to each user account.
     
@@ -197,9 +197,9 @@ For multiple role changes, determine the following:
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Next, create a comma-separated value (CSV) text file that has the display name or UPN and role name fields. You can do this easily with Microsoft Excel.
+Next, create a comma-separated value (CSV) text file that has the display name or UPN and role name fields. You can do this easily in Microsoft Excel.
 
-Here is an example for display names:
+Here's an example for display names:
   
 ```powershell
 DisplayName,RoleName
@@ -215,7 +215,7 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 
 ```
 
-Here is an example for UPNs:
+Here's an example for UPNs:
   
 ```powershell
 UserPrincipalName,RoleName
