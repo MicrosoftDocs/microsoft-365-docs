@@ -51,7 +51,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
     
 2. Click **Switch to Advanced eDiscovery**
 
-3. Select **Review Sets** from the menu
+3. Select **Review Sets** from the menu.
 
 4. Select and existing Review Set or click on **Add Review Set**
 
