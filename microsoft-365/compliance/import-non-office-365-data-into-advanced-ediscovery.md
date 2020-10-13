@@ -57,7 +57,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
 
 5. Select **Manage review set**.
 
-6. In the Non-Office 365 data card, click on **View Uploads**
+6. In the Non-Office 365 data card, select **View Uploads**.
 
 7. Click on **Upload files** to start the file upload wizard
 
