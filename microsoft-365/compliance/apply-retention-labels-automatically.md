@@ -164,6 +164,8 @@ Some things to consider when using this method to auto-apply retention labels:
 
 - If you map properties, do this at the tenant level and not at the site level.
 
+- Use the *DocumentLink* property instead of *Path* to identify a specific site in SharePoint or OneDrive. 
+
 - Partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
 
 
