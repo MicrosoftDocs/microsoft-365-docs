@@ -18,6 +18,17 @@ search.appverid:
 description: "Learn how to create, modify, remove, and test custom sensitive information types for DLP in the graphical user interface in Security & Compliance Center."
 ms.custom: seo-marvel-apr2020
 ---
+
+<!--		a. Two options to Creating a new SIT 
+			i. Start from scratch 
+Copy a OOB SIT 
+
+			vii. Additional check
+				1) List of additional checks & their descriptions(look at the help text in code)
+
+
+-->
+
 <!-- rename md file to match the display name -->
 # Create a custom sensitive information type in the Security & Compliance Center
 
