@@ -61,7 +61,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
 
 7. Choose **Upload files** to start the file upload wizard.
 
-8. The first tab is the **1. Prepare step**. Click on **Next: Upload files**
+8. The first tab is **1. Prepare step**. Select **Next: Upload files**.
 
 9. On the **2. Upload files** tab you will be promoted to download AzCopy.exe if you have not and then provide the path to the file location.  For example, `C:\Upload`.  This will give you the command to execute for AzCopy.exe, for example using `C:\Upload` you would see:
 
