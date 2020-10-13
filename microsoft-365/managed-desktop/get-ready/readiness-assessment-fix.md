@@ -41,7 +41,7 @@ Make sure that your Autopilot profiles target an assigned or dynamic Azure AD gr
 
 ### Certificate connectors
 
-If you have any certificate connectors, they cannot have any errors.
+If you have any certificate connectors used by the devices you want to enroll in Microsoft Managed Desktop, the connectors cannot have any errors. Only one of the following advisories will apply to your situation, so check them carefully.
 
 **Advisory**
 
@@ -109,7 +109,7 @@ Follow the steps in [Set enrollment restrictions](https://docs.microsoft.com/mem
 
 ### Enrollment Status Page
 
-You currently have the Enrollment Status Page (ESP) enabled. For more information, see [First-run experience with Autopilot and the Enrollment Status Page](../get-started/esp-first-run.md).
+You currently have the Enrollment Status Page (ESP) enabled. If you are participating in the public preview of this feature, you can ignore this item. For more information, see [First-run experience with Autopilot and the Enrollment Status Page](../get-started/esp-first-run.md).
 
 **Not ready**
 
