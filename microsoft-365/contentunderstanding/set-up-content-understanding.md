@@ -13,7 +13,7 @@ description: "Set up content understanding in Project Cortex"
 
 # Set up SharePoint Syntex
 
-Admins can use the Microsoft 365 admin center to set up [Microsoft SharePoint Syntex](document-understanding-overview.md). 
+Admins can use the Microsoft 365 admin center to set up [Microsoft SharePoint Syntex](index.md). 
 
 Consider the following before you start:
 
@@ -21,8 +21,6 @@ Consider the following before you start:
 - What will you name of your default content center?
 
 You can change your settings after initial setup in the Microsoft 365 admin center.
-
-The content in this article is for the Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
 Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make considerations about the following names of:
 
