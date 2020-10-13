@@ -59,11 +59,19 @@ This series of topics illustrates several architecture approaches for mergers, a
 <a name="security"></a>
 ### Microsoft cloud security for enterprise architects
 
+>[!Note]
+>This model is being revised. Please check this article in the future for the updated version.
+>
+
+<!--
+
 What IT architects need to know about security in Microsoft cloud services and platforms.
   
 |**Item**|**Description**|
 |:-----|:-----|
 |[![Thumb image for Microsoft cloud security model](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=48121) <br/>Updated December 2018 | This model contains: <ul><li>Microsoft's role in providing secure services and platforms</li><li>Customer responsibilities to mitigate security risks</li><li>Top security certifications </li><li>Security offerings provided by Microsoft consulting services </ul><br/>|
+
+--> 
 
 
 <a name="attacks"></a>

@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 07/23/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,6 +14,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - remotework
 - m365solution-remotework
+- m365solution-scenario
 ms.custom:
 description: Use Microsoft 365 security and compliance services to protect your apps, data, and devices for remote workers.
 ---
@@ -83,5 +83,7 @@ For your remote workers, you have implemented:
   - Adherence to regional data regulations
 
 ## Next step
+
+[![Step 4: Manage your devices, PCs, and other endpoints](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
 
 Continue with [Step 4](empower-people-to-work-remotely-manage-endpoints.md) to manage your devices, PCs, and other endpoints.

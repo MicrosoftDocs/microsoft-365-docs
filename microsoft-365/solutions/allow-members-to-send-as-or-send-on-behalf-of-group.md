@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
@@ -45,7 +45,7 @@ This section explains how to allow users to send email as a group in the [Exchan
     
 4. In the **Send As** section, select the **+** sign to add the users that you want to send as the Group. 
     
-    ![Select the plus sign to add the users that you want to send as the Microsoft 365 group](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Screenshot of send as dialog box](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Type to search or pick a user from the list. Select **OK** and **Save**.
     
@@ -63,7 +63,7 @@ This section explains how to allow users to send email on behalf of a group in t
     
 4. In the Send on Behalf section, select the **+** sign to add the users that you want to send as the Group. 
     
-    ![Select the plus sign to add the users that you want to send as the Microsoft 365 group](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Screenshot of send on behalf of dialog](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Type to search or pick a user from the list. Select **OK** and **Save**.
     

@@ -14,7 +14,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
-- SPO_Content
+- m365solution-mip
+- m365initiative-compliance
 search.appverid: 
 - MET150
 description: "Set up Microsoft 365 Endpoint data loss prevention to monitor file activities and implement protective actions for those file to endpoints."
@@ -75,7 +76,7 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 
 Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to meet these requirements.
 
-1. Must be running Windows 10 build 1809 or up.
+1. Must be running Windows 10 x64 build 1809 or later.
 2. All devices must be [Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), or Hybrid Azure AD joined.
 3. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 

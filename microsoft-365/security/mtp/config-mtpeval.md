@@ -15,7 +15,10 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: article 
 ---
 

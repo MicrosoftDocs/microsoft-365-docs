@@ -69,7 +69,7 @@ Each industry also has their own set of specialized regulations. Rather than pro
 - **Sensitive protection**: Some customers have a subset of data that must be protected at higher levels, or they may require all data to be protected at a higher level. You can apply increased protection to all or specific data sets in your Microsoft 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.  
 - **Highly regulated**: Some organizations may have a small amount of data that is highly classified, constitutes trade secrets, or is regulated data. Microsoft provides capabilities to help organizations meet these requirements, including added protection for identities and devices.
 
-![Security cone - All customers > Some customers > Specific customers. Broad application to specific application](../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
+![Security cone - All customers > Some customers > Specific customers. Broad application to specific application](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
 This guidance shows you how to implement protection for identities and devices for each of these tiers of protection. Use this guidance as a starting point for your organization and adjust the policies to meet your organization's specific requirements.
 
@@ -77,15 +77,15 @@ It's important to use consistent levels of protection across your data, identiti
 
 The **Identity and device protection for Microsoft 365** architecture model shows you which capabilities are comparable.
 
-[![Thumb image for Identity and device protection for Microsoft 365 poster](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [View as a PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)
+[![Thumb image for Identity and device protection for Microsoft 365 poster](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [View as a PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)
 
-Additionally, see the [Deploy information protection for data privacy regulations](../solutions/information-protection-deploy.md) solution to protect information stored in Microsoft 365.
+Additionally, see the [Deploy information protection for data privacy regulations](../../solutions/information-protection-deploy.md) solution to protect information stored in Microsoft 365.
 
 ## Security and productivity trade-offs
 
 Implementing any security strategy requires trade-offs between security and productivity. It's helpful to evaluate how each decision affects the balance of security, functionality, and ease of use.
 
-![Security triad balancing security, functionality, and ease of use.](../media/microsoft-365-policies-configurations/security-triad.png)
+![Security triad balancing security, functionality, and ease of use.](../../media/microsoft-365-policies-configurations/security-triad.png)
 
 The recommendations provided are based on the following principles:
 
@@ -113,7 +113,9 @@ Azure AD provides a full suite of identity management capabilities. We recommend
 | [Azure AD password protection](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Detect and block known weak passwords and their variants and additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in an Azure AD tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords. |  Microsoft 365 E3 or E5 |
 ||||
 
-![Components of identity and device access.](../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+Here are the components of identity and device access, including Intune and Azure AD objects, settings, and subservices.
+
+![Components of identity and device access](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
 
 ### Microsoft Intune
 
@@ -129,11 +131,11 @@ This guidance shows you how to create recommended policies to enforce the use of
 
 This guidance shows you how to implement a set of policies to protect access to Microsoft 365 cloud services, including Microsoft Teams, Exchange Online, SharePoint Online, and OneDrive for Business. In addition to implementing these policies, we recommend you also raise the level of protection for your tenant using these resources:
 
-- [Configure your tenant for increased security](../security/office-365-security/tenant-wide-setup-for-increased-security.md)
+- [Configure your tenant for increased security](tenant-wide-setup-for-increased-security.md)
 
   Recommendations that apply to baseline security for your tenant.
 
-- [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](../security/office-365-security/security-roadmap.md)
+- [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md)
 
   Recommendations that include logging, data governance, admin access, and threat protection.
 
@@ -179,7 +181,7 @@ Microsoft recommends that you do not create policy sets that apply to all apps b
 
 ## Steps in the process of configuring identity and device access
 
-![Steps to configure identity and device access.](../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
+![Steps to configure identity and device access.](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. Configure prerequisite identity features and their settings.
 2. Configure the common identity and access Conditional Access policies.
