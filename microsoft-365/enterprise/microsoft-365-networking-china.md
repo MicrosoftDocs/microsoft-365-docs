@@ -12,7 +12,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 search.appverid: MET150
 f1.keywords:
 - NOCSH
