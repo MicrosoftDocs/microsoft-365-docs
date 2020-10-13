@@ -15,6 +15,8 @@ ms.custom:
 ms.collection: 
 - M365-identity-device-management
 - M365-security-compliance
+- m365solution-identitydevice
+- m365solution-scenario
 ---
 
 # Policies for allowing guest and external B2B access
