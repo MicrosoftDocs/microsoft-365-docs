@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.collection: 
 - M365-security-compliance 
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: "Admins can learn how to configure a mailbox to collect spam and phishing email that are reported by users."
 ---
 
