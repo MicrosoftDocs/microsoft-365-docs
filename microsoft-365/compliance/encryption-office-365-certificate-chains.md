@@ -66,6 +66,23 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-256)** | E28393773DA845A679F2080CC7FB44A3B7A1C3792CB7EB7729FDCB6A8D99AEA7 |
 | **Pin (SHA-256)** | H0IkzshPyZztiB/2/P0+IfjFGcVHqmpd094kcwLOUNE= |
 
+### **DigiCert Basic RSA CN CA G2**
+
+| **Subject** | CN=DigiCert Basic RSA CN CA G2<br>O=DigiCert Inc<br>C=US |
+| --- | --- |
+| **Issuer** | CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US |
+| **Serial Number** | 02:F7:E1:F9:82:BA:D0:09:AF:F4:7D:C9:57:41:B2:F6 |
+| **Public Key Length** | RSA 2048 bits |
+| **Signature Algorithm** | sha256RSA |
+| **Validity Not Before** | Wednesday, March 4, 2020 4:04 AM |
+| **Validity Not Until** | Monday, March 4, 2030 4:04 AM |
+| **Subject Key Identifier** | 06BDA69B60795031BED5A9024AA0D095538B2F34 |
+| **Authority Key Identifier** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Thumbprint (SHA-1)** | 4D1FA5D1FB1AC3917C08E43F65015E6AEA571179 |
+| **Thumbprint (SHA-256)** | CB57B3FF2040CB269497625BC90FA9D7B4ED4938C6F60F42F69AFDF508AC2993 |
+| **CRL URLs** | http://crl.digicert.cn/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.cn |
+
 ### **DigiCert Global Root CA**
 
 | **Subject** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
