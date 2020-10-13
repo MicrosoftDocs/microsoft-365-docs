@@ -59,7 +59,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
 
 6. In the Non-Office 365 data card, select **View Uploads**.
 
-7. Click on **Upload files** to start the file upload wizard
+7. Choose **Upload files** to start the file upload wizard.
 
 8. The first tab is the **1. Prepare step**. Click on **Next: Upload files**
 
