@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection: 
 - M365-security-compliance 
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 - seo-marvel-apr2020
 description: "Admins can learn about the Safe Attachments feature in Office 365 Advanced Threat Protection (ATP)."
 ---
