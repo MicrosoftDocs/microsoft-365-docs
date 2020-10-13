@@ -43,7 +43,7 @@ The section below gives you information about setting up your bookings page and 
 
 - **Region and time zone settings** Here you can set your time zone and language preferences for the Self-Service page. We recommend setting your local time zone. For visitors to your Self-Service page, Bookings automatically detects their local time zones and will show availability to them in their own time zones. For example, if an appointment is available at 1:00pm PST, someone in CST will see the available time displayed as 3:00pm CST.
 
-Once you publish your booking page, customers will see your booking page where they can book appointments with you. The customer facing booking pag looks like this:
+Once you publish your booking page, customers will see your booking page where they can book appointments with you. The customer facing booking page looks like this:
 
 :::image type="content" source="media/bookings-self-service.jpg" alt-text="Customer facing booking page":::
 
