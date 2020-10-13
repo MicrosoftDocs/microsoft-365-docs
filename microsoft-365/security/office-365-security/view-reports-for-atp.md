@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection: 
 - M365-security-compliance 
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: "Find and use reports for Office 365 Advanced Threat Protection in the Security &amp; Compliance Center."
 ms.custom: seo-marvel-apr2020
 ---

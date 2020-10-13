@@ -14,7 +14,7 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance 
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 search.appverid:
