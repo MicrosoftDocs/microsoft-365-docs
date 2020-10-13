@@ -63,7 +63,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
 
 8. The first tab is **1. Prepare step**. Select **Next: Upload files**.
 
-9. On the **2. Upload files** tab you will be promoted to download AzCopy.exe if you have not and then provide the path to the file location.  For example, `C:\Upload`.  This will give you the command to execute for AzCopy.exe, for example using `C:\Upload` you would see:
+9. On the **2. Upload files** tab you will be prompted to download AzCopy.exe if you have not done so already, and then to provide the path to the file location. For example, `C:\Upload`  will give you the command to execute AzCopy.exe. Using `C:\Upload`, you will see:
 
   `"%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy\AzCopy.exe" /Source:"c:\upload" /Dest:"https://spnam03salinkexternal003.blob.core.windows.net/16d13440-a6a4-4bc5-a82b-10ac9cfe9d7c-1601401811-externalstore?sv=2017-07-29&sr=c&si=ExternalStore63%7C0&sig=9Dq5v20TwkxByYDHhIEx%2FHSLlmlqUjY0njkJyTO0zGA%3D" /s`
   
