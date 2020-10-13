@@ -1644,6 +1644,11 @@
       "source_path": "microsoft-365/compliance/classifier-using-a-ready-to-use-classifier.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/classifier-learn-about",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/custom-sensitive-info-types.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compiance/sensitive-information-type-learn-about",
+      "redirect_document_id": true
     }
   ]
 }
