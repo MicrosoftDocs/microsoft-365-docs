@@ -75,10 +75,6 @@ Enabling sensitivity labels for containers means that you can now configure prot
     
     For example, you need to carefully review your [label ordering](sensitivity-labels.md#label-priority-order-matters) because SharePoint detects when a labeled document is uploaded to a labeled site. In this sceanrio, an audit event and email is automatically generated when the document has a higher priority sensitivity label than the site's label. For more information, see the [Auditing sensitivity label activities](#auditing-sensitivity-label-activities) section on this page. 
 
-If somebody uploads a document to a site that's protected with a sensitivity label and their document has a higher priority sensitivity label than the sensitivity label applied to the site
-Detected document sensitivity mismatch
-
-
 2. Then, on the **Define protection settings for groups and sites** page, select one or both of the available options:
     
     - **Privacy and external user access settings** to configure the **Privacy** and **External users access** settings. 
