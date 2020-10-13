@@ -462,7 +462,7 @@ We aren't aware of scenarios where non-user actions generate events like these. 
 
 No. But similar events can be logged as a result of browser pre-fetch.
 
-**If we see a FilePreviewed event coming from a Microsoft-registered IP address, does that mean that the preview was displayed on the screen of the user's device?</b>
+**If we see a FilePreviewed event coming from a Microsoft-registered IP address, does that mean that the preview was displayed on the screen of the user's device?**
 
 No. The event might have been logged as a result of browser pre-fetch.
 
