@@ -13,6 +13,13 @@ description: "Leverage term store taxonomy when creating an extractor in your do
 
 # Leverage term store taxonomy when creating an extractor
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJJ]  
+
+</br>
+
+
 When you create an extractor in your document understanding model in SharePoint Syntex, you can take advantage of [Managed Metadata services](https://docs.microsoft.com/sharepoint/managed-metadata#terms) term store taxonomy to display preferred terms for data that you extract.  
 
 As an example, your model identifies and classifies all **Contract** documents that are uploaded to the document library.  Additionally, the model also extracts a **Contract Service** value from each contract, and will display it in a column in your library view. Among the various Contract Services values in the contracts, there are several older values that your company no longer uses and have been renamed. For example, all references to the terms *Design*, *Graphics*, or *Topography* contract services should now be called *Creative*. Whenever your model extracts one of the outdated terms from a contract document, you want it to display the current term - Creative - in your library view. In the example below, while training the model we see that one sample document contains the outdated term of *Design*.

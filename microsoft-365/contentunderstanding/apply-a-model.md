@@ -79,4 +79,4 @@ While an applied model processes all files uploaded to the document library afte
 
 [Document Understanding overview](document-understanding-overview.md)
 
-[Create a form processing model](create-a-form-processing-model.md)  
+

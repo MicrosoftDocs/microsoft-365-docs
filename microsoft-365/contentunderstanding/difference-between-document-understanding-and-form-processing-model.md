@@ -25,6 +25,8 @@ There are two model types that you can use:
 
 While both models are generally used for the same purpose, the key differences listed below affect which ones you can use.
 
+> [!NOTE]
+> See the [SharePoint Syntex adoption: Get started guide](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example) for more information about form processing and document understanding scenario examples.
 
 
 ## Structured versus unstructured and semi-structured content
@@ -61,10 +63,10 @@ Form processing models can currently only be applied to the SharePoint document 
  ## See Also
 [Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
-[Create a classifier](create-a-classifier.md)
 
-[Create an extractor](create-an-extractor.md)
 
-[Apply a document understanding model](apply-a-model.md)
+[Document understanding overview](document-understanding-overview.md)
 
-[Create a form processing model](create-a-form-processing-model.md)
+[Form processing overview](form-processing-overview.md)
+
+[Introduction to SharePoint Syntex](index.md)

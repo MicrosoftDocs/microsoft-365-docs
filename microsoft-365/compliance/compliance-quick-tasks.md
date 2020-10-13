@@ -9,7 +9,8 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- m365-security-compliance
+- m365initiative-compliance
 localization_priority: Normal
 description: "Learn about tasks that will help you quickly get started with compliance in Microsoft 365."
 ---

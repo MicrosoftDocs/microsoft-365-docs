@@ -13,6 +13,8 @@ localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
+- m365solution-mig
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150

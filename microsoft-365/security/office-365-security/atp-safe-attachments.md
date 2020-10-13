@@ -14,8 +14,9 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-defender-office365
 - seo-marvel-apr2020
 description: "Admins can learn about the Safe Attachments feature in Office 365 Advanced Threat Protection (ATP)."
 ---
@@ -68,7 +69,7 @@ This section describes the settings in Safe Attachments policies:
 
 - **Redirect attachment on detection: Enable redirect** and **Send the attachment to the following email address**: For **Block**, **Monitor**, or **Replace** actions, send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
 
-  The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [ATP Safe Attachments settings](recommended-settings-for-eop-and-office365-atp.md#atp-safe-attachments-settings).
+  The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [Safe Attachments settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
 - **Apply the above selection if malware scanning for attachments times out or error occurs**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete. Always select this option if you select **Enable redirect**. Otherwise, messages might be lost.
 
@@ -103,9 +104,7 @@ Here are some considerations for Dynamic Delivery and forwarded messages:
 
 - If the forwarded recipient is not protected by a Safe Attachments policy, the message and attachments will be delivered without any Safe Attachments scanning or attachment placeholders.
 
-## Scenarios where Safe Attachments doesn't scan messages
-
-There are scenarios where Safe Attachments is unable to scan messages:
+There are scenarios where Dynamic Delivery is unable to replace attachments in messages. These scenarios include:
 
 - Messages in public folders.
 
@@ -121,7 +120,7 @@ There are scenarios where Safe Attachments is unable to scan messages:
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) encrypted messages.
 
-- You configured the Dynamic Delivery action in a Safe Attachments policy, but the recipient doesn't support Dynamic Delivery (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Office 365 ATP](set-up-atp-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the Safe Links is configured).
+- You configured the Dynamic Delivery action in a Safe Attachments policy, but the recipient doesn't support Dynamic Delivery (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Office 365 ATP](set-up-atp-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the [global settings for Safe Links](configure-global-settings-for-safe-links.md) are configured).
 
 ## Submitting files for malware analysis
 

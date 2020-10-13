@@ -13,6 +13,13 @@ localization_priority: Priority
 ---
 # Push content types to a hub
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GyeV]  
+
+</br>
+
+
 To make important content types more consistently available to SharePoint libraries and lists, you can push them to the hubs that you choose. This automatically adds them to any new lists and libraries created on the sites associated with the hub, and to any new sites added to the hub.
 
 For this feature to work, The content types being pushed must already be published.

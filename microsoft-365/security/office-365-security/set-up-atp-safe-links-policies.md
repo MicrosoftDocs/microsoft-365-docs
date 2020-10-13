@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.date:
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -63,7 +63,7 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 - Allow up to 30 minutes for a new or updated policy to be applied.
 
-- [New features are continually being added to ATP](office-365-atp.md#new-features-in-office-365-atp). As new features are added, you may need to make adjustments to your existing ATP Safe Links policies.
+- [New features are continually being added to ATP](office-365-atp.md#new-features-in-office-365-atp). As new features are added, you may need to make adjustments to your existing Safe Links policies.
 
 ## Use the Security & Compliance Center to create Safe Links policies
 
@@ -83,15 +83,15 @@ Creating a custom Safe Links policy in the Security & Compliance Center creates 
 
 4. On the **Settings** page that appears, configure the following settings:
 
-   - **Select the action for unknown potentially malicious URLs in messages**: Select **On**.
+   - **Select the action for unknown potentially malicious URLs in messages**: Select **On** to enable Safe Links protection for links in email messages.
 
-   - **Select the action for unknown potentially malicious URLs in messages**: Select **On** or leave the default value **Off** selected.
+   - **Select the action for unknown or potentially malicious URLs within Microsoft Teams**: Select **On** to enable Safe Links protection for links in Teams.
 
    - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this setting to enable real-time scanning of links in email messages.
 
    - **Wait for URL scanning to complete before delivering the message**: Select this setting to wait for real-time URL scanning to complete before delivering the message.
 
-   - **Apply safe links to email messages sent within the organization**: Select this setting to apply the Safe Links policy to messages between internal senders and internal recipients.
+   - **Apply Safe Links to email messages sent within the organization**: Select this setting to apply the Safe Links policy to messages between internal senders and internal recipients.
 
    - **Do not track user clicks**: Leave this setting unselected to enable the tracking user clicks on URLs in email messages.
 
@@ -107,7 +107,7 @@ Creating a custom Safe Links policy in the Security & Compliance Center creates 
 
    For detailed information about these settings, see [Safe Links settings for email messages](atp-safe-links.md#safe-links-settings-for-email-messages) and [Safe Links settings for Microsoft Teams](atp-safe-links.md#safe-links-settings-for-microsoft-teams).
 
-   For more the recommended values for Standard and Strict policy settings, see [Safe Links policy settings in custom policies for specific users](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users).
+   For more the recommended values for Standard and Strict policy settings, see [Safe Links policy settings](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 
    When you're finished, click **Next**.
 
