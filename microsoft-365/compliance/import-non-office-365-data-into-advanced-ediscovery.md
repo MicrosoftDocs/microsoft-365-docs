@@ -69,7 +69,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
   
 10. Open a command prompt window and execute the AzCopy.exe command to import the data into Azure. Once it has loaded all of the data, select **Next: Process files**.
 
-11. The next tab is **3. Process files** where you will see the custodians that had data associated with them and will show you the progress of the data being imported.
+11. The next tab is **3. Process files** where you will see the custodians that have data associated with them and will also show you the progress of the data being imported.
         
     For more information on Azcopy syntax see, [Transfer data with the AzCopy on Windows](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) . 
     
