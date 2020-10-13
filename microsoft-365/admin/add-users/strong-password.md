@@ -45,6 +45,9 @@ You must also connect to Microsoft 365 with PowerShell.
     Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
     ```
 
+> [!NOTE]
+> The userPrincipalName must be in the Internet-style sign-in format where the user name is followed by the at sign (@) and a domain name: for example, user@contoso.com.
+
 ## Related content
 
 [More information on password policy](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)
