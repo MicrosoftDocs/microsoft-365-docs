@@ -28,6 +28,13 @@ This article provides step-by-step instructions to create a simplified environme
 
 ![The lightweight Microsoft 3656 Enterprise test environment](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
+Creating a lightweight test environment involves five phases:
+- [Phase 1: Create your Microsoft 365 E5 subscription](#phase-1-create-your-microsoft-365-e5-subscription)
+- [Phase 2: Configure your Office 365 trial subscription](#phase-2-configure-your-office-365-trial-subscription)
+- [Phase 3: Add a Microsoft 365 E5 trial subscription](#phase-3-add-a-microsoft-365-e5-trial-subscription)
+- [Phase 4: Create a Windows 10 Enterprise computer](#phase-4-create-a-windows-10-enterprise-computer)
+- [Phase 5: Join your Windows 10 computer to Azure AD](#phase-5-join-your-windows-10-computer-to-azure-ad)
+
 Use the resulting environment to test the features and functionality of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise).
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
@@ -51,20 +58,20 @@ To start your Microsoft 365 E5 trial subscription, you first need a fictitious c
     
 2. To sign up for a new Microsoft account, go to [https://outlook.com](https://outlook.com) and create an account with a new email account and address. You will use this account to sign up for Office 365.
     
-  - Record the first and last name of your new account here: ![Line](../media/Common-Images/TableLine.png)
+    - Record the first and last name of your new account here: ![Line](../media/Common-Images/TableLine.png)
     
-  - Record the new email account address here: ![Line](../media/Common-Images/TableLine.png)@outlook.com
+    - Record the new email account address here: ![Line](../media/Common-Images/TableLine.png)@outlook.com
     
 ### Sign up for an Office 365 E5 trial subscription
 
 1. In your browser, go to [https://aka.ms/e5trial](https://aka.ms/e5trial).
     
 2. On the **Thank you for choosing Office 365 E5** page, specify your new email account address in step 1.
-3. In step 2 of the trail subscription process, type the requested information, and then perform the verification.
-4. In step 3, type an organization name and then an account name that will be the global admin for the subscription.
+3. In step 2 of the trail subscription process, enter the requested information, and then perform the verification.
+4. In step 3, enter an organization name and then an account name that will be the global admin for the subscription.
 5. For step 4, record the sign-in page here (select and copy): ![Line](../media/Common-Images/TableLine.png)
 6. Record the user ID here: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com  
-   Record the password that you typed in a secure location.
+   Record the password that you entered in a secure location.
    This value will be referred to as the **global administrator name**.
 7. Select **Go to Setup**.
 8. In Office 365 E5 Setup, select **Continue using *your organization*.onmicrosoft.com for email and signing in**, and then select **Exit and continue later**.
@@ -77,7 +84,7 @@ In this phase, you configure your subscription with additional users and assign 
   
 To connect to your subscription with the Azure Active Directory PowerShell for Graph module from your computer, use the instructions in [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
     
-In the **Windows PowerShell Credential Request** dialog box, type the global administrator name (for example, *jdoe@contosotoycompany.onmicrosoft.com*) and password.
+In the **Windows PowerShell Credential Request** dialog box, enter the global administrator name (for example, *jdoe@contosotoycompany.onmicrosoft.com*) and password.
   
 Fill in your organization name (for example, *contosotoycompany*), the two-character country code for your location, a common account password, and then run the following commands from the PowerShell prompt:
 
@@ -280,9 +287,9 @@ Next, join the WIN10 computer to the Azure AD tenant of your Microsoft 365 E5 su
     
 2. In the **Set up a work or school account** dialog box, select **Join this device to Azure Active Directory**.
     
-3. In **Work or school account**, type the global administrator account name of your Microsoft 365 E5 subscription, and then select **Next**.
+3. In **Work or school account**, enter the global administrator account name of your Microsoft 365 E5 subscription, and then select **Next**.
     
-4. In **Enter password**, type the password for your global administrator account, and then select **Sign in**.
+4. In **Enter password**, enter the password for your global administrator account, and then select **Sign in**.
     
 5. When prompted to make sure that this is your organization, select **Join**, and then select **Done**.
     
