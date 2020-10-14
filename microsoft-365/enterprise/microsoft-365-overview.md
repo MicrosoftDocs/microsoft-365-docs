@@ -82,7 +82,7 @@ You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-3
 
 [Windows 7](https://aka.ms/win7upgrade) reached end of support on **January 14, 2020**.
 
-These products will reach end of support on **October 13, 2020**:
+These products reached end of support on **October 13, 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
