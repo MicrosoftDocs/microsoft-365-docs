@@ -130,7 +130,7 @@ When the tool finishes running, it produces an output file in comma-separated (.
 - Supported Mailbox - If they are on an OAuth-enabled mailbox
 
 > [!NOTE]
-> Multifactor authentication is not supported when using the Central Deployment for add-ins PowerShell module.
+> Multifactor authentication is not supported when using the Central Deployment PowerShell module.
   
 ## User and group assignments
 
