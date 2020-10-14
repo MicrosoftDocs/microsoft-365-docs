@@ -28,7 +28,7 @@ description: "Summary: Configure federated authentication for your Microsoft 365
 
 Microsoft 365 supports federated identity. This means that instead of performing the validation of credentials itself, Microsoft 365 refers the connecting user to a federated authentication server that Microsoft 365 trusts. If the user's credentials are correct, the federated authentication server issues a security token that the client then sends to Microsoft 365 as proof of authentication. Federated identity allows for the offloading and scaling up of authentication for a Microsoft 365 subscription and advanced authentication and security scenarios.
   
-This article describes how you can configure federated authentication for your Microsoft 365 test environment, resulting in the following:
+This article describes how to configure federated authentication for your Microsoft 365 test environment, resulting in the following:
 
 ![The federated authentication for Microsoft 365 test environment](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
   
@@ -38,17 +38,12 @@ This configuration consists of:
     
 - A simplified organization intranet connected to the internet, consisting of five virtual machines on a subnet of an Azure virtual network (DC1, APP1, CLIENT1, ADFS1, and PROXY1). Azure AD Connect runs on APP1 to synchronize the list of accounts in the Active Directory Domain Services domain to Microsoft 365. PROXY1 receives the incoming authentication requests. ADFS1 validates credentials with DC1 and issues security tokens.
     
-There are five phases to setting up this test environment:
-  
-1. Create the simulated enterprise test environment with password hash synchronization.
-    
-2. Create the Active Directory Federation Services (AD FS) server (ADFS1).
-    
-3. Create the web proxy server (PROXY1).
-    
-4. Create a self-signed certificate and configure ADFS1 and PROXY1.
-    
-5. Configure Microsoft 365 for federated identity.
+Setting up this test environment involves five phases:
+- [Phase 1: Configure password hash synchronization for your Microsoft 365 test environment](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
+- [Phase 2: Create the AD FS server](#phase-2-create-the-ad-fs-server)
+- [Phase 3: Create the web proxy server](#phase-3-create-the-web-proxy-server)
+- [Phase 4: Create a self-signed certificate and configure ADFS1 and PROXY1](#phase-4-create-a-self-signed-certificate-and-configure-adfs1-and-proxy1)
+- [Phase 5: Configure Microsoft 365 for federated identity](#phase-5-configure-microsoft-365-for-federated-identity)
     
 > [!NOTE]
 > You can't configure this test environment with an Azure Trial subscription.
@@ -199,7 +194,7 @@ New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
 
 Next, use these steps to save the new self-signed certificate as a file.
   
-1. Select **Start**, type **mmc.exe**, and then press **Enter**.
+1. Select **Start**, enter **mmc.exe**, and then press **Enter**.
     
 2. Select **File** > **Add/Remove Snap-in**.
     
@@ -217,11 +212,11 @@ Next, use these steps to save the new self-signed certificate as a file.
     
 9. On the **Export File Format** page, select **Export all extended properties**, and then select **Next**.
     
-10. On the **Security** page, select **Password** and type a password in **Password** and **Confirm password.**
+10. On the **Security** page, select **Password** and enter a password in **Password** and **Confirm password.**
     
 11. On the **File to Export** page, select **Browse**.
     
-12. Browse to the **C:\\Certs** folder, type **SSL** in **File name**, and then select **Save.**
+12. Browse to the **C:\\Certs** folder, enter **SSL** in **File name**, and then select **Save.**
     
 13. On the **File to Export** page, select **Next**.
     
@@ -251,15 +246,15 @@ Next, configure the AD FS service with these steps:
     
   - For **SSL Certificate**, select the down arrow, and then select the certificate with the name of your federation service FQDN.
     
-  - In **Federation Service Display Name**, type the name of your fictional organization.
+  - In **Federation Service Display Name**, enter the name of your fictional organization.
     
   - Select **Next**.
     
 7. On the **Specify Service Account** page, select **Select** for **Account name**.
     
-8. In **Select User or Service Account**, type **ADFS-Service**, select **Check Names**, and then select **OK**.
+8. In **Select User or Service Account**, enter **ADFS-Service**, select **Check Names**, and then select **OK**.
     
-9. In **Account Password**, type the password for the ADFS-Service account, and then select **Next**.
+9. In **Account Password**, enter the password for the ADFS-Service account, and then select **Next**.
     
 10. On the **Specify Configuration Database** page, select **Next**.
     
@@ -275,7 +270,7 @@ From the [Azure portal](https://portal.azure.com), connect to PROXY1 with the CO
   
 Next, use these steps to install the self-signed certificate on **both PROXY1 and APP1**.
   
-1. Select **Start**, type **mmc.exe**, and then press **Enter**.
+1. Select **Start**, enter **mmc.exe**, and then press **Enter**.
     
 2. Select **File > Add/Remove Snap-in**.
     
@@ -289,9 +284,9 @@ Next, use these steps to install the self-signed certificate on **both PROXY1 an
     
 7. On the **Welcome** page, select **Next**.
     
-8. On the **File to Import** page, type **\\\\adfs1\\certs\\ssl.pfx**, and then select **Next**.
+8. On the **File to Import** page, enter **\\\\adfs1\\certs\\ssl.pfx**, and then select **Next**.
     
-9. On the **Private key protection** page, type the certificate password in **Password**, and then select **Next.**
+9. On the **Private key protection** page, enter the certificate password in **Password**, and then select **Next.**
     
 10. On the **Certificate store** page, select **Next.**
     
@@ -329,11 +324,11 @@ Use these steps to configure the web application proxy service to use ADFS1 as i
     
 5. On the **Federation Server** page:
     
-  - In the **Federation service name** box, type your federation service FQDN.
+  - In the **Federation service name** box, enter your federation service FQDN.
     
-  - In the **User name** box, type **CORP\\User1**.
+  - In the **User name** box, enter **CORP\\User1**.
     
-  - In the **Password** box, type the password for the User1 account.
+  - In the **Password** box, enter the password for the User1 account.
     
   - Select **Next**.
     
@@ -355,17 +350,17 @@ Use these steps to configure Azure AD Connect and your Microsoft 365 subscriptio
     
 3. On the **Additional tasks** page, select **Change user sign-in**, and then select **Next**.
     
-4. On the **Connect to Azure AD** page, type your global administrator account name and password, and then select **Next**.
+4. On the **Connect to Azure AD** page, enter your global administrator account name and password, and then select **Next**.
     
 5. On the **User sign-in** page, select **Federation with AD FS**, and then select **Next**.
     
-6. On the **AD FS farm** page, select **Use an existing AD FS farm**, type **ADFS1** in the **Server Name** box, and then select **Next**.
+6. On the **AD FS farm** page, select **Use an existing AD FS farm**, enter **ADFS1** in the **Server Name** box, and then select **Next**.
     
 7. When prompted for server credentials, enter the credentials of the CORP\\User1 account, and then select **OK**.
     
-8. On the **Domain Administrator** credentials page, type **CORP\\User1** in the **Username** box, type the account password in the **Password** box, and then select **Next**.
+8. On the **Domain Administrator** credentials page, enter **CORP\\User1** in the **Username** box, enter the account password in the **Password** box, and then select **Next**.
     
-9. On the **AD FS service account** page, type **CORP\\ADFS-Service** in the **Domain Username** box, type the account password in the **Domain User Password** box, and then select **Next**.
+9. On the **AD FS service account** page, enter **CORP\\ADFS-Service** in the **Domain Username** box, enter the account password in the **Domain User Password** box, and then select **Next**.
     
 10. On the **Azure AD Domain** page, in **Domain**, select the name of the domain that you previously created and added to your subscription in Phase 1, and then select **Next**.
     
@@ -381,9 +376,9 @@ To demonstrate that federated authentication is working:
   
 1. Open a new private instance of your browser on your local computer and go to [https://admin.microsoft.com](https://admin.microsoft.com).
     
-2. For the sign-in credentials, type **user1@**\<*the domain created in Phase 1*>.
+2. For the sign-in credentials, enter **user1@**\<*the domain created in Phase 1*>.
     
-    For example, if your test domain is **testlab.contoso.com**, you would type "user1@testlab.contoso.com". Press the **Tab** key or allow Microsoft 365 to automatically redirect you.
+    For example, if your test domain is **testlab.contoso.com**, you would enter "user1@testlab.contoso.com". Press the **Tab** key or allow Microsoft 365 to automatically redirect you.
     
     You should now see a **Your connection is not private** page. You are seeing this because you installed a self-signed certificate on ADFS1 that your desktop computer can't validate. In a production deployment of federated authentication, you would use a certificate from a trusted certification authority and your users would not see this page.
     
