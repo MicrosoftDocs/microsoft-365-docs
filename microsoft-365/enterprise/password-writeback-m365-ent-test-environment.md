@@ -26,13 +26,12 @@ description: "Summary: Configure password writeback for your Microsoft 365 test 
 
 Users can use password writeback to update their passwords through Azure Active Directory (Azure AD), which is then replicated to your local Active Directory Domain Services (AD DS). With password writeback, users don't have to update their passwords through the on-premises AD DS where their original user accounts are stored. This helps roaming or remote users who don't have a remote access connection to their on-premises network.
 
-This article describes how you can configure your Microsoft 365 test environment for password writeback.
+This article describes how to configure your Microsoft 365 test environment for password writeback.
 
-To set this up, there are two phases:
-
-1. Create the Microsoft 365 simulated enterprise test environment with password hash synchronization.
-2. Enable password writeback for the TESTLAB AD DS domain.
-    
+Configuring your test environment for password writeback involves two phases:
+- [Phase 1: Configure password hash synchronization for your Microsoft 365 test environment](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
+- [Phase 2: Enable password writeback for the TESTLAB AD DS domain](#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain)
+  
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
@@ -68,7 +67,7 @@ Next, configure the User 1 account with the security settings that allow it to c
 
 1. From the [Azure portal](https://portal.azure.com), sign in with your global administrator account, and then connect to APP1 with the TESTLAB\User1 account.
 
-2. From the desktop of APP1, select **Start**, type **active**, and then select **Active Directory Users and Computers**.
+2. From the desktop of APP1, select **Start**, enter **active**, and then select **Active Directory Users and Computers**.
 
 3. On the menu bar, select **View**. If **Advanced features** is not enabled, select it to enable it.
 
@@ -78,7 +77,7 @@ Next, configure the User 1 account with the security settings that allow it to c
 
 6. On the **Permissions** tab, select **Add**.
 
-7. Select **Select a principal**, type **User1**, and then select **OK**.
+7. Select **Select a principal**, enter **User1**, and then select **OK**.
 
 8. In **Applies to**, select **Descendant User objects**.
 
@@ -105,7 +104,7 @@ Next, configure Azure AD Connect on APP1 for password writeback.
 
 4. On the **Additional tasks** page, select **Customize synchronization options**, and then select **Next**.
 
-5. On the **Connect to Azure AD** page, type your global administrator account credentials, and then select **Next**.
+5. On the **Connect to Azure AD** page, enter your global administrator account credentials, and then select **Next**.
 
 6. On the **Connect directories** and **Domain/OU filtering** pages, select **Next**.
 
