@@ -11,12 +11,17 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 search.appverid: met150
 ---
 
 # Overview of the Microsoft 365 security center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Managing the security of your business to protect against an ever-evolving threat landscape brings many challenges. You might have too many security solutions with various places to configure lots of controls. You may struggle with knowing which controls are the most effective and which will introduce new challenges for your workforce. It can be difficult for security teams to find the right balance of security and productivity.
 

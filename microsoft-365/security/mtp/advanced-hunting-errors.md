@@ -15,11 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
 # Handle advanced hunting errors
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Advanced hunting displays errors to notify for syntax mistakes and whenever queries hit [predefined limits](advanced-hunting-limits.md). Refer to the table below for tips on how to resolve or avoid errors. 
 

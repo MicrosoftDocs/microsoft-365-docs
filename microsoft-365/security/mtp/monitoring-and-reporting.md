@@ -11,13 +11,18 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
 ---
 
 # Monitor and view reports in the Microsoft 365 security center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 The Microsoft 365 security center provides a summary of protection and security statuses across your Microsoft 365 environment.
 

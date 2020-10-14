@@ -13,12 +13,16 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid:
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-defender-office365
 description: "Admins can view frequently asked questions and answers about anti-spoofing protection in Exchange Online Protection (EOP)."
 ---
 
 # Anti-spoofing protection FAQ
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 This article provides frequently asked questions and answers about anti-spoofing protection for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
 

@@ -11,11 +11,10 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Admins can set up a TeleMessage connector to import and archive SMS and MMS data from the Verizon Network in Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive Verizon Network data (preview)
+# Set up a connector to archive Verizon Network data
 
 Use the TeleMessage connector in the Microsoft 365 compliance center to import and archive Short Messaging Service (SMS) and Multimedia Messaging Service (MMS) data from Verizon Network. After you set up and configure a connector, it connects to your organization's Verizon Network once every day and imports SMS and MMS data to mailboxes in Microsoft 365.
 
@@ -83,4 +82,4 @@ After you've completed the prerequisites described in the previous section, you 
 
 ## Known issues
 
-- At this time, we don't support importing attachments larger than 10 MB but support for larger items will be available at a later date.
+- At this time, we don't support importing attachments or items that are larger than 10 MB. Support for larger items will be available at a later date.

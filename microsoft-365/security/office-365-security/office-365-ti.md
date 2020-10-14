@@ -14,14 +14,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.custom:
 - seo-marvel-apr2020
 description: "Learn about threat investigation and response capabilities in Office 365 Advanced Threat Protection Plan."
 ---
 
 # Threat investigation and response
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Threat investigation and response capabilities in [Office 365 Advanced Threat Protection](office-365-atp.md) help security analysts and administrators protect their organization's Microsoft 365 for business users by:
 - Making it easy to identify, monitor, and understand cyberattacks

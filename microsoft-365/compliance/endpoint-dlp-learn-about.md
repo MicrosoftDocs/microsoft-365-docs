@@ -14,7 +14,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
-- SPO_Content
+- m365solution-mip
+- m365initiative-compliance
 search.appverid: 
 - MET150
 description: "Microsoft 365 Endpoint data loss prevention extends monitoring of file activities and protective actions for those file to endpoints. Files are made visible in the Microsoft 365 compliance solutions "
@@ -115,7 +116,7 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 - device name
 - destination location type
 - application that performed the copy
-- MDATP device ID (if applicable)
+- Microsoft Defender for Endpoint device ID (if applicable)
 - removable media device manufacturer
 - removable media device model
 - removable media device serial number
