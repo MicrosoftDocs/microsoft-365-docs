@@ -42,7 +42,8 @@ As an admin, you can also make changes to your selected settings anytime after s
 
 3. On the **Automate content understanding** page, click **Get started** to walk through the setup process.<br/>
 
-    ![Begin setup](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    > [!div class="mx-imgBorder"]
+    > ![Begin setup](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 4. On the **Configure Form Processing** page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
@@ -51,18 +52,22 @@ As an admin, you can also make changes to your selected settings anytime after s
       - **Only libraries in selected sites**, and then select the sites in which you want to make it available or upload a list of up to 50 sites.</br>
       - **No SharePoint libraries** if you don't want to make it available to any sites (you can change this after setup).
 
-   ![Configure form processing](../media/content-understanding/admin-configforms.png)
+   > [!div class="mx-imgBorder"]
+   > ![Configure form processing](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > Removing a site after it has been included does not affect existing models applied to the libraries in that site or the ability to apply document understanding models to a library. 
     
-5. On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models. </br>
-    a. For **Site name**, type the name you want to give your content center site.</br>
-    b. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, click **Edit**.</br>
+5. On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models.
 
-      ![Create content center](../media/content-understanding/admin-cu-create-cc.png)</br>
+    1. For **Site name**, type the name you want to give your content center site.
+    
+    1. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, click **Edit**.
 
-    Select **Next**.
+       > [!div class="mx-imgBorder"]
+       > ![Create content center](../media/content-understanding/admin-cu-create-cc.png)</br>
+
+       Select **Next**.
 
 6. On the **Review and finish** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
 
@@ -84,7 +89,8 @@ To assign licenses:
 
 4. Select **Intelligent Content Services**. Under **Apps**, make sure **Common Data Service for Intelligent Content Services** and **Intelligent Content Services** are both selected.
 
-    ![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > [!div class="mx-imgBorder"]
+    > ![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. Click **Save changes**.
 
