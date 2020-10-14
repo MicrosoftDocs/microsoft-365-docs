@@ -29,7 +29,7 @@ ms.custom: seo-marvel-apr2020
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Office 2010 and Exchange 2010 will reach their end of support on **October 13, 2020**.
+Office 2010 and Exchange 2010 reached their end of support on **October 13, 2020**.
 
 SharePoint 2010 and Project Server 2010 will reach their end of support on **April 13, 2021**.
 

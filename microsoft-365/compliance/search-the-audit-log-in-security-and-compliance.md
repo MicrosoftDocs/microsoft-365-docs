@@ -452,6 +452,24 @@ The following table describes the file and page activities in SharePoint Online 
 |(none)|PagePrefetched|A user's client (such as website or mobile app) has requested the indicated page to help improve performance if the user browses to it. This event is logged to indicate that the page content has been served to the user's client. This event isn't a definitive indication that the user navigated to the page. <br/><br/> When the page content is rendered by the client (as per the user's request) a ClientViewSignaled event should be generated. Not all clients support indicating a pre-fetch, and therefore some pre-fetched activities might instead be logged as PageViewed events.|
 ||||
 
+#### Frequently asked questions about FileAccessed and FilePreviewed events
+
+**Could any non-user activities trigger FilePreviewed audit records that contains a user agent like "OneDriveMpc-Transform_Thumbnail"?**
+
+We aren't aware of scenarios where non-user actions generate events like these. User actions like opening a user profile card (by clicking their name or email address in a message in Outlook on the web) would generate similar events.
+
+**Are calls to the OneDriveMpc-Transform_Thumbnail always intentionally being triggered by the user?**
+
+No. But similar events can be logged as a result of browser pre-fetch.
+
+**If we see a FilePreviewed event coming from a Microsoft-registered IP address, does that mean that the preview was displayed on the screen of the user's device?**
+
+No. The event might have been logged as a result of browser pre-fetch.
+
+**Are there scenarios where a user previewing a document generates FileAccessed events?**
+
+Both the FilePreviewed and FileAccessed events indicate that a user's call led to a read of the file (or a read of a thumbnail rendering of the file). While these events are intended to align with preview vs. access intention, the event distinction isn't a guarantee of the user's intent.
+
 #### The app\@sharepoint user in audit records
 
 In audit records for some file activities (and other SharePoint-related activities), you may notice the user who performed the activity (identified in the User and UserId fields) is app@sharepoint. This indicates that the "user" who performed the activity was an application. In this case, the application was granted permissions in SharePoint to perform organization-wide actions (such as search a SharePoint site or OneDrive account) on behalf of a user, admin, or service. This process of giving permissions to an application is called *SharePoint App-Only* access. This indicates that the authentication presented to SharePoint to perform an action was made by an application, instead of a user. This is why the app@sharepoint user is identified in certain audit records. For more information, see [Grant access using SharePoint App-Only](https://docs.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs).
