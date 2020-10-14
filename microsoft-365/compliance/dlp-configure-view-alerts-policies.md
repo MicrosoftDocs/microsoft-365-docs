@@ -110,7 +110,7 @@ If you're eligible for [aggregated alert configuration options](#aggregated-aler
 then you see the following options inline in the DLP policy authoring
 experience.
 
-:::image type="content" source="media/incident-reports-options-aggregated-alerts.png" alt-text="Screenshot showing options for incident reports for users who are eligible for aggregated alert configuration options.":::
+:::image type="content" source="../../media/incident-reports-options-aggregated-alerts.png" alt-text="Screenshot showing options for incident reports for users who are eligible for aggregated alert configuration options.":::
 
 You can use these alert configuration options to configure a setting
 that defines how often a DLP rule match can occur before an alert is
@@ -125,7 +125,7 @@ alert configuration option in the DLP policy authoring experience. Use
 this option to create an alert that's raised every time a DLP rule match
 happens because of a user activity.
 
-:::image type="content" source="media/incident-reports-options-single-event-alerts.png" alt-text="Screenshot showing options for incident reports for users who are eligible for single-event alert configuration options.":::
+:::image type="content" source="../../media/incident-reports-options-single-event-alerts.png" alt-text="Screenshot showing options for incident reports for users who are eligible for single-event alert configuration options.":::
 
 ## DLP alert management dashboard
 
@@ -143,7 +143,7 @@ To work with the DLP alert management dashboard:
         any column.
     -   Select an alert to see details:
 
-        :::image type="content" source="media/alert-details.png" alt-text="Screenshot showing alert details on the DLP alert management dashboard.":::
+        :::image type="content" source="../../mediaalert-details.png" alt-text="Screenshot showing alert details on the DLP alert management dashboard.":::
 
 1.  Select the **Events** tab to view all of the events associated with
     the alert. You can choose a particular event to view its details.
