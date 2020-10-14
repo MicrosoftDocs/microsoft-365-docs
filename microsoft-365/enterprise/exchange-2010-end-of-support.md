@@ -3,7 +3,6 @@ title: "Exchange 2010 end of support roadmap"
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 09/16/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,11 +18,11 @@ description: "Exchange 2010 is nearing end of support. Use this planning roadmap
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-On **October 13, 2020**, Exchange Server 2010 will reach end of support. If you haven't already begun your migration from Exchange 2010 to Microsoft 365, Office 365, or Exchange 2016, now's the time to start your planning.
+Exchange Server 2010 reached its end of support on **October 13, 2020**. If you haven't already begun your migration from Exchange 2010 to Microsoft 365, Office 365, or Exchange 2016, now's the time to start your planning.
 
 ## What does end of support mean?
 
-Exchange Server, like almost all Microsoft products, has a support lifecycle during which we provide new features, bug fixes, security fixes, and so on. This lifecycle typically lasts for 10 years from the date of the product's initial release, and the end of this lifecycle is known as the product's end of support. When Exchange 2010 reaches its end of support on October 13, 2020, Microsoft will no longer provide:
+Exchange Server, like almost all Microsoft products, has a support lifecycle during which we provide new features, bug fixes, security fixes, and so on. This lifecycle typically lasts for 10 years from the date of the product's initial release, and the end of this lifecycle is known as the product's end of support. Because Exchange 2010 reached its end of support on October 13, 2020, Microsoft will no longer provide:
 
 - Technical support for problems that may occur.
 - Bug fixes for issues that are discovered and that may impact the stability and usability of the server.
@@ -44,8 +43,8 @@ With Exchange 2010 reaching its end of support, this is a great time to explore 
 > [!IMPORTANT]
 > If your organization chooses to migrate mailboxes to Microsoft 365 but intends to keep DirSync or Azure AD Connect in place to continue managing user accounts from on-premises Active Directory, you need to keep at least one Exchange server on-premises. If the last Exchange server is removed, you won't be able to make changes to Exchange recipients in Exchange Online. This is because the source of authority remains in your on-premises Active Directory and changes need to be made there. In this scenario, you have the following options:
 
-- (**Recommended**) If you can migrate your mailboxes to Microsoft 365 and upgrade your servers by October 13, 2020, use Exchange 2010 to connect to Microsoft 365 and migrate mailboxes. Next, migrate Exchange 2010 to Exchange 2016 and decommission any remaining Exchange 2010 servers.
-- If you can't complete the mailbox migration and on-premises server upgrade by October 13, 2020, upgrade your on-premises Exchange 2010 servers to Exchange 2016 first, then use Exchange 2016 to connect to Microsoft 365 and migrate mailboxes.
+- (**Recommended**) If you were able to migrate your mailboxes to Microsoft 365 and upgrade your servers by October 13, 2020, use Exchange 2010 to connect to Microsoft 365 and migrate mailboxes. Next, migrate Exchange 2010 to Exchange 2016 and decommission any remaining Exchange 2010 servers.
+- If you couldn't complete the mailbox migration and on-premises server upgrade by October 13, 2020, upgrade your on-premises Exchange 2010 servers to Exchange 2016 first, then use Exchange 2016 to connect to Microsoft 365 and migrate mailboxes.
 
 > [!NOTE]
 > While a little more complicated, you may also migrate mailboxes to Microsoft 365 while migrating your on-premises Exchange 2010 servers to Exchange 2016.
