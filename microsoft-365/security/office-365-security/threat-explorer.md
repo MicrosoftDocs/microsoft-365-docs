@@ -45,7 +45,8 @@ With this report, you can:
 
 ## Tags in Threat Explorer
 
-[!NOTE] The user tags feature is in Preview, isn't available to everyone, and is subject to change. For information about the release schedule, check out the Microsoft 365 roadmap.
+> [!NOTE] 
+> The user tags feature is in Preview, isn't available to everyone, and is subject to change. For information about the release schedule, check out the Microsoft 365 roadmap.
 
 User tags are identifiers for specific groups of users in Microsoft Defender for Office 365. For more information around Tags, licensing and configuring Tags, read more here: [User tags in Office 365 ATP](user-tags.md).
 
@@ -165,12 +166,15 @@ System overrides are a method of making exceptions to the intended delivery loca
 
 The set of improvements focused towards URL and URL clicks data include:
 
--	Showing full Clicked URL (including any query Parameters which are part of URL) within the Clicks Section in URL Flyout. Currently we show the URL domain and path in title bar. We're extending that information to show the full URL.
--	Fixes across URL filters (URL vs URL domain vs URL Domain and path): We've made updates around searching for messages that contain a URL/Click verdict. As part of that, we've enabled support for protocol agnostic searches (meaning, you can directly search for a URL without http). By default, the URL search maps to http, unless explicitly specified. For example:
+ - Showing full Clicked URL (including any query Parameters which are part of URL) within the Clicks Section in URL Flyout. Currently we show the URL domain and path in title bar. We're extending that information to show the full URL.
+ 
+ - Fixes across URL filters (URL vs URL domain vs URL Domain and path): We've made updates around searching for messages that contain a URL/Click verdict. As part of that, we've enabled support for protocol agnostic searches (meaning, you can directly search for a URL without http). By default, the URL search maps to http, unless explicitly specified. For example:
 
-  a.	Search with and without the `http://` prefix in "URL", "URL Domain", and "URL Domain and Path" filter fields. This behavior is consistent, and should show the same result.
-  b.	Search for the `https://` prefix in "URL". When not present, the `http://` prefix is assumed.
-  c.	 `/` in beginning and end of the "URL path", "URL Domain", "URL domain and path" fields is ignored. `/` at the end of the "URL" field is ignored. 
+   1. Search with and without the `http://` prefix in "URL", "URL Domain", and "URL Domain and Path" filter fields. This behavior is consistent, and should show the same result.
+   
+   1. Search for the `https://` prefix in "URL". When not present, the `http://` prefix is assumed.
+   
+   1. `/` in beginning and end of the "URL path", "URL Domain", "URL domain and path" fields is ignored. `/` at the end of the "URL" field is ignored. 
 
 ### Phish Confidence Level
 
