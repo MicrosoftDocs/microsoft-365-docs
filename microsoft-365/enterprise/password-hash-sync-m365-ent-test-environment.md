@@ -25,14 +25,16 @@ description: "Summary: Configure and demonstrate password hash synchronization a
 
 *This Test Lab Guide can be used for both Microsoft 365 for enterprise and Office 365 Enterprise test environments.*
 
-Many organizations use Azure AD Connect and password hash synchronization to synchronize the set of accounts in their on-premises Active Directory Domain Services (AD DS) forest to the set of accounts in the Azure AD tenant of their Microsoft 365 subscription. This article describes how you can add password hash synchronization to your Microsoft 365 test environment, which results in this configuration:
+Many organizations use Azure AD Connect and password hash synchronization to synchronize the set of accounts in their on-premises Active Directory Domain Services (AD DS) forest to the set of accounts in the Azure AD tenant of their Microsoft 365 subscription. 
+
+This article describes how you can add password hash synchronization to your Microsoft 365 test environment, which results in this configuration:
   
 ![The simulated enterprise with password hash synchronization test environment](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
-To set up this test environment, there are two phases:
-  
-1. Create the Microsoft 365 simulated enterprise test environment.
-2. Install and configure Azure AD Connect on APP1.
+Setting up this test environment involves three phases:
+- [Phase 1: Create the Microsoft 365 simulated enterprise test environment](#phase-1-create-the-microsoft-365-simulated-enterprise-test-environment)
+- [Phase 2: Create and register the testlab domain](#phase-2-create-and-register-the-testlab-domain)
+- [Phase 3: Install Azure AD Connect on APP1](#phase-3-install-azure-ad-connect-on-app1)
     
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf).
@@ -95,9 +97,9 @@ First, install and configure Azure AD Connect on APP1.
     
 6. On the **Express Settings** page, select **Use express settings**.
     
-7. On the **Connect to Azure AD** page, type your global administrator account name in **Username,** type its password in **Password**, and then select **Next**.
+7. On the **Connect to Azure AD** page, enter your global administrator account name in **Username,** enter its password in **Password**, and then select **Next**.
     
-8. On the **Connect to AD DS** page, type **TESTLAB\\User1** in **Username,** type its password in **Password**, and then select **Next**.
+8. On the **Connect to AD DS** page, enter **TESTLAB\\User1** in **Username,** enter its password in **Password**, and then select **Next**.
     
 9. On the **Ready to configure** page, select **Install**.
     
