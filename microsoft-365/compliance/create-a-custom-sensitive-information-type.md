@@ -30,16 +30,14 @@ Copy a OOB SIT
 -->
 
 <!-- rename md file to match the display name -->
-# Create a custom sensitive information type in the Security & Compliance Center
+# Create a custom sensitive information type in the Compliance Center
 
-Read this article to create a custom sensitive information type in the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). The custom sensitive information types that you create by using this method are added to the rule package named `Microsoft.SCCManaged.CustomRulePack`.
+If the pre-configured sensitive information types don't meet your needs, you can create your own custom sensitive information types that you fully define or you can copy one of the pre-configured ones and modify it.
 
-You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities. To learn more about those methods, see:
-- [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Create a custom sensitive information type for DLP with Exact Data Match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+The custom sensitive information types that you create by using this method are added to the rule package named `Microsoft.SCCManaged.CustomRulePack`.
 
 > [!NOTE]
-> Microsoft 365 Information Protection now  supports in preview double byte character set languages for:
+> Microsoft 365 Information Protection supports, in preview, double byte character set languages for:
 > - Chinese (simplified)
 > - Chinese (traditional)
 > - Korean
@@ -57,36 +55,44 @@ You can also create custom sensitive information types by using PowerShell and E
 
 ## Before you begin
 
-> [!NOTE]
-> You should have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI. See [About admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) in Office 365.
+- You should be familiar with sensitive information types and what they are composed of. See, [Learn about sensitive information types](sensitive-information-type-learn-about.md). It is critical to understand the roles of:
+    - [regular expressions](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/) - Microsoft 365 sensitive information types uses the Boost.RegEx 5.1.3 engine
+    - keyword lists - you can create your own as you define your sensitive information type or choose from existing keyword lists
+    - [keyword dictionary](create-a-keyword-dictionary.md)
+    - [functions](what-the-dlp-functions-look-for.md)
+    - [confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels)
+ 
+- You must have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI. See [About admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) in Office 365.
 
 - Your organization must have a subscription, such as Office 365 Enterprise, that includes Data Loss Prevention (DLP). See [Messaging Policy and Compliance ServiceDescription](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 
-- Custom sensitive information types require familiarity with regular expressions (RegEx). For more information about the Boost.RegEx (formerly known as RegEx++) engine that's used for processing the text, see [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 
-  Microsoft Customer Service & Support can't assist with creating custom classifications or regular expression patterns. Support engineers can provide limited support for the feature, such as, providing sample regular expression patterns for testing purposes, or assisting with troubleshooting an existing regular expression pattern that's not triggering as expected, but can't provide assurances that any custom content-matching development will fulfill your requirements or obligations.
+> [!IMPORTANT]
+> Microsoft Customer Service & Support can't assist with creating custom classifications or regular expression patterns. Support engineers can provide limited support for the feature, such as, providing sample regular expression patterns for testing purposes, or assisting with troubleshooting an existing regular expression pattern that's not triggering as expected, but can't provide assurances that any custom content-matching development will fulfill your requirements or obligations.
 
-- DLP uses the search crawler to identify and classify sensitive information in SharePoint Online and OneDrive for Business sites. To identify your new custom sensitive information type in existing content, the content must be re-crawled. Content is crawled based on a schedule, but you can manually re-crawl content for a site collection, list, or library. For more information, see [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
-## Create custom sensitive information types in the Security & Compliance Center
 
-In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and click **Create**.
+## Create custom sensitive information types in the Compliance Center
 
-The settings are fairly self-evident, and are explained on the associate page of the wizard:
+Use this procedure to create a new sensitive information type that you fully define. 
 
-- **Name**
+1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose **Create info type**.
+2. Fill in values for **Name** and **Description** and choose **Next**.
+3. Choose **Create pattern**. You can create multiple patterns, each with different elements and confidence levels, as you define your new sensitive information type.
+4. Choose the default confidence level for the pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
+5. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**.
+6. Fill in a value for **Character proximity**.
+7. (Optional) If you have **Supporting elements** or any **Additional checks** add them. If needed you can group your **Supporting elements**.
+8. Choose **Create**.
+9. Choose **Next**.
+10. Choose the **recommended confidence level** for this sensitive information type.
+11. Check your setting and choose **Submit**.   
 
-- **Description**
+> [!IMPORTANT]
+> Microsoft 365 uses the search crawler to identify and classify sensitive information in SharePoint Online and OneDrive for Business sites. To identify your new custom sensitive information type in existing content, the content must be re-crawled. Content is crawled based on a schedule, but you can manually re-crawl content for a site collection, list, or library. For more information, see [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
-- **Proximity**
 
-- **Confidence level**
-
-- **Primary pattern element** (keywords, regular expression, or dictionary)
-
-- Optional **Supporting pattern elements** (keywords, regular expression, or dictionary) and a corresponding **Minimum cost** value.
-
-Here's a scenario: You want a custom sensitive information type that detects 9-digit employee numbers in content, along with the keywords "employee" "ID" and "badge". To create this custom sensitive information type, do the following steps:
+<!-- Here's a scenario: You want a custom sensitive information type that detects 9-digit employee numbers in content, along with the keywords "employee" "ID" and "badge". To create this custom sensitive information type, do the following steps:
 
 1. In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and click **Create**.
 
@@ -128,9 +134,9 @@ Here's a scenario: You want a custom sensitive information type that detects 9-d
 
 4. On the **Review and finalize** page that opens, review the settings and click **Finish**.
 
-    ![Review and finalize page](../media/scc-cust-sens-info-type-new-review.png)
+    ![Review and finalize page](../media/scc-cust-sens-info-type-new-review.png) -->
 
-5. The next page encourages you to test the new custom sensitive information type by clicking **Yes**. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center). To test the rule later, click **No**.
+The next page encourages you to test the new custom sensitive information type by clicking **Yes**. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center). To test the rule later, click **No**.
 
     ![Test recommendation page](../media/scc-cust-sens-info-type-new-test.png)
 
@@ -201,3 +207,8 @@ To verify that you've successfully removed a custom sensitive information type, 
 5. On the **Match results** page, click **Finish**.
 
     ![Match results](../media/scc-cust-sens-info-type-test-results.png)
+
+
+You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities. To learn more about those methods, see:
+- [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Create a custom sensitive information type for DLP with Exact Data Match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

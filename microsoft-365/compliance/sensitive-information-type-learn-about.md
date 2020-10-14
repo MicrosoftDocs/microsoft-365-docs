@@ -43,7 +43,7 @@ Every sensitive information type entity is defined by these fields:
 - name: how the sensitive information type is referred to
 - description – describes what the sensitive information type is looking for
 - pattern: A pattern defines what a sensitive information type detects. It consists of the following components
-    - Primary element – the main element which the sensitive information type is looking for. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
+    - Primary element – the main element which the sensitive information type is looking for. It can be a **regular expression** with or without a checksum validation, a **keyword list**, a **keyword dictionary**, or a **function**.
     - Supporting element – elements that act as supporting evidence that help in increasing the confidence of the match. For example, keyword “SSN” in proximity of an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
     - Proximity – Number of characters between primary and supporting element
     
