@@ -26,12 +26,12 @@ To manage many properties of user account for Skype for Business Online, you mus
 
 Use these instructions to get set up to run the commands (skip the steps you have already completed):
   
-1. Download and install the [Skype for Business Online Connector module](https://www.microsoft.com/download/details.aspx?id=39366).
+1. Install the [Teams PowerShell module](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
     
 2. Open a Windows PowerShell command prompt and run the following commands: 
     
 ```powershell
-Import-Module SkypeOnlineConnector
+Import-Module MicrosoftTeams
 $userCredential = Get-Credential
 $sfbSession = New-CsOnlineSession -Credential $userCredential
 Import-PSSession $sfbSession
