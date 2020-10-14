@@ -265,9 +265,9 @@ To go back to the report view, click **View report**.
 
 ## Threat protection status report
 
-The **Threat protection status** report is available in both EOP and Office 365 ATP; however, the reports contain different data. For example, EOP customers can view information about malware detected in email, but not information about [malicious files detected in SharePoint Online, OneDrive, or Microsoft Teams](atp-for-spo-odb-and-teams.md).
+The **Threat protection status** report is available in both EOP and Office 365 ATP; however, the reports contain different data. For example, EOP customers can view information about malware detected in email, but not information about [malicious files detected by ATP for SharePoint, OneDrive, or Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
-The report provides the count of email messages with malicious content, such as files or website addresses (URLs) that were blocked by the anti-malware engine, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), and ATP features like [ATP Safe Links](atp-safe-links.md), [ATP Safe Attachments](atp-safe-attachments.md), and [ATP anti-phishing](set-up-anti-phishing-policies.md). You can use this information to identify trends or determine whether organization policies need adjustment. It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.
+The report provides the count of email messages with malicious content, such as files or website addresses (URLs) that were blocked by the anti-malware engine, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), and ATP features like [Safe Links](atp-safe-links.md), [Safe Attachments](atp-safe-attachments.md), and [ATP anti-phishing](set-up-anti-phishing-policies.md). You can use this information to identify trends or determine whether organization policies need adjustment. It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Threat protection status**. To go directly to the report, open one of the following URLs:
 
@@ -359,8 +359,13 @@ The following views are available:
 If you click **Filters**, you can modify the report with the following filters:
 
 - **Start date** and **End date**
-- Detection value
-- **Protected by** (Office 365 ATP only): **ATP** or **EOP**. Note that this filterable property isn't available in **View data by: Content \> Malware**.
+- **Detection**
+- **Protected by**: **ATP** or **EOP**
+- **Tag**: filter by tag to return users or groups that have had a specific tag applied. For more information about user tags, see [User tags](user-tags.md).
+- **Domain**
+
+> [!NOTE]
+> **Protected by**, **Tag** and **Domain** are Office 365 ATP only. These filterable properties are not available in **View data by: Content \> Malware**.
 
 ### Details table view for the Threat protection status report
 
@@ -373,7 +378,12 @@ If you click **View details table**, the information that's shown depends on the
   - **Directed by**
   - **Malware name**
 
-- **View data by: Overview**: No **View details table** button is available.
+If you click **Filters** in this view, you can modify the report with the following filters:
+
+- **Start date** and **End date**
+- **Detection**
+
+**View data by: Overview**: No **View details table** button is available.
 
 - All other charts:
 
@@ -384,12 +394,16 @@ If you click **View details table**, the information that's shown depends on the
   - **Detected by**
   - **Delivery status**
   - **Source of compromise**
+  - **Tags**
 
 If you click **Filters**, you can modify the report with the following filters:
 
 - **Start date** and **End date**
-- Detection value
-- **Protected by** (Office 365 ATP only): **ATP** or **EOP**. Note that this filterable property isn't available in **View data by: Content \> Malware**.
+- **Detection**
+- **Protected by** (Office 365 ATP only): **ATP** or **EOP**
+- **Tag**: filter by tag to return users or groups that have had a specific tag applied. For more information about user tags, see [User tags](user-tags.md).
+- **Domain**
+- **Recipients** (Note that this filterable property is only available in the details table view)
 
 ## Top malware report
 

@@ -1,5 +1,5 @@
 ---
-title: "Specify a mailbox for user submissions of spam and phishing messages"
+title: "User submissions policies"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,12 +12,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-defender-office365
 description: "Admins can learn how to configure a mailbox to collect spam and phishing email that are reported by users."
 ---
 
-# Specify a mailbox for user submissions of spam and phishing messages in Exchange Online
+# User submissions policies
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,6 +37,24 @@ In Microsoft 365 organizations with Exchange Online mailboxes, you can specify a
 You can also configure third-party message reporting tools to forward messages to the mailbox that you specify.
 
 Delivering user reported messages to a custom mailbox instead of directly to Microsoft allows your admins to selectively and manually report messages to Microsoft using [Admin submission](admin-submission.md).
+
+## Custom mailbox prerequisites
+
+Use the following articles to configure the prerequisites required so user reported messages go to your custom mailbox:
+
+- Skip spam filtering on the custom mailbox by creating an exchange mail flow rule to set the spam confidence level. See [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to **-1**.
+
+- Turn off scanning attachments for malware in the custom mailbox. Use [Set up Safe Attachments policies in Office 365 ATP](set-up-atp-safe-attachments-policies.md) to create a Safe Attachments policy with the setting **Off** for **Safe Attachments unknown malware response**.
+
+- Turn off URL scanning on messages in the custom mailbox. Use [Set up Safe Links policies in Office 365 ATP](set-up-atp-safe-links-policies.md) to create a Safe Links policy with the setting **Off** for **Select the action for unknown potentially malicious URLs in messages**.
+
+- Create an anti-malware policy to turn off Malware Zero-hour Auto Purge. See [Use the Security & Compliance Center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) to set **Malware Zero-hour Auto Purge** to **Off**.
+
+- Create a spam filter policy to disable zero-hour auto purge (ZAP) for spam and phishing in the custom mailbox. See [Use the Security & Compliance Center to create anti-spam policies](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) and clear the **On** checkboxes for **Spam ZAP** and **Phish ZAP**.
+
+- Disable the junk email rule in the custom mailbox. Use [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. Once disabled, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action **Move message to Junk Email folder** or the safelist collection on the mailbox.
+
+After you've verified that your mailbox meets all applicable prerequisites, [Use the Security & Compliance Center to configure the user submissions mailbox](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) (in this article).
 
 ## What do you need to know before you begin?
 
@@ -94,7 +113,7 @@ Messages sent to custom mailboxes need to follow a specific submission mail form
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
-were SafetyAPIAction is one of the following integer values:
+where SafetyAPIAction is one of the following integer values:
 
 - 1: Junk
 - 2: NotJunk

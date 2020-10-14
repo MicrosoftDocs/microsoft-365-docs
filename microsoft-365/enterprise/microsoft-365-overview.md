@@ -27,7 +27,7 @@ Microsoft 365 for enterprise consists of:
 
 |Services|Description|
 |---|---|
-|Local and cloud-based apps, and productivity services|Includes both Microsoft 365 Apps for enterprise, the latest Office apps for your PC and Mac (such as Word, Excel, PowerPoint, Outlook, and others), and a full suite of online services for email, file storage and collaboration, meetings, and more.|
+|Local apps and cloud-based apps and productivity services|Includes both Microsoft 365 Apps for enterprise, the latest Office apps for your PC and Mac (such as Word, Excel, PowerPoint, Outlook, and others), and a full suite of online services for email, file storage and collaboration, meetings, and more.|
 |Windows 10 Enterprise|Meets the needs of both large and midsize organizations. It's the most productive and secure version of Windows for users. For IT professionals, it also provides comprehensive deployment, device, and app management.|
 |Device management and advanced security services|Includes Microsoft Intune, which is a cloud-based enterprise mobility management service that helps enable your workforce to be productive while protecting your organization data.|
 |||
@@ -82,7 +82,7 @@ You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-3
 
 [Windows 7](https://aka.ms/win7upgrade) reached end of support on **January 14, 2020**.
 
-These products will reach end of support on **October 13, 2020**:
+These products reached end of support on **October 13, 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
