@@ -60,7 +60,7 @@ Before you can manage all of Microsoft 365 from a single instance of PowerShell,
     
   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-  - [Skype for Business Online, PowerShell Module]((https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
+  - [Skype for Business Online, PowerShell Module](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
   - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
   - [Teams PowerShell Overview](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
