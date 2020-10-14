@@ -20,7 +20,12 @@ description: Use this Test Lab Guide to enroll devices in your Microsoft 365 tes
 
 *This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*
 
-By following the instructions provided in this article, you can enroll and test basic mobile device management capabilities for iOS and Android devices in your Microsoft 365 for enterprise test environment.
+This article describes how to enroll and test basic mobile device management capabilities for iOS and Android devices in your Microsoft 365 for enterprise test environment.
+
+Enrolling iOS and Android devices in your test environment involves three phases:
+- [Phase 1: Build out your Microsoft 365 for enterprise test environment](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Phase 2: Enroll your iOS and Android devices](#phase-2-enroll-your-ios-and-android-devices)
+- [Phase 3: Manage your iOS and Android devices remotely](#phase-3-manage-your-ios-and-android-devices-remotely)
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
@@ -51,19 +56,18 @@ Microsoft Intune provides both remote lock and passcode reset capabilities. If s
 To remotely lock an iOS or Android device:
 
 1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com) with the credentials of your global administrator account.
-2. In the Azure portal, type **Intune** in the search box, and then select **Intune**.
+2. In the Azure portal, enter **Intune** in the search box, and then select **Intune**.
 3. Click **Devices > All devices**.
 4. In the list of devices, select an iOS or Android device, and then select the **Remote lock** action.
     
 To remotely reset the passcode:
 
 1. If needed, sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com) with the credentials of your global administrator account.
-2. In the Azure portal, type **Intune** in the search box, and then select **Intune**.
+2. In the Azure portal, enter **Intune** in the search box, and then select **Intune**.
 3. Select **Devices** > **All devices**.
 4. From the list of devices you manage, select an iOS or Android device, select **...More**, and then select the **Remove passcode** device remote action.
 
 For additional experimentation, see [Available device actions](https://docs.microsoft.com/intune/device-management#available-device-actions).
-
     
 ## Next step
 
