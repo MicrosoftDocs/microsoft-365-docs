@@ -37,11 +37,10 @@ The elements of configuration for a team with security isolation are:
 > [!IMPORTANT]
 > Be sure you have enabled [sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) before you proceed with the steps in this article.
 
-<!--
 Watch this video for an overview of the deployment process.
 <br>
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
---> 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GIW2]
+
 <a name="poster"></a>
 For a 2-page summary of this scenario, see the [Microsoft Teams with security isolation poster](../downloads/team-security-isolation-poster.pdf).
 
