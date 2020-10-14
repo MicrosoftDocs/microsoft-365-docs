@@ -55,7 +55,7 @@ Microsoft 365 Apps for enterprise installs updates automatically and can take ad
 
 ### Office 2010
 
-For versions of Office in the Office 2010 release, the end of support is **October 13, 2020**. For more information, see [Office 2010 end of support roadmap](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
+For versions of Office in the Office 2010 release, support ended on **October 13, 2020**. For more information, see [Office 2010 end of support roadmap](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
 
 Rather than upgrading your computers running Office 2010 with Office 2013 or Office 2016, both of which must be manually updated, consider:
 
@@ -112,7 +112,7 @@ Rather than upgrading your server products in the Office 2007 release with serve
 
 ### Office Server 2010
 
-The end of support for [Exchange Server 2010](exchange-2010-end-of-support.md) is **October 13, 2020**.
+Support for [Exchange Server 2010](exchange-2010-end-of-support.md) ended on **October 13, 2020**.
 
 The end of support for [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) is **April 13, 2021**.
 
