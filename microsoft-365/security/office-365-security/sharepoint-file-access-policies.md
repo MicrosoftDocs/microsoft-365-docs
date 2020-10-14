@@ -15,7 +15,8 @@ ms.custom:
 ms.collection: 
 - M365-identity-device-management
 - M365-security-compliance
-
+- m365solution-identitydevice
+- m365solution-scenario
 ---
 
 # Policy recommendations for securing SharePoint sites and files
