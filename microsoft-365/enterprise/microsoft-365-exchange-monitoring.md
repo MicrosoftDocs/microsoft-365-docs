@@ -3,7 +3,7 @@ title: "Exchange monitoring for Microsoft 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 10/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -25,6 +25,14 @@ You can use Exchange monitoring in the Microsoft 365 admin center to monitor the
 - **Infrastructure**: Issue is detected in the Microsoft 365 infrastructure that Microsoft owns for providing regular updates and resolving the issue. For example, users cannot access Exchange Online due to issues with Exchange or other Microsoft 365 cloud infrastructure.
 - **Third-party infrastructure**: Issue is detected in third-party infrastructure on which your organization has taken a dependency and requires action from your organization for resolution. For example, user authentication transactions are getting throttled by a third-party security token service (STS) provider that prevents users from connecting to Exchange Online.
 - **Customer infrastructure**: Issue is detected in your organization infrastructure and requires action from your organization for resolution. For example, users cannot access Exchange Online because they are unable to obtain an authentication token from STS provider hosted by your organization due to an expired certificate.
+
+Here is an example of the **Service health** page in the Microsoft 365 admin center, available from **Health > Service health**.
+
+![The Service health page in the Microsoft 365 admin center](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
+
+The value of the **Status** column indicates whether the service is healthy or has advisories or incidents based on the cloud services that Microsoft maintains. 
+
+The value of the **Your org and 3rd party issues** column indicates whether the Exchange Online service is healthy or has advisories or incidents based on your organization's infrastructure or third-party software. Advisories or incidents require *your* actions to resolve.
 
 Here is an example of the **Exchange Online** monitoring page in the Microsoft 365 admin center, available from **Health > Service health > Exchange Online**.
 
