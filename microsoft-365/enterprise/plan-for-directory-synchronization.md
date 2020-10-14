@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -138,9 +138,5 @@ Directory synchronization is required for the following features and functionali
 
 ## Next step
 
-When you are ready to deploy hybrid identity, see [prepare to provision users](prepare-for-directory-synchronization.md).
+When you are ready to deploy hybrid identity, see [prepare for directory synchronization](prepare-for-directory-synchronization.md).
   
-## See also
-
-[Microsoft 365 Enterprise overview](microsoft-365-overview.md)
-

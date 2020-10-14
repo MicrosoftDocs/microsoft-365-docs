@@ -1,7 +1,7 @@
 ---
 title: What's coming to Microsoft Secure Score
 description: Describes what new changes are coming to Microsoft Secure Score in the Microsoft 365 security center.
-keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -21,12 +21,17 @@ search.appverid:
 
 # What's coming to Microsoft Secure Score
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
 
 ## Proposed changes
 
-### September 2020
-- No changes planned
+### October 2020
+
+#### Remove improvement action for Microsoft Defender Advanced Threat Protection
+- Set Microsoft Defender SmartScreen Windows Store app web content checking to warn
 
 ## Related resources
 

@@ -23,6 +23,9 @@ description: Instructions to create and publish retention labels so you can then
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
+> [!NOTE]
+> This scenario is supported for all retention label configurations, including [regulatory records](records-management.md#records).
+
 Use the following information to help you create and publish [retention labels](retention.md), and then apply them to documents and emails.
 
 Retention labels help you retain what you need and delete what you don't at the item level (document or email). They are also used to declare an item as a record as part of a [records management](records-management.md) solution for your Microsoft 365 data.
@@ -63,7 +66,7 @@ Where you create and configure your retention labels depend on whether you're us
     
     - For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md)
     
-    - To use the retention label to declare a [record](records-management.md#records), enable the option **Mark items as a record**.
+    - To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**.
 
@@ -136,6 +139,8 @@ Use the following sections to learn how published retention labels can be applie
 - [Applying a default retention label to all content in a SharePoint library, folder, or document set](#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)
 
 - [Automatically applying a retention label to email by using rules](#automatically-applying-a-retention-label-to-email-by-using-rules)
+
+In addition, when you use [SharePoint Syntex](../contentunderstanding/index.md) and publish retention labels to SharePoint locations, you can [apply a retention label to a document understanding model](../contentunderstanding/apply-a-retention-label-to-a-model.md) so that identified documents are automatically labeled.
 
 ### Manually apply retention labels 
 

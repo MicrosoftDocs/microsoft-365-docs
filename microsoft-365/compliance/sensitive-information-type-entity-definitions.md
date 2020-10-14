@@ -23,7 +23,11 @@ description: "Data loss prevention (DLP) in the Security &amp; Compliance Center
 # Sensitive information type entity definitions
 
 Data loss prevention (DLP) in the Compliance Center includes many sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
-  
+
+Sensitive information types require one of these subscriptions:
+- Microsoft 365 E3
+- Microsoft 365 E5
+
 ## ABA routing number
 
 ### Format
@@ -138,7 +142,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
-six to twn digits with or without a bank state branch number
+six to ten digits with or without a bank state branch number
 
 ### Pattern
 
@@ -198,6 +202,13 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - iaea
 
 ## Australia business number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
+
 
 ### Format
 
@@ -253,6 +264,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - businessno#
 
 ## Australia company number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -681,6 +698,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - fuhrerschein republik osterreich
 
 ## Austria identity card
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -753,20 +776,38 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_passport_number" />
-          <Match idRef="Keywords_austria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_austria_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_austria_eu_passport_number
 
-- passport number
-- austrian passport number
-- passport no
-- reisepass
-- österreichisch reisepass
+- reisepassnummer
+- reisepasse
+- No-Reisepass 
+- Nr-Reisepass
+- Reisepass-Nr
+- Passnummer
+- reisepässe
 
 ## Austria social security number or equivalent identification
 This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
@@ -896,6 +937,12 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - tax number
  
 ## Austria value added tax
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -1613,23 +1660,42 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_belgium__eu_passport_number" />
-          <Match idRef="Keywords_belgium_eu_passport_number" />
+          <IdMatch idRef="Regex_belgium_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_belgium_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_belgium_eu_passport_number
 
-- passport number
-- belgian passport number
-- passport no
-- paspoort
+- numéro passeport
+- paspoort nr
+- paspoort-nr
 - paspoortnummer
+- paspoortnummers
+- Passeport carte
+- Passeport livre
+- Pass-Nr
+- Passnummer
 - reisepass kein
-- reisepass
 
 ## Belgium social security number or equivalent identification
 This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
@@ -1693,6 +1759,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Belgium value added tax number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -2009,6 +2081,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Bulgaria uniform civil number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -2120,26 +2198,40 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_bulgaria_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_bulgaria_eu_passport_number` is found. 
+- A keyword from  `Keywords_bulgaria_eu_passport_number` or `Keywords_eu_passport_number_common`is found. 
 
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
-          <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_bulgaria_eu_passport_number
 
-- passport number
-- bulgarian passport number
-- passport no
 - номер на паспорта
-
+- номер на паспорт
+- паспорт №
 
 ## Canada bank account number
 
@@ -3258,26 +3350,40 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_croatia_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_croatia_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_croatia_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_passport_number" />
-          <Match idRef="Keywords_croatia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_croatia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_croatia_eu_passport_number
 
-- passport number
-- croatian passport number
-- passport no
 - broj putovnice
-
+- br. Putovnice
+- br putovnice
    
 ## Croatia personal identification (OIB) number
 
@@ -3464,6 +3570,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Cyprus identity card
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -3524,29 +3636,57 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_cyprus_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_cyprus_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_cyprus_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_passport_number" />
-          <Match idRef="Keywords_cyprus_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_cyprus_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_cyprus_eu_passport_number
 
-- passport number
-- cyprus passport number
-- passport no
 - αριθμό διαβατηρίου
-
+- pasaportu
+- Αριθμός Διαβατηρίου
+- κυπριακό διαβατήριο
+- διαβατήριο#
+- διαβατήριο
+- αριθμός διαβατηρίου
+- Pasaport Kimliği
+- pasaport numarası
+- Pasaport no.
+- Αρ. Διαβατηρίου
 
 ## Cyprus tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -3692,27 +3832,43 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_czech_republic_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_czech_republic_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_czech_republic_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
-          <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_czech_republic_eu_passport_number
 
-- passport number
-- czech passport number
-- passport no
 - cestovní pas
-- pas
+- číslo pasu
+- cestovní pasu
+- passeport no
+- čísla pasu
 
 
 ## Czech personal identity number
@@ -3948,31 +4104,44 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_denmark_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_denmark_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_denmark_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_passport_number" />
-          <Match idRef="Keywords_denmark_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_denmark_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_denmark_eu_passport_number
 
-- passport number
-- danish passport number
-- passport no
-- pas
 - pasnummer
+- Passeport n°
+- pasnumre
 
 
 ## Denmark personal identification number
-This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -4238,6 +4407,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Estonia Personal Identification Code
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -4337,26 +4512,44 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_estonia_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_estonia_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_estonia_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_passport_number" />
-          <Match idRef="Keywords_estonia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_estonia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_estonia_eu_passport_number
 
-- passport number
-- estonian passport number
-- passport no
-- eesti kodaniku pass
+eesti kodaniku pass
+passi number
+passinumbrid
+document number
+document no
+dokumendi nr
 
 ## EU debit card number
 
@@ -4917,6 +5110,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Finland european health insurance number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -5082,22 +5281,44 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_finland_passport_number finds content that matches the pattern.
-- A keyword from Keyword_finland_passport_number is found.
+- A keyword from Keywords_eu_passport_number_common or Keyword_finland_passport_number is found.
 
 ```xml
 <!-- Finland Passport Number -->
 <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_finland_passport_number"/>
-     <Match idRef="Keyword_finland_passport_number"/>
-  </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_finland_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keyword_finland_passport_number" />
+          </Any>
+        </Pattern>
 </Entity>
 ```
 ### Keywords
 
-- Keyword_finland_passport_number
-- Passport
-- Passi
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
+#### Keyword_finland_passport_number
+
+- suomalainen passi
+- passin numero
+- passin numero.#
+- passin numero#
+- passin numero.
+- passi#
+- passi number
 
 
 ## Finland social security number or equivalent identification
@@ -5224,6 +5445,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## France health insurance number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -5526,6 +5753,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## France value added tax number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -5809,69 +6042,41 @@ Yes
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_german_passport finds content that matches the pattern.
-- A keyword from any of the five keyword lists is found.
+- A keyword from `Keyword_german_passport` is found.
 - The checksum passes.
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_german_passport_data finds content that matches the pattern.
-- A keyword from any of the five keyword lists is found.
+- A keyword from `Keyword_german_passport` is found.
 - The checksum passes.
 
 ```xml
-<!-- Germany Passport Number -->
-<Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="85">
+    <!-- German Passport Number -->
+    <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_german_passport" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_passport" />
-          <Match idRef="Keyword_german_passport_collaborative" />
-          <Match idRef="Keyword_german_passport_number" />
-          <Match idRef="Keyword_german_passport1" />
-          <Match idRef="Keyword_german_passport2" />
-        </Any>
-  </Pattern>
-  <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_german_passport" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_passport_data" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_passport" />
-          <Match idRef="Keyword_german_passport_collaborative" />
-          <Match idRef="Keyword_german_passport_number" />
-          <Match idRef="Keyword_german_passport1" />
-          <Match idRef="Keyword_german_passport2" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_german_passport" />
+      </Pattern>
+    </Entity>
 ```
 
 ### Keywords
 
 #### Keyword_german_passport
 
-- reisepass
 - reisepasse
 - reisepassnummer
-- passport
-- passports
-
-#### Keyword_german_passport_collaborative
-
-- geburtsdatum
-- ausstellungsdatum
-- ausstellungsort
-
-#### Keyword_german_passport_number
-
-No-Reisepass 
-Nr-Reisepass
-
-#### Keyword_german_passport1
-
-Reisepass-Nr
-
-#### Keyword_german_passport2
-
-bnationalit.t
-
+- No-Reisepass 
+- Nr-Reisepass
+- Reisepass-Nr
+- Passnummer
+- reisepässe
+- passeport no.
+- passeport no
 
 ## Germany tax identification number
 
@@ -5948,6 +6153,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Germany value added tax number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -6134,28 +6345,49 @@ No
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
   
 - The regular expression  `Regex_greece_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_greece_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_greece_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_passport_number" />
-          <Match idRef="Keywords_greece_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_greece_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_greece_eu_passport_number
 
-- passport number
-- greek passport number
-- passport no
-- διαβατηριο
+- αριθμός διαβατηρίου
+- αριθμούς διαβατηρίου
+- αριθμός διαβατηριο
 
 ## Greece tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -6358,6 +6590,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Hungary personal identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -6438,26 +6676,40 @@ No
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
   
 - The regular expression  `Regex_hungary_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_hungary_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_hungary_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_passport_number" />
-          <Match idRef="Keywords_hungary_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_hungary_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_hungary_eu_passport_number
 
-- passport number
-- hungarian passport number
-- passport no
 - útlevél száma
-
+- Útlevelek száma
+- útlevél szám
 
 ## Hungary social security number or equivalent identification
 
@@ -6523,6 +6775,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Hungary tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -6598,6 +6856,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Hungary value added tax number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -7063,29 +7327,45 @@ No
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
   
 - The regular expression  `Regex_ireland_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_ireland_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_ireland_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_passport_number" />
-          <Match idRef="Keywords_ireland_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_ireland_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_ireland_eu_passport_number
 
-- passport number
-- irish passport number
-- passport no
-- pas
-- passport
-- passeport
 - passeport numero
+- uimhreacha pasanna
+- uimhir pas
+- uimhir phas
+- uimhreacha pas
+- uimhir cárta
+- uimhir chárta
 
 ## Ireland personal public service (PPS) number
 
@@ -7318,6 +7598,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - patente di guida 
 
 ## Italy fiscal code
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -7420,34 +7706,53 @@ not applicable
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_italy_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_italy_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_italy_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_italy_eu_passport_number" />
-          <Match idRef="Keywords_italy_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_italy_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_italy_eu_passport_number
 
-- italian passport number
-- repubblica italiana passaporto
-- passaporto
+- italiana passaporto
 - passaporto italiana
-- passport number
-- italiana passaporto numero
 - passaporto numero
-- numéro passeport italien
 - numéro passeport
-
+- numero di passaporto
+- numeri del passaporto
+- passeport italien
 
 ## Italy value added tax number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -7676,6 +7981,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Japan My Number - Corporate
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -7731,6 +8042,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Japan My Number - Personal
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -8174,27 +8491,44 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_latvia_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_latvia_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_latvia_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_passport_number" />
-          <Match idRef="Keywords_latvia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_latvia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_latvia_eu_passport_number
 
-- passport number
-- latvian passport number
-- passport no
-- pase numurs    
-
+- pase numurs
+- pase numur
+- pases numuri
+- pases nr
+- passeport no
+- n° du Passeport
 
 ## Lithuania driver's license number
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
@@ -8246,6 +8580,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - vairuotojo pažymėjimas
 
 ## Lithuania personal code
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -8346,27 +8686,41 @@ not applicable
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_lithuania_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_lithuania_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_lithuania_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_passport_number" />
-          <Match idRef="Keywords_lithuania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_lithuania_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_lithuania_eu_passport_number
 
-- passport number
-- lithunian passport number
-- passport no
 - paso numeris
-
+- paso numeriai
+- paso nr
 
 ## Luxemburg driver's license number
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
@@ -8418,6 +8772,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - fahrerlaubnis
 
 ## Luxemburg national identification number (natural persons)
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -8740,6 +9100,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - liċenzja tas-sewqan
 
 ## Malta identity card number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -8817,26 +9183,41 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_malta_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_malta_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_malta_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_passport_number" />
-          <Match idRef="Keywords_malta_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_malta_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_malta_eu_passport_number
 
-- passport number
-- maltese passport number
-- passport no
 - numru tal-passaport
+- numri tal-passaport
+- Nru tal-passaport
 
 ## Malta tax identification number
 
@@ -9085,6 +9466,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - paspoortnummer
 
 ## Netherlands tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -9162,6 +9549,12 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 
 ## Netherlands value added tax number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -9218,6 +9611,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## New Zealand bank account number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -9274,6 +9673,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## New Zealand driver's license number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -9383,6 +9788,12 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 
 ## New Zealand inland revenue number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -9480,6 +9891,12 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 
 ## New Zealand social wlefare number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -9826,6 +10243,12 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - Paszport
 
 ## Poland REGON number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -9887,6 +10310,12 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 
 ## Poland tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -10080,26 +10509,48 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_portugal_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_portugal_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_portugal_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_passport_number" />
-          <Match idRef="Keywords_portugal_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_portugal_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_portugal_eu_passport_number
 
-- passport number
-- portuguese passport number
-- passport no
 - número do passaporte
+- portuguese passport
+- portuguese passeport
+- portuguese passaporte
+- passaporte nº
+- passeport nº
+- números de passaporte
+- portuguese passports
+- número passaporte
+- números passaporte
 
 ## Portugal tax identification number
 
@@ -10222,6 +10673,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - permis de conducere
 
 ## Romania personal numeric code (CNP)
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -10332,29 +10789,50 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_romania_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_romania_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_romania_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_passport_number" />
-          <Match idRef="Keywords_romania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_romania_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_romania_eu_passport_number
 
-- passport number
-- romanian passport number
-- passport no
-- numărul pașaportului
-
+numărul pașaportului
+numarul pasaportului
+numerele pașaportului
+Pașaport nr
 
 ## Russia passport number domestic
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -10411,6 +10889,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Russia passport number international
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -10613,6 +11097,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - vodičský preukaz
 
 ## Slovakia personal number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -10720,27 +11210,43 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_slovakia_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_slovakia_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_slovakia_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovakia_eu_passport_number" />
-          <Match idRef="Keywords_slovakia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_slovakia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_slovakia_eu_passport_number
 
-- passport number
-- slovakian passport number
-- passport no
 - číslo pasu
-
+- čísla pasov
+- pas č.
+- Passeport n°
+- n° Passeport
 
 ## Slovenia driver's license number
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
@@ -10792,6 +11298,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - vozniško dovoljenje
 
 ## Slovenia Unique Master Citizen Number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -10885,28 +11397,52 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_slovenia_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_slovenia_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_slovenia_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_passport_number" />
-          <Match idRef="Keywords_slovenia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_slovenia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_slovenia_eu_passport_number
 
-- passport number
-- slovenian passport number
-- passport no
 - številka potnega lista
+- potek veljavnosti
+- potni list#
+- datum rojstva
+- potni list
+- številke potnih listov
 
 ## Slovenia tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -11143,6 +11679,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - carnet conducir
 
 ## Spain DNI
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -11239,31 +11781,50 @@ Not applicable
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_spain_eu_passport_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_spain_eu_passport_number` is found. 
+- A keyword from  `Keywords_eu_passport_number_common` or `Keywords_spain_eu_passport_number` is found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_spain_eu_passport_number" />
-          <Match idRef="Keywords_spain_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_spain_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### Keywords_spain_eu_passport_number
 
-- passport
-- spain passport
-- passport book
-- passport number
-- passport no
 - libreta pasaporte
 - número pasaporte
 - españa pasaporte
-- pasaporte
+- números de pasaporte
+- número de pasaporte
+- números pasaporte
+- pasaporte no
+- Passeport n°
+- n° Passeport
+- pasaporte no.
+- pasaporte n°
+- spain passport
 
 
 ## Spain social security number (SSN)
@@ -11306,6 +11867,12 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 None
 
 ## Spain tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -11736,6 +12303,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - identifikationsnumret#
 
 ## Sweden tax identification number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -11882,7 +12455,13 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - code identificateur de banque 
 
 
-## Swiss SSN AHV number
+## Switzerland SSN AHV number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -12451,6 +13030,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
     
 ## U.K. Unique Taxpayer Reference Number
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -12944,6 +13529,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Passeportn ° 
 
 ## Ukraine passport domestic
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 
@@ -12986,6 +13577,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Ukraine passport international
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft cloud app security
 
 ### Format
 

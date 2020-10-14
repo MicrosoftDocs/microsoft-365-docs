@@ -3,7 +3,7 @@ title: "Implementing VPN split tunneling for Office 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/21/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -32,7 +32,7 @@ For quite some time, VPN models where all connections from the remote user devic
 
 The use of forced tunneled VPNs for connecting to distributed and performance sensitive cloud applications is extremely suboptimal, but the negative impact of that may have been accepted by some enterprises so as to maintain the status quo from a security perspective. An example diagram of this scenario can be seen below:
 
-![Split Tunnel VPN configuration](../media/vpn-split-tunneling/vpn-ent-challenge.png)
+![Split Tunnel VPN configuration](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
 This problem has been growing for a number of years, with many customers reporting a significant shift of network traffic patterns. Traffic that used to stay on premises now connects to external cloud endpoints. Numerous Microsoft customers report that previously, around 80% of their network traffic was to some internal source (represented by the dotted line in the above diagram). In 2020 that number is now around 20% or lower as they have shifted major workloads to the cloud, these trends are not uncommon with other enterprises. Over time, as the cloud journey progresses, the above model becomes increasingly cumbersome and unsustainable, preventing an organization from being agile as they move into a cloud first world.
 
@@ -90,7 +90,7 @@ In this section, you'll find the simple steps required to migrate your VPN clien
 
 The diagram below illustrates how the recommended VPN split tunnel solution works:
 
-![Split tunnel VPN solution detail](../media/vpn-split-tunneling/vpn-split-detail.png)
+![Split tunnel VPN solution detail](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 ### 1. Identify the endpoints to optimize
 
@@ -104,9 +104,6 @@ URLs in this category have the following characteristics:
 - Are bandwidth and/or latency sensitive
 - Are able to have required security elements provided in the service rather than inline on the network
 - Account for around 70-80% of the volume of traffic to the Office 365 service
-
->[!NOTE]
->Microsoft has committed to suspending changes to **Optimize** endpoints for Office 365 until at least **June 30 2020**, allowing customers to focus on other challenges rather than maintaining the endpoint whitelist once initially implemented. This article will be updated to reflect any future changes.
 
 For more information about Office 365 endpoints and how they are categorized and managed, see the article [Managing Office 365 endpoints](managing-office-365-endpoints.md).
 
@@ -323,6 +320,10 @@ Port 80 is only used for things like redirect to a port 443 session, no customer
 ### Does this advice apply to users in China using a worldwide instance of Office 365?
 
 **No**, it does not. The one caveat to the above advice is users in the PRC who are connecting to a worldwide instance of Office 365. Due to the common occurrence of cross border network congestion in the region, direct Internet egress performance can be variable. Most customers in the region operate using a VPN to bring the traffic into the corporate network and utilize their authorized MPLS circuit or similar to egress outside the country via an optimized path. This is outlined further in the article [Office 365 performance optimization for China users](microsoft-365-networking-china.md).
+
+### Does split-tunnel configuration work for Teams running in a browser?
+
+**No**, it does not. It works only on Microsoft Teams client version 1.3.00.13565 or greater. This version includes improvements in how the client detects available network paths.
 
 ## Related topics
 

@@ -20,7 +20,7 @@ titleSuffix: Microsoft Compliance
 
 ## About TISAX
 
-To help secure the ever-increasing connectivity in the automotive industry, the German Association of the Automotive Industry ([Verband der Automobilindustrie](https://www.dict.cc/deutsch-englisch/Verband.html), VDA) developed a catalogue of criteria for assessing information security. The VDA Information Security Assessment ([German](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html) and [English](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)) is based on the fundamentals of the international ISO/IEC 27001 and 27002 standards adapted to the automotive industry. In 2017, it was updated to cover controls for the use of cloud services.
+To help secure the ever-increasing connectivity in the automotive industry, the German Association of the Automotive Industry ([Verband der Automobilindustrie](https://www.vda.de), VDA) developed a catalogue of criteria for assessing information security. The VDA Information Security Assessment ([German](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html) and [English](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)) is based on the fundamentals of the international ISO/IEC 27001 and 27002 standards adapted to the automotive industry. In 2017, it was updated to cover controls for the use of cloud services.
 
 VDA member companies used this instrument both for internal security assessments and for assessments of suppliers, service providers, and other partners that process sensitive information on their behalf. However, because these evaluations were handled individually by each company, it created a burden on partners and duplicated effort on the part of VDA members.
 
@@ -64,9 +64,13 @@ Use case overviews, solution guides, tutorials, and other resources to help buil
 
 ## Frequently asked questions
 
-**Why I can’t see a copy of the Microsoft TISAX certification?**
+**Why I can't see a copy of the Microsoft TISAX certification?**
 
 ENX provides certification confirmation only to registered industry representatives through the ENX portal. For details about how to proceed, see the “Audits, reports, and certificates” section above.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 
