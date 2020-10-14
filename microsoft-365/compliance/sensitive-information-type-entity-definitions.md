@@ -142,7 +142,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
-six to twn digits with or without a bank state branch number
+six to ten digits with or without a bank state branch number
 
 ### Pattern
 

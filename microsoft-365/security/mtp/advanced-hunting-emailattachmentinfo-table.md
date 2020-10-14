@@ -17,7 +17,7 @@ manager: dansimp
 audience: ITPro
 mms.collection: 
 - M365-security-compliance 
-- m365-initiative-m365-defender
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
