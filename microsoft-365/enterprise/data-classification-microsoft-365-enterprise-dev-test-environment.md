@@ -22,6 +22,11 @@ description: Use this Test Lab Guide to create and use retention labels on docum
 
 This article describes how to configure data classification using retention labels in your Microsoft 365 for enterprise test environment.
 
+Classifying data in your test environment involves three phases:
+- [Phase 1: Build out your Microsoft 365 for enterprise test environment](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Phase 2: Create retention labels](#phase-2-create-retention-labels)
+- [Phase 3: Apply retention labels to documents](#phase-3-apply-retention-labels-to-documents)
+
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
