@@ -33,14 +33,14 @@ Use these instructions to get set up to run the commands (skip the steps you hav
     
 2. Open a Windows PowerShell command prompt and run the following commands: 
     
-```powershell
-Import-Module MicrosoftTeams
-$userCredential = Get-Credential
-$sfbSession = New-CsOnlineSession -Credential $userCredential
-Import-PSSession $sfbSession
-  ```
+   ```powershell
+   Import-Module MicrosoftTeams
+   $userCredential = Get-Credential
+   $sfbSession = New-CsOnlineSession -Credential $userCredential
+   Import-PSSession $sfbSession
+   ```
 
-When prompted, enter your Skype for Business Online administrator account name and password.
+   When prompted, enter your Skype for Business Online administrator account name and password.
     
 ## Manage user account policies
 
