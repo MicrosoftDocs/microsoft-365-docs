@@ -27,7 +27,7 @@ description: Learn how to view, list, or display your Microsoft 365 user account
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can use the Microsoft 365 admin center to view the accounts for your Microsoft 365 tenant. PowerShell for Microsoft 365 enables this as well but also provides additional functionality.
+You can use the Microsoft 365 admin center to view the accounts for your Microsoft 365 tenant. PowerShell for Microsoft 365 enables this but also provides additional functionality.
   
 ## Use the Azure Active Directory PowerShell for Graph module
 
@@ -41,7 +41,7 @@ To display the full list of user accounts, run this command:
 Get-AzureADUser
 ```
 
-You should see information similar to this:
+You should get information similar to this:
   
 ```powershell
 ObjectId                             DisplayName                                           UserPrincipalName
@@ -56,7 +56,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 
 ### View a specific account
 
-To display a specific user account, run the following command. Fill in the sign-in account name of the user account, which is also known as the user principal name (UPN), and remove the "<" and ">" characters.
+To display a specific user account, run the following command. Fill in the sign-in account name of the user account, which is also known as the user principal name (UPN). Remove the "<" and ">" characters.
   
 ```powershell
 Get-AzureADUser -ObjectID <sign-in name of the user account>
@@ -72,7 +72,7 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 
 By default, the **Get-AzureADUser** cmdlet only displays the *ObjectID*, *DisplayName*, and *UserPrincipalName* properties of accounts.
 
-To be more selective about the list of properties to display, you can use the **Select** cmdlet in combination with the **Get-AzureADUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command. Here's an example command that displays the *DisplayName*, *Department*, and *UsageLocation* for every user account:
+To be more selective about the properties to display, use the **Select** cmdlet in combination with the **Get-AzureADUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command. Here's an example command that displays the *DisplayName*, *Department*, and *UsageLocation* for every user account:
   
 ```powershell
 Get-AzureADUser | Select DisplayName,Department,UsageLocation
@@ -80,7 +80,7 @@ Get-AzureADUser | Select DisplayName,Department,UsageLocation
 
 This command instructs PowerShell to:
   
-1. Get all of the information on the user accounts (**Get-AzureADUser**) and send it to the next command (**|**).
+1. Get all the information on the user accounts (**Get-AzureADUser**) and send it to the next command (**|**).
     
 1.  Display only the user account name, department, and usage location (**Select DisplayName, Department, UsageLocation**).
   
@@ -125,7 +125,7 @@ Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
 
 This command instructs Azure Active Directory PowerShell for Graph to:
   
-1. Get all of the information on the user accounts (**Get-AzureADUser**) and send it to the next command (**|**).
+1. Get all the information on the user accounts (**Get-AzureADUser**) and send it to the next command (**|**).
     
 1. Find all the user accounts that have an unspecified usage location (**Where {$\_.UsageLocation -eq $Null}**). Inside the braces, the command instructs PowerShell to only find the set of accounts for which the UsageLocation user account property (**$\_.UsageLocation**) is not specified (**-eq $Null**).
     
@@ -135,14 +135,14 @@ The **UsageLocation** property is only one of many properties associated with a 
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-For example, from this list, **City** is the name of a user account property. You can use the following command to list all of the user accounts for users living in London:
+For example, from this list, **City** is the name of a user account property. You can use the following command to list all of the user accounts for users who live in London:
   
 ```powershell
 Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  The syntax for the **Where** cmdlet shown in these examples is **Where {$\_.** [user account property name] [comparison operator] [value] **}**.> [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified>  See [Where](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where?view=powershell-5.1) for more information.
+>  The syntax for the **Where** cmdlet in these examples is **Where {$\_.** [user account property name] [comparison operator] [value] **}**.> [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified>  See [Where](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where?view=powershell-5.1) for more information.
   
 
 ## Use the Microsoft Azure Active Directory Module for Windows PowerShell
@@ -158,7 +158,7 @@ Get-MsolUser
 ```
 
 >[!Note]
->PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
+>PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. You have to run these cmdlets from Windows PowerShell.
 >
 
 You should get information similar to this:
@@ -192,7 +192,7 @@ For information about additional parameters to filter the set of user accounts t
   
 ### View a specific account
 
-To display a specific user account, fill in the sign-in name of the user account of the user account, which is also known as the user principal name (UPN), remove the "<" and ">" characters, and run this command:
+To display a specific user account, fill in the sign-in name of the user account of the user account, which is also known as the user principal name (UPN). Remove the "<" and ">" characters, and run this command:
   
 ```powershell
 Get-MsolUser -UserPrincipalName <sign-in name of the user account>
@@ -245,7 +245,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
 
 ### View additional property values for accounts
 
-The **Get-MsolUser** cmdlet by default displays three properties of user accounts:
+The **Get-MsolUser** cmdlet by default displays these three properties of user accounts:
   
 - UserPrincipalName
     
@@ -261,7 +261,7 @@ Get-MsolUser | Select DisplayName, Department, UsageLocation
 
 This command instructs PowerShell to:
   
-1. Get all the information on the user accounts (**Get-MsolUser**) and send it to the next command (**|**).
+1. Get all the information about the user accounts (**Get-MsolUser**) and send it to the next command (**|**).
     
 1. Display only the user account name, department, and usage location (**Select DisplayName, Department, UsageLocation**).
     
@@ -278,7 +278,7 @@ Alex Darrow             Sales & Marketing                    US
 Scott Wallace           Operations
 ```
 
-The **Select** cmdlet lets you choose what properties you want a command to display. To see all of the properties for user accounts, use the wildcard character (*) to display them all for a specific user account. Here's an example:
+The **Select** cmdlet lets you choose what properties to display. To see all the properties for user accounts, use the wildcard character (*) to display them all for a specific user account. Here's an example:
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
@@ -292,9 +292,9 @@ Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Departme
 
 This command instructs PowerShell to:
   
-1. Get all of the information on the user accounts (**Get-MsolUser**) and send it to the next command (**|**).
+1. Get all the information about the user accounts (**Get-MsolUser**) and send it to the next command (**|**).
     
-1. Find all of the user accounts that have an unspecified usage location (**Where {$\_.UsageLocation -eq $Null}**), and send the resulting information to the next command (**|**). Inside the braces, the command is instructing PowerShell to only find the set of accounts for which the UsageLocation user account property (**$\_.UsageLocation**) is not specified (**-eq $Null**).
+1. Find all user accounts that have an unspecified usage location (**Where {$\_.UsageLocation -eq $Null}**), and send the resulting information to the next command (**|**). Inside the braces, the command instructs PowerShell to only find the set of accounts for which the UsageLocation user account property (**$\_.UsageLocation**) is not specified (**-eq $Null**).
     
 1. Display only the user account name, department, and usage location (**Select DisplayName, Department, UsageLocation**).
     
@@ -309,7 +309,7 @@ Scott Wallace            Operations
 
 If you're using directory synchronization to create and manage your Microsoft 365 users, you can display the local account from which a Microsoft 365 user has been projected. The following example assumes that:
 
-- Azure AD Connect is configured to use the default source anchor of ObjectGUID. (For more about configuring a source anchor, see [Azure AD Connect: Design concepts](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)).
+- Azure AD Connect is configured to use the default source anchor of ObjectGUID. (For more information about configuring a source anchor, see [Azure AD Connect: Design concepts](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)).
 - The Active Directory Domain Services module for PowerShell has been installed (see [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)).
 
 ```powershell

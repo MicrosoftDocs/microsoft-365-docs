@@ -16,7 +16,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: "Summary: Understand the value of PowerShell for Microsoft 365, get connected to your Microsoft 365 tenant, and get help."
+description: "Summary: Understand the value of PowerShell for Microsoft 365, how to get connected to your Microsoft 365 tenant, and where to get help."
 ---
 
 # Get started with PowerShell for Microsoft 365
