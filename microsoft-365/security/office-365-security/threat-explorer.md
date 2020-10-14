@@ -42,6 +42,37 @@ With this report, you can:
 - [Start an automated investigation and response process from a view in Explorer](#start-automated-investigation-and-response) (ATP Plan 2 only)
 - ... [Investigate malicious email, and more](#more-ways-to-use-explorer-or-real-time-detections)!
 
+## Tags in Threat Explorer
+
+[!NOTE] The user tags feature is in Preview, isn't available to everyone, and is subject to change. For information about the release schedule, check out the Microsoft 365 roadmap.
+
+User tags are identifiers for specific groups of users in Microsoft Defender for Office 365. For more information around Tags, licensing and configuring Tags, read more here: [User tags in Office 365 ATP](user-tags.md).
+
+Within Threat Explorer, you will be able to see information around User Tags in the following experiences:
+
+#### Email Grid View
+The Tags column shown in the email grid would contains all the tags that have been applied to the sender or recipient mailboxes. By default, system tags like priority accounts are shown first.
+
+![Filter Tags](../../media/tags-grid.png)
+
+#### Filtering
+We now have Tags as a filter so you can hunt just across priority accounts, or specific User tags scenarios (and even exclude results with certain tags as part of this experience). Combining these with the multiple other filters that we provide, would help you to narrow down your scope of investigation
+
+![Filter Tags](../../media/tags-filter-normal.png)
+
+![Not Filter Tags](../../media/tags-filter-not.png)
+
+#### Email Detail Flyout
+To view the individual tags for sender and Recipient, click on the subject. It opens the message details flyout. In the summary tab, sender and recipient tags are shown separately, if they are present for an email.
+The information about individual tags for sender and Recipient, also extends to exported CSV, where you can see these details in 2 separate columns. 
+
+![Email Details Tags](../../media/tags-flyout.png)
+
+Tags information is also shown in URL clicks flyout. To get to the URL clicks flyout, you would need to go to Phish or All Email view, and then to URLs or URL Clicks Tab. Clicking on an individual URL flyout would show more details about Clicks for that URL, and would have Tags associated with that click. 
+
+![URL Tags](../../media/tags-urls.png)
+
+
 ## Improvements to Threat Hunting Experience (upcoming)
 
 ### Updated Threat Information for Emails
@@ -92,7 +123,7 @@ The original delivery location would give more information about where an email 
 
 ### Additional Actions 
 
-Additional Actions consist of the actions that were applied post the delivery of the Email, and can include ZAP, Manual Remediation (action taken by an Admi;n e.g., Soft Delete), Dynamic Delivery, and Reprocessed (an email was retroactively detected as good). 
+Additional Actions consist of the actions that were applied post the delivery of the Email, and can include ZAP, Manual Remediation (action taken by an Admin e.g., Soft Delete), Dynamic Delivery, and Reprocessed (an email was retroactively detected as good). 
 
 > [!NOTE]
 >
