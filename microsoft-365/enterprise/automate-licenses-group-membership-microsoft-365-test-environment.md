@@ -21,12 +21,12 @@ description: "Configure group-based licensing and dynamic group membership in yo
 
 *This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*
 
-Group-based licensing automatically assigns or removes licenses for a user account based on group membership. Dynamic group membership adds or removes members to a group based on user account properties, such as **Department** or **Country**. This article steps you through a demonstration of both in your Microsoft 365 for enterprise test environment.
+Group-based licensing automatically assigns or removes licenses for a user account based on group membership. Dynamic group membership adds or removes members to a group based on user account properties, such as **Department** or **Country**. This article steps you through demonstration of both adding and removing group members in your Microsoft 365 for enterprise test environment.
 
 Setting up auto-licensing and dynamic group membership in your Microsoft 365 for enterprise test environment involves two phases:
 
-1. Create the Microsoft 365 for enterprise test environment.
-2. Configure and test dynamic group membership and automatic licensing.
+- [Phase 1: Build out your Microsoft 365 for enterprise test environment](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Phase 2: Configure and test dynamic group membership and automatic licensing](#phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing)
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -48,16 +48,16 @@ First, create a new group named Sales, and add a dynamic group membership rule s
 
 1. In a private instance of your internet browser, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with the global administrator account of your Microsoft 365 E5 test lab subscription.
 2. On a separate tab of your browser, go to the Azure portal at [https://portal.azure.com](https://portal.azure.com).
-3. In the Azure portal, type **groups** in the search box, and then select **Groups**.
+3. In the Azure portal, enter **groups** in the search box, and then select **Groups**.
 4. in the **All groups** pane, select **New group**.
 5. In **Group type**, select **Microsoft 365**.
-6. In **Group name**, type **Sales**.
+6. In **Group name**, enter **Sales**.
 7. In **Membership type**, select **Dynamic user**.
 8. Select **Dynamic user members**.
 9. In the **Dynamic membership rules** pane: 
    - Select the **department** property.
    - Select the **Equals** operator.
-   - In the **Value** box, type **Sales**.
+   - In the **Value** box, enter **Sales**.
 10. Select **Save**.
 11. Select **Create**.
 
@@ -77,7 +77,7 @@ Next, test dynamic group membership and automatic licensing on the User 4 accoun
 6. In the properties of the User 4 account, verify that no product licenses have been assigned and there are no group memberships.
 7. For **Contact information**, select **Edit**.
 8. In the **Edit Contact information** pane, select **Contact information**.
-9. In the **Department** box, type **Sales**, and then select **Save** > **Close**.
+9. In the **Department** box, enter **Sales**, and then select **Save** > **Close**.
 10. Wait a few minutes, and then periodically select the **Refresh** icon in the upper-right of the User 4 account pane.
 
 In time, you should see the:
