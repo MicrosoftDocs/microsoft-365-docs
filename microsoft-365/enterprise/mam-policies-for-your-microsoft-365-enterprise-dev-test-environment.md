@@ -22,6 +22,10 @@ description: Use this Test Lab Guide to add Intune device compliance policies to
 
 This article describes how to add an Intune device compliance policy for Windows 10 devices and Microsoft 365 Apps for enterprise to your Microsoft 365 for enterprise test environment.
 
+Adding an Intune device compliance policy involves two phases:
+- [Phase 1: Build out your Microsoft 365 for enterprise test environment](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Phase 2: Create a device compliance policy for Windows 10 devices](#phase-2-create-a-device-compliance-policy-for-windows-10-devices)
+
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
@@ -43,16 +47,16 @@ In this phase, create a device compliance policy for Windows 10 devices.
   
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in to your Microsoft 365 test lab subscription with your global administrator account.
 1. On a new tab of your browser, open the Azure portal at [https://portal.azure.com](https://portal.azure.com).
-1. In the search box of the Azure portal, type **Intune**, and then select **Intune**.
+1. In the search box of the Azure portal, enter **Intune**, and then select **Intune**.
 1. If you see a **You haven't enabled device management yet** message in the **Microsoft Intune** pane, select it. In the **Mobile Device Management authority** pane, select **Intune MDM Authority**, and then select **Choose**.
 1. Refresh your browser tab.
 1. In the left navigation pane, select **Groups**.
 1. In the **Groups-All groups** pane, select **+ New Group**.
-1. In the **Group** pane, select **Microsoft 365** or **Security** for **Group type?**, type **Managed Windows 10 device users** in **Name**, select **Assigned** in **Membership type**,  and then select **Create**.
+1. In the **Group** pane, select **Microsoft 365** or **Security** for **Group type?**, enter **Managed Windows 10 device users** in **Name**, select **Assigned** in **Membership type**,  and then select **Create**.
 1. Select **Microsoft Intune**.
 1. In the **Microsoft Intune** pane, in the **Quick tasks** list, select **Create a compliance policy**.
 1. In the **Compliance Policy Profiles** pane, select **Create Policy**.
-1. In the **Create Policy** pane, in **Name**, type **Windows 10**. In **Platform**, select **Windows 10 and later**, select **OK** in the **Windows 10 compliance policy** pane, and then select **Create**.
+1. In the **Create Policy** pane, in **Name**, enter **Windows 10**. In **Platform**, select **Windows 10 and later**, select **OK** in the **Windows 10 compliance policy** pane, and then select **Create**.
 1. Select **Compliance Policy Profiles**, and then select the **Windows 10** policy name.
 1. In the **Windows 10** pane, select **Assignments**, and then select **Select groups to include**.
 1. In the **Select groups to include** pane, select the **Managed Windows 10 device users** group, and then select **Select**.
@@ -60,7 +64,7 @@ In this phase, create a device compliance policy for Windows 10 devices.
 1. In the **Client Apps** pane, select **Apps**, and then select **Add**.
 1. In the **Add app** pane, select **App type**, and then select **Windows 10** under **Microsoft 365 Suite**.
 1. In the **Add App** pane, select **App Suite Information**.
-1. In the **App Suite Information** pane, type **Microsoft 365 Apps for enterprise** in both **Suite Name** and **Suite Description**, and then select **OK**.
+1. In the **App Suite Information** pane, enter **Microsoft 365 Apps for enterprise** in both **Suite Name** and **Suite Description**, and then select **OK**.
 1. In the **Add App** pane, select **Configure App Suite**, and then select **OK**.
 1. In the **Add App** pane, select **App Suite Settings**.
 1. For **Update Channel**, select **Semi-Annual Enterprise**, and then select **OK**.
