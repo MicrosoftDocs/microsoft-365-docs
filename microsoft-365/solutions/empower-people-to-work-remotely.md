@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 09/02/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,6 +15,7 @@ ms.collection:
 - remotework
 - m365solution-remotework
 - m365solution-overview
+- M365initiative-coredeploy
 ms.custom: 
 description: Configure the security and service infrastructure that allows your workers to work remotely from anywhere and at any time.
 ---
@@ -91,7 +91,7 @@ For a 2-page summary of this solution, see the [Empower remote workers poster](.
 
 [![Empower remote workers poster](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 
-You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) or [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pptx) formats and print it on letter, legal, or tabloid (11 x 17) size paper.
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) and print it on letter, legal, or tabloid (11 x 17) size paper.
 
 Use these steps to secure and optimize access to your organization's servers, data, and cloud services and enable maximum worker productivity.
 
@@ -102,6 +102,6 @@ Use these steps to secure and optimize access to your organization's servers, da
 5. [Deploy remote worker productivity apps and services](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Train remote workers and address usage feedback](empower-people-to-work-remotely-train-monitor-usage.md)
 
-![The steps to empower remote workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
+[![The steps to empower remote workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
 For the latest information from Microsoft about supporting remote workers, see the [Enabling remote work Tech Community site](https://resources.techcommunity.microsoft.com/enabling-remote-work/).

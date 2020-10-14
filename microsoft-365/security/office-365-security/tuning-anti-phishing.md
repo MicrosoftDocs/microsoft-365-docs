@@ -10,11 +10,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-defender-office365
 - MET150
 description: "Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future."
 ---
 
 # Tune anti-phishing protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Although Microsoft 365 comes with a variety of anti-phishing features that are enabled by default, it's possible that some phishing messages could still get through to your mailboxes. This topic describes what you can do to discover why a phishing message got through, and what you can do to adjust the anti-phishing settings in your Microsoft 365 organization _without accidentally making things worse_.
 
@@ -24,11 +30,11 @@ If a recipient's account was compromised as a result of the phishing message, fo
 
 If your subscription includes Advanced Threat Protection (ATP), you can use [Office 365 Threat Intelligence](office-365-ti.md) to identify other users who also received the phishing message. You have additional options to block phishing messages:
 
-- [ATP Safe Links](set-up-atp-safe-links-policies.md)
+- [Safe Links in Office 365 ATP](set-up-atp-safe-links-policies.md)
 
-- [ATP Safe Attachments](set-up-atp-safe-attachments-policies.md)
+- [Safe Attachments in Office 365 ATP](set-up-atp-safe-attachments-policies.md)
 
-- [ATP anti-phishing policies in Microsoft 365](configure-atp-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
+- [Anti-phishing policies in Office 365 ATP](configure-atp-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
 
 Verify these ATP features are turned on.
 

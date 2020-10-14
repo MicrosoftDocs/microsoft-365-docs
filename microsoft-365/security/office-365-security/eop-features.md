@@ -16,6 +16,9 @@ description: "The following table provides a list of features that are available
 
 # EOP features
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 The following table provides a list of features that are available in the Exchange Online Protection (EOP) hosted email filtering service.
 
 > [!TIP]
