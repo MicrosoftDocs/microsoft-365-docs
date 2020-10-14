@@ -143,7 +143,7 @@ To work with the DLP alert management dashboard:
         any column.
     -   Select an alert to see details:
 
-        :::image type="content" source="../mediaalert-details.png" alt-text="Screenshot showing alert details on the DLP alert management dashboard.":::
+        :::image type="content" source="../media/alert-details.png" alt-text="Screenshot showing alert details on the DLP alert management dashboard.":::
 
 1.  Select the **Events** tab to view all of the events associated with
     the alert. You can choose a particular event to view its details.
