@@ -26,11 +26,12 @@ description: "Summary: Configure and test password reset for your Microsoft 365 
 
 Azure Active Directory (Azure AD) self-service password reset (SSPR) allows users to reset or unlock their passwords or accounts.
 
-This article describes how you can configure and test password resets in your Microsoft 365 test environment in three phases:
+This article describes how to configure and test password resets in your Microsoft 365 test environment.
 
-1. Create the Microsoft 365 for enterprise test environment.
-2. Enable password writeback.
-3. Configure and test password reset for the User 3 account.
+Setting up SSPR involves three phases:
+- [Phase 1: Configure password hash synchronization for your Microsoft 365 test environment](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
+- [Phase 2: Enable password writeback](#phase-2-enable-password-writeback)
+- [Phase 3: Configure and test password reset](#phase-3-configure-and-test-password-reset)
     
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -81,9 +82,9 @@ Next, test password reset for the User 3 account.
 1. In **Don't lose access to your account**, set the authentication phone to your mobile phone number and the authentication email to your work or personal email account.
 1. After both are verified, select **Looks good**, and then close the private instance of the browser.
 1. In a new private browser instance, go to [https://aka.ms/sspr](https://aka.ms/sspr).
-1. Type the User 3 account name, type the characters from the CAPTCHA, and then select **Next**.
-1. For **verification step 1**, select **Email my alternate email**, and then select **Email**. When you receive the email, type the verification code, and then select **Next**.
-1. In **Get back into your account**, type a new password for the User 3 account, and then select **Finish**. Note the changed password of the User 3 account and store it in a safe location.
+1. Enter the User 3 account name, enter the characters from the CAPTCHA, and then select **Next**.
+1. For **verification step 1**, select **Email my alternate email**, and then select **Email**. When you receive the email, enter the verification code, and then select **Next**.
+1. In **Get back into your account**, enter a new password for the User 3 account, and then select **Finish**. Note the changed password of the User 3 account and store it in a safe location.
 1. In a separate tab of the same browser, go to [https://portal.office.com](https://portal.office.com), and then sign in with the User 3 account name and its new password. You should see the **Microsoft Office Home** page.
 
 ## Next step
