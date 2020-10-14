@@ -20,7 +20,7 @@ description: Use this Test Lab Guide to create and use retention labels on docum
 
 *This Test Lab Guide can be used for both Microsoft 365 for enterprise and Office 365 Enterprise test environments.*
 
-With the instructions in this article, you can configure data classification using retention labels in your Microsoft 365 for enterprise test environment.
+This article describes how to configure data classification using retention labels in your Microsoft 365 for enterprise test environment.
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -43,7 +43,7 @@ In this phase, create the retention labels for the different levels of retention
 1. Sign in to the [Microsoft 365 security center](https://security.microsoft.com/homepage) with your global admin account.
 1. From the **Home - Microsoft 365 security** tab of your browser, select **Classification** > **Retention labels**.
 1. Select **Create a label**.
-1. In the **Name your label** pane, type **Internal Public** in **Name your label**, and then select **Next**.
+1. In the **Name your label** pane, enter **Internal Public** in **Name your label**, and then select **Next**.
 1. In the **File plan descriptors** pane, select **Next**.
 1. In the **Label settings** pane, if needed, set **Retention** to **On**, and then select **Next**.
 1. In the **Review your settings** pane, select **Create the label**.
@@ -57,7 +57,7 @@ In this phase, create the retention labels for the different levels of retention
 1. Select **Add**, and then select **Done**.
 1. On the **Choose labels to publish** pane, select **Next**.
 1. On the **Choose locations** pane, select **Next**.
-1. On the **Name your policy** pane, type **Example organization** in **Name**, and then select **Next**.
+1. On the **Name your policy** pane, enter **Example organization** in **Name**, and then select **Next**.
 1. On the **Review your settings** pane, select **Publish labels**.
  
 It might take a few minutes for the retention labels to be published.
@@ -72,8 +72,8 @@ First, create a sensitive-level SharePoint Online team site:
 1. In the list of tiles, select **SharePoint**.
 1. On the new **SharePoint** tab in your browser, select **Create site**.
 1. On the **Create a site** page, select **Team site**.
-1. In the **Team site name** box, type **SensitiveFiles**.
-1. In the **Team site description** box, type **SharePoint site for sensitive files**.
+1. In the **Team site name** box, enter **SensitiveFiles**.
+1. In the **Team site description** box, enter **SharePoint site for sensitive files**.
 1. In **Privacy settings**, select **Private - only members can access this site**, and then select **Next**.
 1. In the **Who do you want to add?** pane, select **Finish**.
     
@@ -87,7 +87,7 @@ Next, configure the Documents folder of the SensitiveFiles team site for the Sen
 Next, create a new document in the SensitiveFiles site and change its retention label.
     
 1. In the documents folder, select **New** > **Word document**.
-1. Type some text in the blank document. Wait for the text to be saved.
+1. Enter some text in the blank document. Wait for the text to be saved.
 1. On the menu bar, select **Shared Documents**.
 1. Next to the **Document.docx** file name, select the vertical ellipsis, and then select **Details**.
 1. In the right pane, in the **Properties** section, under **Apply retention label**, note that the document has had the **Sensitive** retention label automatically applied.
