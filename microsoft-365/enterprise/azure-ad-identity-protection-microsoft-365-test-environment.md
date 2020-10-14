@@ -25,8 +25,8 @@ You can use Azure Active Directory (Azure AD) Identity Protection to detect pote
 
 Setting up Azure AD Identity Protection in your Microsoft 365 for enterprise test environment involves two phases:
 
-1. Create the Microsoft 365 for enterprise test environment.
-2. Use Azure AD Identity Protection.
+- [Phase 1: Build out your Microsoft 365 for enterprise test environment](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Phase 2: Use Azure AD Identity Protection](#phase-2-use-azure-ad-identity-protection)
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
