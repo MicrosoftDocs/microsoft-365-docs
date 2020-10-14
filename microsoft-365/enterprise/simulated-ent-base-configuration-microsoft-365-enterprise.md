@@ -90,7 +90,7 @@ Get your subscription name using the following command.
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-Set your Azure subscription. Replace everything within the quotation markes, including the < and > characters, with the correct name.
+Set your Azure subscription. Replace everything within the quotation marks, including the < and > characters, with the correct name.
   
 ```powershell
 $subscr="<subscription name>"
