@@ -66,7 +66,7 @@ To start your Microsoft 365 E5 trial subscription, you first need a fictitious c
 
 1. In your browser, go to [https://aka.ms/e5trial](https://aka.ms/e5trial).
     
-2. On the **Thank you for choosing Office 365 E5** page, specify your new email account address in step 1.
+2. In step 1 of the **Thank you for choosing Office 365 E5** page, enter your new email account address.
 3. In step 2 of the trail subscription process, enter the requested information, and then perform the verification.
 4. In step 3, enter an organization name and then an account name that will be the global admin for the subscription.
 5. For step 4, record the sign-in page here (select and copy): ![Line](../media/Common-Images/TableLine.png)
