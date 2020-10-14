@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: 
 description: Prevent personal data breaches with identity, device, and threat protection services of Microsoft 365.
 ---
@@ -75,7 +76,7 @@ Use [Exchange Online Protection and Office 365 Advanced Threat Protection (ATP)]
 
 ### References:
 
-- [Common identity and device access policies](../enterprise/identity-access-policies.md)
+- [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
 - [Protect against threats in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
 - [ATP Safe Attachments](../security/office-365-security/atp-safe-attachments.md)
 - [ATP Safe Links](../security/office-365-security/atp-safe-links.md)
