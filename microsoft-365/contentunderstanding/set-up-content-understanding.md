@@ -36,7 +36,7 @@ As an admin, you can also make changes to your selected settings anytime after s
 
 ## To set up SharePoint Syntex
 
-1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational knowledge** section.
+1. In the Microsoft 365 admin center, select **Setup**, and then view the **Files and content** section.
 
 2. In the **Files and content** section, select **Automate content understanding**.<br/>
 
