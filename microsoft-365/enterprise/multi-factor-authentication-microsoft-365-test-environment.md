@@ -28,13 +28,10 @@ With multi-factor authentication, users are required to acknowledge a phone call
   
 This article describes how to enable and test text message-based authentication for a specific user account.
   
-Setting up multi-factor authentication for an account in your Microsoft 365 for enterprise test environment involves two phases and an optional third phase:
-  
-1. Create the Microsoft 365 for enterprise test environment.
-    
-2. Enable and test multi-factor authentication for the User 2 account.
-
-3. Enable and test multi-factor authentication with a conditional access policy (optional).
+Setting up multi-factor authentication for an account in your Microsoft 365 for enterprise test environment involves two phases and a third optional phase:
+- [Phase 1: Build out your Microsoft 365 for enterprise test environment](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Phase 2: Enable and test multi-factor authentication for the User 2 account](#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account)
+- [Phase 3: Enable and test multi-factor authentication with a conditional access policy](#phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy)
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -84,7 +81,7 @@ Complete the configuration for the User 2 account to use a text message for vali
     
    - Select your country or region.
     
-   - Type phone number of the smart phone that will receive text messages.
+   - Enter the phone number of the smart phone that will receive text messages.
     
    - In **Method**, select **Send me a code by text message**.
     
@@ -94,7 +91,7 @@ Complete the configuration for the User 2 account to use a text message for vali
     
 7. On the **Step 3: Keep your existing applications** page, select **Done**.
     
-8. If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then select **Update password and sign in**. Record the new password in a secure location.
+8. If this is the first time you signed in with the User 2 account, you are prompted to change the password. Enter the original password and a new password twice, and then select **Update password and sign in**. Record the new password in a secure location.
     
     You should see the Office portal for User 2 on the **Microsoft Office Home** tab of your browser.
 
@@ -110,7 +107,7 @@ Next, create a new group named MFAUsers and add the User 3 account to it.
 2. Select **Add a group**.
 3. In the **Choose a group type** pane, select **Security**, and then select **Next**.
 4. In the **Set up the basics** pane, select **Create group**, and then select **Close**.
-5. In the **Review and finish adding group** pane, type **MFAUsers**, and then select **Next**.
+5. In the **Review and finish adding group** pane, enter **MFAUsers**, and then select **Next**.
 6. In the list of groups, select the **MFAUsers** group.
 7. In the **MFAUsers** pane, select **Members**, and then select **View all and manage members**.
 8. In the **MFAUsers** pane, select **Add members**, select the **User 3** account, and then select **Save** > **Close** > **Close**.
@@ -120,7 +117,7 @@ Next, create a conditional access policy to require multifactor authentication f
 1. In a new tab of your browser, go to [https://portal.azure.com](https://portal.azure.com).
 2. Select **Azure Active Directory** > **Security** > **Conditional Access**.
 3. In the **Conditional access – Policies** pane, select **New policy**.
-4. In the **New** pane, type **MFA for user accounts** in the **Name** box.
+4. In the **New** pane, enter **MFA for user accounts** in the **Name** box.
 5. In the **Assignments** section, select **Users and groups**.
 6. On the **Include** tab of the **Users and groups** pane, select **Select users and groups** > **Users and groups** > **Select**.
 7. In the **Select** pane, select the **MFAUsers** group, and then select **Select** > **Done**.
