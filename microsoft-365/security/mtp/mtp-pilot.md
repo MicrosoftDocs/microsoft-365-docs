@@ -37,6 +37,16 @@ To effectively determine the benefit and adoption of Microsoft Threat Protection
 
 This guide provides an overview of Microsoft Threat Protection and step-by-step instructions on how to set up your pilot project. 
 
+Microsoft Threat Protection is a unified pre- and post-breach enterprise defense suite that natively coordinates protection, detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks. It does so by combining and orchestrating the following capabilities into a single security solution:
+  - Microsoft Defender for Endpoint, the new name for Microsoft Defender Advanced Threat Protection (endpoints)
+  -	Microsoft Defender for Office 365, the new name for Office 365 ATP (email) 
+  -	Microsoft Defender for Identity, the new name for Azure ATP (identity) 
+  -	Microsoft Cloud App Security (apps)
+
+![Image of_Microsoft Threat Protection solution for users, Azure Advanced Threat Protection, for endpoints Microsoft Defender Advanced Threat Protection, for cloud apps, Microsoft Cloud App Security, and for data, Office 365 Advanced Threat Protection  ](../../media/mtp-pillars.png)
+
+With the integrated Microsoft Threat Protection solution, security professionals can stitch together the threat signals that Microsoft Defender Advanced Threat Protection, Office 365 ATP, Azure ATP, and Microsoft Cloud App Security receive, and determine the full scope and impact of the threat, how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft Threat Protection takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. See the [Microsoft Threat Protection overview](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) for details.
+
 ![Phases in running a Microsoft Threat Protection pilot](../../media/pilotphases.png)
 
 The following sample timeline varies depending on having the right resources in your environment. Some detections and workflows might need more learning time than the others.
