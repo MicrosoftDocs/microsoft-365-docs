@@ -34,6 +34,8 @@ Microsoft 365 Advanced eDiscovery supports double-byte character set languages (
 
 You can use CJK characters for [keyword searches](building-search-queries.md#keyword-searches), [keyword queries and search conditions](keyword-queries-and-search-conditions.md) for a search in Advanced eDiscovery, Core eDiscovery, and Content Search.
 
+We provide CJK support for all [search operators](keyword-queries-and-search-conditions.md#search-operators) and [search conditions](keyword-queries-and-search-conditions.md#search-conditions), including the boolean operators **AND, OR, NOT, and NEAR**.
+
 If you're certain content locations contain the CJK characters you're searching for, but the search returns no results, click query language-country/region![Query language-country/region icon in Content search](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) and select the corresponding language-country culture code value for the search. The default language/region is neutral.
 
 **Can I search for multiple languages at once?**
@@ -41,6 +43,7 @@ If you're certain content locations contain the CJK characters you're searching 
 It depends on your search scenario.
 
 When you [query the data in a review set](review-set-search), you can search for multiple languages at once.
+
 
 When you [create a search to collect data](create-search-to-collect-data), create a separate search for each language you're targeting. For example, if you are searching for a document that contains both Chinese and Korean, select Chinese for your first query and select Korean for your second query.
 
