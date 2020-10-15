@@ -21,7 +21,12 @@ description: Use this Test Lab Guide to enable privileged access management your
 
 *This Test Lab Guide can be used for both Microsoft 365 for enterprise and Office 365 Enterprise test environments.*
 
-With the instructions in this article, you can configure privileged access management to increase security in your Microsoft 365 for enterprise test environment.
+This article describes how to configure privileged access management to increase security in your Microsoft 365 for enterprise test environment.
+
+Configuring priviledged access management involves three phases:
+- [Phase 1: Build out your Microsoft 365 for enterprise test environment](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Phase 2: Configure privileged access management](#phase-2-configure-privileged-access-management)
+- [Phase 3: Verify that approval is required for elevated and privileged tasks](#phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks)
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -45,11 +50,11 @@ Follow these steps to set up and use privileged access in your organization:
 
 - [Step 1: Create an approver's group](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
 
-    Before you start using privileged access, determine who will have approval authority for incoming requests for access to elevated and privileged tasks. All users who are part of the Approvers’ group can approve access requests. To use privileged access, you must create a mail-enabled security group in Microsoft 365. In your test environment, name the new security group "Privileged Access Approvers" and add the "User 3" that was previously created in prior test lab guide steps.
+Before you start using privileged access, determine who will have approval authority for incoming requests for access to elevated and privileged tasks. All users who are part of the Approvers’ group can approve access requests. To use privileged access, you must create a mail-enabled security group in Microsoft 365. In your test environment, name the new security group "Privileged Access Approvers" and add the "User 3" that was previously created in previous test lab guide steps.
 
 - [Step 2: Enable privileged access](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
 
-    Privileged access needs to be explicitly turned on in Microsoft 365 with the default approver group and including a set of system accounts that you’d want excluded from the privileged access management access control. Be sure to enable privileged access in your organization before starting Phase 3 of this guide.
+Privileged access needs to be explicitly turned on in Microsoft 365 with the default approver group, and it must include a set of system accounts that you want excluded from the privileged access management access control. Be sure to enable privileged access in your organization before starting Phase 3 of this guide.
 
 ## Phase 3: Verify that approval is required for elevated and privileged tasks
 
@@ -61,13 +66,13 @@ First, connect to Exchange Management PowerShell with the credentials of a user 
 
 1. On your local computer, open and sign in to the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using the Global Admin account for your test environment.
 
-2. In Exchange Management PowerShell, create a new Journal rule for your organization:
+1. In Exchange Management PowerShell, create a new Journal rule for your organization:
 
-```ExchangeManagementPowerShell
-New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
-```
+   ```ExchangeManagementPowerShell
+   New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
+   ```
 
-4. View that the new Journal Rule was successfully created in Exchange Management PowerShell.
+1. View that the new Journal Rule was successfully created in Exchange Management PowerShell.
 
 ### Create a new privileged access policy for the New-JournalRule task
 
@@ -102,19 +107,19 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 2. In Exchange Management PowerShell, create a new Journal rule for your organization:
 
-```ExchangeManagementPowerShell
-New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
-```
+   ```ExchangeManagementPowerShell
+   New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
+   ```
 
 3. View the "Insufficient permissions" error in Exchange Management PowerShell:
 
-```ExchangeManagementPowerShell
-Insufficient permissions. Please raise an elevated access request for this task.
-    + CategoryInfo          : NotSpecified: (:) [], LocalizedException
-    + FullyQualifiedErrorId : [Server=CY1PR00MB0220,RequestId=7b8c7470-ddd0-4528-a01e-5e20ecc9bd54,TimeStamp=9/19/2018
-    7:38:34 PM] [FailureCategory=Cmdlet-LocalizedException] 882BD051
-    + PSComputerName        : outlook.office365.com
-```
+   ```ExchangeManagementPowerShell
+   Insufficient permissions. Please raise an elevated access request for this task.
+       + CategoryInfo          : NotSpecified: (:) [], LocalizedException
+       + FullyQualifiedErrorId : [Server=CY1PR00MB0220,RequestId=7b8c7470-ddd0-4528-a01e-5e20ecc9bd54,TimeStamp=9/19/2018
+       7:38:34 PM] [FailureCategory=Cmdlet-LocalizedException] 882BD051
+       + PSComputerName        : outlook.office365.com
+   ```
 
 ### Request access to create a new Journal Rule using the New-JournalRule task
 
@@ -152,13 +157,13 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 1. On your local computer, open and sign in to the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using the Global Admin account for your test environment.
 
-2. In Exchange Management PowerShell, create a new Journal rule for your organization:
+1. In Exchange Management PowerShell, create a new Journal rule for your organization:
 
-```ExchangeManagementPowerShell
-New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
-```
+   ```ExchangeManagementPowerShell
+   New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
+   ```
 
-3. View that the new Journal Rule was successfully created in Exchange Management PowerShell.
+1. View that the new Journal Rule was successfully created in Exchange Management PowerShell.
 
 ## Next step
 
