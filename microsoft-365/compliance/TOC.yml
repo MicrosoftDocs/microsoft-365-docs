@@ -96,7 +96,7 @@
           href: customize-a-built-in-sensitive-information-type.md
         - name: Create custom sensitive information types with exact data match
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: Create a custom sensitive information type - Security & Compliance Center
+        - name: Get started with custom sensitive information types
           href: create-a-custom-sensitive-information-type.md
         - name: Create a custom sensitive information type - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md

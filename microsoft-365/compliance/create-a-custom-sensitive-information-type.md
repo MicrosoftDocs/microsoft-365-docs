@@ -1,5 +1,5 @@
 ---
-title: "Create a custom sensitive information type in the Security & Compliance Center"
+title: "Get started with custom sensitive information types"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -36,22 +36,7 @@ If the pre-configured sensitive information types don't meet your needs, you can
 
 The custom sensitive information types that you create by using this method are added to the rule package named `Microsoft.SCCManaged.CustomRulePack`.
 
-> [!NOTE]
-> Microsoft 365 Information Protection supports, in preview, double byte character set languages for:
-> - Chinese (simplified)
-> - Chinese (traditional)
-> - Korean
-> - Japanese
-> 
->This preview is only in the commercial cloud and the rollout is limited to:
-> - Japan
-> - Korea
-> - China
-> - Hong Kong
-> - Macau
-> - Taiwan
->
->This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
+
 
 ## Before you begin
 
@@ -136,43 +121,35 @@ Use this procedure to create a new sensitive information type that you fully def
 
     ![Review and finalize page](../media/scc-cust-sens-info-type-new-review.png) -->
 
-The next page encourages you to test the new custom sensitive information type by clicking **Yes**. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center). To test the rule later, click **No**.
+12. On the **Data classification** page, you'll see all the sensitive information types listed. Choose **Refresh** and then browse for or use the search tool to find the sensitive information type you just created.
 
-    ![Test recommendation page](../media/scc-cust-sens-info-type-new-test.png)
+## Test a sensitive information type
 
-### How do you know this worked?
+You can test any sensitive information type in the list. We suggest that you test every sensitive information type that you create before using it in a police
 
-To verify that you've successfully created a new sensitive information type, do any of the following steps:
+1. Prepare two files, like a Word document. One with content that matches the elements you specified in your sensitive information type and one that doesn't match.
+2. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list to open the details pane and choose **Test**.
+3. Upload a file and choose **Test**.
+4. On the **Matches results** page, review the results and choose **Finish**.
 
-  - Go to **Classifications** \> **Sensitive info types** and verify the new custom sensitive information type is listed.
+##
 
-  - Test the new custom sensitive information type. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center).
+## Modify custom sensitive information types in the Compliance Center
 
-## Modify custom sensitive information types in the Security & Compliance Center
 
-**Notes**:
 <!-- check to see if this note contradicts the guidance in "customize a built in sensitive information type customize-a-built-in-sensitive-information-type it sure seems like it does-->
-- You can only modify custom sensitive information types; you can't modify built-in sensitive information types. But you can use PowerShell to export built-in custom sensitive information types, customize them, and import them as custom sensitive information types. For more information, see [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md).
+<!-- - You can only modify custom sensitive information types; you can't modify built-in sensitive information types. But you can use PowerShell to export built-in custom sensitive information types, customize them, and import them as custom sensitive information types. For more information, see [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md).
 
-- You can only modify custom sensitive information types that you created in the UI. If you used the [PowerShell procedure](create-a-custom-sensitive-information-type-in-scc-powershell.md) to import a custom sensitive information type rule package, you'll get an error.
+- You can only modify custom sensitive information types that you created in the UI. If you used the [PowerShell procedure](create-a-custom-sensitive-information-type-in-scc-powershell.md) to import a custom sensitive information type rule package, you'll get an error. -->
 
-In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types**, select the custom sensitive information type that you want to modify, and then click **Edit**.
+1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to modify choose **Edit**.
+2. You can add 
 
-  ![Location of Sensitive info types and Edit button](../media/scc-cust-sens-info-type-edit.png)
 
-The same options are available here as when you created the custom sensitive information type in the Security & Compliance Center. For more information, see [Create custom sensitive information types in the Security & Compliance Center](#create-custom-sensitive-information-types-in-the-security--compliance-center).
 
-### How do you know this worked?
+The same options are available here as when you created the custom sensitive information type. For more information, see [Create custom sensitive information types in the Compliance Center](#create-custom-sensitive-information-types-in-the-compliance-center).
 
-To verify that you've successfully modified a sensitive information type, do any of the following steps:
-
-  - Go to **Classifications** \> **Sensitive info types** to verify the properties of the modified custom sensitive information type. 
-
-  - Test the modified custom sensitive information type. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center).
-
-## Remove custom sensitive information types in the Security & Compliance Center 
-
-**Notes**:
+## Remove custom sensitive information types in the Compliance Center 
 
 - You can only remove custom sensitive information types; you can't remove built-in sensitive information types.
 
@@ -190,25 +167,23 @@ To verify that you've successfully modified a sensitive information type, do any
 
 To verify that you've successfully removed a custom sensitive information type, go to **Classifications** \> **Sensitive info types** to verify the custom sensitive information type is no longer listed.
 
-## Test custom sensitive information types in the Security & Compliance Center
-
-1. In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types**.
-
-2. Select one or more custom sensitive information types to test. In the fly-out that opens, click **Test type** (or **Test sensitive info types** if you selected more than one).
-
-    ![Location of Sensitive info types and Test type button](../media/scc-cust-sens-info-type-test.png)
-
-3. On the **Upload file to test** page that opens, upload a document to test by dragging and dropping a file or by clicking **Browse** and selecting a file.
-
-    ![Upload file to test page](../media/scc-cust-sens-info-type-test-upload.png)
-
-4. Click the **Test** button to test the document for pattern matches in the file.
-
-5. On the **Match results** page, click **Finish**.
-
-    ![Match results](../media/scc-cust-sens-info-type-test-results.png)
-
-
 You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities. To learn more about those methods, see:
 - [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Create a custom sensitive information type for DLP with Exact Data Match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+ 
+> [!NOTE]
+> Microsoft 365 Information Protection supports, in preview, double byte character set languages for:
+> - Chinese (simplified)
+> - Chinese (traditional)
+> - Korean
+> - Japanese
+> 
+>This preview is only in the commercial cloud and the rollout is limited to:
+> - Japan
+> - Korea
+> - China
+> - Hong Kong
+> - Macau
+> - Taiwan
+>
+>This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
