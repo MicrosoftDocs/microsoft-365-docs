@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/13/2020
+ms.date: 10/16/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -25,7 +25,7 @@ Microsoft 365 leverages a number of different certificate providers. The followi
 
 The following certificate information applies to **all DOD and GCC High customers**.
 
-Last updated: **10/13/2020**
+Last updated: **10/16/2020**
 
 >[!NOTE]
 >For certificate information that applies to **worldwide customers**, see [Microsoft 365 encryption chains](encryption-office-365-certificate-chains.md).
