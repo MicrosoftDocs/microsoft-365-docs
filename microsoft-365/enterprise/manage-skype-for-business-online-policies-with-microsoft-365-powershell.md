@@ -32,7 +32,7 @@ Use these instructions to get set up to run the commands (skip the steps you hav
 1. Install the [Teams PowerShell module](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
     
 2. Open a Windows PowerShell command prompt and run the following commands: 
-    
+
    ```powershell
    Import-Module MicrosoftTeams
    $userCredential = Get-Credential
