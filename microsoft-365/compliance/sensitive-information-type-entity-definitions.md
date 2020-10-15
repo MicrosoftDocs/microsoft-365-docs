@@ -7888,36 +7888,24 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Debit Acct # 
 - Debit Acct No. 
 - Debit Account No. 
-- 口座番号を当座預金口座の確認 
-- ＃アカウントの確認、勘定番号の確認 
-- ＃勘定の確認 
-- 勘定番号の確認 
-- 口座番号の確認 
-- 銀行口座番号 
-- 銀行口座 
-- 銀行口座＃ 
-- 銀行の勘定番号 
-- 銀行のacct＃ 
-- 銀行の勘定いいえ 
+- 口座番号
+- 銀行口座
 - 銀行口座番号
-- 普通預金口座番号 
-- 預金口座 
-- 貯蓄口座＃ 
-- 貯蓄勘定の数 
-- 貯蓄勘定＃ 
-- 貯蓄勘定番号 
-- 普通預金口座番号 
-- 引き落とし口座番号 
-- 口座番号 
-- 口座番号＃ 
-- デビットのacct番号 
-- デビット勘定＃ 
-- デビットACCTの番号 
-- デビット口座番号 
+- 総合口座
+- 普通預金口座
+- 普通口座
+- 当座預金口座
+- 当座口座
+- 預金口座
+- 振替口座
+- 銀行
+- バンク
 
 #### Keyword_jp_bank_branch_code
 
-Otemachi
+- 支店番号
+- 支店コード
+- 店番号
 
 ## Japan driver's license number
 
@@ -7953,31 +7941,41 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keyword_jp_drivers_license_number
 
-- dl# 
-- DL＃ 
-- dls# 
-- DLS＃ 
-- driver license 
-- driver licenses 
-- drivers license 
-- driver's license 
-- drivers licenses 
-- driver's licenses 
-- driving licence 
-- lic# 
-- LIC＃ 
-- lics# 
-- state id 
-- state identification 
-- state identification number 
-- 低所得国＃ 
-- 免許証 
-- 状態ID
-- 状態の識別 
-- 状態の識別番号 
-- 運転免許 
-- 運転免許証 
-- 運転免許証番号 
+- driverlicense
+- driverslicense
+- driver'slicense
+- driverslicenses
+- driver'slicenses
+- driverlicenses
+- dl#
+- dls#
+- lic#
+- lics#
+- 運転免許証
+- 運転免許
+- 免許証
+- 免許
+- 運転免許証番号
+- 運転免許番号
+- 免許証番号
+- 免許番号
+- 運転免許証ナンバー
+- 運転免許ナンバー
+- 免許証ナンバー
+- 運転免許証no
+- 運転免許no
+- 免許証no
+- 免許no
+- 運転経歴証明書番号
+- 運転経歴証明書
+- 運転免許証No.
+- 運転免許No.
+- 免許証No.
+- 免許No.
+- 運転免許証#
+- 運転免許#
+- 免許証#
+- 免許#
 
 
 ## Japan My Number - Corporate
@@ -8139,10 +8137,21 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keyword_jp_passport
 
-- パスポート 
-- パスポート番号 
-- パスポートのNum 
-- パスポート＃ 
+- Passport
+- Passport Number
+- Passport No.
+- Passport #
+- パスポート
+- パスポート番号
+- パスポートナンバー
+- パスポート＃
+- パスポート#
+- パスポートNo.
+- 旅券番号
+- 旅券番号＃
+- 旅券番号♯
+- 旅券ナンバー
+
 
 ## Japan residence card number
 
@@ -8185,6 +8194,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Residence card no
 - Residence card #
 - 在留カード番号
+- 在留カード
+- 在留番号
 
 ## Japan resident registration number
 
@@ -8221,16 +8232,15 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 #### Keyword_jp_resident_registration_number
 
 - Resident Registration Number
-- Resident Register Number 
 - Residents Basic Registry Number 
 - Resident Registration No. 
 - Resident Register No. 
 - Residents Basic Registry No. 
 - Basic Resident Register No. 
-- 住民登録番号、登録番号をレジデント 
-- 住民基本登録番号、登録番号 
-- 住民基本レジストリ番号を常駐 
-- 登録番号を常駐住民基本台帳登録番号 
+- 外国人登録証明書番号
+- 証明書番号
+- 登録番号
+- 外国人登録証
 
    
 ## Japan social insurance number (SIN)
@@ -8283,8 +8293,22 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Social Insurance No. 
 - Social Insurance Num 
 - Social Insurance Number 
-- 社会保険のテンキー 
-- 社会保険番号 
+- 健康保険被保険者番号
+- 健保番号
+- 基礎年金番号
+- 雇用保険被保険者番号
+- 雇用保険番号
+- 保険証番号
+- 社会保険番号
+- 社会保険No.
+- 社会保険
+- 介護保険
+- 介護保険被保険者番号
+- 健康保険被保険者整理番号
+- 雇用保険被保険者整理番号
+- 厚生年金
+- 厚生年金被保険者整理番号
+
 
 ## Latvia driver's license number
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
@@ -12422,38 +12446,40 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
    
 #### Keyword_swift
 
-- international organization for standardization 9362 
-- iso 9362 
-- iso9362 
-- swift\# 
-- swiftcode 
-- swiftnumber 
-- swiftroutingnumber 
-- swift code 
-- swift number # 
-- swift routing number 
-- bic number 
-- bic code 
-- bic \# 
-- bic\# 
-- bank identifier code 
-- 標準化9362 
-- 迅速＃ 
-- SWIFTコード 
-- SWIFT番号 
-- 迅速なルーティング番号 
-- BIC番号 
-- BICコード 
-- 銀行識別コードのための国際組織 
-- Organisation internationale de normalisation 9362 
-- rapide \# 
-- code SWIFT 
-- le numéro de swift 
-- swift numéro d'acheminement 
-- le numéro BIC 
-- \# BIC 
-- code identificateur de banque 
-
+- international organization for standardization 9362
+- iso 9362
+- iso9362
+- swift#
+- swiftcode
+- swiftnumber
+- swiftroutingnumber
+- swift code
+- swift number #
+- swift routing number
+- bic number
+- bic code
+- bic #
+- bic#
+- bank identifier code
+- Organisation internationale de normalisation 9362
+- rapide #
+- code SWIFT
+- le numéro de swift
+- swift numéro d'acheminement
+- le numéro BIC
+- # BIC
+- code identificateur de banque
+- SWIFTコード
+- SWIFT番号
+- BIC番号
+- BICコード
+- SWIFT コード
+- SWIFT 番号
+- BIC 番号
+- BIC コード
+- 金融機関識別コード
+- 金融機関コード
+- 銀行コード
 
 ## Switzerland SSN AHV number
 This sensitive information type is only available for use in:
@@ -12984,24 +13010,18 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_uk_nino finds content that matches the pattern.
-- No keyword from Keyword_uk_nino is found.
 
 ```xml
-<!-- U.K. NINO -->
-<Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.K. NINO -->
+    <Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>    
-     <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_uk_nino" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ### Keywords
