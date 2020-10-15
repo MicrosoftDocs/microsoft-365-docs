@@ -94,7 +94,7 @@ Get your subscription name using the following command.
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-Set your Azure subscription. Replace everything within the quotation marks, including the < and > characters, with the correct name.
+Set your Azure subscription. Replace everything within the quotation marks, including the angle brackets ("<" and ">"), with the correct name.
   
 ```powershell
 $subscr="<subscription name>"
@@ -107,7 +107,7 @@ Next, create a new resource group for your simulated enterprise test lab. To det
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-Create your new resource group with these commands. Replace everything within the quotation marks, including the < and > characters, with the correct names.
+Create your new resource group with these commands. Replace everything within the quotation marks, including the angle brackets, with the correct names.
   
 ```powershell
 $rgName="<resource group name>"
@@ -180,7 +180,7 @@ Next, add an extra data disk as a new volume with the drive letter F: with this 
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-Next, configure DC1 as a domain controller and DNS server for the **testlab.**\<*your public domain*> domain. Specify your public domain name, remove the \< and > characters, and then run these commands at an administrator-level Windows PowerShell command prompt on DC1.
+Next, configure DC1 as a domain controller and DNS server for the **testlab.**\<*your public domain*> domain. Specify your public domain name, remove the angle brackets, and then run these commands at an administrator-level Windows PowerShell command prompt on DC1.
   
 ```powershell
 $yourDomain="<your public domain>"
