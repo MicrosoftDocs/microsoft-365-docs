@@ -39,7 +39,7 @@ The elements of configuration for a team with security isolation are:
 
 Watch this video for an overview of the deployment process.
 <br>
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GIW2]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a>
 For a 2-page summary of this scenario, see the [Microsoft Teams with security isolation poster](../downloads/team-security-isolation-poster.pdf).
