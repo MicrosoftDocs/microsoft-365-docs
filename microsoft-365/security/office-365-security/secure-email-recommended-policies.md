@@ -61,6 +61,34 @@ This policy prevents ActiveSync clients from bypassing other Conditional Access 
 
 You can also use authentication policies to [disable Basic authentication](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), which forces all client access requests to use modern authentication.
 
+## Limiting access to Exchange Online from Outlook on the web
+
+You can restrict the ability for users to download attachments from Outlook on the web to a non-compliant device. Users on these devices can view and edit these files without leaking and storing the files on the device. You can also block users from seeing attachments on a non-compliant device.
+
+Here are the steps:
+
+1. [Connect to an Exchange Online Remote PowerShell session](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+2. If you don't already have an OWA mailbox policy, create one with the [New-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/new-owamailboxpolicy) cmdlet.
+3. If you want to allow viewing of attachments but no downloading, use this command:
+
+   ```powershell
+   Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnly
+   ```
+
+4. If you want to block attachments, use this command:
+
+   ```powershell
+   Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
+   ```
+
+4. In the Azure portal, create a new Conditional Access policy with these settings:
+
+   **Assignments > Users and groups**: Select appropriate users and groups to include and exclude.
+
+   **Assignments > Cloud apps or actions > Cloud apps > Include > Select apps**: Select **Office 365 Exchange Online**
+
+   **Access controls > Session**: Select **Use app enforced restrictions**
+
 ## Set up message encryption
 
 With the new Office 365 Message Encryption (OME) capabilities, which leverage the protection features in Azure Information Protection, your organization can easily share protected email with anyone on any device. Users can send and receive protected messages with other Microsoft 365 organizations as well as non-customers using Outlook.com, Gmail, and other email services.
