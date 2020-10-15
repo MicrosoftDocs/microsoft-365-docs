@@ -25,12 +25,16 @@ description: Use this Test Lab Guide to create a simulated enterprise test envir
 
 *This Test Lab Guide can be used for both Microsoft 365 for enterprise and Office 365 Enterprise test environments.*
 
-This article provides step-by-step instructions to create a simplified environment for Microsoft 365 for enterprise that includes:
+This article describes how to create a simplified environment for Microsoft 365 for enterprise that includes:
 
 - A Microsoft 365 E5 trial or paid subscription.
 - A simplified organization intranet connected to the internet, consisting of three virtual machines on an Azure virtual network (DC1, APP1, and CLIENT1).
  
 ![The simulated enterprise base configuration](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+
+Creating a simplified test environment involves two phases:
+- [Phase 1: Create a simulated intranet](#phase-1-create-a-simulated-intranet)
+- [Phase 2: Create your Microsoft 365 E5 subscription](#phase-2-create-your-microsoft-365-e5-subscription)
 
 You can use the resulting environment to test the features and functionality of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise) with additional [Test Lab Guides](m365-enterprise-test-lab-guides.md) or on your own.
 
@@ -160,13 +164,13 @@ Next, connect to the DC1 virtual machine:
     
    - For Windows 7:
     
-     In the **Windows Security** dialog box, select **Use another account**. In **User name**, type **DC1\\**<*local administrator account name*>.
+     In the **Windows Security** dialog box, select **Use another account**. In **User name**, enter **DC1\\**<*local administrator account name*>.
     
    - For Windows 8 or Windows 10:
     
-     In the **Windows Security** dialog box, select **More choices**, and then select **Use a different account**. In **User name**, type **DC1\\**<*local administrator account name*>.
+     In the **Windows Security** dialog box, select **More choices**, and then select **Use a different account**. In **User name**, enter **DC1\\**<*local administrator account name*>.
     
-4. In **Password**, type the password of the local administrator account, and then select **OK**.
+4. In **Password**, enter the password of the local administrator account, and then select **OK**.
     
 5. When prompted, select **Yes**.
     
@@ -193,9 +197,9 @@ After DC1 restarts, reconnect to the DC1 virtual machine.
     
 2. Run the DC1.rdp file that is downloaded, and then select **Connect**.
     
-3. In **Windows Security**, select **Use another account**. In **User name**, type **TESTLAB\\**<*local administrator account name*>.
+3. In **Windows Security**, select **Use another account**. In **User name**, enter **TESTLAB\\**<*local administrator account name*>.
     
-4. In the **Password** box, type the password of the local administrator account, and then select **OK**.
+4. In the **Password** box, enter the password of the local administrator account, and then select **OK**.
     
 5. When prompted, select **Yes**.
     
@@ -335,11 +339,11 @@ Next, verify that you can access web and file share resources on APP1 from CLIEN
     
 4. From the Start screen, select **Internet Explorer**, and then select **OK**.
     
-5. In the Address bar, type **http<span>://</span>app1.testab.**\<*your public domain name*>**/**, and then press ENTER. You should see the default Internet Information Services web page for APP1.
+5. In the address bar, enter **http<span>://</span>app1.testab.**\<*your public domain name*>**/**, and then press **Enter**. You should see the default Internet Information Services web page for APP1.
     
 6. On the desktop taskbar, select the File Explorer icon.
     
-7. In the address bar, type **\\\\app1\\Files**, and then press ENTER. You should see a folder window with the contents of the Files shared folder.
+7. In the address bar, enter **\\\\app1\\Files**, and then press **Enter**. You should see a folder window with the contents of the Files shared folder.
     
 8. In the **Files** shared folder window, double-click the **Example.txt** file. You should see the contents of the Example.txt file.
     
