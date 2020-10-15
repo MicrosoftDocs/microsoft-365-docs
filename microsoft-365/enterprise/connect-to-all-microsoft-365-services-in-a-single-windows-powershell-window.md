@@ -22,18 +22,18 @@ description: "Summary: Connect to all Microsoft 365 services in a single PowerSh
 
 # Connect to all Microsoft 365 services in a single PowerShell window
 
-When you use PowerShell to manage Microsoft 365, you can have multiple PowerShell sessions open at the same time. You might have different PowerShell windows corresponding to managing user accounts, SharePoint Online, Exchange Online, Skype for Business Online, Microsoft Teams, and the Security &amp; Compliance center.
+When you use PowerShell to manage Microsoft 365, you can have multiple PowerShell sessions open at the same time. You might have different PowerShell windows to manage user accounts, SharePoint Online, Exchange Online, Skype for Business Online, Microsoft Teams, and the Security &amp; Compliance center.
   
-This scenario isn't optimal for managing Microsoft 365 because you can't exchange data among those windows for cross-service management. This article describes how to use a single instance of PowerShell to manage Microsoft 365 accounts, Skype for Business Online, Exchange Online, SharePoint Online, Microsoft Teams, and the Security &amp; Compliance Center.
+This scenario isn't optimal for managing Microsoft 365, because you can't exchange data among those windows for cross-service management. This article describes how to use a single instance of PowerShell to manage Microsoft 365 accounts, Skype for Business Online, Exchange Online, SharePoint Online, Microsoft Teams, and the Security &amp; Compliance Center.
 
 >[!Note]
->This article currently only contains the commands to connect to the Worldwide (+GCC) cloud. Notes provide links to articles with information about connecting to the other Microsoft 365 clouds.
+>This article currently only contains the commands to connect to the Worldwide (+GCC) cloud. Notes provide links to articles about connecting to the other Microsoft 365 clouds.
 
 ## Before you begin
 
 Before you can manage all of Microsoft 365 from a single instance of PowerShell, consider the following prerequisites:
   
-- The Microsoft 365 work or school account that you use must be a member of a Microsoft 365 admin role. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles). a requirement for PowerShell for Microsoft 365, but not necessarily for all other Microsoft 365 services.
+- The Microsoft 365 work or school account that you use must be a member of a Microsoft 365 admin role. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles). This is a requirement for PowerShell for Microsoft 365, but not necessarily for all other Microsoft 365 services.
     
 - You can use the following 64-bit versions of Windows:
     
@@ -51,7 +51,7 @@ Before you can manage all of Microsoft 365 from a single instance of PowerShell,
     
   - Windows Server 2008 R2 SP1*
     
-    \* You need to install the Microsoft .NET Framework 4.5.*x* and then either Windows Management Framework 3.0 or 4.0. For more information, see [Installing the .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868) and [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) or [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344).
+    \* You need to install the Microsoft .NET Framework 4.5.*x* and then Windows Management Framework 3.0 or 4.0. For more information, see [Installing the .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868) and [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) or [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344).
     
     You need to use a 64-bit version of Windows because of the requirements for the Skype for Business Online module and one of the Microsoft 365 modules.
     
