@@ -48,11 +48,11 @@ In this phase, configure an approvers group and enable privileged access managem
 
 Follow these steps to set up and use privileged access in your organization:
 
-- [Step 1: Create an approver's group](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
+### [Step 1: Create an approver's group](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
 
 Before you start using privileged access, determine who will have approval authority for incoming requests for access to elevated and privileged tasks. All users who are part of the Approvers’ group can approve access requests. To use privileged access, you must create a mail-enabled security group in Microsoft 365. In your test environment, name the new security group "Privileged Access Approvers" and add the "User 3" that was previously created in previous test lab guide steps.
 
-- [Step 2: Enable privileged access](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
+### [Step 2: Enable privileged access](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
 
 Privileged access needs to be explicitly turned on in Microsoft 365 with the default approver group, and it must include a set of system accounts that you want excluded from the privileged access management access control. Be sure to enable privileged access in your organization before starting Phase 3 of this guide.
 
