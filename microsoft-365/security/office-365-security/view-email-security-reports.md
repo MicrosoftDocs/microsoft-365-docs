@@ -271,8 +271,8 @@ The report provides the count of email messages with malicious content, such as 
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Threat protection status**. To go directly to the report, open one of the following URLs:
 
-- Office 365 ATP: <https://protection.office.com/reportv2?id=ATPV2AggregateReport>.
-- EOP: <https://protection.office.com/reportv2?id=ATPAggregateLightReport>
+- Office 365 ATP: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- EOP: <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![Threat protection status widget in the Reports dashboard](../../media/threat-protection-status-report-widget.png)
 
