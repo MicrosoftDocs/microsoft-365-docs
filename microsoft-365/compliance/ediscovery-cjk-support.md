@@ -42,10 +42,10 @@ If you're certain content locations contain the CJK characters you're searching 
 
 It depends on your search scenario.
 
-When you [query the data in a review set](review-set-search), you can search for multiple languages at once.
+When you [query the data in a review set](review-set-search.md), you can search for multiple languages at once.
 
 
-When you [create a search to collect data](create-search-to-collect-data), create a separate search for each language you're targeting. For example, if you are searching for a document that contains both Chinese and Korean, select Chinese for your first query and select Korean for your second query.
+When you [create a search to collect data](create-search-to-collect-data.md), create a separate search for each language you're targeting. For example, if you are searching for a document that contains both Chinese and Korean, select Chinese for your first query and select Korean for your second query.
 
 **I don't see query language-country/region![Query language-country/region icon in Content search](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) to select a language for queries in a review set, how can I specify query language in a review set?**
 
