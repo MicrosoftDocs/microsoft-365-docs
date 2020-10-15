@@ -46,7 +46,7 @@ If you want to configure privileged access management in a simulated enterprise,
 
 In this phase, configure an approvers group and enable privileged access management for your Microsoft 365 for enterprise test environment. For additional details and an overview of privileged access management, see [Privileged access management](../compliance/privileged-access-management-overview.md).
 
-Follow these steps to set up and use privileged access in your organization:
+To set up and use privileged access in your organization, perform the following steps.
 
 ### [Step 1: Create an approver's group](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
 
