@@ -681,13 +681,13 @@ The following table lists user administration activities that are logged when an
 
 |Activity|Operation|Description|
 |:-----|:-----|:-----|
-|Added user|Add user|A user account was created.|
-|Changed user license|Change user license|The license assigned to a user what changed. To see what licenses were changes, see the corresponding **Updated user** activity.|
-|Changed user password|Change user password|A user changes their password. Self-service password reset has to be enabled (for all or selected users) in your organization to allow users to reset their password. You can also track self-service password reset activity in Azure Active Directory. For more information, see [Reporting options for Azure AD password management](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
-|Deleted user|Delete user|A user account was deleted.|
-|Reset user password|Reset user password|Administrator resets the password for a user.|
-|Set property that forces user to change password|Set force change user password|Administrator set the property that forces a user to change their password the next time the user signs in to Office 365.|
-|Set license properties|Set license properties|Administrator modifies the properties of a licensed assigned to a user.|
+|Added user|Add user.|A user account was created.|
+|Changed user license|Change user license.|The license assigned to a user what changed. To see what licenses were changes, see the corresponding **Updated user** activity.|
+|Changed user password|Change user password.|A user changes their password. Self-service password reset has to be enabled (for all or selected users) in your organization to allow users to reset their password. You can also track self-service password reset activity in Azure Active Directory. For more information, see [Reporting options for Azure AD password management](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
+|Deleted user|Delete user.|A user account was deleted.|
+|Reset user password|Reset user password.|Administrator resets the password for a user.|
+|Set property that forces user to change password|Set force change user password.|Administrator set the property that forces a user to change their password the next time the user signs in to Office 365.|
+|Set license properties|Set license properties.|Administrator modifies the properties of a licensed assigned to a user.|
 |Updated user|Update user|Administrator changes one or more properties of a user account. For a list of the user properties that can be updated, see the "Update user attributes" section in [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).|
 ||||
 
@@ -697,11 +697,11 @@ The following table lists group administration activities that are logged when a
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Added group|Add group|A group was created.|
-|Added member to group|Add member to group|A member was added to a group.|
-|Deleted group|Delete group|A group was deleted.|
-|Removed member from group|Remove member from group|A member was removed from a group.|
-|Updated group|Update group|A property of a group was changed.|
+|Added group|Add group.|A group was created.|
+|Added member to group|Add member to group.|A member was added to a group.|
+|Deleted group|Delete group.|A group was deleted.|
+|Removed member from group|Remove member from group.|A member was removed from a group.|
+|Updated group|Update group.|A property of a group was changed.|
 ||||
 
 ### Application administration activities
@@ -710,11 +710,11 @@ The following table lists application admin activities that are logged when an a
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Added delegation entry|Add delegation entry|An authentication permission was created/granted to an application in Azure AD.|
-|Added service principal|Add service principal|An application was registered in Azure AD. An application is represented by a service principal in the directory.|
-|Added credentials to a service principal|Add service principal credentials|Credentials were added to a service principal in Azure AD. A service principle represents an application in the directory.|
-|Removed delegation entry|Remove delegation entry|An authentication permission was removed from an application in Azure AD.|
-|Removed a service principal from the directory|Remove service principal|An application was deleted/unregistered from Azure AD. An application is represented by a service principal in the directory.|
+|Added delegation entry|Add delegation entry.|An authentication permission was created/granted to an application in Azure AD.|
+|Added service principal|Add service principal.|An application was registered in Azure AD. An application is represented by a service principal in the directory.|
+|Added credentials to a service principal|Add service principal credentials.|Credentials were added to a service principal in Azure AD. A service principle represents an application in the directory.|
+|Removed delegation entry|Remove delegation entry.|An authentication permission was removed from an application in Azure AD.|
+|Removed a service principal from the directory|Remove service principal.|An application was deleted/unregistered from Azure AD. An application is represented by a service principal in the directory.|
 |Removed credentials from a service principal|Remove service principal credentials|Credentials were removed from a service principal in Azure AD. A service principle represents an application in the directory.|
 |Set delegation entry|Set delegation entry|An authentication permission was updated for an application in Azure AD.|
 ||||
@@ -725,9 +725,9 @@ The following table lists Azure AD role administration activities that are logge
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Add member to Role|Add role member to role|Added a user to an admin role in Microsoft 365.|
-|Removed a user from a directory role|Remove role member from role|Removed a user to from an admin role in Microsoft 365.|
-|Set company contact information|Set company contact information|Updated the company-level contact preferences for your organization. This includes email addresses for subscription-related email sent by Microsoft 365, and technical notifications about services.|
+|Add member to Role|Add member to role.|Added a user to an admin role in Microsoft 365.|
+|Removed a user from a directory role|Remove member from role.|Removed a user to from an admin role in Microsoft 365.|
+|Set company contact information|Set company contact information.|Updated the company-level contact preferences for your organization. This includes email addresses for subscription-related email sent by Microsoft 365, and technical notifications about services.|
 ||||
 
 ### Directory administration activities
@@ -736,18 +736,18 @@ The following table lists Azure AD directory and domain-related activities that 
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Added domain to company|Add domain to company|Added a domain to your organization.|
-|Added a partner to the directory|Add partner to company|Added a partner (delegated administrator) to your organization.|
-|Removed domain from company|Remove domain from company|Removed a domain from your organization.|
-|Removed a partner from the directory|Remove partner from company|Removed a partner (delegated administrator) from your organization.|
-|Set company information|Set company information|Updated the company information for your organization. This includes email addresses for subscription-related email sent by Microsoft 365, and technical notifications about Microsoft 365 services.|
-|Set domain authentication|Set domain authentication|Changed the domain authentication setting for your organization.|
-|Updated the federation settings for a domain|Set federation settings on domain|Changed the federation (external sharing) settings for your organization.|
-|Set password policy|Set password policy|Changed the length and character constraints for user passwords in your organization.|
-|Turned on Azure AD sync|Set DirSyncEnabled flag on company|Set the property that enables a directory for Azure AD Sync.|
-|Updated domain|Update domain|Updated the settings of a domain in your organization.|
-|Verified domain|Verify domain|Verified that your organization is the owner of a domain.|
-|Verified email verified domain|Verify email verified domain|Used email verification to verify that your organization is the owner of a domain.|
+|Added domain to company|Add domain to company.|Added a domain to your organization.|
+|Added a partner to the directory|Add partner to company.|Added a partner (delegated administrator) to your organization.|
+|Removed domain from company|Remove domain from company.|Removed a domain from your organization.|
+|Removed a partner from the directory|Remove partner from company.|Removed a partner (delegated administrator) from your organization.|
+|Set company information|Set company information.|Updated the company information for your organization. This includes email addresses for subscription-related email sent by Microsoft 365, and technical notifications about Microsoft 365 services.|
+|Set domain authentication|Set domain authentication.|Changed the domain authentication setting for your organization.|
+|Updated the federation settings for a domain|Set federation settings on domain.|Changed the federation (external sharing) settings for your organization.|
+|Set password policy|Set password policy.|Changed the length and character constraints for user passwords in your organization.|
+|Turned on Azure AD sync|Set DirSyncEnabled flag.|Set the property that enables a directory for Azure AD Sync.|
+|Updated domain|Update domain.|Updated the settings of a domain in your organization.|
+|Verified domain|Verify domain.|Verified that your organization is the owner of a domain.|
+|Verified email verified domain|Verify email verified domain.|Used email verification to verify that your organization is the owner of a domain.|
 ||||
 
 ### eDiscovery activities
