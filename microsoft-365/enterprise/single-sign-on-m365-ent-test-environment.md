@@ -26,13 +26,12 @@ description: "Summary: Configure and test Azure AD Seamless Single Sign-on for y
 
 Azure AD Seamless Single Sign-On (Seamless SSO) automatically signs in users when they are on their PCs or devices that are connected to their organization network. Azure AD Seamless SSO provides users with easy access to cloud-based applications without needing any additional on-premises components.
 
-This article describes how to can configure your Microsoft 365 test environment for Azure AD Seamless SSO.
+This article describes how to configure your Microsoft 365 test environment for Azure AD Seamless SSO.
 
-Setting up Azure AD Seamless SSO includes two phases:
-
-1.    Create the Microsoft 365 simulated enterprise test environment with password hash synchronization.
-2.    Configure Azure AD Connect on APP1 for Azure AD Seamless SSO.
-    
+Setting up Azure AD Seamless SSO involves two phases:
+- [Phase 1: Configure password hash synchronization for your Microsoft 365 test environment](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
+- [Phase 2: Configure Azure AD Connect on APP1 for Azure AD Seamless SSO](#phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso)
+   
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
@@ -66,13 +65,13 @@ In this phase, configure Azure AD Connect on APP1 for Azure AD Seamless SSO, and
 
 4. On the **Additional tasks** page, select **Change user sign-in**, and then select **Next**.
 
-5. On the **Connect to Azure AD** page, type your global administrator account credentials, and then select **Next**.
+5. On the **Connect to Azure AD** page, enter your global administrator account credentials, and then select **Next**.
 
 6. On the **User sign-in** page, select **Enable single sign-on**, and then select **Next**.
 
 7. On the **Enable single sign-on** page, select **Enter credentials**.
 
-8. In the **Windows Security** dialog box, type **user1** and the password of the user1 account, select **OK**, and then select **Next**.
+8. In the **Windows Security** dialog box, enter **user1** and the password of the user1 account, select **OK**, and then select **Next**.
 
 9. On the **Ready to Configure** page, select **Configure**.
 
@@ -90,7 +89,7 @@ Next, test the ability to sign in to your subscription with the <strong>user1@te
 
 4. In **Local intranet**, select **Advanced**.
 
-5. In **Add this website to the zone**, type **https<span>://</span>autologon.microsoftazuread-sso.com**, select **Add** > **Close** > **OK** > **OK**.
+5. In **Add this website to the zone**, enter **https<span>://</span>autologon.microsoftazuread-sso.com**, select **Add** > **Close** > **OK** > **OK**.
 
 6. Sign out, and then sign in again, this time specifying a different account.
 
