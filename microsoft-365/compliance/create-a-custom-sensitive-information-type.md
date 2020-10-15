@@ -19,8 +19,7 @@ description: "Learn how to create, modify, remove, and test custom sensitive inf
 ms.custom: seo-marvel-apr2020
 ---
 
-<!--		a. Two options to Creating a new SIT 
-			i. Start from scratch 
+<!--	
 Copy a OOB SIT 
 
 			vii. Additional check
@@ -36,6 +35,10 @@ If the pre-configured sensitive information types don't meet your needs, you can
 
 The custom sensitive information types that you create by using this method are added to the rule package named `Microsoft.SCCManaged.CustomRulePack`.
 
+There are two ways to create a new sensitive information type:
+
+- [from scratch where you fully define all elements](#create-a-custom-sensitive-information-type)
+- [copy and modify an existing sensitive information type](#copy-and-modify-a-sensitive-information-type)
 
 
 ## Before you begin
@@ -55,9 +58,7 @@ The custom sensitive information types that you create by using this method are 
 > [!IMPORTANT]
 > Microsoft Customer Service & Support can't assist with creating custom classifications or regular expression patterns. Support engineers can provide limited support for the feature, such as, providing sample regular expression patterns for testing purposes, or assisting with troubleshooting an existing regular expression pattern that's not triggering as expected, but can't provide assurances that any custom content-matching development will fulfill your requirements or obligations.
 
-
-
-## Create custom sensitive information types in the Compliance Center
+## Create a custom sensitive information type
 
 Use this procedure to create a new sensitive information type that you fully define. 
 
@@ -71,7 +72,7 @@ Use this procedure to create a new sensitive information type that you fully def
 8. Choose **Create**.
 9. Choose **Next**.
 10. Choose the **recommended confidence level** for this sensitive information type.
-11. Check your setting and choose **Submit**.   
+11. Check your setting and choose **Submit**.
 
 > [!IMPORTANT]
 > Microsoft 365 uses the search crawler to identify and classify sensitive information in SharePoint Online and OneDrive for Business sites. To identify your new custom sensitive information type in existing content, the content must be re-crawled. Content is crawled based on a schedule, but you can manually re-crawl content for a site collection, list, or library. For more information, see [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content).
@@ -143,29 +144,37 @@ You can test any sensitive information type in the list. We suggest that you tes
 - You can only modify custom sensitive information types that you created in the UI. If you used the [PowerShell procedure](create-a-custom-sensitive-information-type-in-scc-powershell.md) to import a custom sensitive information type rule package, you'll get an error. -->
 
 1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to modify choose **Edit**.
-2. You can add 
-
-
-
-The same options are available here as when you created the custom sensitive information type. For more information, see [Create custom sensitive information types in the Compliance Center](#create-custom-sensitive-information-types-in-the-compliance-center).
+2. You can add other patterns, with unique primary and supporting elements, confidence levels, character proximity, and additional checks. For more information, see [Create a custom sensitive information type](#create-a-custom-sensitive-information-types).
 
 ## Remove custom sensitive information types in the Compliance Center 
 
-- You can only remove custom sensitive information types; you can't remove built-in sensitive information types.
+> [!NOTE]
+> You can only remove custom sensitive information types; you can't remove built-in sensitive information types.
 
-- Before your remove a custom sensitive information type, verify that no DLP policies or Exchange mail flow rules (also known as transport rules) still reference the sensitive information type.
+> [!IMPORTANT]
+> Before your remove a custom sensitive information type, verify that no DLP policies or Exchange mail flow rules (also known as transport rules) still reference the sensitive information type.
 
-1. In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and select one or more custom sensitive information types that you want to remove.
+1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to remove.
+2. In the fly-out that opens, choose **Delete**.
 
-2. In the fly-out that opens, click **Delete** (or **Delete sensitive info types** if you selected more than one).
+## Copy and modify a sensitive information type
 
-    ![Location of Sensitive info types and Delete button](../media/scc-cust-sens-info-type-delete.png)
+Use this procedure to create a new sensitive information type that is based on an existing sensitive information type. 
 
-3. In the warning message that appears, click **Yes**.
-
-### How do you know this worked?
-
-To verify that you've successfully removed a custom sensitive information type, go to **Classifications** \> **Sensitive info types** to verify the custom sensitive information type is no longer listed.
+1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type that you want to copy.
+2. In the flyout, choose **Copy**.
+3. Choose **Refresh** in the list of sensitive information types and either browse or search for the copy you just made. Partial sting searches work, so you could just search for `copy` and search would return all the sensitive information types with the word `copy` in the name. 
+4. Fill in values for **Name** and **Description** and choose **Next**.
+5. Choose your sensitive information type copy and choose **Edit**. 
+6. Give your new sensitive information type a new **Name** and **Description**.
+7. Choose the default confidence level for the new pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
+8. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**.
+9. Fill in a value for **Character proximity**.
+10. (Optional) If you have **Supporting elements** or any **Additional checks** add them. If needed you can group your **Supporting elements**.
+11. Choose **Create**.
+12. Choose **Next**.
+13. Choose the **recommended confidence level** for this sensitive information type.
+14. Check your setting and choose **Submit**.
 
 You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities. To learn more about those methods, see:
 - [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
