@@ -30,7 +30,7 @@ Multi-tenant management offers a unified form of management that allows admins t
 - On the **All tenants** page, you can quickly see the health of all your tenants' services, any open service requests, your products and billing, and the number of users in that tenant.
 
 
-# Move between tenants
+## Move between tenants
 
 1. In the Microsoft 365 admin center, select the org name.
 
@@ -40,10 +40,7 @@ Multi-tenant management offers a unified form of management that allows admins t
 
     :::image type="content" source="../../media/yourtenantslist.png" alt-text="Your tenants list with search functionality.":::
 
-
-
-
-# View All tenants page
+## View All tenants page
 
 1. In the Microsoft 365 admin center, in the left nav, select **All tenants**.
 - On the **All tenants** page, you can
@@ -55,7 +52,7 @@ Multi-tenant management offers a unified form of management that allows admins t
 
 If you've marked a tenant as a favorite, it's automatically expanded so you can immediately view the status details.
 
-# View service health for all accounts
+## View service health for all accounts
 
 The service health view shows you if any incidents or advisories are affecting the tenants. It will even tell you how many of your managed tenants are affected.
 
@@ -65,7 +62,7 @@ The service health view shows you if any incidents or advisories are affecting t
 
     :::image type="content" source="../../media/tenantsaffected.png" alt-text="List of tenants affected by a service health issue.":::
 
-# View a single tenant in the Microsoft 365 admin center
+## View a single tenant in the Microsoft 365 admin center
 
 You can return to the Microsoft 365 admin center for any of the tenants from the **All tenants** page.
 
