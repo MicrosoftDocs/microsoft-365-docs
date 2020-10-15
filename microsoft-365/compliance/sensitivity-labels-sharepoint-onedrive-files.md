@@ -219,6 +219,26 @@ To get the GUIDs for your sensitivity labels, use the [Get-Label](https://docs.m
 
 For more information about using managed properties, see [Manage the search schema in SharePoint](https://docs.microsoft.com/sharepoint/manage-search-schema).
 
+## Remove encryption for a labeled document
+
+There might be rare occasions when a SharePoint administrator needs to remove encryption from a document stored in SharePoint. Any user who has the [Rights Management usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) of Export or Full Control assigned to them for that document can remove encryption that was applied by the Azure Rights Management service. For example, users with one of these usage rights can replace a label that applies encryption with a label without encryption. Alternatively, a [super user](https://docs.microsoft.com/azure/information-protection/configure-super-users) could download the file and save a local copy without the encryption.
+
+As an alternative, a global admin or [SharePoint admin](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) can run the Unlock-SensitivityLabelEncryptedFile cmdlet, which removes both the sensitivity label and the encryption. This cmdlets runs even if the admin doesn't have access permissions to the site or file. 
+
+For example:
+
+    ```powershell
+    Unlock-SensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"
+    ```
+
+Requirements:
+
+- SharePoint Online Management Shell version 16.0.19418.12000 or later.
+
+- The encryption has been applied by a sensitivity label with admin-defined encryption settings (the [Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now) label settings). [Double Key Encryption](encryption-sensitivity-labels.md#double-key-encryption) is not supported.
+
+The justification text is added to the following logged [audit event](compliance/search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities): **Removed sensitivity label from file** 
+
 ## How to disable sensitivity labels for SharePoint and OneDrive (opt-out)
 
 If you disable these new capabilities, files that you uploaded after you enabled sensitivity labels for SharePoint and OneDrive continue to be protected by the label because the label settings continue to be enforced. When you apply sensitivity labels to new files after you disable these new capabilities, full-text search, eDiscovery, and coauthoring will no longer work.
