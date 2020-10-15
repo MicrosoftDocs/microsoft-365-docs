@@ -227,9 +227,9 @@ As an alternative, a global admin or [SharePoint admin](https://docs.microsoft.c
 
 For example:
 
-    ```powershell
-    Unlock-SensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"
-    ```
+```powershell
+Unlock-SensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"
+```
 
 Requirements:
 
@@ -237,7 +237,7 @@ Requirements:
 
 - The encryption has been applied by a sensitivity label with admin-defined encryption settings (the [Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now) label settings). [Double Key Encryption](encryption-sensitivity-labels.md#double-key-encryption) is not supported.
 
-The justification text is added to the [audit event](compliance/search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) **Removed sensitivity label from file**, and the decryption action is also recorded in the [protection usage logging for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/log-analyze-usage).
+The justification text is added to the [audit event](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) **Removed sensitivity label from file**, and the decryption action is also recorded in the [protection usage logging for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/log-analyze-usage).
 
 ## How to disable sensitivity labels for SharePoint and OneDrive (opt-out)
 
