@@ -26,7 +26,7 @@ description: "Use sensitivity labels to protect content in SharePoint and Micros
 In addition to using [sensitivity labels](sensitivity-labels.md) to classify and protect documents and emails, you can also use sensitivity labels to protect content in the following containers: Microsoft Teams sites, Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), and SharePoint sites. For this container-level classification and protection, use the following label settings:
 
 - Privacy (public or private) of teams sites and Microsoft 365 groups
-- External users access
+- External user access
 - External sharing from SharePoint sites
 - Access from unmanaged devices
 
@@ -75,10 +75,6 @@ Enabling sensitivity labels for containers means that you can now configure prot
     When only this scope is selected for the label, the label won't be displayed in Office apps that support sensitivity labels and can't be applied to files and emails. Having this separation of labels can be helpful for both users and administrators, but can also add to the complexity of your label deployment.
     
     For example, you need to carefully review your [label ordering](sensitivity-labels.md#label-priority-order-matters) because SharePoint detects when a labeled document is uploaded to a labeled site. In this sceanrio, an audit event and email is automatically generated when the document has a higher priority sensitivity label than the site's label. For more information, see the [Auditing sensitivity label activities](#auditing-sensitivity-label-activities) section on this page. 
-
-If somebody uploads a document to a site that's protected with a sensitivity label and their document has a higher priority sensitivity label than the sensitivity label applied to the site
-Detected document sensitivity mismatch
-
 
 2. Then, on the **Define protection settings for groups and sites** page, select one or both of the available options:
     
