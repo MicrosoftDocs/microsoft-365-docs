@@ -32,7 +32,7 @@ Here is an example of the **Service health** page in the Microsoft 365 admin cen
 
 The value of the **Status** column indicates whether the service is healthy or has advisories or incidents based on the cloud services that Microsoft maintains. 
 
-The value of the **Your org and 3rd party issues** column indicates whether the Exchange Online service is healthy or has advisories or incidents based on your organization's infrastructure or third-party software. Advisories or incidents require *your* actions to resolve.
+The value of the **Your org and 3rd party issues** column indicates that your organization's infrastructure or third-party software affects your users service health experience with Exchange Online. Advisories or incidents require *your* actions to resolve.
 
 Here is an example of the **Exchange Online** monitoring page in the Microsoft 365 admin center, available from **Health > Service health > Exchange Online**.
 
