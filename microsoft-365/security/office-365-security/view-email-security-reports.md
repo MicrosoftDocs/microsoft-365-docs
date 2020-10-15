@@ -198,7 +198,7 @@ The following charts are available in the report view:
 
   ![Action view in the Spam detections report](../../media/spam-detections-report-action-view.png)
 
-- **Break down by:Direction**: The following directions are shown:
+- **Break down by: Direction**: The following directions are shown:
 
   - **Inbound**
   - **Outbound**
