@@ -39,7 +39,7 @@ The PowerShell cmdlet imports the .csv file and pipes it to a loop inside the cu
 
 ### Create a .csv file
 
-> [!Note]
+> [!NOTE]
 > The resource quota parameter works only on classic sites. If you use this parameter on a modern site, you may receive a warning message that it has been deprecated. 
 
 1. Open Notepad, and paste the following text block into it:<br/>
