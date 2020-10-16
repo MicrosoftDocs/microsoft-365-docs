@@ -6,8 +6,8 @@ ms.author: tracyp
 author: msfttracyp
 manager: dansimp
 audience: ITPro
-ms.topic: article
-ms.date: 02/06/2019
+ms.topic: how-to
+ms.date:
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:

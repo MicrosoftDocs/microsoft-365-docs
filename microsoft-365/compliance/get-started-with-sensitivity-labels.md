@@ -13,11 +13,11 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+- m365solution-mip
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
-- m365solution-mip
-- m365initiative-compliance
 description: "Ready to start implementing sensitivity labels to help protect your organization's data, but not sure where to start? Read some practical guidance to help get you on your labeling journey."
 ---
 
@@ -91,7 +91,9 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 
 ## End-user documentation for sensitivity labels
 
-The most effective end-user documentation will be customized guidance and instructions you provide for the label names and configurations you choose. However, you can use the following resources for basic instructions:
+The most effective end-user documentation will be customized guidance and instructions you provide for the label names and configurations you choose. See the following blog post for a download package that you can use to train users and drive adoption: [End User Training for Sensitivity Labels in M365 – How to Accelerate Your Adoption](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
+
+You can also use the following resources for basic instructions:
 
 - [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
     - [Known issues with sensitivity labels in Office](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)

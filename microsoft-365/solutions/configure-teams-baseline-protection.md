@@ -26,7 +26,7 @@ In this article, we look at how to deploy teams with a baseline level of protect
 
 ## Initial protections
 
-As a first step, we recommend that you configure basic identity and device-access policies. See [Policy recommendations for securing Teams chats, groups, and files](https://docs.microsoft.com/microsoft-365/enterprise/teams-access-policies) for details.
+As a first step, we recommend that you configure basic identity and device-access policies. See [Policy recommendations for securing Teams chats, groups, and files](../security/office-365-security/teams-access-policies.md) for details.
 
 We also recommend turning on basic Advanced Threat Protection features to guard against malware in documents, attachments, and links. We recommend turning on each of the options in the following table.
 

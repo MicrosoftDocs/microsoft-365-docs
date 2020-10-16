@@ -115,8 +115,6 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-            - name: How modern authentication works for Office 2013 and Office 2016 client apps
-              href: modern-auth-for-office-2013-and-2016.md
         - name: Client app support
           items: 
             - name: Certificate-based authentication
@@ -139,6 +137,8 @@
               href: configure-skype-for-business-for-hybrid-modern-authentication.md
             - name: Remove or disable for Skype for Business and Exchange
               href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
+            - name: Office 2013, Office 2016, and Office 2019 client apps
+              href: modern-auth-for-office-2013-and-2016.md
         - name: Plan your upgrade
           href: plan-upgrade-previous-versions-office.md
           items: 
@@ -279,6 +279,8 @@
           href: microsoft-365-inter-tenant-collaboration.md
         - name: Cross-tenant mailbox migration
           href: cross-tenant-mailbox-migration.md
+        - name: Tenant-to-tenant migrations
+          href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Multi-geo
       items: 
         - name: Microsoft 365 Multi-Geo

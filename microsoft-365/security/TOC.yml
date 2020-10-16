@@ -9,20 +9,20 @@
         - name: Microsoft 365 Security for BDMs
           href: Microsoft-365-security-for-bdm.md
     - name: Identity and device access configurations
-      href: ../enterprise/microsoft-365-policies-configurations.md
+      href: ./office-365-security/microsoft-365-policies-configurations.md
       items: 
         - name: Prerequisite work
-          href: ../enterprise/identity-access-prerequisites.md
+          href: ./office-365-security/identity-access-prerequisites.md
         - name: Common identity and device access policies
-          href: ../enterprise/identity-access-policies.md
+          href: ./office-365-security/identity-access-policies.md
         - name: Policies for guest and external users
-          href: ../enterprise/identity-access-policies-guest-access.md
+          href: ./office-365-security/identity-access-policies-guest-access.md
         - name: Recommended Teams access policies
-          href: ../enterprise/teams-access-policies.md
+          href: ./office-365-security/teams-access-policies.md
         - name: Recommended Exchange Online access policies
-          href: ../enterprise/secure-email-recommended-policies.md
+          href: ./office-365-security/secure-email-recommended-policies.md
         - name: Recommended SharePoint Online access policies
-          href: ../enterprise/sharepoint-file-access-policies.md
+          href: ./office-365-security/sharepoint-file-access-policies.md
     - name: Microsoft Secure Score
       items: 
         - name: Secure Score overview
@@ -422,6 +422,8 @@
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: Create team sites in a political campaign dev/test environment
               href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
+            - name: User tags in Office 365 ATP
+              href: ./office-365-security/user-tags.md
             - name: S/MIME
               href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
               items: 
@@ -495,7 +497,7 @@
               href: ./office-365-security/mail-flow-rules-transport-rules-0.md
             - name: Report junk email and phishing in Outlook on the web
               href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-            - name: Report junk email and phishing in Outlook for ios and android
+            - name: Report junk email and phishing in Outlook for iOS and Android
               href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
             - name: Run an administrator role group report in standalone EOP
               href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md

@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.date:
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -83,15 +83,15 @@ Creating a custom Safe Links policy in the Security & Compliance Center creates 
 
 4. On the **Settings** page that appears, configure the following settings:
 
-   - **Select the action for unknown potentially malicious URLs in messages**: Select **On**.
+   - **Select the action for unknown potentially malicious URLs in messages**: Select **On** to enable Safe Links protection for links in email messages.
 
-   - **Select the action for unknown potentially malicious URLs in messages**: Select **On** or leave the default value **Off** selected.
+   - **Select the action for unknown or potentially malicious URLs within Microsoft Teams**: Select **On** to enable Safe Links protection for links in Teams.
 
    - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this setting to enable real-time scanning of links in email messages.
 
    - **Wait for URL scanning to complete before delivering the message**: Select this setting to wait for real-time URL scanning to complete before delivering the message.
 
-   - **Apply safe links to email messages sent within the organization**: Select this setting to apply the Safe Links policy to messages between internal senders and internal recipients.
+   - **Apply Safe Links to email messages sent within the organization**: Select this setting to apply the Safe Links policy to messages between internal senders and internal recipients.
 
    - **Do not track user clicks**: Leave this setting unselected to enable the tracking user clicks on URLs in email messages.
 
