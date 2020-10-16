@@ -271,7 +271,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Retention applied based on conditions <br /> - sensitive info types, KQL queries, trainable classifiers| No | Yes |
 |Retention applied manually | No | Yes |
 |UI presence for end users | No | Yes |
-|Persists if the content is moved | No | Yes, within Microsoft 365 |
+|Persists if the content is moved | No | Yes, within your Microsoft 365 tenant |
 |Declare item as a record| No | Yes |
 |Start the retention period when labeled or based on an event | No | Yes |
 |Disposition review | No| Yes |
@@ -347,6 +347,18 @@ To use the retention cmdlets, you must first [connect to the Office 365 Security
 - [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/remove-retentioncompliancerule)
 
 - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
+
+## Retention settings vs.holds for eDiscovery
+
+Although retention settings and [holds that you create with an eDiscovery case](create-ediscovery-holds.md) can both prevent data from being permanently deleted, their use is very different:
+
+- Retention settings that you specify in retention policies and retention labels are designed for information governance to retain or delete data for a long-term strategy and compliance requirements. The scope is usually broad with the main focus being the location and content rather than individual users. 
+
+- Holds for an eDiscovery case (either core or advanced) are designed for discovery and respond actions to preserve data for a short-lived investigation to support a legal inquiry. The scope is specific with the focus being content accessed by specific users.
+
+If content is subject to both an eDiscovery hold and retention settings, the content in the eDiscovery hold takes precedence over any delete actions from retention settings.
+
+In terms of administration, retention settings in retention policies and retention labels are design to be "set it and forget it" whereas eDiscovery holds require active administration. Content that is preserved by holds must be manually released by an administration when the investigation is complete and the legal case can be closed.
 
 ## Use retention policies and retention labels instead of older features
 
