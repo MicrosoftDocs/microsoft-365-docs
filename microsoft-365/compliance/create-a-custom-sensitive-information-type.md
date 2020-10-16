@@ -18,7 +18,7 @@ search.appverid:
 description: "Learn how to create, modify, remove, and test custom sensitive information types for DLP in the graphical user interface in Security & Compliance Center."
 ms.custom: seo-marvel-apr2020
 ---
-# Create a custom sensitive information type in the Compliance Center
+# Get started with custom sensitive information types
 
 If the pre-configured sensitive information types don't meet your needs, you can create your own custom sensitive information types that you fully define or you can copy one of the pre-configured ones and modify it.
 
