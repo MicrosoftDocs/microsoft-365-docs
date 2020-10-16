@@ -55,7 +55,7 @@ For queries in a review set, you don't need to specify document language. Advanc
 
 No, you can't see detected languages in file metadata.
 
-**Can we filter by document languages in a review set**?
+**Can I filter by document languages in a review set**?
 
 No, you can't filter, sort, or search by document languages in a review set.
 
