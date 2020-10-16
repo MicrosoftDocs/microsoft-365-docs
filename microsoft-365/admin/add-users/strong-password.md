@@ -24,7 +24,7 @@ description: "Learn how to set strong password requirements for your users, usin
 ---
 # Set strong password requirement for users
 
-This article explains how to set a strong password requirements for your users. You have to complete these steps using PowerShell.
+This article explains how to set strong password requirements for your users. You have to complete these steps using PowerShell.
 
 ## Before you begin
 
