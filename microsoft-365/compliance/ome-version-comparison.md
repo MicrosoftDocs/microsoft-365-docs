@@ -78,7 +78,7 @@ Senders can manually encrypt emails in Outlook for PC and Mac and Outlook on the
 
 Recipients inside GCC High receive the same inline reading experience in Outlook for PC and Mac and Outlook on the web as all other users.
 
-### Encrypted email between GCC High to Non-GCC High recipients
+### Encrypted email between GCC High and Non-GCC High recipients
 
 Senders inside GCC High can send encrypted email outside of the GCC High boundary or vice versa.
 
