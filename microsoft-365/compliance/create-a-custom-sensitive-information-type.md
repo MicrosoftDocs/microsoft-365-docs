@@ -18,17 +18,6 @@ search.appverid:
 description: "Learn how to create, modify, remove, and test custom sensitive information types for DLP in the graphical user interface in Security & Compliance Center."
 ms.custom: seo-marvel-apr2020
 ---
-
-<!--	
-Copy a OOB SIT 
-
-			vii. Additional check
-				1) List of additional checks & their descriptions(look at the help text in code)
-
-
--->
-
-<!-- rename md file to match the display name -->
 # Create a custom sensitive information type in the Compliance Center
 
 If the pre-configured sensitive information types don't meet your needs, you can create your own custom sensitive information types that you fully define or you can copy one of the pre-configured ones and modify it.
@@ -144,7 +133,7 @@ You can test any sensitive information type in the list. We suggest that you tes
 - You can only modify custom sensitive information types that you created in the UI. If you used the [PowerShell procedure](create-a-custom-sensitive-information-type-in-scc-powershell.md) to import a custom sensitive information type rule package, you'll get an error. -->
 
 1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to modify choose **Edit**.
-2. You can add other patterns, with unique primary and supporting elements, confidence levels, character proximity, and additional checks. For more information, see [Create a custom sensitive information type](#create-a-custom-sensitive-information-types).
+2. You can add other patterns, with unique primary and supporting elements, confidence levels, character proximity, and additional checks or edit/remove the existing ones. For more information, see [Create a custom sensitive information type](#create-a-custom-sensitive-information-types).
 
 ## Remove custom sensitive information types in the Compliance Center 
 
@@ -167,7 +156,7 @@ Use this procedure to create a new sensitive information type that is based on a
 4. Fill in values for **Name** and **Description** and choose **Next**.
 5. Choose your sensitive information type copy and choose **Edit**. 
 6. Give your new sensitive information type a new **Name** and **Description**.
-7. Choose the default confidence level for the new pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
+7. You can choose to edit or remove the existing patterns and add new ones. Choose the default confidence level for the new pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
 8. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**.
 9. Fill in a value for **Character proximity**.
 10. (Optional) If you have **Supporting elements** or any **Additional checks** add them. If needed you can group your **Supporting elements**.
