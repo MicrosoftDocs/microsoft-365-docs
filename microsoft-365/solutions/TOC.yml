@@ -160,8 +160,6 @@
         href: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
     - name: Compliance
       items:
-      - name: Information protection for GDPR
-        href: https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
       - name: Regulatory compliance action plans
         items: 
         - name: ISO - Recommended action plan
