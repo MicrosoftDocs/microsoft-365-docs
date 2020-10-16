@@ -34,7 +34,7 @@ Multi-tenant management offers a unified form of management that allows admins t
 
 1. In the Microsoft 365 admin center, select the org name.
 
-:::image type="content" source="../../media/macorgswitcher.png" alt-text="Multi-tenant switcher.":::
+    :::image type="content" source="../../media/macorgswitcher.png" alt-text="Multi-tenant switcher.":::
 
 - From the **Tenant switcher** you can move quickly between tenants you manage.
 
