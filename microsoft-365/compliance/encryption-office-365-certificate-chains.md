@@ -23,10 +23,10 @@ description: "View a complete list of root certificates and certificate authorit
 
 Microsoft 365 leverages a number of different certificate providers. The following describes the complete list of known Microsoft 365 root certificates that customers may encounter when accessing Microsoft 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates). The following certificate information applies to all worldwide and national cloud instances of Microsoft 365.
 
+Last updated: **10/16/2020**
+
 >[!NOTE]
 >For certificate information that applies to **DOD and GCC High** customers, see [Microsoft 365 encryption chains - DOD and GCC High](encryption-office-365-certificate-chains-itar.md).
-
-Last updated: **10/16/2020**
 
 | **Certificate type** | **P7b download** | **CRL Endpoints** | **OCSP Endpoints** | **AIA Endpoints** |
 | --- | --- | --- | --- | --- |
