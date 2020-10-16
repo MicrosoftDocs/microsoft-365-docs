@@ -32,9 +32,6 @@ This article is for people who manage password policy for a business, school, or
 
 You must also connect to Microsoft 365 with PowerShell.
 
-> [!NOTE]
-> Only passwords for user accounts that are not synchronized through directory synchronization can be configured using these procedures. For more information about directory synchronization, see [Connect AD with Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
-
 ## Set strong passwords
 
 1. [Connect to Microsoft 365 with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
@@ -46,12 +43,12 @@ You must also connect to Microsoft 365 with PowerShell.
     ```
 
 > [!NOTE]
-> The userPrincipalName must be in the Internet-style sign-in format where the user name is followed by the at sign (@) and a domain name: for example, user@contoso.com.
+> The userPrincipalName must be in the Internet-style sign-in format where the user name is followed by the at sign (@) and a domain name. For example: user@contoso.com.
 
 ## Related content
-
-[More information on password policy](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)
 
 [How to connect to Microsoft 365 with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 [More information on PowerShell MsolUser commands](https://docs.microsoft.com/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
+
+[More information on password policy](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)
