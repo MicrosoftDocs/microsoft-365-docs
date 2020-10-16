@@ -197,7 +197,8 @@ Special | join kind=inner (Deny | join kind=inner Allow on DeviceId) on DeviceId
 
 ### PsExec in remote file creation
 While PsExec is also used during intrusions that do not involve ransomware, ransomware campaigns often use this tool to move around the network and transfer payloads between devices. To find such activities on your network, run this query.
- 
+
+```kusto
 // PsExec creating files on remote machines
 DeviceProcessEvents
 | where InitiatingProcessFileName startswith "psexe"
@@ -205,7 +206,7 @@ DeviceProcessEvents
 makeset(FileName) by DeviceId, bin(Timestamp, 1d)
 | where CommandCount > 2
 | where set_ProcessCommandLine has "copy"
-
+```
 
 
 
