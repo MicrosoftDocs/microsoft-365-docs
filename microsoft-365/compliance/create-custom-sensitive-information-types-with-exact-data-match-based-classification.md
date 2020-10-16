@@ -20,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Create custom sensitive information types with Exact Data Match based classification
 
-[Custom sensitive information types](sensitive-information-type-leanr-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type based on:
+[Custom sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type based on:
 
 - patterns
 - keyword evidence such as *employee*, *badge*, or *ID*

@@ -133,7 +133,7 @@ You can test any sensitive information type in the list. We suggest that you tes
 - You can only modify custom sensitive information types that you created in the UI. If you used the [PowerShell procedure](create-a-custom-sensitive-information-type-in-scc-powershell.md) to import a custom sensitive information type rule package, you'll get an error. -->
 
 1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to modify choose **Edit**.
-2. You can add other patterns, with unique primary and supporting elements, confidence levels, character proximity, and additional checks or edit/remove the existing ones. For more information, see [Create a custom sensitive information type](#create-a-custom-sensitive-information-types).
+2. You can add other patterns, with unique primary and supporting elements, confidence levels, character proximity, and additional checks or edit/remove the existing ones. For more information, see [Create a custom sensitive information type](#create-a-custom-sensitive-information-type).
 
 ## Remove custom sensitive information types in the Compliance Center 
 
