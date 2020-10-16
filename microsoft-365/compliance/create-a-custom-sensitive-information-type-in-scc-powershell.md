@@ -129,9 +129,9 @@ Before you get started, it's helpful to understand the basic structure of the XM
   
 ### Simplest scenario: sensitive information type entity with one pattern
 
-Here's the simplest scenario. You want your policy to identify content that contains your organization's employee ID, which is formatted as a nine-digit number. So the sensitive information type **Primary element** contains a regular expression that identifies nine-digit numbers. Any content containing a nine-digit number satisfies the pattern.
-  
-[Diagram of entity with one pattern](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
+Here's the simplest scenario. You want your policy to identify content that contains your organization's employee ID, which is formatted as a nine-digit number. So the sensitive information type entity pattern **Primary element** contains a regular expression that identifies nine-digit numbers. Any content containing a nine-digit number satisfies the pattern.
+ 
+![Diagram of entity with one pattern](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
   
 However, while simple, this pattern may identify many false positives by matching content that contains any nine-digit number that is not necessarily an employee ID.
   
