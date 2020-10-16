@@ -42,8 +42,6 @@ This is especially important if your organization is subject to security audits 
 
 For more information, see the [overview of access reviews](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview).
 
-Azure AD Privileged Identity Management (PIM) provides additional controls tailored to securing access rights for resources, across Azure AD, Azure, and other Microsoft cloud service. Azure AD PIM provides a comprehensive set of governance controls to help secure your company's resources such as directory, Office 365, and Azure resource roles. As with other forms of access, organizations can use access reviews to configure recurring access recertification for all users in administrator roles. Azure AD PIM is only available with the E5 version of Microsoft 365 Enterprise.
-
 See these articles to configure different types of access reviews:
 
 - [Groups and apps](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)

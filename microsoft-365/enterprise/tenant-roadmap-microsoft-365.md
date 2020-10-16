@@ -10,7 +10,9 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.collection: 
+- M365-subscription-management
+- m365initiative-coredeploy
 ms.custom: it-pro
 description: The roadmap to set up your tenants for Microsoft 365.
 ---
@@ -29,7 +31,6 @@ To plan for your tenant implementation:
 
 - [Understand subscriptions, licenses, and Azure Active Directory (Azure AD) tenants](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [Understand how to use third-party SSL certificates](plan-for-third-party-ssl-certificates.md)
-- [Access setup guides in the Microsoft 365 admin center](setup-guides-for-microsoft-365.md)
 - [Understand the ways a Microsoft 365 tenant is integrated with Azure AD services](integrated-apps-and-azure-ads.md)
 - [Plan for client app support](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determine how to use hybrid modern authentication](hybrid-modern-auth-overview.md)
@@ -39,7 +40,7 @@ To plan for your tenant implementation:
 
 ## Deploy
 
-To deploy your tenant, [add the DNS domains](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) for your organization.
+To deploy your tenant, [add the DNS domains](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) for your organization and use the [setup guides in the Microsoft 365 admin center](setup-guides-for-microsoft-365.md).
 
 ## Tenants with multiple geographic locations
 

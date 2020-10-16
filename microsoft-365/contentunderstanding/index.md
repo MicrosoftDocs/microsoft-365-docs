@@ -22,9 +22,15 @@ Microsoft SharePoint Syntex is an Office 365 service that helps organizations to
 
 The resources on this page are designed to get you started with learning about and using SharePoint Syntex in your organization.
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
+
+</br>
+
 ## Get started
 
-The resources in this section help you learn more about the two methods used by SharePoint Syntex: form processing and document understanding.
+The resources in this section help you learn more about the two methods of data classification and extraction used by SharePoint Syntex: form processing and document understanding.
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
@@ -59,7 +65,7 @@ The resources in this section help your users learn how to create and configure 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Learn how to work with models|[Create a content center](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[Create a classifier](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[Create an extractor](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[Create a form processing model](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[Explanation types](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>[Apply a document understanding model](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[Learn about document understanding models through the sample model](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
-|Apply a retention label to your model|[Difference between document understanding and form processing models](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
+|Apply a retention label to your model|[Apply a retention label to a document understanding model](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
 |Use Managed Metadata services term store taxonomy when creating an extractor|[Leverage term store taxonomy when creating an extractor](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |Learn how to see data about your models|[Model usage analytics](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
 

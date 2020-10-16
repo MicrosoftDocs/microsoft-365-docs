@@ -12,7 +12,8 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 ms.collection: 
-- M365-security-compliance
+- M365-security-compliance 
+- m365initiative-defender-office365
 description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Security &amp; Compliance Center.
 ms.custom: seo-marvel-apr2020
 ---

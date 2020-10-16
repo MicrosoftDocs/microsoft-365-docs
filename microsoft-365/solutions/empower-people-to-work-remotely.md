@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 09/02/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,6 +15,7 @@ ms.collection:
 - remotework
 - m365solution-remotework
 - m365solution-overview
+- M365initiative-coredeploy
 ms.custom: 
 description: Configure the security and service infrastructure that allows your workers to work remotely from anywhere and at any time.
 ---
@@ -33,7 +33,7 @@ Microsoft 365 has the capabilities to empower your workers to work remotely.
 ![Empower your remote workers with Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
 Watch this video for an overview of the deployment process.
-
+<br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
 This solution provides these key capabilities.
@@ -102,6 +102,6 @@ Use these steps to secure and optimize access to your organization's servers, da
 5. [Deploy remote worker productivity apps and services](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Train remote workers and address usage feedback](empower-people-to-work-remotely-train-monitor-usage.md)
 
-![The steps to empower remote workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
+[![The steps to empower remote workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
 For the latest information from Microsoft about supporting remote workers, see the [Enabling remote work Tech Community site](https://resources.techcommunity.microsoft.com/enabling-remote-work/).
