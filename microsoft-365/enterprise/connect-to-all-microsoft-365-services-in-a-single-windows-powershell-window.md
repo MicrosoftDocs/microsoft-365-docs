@@ -51,7 +51,7 @@ Before you can manage all of Microsoft 365 from a single instance of PowerShell,
     
   - Windows Server 2008 R2 SP1*
     
-    \* You need to install the Microsoft .NET Framework 4.5.*x* and then Windows Management Framework 3.0 or 4.0. For more information, see [Installing the .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868) and [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) or [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344).
+    \* You need to install Microsoft .NET Framework 4.5.*x* and then Windows Management Framework 3.0 or 4.0. For more information, see [Installing the .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868) and [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) or [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344).
     
     You need to use a 64-bit version of Windows because of the requirements for the Skype for Business Online module and one of the Microsoft 365 modules.
     
@@ -71,9 +71,7 @@ Before you can manage all of Microsoft 365 from a single instance of PowerShell,
 
 ## Exchange Online and Security &amp; Compliance Center with the Exchange Online PowerShell V2 module
 
-The procedures in this article use the Exchange Online PowerShell V2 module to connect to both Exchange Online and Security &amp; Compliance Center. But currently you can't connect to both Exchange Online and the Security &amp; Compliance Center **in the same PowerShell window**.
-
-Therefore, you must choose a connection with either Exchange Online *or* the Security &amp; Compliance Center when you configure a PowerShell window for multiple Microsoft 365 services.
+The procedures in this article use the Exchange Online PowerShell V2 module to connect to both Exchange Online and the Security &amp; Compliance Center. But currently you can't connect to both Exchange Online and the Security &amp; Compliance Center **in the same PowerShell window**. So you have to choose to connect to one or the other when you configure a PowerShell window for multiple Microsoft 365 services.
 
 ## Connection steps when using just a password
 
@@ -102,17 +100,17 @@ Follow these steps to connect to all the services in a single PowerShell window 
    > [!Note]
    > PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. You must run these cmdlets from PowerShell.
 
-4. Run these commands to connect to SharePoint Online. Specify the organization name for your domain. For example, for "litwareinc.onmicrosoft.com", the  organization name value is "litwareinc".
+4. Run these commands to connect to SharePoint Online. Specify the organization name for your domain. For example, for "litwareinc\.onmicrosoft.com", the  organization name value is "litwareinc".
     
    ```powershell
    $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
    Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
    ```
 
-5. Run these commands to connect to Skype for Business Online. A warning about increasing the `WSMan NetworkDelayms` value is expected the first time that you connect. You should ignore it.
+5. Run these commands to connect to Skype for Business Online. A warning about increasing the `WSMan NetworkDelayms` value will appear the first time that you connect. You should ignore it.
      
    > [!Note]
-   > Skype for Business Online Connector is currently part of the latest Teams PowerShell module. If you're using the latest Teams PowerShell public release, you don't need to install the Skype for Business Online Connector..
+   > Skype for Business Online Connector is currently part of the latest Teams PowerShell module. If you're using the latest Teams PowerShell public release, you don't need to install the Skype for Business Online Connector.
    
    ```powershell
    Import-Module MicrosoftTeams
@@ -154,7 +152,7 @@ Follow these steps to connect to all the services in a single PowerShell window 
 
 ### Azure Active Directory PowerShell for Graph module
 
-Here are the commands for all the services *except Security &amp; Compliance Center* in a single block when using the Azure Active Directory PowerShell for Graph module. Specify the name of your domain host, and then run them all at the same time.
+Here are the commands for all the services *except Security &amp; Compliance Center* in a single block when you use the Azure Active Directory PowerShell for Graph module. Specify the name of your domain host and run them all at the same time.
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -171,7 +169,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-Here are the commands for all the services *except Exchange Online* in a single block when you use the Azure Active Directory PowerShell for Graph module. Specify the name of your domain host and the UPN for the sign-in, and then run them all at the same time.
+Here are the commands for all the services *except Exchange Online* in a single block when you use the Azure Active Directory PowerShell for Graph module. Specify the name of your domain host and the UPN for the sign-in and run them all at the same time.
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -191,7 +189,7 @@ Connect-MicrosoftTeams -Credential $credential
 
 ### Microsoft Azure Active Directory Module for Windows PowerShell module
 
-Here are the commands for all the services *except Security &amp; Compliance Center* in a single block when you use the Microsoft Azure Active Directory Module for Windows PowerShell module. Specify the name of your domain host, and then run them all at one time.
+Here are the commands for all the services *except Security &amp; Compliance Center* in a single block when you use the Microsoft Azure Active Directory Module for Windows PowerShell module. Specify the name of your domain host and run them all at one time.
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -208,7 +206,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-Here are the commands for all the services *except Exchange Online* in a single block when you use the Microsoft Azure Active Directory Module for Windows PowerShell module. Specify the name of your domain host and the UPN for the sign-in, and then run them all at one time.
+Here are the commands for all the services *except Exchange Online* in a single block when you use the Microsoft Azure Active Directory Module for Windows PowerShell module. Specify the name of your domain host and the UPN for the sign-in and run them all at one time.
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -249,7 +247,7 @@ Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Exchange Online* with multi-factor authentication using the Azure Active Directory PowerShell for Graph module.
+Here are all the commands in a single block to connect to multiple Microsoft 365 services *except Exchange Online* with multi-factor authentication when you use the Azure Active Directory PowerShell for Graph module.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"

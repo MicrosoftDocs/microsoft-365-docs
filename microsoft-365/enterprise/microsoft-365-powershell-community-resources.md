@@ -30,4 +30,4 @@ Use these communities to connect to your peers and get answers for your PowerShe
 
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Get started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)

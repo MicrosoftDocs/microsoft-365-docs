@@ -25,7 +25,7 @@ description: How to use PowerShell to block and unblock access to Microsoft 365 
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Blocking access to a Microsoft 365 account prevents anyone from using the account to sign in and access the services and data in your Microsoft 365 organization. You can use PowerShell to block access to individual or multiple user accounts.
+When you block access to a Microsoft 365 account, you prevent anyone from using the account to sign in and access the services and data in your Microsoft 365 organization. You can use PowerShell to block access to individual or multiple user accounts.
 
 ## Use the Azure Active Directory PowerShell for Graph module
 
@@ -45,7 +45,7 @@ Set-​AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled 
 This example blocks access to the user account *fabricec@litwareinc.com*.
   
 ```powershell
-Set-​AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $false
+Set-​AzureADUser -ObjectID fabricec\@litwareinc.com -AccountEnabled $false
 ```
 
 To unblock this user account, run the following command:
@@ -122,7 +122,7 @@ Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential
 >[!Note]
 >PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets that have *Msol* in their name. You have to run these cmdlets from Windows PowerShell.
 
-This example blocks access to the user account *fabricec@litwareinc.com*.
+This example blocks access to the user account *fabricec\@litwareinc.com*.
   
 ```powershell
 Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
@@ -150,7 +150,7 @@ tjohnston@contoso.com
 kakers@contoso.com
 ```
 
-In the following commands, the example text file is *C:\My Documents\Accounts.txt*. Replace this filename with the path and file name of your text file.
+In the following commands, the example text file is *C:\My Documents\Accounts.txt*. Replace this file name with the path and file name of your text file.
     
 To block access for the accounts that are listed in the text file, run the following command:
     
@@ -169,4 +169,4 @@ To unblock the accounts listed in the text file, run the following command:
   
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Get started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)

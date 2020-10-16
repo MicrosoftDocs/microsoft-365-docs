@@ -22,22 +22,22 @@ description: Find Microsoft 365 PowerShell cmdlet reference topics for Azure AD,
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-This article provides cmdlet references for the various Microsoft 365 services that provide detailed information and instructions about how to use each cmdlet. It also points to connection instructions for each Microsoft 365 service that PowerShell supports.
+This article provides cmdlet references for the various Microsoft 365 services. It also points to connection instructions for each Microsoft 365 service that PowerShell supports.
   
 > [!NOTE]
 > To connect to all services at once, see [Connect to all Microsoft 365 services in a single Windows PowerShell window](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md).
   
 ## Azure Active Directory PowerShell cmdlets
 
-The Azure Active Directory PowerShell for Graph cmdlet reference topics are in the **Reference** section of the [Azure Active Directory PowerShell for Graph documentation](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+See The Azure Active Directory PowerShell for Graph cmdlet reference topics are in the Reference section of the [Azure Active Directory PowerShell for Graph documentation](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
-The Azure Active Directory Module for Windows PowerShell cmdlet reference topics is in the **Reference** section of the [Azure Active Directory (MSOnline) documentation](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
+The Azure Active Directory Module for Windows PowerShell cmdlet reference topics is in the Reference section of the [Azure Active Directory (MSOnline) documentation](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
 
 For Microsoft 365 PowerShell connection instructions, see [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md).
   
 ## Exchange Online PowerShell cmdlets
 
-Exchange Online cmdlet reference topics are in the **Reference** section of the [Exchange Online PowerShell documentation](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
+Exchange Online cmdlet reference topics are in the Reference section of the [Exchange Online PowerShell documentation](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
   
 For connection instructions for Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
   
@@ -58,7 +58,7 @@ For connection instructions for Skype for Business Online PowerShell, see [Manag
 
 ## Security & Compliance Center PowerShell cmdlets
 
-The Security & Compliance Center cmdlet reference topics are in the **Reference** section of the [Security & Compliance PowerShell documentation](https://docs.microsoft.com/powershell/exchange/scc-powershell).
+The Security & Compliance Center cmdlet reference topics are in the Reference section of the [Security & Compliance PowerShell documentation](https://docs.microsoft.com/powershell/exchange/scc-powershell).
   
 For connection instructions for Security & Compliance Center PowerShell, see [Connect to the Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 

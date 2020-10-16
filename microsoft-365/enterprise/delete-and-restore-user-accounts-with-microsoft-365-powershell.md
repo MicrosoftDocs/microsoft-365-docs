@@ -27,7 +27,9 @@ description: Learn how to use different modules in PowerShell to delete Microsof
 You can use PowerShell for Microsoft 365 to delete and restore user accounts.
 
 >[!Note]
->[Learn how to restore a user account](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) by using the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>Learn how to [restore a user account](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) by using the Microsoft 365 admin center.
+>
+>For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
 >   
    
 ## Use the Azure Active Directory PowerShell for Graph module
@@ -40,7 +42,7 @@ After you connect, use the following syntax to remove an individual user account
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
-This example removes the user account *fabricec@litwareinc.com*.
+This example removes the user account *fabricec\@litwareinc.com*.
   
 ```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
@@ -98,7 +100,7 @@ To restore a deleted user account within the 30-day grace period, use the follow
 Restore-MsolUser -UserPrincipalName <sign-in name>
 ```
 
-This example restores the deleted account *BelindaN@litwareinc.com*.
+This example restores the deleted account *BelindaN\@litwareinc.com*.
   
 ```powershell
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
@@ -107,10 +109,10 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 >[!Note]
 > To see the list of deleted users that can be restored, run the following command:
 >    
-      >  ```powershell
+>  ```powershell
 >  Get-MsolUser -All -ReturnDeletedUsers
 >  ```
-      >
+>
 > If the user account's original user principal name is used by another account, use the _NewUserPrincipalName_ parameter instead of _UserPrincipalName_ to specify a different user principal name when you restore the user account.
 
 
@@ -120,4 +122,4 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
   
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Get started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
