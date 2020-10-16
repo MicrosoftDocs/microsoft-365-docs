@@ -179,10 +179,7 @@ The following charts are available in the report view:
 
 - **Show data for: Forwarders**: The following forwarders are shown:
 
-  - **Transport rule**
-  - The mailbox that contains the forwarding Inbox rule.
 
-  ![Forwarders view in the Forwarding report](../../media/forwarding-report-forwarders.png)
 
 If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
 
