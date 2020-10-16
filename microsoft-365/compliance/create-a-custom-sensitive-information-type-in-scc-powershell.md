@@ -137,41 +137,42 @@ However, while simple, this pattern may identify many false positives by matchin
   
 ### More common scenario: sensitive information type entity with multiple patterns
 
-For this reason, it's more common to define an entity by using more than one pattern, where the patterns identify supporting evidence (such as a keyword or date) in addition to the entity (such as a nine-digit number).
+For this reason, it's more common to define an entity by using more than one pattern, where the patterns require supporting evidence (such as a keyword or date) in addition to the primary element (such as a nine-digit number).
   
-For example, to increase the likelihood of identifying content that contains an employee ID, you can define another pattern that also identifies a hire date, and define yet another pattern that identifies both a hire date and a keyword (such as "employee ID"), in addition to the nine-digit number.
+For example, to increase the likelihood of identifying content that contains an employee ID, you can define another pattern that also identifies a hire date, and define another pattern that identifies both a hire date and a keyword (such as "employee ID"), in addition to the nine-digit number.
   
 ![Diagram of entity with multiple patterns](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
   
 Note a couple of important aspects of this structure:
   
-- Patterns that require more evidence have a higher confidence level. This is useful because when you later use this sensitive information type in a DLP policy, you can use more restrictive actions (such as block content) with only the higher-confidence matches, and you can use less restrictive actions (such as send notification) with the lower-confidence matches.
+- Patterns that require more evidence have a higher confidence level. This is useful because when you later use this sensitive information type in a policy, you can use more restrictive actions (such as block content) with only the higher-confidence matches, and you can use less restrictive actions (such as send notification) with the lower-confidence matches.
 
-- The supporting IdMatch and Match elements reference regexes and keywords that are actually children of the Rule element, not the Pattern. These supporting elements are referenced by the Pattern but included in the Rule. This means that a single definition of a supporting element, like a regular expression or a keyword list, can be referenced by multiple entities and patterns.
+- The supporting IdMatch and Match elements reference regexes and keywords that are actually children of the sensitive information type entity, not the Pattern. These supporting elements are referenced by the Pattern but included in the sensitive information type entity. This means that a single definition of a supporting element, like a regular expression or a keyword list, can be referenced by multiple entities and patterns.
 
 ## What entity do you need to identify? [Entity element, id attribute]
 
 An entity is a sensitive information type, such as a credit card number, that has a well-defined pattern. Each entity has a unique GUID as its ID.
   
 ### Name the entity and generate its GUID
-<!-- why isn't the following in procedure format? -->
-Add the Rules and Entity elements. Then add a comment that contains the name of your custom entity - in this example, Employee ID. Later, you'll add the entity name to the localized strings section, and that name is what appears in the UI when you create a DLP policy.
+
+In your XML editor of choice:
+1. Add the Rules and Entity elements.
+2. Add a comment that contains the name of your custom entity - in this example, Employee ID. Later, you'll add the entity name to the localized strings section, and that name is what appears in the UI when you create a policy.
   
-Next, generate a GUID for your entity. There are several ways to generate GUIDs, but you can do it easily in PowerShell by typing **[guid]::NewGuid()**. Later, you'll also add the entity GUID to the localized strings section.
+3. Generate a GUID for your entity. There are several ways to generate GUIDs, but you can do it easily in PowerShell by typing **[guid]::NewGuid()**. Later, you'll also add the entity GUID to the localized strings section.
   
 ![XML markup showing Rules and Entity elements](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
   
 ## What pattern do you want to match? [Pattern element, IdMatch element, Regex element]
 
-The pattern contains the list of what the sensitive information type is looking for. This can include regexes, keywords, and built-in functions (which perform tasks like running regexes to find dates or addresses). Sensitive information types can have multiple patterns with unique confidences.
+The pattern contains the list of what the sensitive information type is looking for. This can include regexes, keywords, and built-in functions (which perform tasks like running regexes to find dates or addresses). Sensitive information type entities can have multiple patterns with unique confidences.
   
 What all of the below patterns have in common is that they all reference the same regular expression, which looks for a nine-digit number (\d{9}) surrounded by white space (\s) … (\s). This regular expression is referenced by the IdMatch element and is the common requirement for all patterns that look for the Employee ID entity. IdMatch is the identifier that the pattern is to trying to match, such as Employee ID or credit card number or social security number. A Pattern element must have exactly one IdMatch element.
   
 ![XML markup showing multiple Pattern elements referencing single Regex element](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
   
-When satisfied, a pattern returns a count and confidence level, which you can use in the conditions in your DLP policy. When you add a condition for detecting a sensitive information type to a DLP policy, you can edit the count and confidence level as shown here. Confidence level (also called match accuracy) is explained later in this topic.
-  
-![Instance count and match accuracy options](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+When satisfied, a pattern returns a count and confidence level, which you can use in the conditions. When you add a condition for detecting a sensitive information type to a policy, you can edit the count and confidence level. For more on confidence levels, see [Learn about sensitive information types](sensitive-information-type-learn-about.md#) level is explained later in this topic.
+ 
   
 When you create your regular expression, keep in mind that there are potential issues to be aware of. For example, if you write and upload a regex that identifies too much content, this can impact performance. To learn more about these potential issues, see the later section [Potential validation issues to be aware of](#potential-validation-issues-to-be-aware-of).
   
