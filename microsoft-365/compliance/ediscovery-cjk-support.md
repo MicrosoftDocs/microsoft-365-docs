@@ -73,7 +73,7 @@ For information about how to change display language and time zone, see [How to 
 
 - Email files (such as *.eml and *.msg) in [Annotate view](view-documents-in-review-set.md#annotate-view) aren't supported.
 
-- Search hit highlight in [Text view](view-documents-in-review-set.md#text-view) in Review Set is not supported for CJK languages.
+- Search hit highlighting in [Text view](view-documents-in-review-set.md#text-view) in a review set is not supported for CJK languages.
 
 - The [Relevance module](using-relevance.md) used to to analyze data doesn't support CJK languages.
 
