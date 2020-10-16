@@ -1,6 +1,6 @@
 ---
-title: Access the Microsoft Threat Protection APIs
-description: Learn how to access the Microsoft Threat Protection APIs
+title: Access the Microsoft 365 Defender APIs
+description: Learn how to access the Microsoft 365 Defender APIs
 keywords: access, apis, application context, user context, aad application, access token
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,56 +21,73 @@ search.appverid:
 - MET150
 ---
 
-# Access the Microsoft Threat Protection APIs
+# Access the Microsoft 365 Defender APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+- Microsoft 365 Defender
 
-**Applies to:**
-- Microsoft Threat Protection
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
->[!IMPORTANT] 
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
+ Microsoft 365 Defender exposes much of its data and actions through a set of programmatic APIs. These APIs help you automate workflows and make full use of Microsoft 365 Defender's capabilities.
 
  Microsoft Threat Protection exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on  Microsoft Threat Protection capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
-
 In general, you'll need to take the following steps to use the APIs:
-- Create an AAD application
+
+- Create an Azure Active Directory application
 - Get an access token using this application
-- Use the token to access  Microsoft Threat Protection API
+- Use the token to access the Microsoft 365 Defender API
 
+Once you've accomplished these steps, you can access the Microsoft 365 Defender API using an **Application Context** or **User Context**.
 
-You can access  Microsoft Threat Protection API with **Application Context** or **User Context**.
+### Application context (Recommended)
 
-- **Application Context: (Recommended)** <br>
-    Used by apps that run without a signed-in user present. for example, apps that run as background services or daemons.
+Use this context for apps that run without a signed-in user present, such as background services or daemons.
 
-	Steps that need to be taken to access  Microsoft Threat Protection API with application context:
+Follow these steps to access the Microsoft 365 Defender API with an application context.
 
-  1. Create an AAD Web-Application.
-  2. Assign the desired permission to the applicationFor example, **Incident.Read.All**, **AdvancedHunting.Read.All**. 
-  3. Create a key for this Application.
-  4. Get token using the application with its key.
-  5. Use the token to access  Microsoft Threat Protection API
+1. Create an Azure Active Directory web application.
+2. Assign the desired permissions to the application.
+3. Create a key for the application.
+4. Get a security token using the application and its key.
+5. Use the token to access  Microsoft 365 Defender API.
 
-     For more information, see [Get access with application context](api-create-app-web.md).
+For more information, see **[Create an app to access Microsoft 365 Defender without a user](api-create-app-web.md)**.
 
+### User context
 
-- **User Context:** <br>
-    Used to perform actions in the API on behalf of a user.
+Use this context to perform actions on behalf of a single user.
 
-	Steps that needs to be taken to access  Microsoft Threat Protection API with application context:
-  1. Create AAD Native-Application.
-  2. Assign the desired permission to the application. For example, **Incident.Read**, **AdvancedHunting.Read**.
-  3. Get token using the application with user credentials.
-  4. Use the token to access  Microsoft Threat Protection API
+Follow these steps to access the Microsoft 365 Defender API with a user context.
 
-     For more information, see [Get access with user context](api-create-app-user-context.md).
+1. Create an Azure Active Directory native application.
+2. Assign the desired permission to the application.
+3. Get a security token using the user credentials for the application.
+4. Use the token to access  Microsoft 365 Defender API.
 
+For more information, see **[Create an app to access Microsoft 365 Defender APIs on behalf of a user](api-create-app-user-context.md)**.
 
-## Related topics
-- [Microsoft Threat Protection APIs](api-supported.md)
-- [Access  Microsoft Threat Protection with application context](api-create-app-web.md)
-- [Access  Microsoft Threat Protection with user context](api-create-app-user-context.md)
+### Partner context
+
+Use this context when you need to provide an app to many users across [multiple tenants](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps).
+
+Follow these steps to access the Microsoft 365 Defender API with a partner context.
+
+1. Create an Azure Active Directory multi-tenant application.
+2. Assign the desired permission to the application.
+3. Get [admin consent](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) for the app from each tenant.
+4. Get a security token using user credentials based on a customer's tenant ID.
+5. Use the token to access  Microsoft 365 Defender API.
+
+For more information, see **[Create an app with partner access to Microsoft 365 Defender APIs](api-partner-context.md)**.
+
+## Related articles
+
+- [Microsoft 365 Defender APIs overview](api-overview.md)
+- [Supported Microsoft 365 Defender APIs](api-supported.md)
+- [Other security-related APIs](api-articles.md)
+- [Learn about limits and licensing](api-terms.md)
+- [Create a 'Hello world' application](api-hello-world.md)
+- [Understand error codes](api-error-codes.md)

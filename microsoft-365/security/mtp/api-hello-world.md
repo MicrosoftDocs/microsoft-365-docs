@@ -1,6 +1,6 @@
 ---
-title: Hello World for Microsoft Threat Protection REST API 
-description: Learn how to create an app and use a token to access the Microsoft Threat Protection APIs
+title: Hello World for Microsoft 365 Defender REST API 
+description: Learn how to create an app and use a token to access the Microsoft 365 Defender APIs
 keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,168 +21,150 @@ search.appverid:
 - MET150
 ---
 
-# Hello World for Microsoft Threat Protection REST API 
+# Hello World for Microsoft 365 Defender REST API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- Microsoft Threat Protection
 
->[!IMPORTANT] 
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+- Microsoft 365 Defender
 
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## Get incidents using a simple PowerShell script
 
-### How long it takes to go through this example?
-It only takes 5 minutes done in two steps:
-- Application registration
-- Use examples: only requires copy/paste of a short PowerShell script
+It should take 5 to 10 minutes to complete this app, including registering the application, and applying the code from the PowerShell sample script below.
 
-### Do I need a permission to connect?
-For the Application registration stage, you must have a **Global administrator** role in your Azure Active Directory (Azure AD) tenant.
+### Register an app in Azure Active Directory
 
-### Step 1 - Create an App in Azure Active Directory
+1. Sign in to [Azure](https://portal.azure.com) as a user with the **Global administrator** role.
 
-1. Log on to [Azure](https://portal.azure.com) with your **Global administrator** user.
-
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
+2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
    ![Image of Microsoft Azure and navigation to application registration](../../media/atp-azure-new-app2.png)
 
-3. In the registration form, choose a name for your application and then select **Register**.
+3. In the registration form, choose a name for your application, then select **Register**. Selecting a redirect URI is optional, and you won't need one to complete this example.
 
-4. Allow your Application to access Microsoft Defender ATP and assign it **Read all incidents** permission:
+4. On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft 365 Defender**, and then select **Microsoft 365 Defender**. Your app can now access Microsoft 365 Defender.
 
-   - On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft Threat Protection** and select on **Microsoft Threat Protection**.
-
-   >[!NOTE]
-   >Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
+   > [!TIP]
+   > Microsoft 365 Defender will not appear in the original list. You need to start writing its name in the text box to see it appear.
 
    ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
 
-   - Choose **Application permissions** > **Incident.Read.All** > Select on **Add permissions**
+   - Choose **Application permissions** > **Incident.Read.All** and select **Add permissions**.
 
    ![Image of API access and API selection](../../media/request-api-permissions.PNG)
 
-   >[!IMPORTANT]
-   >You need to select the relevant permissions. 
+5. Select **Grant admin consent**. Every time you add a permission, you must select **Grant admin consent** for it to take effect.
 
-     For instance,
+    ![Image of Grant permissions](../../media/grant-consent.PNG)
 
-     - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
+6. Add a secret to the application. Select **Certificates & secrets**, add a description to the secret, then select **Add**.
 
-5. Select **Grant admin consent**
-
-	- >[!NOTE]
-      > Every time you add permission you must select on **Grant consent** for the new permission to take effect.
-
-	![Image of Grant permissions](../../media/grant-consent.PNG)
-
-6. Add a secret to the application.
-
-	- Select **Certificates & secrets**, add description to the secret and select **Add**.
-
-    >[!IMPORTANT]
-    > After selecting **Add**, **copy the generated secret value**. You won't be able to retrieve after you leave!
+    > [!TIP]
+    > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve the secret value after you leave.
 
     ![Image of create app key](../../media/webapp-create-key2.png)
 
-7. Write down your application ID and your tenant ID:
-
-   - On your application page, go to **Overview** and copy the following:
+7. Record your application ID and your tenant ID somewhere safe. They're listed under **Overview** on your application page.
 
    ![Image of created app id](../../media/app-and-tenant-ids.png)
 
+### Get a token using the app and use the token to access the API
 
-Done! You have successfully registered an application.
+1. Copy the script below and paste it into your favorite text editor. Save as **Get-Token.ps1**. You can also run the code as-is in PowerShell ISE, but you should save it, because we'll need to run it again when we use the incident-fetching script in the next section.
 
-### Step 2 - Get a token using the App and use this token to access the API.
+    This script will generate a token and save it in the working folder under the name, *Latest-token.txt*.
 
--   Copy the script below to PowerShell ISE or to a text editor, and save it as "**Get-Token.ps1**"
--   Running this script will generate a token and will save it in the working folder under the name "**Latest-token.txt**".
+    ```PowerShell
+    # This script gets the app context token and saves it to a file named "Latest-token.txt" under the current directory.
+    # Paste in your tenant ID, client ID and app secret (App key).
 
-```
-# That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
-# Paste below your Tenant ID, App ID and App Secret (App key).
+    $tenantId = '' # Paste your directory (tenant) ID here
+    $clientId = '' # Paste your application (client) ID here
+    $appSecret = '' # Paste your application key here
 
-$tenantId = '' ### Paste your tenant ID here
-$appId = '' ### Paste your Application ID here
-$appSecret = '' ### Paste your Application secret here
+    $resourceAppIdUri = 'https://api.security.microsoft.com'
+    $oAuthUri = "https://login.windows.net/$tenantId/oauth2/token"
+    $authBody = [Ordered] @{
+      resource = $resourceAppIdUri
+      client_id = $clientId
+      client_secret = $appSecret
+      grant_type = 'client_credentials'
+    }
+    $authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
+    $token = $authResponse.access_token
+    Out-File -FilePath "./Latest-token.txt" -InputObject $token
+    return $token
+    ```
 
-$resourceAppIdUri = 'https://api.security.microsoft.com'
-$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
-$authBody = [Ordered] @{
-    resource = "$resourceAppIdUri"
-    client_id = "$appId"
-    client_secret = "$appSecret"
-    grant_type = 'client_credentials'
-}
-$authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
-$token = $authResponse.access_token
-Out-File -FilePath "./Latest-token.txt" -InputObject $token
-return $token
-```
+#### Validate the token
 
--   Sanity Check:<br>
-Run the script.<br>
-In your browser go to: https://jwt.ms/ <br>
-Copy the token (the content of the Latest-token.txt file).<br>
-Paste in the top box.<br>
-Look for the "roles" section. Find the ```Incidents.Read.All``` role.<br>
-The below example is from an app that has ```Incidents.Read.All```, ```Incidents.ReadWrite.All``` and ```AdvancedHunting.Read.All``` permissions.
+1. Copy and paste the token you received into [JWT](https://jwt.ms) to decode it.
+1. *JWT* stands for *JSON Web Token*. The decoded token will contain a number of JSON-formatted items or claims. Make sure that the *roles* claim within the decoded token contains the desired permissions.
 
-![Image jwt.ms](../../media/api-jwt-ms.png)
+    In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
 
-### Lets get the Incidents!
+    ![Image jwt.ms](../../media/api-jwt-ms.png)
 
--   The script below will use **Get-Token.ps1** to access the API and will get the incidents last updated in past 48 hours.
--   Save this script in the same folder you saved the previous script **Get-Token.ps1**. 
--   The script a json file with the data in the same folder as the scripts.
+### Get a list of recent incidents
 
-```
-# Returns Incidents last updated in the past 48 hours.
+The script below will use **Get-Token.ps1** to access the API. It then retrieves a list of incidents that were last updated within the past 48 hours, and saves the list as a JSON file.
 
-$token = ./Get-Token.ps1       #run the script Get-Token.ps1  - make sure you are running this script from the same folder of Get-Token.ps1
+> [!IMPORTANT]
+> Save this script in the same folder you saved **Get-Token.ps1**.
 
-# Get Incidents from the last 48 hours. Make sure you have incidents in that time frame.
+```PowerShell
+# This script returns incidents last updated within the past 48 hours.
+
+$token = ./Get-Token.ps1
+
+# Get incidents from the past 48 hours.
+# The script may appear to fail if you don't have any incidents in that time frame.
 $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 
-# The URL contains the type of query and the time filter we created above
+# This URL contains the type of query and the time filter we created above.
+# Note that `$filter` does not refer to a local variable in our script --
+# it's actually an OData operator and part of the API's syntax.
 $url = "https://api.security.microsoft.com/api/incidents?$filter=lastUpdateTime+ge+$dateTime"
 
-# Set the WebRequest headers
-$headers = @{ 
+# Set the webrequest headers
+$headers = @{
     'Content-Type' = 'application/json'
     'Accept' = 'application/json'
     'Authorization' = "Bearer $token"
 }
 
-# Send the webrequest and get the results. 
+# Send the request and get the results.
 $response = Invoke-WebRequest -Method Get -Uri $url -Headers $headers -ErrorAction Stop
 
-# Extract the incidents from the results. 
+# Extract the incidents from the results.
 $incidents =  ($response | ConvertFrom-Json).value | ConvertTo-Json -Depth 99
 
-# Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
-$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}    
+# Get a string containing the execution time. We concatenate that string to the name 
+# of the output file to avoid overwriting the file on consecutive runs of the script.
+$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}
 
 # Save the result as json
-$outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"     
+$outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"
 
-Out-File -FilePath $outputJsonPath -InputObject $incidents 
+Out-File -FilePath $outputJsonPath -InputObject $incidents
 ```
 
 You're all done! You have just successfully:
--   Created and registered and application
--   Granted permission for that application to read alerts
--   Connected the API
--   Used a PowerShell script to return incidents created in the past 48 hours
 
+- Created and registered an application.
+- Granted permission for that application to read alerts.
+- Connected to the API.
+- Used a PowerShell script to return incidents updated in the past 48 hours.
 
+## Related articles
 
-## Related topic
-- [Access the Microsoft Threat Protection APIs](api-access.md)
-- [Access  Microsoft Threat Protection with application context](api-create-app-web.md)
-- [Access  Microsoft Threat Protection with user context](api-create-app-user-context.md)
+- [Microsoft 365 Defender APIs overview](api-overview.md)
+- [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Access  Microsoft 365 Defender with application context](api-create-app-web.md)
+- [Access  Microsoft 365 Defender with user context](api-create-app-user-context.md)
+- [Learn about API limits and licensing](api-terms.md)
+- [Understand error codes](api-error-codes.md)

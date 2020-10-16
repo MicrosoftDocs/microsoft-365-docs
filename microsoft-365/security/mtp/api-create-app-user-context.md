@@ -1,6 +1,6 @@
 ---
-title: Access Microsoft Threat Protection APIs using on behalf of user
-description: Learn how to access Microsoft Threat Protection APIs using on behalf of user
+title: Create an app to access Microsoft 365 Defender APIs on behalf of a user
+description: Learn how to access Microsoft 365 Defender APIs on behalf of a user.
 keywords: access, on behalf of user, api, application, user, access token, token, 
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,105 +21,136 @@ search.appverid:
 - MET150
 ---
 
-# Access Microsoft Threat Protection APIs on behalf of user
+# Create an app to access Microsoft 365 Defender APIs on behalf of a user
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- Microsoft Threat Protection
 
->[!IMPORTANT] 
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+- Microsoft 365 Defender
 
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This page describes how to create an application to get programmatic access to Microsoft Threat Protection on behalf of a user.
+This page describes how to create an application to get programmatic access to Microsoft 365 Defender on behalf of a single user.
 
-If you need programmatic access Microsoft Threat Protection without a user, refer to [Create an app to access Microsoft Threat Protection without a user](api-create-app-web.md).
+If you need programmatic access to Microsoft 365 Defender without a defined user (for example, if you're writing a background app or daemon), see [Create an app to access Microsoft 365 Defender without a user](api-create-app-web.md). If you need to provide access for multiple tenants—for example, if you're serving a large organization or a group of customers—see [Create an app with partner access to Microsoft 365 Defender APIs](api-partner-access.md).If you're not sure which kind of access you need, see [Get started](api-access.md).
 
-If you are not sure which access you need, read the [Access the Microsoft Threat Protection APIs](api-access.md).
+Microsoft 365 Defender exposes much of its data and actions through a set of programmatic APIs. Those APIs help you automate workflows and make use of Microsoft 365 Defender's capabilities. This API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
-Microsoft Threat Protection exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Microsoft Threat Protection capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+In general, you'll need to take the following steps to use these APIs:
 
-In general, you’ll need to take the following steps to use the APIs:
-- Create an AAD application
-- Get an access token using this application
-- Use the token to access Microsoft Threat Protection API
+- Create an Azure Active Directory (Azure AD) application.
+- Get an access token using this application.
+- Use the token to access Microsoft 365 Defender API.
 
-This page explains how to create an AAD application, get an access token to Microsoft Threat Protection and validate the token.
+This article explains how to:
 
->[!NOTE]
-> When accessing Microsoft Threat Protection API on behalf of a user, you will need the correct Application permission and user permission.
+- Create an Azure AD application
+- Get an access token to Microsoft 365 Defender
+- Validate the token
 
+> [!NOTE]
+> When accessing Microsoft 365 Defender API on behalf of a user, you will need the correct application permissions and user permissions.
 
->[!TIP]
+> [!TIP]
 > If you have the permission to perform an action in the portal, you have the permission to perform the action in the API.
 
 ## Create an app
 
-1. Log on to [Azure](https://portal.azure.com) with user that has **Global Administrator** role.
+1. Sign in to [Azure](https://portal.azure.com) as a user with the **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
+2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
    ![Image of Microsoft Azure and navigation to application registration](../../media/atp-azure-new-app2.png)
 
-3. In the registration from, enter the following information then click **Register**.
+3. In the form, choose a name for your application and enter the following information for the redirect URI, then select **Register**.
 
    ![Image of Create application window](../../media/nativeapp-create2.PNG)
 
-   - **Name:** Your application name
    - **Application type:** Public client
    - **Redirect URI:** https://portal.azure.com
 
-4. To enable your app to access Microsoft Threat Protection and assign it permissions, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and then select **Microsoft Threat Protection**.
+4. On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft 365 Defender**, and then select **Microsoft 365 Defender**. Your app can now access Microsoft 365 Defender.
 
-    >[!NOTE]
-    > Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
+   > [!TIP]
+   > Microsoft 365 Defender will not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-      ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
+   ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
 
-    - Choose **Delegated permissions** > Choose the relevant permissions for your scenario, e.g. **Incident.Read**, and then select **Add permissions**.
+   - Choose **Delegated permissions**. Choose the relevant permissions for your scenario (for example **Incident.Read**), and then select **Add permissions**.
 
-      ![Image of API access and API selection](../../media/request-api-permissions-delegated.PNG)
+   ![Image of API access and API selection](../../media/request-api-permissions-delegated.PNG)
 
-     >[!IMPORTANT]
-     >You need to select the relevant permissions. 
+    > [!NOTE]
+    > You need to select the relevant permissions for your scenario. *Read all incidents* is just an example. To determine which permission you need, please look at the **Permissions** section in the API you want to call.
+    >
+    > For instance, to [run advanced queries](run-advanced-query-api.md), select the 'Run advanced queries' permission; to [isolate a device](isolate-machine.md), select the 'Isolate machine' permission.
 
-    -  To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
+5. Select **Grant admin consent**. Every time you add a permission, you must select **Grant admin consent** for it to take effect.
 
-    - Click **Grant consent**
+   ![Image of Grant permissions](../../media/grant-consent-delegated.PNG)
 
-      >[!NOTE]
-      >Every time you add permission you must click on **Grant consent** for the new permission to take effect.
-
-      ![Image of Grant permissions](../../media/grant-consent-delegated.PNG)
-
-6. Write down your application ID and your tenant ID:
-
-   - On your application page, go to **Overview** and copy the following:
+6. Record your application ID and your tenant ID somewhere safe. They're listed under **Overview** on your application page.
 
    ![Image of created app id](../../media/app-and-tenant-ids.png)
 
+## Get an access token
 
-## Get an access token using PowerShell
+For more information on Azure Active Directory tokens, see the [Azure AD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
-```
-#Install the ADAL.PS package if it's not installed.
-if(!(Get-Package adal.ps)) { Install-Package -Name adal.ps }
+### Get an access token using PowerShell
 
-$authority = "https://login.windows.net/{tenant-id}" # replace {tenant-id} with your tenant ID.
+```PowerShell
+if(!(Get-Package adal.ps)) { Install-Package -Name adal.ps } # Install the ADAL.PS package in case it's not already present
 
-$clientId = "{application-id}" #replace {application-id} with your application ID.
+$tenantId = '' # Paste your directory (tenant) ID here.
+$clientId = '' # Paste your application (client) ID here.
+$redirectUri = '' # Paste your app's redirection URI
 
-$redirectUri = "{redirect-uri}" # replace {redirect-uri} with your application redirect URI.
+$authority = "https://login.windows.net/$tenantId"
+$resourceUrl = 'https://api.security.microsoft.com'
 
-$resourceUrl = "https://api.security.microsoft.com"
-
-$response = Get-ADALToken -Resource $resourceUrl -ClientId $clientId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
+$response = Get-ADALToken -Resource $resourceUrl -ClientId $cleintId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
 $response.AccessToken | clip
+
 $response.AccessToken
 ```
 
-## Related topics
-- [Access the Microsoft Threat Protection APIs](api-access.md)
-- [Access  Microsoft Threat Protection with application context](api-create-app-web.md)
+## Validate the token
+
+1. Copy and paste the token into [JWT](https://jwt.ms) to decode it.
+1. Make sure that the *roles* claim within the decoded token contains the desired permissions.
+
+In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
+
+![Image of token validation](../../media/webapp-decoded-token.png)
+
+## Use the token to access the Microsoft 365 Defender API
+
+1. Choose the API you want to use (incidents, or advanced hunting). For more information, see [Supported Microsoft 365 Defender APIs](api-supported.md).
+2. In the http request you're about to send, set the authorization header to `"Bearer" <token>`, *Bearer* being the authorization scheme, and *token* being your validated token.
+3. The token will expire within one hour. You can send more than one request during this time  with the same token.
+
+The following example shows how to send a request to get a list of incidents **using C#**.
+
+```C#
+    var httpClient = new HttpClient();
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/incidents");
+
+    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+    var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+```
+
+## Related articles
+
+- [Microsoft 365 Defender APIs overview](api-overview.md)
+- [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Create a 'Hello world' application](api-hello-world.md)
+- [Create an app to access Microsoft 365 Defender without a user](api-create-app-web.md)
+- [Create an app with partner access to Microsoft 365 Defender APIs](api-partner-access.md)
+- [Learn about API limits and licensing](api-terms.md)
+- [Understand error codes](api-error-codes.md)
+- [Manage secrets in your server apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+- [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
