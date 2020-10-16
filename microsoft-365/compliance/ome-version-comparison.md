@@ -70,7 +70,7 @@ For information on using Advanced Message Encryption, see [Office 365 Advanced M
 
 ## Unique characteristics of Office 365 Message Encryption in a GCC High deployment
 
-If you plan to use Office 365 Message Encryption in a GCC High environment, there are some unique characteristics about the recipient experience.
+If you plan to use Office 365 Message Encryption in a GCC High environment, there are some unique characteristics regarding the recipient experience.
 
 ### Encrypted email between GCC High and GCC High recipients
 
