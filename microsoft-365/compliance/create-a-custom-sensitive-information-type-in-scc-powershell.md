@@ -24,7 +24,7 @@ This topic shows you how to use PowerShell to create an XML *rule package* file 
 After you've created a well-formed XML file, you can upload it to Microsoft 365 by using Microsoft 365 PowerShell. Then you're ready to use your custom sensitive information type in your policies and test that it's detecting the sensitive information as you intended.
 
 > [!NOTE]
-> If you don't need the fine grained control that PowerShell provides, you can create custom sensitive information types in the Compliance center. For more information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-types.md).
+> If you don't need the fine grained control that PowerShell provides, you can create custom sensitive information types in the Compliance center. For more information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).
 
 ## Important disclaimer
 
