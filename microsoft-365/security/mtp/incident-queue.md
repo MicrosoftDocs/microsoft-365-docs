@@ -95,6 +95,9 @@ The severity of an incident is indicative of the impact it can have on your asse
 ### Status
 You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved.
 
+>[!IMPORTANT]
+>The Classification, Device group, Investigation state, and OS platform filters are currently only available in public preview.
+
 
 ## Next steps
 After you've determined which incident requires the highest priority, you can proceed to do further investigative work on an incident.
