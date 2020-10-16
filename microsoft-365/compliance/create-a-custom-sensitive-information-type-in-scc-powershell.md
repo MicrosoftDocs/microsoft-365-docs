@@ -1,5 +1,5 @@
 ---
-title: "Create a custom sensitive information type in Compliance center PowerShell"
+title: "Create a custom sensitive information type using PowerShell"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,7 +17,7 @@ search.appverid:
 description: "Learn how to create and import a custom sensitive information type for policies in the Compliance center."
 ---
 
-# Create a custom sensitive information type in using PowerShell
+# Create a custom sensitive information type using PowerShell
 
 This topic shows you how to use PowerShell to create an XML *rule package* file that defines your own custom [sensitive information types](sensitive-information-type-entity-definitions.md). You need to know how to create a regular expression. As an example, this topic creates a custom sensitive information type that identifies an employee ID. You can use this example XML as a starting point for your own XML file. If you are new to sensitive information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md).
 
