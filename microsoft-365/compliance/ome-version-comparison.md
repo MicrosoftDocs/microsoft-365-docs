@@ -72,7 +72,7 @@ For information on using Advanced Message Encryption, see [Office 365 Advanced M
 
 If you plan to use Office 365 Message Encryption in a GCC High environment, there are some unique characteristics about the recipient experience.
 
-### Encrypted email between GCC High to GCC High recipients
+### Encrypted email between GCC High and GCC High recipients
 
 Senders can manually encrypt emails in Outlook for PC and Mac and Outlook on the web, or organizations can set up a policy to encrypt emails using Exchange mail flow rules.
 
