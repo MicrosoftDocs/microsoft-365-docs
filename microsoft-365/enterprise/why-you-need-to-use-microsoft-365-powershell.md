@@ -421,7 +421,7 @@ The interpretation of this PowerShell script is:
   
 ## See also
 
-[Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Get started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
   
 [Manage Microsoft 365 user accounts, licenses, and groups with PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
