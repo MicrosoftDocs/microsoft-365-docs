@@ -315,13 +315,13 @@ The data table contains the following information, shown in descending date orde
 
 - **Date**
 - **Total email**
-- **Edge protection**
-- **Anti-malware, file reputation, file type block**
-- **Anti-phish, URL reputation, Brand impersonation, anti-spoof**
-- **Anti-spam, bulk mail filtering**
-- **User and domain impersonation (ATP)**
-- **File and URL detonation (ATP)**
-- **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**
+- **Edge protection** : These are email messages that were filtered out by the Microsoft edge browser.  
+- **Anti-malware, file reputation, file type block**: for file reputation, these are email messages filtered out due to its bad file reputation identified on other microsoft customer tenants. for file type block, these are email messages filtered out due to the type of malicious file identified in the message.      
+- **Anti-phish, URL reputation, Brand impersonation, anti-spoof** : for URL reputation, these are email messages filtered out due to its bad URL reputation identified on other microsoft customer tenants. for Brand impersonation, these are email messages filtered out due to the email messages coming from well-known brand impersonating senders. for anti-spoof, this are email messages filtered out due to the email message attempting to spoof a domain the recipient belongs to or a domain the sender of the message doesnt own.  
+- **Anti-spam, bulk mail filtering** for bulk mail filtering, these are email messages filtered out due to it attempting to deliver a bulk mail to its recipients. 
+- **User and domain impersonation (ATP)**: for user impersonation, these are email messages filtered out due to it attempting to impersonate a user while domain impersonation are email messages filtered out due to it attempting to impersonate a domain a customer owns. 
+- **File and URL detonation (ATP)**: for file detonation, these are email messages filtered out due to it being identified as bad by the safe attachment policy. while URL detonations are email messages filtered out due detonation within the customer tenant and the results are bad.  
+- **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**: ZAP here indicates Zero hour auto-purge
 
 If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.
 
@@ -373,8 +373,8 @@ The data table contains the following information, shown in descending date orde
 - **Date**
 - **Total email**
 - **Edge filtered**
-- **Anti-malware engine, safe attachments, rule filtered**
-- **DMARC, impersonation, spoof, phish filtered**
+- **Anti-malware engine, safe attachments, rule filtered**: for rule filtered, these are email messages filtered out due to the transport rules the organization has configured.
+- **DMARC, impersonation, spoof, phish filtered**: for DMARC, These are email messages filtered out due to the messages failing its DMARC Authentication check. 
 - **URL detonation detection**
 - **Anti-spam filtered**
 - **ZAP removed**
