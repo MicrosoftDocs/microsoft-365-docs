@@ -37,7 +37,7 @@ If you're looking for how to change your company's profile information, such as 
   
 ## To update your phone number and email address
 
-Use the **Security Info** page to change your name, mobile phone number, and alternate email address. The alternate email address is used for important notifications, such as resetting your admin password (not your computer admin password). 
+Use the **Security Info** page to change your mobile phone number and alternate email address. The alternate email address is used for important notifications, such as resetting your admin password (not your computer admin password). 
   
 1. Browse to the Microsoft 365 admin center.
 
