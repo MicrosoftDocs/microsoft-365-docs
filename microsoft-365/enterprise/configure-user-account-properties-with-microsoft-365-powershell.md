@@ -68,11 +68,14 @@ You identify the account with the *-ObjectID* parameter and set or change specif
     
     This is the ISO 3166-1 alpha-2 (A2) two-letter country or region code.
     
-<<<<<<< HEAD
 For additional parameters, see [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) .
 
 To display the User Principal Name for your user accounts, run the following command:
-=======
+
+
+To display the User Principal Name for your user accounts, run the following command:
+
+>>>>>>> dff0ba3d9ea85922a4c2e8128e2968cda2f70329
 See [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) for additional parameters.
 
 >[!Note]
@@ -80,7 +83,6 @@ See [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-a
 >
 
 To display the User Principal Name for your user accounts, run the following command.
->>>>>>> 3b59edb2fd6cb9a3e24b798e191935d6a0f2b24d
   
 ```powershell
 Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName | More
@@ -267,12 +269,17 @@ This command instructs PowerShell to:
 1. Find all user accounts that have their Department property set to "Accounting" (**Where {$_.Department -eq "Accounting"}**) and send the resulting information to the next command (**|**).
     
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Set the user location to France (**Set-MsolUser -UsageLocation "FR"**).
     
 =======
 - Set the user location to France (**Set-MsolUser -UsageLocation "FR"**).
 
 >>>>>>> 3b59edb2fd6cb9a3e24b798e191935d6a0f2b24d
+=======
+1. Set the user location to France (**Set-MsolUser -UsageLocation "FR"**).
+
+>>>>>>> dff0ba3d9ea85922a4c2e8128e2968cda2f70329
 
 ## See also
 
