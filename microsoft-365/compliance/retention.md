@@ -348,17 +348,26 @@ To use the retention cmdlets, you must first [connect to the Office 365 Security
 
 - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
 
-## Retention settings vs.holds for eDiscovery
+## When to use retention policies and retention labels or holds for eDiscovery
 
-Although retention settings and [holds that you create with an eDiscovery case](create-ediscovery-holds.md) can both prevent data from being permanently deleted, their use is very different:
+Although retention settings and [holds that you create with an eDiscovery case](create-ediscovery-holds.md) can both prevent data from being permanently deleted, they are designed for different scenarios. To help you understand the differences and decide which to use, use the following guidance:
 
-- Retention settings that you specify in retention policies and retention labels are designed for information governance to retain or delete data for a long-term strategy and compliance requirements. The scope is usually broad with the main focus being the location and content rather than individual users. 
+- Retention settings that you specify in retention policies and retention labels are designed for a long-term information governance strategy to retain or delete data for compliance requirements. The scope is usually broad with the main focus being the location and content rather than individual users. The start and end of the retention period is configurable, with the option to automatically delete content without additional administrator intervention.
 
-- Holds for an eDiscovery case (either core or advanced) are designed for discovery and respond actions to preserve data for a short-lived investigation to support a legal inquiry. The scope is specific with the focus being content accessed by specific users.
+- Holds for an eDiscovery case (either core or advanced) are designed for as-needed discovery and respond actions to preserve data for a specific investigation to support a legal inquiry. The scope is specific with the focus being content accessed by specific users. The start and end of the preservation period isn't configurable but dependent on individual administrator actions, without an option to automatically delete content when the hold is released.
 
-If content is subject to both an eDiscovery hold and retention settings, the content in the eDiscovery hold takes precedence over any delete actions from retention settings.
+Summary to compare retention with holds:
 
-In terms of administration, retention settings in retention policies and retention labels are design to be "set it and forget it" whereas eDiscovery holds require active administration. Content that is preserved by holds must be manually released by an administration when the investigation is complete and the legal case can be closed.
+|Capability|Retention |eDiscovery holds|
+|:-----|:-----|:-----|:-----|
+|Business need |Compliance |Legal |
+|Time scope |Long-term |Short-term |
+|Focus |Broad, content-based |Specific, user-based |
+|Time-bound |Yes (optional) |No |
+|Content deletion |Yes (optional) |No |
+|Administrative overheads |Low |High |
+
+If content is subject to both retention settings and an eDiscovery hold, preserving content for the eDiscovery hold always takes precedence. In this way, the [#principles of retention](the-principles-of-retention-or-what-takes-precedence) expand to eDiscovery holds because they preserve data until an administrator manually releases the hold. However, despite this precedence, don't use eDiscovery holds for long-term information governance. If you are concerned about automatic deletion of data, you can configure retention settings to retain items forever, or use [disposition review](disposition.md#disposition-reviews) with retention labels.
 
 ## Use retention policies and retention labels instead of older features
 
