@@ -3,7 +3,6 @@ title: "Create Microsoft 365 user accounts with PowerShell"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -36,9 +35,9 @@ When you create user accounts in PowerShell, certain account properties are alwa
 |**UserPrincipalName** <br/> |Yes  <br/> |This is the account name that's used to sign in to Microsoft 365 services. For example, CalebS\@contoso.onmicrosoft.com.  <br/> |
 |**FirstName** <br/> |No  <br/> ||
 |**LastName** <br/> |No  <br/> ||
-|**LicenseAssignment** <br/> |No  <br/> |This is the licensing plan (also known as the license plan or SKU) from which an available license is assigned to the user account. The license defines the Microsoft 365 services that are available to the account. You don't have to assign a license to a user when you create the account, but the account must have a license to access Microsoft 365 services. You have 30 days to license the user account after you create it. |
-|**Password** <br/> |No  <br/> | If you don't specify a password, a random password is assigned to the user account, and the password is visible in the results of the command. If you specify a password, it needs to be 8 to 16 ASCII text characters of the following types: lowercase letters, uppercase letters, numbers, and symbols.<br/> |
-|**UsageLocation** <br/> |No  <br/> |This is a valid ISO 3166-1 alpha-2 country code. For example, *US* for the United States, and *FR* for France. It's important to provide this value, because some Microsoft 365 services aren't available in certain countries. You can't assign a license to a user account unless the account has this value configured. For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
+|**LicenseAssignment** <br/> |No  <br/> |This is the licensing plan (also known as the license plan or SKU) from which an available license is assigned to the user account. The license defines the Microsoft 365 services that are available to account. You don't have to assign a license to a user when you create the account, but the account requires a license to access Microsoft 365 services. You have 30 days to license the user account after you create it. |
+|**Password** <br/> |No  <br/> | If you don't specify a password, a random password is assigned to the user account, and the password is visible in the results of the command. If you specify a password, it needs to be 8 to 16 ASCII text characters from any three of the following types: lowercase letters, uppercase letters, numbers, and symbols. <br/> |
+|**UsageLocation** <br/> |No  <br/> |This is a valid ISO 3166-1 alpha-2 country code. For example, US for the United States, and FR for France. **Because some Microsoft 365 services aren't available in certain countries, you can't assign a license to a user account unless the account has this value configured.** For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).  <br/> |
 
 >[!Note]
 >[Learn how to create user accounts](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) by using the Microsoft 365 admin center.

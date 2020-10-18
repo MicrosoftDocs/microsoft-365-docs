@@ -3,7 +3,6 @@ title: "Configure Microsoft 365 user account properties with PowerShell"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -69,9 +68,16 @@ You identify the account with the *-ObjectID* parameter and set or change specif
     
     This is the ISO 3166-1 alpha-2 (A2) two-letter country or region code.
     
-For additional parameters, see [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) .
 
 To display the User Principal Name for your user accounts, run the following command:
+
+See [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) for additional parameters.
+
+>[!Note]
+>Before you can assign licenses to a user account, you must assign a usage location.
+>
+
+To display the User Principal Name for your user accounts, run the following command.
   
 ```powershell
 Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName | More
@@ -258,7 +264,7 @@ This command instructs PowerShell to:
 1. Find all user accounts that have their Department property set to "Accounting" (**Where {$_.Department -eq "Accounting"}**) and send the resulting information to the next command (**|**).
     
 1. Set the user location to France (**Set-MsolUser -UsageLocation "FR"**).
-    
+
 
 ## See also
 
