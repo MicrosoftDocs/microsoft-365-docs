@@ -91,7 +91,7 @@ In the **Sign into your account** dialog box, type your Microsoft 365 work or sc
 
 If you're using multi-factor authentication, follow the instructions to provide additional authentication information, such as a verification code.
 
-After you connect, you can use the cmdlets for the [Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
+After you connect, you can use the cmdlets for the [Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/powershell/module/azuread).
 
 ## Connect with the Microsoft Azure Active Directory Module for Windows PowerShell
 
@@ -167,5 +167,5 @@ If you get an error message, check the following issues:
 ## See also
 
 - [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
-- [Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+- [Get started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 - [Connect to all Microsoft 365 services in a single Windows PowerShell window](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md)
