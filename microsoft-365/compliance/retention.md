@@ -354,7 +354,7 @@ Although retention settings and [holds that you create with an eDiscovery case](
 
 - Retention settings that you specify in retention policies and retention labels are designed for a long-term information governance strategy to retain or delete data for compliance requirements. The scope is usually broad with the main focus being the location and content rather than individual users. The start and end of the retention period is configurable, with the option to automatically delete content without additional administrator intervention.
 
-- Holds for an eDiscovery case (either core or advanced) are designed for as-needed discovery and respond actions to preserve data for a specific investigation to support a legal inquiry. The scope is specific with the focus being content accessed by specific users. The start and end of the preservation period isn't configurable but dependent on individual administrator actions, without an option to automatically delete content when the hold is released.
+- Holds for an eDiscovery case (either core or advanced) are designed for as-needed discovery and respond actions to preserve data for a specific investigation to support a legal inquiry. The scope is specific with the focus being content accessed by identified users. The start and end of the preservation period isn't configurable but dependent on individual administrator actions, without an option to automatically delete content when the hold is released.
 
 Summary to compare retention with holds:
 
@@ -363,7 +363,7 @@ Summary to compare retention with holds:
 |Business need |Compliance |Legal |
 |Time scope |Long-term |Short-term |
 |Focus |Broad, content-based |Specific, user-based |
-|Time-bound |Yes (optional) |No |
+|Configurable end date |Yes (optional) |No |
 |Content deletion |Yes (optional) |No |
 |Administrative overheads |Low |High |
 
