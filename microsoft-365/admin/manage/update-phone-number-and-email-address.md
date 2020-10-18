@@ -43,7 +43,7 @@ Use the **Security Info** page to change your mobile phone number and alternate 
 
 2. In the header, select your profile icon \> **My account** \> **Security Info**.
 
-3. In the **Security info** tab Click **Add Method**, select **Phone**, **Alternate Phone**, Or **Email** to add details. To Update your mobile, phone, and alternate email address you can edit them by clicking on **Change**. Make sure you use something different from your Microsoft email address for your alternate email address.
+3. In the **Security info** tab, select **Add Method** \> **Phone** \> **Alternate Phone** or **Email** to add details. To update your mobile, phone, and alternate email address details, select **Change**. Make sure you use something different than your Microsoft email address for your alternate email address.
 
     > [!IMPORTANT]
     > The alternate email address and the mobile phone number are needed for resetting your admin password (not your computer admin password).
