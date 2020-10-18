@@ -55,4 +55,4 @@ An end-user spam notification contains the following information for each quaran
 ![Example end-user spam notification](../../media/end-user-spam-notification.png)
 
 > [!NOTE]
-> A blocked sender can still send you mail, but if anything from his or her email address makes it to your email account, it’s immediately moved to the Junk Email folder. Future messages from this sender will go to your Junk Email folder or End-User Quarantine. If you would like to delete these messages on arrival and donot want them to be quarentined, Use [Mail flow Rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) to purge them on arrival.
+> A blocked sender can still send you mail, but if anything from his or her email address makes it to your email account, it’s immediately moved to the Junk Email folder. Future messages from this sender will go to your Junk Email folder or to end-user quarantine. If you would like to delete these messages on arrival and don't want them to be quarantined, use [Mail flow Rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) to purge them on arrival.
