@@ -363,7 +363,7 @@ Summary to compare retention with holds:
 |Business need: |Compliance |Legal |
 |Time scope: |Long-term |Short-term |
 |Focus: |Broad, content-based |Specific, user-based |
-|Configurable start and end date: |Yes |No |
+|Start and end date configurable: |Yes |No |
 |Content deletion: |Yes (optional) |No |
 |Administrative overheads: |Low |High |
 
