@@ -358,7 +358,7 @@ Although retention settings and [holds that you create with an eDiscovery case](
 
 Summary to compare retention with holds:
 
-|Capability|Retention |eDiscovery holds|
+||Retention |eDiscovery holds|
 |:-----|:-----|:-----|:-----|
 |Business need |Compliance |Legal |
 |Time scope |Long-term |Short-term |
