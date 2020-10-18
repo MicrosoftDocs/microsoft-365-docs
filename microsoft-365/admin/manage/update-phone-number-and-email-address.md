@@ -35,7 +35,7 @@ This article explains how you, the admin, can change your business phone and ema
   
 If you're looking for how to change your company's profile information, such as company name and address, company phone number, and technical contact information, see [Change your organization's address, technical contact email, and other information](change-address-contact-and-more.md).
   
-## To update your phone number, and email address
+## To update your phone number and email address
 
 Use the **Security Info** page to change your name, mobile phone number, and alternate email address. The alternate email address is used for important notifications, such as resetting your admin password (not your computer admin password). 
   
