@@ -62,12 +62,12 @@ management dashboard. To get started, you should be eligible for Office
 Business. For more information about the licensing requirements for
 Office 365 DLP, see [Which licenses provide the rights for a user to
 benefit from the
-service?](https://docs.microsoft.com/en-us/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
+service?](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
 Customers who participate in the [Endpoint
-DLP](https://docs.microsoft.com/en-us/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide)
+DLP](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide)
 public preview or who are eligible for [Teams
-DLP](https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide)
+DLP](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide)
 will see their endpoint DLP policy alerts and Teams DLP policy alerts in
 the DLP alert management dashboard.
 
@@ -119,8 +119,7 @@ an alert every time an activity matches the policy conditions or when a
 certain threshold is exceeded, based on the number of activities or
 based on the volume of exfiltrated data.
 
-If you're eligible for [single-event alert configuration
-options](#single-event-alert-configuration), then you see the following
+If you're eligible for [single-event alert configuration options](#licensing-for-alert-configuration-options), then you see the following
 alert configuration option in the DLP policy authoring experience. Use
 this option to create an alert that's raised every time a DLP rule match
 happens because of a user activity.
