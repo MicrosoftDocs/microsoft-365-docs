@@ -54,7 +54,7 @@ Alerts are triggered by policies when users perform activities related to policy
 Policy indicators are segmented into the following areas. You can choose the indicators to activate and customize indicator event limits for each indicator level when creating an insider risk policy:
 
 - **Office indicators**: These include policy indicators for SharePoint sites, Teams, and email messaging.
-- **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activity involving Microsoft Office files, .CSV files, and .PDF files. If you select **Device indicators**, activity is processed only for devices with Windows 10 Build 1809 or higher. For more information on configuring devices for integration with insider risk, see the following **Enable device indicators and onboard devices** section.
+- **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activity involving Microsoft Office files, .CSV files, and .PDF files. If you select **Device indicators**, activity is processed only for devices with Windows 10 Build 1809 or higher. For more information on configuring devices for integration with insider risk, see the following [Enable device indicators and onboard devices](insider-risk-management-settings.md#OnboardDevices) section.
 - **Security policy violation indicator**: These include indicators from Microsoft Defender ATP related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Microsoft Defender ATP license and insider risk integration enabled. For more information on configuring Microsoft Defender ATP for insider risk management integration, see [Configure advanced features in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Risk score boosters**: These include raising the risk score for unusual activities or past policy violations. Enabling risk score boosters increase risk scores and the likelihood of alerts for these types of activities. Risk score boosters can only be selected if one or more indicators above are selected.
 
@@ -68,8 +68,9 @@ To define the insider risk policy indicators that are enabled in all insider ris
 >It may take several hours for new manually-added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab on the details pane.
 
 ### Enable device indicators and onboard devices
+<a name="OnboardDevices"> </a>
 
-To enable the monitoring of risk activities on devices and include policy indicators for this activities, your devices must meet the folllowing requirements and you must complete the following onboarding steps.
+To enable the monitoring of risk activities on devices and include policy indicators for this activities, your devices must meet the following requirements and you must complete the following onboarding steps.
 
 #### Step 1: Prepare your endpoints
 
@@ -77,15 +78,16 @@ Make sure that the Windows 10 devices that you plan on reporting in insider risk
 
 1. Must be running Windows 10 x64 build 1809 or later.
 2. All devices must be [Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), or Hybrid Azure AD joined.
-3. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+3. Install Microsoft Chromium Edge browser on the endpoint device to monitor actions for the cloud upload activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 #### Step 2: Onboarding devices
+<a name="OnboardStep2"> </a>
 
-You must enable device monitoring and onboard your endpoints before you can monitor for insider risk manangement activities on a device. Both of these actions are done in the Microsoft 365 Compliance portal.
+You must enable device monitoring and onboard your endpoints before you can monitor for insider risk management activities on a device. Both of these actions are done in the Microsoft 365 Compliance portal.
 
-When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy it to those devices. Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
+When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy as outlined in the following steps.
 
-If you already have devices onboarded into [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/), they will already appear in the managed devices list. Follow the [With devices onboarded into Microsoft Defender for Endpoint procedure](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for-endpoint).
+If you already have devices onboarded into [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/), they will already appear in the managed devices list. Follow **Step 3: If you have devices onboarded into Microsoft Defender for Endpoint** in the next section.
 
 In this deployment scenario, you'll onboard devices that have not been onboarded yet, and you just want to monitor insider risk activities on Windows 10 devices.
 
@@ -109,18 +111,18 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
     - Onboard Windows 10 machines using a local script
     - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
 
-Once done and endpoint is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
+Once done and endpoint is onboarded, it should be visible in the devices list and the endpoint will start reporting audit activity logs to insider risk management.
 
 > [!NOTE]
 > This experience is under license enforcement. Without the required license, data will not be visible or accessible.
 
 #### Step 3: If you have devices onboarded into Microsoft Defender for Endpoint
 
-In this scenario, Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list. You can continue to onboard new devices into insider risk management to expand coverage by using the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
+If Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in, all these endpoints will appear in the managed devices list. You can continue to onboard new devices into insider risk management to expand coverage by using the [Step 2: Onboarding devices](insider-risk-management-settings.md#OnboardStep2) section.
 
 1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
 2. Open the Compliance Center settings page and choose **Enable device monitoring**.
-3. Choose **Device management** to open the **Devices** list. You should see the list of devices that are already reporting in to Microsoft Defender for Endpoint. ![device management](../media/endpoint-dlp-getting-started-2-device-management.png)
+3. Choose **Device management** to open the **Devices** list. You should see the list of devices that are already reporting in to Microsoft Defender for Endpoint.
 4. Choose **Onboarding** if you need to onboard additional devices.
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **Download package**.
 6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
@@ -130,7 +132,7 @@ In this scenario, Microsoft Defender for Endpoint is already deployed and there 
     - Onboard Windows 10 machines using a local script
     - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
 
-Once done and endpoint is onboarded, it should be visible under the **Devices** table and also start reporting audit logs to the **Activity Explorer**.
+Once done and endpoint is onboarded, it should be visible under the **Devices** table and the endpoint will start reporting audit activity logs to insider risk management.
 
 > [!NOTE]
 >This experience is under license enforcement. Without the required license, data will not be visible or accessible.
