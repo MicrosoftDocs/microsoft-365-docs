@@ -236,7 +236,7 @@ For these scenarios, using their Office apps, a user with built-in labeling can 
 ### Dynamic markings with variables
 
 > [!IMPORTANT]
-> Currently, not all apps on all platforms support dynamic content markings that you can specify for your headers, footers, and watermarks. These apps will apply the markings as the original text specified in the label configuration, rather than resolving the variables.
+> Currently, not all apps on all platforms support dynamic content markings that you can specify for your headers, footers, and watermarks. For apps that don't support this capability, they  apply the markings as the original text specified in the label configuration, rather than resolving the variables.
 > 
 > The Azure Information Protection unified labeling client supports dynamic markings. For support using built-in labeling, see the [capabilities tables](#support-for-sensitivity-label-capabilities-in-apps) on this page.
 
