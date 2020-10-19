@@ -306,7 +306,7 @@ The following views are available:
   - **Anti-spoof - external domain**: Sender trying to spoof some other domain.
   - **Brand impersonation**: Impersonation of well-known brands based on senders.
   - **Domain impersonation**<sup>1</sup>: Impersonation of domains that the customer owns or defines.
-  - **EOP URL reputation** : Malicious URL reputation
+  - **EOP URL reputation**: Malicious URL reputation.
   - **General phish filter**: Phishing signals based on analyst rules. 
   - **Others**
   - **Phish ZAP**<sup>2</sup>: Zero hour auto purge phish messages.
