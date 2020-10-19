@@ -18,7 +18,7 @@ ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Find Microsoft 365 PowerShell cmdlet reference topics for Azure AD, Exchange Online, SharePoint Online, Skype for Business Online, and Security & Compliance.
 ---
 
-# Cmdlet references for Microsoft 365 services
+# Cmdlet references for Microsoft 365 services 
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
