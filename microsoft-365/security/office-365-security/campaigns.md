@@ -14,8 +14,9 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid:
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 description: "Learn about Campaign Views in Office 365 Advanced Threat Protection."
 ---
 

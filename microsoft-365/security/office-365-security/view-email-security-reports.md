@@ -198,7 +198,7 @@ The following charts are available in the report view:
 
   ![Action view in the Spam detections report](../../media/spam-detections-report-action-view.png)
 
-- **Break down by:Direction**: The following directions are shown:
+- **Break down by: Direction**: The following directions are shown:
 
   - **Inbound**
   - **Outbound**
@@ -271,8 +271,8 @@ The report provides the count of email messages with malicious content, such as 
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Threat protection status**. To go directly to the report, open one of the following URLs:
 
-- Office 365 ATP: <https://protection.office.com/reportv2?id=ATPV2AggregateReport>.
-- EOP: <https://protection.office.com/reportv2?id=ATPAggregateLightReport>
+- Office 365 ATP: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- EOP: <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![Threat protection status widget in the Reports dashboard](../../media/threat-protection-status-report-widget.png)
 
@@ -296,6 +296,20 @@ The following views are available:
   - **File detonation**
 
   ![Content malware view in the Threat protection status report](../../media/threat-protection-status-report-content-malware-view.png)
+
+- **View data by: Message Override**: The following override reason information is shown:
+
+  - **On-premises skip**
+  - **IP Allow**
+  - **Mail flow rule**
+  - **Sender allow**
+  - **Domain allow**
+  - **ZAP not enabled**
+  - **Junk Mail folder not enabled**
+  - **User Safe Sender**
+  - **User Safe Domain**
+
+  ![Message override view in the Threat protection status report](../../media/threat-protection-status-report-message-override-view.png)
 
 - **Break down by: Detection technology** and **View data by: Email \> Phish**: The following information is shown:
 
@@ -356,16 +370,24 @@ The following views are available:
 
 <sup>2</sup> Zero-hour auto purge (ZAP) isn't available in standalone EOP (it only works in Exchange Online mailboxes).
 
-If you click **Filters**, you can modify the report with the following filters:
+If you click **Filters**, the filters available depends on the chart you were looking at:
+
+For **Content \> Malware**, you can modify the report by **Start date** and **End date**, and the **Detection** value.
+
+For **Message Override**, you can modify the report with the following filters:
+
+- **Start date** and **End date**
+- **Override Reason**
+- **Tag**: filter by tag to return users or groups that have had a specific tag applied. For more information about user tags, see [User tags](user-tags.md).
+- **Domain**
+
+For all other views, you can modify the report with the following filters:
 
 - **Start date** and **End date**
 - **Detection**
 - **Protected by**: **ATP** or **EOP**
 - **Tag**: filter by tag to return users or groups that have had a specific tag applied. For more information about user tags, see [User tags](user-tags.md).
 - **Domain**
-
-> [!NOTE]
-> **Protected by**, **Tag** and **Domain** are Office 365 ATP only. These filterable properties are not available in **View data by: Content \> Malware**.
 
 ### Details table view for the Threat protection status report
 
@@ -378,10 +400,26 @@ If you click **View details table**, the information that's shown depends on the
   - **Directed by**
   - **Malware name**
 
+If you click **Filters** in this view, you can modify the report by **Start date** and **End date**, and the **Detection** value.
+
+- **View data by: Message Override**:
+
+  - **Date**
+  - **Subject**
+  - **Sender**
+  - **Recipients**
+  - **Detected by**
+  - **Override Reason**
+  - **Source of Compromise**
+  - **Tags**
+
 If you click **Filters** in this view, you can modify the report with the following filters:
 
 - **Start date** and **End date**
-- **Detection**
+- **Override Reason**
+- **Tag**: filter by tag to return users or groups that have had a specific tag applied. For more information about user tags, see [User tags](user-tags.md).
+- **Domain**
+- **Recipients** (Note that this filterable property is only available in the details table view)
 
 **View data by: Overview**: No **View details table** button is available.
 
@@ -392,8 +430,8 @@ If you click **Filters** in this view, you can modify the report with the follow
   - **Sender**
   - **Recipients**
   - **Detected by**
-  - **Delivery status**
-  - **Source of compromise**
+  - **Delivery Status**
+  - **Source of Compromise**
   - **Tags**
 
 If you click **Filters**, you can modify the report with the following filters:
