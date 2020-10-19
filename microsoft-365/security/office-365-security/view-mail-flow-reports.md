@@ -315,13 +315,23 @@ The data table contains the following information, shown in descending date orde
 
 - **Date**
 - **Total email**
-- **Edge protection** : These are email messages that were filtered out by the Microsoft edge browser.  
-- **Anti-malware, file reputation, file type block**: for file reputation, these are email messages filtered out due to its bad file reputation identified on other microsoft customer tenants. for file type block, these are email messages filtered out due to the type of malicious file identified in the message.      
-- **Anti-phish, URL reputation, Brand impersonation, anti-spoof** : for URL reputation, these are email messages filtered out due to its bad URL reputation identified on other microsoft customer tenants. for Brand impersonation, these are email messages filtered out due to the email messages coming from well-known brand impersonating senders. for anti-spoof, this are email messages filtered out due to the email message attempting to spoof a domain the recipient belongs to or a domain the sender of the message doesnt own.  
-- **Anti-spam, bulk mail filtering** for bulk mail filtering, these are email messages filtered out due to it attempting to deliver a bulk mail to its recipients. 
-- **User and domain impersonation (ATP)**: for user impersonation, these are email messages filtered out due to it attempting to impersonate a user while domain impersonation are email messages filtered out due to it attempting to impersonate a domain a customer owns. 
-- **File and URL detonation (ATP)**: for file detonation, these are email messages filtered out due to it being identified as bad by the safe attachment policy. while URL detonations are email messages filtered out due detonation within the customer tenant and the results are bad.  
-- **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**: ZAP here indicates Zero hour auto-purge
+- **Edge protection** 
+- **Anti-malware, file reputation, file type block**:
+  - **File reputation**: Messages filtered due to identification of an attached file by other Microsoft customers.
+  - **File type block**: Messages filtered due to the type of malicious file identified in the message.      
+- **Anti-phish, URL reputation, Brand impersonation, anti-spoof**:
+  - **URL reputation**: Messages filtered due to the identification of the URL by other Microsoft customers.
+  - **Brand impersonation**: Messages filtered due to the message coming from well-known brand impersonating senders.
+  - **Anti-spoof**: Messages filtered due to the message attempting to spoof a domain that the recipient belongs to, or a domain that the message sender doesn't own.  
+- **Anti-spam, bulk mail filtering**:
+  - **Bulk mail filtering**: Messages filtered due to an attempt to deliver bulk mail to its recipients. 
+- **User and domain impersonation (ATP)**:
+  - **User impersonation**: Messages filtered due to an attempt to impersonate a user (message sender) that's defined in the impersonation protection settings of an anti-phishing policy.
+  - **Domain impersonation**: Messages filtered due to an attempt to impersonate a domain that's defined in the impersonation protection settings of an anti-phishing policy. 
+- **File and URL detonation (ATP)**:
+  - **File detonation**: Messages filtered by a Safe Attachments policy.
+  - **URL detonation**: Message filtered by a Safe Links policy.  
+- **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**: ZAP indicates zero hour auto-purge.
 
 If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.
 
@@ -373,8 +383,10 @@ The data table contains the following information, shown in descending date orde
 - **Date**
 - **Total email**
 - **Edge filtered**
-- **Anti-malware engine, safe attachments, rule filtered**: for rule filtered, these are email messages filtered out due to the transport rules the organization has configured.
-- **DMARC, impersonation, spoof, phish filtered**: for DMARC, These are email messages filtered out due to the messages failing its DMARC Authentication check. 
+- **Anti-malware engine, safe attachments, rule filtered**:
+  - **Rule filtered**: Messages filtered due to  mail flow rules (also known as transport rules).
+- **DMARC, impersonation, spoof, phish filtered**:
+  - **DMARC**: Messages filtered due to the message failing its DMARC authentication check. 
 - **URL detonation detection**
 - **Anti-spam filtered**
 - **ZAP removed**
