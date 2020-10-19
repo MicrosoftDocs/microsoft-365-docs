@@ -21,28 +21,27 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Learn about email and file properties that you can search in the Office 365 Security & Compliance Center.
+description: Learn about email and file properties that you can search by using the search and eDiscovery tools in Microsoft 365.
 ---
 
-# Keyword queries and search conditions for Content Search
+# Keyword queries and search conditions for Content Search and eDiscovery
 
-This topic describes the email and document properties that you can search for in email items in Exchange Online and documents stored on SharePoint and OneDrive for Business sites by using the Content Search feature in the Security & Compliance Center. You can also use the **\*-ComplianceSearch** cmdlets in Security & Compliance Center PowerShell to search for these properties. The topic also describes:   
+This topic describes the email and document properties that you can search for in email items in Exchange Online and documents stored on SharePoint and OneDrive for Business sites by using the Content Search feature in the Microsoft 365 compliance center. You can also use the **\*-ComplianceSearch** cmdlets in Security & Compliance Center PowerShell to search for these properties. The topic also describes:
   
 - Using Boolean search operators, search conditions, and other search query techniques to refine your search results.
-    
-- Searching for sensitive data types and custom sensitive data types in SharePoint and OneDrive for Business.
-    
-- Searching for site content that's shared with users outside of your organization
-    
-For step-by-step instructions on how to create a Content Search, see [Content Search in Office 365](content-search.md).
 
-  
+- Searching for sensitive data types and custom sensitive data types in SharePoint and OneDrive for Business.
+
+- Searching for site content that's shared with users outside of your organization
+
+For step-by-step instructions on how to create a Content Search, see [Content Search](content-search.md).
+
 > [!NOTE]
-> Content Search in the Security & Compliance Center and the corresponding **\*-ComplianceSearch** cmdlets in Security & Compliance Center PowerShell use the Keyword Query Language (KQL). For more detailed information, see [Keyword Query Language syntax reference](https://go.microsoft.com/fwlink/?LinkId=269603). 
+> Content Search in the Microsoft 365 compliance center and the corresponding **\*-ComplianceSearch** cmdlets in Security & Compliance Center PowerShell use the Keyword Query Language (KQL). For more detailed information, see [Keyword Query Language syntax reference](https://go.microsoft.com/fwlink/?LinkId=269603). 
   
 ## Searchable email properties
 
-The following table lists email message properties that can be searched by using the Content Search feature in the Security & Compliance Center or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet. The table includes an example of the  _property:value_ syntax for each property and a description of the search results returned by the examples. You can type these  `property:value` pairs in the keywords box for a Content Search. 
+The following table lists email message properties that can be searched by using the Content Search feature in the Microsoft 365 compliance center or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet. The table includes an example of the  _property:value_ syntax for each property and a description of the search results returned by the examples. You can type these  `property:value` pairs in the keywords box for a Content Search. 
 
 > [!NOTE]
 > When searching email properties, it's not possible to search for items in which the specified property is empty or blank. For example, using the *property:value* pair of **subject:""** to search for email messages with an empty subject line will return zero results. This also applies when searching site and contact properties.
@@ -107,13 +106,13 @@ For a complete list of SharePoint properties that can be searched, see [Overview
 |Size|The size of an item, in bytes.|`size>=1`  <br/> `size:1..10000`|The first example returns items larger than 1 byte. The second example returns items from 1 through 10,000 bytes in size.|
 |Title|The title of the document. The Title property is metadata that's specified in Microsoft Office documents. It's different from the file name of the document.|`title:"communication plan"`|Any document that contains the phrase "communication plan" in the Title metadata property of an Office document.|
 |||||
-   
+
 ## Searchable contact properties
 
 The following table lists the contact properties that are indexed and that you can search for using Content Search. These are the properties that are available for users to configure for the contacts (also called personal contacts) that are located in the personal address book of a user's mailbox. To search for contacts, you can select the mailboxes to search and then use one or more contact properties in the keyword query.
   
 > [!TIP]
-> To search for values that contain spaces or special characters, use double quotation marks ("  ") to contain the phrase; for example,  `businessaddress:"123 Main Street"`. 
+> To search for values that contain spaces or special characters, use double quotation marks ("  ") to contain the phrase; for example, `businessaddress:"123 Main Street"`.
   
 |**Property**|**Property description**|
 |:-----|:-----|
@@ -139,18 +138,19 @@ The following table lists the contact properties that are indexed and that you c
 
 ## Searchable sensitive data types
 
-You can use the Content Search feature in the security and compliance center to search for sensitive data, such as credit card numbers or social security numbers, that is stored in documents on SharePoint and OneDrive for Business sites. You can do this by using the  `SensitiveType` property and the name of a sensitive information type in a keyword query. For example, the query  `SensitiveType:"Credit Card Number"` returns documents that contain a credit card number. The query  `SensitiveType:"U.S. Social Security Number (SSN)"` returns documents that contain a U.S. social security number. To see a list of the sensitive data types that you can search for, go to **Classifications** \> **Sensitive information types** in the Security & Compliance Center. Or you can use the **Get-DlpSensitiveInformationType** cmdlet in the Security & Compliance Center PowerShell to display a list of sensitive information types. 
-  
-You can also use the  `SensitiveType` property to search for the name of a custom sensitive information type that you (or another administrator) created for your organization. You can use the **Publisher** column on the **Sensitive information types** page in the Security & Compliance Center (or the **Publisher** property in PowerShell) to differentiate between built-in and custom sensitive information types. For more information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).
+You can use the Content Search feature in the compliance center to search for sensitive data, such as credit card numbers or social security numbers, that is stored in documents on SharePoint and OneDrive for Business sites. You can do this by using the `SensitiveType` property and the name of a sensitive information type in a keyword query. For example, the query `SensitiveType:"Credit Card Number"` returns documents that contain a credit card number. The query  `SensitiveType:"U.S. Social Security Number (SSN)"` returns documents that contain a U.S. social security number. To see a list of the sensitive data types that you can search for, go to **Data classifications** \> **Sensitive info types** in the Microsoft 365 compliance center. Or you can use the **Get-DlpSensitiveInformationType** cmdlet in Security & Compliance Center PowerShell to display a list of sensitive information types.
   
 For more information about creating queries using the  `SensitiveType` property, see [Form a query to find sensitive data stored on sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
 
-> [!NOTE]
-> You can't use Sensitive data types and the `SensitiveType` search property to search for sensitive data at-rest in Exchange Online mailboxes. However, you can use data loss prevention (DLP) policies to protect sensitive emaill data in transit. For more information, see [Overview of data loss prevention policies](data-loss-prevention-policies.md) and [Search for and find personal data](search-for-and-find-personal-data.md).
+### Limitations for searching sensitive data types
+
+- You can only use the `SensitiveType` property to search for built-in sensitive info data types. You can't search for custom sensitive data types that you (or another administrator) created for your organization. Use the **Publisher** column on the **Sensitive info types** tab in the compliance center (or the **Publisher** property in PowerShell) to differentiate between built-in and custom sensitive information types. Built-in sensitive data types are identified by the **Microsoft Corporation** value in the **Publisher** column.
+  
+- You can't use sensitive info data types and the `SensitiveType` search property to search for sensitive data at-rest in Exchange Online mailboxes. However, you can use data loss prevention (DLP) policies to protect sensitive email data in transit. For more information, see [Overview of data loss prevention policies](data-loss-prevention-policies.md) and [Search for and find personal data](search-for-and-find-personal-data.md).
   
 ## Search operators
 
-Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define more-precise searches by including or excluding specific words in the search query. Other techniques, such as using property operators (such as \>= or ..), quotation marks, parentheses, and wildcards, help you refine a search query. The following table lists the operators that you can use to narrow or broaden search results. 
+Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define more-precise searches by including or excluding specific words in the search query. Other techniques, such as using property operators (such as `>=` or `..`), quotation marks, parentheses, and wildcards, help you refine a search query. The following table lists the operators that you can use to narrow or broaden search results. 
   
 |**Operator**|**Usage**|**Description**|
 |:-----|:-----|:-----|
