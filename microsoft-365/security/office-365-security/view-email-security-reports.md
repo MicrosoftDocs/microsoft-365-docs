@@ -301,7 +301,7 @@ The following views are available:
 
   - **ATP-generated URL reputation**<sup>1</sup>: Malicious URL reputation generated from ATP detonations amongst other ATP customers.
   - **Advanced phish filter**: Phishing signals based on machine learning.
-  - **Anti-spoof: DMARC failure**: DMARC authentication failure on messages
+  - **Anti-spoof - DMARC failure**: DMARC authentication failure on messages.
   - **Anti-spoof: Intra-org**: sender attempting to spoof the recipient domain 
   - **Anti-spoof: external domain**: Sender trying to spoof some other domain.
   - **Brand impersonation**: Impersonation of well-known brands based on senders.
