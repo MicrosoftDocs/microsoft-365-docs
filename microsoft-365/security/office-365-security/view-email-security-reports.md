@@ -309,7 +309,7 @@ The following views are available:
   - **EOP URL reputation** : Malicious URL reputation
   - **General phish filter**: Phishing signals based on analyst rules. 
   - **Others**
-  - **Phish ZAP**<sup>2</sup>: Zero hour auto purge phish messages 
+  - **Phish ZAP**<sup>2</sup>: Zero hour auto purge phish messages.
   - **URL detonation**<sup>1</sup>
   - **User impersonation**<sup>1</sup> :Impersonation of users defined by admin or learned through mailbox intelligence 
 
