@@ -233,7 +233,7 @@ Scenarios that include applying a sensitivity label outside Office apps include:
 
 For these scenarios, using their Office apps, a user with built-in labeling can apply the label's content markings by temporarily removing or replacing the current label and then reapplying the original label.
 
-### Dynamic visual markings with variables
+### Dynamic markings with variables
 
 > [!IMPORTANT]
 > Currently, not all apps on all platforms support dynamic visual markings that you can specify for your headers, footers, and watermarks. These apps will apply the visual marking text as the original text specified for the label configuration, rather than resolving the variables.
