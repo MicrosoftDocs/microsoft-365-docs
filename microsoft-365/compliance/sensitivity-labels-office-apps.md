@@ -236,11 +236,11 @@ For these scenarios, using their Office apps, a user with built-in labeling can 
 ### Dynamic markings with variables
 
 > [!IMPORTANT]
-> Currently, not all apps on all platforms support dynamic visual markings that you can specify for your headers, footers, and watermarks. These apps will apply the visual marking text as the original text specified for the label configuration, rather than resolving the variables.
+> Currently, not all apps on all platforms support dynamic markings that you can specify for your headers, footers, and watermarks. These apps will apply the visual marking text as the original text specified for the label configuration, rather than resolving the variables.
 > 
 > The Azure Information Protection unified labeling client supports dynamic visual markings, and for built-in labeling, see the [capabilities tables](#support-for-sensitivity-label-capabilities-in-apps).
 
-When you configure a sensitivity label for visual markings, you can use the following variables in the text string for your header, footer, or watermark:
+When you configure a sensitivity label for content markings, you can use the following variables in the text string for your header, footer, or watermark:
 
 - `${Item.Label}` for the current label display name. For example: **General**
 
