@@ -250,7 +250,7 @@ When you configure a sensitivity label for content markings, you can use the fol
 
 - `${User.Name}` for the current owner of the document or email, by the Windows signed in user name. For example: **rsimone**
 
-- `${User.PrincipalName}` for the current owner of the document or email, by the user's Azure AD user principal name (UPN). For example: rsimone@vanarsdelltd.com
+- `${User.PrincipalName}` for the current owner of the document or email, by the user's Azure AD user principal name (UPN). For example:  **rsimone@vanarsdelltd.com**
 
 - `${Event.DateTime}` for the current date and time for the local time zone. For example: **8/10/2020 1:30 PM**
 
