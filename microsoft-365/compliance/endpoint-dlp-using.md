@@ -65,7 +65,7 @@ When a policy's **Access by unallowed apps and browsers** setting is turned on a
 
 ### Unallowed browsers
 
-You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced  a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
+You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
 
 [!IMPORTANT]
 Do not include the path to the executable, but only the executable name (i.e. browser.exe).
