@@ -70,7 +70,7 @@ To define the insider risk policy indicators that are enabled in all insider ris
 ### Enable device indicators and onboard devices
 <a name="OnboardDevices"> </a>
 
-To enable the monitoring of risk activities on devices and include policy indicators for this activities, your devices must meet the following requirements and you must complete the following onboarding steps.
+To enable the monitoring of risk activities on devices and include policy indicators for these activities, your devices must meet the following requirements and you must complete the following onboarding steps.
 
 #### Step 1: Prepare your endpoints
 
