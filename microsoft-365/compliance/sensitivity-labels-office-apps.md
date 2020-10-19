@@ -244,7 +244,7 @@ When you configure a sensitivity label for content markings, you can use the fol
 
 | Variable | Description | Example |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Current label display name | **rsimone@vanarsdelltd.com**
+| `${Item.Label}` | Current label display name | **rsimone\@vanarsdelltd.com**
 
 
 
