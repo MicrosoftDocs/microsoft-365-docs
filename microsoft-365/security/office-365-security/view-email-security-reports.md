@@ -303,7 +303,7 @@ The following views are available:
   - **Advanced phish filter**: Phishing signals based on machine learning.
   - **Anti-spoof - DMARC failure**: DMARC authentication failure on messages.
   - **Anti-spoof: Intra-org**: sender attempting to spoof the recipient domain 
-  - **Anti-spoof: external domain**: Sender trying to spoof some other domain.
+  - **Anti-spoof - external domain**: Sender trying to spoof some other domain.
   - **Brand impersonation**: Impersonation of well-known brands based on senders.
   - **Domain impersonation**<sup>1</sup>: Impersonation of domains that the customer owns or defines.
   - **EOP URL reputation** : Malicious URL reputation
