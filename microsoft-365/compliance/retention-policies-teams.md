@@ -27,7 +27,7 @@ The information in this article supplements [Learn about retention](retention.md
 
 ## What's included for retention and deletion
 
-The following Teams items can be retained and deleted by using retention policies: Chats and channel messages.
+The following Teams items can be retained and deleted by using retention policies: Chats and channel messages, including [card content](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards).
 
 Teams messages in private channels are not included and reactions from others in the form of emoticons are not included.
 
