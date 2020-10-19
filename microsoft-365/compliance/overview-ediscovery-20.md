@@ -24,14 +24,65 @@ ms.custom: seo-marvel-apr2020
 
 # Overview of the Advanced eDiscovery solution in Microsoft 365
 
-The Advanced eDiscovery solution in Microsoft 365 builds on the existing eDiscovery and analytics capabilities in Office 365. This new solution, called *Advanced eDiscovery*, provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case. 
+The Advanced eDiscovery solution in Microsoft 365 builds on the existing Microsoft eDiscovery and analytics capabilities. Advanced eDiscovery provides an end-to-end workflow to preserve, collect, analyze, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
+
+## Why use Advanced eDiscovery?
+
+Advanced eDiscovery can help your organization respond to legal matters or internal investigations by discovering data where it lives. You can seamlessly manage eDiscovery workflows by identifying persons of interest and their data sources, seamlessly apply holds to preserve data, and then manage the legal hold communication process. By collecting data from the source, you can search the live Microsoft 365 platform to quickly find what you need. Intelligent, machine learning capabilities such as deep indexing, email threading, and near duplicate detection further help you to reduce large volumes of data to a relevant data set. 
+
+Here's how Advanced eDiscovery can help your organization.
+
+### Discover and collect data in-place
+
+Traditionally, organizations that rely on multiple 3rd party eDiscovery solutions require copying large volumes of data out of Microsoft 365 to process and host duplicate data - increasing the time to find relevant data, and the risk, cost, and complexity of managing multiple solutions. 
+
+Advanced eDiscovery helps organizations to discover data at the source, while staying within their Microsoft 365 security and compliance boundary.  
+
+By collecting data in-place and from a live system, Advanced eDiscovery reduces the friction of going back to the source and reduces unnecessary work to find missing content, which often occurs due to journaling lags in traditional eDiscovery solutions. 
+
+Native eDiscovery capabilities for data in Teams, Yammer, SharePoint Online, OneDrive for Business, and Exchange Online further enhances data discovery. For example,  Advanced eDiscovery:
+
+   - Reconstructs Teams conversations (instead of returning individual messages from conversations)
+   
+   - Collects cloud-based content shared with users by use of links or modern attachments in email message and Teams chats
+   
+   - Has built-in support for hundreds of non-Microsoft 365 file types out of the box and 
+   
+   - Collects data from third-party sources (such as Bloomberg, Facebook, Slack, and Zoom Meetings) that's imported and archived in Microsoft 365 by data connectors
+
+
+
+### Manage workflows seemlessly
+
+By 2023, more than 70% of enterprise IT leaders will upgrade to end-to-end e-discovery software to
+reduce time and legal spend, up from 10% in 2019 (Gartner, 2019)
+
+Advanced eDiscovery, can help organizations reduce the number of eDiscovery vendors they need to rely on and  streamline to a more end to end eDiscovery workflow (identify, preserve, collect, process, conduct early case assessment/review, and analyze data) within Microsoft 365.  
+
+To help streamline the workflow, Advanced eDiscovery helps reduce the friction of identifying and collecting potential sources of relevant information by automatically mapping back unique and shared data sources to the person of interest (custodian), and by providing reporting and analytics on the contents of your data prior to collection– two common areas of pain for customers. 
+
+Transparent and defensible reporting provide visibility needed to defend the process.
+
+Rich Graph APIs help automate workflows and extend for custom solutions (currently in public preview).
+
+
+
+### Cull data intelligently
+
+With data continuing to grow exponentially, intelligent, machine learning capabilities help reduce the burden of review that traditionally happens one document at a time. 
+
+Advanced eDiscovery provides a broad set of intelligent capabilities to help customers reduce and cull large volumes of data to a relevant set. For example, an automatically generated query helps filter only for unique content by identifying near duplicates which can help dramatically reduce data. 
+
+Additional intelligent, machine learning capabilities can further refine and identify relevant data using smart tags and technology assisted review tools like Relevance modules. 
+
+
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 or Microsoft 365 E5 Enterprise subscription. For more information about Advanced eDiscovery licensing, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery).
 
 ## Alignment with EDRM
 
-The built-in workflow of Advanced eDiscovery aligns with the eDiscovery process outlined by the Electronic Discovery Reference Model (EDRM). 
+The built-in workflow of Advanced eDiscovery aligns with the eDiscovery process outlined by the Electronic Discovery Reference Model (EDRM).
 
 ![The Electronic Discovery Reference Model (EDRM)](../media/EDRMv1.png)
 
