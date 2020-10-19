@@ -369,27 +369,23 @@ Summary to compare retention with holds:
 
 If content is subject to both retention settings and an eDiscovery hold, preserving content for the eDiscovery hold always takes precedence. In this way, the [principles of retention](#the-principles-of-retention-or-what-takes-precedence) expand to eDiscovery holds because they preserve data until an administrator manually releases the hold. However, despite this precedence, don't use eDiscovery holds for long-term information governance. If you are concerned about automatic deletion of data, you can configure retention settings to retain items forever, or use [disposition review](disposition.md#disposition-reviews) with retention labels.
 
+If you are using older eDiscovery tools to preserve data, see the following resources:
+
+- [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/?linkid=846124)
+
+- [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md)
+
 ## Use retention policies and retention labels instead of older features
 
 If you need to proactively retain or delete content in Microsoft 365 for information governance, we recommend that you use retention policies and retention labels instead of the following older features. 
-  
 If you currently use these older features, they will continue to work side-by-side with retention policies and retention labels. However, we recommend that going forward, you use retention policies and retention labels instead. They provide you with a single mechanism to centrally manage both retention and deletion of content across Microsoft 365.
 
 **Older features from Exchange Online:**
 
-- [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/?linkid=846124) (eDiscovery hold) 
-
-- [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md)
-    
 - [Retention tags and retention policies](https://go.microsoft.com/fwlink/?linkid=846125), also known as [messaging records management (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (deletion only)
-    
-See also [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
-
 
 **Older features from SharePoint and OneDrive:**
 
-- [Add content to a case and place sources on hold in the eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (eDiscovery hold) 
-    
 - [Document deletion policies](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (deletion only)
     
 - [Configuring in place records management](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (retention only) 
@@ -398,10 +394,6 @@ See also [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md
     
 - [Information management policies](intro-to-info-mgmt-policies.md) (deletion only)
      
-If you've previously used any of the eDiscovery holds for the purpose of information governance, for proactive compliance, use a retention policy instead. Use eDiscovery for holds only.
-  
-### Retention policies and SharePoint content type policies or information management policies
-
 If you have configured SharePoint sites for content type policies or information management policies to retain content for a list or library, those policies are ignored while a retention policy is in effect. 
 
 ## Related information
