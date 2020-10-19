@@ -54,6 +54,7 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Dynamic visual markings with variables](#dynamic-visual-markings-with-variables)                                              | Preview: [Beta Channel and Current Channel (Preview)](https://office.com/insider)           | 16.42+     | 2.42+ | 16.0.13328+ | Under review |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003+) | 16.35+   | Under review   | Under review         | Under review                                                        |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
@@ -71,6 +72,7 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
+|[Dynamic visual markings with variables](#dynamic-visual-markings-with-variables)                                              | Under review                     | Under review                 | Under review         | Under review           | Under review               |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review                       | Under review                    | Under review           | Under review               | Under review               |
@@ -203,6 +205,31 @@ However, the automatic guest account is not created immediately because of repli
 
 > [!TIP]
 > Because you can't be sure that external users will be using a supported Office client app, sharing links from SharePoint and OneDrive after creating guest accounts is a more reliable method to support secure collaboration with external users.
+
+## Dynamic visual markings with variables
+
+> [!IMPORTANT]
+> Currently, not all apps on all platforms support dynamic visual markings that you can specify for your headers, footers, and watermarks. These apps will apply the visual marking text as the original text specified for the label configuration, rather than resolving the variables.
+> 
+> The Azure Information Protection unified labeling client supports dynamic visual markings, and for built-in labeling, see the [capabilities tables](#support-for-sensitivity-label-capabilities-in-apps).
+
+When you configure a sensitivity label for visual markings, you can use the following variables in the text string for your header, footer, or watermark:
+
+- `${Item.Label}` for the selected label. For example: **General**
+
+- `${Item.Name}` for the file name or email subject. For example: **JulySales.docx**
+
+- `${Item.Location}` for the path and file name for documents, and the email subject for emails. For example: **\\\Sales\2016\Q3\JulyReport.docx**
+
+- `${User.Name}` for the owner of the document or email, by the Windows signed in user name. For example: **rsimone**
+
+- `${User.PrincipalName}` for the owner of the document or email, by the Microsoft 365 signed in email address (UPN). For example: **rsimone@vanarsdelltd.com**
+
+- `${Event.DateTime}` for the date and time for the local timezone when the selected label was applied. For example: **8/10/2020 1:30 PM**
+
+> [!NOTE]
+> The syntax for these variables is case-sensitive.
+
 
 ## When Office apps apply content marking and encryption
 
