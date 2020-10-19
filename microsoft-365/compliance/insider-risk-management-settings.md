@@ -87,7 +87,7 @@ You must enable device monitoring and onboard your endpoints before you can moni
 
 When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy as outlined in the following steps.
 
-If you already have devices onboarded into [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/), they will already appear in the managed devices list. Follow **Step 3: If you have devices onboarded into Microsoft Defender for Endpoint** in the next section.
+If you already have devices onboarded into [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/), they will already appear in the managed devices list. Follow [Step 3: If you have devices onboarded into Microsoft Defender for Endpoint](insider-risk-management-settings.md#OnboardStep3) in the next section.
 
 In this deployment scenario, you'll onboard devices that have not been onboarded yet, and you just want to monitor insider risk activities on Windows 10 devices.
 
@@ -117,6 +117,7 @@ Once done and endpoint is onboarded, it should be visible in the devices list an
 > This experience is under license enforcement. Without the required license, data will not be visible or accessible.
 
 #### Step 3: If you have devices onboarded into Microsoft Defender for Endpoint
+<a name="OnboardStep3"> </a>
 
 If Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in, all these endpoints will appear in the managed devices list. You can continue to onboard new devices into insider risk management to expand coverage by using the [Step 2: Onboarding devices](insider-risk-management-settings.md#OnboardStep2) section.
 
