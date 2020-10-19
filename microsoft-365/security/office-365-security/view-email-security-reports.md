@@ -311,7 +311,7 @@ The following views are available:
   - **Others**
   - **Phish ZAP**<sup>2</sup>: Zero hour auto purge phish messages.
   - **URL detonation**<sup>1</sup>
-  - **User impersonation**<sup>1</sup> :Impersonation of users defined by admin or learned through mailbox intelligence 
+  - **User impersonation**<sup>1</sup>: Impersonation of users defined by admin or learned through mailbox intelligence.
 
   ![Detection technology view for phishing email in the Threat protection status report](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
