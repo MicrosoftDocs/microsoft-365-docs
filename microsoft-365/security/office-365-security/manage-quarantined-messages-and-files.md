@@ -90,6 +90,13 @@ You view and manage quarantined messages in the Security & Compliance Center or 
      - **Malware**
      - **Spam**
      - **High Confidence Phish**
+     
+   - **Policy Type**: Filter messages by policy type:
+     - **Anti-malware policy**
+     - **Safe Attachments policy**
+     - **Anti-phish policy**
+     - **Hosted content filter policy**
+     - **Transport rule**
 
    - **Email recipient**: All users or only messages sent to you. End users can only manage quarantined messages sent to them.
 
@@ -102,6 +109,8 @@ You view and manage quarantined messages in the Security & Compliance Center or 
      For example, you used [message trace](message-trace-scc.md) to look for a message that was sent to a user in your organization, and you determine that the message was quarantined instead of delivered. Be sure to include the full message ID value, which might include angle brackets (\<\>). For example: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
 
    - **Sender email address**: A single sender's email address.
+
+   - **Policy name**: Use the entire policy name of the message. The search is not case-sensitive.
 
    - **Recipient email address**: A single recipient's email address.
 
