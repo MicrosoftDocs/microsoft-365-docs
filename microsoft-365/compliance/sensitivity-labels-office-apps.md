@@ -206,31 +206,6 @@ However, the automatic guest account is not created immediately because of repli
 > [!TIP]
 > Because you can't be sure that external users will be using a supported Office client app, sharing links from SharePoint and OneDrive after creating guest accounts is a more reliable method to support secure collaboration with external users.
 
-## Dynamic visual markings with variables
-
-> [!IMPORTANT]
-> Currently, not all apps on all platforms support dynamic visual markings that you can specify for your headers, footers, and watermarks. These apps will apply the visual marking text as the original text specified for the label configuration, rather than resolving the variables.
-> 
-> The Azure Information Protection unified labeling client supports dynamic visual markings, and for built-in labeling, see the [capabilities tables](#support-for-sensitivity-label-capabilities-in-apps).
-
-When you configure a sensitivity label for visual markings, you can use the following variables in the text string for your header, footer, or watermark:
-
-- `${Item.Label}` for the selected label. For example: **General**
-
-- `${Item.Name}` for the file name or email subject. For example: **JulySales.docx**
-
-- `${Item.Location}` for the path and file name for documents, and the email subject for emails. For example: **\\\Sales\2016\Q3\JulyReport.docx**
-
-- `${User.Name}` for the owner of the document or email, by the Windows signed in user name. For example: **rsimone**
-
-- `${User.PrincipalName}` for the owner of the document or email, by the Microsoft 365 signed in email address (UPN). For example: **rsimone@vanarsdelltd.com**
-
-- `${Event.DateTime}` for the date and time for the local timezone when the selected label was applied. For example: **8/10/2020 1:30 PM**
-
-> [!NOTE]
-> The syntax for these variables is case-sensitive.
-
-
 ## When Office apps apply content marking and encryption
 
 Office apps apply content marking and encryption with a sensitivity label differently, depending on the app you use.
@@ -257,6 +232,31 @@ Scenarios that include applying a sensitivity label outside Office apps include:
 - Microsoft Cloud App Security
 
 For these scenarios, using their Office apps, a user with built-in labeling can apply the label's content markings by temporarily removing or replacing the current label and then reapplying the original label.
+
+### Dynamic visual markings with variables
+
+> [!IMPORTANT]
+> Currently, not all apps on all platforms support dynamic visual markings that you can specify for your headers, footers, and watermarks. These apps will apply the visual marking text as the original text specified for the label configuration, rather than resolving the variables.
+> 
+> The Azure Information Protection unified labeling client supports dynamic visual markings, and for built-in labeling, see the [capabilities tables](#support-for-sensitivity-label-capabilities-in-apps).
+
+When you configure a sensitivity label for visual markings, you can use the following variables in the text string for your header, footer, or watermark:
+
+- `${Item.Label}` for the selected label. For example: **General**
+
+- `${Item.Name}` for the file name or email subject. For example: **JulySales.docx**
+
+- `${Item.Location}` for the path and file name for documents, and the email subject for emails. For example: **\\\Sales\2016\Q3\JulyReport.docx**
+
+- `${User.Name}` for the owner of the document or email, by the Windows signed in user name. For example: **rsimone**
+
+- `${User.PrincipalName}` for the owner of the document or email, by the Microsoft 365 signed in email address (UPN). For example: **rsimone@vanarsdelltd.com**
+
+- `${Event.DateTime}` for the date and time for the local timezone when the selected label was applied. For example: **8/10/2020 1:30 PM**
+
+> [!NOTE]
+> The syntax for these variables is case-sensitive.
+
 
 ## End-user documentation
 
