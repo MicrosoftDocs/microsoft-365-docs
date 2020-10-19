@@ -246,7 +246,7 @@ When you configure a sensitivity label for content markings, you can use the fol
 
 - `${Item.Name}` for the current file name or email subject. For example: **JulySales.docx**
 
-- `${Item.Location}` for the current path and file name for documents, and the email subject for emails. For example: **\\\Sales\2016\Q3\JulyReport.docx**
+- `${Item.Location}` for the current path and file name for documents, and the email subject for emails. For example: **\\\Sales\2020\Q3\JulyReport.docx**
 
 - `${User.Name}` for the current owner of the document or email, by the Windows signed in user name. For example: **rsimone**
 
