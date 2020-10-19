@@ -245,11 +245,11 @@ When you configure a sensitivity label for content markings, you can use the fol
 | Variable | Description | Example when label applied |
 | -------- | ----------- | ------- |
 | `${Item.Label}` | Current label display name | **rsimone\@contoso.com**|
-| `${Item.Name}` | Current file name or email subject | General |
-| `${Item.Location}` | Current path and file name of the document, or the email subject for an email | \\\Sales\2020\Q3\JulyReport.docx|
-| `${User.Name}` | Current owner of the document or email, by the Windows signed in user name | rsimone |
-| `${User.PrincipalName}` | Current owner of the document or email, by the user's Azure AD user principal name (UPN) | rsimone@contoso.com |
-| `${Event.DateTime}` | Current date and time for the local time zone | 8/10/2020 1:30 PM |
+| `${Item.Name}` | Current file name or email subject | **General** |
+| `${Item.Location}` | Current path and file name of the document, or the email subject for an email | **\\\Sales\2020\Q3\JulyReport.docx**|
+| `${User.Name}` | Current owner of the document or email, by the Windows signed in user name | **rsimone** |
+| `${User.PrincipalName}` | Current owner of the document or email, by the user's Azure AD user principal name (UPN) | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | Current date and time for the local time zone | **8/10/2020 1:30 PM** |
 
 
 > [!NOTE]
