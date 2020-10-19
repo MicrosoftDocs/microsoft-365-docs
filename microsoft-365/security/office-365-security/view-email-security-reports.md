@@ -292,7 +292,7 @@ The following views are available:
 
 - **View data by: Content \> Malware**<sup>1</sup>: The following information is shown for Office 365 ATP organizations:
 
-  - **Anti-malware engine**:Catches of mailcious files in Sharepoint Online, One Drive, and teams by AV
+  - **Anti-malware engine**: Catches of malicious files in Sharepoint Online, One Drive, and Teams by AV.
   - **File detonation** :Detonation of malicious files in Sharepoint Online, One Drive, and teams by safe attachment.
 
   ![Content malware view in the Threat protection status report](../../media/threat-protection-status-report-content-malware-view.png)
