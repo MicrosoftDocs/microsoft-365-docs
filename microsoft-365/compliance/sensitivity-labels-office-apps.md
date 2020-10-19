@@ -242,17 +242,17 @@ For these scenarios, using their Office apps, a user with built-in labeling can 
 
 When you configure a sensitivity label for visual markings, you can use the following variables in the text string for your header, footer, or watermark:
 
-- `${Item.Label}` for the selected label. For example: **General**
+- `${Item.Label}` for the current label display name. For example: **General**
 
-- `${Item.Name}` for the file name or email subject. For example: **JulySales.docx**
+- `${Item.Name}` for the current file name or email subject. For example: **JulySales.docx**
 
-- `${Item.Location}` for the path and file name for documents, and the email subject for emails. For example: **\\\Sales\2016\Q3\JulyReport.docx**
+- `${Item.Location}` for the current path and file name for documents, and the email subject for emails. For example: **\\\Sales\2016\Q3\JulyReport.docx**
 
-- `${User.Name}` for the owner of the document or email, by the Windows signed in user name. For example: **rsimone**
+- `${User.Name}` for the current owner of the document or email, by the Windows signed in user name. For example: **rsimone**
 
-- `${User.PrincipalName}` for the owner of the document or email, by the Microsoft 365 signed in email address (UPN). For example: **rsimone@vanarsdelltd.com**
+- `${User.PrincipalName}` for the current owner of the document or email, by the user's Azure AD user principal name (UPN). For example: **rsimone@vanarsdelltd.com**
 
-- `${Event.DateTime}` for the date and time for the local timezone when the selected label was applied. For example: **8/10/2020 1:30 PM**
+- `${Event.DateTime}` for the current date and time for the local time zone. For example: **8/10/2020 1:30 PM**
 
 > [!NOTE]
 > The syntax for these variables is case-sensitive.
