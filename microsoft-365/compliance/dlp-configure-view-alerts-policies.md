@@ -106,7 +106,7 @@ role and either of the following roles:
 
 ## Alert configuration experience
 
-If you're eligible for [aggregated alert configuration options](#aggregated-alert-configuration),
+If you're eligible for [aggregated alert configuration options](#licensing-for-alert-configuration-options),
 then you see the following options inline in the DLP policy authoring
 experience.
 
