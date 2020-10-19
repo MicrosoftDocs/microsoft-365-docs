@@ -71,7 +71,7 @@ After you've verified that your mailbox meets all applicable prerequisites, [Use
 
 2. In the **User submissions** page that appears, select one of the following options:
 
-   a. **Enable the Report Message feature for Outlook (Recommended)**: Select this option if you use the Report Message add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
+   1. **Enable the Report Message feature for Outlook (Recommended)**: Select this option if you use the Report Message add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
 
       - **Customize the end-user confirmation message**: Click this link. In the **Customize confirmation message** flyout that appears, configure the following settings:
 
