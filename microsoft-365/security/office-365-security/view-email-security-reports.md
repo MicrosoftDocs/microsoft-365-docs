@@ -299,7 +299,7 @@ The following views are available:
 
 - **Break down by: Detection technology** and **View data by: Email \> Phish**: The following information is shown:
 
-  - **ATP-generated URL reputation**<sup>1</sup>: Malicious URL reputation generated from ATP detonations amongst other ATP customers
+  - **ATP-generated URL reputation**<sup>1</sup>: Malicious URL reputation generated from ATP detonations amongst other ATP customers.
   - **Advanced phish filter** : Phishing signals based on machine learning
   - **Anti-spoof: DMARC failure**: DMARC authentication failure on messages
   - **Anti-spoof: Intra-org**: sender attempting to spoof the recipient domain 
