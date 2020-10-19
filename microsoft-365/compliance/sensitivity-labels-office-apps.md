@@ -242,6 +242,12 @@ For these scenarios, using their Office apps, a user with built-in labeling can 
 
 When you configure a sensitivity label for content markings, you can use the following variables in the text string for your header, footer, or watermark:
 
+| Variable | Description | Example |
+| -------- | ----------- | ------- |
+| `${Item.Label}` | Current label display name | **rsimone@vanarsdelltd.com**
+
+
+
 - `${Item.Label}` for the current label display name. For example: **General**
 
 - `${Item.Name}` for the current file name or email subject. For example: **JulySales.docx**
