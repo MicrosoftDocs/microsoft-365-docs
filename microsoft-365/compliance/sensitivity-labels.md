@@ -90,7 +90,7 @@ After a sensitivity label is applied to an email or document, any configured pro
     
     Need to check when content markings are applied? See [When Office apps apply content marking and encryption](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
-    Some, but not all apps support dynamic visual markings by using variables. For more information, see [Dynamic visual markings with variables](sensitivity-labels-office-apps.md#dynamic-visual-markings-with-variables)
+    Some, but not all apps support dynamic visual markings by using variables. For example, insert the label name or document name into the header, footer, or watermark. For more information, see [Dynamic visual markings with variables](sensitivity-labels-office-apps.md#dynamic-visual-markings-with-variables).
     
     String lengths: Watermarks are limited to 255 characters. Headers and footers are limited to 1024 characters, except in Excel. Excel has a total limit of 255 characters for headers and footers but this limit includes characters that aren't visible, such as formatting codes. If that limit is reached, the string you enter is not displayed in Excel.
 
