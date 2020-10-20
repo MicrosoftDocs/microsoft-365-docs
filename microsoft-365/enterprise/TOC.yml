@@ -582,7 +582,7 @@
               href: view-user-accounts-with-microsoft-365-powershell.md
             - name: Configure properties
               href: configure-user-account-properties-with-microsoft-365-powershell.md
-            - name: Assign roles
+            - name: Assign admin roles
               href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
             - name: Delete and restore
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
