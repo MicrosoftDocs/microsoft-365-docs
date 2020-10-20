@@ -39,6 +39,7 @@ Follow the instructions from [Intune](https://docs.microsoft.com/intune/advanced
 > - The **Health Status for onboarded devices** policy uses read-only properties and can't be remediated.
 
 ## Offboard and monitor devices using Mobile Device Management tools
+
 For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
