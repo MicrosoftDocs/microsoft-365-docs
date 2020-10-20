@@ -1,3 +1,4 @@
+---
 title: "Learn about retention policies & labels to automatically retain or delete content"
 f1.keywords:
 - NOCSH
@@ -381,7 +382,8 @@ If you are using older eDiscovery tools to preserve data, see the following reso
 
 ## Use retention policies and retention labels instead of older features
 
-If you need to proactively retain or delete content in Microsoft 365 for information governance, we recommend that you use retention policies and retention labels instead of the following older features. 
+If you need to proactively retain or delete content in Microsoft 365 for information governance, we recommend that you use retention policies and retention labels instead of the following older features.
+
 If you currently use these older features, they will continue to work side-by-side with retention policies and retention labels. However, we recommend that going forward, you use retention policies and retention labels instead. They provide you with a single mechanism to centrally manage both retention and deletion of content across Microsoft 365.
 
 **Older features from Exchange Online:**
