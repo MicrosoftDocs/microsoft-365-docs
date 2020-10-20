@@ -1,4 +1,3 @@
----
 title: "Learn about retention policies & labels to automatically retain or delete content"
 f1.keywords:
 - NOCSH
@@ -348,13 +347,13 @@ To use the retention cmdlets, you must first [connect to the Office 365 Security
 
 - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
 
-## When to use retention policies and retention labels or holds for eDiscovery
+## When to use retention policies and retention labels or eDiscovery holds
 
 Although retention settings and [holds that you create with an eDiscovery case](create-ediscovery-holds.md) can both prevent data from being permanently deleted, they are designed for different scenarios. To help you understand the differences and decide which to use, use the following guidance:
 
 - Retention settings that you specify in retention policies and retention labels are designed for a long-term information governance strategy to retain or delete data for compliance requirements. The scope is usually broad with the main focus being the location and content rather than individual users. The start and end of the retention period is configurable, with the option to automatically delete content without additional administrator intervention.
 
-- Holds for an eDiscovery case (either core or advanced) are designed for as-needed discovery and respond actions to preserve data for a specific investigation to support a legal inquiry. The scope is specific with the focus being content accessed by identified users. The start and end of the preservation period isn't configurable but dependent on individual administrator actions, without an option to automatically delete content when the hold is released.
+- Holds for an eDiscovery case (either Core eDiscovery or Advanced eDiscovery cases) are designed for a limited duration for discovery and respond actions that preserve data for a specific investigation to support a legal inquiry. The scope is specific with the focus being content owned by identified users. The start and end of the preservation period isn't configurable but dependent on individual administrator actions, without an option to automatically delete content when the hold is released.
 
 Summary to compare retention with holds:
 
