@@ -28,17 +28,17 @@ description: "Use the Content Search tool in the compliance center in Office 365
 You can use the Content Search eDiscovery tool in the compliance center in Office 365 or Microsoft 365 to search for in-place items such as email, documents, and instant messaging conversations in your organization. Use this tool to search for items in these services:
   
 - Exchange Online mailboxes and public folders
-    
+
 - SharePoint Online sites and OneDrive for Business accounts
-    
+
 - Skype for Business conversations
-    
-- Microsoft Teams 
+
+- Microsoft Teams
 
 - Microsoft 365 Groups
 
-- Yammer Groups 
-    
+- Yammer Groups
+
 After you run a Content Search, the number of content locations and an estimated number of search results are displayed in the search statistics. You can also quickly view statistics, such as the content locations that have the most items that match the search query. After you run a search, you can preview the results or export them to a local computer.
 
 ## Create a search
@@ -111,7 +111,7 @@ There are two configuration settings for previewing search results. After you ru
   
 ![Preview search results settings](../media/83519477-1c85-4442-8886-481f186fd758.png)
   
-1. **Preview results automatically:** This setting displays the search results after you a run a search.
+1. **Preview results automatically:** This setting displays the search results after you run a search.
     
 2. **Preview results manually:** This setting displays placeholders in the search results pane, and displays the **Preview results** button that you have to click to display the search results. This is the default setting. It helps enhance search performance by not automatically displaying the search results when you open an existing search. 
     
@@ -238,7 +238,7 @@ Keep the following things in mind when using the keyword list to create a search
   
 ### Searching Microsoft Teams and Microsoft 365 Groups
 
-You can search the mailbox that's associated with an Microsoft 365 Group or a Microsoft Team. Because Microsoft Teams is built on Microsoft 365 Groups, searching them is similar. In both cases, only the group or team mailbox is searched. The mailboxes of the group or team members aren't searched. To search them, you have to specifically add them to the search.
+You can search the mailbox that's associated with a Microsoft Team or Microsoft 365 Group. Because Microsoft Teams is built on Microsoft 365 Groups, searching them is similar. In both cases, only the group or team mailbox is searched. The mailboxes of the group or team members aren't searched. To search them, you have to specifically add them to the search.
   
 Keep the following things in mind when searching for content in Microsoft Teams and Microsoft 365 Groups.
   
@@ -246,7 +246,7 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
 - Content from private channels is stored in each user's mailbox, not the team mailbox. To search for content in private channels, see [eDiscovery of private channels](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
     
-- Run the **Get-UnifiedGroup** cmdlet in Exchange Online to view properties for a team or an Microsoft 365 Group. This is a good way to get the URL for the site that's associated with a team or a group. For example, the following command displays selected properties for an Microsoft 365 Group named Senior Leadership Team: 
+- Run the **Get-UnifiedGroup** cmdlet in Exchange Online to view properties for a team or a Microsoft 365 Group. This is a good way to get the URL for the site that's associated with a team or a group. For example, the following command displays selected properties for a Microsoft 365 Group named Senior Leadership Team: 
     
   ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -259,12 +259,12 @@ Keep the following things in mind when searching for content in Microsoft Teams 
     > [!NOTE]
     > To run the **Get-UnifiedGroup** cmdlet, you have to be assigned the View-Only Recipients role in Exchange Online or be a member of a role group that's assigned the View-Only Recipients role. 
   
-- When a user's mailbox is searched, any team or Microsoft 365 Group that the user is a member of won't be searched. Similarly, when you search a team or an Microsoft 365 Group, only the group mailbox and group site that you specify is searched. The mailboxes and OneDrive for Business accounts of group members aren't searched unless you explicitly add them to the search.
-    
-- To get a list of the members of a team or an Microsoft 365 Group, you can view the properties on the **Home \> Groups** page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell: 
-    
+- When a user's mailbox is searched, any team or Microsoft 365 Group that the user is a member of won't be searched. Similarly, when you search a team or a Microsoft 365 Group, only the group mailbox and group site that you specify is searched. The mailboxes and OneDrive for Business accounts of group members aren't searched unless you explicitly add them to the search.
+
+- To get a list of the members of a team or a Microsoft 365 Group, you can view the properties on the **Home \> Groups** page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell: 
+
   ```powershell
-  Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
+  Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
   ```
 
     > [!NOTE]
@@ -275,14 +275,14 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 - Alternatively, conversations that are part of the Chat list in Teams are stored in the Exchange Online mailbox of the users who participate in the chat. And files that a user shares in Chat conversations are stored in the OneDrive for Business account of the user who shares the file. Therefore, you have to add the individual user mailboxes and OneDrive for Business accounts as content locations to search conversations and files in the Chat list.
     
     > [!NOTE]
-    > In an Exchange hybrid deployment, users with an on-premises mailbox might participate in conversations that are part of the Chat list in Teams. In this case, content from these conversations is also searchable because it's saved to a cloud-based storage area (called a *cloud-based mailbox for on-premises users*) for users who have an on-premises mailbox. For more information, see [Searching cloud-based mailboxes for on-premises users in Office 365](search-cloud-based-mailboxes-for-on-premises-users.md).
+    > In an Exchange hybrid deployment, users with an on-premises mailbox might participate in conversations that are part of the Chat list in Teams. In this case, content from these conversations is also searchable because it's saved to a cloud-based storage area (called a *cloud-based mailbox for on-premises users*) for users who have an on-premises mailbox. For more information, see [Search for Teams chat data for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
   
-- Every team or team channel contains a Wiki for note-taking and collaboration. The Wiki content is automatically saved to a file with a .mht format. This file is stored in the Teams Wiki Data document library on the team's SharePoint site. You can use the Content Search tool to search the Wiki by specifying the team's SharePoint site as the content location to search. 
-    
+- Every team or team channel contains a Wiki for note-taking and collaboration. The Wiki content is automatically saved to a file with a .mht format. This file is stored in the Teams Wiki Data document library on the team's SharePoint site. You can use the Content Search tool to search the Wiki by specifying the team's SharePoint site as the content location to search.
+
     > [!NOTE]
-    > The capability to search the Wiki for a team or channel (when you search the team's SharePoint site) was released on June 22, 2017. Wiki pages that were saved or updated on that date or after are available to be searched. Wiki pages last saved or updated before that date aren't available for search. 
- 
-- Summary information for meetings and calls in a Teams channel are also stored in the mailboxes of users who dialed into the meeting or call. This means you can use Content Search to search these summary records. Summary information includes: 
+    > The capability to search the Wiki for a team or channel (when you search the team's SharePoint site) was released on June 22, 2017. Wiki pages that were saved or updated on that date or after are available to be searched. Wiki pages last saved or updated before that date aren't available for search.
+
+- Summary information for meetings and calls in a Teams channel are also stored in the mailboxes of users who dialed into the meeting or call. This means you can use Content Search to search these summary records. Summary information includes:
   
   - Date, start time, end time, and duration of a meeting or call
 
@@ -302,13 +302,21 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
    For more information, see [Microsoft Teams launches eDiscovery for calls and meetings](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947).
 
-- You can use the **Kind** email property or the **Message kind** search condition to search specifically for content in Teams. 
+- Card content generated by apps in Teams channels, 1:1 chats, and 1xN chats is stored in mailboxes and can be searched. A *card* is a UI container for short pieces of content. Cards can have multiple properties and attachments, and can include buttons that can trigger card actions. For more information, see [Cards](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards)
+
+  Like other Teams content, where card content is stored is based on where the card was used. Content for cards used in a Teams channel is stored in the Teams group mailbox. Card content for 1:1 and 1xN chats are stored in the mailboxes of the chat participants.
+
+  To search for card content, you can use the `kind:microsoftteams` or `itemclass:IPM.SkypeTeams.Message` search conditions. When reviewing search results, card content generated by bots in a Teams channel have the **Sender/Author** email property as `<appname>@teams.microsoft.com`, where `appname` is the name of the app that generated the card content. If card content was generated by a user, the value of **Sender/Author** identifies the user.
+
+  Card content appears as an attachment to the message. The attachment is named `appname.html`, where `appname` is the name of the app that generated the card content.
+
+- You can use the **Kind** email property or the **Message kind** search condition to search specifically for content in Teams.
   
   - To use the **Kind** property as part of the keyword search query, in the **Keywords** box of a search query, type `kind:microsoftteams`.
 
     ![Use kind:microsoftteams in the Keywords box](../media/O365-ContentSearch-Teams-Keywords.png)
   
-  - To use a search condition, add the **Message kind** condition and use the value `microsoftteams`. 
+  - To use a search condition, add the **Message kind** condition and use the value `microsoftteams`.
 
     ![Use the Message kind condition with the value microsoftteams.](../media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
@@ -340,21 +348,21 @@ You can search inactive mailboxes in a content search. To get a list of the inac
 Here are a few things to keep in mind when searching inactive mailboxes.
 
 - If an existing content search includes a user mailbox and that mailbox is made inactive, the content search will continue to search the inactive mailbox when you rerun the search after it becomes inactive.
-    
+
 - Sometimes a user may have an active mailbox and an inactive mailbox that have the same SMTP address. In this case, only the specific mailbox that you select as a location for a content search is searched. In other words, if you add a user's mailbox to a search, you can't assume that both their active and inactive mailboxes are searched. Only the mailbox that you explicitly add to the search is searched.
-    
+
 - You can use Security & Compliance Center PowerShell to create a content search to search an inactive mailbox. To do this, you have to pre-append a period ( . ) to the email address of the inactive mailbox. For example, the following command creates a content search that searches an inactive mailbox with the email address pavelb@contoso.onmicrosoft.com:
 
-   ``` 
+   ```powershell
    New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
    ```
 
 - We strongly recommend that you avoid having an active mailbox and inactive mailbox with the same SMTP address. If you need to reuse the SMTP address that is assigned to an inactive mailbox, we recommend that you recover the inactive mailbox or restore the contents of an inactive mailbox to an active mailbox (or the archive of an active mailbox), and then delete the inactive mailbox. For more information, see one of the following topics:
-    
+
   - [Recover an inactive mailbox in Office 365](recover-an-inactive-mailbox.md)
-    
+
   - [Restore an inactive mailbox in Office 365](restore-an-inactive-mailbox.md)
-    
+
   - [Delete an inactive mailbox in Office 365](delete-an-inactive-mailbox.md)
 
 ### Searching disconnected or de-licensed mailboxes
@@ -386,28 +394,27 @@ You can preview supported file types in the preview pane. If a file type isn't s
 Also, the following file container types are supported. You can view the list of files in the container in the preview pane.
   
 - .zip
-    
+
 - .gzip
-    
+
 ### Partially indexed items
 
-- As previously explained, partially indexed items in mailboxes are included in the estimated search results. Partially indexed items from SharePoint and OneDrive aren't included in the estimated search results. 
-    
+- As previously explained, partially indexed items in mailboxes are included in the estimated search results. Partially indexed items from SharePoint and OneDrive aren't included in the estimated search results.
+
 - If a partially indexed item matches the search query (because other message or document properties meet the search criteria), it isn't included in the estimated number of unindexed items. If a partially indexed item is excluded by the search criteria, it isn't included in the estimated number of unindexed items. For more information, see [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md).
 
 ### Searching for content in a SharePoint Multi-Geo environment
 
 If it's necessary for an eDiscovery manager to search for content in SharePoint and OneDrive in different regions in a [SharePoint multi-geo environment](https://go.microsoft.com/fwlink/?linkid=860840), then you need to do the following things to make that happen:
-   
+
 1. Create a separate user account for each satellite geo location that the eDiscovery manager needs to search. To search for content in sites in that geo location, the eDiscovery manager must sign in to the account you created for that location and then run a content search.
 
 2. Create a search permissions filter for each satellite geo location (and corresponding user account) the eDiscovery manager needs to search. Each of these search permissions filters limits the scope of the content search to a specific geo location when the eDiscovery manager is signed in to the user account associated with that location.
- 
+
 > [!TIP]
-> You don't have to use this strategy when using the search tool in [Advanced eDiscovery](overview-ediscovery-20.md). That's because all datacenters are searched when you search SharePoint sites and OneDrive accounts in Advanced eDiscovery. You have to use this strategy of region-specific user accounts and search permissions filters only when using the Content Search tool and running searches associated with [eDiscovery cases](ediscovery-cases.md). 
+> You don't have to use this strategy when using the search tool in [Advanced eDiscovery](overview-ediscovery-20.md). That's because all datacenters are searched when you search SharePoint sites and OneDrive accounts in Advanced eDiscovery. You have to use this strategy of region-specific user accounts and search permissions filters only when using the Content Search tool and running searches associated with [eDiscovery cases](ediscovery-cases.md).
 
-
-For example, let's say that an eDiscovery manager needs to search for SharePoint and OneDrive content in satellite locations in North American, Europe, and Asia Pacific. The first step is to create three users accounts, one for each location. The next step is to create three search permissions filters, one for each location *and* corresponding user account. Here are examples of the three search permissions filters for this scenario. In each of these examples, the **Region** specifies the SharePoint datacenter location for that geo and the **Users** parameter specifies the corresponding user account. 
+For example, let's say that an eDiscovery manager needs to search for SharePoint and OneDrive content in satellite locations in North American, Europe, and Asia Pacific. The first step is to create three users accounts, one for each location. The next step is to create three search permissions filters, one for each location *and* corresponding user account. Here are examples of the three search permissions filters for this scenario. In each of these examples, the **Region** specifies the SharePoint datacenter location for that geo and the **Users** parameter specifies the corresponding user account.
 
 **North America**
 
@@ -431,6 +438,6 @@ Keep the following things in mind when using search permissions filters to searc
 
 - The **Region** parameter directs searches to the specified satellite location. If an eDiscovery manager only searches SharePoint and OneDrive sites outside of the region specified in the search permissions filter, no search results are returned. 
 
-- The **Region** parameter doesn't control searches of Exchange mailboxes. All datacenters are searched when you search mailboxes. 
-    
+- The **Region** parameter doesn't control searches of Exchange mailboxes. All datacenters are searched when you search mailboxes.
+
 For more information about using search permissions filters in a multi-geo environment, see the "Searching and exporting content in Multi-Geo environments" section in [Set up compliance boundaries for eDiscovery investigations](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).
