@@ -65,7 +65,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 1. Get the offboarding package from [Microsoft Compliance center](https://compliance.microsoft.com)
 
-2. In the navigation pane, select **Settings** > **Device onboarding**.
+2. In the navigation pane, select **Settings** > **Device offboarding**.
 
 3. In the **Deployment method** field, select **Local Script**.
 
