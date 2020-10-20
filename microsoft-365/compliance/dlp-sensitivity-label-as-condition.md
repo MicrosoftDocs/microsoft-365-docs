@@ -64,16 +64,20 @@ You can use sensitivity labels as conditions on these items and in these scenari
 ### Supported scenarios
 
 - DLP Admin will be able to see a list of all sensitivity labels in the tenant when they choose to include one or more sensitivity labels as a condition.
-- Using sensitivity labels as a condition is supported across all workloads as indicated in the support matrix above
+
+- Using sensitivity labels as a condition is supported across all workloads as indicated in the support matrix above.
+
 - DLP policy tips will continue to be shown across workloads (except Outlook Win32) for DLP policies which contain sensitivity label as a condition.
+
 - Sensitivity labels will also appear as a part of the incident report email if a DLP policy with sensitivity label as a condition is matched.
+
 - Sensitivity label details will also be shown in the DLP rule match audit log for a DLP policy match which contains sensitivity label as a condition.
 
 
 ### Support policy tips
 
 
-|workload  |policy tips supported/not supported  |
+|Workload  |Policy tips supported/not supported  |
 |---------|---------|
 |OWA |    supported     |
 |Outlook Win 32    |  not supported       |
