@@ -24,42 +24,21 @@ description: Use Configuration Manager to deploy the configuration package on de
 - [Microsoft 365 Endpoint data loss prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
 - System Center 2012 R2 Configuration Manager
 
-## Supported client operating systems
-
-Based on the version of Configuration Manager you're running, the following client operating systems can be onboarded:
-
-#### Configuration Manager version 1910 and prior
-
-- Clients computers running Windows 10, version 1607 and later
-
-#### Configuration Manager version 2002 and later
-
-Starting in Configuration Manager version 2002, you can onboard the following operating systems:
-
-- Windows 8.1
-- Windows 10, version 1607 or later
-- Windows Server 2012 R2
-- Windows Server 2016
-- Windows Server 2016, version 1803 or later
-- Windows Server 2019
-
 ### Onboard devices using System Center Configuration Manager
 
-1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Open the Configuration Manager configuration package .zip file (*DeviceComplianceDeviceComplianceOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Compliance center](https://compliance.microsoft.com/).
 
-    a. In the navigation pane, select **Settings** > **Onboarding**.
-    
-    b. Select Windows 10 as the operating system.
+2. In the navigation pane, select **Settings** > **Device Onboarding** > **Onboarding**.
 
-    c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
-    
-    d. Select **Download package**, and save the .zip file.
+3. In the **Deployment method** field, select **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
+ 
+4. Select **Download package**, and save the .zip file.
 
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
+5. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *DeviceComplianceDeviceComplianceOnboardingScript.cmd*.
 
-3. Deploy the package by following the steps in the [Packages and Programs in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) article.
+6. Deploy the package by following the steps in the [Packages and Programs in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) article.
 
-    a. Choose a predefined device collection to deploy the package to.
+7. Choose a predefined device collection to deploy the package to.
 
 > [!NOTE]
 > Microsoft 365 Endpoint data loss prevention doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) phase. Make sure users complete OOBE after running Windows installation or upgrading.
@@ -111,16 +90,20 @@ If you're using Endpoint Configuration Manager, version 2002 or later, you can c
 
 
 ### Next generation protection configuration
+
 The following configuration settings are recommended:
 
-**Scan** <br>
+**Scan**
+
 - Scan removable storage devices such as USB drives: Yes
 
-**Real-time Protection** <br>
+**Real-time Protection**
+
 - Enable Behavioral Monitoring: Yes
 - Enable protection against Potentially Unwanted Applications at download and prior to installation: Yes
 
 **Cloud Protection Service**
+
 - Cloud Protection Service membership type: Advanced membership
 
 **Attack surface reduction**
@@ -129,12 +112,13 @@ Configure all available rules to Audit.
 >[!NOTE]
 > Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
 
+**Network protection**
 
-**Network protection** <br>
 Prior to enabling network protection in audit or block mode, ensure that you've installed the antimalware platform update, which can be obtained from the [support page](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
 
 
-**Controlled folder access**<br>
+**Controlled folder access**
+
 Enable the feature in audit mode for at least 30 days. After this period, review detections and create a list of applications that are allowed to write to protected directories.
 
 For more information, see [Evaluate controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-controlled-folder-access).
@@ -153,21 +137,21 @@ If you use Microsoft Endpoint Configuration Manager current branch, see [Create 
 
 ### Offboard devices using System Center 2012 R2 Configuration Manager
 
-1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Get the offboarding package from [Microsoft Compliance center](https://compliance.microsoft.com/):
 
-    a. In the navigation pane, select **Settings** >  **Offboarding**.
+2. In the navigation pane, select **Settings** >  **Device onboarding**> **Offboarding**.
 
-    b. Select Windows 10 as the operating system.
+3. Select Windows 10 as the operating system.
 
-    c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
+4. In the **Deployment method** field, select **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
     
-    d. Select **Download package**, and save the .zip file.
+5. Select **Download package**, and save the .zip file.
 
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+6. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Deploy the package by following the steps in the [Packages and Programs in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) article.
+7. Deploy the package by following the steps in the [Packages and Programs in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) article.
 
-    a. Choose a predefined device collection to deploy the package to.
+8. Choose a predefined device collection to deploy the package to.
 
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
