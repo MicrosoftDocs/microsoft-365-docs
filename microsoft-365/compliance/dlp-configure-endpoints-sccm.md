@@ -185,6 +185,9 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
 You can set a compliance rule for configuration item in System Center 2012 R2 Configuration Manager to monitor your deployment.
 
+> [!NOTE]
+> This procedure and registry entry applies to Endpoint DLP as well as Advanced Threat Protection.
+
 This rule should be a *non-remediating* compliance rule configuration item that monitors the value of a registry key on targeted devices.
 
 Monitor the following registry key entry:
