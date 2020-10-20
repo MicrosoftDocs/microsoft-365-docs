@@ -29,7 +29,7 @@ These recommendations are based on three different tiers of security and protect
 
 These recommendations require your users to use modern email clients, including Outlook for iOS and Android on mobile devices. Outlook for iOS and Android provide support for the best features of Office 365. These mobile Outlook apps are also architected with security capabilities that support mobile use and work together with other Microsoft cloud security capabilities. For more information, see [Outlook for iOS and Android FAQ](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
 
-## Updating common policies to include email
+## Update common policies to include email
 
 To protect email, the following diagram illustrates which policies to update from the the common identity and device access policies.
 
@@ -61,7 +61,7 @@ This policy prevents ActiveSync clients from bypassing other Conditional Access 
 
 You can also use authentication policies to [disable Basic authentication](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), which forces all client access requests to use modern authentication.
 
-## Limiting access to Exchange Online from Outlook on the web
+## Limit access to Exchange Online from Outlook on the web
 
 You can restrict the ability for users to download attachments from Outlook on the web to a non-compliant device. Users on these devices can view and edit these files without leaking and storing the files on the device. You can also block users from seeing attachments on a non-compliant device.
 
@@ -88,6 +88,13 @@ Here are the steps:
    **Assignments > Cloud apps or actions > Cloud apps > Include > Select apps**: Select **Office 365 Exchange Online**
 
    **Access controls > Session**: Select **Use app enforced restrictions**
+
+## Require that iOS and Android devices must use Outlook
+
+To ensure that users of iOS and Android devices can only access work or school content using Outlook for iOS and Android, you need a Conditional Access policy that targets those potential users.
+
+See the steps to configure this policy in [Manage messaging collaboration access by using Outlook for iOS and Android]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
+
 
 ## Set up message encryption
 
