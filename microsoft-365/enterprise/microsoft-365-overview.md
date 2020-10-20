@@ -70,13 +70,11 @@ You can also [download a copy of the poster](https://github.com/MicrosoftDocs/mi
 
 ## Transition your entire organization
 
-To get a better picture about how to move your entire organization to the products and services in Microsoft 365 for enterprise, see the [transition poster](../downloads/transition-org-to-m365.pdf).
+To get a better picture about how to move your entire organization to the products and services in Microsoft 365 for enterprise, see the [transition poster](https://www.microsoft.com/download/confirmation.aspx?id=102268).
 
-[![Image for the Transition to Microsoft 365 poster](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![Image for the Transition to Microsoft 365 poster](../media/microsoft-365-overview/transition-org-to-m365.png)](https://www.microsoft.com/download/confirmation.aspx?id=102268)
 
 This two-page poster is a quick way to inventory your existing infrastructure. It helps you to find guidance and move to the corresponding product or service in Microsoft 365 for enterprise. It includes Windows and Office products and other infrastructure and security elements, such as device management, identity, and information and threat protection.
-
-You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 ## End of support for Windows 7 and Office 2010 clients and servers
 
