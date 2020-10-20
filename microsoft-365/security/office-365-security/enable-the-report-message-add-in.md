@@ -86,7 +86,7 @@ To learn how to use the add-in, see [Use the Report Message add-in](https://supp
 > [!NOTE]
 > It could take up to 12 hours for the add-in to appear in your organization.
 
-1. In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>, and then click **Deploy Add-In**.
+1. In the Microsoft 365 admin center, go to the **Settings, integrated Apps & Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, and then click **Deploy Add-In**.
 
    ![Services and add-ins page in the Microsoft 365 admin center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
