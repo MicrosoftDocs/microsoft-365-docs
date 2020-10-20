@@ -3,7 +3,6 @@ title: "Configure Microsoft 365 user account properties with PowerShell"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -29,7 +28,7 @@ Although you can use the Microsoft 365 admin center to configure properties for 
   
 ## Use the Azure Active Directory PowerShell for Graph module
 
-To configure properties for user accounts with the Azure Active Directory PowerShell for Graph module, you use the [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) cmdlet and specify the properties to set or change. 
+To configure properties for user accounts with the Azure Active Directory PowerShell for Graph module, you use the [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) cmdlet and specify the properties to set or change. 
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
    
@@ -69,8 +68,11 @@ You identify the account with the **-ObjectID** parameter and set or change spec
     
     This is the ISO 3166-1 alpha-2 (A2) two-letter country or region code.
     
-See [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) for additional parameters.
+See [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) for additional parameters.
 
+>[!Note]
+>Before you can assign licenses to a user account, you must assign a usage location.
+>
 
 To display the User Principal Name for your user accounts, run the following command.
   
@@ -259,7 +261,7 @@ This command instructs PowerShell to:
 - Find all of the user accounts that have their Department property set to "Accounting" (**Where {$_.Department -eq "Accounting"}**) and send the resulting information to the next command (**|**).
     
 - Set the user location to France (**Set-MsolUser -UsageLocation "FR"**).
-    
+
 
 ## See also
 

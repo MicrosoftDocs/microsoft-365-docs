@@ -33,7 +33,7 @@ Microsoft 365 has the capabilities to empower your workers to work remotely.
 ![Empower your remote workers with Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
 Watch this video for an overview of the deployment process.
-
+<br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
 This solution provides these key capabilities.
