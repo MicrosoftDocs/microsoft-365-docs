@@ -63,7 +63,7 @@ You can also use authentication policies to [disable Basic authentication](https
 
 ## Limit access to Exchange Online from Outlook on the web
 
-You can restrict the ability for users to download attachments from Outlook on the web to a non-compliant device. Users on these devices can view and edit these files without leaking and storing the files on the device. You can also block users from seeing attachments on a non-compliant device.
+You can restrict the ability for users to download attachments from Outlook on the web on umnanaged devices. Users on these devices can view and edit these files using Office Online without leaking and storing the files on the device. You can also block users from seeing attachments on an unmanaged device.
 
 Here are the steps:
 
