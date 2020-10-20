@@ -29,7 +29,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-To keep the service performant and responsive, advanced hunting sets various quotas and usage parameters (also known as "service limits") for queries run manually and by [custom detection rules](custom-detection-rules.md). Customers who run multiple queries regularly should track consumption and [apply optimization best practices](advanced-hunting-best-practices.md) to minimize disruption resulting from exceeding a quota or parameter.
+To keep the service performant and responsive, advanced hunting sets various quotas and usage parameters (also known as "service limits"). These quotas and parameters apply to queries run manually and by [custom detection rules](custom-detection-rules.md). Customers who run multiple queries regularly should track consumption and [apply optimization best practices](advanced-hunting-best-practices.md) to minimize disruptions.
 
 Refer to the following table to understand existing quotas and usage parameters.
 
