@@ -20,22 +20,22 @@ For each check, the tool will report one of three possible results:
 |---------|---------|
 |Ready     | No action is required before completing enrollment.        |
 |Advisory    | Follow the steps in the tool or this article for the best experience with enrollment and for users. You *can* complete enrollment, but you must fix these issues before you deploy your first device.        |
-|Not ready | *You can't complete enrollment without fixing these issues.* Follow the steps in the tool or this article to resolve them.        |
+|Not ready | *Enrollment will fail if you don't fix these issues.* Follow the steps in the tool or this article to resolve them.        |
 
 ## Microsoft Intune settings
 
 ### Autopilot deployment profile
 
-You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups used by Microsoft Managed Desktop. This is because Microsoft Managed Desktop uses Autopilot to provision new devices.
+You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups used by Microsoft Managed Desktop. Microsoft Managed Desktop uses Autopilot to provision new devices.
 
 **Not ready**
 
-You have an Autopilot profile that is assigned to all devices. Reset the profile to target an assigned or dynamic Azure AD group that does not include the Microsoft Managed Desktop that will be created at enrollment {HOW WILL THEY KNOW WHAT THAT'S CALLED?}. For steps, see 
+You have an Autopilot profile that is assigned to all devices. Reset the profile to target an assigned or dynamic Azure AD group that doesn't include the Microsoft Managed Desktop that will be created at enrollment {HOW WILL THEY KNOW WHAT THAT'S CALLED?}. For steps, see 
 [Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot).
 
 **Advisory**
 
-Make sure that your Autopilot profiles target an assigned or dynamic Azure AD group that does not include the Microsoft Managed Desktop that will be created at enrollment. For steps, see 
+Make sure that your Autopilot profiles target an assigned or dynamic Azure AD group that doesn't include the Microsoft Managed Desktop that will be created at enrollment. For steps, see 
 [Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot).
 
 
@@ -125,7 +125,7 @@ Windows 10 devices in your Azure AD organization must be automatically enrolled 
 
 **Not ready**
 
-Users in your Azure AD organization aren't automatically enrolled in Microsoft Intune. Change the MDM User scope to **Some** or **All**. If you choose **Some**, come back after enrollment and select **Modern Workplace -All** Azure AD group for **Groups**.
+Users in your Azure AD organization aren't automatically enrolled in Microsoft Intune. Change the MDM User scope to **Some** or **All**. If you choose. Some**, come back after enrollment and select **Modern Workplace -All** Azure AD group for **Groups**.
 
 
 ### Microsoft Store for Business
@@ -138,7 +138,7 @@ Microsoft Store for Business either isn't enabled or isn't synced with Intune. F
 
 ### PowerShell scripts
 
-Windows PowerShell scripts are can't be assigned in a way that would target Microsoft Managed Desktop devices.  
+Windows PowerShell scripts arecan't be assigned in a way that would target Microsoft Managed Desktop devices.  
 
 **Advisory**
 
@@ -146,7 +146,7 @@ Make sure that Windows PowerShell scripts in your Azure AD organization don't ta
 
 ### Region
 
-Yor region must be supported by Microsoft Managed Desktop.
+Your region must be supported by Microsoft Managed Desktop.
 
 **Not ready**
 
@@ -168,8 +168,6 @@ You have a security baseline profile that targets all users, all devices or both
 **Advisory**
 
 Make sure that any security baseline policies you have exclude Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines). The **Modern Workplace Devices -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
-
-
 
 
 ### Windows apps
@@ -208,8 +206,6 @@ You have an "update ring" policy that targets all devices, all users, or both. C
 **Advisory**
 
 Make sure that any update ring policies you have exclude the **Modern Workplace -All** Azure AD group. For steps, see [Manage Windows 10 software updates in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). The **Modern Workplace Devices -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
-
-
 
 
 ## Azure Active Directory settings
@@ -305,13 +301,13 @@ Microsoft Managed Desktop users should be standard users without local administr
 
 **Advisory**
 
-{Microsoft Managed Desktop users shouldn't have local administrator privilges prior to enrolling.
+{Microsoft Managed Desktop users shouldn't have local administrator privileges prior to enrolling.
 
 ## Microsoft 365 Apps for enterprise
 
 ### OneDrive for Business
 
-A particular setting will conflict with Microsoft Managed Desktop.
+The **Allow syncing only on PCs joined to specific domains** setting will conflict with Microsoft Managed Desktop.
 
 **Advisory**
 
