@@ -26,7 +26,7 @@ description: Use Configuration Manager to deploy the configuration package on de
 
 ### Onboard devices using System Center Configuration Manager
 
-1. Open the Configuration Manager configuration package .zip file (*DeviceComplianceDeviceComplianceOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Compliance center](https://compliance.microsoft.com/).
+1. Open the Configuration Manager configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Compliance center](https://compliance.microsoft.com/).
 
 2. In the navigation pane, select **Settings** > **Device Onboarding** > **Onboarding**.
 
@@ -34,7 +34,7 @@ description: Use Configuration Manager to deploy the configuration package on de
  
 4. Select **Download package**, and save the .zip file.
 
-5. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *DeviceComplianceDeviceComplianceOnboardingScript.cmd*.
+5. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *DeviceComplianceOnboardingScript.cmd*.
 
 6. Deploy the package by following the steps in the [Packages and Programs in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) article.
 

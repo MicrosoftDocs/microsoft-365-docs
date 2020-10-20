@@ -32,57 +32,29 @@ You can also manually onboard individual devices to Microsoft 365 Endpoint data 
 > To deploy at scale, use [other deployment options](dlp-configure-endpoints.md). For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](dlp-configure-endpoints-gp.md).
 
 ## Onboard devices 
-1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1.  Open the GP configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Compliance center](https://compliance.microsoft.com)
 
-    1. In the navigation pane, select **Settings** > **Onboarding**.
+2. In the navigation pane, select **Settings** > **Device onboarding**.
 
-    1. Select Windows 10 as the operating system.
+3. In the **Deployment method** field, select **Local Script**.
 
-    1. In the **Deployment method** field, select **Local Script**.
-
-    1. Click **Download package** and save the .zip file.
-
+4. Click **Download package** and save the .zip file.
   
-2.  Extract the contents of the configuration package to a location on the device you want to onboard (for example, the Desktop). You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
+5. Extract the contents of the configuration package to a location on the device you want to onboard (for example, the Desktop). You should have a file named *DeviceOnboardingScript.cmd*.
 
-3.  Open an elevated command-line prompt on the device and run the script:
+6.  Open an elevated command-line prompt on the device and run the script:
 
-    1.  Go to **Start** and type **cmd**.
+7.  Go to **Start** and type **cmd**.
 
-    1.  Right-click **Command prompt** and select **Run as administrator**.
+8.  Right-click **Command prompt** and select **Run as administrator**.
 
         ![Window Start menu pointing to Run as administrator](../media/dlp-run-as-admin.png)
 
-4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
+9.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
 
-5.  Press the **Enter** key or click **OK**.
+10.  Press the **Enter** key or click **OK**.
 
 For information on how you can manually validate that the device is compliant and correctly reports sensor data see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding).
-
-
->[!TIP]
-> After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test).
-
-## Configure sample collection settings
-For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
-
-You can manually configure the sample sharing setting on the device by using *regedit* or creating and running a *.reg* file.  
-
-The configuration is set through the following registry key entry:
-
-```console
-Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
-Name: "AllowSampleCollection"
-Value: 0 or 1
-```
-Where:<br>
-Name type is a D-WORD. <br>
-Possible values are:
-- 0 - doesn't allow sample sharing  from this device
-- 1 - allows sharing of all file types from this device
-
-The default value in case the registry key doesn’t exist is 1.
-
 
 ## Offboard devices using a local script
 For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
@@ -90,32 +62,30 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Get the offboarding package from [Microsoft Compliance center](https://compliance.microsoft.com)
 
-    1. In the navigation pane, select **Settings** > **Offboarding**.
+2. In the navigation pane, select **Settings** > **Device onboarding**.
 
-    1. Select Windows 10 as the operating system.
+3. In the **Deployment method** field, select **Local Script**.
 
-    1. In the **Deployment method** field, select **Local Script**.
+4. Click **Download package** and save the .zip file.
 
-    1. Click **Download package** and save the .zip file.
+5. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the devices. You should have a file named *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the devices. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+6.  Open an elevated command-line prompt on the device and run the script:
 
-3.  Open an elevated command-line prompt on the device and run the script:
+7.  Go to **Start** and type **cmd**.
 
-    1.  Go to **Start** and type **cmd**.
-
-    1.  Right-click **Command prompt** and select **Run as administrator**.
+8.  Right-click **Command prompt** and select **Run as administrator**.
 
         ![Window Start menu pointing to Run as administrator](../media/dlp-run-as-admin.png)
 
-4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
+9.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
-5.  Press the **Enter** key or click **OK**.
+10.  Press the **Enter** key or click **OK**.
 
 > [!IMPORTANT]
-> Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
+> Offboarding causes the device to stop sending sensor data to the portal.
 
 
 ## Monitor device configuration
@@ -124,9 +94,9 @@ You can follow the different verification steps in the [Troubleshoot onboarding 
 Monitoring can also be done directly on the portal, or by using the different deployment tools.
 
 ### Monitor devices using the portal
-1. Go to Microsoft Defender Security Center.
+1. Go to [Microsoft 365 Compliance center](https://compliance.microsoft.com).
 
-2. Click **Devices list**.
+2. Choose **Settings** > **Device onboarding** > **Devices**.
 
 3. Verify that devices are appearing.
 
