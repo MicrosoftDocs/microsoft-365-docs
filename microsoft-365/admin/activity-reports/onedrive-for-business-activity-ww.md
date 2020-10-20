@@ -45,7 +45,7 @@ Select **Choose columns** to add or remove columns from the report.  <br/> ![One
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
   
-|||
+|Item|Description|
 |:-----|:-----|
 |**Metric**|**Definition**|
 |Username  <br/> |The user name of the owner of the OneDrive account.  <br/> |
