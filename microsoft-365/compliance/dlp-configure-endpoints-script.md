@@ -31,7 +31,8 @@ You can also manually onboard individual devices to Microsoft 365 Endpoint data 
 >
 > To deploy at scale, use [other deployment options](dlp-configure-endpoints.md). For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](dlp-configure-endpoints-gp.md).
 
-## Onboard devices 
+## Onboard devices
+ 
 1.  Open the GP configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Compliance center](https://compliance.microsoft.com)
 
 2. In the navigation pane, select **Settings** > **Device onboarding**.
