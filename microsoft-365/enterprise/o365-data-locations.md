@@ -469,7 +469,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Yammer | United States |
 | OneNote Services | Australia |
 | Stream | Australia |
-| Whiteboard | United States |
+| Whiteboard | Australia |
 | Forms | United States |
 | Workplace Analytics | United States |
 </p></details>
