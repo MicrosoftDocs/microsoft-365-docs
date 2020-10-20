@@ -37,13 +37,6 @@ Follow the instructions from [Intune](https://docs.microsoft.com/intune/advanced
 
 > [!NOTE]
 > - The **Health Status for onboarded devices** policy uses read-only properties and can't be remediated.
-> - Configuration of diagnostic data reporting frequency is only available for devices on Windows 10, version 1703.
-
-
->[!TIP]
-> After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP device](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test).
-
-
 
 ## Offboard and monitor devices using Mobile Device Management tools
 For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
@@ -51,26 +44,23 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Get the offboarding package from [Microsoft Compliance center](https://compliance.microsoft.com/).
 
-   a. In the navigation pane, select **Settings** > **Offboarding**.
+2. In the navigation pane, select **Settings** > **Device onboarding** > **Offboarding**.
 
-   b. Select Windows 10 as the operating system.
-
-   c. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
+3. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
     
-   d. Click **Download package**, and save the .zip file.
+4. Click **Download package**, and save the .zip file.
 
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
+5. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
 
-3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings.
+6. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings.
 
       OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding      
       Date type: String      
-      Value: [Copy and paste the value from the content of the WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding file]
+      Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
 
 For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
-
 
 > [!NOTE]
 > The **Health Status for offboarded devices** policy uses read-only properties and can't be remediated.
@@ -83,5 +73,4 @@ For more information on Microsoft Intune policy settings see, [Windows 10 policy
 - [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Onboard Windows 10 devices using a local script](dlp-configure-endpoints-script.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](dlp-configure-endpoints-vdi.md)
-- [Run a detection test on a newly onboarded Microsoft Defender ATP device](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
