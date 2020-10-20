@@ -33,10 +33,11 @@ You can use [sensitivity labels](sensitivity-labels.md) as a condition in DLP po
 
 Sensitivity labels appear as an option in the **Content contains** list.
 
-![sensitivity label as a condition](../media/dlp-sensitivity-label-as-a-condition.png)
+> [!div class="mx-imgBorder"]
+> ![sensitivity label as a condition](../media/dlp-sensitivity-label-as-a-condition.png)
 
 > [!IMPORTANT]
-> “Sensitivity Labels” as a condition will not be available if you have selected “Teams chat and channel messages” as a location to apply the DLP policy.
+> **Sensitivity Labels** as a condition will not be available if you have selected **Teams chat and channel messages** as a location to apply the DLP policy.
 
 
 ## Supported items, scenarios, and policy tips
