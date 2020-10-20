@@ -370,7 +370,12 @@ If content is subject to both retention settings and an eDiscovery hold, preserv
 
 If you are using older eDiscovery tools to preserve data, see the following resources:
 
-- [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/?linkid=846124)
+- Exchange: 
+    - [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/?linkid=846124)
+    - [How to identify the type of hold placed on an Exchange Online mailbox](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox)
+
+- SharePoint and OneDrive: 
+    - [Add content to a case and place sources on hold in the eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
 
 - [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md)
 
