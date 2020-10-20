@@ -70,14 +70,6 @@ You identify the account with the *-ObjectID* parameter and set or change specif
     
 For additional parameters, see [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) .
 
-To display the User Principal Name for your user accounts, run the following command:
-
-
-To display the User Principal Name for your user accounts, run the following command:
-
->>>>>>> dff0ba3d9ea85922a4c2e8128e2968cda2f70329
-See [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) for additional parameters.
-
 >[!Note]
 >Before you can assign licenses to a user account, you must assign a usage location.
 >
