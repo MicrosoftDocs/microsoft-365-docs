@@ -39,12 +39,12 @@ You must also connect to Microsoft 365 with PowerShell.
 2. Using PowerShell, you can disable strong passwords for all users with the following command:
 
     ```powershell
-    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $true
 
 3. You can disable strong passwords for specific users with this command:
 
     ```powershell
-    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $true
     ```
 
 > [!NOTE]
