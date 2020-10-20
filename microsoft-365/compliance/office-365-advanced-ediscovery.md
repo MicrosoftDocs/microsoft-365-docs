@@ -20,13 +20,10 @@ description: "Learn how Advanced eDiscovery can help you analyze data, streamlin
 # Advanced eDiscovery (classic)
 
 > [!IMPORTANT]
-> **Advanced eDiscovery v1.0 will be permanently retired on December 31, 2020.**
-
-> As we continue to invest in newer versions of Advanced eDiscovery, we are announcing the permanent retirement and removal of cases and case data of Advanced eDiscovery v1.0.  
-
-> If you're still using Advanced eDiscovery v1.0, also known as *Advanced eDiscovery (classic)*, please transition your usage to [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (also known as the *Advanced eDiscovery solution in Microsoft 365*) as soon as possible.  In preparation of the removal of all cases and case data, you can archive case data by [exporting data from a case](https://docs.microsoft.com/en-us/microsoft-365/compliance/export-results-in-advanced-ediscovery?view=o365-worldwide).
-
-> Advanced eDiscovery 2.0 contains similar functionality found in Advanced eDiscovery v1.0, but also offers many new features such as custodian management, communications management, and review sets. To learn more about previous retirment phases of Advanced eDiscovery v1.0, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).
+> **Advanced eDiscovery (classic) will be permanently retired on December 31, 2020.**<br/>
+> As we continue to invest in newer versions of Advanced eDiscovery, we're announcing the permanent retirement and removal of cases and case data from Advanced eDiscovery (classic).
+> If you're still using Advanced eDiscovery (classic), also known as *Advanced eDiscovery v1.0*, please transition your usage to [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (also known as the *Advanced eDiscovery solution in Microsoft 365*) as soon as possible.  In preparation for the removal of all cases and case data, you can archive case data by [exporting data from a case](https://docs.microsoft.com/microsoft-365/compliance/export-results-in-advanced-ediscovery?view=o365-worldwide).
+> Advanced eDiscovery v2.0 contains similar functionality found in Advanced eDiscovery v1.0, but also offers many new features such as custodian management, communications management, and review sets. To learn more about the previous retirment phases of Advanced eDiscovery v1.0, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).
 
 With Advanced eDiscovery, you can better understand your data and reduce your eDiscovery costs. Advanced eDiscovery helps you analyze unstructured data, perform more efficient document review, and make decisions to reduce data for eDiscovery. You can work with data stored in Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Microsoft 365 Groups, and Microsoft Teams. You can perform an eDiscovery search in the security and compliance center to search for content in groups, individual mailboxes and sites, and then analyze the search results with Advanced eDiscovery. When you prepare search results for analysis in Advanced eDiscovery, Optical Character Recognition enables the extraction of text from images. This feature allows the powerful text analytic capabilities of Advanced eDiscovery to be applied to image files.
   
