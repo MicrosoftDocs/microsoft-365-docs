@@ -23,9 +23,7 @@ To provide your users with up-to-date news headlines about your industry and�
 
 ## What your users will see
 
-Signed-in users can that come to the Bing homepage will see your industry news feed under the personalized info from your organization.  
-
-Signed-in users can that come to the Bing homepage will see your industry news feed under the personalized info from your organization.
+Signed-in users that come to the Bing homepage will see your industry news feed under the personalized info from your organization.  
 
 :::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Screenshot of image carousel with industry news from the web":::
 
