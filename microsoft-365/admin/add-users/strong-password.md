@@ -36,15 +36,15 @@ You must also connect to Microsoft 365 with PowerShell.
 
 1. [Connect to Microsoft 365 with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-2. Using PowerShell, you can disable strong passwords for all users with the following command:
+2. Using PowerShell, you can turn on strong password requirements for all users with the following command:
 
     ```powershell
-    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $true
 
-3. You can disable strong passwords for specific users with this command:
+3. You can turn on strong password requirements for specific users with this command:
 
     ```powershell
-    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $true
     ```
 
 > [!NOTE]
