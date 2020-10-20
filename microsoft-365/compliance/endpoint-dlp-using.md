@@ -44,13 +44,19 @@ You may want to exclude certain paths from DLP monitoring, DLP alerting, and DLP
 
 You can use this logic to construct your exclusion paths:
 
-- Valid file path that ends with ‘\’, which means only files directly under folder. For example: C:\Temp\
-- Valid file path that ends with ‘\*’, which means only files under sub-folders, besides the files directly under the folder. For example: C:\Temp\*
-- Valid file path that ends without ‘\’ or ‘\*’, which means all files directly under folder and all sub-folders. For example: C:\Temp
-- A path with wildcard between ‘\’ from each side. For example: C:\Users\*\Desktop\
-- A path with wildcard between ‘\’ from each side and with ‘(number)’ to give exact number of subfolders. For example: C:\Users\*(1)\Downloads\
-- A path with SYSTEM environment variables. For example: %SystemDrive%\Test\*
-- A mix of all the above. For example: %SystemDrive%\Users\*\Documents\*(2)\Sub\
+- Valid file path that ends with ‘\’, which means only files directly under folder. <br/>For example: C:\Temp\
+
+- Valid file path that ends with ‘\*’, which means only files under sub-folders, besides the files directly under the folder. <br/>For example: C:\Temp\*
+
+- Valid file path that ends without ‘\’ or ‘\*’, which means all files directly under folder and all sub-folders. <br/>For example: C:\Temp
+
+- A path with wildcard between ‘\’ from each side. <br/>For example: C:\Users\*\Desktop\
+
+- A path with wildcard between ‘\’ from each side and with ‘(number)’ to give exact number of subfolders. <br/>For example: C:\Users\*(1)\Downloads\
+
+- A path with SYSTEM environment variables. <br/>For example: %SystemDrive%\Test\*
+
+- A mix of all the above. <br/>For example: %SystemDrive%\Users\*\Documents\*(2)\Sub\
 
 ### Service domains
 
