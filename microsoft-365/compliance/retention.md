@@ -234,7 +234,7 @@ To understand how and why one retention label is applied rather than another, it
 - Retention labels applied from a label policy are explicitly assigned
 - Retention labels applied automatically from an auto-apply policy are implicitly assigned
 
-An explicitly assigned retention label takes precedence over an implicitly assigned retention label. For more information, see the [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence) section on this page.
+An explicitly assigned retention label takes precedence over an implicitly assigned retention label.
 
 #### Monitoring retention labels
 
@@ -289,7 +289,7 @@ For more information about how retention policies and retention labels work toge
 
 ## The principles of retention, or what takes precedence?
 
-It's possible or even likely that content might have several retention policies and retention labels applied to it, each with a different action (retain, delete, or retain and then delete) and retention period. What takes precedence? 
+It's possible or even likely that content might have several retention policies and a retention label applied to it, each with a different action (retain, delete, or retain and then delete) and retention period. What takes precedence? 
 
 At a high level, you can be assured that retention always takes precedence over deletion, and then the longest retention period wins. 
 
@@ -302,9 +302,9 @@ Explanation for the four different levels:
 1. **Retention wins over deletion.** Suppose that one retention policy is configured to delete Exchange email after three years, but another retention policy is configured to retain Exchange email for five years and then delete it. Any content that reaches three years old will be deleted and hidden from the users' view, but still retained in the Recoverable Items folder until the content reaches five years old, when it is permanently deleted. 
 2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period.
     
-3. **Explicit inclusion wins over implicit inclusion.** This means: 
+3. **Explicit wins over implicit.** This means: 
     
-    1. If a retention label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that retention label takes precedence over both a retention policy assigned at the site or mailbox level and a default retention label assigned to the document library. For example, if the explicit retention label is configured to retain content for ten years, but a retention policy assigned to the site is configured to retain content for only five years, the retention label takes precedence. Auto-applied retention labels are considered implicit rather than explicit, because they're applied automatically by Microsoft 365.
+    1. Retention labels (however they are assigned) provide explicit retention because the retention settings are applied to individual items. In comparison, retention policies provide implicit retention because items inherit the retention from their container. This means that an applied retention label takes precedence over any retention policy.
     
     2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive account, that retention policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive accounts but doesn't specifically include that user's mailbox.
     
