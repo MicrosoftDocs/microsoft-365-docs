@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Teams device usage"
+title: "Microsoft 365 Reports in the admin center - Microsoft Teams device usage"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -43,10 +43,10 @@ Select **Choose columns** to add or remove columns from the report.  <br/> ![Tea
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
   
-|Item|Description|
+|||
 |:-----|:-----|
 |**Metric**|**Definition**|
-|User name  <br/> |The display name of the user. You can click the display name to go to the user's setting page in the Microsoft Teams admin center.  <br/> |
+|User name  <br/> |The display name of the user.  <br/> |
 |Windows  <br/> |Selected if the user was active in the Teams desktop client on a Windows-based computer.  <br/> |
 |Mac  <br/> |Selected if the user was active in the Teams desktop client on a macOS computer.  <br/> |
 |iOS  <br/> |Selected if the user was active on the Teams mobile client for iOS.  <br/> |
@@ -56,4 +56,5 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |Web  <br/> |Selected if the user was active in the Teams web client on devices.|
 |Last activity date (UTC)  <br/> |The last date (UTC) that the user participated in a Teams activity .  <br/> |
 |Is licensed|Selected if the user is licensed to use Teams.|
+|Total Teams activity|Total number of Teams activities over the selected time period. |
 |||
