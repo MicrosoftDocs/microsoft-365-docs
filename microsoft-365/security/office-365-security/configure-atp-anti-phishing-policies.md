@@ -166,12 +166,14 @@ Use the following procedures to modify ATP anti-phishing policies: a new policy 
 
     To edit an existing entry, select the protected user in the list.
 
+       **Note**: In the Security & Compliance Center, you can enter a maximum of 60 users. In Exchange Online PowerShell, you can enter a maximum of 60 users.
+       
    - **Add domains to protect**: Configure one or both of the following settings:
 
      - **Automatically include the domains I own**: The default value is **Off**. To turn it on, slide the toggle to **On**.
      - **Include custom domains**: The default value is **Off**. To turn it on, slide the toggle to **On**, and in the **Add domains** box, enter the domain name (for example, contoso.com), press ENTER, and repeat as necessary.
 
-       **Note**: In the Security & Compliance Center, you can enter a maximum of 20 domains. In Exchange Online PowerShell, you can enter a maximum of 50 domains.
+       **Note**: In the Security & Compliance Center, you can enter a maximum of 50 domains. In Exchange Online PowerShell, you can enter a maximum of 50 domains.
 
    - **Actions**: Click **Edit**
 
