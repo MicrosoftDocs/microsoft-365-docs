@@ -2,8 +2,8 @@
 title: "Set Analyze advanced settings in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -19,7 +19,7 @@ description: "Learn how to configure advanced settings, including near-duplicate
 ms.custom: seo-marvel-apr2020
 ---
 
-# Set Analyze advanced settings in Advanced eDiscovery
+# Set Analyze advanced settings in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
