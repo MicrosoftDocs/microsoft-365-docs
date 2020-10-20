@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 10/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -99,21 +99,21 @@ You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-3
 
 ## Plan for and deploy
 
-There are three ways to plan for deploy the products, features, and components of Microsoft 365 for enterprise:
+There are three ways to plan for and deploy the products, features, and components of Microsoft 365 for enterprise:
 
-- In partnership with FastTrack:
+- In partnership with FastTrack
 
    With FastTrack, Microsoft engineers help you move to the cloud at your own pace. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
-- With the help of Microsoft Consulting Services or a [Microsoft partner](https://partner.microsoft.com/):
+- With the help of Microsoft Consulting Services or a [Microsoft partner](https://partner.microsoft.com/)
 
    Consultants can analyze your current infrastructure and help you develop a plan to incorporate all the software and services of Microsoft 365 for enterprise.
 
-- Do it yourself:
+- Do it yourself
 
-   Start with [Networking roadmap](networking-roadmap-microsoft-365.md) to build out or verify your existing infrastructure and productivity workloads.
+   Start with the [Networking roadmap](networking-roadmap-microsoft-365.md) to build out or verify your existing infrastructure and productivity workloads.
 
-For an example of how a fictional but representative multinational organization has deployed Microsoft 365 for enterprise, see the [Contoso Corporation](contoso-overview.md).
+For an example of how a fictional but representative multinational organization has deployed Microsoft 365 for enterprise, see the [Contoso Corporation case study](contoso-overview.md).
 
 ## Additional Microsoft 365 products
 
