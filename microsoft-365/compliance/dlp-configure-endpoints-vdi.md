@@ -26,23 +26,21 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 - Virtual desktop infrastructure (VDI) devices
 
 >[!WARNING]
-> Microsoft 365 Endpoint data loss prevention support for Windows Virtual Desktop multi-user scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However single session scenarios on Windows Virtual Desktop are fully supported.
+> Microsoft 365 Endpoint data loss prevention support for Windows Virtual Desktop supports single session scenarios. Multi-session scenarios on Windows Virtual Desktop are currently not supported.
 
-## Onboard non-persistent virtual desktop infrastructure (VDI) devices
+## Onboard VDI devices
 
 Microsoft 365 Endpoint data loss prevention supports non-persistent VDI session onboarding. 
 
 >[!Note]
->To onboard non-persistent VDI sessions, VDI devices must be on Windows 10.
->
->While other Windows versions might work, only Windows 10 is supported.
+>To onboard non-persistent VDI sessions, VDI devices must be on Windows 10 1809 or higher.
 
 There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
 - Instant early onboarding of a short-lived sessions, which must be onboarded to  Microsoft 365 Endpoint data loss prevention prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
-VDI devices can appear in Microsoft 365 Endpoint data loss prevention portal as either:
+VDI devices can appear in the Microsoft 365 Compliance center as either:
 
 - Single entry for each device.  
 Note that in this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
@@ -53,38 +51,37 @@ The following steps will guide you through onboarding VDI devices and will highl
 >[!WARNING]
 > For environments where there are low resource configurations, the VDI boot procedure might slow the Microsoft 365 Endpoint data loss prevention onboarding. 
 
-1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard.
+1.  Open the VDI configuration package .zip file (*DeviceCompliancePackage.zip*) that you downloaded from the service onboarding wizard.
 
-    1.  In the navigation pane, select **Settings** > **Onboarding**.
+2.  In the navigation pane, select **Settings** > **Device onboarding** > **Onboarding**.
 
-    1. Select Windows 10 as the operating system.
+3. In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
 
-    1.  In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
+5. Click **Download package** and save the .zip file.
 
-    1. Click **Download package** and save the .zip file.
+6. Copy the files from the DeviceCompliancePackage folder extracted from the .zip file into the `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. 
 
-2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. 
+7. If you are not implementing a single entry for each device, copy DeviceComplianceOnboardingScript.cmd.
 
-    1. If you are not implementing a single entry for each device, copy WindowsDefenderATPOnboardingScript.cmd.
-
-    1. If you are implementing a single entry for each device, copy both Onboard-NonPersistentMachine.ps1 and WindowsDefenderATPOnboardingScript.cmd.
+8. If you are implementing a single entry for each device, copy both Onboard-NonPersistentMachine.ps1 and DeviceComplianceOnboardingScript.cmd.
     
     > [!NOTE]
     > If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose the **Show hidden files and folders** option from File Explorer.
 
-3. Open a Local Group Policy Editor window and navigate to **Computer Configuration** > **Windows Settings** > **Scripts** > **Startup**.
+9. Open a Local Group Policy Editor window and navigate to **Computer Configuration** > **Windows Settings** > **Scripts** > **Startup**.
 
    > [!NOTE]
    > Domain Group Policy may also be used for onboarding non-persistent VDI devices.
 
-4. Depending on the method you'd like to implement, follow the appropriate steps: <br>
-   **For single entry for each device**:<br>
+4. Depending on the method you'd like to implement, follow the appropriate steps:
+
+   **For single entry for each device**
    
    Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`.
    
    **For multiple entries for each device**:
    
-   Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
+   Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `DeviceComplianceOnboardingScript.cmd`.
 
 5. Test your solution:
 
