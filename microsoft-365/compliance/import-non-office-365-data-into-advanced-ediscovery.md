@@ -76,7 +76,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
     For more details on Advanced eDiscovery Processing, see [Run the Process module and load data in Advanced eDiscovery (classic)](run-the-process-module-and-load-data-in-advanced-ediscovery.md). 
     
     > [!IMPORTANT]
-    > There must be one root folder per user and the folder name must be in the  *alias@domainname*  format. 
+    > There must be one root folder per user and the folder name must be in the <b>alias@domainname</b>  format. 
    
     > [!IMPORTANT]
     > Once the container is successfully processed in Advanced eDiscovery, you will no longer be able to add new content to the SAS storage in Azure. If you collect additional content and you want to add it to the case for Advanced eDiscovery analysis, you must create a new **Non-Office 365 data** container and repeat this procedure. 
