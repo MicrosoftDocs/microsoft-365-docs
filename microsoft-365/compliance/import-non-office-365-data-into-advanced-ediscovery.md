@@ -32,15 +32,15 @@ Not all documents that you may need to analyze with Advanced eDiscovery will liv
 
 Using the upload Non-Office 365 feature as described in this procedure requires that you have:
   
-- An Office 365 E3 with Advanced Compliance add-on or E5 subscription
+- An Office 365 E3 with Advanced Compliance add-on or E5 subscription.
     
-- All custodians whose non-Office 365 content will be uploaded must have E3 with Advanced Compliance add-on or E5 licenses
+- All custodians whose non-Office 365 content will be uploaded must have E3 with Advanced Compliance add-on or E5 licenses.
     
-- An existing eDiscovery case
+- An existing eDiscovery case.
     
-- All the files for uploading gathered into folders where there is one folder per custodian and the folders' name is in this format  *alias@domainname*  . The  *alias@domainname*  must be users Office 365 alias and domain. You can collect all the  *alias@domainname*  folders into a root folder. The root folder can only contain the  *alias@domainname*  folders, there must be no loose files in the root folder 
+- All the files for uploading gathered into folders where there is one folder per custodian and the folders' name is in this format  *alias@domainname*  . The  *alias@domainname*  must be users Office 365 alias and domain. You can collect all the  *alias@domainname*  folders into a root folder. The root folder can only contain the  *alias@domainname*  folders, there must be no loose files in the root folder.
     
-- An account that is either an eDiscovery Manager or eDiscovery Administrator
+- An account that is either an eDiscovery Manager or eDiscovery Administrator.
     
 - [Microsoft Azure Storage Tools](https://aka.ms/downloadazcopy) installed on a computer that has access to the non-Office 365 content folder structure. 
     

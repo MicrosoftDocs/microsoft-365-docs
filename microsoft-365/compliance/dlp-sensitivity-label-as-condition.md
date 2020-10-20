@@ -46,7 +46,7 @@ You can use sensitivity labels as conditions on these items and in these scenari
 
 ### Supported items
 
-|service  |item type  |available to policy tip  |enforceable  |
+|Service  |Item type  |Available to policy tip  |Enforceable  |
 |---------|---------|---------|---------|
 |Exchange    |email message         |yes         |yes         |
 |Exchange    |email attachment         |no *         |no *         |

@@ -102,7 +102,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 5. Choose **Create trainable classifier**.
 
-6. Fill in appropriate values for the `Name`, and `Description` fields of the category of items you want this trainable classifier to identify.
+6. Fill in appropriate values for the `Name` and `Description` fields of the category of items you want this trainable classifier to identify.
 
 7. Pick the SharePoint Online site, library, and folder URL for the seed content site from step 2. Choose `Add`.
 
