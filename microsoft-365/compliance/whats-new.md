@@ -165,7 +165,7 @@ Network upload is now available in United Arab Emirates.
 
 ### Sensitivity labels: New privacy option
 
-When configuring [site and group settings](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) for a label, you can now set the privacy option to **None - let user choose who can access the site**. This is useful when you want to protect content in the container by using a sensitivity label, but still let users configure the privacy setting themselves.
+When configuring [site and group settings](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) for a label, you can now set the privacy option to **None - let user choose who can access the site**. This is useful when you want to protect content in the container by using a sensitivity label, but still let users configure the privacy setting themselves.
 
 ## April 2020
 
