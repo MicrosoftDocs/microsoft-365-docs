@@ -34,22 +34,28 @@ Currently, the Azure Active Directory PowerShell for Graph module doesn't comple
 
 ## What do you need to know before you begin?
 
+
+**Operating system**
+
+You must use a 64-bit version of Windows. Support for the 32-bit version of the Microsoft Azure Active Directory Module for Windows PowerShell was discontinued in 2014.
+
 You can use the following versions of Windows:
     
   - Windows 10, Windows 8.1, Windows 8, or Windows 7 Service Pack 1 (SP1) 
     
   - Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2 SP1
 
-    > [!NOTE]
-    > - For the Azure Active Directory PowerShell for Graph module, you must use PowerShell version 5.1 or later.
-    >
-    >- For the Microsoft Azure Active Directory Module for Windows PowerShell module, you must use PowerShell version 5.1 or later, up to PowerShell version 6. You can't use PowerShell version 7. 
-    > 
-    >- For Windows 8.1, Windows 8, Windows 7 Service Pack 1 (SP1), Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2 SP1, download and install the [Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616).
-    >
-    > - Use a 64-bit version of Windows. Support for the 32-bit version of the Microsoft Azure Active Directory Module for Windows PowerShell was discontinued in October of 2014.
-    
-These procedures are intended for users who are members of a Microsoft 365 admin role. For more information, see [About admin roles](https://go.microsoft.com/fwlink/p/?LinkId=532367).
+>[!Note]
+>For Windows 8.1, Windows 8, Windows 7 Service Pack 1 (SP1), Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2 SP1, download and install the [Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616).
+
+**PowerShell**
+
+- For the Azure Active Directory PowerShell for Graph module, you must use PowerShell version 5.1 or later.
+
+- For the Microsoft Azure Active Directory Module for Windows PowerShell module, you must use PowerShell version 5.1 or later, up to PowerShell version 6. You can't use PowerShell version 7.
+       
+>[!Note]
+>These procedures are intended for users who are members of a Microsoft 365 admin role. For more information, see [About admin roles](https://go.microsoft.com/fwlink/p/?LinkId=532367).
 
 
 ## Connect with the Azure Active Directory PowerShell for Graph module
@@ -67,17 +73,17 @@ These steps are required only one time on your computer. But you will likely nee
   
 1. Open an elevated Windows PowerShell Command Prompt window (run Windows PowerShell as an administrator).
     
-2. In the **Administrator: Windows PowerShell** command window, run this command:
+2. Run this command:
     
     ```powershell
     Install-Module -Name AzureAD
     ```
 
-   If you're prompted about installing a module from an untrusted repository, type **Y** and press Enter.
+   If you're prompted to install a module from an untrusted repository, type **Y** and press Enter.
 
 ### Step 2: Connect to Azure AD for your Microsoft 365 subscription
 
-To connect to Azure Active Directory (Azure AD) for your Microsoft 365 subscription with an account name and password or with multi-factor authentication, run one of these commands from a Windows PowerShell command prompt. (It does not have to be elevated.)
+To connect to Azure Active Directory (Azure AD) for your Microsoft 365 subscription with an account name and password or with multi-factor authentication, run one of these commands from a Windows PowerShell command prompt. (It doesn't have to be elevated.)
 
 | Office 365 cloud | Command |
 |:-------|:-----|
@@ -98,7 +104,7 @@ After you connect, you can use the cmdlets for the [Azure Active Directory Power
 >[!Note]
 >Cmdlets in the Microsoft Azure Active Directory Module for Windows PowerShell have *Msol* in their name.
 
-PowerShell version 7 and later doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. For PowerShell version 7 and later, you must use the Azure Active Directory PowerShell for Graph module or Azure PowerShell.
+PowerShell version 7 and later don't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. For PowerShell version 7 and later, you must use the Azure Active Directory PowerShell for Graph module or Azure PowerShell.
 
 PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. You must run these cmdlets from Windows PowerShell.
     
@@ -133,13 +139,13 @@ If you're using multi-factor authentication, follow the instructions to provide 
 
 ### How do you know it worked?
 
-If you don't receive any error messages, you connected successfully. A quick test is to run a Microsoft 365 cmdlet, such as  **Get-MsolUser**, and see the results.
+If you don't receive an error message, you connected successfully. A quick test is to run a Microsoft 365 cmdlet, such as  **Get-MsolUser**, and see the results.
   
 If you get an error message, check the following issues:
   
-- **A common problem is an incorrect password**. Run Step 2 again. and pay close attention to the user name and password that you enter.
+- **A common problem is an incorrect password**. Run [Step 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) again, and pay close attention to the user name and password that you enter.
     
-- **The Microsoft Azure Active Directory Module for Windows PowerShell requires that the Microsoft .NET Framework 3.5.*x* feature is enabled on your computer**. It's likely that your computer has a newer version installed (for example, 4 or 4.5.*x*). But backward compatibility with older versions of the .NET Framework can be enabled or disabled. For more information, see the following topics:
+- **The Microsoft Azure Active Directory Module for Windows PowerShell requires that Microsoft .NET Framework 3.5.*x* is enabled on your computer**. It's likely that your computer has a newer version installed (for example, 4 or 4.5.*x*). But backward compatibility with older versions of the .NET Framework can be enabled or disabled. For more information, see the following articles:
     
   - For Windows Server 2012 or Windows Server 2012 R2, see [Enable .NET Framework 3.5 by using the Add Roles and Features Wizard](https://go.microsoft.com/fwlink/p/?LinkId=532368).
     
@@ -156,9 +162,10 @@ If you get an error message, check the following issues:
 
     If the version number returned is lower than *1.0.8070.2*, uninstall the Microsoft Azure Active Directory Module for Windows PowerShell and install from [Step 1](#step-1-install-the-required-software), above.
 
-- **If you receive a connection error message, see this article:** ["Connect-MsolService: Exception of type was thrown" error](https://go.microsoft.com/fwlink/p/?LinkId=532377).
+- **If you receive a connection error message**, see this article: ["Connect-MsolService: Exception of type was thrown" error](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
-- **If you receive a "Get-Item : Cannot find path" error message, run this command:** 
+- **If you receive a "Get-Item : Cannot find path" error message**, run this command:
+-  
 
    ```powershell
      (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name

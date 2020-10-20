@@ -60,4 +60,4 @@ Select from the following topics to learn how to use PowerShell for Microsoft 36
 
 - [**Skype for Business Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 
-    Start here if you've installed the PowerShell modules and want to manage of Skype for Business Online.
+    Start here if you've installed the PowerShell modules and want to manage Skype for Business Online.
