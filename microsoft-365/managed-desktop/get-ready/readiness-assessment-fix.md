@@ -125,7 +125,7 @@ Windows 10 devices in your Azure AD organization must be automatically enrolled 
 
 **Not ready**
 
-Users in your Azure AD organization aren't automatically enrolled in Microsoft Intune. Change the MDM User scope to **Some** or **All**. If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups**.
+Users in your Azure AD organization aren't automatically enrolled in Microsoft Intune. Change the MDM User scope to **Some** or **All**. If you choose. Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups**.
 
 
 ### Microsoft Store for Business

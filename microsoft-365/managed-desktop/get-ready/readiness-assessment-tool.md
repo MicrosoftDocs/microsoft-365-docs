@@ -15,7 +15,7 @@ ms.topic: article
 
 For the smoothest possible experience when you enroll in Microsoft Managed Desktop, there are a number of settings and other parameters you must set ahead of time. You can use this tool to check those settings and receive detailed steps for fixing any that aren't right.
 
-The tool checks settings in Microsoft Endpoint Manager (specifically, Microsoft Intune), Azure Active Directory (Azure AD), and Microsoft 365 to ensure they will work with Microsoft Managed Desktop. Microsoft Managed Desktop retains the data associated with these checks for 12 months after you the last time you run a check in your Azure AD organization (tenant).  After 12 months, we retain it in de-identified form.  You can choose to delete the data we collect.
+The tool checks settings in Microsoft Endpoint Manager (specifically, Microsoft Intune), Azure Active Directory (Azure AD), and Microsoft 365 to ensure they will work with Microsoft Managed Desktop. Microsoft Managed Desktop retains the data associated with these checks for 12 months after the last time you run a check in your Azure AD organization (tenant).  After 12 months, we retain it in de-identified form.  You can choose to delete the data we collect.
  
 The assessment tool checks these items:
 
@@ -56,7 +56,7 @@ The assessment tool checks these items:
 |Standard user role     | Verifies that users are standard users and do not have local administrator rights         |
 
 
-## Microsft 365 Apps for enterprise settings
+## Microsoft 365 Apps for enterprise settings
 
 |Check  |Description  |
 |---------|---------|
