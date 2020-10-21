@@ -78,7 +78,7 @@ For more information, see this [overview of Windows Autopilot](https://docs.micr
 
 ## Admin technical resources for endpoint management
 
-- [Device management roadmap for Microsoft 365](../enterprise/device-management-roadmap-microsoft-365?view=o365-worldwide.md)
+- [Device management roadmap for Microsoft 365](../enterprise/device-management-roadmap-microsoft-365.md)
 - [How to enroll different types of devices for mobile device management](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [How to educate your end users about Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  
