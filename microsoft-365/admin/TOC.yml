@@ -82,7 +82,7 @@
           href: services-in-china/apply-for-a-fapiao.md
         - name: Azure Information Protection parity
           href: services-in-china/parity-between-azure-information-protection.md      
-    - name: Manage users and groups
+    - name: Manage users, groups, and passwords
       href: add-users/index.yml
       items: 
         - name: Users
@@ -109,14 +109,6 @@
              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
            - name: Restore a user
              href: add-users/restore-user.md
-           - name: Reset passwords
-             href: add-users/reset-passwords.md
-           - name: Set passwords to never expire
-             href: add-users/set-password-to-never-expire.md
-           - name: Let users reset passwords
-             href: add-users/let-users-reset-passwords.md
-           - name: Resend user passwords
-             href: add-users/resend-user-password.md
            - name: Create template to add users
              href: add-users/create-and-use-a-template-to-add-users.md
            - name: Upgrade users to the latest apps 
@@ -137,6 +129,20 @@
              href: create-groups/restore-deleted-group.md
            - name: Manage guest access to groups
              href: create-groups/manage-guest-access-in-groups.md
+        - name: Passwords 
+          items:
+           - name: Reset passwords
+             href: add-users/reset-passwords.md
+           - name: Let users reset passwords
+             href: add-users/let-users-reset-passwords.md
+           - name: Set passwords to never expire
+             href: add-users/set-password-to-never-expire.md
+           - name: Resend user passwords
+             href: add-users/resend-user-password.md
+           - name: Turn off strong passwords
+             href: add-users/strong-password.md
+           - name: Set the password expiration policy
+             href: manage/set-password-expiration-policy.md
     - name: Manage email and calendars
       href: email/index.yml
       items: 
