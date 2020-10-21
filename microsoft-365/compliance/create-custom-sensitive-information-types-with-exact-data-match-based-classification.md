@@ -20,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Create custom sensitive information types with Exact Data Match based classification
 
-[Custom sensitive information types](custom-sensitive-info-types.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type based on:
+[Custom sensitive information types](custom-sensitive-info-types.md) are used to help identify sensitive items so that you can help prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type based on:
 
 - patterns
 - keyword evidence such as *employee*, *badge*, or *ID*
@@ -31,7 +31,7 @@ ms.custom: seo-marvel-apr2020
 
 But what if you wanted a custom sensitive information type that uses exact data values, instead of one that found matches based on generic patterns? With Exact Data Match (EDM)-based classification, you can create a custom sensitive information type that is designed to:
 
-- be dynamic and refreshable
+- be dynamic and easily refreshed
 - be more scalable
 - result in fewer false-positives
 - work with structured sensitive data
