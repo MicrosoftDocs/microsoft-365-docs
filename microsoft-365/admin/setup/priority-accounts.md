@@ -64,7 +64,7 @@ You can monitor the email status of your priority accounts in the Microsoft 365 
 
 ## Email issues for priority accounts
 
-You can track email issues for priority accounts by going to the the **Email issues for priority accounts** report in the Exchange admin center. For more info, check out [Email issues for priority accounts](https://review.docs.microsoft.com/en-us/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts?branch=Priority-chrisda).
+You can track email issues for priority accounts by going to the the **Email issues for priority accounts** report in the Exchange admin center. For more info, check out [Email issues for priority accounts](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).
 
 ## Remove a user from the priority accounts list
 

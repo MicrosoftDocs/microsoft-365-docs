@@ -123,7 +123,7 @@ In Exchange Online, retention labels are made available to end users by a proces
    ```
 
    ```powershell
-   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}   ```
+   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}
 
 In the results, the `ELCLastSuccessTimeStamp` (UTC) property shows when the system last processed your mailbox. If it has not happened since the time you created the policy, the labels are not going to appear. To force processing, run  `Start-ManagedFolderAssistant -Identity <user>`.
     
