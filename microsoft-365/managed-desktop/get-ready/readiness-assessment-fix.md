@@ -31,12 +31,12 @@ You shouldn't have any existing Autopilot profiles that target assigned or dynam
 **Not ready**
 
 You have an Autopilot profile that is assigned to all devices. Reset the profile to target an assigned or dynamic Azure AD group that doesn't include the Microsoft Managed Desktop that will be created at enrollment {HOW WILL THEY KNOW WHAT THAT'S CALLED?}. For steps, see 
-[Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot).
+[Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot). After Microsoft Managed Desktop enrollment, set your Autopilot policy to exclude the **Modern Workplace Devices -All** Azure AD group.
 
 **Advisory**
 
 Make sure that your Autopilot profiles target an assigned or dynamic Azure AD group that doesn't include the Microsoft Managed Desktop that will be created at enrollment. For steps, see 
-[Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot).
+[Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot). After Microsoft Managed Desktop enrollment, set your Autopilot policy to exclude the **Modern Workplace Devices -All** Azure AD group.
 
 
 ### Certificate connectors
@@ -59,7 +59,7 @@ You have at least one certificate connector and no errors are reported. However,
 
 ### Conditional access policies
 
-Conditional access policies in your Azure AD organization must not target any Microsoft Manage Desktop devices or users.
+Conditional access policies in your Azure AD organization must not target any Microsoft Manage Desktop users.
 
 **Not ready**
 
@@ -94,7 +94,7 @@ You have at least one configuration policy that targets all users, all devices, 
 
 **Advisory**
 
-Make sure that any compliance policies you have don't include any Microsoft Managed Desktop devices. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure).
+Make sure that any compliance policies you have don't include any Microsoft Managed Desktop devices or users. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure).
 
 
 
@@ -130,15 +130,30 @@ Users in your Azure AD organization aren't automatically enrolled in Microsoft I
 
 ### Microsoft Store for Business
 
-We use Microsoft Store for Business so that we can use Company Portal to deploy some apps, such as Microsoft Project and Microsoft Visio.
+We use Microsoft Store for Business so that you can download Company Portal to deploy some apps, such as Microsoft Project and Microsoft Visio.
 
 **Not ready**
 
 Microsoft Store for Business either isn't enabled or isn't synced with Intune. For more information, see [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) and [Install Intune Company Portal on on devices](../get-started/company-portal.md).
 
+### Multi-factor authentication
+
+Multi-factor authentication must not accidentally be applied to Microsoft Managed Desktop service accounts.
+
+
+**Not ready**
+
+You have some multi-factor authentication (MFA) policies set as "required" for conditional access policies that are assigned to all users. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For steps, see [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+
+**Advisory**
+
+Make sure that any conditional access policies that require MFA exclude the **Modern Workplace -All** Azure AD group. For steps, see [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). The **Modern Workplace -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
+
+
+
 ### PowerShell scripts
 
-Windows PowerShell scripts arecan't be assigned in a way that would target Microsoft Managed Desktop devices.  
+Windows PowerShell scripts can't be assigned in a way that would target Microsoft Managed Desktop devices.  
 
 **Advisory**
 
@@ -226,7 +241,7 @@ Enterprise State Roaming should be enabled.
 
 **Advisory**
 
-Make sure that Enterprise State Roaming is enabled for all or for select groups {ARE "ALL" AND "SELECTED AZURE AD" GROUP NAMES? I'm trying to suss out the required capitalization and formatting, you see}. For more information, see [Enable Enterprise State Roaming in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable).
+Make sure that Enterprise State Roaming is enabled for **All** or for **Selected** groups. For more information, see [Enable Enterprise State Roaming in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable).
 
 ### Licenses
 
@@ -235,20 +250,6 @@ A number of licenses are required to use Microsoft Managed Desktop.
 **Not Ready**
 
 You don't have all the licenses you need to use Microsoft Managed Desktop. For more information, see [Microsoft Managed Desktop technologies](../intro/technologies.md) and [More about licenses](prerequisites.md#more-about-licenses).
-
-
-### Multi-factor authentication {BELONGS IN INTUNE? Elaine to advise}
-
-Multi-factor authentication must not accidentally be applied to Microsoft Managed Desktop service accounts.
-
-
-**Not ready**
-
-You have some multi-factor authentication (MFA) policies set as "required" for conditional access policies that are assigned to all users. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For steps, see [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
-
-**Advisory**
-
-Make sure that any conditional access policies that require MFA exclude the **Modern Workplace -All** Azure AD group. For steps, see [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). The **Modern Workplace -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
 
 
 ### Security account names
@@ -293,7 +294,7 @@ SSPR must be enabled for all users. If it isn't, the Microsoft Managed Desktop s
 
 **Advisory**
 
-Make sure that the SSPR **Selected** setting doesn't include any Microsoft Managed Desktop devices.
+Make sure that the SSPR **Selected** setting includes Microsoft Managed Desktop devices.
 
 ### Standard user role
 
@@ -301,7 +302,7 @@ Microsoft Managed Desktop users should be standard users without local administr
 
 **Advisory**
 
-{Microsoft Managed Desktop users shouldn't have local administrator privileges prior to enrolling.
+Microsoft Managed Desktop users shouldn't have local administrator privileges prior to enrolling.
 
 ## Microsoft 365 Apps for enterprise
 

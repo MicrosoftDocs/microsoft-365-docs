@@ -32,6 +32,7 @@ The assessment tool checks these items:
 |Enrollment Status Page     | Confirms that Enrollment Status Page is not enabled      |
 |Intune enrollment     | Verifies that Windows 10 devices in your Azure AD organization are automatically enrolled in Intune         |
 |Microsoft Store for Business     | Confirms that Microsoft Store for Business is enabled and synced with Intune        |
+|Multi-factor authentication | Verifies that multi-factor authentication isn't applied to Microsoft Managed Desktop service accounts.
 |PowerShell scripts     | Checks that Windows PowerShell scripts are *not* assigned in a way that would target Microsoft Managed Desktop devices    |
 |Region     | Checks that your region is supported by Microsoft Managed Desktop        |
 |Security baselines     | Checks that the security baseline profile doesn't target all users or all devices (Security baseline policies should *not* target any Microsoft Managed Desktop devices.)       |
