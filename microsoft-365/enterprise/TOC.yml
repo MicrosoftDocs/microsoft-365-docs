@@ -271,6 +271,11 @@
       items: 
         - name: Add a domain
           href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+
+    - name: Manage
+      items: 
+        - name: Microsoft 365 service health status
+          href: microsoft-365-service-health.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
@@ -732,9 +737,6 @@
       href: contoso-info-protect.md
     - name: Security summary
       href: contoso-security-summary.md
-
-- name: Microsoft 365 service health status
-  href: microsoft-365-service-health.md
 
 - name: Microsoft 365 compliance
   href: ../compliance/index.yml
