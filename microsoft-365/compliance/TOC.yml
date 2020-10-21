@@ -250,7 +250,9 @@
         - name: How DLP works between the Security & Compliance Center and Exchange admin center
           href: how-dlp-works-between-admin-centers.md
         - name: Use sensitivity labels as a condition in DLP policies (preview)
-          href: dlp-sensitivity-label-as-condition.md  
+          href: dlp-sensitivity-label-as-condition.md
+        - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
+          href: dlp-use-policies-non-microsoft-cloud-apps.md  
 - name: Manage information governance
   items: 
     - name: Govern your data
@@ -630,9 +632,11 @@
             - name: Document metadata fields
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: Set up attorney-client privilege detection
-              href: attorney-privilege-detection.md           
+              href: attorney-privilege-detection.md
             - name: Conversation review sets
               href: conversation-review-sets.md
+            - name: CJK language support
+              href: ediscovery-cjk-support.md
             - name: Assign eDiscovery permissions
               href: assign-ediscovery-permissions.md
             - name: Keyword queries and search conditions
@@ -835,8 +839,14 @@
           href: auditing-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log
           href: use-sharing-auditing.md
-        - name: Search for eDiscovery activities in the audit log
-          href: search-for-ediscovery-activities-in-the-audit-log.md
+        - name: Office 365 Management Activity API
+          items:
+            - name: Office 365 Management Activity API reference
+              href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference  
+            - name: Office 365 Management Activity API schema
+              href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema 
+            - name: Office 365 Management Activity API FAQs and troubleshooting
+              href: https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
     - name: Mailbox auditing
       href: enable-mailbox-auditing.md
     - name: Advanced Audit

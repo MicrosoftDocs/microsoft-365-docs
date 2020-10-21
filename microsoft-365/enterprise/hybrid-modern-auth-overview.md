@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 08/25/2020
+ms.date: 10/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -156,6 +156,7 @@ Verify and check these items off your list before you continue:
     Clients and/or protocols that are not listed (e.g., POP3) do not support modern authentication with on-premises Exchange and continue to leverage legacy authentication mechanisms even after modern authentication is enabled in the environment.
 
 - **General prerequisites**
+  - Resource forest scenarios will require a two-way trust with the account forest to ensure proper SID lookups are performed during hybrid modern authentication requests. 
   - If you use AD FS, you should have Windows 2012 R2 AD FS 3.0 and above for federation.
   - Your identity configurations are any of the types supported by Azure AD Connect, such as password hash sync, pass-through authentication, and on-premises STS supported by Office 365.
   - You have Azure AD Connect configured and functioning for user replication and sync.

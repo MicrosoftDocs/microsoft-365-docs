@@ -19,6 +19,9 @@ description: "Admins can learn how to identify specific groups of users with use
 
 # User tags in Office 365 ATP
 
+> [!NOTE]
+> The user tags feature is in Preview, isn't available to everyone, and is subject to change. For information about the release schedule, check out the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+
 User tags are identifiers for specific groups of users in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). There are two types of user tags:
 
 - **System tags**: Currently, [Priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) is the only type of system tag.
