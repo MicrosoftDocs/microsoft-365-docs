@@ -121,9 +121,9 @@ Contoso's IT department determined the following mapping of business needs to Mi
 |  | Increase creativity and innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Security |  |  |
 |  | Identity & access management | Dedicated global administrator accounts with Azure Multi-Factor Authentication (MFA) and Azure AD Privileged Identity Management (PIM) <BR> MFA for all user accounts <BR> Conditional Access <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Threat protection | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Microsoft 365 threat investigation and response <BR> |
+|  | Threat protection | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Microsoft Defender for Office 365 <BR> Microsoft 365 threat investigation and response <BR> |
 |  | Information protection | Azure Information Protection <BR> Data Loss Prevention (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | Security management | Azure Security Center  <BR> Windows Defender Security Center |
+|  | Security management | Azure Defender*  <BR> Windows Defender Security Center |
 | Remote and mobile access and business partners |  |  |
 |  | Better security for remote and mobile workers | Microsoft Intune |
 |  | Reduce remote access infrastructure for employees | Microsoft 365 workloads and cloud-based data |

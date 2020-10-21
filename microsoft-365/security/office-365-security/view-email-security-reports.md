@@ -265,13 +265,13 @@ To go back to the report view, click **View report**.
 
 ## Threat protection status report
 
-The **Threat protection status** report is available in both EOP and Office 365 ATP; however, the reports contain different data. For example, EOP customers can view information about malware detected in email, but not information about [malicious files detected by ATP for SharePoint, OneDrive, or Microsoft Teams](atp-for-spo-odb-and-teams.md).
+The **Threat protection status** report is available in both EOP and Microsoft Defender for Office 365; however, the reports contain different data. For example, EOP customers can view information about malware detected in email, but not information about [malicious files detected by ATP for SharePoint, OneDrive, or Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
-The report provides the count of email messages with malicious content, such as files or website addresses (URLs) that were blocked by the anti-malware engine, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), and ATP features like [Safe Links](atp-safe-links.md), [Safe Attachments](atp-safe-attachments.md), and [ATP anti-phishing](set-up-anti-phishing-policies.md). You can use this information to identify trends or determine whether organization policies need adjustment. It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.
+The report provides the count of email messages with malicious content, such as files or website addresses (URLs) that were blocked by the anti-malware engine, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), and Defender for Office 365 features like [Safe Links](atp-safe-links.md), [Safe Attachments](atp-safe-attachments.md), and [Anti-phishing](set-up-anti-phishing-policies.md). You can use this information to identify trends or determine whether organization policies need adjustment. It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Threat protection status**. To go directly to the report, open one of the following URLs:
 
-- Office 365 ATP: <https://protection.office.com/reportv2?id=ATPV2AggregateReport>.
+- Microsoft Defender for Office 365: <https://protection.office.com/reportv2?id=ATPV2AggregateReport>.
 - EOP: <https://protection.office.com/reportv2?id=ATPAggregateLightReport>
 
 ![Threat protection status widget in the Reports dashboard](../../media/threat-protection-status-report-widget.png)
@@ -290,7 +290,7 @@ The following views are available:
 
   ![Overview view in the Threat protection status report](../../media/threat-protection-status-report-overview-view.png)
 
-- **View data by: Content \> Malware**<sup>1</sup>: The following information is shown for Office 365 ATP organizations:
+- **View data by: Content \> Malware**<sup>1</sup>: The following information is shown for Microsoft Defender for Office 365 organizations:
 
   - **Anti-malware engine**
   - **File detonation**
@@ -360,12 +360,12 @@ If you click **Filters**, you can modify the report with the following filters:
 
 - **Start date** and **End date**
 - **Detection**
-- **Protected by**: **ATP** or **EOP**
+- **Protected by**: **Defender for Office 365** or **EOP**
 - **Tag**: filter by tag to return users or groups that have had a specific tag applied. For more information about user tags, see [User tags](user-tags.md).
 - **Domain**
 
 > [!NOTE]
-> **Protected by**, **Tag** and **Domain** are Office 365 ATP only. These filterable properties are not available in **View data by: Content \> Malware**.
+> **Protected by**, **Tag** and **Domain** are Defender for Office 365 only. These filterable properties are not available in **View data by: Content \> Malware**.
 
 ### Details table view for the Threat protection status report
 
@@ -400,7 +400,7 @@ If you click **Filters**, you can modify the report with the following filters:
 
 - **Start date** and **End date**
 - **Detection**
-- **Protected by** (Office 365 ATP only): **ATP** or **EOP**
+- **Protected by**: **Defender for Office 365** or **EOP**
 - **Tag**: filter by tag to return users or groups that have had a specific tag applied. For more information about user tags, see [User tags](user-tags.md).
 - **Domain**
 - **Recipients** (Note that this filterable property is only available in the details table view)
@@ -426,7 +426,7 @@ If you click **Filters** in the report view or details table view, you can speci
 
 ## URL threat protection report
 
-The **URL threat protection report** is available in Office 365 Advanced Threat Protection (ATP). For more information, see [URL threat protection report](view-reports-for-atp.md#url-threat-protection-report).
+The **URL threat protection report** is available in Microsoft Defender for Office 365. For more information, see [URL threat protection report](view-reports-for-atp.md#url-threat-protection-report).
 
 ## User-reported messages report
 
@@ -480,4 +480,4 @@ If you are not seeing data in your reports, double-check that your policies are 
 
 [View mail flow reports in the Security & Compliance Center](view-mail-flow-reports.md)
 
-[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
+[View reports for Defender for Office 365](view-reports-for-atp.md)

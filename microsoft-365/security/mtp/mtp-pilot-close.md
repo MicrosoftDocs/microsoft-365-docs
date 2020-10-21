@@ -1,6 +1,6 @@
 ---
-title: Summarizing your pilot Microsoft Threat Protection project results 
-description: Conclude your pilot Microsoft Threat Protection project by completing your scorecard, analyzing your report findings, and deciding how to move forward.
+title: Summarizing your pilot Microsoft 365 Defender project results 
+description: Conclude your pilot Microsoft 365 Defender project by completing your scorecard, analyzing your report findings, and deciding how to move forward.
 keywords: Microsoft Threat Protection pilot, decide what to do next after pilot Microsoft Threat Protection project, what to do after evaluating Microsoft Threat Protection in production, transition from Microsoft Threat Protection pilot to deployment, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,35 +21,35 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Closing and summarizing your Microsoft Threat Protection pilot  
+# Closing and summarizing your Microsoft 365 Defender pilot  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="Plan your pilot Microsoft Threat Protection project" />
+        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="Plan your pilot Microsoft 365 Defender project" />
       <br/>Plan </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Prepare your Microsoft Threat Protection trial lab or pilot environment" />
+        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Prepare your Microsoft 365 Defender trial lab or pilot environment" />
       <br/>Prepare </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Run your Microsoft Threat Protection attack simulations" />
+        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Run your Microsoft 365 Defender attack simulations" />
       <br/>Simulate attack </a><br>
     </td>
     <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Close and summarize your Microsoft Threat Protection pilot" />
+        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Close and summarize your Microsoft 365 Defender pilot" />
       <br/>Close and summarize </a><br>
     </td>
   </tr>
@@ -71,7 +71,7 @@ ms.topic: conceptual
 
 You're currently in the closing and summarizing phase.
 
-You’ve just simulated an advanced memory-only attack that executed code remotely on a domain controller. You’ve seen how Microsoft Defender ATP and Azure ATP detects and alerts on stealthy malicious activity. You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft 365 Security Center portal, enabling SOC analysts to investigate and take necessary action. You’ve also created an advanced hunting query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.
+You’ve just simulated an advanced memory-only attack that executed code remotely on a domain controller. You’ve seen how Microsoft Defender for Endpoint and Microsoft Defender for Identity detects and alerts on stealthy malicious activity. You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft 365 Security Center portal, enabling SOC analysts to investigate and take necessary action. You’ve also created an advanced hunting query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.
 
 You’ve reached the end of the process after all tests have concluded.
 
@@ -86,7 +86,7 @@ This information should be presented to both internal stakeholders (which you’
 We hope you enjoyed this simulation and are encouraged to start implementing what you've learned.
 
 ## Next step
-Learn more about the Microsoft Threat Protection pillars through the following interactive guides:
+Learn more about the Microsoft 365 Defender pillars through the following interactive guides:
 - [Safeguard your organization with Microsoft Defender for Office 365](https://aka.ms/O365ATP-Interactive-Guide)
 - [Detect suspicious activities and potential attacks with Microsoft Defender for Identity](https://aka.ms/AATP-Interactive-Guide)
 - [Detect threats and manage alerts with Microsoft Cloud App Security](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)

@@ -31,7 +31,7 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
 
 **Enterprise-grade device management and security capabilities**:
 
-- Helps provide protection from external threats like phishing and sophisticated malware with Office 365 Advanced Threat Protection Plan 1 and Microsoft Defender Exploit Guard.
+- Helps provide protection from external threats like phishing and sophisticated malware with Microsoft Defender for Office 365 Plan 1 and Microsoft Defender Exploit Guard.
 - Helps control and manage how sensitive information is accessed and transmitted with data loss prevention policies and Azure Information Protection Plan 1.
 - Helps protect, preserve, and back up your data with Exchange Online Archiving.
 - App protection for Office and other mobile apps with Intune App Protection.
@@ -176,9 +176,9 @@ All the add-ons that can be added to Microsoft 365 Business Standard can be adde
 
 Yes, you can purchase a Business Voice subscription. [Business Voice](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice) is a telephony solution designed for small and medium businesses of up to 300 users that bundles Phone System, Audio Conferencing, a Domestic Calling Plan, and more. Phone System capabilities that you'll get include voicemail, caller ID, call park, call forwarding, auto attendants, and call queues. <br> To find out whether Business Voice is available in your country or region, see [Country and region availability for Business Voice](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability). For pricing information, see [Pricing for Business Voice](https://go.microsoft.com/fwlink/?linkid=2127221).
 
-### Can Microsoft 365 Business Premium customers use  Microsoft Defender Advanced Threat Protection?
+### Can Microsoft 365 Business Premium customers use Microsoft Defender for Endpoint?
 
-Yes, Microsoft Defender Advanced Threat Protection is available as an add-on to Microsoft 365 Business Premium when purchased from a [Microsoft Cloud Solution Provider](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
+Yes, Microsoft Defender for Endpoint is available as an add-on to Microsoft 365 Business Premium when purchased from a [Microsoft Cloud Solution Provider](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
 
 ## Partner opportunity
 

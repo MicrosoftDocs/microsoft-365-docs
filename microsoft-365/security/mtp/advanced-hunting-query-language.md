@@ -1,5 +1,5 @@
 ---
-title: Learn the advanced hunting query language in Microsoft Threat Protection
+title: Learn the advanced hunting query language in Microsoft 365 Defender
 description: Create your first threat hunting query and learn about common operators and other aspects of the advanced hunting query language
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types, powershell download, query example
 search.product: eADQiWindows 10XVcnh
@@ -25,7 +25,7 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-schema-tables.md) specifically structured for advanced hunting. To understand these concepts better, run your first query.
 
@@ -55,7 +55,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 This is how it will look like in advanced hunting.
 
-![Image of Microsoft Threat Protection advanced hunting query](../../media/advanced-hunting-query-example-2.png)
+![Image of Microsoft 365 Defender advanced hunting query](../../media/advanced-hunting-query-example-2.png)
 
 ### Describe the query and specify the tables to search
 A short comment has been added to the beginning of the query to describe what it is for. This helps if you later decide to save the query and share it with others in your organization. 

@@ -30,7 +30,7 @@ We're making some changes in the near future to make [Microsoft Secure Score](mi
 
 ### October 2020
 
-#### Remove improvement action for Microsoft Defender Advanced Threat Protection
+#### Remove improvement action for Microsoft Defender for Endpoint
 - Set Microsoft Defender SmartScreen Windows Store app web content checking to warn
 
 ## Related resources

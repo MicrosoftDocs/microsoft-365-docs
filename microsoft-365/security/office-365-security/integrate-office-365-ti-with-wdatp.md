@@ -16,11 +16,11 @@ search.appverid:
 - MOE150
 ms.collection: 
 - M365-security-compliance
-description: Use Microsoft Defender for Office 365 together with Microsoft Defender Advanced Threat Protection to get more detailed information about threats against your devices and email content.
+description: Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint to get more detailed information about threats against your devices and email content.
 ms.custom: seo-marvel-apr2020
 ---
 
-# Use Microsoft Defender for Office 365 together with Microsoft Defender Advanced Threat Protection
+# Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,7 +36,7 @@ The following image depicts what the **Devices** tab looks like have Microsoft D
 In this example, you can see that the recipients of the detected email message have four devices and one has an alert. Clicking the link for a device opens its page in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
 
 > [!TIP]
-> **[Learn more about the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (also referred to as the Microsoft Defender ATP portal.)
+> **[Learn more about the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (also referred to as the Microsoft Defender for Endpoint portal.)
   
 ## Requirements
 

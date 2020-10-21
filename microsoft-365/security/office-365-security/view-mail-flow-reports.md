@@ -309,7 +309,7 @@ This chart shows the email count organized by:
 
 <sup>1</sup> Office 365 ATP only
 
-To view the email filtered by EOP or ATP separately, click on the value in the chart legend.
+To view the email filtered by EOP or Defender for Office 365 separately, click on the value in the chart legend.
 
 The data table contains the following information, shown in descending date order:
 
@@ -416,7 +416,7 @@ The following charts are available in the report view:
   - **Malware (anti-malware)** (EOP)
   - **Spam detections**
   - **Rule messages**
-  - **Advanced malware** (Office 365 ATP)
+  - **Advanced malware** (Microsoft Defender for Office 365)
 
   When you hover over a day (data point) in the chart, you can see details for that day.
 
@@ -543,4 +543,4 @@ For more information, see [Permissions in Exchange Online](https://docs.microsof
 
 [View email security reports in the Security & Compliance Center](view-email-security-reports.md)
 
-[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
+[View reports for Microsoft Defender for Office 365](view-reports-for-atp.md)

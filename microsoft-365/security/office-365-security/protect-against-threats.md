@@ -48,7 +48,7 @@ Threat protection features are included in *all* Microsoft or Office 365 subscri
 |Anti-phishing protection|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Anti-spam protection|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Zero-hour auto purge (for email)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Protection from malicious URLs and files in email and Office documents (safe links and safe attachments)|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (**ATP**)|
+|Protection from malicious URLs and files in email and Office documents (safe links and safe attachments)|[Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (**ATP**)|
 |Turn on ATP for SharePoint, OneDrive, and Microsoft Teams workloads|[ATP](atp-for-spo-odb-and-teams.md)|
 |Advanced anti-phishing protection|[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
@@ -95,7 +95,7 @@ To learn more about anti-malware policy options, see [Configure anti-malware pol
 
 [Anti-phishing protection](anti-phishing-protection.md) is available in subscriptions that include [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Advanced anti-phishing protection is available in [ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-The following procedure describes how to configure an ATP anti-phishing policy. The steps are similar for configuring an anti-phishing policy (without ATP).
+The following procedure describes how to configure an anti-phishing policy in Microsoft Defender for Office 365. The steps are similar for configuring an anti-phishing policy (without ATP).
 
 1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** > **Policy** > **ATP anti-phishing**.
 
@@ -125,7 +125,7 @@ The following procedure describes how to configure an ATP anti-phishing policy. 
 
 5. Close the default policy settings page.
 
-To learn more about your anti-phishing policy options, see [Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md).
+To learn more about your anti-phishing policy options, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 ## Part 3 - Anti-spam protection
 
@@ -145,11 +145,11 @@ To learn more about your anti-phishing policy options, see [Configure ATP anti-p
 
 To learn more about your anti-spam policy options, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-## Part 4 - Protection from malicious URLs and files (Safe Links and Safe Attachments in Office 365 ATP)
+## Part 4 - Protection from malicious URLs and files (Safe Links and Safe Attachments in Defender for Office 365)
 
-Time-of-click protection from malicious URLs and files is available in subscriptions that include [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP). It's set up through [Safe Attachments](atp-safe-attachments.md) and [Safe Links](atp-safe-links.md) policies.
+Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP). It's set up through [Safe Attachments](atp-safe-attachments.md) and [Safe Links](atp-safe-links.md) policies.
 
-### Safe Attachments policies in Office 365 ATP
+### Safe Attachments policies in Microsoft Defender for Office 365
 
 To set up [Safe Attachments](atp-safe-attachments.md), create at least one Safe Links policy.
 
@@ -169,7 +169,7 @@ To set up [Safe Attachments](atp-safe-attachments.md), create at least one Safe 
 
 4. Review your settings and then click **Finish**.
 
-### Safe Links policies in Office 365 ATP
+### Safe Links policies in Microsoft Defender for Office 365
 
 To set up [Safe Links](atp-safe-links.md), review and edit your global settings for Safe Links, and create at least one Safe Links policy.
 
@@ -280,7 +280,7 @@ After configuring the threat protection features, make sure to monitor how those
 
 |What to do|Resources to learn more|
 |---|---|
-|See how threat protection features are working for your organization by viewing reports|[Security dashboard](security-dashboard.md)<br/>[Email security reports](view-email-security-reports.md)<br/>[Reports for Office 365 ATP](view-reports-for-atp.md)<br/>[Threat Explorer](threat-explorer.md)|
+|See how threat protection features are working for your organization by viewing reports|[Security dashboard](security-dashboard.md)<br/>[Email security reports](view-email-security-reports.md)<br/>[Reports for Microsoft Defender for Office 365](view-reports-for-atp.md)<br/>[Threat Explorer](threat-explorer.md)|
 |Periodically review and revise your threat protection policies as needed|[Secure Score](../mtp/microsoft-secure-score.md)<br/>[Smart reports and insights](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 threat investigation and response features](keep-users-safe-with-office-365-ti.md)|
 |Watch for new features and service updates|[Standard and Targeted release options](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Message Center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
-|Learn the details about recommended Standard and Strict security configurations for EOP and ATP|[Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md)|
+|Learn the details about recommended Standard and Strict security configurations for EOP and Defender for Office 365|[Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md)|

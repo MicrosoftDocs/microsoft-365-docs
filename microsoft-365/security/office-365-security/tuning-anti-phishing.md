@@ -25,15 +25,15 @@ Although Microsoft 365 comes with a variety of anti-phishing features that are e
 
 If a recipient's account was compromised as a result of the phishing message, follow the steps in [Responding to a compromised email account in Microsoft 365](responding-to-a-compromised-email-account.md).
 
-If your subscription includes Advanced Threat Protection (ATP), you can use [Office 365 Threat Intelligence](office-365-ti.md) to identify other users who also received the phishing message. You have additional options to block phishing messages:
+If your subscription includes Microsoft Defender for Office 365, you can use [Office 365 Threat Intelligence](office-365-ti.md) to identify other users who also received the phishing message. You have additional options to block phishing messages:
 
-- [Safe Links in Office 365 ATP](set-up-atp-safe-links-policies.md)
+- [Safe Links in Microsoft Defender for Office 365](set-up-atp-safe-links-policies.md)
 
-- [Safe Attachments in Office 365 ATP](set-up-atp-safe-attachments-policies.md)
+- [Safe Attachments in Microsoft Defender for Office 365](set-up-atp-safe-attachments-policies.md)
 
-- [Anti-phishing policies in Office 365 ATP](configure-atp-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
+- [Anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
 
-Verify these ATP features are turned on.
+Verify these Defender for Office 365 features are turned on.
 
 ## Report the phishing message to Microsoft
 
