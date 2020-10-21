@@ -43,6 +43,7 @@ This solution provides these key capabilities.
   From anywhere in the world and at any time, remote workers are able to access: 
 
   - Cloud-based services and data in your Microsoft 365 subscription. 
+
   - Organization resources, such those offered by on-premises application datacenters.
 
 - Secure
@@ -56,15 +57,18 @@ This solution provides these key capabilities.
 - Collaborative and productive
 
   Your remote workers can be as productive as on-premises in a highly collaborative way with:
+
   - Online meetings and chat sessions with Teams. 
+
   - Shared workspaces for cloud-based file storage with global accessibility and real-time collaboration with SharePoint and OneDrive.
+
   - Shared tasks and workflows to divide up the work and get things done. 
 
 For a seamless sign-in experience, your on-premises Active Directory Domain Services (AD DS) user accounts should be synchronized with Azure Active Directory (Azure AD). To protect your Windows 10 devices, they should be enrolled in Intune. Here is a high-level view of the infrastructure.
 
 ![The basic infrastructure for remote workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-To meet the criteria for remote workers, use these Microsoft 365 capabilities and features.
+To enable the capabilities of Microsoft 365 for your remote workers, use these Microsoft 365 features.
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
@@ -81,7 +85,7 @@ To meet the criteria for remote workers, use these Microsoft 365 capabilities an
 | Configuration Manager	| Manage software installations, updates, and settings on your devices | Requires separate Configuration Manager licenses |
 | Desktop Analytics	| Determine the update readiness of your Windows clients.	| Requires separate Configuration Manager licenses |
 | Windows Autopilot	| Set up and pre-configure new Windows 10 devices for productive use.	| Microsoft 365 E3 or E5 |
-| Microsoft Teams, Exchange Online, SharePoint Online and OneDrive, Microsoft 365 Apps, Microsoft Power Platform, Yammer, Power Apps | Create, communicate, and collaborate. | Microsoft 365 E3 or E5 |
+| Microsoft Teams, Exchange Online, SharePoint Online and OneDrive, Microsoft 365 Apps, Microsoft Power Platform, and Yammer | Create, communicate, and collaborate. | Microsoft 365 E3 or E5 |
 ||||
 
 For security and compliance criteria, see [Deploy security and compliance for remote workers](empower-people-to-work-remotely-security-compliance.md).
@@ -93,7 +97,7 @@ For a 2-page summary of this solution, see the [Empower remote workers poster](.
 
 You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) and print it on letter, legal, or tabloid (11 x 17) size paper.
 
-Use these steps to secure and optimize access to your organization's servers, data, and cloud services and enable maximum worker productivity.
+Use these steps to secure and optimize access to your organization's servers and cloud services and maximumize your remote worker's productivity.
 
 1. [Increase sign-in security with MFA](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Provide remote access to on-premises apps and services](empower-people-to-work-remotely-remote-access.md)
@@ -104,4 +108,5 @@ Use these steps to secure and optimize access to your organization's servers, da
 
 [![The steps to empower remote workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-For the latest information from Microsoft about supporting remote workers, see the [Enabling remote work Tech Community site](https://resources.techcommunity.microsoft.com/enabling-remote-work/).
+For the latest information from Microsoft about supporting remote workers, see the [Enabling hybrid work
+with Microsoft Teams site](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).

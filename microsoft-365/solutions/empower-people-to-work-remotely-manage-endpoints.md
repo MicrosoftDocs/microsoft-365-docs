@@ -23,9 +23,9 @@ description: Use Microsoft Endpoint Manager to manage your manage devices, PCs, 
 
 With remote workers, you need to support a growing number of personal devices. Endpoint management is a policy-based approach to security that requires devices to comply with specific criteria before they are granted access to resources. Microsoft Endpoint Manager delivers modern management capabilities to keep your data secure in the cloud and on-premises. 
 
-Endpoint Manager provides services and tools for managing mobile devices, desktop computers, virtual machines, embedded devices, and servers by combining the following services you may already know and be using.
+[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) provides services and tools for managing mobile devices, desktop computers, virtual machines, embedded devices, and servers by combining the following services you may already know and be using.
 
-![The components for endpoint management](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+![The components of endpoint management for Microsoft 365](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## Microsoft Intune
 
@@ -53,7 +53,7 @@ For more information, see this [overview of co-management](https://docs.microsof
 
 ## Desktop Analytics
 
-Desktop Analytics is a cloud-based service that integrates with Configuration Manager and provides you with insight and intelligence so you can make informed decisions about your Windows clients. It combines data from your organization with data aggregated from millions of devices connected to Microsoft cloud services. 
+Desktop Analytics is a cloud-based service that integrates with Configuration Manager and provides you with insight and intelligence so you can make informed decisions about your Windows clients. It combines data from your organization with data aggregated from millions of other devices connected to Microsoft cloud services. 
 
 With Desktop Analytics, you can:
 
@@ -67,7 +67,7 @@ For more information, see this [overview of Desktop Analytics](https://docs.micr
 
 ## Windows Autopilot
 
-Windows Autopilot is a zero-touch, self-service Windows deployment platform. It includes a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. You can also use Windows Autopilot to reset, repurpose and recover devices. 
+Windows Autopilot is a zero-touch, self-service Windows deployment platform. It includes a collection of technologies you use to set up and pre-configure new devices, getting them ready for productive use. You can also use Windows Autopilot to reset, repurpose and recover devices. 
 
 Windows Autopilot enables an IT department to pre-configure devices with little to no infrastructure to manage, with a process that's easy and simple. 
 
@@ -78,9 +78,7 @@ For more information, see this [overview of Windows Autopilot](https://docs.micr
 
 ## Admin technical resources for endpoint management
 
-- [The Part 3 video on managing Windows 10 devices for remote workers](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [The Part 5 video on managing user desktops and browsers for remote workers](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [Deploy a mobility infrastructure for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [Device management roadmap for Microsoft 365](../enterprise/device-management-roadmap-microsoft-365?view=o365-worldwide.md)
 - [How to enroll different types of devices for mobile device management](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [How to educate your end users about Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  
