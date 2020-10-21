@@ -31,10 +31,10 @@ ms.topic: article
 
 Apply these recommendations to get results faster and avoid timeouts while running complex queries. For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## Understand CPU resource limits
-Depending on its size, each tenant has access to a set amount of CPU resources allocated for running advanced hunting queries. For detailed information about various service limits, [read about advanced hunting limits](advanced-hunting-limits.md).
+## Understand CPU resource quotas
+Depending on its size, each tenant has access to a set amount of CPU resources allocated for running advanced hunting queries. For detailed information about various service limits, [read about advanced hunting quotas and usage parameters](advanced-hunting-limits.md).
 
-Customers who run multiple queries regularly should track consumption and apply the optimization guidance in this article to minimize disruption resulting from exceeding the limits.
+Customers who run multiple queries regularly should track consumption and apply the optimization guidance in this article to minimize disruption resulting from exceeding quotas or usage parameters.
 
 ## General optimization tips
 
@@ -260,7 +260,7 @@ To learn about all supported parsing functions, [read about Kusto string functio
 
 ## Related topics
 - [Kusto query language documentation](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [Service limits](advanced-hunting-limits.md)
+- [Quotas and usage parameters](advanced-hunting-limits.md)
 - [Handle advanced hunting errors](advanced-hunting-errors.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
