@@ -28,7 +28,7 @@ To get your tenant ready for identity, it's critical to carefully plan and execu
 
 ## Set up your Microsoft 365 tenant
 
-After ensuring that your networking is optimized for access to Microsoft 365 for both on-premises and remote workers, your next big tasks is planning for and then configuring your Microsoft 365 tenant for DNS domain names, common services, and for identity infrastructure for users, groups, and secure user sign-in.
+After ensuring that your networking is optimized for access to Microsoft 365 for both on-premises and remote workers, your next big tasks are planning for and then configuring your Microsoft 365 tenant for DNS domain names, common services, and for that identity infrastructure that supports secure user sign-in.
 
 ## Plan
 
@@ -58,7 +58,7 @@ Microsoft continues to open new datacenter geographic locations (geos) for Micro
 For more information, see [Moving core data to new Microsoft 365 datacenter geos](moving-data-to-new-datacenter-geos.md).
 
 
-## Deploy Microsoft 365 multi-geo
+## Deploy Microsoft 365 Multi-Geo
 
 With Microsoft 365 Multi-Geo, your organization can expand its Microsoft 365 presence to multiple geographic regions and/or countries within your existing tenant.
 
@@ -78,4 +78,3 @@ If you have multiple Microsoft 365 tenancies, see these articles for more inform
 ## Next step
 
 Start your tenant planning with [Subscriptions, licenses, accounts, and tenants](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
-
