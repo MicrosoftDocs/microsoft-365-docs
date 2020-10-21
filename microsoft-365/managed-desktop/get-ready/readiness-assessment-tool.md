@@ -1,6 +1,6 @@
 ---
 title: Readiness assessment tool
-description:  
+description:  Explains the checks the tool runs and the meaning of the results
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
