@@ -30,7 +30,7 @@ You shouldn't have any existing Autopilot profiles that target assigned or dynam
 
 **Not ready**
 
-You have an Autopilot profile that is assigned to all devices. Reset the profile to target an assigned or dynamic Azure AD group that doesn't include the Microsoft Managed Desktop that will be created at enrollment {HOW WILL THEY KNOW WHAT THAT'S CALLED?}. For steps, see 
+You have an Autopilot profile that is assigned to all devices. For steps, see 
 [Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot). After Microsoft Managed Desktop enrollment, set your Autopilot policy to exclude the **Modern Workplace Devices -All** Azure AD group.
 
 **Advisory**
