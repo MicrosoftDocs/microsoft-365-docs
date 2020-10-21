@@ -32,24 +32,24 @@ Not all documents that you may need to analyze with Advanced eDiscovery will liv
 
 Using the upload Non-Office 365 feature as described in this procedure requires that you have:
   
-- An Office 365 E3 with Advanced Compliance add-on or E5 subscription
+- An Office 365 E3 with Advanced Compliance add-on or E5 subscription.
     
-- All custodians whose non-Office 365 content will be uploaded must have E3 with Advanced Compliance add-on or E5 licenses
+- All custodians whose non-Office 365 content will be uploaded must have E3 with Advanced Compliance add-on or E5 licenses.
     
-- An existing eDiscovery case
+- An existing eDiscovery case.
     
-- All the files for uploading gathered into folders where there is one folder per custodian and the folders' name is in this format  *alias@domainname*  . The  *alias@domainname*  must be users Office 365 alias and domain. You can collect all the  *alias@domainname*  folders into a root folder. The root folder can only contain the  *alias@domainname*  folders, there must be no loose files in the root folder 
+- All the files for uploading gathered into folders where there is one folder per custodian and the folders' name is in this format  *alias@domainname*  . The  *alias@domainname*  must be users Office 365 alias and domain. You can collect all the  *alias@domainname*  folders into a root folder. The root folder can only contain the  *alias@domainname*  folders, there must be no loose files in the root folder.
     
-- An account that is either an eDiscovery Manager or eDiscovery Administrator
+- An account that is either an eDiscovery Manager or eDiscovery Administrator.
     
 - [Microsoft Azure Storage Tools](https://aka.ms/downloadazcopy) installed on a computer that has access to the non-Office 365 content folder structure. 
     
 ## Upload non-Office 365 content into Advanced eDiscovery
 
 
-1. As an eDiscovery Manager or eDiscovery Administrator, open **eDiscovery**, and open the case that the non-Office 365 data will be uploaded to. If you need to create a case, see [Manage eDiscovery cases in the Security &amp; Compliance Center](ediscovery-cases.md)
+1. As an eDiscovery Manager or eDiscovery Administrator, open **eDiscovery**, and open the case that the non-Office 365 data will be uploaded to. If you need to create a case, see [Manage eDiscovery cases in the Security &amp; Compliance Center](ediscovery-cases.md).
     
-2. Click **Switch to Advanced eDiscovery**
+2. Click **Switch to Advanced eDiscovery**.
 
 3. Select **Review Sets** from the menu.
 
@@ -65,7 +65,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
 
 9. On the **2. Upload files** tab you will be prompted to download AzCopy.exe if you have not done so already, and then to provide the path to the file location. For example, `C:\Upload`  will give you the command to execute AzCopy.exe. Using `C:\Upload`, you will see:
 
-  `"%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy\AzCopy.exe" /Source:"c:\upload" /Dest:"https://spnam03salinkexternal003.blob.core.windows.net/16d13440-a6a4-4bc5-a82b-10ac9cfe9d7c-1601401811-externalstore?sv=2017-07-29&sr=c&si=ExternalStore63%7C0&sig=9Dq5v20TwkxByYDHhIEx%2FHSLlmlqUjY0njkJyTO0zGA%3D" /s`
+   `"%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy\AzCopy.exe" /Source:"c:\upload" /Dest:"https://spnam03salinkexternal003.blob.core.windows.net/16d13440-a6a4-4bc5-a82b-10ac9cfe9d7c-1601401811-externalstore?sv=2017-07-29&sr=c&si=ExternalStore63%7C0&sig=9Dq5v20TwkxByYDHhIEx%2FHSLlmlqUjY0njkJyTO0zGA%3D" /s`
   
 10. Open a command prompt window and execute the AzCopy.exe command to import the data into Azure. Once it has loaded all of the data, select **Next: Process files**.
 
@@ -76,7 +76,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
     For more details on Advanced eDiscovery Processing, see [Run the Process module and load data in Advanced eDiscovery (classic)](run-the-process-module-and-load-data-in-advanced-ediscovery.md). 
     
     > [!IMPORTANT]
-    > There must be one root folder per user and the folder name must be in the  *alias@domainname*  format. 
+    > There must be one root folder per user and the folder name must be in the <b>alias@domainname</b>  format. 
    
     > [!IMPORTANT]
     > Once the container is successfully processed in Advanced eDiscovery, you will no longer be able to add new content to the SAS storage in Azure. If you collect additional content and you want to add it to the case for Advanced eDiscovery analysis, you must create a new **Non-Office 365 data** container and repeat this procedure. 
