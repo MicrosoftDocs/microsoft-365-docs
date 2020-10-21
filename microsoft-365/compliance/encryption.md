@@ -87,3 +87,5 @@ To learn more, see the following resources:
 [Top 10 ways to secure Microsoft 365 for business plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
 
 [Microsoft Stream Video level encryption and playback flow](https://docs.microsoft.com/stream/network-overview#video-level-encryption-and-playback-flow)
+
+[Encryption Risks and Protections](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections?view=o365-worldwide)
