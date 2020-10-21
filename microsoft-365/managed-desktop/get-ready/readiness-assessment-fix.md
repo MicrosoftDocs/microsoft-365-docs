@@ -35,7 +35,7 @@ You have an Autopilot profile that is assigned to all devices. For steps, see
 
 **Advisory**
 
-Make sure that your Autopilot profiles target an assigned or dynamic Azure AD group that doesn't include the Microsoft Managed Desktop that will be created at enrollment. For steps, see 
+Make sure that your Autopilot profiles target an assigned or dynamic Azure AD group that doesn't include Microsoft Managed Desktop devices that will be created at enrollment. For steps, see 
 [Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot). After Microsoft Managed Desktop enrollment, set your Autopilot policy to exclude the **Modern Workplace Devices -All** Azure AD group.
 
 
@@ -125,7 +125,7 @@ Windows 10 devices in your Azure AD organization must be automatically enrolled 
 
 **Not ready**
 
-Users in your Azure AD organization aren't automatically enrolled in Microsoft Intune. Change the MDM User scope to **Some** or **All**. If you choose. Some**, come back after enrollment and select **Modern Workplace -All** Azure AD group for **Groups**.
+Users in your Azure AD organization aren't automatically enrolled in Microsoft Intune. Change the MDM User scope to **Some** or **All**. If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups**.
 
 
 ### Microsoft Store for Business
@@ -143,11 +143,11 @@ Multi-factor authentication must not accidentally be applied to Microsoft Manage
 
 **Not ready**
 
-You have some multi-factor authentication (MFA) policies set as "required" for conditional access policies that are assigned to all users. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For steps, see [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+You have some multi-factor authentication (MFA) policies set as "required" for conditional access policies that are assigned to all users. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
 
 **Advisory**
 
-Make sure that any conditional access policies that require MFA exclude the **Modern Workplace -All** Azure AD group. For steps, see [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). The **Modern Workplace -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
+Make sure that any conditional access policies that require MFA exclude the **Modern Workplace -All** Azure AD group. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). The **Modern Workplace -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
 
 
 
@@ -212,7 +212,7 @@ Windows Hello for Business is not set up. Enable it by following the steps in [C
 
 ### Windows 10 update rings
 
-Intune's "Windows 10 update ring" policy must not target any Microsoft Managed Desktop devices.
+Your "Windows 10 update ring" policy in Intune must not target any Microsoft Managed Desktop devices.
 
 **Not ready**
 
@@ -258,7 +258,7 @@ Certain security account names could conflict with ones created by Microsoft Man
 
 **Not ready**
 
-You have at least one account name that will conflict with ones created by Microsoft Managed Desktop. {WE CAN add a link to the STP-hosted doc on this once it exists}
+You have at least one account name that will conflict with ones created by Microsoft Managed Desktop. Work with your Microsoft account representative to exclude these account names.
 
 
 ### Security administrator roles
