@@ -25,7 +25,7 @@ ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: "Get help with increasing the level of protection in Microsoft 365"
 ---
 
-# Increase threat protection
+# Increase threat protection for Microsoft 365 subscription
 
 This article helps you increase the protection in your Microsoft 365 subscription to protect against phishing, malware, and other threats. These recommendations are appropriate for organizations with an increased need for security, like political campaigns, law offices, and health care clinics.
 
@@ -158,7 +158,7 @@ First, make sure, in the admin center at <https://admin.microsoft.com> that you 
 
    ![The new admin center preview on.](../media/previewon.png)
 
-If you don't see the **Setup** page with cards in your tenant yet, see how to complete these steps in Security & Compliance Center. See [Set up Safe Attachments in the Security & Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) and [Set up Safe Links in the Security & Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
+If you don't see the **Setup** page with cards in your tenant yet, see how to complete these steps in Security & Compliance Center. See [Set up Safe Attachments in the Security & Compliance Center](#set-up-safe-attachments-in-the-security--compliance-center) and [Set up Safe Links in the Security & Compliance Center](#set-up-safe-links-in-the-security--compliance-center).
 
 1. In the left nav, choose **Setup**.
 2. On the **Setup** page, choose **View** on the **Increase protection from advanced threats** card.
