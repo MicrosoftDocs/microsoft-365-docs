@@ -14,7 +14,8 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection: 
-- M365-security-compliance
+- M365-security-compliance 
+- m365initiative-defender-office365
 description: "Learn about Threat Trackers, including new Noteworthy Trackers, to help your organization stay on top of security concerns."
 ---
 

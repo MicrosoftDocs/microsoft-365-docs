@@ -141,4 +141,4 @@ These articles and guides provide additional prescriptive information for securi
 
 - [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) (you can use these recommendation in any environment, especially cloud-only environments)
 
-- [Recommended security policies and configurations for identities and devices](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations) (these recommendations include help for AD FS environments)
+- [Recommended security policies and configurations for identities and devices](microsoft-365-policies-configurations.md) (these recommendations include help for AD FS environments)

@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-If your organization is using a security incident and event management (SIEM) server, you can integrate Microsoft Defender for Office 365 with your SIEM server. You can set up this integration by using the [Office 365 Activity Management API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+If your organization is using a security information and event management (SIEM) server, you can integrate Microsoft Defender for Office 365 with your SIEM server. You can set up this integration by using the [Office 365 Activity Management API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
 SIEM integration enables you to view information, such as malware or phish detected by Microsoft Defender for Office 365, in your SIEM server reports. 
 
@@ -63,5 +63,4 @@ The following table summarizes the values of **AuditLogRecordType** that are rel
 [Office 365 threat investigation and response](office-365-ti.md)
 
 [Automated investigation and response (AIR) in Office 365](automated-investigation-response-office.md)
-
 

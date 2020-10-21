@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-- M365initiative-CoreDeploy
+- m365initiative-coredeploy
 description: "Overview of network connectivity in the Microsoft 365 Admin Center (preview)"
 ---
 

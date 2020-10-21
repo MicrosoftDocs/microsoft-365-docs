@@ -120,13 +120,9 @@ You must file a request with Microsoft Support to enable your organization to us
 
     - **For Skype for Business Online chat communications**: Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the communication compliance policy. This setting is for one-to-one or one-to-many user/chat relationships.
 
-- **Third-party sources**: You can scan communications from third-party sources for data imported into mailboxes in your Microsoft 365 organization. Connectors support the following third-party resources:
+- **Third-party sources**: You can scan communications for data imported into mailboxes in your Microsoft 365 organization from third-party sources like [Instant Bloomberg](archive-instant-bloomberg-data.md), [Slack](archive-slack-data.md), [Zoom](archive-zoommeetings-data.md), SMS, and many others. For a full list of connectors supported in communication compliance, see [Archive third-party data](archiving-third-party-data.md).
 
-    - [Instant Bloomberg](archive-instant-bloomberg-data.md)
-    - [Bloomberg Message](archive-bloomberg-message-data.md)
-    - [ICE Chat](archive-icechat-data.md)
-
-You must configure a third-party connector for your Microsoft 365 organization before you can assign the connector to a communication compliance policy. The **Third-Party Sources** section of the communication compliance policy wizard only displays currently configured third-party connectors.
+    You must configure a third-party connector for your Microsoft 365 organization before you can assign the connector to a communication compliance policy. The **Third-Party Sources** section of the communication compliance policy wizard only displays currently configured third-party connectors.
 
 ## Transitioning from Supervision in Office 365
 

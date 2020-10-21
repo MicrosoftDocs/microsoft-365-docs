@@ -17,6 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
+- m365initiative-defender-office365
 ms.topic: conceptual
 ms.custom: 
 - autoir

@@ -17,7 +17,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
 ---
 
@@ -114,7 +115,7 @@ Success criteria is ultimately the bar set to measure against what you are testi
 
 One way to bring all elements of your plan together can be to create a scorecard. See a sample scorecard below:
 
-|**Use case**|**Requirements**|**Configuration requirements**|**Test plan**|**Expected outcome**|**Test status**|**Score**|**Notes**|
+| Use case | Requirements | Configuration requirements | Test plan | Expected outcome | Test status | Score | Notes |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |Incident management|-	Microsoft 365 Defender	</br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender for Endpoint </br></br>- Microsoft Cloud App Security (optional)|See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details |[Simulate attack](mtp-pilot-simulate.md) <br></br>[Investigate the incident](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Investigators can understand the scope and impact of the incident and manage the incident||||
 |AutoIR|-	Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender for Endpoint |See the [prerequisites](https://aka.ms/mtp-trial-lab) for preparation, set-up, and configuration for details <br>Enable AutoIR  |[Simulate attack](mtp-pilot-simulate.md) <br></br>[Automated investigation](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Alerts and incidents are automatically remediated by Microsoft 365 Defender||||

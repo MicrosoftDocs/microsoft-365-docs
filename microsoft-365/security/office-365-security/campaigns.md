@@ -14,9 +14,10 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid:
-ms.collection:
-- M365-security-compliance
-description: "Learn about Campaign Views in Defender for Office 365."
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
+description: "Learn about Campaign Views in Microsoft Defender for Office 365."
 ---
 
 # Campaign Views in Microsoft Defender for Office 365

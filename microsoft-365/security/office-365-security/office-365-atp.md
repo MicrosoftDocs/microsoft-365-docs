@@ -7,15 +7,16 @@ author: msfttracyp
 manager: dansimp
 ms.date:
 audience: Admin
-ms.topic: hub-page
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.custom:
 - seo-marvel-apr2020
 description: "Microsoft Defender for Office 365 includes safe attachments, safe links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities."
