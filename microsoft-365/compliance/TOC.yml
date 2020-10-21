@@ -239,6 +239,8 @@
           href: create-test-tune-dlp-policy.md
         - name: Use notifications and policy tips in DLP policies
           href: use-notifications-and-policy-tips.md
+        - name: Configure and view alerts for DLP policies (preview)
+          href: dlp-configure-view-alerts-policies.md
         - name: What the DLP policy templates include
           href: what-the-dlp-policy-templates-include.md
         - name: Create a DLP policy to protect documents with FCI or other properties
@@ -632,9 +634,11 @@
             - name: Document metadata fields
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: Set up attorney-client privilege detection
-              href: attorney-privilege-detection.md           
+              href: attorney-privilege-detection.md
             - name: Conversation review sets
               href: conversation-review-sets.md
+            - name: CJK language support
+              href: ediscovery-cjk-support.md
             - name: Assign eDiscovery permissions
               href: assign-ediscovery-permissions.md
             - name: Keyword queries and search conditions
