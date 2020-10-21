@@ -97,7 +97,7 @@ For a 2-page summary of this solution, see the [Empower remote workers poster](.
 
 You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) and print it on letter, legal, or tabloid (11 x 17) size paper.
 
-Use these steps to secure and optimize access to your organization's servers and cloud services and maximumize your remote worker's productivity.
+Use these steps to secure and optimize access to your organization's servers and cloud services and maximize your remote worker's productivity.
 
 1. [Increase sign-in security with MFA](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Provide remote access to on-premises apps and services](empower-people-to-work-remotely-remote-access.md)

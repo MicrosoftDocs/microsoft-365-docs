@@ -59,7 +59,7 @@ With Desktop Analytics, you can:
 
 - Create an inventory of apps running in your organization.
 - Assess app compatibility with the latest Windows 10 feature updates.
-- Identify compatibility issues, and receive mitigation suggestions based on cloud-enabled data insights.
+- Identify compatibility issues and receive mitigation suggestions based on cloud-enabled data insights.
 - Create pilot groups that represent the entire application and driver estate across a minimal set of devices.
 - Deploy Windows 10 to pilot and production-managed devices.
 
