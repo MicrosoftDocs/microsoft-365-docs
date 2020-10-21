@@ -168,15 +168,41 @@ Some things to consider when using this method to auto-apply retention labels:
 
 - Partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
 
+- Suffix wildcard searches ( such as `*cat`) or substring wildcard searches (such as `*cat*`) aren't supported. 
+
 
 Examples queries:
 
 | Workload | Example |
 |:-----|:-----|
-|Exchange   | `subject:"Quarterly Financials"` |
+|Exchange   | `subject:"Financial Statements"` |
 |Exchange   | `recipients:garthf@contoso.com` |
+|Exchange | `acp OR attorney client privilege* OR ac privilege`
 |SharePoint | `contenttype:contract` |
+|SharePoint | `contract OR contracts`|
+|SharePoint | `nda OR non disclosure agreement AND ((fileextension:doc* OR fileextension:pdf) OR (attachmentnames:doc* OR attachmentnames:pdf))`|
 |SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
+
+Other examples:
+
+``` console
+password or passwords or pw and (fileextension: .doc* or fileextension: .xls*)  
+```
+
+This query for SharePoint identifies any type of Word document or Excel file that contains the keywords **password**, **passwords**, or **pw**.
+
+``` console
+nda or non disclosure agreement and (attachmentnames: .doc* or attachmentnames: .pdf)
+```
+
+This query for Exchange identifies any Word document or pdf that contains the word **nda** or **phrase non disclosure agreement** and is attached to an email. 
+
+``` console
+sensitivetype:credit card number
+```
+
+This query for either Exchange or SharePoint identifies emails or documents that contain a credit card number
+
 
 ##### Microsoft Teams meeting recordings
 
