@@ -170,6 +170,14 @@ Some things to consider when using this method to auto-apply retention labels:
 
 - Suffix wildcard searches ( such as `*cat`) or substring wildcard searches (such as `*cat*`) aren't supported. 
 
+- Properties and operators are case-insensitive but for easier readability, we recommend specifying properties in lower case and operators in upper case.
+
+- The following special characters are not included in the search index and are replaced by a blank space in the actual search query or cause a search error:  `+ - = : ! @ # % ^ & ; _ / ? ( ) [ ] { }`
+
+- Use double quotation marks (`" "`) if the property value consists of multiple words. For example, `subject:budget Q1` finds messages that contain budget in the in the subject line and that contain **Q1** anywhere in the message or in any of the message properties, whereas `subject:"budget Q1"` finds all messages that contain **budget Q1** anywhere in the subject line. 
+
+- A space between two keywords or two property:value expressions is the same as using AND.  For example, `from:"Sara Davis" subject:reorganization` finds all messages sent by Sara Davis that contain the word **reorganization** in the subject line. 
+
 
 Examples queries:
 
@@ -177,31 +185,29 @@ Examples queries:
 |:-----|:-----|
 |Exchange   | `subject:"Financial Statements"` |
 |Exchange   | `recipients:garthf@contoso.com` |
-|Exchange | `acp OR attorney client privilege* OR ac privilege`
 |SharePoint | `contenttype:contract` |
-|SharePoint | `contract OR contracts`|
-|SharePoint | `nda OR non disclosure agreement AND ((fileextension:doc* OR fileextension:pdf) OR (attachmentnames:doc* OR attachmentnames:pdf))`|
 |SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
 
-Other examples:
+More complex examples:
+
+The following query for SharePoint identifies any type of Word document or Excel file that contains the keywords **password**, **passwords**, or **pw**:
 
 ``` console
-password or passwords or pw and (fileextension: .doc* or fileextension: .xls*)  
+password OR passwords OR pw AND (fileextension: .doc* OR fileextension: .xls*)  
 ```
-
-This query for SharePoint identifies any type of Word document or Excel file that contains the keywords **password**, **passwords**, or **pw**.
+The following query for Exchange identifies any Word document or pdf that contains the word **nda** or **phrase non disclosure agreement** and is attached to an email:
 
 ``` console
-nda or non disclosure agreement and (attachmentnames: .doc* or attachmentnames: .pdf)
+nda OR non disclosure agreement AND (attachmentnames: .doc* OR attachmentnames: .pdf)
 ```
 
-This query for Exchange identifies any Word document or pdf that contains the word **nda** or **phrase non disclosure agreement** and is attached to an email. 
+The following query for either Exchange or SharePoint identifies emails or documents that contain a credit card number: 
 
 ``` console
 sensitivetype:credit card number
 ```
 
-This query for either Exchange or SharePoint identifies emails or documents that contain a credit card number
+
 
 
 ##### Microsoft Teams meeting recordings
