@@ -104,16 +104,18 @@ User accounts have two sources:
 
 - Azure Active Directory (Azure AD) AD accounts, which are created directly in the cloud.
 
+
+The following command instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *True*. You can use it to find accounts that are synchronizing from on-premise AD.
+
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
 ```
-This command instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *True*. You can use it to find accounts that are synchronizing from on-premise AD.
 
+The following command instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *False*. You can use it to find cloud-only accounts.
 
 ```powershell
-Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
+Get-AzureADUser | Where {$_.DirSyncEnabled -ne $false}
 ```
-This command instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *False*. You can use it to find cloud-only accounts.
 
 ### View accounts based on a common property
 
@@ -129,20 +131,20 @@ This command instructs Azure Active Directory PowerShell for Graph to:
     
 1. Find all the user accounts that have an unspecified usage location (**Where {$\_.UsageLocation -eq $Null}**). Inside the braces, the command instructs PowerShell to only find the set of accounts for which the UsageLocation user account property (**$\_.UsageLocation**) is not specified (**-eq $Null**).
     
-The **UsageLocation** property is only one of many properties associated with a user account. To see all of the properties for user accounts, use the **Select** cmdlet and the wildcard character (*) to display them all for a specific user account. Here's an example:
+The **UsageLocation** property is only one of many properties associated with a user account. To display all the properties for a specific user account, use the **Select** cmdlet and the wildcard character (*). Here's an example:
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-For example, from this list, **City** is the name of a user account property. You can use the following command to list all of the user accounts for users who live in London:
+For example, **City** is the name of a user account property. You can use the following command to list all accounts of users who live in London:
   
 ```powershell
 Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  The syntax for the **Where** cmdlet in these examples is **Where {$\_.** [user account property name] [comparison operator] [value] **}**.> [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified>  See [Where](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where?view=powershell-5.1) for more information.
+>  The syntax for the **Where** cmdlet in these examples is **Where {$\_.** [user account property name] [comparison operator] [value] **}**.> [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified. For more information, see [Where](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where?view=powershell-5.1).
   
 
 ## Use the Microsoft Azure Active Directory Module for Windows PowerShell
@@ -158,7 +160,7 @@ Get-MsolUser
 ```
 
 >[!Note]
->PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. You have to run these cmdlets from Windows PowerShell.
+>PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
 >
 
 You should get information similar to this:
@@ -192,15 +194,15 @@ For information about additional parameters to filter the set of user accounts t
   
 ### View a specific account
 
-To display a specific user account, fill in the sign-in name of the user account of the user account, which is also known as the user principal name (UPN). Remove the "<" and ">" characters, and run this command:
+To display a specific user account, run the following command. Fill in the sign-in name of the user account, which is also known as the user principal name (UPN). Remove the "<" and ">" characters.
   
 ```powershell
 Get-MsolUser -UserPrincipalName <sign-in name of the user account>
 ```
 
-### View some accounts based on a common property
+### View accounts based on a common property
 
-To be more selective about the list of accounts to display, you can use the **Where** cmdlet in combination with the **Get-MsolUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells PowerShell to take the results of one command and send it to the next command. Here's an example command that displays only those user accounts that have an unspecified usage location:
+To be more selective about the list of accounts to display, you can use the **Where** cmdlet in combination with the **Get-MsolUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells PowerShell to take the results of one command and send it to the next command. Here's an example that displays only those user accounts that have an unspecified usage location:
   
 ```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq $Null}
@@ -208,9 +210,9 @@ Get-MsolUser | Where {$_.UsageLocation -eq $Null}
 
 This command instructs PowerShell to:
   
-1. Get all of the information on the user accounts (**Get-MsolUser**) and send it to the next command (**|**).
+1. Get all the information on the user accounts (**Get-MsolUser**) and send it to the next command (**|**).
     
-1. Find all of user accounts that have an unspecified usage location (**Where {$\_.UsageLocation -eq $Null}**). Inside the braces, the command instructs PowerShell to find only the set of accounts for which the UsageLocation user account property (**$\_.UsageLocation**) is not specified (**-eq $Null**).
+1. Find all user accounts that have an unspecified usage location (**Where {$\_.UsageLocation -eq $Null}**). Inside the braces, the command instructs PowerShell to find only the set of accounts for which the UsageLocation user account property (**$\_.UsageLocation**) is not specified (**-eq $Null**).
     
 You should get information similar to this:
   
@@ -228,7 +230,7 @@ The *UsageLocation* property is only one of many properties associated with a us
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-For example, from this list, *City* is the name of a user account property. You can use the following command to list all of the user accounts for users who live in London:
+For example, *City* is the name of a user account property. You can use the following command to list all of the user accounts for users who live in London:
   
 ```powershell
 Get-MsolUser | Where {$_.City -eq "London"}
@@ -245,7 +247,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
 
 ### View additional property values for accounts
 
-The **Get-MsolUser** cmdlet by default displays these three properties of user accounts:
+By default, the **Get-MsolUser** cmdlet displays these three properties of user accounts:
   
 - UserPrincipalName
     
@@ -278,7 +280,7 @@ Alex Darrow             Sales & Marketing                    US
 Scott Wallace           Operations
 ```
 
-The **Select** cmdlet lets you choose what properties to display. To see all the properties for user accounts, use the wildcard character (*) to display them all for a specific user account. Here's an example:
+The **Select** cmdlet lets you choose what properties to display. To display all the properties for a specific user account, use the wildcard character (*). Here's an example:
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *

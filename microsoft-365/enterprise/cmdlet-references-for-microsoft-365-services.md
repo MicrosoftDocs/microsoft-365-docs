@@ -15,21 +15,21 @@ ms.custom:
  - Ent_Office_Other
  - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: Find Microsoft 365 PowerShell cmdlet reference topics for Azure AD, Exchange Online, SharePoint Online, Skype for Business Online, and Security & Compliance.
+description: Find Microsoft 365 PowerShell cmdlet references for Azure AD, Exchange Online, SharePoint Online, Skype for Business Online, and Security & Compliance.
 ---
 
 # Cmdlet references for Microsoft 365 services 
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-This article provides cmdlet references for the various Microsoft 365 services. It also points to connection instructions for each Microsoft 365 service that PowerShell supports.
+This article provides cmdlet references for the various Microsoft 365 services and connection instructions for each Microsoft 365 service that PowerShell supports.
   
 > [!NOTE]
 > To connect to all services at once, see [Connect to all Microsoft 365 services in a single Windows PowerShell window](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md).
   
 ## Azure Active Directory PowerShell cmdlets
 
-See The Azure Active Directory PowerShell for Graph cmdlet reference topics are in the Reference section of the [Azure Active Directory PowerShell for Graph documentation](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+The Azure Active Directory PowerShell for Graph cmdlet reference topics are in the Reference section of the [Azure Active Directory PowerShell for Graph documentation](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
 The Azure Active Directory Module for Windows PowerShell cmdlet reference topics is in the Reference section of the [Azure Active Directory (MSOnline) documentation](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
 
@@ -46,7 +46,7 @@ For connection instructions for Exchange Online PowerShell, see [Connect to Exch
   
 ## SharePoint Online PowerShell cmdlets
 
-For the SharePoint Online cmdlets, see [Index of Windows PowerShell for SharePoint Online cmdlets](https://go.microsoft.com/fwlink/p/?LinkId=691476).
+For SharePoint Online cmdlets, see [Index of Windows PowerShell for SharePoint Online cmdlets](https://go.microsoft.com/fwlink/p/?LinkId=691476).
   
 For connection instructions for SharePoint Online PowerShell, see [Set up the SharePoint Online Management Shell Windows PowerShell environment](https://go.microsoft.com/fwlink/p/?LinkId=691603).
   
@@ -58,7 +58,7 @@ For connection instructions for Skype for Business Online PowerShell, see [Manag
 
 ## Security & Compliance Center PowerShell cmdlets
 
-The Security & Compliance Center cmdlet reference topics are in the Reference section of the [Security & Compliance PowerShell documentation](https://docs.microsoft.com/powershell/exchange/scc-powershell).
+The Security & Compliance Center cmdlet references are in the Reference section of the [Security & Compliance PowerShell documentation](https://docs.microsoft.com/powershell/exchange/scc-powershell).
   
 For connection instructions for Security & Compliance Center PowerShell, see [Connect to the Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 

@@ -49,7 +49,7 @@ Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> The *-ObjectID* parameter in the **Remove-AzureADUser** cmdlet accepts either the account's sign-in name, also known as the User Principal Name, or the account's object ID.
+> The *-ObjectID* parameter in the **Remove-AzureADUser** cmdlet accepts either the account's sign-in name, also known as the User Principal Name or the account's object ID.
   
 To display the account name based on the user's name, use the following commands:
   
@@ -85,7 +85,7 @@ Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 >[!Note]
->PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. You have to run these cmdlets from Windows PowerShell.
+>PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
 >
 
 This example deletes the user account *BelindaN@litwareinc.com*.
@@ -109,9 +109,9 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 >[!Note]
 > To see the list of deleted users that can be restored, run the following command:
 >    
->  ```powershell
->  Get-MsolUser -All -ReturnDeletedUsers
->  ```
+> ```powershell
+> Get-MsolUser -All -ReturnDeletedUsers
+> ```
 >
 > If the user account's original user principal name is used by another account, use the _NewUserPrincipalName_ parameter instead of _UserPrincipalName_ to specify a different user principal name when you restore the user account.
 

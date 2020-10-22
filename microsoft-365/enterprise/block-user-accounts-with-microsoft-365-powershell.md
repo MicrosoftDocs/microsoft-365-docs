@@ -45,7 +45,7 @@ Set-​AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled 
 This example blocks access to the user account *fabricec@litwareinc.com*.
   
 ```powershell
-Set-​AzureADUser -ObjectID fabricec\@litwareinc.com -AccountEnabled $false
+Set-​AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $false
 ```
 
 To unblock this user account, run the following command:

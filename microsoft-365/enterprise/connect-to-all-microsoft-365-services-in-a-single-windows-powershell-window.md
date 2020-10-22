@@ -71,7 +71,7 @@ Before you can manage all of Microsoft 365 from a single instance of PowerShell,
 
 ## Exchange Online and Security &amp; Compliance Center with the Exchange Online PowerShell V2 module
 
-The procedures in this article use the Exchange Online PowerShell V2 module to connect to both Exchange Online and the Security &amp; Compliance Center. But currently you can't connect to both Exchange Online and the Security &amp; Compliance Center **in the same PowerShell window**. So you have to choose to connect to one or the other when you configure a PowerShell window for multiple Microsoft 365 services.
+The procedures in this article use the Exchange Online PowerShell V2 module to connect to both Exchange Online and the Security &amp; Compliance Center. But currently you can't connect to both *in the same PowerShell window*. So you have to choose to connect to one or the other when you configure a PowerShell window for multiple Microsoft 365 services.
 
 ## Connection steps when using just a password
 
@@ -91,7 +91,7 @@ Follow these steps to connect to all the services in a single PowerShell window 
    Connect-AzureAD -Credential $credential
    ```
   
-   Alternately, if you're using the Microsoft Azure Active Directory Module for Windows PowerShell module, run this command.
+   Or if you're using the Microsoft Azure Active Directory Module for Windows PowerShell module, run this command.
       
    ```powershell
    Connect-MsolService -Credential $credential
@@ -107,7 +107,7 @@ Follow these steps to connect to all the services in a single PowerShell window 
    Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
    ```
 
-5. Run these commands to connect to Skype for Business Online. A warning about increasing the `WSMan NetworkDelayms` value will appear the first time that you connect. You should ignore it.
+5. Run these commands to connect to Skype for Business Online. A warning about increasing the `WSMan NetworkDelayms` value will appear the first time that you connect. Ignore it.
      
    > [!Note]
    > Skype for Business Online Connector is currently part of the latest Teams PowerShell module. If you're using the latest Teams PowerShell public release, you don't need to install the Skype for Business Online Connector.
@@ -128,7 +128,7 @@ Follow these steps to connect to all the services in a single PowerShell window 
    > [!Note]
    > To connect to Exchange Online for Microsoft 365 clouds other than Worldwide, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-7. Alternately, run these commands to connect to the Security &amp; Compliance Center.
+   Alternatively, run these commands to connect to the Security &amp; Compliance Center.
     
    ```powershell
    $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -139,7 +139,7 @@ Follow these steps to connect to all the services in a single PowerShell window 
    > [!Note]
    > To connect to the Security &amp; Compliance Center for Microsoft 365 clouds other than Worldwide, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
-8. Run these commands to connect to Teams PowerShell.
+   Run these commands to connect to Teams PowerShell.
     
    ```powershell
    Import-Module MicrosoftTeams
@@ -147,7 +147,7 @@ Follow these steps to connect to all the services in a single PowerShell window 
    ```
   
    > [!Note]
-   > To connect to Microsoft Teams clouds other than Worldwide, see [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
+   > To connect to Microsoft Teams clouds other than *Worldwide*, see [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
 
 
 ### Azure Active Directory PowerShell for Graph module

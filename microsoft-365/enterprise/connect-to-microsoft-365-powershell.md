@@ -30,14 +30,14 @@ There are two versions of the PowerShell module that you can use to connect to M
 - Azure Active Directory PowerShell for Graph, whose cmdlets include *AzureAD* in their name
 - Microsoft Azure Active Directory Module for Windows PowerShell, whose cmdlets include *Sol* in their name
 
-Currently, the Azure Active Directory PowerShell for Graph module doesn't completely replace the functionality of the cmdlets of Microsoft Azure Active Directory Module for Windows PowerShell module for user, group, and license administration. In some cases, you need to use both versions. You can safely install both versions on the same computer.
+Currently, the Azure Active Directory PowerShell for Graph module doesn't completely replace the functionality of the Microsoft Azure Active Directory Module for Windows PowerShell module for user, group, and license administration. In some cases, you need to use both versions. You can safely install both versions on the same computer.
 
 ## What do you need to know before you begin?
 
 
 **Operating system**
 
-You must use a 64-bit version of Windows. Support for the 32-bit version of the Microsoft Azure Active Directory Module for Windows PowerShell was discontinued in 2014.
+You must use a 64-bit version of Windows. Support for the 32-bit version of the Microsoft Azure Active Directory Module for Windows PowerShell ended in 2014.
 
 You can use the following versions of Windows:
     
@@ -69,7 +69,7 @@ For procedures that require the new cmdlets in the Azure Active Directory PowerS
 
 ### Step 1: Install the required software
 
-These steps are required only one time on your computer. But you will likely need to update the software periodically.
+These steps are required only one time on your computer. But you'll likely need to update the software periodically.
   
 1. Open an elevated Windows PowerShell Command Prompt window (run Windows PowerShell as an administrator).
     
@@ -106,7 +106,7 @@ After you connect, you can use the cmdlets for the [Azure Active Directory Power
 
 PowerShell version 7 and later don't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. For PowerShell version 7 and later, you must use the Azure Active Directory PowerShell for Graph module or Azure PowerShell.
 
-PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. You must run these cmdlets from Windows PowerShell.
+PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
     
 ### Step 1: Install the required software
 
@@ -139,7 +139,7 @@ If you're using multi-factor authentication, follow the instructions to provide 
 
 ### How do you know it worked?
 
-If you don't receive an error message, you connected successfully. A quick test is to run a Microsoft 365 cmdlet, such as  **Get-MsolUser**, and see the results.
+If you don't get an error message, you connected successfully. For quick test,  run a Microsoft 365 cmdlet, such as  **Get-MsolUser**, and see the results.
   
 If you get an error message, check the following issues:
   
@@ -162,10 +162,10 @@ If you get an error message, check the following issues:
 
     If the version number returned is lower than *1.0.8070.2*, uninstall the Microsoft Azure Active Directory Module for Windows PowerShell and install from [Step 1](#step-1-install-the-required-software), above.
 
-- **If you receive a connection error message**, see this article: ["Connect-MsolService: Exception of type was thrown" error](https://go.microsoft.com/fwlink/p/?LinkId=532377).
+- **If you get a connection error message**, see ["Connect-MsolService: Exception of type was thrown" error](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
-- **If you receive a "Get-Item : Cannot find path" error message**, run this command:
--  
+- **If you get a "Get-Item: Cannot find path" error message**, run this command:
+
 
    ```powershell
      (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name

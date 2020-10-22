@@ -25,14 +25,14 @@ description: How to use PowerShell to create individual or multiple Microsoft 36
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can use PowerShell for Microsoft 365 to efficiently create user accounts, including multiple user accounts.
+You can use PowerShell for Microsoft 365 to efficiently create user accounts, including multiple accounts.
 
-When you create user accounts in PowerShell, certain account properties are always required. Other properties aren't required but are important. The properties are described in the following table.
+When you create user accounts in PowerShell, certain account properties are always required. Other properties aren't required but are important. See the following table.
   
 |**Property name**|**Required?**|**Description**|
 |:-----|:-----|:-----|
-|**DisplayName** <br/> |Yes  <br/> |This is the display name that's used in Microsoft 365 services. For example, Caleb Sills.  <br/> |
-|**UserPrincipalName** <br/> |Yes  <br/> |This is the account name that's used to sign in to Microsoft 365 services. For example, CalebS\@contoso.onmicrosoft.com.  <br/> |
+|**DisplayName** <br/> |Yes  <br/> |This is the display name that's used in Microsoft 365 services. For example, *Caleb Sills*. <br/> |
+|**UserPrincipalName** <br/> |Yes  <br/> |This is the account name that's used to sign in to Microsoft 365 services. For example, *CalebS\@contoso.onmicrosoft.com*.  <br/> |
 |**FirstName** <br/> |No  <br/> ||
 |**LastName** <br/> |No  <br/> ||
 |**LicenseAssignment** <br/> |No  <br/> |This is the licensing plan (also known as the license plan or SKU) from which an available license is assigned to the user account. The license defines the Microsoft 365 services that are available to the account. You don't have to assign a license to a user when you create the account, but the account must have a license to access Microsoft 365 services. You have 30 days to license the user account after you create it. |
@@ -78,7 +78,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets that have *Msol* in their name. You have to run these cmdlets from Windows PowerShell.
+>PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets that have *Msol* in their name. Run these cmdlets from Windows PowerShell.
 >
 
 To list the available licensing plan names, use this command:
@@ -105,7 +105,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
      ```
 
    >[!NOTE]
-   >The column names and their order in the first row of the CSV file are arbitrary. But make sure the order of the data in the rest of the file matches the order of the column names, and use the column names for the parameter values in the PowerShell for Microsoft 365 command.
+   >The column names and their order in the first row of the CSV file are arbitrary. But make sure the order of the data in the rest of the file matches the order of the column names. And use the column names for the parameter values in the PowerShell for Microsoft 365 command.
     
 2. Use the following syntax:
     
@@ -119,7 +119,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
     Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
     ```
 
-3. Review the output file to see the results. We didn't specify passwords, so the random passwords that Microsoft 365 generated is visible in the output file.
+3. Review the output file to see the results. We didn't specify passwords, so the random passwords that Microsoft 365 generated are visible in the output file.
     
 ## See also
 
