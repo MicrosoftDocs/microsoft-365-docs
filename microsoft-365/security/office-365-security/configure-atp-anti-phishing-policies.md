@@ -166,7 +166,8 @@ Use the following procedures to modify ATP anti-phishing policies: a new policy 
 
     To edit an existing entry, select the protected user in the list.
 
-       **Note**: In the Security & Compliance Center, you can enter a maximum of 60 users. In Exchange Online PowerShell, you can enter a maximum of 60 users.
+  > [!NOTE] 
+ > In the Security & Compliance Center and in Exchange Online PowerShell you can enter a maximum of 60 users.
        
    - **Add domains to protect**: Configure one or both of the following settings:
 
