@@ -75,7 +75,7 @@ See the following specific instructions for each policy: <br>
     - [Require MFA for service management](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
     
 > [!NOTE]
-> The Preview Policies no longer exists and the customer will need to create their own policy.
+> Preview policies no longer exist and users will need to create their own policies.
 
 
 You can set up extra policies, such as requiring approved client apps. For more information, see the [Conditional Access documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/).
