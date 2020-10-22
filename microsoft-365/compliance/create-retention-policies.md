@@ -249,7 +249,7 @@ So before you assign a retention policy for the first time, and especially when 
 
 When you choose locations, with the exception of Skype for Business, the default setting is **All** when the status of the location is **On**.
 
-When a retention policy applies to any combination of entire locations, there is no limit to the number of recipients, sites, accounts, groups etc that the policy can include.
+When a retention policy applies to any combination of entire locations, there is no limit to the number of recipients, sites, accounts, groups, etc., that the policy can include.
 
 For example, if a policy includes all Exchange email and all SharePoint sites, all sites and recipients will be included, no matter how many. And for Exchange, any new mailbox created after the policy is applied will automatically inherit the policy.
 
