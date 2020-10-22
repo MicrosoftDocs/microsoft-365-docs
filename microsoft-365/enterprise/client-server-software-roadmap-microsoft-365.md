@@ -17,76 +17,76 @@ description: The roadmap to set up client and server software for Microsoft 365.
 
 # Client and server software roadmap for Microsoft 365
 
-Most enterprise organizations have a heterogeneous environment with multiple releases of operating systems, client software, and server software. Microsoft 365 for enterprise includes the most secure versions of these key components of your IT infrastructure with productivity features that are designed to take advantage of cloud technologies.
+Most enterprise organizations have a heterogeneous environment that includes multiple releases of operating systems, client software, and server software. Microsoft 365 Enterprise includes the most secure versions of these key components of your IT infrastructure. It also includes productivity features that are designed to take advantage of cloud technologies.
 
-To maximize the business value of the Microsoft 365 for enterprise integrated suite of products, begin planning and implementing a strategy to migrate releases of:
+To maximize the business value of the Microsoft 365 Enterprise integrated suite of products, begin planning and implementing a strategy to migrate releases of:
 
-- The Office client installed on your computers to Microsoft 365 Apps for enterprise
-- Office servers installed on your servers to their equivalent services in Microsoft 365
-- Windows 7 and Windows 8.1 on your devices to Windows 10 Enterprise
+- The Office client installed on your computers to Microsoft 365 Apps for enterprise.
+- The Office servers installed on your servers to their equivalent services in Microsoft 365.
+- Windows 7 and Windows 8.1 on your devices to Windows 10 Enterprise.
 
 >[!Note]
->Windows 7 reached end of support on **January 14, 2020**. For more information, click [here](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
+>Support for Windows 7 ended on **January 14, 2020**. For more information, see the [end-of-support details](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
 >
 
-Accomplishing all of these migrations over time gets your organization closer to the [modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), a secure and integrated environment that unlocks teamwork and creativity in your organization, all of which is enabled and empowered by Microsoft 365 for enterprise.
+As you accomplish these migrations over time, your organization comes closer to the vision of the [modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/). This secure and integrated environment can help you unlock teamwork and creativity in your organization. And Microsoft 365 Enterprise enables and empowers you all along the way.
 
 ## Migration for Microsoft Office client products
 
-In many organizations both large and small, you might be using a combination of older versions of the Office client products, such as Word, Excel, and PowerPoint. These older versions:
+Organizations both large and small, often use a combination of older versions of Office client products, such as Word, Excel, and PowerPoint. These older versions:
 
 - Can be [updated](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) with the latest security updates and support fixes, but the process is sometimes manual and might not scale across your organization.
-- Are not optimally enabled to leverage Microsoft’s cloud technologies and help you digitally transform your business.
-- Do not contain new features.
+- Aren't optimized to leverage the Microsoft cloud technologies and help you digitally transform your business.
+- Don't provide the latest features.
 
-Microsoft 365 for enterprise includes Microsoft 365 Apps for enterprise, a version of the Office client products that is available with a Microsoft 365 for enterprise license and is installed and updated from the Microsoft cloud. Microsoft 365 Apps for enterprise includes security updates and the latest features. See [About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps) for more information.
+Microsoft 365 Enterprise includes Microsoft 365 Apps for enterprise. This version of the Office client products is available with a Microsoft 365 Enterprise license. It's installed and updated from the Microsoft cloud. Microsoft 365 Apps for enterprise includes security updates and the latest features. For more information, see [About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 ### Office 2007
 
-For versions of Office in the Office 2007 release, the end of support has already passed. See [Office 2007 End of Support Roadmap](https://docs.microsoft.com/deployoffice/office-2007-end-support-roadmap) for more information.
+For versions of Office in the Office 2007 release, the end of support has already passed. For more information, see [Office 2007 end-of-support roadmap](https://docs.microsoft.com/deployoffice/office-2007-end-support-roadmap).
 
-Rather than upgrading your computers running Office 2007 with Office 2010, Office 2013, or Office 2016, consider:
+Rather than upgrading your computers that run Office 2007 to Office 2010, Office 2013, or Office 2016, consider:
 
-1. Obtaining and assigning a Microsoft 365 license for your users.
+1. Getting and assigning a Microsoft 365 license for your users.
 2. Uninstalling Office 2007 on their computers.
-3. Installing Microsoft 365 Apps for enterprise, either individually or in conjunction with an IT rollout. For more information, see [Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+3. Installing Microsoft 365 Apps for enterprise, either individually or during an IT rollout. For more information, see [Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
 
-Microsoft 365 Apps for enterprise installs updates automatically and can take advantage of cloud-based services for enhanced security and productivity.
+Microsoft 365 Apps for enterprise installs updates automatically. It can take advantage of cloud-based services for enhanced security and productivity.
 
 ### Office 2010
 
-For versions of Office in the Office 2010 release, support ended on **October 13, 2020**. For more information, see [Office 2010 end of support roadmap](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
+For versions of Office in the Office 2010 release, support ended on **October 13, 2020**. For more information, see [Office 2010 end-of-support roadmap](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
 
-Rather than upgrading your computers running Office 2010 with Office 2013 or Office 2016, both of which must be manually updated, consider:
+You might consider upgrading your computers that run Office 2010 to Office 2013 or Office 2016. But both of those versions must be manually updated. Instead, consider:
 
-1. Obtaining and assigning a Microsoft 365 license for your users.
+1. Getting and assigning a Microsoft 365 license for your users.
 2. Uninstalling Office 2010 on their computers.
-3. Installing Microsoft 365 Apps for enterprise, either individually or in conjunction with an IT rollout. For more information, see [Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+3. Installing Microsoft 365 Apps for enterprise, either individually or during an IT rollout. For more information, see [Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
 
-Microsoft 365 Apps for enterprise installs both security and new feature updates automatically and can take advantage of cloud-based services in Microsoft 365 for enhanced security and productivity.
+Microsoft 365 Apps for enterprise installs both security updates and new feature updates automatically. It can take advantage of cloud-based services in Microsoft 365 for enhanced security and productivity.
 
 ### Office 2013 and Office 2016
 
-The end of support roadmap for the Office 2013 and Office 2016 versions of Office has not yet been determined. However, like Office 2010, you must still [install security updates](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5), which might not scale well depending on the size of your organization.
+The end-of-support roadmap for the Office 2013 and Office 2016 versions of Office hasn't yet been determined. In these versions, like Office 2010, you must still [install security updates](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5). This task might not scale well, depending on the size of your organization.
 
-Rather than keep updating your computers with the latest security updates for Office 2013 or Office 2016 or update your computers from Office 2013 to Office 2016, consider:
+Rather than keeping your computers current with the latest security updates for Office 2013 or Office 2016, or updating your computers from Office 2013 to Office 2016, consider:
 
-1. Obtaining and assigning a Microsoft 365 license for your users.
+1. Getting and assigning a Microsoft 365 license for your users.
 2. Uninstalling Office 2013 or Office 2016 on their computers.
-3. Installing Microsoft 365 Apps for enterprise, either individually or in conjunction with an IT rollout. For more information, see [Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+3. Installing Microsoft 365 Apps for enterprise, either individually or during an IT rollout. For more information, see [Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
 
-Microsoft 365 Apps for enterprise installs both security and new feature updates automatically and can take advantage of cloud-based services in Microsoft 365 for enhanced security and productivity.
+Microsoft 365 Apps for enterprise installs both security updates and new feature updates automatically. It can take advantage of cloud-based services in Microsoft 365 for enhanced security and productivity.
 
 ## Migration for Microsoft Office server products
 
-In many organizations both large and small, you might be using a combination of older versions of the Office Server products, such as Exchange Server and SharePoint Server. These older versions:
+Both large and small organizations often use a combination of older versions of the Office server products, such as Exchange Server and SharePoint Server. These older versions:
 
 - Should be updated with the latest security updates and support fixes. In some cases, these updates are released monthly.
-- Are not optimally enabled to leverage Microsoft’s cloud technologies and help you digitally transform your business.
-- Do not include new productivity applications, such as Microsoft Teams.
-- Do not include the latest security features, such as Exchange Advanced Threat Protection.
+- Aren't optimized to leverage the Microsoft cloud technologies that help you digitally transform your business.
+- Don't include new productivity applications, such as Microsoft Teams.
+- Don't include the latest security features, such as Exchange Advanced Threat Protection.
 
-Microsoft 365 for enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are continually updated for security without involving IT, saving you the time it takes to maintain and update on-premises servers. These services also have new features enhancements that are not present in Office server software.
+Microsoft 365 Enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are continually updated for security without involving IT, saving you the time it takes to maintain and update on-premises servers. These services also have new features enhancements that are not present in Office server software.
 
 For information about migrating users and data for specific Microsoft 365 workloads:
 
