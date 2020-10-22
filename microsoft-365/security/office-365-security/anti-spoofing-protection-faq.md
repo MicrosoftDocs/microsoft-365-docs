@@ -44,8 +44,6 @@ Microsoft itself first adopted the new email authentication requirements several
 
 Yes. As of October 2018, spoof intelligence is available to all organizations with mailboxes in Exchange Online, and standalone EOP organizations without Exchange Online mailboxes.
 
-Anti-spoofing technology was initially only available in Microsoft Defender for Office 365. For example, Microsoft E5 subscriptions or Defender for Office 365 add-ons.
-
 ## How can I report spam or non-spam messages back to Microsoft?
 
 See [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
