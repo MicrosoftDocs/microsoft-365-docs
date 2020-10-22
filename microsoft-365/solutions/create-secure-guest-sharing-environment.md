@@ -161,7 +161,7 @@ To restrict guests to web-ony access
 10. Under **Assignments**, click **Conditions**.
 11. On the **Conditions** blade, click **Client apps**.
 12. On the **Client apps** blade, click **Yes** for **Configure**, and then select the **Mobile apps and desktop clients** setting.</br>
-    ![Screenshot of Azure AD conditional access client apps settings](../media/azure-ad-conditional-access-client-mobile-new.PNG)
+    ![Screenshot of Azure AD conditional access client apps settings](../media/azure-ad-conditional-access-client-mobile.png)
 13. Click **Done**, and then on the **Conditions** blade, click **Done** again.
 14. Under **Access controls**, click **Grant**.
 15. On the **Grant** blade, select **Require device to be marked as compliant** and **Require Hybrid Azure AD joined device**.
