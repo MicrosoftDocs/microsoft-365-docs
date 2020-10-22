@@ -32,6 +32,9 @@ description: "Learn how to restore a deleted Microsoft 365 group."
 
 ::: moniker-end
 
+> [!NOTE]
+> This article describes restoring only Microsoft 365 groups. All other groups cannot be restored once deleted.
+
 If you've deleted a group, it will be retained for 30 days by default. This 30-day period is considered a "soft-delete" because you can still restore the group. After 30 days, the group and its associated contents are permanently deleted and cannot be restored.
 
 When a group is restored, the following content is restored:
