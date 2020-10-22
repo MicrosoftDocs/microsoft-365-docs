@@ -86,29 +86,29 @@ Both large and small organizations often use a combination of older versions of 
 - Don't include new productivity applications, such as Microsoft Teams.
 - Don't include the latest security features, such as Exchange Advanced Threat Protection.
 
-Microsoft 365 Enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are continually updated for security without involving IT, saving you the time it takes to maintain and update on-premises servers. These services also have new features enhancements that are not present in Office server software.
+Microsoft 365 Enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are automatically updated for security. So your IT personnel save the time it takes to maintain and update on-premises servers. These services also offer new feature enhancements that aren't present in Office server software.
 
-For information about migrating users and data for specific Microsoft 365 workloads:
+Use the following resources for information about migrating users and data for specific Microsoft 365 workloads:
 
-- User mailboxes from Exchange Server to Exchange Online, see [Move mailboxes between on-premises and Exchange Online organizations](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes).
-- SharePoint data from SharePoint Server to SharePoint Online, see [Migrate your content to Microsoft 365](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online).
-- Skype for Business Online to Microsoft Teams, see [Migration and interoperability guidance](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype).
+- [Move mailboxes from on-premises Exchange Server to Exchange Online](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes)
+- [Migrate SharePoint data from SharePoint Server to SharePoint Online](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
+- [Migrate Skype for Business Online to Microsoft Teams](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)
 
 ### Office Server 2007
 
-For server products in the Office 2007 release, the end of support has already passed. See these articles for the details:
+For server products in the Office 2007 release, the end of support has already passed. See these articles for details:
 
-- [Exchange 2007 end of support roadmap](exchange-2007-end-of-support.md)
-- [SharePoint Server 2007 end of support roadmap](sharepoint-2007-end-of-support.md)
-- [Project Server 2007 end of support roadmap](project-server-2007-end-of-support.md)
-- [Office Communications Server end of support roadmap](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
-- [PerformancePoint Server 2007 end of support roadmap](pps-2007-end-of-support.md)
+- [Exchange 2007 end-of-support roadmap](exchange-2007-end-of-support.md)
+- [SharePoint Server 2007 end-of-support roadmap](sharepoint-2007-end-of-support.md)
+- [Project Server 2007 end-of-support roadmap](project-server-2007-end-of-support.md)
+- [Office Communications Server end-of-support roadmap](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+- [PerformancePoint Server 2007 end-of-support roadmap](pps-2007-end-of-support.md)
 
-Rather than upgrading your server products in the Office 2007 release with server products in the Office 2010, Office 2013, or Office 2016 releases, consider:
+Rather than upgrading your server products in the Office 2007 release with server products in the Office 2010, Office 2013, or Office 2016 releases, consider taking the following steps:
 
-1. Migrating the data on your Office 2007 servers to Microsoft 365. To help with this, hire a Microsoft partner.
-2. Rolling out the new functionality and work processes to your users.
-3. When there is no longer a need for the on-premises servers running Office 2007 server products, decommissioning them.
+1. Migrate the data on your Office 2007 servers to Microsoft 365. To help with this, hire a Microsoft partner.
+2. Roll out the new functionality and work processes to your users.
+3. When you no longer need the on-premises servers running Office 2007 server products, decommission them.
 
 ### Office Server 2010
 
@@ -116,19 +116,19 @@ Support for [Exchange Server 2010](exchange-2010-end-of-support.md) ended on **O
 
 The end of support for [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) is **April 13, 2021**.
 
-Rather than upgrading these server products in the Office 2010 release with server products in the Office 2013 or Office 2016 release, consider:
+Rather than upgrading these server products in the Office 2010 release with server products in the Office 2013 or Office 2016 release, consider taking the following steps:
 
-1. Migrating the data on your Office 2010 servers to Microsoft 365. To help with this, see [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) or hire a Microsoft partner.
-2. Rolling out the new functionality and work processes to your users.
-3. When there is no longer a need for the on-premises servers running Office 2010 server products, decommissioning them.
+1. Migrate the data on your Office 2010 servers to Microsoft 365. To help with this, see [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) or hire a Microsoft partner.
+2. Roll out the new functionality and work processes to your users.
+3. When you no longer need the on-premises servers running Office 2010 server products, decommission them.
 
 ### Office Server 2013
 
-For server products in the Office 2013 release, the end of support has not been determined. Rather than upgrading your server products in the Office 2013 release with server products in the Office 2016 release, consider:
+For server products in the Office 2013 release, the end of support hasn't been determined. Rather than upgrading your server products in the Office 2013 release with server products in the Office 2016 release, consider taking the following steps:
 
-1. Migrating the data on your Office 2013 servers to Microsoft 365. To help with this, see [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) or hire a Microsoft partner.
-2. Rolling out the new functionality and work processes to your users.
-3. When there is no longer a need for the on-premises servers running Office 2013 server products, decommissioning them.
+1. Migrate the data on your Office 2013 servers to Microsoft 365. To help with this, see [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) or hire a Microsoft partner.
+2. Roll out the new functionality and work processes to your users.
+3. When you no longer need the on-premises servers running Office 2013 server products, decommission them.
 
 ### Office Server 2016
 
