@@ -179,24 +179,24 @@ More complex examples:
 
 The following query for SharePoint identifies Word documents or Excel spreadsheets when those files contain the keywords **password**, **passwords**, or **pw**:
 
-``` console
+```
 password OR passwords OR pw AND (fileextension: .doc* OR fileextension: .xls*)  
 ```
 The following query for Exchange identifies any Word document or PDF that contains the word **nda** or the phrase **non disclosure agreement** when it is attached to an email:
 
-``` console
+```
 nda OR "non disclosure agreement" AND (attachmentnames: .doc* OR attachmentnames: .pdf)
 ```
 
 The following query for either Exchange or SharePoint identifies emails or documents that contain a credit card number: 
 
-``` console
+```
 sensitivetype:credit card number
 ```
 
 The following query contains some typical keywords to help identify documents or emails that contain legal content:
 
-``` console
+```
 ACP OR Attorney Client Privilege* OR AC Privilege
 ```
 
