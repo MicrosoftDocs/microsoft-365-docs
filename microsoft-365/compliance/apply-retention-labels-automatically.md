@@ -151,32 +151,19 @@ You can auto-apply labels to content by using a query that contains specific wor
 
 For more information about the query syntax that uses Keyword Query Language (KQL), see [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-Query-based labels use the search index to identify content. For more information about the searchable properties that you can use, see:
-
-- [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
-- [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+Query-based labels use the search index to identify content. For more information about the searchable properties that you can use, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md). 
 
 Some things to consider when using this method to auto-apply retention labels:
 
 - Unlike the other methods to auto-apply labels, all items can be labeled with no time restrictions when they were created.
 
-- Although SharePoint managed properties support aliases, don't use these when you configure your retention labels. Always specify the actual name of the managed property, for example, "RefinableString01".
+- For SharePoint, crawled properties and custom properties aren't supported for these KQL queries and you must use only predefined managed properties. However, you can use mappings with the predefined managed property by using RefinableString00 to RefinableString199. For more information, see [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview), and for instructions, see [Create a new managed property](https://docs.microsoft.com/sharepoint/manage-search-schema#create-a-new-managed-property).
 
-- If you map properties, do this at the tenant level and not at the site level.
+- Although SharePoint managed properties can be renamed by using aliases, don't use these for your KQL queries. Always specify the actual name of the managed property, for example, "RefinableString01".
 
 - Use the *DocumentLink* property instead of *Path* to identify a specific site in SharePoint or OneDrive. 
 
 - Partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
-
-- Suffix wildcard searches ( such as `*cat`) or substring wildcard searches (such as `*cat*`) aren't supported. 
-
-- Properties and operators are case-insensitive but for easier readability, we recommend specifying properties in lower case and operators in upper case.
-
-- The following special characters are not included in the search index and are replaced by a blank space in the actual search query or cause a search error:  `+ - = : ! @ # % ^ & ; _ / ? ( ) [ ] { }`
-
-- Use double quotation marks (`" "`) if the property value consists of multiple words. For example, `subject:budget Q1` finds messages that contain budget in the in the subject line and that contain **Q1** anywhere in the message or in any of the message properties, whereas `subject:"budget Q1"` finds all messages that contain **budget Q1** anywhere in the subject line. 
-
-- A space between two keywords or two property:value expressions is the same as using AND.  For example, `from:"Sara Davis" subject:reorganization` finds all messages sent by Sara Davis that contain the word **reorganization** in the subject line. 
 
 
 Examples queries:
@@ -190,15 +177,15 @@ Examples queries:
 
 More complex examples:
 
-The following query for SharePoint identifies any type of Word document or Excel file that contains the keywords **password**, **passwords**, or **pw**:
+The following query for SharePoint identifies Word documents or Excel spreadsheets when those files contain the keywords **password**, **passwords**, or **pw**:
 
 ``` console
 password OR passwords OR pw AND (fileextension: .doc* OR fileextension: .xls*)  
 ```
-The following query for Exchange identifies any Word document or pdf that contains the word **nda** or **phrase non disclosure agreement** and is attached to an email:
+The following query for Exchange identifies any Word document or PDF that contains the word **nda** or the phrase **non disclosure agreement** when it is attached to an email:
 
 ``` console
-nda OR non disclosure agreement AND (attachmentnames: .doc* OR attachmentnames: .pdf)
+nda OR "non disclosure agreement" AND (attachmentnames: .doc* OR attachmentnames: .pdf)
 ```
 
 The following query for either Exchange or SharePoint identifies emails or documents that contain a credit card number: 
@@ -207,8 +194,11 @@ The following query for either Exchange or SharePoint identifies emails or docum
 sensitivetype:credit card number
 ```
 
+The following query contains some typical keywords to help identify documents or emails that contain legal content:
 
-
+``` console
+ACP OR Attorney Client Privilege* OR AC Privilege
+```
 
 ##### Microsoft Teams meeting recordings
 
