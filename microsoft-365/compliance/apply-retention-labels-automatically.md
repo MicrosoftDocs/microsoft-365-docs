@@ -159,11 +159,11 @@ Some things to consider when using this method to auto-apply retention labels:
 
 - For SharePoint, crawled properties and custom properties aren't supported for these KQL queries and you must use only predefined managed properties. However, you can use mappings with the predefined managed property by using RefinableString00 to RefinableString199. For more information, see [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview), and for instructions, see [Create a new managed property](https://docs.microsoft.com/sharepoint/manage-search-schema#create-a-new-managed-property).
 
-- Although SharePoint managed properties can be renamed by using aliases, don't use these for your KQL queries. Always specify the actual name of the managed property, for example, "RefinableString01".
+- Although SharePoint managed properties can be renamed by using aliases, don't use these for KQL queries in your labels. Always specify the actual name of the managed property, for example, "RefinableString01".
 
 - Use the *DocumentLink* property instead of *Path* to identify a specific site in SharePoint or OneDrive. 
 
-- Partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
+- Be aware that partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
 
 
 Examples queries:
