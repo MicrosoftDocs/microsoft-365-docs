@@ -37,7 +37,7 @@ In Microsoft 365 E5, threat protection capabilities are integrated by default. S
 
 ![Overview of Microsoft 365 Defender](../media/solutions-architecture-center/deploy-threat-protection-across-m365-overview.png)
 
-As soon as you deploy any of the advanced threat protection capabilities, you can turn on Microsoft 365 Defender, which brings the signals and data together into one place. 
+As soon as you deploy any of the Defender for Office 365 capabilities, you can turn on Microsoft 365 Defender, which brings the signals and data together into one place. 
 
 ![Conceptual illustration of Microsoft 365 Defender dashboard](../media/solutions-architecture-center/deploy-threat-protection-across-m365-mtp.png)
 
@@ -61,10 +61,10 @@ The following illustration depicts a recommended path for deploying these indivi
 To make sure your organization has the best protection possible, set up and deploy your security solution to include the following steps:
 
 1. [Set up multi-factor authentication and conditional access policies](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
-2. [Configure Microsoft Defender for Identity](deploy-threat-protection-configure.md#step-2-configure-azure-advanced-threat-protection)
-3. [Turn on Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-threat-protection)
-4. [Configure Defender for Office 365](deploy-threat-protection-configure.md#step-4-configure-office-365-advanced-threat-protection)
-5. [Configure Microsoft Defender for Endpoint](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-advanced-threat-protection)
+2. [Configure Microsoft Defender for Identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)
+3. [Turn on Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-protection)
+4. [Configure Defender for Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)
+5. [Configure Microsoft Defender for Endpoint](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)
 6. [Configure Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)
 7. [Monitor status and take actions](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
 8. [Train users](deploy-threat-protection-configure.md#step-8-train-users)

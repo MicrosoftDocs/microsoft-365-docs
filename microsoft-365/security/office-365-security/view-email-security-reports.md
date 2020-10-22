@@ -313,7 +313,7 @@ The following views are available:
 
 - **Break down by: Detection technology** and **View data by: Email \> Phish**: The following information is shown:
 
-  - **ATP-generated URL reputation**<sup>1</sup>: Malicious URL reputation generated from ATP detonations in other ATP customers.
+  - **Defender for Office 365 -generated URL reputation**<sup>1</sup>: Malicious URL reputation generated from Defender for Office 365 detonations in other Defender for Office 365 customers.
   - **Advanced phish filter**: Phishing signals based on machine learning.
   - **Anti-spoof - DMARC failure**: DMARC authentication failure on messages.
   - **Anti-spoof - intra-org**: Sender is trying to spoof the recipient domain.
@@ -366,7 +366,7 @@ The following views are available:
 
   ![Delivery status view for phishing email in the Threat protection status report](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
-<sup>1</sup> Office 365 ATP only
+<sup>1</sup> Defender for Office 365 only
 
 <sup>2</sup> Zero-hour auto purge (ZAP) isn't available in standalone EOP (it only works in Exchange Online mailboxes).
 

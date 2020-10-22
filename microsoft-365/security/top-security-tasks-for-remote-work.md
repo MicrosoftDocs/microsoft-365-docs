@@ -37,8 +37,8 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 |---|---|---|---|---|
 |1|[Enable Azure Multi-Factor Authentication (MFA)](#1-enable-azure-multi-factor-authentication-mfa)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Protect against threats](#2-protect-against-threats)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Configure Microsoft Defender for Office 365](#3-configure-office-365-advanced-threat-protection)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|4|[Configure Microsoft Defender for Identity](#4-configure-azure-advanced-threat-protection)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3|[Configure Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|4|[Configure Microsoft Defender for Identity](#4-configure-microsoft-defender-for-identity)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5|[Turn on Microsoft 365 Defender](#5-turn-on-microsoft-threat-protection)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6|[Configure Intune mobile app protection for phones and tablets](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7|[Configure MFA and conditional access for guests, including Intune app protection](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -99,7 +99,7 @@ Your Global Administrator can configure these protections:
 - [Configure global settings for Safe Links](office-365-security/configure-global-settings-for-safe-links.md)
 - [Set up Safe Attachments policies](office-365-security/set-up-atp-safe-attachments-policies.md)
 
-You'll need to work with your Exchange Online administrator and SharePoint Online administrator to configure ATP for these workloads:
+You'll need to work with your Exchange Online administrator and SharePoint Online administrator to configure Defender for Office 365 for these workloads:
 
 - [ATP for SharePoint, OneDrive, and Microsoft Teams](office-365-security/atp-for-spo-odb-and-teams.md)
 
@@ -117,7 +117,7 @@ Now that you have Microsoft Defender for Office 365 and Microsoft Defender for I
 
 ![MTP dashboard illustration](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
-After you have configured one or more of your advanced threat protection services, turn on MTP. New features are added continually to MTP; consider opting in to receive preview features.
+After you have configured one or more of your Defender for Office 365 services, turn on MTP. New features are added continually to MTP; consider opting in to receive preview features.
 
 - [Learn more about MTP](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
 - [Turn on MTP](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)

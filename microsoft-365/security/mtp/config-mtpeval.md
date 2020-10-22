@@ -122,7 +122,7 @@ There's a PowerShell Module called the *Office 365 Advanced Threat Protection Re
 
     ![Image of_Office 365 Security & Compliance Center page where you can turn on the Audit log search](../../media/mtp-eval-40.png)
 
-12. Integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint. Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Explorer** and select **WDATP Settings** on the upper right corner of the screen. In the Defender for Endpoint connection dialog box, turn on **Connect to Windows ATP**.
+12. Integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint. Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Explorer** and select **Microsoft Defender for Endpoint Settings** on the upper right corner of the screen. In the Defender for Endpoint connection dialog box, turn on **Connect to Microsoft Defender for Endpoint**.
 
     ![Image of_Office 365 Security & Compliance Center page where you can turn Microsoft Defender for Endpoint  connection on](../../media/mtp-eval-41.png)
 

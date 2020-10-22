@@ -41,7 +41,7 @@ With the growing complexity of attacks, it's even difficult for trained users to
 
 ## Anti-phishing protection in EOP
 
-EOP (that is, Microsoft 365 organizations without ATP) contains features that can help protect your organization from phishing threats:
+EOP (that is, Microsoft 365 organizations without Microsoft Defender for Office 365) contains features that can help protect your organization from phishing threats:
 
 - **Spoof intelligence**: Review spoofed messages from senders in internal and external domains, and allow or block those senders. For more information, see [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).
 

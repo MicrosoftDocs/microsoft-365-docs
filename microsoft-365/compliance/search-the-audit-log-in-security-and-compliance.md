@@ -107,7 +107,7 @@ Be sure to read the following items before you start searching the audit log.
 
   |Microsoft 365 service or feature|30 minutes|24 hours|
   |:-----|:-----:|:-----:|
-  |Advanced Threat Protection and Threat Intelligence|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Defender for Office 365 and Threat Intelligence|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (user login events)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Azure Active Directory (admin events)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Data Loss Prevention|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -989,7 +989,7 @@ Here are some tips for searching for Exchange admin activities when searching th
 
 **What are different Microsoft 365 services that are currently audited?**
 
-The most used services like Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection, and Power BI are audited. See the [beginning of this article](search-the-audit-log-in-security-and-compliance.md) for a list of services that are audited.
+The most used services like Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Defender for Office 365, and Power BI are audited. See the [beginning of this article](search-the-audit-log-in-security-and-compliance.md) for a list of services that are audited.
 
 **What activities are audited by auditing service in Office 365?**
 

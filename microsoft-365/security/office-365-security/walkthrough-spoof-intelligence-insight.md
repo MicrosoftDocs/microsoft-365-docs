@@ -20,7 +20,7 @@ description: "Admins can learn how the spoof intelligence insight works, includi
 ms.custom: seo-marvel-apr2020
 ---
 
-# Walkthrough - ATP Spoof intelligence insight in Microsoft 365
+# Walkthrough - Defender for Office 365 Spoof intelligence insight in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

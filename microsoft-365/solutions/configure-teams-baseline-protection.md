@@ -32,7 +32,7 @@ We also recommend turning on basic Defender for Office 365 features to guard aga
 
 |Option|Information|
 |:------|:-----------|
-|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
+|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
 |Safe Documents|[Safe Documents in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
 |Safe Links for Teams|[Office 365 Safe Links in Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
 

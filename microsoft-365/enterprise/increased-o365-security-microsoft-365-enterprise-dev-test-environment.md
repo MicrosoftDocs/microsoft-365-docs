@@ -55,7 +55,7 @@ Apps that do not support modern authentication cannot have [identity and device 
 4. Click **Apps that don't support modern authentication**, select **Block access**, and then click **Save**.
 
 
-### Enable Advanced Threat Protection for SharePoint, OneDrive for Business, and Microsoft Teams
+### Enable Defender for Office 365 for SharePoint, OneDrive for Business, and Microsoft Teams
 
 Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files.
 

@@ -402,35 +402,35 @@
 | 9/30/2020 | [View directory synchronization status in Microsoft 365](/microsoft-365/enterprise/view-directory-synchronization-status?view=o365-21vianet) | modified |
 | 9/30/2020 | [Remediation actions following automated investigation in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/air-remediation-actions?view=o365-21vianet) | modified |
 | 9/30/2020 | [View the results of an automated investigation in Microsoft 365](/microsoft-365/security/office-365-security/air-view-investigation-results?view=o365-21vianet) | modified |
-| 9/30/2020 | ATP anti-phishing capabilities in Office 365 | removed |
+| 9/30/2020 | Anti-phishing capabilities in Microsoft Defender for Office 365 | removed |
 | 9/30/2020 | [ATP for SharePoint, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams?view=o365-21vianet) | modified |
 | 9/30/2020 | [Safe Attachments](/microsoft-365/security/office-365-security/atp-safe-attachments?view=o365-21vianet) | modified |
-| 9/30/2020 | ATP Safe Links for Teams, safelinks, safe links, block malicious links, office 365 atp, Teams safe links, stop users from clicking bad links, malicious links | removed |
-| 9/30/2020 | ATP Safe Links warning pages | removed |
+| 9/30/2020 | Safe Links for Teams, safelinks, safe links, block malicious links, office 365 atp, Teams safe links, stop users from clicking bad links, malicious links | removed |
+| 9/30/2020 | Safe Links warning pages | removed |
 | 9/30/2020 | [Safe Links](/microsoft-365/security/office-365-security/atp-safe-links?view=o365-21vianet) | modified |
-| 9/30/2020 | [Campaign Views in Office 365 ATP Plan](/microsoft-365/security/office-365-security/campaigns?view=o365-21vianet) | modified |
+| 9/30/2020 | [Campaign Views in Microsoft Defender for Office 365 Plan](/microsoft-365/security/office-365-security/campaigns?view=o365-21vianet) | modified |
 | 9/30/2020 | [Configuration analyzer for security policies](/microsoft-365/security/office-365-security/configuration-analyzer-for-security-policies?view=o365-21vianet) | modified |
-| 9/30/2020 | [Configure ATP anti-phishing policies](/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies?view=o365-21vianet) | modified |
-| 9/30/2020 | Dynamic Delivery and previewing with ATP Safe Attachments | removed |
-| 9/30/2020 | How ATP Safe Attachments works | removed |
-| 9/30/2020 | How ATP Safe Links works | removed |
-| 9/30/2020 | View information about malicious files detected by Office 365 ATP | removed |
+| 9/30/2020 | [Configure Anti-phishing policies in Defender for Office 365](/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies?view=o365-21vianet) | modified |
+| 9/30/2020 | Dynamic Delivery and previewing with Safe Attachments | removed |
+| 9/30/2020 | How Safe Attachments works | removed |
+| 9/30/2020 | How Safe Links works | removed |
+| 9/30/2020 | View information about malicious files detected by Microsoft Defender for Office 365| removed |
 | 9/30/2020 | [Microsoft Defender for Office 365 ](/microsoft-365/security/office-365-security/office-365-atp?view=o365-21vianet) | modified |
 | 9/30/2020 | [Preset security policies](/microsoft-365/security/office-365-security/preset-security-policies?view=o365-21vianet) | modified |
 | 9/30/2020 | [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats?view=o365-21vianet) | modified |
-| 9/30/2020 | [Microsoft recommendations for EOP and Office 365 ATP security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for ATP, setup ATP, setup EOP, configure ATP, configure EOP, security configuration](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
-| 9/30/2020 | Set up a custom blocked URLs list using ATP Safe Links | removed |
-| 9/30/2020 | Set up a custom do-not-rewrite URLs list using ATP Safe Links | removed |
+| 9/30/2020 | [Microsoft recommendations for EOP and Microsoft Defender for Office 365 security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for Defender for Office 365, setup Defender for Office 365, setup EOP, configure Defender for Office 365, configure EOP, security configuration](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
+| 9/30/2020 | Set up a custom blocked URLs list using Safe Links | removed |
+| 9/30/2020 | Set up a custom do-not-rewrite URLs list using Safe Links | removed |
 | 9/30/2020 | [Anti-phishing policies](/microsoft-365/security/office-365-security/set-up-anti-phishing-policies?view=o365-21vianet) | modified |
-| 9/30/2020 | [Set up Safe Attachments policies in Office 365 ATP](/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
-| 9/30/2020 | [Set up Safe Links policies in Office 365 ATP](/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-21vianet) | modified |
+| 9/30/2020 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
+| 9/30/2020 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-21vianet) | modified |
 | 9/30/2020 | [SIEM integration with Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/siem-integration-with-office-365-ti?view=o365-21vianet) | modified |
 | 9/30/2020 | [Configure your Microsoft 365 tenant for increased security](/microsoft-365/security/office-365-security/tenant-wide-setup-for-increased-security?view=o365-21vianet) | modified |
 | 9/30/2020 | [Views in Threat Explorer and real-time detections](/microsoft-365/security/office-365-security/threat-explorer-views?view=o365-21vianet) | modified |
 | 9/30/2020 | [Threat Explorer and real-time detections](/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet) | modified |
 | 9/30/2020 | [Threat Trackers - New and Noteworthy](/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet) | modified |
 | 9/30/2020 | [Tune anti-phishing protection](/microsoft-365/security/office-365-security/tuning-anti-phishing?view=o365-21vianet) | modified |
-| 9/30/2020 | [Turn on Office 365 ATP - SharePoint, OneDrive, & Teams](/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-21vianet) | modified |
+| 9/30/2020 | [Turn on Microsoft Defender for Office 365 - SharePoint, OneDrive, & Teams](/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-21vianet) | modified |
 | 9/30/2020 | [View email security reports in the Security & Compliance Center](/microsoft-365/security/office-365-security/view-email-security-reports?view=o365-21vianet) | modified |
 | 9/30/2020 | [View reports for Defender for Office 365](/microsoft-365/security/office-365-security/view-reports-for-atp?view=o365-21vianet) | modified |
 | 9/30/2020 | [Built-in virus protection in SharePoint Online, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/virus-detection-in-spo?view=o365-21vianet) | modified |
@@ -454,7 +454,7 @@
 | 10/1/2020 | [Planning your pilot Microsoft 365 Defender project](/microsoft-365/security/mtp/mtp-pilot-plan?view=o365-21vianet) | modified |
 | 10/1/2020 | [Run your Microsoft 365 Defender attack simulations](/microsoft-365/security/mtp/mtp-pilot-simulate?view=o365-21vianet) | modified |
 | 10/1/2020 | [Run your pilot Microsoft 365 Defender project](/microsoft-365/security/mtp/mtp-pilot?view=o365-21vianet) | modified |
-| 10/1/2020 | [Configure ATP anti-phishing policies](/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies?view=o365-21vianet) | modified |
+| 10/1/2020 | [Configure Anti-phishing policies in Defender for Office 365](/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies?view=o365-21vianet) | modified |
 | 10/1/2020 | [Use Compliance Manager to manage improvement actions](/microsoft-365/solutions/information-protection-deploy-compliance?view=o365-21vianet) | modified |
 | 10/1/2020 | [Overview of Microsoft 365 Groups for administrators](/microsoft-365/admin/create-groups/office-365-groups?view=o365-21vianet) | modified |
 | 10/1/2020 | [Microsoft SharePoint Syntex adoption: Get started](/microsoft-365/contentunderstanding/adoption-getstarted?view=o365-21vianet) | modified |
@@ -466,7 +466,7 @@
 | 10/1/2020 | [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations?view=o365-21vianet) | modified |
 | 10/1/2020 | [Work with insights](/microsoft-365/managed-desktop/working-with-managed-desktop/insights?view=o365-21vianet) | modified |
 | 10/1/2020 | [Safe Attachments](/microsoft-365/security/office-365-security/atp-safe-attachments?view=o365-21vianet) | modified |
-| 10/1/2020 | [User tags in Office 365 ATP](/microsoft-365/security/office-365-security/user-tags?view=o365-21vianet) | modified |
+| 10/1/2020 | [User tags in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/user-tags?view=o365-21vianet) | modified |
 | 10/1/2020 | [Alert policies in the security and compliance centers](/microsoft-365/compliance/alert-policies?view=o365-21vianet) | modified |
 | 10/1/2020 | [Get started with sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-21vianet) | modified |
 | 10/1/2020 | [Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/protect-information?view=o365-21vianet) | modified |
@@ -482,7 +482,7 @@
 | 10/1/2020 | [AssignedIPAddresses() function in advanced hunting for Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-assignedipaddresses-function?view=o365-21vianet) | modified |
 | 10/1/2020 | [FileProfile() function in advanced hunting for Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-fileprofile-function?view=o365-21vianet) | modified |
 | 10/1/2020 | [Overview - Advanced hunting](/microsoft-365/security/mtp/advanced-hunting-overview?view=o365-21vianet) | modified |
-| 10/1/2020 | [Office 365 Security, Office 365 ATP, EOP, ATP, MSDO](/microsoft-365/security/office-365-security/index?view=o365-21vianet) | renamed |
+| 10/1/2020 | [Office 365 Security, Microsoft Defender for Office 365, EOP, MSDO](/microsoft-365/security/office-365-security/index?view=o365-21vianet) | renamed |
 | 10/2/2020 | [Convert a user mailbox to a shared mailbox](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-21vianet) | modified |
 | 10/2/2020 | [Get started with communication compliance](/microsoft-365/compliance/communication-compliance-configure?view=o365-21vianet) | modified |
 | 10/2/2020 | [Communication compliance](/microsoft-365/compliance/communication-compliance?view=o365-21vianet) | modified |
@@ -504,17 +504,17 @@
 | 10/2/2020 | [Microsoft 365 documentation # < 60 chars](/microsoft-365/index?view=o365-21vianet) | modified |
 | 10/2/2020 | [Work with insights](/microsoft-365/managed-desktop/working-with-managed-desktop/insights?view=o365-21vianet) | modified |
 | 10/2/2020 | [ATP for SharePoint, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams?view=o365-21vianet) | modified |
-| 10/2/2020 | [Configure global settings for Safe Links settings in Office 365 ATP](/microsoft-365/security/office-365-security/configure-global-settings-for-safe-links?view=o365-21vianet) | modified |
+| 10/2/2020 | [Configure global settings for Safe Links settings in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/configure-global-settings-for-safe-links?view=o365-21vianet) | modified |
 | 10/2/2020 | [Enable the Report Message add-in](/microsoft-365/security/office-365-security/enable-the-report-message-add-in?view=o365-21vianet) | modified |
 | 10/2/2020 | [Configure EOP to junk spam in hybrid environments](/microsoft-365/security/office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder?view=o365-21vianet) | modified |
-| 10/2/2020 | [Microsoft recommendations for EOP and Office 365 ATP security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for ATP, set up ATP, set up EOP, configure ATP, configure EOP, security configuration](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
+| 10/2/2020 | [Microsoft recommendations for EOP and Microsoft Defender for Office 365 security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for Defender for Office 365, set up Defender for Office 365, set up EOP, configure Defender for Office 365, configure EOP, security configuration](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
 | 10/2/2020 | [Report junk and phishing email in Outlook for iOS and Android](/microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android?view=o365-21vianet) | modified |
 | 10/2/2020 | [Report junk and phishing email in Outlook on the web](/microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop?view=o365-21vianet) | modified |
 | 10/2/2020 | [Report spam, non-spam, and phishing messages to Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft?view=o365-21vianet) | modified |
-| 10/2/2020 | [Set up Safe Attachments policies in Office 365 ATP](/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
-| 10/2/2020 | [Set up Safe Links policies in Office 365 ATP](/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-21vianet) | modified |
+| 10/2/2020 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-21vianet) | modified |
+| 10/2/2020 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-21vianet) | modified |
 | 10/2/2020 | [Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-21vianet) | modified |
-| 10/2/2020 | [Turn on Office 365 ATP - SharePoint, OneDrive, & Teams](/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-21vianet) | modified |
+| 10/2/2020 | [Turn on Microsoft Defender for Office 365- SharePoint, OneDrive, & Teams](/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-21vianet) | modified |
 | 10/2/2020 | [User submissions policies](/microsoft-365/security/office-365-security/user-submission?view=o365-21vianet) | modified |
 | 10/2/2020 | [View reports for Defender for Office 365](/microsoft-365/security/office-365-security/view-reports-for-atp?view=o365-21vianet) | modified |
 
@@ -537,7 +537,7 @@
 | 10/5/2020 | [Collaborate with guests in a site](/microsoft-365/solutions/collaborate-in-site?view=o365-21vianet) | modified |
 | 10/5/2020 | [Collaborate with guests on a document](/microsoft-365/solutions/collaborate-on-documents?view=o365-21vianet) | modified |
 | 10/5/2020 | [Empower remote workers with Microsoft 365](/microsoft-365/solutions/empower-people-to-work-remotely?view=o365-21vianet) | modified |
-| 10/5/2020 | [Office 365 Security, Office 365 ATP, EOP, ATP, MSDO](/microsoft-365/security/office-365-security/index?view=o365-21vianet) | modified |
+| 10/5/2020 | [Office 365 Security, Microsoft Defender for Office 365, EOP, MSDO](/microsoft-365/security/office-365-security/index?view=o365-21vianet) | modified |
 | 10/5/2020 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-21vianet) | modified |
 | 10/5/2020 | [Hybrid Modern Authentication overview and prerequisites for use with on-premises Skype for Business and Exchange servers](/microsoft-365/enterprise/hybrid-modern-auth-overview?view=o365-21vianet) | modified |
 | 10/5/2020 | [How to request your data move](/microsoft-365/enterprise/request-your-data-move?view=o365-21vianet) | modified |
@@ -681,7 +681,7 @@
 | 10/8/2020 | [Security hurdles you can sail over — One architect’s viewpoint](/microsoft-365/solutions/security-design-principles?view=o365-21vianet) | modified |
 | 10/8/2020 | [Learn the advanced hunting query language in Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-query-language?view=o365-21vianet) | modified |
 | 10/8/2020 | [Anti-phishing policies](/microsoft-365/security/office-365-security/set-up-anti-phishing-policies?view=o365-21vianet) | modified |
-| 10/8/2020 | [User tags in Office 365 ATP](/microsoft-365/security/office-365-security/user-tags?view=o365-21vianet) | modified |
+| 10/8/2020 | [User tags in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/user-tags?view=o365-21vianet) | modified |
 | 10/9/2020 | [Set up a connector to archive Android mobile data](/microsoft-365/compliance/archive-android-archiver-data?view=o365-21vianet) | modified |
 | 10/9/2020 | [Set up a connector to archive AT&T SMS/MMS Network data](/microsoft-365/compliance/archive-att-network-archiver-data?view=o365-21vianet) | modified |
 | 10/9/2020 | [Set up a connector to archive Bloomberg Message data](/microsoft-365/compliance/archive-bloomberg-message-data?view=o365-21vianet) | modified |
@@ -744,7 +744,7 @@
 | 10/9/2020 | [IdentityLogonEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-identitylogonevents-table?view=o365-21vianet) | modified |
 | 10/9/2020 | [IdentityQueryEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-identityqueryevents-table?view=o365-21vianet) | modified |
 | 10/9/2020 | [Advanced hunting limits in Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-limits?view=o365-21vianet) | modified |
-| 10/9/2020 | [Migrate advanced hunting queries from Microsoft Defender ATP](/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp?view=o365-21vianet) | modified |
+| 10/9/2020 | [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp?view=o365-21vianet) | modified |
 | 10/9/2020 | [Overview - Advanced hunting](/microsoft-365/security/mtp/advanced-hunting-overview?view=o365-21vianet) | modified |
 | 10/9/2020 | [Hunt for threats across devices, emails, apps, and identities with advanced hunting](/microsoft-365/security/mtp/advanced-hunting-query-emails-devices?view=o365-21vianet) | modified |
 | 10/9/2020 | [Learn the advanced hunting query language in Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-query-language?view=o365-21vianet) | modified |
@@ -771,7 +771,7 @@
 | 10/9/2020 | [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-autoir?view=o365-21vianet) | modified |
 | 10/9/2020 | [Configure automated investigation and response capabilities in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-configure-auto-investigation-response?view=o365-21vianet) | modified |
 | 10/9/2020 | [Remediation actions following automated investigations in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-remediation-actions?view=o365-21vianet) | modified |
-| 10/9/2020 | [Configure and manage Microsoft Defender ATP capabilities](/microsoft-365/security/mtp/onboard?view=o365-21vianet) | modified |
+| 10/9/2020 | [Configure and manage Microsoft Defender for Endpoint capabilities](/microsoft-365/security/mtp/onboard?view=o365-21vianet) | modified |
 | 10/9/2020 | [Overview of the Microsoft 365 security center](/microsoft-365/security/mtp/overview-security-center?view=o365-21vianet) | modified |
 | 10/9/2020 | [Microsoft security portals and admin centers](/microsoft-365/security/mtp/portals?view=o365-21vianet) | modified |
 | 10/9/2020 | [What's new in Microsoft 365 Defender](/microsoft-365/security/mtp/whats-new?view=o365-21vianet) | modified |
@@ -794,19 +794,19 @@
 | 10/9/2020 | [ATP for SharePoint, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams?view=o365-21vianet) | modified |
 | 10/9/2020 | [Safe Attachments](/microsoft-365/security/office-365-security/atp-safe-attachments?view=o365-21vianet) | modified |
 | 10/9/2020 | [Safe Links](/microsoft-365/security/office-365-security/atp-safe-links?view=o365-21vianet) | modified |
-| 10/9/2020 | [Attack Simulator in ATP](/microsoft-365/security/office-365-security/attack-simulator?view=o365-21vianet) | modified |
+| 10/9/2020 | [Attack Simulator in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulator?view=o365-21vianet) | modified |
 | 10/9/2020 | [Automated investigation and response (AIR) overview](/microsoft-365/security/office-365-security/automated-investigation-response-office?view=o365-21vianet) | modified |
 | 10/9/2020 | [Best practices for configuring EOP](/microsoft-365/security/office-365-security/best-practices-for-configuring-eop?view=o365-21vianet) | modified |
-| 10/9/2020 | [Campaign Views in Office 365 ATP Plan](/microsoft-365/security/office-365-security/campaigns?view=o365-21vianet) | modified |
+| 10/9/2020 | [Campaign Views in Defender for Office 365 Plan](/microsoft-365/security/office-365-security/campaigns?view=o365-21vianet) | modified |
 | 10/9/2020 | [Configure anti-malware policies](/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-21vianet) | modified |
-| 10/9/2020 | [Office 365 Security, Office 365 ATP, EOP, ATP, MSDO](/microsoft-365/security/office-365-security/index?view=o365-21vianet) | modified |
+| 10/9/2020 | [Office 365 Security, Microsoft Defender for Office 365, EOP, MSDO](/microsoft-365/security/office-365-security/index?view=o365-21vianet) | modified |
 | 10/9/2020 | [Automated investigation and response (AIR) - Getting Started](/microsoft-365/security/office-365-security/office-365-air?view=o365-21vianet) | modified |
 | 10/9/2020 | [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp?view=o365-21vianet) | modified |
-| 10/9/2020 | [Threat investigation & response capabilities - Office 365 ATP Plan 2](/microsoft-365/security/office-365-security/office-365-ti?view=o365-21vianet) | modified |
+| 10/9/2020 | [Threat investigation & response capabilities - Defender for Office 365 Plan 2](/microsoft-365/security/office-365-security/office-365-ti?view=o365-21vianet) | modified |
 | 10/9/2020 | [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats?view=o365-21vianet) | modified |
 | 10/9/2020 | [Quarantined email messages](/microsoft-365/security/office-365-security/quarantine-email-messages?view=o365-21vianet) | modified |
 | 10/9/2020 | [Quarantined messages FAQ](/microsoft-365/security/office-365-security/quarantine-faq?view=o365-21vianet) | modified |
-| 10/9/2020 | [Microsoft recommendations for EOP and Office 365 ATP security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for ATP, set up ATP, set up EOP, configure ATP, configure EOP, security configuration](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
+| 10/9/2020 | [Microsoft recommendations for EOP and Microsoft Defender for Office 365 security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for Defender for Office 365, set up Defender for Office 365, set up EOP, configure Defender for Office 365, configure EOP, security configuration](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
 | 10/9/2020 | [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from-ransomware?view=o365-21vianet) | modified |
 | 10/9/2020 | [Views in Threat Explorer and real-time detections](/microsoft-365/security/office-365-security/threat-explorer-views?view=o365-21vianet) | modified |
 | 10/9/2020 | [Threat Explorer and real-time detections](/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet) | modified |
@@ -821,8 +821,8 @@
 | 10/9/2020 | [Change your organization's address, technical contact, and more](/microsoft-365/admin/manage/change-address-contact-and-more?view=o365-21vianet) | modified |
 | 10/9/2020 | [Configuring and controlling external email forwarding, Automatic forwarding, 5.7.520 Access Denied, disable external forwarding, Your administrator has disabled external forwarding, outbound anti-spam policy](/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-21vianet) | modified |
 | 10/9/2020 | [Manage quarantined messages and files as an admin](/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files?view=o365-21vianet) | modified |
-| 10/9/2020 | [Set up Safe Links policies in Office 365 ATP](/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-21vianet) | modified |
-| 10/9/2020 | [User tags in Office 365 ATP](/microsoft-365/security/office-365-security/user-tags?view=o365-21vianet) | modified |
+| 10/9/2020 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-21vianet) | modified |
+| 10/9/2020 | [User tags in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/user-tags?view=o365-21vianet) | modified |
 | 10/9/2020 | [Configure Microsoft 365 Defender pillars for the trial lab or pilot environment](/microsoft-365/security/mtp/config-mtpeval?view=o365-21vianet) | modified |
 | 10/9/2020 | [Evaluate Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-evaluation?view=o365-21vianet) | modified |
 | 10/9/2020 | [Summarizing your pilot Microsoft 365 Defender project results](/microsoft-365/security/mtp/mtp-pilot-close?view=o365-21vianet) | modified |
@@ -877,7 +877,7 @@
 | 10/12/2020 | [IdentityLogonEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-identitylogonevents-table?view=o365-21vianet) | modified |
 | 10/12/2020 | [IdentityQueryEvents table in the advanced hunting schema](/microsoft-365/security/mtp/advanced-hunting-identityqueryevents-table?view=o365-21vianet) | modified |
 | 10/12/2020 | [Advanced hunting limits in Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-limits?view=o365-21vianet) | modified |
-| 10/12/2020 | [Migrate advanced hunting queries from Microsoft Defender ATP](/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp?view=o365-21vianet) | modified |
+| 10/12/2020 | [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/mtp/advanced-hunting-migrate-from-mdatp?view=o365-21vianet) | modified |
 | 10/12/2020 | [Overview - Advanced hunting](/microsoft-365/security/mtp/advanced-hunting-overview?view=o365-21vianet) | modified |
 | 10/12/2020 | [Hunt for threats across devices, emails, apps, and identities with advanced hunting](/microsoft-365/security/mtp/advanced-hunting-query-emails-devices?view=o365-21vianet) | modified |
 | 10/12/2020 | [Learn the advanced hunting query language in Microsoft 365 Defender](/microsoft-365/security/mtp/advanced-hunting-query-language?view=o365-21vianet) | modified |
@@ -904,20 +904,20 @@
 | 10/12/2020 | [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-autoir?view=o365-21vianet) | modified |
 | 10/12/2020 | [Configure automated investigation and response capabilities in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-configure-auto-investigation-response?view=o365-21vianet) | modified |
 | 10/12/2020 | [Remediation actions following automated investigations in Microsoft 365 Defender](/microsoft-365/security/mtp/mtp-remediation-actions?view=o365-21vianet) | modified |
-| 10/12/2020 | [Configure and manage Microsoft Defender ATP capabilities](/microsoft-365/security/mtp/onboard?view=o365-21vianet) | modified |
+| 10/12/2020 | [Configure and manage Microsoft Defender for Endpoint capabilities](/microsoft-365/security/mtp/onboard?view=o365-21vianet) | modified |
 | 10/12/2020 | [Overview of the Microsoft 365 security center](/microsoft-365/security/mtp/overview-security-center?view=o365-21vianet) | modified |
 | 10/12/2020 | [Microsoft security portals and admin centers](/microsoft-365/security/mtp/portals?view=o365-21vianet) | modified |
 | 10/12/2020 | [What's new in Microsoft 365 Defender](/microsoft-365/security/mtp/whats-new?view=o365-21vianet) | modified |
-| 10/12/2020 | [Attack Simulator in ATP](/microsoft-365/security/office-365-security/attack-simulator?view=o365-21vianet) | modified |
-| 10/12/2020 | [Campaign Views in Office 365 ATP Plan](/microsoft-365/security/office-365-security/campaigns?view=o365-21vianet) | modified |
-| 10/12/2020 | [Office 365 Security, Office 365 ATP, EOP, ATP, MSDO](/microsoft-365/security/office-365-security/index?view=o365-21vianet) | modified |
+| 10/12/2020 | [Attack Simulator in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulator?view=o365-21vianet) | modified |
+| 10/12/2020 | [Campaign Views in Defender for Office 365 Plan](/microsoft-365/security/office-365-security/campaigns?view=o365-21vianet) | modified |
+| 10/12/2020 | [Office 365 Security, Microsoft Defender for Office 365, EOP, MSDO](/microsoft-365/security/office-365-security/index?view=o365-21vianet) | modified |
 | 10/12/2020 | [Automated investigation and response (AIR) - Getting Started](/microsoft-365/security/office-365-security/office-365-air?view=o365-21vianet) | modified |
 | 10/12/2020 | [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp?view=o365-21vianet) | modified |
-| 10/12/2020 | [Threat investigation & response capabilities - Office 365 ATP Plan 2](/microsoft-365/security/office-365-security/office-365-ti?view=o365-21vianet) | modified |
+| 10/12/2020 | [Threat investigation & response capabilities - Defender for Office 365Plan 2](/microsoft-365/security/office-365-security/office-365-ti?view=o365-21vianet) | modified |
 | 10/12/2020 | [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats?view=o365-21vianet) | modified |
 | 10/12/2020 | [Quarantined email messages](/microsoft-365/security/office-365-security/quarantine-email-messages?view=o365-21vianet) | modified |
 | 10/12/2020 | [Quarantined messages FAQ](/microsoft-365/security/office-365-security/quarantine-faq?view=o365-21vianet) | modified |
-| 10/12/2020 | [Microsoft recommendations for EOP and Office 365 ATP security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for ATP, set up ATP, set up EOP, configure ATP, configure EOP, security configuration](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
+| 10/12/2020 | [Microsoft recommendations for EOP and Microsoft Defender for Office 365security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for Defender for Office 365, set up Defender for Office 365, set up EOP, configure Defender for Office 365, configure EOP, security configuration](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-21vianet) | modified |
 | 10/12/2020 | [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from-ransomware?view=o365-21vianet) | modified |
 | 10/13/2020 | [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles?view=o365-21vianet) | modified |
 | 10/13/2020 | [Remove a former employee](/microsoft-365/admin/add-users/remove-former-employee?view=o365-21vianet) | modified |
@@ -1001,7 +1001,7 @@
 | 10/13/2020 | [Office 365 Content Delivery Network (CDN) Quickstart](/microsoft-365/enterprise/office-365-cdn-quickstart?view=o365-21vianet) | modified |
 | 10/13/2020 | [Network connectivity in the Microsoft 365 Admin Center (preview)](/microsoft-365/enterprise/office-365-network-mac-perf-overview?view=o365-21vianet) | modified |
 | 10/13/2020 | [Resources to help you upgrade from Office 2010 servers and clients](/microsoft-365/enterprise/upgrade-from-office-2010-servers-and-products?view=o365-21vianet) | modified |
-| 10/13/2020 | [Office 365 Security, Office 365 ATP, EOP, ATP, MSDO](/microsoft-365/security/office-365-security/index?view=o365-21vianet) | modified |
+| 10/13/2020 | [Office 365 Security, Microsoft Defender for Office 365, EOP, MSDO](/microsoft-365/security/office-365-security/index?view=o365-21vianet) | modified |
 | 10/14/2020 | [Guest users in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-guest-users?view=o365-21vianet) | modified |
 | 10/14/2020 | [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-21vianet) | modified |
 | 10/14/2020 | [Set up multi-factor authentication for users](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |

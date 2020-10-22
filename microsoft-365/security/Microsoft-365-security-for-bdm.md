@@ -75,7 +75,7 @@ The following diagram illustrates these capabilities.
 
 ## Protect against unknown threats
 
-After adding extra protections to your privileged accounts and protecting against known attacks, shift your attention to protecting against unknown threats. The more determined and advanced adversaries use innovative and new, unknown methods to attack organizations. With Microsoft's vast telemetry of data gathered over billions of devices, applications, and services, we are able to perform Advanced Threat Protection on Windows, Office 365, and Azure to prevent against Zero Day attacks, utilizing sand box environments, and checking validity before allowing access to your content. 
+After adding extra protections to your privileged accounts and protecting against known attacks, shift your attention to protecting against unknown threats. The more determined and advanced adversaries use innovative and new, unknown methods to attack organizations. With Microsoft's vast telemetry of data gathered over billions of devices, applications, and services, we are able to perform Defender for Office 365 on Windows, Office 365, and Azure to prevent against Zero Day attacks, utilizing sand box environments, and checking validity before allowing access to your content. 
 
 
 |Recommendation  |E3  |E5  |

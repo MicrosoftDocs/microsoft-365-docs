@@ -267,7 +267,7 @@ When you select a file in the list, the following file details appear in the **D
 - **File URL**: URL that defines the location of the file (for example, in SharePoint Online).
 - **Malicious content detected on** The date/time the file was quarantined.
 - **Expires**: The date when the file will be deleted from quarantine.
-- **Detected By**: ATP (Advanced Threat Protection) or Microsoft's anti-malware engine.
+- **Detected By**: Defender for Office 365 or Microsoft's anti-malware engine.
 - **Released?**
 - **Malware Name**
 - **Document ID**: A unique identifier for the document.

@@ -128,7 +128,7 @@ The following 15 services are available in the Microsoft Cloud Deutschland cloud
 3. Groups (Modern groups)
 4. Delve Profile
 5. Exchange Online Protection
-6. Advanced Threat Protection (ATP)
+6. Defender for Office 365
 7. Advanced eDiscovery
 8. Advance Data Governance
 9. SharePoint Online
@@ -148,7 +148,7 @@ There are currently 29 services available as part of Office 365 services in the 
 5. MyAnalytics
 6. Workplace Analytics
 7. Exchange Online Protection
-8. Advanced Threat Protection (ATP)
+8. Defender for Office 365
 9. Advanced eDiscovery
 10. Advanced Security Management
 11. Information Rights Management

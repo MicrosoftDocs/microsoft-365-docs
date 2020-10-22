@@ -134,7 +134,7 @@ With Explorer (and real-time detections), you can apply a filter in a click. Cli
 
 Clicking **ATP Detonation** in this chart results in a view like this:
 
-![Explorer filtered to display only ATP Detonation results](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![Explorer filtered to display only Defender for Office 365 Detonation results](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
 In this view, we are now looking at data for files that were detonated by [Safe Attachments](atp-safe-attachments.md). Below the chart, we can see details about specific email messages that had attachments that were detected by Safe Attachments.
 

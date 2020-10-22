@@ -367,7 +367,7 @@ You can't remove the default policy.
 
 ## Use Exchange Online PowerShell to configure anti-phishing policies in Microsoft Defender for Office 365
 
-As previously described, an ATP anti-spam policy consists of an anti-phish policy and an anti-phish rule.
+As previously described, an anti-spam policy consists of an anti-phish policy and an anti-phish rule.
 
 In Exchange Online PowerShell, the difference between anti-phish policies and anti-phish rules is apparent. You manage anti-phish policies by using the **\*-AntiPhishPolicy** cmdlets, and you manage anti-phish rules by using the **\*-AntiPhishRule** cmdlets.
 

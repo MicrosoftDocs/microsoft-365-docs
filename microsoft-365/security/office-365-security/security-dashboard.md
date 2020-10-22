@@ -81,7 +81,7 @@ The metrics are calculated as described in the following table:
 |---|---|
 |Messages scanned|Number of email messages scanned multiplied by the number of recipients|
 |Threats stopped|Number of email messages identified as containing malware multiplied by the number of recipients|
-|Blocked by [ATP](office-365-atp.md)|Number of email messages blocked by ATP multiplied by the number of recipients|
+|Blocked by [Defender for Office 365 ](office-365-atp.md)|Number of email messages blocked by Defender for Office 365 multiplied by the number of recipients|
 |Removed after delivery|Number of messages removed by [zero-hour auto purge](zero-hour-auto-purge.md) multiplied by the number of recipients|
 
 ## Malware

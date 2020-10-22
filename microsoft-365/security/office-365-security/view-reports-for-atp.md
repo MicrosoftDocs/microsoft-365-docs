@@ -1,5 +1,5 @@
 ---
-title: View reports for Advanced Threat Protection
+title: View reports for Defender for Office 365
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -30,20 +30,20 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 
 ![The Reports dashboard in the Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## Advanced Threat Protection file types report
+## Defender for Office 365 file types report
 
-The **Advanced Threat Protection file types report** report shows you the type of files detected as malicious by [Safe Attachments](atp-safe-attachments.md).
+The **Defender for Office 365 file types report** report shows you the type of files detected as malicious by [Safe Attachments](atp-safe-attachments.md).
 
  The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for 10 days of filtering.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Office ATP file types**. To go directly to the report, open <https://protection.office.com/reportv2?id=ATPFileReport>.
+To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Defender for Office 365 file types**. To go directly to the report, open <https://protection.office.com/reportv2?id=ATPFileReport>.
 
-![Office ATP file types widget in the Reports dashboard](../../media/atp-file-types-report-widget.png)
+![Defender for Office 365 file types widget in the Reports dashboard](../../media/atp-file-types-report-widget.png)
 
 > [!NOTE]
-> The information in this report is also available in the [Advanced Threat Protection message disposition report](#advanced-threat-protection-message-disposition-report).
+> The information in this report is also available in the [Defender for Office 365 message disposition report](#defender-for-office-365-message-disposition-report).
 
-### Report view for the Advanced Threat Protection file types report
+### Report view for the Defender for Office 365 file types report
 
 The following views are available:
 
@@ -60,7 +60,7 @@ The following views are available:
 
   When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [Safe Attachments](atp-safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).
 
-  ![File view in the ATP file types report](../../media/atp-file-types-report-file-view.png)
+  ![File view in the Defender for Office 365 file types report](../../media/atp-file-types-report-file-view.png)
 
   If you click **Filters**, you can modify the report with the following filters:
 
@@ -74,14 +74,14 @@ The following views are available:
   - **Messages monitored**
   - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
-  ![Message view in the ATP file types report](../../media/atp-file-types-report-message-view.png)
+  ![Message view in the Defender for Office 365 file types report](../../media/atp-file-types-report-message-view.png)
 
   If you click **Filters**, you can modify the report with the following filters:
 
   - **Start date** and **End date**
   - The same message disposition values that are available in the chart, and the additional **Messages passed** value.
 
-### Details table view for the Advanced Threat Protection file types report
+### Details table view for the Defender for Office 365 file types report
 
 If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization for the last 10 days. The information that's shown depends on the chart you were looking at:
 
@@ -114,18 +114,18 @@ If you click **View details table**, the report provides a near-real-time view o
 
 To get back to the reports view, click **View report**.
 
-## Advanced Threat Protection message disposition report
+## Defender for Office 365 message disposition report
 
 The **ATP Message Disposition** report shows you the actions that were taken for email messages that were detected as having malicious content.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Office ATP message disposition**. To go directly to the report, open <https://protection.office.com/reportv2?id=ATPMessageReport>.
+To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Defender for Office 365 message disposition**. To go directly to the report, open <https://protection.office.com/reportv2?id=ATPMessageReport>.
 
-![Office 365 ATP message disposition widget in the Reports dashboard](../../media/atp-message-disposition-report-widget.png)
+![Defender for Office 365 message disposition widget in the Reports dashboard](../../media/atp-message-disposition-report-widget.png)
 
 > [!NOTE]
-> The information in this report is also available in the [Advanced Threat Protection file types report](#advanced-threat-protection-file-types-report).
+> The information in this report is also available in the [Defender for Office 365 file types report](#defender-for-office-365-file-types-report).
 
-### Report view for the Advanced Threat Protection message disposition report
+### Report view for the Defender for Office 365 message disposition report
 
 The following views are available:
 
@@ -136,7 +136,7 @@ The following views are available:
   - **Messages monitored**
   - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
-  ![Message view in the ATP file types report](../../media/atp-file-types-report-message-view.png)
+  ![Message view in the Defender for Office 365 file types report](../../media/atp-file-types-report-message-view.png)
 
   If you click **Filters**, you can modify the report with the following filters:
 
@@ -156,14 +156,14 @@ The following views are available:
 
   When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [Safe Attachments](atp-safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).
 
-  ![File view in the ATP file types report](../../media/atp-file-types-report-file-view.png)
+  ![File view in the Defender for Office 365 file types report](../../media/atp-file-types-report-file-view.png)
 
   If you click **Filters**, you can modify the report with the following filters:
 
   - **Start date** and **End date**
   - The same file type values that are visible in the chart.
 
-### Details table view for the Advanced Threat Protection message disposition report
+### Details table view for the Defender for Office 365 message disposition report
 
 If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization for the last 10 days. The information that's shown depends on the chart you were looking at:
 
@@ -273,7 +273,7 @@ In addition to the reports described in this topic, several other reports are av
 |**Mail flow reports**, such as the Forwarding report, the Mailflow status report, and the Top senders and recipients report.|[View mail flow reports in the Security & Compliance Center](view-mail-flow-reports.md)|
 |**URL trace for Safe Links** (PowerShell only). The output of this cmdlet shows you the results of Safe Links actions over the past seven days.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
 |**Mail traffic results for EOP and Microsoft Defender for Office 365** (PowerShell only). The output of this cmdlet contains information about Domain, Date, Event Type, Direction, Action, and Message Count.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
-|**Mail detail reports for EOP and ATP detections** (PowerShell only). The output of this cmdlet contains details about malicious files or URLs, phishing attempts, impersonation, and other potential threats in email or files.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
+|**Mail detail reports for EOP and Defender for Office 365 detections** (PowerShell only). The output of this cmdlet contains details about malicious files or URLs, phishing attempts, impersonation, and other potential threats in email or files.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 |
 
 ## What permissions are needed to view the Defender for Office 365 reports?
@@ -302,7 +302,7 @@ To learn more, see the following resources:
 
 ## What if the reports aren't showing data?
 
-If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Your organization must have [Safe Links policies](set-up-atp-safe-links-policies.md) and [Safe Attachments policies](set-up-atp-safe-attachments-policies.md) defined in order for ATP protection to be in place. Also see [Anti-spam and anti-malware protection](anti-spam-and-anti-malware-protection.md).
+If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Your organization must have [Safe Links policies](set-up-atp-safe-links-policies.md) and [Safe Attachments policies](set-up-atp-safe-attachments-policies.md) defined in order for Defender for Office 365 protection to be in place. Also see [Anti-spam and anti-malware protection](anti-spam-and-anti-malware-protection.md).
 
 ## Related topics
 

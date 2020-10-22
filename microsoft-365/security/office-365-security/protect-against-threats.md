@@ -26,7 +26,7 @@ ms.custom: seo-marvel-apr2020
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Here's a quick-start guide that breaks the configuration of Advanced Threat Protection into chunks. If you're new to threat protection features in Office 365, not sure where to begin, or if you learn best by *doing*, use this guidance as a checklist and a starting point.
+Here's a quick-start guide that breaks the configuration of Defender for Office 365 into chunks. If you're new to threat protection features in Office 365, not sure where to begin, or if you learn best by *doing*, use this guidance as a checklist and a starting point.
 
 > [!IMPORTANT]
 > **Initial recommended settings are included for each kind of policy; however, many options are available, and you can adjust your settings to meet your specific organization's needs**. Allow approximately 30 minutes for your policies or changes to work their way through your datacenter.
@@ -38,7 +38,7 @@ Here's a quick-start guide that breaks the configuration of Advanced Threat Prot
 Threat protection features are included in *all* Microsoft or Office 365 subscriptions; however, some subscriptions have advanced features. The table below lists the protection features included in this article together with the minimum subscription requirements.
 
 > [!TIP]
-> Notice that, beyond the directions to turn on auditing, *steps* start anti-malware, anti-phishing, and anti-spam, which are marked as part of Office 365 Exchange Online Protection (**EOP**). This can seem odd in an Advanced Threat Protection article, until you remember Advanced Threat Protection (**ATP**) contains, and builds on, EOP.
+> Notice that, beyond the directions to turn on auditing, *steps* start anti-malware, anti-phishing, and anti-spam, which are marked as part of Office 365 Exchange Online Protection (**EOP**). This can seem odd in an Defender for Office 365 article, until you remember (**Defender for Office 365**) contains, and builds on, EOP.
 
 ****
 
@@ -49,13 +49,13 @@ Threat protection features are included in *all* Microsoft or Office 365 subscri
 |Anti-phishing protection|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Anti-spam protection|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Zero-hour auto purge (for email)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Protection from malicious URLs and files in email and Office documents (safe links and safe attachments)|[Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (**ATP**)|
-|Turn on ATP for SharePoint, OneDrive, and Microsoft Teams workloads|[ATP](atp-for-spo-odb-and-teams.md)|
-|Advanced anti-phishing protection|[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Protection from malicious URLs and files in email and Office documents (safe links and safe attachments)|[Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Turn on ATP for SharePoint, OneDrive, and Microsoft Teams workloads|[Defender for Office 365 ](atp-for-spo-odb-and-teams.md)|
+|Advanced anti-phishing protection|[Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### Roles and permissions
 
-To configure ATP policies, you must be assigned an appropriate role in the [Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Take a look at the table below for roles that can do these actions.
+To configure Defender for Office 365 policies, you must be assigned an appropriate role in the [Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Take a look at the table below for roles that can do these actions.
 
 ****
 
@@ -94,9 +94,9 @@ To learn more about anti-malware policy options, see [Configure anti-malware pol
 
 [Anti-phishing]
 
-[Anti-phishing protection](anti-phishing-protection.md) is available in subscriptions that include [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Advanced anti-phishing protection is available in [ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+[Anti-phishing protection](anti-phishing-protection.md) is available in subscriptions that include [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Advanced anti-phishing protection is available in [Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-The following procedure describes how to configure an anti-phishing policy in Microsoft Defender for Office 365. The steps are similar for configuring an anti-phishing policy (without ATP).
+The following procedure describes how to configure an anti-phishing policy in Microsoft Defender for Office 365. The steps are similar for configuring an anti-phishing policy.
 
 1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** > **Policy** > **ATP anti-phishing**.
 
@@ -148,7 +148,7 @@ To learn more about your anti-spam policy options, see [Configure anti-spam poli
 
 ## Part 4 - Protection from malicious URLs and files (Safe Links and Safe Attachments in Defender for Office 365)
 
-Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP). It's set up through [Safe Attachments](atp-safe-attachments.md) and [Safe Links](atp-safe-links.md) policies.
+Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](atp-safe-attachments.md) and [Safe Links](atp-safe-links.md) policies.
 
 ### Safe Attachments policies in Microsoft Defender for Office 365
 
@@ -206,7 +206,7 @@ To learn more, see [Set up Safe Links policies](set-up-atp-safe-links-policies.m
 
 ## Part 5 - Verify ATP for SharePoint, OneDrive, and Microsoft Teams is turned on
 
-Workloads like SharePoint, OneDrive, and Teams are built for collaboration. Using ATP helps with blocking and detection of files that are identified as malicious in team sites and document libraries. You can read more about how that works [here](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams).
+Workloads like SharePoint, OneDrive, and Teams are built for collaboration. Using Defender for Office 365 helps with blocking and detection of files that are identified as malicious in team sites and document libraries. You can read more about how that works [here](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams).
 
 > [!IMPORTANT]
 > **Before you begin this procedure, make sure that audit logging is already turned on for your Microsoft 365 environment**. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md)!
