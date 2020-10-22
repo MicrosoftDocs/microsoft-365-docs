@@ -189,5 +189,5 @@ In addition to this guidance, Microsoft recommends that your users take the acti
 - Enabling security features on Windows 10 and Mac PCs (for unmanaged devices)
     
 Microsoft also recommends that users protect their personal email accounts by taking the actions recommended in the following articles:
-- [Help protect your Outlook.com email account](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [Help protect your Outlook.com email account](https://support.microsoft.com/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 - [Protect your Gmail account with 2-step verification](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
