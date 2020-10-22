@@ -150,7 +150,7 @@ Additional security benefits come with an Microsoft Defender for Office 365 subs
 
 If your subscription includes Microsoft Defender for Office 365 or if you've purchased Defender for Office 365 as an add-on, set the following Standard or Strict configurations.
 
-### Anti-phishing policy in Microsoft Defender for Office 365 settings
+### Anti-phishing policy settings in Microsoft Defender for Office 365
 
 EOP customers get basic anti-phishing as previously described, but Microsoft Defender for Office 365 includes more features and control to help prevent, detect, and remediate against attacks. To create and configure these policies, see [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
