@@ -64,14 +64,20 @@ A policy has medium confidence that it's detected this type of sensitive informa
 - The function Func_aba_routing finds content that matches the pattern.
 - A keyword from Keyword_ABA_Routing is found.
 
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_aba_routing finds content that matches the pattern.
+
 ```xml
-<!-- ABA Routing Number -->
-<Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
+    <!-- ABA Routing Number -->
+    <Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_aba_routing" />
         <Match idRef="Keyword_ABA_Routing" />
       </Pattern>
- </Entity>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_aba_routing" />
+      </Pattern>
+    </Entity>
 ```
 
 
@@ -79,37 +85,36 @@ A policy has medium confidence that it's detected this type of sensitive informa
 
 #### Keyword_aba_routing
 
-- aba
-- aba #
-- aba routing #
-- aba routing number
+- aba number
 - aba#
+- aba
 - abarouting#
-- aba number
 - abaroutingnumber
-- american bank association routing #
-- american bank association routing number
 - americanbankassociationrouting#
 - americanbankassociationroutingnumber
-- bank routing number
 - bankrouting#
 - bankroutingnumber
-- routing transit number
-- RTN 
-   
+- routing #
+- routing no
+- routing number
+- routing transit number
+- routing#
+- RTN
+
+
 ## Argentina national identity (DNI) number
 
 ### Format
 
-Eight digits separated by periods
+Eight digits with or without periods
 
 ### Pattern
 
 Eight digits:
 - two digits
-- a period
+- an optional period
 - three digits
-- a period
+- an optional period
 - three digits
 
 ### Checksum
@@ -137,14 +142,14 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 #### Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- Identity 
-- Identification National Identity Card 
-- DNI 
-- NIC National Registry of Persons 
-- Documento Nacional de Identidad 
-- Registro Nacional de las Personas 
-- Identidad 
-- Identificación 
+- cedula 
+- cédula 
+- dni 
+- documento nacional de identidad 
+- documento número 
+- documento numero 
+- registro nacional de las personas 
+- rnp 
    
 ## Australia bank account number
 
@@ -5137,7 +5142,7 @@ two letters followed by seven digits
 
 Pattern must include all of the following:
 - one letter (not case sensitive) from this set of possible letters: abcdefghjklmnprstux, which is a registrant code 
-- one letter (not case sensitive), which is the first letter of the registrant's last name 
+- one letter (not case sensitive), which is the first letter of the registrant's last name or digit '9'
 - seven digits, the last of which is the check digit
 
 ### Checksum
@@ -5148,20 +5153,41 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_dea_number finds content that matches the pattern.
+- A keyword from `Keyword_dea_number` is found
+- The checksum passes.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_dea_number finds content that matches the pattern.
 - The checksum passes.
 
 ```xml
-<!-- DEA Number -->
-<Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_dea_number"/>
-  </Pattern>
-</Entity>
+    <!-- DEA Number -->
+    <Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_dea_number" />
+      </Pattern>
+      <Version minEngineVersion="15.20.1207.000" maxEngineVersion="15.20.3134.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+        </Pattern>
+      </Version>
+      <Version minEngineVersion="15.20.3135.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+          <Match idRef="Keyword_dea_number" />
+        </Pattern>
+      </Version>
+    </Entity>
 ```
 
 ### Keywords
 
-none
+#### Keyword_dea_number
+
+- dea
+- dea#
+- drug enforcement administration
+- drug enforcement agency
 
 
 ## Estonia driver's license number
@@ -8361,29 +8387,39 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Pattern
 
 10 letters or digits:
-- Five letters (not case sensitive) 
+- Three letters (not case sensitive) 
+- A letter in C, P, H, F, A, T, B, L, J, G (not case sensitive)
+- A letter
 - Four digits 
-- A letter which is an alphabetic check digit
+- A letter (not case sensitive)
 
 ### Checksum
 
-Yes
+No
 
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_india_permanent_account_number finds content that matches the pattern.
 - A keyword from Keyword_india_permanent_account_number is found.
-- The checksum passes.
+
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_india_permanent_account_number finds content that matches the pattern.
+
 
 ```xml
-<!-- India Permanent Account Number -->
-<Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Regex_india_permanent_account_number"/>
-     <Match idRef="Keyword_india_permanent_account_number"/>
-  </Pattern>
-</Entity>
+      <!-- India Permanent Account Number -->
+      <Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_india_permanent_account_number" />
+          <Match idRef="Keyword_india_permanent_account_number" />
+        </Pattern>
+        <Version minEngineVersion="15.20.3520.000">
+          <Pattern confidenceLevel="65">
+            <IdMatch idRef="Regex_india_permanent_account_number" />
+          </Pattern>
+        </Version>
+      </Entity>
 ```
 
 ### Keywords
@@ -8402,7 +8438,8 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 ### Pattern
 
 12 digits:
-- Four digits 
+- A digit which is not 0 or 1
+- Three digits 
 - An optional space or dash 
 - Four digits 
 - An optional space or dash 
@@ -8439,10 +8476,12 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ### Keywords
    
 #### Keyword_india_aadhar
-- Aadhar
-- Aadhaar
-- UID
+- aadhaar
+- aadhar
+- aadhar#
+- uid
 - आधार
+- uidai
    
 ## Indonesia identity card (KTP) number
 
@@ -9095,8 +9134,23 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keyword_Israel_National_ID
 
-- מספר זהות 
-- National ID Number
+-   מספר זהות
+-   מספר זיה וי
+-   מספר זיהוי ישר אלי      
+-   זהותישר אלית
+-   هو ية اسرائيل ية عدد
+-   هوية إسرائ يلية
+-   رقم الهوية
+-   عدد هوية فريدة من نوعها
+-   idnumber#
+-   id number
+-   identity no        
+-   identitynumber#
+-   identity number
+-   israeliidentitynumber       
+-   personal id
+-   unique id  
+
    
 ## Italy driver's license number
 This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
@@ -16072,11 +16126,11 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Format
 
-8-17 digits
+6-17 digits
 
 ### Pattern
 
-8-17 consecutive digits
+6-17 consecutive digits
 
 ### Checksum
 
@@ -16313,41 +16367,33 @@ No
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_formatted_itin finds content that matches the pattern.
-- At least one of the following is true:
-    - A keyword from Keyword_itin is found.
-    - The function Func_us_address finds an address in the right date format.
-    - The function Func_us_date finds a date in the right date format.
-    - A keyword from Keyword_itin_collaborative is found.
+- A keyword from Keyword_itin is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_unformatted_itin finds content that matches the pattern.
-- At least one of the following is true:
-    - A keyword from Keyword_itin_collaborative is found.
-    - The function Func_us_address finds an address in the right date format.
-    - The function Func_us_date finds a date in the right date format.
+- A keyword from Keyword_itin is found.
+
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_formatted_itin or Func_unformatted_itin finds content that matches the pattern.
 
 ```xml
-<!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
-<Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
+    <Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_formatted_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Keyword_itin_collaborative" />
-        </Any>
-    </Pattern>
-    <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_itin" />
         <Match idRef="Keyword_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin_collaborative" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_formatted_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_unformatted_itin" />
+      </Pattern>
+    </Entity>
 ```
 
 ### Keywords
@@ -16358,6 +16404,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - tax id 
 - tax identification 
 - itin 
+- i.t.i.n.
 - ssn 
 - tin 
 - social security 
@@ -16366,14 +16413,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - taxid 
 - individual taxpayer 
 
-#### Keyword_itin_collaborative
-
-- License 
-- DL 
-- DOB 
-- Birthdate 
-- Birthday 
-- Date of Birth 
 
 ## U.S. social security number (SSN)
 
