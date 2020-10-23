@@ -39,9 +39,9 @@ With Office 365 Advanced Message Encryption, anytime you apply custom branding, 
 
 2. Run the New-OMEConfiguration cmdlet.
 
-     ```powershell
-     New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
-     ```
+    ```powershell
+    New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
+    ```
 
 Where:
 
