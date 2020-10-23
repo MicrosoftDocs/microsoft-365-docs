@@ -31,11 +31,12 @@ All files stored in SharePoint or OneDrive sites can be retained by applying a r
 
 The following files can be deleted:
 
-- When you use a retention policy: All files in document libraries, which include any automatically created SharePoint document libraries, such as Site Assets.
+- When you use a retention policy: All files in document libraries, which include any automatically created SharePoint document libraries, such as **Site Assets**.
     
 - When you use retention labels: All files in all document libraries, and all files at the root level that aren't in a folder.
     
     When you use a [KQL query with an auto-apply policy for a retention label](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), you can exclude document libraries by using the following entry: `NOT(DocumentLink:"<URL to document library>")`
+
 
 ## How retention works for SharePoint and OneDrive
 
@@ -75,6 +76,10 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 1. **If the content is deleted** during the configured period: The document is moved to first-stage Recycle Bin. If a user deletes the document from there or empties this Recycle Bin, the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first-stage and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first-stage or second-stage Recycle Bin. If the content is modified during the configured period, it follows the same deletion path after the configured period.
 
 2. **If the content is not deleted** during the configured period: At the end of the configured period in the retention policy, the document is moved to the first-stage Recycle Bin. If a user deletes the document from there or empties this Recycle Bin (also known as purging), the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first-stage and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first-stage or second-stage Recycle Bin. The Recycle Bin is not indexed and therefore unavailable for searching. As a result, an eDiscovery search can't find any Recycle Bin content on which to place a hold.
+
+## How retention works for OneNote content
+
+When you apply a retention policy to a location that includes OneNote content, the different OneNote sections are actually different files. This means that each section will be individually retained and deleted, according to the retention settings you specify.
 
 ## How retention works with document versions in a site collection
 

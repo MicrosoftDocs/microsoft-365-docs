@@ -23,11 +23,16 @@ description: "Learn about retention policies that apply to Microsoft Teams."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Microsoft Teams.
+The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Microsoft Teams messages.
+
+For information about retaining and deleting files and emails that are associated with Teams, see the following:
+
+- [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)
+- [Learn about retention for Exchange](retention-policies-exchange.md)
 
 ## What's included for retention and deletion
 
-The following Teams items can be retained and deleted by using retention policies: Chats and channel messages, including [card content](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards).
+The following Teams items can be retained and deleted by using retention policies for Teams: Chats and channel messages.
 
 Teams messages in private channels are not included and reactions from others in the form of emoticons are not included.
 

@@ -31,7 +31,7 @@ Calendar items that have an end date are supported for retention policies but ar
 
 Contacts, and any tasks and calendar items that don't have an end date are not supported.
 
-Other items stored in a mailbox, such as Skype and Teams saved messages, aren't included with this location. These items have their own retention locations.
+Other items stored in a mailbox, such as Skype and Teams messages, aren't included in retention policies or labels for Exchange. These items have their own retention locations.
 
 ## How retention works for Exchange
 
