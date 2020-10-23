@@ -16,14 +16,14 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: "Summary: Understand the value of PowerShell for Microsoft 365, get connected to your Microsoft 365 tenant, and get help."
+description: "Summary: Understand the value of PowerShell for Microsoft 365, how to get connected to your Microsoft 365 tenant, and where to get help."
 ---
 
 # Get started with PowerShell for Microsoft 365
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can use commands and scripts in PowerShell for Microsoft 365 to manage Microsoft 365 and streamline your daily work. Learn why PowerShell for Microsoft 365 is crucial to managing Microsoft 365, how to connect to your Microsoft 365 subscription and create reports, and where to get more information and help from the Microsoft 365 community.
+You can use commands and scripts in PowerShell for Microsoft 365 to manage Microsoft 365 and streamline your daily work. Use the following information to learn why PowerShell for Microsoft 365 is crucial to managing Microsoft 365, how to connect to your Microsoft 365 subscription and create reports, and where to get more information from the Microsoft 365 community.
   
 Select from these topics:
   
@@ -49,7 +49,7 @@ Select from these topics:
     
 - [**Microsoft 365 community resources for PowerShell**](microsoft-365-powershell-community-resources.md)
     
-    Start here to connect to the PowerShell community and get help or more information about using PowerShell for Microsoft 365.
+    Start here to connect to the PowerShell community and get more information about using PowerShell for Microsoft 365.
     
 ## Related topics
 
