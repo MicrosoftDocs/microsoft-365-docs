@@ -1,10 +1,10 @@
 ---
-title: "Restore a deleted group"
+title: "Restore a deleted Microsoft 365 group"
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,15 +22,7 @@ ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: "Learn how to restore a deleted Microsoft 365 group."
 ---
 
-# Restore a deleted Group
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
+# Restore a deleted Microsoft 365 group
 
 If you've deleted a group, it will be retained for 30 days by default. This 30-day period is considered a "soft-delete" because you can still restore the group. After 30 days, the group and its associated contents are permanently deleted and cannot be restored.
 
@@ -52,7 +44,12 @@ When a group is restored, the following content is restored:
 
 - Yammer group and group content (If the Microsoft 365 group was created from Yammer)
 
-## Restore a group that you own by using Outlook on the web
+> [!NOTE]
+> This article describes restoring only Microsoft 365 groups. All other groups cannot be restored once deleted.
+
+## Restore a group
+
+# [Outlook](#tab/outlook)
 
 If you are the owner of a Microsoft 365 group, you can restore the group yourself in Outlook on the web by following these steps:
 
@@ -62,7 +59,7 @@ If you are the owner of a Microsoft 365 group, you can restore the group yoursel
 
 If the deleted group doesn't appear here, contact an administrator.
 
-## Restore a group in the Microsoft 365 admin center
+# [Admin center](#tab/admin-center)
 
 If you are a global administrator or a groups administrator, you can restore a deleted group in the Microsoft 365 admin center:
 
@@ -72,28 +69,9 @@ If you are a global administrator or a groups administrator, you can restore a d
 
 > [!NOTE]
 > In some cases, it may take as long as 24 hours for the group and all of its data to be restored. 
-  
-## Permanently delete a Microsoft 365 group
 
-Sometimes you may want to permanently purge a group without waiting for the 30 day soft-deletion period to expire. To do that, start PowerShell and run this command to get the object ID of the group:
-  
-```
-Get-AzureADMSDeletedGroup
-```
+---
 
-Take note of the object ID of the group, or groups, that you want to permanently delete.
-  
-> [!CAUTION]
-> Purging the group removes the group and its data forever. 
-  
-To purge the group run this command in PowerShell:
-  
-```
-Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
-```
-
-To confirm that the group has been successfully purged, run the  *Get-AzureADMSDeletedGroup*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 
-  
 ## Got questions about Microsoft 365 Groups?
 
 Visit the [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) to post questions and participate in conversations about Microsoft 365 groups. 

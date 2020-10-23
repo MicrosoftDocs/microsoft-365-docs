@@ -15,8 +15,9 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-defender-office365
 description: Learn about how to use the alerts features in the Office 365 Security & Compliance Center to view and manage alerts, including managing advanced alerts.
 ms.custom: seo-marvel-apr2020
 ---

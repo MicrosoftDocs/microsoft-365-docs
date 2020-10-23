@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 07/23/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -35,6 +34,8 @@ Remote work needs these elements of security and compliance:
 - Prevention of leaked information
 - Adherence to regional data regulations
 
+Here are the features of Microsoft 365 that provide security and compliance services for remote workers.
+
 ![Use these Microsoft 365 services to stay secure and compliant](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
 
 ## Security
@@ -50,7 +51,7 @@ Protect your applications and data with these security features of Microsoft 365
 | Azure AD Identity Protection	| Automate detection and remediation of identity-based risks. <br><br>Create risk-based Conditional Access policies to require multi-factor authentication (MFA) for risky sign-ins. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses |
 ||||
 
-See [Quick tasks for getting started with Microsoft 365 compliance](../compliance/compliance-quick-tasks.md) for more information.
+See [Top 12 tasks for security teams to support working from home](../security/top-security-tasks-for-remote-work.md) for more information.
 
 ## Compliance
 
@@ -69,20 +70,22 @@ Comply with internal policies or regulatory requirements with these compliance f
 | Insider Risk Management |  Detect, investigate, and act on malicious and inadvertent risks in your organization. Microsoft 365 can detect these kinds of risks even when a worker is using an unmanaged device. | Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons |
 ||||
 
-See [Top 12 tasks for security teams to support working from home](../security/top-security-tasks-for-remote-work.md) for more information.
+See [Quick tasks for getting started with Microsoft 365 compliance](../compliance/compliance-quick-tasks.md) for more information.
 
 ## Results of Step 3
 
 For your remote workers, you have implemented:
 
-- Security:
+- Security
   - Controlled access to apps and data that remote workers use to communicate and collaborate
   - Malware protection for cloud service data, email, and Windows 10 devices 
-- Compliance:
+- Compliance
   - Consistent labeling for levels of sensitivity and protection
   - Policies to prevention information leakage
   - Adherence to regional data regulations
 
 ## Next step
+
+[![Step 4: Manage your devices, PCs, and other endpoints](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
 
 Continue with [Step 4](empower-people-to-work-remotely-manage-endpoints.md) to manage your devices, PCs, and other endpoints.
