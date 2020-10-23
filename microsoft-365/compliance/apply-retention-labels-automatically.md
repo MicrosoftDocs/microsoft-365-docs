@@ -205,7 +205,7 @@ ACP OR Attorney Client Privilege* OR AC Privilege
 The following query contains typical keywords to help identify documents or emails for human resources. However, note that a space between keywords (or two property:value expressions) is the same as using AND. Therefore, without adding OR between the keywords, the query identifies only content that contains all these keywords, instead of content that contains any of the keywords:
 
 ```
-resume staff employee vacation salary recruitment candidate
+resume staff employee salary recruitment candidate
 ```
 
 
