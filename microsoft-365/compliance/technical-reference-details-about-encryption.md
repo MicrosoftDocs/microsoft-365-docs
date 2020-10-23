@@ -94,6 +94,8 @@ These are the following cipher suites which will still support TLS 1.0 and 1.1 p
 [Encryption in Office 365](encryption.md)
   
 [Set up encryption in Office 365 Enterprise](set-up-encryption.md)
+
+[Encryption Risks and Protections](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections?view=o365-worldwide)
   
 [Schannel implementation of TLS 1.0 in Windows security status update: November 24, 2015](https://support.microsoft.com/kb/3117336)
   
