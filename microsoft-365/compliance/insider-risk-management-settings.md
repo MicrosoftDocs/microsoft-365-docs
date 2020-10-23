@@ -54,7 +54,7 @@ Alerts are triggered by policies when users perform activities related to policy
 Policy indicators are segmented into the following areas. You can choose the indicators to activate and customize indicator event limits for each indicator level when creating an insider risk policy:
 
 - **Office indicators**: These include policy indicators for SharePoint sites, Teams, and email messaging.
-- **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activity involving Microsoft Office files, .CSV files, and .PDF files. If you select **Device indicators**, activity is processed only for devices with Windows 10 Build 1809 or higher. For more information on configuring devices for integration with insider risk, see [Getting started with Endpoint DLP](endpoint-dlp-getting-started.md).
+- **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activity involving Microsoft Office files, .CSV files, and .PDF files. If you select **Device indicators**, activity is processed only for devices with Windows 10 Build 1809 or higher. For more information on configuring devices for integration with insider risk, see the following [Enable device indicators and onboard devices](insider-risk-management-settings.md#OnboardDevices) section.
 - **Security policy violation indicator**: These include indicators from Microsoft Defender ATP related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Microsoft Defender ATP license and insider risk integration enabled. For more information on configuring Microsoft Defender ATP for insider risk management integration, see [Configure advanced features in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Risk score boosters**: These include raising the risk score for unusual activities or past policy violations. Enabling risk score boosters increase risk scores and the likelihood of alerts for these types of activities. Risk score boosters can only be selected if one or more indicators above are selected.
 
@@ -66,6 +66,73 @@ To define the insider risk policy indicators that are enabled in all insider ris
 
 >[!NOTE]
 >It may take several hours for new manually-added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab on the details pane.
+
+### Enable device indicators and onboard devices
+<a name="OnboardDevices"> </a>
+
+To enable the monitoring of risk activities on devices and include policy indicators for these activities, your devices must meet the following requirements and you must complete the following onboarding steps.
+
+#### Step 1: Prepare your endpoints
+
+Make sure that the Windows 10 devices that you plan on reporting in insider risk management meet these requirements.
+
+1. Must be running Windows 10 x64 build 1809 or later and must have installed the [Windows 10 update (OS Build 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) from February 20, 2020.
+2. All devices must be [Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), or Hybrid Azure AD joined.
+3. Install Microsoft Chromium Edge browser on the endpoint device to monitor actions for the cloud upload activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+
+#### Step 2: Onboarding devices
+<a name="OnboardStep2"> </a>
+
+You must enable device monitoring and onboard your endpoints before you can monitor for insider risk management activities on a device. Both of these actions are done in the Microsoft 365 Compliance portal.
+
+When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy as outlined in the following steps.
+
+If you already have devices onboarded into [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/), they will already appear in the managed devices list. Follow [Step 3: If you have devices onboarded into Microsoft Defender for Endpoint](insider-risk-management-settings.md#OnboardStep3) in the next section.
+
+In this deployment scenario, you'll onboard devices that have not been onboarded yet, and you just want to monitor insider risk activities on Windows 10 devices.
+
+1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
+2. Open the Compliance Center settings page and choose **Onboard devices**.
+
+   > [!NOTE]
+   > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
+
+3. Choose **Device management** to open the **Devices** list. The list will be empty until you onboard devices.
+4. Choose **Onboarding** to begin the onboarding process.
+5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
+    - Onboard Windows 10 machines using Group Policy
+    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
+    - Onboard Windows 10 machines using Mobile Device Management tools
+    - Onboard Windows 10 machines using a local script
+    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
+
+Once done and endpoint is onboarded, it should be visible in the devices list and the endpoint will start reporting audit activity logs to insider risk management.
+
+> [!NOTE]
+> This experience is under license enforcement. Without the required license, data will not be visible or accessible.
+
+#### Step 3: If you have devices onboarded into Microsoft Defender for Endpoint
+<a name="OnboardStep3"> </a>
+
+If Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in, all these endpoints will appear in the managed devices list. You can continue to onboard new devices into insider risk management to expand coverage by using the [Step 2: Onboarding devices](insider-risk-management-settings.md#OnboardStep2) section.
+
+1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
+2. Open the Compliance Center settings page and choose **Enable device monitoring**.
+3. Choose **Device management** to open the **Devices** list. You should see the list of devices that are already reporting in to Microsoft Defender for Endpoint.
+4. Choose **Onboarding** if you need to onboard additional devices.
+5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **Download package**.
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
+    - Onboard Windows 10 machines using Group Policy
+    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
+    - Onboard Windows 10 machines using Mobile Device Management tools
+    - Onboard Windows 10 machines using a local script
+    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
+
+Once done and endpoint is onboarded, it should be visible under the **Devices** table and the endpoint will start reporting audit activity logs to insider risk management.
+
+> [!NOTE]
+>This experience is under license enforcement. Without the required license, data will not be visible or accessible.
 
 ### Indicator level settings (preview)
 
@@ -293,6 +360,9 @@ Complete the following steps to delete a priority physical asset:
 [Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started) is a workflow service that automates actions across applications and services. By using flows from templates or created manually, you can automate common tasks associated with these applications and services. When you enable Power Automate flows for insider risk management, you can automate important tasks for cases and users. You can configure Power Automate flows to retrieve user, alert, and case information and share this information with stakeholders and other applications, as well as automate actions in insider risk management, such as posting to case notes. Power Automate flows are applicable for cases and any user in scope for a policy.
 
 Customers with Microsoft 365 subscriptions that include insider risk management do not need additional Power Automate licenses to use the recommended insider risk management Power Automate templates. These templates can be customized to support your organization and cover core insider risk management scenarios. If you choose to use premium Power Automate features in these templates, create a custom template using the Microsoft 365 compliance connector, or use Power Automate templates for other compliance areas in Microsoft 365, you may need additional Power Automate licenses.
+
+>[!IMPORTANT]
+>Are you receiving prompts for additional license validation when testing Power Automate flows? Your organization may not have received service updates for this preview feature yet. Updates are being deployed and all organizations with Microsoft 365 subscriptions that include insider risk management should have license support for flows created from the recommended Power Automate templates by October 30, 2020.
 
 The following Power Automate templates are provided to customers to support process automation for insider risk management users and cases:
 
