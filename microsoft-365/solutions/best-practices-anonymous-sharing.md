@@ -48,7 +48,7 @@ To set an expiration date for Anyone links on a specific site
 1. Open the SharePoint Online admin center.
 2. In the left navigation, expand **Sites**, and then click **Active sites**.
 3. Select the site you want to change, and then click **Sharing**.
-4. Under **Advanced settings for Anyone links**, under **Expiration of Anyone links**, clear the **Same as organization-level setting** check box.
+4. Under **Advanced settings for Anyone links**, under **Expiration of Anyone links**, clear the **Same as organization-level setting** check box.</br>
    ![Screenshot of SharePoint site-level Anyone link expiration settings](../media/sharepoint-organization-anyone-link-expiration-site.png)
 5. Select the **These links must expire within this many days** options, and type a number of days in the box.
 6. Click **Save**.
