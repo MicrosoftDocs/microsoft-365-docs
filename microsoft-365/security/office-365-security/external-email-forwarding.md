@@ -40,6 +40,8 @@ For instructions on how to configure these settings, see [Configure outbound spa
 
 - Disabling automatic forwarding will also disable Inbox rules that redirect messages to external addresses.
 
+- Disabling automatic forwarding will also disable forwarding performed by administrators through EAC or powershell to external addresses.
+
 - Automatic forwarding of messages between internal users isn't affected by the settings in outbound spam filter policies.
 
 - You can see information about users that are automatically forwarding messages to external recipients in the [Auto-forwarded messages report](mfi-auto-forwarded-messages-report.md).
