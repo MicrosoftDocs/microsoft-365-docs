@@ -92,8 +92,8 @@ By default, the **Policy group/setting name** column contains a collapsed view o
 - **Anti-spam**
 - **Anti-phishing**
 - **Anti-malware**
-- **Safe Attachments** (if your subscription includes Microsoft Defender for Office 365)
-- **Safe Links** (if your subscription includes Microsoft Defender for Office 365)
+- **ATP Safe Attachments** (if your subscription includes Microsoft Defender for Office 365)
+- **ATP Safe Links** (if your subscription includes Microsoft Defender for Office 365)
 
 In the default view, everything is collapsed. Next to each policy, there's a summary of comparison results from your policies (which you can modify) and the settings in the corresponding policies for the Standard or Strict protection profiles (which you can't modify). You'll see the following information for the protection profile that you're comparing to:
 

@@ -47,7 +47,7 @@ See the following resources for more information:
 
 These enhanced reports provide an interactive reporting experience for EOP admins, which includes summary information, and the ability to drill down for more details.
 
-**Defender for Office 365**: View information about safe links and safe attachments that are part of Microsoft Defender for Office 365.
+**Defender for Office 365**: View information about Safe Links and Safe Attachments that are part of Microsoft Defender for Office 365.
 
 **EOP**: View information about malware detections, spoofed mail, spam detections, and mail flow to and from your organization.
 

@@ -313,7 +313,7 @@ The following views are available:
 
 - **Break down by: Detection technology** and **View data by: Email \> Phish**: The following information is shown:
 
-  - **Defender for Office 365 -generated URL reputation**<sup>1</sup>: Malicious URL reputation generated from Defender for Office 365 detonations in other Defender for Office 365 customers.
+  - **ATP-generated URL reputation**<sup>1</sup>: Malicious URL reputation generated from Defender for Office 365 detonations in other Defender for Office 365 customers.
   - **Advanced phish filter**: Phishing signals based on machine learning.
   - **Anti-spoof - DMARC failure**: DMARC authentication failure on messages.
   - **Anti-spoof - intra-org**: Sender is trying to spoof the recipient domain.
@@ -385,7 +385,7 @@ For all other views, you can modify the report with the following filters:
 
 - **Start date** and **End date**
 - **Detection**
-- **Protected by**: **Defender for Office 365** or **EOP**
+- **Protected by**: **ATP** or **EOP**
 - **Tag**: filter by tag to return users or groups that have had a specific tag applied. For more information about user tags, see [User tags](user-tags.md).
 - **Domain**
 

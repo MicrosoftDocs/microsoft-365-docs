@@ -32,13 +32,11 @@ Anti-phishing policies in Microsoft Defender for Office 365 are only available i
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
 - [Microsoft Defender for Office 365 as an add-on](https://products.office.com/exchange/advance-threat-protection)
 
-All other organizations have anti-phishing policies.
-
-The high-level differences between anti-phishing policies and anti-phishing policies in Microsoft Defender for Office 365 are described in the following table:
+The high-level differences between anti-phishing policies in EOP and anti-phishing policies in Microsoft Defender for Office 365 are described in the following table:
 
 ****
 
-|Feature|Anti-phishing policies|Anti-phishing policies in Microsoft Defender for Office 365|
+|Feature|Anti-phishing policies in EOP|Anti-phishing policies in Microsoft Defender for Office 365|
 |---|:---:|:---:|
 |Automatically created default policy|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Create custom policies|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -56,11 +54,11 @@ To configure anti-phishing policies, see the following articles:
 
 - [Configure anti-phishing policies in Microsoft Defender for Office 365 in Microsoft 365](configure-atp-anti-phishing-policies.md)
 
-The rest of this article describes the settings that are available in anti-phishing policies and anti-phishing policies in Defender for Office 365.
+The rest of this article describes the settings that are available in anti-phishing policies in EOP and Defender for Office 365.
 
 ## Policy settings
 
-The following policy settings are available in anti-phishing policies and anti-phishing policies in Microsoft Defender for Office 365:
+The following policy settings are available in anti-phishing policies in EOP and Microsoft Defender for Office 365:
 
 - **Name**: You can't rename the default anti-phishing policy, but you can name and rename custom policies that you create.
 
@@ -81,18 +79,21 @@ The following policy settings are available in anti-phishing policies and anti-p
     - **The recipient domain is**
 
   > [!NOTE]
-  > The **Applied to** setting is required in custom anti-phishing policies to identify them message **recipients** <u>that the policy applies to</u>. Anti-phishing policies in Microsoft Defender for Office 365 also have [impersonation settings](#impersonation-settings-in-atp-anti-phishing-policies) where you can specify individual sender email addresses or sender domains <u>that will receive impersonation protection</u> as described later in this topic.
+  > The **Applied to** setting is required in custom anti-phishing policies to identify the message **recipients** <u>that the policy applies to</u>. Anti-phishing policies in Microsoft Defender for Office 365 also have [impersonation settings](#impersonation-settings-in-atp-anti-phishing-policies) where you can specify individual sender email addresses or sender domains <u>that will receive impersonation protection</u> as described later in this topic.
 
 ## Spoof settings
 
 Spoofing is when the From address in an email message (the sender address that's show in email clients) doesn't match the domain of the email source. For more information about spoofing, see [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md).
 
-The following spoof settings are available in anti-phishing policies and anti-phishing policies in Microsoft Defender for Office 365:
+The following spoof settings are available in anti-phishing policies in EOP and Microsoft Defender for Office 365:
 
 - **Anti-spoofing protection**: Enables or disables anti-spoofing protection. We recommend that you leave it enabled. You use the **spoof intelligence policy** to allow or block specific spoofed internal and external senders. For more information, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
-  > Spoof settings are enabled by default in the default anti-phishing policy in EOP, the default anti-phishing policy in Microsoft Defender for Office 365, and in new custom anti-phishing policies or anti-phishing policies in Defender for Office 365 that you create. <br/><br/> You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  >
+  > - Anti-spoofing protection is enabled by default in the default anti-phishing policy and in any new custom anti-phishing policies that you create.
+  > 
+  > - You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   For messages from blocked spoofed senders, you can also specify the action to take on the messages:
 
@@ -108,7 +109,7 @@ The following spoof settings are available in anti-phishing policies and anti-ph
 
 ### Unauthenticated Sender
 
-Unauthenticated sender identification is part of the [Spoof settings](#spoof-settings) that are available in anti-phishing policies and anti-phishing policies in Microsoft Defender for Office 365 as described in the previous section.
+Unauthenticated sender identification is part of the [Spoof settings](#spoof-settings) that are available in anti-phishing policies in EOP and Microsoft Defender for Office 365 as described in the previous section.
 
 The **Unauthenticated Sender** setting enables or disables unauthenticated sender identification in Outlook. Specifically:
 
@@ -134,7 +135,7 @@ For more information, see [Identify suspicious messages in Outlook.com and Outlo
 This section describes the policy settings that are only available in anti-phishing policies in Microsoft Defender for Office 365.
 
 > [!NOTE]
-> By default, the Defender for Office 365 exclusive settings are not configured or turned on, even in the default policy. To take advantage of these features, you need to enable and configure them in the default anti-phishing policy in Microsoft Defender for Office 365, or create and configure custom anti-phishing policies in Defender for Office 365.
+> By default, the exclusive settings in Defender for Office 365 are not configured or turned on, even in the default policy. To take advantage of these features, you need to enable and configure them in the default anti-phishing policy, or create and configure custom anti-phishing policies.
 
 ### Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365
 
@@ -209,7 +210,7 @@ The following impersonation settings are only available in anti-phishing policie
 
 ### Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365
 
-The following advanced phishing thresholds are only available in anti-phishing policies in Microsoft Defender for Office 365 to control the sensitivity for applying machine learning models to messages for determining a phishing verdict:
+The following advanced phishing thresholds are only available in anti-phishing policies in Microsoft Defender for Office 365. These thresholds control the sensitivity for applying machine learning models to messages for determining a phishing verdict:
 
 - **1 - Standard**: This is the default value. The severity of the action that's taken on the message depends on the degree of confidence that the message is phishing (low, medium, high, or very high confidence). For example, messages that are identified as phishing with a very high degree of confidence have the most severe actions applied, while messages that are identified as phishing with a low degree of confidence have less severe actions applied.
 

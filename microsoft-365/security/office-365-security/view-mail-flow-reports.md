@@ -331,7 +331,7 @@ The data table contains the following information, shown in descending date orde
 - **File and URL detonation (Defender for Office 365)**:
   - **File detonation**: Messages filtered by a Safe Attachments policy.
   - **URL detonation**: Message filtered by a Safe Links policy.  
-- **Post-delivery protection and ZAP (Defender for Office 365), or ZAP (EOP)**: ZAP indicates zero hour auto-purge.
+- **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**: ZAP indicates zero hour auto-purge.
 
 If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.
 
@@ -374,7 +374,7 @@ This chart shows messages organized into the following categories:
 - **Not phish, DMARC failure, impersonation detection, spoof detection, phish detection**
 - **No detection with URL detonation, URL detonation detection (Defender for Office 365)**
 - **Not spam, spam**
-- **Non-malicious email, safe links detection (Defender for Office 365), ZAP**
+- **Non-malicious email, Safe Links detection (Defender for Office 365), ZAP**
 
 When you hover over a category in the chart, you can see the number of messages in that category.
 
