@@ -27,6 +27,11 @@ The information in this article supplements [Learn about retention](retention.md
 
 For information about how retention works for files that are stored in Teams, see [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md).
 
+For other workloads, see:
+
+- [Learn about retention for Yammer](retention-policies-yammer.md)
+- [Learn about retention for Exchange](retention-policies-exchange.md)
+
 ## What's included for retention and deletion
 
 The following Teams items can be retained and deleted by using retention policies for Teams: Chats and channel messages.

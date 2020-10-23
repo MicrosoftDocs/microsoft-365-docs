@@ -21,7 +21,11 @@ description: "Learn how retention works for Exchange."
 
 # Learn about retention for Exchange
 
-The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Exchange.
+The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Exchange.  For other workloads, see:
+
+- [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)
+- [Learn about retention for Microsoft Teams](retention-policies-teams.md)
+- [Learn about retention for Yammer](retention-policies-yammer.md)
 
 ## What's included for retention and deletion
 
@@ -31,7 +35,7 @@ Calendar items that have an end date are supported for retention policies but ar
 
 Contacts, and any tasks and calendar items that don't have an end date are not supported.
 
-Other items stored in a mailbox, such as Skype and Teams messages, aren't included in retention policies or labels for Exchange. These items have their own retention locations.
+Other items stored in a mailbox, such as Skype and Teams messages, aren't included in retention policies or labels for Exchange. These items have their own retention policies.
 
 ## How retention works for Exchange
 

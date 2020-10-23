@@ -25,6 +25,12 @@ description: "Learn how retention works for SharePoint and OneDrive."
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to SharePoint and OneDrive.
 
+For other workloads, see:
+
+- [Learn about retention for Microsoft Teams](retention-policies-teams.md)
+- [Learn about retention for Yammer](retention-policies-yammer.md)
+- [Learn about retention for Exchange](retention-policies-exchange.md)
+
 ## What's included for retention and deletion
 
 All files stored in SharePoint or OneDrive sites can be retained by applying a retention policy or retention label.

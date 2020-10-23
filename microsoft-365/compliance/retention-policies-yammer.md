@@ -25,6 +25,11 @@ description: "Learn about retention policies that apply to Yammer."
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Yammer.
 
+For other workloads, see:
+
+- [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)
+- [Learn about retention for Microsoft Teams](retention-policies-teams.md)
+- [Learn about retention for Exchange](retention-policies-exchange.md)
 
 ## What's included for retention and deletion
 
