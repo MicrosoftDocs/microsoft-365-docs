@@ -26,7 +26,7 @@ To maximize the business value of the Microsoft 365 Enterprise integrated suite 
 - Windows 7 and Windows 8.1 on your devices to Windows 10 Enterprise.
 
 >[!Note]
->Support for Windows 7 ended on **January 14, 2020**. For more information, see the [end-of-support details](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
+>Support for Windows 7 ended on *January 14, 2020*. For more information, see the [end-of-support details](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
 >
 
 As you accomplish these migrations over time, your organization comes closer to the vision of the [modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/). This secure and integrated environment can help you unlock teamwork and creativity in your organization. And Microsoft 365 Enterprise enables and empowers you all along the way.
@@ -55,7 +55,7 @@ Microsoft 365 Apps for enterprise installs updates automatically. It can take ad
 
 ### Office 2010
 
-For versions of Office in the Office 2010 release, support ended on **October 13, 2020**. For more information, see [Office 2010 end-of-support roadmap](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
+For versions of Office in the Office 2010 release, support ended on *October 13, 2020*. For more information, see [Office 2010 end-of-support roadmap](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
 
 You might consider upgrading your computers that run Office 2010 to Office 2013 or Office 2016. But both of those versions must be manually updated. Instead, consider:
 
@@ -106,19 +106,19 @@ For server products in the Office 2007 release, the end of support has already p
 
 Rather than upgrading your server products in the Office 2007 release with server products in the Office 2010, Office 2013, or Office 2016 releases, consider taking the following steps:
 
-1. Migrate the data on your Office 2007 servers to Microsoft 365. To help with this, hire a Microsoft partner.
+1. Migrate the data on your Office 2007 servers to Microsoft 365. For more information or help, hire a Microsoft partner.
 2. Roll out the new functionality and work processes to your users.
 3. When you no longer need the on-premises servers running Office 2007 server products, decommission them.
 
 ### Office Server 2010
 
-Support for [Exchange Server 2010](exchange-2010-end-of-support.md) ended on **October 13, 2020**.
+Support for [Exchange Server 2010](exchange-2010-end-of-support.md) ended on *October 13, 2020*.
 
-The end of support for [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) is **April 13, 2021**.
+The end of support for [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) is *April 13, 2021*.
 
 Rather than upgrading these server products in the Office 2010 release with server products in the Office 2013 or Office 2016 release, consider taking the following steps:
 
-1. Migrate the data on your Office 2010 servers to Microsoft 365. To help with this, see [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) or hire a Microsoft partner.
+1. Migrate the data on your Office 2010 servers to Microsoft 365. For more information, see [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) or hire a Microsoft partner.
 2. Roll out the new functionality and work processes to your users.
 3. When you no longer need the on-premises servers running Office 2010 server products, decommission them.
 
@@ -126,43 +126,43 @@ Rather than upgrading these server products in the Office 2010 release with serv
 
 For server products in the Office 2013 release, the end of support hasn't been determined. Rather than upgrading your server products in the Office 2013 release with server products in the Office 2016 release, consider taking the following steps:
 
-1. Migrate the data on your Office 2013 servers to Microsoft 365. To help with this, see [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) or hire a Microsoft partner.
+1. Migrate the data on your Office 2013 servers to Microsoft 365. For more information, see [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) or hire a Microsoft partner.
 2. Roll out the new functionality and work processes to your users.
 3. When you no longer need the on-premises servers running Office 2013 server products, decommission them.
 
 ### Office Server 2016
 
-For server products in the Office 2016 release, the end of support has not been determined. To take advantage of the cloud-based service and enhancements to digitally transform your business, consider:
+For server products in the Office 2016 release, the end of support has not been determined. To take advantage of the cloud-based service and enhancements to digitally transform your business, consider taking the following steps:
 
-1. Migrating the data on your Office 2016 servers to Microsoft 365. To help with this, see [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) or hire a Microsoft partner.
-2. Rolling out the new functionality and work processes to your users.
-3. When there is no longer a need for the on-premises servers running Office 2016 server products, decommissioning them.
+1. Migrate the data on your Office 2016 servers to Microsoft 365. For more information, see [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) or hire a Microsoft partner.
+2. Roll out the new functionality and work processes to your users.
+3. When you no longer need the on-premises servers running Office 2016 server products, decommission them.
 
-## Migration for Microsoft Windows 7 and 8.1
+## Migration for Windows 7 and 8.1
 
-Windows 7 reached end of support on **January 14, 2020**. To migrate your devices running Windows 7 or Windows 8.1, you can perform an in-place upgrade.
+Support ended for Windows 7 on *January 14, 2020*. To migrate your devices that run Windows 7 or Windows 8.1, you can perform an in-place upgrade.
 
 For additional methods, see [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). You can also [plan for Windows 10 deployment](https://aka.ms/planforwin10deployment) on your own.
 
-## Summary of options for Office 2010 clients and servers and Windows 7
+## Office 2010 clients and servers and Windows 7
 
-For a visual summary of the upgrade, migrate, and move-to-the-cloud options for these products, see the [end of support poster](../downloads/Office2010Windows7EndOfSupport.pdf).
+Here's a visual summary of the upgrade, migrate, and move-to-cloud options for Office 2010 clients and servers and Windows 7:
 
-[![Image for the end of support for Office 2010 clients and servers and Windows 7 poster](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Image showing the options for the end of support for Office 2010 clients and servers and Windows 7.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-This one-page poster is a quick way to understand the various paths you can take to prevent Office 2010 client and server products and Windows 7 from reaching end of support, with preferred paths and resulting destination support in Microsoft 365 for enterprise highlighted.
+This one-page poster is a quick way to understand the paths you can take to avoid losing support for Office 2010 client and server products and Windows 7. The preferred paths are supported in Microsoft 365 Enterprise.
 
-You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) and print it in letter size, legal size, or tabloid (11 x 17) size.
 
 ## Transition your entire organization
 
-To get a better picture of how to move your entire organization to the products and services in Microsoft 365 for enterprise, download and view the [transition poster](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf).
+To get a better picture of how to move your entire organization to the products and services in Microsoft 365 Enterprise, download this transition poster:
 
-[![Image for the Transition to Microsoft 365 poster](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
+[![Image showing the Transition to Microsoft 365 poster.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
-This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 for enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
+This two-page poster is a quick way to inventory your existing infrastructure. Use it to get to the guidance for moving to the corresponding product or service in Microsoft 365 Enterprise. It shows Windows and Office products and other infrastructure and security elements such as device management, identity and threat protection, and information and compliance protection.
 
-## How Microsoft does Microsoft 365 for enterprise
+## How Microsoft does Microsoft 365 Enterprise
 
 See how IT experts at Microsoft migrated the company to Microsoft 365 for enterprise with these resources:
 
