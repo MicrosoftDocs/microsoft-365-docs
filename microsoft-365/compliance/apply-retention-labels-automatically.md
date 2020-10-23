@@ -163,6 +163,8 @@ Some things to consider when using this method to auto-apply retention labels:
 
 - Use the *DocumentLink* property instead of *Path* to identify a specific site in SharePoint or OneDrive. 
 
+- Suffix wildcard searches ( such as `*cat`) or substring wildcard searches (such as `*cat*`) aren't supported.
+
 - Be aware that partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
 
 
@@ -199,6 +201,13 @@ The following query contains some typical keywords to help identify documents or
 ```
 ACP OR Attorney Client Privilege* OR AC Privilege
 ```
+
+The following query contains typical keywords to help identify documents or emails for human resources. However, note that a space between keywords (or two property:value expressions) is the same as using AND. Therefore, without adding OR between the keywords, the query identifies only content that contains all these keywords, instead of content that contains any of the keywords:
+
+```
+resume staff employee vacation salary recruitment candidate
+```
+
 
 ##### Microsoft Teams meeting recordings
 
