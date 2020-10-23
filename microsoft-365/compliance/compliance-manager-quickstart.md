@@ -32,13 +32,13 @@ The first time you visit Compliance Manager, you'll see a compliance score for y
 
 Our [Compliance Manager overview page](compliance-manager.md) is the best first stop for a comprehensive review of what Compliance Manager is and how it works. You may also want to jump right to key sections of our documentation using the links below:
 
-- [Get a quick scan of your environment and recommendations using the Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
 - [Understand your compliance score](compliance-manager.md#understanding-your-compliance-score)
 - [Overview of key elements: controls, assessments, templates, and improvement actions](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
 - [Understand the Compliance Manager dashboard](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
 - [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
 - [Understand assessments](compliance-manager.md#assessments)
+- [Do a quick scan of your environment using the Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
 
 ## Ramping up: configure Compliance Manager to manage your compliance activities
 
