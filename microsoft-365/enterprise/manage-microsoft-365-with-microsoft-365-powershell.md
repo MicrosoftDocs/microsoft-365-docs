@@ -59,8 +59,4 @@ Select from the following topics to learn how to use PowerShell to manage Micros
 
 - [**Skype for Business Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 
-<<<<<<< HEAD
-    Start here if you've installed the PowerShell modules and want to manage Skype for Business Online.
-=======
     Start here to manage Skype for Business Online.
->>>>>>> 7141bc6adec0fa360437eaf1866f2972bb4eb5d8
