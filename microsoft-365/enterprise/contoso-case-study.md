@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,7 +17,7 @@ ms.custom:
 description: How a fictional but representative global organization adopted Microsoft 365 for enterprise. 
 ---
 
-# Microsoft 365 for enterprise for Contoso Corporation
+# Microsoft 365 for enterprise for the Contoso Corporation
 
 Microsoft 365 for enterprise is the Microsoft premier cloud offering that combines local and cloud-based productivity apps and services with Windows 10 Enterprise and advanced security features. It's a complete, intelligent solution that that enables everyone to work together creatively and securely.
 
@@ -33,7 +32,8 @@ See these articles for the details:
   Contoso is a global manufacturing, sales, and support organization with more than 100,000 products.
 
 - [Contoso IT infrastructure and needs](contoso-infra-needs.md)
-Contoso is transitioning from an on-premises, centralized IT infrastructure to a cloud-inclusive setup that incorporates cloud-based personal productivity workloads, applications, and hybrid scenarios
+
+  Contoso is transitioning from an on-premises, centralized IT infrastructure to a cloud-inclusive setup that incorporates cloud-based personal productivity workloads, applications, and hybrid scenarios.
 
 - [Networking](contoso-networking.md)
 
@@ -45,11 +45,11 @@ Contoso is transitioning from an on-premises, centralized IT infrastructure to a
 
 - [Windows 10 Enterprise](contoso-win10.md)
 
-  The Contoso Windows 10 Enterprise infrastructure deploys and automatically installs updates for devices that are running the company's primary PC and device operating system.
+  The Contoso infrastructure for Windows 10 Enterprise deploys and automatically installs updates for devices that are running the company's primary PC and device operating system.
 
 - [Microsoft 365 Apps for enterprise](contoso-o365pp.md)
 
-  The infrastructure of Contoso Microsoft 365 Apps for enterprise deploys and automatically installs updates for the Microsoft Office suite of productivity software.
+  The Contoso infrastructure for Microsoft 365 Apps for enterprise deploys and automatically installs updates for the Microsoft Office suite of productivity software.
 
 - [Mobile device management](contoso-mdm.md)
 
@@ -73,7 +73,7 @@ Contoso is transitioning from an on-premises, centralized IT infrastructure to a
 
 ## Next step
 
-[Learn](contoso-overview.md) about the Contoso Corporation and the design considerations that were addressed when they deployed Microsoft 365 for enterprise.
+Learn [about the Contoso Corporation](contoso-overview.md) and the design considerations that were addressed when they deployed Microsoft 365 for enterprise.
 
 
 ## See also

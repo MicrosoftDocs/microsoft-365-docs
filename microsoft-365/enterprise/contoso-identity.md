@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -39,7 +38,7 @@ Contoso allows:
 - Customers to use their Microsoft, Facebook, or Google Mail accounts to sign in to the company's public web site.
 - Vendors and partners to use their LinkedIn, Salesforce, or Google Mail accounts to sign in to the company's partner extranet.
 
-Here's the Contoso DMZ containing a public web site, a partner extranet, and a set of AD FS servers. The DMZ is connected to the internet that contains customers, partners, and internet services.
+Here's the Contoso DMZ containing a public web site, a partner extranet, and a set of Active Directory Federation Services (AD FS) servers. The DMZ is connected to the internet that contains customers, partners, and internet services.
 
 ![Contoso support for federated authentication for customers and partners](../media/contoso-identity/contoso-identity-fig2.png)
  
@@ -73,7 +72,7 @@ Here's the resulting set of Contoso identity and device Conditional Access polic
  
 ## Next step
 
-[Learn](contoso-win10.md) how Contoso uses its Microsoft Endpoint Configuration Manager infrastructure to deploy and keep current Windows 10 Enterprise across its organization.
+Learn how Contoso uses its Microsoft Endpoint Configuration Manager infrastructure to [deploy and keep current Windows 10 Enterprise](contoso-win10.md) across its organization.
 
 ## See also
 
