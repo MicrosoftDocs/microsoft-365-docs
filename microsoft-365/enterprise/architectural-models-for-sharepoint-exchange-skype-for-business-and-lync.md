@@ -73,20 +73,20 @@ Use the following links to get the posters you need:
     
 ## Architectural models posters
 
-These new IT posters for SharePoint 2016 and Skype for Business 2015 provide a way to compare the various deployment methods in an easy-to-print format. Each poster provides a list of all the configurations or platform options available and gives you the following information for each option:
+The IT posters for SharePoint 2016 and Skype for Business 2015 provide a way to compare the various deployment methods in an easy-to-print format. The posters list all configuration or platform options. They provide the following information for each option:
   
-- **Overview** A brief summary of the platform, including a conceptual diagram.
+- **Overview**: A brief summary of the platform, including a conceptual diagram.
     
-- **Best for** Common scenarios that are ideally suited for the particular platform.
+- **Best for**: Common scenarios that are ideally suited for the platform.
     
-- **License requirements** The licenses you need for deployment.
+- **License requirements**: The licenses you need for deployment.
     
-- **Architecture tasks** The decisions you need to make as an architect.
+- **Architecture tasks**: The decisions you need to make as an architect.
     
-- **IT Pro tasks or responsibilities** The daily responsibilities that your IT staff needs to plan for.
+- **IT tasks or responsibilities**: The daily responsibilities that your IT staff needs to plan for.
     
 <a name="SP2016_ArchModel"> </a>
-### Microsoft SharePoint 2016 Architectural Models
+### Microsoft SharePoint 2016 Architectural models
 
 |**Item**|**Description**|
 |:-----|:-----|
