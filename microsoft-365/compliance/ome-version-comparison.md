@@ -70,21 +70,19 @@ For information on using Advanced Message Encryption, see [Office 365 Advanced M
 
 ## Unique characteristics of Office 365 Message Encryption in a GCC High deployment
 
-Office 365 Advanced Message Encryption is not available in a GCC High environment. You can still use and customize a single brand template in a GCC High environment.
+If you plan to use Office 365 Message Encryption in a GCC High environment, there are some unique characteristics regarding the recipient experience.
 
-In addition, if you plan to use Office 365 Message Encryption in a GCC High environment, there are some unique characteristics about the recipient experience.
-
-### Encrypted email from GCC High to GCC High recipients
+### Encrypted email between GCC High and GCC High recipients
 
 Senders can manually encrypt emails in Outlook for PC and Mac and Outlook on the web, or organizations can set up a policy to encrypt emails using Exchange mail flow rules.
 
 Recipients inside GCC High receive the same inline reading experience in Outlook for PC and Mac and Outlook on the web as all other users.
 
-### Encrypted email from GCC High to Non-GCC High recipients
+### Encrypted email between GCC High and Non-GCC High recipients
 
-Senders inside GCC High can send encrypted email outside of the GCC High boundary.
+Senders inside GCC High can send encrypted email outside of the GCC High boundary and vice versa.
 
-All recipients outside GCC High, including commercial Microsoft 365 users, Outlook.com users, and other users of other email providers such as Gmail and Yahoo, receive a wrapper mail. This wrapper mail redirects the recipient to the OME Portal where the recipient can read and reply to message.
+All recipients outside GCC High, including commercial Microsoft 365 users, Outlook.com users, and other users of other email providers such as Gmail and Yahoo, receive a wrapper mail. This wrapper mail redirects the recipient to the OME Portal where the recipient can read and reply to the message. This is also true for senders outside GCC High sending OME encrypted mail to GCC High.
 
 ## Coexistence of legacy OME and the new capabilities in the same tenant
 
