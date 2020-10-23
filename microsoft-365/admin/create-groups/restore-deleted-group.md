@@ -1,5 +1,5 @@
 ---
-title: "Restore a deleted group"
+title: "Restore a deleted Microsoft 365 group"
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
@@ -22,7 +22,7 @@ ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: "Learn how to restore a deleted Microsoft 365 group."
 ---
 
-# Restore a deleted Group
+# Restore a deleted Microsoft 365 group
 
 If you've deleted a group, it will be retained for 30 days by default. This 30-day period is considered a "soft-delete" because you can still restore the group. After 30 days, the group and its associated contents are permanently deleted and cannot be restored.
 
@@ -43,6 +43,9 @@ When a group is restored, the following content is restored:
 - Teams
 
 - Yammer group and group content (If the Microsoft 365 group was created from Yammer)
+
+> [!NOTE]
+> This article describes restoring only Microsoft 365 groups. All other groups cannot be restored once deleted.
 
 ## Restore a group
 
@@ -68,7 +71,7 @@ If you are a global administrator or a groups administrator, you can restore a d
 > In some cases, it may take as long as 24 hours for the group and all of its data to be restored. 
 
 ---
-  
+
 ## Got questions about Microsoft 365 Groups?
 
 Visit the [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) to post questions and participate in conversations about Microsoft 365 groups. 
