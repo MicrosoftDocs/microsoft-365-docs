@@ -30,7 +30,7 @@ The information in this article supplements [Learn about retention](retention.md
 
 The following Yammer items can be retained and deleted by using retention policies for Yammer: Community messages and private messages.
 
-Reactions from others in the form of emoticons are not included.
+Reactions from others in the form of emoticons are not included in these messages.
 
 ## How retention works with Yammer
 
