@@ -233,7 +233,7 @@ In addition to enabling people to apply a retention label to individual document
   
 For a document library, the default label configuration is done on the **Library settings** page for a document library. When you choose the default retention label, you can also choose to apply it to existing items in the library. 
   
-For example, if you have a retention label for marketing materials, and you know a specific document library contains only that type of content, you can make the Marketing Materials retention label the default label for all documents in that library.
+For example, if you have a retention label for marketing materials, and you know a specific document library contains only that type of content, you can make the **Marketing Materials** retention label the default label for all documents in that library.
   
 ![Apply label option on library Settings page](../media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
   
