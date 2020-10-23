@@ -13,11 +13,11 @@ localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
+- m365solution-mig
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
-- m365solution-mig
-- m365initiative-compliance
 description: Learn about retention policies and retention labels that help you to retain what you need and delete what you don't.
 ---
 
@@ -271,7 +271,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Retention applied based on conditions <br /> - sensitive info types, KQL queries, trainable classifiers| No | Yes |
 |Retention applied manually | No | Yes |
 |UI presence for end users | No | Yes |
-|Persists if the content is moved | No | Yes, within Microsoft 365 |
+|Persists if the content is moved | No | Yes, within your Microsoft 365 tenant |
 |Declare item as a record| No | Yes |
 |Start the retention period when labeled or based on an event | No | Yes |
 |Disposition review | No| Yes |
@@ -348,27 +348,50 @@ To use the retention cmdlets, you must first [connect to the Office 365 Security
 
 - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
 
+## When to use retention policies and retention labels or eDiscovery holds
+
+Although retention settings and [holds that you create with an eDiscovery case](create-ediscovery-holds.md) can both prevent data from being permanently deleted, they are designed for different scenarios. To help you understand the differences and decide which to use, use the following guidance:
+
+- Retention settings that you specify in retention policies and retention labels are designed for a long-term information governance strategy to retain or delete data for compliance requirements. The scope is usually broad with the main focus being the location and content rather than individual users. The start and end of the retention period is configurable, with the option to automatically delete content without additional administrator intervention.
+
+- Holds for eDiscovery (either Core eDiscovery or Advanced eDiscovery cases) are designed for a limited duration to preserve data for a legal investigation. The scope is specific with the focus being content owned by identified users. The start and end of the preservation period isn't configurable but dependent on individual administrator actions, without an option to automatically delete content when the hold is released.
+
+Summary to compare retention with holds:
+
+|Consideration|Retention |eDiscovery holds|
+|:-----|:-----|:-----|:-----|
+|Business need: |Compliance |Legal |
+|Time scope: |Long-term |Short-term |
+|Focus: |Broad, content-based |Specific, user-based |
+|Start and end date configurable: |Yes |No |
+|Content deletion: |Yes (optional) |No |
+|Administrative overheads: |Low |High |
+
+If content is subject to both retention settings and an eDiscovery hold, preserving content for the eDiscovery hold always takes precedence. In this way, the [principles of retention](#the-principles-of-retention-or-what-takes-precedence) expand to eDiscovery holds because they preserve data until an administrator manually releases the hold. However, despite this precedence, don't use eDiscovery holds for long-term information governance. If you are concerned about automatic deletion of data, you can configure retention settings to retain items forever, or use [disposition review](disposition.md#disposition-reviews) with retention labels.
+
+If you are using older eDiscovery tools to preserve data, see the following resources:
+
+- Exchange: 
+    - [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/?linkid=846124)
+    - [How to identify the type of hold placed on an Exchange Online mailbox](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox)
+
+- SharePoint and OneDrive: 
+    - [Add content to a case and place sources on hold in the eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
+
+- [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md)
+
 ## Use retention policies and retention labels instead of older features
 
-If you need to proactively retain or delete content in Microsoft 365 for information governance, we recommend that you use retention policies and retention labels instead of the following older features. 
-  
+If you need to proactively retain or delete content in Microsoft 365 for information governance, we recommend that you use retention policies and retention labels instead of the following older features.
+
 If you currently use these older features, they will continue to work side-by-side with retention policies and retention labels. However, we recommend that going forward, you use retention policies and retention labels instead. They provide you with a single mechanism to centrally manage both retention and deletion of content across Microsoft 365.
 
 **Older features from Exchange Online:**
 
-- [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/?linkid=846124) (eDiscovery hold) 
-
-- [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md)
-    
 - [Retention tags and retention policies](https://go.microsoft.com/fwlink/?linkid=846125), also known as [messaging records management (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (deletion only)
-    
-See also [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
-
 
 **Older features from SharePoint and OneDrive:**
 
-- [Add content to a case and place sources on hold in the eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (eDiscovery hold) 
-    
 - [Document deletion policies](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (deletion only)
     
 - [Configuring in place records management](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (retention only) 
@@ -377,10 +400,6 @@ See also [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md
     
 - [Information management policies](intro-to-info-mgmt-policies.md) (deletion only)
      
-If you've previously used any of the eDiscovery holds for the purpose of information governance, for proactive compliance, use a retention policy instead. Use eDiscovery for holds only.
-  
-### Retention policies and SharePoint content type policies or information management policies
-
 If you have configured SharePoint sites for content type policies or information management policies to retain content for a list or library, those policies are ignored while a retention policy is in effect. 
 
 ## Related information

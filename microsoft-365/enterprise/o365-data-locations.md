@@ -3,7 +3,6 @@ title: "Microsoft 365 data locations"
 ms.author: deanw
 author: dmwmsft
 manager: laurawi
-ms.date: 07/22/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,7 +15,7 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: "Summary: Microsoft 365 data locations"
+description: "Determine where your Microsoft 365 customer data is stored worldwide"
 ---
 
 <!--
@@ -470,7 +469,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Yammer | United States |
 | OneNote Services | Australia |
 | Stream | Australia |
-| Whiteboard | United States |
+| Whiteboard | Australia |
 | Forms | United States |
 | Workplace Analytics | United States |
 </p></details>
