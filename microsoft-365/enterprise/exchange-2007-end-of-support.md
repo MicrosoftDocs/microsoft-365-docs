@@ -24,25 +24,25 @@ On **April 11, 2017**, Exchange Server 2007 reached end of support. If you haven
   
 ## What does end of support mean?
 
-Exchange Server, like almost all Microsoft products, has a support lifecycle during which we provide new features, bug fixes, security fixes, and so on. This lifecycle typically lasts for 10 years from the date of the product's initial release, and the end of this lifecycle is known as the product's end of support. Since Exchange 2007 reached its end of support on April 11, 2017, Microsoft no longer provides:
+Exchange Server, like almost all Microsoft products, has a support lifecycle during which we provide new features, bug fixes, security fixes, and so on. This lifecycle typically lasts for 10 years from the product's initial release. The end of this lifecycle is known as the product's end of support. Since Exchange 2007 reached its end of support on April 11, 2017, Microsoft no longer provides:
   
-- Technical support for problems that may occur;
+- Technical support for problems that may occur
     
-- Bug fixes for issues that are discovered and that may impact the stability and usability of the server;
+- Bug fixes for issues that are discovered and that may impact the stability and usability of the server
     
-- Security fixes for vulnerabilities that are discovered and that may make the server vulnerable to security breaches;
+- Security fixes for vulnerabilities that are discovered and that may make the server vulnerable to security breaches
     
 - Time zone updates.
     
-Your installation of Exchange 2007 will continue to run after this date. However, because of the changes listed above, we strongly recommend that you migrate from Exchange 2007 as soon as possible.
+Your installation of Exchange 2007 will continue to run after this date. However, because there are no new updates or support, we strongly recommend that you migrate from Exchange 2007 as soon as possible.
   
 For more information about Office 2007 servers nearing the end of support, see [Plan your upgrade from Office 2007 servers and products](upgrade-from-office-2007-servers-and-products.md).
   
 ## What are my options?
 
-Now that Exchange 2007 has reached its end of support, we strongly recommend that you explore your options and prepare a migration plan. You can:
+Now that Exchange 2007 has reached its end of support, we recommend that you explore your options and prepare a migration plan. You can:
   
-- Migrate to Microsoft 365 using cutover, staged, or hybrid migration;
+- Migrate to Microsoft 365 using cutover, staged, or hybrid migration.
     
 - Migrate your Exchange 2007 servers to a newer version of Exchange on your on-premises servers.
     
@@ -50,29 +50,29 @@ The following sections explore each option in more detail.
   
 ### Migrate to Microsoft 365
 
-Migrating your email to Microsoft 365 is your best and simplest option to help you retire your Exchange 2007 deployment. With a migration to Microsoft 365, you can make a single hop from 10-year-old technology to state-of-the-art features, like:
+Migrating your email to Microsoft 365 is your best and simplest option to help you retire your Exchange 2007 deployment. With a migration to Microsoft 365, you can make a single hop from 10-year-old technology to state-of-the-art features, including:
   
-- Compliance capabilities such as Retention Policies, In-Place and Litigation Hold, in-place eDiscovery, and more;
+- Compliance capabilities such as Retention Policies, In-Place and Litigation Hold, in-place eDiscovery, and more
     
-- Microsoft 365 Groups;
+- Microsoft 365 Groups
     
-- Focused Inbox;
+- Focused Inbox
     
-- MyAnalytics;
+- MyAnalytics
     
-- REST APIs for programmatic access to email, calendars, contacts, and so on.
+- REST APIs for programmatic access to email, calendars, contacts, and so on
     
-Microsoft 365 also gets new features and experiences first and you and your users can usually start using them right away. In addition to new features, you won't have to worry about:
+Microsoft 365 also gets new features and experiences first, and you and your users can usually start using them right away. In addition to new features, you won't have to worry about:
   
-- Purchasing and maintaining hardware;
+- Purchasing and maintaining hardware.
     
-- Paying for heating and cooling of your servers;
+- Paying for heating and cooling your servers.
     
-- Keeping up to date on security, product, and time zone fixes;
+- Keeping up to date on security, product, and time zone fixes.
     
-- Maintaining storage and software to support compliance requirements;
+- Maintaining storage and software to support compliance requirements.
     
-- Upgrading to a new version of Exchange - you're always on the latest version of Exchange in Microsoft 365.
+- Upgrading to a new version of Exchange. You're always on the latest version of Exchange in Microsoft 365.
     
 #### How should I migrate to Microsoft 365?
 
