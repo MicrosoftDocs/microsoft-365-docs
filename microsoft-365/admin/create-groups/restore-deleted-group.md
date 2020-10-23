@@ -66,6 +66,8 @@ If you are a global administrator or a groups administrator, you can restore a d
 
 > [!NOTE]
 > In some cases, it may take as long as 24 hours for the group and all of its data to be restored. 
+
+---
   
 ## Got questions about Microsoft 365 Groups?
 
