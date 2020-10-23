@@ -67,7 +67,7 @@ Not all changes have the same impact on your users or require action. Some are p
 **Requires global admin action** | Sometimes |	Rarely |	Rarely 
 **Type of action** | Change settings | Communicate changes to users | Change admin settings 	
 **Requires testing** | Check business applications, including remote access services |	Sometimes - testing the fix against processes or customizations |	Rarely 
-**Examples of change** | - Feature updates: IT Admin Portal simplified support ticket submission and review<br>- New features or applications: Semi-annual release of a Windows 10 feature update |	Hotfixes based on customer reported bugs |	
+**Examples of change** | - Feature updates: IT Admin Portal simplified support ticket submission and review<br>- New features or applications: Semi-Annual release of a Windows 10 feature update |	Hotfixes based on customer reported bugs |	
 
 
 ## Standard operating procedures
