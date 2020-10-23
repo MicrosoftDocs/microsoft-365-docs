@@ -33,7 +33,8 @@ Files are often stored in sites, groups, and teams for long periods of time. Occ
 
 Once an *Anyone* link expires, it can no longer be used to access content.
 
-To set an expiration date for Anyone links
+To set an expiration date for Anyone links across the organization
+
 1. Open the SharePoint Online admin center.
 2. In the left navigation, click **Sharing**.
 3. Under **Choose expiration and permissions options for Anyone links**, select the **These links must expire within this many days** check box.</br>
@@ -42,7 +43,17 @@ To set an expiration date for Anyone links
 
 Note that once an *Anyone* link expires, the file or folder can be re-shared with a new *Anyone* link.
 
-You can set *Anyone* link expiration for a specific site or OneDrive by using [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite).
+To set an expiration date for Anyone links on a specific site
+
+1. Open the SharePoint Online admin center.
+2. In the left navigation, expand **Sites**, and then click **Active sites**.
+3. Select the site you want to change, and then click **Sharing**.
+4. Under **Advanced settings for Anyone links**, under **Expiration of Anyone links**, clear the **Same as organization-level setting** check box.
+   ![Screenshot of SharePoint site-level Anyone link expiration settings](../media/sharepoint-organization-anyone-link-expiration-site.png)
+5. Select the **These links must expire within this many days** options, and type a number of days in the box.
+6. Click **Save**.
+
+You can set *Anyone* link expiration for a specific OneDrive by using [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite).
 
 ## Set link permissions
 
