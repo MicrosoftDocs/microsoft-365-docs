@@ -41,8 +41,6 @@ To set an expiration date for Anyone links across the organization
    ![Screenshot of SharePoint organization-level Anyone link expiration settings](../media/sharepoint-organization-anyone-link-expiration.png)
 4. Type a number of days in the box, and then click **Save**.
 
-Note that once an *Anyone* link expires, the file or folder can be re-shared with a new *Anyone* link.
-
 To set an expiration date for Anyone links on a specific site
 
 1. Open the SharePoint Online admin center.
@@ -52,6 +50,8 @@ To set an expiration date for Anyone links on a specific site
    ![Screenshot of SharePoint site-level Anyone link expiration settings](../media/sharepoint-organization-anyone-link-expiration-site.png)
 5. Select the **These links must expire within this many days** option, and type a number of days in the box.
 6. Click **Save**.
+
+Note that once an *Anyone* link expires, the file or folder can be re-shared with a new *Anyone* link.
 
 You can set *Anyone* link expiration for a specific OneDrive by using [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite).
 
@@ -107,18 +107,17 @@ If you use sensitivity labels in the Microsoft 365 Compliance admin center, you 
 
 To add a footer to a labeled file
 1. Open the [Microsoft 365 compliance admin center](https://compliance.microsoft.com).
-2. In the left navigation, under **Classification**, click **Sensitivity labels**.
+2. In the left navigation, under **Solutions**, click **Information protection**.
 3. Click the label that you want to have add a footer, and then click **Edit label**.
-4. Click the **Content marking** tab, and then turn **On** content marking.
+4. Click **Next** to reach the **Content marking** tab, and then turn **On** content marking.
 5. Select the check box for the type of text you want to add, and then click **Customize text**.
 6. Type the text that you want added to your documents, select the text options that you want, and then click **Save**.</br>
    ![Screenshot of the content marking settings for a sensitivity label](../media/content-marking-for-anonymous-sharing.png)
-7. Click **Save**, and then click **Close**.
+7. Click **Next** to reach the end of the wizard, and then click **Save label**.
 
 With content marking enabled for the label, the text you specified will be added to Office documents when a user applies that label.
 
 ## See Also
-
 
 [Overview of sensitivity labels](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
 
