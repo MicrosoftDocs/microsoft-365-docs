@@ -50,7 +50,7 @@ Contoso followed these steps to prepare Microsoft 365 for enterprise for their i
 
 1. Identify what information to protect
 
-   Contoso did an extensive review of their existing digital assets located on on-premises SharePoint sites and file shares, and classified each asset.
+   Contoso did an extensive review of their existing digital assets located on on-premises SharePoint sites and file shares and classified each asset.
 
 2. Determine access, retention, and information protection policies for data levels
 
@@ -109,7 +109,7 @@ Here's the resulting Contoso information-protection configuration.
 
 ## Next step
 
-[See](contoso-security-summary.md) how Contoso uses the security features across Microsoft 365 for enterprise for identity and access management, threat protection, information protection, and security management.
+Learn how Contoso uses the [security features across Microsoft 365 for enterprise](contoso-security-summary.md) for identity and access management, threat protection, information protection, and security management.
 
 ## See also
 
