@@ -35,7 +35,7 @@ When users authenticate in any of the Microsoft 365 web apps or mobile apps, a s
   
 The following table lists the session lifetimes for Microsoft 365 services:
   
-|**Microsoft 365 service**|**Session timeout**|
+| Microsoft 365 service | Session timeout |
 |:-----|:-----|
 |Microsoft 365 admin center  <br/> |You are asked to provide credentials for the admin center every 8 hours.  <br/> |
 |SharePoint Online  <br/> |5 days of inactivity as long as the users chooses **Keep me signed in**. If the user accesses SharePoint Online again after 24 or more hours have passed from the previous sign-in, the timeout value is reset to 5 days.  <br/> |

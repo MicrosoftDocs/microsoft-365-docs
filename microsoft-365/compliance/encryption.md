@@ -46,7 +46,7 @@ You can have multiple layers of encryption in place at the same time. For exampl
   
 With Office 365, multiple layers and kinds of encryption work together to secure your data. The following table includes some examples, with links to additional information.
   
-|**Kinds of Content**|**Encryption Technologies**|**Resources to learn more**|
+| Kinds of Content | Encryption Technologies | Resources to learn more |
 |:-----|:-----|:-----|
 |Files on a device. These files can include email messages saved in a folder, Office documents saved on a computer, tablet, or phone, or data saved to the Microsoft cloud.  <br/> |BitLocker in Microsoft datacenters. BitLocker can also be used on client machines, such as Windows computers and tablets  <br/> Distributed Key Manager (DKM) in Microsoft datacenters  <br/> Customer Key for Microsoft 365  <br/> |[Windows IT Center: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft Trust Center: Encryption](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Cloud security controls series: Encrypting Data at Rest](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md) <br/> [Service encryption with Customer Key](customer-key-overview.md) <br/> |
 |Files in transit between users. These files can include Office documents or SharePoint list items shared between users.  <br/> |TLS for files in transit  <br/> |[Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype for Business Online: Security and Archiving](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
@@ -71,7 +71,7 @@ To learn more, see the following resources:
 
 ## How do I...
 
-|**To do this task**|**See these resources**|
+| To do this task | See these resources |
 |:-----|:-----|
 |Set up encryption for my organization  <br/> |[Set up encryption in Office 365 Enterprise](set-up-encryption.md) <br/> |
 |View details about certificates, technologies, and TLS cipher suites <br/> |[Technical details about encryption](technical-reference-details-about-encryption.md) <br/> |

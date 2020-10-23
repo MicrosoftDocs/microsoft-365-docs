@@ -33,7 +33,7 @@ If your organization has [Office 365 Advanced Threat Protection](office-365-atp.
 
 With Explorer (or Real-time detections), you have a powerful report that enables your Security Operations team to investigate and respond to threats effectively and efficiently. The report resembles the following image:
 
-![Go to Threat management \> Explorer](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+[ ![Go to Threat management \> Explorer](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png) ](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png#lightbox)
 
 With this report, you can:
 
@@ -56,26 +56,30 @@ Within Threat Explorer, you will be able to see information around User Tags in 
 
 #### Email Grid View
 
-The Tags column shown in the email grid would contains all the tags that have been applied to the sender or recipient mailboxes. By default, system tags like priority accounts are shown first.
+The Tags column shown in the email grid would contain all the tags that have been applied to the sender or recipient mailboxes. By default, system tags like priority accounts are shown first.
 
-![Filter Tags](../../media/tags-grid.png)
+> [!div class="mx-imgBorder"]
+> ![Filter Tags](../../media/tags-grid.png)
 
 #### Filtering
 We now have Tags as a filter so you can hunt just across priority accounts, or specific User tags scenarios (and even exclude results with certain tags as part of this experience). Combining these with the multiple other filters that we provide, would help you to narrow down your scope of investigation
 
-![Filter Tags](../../media/tags-filter-normal.png)
+[ ![Filter Tags](../../media/tags-filter-normal.png) ](../../media/tags-filter-normal.png#lightbox)
 
-![Not Filter Tags](../../media/tags-filter-not.png)
+> [!div class="mx-imgBorder"]
+> ![Not Filter Tags](../../media/tags-filter-not.png) ]
 
 #### Email Detail Flyout
 To view the individual tags for sender and Recipient, click on the subject. It opens the message details flyout. In the summary tab, sender and recipient tags are shown separately, if they are present for an email.
 The information about individual tags for sender and Recipient, also extends to exported CSV, where you can see these details in 2 separate columns. 
 
-![Email Details Tags](../../media/tags-flyout.png)
+> [!div class="mx-imgBorder"]
+> ![Email Details Tags](../../media/tags-flyout.png)
 
 Tags information is also shown in URL clicks flyout. To get to the URL clicks flyout, you would need to go to Phish or All Email view, and then to URLs or URL Clicks Tab. Clicking on an individual URL flyout would show more details about Clicks for that URL, and would have Tags associated with that click. 
 
-![URL Tags](../../media/tags-urls.png)
+> [!div class="mx-imgBorder"]
+> ![URL Tags](../../media/tags-urls.png)
 
 ## Improvements to Threat Hunting Experience (upcoming)
 
@@ -154,7 +158,7 @@ System overrides are a method of making exceptions to the intended delivery loca
 - Blocked by org policy: This is when the organization's security teams set policies or mail flow rules to block senders, domains, message languages, or source IPs for users in their organization. This can also be for a set of users or the entire organization.
 - File extension blocked by org policy: This is when a file type extension is blocked by the security teams of an organization through the anti-malware policy settings. These values will now be displayed in email details to help with investigations. Secops teams can also filter on blocked file extensions using the rich filtering capability.
 
-![System_Overrides](../../media/System_Overrides.png)
+[ ![System_Overrides](../../media/System_Overrides.png) ](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
 > ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
@@ -177,7 +181,7 @@ The set of improvements focused towards URL and URL clicks data include:
 
 Phish confidence level helps to identify the degree of confidence, with which an email was categorized as Phish. The two possible values are High and Normal. In the initial stages, this filter will be available only in the Phish view of Threat Explorer.
 
-![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png)
+[ ![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png) ](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### ZAP URL Signal 
 
