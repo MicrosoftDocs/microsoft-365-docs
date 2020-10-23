@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,8 +18,6 @@ description: Understand the Contoso Corporation as a business and the tiered str
 ---
 
 # Overview of Contoso Corporation
-
-![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 The Contoso Corporation is a multinational business with its headquarters in Paris. The company is a manufacturing, sales, and support organization with more than 100,000 products.
 
@@ -70,7 +67,7 @@ The Contoso IT architects identified the following design-requirement factors fo
 
 ## Next step
 
-[Learn](contoso-infra-needs.md) about the Contoso Corporation on-premises IT infrastructure and how the company's business needs are addressed with Microsoft 365 for enterprise.
+Learn about the Contoso Corporation [on-premises IT infrastructure](contoso-infra-needs.md) and how the company's business needs are addressed with Microsoft 365 for enterprise.
 
 ## See also
 
