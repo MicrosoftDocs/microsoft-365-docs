@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -131,7 +131,7 @@ In the wizard, we'll just confirm that you own the domain, and then automaticall
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
-- [WordPress](https://wordpress.com/)
+- [WordPress.com](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)

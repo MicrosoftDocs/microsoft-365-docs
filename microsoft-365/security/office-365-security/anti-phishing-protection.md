@@ -13,8 +13,9 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-defender-office365
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
@@ -22,6 +23,9 @@ description: "Admins can learn about the anti-phishing protection features in Ex
 ---
 
 # Anti-phishing protection in Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 *Phishing* is an email attack that tries to steal sensitive information in messages that appear to be from legitimate or trusted senders. There are specific categories of phishing. For example:
 

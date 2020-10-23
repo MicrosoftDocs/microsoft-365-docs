@@ -9,7 +9,8 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- m365-security-compliance
+- m365initiative-compliance
 localization_priority: Normal
 description: "Learn about tasks that will help you quickly get started with compliance in Microsoft 365."
 ---
@@ -26,7 +27,7 @@ After you’ve completed these basic compliance tasks, consider expanding compli
 
 It’s important to manage who in your organization has access to the Microsoft 365 compliance center to view content and perform management tasks. Microsoft 365 provides administrative roles specific to compliance and for using the tools included in the Microsoft 365 compliance center.
 
-Start by assigning compliance permissions to the people in your organization so that they can perform these tasks and to prevent unauthorized people from having access to areas outside of their responsibilities. You’ll want to make sure that you’ve assigned the proper people to the **Compliance data administrator** and the **Compliance administrator** admin roles before you start to configure and implement compliance solutions included with Microsoft 365. You’ll also need to assign users to the Azure Active Directory global reader role to view data in Compliance Score.
+Start by assigning compliance permissions to the people in your organization so that they can perform these tasks and to prevent unauthorized people from having access to areas outside of their responsibilities. You’ll want to make sure that you’ve assigned the proper people to the **Compliance data administrator** and the **Compliance administrator** admin roles before you start to configure and implement compliance solutions included with Microsoft 365. You’ll also need to assign users to the Azure Active Directory global reader role to view data in Compliance Manager.
 
 For step-by-step guidance to configure permissions and assign people to admin roles, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
@@ -34,9 +35,9 @@ For step-by-step guidance to configure permissions and assign people to admin ro
 
 It’s difficult to know where to go if you don’t know where you are. Meeting your compliance needs includes understanding your current level of risk and what updates may be needed in these ever changing times. Whether your organization is new to compliance requirements or has deep experience with standards and regulations that govern your industry, the single best thing you can do to improve compliance is to understand where your organization stands.
 
-[Microsoft Compliance Score](compliance-score.md) can help you understand your organization's compliance posture and highlight areas that may need improvement. Compliance Score uses a centralized dashboard to calculate a risk-based score, measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. You can also use Compliance Score as a tool to track all your risk assessments. It provides workflow capabilities to help you efficiently complete your risk assessments through a common tool.
+[Microsoft Compliance Manager](compliance-manager.md) can help you understand your organization's compliance posture and highlight areas that may need improvement. Compliance Manager uses a centralized dashboard to calculate a risk-based score, measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. You can also use Compliance Manager as a tool to track all your risk assessments. It provides workflow capabilities to help you efficiently complete your risk assessments through a common tool.
 
-For step-by-step guidance to get started with Compliance Score, see [Set up Compliance Score](compliance-score-setup.md).
+For step-by-step guidance to get started with Compliance Manager, see [Get started with Compliance Manager](compliance-manager-setup.md).
 
 >[!IMPORTANT]
 >Security and compliance are tightly integrated for most organizations. It’s important that your organization addresses basic security, threat protection, and identity and access management areas to help provide a defense in-depth approach to both security and compliance.
@@ -62,13 +63,7 @@ Use alert policy and alert dashboard tools to create custom alert policies and v
 
 For step-by-step guidance to create custom alert policies, see [Alert policies in the security and compliance center](alert-policies.md).
 
-## Task 5: Configure just-in-time access for your administrators
-
-Having standing access by some users to sensitive information or critical network configuration settings is a potential pathway for compromised accounts or internal threat activities. [Privileged access management](privileged-access-management-overview.md) helps protect your organization from breaches and helps to meet compliance best practices by limiting standing access to sensitive data or access to critical configuration settings. Instead of administrators having constant access, just-in-time access rules are implemented for tasks that need elevated permissions. Enabling privileged access management in Microsoft 365 allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
-
-For step-by-step guidance to configure privileged access management, see [Get started with privileged access management](privileged-access-management-configuration.md). For privileged access management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#privileged-access-management-in-office-365).
-
-## Task 6: Classify and protect sensitive data
+## Task 5: Classify and protect sensitive data
 
 To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
 
@@ -76,7 +71,7 @@ To get their work done, people in your organization collaborate with others both
 
 For step-by-step guidance to configure and use sensitivity labels, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md). For sensitivity label licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
-## Task 7: Configure a retention policy
+## Task 6: Configure a retention policy
 
 A [retention policy](retention.md) lets you proactively decide whether to retain content, delete content, or both—retain and then delete the content at the end of a specified retention period. These actions might be needed to comply with industry regulations and internal policies, as well as reduce your risk in the event of litigation or a security breach.
 
@@ -86,7 +81,7 @@ You can quickly put a retention policy in place for multiple locations in your M
 
 For step-by-step guidance to configure a retention policy, see [Create and configure retention policies](create-retention-policies.md). If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
 
-## Task 8: Configure sensitive information and offensive language policies
+## Task 7: Configure sensitive information and offensive language policies
 
 Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. [Communication compliance](communication-compliance-feature-reference.md) in Microsoft 365 helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
 
@@ -96,7 +91,7 @@ The pre-defined *Sensitive information* policy template helps you quickly create
 
 For step-by-step guidance to plan and configure communication compliance, see [Plan for communication compliance](communication-compliance-plan.md) and [Get started with communication compliance](communication-compliance-configure.md). For communication compliance licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
-## Task 9: See what's happening with your sensitive items
+## Task 8: See what's happening with your sensitive items
 
 Sensitivity labels, sensitive information types, retention labels and policies and trainable classifiers can be used to classify and label sensitive items across Exchange, SharePoint, and OneDrive as you've seen in the previous tasks. The last step in your quick task journey is to see which items have been labeled and what actions your users are taking on those sensitive items. [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md) provide this visibility.
 

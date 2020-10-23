@@ -104,10 +104,11 @@ The following table lists and describes the available default alert policies and
 
 The table also indicates the Office 365 Enterprise and Office 365 US Government plan required for each one. Some default alert policies are available if your organization has the appropriate add-on subscription in addition to an E1/F1/G1 or E3/G3 subscription.
 
-|**Default alert policy**|**Description**|**Category**|**Office 365 Enterprise subscription**|
+| Default alert policy | Description | Category | Office 365 Enterprise subscription |
 |:-----|:-----|:-----|:-----|
 |**A potentially malicious URL click was detected**|Generates an alert when a user protected by [Office 365 ATP Safe Links](../security/office-365-security/atp-safe-links.md) in your organization clicks a malicious link. This event is triggered when URL verdict changes are identified by Office 365 ATP or when users override the Office 365 ATP Safe Links pages (based on your organization's Microsoft 365 for business ATP Safe Links policy). This alert policy has a **High** severity setting. For Office 365 ATP P2, E5, G5 customers, this alert automatically triggers [automated investigation and response in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). For more information on events that trigger this alert, see [Set up Office 365 ATP Safe Links policies](../security/office-365-security/set-up-atp-safe-links-policies.md).|Threat management|E5/G5 or Office 365 ATP P2 add-on subscription|
 |**Admin Submission result completed**|Generates an alert when an [Admin Submission](../security/office-365-security/admin-submission.md) completes the rescan of the submitted entity. An alert will be triggered every time a rescan result is rendered from an Admin Submission. These alerts are meant to remind you to [review the results of previous submissions](https://protection.office.com/reportsubmission), submit user reported messages to get the latest policy check and rescan verdicts, and help you determine if the filtering policies in your organization are having the intended impact. This policy has a **Low** severity setting.|Threat management|E1/F1, E3, or E5|
+|**Admin triggered manual investigation of email**|Generates an alert when an admin triggers the manual investigation of an email from Threat Explorer. For more information, see [Example: A security administrator triggers an investigation from Threat Explorer] (https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). This alert notifies your organization that the investigation was started. The alert provides information about who triggered it and includes a link to the investigation. This policy has an **Informational** severity setting.|Threat management| E5/G5 or Office 365 ATP P2 add-on subscription| 
 |**Creation of forwarding/redirect rule**|Generates an alert when someone in your organization creates an inbox rule for their mailbox that forwards or redirects messages to another email account. This policy only tracks inbox rules that are created using Outlook on the web (formerly known as Outlook Web App) or Exchange Online PowerShell. This policy has a **Low** severity setting. For more information about using inbox rules to forward and redirect email in Outlook on the web, see [Use rules in Outlook on the web to automatically forward messages to another account](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).|Threat management|E1/F1/G1, E3/G3, or E5/G5|
 |**eDiscovery search started or exported**|Generates an alert when someone uses the Content search tool in the Security and compliance center. An alert is triggered when the following content search activities are performed: <br/><br/>* A content search is started<br/>* The results of a content search are exported<br/>* A content search report is exported<br/><br/>Alerts are also triggered when the previous content search activities are performed in association with an eDiscovery case. This policy has a **Medium** severity setting. For more information about content search activities, see [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).|Threat management|E1/F1/G1, E3/G3, or E5/G5|
 |**Elevation of Exchange admin privilege**|Generates an alert when someone is assigned administrative permissions in your Exchange Online organization. For example, when a user is added to the Organization Management role group in Exchange Online. This policy has a **Low** severity setting.|Permissions|E1/F1/G1, E3/G3, or E5/G5|
@@ -120,6 +121,7 @@ The table also indicates the Office 365 Enterprise and Office 365 US Government 
 |**Malware campaign detected and blocked**|Generates an alert when someone has attempted to send an unusually large number of email messages containing a certain type of malware to users in your organization. If this event occurs, the infected messages are blocked by Microsoft and not delivered to mailboxes. This policy has a **Low** severity setting.|Threat management|E5/G5 or Office 365 ATP P2 add-on subscription|
 |**Malware campaign detected in SharePoint and OneDrive**|Generates an alert when an unusually high volume of malware or viruses is detected in files located in SharePoint sites or OneDrive accounts in your organization. This policy has a **High** severity setting.|Threat management|E5/G5 or Office 365 ATP P2 add-on subscription|
 |**Phish delivered due to tenant or user override**<sup>1</sup>|Generates an alert when Microsoft  detects an admin or user override allowed the delivery of a phishing message to a mailbox. Examples of overrides include an inbox or mail flow rule that allows messages from a specific sender or domain, or an anti-spam policy that allows messages from specific senders or domains. This policy has a **High** severity setting.|Threat management|E5/G5 or Office 365 ATP P2 add-on subscription|
+|**Suspicious email forwarding activity**|Generates an alert when someone in your organization has auto-forwarded email to a suspicious external account. This is an early warning for behavior that may indicate the account is compromised, but not severe enough to restrict the user. This policy has a **Medium** severity setting. Although it's rare, an alert generated by this policy may be an anomaly. It's a good idea to [check whether the user account is compromised](../security/office-365-security/responding-to-a-compromised-email-account.md).|Threat management|E1/F1/G1, E3/G3, or E5/G5|
 |**Suspicious email sending patterns detected**|Generates an alert when someone in your organization has sent suspicious email and is at risk of being restricted from sending email. This is an early warning for behavior that may indicate that the account is compromised, but not severe enough to restrict the user. This policy has a **Medium** severity setting. Although it's rare, an alert generated by this policy may be an anomaly. However, it's a good idea to [check whether the user account is compromised](../security/office-365-security/responding-to-a-compromised-email-account.md).|Threat management|E1/F1/G1, E3/G3, or E5/G5  |
 |**Tenant restricted from sending email**|Generates an alert when most of the email traffic from your organization has been detected as suspicious and Microsoft has restricted your organization from sending email. Investigate any potentially compromised user and admin accounts, new connectors, or open relays, and then contact Microsoft Support to unblock your organization. This policy has a **High** severity setting. For more information about why organizations are blocked, see [Fix email delivery issues for error code 5.7.7xx in Exchange Online](https://go.microsoft.com/fwlink/?linkid=2022138).|Threat management|E1/F1/G1, E3/G3, or E5/G5|
 |**Unusual external user file activity**|Generates an alert when an unusually large number of activities are performed on files in SharePoint or OneDrive by users outside of your organization. This includes activities such as accessing files, downloading files, and deleting files. This policy has a **High** severity setting.|Information governance|E5/G5, Office 365 ATP P2, or Microsoft 365 E5 add-on subscription|
@@ -200,7 +202,7 @@ The following table lists the roles that are required to view alerts from the si
 
 To see which category a default alert policy is assigned to, see the table in the [Default alert policies](#default-alert-policies) section.
 
-|&nbsp;|Information governance|Data loss prevention|Mail flow|Permissions|Threat management|Others|
+|Role|Information governance|Data loss prevention|Mail flow|Permissions|Threat management|Others|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Audit Logs|||||||
 |Case Management|||||||
@@ -233,17 +235,18 @@ To see which category a default alert policy is assigned to, see the table in th
 |View-Only Retention Management|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |||||||
 
-**Tip:** To view the roles that are assigned to each of the default role groups, run the following commands in Security & Compliance Center PowerShell:
-
-```PowerShell
-$RoleGroups = Get-RoleGroup
-```
-
-```PowerShell
-$RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
-```
-
-You can also view the roles assigned to a role group in the Security & Compliance Center. Go to the **Permissions** page, and select a role group. The assigned roles are listed on the flyout page.
+> [!TIP]
+> To view the roles that are assigned to each of the default role groups, run the following commands in Security & Compliance Center PowerShell:
+> 
+> ```powershell
+> $RoleGroups = Get-RoleGroup
+> ```
+> 
+> ```powershell
+> $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
+> ```
+> 
+> You can also view the roles assigned to a role group in the Security & Compliance Center. Go to the **Permissions** page, and select a role group. The assigned roles are listed on the flyout page.
 
 ## Managing alerts
 

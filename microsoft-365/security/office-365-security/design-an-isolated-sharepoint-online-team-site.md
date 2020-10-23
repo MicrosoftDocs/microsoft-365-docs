@@ -22,6 +22,9 @@ description: Design isolated SharePoint Online team sites, including determine p
 
 # Design an isolated SharePoint Online team site
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
  **Summary:** Step through the design process for isolated SharePoint Online team sites.
 
 This article takes you through the key design decisions you must make before creating an isolated SharePoint Online team site.

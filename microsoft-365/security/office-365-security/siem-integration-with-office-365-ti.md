@@ -22,7 +22,10 @@ ms.custom: seo-marvel-apr2020
 
 # SIEM integration with Advanced Threat Protection
 
-If your organization is using a security incident and event management (SIEM) server, you can integrate Office 365 Advanced Threat Protection (Office 365 ATP) with your SIEM server. You can set up this integration by using the [Office 365 Activity Management API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+If your organization is using a security information and event management (SIEM) server, you can integrate Office 365 Advanced Threat Protection (Office 365 ATP) with your SIEM server. You can set up this integration by using the [Office 365 Activity Management API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
 SIEM integration enables you to view information, such as malware or phish detected by Office 365 ATP, in your SIEM server reports. 
 
@@ -38,7 +41,6 @@ Recently, events from automated investigation and response capabilities in [Offi
 
 The SIEM server or other similar system polls the **audit.general** workload to access detection events. To learn more, see [Get started with Office 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
 
-
 ## Enum: AuditLogRecordType - Type: Edm.Int32
 
 ### AuditLogRecordType
@@ -48,7 +50,7 @@ The following table summarizes the values of **AuditLogRecordType** that are rel
 |Value|Member name|Description|
 |---|---|---|
 |28|ThreatIntelligence|Phishing and malware events from Exchange Online Protection and Office 365 ATP.|
-|41|ThreatIntelligenceUrl|ATP Safe Links time-of-block and block override events from Office 365 ATP.|
+|41|ThreatIntelligenceUrl|Safe Links time-of-block and block override events from Office 365 ATP.|
 |47|ThreatIntelligenceAtpContent|Phishing and malware events for files in SharePoint Online, OneDrive for Business, and Microsoft Teams, from Office 365 ATP.|
 |64|AirInvestigation|Automated investigation and response events, such as investigation details and relevant artifacts, from Office 365 ATP Plan 2.|
 |
@@ -61,5 +63,4 @@ The following table summarizes the values of **AuditLogRecordType** that are rel
 [Office 365 threat investigation and response](office-365-ti.md)
 
 [Automated investigation and response (AIR) in Office 365](automated-investigation-response-office.md)
-
 
