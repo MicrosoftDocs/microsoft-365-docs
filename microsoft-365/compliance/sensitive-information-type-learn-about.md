@@ -51,6 +51,10 @@ Every sensitive information type entity is defined by these fields:
 
     - Confidence Level - Confidence levels (high, medium, low) reflect how much supporting evidence was detected along with the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.
 
+Learn more about confidence levels in this video
+
+
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  
 
 ### Example sensitive information type
 
