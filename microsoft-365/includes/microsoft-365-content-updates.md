@@ -405,7 +405,7 @@
 | 9/30/2020 | Anti-phishing capabilities in Microsoft Defender for Office 365 | removed |
 | 9/30/2020 | [ATP for SharePoint, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams?view=o365-21vianet) | modified |
 | 9/30/2020 | [Safe Attachments](/microsoft-365/security/office-365-security/atp-safe-attachments?view=o365-21vianet) | modified |
-| 9/30/2020 | Safe Links for Teams, safelinks, safe links, block malicious links, office 365 atp, Teams safe links, stop users from clicking bad links, malicious links | removed |
+| 9/30/2020 | Safe Links for Teams, safelinks, safe links, block malicious links, Defender for Office 365, Teams safe links, stop users from clicking bad links, malicious links | removed |
 | 9/30/2020 | Safe Links warning pages | removed |
 | 9/30/2020 | [Safe Links](/microsoft-365/security/office-365-security/atp-safe-links?view=o365-21vianet) | modified |
 | 9/30/2020 | [Campaign Views in Microsoft Defender for Office 365 Plan](/microsoft-365/security/office-365-security/campaigns?view=o365-21vianet) | modified |

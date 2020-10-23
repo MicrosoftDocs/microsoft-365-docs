@@ -98,7 +98,7 @@ This article lists new features in the latest release of Microsoft Defender for 
 
 ## Microsoft Defender for Office 365 Plan 1 and Plan 2
 
-Did you know that Microsoft Defender for Office 365 is available in two plans? [Learn more about what each plan includes](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
+Did you know that Microsoft Defender for Office 365 is available in two plans? [Learn more about what each plan includes](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
 ## See also
 

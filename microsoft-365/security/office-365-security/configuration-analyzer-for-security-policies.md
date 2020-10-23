@@ -42,8 +42,8 @@ The following types of policies are analyzed by the configuration analyzer:
   - Anti-phishing policies in Microsoft Defender for Office 365, which include:
 
     - The same [spoof settings](set-up-anti-phishing-policies.md#spoof-settings) that are available in the EOP anti-phishing policies.
-    - [Impersonation settings](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
-    - [Advanced phishing thresholds](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
+    - [Impersonation settings](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies)
+    - [Advanced phishing thresholds](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies)
 
   - [Safe Links policies](set-up-atp-safe-links-policies.md).
 

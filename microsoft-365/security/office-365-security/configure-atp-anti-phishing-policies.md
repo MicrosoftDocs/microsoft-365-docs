@@ -39,7 +39,7 @@ The difference between these two elements isn't obvious when you manage anti-phi
 - When you modify a policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the anti-phish rule. All other settings modify the associated anti-phish policy.
 - When you remove a policy, the anti-phish rule and the associated anti-phish policy are removed.
 
-In Exchange Online PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell to configure anti-phishing policies in Microsoft Defender for Office 365](#use-exchange-online-powershell-to-configure-atp-anti-phishing-policies) section later in this topic.
+In Exchange Online PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell to configure anti-phishing policies in Microsoft Defender for Office 365](#use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365) section later in this topic.
 
 Every Microsoft Defender for Office 365 organization has a built-in anti-phishing policy named Office365 AntiPhish Default that has these properties:
 
@@ -67,7 +67,7 @@ To increase the effectiveness of anti-phishing protection in Microsoft Defender 
     - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
     - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- For our recommended settings for anti-phishing policies in Microsoft Defender for Office 365, see [Anti-phishing policy in Defender for Office 365 settings](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings).
+- For our recommended settings for anti-phishing policies in Microsoft Defender for Office 365, see [Anti-phishing policy in Defender for Office 365 settings](recommended-settings-for-eop-and-office365-atp.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
 - Allow up to 30 minutes for a new or updated policy to be applied.
 
@@ -123,7 +123,7 @@ When you create an anti-phishing policy, you can only specify the policy name, d
 
 After you create the anti-phishing policy with these general settings, use the instructions in the next section to configure the protection settings in the policy.
 
-## Use the Security & Compliance Center to modify anti-phishing policies in Defender for Office 365
+## Use the Security & Compliance Center to modify anti-phishing policies in Microsoft Defender for Office 365
 
 Use the following procedures to modify anti-phishing policies: a new policy that you created, or existing policies that you've already customized.
 
@@ -137,7 +137,7 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
    - After you click **Edit** in a section, the available settings are presented in a wizard format, but you can jump within the pages in any order, and you can click **Save** on any page (or **Cancel** or **Close** ![Close icon](../../media/scc-remove-icon.png) to return to the **Edit your policy \<name\>** page (you aren't required to visit the last page of the wizard to save or leave).
 
-4. **Policy setting**: Click **Edit** to modify the same settings that were available when you [created the policy](#use-the-security--compliance-center-to-create-atp-anti-phishing-policies) in the previous section:
+4. **Policy setting**: Click **Edit** to modify the same settings that were available when you [created the policy](#use-the-security-&-compliance-center-to-create-anti-phishing-policies-in-microsoft-defender-for-office-365) in the previous section:
 
    - **Name**
    - **Description**
@@ -146,7 +146,7 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
    When you're finished, click **Save** on any page.
 
-5. **Impersonation**: Click **Edit** to modify the protected senders and protected domains in the policy. These settings are a condition for the policy that identifies spoofed senders to look for (individually or by domain) in the From address of inbound messages. For more information, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies).
+5. **Impersonation**: Click **Edit** to modify the protected senders and protected domains in the policy. These settings are a condition for the policy that identifies spoofed senders to look for (individually or by domain) in the From address of inbound messages. For more information, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies).
 
    - **Add users to protect**: The default value is **Off**. To turn it on, slide the toggle to **On**, and then click the **Add user** button that appears.
 
@@ -264,7 +264,7 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
    When you're finished, click **Save** on any page.
 
-7. **Advanced settings**: Click **Edit** to configure the advanced phishing thresholds. For more information, see [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies).
+7. **Advanced settings**: Click **Edit** to configure the advanced phishing thresholds. For more information, see [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies).
 
    - **Advanced phishing thresholds**: Select one of the following values:
 
@@ -287,7 +287,7 @@ The default anti-phishing policy in Microsoft Defender for Office 365 is named O
 
 2. On the **Anti-phishing** page, click **Default policy**.
 
-3. The **Edit your policy Office365 AntiPhish Default** page appears. The following sections are available, which contain identical settings for when you [modify a custom policy](#use-the-security--compliance-center-to-modify-atp-anti-phishing-policies):
+3. The **Edit your policy Office365 AntiPhish Default** page appears. The following sections are available, which contain identical settings for when you [modify a custom policy](#use-the-security-&-compliance-center-to-modify-anti-phishing-policies-in-microsoft-defender-for-office-365):
 
    - **Impersonation**
    - **Spoof**

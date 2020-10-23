@@ -26,10 +26,10 @@ Microsoft 365 Defender includes powerful [automated investigation and response c
 
 To configure automated investigation and response capabilities, follow these steps:
 
-1. [Review the prerequisites](#prerequisites-for-automated-investigation-and-response-in-microsoft-threat-protection).
+1. [Review the prerequisites](#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 2. [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups).
 3. [Review your security and alert policies in Office 365](#review-your-security-and-alert-policies-in-office-365).
-4. [Make sure Microsoft 365 Defender is turned on](#make-sure-microsoft-threat-protection-is-turned-on).
+4. [Make sure Microsoft 365 Defender is turned on](#make-sure-microsoft-365-defender-is-turned-on).
 
 Then, after you're all set up, [review pending and completed actions in the Action center](#review-pending-and-completed-actions-in-the-action-center). 
 

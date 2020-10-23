@@ -142,7 +142,7 @@ Additional security benefits come with an Microsoft Defender for Office 365 subs
 
 > [!IMPORTANT]
 >
-> - The default anti-phishing policy in Microsoft Defender for Office 365 provides [spoof protection](set-up-anti-phishing-policies.md#spoof-settings) for all recipients. However, the available [impersonation protection](#impersonation-settings-in-atp-anti-phishing-policies) settings for specific senders or sender domains are not configured or enabled in the default policy. To enable impersonation protection, configure the default policy or create additional anti-phishing policies in Defender for Office 365.
+> - The default anti-phishing policy in Microsoft Defender for Office 365 provides [spoof protection](set-up-anti-phishing-policies.md#spoof-settings) for all recipients. However, the available [impersonation protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) settings for specific senders or sender domains are not configured or enabled in the default policy. To enable impersonation protection, configure the default policy or create additional anti-phishing policies in Defender for Office 365.
 >
 > - There are no default Safe Links policies or Safe Attachments policies that automatically protect all recipients in the organization. To get the protections, you need to create at least one Safe Links Policy and Safe Attachments policy.
 >
@@ -156,7 +156,7 @@ EOP customers get basic anti-phishing as previously described, but Microsoft Def
 
 #### Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365
 
-For more information about these settings, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies). To configure these settings, see [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
+For more information about these settings, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). To configure these settings, see [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 ****
 
@@ -192,7 +192,7 @@ Note that these are the same settings that are available in [anti-spam policy se
 
 #### Advanced settings in anti-phishing policies in Microsoft Defender for Office 365
 
-For more information about this setting, see [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies). To configure this setting, see [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
+For more information about this setting, see [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies). To configure this setting, see [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 ****
 

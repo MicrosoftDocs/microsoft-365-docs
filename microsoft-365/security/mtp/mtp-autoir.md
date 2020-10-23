@@ -77,6 +77,6 @@ While an investigation is running, any other related alerts that arise are added
 
 ## Next steps
 
-- [See the prerequisites for automated investigation and response in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-threat-protection)
+- [See the prerequisites for automated investigation and response in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [Configure automated investigation and response for your organization](mtp-configure-auto-investigation-response.md)
 - [Learn more about the Action center](mtp-action-center.md)

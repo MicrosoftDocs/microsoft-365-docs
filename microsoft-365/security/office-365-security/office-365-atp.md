@@ -31,9 +31,9 @@ description: "Microsoft Defender for Office 365 includes safe attachments, safe 
 
 Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Defender for Office 365 includes:
 
-- **[Threat protection policies](#configure-atp-policies)**: Define threat-protection policies to set the appropriate level of protection for your organization.
+- **[Threat protection policies](#configure-microsoft-defender-for-office-365-policies)**: Define threat-protection policies to set the appropriate level of protection for your organization.
 
-- **[Reports](#view-office-365-atp-reports)**: View real-time reports to monitor Defender for Office 365  performance in your organization.
+- **[Reports](#view-microsoft-defender-for-office-365-reports)**: View real-time reports to monitor Defender for Office 365  performance in your organization.
 
 - **[Threat investigation and response capabilities](#use-threat-investigation-and-response-capabilities)**: Use leading-edge tools to investigate, understand, simulate, and prevent threats.
 
@@ -66,7 +66,7 @@ The following table summarizes what's included in each plan.
 
 |Microsoft Defender for Office 365 Plan 1|Microsoft Defender for Office 365 Plan 2|
 |---|---|
-|<br/>Configuration, protection, and detection capabilities: <ul><li>[Safe Attachments](atp-safe-attachments.md)</li><li>[Safe Links](atp-safe-links.md)</li><li>[ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Anti-phishing in Defender for Office 365 protection](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[Real-time detections](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:</li><li>[Threat Trackers](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Attack Simulator](attack-simulator.md)</li></ul>|
+|<br/>Configuration, protection, and detection capabilities: <ul><li>[Safe Attachments](atp-safe-attachments.md)</li><li>[Safe Links](atp-safe-links.md)</li><li>[ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Anti-phishing in Defender for Office 365 protection](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies)</li><li>[Real-time detections](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:</li><li>[Threat Trackers](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Attack Simulator](attack-simulator.md)</li></ul>|
 |
 
 - Microsoft Defender for Office 365 Plan 2 is included in Office 365 E5, Office 365 A5, Microsoft 365 E5 Security, and Microsoft 365 E5.
@@ -96,7 +96,7 @@ The policies that are defined for your organization determine the behavior and p
 
 - **[ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)**: Protects your organization when users collaborate and share files, by identifying and blocking malicious files in team sites and document libraries. To learn more, see [Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
-- **[Anti-phishing protection in Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)**: Detects attempts to impersonate your users and internal or custom domains. It applies machine learning models and advanced impersonation-detection algorithms to avert phishing attacks. To learn more, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+- **[Anti-phishing protection in Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**: Detects attempts to impersonate your users and internal or custom domains. It applies machine learning models and advanced impersonation-detection algorithms to avert phishing attacks. To learn more, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 ## View Microsoft Defender for Office 365 reports
 
@@ -108,7 +108,7 @@ Reports update in real-time, providing you with the latest insights. These repor
 
 - [Threat protection status report](view-reports-for-atp.md#threat-protection-status-report)
 
-- [Defender for Office 365 file types report](view-reports-for-atp.md#defender-for-office-365--file-types-report)
+- [Defender for Office 365 file types report](view-reports-for-atp.md#defender-for-office-365-file-types-report)
 
 - [Defender for Office 365 message disposition report](view-reports-for-atp.md#defender-for-office-365-message-disposition-report)
 
