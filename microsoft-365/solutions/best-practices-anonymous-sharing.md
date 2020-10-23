@@ -50,7 +50,7 @@ To set an expiration date for Anyone links on a specific site
 3. Select the site you want to change, and then click **Sharing**.
 4. Under **Advanced settings for Anyone links**, under **Expiration of Anyone links**, clear the **Same as organization-level setting** check box.</br>
    ![Screenshot of SharePoint site-level Anyone link expiration settings](../media/sharepoint-organization-anyone-link-expiration-site.png)
-5. Select the **These links must expire within this many days** options, and type a number of days in the box.
+5. Select the **These links must expire within this many days** option, and type a number of days in the box.
 6. Click **Save**.
 
 You can set *Anyone* link expiration for a specific OneDrive by using [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite).
@@ -61,7 +61,8 @@ By default, *Anyone* links for a file allow people to edit the file, and *Anyone
 
 If you want to allow unauthenticated sharing, but are concerned about unauthenticated people modifying your organization's content, consider setting the file and folder permissions to **View**.
 
-To set permissions for Anyone links
+To set permissions for Anyone links across the organization
+
 1. Open the SharePoint Online admin center.
 2. In the left navigation, click **Sharing**.
 3. Under **Advanced settings for "Anyone" links**, select the file and folder permissions that you want to use.</br>
@@ -75,11 +76,19 @@ When *Anyone* sharing is enabled for your organization, the default sharing link
 
 You can mitigate this risk by changing the default link setting to a link that only works for people inside your organization. Users who want to share with unauthenticated people would then have to specifically select that option.
 
-To set the default file and folder sharing link
+To set the default file and folder sharing link for the organization
 1. In the SharePoint admin center, in the left navigation, click **Sharing**.
 2. Under **File and folder links**, select **Only people in your organization**.</br>
    ![Screenshot of SharePoint default link type setting](../media/sharepoint-default-sharing-link-company-link.png)
 3. Click **Save**
+
+To set the default file and folder sharing link for a specific site
+1. Open the SharePoint Online admin center.
+2. In the left navigation, expand **Sites**, and then click **Active sites**.
+3. Select the site you want to change, and then click **Sharing**.
+4. Under **Default sharing link type**,  clear the **Same as organization-level setting** check box.</br>
+   ![Screenshot of SharePoint site-level default link type settings](../media/sharepoint-organization-anyone-link-permissions-site.png)
+5. Select the **Only people in your organization** option and click **Save**.
 
 ## Protect against malicious files
 
