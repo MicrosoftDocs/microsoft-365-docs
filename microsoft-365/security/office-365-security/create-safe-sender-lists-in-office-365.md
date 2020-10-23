@@ -66,7 +66,7 @@ The following example assumes you need email from contoso.com to skip spam filte
 
    > [!IMPORTANT]
    >
-   > - Never configure configure mail flow rules with *only* the sender domain as the condition to skip spam filtering. Doing so will *significantly* increase the likelihood that attackers can spoof the sending domain (or impersonate the full email address), skip all spam filtering, and skip sender authentication checks so the message will arrive in the recipient's Inbox.
+   > - Never configure mail flow rules with *only* the sender domain as the condition to skip spam filtering. Doing so will *significantly* increase the likelihood that attackers can spoof the sending domain (or impersonate the full email address), skip all spam filtering, and skip sender authentication checks so the message will arrive in the recipient's Inbox.
    >
    > - Do not use domains you own (also known as accepted domains) or popular domains (for example, microsoft.com) as conditions in mail flow rules. Doing so is considered high risk because it creates opportunities for attackers to send email that would otherwise be filtered.
    >
