@@ -18,11 +18,11 @@ description: "Understand how to use Microsoft Compliance Configuration Analyzer 
 
 # Microsoft Compliance Configuration Analyzer for Compliance Manager
 
-**In this article:** Learn how to install and run the the Microsoft Compliance Configure Analayzer tool to get quickly started with Compliance Manger.
+**In this article:** Learn how to install and run the Microsoft Compliance Configure Analyzer tool to get quickly started with Microsoft Compliance Manger.
 
-## Compliance Configuration Analyzer overview
+## Microsoft Compliance Configuration Analyzer (MCCA) overview
 
-The Microsoft Compliance Configuration Analyzer (MCCA) is a tool that can help you get started with [Microsoft Compliance Manager](compliance-manager.md). MCCA is a PowerShell-based utility that will fetch your organization’s current configurations and validate them against Microsoft 365 recommended best practices. These best practices are based on a set of controls that include key regulations and standards for data protection and general data governance.
+The Microsoft Compliance Configuration Analyzer (MCCA) is a tool that can help you get started with [Microsoft Compliance Manager](compliance-manager.md). MCCA is a PowerShell-based utility that will fetch your organization’s current configurations and validate them against Microsoft 365 recommended best practices. These best practices are based on a set of controls that include key regulations and standards for data protection and data governance.
 
 MCCA can help you quickly see which improvement actions in Compliance Manger apply to your current Microsoft 365 environment. Each action identified by MCCA will give you recommendations for implementation, with direct links to Compliance Manager and the applicable solution to start taking corrective action.
 
@@ -30,9 +30,9 @@ An additional resource for understanding MCCA is by visiting the [README instruc
 
 ## Install MCCC and run a report
 
-You can install the MCCA tool using [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7) version 5.1 or above. Once you download and install it, you don’t need to repeat those steps in order to run reports. Each time you open MCCA, it will ask you for your sign in credentials, and it will generate a new report that’s current as of that date.
+You can install the MCCA tool using [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/overview?view=powershell-7) version 5.1 or above. Once you download and install the tool, you don’t need to repeat those steps in order to run reports. Each time you open MCCA, it will ask you for your signin credentials, and it will generate a new, updated report.
 
-**Intstall**
+#### Install MCCA
 
 To install MCCA, start by using PowerShell in administrator mode. Follow the steps below:
 
@@ -44,21 +44,19 @@ To install MCCA, start by using PowerShell in administrator mode. Follow the ste
     Install-Module -Name MCCAPreview
     ```
 
-**Run a report**
+#### Run a report
 
-After you install the MCCA tool, you can run MCCA and generate a report. To run a report:
+After you install MCCA, you can run MCCA and generate a report. To run a report:
 
 1. Open PowerShell
-2. Run the cmd-let:
+2. Run the cmdlet:
 
     ```powershell
     Get-MCCAReport
     ```
-3. Once MCCA runs, it performs an initial version check and ask for credentials. At the Input the user name prompt, sign in with your Microsoft 365 account email address ([view the roles eligible to create reports](#role-based-reporting)). Then enter your password at the password prompt.
+3. Once MCCA runs, it does an initial version check and ask for credentials. At the Input the user name prompt, sign in with your Microsoft 365 account email address ([view the roles eligible to create reports](#role-based-reporting)). Then enter your password at the password prompt.
 
-Your report will then take approximately 2-5 minutes to generate. When it’s done, a browser window opens and displays your HTML report.
-
-Every time you run the tool, it will ask for your credentials and generate a new report. This report is stored locally in the following directory:
+Your report will then take approximately 2-5 minutes to generate. When it’s done, a browser window opens and displays your HTML report. Every time you run the tool, it will ask for your credentials and generate a new report. This report is stored locally in the following directory:
 
 C:\Users\<username>\AppData\Local\Microsoft\MCCA. 
 
@@ -72,14 +70,14 @@ Your report reflects data based on the date and time at which it was generated. 
 
 The **Note** section shows that your report is customized based on the geographic location of your tenant. Recommendations listed in the tool will be specific to your country or region.
 
-Your geolocation selection is used to assess Sensitive Information Types (SITs) which are relevant to that geolocation and generate a report for the same. You should choose geolocations based on data you have in your tenant.
+Your geolocation selection is used to assess Sensitive Information Types (SITs) which are relevant to that geolocation and generate a report for the same. Choose geolocations based on data you have in your tenant.
 
 To change the location of your report, you need provide a geolocation (-Geo) input parameter. You can choose either one or multiple geolocations applicable for your tenant.
 
 Follow these instructions to run a report based on a specific location:
 
 1. Open PowerShell
-2. To specify a certain region, you’ll run a cmd-let using the numbers from the table below that correspond to the region. Enter multiple numbers by separating them with a comma. For example, the cmd-let below will run a customized report for Asia-Pacific and Japan:
+2. To specify a certain region, you’ll run a cmdlet using the numbers from the table below that correspond to the region. Enter multiple numbers by separating them with a comma. For example, the cmdlet below will run a customized report for Asia-Pacific and Japan:
 
     ```powershell
     Get-MCCAReport -Geo @(1,7)
@@ -94,7 +92,7 @@ Follow these instructions to run a report based on a specific location:
 
 Your report will also be customized based on your role.
 
-The following table provides details of which roles will have access to which sections of the report. Other roles within the organization (not listed in the table below) may not be able to run the tool or they may be able to run the tool with limited information in the final report.
+The table below shows which roles have access to which sections of the report. Other roles within your organization (not listed in the table below) may not be able to run the tool, or they may run the tool and have limited access to information in the final report.
 
 ![MCCA - roles](../media/compliance-manager-mcca-roles.png "MCCA roles")
 
@@ -107,7 +105,7 @@ Exceptions:
 
 #### Solutions Summary section
 
-The **Solutions Summary** provides an overview of improvement actions your organization can take in Compliance Manager to help improve your compliance posture.
+The **Solutions Summary** section of the report gives an overview of improvement actions that your organization can take in Compliance Manager to help improve your compliance posture.
 
 ![MCCA - solutions summary](../media/compliance-manager-mcca-solutions.png "MCCA Solutions Summary screen")
 
@@ -117,7 +115,7 @@ Next to each Microsoft solution are color-coded boxes indicating the number of i
 
 - **OK**: the actions that meet recommended conditions and need no attention at this time
 - **Improvement**: actions that need attention
-- **Recommendation**: actions which don’t need attention or action, but for which we recommend best practices
+- **Recommendation**: actions that don’t need attention, but for which we recommend best practices
  
 Select a box to view improvements and recommendations.
 
