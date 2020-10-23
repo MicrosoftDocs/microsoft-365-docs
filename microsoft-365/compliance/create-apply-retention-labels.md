@@ -32,9 +32,9 @@ Retention labels help you retain what you need and delete what you don't at the 
 
 Making retention labels available to people in your organization so that they can classify content is a two-step process: 
 
-1. Create the retention labels
+1. Create the retention labels.
 
-2. Publish the retention labels by using a retention label policy
+2. Publish the retention labels by using a retention label policy.
   
 ![Diagram of roles and tasks for labels](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
 
