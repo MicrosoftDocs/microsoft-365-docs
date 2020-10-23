@@ -33,7 +33,7 @@ If your organization has [Office 365 Advanced Threat Protection](office-365-atp.
 
 With Explorer (or Real-time detections), you have a powerful report that enables your Security Operations team to investigate and respond to threats effectively and efficiently. The report resembles the following image:
 
-[ ![Go to Threat management \> Explorer](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png) ](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png#lightbox)
+![Go to Threat management \> Explorer](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 With this report, you can:
 
@@ -67,7 +67,7 @@ We now have Tags as a filter so you can hunt just across priority accounts, or s
 [ ![Filter Tags](../../media/tags-filter-normal.png) ](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![Not Filter Tags](../../media/tags-filter-not.png) ]
+> ![Not Filter Tags](../../media/tags-filter-not.png)
 
 #### Email Detail Flyout
 To view the individual tags for sender and Recipient, click on the subject. It opens the message details flyout. In the summary tab, sender and recipient tags are shown separately, if they are present for an email.
