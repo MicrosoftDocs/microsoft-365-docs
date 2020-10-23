@@ -3,7 +3,7 @@ title: "Network connectivity in the Microsoft 365 Admin Center (preview)"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,6 +13,7 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- m365initiative-coredeploy
 description: "Overview of network connectivity in the Microsoft 365 Admin Center (preview)"
 ---
 
@@ -26,9 +27,14 @@ The Microsoft 365 Admin Center now includes aggregated network connectivity metr
 
 ![Network performance page](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
+>[!NOTE]
+>The network connectivity test tool supports tenants in WW Commercial and Germany but not GCC Moderate, GCC High, DoD or China.
+
+When you first navigate to the network performance page, you will see an overview pane containing a map of global network performance, a network assessment scoped to the entire tenant, and a list of current issues. From the overview, you can drill down to view specific network performance metrics and issues by location. For more information, see [Network performance overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
+
 You may be asked to join the public preview for this feature on behalf of your organization. Acceptance usually happened immediately and then you will see the network connectivity page. 
 
-On navigating to the network connectivity page, you will see an overview pane containing a map of global network performance, a network assessment scoped to the entire tenant, and a list of current issues. To access this page you must be an administrator for the organization within Microsoft 365. The Report Reader administrative role will have read access to this information. To configure locations and other elements of network connectivity an administrator must be part of a server administrator role such as the Service support admin role. From the overview, you can drill down to view specific network performance metrics and issues by location. For more information, see [Network performance overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
+On navigating to the network connectivity page, you will see an overview pane containing a map of global network performance, a network assessment scoped to the entire tenant, and a list of current issues. To access this page you must be an administrator for the organization within Microsoft 365. The Report Reader administrative role will have read access to this information. To configure locations and other elements of network connectivity an administrator must be part of a server administrator role such as the Service support admin role. From the overview, you can drill down to view specific network performance metrics and issues by location. For more information, see [Network connectivity overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
 ## Pre-requisites for network connectivity assessments to appear
 
@@ -58,7 +64,7 @@ Measurement samples and office locations should start to appear 24 hours after t
 
 ### 3. Manually gather test reports with the Microsoft 365 network connectivity test tool
 
-For this option you need to identify a person at each location. Ask them to browse to [Microsoft 365 network connectivity test](https://connectivity.office.com) on a Windows machine that they have administrative permissions on. On the web site, they need to sign-in to their Office 365 account for the same organization that you want to see the results. Then they click Run test. During the test there is a downloaded Connectivity test EXE. They need to open and execute that also. Once the tests are completed, the test result is uploaded to Office 365.
+For this option you need to identify a person at each location. Ask them to browse to [Microsoft 365 network connectivity test](https://connectivity.office.com) on a Windows machine on which they have administrative permissions. On the web site, they need to sign-in to their Office 365 account for the same organization that you want to see the results. Then they should click **Run test**. During the test there is a downloaded Connectivity test EXE. They need to open and execute that also. Once the tests are completed, the test result is uploaded to Office 365.
 
 Test reports are linked to a location if it was added with LAN subnet information, otherwise they are shown at the city location only.
 
@@ -147,8 +153,8 @@ In the CSV file a discovered city location shows in the userEntered column as bl
    1. **Address** (required): The physical address of the office
    1. **Latitude** (optional): Populated from Bing maps lookup of the address if blank
    1. **Longitude** (optional): Populated from Bing maps lookup of the address if blank
-   1. **Egress IP Address ranges 1-5** (optional): For each range, enter the circuit name followed by a space separated list of valid IPv4 or IPv6 CIDR addresses. These values are used to differentiate multiple office locations where you use the same LAN subnet IP Addresses.
-   1. **LanIps** (required): List the LAN subnet ranges in use at this office location.
+   1. **Egress IP Address ranges 1-5** (optional): For each range, enter the circuit name followed by a space separated list of valid IPv4 or IPv6 CIDR addresses. These values are used to differentiate multiple office locations where you use the same LAN subnet IP Addresses. Egress IP Address ranges all must be /24 network size and the /24 is not included in the input.
+   1. **LanIps** (required): List the LAN subnet ranges in use at this office location. LAN subnet IDs need to have a CIDR network size included where the network size can be between /8 and /29. Multiple LAN subnet ranges can be separated by a comma or a semicolon.
 1. When you have added your office locations and saved the file, click the **Browse** button next to the **Upload the completed** field and select the saved CSV file.
 1. The file will be automatically validated. If there are validation errors, you will see the error message _There are some errors in the import file. Review the errors, correct the import file, and then try again._ Click the link **Open error details** for a list of specific field validation errors.
 
@@ -169,7 +175,7 @@ The Microsoft 365 service front door is an entry point on Microsoft's global net
 
 ### What is an optimal Microsoft 365 service front door?
 
-An optimal Microsoft 365 service front door is one that is closest to your network egress, generally in your city or metro area. Use the [Microsoft 365 connectivity test](office-365-network-mac-perf-onboarding-tool.md) to determine location of your in-use Microsoft 365 service front door and optimal service front door. If the tool determines your in-use front door is optimal, then you are optimally connecting into Microsoft's global network.
+An optimal Microsoft 365 service front door is one that is closest to your network egress, generally in your city or metro area. Use the [Microsoft 365 connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md) to determine location of your in-use Microsoft 365 service front door and optimal service front door. If the tool determines your in-use front door is optimal, then you are optimally connecting into Microsoft's global network.
 
 ### What is an internet egress location?
 
@@ -181,8 +187,6 @@ The internet egress location is the location where your network traffic exits yo
 
 [Microsoft 365 network assessment (preview)](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 connectivity test in the M365 Admin Center (preview)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)
-
-[Microsoft 365 network connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)

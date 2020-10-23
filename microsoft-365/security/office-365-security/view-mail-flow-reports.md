@@ -22,6 +22,9 @@ ms.custom:
 
 # View mail flow reports in the Reports dashboard in Security & Compliance Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 In addition to the mail flow reports that are available in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center, a variety of additional mail flow reports are available in the Reports dashboard to help you monitor your Microsoft 365 organization.
 
 If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the [Security & Compliance Center](https://office.protection.com) by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
@@ -312,13 +315,23 @@ The data table contains the following information, shown in descending date orde
 
 - **Date**
 - **Total email**
-- **Edge protection**
-- **Anti-malware, file reputation, file type block**
-- **Anti-phish, URL reputation, Brand impersonation, anti-spoof**
-- **Anti-spam, bulk mail filtering**
-- **User and domain impersonation (ATP)**
-- **File and URL detonation (ATP)**
-- **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**
+- **Edge protection** 
+- **Anti-malware, file reputation, file type block**:
+  - **File reputation**: Messages filtered due to identification of an attached file by other Microsoft customers.
+  - **File type block**: Messages filtered due to the type of malicious file identified in the message.      
+- **Anti-phish, URL reputation, Brand impersonation, anti-spoof**:
+  - **URL reputation**: Messages filtered due to the identification of the URL by other Microsoft customers.
+  - **Brand impersonation**: Messages filtered due to the message coming from well-known brand impersonating senders.
+  - **Anti-spoof**: Messages filtered due to the message attempting to spoof a domain that the recipient belongs to, or a domain that the message sender doesn't own.  
+- **Anti-spam, bulk mail filtering**:
+  - **Bulk mail filtering**: Messages filtered due to an attempt to deliver bulk mail to its recipients. 
+- **User and domain impersonation (ATP)**:
+  - **User impersonation**: Messages filtered due to an attempt to impersonate a user (message sender) that's defined in the impersonation protection settings of an anti-phishing policy.
+  - **Domain impersonation**: Messages filtered due to an attempt to impersonate a domain that's defined in the impersonation protection settings of an anti-phishing policy. 
+- **File and URL detonation (ATP)**:
+  - **File detonation**: Messages filtered by a Safe Attachments policy.
+  - **URL detonation**: Message filtered by a Safe Links policy.  
+- **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**: ZAP indicates zero hour auto-purge.
 
 If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.
 
@@ -370,8 +383,10 @@ The data table contains the following information, shown in descending date orde
 - **Date**
 - **Total email**
 - **Edge filtered**
-- **Anti-malware engine, safe attachments, rule filtered**
-- **DMARC, impersonation, spoof, phish filtered**
+- **Anti-malware engine, safe attachments, rule filtered**:
+  - **Rule filtered**: Messages filtered due to  mail flow rules (also known as transport rules).
+- **DMARC, impersonation, spoof, phish filtered**:
+  - **DMARC**: Messages filtered due to the message failing its DMARC authentication check. 
 - **URL detonation detection**
 - **Anti-spam filtered**
 - **ZAP removed**

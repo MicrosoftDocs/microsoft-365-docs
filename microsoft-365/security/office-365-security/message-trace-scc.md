@@ -17,6 +17,9 @@ description: "Admins can use message trace in the Security & Compliance Center t
 
 # Message trace in the Security & Compliance Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 ## Message trace features
 
 Message trace in the Security & Compliance Center follows email messages as they travel through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.

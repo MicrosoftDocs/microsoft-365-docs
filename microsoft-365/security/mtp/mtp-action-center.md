@@ -16,6 +16,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
@@ -23,6 +24,9 @@ ms.date: 09/16/2020
 ---
 
 # The Action center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 - Microsoft Threat Protection

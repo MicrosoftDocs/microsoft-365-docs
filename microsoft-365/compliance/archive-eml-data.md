@@ -11,15 +11,14 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Admins can set up a connector to import and archive EML data from Globanet into Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive EML data (preview)
+# Set up a connector to archive EML data
 
 Use a Globanet connector in the Microsoft 365 compliance center to import and archive EML data to user mailboxes in your Microsoft 365 organization. EML is the file extension for an email message saved to a file. The connector converts the content of an item from the source format to an email message format and then imports the item to a user mailbox.
 
-After EML messages are stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using an EML connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+After EML messages are stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, and retention policies and retention labels. Using an EML connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 ## Overview of archiving EML data
 
@@ -67,7 +66,7 @@ To map users and complete the connector setup in the Microsoft 365 compliance ce
 
 1. On the **Map external users to Microsoft 365 users** page, enable automatic user mapping. The EML source items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the EML items are imported to that user’s mailbox.
 
-2. On the **Admin Consent** page, click the **Provide Consent** button. You will be redirected to the Microsoft site. Click **Accept** to provide the consent.
+2. On the **Admin Consent** page, click **Provide Consent**. You will be redirected to the Microsoft site. Click **Accept** to provide the consent.
 
    Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. To provide admin consent, you must be signed in with the credentials of a Microsoft 365 global admin, and then accept the consent request. If you aren't signed in as a global admin, you can go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign in using global admin credentials to accept the request.
 
@@ -85,4 +84,4 @@ After you create the EML connector, you can view the connector status in the Mic
 
 ## Known issues
 
-- At this time, we don't support importing attachments larger than 10 MB but support for larger items will be available at a later date.
+- At this time, we don't support importing attachments or items that are larger than 10 MB. Support for larger items will be available at a later date.

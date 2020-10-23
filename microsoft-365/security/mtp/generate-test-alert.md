@@ -15,11 +15,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ---
 
 # Generate a test alert in your Microsoft Threat Protection evaluation lab  
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 - Microsoft Threat Protection

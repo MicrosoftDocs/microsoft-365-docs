@@ -11,7 +11,7 @@ manager: laurawi
 ms.topic: article
 ---
 
-# Install Intune Company Portal on on devices
+# Install Intune Company Portal on devices
 
 Microsoft Managed Desktop requires that IT administrators install Intune Company Portal for their users with Microsoft Managed Desktop devices. Here are some benefits for your organization:
 - Users have one place to browse and install available applications. 

@@ -1,9 +1,9 @@
 ---
-title: "Microsoft 365 network connectivity test (preview)"
+title: "Microsoft 365 network connectivity test tool (preview)"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,10 +13,10 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: "Microsoft 365 network connectivity test (preview)"
+description: "Microsoft 365 network connectivity test tool (preview)"
 ---
 
-# Microsoft 365 network connectivity test (preview)
+# Microsoft 365 network connectivity test tool (preview)
 
 The Microsoft 365 network connectivity test tool is located at <https://connectivity.office.com>. It is an adjunct tool to the network assessment and network insights information available in the Microsoft 365 admin center under the **Health | Connectivity** menu.
 
@@ -200,7 +200,7 @@ This tests for UDP connectivity to the Microsoft Teams service front door. If th
 
 Shows the UDP packet loss measured in a 10 second test audio call from the client to the Microsoft Teams service front door. This should be lower than **1.00%** for a pass.
 
-### Latency
+#### Latency
 
 Shows the measured UDP latency, which should be lower than **100ms**.
 
@@ -244,7 +244,7 @@ It is currently a preview and we plan to provide updates regularly until we reac
 
 ### What is required to run the advanced test client?
 
-The advanced test client requires .NET Core 3.1 Desktop Runtime. If you run the advanced test client without that installed you will be directed to [the .NET Core 3.1 installer page](https://dotnet.microsoft.com/download/dotnet-core/3.1). Be sure to install the Desktop Runtime and not the SDK, or the ASP.NET Core Runtime which are higher up on the page. Administrator permissions on the machine is required to install .NET Core. 
+The advanced test client requires .NET Core 3.1 Desktop Runtime. If you run the advanced test client without that installed you will be directed to [the .NET Core 3.1 installer page](https://dotnet.microsoft.com/download/dotnet-core/3.1). Be sure to install the Desktop Runtime and not the SDK, or the ASP.NET Core Runtime which are higher up on the page. Administrator permissions on the machine is required to install .NET Core.
 
 ### What is Microsoft 365 service front door?
 
@@ -262,7 +262,7 @@ The internet egress Location is the location where your network traffic exits yo
 
 ## Related topics
 
-[Network performance recommendations in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
+[Network connectivity in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 network performance insights (preview)](office-365-network-mac-perf-insights.md)
 
