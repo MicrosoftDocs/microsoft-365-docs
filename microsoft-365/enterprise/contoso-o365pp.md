@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -36,7 +35,7 @@ Based on their requirements, Contoso chose to deploy Windows 10 Enterprise and M
 - Intelligent language pack deployment, including automatically deploying the same language as the operating system.
 - A fully supported and easy-to-use method of removing existing versions of Office from a client during deployment.
 
-In addition to Configuration Manager, Contoso used the [Readiness Toolkit for Office add-in and VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), a free tool from Microsoft, to assess compatibility issues with their Office macros and add-ins.
+In addition to Configuration Manager, Contoso used the [Readiness Toolkit for Office add-ins and VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), a free tool from Microsoft, to assess compatibility issues with their Office macros and add-ins.
 
 ## Managing deployment and updates
 
@@ -75,7 +74,7 @@ Here is the Contoso Microsoft 365 Apps for enterprise installation and ongoing u
  
 ## Next step
 
-[Learn](contoso-mdm.md) how Contoso is using Microsoft Intune in Microsoft 365 for enterprise to manage its devices and the apps that they run across the organization.
+Learn how Contoso is [using Microsoft Intune](contoso-mdm.md) in Microsoft 365 for enterprise to manage its devices and the apps that they run across the organization.
 
 ## See also
 
