@@ -55,17 +55,36 @@ In the **Metrics & trends** tab, there are several graphs and charts to give you
 
 ### Compare your score to organizations like yours
 
-There are two places to see how your score compares to organizations that are similar to you.
+There are two places to see how your score compares to organizations that are similar to you. In both charts, you can select **Manage comparisons** to view and edit your organization's information. You can also create a custom comparison based on industry, organization size, licenses, and regions.
 
-The first place is in the **Overview** tab, where you can see a comparison bar graph. Hover over the chart to view the score and score opportunity.
+#### Comparison bar chart
+
+The comparison bar chart is the **Overview** tab. Hover over the chart to view the score and score opportunity. The comparison data is anonymized so we don’t know exactly which others tenant are in the mix.
 
 ![Bar graph of similar organization's scores](../../media/secure-score/secure-score-comparison-bar.png)
 
-The second place is in the **Metrics & trends** tab, where you can view how your organization's Secure Score compares to others' over time.
+- **Organizations like yours**: we give you an average score of other tenants (provided we have at least 5 or more tenants to compare) that qualify with the following criteria:
+    1. Same industry
+    2. Same organization size
+    3. All regions
+    4. Microsoft products used are 80% similar
+    5. Opportunity (max score that can be achieved by current license) within a 20% range from your tenant
+
+- **Custom Comparison**: needs to be setup up first by selecting **Manage Comparison** (only if we find 5 or more tenants) based on the following criteria:
+    1. Selected industry(s)
+    2. Selected organization size(s)
+    3. Selected region(s)
+    4. Selected license(s)
+    5. Microsoft products used are 80% similar
+    6. Opportunity (max score that can be achieved by current license) within a 20% range from your tenant
+
+If you have not made a selection for custom selection of the selection result in getting less than 5 other tenants that we can compare against, you will see “Not available due to limited data”.
+
+#### Comparison trend
+
+In the **Metrics & trends** tab, view how your organization's Secure Score compares to others' over time.
 
 ![Line graph of similar organization's scores over time](../../media/secure-score/secure-score-comparison-trend.png)
-
-In both charts, you can select **Manage comparisons** to view and edit your organization's information. You can also create a custom comparison based on industry, organization size, licenses, and regions.
 
 ## We want to hear from you
 
