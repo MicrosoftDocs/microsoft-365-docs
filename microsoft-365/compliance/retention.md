@@ -287,19 +287,7 @@ Some organizations might need to comply with rules defined by regulatory bodies 
 
 Preservation Lock ensures your organization can meet such regulatory requirements because it locks a retention policy or retention label policy so that no one—including the administrator—can turn off the policy, delete the policy, or make it less restrictive.
   
-When a policy for retention is locked:
-
-- No one can turn it off
-- Locations can be added but not removed
-- Content subject to the policy can't be modified or deleted during the retention period
-- You can extend a retention period but not decrease it
-
-In summary, a locked policy for retention can be increased or extended, but it can't be reduced or turned off.
-  
-> [!IMPORTANT]
-> Before you lock a retention policy or retention label policy, it's critical that you understand the impact and confirm whether it's required for your organization to meet regulatory requirements. Administrators won't be able to disable or delete these policies after the preservation lock is applied.
-
-You apply Preservation Lock after the retention policy or retention label is created, by using PowerShell. For instructions, see [retention-regulatory-requirements.md#how-to-lock-a-retention-policy-or-retention-label-policy].
+You apply Preservation Lock after the retention policy or retention label policy is created. For more information and instructions, see [Configure retention policies and retention labels for regulatory requirements](retention-regulatory-requirements.md).
 
 ## Releasing a policy for retention
 

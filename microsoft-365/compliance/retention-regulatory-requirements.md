@@ -34,13 +34,23 @@ Use the following features and resources to help your organization meet its regu
 
 ## Retention policies and label policies: Use Preservation Lock
 
-When you apply Preservation Lock to a retention policy or retention label policy, the policy can be increased or extended, but it can't be reduced or turned off, even by a global admin.
+Preservation Lock locks a retention policy or retention label policy so that no one—including the administrator—can turn off the policy, delete the policy, or make it less restrictive.
 
-For more information about Preservation Lock, see [Use Preservation Lock to comply with regulatory requirements](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
+When a policy for retention is locked:
+
+- No one can turn it off
+- Locations can be added but not removed
+- Content subject to the policy can't be modified or deleted during the retention period
+- You can extend a retention period but not decrease it
+
+In summary, a locked policy for retention can be increased or extended, but it can't be reduced or turned off.
+  
+> [!IMPORTANT]
+> Before you lock a retention policy or retention label policy, it's critical that you understand the impact and confirm whether it's required for your organization to meet regulatory requirements. Administrators won't be able to disable or delete these policies after the preservation lock is applied.
 
 For instructions, see the next section.
 
-## How to lock a retention policy or retention label policy
+### How to lock a retention policy or retention label policy
 
 You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) to comply with regulatory requirements. Because administrators can't disable or delete a policy for retention after a preservation lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.
 
@@ -84,11 +94,11 @@ For additional security, you can apply Preservation Lock to the retention label 
 
 For more information about regulatory records, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
-For instructions, see [Declare records by using retention labels](declare-records.md).
+For instructions to configure retention labels for regulatory records, see [Declare records by using retention labels](declare-records.md).
 
 ## Cohasset assessment 
 
-To help you comply with your regulatory requirements, you can download an assessment that's been produced in partnership with Cohasset Associates. 
+To help you comply with your regulatory requirements, you can download an assessment for Exchange Online that's been produced in partnership with Cohasset Associates. 
 
 This Cohasset assessment is available from the [Data Protection Resources, FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) page of the Service Trust Portal.
 
