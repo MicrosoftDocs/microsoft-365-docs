@@ -34,7 +34,7 @@ Use the following features and resources to help your organization meet its regu
 
 ## Retention policies and label policies: Use Preservation Lock
 
-Preservation Lock locks a retention policy or retention label policy so that no one—including the administrator—can turn off the policy, delete the policy, or make it less restrictive.
+Preservation Lock locks a retention policy or retention label policy so that no one—including a global admin—can turn off the policy, delete the policy, or make it less restrictive.
 
 When a policy for retention is locked:
 
