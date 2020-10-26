@@ -74,7 +74,7 @@ If you want to limit sharing by domain at a higher level than SharePoint and One
 You can restrict sharing of files, folders, and sites with people outside your organization to members of a specific security group. This is useful if you want to enable external sharing, but with an approval workflow or request process.
 
 To limit external sharing to members of a security group
-1. In the SharePoint admin center, in the left navigation, click **Sharing**.
+1. In the [SharePoint admin center](https://admin.microsoft.com/sharepoint), in the left navigation, click **Sharing**.
 2. Under **Other settings**. follow the **Limit external sharing to specific security groups** link.
 3. Under **Who can share outside your organization**, select one or both of the check boxes:
     a. **Let only users in selected security groups share with authenticated external users** to specify a security group that can share with authenticated users
