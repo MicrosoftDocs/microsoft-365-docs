@@ -57,7 +57,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |Quarantine retention period <br/><br/> _QuarantineRetentionPeriod_|15 days|30 days|30 days||
 |**Safety Tips** <br/><br/> _InlineSafetyTipsEnabled_|On <br/><br/> `$true`|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |Allowed Senders <br/><br/> _AllowedSenders_|None|None|None||
-|Allowed Sender Domains <br/><br/> _AllowedSenderDomains_|None|None|None|Adding domains that you own (_accepted domains_) to the allowed senders list is a very bad idea. Attackers would be able to send you email that would otherwise be filtered out. <br/><br/> Use [spoof intelligence](learn-about-spoof-intelligence.md) in the Security & Compliance Center on the **Anti-spam settings** page to review all senders who are spoofing sender email addresses in your organization's email domains or spoofing sender email addresses in external domains.|
+|Allowed Sender Domains <br/><br/> _AllowedSenderDomains_|None|None|None|Adding domains to the allowed senders list is a very bad idea. Attackers would be able to send you email that would otherwise be filtered out. <br/><br/> Use [spoof intelligence](learn-about-spoof-intelligence.md) in the Security & Compliance Center on the **Anti-spam settings** page to review all senders who are spoofing sender email addresses in your organization's email domains or spoofing sender email addresses in external domains.|
 |Blocked Senders <br/><br/> _BlockedSenders_|None|None|None||
 |Blocked Sender Domains <br/><br/> _BlockedSenderDomains_|None|None|None||
 |**Enable end-user spam notifications** <br/><br/> _EnableEndUserSpamNotifications_|Disabled <br/><br/> `$false`|Enabled <br/><br/> `$true`|Enabled <br/><br/> `$true`||
