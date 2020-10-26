@@ -141,7 +141,7 @@ For more information about these options, see the following guidance from the DL
 
 To consider when using this method to auto-apply retention labels:
 
-- New and modified items are labeled but not existing items.
+- New, modified, and existing items can be labeled.
 
 #### Auto-apply labels to content with keywords or searchable properties
 
@@ -151,13 +151,15 @@ You can auto-apply labels to content by using a query that contains specific wor
 
 For more information about the query syntax that uses Keyword Query Language (KQL), see [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-Query-based labels use the search index to identify content. For more information about the searchable properties that you can use, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md). 
+Query-based labels use the search index to identify content. For more information about the searchable properties that you can use, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
 
 Some things to consider when using this method to auto-apply retention labels:
 
-- Unlike the other methods to auto-apply labels, all items can be labeled with no time restrictions when they were created.
+- New, modified, and existing items can be labeled.
 
 - For SharePoint, crawled properties and custom properties aren't supported for these KQL queries and you must use only predefined managed properties. However, you can use mappings at the tenant level with the predefined managed property by using RefinableString00 to RefinableString199. For more information, see [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview), and for instructions, see [Create a new managed property](https://docs.microsoft.com/sharepoint/manage-search-schema#create-a-new-managed-property).
+
+- If you map a custom property to one of the refinable string properties, wait 24 hours before you use it in your KQL query for a retention label.
 
 - Although SharePoint managed properties can be renamed by using aliases, don't use these for KQL queries in your labels. Always specify the actual name of the managed property, for example, "RefinableString01".
 
@@ -174,7 +176,7 @@ Examples queries:
 |:-----|:-----|
 |Exchange   | `subject:"Financial Statements"` |
 |Exchange   | `recipients:garthf@contoso.com` |
-|SharePoint | `contenttype:contract` |
+|SharePoint | `contenttype:document` |
 |SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
 
 More complex examples:
@@ -182,7 +184,7 @@ More complex examples:
 The following query for SharePoint identifies Word documents or Excel spreadsheets when those files contain the keywords **password**, **passwords**, or **pw**:
 
 ```
-password OR passwords OR pw AND (fileextension: .doc* OR fileextension: .xls*)  
+(password OR passwords OR pw) AND (fileextension: .doc* OR fileextension: .xls*)  
 ```
 The following query for Exchange identifies any Word document or PDF that contains the word **nda** or the phrase **non disclosure agreement** when it is attached to an email:
 
@@ -208,6 +210,8 @@ The following query contains typical keywords to help identify documents or emai
 resume staff employee salary recruitment candidate
 ```
 
+> [!TIP]
+> For a complete list of the many SharePoint properties that you use, view the managed property list in the search schema for your tenant. For instructions, see the [View crawled properties and managed properties](https://docs.microsoft.com/sharepoint/manage-search-schema#view-crawled-properties-and-managed-properties) section from the SharePoint documentation. From the list, you can use any property name that displays **Query** in the **Query** column. 
 
 ##### Microsoft Teams meeting recordings
 
