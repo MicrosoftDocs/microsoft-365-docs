@@ -27,7 +27,7 @@ ms.custom:
 
 >[!CAUTION]
 >**The preview period for the ServiceNow connector is ending**<br>
->This capability will no longer available by the end of 2020. Thank you for your feedback and continued support while we determine next steps.
+>This capability will no longer available by the end of November 2020. Thank you for your feedback and continued support while we determine next steps.
 
 The [Microsoft 365 security center](overview-security-center.md) has been enhanced with the ability to natively create and track tickets in ServiceNow. [Learn more about ServiceNow](https://www.servicenow.com/)
 
