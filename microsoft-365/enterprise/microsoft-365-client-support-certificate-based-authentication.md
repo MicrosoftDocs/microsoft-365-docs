@@ -28,7 +28,7 @@ Learn more about [certificate-based authentication](https://docs.microsoft.com/a
 
 ## Supported clients & platforms
 
-The latest versions of the following clients support certificate-based authentication. For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+The latest versions of the following clients and platforms support certificate-based authentication. For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 <br>
 <br>
 
@@ -65,7 +65,7 @@ The latest versions of the following clients support certificate-based authentic
 | SharePoint Online Admin | Planned | Planned | N/A | N/A | N/A |
 | Sticky Notes | N/A | N/A | N/A | ![Supported](../media/check-mark.png) | N/A |
 | Stream | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |
-| Sway | N/A | N/A | N/A | ![Supported](../media/check-mark.png) |  |
+| Sway | N/A | N/A | N/A | ![Supported](../media/check-mark.png) | N/A |
 | Teams | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | Planned |
 | To Do | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A |
 | Visio | N/A | ![Supported](../media/check-mark.png) | N/A | N/A | ![Supported](../media/check-mark.png) |
