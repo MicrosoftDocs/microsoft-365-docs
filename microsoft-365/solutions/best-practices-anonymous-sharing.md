@@ -93,14 +93,18 @@ To set the default file and folder sharing link for a specific site
 
 ## Protect against malicious files
 
-When you allow anonymous users to upload files, you're at an increased risk of someone uploading a malicious file. In Microsoft 365, you can use the *safe attachments* feature in Advanced Threat Protection to automatically scan uploaded files and quarantine files that are found to be unsafe.
+When you allow anonymous users to upload files, you're at an increased risk of someone uploading a malicious file. In Microsoft 365, you can use the *Safe Attachments* feature in Advanced Threat Protection to automatically scan uploaded files and quarantine files that are found to be unsafe.
 
 To turn on safe attachments
-1. Open the [Microsoft 365 security](https://security.microsoft.com) admin center.
-2. In the left navigation, click **Policies**.
-3. Under **Threat protection**, click **ATP safe attachments (Office 365)**.
-4. Select the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** check box, and then click **Save**.</br>
+1. Open the [ATP Safe Attachments page](https://protection.office.com/safeattachmentv2) in the Security and Compliance admin center.
+2. Click **Global settings**.
+3. Turn on ATP for SharePoint, OneDrive, and Microsoft Teams.
+
    ![Screenshot of the safe attachments setting in the Security and Compliance center](../media/safe-attachments-setting.png)
+
+4. Optionally turn on Safe Documents as well, and then click **Save**
+
+See [ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams) and [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams) for additional guidance.
 
 ## Add copyright information to your files
 
