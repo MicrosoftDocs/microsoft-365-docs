@@ -28,24 +28,24 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
 1. Uninstall the **EdmUploadAgent.exe** from the computer that you use to connect to Microsoft 365 for EDM schema and data file upload purposes.
 
 2. Download the appropriate **EdmUploadAgent.exe** file for your subscription using the links below:
-    - [Commercial + GCC](https://go.microsoft.com/fwlink/?linkid=2088639)
-    - [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521)
-    - [DoD](https://go.microsoft.com/fwlink/?linkid=2137807)
+    - [Commercial + GCC](https://go.microsoft.com/fwlink/?linkid=2088639) - most commercial customers should use this
+    - [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521) - This is specifically for high security government cloud subscribers
+    - [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) - this is specifically for United States Department of Defense cloud customers.
 
 3. Authorize the EDM Upload Agent, open Command Prompt window (as an administrator) and run the following command:
 
    `EdmUploadAgent.exe /Authorize`
 
-4. You'll need to download a copy of the existing schema, run this command:
+4. If you don't have a current copy of the existing schema, you'll need to download a copy of the existing schema, run this command:
 
     `EdmUploadAgent.exe /SaveSchema /DataStoreName <dataStoreName>`
 
 5. Customize the schema so each column utilizes “caseInsensitive” and / or “ignoredDelimiters”.  The default value for “caseInsensitive” is “false” and for “ignoredDelimiters”, it is an empty string. 
 
 > [!NOTE]
-> The underlying custom sensitive information type or built in sensitive information type used to detect the general regex pattern must support detection of the variations inputs listed with ignoredDelimiters. For example, the built in U.S. social security number (SSN) sensitive information type can detect variations in the data that include dashes, spaces, or lack of spaces between the grouped numbers that make up the SSN. As a result, the only delimiters that are relevant to include in EDM’s ignoredDelimiters are: dash and space.
+> The underlying custom sensitive information type or built in sensitive information type used to detect the general regex pattern must support detection of the variations inputs listed with ignoredDelimiters. For example, the built in U.S. social security number (SSN) sensitive information type can detect variations in the data that include dashes, spaces, or lack of spaces between the grouped numbers that make up the SSN. As a result, the only delimiters that are relevant to include in EDM’s ignoredDelimiters for SSN data are: dash and space.
 
-Here is a sample schema that a customer must modify to create columns to account for different variations in the data (in this case, to simulate case insensitive match)
+Here is a sample schema that simulates case insensitive match by creating the extra columns needed to recognize case variations in the sensitive data.
 
 ```xml
 <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -70,7 +70,7 @@ To update this schema so that EDM uses configurable match use the `caseInsensiti
 </EdmSchema>
 ```
 
-The `ignoredDelimiters` flag can take any non-alphanumeric character, here are some examples:
+The `ignoredDelimiters` flag supports any non-alphanumeric character, here are some examples:
 - \.
 - \-
 - \/
@@ -88,7 +88,7 @@ The `ignoredDelimiters` flag can take any non-alphanumeric character, here are s
 - \~
 - \;
 
-The `ignoredDelimiters` flag will not take:
+The `ignoredDelimiters` flag doesn't support:
 - characters 0-9
 - A-Z
 - a-z
