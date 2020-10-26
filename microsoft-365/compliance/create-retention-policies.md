@@ -48,7 +48,7 @@ Although a retention policy can support multiple locations, you can't create a s
 - Yammer community messages
 - Yammer private messages
 
-If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. Therefore, the instructions to follow depend on whether you need to include the Teams or Yammer locations:
+If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. Therefore, which instructions to follow depends on whether you need to include the Teams or Yammer locations:
 
 - [Instructions for a retention policy for Teams locations](#retention-policy-for-teams-locations)
 - [Instructions for a retention policy for Yammer locations](#retention-policy-for-yammer-locations)
@@ -176,9 +176,10 @@ When you choose the **SharePoint sites** location, the retention policy can reta
 
 Although the retention policy is applied at the site level, only documents have retention settings applied to them. Retention settings do not apply to the organizing structures that include libraries, lists, and folders within the site.
 
-When you specify your locations for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites and no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites must be indexed and the sites that you specify are checked that they exist at the end of the wizard.
+When you specify your locations for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites and no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites that you specify are checked that they exist at the end of the wizard. If this check fails, you see a message that validation failed for the URL you entered, and the wizard won't create the retention policy until the validation check passes. If you see this message, go back in the wizard to change the URL or remove the site from the retention policy.
 
-If this check fails, you see a message that validation failed for the URL you entered, and the wizard won't create the retention policy until the validation check passes. If you see this message, go back in the wizard to change the URL or remove the site from the retention policy.
+> [!NOTE]
+> SharePoint sites must be indexed for the retention settings to be applied. However, if items in SharePoint document libraries are configured to not appear in search results, this configuration doesn't exclude the items from the retention settings.
 
 To specify individual OneDrive accounts to include or exclude, the URL has the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 
@@ -248,7 +249,7 @@ So before you assign a retention policy for the first time, and especially when 
 
 When you choose locations, with the exception of Skype for Business, the default setting is **All** when the status of the location is **On**.
 
-When a retention policy applies to any combination of entire locations, there is no limit to the number of recipients, sites, accounts, groups etc that the policy can include.
+When a retention policy applies to any combination of entire locations, there is no limit to the number of recipients, sites, accounts, groups, etc., that the policy can include.
 
 For example, if a policy includes all Exchange email and all SharePoint sites, all sites and recipients will be included, no matter how many. And for Exchange, any new mailbox created after the policy is applied will automatically inherit the policy.
 
@@ -293,7 +294,7 @@ All retention policies with any configuration support Preservation Lock. However
 
    ![List of retention policies in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
-3. To place a Preservation Lock on a retention policy, run the [Set-RetentionCompliancePolicy]( ) cmdlet with the name of the retention policy, and the *RestrictiveRetention* parameter set to true:
+3. To place a Preservation Lock on a retention policy, run the [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet with the name of the retention policy, and the *RestrictiveRetention* parameter set to true:
 
     ```powershell
     Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
