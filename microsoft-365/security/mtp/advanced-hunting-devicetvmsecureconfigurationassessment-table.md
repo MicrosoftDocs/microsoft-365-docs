@@ -1,6 +1,6 @@
 ---
 title: DeviceTvmSecureConfigurationAssessment table in the advanced hunting schema
-description: Learn about Threat & Vulnerability Management security assessment events in the DeviceTvmSecureConfigurationAssessment table of the advanced hunting schema. These events provide machine information as well as security configuration details, impact, and compliance information. 
+description: Learn about security assessment events in the DeviceTvmSecureConfigurationAssessment table of the advanced hunting schema. These threat & vulnerability management events provide device information as well as security configuration details, impact, and compliance information. 
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, DeviceTvmSecureConfigurationAssessment  
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -46,7 +46,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `ConfigurationSubcategory` | string | Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features. |
 | `ConfigurationImpact` | string | Rated impact of the configuration to the overall configuration score (1-10) |
 | `IsCompliant` | boolean | Indicates whether the configuration or policy is properly configured |
-| `IsApplicable` | boolean | Indicates whether the configuration or policy is applicable to the device |
+| `IsApplicable` | boolean | Indicates whether the configuration or policy applies to the device |
 | `Context` | string | Additional contextual information about the configuration or policy |
 | `IsExpectedUserImpactCompliant` | boolean | Indicates whether there will be user impact if the configuration or policy is applied |
 
