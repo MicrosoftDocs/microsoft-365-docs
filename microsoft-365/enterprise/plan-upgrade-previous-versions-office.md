@@ -24,8 +24,8 @@ description: "This article contains resources for users using Office 2007 or Off
 
 If your organization uses old versions of Office products and servers, now is a great time to start planning your upgrade. Office 2007 products and services have reached their [end of support](upgrade-from-office-2007-servers-and-products.md). For Office 2010 products and services:
 
-- Office 2010 and Exchange 2010 reached their end of support on **October 13, 2020**. 
-- SharePoint 2010 and Project Server 2010 will reach their end of support on **April 13, 2021**. 
+- Office 2010 and Exchange 2010 reached their end of support on *October 13, 2020*. 
+- SharePoint 2010 and Project Server 2010 will reach their end of support on *April 13, 2021*. 
 
 For more information, see [Upgrade from Office 2010 servers and clients](upgrade-from-office-2010-servers-and-products.md).
 
@@ -99,7 +99,7 @@ If you're using Office 2007 or Office 2010 at home, consider the following updat
 
     - If your Windows PC is running Windows 7, 8, or 8.1 and you're not upgrading to Windows 10 now, consider getting Office Home & Student 2016 or another edition of Microsoft Office. You can get it from an authorized reseller.
      
-    Support for Windows 7 [ended on January 14, 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support). Microsoft no longer provides security updates for it. Upgrade your Windows 7 devices to Windows 10 for continued security and feature updates and ongoing support.
+        Support for Windows 7 [ended on January 14, 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support). Microsoft no longer provides security updates for it. Upgrade your Windows 7 devices to Windows 10 for continued security and feature updates and ongoing support.
 
 If you choose not to upgrade now, your Office apps will continue to run according to the [timelines](https://support.microsoft.com/lifecycle/search/13615). However, to get security updates or new and improved features, you need to upgrade.
    
