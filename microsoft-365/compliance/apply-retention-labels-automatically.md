@@ -141,7 +141,7 @@ For more information about these options, see the following guidance from the DL
 
 To consider when using this method to auto-apply retention labels:
 
-- New and modified items can be labeled.
+- New and modified items can be auto-labeled.
 
 #### Auto-apply labels to content with keywords or searchable properties
 
@@ -254,7 +254,7 @@ For more information about trainable classifiers, see [Learn about trainable cla
 
 To consider when using this method to auto-apply retention labels:
 
-- New and modified items are labeled, and existing items from the last six months.
+- New and modified items can be auto-labeled, and existing items from the last six months.
 
 ## How long it takes for retention labels to take effect
 
