@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Client App Support — Single Sign-On"
+title: "Microsoft 365 Client App Support: Single Sign-On"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: In this article, learn which platforms, clients, and Powershell modules support single sign-on for Microsoft 365.
+description: In this article, learn which platforms, clients, and PowerShell modules support single sign-on for Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Single sign-on (SSO) adds security and convenience when your users sign on to applications in Azure Active Directory (Azure AD). With single sign-on, users sign in once with one account to access on-premises Active Directory Domain Services (AD DS) domain-joined devices, software as a service (SaaS) applications, and web applications.
+Single sign-on (SSO) adds security and convenience when your users sign-on to applications in Azure Active Directory. With single sign-on, users sign in once with one account to access on-premises Active Directory Domain Services (AD DS) domain-joined devices, software as a service (SaaS) applications, and web applications.
 
 Learn more about [single sign-on](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
 
@@ -68,6 +68,6 @@ The latest versions of the following clients and platforms support single sign-o
 
 ## Supported PowerShell modules
 
-- [Azure AD PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0)
 - [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)

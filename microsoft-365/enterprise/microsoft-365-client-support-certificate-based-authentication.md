@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Client App Support — Certificate-based Authentication"
+title: "Microsoft 365 Client App Support: Certificate-based Authentication"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,11 +18,11 @@ description: In this article, find details about Microsoft 365 Client App suppor
 ms.custom: seo-marvel-apr2020
 ---
 
-# Microsoft 365 Client App Support — Certificate-based Authentication
+# Microsoft 365 Client App Support: Certificate-based Authentication
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Certificate-based authentication enables you to authenticate to Azure Active Directory (Azure AD) with a client certificate on Windows, Android, or iOS devices. Configuring this feature eliminates the need to enter a username and password combination into certain mail and Microsoft Office applications on your mobile device.
+Certificate-based authentication enables you to authenticate to Azure Active Directory with a client certificate on Windows, Android, or iOS devices. Configuring this feature eliminates the need to enter a username and password combination into certain mail and Microsoft Office applications on your mobile device.
 
 Learn more about [certificate-based authentication](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
 
@@ -76,7 +76,7 @@ The latest versions of the following clients support certificate-based authentic
 
 ## Supported PowerShell modules
 
-- [Azure AD PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0)
 - [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
