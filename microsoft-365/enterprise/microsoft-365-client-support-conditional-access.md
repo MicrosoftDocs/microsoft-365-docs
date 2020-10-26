@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Client App Support — Conditional Access"
+title: "Microsoft 365 Client App Support: Conditional Access"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,15 +14,15 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-description: In this article, learn which platforms, clients, and Powershell modules support Conditional Access for Microsoft 365.
+description: In this article, learn which platforms, clients, and PowerShell modules support Conditional Access for Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ---
 
-# Microsoft 365 Client App Support — Conditional Access
+# Microsoft 365 Client App Support: Conditional Access
 
 In the modern workplace, users can access your organization's resources using various devices and apps from anywhere. As a result, just focusing on who can access a resource is not sufficient anymore. Your organization must also support how and where a resource is accessed in your access control infrastructure.
 
-With Azure Active Directory device, location, and multi-factor authentication-based Conditional Access, you can meet this new requirement. Conditional Access is a capability of Azure AD that enables you to enforce controls on the access to apps in your environment, all based on specific conditions and managed from a central location.
+With Azure Active Directory device, location, and multi-factor authentication-based Conditional Access, you can meet this new requirement. Conditional Access is a capability of Azure Active Directory that enables you to enforce controls on the access to apps in your environment, all based on specific conditions and managed from a central location.
 
 Learn more about [Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/).
 
