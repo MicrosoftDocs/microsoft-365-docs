@@ -130,7 +130,7 @@ To turn on safe attachments
 2. Click **Global settings**.
 3. Turn on ATP for SharePoint, OneDrive, and Microsoft Teams.
 
-   ![Screenshot of the safe attachments setting in the Security and Compliance center](../media/safe-attachments-setting.png)
+      ![Screenshot of the safe attachments setting in the Security and Compliance center](../media/safe-attachments-setting.png)
 
 4. Optionally turn on Safe Documents as well, and then click **Save**
 
