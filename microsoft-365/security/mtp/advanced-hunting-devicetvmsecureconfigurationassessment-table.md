@@ -37,15 +37,18 @@ For information on other tables in the advanced hunting schema, see [the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `DeviceId` | string | Unique identifier for the machine in the service |
-| `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
-| `OSPlatform` | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.|
+| `DeviceId` | string | Unique identifier for the device in the service |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the device |
+| `OSPlatform` | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.|
 | `Timestamp` | datetime | Date and time when the record was generated |
 | `ConfigurationId` | string | Unique identifier for a specific configuration |
 | `ConfigurationCategory` | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls |
 | `ConfigurationSubcategory` | string | Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features. |
 | `ConfigurationImpact` | string | Rated impact of the configuration to the overall configuration score (1-10) |
 | `IsCompliant` | boolean | Indicates whether the configuration or policy is properly configured |
+| `IsApplicable` | boolean | Indicates whether the configuration or policy is applicable to the device |
+| `Context` | string | Additional contextual information about the configuration or policy |
+| `IsExpectedUserImpactCompliant` | boolean | Indicates whether there will be user impact if the configuration or policy is applied |
 
 ## Related topics
 
