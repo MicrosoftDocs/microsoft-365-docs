@@ -349,8 +349,14 @@
           items: 
           - name: Overview
             href: ms-cloud-germany-transition.md
+          - name: Customer experiences
+            href: ms-cloud-germany-transition-experience.md
+          - name: Migration Phases Actions and Impacts
+            href: ms-cloud-germany-transition-phases.md
           - name: Opt-in for migration
             href: ms-cloud-germany-migration-opt-in.md
+          - name: References
+            href: ms-cloud-germany-transition-references.md
 
 - name: Identity
   items: 
