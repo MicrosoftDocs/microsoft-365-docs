@@ -52,7 +52,7 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |Display name  <br/> |The full name of the user. You can display the actual email address or make this field anonymous.  <br/> |
 |User state  <br/> |One of three values: Active, Deleted, or Suspended. These reports show data for active, suspended, and deleted users. They do not reflect pending users, because pending users cannot post, read, or like a message.   <br/> |
 |State change date (UTC)  <br/> |The date on which the user's state was changed in Yammer.  <br/> |
-|Last activity date (UTC)  <br/> | The last date (UTC) that the user participated in an Yammer activity .  <br/> |
+|Last activity date (UTC)  <br/> |The last date (UTC) that the user participated in an Yammer activity.  <br/> |
 |Web  <br/> |Indicates if the user has used Yammer on the web.  <br/> |
 |Windows phone  <br/> | Indicates if the user has used Yammer on a Windows phone.  <br/> |
 |Android phone  <br/> |Indicates if the user has used Yammer on an Android phone. <br/>|
