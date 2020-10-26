@@ -10,7 +10,10 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365solution-mig
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -100,7 +103,6 @@ Containers include SharePoint document libraries and Exchange mailboxes.
 > In addition, retention labels configured for regulatory records have the following admin restrictions:
 > - The retention period can't be made shorter after the label is saved, only extended.
 > - These labels aren't supported by auto-labeling policies, and must be applied by using [retention label policies](create-apply-retention-labels.md). 
-> - After you have added and saved these labels to a retention label policy, you can't remove these labels from locations, only add locations.
 > 
 > Because of these irreversible actions, make sure you really do need to use regulatory records before you select this option for your retention labels. To help prevent accidental configuration, this option is not available by default but must first be enabled by using PowerShell. Instructions are included in [Declare records by using retention labels](declare-records.md).
 

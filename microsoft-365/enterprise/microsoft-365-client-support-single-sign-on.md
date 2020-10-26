@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Single sign-on (SSO) adds security and convenience when your users sign on to applications in Azure Active Directory (Azure AD). With single sign-on, users sign in once with one account to access domain-joined devices, company resources, software as a service (SaaS) applications, and web applications.
+Single sign-on (SSO) adds security and convenience when your users sign on to applications in Azure Active Directory (Azure AD). With single sign-on, users sign in once with one account to access on-premises Active Directory Domain Services (AD DS) domain-joined devices, software as a service (SaaS) applications, and web applications.
 
 Learn more about [single sign-on](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
 

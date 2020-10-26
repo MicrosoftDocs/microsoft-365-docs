@@ -15,7 +15,9 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
@@ -56,8 +58,8 @@ invoke FileProfile(x,y)
 
 ## Arguments
 
-- **x** — file ID column to use: `SHA1`, `SHA256`, `InitiatingProcessSHA1` or `InitiatingProcessSHA256`; function uses `SHA1` if unspecified
-- **y** — limit to the number of records to enrich, 1-1000; function uses 100 if unspecified
+- **x**—file ID column to use: `SHA1`, `SHA256`, `InitiatingProcessSHA1`, or `InitiatingProcessSHA256`; function uses `SHA1` if unspecified
+- **y**—limit to the number of records to enrich, 1-1000; function uses 100 if unspecified
 
 ## Examples
 

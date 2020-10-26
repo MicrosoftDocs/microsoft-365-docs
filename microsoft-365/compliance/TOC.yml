@@ -152,8 +152,10 @@
       items: 
         - name: Understand encryption
           href: encryption.md
-        - name: Double Key Encryption (preview)
+        - name: Double Key Encryption (DKE)
           href: double-key-encryption.md
+        - name: Double Key Encryption FAQ
+          href: double-key-encryption-overview.md  
         - name: Office 365 Service encryption
           href: office-365-service-encryption.md
         - name: Customer Key
@@ -237,6 +239,8 @@
           href: create-test-tune-dlp-policy.md
         - name: Use notifications and policy tips in DLP policies
           href: use-notifications-and-policy-tips.md
+        - name: Configure and view alerts for DLP policies (preview)
+          href: dlp-configure-view-alerts-policies.md
         - name: What the DLP policy templates include
           href: what-the-dlp-policy-templates-include.md
         - name: Create a DLP policy to protect documents with FCI or other properties
@@ -247,6 +251,10 @@
           href: form-a-query-to-find-sensitive-data-stored-on-sites.md
         - name: How DLP works between the Security & Compliance Center and Exchange admin center
           href: how-dlp-works-between-admin-centers.md
+        - name: Use sensitivity labels as a condition in DLP policies (preview)
+          href: dlp-sensitivity-label-as-condition.md
+        - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
+          href: dlp-use-policies-non-microsoft-cloud-apps.md  
 - name: Manage information governance
   items: 
     - name: Govern your data
@@ -321,26 +329,32 @@
               href: archive-twitter-data-with-sample-connector.md
         - name: Globanet data connectors
           items:  
+            - name: Cisco Jabber
+              href: archive-ciscojabberonmssql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: FX Connect
               href: archive-fxconnect-data.md
+            - name: Jive
+              href: archive-jive-data.md
+            - name: Pivot
+              href: archive-pivot-data.md
             - name: Reuters Eikon
               href: archive-reuterseikon-data.md
-            - name: Slack
+            - name: Slack eDiscovery
               href: archive-slack-data.md    
             - name: Symphony
               href: archive-symphony-data.md
             - name: Text-delimited
               href: archive-text-delimited-data.md
+            - name: Webpages
+              href: archive-webpagecapture-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
             - name: Workplace from Facebook
-              href: archive-workplacefromfacebook-data.md
-            - name: Zoom Meetings
-              href: archive-zoommeetings-data.md
-            - name: Slack
-              href: archive-slack-data.md    
+              href: archive-workplacefromfacebook-data.md    
+            - name: XSLT/XML 
+              href: archive-xslt-xml-data.md
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
         - name: TeleMessage data connectors
@@ -389,8 +403,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Delete an inactive mailbox
           href: delete-an-inactive-mailbox.md
-    - name: Videos from the Data Governance team
-      href: https://go.microsoft.com/fwlink/?linkid=867039
     - name: Records management
       items: 
         - name: Learn about records management
@@ -424,7 +436,7 @@
             href: configure-edge-to-export-search-results.md
           - name: Search for and delete email messages
             href: search-for-and-delete-messages-in-your-organization.md
-          - name: Search the cloud-based mailboxes of on-premises users
+          - name: Search for Teams chat data for on-premises users
             href: search-cloud-based-mailboxes-for-on-premises-users.md
           - name: Bulk edit multiple content searches
             href: bulk-edit-content-searches.md
@@ -622,9 +634,11 @@
             - name: Document metadata fields
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: Set up attorney-client privilege detection
-              href: attorney-privilege-detection.md           
+              href: attorney-privilege-detection.md
             - name: Conversation review sets
               href: conversation-review-sets.md
+            - name: CJK language support
+              href: ediscovery-cjk-support.md
             - name: Assign eDiscovery permissions
               href: assign-ediscovery-permissions.md
             - name: Keyword queries and search conditions
@@ -827,8 +841,14 @@
           href: auditing-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log
           href: use-sharing-auditing.md
-        - name: Search for eDiscovery activities in the audit log
-          href: search-for-ediscovery-activities-in-the-audit-log.md
+        - name: Office 365 Management Activity API
+          items:
+            - name: Office 365 Management Activity API reference
+              href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference  
+            - name: Office 365 Management Activity API schema
+              href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema 
+            - name: Office 365 Management Activity API FAQs and troubleshooting
+              href: https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
     - name: Mailbox auditing
       href: enable-mailbox-auditing.md
     - name: Advanced Audit

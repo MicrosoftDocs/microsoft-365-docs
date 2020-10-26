@@ -1,5 +1,5 @@
 ---
-title: "Create a new investigation in Data Investigations (Preview)"
+title: "Create a new investigation in Data Investigations (preview)"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,11 +15,11 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Learn how to create, configure, and save a new investigation in Data Investigations (Preview) in the Microsoft 365 compliance center."
+description: "Learn how to create, configure, and save a new investigation in Data Investigations (preview) in the Microsoft 365 compliance center."
 ms.custom: seo-marvel-mar2020
 ---
 
-# Create a new investigation in Data Investigations (Preview)
+# Create a new investigation in Data Investigations (preview)
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
@@ -27,7 +27,7 @@ ms.custom: seo-marvel-mar2020
     
 3. In the compliance center, click **Data Investigations**.
  
-4. On the **Data Investigations (Preview)** page, click **Create new investigation**.
+4. On the **Data Investigations (preview)** page, click **Create new investigation**.
     
 5. On the **New data investigation** flyout page, give the investigation a name (required), and then type an optional investigation number and description. The investigation name must be unique in your organization.
 
@@ -35,11 +35,11 @@ ms.custom: seo-marvel-mar2020
 
     - Click **Yes** to create the investigation, and display the **Settings** page in the new investigation. This allows you to add members to the investigation.
     
-    - Click **No** to just create the investigation and display it in the list of investigations on the **Data Investigations (Preview)** page. If you choose this option, you will be added as the only member of the investigation and the default search and analytics settings will be used. You can add members or change settings anytime after the investigation is created.
+    - Click **No** to just create the investigation and display it in the list of investigations on the **Data Investigations (preview)** page. If you choose this option, you will be added as the only member of the investigation and the default search and analytics settings will be used. You can add members or change settings anytime after the investigation is created.
 
 7. Click **Save** to create the investigation.
 
-    The new investigation is displayed in the list of investigations on the **Data Investigations (Preview)** page. 
+    The new investigation is displayed in the list of investigations on the **Data Investigations (preview)** page. 
 
 8. To open an investigation, click the name of the investigation. 
 
