@@ -139,7 +139,7 @@ For more information about these options, see the following guidance from the DL
     
 ![Options for identifying sensitive information types](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
 
-To consider when using this method to auto-apply retention labels:
+To consider when using sensitive information types to auto-apply retention labels:
 
 - New and modified items can be auto-labeled.
 
@@ -153,7 +153,7 @@ For more information about the query syntax that uses Keyword Query Language (KQ
 
 Query-based labels use the search index to identify content. For more information about the searchable properties that you can use, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
 
-Some things to consider when using this method to auto-apply retention labels:
+Some things to consider when using keywords or searchable properties to auto-apply retention labels:
 
 - New, modified, and existing items will be auto-labeled for SharePoint or OneDrive. New items will be auto-labeled for Exchange.
 
@@ -252,7 +252,7 @@ For more information about trainable classifiers, see [Learn about trainable cla
 > [!TIP]
 > If you use trainable classifiers for Exchange, see the recently released [How to retrain a classifier in content explorer (preview)](classifier-how-to-retrain-content-explorer.md).
 
-To consider when using this method to auto-apply retention labels:
+To consider when using trainable classifiers to auto-apply retention labels:
 
 - New and modified items can be auto-labeled, and existing items from the last six months.
 
