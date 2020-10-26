@@ -36,7 +36,7 @@ Contoso followed these steps to prepare their security for their deployment of M
 
 1. Limit administrator accounts for the cloud
 
-   Contoso did an extensive review of its existing Active Directory Domain Services (AD DS) administrator accounts, and set up series of dedicated cloud administrator accounts and groups.
+   Contoso did an extensive review of its existing Active Directory Domain Services (AD DS) administrator accounts and set up series of dedicated cloud administrator accounts and groups.
 
 2. Classify data into three security levels
 
