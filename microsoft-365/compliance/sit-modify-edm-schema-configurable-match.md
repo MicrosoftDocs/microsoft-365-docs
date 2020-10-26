@@ -104,6 +104,15 @@ The `ignoredDelimiters` flag doesn't support:
 
 8. Update the data file if necessary to match the new schema version
 
+> [!TIP]
+> Optionally, you can run a validation against your csv file before uploading by running:
+>
+>`EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
+>
+>For more information on all the EdmUploadAgent.exe >supported parameters run
+>
+> `EdmUploadAgent.exe /?`
+
 9. open Command Prompt window (as an administrator) and run the following command to hash and upload your sensitive data:
 
     `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] [/Schema [Schema file]]`
