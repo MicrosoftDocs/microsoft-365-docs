@@ -51,7 +51,7 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |Display name  <br/> |The full name of the user. You can display the actual email address or make this field anonymous.  <br/> |
 |User state  <br/> |One of three values: Activated, Deleted, or Suspended. These reports show data for active, suspended, and deleted users. They do not reflect pending users, because pending users cannot post, read, or like a message.  <br/> |
 |State change date (UTC)  <br/> |The date on which the user's state was changed in Yammer.  <br/> |
-|Last activity date (UTC)  <br/> | he last date that the user posted, read, or liked a message.  <br/> |
+|Last activity date (UTC)  <br/> | The last date that the user posted, read, or liked a message.  <br/> |
 |Posted  <br/> |The number of messages the user posted during the time period you specified. <br/>|
 |Read  <br/> |The number of conversations that the user read during the time period you specified.  <br/> |
 |Liked  <br/> |The number of messages that the user liked during the time period you specified.  <br/>|

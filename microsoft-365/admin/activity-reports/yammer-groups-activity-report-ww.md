@@ -38,7 +38,7 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
   
 ## Interpret the Yammer groups activity report
 
-You can view the activities in the Yammer report by choosing the **Groups activity** tab.<br/>![Microsoft 365 reports - Microsoft Yammer groups activity report.](../../media/3afdafe5-9269-402e-8264-c7695ceb227d.png)
+You can view the groups activities in the Yammer report by choosing the **Groups activity** tab.<br/>![Microsoft 365 reports - Microsoft Yammer groups activity report.](../../media/3afdafe5-9269-402e-8264-c7695ceb227d.png)
 
 Select **Choose columns** to add or remove columns from the report.  <br/> ![Yammer groups activity report - choose columns](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
 
@@ -48,9 +48,7 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |:-----|:-----|
 |**Metric**|**Definition**|
 |Group name  <br/> |The name of the group. <br/> |
-|Display name  <br/> |The full name of the user. You can display the actual email address or make this field anonymous.  <br/> |
 |Group admin  <br/> |The name of the group administrator, or owner.  <br/> |
-|Deleted  <br/> |The number of deleted Yammer groups. If the group is deleted, but had activity in the reporting period it will show up in the grid with this flag set to true.  <br/> |
 |Deleted  <br/> |The number of deleted Yammer groups. If the group is deleted, but had activity in the reporting period it will show up in the grid with this flag set to true.  <br/> |
 |Type  <br/> |The type of group, public or private. <br/> |
 |Connected to Office 365  <br/> |Indicates whether the Yammer group is also an Microsoft 365 group. <br/> |
@@ -58,5 +56,6 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |Members  <br/> | The number of members in the group.  <br/> |
 |Posted  <br/> |The number of messages posted in the Yammer group over the reporting period. <br/>|
 |Read  <br/> |The number of conversations read in the Yammer group over the reporting period.  <br/> |
-|Liked  <br/> |The number of messages liked in the Yammer group over the reporting period.|
+|Liked  <br/> |The number of messages liked in the Yammer group over the reporting period. <br/>|
+|Network name  <br/> |The full name of the network that the group belongs to. |
 |||
