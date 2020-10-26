@@ -101,11 +101,11 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 ## Auditing Customer Lockbox requests
 
-Audit records that correspond to the Customer Lockbox requests are logged in the audit log. You can access these logs by using the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Security & Compliance Center. Actions related to a accepting or denying a Customer Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the audit log. You can search for and review these audit records.
+Audit records that correspond to the Customer Lockbox requests are logged in the audit log. You can access these logs by using the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Security & Compliance Center. Actions related to accepting or denying a Customer Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the audit log. You can search for and review these audit records.
 
 ### Search the audit log for activity related to Customer Lockbox requests
 
-Before you can use the audit log to track requests for Customer Lockbox, there are some steps you need to take to to set up audit logging. For more information, see [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Once you've completed setup, use these steps to create an audit log search query to return audit records related to Customer Lockbox:
+Before you can use the audit log to track requests for Customer Lockbox, there are some steps you need to take to set up audit logging. For more information, see [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Once you've completed setup, use these steps to create an audit log search query to return audit records related to Customer Lockbox:
 
 1. Go to [https://protection.office.com](https://protection.office.com).
   
@@ -119,13 +119,13 @@ Before you can use the audit log to track requests for Customer Lockbox, there a
   
 4. Configure the following search criteria:
 
-    a. **Activities** - Leave this field blank so that the search returns audit records for all activities. This is necessary to return any audit records related to Customer Lockbox requests and corresponding activity performed by Microsoft engineers.
+    1. **Activities** - Leave this field blank so that the search returns audit records for all activities. This is necessary to return any audit records related to Customer Lockbox requests and corresponding activity performed by Microsoft engineers.
 
-    b. **Start date** and **End date** - Select a date and time range to display the events that occurred within that period.
+    1. **Start date** and **End date** - Select a date and time range to display the events that occurred within that period.
 
-    c. **Users** - Leave this field blank.
+    1. **Users** - Leave this field blank.
 
-    d. **File, folder, or site** - Leave this field blank.
+    1. **File, folder, or site** - Leave this field blank.
 
 5. Click **Search** to run the search using your search criteria.
 
@@ -232,7 +232,7 @@ Only a global administrator in your organization can specify who can approve Cus
 
 #### What if I need more information about a content access request to approve it?
 
-Each Customer Lockbox request contains an Microsoft 365 service request number. You can contact Microsoft Support and reference this service number to get more information about the request.
+Each Customer Lockbox request contains a Microsoft 365 service request number. You can contact Microsoft Support and reference this service number to get more information about the request.
 
 #### When a Customer Lockbox request is approved, how long are the permissions valid?
 
