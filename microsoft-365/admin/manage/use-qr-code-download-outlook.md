@@ -37,8 +37,8 @@ You need to be a global administrator to initiate sign-out.
 > This setting will be on by default.
 
 1. In the Microsoft 365 admin center, go to **Settings** -> **Org Settings**.
-2. On the Org Settings page, select the settingSecurity & privacy tab.
-3. Select the Mobile app sign-in setting.
+2. On the Org Settings page, select **Security & privacy**.
+3. Select **Mobile app sign-in**.
 4. Select the toggle to turn off the ability to use a QR code.
 
 ## Use Exchange PowerShell
