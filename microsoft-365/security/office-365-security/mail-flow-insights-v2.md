@@ -55,11 +55,11 @@ The available insights are:
 
 ## Permissions required to view the Mail flow dashboard
 
-The Mail flow dashboard is available to members of the following route groups:
+The Mail flow dashboard is available to members of the following role groups:
 
 - **Organization Management** in the Security & Compliance Center (global admins).
 
-- **[Exchange Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure AD.
+- **[Exchange Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure Active Directory.
 
 - **MailFlow Administrator** in the Security & Compliance Center: If a member of this role group is not also a member of the global administrator or Exchange administrator role groups, then note the following issues and requirements:
 

@@ -57,15 +57,9 @@ If you haven't signed up with Microsoft Store for Business, you can sign up when
 Microsoft Store adds the app to **Your products** for your organization.
 
 **To force a sync between Intune and Microsoft Store for Business**
-1. Sign in to [Azure portal](https://portal.azure.com/) as Intune Admin or Global Admin for your tenant
-2. Select **All services > Intune**. 
-Intune is in the Monitoring + Management section.
-3. In the Intune pane, select **Client Apps**, and then select **Microsoft Store for Business**.
-4. Select **Enable** to sync your Microsoft Store for Business apps with Intune.
-    - If you haven't already, sign up and associate your Microsoft Store for Business account with Intune
-    - Select the language in which apps from the Microsoft Store for Business will be displayed in your Intune console
-    - Select **Sync** to sync your Microsoft Store for Business apps with Intune.
-    - Verify that the sync between Microsoft Store for Business and Intune is active (next step). 
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Tenant administration** > **Connectors and tokens** > **Microsoft Store for Business**.
+3. Select **Sync** to get the apps you've purchased from the Microsoft Store into Intune.
 
 **To verify that a sync between Intune and Microsoft Store for Business is active**
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) with your Microsoft Store for Business Admin account.

@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,18 +18,17 @@ description: The roadmap to set up your tenants for Microsoft 365.
 
 # Tenant roadmap for Microsoft 365
 
-Your Microsoft 365 tenant is the set of services assigned to your organization. Typically, this tenant is associated with one or more of your DNS domain names and acts as a central container for different subscriptions and the licenses within them that you assign to user accounts. For more information, see [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
+Your Microsoft 365 tenant is the set of services assigned to your organization. Typically, this tenant is associated with one or more of your public DNS domain names and acts as a central and isolated container for different subscriptions and the licenses within them that you assign to user accounts. For more information, see [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
 
 When you create a Microsoft 365 tenant, you assign it to a specific geographical location. You can also have a tenant with multiple geographical locations and move your tenant from one location to another.
 
-To get your tenant ready for identity, it's critical to carefully plan and execute your tenant configuration.
-
+To get your tenant ready for user, groups, licenses, and cloud apps, it's critical to carefully plan and execute your tenant configuration.
 
 ## Set up your Microsoft 365 tenant
 
 After ensuring that your networking is optimized for access to Microsoft 365 for both on-premises and remote workers, your next big tasks are planning for and then configuring your Microsoft 365 tenant for DNS domain names, common services, and for that identity infrastructure that supports secure user sign-in.
 
-## Plan
+### Plan
 
 To plan for your tenant implementation:
 
@@ -41,7 +39,6 @@ To plan for your tenant implementation:
 - [Determine how to use hybrid modern authentication](hybrid-modern-auth-overview.md)
 - [Plan for Office 2007 and Office 2010 upgrades](plan-upgrade-previous-versions-office.md)
 - [Understand tenant isolation](microsoft-365-tenant-isolation-overview.md)
-- [Get the details on Microsoft 365 service assurance](microsoft-365-administrative-access-controls-overview.md)
 
 ### Deploy
 
@@ -64,16 +61,15 @@ With Microsoft 365 Multi-Geo, your organization can expand its Microsoft 365 pre
 
 For more information, see [Microsoft 365 Multi-Geo](microsoft-365-multi-geo.md).
 
-## Manage multiple Microsoft 365 tenancies 
+## Manage multiple Microsoft 365 tenant 
 
-Although having a single tenant for your oganization is ideal, you may be one of many organizations that have multiple tenancies. Reasons for multiple tenancies can include mergers and aquisitions, you want administrative isolation, or you have a decentralized IT.
+Although having a single tenant for your oganization is ideal, you may be one of many organizations that have multiple tenant. Reasons can include mergers and aquisitions, you want administrative isolation, or you have a decentralized IT.
 
-If you have multiple Microsoft 365 tenancies, see these articles for more information about:
+If you have multiple Microsoft 365 tenants, see these articles for more information about:
 
 - [Inter-tenant collaboration](microsoft-365-inter-tenant-collaboration.md)
 - [Cross-tenant mailbox migration](cross-tenant-mailbox-migration.md)
 - [Tenant-to-tenant migrations](microsoft-365-tenant-to-tenant-migrations.md)
-
 
 ## Next step
 
