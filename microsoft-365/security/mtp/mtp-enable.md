@@ -79,12 +79,6 @@ Once the service is provisioned, it adds:
 ### Getting Azure ATP data
 To share Azure ATP data with Microsoft Threat Protection, ensure that Microsoft Cloud App Security and Azure ATP integration is turned on. [Learn more about this integration](https://docs.microsoft.com/cloud-app-security/aatp-integration)
 
-
-## Turn off Microsoft Threat Protection
-To stop using Microsoft Threat Protection, go to **Settings** > **Microsoft Threat Protection** > **Opt-in / Opt-out** in the Microsoft 365 security center. Unselect **Turn on Microsoft Threat Protection** and apply the changes.
-
-Corresponding features will be removed from the Microsoft 365 security center.
-
 ## Get assistance
 
 To get answers to the most commonly asked questions about turning on Microsoft Threat Protection, [read the FAQ](mtp-enable-faq.md).
