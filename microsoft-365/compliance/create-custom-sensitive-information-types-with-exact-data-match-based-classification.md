@@ -114,7 +114,7 @@ Setting up and configuring EDM-based classification involves:
       ```xml
       <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
             <DataStore name="PatientRecords" description="Schema for patient records" version="1">
-                  <Field name="PatientID" searchable="true" />
+                  <Field name="PatientID" searchable="true" caseInsensitive="true" ignoredDelimiters="-,/,*,#,^," />
                   <Field name="MRN" searchable="true" />
                   <Field name="FirstName" />
                   <Field name="LastName" />
@@ -126,6 +126,39 @@ Setting up and configuring EDM-based classification involves:
             </DataStore>
       </EdmSchema>
       ```
+
+##### Configurable match using the caseInsensitive and ignoredDelimiters fields
+
+The above XML sample makes use of the `caseInsensitive` and the `ignoredDelimiters` fields. 
+
+When you include the ***caseInsensitive*** field set to the value of `true`in your schema definition, EDM will not exclude an item based on case differences for `PatientID` field. So EDM will see, `PatientID` **FOO-1234** and **fOo-1234** will be seen as identical.
+
+When you include the ***ignoredDelimiters*** field with supported characters,  EDM will ignore those characters in the `PatientID`. So EDM will see, `PatientID` **FOO-1234** and `PatientID` **FOO#1234** will be seen as identical. The `ignoredDelimiters` flag supports any non-alphanumeric character, here are some examples:
+- \.
+- \-
+- \/
+- \_
+- \*
+- \^
+- \#
+- \!
+- \?
+- \[
+- \]
+- \{
+- \}
+- \\
+- \~
+- \; 
+
+- The `ignoredDelimiters` flag doesn't support:
+- characters 0-9
+- A-Z
+- a-z
+- \"
+- \,
+
+In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, EDM would see **FOO-1234** and **fOo#1234** as  identical and classify the item as a patient record sensitive information type. 
 
 4. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
