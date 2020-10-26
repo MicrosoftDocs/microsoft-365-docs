@@ -59,7 +59,7 @@ Microsoft Store adds the app to **Your products** for your organization.
 **To force a sync between Intune and Microsoft Store for Business**
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Tenant administration** > **Connectors and tokens** > **Microsoft Store for Business**.
-3. Click **Sync** to get the apps you've purchased from the Microsoft Store into Intune.
+3. Select **Sync** to get the apps you've purchased from the Microsoft Store into Intune.
 
 **To verify that a sync between Intune and Microsoft Store for Business is active**
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) with your Microsoft Store for Business Admin account.
