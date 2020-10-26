@@ -52,7 +52,7 @@ Within Employee experience, we provide per-user level activity details in grid f
 
 :::image type="content" source="../../media/communicationspage.jpg" alt-text="Communications page in Productivity reports.":::
 
-## Anonymization of user level metrics
+## De-identification of user level metrics
 
 To make the data that is collected for all reports anonymous, you must be a global administrator. This will hide identifiable information such as user, group, and site names in all reports – including Productivity Score and Microsoft 365 Usage.
 
@@ -62,12 +62,12 @@ To make the data that is collected for all reports anonymous, you must be a glob
 
 :::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="Make user info anonymous for reports.":::
 
-## Capability to opt out of Employee experience
+## Capability to opt out of people experiences
 
-We will also provide the capability to opt out of the Employee experience area of Productivity Score at general availability. Turning this setting on will prevent anyone from your organization being able to view these metrics and remove your organization from any calculations involving categories of Communication, Meetings, Teamwork, Content collaboration and Mobility.
+We will also provide the capability to opt out of the people experiences area of Productivity Score at general availability. Turning this setting on will prevent anyone from your organization being able to view these metrics and remove your organization from any calculations involving categories of Communication, Meetings, Teamwork, Content collaboration and Mobility.
 
 1. In the admin center, go to the  **Settings**  >  **Org Settings** , and under  **Services**  tab, choose  **Reports**.
-2. Select  **Reports** , and then un-check the box that says  **Share your org&#39;s data with Productivity Score Employee Experience insights**. To understand how to modify data-sharing settings for Endpoint Analytics in the Intune configuration manager, click on **Learn More**.
+2. Select  **Reports** , and then un-check the box that says  **Allow Microsoft 365 usage data to be used for people experiences insights.**. To understand how to modify data-sharing settings for Endpoint Analytics in the Intune configuration manager, click on **Learn More**.
 3. Select  **Save changes**.
 
 :::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="Org settings page where you can opt out from employee experience.":::
