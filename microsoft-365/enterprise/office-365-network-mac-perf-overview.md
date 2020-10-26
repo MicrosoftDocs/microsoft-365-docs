@@ -60,7 +60,7 @@ You also need to add locations in the Admin Center network connectivity page or 
 
 Because you are adding the locations, you can have multiple offices defined within a city.
 
-Measurement samples and office locations should start to appear 24 hours after these pre-requisites have been met.
+All test measurements from client machines include the LAN subnet information, which is correlated with the office location details that you have entered. Measurement samples and office locations should start to appear 24 hours after these pre-requisites have been met.
 
 ### 3. Manually gather test reports with the Microsoft 365 network connectivity test tool
 
