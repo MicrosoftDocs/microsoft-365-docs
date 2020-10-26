@@ -186,7 +186,7 @@ The following query for SharePoint identifies Word documents or Excel spreadshee
 ```
 (password OR passwords OR pw) AND (fileextension: .doc* OR fileextension: .xls*)  
 ```
-The following query for Exchange identifies any Word document or PDF that contains the word **nda** or the phrase **non disclosure agreement** when it is attached to an email:
+The following query for Exchange identifies any Word document or PDF that contains the word **nda** or the phrase **non disclosure agreement** when those documents are attached to an email:
 
 ```
 (nda OR "non disclosure agreement") AND (attachmentnames: .doc* OR attachmentnames: .pdf)
