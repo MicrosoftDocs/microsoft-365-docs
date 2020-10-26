@@ -91,6 +91,25 @@ To set the default file and folder sharing link for a specific site
    ![Screenshot of SharePoint site-level default link type settings](../media/sharepoint-organization-anyone-link-permissions-site.png)
 5. Select the **Only people in your organization** option and click **Save**.
 
+## Prevent unauthenticated sharing of sensitive content
+
+You can use [data loss prevention (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to prevent unauthenticated sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label, retention label, or sensitive information in the file itself.
+
+To create a DLP rule
+1. In the Microsoft 365 compliance admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).
+2. Click **Create policy**.
+3. Choose **Custom** and click **Next**.
+4. Type a name for the policy and click **Next**.
+5. On the **Locations to apply the policy** page turn off all settings except **SharePoint sites** and **OneDrive accounts**, and then click **Next**.
+6. On the **Define policy settings** page, click **Next**.
+7. On the **Customize advanced DLP rules** page, click **Create rule**.
+8. Type a name for the policy
+
+
+
+
+limit-accidental-exposure-dlp-anyone-links.png
+
 ## Protect against malicious files
 
 When you allow anonymous users to upload files, you're at an increased risk of someone uploading a malicious file. In Microsoft 365, you can use the *Safe Attachments* feature in Advanced Threat Protection to automatically scan uploaded files and quarantine files that are found to be unsafe.
