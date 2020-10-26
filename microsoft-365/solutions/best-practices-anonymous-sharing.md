@@ -119,7 +119,7 @@ To create a DLP rule
 
 12. Click **Save** and then click **Next**.
 13. Choose your test options and click **Next**.
-14. Click **Submit**.
+14. Click **Submit**, and then click **Done**.
 
 ## Protect against malicious files
 
