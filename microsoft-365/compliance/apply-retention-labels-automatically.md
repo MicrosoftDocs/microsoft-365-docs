@@ -141,7 +141,7 @@ For more information about these options, see the following guidance from the DL
 
 To consider when using this method to auto-apply retention labels:
 
-- New, modified, and existing items can be labeled.
+- New and modified items can be labeled.
 
 #### Auto-apply labels to content with keywords or searchable properties
 
@@ -155,7 +155,7 @@ Query-based labels use the search index to identify content. For more informatio
 
 Some things to consider when using this method to auto-apply retention labels:
 
-- New, modified, and existing items can be labeled.
+- New, modified, and existing items can be labeled for SharePoint. New and modified items can be labeled for OneDrive and Exchange.
 
 - For SharePoint, crawled properties and custom properties aren't supported for these KQL queries and you must use only predefined managed properties. However, you can use mappings at the tenant level with the predefined managed property by using RefinableString00 to RefinableString199. For more information, see [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview), and for instructions, see [Create a new managed property](https://docs.microsoft.com/sharepoint/manage-search-schema#create-a-new-managed-property).
 
