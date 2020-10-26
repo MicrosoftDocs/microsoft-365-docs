@@ -24,15 +24,17 @@ description: "How privacy is protected with the Productivity Score."
 
 # Privacy controls for Productivity Score
 
-Productivity Score uses metrics about how people use Microsoft 365 apps and services to help you transform how work gets done. The score reflects your organization&#39;s performance against people and technology experiences measures and compares your score with organizations like yours. For more details, check out [Productivity Score overview](productivity-score.md).
+Productivity Score helps organizations transform how work gets done with metrics that help you measure and improve people and technology experiences. It helps you gain visibility into how your organization works, provides metrics that help you focus on enabling improved experiences.  You can also connect the metrics to actions to help you update skills and systems so everyone can do their best work. The score reflects your organization’s performance and also enables you to safely compare your score with other organizations like yours.  For more details, check out [Productivity Score overview](productivity-score.md).
 
 Your privacy is important To us. To learn how we protect your privacy, see [Microsoft's privacy statement](https://privacy.microsoft.com/privacystatement). Productivity Score provides vital information on how people in your organizations work along with controls to make sure the information is actionable while not compromising the trust you place in Microsoft.
 
-We provide the following controls to allow for safer handling of data:
+Within the people experiences area, metrics are available at the organizational   level and includes all users in your Microsoft 365 tenant. This area looks at how people use Microsoft 365 by looking at the categories of content collaboration, mobility, meetings, teamwork and communication. To help you drive   training and awareness  to the right set of people who may need support with our products we have also provided you with information on the  individual level. While we provide this level of transparency, we also enable you with several levels of controls to help you meet your internal privacy policy needs.
+The following controls give you:
 
 - Flexible admin roles to control who can see the information in Productivity Score.
-- Anonymization of user level metrics.
+- The ability to de-identify user level metrics.
 - Capability to opt out of People experiences.
+- The capability to opt out of the people   experiences area
 
 ## Flexible admin roles to control who can see the information in Productivity Score
 
@@ -48,7 +50,7 @@ To view the entire Productivity Score, including tenant-level metrics and per-us
 
 Assign the Reports Reader role to anyone who's responsible for change management and adoption. This role gives them access to the complete experience including tenant level metrics and per-user level details.
 
-People experiences report contains per-user activity details for each category detail page. Assign a custom role called Usage Summary Reports Reader to enable access to only the aggregate metrics of the People experiences.
+People experiences report contains per-user activity details for each category detail page. Assign a custom role called Usage Summary Reports Reader (available starting 29th October 2020) to enable access to only the aggregate metrics of the People experiences.
 
 :::image type="content" source="../../media/communicationspage.jpg" alt-text="Communications page in Productivity reports.":::
 
