@@ -79,16 +79,20 @@ You can mitigate this risk by changing the default link setting to a link that o
 To set the default file and folder sharing link for the organization
 1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
 2. In the left navigation, click **Sharing**.
-3. Under **File and folder links**, select **Only people in your organization**.</br>
+3. Under **File and folder links**, select **Only people in your organization**.
+
    ![Screenshot of SharePoint default link type setting](../media/sharepoint-default-sharing-link-company-link.png)
+
 4. Click **Save**
 
 To set the default file and folder sharing link for a specific site
 1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
 2. In the left navigation, expand **Sites**, and then click **Active sites**.
 3. Select the site you want to change, and then click **Sharing**.
-4. Under **Default sharing link type**,  clear the **Same as organization-level setting** check box.</br>
+4. Under **Default sharing link type**,  clear the **Same as organization-level setting** check box.
+
    ![Screenshot of SharePoint site-level default link type settings](../media/sharepoint-organization-anyone-link-permissions-site.png)
+
 5. Select the **Only people in your organization** option and click **Save**.
 
 ## Prevent unauthenticated sharing of sensitive content
@@ -102,13 +106,20 @@ To create a DLP rule
 4. Type a name for the policy and click **Next**.
 5. On the **Locations to apply the policy** page turn off all settings except **SharePoint sites** and **OneDrive accounts**, and then click **Next**.
 6. On the **Define policy settings** page, click **Next**.
-7. On the **Customize advanced DLP rules** page, click **Create rule**.
-8. Type a name for the policy
+7. On the **Customize advanced DLP rules** page, click **Create rule** and type a name for the rule.
+8. Under **Conditions**, click **Add condition**, and choose **Content contains**.
+9. Click **Add** and choose the type of information for which you want to prevent unauthenticated sharing.
 
+   ![Screenshot of conditions options, sensitive info types, sensitivity labels, and retention labels.](../media/limit-accidental-exposure-dlp-conditions.png)
 
+10. Under **Actions** click **Add an action** and choose **Restrict access or encrypt the content in Microsoft 365 locations**.
+11. Select the **Restrict access or encrypt the content in Microsoft 365 locations** check box and then choose the **Only people who were given access to the content through the "Anyone withe the link" options** option.
 
+   ![Screenshot of DLP rule action options](../media/limit-accidental-exposure-dlp-anyone-links.png)
 
-limit-accidental-exposure-dlp-anyone-links.png
+12. Click **Save** and then click **Next**.
+13. Choose your test options and click **Next**.
+14. Click **Submit**.
 
 ## Protect against malicious files
 
