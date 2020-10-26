@@ -35,7 +35,7 @@ Once an *Anyone* link expires, it can no longer be used to access content.
 
 To set an expiration date for Anyone links across the organization
 
-1. Open the [SharePoint Online admin center](https://admin.microsoft.com/sharepoint).
+1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
 2. In the left navigation, click **Sharing**.
 3. Under **Choose expiration and permissions options for Anyone links**, select the **These links must expire within this many days** check box.</br>
    ![Screenshot of SharePoint organization-level Anyone link expiration settings](../media/sharepoint-organization-anyone-link-expiration.png)
@@ -43,7 +43,7 @@ To set an expiration date for Anyone links across the organization
 
 To set an expiration date for Anyone links on a specific site
 
-1. Open the [SharePoint Online admin center](https://admin.microsoft.com/sharepoint).
+1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
 2. In the left navigation, expand **Sites**, and then click **Active sites**.
 3. Select the site you want to change, and then click **Sharing**.
 4. Under **Advanced settings for Anyone links**, under **Expiration of Anyone links**, clear the **Same as organization-level setting** check box.</br>
@@ -63,7 +63,7 @@ If you want to allow unauthenticated sharing, but are concerned about unauthenti
 
 To set permissions for Anyone links across the organization
 
-1. Open the [SharePoint Online admin center](https://admin.microsoft.com/sharepoint).
+1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
 2. In the left navigation, click **Sharing**.
 3. Under **Advanced settings for "Anyone" links**, select the file and folder permissions that you want to use.</br>
    ![Screenshot of SharePoint organization-level Anyone link permissions settings](../media/sharepoint-organization-anyone-link-permissions.png)
@@ -77,14 +77,14 @@ When *Anyone* sharing is enabled for your organization, the default sharing link
 You can mitigate this risk by changing the default link setting to a link that only works for people inside your organization. Users who want to share with unauthenticated people would then have to specifically select that option.
 
 To set the default file and folder sharing link for the organization
-1. Open the [SharePoint Online admin center](https://admin.microsoft.com/sharepoint).
+1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
 2. In the left navigation, click **Sharing**.
 3. Under **File and folder links**, select **Only people in your organization**.</br>
    ![Screenshot of SharePoint default link type setting](../media/sharepoint-default-sharing-link-company-link.png)
 4. Click **Save**
 
 To set the default file and folder sharing link for a specific site
-1. Open the [SharePoint Online admin center](https://admin.microsoft.com/sharepoint).
+1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
 2. In the left navigation, expand **Sites**, and then click **Active sites**.
 3. Select the site you want to change, and then click **Sharing**.
 4. Under **Default sharing link type**,  clear the **Same as organization-level setting** check box.</br>
@@ -93,14 +93,18 @@ To set the default file and folder sharing link for a specific site
 
 ## Protect against malicious files
 
-When you allow anonymous users to upload files, you're at an increased risk of someone uploading a malicious file. In Microsoft 365, you can use the *safe attachments* feature in Advanced Threat Protection to automatically scan uploaded files and quarantine files that are found to be unsafe.
+When you allow anonymous users to upload files, you're at an increased risk of someone uploading a malicious file. In Microsoft 365, you can use the *Safe Attachments* feature in Advanced Threat Protection to automatically scan uploaded files and quarantine files that are found to be unsafe.
 
 To turn on safe attachments
-1. Open the [Microsoft 365 security](https://security.microsoft.com) admin center.
-2. In the left navigation, click **Policies**.
-3. Under **Threat protection**, click **ATP safe attachments (Office 365)**.
-4. Select the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** check box, and then click **Save**.</br>
+1. Open the [ATP Safe Attachments page](https://protection.office.com/safeattachmentv2) in the Security and Compliance admin center.
+2. Click **Global settings**.
+3. Turn on ATP for SharePoint, OneDrive, and Microsoft Teams.
+
    ![Screenshot of the safe attachments setting in the Security and Compliance center](../media/safe-attachments-setting.png)
+
+4. Optionally turn on Safe Documents as well, and then click **Save**
+
+See [ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams) and [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams) for additional guidance.
 
 ## Add copyright information to your files
 
