@@ -378,11 +378,21 @@ This computer must have direct access to your Microsoft 365 tenant.
 >[!NOTE]
 > Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group.
 
+> [!TIP]
+> Optionally, you can run a validation against your csv file before uploading by running:
+>
+>`EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
+>
+>For more information on all the EdmUploadAgent.exe >supported parameters run
+>
+> `EdmUploadAgent.exe /?`
+
+
 #### Links to EDM upload agent by subscription type
 
-- [Commercial + GCC](https://go.microsoft.com/fwlink/?linkid=2088639)
-- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521)
-- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807)
+- [Commercial + GCC](https://go.microsoft.com/fwlink/?linkid=2088639) - most commercial customers should use this
+- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521) - This is specifically for high security government cloud subscribers
+- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) - this is specifically for United States Department of Defense cloud customers
 
 1. Create a working directory for the EDMUploadAgent. For example, **C:\EDM\Data**. Place the **PatientRecords.csv** file there.
 

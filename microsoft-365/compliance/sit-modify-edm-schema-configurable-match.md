@@ -30,7 +30,7 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
 2. Download the appropriate **EdmUploadAgent.exe** file for your subscription using the links below:
     - [Commercial + GCC](https://go.microsoft.com/fwlink/?linkid=2088639) - most commercial customers should use this
     - [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521) - This is specifically for high security government cloud subscribers
-    - [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) - this is specifically for United States Department of Defense cloud customers.
+    - [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) - this is specifically for United States Department of Defense cloud customers
 
 3. Authorize the EDM Upload Agent, open Command Prompt window (as an administrator) and run the following command:
 
