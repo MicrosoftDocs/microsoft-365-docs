@@ -102,7 +102,7 @@ The `ignoredDelimiters` flag doesn't support:
     `$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0`
     `Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true`
 
-8. Update the data file if necessary to match the new schema version
+8. If necessary, update the data file to match the new schema version
 
 > [!TIP]
 > Optionally, you can run a validation against your csv file before uploading by running:
@@ -113,7 +113,7 @@ The `ignoredDelimiters` flag doesn't support:
 >
 > `EdmUploadAgent.exe /?`
 
-9. open Command Prompt window (as an administrator) and run the following command to hash and upload your sensitive data:
+9. Open Command Prompt window (as an administrator) and run the following command to hash and upload your sensitive data:
 
     `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] [/Schema [Schema file]]`
 
