@@ -29,10 +29,9 @@ This scenario includes:
 - Setting up quarterly guest access reviews to periodically validate whether guests continue to need permissions to teams and sites.
 - Restricting guests to web-only access for unmanaged devices.
 - Configuring a session timeout policy to ensure guests authenticate daily.
-- Creating and publishing sensitivity labels to classify content.
 - Creating a sensitive information type for a highly sensitive project.
-- Automatically assigning a *highly sensitive* label to documents that contain the sensitive information type.
-- Automatically removing guest access from files labeled as *highly sensitive*.
+- Automatically assigning a sensitivity label to documents that contain a sensitive information type.
+- Automatically removing guest access from files with a sensitivity label.
 
 Some of the options discussed in this article require guests to have an account in Azure Active Directory. To ensure that guests are included in the directory when you share files and folders with them, use the [SharePoint and OneDrive integration with Azure AD B2B Preview](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
 
@@ -45,9 +44,10 @@ Multi-factor authentication greatly reduces the chances of an account being comp
 In this example, we'll set up multi-factor authentication for guests by using a conditional access policy in Azure Active Directory.
 
 To set up multi-factor authentication for guests
+
 1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
 2. On the **Conditional Access | Policies** blade, click **New policy**.
-3. In the **Name** field, type *Guest MFA*.
+3. In the **Name** field, type a name.
 4. Under **Assignments**, click **Users and groups**.
 5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
 6. Under **Assignments**, click **Cloud apps or actions**.
@@ -69,13 +69,14 @@ Often times guest users may not have signed non-disclosure agreements or other l
 To create a terms of use, you first need to create the document in Word or another authoring program, and then save it as a .pdf file. This file can then be uploaded to Azure AD.
 
 To create an Azure AD terms of use
+
 1. Sign in to Azure as a Global Administrator, Security Administrator, or Conditional Access Administrator.
 2. Navigate to [Terms of use](https://aka.ms/catou).
 3. Click **New terms**.
 
    ![Screenshot of Azure AD new terms of use settings](../media/azure-ad-guest-terms-of-use.png)
 
-4. In the **Name** and **Display name** boxes, type *Guest terms of use*.
+4. Type a **Name** and **Display name**.
 6. For **Terms of use document**, browse to the pdf file that you created and select it.
 7. Select the language for your terms of use document.
 8. Set **Require users to expand the terms of use** to **On**.
@@ -85,9 +86,10 @@ To create an Azure AD terms of use
 Once you've created the terms of use, the next step is to create a conditional access policy that displays the terms of use to guest users.
 
 To create a conditional access policy
+
 1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
 2. On the **Conditional Access | Policies** blade, click **New policy**.
-3. In the **Name** box, type *Guest user terms of use policy*.
+3. In the **Name** box, type a name.
 4. Under **Assignments**, click **Users and groups**.
 5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
 6. Under **Assignments**, click **Cloud apps or actions**.
@@ -115,22 +117,23 @@ Access reviews can be organized into programs. A program is a grouping of simila
 In this example, we'll create a program for guest access reviews.
 
 To create a program
+
 1. Sign in to the Azure portal and open the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade).
 2. In the left menu, click **Programs**
 3. Click **New program**.
-4. In the **Name** box, type *Guest access review program*.
-5. In the **Description** box, type *Program for guest access reviews*.
-6. Click **Create**.
+4. Type a **Name**  and **Description**.
+5. Click **Create**.
 
 Once the program has been created, we can create a guest access review and associate it with the program.
 
 To set up a guest user access review
+
 1. On the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade), in the left menu, click **Access reviews**.
 2. Click **New access review**.
 
    ![Screenshot of Azure AD access review settings](../media/azure-ad-create-access-review.png)
 
-3. In the **Name** box, type *Quarterly guest access review*.
+3. In the **Name** box, type a name.
 4. For **Frequency**, choose **Quarterly**.
 5. For **End**, choose **Never**.
 6. For **Scope**, choose **Guest users only**.
@@ -159,7 +162,7 @@ To restrict guests to web-ony access for groups and teams
 
 1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
 2. On the **Conditional Access - Policies** blade, click **New policy**.
-3. In the **Name** box, type *Guest user browser access*.
+3. In the **Name** box, type a name.
 4. Under **Assignments**, click **Users and groups**.
 5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
 6. Under **Assignments**, click **Cloud apps or actions**.
@@ -190,6 +193,7 @@ Note that this setting in the SharePoint admin center creates a supporting condi
 Requiring guests to authenticate on a regular basis can reduce the possibility of unknown users accessing your organization's content if a guest user's device isn't kept secure. You can configure a session timeout conditional access policy for guest users in Azure AD.
 
 To configure a guest session timeout policy
+
 1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
 2. On the **Conditional Access - Policies** blade, click **New policy**.
 3. In the **Name** box, type *Guest session timeout*.
@@ -210,6 +214,7 @@ Sensitive information types are predefined strings that can be used in policy wo
 You can create custom sensitive information types to help manage content specific to your organization. In this example, we'll create a custom sensitive information type for a highly sensitive project. We can then use this sensitive information type to automatically apply a sensitivity label.
 
 To create a sensitive information type
+
 1. In the [Microsoft 365 Compliance Center](https://compliance.microsoft.com), in the left navigation, expand **Classification**, and then click **Sensitive info types**.
 2. Click **Create**.
 3. For **Name** and **Description**, type **Project Saturn**, and then click **Next**.
@@ -222,11 +227,11 @@ To create a sensitive information type
 
 [Custom sensitive information types](https://docs.microsoft.com/Office365/SecurityCompliance/custom-sensitive-info-types)
 
-## Create an auto-labeling policy to assign a label based on a sensitive information type
+## Create an auto-labeling policy to assign a sensitivity label based on a sensitive information type
 
-Once the sensitive information type is created, 
+If you are using sensitivity labels in your organization, you can automatically apply a label to files that contain defined sensitive information types. 
 
-Need to be using sensitivity labels.
+To create an auto-labeling policy
 
 1. Open the [Microsoft 365 compliance admin center](https://compliance.microsoft.com).
 2. In the left navigation, click **Information protection**.
