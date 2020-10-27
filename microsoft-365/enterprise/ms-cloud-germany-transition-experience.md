@@ -27,15 +27,13 @@ Tenant migrations are designed to have minimal impact to administrators and user
 
 Key differences between Microsoft Cloud Deutschland and Office 365 services in the new German datacenter regions
 
-| Heading label 1 | Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) | Office 365 services in the new German datacenter regions |
+| Category | Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) | Office 365 services in the new German datacenter regions |
 |:-------|:-----|:-------|
 | Microsoft 365 services available for subscription with just one Office 365 tenant | 15 services (see [the FAQ](link to “What is the service availability between the different Office 365 cloud service offerings?” question in FAQ)) | 29 services (see [the FAQ](link to “What is the service availability between the different Office 365 cloud service offerings?” question in FAQ)) |
 | New features | No new features are available. | New features will be available consistent with Office 365 services. |
 | Data trustee | Yes | No |
 | Cross-tenant collaboration with global Office 365 tenants | No | Yes |
-| Customer data residency | Customer Data will be stored solely within German Data Centers. | Microsoft will store the following Customer Data at rest exclusively within Germany: 
-•	Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments)
-•	SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business |
+| Customer data residency | Customer Data will be stored solely within German Data Centers. | Microsoft will store the following Customer Data at rest exclusively within Germany: <ul><li> Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments) </li><li> SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business </li></ul> |
 | Applicable terms | [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) with [supplement](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=64) | [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 ||||
 
@@ -46,8 +44,7 @@ What is not changing:
 - Tenant initial domain (such as contoso.onmicrosoft.de) and tenant ID (GUID) and custom domains will persist after the migration. 
 - Authentication requests for resources that are migrated to Office 365 services are granted by the Office 365 services Azure authentication service (login.microsoftonline.com). During the migration, resources that remain still in Office365 Germany are authenticated by the existing Germany Azure service (login.microsoftonline.de)
 
-
-Things to Note:
+Considerations to note:
 
 - For managed domain accounts, once the initial Azure AD tenant copy completes (the first step of Azure AD migration to the Office 365 services Azure AD service), password changes, Self-service password reset (SSPR) changes, and password resets by administrators must be done from the Office 365 service portals. Requests to update passwords from the Germany service will not succeed at this point since the Azure AD tenant has been migrated to Office 365 services. Federated domain password resets are not affected as these are completed in the on-premises directory. 
 - Azure Sign-Ins are presented in the portal where the user attempts access. Audit Logs are available from only the Office 365 services endpoint after transition. You should save Sign-in and Audit logs from the Microsoft Cloud Deutschland portal prior to the completion of migration.
@@ -81,8 +78,6 @@ SharePoint Online and OneDrive for Business
 - Existing Skype for Business Online customers will transition to Microsoft Teams. See https://aka.ms/SkypeToTeams-Home for more information.
 Office 365 Video
 - Office 365 Video is being retired on March 1, 2021 and Office 365 Video will not be supported after the SharePoint Online migration to the new German datacenter regions is completed. Content from Office 365 Video will be migrated as part of the SharePoint Online migration. However, Videos in Office 365 Video will not play back in the Office 365 Video UI after the SharePoint migration. Learn [more](https://docs.microsoft.com/en-us/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline) on the Office 365 Video transition to Microsoft Stream.
-
-
 
 
 ## More information
