@@ -2,7 +2,7 @@
 title: "Create a secure guest sharing environment"
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -45,8 +45,8 @@ Multi-factor authentication greatly reduces the chances of an account being comp
 In this example, we'll set up multi-factor authentication for guests by using a conditional access policy in Azure Active Directory.
 
 To set up multi-factor authentication for guests
-1. In Microsoft Azure, search for *Conditional access*.
-2. On the **Conditional Access - Policies** blade, click **New policy**.
+1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
+2. On the **Conditional Access | Policies** blade, click **New policy**.
 3. In the **Name** field, type *Guest MFA*.
 4. Under **Assignments**, click **Users and groups**.
 5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
@@ -60,7 +60,7 @@ Now, guest will be required to enroll in multi-factor authentication before they
 
 ### More information
 
-[Planning a cloud-based Azure Multi-Factor Authentication deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planning an Azure Multi-Factor Authentication deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## Set up a terms of use for guests
 
@@ -71,8 +71,10 @@ To create a terms of use, you first need to create the document in Word or anoth
 To create an Azure AD terms of use
 1. Sign in to Azure as a Global Administrator, Security Administrator, or Conditional Access Administrator.
 2. Navigate to [Terms of use](https://aka.ms/catou).
-3. Click **New terms**.</br>
+3. Click **New terms**.
+
    ![Screenshot of Azure AD new terms of use settings](../media/azure-ad-guest-terms-of-use.png)
+
 4. In the **Name** and **Display name** boxes, type *Guest terms of use*.
 6. For **Terms of use document**, browse to the pdf file that you created and select it.
 7. Select the language for your terms of use document.
@@ -83,18 +85,17 @@ To create an Azure AD terms of use
 Once you've created the terms of use, the next step is to create a conditional access policy that displays the terms of use to guest users.
 
 To create a conditional access policy
-1. In Microsoft Azure, search for *Conditional access*.
-2. On the **Conditional Access - Policies** blade, click **New policy**.
+1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
+2. On the **Conditional Access | Policies** blade, click **New policy**.
 3. In the **Name** box, type *Guest user terms of use policy*.
 4. Under **Assignments**, click **Users and groups**.
-5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box, and then click **Done**.
+5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
 6. Under **Assignments**, click **Cloud apps or actions**.
 7. On the **Include** tab, select **Select apps**, and then click **Select**.
 8. On the **Select** blade, select **Microsoft Teams**, **Office 365 SharePoint Online**, and **Outlook Groups**, and then click **Select**.
-9. On the **Cloud apps or actions** blade, click **Done**.
-10. Under **Access controls**, click **Grant**.
-11. On the **Grant** blade, select **Guest terms of use**, and then click **Select**.
-12. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+9. Under **Access controls**, click **Grant**.
+10. On the **Grant** blade, select **Guest terms of use**, and then click **Select**.
+11. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
 
 Now, the first time a guest user attempts to access content or a team or site in your organization, they will be required to accept the terms of use.
 
@@ -102,6 +103,7 @@ Now, the first time a guest user attempts to access content or a team or site in
 > Using Conditional Access requires an Azure AD Premium P1 license. For more information, see [What is Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### More information
+
 [Azure Active Directory terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)
 
 ## Set up guest access reviews
@@ -266,56 +268,31 @@ To create a sensitive information type
 ### More information
 [Custom sensitive information types](https://docs.microsoft.com/Office365/SecurityCompliance/custom-sensitive-info-types)
 
-## Create a policy to assign a label based on a sensitive information type
+## Create an auto-labeling policy to assign a label based on a sensitive information type
 
-Once the sensitive information type is created, we can create a file policy in Microsoft Cloud App Security to apply the *Highly sensitive* label to documents that contain the *Project Saturn* string automatically.
+Once the sensitive information type is created, 
 
-> [!NOTE]
-> There is a replication process that makes sensitivity labels available in Cloud App Security. You may not see the label available for a policy right away.
 
-To create a sensitive information type-based file policy
-1. Open [Microsoft Cloud App Security](https://portal.cloudappsecurity.com).
-2. In the left navigation, expand **Control**, and then click **Policies**.
-3. Click **Create policy**, and then choose **File policy**.
-4. For **Policy name**, type *Project Saturn labeling*.
-5. Under **Create a filter for the files this policy will act on**, click X twice to delete the default filters.
-7. In the **Select a filter** list, choose **App**, and then select **Microsoft SharePoint Online** from the **Select apps...** list.
-8. Under **Inspection method**, choose **Data classification service**.
-9. On the **Choose inspection type** list, choose **Sensitive information type**.
-10. Search for and select the *Project Saturn* sensitivity label, and then click **Done**.</br>
-   ![Screenshot of Cloud App Security inspection method settings](../media/mcas-sensitive-info-type-project-saturn.png)
-11. Under **Governance**, expand **Microsoft SharePoint Online**.
-12. Select the **Apply classification label** check box and select the **Highly sensitive** label.
-13. Click **Create**.
 
-With the policy in place, when a user types "Project Saturn" into a document, Cloud App Security will automatically apply the *Highly sensitive* label when it scans the file.
 
-### More information
-[File policies](https://docs.microsoft.com/cloud-app-security/data-protection-policies)
 
-## Create a policy to remove guest access to highly sensitive files
 
-In the example in this article, files with the *Highly sensitive* label shouldn't be shared with guests. We can create a file policy in Cloud App Security that automatically removes guest access from files with that label.
 
-Note that this doesn't prevent users from sharing or re-sharing these files. You're still reliant on your users to follow your governance policies for files that are stored in sites that allow guest sharing. However, this can be a useful tool for removing guest access from files that had sensitive information added to them after they were shared with guests.
 
-To create a label-based file policy
-1. Open [Microsoft Cloud App Security](https://portal.cloudappsecurity.com).
-2. In the left navigation, expand **Control**, and then click **Policies**.
-3. Click **Create policy**, and then choose **File policy**.
-4. For **Policy name**, type *Project Saturn - remove guest access*.
-5. Under **Create a filter for the files this policy will act on**, click X twice to delete the default filters.
-6. In the **Select a filter** list, choose **App**, and then select **Microsoft SharePoint Online** from the **Select apps...** list.
-7. Click **Add a filter**.
-8. In the **Select a filter** list, choose **Classification label**, and then select **Azure Information Protection** from the **Select filter...** list.
-9. In the **Select classification label** list, select **Highly sensitive**.</br>
-   ![Screenshot of Cloud App Security policy filter settings](../media/mcas-sharepoint-confidential-label-filter.png)
-10. Under **Governance**, expand **Microsoft SharePoint Online**.
-11. Select the **Send policy-match digest to file owner** and **Remove external users** check boxes.
-12. For the custom notification message, type *This file is highly sensitive. Company policy prohibits sharing it with guests*.
-13. Click **Create**.
 
-It's important to note, that this policy removes access for files shared using a *Specific people* link. It doesn't remove access from unauthenticated (*Anyone*) links. It also doesn't remove access if the guest is a member of the site or team as a whole. If you plan to have highly sensitive documents in a site or team with guest members, consider using [private channels in Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9) and only allowing members of your organization in the private channels.
+With the policy in place, when a user types "Project Saturn" into a document, the auto-labeling policy will automatically apply the *Highly sensitive* label when it scans the file.
+
+## Create a DLP policy to remove guest access to highly sensitive files
+
+
+
+
+
+
+
+
+
+It's important to note that this policy doesn't remove access if the guest is a member of the site or team as a whole. If you plan to have highly sensitive documents in a site or team with guest members, consider using [private channels in Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9) and only allowing members of your organization in the private channels.
 
 ## Test the solution
 
