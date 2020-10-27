@@ -33,7 +33,7 @@ Removing the ability to create ServiceNow tickets through Secure Score by going 
 
 - The preview period for the ServiceNow connector is ending. This capability will no longer available by the end of 2020. Thank you for your feedback and continued support while we determine next steps.
 
-Adding 18 improvement actions related to Microsoft Defender Advanced Threat Protection:
+Adding 18 improvement actions related to Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
 
 Attack Surface Reduction (ASR) related recommendations:
 - Block executable content from email client and webmail
