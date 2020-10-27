@@ -153,7 +153,7 @@ It's important to note that guests can be given access to teams or groups, or to
 
 You can reduce your attack surface and ease administration by requiring guest users to access your teams, sites, and files by using a web browser only.
 
-For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional access policy. For SharePoint, this is configured in the SharePoint admin center.
+For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional access policy. For SharePoint, this is configured in the SharePoint admin center. (You can also [use sensitivity labels to restrict guests to web-only access](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).)
 
 To restrict guests to web-ony access for groups and teams
 
@@ -203,72 +203,11 @@ To configure a guest session timeout policy
 11. Select **1** and **Days** for the time period, and then click **Select**.
 12. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
 
-## Create sensitivity labels
-
-Sensitivity labels can be used in a variety of ways to classify and protect your organization's information. In this example, we'll look at how labels can be used to help you manage guest access to shared files and folders.
-
-First, we'll create three sensitivity labels in the Microsoft 365 Compliance Center:
-
-- General
-- sensitive
-- Highly sensitive
-
-Use the following procedure to create the *General* and *sensitive* labels.
-
-To create a classification label (General and sensitive)
-1. In the [Microsoft 365 Compliance Center](https://compliance.microsoft.com), in the left navigation, expand **Classification**, and then click **Sensitivity labels**.
-2. Click **Create a label**.
-3. In **Label name**, type *General* or *sensitive*.
-4. In **Tooltip**, type *General information that can be shared with employees, guests, and partners* or *sensitive information. Share only with employees and authorized guests*, and then click **Next**.
-5. Leave encryption **Off** and click **Next**.
-6. Leave content marking **Off** and click **Next**.
-7. Leave endpoint data loss prevention **Off** and click **Next**.
-8. Leave auto labeling **Off** and click **Next**.
-9. Click **Create**.
-
-With the *Highly sensitive* label, we'll add automatic watermarking of documents with the label.
-
-To create a classification label (Highly sensitive)
-1. Click **Create a label**.
-2. In **Label name**, type *Highly sensitive*.
-3. In **Tooltip**, type *Highly sensitive information. Do not share with guests*, and then click **Next**.
-4. Leave encryption **Off** and click **Next**.
-5. Turn content marking **On**, select the **Add a header** check box, and then click **Customize text**.
-6. Type *Highly sensitive* for the header text and click **Save**.
-7. On the **Content marking** page, turn content marking **On**.
-8. Select the **Add a watermark** check box, and then click **Customize text**.
-9. For **Watermark text**, type *Highly sensitive*.
-10. Type *24* for **Font size**, and then click **Save**.
-11. On the **Content marking** page, click **Next**.
-12. Leave endpoint data loss prevention **Off** and click **Next**.
-13. Leave auto labeling **Off** and click **Next**.
-14. Click **Create**.
-
-![Screenshot of sensitivity labels in the Microsoft 365 Compliance Center](../media/microsoft-365-sharing-sensitivity-labels.png)
-
-Once you've created the labels, the next step is to publish them. 
-
-To publish labels
-1. On the **Sensitivity labels** page, click **Publish labels**.
-2. Click **Choose labels to publish**.
-3. Click **Add**, select the labels that you created, and then click **Add**.
-4. Click **Done**.
-5. Click **Next**.
-6. Leave the users and groups set to **All** and click **Next**.
-7. In the **Apply this label by default to documents and email** list, choose **General**, and then click **Next**.
-8. On the **Policy settings** page, type *Document sensitivity* for the name, and then click **Next**.
-9. Click **Publish**.
-
-With the labels published, they're available to users of Office desktop apps. When users apply the **Highly sensitive** label, a watermark is automatically added to the document.
-
-### More information
-[Overview of sensitivity labels](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
-
 ## Create a sensitive information type for a highly sensitive project
 
 Sensitive information types are predefined strings that can be used in policy workflows to enforce compliance requirements. The Microsoft 365 Compliance Center comes with over one hundred sensitive information types, including driver's license numbers, credit card numbers, bank account numbers, etc.
 
-You can create custom sensitive information types to help manage content specific to your organization. In this example, we'll create a custom sensitive information type for a highly sensitive project. We can then use this sensitive information type to automatically apply a classification label.
+You can create custom sensitive information types to help manage content specific to your organization. In this example, we'll create a custom sensitive information type for a highly sensitive project. We can then use this sensitive information type to automatically apply a sensitivity label.
 
 To create a sensitive information type
 1. In the [Microsoft 365 Compliance Center](https://compliance.microsoft.com), in the left navigation, expand **Classification**, and then click **Sensitive info types**.
@@ -280,21 +219,41 @@ To create a sensitive information type
 7. If asked if you would like to test the sensitive information type, click **No**.
 
 ### More information
+
 [Custom sensitive information types](https://docs.microsoft.com/Office365/SecurityCompliance/custom-sensitive-info-types)
 
 ## Create an auto-labeling policy to assign a label based on a sensitive information type
 
 Once the sensitive information type is created, 
 
+Need to be using sensitivity labels.
+
+1. Open the [Microsoft 365 compliance admin center](https://compliance.microsoft.com).
+2. In the left navigation, click **Information protection**.
+3. On the **Auto-labeling** tab, click **Create auto-labeling policy**.
+4. On the **Choose info you want this label applied to** page, choose **Custom** and click **Next**.
+5. Type a name and description for the policy and click **Next**.
+6. On the **Choose locations where you want to apply the label** page, turn on **SharePoint sites** and click **Choose sites**.
+7. Add the URLs for the sites where you want to turn on auto-labeling and click **Done**.
+8. Click **Next**.
+9. On the **Set up common or advanced rules** page, choose **Common rules** and click **Next**.
+10. On the **Define rules for content in all locations** page, click **New rule**.
+11. On the **New rule** page, give the rule a name, click **Add condition**, and then click **Content contains sensitive info types**.
+12. Click **Add**, click **Sensitive info types**, choose the sensitive info types that you want to use, click **Add**, and then click **Save**.
+13. Click **Next**.
+14. Click **Choose a label**, select the label you want to use, and then click **Add**.
+15. Click **Next**.
+16. Leave the policy in simulation mode and click **Next**.
+17. Click **Create policy**, and then click **Done**.
+
+
+[Apply a sensitivity label to content automatically](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
 
 
 
 
 
-
-
-
-With the policy in place, when a user types "Project Saturn" into a document, the auto-labeling policy will automatically apply the *Highly sensitive* label when it scans the file.
+With the policy in place, when a user types "Project Saturn" into a document, the auto-labeling policy will automatically apply the specified label when it scans the file.
 
 ## Create a DLP policy to remove guest access to highly sensitive files
 
@@ -307,14 +266,6 @@ With the policy in place, when a user types "Project Saturn" into a document, th
 
 
 It's important to note that this policy doesn't remove access if the guest is a member of the site or team as a whole. If you plan to have highly sensitive documents in a site or team with guest members, consider using [private channels in Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9) and only allowing members of your organization in the private channels.
-
-## Test the solution
-
-To test the solution described in this article, create a Word document and save it to a document library. Share the file with a guest user. When the guest attempts to access the document, they should be required to enroll in multi-factor authentication, and then accept the terms of use.
-
-Once the guest has access to the document, type *Project Saturn* in the document and save it. Once Cloud App Security scans the document, the *Highly sensitive* label should be applied and the guest user should no longer have access to it.
-
-You can use the tools described in this article in various combinations to help create a productive but safe guest sharing environment for your organization.
 
 ## Additional options
 
