@@ -89,6 +89,6 @@ You can also <a href="https://docs.microsoft.com/azure/active-directory/authenti
 
 4. Select **Delete tenant**.
 
-5. If your Organization fails one or more checks, you see a link to more information on how to pass the checks. After you pass all checks, select **Delete** to complete the process.
+5. If your organization fails one or more checks, you see a link to more information on how to pass the checks. After you pass all checks, select **Delete** to complete the process.
 
 After you complete this final step, your account with Microsoft is closed and deleted.
