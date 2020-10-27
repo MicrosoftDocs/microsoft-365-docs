@@ -20,9 +20,9 @@ description: "In this article, you will learn about the available options to cre
 
 # Create a secure guest sharing environment
 
-In this article, we'll walk through a variety of options for creating a secure guest sharing environment in Microsoft 365. This is an example scenario to give you an idea of the options available. You can use these procedures in different combinations to meet the security and compliance needs of your organization. At the end of the article, we'll walk through a test case to see how some of these options work together.
+In this article, we'll walk through a variety of options for creating a secure guest sharing environment in Microsoft 365. This is an example scenario to give you an idea of the options available. You can use these procedures in different combinations to meet the security and compliance needs of your organization.
 
-This scenario includes:
+This article includes:
 
 - Setting up multi-factor authentication for guests.
 - Setting up a terms of use for guests.
