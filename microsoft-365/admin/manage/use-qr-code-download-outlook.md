@@ -21,8 +21,8 @@ description: "Learn how to use a QR code to authenticate and download Outlook mo
 
 As the Microsoft 365 administrator, you can allow your users to sign into the Outlook for Android or iOS apps on their mobile devices without having to enter their username and password. You can turn on the setting in the Microsoft 365 admin center that allows your users to scan a QR code to authenticate themselves in the Outlook mobile apps.
 
-In Outlook on the web or Outlook applications, there are notifications promoting the Outlook mobile apps, which can be managed by the admin through a setting in the Microsoft admin center or by using Exchange Powershell. 
-When a user interacts with them and sends themselves an SMS text message to download the app on their mobile device, a QR code will appear on their computer. Your users will be able to scan the QR code to log in on their phone. This QR code is a short-lived token that can only be redeemed once. You can manage this feature using Exchange PowerShell or the Microsoft admin center.
+In Outlook on the web or Outlook applications, there are notifications promoting the Outlook mobile apps, which can be managed by the administrator through a setting in the Microsoft admin center or by using Exchange Powershell.
+When a user interacts with them and sends themselves an SMS text message to download the app on their mobile device, a QR code will appear on their computer. Your users will be able to scan the QR code to log into their phone. This QR code is a short-lived token that can only be redeemed once. You can manage this feature using Exchange PowerShell or the Microsoft admin center.
 
 > [!NOTE]
 > In some cases, your users will have to re-authenticate on their computer to generate the QR code.
