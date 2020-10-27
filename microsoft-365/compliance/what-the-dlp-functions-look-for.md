@@ -26,175 +26,183 @@ Data loss prevention (DLP) includes sensitive information types, such as credit 
   
 This article explains what these functions look for, to help you understand how the predefined sensitive information types work. For more information, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
   
-## Func_Argentina_Unique_Tax_Key
+## Table of functions
+
+|function name  |function action  |
+|---------|---------|
+|Func_Argentina_Unique_Tax_Key|detects and validates Argentina Unique tax key|
+|Func_aba_routing|detects ABA routing number|
+|Func_alabama_drivers_license_number|detects Alabama driver’s license number|
+|Func_alaska_delaware_oregon_drivers_license_number|detects Alaska, Delaware, Oregon driver’s license number|
+|Func_alaska_drivers_license_number|detects Alaska driver’s license number|
+|Func_alberta_drivers_license_number|detects Alberta driver’s license number|
+|Func_Argentina_Unique_Tax_Key|detects Argentina Unique tax key|
+|Func_arizona_drivers_license_number|detects Arizona driver’s license number|
+|Func_arkansas_drivers_license_number|detects Arkansas driver’s license number|
+|Func_australian_business_number|detects Australia business number|
+|Func_Australian_Company_Number|detects Australia company number|
+|Func_australian_medical_account_number|detects Australia medical account number|
+|Func_australian_tax_file_number|detects Australia tax file number|
+|Func_austria_eu_ssn_or_equivalent|detects Austria social security number|
+|Func_austria_eu_tax_file_number|detects Austria tax file number|
+|Func_Austria_Value_Added_Tax|detects Austria Value Added Tax|
+|Func_belgium_national_number|detects Belgium national number|
+|Func_belgium_value_added_tax_number|detects Belgium value added tax number|
+|Func_brazil_cnpj|detects Brazil legal entity number (CNPJ)|
+|Func_brazil_cpf|detects Brazil CPF|
+|Func_brazil_rg|detects Brazil RG|
+|Func_british_columbia_drivers_license_number|detects British Columbia driver’s license number|
+|Func_bulgaria_eu_national_id_card|detects Bulgaria uniform civil number|
+|Func_california_drivers_license_number|detects California driver’s license number|
+|Func_canadian_sin|detects Canada sin|
+|Func_chile_id_card|detects Chile id card
+|Func_china_resident_id|detects China resident id|
+|Func_colorado_drivers_license_number|detects Colorado driver’s license number|
+|Func_connecticut_drivers_license_number|detects Connecticut driver’s license number|
+|Func_credit_card|detects credit card|
+|Func_croatia_id_card|detects Croatia id card|
+|Func_croatia_oib_number|detects Croatia OIB number|
+|Func_cyprus_eu_tax_file_number|detects Cyprus tax file number|
+|Func_czech_id_card|detects Czech id card|
+|Func_czech_id_card_new_format|detects Czech id card in new format|
+|Func_dea_number|detects DEA number|
+|Func_denmark_eu_tax_file_number|detects Denmark personal identification number|
+|Func_district_of_columbia_drivers_license_number|detects District of Columbia driver’s license number|
+|Func_estonia_eu_national_id_card|detects Estonia Personal Identification Code|
+|Func_eu_debit_card|detects EU debit card|
+|Func_finnish_national_id|detects Finnish national id|
+|Func_florida_drivers_license_number|detects Florida driver’s license number|
+|Func_florida_maryland_michigan_minnesota_drivers_license_number|detects Florida, Maryland, Michigan, Minnesota driver’s license number|
+|Func_formatted_itin|detects formatted US ITIN|
+|Func_fr_insee|detects France INSEE|
+|Func_fr_passport|detects France passport|
+|Func_france_eu_tax_file_number|detects France tax file number|
+|Func_france_value_added_tax_number|detects France value added tax number|
+|Func_french_drivers_license|detects French driver’s license|
+|Func_french_insee|detects French INSEE|
+|Func_georgia_drivers_license_number|detects Georgia driver’s license number|
+|Func_german_drivers_license|detects Germany driver’s license|
+|Func_german_passport|detects Germany passport|
+|Func_german_passport_data|detects Germany passport|
+|Func_germany_eu_tax_file_number|detects Germany tax file number|
+|Func_germany_value_added_tax_number|detects Germany value added tax number|
+|Func_greece_eu_ssn|detects Greece ssn (AMKA)|
+|Func_hawaii_drivers_license_number|detects Hawaii driver’s license number|
+|Func_hong_kong_id_card	|detects Hong Kong id card|
+|Func_hungarian_value_added_tax_number|detects Hungary value added tax number|
+|Func_hungary_eu_national_id_card|detects Hungary personal identification number|
+|Func_hungary_eu_ssn_or_equivalent|detects Hungary social security number|
+|Func_hungary_eu_tax_file_number|detects Hungary tax file number|
+|Func_iban|detects IBAN|
+|Func_idaho_drivers_license_number|detects Idaho driver’s license number|
+|Func_illinois_drivers_license_number|detects Illinois driver’s license number|
+|Func_india_aadhaar|detects India aadhaar|
+|Func_indiana_drivers_license_number|detects Indiana driver’s license number|
+|Func_iowa_drivers_license_number|detects Iowa driver’s license number|
+|Func_ireland_pps|detects Ireland PPS|
+|Func_israeli_national_id_number|detects Israel national id number|
+|Func_italy_eu_national_id_card	|detects Italy fiscal code|
+|Func_italy_value_added_tax_number|detects Italy value added tax number|
+|Func_japanese_my_number_corporate|detects Japan my number corporate|
+|Func_japanese_my_number_personal|detects Japan my number personal|
+|Func_jp_bank_account|detects Japan bank account|
+|Func_jp_bank_account_branch_code|detects Japan bank account branch code|
+|Func_jp_drivers_license_number|detects Japan driver’s license number|
+|Func_jp_passport|detects Japan passport|
+|Func_jp_resident_registration_number|detects Japan resident registration number|
+|Func_jp_sin|detects Japan SIN|
+|Func_jp_sin_pre_1997|detects Japan sin pre 1997|
+|Func_kansas_drivers_license_number|detects Kansas driver’s license number|
+|Func_kentucky_drivers_license_number|detects Kentucky driver’s license number|
+|Func_kentucky_massachusetts_virginia_drivers_license_number|detects Kentucky, Massachusetts, Virginia driver’s license number|
+|Func_latvia_eu_national_id_card|detects Latvia personal code|
+|Func_lithuania_eu_tax_file_number|detects Lithuania personal code|
+|Func_louisiana_drivers_license_number|detects Louisiana driver’s license number|
+|Func_luxemburg_eu_tax_file_number|detects Luxemburg national identification number (natural persons)|
+|Func_luxemburg_eu_tax_file_number_non_natural|detects Luxemburg national identification number (non natural persons)|
+|Func_maine_drivers_license_number|detects Maine driver’s license number|
+|Func_manitoba_drivers_license_number|detects Manitoba driver’s license number|
+|Func_maryland_drivers_license_number|detects Maryland driver’s license number|
+|Func_massachusetts_drivers_license_number|detects Massachusetts driver’s license number|
+|Func_mexico_population_registry_code|detects Mexico population registry code|
+|Func_michigan_minnesota_drivers_license_number|detects Michigan, Minnesota driver’s license number|
+|Func_minnesota_drivers_license_number|detects Minnesota driver’s license number|
+|Func_mississippi_oklahoma_drivers_license_number|detects Mississippi, Oklahoma driver’s license number|
+|Func_missouri_drivers_license_number|detects Missouri driver’s license number|
+|Func_montana_drivers_license_number|detects Montana driver’s license number|
+|Func_nebraska_drivers_license_number|detects Nebraska driver’s license number|
+|Func_netherlands_bsn|detects Netherlands BSN|
+|Func_netherlands_eu_tax_file_number|detects Netherlands tax file number|
+|Func_netherlands_value_added_tax_number|detects Netherlands value added tax number|
+|Func_nevada_drivers_license_number|detects Nevada driver’s license number|
+|Func_new_brunswick_drivers_license_number|detects New Brunswick driver’s license number|
+|Func_new_hampshire_drivers_license_number|detects New Hampshire driver’s license number|
+|Func_new_jersey_drivers_license_number	|detects New Jersey driver’s license number|
+|Func_new_mexico_drivers_license_number	|detects New Mexico driver’s license number|
+|Func_new_york_drivers_license_number	|detects New York driver’s license number|
+|Func_new_zealand_bank_account_number	|detects New Zealand bank account number|
+|Func_new_zealand_inland_revenue_number	|detects New Zealand inland revenue number|
+|Func_new_zealand_ministry_of_health_number|detects New Zealand ministry of health number|
+|Func_newfoundland_labrador_drivers_license_number|detects Newfoundland Labrador driver’s license number|
+|Func_newzealand_driver_license_number	|detects New Zealand driver license number|
+|Func_newzealand_social_welfare_number	|detects New Zealand social welfare number|
+|Func_north_carolina_drivers_license_number|detects North Carolina driver’s license number|
+|Func_north_dakota_drivers_license_number|detects North Dakota driver’s license number|
+|Func_norway_id_number	|detects Norway id number|
+|Func_nova_scotia_drivers_license_number|detects Nova Scotia driver’s license number|
+|Func_ohio_drivers_license_number	|detects Ohio driver’s license number|
+|Func_ontario_drivers_license_number	|detects Ontario driver’s license number|
+|Func_pennsylvania_drivers_license_number|detects Pennsylvania driver’s license number|
+|Func_pesel_identification_number	|detects Poland National ID (PESEL)|
+|Func_poland_eu_tax_file_number	|detects Poland tax file number|
+|Func_polish_national_id	|detects Poland identity card|
+|Func_polish_passport_number	|detects Polish passport number|
+|Func_polish_regon_number	|detects Polish REGON number|
+|Func_portugal_eu_tax_file_number|detects Portugal Tax Identification Number|
+|Func_prince_edward_island_drivers_license_number|detects Prince Edward Island driver’s license number|
+|Func_quebec_drivers_license_number	|detects Quebec driver’s license number|
+|Func_randomized_formatted_ssn	|detects randomized formatted US SSN|
+|Func_randomized_unformatted_ssn|detects randomized unformatted US SSN|
+|Func_rhode_island_drivers_license_number|detects Rhode Island driver’s license number|
+|Func_romania_eu_national_id_card	|detects Romania personal numeric code (CNP)|
+|Func_saskatchewan_drivers_license_number|detects Saskatchewan driver’s license number|
+|Func_slovakia_eu_national_id_card	|detects Slovakia personal number|
+|Func_slovenia_eu_national_id_card	|detects Slovenia Unique Master Citizen Number|
+|Func_slovenia_eu_tax_file_number	|detects Slovenia tax file number|
+|Func_south_africa_identification_number|detects South Africa identification number|
+|Func_south_carolina_drivers_license_number|detects South Carolina driver’s license number|
+|Func_south_dakota_drivers_license_number|detects South Dakota driver’s license number|
+|Func_south_korea_resident_number	|detects South Korea resident number|
+|Func_spain_eu_DL_and_NI_number_citizen	|detects Spain DL and NI number citizen|
+|Func_spain_eu_DL_and_NI_number_foreigner|detects Spain DL and NI number foreigner|
+|Func_spain_eu_driver's_license_number	|detects Spain driver's license number|
+|Func_spain_eu_tax_file_number	|detects Spain tax file number|
+|Func_spanish_social_security_number|detects Spanish social security number|
+|Func_ssn	|Function to detct non-randomized formatted US SSN|
+|Func_sweden_eu_tax_file_number|detects Sweden tax file number|
+|Func_swedish_national_identifier|detects Swedish national identifier|
+|Func_swiss_social_security_number_ahv|detects Swiss social security number AHV|
+|Func_taiwanese_national_id	|detects Taiwanese national id|
+|Func_tennessee_drivers_license_number|detects Tennessee driver’s license number|
+|Func_texas_drivers_license_number	|detects Texas driver’s license number|
+|Func_Thai_Citizen_Id	|detects Thai Citizen Id|
+|Func_Turkish_National_Id|detects Turkish National ID|
+|Func_uk_drivers_license|detects UK driver’s license|
+|Func_uk_eu_tax_file_number|detects UK unique taxpayer number|
+|Func_uk_nhs_number	|detects UK NHS number|
+|Func_uk_nino	|detects UK NINO|
+|Func_unformatted_canadian_sin|detects unformatted Canadian SIN|
+|Func_unformatted_itin	|detects unformatted US ITIN|
+|Func_unformatted_ssn	|detects non-randomized unformatted US SSN|
+|Func_usa_uk_passport	|detects USA and UK passport|
+|Func_utah_drivers_license_number|detects Utah driver’s license number|
+|Func_vermont_drivers_license_number|detects Vermont driver’s license number|
+|Func_virginia_drivers_license_number|detects Virginia driver’s license number|
+|Func_washington_drivers_license_number|detects Washington driver’s license number|
+|Func_west_virginia_drivers_license_number|detects West Virginia driver’s license number|
+|Func_wisconsin_drivers_license_number	|detects Wisconsin driver’s license number|
+|Func_wyoming_drivers_license_number	|detects Wyoming driver’s license number|
 
-Function to detect & perform validations to detect Argentina Unique tax key
-
-## Func_australian_business_number
-
-## Func_austria_eu_ssn_or_equivalent
-
-Function to detect & perform validations to detect Austria Social Security Number 
-
-## Func_austria_eu_tax_file_number
-
-Function to detect & perform validations to detect Austria  SSN 
-
-## Func_Austria_Value_Added_Tax
-
-## Func_belgium_eu_ssn_or_equivalent
-
-## Func_belgium_value_added_tax_number
-
-## Func_bulgaria_eu_national_id_card
-
-## Func_bulgaria_eu_tax_file_number
-
-## Func_credit_card
-
-Function to detect & perform validations to detect credit card
-
-## Func_croatia_eu_ssn_or_equivalent
-
-## Func_croatia_eu_tax_file_number
-
-## Func_cyprus_eu_tax_file_number
-
-## Func_czech_republic_eu_ssn_or_equivalent
-
-## Func_denmark_eu_ssn_or_equivalent
-
-## Func_denmark_eu_tax_file_number
-
-## Func_estonia_eu_national_id_card
-
-## Func_estonia_eu_tax_file_number
-
-## Func_finland_eu_ssn_or_equivalent
-
-## Func_finland_eu_tax_file_number
-
-## Func_france_eu_tax_file_number
-
-## Func_france_value_added_tax_number
-
-## Func_germany_eu_tax_file_number
-
-## Func_germany_value_added_tax_number
-
-## Func_greece_eu_ssn
-
-## Func_hungarian_value_added_tax_number
-
-## Func_hungary_eu_national_id_card
-
-## Func_hungary_eu_ssn_or_equivalent
-
-## Func_hungary_eu_tax_file_number
-
-## Func_ireland_eu_national_id_card
-
-## Func_ireland_eu_tax_file_number
-
-## Func_italy_eu_national_id_card
-
-## Func_italy_eu_tax_file_number
-
-## Func_italy_value_added_tax_number
-
-## Func_japanese_my_number_corporate
-
-## Func_japanese_my_number_personal
-
-## Func_latvia_eu_national_id_card
-
-## Func_latvia_eu_tax_file_number
-
-## Func_lithuania_eu_national_id_card
-
-## Func_lithuania_eu_tax_file_number
-
-## Func_luxemburg_eu_tax_file_number
-
-## Func_luxemburg_eu_tax_file_number_non_natural
-
-## Func_mexico_population_registry_code
-
-Function to detect & perform validations to detect Mexico Population registry code
-
-## Func_netherlands_eu_national_id_card
-
-## Func_netherlands_eu_tax_file_number
-
-## Func_netherlands_value_added_tax_number
-
-## Func_new_zealand_bank_account_number
-
-## Func_new_zealand_inland_revenue_number
-
-## Func_newzealand_driver_license_number
-
-## Func_newzealand_social_welfare_number
-
-## Func_poland_eu_tax_file_number
-
-## Func_polish_regon_number
-
-## Func_portugal_eu_national_id_card
-
-## Func_portugal_eu_tax_file_number
-
-## Func_randomized_formatted_ssn
-
-Function to detect & perform validations to detect formatted U.S Social Security Number issued post-2011
-
-## Func_randomized_unformatted_ssn
-
-Function to detect & perform validations to detect unformatted U.S Social Security Number issued post-2011
-
-## Func_romania_eu_national_id_card
-
-## Func_slovakia_eu_national_id_card
-
-## Func_slovenia_eu_national_id_card
-
-## Func_slovenia_eu_tax_file_number
-
-## Func_south_korea_resident_number
-
-Function to detect & perform validations to detect South Korea resident number
-
-## Func_spain_eu_DL_and_NI_number_citizen
-
-## Func_spain_eu_DL_and_NI_number_foreigner
-
-## Func_spain_eu_driver's_license_number
-
-## Func_spain_eu_tax_file_number
-
-## Func_ssn
-
-Function to detect & perform validations to detect formatted U.S Social Security Number issued pre-2011
-
-## Func_sweden_eu_ssn_or_equivalent
-
-## Func_sweden_eu_tax_file_number
-
-## Func_swiss_social_security_number_ahv
-
-## Func_Thai_Citizen_Id
-
-Function to detect & perform validations to detect Thai citizen ID
-
-## Func_Turkish_National_Id
-
-Function to detect & perform validations to detect Turkish National ID
-
-## Func_unformatted_ssn
-
-Function to detect & perform validations to detect unformatted U.S Social Security Number issued pre-2011
-
-## Func_uk_eu_tax_file_number
 
 ## Func_us_date
 
