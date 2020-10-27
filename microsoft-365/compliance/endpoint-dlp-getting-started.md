@@ -77,8 +77,14 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to meet these requirements.
 
 1. Must be running Windows 10 x64 build 1809 or later.
-2. All devices must be [Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), or Hybrid Azure AD joined.
-3. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+2. Antimalware Client Version is 4.18.2009.7 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623. Note: None of Windows Security components need to be active, you can run Endpoint DLP indepedent of Windows Security status.
+3. The following Windows Updates are installed. Note: These updates are not a pre-requisite to onboard a device to Endpoint DLP, but contain fixes for important issues thus must be installed before using the product.
+- For Windows 10 1809 - KB4559003, KB4577069, KB4580390
+- For Windows 10 1903 or 1909 - KB4559004, KB4577062, KB4580386
+- For Windows 10 2004 - KB4568831, KB4577063
+- For devices running Office 2016 (and not any other Office version) - KB4577063 
+4. All devices must be [Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), or Hybrid Azure AD joined.
+5. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 ## Onboarding devices into device management
 
