@@ -229,6 +229,10 @@ Near the top of the page, you can enter a start date, an end date, and you can f
 
 To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
 
+## Undo user Submissions
+
+Once the user submits a suspicious email to the custom mailbox, User and admin donot have an option to undo it. If the user would like to recover the email it will be avialable on Deleted or Junk Email folder to be recovered. 
+
 ### Submit messages to Microsoft from the custom mailbox
 
 If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis. This effectively moves a user submission to an admin submission.
