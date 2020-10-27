@@ -96,11 +96,11 @@ For more information about regulatory records, see [Compare restrictions for wha
 
 For instructions to configure retention labels for regulatory records, see [Declare records by using retention labels](declare-records.md).
 
-## Cohasset assessment 
+## Resources for specific regulatory requirements
 
-To help you comply with your regulatory requirements, you can download an assessment for Exchange Online that's been produced in partnership with Cohasset Associates. 
+This section will be updated as new guidance becomes available from the [Data Protection Resources, FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) page of the Service Trust Portal.
 
-This Cohasset assessment is available from the [Data Protection Resources, FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) page of the Service Trust Portal.
+### Cohasset assessment for Rule 17a-4
 
-![Title page of downloadable assessment by Cohasset Associates](../media/cohasset-associates-assessment.png)
-
+To help you comply with Rule 17a-4 issued by the Securities and Exchange Commission (SEC), you can download an assessment that's been produced in partnership with Cohasset Associates. 
+ 
