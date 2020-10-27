@@ -55,82 +55,30 @@ Use this procedure to create a new sensitive information type that you fully def
 2. Fill in values for **Name** and **Description** and choose **Next**.
 3. Choose **Create pattern**. You can create multiple patterns, each with different elements and confidence levels, as you define your new sensitive information type.
 4. Choose the default confidence level for the pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
-5. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**.
+5. Choose and define **Primary element**. The primary element can be a **Regular expression** with an optional validator, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. For more information on DLP functions, see [What the DLP functions look for](what-the-dlp-functions-look-for.md)
 6. Fill in a value for **Character proximity**.
-7. (Optional) If you have **Supporting elements** or any **Additional checks** add them. If needed you can group your **Supporting elements**.
-8. Choose **Create**.
-9. Choose **Next**.
-10. Choose the **recommended confidence level** for this sensitive information type.
-11. Check your setting and choose **Submit**.
+7. (Optional) Add supporting elements if you have any. Supporting elements can be a regular expression with an optional validator, a keyword list, a keyword dictionary or one of the pre-defined functions. 
+8.	(Optional) Add Additional checks from the list of available checks
+9. Choose **Create**.
+10. Choose **Next**.
+11. Choose the **recommended confidence level** for this sensitive information type.
+12. Check your setting and choose **Submit**.
 
 > [!IMPORTANT]
 > Microsoft 365 uses the search crawler to identify and classify sensitive information in SharePoint Online and OneDrive for Business sites. To identify your new custom sensitive information type in existing content, the content must be re-crawled. Content is crawled based on a schedule, but you can manually re-crawl content for a site collection, list, or library. For more information, see [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
-
-<!-- Here's a scenario: You want a custom sensitive information type that detects 9-digit employee numbers in content, along with the keywords "employee" "ID" and "badge". To create this custom sensitive information type, do the following steps:
-
-1. In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and click **Create**.
-
-    ![Location of Sensitive info types and Create button](../media/scc-cust-sens-info-type-new.png)
-
-2. In the **Choose a name and description** page that opens, enter the following values:
-
-  - **Name**: Employee ID.
-
-  - **Description**: Detect nine-digit Contoso employee ID numbers.
-
-    ![Name and description page](../media/scc-cust-sens-info-type-new-name-desc.png)
-
-    When you're finished, click **Next**.
-
-3. In the **Requirements for matching** page that opens, click **Add an element** configure the following settings:
-
-    - **Detect content containing**:
- 
-      a. Click **Any of these** and select **Regular expression**.
-
-      b. In the regular expression box, enter `(\s)(\d{9})(\s)` (nine-digit numbers surrounded by white space).
-  
-    - **Supporting elements**: Click **Add supporting elements** and select **Contains this keyword list**.
-
-    - In the **Contains this keyword list** area that appears, configure the following settings:
-
-      - **Keyword list**: Enter the following value: employee,ID,badge.
-
-      - **Minimum count**: Leave the default value 1.
-
-    - Leave the default **Confidence level** value 60. 
-
-    - Leave the default **Character proximity** value 300.
-
-    ![Requirements for matching page](../media/scc-cust-sens-info-type-new-reqs.png)
-
-    When you're finished, click **Next**.
-
-4. On the **Review and finalize** page that opens, review the settings and click **Finish**.
-
-    ![Review and finalize page](../media/scc-cust-sens-info-type-new-review.png) -->
-
-12. On the **Data classification** page, you'll see all the sensitive information types listed. Choose **Refresh** and then browse for or use the search tool to find the sensitive information type you just created.
+13. On the **Data classification** page, you'll see all the sensitive information types listed. Choose **Refresh** and then browse for or use the search tool to find the sensitive information type you just created.
 
 ## Test a sensitive information type
 
-You can test any sensitive information type in the list. We suggest that you test every sensitive information type that you create before using it in a police
+You can test any sensitive information type in the list. We suggest that you test every sensitive information type that you create before using it in a policy.
 
 1. Prepare two files, like a Word document. One with content that matches the elements you specified in your sensitive information type and one that doesn't match.
 2. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list to open the details pane and choose **Test**.
 3. Upload a file and choose **Test**.
 4. On the **Matches results** page, review the results and choose **Finish**.
 
-##
-
 ## Modify custom sensitive information types in the Compliance Center
-
-
-<!-- check to see if this note contradicts the guidance in "customize a built in sensitive information type customize-a-built-in-sensitive-information-type it sure seems like it does-->
-<!-- - You can only modify custom sensitive information types; you can't modify built-in sensitive information types. But you can use PowerShell to export built-in custom sensitive information types, customize them, and import them as custom sensitive information types. For more information, see [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md).
-
-- You can only modify custom sensitive information types that you created in the UI. If you used the [PowerShell procedure](create-a-custom-sensitive-information-type-in-scc-powershell.md) to import a custom sensitive information type rule package, you'll get an error. -->
 
 1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to modify choose **Edit**.
 2. You can add other patterns, with unique primary and supporting elements, confidence levels, character proximity, and additional checks or edit/remove the existing ones. For more information, see [Create a custom sensitive information type](#create-a-custom-sensitive-information-type).
@@ -157,7 +105,7 @@ Use this procedure to create a new sensitive information type that is based on a
 5. Choose your sensitive information type copy and choose **Edit**. 
 6. Give your new sensitive information type a new **Name** and **Description**.
 7. You can choose to edit or remove the existing patterns and add new ones. Choose the default confidence level for the new pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
-8. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**.
+8. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. See, [What the DLP functions look for](what-the-dlp-functions-look-for.md) for more
 9. Fill in a value for **Character proximity**.
 10. (Optional) If you have **Supporting elements** or any **Additional checks** add them. If needed you can group your **Supporting elements**.
 11. Choose **Create**.
