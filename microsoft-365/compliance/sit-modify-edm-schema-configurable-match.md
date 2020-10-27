@@ -99,8 +99,9 @@ The `ignoredDelimiters` flag doesn't support:
 
 7. Update your schema by running these cmdlets one at a time:
 
-    `$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0`
-    `Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true`
+`$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0`
+
+`Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true`
 
 8. If necessary, update the data file to match the new schema version
 
