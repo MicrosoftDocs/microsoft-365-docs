@@ -11,7 +11,7 @@
 |Japan                        |JPN     |Southeast or East Asia datacenters|
 |Korea                        |KOR     |Southeast or East Asia datacenters|
 |North America                |NAM     |US datacenters                    |
-|Norway (coming soon)         |NOR     |(eDiscovery data location coming soon)|
+|Norway                       |NOR     |(eDiscovery data location coming soon)|
 |South Africa                 |ZAF     |Southeast or East Asia datacenters|
 |Switzerland                  |CHE     |Europe datacenters                |
 |United Arab Emirates         |ARE     |Southeast or East Asia datacenters|
