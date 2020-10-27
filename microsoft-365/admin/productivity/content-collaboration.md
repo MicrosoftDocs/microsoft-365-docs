@@ -24,19 +24,19 @@ description: "Details of the Content collaboration Productivity Score."
 
 # Content collaboration – People experiences
 
-Productivity Score helps organizations transform how work gets done with insights about how people use Microsoft 365 apps and the technology experiences that support them. The score reflects your organization&#39;s performance for people and technology experiences and compares your score with organizations like yours. Content collaboration is one of the measures that falls under people experiences. Check out the Productivity Score overview [topic](https://docs.microsoft.com/microsoft-365/admin/productivity/productivity-score).
+Productivity Score helps you transform how work gets done with metrics about how people use Microsoft 365 apps and the technology experiences that support them. The score reflects your organization&#39;s performance for people and technology experiences and compares your score with organizations like yours. Content collaboration is one of the measures that falls under people experiences. Check out the  [Productivity Score overview](https://docs.microsoft.com/microsoft-365/admin/productivity/productivity-score).
 
 ## Why your organization&#39;s content collaboration score matters
 
-Microsoft understands that a fundamental pillar for organizational productivity is how people collaborate on content in files. With your content on Microsoft 365, people access, create, modify, and collaborate on content with other people from any location. Research shows that when people collaborate with online files, each person saves an average of 100 minutes, or almost 2 hours, per week. See the [evidence](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+A fundamental pillar for organizational productivity is how people collaborate in files. With your content on Microsoft 365, people access, create, modify, and collaborate on content with other people from any location. Research shows that when people collaborate with online files, each person saves an average of 100 minutes per week. See the [evidence](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
 ## How we calculate the content collaboration score
 
-We provide a primary insight in the experience that contains the key metrics for this category. Subsequently, a scoring framework detailed below is used for these metrics to calculate your score.
+We provide a primary insight that contains the key metrics for content collaboration. Then, a scoring framework detailed below is used for these metrics to calculate your score.
 
 ## Primary insight
 
-Microsoft OneDrive for Business and SharePoint enable people to easily create, read, and discover their individual and shared content in Microsoft 365 from across devices and applications. They also allow people to securely share and collaborate on content. The primary insight looks at all the people who can use OneDrive for Business and SharePoint, and within them, how many read, create, and collaborate on content stored on OneDrive for Business and SharePoint.
+Microsoft OneDrive for Business and SharePoint enable people to easily create, read, and discover their individual and shared content in Microsoft 365 from across devices and applications. They also allow people to securely share and collaborate on content. The primary insight contains information from everyone who can use OneDrive for Business and SharePoint. Additionally it breaks down the details about how many people read, create, and collaborate on content stored in OneDrive for Business and SharePoint.
 
 :::image type="content" source="../../media/collabscore_primary.jpg" alt-text="Primary insights from communication collaboration score.":::
 
@@ -44,7 +44,7 @@ Microsoft OneDrive for Business and SharePoint enable people to easily create, r
 Types considered for this information include Word, Excel, PowerPoint, OneNote, and PDF files.
 
 1. **Header:** Shows the percentage of people who have access to OneDrive or SharePoint who are collaborating on content.
-2. **Body:** Provides more information on how the behaviors of reading and creating files online are strongly linked to collaborating on files.
+2. **Body:** Provides more information on how the behaviors of reading and creating files online are linked to collaborating on files.
 3. **Visualization (current state):**
     - Horizontal bars where the blue-colored portions represent the percentage of people enabled for file collaboration through OneDrive or SharePoint who are **readers, creators,** or **collaborators** on online files in the last 28 days.
 
@@ -75,17 +75,17 @@ Types considered for this information include Word, Excel, PowerPoint, OneNote, 
 
 ### Trend Visualization of primary insight
 
-This chart shows the trend-line of the primary insight key metrics for readers, creators, and collaborators, over the last 180 days. Each data point on the line chart is an aggregate of activity for the last 28 days. (Each data point for creators provides a count of all people who were tagged as creators within the last 28 days for each date along the x axis.)
+Trend visualizations chart shows the trend-line of the primary insight key metrics for readers, creators, and collaborators, over the last 180 days. Each data point on the chart is an aggregate of activity for the last 28 days. Each creator data-point provides a count of all people who were tagged as creators within the last 28 days for each date on the x axis.
 
 :::image type="content" source="../../media/trendvisualization.jpg" alt-text="Chart with trends for collaboration primary insight.":::
 
 ### Scoring framework
 
-The content collaboration score measures whether people are consistently reading, creating, or collaborating on online files (Word, Excel, PowerPoint, OneNote, or PDF) in OneDrive or SharePoint.
+The content collaboration score measures whether people are consistently reading, creating, or collaborating on online Office files, such as Word, Excel, PowerPoint, OneNote, or PDF, in OneDrive or SharePoint.
 
 ## Explore how your organization collaborates
 
-We also provide you with supporting information that helps you gain additional visibility into how people in your organization are collaborating on content. These additional metrics do not directly contribute to your Productivity Score but are relevant in helping you create an action plan to help drive optimizations to the way people work in your organization.
+We also provide you with information that helps you gain visibility into how people in your organization collaborate on content. These additional metrics don't directly contribute to your Productivity Score but help you create an action plan to optimize the way people work.
 
 ## Creating files to OneDrive or SharePoint
 
@@ -94,12 +94,12 @@ We also provide you with supporting information that helps you gain additional v
 1. **Header:** Highlights the percentage of people active on Microsoft 365 Office applications who create files on OneDrive or SharePoint.
 2. **Body:** Provides information about the value of content creation in OneDrive and SharePoint.
 3. **Visualization:** The breakdown in the visualization represents the extent to which people who are using Microsoft Office apps to create files in OneDrive and SharePoint, as follows:
-      - **OneDrive:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represent the percentage of people active on Office applications creating content on OneDrive as:
-        - Numerator: The number of people who create, modify, upload, sync, check in, copy, or move online files (Microsoft Word, Excel, PowerPoint, or OneNote) in OneDrive within the last 28 days.</br>
-        - Denominator: The number of people who have access to OneDrive or SharePoint and access files on Microsoft Word, Excel, PowerPoint, or OneNote within the last 28 days.
+      - **OneDrive:** The blue (colored) portion of the bar and the fraction on the bar represent the percentage of people active on Office applications creating content on OneDrive as follows:
+        - Numerator: The number of people who create, modify, upload, sync, check in, copy, or move online Office files in OneDrive within the last 28 days.</br>
+        - Denominator: The number of people who have access to OneDrive or SharePoint and access office files within the last 28 days.
       - **SharePoint:** The blue (colored) portion of the bar and the fraction on the bar represent the percentage of people who are active on Office applications and create content on SharePoint as:</br>
-         - Numerator: The number of people who create, modify, upload, sync, check in, copy, or move online files (Microsoft Word, Excel, PowerPoint, or OneNote files) on SharePoint within the last 28 days</br>
-        - Denominator: The number of people who have access to OneDrive or SharePoint and have accessed files on Microsoft Word, Excel, PowerPoint, or OneNote within the last 28 days
+         - Numerator: The number of people who create, modify, upload, sync, check in, copy, or move online Office files (Microsoft Word, Excel, PowerPoint, or OneNote files) on SharePoint within the last 28 days.</br>
+        - Denominator: The number of people who have access to OneDrive or SharePoint and have accessed Office files within the last 28 days.
 
 4. **Link to resources:** Select this link to view help content.
 
@@ -159,7 +159,16 @@ We also provide you with supporting information that helps you gain additional v
 4. **Link to resources:** Select this link to view help content.
 ## Network performance strength for OneDrive and SharePoint
 
-TBD
+:::image type="content" source="../../media/networkperfstrength.png" alt-text="Chart showing network performance for OneDrive and SharePoint.":::
+
+1. **Header:** Highlights the percentage of devices out of all tested that has poor network connection to OneDrive and SharePoint. 
+2. **Body:** Provides information about why network connection performance important for collaboration. 
+3. **Visualization:** shows a percentage of devices with different levels of network connectivity performance in regard to OneDrive and SharePoint:
+      - **80-100(best)**: The dark green (colored) portion of the bar represent percentage of devices with best performance.
+      - **60-80**: The green (colored) portion of the bar represent percentage of devices with network performance score between 60-80. 
+      - **40-60**: The orange (colored) portion of the bar represent percentage of devices with network performance score between 40-60. 
+      - **20-40**: The red (colored) portion of the bar represent percentage of devices with network performance score between 20-40. 
+      - **0-20**: The dark red (colored) portion of the bar represent percentage of devices with worst network performance score between 0-20. 
 
 ## People in your organization
 
@@ -188,5 +197,3 @@ The following columns are presented in the table at the user level:
 - **Emailed file attachments:** Boolean value indicating if the person sent email with files (not on OneDrive or SharePoint) as attachments in the last 28 days.
 - **Emailed online file attachments:** Boolean value indicating if the person sent email with links to online files (on OneDrive or SharePoint) as attachments in the last 28 days.
 - **Embed link to online file:** Boolean value indicating if the person sent email with links to online files (on OneDrive or SharePoint) embedded in the email body in the last 28 days
-
-##
