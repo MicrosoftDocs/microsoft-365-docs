@@ -41,7 +41,7 @@ Key differences between Microsoft Cloud Deutschland and Office 365 services in t
 
 ## Azure Active Directory (Azure AD)
 
-What Not Change:
+What is not changing:
 
 - Tenant initial domain (such as contoso.onmicrosoft.de) and tenant ID (GUID) and custom domains will persist after the migration. 
 - Authentication requests for resources that are migrated to Office 365 services are granted by the Office 365 services Azure authentication service (login.microsoftonline.com). During the migration, resources that remain still in Office365 Germany are authenticated by the existing Germany Azure service (login.microsoftonline.de)
@@ -81,7 +81,6 @@ SharePoint Online and OneDrive for Business
 - Existing Skype for Business Online customers will transition to Microsoft Teams. See https://aka.ms/SkypeToTeams-Home for more information.
 Office 365 Video
 - Office 365 Video is being retired on March 1, 2021 and Office 365 Video will not be supported after the SharePoint Online migration to the new German datacenter regions is completed. Content from Office 365 Video will be migrated as part of the SharePoint Online migration. However, Videos in Office 365 Video will not play back in the Office 365 Video UI after the SharePoint migration. Learn [more](https://docs.microsoft.com/en-us/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline) on the Office 365 Video transition to Microsoft Stream.
-
 
 
 
