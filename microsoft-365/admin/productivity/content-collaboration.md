@@ -34,7 +34,7 @@ A fundamental pillar for organizational productivity is how people collaborate i
 
 We provide a primary insight that contains the key metrics for content collaboration. Then, a scoring framework detailed below is used for these metrics to calculate your score.
 
-## Primary insight
+### Primary insight
 
 Microsoft OneDrive for Business and SharePoint enable people to easily create, read, and discover their individual and shared content in Microsoft 365 from across devices and applications. They also allow people to securely share and collaborate on content. The primary insight contains information from everyone who can use OneDrive for Business and SharePoint. Additionally it breaks down the details about how many people read, create, and collaborate on content stored in OneDrive for Business and SharePoint.
 
@@ -73,7 +73,7 @@ Types considered for this information include Word, Excel, PowerPoint, OneNote, 
 1. **Link to resources:** Select this link to view collated videos, and other related help content.
 
 
-### Trend Visualization of primary insight
+#### Trend Visualization of primary insight
 
 Trend visualizations chart shows the trend-line of the primary insight key metrics for readers, creators, and collaborators, over the last 180 days. Each data point on the chart is an aggregate of activity for the last 28 days. Each creator data-point provides a count of all people who were tagged as creators within the last 28 days for each date on the x axis.
 
@@ -87,7 +87,7 @@ The content collaboration score measures whether people are consistently reading
 
 We also provide you with information that helps you gain visibility into how people in your organization collaborate on content. These additional metrics don't directly contribute to your Productivity Score but help you create an action plan to optimize the way people work.
 
-## Creating files to OneDrive or SharePoint
+### Creating files to OneDrive or SharePoint
 
 :::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Chart that shows number of people who create files in OneDrive or SharePoint":::
 
@@ -103,7 +103,7 @@ We also provide you with information that helps you gain visibility into how peo
 
 4. **Link to resources:** Select this link to view help content.
 
-## Use of attachments in email
+### Use of attachments in email
 
 :::image type="content" source="../../media/emailattachments.png" alt-text="Use of email attachments.":::
 
@@ -121,7 +121,7 @@ We also provide you with information that helps you gain visibility into how peo
         - Denominator: The number of people using attachments in any form in emails within the last 28 days
 4. **Link to resources:** Select this link to view help content.
 
-## Sharing of online files
+### Sharing of online files
 
 :::image type="content" source="../../media/sharingonlinefiles.png" alt-text="Chart that shows number of people sharing files online.":::
 
@@ -136,7 +136,7 @@ We also provide you with information that helps you gain visibility into how peo
         - Denominator: The total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days
 4. **Link to resources:** Select this link to view help content.
 
-## Intensity of files collaborated on
+### Intensity of files collaborated on
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="Chart showing how many files were most collaborated on.":::
 
@@ -157,7 +157,8 @@ We also provide you with information that helps you gain visibility into how peo
         - **Denominator:** The total number of people who have had access to OneDrive or SharePoint for at least 1 ofthe last 28 days
         
 4. **Link to resources:** Select this link to view help content.
-## Network performance strength for OneDrive and SharePoint
+
+### Network performance strength for OneDrive and SharePoint
 
 :::image type="content" source="../../media/networkperfstrength.png" alt-text="Chart showing network performance for OneDrive and SharePoint.":::
 
@@ -170,7 +171,7 @@ We also provide you with information that helps you gain visibility into how peo
       - **20-40**: The red (colored) portion of the bar represent percentage of devices with network performance score between 20-40. 
       - **0-20**: The dark red (colored) portion of the bar represent percentage of devices with worst network performance score between 0-20. 
 
-## People in your organization
+### People in your organization
 
 This section helps you act on the metrics you want to focus on by providing user-level details of activities relevant to all the insights shown.
 
