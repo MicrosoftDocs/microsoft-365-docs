@@ -40,7 +40,7 @@ For instructions on how to configure these settings, see [Configure outbound spa
 
 - Disabling automatic forwarding will also disable Inbox rules that redirect messages to external addresses.
 
-- Disabling automatic forwarding will also disable forwarding performed by administrators through EAC or powershell to external addresses.
+- Disabling automatic forwarding will also disable forwarding performed by administrators through the Exchange admin center or PowerShell to external addresses.
 
 - Automatic forwarding of messages between internal users isn't affected by the settings in outbound spam filter policies.
 
