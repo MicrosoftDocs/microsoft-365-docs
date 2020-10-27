@@ -96,7 +96,7 @@ Individual users can try out Cortana voice assistance in the Teams mobile app by
 
 4. Move the toggle to **On** or **Off**, depending on whether you want Cortana voice assistance on the device.
 
-[Learn more about Cortana voice assistance in Teams](https://docs.microsoft.com/en-us/microsoftteams/cortana-in-teams)
+[Learn more about Cortana voice assistance in Teams](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
 
 ### Play My Emails
 
