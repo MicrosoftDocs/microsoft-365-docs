@@ -246,14 +246,11 @@ Need to be using sensitivity labels.
 16. Leave the policy in simulation mode and click **Next**.
 17. Click **Create policy**, and then click **Done**.
 
+With the policy in place, when a user types "Project Saturn" into a document, the auto-labeling policy will automatically apply the specified label when it scans the file.
+
+### More information
 
 [Apply a sensitivity label to content automatically](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
-
-
-
-
-
-With the policy in place, when a user types "Project Saturn" into a document, the auto-labeling policy will automatically apply the specified label when it scans the file.
 
 ## Create a DLP policy to remove guest access to highly sensitive files
 
