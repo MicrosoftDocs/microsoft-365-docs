@@ -59,7 +59,16 @@ Recommended capabilities for protecting identities and devices that access Micro
 |**Item**|**Description**|
 |:-----|:-----|
 |[![Model poster: Identity and device protection for Microsoft 365](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [View as a PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx) <br/> Updated September 2020|It's important to use consistent levels of protection across your data, identities, and devices. This model shows you which capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
-   
+ 
+<a name="BKMK_ediscovery"></a>
+### Advanced eDiscovery architecture in Microsoft 365
+
+Advanced eDiscovery end-to-end workflow and data flow, including within Microsoft 365 Multi-Geo environments. 
+
+|**Item**|**Description**|
+|:-----|:-----|
+|[![Model poster: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [View as an image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Download as a PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx) <br/> Updated October 2020|Includes: <ul><li>  End-to-end workflow in a single environment</li><li>End-to-end workflow in a Microsoft 365 Multi-Geo environment </li><li>End-to-end data flow supporting the EDRM workflow</li> |
+  
 <!--
 
 <a name="BKMK_O365fileprotect"></a>

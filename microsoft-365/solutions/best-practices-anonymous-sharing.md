@@ -121,8 +121,6 @@ To create a DLP rule
 13. Choose your test options and click **Next**.
 14. Click **Submit**, and then click **Done**.
 
-limit-accidental-exposure-dlp-anyone-links.png
-
 ## Protect against malicious files
 
 When you allow anonymous users to upload files, you're at an increased risk of someone uploading a malicious file. In Microsoft 365, you can use the *Safe Attachments* feature in Advanced Threat Protection to automatically scan uploaded files and quarantine files that are found to be unsafe.
