@@ -28,6 +28,8 @@ Safe Documents is a feature in Microsoft 365 E5 or Microsoft 365 E5 Security tha
 
 - Safe Documents is available only to users with *Microsoft 365 E5* or *Microsoft 365 E5 Security* licenses. These licenses are not included in Office 365 Advanced Threat Protection (ATP) plans.
 
+- Safe Documents is supported in Microsoft 365 Apps for enterprise (formerly known as Office 365 ProPlus) version 2004 or later.
+
 - You open the Security & Compliance Center at <https://protection.office.com>. To go directly to the **ATP Safe Attachments** page, open <https://protection.office.com/safeattachmentv2>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
@@ -86,9 +88,6 @@ To verify that you've enabled and configured Safe Documents, do any of the follo
   ```
 
 - The following files are available to test Safe Documents protection. These documents are similar to the EICAR.TXT file for testing anti-malware and anti-virus solutions. The files are not harmful, but they will trigger Safe Documents protection.
-
-> [!NOTE]
-> Minimum Version is Office Pro Plus Version 2004+ for Safe Documents to work.
 
   - [SafeDocsDemo.docx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.docx)
   - [SafeDocsDemo.pptx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.pptx)
