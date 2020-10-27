@@ -126,8 +126,10 @@ Once the program has been created, we can create a guest access review and assoc
 
 To set up a guest user access review
 1. On the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade), in the left menu, click **Access reviews**.
-2. Click **New access review**.</br>
+2. Click **New access review**.
+
    ![Screenshot of Azure AD access review settings](../media/azure-ad-create-access-review.png)
+
 3. In the **Name** box, type *Quarterly guest access review*.
 4. For **Frequency**, choose **Quarterly**.
 5. For **End**, choose **Never**.
@@ -139,36 +141,49 @@ To set up a guest user access review
 
 A separate access review is created for each group that you specify. Group owners of each groups will be emailed quarterly to approve or deny guest access to their groups.
 
-It's important to note that guests can be given access to teams or groups, or to individual files and folders. When given access to files and folders, guests may not be added to any particular group. If you want to do access reviews on guest users who don't belong to a team or group, you can create a dynamic group in Azure AD to contain all guests and then create an access review for that group.
+It's important to note that guests can be given access to teams or groups, or to individual files and folders. When given access to files and folders, guests may not be added to any particular group. If you want to do access reviews on guest users who don't belong to a team or group, you can create a dynamic group in Azure AD to contain all guests and then create an access review for that group. Site owners can also manage [guest expiration for the site](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
 
 ### More information
+
 [Manage guest access with Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/governance/manage-guest-access-with-access-reviews)
 
 [Create an access review of groups or applications in Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
 
 ## Set up web-only access for guest users
 
-You can reduce your attack surface and ease administration by requiring guest users to access your teams, sites, and files by using a web browser only. This is done with an Azure AD conditional access policy.
+You can reduce your attack surface and ease administration by requiring guest users to access your teams, sites, and files by using a web browser only.
 
-To restrict guests to web-ony access
-1. In Microsoft Azure, search for *Conditional access*.
+For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional access policy. For SharePoint, this is configured in the SharePoint admin center.
+
+To restrict guests to web-ony access for groups and teams
+
+1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
 2. On the **Conditional Access - Policies** blade, click **New policy**.
 3. In the **Name** box, type *Guest user browser access*.
 4. Under **Assignments**, click **Users and groups**.
-5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box, and then click **Done**.
+5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
 6. Under **Assignments**, click **Cloud apps or actions**.
 7. On the **Include** tab, select **Select apps**, and then click **Select**.
-8. On the **Select** blade, select **Microsoft Teams**, **Office 365 SharePoint Online**, and **Outlook Groups**, and then click **Select**.
-9. On the **Cloud apps or actions** blade, click **Done**.
-10. Under **Assignments**, click **Conditions**.
-11. On the **Conditions** blade, click **Client apps**.
-12. On the **Client apps** blade, click **Yes** for **Configure**, and then select the **Mobile apps and desktop clients** setting.</br>
+8. On the **Select** blade, select **Microsoft Teams** and **Outlook Groups**, and then click **Select**.
+9. Under **Assignments**, click **Conditions**.
+10. On the **Conditions** blade, click **Client apps**.
+11. On the **Client apps** blade, click **Yes** for **Configure**, and then select the **Mobile apps and desktop clients**, **Exchange ActiveSync clients**, and **Other clients** settings. Clear the **Browser** check box.
+
     ![Screenshot of Azure AD conditional access client apps settings](../media/azure-ad-conditional-access-client-mobile.png)
-13. Click **Done**, and then on the **Conditions** blade, click **Done** again.
+
+13. Click **Done**.
 14. Under **Access controls**, click **Grant**.
 15. On the **Grant** blade, select **Require device to be marked as compliant** and **Require Hybrid Azure AD joined device**.
 16. Under **For multiple controls**, select **Require one of the selected controls**, and then click **Select**.
 17. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+
+To restrict guests to web-ony access for SharePoint
+
+1. In the [SharePoint admin center](https://admin.microsoft.com/sharepoint), expand **Policies** and click **Access control**.
+2. Click **Unmanaged devices**.
+3. Select the **Allow limited, web-only access** option, and then click **Save**.
+
+Note that this setting in the SharePoint admin center creates a supporting conditional access policy in Azure AD.
 
 ## Configure a session timeout for guest users
 
