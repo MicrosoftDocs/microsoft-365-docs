@@ -87,7 +87,7 @@ You can also <a href="https://docs.microsoft.com/azure/active-directory/authenti
 
 3. Switch to the organization you want to delete.
 
-4. Select **Delete Tenant**.
+4. Select **Delete tenant**.
 
 5. If your Organization fails one or more checks, you see a link to more information on how to pass the checks. After you pass all checks, select **Delete** to complete the process.
 
