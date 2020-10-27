@@ -171,11 +171,11 @@ To restrict guests to web-ony access for groups and teams
 
     ![Screenshot of Azure AD conditional access client apps settings](../media/azure-ad-conditional-access-client-mobile.png)
 
-13. Click **Done**.
-14. Under **Access controls**, click **Grant**.
-15. On the **Grant** blade, select **Require device to be marked as compliant** and **Require Hybrid Azure AD joined device**.
-16. Under **For multiple controls**, select **Require one of the selected controls**, and then click **Select**.
-17. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+12. Click **Done**.
+13. Under **Access controls**, click **Grant**.
+14. On the **Grant** blade, select **Require device to be marked as compliant** and **Require Hybrid Azure AD joined device**.
+15. Under **For multiple controls**, select **Require one of the selected controls**, and then click **Select**.
+16. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
 
 To restrict guests to web-ony access for SharePoint
 
@@ -190,19 +190,18 @@ Note that this setting in the SharePoint admin center creates a supporting condi
 Requiring guests to authenticate on a regular basis can reduce the possibility of unknown users accessing your organization's content if a guest user's device isn't kept secure. You can configure a session timeout conditional access policy for guest users in Azure AD.
 
 To configure a guest session timeout policy
-1. In Microsoft Azure, search for *Conditional access*.
+1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
 2. On the **Conditional Access - Policies** blade, click **New policy**.
 3. In the **Name** box, type *Guest session timeout*.
 4. Under **Assignments**, click **Users and groups**.
-5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box, and then click **Done**.
+5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
 6. Under **Assignments**, click **Cloud apps or actions**.
 7. On the **Include** tab, select **Select apps**, and then click **Select**.
 8. On the **Select** blade, select **Microsoft Teams**, **Office 365 SharePoint Online**, and **Outlook Groups**, and then click **Select**.
-9. On the **Cloud apps or actions** blade, click **Done**.
-10. Under **Access controls**, click **Session**.
-11. On the **Session** blade, select **Sign-in frequency**.
-12. Select **1** and **Days** for the time period, and then click **Select**.
-13. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+9. Under **Access controls**, click **Session**.
+10. On the **Session** blade, select **Sign-in frequency**.
+11. Select **1** and **Days** for the time period, and then click **Select**.
+12. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
 
 ## Create sensitivity labels
 
