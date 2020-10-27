@@ -620,4 +620,5 @@ EDM sensitive information types for following scenarios are currently in develop
 - [Overview of DLP policies](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
+- [Modify Exact Data Match schema to use configurable match](sit-modify-edm-schema-configurable-match.md)
 
