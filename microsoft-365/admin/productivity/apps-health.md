@@ -104,6 +104,6 @@ This section helps you act on the metrics you want to focus on by providing rele
 The following columns are presented in the table at the user level:
 
 - **Channel** : Current Microsoft 365 apps channel on the devices.
-- **Status:**   Microsoft 365 apps support state of the devices based on current Microsoft 365 apps channel and version.
-- **Versions:**  Current Microsoft 365 apps versions on the devices
-- **# of devices:**  Number of devices
+- **Status:**   Microsoft 365 apps support state of the devices based on current channel and version.
+- **Versions:**  Current Microsoft 365 apps versions on the devices.
+- **# of devices:**  Number of devices.
