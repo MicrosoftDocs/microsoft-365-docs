@@ -50,7 +50,21 @@ To view the entire Productivity Score, including tenant-level metrics and per-us
 
 Assign the Reports Reader role to anyone who's responsible for change management and adoption. This role gives them access to the complete experience including tenant level metrics and per-user level details.
 
-People experiences report contains per-user activity details for each category detail page. Assign a custom role called Usage Summary Reports Reader (available starting 29th October 2020) to enable access to only the aggregate metrics of the People experiences.
+People experiences report contains per-user activity details for each category detail page. Assign a custom role called Usage Summary Reports Reader (available starting 29th October 2020) to enable access to only the aggregate metrics of the People experiences. This role will have to be assigned through PowerShell cmdlets until it becomes assignable from the Microsoft admin center on 11/15/2020.
+
+To assign the Usage Summary Reports Reader role with PowerShell:
+
+- Run the following PowerShell:
+
+```powershell
+Connect-AzureAD
+$role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
+Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
+$u=Get-AzureADUser -ObjectId <user upn>
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
+```
+
+</br>
 
 :::image type="content" source="../../media/communicationspage.jpg" alt-text="Communications page in Productivity reports.":::
 
