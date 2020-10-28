@@ -201,7 +201,7 @@ When you publish retention labels, they're included in a retention label policy 
 
 - A single location can also be included in many retention label policies.
 
-In addition to retention label policies, you can also create one or more auto-apply policies, each with a single retention label. With this policy, a retention label is automatically applied when conditions that you specify in the policy are met. 
+In addition to retention label policies, you can also create one or more auto-apply policies, each with a single retention label. With this policy, a retention label is automatically applied when conditions that you specify in the policy are met.
 
 #### Retention label policies and locations
 
@@ -234,7 +234,9 @@ To understand how and why one retention label is applied rather than another, it
 - Retention labels applied from a label policy are explicitly assigned
 - Retention labels applied automatically from an auto-apply policy are implicitly assigned
 
-An explicitly assigned retention label takes precedence over an implicitly assigned retention label.
+An explicitly assigned retention label always takes precedence over an implicitly assigned retention label.
+
+For SharePoint, retention labels can also be implicitly assigned when you configure a default label for all content in a SharePoint library, folder, or document set. For this scenario, an auto-applied label takes precedence over a default label, but to fully understand all outcomes when you use a default label, see the information in the [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) section. 
 
 #### Monitoring retention labels
 
@@ -268,7 +270,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Retention settings that can retain and then delete, retain-only, or delete-only |Yes |Yes |
 |Workloads supported: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No <br /> No |
 |Retention applied automatically | Yes | Yes |
-|Retention applied based on conditions <br /> - sensitive info types, KQL queries, trainable classifiers| No | Yes |
+|Retention applied based on conditions <br /> - sensitive info types, KQL queries and keywords, trainable classifiers| No | Yes |
 |Retention applied manually | No | Yes |
 |UI presence for end users | No | Yes |
 |Persists if the content is moved | No | Yes, within your Microsoft 365 tenant |
@@ -289,7 +291,9 @@ For more information about how retention policies and retention labels work toge
 
 ## The principles of retention, or what takes precedence?
 
-It's possible or even likely that content might have several retention policies and a retention label applied to it, each with a different action (retain, delete, or retain and then delete) and retention period. What takes precedence? 
+Unlike retention labels, you can apply more than one retention policy to the same content. Each retention policy can have a different action (retain, delete, or retain and then delete) and retention period. Additionally, although you can apply only one retention label to an item, that item could also be subject to one or more retention policies.
+
+When items are subject to multiple retention settings in this scenario, what takes precedence? 
 
 At a high level, you can be assured that retention always takes precedence over deletion, and then the longest retention period wins. 
 
