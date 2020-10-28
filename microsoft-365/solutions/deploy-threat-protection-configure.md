@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - m365solution-threatprotection
+- m365solution-scenario
 ms.custom: 
 f1.keywords: NOCSH
 ---
@@ -27,20 +28,20 @@ Follow these steps to configure threat protection across Microsoft 365.
 Microsoft has tested and recommends a specific set of conditional access and related policies for protecting access to all of your SaaS applications, especially Microsoft 365. Policies are recommended for baseline, sensitive, and highly regulated protection. Begin by implementing the policies for baseline protection. 
 
 
-[![Common policies for configuring identity and device access](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[![Common policies for configuring identity and device access](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 ### To implement baseline protection for Microsoft 365
 
-![Process for deploying threat protection capabilities](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
+![Process for deploying baseline protection](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
 
-1. [Configure prerequisites, including Azure Identity Protection](../enterprise/identity-access-prerequisites.md).
-2. [Configure common identity and device access policies](../enterprise/identity-access-policies.md) for baseline protection.
-3. Configure policies for [guest users](../enterprise/identity-access-policies-guest-access.md), [Microsoft Teams](../enterprise/teams-access-policies.md), [Exchange Online](../enterprise/secure-email-recommended-policies.md), and [SharePoint Online and OneDrive](../enterprise/sharepoint-file-access-policies.md).
+1. [Configure prerequisites, including Azure Identity Protection](../security/office-365-security/identity-access-prerequisites.md).
+2. [Configure common identity and device access policies](../security/office-365-security/identity-access-policies.md) for baseline protection.
+3. Configure policies for [guest users](../security/office-365-security/identity-access-policies-guest-access.md), [Microsoft Teams](../security/office-365-security/teams-access-policies.md), [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md), and [SharePoint Online and OneDrive](../security/office-365-security/sharepoint-file-access-policies.md).
 
 ### More information about protecting identities
 
-- [Identity and device access configurations](../enterprise/microsoft-365-policies-configurations.md)
+- [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md)
 - [Security guidance for Azure MFA](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## Step 2: Configure Azure Advanced Threat Protection
@@ -55,7 +56,7 @@ Azure ATP enables security operations (SecOps) analysts and security professiona
 
 ### To set up Azure ATP
 
-![Process for deploying threat protection capabilities](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
+![Process for deploying Azure ATP](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
 
 1. [Set up Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) to protect your primary environments.
 2. Protect all your [domain controllers](https://docs.microsoft.com/azure-advanced-threat-protection/atp-sensor-monitoring) and [forests](https://docs.microsoft.com/azure-advanced-threat-protection/atp-multi-forest).
@@ -75,7 +76,7 @@ Microsoft Threat Protection unifies alerts, incidents, automated investigation a
 
 ### To set up Microsoft Threat Protection
 
-![Process for deploying threat protection capabilities](../media/solutions-architecture-center/deploy-mtp-steps.png) 
+![Process for deploying Microsoft Threat Protection](../media/solutions-architecture-center/deploy-mtp-steps.png) 
 
 1. [Review the prerequisites](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
 2. [Turn on Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
@@ -99,7 +100,7 @@ With Office 365 ATP, people across your organization can communicate and collabo
 
 ### To set up Office 365 ATP
 
-![Process for deploying threat protection capabilities](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
+![Process for deploying Office 365 ATP](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
 
 1. [Set up and configure your Office 365 ATP policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 2. [View and use your Office 365 ATP reports](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp).
@@ -117,7 +118,7 @@ With Office 365 ATP, people across your organization can communicate and collabo
 
 ### Set up Microsoft Defender ATP
 
-![Process for deploying threat protection capabilities](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
+![Process for deploying Microsoft Defender ATP](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
 
 1. [Prepare your Microsoft Defender ATP deployment](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases).
 2. [Set up your Microsoft Defender ATP deployment](https://docs.microsoft.com/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)
@@ -135,7 +136,7 @@ With Office 365 ATP, people across your organization can communicate and collabo
 
 ### Set up Microsoft Cloud App Security
 
-![Process for deploying threat protection capabilities](../media/solutions-architecture-center/deploy-mcas-steps.png) 
+![Process for deploying Microsoft Cloud App Security](../media/solutions-architecture-center/deploy-mcas-steps.png) 
 
 1. [Set up the portal and other basic requirements](https://docs.microsoft.com/cloud-app-security/general-setup).
 2. [Set up cloud discovery](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery) and [connect apps](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
@@ -188,5 +189,5 @@ In addition to this guidance, Microsoft recommends that your users take the acti
 - Enabling security features on Windows 10 and Mac PCs (for unmanaged devices)
     
 Microsoft also recommends that users protect their personal email accounts by taking the actions recommended in the following articles:
-- [Help protect your Outlook.com email account](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [Help protect your Outlook.com email account](https://support.microsoft.com/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 - [Protect your Gmail account with 2-step verification](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)

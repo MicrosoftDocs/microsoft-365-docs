@@ -10,6 +10,8 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-collaboration
+- m365solution-overview 
+- m365solution-collabgovernance
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
@@ -103,16 +105,16 @@ Watch these conference sessions to learn more about governance for Microsoft 365
 
 Learn the fundamentals and new innovations in Microsoft 365 Groups, including management and governance at scale, best practices for driving usage and adoption, and self-service.
 
-- [Embrace Microsoft 365 Groups](https://myignite.techcommunity.microsoft.com/sessions/81553)
+- [Embrace Microsoft 365 Groups](https://www.youtube.com/watch?v=dAamBF1gb7M)
 
 **Governance**
 
 Learn how to set up your groups expiry lifecycle, naming policies, classification labels, collaboration with external guests, and manage group creation permissions.
 
-- [Transform collaboration and fight shadow IT with Office 365 groups](https://myignite.techcommunity.microsoft.com/sessions/81554)
+- [Transform collaboration and fight shadow IT with Office 365 groups](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
 **Customer example**
 
 See a behind-the-scenes example of how Microsoft 365 Groups, SharePoint, Teams, and Yammer work together to provide a global collaboration platform.
 
-- [Finding your collaboration sweet spot with Office 365 Groups, SharePoint, Teams, and Yammer](https://myignite.techcommunity.microsoft.com/sessions/84289)
+- [Finding your collaboration sweet spot with Office 365 Groups, SharePoint, Teams, and Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)

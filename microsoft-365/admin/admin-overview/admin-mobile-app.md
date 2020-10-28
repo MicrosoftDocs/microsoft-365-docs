@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -83,6 +83,10 @@ The numbers are the total messages from the last week, not unread messages.
 ### How can I share the Service Incidents and Messages with the rest of my organization?
 
 If you select a specific service incident or a message, the share option will be in the top right corner. We currently support email sharing.
+  
+### Can I use this app with multiple accounts or tenants?
+
+Yes, you can setup multiple accounts or tenants.
   
 ### My app is acting funny. What can I do to troubleshoot weird app behavior?
 

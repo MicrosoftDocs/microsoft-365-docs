@@ -3,7 +3,7 @@ title: US Internal Revenue Service Publication 1075
 description: Microsoft has controls that meet the requirements of US Internal Revenue Service Publication 1075.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -70,6 +70,10 @@ Yes, if your organization meets the eligibility requirements for Azure Governmen
 **Can I use the Azure or Office 365 public cloud environments and still be compliant with IRS 1075?**
 
 No. The only environments where FTI can be stored and processed are Azure Government or Office 365 U.S. Government. Government customers must meet the eligibility requirements to use these environments.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

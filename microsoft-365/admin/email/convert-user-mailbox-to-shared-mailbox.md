@@ -2,9 +2,9 @@
 title: "Convert a user mailbox to a shared mailbox"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -46,48 +46,9 @@ When you convert a user's mailbox to a shared mailbox, all of the existing email
 
 4. If the mailbox is smaller than 50 GB, you can remove the [license from the user](../manage/remove-licenses-from-users.md), and stop paying for it. Don't delete the user's account. The shared mailbox needs it there as an anchor. If you are converting the mailbox of an employee that is leaving your organization, you should take additional steps to make sure that they cannot log in anymore. Please see [Remove a former employee from Microsoft 365](../add-users/remove-former-employee.md).
     
-5. For everything else you need to know about shared mailboxes, see [About shared mailboxes](about-shared-mailboxes.md) and [Create a shared mailbox](create-a-shared-mailbox.md).
+> [!NOTE]
+> It's not required to reset the user's password during mailbox conversion. However, if the password is not reset, **the original username and password continue to work** after the mailbox conversion is finished.
 
-## Use the Microsoft 365 admin center to convert a mailbox
-
-::: moniker range="o365-worldwide"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-
-2. Select the name of the user whose mailbox you want to convert.
-
-3. Reset the user's password.
-
-   > [!NOTE]
-   > It's not required to reset the user's password during mailbox conversion. However, if the password is not reset, **the original username and password continue to work** after the mailbox conversion is finished.
-
-4. On the **Mail** tab, under **More actions**, select **Convert to shared mailbox**. 
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
-
-2. Select the user whose mailbox you want to convert.
-
-3. In the right pane, expand **Mail Settings**. Next to **More settings**, select **Convert to shared mailbox**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
-
-2. Select the user whose mailbox you want to convert.
-
-3. In the right pane, expand **Mail Settings**. Next to **More settings**, select **Convert to shared mailbox**.
-
-::: moniker-end
-
-
-If the mailbox is smaller than 50 GB, you can [remove the license from the user](../manage/remove-licenses-from-users.md), and stop paying for it. Don't delete the user's old mailbox. The shared mailbox needs it there as an anchor. If you are converting the mailbox of an employee that is leaving your organization, you should take additional steps to make sure that they cannot log in anymore. See [Remove a former employee from Microsoft 365](../add-users/remove-former-employee.md).
-    
 For everything else you need to know about shared mailboxes, see [About shared mailboxes](about-shared-mailboxes.md) and [Create a shared mailbox](create-a-shared-mailbox.md).
 
 > [!NOTE]

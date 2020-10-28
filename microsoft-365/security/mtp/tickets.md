@@ -22,11 +22,15 @@ ms.custom:
 ---
 # Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center
 
-[!include[Prerelease information](../includes/prerelease.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+>[!CAUTION]
+>**The preview period for the ServiceNow connector is ending**<br>
+>This capability will no longer available by the end of November 2020. Thank you for your feedback and continued support while we determine next steps.
 
 ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations. Their Now platform has IT workflows, employee workflows, and customer workflows. [Learn more about ServiceNow](https://www.servicenow.com/)
 
-Microsoft has partnered with ServiceNow to make it easier for IT admins to manage their tickets and tasks in both platforms. [Microsoft 365 security center](overview-security-center.md) and the [Microsoft 365 compliance center](https://docs.microsoft.commicrosoft-365/compliance/microsoft-365-compliance-center) are being enhanced with the ability to natively create and track tickets in ServiceNow.
+Microsoft has partnered with ServiceNow to make it easier for IT admins to manage their tickets and tasks in both platforms. [Microsoft 365 security center](overview-security-center.md) and the [Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) are being enhanced with the ability to natively create and track tickets in ServiceNow.
 
 - [**Manage ServiceNow tickets in the security center**](tickets-security-center.md)
 - **Manage ServiceNow tickets in the compliance center** (coming soon)

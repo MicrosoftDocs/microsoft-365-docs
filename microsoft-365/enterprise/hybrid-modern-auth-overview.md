@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/15/2020
+ms.date: 10/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -23,7 +23,7 @@ description: "In this article, you will learn about Hybrid Modern Authentication
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
 _Modern Authentication_ is a method of identity management that offers more secure user authentication and authorization. It's available for Office 365 hybrid deployments of Skype for Business server on-premises and Exchange server on-premises, as well as, split-domain Skype for Business hybrids. This article links to related docs about prerequisites, setup/disabling modern authentication, and to some of the related client (ex. Outlook and Skype clients) information.
-  
+
 - [What is modern authentication?](hybrid-modern-auth-overview.md#BKMK_WhatisModAuth)
 - [What changes when I use modern authentication?](hybrid-modern-auth-overview.md#BKMK_WhatChanges)
 - [Check the modern authentication status of your on-premises environment](hybrid-modern-auth-overview.md#BKMK_CheckStatus)
@@ -34,36 +34,36 @@ _Modern Authentication_ is a method of identity management that offers more secu
 <a name="BKMK_WhatisModAuth"> </a>
 
 Modern authentication is an umbrella term for a combination of authentication and authorization methods between a client (for example, your laptop or your phone) and a server, as well as some security measures that rely on access policies that you may already be familiar with. It includes:
-  
+
 - **Authentication methods**: Multi-factor authentication (MFA); smart card authentication; client certificate-based authentication
 - **Authorization methods**: Microsoft's implementation of Open Authorization (OAuth)
 - **Conditional access policies**: Mobile Application Management (MAM) and Azure Active Directory (Azure AD) Conditional Access
 
 Managing user identities with modern authentication gives administrators many different tools to use when it comes to securing resources and offers more secure methods of identity management to both on-premises (Exchange and Skype for Business), Exchange hybrid, and Skype for Business hybrid/split-domain scenarios.
-  
+
 Be aware that because Skype for Business works closely with Exchange, the login behavior Skype for Business client users will see will be affected by the modern authentication status of Exchange. This will also apply if you have a Skype for Business _split-domain_ hybrid architecture, in which you have both Skype for Business Online and Skype for Business on-premises, with users homed in both locations.
 
 For more information about modern authentication in Office 365, see [Office 365 Client App Support - Modern Authentication](microsoft-365-client-support-modern-authentication.md).
-  
+
 > [!IMPORTANT]
 > As of August of 2017, all new Office 365 tenants that include Skype for Business online and Exchange online will have modern authentication enabled by default. Pre-existing tenants won't have a change in their default MA state, but all new tenants automatically support the expanded set of identity features you see listed above. To check your MA status, see the [Check the modern authentication status of your on-premises environment](hybrid-modern-auth-overview.md#BKMK_CheckStatus) section.
-  
+
 ## What changes when I use modern authentication?
 <a name="BKMK_WhatChanges"> </a>
 
 When using modern authentication with on-premises Skype for Business or Exchange server, you're still *authenticating* users on-premises, but the story of *authorizing* their access to resources (like files or emails) changes. This is why, though modern authentication is about client and server communication, the steps taken during configuring MA result in evoSTS (a Security Token Service used by Azure AD) being set as Auth Server for Skype for Business and Exchange server on-premises.
-  
+
 The change to evoSTS allows your on-premises servers to take advantage of OAuth (token issuance) for authorizing your clients, and also lets your on-premises use security methods common in the cloud (like Multi-factor Authentication). Additionally, the evoSTS issues tokens that allow users to request access to resources without supplying their password as part of the request. No matter where your users are homed (of online or on-premises), and no matter which location hosts the needed resource, EvoSTS will become the core of authorizing users and clients once modern authentication is configured.
-  
+
 For example, if a Skype for Business client needs to access Exchange server to get calendar information on behalf of a user, it uses the Active Directory Authentication Library (ADAL) to do so. ADAL is a code library designed to make secured resources in your directory available to client applications using OAuth security tokens. ADAL works with OAuth to verify claims and to exchange tokens (rather than passwords), to grant a user access to a resource. In the past, the authority in a transaction like this one -- the server that knows how to validate user claims and issue the needed tokens -- might have been a Security Token Service on-premises, or even Active Directory Federation Services. However, modern authentication centralizes that authority by using Azure AD.
-  
+
 This also means that even though your Exchange server and Skype for Business environments may be entirely on-premises, the authorizing server will be online, and your on-premises environment must have the ability to create and maintain a connection to your Office 365 subscription in the Cloud (and the Azure AD instance that your subscription uses as its directory).
-  
+
 What doesn't change? Whether you're in a split-domain hybrid or using Skype for Business and Exchange server on-premises, all users must first authenticate *on-premises*. In a hybrid implementation of modern authentication, _Lyncdiscovery_ and _Autodiscovery_ both point to your on-premises server.
-  
+
 > [!IMPORTANT]
 > If you need to know the specific Skype for Business topologies supported with MA, that's [documented right here](https://technet.microsoft.com/library/mt803262.aspx).
-  
+
 ## Check the modern authentication status of your on-premises environment
 <a name="BKMK_CheckStatus"> </a>
 
@@ -75,7 +75,7 @@ Get-OrganizationConfig | ft OAuth*
 
 If the value of the _OAuth2ClientProfileEnabled_ property is **False**, then modern authentication is disabled.
 
-For more information about the Get-OrganizationConfig cmdlet, see [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/get-organizationconfig).
+For more information about the Get-OrganizationConfig cmdlet, see [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig).
 
 You can check your Skype for Business servers by running the following PowerShell command:
 
@@ -86,17 +86,17 @@ Get-CSOAuthConfiguration
 If the command returns an empty _OAuthServers_ property, or if the value of the _ClientADALAuthOverride_ property is not **Allowed**, then modern authentication is disabled.
 
 For more information about the Get-CsOAuthConfiguration cmdlet, see [Get-CsOAuthConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csoauthconfiguration).
-  
+
 ## Do you meet modern authentication prerequisites?
 
 Verify and check these items off your list before you continue:
-  
+
 - **Skype for Business specific**
   - All servers must have May 2017 cumulative update (CU5) for Skype for Business Server 2015 or later
     - **Exception** - Survivability Branch Appliance (SBA) can be on the current version (based on Lync 2013)
   - Your SIP domain is added as a Federated domain in Office 365
   - All SFB Front Ends must have connections outbound to the internet, to Office 365 Authentication URLs (TCP 443) and well known certificate root CRLs (TCP 80) listed in Rows 56 and 125 of the 'Microsoft 365 Common and Office' section of [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md).
-  
+
 - **Skype for Business on-premises in a hybrid Office 365 environment**
   - A Skype for Business Server 2019 deployment with all servers running Skype for Business Server 2019.
   - A Skype for Business Server 2015 deployment with all servers running Skype for Business Server 2015.
@@ -108,7 +108,7 @@ Verify and check these items off your list before you continue:
 
 >[!NOTE]
 >If your Skype for Business front-end servers use a proxy server for Internet access, the proxy server IP and Port number used must be entered in the configuration section of the web.config file for each front end.
-  
+
 - C:\Program Files\Skype for Business Server 2015\Web Components\Web ticket\int\web.config
 - C:\Program Files\Skype for Business Server 2015\Web Components\Web ticket\ext\web.config
 
@@ -126,32 +126,37 @@ Verify and check these items off your list before you continue:
 
 > [!IMPORTANT]
 > Be sure to subscribe to the RSS feed for [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md) to stay current with the latest listings of required URLs.
-  
+
 - **Exchange Server specific**
   - You're using either Exchange server 2013 CU19 and up, Exchange server 2016 CU8 and up, or Exchange Server 2019 CU1 and up.
   - There is no Exchange server 2010 in the environment.
   - SSL Offloading is not configured. SSL termination and re-encryption is supported.
   - In the event your environment utilizes a proxy server infrastructure to allow servers to connect to the Internet, be sure all Exchange servers have the proxy server defined in the [InternetWebProxy](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx) property.
-  
+
 - **Exchange Server on-premises in a hybrid Office 365 environment**
 
   - If you are using Exchange Server 2013, at least one server must have the Mailbox and Client Access server roles installed. While it is possible to install the Mailbox and Client Access roles on separate servers, we strongly recommend that you install both roles on the same server to provide additional reliability and improved performance.
   - If you are using Exchange server 2016 or later version, at least one server must have the Mailbox server role installed.
   - There is no Exchange server 2007 or 2010 in the Hybrid environment.
-  - All Exchange servers must have the latest cumulative updates installed, see [Upgrade Exchange to the latest Cumulative Updates](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) to find and manage all available updates.
+  - All Exchange servers must have the latest cumulative updates installed, see [Upgrade Exchange to the latest Cumulative Updates](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates) to find and manage all available updates.
 
 - **Exchange client and protocol requirements**
+
+    The availability of modern authentication is determined by the combination of the client, protocol, and configuration. If modern authentication is not supported by the client, protocol, and/or configuration, then the client will continue to leverage legacy authentication.
   
-  - The following clients support modern authentication:
+    The following clients and protocols support modern authentication with on-premises Exchange when modern authentication is enabled in the environment:
 
   |**Clients**|**Primary Protocol**|**Notes**|
   |:-----|:-----|:-----|
-  |Outlook 2013 and Outlook 2016  <br/> |MAPI over HTTP  <br/> |MAPI over HTTP must be enabled within Exchange in order to leverage modern authentication with these clients (usually enabled or True for new installs of Exchange 2013 Service Pack 1 and above); for more information see [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).  <br/> Ensure you are running the minimum required build of Outlook; see [Latest updates for versions of Outlook that use Windows Installer (MSI)](https://docs.microsoft.com/officeupdates/outlook-updates-msi).  <br/> |
-  |Outlook 2016 for Mac  <br/> |Exchange Web Services  <br/> |  <br/> |
-  |Outlook for iOS and Android  <br/> |  <br/> |See [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) for more information.  <br/> |
+  |Outlook 2013 and later  <br/> |MAPI over HTTP  <br/> |MAPI over HTTP must be enabled within Exchange in order to leverage modern authentication with these clients (usually enabled or True for new installs of Exchange 2013 Service Pack 1 and above); for more information see [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).  <br/> Ensure you are running the minimum required build of Outlook; see [Latest updates for versions of Outlook that use Windows Installer (MSI)](https://docs.microsoft.com/officeupdates/outlook-updates-msi).  <br/> |
+  |Outlook 2016 for Mac and later  <br/> |Exchange Web Services  <br/> |  <br/> |
+  |Outlook for iOS and Android  <br/> | Microsoft sync technology <br/> |See [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) for more information.  <br/> |
   |Exchange ActiveSync clients (e.g., iOS11 Mail)  <br/> |Exchange ActiveSync  <br/> |For Exchange ActiveSync clients that support modern authentication, you must recreate the profile in order to switch from basic authentication to modern authentication.  <br/> |
 
+    Clients and/or protocols that are not listed (e.g., POP3) do not support modern authentication with on-premises Exchange and continue to leverage legacy authentication mechanisms even after modern authentication is enabled in the environment.
+
 - **General prerequisites**
+  - Resource forest scenarios will require a two-way trust with the account forest to ensure proper SID lookups are performed during hybrid modern authentication requests. 
   - If you use AD FS, you should have Windows 2012 R2 AD FS 3.0 and above for federation.
   - Your identity configurations are any of the types supported by Azure AD Connect, such as password hash sync, pass-through authentication, and on-premises STS supported by Office 365.
   - You have Azure AD Connect configured and functioning for user replication and sync.

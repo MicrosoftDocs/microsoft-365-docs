@@ -2,7 +2,7 @@
 title: Microsoft 365 Apps for enterprise
 description: How to deploy Microsoft 365 Apps, how they are updated, and how settings are managed
 keywords: change history
-ms.prod: m365-md
+ms.service: m365-md
 ms.sitesec: library
 author: jaimeo
 f1.keywords:

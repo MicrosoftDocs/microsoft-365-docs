@@ -3,7 +3,7 @@ title: California Consumer Privacy Act (CCPA) FAQ
 description: Frequently asked questions about Microsoft services and the California Consumer Privacy Act (CCPA).
 keywords: Microsoft 365, compliance, CCPA, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -95,7 +95,7 @@ As Microsoft has implemented GDPR-related DSRs globally, we are currently in an 
 
 **What are some tools that can help my organization to start preparing for CCPA?**
 
-- Start leveraging the GDPR assessment in Compliance Score as part of your CCPA privacy program.
+- Start leveraging the GDPR assessment in Compliance Manager as part of your CCPA privacy program.
 - Establish a process to efficiently respond to Consumer Requests.
 - Set up label and policies to discover, classify & label, and protect sensitive data with Microsoft Information Protection.
 - Use email encryption capabilities to further control sensitive information.

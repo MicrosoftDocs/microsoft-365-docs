@@ -21,7 +21,21 @@ description: "Learn how retention works for Exchange."
 
 # Learn about retention for Exchange
 
-The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Exchange.
+The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Exchange.  For other workloads, see:
+
+- [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)
+- [Learn about retention for Microsoft Teams](retention-policies-teams.md)
+- [Learn about retention for Yammer](retention-policies-yammer.md)
+
+## What's included for retention and deletion
+
+The following Exchange items can be retained and deleted by using retention policies and retention labels: Mail messages (includes drafts) with any attachments, tasks when they have an end date, and notes. 
+
+Calendar items that have an end date are supported for retention policies but aren't supported for retention labels.
+
+Contacts, and any tasks and calendar items that don't have an end date are not supported.
+
+Other items stored in a mailbox, such as Skype and Teams messages, aren't included in retention policies or labels for Exchange. These items have their own retention policies.
 
 ## How retention works for Exchange
 
@@ -65,4 +79,9 @@ If a user leaves your organization and the user's mailbox is included in a reten
 
 ## Configuration guidance
 
-If you're ready to configure retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+
+If you're ready to configure a retention policy or retention label for Exchange, see the following instructions:
+- [Create and configure retention policies](create-retention-policies.md)
+- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)

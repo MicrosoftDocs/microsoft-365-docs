@@ -4,7 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.service: Microsoft Threat Protection
+ms.service: O365-seccomp
 audience: admin
 f1.keywords:
 - NOCSH
@@ -18,7 +18,10 @@ appliesto:
 
 # Remediate malicious email delivered in Office 365
 
-Remediation means taking a proscribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through Zero-hour Auto-Purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete*. Office Advanced Threat Protection (Office ATP) P2/E5 enables security teams to remediate threats in email and collaboration functionality through manual and automated investigation.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+Remediation means taking a prescribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through Zero-hour Auto-Purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete*. Office Advanced Threat Protection (Office ATP) P2/E5 enables security teams to remediate threats in email and collaboration functionality through manual and automated investigation.
 
 > [!NOTE]
 > To remediate malicious email, security teams need the *search and purge* role assigned to them. Role assignment is done through permissions in the security and compliance center.
@@ -34,7 +37,6 @@ To do things like view message headers or download email content, you must have 
 |Use Threat Explorer (and real-time detections) to analyze threats ​|Global Administrator <br> Security Administrator <br> Security Reader|No|
 |Use Threat Explorer (and real-time detection) to view headers for email messages and to preview and download quarantined email messages|Global Administrator <br> Security Administrator <br>Security Reader|No|
 |Use Threat Explorer to view headers and download email messages delivered to mailboxes|Global Administrator <br>Security Administrator <br> Security Reader <br> Preview|Yes|
-
 
 > [!NOTE]
 > Preview is a *role*, not a *role group*. The preview role must be added to an existing role group for Office 365. The *Global Administrator role* is assigned in the [Microsoft 365 admin center](https://admin.microsoft.com). The Security Administrator and Security Reader roles are assigned in the [security and compliance centers](https://protection.office.com). To learn more about roles and permissions, see [Permissions in the security and compliance centers](permissions-in-the-security-and-compliance-center.md).
