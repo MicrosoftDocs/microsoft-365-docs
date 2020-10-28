@@ -31,14 +31,14 @@ Topic center users can be given two sets of permissions:
 - Manage topics: Use the Topic management dashboard to review topics across the organization. Users can perform actions such as confirm and reject topics
 
 
-## Review unconfirmed topics
+## Review suggested topics
 
-On the topic center home page, topics that were discovered in your specified SharePoint source locations will be listed in the **Unconfirmed** tab. A user with permissions to manage topics can review unconfirmed topics and choose to confirm or reject them.
+On the topic center home page, topics that were discovered in your specified SharePoint source locations will be listed in the **Suggested** tab. A user with permissions to manage topics can review unconfirmed topics and choose to confirm or reject them.
 
 
-To review an unconfirmed topic:
+To review a suggested topic:
 
-1. On the **Unconfirmed** tab, select the topic to open the topic page.</br>
+1. On the **Suggested** tab, select the topic to open the topic page.</br>
 
 2. On the topic page, review the topic page, and select **Edit** if you need to make any changes to the page.
 3. On the Knowledge Center home page, for the selected topic, you can:</br>
@@ -48,7 +48,23 @@ To review an unconfirmed topic:
     Confirmed topics will be removed from the **Unconfirmed** list and will now display in the **Confirmed** tab.</br>
 
     Rejected topics will be removed from the **Unconfirmed** list and will now display in the **Rejected or Excluded** tab.</br>
-    
+
+## Review confirmed topics
+
+On the topic center home page, topics that were discovered in your specified SharePoint source locations and have been confirmed by a knowlege manager or crowdsourced confirmed by 2 or more people through the card feedback mechanism will be listed in the **Confirmed** tab. A user with permissions to manage topics can review confirmed topics and choose to reject them.
+
+
+To review a confirmed topic:
+
+1. On the **Confirmed** tab, select the topic to open the topic page.</br>
+
+2. On the topic page, review the topic page, and select **Edit** if you need to make any changes to the page.
+
+3. You can reject it too
+
+## Review published topics
+Published topics have been edited so that speific information will always appear to whoever encountrs the page. Manually created topics show here.
+
    
 ## Create a new topic
 
