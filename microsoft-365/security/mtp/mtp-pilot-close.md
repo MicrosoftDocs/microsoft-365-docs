@@ -17,7 +17,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
 ---
 
@@ -71,7 +72,7 @@ ms.topic: conceptual
 
 You're currently in the closing and summarizing phase.
 
-You’ve just simulated an advanced memory-only attack that executed code remotely on a domain controller. You’ve seen how Microsoft Defender ATP and Azure ATP detects and alerts on stealthy malicious activity. You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft 365 Security Center portal, enabling SOC analysts to investigate and take necessary action. You’ve also created an advanced hunting query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.
+You’ve just ran an advanced memory-only attack simulation that executed code remotely on a domain controller. You’ve seen how Microsoft Defender ATP and Azure ATP detect and create alerts on stealthy malicious activity. You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft 365 Security Center portal. Experiencing such integration enables SOC analysts to investigate and take necessary action. You’ve also created an advanced hunting query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.
 
 You’ve reached the end of the process after all tests have concluded.
 
@@ -81,9 +82,9 @@ The final output should be:
 - A detailed report of the findings of the pilot
 - A decision on how to move forward
 
-This information should be presented to both internal stakeholders (which you’ve identified during the [preparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) phase) and Microsoft contacts. This ensures that any feedback can be used to improve products and documentation.
+Present the reports from your final output to internal stakeholders (which you’ve identified during the [preparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) phase) and Microsoft contacts. Such an effort ensures that any feedback can be used to improve products and documentation.
 
-We hope you enjoyed this simulation and are encouraged to start implementing what you've learned.
+We hope you enjoyed this simulation. Start implementing what you've learned on a larger scale in your organization to get the most out of the integrated security solution.
 
 ## Next step
 Learn more about the Microsoft Threat Protection pillars through the following interactive guides:

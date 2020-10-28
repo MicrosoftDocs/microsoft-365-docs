@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: 
 description: Learn how to use Compliance Score and Compliance Manager to improve your level of protection for personal data.
 ---
