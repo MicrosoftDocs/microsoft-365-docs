@@ -46,7 +46,7 @@ The following files can be deleted:
 
 ## How retention works for SharePoint and OneDrive
 
-To support retention, SharePoint and OneDrive creates a Preservation Hold library if one doesn't exist. You can view this library on the **Site contents** page in the top-level site of the site collection. Most users can't view the Preservation Hold library because it's visible only to site collection administrators.
+To support retention, SharePoint and OneDrive create a Preservation Hold library if one doesn't exist. You can view this library on the **Site contents** page in the top-level site of the site collection. Most users can't view the Preservation Hold library because it's visible only to site collection administrators.
   
 If somebody attempts to change or delete a document that's subject to retention settings, a check is made whether the content's been changed since the retention settings were applied. If this is the first change since the retention settings were applied, the content is copied to the Preservation Hold library, which allows the person to change or delete the original content. Any content in a site collection can be copied to the Preservation Hold library, independently from retention settings.
   
@@ -58,7 +58,7 @@ A user receives an error if they try to delete a library, list, folder, or site 
   
 After retention settings are assigned to content in a OneDrive account or SharePoint site, the paths the content takes depend on whether the retention settings are to retain and delete, to retain only, or delete only.
 
-When the retention setting are to retain and delete:
+When the retention settings are to retain and delete:
 
 ![Diagram of content lifecycle in SharePoint and OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
@@ -85,7 +85,7 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 
 ## How retention works for OneNote content
 
-When you apply a retention policy to a location that includes OneNote content, the different OneNote sections are actually different files. This means that each section will be individually retained and deleted, according to the retention settings you specify.
+When you apply a retention policy to a location that includes OneNote content, behind the scenes, the different OneNote sections are individual files. This means that each section will be individually retained and deleted, according to the retention settings you specify.
 
 ## How retention works with document versions in a site
 
