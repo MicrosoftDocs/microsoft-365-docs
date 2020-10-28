@@ -22,7 +22,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Overview of Microsoft productivity score."
 ---
 
-# Microsoft Productivity Score (Preview)
+# Microsoft Productivity Score 
 
 Productivity Score helps organizations transform how work gets done with insights about how people use Microsoft 365 and the technology experiences that support them. The score reflects your organization’s performance against people and technology experiences measures and compares your score with organizations like yours.
 
