@@ -36,7 +36,7 @@ The general availability of Compliance Manager in the Microsoft 365 compliance c
 
 Read this [blog post](https://aka.ms/compliancemanager/GAblog) to learn more about what’s new with the GA release of Compliance Manager.
 
-#### Your organization regularly used Compliance Manger in the Service Trust Portal
+#### Your organization regularly used Compliance Manager in the Service Trust Portal
 
 If you used Compliance Manager in the Service Trust Portal, all of your organization’s data now exists in Compliance Manager in the Microsoft 365 compliance center at https://compliance.microsoft.com/compliancemanager. There’s nothing you need to do to resume your Compliance Manager work in its new location, other than to update any bookmarks you have to its previous location. All of your assessments and other data have been brought over for you.
 
@@ -46,7 +46,7 @@ Everything you used to do in previous versions of Compliance Manager, such as co
 
 Below are some helpful resources:
 
-- [Get familiar with your new Compliance Manger experience](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [Get familiar with your new Compliance Manager experience](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
 - [Find permissions and other setup information for Compliance Manager in its new home](compliance-manager-setup.md#who-can-access-compliance-manager)
 - [Learn more about the Microsoft 365 compliance center](microsoft-365-compliance-center.md)
 
