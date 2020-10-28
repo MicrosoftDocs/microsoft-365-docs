@@ -43,7 +43,7 @@ You need to be a global administrator to initiate sign-out.
 
 ## Use Exchange PowerShell
 
-1. Connect to [Connect to Exchange PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+1. Connect to [Connect to Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
 2. Using PowerShell, you can disable the QR code option for your users.
 ```powershell
 Set-Organization 
