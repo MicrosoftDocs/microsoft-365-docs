@@ -46,12 +46,11 @@ The primary insight looks at all the people who are communicating using email an
       - Reading and creating content (what we collectively refer to as content interaction) in SharePoint team sites.
 
         As a percentage of all people who are performing any of the following activities (within or outside of shared workspaces):
-
         - Sending email through Exchange.
         - Sending messages (chat or channel messages) on Microsoft Teams.
         - Reading and creating content on OneDrive or SharePoint.
 
-        And have access to at least one of the following services: Exchange, Microsoft Teams, or SharePoint
+            And have access to at least one of the following services: Exchange, Microsoft Teams, or SharePoint
 
 1. **Body:** Provides more information on how communicating and interacting with content, when done within a shared workspace, can have positive outcomes for productivity in your organization.
 2. **Visualization (current state):**

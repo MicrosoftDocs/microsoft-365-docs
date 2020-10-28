@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
-- M365-subscription-management 
+- Microsoft 365-subscription-management 
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -32,96 +32,78 @@ Your organizational productivity is dependent on healthy application environment
 
 ## How we calculate the Microsoft 365 apps health score
 
-To determine your Microsoft 365 apps health score, we measure the number of devices on each update channel, and whether they are running a supported version and the most current release of Microsoft 365 apps.
+We calculate your Microsoft 365 apps health score by measuring the number of devices on each update channel. We also determine whether the devices are running a supported version, and the most current release of Microsoft 365 apps.
 
-We provide a primary insight in the experience that contains the key metrics for this category. Subsequently, a scoring framework detailed below is used for these metrics to calculate your score.
-
+We provide a primary insight in the experience that contains the key metrics for this category. Then, a scoring framework, detailed in the following sections, is used to calculate your score.
 
 ### Primary insight
 
-The primary insight looks at all the devices and determine how many devices are running M365 Apps on recommended updated channel.
+The primary insight is calculated from devices that are running Microsoft 365 Apps on recommended updated channel.
 
-![](RackMultipart20201028-4-2cm03t_html_56ce8108bf726b09.png)
+:::image type="content" source="../../media/appshealth-primary.png" alt-text="Primary in sight visualization for Microsoft 365 apps.":::
 
-Note that information considered for this include M365 apps channel, build and version that the device currently running.
+Information considered for this include Microsoft 365 apps channel, build, and version that is running on the device.
 
-1. **Header:**  This shows percentage of devices on recommended update channel
-
-1. **Body:**  This provides more information on how running the devices on recommended update channel will help getting latest update and running current versions on devices.
-
+1. **Header:**  Shows percentage of devices on recommended update channel
+1. **Body:**  Provides more information on how running the devices on recommended update channel will help getting latest update and running current versions on devices.
 1. **Visualization (current state):**
+    - Horizontal bars where the blue-colored portions represent the percentage of devices running recommended updated channel.
+    - Highlight the (numerator/denominator) of the fraction used to calculate the percentage expressed in horizontal bars.
+    - Peer Benchmark value for devices running on recommended updated channel is also shown as a percentage.
 
-    1. Horizontal bars where the blue-colored portions represent the percentage of devices running recommended updated channel.
+#### Trend visualization of the primary insight
 
-1. Highlight the (numerator/denominator) of the fraction used to calculate the percentage expressed in horizontal bars.
-2. Peer Benchmark value for devices running on recommended updated channel is also shown as a percentage.
+The following chart shows the number of devices in the recommended update channel over the last 180 days. The data point on the line chart is an aggregate of activity for the last 28 days.
 
-1. **Link**   **to resources: ** Select this link to view help content.
-
-1. **Visualization of trend:**
-
-![](RackMultipart20201028-4-2cm03t_html_c41336f06552657e.png)  This chart shows the trend of the primary insight key metric for devices running recommended update channel over the last 180 days. Note here that data point on the line chart is an aggregate of activity for the last 28 days.
+:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Chart that shows the trend for devices running recommended update channel.":::
 
 ### Scoring framework
 
-The M365 apps health score measures whether devices are running M365 apps on recommended channel and on latest versions.
+The Microsoft 365 apps health score measures whether devices are running Microsoft 365 apps on recommended channel and on latest versions.
 
-## Explore your organization M365 app channels and versions
+## Explore your organization Microsoft 365 app channels and versions
 
-We also provide you with supporting information that helps you gain additional visibility into what channels and versions devices in your organization are currently running on. These additional metrics do not directly contribute to your Productivity Score but are relevant in helping you create an action plan to help drive M365 apps health by enabling devices to run M365 apps on recommended channels.
+We also provide supporting information that helps you gain additional visibility into what channels and versions devices in your organization are currently running. These additional metrics do not contribute to your Productivity Score but can help you create an action plan to increase your Microsoft 365 apps health score by making sure devices run Microsoft 365 apps on recommended channels.
 
-### Devices on Current Channel and Supported versions
+### Devices on current channel and running supported versions
 
-![](RackMultipart20201028-4-2cm03t_html_3df933d66f0557ca.png)
+:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Chart showing number of devices in the current, supported channel.":::
 
-1. **Header:**  This highlightsthe percentage of devices on the Current Channel are running supported versions of Microsoft 365 Apps
-
-1. **Body:**  This provides information about the value of devices running M365 apps on recommended channel.
-
-1. **Visualization:**  The breakdown in the visualization represents the extent to what percentage of devices on latest and supported versions of M365 apps across different channel), as follows:
-
-1. **Supported versions: ** The blue bar represents the percentage of devices running on supported version of M365 apps.
-
-1. **Latest releases: ** The teal color bar represents percentage of devices on latest releases.
-
-1. **Link to resources:**   Select this link to view help content.
+1. **Header:**  Highlights the percentage of devices on the Current Channel are running supported versions of Microsoft 365 Apps
+1. **Body:**  Provides information about the value of devices running Microsoft 365 apps on recommended channel.
+1. **Visualization:**  The breakdown in the visualization represents the extent to what percentage of devices on latest and supported versions of Microsoft 365 apps across different channel), as follows:
+    - **Supported versions:** The blue bar represents the percentage of devices running on supported version of Microsoft 365 apps.
+    - **Latest releases:** The teal color bar represents percentage of devices on latest releases.
+1. **Learn more:**   Select this link to view help content.
 
 ### Devices running latest and supported versions
 
-![](RackMultipart20201028-4-2cm03t_html_56a841cd8398c09f.png)
+:::image type="content" source="../../media/device-supported-versions.png" alt-text="Chart showing number of devices running latest and supported versions of apps.":::
 
-1. **Header:**  This highlights the percentage of devices running supported versions and devices running the most recent versions.
+1. **Header:**  Highlights the percentage of devices running supported versions and devices running the most recent versions.
+1. **Body:**  Provides information about the value running devices on recommended channels and supported/latest versions.
+1. **Visualization:** The breakdown in the visualization is meant to represent the extent to show how many devices running supported versions and most recent versions of Microsoft 365 apps):
+    - **Supported versions:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represents the percentage of devices running supported version of Microsoft 365 apps.
+        - Numerator: The number of devices on supported versions of Microsoft 365 apps within the last 28 days
+        - Denominator: The number of devices using Microsoft 365 apps within the last 28 days
+    - **Most recent versions:** The teal (colored) portion of the bar and the fraction (numerator/denominator) on the bar represents the percentage of devices running recent versions of Microsoft 365 apps.
+        - Numerator: The number of devices on recent versions of Microsoft 365 apps within the last 28 days
+        - Denominator: The number of devices using Microsoft 365 apps within the last 28 days
+1. **Learn more:**   Select this link to view help content.
 
-1. **Body:**  This provides information about the value running devices on recommended channels and supported/latest versions.
+#### Trend visualization of the devices
 
-1. **Visualization: ** The breakdown in the visualization is meant to represent the extent to show how many devices running supported versions and most recent versions of M365 apps):
+This chart shows the trend-line of the devices running supported versions and latest versions of Microsoft 365 apps over the last 180 days.
 
-1. **Supported versions: ** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represents the percentage of devices running supported version of M365 apps.
-
-1. Numerator: The number of devices on supported versions of M365 apps within the last 28 days
-
-1. Denominator: The number of devices using M365 apps within the last 28 days
-
-1. **Recent versions: ** The teal (colored) portion of the bar and the fraction (numerator/denominator) on the bar represents the percentage of devices running recent versions of M365 apps.
-
-1. Numerator: The number of devices on recent versions of M365 apps within the last 28 days
-
-1. Denominator: The number of devices using M365 apps within the last 28 days
-
-1. **Link to resources:**   Select this link to view help content.
-2. **Visualization of trend:**
-
-This chart shows the trendline of the devices running supported versions and latest versions of M365 apps over the last 180 days.
-
-    ![](RackMultipart20201028-4-2cm03t_html_5d7133a131a77f98.png)
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Chart that showa how many devices run supported and latest versions of apps over time.":::
 
 ## People in your organization
 
-This section helps you act on the metrics you want to focus on by providing relevant to all the insights shown.
+This section helps you act on the metrics you want to focus on by providing relevant information to all the metrics for Microsoft 365 apps health - technology experiences.
 
 The following columns are presented in the table at the user level:
 
-- **Channel** : Current M365 apps channel on the devices.
-- **Status:**   M365 apps support state of the devices based on current M365 apps channel and version.
-- **Versions:**  Current M365 apps versions on the devices
+- **Channel** : Current Microsoft 365 apps channel on the devices.
+- **Status:**   Microsoft 365 apps support state of the devices based on current Microsoft 365 apps channel and version.
+- **Versions:**  Current Microsoft 365 apps versions on the devices
 - **# of devices:**  Number of devices
