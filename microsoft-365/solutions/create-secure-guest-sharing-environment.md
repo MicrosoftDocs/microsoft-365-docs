@@ -20,7 +20,7 @@ description: "In this article, you will learn about the available options to cre
 
 # Create a secure guest sharing environment
 
-In this article, we'll walk through a variety of options for creating a secure guest sharing environment in Microsoft 365. This is an example scenario to give you an idea of the options available. You can use these procedures in different combinations to meet the security and compliance needs of your organization.
+In this article, we'll walk through a variety of options for creating a secure guest sharing environment in Microsoft 365. These are examples to give you an idea of the options available. You can use these procedures in different combinations to meet the security and compliance needs of your organization.
 
 This article includes:
 
@@ -140,7 +140,7 @@ To set up a guest user access review
 9. On the **Select a program** blade, choose **Guest access review program**
 10. Click **Start**.
 
-A separate access review is created for each group that you specify. Group owners of each groups will be emailed quarterly to approve or deny guest access to their groups.
+A separate access review is created for each group that you specify. Group owners of each group will be emailed quarterly to approve or deny guest access to their groups.
 
 It's important to note that guests can be given access to teams or groups, or to individual files and folders. When given access to files and folders, guests may not be added to any particular group. If you want to do access reviews on guest users who don't belong to a team or group, you can create a dynamic group in Azure AD to contain all guests and then create an access review for that group. Site owners can also manage [guest expiration for the site](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
 
