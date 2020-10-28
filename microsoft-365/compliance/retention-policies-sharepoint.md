@@ -102,9 +102,9 @@ When a document with versions is subject to retention settings to retain that co
 
 When the retention action is to delete the document, all versions not in the Preservation Hold library are deleted at the same time according to the current version.
 
-For items that are subject to a retention policy (or an eDiscovery hold) rather than a retention label, the versioning limits for the document library are ignored until the retention period of the document is reached (or the eDiscovery hold is released). In this scenario, old versions are not automatically purged and users are prevented from deleting versions.
+For items that are subject to a retention policy (or an eDiscovery hold), the versioning limits for the document library are ignored until the retention period of the document is reached (or the eDiscovery hold is released). In this scenario, old versions are not automatically purged and users are prevented from deleting versions.
 
-That's not the case for retention labels when a retention policy isn't applied to the site. Instead, the versioning limits are honored so that older versions are automatically deleted to accommodate new versions, but users are still prevented from deleting versions.
+That's not the case for retention labels when the content isn't subject to a retention policy (or an eDiscovery hold). Instead, the versioning limits are honored so that older versions are automatically deleted to accommodate new versions, but users are still prevented from deleting versions.
 
 ## When a user leaves the organization
 
