@@ -29,12 +29,9 @@ The tables in the following sections describe the conditions and exceptions that
 - [Senders](#senders)
 - [Recipients](#recipients)
 - [Message subject or body](#message-subject-or-body)
-- [attachments](#attachments)
-- [Any recipients](#any-recipients)
-- [Message sensitive information types, To and Cc values, size, and character sets](#message-sensitive-information-types-to-and-cc-values-size-and-character-sets)
-- [Sender and recipient](#sender-and-recipient)
-- [Message properties](#message-properties)
+- [Attachments](#attachments)
 - [Message headers](#message-headers)
+- [Message properties](#message-properties)
 
 ## Senders
 
@@ -89,7 +86,7 @@ In the Exchange Admin Center, in the **Properties of this rule** section, click 
 |Subject or Body matches pattern|condition: *SubjectOrBodyMatchesPatterns* <br/>exdeption: *ExceptIfSubjectOrBodyMatchesPatterns*|	Patterns	|Messages where the Subject field or message body contain text patterns that match the specified regular expressions.|
 |Subject or Body contains words| condition: *SubjectOrBodyContainsWords* <br/>exception: *ExceptIfSubjectOrBodyContainsWords* |	Words	|Messages that have the specified words in the Subject field or message body.|
 
-## Attachements
+## Attachments
 
 |**Condition or exception in DLP**|	**condition/exception parameters in Microsoft 365 PowerShell**|	Property type	|Description|
 |---------|---------|---------|---------|
