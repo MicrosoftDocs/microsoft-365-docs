@@ -231,7 +231,7 @@ To export the results, click **Export** near the top of the page and select **Ch
 
 ## Undo user Submissions
 
-Once the user submits a suspicious email to the custom mailbox, User and admin donot have an option to undo it. If the user would like to recover the email it will be avialable on Deleted or Junk Email folder to be recovered. 
+Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it will be available for recovery in the Deleted or Junk Email folder. 
 
 ### Submit messages to Microsoft from the custom mailbox
 
