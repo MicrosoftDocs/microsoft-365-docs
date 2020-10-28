@@ -105,31 +105,13 @@ The **People experiences** and **Technology experiences** areas contain the prim
 
 Each category details page shows the primary insight and supporting metrics as well as related research and actions you can take to drive change in your organization. Research supports the importance and rationale behind the primary insights for each category. for more information, [read the Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-### Content collaboration details
-
-The primary insight for content collaboration is the number of people who create, read, and collaborate (edit and share) online. These measures are important because research shows that when people collaborate with online files, each person saves an average of almost 2 hours per week.
-
-We define content collaboration as one person creating and sharing an Office file, and then at least one other person reading it. 
-
-**Readers**: People who access or download online files in OneDrive or SharePoint.
-
-**Creators:** People who create, modify, upload, sync, check in, copy, or move online OneDrive or SharePoint files.
-
-**Collaborators**: People who collaborate with online files  using OneDrive or SharePoint. Two people are collaborators if one of them reads or edits an online Office apps or PDF cloud document after the other person has created or modified it, within a 28-day window.
-
-The file types considered for collaboration are Word, Excel, PowerPoint, OneNote, and PDF files.
-
-We provide insights into the startup times and set up for devices in your organization as well as network connectivity insights for content collaboration because online file collaboration requires reliable devices that start quickly and have up-to-date software as well as good connectivity to Microsoft 365.
-
-### Communication details
-
-The primary insight for communication is how frequently people in your organization use email, chat, and community posts to communicate. When people use a variety of real-time communication tools, they are able to choose the mode of communication that helps them to be most efficient, like chat and communities that help them develop relationships across office locations.
-
-### Mobility details
-
-The primary insight for mobility is the number of people who access files and use email and chat across multiple platforms. The ability to work from any location on whatever device they choose is important for people with sales roles, senior managers, consultants, and others who need to do work away from the office to be productive. Improvements for these workers have a large impact. 
-
-We measure the percentage and absolute number of people who used at least one Microsoft 365 productivity app across two or more platforms, including desktop, mobile and web. The productivity apps we measure are Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, and Skype. People must have Microsoft 365 apps for enterprise, Exchange, Yammer, Skype, or Teams licenses to be measured. 
+The details pages are:
+- [Content collaboration – People experiences](content-collaboration.md)
+- [Communication – People experiences](communication.md)
+- [Meetings – People experiences](meetings.md)
+- [Mobility – People experiences](mobility.md)
+- [Teamwork – People experiences](teamwork.md)
+- [Microsoft 365 apps health – Technology experiences](apps-health.md)
 
 ## Business continuity special report
 

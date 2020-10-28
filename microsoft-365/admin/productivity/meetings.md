@@ -24,7 +24,7 @@ description: "Details of the Meetings - people experiences Productivity score."
 
 # Meetings – People experiences
 
-Productivity Score helps organizations transform how work gets done with metrics about how people use Microsoft 365 apps and the supporting technology experiences. The score reflects your organization&#39;s performance for people and technology experiences and compares your score with organizations like yours. The meetings category is one of the measures within people experiences. To learn more, check out the [Productivity Score overview](https://docs.microsoft.com/en-us/microsoft-365/admin/productivity/productivity-score?view=o365-worldwide).
+Productivity Score helps organizations transform how work gets done with metrics about how people use Microsoft 365 apps and the supporting technology experiences. The score reflects your organization&#39;s performance for people and technology experiences and compares your score with organizations like yours. The meetings category is one of the measures within people experiences. To learn more, check out the [Productivity Score overview](productivity-score.md).
 
 ## Why your organizations meetings score matters
 

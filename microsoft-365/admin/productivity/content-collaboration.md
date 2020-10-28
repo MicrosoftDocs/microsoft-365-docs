@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Details of the Content collaboration Productivity Score."
+description: "Details of the Content collaboration - people experiences Productivity Score."
 ---
 
 # Content collaboration – People experiences
 
-Productivity Score helps you transform how work gets done with metrics about how people use Microsoft 365 apps and the technology experiences that support them. The score reflects your organization&#39;s performance for people and technology experiences and compares your score with organizations like yours. Content collaboration is one of the measures that falls under people experiences. Check out the  [Productivity Score overview](https://docs.microsoft.com/microsoft-365/admin/productivity/productivity-score).
+Productivity Score helps you transform how work gets done with metrics about how people use Microsoft 365 apps and the technology experiences that support them. The score reflects your organization&#39;s performance for people and technology experiences and compares your score with organizations like yours. Content collaboration is one of the measures that falls under people experiences. Check out the  [Productivity Score overview](productivity-score.md).
 
 ## Why your organization&#39;s content collaboration score matters
 
@@ -73,7 +73,7 @@ Types considered for this information include Word, Excel, PowerPoint, OneNote, 
 1. **Link to resources:** Select this link to view collated videos, and other related help content.
 
 
-#### Trend Visualization of primary insight
+#### Trend visualization of primary insight
 
 Trend visualizations chart shows the trend-line of the primary insight key metrics for readers, creators, and collaborators, over the last 180 days. Each data point on the chart is an aggregate of activity for the last 28 days. Each creator data-point provides a count of all people who were tagged as creators within the last 28 days for each date on the x axis.
 
