@@ -318,7 +318,7 @@ Make sure that the SSPR **Selected** setting includes Microsoft Managed Desktop 
 
 **Error**
 
-The Intune Administrator role doesn't have sufficient permissions for this check. You'll also need the Reports Reader Azure AD roles assigned to run this check.
+The Intune Administrator role doesn't have sufficient permissions for this check. You'll also need the Reports Reader Azure AD role assigned to run this check.
 
 
 ### Standard user role
