@@ -70,14 +70,14 @@ Your report reflects data based on the date and time at which it was generated. 
 
 The **Note** section shows that your report is customized based on the geographic location of your tenant. Recommendations listed in the tool will be specific to your country or region.
 
-Your geolocation selection is used to assess Sensitive Information Types (SITs) which are relevant to that geolocation and generate a report for the same. Choose geolocations based on data you have in your tenant.
+Your geolocation selection is used to assess sensitive information types (SITs) which are relevant to that geolocation and generate a report that aligns to your country or region. Choose geolocations based on data you have in your tenant.
 
-To change the location of your report, you need provide a geolocation (-Geo) input parameter. You can choose either one or multiple geolocations applicable for your tenant.
+To change your report's location information, you need provide a geolocation (-Geo) input parameter. You can choose either one or multiple geolocations applicable for your tenant.
 
 Follow these instructions to run a report based on a specific location:
 
 1. Open PowerShell
-2. To specify a certain region, you’ll run a cmdlet using the numbers from the table below that correspond to the region. Enter multiple numbers by separating them with a comma. For example, the cmdlet below will run a customized report for Asia-Pacific and Japan:
+2. To specify a certain region, you’ll run a cmdlet using the numbers from the table below that correspond to the country or region. Enter multiple numbers by separating them with a comma. For example, the cmdlet below will run a customized report for Asia-Pacific and Japan:
 
     ```powershell
     Get-MCCAReport -Geo @(1,7)
