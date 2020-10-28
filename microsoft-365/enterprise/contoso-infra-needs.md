@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -26,12 +25,10 @@ Contoso is transitioning from an on-premises, centralized IT infrastructure to a
 
 Contoso uses a mostly centralized on-premises IT infrastructure, with application datacenters in the Paris headquarters.
 
-Figure 1 shows the headquarters office with application datacenters, a DMZ, and the internet.
+Here is the headquarters office with application datacenters, a DMZ, and the internet.
 
 ![Existing Contoso IT infrastructure](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
-**Figure 1: Existing Contoso IT infrastructure**
- 
 The on-premises application datacenters host: 
 
 - Custom line-of-business applications that use SQL Server and other Linux databases.
@@ -131,12 +128,12 @@ The Contoso IT department determined the following mapping of business needs to 
 | Compliance |  |  |
 |  | Adhere to regional regulatory requirements | GDPR features in Microsoft 365 |
 | Management |  |  |
-|  | Lower IT overhead for installing client updates | Deployment rings <BR> Windows 10 Enterprise updates <BR> Microsoft 365 Apps for enterprise updates |
+|  | Lower IT overhead for installing client updates | Windows 10 Enterprise updates <BR> Microsoft 365 Apps for enterprise updates |
 ||||
 
 ## Next step
 
-[Learn](contoso-networking.md) about the Contoso Corporation on-premises network and how it was optimized for access and latency to Microsoft 365 cloud-based resources.
+Learn about the Contoso Corporation [on-premises network](contoso-networking.md) and how it was optimized for access and latency to Microsoft 365 cloud-based resources.
 
 ## See also
 
