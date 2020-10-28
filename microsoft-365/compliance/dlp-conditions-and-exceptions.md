@@ -95,44 +95,29 @@ In the Exchange Admin Center, in the **Properties of this rule** section, click 
 |---------|---------|---------|---------|
 |Attachment is password protected|condition: *DocumentIsPasswordProtected* <br/> exception: *ExceptIfDocumentIsPasswordProtected*|none| Messages where an attachment is password protected (and therefore can't be scanned). Password detection only works for Office documents and .zip files.|
 |Attachment’s file extension is|condition: *ContentExtensionMatchesWords* <br/> exception: *ExceptIfContentExtensionMatchesWords|	Words	|Messages where an attachment's file extension matches any of the specified words.|
-|Any email attachment’s content could not be scanned|	DocumentIsUnsupported
-ExceptIf DocumentIsUnsupported	n/a	Messages where an attachment isn't natively recognized by Exchange Online.
-Any email attachment’s content didn’t complete scanning	ProcessingLimitExceeded
-ExceptIfProcessingLimitExceeded	n/a	Messages where the rules engine couldn't complete the scanning of the attachments. You can use this condition to create rules that work together to identify and process messages where the content couldn't be fully scanned.
-Document name contains words	DocumentNameMatchesWords
-ExceptIfDocumentNameMatchesWords	Words	Messages where an attachment's file name matches any of the specified words.
-Document name matches patterns	DocumentNameMatchesPatterns
-ExceptIfDocumentNameMatchesPatterns	Patterns	Messages where an attachment's file name contains text patterns that match the specified regular expressions.
-Document property is	ContentPropertyContainsWords
-ExceptIfContentPropertyContainsWords	Words	Messages where an attachment's file extension matches any of the specified words.
-Document size equals or is greater than	DocumentSizeOver
-ExceptIfDocumentSizeOver	Size	Messages where any attachment is greater than or equal to the specified value.
+|Any email attachment’s content could not be scanned|condition: *DocumentIsUnsupported* <br/>exception: *ExceptIf DocumentIsUnsupported|	n/a|	Messages where an attachment isn't natively recognized by Exchange Online.|
+|Any email attachment’s content didn’t complete scanning|	condition: *ProcessingLimitExceeded* <br/> exception: *ExceptIfProcessingLimitExceeded|	n/a	|Messages where the rules engine couldn't complete the scanning of the attachments. You can use this condition to create rules that work together to identify and process messages where the content couldn't be fully scanned.|
+|Document name contains words|condition: *DocumentNameMatchesWords* <br/> exception: *ExceptIfDocumentNameMatchesWords* |Words	|Messages where an attachment's file name matches any of the specified words.|
+|Document name matches patterns|condition: *DocumentNameMatchesPatterns* <br/> exception: *ExceptIfDocumentNameMatchesPatterns*|	Patterns	|Messages where an attachment's file name contains text patterns that match the specified regular expressions.|
+|Document property is|condition: *ContentPropertyContainsWords* <br/> exception: *ExceptIfContentPropertyContainsWords*	|Words|	Messages where an attachment's file extension matches any of the specified words.|
+|Document size equals or is greater than| condition: *DocumentSizeOver* <br/> exception: *ExceptIfDocumentSizeOver|	Size	|Messages where any attachment is greater than or equal to the specified value.|
 
 ### Message Headers
 
-Condition or exception in the DLP	Condition and exception parameters in Microsoft 365 PowerShell	Property type	Description
-Header contains words or phrases	HeaderContainsWords
-ExceptIfHeaderContainsWords	Hash Table	Messages that contain the specified header field, and the value of that header field contains the specified words.
-
-Header matches patterns	HeaderMatchesPatterns
-ExceptIfHeaderMatchesPatterns	Hash Table	Messages that contain the specified header field, and the value of that header field contains the specified regular expressions.
+|**Condition or exception in DLP**|	**condition/exception parameters in Microsoft 365 PowerShell**|	**Property type**|	**Description**|
+|---------|---------|---------|---------|
+|Header contains words or phrases|condition: *HeaderContainsWords* <br/> exception: *ExceptIfHeaderContainsWords*|	Hash Table	|Messages that contain the specified header field, and the value of that header field contains the specified words.|
+|Header matches patterns|	condition: *HeaderMatchesPatterns* <br/> exception: *ExceptIfHeaderMatchesPatterns*|	Hash Table	|Messages that contain the specified header field, and the value of that header field contains the specified regular expressions.|
 
 ### Message properties
 
-Condition or exception in the DLP	Condition and exception parameters in Microsoft 365 PowerShell	Property type	Description
-With importance	WithImportance
-ExceptIfWithImportance	Importance	Messages that are marked with the specified Importance level.
-Message size over	MessageSizeOver
-ExceptIfMessageSizeOver	Size	Messages where the total size (message plus attachments) is greater than or equal to the specified value.
-
-Note: Message size limits on mailboxes are evaluated before mail flow rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.
-Content character set contains words	ContentCharacterSetContainsWords
-ExceptIfContentCharacterSetContainsWords	CharacterSets	Messages that have any of the specified character set names.
-Has sender override	HasSenderOverride
-ExceptIfHasSenderOverride	n/a	Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies, see Data loss prevention.
-
-Message type matches	MessageTypeMatches
-ExceptIfMessageTypeMatches	MessageType	Messages of the specified type.
+|**Condition or exception in DLP**|	**condition/exception parameters in Microsoft 365 PowerShell**|	Property type	|Description|
+|---------|---------|---------|---------|
+|With importance|condition: *WithImportance* <br/> exception: *ExceptIfWithImportance*|	Importance	|Messages that are marked with the specified Importance level.|
+|Message size over|condition: *MessageSizeOver* <br/> exception: *ExceptIfMessageSizeOver*|	Size	|Messages where the total size (message plus attachments) is greater than or equal to the specified value. <br/>**Note**: Message size limits on mailboxes are evaluated before mail flow rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.|
+|Content character set contains words|condition: *ContentCharacterSetContainsWords* <br/> exception: *ExceptIfContentCharacterSetContainsWords*|	CharacterSets	|Messages that have any of the specified character set names.|
+|Has sender override|condition: *HasSenderOverride* <br/> exception: *ExceptIfHasSenderOverride*|	n/a	|Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies, see [Learn about DLP](data-loss-prevention-policies.md).
+|Message type matches|condition: *MessageTypeMatches* <br/> exception: *ExceptIfMessageTypeMatches*|	MessageType	|Messages of the specified type.|
 
 
 
