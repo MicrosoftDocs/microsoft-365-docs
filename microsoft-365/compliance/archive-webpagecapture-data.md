@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Admins can set up a connector to import and archive Webpage Capture data from Globanet in Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive webpage data (preview)
+# Set up a connector to archive webpage data
 
 Use a Globanet connector in the Microsoft 365 compliance center to import and archive data from webpages to user mailboxes in your Microsoft 365 organization. Globanet provides a [Webpage Capture](https://globanet.com/webpage-capture) connector that captures specific webpages (and any links on those pages) in a specific website or an entire domain. The connector converts the webpage content to a PDF, PNG, or custom file format and then attaches the converted files to an email message and then imports those email items to user mailboxes in Microsoft 365.
 
@@ -68,7 +68,7 @@ To map users and complete the connector setup in the Microsoft 365 compliance ce
 
 1. On the **Map Webpage Capture users to Microsoft 365 users** page, enable automatic user mapping. The Webpage Capture items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user's mailbox.
 
-2. On the **Admin Consent** page, click **Provide Consent**. You will be redirected to the Microsoft site. Click **Accept** to provide the consent.
+2. On the **Admin Consent** page, click **Provide Consent**. You'll be redirected to the Microsoft site. Click **Accept** to provide the consent.
 
    Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. To provide admin consent, you must be signed in with the credentials of a Microsoft 365 global admin, and then accept the consent request. If you aren't signed in as a global admin, you can go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign in using global admin credentials to accept the request.
 
@@ -80,7 +80,7 @@ After you create the Webpage Capture connector, you can view the connector statu
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
 
-2. Click the **Connectors** tab and then select the **Webpage Capture** connector to display the flyout page, which contains the properties and information about the connector.
+2. Click the **Connectors** tab and then select the **Webpage Capture** connector to display the flyout page. This page contains the properties and information about the connector.
 
 3. Under **Connector status with source**, click the **Download log** link to open (or save) the status log for the connector. This log contains data that has been imported to the Microsoft cloud.
 
