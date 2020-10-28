@@ -82,22 +82,22 @@ Follow these instructions to run a report based on a specific location:
     ```powershell
     Get-MCCAReport -Geo @(1,7)
     ```
-| Input |  Country or Region | 
-| :------------- | :------------: |
-| 1 | Asia-Pacific |
-| 2 | Australia |
-| 3 | Canada |
-| 4 | Europe (excluding France) / Middle East / Africa |
-| 5 | France |
-| 6 | India |
-| 7 | Japan |
-| 8 | Korea |
-| 9 | North America (excluding Canada) |
-| 10 | South America |
-| 11 | South Africa |
-| 12 | Switzerland |
-| 13 | United Arab Emirates |
-| 14 | United Kingdom |
+  | Input |  Country or Region | 
+  | :------------- | :------------: |
+  | 1 | Asia-Pacific |
+  | 2 | Australia |
+  | 3 | Canada |
+  | 4 | Europe (excluding France) / Middle East / Africa |
+  | 5 | France |
+  | 6 | India |
+  | 7 | Japan |
+  | 8 | Korea |
+  | 9 | North America (excluding Canada) |
+  | 10 | South America |
+  | 11 | South Africa |
+  | 12 | Switzerland |
+  | 13 | United Arab Emirates |
+  | 14 | United Kingdom |
 
 
  > [!NOTE]
