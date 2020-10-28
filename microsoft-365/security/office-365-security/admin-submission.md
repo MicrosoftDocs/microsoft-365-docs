@@ -229,7 +229,7 @@ Near the top of the page, you can enter a start date, an end date, and you can f
 
 To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
 
-## Undo user Submissions
+## Undo user submissions
 
 Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it will be available for recovery in the Deleted or Junk Email folder. 
 
