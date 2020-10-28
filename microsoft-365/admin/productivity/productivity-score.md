@@ -34,18 +34,18 @@ The score includes:
 
 We provide data, insights, and recommendations in two areas: 
 
-- **People experiences:** We measure how people collaborate on content, how they use Microsoft 365 products to communicate, and whether they use Microsoft 365 across platforms. 
+- **People experiences:** Measures how people collaborate on content, how they use Microsoft 365 products to communicate, and whether they use Microsoft 365 across multiple platforms. 
 
-    We provide these insights because when people collaborate online, they save time. With the freedom to work on any device, they are more productive and satisfied. Communicating in a flexible way makes people more efficient, form better relationships, and your organization is more unified. For evidence, see [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+    We provide these insights because when people collaborate online, they save time, and with the freedom to work on any device makes then more productive and satisfied. The ability to communicate in a flexible way makes people more efficient, able to form better relationships therefore making your organization more unified. For evidence, see [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Technology experiences:** Productivity depends on reliable and performant technology as well as the efficient use of Microsoft 365. We provide [endpoint analytics](https://aka.ms/endpointanalytics), which helps you understand how your users’ productivity can be impacted by performance and health issues with your endpoint hardware and software. We also provide recommended actions to remediate them as well as Microsoft 365 network connectivity insights for your organization.
+- **Technology experiences:** Productivity depends on reliable and well performing technology as well as the efficient use of Microsoft 365. We provide [endpoint analytics](https://aka.ms/endpointanalytics), which helps you understand how your users’ productivity can be impacted by performance and health issues with your endpoint hardware and software. We also provide recommended actions to remediate them as well as Microsoft 365 network connectivity insights for your organization.
 
 See [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) for an overview and prerequisite details. To learn more about Microsoft 365 network connectivity insights, read [the network connectivity overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## How the score is calculated
 
-Your Productivity Score is based on the combined scores of your people and technology experiences categories. Each category is weighted equally, with a total of 100 points per category. The total possible points for Productivity Score are 500.
+Your Productivity Score is based on the combined scores of your people and technology experiences categories. Each category is weighted equally, with a total of 100 points. The highest possible Productivity Score is 500.
 
 ### Score categories 
 
@@ -56,7 +56,7 @@ Your Productivity Score is based on the combined scores of your people and techn
 - Network connectivity (100 points)
 - **Total possible = 500 points**
  
- In each category, we identify patterns for key activities that are indicators for how people use Microsoft 365 products to collaborate, communicate, and work across platforms. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation but are important for helping you identify underlying behaviors and settings that you can act on to drive change.
+ In each category, we identify patterns for key activities that are indicators for how people use Microsoft 365 products to collaborate, communicate, and work across platforms. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation but are important for helping you identify underlying behaviors and settings that you can act on.
 
 ### Products included in Productivity Score 
 
@@ -67,7 +67,7 @@ Your score is updated daily and reflects user actions completed in the last 28 (
 
 ## Pre-requisites 
 
-You need a Microsoft 365 for business or Office 365 for enterprise subscription to get people experiences data, and you need to be using multi-tenant cloud services. To get endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization’s data by managing devices and apps.       Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about Microsoft Intune. 
+To get people experiences data you need a Microsoft 365 for business or Office 365 for enterprise subscription, and you need to be using multi-tenant cloud services. To get endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization’s data by managing devices and apps.       Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about Microsoft Intune. 
 
 To view the Productivity Score for your organization, you must have of one of the following roles: 
 
@@ -83,11 +83,11 @@ You can access the experience from Microsoft 365 Admin home under **Reports** > 
 
 ## Interpreting Productivity Score 
 
-The Productivity Score home page shows your total score and score history as well as the primary insight for each category
+The Productivity Score home page shows your total score and score history and the primary insight for each category.
 
 ![Productivity Score home page](../../media/pslanding.png)
 
-**Your score** is shown as a percent value as well as in points so you can see your points (numerator) and maximum possible points (denominator).
+**Your score** is shown as a percent value and in points. You can see your points in the numerator and the maximum possible points in the denominator.
 
 **Peer benchmarks** allow you to compare your score with organizations like yours. For the people experiences categories, the peer benchmark measure is calculated as the average of measures within a set of similar organizations. The set is composed of organizations in your region with a similar number of licensed users, types of licenses, industry, and tenure with Microsoft 365. 
 
