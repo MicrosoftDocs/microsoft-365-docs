@@ -133,7 +133,7 @@ If your billing is done by Microsoft Corporation ([see your invoice](view-your-b
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the subscription that you want to update.
 3. On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.
-4. On the **Edit your service usage address** pane, in the **VAT number** box, enter your VAT ID, including the prefix, and without any spaces.
+4. On the **Edit service usage address** pane, in the **VAT number** box, enter your VAT ID, including the prefix, and without any spaces.
 5. Select **Save**.
 
 ## How taxes are calculated
