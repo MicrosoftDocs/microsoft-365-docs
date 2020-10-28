@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -29,40 +29,14 @@ Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://ad
 
 ## Edit the group name or description
 
-::: moniker range="o365-worldwide"
-
 1. In the admin center, expand **Groups**, and then click **Groups**.
 
 2. Select the group that you want to edit, and then click **Edit name and description**.
 
 3. Update the name and description, and then select **Save**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, expand **Groups**, and then click **Groups**.
-
-2. Select the group that you want to edit, and then click **Edit name and description**.
-
-3. Update the name and description, and then select **Save**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, expand **Groups**, and then click **Groups**.
-
-2. Select the group that you want to edit, and then click **Edit name and description**.
-
-3. Update the name and description, and then select **Save**.
-
-::: moniker-end
 
 ## Manage group owners and members
 
-::: moniker range="o365-worldwide"
-
 1. In the admin center, expand **Groups**, and then click **Groups**.
 
 2. Click the name of the group you want to manage to open the settings pane.
@@ -72,36 +46,6 @@ Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://ad
 4. Choose **Add** to add someone or click **X** to remove someone.
 
 5. Click **Close**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, expand **Groups**, and then click **Groups**.
-
-2. Click the name of the group you want to manage to open the settings pane.
-
-3. On the **Members** tab, choose if you want to manage owners or members.
-
-4. Choose **Add** to add someone or click **X** to remove someone.
-
-5. Click **Close**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, expand **Groups**, and then click **Groups**.
-
-2. Click the name of the group you want to manage to open the settings pane.
-
-3. On the **Members** tab, choose if you want to manage owners or members.
-
-4. Choose **Add** to add someone or click **X** to remove someone.
-
-5. Click **Close**.
-
-::: moniker-end
 
 ## Send copies of conversations to group members' inboxes
   
@@ -111,8 +55,6 @@ When you turn this setting on, group members will get a copy of group emails and
 
 Group members can opt out of receiving these emails by choosing to stop following the group in Outlook.
 
-::: moniker range="o365-worldwide"
-
 1. In the admin center, expand **Groups**, and then click **Groups**.
 
 2. Click the name of the group you want to manage to open the settings pane.
@@ -121,38 +63,10 @@ Group members can opt out of receiving these emails by choosing to stop followin
 
 4. Select **Save**.
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Groups** \> **Groups** page, and then select the group you want to change.
-
-2. Next to **Name**, select **Edit**.
-
-3. Turn **Send copies of group conversations and events to group members' inboxes** to **On** if you want members to receive copies of group messages and calendar items in their own inbox.
-
-4. Select **Save**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to the **Groups** \> **Groups** page, and then select the group you want to change.
-
-2. Next to **Name**, select **Edit**.
-
-3. Turn **Send copies of group conversations and events to group members' inboxes** to **On** if you want members to receive copies of group messages and calendar items in their own inbox.
-
-4. Select **Save**.
-
-::: moniker-end
-
 ## Let people outside the organization email the group
 
 This option is great if you want to have a company email address such as info@contoso.com.
  
-::: moniker range="o365-worldwide"
-
 1. In the admin center, expand **Groups**, and then click **Groups**.
 
 2. Click the name of the group you want to manage to open the settings pane.
@@ -161,32 +75,27 @@ This option is great if you want to have a company email address such as info@co
     
 4. Select **Save**.
 
-::: moniker-end
+## Permanently delete a Microsoft 365 group
 
-::: moniker range="o365-germany"
+Sometimes you may want to permanently purge a group without waiting for the 30 day soft-deletion period to expire. To do that, start PowerShell and run this command to get the object ID of the group:
+ 
+ ```powershell
+`Get-AzureADMSDeletedGroup`
+```
 
-1. Refresh your admin center page so your new group appears.
-    
-2. In the admin center groups list, select the group you want to change, and then next to **Name**, select **Edit**. 
-    
-3. Set the **Let people outside the organization email the group** toggle to **On**.
-    
-4. Select **Save**.
+Take note of the object ID of the group, or groups, that you want to permanently delete.
+  
+> [!CAUTION]
+> Purging the group removes the group and its data forever. 
+  
+To purge the group run this command in PowerShell:
 
-::: moniker-end
+```powershell
+`Remove-AzureADMSDeletedDirectoryObject -Id <objectId>`
+```
 
-::: moniker range="o365-21vianet"
-
-1. Refresh your admin center page so your new group appears.
-    
-2. In the admin center groups list, select the group you want to change, and then next to **Name**, select **Edit**. 
-    
-3. Set the **Let people outside the organization email the group** toggle to **On**.
-    
-4. Select **Save**.
-
-::: moniker-end
-
+To confirm that the group has been successfully purged, run the  *Get-AzureADMSDeletedGroup*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 
+  
 ## Related articles
 
 [Create a Microsoft 365 group](create-groups.md)

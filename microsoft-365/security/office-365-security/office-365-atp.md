@@ -7,7 +7,7 @@ author: msfttracyp
 manager: dansimp
 ms.date:
 audience: Admin
-ms.topic: hub-page
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:

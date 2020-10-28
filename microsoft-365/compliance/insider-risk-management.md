@@ -116,6 +116,9 @@ In the more serious situations, you may need to share the insider risk managemen
 - **ServiceNow (preview)**: ServiceNow is a popular cloud computing platform that helps organizations manage digital workflows for enterprise operations. Insider risk management supports sharing case alerts with your ServiceNow service and allows you to create incidents and change requests related to individual insider risk cases. To learn more about sharing alert information with ServiceNow, see [Share a case with ServiceNow](insider-risk-management-cases.md#share-the-case).
 - **Office 365 Management APIs integration (preview)**: Insider risk management supports exporting alert information to security information and event management (SIEM) services via the Office 365 Management APIs. Having access to alert information in the platform the best fits your organization's risk processes gives you more flexibility in how to act on risk activities. To learn more about exporting alert information with Office 365 Management APIs, see [Export alerts](insider-risk-management-settings.md#export-alerts-preview).
 
+>[!NOTE]
+>The ServiceNow preview will end on November, 30 2020 and will not be continued. Thank you for your feedback and support while we determine next steps.
+
 ## Scenarios
 
 Insider risk management can help you detect, investigate, and take action to mitigate internal risks in your organization in several common scenarios:
