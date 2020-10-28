@@ -1,5 +1,5 @@
 ---
-title: "Migration from Microsoft Cloud Deutschland references"
+title: "Additional information for the migration from Microsoft Cloud Deutschland"
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -17,17 +17,19 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: "Summary: Understand the experiences for moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region. (fix)"
+description: "Summary: Additional information oon services, pre-work considerations, and customer experience when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# Migration from Microsoft Cloud Deutschland references
+# Additional information for the migration from Microsoft Cloud Deutschland
 
 
 ## General
 
-### Azure AD
+The following sections provide additional information on services, pre-work considerations, and customer experience.
 
-Here are some additonal considerations for Azure AD.
+### Azure Active Directory
+
+Here are some additonal considerations for Azure Active Directory (AD).
 
 - If you are using federated authentication:
 
@@ -54,8 +56,11 @@ Here are some additonal considerations for Azure AD.
 
 - Intune scenarios are supported only against WW endpoints, once tenant migration, including all office workloads migrations are completed
 - Microsoft Cloud Deutschland users who use the Mobile App Notification method for multi-factor authentication (MFA) requests see the UserObjectId (GUID) instead of the Username (UPN) in the Microsoft Authenticator app.  Once migration of the Azure AD tenant is completed and hosted in Office 365 services, new Microsoft Authenticator activations will display Username (UPN). Existing Microsoft Authenticator accounts will continue to display the UserObjectId (GUID) but will continue to work for Mobile App Notifications. 
-- For tenants created after October 22nd 2019, Security Defaults may be auto-enabled for the tenant when it is migrated to the Office 365 service. Tenant admins can choose to leave Security Defaults enabled and register for MFA, or they can disable the feature. For more information see https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults. Note: Organizations which are not auto-enabled during migration may still be auto-enrolled in the future as the feature to enable security defaults is rolled out in the Office 365 service. Admins choosing to explicitly disable or enable Security Defaults may do so by updating the feature under Azure Active Directory > Properties. Once the feature enablement state is explicitly by the admin, it will not be auto-enabled.
-- There will be an Azure AD Connect version warning in the Office 365 Germany portal as well as the Office 365 portal once the tenant is in migration. This can be ignored if the version warning is no longer show the warning after the migration is completed. In case there is a warning either before or after migration in the respective portal, an Azure AD Connect update needs to be performed. The warning displays “We detected you’re using an outdated directory sync tool. We recommend you go to the Microsoft Download Center to get the latest version of Azure AD Connect”. 
+- For tenants created after October 22nd 2019, Security Defaults may be auto-enabled for the tenant when it is migrated to the Office 365 service. Tenant admins can choose to leave Security Defaults enabled and register for MFA, or they can disable the feature. For more information see [Security defaults](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults). 
+
+  - Note: Organizations which are not auto-enabled during migration may still be auto-enrolled in the future as the feature to enable security defaults is rolled out in the Office 365 service. Admins choosing to explicitly disable or enable Security Defaults may do so by updating the feature under **Azure Active Directory > Properties**. Once the feature enablement state is explicitly by the admin, it will not be auto-enabled.
+
+- There will be an Azure AD Connect version warning in the Office 365 Germany portal as well as the Office 365 portal once the tenant is in migration. This can be ignored if the version warning is no longer show the warning after the migration is completed. In case there is a warning either before or after migration in the respective portal, an Azure AD Connect update needs to be performed. The warning displays: We detected you’re using an outdated directory sync tool. We recommend you go to the Microsoft Download Center to get the latest version of Azure AD Connect. 
 
 ### Exchange Online 
 
@@ -66,7 +71,7 @@ Here are some additonal considerations for Azure AD.
 
     - You must re-run the Hybrid Configuration Wizard (HCW) to update on-premises configuration against Microsoft Cloud Deutschland before the transition, and re-execution of the HCW upon cleanup against the Office 365 services. Additional DNS updates may be required if you use custom domains.
 
-- During Migration Phase, cmdlets New-migrationEndpoint, Set-MigrationEndpoint and Test-MigrationsServerAvailability can give error [Error on proxy]. This happens when the arbitration mailbox has migrated to Office 365 services but the admin mailbox has not or vice versa. To resolve this, while creating the tenant powershell session use the arbitration mailbox as routing hint in the connectionuri. Eg: New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid?email=Migration.8f3e7716-2011-43e4-96b1-aba62d229136@TENANT.onmicrosoft.de" -Credential $UserCredential -Authentication Basic -AllowRedirection
+- During Migration Phase, cmdlets New-migrationEndpoint, Set-MigrationEndpoint and Test-MigrationsServerAvailability can give error [Error on proxy]. This happens when the arbitration mailbox has migrated to Office 365 services but the admin mailbox has not or vice versa. To resolve this, while creating the tenant powershell session use the arbitration mailbox as routing hint in the connectionuri. For example: `New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid?email=Migration.8f3e7716-2011-43e4-96b1-aba62d229136@TENANT.onmicrosoft.de" -Credential $UserCredential -Authentication Basic -AllowRedirection`
 
 To find out more information about any actions needed during the migration phase of this workload or impact to administration or usage, review the Exchange Online section of Migration Phases Actions and Impacts.
 
@@ -82,7 +87,6 @@ To find out more information about any actions needed during the migration phase
 
 
 ## Pre-work
-
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
@@ -110,7 +114,7 @@ If you have hybrid Exchange:
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
-| Uninstall previous Hybrid Configuration Wizard (HCW). Install and Execute HCW latest version 17.0.5378.0  from https://aka.ms/hybridwizard. | Latest version of the HCW includes necessary updates to support customers transitioning from Microsoft Cloud Deutschland to Office 365 Services. <br> Updates include changes to SendConnector and ReceiveConnector on-premises certificate settings. | Exchange Online customers running Hybrid deployment | Required action – failure to do so may result in service / client failure. |
+| Uninstall previous Hybrid Configuration Wizard (HCW). Install and Execute HCW latest version 17.0.5378.0  from [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard). | The latest version of the HCW includes necessary updates to support customers transitioning from Microsoft Cloud Deutschland to Office 365 Services. <br> Updates include changes to SendConnector and ReceiveConnector on-premises certificate settings. | Exchange Online customers running Hybrid deployment | Required action – failure to do so may result in service / client failure. |
 |||||
 
 ### SharePoint Online
@@ -122,7 +126,10 @@ If you have SharePoint 2013:
 | Limit SharePoint 2013 workflows, use during the SharePoint Online migration | Reduce SharePoint 2013 workflows and complete in-flight workflows before transitions | SharePoint Online Customers | Non action may result in user confusion, helpdesk calls. |
 |||||
 
-[Reference:  If Pre-Work][ SharePoint 2013 ] 			
+<!--
+[Reference:  If Pre-Work][ SharePoint 2013 ]
+--> 
+ 			
 
 ### Mobile
 
@@ -133,7 +140,9 @@ If you are using a third-party mobile device management (MDM) solution:
 | Determine if any reconfiguration is required post-migration | MDM solutions may target outlook.de endpoints. In this transition to Office 365 Services, client profiles should update to the Office 365 Services outlook.office365.com URL. | Exchange Online and MDM customers | Clients may continue to function while “outlook.de” endpoint is accessible but will fail if Microsoft Cloud Deutschland endpoints are no longer available. |
 |||||
 
-[Reference:  If Pre-Work][ Mobile] 			
+<!--
+[Reference:  If Pre-Work][ Mobile]
+-->  			
 
 ### Line of business apps
 
@@ -144,7 +153,9 @@ If using a third-party service or Line of Business (LOB) apps integrated with Of
 | Determine if any reconfiguration is required post-migration | 3rd party services and applications that integrate with Office 365 may be coded to expect Microsoft Cloud Deutschland IPs, URLs | All customers | Required action – non action may result in service / client failure. |
 |||||
 
+<!--
 [Reference:  If Pre-Work][ LOB]
+--> 
 
 ### Azure 
 
@@ -154,7 +165,9 @@ If using a third-party service or Line of Business (LOB) apps integrated with Of
 Administrators should identify subscriptions and stakeholders to ensure prompt migration and validation is possible as part of this migration event. <br> Failing to successfully complete migration of these subscriptions and Azure components within the prescribed timeline will affect completion of the Office and Azure AD transition to the Office 365 services and may result in data loss.  <br> A Message center notification will signal the point at which customer-led migration can begin. |
 |||||
 
-[Reference:  If Azure Pre-Work][ Azure] 
+<!--
+[Reference:  If Azure Pre-Work][ Azure]
+-->  
 
 ### Dynamics	
 
@@ -163,7 +176,9 @@ Administrators should identify subscriptions and stakeholders to ensure prompt m
 | For Dynamics sandbox organizations, ensure to download production environment of Dynamics SQL instance from Dynamics 365 Microsoft Cloud Deutschland. The latest production backup should be restored to sandbox before sandbox migration | Migration of Dynamics 365 requires customers to ensure that the Sandbox environment is refreshed with the latest Prod DB. | Microsoft Dynamics customers | FastTrack team will assist customers to perform dry runs to validate the version upgrade from 8.x to 9.1.x. |
 |||||
 
-[Reference: Prework][Dynamics]  			
+<!--
+[Reference: Prework][Dynamics]
+-->   			
 
 ### PowerBI
 
@@ -172,7 +187,9 @@ Administrators should identify subscriptions and stakeholders to ensure prompt m
 | Removal of objects from Power BI subscriptions that will not be migrated between Power BI Microsoft Cloud Deutschland and Office 365 Services | Migration of Power BI services will require customer action to delete certain artifacts like datasets and dashboards. | Power BI customers | Admins may have to remove the below items from their subscription: <ul><li> Real-Time datasets (e.g., streaming or push datasets) </li><li> Power BI on-premises Data Gateway configuration and data source </li></ul> |
 |||||
 
+<!--
 [Reference: Prework][Power BI]
+--> 
 
 ### DNS
 
@@ -181,7 +198,9 @@ Administrators should identify subscriptions and stakeholders to ensure prompt m
 | Review and prepare for DNS change if current DNS has MSOID CName entry | Customer owned DNS zone changes | Office Client Services customers | Update customer owned DNS record Time to Live (TTL)  to 5 min if MSOID CName exists |
 |||||
 
-[Reference: Prework][DNS] 			
+<!--
+[Reference: Prework][DNS]
+-->  			
 
 ### Federated identity
 
@@ -190,7 +209,9 @@ Administrators should identify subscriptions and stakeholders to ensure prompt m
 | Generate Relying Party Trust for global Azure AD endpoints | Customers need to manually create a Relying Party Trust (RPT) to global endpoints. This is done by adding a new RPT via GUI by leveraging the global  federation metadata URL and then use AD FS Help to generate the claim rules and import them into the RPT. | Federated Authentication organizations | Required Action – non action will result in service impact during the migration |
 |||||
 
-[Reference: Prework][Federation] 
+<!--
+[Reference: Prework][Federation]
+-->  
 
 ## Experience
 
@@ -199,16 +220,13 @@ Administrators should identify subscriptions and stakeholders to ensure prompt m
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
-
 | Microsoft Cloud Deutschland Azure AD tenant copied to Office 365 Services | Azure AD copies tenant to Office 365 Services. Tenant and User identifiers are preserved.  Azure AD service calls are redirected from Microsoft Cloud Deutschland to Office 365 Services transparent to services. | All Office customers | <ul><li> GDPR Data Subject Requests (DSRs) are executed from Office 365 Services Azure Admin portal for future requests. Any legacy/non-customer diagnostic data information resident Microsoft Cloud Deutschland is deleted at or before 30 days. </li><li> All customers using federated authentications with Active Directory Federation Services (AD FS), should not make changes to Issuer URIs used for all authentications with on-premises Active Directory during migration. Changing Issuer URIs will lead to authentication failures for users in the domain. Issuer URIs can be changed directly in AD FS or when a domain is converted from managed to federated and vice versa. Microsoft recommends customers do not add/remove/convert a federated domain in the Azure AD tenant been migrated. Issuer URIs can be changed once the migration is fully complete. </li><li> Multi-Factor Auth requests using the Microsoft Authenticator application display as UserObjectID (GUID) while the tenant is copied to Office 365 services. MFA requests will perform as expected despite this display behavior.   Microsoft Authenticator accounts activated using Office 365 services endpoints will display Username (UPN).  Accounts added using Microsoft Cloud Deutschland endpoints will display UserObjectID (GUID) but will work with both Microsoft Cloud Deutschland and Office 365 services endpoints. </li></ul> |
-
 | Establish AuthServer in on-premises pointing to global STS service | This ensures that requests from users who migrate to the Microsoft Cloud Deutschland service for Exchange availability requests targeting the hybrid on-premises environment are authenticated to access the on-premises service. Similarly this will ensure authentication of requests from onprem to Office 365 services endpoints | Exchange Online customers with Hybrid (on-premises) deployments | <ul><li> After Azure AD migration is signaled complete, the administrator of the on-premises Exchange (hybrid) topology must add a new authentication service endpoint for the Office 365 services. Using the below commandlet from Exchange Powershell, replace <tenantID> with your organizations Tenant ID (found in Azure portal/Azure AD blade). <br> `New-AuthServer` <br> `GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol
 .windows.net/[TenantId]/metadata/json/1` </li><li> Failing to complete this task, as Mailbox users migrate from Microsoft Cloud Deutschland to Office 365 services hybrid free-busy requests may fail to provide information. </li></ul>  |
-
 | Migration of Azure resources | Customers using Office 365 and Azure resources (e.g., Networking, Compute, Storage, etc) will perform the migration of resources to the Office 365 Services instance. This migration is customer responsibility. Message Center posts will signal start.  and migration must be completed prior to finalization of the Azure AD organization in the Office 365 services environment. | Azure Customers | For Azure migrations, see the [Azure migration playbook](https://docs.microsoft.com/en-us/azure/germany/germany-migration-main) |
-
 |||||
 
+<!--
 [Reference: Experience][Data Protection] Experience][
 [Reference: Experience][Federation] 
 [Reference: Experience][MFA]  
@@ -217,8 +235,8 @@ Administrators should identify subscriptions and stakeholders to ensure prompt m
 [Reference: Experience – Post Migration][Hybrid] 	
 		
 
-[Reference: Experience – During Migration] [Azure] 			•	
-
+[Reference: Experience – During Migration] [Azure] 
+-->
 
 ### Exchange Online
 
@@ -229,7 +247,9 @@ If using Set-UserPhoto:
 | New Germany region is added to existing organization setup and mailboxes are moved to Office 365 services | Exchange Online configuration adds the new go-local German region to the transitioning organization. This Office 365 services region is set as ‘default’, which enables the internal load balancing service to re-distribute mailboxes to the appropriate default region in Office 365 services. In this transition, users on either side (Germany or Office 365 services) are in the same organization and can use either URL endpoint. |  Exchange Online | In case user mailbox has been migrated but admin mailbox has not been migrated and vice-versa, the admins will not be able to run `Set-UserPhoto` cmdlet. Admin need to pass additional string in ConnectionUri during connection setup. Below syntax mentions the change –  `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br> Where user_email is the placeholder for email-id of the user whose Photo needs to be changed using Set-UserPhoto cmdlet. |
 |||||
 
-[Reference: Experience][Exchange Online]  [if using Set-UserPhoto]  
+<!--
+[Reference: Experience][Exchange Online]  [if using Set-UserPhoto] 
+-->  
 
 If hybrid:
 
@@ -238,7 +258,9 @@ If hybrid:
 |Stop / delete any onboarding or offboarding moves of their mailboxes.  | This ensures the move requests don’t fail with error. | Exchange Online customers with Hybrid (on-premises) deployments | 	Required action – fail to do so may result in service / client failure. |
 |||||
 
+<!--
 [Reference: Experience][Hybrid] 
+--> 
 
 
 ### Dynamics
@@ -270,7 +292,9 @@ If hybrid:
 | Clients, Office Online	During Office client cutover, Azure AD finalizes the tenant scope to point to the Office 365 services. | This configuration change enables Office clients to update and point to the Office 365 services endpoints. | All Office customers | <ul><li>  </li><li> Notify users to close ALL Office apps and then sign back in (or force client restart, user sign-in) to enable Office clients to pick up the change. </li><li> Personal machines must close all Office applications, sign out, then back in. In the Yellow activation bar sign-in to re-activate against the Office 365 services service </li><li> Mobile devices – Mobile devices must close then sign out and back into mobile applications. </li></ul> |
 |||||
 
+<!--
 [Reference: Experience][Office Apps]
+--> 
 
 ### During migration
 
@@ -283,11 +307,11 @@ For eDiscovery
 |:-------|:-----|:-------|:-------|
 | During migration, eDiscovery searches will fail or return 0 results for SharePoint Online, OneDrive for Business and Exchange Online locations that have been migrated | During migration, customers can continue to create cases, holds, searches and exports in the Security & Compliance Center, including Content Search.  However, searches against SharePoint Online, OneDrive for Business and Exchange Online locations that have been migrated will either return 0 results or produce an error.  See steps column to the right for remediation. | All customers using eDiscovery |  	In the event that a search returns 0 results or an error during migration, please take the following action. <ul><li> SharePoint Online - Download sites directly from SharePoint Online/ OneDrive for Business site using  Download files and folders from OneDrive or SharePoint - this will require SharePoint Online admin or R/O permissions on the site <br>
 If limits are exceeded, explained in the above documentation, customer can utilize the OneDrive for Business sync client following this guidance. </li><li> Exchange Online - In-Place eDiscovery in Exchange Server </li></ul>|
-|  |  |  |  |
-|  |  |  |  |
 |||||
 
-[Reference: Experience – During Migration][ [eDiscovery] 	 	 
+<!--
+[Reference: Experience – During Migration][ [eDiscovery]
+-->  	 	 
 
 
 #### SharePoint Online
@@ -295,22 +319,22 @@ If limits are exceeded, explained in the above documentation, customer can utili
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
 | SharePoint and OneDrives are transitioned | SharePoint and OneDrives are migrated from Microsoft Cloud Deutschland to Office 365 services in this phase. Existing Microsoft Cloud Deutschland URLs are preserved (contoso.sharepoint.de). Tokens issued by Microsoft Cloud Deutschland or Office 365 services token issuer are valid during the transition. | SharePoint customers | Inflight SharePoint 2013 workflows will be broken during migration and must be republished post-migration |
-|  |  |  |  |
-|  |  |  |  |
 |||||
 
-[Reference: Experience – During Migration][ [SPO] 
+<!--
+[Reference: Experience – During Migration][ [SPO]
+-->  
 
 #### Skype for Business Online
 
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
 | Migration of Skype for Business to Teams | Existing Skype for Business customers are migrated to Office 365 services in Europe and then transitioned to Microsoft Teams in the Germany region of Office 365 services. | Skype for Business customers | The override is to specify which environment powershell will utilize to administer settings and policies for your tenant and users. When connectint to a powershell session the following needs to be added. `-OverridePowershellUri “https://admin4E.online.lync.com/OcsPowershellOAuth”` |
-|  |  |  |  |
-|  |  |  |  |
 |||||
 
-[Reference: Experience – During Migration][ [SfBO] 
+<!--
+[Reference: Experience – During Migration][ [SfBO]
+-->  
 
 
 ### Post-migration
@@ -325,7 +349,9 @@ For hybrid:
 Failing to do so, will lead to objects not being synced once the Microsoft Cloud Deutschland endpoints are not available anymore. |
 |||||
 
+<!--
 [Reference: Experience – Post Migration][Hybrid]
+--> 
 
 For federated authentication:
 
@@ -334,7 +360,9 @@ For federated authentication:
 | Remove MCD AD FS Relying Party Trusts | Once Azure AD cutover is completed, the organization is fully Office 365 services organization (no longer connected to Microsoft Cloud Deutschland). At this point the customer will need to remove the Relying Party Trust to the Black Forest endpoints. This can only be done, when no applications of the customer point to Black Forest endpoints when Azure AD is leveraged as IdP. | Federated Authentication organizations | None |
 |||||
 
-[Reference: Experience – Post Migration][Federated] 	 		
+<!--
+[Reference: Experience – Post Migration][Federated]
+-->  	 		
 
 For Azure AD:
 
@@ -343,7 +371,9 @@ For Azure AD:
 | Request to join an Azure AD group in last 30 days before migration will need to be requested again if the original request was not approved | End user customer will need to use Access panel to submit request to join a an Azure AD group again if those requests were not approved in the last 30 days before the migration. | End users whose an Azure AD group approval requests were not approved in last 30 days before migration | <ol><li> As an end user, navigate to Access panel. </li><li> Find the an Azure AD group for which membership approval was pending in 30 days before migration. </li><li> Request to join the an Azure AD  group again. </li></ol><br> Active group membership requests which are less than 30 days before migration cannot be approved, unless they are re-requested post migration |
 |||||
 
+<!--
 [Reference: Experience – Post Migration][Azure AD]
+--> 
 
 For DNS:
 
@@ -352,7 +382,9 @@ For DNS:
 | Update on-premises DNS services for Office 365 services endpoints | Customer managed DNS entries which point to Office 365 Germany need to repoint to the Office 365 services endpoints. | All Office customers | Required action – failure to do so may result in service / client failure. |
 |||||
 
-[Reference: Experience – Post Migration][DNS]
+<!--
+ [Reference: Experience – Post Migration][DNS]
+-->
 
 For 3rd Party services for Office 365 services endpoints:
 
@@ -361,7 +393,9 @@ For 3rd Party services for Office 365 services endpoints:
 | Update partners and 3rd party services for Office 365 services endpoints | 3rd party services and partners which point to Office 365 Germany need to repoint to the Office 365 services endpoints. Example: <ul><li> Re-Register, in alignment with your vendors/partners, gallery app version of applications, if available </li><li>  </li><li> Point all custom applications which leverage e.g. Graph API from graph.microsoft.de to graph.microsoft.com. Other APIs with changed endpoints also need to be adjusted, if leveraged. </li><li> Change all non-first party Enterprise Applications to redirect to the WW endpoints. </li></ul> | All Office customers | Required action – failure to do so may result in service / client failure. |
 |||||
 
-[Reference: Experience – Post Migration][] 
+<!--
+ [Reference: Experience – Post Migration][]
+--> 
 
 #### Exchange Online
 
@@ -372,7 +406,9 @@ If you are using a hybrid Exchange configuration:
 | Re-run Hybrid Configuration Wizard against Office 365 services | Existing Hybrid Configuration Wizard configuration is configured to support Microsoft Cloud Deutschland. With migration complete of Exchange services, we decouple on-premises configuration from Microsoft Cloud Deutschland. | Exchange Online customers running Hybrid deployment | Required action – fail to do so may result in service / client failure. <ul><li> Before Exchange mailbox migration begins (+5 days’ notice) clients to be notified that they should stop / delete any onboarding or offboarding moves of their mailboxes.  If they don't, they'll see errors in their move request. </li><li> After Exchange mailbox migration is complete, again clients are to be signaled that they can resume onboarding/offboarding moves. <br> Running `Test-MigrationServerAvailabiilty` cmdlet during Microsoft Cloud Deutschland to Office 365 services Migration of Exchange may not work. It will work properly after migration completion. <br> If clients run into credential / authorization issues after mailbox migrations, they can re-enter the on-prem admin credentials in the migration endpoint by running `Set-MigrationEndpoint endpointName -Credential $(Get-Credential)` or by setting the same using ECP </li></ul> |
 | New Germany region is added to existing organization setup and mailboxes are moved to Office 365 services | Exchange Online configuration adds the new go-local German region to the transitioning organization. The Germany region continues set as ‘default’. Individual mailboxes tagged with the Germany region in Office 365 services will migrate automatically by the Load Balancing service when set by Customer during initial validation. Subsequently changing the “default” to the appropriate Office 365 services region will move the bulk of mailboxes at scale. In this transition, users on either side (Microsoft Cloud Deutschland or Office 365 services) are in the same organization and can use either URL endpoint. | Exchange Online | <ul><li> Stamp MailboxRegion on individual mailboxes to Germany region code “GER” to individually move specific mailboxes during ‘validation’ phase. </li><li> Transition users and services off Microsoft Cloud Deutschland URLs to Office 365 services URLs (https://outlook.office365.com) to aide in future retirement of the Germany service endpoints. </li><li> Upon completion of validation phase, the DefaultMailboxRegion is changed to GER to allow all mailboxes to rebalance to Office 365 services. </li><li> Users will continue to access the service via legacy Germany URLs. No immediate action needed. </li></ul> |
 
+<!--
 [Reference: Experience – Post Migration][Hybrid]  
+--> 
 
 [Reference: Experience – Post Migration][Exchange Online]
 
@@ -384,9 +420,11 @@ For eDiscovery:
 | Remove org-wide retention policy created during pre-steps | Customer can remove the org-wide Retention Policy created during Customer Pre-Work steps | All customers who applied a retention policy during pre-work steps | None |
 |||||
 
-[Reference: Experience – Post Migration][ [eDiscovery] 	 	 	
+<!--
+ [Reference: Experience – Post Migration][ [eDiscovery] 	 	 	
 
-[Reference: Experience – Post Migration][ [eDiscovery]  	 	 	
+[Reference: Experience – Post Migration][ [eDiscovery]
+-->  	 	 	
 
 #### SharePoint Online
 
@@ -395,7 +433,9 @@ For eDiscovery:
 | Republish SharePoint 2013 workflows | In Pre-work we reduced SharePoint 2013 workflows. Now with migration complete, the customer can republish the workflows. | All Office customers | This is a required action – failure to do so may result in user confusion, helpdesk calls. |
 |||||
 
-[Reference: Experience – Post Migration][ [SPO]
+<!--
+ [Reference: Experience – Post Migration][ [SPO]
+-->
 
 
 ## More information

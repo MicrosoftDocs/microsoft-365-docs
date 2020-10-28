@@ -120,6 +120,7 @@ Office 365 services in the new German datacenter regions:
 - Are accessible through existing online services contracts.
 
 ### What is the service availability between the different Office 365 cloud service offerings?
+<h2 id="serv-avail"></h2>
 
 The following 15 services are available in the Microsoft Cloud Deutschland cloud service offering. We are not adding new services to Microsoft Cloud Deutschland.
 
