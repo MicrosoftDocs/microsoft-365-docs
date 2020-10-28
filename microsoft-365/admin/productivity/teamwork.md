@@ -24,11 +24,11 @@ description: "Details of the Teamwork - people experiences Productivity score."
 
 # Teamwork – People experiences
 
-Productivity Score helps organizations transform how work gets done with metrics about how people use Microsoft 365 apps and the supporting technology experiences. The score reflects your organization&#39;s performance for people and technology experience categories and compares your score with organizations like yours. The Teamwork category is part of the measurements that falls under people experiences. See the [Productivity Score overview](https://docs.microsoft.com/en-us/microsoft-365/admin/productivity/productivity-score?view=o365-worldwide) to learn more.
+Productivity Score helps organizations transform how work gets done with metrics about how people use Microsoft 365 apps and the supporting technology experiences. The score reflects your organization&#39;s performance for people and technology experience categories and compares your score with organizations like yours. The Teamwork category is part of the measurements that falls under people experiences. See the [Productivity Score overview](productivity-score.md) to learn more.
 
 ## Why your org&#39;s teamwork score matters
 
-A fundamental pillar for organizational productivity is when a group of people with a common goal work with each other and with common resources for collective success. Research indicates that when people share information and collaborate in shared workspaces, they save up to 4 hours a week. They can find related documents, find context for previous discussions, and deliver towards shared goals. See the[evidence](https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf)
+A fundamental pillar for organizational productivity is when a group of people with a common goal work with each other and with common resources for collective success. Research indicates that when people share information and collaborate in shared workspaces, they save up to 4 hours a week. They can find related documents, find context for previous discussions, and deliver towards shared goals. See the[evidence](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf)
 
 ## How we calculate the score
 
