@@ -34,7 +34,7 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 
 - [Understand your compliance score](compliance-manager.md#understanding-your-compliance-score)
 - [Overview of key elements: controls, assessments, templates, and improvement actions](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
-- [Understand the Compliance Manager dashboard](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [Understand the Compliance Manager dashboard](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
 - [Understand assessments](compliance-manager.md#assessments)

@@ -22,7 +22,7 @@ description: "Find answers to frequently asked questions about Microsoft Complia
 
 There is now just one solution: Compliance Manager. This section walks you through the transition, starting with a basic overview below. You may also find it helpful to jump directly to one of the following sections:
 
-- [Your organization primarily used Compliance Manager (either the classic or public preview versions), located in the Microsoft Service Trust Portal](#your-organization-regularly-used-compliance-manger-in-the-service-trust-portal)
+- [Your organization primarily used Compliance Manager (either the classic or public preview versions), located in the Microsoft Service Trust Portal](#your-organization-regularly-used-compliance-manager-in-the-service-trust-portal)
 
 - [Your organization primarily used Compliance Score (public preview), located in the Microsoft 365 compliance center](#your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center)
 
@@ -46,7 +46,7 @@ Everything you used to do in previous versions of Compliance Manager, such as co
 
 Below are some helpful resources:
 
-- [Get familiar with your new Compliance Manager experience](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [Get familiar with your new Compliance Manager experience](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [Find permissions and other setup information for Compliance Manager in its new home](compliance-manager-setup.md#who-can-access-compliance-manager)
 - [Learn more about the Microsoft 365 compliance center](microsoft-365-compliance-center.md)
 
