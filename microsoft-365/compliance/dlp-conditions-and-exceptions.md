@@ -36,7 +36,7 @@ The tables in the following sections describe the conditions and exceptions that
 - [Message properties](#message-properties)
 - [Message headers](#message-headers)
 
-### Senders
+## Senders
 
 For conditions and exceptions that examine the sender's address, you can specify where rule looks for the sender's address.
 
@@ -69,7 +69,7 @@ In the Exchange Admin Center, in the **Properties of this rule** section, click 
 |From scope   |     condition: *FromScope* <br/> exception: *ExceptIfFromScope*    |   UserScopeFrom      |  Messages that are sent by either internal senders or external senders.       |
 
 
-### Recipients
+## Recipients
 
 |**Condition or exception in DLP**|	**condition/exception parameters in Microsoft 365 PowerShell** |	**Property type** |	**Description**|
 |---------|---------|---------|---------|
@@ -79,7 +79,7 @@ In the Exchange Admin Center, in the **Properties of this rule** section, click 
 |Recipient address matches patterns| condition:*RecipientAddressMatchesPatterns* <br/> exception: *ExceptIfRecipientAddressMatchesPatterns*|	Patterns	|Messages where a recipient's email address contains text patterns that match the specified regular expressions. <br/> **Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
 |Sent to member of|	condition:*SentToMemberOf* <br/> exception:*ExceptIfSentToMemberOf*|	Addresses|	Messages that contain recipients who are members of the specified distribution group, mail-enabled security group, or Microsoft 365 group. The group can be in the **To**, **Cc**, or **Bcc** fields of the message.|
 
-### Message subject or body
+## Message subject or body
 
 |**Condition or exception in DLP** | **condition/exception parameters in Microsoft 365 PowerShell** |**Property type**|	**Description**|
 |---------|---------|---------|---------|
@@ -89,7 +89,7 @@ In the Exchange Admin Center, in the **Properties of this rule** section, click 
 |Subject or Body matches pattern|condition: *SubjectOrBodyMatchesPatterns* <br/>exdeption: *ExceptIfSubjectOrBodyMatchesPatterns*|	Patterns	|Messages where the Subject field or message body contain text patterns that match the specified regular expressions.|
 |Subject or Body contains words| condition: *SubjectOrBodyContainsWords* <br/>exception: *ExceptIfSubjectOrBodyContainsWords* |	Words	|Messages that have the specified words in the Subject field or message body.|
 
-### Attachements
+## Attachements
 
 |**Condition or exception in DLP**|	**condition/exception parameters in Microsoft 365 PowerShell**|	Property type	|Description|
 |---------|---------|---------|---------|
@@ -102,14 +102,14 @@ In the Exchange Admin Center, in the **Properties of this rule** section, click 
 |Document property is|condition: *ContentPropertyContainsWords* <br/> exception: *ExceptIfContentPropertyContainsWords*	|Words|	Messages where an attachment's file extension matches any of the specified words.|
 |Document size equals or is greater than| condition: *DocumentSizeOver* <br/> exception: *ExceptIfDocumentSizeOver|	Size	|Messages where any attachment is greater than or equal to the specified value.|
 
-### Message Headers
+## Message Headers
 
 |**Condition or exception in DLP**|	**condition/exception parameters in Microsoft 365 PowerShell**|	**Property type**|	**Description**|
 |---------|---------|---------|---------|
 |Header contains words or phrases|condition: *HeaderContainsWords* <br/> exception: *ExceptIfHeaderContainsWords*|	Hash Table	|Messages that contain the specified header field, and the value of that header field contains the specified words.|
 |Header matches patterns|	condition: *HeaderMatchesPatterns* <br/> exception: *ExceptIfHeaderMatchesPatterns*|	Hash Table	|Messages that contain the specified header field, and the value of that header field contains the specified regular expressions.|
 
-### Message properties
+## Message properties
 
 |**Condition or exception in DLP**|	**condition/exception parameters in Microsoft 365 PowerShell**|	Property type	|Description|
 |---------|---------|---------|---------|
@@ -118,14 +118,4 @@ In the Exchange Admin Center, in the **Properties of this rule** section, click 
 |Content character set contains words|condition: *ContentCharacterSetContainsWords* <br/> exception: *ExceptIfContentCharacterSetContainsWords*|	CharacterSets	|Messages that have any of the specified character set names.|
 |Has sender override|condition: *HasSenderOverride* <br/> exception: *ExceptIfHasSenderOverride*|	n/a	|Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies, see [Learn about DLP](data-loss-prevention-policies.md).
 |Message type matches|condition: *MessageTypeMatches* <br/> exception: *ExceptIfMessageTypeMatches*|	MessageType	|Messages of the specified type.|
-
-
-
-
-
-
-
-## For more information
-
-## See also
 
