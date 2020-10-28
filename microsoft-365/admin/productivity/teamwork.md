@@ -1,3 +1,27 @@
+---
+title: "Microsoft Productivity Score - Teamwork"
+f1.keywords:
+- NOCSH
+ms.author: sirkkuw
+author: Sirkkuw
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection: 
+- M365-subscription-management 
+- Adm_O365
+- Adm_TOC
+ms.custom: AdminSurgePortfolio
+monikerRange: 'o365-worldwide'
+search.appverid:
+- MET150
+- MOE150
+ROBOTS: NOINDEX, NOFOLLOW
+description: "Details of the Teamwork - people experiences Productivity score."
+---
+
 # Teamwork – People experiences
 
 Productivity Score helps organizations transform how work gets done with metrics about how people use Microsoft 365 apps and the supporting technology experiences. The score reflects your organization&#39;s performance for people and technology experience categories and compares your score with organizations like yours. The Teamwork category is part of the measurements that falls under people experiences. See the [Productivity Score overview](https://docs.microsoft.com/en-us/microsoft-365/admin/productivity/productivity-score?view=o365-worldwide) to learn more.

@@ -135,11 +135,11 @@ This section provides you with user-level details of activities relevant to all 
 - **Username**  is the email address of the user.
 - **Display name**  is the full name if the user.
 - **Last activity date**  the last time the user performed an activity relating to any of the insights within Communication within the last 28 days.
-- **Department:** Department defined for the user in Azure Active Directory (AAD).
-- **Company:** Company defined for the user in AAD.
-- **Country:** Country defined for the user in AAD.
-- **State:** State defined for the user in AAD.
-- **City:** City defined for the user in AAD.
+- **Department:** Department defined for the user in Azure Active Directory (Azure AD).
+- **Company:** Company defined for the user in Azure AD.
+- **Country:** Country defined for the user in Azure AD.
+- **State:** State defined for the user in Azure AD.
+- **City:** City defined for the user in Azure AD.
 - **Exchange:** True if the user is enabled for Exchange in the last 28 days otherwise False.
 - **Teams:** True if the user is enabled for Teams in the last 28 days otherwise False.
 - **Yammer:** True if the user is enabled for Yammer in the last 28 days otherwise False.
