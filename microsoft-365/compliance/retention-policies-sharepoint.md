@@ -87,22 +87,22 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 
 When you apply a retention policy to a location that includes OneNote content, the different OneNote sections are actually different files. This means that each section will be individually retained and deleted, according to the retention settings you specify.
 
-## How retention works with document versions in a site collection
+## How retention works with document versions in a site
 
-Versioning is a feature of all document libraries in SharePoint and OneDrive. By default, versioning retains a minimum of 500 major versions, though you can increase this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) and [How versioning works in lists and libraries](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
+Versioning is a feature of all document lists and libraries in SharePoint and OneDrive. By default, versioning retains a minimum of 500 major versions, although you can increase this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) and [How versioning works in lists and libraries](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-When a document that must be retained is deleted, all versions are copied to the Preservation Hold library if versioning is enabled. Each version of a document in the Preservation Hold library exists as a separate item with its own retention period:
-  
+When a document with versions is subject to retention settings to retain that content (or is subject to an eDiscovery hold), versions that get copied to the Preservation Hold library exist as a separate item:
+
 - If the retention period is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
 
-- If the retention period is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original documents and its versions expire independently of each other.
+- If the retention period is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original document and its versions expire independently of each other.
 
 > [!NOTE]
-> The preserved versions of SharePoint and OneDrive documents are not searchable by eDiscovery tools.
+> The retained versions of these SharePoint and OneDrive documents are not searchable by eDiscovery tools.
 
 When the retention action is to delete the document, all versions not in the Preservation Hold library are deleted at the same time according to the current version.
 
-For items that are subject to retention policies (or a legal hold), the versioning limits for the document library are ignored until the retention period of the document is reached. In this scenario, old versions are not automatically purged and users are prevented from deleting versions.
+For items that are subject to a retention policy (or an eDiscovery hold) rather than a retention label, the versioning limits for the document library are ignored until the retention period of the document is reached (or the eDiscovery hold is released). In this scenario, old versions are not automatically purged and users are prevented from deleting versions.
 
 That's not the case for retention labels when a retention policy isn't applied to the site. Instead, the versioning limits are honored so that older versions are automatically deleted to accommodate new versions, but users are still prevented from deleting versions.
 
