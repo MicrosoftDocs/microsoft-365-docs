@@ -275,9 +275,9 @@ For more information about the Safe Senders list, see [Prevent trusted senders f
 
 #### Block sender permission
 
-The **Block sender** permission allows users to add the sender to their Safe Senders list on their mailbox.
+The **Block sender** permission allows users to add the sender to their Block Senders list on their mailbox.
 
-- Quarantined messages: No effect; there's no **Block sender** button available in the quarantined message details.
+- Quarantined messages: The **Block sender** button available in the quarantined message details.
 - End-user spam notifications: The **Block sender** button is available.
 
 For more information about the Blocked Senders list, see [Block messages from someone](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
