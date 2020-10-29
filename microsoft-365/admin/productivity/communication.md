@@ -157,9 +157,9 @@ You can also export the report data into an Excel .csv file, by selecting the Ex
 
 ## Related content
 
-[Microsoft 365 apps health – Technology experiences](apps-health.md) (article)
-[Content collaboration – People experiences](content-collaboration.md) (article)
-[Meetings – People experiences](meetings.md) (article)
-[Mobility – People experiences](mobility.md) (article)
-[Privacy controls for Productivity Score](privacy.md) (article)
+[Microsoft 365 apps health – Technology experiences](apps-health.md) (article)\
+[Content collaboration – People experiences](content-collaboration.md) (article)\
+[Meetings – People experiences](meetings.md) (article)\
+[Mobility – People experiences](mobility.md) (article)\
+[Privacy controls for Productivity Score](privacy.md) (article)\
 [Teamwork – People experiences](teamwork.md) (article)

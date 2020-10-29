@@ -163,9 +163,9 @@ The following columns are represented in the table at the user level:
 
 ## Related content
 
-[Microsoft 365 apps health – Technology experiences](apps-health.md) (article)
-[Communication – People experiences](communication.md) (article)
-[Content collaboration – People experiences](content-collaboration.md) (article)
-[Mobility – People experiences](mobility.md) (article)
-[Privacy controls for Productivity Score](privacy.md) (article)
+[Microsoft 365 apps health – Technology experiences](apps-health.md) (article)\
+[Communication – People experiences](communication.md) (article)\
+[Content collaboration – People experiences](content-collaboration.md) (article)\
+[Mobility – People experiences](mobility.md) (article)\
+[Privacy controls for Productivity Score](privacy.md) (article)\
 [Teamwork – People experiences](teamwork.md) (article)
