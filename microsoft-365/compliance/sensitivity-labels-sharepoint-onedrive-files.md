@@ -223,7 +223,7 @@ For more information about using managed properties, see [Manage the search sche
 
 There might be rare occasions when a SharePoint administrator needs to remove encryption from a document stored in SharePoint. Any user who has the [Rights Management usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) of Export or Full Control assigned to them for that document can remove encryption that was applied by the Azure Rights Management service from Azure Information Protection. For example, users with either of these usage rights can replace a label that applies encryption with a label without encryption. Alternatively, a [super user](https://docs.microsoft.com/azure/information-protection/configure-super-users) could download the file and save a local copy without the encryption.
 
-As an alternative, a global admin or [SharePoint admin](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) can run the Unlock-SPOSensitivityLabelEncryptedFile cmdlet, which removes both the sensitivity label and the encryption. This cmdlets runs even if the admin doesn't have access permissions to the site or file, or if the Azure Rights Management service is unavailable. 
+As an alternative, a global admin or [SharePoint admin](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) can run the [Unlock-SPOSensitivityLabelEncryptedFile](https://docs.microsoft.com/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet, which removes both the sensitivity label and the encryption. This cmdlets runs even if the admin doesn't have access permissions to the site or file, or if the Azure Rights Management service is unavailable. 
 
 For example:
 
@@ -233,7 +233,7 @@ Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Mark
 
 Requirements:
 
-- SharePoint Online Management Shell version 16.0.19418.12000 or later.
+- SharePoint Online Management Shell version 16.0.20616.12000 or later.
 
 - The encryption has been applied by a sensitivity label with admin-defined encryption settings (the [Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now) label settings). [Double Key Encryption](encryption-sensitivity-labels.md#double-key-encryption) is not supported for this cmdlet.
 
