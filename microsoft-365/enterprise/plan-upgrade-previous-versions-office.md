@@ -39,12 +39,12 @@ Microsoft 365 includes the licenses and capabilities to help ensure that your or
   
 Microsoft 365 is the way to digitally transform your business with constantly improving devices and productivity experiences that are enabled and secured by the Microsoft cloud.
  
-| Resource | Description |
-|:-----|:-----|
-|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> | Get information about the versions of Microsoft 365.  <br/> |
-|[Microsoft 365 Business documentation](https://docs.microsoft.com/microsoft-365/business/) <br/> | Get detailed information about the version of Microsoft 365 for small and medium businesses.  <br/> |
-|[Microsoft 365 Education documentation](https://docs.microsoft.com/microsoft-365/education/) <br/> | Get detailed information about the version of Microsoft 365 for educational organizations.  <br/> |
-|[Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> | Get detailed information about the version of Microsoft 365 for enterprise organizations.  <br/> |
+|Resource|Description|
+|---|---|
+|[Microsoft 365](https://www.microsoft.com/microsoft-365)|Get information about the versions of Microsoft 365.|
+|[Microsoft 365 Business documentation](https://docs.microsoft.com/microsoft-365/business/)|Get detailed information about the version of Microsoft 365 for small and medium businesses.|
+|[Microsoft 365 Education documentation](https://docs.microsoft.com/microsoft-365/education/)|Get detailed information about the version of Microsoft 365 for educational organizations.|
+|[Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365/enterprise/)|Get detailed information about the version of Microsoft 365 for enterprise organizations.|
 |||
 
 ## What happens if I don't upgrade?
@@ -57,15 +57,14 @@ Organizations should consider several upgrade options:
 
 - **Upgrade your on-premises servers and applications.** If you're using Office products and server applications on-premises, see the following planning content:<br/> 
 
-    
-    |Office 2007 products and services  |Office 2010 products and services  |
-    |---------|---------|
-    |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) (Desktop) | [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) (Desktop) |
-    |[Exchange 2007](exchange-2007-end-of-support.md) |[Exchange 2010](exchange-2010-end-of-support.md) |
-    |[SharePoint 2007](sharepoint-2007-end-of-support.md) |[SharePoint 2010](upgrade-from-sharepoint-2010.md) |
-    |[Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) |[Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) |
-    |[Project Server 2007](project-server-2007-end-of-support.md) |[Project Server 2010](project-server-2010-end-of-support.md) |
-    |[PerformancePoint Server 2007](pps-2007-end-of-support.md) | |
+  |Office 2007 products and services|Office 2010 products and services|
+  |---|---|
+  |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) (Desktop)|[Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) (Desktop)|
+  |[Exchange 2007](exchange-2007-end-of-support.md)|[Exchange 2010](exchange-2010-end-of-support.md)|
+  |[SharePoint 2007](sharepoint-2007-end-of-support.md)|[SharePoint 2010](upgrade-from-sharepoint-2010.md)|
+  |[Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|[Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|
+  |[Project Server 2007](project-server-2007-end-of-support.md)|[Project Server 2010](project-server-2010-end-of-support.md)|
+  |[PerformancePoint Server 2007](pps-2007-end-of-support.md)||
  
 - **Implement a hybrid solution with Microsoft 365 or Office 365.** A hybrid solution uses your on-premises servers and applications and their cloud equivalents. If you're moving to the cloud in phases or you must keep some server and applications on-premises, a hybrid solution might be right for your organization. For more information, see [Microsoft cloud architecture models](../solutions/cloud-architecture-models.md). 
     
@@ -87,19 +86,19 @@ If you're using Office 2007 or Office 2010 at home, consider the following updat
 
 - **Use Office in a browser for free.** Create, view, and edit Office files in your browser. Get access to those files from just about any device that has internet access. 
 
-    [Office on the web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) includes [Word for the web](https://go.microsoft.com/fwlink/p/?linkid=746664), [Excel for the web](https://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint for the web](https://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote for the web](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](https://go.microsoft.com/fwlink/p/?linkid=746675), [Email](https://go.microsoft.com/fwlink/p/?linkid=746676), [Calendar](https://go.microsoft.com/fwlink/p/?linkid=746678), and [OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). To get started, visit [Office.com](https://office.com) and sign in by using your [Microsoft account](https://account.microsoft.com/account). If you don't have a Microsoft account, you can create one at [Office.com](https://office.com).
+  [Office on the web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) includes [Word for the web](https://go.microsoft.com/fwlink/p/?linkid=746664), [Excel for the web](https://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint for the web](https://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote for the web](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](https://go.microsoft.com/fwlink/p/?linkid=746675), [Email](https://go.microsoft.com/fwlink/p/?linkid=746676), [Calendar](https://go.microsoft.com/fwlink/p/?linkid=746678), and [OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). To get started, visit [Office.com](https://office.com) and sign in by using your [Microsoft account](https://account.microsoft.com/account). If you don't have a Microsoft account, you can create one at [Office.com](https://office.com).
 
 - **Try Microsoft 365 Family.** Start a trial of [Microsoft 365 Family](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab) to see how it works for you. With Microsoft 365 Family, you'll enjoy cloud storage with OneDrive.
 
-   Support for Windows 7 [ended on January 14, 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support). The versions of Word, Excel, PowerPoint, Outlook, Publisher, and Access that are provided with Office 365 Home or Office 365 Personal and that run on Windows 7 devices receive security updates but not feature updates. To continue receiving feature updates for these applications, [upgrade your Windows 7 devices to Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
+  Support for Windows 7 [ended on January 14, 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support). The versions of Word, Excel, PowerPoint, Outlook, Publisher, and Access that are provided with Office 365 Home or Office 365 Personal and that run on Windows 7 devices receive security updates but not feature updates. To continue receiving feature updates for these applications, [upgrade your Windows 7 devices to Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
     
 - **Purchase Office Home &amp; Student.** If you choose this option, you make a one-time purchase and then install Office on your Windows PC or Mac. This purchase isn't a subscription; it's a one-time, perpetual-use license for one computer. View the [requirements](https://office.com/systemrequirements) and then choose a version.
 
-    - If your Windows PC is running Windows 10, consider getting [Office Home & Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
+  - If your Windows PC is running Windows 10, consider getting [Office Home & Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
 
-    - If your Windows PC is running Windows 7, 8, or 8.1 and you're not upgrading to Windows 10 now, consider getting Office Home & Student 2016 or another edition of Microsoft Office. You can get it from an authorized reseller.
+  - If your Windows PC is running Windows 7, 8, or 8.1 and you're not upgrading to Windows 10 now, consider getting Office Home & Student 2016 or another edition of Microsoft Office. You can get it from an authorized reseller.
      
-        Support for Windows 7 [ended on January 14, 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support). Microsoft no longer provides security updates for it. Upgrade your Windows 7 devices to Windows 10 for continued security and feature updates and ongoing support.
+    Support for Windows 7 [ended on January 14, 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support). Microsoft no longer provides security updates for it. Upgrade your Windows 7 devices to Windows 10 for continued security and feature updates and ongoing support.
 
 If you choose not to upgrade now, your Office apps will continue to run according to the [timelines](https://support.microsoft.com/lifecycle/search/13615). However, to get security updates or new and improved features, you need to upgrade.
    
