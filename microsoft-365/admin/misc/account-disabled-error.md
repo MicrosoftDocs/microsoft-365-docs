@@ -18,7 +18,7 @@ ROBOTS:
 search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: "Learn how to add a licence to unlicensed users to fix the account disabled error."
+description: "Learn how to add a license to unlicensed users to fix the account disabled error."
 ---
 
 # Getting an account disabled error in Outlook on the web
