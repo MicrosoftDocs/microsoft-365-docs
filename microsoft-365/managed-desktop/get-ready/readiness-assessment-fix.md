@@ -13,7 +13,7 @@ ms.topic: article
 
 # Fix issues found by the readiness assessment tool
 
-For each check, the tool will report one of three possible results:
+For each check, the tool will report one of four possible results:
 
 
 |Result  |Meaning  |
@@ -21,6 +21,7 @@ For each check, the tool will report one of three possible results:
 |Ready     | No action is required before completing enrollment.        |
 |Advisory    | Follow the steps in the tool or this article for the best experience with enrollment and for users. You *can* complete enrollment, but you must fix these issues before you deploy your first device.        |
 |Not ready | *Enrollment will fail if you don't fix these issues.* Follow the steps in the tool or this article to resolve them.        |
+|Error | The Azure Active Director (AD) role you're using doesn't have sufficient permission to run this check. |
 
 ## Microsoft Intune settings
 
@@ -68,6 +69,16 @@ You have at least one conditional access policy that targets all users. Reset th
 **Advisory**
 
 Make sure that any conditional access policies you have exclude the **Modern Workplace Service Accounts** Azure AD group. For steps, see [Adjust conditional access](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access). The **Modern Workplace Service Accounts** Azure AD group is a dynamic group that we create for the service when you enroll. You'll have to come back to exclude this group after enrollment. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
+
+**Error**
+
+The Intune Administrator role doesn't have sufficient permissions for this check. You'll also need any of these Azure AD roles assigned to run this check:
+
+- Security Reader
+- Security Administrator
+- Conditional Access Administrator
+- Global Reader
+- Devices Administrator
 
 
 ### Device Compliance policies
@@ -125,7 +136,7 @@ Windows 10 devices in your Azure AD organization must be automatically enrolled 
 
 **Not ready**
 
-Users in your Azure AD organization aren't automatically enrolled in Microsoft Intune. Change the MDM User scope to **Some** or **All**. If you choose. Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups**.
+Users in your Azure AD organization aren't automatically enrolled in Microsoft Intune. Change the MDM User scope to **Some** or **All**. If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups**.
 
 
 ### Microsoft Store for Business
@@ -149,6 +160,15 @@ You have some multi-factor authentication (MFA) policies set as "required" for c
 
 Make sure that any conditional access policies that require MFA exclude the **Modern Workplace -All** Azure AD group. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). The **Modern Workplace -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
 
+**Error**
+
+The Intune Administrator role doesn't have sufficient permissions for this check. You'll also need any of these Azure AD roles assigned to run this check:
+
+- Security Reader
+- Security Administrator
+- Conditional Access Administrator
+- Global Reader
+- Devices Administrator
 
 
 ### PowerShell scripts
@@ -295,6 +315,11 @@ SSPR must be enabled for all users. If it isn't, the Microsoft Managed Desktop s
 **Advisory**
 
 Make sure that the SSPR **Selected** setting includes Microsoft Managed Desktop devices.
+
+**Error**
+
+The Intune Administrator role doesn't have sufficient permissions for this check. You'll also need the Reports Reader Azure AD role assigned to run this check.
+
 
 ### Standard user role
 
