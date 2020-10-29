@@ -28,10 +28,10 @@ This article explains what these functions look for, to help you understand how 
   
 ## Table of functions
 
-|function name  |function action  |
-|---------|---------|
-|Func_Argentina_Unique_Tax_Key|detects and validates Argentina Unique tax key|
-|Func_aba_routing|detects ABA routing number|
+|function name  |function action  |is a validator|
+|---------|---------|---------|
+|Func_Argentina_Unique_Tax_Key|detects and validates Argentina Unique tax key| yes|
+|Func_aba_routing|detects ABA routing number| yes|
 |Func_alabama_drivers_license_number|detects Alabama driver’s license number|
 |Func_alaska_delaware_oregon_drivers_license_number|detects Alaska, Delaware, Oregon driver’s license number|
 |Func_alaska_drivers_license_number|detects Alaska driver’s license number|
