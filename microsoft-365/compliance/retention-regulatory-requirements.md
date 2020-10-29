@@ -17,11 +17,11 @@ search.appverid:
 description: "Configure your retention policies and retention labels for regulatory requirements and use the Cohasset assessment to help you comply with regulatory standards for retaining your data."
 ---
 
-# Configure retention policies and retention labels for regulatory requirements
+# Configure information governance and records management for regulatory requirements
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-If your organization needs to comply with regulatory standards for retaining and disposing of data, the retention policies and retention labels that you can configure in Microsoft 365 are sufficient for most organizations.
+If your organization needs to comply with regulatory standards for retaining and disposing of data, the policies for retention and retention labels that you can configure in Microsoft 365 are sufficient for most organizations.
 
 However, some organizations in highly regulated industries are subject to more stringent regulatory requirements, such as the WORM (write once, read many) requirement, and the requirement to store electronic communications using a storage solution in which a record:
 
@@ -40,7 +40,6 @@ When a policy for retention is locked:
 
 - No one can turn it off
 - Locations can be added but not removed
-- Content subject to the policy can't be modified or deleted during the retention period
 - You can extend a retention period but not decrease it
 
 In summary, a locked policy for retention can be increased or extended, but it can't be reduced or turned off.
@@ -90,7 +89,7 @@ You should see **RestrictiveRetention** is set to **True**. For example:
 
 When you configure retention labels, you can configure the label to mark the content as a regulatory record. When the label with this configuration is applied to items, they can't be edited or deleted, and the label can't be changed or removed. In addition, admins won't be able to modify or delete this label after it's created. They'll only be able to increase the retention period.
 
-For additional security, you can apply Preservation Lock to the retention label policy that contains the regulatory records. When you do this, no administrator can remove these labels from the selected locations, only add locations.
+For additional security, you can apply Preservation Lock to the retention label policy that publishes regulatory record labels. When you do this, no administrator can remove these labels from the selected locations, only add locations.
 
 For more information about regulatory records, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
