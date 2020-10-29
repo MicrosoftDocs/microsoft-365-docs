@@ -33,9 +33,9 @@ For other workloads, see:
 
 ## What's included for retention and deletion
 
-The following Teams items can be retained and deleted by using retention policies for Teams: Chats and channel messages.
+The following Teams items can be retained and deleted by using retention policies for Teams: Chats and channel messages, including embedded images.
 
-Teams messages in private channels are not included and reactions from others in the form of emoticons are not included.
+Teams messages in private channels are not included, and reactions from others in the form of emoticons are not included.
 
 Emails and files that you use with Teams aren't included in retention policies for Teams. These items have their own retention policies.
 
