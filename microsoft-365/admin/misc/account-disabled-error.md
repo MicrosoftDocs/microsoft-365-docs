@@ -12,9 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 ms.custom: AdminSurgePortfolio
-ROBOTS: 
-- NOINDEX
-- NOFOLLOW
+ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
