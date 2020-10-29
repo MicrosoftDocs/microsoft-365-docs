@@ -59,6 +59,13 @@
               href: mtp/data-privacy.md
 			- name: Microsoft security portals
               href: mtp/portals.md
+
+		- name: Deploy
+			items:
+			- name: Turn on Microsoft Threat Protection
+              href: mtp/mtp-enable.md
+			- name: Deploy supported services
+              href: mtp/deploy-supported-services.md
 	   - name: Evaluate capabilities
           items: 
             - name: Trial lab overview
@@ -91,10 +98,8 @@
               href: mtp/mtp-evaluation.md
             - name: Run pilot playbook
               href: mtp/mtp-pilot.md
-            - name: Deploy supported services
-              href: mtp/deploy-supported-services.md
-            - name: Turn on Microsoft Threat Protection
-              href: mtp/mtp-enable.md
+
+
             - name: Turn on FAQ
               href: mtp/mtp-enable-faq.md
             - name: Incidents
