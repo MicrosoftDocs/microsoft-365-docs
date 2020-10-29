@@ -215,6 +215,42 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 For detailed syntax and parameter information, see [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy).
 
+## Configure global quarantine notification settings
+
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** and then select **Quarantine tags**.
+
+2. On the **Quarantine tags** page, select **Global settings**.
+
+3. In the **Quarantine notification settings** flyout that opens, configure some or all of the following settings:
+
+   - **Use my company logo**: Select this option to replace the default Microsoft logo that's use at the top of end-user spam notifications. Before you do this, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) to upload your custom logo.
+
+     The following screenshot shows a custom logo in an end-user spam notification:
+
+     ![A custom logo in an end-user spam notification](../../media/quarantine-tags-esn-customization-logo.png)
+
+   - **Choose language**: End-user spam notifications are already localized based on the recipient's language settings. You can specify customized text in different languages for the **Display name** and **Disclaimer** values.
+
+     Select at least one language from the first language box and then click **Add**. You can select multiple languages by clicking **Add** after each one. A section language box shows all of the languages that you've selected:
+
+     ![Selected languages in the second language box in the global quarantine notification settings of quarantine tags](../../media/quarantine-tags-esn-customization-selected-languages.png)
+
+   - **Display name**: Customize the sender's display name that's used in end-user spam notifications.
+
+     For each language that you've added, select the language in the second language box and enter the value you want in the **Display name** box.
+
+     The following screenshot shows the customized display name in an end-user spam notification:
+
+     ![A customized sender display name in an end-user spam notification](../../media/quarantine-tags-esn-customization-display-name.png)
+
+   - **Disclaimer**: Add a custom disclaimer to the bottom of end-user spam notifications. The localized text, **A disclaimer from your organization:** is always included first, followed by the text you specify.
+
+     For each language that you've added, select the language in the second language box and enter the text value you want in the **Display name** box.
+
+     The following screenshot shows the customized disclaimer in an end-user spam notification:
+
+     ![A custom disclaimer at the bottom of an end-user spam notification](../../media/quarantine-tags-esn-customization-disclaimer.png)
+
 ## Reference
 
 ### Effects of end-user quarantine tag permissions on quarantined messages and end-user spam notifications
@@ -242,7 +278,7 @@ For more information about the Safe Senders list, see [Prevent trusted senders f
 The **Block sender** permission allows users to add the sender to their Safe Senders list on their mailbox.
 
 - Quarantined messages: No effect; there's no **Block sender** button available in the quarantined message details.
-- End-user spam notifications: The **Review** button that takes the user to the quarantine is available.
+- End-user spam notifications: The **Block sender** button is available.
 
 For more information about the Blocked Senders list, see [Block messages from someone](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
