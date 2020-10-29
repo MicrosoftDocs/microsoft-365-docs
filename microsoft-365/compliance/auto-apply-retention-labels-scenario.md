@@ -226,7 +226,7 @@ Now that we've verified that the KQL query is working, let's create an auto-appl
 
    ![Specify the query in the Keyword query editor box](../media/SPRetention19.png)
 
-5. On the **Choose locations to apply the policy** page, you select the content locations that you want to apply the policy to. For this scenario, we apply the policy only to SharePoint locations, because all the production documents are stored in SharePoint document libraries. Toggle the status for **Exchange email**, **OneDrive accounts**, and **Office 365 Groups** to **Off**. Make sure that the status for SharePoint sites is set to **On** before you select **Next**: 
+5. On the **Choose locations to apply the policy** page, you select the content locations that you want to apply the policy to. For this scenario, we apply the policy only to SharePoint locations, because all the production documents are stored in SharePoint document libraries. Toggle the status for **Exchange email**, **OneDrive accounts**, and **Microsoft 365 Groups** to **Off**. Make sure that the status for SharePoint sites is set to **On** before you select **Next**: 
     
     ![Choose specific sites to auto-apply labels to](../media/SPRetentionSPlocations.png)
     

@@ -25,7 +25,6 @@ As an admin, you might have company requirements to restrict or control automati
 The following types of automatic forwarding are available in Microsoft 365:
 
 - Users can configure [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) to automatically forward messages to external senders (deliberately or as a result of a compromised account).
-
 - Admins can configure [mailbox forwarding](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as _SMTP forwarding_) to automatically forward messages to external recipients.
 
 You can use outbound spam filter policies to control automatic forwarding to external recipients. Three settings are available:
