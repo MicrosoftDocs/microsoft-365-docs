@@ -117,8 +117,7 @@ To create an explanation:
 
     ![Create explanation](../media/content-understanding/explanation.png) 
     
- 
-5. After you save the new explanation check if the model identified the remaining labeled example files correctly, as positive and negative examples. In the Trained files section, check the **Evaluation** column after the training has completed to see the results. The files show a value of **Match**, if the explanations you created was enough to match what you labeled as positive or negative.
+5. The Content Center now checks to see if the explanation you created is complete enough to identify the remaining labeled example files correctly, as positive and negative examples. In the Trained Files section, check the **Evaluation** column after the training has completed to see the results. The files show a value of **Match**, if the explanations you created was enough to match what you labeled as positive or negative.
 
     ![Match value](../media/content-understanding/match.png) 
 
