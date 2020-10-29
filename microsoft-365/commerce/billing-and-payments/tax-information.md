@@ -94,7 +94,7 @@ Businesses in the following countries can provide their VAT number or local equi
 
 ## Europe, the Middle East, and Africa (EMEA)
 
-When you buy Microsoft 365 services in the EMEA region, this purchase could subject to Value-Added Tax (VAT).
+When you buy Microsoft 365 services in the EMEA region, this purchase could be subject to Value-Added Tax (VAT).
   
 - If you're located in a European Union Member State, Armenia, Belarus, Norway, Turkey, or United Arab Emirates, and you don't provide your valid local VAT ID, Microsoft Ireland Operations Ltd. will apply the current local VAT rate, based on the billing country your account is set to.
 
