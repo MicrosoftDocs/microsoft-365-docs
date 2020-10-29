@@ -20,6 +20,9 @@ description: "Admins can learn about the application order of protections in Exc
 
 # Order and precedence of email protection
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound email may be flagged by multiple forms of protection. For example, the built-in EOP anti-phishing policies that are available to all Microsoft 365 customers, and the more robust ATP anti-phishing policies that are also available to Office 365 Advanced Threat Protection (Office 365 ATP) customers. Messages also pass through multiple detection scans for malware, spam, phishing, etc. Given all this activity, there may be some confusion as to which policy is applied.
 
 In general, a policy that's applied to a message is identified in the **X-Forefront-Antispam-Report** header in the **CAT (Category)** property. For more information, see [Anti-spam message headers](anti-spam-message-headers.md).
@@ -36,10 +39,10 @@ There are two major factors that determine which policy is applied to a message:
   |2|Phishing|CAT:PHSH|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
   |3|High confidence spam|CAT:HSPM|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
   |4|Spoofing|CAT:SPOOF|[Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md)|
-  |5|Spam|CAT:SPM|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
-  |6|Bulk|CAT:BULK|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
-  |7<sup>\*</sup>|Domain impersonation (protected users)|DIMP|[Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md)|
-  |8<sup>\*</sup>|User impersonation (protected domains)|UIMP|[Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md)|
+  |5<sup>\*</sup>|User impersonation (protected domains)|UIMP|[Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|Domain impersonation (protected users)|DIMP|[Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md)|
+  |7|Spam|CAT:SPM|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
+  |8|Bulk|CAT:BULK|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
   |
 
   <sup>\*</sup> These features are only available in ATP anti-phishing policies.

@@ -54,11 +54,12 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | Preview: [Beta Channel and Current Channel (Preview)](https://office.com/insider)           | 16.42+     | 2.42+ | 16.0.13328+ | Under review |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003+) | 16.35+   | Under review   | Under review         | Under review                                                        |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Rolling out to [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2006+)                                  | Under review | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2006+)                                  | Preview for Word and PowerPoint: Rolling out to [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents | Under review | Under review | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
@@ -71,11 +72,12 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
+|[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | Under review                     | Under review                 | Under review         | Under review           | Under review               |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review                       | Under review                    | Under review           | Under review               | Under review               |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review                       | Under review                    | Under review           | Under review               | Under review               |
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: [Beta Channel](https://office.com/insider) and rolling out to [Current Channel (Preview)](https://office.com/insider)                      | Under review                    | Under review           | Under review               | Yes |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Rolling out to [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2006+)                      | Under review                    | Under review           | Under review               | Yes |
 |
 
 ## Office built-in labeling client and other labeling solutions
@@ -230,6 +232,27 @@ Scenarios that include applying a sensitivity label outside Office apps include:
 - Microsoft Cloud App Security
 
 For these scenarios, using their Office apps, a user with built-in labeling can apply the label's content markings by temporarily removing or replacing the current label and then reapplying the original label.
+
+### Dynamic markings with variables
+
+> [!IMPORTANT]
+> Currently, not all apps on all platforms support dynamic content markings that you can specify for your headers, footers, and watermarks. For apps that don't support this capability, they  apply the markings as the original text specified in the label configuration, rather than resolving the variables.
+> 
+> The Azure Information Protection unified labeling client supports dynamic markings. For labeling built in to Office, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
+
+When you configure a sensitivity label for content markings, you can use the following variables in the text string for your header, footer, or watermark:
+
+| Variable | Description | Example when label applied |
+| -------- | ----------- | ------- |
+| `${Item.Label}` | Current label display name | **General**|
+| `${Item.Name}` | Current file name or email subject | **Sales.docx** |
+| `${Item.Location}` | Current path and file name of the document, or the email subject for an email | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Current user display name  | **Richard Simone** |
+| `${User.PrincipalName}` | Current user Azure AD user principal name (UPN) | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | Current date and time for the local time zone | **8/10/2020 1:30 PM** |
+
+> [!NOTE]
+> The syntax for these variables is case-sensitive.
 
 ## End-user documentation
 

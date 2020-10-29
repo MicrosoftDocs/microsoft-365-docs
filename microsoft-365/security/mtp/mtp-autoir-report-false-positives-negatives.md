@@ -11,17 +11,22 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/29/2020
+ms.date: 09/16/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: conceptual
 ms.custom: autoir
+ms.reviewer: evaldm, isco
 ---
 
 # Handle false positives/negatives in automated investigation and response capabilities
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Applies to:**
 - Microsoft Threat Protection
@@ -74,10 +79,7 @@ If a remediation action was taken on a device (such as a Windows 10 device) and 
 
 7. To undo the action, select **Delete remediation**.
 
-## Related articles
+## See also
 
-- [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
-
-- [Learn more about the Action center](mtp-action-center.md)
-
+- [View the details and results of an automated investigation](mtp-autoir-results.md)
 - [Proactively hunt for threats with advanced hunting in Microsoft Threat Protection](advanced-hunting-overview.md)

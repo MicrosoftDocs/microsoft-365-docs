@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sirkkuw
 author: sirkkuw
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -72,7 +72,7 @@ If your organization has more granular sign-in security needs, Conditional Acces
 
 Conditional Access is available for customers who have purchased Azure AD Premium P1, or licenses that include this, such as Microsoft 365 Business Premium, and Microsoft 365 E3. For more information, see [create a Conditional Access policy](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
-Risk-based conditional access is available through Azure AD Premium P2 license, or licences that include this, such as Microsoft 365 E5. For more information, see [risk-based Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
+Risk-based conditional access is available through Azure AD Premium P2 license, or licenses that include this, such as Microsoft 365 E5. For more information, see [risk-based Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
 
 For more information about the Azure AD P1 and P2, see [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
@@ -92,12 +92,11 @@ If you have previously turned on per person MFA, you must turn it off before ena
 1. On the multi-factor authentication page, select each user and set their Multi-Factor auth status to **Disabled**.
 
 ## Next steps
-
 - [How to register for their additional verification method](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [What is: Multifactor Authentication](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
 - [How to sign-in after registration](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [How to change their additional verification method](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
-- [How to deal with situations like a new smart phone](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
-- [Troubleshoot MFA sign-ins](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
+
 
 
 

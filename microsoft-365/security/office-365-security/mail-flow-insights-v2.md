@@ -16,6 +16,9 @@ ms.custom: seo-marvel-apr2020
 
 # Mail flow insights in the Security & Compliance Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Admins can use Mail flow dashboard in the Security & Compliance Center to discover trends, insights, and take actions to fix issues related to mail flow in their organization.
 
 ![The Mail flow dashboard in the Security & Compliance Center](../../media/mail-flow-dashboard-v2.png)
@@ -52,11 +55,11 @@ The available insights are:
 
 ## Permissions required to view the Mail flow dashboard
 
-The Mail flow dashboard is available to members of the following route groups:
+The Mail flow dashboard is available to members of the following role groups:
 
 - **Organization Management** in the Security & Compliance Center (global admins).
 
-- **[Exchange Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure AD.
+- **[Exchange Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure Active Directory.
 
 - **MailFlow Administrator** in the Security & Compliance Center: If a member of this role group is not also a member of the global administrator or Exchange administrator role groups, then note the following issues and requirements:
 

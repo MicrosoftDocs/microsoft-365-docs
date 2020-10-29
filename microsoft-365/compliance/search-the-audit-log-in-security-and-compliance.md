@@ -17,13 +17,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. "
+description: "Use the Office 365 Security & Compliance Center or the Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization."
 ms.custom: seo-marvel-apr2020
 ---
 
-# Search the audit log in the Security & Compliance Center
+# Search the audit log in the compliance center
 
-Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of [user and admin activity](#audited-activities) in Office 365:
+Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of [user and admin activity](#audited-activities) in Microsoft 365:
 
 - User activity in SharePoint Online and OneDrive for Business
 
@@ -31,7 +31,7 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 - Admin activity in SharePoint Online
 
-- Admin activity in Azure Active Directory (the directory service for Office 365)
+- Admin activity in Azure Active Directory (the directory service for Microsoft 365)
 
 - Admin activity in Exchange Online (Exchange admin audit logging)
 
@@ -293,19 +293,125 @@ These tables group related activities or the activities from a specific service.
 
 Click one of the following links to go to a specific table.
 
-||||
-|:-----|:-----|:-----|
-|[File and page activities](#file-and-page-activities)|[Folder activities](#folder-activities)|[SharePoint list activities](#sharepoint-list-activities)|
-|[Sharing and access request activities](#sharing-and-access-request-activities)|[Synchronization activities](#synchronization-activities)|[Site permissions activities](#site-permissions-activities)|
-|[Site administration activities](#site-administration-activities)|[Exchange mailbox activities](#exchange-mailbox-activities)|[User administration activities](#user-administration-activities)|
-|[Azure AD group administration activities](#azure-ad-group-administration-activities)|[Application administration activities](#application-administration-activities)|[Role administration activities](#role-administration-activities)|
-|[Directory administration activities](#directory-administration-activities)|[eDiscovery activities](#ediscovery-activities)|[Advanced eDiscovery activities](#advanced-ediscovery-activities)|
-|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|[Microsoft Teams activities](#microsoft-teams-activities)|
-|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Microsoft Teams Shifts activities](#microsoft-teams-shifts-activities)|[Yammer activities](#yammer-activities)|
-|[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|[Microsoft Stream activities](#microsoft-stream-activities)|
-|[Content explorer activities](#content-explorer-activities)|[Quarantine activities](#quarantine-activities)|[Microsoft Forms activities](#microsoft-forms-activities)|
-|[Sensitivity label activities](#sensitivity-label-activities)|[Retention policy and retention label activities](#retention-policy-and-retention-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)
-|||
+:::row:::
+    :::column:::
+        [File and page activities](#file-and-page-activities)
+    :::column-end:::
+    :::column:::
+        [Folder activities](#folder-activities)
+    :::column-end:::
+    :::column:::
+        [SharePoint list activities](#sharepoint-list-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Sharing and access request activities](#sharing-and-access-request-activities)
+    :::column-end:::
+    :::column:::
+        [Synchronization activities](#synchronization-activities)
+    :::column-end:::
+    :::column:::
+        [Site permissions activities](#site-permissions-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Site administration activities](#site-administration-activities)
+    :::column-end:::
+    :::column:::
+        [Exchange mailbox activities](#exchange-mailbox-activities)
+    :::column-end:::
+    :::column:::
+        [User administration activities](#user-administration-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Azure AD group administration activities](#azure-ad-group-administration-activities)
+    :::column-end:::
+    :::column:::
+        [Application administration activities](#application-administration-activities)
+    :::column-end:::
+    :::column:::
+        [Role administration activities](#role-administration-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Directory administration activities](#directory-administration-activities)
+    :::column-end:::
+    :::column:::
+        [eDiscovery activities](#ediscovery-activities)
+    :::column-end:::
+    :::column:::
+        [Advanced eDiscovery activities](#advanced-ediscovery-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Power BI activities](#power-bi-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Teams activities](#microsoft-teams-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Teams Shifts activities](#microsoft-teams-shifts-activities)
+    :::column-end:::
+    :::column:::
+        [Yammer activities](#yammer-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Microsoft Power Automate activities](#microsoft-power-automate-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Power Apps activities](#microsoft-power-apps-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Stream activities](#microsoft-stream-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Content explorer activities](#content-explorer-activities)
+    :::column-end:::
+    :::column:::
+        [Quarantine activities](#quarantine-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Forms activities](#microsoft-forms-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Sensitivity label activities](#sensitivity-label-activities)
+    :::column-end:::
+    :::column:::
+        [Retention policy and retention label activities](#retention-policy-and-retention-label-activities)
+    :::column-end:::
+    :::column:::
+        [Exchange admin activities](#exchange-admin-audit-log)
+    :::column-end:::
+:::row-end:::
 
 ### File and page activities
 
@@ -345,6 +451,24 @@ The following table describes the file and page activities in SharePoint Online 
 |View signaled by client|ClientViewSignaled|A user's client (such as website or mobile app) has signaled that the indicated page has been viewed by the user. This activity is often logged following a PagePrefetched event for a page. <br/><br/>**NOTE**: Because ClientViewSignaled events are signaled by the client, rather than the server, it's possible the event may not be logged by the server and therefore may not appear in the audit log. It's also possible that information in the audit record may not be trustworthy. However, because the user's identity is validated by the token used to create the signal, the user's identity listed in the corresponding audit record is accurate. |
 |(none)|PagePrefetched|A user's client (such as website or mobile app) has requested the indicated page to help improve performance if the user browses to it. This event is logged to indicate that the page content has been served to the user's client. This event isn't a definitive indication that the user navigated to the page. <br/><br/> When the page content is rendered by the client (as per the user's request) a ClientViewSignaled event should be generated. Not all clients support indicating a pre-fetch, and therefore some pre-fetched activities might instead be logged as PageViewed events.|
 ||||
+
+#### Frequently asked questions about FileAccessed and FilePreviewed events
+
+**Could any non-user activities trigger FilePreviewed audit records that contains a user agent like "OneDriveMpc-Transform_Thumbnail"?**
+
+We aren't aware of scenarios where non-user actions generate events like these. User actions like opening a user profile card (by clicking their name or email address in a message in Outlook on the web) would generate similar events.
+
+**Are calls to the OneDriveMpc-Transform_Thumbnail always intentionally being triggered by the user?**
+
+No. But similar events can be logged as a result of browser pre-fetch.
+
+**If we see a FilePreviewed event coming from a Microsoft-registered IP address, does that mean that the preview was displayed on the screen of the user's device?**
+
+No. The event might have been logged as a result of browser pre-fetch.
+
+**Are there scenarios where a user previewing a document generates FileAccessed events?**
+
+Both the FilePreviewed and FileAccessed events indicate that a user's call led to a read of the file (or a read of a thumbnail rendering of the file). While these events are intended to align with preview vs. access intention, the event distinction isn't a guarantee of the user's intent.
 
 #### The app\@sharepoint user in audit records
 
@@ -543,6 +667,7 @@ The following table lists the activities that can be logged by mailbox audit log
 |Purged messages from the mailbox|HardDelete|A message was purged from the Recoverable Items folder (permanently deleted from the mailbox).|
 |Removed delegate mailbox permissions|Remove-MailboxPermission|An administrator removed the FullAccess permission (that was assigned to a delegate) from a person's mailbox. After the FullAccess permission is removed, the delegate can't open the other person's mailbox or access any content in it.|
 |Removed permissions from folder|RemoveFolderPermissions|A folder permission was removed. Folder permissions control which users in your organization can access folders in a mailbox and the messages located in those folders.|
+|Sent message|Send|A message was sent, replied to or forwarded. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. For more information, see the "Access to crucial events for investigations" section in [Advanced Audit](advanced-audit.md#access-to-crucial-events-for-investigations).|
 |Sent message using Send As permissions|SendAs|A message was sent using the SendAs permission. This means that another user sent the message as though it came from the mailbox owner.|
 |Sent message using Send On Behalf permissions|SendOnBehalf|A message was sent using the SendOnBehalf permission. This means that another user sent the message on behalf of the mailbox owner. The message indicates to the recipient who the message was sent on behalf of and who actually sent the message.|
 |Updated inbox rules from Outlook client|UpdateInboxRules|A mailbox owner or other user with access to the mailbox modified an inbox rule in the Outlook client.|

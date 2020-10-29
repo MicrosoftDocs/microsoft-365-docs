@@ -15,6 +15,7 @@ ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
+- m365initiative-defender-office365
 ms.custom: 
 - TopSMBIssues
 - seo-marvel-apr2020
@@ -23,6 +24,9 @@ description: "Admins can learn about the anti-spoofing features that are availab
 ---
 
 # Anti-spoofing protection in EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP includes features to help protect your organization from spoofed (forged) senders.
 
@@ -138,7 +142,7 @@ To help mailing list messages pass anti-spoofing checks, do following steps base
 
   - Read the instructions at this blog post: [A tip for mailing list operators to interoperate with DMARC to avoid failures](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/).
 
-  - Consider installing updates on your mailing list server to support ARC, see [https://arc-spec.org](https://arc-spec.org/)
+  - Consider installing updates on your mailing list server to support ARC, see <http://arc-spec.org>.
 
 - Your organization doesn't own the mailing list:
 

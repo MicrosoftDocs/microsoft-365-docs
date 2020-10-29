@@ -21,8 +21,11 @@ description: "Admins can learn how to use the configuration analyzer to find and
 
 # Configuration analyzer for protection policies in EOP and Office 365 ATP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 > [!NOTE]
-> The features described in this topic are in Preview, aren't available in all organizations, and are subject to change.
+> The features described in this topic are in Preview, aren't available in all organizations, and are subject to change. For information about the release schedule, check out the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=config%2Canalyzer).
 
 Configuration analyzer in the Security & Compliance center provides a central location to find and fix security policies where the settings are below the Standard protection and Strict protection profile settings in [preset security policies](preset-security-policies.md).
 
@@ -42,9 +45,9 @@ The following types of policies are analyzed by the configuration analyzer:
     - [Impersonation settings](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
     - [Advanced phishing thresholds](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - [Safe Links policies](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users).
+  - [Safe Links policies](set-up-atp-safe-links-policies.md).
 
-  - [Safe Attachments policies](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users).
+  - [Safe Attachments policies](set-up-atp-safe-attachments-policies.md).
 
 The **Standard** and **Strict** policy setting values that are used as baselines are described in [Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md).
 

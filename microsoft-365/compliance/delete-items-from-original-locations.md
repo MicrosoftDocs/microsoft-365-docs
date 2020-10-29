@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "This article describes how to use the new Data Investigations (Preview) tool in the Security & Compliance Center to delete items from their original locations."
+description: "This article describes how to use the new Data Investigations (preview) tool in the Security & Compliance Center to delete items from their original locations."
 ms.custom: seo-marvel-apr2020
 ---
 

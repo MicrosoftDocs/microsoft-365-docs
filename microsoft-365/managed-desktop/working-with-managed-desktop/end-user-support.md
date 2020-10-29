@@ -26,8 +26,11 @@ The preferred method for providing support to your users is **Get Help**, an eas
 
 This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar. 
 
-- users can request a call back to a provided phone number, or chat online with a service rep.
+- Users can request a call back to a provided phone number, or chat online with a service rep.
 - Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.
+
+> [!NOTE]
+> The display language for the Get Help app is English only, even if a user has selected a different language when setting up their device or in device settings. 
 
 ### Prerequisites
 For your users to be able to get help through the app, make sure these prerequisites are met:
@@ -44,7 +47,7 @@ If you've checked these prerequisites and the Get Help app still isn't working, 
 
 ## Phone support
 
-users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call. This is meant to be used when Get Help isn’t available. For example, if they can’t sign in to the device, or the device is broken. Here are the phone numbers for phone support:
+Users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call. This is meant to be used when Get Help isn’t available. For example, if they can’t sign in to the device, or the device is broken. Here are the phone numbers for phone support:
 
 - United States: +1 855 425 0216
 - Canada (excluding Quebec): +1 855 425 0216
@@ -66,4 +69,4 @@ users with Microsoft Managed Desktop devices also have access to toll-free phone
 ## Additional resources
 - [Admin support for Microsoft Managed Desktop](admin-support.md). 
 - [Support for Microsoft Managed Desktop](../service-description/support.md).
-- If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** section of the [Microsoft Managed Desktop Admin Portal](https://aka.ms/mwaasportal).
+- If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** under the Microsoft Managed Desktop section of the **Tenant administration** menu in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).

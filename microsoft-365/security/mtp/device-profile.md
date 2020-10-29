@@ -16,6 +16,9 @@ search.appverid: met150
 
 # Device profile page
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 The Microsoft 365 security portal provides you with device profile pages, so you can quickly assess the health and status of devices on your network.
 
 > [!IMPORTANT]

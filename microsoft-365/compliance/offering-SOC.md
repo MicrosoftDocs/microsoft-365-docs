@@ -85,7 +85,7 @@ Microsoft cloud services are audited at least annually against SOC 1 (SSAE18, IS
 - [Office 365 Core - SSAE 18 SOC 1 Report](https://aka.ms/o365SOC-1)
 - [Office 365 Core - SSAE 18 SOC 2 Report](https://aka.ms/o365SOC-2)
 - [Office 365 Core - SSAE 18 SOC 3 Report](https://aka.ms/o365SOC-3)
-- [Office 365 Microservices T1 – SSAE 18 SOC2 Type I Report](https://aka.ms/o365-MS-SOC-2-type1)
+- [Office 365 Microservices T1-SSAE 18 SOC2 Type I Report](https://aka.ms/o365-MS-SOC-2-type1)
 - [Customer Lockbox SOC 1 SSAE 16 Audit Report](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
 - [Yammer SOC 2 AT 101 Type I Audit Report](https://aka.ms/YammerSOC2Type1AuditReport)
 - [Yammer SOC 2 Type II Report](https://aka.ms/yammerSOC-2)
@@ -116,9 +116,9 @@ Yes. When you migrate your applications and data to covered Microsoft cloud serv
 
 The [SOC Toolkit for Service Organizations](https://aka.ms/soc-toolkit) is a helpful resource for understanding SOC reporting processes and promoting your organization's use of them.
 
-## Use Microsoft Compliance Score to assess your risk
+## Use Microsoft Compliance Manager to assess your risk
 
-[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [SOC 1 template](https://go.microsoft.com/fwlink/?linkid=2117918) and the [SOC 2 template](https://go.microsoft.com/fwlink/?linkid=2117919) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 
