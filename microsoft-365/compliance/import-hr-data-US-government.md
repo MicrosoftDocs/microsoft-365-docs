@@ -158,7 +158,7 @@ After you create the HR connector and run the script to upload your HR data, you
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
 
-2. Click the **Connectors** tab and then select the HR connector to display the flyout page, which contains the properties and information about the connector.
+2. Click the **Connectors** tab and then select the HR connector to display the flyout page. This page contains the properties and information about the connector.
 
    ![HR connector flyout page with properties and status](../media/HRConnectorFlyout1.png)
 

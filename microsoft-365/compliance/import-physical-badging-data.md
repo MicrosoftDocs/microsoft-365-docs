@@ -213,7 +213,7 @@ After you create the physical badging connector and push your physical badging d
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and click **Data connectors** in the left nav.
 
-2. Click the **Connectors** tab and then select the physical badging connector to display the flyout page, which contains the properties and information about the connector.
+2. Click the **Connectors** tab and then select the physical badging connector to display the flyout page. This page contains the properties and information about the connector.
 
    ![Status flyout page for physical badging connector](..\media\PhysicalBadgingStatusFlyout.png)
 
