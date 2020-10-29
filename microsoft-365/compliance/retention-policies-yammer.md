@@ -25,6 +25,18 @@ description: "Learn about retention policies that apply to Yammer."
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Yammer.
 
+For other workloads, see:
+
+- [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)
+- [Learn about retention for Microsoft Teams](retention-policies-teams.md)
+- [Learn about retention for Exchange](retention-policies-exchange.md)
+
+## What's included for retention and deletion
+
+The following Yammer items can be retained and deleted by using retention policies for Yammer: Community messages and private messages.
+
+Reactions from others in the form of emoticons are not included in these messages.
+
 ## How retention works with Yammer
 
 You can use a retention policy to retain and delete community messages and private messages in Yammer. Private messages are stored in a hidden folder in the mailbox of each user included in the message, and community messages are stored in a similar hidden folder in the group mailbox for the community.
@@ -68,7 +80,7 @@ When the retention policy is retain-only, or delete-only, the content's paths ar
 
 ## Messages and external users
 
-By default, a retention policy for Yammer private messages apply to all users in your organization, but not external users. You can apply a retention policy to external users if you use the **Choose user** and specify their account. 
+By default, a retention policy for Yammer private messages applies to all users in your organization, but not external users. You can apply a retention policy to external users if you use the **Choose user** and specify their account. 
 
 At this time, Azure B2B guest users are not supported.
 
@@ -80,9 +92,7 @@ If the user stored any files in Yammer, see the [equivalent section](retention-p
 
 ## Limitations
 
-Yammer retention policies are currently in preview and we're continuously working on optimizing retention functionality. In the meantime, here are a few limitations to be aware of when you use retention for Yammer community messages and private messages:
-
-- **Likes and other reactions are not retained for Yammer messages**. Reactions from others in the form of emoticons aren't supported by retention policies.
+Yammer retention policies are currently in preview and we're continuously working on optimizing retention functionality. In the meantime, be aware of the following limitation when you use retention for Yammer community messages and private messages:
 
 - When you select **Choose users** for the **Yammer private messages** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
