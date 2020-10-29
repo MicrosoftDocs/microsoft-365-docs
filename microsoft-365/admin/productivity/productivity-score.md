@@ -18,7 +18,6 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Overview of Microsoft productivity score."
 ---
 
@@ -49,12 +48,15 @@ Your Productivity Score is based on the combined scores of your people and techn
 
 ### Score categories 
 
-- Content collaboration (100 points)
 - Communication (100 points)
+- Meetings (100 points)
+- Content collaboration (100 points)
+- Teamwork (100 points)
 - Mobility (100 points)
 - Endpoint analytics (100 points)
 - Network connectivity (100 points)
-- **Total possible = 500 points**
+- Microsoft 365 Apps Health (100 points)
+- **Total possible = 800 points**
  
  In each category, we identify patterns for key activities that are indicators for how people use Microsoft 365 products to collaborate, communicate, and work across platforms. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation but are important for helping you identify underlying behaviors and settings that you can act on.
 
@@ -67,7 +69,9 @@ Your score is updated daily and reflects user actions completed in the last 28 (
 
 ## Pre-requisites 
 
-To get people experiences data you need a Microsoft 365 for business or Office 365 for enterprise subscription, and you need to be using multi-tenant cloud services. To get endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization’s data by managing devices and apps.       Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about Microsoft Intune. 
+To get people experiences data you need a Microsoft 365 for business or Office 365 for enterprise subscription, and you need to be using multi-tenant cloud services. To get endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization’s data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about Microsoft Intune. 
+> [!NOTE]
+> A license to Workplace Analytics is not required to get the Productivity Score features.
 
 To view the Productivity Score for your organization, you must have of one of the following roles: 
 
@@ -85,7 +89,7 @@ You can access the experience from Microsoft 365 Admin home under **Reports** > 
 
 The Productivity Score home page shows your total score and score history and the primary insight for each category.
 
-![Productivity Score home page](../../media/pslanding.png)
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="Productivity Score page in Reports.":::
 
 **Your score** is shown as a percent value and in points. You can see your points in the numerator and the maximum possible points in the denominator.
 
