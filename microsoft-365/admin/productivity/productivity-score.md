@@ -69,7 +69,7 @@ Your score is updated daily and reflects user actions completed in the last 28 (
 
 ## Pre-requisites 
 
-To get people experiences data you need a Microsoft 365 for business or Office 365 for enterprise subscription, and you need to be using multi-tenant cloud services. To get endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization’s data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about Microsoft Intune. 
+To get people experiences data you need a Microsoft 365 for business or Office 365 for enterprise subscription. To get endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization’s data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about Microsoft Intune. 
 > [!NOTE]
 > A license to Workplace Analytics is not required to get the Productivity Score features.
 
