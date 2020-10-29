@@ -23,6 +23,8 @@ description: "Learn how to use the search feature in the admin center for better
 
 Search functionality has improved in the Microsoft 365 admin center. With the new search, you can now get search results even faster, and you can search from every page in the admin center. The search box has moved to the banner region at the top of the admin center where it says **Microsoft 365 admin center**. You can also use the Alt+S shortcut to search from any page, not just the home page.
 
+**I'll add a screenshot here.**
+
 ## Before you begin
 
 You need to be an administrator to search in the admin center.
