@@ -29,7 +29,8 @@ Although we empower security administrators to customize their security settings
 
 To automatically apply the Standard or Strict settings to users, see [Preset security policies in EOP and Office 365 ATP](preset-security-policies.md).
 
-**Note**: The junk email rule needs to be enabled on mailboxes in order for filtering to work properly. It's enabled by default, but you should check it if filtering does not seem to be working. For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+> [!NOTE]
+> The junk email rule needs to be enabled on mailboxes in order for filtering to work properly. It's enabled by default, but you should check it if filtering does not seem to be working. For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 This article describes the default settings, and also the recommended Standard and Strict settings to help protect your users.
 
@@ -226,7 +227,8 @@ To configure these settings, see [Set up Safe Links policies in Office 365 ATP](
 
 In PowerShell, you use the [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) and [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlets for these settings.
 
-**Note**: As described earlier, there is no default Safe Links policy. The values in the Default column are the default values in new Safe Links policies that you create.
+> [!NOTE]
+> As described earlier, there is no default Safe Links policy. The values in the Default column are the default values in new Safe Links policies that you create.
 
 ****
 
@@ -266,7 +268,8 @@ To configure these settings, see [Set up Safe Attachments policies in Office 365
 
 In PowerShell, you use the [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) and [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlets for these settings.
 
-**Note**: As described earlier, there is no default Safe Attachments policy. The values in the Default column are the default values in new Safe Attachments policies that you create.
+> [!NOTE]
+> As described earlier, there is no default Safe Attachments policy. The values in the Default column are the default values in new Safe Attachments policies that you create.
 
 ****
 
