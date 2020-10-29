@@ -210,6 +210,8 @@
       items:
          - name: Monitor user activity by using reports
            href: activity-reports/activity-reports.md
+         - name: Monitor user productivity with Productivity score
+           href: productivity/productivity-score.md
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info
