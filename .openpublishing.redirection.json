@@ -2126,6 +2126,216 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/gdpr.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-system-generated-log-data.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-system-generated-log-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-information-protection.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-information-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-for-skype-for-business-server.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-for-skype-for-business-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-for-project-server.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-for-project-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-for-sharepoint-server.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-for-sharepoint-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-for-on-premises-file-shares.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-for-on-premises-file-shares",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-for-office-servers.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-for-office-servers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-for-office-online-server.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-for-office-online-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-for-exchange-server.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-for-exchange-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-fast-track-migration.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-fast-track-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-windows.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-vsts.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-vsts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-visual-studio-family.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-visual-studio-family",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-prof-services.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-prof-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-Office365.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-Office365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-Intune.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-Intune",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-Dynamics365.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-Dynamics365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dsr-Azure.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-Azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dpia-windows.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dpia-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dpia-prof-services.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dpia-prof-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dpia-office365.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dpia-office365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dpia-dynamics.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dpia-dynamics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-dpia-azure.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-dpia-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-data-subject-requests.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-data-subject-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-data-protection-officer.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-data-protection-officer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-data-protection-impact-assessments.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-data-protection-impact-assessments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-breach-windows.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-breach-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-breach-Office365.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-breach-Office365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-breach-notification.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-breach-notification",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-breach-Microsoft-Support-Professional-Services.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-breach-Microsoft-Support-Professional-Services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-breach-azure-dynamics.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-breach-azure-dynamics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-arc.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-arc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-arc-prof-services.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-arc-prof-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-arc-Office365.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-arc-Office365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-arc-azure-dynamics.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-arc-azure-dynamics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-action-plan.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-action-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/ccpa-faq.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/ccpa-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "current path",
+      "redirect_url": "new URL",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "current path",
+      "redirect_url": "new URL",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "current path",
+      "redirect_url": "new URL",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "current path",
       "redirect_url": "new URL",
       "redirect_document_id": false
