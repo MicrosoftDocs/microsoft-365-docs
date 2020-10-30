@@ -18,7 +18,6 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Details of the Meetings - people experiences Productivity score."
 ---
 
@@ -161,3 +160,12 @@ The following columns are represented in the table at the user level:
 - Only people who have access to Microsoft Teams are considered for any evaluation.
 - We exclude broadcast events and certain events that are not tagged as a meeting or call.
 - Events that start with screen sharing between participants are either categorized as 1:1 calls (with 2 participants) or group calls (3 or more participants).
+
+## Related content
+
+[Microsoft 365 apps health – Technology experiences](apps-health.md) (article)\
+[Communication – People experiences](communication.md) (article)\
+[Content collaboration – People experiences](content-collaboration.md) (article)\
+[Mobility – People experiences](mobility.md) (article)\
+[Privacy controls for Productivity Score](privacy.md) (article)\
+[Teamwork – People experiences](teamwork.md) (article)

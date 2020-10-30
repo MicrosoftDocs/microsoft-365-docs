@@ -18,7 +18,6 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Details of the Microsoft 365 apps health - technology experiences Productivity score."
 ---
 
@@ -107,3 +106,12 @@ The following columns are presented in the table at the user level:
 - **Status:**   Microsoft 365 apps support state of the devices based on current channel and version.
 - **Versions:**  Current Microsoft 365 apps versions on the devices.
 - **# of devices:**  Number of devices.
+
+## Related content
+
+[Communication – People experiences](communication.md) (article)\
+[Content collaboration – People experiences](content-collaboration.md) (article)\
+[Meetings – People experiences](meetings.md) (article)\
+[Mobility – People experiences](mobility.md) (article)\
+[Privacy controls for Productivity Score](privacy.md) (article)\
+[Teamwork – People experiences](teamwork.md) (article)

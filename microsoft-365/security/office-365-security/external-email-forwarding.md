@@ -26,7 +26,7 @@ The following types of automatic forwarding are available in Microsoft 365:
 
 - Users can configure [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) to automatically forward messages to external senders (deliberately or as a result of a compromised account).
 
-- Admins can configure [mailbox forwarding](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as SMTP forwarding) to automatically forward messages to external recipients.
+- Admins can configure [mailbox forwarding](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as _SMTP forwarding_) to automatically forward messages to external recipients.
 
 You can use outbound spam filter policies to control automatic forwarding to external recipients. Three settings are available:
 
@@ -40,9 +40,9 @@ For instructions on how to configure these settings, see [Configure outbound spa
 
 > [!NOTE]
 > 
-> - Disabling automatic forwarding will also disable Inbox rules that redirect messages to external addresses.
+> - Disabling automatic forwarding disables any Inbox rules (users) or mailbox forwarding (admins) that redirect messages to external addresses.
 > 
->   Office 365 doesn't allow automatic external forwarding by either Inbox rules or mailbox configuration, which provides a secure default policy. However, the admin can modify these settings for all, or some, users in the organization. Create [outbound spam policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true#use-the-security--compliance-center-to-create-outbound-spam-policies) and modify the automatic forwarding section to control automatic email forwarding by users to external senders. This can be later applied to the internal senders that the policy applies to. Forwarding messages between internal users isn't affected by such a modification.
+> - Automatic forwarding of messages between internal users isn't affected by the settings in outbound spam filter policies.
 > 
 > - You can see information about users that are automatically forwarding messages to external recipients in the [Auto-forwarded messages report](mfi-auto-forwarded-messages-report.md).
 

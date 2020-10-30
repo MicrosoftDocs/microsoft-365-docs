@@ -18,7 +18,6 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Details of the Communication - People experience Productivity Score."
 ---
 
@@ -155,3 +154,12 @@ This section provides you with user-level details of activities relevant to all 
 - **Days used @mention in email:** Number of days the user sent an email containing an @mention in the last 28 days.
 
 You can also export the report data into an Excel .csv file, by selecting the Export **Export button** link. Note that you can customize the set of columns in the view by selecting the required columns after clicking on **Choose columns**.
+
+## Related content
+
+[Microsoft 365 apps health – Technology experiences](apps-health.md) (article)\
+[Content collaboration – People experiences](content-collaboration.md) (article)\
+[Meetings – People experiences](meetings.md) (article)\
+[Mobility – People experiences](mobility.md) (article)\
+[Privacy controls for Productivity Score](privacy.md) (article)\
+[Teamwork – People experiences](teamwork.md) (article)
