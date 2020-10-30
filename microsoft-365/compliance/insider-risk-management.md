@@ -117,7 +117,7 @@ In the more serious situations, you may need to share the insider risk managemen
 - **Office 365 Management APIs integration (preview)**: Insider risk management supports exporting alert information to security information and event management (SIEM) services via the Office 365 Management APIs. Having access to alert information in the platform the best fits your organization's risk processes gives you more flexibility in how to act on risk activities. To learn more about exporting alert information with Office 365 Management APIs, see [Export alerts](insider-risk-management-settings.md#export-alerts-preview).
 
 >[!NOTE]
->The ServiceNow preview will end on November, 30 2020 and will not be continued. Thank you for your feedback and support while we determine next steps.
+>The ServiceNow preview will end on November 30, 2020 and will not be continued. Thank you for your feedback and support while we determine next steps and explore alternative solutions.
 
 ## Scenarios
 
