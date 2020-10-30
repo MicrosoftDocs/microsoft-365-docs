@@ -221,7 +221,7 @@ If you have *customizations*, it's critical to plan your upgrade for each step i
 |Partners can help migrate data to the next version of SharePoint Server (and beyond).|Your SharePoint Server sites will not automatically use [SSL/TLS](https://go.microsoft.com/fwlink/?linkid=843167) certificates as is seen in SharePoint Online.|
 |Full control of naming conventions and backup and restore and other recovery options in SharePoint Server on-premises.|SharePoint Server on-premises is sensitive to product lifecycles.|
 
-### Upgrade Resources
+### Upgrade resources
 
 Begin by knowing that you meet hardware and software requirements, then follow supported upgrade methods.
 
