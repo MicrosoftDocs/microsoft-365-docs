@@ -173,7 +173,7 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
    - **Off**: All automatic external email forwarding is disabled by the policy.
 
  > [!NOTE]
- > When Automatic Forwarding is disabled, For external senders sending to a mailbox that has forwarding in place, The recipient will get an NDR that they are not allowed to forward. For internal senders the sender will get the NDR.
+ > When Automatic Forwarding is disabled, the recipient will receive a non-delivery report (NDR) if external senders send email to a mailbox that has forwarding in place. If the email is sent by an internal sender, the sender will get the NDR.
  
 7. (Required) Expand the **Applied to** section to identify the internal senders that the policy applies to.
 
