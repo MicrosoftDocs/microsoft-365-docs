@@ -172,6 +172,9 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
 
    - **Off**: All automatic external email forwarding is disabled by the policy.
 
+ > [!NOTE]
+ > When Automatic Forwarding is disabled, For external senders sending to a mailbox that has forwarding in place, The recipient will get an NDR that they are not allowed to forward. For internal senders the sender will get the NDR.
+ 
 7. (Required) Expand the **Applied to** section to identify the internal senders that the policy applies to.
 
     You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<sender1\>_ or _\<sender2\>_). Different conditions or exceptions use AND logic (for example, _\<sender1\>_ and _\<member of group 1\>_).
