@@ -1,5 +1,5 @@
 ---
-title: "Set strong password requirement for users"
+title: "Turn off strong password requirements for users"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 description: "Learn how to set strong password requirements for your users, using Windows PowerShell."
 ---
-# Set strong password requirement for users
+# Turn off strong password requirements for users
 
 This article explains how to turn off strong password requirements for your users. Strong password requirements are turned on by default in your Microsoft 365 for business organization. Your organization might have requirements to disable strong passwords. Follow the steps below to turn off strong password requirements. You have to complete these steps using PowerShell.
 

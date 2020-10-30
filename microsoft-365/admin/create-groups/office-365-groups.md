@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -103,7 +103,7 @@ Any Microsoft 365 subscription that has Exchange Online and SharePoint Online wi
 
 If you have an Exchange-only plan you can still get the shared inbox and shared calendar features of groups in Outlook but you won't get the document library, Planner or any of the other capabilities.
 
-Microsoft 365 groups work with Azure Active Directory (AAD). The groups features you get depends on which Azure Active Directory subscription you have, and what license(s) is assigned to the organizer of the group.
+Microsoft 365 groups work with Azure Active Directory. The groups features you get depends on which Azure Active Directory subscription you have, and what license(s) is assigned to the organizer of the group.
 
 > [!IMPORTANT]
 > For all the groups features, if you have an Azure AD Premium subscription, users can join the group whether or not they have an AAD P1 license assigned to them. Licensing isn't enforced.
