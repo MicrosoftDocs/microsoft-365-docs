@@ -357,9 +357,10 @@ If the quarantine tag assigns all available permissions (**Full access**), users
   - **Release message**
   - **View message header**
   - **Preview message**
+  - **Block sender**
+  - **Allow sender**
   - **Remove from quarantine**
 
-  ![Available buttons in the quarantined message details if the quarantine tag gives the user all permissions](../../media/quarantine-tags-quarantined-message-details-permission-all.png)
 
 - **End-user spam notifications**: The following buttons are available:
   - **Block sender**
@@ -368,16 +369,32 @@ If the quarantine tag assigns all available permissions (**Full access**), users
 
   ![Available buttons in the end-user spam notification if the quarantine tag gives the all permissions](../../media/quarantine-tags-esn-permission-all.png)
 
-> [!NOTE]
-> Currently, **Limited access** gives users the same experience as **Full access**, even though the permissions are different.
+If the quarantine tag assigns **Limited access**, users get the following capabilities:
+
+- **Quarantined message details**: The following buttons are available:
+  - **Request Release**
+  - **View message header**
+  - **Preview message**
+  - **Block sender**
+  - **Remove from quarantine**
+
+
+- **End-user spam notifications**: The following buttons are available:
+  - **Block sender**
+  - **Review**
 
 ### Allow sender permission
 
-Currently, the **Allow sender** permission does nothing.
+If the quarantine tag assigns **Allow sender**, users get the following capabilities:
 
-- **Quarantined message details**: No effect.
+- **Quarantined message details**: 
+  - **Allow sender** permission enabled: The **Allow sender** button is available.
+  - **Allow sender** permission disabled: The **Allow sender** button is not available.
+   - **View message header**
+   
+- **End-user spam notifications**: The following buttons are available:
+  - **Review**
 
-- **End-user spam notifications**: No effect.
 
 For more information about the Safe Senders list, see [Prevent trusted senders from being blocked](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
@@ -385,11 +402,15 @@ For more information about the Safe Senders list, see [Prevent trusted senders f
 
 The **Block sender** permission controls access to the button that allows users to conveniently add the quarantined message sender to their Blocked Senders list.
 
-- **Quarantined message details**: No effect.
-
-- **End-user spam notifications**:
+- **Quarantined message details**: 
   - **Block sender** permission enabled: The **Block sender** button is available.
   - **Block sender** permission disabled: The **Block sender** button is not available.
+   - **View message header**
+
+- **End-user spam notifications**:
+  - **Block sender** permission disabled: The **Block sender** button is not available.
+  - **Block sender** permission enabled: The **Block sender** button is available.
+  - **Review**
 
 For more information about the Blocked Senders list, see [Block messages from someone](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
@@ -400,8 +421,10 @@ The **Delete** permission controls the ability to of users to delete their messa
 - **Quarantined message details**:
   - **Delete** permission enabled: The **Remove from quarantine** button is available.
   - **Delete** permission disabled: The **Remove from quarantine** button is not available.
+  - **View message header**
 
-- **End-user spam notifications**: No effect.
+- **End-user spam notifications**: 
+  - **Review**
 
 ### Preview permission
 
@@ -411,7 +434,8 @@ The **Preview** permission controls the ability to of users to preview their mes
   - **Preview** permission enabled: The **Preview message** button is available.
   - **Preview** permission disabled: The **Preview message** button is not available.
 
-- **End-user spam notifications**: No effect.
+- **End-user spam notifications**:
+  - **Review**
 
 #### Allow recipients to release a message from quarantine permission
 
@@ -420,19 +444,19 @@ The **Allow recipients to release a message from quarantine** permission control
 - **Quarantined message details**:
   - Permission enabled: The **Release message** button is available.
   - Permission disabled: The **Release message** button is not available.
-
+  
 - **End-user spam notifications**:
   - Permission enabled: The **Release** button is available.
   - Permission disabled: The **Release** button is not available.
+  - **Review**
 
 #### Allow recipients to request a message to be released from quarantine permission
 
 The **Allow recipients to request a message to be released from quarantine** permission controls the ability of users to _request_ the release of their quarantined messages (quarantined messages where the user is a recipient). The message is only released after an admin approves the request.
 
 - **Quarantined message details**:
-  - Permission enabled: The **Release message** button is available.
-  - Permission disabled: The **Release message** button is not available.
+  - Permission enabled: The **Request Release message** button is available.
+  - Permission disabled: The **Request Release message** button is not available.
 
 - **End-user spam notifications**:
-  - Permission enabled: The **Release** button is available.
-  - Permission disabled: The **Release** button is not available.
+  - **Review**
