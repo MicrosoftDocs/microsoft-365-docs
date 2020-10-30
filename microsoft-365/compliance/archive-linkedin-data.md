@@ -53,9 +53,7 @@ After the LinkedIn Company page data is stored in a mailbox, you can apply Micro
 
 7. On the **Choose storage location** page, click in the box, select the email address of a Microsoft 365 mailbox that the LinkedIn items will be imported to, and then click **Next**. Items are imported to the inbox folder in this mailbox.
 
-8. On the **Provide admin consent**, click **Provide consent** and then follow the steps. You must be a global admin to provide consent for the Office 365 Import service to access data in your organization.
-
-9. Click **Next** to review the connector settings and then click **Finish** to complete the connector setup.
+8. Click **Next** to review the connector settings and then click **Finish** to complete the connector setup.
 
 After you create the connector, you can go back to the **Data connectors** page to see the progress of the import process for the new connector (select **Refresh** if necessary to update the list of connectors). The value in the **Status** column is **Waiting to start**. It takes up to 24 hours for the initial import process to be started. After the first time the connector runs and imports the LinkedIn items, the connector will run once every 24 hours and import any new items that are created on the LinkedIn Company Page in the previous 24 hours.
 
