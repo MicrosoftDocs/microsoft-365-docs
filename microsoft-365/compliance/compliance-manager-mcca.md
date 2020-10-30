@@ -28,11 +28,14 @@ MCCA can help you quickly see which improvement actions in Compliance Manger app
 
 An additional resource for understanding MCCA is by visiting the [README instructions on GitHub](https://github.com/OfficeDev/MCCA#overview). This page provides detailed information about prerequisites and gives full installation instructions. You don’t need a GitHub account to access this page.
 
-## Install MCCC and run a report
+## Install MCCA and run a report
 
-You can install the MCCA tool using [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/overview?view=powershell-7) version 5.1 or above. Once you download and install the tool, you don’t need to repeat those steps in order to run reports. Each time you open MCCA, it will ask you for your signin credentials, and it will generate a new, updated report.
+You can install the MCCA tool using Windows PowerShell . Once you download and install the tool, you don’t need to repeat those steps in order to run reports. Each time you open MCCA, it will ask you for your signin credentials, and it will generate a new, updated report.
 
-#### Install MCCA
+#### Step 1: Instal Windows PowerShell
+To begin, you'll need the Exchange Online PowerShell module (v2.0.3 or higher) that is available in the PowerShell gallery. [Get installation instructions](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3).
+
+#### Step 2: Install MCCA
 
 To install MCCA, start by using PowerShell in administrator mode. Follow the steps below:
 
@@ -44,7 +47,7 @@ To install MCCA, start by using PowerShell in administrator mode. Follow the ste
     Install-Module -Name MCCAPreview
     ```
 
-#### Run a report
+#### Step 3: Run a report
 
 After you install MCCA, you can run MCCA and generate a report. To run a report:
 
