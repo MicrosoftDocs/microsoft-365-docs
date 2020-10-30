@@ -30,7 +30,7 @@ ms.custom: seo-marvel-apr2020
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-If you're using Office 2007 products and services, be aware that support for these applications has ended. This is a great time to consider moving to the Microsoft cloud, starting with Microsoft 365. Use this article as a starting point to review your options and plan your upgrade.
+If you're using Office 2007 products and services, be aware that support for these applications has ended. Consider moving to the Microsoft cloud, starting with Microsoft 365. Use this article as a starting point to review your options and plan your upgrade.
       
 ## Office 2007 planning roadmaps
   
@@ -45,10 +45,10 @@ Support has ended for Office 2007 products and services. The following roadmaps 
 |[Upgrade from Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |January 8, 2018  <br/> |
 |[PerformancePoint Server 2007 end of support roadmap](pps-2007-end-of-support.md) <br/> |January 9, 2018  <br/> |
    
-After support ends for a Microsoft product, there are no:
+After support ends for a Microsoft product, there are no more:
 - New security updates
 - New non-security updates
-- Free or paid assisted support options (including custom support agreements)
+- Free or paid assisted support options available (including custom support agreements)
 - New online technical content updates
 
 Whether you're an enterprise organization or an individual home user, you have several options to consider.

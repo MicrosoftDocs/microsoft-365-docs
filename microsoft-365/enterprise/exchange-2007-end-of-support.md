@@ -20,27 +20,27 @@ description: "Learn about your options after Exchange Server 2007 end of support
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-On **April 11, 2017**, Exchange Server 2007 reached end of support. If you haven't already begun your migration from Exchange 2007 to Microsoft 365, Office 365, or Exchange 2016, now's the time to start your planning. 
+Exchange Server 2007 reached end of support in April 2017. If you haven't started your migration from Exchange 2007 to Microsoft 365, Office 365, or Exchange 2016, now's the time to start planning.
   
-## What does end of support mean?
+## What does *end of support* mean?
 
 Exchange Server, like almost all Microsoft products, has a support lifecycle during which we provide new features, bug fixes, security fixes, and so on. This lifecycle typically lasts for 10 years from the product's initial release. The end of this lifecycle is known as the product's end of support. Since Exchange 2007 reached its end of support on April 11, 2017, Microsoft no longer provides:
   
-- Technical support for problems that may occur
+- Technical support for problems that may occur.
     
-- Bug fixes for issues that are discovered and that may impact the stability and usability of the server
+- Bug fixes for issues that are discovered that may impact the stability and usability of the server.
     
-- Security fixes for vulnerabilities that are discovered and that may make the server vulnerable to security breaches
+- Security fixes for vulnerabilities that are discovered that may make the server vulnerable to security breaches.
     
 - Time zone updates.
     
-Your installation of Exchange 2007 will continue to run after this date. However, because there are no new updates or support, we strongly recommend that you migrate from Exchange 2007 as soon as possible.
+Your installation of Exchange 2007 will continue to run after the end of support date. But because there are no new updates or support, we strongly recommend that you migrate from Exchange 2007 as soon as possible.
   
 For more information about Office 2007 servers nearing the end of support, see [Plan your upgrade from Office 2007 servers and products](upgrade-from-office-2007-servers-and-products.md).
   
 ## What are my options?
 
-Now that Exchange 2007 has reached its end of support, we recommend that you explore your options and prepare a migration plan. You can:
+You can:
   
 - Migrate to Microsoft 365 using cutover, staged, or hybrid migration.
     
@@ -62,27 +62,27 @@ Migrating your email to Microsoft 365 is the best and simplest option to help re
     
 - REST APIs for programmatic access to email, calendars, contacts, and so on
     
-Microsoft 365 also gets new features and experiences first, and you and your users can usually start using them right away. And you won't have to worry about:
+Microsoft 365 also gets new features and experiences first, so you and your users can usually start using them right away. And you won't have to worry about:
   
 - Purchasing and maintaining hardware.
     
-- Paying for heating and cooling your servers.
+- Paying to heat and cool your servers.
     
-- Keeping up to date on security, product, and time zone fixes.
+- Keeping up to date on security, product, and time-zone fixes.
     
 - Maintaining storage and software to support compliance requirements.
     
-- Upgrading to a new version of Exchange. You're always on the latest version of Exchange in Microsoft 365.
+- Upgrading to a new version of Exchange. With Microsoft 365, you're always on the latest version of Exchange.
     
 #### How should I migrate to Microsoft 365?
 
-Depending on your organization, you have a few options that will help you get to Microsoft 365. When you choose a migration option, you need to consider a few things, like:
+You have a few migration options. You need to consider a few things, like:
 
-- The number of seats or mailboxes you need to move
-- How long you want the migration to last
-- Whether you need a seamless integration between your on-premises installation and Microsoft 365 during the migration
+- The number of seats or mailboxes you need to move.
+- How long you want the migration to last.
+- Whether you need a seamless integration between your on-premises installation and Microsoft 365 during the migration.
 
-This table shows your migration options and the most important factors that will determine which method to use:
+This table shows your migration options and the most important factors that determine which method to use:
   
 
 |**Migration option**|**Organization size**|**Duration**|
@@ -97,7 +97,7 @@ The following sections provide an overview of these methods. For more detail, se
 
 In a cutover migration, you migrate all your mailboxes, distribution groups, contacts, and so on, to Microsoft 365 at a preselected date and time. After the migration is complete, you shut down your on-premises Exchange servers and start using Microsoft 365 exclusively.
   
-Cutover migration is great for small organizations that don't have many mailboxes, want to get to Microsoft 365 quickly, and don't want to deal with some of the complexities of the other methods. But it should be completed in a week or less and it requires users to reconfigure their Outlook profiles. Cutover migration can handle up to 2,000 mailboxes, but we strongly recommend  you use it to migrate a maximum of 150 mailboxes. If you try to migrate more than 150 mailboxes, you could run out of time to transfer all the mailboxes before your deadline, and your IT support staff may get overwhelmed helping users reconfigure Outlook.
+Cutover migration is great for small organizations that don't have many mailboxes, want to get to Microsoft 365 quickly, and don't want to deal with some of the complexities of the other methods. But it should be completed in a week or less, and it requires users to reconfigure their Outlook profiles. Cutover migration can handle up to 2,000 mailboxes, but we strongly recommend  you use it to migrate a maximum of 150 mailboxes. If you try to migrate more, you could run out of time to transfer all the mailboxes before your deadline, and your IT support staff may get overwhelmed helping users reconfigure Outlook.
   
 If you're thinking about doing a cutover migration, here are things to consider:
   
@@ -105,13 +105,13 @@ If you're thinking about doing a cutover migration, here are things to consider:
     
 - All on-premises mailboxes will be moved to Microsoft 365.
     
-- You'll need an on-premises administrator account that has access to read the contents of your users' mailboxes.
+- You'll need an on-premises administrator account that has read access to your users' mailboxes.
     
-- The Exchange 2007 accepted domains that you want to use in Microsoft 365 need to be added as verified domains in the service;.
+- The Exchange 2007 accepted domains that you want to use in Microsoft 365 need to be added as verified domains in the service.
     
 - Between the time you start the migration and when you begin the completion phase, Microsoft 365 will periodically synchronize the Microsoft 365 and on-premises mailboxes. This lets you complete the migration without worrying about email being left behind in your on-premises mailboxes.
     
-- Users will receive new temporary passwords for their Microsoft 365 accounts. They'll need to change their password when they sign in to their mailboxe for the first time.
+- Users will receive new temporary passwords for their Microsoft 365 accounts. They'll need to change their password when they sign in to their mailbox for the first time.
     
 - You'll need a Microsoft 365 license that includes Exchange Online for each user mailbox you migrate.
     
@@ -125,23 +125,21 @@ For more information about cutover migration, see:
     
 #### Staged migration
 
-In a staged migration, you have a few hundred or a few thousand mailboxes that you want to migrate to Microsoft 365, need to take a week or more to complete the migration, and don't need any of the advanced hybrid migration features like shared Free/Busy calendar information.
+In a staged migration, you have a few hundred or a few thousand mailboxes that you want to migrate to Microsoft 365, need to take a week or more to complete the migration, and don't need any of advanced hybrid migration features like shared Free/Busy calendar information.
   
-Staged migration is great for organizations that need to take more time to migrate their mailboxes to Microsoft 365 but still plan to complete the migration within a few weeks. You can migrate mailboxes in batches that enable you to control how many and which mailboxes are migrated at a given time. You might batch mailboxes of users in the same department, for example, to make sure they're all moved at the same time. Or, you might leave executive mailboxes until the last batch. As with cutover migrations, your users will need to recreate their Outlook profiles.
+Staged migration is great for organizations that need to take more time to migrate their mailboxes to Microsoft 365 but still plan to complete the migration within a few weeks. You can migrate mailboxes in batches. You control how many and which mailboxes are migrated at a given time. You might batch mailboxes of users in the same department, for example, to make sure they're all moved at the same time. Or, you might leave executive mailboxes until the last batch. As with cutover migrations, your users will need to recreate their Outlook profiles.
   
 If you're thinking about doing a staged migration, here are things to consider:
   
 - Microsoft 365 will need to connect to your Exchange 2007 servers by using Outlook Anywhere over TCP port 443.
     
-- You'll need an on-premises administrator account that has access to read the contents of your users' mailboxes.
+- You'll need an on-premises administrator account that has read access to your users' mailboxes.
     
 - The Exchange 2007 accepted domains that you plan to use in Microsoft 365 need to be added as verified domains in the service.
     
 - You'll need to create a CSV file with the full name and email address of each mailbox that you plan to migrate in a batch. You'll also need to include a new password for each mailbox that you're migrating, and send that password to each user. The user will be prompted to change the password the first time that they sign in to their new Microsoft 365 mailbox.
     
-- Between the time you start the migration batch and when you begin the completion phase, Microsoft 365 will periodically synchronize the Microsoft 365 and on-premises mailboxes included in the batch. This lets you complete the migration without worrying about email being left behind in your on-premises mailboxes;
-    
-- Users will receive new temporary passwords for their Microsoft 365 accounts that they'll need to change when they sign into their mailbox for the first time.
+- Between the time you start the migration batch and when you begin the completion phase, Microsoft 365 will periodically synchronize the Microsoft 365 and on-premises mailboxes included in the batch. This lets you complete the migration without worrying about email being left behind in your on-premises mailboxes.
     
 - You'll need a Microsoft 365 license that includes Exchange Online for each user mailbox you migrate.
     
@@ -171,11 +169,11 @@ In a full hybrid migration, your organization has many hundreds, up to tens of t
     
   - Bypass anti-spam filters.
     
-Full hybrid migrations are best for organizations that expect to stay in a hybrid configuration for many months or more. You'll get the features listed earlier in this section, plus directory synchronization, better integrated compliance features, and the ability to move mailboxes to and from Microsoft 365 using online mailbox moves. Microsoft 365 becomes an extension of your on-premises organization.
+Full hybrid migration is best for organizations that expect to stay in a hybrid configuration for many months or more. You'll get the features listed earlier in this section, plus directory synchronization, better integrated compliance features, and the ability to move mailboxes to and from Microsoft 365 by using online mailbox moves. Microsoft 365 becomes an extension of your on-premises organization.
   
 If you're thinking about doing a full hybrid migration, here are things to consider:
   
-- Full hybrid migrations aren't suited to all types of organizations. Due to the complexity of full hybrid migrations, organizations with less than a few hundred mailboxes don't typically see benefits that justify the effort and cost needed to set one up. If this sounds like your organization, we strongly recommend that you consider Cutover or Staged migrations instead.
+- Full hybrid migration isn't suited to all types of organizations. Due to the complexity of full hybrid migrations, organizations with less than a few hundred mailboxes don't typically see benefits that justify the effort and cost needed to set one up. If this sounds like your organization, we strongly recommend that you consider a cutover or staged migration instead.
     
 - You'll need to deploy at least one Exchange 2013 server in your Exchange 2007 organization to act as a "hybrid server." This server will communicate with Microsoft 365 on behalf of your Exchange 2007 servers.
     
@@ -183,13 +181,13 @@ If you're thinking about doing a full hybrid migration, here are things to consi
     
 - You'll need to set up directory synchronization using Azure Active Directory (Azure AD) Connect between your on-premises Active Directory servers and Microsoft 365.
     
-- Users will be able to sign in to their Microsoft 365 mailbox using the same user name and password that they use when they sign in to the local network (requires Azure AD Connect with password synchronization and/or Active Directory Federation Services);
+- Users will be able to sign in to their Microsoft 365 mailbox using the same user name and password that they use when they sign in to the local network. (This functionality requires Azure AD Connect with password synchronization and/or Active Directory Federation Services.)
     
-- You'll need a Microsoft 365 license that includes Exchange Online for each user mailbox you migrate;
+- You'll need a Microsoft 365 license that includes Exchange Online for each user mailbox you migrate.
     
-- Users don't need to set up a new Outlook profile on most of their devices (some older Android phones might need a new profile) and won't need to re-download their email.
+- Users don't need to set up a new Outlook profile on most of their devices, although  some older Android phones might need a new profile. Users won't have to redownload their email.
     
-If a full hybrid migration sounds right for you, see the following resources to help with your migration:
+If full hybrid migration sounds right for you, see the following resources to help with your migration:
   
 - [Exchange Deployment Assistant](https://aka.ms/exdeploy)
     
@@ -205,12 +203,12 @@ If a full hybrid migration sounds right for you, see the following resources to 
 
 We strongly believe that you can achieve the best value and user experience by migrating to Microsoft 365. But we also understand that some organizations need to keep their email on-premises. This could be because of regulatory requirements, to guarantee data isn't stored in a datacenter located in another country, and so on. If you choose to keep your email on-premises, you can migrate your Exchange 2007 environment to Exchange 2010, Exchange 2013, or Exchange 2016.
   
-We recommend that you migrate to Exchange 2016 if you can't migrate to Microsoft 365. Exchange 2016 includes all the features of previous releases of Exchange. It also most closely matches the experience available with Microsoft 365 (although some features are available only in Microsoft 365). Check out just a few of the things you've been missing:
+If you can't migrate to Microsoft 365, we recommend that you migrate to Exchange 2016. Exchange 2016 includes all the features of previous releases of Exchange. It also most closely matches the experience available with Microsoft 365, although some features are available only in Microsoft 365. Check out just a few of the things you've been missing:
   
 |**Exchange release**|**Features**|
 |:-----|:-----|
 |Exchange 2010  <br/> | Role-Based Access Control (permissions without ACLs)  <br/>  Outlook Web App mailbox policies  <br/>  Ability to share free/busy and delegate calendars between organizations  <br/> |
-|Exchange 2013  <br/> | *Features from Exchange 2010 and …*  <br/>  Simplified architecture reducing the number of server roles to three (Mailbox, Client Access, Edge Transport)  <br/>  Data loss prevention policies (DLP) that help keep sensitive information from leaking  <br/>  Significantly improved Outlook Web App Experience  <br/> |
+|Exchange 2013  <br/> | *Features from Exchange 2010 and …*  <br/>  Simplified architecture reducing the number of server roles to three (Mailbox, Client Access, Edge Transport)  <br/>  Data loss prevention policies (DLP) that help keep sensitive information from leaking  <br/>  Improved Outlook Web App experience  <br/> |
 |Exchange 2016  <br/> | *Features from Exchange 2013 and …*  <br/>  Further simplified server roles to just Mailbox and Edge Transport  <br/>  Improved DLP along with integration with SharePoint  <br/>  Improved database resilience  <br/>  Online document collaboration  <br/> |
    
 #### Which version should I migrate to?
@@ -219,9 +217,9 @@ We recommend that you initially assume that you'll migrate to Exchange 2016. The
   
 |**Consideration**|**More Info**|
 |:-----|:-----|
-|End of support dates  <br/> | Like Exchange 2007, each version of Exchange has its own end of support date:  <br/> **Exchange 2010** - January 2020  <br/> **Exchange 2013** - April 2023  <br/> **Exchange 2016** - October 2025  <br/>  The earlier the end of support date, the sooner you'll need to perform another migration.<br/> |
-|Migration path to Exchange 2010 and 2013  <br/> |Here are the general phases for migrating to Exchange 2010 or Exchange 2013:  <br/> Install Exchange 2010 or 2013 into your existing Exchange 2007 organization Move services and other infrastructure to Exchange 2010 or 2013 Move mailboxes and public folders to Exchange 2010 or 2013 Decommission remaining Exchange 2007 servers |
-|Migration path to Exchange 2016  <br/> |Here are the general phases for migrating to Exchange 2016:  <br/> Install Exchange 2013 into your existing Exchange 2007 organization Move services and other infrastructure to Exchange 2013 Move mailboxes and public folders to Exchange 2013 Decommission remaining Exchange 2007 servers Install Exchange 2016 into your existing Exchange 2013 organization. Move mailboxes, public folders, services, and other infrastructure to Exchange 2016 (order doesn't matter). Decommission remaining Exchange 2013 servers > [!NOTE]> Migrating from Exchange 2013 to Exchange 2016 is simple. Both versions have almost the same hardware requirements. This, and the fact these versions are so compatible, means you can rebuild a server you bought for Exchange 2013 and install Exchange 2016 on it. And, with online mailbox moves, most users will never notice their mailbox being moved off the server and then back after you've rebuilt it with Exchange 2016.           |
+|End of support dates  <br/> | Like Exchange 2007, each version of Exchange has its own end of support date:  <br/> *Exchange 2010* - January 2020  <br/> *Exchange 2013* - April 2023  <br/> *Exchange 2016* - October 2025  <br/>  The earlier the end of support date, the sooner you'll need to perform another migration.<br/> |
+|Migration path to Exchange 2010 and 2013  <br/> |Here are the general phases for migrating to Exchange 2010 or Exchange 2013:  <br/> - Install Exchange 2010 or 2013 into your existing Exchange 2007 organization <br/>- Move services and other infrastructure to Exchange 2010 or 2013<br/>- Move mailboxes and public folders to Exchange 2010 or 2013<br/>- Decommission remaining Exchange 2007 servers |
+|Migration path to Exchange 2016  <br/> |Here are the general phases for migrating to Exchange 2016:  <br/> Install Exchange 2013 into your existing Exchange 2007 organization<br/>- Move services and other infrastructure to Exchange 2013<br/>- Move mailboxes and public folders to Exchange 2013<br/>- Decommission remaining Exchange 2007 servers<br/>- Install Exchange 2016 into your existing Exchange 2013 organization.<br/>- Move mailboxes, public folders, services, and other infrastructure to Exchange 2016 (order doesn't matter). Decommission remaining Exchange 2013 servers > [!NOTE]> Migrating from Exchange 2013 to Exchange 2016 is simple. Both versions have almost the same hardware requirements. This, and the fact these versions are so compatible, means you can rebuild a server you bought for Exchange 2013 and install Exchange 2016 on it. And, with online mailbox moves, most users will never notice their mailbox being moved off the server and then back after you've rebuilt it with Exchange 2016.           |
 |Version coexistence  <br/> | When migrating to:  <br/> **Exchange 2016** Exchange 2016 can't be installed in an organization that includes an Exchange 2007 server. You'll first need to migrate to Exchange 2010 or 2013 (we strongly recommend Exchange 2013), remove all Exchange 2007 servers, and then migrate to Exchange 2016.  <br/> **Exchange 2010 or Exchange 2013** You can install Exchange 2010 or Exchange 2013 into an existing Exchange 2007 organization. This enables you to install one or more Exchange 2010 or 2013 servers and perform your migration.  <br/> |
 |Server hardware  <br/> | Server hardware requirements have changed from Exchange 2007. You'll need to make sure the hardware you're going to use is compatible. Find more about hardware requirements for each version here:  <br/> [Exchange 2016 System Requirements](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx) <br/> [Exchange 2013 System Requirements](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx) <br/> [Exchange 2010 System Requirements](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx) <br/>  You'll find that with the significant improvements in Exchange performance, and the increased computing power and storage capacity in newer servers, you'll likely need fewer servers to support the same number of mailboxes.  <br/> |
 |Operating system version  <br/> | The minimum supported operating system versions for each version are:  <br/> **Exchange 2016** Windows Server 2012  <br/> **Exchange 2013** Windows Server 2008 R2 SP1  <br/> **Exchange 2010** Windows Server 2008 SP2  <br/>  Find more information about operating system support at [Exchange Supportability Matrix](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
