@@ -20,13 +20,13 @@ search.appverid:
 description: "Choose between different MDM and MAM methods."
 ---
 
-# Use Microsoft 365 to protect your devices and app data
+# Options for protecting your devices and app data
 
 You have several ways to secure your organizations devices and data on them with Microsoft 365 for business and enterprise. You can use the following stand-alone plans:
-- Basic Mobility and Security (included in most Microsoft 365 for business and enterprise plans)
+
 - Intune (a part of Microsoft Endpoint Management)
 - Azure Active Directory Premium plans.
-
+- Basic Mobility and Security (included in most Microsoft 365 for business and enterprise plans)
 Or use the subscriptions that include some, or all of the previous standalone plans.
 
 - A Microsoft 365 Business Premium subscription, which includes security and threat protection for small business under 300 users.
@@ -34,9 +34,11 @@ Or use the subscriptions that include some, or all of the previous standalone pl
 
 ## Device management options
 
-- **Basic Mobility and Security** is a good basic level of security and is offered with most Microsoft 365 plans. For more information, see [availability of Basic Mobility and Security](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune). 
+![A figure that illustrated which subscriptions should use which MDM and MAM methods.](../../m365-mam-mdm.png)
 
-    If you have either Microsoft 365 Business Basic or Microsoft 365 Business Standard, Basic Mobility and Security offers a good level of protection, but you can also purchase Intune if your organization has more complex security needs.
+- **Basic Mobility and Security** is offered with most Microsoft 365 plans, and is the only built-in choice offered for Microsoft 365 Business Standard and Microsoft 365 Business Basic. For more information, see [availability of Basic Mobility and Security](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune). 
+
+    If you have either Microsoft 365 Business Basic or Microsoft 365 Business Standard, you can also purchase Intune if your organization has more complex security needs.
  
 - **Microsoft Intune** is a stand-alone plan that is also included with some Microsoft 365 for business or enterprise plans. If you have Intune either as a stand-alone or a part of your subscription, it provides ability to fine-tune your device and app-data management. For more information on availability with Microsoft 365, see [availability of Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune).
 

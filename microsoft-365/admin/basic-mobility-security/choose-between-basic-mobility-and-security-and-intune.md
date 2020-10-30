@@ -20,9 +20,9 @@ search.appverid:
 description: "Basic Mobility and Security is part of the Microsoft 365 plans."
 ---
 
-# Choose between Basic Mobility and Security and Intune
+# Choose between Basic Mobility and Security or Intune
 
-[Microsoft Intune](https://docs.microsoft.com/mem/intune/) is a standalone product included with certain Microsoft 365 plans, while Basic Mobility & Security is part of the Microsoft 365 plans. 
+[Microsoft Intune](https://docs.microsoft.com/mem/intune/) is a standalone product included with certain Microsoft 365 plans, while Basic Mobility and Security is part of the Microsoft 365 plans. 
 
  ## Availability of Basic Mobility and Security and Intune
  
@@ -62,13 +62,14 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 |**Feature area**|**Feature highlights**|**Basic Mobility and Security**|**Microsoft Intune**|
 |:-----|:-----|:-----|:-----|
 |Device types|Managing different OS platforms and major management mode variants. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, iPad OS|
-|Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. |Yes|
+|Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
 |Conditional access based on device compliance |Prevent noncompliant devices from accessing corporate email and data from the cloud. |Not supported on Windows 10.<br/>Limited to controlling access to Exchange Online, SharePoint Online, and Outlook. |No |
-|Device configuration  |Configure device settings (e.g. disabling the camera). |Limited set of settings. |Yes|
+|Device configuration  |Configure device settings (e.g. disabling the camera)|Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
+ |Limited set of settings. |Yes|
 |Email profiles  |Provision a native email profile on the device. |Yes|Yes|
 |WiFi profiles |Provision a native WiFi profile on the device. |No|Yes|
 |VPN profiles |Provision a native VPN profile on the device. |No|Yes|
-|MDM |Deploy your internal line-of-business apps and from apps stores to users. |No|Yes|
+|MDM application management |Deploy your internal line-of-business apps and from apps stores to users. |No|Yes|
 |MAM |Ensure your users can securely access corporate information using the Office mobile and line-of-business apps, by helping to restrict actions like copy, cut, paste, and save as, to only those apps approved for corporate data. |No|Yes|
 |Managed browser  |Enable more secure web browsing using the Edge app. |No|Yes|
 |Zero touch enrollment programs Autopilot) |Enroll large numbers of corporate-owned devices, while simplifying user set up. |No|Yes|
