@@ -98,6 +98,8 @@ You create and assign quarantine tags in the Security & Compliance Center or in 
 
 6. Click **Done** on the confirmation page that appears.
 
+7. Before you delete a custom tag "X", ensure to update custom tag "X" to a different tag in the anti-spam policy configuration before deleting custom tag "X"
+
 Now you are ready to assign the quarantine tag to a quarantine feature as described in the [Step 2](#step-2-assign-a-quarantine-tag-to-supported-features) section.
 
 ### Create quarantine tags in PowerShell
