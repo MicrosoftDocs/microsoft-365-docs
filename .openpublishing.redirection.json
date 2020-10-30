@@ -2321,43 +2321,193 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "current path",
-      "redirect_url": "new URL",
+      "source_path": "microsoft-365/compliance/iso-action-plan.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/iso-action-plan",
       "redirect_document_id": false
     },
     {
-      "source_path": "current path",
-      "redirect_url": "new URL",
+      "source_path": "microsoft-365/compliance/nist-action-plan.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/nist-action-plan",
       "redirect_document_id": false
     },
     {
-      "source_path": "current path",
-      "redirect_url": "new URL",
+      "source_path": "microsoft-365/enterprise/microsoft-365-administrative-access-controls-overview.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-administrative-access-controls-overview",
       "redirect_document_id": false
     },
     {
-      "source_path": "current path",
-      "redirect_url": "new URL",
+      "source_path": "microsoft-365/enterprise/microsoft-365-auditing-and-reporting-overview.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-auditing-and-reporting-overview",
       "redirect_document_id": false
     },
     {
-      "source_path": "current path",
-      "redirect_url": "new URL",
+      "source_path": "microsoft-365/enterprise/microsoft-365-core-principles-of-defense-against-dos-attacks.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-core-principles-of-defense-against-dos-attacks",
       "redirect_document_id": false
     },
     {
-      "source_path": "current path",
-      "redirect_url": "new URL",
+      "source_path": "microsoft-365/enterprise/microsoft-365-data-destruction.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-data-destruction",
       "redirect_document_id": false
     },
     {
-      "source_path": "current path",
-      "redirect_url": "new URL",
+      "source_path": "microsoft-365/enterprise/microsoft-365-data-immutability.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-data-immutability",
       "redirect_document_id": false
     },
     {
-      "source_path": "current path",
-      "redirect_url": "new URL",
+      "source_path": "microsoft-365/enterprise/microsoft-365-data-resiliency-overview.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-data-resiliency-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-data-retention-deletion-and-destruction-overview.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-dealing-with-data-corruption.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-dealing-with-data-corruption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-defending-cloud-services-against-dos-attacks.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-defending-cloud-services-against-dos-attacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-ediscovery-and-search-features.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-exchange-data-resiliency.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-exchange-data-resiliency",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-exchange-online-data-deletion.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-exchange-online-data-deletion",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-internal-logging.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-internal-logging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-mailbox-migrations.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-malware-and-ransomware-protection.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-malware-and-ransomware-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-management-activity-api.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-microsoft-dos-defense-strategy.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-microsoft-dos-defense-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-monitoring-and-auditing-access-controls.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-monitoring-and-auditing-access-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-monitoring-and-self-healing.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-monitoring-and-self-healing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-personnel-controls.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-human-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-reporting-features.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-reporting-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-sharepoint-online-data-deletion.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-sharepoint-online-data-deletion",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-skype-data-deletion.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-technology-control.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-technology-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/office-365-encryption-for-data-in-transit.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-encryption-in-transit",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/office-365-encryption-for-skype-onedrive-sharepoint-and-exchange.md",
+      "redirect_url": "nhttps://docs.microsoft.com/compliance/assurance/assurance-encryption-for-microsoft-365-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-yammer-enterprise-access-controls.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-yammer-enterprise-access-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-monitoring-and-testing.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-monitoring-and-testing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-resource-limits.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-resource-limits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ebcm-understanding-ebcm-with-cloud-services.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-understanding-ebcm-with-cloud-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ebcm-customer-and-cloud-partner-ebcm-responsibilities.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-customer-and-cloud-partner-ebcm-responsibilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ebcm-m365-service-resiliency.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-m365-service-resiliency",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ebcm-developing-your-ebcm-plan.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-developing-your-ebcm-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ebcm-microsoft-365-mitigations.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-microsoft-365-mitigations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-ebcm-plan-rehearsal-and-user-training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ebcm-legal-disclaimer.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-ebcm-legal-disclaimer",
       "redirect_document_id": false
     },
   ]
