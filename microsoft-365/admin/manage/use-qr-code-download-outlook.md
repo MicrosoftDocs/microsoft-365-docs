@@ -17,7 +17,7 @@ ms.custom:
 description: "Learn how to use a QR code to authenticate and download Outlook mobile."
 ---
 
-# Use a QR code to download Outlook mobile
+# Use a QR code to sign-in to Outlook mobile apps
 
 As the Microsoft 365 administrator, you can allow your users to sign-in to the Outlook for Android or iOS apps on their mobile devices without having to enter their username and password. You can turn on the setting in the Microsoft 365 admin center that allows your users to scan a QR code to authenticate themselves in the Outlook mobile apps.
 
