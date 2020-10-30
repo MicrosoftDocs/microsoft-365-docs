@@ -52,7 +52,7 @@
             - name: Industry tests
               href: ./mtp/top-scoring-industry-tests.md
         - name: Plan
-            items:
+          items: 
             - name: Prerequisites
               href: mtp/prerequisites.md
             - name: Data security and privacy
@@ -61,7 +61,7 @@
               href: mtp/portals.md
 
         - name: Deploy
-            items:
+          items:
             - name: Turn on Microsoft Threat Protection
               href: mtp/mtp-enable.md
             - name: Deploy supported services
