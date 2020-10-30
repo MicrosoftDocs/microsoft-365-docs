@@ -908,7 +908,7 @@ Where noted below in the descriptions, some operations contain additional activi
 |Created summary link|GetSummaryLink|Form owner creates summary results link to share results.|
 |Deleted summary link|DeleteSummaryLink|Form owner deletes summary results link.|
 |Updated form phishing status|UpdatePhishingStatus|This event is logged whenever the detailed value for the internal security status was changed, regardless of whether this changed the final security state (for example, form is now Closed or Opened). This means you may see duplicate events without a final security state change. The possible status values for this event are:<br/>- Take Down <br/>- Take Down by Admin <br/>- Admin Unblocked <br/>- Auto Blocked <br/>- Auto Unblocked <br/>- Customer Reported <br/>- Reset Customer Reported|
-|Updated user phishing status|UpdateUserPhishingStatus|This event is logged whenever the value for the user security status was changed. The value of the user status in the audit record is **Confirmed as Phisher** when the user-created phishing was taken down by Microsoft Online safety team. Admins can unblock these users, which results in a user status value of **Reset as Normal User**.|
+|Updated user phishing status|UpdateUserPhishingStatus|This event is logged whenever the value for the user security status was changed. The value of the user status in the audit record is **Confirmed as Phisher** when the user created a phishing form that was taken down by the Microsoft Online safety team. If an admin unblocks the user, the value of the user's status is set to **Reset as Normal User**.|
 |Sent Forms Pro invitation|ProInvitation|User clicks to activate a Pro trial.|
 |Updated form setting|UpdateFormSetting|Form owner updates a form setting. <br><br>Property FormSettingName:string indicates the setting's name and new value.|
 |Updated user setting|UpdateUserSetting|Form owner updates a user setting. <br><br>Property UserSettingName:string indicates the setting's name and new value|
@@ -918,7 +918,7 @@ Where noted below in the descriptions, some operations contain additional activi
 
 #### Forms activities performed by coauthors and anonymous responders
 
-Forms supports collaboration when forms are being designed and when analyzing responses. A form collaborator is known as a *coauthor*. Coauthors can do everything a form owner can do, except delete or move a form. Forms also allows you to create a form that can be responded to anonymously. This means the responder doesn't have to be signed into your organization to respond to a form.
+Forms supports collaboration when forms are designed and when analyzing responses. A form collaborator is known as a *coauthor*. Coauthors can do everything a form owner can do, except delete or move a form. Forms also allows you to create a form that can be responded to anonymously. This means the responder doesn't have to be signed into your organization to respond to a form.
 
 The following table describes the auditing activities and information in the audit record for activities performed by coauthors and anonymous responders.
 
