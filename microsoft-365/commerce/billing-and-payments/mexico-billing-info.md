@@ -25,7 +25,7 @@ ms.custom:
 
 ## 1. Where can I get an invoice for my Microsoft 365 business purchase?
 
-You will receive the invoice at the email address you have registered 24 hours after confirming your purchase. You can also download your invoice directly from the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) in the section of **Billing** - **Payments and Billing**.
+You will receive the invoice at the email address you have registered 24 hours after confirming your purchase. You can also download your invoice directly from the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) in the section of **Billing** > **Payments and Billing**.
 
 > [!IMPORTANT]
 > If you need the invoice to include your TAX ID you need to add it before the purchase confirmation.
@@ -38,7 +38,7 @@ During the checkout purchase process, when you get to **step 4. Payment and Bill
 
 ### For your future purchases
 
-In the Microsoft 365 admin center within the section of **Billing - Billing Accounts** you can add or modify your RFC so that the information is reflected in your future purchases of Microsoft 365 for Business.
+In the Microsoft 365 admin center within the section of **Billing** > **Billing Accounts** you can add or modify your RFC so that the information is reflected in your future purchases of Microsoft 365 for Business.
 
 ## 3. Can I add or modify my RFC to a purchase that has already been confirmed?
 
