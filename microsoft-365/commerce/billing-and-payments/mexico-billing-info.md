@@ -23,26 +23,26 @@ ms.custom:
 
 # Billing information for Microsoft 365 for business in Mexico
 
-## 1. Where can I get an invoice for my Microsoft 365 business purchase?
+## 1. Where can I get an invoice for my Microsoft 365 for business purchase?
 
-You will receive the invoice at the email address you have registered 24 hours after confirming your purchase. You can also download your invoice directly from the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) in the section of **Billing** > **Payments and Billing**.
+You will receive the invoice at the email address you have registered, 24 hours after confirming your purchase. You can also download your invoice directly from the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) on the **Billing** > **Payments and Billing** page.
 
 > [!IMPORTANT]
-> If you need the invoice to include your TAX ID you need to add it before the purchase confirmation.
+> If you want the invoice to include your TAX ID, you must add it before the purchase confirmation.
 
-## 2. How can I add my RFC (Federal Taxpayers Registry) to the invoice I get for the purchase of Microsoft 365 business?
+## 2. How can I add my RFC (Federal Taxpayers Registry) to the invoice I get for the purchase of Microsoft 365 for business?
 
 ### During the purchase process (Checkout)
 
-During the checkout purchase process, when you get to **step 4. Payment and Billing**, activate the box to enter a TAX ID, this step is necessary so you can see it reflected in your purchase invoice.
+During the checkout purchase process, when you get to **step 4. Payment and Billing**, activate the box to enter a TAX ID. This step is necessary so that you can see it reflected in your purchase invoice.
 
 ### For your future purchases
 
-In the Microsoft 365 admin center within the section of **Billing** > **Billing Accounts** you can add or modify your RFC so that the information is reflected in your future purchases of Microsoft 365 for Business.
+In the Microsoft 365 admin center, on the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing Accounts</a> page, you can add or modify your RFC so that the information is reflected in your future purchases of Microsoft 365 for Business.
 
 ## 3. Can I add or modify my RFC to a purchase that has already been confirmed?
 
-Once your Microsoft 365 purchase is confirmed, you will no longer be able to add or modify your billing information, so it is important that you add this information before making the payment for your purchase.
+After your Microsoft 365 purchase is confirmed, you will no longer be able to add or modify your billing information, so it is important that you add this information before making the payment for your purchase.
 
 ## 4. Why don't I get a CFDI (Digital Government Invoice)?
 
