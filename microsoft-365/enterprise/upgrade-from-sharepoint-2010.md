@@ -28,7 +28,7 @@ ms.custom: seo-marvel-apr2020
 
 Microsoft SharePoint 2010 and SharePoint Server 2010 will reach end of support on **April 13, 2021**. This article details resources to help you migrate your existing SharePoint Server 2010 data to SharePoint Online in Microsoft 365, or upgrade your on-premises SharePoint Server 2010 environment.
 
-## What is end of support?
+## What is *end of support*?
 
 Most Microsoft products have a support lifecycle, during which they get new features, bug fixes, security fixes, and so on. After the end of support date, the product doesn't stop working, but Microsoft no longer provides:
 
@@ -150,7 +150,7 @@ If you have *customizations*, it's critical that you plan for each step in the m
 |Solution providers can help migrate data to the next version of SharePoint Server (and beyond).|Your SharePoint Server sites will not automatically use [SSL/TLS](https://go.microsoft.com/fwlink/?linkid=843167) certificates as is seen in SharePoint Online.|
 |Full control of naming conventions and backup and restore and other recovery options in SharePoint Server on-premises.|SharePoint Server on-premises is sensitive to product lifecycles.|
 
-### Upgrade Resources
+### Upgrade resources
 
 Begin by comparing hardware and software requirements. If you don't meet basic requirements for the upgrade on current hardware, you may have to upgrade the hardware in the farm or SQL servers first. Or you may decide to move some percentage of your sites to the "evergreen" hardware of SharePoint Online. Once you've made your assessment, follow supported upgrade paths and methods.
 
