@@ -66,13 +66,9 @@ The last step is to create an Android Archiver connector in the Microsoft 365 co
 
 6. On the **User mapping** page, enable automatic user mapping and click **Next**. In case you need custom mapping upload a CSV file, and click **Next**.
 
-7. Provide admin consent and then click **Next**.
+7. Review your settings, and then click **Finish** to create the connector.
 
-   To provide admin consent, you must be signed in with the credentials of an Office 365 global admin, and then accept the consent request. If you aren't signed in as a global admin, you can go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign in using global admin credentials to accept the request.
-
-8. Review your settings, and then click **Finish** to create the connector.
-
-9. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
+8. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
 
 ## Known issues
 
