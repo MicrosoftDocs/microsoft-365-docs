@@ -19,11 +19,14 @@ description: "Admins can learn how to use quarantine tags to control what users 
 
 # Quarantine tags
 
+> [!NOTE]
+> The quarantine tag features that are described in this article are currently in Preview, aren't available to everyone, and are subject to change.
+
 Quarantine tags in Exchange Online Protection (EOP) allow admins to control what users are able to do to their quarantined messages based on how the message arrived in quarantine.
 
-EOP has traditionally allowed or prevented certain levels of interactivity for end-users messages in [quarantine](find-and-release-quarantined-messages-as-a-user.md) and in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md). For example, end-users can view and release that were quarantined by anti-spam filtering as spam or bulk, but they could not view or release messages that were quarantined as high confidence phishing.
+EOP has traditionally allowed or prevented certain levels of interactivity for messages in [quarantine](find-and-release-quarantined-messages-as-a-user.md) and in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md). For example, end-users can view and release that were quarantined by anti-spam filtering as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing.
 
-For the [supported protection features](#step-2-assign-a-quarantine-tag-to-supported-features), quarantine tags specify what end-users are allowed to do to quarantined messages in spam notification messages and in quarantine. Default quarantine tags are automatically assigned to enforce the historical capabilities for end-users on quarantined messages. Or, you can create and assign custom quarantine tags to allow or prevent end-users from performing specific actions on quarantined messages.
+For the [supported protection features](#step-2-assign-a-quarantine-tag-to-supported-features), quarantine tags specify what end-users are allowed to do to quarantined messages in end-user spam notification messages and in the quarantine. Default quarantine tags are automatically assigned to enforce the historical capabilities for end-users on quarantined messages. Or, you can create and assign custom quarantine tags to allow or prevent end-users from performing specific actions on quarantined messages.
 
 The individual permissions are combined into the following permission groups for end-users:
 
@@ -31,7 +34,7 @@ The individual permissions are combined into the following permission groups for
 - Limited access
 - Full access
 
-Or, you can specify the individual permissions to use for a quarantine tag. The individual permissions and what's included or not included in the preset permission groups are described in the following table:
+Or, you can specify the individual permissions to use for a quarantine tag. The available individual permissions and what's included or not included in the preset permission groups are described in the following table:
 
 |Permission|No access|Limited access|Full access|
 |---|:---:|:---:|:---:|
@@ -43,7 +46,7 @@ Or, you can specify the individual permissions to use for a quarantine tag. The 
 |**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |
 
-For more information about what each permission does, see the <> section later in this article.
+For more information about what each permission does, see the [Quarantine tag permission details](#quarantine-tag-permission-details) section later in this article.
 
 You create and assign quarantine tags in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with Exchange Online Mailboxes; standalone EOP PowerShell in EOP organizations without Exchange Online mailboxes).
 
@@ -78,13 +81,14 @@ You create and assign quarantine tags in the Security & Compliance Center or in 
        - **No release action**: This is the default value.
        - **Allow recipients to release a message from quarantine**
        - **Allow recipients to request a message to be released from quarantine**
+
      - **Select additional actions recipients can take on quarantined messages**: Select some, all, or none of the following values:
        - **Delete**
        - **Preview**
        - **Allow sender**
        - **Block sender**
 
-   These permissions and their effect on quarantined messages and in end-user spam notifications are described in the <> section later in this article.
+   These permissions and their effect on quarantined messages and in end-user spam notifications are described in the [Quarantine tag permission details](#quarantine-tag-permission-details) section later in this article.
 
    When you're finished, click **Next**.
 
@@ -94,9 +98,22 @@ You create and assign quarantine tags in the Security & Compliance Center or in 
 
 6. Click **Done** on the confirmation page that appears.
 
+Now you are ready to assign the quarantine tag to a quarantine feature as described in the [Step 2](#step-2-assign-a-quarantine-tag-to-supported-features) section.
+
 ### Create quarantine tags in PowerShell
 
-If you'd rather use PowerShell to create quarantine tags, connect to Exchange Online PowerShell or Exchange Online Protection PowerShell and use the following syntax:
+If you'd rather use PowerShell to create quarantine tags, connect to Exchange Online PowerShell or Exchange Online Protection PowerShell and use the **New-QuarantineTag** cmdlet.
+
+You have two different methods to choose from:
+
+- Use the _EndUserQuarantinePermissionsValue_ parameter.
+- Use the _EndUserQuarantinePermissions_ parameter.
+
+Both of these methods are described in the following sections.
+
+#### Use the EndUserQuarantinePermissionsValue parameter
+
+To create a quarantine tag using the _EndUserQuarantinePermissionsValue_ parameter, use the following syntax:
 
 ```powershell
 New-QuarantineTag -Name "<UniqueName>" -EndUserQuarantinePermissionsValue <0 to 236>
@@ -104,7 +121,7 @@ New-QuarantineTag -Name "<UniqueName>" -EndUserQuarantinePermissionsValue <0 to 
 
 The _EndUserQuarantinePermissionsValue_ parameter uses a decimal value that's converted from a binary value that corresponds to the available end-user quarantine permissions in a specific order. For each permission, the value 1 equals True and the value 0 equals False.
 
-The required order and values for preset end-user permissions are described in the following table:
+The required order and values for the available end-user permissions are described in the following table:
 
 ****
 
@@ -135,6 +152,67 @@ For custom permissions, use the previous table to get the binary value that corr
 
 For detailed syntax and parameter information, see [New-QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/new-quarantinetag).
 
+#### Use the EndUserQuarantinePermissions parameter
+
+To create a quarantine tag using the _EndUserQuarantinePermissionsValue_ parameter, do the following steps:
+
+A. Store a quarantine permissions object in a variable using the **New-QuarantinePermissions** cmdlet.
+B. Use the variable as the _EndUserQuarantinePermissions_ value in the **New-QuarantineTag** command.
+
+##### Step A: Store a quarantine permissions object in a variable
+
+To create a quarantine create and store a quarantine permissions object in a variable, use the following syntax:
+
+```powershell
+$<VariableName> = New-QuarantinePermissions [-PermissionToAllowSender <$true | $False>] [-PermissionToBlockSender <$true | $False>] [-PermissionToDelete <$true | $False>] [-PermissionToPreview <$true | $False>] [-PermissionToRelease <$true | $False>] [-PermissionToRequestRelease <$true | $False>]
+```
+
+The default value for any parameters that you don't use is `$false`, so you only need to use the parameters where you want to set value to `$true`.
+
+The following examples show how to create permission objects that correspond to the available end-user permissions groups:
+
+- **No access**:
+
+  ```powershell
+  $NoAccess = New-QuarantinePermissions
+  ```
+
+- **Limited access**:
+
+  ```powershell
+  $LimitedAccess = New-QuarantinePermissions -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRequestRelease $true
+  ```
+
+- **Full access**:
+
+  ```powershell
+  $FullAccess = New-QuarantinePermissions -PermissionToAllowSender $true -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRelease $true
+  ```
+
+To see the values that you've set, run the variable name as a command (for example, run the command `$NoAccess`).
+
+For custom permissions, use only the parameters that you want to set to `$true`. Don't set both the _PermissionToRelease_ and _PermissionToRequestRelease_ parameters to `$true`. Set one to `$true` and leave the other as `$false`, or leave both as `$false`.
+
+You can also modify an existing permissions object variable after you create it by using the **Set-QuarantinePermissions** cmdlet.
+
+For detailed syntax and parameter information, see [New-QuarantinePermissions](https://docs.microsoft.com/powershell/module/exchange/new-quarantinepermissions) and [Set-QuarantinePermissions](https://docs.microsoft.com/powershell/module/exchange/set-quarantinepermissions).
+
+##### Step B: Use the variable in the New-QuarantineTag command
+
+After you've created and stored the permissions object in a variable, use the variable for the _EndUserQuarantinePermission_ parameter value in the **New-QuarantineTag** command:
+
+```powershell
+New-QuarantineTag -Name "<UniqueName>" -EndUserQuarantinePermissions $<VariableName>
+```
+
+This example creates a new quarantine tag named LimitedAccess using the `$LimitedAccess` permissions object that was described and created in the previous step.
+
+```powershell
+New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAccess
+```
+
+For detailed syntax and parameter information, see [New-QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/new-quarantinetag).
+
 ## Step 2: Assign a quarantine tag to supported features
 
 In _supported_ protection features that quarantine messages or files (automatically or as a configurable action), you can assign a quarantine tag to the available quarantine actions. Features that quarantine messages and the availability of quarantine tags are described in the following table:
@@ -144,7 +222,7 @@ In _supported_ protection features that quarantine messages or files (automatica
 |Feature|Quarantine tags supported?|Default quarantine tags used|
 |---|:---:|---|
 |[Anti-spam policies](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**High confidence spam** (_HighConfidenceSpamAction_)</li><li>**Phishing email** (_PhishSpamAction_)</li><li>**High confidence phishing email** (_HighConfidencePhishAction_)</li><li>**Bulk email** (_BulkSpamAction_)</li></ul>|Yes|<ul><li>DefaultSpamTag (Full access)</li><li>DefaultHighConfSpamTag (Full access)</li><li>DefaultPhishTag (Full access)</li><li>DefaultHighConfPhishTag (No access)</li><li>DefaultBulkTag (Full access)</li></ul>
-|Anti-phishing policies: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies):<sup>\*</sup> <ul><li>**If email is sent by an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If email is sent by an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**Mailbox intelligence** \> **If email is sent by an impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|No|n/a|
+|Anti-phishing policies: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies):<sup>\*</sup> <ul><li>**If email is sent by an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If email is sent by an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**Mailbox intelligence** \> **If email is sent by an impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|No|n/a|
 |[Anti-malware policies](configure-anti-malware-policies.md): All detected messages are always quarantined.|No|n/a|
 |[ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)|No|n/a|
 |[Mail flow rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) with the action: **Deliver the message to the hosted quarantine** (_Quarantine_).|No|n/a|
@@ -152,7 +230,7 @@ In _supported_ protection features that quarantine messages or files (automatica
 
 <sup>\*</sup> Impersonation protection settings are available only in anti-phishing policies in Microsoft Defender for Office 365.
 
-If you're happy with the end-user permissions that are provided by the default quarantine tags as described in the previous table, you don't need to do anything. If you want to customize the end-user capabilities on quarantined messages, you can assign a custom quarantine tag.
+If you're happy with the end-user permissions that are provided by the default quarantine tags as described in the previous table, you don't need to do anything. If you want to customize the end-user capabilities in end-user spam notifications or on quarantined messages, you can assign a custom quarantine tag.
 
 ### Assign quarantine tags in anti-spam policies in the Security & Compliance Center
 
@@ -188,18 +266,18 @@ If you'd rather use PowerShell to assign quarantine tags in anti-spam policies, 
   Get-HostedContentFilterPolicy | Format-Table Name,*SpamAction,HighConfidencePhishAction
   ```
 
-  For information about the default action values, and the recommended action values for Standard and Strict, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+  For information about the default action values and the recommended action values for Standard and Strict, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
-- A spam filtering verdict without a corresponding quarantine tag parameter means the [default quarantine tag](#step-2-assign-a-quarantine-tag-to-supported-features) for that verdict is used for quarantined messages.
+- A spam filtering verdict without a corresponding quarantine tag parameter means the [default quarantine tag](#step-2-assign-a-quarantine-tag-to-supported-features) for that verdict is used.
 
-  You only need to replace the default quarantine tag for a spam filtering verdict with a custom quarantine tag if you want to change the default end-user capabilities that are provided by the default quarantine tag.
+  You only need to replace a default quarantine tag with a custom quarantine tag if you want to change the default end-user capabilities.
 
-- A new anti-spam policy in PowerShell requires a spam filter policy (settings) using the **New-HostedContentFilterPolicy** cmdlet and a spam filter rule (recipient filters) using the **New-HostedContentFilterRule** cmdlet. For instructions, see [Use PowerShell to create anti-spam policies](configure-your-spam-filter-policies.md#use-powershell-to-create-anti-spam-policies).
+- A new anti-spam policy in PowerShell requires a spam filter policy (settings) using the **New-HostedContentFilterPolicy** cmdlet and a new spam filter rule (recipient filters) using the **New-HostedContentFilterRule** cmdlet. For instructions, see [Use PowerShell to create anti-spam policies](configure-your-spam-filter-policies.md#use-powershell-to-create-anti-spam-policies).
 
 This example creates a new spam filter policy named Research Department with the following settings:
 
 - The action for all spam filtering verdicts is set to Quarantine.
-- The custom quarantine tag named NoAccess that assigns **No access** permissions replaces any default quarantine tags that don't already assign **No access** permissions.
+- The custom quarantine tag named NoAccess that assigns **No access** permissions replaces any default quarantine tags that don't already assign **No access** permissions by default.
 
 ```powershell
 New-HostedContentFilterPolicy -Name Research Department -SpamAction Quarantine -SpamQuarantineTag NoAccess -HighConfidenceSpamAction Quarantine -HighConfidenceSpamQuarantineTag NoAction -PhishSpamAction Quarantine -PhishQuarantineTag NoAction -BulkSpamAction Quarantine -BulkQuarantineTag NoAccess
@@ -215,7 +293,9 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 For detailed syntax and parameter information, see [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy).
 
-## Configure global quarantine notification settings
+## Configure global quarantine notification settings in the Security & Compliance Center
+
+The global settings for quarantine tags allow you to customize the end-user spam notifications that are sent to recipients of messages that were quarantined. For more information about these notifications, see [End-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** and then select **Quarantine tags**.
 
@@ -237,7 +317,7 @@ For detailed syntax and parameter information, see [Set-HostedContentFilterPolic
 
    - **Display name**: Customize the sender's display name that's used in end-user spam notifications.
 
-     For each language that you've added, select the language in the second language box and enter the value you want in the **Display name** box.
+     For each language that you've added, select the language in the second language box (don't click on the X) and enter the text value you want in the **Display name** box.
 
      The following screenshot shows the customized display name in an end-user spam notification:
 
@@ -245,61 +325,114 @@ For detailed syntax and parameter information, see [Set-HostedContentFilterPolic
 
    - **Disclaimer**: Add a custom disclaimer to the bottom of end-user spam notifications. The localized text, **A disclaimer from your organization:** is always included first, followed by the text you specify.
 
-     For each language that you've added, select the language in the second language box and enter the text value you want in the **Display name** box.
+     For each language that you've added, select the language in the second language box  (don't click the X) and enter the text value you want in the **Disclaimer** box.
 
      The following screenshot shows the customized disclaimer in an end-user spam notification:
 
      ![A custom disclaimer at the bottom of an end-user spam notification](../../media/quarantine-tags-esn-customization-disclaimer.png)
 
-## Reference
+### Configure global quarantine notification settings in PowerShell
 
-### Effects of end-user quarantine tag permissions on quarantined messages and end-user spam notifications
+## Quarantine tag permission details
 
 The following sections describe what users are allowed to do to quarantined messages in the quarantine and in spam notification messages
 
-#### No access permission
+### No permissions
 
-Even if the quarantine tag assigns no permissions (**No access**), users still get some capabilities.
+Even if the quarantine tag assigns no permissions (**No access**), users still get some baseline capabilities:
 
-- Quarantined messages: The **View message header** button is available in the quarantined message details.
-- End-user spam notifications: The **Review** button that takes the user to the quarantined message is available.
+- **Quarantined message details**: The **View message header** button is always available.
 
-#### Allow sender permission
+  ![Available buttons in the quarantined message details if the quarantine tag gives the user no permissions](../../media/quarantine-tags-quarantined-message-details-permission-none.png)
+
+- **End-user spam notifications**: The **Review** button that takes the user to the quarantined message is always available.
+
+  ![Available buttons in the end-user spam notification if the quarantine tag gives the user no permissions](../../media/quarantine-tags-esn-permission-none.png)
+
+### All permissions
+
+If the quarantine tag assigns all available permissions (**Full access**), users get the following capabilities:
+
+- **Quarantined message details**: The following buttons are available:
+  - **Release message**
+  - **View message header**
+  - **Preview message**
+  - **Remove from quarantine**
+
+  ![Available buttons in the quarantined message details if the quarantine tag gives the user all permissions](../../media/quarantine-tags-quarantined-message-details-permission-all.png)
+
+- **End-user spam notifications**: The following buttons are available:
+  - **Block sender**
+  - **Release**
+  - **Review**
+
+  ![Available buttons in the end-user spam notification if the quarantine tag gives the all permissions](../../media/quarantine-tags-esn-permission-all.png)
+
+> [!NOTE]
+> Currently, **Limited access** gives users the same experience as **Full access**, even though the permissions are different.
+
+### Allow sender permission
 
 Currently, the **Allow sender** permission does nothing.
 
-- Quarantined messages: No effect.
-- End-user spam notifications: No effect.
+- **Quarantined message details**: No effect.
+
+- **End-user spam notifications**: No effect.
 
 For more information about the Safe Senders list, see [Prevent trusted senders from being blocked](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-#### Block sender permission
+### Block sender permission
 
-The **Block sender** permission allows users to add the sender to their Block Senders list on their mailbox.
+The **Block sender** permission controls access to the button that allows users to conveniently add the quarantined message sender to their Blocked Senders list.
 
-- Quarantined messages: The **Block sender** button available in the quarantined message details.
-- End-user spam notifications: The **Block sender** button is available.
+- **Quarantined message details**: No effect.
+
+- **End-user spam notifications**:
+  - **Block sender** permission enabled: The **Block sender** button is available.
+  - **Block sender** permission disabled: The **Block sender** button is not available.
 
 For more information about the Blocked Senders list, see [Block messages from someone](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-#### Delete permission
+### Delete permission
 
-The **Delete** permission allows end-users to delete their quarantined messages (messages where the user is a recipient).
+The **Delete** permission controls the ability to of users to delete their messages (messages where the user is a recipient) from quarantine.
 
-- Quarantined messages: The **Remove from quarantine** button is available in the quarantined message details.
-- End-user spam notifications: No effect.
+- **Quarantined message details**:
+  - **Delete** permission enabled: The **Remove from quarantine** button is available.
+  - **Delete** permission disabled: The **Remove from quarantine** button is not available.
 
-#### Preview permission
+- **End-user spam notifications**: No effect.
 
-The **Preview** permission allows end-users to preview their quarantined messages.
+### Preview permission
 
-- Quarantined messages: The **Preview message** button is available in the quarantined message details.
-- End-user spam notifications: No effect.
+The **Preview** permission controls the ability to of users to preview their messages (messages where the user is a recipient) in quarantine.
+
+- **Quarantined message details**:
+  - **Preview** permission enabled: The **Preview message** button is available.
+  - **Preview** permission disabled: The **Preview message** button is not available.
+
+- **End-user spam notifications**: No effect.
 
 #### Allow recipients to release a message from quarantine permission
 
-The **Allow recipients to release a message from quarantine** permission allows users to release their quarantined messages directly and without the approval of an admin.
+The **Allow recipients to release a message from quarantine** permission controls the ability of users to release their quarantined messages (quarantined messages where the user is a recipient) directly and without the approval of an admin.
+
+- **Quarantined message details**:
+  - Permission enabled: The **Release message** button is available.
+  - Permission disabled: The **Release message** button is not available.
+
+- **End-user spam notifications**:
+  - Permission enabled: The **Release** button is available.
+  - Permission disabled: The **Release** button is not available.
 
 #### Allow recipients to request a message to be released from quarantine permission
 
-The **Allow recipients to request a message to be released from quarantine** permission allows users to _request_ the release of their quarantined messages. The message is only released after an admin approves.
+The **Allow recipients to request a message to be released from quarantine** permission controls the ability of users to _request_ the release of their quarantined messages (quarantined messages where the user is a recipient). The message is only released after an admin approves the request.
+
+- **Quarantined message details**:
+  - Permission enabled: The **Release message** button is available.
+  - Permission disabled: The **Release message** button is not available.
+
+- **End-user spam notifications**:
+  - Permission enabled: The **Release** button is available.
+  - Permission disabled: The **Release** button is not available.
