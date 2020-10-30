@@ -20,7 +20,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Decide on MDM or MAM method
+  - title: Different MDM and MAM methods
     linkLists:
       - linkListType: overview
         links:
