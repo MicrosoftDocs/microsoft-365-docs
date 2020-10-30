@@ -152,9 +152,9 @@ The attributes that you need to prepare are listed here:
   - The maximum number of characters for the **userPrincipalName** attribute is 113. A specific number of characters are permitted before and after the at sign (@), as follows:
   - Maximum number of characters for the username that is in front of the at sign (@): 64
   - Maximum number of characters for the domain name following the at sign (@): 48
-  - Invalid characters: \ % &amp; \* + / = ? { } | \< \> ( ) ; : , [ ] " '
+  - Invalid characters: \ % &amp; \* + / = ? { } | \< \> ( ) ; : , [ ] "
   - Characters allowed: A – Z, a - z, 0 – 9, ' . - _ ! # ^ ~
-  - An umlaut is also an invalid character.
+  - Letters with diacritical marks, such as umlauts, accents, and tildes, are invalid characters.
   - The @ character is required in each **userPrincipalName** value.
   - The @ character cannot be the first character in each **userPrincipalName** value.
   - The username cannot end with a period (.), an ampersand (&amp;), a space, or an at sign (@).

@@ -14,7 +14,7 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance 
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 search.appverid:
@@ -167,7 +167,7 @@ If the user who sent the link isn't included in a Safe Links policy where Teams 
 
 ![A Safe Links for Teams page reporting a malicious link.](../../media/tp-safe-links-for-teams-malicious.png)
 
-Clicking the **Go Back** button on the warning page will close the page (or might result in a blank page that users can close). However, clicking on the original link again will cause Safe Links to rescan the URL, so the warning page will reappear.
+Clicking the **Go Back** button on the warning page will return the user to their original context or URL location. However, clicking on the original link again will cause Safe Links to rescan the URL, so the warning page will reappear.
 
 ### How Safe Links works in Teams
 

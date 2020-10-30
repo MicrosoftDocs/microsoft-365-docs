@@ -50,22 +50,27 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 ## How to configure a label for encryption
 
-[Create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), and on the **Encryption** page of the wizard, select one of the following options:
+1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure **Files & emails** is selected for the label's scope: 
+    
+    ![Sensitivity label scope options for files and emails](../media/filesandemails-scope-options-sensitivity-label.png)
 
-- **None**: The default setting for a new label. No new encryption is applied.
-- **Apply**: Turns on encryption, and you then specify encryption settings.
-- **Remove**: Removes encryption if the document or email is encrypted.
+2. Then, on the **Choose protection settings for files and emails** page, make sure you select **Encrypt files and emails**
+    
+    ![Sensitivity label protection options for files and emails](../media/protection-options-sensitivity-label.png)
 
-> [!NOTE]
-> The **Remove** option is supported by the Azure Information Protection unified labeling client only. When you use built-in labeling, a label with this option is visible in Office apps and services and if selected, the encryption behavior is the same as **None**.
-
-Configuring the encryption options:
-
-![Sensitivity label options for encryption](../media/encrytion-options-sensitivity-label.png)
+4.  On the **Encryption** page of the wizard, select one of the following options:
+    
+    - **Remove encryption if the file is encrypted**: For more information about this scenario, see the [What happens to existing encryption when a label's applied](#what-happens-to-existing-encryption-when-a-labels-applied) section. It's important to understand that this setting can result in a sensitivity label that users might not be able to apply when they don't have sufficient permissions.
+    
+    - **Configure encryption settings**: Turns on encryption and makes the encryption settings visible:
+        
+        ![Sensitivity label options for encryption](../media/encrytion-options-sensitivity-label.png)
+        
+        Instructions for these settings are in the following [Configure encryption settings](#configure-encryption-settings) section.
 
 ### What happens to existing encryption when a label's applied
 
-If a sensitivity label is applied to unencrypted content, the outcome of the encryption options you can select is self-explanatory. For example, if encryption is set to **None**, the content remains unencrypted.
+If a sensitivity label is applied to unencrypted content, the outcome of the encryption options you can select is self-explanatory. For example, if you didn't select **Encrypt files and emails**, the content remains unencrypted.
 
 However, the content might be already encrypted. For example, another user might have applied:
 
@@ -75,7 +80,7 @@ However, the content might be already encrypted. For example, another user might
 
 The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
 
-| |**Encryption: None**|**Encryption: Apply**|**Encryption: Remove**|
+| |**Encryption: Not selected**|**Encryption: Configured**|**Encryption: Remove**|
 |:-----|:-----|:-----|:-----|
 |**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
@@ -98,7 +103,7 @@ Documents that are already encrypted and then added as attachments always preser
 
 ## Configure encryption settings
 
-When you select **Apply** on the **Encryption** page of the wizard to create or edit a sensitivity label, choose whether to:
+When you select **Configure encryption settings** on the **Encryption** page of the wizard to create or edit a sensitivity label, choose one of the following options:
 
 - **Assign permissions now**, so that you can determine exactly which users get which permissions to content that has the label applied. For more information, see the next section [Assign permissions now](#assign-permissions-now).
 - **Let users assign permissions** when your users apply the label to content. With this option, you can allow people in your organization some flexibility that they might need to collaborate and get their work done. For more information, see the [Let users assign permissions](#let-users-assign-permissions) section on this page.
@@ -270,7 +275,7 @@ For built-in labeling, users see the same dialog box if they select the followin
 
 ## Example configurations for the encryption settings
 
-For each example that follows, do the configuration from the **Encryption** page of the wizard when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels). First make sure that the **Encryption** is set to **Apply**:
+For each example that follows, do the configuration from the **Encryption** page of the wizard when **Configure encryption settings** is selected:
 
 ![Apply encryption option in the sensitivity label wizard](../media/apply-encryption-option.png)
 
@@ -386,17 +391,18 @@ For the best collaboration experience for files that are encrypted by a sensitiv
 
 Before you can use encryption, you might need to do some configuration tasks.
 
-### Activate protection from Azure Information Protection
+- Activate protection from Azure Information Protection
+    
+    For sensitivity labels to apply encryption, the protection service (Azure Rights Management) from Azure Information Protection must be activated for your tenant. In newer tenants, this is the default setting, but you might need to manually activate the service. For more information, see [Activating the protection service from Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
 
-For sensitivity labels to apply encryption, the protection service (Azure Rights Management) from Azure Information Protection must be activated for your tenant. In newer tenants, this is the default setting, but you might need to manually activate the service. For more information, see [Activating the protection service from Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
+- Configure Exchange for Azure Information Protection
+    
+    Exchange does not have to be configured for Azure Information Protection before users can apply labels in Outlook to encrypt their emails. However, until Exchange is configured for Azure Information Protection, you do not get the full functionality of using Azure Rights Management protection with Exchange.
+    
+    For example, users cannot view encrypted emails on mobile phones or with Outlook on the web, encrypted emails cannot be indexed for search, and you cannot configure Exchange Online DLP for Rights Management protection. 
+    
+    To ensure that Exchange can support these additional scenarios, see the following:
+    
+    - For Exchange Online, see the instructions for [Exchange Online: IRM Configuration](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
+    - For Exchange on-premises, you must deploy the [RMS connector and configure your Exchange servers](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 
 
-### Configure Exchange for Azure Information Protection
-
-Exchange does not have to be configured for Azure Information Protection before users can apply labels in Outlook to encrypt their emails. However, until Exchange is configured for Azure Information Protection, you do not get the full functionality of using Azure Rights Management protection with Exchange.
-
-For example, users cannot view encrypted emails on mobile phones or with Outlook on the web, encrypted emails cannot be indexed for search, and you cannot configure Exchange Online DLP for Rights Management protection.
-
-To ensure that Exchange can support these additional scenarios, see the following:
-
-- For Exchange Online, see the instructions for [Exchange Online: IRM Configuration](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
-- For Exchange on-premises, you must deploy the [RMS connector and configure your Exchange servers](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector).

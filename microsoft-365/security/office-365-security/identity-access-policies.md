@@ -16,6 +16,8 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
+- m365solution-identitydevice
+- m365solution-scenario
 ---
 
 # Common identity and device access policies

@@ -33,7 +33,12 @@ You can use [sensitivity labels](sensitivity-labels.md) as a condition in DLP po
 
 Sensitivity labels appear as an option in the **Content contains** list.
 
-![sensitivity label as a condition](../media/dlp-sensitivity-label-as-a-condition.png)
+> [!div class="mx-imgBorder"]
+> ![sensitivity label as a condition](../media/dlp-sensitivity-label-as-a-condition.png)
+
+> [!IMPORTANT]
+> **Sensitivity Labels** as a condition will not be available if you have selected **Teams chat and channel messages** as a location to apply the DLP policy.
+
 
 ## Supported items, scenarios, and policy tips
 
@@ -41,7 +46,7 @@ You can use sensitivity labels as conditions on these items and in these scenari
 
 ### Supported items
 
-|service  |item type  |available to policy tip  |enforceable  |
+|Service  |Item type  |Available to policy tip  |Enforceable  |
 |---------|---------|---------|---------|
 |Exchange    |email message         |yes         |yes         |
 |Exchange    |email attachment         |no *         |no *         |
@@ -59,16 +64,20 @@ You can use sensitivity labels as conditions on these items and in these scenari
 ### Supported scenarios
 
 - DLP Admin will be able to see a list of all sensitivity labels in the tenant when they choose to include one or more sensitivity labels as a condition.
-- Using sensitivity labels as a condition is supported across all workloads as indicated in the support matrix above
+
+- Using sensitivity labels as a condition is supported across all workloads as indicated in the support matrix above.
+
 - DLP policy tips will continue to be shown across workloads (except Outlook Win32) for DLP policies which contain sensitivity label as a condition.
+
 - Sensitivity labels will also appear as a part of the incident report email if a DLP policy with sensitivity label as a condition is matched.
+
 - Sensitivity label details will also be shown in the DLP rule match audit log for a DLP policy match which contains sensitivity label as a condition.
 
 
 ### Support policy tips
 
 
-|workload  |policy tips supported/not supported  |
+|Workload  |Policy tips supported/not supported  |
 |---------|---------|
 |OWA |    supported     |
 |Outlook Win 32    |  not supported       |

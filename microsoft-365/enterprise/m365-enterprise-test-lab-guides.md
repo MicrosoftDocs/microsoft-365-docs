@@ -24,25 +24,25 @@ description: Use these Test Lab Guides to set up demonstration, proof of concept
 
 *This applies to both Microsoft 365 for enterprise and Office 365 Enterprise.*
 
-Test Lab Guides (TLGs) help you quickly learn about Microsoft products. They provide prescriptive instructions to configure simplified but representative test environments. You can use these environments for demonstration, customization, or creation of complex proofs of concept for the duration of a trial or paid subscription. 
+Test Lab Guides (TLGs) help you quickly learn about Microsoft products. They provide prescriptive instructions to configure simplified but representative test environments. You can use these environments for demonstration, customization, or creation of complex proofs of concept for the duration of a trial or paid subscription.
 
-TLGs are designed to be modular. They build upon each other to create multiple configurations that more closely match your learning or test configuration needs. The "I built it out myself and it works" hands-on experience helps you understand the deployment requirements of a new product or scenario so you can better plan for hosting it in production.
+TLGs are designed to be modular. They build upon each other to create multiple configurations that more closely match your learning or test configuration needs. The "I built it out myself and it works" hands-on experience helps you understand the deployment requirements of a new product or scenario, so that you can better plan for hosting it in production.
 
-You can also use TLGs to create representative environments for development and testing of applications, also known as dev/test environments.
+You can also use TLGs to create representative environments to develop and test applications, also known as dev/test environments.
   
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Go to the [Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
+For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, expand the following graphic or go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
-[![The Microsoft 365 for enterprise Test Lab Guide stack](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
+[![The Microsoft 365 for enterprise Test Lab Guide stack](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## Base configuration
 
-First, you create a test environment for [Microsoft 365 for enterprise](https://docs.microsoft.com/microsoft-365-enterprise/). You can create two different types of base configurations:
+First, create a test environment for [Microsoft 365 for enterprise](https://docs.microsoft.com/microsoft-365-enterprise/). You can create two different types of base configurations:
 
-- Use the [lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md) when you want to configure and demonstrate Microsoft 365 for enterprise features and capabilities in a cloud-only environment, which does not include any on-premises components.
+- [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md) - Use this when you want to configure and demonstrate Microsoft 365 for enterprise features and capabilities in a cloud-only environment, which does not include any on-premises components.
 
-- Use the [simulated enterprise base configuration](simulated-ent-base-configuration-microsoft-365-enterprise.md) when you want to configure and demonstrate Microsoft 365 for enterprise features and capabilities in a hybrid cloud environment, which uses on-premises components such as an Active Directory Domain Services (AD DS) domain.
+- [Simulated enterprise base configuration](simulated-ent-base-configuration-microsoft-365-enterprise.md) - Use this when you want to configure and demonstrate Microsoft 365 for enterprise features and capabilities in a hybrid cloud environment, which uses on-premises components such as an Active Directory Domain Services (AD DS) domain.
 
 You can also create test environments for Office 365 E5 by not adding the Microsoft 365 E5 license to your trial or production test environment.
     
@@ -64,14 +64,14 @@ To demonstrate identity-related features and capabilities, see:
 
 - [Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md)
   
-   Enable and test Azure AD Seamless Single Sign-on (SSO) with an AD DS domain controller.
+   Enable and test Azure AD Seamless Single Sign-on (Seamless SSO) with an AD DS domain controller.
 
 - [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
   
    Enable and test smart phone-based multi-factor authentication for a specific user account.
 
 - [Protect global administrator accounts](protect-global-administrator-accounts-microsoft-365-test-environment.md)
- 
+
    Lock down your global administrator accounts with conditional access policies.
 
 - [Password writeback](password-writeback-m365-ent-test-environment.md)
@@ -80,7 +80,7 @@ To demonstrate identity-related features and capabilities, see:
 
 - [Password reset](password-reset-m365-ent-test-environment.md)
 
-   Use self-service password reset (SSPR) to reset your password.
+   Use self-service password reset to reset your password.
 
 - [Automatic licensing and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md)
 
@@ -94,7 +94,6 @@ To demonstrate identity-related features and capabilities, see:
 
    Create an environment to test recommended identity and device access configurations and conditional access policies.
 
-
 ## Mobile device management
 
 To demonstrate mobile device management-related features and capabilities, see:
@@ -106,7 +105,6 @@ To demonstrate mobile device management-related features and capabilities, see:
 - [Enroll iOS and Android devices](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
    Enroll iOS or Android devices and manage them remotely.
-
 
 ## Information protection
 
@@ -123,5 +121,3 @@ To demonstrate information protection-related features and capabilities, see:
 - [Privileged access management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
    Configure privileged access management for just-in-time access to elevated and privileged tasks in your organization.
-
-

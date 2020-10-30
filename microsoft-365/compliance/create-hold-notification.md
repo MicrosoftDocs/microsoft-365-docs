@@ -42,7 +42,11 @@ The first step is to specify the appropriate details for legal hold notices or o
 
     - **Name**: This is the name for the communication.
 
-    - **Issuing officer**: The dropdown list displays a list of case members. Each notice sent to custodians will be sent on behalf of the specified issuing officer.
+    - **Issuing officer**: The dropdown list displays a list of case members. For more information on how to add new members to a case, see [Create an Advanced eDiscovery case](get-started-with-advanced-ediscovery.md#step-4-create-an-advanced-ediscovery-case). Each notice sent to custodians will be sent on behalf of the specified issuing officer.
+
+> [!NOTE]
+> The issuing officer must have an **active mailbox** to show up in the Issuing Officer dropdown
+
 
 4. Click **Next**.
 
