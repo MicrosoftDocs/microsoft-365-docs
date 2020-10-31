@@ -20,8 +20,6 @@ Attack simulator training through Microsoft Defender for Office 365 lets you run
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-## Launch a simulation
-
 To launch a simulated phishing attack, navigate to the [Microsoft 365 security center](https://security.microsoft.com/). Under **Email & collaboration** click on **Attack simulator** and switch to the [**Simulations**](https://security.microsoft.com/attacksimulator?viewid=simulations) tab.
 
 Under **Simulations** select **+ Launch a simulation**.
@@ -31,7 +29,7 @@ Under **Simulations** select **+ Launch a simulation**.
 > [!NOTE]
 > At any point during simulation creation you can save and close to continue configuring the simulation at a later time.
 
-### Selecting a social engineering technique
+## Selecting a social engineering technique
 
 Select from 4 different techniques, curated from the [MITRE ATT&CK® framework](https://attack.mitre.org/techniques/enterprise/). Different payloads are available for different techniques.
 
@@ -47,7 +45,7 @@ Select from 4 different techniques, curated from the [MITRE ATT&CK® framework](
 
 Once you've selected the technique and clicked on **Next** give your simulation a name and optionally a description.
 
-### Selecting a payload
+## Selecting a payload
 
 Next, you'll need to either select a payload from the pre-existing payload catalog.
 
@@ -59,4 +57,34 @@ Payloads have a number of data points to help you choose:
 - **Complexity**, available through **filters**, is calculated based on the number of indicators within the payload that clue targets in on it being an attack. More indicators lead to lower complexity.
 - **Source**, available through **filters**, indicates whether the payload was created on your tenant or is a part of Microsoft's pre-existing payload catalog (global).
 
+![Selected payload within attack simulation training in Microsoft 365 security center](../../media/attack-sim-preview-select-payload.png)
+
 Select a payload from the list to see a preview of the payload with additional information about it.
+
+If you'd like to create your own payload, read [create a payload for attack simulation training]().
+
+Once you've selected your payload and clicked **Next**, you'll need to target users for this simulation.
+You can choose to **include all users in your organization** or **include only specific users and groups**. If you include only specific users and groups, besides your ability to search by clicking on **Add users** you can also import a list from a CSV file by clicking on **Import**.
+
+## Assigning training
+
+We recommend that you assign training for each simulation, as employees who go through training are less susceptible to similar attacks.
+
+You can either choose to have training assigned for you or select training courses and modules yourself.
+
+Select the **training due date** to make sure employees finish their training in a timely manner.
+
+> [!NOTE}
+> If you choose to select courses and modules yourself, you'll still be able to see the recommended content as well as all available courses and modules.
+>
+> ![Adding recommended training within attack simulation training in Microsoft 365 security center](../../media/attack-sim-preview-add-training.png)
+
+In the next steps you'll need to **Add trainings** if you opted to select it yourself, and customize your training landing page. You'll be able to preview the training landing page, as well as change the header and body of it.
+
+## Launch details and review
+
+Now that everything is configured, you can launch this simulation immediately or schedule it for a later date. You will also need to choose when to end this simulation. We will stop capturing interaction with this simulation past the selected time. 
+
+**Enable region aware timezone delivery** to deliver simulated attack messages to your employees during their working hours based on their region.
+
+Once you're done, click on **Next** and review the details of your simulation. Click on **Edit** on any of the parts to go back and change any details that need changing. Once done, click **Submit**.
