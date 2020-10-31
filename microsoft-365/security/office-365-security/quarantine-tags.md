@@ -158,6 +158,7 @@ For detailed syntax and parameter information, see [New-QuarantineTag](https://d
 To create a quarantine tag using the _EndUserQuarantinePermissionsValue_ parameter, do the following steps:
 
 A. Store a quarantine permissions object in a variable using the **New-QuarantinePermissions** cmdlet.
+<br/>
 B. Use the variable as the _EndUserQuarantinePermissions_ value in the **New-QuarantineTag** command.
 
 ##### Step A: Store a quarantine permissions object in a variable
@@ -408,11 +409,30 @@ If the quarantine tag assigns the **No access** permissions (no permissions), us
 
 - **Quarantined message details**: The **View message header** button is always available.
 
-  ![Available buttons in the quarantined message details if the quarantine tag gives the user no permissions](../../media/quarantine-tags-quarantined-message-details-permission-none.png)
+  ![Available buttons in the quarantined message details if the quarantine tag gives the user No access permissions](../../media/quarantine-tags-quarantined-message-details-no-access.png)
 
 - **End-user spam notifications**: The **Review** button that takes the user to the message in quarantine is always available.
 
-  ![Available buttons in the end-user spam notification if the quarantine tag gives the user no permissions](../../media/quarantine-tags-esn-permission-none.png)
+  ![Available buttons in the end-user spam notification if the quarantine tag gives the user No access permissions](../../media/quarantine-tags-esn-no-access.png)
+
+#### Limited access
+
+If the quarantine tag assigns the **Limited access** permissions, users get the following capabilities:
+
+- **Quarantined message details**: The following buttons are available:
+  - **Request release**
+  - **View message header**
+  - **Preview message**
+  - **Block sender**
+  - **Remove from quarantine**
+
+  ![Available buttons in the quarantined message details if the quarantine tag gives the user Limited access permissions](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
+
+- **End-user spam notifications**: The following buttons are available:
+  - **Block sender**
+  - **Review**
+
+  ![Available buttons in the end-user spam notification if the quarantine tag gives the user Limited access permissions](../../media/quarantine-tags-esn-limited-access.png)
 
 #### Full access
 
@@ -426,27 +446,14 @@ If the quarantine tag assigns the **Full access** permissions (all available per
   - **Allow sender**
   - **Remove from quarantine**
 
+  ![Available buttons in the quarantined message details if the quarantine tag gives the user Full access permissions](../../media/quarantine-tags-quarantined-message-details-full-access.png)
+
 - **End-user spam notifications**: The following buttons are available:
   - **Block sender**
   - **Release**
   - **Review**
 
-  ![Available buttons in the end-user spam notification if the quarantine tag gives the all permissions](../../media/quarantine-tags-esn-permission-all.png)
-
-#### Limited access
-
-If the quarantine tag assigns the **Limited access** permissions, users get the following capabilities:
-
-- **Quarantined message details**: The following buttons are available:
-  - **Request Release**
-  - **View message header**
-  - **Preview message**
-  - **Block sender**
-  - **Remove from quarantine**
-
-- **End-user spam notifications**: The following buttons are available:
-  - **Block sender**
-  - **Review**
+  ![Available buttons in the end-user spam notification if the quarantine tag gives the user Full access permissions](../../media/quarantine-tags-esn-full-access.png)
 
 ### Individual permissions
 
@@ -516,7 +523,7 @@ The **Allow recipients to release a message from quarantine** permission (_Permi
 The **Allow recipients to request a message to be released from quarantine** permission (_PermissionToRequestRelease_) controls the ability of users to _request_ the release of their quarantined messages. The message is only released after an admin approves the request.
 
 - **Quarantined message details**:
-  - Permission enabled: The **Request Release message** button is available.
-  - Permission disabled: The **Request Release message** button is not available.
+  - Permission enabled: The **Request release** button is available.
+  - Permission disabled: The **Request release** button is not available.
 
 - **End-user spam notifications**: The **Release** button is not available.
