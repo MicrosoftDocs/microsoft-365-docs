@@ -472,7 +472,7 @@ The **Allow sender** permission (_PermissionToAllowSender_) controls access to t
 
 For more information about the Safe Senders list, see [Prevent trusted senders from being blocked](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-### Block sender permission
+#### Block sender permission
 
 The **Block sender** permission (_PermissionToBlockSender_) controls access to the button that allows users to conveniently add the quarantined message sender to their Blocked Senders list.
 
@@ -486,7 +486,7 @@ The **Block sender** permission (_PermissionToBlockSender_) controls access to t
 
 For more information about the Blocked Senders list, see [Block messages from someone](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-### Delete permission
+#### Delete permission
 
 The **Delete** permission (_PermissionToDelete_) controls the ability to of users to delete their messages (messages where the user is a recipient) from quarantine.
 
@@ -496,7 +496,7 @@ The **Delete** permission (_PermissionToDelete_) controls the ability to of user
 
 - **End-user spam notifications**: No effect.
 
-### Preview permission
+#### Preview permission
 
 The **Preview** permission (_PermissionToPreview_) controls the ability to of users to preview their messages in quarantine.
 
