@@ -1,5 +1,5 @@
 ---
-title: "Simulate a phishing attack with Microsoft Defender for Office 365"
+title: "Simulate a phishing attack with Microsoft Defender for"
 ms.author: daniha
 author: danihalfin
 manager: dansimp
@@ -8,9 +8,7 @@ ms.topic: how-to
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance 
-- m365initiative-m365-defender 
-ms.custom:
-- seo-marvel-apr2020
+- m365initiative-m365-defender
 description: "Learn how to simulate phishing attacks and train your users on phishing prevention."
 ---
 
@@ -61,7 +59,7 @@ Payloads have a number of data points to help you choose:
 
 Select a payload from the list to see a preview of the payload with additional information about it.
 
-If you'd like to create your own payload, read [create a payload for attack simulation training]().
+If you'd like to create your own payload, read [create a payload for attack simulation training](attack-simulation-training-payloads.md).
 
 Once you've selected your payload and clicked **Next**, you'll need to target users for this simulation.
 You can choose to **include all users in your organization** or **include only specific users and groups**. If you include only specific users and groups, besides your ability to search by clicking on **Add users** you can also import a list from a CSV file by clicking on **Import**.
@@ -74,7 +72,7 @@ You can either choose to have training assigned for you or select training cours
 
 Select the **training due date** to make sure employees finish their training in a timely manner.
 
-> [!NOTE}
+> [!NOTE]
 > If you choose to select courses and modules yourself, you'll still be able to see the recommended content as well as all available courses and modules.
 >
 > ![Adding recommended training within attack simulation training in Microsoft 365 security center](../../media/attack-sim-preview-add-training.png)
