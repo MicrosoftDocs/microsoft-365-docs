@@ -14,92 +14,27 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "Configure your retention policies and retention labels for regulatory requirements and use the Cohasset assessment to help you comply with regulatory standards for retaining your data."
+description: "Configure your retention policies and retention labels to help you comply with regulatory standards for retaining your data."
 ---
 
 # Configure information governance and records management for regulatory requirements
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-If your organization needs to comply with regulatory standards for retaining and disposing of data, the policies for retention and retention labels that you can configure in Microsoft 365 are sufficient for most organizations.
+Use the resources on this page to help you meet specific regulatory requirements for information governance and your records management solution in Microsoft 365.
 
-However, some organizations in highly regulated industries are subject to more stringent regulatory requirements, such as the WORM (write once, read many) requirement, and the requirement to store electronic communications using a storage solution in which a record:
+This page will be updated as new guidance becomes available from the [Data Protection Resources, FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) page of the Service Trust Portal.
 
-- Must be retained for a required retention period that cannot be shortened, only increased.
-- Cannot be overwritten, erased, or altered during the required retention period.
+## Cohasset assessment
 
-Another example is for financial institutions such as banks or broker dealers that are subject to Rule 17a-4 issued by the Securities and Exchange Commission (SEC). Rule 17a-4 has specific requirements for electronic data storage, including many aspects of record management, such as the duration, format, quality, availability, and accountability of records retention.
+Applicable workloads: Exchange, SharePoint, OneDrive, Teams, Skype for Business
 
-Use the following features and resources to help your organization meet its regulatory requirements.
+Released November 2020, this report has been produced in partnership with Cohasset Associates, Inc. (Cohasset) to assesses the capabilities of Microsoft 365 services for recording, storing and managing requirements for electronic records, as specified by:  
 
-## Retention policies and label policies: Use Preservation Lock
+- Securities and Exchange Commission (SEC) in 17 CFR § 240.17a-4(f), which regulates exchange members, brokers or dealers.  
 
-Preservation Lock locks a retention policy or retention label policy so that no one—including a global admin—can turn off the policy, delete the policy, or make it less restrictive.
+- Financial Industry Regulatory Authority (FINRA) Rule 4511(c), which defers to the format and media requirements of SEC Rule 17a-4(f).  
 
-When a policy for retention is locked:
+- The principles-based electronic records requirements of the Commodity Futures Trading Commission (CFTC) in 17 CFR § 1.31(c)-(d).
 
-- No one can turn it off
-- Locations can be added but not removed
-- You can extend a retention period but not decrease it
-
-In summary, a locked policy for retention can be increased or extended, but it can't be reduced or turned off.
-  
-> [!IMPORTANT]
-> Before you lock a retention policy or retention label policy, it's critical that you understand the impact and confirm whether it's required for your organization to meet regulatory requirements. Administrators won't be able to disable or delete these policies after the preservation lock is applied.
-
-For instructions, see the next section.
-
-### How to lock a retention policy or retention label policy
-
-You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) to comply with regulatory requirements. Because administrators can't disable or delete a policy for retention after a preservation lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.
-
-All policies for retention and with any configuration support Preservation Lock. However, when you use the PowerShell commands that follow, you'll notice that the **Workload** parameter always displays **Exchange, SharePoint, OneDriveForBusines, Skype, ModernGroup** rather than reflect the actual workloads configured in the policy. This is a display issue only.
-
-1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
-
-2. Find the name of the policy that you want to lock by running [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy). For example:
-
-   ![List of retention policies in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
-
-3. To place a Preservation Lock on your policy, run the [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet with the name of the policy, and the *RestrictiveRetention* parameter set to true:
-
-    ```powershell
-    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
-    ```
-
-    For example:
-
-    ![RestrictiveRetention parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
-
-     When prompted, read and acknowledge the restrictions that come with this configuration by entering **Y**:
-
-   ![Prompt to confirm that you want to lock a retention policy in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
-
-A Preservation Lock is now placed on the policy. To confirm, run `Get-RetentionCompliancePolicy` again, but specify the policy name and display the policy parameters:
-
-```powershell
-Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
-```
-
-You should see **RestrictiveRetention** is set to **True**. For example:
-
-![Locked policy with all parameters shown in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
-
-## Retention labels: Use regulatory records
-
-When you configure retention labels, you can configure the label to mark the content as a regulatory record. When the label with this configuration is applied to items, they can't be edited or deleted, and the label can't be changed or removed. In addition, admins won't be able to modify or delete this label after it's created. They'll only be able to increase the retention period.
-
-For additional security, you can apply Preservation Lock to the retention label policy that publishes regulatory record labels. When you do this, no administrator can remove these labels from the selected locations, only add locations.
-
-For more information about regulatory records, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
-
-For instructions to configure retention labels for regulatory records, see [Declare records by using retention labels](declare-records.md).
-
-## Resources for specific regulatory requirements
-
-This section will be updated as new guidance becomes available from the [Data Protection Resources, FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) page of the Service Trust Portal.
-
-### Cohasset assessment for Rule 17a-4
-
-To help you comply with Rule 17a-4 issued by the Securities and Exchange Commission (SEC), you can download an assessment that's been produced in partnership with Cohasset Associates. 
- 
+The opinion from Cohasset is that when compliance features are properly configured and carefully applied and managed as described in their report, the assessed Microsoft 365 services meet the five requirements related to the recording and non-rewriteable, non-erasable storage of electronic records.

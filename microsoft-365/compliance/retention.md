@@ -283,13 +283,13 @@ Explanation for the four different levels:
 
 Finally, a retention policy or retention label cannot permanently delete any content that's on hold for eDiscovery. When that hold is released, the content again becomes eligible for the cleanup process in the secured locations for the workload.
 
-## Use Preservation Lock to comply with regulatory requirements
+## Use Preservation Lock to restrict changes to policies
 
 Some organizations might need to comply with rules defined by regulatory bodies such as the Securities and Exchange Commission (SEC) Rule 17a-4, which requires that after a policy for retention is turned on, it cannot be turned off or made less restrictive. 
 
-Preservation Lock ensures your organization can meet such regulatory requirements because it locks a retention policy or retention label policy so that no one—including the administrator—can turn off the policy, delete the policy, or make it less restrictive.
+Preservation Lock ensures your organization can meet such regulatory requirements because it locks a retention policy or retention label policy so that no one—including an administrator—can turn off the policy, delete the policy, or make it less restrictive.
   
-You apply Preservation Lock after the retention policy or retention label policy is created. For more information and instructions, see [Configure retention policies and retention labels for regulatory requirements](retention-regulatory-requirements.md).
+You apply Preservation Lock after the retention policy or retention label policy is created. For more information and instructions, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
 
 ## Releasing a policy for retention
 

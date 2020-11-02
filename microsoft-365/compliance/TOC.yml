@@ -295,6 +295,8 @@
           href: create-apply-retention-labels.md
         - name: Apply a retention label to content automatically
           href: apply-retention-labels-automatically.md
+        - name: Use Preservation Lock to restrict changes to policies
+          href: retention-preservation-lock.md
         - name: Configure retention for regulatory requirements
           href: retention-regulatory-requirements.md
         - name: Create retention labels with PowerShell
