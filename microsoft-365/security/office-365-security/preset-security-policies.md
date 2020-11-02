@@ -109,6 +109,7 @@ In other words, the settings of the **Strict protection** policy override the se
   - For read-only access to preset security policies, you need to be a member of one of the following role groups:
 
     - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **Global Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
     - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 ### Use the Security & Compliance Center to assign preset security policies to users
