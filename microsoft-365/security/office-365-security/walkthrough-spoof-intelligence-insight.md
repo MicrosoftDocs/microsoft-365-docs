@@ -20,12 +20,12 @@ description: "Admins can learn how the spoof intelligence insight works, includi
 ms.custom: seo-marvel-apr2020
 ---
 
-# Walkthrough - ATP Spoof intelligence insight in Microsoft 365
+# Walkthrough - Defender for Office 365 Spoof intelligence insight in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-In Microsoft 365 organizations with Advanced Threat Protection (ATP), you can use the spoof intelligence insight to quickly determine which senders are legitimately sending you unauthenticated email. By permitting them to send spoofed messages, you can reduce the risk of any false positives going to your users. You can also use the spoof intelligence insight to monitor and manage permitted domain-pairs to provide an additional layer of security and prevent unsafe messages from arriving in your organization.
+In Microsoft 365 organizations with Defender for Office 365, you can use the spoof intelligence insight to quickly determine which senders are legitimately sending you unauthenticated email. By permitting them to send spoofed messages, you can reduce the risk of any false positives going to your users. You can also use the spoof intelligence insight to monitor and manage permitted domain-pairs to provide an additional layer of security and prevent unsafe messages from arriving in your organization.
 
 If you're new to [reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md), it might help to see how you can easily navigate from a dashboard to an insight and recommended actions.
 
@@ -44,7 +44,7 @@ This walkthrough is one of several for the Security & Compliance Center. To abou
   - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
   - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- You enable and disable spoof intelligence in ATP anti-phishing policies. For more information, see [Configure ATP anti-phishing policies in Microsoft 365](configure-atp-anti-phishing-policies.md).
+- You enable and disable spoof intelligence in anti-phishing policies in Microsoft Defender for Office 365. For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365 in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
 - In Microsoft 365 organizations with Exchange Online mailboxes, and in standalone Exchange Online Protection (EOP) without Exchange Online mailboxes, you can use spoof intelligence to monitor and manage senders you are sending you unauthenticated messages. For more information, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 

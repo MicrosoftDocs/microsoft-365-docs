@@ -39,7 +39,7 @@ Microsoft 365 for enterprise is available in three plans.
 |Plan name|Capabilities|
 |---|---|
 |E3|Access the Microsoft 365 core products and features to securely enhance workplace productivity and drive innovation.|
-|E5|Access the Microsoft 365 latest products and features. These include advanced threat protection, security tools, and collaboration tools. This plan includes all E3 capabilities, plus advanced security, voice, and data analysis tools.|
+|E5|Access the Microsoft 365 latest products and features. These include Defender for Office 365, security tools, and collaboration tools. This plan includes all E3 capabilities, plus advanced security, voice, and data analysis tools.|
 |F3|Connect with your first-line workers through purpose-built tools and resources that they can use to help them do their best work.|
 |||
 
