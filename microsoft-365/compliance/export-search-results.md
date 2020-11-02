@@ -28,8 +28,6 @@ ms.custom: seo-marvel-apr2020
 
 After a Content Search is successfully run, you can export the search results to a local computer. When you export email results, they're downloaded to your computer as PST files. When you export content from SharePoint and OneDrive for Business sites, copies of native Office documents are exported. There are other documents and reports included with the exported search results.
   
-Any RMS-encrypted email messages included in the results of a Content Search will be decrypted when you export them (as individual messages). This decryption capability is enabled by default for members of the eDiscovery Manager role group. This is because the RMS Decrypt management role is assigned to this role group. See the [More information](#more-information) section for details about RMS decryption when you export search results. 
-  
 Exporting the results of a Content Search involves preparing the results, and then downloading them to a local computer.
   
 ## Before you export content search results
@@ -317,6 +315,8 @@ Here's more information about exporting search results.
   As previously stated, we recommend that you download search results to a local disk drive due to the high amount of disk activity (reads and writes). Don't download search results to a mapped network drive or other network location.
 
 ### Decrypting RMS-encrypted messages
+
+Any RMS-encrypted email messages included in the results of a Content Search will be decrypted when you export them (as individual messages). This decryption capability is enabled by default for members of the eDiscovery Manager role group. This is because the RMS Decrypt management role is assigned to this role group by default. See the [More information](#more-information) section for details about RMS decryption when you export search results.
   
 - As previously explained, to decrypt RMS-encrypted messages when you export them, you have to export the search results as individual messages. If you export search results to a PST file, RMS-encrypted messages remain encrypted.
     
