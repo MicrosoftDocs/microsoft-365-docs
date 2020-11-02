@@ -134,9 +134,9 @@ Be sure to read the following items before you start searching the audit log.
 
 ## Search the audit log
 
- > [!NOTE]
-    > We are currently investigating an issue where Azure AD activities are not available in the Audit Search, starting around Oct 26, 2020. 
-These activites include Azure AD user administration activities, group administration activities, Application administration activities, Role administration activities, Directory administration activities. We will provide an update here when the issue is resolved.
+> [!NOTE]
+> We're currently investigating an issue where Azure AD activities are not available in the audit log search tool. This issue started around October 26, 2020. 
+These activites include Azure AD user administration activities, group administration activities, application administration activities, role administration activities, and directory administration activities. We'll provide an update when the issue is resolved.
     
 Here's the process for searching the audit log in Office 365.
 
