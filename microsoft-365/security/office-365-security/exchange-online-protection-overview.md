@@ -91,7 +91,7 @@ EOP performs load balancing between datacenters but only within a region. If you
 
 The Help content for EOP administrators consists of the following top-level categories:
 
-- [Configure EOP, Day 1, for Office 365 ATP admins](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide): Configuring EOP protection and detection tools at the core of Office 365 Advanced Threat Protection.
+- [Configure EOP, Day 1, for Microsoft Defender for Office 365 admins](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide): Configuring EOP protection and detection tools at the core of Microsoft Defender for Office 365.
 
 - [EOP features](eop-features.md): Provides a list of features that are available in EOP.
 
