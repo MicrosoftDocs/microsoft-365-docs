@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 ms.collection: 
 - M365-security-compliance 
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: "During and after an automated investigation in Microsoft 365, you can view the results and key findings."
 ms.date: 09/29/2020
 ---
@@ -25,7 +25,7 @@ ms.date: 09/29/2020
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-When an [automated investigation](office-365-air.md) occurs in [Office 365 Advanced Threat Protection](office-365-atp.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions.
+When an [automated investigation](office-365-air.md) occurs in [Microsoft Defender for Office 365](office-365-atp.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions.
 
 ## Investigation status
 
@@ -159,7 +159,7 @@ The email count identified on the email tab currently represents the sum total o
 
 Both Explorer and AIR count email messages on a per recipient basis, because the security verdicts, actions, and delivery locations vary on a per-recipient basis. Thus, an original email sent to three users counts as a total of three email messages instead of one email. There might be cases where an email gets counted two or more times, such as when an email has multiple actions on it, or when there are multiple copies of the email when all the actions occur. For example, a malware email that is detected at delivery can result in both a blocked (quarantined) email and a replaced email (threat file replaced with a warning file, then delivered to user's mailbox). Because there are literally two copies of the email in the system, both might be counted in cluster counts.
 
-Email counts are calculated at the time of the investigation and some counts are recalculated when you open investigation flyouts (based on an underlying query). The email counts shown for the email clusters on the email tab and the email quantity value shown on cluster flyout are calculated at the time of investigation and do not change. The email count shown at the bottom of the email tab of the email cluster flyout and the count of email messages shown in Explorer reflect email messages received after the investigation's initial analysis. Thus an email cluster that shows an original quantity of 10 email messages would show an email list total of 15 when five more email messages arrive between the investigation analysis phase and when the admin reviews the investigation.  Likewise old investigations may start having bigger counts than Explorer queries show, since ATP P2 expires data after 7 days for trials and 30 days for paid licenses.  Showing both count historical and current counts in different views is done to indicate the email impact at the time of investigation and the current impact up until the time that remediation is run.
+Email counts are calculated at the time of the investigation and some counts are recalculated when you open investigation flyouts (based on an underlying query). The email counts shown for the email clusters on the email tab and the email quantity value shown on cluster flyout are calculated at the time of investigation and do not change. The email count shown at the bottom of the email tab of the email cluster flyout and the count of email messages shown in Explorer reflect email messages received after the investigation's initial analysis. Thus an email cluster that shows an original quantity of 10 email messages would show an email list total of 15 when five more email messages arrive between the investigation analysis phase and when the admin reviews the investigation.  Likewise old investigations may start having bigger counts than Explorer queries show, since Defender for Office 365 P2 expires data after 7 days for trials and 30 days for paid licenses.  Showing both count historical and current counts in different views is done to indicate the email impact at the time of investigation and the current impact up until the time that remediation is run.
 
 As an example, consider the following scenario. The first cluster of three email messages were deemed to be phish. Another cluster of similar messages with the same IP and subject was found and considered malicious, as some of them were identified as phish during initial detection.
 
@@ -193,13 +193,13 @@ On the **Machines** tab, you can see all the machines identified as part of the 
 
 ![AIR investigation machine page](../../media/air-investigationmachinepage.png)
 
-As part of some playbooks, AIR correlates email threats to devices (e.g. Zapped malware). For example, an investigation passes a malicious file hash across to [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+As part of some playbooks, AIR correlates email threats to devices (e.g. Zapped malware). For example, an investigation passes a malicious file hash across to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 ) to investigate. This allows for automated investigation of relevant machines for your users, to help ensure that threats are addressed both in the cloud and across your endpoints.
 
 You can:
 
 - Get a visual overview of the current machines and threats found.
-- Select a machine to open a view that into the related [Microsoft Defender ATP investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) in the Microsoft Defender Security Center.
+- Select a machine to open a view that into the related [Microsoft Defender for Endpoint investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) in the Microsoft Defender Security Center.
 
 ### Entity investigation
 
@@ -244,7 +244,7 @@ You can:
 |Outbound malware and spam anomaly investigation|Detect intra-org and outbound malware, phish, or spam originating from users in your organization|
 |Sender domain investigation|On-demand check of domain reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources|
 |Sender IP investigation| On-demand check of IP reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources|
-|URL clicks investigation| Investigate clicks from users protected by [Safe Links in Office 365 ATP](atp-safe-links.md) in your organization|
+|URL clicks investigation| Investigate clicks from users protected by [Safe Links in Microsoft Defender for Office 365](atp-safe-links.md) in your organization|
 |URL reputation investigation|On-demand check on URL reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources|
 |User activity investigation|Analyze user activity anomalies in [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|
 |User-reported emails indicators extraction|Extract indicators from the header, body, and content of [user-reported email](enable-the-report-message-add-in.md) for investigation|
@@ -270,4 +270,4 @@ You can:
 
 - [Review and approve pending actions](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 
-- [Learn about automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Learn about automated investigation and response in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

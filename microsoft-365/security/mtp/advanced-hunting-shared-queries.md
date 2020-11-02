@@ -1,5 +1,5 @@
 ---
-title: Use shared queries in Microsoft Threat Protection advanced hunting
+title: Use shared queries in Microsoft 365 Defender advanced hunting
 description: Start threat hunting immediately with predefined and shared queries. Share your queries to the public or to your organization.
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, schema, kusto, github repo, my queries, shared queries
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
-- m365-initiative-m365-defender
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
@@ -27,7 +27,7 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 

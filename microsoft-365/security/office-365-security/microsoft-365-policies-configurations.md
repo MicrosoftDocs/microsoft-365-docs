@@ -17,6 +17,7 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
+- m365solution-overview
 
 ---
 # Identity and device access configurations
@@ -113,7 +114,9 @@ Azure AD provides a full suite of identity management capabilities. We recommend
 | [Azure AD password protection](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Detect and block known weak passwords and their variants and additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in an Azure AD tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords. |  Microsoft 365 E3 or E5 |
 ||||
 
-![Components of identity and device access.](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+Here are the components of identity and device access, including Intune and Azure AD objects, settings, and subservices.
+
+![Components of identity and device access](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
 
 ### Microsoft Intune
 
@@ -185,6 +188,10 @@ Microsoft recommends that you do not create policy sets that apply to all apps b
 2. Configure the common identity and access Conditional Access policies.
 3. Configure Conditional Access policies for guest and external users.
 4. Configure Conditional Access policies for Microsoft 365 cloud apps such as Microsoft Teams, Exchange Online, and SharePoint.
+
+<!--
+After you have configured identity and device access, see the [Azure AD feature deployment guide](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for a phased checklist of additional features to consider and [Azure AD Identity Governance](https://docs.microsoft.com/azure/active-directory/governance/) to protect, monitor, and audit access.  
+--> 
 
 ## Next step
 

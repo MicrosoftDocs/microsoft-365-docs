@@ -1,6 +1,6 @@
 ---
-title: Access Microsoft Threat Protection APIs using on behalf of user
-description: Learn how to access Microsoft Threat Protection APIs using on behalf of user
+title: Access Microsoft 365 Defender APIs using on behalf of user
+description: Learn how to access Microsoft 365 Defender APIs using on behalf of user
 keywords: access, on behalf of user, api, application, user, access token, token, 
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,35 +21,35 @@ search.appverid:
 - MET150
 ---
 
-# Access Microsoft Threat Protection APIs on behalf of user
+# Access Microsoft 365 Defender APIs on behalf of user
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
-This page describes how to create an application to get programmatic access to Microsoft Threat Protection on behalf of a user.
+This page describes how to create an application to get programmatic access to Microsoft 365 Defender on behalf of a user.
 
-If you need programmatic access Microsoft Threat Protection without a user, refer to [Create an app to access Microsoft Threat Protection without a user](api-create-app-web.md).
+If you need programmatic access Microsoft 365 Defender without a user, refer to [Create an app to access Microsoft 365 Defender without a user](api-create-app-web.md).
 
-If you are not sure which access you need, read the [Access the Microsoft Threat Protection APIs](api-access.md).
+If you are not sure which access you need, read the [Access the Microsoft 365 Defender APIs](api-access.md).
 
-Microsoft Threat Protection exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Microsoft Threat Protection capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Microsoft 365 Defender capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 - Create an AAD application
 - Get an access token using this application
-- Use the token to access Microsoft Threat Protection API
+- Use the token to access Microsoft 365 Defender API
 
-This page explains how to create an AAD application, get an access token to Microsoft Threat Protection and validate the token.
+This page explains how to create an AAD application, get an access token to Microsoft 365 Defender and validate the token.
 
 >[!NOTE]
-> When accessing Microsoft Threat Protection API on behalf of a user, you will need the correct Application permission and user permission.
+> When accessing Microsoft 365 Defender API on behalf of a user, you will need the correct Application permission and user permission.
 
 
 >[!TIP]
@@ -71,10 +71,10 @@ This page explains how to create an AAD application, get an access token to Micr
    - **Application type:** Public client
    - **Redirect URI:** https://portal.azure.com
 
-4. To enable your app to access Microsoft Threat Protection and assign it permissions, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and then select **Microsoft Threat Protection**.
+4. To enable your app to access Microsoft 365 Defender and assign it permissions, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft 365 Defender**, and then select **Microsoft 365 Defender**.
 
     >[!NOTE]
-    > Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
+    > Microsoft 365 Defender does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
       ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
 
@@ -121,5 +121,5 @@ $response.AccessToken
 ```
 
 ## Related topics
-- [Access the Microsoft Threat Protection APIs](api-access.md)
-- [Access  Microsoft Threat Protection with application context](api-create-app-web.md)
+- [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Access  Microsoft 365 Defender with application context](api-create-app-web.md)

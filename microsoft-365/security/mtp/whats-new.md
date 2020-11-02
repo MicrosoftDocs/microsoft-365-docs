@@ -1,6 +1,6 @@
 ---
-title: What's new in Microsoft Threat Protection
-description: Lists the new features and functionality in Microsoft Threat Protection
+title: What's new in Microsoft 365 Defender
+description: Lists the new features and functionality in Microsoft 365 Defender
 keywords: what's new in microsoft threat protection, ga, generally available, capabilities, available, new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,16 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
-- m365-initiative-m365-defender
+- m365initiative-m365-defender 
 ms.topic: conceptual
 ---
 
-# What's new in Microsoft Threat Protection
+# What's new in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-The following features are generally available (GA) in the latest release of Microsoft Threat Protection.
+The following features are generally available (GA) in the latest release of Microsoft 365 Defender.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 ```http

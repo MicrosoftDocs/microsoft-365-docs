@@ -17,7 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
-- m365-initiative-m365-defender
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
@@ -27,7 +27,7 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 The `EmailPostDeliveryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about post-delivery actions taken on email messages processed by Microsoft 365. Use this reference to construct queries that return information from this table.
 

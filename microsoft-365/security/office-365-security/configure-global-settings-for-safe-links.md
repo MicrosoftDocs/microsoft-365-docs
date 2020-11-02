@@ -1,5 +1,5 @@
 ---
-title: "Configure global settings for Safe Links settings in Office 365 ATP"
+title: "Configure global settings for Safe Links settings in Defender for Office 365"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,32 +16,32 @@ search.appverid:
 ms.assetid:
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn how to view and configure global settings (the 'Block the following URLs' list and protection for Office 365 apps) for Safe Links in Office 365 Advanced Threat Protection (ATP)."
+description: "Admins can learn how to view and configure global settings (the 'Block the following URLs' list and protection for Office 365 apps) for Safe Links in Microsoft Defender for Office 365."
 ---
 
-# Configure global settings for Safe Links in Office 365 ATP
+# Configure global settings for Safe Links in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are a home user looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> This article is intended for business customers who have [Microsoft Defender for Office 365](office-365-atp.md). If you are a home user looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Safe Links is a feature in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) that provides URL scanning of inbound email messages in mail flow, and time of click verification of URLs and links in email messages and in other locations. For more information, see [Safe Links in Office 365 ATP](atp-safe-links.md).
+Safe Links is a feature in [Microsoft Defender for Office 365](office-365-atp.md) that provides URL scanning of inbound email messages in mail flow, and time of click verification of URLs and links in email messages and in other locations. For more information, see [Safe Links in Microsoft Defender for Office 365](atp-safe-links.md).
 
-You configure most Safe Links settings in Safe Links policies. For instructions, see [Set up Safe Links policies in Office 365 ATP](set-up-atp-safe-links-policies.md).
+You configure most Safe Links settings in Safe Links policies. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-atp-safe-links-policies.md).
 
 But, Safe Links also uses global settings that apply to all users who are included in any active Safe Links policies. These global settings area:
 
 - The **Block the following URLs** list. For more information, see ["Block the following URLs" list for Safe Links](atp-safe-links.md#block-the-following-urls-list-for-safe-links)
 - Safe Links protection for Office 365 apps. For more information, see [Safe Links settings for Office 365 apps](atp-safe-links.md#safe-links-settings-for-office-365-apps).
 
-You can configure the global Safe Links settings in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Office 365 ATP add-on subscriptions).
+You can configure the global Safe Links settings in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Microsoft Defender for Office 365 add-on subscriptions).
 
 ## What do you need to know before you begin?
 
-- The features provided by global settings for Safe Links are only applied to users who are included in active Safe Links policies. There is no built-in or default Safe Links policy, so you need to create at least one Safe Links policy in order for these global settings to be active. For instructions, see [Set up Safe Links policies in Office 365 ATP](set-up-atp-safe-links-policies.md).
+- The features provided by global settings for Safe Links are only applied to users who are included in active Safe Links policies. There is no built-in or default Safe Links policy, so you need to create at least one Safe Links policy in order for these global settings to be active. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-atp-safe-links-policies.md).
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **ATP Safe Links** page, use <https://protection.office.com/safelinksv2>.
+- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Safe Links** page, use <https://protection.office.com/safelinksv2>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -54,7 +54,7 @@ You can configure the global Safe Links settings in the Security & Compliance Ce
 
 - Allow up to 30 minutes for a new or updated policy to be applied.
 
-- [New features are continually being added to ATP](office-365-atp.md#new-features-in-office-365-atp). As new features are added, you may need to make adjustments to your existing Safe Links policies.
+- [New features are continually being added to Microsoft Defender for Office 365](office-365-atp.md#new-features-in-microsoft-defender-for-office-365). As new features are added, you may need to make adjustments to your existing Safe Links policies.
 
 ## Configure the "Block the following URLs" list in the Security & Compliance Center
 

@@ -2,8 +2,8 @@
 title: "Remove license from shared mailbox"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -30,7 +30,7 @@ description: "Remove license from a shared mailbox to assign it to another user.
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -68,8 +68,8 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 
  1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
-   > [!NOTE]
-   > You need to remove the license from the Active users page. You can't remove the license from the Shared mailbox page because licenses are user settings.
+    > [!NOTE]
+    > You need to remove the license from the Active users page. You can't remove the license from the Shared mailbox page because licenses are user settings.
 
 2. Select the shared mailbox, and then select **Edit** next to **Product licenses**.
 
@@ -87,8 +87,8 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 
  1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
-   > [!NOTE]
-   > You need to remove the license from the Active users page. You can't remove the license from the Shared mailbox page because licenses are user settings.
+    > [!NOTE]
+    > You need to remove the license from the Active users page. You can't remove the license from the Shared mailbox page because licenses are user settings.
 
 2. Select the shared mailbox, and then select **Edit** next to **Product licenses**.
 

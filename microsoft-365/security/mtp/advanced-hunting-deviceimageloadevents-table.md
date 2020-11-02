@@ -17,7 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
-- m365-initiative-m365-defender
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
@@ -27,7 +27,7 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 

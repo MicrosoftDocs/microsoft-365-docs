@@ -55,7 +55,7 @@ Microsoft 365 Apps for enterprise installs updates automatically and can take ad
 
 ### Office 2010
 
-For versions of Office in the Office 2010 release, the end of support is **October 13, 2020**. For more information, see [Office 2010 end of support roadmap](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
+For versions of Office in the Office 2010 release, support ended on **October 13, 2020**. For more information, see [Office 2010 end of support roadmap](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
 
 Rather than upgrading your computers running Office 2010 with Office 2013 or Office 2016, both of which must be manually updated, consider:
 
@@ -84,7 +84,7 @@ In many organizations both large and small, you might be using a combination of 
 - Should be updated with the latest security updates and support fixes. In some cases, these updates are released monthly.
 - Are not optimally enabled to leverage Microsoft’s cloud technologies and help you digitally transform your business.
 - Do not include new productivity applications, such as Microsoft Teams.
-- Do not include the latest security features, such as Exchange Advanced Threat Protection.
+- Do not include the latest security features, such as Exchange and Defender for Office 365.
 
 Microsoft 365 for enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are continually updated for security without involving IT, saving you the time it takes to maintain and update on-premises servers. These services also have new features enhancements that are not present in Office server software.
 
@@ -112,7 +112,7 @@ Rather than upgrading your server products in the Office 2007 release with serve
 
 ### Office Server 2010
 
-The end of support for [Exchange Server 2010](exchange-2010-end-of-support.md) is **October 13, 2020**.
+Support for [Exchange Server 2010](exchange-2010-end-of-support.md) ended on **October 13, 2020**.
 
 The end of support for [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) is **April 13, 2021**.
 
@@ -156,13 +156,11 @@ You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-do
 
 ## Transition your entire organization
 
-To get a better picture of how to move your entire organization to the products and services in Microsoft 365 for enterprise, see the [transition poster](../downloads/transition-org-to-m365.pdf).
+To get a better picture of how to move your entire organization to the products and services in Microsoft 365 for enterprise, download and view the [transition poster](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf).
 
-[![Image for the Transition to Microsoft 365 poster](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![Image for the Transition to Microsoft 365 poster](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 for enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
-
-You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 ## How Microsoft does Microsoft 365 for enterprise
 

@@ -71,7 +71,7 @@ For example, an improvement action states you get 10 points by protecting all yo
 
 ### Products included in Secure Score
 
-Currently there are recommendations for Microsoft 365 (including Exchange Online), Azure Active Directory, Microsoft Defender ATP, Azure ATP, and Cloud App Security. Recommendations for other security products are coming soon. The recommendations won't cover all the attack surfaces associated with each product, but they're a good baseline. You can also mark the improvement actions as covered by a third party or alternate mitigation.
+Currently there are recommendations for Microsoft 365 (including Exchange Online), Azure Active Directory, Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Cloud App Security. Recommendations for other security products are coming soon. The recommendations won't cover all the attack surfaces associated with each product, but they're a good baseline. You can also mark the improvement actions as covered by a third party or alternate mitigation.
 
 ### Security defaults
 

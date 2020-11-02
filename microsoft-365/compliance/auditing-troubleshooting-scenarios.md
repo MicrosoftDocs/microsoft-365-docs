@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
@@ -17,7 +17,7 @@ search.appverid:
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn how to use the Office 365 audit log search tool to help troubleshoot common support issues for email accounts."
+description: "Learn how to use the Microsoft 365 audit log search tool to help troubleshoot common support issues for email accounts."
 ---
 
 # Search the audit log to investigate common support issues
@@ -29,6 +29,8 @@ This article describes how to use the audit log search tool to help you investig
 - Determine if a user deleted email items in their mailbox
 - Determine if a user created an inbox rule
 - Investigate why there was a successful login by a user outside your organization
+- Search for mailbox activities performed by users with non-E5 licenses
+- Search for mailbox activities performed by delegate users
 
 ## Using the audit log search tool
 
@@ -224,7 +226,6 @@ Here are two examples scenarios that would result in a successful **User logged 
 
   - A user with a Work or School account in an organization (such as pilarp@fabrikam.onmicrosoft.com) has tried to access a SharePoint site in contoso.onmicrosoft.com and there isn't a corresponding guest user account for pilarp@fabrikam.com in contoso.onmicrosoft.com.
 
-
 ### Tips for investigating successful logins resulting from pass-through authentication
 
 - Search the audit log for activities performed by the external user identified in the **User logged in** audit record. Type the UPN for the external user in the **Users** box and use a date range if relevant to your scenario. For example, you can create a search using the following search criteria:
@@ -236,3 +237,54 @@ Here are two examples scenarios that would result in a successful **User logged 
 - Search for SharePoint sharing activities that would indicate a file was shared with the external user identified by a **User logged in** audit record. For more information, see [Use sharing auditing in the audit log](use-sharing-auditing.md).
 
 - Export the audit log search results that contain records relevant to your investigation so that you can use Excel to search for other activities related to the external user. For more information, see  [Export, configure, and view audit log records](export-view-audit-log-records.md).
+
+## Search for mailbox activities performed by users with non-E5 licenses
+
+Even when [mailbox auditing on by default](enable-mailbox-auditing.md) is turned on for your organization, you might notice that mailbox audit events for some users aren't found in audit log searches by using the compliance center, the **Search-UnifiedAuditLog** cmdlet, or the Office 365 Management Activity API. The reason for this is that mailbox audit events will be returned only for users with E5 licenses when you one of the previous methods to search the unified audit log.
+
+To retrieve mailbox audit log records for non-E5 users, you can perform one of the following workarounds:
+
+- Manually enable mailbox auditing on individual mailboxes (run the `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` command in Exchange Online PowerShell). After you do this, search for mailbox audit activities by using the compliance center, the **Search-UnifiedAuditLog** cmdlet, or the Office 365 Management Activity API.
+  
+  > [!NOTE]
+  > If mailbox auditing already appears to be enabled on the mailbox, but your searches return no results, change the value of the _AuditEnabled_ parameter to `$false` and then back to `$true`.
+  
+- Use the following cmdlets in Exchange Online PowerShell:
+
+  - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) to search the mailbox audit log for specific users.
+
+  - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxauditlogsearch) to search the mailbox audit log for specific users and to have the results sent via email to specified recipients.
+
+## Search for mailbox activities performed in a specific mailbox (including shared mailboxes)
+
+When you use the **Users** dropdown list in the audit log search tool in the compliance center or the **Search-UnifiedAuditLog -UserIds** command in Exchange Online PowerShell, you can search for activities performed by a specific user. For mailbox audit activities, this type of search will search for activities performed by the specified user. It doesn't guarantee that all activities performed in the same mailbox are returned in the search results. For example, an audit log search won't return audit records for activities performed by a delegate user because searching for mailbox activities performed by a specific user will not return activities performed by a delegate user who's been assigned permissions to access another user's mailbox. (A delegate user is someone who's been assigned the SendAs, SendOnBehalf, or FullAccess mailbox permission to another user's mailbox.)
+
+Also, using the **User** dropdown list in the audit log search tool or the **Search-UnifiedAuditLog -UserIds** will not return results for activities performed in a shared mailbox.
+
+To search for the activities performed in a specific mailbox or to search for activities performed in a shared mailbox, use the following syntax when running the **Search-UnifiedAuditLog** cmdlet:
+
+```powershell
+Search-UnifiedAuditLog  -StartDate <date> -EndDate <date> -FreeText (Get-Mailbox <mailbox identity).ExchangeGuid
+```
+
+For example, the following command returns audit records for activities performed in the Contoso Compliance Team shared mailbox between August 2020 and October 2020:
+
+```powershell
+Search-UnifiedAuditLog  -StartDate 08/01/2020 -EndDate 10/31/2020 -FreeText (Get-Mailbox complianceteam@contoso.onmicrosoft.com).ExchangeGuid
+```
+
+Alternatively, you can use the **Search-MailboxAuditLog** cmdlet to search for audit records for activity performed in a specific mailbox. This includes searching for activities performed in a shared mailbox.
+
+The following example returns mailbox audit log records for activities performed in the Contoso Compliance Team shared mailbox:
+
+```powershell
+Search-MailboxAuditLog -Identity complianceteam@contoso.onmicrosoft.com -StartDate 08/01/2020 -EndDate 10/31/2020 -ShowDetails
+```
+
+The following example returns mailbox audit log records for activities performed in the specified mailbox by delegate users:
+
+```powershell
+Search-MailboxAuditLog -Identity <mailbox identity> -StartDate <date> -EndDate <date> -LogonTypes Delegate -ShowDetails
+```
+
+You can also use the **New-MailboxAuditLogSearch** cmdlet to search the audit log for a specific mailbox and to have the results sent via email to specified recipients.
