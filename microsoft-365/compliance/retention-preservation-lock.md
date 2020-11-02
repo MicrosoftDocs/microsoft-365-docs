@@ -1,5 +1,5 @@
 ---
-title: "Configure retention for regulatory requirements"
+title: "Use Preservation Lock to restrict changes to retention policies and retention label policies"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,27 +14,14 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "Configure your retention policies and retention labels for regulatory requirements and use the Cohasset assessment to help you comply with regulatory standards for retaining your data."
+description: "Use Preservation Lock with retention policies and retention label policies to help you meet regulatory requirements or safeguard against rogue administrators."
 ---
 
-# Configure information governance and records management for regulatory requirements
+# Use Preservation Lock to restrict changes to retention policies and retention label policies
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-If your organization needs to comply with regulatory standards for retaining and disposing of data, the policies for retention and retention labels that you can configure in Microsoft 365 are sufficient for most organizations.
-
-However, some organizations in highly regulated industries are subject to more stringent regulatory requirements, such as the WORM (write once, read many) requirement, and the requirement to store electronic communications using a storage solution in which a record:
-
-- Must be retained for a required retention period that cannot be shortened, only increased.
-- Cannot be overwritten, erased, or altered during the required retention period.
-
-Another example is for financial institutions such as banks or broker dealers that are subject to Rule 17a-4 issued by the Securities and Exchange Commission (SEC). Rule 17a-4 has specific requirements for electronic data storage, including many aspects of record management, such as the duration, format, quality, availability, and accountability of records retention.
-
-Use the following features and resources to help your organization meet its regulatory requirements.
-
-## Retention policies and label policies: Use Preservation Lock
-
-Preservation Lock locks a retention policy or retention label policy so that no one—including a global admin—can turn off the policy, delete the policy, or make it less restrictive.
+Preservation Lock locks a retention policy or retention label policy so that no one—including a global admin—can turn off the policy, delete the policy, or make it less restrictive. This configuration helps guard against a rogue administrator.
 
 When a policy for retention is locked:
 
@@ -47,11 +34,11 @@ In summary, a locked policy for retention can be increased or extended, but it c
 > [!IMPORTANT]
 > Before you lock a retention policy or retention label policy, it's critical that you understand the impact and confirm whether it's required for your organization to meet regulatory requirements. Administrators won't be able to disable or delete these policies after the preservation lock is applied.
 
-For instructions, see the next section.
+Configure Preservation Lock after you've created a [retention policy](create-retention-policies.md), or a retention label policy that you [publish](create-apply-retention-labels.md) or [auto-apply](apply-retention-labels-automatically.md). 
 
-### How to lock a retention policy or retention label policy
+## How to lock a retention policy or retention label policy
 
-You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) to comply with regulatory requirements. Because administrators can't disable or delete a policy for retention after a preservation lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.
+You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-restrict-changes-to-policies), for example, to comply with regulatory requirements. Because administrators can't disable or delete a policy for retention after a preservation lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.
 
 All policies for retention and with any configuration support Preservation Lock. However, when you use the PowerShell commands that follow, you'll notice that the **Workload** parameter always displays **Exchange, SharePoint, OneDriveForBusines, Skype, ModernGroup** rather than reflect the actual workloads configured in the policy. This is a display issue only.
 
@@ -84,22 +71,3 @@ Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 You should see **RestrictiveRetention** is set to **True**. For example:
 
 ![Locked policy with all parameters shown in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
-
-## Retention labels: Use regulatory records
-
-When you configure retention labels, you can configure the label to mark the content as a regulatory record. When the label with this configuration is applied to items, they can't be edited or deleted, and the label can't be changed or removed. In addition, admins won't be able to modify or delete this label after it's created. They'll only be able to increase the retention period.
-
-For additional security, you can apply Preservation Lock to the retention label policy that publishes regulatory record labels. When you do this, no administrator can remove these labels from the selected locations, only add locations.
-
-For more information about regulatory records, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
-
-For instructions to configure retention labels for regulatory records, see [Declare records by using retention labels](declare-records.md).
-
-## Resources for specific regulatory requirements
-
-This section will be updated as new guidance becomes available from the [Data Protection Resources, FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) page of the Service Trust Portal.
-
-### Cohasset assessment for Rule 17a-4
-
-To help you comply with Rule 17a-4 issued by the Securities and Exchange Commission (SEC), you can download an assessment that's been produced in partnership with Cohasset Associates. 
- 
