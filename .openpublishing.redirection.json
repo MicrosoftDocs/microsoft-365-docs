@@ -2509,6 +2509,11 @@
       "source_path": "microsoft-365/enterprise/ebcm-legal-disclaimer.md",
       "redirect_url": "https://docs.microsoft.com/compliance/assurance/assurance-ebcm-legal-disclaimer",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-discovery-protection-reporting-in-Office365-dev-test-environment.md",
+      "redirect_url": "https://docs.microsoft.com/compliance/regulatory/gdpr-discovery-protection-reporting-in-Office365-dev-test-environment",
+      "redirect_document_id": false
     }
   ]
 }
