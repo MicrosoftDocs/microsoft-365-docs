@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Synchronize domain controlled users with Microsoft 365 for business."
+description: "Synchronize domain-controlled users with Microsoft 365 for business."
 ---
 
 # Synchronize domain users to Microsoft 365
@@ -37,13 +37,13 @@ Before you synchronize your users and computers from the local Active Directory 
    
    - If the Active Directory domain ends in a non-routable suffix like *.local* or *.lan*, instead of an internet routable suffix such as *.com* or *.org*, adjust the UPN suffix of the local user accounts first as described in [Prepare a non-routable domain for directory synchronization](https://docs.microsoft.com/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
 
-The **Run IdFix** in step four (4) below, will also make sure your on-premises Active Directory is ready for dir sync.
+The **Run IdFix** in step four (4) below, will also make sure your on-premises Active Directory is ready for directory synchronization.
 
 ## 2. Install and configure Azure AD Connect
 
 To synchronize your users, groups, and contacts from the local Active Directory into Azure Active Directory, install Azure Active Directory Connect and set up directory synchronization. 
 
- 1. In the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> select **Setup** in the left nav.
+ 1. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), select **Setup** in the left nav.
 
  2. Under **Sign-in and security**, choose **View**  under **Sync users from your org's directory**.
 
@@ -61,4 +61,4 @@ As you configure your options for Azure AD Connect, we recommend that you enable
 > [!NOTE]
 > There are some additional steps for password writeback beyond the check box in Azure AD Connect. For more information, see [How-to: configure password writeback](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). 
 
-If you want to manage domain-joined Windows 10 devices also, see [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business Premium](manage-windows-devices.md) to set up a hybrid Azure AD Join. 
+If you also want to manage domain-joined Windows 10 devices, see [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business Premium](manage-windows-devices.md) to set up a hybrid Azure AD Join. 
