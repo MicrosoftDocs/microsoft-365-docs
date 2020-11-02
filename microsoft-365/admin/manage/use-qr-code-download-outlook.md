@@ -34,7 +34,7 @@ You need to be a global administrator to initiate sign-out.
 ## Use the Microsoft admin center
 
 > [!NOTE]
-> This setting will be on by default.
+> This setting is on by default.
 
 1. In the Microsoft 365 admin center, go to **Settings** -> **Org Settings**.
 2. On the Org Settings page, select **Security & privacy**.
