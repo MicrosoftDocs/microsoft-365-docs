@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: "Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Office 365 Advanced Threat Protection (Office 365 ATP) can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams."
+description: "Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams."
 ---
 
 # Manage quarantined messages and files as an admin in EOP
@@ -29,7 +29,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 Admins can view, release, and delete all types of quarantined messages for all users. Only admins can manage messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). Admins can also report false positives to Microsoft.
 
-Admins in organizations with Office 365 Advance Threat Protection (Office 365 ATP) can also view, download, and delete quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
+Admins in organizations with Microsoft Defender for Office 365 can also view, download, and delete quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 
 You view and manage quarantined messages in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
@@ -87,7 +87,7 @@ You view and manage quarantined messages in the Security & Compliance Center or 
    - **Quarantine reason**:
      - **Policy**: The message matched the conditions of a mail flow rule (also known as a transport rule).
      - **Bulk**
-     - **Phish**: The spam filter verdict was **Phishing email** or anti-phishing protection quarantined the message ([spoof settings](set-up-anti-phishing-policies.md#spoof-settings) or [impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)).
+     - **Phish**: The spam filter verdict was **Phishing email** or anti-phishing protection quarantined the message ([spoof settings](set-up-anti-phishing-policies.md#spoof-settings) or [impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **Malware**
      - **Spam**
      - **High Confidence Phish**
@@ -213,12 +213,12 @@ When you select multiple quarantined messages in the list (up to 100), the **Bul
 
 When you're finished, click **Close**.
 
-## ATP Only: Use the Security & Compliance Center to manage quarantined files
+## Microsoft Defender for Office 365 Only: Use the Security & Compliance Center to manage quarantined files
 
 > [!NOTE]
-> The procedures for quarantined files in this section are available only to ATP Plan 1 and Plan 2 subscribers.
+> The procedures for quarantined files in this section are available only to Microsoft Defender for Office 365 Plan 1 and Plan 2 subscribers.
 
-In organizations with ATP, admins can manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams. To enable protection for these files, see [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+In organizations with Defender for Office 365, admins can manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams. To enable protection for these files, see [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
 ### View quarantined files
 
@@ -267,7 +267,7 @@ When you select a file in the list, the following file details appear in the **D
 - **File URL**: URL that defines the location of the file (for example, in SharePoint Online).
 - **Malicious content detected on** The date/time the file was quarantined.
 - **Expires**: The date when the file will be deleted from quarantine.
-- **Detected By**: ATP (Advanced Threat Protection) or Microsoft's anti-malware engine.
+- **Detected By**: Defender for Office 365 or Microsoft's anti-malware engine.
 - **Released?**
 - **Malware Name**
 - **Document ID**: A unique identifier for the document.
