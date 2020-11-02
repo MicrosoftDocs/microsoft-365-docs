@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: ""
+description: "learn about dlp policy conditions and exceptions"
 ---
 
 # DLP policy conditions and exceptions (preview)
