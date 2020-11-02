@@ -18,7 +18,7 @@ ms.custom:
 description: "Learn about how Microsoft 365 eDiscovery tools handle encrypted documents attached to email messages."
 ---
 
-## Decryption in Microsoft 365 eDiscovery tools
+# Decryption in Microsoft 365 eDiscovery tools
 
 Organizations use various types of encryption technology to protect sensitive content within their organization and ensure that only the right people have access to that content. Organizations use various types of encryption, both Microsoft encryption technologies and third-party technologies to meet their security requirements and protect their sensitive information.
 
@@ -28,7 +28,7 @@ To make it easier to manage encrypted content in the eDiscovery workflow, Micros
 
 ## Supported encryption technologies
 
-Microsoft eDiscovery tools support items encrypted with Microsoft encryption technologies. These technologies include Office Message Encryption, Microsoft Information Protection (sensitivity labels) and Azure Rights Management. For more information about Microsoft encryption technologies, see [Encryption](encryption.md). Content encrypted by third-party encryption technologies is not supported. This includes no support when previewing or exporting content encrypted with non-Microsoft technologies.
+Microsoft eDiscovery tools support items encrypted with Microsoft encryption technologies. These technologies include Office Message Encryption, Microsoft Information Protection (sensitivity labels), and Azure Rights Management. For more information about Microsoft encryption technologies, see [Encryption](encryption.md). Content encrypted by third-party encryption technologies is not supported. This includes no support when previewing or exporting content encrypted with non-Microsoft technologies.
 
 ## eDiscovery activities that support encrypted items
 
@@ -41,15 +41,6 @@ The following table identifies the tasks performed in Microsoft 365 eDiscovery t
 |Review encrypted files in a review set    |N/A      |N/A        | Yes        |
 |Export encrypted files    |Yes       |Yes  |Yes    |
 
-
 ## Requirements for decryption in eDiscovery
 
-
-
-Soon (~Dec 2020), eDiscovery managers with the decrypt role enabled will also be able to search, collect, review and export content that has been encrypted with Microsoft encryption technology and stored in a SharePoint or OneDrive for Business location.  
-
-These updates will improve the experience related to content that has been encrypted with Microsoft encryption technologies including Office Message Encryption, Microsoft Information Protection and Rights Management. Learn more about Microsoft encryption technology and options here. There are a variety of considerations to incorporate when deciding what type of encryption to use in your organization, learn more about email encryption and encryption for documents in SharePoint online and OneDrive for Business. 
-
-These improvements include the functionality available in content search, core eDiscovery and Advanced eDiscovery, and enable an admin with the decrypt role to collect, review and export content that was encrypted with MSFT encryption technology. Previously this content was not fully indexed for search and would show as an error during eDiscovery, and require manual remediation by the customer sometimes including downloading the items that have been encrypted, decrypting locally, and then re-uploaded into the case.  
-
-Get started with the updated experience learning about eDiscovery roles and permissions, the various encryption options, and how to get started with Advanced eDiscovery.  
+You have to be assigned the RMS Decrypt role to preview, review, and export files encrypted with Microsoft encryption technologies. This role is assigned to the eDiscovery Managers role group by default in the Office 365 Security & Compliance Center. For more information about the RMS Decrypt role, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md#rms-decrypt).
