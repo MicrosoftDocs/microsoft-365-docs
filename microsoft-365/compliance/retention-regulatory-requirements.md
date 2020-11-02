@@ -1,5 +1,5 @@
 ---
-title: "Configure retention for regulatory requirements"
+title: "Resources to help you meet regulatory requirements for information governance and records management"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,14 +14,14 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "Configure your retention policies and retention labels to help you comply with regulatory standards for records management."
+description: "Resources to help you meet regulatory requirements for information governance and records management."
 ---
 
-# Configure policies and records management for regulatory requirements
+# Resources to help you meet regulatory requirements for information governance and records management
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Use the resources on this page to help you meet specific regulatory requirements for information governance and your records management solution in Microsoft 365.
+Use the resources on this page to help you meet specific regulatory requirements for information governance and records management in Microsoft 365.
 
 This page will be updated as new guidance from third-parties becomes available on the [Data Protection Resources, FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) page of the Service Trust Portal.
 
