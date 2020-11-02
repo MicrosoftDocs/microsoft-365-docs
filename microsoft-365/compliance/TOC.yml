@@ -299,8 +299,6 @@
           href: apply-retention-labels-automatically.md
         - name: Lock policies to restrict changes
           href: retention-preservation-lock.md
-        - name: Resources for regulatory requirements
-          href: retention-regulatory-requirements.md
         - name: Create retention labels with PowerShell
           href: bulk-create-publish-labels-using-powershell.md
         - name: Start retention when an event occurs
@@ -429,6 +427,8 @@
           href: declare-records.md
         - name: Use record versioning
           href: record-versioning.md
+        - name: Resources for regulatory requirements
+          href: retention-regulatory-requirements.md
 - name: Manage eDiscovery
   items:
     - name: eDiscovery in Microsoft 365
