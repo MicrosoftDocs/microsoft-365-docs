@@ -310,7 +310,7 @@
                   href: ./office-365-security/quarantine-email-messages.md
                 - name: Auditing reports in standalone EOP
                   href: ./office-365-security/auditing-reports-in-eop.md
-            - name: Office 365 Advanced Threat Protection
+            - name: Defender for Office 365
               href: ./office-365-security/office-365-atp.md
             - name: What's new in Defender for Office 365
               href: office-365-security/whats-new-in-office-365-atp.md
