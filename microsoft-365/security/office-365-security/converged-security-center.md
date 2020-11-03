@@ -19,7 +19,7 @@ description: "Manage security for Office 365 and endpoint devices in the same pl
 
 # The Microsoft Security center
 
-The new [Microsoft 365 security](https://security.microsoft.com) center combines security capabilities that protect, detect, investigate, and respond to email, collaboration, *and* device threats. It converges features in Microsoft Defender for Endpoint (MSDE), with Microsoft Defender for Office 365 (MSDO) features.
+The new [Microsoft 365 security](https://security.microsoft.com) center combines security capabilities that protect, detect, investigate, and respond to email, collaboration, *and* device threats. It brings together features in Microsoft Defender for Endpoint (MSDE), with Microsoft Defender for Office 365 (MSDO) features.
 
 The left navigation, or quick launch bar, will look familiar, but there are some new features aimed at working with greater efficiency.
 
