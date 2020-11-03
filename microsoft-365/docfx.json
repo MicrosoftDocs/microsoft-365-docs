@@ -15,6 +15,23 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
+          "ThirdPartyNotices",
+          "contentunderstanding/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
       }
