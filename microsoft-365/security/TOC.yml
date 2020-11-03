@@ -410,6 +410,8 @@
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
             - name: User submissions policies
               href: ./office-365-security/user-submission.md
+            - name: User tags in Office 365 ATP
+              href: ./office-365-security/user-tags.md
             - name: Turn on ATP for SharePoint, OneDrive, and Microsoft Teams
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: Use DKIM to validate outbound email
@@ -487,6 +489,8 @@
           items: 
             - name: Use Threat Trackers
               href: ./office-365-security/threat-trackers.md
+            - name: View alerts
+              href: ../compliance/alert-policies.md
             - name: Smart reports and insights in the Security & Compliance Center
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Enable the Report Message add-in

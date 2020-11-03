@@ -1,6 +1,6 @@
 ---
-title: Incident resource type in Microsoft Threat Protection API
-description: Learn about the methods and properties of the Incident resource type in Microsoft Threat Protection
+title: Incident resource type in Microsoft 365 Defender API
+description: Learn about the methods and properties of the Incident resource type in Microsoft 365 Defender
 keywords: incident, incidents, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -27,7 +27,7 @@ search.appverid:
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
