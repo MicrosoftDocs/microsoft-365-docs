@@ -2,7 +2,7 @@
 title: "Fix possible mail loop insight"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
