@@ -38,11 +38,11 @@ Investigate the alerts that affect your network, understand what they mean, and 
 
 ## Investigate an incident
 
-1. Select an incident from the incident queue. <BR> This opens a side panel and gives a preview of important information such as status, severity, categories, and the impacted entities.
+1. Select an incident from the incident queue. <BR> A side panel opens and gives a preview of important information such as status, severity, categories, and the impacted entities.
 
     ![Image of incident side panel](../../media/incident-side-panel.png)
 
-2. Select **Open incident page**. <BR> This opens the incident page where you'll find more information incident details, comments and actions, tabs (overview, alerts, devices, users, investigations, evidence).
+2. Select **Open incident page**. <BR> This opens the incident page where you'll find more information incident details, comments, and actions, tabs (overview, alerts, devices, users, investigations, evidence).
 
 3. Review the alerts, devices, users, other entities involved in the incident.
 
@@ -52,7 +52,7 @@ The overview page gives you a snapshot glance into the top things to notice abou
 
 ![Image of the incidents overview page](../../media/incidents-overview.png)
 
-The attack categories give you visual and numeric view of how advanced the attack has progressed against the kill chain. As with other Microsoft security products, Microsoft 365 Defender is aligned to the [MITRE ATT&CK&trade;](https://attack.mitre.org/) framework.
+The attack categories give you a visual and numeric view of how advanced the attack has progressed against the kill chain. As with other Microsoft security products, Microsoft 365 Defender is aligned to the [MITRE ATT&CK&trade;](https://attack.mitre.org/) framework.
 
 The scope section gives you a list of top impacted assets that are part of this incident. If there is specific information regarding this asset, such as risk level, investigation priority as well as any tagging on the assets this will also surface in this section.
 
@@ -68,7 +68,7 @@ You can view all the alerts related to the incident and other information about 
 
 ![Image of the incident alerts page](../../media/incident-alerts.png)
 
-By default, the alerts are ordered chronologically, to allow you to first view how the attack played out over time. Clicking on each alert will lead you to the relevant alert page where you can conduct an in depth investigation of that alert.
+By default, the alerts are ordered chronologically, to allow you to first view how the attack played out over time. Clicking on each alert will lead you to the relevant alert page where you can conduct an in-depth investigation of that alert.
 
 ## Devices
 
@@ -90,7 +90,7 @@ Clicking the username navigates you to the user's Cloud App Security page where 
 
 ## Mailboxes
 
-Investigate mailboxes that's been identified to be part of, or related to an incident. To do further investigative work, selecting the mail related alert will open Microsoft Defender for Office 365 where you can take remediation actions.
+Investigate mailboxes that's been identified to be part of, or related to an incident. To do further investigative work, selecting the mail-related alert will open Microsoft Defender for Office 365 where you can take remediation actions.
 
 ![Image of mailbox tab of an incident](../../media/incident-mailboxes.png)
 
@@ -100,11 +100,11 @@ Select **Investigations** to see all the automated investigations triggered by a
 
 ![Image of investigations tab of an incident](../../media/incident-investigations.png)
 
-Select an investigation to navigate to the Investigation details page to get full information on the investigation and remediation status. If there are any actions pending for approval as part of the investigation they will appear in the Pending actions tab. Take action as part of incident remediation.
+Select an investigation to navigate to the Investigation details page to get full information on the investigation and remediation status. If there are any actions pending for approval as part of the investigation, they will appear in the Pending actions tab. Take action as part of incident remediation.
 
 ## Evidence
 
-Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with auto-response and information about the important files, processes, services, emails, and more. This helps quickly detect and block potential threats in the incident.
+Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with autoresponse and information about the important files, processes, services, emails, and more. This helps quickly detect and block potential threats in the incident.
 
 ![Image of evidence tab of an incident](../../media/incident-evidence.png)
 
