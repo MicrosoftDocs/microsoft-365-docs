@@ -57,7 +57,7 @@ To configure secure collabration, you use these Microsoft 365 capabilities and f
 
 | Product or component | Capability or feature | Licensing |
 |:-------|:-----|:-------|
-| Office 365 Advanced Threat Protection	| ATP Safe Attachments for SPO, OneDrive and Teams; ATP Safe Documents; ATP Safe Links for Teams	| Microsoft 365 E1, E3 and E5 |
+| Microsoft Defender for Office 365	| Safe Attachments for SPO, OneDrive and Teams; Safe Documents; Safe Links for Teams	| Microsoft 365 E1, E3 and E5 |
 | SharePoint	| Site and file sharing policies, Site sharing permissions, Sharing links, Access requests, Site guest sharing settings	| Microsoft 365 E1, E3 and E5 |
 | Microsoft Teams	| Guest access, private teams, private channels	| Microsoft 365 E1, E3 and E5 |
 | Microsoft 365 Compliance	| Sensitivity labels	| Microsoft 365 E3 and E5 |

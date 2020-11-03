@@ -2,7 +2,7 @@
 title: "Report spam, non-spam, and phishing messages to Microsoft"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date:

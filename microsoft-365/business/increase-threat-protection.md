@@ -21,7 +21,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Set up Office 365 Advanced Threat Protection and safeguard sensitive data against phishing, malware, and other threats."
+description: "Set up Microsoft Defender for Office 365 and safeguard sensitive data against phishing, malware, and other threats."
 ---
 # Increase threat protection
 
@@ -118,21 +118,21 @@ To create a mail transport rule, either watch [this short video](https://support
 
 ## Protect your email from phishing attacks
 
-If you've configured one or more custom domains for your Office 365 or Microsoft 365 environment, you can configure targeted anti-phishing protection. ATP anti-phishing protection, part of Office 365 Advanced Threat Protection, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you don't need to do this.
+If you've configured one or more custom domains for your Office 365 or Microsoft 365 environment, you can configure targeted anti-phishing protection. Anti-phishing protection, part of Microsoft Defender for Office 365, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you don't need to do this.
 
 We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain.
 
-To create an ATP anti-phishing policy, watch  [this short training video](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c), or complete the following steps:
+To create an anti-phishing policy in Microsoft Defender for Office 365, watch  [this short training video](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c), or complete the following steps:
 
 1. Go to [https://protection.office.com](https://protection.office.com).
 
 2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
 
-3. On the **Policy** page, choose **ATP anti-phishing**.
+3. On the **Policy** page, choose **Anti-phishing**.
 
 4. On the **Anti-phishing** page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
 
-5. Specify the name, description, and settings for your policy as recommended in the following table. For more details, see [Learn about ATP anti-phishing policy options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
+5. Specify the name, description, and settings for your policy as recommended in the following table. For more details, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
 
 6. After you've reviewed your settings, choose **Create this policy** or **Save**, as appropriate.
 
@@ -147,17 +147,17 @@ To create an ATP anti-phishing policy, watch  [this short training video](https:
 |Add trusted senders and domains|Here you can add your own domain, or any other trusted domains.|
 |Applied to|Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, *contoso.<span><span>com*, in the list, and then select **Add**. Select **Done**.|
 
-## Protect against malicious attachments and files with ATP Safe Attachments
+## Protect against malicious attachments and files with Safe Attachments
 
-People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Office 365 Advanced Threat Protection includes ATP Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
+People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
 
-To create an ATP safe attachment policy, either watch [this short video](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), or complete the following steps:
+To create an Safe Attachment policy, either watch [this short video](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), or complete the following steps:
 
 1. Go to [https://protection.office.com](https://protection.office.com), and sign in with your admin account.
 
 2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
 
-3. On the Policy page, choose **ATP safe attachments**.
+3. On the Policy page, choose **Safe Attachments**.
 
 4. On the Safe attachments page, apply this protection broadly by selecting the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** check box.
 
@@ -175,11 +175,11 @@ To create an ATP safe attachment policy, either watch [this short video](https:/
 |Redirect attachment on detection|Enable redirection (select this box)          Enter the admin account or a mailbox setup for quarantine.          Apply the above selection if malware scanning for attachments times out or error occurs (select this box).|
 |Applied to|The recipient domain is . . . select your domain.|
 
-For more information, see [Set up Office 365 ATP anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
+For more information, see [Set up anti-phishing policies in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
 
-## Protect against phishing attacks with ATP Safe Links
+## Protect against phishing attacks with Safe Links
 
-Hackers sometimes hide malicious websites in links in email or other files. Office 365 ATP Safe Links (ATP Safe Links), part of Office 365 Advanced Threat Protection, can help protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents. Protection is defined through ATP Safe Links policies.
+Hackers sometimes hide malicious websites in links in email or other files. Safe Links, part of Microsoft Defender for Office 365, can help protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents. Protection is defined through Safe Links policies.
 
 We recommend that you do the following:
 
@@ -187,13 +187,13 @@ We recommend that you do the following:
 
 - Add a new policy targeted to all recipients in your domain.
 
-To set up ATP Safe Links, watch [this short training video](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), or complete the following steps:
+To set up Safe Links, watch [this short training video](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), or complete the following steps:
 
 1. Go to [https://protection.office.com](https://protection.office.com), and sign in with your admin account.
 
 2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
 
-3. On the Policy page, choose **ATP Safe Links**.
+3. On the Policy page, choose **Safe Links**.
 
 To modify the default policy:
 
@@ -218,7 +218,7 @@ To create a new policy targeted to all recipients in your domain:
 |Use Safe Attachments to scan downloadable content|Select this box.|
 |Applied to|The recipient domain is . . . select your domain.|
 
-For more information, see [Office 365 ATP safe links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links).
+For more information, see [Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links).
 
 ## Go to Intune admin center
 
