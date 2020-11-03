@@ -66,7 +66,7 @@ Dynamics 365 U.S. Government was granted a FedRAMP Agency ATO at the High Impact
 - [Office 365 and Office 365 U.S. Governmen](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 U.S. Government Defense
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
-- Microsoft Defender ATP
+- Microsoft Defender for Endpoint
 
 > [!NOTE]
 > The use of Azure Active Directory within Azure Government requires the use of components that are deployed outside of Azure Government on the Azure public cloud.

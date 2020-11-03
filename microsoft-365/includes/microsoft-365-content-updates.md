@@ -1,10 +1,3 @@
-<!-- This file is generated automatically each week. Changes made to this file will be overwritten.-->
-
-
-
-## Week of October 26, 2020
-
-
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 10/26/2020 | [Set up Customer Key](/microsoft-365/compliance/customer-key-set-up?view=o365-21vianet) | modified |
