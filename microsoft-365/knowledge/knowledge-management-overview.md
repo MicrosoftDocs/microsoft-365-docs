@@ -42,7 +42,7 @@ When a topic is identified, a **topic page** is created for it that contains inf
 
 
 ## Topic discovery
-When a topic is mentioned in content on SharePoint news and pages, you'll see it highlighted. Open the topic summary from the highlight. Open the topic details from the title of the summary. (msg for Efren: not sure if I sould use discovery for this; we use discovered in-product for indexing?) The mentioned topic could be identified automatically or have been added to the page with a direct reference to the topic by the page author.
+When a topic is mentioned in content on SharePoint news and pages, you'll see it highlighted. Open the topic summary from the highlight. Open the topic details from the title of the summary. <!--(msg for Efren: not sure if I should use discovery for this; we use discovered in-product for indexing?)--> The mentioned topic could be identified automatically or have been added to the page with a direct reference to the topic by the page author.
 
 You can also discover topics through Microsoft Search.
 
@@ -78,7 +78,7 @@ AI will continually work to provide you suggestions to improve your topics as ch
 
 Users who you allow access to see topics in their daily work are allowed to make suggestions to improve them. For example, if a user views the topic page and sees information that is incorrect or needs to be added, a link on the topic page allows them to edit the information directly. Another example, if a user views a a highlight on a SharePoint news page, you will find questions asking whether or not the highlight is appropriate or the suggested topic is appropriate for your organization. Your answer will help determine what's shown on topic summaries and in topic details.
 
-Additionally, users with proper permissions can tag items such as Yammer conversation that are relevant to a topic, and add them to a specific topic. (msg for Efren: changed to Yammer, because we will not have shipped Teams yet)
+Additionally, users with proper permissions can tag items such as Yammer conversation that are relevant to a topic, and add them to a specific topic. <!--(msg for Efren: changed to Yammer, because we will not have shipped Teams yet)-->
 
 
 ## See also
