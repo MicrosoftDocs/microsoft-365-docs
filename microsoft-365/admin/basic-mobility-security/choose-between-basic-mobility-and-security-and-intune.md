@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Basic Mobility and Security is part of the Microsoft 365 plans."
+description: "Basic Mobility and Security are part of the Microsoft 365 plans."
 ---
 
 # Choose between Basic Mobility and Security or Intune
@@ -40,7 +40,7 @@ Both Basic Mobility and Security and Intune are included in a variety of plans, 
 |Microsoft 365 Firstline 3 |Yes|Yes|
 |Microsoft 365 Enterprise E3 |Yes|Yes|
 |Microsoft 365 Enterprise E5 |Yes|Yes|
-|Microsoft 365 Eductation A1 |Yes|Yes|
+|Microsoft 365 Education A1 |Yes|Yes|
 |Microsoft 365 Education A3 |Yes|Yes|
 |Microsoft 365 Education A5 |Yes|Yes|
 |Microsoft Intune |No|Yes|
@@ -64,7 +64,7 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 |Device types|Managing different OS platforms and major management mode variants. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, iPad OS|
 |Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
 |Conditional access based on device compliance |Prevent noncompliant devices from accessing corporate email and data from the cloud. |Not supported on Windows 10.<br/>Limited to controlling access to Exchange Online, SharePoint Online, and Outlook. |No |
-|Device configuration  |Configure device settings (e.g. disabling the camera)|Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
+|Device configuration  |Configure device settings (for example, disabling the camera)|Device compliance|Set and manage security policies, like device level PIN lock and jailbreak detection. |Limitations on Android 9 and later devices. See [details](capabilities.md). |Yes|
  |Limited set of settings. |Yes|
 |Email profiles  |Provision a native email profile on the device. |Yes|Yes|
 |WiFi profiles |Provision a native WiFi profile on the device. |No|Yes|
@@ -72,7 +72,7 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 |MDM application management |Deploy your internal line-of-business apps and from apps stores to users. |No|Yes|
 |MAM |Ensure your users can securely access corporate information using the Office mobile and line-of-business apps, by helping to restrict actions like copy, cut, paste, and save as, to only those apps approved for corporate data. |No|Yes|
 |Managed browser  |Enable more secure web browsing using the Edge app. |No|Yes|
-|Zero touch enrollment programs Autopilot) |Enroll large numbers of corporate-owned devices, while simplifying user set up. |No|Yes|
+|Zero touch enrollment programs Autopilot) |Enroll large numbers of corporate-owned devices, while simplifying user setup. |No|Yes|
 |||
 
 In addition to features listed in the preceding table, Basic Mobility and Security and Intune both include a set of remote actions that send commands to devices over the internet. For example, you can remove Office data from an employee’s device while leaving personal data in place (retire), remove Office apps from a employee's device (wipe), or reset a device to its factory settings (full wipe). 
