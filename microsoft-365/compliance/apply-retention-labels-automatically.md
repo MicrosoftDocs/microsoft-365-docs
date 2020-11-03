@@ -151,7 +151,7 @@ You can auto-apply labels to content by using a query that contains specific wor
 
 For more information about the query syntax that uses Keyword Query Language (KQL), see [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-Query-based labels use the search index to identify content. For more information about the searchable properties that you can use, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+Query-based auto-apply policies use the same search index as eDiscovery content search to identify content. For more information about the searchable properties that you can use, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
 
 Some things to consider when using keywords or searchable properties to auto-apply retention labels:
 
@@ -163,9 +163,9 @@ Some things to consider when using keywords or searchable properties to auto-app
 
 - Although SharePoint managed properties can be renamed by using aliases, don't use these for KQL queries in your labels. Always specify the actual name of the managed property, for example, "RefinableString01".
 
-- Use the *DocumentLink* property instead of *Path* to identify a specific site in SharePoint or OneDrive. 
+- Use the *DocumentLink* property instead of *Path* to match an item based on its URL. 
 
-- Suffix wildcard searches ( such as `*cat`) or substring wildcard searches (such as `*cat*`) aren't supported.
+- Suffix wildcard searches ( such as `*cat`) or substring wildcard searches (such as `*cat*`) aren't supported. However, prefix wildcard searches (such as `cat*`) are supported.
 
 - Be aware that partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
 
@@ -209,9 +209,6 @@ The following query contains typical keywords to help identify documents or emai
 ```
 resume staff employee salary recruitment candidate
 ```
-
-> [!TIP]
-> For a complete list of the many SharePoint properties that you use, view the managed property list in the search schema for your tenant. For instructions, see the [View crawled properties and managed properties](https://docs.microsoft.com/sharepoint/manage-search-schema#view-crawled-properties-and-managed-properties) section from the SharePoint documentation. From the list, you can use any property name that displays **Query** in the **Query** column. 
 
 ##### Microsoft Teams meeting recordings
 
