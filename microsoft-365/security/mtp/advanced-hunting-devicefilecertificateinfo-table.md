@@ -27,7 +27,7 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 The `DeviceFileCertificateInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about file signing certificates. This table uses data obtained from certificate verification activities regularly performed on files on endpoints.
 

@@ -31,7 +31,7 @@ landingContent:
           - text: Sign up for Microsoft Business Premium
             url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
   # Card (optional)
-  - title: Guided set up
+  - title: Guided setup
     linkLists:
       - linkListType: overview
         links:

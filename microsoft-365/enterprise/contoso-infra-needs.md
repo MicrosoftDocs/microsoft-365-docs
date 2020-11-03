@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -26,12 +25,10 @@ Contoso is transitioning from an on-premises, centralized IT infrastructure to a
 
 Contoso uses a mostly centralized on-premises IT infrastructure, with application datacenters in the Paris headquarters.
 
-Figure 1 shows the headquarters office with application datacenters, a DMZ, and the internet.
+Here is the headquarters office with application datacenters, a DMZ, and the internet.
 
 ![Existing Contoso IT infrastructure](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
-**Figure 1: Existing Contoso IT infrastructure**
- 
 The on-premises application datacenters host: 
 
 - Custom line-of-business applications that use SQL Server and other Linux databases.
@@ -120,10 +117,10 @@ The Contoso IT department determined the following mapping of business needs to 
 |  | Improve productivity for remote and mobile workers | Microsoft 365 workloads and cloud-based data |
 |  | Increase creativity and innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Security |  |  |
-|  | Identity & access management | Dedicated global administrator accounts with Azure Multi-Factor Authentication (MFA) and Azure Active Directory Privileged Identity Management (PIM) <BR> MFA for all user accounts <BR> Conditional Access <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Threat protection | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Microsoft 365 threat investigation and response <BR> |
+|  | Identity & access management | Dedicated global administrator accounts with Azure Multi-Factor Authentication (MFA) and Azure AD Privileged Identity Management (PIM) <BR> MFA for all user accounts <BR> Conditional Access <BR> Windows Hello <BR> Windows Credential Guard |
+|  | Threat protection | Advanced Threat Analytics <BR> Windows Defender <BR> Defender for Office 365 <BR> Microsoft Defender for Office 365 <BR> Microsoft 365 threat investigation and response <BR> |
 |  | Information protection | Azure Information Protection <BR> Data Loss Prevention (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | Security management | Azure Security Center  <BR> Windows Defender Security Center |
+|  | Security management | Azure Defender*  <BR> Windows Defender Security Center |
 | Remote and mobile access and business partners |  |  |
 |  | Better security for remote and mobile workers | Microsoft Intune |
 |  | Reduce remote access infrastructure for employees | Microsoft 365 workloads and cloud-based data |
@@ -131,12 +128,12 @@ The Contoso IT department determined the following mapping of business needs to 
 | Compliance |  |  |
 |  | Adhere to regional regulatory requirements | GDPR features in Microsoft 365 |
 | Management |  |  |
-|  | Lower IT overhead for installing client updates | Deployment rings <BR> Windows 10 Enterprise updates <BR> Microsoft 365 Apps for enterprise updates |
+|  | Lower IT overhead for installing client updates | Windows 10 Enterprise updates <BR> Microsoft 365 Apps for enterprise updates |
 ||||
 
 ## Next step
 
-[Learn](contoso-networking.md) about the Contoso Corporation on-premises network and how it was optimized for access and latency to Microsoft 365 cloud-based resources.
+Learn about the Contoso Corporation [on-premises network](contoso-networking.md) and how it was optimized for access and latency to Microsoft 365 cloud-based resources.
 
 ## See also
 
