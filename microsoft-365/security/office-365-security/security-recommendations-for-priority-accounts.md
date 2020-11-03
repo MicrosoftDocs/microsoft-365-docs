@@ -27,7 +27,7 @@ Microsoft 365 and Office 365 Advanced Threat Protection (ATP) contain many diffe
 
 ## Enable MFA and disable legacy authentication protocols for HVEs
 
-Multi-factor authentication (MFA) requires a traditional username and password plus an additional type of verification (known as a _factor_) to authenticate a user. For example, a code from a phone app or a text message. For high-level information about MFA, see [What is: Multi-factor authentication](https://support.microsoft.com/help/4577374).
+Multi-factor authentication (MFA) requires a traditional username and password plus an additional type of verification (known as a _factor_) to authenticate a user. For example, the addition factor of authentication might be a code generated an authentication app or included in a text message. For high-level information about MFA, see [What is: Multi-factor authentication](https://support.microsoft.com/help/4577374).
 
 Most compromising sign-in attempts come from legacy authentication in older email clients that don't use modern authentication. For example, Outlook 2010, IMAP4 clients, POP3 clients, and authenticated SMTP. Blocking access to these protocols is important. With a compromised username and password, attackers can bypass MFA and authenticate using one of these older protocols.
 
@@ -40,14 +40,14 @@ For more information about Azure AD versions and licensing, see [Azure Active Di
 
 ****
 
-|Azure AD version|Microsoft 365 availability|Feature|Comments|
+|Azure AD version|Availability in Microsoft 365|Feature|Comments|
 |---|---|---|---|
 |Free and Office 365 Apps|All|Security defaults|Turns on MFA and disables legacy authentication protocols for all users in the organization. For instructions, see [Enabling security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults).|
-|Premium P1||Conditional access policies|[Require multi-factor authentication and set up conditional access policies](https://docs.microsoft.com/microsoft-365/campaigns/m365-campaigns-conditional-access)|
-|Premium P2||Risk policies|[How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies)|
+|Premium P1|Enterprise Mobility + Security E3|Conditional access policies|[Require multi-factor authentication and set up conditional access policies](https://docs.microsoft.com/microsoft-365/campaigns/m365-campaigns-conditional-access)|
+|Premium P2|Enterprise Mobility + Security E5|Risk policies|[How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies)|
 |
 
-## Use the Strict preset security policies for HVEs in Office 365 ATP
+## Use the Strict preset security policies for HVEs in Micro
 
 For HVEs, we recommend applying the Strict profile in preset security policies.
 
