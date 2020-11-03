@@ -15,6 +15,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn about how Microsoft 365 eDiscovery tools handle encrypted documents attached to email messages."
 ---
 
@@ -22,9 +23,12 @@ description: "Learn about how Microsoft 365 eDiscovery tools handle encrypted do
 
 Organizations use various types of encryption technology to protect sensitive content within their organization and ensure that only the right people have access to that content. Organizations use various types of encryption, both Microsoft encryption technologies and third-party technologies to meet their security requirements and protect their sensitive information.
 
-To date, managing encrypted content in the eDiscovery workflow in Microsoft 365 requires special handling of encrypted items depending on the type of encryption used and the specific stage in the workflow. This was primarily achieved by decrypting content when it was exported from content searches, Core eDiscovery cases, and Advanced eDiscovery cases. Content encrypted with Microsoft encryption technologies couldn't be previewed until it was exported. This was because encrypted content wasn't fully indexed for search. In Advanced eDiscovery, encrypted content was flagged with a processing error, which required that you download the encrypted item, decrypt it, and then upload the decrypted file to review the content.
+To date, managing encrypted content in the eDiscovery workflow in Microsoft 365 requires special handling of encrypted items depending on the type of encryption used and the specific stage in the workflow. This was primarily achieved by decrypting email message content when it was exported from content searches, Core eDiscovery cases, and Advanced eDiscovery cases. Content encrypted with Microsoft encryption technologies couldn't be previewed until it was exported. This was because encrypted content wasn't fully indexed for search. In Advanced eDiscovery, encrypted content was flagged with a processing error, which required that you download the encrypted item, decrypt it, and then upload the decrypted file to review the content.
 
-To make it easier to manage encrypted content in the eDiscovery workflow, Microsoft 365 eDiscovery tools can decrypt encrypted files that are attached to email messages and sent in Exchange Online. Specifically, if a file that's encrypted with a Microsoft encryption technology is attached to an email message that matches the search criteria, the encrypted file will be decrypted when the search results are prepared for preview. This allows eDiscovery managers to view the content of encrypted email attachments when previewing search results. And starting in January 2021, Microsoft 365 eDiscovery tools will support encrypted documents stored in SharePoint Online and OneDrive for Business.
+To make it easier to manage encrypted content in the eDiscovery workflow, Microsoft 365 eDiscovery tools can decrypt encrypted files that are attached to email messages and sent in Exchange Online. Prior to this new capability, only the content of an email message protected by rights management (and not attached files) was decrypted. Now, if a file that's encrypted with a Microsoft encryption technology is attached to an email message that matches the search criteria, the encrypted file will be decrypted when the search results are prepared for preview. This allows eDiscovery managers to view the content of encrypted email attachments when previewing search results.
+
+> [!NOTE]
+> Starting in January 2021, Microsoft 365 eDiscovery tools will support encrypted documents stored in SharePoint Online and OneDrive for Business.
 
 ## Supported encryption technologies
 
@@ -43,4 +47,6 @@ The following table identifies the tasks performed in Microsoft 365 eDiscovery t
 
 ## Requirements for decryption in eDiscovery
 
-You have to be assigned the RMS Decrypt role to preview, review, and export files encrypted with Microsoft encryption technologies. This role is assigned to the eDiscovery Managers role group by default in the Office 365 Security & Compliance Center. For more information about the RMS Decrypt role, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md#rms-decrypt).
+You have to be assigned the RMS Decrypt role to preview, review, and export attached files encrypted with Microsoft encryption technologies. You also have to be assigned this role to review and query encrypted email attachments that are added to a review set in Advanced eDiscovery.
+
+This role is assigned by default to the eDiscovery Manager role group in the Office 365 Security & Compliance Center. For more information about the RMS Decrypt role, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md#rms-decrypt).
