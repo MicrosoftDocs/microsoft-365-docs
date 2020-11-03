@@ -2,7 +2,7 @@
 title: "Enable the Report Message add-in"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: Admin
