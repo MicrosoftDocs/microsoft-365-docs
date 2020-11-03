@@ -45,14 +45,14 @@ With this report, you can:
 
 ## Experience Improvements to Threat Explorer and Real-time detections
 
-## Tags in Threat Explorer
+### Tags in Threat Explorer
 
 > [!NOTE]
 > The user tags feature is in Preview, isn't available to everyone, and is subject to change. For information about the release schedule, check out the Microsoft 365 roadmap.
 
-User tags are identifiers for specific groups of users in Microsoft Defender for Office 365. For more information around Tags, licensing and configuring Tags, read more here: [User tags in Defender for Office 365](user-tags.md).
+User tags are identifiers for specific groups of users in Microsoft Defender for Office 365. For more information around tags, licensing and configuring tags, see [User tags in Defender for Office 365](user-tags.md).
 
-Within Threat Explorer, you will be able to see information around User Tags in the following experiences:
+Within Threat Explorer, you can see information around user tags in the following experiences:
 
 #### Email Grid View
 
