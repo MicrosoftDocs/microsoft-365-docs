@@ -26,7 +26,7 @@ description: "Learn how to find and use email security reports for your organiza
 
 "Secure by default" is a term used to define the default settings that are most secure as possible. 
 
-However, security needs to be balanced with productivity. T
+However, security needs to be balanced with productivity. This can include balancing across:
 - Usability: settings should not get in the way of user productivity.
 - Risk: security might block important activities
 - Legacy settings: Some configurations for older products and features might need to be maintained for business reasons, even if new, modern settings are improved. 
