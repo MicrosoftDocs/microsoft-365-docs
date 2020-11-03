@@ -33,7 +33,7 @@ However, security needs to be balanced with productivity. T
 
 Microsoft 365 organizations with mailboxes in Exchange Online are protected by Exchange Online Protection (EOP). This  protection includes:
 1. Email with suspected malware will automatically be quarantined and recipients will be notified. See [Configure anti-malware policies in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide).
-1. Phishing email identified as "high confidence" will be handled according to the anti-spam policy action. See [Configure anti-spam policies in EOP](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide).
+1. Phishing email identified as "high confidence" will be handled according to the anti-spam policy action. See [Configure anti-spam policies in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide).
 
 Because Microsoft wants to keep our customers secure by default, some tenants overrides are not applied for malware or high confidence phish. These overrides include:
 - Allowed sender lists or allowed domain lists (anti-spam policies)
