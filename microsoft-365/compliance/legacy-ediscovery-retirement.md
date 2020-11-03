@@ -87,9 +87,9 @@ The following table describes other tools that you can use to replace the existi
 <table>
 <thead>
 <tr class="header">
-<th><strong>Functionality</strong></th>
-<th><strong>Alternative tool</strong></th>
-<th><strong>Comments</strong></th>
+<th>Functionality</th>
+<th>Alternative tool</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -190,9 +190,9 @@ The following table describes other tools that you can use to replace the existi
 <table>
 <thead>
 <tr class="header">
-<th><strong>Functionality</strong></th>
-<th><strong>Alternative tools</strong></th>
-<th><strong>Comments</strong></th>
+<th>Functionality</th>
+<th>Alternative tools</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -269,9 +269,9 @@ The following table describes other tools that you can use to replace the existi
 <table>
 <thead>
 <tr class="header">
-<th><strong>Functionality</strong></th>
-<th><strong>Alternative tools</strong></th>
-<th><strong>Comments</strong></th>
+<th>Functionality</th>
+<th>Alternative tools</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>
