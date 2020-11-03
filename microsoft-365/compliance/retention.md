@@ -219,24 +219,15 @@ Exchange public folders, Skype, Teams and Yammer messages do not support retenti
 
 #### Only one retention label at a time
 
-An email or document can have only a single retention label assigned to it at a time:
+An email or document can have only a single retention label applied to it at a time:
   
-- For retention labels assigned manually by admins or end users, people can remove or change the retention label that's assigned.
-    
-- If content has an auto-apply label assigned, this label can be replaced by a published retention label.
-    
-- If content has a published retention label assigned, an auto-apply label cannot replace it.
-    
+- When content already has a retention label applied, the label won't be replaced by a default label or an auto-apply retention label.
+
+- When retention labels are published, admins and end users can always manually change or remove an existing retention label on content.
+
 - If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the retention label for the oldest rule (by date created) is assigned.
-    
-To understand how and why one retention label is applied rather than another, it's helpful to understand the difference between explicitly assign a label, and implicitly assigned a label:
 
-- Retention labels applied from a label policy are explicitly assigned
-- Retention labels applied automatically from an auto-apply policy are implicitly assigned
-
-An explicitly assigned retention label takes precedence over an implicitly assigned retention label. For more information, see the [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence) section on this page.
-
-For SharePoint, retention labels can also be implicitly assigned when you configure a default label for all content in a SharePoint library, folder, or document set. For this scenario, an auto-applied label takes precedence over a default label, but to fully understand all outcomes when you use a default label, see the information in the [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) section. 
+To fully understand all outcomes when you use a default label, see the information in the [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) section. 
 
 #### Monitoring retention labels
 
@@ -306,7 +297,7 @@ Explanation for the four different levels:
     
 3. **Explicit inclusion wins over implicit inclusion.** This means: 
     
-    1. If a retention label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that retention label takes precedence over both a retention policy assigned at the site or mailbox level and a default retention label assigned to the document library. For example, if the explicit retention label is configured to retain content for ten years, but a retention policy assigned to the site is configured to retain content for only five years, the retention label takes precedence. Auto-applied retention labels are considered implicit rather than explicit, because they're applied automatically by Microsoft 365.
+    1. If a retention label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that retention label takes precedence over both a retention policy assigned at the site or mailbox level and a default retention label assigned to the document library. For example, if the explicit retention label is configured to retain content for ten years, but a retention policy assigned to the site is configured to retain content for only five years, the retention label takes precedence.
     
     2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive account, that retention policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive accounts but doesn't specifically include that user's mailbox.
     
