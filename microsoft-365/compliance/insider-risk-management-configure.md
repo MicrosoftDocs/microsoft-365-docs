@@ -160,7 +160,7 @@ Before configuring a policy, define the following insider risk settings:
     - [Anomaly detections](insider-risk-management-settings.md#anomaly-detections)
     - [Offensive language detections](insider-risk-management-settings.md#offensive-language-detections)
     - [Alert volume level](insider-risk-management-settings.md#alert-volume)
-    - [Microsoft 365 Defender Advanced Threat Protection alert status](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview)
+    - [Microsoft Defender for Endpoint alert status](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Domain settings](insider-risk-management-settings.md#domains-preview)
 6. On the **Export alerts** page, enable export of insider risk alert information using the Office 365 Management APIs if needed.
 7. On the **Priority user groups** page, create a priority user group and add users if not created in **Step 3**.

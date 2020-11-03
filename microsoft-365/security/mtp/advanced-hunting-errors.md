@@ -1,5 +1,5 @@
 ---
-title: Handle errors in advanced hunting for Microsoft Threat Protection
+title: Handle errors in advanced hunting for Microsoft 365 Defender
 description: Understand errors displayed when using advanced hunting
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema, kusto, timeout, resources, errors, unknown error, limits, quota, parameter, allocation
 search.product: eADQiWindows 10XVcnh

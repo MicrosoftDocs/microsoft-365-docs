@@ -1,5 +1,5 @@
 ---
-title: "Using self-service sign up in your organization"
+title: "Using self-service sign-up in your organization"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,14 +19,14 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: "Learn about the Microsoft 365 self-service sign up and available self-service programs such as Microsoft Power Apps, Microsoft Flow, and Dynamics 365 for Finance."
+description: "Learn about the Microsoft 365 self-service sign-up and available self-service programs such as Microsoft Power Apps, Microsoft Flow, and Dynamics 365 for Finance."
 ---
 
-# Using self-service sign up in your organization
+# Using self-service sign-up in your organization
 
-Self-service sign up makes it easier for users in your organization to sign up for online services from Microsoft. We call this sign up process "self-service sign up" because your users can sign up to use services paid by your subscription, or use free services, without asking you to take action on their behalf.
+Self-service sign-up makes it easier for users in your organization to sign up for online services from Microsoft. We call this sign up process "self-service sign-up" because your users can sign up to use services paid by your subscription, or use free services, without asking you to take action on their behalf.
   
-## How self-service sign up works
+## How self-service sign-up works
 
 The following example describes how self-sign up works for a school. The same process works for any organization that has self-service programs enabled in their tenant.
   
@@ -39,9 +39,8 @@ The following example describes how self-sign up works for a school. The same pr
 
 Following are the currently available self-service programs. This list will be updated as new programs are added.
   
-|||||
+| Program <br/> | Description <br/> | Additional Info <br/> | Website for self-service sign-up <br/> |
 |:-----|:-----|:-----|:-----|
-|**Program** <br/> |**Description** <br/> |**Additional Info** <br/> |****Website for self-service sign up**** <br/> |
 |****Office 365 A1**** <br/> |Any student or teacher can use a school email address to sign up for free Office 365 and get Office apps for the web, 1 TB of OneDrive cloud storage and SharePoint Online for class, team and project sites.  <br/> |[Office 365 Education Technical FAQ](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Office 365 A1 Plus** <br/> |Eligible students and teachers can sign up for Office 365 A1 Plus, which includes everything mentioned above plus Microsoft 365 Apps for enterprise. Microsoft 365 Apps for enterprise is productivity software, including Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access, and Skype for Business, that is installed on your desktop or laptop computer.  <br/> |[Office 365 Education Technical FAQ](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BI enables users to visualize data, share discoveries, and collaborate in intuitive new ways. <br/> If your organization already subscribes you may additionally see licenses for "Power BI Pro Individual User Trial," which offer users limited, free access to advanced capabilities.  <br/> |[Power BI in your organization](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
@@ -49,7 +48,7 @@ Following are the currently available self-service programs. This list will be u
 |**Microsoft Power Apps** <br/> |In PowerApps, you can manage organizational data by running an app that you created or that someone else created and shared with you. Apps run on mobile devices such as phones, or you can run them in a browser by opening Dynamics 365. You can create an infinite variety of apps - all without learning a programming language such as C#.  <br/> |[Self-service sign up for PowerApps](https://go.microsoft.com/fwlink/p/?linkid=841461) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**Dynamics 365 for Financials** <br/> |Get a complete business and financial management solution for small and medium-sized businesses. Dynamics 365 for Financials makes ordering, selling, invoicing, and reporting easier—starting on day one.  <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |
 |**Microsoft Dynamics 365 for Operations** <br/> |Increase your speed of doing business. The complete ERP tools in Dynamics 365 for Operations provide global scalability and digital intelligence to help you grow at your pace.  <br/> |[Microsoft Dynamics 365 for Operations](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |[Microsoft Dynamics 365 for Operations](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |
-|**Microsoft AppSource** <br/> |Microsoft AppSource is a destination for software-as-a-service business apps built on the Microsoft cloud platform. AppSource features hundreds of apps, add-ons and content packs that extend the functionality of Microsoft products like Azure, Dynamics 365, Office 365 and Power BI.  <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |
+|**Microsoft AppSource** <br/> |Microsoft AppSource is a destination for software-as-a-service business apps built on the Microsoft cloud platform. AppSource features hundreds of apps, add-ons, and content packs that extend the functionality of Microsoft products like Azure, Dynamics 365, Office 365, and Power BI.  <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |
 |**Microsoft Partner Incentives** <br/> |The Microsoft Partner Network provides three types of memberships. Each type provides a set of benefits to help your business grow. As you achieve your goals, participate in the program at the level that suits your unique needs to access more benefits and develop your relationship with us and other partners in the network.  <br/> |[Microsoft Partner Incentives](https://go.microsoft.com/fwlink/p/?linkid=841469) <br/> |[Microsoft Partner Incentives](https://go.microsoft.com/fwlink/p/?linkid=841469) <br/> |
 |**Microsoft Business Center** <br/> |The Microsoft Business Center is the portal for customers who have made purchases through the Microsoft Products and Services Agreement (MPSA). <br/> |[Quick Start: Register for the Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841479) <br/> |[Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841470) <br/> |
 |**Microsoft Volume License Service Center** <br/> |The Microsoft Volume License Service Center displays licenses purchased under Enterprise, Select, Education (Campus or School), Open Value, Open License, and ISV Royalty agreements.  <br/> |[VLSC Training and Resources](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[Volume License Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
