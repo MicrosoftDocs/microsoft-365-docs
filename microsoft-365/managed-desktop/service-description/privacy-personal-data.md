@@ -51,7 +51,7 @@ Microsoft Managed Desktop uses this data:
 |---------|---------|
 |Azure Active Directory data     | Used in reports created for tenant admins, which are available in the Microsoft Managed Desktop Admin portal.        |
 |Intune data     | Used in reports created for tenant admins, which are available in the Microsoft Managed Desktop Admin portal.        |
-|Microsoft Defender Advanced Threat Protection (ATP)     |  Used for addressing security threats detected on enrolled devices by Microsoft Managed Desktop’s Security Operations Center (SOC).  |
+|Microsoft Defender for Endpoint     |  Used for addressing security threats detected on enrolled devices by Microsoft Managed Desktop’s Security Operations Center (SOC).  |
 |Windows diagnostic data     |Used to determine the update status of managed devices as well as to provide and improve Microsoft Managed Desktop’s IT-as-a-Service (ITaaS) offering.         |
 |Admin contact data     | Used by Microsoft Managed Desktop to communicate with tenant administrators.        |
 
@@ -68,7 +68,7 @@ Microsoft Managed Desktop processes these entities to provide the service:
 - Tenant data
 - Azure Active Directory resources
 - Policy and configuration data
-- Microsoft Defender ATP metadata
+- Microsoft Defender for Endpoint metadata
 - Windows diagnostic data
 - Product and service usage data
 
@@ -82,9 +82,9 @@ For more information about the regions Azure uses for data storage, see [Azure A
 
 Intune data can be stored in a few different regions, such as Europe North (Ireland) and Europe West (Netherlands). Your IT administrator creates a tenant account and chooses the country where data will be stored when they initially enroll in Intune services. For a list of datacenter locations used by Intune, see [Microsoft Intune—Where is my customer data?](http://intunedatacentermap.azurewebsites.net/). For more information about data storage and use by Intune, see [Data collection in Intune](https://docs.microsoft.com/intune/privacy-data-collect).
 
-### Microsoft Defender Advanced Threat Protection
+### Microsoft Defender for Endpoint
 
-Microsoft Defender Advanced Threat Protection (ATP) data can be stored in a few different regions. For this reason, Microsoft Defender ATP operates in the Microsoft Azure datacenters in the European Union, the United Kingdom, and in the United States, as stated at [Microsoft Defender ATP—Data storage locations](http://intunedatacentermap.azurewebsites.net/). For more information about data storage and use by Microsoft Defender ATP, see [What data does Microsoft Defender ATP collect?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
+Microsoft Defender for Endpoint data can be stored in a few different regions. For this reason, Defender for Endpoint operates in the Microsoft Azure datacenters in the European Union, the United Kingdom, and in the United States, as stated at [Microsoft Defender for Endpoint—Data storage locations](http://intunedatacentermap.azurewebsites.net/). For more information about data storage and use by Defender for Endpoint, see [What data does Microsoft Defender for Endpoint collect?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
 
 ### Windows 10
 
@@ -133,5 +133,5 @@ Furthermore, use the following guidance to exercise DSRs for the services Micros
 
 - [Azure Active Directory](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure?view=o365-worldwide)
 - [Microsoft Intune](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-intune?view=o365-worldwide)
-- [Microsoft Defender ATP](https:/docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [Microsoft  Defender for Endpoint](https:/docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Windows 10](https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance)

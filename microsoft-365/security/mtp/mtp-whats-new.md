@@ -27,7 +27,7 @@ search.appverid:
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 

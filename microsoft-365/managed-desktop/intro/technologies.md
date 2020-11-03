@@ -37,7 +37,7 @@ Web Applications |	Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps
  |
  --- | ---
 Application Virtualization (App-V) |	Customers can deploy App-V packages using the Intune Win32 app management client.
-Microsoft Defender Advanced Threat Protection |	 Microsoft Managed Desktop uses this to monitor device security. 
+Microsoft Defender for Endpoint |	 Microsoft Managed Desktop uses this to monitor device security. 
 
 ## Enterprise Mobility + Security E5
 

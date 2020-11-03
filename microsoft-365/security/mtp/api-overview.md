@@ -1,6 +1,6 @@
 ---
-title: Overview of  Microsoft Threat Protection APIs
-description: Learn about the available APIs in Microsoft Threat Protection
+title: Overview of  Microsoft 365 Defender APIs
+description: Learn about the available APIs in Microsoft 365 Defender
 keywords: api, apis, overview, incident, incidents, threat hunting
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,21 +21,21 @@ search.appverid:
 - MET150
 ---
 
-# Overview of  Microsoft Threat Protection APIs
+# Overview of  Microsoft 365 Defender APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 >[!IMPORTANT] 
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft Threat Protection solution is built on top of an integration-ready platform. 
+Microsoft 365 Defender solution is built on top of an integration-ready platform. 
 
-The lop-level Microsoft Threat Protection APIs will enable you to automate workflows based on the shared incident and advanced hunting tables.
+The lop-level Microsoft 365 Defender APIs will enable you to automate workflows based on the shared incident and advanced hunting tables.
 
 - **Combined incidents queue** - Helps security professionals focus on what's critical by ensuring that the full attack scope and impacted assets are grouped together and surfaced in a timely manner under the incident API.
 
