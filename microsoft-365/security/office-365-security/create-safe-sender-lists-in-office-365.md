@@ -92,6 +92,10 @@ The following example assumes you need email from contoso.com to skip spam filte
 
 ## Use Outlook Safe Senders
 
+> [!CAUTION]
+>
+> - This method creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered; however, safe senders or domains will not be honored for messsages that are marked as malware or high confidence phish.
+
 Instead of an organizational setting, users or admins can add the sender email addresses to the Safe Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). This is not desirable in most situations since senders will bypass parts of the filtering stack. Although you trust the sender, the sender can still be compromised and send malicious content. It is best that you let our filters do what is needed to check every message and then [report the false positive/negative to Microsoft](report-junk-email-messages-to-microsoft.md) if our filters got it wrong. Bypassing the filtering stack also interferes with [ZAP](zero-hour-auto-purge.md).
 
 When messages skip spam filtering due to a user's Safe Senders list, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:SFE`, which indicates that spam, spoof, and phish filtering were bypassed.
@@ -109,7 +113,7 @@ If you can't use mail flow rules as previously described, the next best option i
 - Regularly review the entries in the IP Allow List and remove the entries that you no longer need.
 
 > [!CAUTION]
-> Without additional verification like mail flow rules, email from sources in the IP Allow List skips spam filtering and sender authentication (SPF, DKIM, DMARC) checks. This creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered.
+> Without additional verification like mail flow rules, email from sources in the IP Allow List skips spam filtering and sender authentication (SPF, DKIM, DMARC) checks. This creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered; however, IP allowed senders will not be honored for messsages that are marked as malware or high confidence phish.
 
 ## Use allowed sender lists or allowed domain lists
 
@@ -119,7 +123,7 @@ The maximum limit for these lists is approximately 1000 entries; although, you w
 
 > [!CAUTION]
 >
-> - This method creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered.
+> - This method creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered; however, allowed senders or domains will not be honored for messsages that are marked as malware or high confidence phish.
 >
 > - Do not use domains you own (also known as accepted domains) or popular domains (for example, microsoft.com) in allowed domain lists.
 
