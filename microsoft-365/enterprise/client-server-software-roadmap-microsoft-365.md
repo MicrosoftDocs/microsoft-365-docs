@@ -84,7 +84,7 @@ Both large and small organizations often use a combination of older versions of 
 - Should be updated with the latest security updates and support fixes. In some cases, these updates are released monthly.
 - Aren't optimized to use the Microsoft cloud technologies that help you digitally transform your business.
 - Don't include new productivity applications, such as Microsoft Teams.
-- Don't include the latest security features, such as Exchange Advanced Threat Protection.
+- Don't include the latest security features, such as Exchange and Defender for Office 365.
 
 Microsoft 365 Enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are automatically updated for security. So your IT personnel save the time it takes to maintain and update on-premises servers. These services also offer new feature enhancements that aren't present in Office server software.
 
