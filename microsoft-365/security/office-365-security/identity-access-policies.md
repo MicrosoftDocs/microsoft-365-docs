@@ -314,11 +314,11 @@ For **System security**, see this table.
 ||Real-time protection|Require|Select <br>Only supported for Windows 10 desktop|
 |||||
 
-**Microsoft Defender ATP**
+**Microsoft Defender for Endpoint**
 
 |Type|Properties|Value|Action|
 |:---|:---------|:-----|:----|
-|Microsoft Defender Advanced Threat Protection rules|Require the device to be at or under the machine-risk score|Medium|Select|
+|Microsoft Defender for Endpoint rules|Require the device to be at or under the machine-risk score|Medium|Select|
 |||||
 
 ## Require compliant PCs (but not compliant phones and tablets)

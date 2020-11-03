@@ -117,7 +117,7 @@ In the more serious situations, you may need to share the insider risk managemen
 - **Office 365 Management APIs integration (preview)**: Insider risk management supports exporting alert information to security information and event management (SIEM) services via the Office 365 Management APIs. Having access to alert information in the platform the best fits your organization's risk processes gives you more flexibility in how to act on risk activities. To learn more about exporting alert information with Office 365 Management APIs, see [Export alerts](insider-risk-management-settings.md#export-alerts-preview).
 
 >[!NOTE]
->The ServiceNow preview will end on November 30, 2020 and will not be continued. Thank you for your feedback and support while we determine next steps and explore alternative solutions.
+>Thank you for your feedback and support during the preview of the ServiceNow connector. We've decided to end the preview of ServiceNow connector and discontinue support in insider risk management on November 30, 2020. We are actively evaluating alternative methods to provide customers with ServiceNow integration in insider risk management.
 
 ## Scenarios
 
@@ -141,7 +141,7 @@ User-to-user communications are often a source of inadvertent or malicious viola
 
 ## Intentional or unintentional security policy violations (preview)
 
-Users typically have a large degree of control when managing their devices in the modern workplace. This may include permissions to install or uninstall applications needed in the performance of their duties or the ability to temporarily disable device security features. Whether this activity is inadvertent, accidental, or malicious, this conduct can pose risk to your organization and is important to identify and act to minimize. To help identity these risky security activities, the following insider risk management security policy violation templates scores security risk indicators and uses Microsoft Defender Advanced Threat Protection (ATP) alerts to provide insights for security-related activities:
+Users typically have a large degree of control when managing their devices in the modern workplace. This may include permissions to install or uninstall applications needed in the performance of their duties or the ability to temporarily disable device security features. Whether this activity is inadvertent, accidental, or malicious, this conduct can pose risk to your organization and is important to identify and act to minimize. To help identity these risky security activities, the following insider risk management security policy violation templates scores security risk indicators and uses Microsoft Defender for Endpoint alerts to provide insights for security-related activities:
 
 - [General security policy violations (preview)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Security policy violations by departing users (preview)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)

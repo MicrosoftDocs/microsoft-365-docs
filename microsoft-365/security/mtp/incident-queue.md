@@ -1,6 +1,6 @@
 ---
-title: Prioritize incidents in Microsoft Threat Protection
-description: Learn how to prioritize incidents from the incident queue in Microsoft Threat Protection
+title: Prioritize incidents in Microsoft 365 Defender
+description: Learn how to prioritize incidents from the incident queue in Microsoft 365 Defender
 keywords: incident, queue, overview, devices, identities, users, mailbox, email, incidents
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -23,7 +23,7 @@ search.appverid:
 - MET150
 ---
 
-# Prioritize incidents in Microsoft Threat Protection
+# Prioritize incidents in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

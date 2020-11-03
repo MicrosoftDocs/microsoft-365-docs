@@ -44,9 +44,9 @@ Protect your applications and data with these security features of Microsoft 365
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
-| Office 365 Advanced Threat Protection (ATP) | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. <br><br> Office ATP collects and analyzes signals from your apps for detection, investigation, and remediation of security risks and safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. | Microsoft 365 E3 or E5 | 
+| Microsoft Defender for Office 365 | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. <br><br> Microsoft Defender for Office 365 collects and analyzes signals from your apps for detection, investigation, and remediation of security risks and safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. | Microsoft 365 E3 or E5 | 
 | Malware protection | ‎Microsoft Defender Antivirus and Device Guard provides device-based malware protection. <br><br> SharePoint‎ Online automatically scans file uploads for known malware. ‎<br><br> Exchange Online Protection‎ (‎EOP‎) secures cloud mailboxes. | Microsoft 365 E3 or E5 |
-| Microsoft Defender ATP | Protect your organization’s devices from cyberthreats and data breaches and detect, investigate, and respond to advanced threats. | Microsoft 365 E5 |
+| Microsoft Defender for Endpoint | Protect your organization’s devices from cyber threats and data breaches and detect, investigate, and respond to advanced threats. | Microsoft 365 E5 |
 | Cloud App Security | Protect your cloud-based services—both Microsoft 365 and other SaaS apps— from attack. | Microsoft 365 E5 or individual Cloud App Security licenses |
 | Azure AD Identity Protection	| Automate detection and remediation of identity-based risks. <br><br>Create risk-based Conditional Access policies to require multi-factor authentication (MFA) for risky sign-ins. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses |
 ||||

@@ -56,7 +56,7 @@ By following the standards of ISO/IEC 27001 and the code of practice embodied in
 - Power Virtual Agents
 - Microsoft Threat Experts
 - Microsoft Stream
-- Windows Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score
+- Microsoft Defender for Endpoint  — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score
 
 ## Audits, reports, and certificates
 
