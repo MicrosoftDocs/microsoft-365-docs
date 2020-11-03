@@ -16,7 +16,8 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices",
-          "contentunderstanding/**"
+          "contentunderstanding/**",
+          "knowledge/**"
         ]
       },
       {
