@@ -24,18 +24,18 @@ description: "Support ends for Project Server 2010 ends on April 13, 2021. Use t
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Project Server 2010 will reach end of support on **April 13, 2021**. This date was extended from the previous end of support date of October 13, 2020. If you're currently using Project Server 2010, note that these other related products have the following end of support dates:
+Project Server 2010 will reach end of support on **April 13, 2021**. This date was extended from the previous end-of-support date of October 13, 2020. If you're currently using Project Server 2010, note that these related products have the following end-of-support dates:
 
 |Product |End of support date|
 |---|---|
 |Project 2010 Standard|October 13, 2020|
 |Project 2010 Professional|October 13, 2020|
 
-For more information about Office 2010 servers reaching end of support, see [Upgrade from Office 2010 servers and client products](plan-upgrade-previous-versions-office.md).
+For more information about reaching end of support, see [Upgrade from Office 2010 servers and client products](plan-upgrade-previous-versions-office.md).
 
 ## What does *end of support* mean?
 
-Project Server, like almost all Microsoft products, has a support lifecycle during which it gets new features, bug fixes, and security updates. This lifecycle typically lasts for 10 years from the product's initial release. The end of this lifecycle is known as the product's end of support. When Project Server 2010 reaches its end of support on April 13, 2021, Microsoft will no longer provide:
+Almost all Microsoft products have a support lifecycle, during which the get new features, bug fixes, and security updates. This lifecycle typically lasts for 10 years from the product's initial release. The end of this lifecycle is known as the product's end of support. When Project Server 2010 reaches its end of support on April 13, 2021, Microsoft will no longer provide:
 
 - Technical support for problems that may occur.
 
@@ -45,13 +45,13 @@ Project Server, like almost all Microsoft products, has a support lifecycle duri
 
 - Time zone updates.
 
-Your installation of Project Server 2010 will continue to run after this date. But, because of the changes listed above, we strongly recommend that you migrate from Project Server 2010 as soon as possible.
+Your installation of Project Server 2010 will continue to run after this date. But, because of the changes listed previously, we strongly recommend that you migrate from Project Server 2010 as soon as possible.
 
 ## What are my options?
 
 Your migration options are:
 
-- Migrate to Project Online
+- Migrate to Project Online.
 
 - Migrate to a newer on-premises version of Project Server (preferably Project Server 2019).
 
@@ -61,41 +61,41 @@ Here are the two paths you can take to avoid the end of support for Project Serv
 
 |Why would I prefer to migrate to Project Server 2019?|Why would I prefer to migrate to Project Online?|
 |---|---|
-|Business rules restrict me from operating my business in the cloud.  <br/>  I need control of updates to my environment.|I have mobile or remote users.  <br/>  Costs to migrate on-premises servers are a significant concern (hardware, software, hours, and effort to implement, and so on.).  <br/>  After migration, costs to maintain my environment are a concern (for example, automatic updates, guaranteed uptime, and so on).|
+|Business rules restrict me from operating my business in the cloud.  <br/><br/>  I need control of updates to my environment.|I have mobile or remote users.<br/><br/>  Costs to migrate on-premises servers are a significant concern (hardware, software, hours, and effort to implement, and so on.). <br/><br/>  After migration, costs to maintain my environment are a concern (for example, automatic updates, guaranteed uptime, and so on).|
 
 > [!NOTE]
-> For more information about options for moving from your Office 2010 servers, see [Resources to help you upgrade from Office 2010 servers and clients](upgrade-from-office-2010-servers-and-products.md). Note that Project Server doesn't support a hybrid configuration because Project Server and Project Online can't share the same resource pool.
+> For more information about your migration options, see [Resources to help you upgrade from Office 2010 servers and clients](upgrade-from-office-2010-servers-and-products.md). Note that Project Server doesn't support hybrid configuration because Project Server and Project Online can't share the same resource pool.
 
 ### What are my options for Project client?
 
-If you're using Project Professional 2010 or Project Standard 2010 and want to explore your migration options, your options are:
+If you're using Project Professional 2010 or Project Standard 2010, your options are:
 
 - Move to a newer version of Project Professional or Project Standard.
 - Move to an online solution, such as Project Online or Project for the web.
 
 #### Move to a newer version of Project client
 
-If you're migrating from Project Standard 2010, you can migrate to a newer version of Project Standard (Project Standard 2016 or Project Standard 2019). We recommend that you move to the newest version to take advantage of the latest features. Also, migrating to a less-current version (Project Standard 2016) means that you'll need to migrate again sooner.
+If you're migrating from Project Standard 2010, you can move to a newer version of Project Standard (Project Standard 2016 or Project Standard 2019). We recommend you move to the newest version to take advantage of the latest features. Migrating to a less-current version (Project Standard 2016) also means you'll need to migrate again sooner.
 
-Similarly, if you're migrating from Project Professional 2010, you can move to a newer version (Project Professional 2019 or Project Professional 2016). Again, move to the newest version if possible. If you're using Project Professional to connect to Project Server, make sure you migrate to a version of Project Professional that connects with the version of Project Server that you use.
+Similarly, if you're migrating from Project Professional 2010, you can move to a newer version (Project Professional 2019 or Project Professional 2016). Again, move to the newest version if possible. If you use Project Professional to connect to Project Server, make sure you migrate to a version of Project Professional that connects with the version of Project Server that you use.
 
 Project Professional 2010 users can also migrate to the Project Online Desktop client, which is a subscription-based version of Project Professional 2019. It's included in Project Plan 3 and Project Plan 5 subscriptions.
 
 #### Move to an online solution
 
-You can also migrate from Project Professional 2010 or Project Standard 2010 to the Project subscription-based online solutions. Both Project Plan 3 and Plan 5 include Project Online and the latest cloud offering, [Project for the web](https://support.office.com/article/what-can-you-do-with-project-for-the-web-b30f5442-be5f-43d2-9072-c95bff778ea1). Both offer new features and benefits that are worth exploring.
+You can also migrate from Project Professional 2010 or Project Standard 2010 to a Project subscription-based online solution. Both Project Plan 3 and Plan 5 include Project Online and the latest cloud offering, [Project for the web](https://support.office.com/article/what-can-you-do-with-project-for-the-web-b30f5442-be5f-43d2-9072-c95bff778ea1). Both offer new features and benefits that are worth exploring.
 
-For more information about features included in both as well as Project Plan licenses that they're included in, see the [Microsoft Project service description](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description).
+For more information about the features in both and the Project Plan licenses they're included in, see the [Microsoft Project ervice description](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description).
 
 ## Important considerations when planning to migrate from Project Server 2010
 
 Consider the following when you plan to migrate from Project Server 2010:
 
-- **Get help from a Microsoft solution provider** - An upgrade from Project Server 2010 can be a challenge. It requires much preparation and planning. It can be especially challenging if you weren't the person who set up Project Server 2010 originally. Microsoft solution providers are available to help, whether you plan to migrate to Project Server 2019 or to Project Online. Search for a Microsoft solution provider in the [Microsoft solution provider center](https://go.microsoft.com/fwlink/p/?linkid=841249).
+- **Get help from a Microsoft solution provider** - An upgrade from Project Server 2010 can be a challenge. It requires much preparation and planning. It can be especially challenging if you weren't the person who originally set up Project Server 2010. Microsoft solution providers are available to help, whether you plan to migrate to Project Server 2019 or to Project Online. Search for a solution provider in the [Microsoft solution provider center](https://go.microsoft.com/fwlink/p/?linkid=841249).
 
-- **Plan for your customizations** - Customizations  in your Project Server 2010 environment might not work when you migrate to Project Server 2019 or to Project Online. There are significant differences in Project Server architecture between versions. Also, the required operating systems, database servers, and client web browsers that work with the versions differ. Have a plan on how to test or rebuild your customizations as needed in the new environment. Planning for your upgrade will also be a good opportunity to verify if a specific customization is needed as you move forward. For more information, see [Create a plan for current customizations during upgrade to SharePoint 2013](https://docs.microsoft.com/SharePoint/upgrade-and-update/create-a-plan-for-current-customizations-during-upgrade-to-sharepoint-2013).
+- **Plan for your customizations** - Customizations  in your Project Server 2010 environment might not work when you migrate to Project Server 2019 or Project Online. There are significant differences in Project Server architecture between versions. Also, the required operating systems, database servers, and client web browsers that work with the versions differ. Have a plan on how to test or rebuild your customizations in the new environment. The the  opportunity to determine if specific customizations are still needed. For more information, see [Create a plan for current customizations during upgrade to SharePoint 2013](https://docs.microsoft.com/SharePoint/upgrade-and-update/create-a-plan-for-current-customizations-during-upgrade-to-sharepoint-2013).
 
-- **Time and patience** - Upgrade planning, execution, and testing will take much time and effort, especially if for an upgrade to Project Server 2019. For example, if you're migrating from Project Server 2010 to Project Server 2019, you must first migrate from Project Server 2010 to Project Server 2013, check your data, and then migrate to each successive version (to Project Server 2016 and then to Project Server 2019). You might want to check with a Microsoft solution provider for a timeframe and estimated cost.
+- **Time and patience** - Upgrade planning, execution, and testing will take considerable time and effort, especially for upgrade to Project Server 2019. If you're migrating from Project Server 2010 to Project Server 2019, you must first migrate from Project Server 2010 to Project Server 2013, check your data, and then migrate to each successive version (to Project Server 2016 and then to Project Server 2019). You might want to check with a Microsoft solution provider for a time frame and estimated cost for them to assist.
 
 ## Migrate to Project Online
 
@@ -105,7 +105,7 @@ If you choose to migrate from Project Server 2010 to Project Online, you can do 
 
 2. Using Project Professional 2016, Project Professional 2019, or the Project Online Desktop Client, open each .mpp file, and then save and publish it to Project Online.
 
-You can manually create your PWA configuration in Project Online (for example, recreate any needed custom fields or enterprise calendars). Microsoft solution providers can also help with this.
+You can manually create your PWA configuration in Project Online (for example, recreate any needed custom fields or enterprise calendars). Microsoft solution providers can also help with this process.
 
 Key resources:
 
@@ -116,14 +116,14 @@ Key resources:
 
 ## Migrate to a newer on-premises version of Project Server
 
-We strongly believe that you get the best value and user experience by migrating to Project Online. But we also understand some organizations need to keep project data in an on-premises environment. If you choose to keep your project data on-premises, you can migrate your Project Server 2010 environment to Project Server 2013, Project Server 2016, or Project Server 2019.
+We strongly believe that you get the best value and user experience by migrating to Project Online. But we also understand some organizations need to keep project data on-premises. If you choose to keep your project data on-premises, you can migrate your Project Server 2010 environment to Project Server 2013, Project Server 2016, or Project Server 2019.
 
-We recommend that you migrate to Project Server 2019 if you can't migrate to Project Online. Project Server 2019 includes most of the key the features in previous releases of Project Server. And it most closely matches the experience available with Project Online, although some features are available only in Project Online.
+If you can't migrate to Project Online, we recommend that you migrate to Project Server 2019. Project Server 2019 includes most of the key the features in previous releases of Project Server. And it most closely matches the experience available with Project Online, although some features are available only in Project Online.
 
-After you complete each migration, make sure that your data to make migrated successfully.
+After you complete each migration, make sure that your data migrated successfully.
 
 > [!NOTE]
-> If you're limited to an on-premises solution and considering only migrating to Project Server 2013, be ware that this version only has a few more years of support left. The end of support date for Project Server 2013 with Service Pack 2 October 13, 2023. For more information about end of support dates, see [Microsoft Product Lifecycle Policy](https://go.microsoft.com/fwlink/p/?linkid=842066).
+> If you're limited to an on-premises solution and considering only migrating to Project Server 2013, beware that this version only has a few more years of support left. The end of support date for Project Server 2013 with Service Pack 2 October 13, 2023. For more information about end-of-support dates, see [Microsoft Product Lifecycle Policy](https://go.microsoft.com/fwlink/p/?linkid=842066).
 
 ### How do I migrate to Project Server 2019?
 
@@ -147,18 +147,18 @@ Key resources:
 
 - [Overview of the Project Server 2013 upgrade process](https://go.microsoft.com/fwlink/p/?linkid=841822)
 
-  Get a high-level understanding of what you need to do to upgrade from Project Server 2010 to Project Server 2013.
+  Get a high-level overview of what you need to do to upgrade from Project Server 2010 to Project Server 2013.
 - [Plan to upgrade to Project Server 2013](https://go.microsoft.com/fwlink/p/?linkid=841823)
 
   Look at planning considerations when upgrading from Project Server 2010 to Project Server 2013, including system requirements.
 
-[What's new in Project Server 2013 upgrade](https://go.microsoft.com/fwlink/p/?linkid=841824) covers important changes for this version, including:
+[What's new in Project Server 2013 upgrade](https://go.microsoft.com/fwlink/p/?linkid=841824) covers important changes for this version, including these:
 
 - There's no in-place upgrade to Project Server 2013. The database-attach method is the only supported way to upgrade from Project Server 2010 to Project Server 2013.
 
 - The upgrade process will not only convert your Project Server 2010 data to Project Server 2013 format, but will also consolidate the four Project Server 2010 databases into a single Project Web App database.
 
-- Both SharePoint Server 2013 and Project Server 2013 changed to claims-based authentication from the previous version. You'll need to consider this when you upgrade if you're using classic authentication. For more information, see [Migrate from classic-mode to claims-based authentication in SharePoint 2013]( https://docs.microsoft.com/sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013).
+- Both SharePoint Server 2013 and Project Server 2013 changed to claims-based authentication from the previous version. If you're using classic authentication, you'll need to consider this when you upgrade. For more information, see [Migrate from classic-mode to claims-based authentication in SharePoint 2013]( https://docs.microsoft.com/sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013).
 
 Key resources:
 
@@ -172,7 +172,7 @@ Key resources:
 
 ### Step 2: Migrate to Project Server 2016
 
-After you migrate to Project Server 2013 and verify that your data has migrated successfully, the next step is to migrate to Project Server 2016.
+After you move to Project Server 2013 and verify that your data has migrated successfully, the next step is to migrate to Project Server 2016.
 
 For more information, see [Upgrade to Project Server 2016](https://docs.microsoft.com/Project/upgrade-to-project-server-2016).
 
@@ -184,7 +184,7 @@ Key resources:
 
 - [Plan for upgrade to Project Server 2016](https://docs.microsoft.com/Project/plan-for-upgrade-to-project-server-2016)
 
-  Look at planning considerations to make when upgrading from Project Server 2013 to Project Server 2016.
+  Look at  the planning considerations to make when upgrading from Project Server 2013 to Project Server 2016.
 
 [Things you need to know about Project Server 2016 upgrade](https://docs.microsoft.com/project/plan-for-upgrade-to-project-server-2016#thingknow) covers important changes for upgrading to this version, which include:
 
@@ -196,7 +196,7 @@ Key resources:
 
 After you migrate to Project Server 2016 and verify that your data migrated successfully, the next step is to migrate your data to Project Server 2019.
 
-To understand of what you need to do to upgrade from Project Server 2016 to Project Server 2019, see [Upgrade to Project Server 2019](https://docs.microsoft.com/Project/upgrade-to-project-server-2016).
+To learn what you need to do to upgrade from Project Server 2016 to Project Server 2019, see [Upgrade to Project Server 2019](https://docs.microsoft.com/Project/upgrade-to-project-server-2016).
 
 Key resources:
 
@@ -212,11 +212,11 @@ Key resources:
 
 - The upgrade process will migrate your data from your Project Server 2016 database to the SharePoint Server 2019 Content database.  Project Server 2019 will no longer create its own Project Server database in the SharePoint Server farm.
 
-- After upgrade, be aware of several changes in Project Web App.  For details, see [What's new in Project Server 2019](https://docs.microsoft.com/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
+- After the upgrade, be aware of several changes in Project Web App.  For details, see [What's new in Project Server 2019](https://docs.microsoft.com/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
 
 **Other resources**:
 
-- [Project Online Service Descriptions](https://go.microsoft.com/fwlink/p/?linkid=841280): See the portfolio management features that are included with Project Server 2016 and Project Online Premium.
+- [Project Online Service Descriptions](https://go.microsoft.com/fwlink/p/?linkid=841280): See the portfolio management features included with Project Server 2016 and Project Online Premium.
 
 - [Microsoft Office Project Portfolio Server 2010 migration guide](https://go.microsoft.com/fwlink/p/?linkid=841279)
 
@@ -224,7 +224,7 @@ Key resources:
 
 For a visual summary of the upgrade, migrate, and move-to-the-cloud options for Office 2010 clients and servers and Windows 7, see the [end of support poster](../downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![Image for the end of support for Office 2010 clients and servers and Windows 7 poster](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![End of support for Office 2010 clients and servers and Windows 7 poster](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 This one-page poster illustrates the various paths you can take to avoid end of support for Office 2010 client and server products and Windows 7, with preferred paths and option support in Microsoft 365 Enterprise highlighted.
 
