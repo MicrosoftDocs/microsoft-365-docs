@@ -143,6 +143,7 @@ To ensure that SharePoint documents that contain sensitive information cannot be
 DLP policy in action when attempting to share a document in SharePoint that contains sensitive information with an external guest:
 <br/>![External sharing blocked](../media/dlp-teams-external-sharing/external-sharing-blocked.png)<br/>
 
+
 DLP policy in action when guest attempts to open a document in Teams with block external:
 <br/>![External access blocked](../media/dlp-teams-external-sharing/external-access-blocked.png)<br/>
 
