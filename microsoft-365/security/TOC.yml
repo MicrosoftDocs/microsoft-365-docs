@@ -35,13 +35,13 @@
           href: mtp/microsoft-secure-score-whats-coming.md
         - name: What's new
           href: mtp/microsoft-secure-score-whats-new.md
-    - name: Microsoft Threat Protection
+    - name: Microsoft 365 Defender
       items: 
         - name: Overview
           items: 
-            - name: What is Microsoft Threat Protection?
+            - name: What is Microsoft 365 Defender?
               href: mtp/microsoft-threat-protection.md
-            - name: What's new in Microsoft Threat Protection
+            - name: What's new in Microsoft 365 Defender
               href: mtp/whats-new.md
             - name: Preview features
               href: mtp/preview.md
@@ -67,7 +67,7 @@
               href: mtp/setup-mtpeval.md
             - name: Configure and onboard
               href: mtp/config-mtpeval.md
-            - name: Start the Microsoft Threat Protection service
+            - name: Start the Microsoft 365 Defender service
               href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
             - name: Generate a test alert
               href: mtp/generate-test-alert.md
@@ -91,7 +91,7 @@
               href: mtp/mtp-pilot.md
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
-            - name: Turn on Microsoft Threat Protection
+            - name: Turn on Microsoft 365 Defender
               href: mtp/mtp-enable.md
             - name: Turn on FAQ
               href: mtp/mtp-enable-faq.md
@@ -251,15 +251,15 @@
                       href: ./mtp/tickets.md
                     - name: ServiceNow tickets in the security center
                       href: ./mtp/tickets-security-center.md
-            - name: Microsoft Threat Protection APIs (Preview)
+            - name: Microsoft 365 Defender APIs (Preview)
               items: 
-                - name: Overview of Microsoft Threat Protection APIs (Preview)
+                - name: Overview of Microsoft 365 Defender APIs (Preview)
                   href: mtp/api-overview.md
-                - name: Get started with Microsoft Threat Protection APIs (Preview)
+                - name: Get started with Microsoft 365 Defender APIs (Preview)
                   items: 
-                    - name: Microsoft Threat Protection API license and terms of use
+                    - name: Microsoft 365 Defender API license and terms of use
                       href: mtp/api-terms.md
-                    - name: Access Microsoft Threat Protection APIs
+                    - name: Access Microsoft 365 Defender APIs
                       href: mtp/api-access.md
                     - name: Hello World example
                       href: mtp/api-hello-world.md
@@ -271,9 +271,9 @@
                       href: mtp/api-partner-access.md
                     - name: Other API resources
                       href: mtp/api-articles.md
-                - name: Microsoft Threat Protection APIs & schema (Preview)
+                - name: Microsoft 365 Defender APIs & schema (Preview)
                   items: 
-                    - name: Supported Microsoft Threat Protection APIs
+                    - name: Supported Microsoft 365 Defender APIs
                       href: mtp/api-supported.md
                     - name: Common REST API error codes
                       href: mtp/api-error-codes.md
