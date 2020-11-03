@@ -17,13 +17,13 @@ ms.collection:
 description: "Manage security for Office 365 and endpoint devices in the same place, the Microsoft 365 Security center. This article outlines what's new and where to find things."
 ---
 
-# The Microsoft Security center
+# The Microsoft 365 Security center
 
 The new [Microsoft 365 security](https://security.microsoft.com) center combines security capabilities that protect, detect, investigate, and respond to email, collaboration, *and* device threats. It brings together features in Microsoft Defender for Endpoint (MSDE), with Microsoft Defender for Office 365 (MSDO) features.
 
 The URL to access and assess this page is: https://security.microsoft.com
 
-The left navigation, or quick launch bar, will look familiar, but there are some new features aimed at working with greater efficiency.
+The left navigation, or quick launch bar, will look familiar, but there are some new or updated elements in this security center.
 <p>    
 
 |Alerts & Actions  |Endpoints  |Email & Collaboration  |Access & Reporting  |
@@ -33,24 +33,24 @@ The left navigation, or quick launch bar, will look familiar, but there are some
 > [!IMPORTANT]
 > The Microsoft 365 Security portal (https://security.microsoft.com) **combines** security features in https://securitycenter.windows.com, and https://protection.office.com. However, what *you* see will depend on your subscription. If you have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints.
 
-The home page of the new portal will surface Secure Score ratings, the number of users and devices at risk, active incident illuminated lists, lists of privileged OAuth apps, device health data, informative tweets from Microsoft’s security intelligence feed, and more. You’ll also see security notifications if there are any available upon arrival.
+The home page of the new portal surfaces Secure Score ratings, the number of users and devices at risk, active incident lists, lists of privileged OAuth apps, device health data, informative tweets from Microsoft’s security intelligence feed, and more. As soon as you arrive at this information page, you’ll also see a pop-up for security notifications if there are any.
 
 :::image type="content" source="../../media/Converge 5 Microsoft 365 Security center.png" alt-text="This is the Microsoft Security center page with Home, Endpoints, Email and Collaboration, and miscellaneous areas.":::
 
-This page welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
+This page also welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
 
 - The links under ‘Next steps’ will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
 - ‘Give feedback’ will allow you to both [join the Windows Insider program](https://insider.windows.com/en-us/) to preview and review coming changes, and the **leave feedback** on your experiences with the new portal.
 
-This ‘Welcome’ page will disappear after you navigate through the Next button to Close, so be sure to take note of any URLs you’d want for your record. 
+The ‘Welcome’ page will disappear after you navigate through the Next button to Close, so be sure to take note of any URLs you’d want for your record, or bookmark this page (since they're listed above).
 
-The ‘Guided Tour’ bar, however, will remain on the page and has these useful features.  
+The ‘Guided Tour’ bar will remain on the page and has these useful features.  
 
 :::image type="content" source="../../media/Converge 12 Home Page Guided Tour bar.gif" alt-text="An animation showing the Guided tour drop down (giving tours of Endpoint and Email and Collaboration pages, a link to the Office 365 Security and Compliance center, and the What's New page curated by the Product Group for Office 365 Security.":::
 
 ## Changed and unchanged Security features
 
-This table is a quick check list of areas where the most change has occurred between the Security & Compliance center and the Microsoft 365 Security portal.
+This table is a quick reference of areas where change has occurred between the Security & Compliance center and the Microsoft 365 Security portal.
 
 |**Changed**  |**Unchanged**  |
 |---------|---------|
