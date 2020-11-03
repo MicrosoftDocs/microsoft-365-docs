@@ -25,7 +25,7 @@ Use the resources on this page to help you meet specific regulatory requirements
 
 Downloaded the resources from the [Data Protection Resources, FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) page of the Service Trust Portal.
 
-## Cohasset assessment for SEC 17a-4(f), FINRA 4511(c) and CFTC 1.31(c)-(d)
+## Cohasset assessment for SEC 17a-4(f), FINRA 4511(c), and CFTC 1.31(c)-(d)
 
 Applicable workloads: Exchange, SharePoint, OneDrive, Teams, Skype for Business
 
