@@ -59,15 +59,15 @@ Within Threat Explorer, you can see information around user tags in the followin
 The Tags column shown in the email grid would contain all the tags that have been applied to the sender or recipient mailboxes. By default, system tags like priority accounts are shown first.
 
 > [!div class="mx-imgBorder"]
-> ![Filter Tags](../../media/tags-grid.png)
+> ![Filter tags in email grid view](../../media/tags-grid.png)
 
 #### Filtering
 We now have Tags as a filter so you can hunt just across priority accounts, or specific User tags scenarios (and even exclude results with certain tags as part of this experience). Combining these with the multiple other filters that we provide, would help you to narrow down your scope of investigation
 
-[ ![Filter Tags](../../media/tags-filter-normal.png) ](../../media/tags-filter-normal.png#lightbox)
+[ ![Filter tags](../../media/tags-filter-normal.png) ](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![Not Filter Tags](../../media/tags-filter-not.png)
+> ![Not filter tags](../../media/tags-filter-not.png)
 
 #### Email Detail Flyout
 To view the individual tags for sender and Recipient, click on the subject. It opens the message details flyout. In the summary tab, sender and recipient tags are shown separately, if they are present for an email.
@@ -382,7 +382,7 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
 2. In the **View** menu, choose **Email** > **Phish**.
 
    > [!div class="mx-imgBorder"]
-   > ![View menu for Explorer](../../media/ExplorerViewEmailPhishMenu.png)
+   > ![View menu for Explorer in phishing context](../../media/ExplorerViewEmailPhishMenu.png)
 
 3. Click **Sender**, and then choose **URLs** > **Click verdict**.
 
@@ -429,7 +429,7 @@ Suppose that you want to see email messages that users in your organization have
 2. In the **View** menu, choose **Email** > **Submissions**.
 
    > [!div class="mx-imgBorder"]
-   > ![View menu for Explorer](../../media/explorer-view-menu-email-user-reported.png)
+   > ![View menu for Explorer for emails](../../media/explorer-view-menu-email-user-reported.png)
 
 3. Click **Sender**, and then choose **Basic** > **Report type**.
 
