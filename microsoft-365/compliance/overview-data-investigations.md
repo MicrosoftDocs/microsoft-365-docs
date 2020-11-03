@@ -20,6 +20,11 @@ ms.custom:
 description: In this article, you'll learn about the Data Investigations (preview) tool in Microsoft 365. The Data Investigations tool helps you assess and remediate the data spillage.  
 ---
 
+> [!IMPORTANT]
+> After much deliberation and discussions with our customers, we've decided not to release the Data Investigations tool to General Availability. As a result, we will remove this tool and any data associated with existing Data Investigations cases on December 31, 2020.  To manage data investigations in your organization, we recommend that you use Core eDiscovery cases. If you need to search for and purge content from Microsoft 365, please see the following articles: 
+> - [eDiscovery solution series: Data spillage scenario - Search and purge](https://docs.microsoft.com/microsoft-365/compliance/data-spillage-scenariosearch-and-purge)
+> - [Search for and delete email messages](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
+
 # Overview of Data Investigations (preview) in Microsoft 365
 
 A data spill occurs when a document containing confidential, sensitive, or malicious content is released into an untrusted environment. When a data spill is detected, it's important to quickly contain the environment, assess the size and locations of the spillage, examine user activities around it, and then delete the spilled data from the service. Using the new Data Investigations (preview) tool, you can search for sensitive, malicious, or misplaced data across Office 365, investigate what happened, and take the appropriate actions to remediate the spillage.  
