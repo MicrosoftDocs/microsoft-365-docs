@@ -24,7 +24,6 @@ The new [Microsoft 365 security](https://security.microsoft.com) center combines
 The URL to access and assess this page is: https://security.microsoft.com
 
 The left navigation, or quick launch bar, will look familiar, but there are some new features aimed at working with greater efficiency.
-
 <p>    
 
 |Alerts & Actions  |Endpoints  |Email & Collaboration  |Access & Reporting  |
