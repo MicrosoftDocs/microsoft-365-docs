@@ -1,4 +1,3 @@
----
 title: "Use Preservation Lock to restrict changes to retention policies and retention label policies"
 f1.keywords:
 - NOCSH
@@ -40,7 +39,7 @@ Configure Preservation Lock after you've created a [retention policy](create-ret
 
 You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-restrict-changes-to-policies), for example, to comply with regulatory requirements. Because administrators can't disable or delete a policy for retention after a preservation lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.
 
-All policies for retention and with any configuration support Preservation Lock. However, when you use the PowerShell commands that follow, you'll notice that the **Workload** parameter always displays **Exchange, SharePoint, OneDriveForBusines, Skype, ModernGroup** rather than reflect the actual workloads configured in the policy. This is a display issue only.
+All policies for retention and with any configuration support Preservation Lock.
 
 1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
