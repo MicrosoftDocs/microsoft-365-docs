@@ -1,5 +1,5 @@
 ---
-title: "Learn about Microsoft 365 Endpoint data loss prevention"
+title: "Learn about Microsoft 365 Endpoint data loss prevention (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ search.appverid:
 description: "Microsoft 365 Endpoint data loss prevention extends monitoring of file activities and protective actions for those file to endpoints. Files are made visible in the Microsoft 365 compliance solutions "
 ---
 
-# Learn about Microsoft 365 Endpoint data loss prevention
+# Learn about Microsoft 365 Endpoint data loss prevention (preview)
 
 You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items. For more information on DLP, see [Overview of data loss prevention](data-loss-prevention-policies.md).
 
@@ -64,7 +64,7 @@ Onboarding and offboarding are handled via scripts you download from the Device 
 
  Use the procedures in [Getting started with Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) to onboard devices.
 
-If you have onboarded devices through [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/), those devices will automatically show up in the list of devices.
+If you have onboarded devices through [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/), those devices will automatically show up in the list of devices.
 
 ![managed devices list](../media/endpoint-dlp-learn-about-2-device-list.png)
 
@@ -137,5 +137,5 @@ Now that you've learned about Endpoint DLP, your next steps are:
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Insider Risk management](insider-risk-management.md)

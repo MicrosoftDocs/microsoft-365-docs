@@ -46,7 +46,7 @@ This table shows the differences between Microsoft 365 Business Premium and Offi
 | StaffHub    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
 | Outlook Customer Manager, MileIQ    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Threat Protection**        | | | 
-| Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
+| Defender for Office 365 Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
 | **Identity management**        | | | 
 | Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
 | **Device and app management**        | | |
@@ -117,7 +117,7 @@ Microsoft 365 Business Premium has a 50 GB storage limit as it uses Exchange Onl
 
 ### Threat protection
 
-After migrating to Microsoft 365 Business Premium, you have Office 365 ATP. See [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) for an overview. To set up, see [set up ATP safe links](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), [set up ATP safe attachments](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), and [set up ATP anti-phishing](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
+After migrating to Microsoft 365 Business Premium, you have Defender for Office 365. See [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) for an overview. To set up, see [set up Safe Links](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), [set up Safe Attachments](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), and [set up Anti-phishing in Defender for Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### Sensitivity labels
 

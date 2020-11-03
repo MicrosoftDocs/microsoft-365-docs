@@ -18,18 +18,18 @@ ms.collection:
 - M365-security-compliance 
 - m365initiative-defender-office365
 - seo-marvel-apr2020
-description: "Admins can learn about the Safe Attachments feature in Office 365 Advanced Threat Protection (ATP)."
+description: "Admins can learn about the Safe Attachments feature in Microsoft Defender for Office 365."
 ---
 
-# Safe Attachments in Office 365 ATP
+# Safe Attachments in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Safe Attachments in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) provides an additional layer of protection for email attachments that have already been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md). Specifically, Safe Attachments uses a virtual environment to check attachments in email messages before they're delivered to recipients (a process known as _detonation_).
+Safe Attachments in [Microsoft Defender for Office 365](office-365-atp.md) provides an additional layer of protection for email attachments that have already been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md). Specifically, Safe Attachments uses a virtual environment to check attachments in email messages before they're delivered to recipients (a process known as _detonation_).
 
-Safe Attachments protection for email messages is controlled by Safe Attachments policies. There is no default Safe Attachments policy, **so to get the protection of Safe Attachments, you need to create one or more Safe Attachments policies**. For instructions, see [Set up Safe Attachments policies in ATP](set-up-atp-safe-attachments-policies.md).
+Safe Attachments protection for email messages is controlled by Safe Attachments policies. There is no default Safe Attachments policy, **so to get the protection of Safe Attachments, you need to create one or more Safe Attachments policies**. For instructions, see [Set up Safe Attachments policies in Defender for Office 365](set-up-atp-safe-attachments-policies.md).
 
-The following table describes scenarios for Safe Attachments in Microsoft 365 and Office 365 organizations that include ATP (in other words, lack of licensing is never an issue in the examples).
+The following table describes scenarios for Safe Attachments in Microsoft 365 and Office 365 organizations that include Microsoft Defender for Office 365 (in other words, lack of licensing is never an issue in the examples).
 
 ****
 
@@ -120,7 +120,7 @@ There are scenarios where Dynamic Delivery is unable to replace attachments in m
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) encrypted messages.
 
-- You configured the Dynamic Delivery action in a Safe Attachments policy, but the recipient doesn't support Dynamic Delivery (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Office 365 ATP](set-up-atp-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the [global settings for Safe Links](configure-global-settings-for-safe-links.md) are configured).
+- You configured the Dynamic Delivery action in a Safe Attachments policy, but the recipient doesn't support Dynamic Delivery (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Microsoft Defender for Office 365](set-up-atp-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the [global settings for Safe Links](configure-global-settings-for-safe-links.md) are configured).
 
 ## Submitting files for malware analysis
 
