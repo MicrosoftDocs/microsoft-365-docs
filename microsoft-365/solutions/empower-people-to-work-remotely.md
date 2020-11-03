@@ -16,8 +16,8 @@ ms.collection:
 - m365solution-remotework
 - m365solution-overview
 - M365initiative-coredeploy
-ms.custom: 
-description: Configure the security and service infrastructure that allows your workers to work remotely from anywhere and at any time.
+ms.custom: seo-marvel-jun2020
+description: Make sure you have enabled all features in Microsoft 365 to maximize remote worker productivity and maintain secure access to your servers, data, and cloud.
 ---
 
 # Empower remote workers with Microsoft 365
