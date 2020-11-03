@@ -23,11 +23,13 @@ description: "Resources to help you meet regulatory requirements for information
 
 Use the resources on this page to help you meet specific regulatory requirements for information governance and records management in Microsoft 365.
 
-This page will be updated as new guidance from third-parties becomes available on the [Data Protection Resources, FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) page of the Service Trust Portal.
+All resources can be downloaded from the [Data Protection Resources, FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) page of the Service Trust Portal. This page will be updated as new guidance from third-parties becomes available.
 
-## Cohasset assessment
+## Cohasset assessment for SEC 17a-4(f), FINRA 4511(c) and CFTC 1.31(c)-(d)
 
 Applicable workloads: Exchange, SharePoint, OneDrive, Teams, Skype for Business
+
+Name: **Cohasset Assessment - Microsoft 365 - SEC Rule 17a-4(f) - Immutable Storage for SharePoint, OneDrive, Teams, Exchange, and Skype**
 
 Released November 2020, this report has been produced in partnership with Cohasset Associates, Inc. (Cohasset) to assesses the capabilities of Microsoft 365 services for recording, storing and managing requirements for electronic records, as specified by:  
 
