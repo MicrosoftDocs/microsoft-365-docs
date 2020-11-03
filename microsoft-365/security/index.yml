@@ -48,13 +48,13 @@ landingContent:
           url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/     
 
   # Card
-  - title: Azure ATP
+  - title: Microsoft Defender for Identity
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Azure ATP?
+          - text: What is Microsoft Defender for Identity?
             url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
-          - text: Azure ATP architecture
+          - text: Microsoft Defender for Identity architecture
             url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
 
    # Card

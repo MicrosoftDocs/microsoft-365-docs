@@ -47,7 +47,7 @@ The Microsoft 365 security center includes:
 
 * **Home** – Get at-a-glance view of the overall security health of your organization.
 * **Incidents** - See the broader story of an attack by connecting the dots seen on individual alerts on entities. You'll know exactly where an attack started, what devices are impacted, who was affected, and where the threat has gone.
-* **Alerts** – Have greater visibility into all the alerts across your Microsoft 365 environment. Includes alerts from Microsoft Cloud App Security, Office 365 ATP, Azure Active Directory, Azure ATP, and Microsoft Defender ATP. Available to E3 and E5 customers.  
+* **Alerts** – Have greater visibility into all the alerts across your Microsoft 365 environment. Includes alerts from Microsoft Cloud App Security, Microsoft Defender for Office 365, Azure Active Directory, Microsoft Defender for Identity, and Microsoft Defender for Endpoint. Available to E3 and E5 customers.  
 * **Action center** - Reduce the volume of alerts your security team must address manually, allowing your security operations team to focus on more sophisticated threats and other high-value initiatives.
 * **Reports** – Get the detail and information you need to better protect your users, devices, apps, and more.
 * **Secure score** – Improve your overall security posture with Microsoft Secure Score. This page provides an all up summary of the different security features and capabilities you've enabled and includes recommendations for areas to improve.
