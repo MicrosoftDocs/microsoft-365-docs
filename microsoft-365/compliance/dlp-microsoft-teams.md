@@ -122,6 +122,30 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 Allow approximately one hour for your new policy to work its way through your data center and sync to user accounts.
 
+## Prevent external access to sensitive documents
+
+To ensure that SharePoint documents that contain sensitive information cannot be accessed by external guests either from SharePoint or Teams by default, select the following:
+
+- You can ensure that documents are protected until DLP scans and marks them as safe to share by [marking new files as sensitive by default](https://docs.microsoft.com/en-us/sharepoint/sensitive-by-default)
+- Recommended DLP policy structure
+    - **Conditions**
+        - Content contains any of these sensitive information types: [Select all that applies]
+        - Content is shared from Microsoft 365 with people outside my organization
+        <br/>![DLP conditions to detect external sharing of sensitive content](../media/dlp-teams-external-sharing/external-condition.png)<br/>
+
+
+    - **Actions**
+        - Restrict access to the content for external users
+        - Notify users with email and policy tips
+        - Send incident reports to the Administrator    
+        <br/>![DLP action to block external sharing of sensitive content](../media/dlp-teams-external-sharing/external-action.png)<br/>
+
+DLP policy in action when attempting to share a document in SharePoint that contains sensitive information with an external guest:
+<br/>![External sharing blocked](../media/dlp-teams-external-sharing/external-sharing-blocked.png)<br/>
+
+DLP policy in action when guest attempts to open a document in Teams with block external:
+<br/>![External access blocked](../media/dlp-teams-external-sharing/external-access-blocked.png)<br/>
+
 ## Related articles
 
 [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
