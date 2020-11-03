@@ -44,19 +44,19 @@ The following two examples show how to modify an existing visual and how to crea
 
 This example shows how to modify the **Activation** tab within the **Activation/Licensing** report. 
   
-1. Within the **Activation/Licensing** report, click on the **Activation** tab.
+1. Within the **Activation/Licensing** report, select the **Activation** tab.
     
-2. Enter the edit mode by clicking the **Edit** button on the top through the ![The more page button in Power BI](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) button. 
+2. Enter the edit mode by choosing the **Edit** button on the top through the ![The more page button in Power BI](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) button. 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
-3. On the top right, click **Duplicate this page**.
+3. On the top right, choose **Duplicate this page**.
     
     ![Choose Duplicate this page](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
   
-4. In the bottom right, click on any of the bar charts showing the count of users activating based on the OS such as Android, iOS, Mac, etc.
+4. In the bottom right, choose any of the bar-charts showing the count of users activating based on the OS such as Android, iOS, Mac, etc.
     
-5. In the **Visualizations** area to the right, in order to remove **Mac Count** from the visual, click on the **X** next to it.
+5. In the **Visualizations** area to the right, in order to remove **Mac Count** from the visual, select the **X** next to it.
 
     ![Remove Mac Count](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
     
@@ -64,17 +64,17 @@ This example shows how to modify the **Activation** tab within the **Activation/
 
 The following example shows how to create a new visual to track new Yammer users on monthly basis.
   
-1. Go to the **Product Usage** report using the left nav and click on **Yammer** tab.
+1. Go to the **Product Usage** report using the left nav and select the **Yammer** tab.
     
-2. Switch to edit mode by clicking on ![The more page button in Power BI](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) and **Edit**. 
+2. Switch to edit mode by choosing ![The more page button in Power BI](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) and **Edit**. 
     
-3. At the bottom of the page, click on ![The add page button in Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) to create a new page.
+3. At the bottom of the page, select the ![The add page button in Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) to create a new page.
   
-4. In the **Visualizations** area to the right, click the **Stacked bar chart** (top row, first from left).
+4. In the **Visualizations** area to the right, choose the **Stacked bar chart** (top row, first from left).
 
     ![Select Bar Chart](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
-5. Click the bottom right of that visualization and drag to make it larger.
+5. Select the bottom right of that visualization and drag to make it larger.
 
 6. In the **Fields** area to the right, expand the **Calendar** table.
 
@@ -92,7 +92,7 @@ The following example shows how to create a new visual to track new Yammer users
 
     ![Select Yammer checkbox](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. Just below the list of visualizations, click the **Format** icon ![Format icon in Power BI Visualizaions](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png).
+12. Just below the list of visualizations, choose the **Format** icon ![Format icon in Power BI Visualizaions](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png).
 
 13. Expand Title and change the **Title Text** value to **First-Time Yammer Users by Month**.
     
@@ -125,7 +125,7 @@ You can start by connecting directly to the ODATA reporting APIs from Microsoft 
     
 4. Once the connection is authorized, you will see the Navigator window that shows the datasets available to connect to.
     
-    Select all and click on **Load**.
+    Select all and choose **Load**.
     
     This will download the data into your Power BI Desktop. Save this file and then you can start creating the reports you need.
     

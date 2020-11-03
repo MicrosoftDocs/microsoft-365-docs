@@ -1,5 +1,5 @@
 ---
-title: Turn on Office 365 ATP - SharePoint, OneDrive, & Teams
+title: Turn on Microsoft Defender for Office 365 - SharePoint, OneDrive, & Teams
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files. For more information, see [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Microsoft Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files. For more information, see [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 This article contains the steps for enabling and configuring ATP for SharePoint, OneDrive, and Microsoft Teams.
 

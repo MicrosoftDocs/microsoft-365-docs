@@ -59,7 +59,7 @@ When content is declared a record:
 
 - You have proof of disposition when the items are deleted at the end of their retention period.
 
-You use [retention labels](retention.md#retention-labels) to mark content as a **record**, or a **regulatory record** (currently in preview). The difference between these two are explained in the next section. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record or a regulatory record.
+You use [retention labels](retention.md#retention-labels) to mark content as a **record**, or a **regulatory record**. The difference between these two are explained in the next section. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record or a regulatory record.
 
 By using retention labels to declare records, you can implement a single and consistent strategy for managing records across your Microsoft 365 environment.
 

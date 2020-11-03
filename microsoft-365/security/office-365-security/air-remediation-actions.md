@@ -48,7 +48,7 @@ The following table summarizes threats and appropriate remediation actions in Mi
 |Category|Threat/risk|Remediation action(s)|
 |---|---|---|
 |Email|Malware|Soft delete email/cluster​ <br/><br/>If more than a handful of email messages in a cluster contain malware, the cluster is considered to be malicious.​|
-|Email|Malicious URL​<br/>(A malicious URL was detected by [Safe Links in Office 365 ATP](atp-safe-links.md).|Soft delete email/cluster​ <br/><br/>Email that contains a malicious URL is considered to be malicious​.|
+|Email|Malicious URL​<br/>(A malicious URL was detected by [Safe Links in Microsoft Defender for Office 365](atp-safe-links.md).|Soft delete email/cluster​ <br/><br/>Email that contains a malicious URL is considered to be malicious​.|
 |Email|Phish|Soft delete email/cluster​ <br/><br/>If more than a handful of email messages in a cluster contain phishing attempts, the cluster is considered to be phish.​|
 |Email|Zapped phish​ <br/>(Email messages were delivered and [zapped​](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge).)|Soft delete email/cluster​ <br/><br/>Reports are available to view zapped messages. [See if ZAP moved a message and FAQs](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge#how-to-see-if-zap-moved-your-message).|
 |Email|Missed phish email [reported](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) by a user|[Automated investigation triggered by the user's report](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-user-reported-phish-message-launches-an-investigation-playbook)|

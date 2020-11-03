@@ -2,7 +2,7 @@
 title: "Install and use the Junk Email Reporting add-in for Microsoft Outlook"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date:
