@@ -57,7 +57,7 @@ At a high level, an alert is triggered, and a security playbook starts an automa
     As pending remediation actions are approved (or rejected), the automated investigation completes.
 
 > [!NOTE]
-> In Office 365 ATP, no remediation actions are taken automatically. Remediation actions are taken only upon approval by your organization's security team. 
+> In Microsoft Defender for Office 365, no remediation actions are taken automatically. Remediation actions are taken only upon approval by your organization's security team. 
 
 During and after an automated investigation process, your security team can do the following:
 

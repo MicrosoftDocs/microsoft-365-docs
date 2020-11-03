@@ -24,9 +24,9 @@ ms.custom: seo-marvel-apr2020
 
 # Threat Explorer and Real-time detections
 
-If your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **Real-time detections** (formerly *Real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
+If your organization has [Microsoft Defender for Office 365](office-365-atp.md), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **Real-time detections** (formerly *Real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
 
-|With ATP Plan 2, you see:|With ATP Plan 1, you see:|
+|With Microsoft Defender for Office 365 Plan 2, you see:|With Microsoft Defender for Office 365 Plan 1, you see:|
 |---|---|
 |![Threat explorer](../../media/threatmgmt-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -39,7 +39,7 @@ With this report, you can:
 
 - [See malware detected by Microsoft 365 security features](#see-malware-detected-in-email-by-technology)
 - [View data about phishing URLs and click verdict](#view-data-about-phishing-urls-and-click-verdict)
-- [Start an automated investigation and response process from a view in Explorer](#start-automated-investigation-and-response) (ATP Plan 2 only)
+- [Start an automated investigation and response process from a view in Explorer](#start-automated-investigation-and-response) (Defender for Office 365 Plan 2 only)
 - ... [Investigate malicious email, and more](#more-ways-to-use-explorer-or-real-time-detections)!
 
 
@@ -50,7 +50,7 @@ With this report, you can:
 > [!NOTE]
 > The user tags feature is in Preview, isn't available to everyone, and is subject to change. For information about the release schedule, check out the Microsoft 365 roadmap.
 
-User tags are identifiers for specific groups of users in Microsoft Defender for Office 365. For more information around Tags, licensing and configuring Tags, read more here: [User tags in Office 365 ATP](user-tags.md).
+User tags are identifiers for specific groups of users in Microsoft Defender for Office 365. For more information around Tags, licensing and configuring Tags, read more here: [User tags in Defender for Office 365](user-tags.md).
 
 Within Threat Explorer, you will be able to see information around User Tags in the following experiences:
 
@@ -428,12 +428,12 @@ Suppose that you want to see email messages that users in your organization have
    > [!div class="mx-imgBorder"]
    > ![User-reported phish](../../media/EmailUserReportedReportType.png)
 
-The report refreshes to show data about email messages that people in your organization have reported as a phishing attempt. You can use this information to conduct further analysis, and if necessary, adjust your [ATP anti-phishing policies](configure-atp-anti-phishing-policies.md).
+The report refreshes to show data about email messages that people in your organization have reported as a phishing attempt. You can use this information to conduct further analysis, and if necessary, adjust your [anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 ## Start automated investigation and response
 
 > [!NOTE]
-> Automated investigation and response capabilities are available in **Office 365 ATP Plan 2** and **Office 365 E5**.
+> Automated investigation and response capabilities are available in **Microsoft Defender for Office 365 Plan 2** and **Office 365 E5**.
 
 (NEW!) [Automated investigation and response](automated-investigation-response-office.md) can save your security operations team much time and effort in investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer.
 
@@ -451,11 +451,11 @@ In addition to the scenarios outlined in this article, you have many more report
 
 ## Required licenses and permissions
 
-You must have [Office 365 ATP](office-365-atp.md) to get Explorer or Real-time detections.
+You must have [Microsoft Defender for Office 365](office-365-atp.md) to get Explorer or Real-time detections.
 
-- Explorer is included in Office 365 ATP Plan 2.
-- The Real-time detections report is included in Office 365 ATP Plan 1.
-- Plan to assign licenses for all users who should be protected by Office 365 ATP. (Explorer or Real-time detections shows detection data for licensed users.)
+- Explorer is included in Defender for Office 365 Plan 2.
+- The Real-time detections report is included in Defender for Office 365 Plan 1.
+- Plan to assign licenses for all users who should be protected by Defender for Office 365. (Explorer or Real-time detections shows detection data for licensed users.)
 
 To view and use Explorer or Real-time detections, you must have appropriate permissions, such as those granted to a security administrator or security reader.
 
@@ -479,9 +479,9 @@ To learn more about roles and permissions, see the following resources:
 
 ## Some differences between Threat Explorer and Real-time detections
 
-- The **Real-time detections** report is available in Office 365 ATP Plan 1, whereas **Threat Explorer** is available in Office 365 ATP Plan 2.
+- The **Real-time detections** report is available in Defender for Office 365 Plan 1, whereas **Threat Explorer** is available in Defender for Office 365 Plan 2.
 - The **Real-time detections** report allows you to view detections in real-time. **Threat Explorer** does this as well, but also allows you to view additional details for a given attack.
 - An **All email** view is available in **Threat Explorer** (and is not in the **Real-time detections** report).
 - More filtering capabilities and available actions are included in **Threat Explorer**.
 
-For more details, see [Office 365 ATP Service Description: Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+For more details, see [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
