@@ -354,7 +354,7 @@ To access Advanced eDiscovery v2.0:
 
 2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Advanced**.
 
-At this time, we recommend that you begin to transition your eDiscovery workflow to the new Advanced eDiscovery functionality. If required, you can archive your Advanced eDiscovery 1.0 cases by exporting the content and storing offline. Although you'll still be able to access Advanced eDiscovery v1.0 in existing cases until December 31, 2020, Microsoft Support won't provide support after October 1, 2020. See the following timeline for more details.
+At this time, we recommend that you begin to transition your eDiscovery workflow to the new Advanced eDiscovery functionality. If required, you can archive your Advanced eDiscovery 1.0 cases by exporting the content and storing it offline. Although you'll still be able to access Advanced eDiscovery v1.0 in existing cases until December 31, 2020, Microsoft Support won't provide support after October 1, 2020. See the following timeline for more details.
 
 ### Scope of affected organizations
 
@@ -372,7 +372,7 @@ At this time, we recommend that you begin to transition your eDiscovery workflow
 
 - October 1, 2020: You won't be able to add new data (Prepare search results for Advanced eDiscovery) to any cases. You'll be able to continue working with data in existing cases at your own risk. Microsoft Support will no longer provide assistance. 
 
-- December 31, 2020: You will no longer be able to access Advanced eDiscovery cases.
+- December 31, 2020: You won't be able to access Advanced eDiscovery v1.0 cases.
 
 ### Alternative tools
 
