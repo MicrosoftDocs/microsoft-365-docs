@@ -21,6 +21,8 @@ description: "Protect your business email and data from cyber threats, including
 
 If you are like [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) and suddenly find yourself supporting a primarily home-based workforce, we want to help you ensure your organization is working as securely as possible. This article prioritizes tasks to help security teams implement the most important security capabilities as quickly as possible.
 
+![Perform these top tasks to support working from home.](../media/security/security-support-remote-work.png)
+
 If you are a small or medium-size organization using one of Microsoft's business plans, see these resources instead:
 
 - [Top 10 ways to secure Office 365 and Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)

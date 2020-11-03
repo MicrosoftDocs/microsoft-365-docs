@@ -26,6 +26,8 @@ This article is organized by priority of work, starting with protecting those ac
 
 Microsoft provides you with the Secure Score tool within your tenant to automatically analyze your security posture based on your regular activities, assign a score, and provide security improvement recommendations. Before taking the actions recommended in this article, take note of your current score and recommendations. The actions recommended in this article will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment in a way that do not negatively affect productivity for your users. See [Microsoft Secure Score](mtp/microsoft-secure-score.md).
 
+![Follow these steps to mitigate risks to your business.](../media/security/security-for-bdms-overview.png)
+
 One more thing before we get started . . . be sure to [turn on the audit log](../compliance/search-the-audit-log-in-security-and-compliance.md). You'll need this data later, in the event you need to investigate an incident or a breach. 
 
 ## Protect privileged accounts
