@@ -196,7 +196,7 @@ As part of improving the hunting process, we have made a few updates to Threat E
 
 ### Filter by user tags
 
-You can now sort and filter by either system or custom user tags, to quickly grasp the scope of threats. See [User tags in Office 356 ATP](user-tags.md) to learn more.
+You can now sort and filter by either system or custom user tags, to quickly grasp the scope of threats. See [User tags in Office 365 ATP](user-tags.md) to learn more.
 
 > [!IMPORTANT]
 > Filtering and sorting by user tags is currently in public preview.
