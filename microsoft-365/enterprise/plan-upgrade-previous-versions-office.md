@@ -82,7 +82,7 @@ If you want help with planning your upgrade, consider one or more of the followi
   
 ## I'm a home user. What do I do?
 
-If you're using Office 2007 or Office 2010 at home, consider the following update options:
+If you're using Office 2007 or Office 2010 at home, consider the following upgrade options:
 
 - **Use Office in a browser for free.** Create, view, and edit Office files in your browser. Get access to those files from just about any device that has internet access. 
 
