@@ -91,7 +91,7 @@ In the rare case that the ransomware deleted all your email, you can probably re
 
 ## Step 7: Re-enable Exchange ActiveSync and OneDrive sync
 
-After you've cleaned your computers and devices and recovered your data, you can re-enable Exchange ActiveSync and OneDrive sync that you previously disabled in [Step 2](#step-2-disable-activesync-and-onedrive-sync).
+After you've cleaned your computers and devices and recovered your data, you can re-enable Exchange ActiveSync and OneDrive sync that you previously disabled in [Step 2](#step-2-disable-exchange-activesync-and-onedrive-sync).
 
 ## Step 8 (Optional): Block OneDrive sync for specific file extensions
 
