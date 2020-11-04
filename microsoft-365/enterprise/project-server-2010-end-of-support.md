@@ -85,7 +85,7 @@ Project Professional 2010 users can also migrate to the Project Online Desktop c
 
 You can also migrate from Project Professional 2010 or Project Standard 2010 to a Project subscription-based online solution. Both Project Plan 3 and Plan 5 include Project Online and the latest cloud offering, [Project for the web](https://support.office.com/article/what-can-you-do-with-project-for-the-web-b30f5442-be5f-43d2-9072-c95bff778ea1). Both offer new features and benefits that are worth exploring.
 
-For more information about the features in both and the Project Plan licenses they're included in, see the [Microsoft Project ervice description](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description).
+For more information about features and licenses, see [Microsoft Project service description](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description).
 
 ## Important considerations when planning to migrate from Project Server 2010
 
@@ -93,9 +93,9 @@ Consider the following when you plan to migrate from Project Server 2010:
 
 - **Get help from a Microsoft solution provider** - An upgrade from Project Server 2010 can be a challenge. It requires much preparation and planning. It can be especially challenging if you weren't the person who originally set up Project Server 2010. Microsoft solution providers are available to help, whether you plan to migrate to Project Server 2019 or to Project Online. Search for a solution provider in the [Microsoft solution provider center](https://go.microsoft.com/fwlink/p/?linkid=841249).
 
-- **Plan for your customizations** - Customizations  in your Project Server 2010 environment might not work when you migrate to Project Server 2019 or Project Online. There are significant differences in Project Server architecture between versions. Also, the required operating systems, database servers, and client web browsers that work with the versions differ. Have a plan on how to test or rebuild your customizations in the new environment. The the  opportunity to determine if specific customizations are still needed. For more information, see [Create a plan for current customizations during upgrade to SharePoint 2013](https://docs.microsoft.com/SharePoint/upgrade-and-update/create-a-plan-for-current-customizations-during-upgrade-to-sharepoint-2013).
+- **Plan for your customizations** - Customizations  in your Project Server 2010 environment might not work when you migrate to Project Server 2019 or Project Online. There are significant differences in Project Server architecture between versions. Also, the required operating systems, database servers, and web browsers that work with the versions differ. Have a plan on how to test or rebuild your customizations in the new environment. The the  opportunity to determine if specific customizations are still needed. For more information, see [Create a plan for current customizations during upgrade to SharePoint 2013](https://docs.microsoft.com/SharePoint/upgrade-and-update/create-a-plan-for-current-customizations-during-upgrade-to-sharepoint-2013).
 
-- **Time and patience** - Upgrade planning, execution, and testing will take considerable time and effort, especially for upgrade to Project Server 2019. If you're migrating from Project Server 2010 to Project Server 2019, you must first migrate from Project Server 2010 to Project Server 2013, check your data, and then migrate to each successive version (to Project Server 2016 and then to Project Server 2019). You might want to check with a Microsoft solution provider for a time frame and estimated cost for them to assist.
+- **Time and patience** - Upgrade planning, execution, and testing will take considerable time and effort, especially for upgrade to Project Server 2019. If you're migrating from Project Server 2010 to Project Server 2019, you must first migrate from Project Server 2010 to Project Server 2013, check your data, and then migrate to Project Server 2016 and then to Project Server 2019. You might want to check with a Microsoft solution provider for a time frame and estimated cost for them to assist.
 
 ## Migrate to Project Online
 
@@ -129,7 +129,7 @@ After you complete each migration, make sure that your data migrated successfull
 
 The architectural differences between Project Server 2010 and Project Server 2019 prevent a direct migration path. So you'll need to migrate your Project Server 2010 data to each successive version of Project Server until you reach Project Server 2019.
 
-These are the steps to upgrade Project Server 2010 to Project Server 2019:
+Steps to upgrade Project Server 2010 to Project Server 2019:
 
 1. Migrate to Project Server 2013.
 
@@ -152,7 +152,7 @@ Key resources:
 
   Look at planning considerations when upgrading from Project Server 2010 to Project Server 2013, including system requirements.
 
-[What's new in Project Server 2013 upgrade](https://go.microsoft.com/fwlink/p/?linkid=841824) covers important changes for this version, including these:
+[What's new in Project Server 2013 upgrade](https://go.microsoft.com/fwlink/p/?linkid=841824) covers important changes for this version, including:
 
 - There's no in-place upgrade to Project Server 2013. The database-attach method is the only supported way to upgrade from Project Server 2010 to Project Server 2013.
 
