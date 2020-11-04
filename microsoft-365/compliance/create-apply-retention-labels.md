@@ -178,7 +178,7 @@ After the retention label is applied, you can view that retention label and what
   
 You can also apply retention labels to folders, in which case:
   
-- All items in the folder automatically get the same retention label, **except** for items that have had a retention label applied explicitly to them. Explicitly labeled items keep their existing retention label. For more information, see [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence) section on this page. 
+- All items in the folder automatically get the same retention label, **except** for items that have had a retention label applied explicitly to them. Explicitly labeled items keep their existing retention label:
     
 - If you change or remove the default retention label for a folder, the retention label's also changed or removed for all items in the folder, **except** items with explicitly assigned retention labels. 
     
@@ -237,17 +237,17 @@ For example, if you have a retention label for marketing materials, and you know
   
 ![Apply label option on library Settings page](../media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
   
-If you apply a default retention label to existing items in the library, folder, or document set:
-  
-- All items in the library, folder, or document set automatically get the same retention label, **except** for items that already have a retention label applied to them.
-    
-- If you change or remove the default retention label for a library, folder, or document set, the retention label is also changed or removed for all items in the library, folder, or document set, **except** items that were manually labeled.
-    
-- If you move an item with a default retention label from one site collection, library, folder, or document set to another site collection, library, folder, or document set that has a different label, the item keeps its existing default retention label, even if the new location has a different default retention label. If the item does not have a label before moving, it will take on the default retention label of the new location.
+In this scenario where you apply a retention label to a library, folder, or document set, items in that container can automatically inherit this retention label:  
 
-**Records:** If you apply a default record label to a library, folder, or document set, then a record label is applied to all the individual items within those locations. When you move a new item into a location with a record label, that item is labeled a record. However, if you change the default retention label to a label that doesn't declare content as a record, that action does not remove the record label from the individual items; those items retain their record label. Only a site collection admin can explicitly remove or change the retention label of record items.
+- All unlabeled items in the container have this retention label applied. Labeled items retain their label, unless it was applied by a different default label.
+    
+- If you change or remove the default retention label for the container, existing retention labels applied to items in that container are changed or removed only if those labels were applied by a default label.
+    
+- If you move an item with a default retention label from one container to another container that has a different label, the item keeps its existing default retention label, even if the new location has a different default retention label. If the item does not have a label before moving, it will take on the default retention label of the new location.
 
-For more information about retention labels that declare content as a record, see [Records](records-management.md#records).
+**Records:** If you apply a default label that marks items as a record, that record label is applied to all the individual items within the selected library, folder, or document set. When you move a new item into a location with a default record label, that item is labeled a record. However, if you change that default retention label to a label that doesn't mark items as a record, that action does not remove the record label from the individual items; those items retain their record label. Only a site collection admin can explicitly remove or change an applied label that marks items as records.
+
+For more information about retention labels that marks items as a record, see [Records](records-management.md#records).
 
 ### Automatically applying a retention label to email by using rules
 
