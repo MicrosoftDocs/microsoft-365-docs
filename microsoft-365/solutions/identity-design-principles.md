@@ -1,6 +1,6 @@
 ---
-title: To identity and beyond — One architect's viewpoint
-description: Description.
+title: Microsoft 365 enterprise resource planning - Security architecture
+description: Learn about top design strategies for Microsoft Enterprise architecture from Alex Shteynberg, Technical Principal Architect at Microsoft.
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
@@ -11,7 +11,8 @@ localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: 
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
 ---
 
@@ -279,7 +280,7 @@ From the admin delegation perspective, most Microsoft 365 activity logs do not h
 
 High level diagram:
 
-![high level diagram of log flow](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
+![diagram of log sources for a security and compliance program](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
 
 The diagram above represents built-in capabilities to send logs to Event Hub and/or Azure Storage and/or Azure Log Analytics. Not all systems include this out-of-the-box yet. But there are other approaches to send these logs to the same repository. For example, see [Protecting your Teams with Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761).
 
