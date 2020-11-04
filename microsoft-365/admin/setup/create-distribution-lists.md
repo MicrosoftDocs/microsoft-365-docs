@@ -13,13 +13,14 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
-ms.custom: seo-marvel-may2020
+ms.custom:
+- seo-marvel-may2020
+- AdminSurgePortfolio
 description: Learn how to create distribution groups or lists in the Microsoft 365 admin center so you can send emails to a group without having to type each recipient's name.
 ---
 

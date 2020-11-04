@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- seo-marvel-may2020
 search.appverid:
 - BCS160
 - MET150
@@ -24,9 +25,6 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Learn more about domains (onmicrosoft domain and tranfer domain) by finding answers to your questions in FAQ.
-ms.custom: 
-- okr_smb
-- seo-marvel-may2020
 ---
 
 # Domains FAQ
@@ -35,7 +33,7 @@ ms.custom:
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview).
 
 ::: moniker-end
 

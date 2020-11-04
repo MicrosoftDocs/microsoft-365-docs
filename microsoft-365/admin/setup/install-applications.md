@@ -13,12 +13,13 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d0653266-31db-4f6a-a804-d34b667c16bf
-ms.custom: seo-marvel-may2020
+ms.custom:
+- seo-marvel-may2020
+- AdminSurgePortfolio
 description: Now that you've set up Microsoft 365, learn how to install individual Office applications on your Mac, PC, or mobile devices and set up email in Outlook.
 ---
 
