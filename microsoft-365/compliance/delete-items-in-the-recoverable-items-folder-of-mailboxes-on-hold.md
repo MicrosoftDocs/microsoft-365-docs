@@ -413,7 +413,7 @@ Here's a table that describes how to identify different types of holds based on 
 
 As previously explained, you have to remove all holds and retention policies from a mailbox before you can successfully delete items in the Recoverable Items folder.
   
-|**Hold type**|**Example value**|**How to identify the hold**|
+| Hold type | Example value | How to identify the hold |
 |:-----|:-----|:-----|
 |Litigation Hold  <br/> | `True` <br/> |The  *LitigationHoldEnabled*  property is set to  `True`.  <br/> |
 |In-Place Hold  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |The  *InPlaceHolds*  property contains the GUID of the In-Place Hold that's placed on the mailbox. You can tell this is an In-Place Hold because the GUID doesn't start with a prefix.  <br/> You can use the  `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` command in Exchange Online PowerShell to get information about the In-Place Hold on the mailbox.  <br/> |
