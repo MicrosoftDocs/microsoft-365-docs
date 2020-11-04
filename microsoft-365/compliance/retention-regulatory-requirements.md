@@ -21,7 +21,7 @@ description: "Resources to help you meet regulatory requirements for information
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Use the resources on this page to help you meet specific regulatory requirements for information governance and records management in Microsoft 365. Each section of this document is focused on one or more related regulations and includes any existing guidance or third-party assessment of how to configure Microsoft 365 to help with the requirements outlined.
+Use the resources on this page to help you meet specific regulatory requirements for information governance and records management in Microsoft 365. Each section of this document focuses on one or more related regulations and includes any existing guidance or third-party assessment of how to configure Microsoft 365 to help with the requirements outlined.
 
 These resources are available to download from the [Data Protection Resources, FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) page of the Service Trust Portal.
 
@@ -31,7 +31,7 @@ These resources are available to download from the [Data Protection Resources, F
 
 Applicable workloads: SharePoint, OneDrive, Teams, Exchange, and Skype for Business
 
-Released November 2020, this report has been produced in partnership with Cohasset Associates, Inc. (Cohasset) to assesses the capabilities of Microsoft 365 services for recording, storing and managing requirements for electronic records, as specified by:  
+Released November 2020, this report has been produced in partnership with Cohasset Associates, Inc. (Cohasset) to assess the capabilities of Microsoft 365 services for recording, storing, and managing requirements for electronic records, as specified by:  
 
 - Securities and Exchange Commission (SEC) in 17 CFR § 240.17a-4(f), which regulates exchange members, brokers or dealers.  
 
