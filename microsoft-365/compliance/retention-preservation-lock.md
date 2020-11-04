@@ -29,16 +29,16 @@ When a policy for retention is locked:
 - Locations can be added but not removed
 - You can extend a retention period but not decrease it
 
-In summary, a locked policy for retention can be increased or extended, but it can't be reduced or turned off.
+In summary, a locked policy can be increased or extended, but it can't be reduced or turned off.
   
 > [!IMPORTANT]
-> Before you lock a retention policy or retention label policy, it's critical that you understand the impact and confirm whether it's required for your organization to meet regulatory requirements. Administrators won't be able to disable or delete these policies after the preservation lock is applied.
+> Before you lock a retention policy or retention label policy, it's critical that you understand the impact and confirm whether it's required for your organization. For example, it might be needed to meet regulatory requirements. Administrators won't be able to disable or delete these policies after the preservation lock is applied.
 
 Configure Preservation Lock after you've created a [retention policy](create-retention-policies.md), or a retention label policy that you [publish](create-apply-retention-labels.md) or [auto-apply](apply-retention-labels-automatically.md). 
 
 ## How to lock a retention policy or retention label policy
 
-You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-restrict-changes-to-policies). Because administrators can't disable or delete a policy for retention after a preservation lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.
+You must use PowerShell if you need to use Preservation Lock. Because administrators can't disable or delete a policy for retention after this lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.
 
 All policies for retention and with any configuration support Preservation Lock.
 
