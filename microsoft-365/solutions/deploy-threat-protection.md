@@ -72,5 +72,3 @@ To make sure your organization has the best protection possible, set up and depl
 Your threat protection features can be configured in parallel, so if you have multiple network security teams responsible for different services, they can configure your organization’s protection features at the same time. The following diagram illustrates the high-level process for deploying threat protection capabilities. 
 
 ![Process for deploying threat protection capabilities](../media/solutions-architecture-center/deploy-threat-protection-across-m365-grid.png) 
-
-
