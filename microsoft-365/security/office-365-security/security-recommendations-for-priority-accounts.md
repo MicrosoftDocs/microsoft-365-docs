@@ -21,7 +21,7 @@ description: "Admins can learn how to elevate the security settings for priority
 
 # Security recommendations for high value employee accounts in Microsoft 365
 
-What would you do if you received an urgent message from an executive in your organization that asked you to do something? Would you do it? Most people would comply with the request. That's why users in positions of authority are targets for attackers. If the accounts of these high value employees or HVEs are compromised, the attacker might gain access to accounts with admin, financial, product, or even physical access abilities within the organization.
+What would you do if you received an urgent message from an executive in your organization that asked you to do something? Would you do it? Most people would comply with the request. That's why users in positions of authority are targets for attackers. If the accounts of these high value employees (HVEs) are compromised, the attacker might gain access to accounts with admin, financial, product, or even physical access abilities within the organization.
 
 Microsoft 365 and Office 365 Advanced Threat Protection (ATP) contain many different features that can help you to provided additional layers of security for your HVEs. The available features and how to use them are discussed in this article.
 
