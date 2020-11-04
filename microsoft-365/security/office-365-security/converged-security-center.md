@@ -91,11 +91,13 @@ The *[Getting Started](https://docs.microsoft.com/en-us/microsoft-365/security/o
 
 Along with a [link](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true) to jump right in and get configuration going on Day 1.
 
-The last step in 'Getting Started' is protecting users with Zero-Hour auto purge, also known as ZAP. Knowing whether your efforts to ZAP a suspicious or malicious mail from Inboxes, post-delivery, were successful can be extremely important. MSDO security operations teams can take their next step in the center [here](https://security.microsoft.com/advanced-hunting), under **Hunting** > **Advanced Hunting**.
+The last step in 'Getting Started' is protecting users with **Zero-Hour auto purge**, also known as ZAP. Knowing if your efforts to ZAP a suspicious or malicious mail, post-delivery, were successful can be extremely important.
+
+MSDO security operations teams can monitor this by taking their next steps [here](https://security.microsoft.com/advanced-hunting), under **Hunting** > **Advanced Hunting**.
 
 1. On the Advanced Hunting page, click Query.
 1. Copy the query below into the query window.
-1. Select Run query. 
+1. Select Run query.
 
 
 ```kusto
@@ -114,7 +116,7 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 
 :::image type="content" source="../../media/Converge 13 Advanced Hunt an Email ZAP.PNG" alt-text="Under Hunting > Advanced Hunting, click Query, and then enter the Kusto query below.":::
 
-The data from this query will appear in the results panel below the query itself, and will include information like 'DeviceName', 'AccountDisplayName', and 'ZapTime' in a customizable result set that can be exported for your records.
+The data from this query will appear in the results panel below the query itself, and will include information like 'DeviceName', 'AccountDisplayName', and 'ZapTime' in a customizable result set that can be exported for your records. If the query is one you'll need again, select **Save** > **Save As** and add the query to your list of queries, shared, or community queries. 
 
 ## Related information
 
