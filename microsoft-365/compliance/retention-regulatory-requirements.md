@@ -29,7 +29,7 @@ These resources are available to download from the [Data Protection Resources, F
 
 **Cohasset Assessment - Microsoft 365 - SEC Rule 17a-4(f) - Immutable Storage for SharePoint, OneDrive, Teams, Exchange, and Skype**
 
-**Applicable workloads: Exchange, SharePoint, OneDrive, Teams and Skype for Business**
+Applicable workloads: SharePoint, OneDrive, Teams, Exchange, and Skype for Business
 
 Released November 2020, this report has been produced in partnership with Cohasset Associates, Inc. (Cohasset) to assesses the capabilities of Microsoft 365 services for recording, storing and managing requirements for electronic records, as specified by:  
 
