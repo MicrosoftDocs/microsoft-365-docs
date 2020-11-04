@@ -38,7 +38,7 @@ Microsoft eDiscovery tools support items encrypted with Microsoft encryption tec
 
 The following table identifies the tasks performed in Microsoft 365 eDiscovery tools that support decryption of encrypted files attached to email massages. The support tasks can be performed on an encrypted file that's attached to an email message that matches the criteria of a search. A value of "N/A" indicates that the function isn't available in the corresponding eDiscovery tool.
 
-|eDiscovery task  |Content Search  |Core eDiscovery  |Advanced eDiscovery  |
+|eDiscovery task  |Content search  |Core eDiscovery  |Advanced eDiscovery  |
 |:---------|:---------|:---------|:---------|
 |Search for content in encrypted files     |No      |No      |No      |
 |Preview encrypted files     |Yes      |Yes     |Yes       |
