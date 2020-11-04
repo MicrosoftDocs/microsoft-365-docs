@@ -16,8 +16,8 @@ ms.collection:
 - m365solution-remotework
 - m365solution-overview
 - M365initiative-coredeploy
-ms.custom: 
-description: Configure the security and service infrastructure that allows your workers to work remotely from anywhere and at any time.
+ms.custom: seo-marvel-jun2020
+description: Make sure you have enabled all features in Microsoft 365 to maximize remote worker productivity and maintain secure access to your servers, data, and cloud.
 ---
 
 # Empower remote workers with Microsoft 365
@@ -74,7 +74,7 @@ To enable the capabilities of Microsoft 365 for your remote workers, use these M
 |:-------|:-----|:-------|
 | MFA enforced with security defaults	| Protect against compromised identities and devices by requiring a second form of authentication for sign-ins. Security defaults requires MFA for all user accounts.	| Microsoft 365 E3 or E5 |
 | MFA enforced with Conditional Access| Require MFA based on the properties of the sign-in with Conditional Access policies.	| Microsoft 365 E3 or E5 | 
-| MFA enforced with risk-based Conditional Access	| Require MFA based on the risk of the user sign-in with Azure Advanced Threat Protection. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses | 
+| MFA enforced with risk-based Conditional Access	| Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses | 
 | Self-Service Password Reset (SSPR)	| Allow your users to reset or unlock their passwords or accounts.	| Microsoft 365 E3 or E5 |
 | Azure AD Application Proxy	| Provide secure remote access for web-based applications hosted on intranet servers.	| Requires separate paid Azure subscription |
 | Azure Point-to-Site VPN	| Create a secure connection from a remote worker’s device to your intranet through an Azure virtual network.	| Requires separate paid Azure subscription |
