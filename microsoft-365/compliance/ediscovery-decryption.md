@@ -21,7 +21,7 @@ description: "Learn about how Microsoft 365 eDiscovery tools handle encrypted do
 
 # Decryption in Microsoft 365 eDiscovery tools
 
-Organizations use various types of encryption technology to protect sensitive content within their organization and ensure that only the right people have access to that content. Organizations use various types of encryption, both Microsoft encryption technologies and third-party technologies to meet their security requirements and protect their sensitive information.
+Organizations use encryption technology to protect sensitive content within their organization and ensure that only the right people have access to that content. Organizations use various types of encryption, both Microsoft encryption technologies and third-party technologies to meet their security requirements and protect their sensitive information.
 
 To date, managing encrypted content in the eDiscovery workflow in Microsoft 365 requires special handling of encrypted items depending on the type of encryption used and the specific stage in the workflow. This was primarily achieved by decrypting email message content when it was exported from content searches, Core eDiscovery cases, and Advanced eDiscovery cases. Content encrypted with Microsoft encryption technologies couldn't be previewed until it was exported. This was because encrypted content wasn't fully indexed for search. In Advanced eDiscovery, encrypted content was flagged with a processing error, which required that you download the encrypted item, decrypt it, and then upload the decrypted file to review the content.
 
