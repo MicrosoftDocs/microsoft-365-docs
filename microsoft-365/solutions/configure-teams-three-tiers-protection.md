@@ -1,5 +1,5 @@
 ---
-title: "Configure Teams with three tiers of protection"
+title: Configure Teams with three tiers of file sharing security
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -18,8 +18,9 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - Ent_Architecture
+- seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
-description: "Configuration recommendations for protecting files in Microsoft Teams."
+description: Learn how to configure Teams for better file sharing security using three tiers of protection, balancing security with ease of collaboration.
 ---
 
 # Configure Teams with three tiers of protection
