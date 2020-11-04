@@ -65,6 +65,6 @@ Make sure that audit logging is turned on before you configure SIEM server integ
 
 ## More resources
 
-[Integrate security solutions in Azure Defender*](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
+[Integrate security solutions in Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
 [Integrate Microsoft Graph Security API alerts with a SIEM](https://docs.microsoft.com/graph/security-integration)

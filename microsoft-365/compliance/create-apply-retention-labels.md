@@ -267,7 +267,11 @@ When you edit a retention label or retention label policy, and the retention lab
 
 Some settings can't be changed after the label or policy is created and saved, which include:
 - The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
-- The option to classify as a record.
+- The option to mark items as a record.
+
+## Locking the policy to prevent changes
+
+If you need to ensure that that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
 
 ## Next steps
 
