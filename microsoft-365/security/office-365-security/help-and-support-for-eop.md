@@ -23,7 +23,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 ## Self-support options
 
-Upon logging in, the Microsoft 365 admin center provides information about the status of your organization's services. Also, the service health section shows the current status of your services, details about disruptions and outages, and lists planned maintenance times. The Microsoft 365 admin center also provides information about known issues and expected resolutions. If you're affected by a service-wide event, then you should see a communication alert (typically accompanied by a bell icon). We recommend that you read and act on any items as appropriate. For more information about the service health area, see [Service health and continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). You might be able to find more help on your own by using the tools, forums and community sites listed here.
+Upon logging in, the Microsoft 365 admin center provides information about the status of your organization's services. Also, the service health section shows the current status of your services, details about disruptions and outages, and lists planned maintenance times. The Microsoft 365 admin center also provides information about known issues and expected resolutions. If you're affected by a service-wide event, then you should see a communication alert (typically accompanied by a bell icon). We recommend that you read and act on any items as appropriate. For more information about the service health area, see [Service health and continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). You might be able to find more help on your own by using the tools, forums, and community sites listed here.
 
 [Product Overview for Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
@@ -37,7 +37,7 @@ Upon logging in, the Microsoft 365 admin center provides information about the s
 
 ## Assisted support from Microsoft
 
-You can get help from Microsoft by starting a new service request within the Microsoft 365 admin center or by calling on the phone. Premier support subscribers have extra support options.
+You can get help from Microsoft by starting a new service request within the Microsoft 365 admin center or by calling on the phone. Premier Support subscribers have extra support options.
 
 ### Support for Microsoft Premier Support Subscribers
 
@@ -47,7 +47,7 @@ For more information about how Premier Support can help your organization maximi
 
 ### Ask for help on the web
 
-1. Login to the Microsoft 365 admin center.
+1. Log in to the Microsoft 365 admin center.
 
 2. Go to **Support** \> **Ask for Customer Support** \> **New Service Request**
 
@@ -55,9 +55,9 @@ For more information about how Premier Support can help your organization maximi
 
 ### Ask for help on the telephone
 
-1. Login to the Microsoft 365 admin center.
+1. Log in to the Microsoft 365 admin center.
 
-2. For general product issues go to **Support** \> **Ask for Customer Support** \> **Call technical support**.
+2. For general product issues, go to **Support** \> **Ask for Customer Support** \> **Call technical support**.
 
    For questions before you buy EOP, or questions about billing and subscriptions, go to **Support** \> **Ask for Customer Support** \> **Call billing and subscription support**.
 
