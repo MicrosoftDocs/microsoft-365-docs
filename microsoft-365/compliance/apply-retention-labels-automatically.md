@@ -219,8 +219,6 @@ If the expected labels don't appear after seven days, check the **Status** of th
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
    ```
 
-
-
 ## Updating retention labels and their policies
 
 When you edit a retention label or auto-apply policy, and the retention label is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
@@ -228,6 +226,10 @@ When you edit a retention label or auto-apply policy, and the retention label is
 Some settings can't be changed after the label or policy is created and saved, which include:
 - The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
 - The option to mark items as a record.
+
+## Locking the policy to prevent changes
+
+If you need to ensure that that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
 
 ## Next steps
 
