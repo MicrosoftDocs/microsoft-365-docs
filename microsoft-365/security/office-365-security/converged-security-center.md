@@ -75,5 +75,48 @@ in one easy to navigate location. This means security for your Office 365 or Mic
 > [!NOTE]
 > If you know MSDO (once Office 365 ATP) from  the core overview article ‘[Office 365 Security overview](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/?view=o365-worldwide)’, then you're aware much of the Microsoft documentation about MSDO can be roughly broken down in Security Administrator and Security Operations topics. <p>The Microsoft 365 Security center has the same strengths. Many of the administration topics appear under ‘Policies & Rules’, and ‘Dashboard’. Long term security investigation, detection, defense, and response as per Security Operations, takes place in the other sections of the Email & Collaboration section. -->
 
-## Advanced Hunting for MSDO Security Teams
+## Advanced Hunting for MSDO Security Operations Teams
+
+The *[Getting Started](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#getting-started)* section of the [Microsoft Defender for Office 365 article](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) has logical early configuration chunks that look like this:
+
+- Configure everything with 'anti' in the name.
+    - anti-malware
+    - anti-phishing
+    - anti-spam
+- Set up everything with 'safe' in the name.
+    - safe links
+    - safe attachments
+- Defend the workloads (ex. SharePoint Online, OneDrive, and Teams)
+- Protect with Zero-Hour auto purge
+
+Along with a [link](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true) to jump right in and get configuration going on Day 1.
+
+The last step in 'Getting Started' is protecting users with Zero-Hour auto purge, also known as ZAP. Knowing whether your efforts to ZAP a suspicious or malicious mail from Inboxes, post-delivery, were successful can be extremely important. MSDO security operations teams can take their next step in the center [here](https://security.microsoft.com/advanced-hunting), under **Hunting** > **Advanced Hunting**.
+
+1. On the Advanced Hunting page, click Query.
+1. Copy the query below into the query window.
+1. Select Run query. 
+
+
+```kusto
+EmailPostDeliveryEvents 
+| where Timestamp > ago(7d)
+//List malicious emails that were not zapped successfully
+| where ActionType has "ZAP" and ActionResult == "Error"
+| project ZapTime = Timestamp, ActionType, NetworkMessageId , RecipientEmailAddress 
+//Get logon activity of recipients using RecipientEmailAddress and AccountUpn
+| join kind=inner IdentityLogonEvents on $left.RecipientEmailAddress == $right.AccountUpn
+| where Timestamp between ((ZapTime-24h) .. (ZapTime+24h))
+//Show only pertinent info, such as account name, the app or service, protocol, the target device, and type of logon
+| project ZapTime, ActionType, NetworkMessageId , RecipientEmailAddress, AccountUpn, 
+LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
+```
+
+:::image type="content" source="../../media/Converge 13 Advanced Hunt an Email ZAP.PNG" alt-text="Under Hunting > Advanced Hunting, click Query, and then enter the Kusto query below.":::
+
+The data from this query will appear in the results panel below the query itself, and will include information like 'DeviceName', 'AccountDisplayName', and 'ZapTime' in a customizable result set that can be exported for your records.
+
+## Related information
+
+[Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/advanced-hunting-query-emails-devices?view=o365-worldwide)
 
