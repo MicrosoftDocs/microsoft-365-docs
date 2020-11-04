@@ -39,6 +39,7 @@ Because Microsoft wants to keep our customers secure by default, some tenants ov
 - Allowed sender lists or allowed domain lists (anti-spam policies)
 - Outlook Safe senders
 - IP Allow List (connection filtering) 
+
 More information on these overrides can be found in [Create safe sender lists](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365).
 
 ## Exceptions
