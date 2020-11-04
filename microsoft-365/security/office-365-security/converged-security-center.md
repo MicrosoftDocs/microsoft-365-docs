@@ -33,7 +33,17 @@ The left navigation, or quick launch bar, will look familiar, but there are some
 > [!IMPORTANT]
 > The Microsoft 365 Security portal (https://security.microsoft.com) **combines** security features in https://securitycenter.windows.com, and https://protection.office.com. However, what *you* see will depend on your subscription. If you have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints.
 
-The home page of the new portal surfaces Secure Score ratings, the number of users and devices at risk, active incident lists, lists of privileged OAuth apps, device health data, informative tweets from Microsoft’s security intelligence feed, and more. As soon as you arrive at this information page, you’ll also see a pop-up for security notifications if there are any.
+The home page of the new portal surfaces:
+
+- Secure Score ratings
+- the number of users and devices at risk
+- active incident lists
+- lists of privileged OAuth apps
+- device health data
+- tweets from Microsoft’s security intelligence twitter feed
+- and more summary information
+
+As soon as you arrive at this information page, you’ll also see a pop-up for security notifications if there are any.
 
 :::image type="content" source="../../media/Converge 5 Microsoft 365 Security center.png" alt-text="This is the Microsoft Security center page with Home, Endpoints, Email and Collaboration, and miscellaneous areas.":::
 
