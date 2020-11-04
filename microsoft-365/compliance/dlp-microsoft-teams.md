@@ -126,7 +126,7 @@ Allow approximately one hour for your new policy to work its way through your da
 
 To ensure that SharePoint documents that contain sensitive information cannot be accessed by external guests either from SharePoint or Teams by default, select the following:
 
-- You can ensure that documents are protected until DLP scans and marks them as safe to share by [marking new files as sensitive by default](https://docs.microsoft.com/en-us/sharepoint/sensitive-by-default)
+- You can ensure that documents are protected until DLP scans and marks them as safe to share by [marking new files as sensitive by default](https://docs.microsoft.com/sharepoint/sensitive-by-default)
 - Recommended DLP policy structure
     - **Conditions**
         - Content contains any of these sensitive information types: [Select all that applies]
