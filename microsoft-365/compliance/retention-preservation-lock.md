@@ -14,14 +14,14 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "Use Preservation Lock with retention policies and retention label policies to help you meet regulatory requirements or safeguard against rogue administrators."
+description: "Use Preservation Lock with retention policies and retention label policies to help you meet regulatory requirements and safeguard against rogue administrators."
 ---
 
 # Use Preservation Lock to restrict changes to retention policies and retention label policies
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Preservation Lock locks a retention policy or retention label policy so that no one—including a global admin—can turn off the policy, delete the policy, or make it less restrictive. This configuration helps guard against a rogue administrator.
+Preservation Lock locks a retention policy or retention label policy so that no one—including a global admin—can turn off the policy, delete the policy, or make it less restrictive. This configuration might be needed for regulatory requirements and can help safeguard against rogue administrators.
 
 When a policy for retention is locked:
 
@@ -38,28 +38,28 @@ Configure Preservation Lock after you've created a [retention policy](create-ret
 
 ## How to lock a retention policy or retention label policy
 
-You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-restrict-changes-to-policies), for example, to comply with regulatory requirements. Because administrators can't disable or delete a policy for retention after a preservation lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.
+You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-restrict-changes-to-policies). Because administrators can't disable or delete a policy for retention after a preservation lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.
 
 All policies for retention and with any configuration support Preservation Lock.
 
 1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Find the name of the policy that you want to lock by running [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy). For example:
-
+    
    ![List of retention policies in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
 3. To place a Preservation Lock on your policy, run the [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet with the name of the policy, and the *RestrictiveRetention* parameter set to true:
-
+    
     ```powershell
     Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
     ```
-
+    
     For example:
-
+    
     ![RestrictiveRetention parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
-
+    
      When prompted, read and acknowledge the restrictions that come with this configuration by entering **Y**:
-
+    
    ![Prompt to confirm that you want to lock a retention policy in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 A Preservation Lock is now placed on the policy. To confirm, run `Get-RetentionCompliancePolicy` again, but specify the policy name and display the policy parameters:
@@ -71,3 +71,7 @@ Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 You should see **RestrictiveRetention** is set to **True**. For example:
 
 ![Locked policy with all parameters shown in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
+
+## See also
+
+[Resources to help you meet regulatory requirements for information governance and records management](retention-regulatory-requirements.md)
