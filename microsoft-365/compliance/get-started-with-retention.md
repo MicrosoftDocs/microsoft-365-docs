@@ -66,7 +66,7 @@ Use the following table to help you map your business requirements to retention 
 |Start the retention period when an event occurs, such as:  <br />- Employees leave the organization <br />- Contracts expire <br />- End of product lifetime| [Start retention when an event occurs](event-driven-retention.md)|
 |Restrict changes to policies to help meet regulatory requirements or safeguard against rogue administrators| [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md)
 |Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
-| Monitor how and where retention labels are applied to items | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
+| Monitor how and where retain and delete settings are applied to items | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
 |Use a single records management solution for documents and emails |[Learn about records management](records-management.md) |
 
 If you use retention labels for records management, there are additional scenarios that are unique to retention labels that mark content as a record. See [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).
