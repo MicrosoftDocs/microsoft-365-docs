@@ -17,7 +17,7 @@ search.appverid:
 description: "Resources to help you meet regulatory requirements for information governance and records management."
 ---
 
-# Resources to help you meet regulatory requirements for information governance and records management
+# Regulatory requirements for information governance and records management
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
