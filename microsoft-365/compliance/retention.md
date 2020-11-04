@@ -105,7 +105,10 @@ Retention policies can be applied to the following locations:
 - Yammer private messages
 
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
-    
+
+When you configure a retention policy, you can start the retention period based on when the content was created. Or, supported only for files and the SharePoint, OneDrive, and Office 365 locations, when the content was last modified. Other options are available when you use retention labels instead of retention policies.
+
+For retention policies, items inherit the retention settings from their container. If items are moved outside that container after it's configured to retain content, a copy of that item is retained in the workload's secured location.
 
 ### Retention labels
 
