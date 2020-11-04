@@ -64,12 +64,12 @@ This table is a quick reference of areas where change has occurred between the S
 
 |**Changed**  |**Unchanged**  |
 |---------|---------|
-|Dashboard     |  Explorer       |
-|Policies & Rules     |    Investigation     |
-|Attack Simulator     |    Campaign     |
-|     |    Submissions     |
-|     |    Review     |
-|     |    Threat Tracker     |
+|Dashboard     |  [Explorer](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet&branch=pr-en-us-5758)       |
+|Policies & Rules     |    [Investigation](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-air?view=o365-21vianet&branch=pr-en-us-5758)     |
+|Attack Simulator     |    [Campaign](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/campaigns?view=o365-worldwide)     |
+|     |    [Submissions](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide)     |
+|     |    [Review](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)     |
+|     |    [Threat Tracker ](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet&branch=pr-en-us-5758)    |
 |     |         |
 
 <!--
