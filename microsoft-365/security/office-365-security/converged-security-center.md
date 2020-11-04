@@ -19,12 +19,12 @@ description: "Manage security for Office 365 and endpoint devices in the same pl
 
 # The Microsoft 365 Security center
 
-The new [Microsoft 365 security](https://security.microsoft.com) center combines security capabilities that protect, detect, investigate, and respond to email, collaboration, *and* device threats. It brings together features in Microsoft Defender for Endpoint (MSDE), with Microsoft Defender for Office 365 (MSDO) features.
+The new [Microsoft 365 security](https://security.microsoft.com) center combines security capabilities that protect, detect, investigate, and respond to email, collaboration, *and* device threats. This security center brings together features in Microsoft Defender for Endpoint (MSDE), with Microsoft Defender for Office 365 (MSDO) features.
 
 The URL to access and assess this page is: https://security.microsoft.com
 
 The left navigation, or quick launch bar, will look familiar, but there are some new or updated elements in this security center.
-<p>    
+<p>
 
 |Alerts & Actions  |Endpoints  |Email & Collaboration  |Access & Reporting  |
 |---------|---------|---------|---------|
@@ -50,13 +50,13 @@ As soon as you arrive at this information page, you’ll also see a pop-up for s
 This page also welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
 
 - The links under ‘Next steps’ will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
-- ‘Give feedback’ will allow you to both [join the Windows Insider program](https://insider.windows.com/en-us/) to preview and review coming changes, and the **leave feedback** on your experiences with the new portal.
+- ‘Give feedback’ will allow you to both [join the Windows Insider program](https://insider.windows.com/en-us/) and preview coming changes, and the **leave feedback** on your experiences with the portal.
 
-The ‘Welcome’ page will disappear after you navigate through the Next button to Close, so be sure to take note of any URLs you’d want for your record, or bookmark this page (since they're listed above).
+The ‘Welcome’ page will disappear after you navigate through the Next button to Close. Be sure to take note of any URLs you’d want for your records, or bookmark this page (since the URLs are listed above).
 
 The ‘Guided Tour’ bar will remain on the page and has these useful features.  
 
-:::image type="content" source="../../media/Converge 12 Home Page Guided Tour bar.gif" alt-text="An animation showing the Guided tour drop down (giving tours of Endpoint and Email and Collaboration pages, a link to the Office 365 Security and Compliance center, and the What's New page curated by the Product Group for Office 365 Security.":::
+:::image type="content" source="../../media/Converge 12 Home Page Guided Tour bar.gif" alt-text="An animation showing the Guided tour drop-down. Options are Tours of Endpoint and Email and Collaboration pages. Next is a link to the Office 365 Security and Compliance center for comparison. The last link is to the 'What's New' page curated by the Product Group for Office 365 Security.":::
 
 ## Changed and unchanged Security features
 
@@ -101,9 +101,9 @@ The *[Getting Started](https://docs.microsoft.com/en-us/microsoft-365/security/o
 
 Along with a [link](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true) to jump right in and get configuration going on Day 1.
 
-The last step in 'Getting Started' is protecting users with **Zero-Hour auto purge**, also known as ZAP. Knowing if your efforts to ZAP a suspicious or malicious mail, post-delivery, were successful can be extremely important.
+The last step in 'Getting Started' is protecting users with **Zero-Hour auto purge**, also known as ZAP. Knowing if your efforts to ZAP a suspicious or malicious mail, post-delivery, were successful can be very important.
 
-MSDO security operations teams can monitor this by taking their next steps [here](https://security.microsoft.com/advanced-hunting), under **Hunting** > **Advanced Hunting**.
+MSDO security operations teams can monitor ZAP misses by taking their next steps [here](https://security.microsoft.com/advanced-hunting), under **Hunting** > **Advanced Hunting**.
 
 1. On the Advanced Hunting page, click Query.
 1. Copy the query below into the query window.
@@ -126,7 +126,7 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 
 :::image type="content" source="../../media/Converge 13 Advanced Hunt an Email ZAP.PNG" alt-text="Under Hunting > Advanced Hunting, click Query, and then enter the Kusto query below.":::
 
-The data from this query will appear in the results panel below the query itself, and will include information like 'DeviceName', 'AccountDisplayName', and 'ZapTime' in a customizable result set that can be exported for your records. If the query is one you'll need again, select **Save** > **Save As** and add the query to your list of queries, shared, or community queries. 
+The data from this query will appear in the results panel below the query itself. Results include information like 'DeviceName', 'AccountDisplayName', and 'ZapTime' in a customizable result set. Results can also be exported for your records. If the query is one you'll need again, select **Save** > **Save As** and add the query to your list of queries, shared, or community queries. 
 
 ## Related information
 
