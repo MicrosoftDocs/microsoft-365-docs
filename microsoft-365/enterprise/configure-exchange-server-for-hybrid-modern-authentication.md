@@ -133,17 +133,22 @@ Return to the on-premises Exchange Management Shell for this last command. Now y
 Get-AuthServer | where {$_.Name -eq "EvoSts"}
 ```
 
-Your output should show an AuthServer of the Name EvoSts and the 'Enabled' state should be True. If you don't see this, you should download and run the most recent version of the Hybrid Configuration Wizard.
+Your output should show an AuthServer of the Name EvoSts with a GUID and the 'Enabled' state should be True. If you don't see this, you should download and run the most recent version of the Hybrid Configuration Wizard.
 
  **Important** If you're running Exchange 2010 in your environment, the EvoSTS authentication provider won't be created.
 
 ## Enable HMA
 
-Run the following command in the Exchange Management Shell, on-premises:
+Run the following command in the Exchange Management Shell, on-premises, replacing <GUID> in the command line with the string in your environment:
+
+```powershell
+Set-AuthServer -Identity "EvoSTS - <GUID>" -IsDefaultAuthorizationEndpoint $true
+Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
+```
+**Note** In older versions of the Hybrid Configuration Wizard the EvoSts AuthServer was simply named EvoSTS without a GUID attached. There is no action you need to take, just modify the command line above to reflect this by removing the GUID portion of the command:
 
 ```powershell
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
-Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
 ## Verify
