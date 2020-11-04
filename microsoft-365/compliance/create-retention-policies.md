@@ -282,6 +282,6 @@ If you edit a retention policy and items are already subject to the original set
 
 Usually this update is fairly quick but can take several days. When the policy replication across your Microsoft 365 locations is complete, you'll see the status of the retention policy in the Microsoft 365 compliance center change from **On (Pending)** to **On (Success)**.
 
-## Locking the policy to comply with regulatory requirements
+## Locking the policy to prevent changes
 
-If you need to ensure that that no one can turn off the policy, delete the policy, or make it less restrictive, see the information about Preservation Lock in [Configure retention policies and retention labels for regulatory requirements](retention-regulatory-requirements.md).
+If you need to ensure that that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
