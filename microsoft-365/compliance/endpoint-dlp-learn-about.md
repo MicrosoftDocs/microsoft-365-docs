@@ -78,15 +78,17 @@ If you have onboarded devices through [Microsoft Defender for Endpoint](https://
 - PDF files
 - .csv files
 - .tsv files
-- c files
-- class files
-- cpp files
-- cs files
-- h files
-- java files
+- .txt files
+- .rtf files
+- .c files
+- .class files
+- .cpp files
+- .cs files
+- .h files
+- .java files
 
 > [!NOTE]
-> .txt and source code files are not audited by default, DLP evaluates them against the applied policies and then user actions are audited or blocked accordingly.
+> Endpoint DLP evaluates files of all the above types against the DLP policy and applies protection actions accordingly. All files that match a DLP policy are audited for all supported actions, even if they aren't blocked. In addition, file activity performed on any Word, PowerPoint, Excel, PDF, and .csv file is audited by default, independent of whether a DLP policy exists or matches these files.
 
 Once a device is onboarded, information about audited activities flows into Activity explorer even before you configure and deploy any DLP policies that have devices as a location.
 
