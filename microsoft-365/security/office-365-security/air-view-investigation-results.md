@@ -230,7 +230,7 @@ You can:
 ****
 
 |Analyzer| Description|
-|---|---|
+|:---|:---|
 |DLP violations investigation|Investigate any violations detected by [Data Loss Prevention](../../compliance/data-loss-prevention-policies.md) (DLP)|
 |Email indicators extraction|Extract indicators from the header, body, and content of an email message for investigation|
 |File Hash Reputation|Detect anomalies based on file hashes for users and machines in your organization|
