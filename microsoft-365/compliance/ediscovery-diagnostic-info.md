@@ -84,4 +84,5 @@ The **Settings** tab in an Advanced eDiscovery case lets you quickly copy the di
 
 6. Save the text file and name it to something similar to `AeD Diagnostic Info YYYY.MM.DD` (for example `AeD Diagnostic Info 2020.11.03`.
 
-After reviewing (and redacting sensitive information if necessary) the file, send it to the Microsoft Support engineer working on your case.
+> [!NOTE]
+> After reviewing (and redacting sensitive information if necessary) the file, send it to the Microsoft Support engineer working on your case.
