@@ -530,6 +530,8 @@ To go back to the report view, click **View report**.
 
 ## Add description
 
+How long it took
+
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mail latency report**. To go directly to the report, open <https://protection.office.com/mailLatencyReport?viewid=P50>.
 
 ![Mail latency report widget in the Reports dashboard](../../media/mail-latency-report-widget.png)
@@ -547,7 +549,11 @@ This chart shows messages organized into the following categories:
 - Email delivery
 - Detonations
 
-It shows the aggregate mail delivery and detonation latency, in seconds, within the 50th percentile for all emails delivered on that day.
+For the messages delivered and detonated that day this chart shows the aggregate mail delivery and detonation latency, in seconds, what was in in the 50th percentile.
+
+76 seconds latency is the 50th percentile
+172 seconds latency is the 90th percentile
+189 seconds latency is the 99th percentile
 
 When you hover over a category in the chart, you can see the latency breakdown by mail delivery latency and detonation latency for all emails delivered on that day.
 
