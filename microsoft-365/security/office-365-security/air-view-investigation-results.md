@@ -201,12 +201,13 @@ Here are a few points to keep in mind:
 
 - The email count shown at the bottom of the **Email** tab of the email cluster flyout and the count of email messages shown in Explorer reflect email messages received after the investigation's initial analysis. 
 
-Thus an email cluster that shows an original quantity of 10 email messages would show an email list total of 15 when five more email messages arrive between the investigation analysis phase and when the admin reviews the investigation. Likewise, old investigations might start showing higher counts than Explorer queries show, because data in Microsoft Defender for Office 365 Plan 2 expires after 7 days for trials and after 30 days for paid licenses.  
+Thus, an email cluster that shows an original quantity of 10 email messages would show an email list total of 15 when five more email messages arrive between the investigation analysis phase and when the admin reviews the investigation. Likewise, old investigations might start showing higher counts than Explorer queries show, because data in Microsoft Defender for Office 365 Plan 2 expires after 7 days for trials and after 30 days for paid licenses.  
 
 Showing both count historical and current counts in different views is done to indicate the email impact at the time of investigation and the current impact up until the time that remediation is run.
 
 > [!NOTE]
 > In the context of email, you may see a volume anomaly threat surface as part of the investigation. A volume anomaly indicates a spike in similar email messages around the investigation event time compared to earlier timeframes. This spike in email traffic with similar characteristics (e.g. subject and sender domain, body similarity and sender IP) is typical of the start of email campaigns or attacks. However, bulk, spam, and legitimate email campaigns commonly share these characteristics. 
+>
 > Volume anomalies represent a potential threat, and accordingly could be less severe compared to malware or phish threats that are identified using anti-virus engines, detonation or malicious reputation.
 
 ### User investigation
@@ -266,27 +267,6 @@ You can:
 
 - Export the results to a CSV file.
 - Filter the view.
-
-|Analyzer| Description|
-|:---|:---|
-|DLP violations investigation|Investigate any violations detected by [Data Loss Prevention](../../compliance/data-loss-prevention-policies.md) (DLP)|
-|Email indicators extraction|Extract indicators from the header, body, and content of an email message for investigation|
-|File Hash Reputation|Detect anomalies based on file hashes for users and machines in your organization|
-|Mail cluster identification|Email cluster analysis based on header, body, content, files, and URLs|
-|Mail cluster volume analysis|Email cluster analysis based on outbound mail flow volume patterns|
-|Mail delegation investigation|Investigate mail delegation access for user mailboxes related to this investigation|
-|Mail forwarding rules investigation|Investigate any mail forwarding rules for user mailboxes related to this investigation|
-|Missed malware detected|Detect missed malware delivered to user's mailbox in your organization|
-|On-demand detonation|On-demand detonation triggered for email messages, attachments, and URLs|
-|Outbound mail anomaly investigation|Detect anomalies based on historical mail flow sending patterns for users in your organization|
-|Outbound malware and spam anomaly investigation|Detect intra-org and outbound malware, phish, or spam originating from users in your organization|
-|Sender domain investigation|On-demand check of domain reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources|
-|Sender IP investigation| On-demand check of IP reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources|
-|URL clicks investigation| Investigate clicks from users protected by [Safe Links in Microsoft Defender for Office 365](atp-safe-links.md) in your organization|
-|URL reputation investigation|On-demand check on URL reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources|
-|User activity investigation|Analyze user activity anomalies in [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|
-|User-reported emails indicators extraction|Extract indicators from the header, body, and content of [user-reported email](enable-the-report-message-add-in.md) for investigation|
-|
 
 ### Recommended actions
 
