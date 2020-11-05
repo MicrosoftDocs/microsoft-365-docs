@@ -136,15 +136,21 @@ You can:
 
 ### Email investigation
 
-On the **Email** tab for an investigation, you can see the original emails and the clusters of similar email identified as part of the investigation. Given the sheer volume of email that users in an organization send and receive, plus the multi-user nature of email communications and attacks, the following process can take a significant amount of time:
+On the **Email** tab for an investigation, you can see the original emails and the clusters of similar email identified as part of the investigation. The **Email** tab also shows email items related to the investigation, such as the user-reported email details, the original email reported, the email message(s) zapped due to malware/phish, etc.
 
-- Clustering email messages based on similar attributes from a message header, body, URL, and attachments;
+Given the sheer volume of email that users in an organization send and receive, plus the multi-user nature of email communications and attacks, the following process can take a significant amount of time:
 
-- Separating malicious email from the good email; and
+1. Clustering email messages based on similar attributes from a message header, body, URL, and attachments
 
-- Taking action on malicious email messages
+2. Separating malicious email from the good email
 
-AIR now automates this process, saving your organization's security team time and effort. Three different types of email clusters can be identified during the email analysis step: similarity clusters (all investigations), indicator clusters (all investigations), and mailbox/user clusters. The following table describes these types of email clusters.
+3. Taking action on malicious email messages
+
+AIR automates this process, saving your organization's security team time and effort. 
+
+#### Types of email clusters
+
+Three different types of email clusters can be identified during the email analysis step: similarity clusters (all investigations), indicator clusters (all investigations), and mailbox/user clusters. The following table describes these types of email clusters.
 
 
 |Email cluster  |Description  |
@@ -152,6 +158,11 @@ AIR now automates this process, saving your organization's security team time an
 |Similarity clusters     |Email messages identified by hunting for emails with similar sender and content attributes. These clusters are evaluated for malicious content based on the original detection findings. Email clusters that contain enough malicious email detections are considered malicious.         |
 |Indicator clusters | Email messages that are identified by hunting for the same indicator entity (file hash or URL) from the original email. When the original file/URL entity is identified as malicious, AIR applies the indicator verdict to the entire cluster of email messages containing that entity. A file identified as malware means that the cluster of email messages containing that file are treated as malware email messages. |
 |Mailbox/user clusters | Email messages related to the user involved in a user compromise investigation.  These email clusters are for further analysis by the security operations team and will not generate email remediation actions. <br/> The compromised user security playbook  reviews the emails being sent by the user being analyzed in order to understand the potential impact of the emails being sent from the mailbox. |
+
+> [!NOTE]
+> The goal of clustering is to hunt and find other related email messages that are sent by the same sender as part of an attack or a campaign.  In some cases, legitimate email may trigger an investigation (for example, a user reports a marketing email).  In these scenarios, the email clustering should identify that email clusters are not malicious – when it appropriately does so, it will **not** indicate a threat, nor will it recommend email removal.
+
+#### Email classifications
 
 As email messages are analyzed, they are classified as *malicious*, *suspicious*, or *clean* (as in, *not identifed as a threat*):
 
@@ -161,9 +172,8 @@ As email messages are analyzed, they are classified as *malicious*, *suspicious*
 
 - *Clean emails* (emails that are considered not a threat) sent by the mailbox/user can provide your security operations team with a view of legitimate user emails sent. However, these emails can also include data exfiltration if the email account is compromised.
 
-The goal of clustering is to hunt and find other related email messages that are sent by the same sender as part of an attack or a campaign.  In some cases, legitimate email may trigger an investigation (for example, a user reports a marketing email).  In these scenarios, the email clustering should identify that email clusters are not malicious – when it appropriately does so, it will **not** indicate a threat nor will it recommend email removal.
 
-The **Email** tab also shows email items related to the investigation, such as the user-reported email details, the original email reported, the email message(s) zapped due to malware/phish, etc.
+
 
 The email count identified on the email tab currently represents the sum total of all email messages shown on the **Email** tab. Because email messages are present in multiple clusters, the actual total count of email messages identified (and affected by remediation actions) is the count of unique email messages present across all of the clusters and original recipients' email messages.
 
