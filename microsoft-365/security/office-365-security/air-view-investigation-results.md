@@ -195,13 +195,14 @@ There might be cases where an email gets counted two or more times, such as when
 
 For example, a malware email that is detected at delivery can result in both a blocked (quarantined) email and a replaced email (threat file replaced with a warning file, then delivered to user's mailbox). Because there are literally two copies of the email in the system, both might be counted in cluster counts.
 
-Here are a few points to keep in mind:
-
-- Email counts are calculated at the time of the investigation, and some counts are recalculated when you open investigation flyouts (based on an underlying query). 
-
-- The email counts shown for the email clusters on the **Email** tab and the email quantity value shown on cluster flyout are calculated at the time of investigation, and do not change. 
-
-- The email count shown at the bottom of the **Email** tab of the email cluster flyout and the count of email messages shown in Explorer reflect email messages received after the investigation's initial analysis. 
+> [!IMPORTANT]
+> Here are a few points to keep in mind:
+> 
+> - Email counts are calculated at the time of the investigation, and some counts are recalculated when you open investigation flyouts (based on an underlying query). 
+> 
+> - The email counts shown for the email clusters on the **Email** tab and the email quantity value shown on cluster flyout are calculated at the time of investigation, and do not change. 
+> 
+> - The email count shown at the bottom of the **Email** tab of the email cluster flyout and the count of email messages shown in Explorer reflect email messages received after the investigation's initial analysis. 
 
 Thus, an email cluster that shows an original quantity of 10 email messages would show an email list total of 15 when five more email messages arrive between the investigation analysis phase and when the admin reviews the investigation. Likewise, old investigations might start showing higher counts than Explorer queries show, because data in Microsoft Defender for Office 365 Plan 2 expires after 7 days for trials and after 30 days for paid licenses.  
 
