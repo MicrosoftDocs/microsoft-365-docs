@@ -61,8 +61,15 @@ Select a payload from the list to see a preview of the payload with additional i
 
 If you'd like to create your own payload, read [create a payload for attack simulation training](attack-simulation-training-payloads.md).
 
-Once you've selected your payload and clicked **Next**, you'll need to target users for this simulation.
-You can choose to **include all users in your organization** or **include only specific users and groups**. If you include only specific users and groups, besides your ability to search by clicking on **Add users** you can also import a list from a CSV file by clicking on **Import**.
+## Audience targeting
+
+Now it's time to select this simulation's audience. You can choose to **include all users in your organization** or **include only specific users and groups**. 
+
+When you choose to **include only specific users and groups** you can either:
+
+- **Add users**, which allows you to leverage search for your tenant, as well as advanced search and filtering capabilities, like targeting users who haven't been targeted by a simulation in the last 3 months.
+  ![User filtering in attack simulation training on Microsoft 365 security center](../../media/attack-sim-preview-user-targeting.png)
+- **Import from CSV** allows you to import a predefined set of users for this simulation.
 
 ## Assigning training
 
