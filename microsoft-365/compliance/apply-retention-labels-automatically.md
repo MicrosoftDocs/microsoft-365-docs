@@ -175,17 +175,8 @@ To identify Microsoft Teams meeting recordings that are stored in users' OneDriv
 ProgID:Media AND ProgID:Meeting
 ```
 
-For this retention label, you must also publish it to the relevant users' OneDrive accounts or SharePoint sites by creating a label policy. Most of the time, the meeting recordings are saved to OneDrive, but for channel meetings, they are saved in SharePoint.
+Most of the time, meeting recordings are saved to OneDrive. But for channel meetings, they are saved in SharePoint.
 
-When you have saved the auto-apply retention label policy:
-
-1. Select **Label policies** tab > **Publish labels**
-
-2. When prompted to select a label, choose the same label that you selected for the auto-apply policy that identifies Teams meeting recordings.
-
-3. When prompted for the location, choose **SharePoint sites** and **OneDrive accounts**. You can then keep the default of **All**, or specify individual locations, such as including or excluding specific OneDrive accounts.
-
-4. Complete the wizard and save this label policy.
 
 #### Auto-apply labels to content by using trainable classifiers
 
