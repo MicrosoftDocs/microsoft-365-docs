@@ -130,5 +130,10 @@ The data from this query will appear in the results panel below the query itself
 
 ## Related information
 
+[The Action center](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)
+
+[Email & collaboration alerts](https://docs.microsoft.com/en-us/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies)
+
 [Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/advanced-hunting-query-emails-devices?view=o365-worldwide)
 
+[Custom detection rules](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
