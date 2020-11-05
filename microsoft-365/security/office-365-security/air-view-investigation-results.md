@@ -273,13 +273,11 @@ You can:
 
 ### Recommended actions
 
-On the **Actions** tab, you can see all the playbook actions that are recommended for remediation after the investigation has completed.
-
-Actions capture the steps Microsoft recommends you take at the end of an investigation. You can take remediation actions here by selecting one or more actions. 
+On the **Actions** tab, you can see all the playbook actions that are recommended for remediation after the investigation has completed. Actions capture the steps Microsoft recommends you take at the end of an investigation. You can take remediation actions here by selecting one or more actions. 
 
 Selecting **Approve** allows remediation to begin. (Appropriate permissions are needed - the **Search And Purge** role is required to run actions from Explorer and AIR). 
 
-For example, a Security Reader can view actions but not approve them. 
+For example, a Security Reader can view actions, but not approve them. 
 
 > [!IMPORTANT]
 > You do not have to approve every action. If you do not agree with the recommended action or your organization does not choose certain types of actions, then you can choose to **Reject** the actions or simply ignore them and take no action. 
