@@ -306,19 +306,11 @@ You have Security defaults turned on. Turn off Security defaults and set up cond
 
 ### Self-service Password Reset
 
-Self-service Password Reset (SSPR) must be enabled.
-
-**Not ready**
-
-SSPR must be enabled for all users. If it isn't, the Microsoft Managed Desktop service accounts can't work. For more information, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+Self-service Password Reset (SSPR) must be enabled for all users. If it isn't, the Microsoft Managed Desktop service accounts can't work. For more information, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Advisory**
 
 Make sure that the SSPR **Selected** setting includes Microsoft Managed Desktop devices.
-
-**Error**
-
-The Intune Administrator role doesn't have sufficient permissions for this check. You'll also need the Reports Reader Azure AD role assigned to run this check.
 
 
 ### Standard user role
