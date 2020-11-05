@@ -35,7 +35,7 @@ Or, your business needs enterprise features, such as Microsoft 365 Apps for ente
 Upgrading is easy: you can start the upgrade [from the Admin center](../commerce/subscriptions/upgrade-to-different-plan.md). All your data and configuration in your current subscription is maintained. There's nothing for you to do to prepare for the migration and nothing to do afterward, except take advantage of the new features.
 
 >[!Note]
->You can also use a Microsoft 365 Business Premium subscription for up to 300 seats and get a Microsoft 365 E3 subscription for more than 300 seats. However, Office 365 ATP is not included with Microsoft 365 E3. For continued threat protection, you should add additional Office 365 ATP licenses so that all of the users in scope of your Office 365 ATP polices are licensed.
+>You can also use a Microsoft 365 Business Premium subscription for up to 300 seats and get a Microsoft 365 E3 subscription for more than 300 seats. However, Microsoft Defender for Office 365 is not included with Microsoft 365 E3. For continued threat protection, you should add additional Defender for Office 365 licenses so that all of the users in scope of your Defender for Office 365 polices are licensed.
 >
 
 ## Differences between Microsoft 365 Business Premium and Microsoft 365 Enterprise
@@ -55,7 +55,7 @@ This table shows the differences between Microsoft 365 Business Premium and Micr
 | Outlook Customer Manager, MileIQ    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Threat Protection**        | | | 
 | Attack surface reduction capabilities    | [See this list](#threat-protection) | Enterprise management of hardware-based isolation for Microsoft Edge | 
-| Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
+| Defender for Office 365 Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
 | **Identity management**        | | | 
 | Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
 | Cloud App Discovery, Azure AD Connect Health    |     | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
@@ -124,7 +124,7 @@ Windows 10 Business includes these protections:
 Windows 10 Enterprise E3 also includes enterprise management of hardware-based isolation for Microsoft Edge.
 
 >[!Note]
->Users migrated to Microsoft 365 E3 will each require an Office 365 ATP license for continued threat protection. Be sure to purchase additional Office 365 ATP licenses so that all of the users in scope of your Office 365 ATP polices are licensed. 
+>Users migrated to Microsoft 365 E3 will each require an Microsoft Defender for Office 365 license for continued threat protection. Be sure to purchase additional Defender for Office 365 licenses so that all of the users in scope of your Defender for Office 365 polices are licensed. 
 >
 
 ### Device management with Intune

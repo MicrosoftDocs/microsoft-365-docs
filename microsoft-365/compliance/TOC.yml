@@ -266,7 +266,9 @@
         - name: Use sensitivity labels as a condition in DLP policies (preview)
           href: dlp-sensitivity-label-as-condition.md
         - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
-          href: dlp-use-policies-non-microsoft-cloud-apps.md  
+          href: dlp-use-policies-non-microsoft-cloud-apps.md
+        - name: DLP policy conditions and exceptions (preview)
+          href: dlp-conditions-and-exceptions.md
 - name: Manage information governance
   items: 
     - name: Govern your data
@@ -530,6 +532,8 @@
             href: data-spillage-scenariosearch-and-purge.md
           - name: Preserve Bcc recipients for search
             href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+          - name: Decryption in eDiscovery tools
+            href: ediscovery-decryption.md
           - name: Troubleshoot common eDiscovery issues
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
@@ -659,6 +663,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
+            - name: Decryption in eDiscovery tools
+              href: ediscovery-decryption.md
             - name: Search for eDiscovery activities in the audit log
               href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: Troubleshoot AzCopy
