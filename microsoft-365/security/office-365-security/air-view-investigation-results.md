@@ -183,7 +183,7 @@ As email messages are analyzed, they are classified as *malicious*, *suspicious*
 
 - *Clean emails* (emails that are considered not a threat) sent by the mailbox/user can provide your security operations team with a view of legitimate user emails sent. However, these emails can also include data exfiltration if the email account is compromised.
 
-#### About email counts...
+#### More about email counts
 
 The email count identified on the email tab currently represents the sum total of all email messages that shown on the **Email** tab. Because email messages are present in multiple clusters, the actual total count of email messages identified (and affected by remediation actions) is the count of unique email messages present across all of the clusters and original recipients' email messages.
 
