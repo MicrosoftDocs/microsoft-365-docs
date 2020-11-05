@@ -19,6 +19,7 @@ description: "Learn about information specifically for Microsoft 365 for busines
 ms.custom: 
 - AdminSurgePortfolio
 - Commerce
+monikerRange: 'o365-worldwide'
 ---
 
 # Billing information for Microsoft 365 for business in Mexico
