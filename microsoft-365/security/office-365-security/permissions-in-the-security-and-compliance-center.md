@@ -130,7 +130,7 @@ Note that the following roles aren't assigned to the Organization Management rol
 |**Data Classification List Viewer**|View the list of files in content explorer.|Content Explorer List Viewer|
 |**Data Investigation Management**|Create, edit, delete, and control access to data investigations.|Compliance Administrator <br/><br/> Data Investigator|
 |**Device Management**|View and edit settings and reports for device management features.|Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management <br/><br/> Security Administrator|
-|**Disposition Management**|View and take action on content that's reached the end of its retention period.  <br/><br/> Compliance Data Administrator|
+|**Disposition Management**|View and take action on content that's reached the end of its retention period.  <br/><br/> | Compliance Data Administrator|
 |**DLP Compliance Management**|View and edit settings and reports for data loss prevention (DLP) policies.|Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management <br/><br/> Security Administrator|
 |**Export**|Export mailbox and site content that's returned from searches.|eDiscovery Manager|
 |**Hold**|Place content in mailboxes, sites, and public folders on hold. When on hold, a copy of the content is stored in a secure location. Content owners will still be able to modify or delete the original content.|Compliance Administrator <br/><br/> eDiscovery Manager <br/><br/> Organization Management|
