@@ -20,11 +20,11 @@ localization_priority: None
 
 The topic center is a Modern SharePoint site that serves as a center of knowledge for your organization​. It is created during [Knowledge Management setup](set-up-knowledge-network.md) in the Microsoft 365 admin center.
 
-Through the topic center, users with the proper permissions can do the following:
+The topic center has a default home page where you can see the topics to which you have been connected or suggested to be connected. Users with the proper permissions can also:
 
-- Confirm or reject discovered topics
 - Create a new topic page
-- Edit an existing topic page
+- Confirm or reject suggested topics
+- Edit and publish changes to a topic page
 
 > [!Note] 
 > You can learn more about each task in [Work with topics in the topic center](work-with-topics.md).
@@ -39,13 +39,26 @@ Your topic center is created during Knowledge Management setup. After setup comp
 
 2. On the **Connect people to knowledge** page, in the **At a glance** section, see **Topic center address** for the site URL.
 
-## Permissions to use the topic center
+## Home page
 
-To work in the topic center, you need to have the required permissions. Your admin can assign these permissions to users during [knowledge management setup](set-up-knowledge-network.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md) by an admin through the Microsoft 365 admin center.
+To see the topic center, you need to have permissions to view topics and the topic experiences. Your admin can assign these permissions to users during [knowledge management setup](set-up-knowledge-network.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md) by an admin through the Microsoft 365 admin center.
+
+On the home page 
+- **View topics**: view topic experiences. So you can see topics in the organization and give feedback on topics where you have been connected:
+1. Suggested connections - these are topics where my connection has been suggested
+2. Confirmed connections - these are topics where I am pinned on the topic or I've confirmed my connection
+Topics will move from the suggested to confirmed section when I confirm a suggested connection.
+Once I'm pinned, edits to the topic page can be done to curate my connection.
+
+- **Create and edit topics**: New topic is available and you can edit pages
+
+
+## Permissions to use the Manage Topics capability topic center
+
+To work in the Manage Topics section of topic center, you need to have the required permissions. Your admin can assign these permissions to users during [knowledge management setup](set-up-knowledge-network.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md) by an admin through the Microsoft 365 admin center.
 
 Topic center users can be given two sets of permissions:
 
-- **Create and edit topics**: Create new topics or update topic content such as the description, documents and associated persons. Assign this permission to subject matter experts who are tasked with reviewing topic pages.
 - **Manage topics**: Use the topic dashboard to review topics across the organization. Users can perform actions such as confirming and rejecting unconfirmed topics.
 
 A user can be given both sets of permissions, or only one if needed. 

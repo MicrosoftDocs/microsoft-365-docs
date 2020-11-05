@@ -59,7 +59,7 @@ When content is declared a record:
 
 - You have proof of disposition when the items are deleted at the end of their retention period.
 
-You use [retention labels](retention.md#retention-labels) to mark content as a **record**, or a **regulatory record** (currently in preview). The difference between these two are explained in the next section. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record or a regulatory record.
+You use [retention labels](retention.md#retention-labels) to mark content as a **record**, or a **regulatory record**. The difference between these two are explained in the next section. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record or a regulatory record.
 
 By using retention labels to declare records, you can implement a single and consistent strategy for managing records across your Microsoft 365 environment.
 
@@ -103,7 +103,6 @@ Containers include SharePoint document libraries and Exchange mailboxes.
 > In addition, retention labels configured for regulatory records have the following admin restrictions:
 > - The retention period can't be made shorter after the label is saved, only extended.
 > - These labels aren't supported by auto-labeling policies, and must be applied by using [retention label policies](create-apply-retention-labels.md). 
-> - After you have added and saved these labels to a retention label policy, you can't remove these labels from locations, only add locations.
 > 
 > Because of these irreversible actions, make sure you really do need to use regulatory records before you select this option for your retention labels. To help prevent accidental configuration, this option is not available by default but must first be enabled by using PowerShell. Instructions are included in [Declare records by using retention labels](declare-records.md).
 

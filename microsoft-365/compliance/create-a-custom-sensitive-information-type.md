@@ -33,14 +33,6 @@ You can also create custom sensitive information types by using PowerShell and E
 > - Chinese (traditional)
 > - Korean
 > - Japanese
-> 
->This preview is only in the commercial cloud and the rollout is limited to:
-> - Japan
-> - Korea
-> - China
-> - Hong Kong
-> - Macau
-> - Taiwan
 >
 >This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
 

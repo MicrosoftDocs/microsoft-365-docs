@@ -1,5 +1,5 @@
 ---
-title: "Upgrade your Microsoft 365 for business users to the latest Office client"
+title: Upgrade your Office 2010 to Microsoft 365 - Microsoft 365 admin
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,10 +16,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.custom:
+- fwlink 824861; CampaignID
+- O365_Comm_SR_UpgradeOffice
+- seo-marvel-may2020
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
-description: "Learn how to upgrade your users to the latest Office client."
+description: Learn about how to upgrade Microsoft Office to the latest Office client for users in your organization.
 ---
 
 # Upgrade your Microsoft 365 for business users to the latest Office client
@@ -42,7 +45,7 @@ See [Office 2010 end of support roadmap](https://docs.microsoft.com/deployoffice
 
  If you're not an admin and you have a [Microsoft 365 Family](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) product, see [How do I upgrade Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) for information about upgrading your older, home use version of Office.
 
-## Get ready to upgrade
+## Get ready to upgrade to Microsoft 365
 
 As an admin, you control what version of Office people in your organization can install. We highly recommend that you help users in your organization running older versions of Office such as Office 2010, Office 2013, or Office 2016 upgrade to the latest version to take advantage of its security and productivity improvements.
 

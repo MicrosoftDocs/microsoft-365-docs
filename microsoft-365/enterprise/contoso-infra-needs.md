@@ -1,11 +1,10 @@
 ---
-title: "Contoso's IT infrastructure and business needs"
+title: "Contoso IT infrastructure and business needs"
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,26 +14,24 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 
-description: Understand the basic structure of Contoso's on-premises IT infrastructure and how its business needs were met by Microsoft 365 for enterprise.
+description: Understand the basic structure of the Contoso on-premises IT infrastructure and how the company's business needs are met by Microsoft 365 for enterprise.
 ---
 
-# Contoso's IT infrastructure and business needs
+# Contoso IT infrastructure and business needs
 
-Contoso has been transitioning from an on-premises, centralized IT infrastructure to a cloud-inclusive one that incorporates cloud-based personal productivity workloads and applications.
+Contoso is transitioning from an on-premises, centralized IT infrastructure to a cloud-inclusive setup that incorporates cloud-based personal productivity workloads and applications.
 
-## Contoso's existing IT infrastructure
+## Existing Contoso IT infrastructure
 
 Contoso uses a mostly centralized on-premises IT infrastructure, with application datacenters in the Paris headquarters.
 
-Figure 1 shows a headquarters office with application datacenters, a DMZ, and the Internet.
+Here is the headquarters office with application datacenters, a DMZ, and the internet.
 
-![Contoso's existing IT infrastructure](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Existing Contoso IT infrastructure](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
-**Figure 1: Contoso's existing IT infrastructure**
- 
 The on-premises application datacenters host: 
 
-- Custom line of business applications that use SQL Server and other Linux databases.
+- Custom line-of-business applications that use SQL Server and other Linux databases.
 - A set of legacy SharePoint servers.
 - Organization and team-level servers for file storage.
 
@@ -42,33 +39,33 @@ Additionally, each regional hub office supports a set of servers with a similar 
 
 Searchability across the applications and data of these separate multi-geographical datacenters continues to be a challenge.
 
-In Contoso's headquarters DMZ, different sets of servers provide:
+In the Contoso headquarters DMZ, different sets of servers provide:
 
-- Hosting for the Contoso public web site, from which customers can order products, parts, supplies, or service.
+- Hosting for the Contoso public web site, from which customers can order products, parts, supplies, and service.
 - Hosting for the Contoso partner extranet for partner communication and collaboration.
 - Virtual private network (VPN)-based remote access to the Contoso intranet and web proxying for workers in the Paris headquarters.
 
-## Contoso's business needs
+## Contoso business needs
 
-Contoso's business needs fall into five main categories.
+Contoso business needs fall into five main categories:
 
-Productivity:
+**Productivity**
 
 - Make collaboration easier
 
-  Replace the email and file share-based collaboration with an online model that allows real-time changes on documents, easier online meetings, and captured conversation threads.
+  Replace email and file share-based collaboration with an online model that allows real-time changes on documents, easier online meetings, and captured conversation threads.
 - Improve productivity for remote and mobile workers
 
-  With many employees working from homes or in the field, replace the bottlenecked VPN solution with performant access to Contoso data and resources in the cloud.
+  With many employees working from home or in the field, replace the bottlenecked VPN solution with performant access to Contoso data and resources in the cloud.
 - Increase creativity and innovation
 
   Take advantage of the latest visual learning and idea development methods, including inking and 3D visualization.
 
-Security:
+**Security**
 
 - Identity and access management
 
-  Enforce multi-factor and other forms of authentication and protect user and administrator account credentials.
+  Enforce multifactor and other forms of authentication and protect user and administrator account credentials.
 
 - Threat protection
 
@@ -80,37 +77,37 @@ Security:
 
 - Security management
 
-  Monitor security posture and be able to detect and respond to threats in real time.
+  Monitor security posture and detect and respond to threats in real time.
 
-Remote and mobile access and business partners:
+**Remote and mobile access and business partners**
 
-- Better security for remote and mobile workers
+- Improve security for remote and mobile workers
 
-  Institute Bring Your Own Device (BYOD) and company-owned device management to ensure secured access, correct application behavior, and company data protection.
+  Implement bring your own device (BYOD) and company-owned device management to ensure secured access, correct application behavior, and company data protection.
 
 - Reduce remote access infrastructure for employees
 
-  Reduce maintenance and support costs and improve performance for remote access solution by moving commonly-accessed resources to the cloud.
+  Reduce maintenance and support costs and improve performance for remote access solution by moving commonly accessed resources to the cloud.
 
-- Provide better connectivity and lower overhead for Business-to-Business (B2B) transactions
+- Provide better connectivity and lower overhead for business-to-susiness (B2B) transactions
 
-  Replace aging and expensive partner extranet with a cloud-based solution that uses federated authentication.
+  Replace an aging and expensive partner extranet with a cloud-based solution that uses federated authentication.
 
-Compliance:
+**Compliance**
 
 - Adhere to regional regulatory requirements
 
-  Become and remain compliant with industry and regional regulations for data storage, encryption, data privacy, and personal data regulations, such as the General Data Protection Regulation (GDPR) for the Europe Union.
+  Ensure compliance with industry and regional regulations for data storage, encryption, data privacy, and personal data regulations, such as the General Data Protection Regulation (GDPR) for the Europe Union.
 
-Management:
+**Management**
 
-- Lower the IT overhead for managing software running on client PCs and devices
+- Lower IT overhead for managing software running on client PCs and devices
 
-  Automate the installation of updates to the Windows operating system and Microsoft 365 Apps for enterprise across the organization.
+  Automate installation of updates to the Windows operating system and Microsoft 365 Apps for enterprise across the organization.
 
-## Mapping Contoso's business needs to Microsoft 365 for enterprise
+## Mapping Contoso business needs to Microsoft 365 for enterprise
 
-Contoso's IT department determined the following mapping of business needs to Microsoft 365 E5 features prior to deployment:
+The Contoso IT department determined the following mapping of business needs to Microsoft 365 E5 features prior to deployment:
 
 
 | Category | Business need | Microsoft 365 for enterprise products or features |
@@ -121,22 +118,22 @@ Contoso's IT department determined the following mapping of business needs to Mi
 |  | Increase creativity and innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Security |  |  |
 |  | Identity & access management | Dedicated global administrator accounts with Azure Multi-Factor Authentication (MFA) and Azure AD Privileged Identity Management (PIM) <BR> MFA for all user accounts <BR> Conditional Access <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Threat protection | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Microsoft 365 threat investigation and response <BR> |
+|  | Threat protection | Advanced Threat Analytics <BR> Windows Defender <BR> Defender for Office 365 <BR> Microsoft Defender for Office 365 <BR> Microsoft 365 threat investigation and response <BR> |
 |  | Information protection | Azure Information Protection <BR> Data Loss Prevention (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | Security management | Azure Security Center  <BR> Windows Defender Security Center |
+|  | Security management | Azure Defender  <BR> Windows Defender Security Center |
 | Remote and mobile access and business partners |  |  |
 |  | Better security for remote and mobile workers | Microsoft Intune |
 |  | Reduce remote access infrastructure for employees | Microsoft 365 workloads and cloud-based data |
-|  | Provide better connectivity and lower overhead for B2B transactions | Federated authentication and cloud-based resources |
+|  | Improve connectivity and lower overhead for B2B transactions | Federated authentication and cloud-based resources |
 | Compliance |  |  |
 |  | Adhere to regional regulatory requirements | GDPR features in Microsoft 365 |
 | Management |  |  |
-|  | Lower the IT overhead for installing client updates | Deployment rings <BR> Windows 10 Enterprise updates <BR> Microsoft 365 Apps for enterprise updates |
+|  | Lower IT overhead for installing client updates | Windows 10 Enterprise updates <BR> Microsoft 365 Apps for enterprise updates |
 ||||
 
 ## Next step
 
-[Learn](contoso-networking.md) about the Contoso Corporation’s on-premises network and how it was optimized for access and latency to Microsoft 365 cloud-based resources.
+Learn about the Contoso Corporation [on-premises network](contoso-networking.md) and how it was optimized for access and latency to Microsoft 365 cloud-based resources.
 
 ## See also
 
