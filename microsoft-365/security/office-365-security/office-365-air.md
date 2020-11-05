@@ -27,12 +27,16 @@ ms.custom:
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-[Microsoft Defender for Office 365](office-365-atp.md) includes powerful automated investigation and response (AIR) capabilities that can save your security operations team time and effort. As alerts are triggered, it's up to your security operations team to review, prioritize, and respond to those alerts. Keeping up with the volume of incoming alerts can be overwhelming. Automating some of those tasks can help. With AIR, your security operations team can focus on higher-priority tasks without losing sight of important alerts that are triggered.
+[Microsoft Defender for Office 365](office-365-atp.md) includes powerful automated investigation and response (AIR) capabilities that can save your security operations team time and effort. As alerts are triggered, it's up to your security operations team to review, prioritize, and respond to those alerts. Keeping up with the volume of incoming alerts can be overwhelming. Automating some of those tasks can help. 
+
+AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well-known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond effectively to detected threats. With AIR, your security operations team can focus on higher-priority tasks without losing sight of important alerts that are triggered.
 
 This article describes:
 - The [overall flow of AIR](#the-overall-flow-of-air);
 - [How to get AIR](#how-to-get-air); and 
 - The [required permissions](#required-permissions-to-use-air-capabilities) to configure or use AIR capabilities. 
+
+This article also includes [next steps](#next-steps), and resources to learn more.
 
 ## The overall flow of AIR
 
@@ -91,7 +95,7 @@ In addition, make sure to [review your organization's alert policies](https://do
 
 ## Which alert policies trigger automated investigations?
 
-Microsoft 365 provides many built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Several of the [default alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) can trigger automated investigations. These include the following:
+Microsoft 365 provides many built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Several of the [default alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) can trigger automated investigations. The following table describes alerts that trigger automated investigations in Microsoft Defender for Office 365:
 
 - A potentially malicious URL click is detected
 - An email message is reported by a user as phish
@@ -111,7 +115,7 @@ Permissions are granted through certain roles, such as those that are described 
 
 ## Required licenses
 
-[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) licenses should be assigned to:
+[Microsoft Defender for Office 365 Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#microsoft-defender-for-office-365-plan-1-and-plan-2) licenses should be assigned to:
 - Security administrators (including global administrators)
 - Your organization's security operations team (including security readers and those with the Search and Purge role)
 - End users
@@ -123,7 +127,7 @@ Permissions are granted through certain roles, such as those that are described 
 
 - [Review and approve pending actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-remediation-actions)
 
-## Related articles
+## See also
 
 - [Automated investigation and remediation in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
