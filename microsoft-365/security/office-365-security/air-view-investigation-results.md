@@ -39,11 +39,11 @@ The investigation status indicates the progress of the analysis and actions. As 
 |**Threats Found** |The automated investigation found issues, but there are no specific remediation actions to resolve those issues.<br/><br/> The **Threats Found** status can occur when some type of user activity was identified but no cleanup actions are available. Examples include any of the following user activities: <br/>- A [data loss prevention](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) (DLP) event <br/>- An email sending anomaly <br/>- Sent malware <br/>- Sent phish<br/>The investigation found no malicious URLs, files, or email messages to remediate, and no mailbox activity to fix, such as turning off forwarding rules or delegation. <br/><br/>**TIP**: If you suspect something was missed (such as a false negative), you can investigate and take action using [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)​.|
 |**Terminated By System** | The investigation stopped. An investigation can stop for several reasons:​<br/>- The investigation's pending actions expired. Pending actions time out after awaiting approval for one week. <br/>- There are too many actions. For example, if there are too many users clicking on malicious URLs, it can exceed the investigation's ability to run all the analyzers, so the investigation halts​. <br/><br/>**TIP**: If an investigation halts before actions were taken, try using [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) to find and address threats.|
 |**Pending Action** | The investigation has found a threat, such as a malicious email, a malicious URL, or a risky mailbox setting​, and an action to remediate that threat is [awaiting approval](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>The **Pending Action** state is triggered when any threat with a corresponding action is found. However, the list of pending actions can increase as an investigation runs. Check the [investigation log](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) to see if other items are still pending completion.​|
-|Remediated| The investigation finished and all actions were approved (fully remediated).<br/><br/>**NOTE**: Approved remediation actions can have errors that prevent the actions from being taken. Regardless of whether remediation actions are successfully completed, the investigation status does not change. Check the [investigation log](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) for detailed results.​|
-|Partially Remediated| The investigation resulted in remediation actions, and some were approved and completed​. Other actions are still [pending](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).|
-|Failed| At least one investigation analyzer ran into a problem where it could not complete properly​. <br/><br/>**NOTE**: If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded. Check the [investigation log](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) for detailed results.​​|
-|Queued By Throttling| An investigation is being held in a queue. When other investigations complete, queued investigations begin. Throttling helps avoid poor service performance. <br/>​<br/>**TIP**: Pending actions can limit how many new investigations can run. Make sure to [approve (or reject) pending actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions).|
-|Terminated By Throttling| If an investigation is held in the queue too long, it stops. <br/><br/>**TIP**: You can [start an investigation from Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
+|**Remediated** | The investigation finished and all remediation actions were approved (this is noted as fully remediated).<br/><br/>**NOTE**: Approved remediation actions can have errors that prevent the actions from being taken. Regardless of whether remediation actions are successfully completed, the investigation status does not change. Check the [investigation log](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) for detailed results.​|
+|**Partially Remediated**| The investigation resulted in remediation actions, and some were approved and completed​. Other actions are still [pending](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).|
+|**Failed** | At least one investigation analyzer ran into a problem where it could not complete properly​. <br/><br/>**NOTE**: If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded. Check the [investigation log](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) for detailed results.​​|
+|**Queued By Throttling** | An investigation is being held in a queue. When other investigations complete, queued investigations begin. Throttling helps avoid poor service performance. <br/>​<br/>**TIP**: Pending actions can limit how many new investigations can run. Make sure to [approve (or reject) pending actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions).|
+|**Terminated By Throttling** | If an investigation is held in the queue too long, it stops. <br/><br/>**TIP**: You can [start an investigation from Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
 |
 
 ## View details of an investigation
@@ -101,7 +101,9 @@ The automated investigations page shows your organization's investigations and t
 You can:
 
 - Navigate directly to an investigation (select an **Investigation ID**).
+
 - Apply filters. Choose from **Investigation Type**, **Time range**, **Status**, or a combination of these.
+
 - Export the data to a .csv file.
 
 ### Investigation graph
@@ -113,8 +115,11 @@ When you open a specific investigation, you see the investigation graph page. Th
 You can:
 
 - Get a visual overview of the current investigation.
+
 - View a summary of the investigation duration.
+
 - Select a node in the visualization to view details for that node.
+
 - Select a tab across the top to view details for that tab.
 
 ### Alert investigation
@@ -126,28 +131,35 @@ On the **Alerts** tab for an investigation, you can see alerts relevant to the i
 You can:
 
 - Get a visual overview of the current triggering alert and any associated alerts.
+
 - Select an alert in the list to open a fly-out page that shows full alert details.
 
 ### Email investigation
 
-On the **Email** tab for an investigation, you can see the original emails and the clusters of similar email identified as part of the investigation.
+On the **Email** tab for an investigation, you can see the original emails and the clusters of similar email identified as part of the investigation. Given the sheer volume of email that users in an organization send and receive, plus the multi-user nature of email communications and attacks, the following process can take a significant amount of time:
 
-Given the sheer volume of email that users in an organization send and receive, plus the multi-user nature of email communications and attacks, the process of
+- Clustering email messages based on similar attributes from a message header, body, URL, and attachments;
 
-- clustering email messages based on similar attributes from a message header, body, URL, and attachments;
-- separating malicious email from the good email; and
-- taking action on malicious email messages
+- Separating malicious email from the good email; and
 
-can take significant time. AIR now automates this process, saving your organization's security team time and effort.
+- Taking action on malicious email messages
 
-Three different types of email clusters may be identified during the email analysis step: similarity clusters (all investigations), indicator clusters (all investigations), and mailbox/user clusters.
+AIR now automates this process, saving your organization's security team time and effort. Three different types of email clusters can be identified during the email analysis step: similarity clusters (all investigations), indicator clusters (all investigations), and mailbox/user clusters. The following table describes these types of email clusters.
 
-- Similarity clusters are email messages identified by hunting for emails with similar sender and content attributes. These clusters are evaluated for malicious content based on the original detection findings. Email clusters that contain enough malicious email detections are considered malicious.
-- Indicator clusters are email messages that are identified by hunting for the same indicator entity (file hash or URL) from the original email. When the ouserriginal file/URL entity is identified as malicious, AIR applies the indicator verdict to the entire cluster of email messages containing that entity. A file identified as malware means that the cluster of email messages containing that file are treated as malware email messages.
-- Mailbox/user clusters are email messages related to the user involved in a user compromise investigation.  Note that these email clusters are for further analysis by the security operations team and will not generate email remediation actions.  The compromise playbook's mailbox/user clusters reviews the emails being sent by the user being analyzed, in order to understand the potential impact of the emails being sent from the mailbox:
-    - Malicious emails sent from the mailbox/user, which indicate potential compromise of the mailbox/account and will show other users/mailboxes potentially impacted by malicious sent as part of a compromise.
-    - Suspicious emails sent by the mailbox/user, showing any spam/bulk email sent from the mailbox, which may be related to potential compromise or at least indicate potential unwanted activity from the email account.
-    - Clean emails sent by the mailbox/user, which will provide the security operations team a view of legitimate user emails sent, but may include exfiltration of data when the email account is compromised.
+
+|Email cluster  |Description  |
+|---------|---------|
+|Similarity clusters     |Email messages identified by hunting for emails with similar sender and content attributes. These clusters are evaluated for malicious content based on the original detection findings. Email clusters that contain enough malicious email detections are considered malicious.         |
+|Indicator clusters | Email messages that are identified by hunting for the same indicator entity (file hash or URL) from the original email. When the original file/URL entity is identified as malicious, AIR applies the indicator verdict to the entire cluster of email messages containing that entity. A file identified as malware means that the cluster of email messages containing that file are treated as malware email messages. |
+|Mailbox/user clusters | Email messages related to the user involved in a user compromise investigation.  These email clusters are for further analysis by the security operations team and will not generate email remediation actions. <br/> The compromised user security playbook  reviews the emails being sent by the user being analyzed in order to understand the potential impact of the emails being sent from the mailbox. |
+
+As email messages are analyzed, they are classified as *malicious*, *suspicious*, or *clean* (as in, *not identifed as a threat*):
+
+- *Malicious emails* sent from the mailbox/user  indicate potential compromise of the mailbox/account. Other users/mailboxes that are potentially impacted by malicious email as part of a compromise are shown.
+
+- *Suspicious emails* sent by the mailbox/user indicate the potential for a compromised account or unwanted email activity. These messages include any spam/bulk email sent from the mailbox.
+
+- *Clean emails* (emails that are considered not a threat) sent by the mailbox/user can provide your security operations team with a view of legitimate user emails sent. However, these emails can also include data exfiltration if the email account is compromised.
 
 The goal of clustering is to hunt and find other related email messages that are sent by the same sender as part of an attack or a campaign.  In some cases, legitimate email may trigger an investigation (for example, a user reports a marketing email).  In these scenarios, the email clustering should identify that email clusters are not malicious – when it appropriately does so, it will **not** indicate a threat nor will it recommend email removal.
 
