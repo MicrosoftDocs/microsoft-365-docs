@@ -282,38 +282,6 @@ If you edit a retention policy and items are already subject to the original set
 
 Usually this update is fairly quick but can take several days. When the policy replication across your Microsoft 365 locations is complete, you'll see the status of the retention policy in the Microsoft 365 compliance center change from **On (Pending)** to **On (Success)**.
 
-## Lock a retention policy by using PowerShell
+## Locking the policy to prevent changes
 
-You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) to comply with regulatory requirements. Because administrators can't disable or delete a retention policy after a preservation lock is applied, enabling this feature is not available in the UI to safeguard against accidental configuration.
-
-All retention policies with any configuration support Preservation Lock. However, when you use the PowerShell commands that follow, you'll notice that the **Workload** parameter always displays **Exchange, SharePoint, OneDriveForBusines, Skype, ModernGroup** rather than reflect the actual workloads configured in the policy. This is a display issue only.
-
-1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
-
-2. List your retention policies and find the name of the policy that you want to lock by running [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy). For example:
-
-   ![List of retention policies in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
-
-3. To place a Preservation Lock on a retention policy, run the [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet with the name of the retention policy, and the *RestrictiveRetention* parameter set to true:
-
-    ```powershell
-    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
-    ```
-
-    For example:
-
-    ![RestrictiveRetention parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
-
-     When prompted, read and acknowledge the restrictions that come with this configuration by entering **Y**:
-
-   ![Prompt to confirm that you want to lock a retention policy in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
-
-A Preservation Lock is now placed on the retention policy. To confirm, run `Get-RetentionCompliancePolicy` again, but specify the retention policy name and display the policy parameters:
-
-```powershell
-Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
-```
-
-You should see **RestrictiveRetention** is set to **True**. For example:
-
-![Locked policy with all parameters shown in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
+If you need to ensure that that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).

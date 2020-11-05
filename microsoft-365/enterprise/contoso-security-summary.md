@@ -85,9 +85,9 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
   Contoso is using [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) for malware protection and anti-malware management for PCs and devices running Windows 10 Enterprise.
 
-- Secure email flow and mailbox audit logging with Office 365 Advanced Threat Protection 
+- Secure email flow and mailbox audit logging with Microsoft Defender for Office 365 
 
-  Contoso is using Exchange Online Protection and [Office 365 Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) to protect against unknown malware, viruses, and malicious URLs transmitted through emails.
+  Contoso is using Exchange Online Protection and [Defender for Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) to protect against unknown malware, viruses, and malicious URLs transmitted through emails.
 
   Contoso also enabled mailbox audit logging to identify who logs in to user mailboxes, sends messages, and does other activities performed by the mailbox owner, a delegated user, or an administrator.
 
@@ -123,9 +123,9 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 ## Security management
 
-- Central security dashboard for IT with Azure Security Center
+- Central security dashboard for IT with Azure Defender
 
-  Contoso uses the [Azure Security Center](https://azure.microsoft.com/services/security-center/) to present a unified view of security and threat protection, to manage security policies across its workloads, and to respond to cyberattacks.
+  Contoso uses the [Azure Defender](https://azure.microsoft.com/services/security-center/) to present a unified view of security and threat protection, to manage security policies across its workloads, and to respond to cyberattacks.
 
 - Central security dashboard for users with Windows Defender Security Center
 
