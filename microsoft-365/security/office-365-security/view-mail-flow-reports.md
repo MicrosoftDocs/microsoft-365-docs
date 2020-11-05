@@ -542,9 +542,14 @@ When you open the report, the **50th percentiles** tab is selected by default. B
 - **Message View**:
   - Detonated messages
 
-This chart shows the aggregate email delivery and detonation latency, in seconds, within the 50th percentile for all emails delivered on that day.
+This chart shows messages organized into the following categories:
 
-When you hover over a category in the chart, you can see a breakdown of the mail delivery latency and detonation latency for all emails delivered on that day.
+- Email delivery
+- Detonations
+
+It shows the aggregate mail delivery and detonation latency, in seconds, within the 50th percentile for all emails delivered on that day.
+
+When you hover over a category in the chart, you can see the latency breakdown by mail delivery latency and detonation latency for all emails delivered on that day.
 
 ![Mail latency report](../../media/mail-latency-report.png)
 
@@ -553,7 +558,7 @@ If you click **Filter** in the report view, you can modify the results with the 
 - All messages
 - Messages that contain attachments or URLs
 
-If you click the **90th percentiles** or the **90th percentiles** tab, the same default filters from the **50th percentiles** view are used.
+If you click the **90th percentiles** tab or the **99th percentiles** tab, the same default filters from the **50th percentiles** view are used.
 
 These chart shows the aggregate email delivery and detonation latency, in seconds, within the 90th and 99th percentiles for all emails delivered on that day.
 
