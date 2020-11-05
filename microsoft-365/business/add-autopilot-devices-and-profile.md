@@ -67,7 +67,7 @@ You can add Windows Autopilot devices by importing a CSV file with their informa
    > When you use CSV upload to assign a user, make sure that you assign valid UPNs. If you assign an invalid UPN (incorrect username), your device may be inaccessible until you remove the invalid assignment. During CSV upload the only validation we perform on the **Assigned User** column is to check that the domain name is valid. We're unable to perform individual UPN validation to ensure that you're assigning an existing or correct user.
 
     > [!NOTE]
-    > The CSV file being imported into the Intune portal must be formatted as described above.  Extra columns are not supported.  Quotes are not supported.  Only ANSI-format text files can be used (not Unicode).  Headers are case-sensitive.  Editing the file in Excel and saving as a CSV file will not generate a usable file due to these requirements.
+    > The CSV file being imported into the Intune portal must be formatted as described above. Extra columns are not supported. Quotes are not supported. Only ANSI-format text files can be used (not Unicode). Headers are case-sensitive. Editing the file in Excel and saving it as a CSV file will not generate a usable file due to these requirements.
 
 3. Choose **Import** to start importing the device information. Importing can take several minutes.
 
