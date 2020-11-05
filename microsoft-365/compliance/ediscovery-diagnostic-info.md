@@ -41,7 +41,7 @@ After reviewing (and redacting sensitive information if necessary) the generated
 The following command collects information that's helpful when investigating issues with a Content search or a search associated with a Core eDiscovery case.
 
 ```powershell
-Get-ComplianceSearch "<search name>" | FL > "ComplianceSearch.txt"
+Get-ComplianceSearch "<Search name>" | FL > "ComplianceSearch.txt"
 ```
 
 ### Collect information about search actions
@@ -49,23 +49,23 @@ Get-ComplianceSearch "<search name>" | FL > "ComplianceSearch.txt"
 The following command collects information to investigate problems with previewing, exporting, or purging the results of a Content search or a search associated with a Core eDiscovery case. You can identify the name of the search action by clicking an export that's listed on the **Exports** tab. To identify the names of preview and purge actions, you can run the **Get-ComplianceSearchAction** cmdlet to display a list of all actions. The format for the search action name is constructed by appending `_Preview`, `_Export`, or `_Purge` to the name of the corresponding search.
 
 ```powershell
-Get-ComplianceSearchAction "<search action name>" | FL > "ComplianceSearchAction.txt"
+Get-ComplianceSearchAction "<Search action name>" | FL > "ComplianceSearchAction.txt"
 ```
 
 ### Collect information about eDiscovery holds
 
-When an eDiscovery hold associated with a Core eDiscovery case isn't functioning as expected, run the following command to collect information about the Case Hold Policy and associated Case Hold Rule for the eDiscovery hold. The *Case Hold Policy Name* in the following command is the same as the name of the eDiscovery hold. You can identify this name on the **Holds** tabs of the Core eDiscovery case.
+When an eDiscovery hold associated with a Core eDiscovery case isn't functioning as expected, run the following command to collect information about the Case Hold Policy and associated Case Hold Rule for the eDiscovery hold. The *Case hold policy name* in the following command is the same as the name of the eDiscovery hold. You can identify this name on the **Holds** tabs in the Core eDiscovery case.
 
 ```powershell
-Get-CaseHoldPolicy "<Case Hold Policy Name>" | %{"--CaseHoldPolicy--";$_|FL;"--CaseHoldRule--";Get-CaseHoldRule -Policy $_.Name | FL} > "eDiscoveryCaseHold.txt"
+Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--CaseHoldRule--";Get-CaseHoldRule -Policy $_.Name | FL} > "eDiscoveryCaseHold.txt"
 ```
 
 ### Collect all case information
 
-Sometimes, it's not apparent what information is required by Microsoft Support to investigate your issue. In this situation, you can collect all of the diagnostics information for a Core eDiscovery case. The *Compliance Case Name* in the following command is the same as the name of the Core eDiscovery case that's displayed on the **Core eDiscovery** page in the Microsoft 365 compliance center.
+Sometimes, it's not apparent what information is required by Microsoft Support to investigate your issue. In this situation, you can collect all of the diagnostics information for a Core eDiscovery case. The *Core eDiscovery case name* in the following command is the same as the name of a case that's displayed on the **Core eDiscovery** page in the Microsoft 365 compliance center.
 
 ```powershell
-Get-ComplianceCase "<Compliance Case Name>"| %{"$($_.Name)";"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
+Get-ComplianceCase "<Core eDiscovery case name>"| %{"$($_.Name)";"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
 ```
 
 ## Collect diagnostic information for Advanced eDiscovery
@@ -74,7 +74,7 @@ The **Settings** tab in an Advanced eDiscovery case lets you quickly copy the di
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Show all > eDiscovery > Advanced**.
 
-2. Select the case and then click the **Settings** tab.
+2. Select a case and then click the **Settings** tab.
 
 3. Under **Case Information**, click **Select**.
 
@@ -82,7 +82,6 @@ The **Settings** tab in an Advanced eDiscovery case lets you quickly copy the di
 
 5. Open a text file (in Notepad) and then paste the information in the text file.
 
-6. Save the text file and name it to something similar to `AeD Diagnostic Info YYYY.MM.DD` (for example `AeD Diagnostic Info 2020.11.03`.
+6. Save the text file and name it something like `AeD Diagnostic Info YYYY.MM.DD` (for example, `AeD Diagnostic Info 2020.11.03`).
 
-> [!NOTE]
-> After reviewing (and redacting sensitive information if necessary) the file, send it to the Microsoft Support engineer working on your case.
+After reviewing (and redacting sensitive information if necessary) the file, send it to the Microsoft Support engineer working on your case.
