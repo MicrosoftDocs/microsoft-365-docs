@@ -25,7 +25,7 @@ ms.custom:
 
 ## 1. Where can I get an invoice for my Microsoft 365 for business purchase?
 
-You will receive the invoice at the email address you have registered, 24 hours after confirming your purchase. You can also download your invoice directly from the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) on the **Billing** > **Payments and Billing** page.
+Your invoice is sent to the registered billing notification email address 24 hours after your purchase is confirmed. To download your invoice in the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
 > [!IMPORTANT]
 > If you want the invoice to include your TAX ID, you must add it before the purchase confirmation.
@@ -38,11 +38,11 @@ During the checkout purchase process, when you get to **step 4. Payment and Bill
 
 ### For your future purchases
 
-In the Microsoft 365 admin center, on the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing Accounts</a> page, you can add or modify your RFC so that the information is reflected in your future purchases of Microsoft 365 for Business.
+You can add or modify your RFC so that the information is reflected in  future Microsoft 365 for business purchases. To add or modify your RFC, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
 
 ## 3. Can I add or modify my RFC to a purchase that has already been confirmed?
 
-After your Microsoft 365 purchase is confirmed, you will no longer be able to add or modify your billing information, so it is important that you add this information before making the payment for your purchase.
+It's important that you add or modify your RFC before you make your purchase. After your Microsoft 365 for business purchase is confirmed, you can't add or modify your billing information.
 
 ## 4. Why don't I get a CFDI (Digital Government Invoice)?
 
