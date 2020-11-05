@@ -84,7 +84,7 @@ Autopilot deployment profiles are used to configure the Autopilot devices. You c
 4. Select **Next**.
 5. On the **Out-of-box experience (OOBE)** page, for **Deployment mode**, choose one of these two options:
     - **User-driven**: Devices with this profile are associated with the user enrolling the device. User credentials are required to enroll the device.
-    - **Self-deploying (preview)**: (requires Windows 10, version 1809 or later) Devices with this profile aren't associated with the user enrolling the device. User credentials aren't required to enroll the device. When a device has no user associated with it, user-based compliance policies don't apply to it. When using self-deploying mode, only compliance policies targeting the device will be applied.
+    - **Self-deploying (preview)** (requires Windows 10, version 1809 or later): Devices with this profile aren't associated with the user enrolling the device. User credentials aren't required to enroll the device. When a device has no user associated with it, user-based compliance policies don't apply to it. When using self-deploying mode, only compliance policies targeting the device will be applied.
 
     > [!NOTE]
     > Options that appear dimmed or shaded are currently not supported by the selected deployment mode.
