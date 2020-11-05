@@ -49,7 +49,7 @@ landingContent:
           - text: View and manage app and device managements policies
             url: ../../business/view-policies-and-devices.md
           - text: Remove company data from devices
-            url: ../..business/remove-company-data.md
+            url: ../../business/remove-company-data.md
           - text: Reset Windows devices to factory settings
             url: ../../business/reset-devices-to-factory-settings.md
   # Card (optional)
@@ -58,7 +58,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Overview of Microsoft 365 for enterprise
-            url: ../../enterprise/microsoft-365-overview/index.yml
+            url: ../../enterprise/microsoft-365-overview.md
           - text: Device management road-map for Microsoft 365 for enterprise
             url: ../../enterprise/device-management-roadmap-microsoft-365.md
    # Card (optional)

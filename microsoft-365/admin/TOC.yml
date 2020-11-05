@@ -330,7 +330,7 @@
                 - name: AutoPilot Profile settings
                   href: ../business/autopilot-profile-settings.md
         - name: Microsoft 365 for enterprise documentation
-          href: ../../../enterprise/index.yml
+          href: ../enterprise/index.yml
         - name: Basic Mobility and Security
           items:
             - name: Overview of Basic Mobility and Security
