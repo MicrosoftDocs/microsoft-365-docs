@@ -41,7 +41,7 @@ Devices must meet these requirements:
 
 ## How to get the CSV for Import in Intune
 
-For more information, see the understanding PowerShell cmdlet.
+For more information, see the following PowerShell cmdlet:
 
 - [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)
 
