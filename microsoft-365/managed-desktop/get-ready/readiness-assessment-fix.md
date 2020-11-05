@@ -315,11 +315,11 @@ Make sure that the SSPR **Selected** setting includes Microsoft Managed Desktop 
 
 ### Standard user role
 
-Microsoft Managed Desktop users should be standard users without local administrator privileges. They'll be assigned a standard user role when they start their Microsoft Managed Desktop device.
+Microsoft Managed Desktop users will be standard users without local administrator privileges apart from users assigned Azure AD roles of Global administrator and Device administrator.  All other users will be assigned a standard user role when they start their Microsoft Managed Desktop device.
 
 **Advisory**
 
-Microsoft Managed Desktop users shouldn't have local administrator privileges prior to enrolling.
+Microsoft Managed Desktop users will not have local administrator privileges on their Microsoft Managed Desktop devices after enrolling.
 
 ## Microsoft 365 Apps for enterprise
 
