@@ -30,6 +30,9 @@ In the next step name your payload. Optionally, you can give it a description.
 
 Now it's time to build your payload. Input the sender's name, email and the email's subject in the **Sender details** section. Pick a phishing URL from the the provided list. This URL will later be embedded into the body of the message.
 
+> [!TIP]
+> You can choose an internal email for your payload's sender, which will make the payload appear as coming from another employee of the company. This will increase susceptibility to the payload and will help educate employees on the risk of internal threats.
+
 A rich text editor is available to create your payload. You can also import an email you've created beforehand. As you structure the body of the email, take advantage of the **dynamic tags** to personalize the email to your targets. Click on **Phishing link** to add the previously selected phishing URL into the body of the email.
 
 ![Phishing link and dynamic tags highlighted in payload creation for Microsoft Defender for Office 365](../../media/attack-sim-preview-payload-email-body.png)
