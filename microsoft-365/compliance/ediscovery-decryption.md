@@ -27,9 +27,6 @@ To date, managing encrypted content in the eDiscovery workflow in Microsoft 365 
 
 To make it easier to manage encrypted content in the eDiscovery workflow, Microsoft 365 eDiscovery tools can decrypt encrypted files that are attached to email messages and sent in Exchange Online. Prior to this new capability, only the content of an email message protected by rights management (and not attached files) was decrypted. Now, if a file that's encrypted with a Microsoft encryption technology is attached to an email message that matches the search criteria, the encrypted file will be decrypted when the search results are prepared for preview. This allows eDiscovery managers to view the content of encrypted email attachments when previewing search results.
 
-> [!NOTE]
-> Starting in January 2021, Microsoft 365 eDiscovery tools will support encrypted documents stored in SharePoint Online and OneDrive for Business.
-
 ## Supported encryption technologies
 
 Microsoft eDiscovery tools support items encrypted with Microsoft encryption technologies. These technologies include Office Message Encryption, Microsoft Information Protection (sensitivity labels), and Azure Rights Management. For more information about Microsoft encryption technologies, see [Encryption](encryption.md). Content encrypted by third-party encryption technologies is not supported. This includes no support when previewing or exporting content encrypted with non-Microsoft technologies.
