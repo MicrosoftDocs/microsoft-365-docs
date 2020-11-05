@@ -85,7 +85,7 @@ in one easy to navigate location. This means security for your Office 365 or Mic
 > [!NOTE]
 > If you know MSDO (once Office 365 ATP) from  the core overview article ‘[Office 365 Security overview](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/?view=o365-worldwide)’, then you're aware much of the Microsoft documentation about MSDO can be roughly broken down in Security Administrator and Security Operations topics. <p>The Microsoft 365 Security center has the same strengths. Many of the administration topics appear under ‘Policies & Rules’, and ‘Dashboard’. Long term security investigation, detection, defense, and response as per Security Operations, takes place in the other sections of the Email & Collaboration section. -->
 
-## Advanced Hunting exampe for MSDO Security Operations Teams
+## Advanced Hunting example for MSDO Security Operations Teams
 
 The *[Getting Started](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#getting-started)* section of the [Microsoft Defender for Office 365 article](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) has logical early configuration chunks that look like this:
 
