@@ -65,12 +65,12 @@ This table is a quick reference of areas where change has occurred between the S
 |**Changed**  |**Unchanged**  |
 |---------|---------|
 |Dashboard     |  [Explorer](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet&branch=pr-en-us-5758)       |
-|Policies & Rules     |    [Investigation](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-air?view=o365-21vianet&branch=pr-en-us-5758)     |
-|Attack Simulator     |    [Campaign](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/campaigns?view=o365-worldwide)     |
+|Attack Simulator    |  [Policies & Rules](https://docs.microsoft.com/en-us/microsoft-365/compliance/alert-policies?view=o365-worldwide)       |
+| Investigation    |    [Campaign](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/campaigns?view=o365-worldwide)     |
 |     |    [Submissions](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide)     |
 |     |    [Review](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)     |
 |     |    [Threat Tracker ](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet&branch=pr-en-us-5758)    |
-|     |         |
+|     |          |
 
 <!--
 ## Email & Collaboration
