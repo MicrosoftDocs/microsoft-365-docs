@@ -50,7 +50,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
 
-2. Do one of the following:
+2. Do one of the following actions:
 
     - Go to **Threat management** > **Dashboard**. This takes you to the [Security Dashboard](security-dashboard.md). Your AIR widgets appear across the top of the [Security Dashboard](security-dashboard.md). Select a widget, such as **Investigations summary**.
 
@@ -146,7 +146,7 @@ With email investigation, you can:
 
 - Click a cluster entity or a threat list to open a fly-out page that shows the full alert details.
 
-- Further investigate the email cluster by clicking the 'Open in Explorer' link at the top of the 'Email cluster details' tab
+- Further investigate the email cluster by clicking the **Open in Explorer** link at the top of the **Email cluster details** tab
 
 ![AIR investigation email with flyout details](../../media/air-investigationemailpageflyoutdetails.png)
 
@@ -175,7 +175,7 @@ Three different types of email clusters can be identified during the email analy
 
 #### Email classifications
 
-As email messages are analyzed, they are classified as *malicious*, *suspicious*, or *clean* (as in, *not identifed as a threat*):
+As email messages are analyzed, they are classified as *malicious*, *suspicious*, or *clean* (as in, *not identified as a threat*):
 
 - *Malicious emails* sent from the mailbox/user  indicate potential compromise of the mailbox/account. Other users/mailboxes that are potentially impacted by malicious email as part of a compromise are shown.
 
@@ -230,7 +230,7 @@ On the **Machines** tab, you can see all the machines identified as part of the 
 
 ![AIR investigation machine page](../../media/air-investigationmachinepage.png)
 
-As part of some playbooks, AIR correlates email threats to devices (e.g. Zapped malware). For example, an investigation passes a malicious file hash across to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+As part of some playbooks, AIR correlates email threats to devices (for example, Zapped malware). For example, an investigation passes a malicious file hash across to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 ) to investigate. This allows for automated investigation of relevant machines for your users, to help ensure that threats are addressed both in the cloud and across your endpoints.
 
 You can:
