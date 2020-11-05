@@ -125,7 +125,7 @@ Permissions are granted through certain roles, such as those that are described 
 
 [Microsoft Defender for Office 365 Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#microsoft-defender-for-office-365-plan-1-and-plan-2) licenses should be assigned to:
 - Security administrators (including global administrators)
-- Your organization's security operations team (including security readers and those with the Search and Purge role)
+- Your organization's security operations team (including security readers and those with the **Search and Purge** role)
 - End users
 
 
