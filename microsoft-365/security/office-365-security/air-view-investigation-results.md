@@ -138,6 +138,18 @@ You can:
 
 On the **Email** tab for an investigation, you can see the original emails and the clusters of similar email identified as part of the investigation. The **Email** tab also shows email items related to the investigation, such as the user-reported email details, the original email reported, the email message(s) zapped due to malware/phish, etc.
 
+![AIR email investigation page](../../media/air-investigationemailpage.png)
+
+With email investigation, you can:
+
+- Get a visual overview of the current clustering results and threats found.
+
+- Click a cluster entity or a threat list to open a fly-out page that shows the full alert details.
+
+- Further investigate the email cluster by clicking the 'Open in Explorer' link at the top of the 'Email cluster details' tab
+
+![AIR investigation email with flyout details](../../media/air-investigationemailpageflyoutdetails.png)
+
 Given the sheer volume of email that users in an organization send and receive, plus the multi-user nature of email communications and attacks, the following process can take a significant amount of time:
 
 1. Clustering email messages based on similar attributes from a message header, body, URL, and attachments
@@ -177,7 +189,9 @@ The email count identified on the email tab currently represents the sum total o
 
 Both [Explorer](threat-explorer.md) and AIR count email messages on a per-recipient basis, because the security verdicts, actions, and delivery locations vary on a per-recipient basis. Thus, an original email sent to three users counts as a total of three email messages instead of one email. 
 
-There might be cases where an email gets counted two or more times, such as when an email has multiple actions on it, or when there are multiple copies of the email when all the actions occur. For example, a malware email that is detected at delivery can result in both a blocked (quarantined) email and a replaced email (threat file replaced with a warning file, then delivered to user's mailbox). Because there are literally two copies of the email in the system, both might be counted in cluster counts.
+There might be cases where an email gets counted two or more times, such as when an email has multiple actions on it, or when there are multiple copies of the email when all the actions occur. 
+
+For example, a malware email that is detected at delivery can result in both a blocked (quarantined) email and a replaced email (threat file replaced with a warning file, then delivered to user's mailbox). Because there are literally two copies of the email in the system, both might be counted in cluster counts.
 
 Email counts are calculated at the time of the investigation, and some counts are recalculated when you open investigation flyouts (based on an underlying query). 
 
@@ -191,19 +205,9 @@ Likewise, old investigations might start showing higher counts than Explorer que
 
 Showing both count historical and current counts in different views is done to indicate the email impact at the time of investigation and the current impact up until the time that remediation is run.
 
-As an example, consider the following scenario. The first cluster of three email messages were deemed to be phish. Another cluster of similar messages with the same IP and subject was found and considered malicious, as some of them were identified as phish during initial detection.
-
-![AIR email investigation page](../../media/air-investigationemailpage.png)
-
-You can:
-- Get a visual overview of the current clustering results and threats found.
-- Click a cluster entity or a threat list to open a fly-out page that shows the full alert details.
-- Further investigate the email cluster by clicking the 'Open in Explorer' link at the top of the 'Email cluster details' tab
-
-![AIR investigation email with flyout details](../../media/air-investigationemailpageflyoutdetails.png)
-
 > [!NOTE]
-> In the context of email, you may see a volume anomaly threat surface as part of the investigation. A volume anomaly indicates a spike in similar email messages around the investigation event time compared to earlier timeframes. This spike in email traffic with similar characteristics (e.g. subject and sender domain, body similarity and sender IP) is typical of the start of email campaigns or attacks. However, bulk, spam, and legitimate email campaigns commonly share these characteristics. Volume anomalies represent a potential threat, and accordingly could be less severe compared to malware or phish threats that are identified using anti-virus engines, detonation or malicious reputation.
+> In the context of email, you may see a volume anomaly threat surface as part of the investigation. A volume anomaly indicates a spike in similar email messages around the investigation event time compared to earlier timeframes. This spike in email traffic with similar characteristics (e.g. subject and sender domain, body similarity and sender IP) is typical of the start of email campaigns or attacks. However, bulk, spam, and legitimate email campaigns commonly share these characteristics. 
+> Volume anomalies represent a potential threat, and accordingly could be less severe compared to malware or phish threats that are identified using anti-virus engines, detonation or malicious reputation.
 
 ### User investigation
 
@@ -214,7 +218,9 @@ For example, in the following image, AIR has identified indicators of compromise
 ![AIR investigation users page](../../media/air-investigationuserspage.png)
 
 You can:
+
 - Get a visual overview of identified user results and risks found.
+
 - Select a user to open a fly-out page that shows the full alert details.
 
 ### Machine investigation
@@ -229,7 +235,8 @@ As part of some playbooks, AIR correlates email threats to devices (e.g. Zapped 
 You can:
 
 - Get a visual overview of the current machines and threats found.
-- Select a machine to open a view that into the related [Microsoft Defender for Endpoint investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) in the Microsoft Defender Security Center.
+
+-  Select a machine to open a view that into the related [Microsoft Defender for Endpoint investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) in the Microsoft Defender Security Center.
 
 ### Entity investigation
 
@@ -240,7 +247,9 @@ Here, you can see the investigated entities and details of the types of entities
 ![AIR investigation entities page](../../media/air-investigationentitiespage.png)
 
 You can:
+
 - Get a visual overview of the investigation entities and threats found.
+
 - Select an entity to open a fly-out page that shows the related entity details.
 
 ![AIR investigation entities details](../../media/air-investigationsentitiespagedetails.png)
@@ -254,10 +263,9 @@ On the **Log** tab, you can see all the playbook steps that have occurred during
 You can:
 
 - Get see a visual overview of the playbook steps taken.
+
 - Export the results to a CSV file.
 - Filter the view.
-
-****
 
 |Analyzer| Description|
 |:---|:---|
@@ -291,13 +299,16 @@ Actions capture the steps Microsoft recommends you take at the end of an investi
 You can:
 
 - Get a visual overview of the playbook-recommended actions.
+
 - Select a single action or multiple actions.
+
 - Approve or reject recommended actions with comments.
+
 - Export the results to a CSV file.
+
 - Filter the view.
 
 ## Next steps
 
 - [Review and approve pending actions](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 
-- [Learn about automated investigation and response in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
