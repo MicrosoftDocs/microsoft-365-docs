@@ -124,7 +124,7 @@ You currently have the Enrollment Status Page (ESP) enabled. If you are particip
 
 **Not ready**
 
-You have the ESP default profile set to **Show app and profile configuration progress**.  Disable this setting or make sure that assignments to any Azure AD group do not include Microsoft Managed Desktop devices by following the steps in [Set up the Enrollment Status Page](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
+You have the ESP default profile set to **Show app and profile configuration progress**. Disable this setting or make sure that assignments to any Azure AD group do not include Microsoft Managed Desktop devices by following the steps in [Set up the Enrollment Status Page](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
 
 **Advisory**
 
