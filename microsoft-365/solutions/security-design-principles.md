@@ -1,6 +1,6 @@
 ---
-title: Security hurdles you can sail over — One architect’s viewpoint
-description: Description.
+title: Microsoft 365 Enterprise resource planning - Cybersecurity architecture
+description: Learn how to overcome security challenges in Microsoft Enterprise architecture from Kozeta Garrett, Cybersecurity Architect at Microsoft.
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
@@ -11,7 +11,8 @@ localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: 
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
 ---
 
@@ -50,7 +51,7 @@ For a recommended configuration, see [Identity and device access configurations]
 
 Many security teams are still using the traditional security best practices built for an all on-premises world, including maintaining a “network perimeter security” and trying to “force” the on-prem security tools and controls to cloud solutions. Such controls were not designed for the cloud, are ineffective, and hinder the adoption of modern cloud capabilities. Processes and tools which work for a network perimeter security approach have proven to be inefficient, obstructive to cloud capabilities, and do not allow for taking advantage of modern and automated security features.
 
-You can sail over this hurdle by shifting the defense strategies to cloud-managed protection, automated investigation and remediation, automated pen-testing, advanced threat protection, and incident analysis. Customers who are using modern device management solutions have implemented automated management, standardized patching, antivirus, policy enforcement, and application protection across all devices (whether a smartphone, personal computer, laptop, or tablet). This eliminates the need for a VPN, Microsoft System Center Configuration Manager (SCCM), and Active Directory group policies. This, combined with conditional access policies, provides powerful control and visibility, as well as streamlined access to resources regardless of where their users are operating from.
+You can sail over this hurdle by shifting the defense strategies to cloud-managed protection, automated investigation and remediation, automated pen-testing, Defender for Office 365, and incident analysis. Customers who are using modern device management solutions have implemented automated management, standardized patching, antivirus, policy enforcement, and application protection across all devices (whether a smartphone, personal computer, laptop, or tablet). This eliminates the need for a VPN, Microsoft System Center Configuration Manager (SCCM), and Active Directory group policies. This, combined with conditional access policies, provides powerful control and visibility, as well as streamlined access to resources regardless of where their users are operating from.
 
 ## Strive for ‘best together’ security tools
 

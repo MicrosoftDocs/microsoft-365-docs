@@ -123,7 +123,7 @@ You can apply retention labels to content automatically when that content contai
 
 #### Auto-apply labels to content with specific types of sensitive information
 
-When you create auto-apply retention labels for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. For example, the template shown here looks for U.S. ITIN, SSN, and passport numbers from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data template**:
+When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. For example, the template shown here looks for U.S. ITIN, SSN, and passport numbers from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data template**:
 
 ![Policy templates with sensitive information types](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
 
@@ -177,11 +177,11 @@ ProgID:Media AND ProgID:Meeting
 
 For this retention label, you must also publish it to the relevant users' OneDrive accounts or SharePoint sites by creating a label policy. Most of the time, the meeting recordings are saved to OneDrive, but for channel meetings, they are saved in SharePoint.
 
-When you have saved the auto-apply policy:
+When you have saved the auto-apply retention label policy:
 
 1. Select **Label policies** tab > **Publish labels**
 
-2. When prompted to select a label, choose the label you created with the KQL query to identify Teams meeting recordings.
+2. When prompted to select a label, choose the same label that you selected for the auto-apply policy that identifies Teams meeting recordings.
 
 3. When prompted for the location, choose **SharePoint sites** and **OneDrive accounts**. You can then keep the default of **All**, or specify individual locations, such as including or excluding specific OneDrive accounts.
 
@@ -219,8 +219,6 @@ If the expected labels don't appear after seven days, check the **Status** of th
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
    ```
 
-
-
 ## Updating retention labels and their policies
 
 When you edit a retention label or auto-apply policy, and the retention label is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
@@ -229,6 +227,10 @@ Some settings can't be changed after the label or policy is created and saved, w
 - The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
 - The option to mark items as a record.
 
+## Locking the policy to prevent changes
+
+If you need to ensure that that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
+
 ## Next steps
 
-See [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md) for an example scenario that uses an auto-apply policy with managed properties in SharePoint, and event-based retention to start the retention period.
+See [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md) for an example scenario that uses an auto-apply retention label policy with managed properties in SharePoint, and event-based retention to start the retention period.

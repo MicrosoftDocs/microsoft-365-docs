@@ -158,6 +158,7 @@ For detailed syntax and parameter information, see [New-QuarantineTag](https://d
 To create a quarantine tag using the _EndUserQuarantinePermissionsValue_ parameter, do the following steps:
 
 A. Store a quarantine permissions object in a variable using the **New-QuarantinePermissions** cmdlet.
+<br/>
 B. Use the variable as the _EndUserQuarantinePermissions_ value in the **New-QuarantineTag** command.
 
 ##### Step A: Store a quarantine permissions object in a variable
@@ -223,7 +224,7 @@ In _supported_ protection features that quarantine messages or files (automatica
 |Feature|Quarantine tags supported?|Default quarantine tags used|
 |---|:---:|---|
 |[Anti-spam policies](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**High confidence spam** (_HighConfidenceSpamAction_)</li><li>**Phishing email** (_PhishSpamAction_)</li><li>**High confidence phishing email** (_HighConfidencePhishAction_)</li><li>**Bulk email** (_BulkSpamAction_)</li></ul>|Yes|<ul><li>DefaultSpamTag (Full access)</li><li>DefaultHighConfSpamTag (Full access)</li><li>DefaultPhishTag (Full access)</li><li>DefaultHighConfPhishTag (No access)</li><li>DefaultBulkTag (Full access)</li></ul>
-|Anti-phishing policies: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies):<sup>\*</sup> <ul><li>**If email is sent by an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If email is sent by an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**Mailbox intelligence** \> **If email is sent by an impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|No|n/a|
+|Anti-phishing policies: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**If email is sent by an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If email is sent by an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**Mailbox intelligence** \> **If email is sent by an impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|No|n/a|
 |[Anti-malware policies](configure-anti-malware-policies.md): All detected messages are always quarantined.|No|n/a|
 |[ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)|No|n/a|
 |[Mail flow rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) with the action: **Deliver the message to the hosted quarantine** (_Quarantine_).|No|n/a|
@@ -408,11 +409,30 @@ If the quarantine tag assigns the **No access** permissions (no permissions), us
 
 - **Quarantined message details**: The **View message header** button is always available.
 
-  ![Available buttons in the quarantined message details if the quarantine tag gives the user no permissions](../../media/quarantine-tags-quarantined-message-details-permission-none.png)
+  ![Available buttons in the quarantined message details if the quarantine tag gives the user No access permissions](../../media/quarantine-tags-quarantined-message-details-no-access.png)
 
 - **End-user spam notifications**: The **Review** button that takes the user to the message in quarantine is always available.
 
-  ![Available buttons in the end-user spam notification if the quarantine tag gives the user no permissions](../../media/quarantine-tags-esn-permission-none.png)
+  ![Available buttons in the end-user spam notification if the quarantine tag gives the user No access permissions](../../media/quarantine-tags-esn-no-access.png)
+
+#### Limited access
+
+If the quarantine tag assigns the **Limited access** permissions, users get the following capabilities:
+
+- **Quarantined message details**: The following buttons are available:
+  - **Request release**
+  - **View message header**
+  - **Preview message**
+  - **Block sender**
+  - **Remove from quarantine**
+
+  ![Available buttons in the quarantined message details if the quarantine tag gives the user Limited access permissions](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
+
+- **End-user spam notifications**: The following buttons are available:
+  - **Block sender**
+  - **Review**
+
+  ![Available buttons in the end-user spam notification if the quarantine tag gives the user Limited access permissions](../../media/quarantine-tags-esn-limited-access.png)
 
 #### Full access
 
@@ -426,27 +446,14 @@ If the quarantine tag assigns the **Full access** permissions (all available per
   - **Allow sender**
   - **Remove from quarantine**
 
+  ![Available buttons in the quarantined message details if the quarantine tag gives the user Full access permissions](../../media/quarantine-tags-quarantined-message-details-full-access.png)
+
 - **End-user spam notifications**: The following buttons are available:
   - **Block sender**
   - **Release**
   - **Review**
 
-  ![Available buttons in the end-user spam notification if the quarantine tag gives the all permissions](../../media/quarantine-tags-esn-permission-all.png)
-
-#### Limited access
-
-If the quarantine tag assigns the **Limited access** permissions, users get the following capabilities:
-
-- **Quarantined message details**: The following buttons are available:
-  - **Request Release**
-  - **View message header**
-  - **Preview message**
-  - **Block sender**
-  - **Remove from quarantine**
-
-- **End-user spam notifications**: The following buttons are available:
-  - **Block sender**
-  - **Review**
+  ![Available buttons in the end-user spam notification if the quarantine tag gives the user Full access permissions](../../media/quarantine-tags-esn-full-access.png)
 
 ### Individual permissions
 
@@ -465,7 +472,7 @@ The **Allow sender** permission (_PermissionToAllowSender_) controls access to t
 
 For more information about the Safe Senders list, see [Prevent trusted senders from being blocked](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-### Block sender permission
+#### Block sender permission
 
 The **Block sender** permission (_PermissionToBlockSender_) controls access to the button that allows users to conveniently add the quarantined message sender to their Blocked Senders list.
 
@@ -479,7 +486,7 @@ The **Block sender** permission (_PermissionToBlockSender_) controls access to t
 
 For more information about the Blocked Senders list, see [Block messages from someone](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) and [Use Exchange Online PowerShell to configure the safelist collection on a mailbox](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-### Delete permission
+#### Delete permission
 
 The **Delete** permission (_PermissionToDelete_) controls the ability to of users to delete their messages (messages where the user is a recipient) from quarantine.
 
@@ -489,7 +496,7 @@ The **Delete** permission (_PermissionToDelete_) controls the ability to of user
 
 - **End-user spam notifications**: No effect.
 
-### Preview permission
+#### Preview permission
 
 The **Preview** permission (_PermissionToPreview_) controls the ability to of users to preview their messages in quarantine.
 
@@ -516,7 +523,7 @@ The **Allow recipients to release a message from quarantine** permission (_Permi
 The **Allow recipients to request a message to be released from quarantine** permission (_PermissionToRequestRelease_) controls the ability of users to _request_ the release of their quarantined messages. The message is only released after an admin approves the request.
 
 - **Quarantined message details**:
-  - Permission enabled: The **Request Release message** button is available.
-  - Permission disabled: The **Request Release message** button is not available.
+  - Permission enabled: The **Request release** button is available.
+  - Permission disabled: The **Request release** button is not available.
 
 - **End-user spam notifications**: The **Release** button is not available.
