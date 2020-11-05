@@ -143,7 +143,7 @@ Note that the following roles aren't assigned to the Organization Management rol
 |**Organization Configuration**|Run, view, and export audit reports and manage compliance policies for DLP, devices, and preservation.|Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management|
 |**Preview**|View a list of items that are returned from content searches, and open each item from the list to view its contents.|eDiscovery Manager|
 |**Quarantine**|Allows viewing and releasing quarantined email.|Quarantine Administrator <br/><br/> Security Administrator <br/><br/> Organization Management|
-|**RecordManagement**|View and edit the configuration and reports for the Record Management feature.|Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management <br/><br/> Records Management|
+|**RecordManagement**|View and edit the configuration of the records management feature.|Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management <br/><br/> Records Management|
 |**Retention Management**|Manage retention policies, retention labels, and retention label policies.|Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management <br/><br/> Records Management|
 |**Review**|Use Advanced eDiscovery to track, tag, analyze, and test documents that are assigned to them.|eDiscovery Manager <br/><br/> Reviewer|
 |**RMS Decrypt**|Decrypt RMS-protected content when exporting search results.|eDiscovery Manager|
@@ -161,6 +161,6 @@ Note that the following roles aren't assigned to the Organization Management rol
 |**View-Only IB Compliance Management**|View the configuration and reports for the Information Barriers feature.|Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management <br/><br/> Security Administrator <br/><br/> Security Operator <br/><br/> Security Reader|
 |**View-Only Manage Alerts**|View the configuration and reports for the Manage Alerts feature.|Security Administrator <br/><br/> Security Operator <br/><br/> Security Reader <br/><br/> Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management|
 |**View-Only Recipients**|View information about users and groups.|MailFlow Administrator <br/><br/> Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management|
-|**View-Only Record Management**|View the configuration and reports for the Record Management feature.|Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management|
-|**View-Only Retention Management**|View the configuration and reports for the Retention Management feature.|Compliance Data Administrator <br/><br/> Organization Management <br/><br/> Compliance Administrator|
+|**View-Only Record Management**|View the configuration of the records management feature.|Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management|
+|**View-Only Retention Management**|View the configuration of retention policies, retention labels, and retention label policies.|Compliance Data Administrator <br/><br/> Organization Management <br/><br/> Compliance Administrator|
 |
