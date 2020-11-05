@@ -136,7 +136,7 @@ Windows 10 devices in your Azure AD organization must be automatically enrolled 
 
 **Advisory**
 
-Make sure the MDM User scope is set to **Some** or **All**; it cannot be set to **None**.  If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups**.
+Make sure the MDM User scope is set to **Some** or **All**, not **None**. If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups**.
 
 
 ### Microsoft Store for Business
