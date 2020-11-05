@@ -44,7 +44,7 @@ An alert is triggered, and a security playbook starts an automated investigation
 
 1. An automated investigation is initiated in one of the following ways:
 
-   - An [alert](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) is triggered by something suspicious in email (such as a message, attachment, or URL). An incident is created. Depending on the type of incident, a [security playbook](automated-investigation-response-office.md#security-playbooks) runs, and an automated investigation begins. 
+   - An [alert is triggered](#which-alert-policies-trigger-automated-investigations) by something suspicious in email (such as a message, attachment, URL, or compromised user account). An incident is created, and an automated investigation begins. 
 
      --- or ---
    
