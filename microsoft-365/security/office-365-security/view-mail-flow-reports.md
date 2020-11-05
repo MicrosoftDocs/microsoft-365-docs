@@ -536,17 +536,23 @@ To view the report, open the [Security & Compliance Center](https://protection.o
 
 ### Report view for the Mail latency report
 
-When you open the report, the 50th percentile tab is selected by default. By default, this view contains a chart and a data table that's configured with the following filters:
+When you open the report, the 50th percentiles tab is selected by default. By default, this view contains a chart that's configured with the following filters:
 
-- **Date**: The last 7 days.
+- **Date**: The last 7 days
 
 - **Message View**:
-  - All messages
-  - Messages that contain attachments or URLs
   - Detonated messages
 
+This chart shows messages organized into the following categories:
 
+When you hover over a category in the chart, you can see the number of messages in that category.
 
+![Mail latency report](../../media/mail-latency-report.png)
+
+If you click **Filter**, you can filter both the chart and the data table by:
+
+- All messages
+- Messages that contain attachments or URLs
 
 
 
