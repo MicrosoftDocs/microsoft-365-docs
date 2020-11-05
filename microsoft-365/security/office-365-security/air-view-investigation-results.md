@@ -68,7 +68,9 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 ## View details about an alert related to an investigation
 
-Certain kinds of alerts trigger automated investigation in Microsoft 365. To learn more, see [alert policies that trigger automated investigations](office-365-air.md#which-alert-policies-trigger-automated-investigations). Use the following procedure to view details about an alert that is associated with an automated investigation.
+Certain kinds of alerts trigger automated investigation in Microsoft 365. To learn more, see [alert policies that trigger automated investigations](office-365-air.md#which-alert-policies-trigger-automated-investigations). 
+
+Use the following procedure to view details about an alert that is associated with an automated investigation.
 
 1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
 
