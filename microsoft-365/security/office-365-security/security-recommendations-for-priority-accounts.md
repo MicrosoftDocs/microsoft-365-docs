@@ -23,7 +23,7 @@ description: "Admins can learn how to elevate the security settings for priority
 
 What would you do if you received an urgent message from an executive in your organization that asked you to do something? Would you do it? Most people would comply with the request. That's why users in positions of authority are targets for attackers. If the accounts of these high value employees (HVEs) are compromised, the attacker might gain access to accounts with admin, financial, product, or even physical access abilities within the organization.
 
-Microsoft 365 and Office 365 Advanced Threat Protection (ATP) contain many different features that can help you to provided additional layers of security for your HVEs. The available features and how to use them are discussed in this article.
+Microsoft 365 and Microsoft Defender for Office 365 contain many different features that can help you to provided additional layers of security for your HVEs. The available features and how to use them are discussed in this article.
 
 ## Enable MFA and disable legacy authentication protocols for HVEs
 
@@ -31,29 +31,35 @@ Multi-factor authentication (MFA) requires a traditional username and password p
 
 Most compromising sign-in attempts come from legacy authentication in older email clients that don't use modern authentication. For example, Outlook 2010, IMAP4 clients, POP3 clients, and authenticated SMTP. Blocking access to these protocols is important. With a compromised username and password, attackers can bypass MFA and authenticate using one of these older protocols.
 
-There are several different methods for requiring MFA and blocking legacy authentication protocols in Azure AD. These methods are described in the following table.
+Azure Active Directory (Azure AD) includes different methods to required MFA and block legacy authentication protocols. These methods are described in the following table.
 
 > [!NOTE]
-> MFA as described in the table significantly reduces the number of times that users are required to provide the second factor of authentication as compared to the legacy per-person MFA that's available in the Microsoft 365 admin center. In fact, you need to turn off per-person MFA before you can configure MFA using any of these other methods. For instructions, see [Turn off legacy per person MFA](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication#turn-off-legacy-per-person-mfa).
+> The MFA that's used by Azure AD significantly reduces the number of times that users are required to provide the second factor of authentication. The MFA that's used by Azure AD is superior to the legacy per-person MFA that's available in the Microsoft 365 admin center. In fact, you need to turn off per-person MFA before you can configure MFA in Azure AD. For instructions, see [Turn off legacy per person MFA](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication#turn-off-legacy-per-person-mfa).
 
 For more information about Azure AD versions and licensing, see [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ****
 
-|Azure AD version|Availability in Microsoft 365|Feature|Comments|
+|Feature|Azure AD version required|Included in these plans|Comments|
 |---|---|---|---|
-|Free and Office 365 Apps|All|Security defaults|Turns on MFA and disables legacy authentication protocols for all users in the organization. For instructions, see [Enabling security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults).|
-|Premium P1|Enterprise Mobility + Security E3|Conditional access policies|[Require multi-factor authentication and set up conditional access policies](https://docs.microsoft.com/microsoft-365/campaigns/m365-campaigns-conditional-access)|
-|Premium P2|Enterprise Mobility + Security E5|Risk policies|[How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies)|
+|Security defaults|Office 365 Apps|Microsoft 365 E3 <p> Microsoft 365 E5|Turns on MFA and blocks legacy authentication protocols for all users in the organization. For instructions, see [Enabling security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults).|
+|Conditional access policies|Premium P1<sup>\*</sup>|Enterprise Mobility + Security E3|[Require multi-factor authentication and set up conditional access policies](https://docs.microsoft.com/microsoft-365/campaigns/m365-campaigns-conditional-access)|
+|Risk policies|Premium P2<sup>\*</sup>|Enterprise Mobility + Security E5|[How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies)|
 |
+
+<sup>\*</sup> Also available as a standalone subscription.
+
+If you're not using Azure AD to block legacy authentication protocols, you can use [authentication policies](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) and [Client Access Rules](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) in Exchange Online to block Basic authentication and legacy authentication protocols like POP3, IMAP4, and authenticated SMTP.
+
+If you're not using any of the previously described methods, you can [disable POP3 or IMAP4 access](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access) on individual mailboxes. You can can [disable authenticated SMTP](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission) at the organizational level and enable it on specific mailboxes that still require it.
 
 ## Use the Strict preset security policies for HVEs in Micro
 
 For HVEs, we recommend applying the Strict profile in preset security policies.
 
-Preset security policies are a central location to apply the recommended Standard or Strict policy settings in EOP and Office 365 ATP. For more information, see [Preset security policies in EOP and Office 365 ATP](preset-security-policies.md).
+Preset security policies are a central location to apply the recommended Strict (or Standard) policy settings in EOP and Defender for Office 365. For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
-For details about the Strict policies and settings, see [Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md).
+For details about the Strict policies and settings, see [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md).
 
 ## User tags in Microsoft 365 or Office 365 E3 or E5
 
