@@ -37,36 +37,36 @@ Watch a short video about Microsoft 365 Business Premium setup.<br><br>
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-Most of the setup steps can be done in the setup wizard, but the other options are also listed.
+Most of the setup steps can be done in the guided setup, but the other options are also listed.
 
 ## Step 1: Add your domain and users
 
    - **[Add your domain](set-up.md#add-your-domain-to-personalize-sign-in)** (if you bought your domain during [sign up](sign-up.md), this step is already done.)
 
    - **Add users**. You can add users in any of the three ways:
-        - In the [wizard](set-up.md#add-users-in-the-wizard).
+        - In the [guided setup](set-up.md#add-users-in-the-wizard).
         - Use directory synchronization to [add users by using Azure AD Connect](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) if you have an on-premises Active directory.
         - You can also [add users later](add-users-m365b.md) in the admin center.
 ## Step 2: Set up security policies and configure devices 
 
-  - Use the [Setup wizard](set-up.md#protect-your-organization) to configure device policies. 
+  - Use the [guided setup](set-up.md#protect-your-organization) to configure device policies. 
   - You can also add more or edit them later in the [admin center](view-policies-and-devices.md) and in the [Intune portal](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
   - The setup wizard will also set up basic threat protection and data loss prevention settings.
   
   In addition to the security settings in the setup wizard, you can increase your security by adding the following settings:
 
 - **Email malware protection**
-- **ATP anti-phishing**
+- **Anti-phishing in Defender for Office 365**
 - **Exchange Online Archiving**
 - **Azure Information Protection (Plan1**)
 
 To get started, see [increase threat protection](increase-threat-protection.md) and [set up compliance features](set-up-compliance.md).
 
-See also [top 10 ways to secure your Microsoft 365 Business Premium](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a roadmap of best security practices.
+See also [top 10 ways to secure your Microsoft 365 Business Premium](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a road-map of best security practices.
 
 ## Step 3: Set up and manage Windows 10 devices
 
-After you run the set up wizard, you will want to proctect all the Windwos 10 computers in your organization.
+After you complete the guided setup, you will want to protect all the Windows 10 computers in your organization.
   
 - Windows 10 Pro is a [prerequisite](pre-requisites-for-data-protection.md) for Microsoft 365 Business Premium, but if you have Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your subscription entitles you to an [upgrade to  Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
 - Follow the steps in [secure Windows 10 PCs](secure-win-10-pcs.md) to set up policies for Windows 10 devices.

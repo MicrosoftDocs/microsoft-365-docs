@@ -102,7 +102,7 @@ You can also run the [Search-UnifiedAuditLog -Operations Send](https://docs.micr
 
 ### SearchQueryInitiatedExchange
 
-The SearchQueryInitiatedExchange event is triggered when a person uses the Search bar in Outlook or Outlook on the web to search for items in a mailbox. Investigators can use the SearchQueryInitiatedExchange event to determine if an attacker who may have compromised an account looked for or tried to access sensitive information in the mailbox. The audit record for a SearchQueryInitiatedExchange event contains information such as the actual search query text and whether the search was performed in Outlook desktop client or in Outlook on the web. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent of the email data that was searched for.
+The SearchQueryInitiatedExchange event is triggered when a person uses the Search bar in Outlook on the web (OWA) to search for items in a mailbox. Investigators can use the SearchQueryInitiatedExchange event to determine if an attacker who may have compromised an account looked for or tried to access sensitive information in the mailbox. The audit record for a SearchQueryInitiatedExchange event contains information such as the actual text of the search query. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent of the email data that was searched for.
 
 To search for SearchQueryInitiatedExchange audit records, you can search for the **Performed email search** activity in the **Search activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the compliance center.
 
@@ -115,7 +115,7 @@ You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExc
 
 ### SearchQueryInitiatedSharePoint
 
-Similar to searching for mailbox items, the SearchQueryInitiatedSharePoint event is triggered when a person searches for items in the SharePoint home site, Teams sites, collaboration sites, and hub sites in your organization. Investigators can use the SearchQueryInitiatedSharePoint event to determine if an attacker tried to find (and possibly accessed) sensitive information in SharePoint. The audit record for a SearchQueryInitiatedSharePoint event contains also contains the actual search query text. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent and scope of the file data being searched for.
+Similar to searching for mailbox items, the SearchQueryInitiatedSharePoint event is triggered when a person searches for items in the SharePoint home site for your organization. Investigators can use the SearchQueryInitiatedSharePoint event to determine if an attacker tried to find (and possibly accessed) sensitive information in SharePoint. The audit record for a SearchQueryInitiatedSharePoint event contains also contains the actual text of the search query. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent and scope of the file data being searched for.
 
 To search for SearchQueryInitiatedSharePoint audit records, you can search for the **Performed SharePoint search** activity in the **Search activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the compliance center.
 

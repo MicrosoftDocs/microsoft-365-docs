@@ -13,17 +13,19 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d0653266-31db-4f6a-a804-d34b667c16bf
-description: "Learn how to set up Office applications on your Mac, PC, or mobile devices. "
+ms.custom:
+- seo-marvel-may2020
+- AdminSurgePortfolio
+description: Now that you've set up Microsoft 365, learn how to install individual Office applications on your Mac, PC, or mobile devices and set up email in Outlook.
 ---
 
 # Install Office applications
 
-Now that you've set up Microsoft 365, you can set up the Office applications on your Mac, PC, or mobile devices.
+Now that you've set up Microsoft 365, you can install individual Office applications on your Mac, PC, or mobile devices.
   
 Follow these links for information on how to:
   
