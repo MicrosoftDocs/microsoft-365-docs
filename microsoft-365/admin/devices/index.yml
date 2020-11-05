@@ -1,0 +1,74 @@
+### YamlMime:Landing
+
+title: Protect and manage devices and app data # < 60 chars
+summary: Check out these resources to help admins choose between device and app data management methods. # < 160 chars
+
+metadata:
+  title: Protect and manage devices and app data # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Manage and protect devices and app data # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: Sirkkuw #Required; your GitHub user alias, with correct capitalization.
+  ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/09/2020 #Required; mm/dd/yyyy format.
+  localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Different MDM and MAM methods
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Review device and app data protection options
+            url: choose-device-security.md
+  # Card (optional)
+  - title: Manage devices and app data with Microsoft Intune
+    linkLists:
+      - linkListType: overview
+        links:
+         - text: Overview of device enrollment
+           url: https://docs.microsoft.com/mem/intune/enrollment/device-enrollment
+      - linkListType: how-to-guide
+        links:
+          - text: Set up automatic enrollment for Windows 10 devices
+            url: https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment
+          - text: Set up Android enrollment
+            url: https://docs.microsoft.com/mem/intune/enrollment/android-enroll
+          - text: Set up iOS/iPadOS enrollment
+            url: https://docs.microsoft.com/mem/intune/enrollment/ios-enroll
+  # Card (optional)
+  - title: Manage devices and app data with Microsoft 365 Business Premium
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: View and manage app and device managements policies
+            url: ../../business/view-policies-and-devices.md
+          - text: Remove company data from devices
+            url: ../../business/remove-company-data.md
+          - text: Reset Windows devices to factory settings
+            url: ../../business/reset-devices-to-factory-settings.md
+  # Card (optional)
+  - title: Manage devices and app data with Microsoft 365 for enterprise
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of Microsoft 365 for enterprise
+            url: ../../enterprise/microsoft-365-overview.md
+          - text: Device management road-map for Microsoft 365 for enterprise
+            url: ../../enterprise/device-management-roadmap-microsoft-365.md
+   # Card (optional)
+  - title: Manage devices and app data with Basic mobility and security
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of Basic Mobility and Security
+            url: ../basic-mobility-security/overview.md
+          - text: Set up Basic mobility and Security 
+            url: ../basic-mobility-security/set-up.md
+          - text: Capabilities of basic mobility and security
+            url: ../basic-mobility-security/capabilities.md
