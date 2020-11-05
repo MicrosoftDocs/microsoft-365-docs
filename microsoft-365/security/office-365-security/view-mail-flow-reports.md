@@ -528,7 +528,7 @@ To go back to the report view, click **View report**.
 
 ## Mail latency report
 
-The **Mail latency report** shows the time it takes for messages to pass through our filters and detonation. The goal is to demonstrate that ATP’s detonation technology has a detonation time among the best in the industry, and to reduce customers’ concerns and perceptions around bad latency.
+## Add description
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mail latency report**. To go directly to the report, open <https://protection.office.com/mailLatencyReport?viewid=P50>.
 
@@ -536,9 +536,19 @@ To view the report, open the [Security & Compliance Center](https://protection.o
 
 ### Report view for the Mail latency report
 
-The following charts are available in the report view:
+When you open the report, the 50th percentile tab is selected by default. By default, this view contains a chart and a data table that's configured with the following filters:
 
-- **Show data for \> Top mail senders**
+- **Date**: The last 7 days.
+
+- **Message View**:
+  - All messages
+  - Messages that contain attachments or URLs
+  - Detonated messages
+
+
+
+
+
 
 ## What permissions are needed to view these reports?
 
