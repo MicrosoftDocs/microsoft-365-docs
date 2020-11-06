@@ -1,5 +1,5 @@
 ---
-title: "Get started with automated investigation and response in Microsoft Defender for Office 365"
+title: "Automated investigation and response in Microsoft Defender for Office 365"
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
@@ -23,7 +23,7 @@ ms.custom:
 - seo-marvel-mar2020
 ---
 
-# Get started using automated investigation and response (AIR) in Microsoft Defender for Office 365
+# Automated investigation and response (AIR) in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
