@@ -32,12 +32,31 @@ Win32 Applications |	Teams is not shipped with the device, but is packaged and p
 Web Applications |	Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps, and Planner are not shipped with the device. Users can access the web version of these applications with a browser.
 
 
-## Windows 10 Enterprise E3 or E5
+## Windows 10 Enterprise E3, E5 and Microsoft Defender for Endpoint
+ --- | --- 
+Recommended
+[Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) | Customers are recommended to implement Windows Hello for Business to replace passwords with strong two-factor authentication used on Microsoft Managed Desktop devices.
+[Application Virtualization](https://docs.microsoft.com/windows/application-management/app-v/appv-technical-reference) | Customers can deploy Application Virtualization (App-V) packages using the Intune Win32 app management client.
+[Microsoft 365 data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about) | Customers are recommend to implement Microsoft 365 data loss prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items.   
 
- |
- --- | ---
-Application Virtualization (App-V) |	Customers can deploy App-V packages using the Intune Win32 app management client.
-Microsoft Defender for Endpoint |	 Microsoft Managed Desktop uses this to monitor device security. 
+Included in the service plan
+[BitLocker Drive Encryption](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) | BitLocker Drive Encryption is used to encrypt all system drives. 
+[Windows Defender System Guard]( https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) | Protects the integrity of the system at start up and validates that system integrity has truly been maintained.
+[Windows Defender Credential Guard]( https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) | Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
+[Microsoft Defender for Endpoint | Endpoint Detection and Response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) |	 Microsoft Managed Desktop Security Operations responds to alerts and takes action to remediate threats using Endpoint Detection and Response.
+[Microsoft Defender for Endpoint | Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts) | Microsoft Managed Desktop integrates with Threat Experts insights and data through targeted attack notifications. Customers are required to provide additional consent before this service is enabled.  
+[Microsoft Defender for Endpoint | Threat and Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) | Required for future use in the Microsoft Managed Desktop service plan.
+[Microsoft Defender for Endpoint | Attack Surface Reduction](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) | Attack surface reduction targets risky software behaviors that are often abused by attackers.
+[Microsoft Defender for Endpoint | Exploit Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) | Protects against malware that uses exploits to infect devices and spread by automatically applying exploit mitigation techniques to both operating system processes and apps.
+[Microsoft Defender for Endpoint | Network Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/network-protection) | Network protection expands the scope of Microsoft Defender SmartScreen to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources.
+[Microsoft Defender Tamper Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) | Windows Tamper Protection is used to prevent security settings such as anti-virus protection from being changed.
+[Microsoft Defender Antivirus Behavior-based, heuristic, and real-time antivirus protection]( https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) | Always on scanning for file and process threats which may not be detected as malware.
+[Microsoft Defender Antivirus Cloud-delivered Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus) | Provides dynamic near-instant, automated protection against new and emerging threats.
+[Microsoft Defender Block at first sight](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus) | Provides detection and blocking of new malware when Windows detects a suspicious or unknown file.
+[Microsoft Defender AV Potentially Unwanted Applications](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) | Potentially unwanted applications (PUA) is used to block apps that can cause your machine to run slowly, display unexpected ads, or at worst, install other software which might be unexpected or unwanted.
+[Windows Defender Firewall with Advanced Security](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) | Host-based, two-way network traffic filtering for a device, Windows Defender Firewall blocks unauthorized network traffic flowing into or out of the local device.
+[User Account Control](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/how-user-account-control-works) | User Account Control switches to the Secure Desktop when a task or action requires the administrator account type access. Microsoft Managed Desktop users are assigned Standard user access at enrollment. 
+
 
 ## Enterprise Mobility + Security E5
 
