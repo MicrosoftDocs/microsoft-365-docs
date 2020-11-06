@@ -1,5 +1,5 @@
 ---
-title: Converging MSDO and MSDE in the 'Microsoft 365 Security' center, OATP, MDATP, MSDO, MSDE, single pane of glass
+title: Getting Started with the 'Microsoft 365 Security' center, OATP, MDATP, MSDO, MSDE, single pane of glass
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -28,7 +28,7 @@ The left navigation, or quick launch bar, will look familiar, but there are some
 
 |Alerts & Actions  |Endpoints  |Email & Collaboration  |Access & Reporting  |
 |---------|---------|---------|---------|
-|:::image type="content" source="../../media/Converge 1 AlertsAndActions.png" alt-text="The Alerts and Actions quicklaunch bar.":::     |     :::image type="content" source="../../media/Converge 2 Endpoints.png" alt-text="The Endpoints quicklaunch bar.":::    | :::image type="content" source="../../media/Converge 3 Email and Collab.png" alt-text="The Emails and Collaboration quicklaunch bar.":::        |    :::image type="content" source="../../media/Converge 4 Access and reporting.png" alt-text="The Access and Reporting quicklaunch bar.":::    |
+|:::image type="content" source="../../media/Converge 1 AlertsAndActions.png" alt-text="The Alerts and Actions quick launch bar.":::     |     :::image type="content" source="../../media/Converge 2 Endpoints.png" alt-text="The Endpoints quicklaunch bar.":::    | :::image type="content" source="../../media/Converge 3 Email and Collab.png" alt-text="The Emails and Collaboration quicklaunch bar.":::        |    :::image type="content" source="../../media/Converge 4 Access and reporting.png" alt-text="The Access and Reporting quicklaunch bar.":::    |
 
 > [!IMPORTANT]
 > The Microsoft 365 Security portal (https://security.microsoft.com) **combines** security features in https://securitycenter.windows.com, and https://protection.office.com. However, what *you* see will depend on your subscription. If you have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints.
@@ -66,7 +66,7 @@ This table is a quick reference of areas where change has occurred between the S
 |---------|---------|
 |Dashboard     |  [Explorer](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet&branch=pr-en-us-5758)       |
 |Attack Simulator    |  [Policies & Rules](https://docs.microsoft.com/en-us/microsoft-365/compliance/alert-policies?view=o365-worldwide)       |
-| Investigation    |    [Campaign](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/campaigns?view=o365-worldwide)     |
+|Investigation    |    [Campaign](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/campaigns?view=o365-worldwide)     |
 |     |    [Submissions](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide)     |
 |     |    [Review](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)     |
 |     |    [Threat Tracker ](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet&branch=pr-en-us-5758)    |
