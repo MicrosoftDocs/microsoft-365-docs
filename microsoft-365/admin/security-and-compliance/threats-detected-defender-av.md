@@ -37,8 +37,22 @@ To learn more about malware and Microsoft Defender Antivirus, see the following 
 - [How Microsoft identifies malware and potentially unwanted applications](/windows/security/threat-protection/intelligence/criteria)
 - [Next-generation protection in Windows 10](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 
-## Heading (include multiple headings, as needed)
+## What happens when a non-Microsoft antivirus solution is used? 
 
+Microsoft Defender Antivirus is part of the operating system and is enabled on devices that are running Windows 10. But if you are using a non-Microsoft antivirus/antimalware solution, and you are not using [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), then Microsoft Defender Antivirus automatically goes into disabled mode.  
+
+> [!NOTE]
+> Your third-party antivirus solution must be registered with the Windows Security App after installation, which ensures that Microsoft Defender Antivirus moves to disabled mode.
+
+When in disabled mode, users and customers can still use Microsoft Defender Antivirus for scheduled or on-demand scans to identify threats; however, in this situation, Microsoft Defender Antivirus:
+
+- is not used as the default antivirus app
+- does not actively scan files for threats
+- does not remediate, or resolve, threats
+
+> [!TIP]
+> - If you're using Microsoft 365, consider using Microsoft Defender Antivirus as your primary antivirus solution. Integration can mean better protection. See [Better together: Microsoft Defender Antivirus and Office 365](/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus).
+- Make sure to keep Microsoft Defender Antivirus up to date, even if you’re using a non-Microsoft antivirus solution.
 
 ### Sub-heading (optional)
 
