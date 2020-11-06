@@ -17,29 +17,15 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
 description: "This article describes how to get started using Advanced eDiscovery in Microsoft 365. After you complete a few quick steps, the Advanced eDiscovery tool is ready to use. The first step is to create a case, and then start using Advanced eDiscovery features and functionality."
 ---
 
 # Get started with Advanced eDiscovery
 
-Advanced eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Nothing is needed to deploy Advanced eDiscovery, but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start to create and use Advanced eDiscovery cases to manage your investigations.
+Advanced eDiscovery in Microsoft 365 provides an [end-to-end workflow](overview-ediscovery-20.md#advanced-ediscovery-architecture) to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Nothing is needed to deploy Advanced eDiscovery, but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start to create and use Advanced eDiscovery cases to manage your investigations.
 
 This article discusses the steps necessary to set up Advanced eDiscovery. This includes ensuring the proper licensing required to access Advanced eDiscovery and add custodians to cases, as well as assigning permissions to your legal and investigation team so they can access and manage cases. This article also provides a high-level overview of using cases to manage the Advanced eDiscovery workflow for a legal investigation.
 
-## Advanced eDiscovery architecture in Microsoft 365
-
-Here's an Advanced eDiscovery architecture diagram to help you get started. These illustrations show the end-to-end workflow in a single-geo environment, the end-to-end workflow in a multi-geo environment, and the end-to-end data flow that's aligned with the [Electronic Discovery Reference Model (EDRM)](overview-ediscovery-20.md#alignment-with-edrm).
-
-[![Model poster: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
-
-[View as an image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
-
-[Download as a PDF file](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
-
-[Download as a Visio file](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
-
-  
 ## Step 1: Verify and assign appropriate licenses
 
 Licensing for Advanced eDiscovery requires the appropriate organization subscription and per-user licensing.
