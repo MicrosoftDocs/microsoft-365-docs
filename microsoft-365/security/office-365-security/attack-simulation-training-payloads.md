@@ -1,5 +1,5 @@
 ---
-title: "Create a payload for attack simulation training"
+title: "Create a payload for Attack simulation training"
 ms.author: daniha
 author: danihalfin
 manager: dansimp
@@ -9,10 +9,10 @@ localization_priority: Normal
 ms.collection: 
 - M365-security-compliance 
 - m365initiative-m365-defender
-description: "Learn how to create custom payload for attack simulation training in Microsoft Defender for Office 365."
+description: "Learn how to create custom payload for Attack simulation training in Microsoft Defender for Office 365."
 ---
 
-# Create a custom payload for attack simulation training
+# Create a custom payload for Attack simulation training
 
 Microsoft offer a robust payload catalog for various social engineering techniques to pair with your attack simulation training. However, you might want to create custom payloads that will work better for your organization. The following describes how to create a payload in attack simulation training through Microsoft Defender for Office 365.
 

@@ -9,7 +9,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-security-compliance 
 - m365initiative-m365-defender
-description: "Learn how to simulate phishing attacks and train your users on phishing prevention."
+description: "Learn how to simulate phishing attacks and train your users on phishing prevention with Attack simulation training in Microsoft Defender for Office 365."
 ---
 
 # Simulate a phishing attack
