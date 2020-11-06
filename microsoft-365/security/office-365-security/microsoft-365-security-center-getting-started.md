@@ -21,46 +21,9 @@ description: "Manage security for Office 365 and endpoint devices in the same pl
 
 The new [Microsoft 365 security](https://security.microsoft.com) center combines security capabilities that protect, detect, investigate, and respond to email, collaboration, *and* device threats. This security center brings together features in Microsoft Defender for Endpoint (MSDE), with Microsoft Defender for Office 365 (MSDO) features.
 
-The URL to access and assess this page is: https://security.microsoft.com
+MSDO admins, use this URL to access the new security center: https://security.microsoft.com
 
-The left navigation, or quick launch bar, will look familiar, but there are some new or updated elements in this security center.
-<p>
-
-|Alerts & Actions  |Endpoints  |Email & Collaboration  |Access & Reporting  |
-|---------|---------|---------|---------|
-|:::image type="content" source="../../media/Converge 1 AlertsAndActions.png" alt-text="The Alerts and Actions quick launch bar.":::     |     :::image type="content" source="../../media/Converge 2 Endpoints.png" alt-text="The Endpoints quicklaunch bar.":::    | :::image type="content" source="../../media/Converge 3 Email and Collab.png" alt-text="The Emails and Collaboration quicklaunch bar.":::        |    :::image type="content" source="../../media/Converge 4 Access and reporting.png" alt-text="The Access and Reporting quicklaunch bar.":::    |
-
-> [!IMPORTANT]
-> The Microsoft 365 Security portal (https://security.microsoft.com) **combines** security features in https://securitycenter.windows.com, and https://protection.office.com. However, what *you* see will depend on your subscription. If you have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints.
-
-The home page of the new portal surfaces:
-
-- Secure Score ratings
-- the number of users and devices at risk
-- active incident lists
-- lists of privileged OAuth apps
-- device health data
-- tweets from Microsoft’s security intelligence twitter feed
-- and more summary information
-
-As soon as you arrive at this information page, you’ll also see a pop-up for security notifications if there are any.
-
-:::image type="content" source="../../media/Converge 5 Microsoft 365 Security center.png" alt-text="This is the Microsoft Security center page with Home, Endpoints, Email and Collaboration, and miscellaneous areas.":::
-
-The home page also welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
-
-- The links under ‘Next steps’ will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
-- ‘Give feedback’ will allow you to both [join the Windows Insider program](https://insider.windows.com/en-us/) and preview coming changes, and the **leave feedback** on your experiences with the portal.
-
-The ‘Welcome’ page will disappear after you navigate through the Next button to Close. Be sure to take note of any URLs you’d want for your records, or bookmark this page (since the URLs are listed above).
-
-The ‘Guided Tour’ bar will remain on the page and has these useful features.  
-
-:::image type="content" source="../../media/Converge 12 Home Page Guided Tour bar.gif" alt-text="An animation showing the Guided tour drop-down. Options are Tours of Endpoint and Email and Collaboration pages. Next is a link to the Office 365 Security and Compliance center for comparison. The last link is to the 'What's New' page curated by the Product Group for Office 365 Security.":::
-
-## Changed and unchanged Security features
-
-This table is a quick reference of areas where change has occurred between the Security & Compliance center and the Microsoft 365 Security portal.
+This table is a quick reference of MSDO areas where change has occurred between the Security & Compliance center and the Microsoft 365 Security portal. Click the links to navigate to topics.
 
 |**Changed**  |**Unchanged**  |
 |---------|---------|
@@ -71,19 +34,6 @@ This table is a quick reference of areas where change has occurred between the S
 |     |    [Review](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)     |
 |     |    [Threat Tracker ](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet&branch=pr-en-us-5758)    |
 |     |          |
-
-<!--
-## Email & Collaboration
-
-The way you access Microsoft Defender for Office 365 (MSDO, but formerly known as Office 365 Advanced Threat Protection or ATP) has changed. The layout of the portal has both been simplified and combined with Microsoft Defender for Endpoint (or Microsoft Defender Advanced Threat Protection, MDATP). That’s quite a mouthful! In short, the new [Microsoft 365 Security portal](https://security.microsoft.com/) combines:
-
-1. Microsoft Defender for Office 365 (MSDO)
-2. Microsoft Defender for Endpoint (MSDE)
-
-in one easy to navigate location. This means security for your Office 365 or Microsoft 365 subscription, and for the devices that connect to it, is done from one portal.
-
-> [!NOTE]
-> If you know MSDO (once Office 365 ATP) from  the core overview article ‘[Office 365 Security overview](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/?view=o365-worldwide)’, then you're aware much of the Microsoft documentation about MSDO can be roughly broken down in Security Administrator and Security Operations topics. <p>The Microsoft 365 Security center has the same strengths. Many of the administration topics appear under ‘Policies & Rules’, and ‘Dashboard’. Long term security investigation, detection, defense, and response as per Security Operations, takes place in the other sections of the Email & Collaboration section. -->
 
 ## Advanced Hunting example for MSDO Security Operations Teams
 
@@ -126,7 +76,59 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 
 :::image type="content" source="../../media/Converge 13 Advanced Hunt an Email ZAP.PNG" alt-text="Under Hunting > Advanced Hunting, click Query, and then enter the Kusto query below.":::
 
-The data from this query will appear in the results panel below the query itself. Results include information like 'DeviceName', 'AccountDisplayName', and 'ZapTime' in a customizable result set. Results can also be exported for your records. If the query is one you'll need again, select **Save** > **Save As** and add the query to your list of queries, shared, or community queries. 
+The data from this query will appear in the results panel below the query itself. Results include information like 'DeviceName', 'AccountDisplayName', and 'ZapTime' in a customizable result set. Results can also be exported for your records. If the query is one you'll need again, select **Save** > **Save As** and add the query to your list of queries, shared, or community queries.
+
+## Navigation and the Guided Tour
+
+The left navigation, or quick launch bar, will look familiar, but there are some new or updated elements in this security center.
+<p>
+
+|Alerts & Actions  |Endpoints  |Email & Collaboration  |Access & Reporting  |
+|---------|---------|---------|---------|
+|:::image type="content" source="../../media/Converge 1 AlertsAndActions.png" alt-text="The Alerts and Actions quick launch bar.":::     |     :::image type="content" source="../../media/Converge 2 Endpoints.png" alt-text="The Endpoints quicklaunch bar.":::    | :::image type="content" source="../../media/Converge 3 Email and Collab.png" alt-text="The Emails and Collaboration quicklaunch bar.":::        |    :::image type="content" source="../../media/Converge 4 Access and reporting.png" alt-text="The Access and Reporting quicklaunch bar.":::    |
+
+> [!IMPORTANT]
+> The Microsoft 365 Security portal (https://security.microsoft.com) **combines** security features in https://securitycenter.windows.com, and https://protection.office.com. However, what *you* see will depend on your subscription. If you have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints.
+
+The home page of the new portal surfaces:
+
+- Secure Score ratings
+- the number of users and devices at risk
+- active incident lists
+- lists of privileged OAuth apps
+- device health data
+- tweets from Microsoft’s security intelligence twitter feed
+- and more summary information
+
+As soon as you arrive at this information page, you’ll also see a pop-up for security notifications if there are any.
+
+:::image type="content" source="../../media/Converge 5 Microsoft 365 Security center.png" alt-text="This is the Microsoft Security center page with Home, Endpoints, Email and Collaboration, and miscellaneous areas.":::
+
+The home page also welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
+
+- The links under ‘Next steps’ will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
+- ‘Give feedback’ will allow you to both [join the Windows Insider program](https://insider.windows.com/en-us/) and preview coming changes, and the **leave feedback** on your experiences with the portal.
+
+The ‘Welcome’ page will disappear after you navigate through the Next button to Close. Be sure to take note of any URLs you’d want for your records, or bookmark this page (since the URLs are listed above).
+
+The ‘Guided Tour’ bar will remain on the page and has these useful features.  
+
+:::image type="content" source="../../media/Converge 12 Home Page Guided Tour bar.gif" alt-text="An animation showing the Guided tour drop-down. Options are Tours of Endpoint and Email and Collaboration pages. Next is a link to the Office 365 Security and Compliance center for comparison. The last link is to the 'What's New' page curated by the Product Group for Office 365 Security.":::
+
+
+<!--
+## Email & Collaboration
+
+The way you access Microsoft Defender for Office 365 (MSDO, but formerly known as Office 365 Advanced Threat Protection or ATP) has changed. The layout of the portal has both been simplified and combined with Microsoft Defender for Endpoint (or Microsoft Defender Advanced Threat Protection, MDATP). That’s quite a mouthful! In short, the new [Microsoft 365 Security portal](https://security.microsoft.com/) combines:
+
+1. Microsoft Defender for Office 365 (MSDO)
+2. Microsoft Defender for Endpoint (MSDE)
+
+in one easy to navigate location. This means security for your Office 365 or Microsoft 365 subscription, and for the devices that connect to it, is done from one portal.
+
+> [!NOTE]
+> If you know MSDO (once Office 365 ATP) from  the core overview article ‘[Office 365 Security overview](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/?view=o365-worldwide)’, then you're aware much of the Microsoft documentation about MSDO can be roughly broken down in Security Administrator and Security Operations topics. <p>The Microsoft 365 Security center has the same strengths. Many of the administration topics appear under ‘Policies & Rules’, and ‘Dashboard’. Long term security investigation, detection, defense, and response as per Security Operations, takes place in the other sections of the Email & Collaboration section. -->
+
 
 ## Related information
 
