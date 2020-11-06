@@ -31,7 +31,7 @@ Collecting diagnostic information for Core eDiscovery is cmdlet-based, so you'll
 
 To run the following cmdlets, [connect to Security & Compliance Center PowerShell</span>](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell). After you're connected, run one or more of the following commands and be sure to replace placeholders with the actual object names.
 
-After reviewing (and redacting sensitive information if necessary) the generated text file, send it to the Microsoft Support engineer working on your case.
+After reviewing the generated text file (and redacting sensitive information if necessary), send it to the Microsoft Support engineer working on your case.
 
 > [!NOTE]
 > You can also run the commands in this section to collect diagnostic information for the searches and exports listed on the **Content search** page in the Microsoft 365 compliance center.
@@ -84,4 +84,4 @@ The **Settings** tab in an Advanced eDiscovery case lets you quickly copy the di
 
 6. Save the text file and name it something like `AeD Diagnostic Info YYYY.MM.DD` (for example, `AeD Diagnostic Info 2020.11.03`).
 
-After reviewing (and redacting sensitive information if necessary) the file, send it to the Microsoft Support engineer working on your case.
+After reviewing the file (and redacting sensitive information if necessary), send it to the Microsoft Support engineer working on your case.
