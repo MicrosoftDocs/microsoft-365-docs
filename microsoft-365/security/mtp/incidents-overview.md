@@ -1,5 +1,5 @@
 ---
-title: Investigate incidents in Microsoft Threat Protection
+title: Incidents overview in Microsoft 365 Defender
 description: Investigate incidents seen across devices, users, and mailboxes.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
@@ -14,37 +14,45 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: conceptual
 search.appverid: 
 - MOE150
 - MET150
 ---
 
-# Incidents overview in Microsoft Threat Protection
+# Incidents overview in Microsoft 365 Defender
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
-The basis of all incidents are alerts. Alerts are created when a malicious event or activity is seen on your network. Individual alerts provide valuable clues in what's happening on individual events or entities. However, attacks typically employ various attack vectors to carry out a breach. Piecing individual clues together can be a challenging and time-consuming task. 
+Incidents are based on related alerts. Alerts are created when a malicious event or activity is seen on your network. Individual alerts provide valuable clues about an on-going attack. However, attacks typically employ various vectors and techniques to carry out a breach. Piecing individual clues together can be challenging and time-consuming.
 
-Microsoft Threat Protection connects the dots on individual alerts. Malicious events on the following entities are surfaced in the Microsoft 365 security center:
-- Devices
-- Users
-- Mailboxes
+This short video gives an overview of incidents in Microsoft 365 Defender.
+<br>
 
-Suspicious events that show characteristics of being part of a larger attack are aggregated into an incident. 
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-You'll know exactly where an attack started and other details to help you see the extent of the attack.
+An incident is a collection of correlated alerts that make up the story of an attack. Malicious and suspicious events that are found in different device, user, and mailbox entities in the network are automatically aggregated by Microsoft 365 Defender. Grouping related alerts into an incident gives security defenders a comprehensive view of an attack. 
 
-The platform provides security defenders with the right visuals and data representations to understand and address complex cross-entity threats. 
+For instance, security defenders can see where the attack started, what tactics were used, and how far the attack has gone into the network. They can also see the scope of the attack, like how many devices, users, and mailboxes were impacted, how severe the impact was, and other details about affected entities.
 
-Not only will you have visibility on the scope of an attack, but you'll also have access to services that will allow you to take tactical steps to contain an incident.
+If enabled, Microsoft 365 Defender can automatically investigate and resolve the individual alerts through automation and artificial intelligence. Security defenders can also perform additional remediation steps to resolve the attack straight from the incidents view. 
+
+Incidents from the last 30 days are shown in the incident queue. From here, security defenders can see which incidents should be prioritized based on risk level and other factors. 
+
+Security defenders can also rename incidents, assign them to individual analysts, classify, and add tags to incidents for a better and more customized incident management experience.
 
 
-## Related topics
+
+## See also
 - [Prioritize incidents](incident-queue.md)
 - [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)

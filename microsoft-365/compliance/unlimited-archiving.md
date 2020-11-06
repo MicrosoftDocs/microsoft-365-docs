@@ -85,7 +85,7 @@ Here are some things to consider when using Outlook or Outlook on the web to acc
 
 - You can access any folder in your archive mailbox, including ones that were moved to the auto-expanded storage area.
 
-- You can search for items that were moved to an additional storage area only by searching the folder itself. This means that you have to select the archive folder in the folder list to select the **Current Folder** option as the search scope. Similarly, if a folder in an auto-expanded storage area contains subfolders, you have to search each subfolder separately.
+- Search for auto-expanded archiving is only available in Outlook Desktop as of Insiders build 16.0.12716.10000. Search is available in Outlook for the web. Similar to Online Archive, you can search for items that were moved to an additional storage area only by searching the folder itself. This means that you have to select the archive folder in the folder list to select the **Current Folder** option as the search scope. Similarly, if a folder in an auto-expanded storage area contains subfolders, you have to search each subfolder separately.
 
 - Item counts in Outlook and Read/Unread counts (in Outlook and Outlook on the web) in an auto-expanded archive might not be accurate.
 
@@ -107,4 +107,4 @@ This section explains the functionality between auto-expanding archiving and oth
 
 ## More information
 
-For more technical details about auto-expanding archiving, see [Microsoft 365: Auto-Expanding Archives FAQ](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/).
+For more technical details about auto-expanding archiving, see [Microsoft 365: Auto-Expanding Archives FAQ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784).

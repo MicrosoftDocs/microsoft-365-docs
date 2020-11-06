@@ -2,8 +2,8 @@
 title: "Create and use a template to add users"
 f1.keywords:
 - NOCSH
-ms.author: v-sharos
-author: shars
+ms.author: sirkkuw
+author: Sirkkuw
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -83,7 +84,7 @@ You can easily delete templates you no longer need and add new ones. To delete a
 
 ## Related articles
 
-[Add users individually or in bulk to Microsoft 365](add-users.md)
+[Add users and assign licenses at the same time](add-users.md)
 
 [Remove a former employee from Microsoft 365](remove-former-employee.md)
   

@@ -3,7 +3,7 @@ title: IT-Grundschutz Compliance workbook
 description: Azure Germany published this workbook to help our clients achieve IT-Grundschutz certification.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -64,7 +64,3 @@ Microsoft Cloud Germany is physically based in Germany and adheres to the requir
 - [Azure Germany IT-Grundschutz Compliance workbook](https://aka.ms/grundschutzworkbook)
 - [ISO/IEC 27001:2013 Information Security Management Systems background](offering-iso-27001.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/B/3/5/B35DE78F-C346-4E31-ABC5-FF87BD1FF97F/ITGrundschutz-Compliance.pdf).

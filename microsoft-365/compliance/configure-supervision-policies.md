@@ -1,6 +1,6 @@
 ---
 title: "Configure supervision policies"
-description: "Configure communication supervision for Office 365"
+description: Configure communication supervision policies in Office 365 to capture employee communications for examination by internal or external reviewers.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -19,12 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
+ms.custom: seo-marvel-apr2020
 ---
 
 # Configure supervision policies in Office 365
 
 >[!IMPORTANT]
->This topic applies to configuring supervision policies in a Microsoft 365 subscription. If you want to configure communications compliance for a Microsoft 365 subscription, see [Configure communications compliance in Microsoft 365](communication-compliance-configure.md).
+>Following the release of communication compliance in Microsoft 365 Compliance in February 2020, Supervision in Office 365 is being retired. Supervision policies will no longer be available for creation, and policies will eventually be removed, after an extended period of read only access.
+>
+>If you use Supervision, be aware that:
+>
+>- Beginning June 15th, 2020, tenants will not have the ability to create new Supervision policies.
+>- Beginning August 31st, 2020, existing policies will stop capturing new messages.
+>- Beginning October 26th, 2020, existing policies will be deleted.
+>
+>We actively encourage customers who are currently exploring or using Supervision in Office 365 to use the new [communication compliance](communication-compliance.md) solution to address your communications monitoring or regulatory requirements with a much richer set of intelligent capabilities.
 
 Use supervision policies to capture employee communications for examination by internal or external reviewers. For more information about how supervision policies can help you monitor communications in your organization, see [Supervision policies in Office 365](supervision-policies.md).
 
@@ -40,7 +49,7 @@ Follow these steps to set up and use supervision in your organization:
 
 - **Step 2 (required)**: [Make supervision available in your organization](#step-2-make-supervision-available-in-your-organization-required)
 
-    Add yourself to the Supervisory Review role group so you can set up policies. Anyone who has this role assigned can access the **Supervision** page in the Security & Compliance Center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Add yourself to the Supervisory Review role group so you can set up policies. Anyone who has this role assigned can access the **Supervision** page in the Security & Compliance Center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell).
 
 - **Step 3 (optional)**: [Create custom sensitive information types and custom keyword dictionaries](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
@@ -69,7 +78,7 @@ When you select a Microsoft 365 group for supervised users, the policy monitors 
 
 To manage supervised users in large enterprise organizations, you may need to monitor all users across large groups. You can use PowerShell to configure a distribution group for a global supervision policy for the assigned group. This enables you to monitor thousands of users with a single policy and keep the supervision policy updated as new employees join your organization.
 
-1. Create a dedicated [distribution group](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) for your global supervision policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
+1. Create a dedicated [distribution group](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) for your global supervision policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
 
     - **MemberDepartRestriction = Closed**. Ensures that users cannot remove themselves from the distribution group.
     - **MemberJoinRestriction = Closed**. Ensures that users cannot add themselves to the distribution group.
@@ -132,7 +141,7 @@ For more information about role groups and permissions, see [Permissions in the 
 
 ### Enable remote PowerShell access for reviewers (if email is hosted on Exchange Online)
 
-1. Follow the guidance in [Enable or disable access to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+1. Follow the guidance in [Enable or disable access to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell).
 
 ## Step 3: Create custom sensitive information types and custom keyword dictionaries (optional)
 
@@ -153,7 +162,7 @@ Use a text editor (like Notepad), to create a file that includes the keyword ter
 
     For more detailed information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md) and [Create a keyword dictionary](create-a-keyword-dictionary.md)
 
-    After the custom dictionary/lexicon is created, you can view the configured keywords with the [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) cmdlet or add and remove terms using the [Set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) cmdlet.
+    After the custom dictionary/lexicon is created, you can view the configured keywords with the [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/get-dlpkeyworddictionary) cmdlet or add and remove terms using the [Set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/set-dlpkeyworddictionary) cmdlet.
 
 ## Step 4: Set up a supervision policy (required)
   

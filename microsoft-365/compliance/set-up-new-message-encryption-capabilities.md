@@ -16,7 +16,8 @@ ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
-description: "New Office 365 Message Encryption capabilities built on top of Azure Information Protection, your organization can use protected email communication with people inside and outside your organization. The new OME capabilities work with other organizations, Outlook.com, Gmail, and other email services."
+description: Learn about the new Office 365 Message Encryption capabilities that enable protected email communication with people inside and outside your organization.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Set up new Message Encryption capabilities
@@ -56,9 +57,9 @@ There are many reasons, for example compliance requirements, that may necessitat
 
 ## Verify new OME configuration in Exchange Online PowerShell
 
-You can verify that your Microsoft 365 tenant is properly configured to use the new OME capabilities in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+You can verify that your Microsoft 365 tenant is properly configured to use the new OME capabilities in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
   
-1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) using an account with global administrator permissions in your Microsoft 365 tenant.
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) using an account with global administrator permissions in your Microsoft 365 tenant.
 
 2. Run the Get-IRMConfiguration cmdlet.
 

@@ -3,7 +3,7 @@ title: ISO/IEC 27701 Privacy Information Management System (PIMS)
 description: The ISO/IEC 27701 standard to support privacy accountability and regulatory compliance among controllers and processors within the global data processing supply chain.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -20,7 +20,7 @@ titleSuffix: Microsoft Compliance
 
 ## Privacy Information Management System (PIMS) overview
 
-The European Union’s General Data Protection Regulation (GDPR), has ushered in a new era of privacy regulatory and compliance globally. More privacy regulations, many modeled after the GDPR, have been enacted in different jurisdictions (be that market/industry, or physical location). As a result, organizations must implement policies and procedures to assure compliance with the growing list of privacy regulations. In addition, we are collectively in the midst of rapid digital transformation where data collection and processing are increasing dramatically. The simultaneous growth in data volume and regulatory requirements pertaining to that data makes compliance increasingly complex for organizations of all types.
+The European Union's General Data Protection Regulation (GDPR), has ushered in a new era of privacy regulatory and compliance globally. More privacy regulations, many modeled after the GDPR, have been enacted in different jurisdictions (be that market/industry, or physical location). As a result, organizations must implement policies and procedures to assure compliance with the growing list of privacy regulations. In addition, we are collectively in the midst of rapid digital transformation where data collection and processing are increasing dramatically. The simultaneous growth in data volume and regulatory requirements pertaining to that data makes compliance increasingly complex for organizations of all types.
 
 The new international standard [ISO/IEC 27701 Privacy Information Management System (PIMS)](https://www.iso.org/standard/71670.html) (formerly known as ISO/IEC 27552 during drafting period), helps organizations reconcile privacy regulatory requirements. The standard outlines a comprehensive set of operational controls that can be mapped to various regulations, including the GDPR. Once mapped, the PIMS operational controls are implemented by privacy professionals and audited by internal or third-party auditors resulting in a certification and comprehensive evidence of conformity.
 
@@ -38,7 +38,7 @@ ISO/IEC 27701 includes an annex containing the operational controls of the stand
 
 ## Too costly to audit regulation-by-regulation
 
-Let’s go back to our opening statement on the current landscape. As more privacy regulations come into force in various jurisdictions, the pressure to provide evidence of compliance will also increase. But the costs of disparate regulatory certifications become prohibitive if every regulation calls for its own unique audit. By outlining a set of universal operational controls, PIMS also outlines a universal compliance framework to audit against, and potentially certify, for multiple regulatory requirements.
+Let's go back to our opening statement on the current landscape. As more privacy regulations come into force in various jurisdictions, the pressure to provide evidence of compliance will also increase. But the costs of disparate regulatory certifications become prohibitive if every regulation calls for its own unique audit. By outlining a set of universal operational controls, PIMS also outlines a universal compliance framework to audit against, and potentially certify, for multiple regulatory requirements.
 
 It is important to recognize that an official GDPR certification requires pending approval decisions to be made by the European regulators. While the alignment between PIMS and GDPR is evident, a PIMS certification should be taken as evidence of GDPR compliance, not as an official GDPR certification until regulatory decisions are finalized.
 
@@ -46,7 +46,7 @@ It is important to recognize that an official GDPR certification requires pendin
 
 Modern organizations engage in complex data transfers with a deep network of business partners including partner organizations or co-controllers, processors such as cloud providers, and sub-processors such as vendors who support those same processors. Failure to comply with regulations in any part of this network may lead to cascading compliance issues across the supply chain. This is where a verification of compliance can be valuable beyond the assurance provided by contractual terms between these organizations. Since the global economy dictates that most of these organizations are spread out around the world, it is practical to use an international standard from ISO to manage compliance across the network.
 
-This reliance on compliance increases the importance of certification to the standard. While not all companies and organizations need to earn such certification, most will benefit from partners and vendors who do, especially when sensitive or high volumes of data processing is involved.
+This reliance on compliance increases the importance of certification to the standard. While not all companies and organizations need to earn such certification, most will benefit from partners and vendors who do, especially when sensitive or high volumes of data processing are involved.
 
 ## Building blocks of the standard
 
@@ -60,16 +60,35 @@ Key points on ISO/IEC 27001 and PIMS:
 
 ## What should your organization do with PIMS?
 
-No matter the size of your organization and whether it is a controller or a processor, your organization should consider pursuing certification, either for your own organization, or requesting it from vendors or suppliers based on your business requirements. This applies especially for processors, sub-processors, and co-controllers that are processing sensitive or high volumes of personal data. In any case, your organization should assess its business needs to determine if certification for its own products and services are suitable.
+No matter the size of your organization and whether it is a controller or a processor, your organization should consider pursuing certification, either for your own organization, or requesting it from vendors or suppliers based on your business requirements. This applies especially for processors, sub-processors, and co-controllers that are processing sensitive or high volumes of personal data. In any case, your organization should assess its business needs to determine if certification for its own products and services is suitable.
+
+## Microsoft in-scope cloud services
+
+- Azure, Azure Government, and Azure Germany
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 Government, and Dynamics 365 Germany
+- Microsoft Graph
+- Microsoft Healthcare Bot
+- Intune
+- Microsoft Managed Desktop
+- Power Automate (formerly Microsoft Flow)
+- PowerApps
+- Power BI
+- Power BI Embedded
+- Power Virtual Agents
+- Microsoft Stream
+- Microsoft Threat Experts
+- Microsoft Defender for Endpoint
 
 ## Audits, reports, and certificates
 
-- [Azure ISO/IEC 27701 certification](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
-- [Azure ISO/IEC 27701 assessment report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- [Azure, Dynamics 365, and Online Services:ISO27701 certification](https://aka.ms/azureiso27701cert)
+- [Azure, Dynamics 365, and Online Services:ISO27701 assessment report](https://aka.ms/azureiso27701report)
 
-## Use Microsoft Compliance Score to assess your risk
+## Use Microsoft Compliance Manager to assess your risk
 
-[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [ISO 27701 template](https://go.microsoft.com/fwlink/?linkid=2117915) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

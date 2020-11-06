@@ -14,7 +14,8 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "With the data governance reports in the Security &amp; Compliance Center, you can quickly view whether your labels are being applied to content as you intended."
+description: "With the data governance reports in the Security & Compliance Center, you can quickly view whether your labels are being applied to content as you intended."
+ms.custom: seo-marvel-apr2020
 ---
 
 # View the data governance reports
@@ -31,7 +32,7 @@ After you create your labels, you'll want to verify that they're being applied t
     
 All these reports show labeled content from Exchange, SharePoint, and OneDrive for Business.
   
-You can find these reports in the Security &amp; Compliance Center \> **Information governance** \> **Dashboard**.
+You can find these reports in the Security &amp; Compliance Center \> **Information governance** \> [**Dashboard**](https://protection.office.com/datamanagement/dashboard).
   
 ![Chart showing label trends over past 90 days](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   

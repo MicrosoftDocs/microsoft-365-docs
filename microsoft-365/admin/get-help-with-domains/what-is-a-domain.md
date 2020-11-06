@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,7 +19,9 @@ search.appverid:
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
 description: "Understand what a domain is and how you can buy a domain or use the default domain of your business."
-ms.custom: okr_smb
+ms.custom: 
+- okr_smb
+- AdminSurgePortfolio
 ---
 
 # What is a domain?

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,17 +16,21 @@ ms.collection:
 - commerce
 ms.custom:
 - SaRA
+- AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-description: "Learn how to upgrade to a new subscription."
-monikerRange: 'o365-worldwide'
+description: "Learn how to upgrade to a different plan."
 ---
 
-# Upgrade to a different plan 
+# Upgrade to a different plan
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 When your business changes, or you need more features, you can upgrade plans. The easiest way to do this is to use the **Upgrade** tab in the admin center. However, using the **Upgrade** tab isn't supported in all situations. In some cases, you might be able to change plans manually.
 
@@ -37,7 +41,7 @@ When your business changes, or you need more features, you can upgrade plans. Th
 
 When you use the **Upgrade** tab, you're led through the process of buying a new plan. All users are automatically assigned licenses in the new plan, and your old plan is canceled for you.
 
-1. In the Admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the Admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Select the subscription that you want to upgrade.
 
@@ -54,17 +58,21 @@ When you use the **Upgrade** tab, you're led through the process of buying a new
 
 7. When you're finished, select **Place order**.
 
-When you finish checkout, it might take a few minutes to finalize the upgrade. You can start using your new subscription right away. Select **Check upgrade status** to check the progress of the upgrade. You'll be notified when the upgrade is complete. The notification is displayed on the **Products & services** page, next to your new subscription.
+When you finish checkout, it might take a few minutes to finalize the upgrade. You can start using your new subscription right away. Select **Check upgrade status** to check the progress of the upgrade. You'll be notified when the upgrade is complete. The notification is displayed on the **Your products** page, next to your new subscription.
 
 ## The Upgrade tab is empty
 
-If the **Upgrade** tab is empty, you'll see an explanation of why you can't upgrade at this time. You can try to [change plans manually](change-plans-manually.md) or [call support](../../admin/contact-support-for-business-products.md). For more information, see [Why can't I upgrade plans?](#why-cant-i-upgrade-plans).
+If the **Upgrade** tab is empty, you'll see an explanation of why you can't upgrade at this time. You can try to [change plans manually](change-plans-manually.md). For more information, see [Why can't I upgrade plans?](#why-cant-i-upgrade-plans).
 
 ## I don't see the plan I want
 
 When you use the **Upgrade** tab, the plans that you can upgrade to are displayed based on the services in your current plan. You can only use the **Upgrade** tab to move to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the change.
 
 If you want to move to a plan with fewer services, you can [change plans manually](change-plans-manually.md), or [call support](../../admin/contact-support-for-business-products.md) for help.
+
+## I only want to upgrade some of my users. How do I do that?
+
+If you only want to upgrade some users to a different plan, but need to buy the new subscription first, see [Change plans manually](change-plans-manually.md). If you already have the subscription that you want to upgrade users to, see [Move users to a different subscription](move-users-different-subscription.md).
 
 ## Why some changes take longer
 
@@ -76,7 +84,7 @@ If you want to move to a plan with fewer services, you can [change plans manuall
 
 If you don't see any plans on the **Upgrade** tab, it means your plan can't be upgraded automatically. In some cases, you might be able to resolve the issue so that you can view plans available for upgrade, or you might be able to upgrade or change plans manually, instead.
 
- ### Why are there no plans listed to upgrade?
+### Why are there no plans listed to upgrade?
 
 #### You can't upgrade subscriptions now because you have more users than licenses.
 
@@ -136,7 +144,7 @@ If you have an Add-on with your subscription, you might be able to [change plans
 
 #### Your subscription has an unpaid balance
 
-To resolve this, find the subscription on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page, and select the **Pay now** link in the **Billing** section. After the payment has been made, check the **Upgrade** tab again.
+To resolve this, find the subscription on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page, and select the **Pay now** link in the **Billing** section. After the payment has been made, check the **Upgrade** tab again.
 
 ## What does upgrading a plan do to my service and billing?
 

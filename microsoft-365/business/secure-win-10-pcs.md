@@ -18,20 +18,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
-description: "Learn how to secure Windows 10 PCs after you have set up Microsoft 365 for business."
+description: "Learn how to secure Windows 10 PCs after you have set up Microsoft 365 Business Premium."
 ---
 
 # Secure Windows 10 computers
 
-After you have [set up](set-up.md) Microsoft 365 for business, it is time to protect the Windows 10 computers in your org from theft, and malicious threats like viruses and malware.
-Watch this video for an overview of how to set up policies to secure your Windows 10 computers.<br><br>
+This article applies to Microsoft 365 Business Premium.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
-
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+After you have [set up](set-up.md) Microsoft 365 Business Premium, it is time to protect the Windows 10 computers in your org from theft, and malicious threats like viruses and malware.
 
 ## To secure your Windows 10 PCs
 
@@ -41,6 +39,10 @@ If you found this video helpful, check out the [complete training series for sma
 
     On the top of the page, choose **Get started**.
 
-4. On the Windows 10 setting, select the options you want to turn on. For more information about the settings, see [Secure Windows 10 devices](secure-windows-10-devices.md). 
-5. Choose to who in your organization to apply the policy to, and then choose **Save changes**.
+4. On the **Secure your Windows 10 computers** pane, select the options you want to turn on. For more information about the settings, see [Secure Windows 10 devices](secure-windows-10-devices.md). 
+    
+    For most organizations, the options here offer a good level of security, however, if your organization has more complex security needs, you can also use pre-defined security baselines to secure  your Windows 10 devices. For more information, see [security baselines for Windows 10 devices](https://docs.microsoft.com/mem/intune/protect/security-baselines).   
 
+1. Choose **Apply settings**.
+
+    These settings will apply to all users in your organization. To set up different policies for different security groups, see [Set device protection settings for Windows 10 PCs](protection-settings-for-windows-10-pcs.md).

@@ -21,6 +21,9 @@ description: "Learn about three tools you can use to monitor for leaks of person
 ---
 # Monitor for leaks of personal data
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.
 
 ![Tools to monitor the use and transport of personaal data](../../media/Monitor-for-leaks-of-personal-data-image1.png)
@@ -85,7 +88,7 @@ More information about alert policies and searching the audit log:
 
 - [Search the audit log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
-- [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) (cmdlet)
+- [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 
 - [Detailed properties in the audit log](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
 

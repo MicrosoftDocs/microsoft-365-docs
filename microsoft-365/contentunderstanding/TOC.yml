@@ -1,0 +1,61 @@
+    - name: Learn about Microsoft SharePoint Syntex
+      items: 
+        - name: Introduction to SharePoint Syntex
+          href: index.md
+        - name: Document understanding overview
+          href: document-understanding-overview.md
+        - name: Form processing overview 
+          href: form-processing-overview.md
+        - name: Difference between document understanding and form processing models 
+          href: difference-between-document-understanding-and-form-processing-model.md   
+ 
+    - name: Get started with models
+      items: 
+        - name: Learn about models through the sample model 
+          href: learn-about-document-understanding-models-through-the-sample-model.md
+        - name: Create a content center 
+          href: create-a-content-center.md
+        - name: Create a classifier
+          href: create-a-classifier.md
+        - name: Create an extractor
+          href: create-an-extractor.md
+        - name: Explanation types 
+          href: explanation-types-overview.md
+        - name: Apply a model
+          href: apply-a-model.md
+        - name: Create a form processing model 
+          href: create-a-form-processing-model.md
+        - name: Apply a retention label 
+          href: apply-a-retention-label-to-a-model.md
+        - name: Model usage analytics
+          href: model-usage-analytics.md
+        - name: Leverage term store taxonomy when creating an extractor
+          href: leverage-term-store-taxonomy.md
+    
+    - name: Adoption
+      items:
+        - name: Get started with adoption
+          href: adoption-getstarted.md
+
+    - name: Setup and administration
+      items:
+
+        - name: Set up content understanding
+          href: set-up-content-understanding.md
+        
+    - name: Content services
+      items:
+
+        - name: Import using SKOS
+          href: import-term-set-skos.md
+        - name: SKOS formatting reference
+          href: skos-format-reference.md
+        - name: Push content type to hub
+          href: push-content-type-to-hub.md
+        - name: Term store reports
+          href: term-store-analytics.md
+        
+        
+
+
+

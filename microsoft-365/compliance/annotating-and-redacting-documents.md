@@ -1,5 +1,5 @@
 ---
-title: "View documents in a review set"
+title: Viewing documents in a review set in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,10 +15,11 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: ""
+ms.custom: seo-marvel-mar2020
+description: "You can annotate and redact documents in a review set in Advanced eDiscovery."
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
-# View documents in a review set
+# Annotate and redact documents in a review set in Advanced eDiscovery
 
 Content coming soon.

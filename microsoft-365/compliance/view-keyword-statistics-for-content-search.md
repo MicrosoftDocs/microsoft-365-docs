@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/30/2017
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
@@ -15,7 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
-description: "Use the Search Statistics feature to display and compare statistics for multiple Content Searches in Security & Compliance Center. You can also configure the keyword list when you create or edit a search query to get enhanced statistics that show how many items matched each keyword or keyword phrase."
+description: Learn how to use the Search Statistics feature to display and compare statistics for multiple Content Searches in Security & Compliance Center.
+ms.custom: seo-marvel-apr2020
 ---
 
 # View keyword statistics for Content Search results

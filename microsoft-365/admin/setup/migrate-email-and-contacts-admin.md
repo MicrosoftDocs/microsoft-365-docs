@@ -17,6 +17,8 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_smb
+- seo-marvel-may2020
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -25,42 +27,42 @@ search.appverid:
 - MOL140
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
-description: "Learn to import contacts, calendars, emails  from Gmail or another email provider to Microsoft 365. "
+description: Learn to import contacts, calendars, and emails from Gmail or another email provider and migrate them to Microsoft 365.
 ---
 
 # Migrate email and contacts to Microsoft 365
 
-Import or copy email from Gmail or another email provider to Microsoft 365.
+Import or migrate email from Gmail or another email provider to Microsoft 365.
   
  **Want help with this?**  [Contact Microsoft 365 for business support](../contact-support-for-business-products.md) . 
   
 You need to use a version of Outlook that is installed on your desktop for this task. Outlook is included in most Microsoft 365 [plans](https://go.microsoft.com/fwlink/p/?LinkId=723731).
   
-### Import from Gmail
+### Migrate Gmail to Microsoft 365
 
-Follow these steps to import email, contacts, and calendar from Gmail into Outlook with Microsoft 365:
+Follow these steps to import or migrate email, contacts, and calendar from Gmail into Outlook with Microsoft 365:
   
-- [Import Gmail to Outlook](https://support.office.com/article/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7.aspx)
+- [Import Gmail to Outlook](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7)
     
-- [Import contacts to Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
+- [Import contacts to Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
-- [Import Google Calendar](https://support.office.com/article/098ed60c-936b-41fb-83d6-7e3786437330)
+- [Import Google Calendar](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
-### Import from Outlook (desktop)
+### Import Outlook pst files to Microsoft 365 (desktop)
 
 Follow these steps to export email, contacts and calendars from Outlook to a .pst file, and then import that file to Outlook with Microsoft 365:
   
-1. [Export email, contacts, and calendar](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)
+1. [Export email, contacts, and calendar](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)
     
-2. [Import mail, contacts, and calendar](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)
+2. [Import mail, contacts, and calendar](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)
     
 If you just want contacts, follow these steps:
   
-1. [Export contacts from Outlook](https://support.office.com/article/10f09abd-643c-4495-bb80-543714eca73f.aspx)
+1. [Export contacts from Outlook](https://support.microsoft.com/office/10f09abd-643c-4495-bb80-543714eca73f)
     
-2. [Import contacts to Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
+2. [Import contacts to Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
 To start the process, open Outlook and choose **File** \> **Open &amp; Export** \> **Import/Export**.
   
@@ -76,12 +78,10 @@ Add an account, such as your private Gmail account, to Outlook.
   
 - Open Outlook, then go to **File** \> **Add account**.
     
-Need more detailed steps? See [Add an account](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b).
+Need more detailed steps? See [Add an account](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
-[![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
+[![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
   
 ## Multiple mailboxes: Admins can bulk import email, contacts, and calendars to Microsoft 365
 
-Depending on your source email system, you can choose from several bulk migration methods. Read [Ways to migrate multiple email accounts to Microsoft 365](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842) to decide which method works for you. 
-  
-
+Depending on your source email system, you can choose from several bulk migration methods. Read [Ways to migrate multiple email accounts to Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration) to decide which method works for you.

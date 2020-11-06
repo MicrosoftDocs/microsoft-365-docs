@@ -7,14 +7,17 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid: 
+- MET150
 ms.collection: M365-security-compliance
-description: "Administrators can set up a connector to import third-party data from data sources such as Facebook Business pages, Twitter, LinkedIn Company pages, and Instant Bloomberg. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage the governance of your organization's third-party data."
+ms.custom: seo-marvel-apr2020
+description: "Learn how to setup & use a connector in the Microsoft 365 compliance center to import & archive data from Facebook Business pages to Microsoft 365."
 ---
 
-# Set up a connector to archive Facebook data
+# Set up a connector to archive Facebook data (preview)
 
 Use a connector in the Microsoft 365 compliance center to import and archive data from Facebook Business pages to Microsoft 365. After you set up and configure the connector, it connects to the Facebook Business page (on a scheduled basis), converts the content of Facebook items to an email message format, and then imports those items to a mailbox in Microsoft 365.
 

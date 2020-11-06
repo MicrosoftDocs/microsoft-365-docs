@@ -179,7 +179,7 @@
 | 1/14/2020 | [Microsoft 365 usage analytics data model](/Office365/Admin/usage-analytics/usage-analytics-data-model?view=o365-worldwide) | modified |
 | 1/14/2020 | [Cancel your subscription](/Office365/Admin/subscriptions-and-billing/cancel-your-subscription?view=o365-worldwide) | modified |
 | 1/14/2020 | [Customize the reports in Microsoft 365 usage analytics](/Office365/Admin/usage-analytics/customize-reports?view=o365-worldwide) | modified |
-| 1/15/2020 | [Add, update, or remove your payment methods](/Office365/Admin/subscriptions-and-billing/add-update-or-remove-credit-card-or-bank-account?view=o365-worldwide) | modified |
+| 1/15/2020 | [Manage payment methods](/Office365/Admin/subscriptions-and-billing/manage-payment-methods?view=o365-worldwide) | modified |
 | 1/17/2020 | [Set up multi-factor authentication for users](/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
 
 

@@ -3,7 +3,7 @@ title: California Consumer Privacy Act (CCPA)
 description: Microsoft services and the California Consumer Privacy Act (CCPA).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -48,7 +48,7 @@ As set out in the OST, Microsoft complies with all laws and regulations applicab
 
 Here are a few steps you could take to get ready for the CCPA:
 
-- Start leveraging the GDPR assessment in [Compliance Score](compliance-score.md) as part of your CCPA privacy program.
+- Start leveraging the GDPR assessment in [Compliance Manager](compliance-manager.md) as part of your CCPA privacy program.
 - Establish a process to efficiently respond to Data Subject Access Requests (DSARs) using the Data Subject Requests tool.
 - Set up label and policies to discover, classify & label, and protect sensitive data with Microsoft Information Protection.
 - Use email encryption capabilities to further control sensitive information.
@@ -57,13 +57,13 @@ Here are a few steps you could take to get ready for the CCPA:
 
 **How will the CCPA affect my company?**
 
-Many of the CCPA’s rights afforded to Californians are similar to the rights the GDPR provides, including the disclosure and data subject right (DSR) requests, such as access, deletion, and portability. As such, customer can look to our already existing GDPR solutions to help them with their CCPA compliance.
+Many of the CCPA's rights afforded to Californians are similar to the rights the GDPR provides, including the disclosure and data subject right (DSR) requests, such as access, deletion, and portability. As such, customer can look to our already existing GDPR solutions to help them with their CCPA compliance.
 
 To begin your CCPA journey you should focus on Discovery of information, determining how personal information is shared, governing how it is used, how it is protected and having a formal data breach response program in place.
 
 **What are the differences between GDPR and CCPA?**
 
-There are many differences. It’s easier to focus on the similarities, including:
+There are many differences. It's easier to focus on the similarities, including:
 
 - Transparency/disclosure obligations,
 - Consumer rights to access, delete, and receive a copy of data,
@@ -79,8 +79,8 @@ The CCPA requires regulated businesses that collect, transfer, and sell personal
 - Provide disclosures to consumers, prior to collection, regarding the categories and purposes of collection.
 - Provide more detailed disclosures in a privacy policy regarding the sources, business purposes, and categories of personal information that is collected, including how those categories are sold or transferred to other entities.
 - Enable DSR rights of access, deletion, and portability for the specific pieces of personal information that has been collected by you.
-- Enable a control that will permit consumers to opt out of the sale of the consumer’s data. However, transfers to exempt entities, such as service providers, will be permitted.
-- For minors, under 16, enable an opt-in process so that no sale of the minor’s personal information can occur without actively opting-in to the sale.
+- Enable a control that will permit consumers to opt out of the sale of the consumer's data. However, transfers to exempt entities, such as service providers, will be permitted.
+- For minors, under 16, enable an opt-in process so that no sale of the minor's personal information can occur without actively opting-in to the sale.
 - Ensure that consumers are not discriminated against for exercising any of their rights under CCPA.
 
 **How does the CCPA apply to children?**
@@ -88,9 +88,9 @@ The CCPA requires regulated businesses that collect, transfer, and sell personal
 - CCPA introduces parental consent obligations consistent with The Children's Online Privacy Protection Act (COPPA) for children under the age of 13.
 - For children between 13 and 16 years old, CCPA imposes a new obligation to obtain opt-in consent from the child.
 
-## Use Microsoft Compliance Score to assess your risk
+## Use Microsoft Compliance Manager to assess your risk
 
-[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [CCPA template](https://go.microsoft.com/fwlink/?linkid=2118004) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

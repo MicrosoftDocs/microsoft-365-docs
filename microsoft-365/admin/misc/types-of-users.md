@@ -13,6 +13,9 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: 
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -20,7 +23,6 @@ search.appverid:
 ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: "Learn about types of users in the admin center. "
-ms.custom: okr_smb
 ---
 
 # Quick help: Types of users
@@ -40,11 +42,11 @@ On the **Active users** page in the Microsoft 365 admin center, you can filter b
 |Password admins  <br/> |These users can reset passwords, manage service requests, and monitor service health on your behalf.  <br/> |
 |Service admins  <br/> |These users can manage service requests and monitor service health on your behalf.  <br/> |
 |User management admins  <br/> |These users can reset passwords, monitor service health, manage user accounts, user groups, and service requests. They can't delete a global admin, create other admin roles, or reset passwords for billing, global, and service admins.  <br/> |
-|Add custom filter  <br/> |With this option, you can create a custom filter to view only certain types of users of your preference, such as which users are on the Microsoft 365 Apps for business plan. [Quick help: Filter users](https://support.office.com/article/8ac6a63c-04d8-4ceb-91af-d7e27b6eac0c).  <br/> |
+|Add custom filter  <br/> |With this option, you can create a custom filter to view only certain types of users of your preference, such as which users are on the Microsoft 365 Apps for business plan. [Quick help: Filter users](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view).  <br/> |
    
 ## Related articles
 
-[Add users in Microsoft 365](../add-users/add-users.md)
+[Add users and assign licenses at the same time](../add-users/add-users.md)
     
 [Assign licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md)
     

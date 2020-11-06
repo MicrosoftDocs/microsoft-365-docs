@@ -5,11 +5,18 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+- SPO_Content
+- M365-collaboration
+- m365solution-securecollab
+- m365solution-scenario
+ms.custom: 
+- seo-marvel-apr2020
+- seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn how to configure Microsoft 365 for collaboration with people outside your organization."
+description: Learn how to configure Microsoft 365 apps like Teams, OneDrive, and SharePoint for collaboration with people outside your organization.
 ---
 
 # Collaborating with people outside your organization
@@ -37,7 +44,7 @@ Once you've enabled the scenario that you want to use for sharing with people ou
 
 - [Best practices for sharing files and folders with unauthenticated users](best-practices-anonymous-sharing.md) - Learn about best practices for sharing with unauthenticated users.
 - [Limit accidental exposure](share-limit-accidental-exposure.md) - Learn how to reduce the chances of accidentally sharing sensitive content with people outside your organization.
-- [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)) - Learn about the tools provided in Microsoft 365 to help ensure that sharing with people outside your organization is done in a safe and secure manner and meets your governance requirements.
+- [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md) - Learn about the tools provided in Microsoft 365 to help ensure that sharing with people outside your organization is done in a safe and secure manner and meets your governance requirements.
 
 ## Collaborate with partner companies
 
@@ -47,7 +54,7 @@ When you're working on a large project that involves many guests from another or
 
 If some of the sharing features in Microsoft 365 conflict with your governance policies, see [Limit sharing in Microsoft 365](microsoft-365-limit-sharing.md) to learn about options for limiting sharing.
 
-## See Also
+## Related topics
 
 [Intro to file collaboration in Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
 

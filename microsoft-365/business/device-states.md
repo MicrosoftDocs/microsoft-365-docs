@@ -19,6 +19,7 @@ ms.custom:
 - MiniMaven
 - MSB365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -28,6 +29,8 @@ description: "Learn about the various device states in the Device actions list i
 ---
 
 # Device states
+
+This article applies to Microsoft 365 Business Premium.
 
 Devices in the **Device actions** list (Admin home \> **Device actions**) can have the following states.
   

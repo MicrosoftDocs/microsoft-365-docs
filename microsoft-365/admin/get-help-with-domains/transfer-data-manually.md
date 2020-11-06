@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -43,14 +44,14 @@ Prepare to roll up your sleeves and block out a chunk of time on your calendar: 
 |Purchase the plan you want to move to.  <br/> |When you sign up, you specify the company name to use in the initial domain names:  *yourcompany*  .onmicrosoft.com,  *yourcompany*  -public.sharepoint.com, and  *yourcompany*  .sharepoint.com. You need to use a different  *yourcompany*  name than you did for any existing subscriptions.  <br/> > [!NOTE]>  It typically takes a minimum of several months after cancelling a subscription to release the initial domain names that use  *yourcompany*  from our systems. Even if you plan to save all your data from your old Microsoft 365 subscription, and cancel that subscription, the old  *yourcompany*  value is not immediately available for use in a new subscription.           |
 |Remove your custom domain from your old Microsoft 365 subscription.  <br/> | Follow the [required steps before you remove a domain](remove-a-domain.md) to remove the domain name from user email addresses and remove DNS records for email and Lync for the custom domain. If you host your public website on Microsoft 365, you'll also need to remove the CNAME record that points to it.  <br/> > [!IMPORTANT]>  After you remove the MX record that routes email to this custom domain, email will stop working until you have added the domain to your new account, set up the new MX record, and set up your users. When you remove the DNS records for Lync, Lync will stop working. And after you remove the CNAME record that points to your public website, it will not be available.           [Remove the domain](remove-a-domain.md) .  <br/> |
 |Set up your custom domain for your new subscription, and set up your users.  <br/> | Set up your new subscription, including creating the required DNS records for your custom domain.  <br/>  Create your users, with email addresses on your custom domain.  <br/> |
-|Transfer data from your old subscription to your new subscription.  <br/> | Sign in to both accounts in separate browser windows:  <br/>  Right-click the Internet Explorer icon, and open two InPrivate browser windows. You can use different credentials in the two windows to sign in on both accounts.  <br/> [Transfer administrative settings between subscriptions](#email) <br/> [Transfer team site structure and data](#transfer-team-site-structure-and-data) <br/> [Transfer a public website between subscriptions](#transfer-a-public-website-between-subscriptions) <br/> [Transfer administrative settings between subscriptions](#email) <br/> |
+|Transfer data from your old subscription to your new subscription.  <br/> | Sign in to both accounts in separate browser windows:  <br/>  Right-click your browser icon, and open two private browser windows. You can use different credentials in the two windows to sign in on both accounts.  <br/> [Transfer administrative settings between subscriptions](#email) <br/> [Transfer team site structure and data](#transfer-team-site-structure-and-data) <br/> [Transfer a public website between subscriptions](#transfer-a-public-website-between-subscriptions) <br/> [Transfer administrative settings between subscriptions](#email) <br/> |
 |Cancel the subscription for the plan you're done with by calling Microsoft Support for Microsoft 365.  <br/> | Verify that your new subscription is working and all data has been transferred.  <br/>  [Contact customer support](../contact-support-for-business-products.md) to cancel your old subscription.  <br/> |
 
 ## Transfer administrative settings between subscriptions
 
 Go to the following pages on each account, and set up the new account based on the old account's settings.
   
-If you are transferring data from Microsoft 365 to Microsoft 365 Midsize Business or Microsoft 365 Enterprise, the admin pages are structured differently. Watch a [Video: Introducing Microsoft 365 Enterprise](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx), and go to the following places to look at admin settings.
+If you are transferring data from Microsoft 365 to Microsoft 365 Midsize Business or Microsoft 365 Enterprise, the admin pages are structured differently. Watch a [Video: Introducing Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/admin/), and go to the following places to look at admin settings.
   
 For Microsoft 365 Enterprise and Microsoft 365 Midsize Business:
   
@@ -85,9 +86,9 @@ There are several ways to save or transfer team site data:
   
 - You can save the old site as a template and import the template into the new site.
 
-- To transfer documents, first manually recreate your hierarchy on the new site. Then you can open both SharePoint team sites at the same time, open both document libraries with Windows Explorer, and copy and paste the documents. See [Video: Copy or move library files by using Open with Explorer](https://support.office.com/article/c27bc6f3-7b38-4c29-b947-5d00c7153384.aspx).
+- To transfer documents, first manually recreate your hierarchy on the new site. Then you can open both SharePoint team sites at the same time, open both document libraries with Windows Explorer, and copy and paste the documents. See [Video: Copy or move library files by using Open with Explorer](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
 
-- To transfer list data, save a [list template](https://support.office.com/article/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393.aspx), and use the saved template to re-create the list on the new site.
+- To transfer list data, save a [list template](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393), and use the saved template to re-create the list on the new site.
 
 - To save a document library or list content from a SharePoint Online environment (OneDrive for Business or team sites) to file shares or to a local computer, see [Information about manual migration of SharePoint Online content](https://support.microsoft.com/kb/2783484).
 
@@ -95,8 +96,12 @@ There are several ways to save or transfer team site data:
 
 ### Email:
 
-Ask users to [move their email, contacts, tasks, and calendar information](https://support.office.com/article/0996ece3-57c6-49bc-977b-0d1892e2aacc.aspx) after you set up your new subscription. They can get to their old email by using their initial user name, such as sue@contoso.onmicrosoft.com.
+Ask users to [move their email, contacts, tasks, and calendar information](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc) after you set up your new subscription. They can get to their old email by using their initial user name, such as sue@contoso.onmicrosoft.com.
   
 ### OneDrive For Business data:
 
-Ask users to Copy/Sync [OneDrive for Business content to their computer](https://support.office.com/article/59b1de2b-519e-4d3a-8f45-51647cf291cd.aspx), and then add it back to their new subscription.
+Ask users to Copy/Sync [OneDrive for Business content to their computer](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd), and then add it back to their new subscription.
+
+### OneNote 
+
+Ask users to [Back up OneNote](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) and to [Restore notes from a backup](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) to their new subscriptions.

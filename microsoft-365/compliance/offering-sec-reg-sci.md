@@ -3,7 +3,7 @@ title: Securities and Exchange Commission - Regulation Systems Compliance and In
 description: The SCI rules apply to SCI entities, which include such self-regulatory organizations (SROs) as stock and options exchanges, registered clearing agencies, and alternative trading systems (ATSs).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -69,7 +69,3 @@ Financial organizations, or SCI entities, that are subject to this regulation ca
 - [Microsoft Financial Services](https://aka.ms/FinServ-Compliance)
 - [Microsoft and SEC Rule 17a-4](offering-SEC-17a-4.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf).

@@ -16,7 +16,9 @@ ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
-description: "Once you've finished setting up Office 365 Message Encryption (OME), you can customize the configuration of your deployment in several ways. For example, you can configure whether to enable one-time pass codes, display the Protect button in Outlook on the web, and more. The tasks in this article describe how."
+ms.custom:
+- seo-marvel-apr2020
+description: Once you've finished setting up Office 365 Message Encryption (OME), learn how to customize your deployment in several ways.
 ---
 
 # Manage Office 365 Message Encryption
@@ -107,7 +109,7 @@ The iOS mail app can't decrypt messages protected with Office 365 Message Encryp
   
 If you choose not to allow decrypted messages to be sent to iOS mail app users, users receive a message that states that they don't have the rights to view the message. By default, service-side decryption of email messages is not enabled.
   
-For more information, and for a view of the client experience, see [View encrypted messages on your iPhone or iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf).
+For more information, and for a view of the client experience, see [View encrypted messages on your iPhone or iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf).
   
 ### To manage whether iOS mail app users can view messages protected by Office 365 Message Encryption
   

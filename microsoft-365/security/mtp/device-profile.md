@@ -16,12 +16,15 @@ search.appverid: met150
 
 # Device profile page
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 The Microsoft 365 security portal provides you with device profile pages, so you can quickly assess the health and status of devices on your network.
 
 > [!IMPORTANT]
-> The device profile page may appear slightly different, depending on whether the device is enrolled in Microsoft Defender ATP, Azure ATP, or both.
+> The device profile page may appear slightly different, depending on whether the device is enrolled in Microsoft Defender for Endpoint, Microsoft Defender for Identity, or both.
 
-If the device is enrolled in Microsoft Defender ATP, you can also use the device profile page to perform some common security tasks.
+If the device is enrolled in Microsoft Defender for Endpoint, you can also use the device profile page to perform some common security tasks.
 
 ## Navigating the device profile page
 
@@ -33,7 +36,7 @@ The sidebar (1) lists basic details about the device.
 
 The main content area (2) contains tabs that you can toggle through to view different kinds of information about the device.
 
-If the device is enrolled in Microsoft Defender ATP, you will also see a list of response actions (3). Response actions allow you to perform common security-related tasks.
+If the device is enrolled in Microsoft Defender for Endpoint, you will also see a list of response actions (3). Response actions allow you to perform common security-related tasks.
 
 ## Sidebar
 
@@ -43,15 +46,15 @@ Beside the main content area of the device profile page is the sidebar.
 
 The sidebar lists the device's full name and exposure level. It also provides some important basic information in small subsections which can be toggled open or closed, such as:
 
-* **Tags** - Any Microsoft Defender ATP, Azure ATP, or custom tags associated with the device. Tags from Azure ATP are not editable.
-* **Security info** - Open incidents and active alerts. Devices enrolled in Microsoft Defender ATP will also display exposure level and risk level.
+* **Tags** - Any Microsoft Defender for Endpoint, Microsoft Defender for Identity, or custom tags associated with the device. Tags from Microsoft Defender for Identity are not editable.
+* **Security info** - Open incidents and active alerts. Devices enrolled in Microsoft Defender for Endpoint will also display exposure level and risk level.
 
 > [!TIP]
 > Exposure level relates to how much the device is complying with security recommendations, while risk level is calculated based on a number of factors, including the types and severity of active alerts.
 
-* **Device details** - Domain, OS, timestamp for when the device was first seen, IP addresses, resources. Devices enrolled in Microsoft Defender ATP also display health state. Devices enrolled in Azure ATP will display SAM name and a timestamp for when the device was first created.
+* **Device details** - Domain, OS, timestamp for when the device was first seen, IP addresses, resources. Devices enrolled in Microsoft Defender for Endpoint also display health state. Devices enrolled in Microsoft Defender for Identity will display SAM name and a timestamp for when the device was first created.
 * **Network activity** - Timestamps for the first time and last time the device was seen on the network.
-* **Directory data** (*only for devices enrolled in Azure ATP*) - [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) flags, [SPNs](https://docs.microsoft.com/windows/win32/ad/service-principal-names), and group memberships.
+* **Directory data** (*only for devices enrolled in Microsoft Defender for Identity*) - [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) flags, [SPNs](https://docs.microsoft.com/windows/win32/ad/service-principal-names), and group memberships.
 
 ## Response actions
 
@@ -60,13 +63,13 @@ Response actions offer a quick way to defend against and analyze threats.
 ![Image of action bar for device profile](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
-> * [Response actions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) are only available if the device is enrolled in Microsoft Defender ATP.
-> * Devices that are enrolled in Microsoft Defender ATP may display different numbers of response actions, based on the device's OS and version number.
+> * [Response actions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) are only available if the device is enrolled in Microsoft Defender for Endpoint.
+> * Devices that are enrolled in Microsoft Defender for Endpoint may display different numbers of response actions, based on the device's OS and version number.
 
 Actions available on the device profile page include:
 
 * **Manage tags** - Updates custom tags you have applied to this device.
-* **Isolate device** - Isolates the device from your organization's network while keeping it connected to Microsoft Defender Advanced Threat Protection. You can choose to allow Outlook, Teams, and Skype for Business to run while the device is isolated, for communication purposes.
+* **Isolate device** - Isolates the device from your organization's network while keeping it connected to Microsoft Defender for Endpoint. You can choose to allow Outlook, Teams, and Skype for Business to run while the device is isolated, for communication purposes.
 * **Action center** - View the status of submitted actions. Only available if another action has already been selected.
 * **Restrict app execution** - Prevents applications that are not signed by Microsoft from running.
 * **Run antivirus scan** - Updates Windows Defender Antivirus definitions and immediately runs an antivirus scan. Choose between Quick scan or Full scan.
@@ -79,7 +82,7 @@ Actions available on the device profile page include:
 
 The device profile tabs allow you to toggle through an overview of security details about the device, and tables containing a list of alerts.
 
-Devices enrolled in Microsoft Defender ATP will also display tabs that feature a timeline, a list of security recommendations, a software inventory, a list of discovered vulnerabilities, and missing KBs (security updates).
+Devices enrolled in Microsoft Defender for Endpoint will also display tabs that feature a timeline, a list of security recommendations, a software inventory, a list of discovered vulnerabilities, and missing KBs (security updates).
 
 ### Overview tab
 
@@ -89,11 +92,11 @@ The default tab is **Overview**. It provides a quick look at the most important 
 
 Here, you can get a quick look at the device's active alerts, and any currently logged on users.
 
-If the device is enrolled in Microsoft Defender ATP, you will also see the device's risk level and any available data on security assessments. The security assessments describe the device's exposure level, provide security recommendations, and list affected software and discovered vulnerabilities.
+If the device is enrolled in Microsoft Defender for Endpoint, you will also see the device's risk level and any available data on security assessments. The security assessments describe the device's exposure level, provide security recommendations, and list affected software and discovered vulnerabilities.
 
 ### Alerts tab
 
-The **Alerts** tab contains a list of alerts that have been raised on the device, from both Azure ATP and Microsoft Defender ATP.
+The **Alerts** tab contains a list of alerts that have been raised on the device, from both Microsoft Defender for Identity and Microsoft Defender for Endpoint.
 
 ![Image of alerts tab for device profile](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
@@ -171,7 +174,7 @@ Selecting an item will open a flyout that links to the update.
 
 ## Related topics
 
-* [Microsoft Threat Protection overview](microsoft-threat-protection.md)
-* [Turn on Microsoft Threat Protection](mtp-enable.md)
+* [Microsoft 365 Defender overview](microsoft-threat-protection.md)
+* [Turn on Microsoft 365 Defender](mtp-enable.md)
 * [Investigate entities on devices, using live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
 * [Automated investigation and response (AIR) in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)

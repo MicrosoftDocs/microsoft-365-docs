@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -38,12 +39,12 @@ The **Mailbox usage report** provides information about users with a user mailbo
 
 You can get a view into your organization's **Mailbox usage** by looking at the **Mailbox**, **Storage** and **Quota** charts. 
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |The **Mailbox usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).  <br/> |
 |2.  <br/> |The data in each report usually covers up to the last 24 to 48 hours.  <br/> |
 |3.  <br/> |The Mailbox chart shows you the total number of user mailbox in your organization, and the total number that are active on any given day of the reporting period. A user mailbox is considered active if it had an email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity.  <br/> |
-|4.  <br/> |The **Storage** chart shows you amount of storage used in your organization. Storage Chart doesn't include archive mailboxes. For more information about auto-expanding archiving, see [Overview of unlimited archiving in Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/unlimited-archiving).<br/> |
+|4.  <br/> |The **Storage** chart shows you amount of storage used in your organization. Storage Chart doesn't include archive mailboxes. For more information about auto-expanding archiving, see [Overview of unlimited archiving in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/unlimited-archiving).<br/> |
 |5.  <br/> | The **Quota** chart shows you the number of user mailboxes in each quota category. There are four quota categories:  <br/>  Good - number of users whose storage used is below the issue warning quota.  <br/>  Warning - number of users whose storage used is at or above issue warning, but below prohibit send quota  <br/>  Can't send - number of users whose storage used is at or above the prohibit send quota, but below prohibit send/receive quota  <br/>  Can't send/receive - number of users whose storage used is at or above prohibit send/receive quota  <br/> |
 |6.  <br/> | On the **Mailbox** chart, the Y axis is the count of user mailboxes.  <br/>  On the **Storage** chart, the Y axis is the amount of storage being used by user mailboxes in your organization.  <br/>  On the **Quota** chart, the Y axis is the number of user mailboxes in each storage quota.  <br/>  The X axis on the Mailbox and Storage charts is the selected date range for this specific report.  <br/>  The X axis on the Quota charts is the quota category.  <br/> |
 |7.  <br/> |You can filter charts you see by selecting an item in the legend.  <br/> |

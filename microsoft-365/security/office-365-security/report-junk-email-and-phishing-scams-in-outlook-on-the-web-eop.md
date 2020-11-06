@@ -1,13 +1,13 @@
 ---
-title: "Report junk email and phishing scams in Outlook on the web "
+title: Report junk and phishing email in Outlook on the web
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,15 @@ search.appverid:
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
-description: "Microsoft 365 users with Exchange Online mailboxes can use Outlook on the web (Outlook Web App) to submit spam, non-spam, and phishing messages to Microsoft for analysis."
+description: "Admins can learn about the built-in junk, not junk, and phishing email reporting options in Outlook on the web (Outlook Web App) in Exchange Online, and how to disable these reporting options for users."
 ---
 
-# Report junk and phishing email in Outlook on the web in Office 365
+# Report junk and phishing email in Outlook on the web in Exchange Online
 
-If you're a Microsoft 365 customer with Exchange Online mailboxes, you can use the built-in reporting options in Outlook on the web (formerly known as Outlook Web App) to submit false positives (good email marked as spam), false negatives (bad email allowed) and phishing messages to Exchange Online Protection (EOP).
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+In Microsoft 365 organizations with mailboxes in Exchange Online, you can use the built-in reporting options in Outlook on the web (formerly known as Outlook Web App) to submit false positives (good email marked as spam), false negatives (bad email allowed) and phishing messages to Exchange Online Protection (EOP).
 
 ## What do you need to know before you begin?
 
@@ -28,7 +31,9 @@ If you're a Microsoft 365 customer with Exchange Online mailboxes, you can use t
 
 - Admins can disable or enable the ability for users to report messages to Microsoft in Outlook on the web. For details, see the [Disable or enable junk email reporting in Outlook on the web](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) section later in this topic.
 
-- For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft in Office 365](report-junk-email-messages-to-microsoft.md).
+- You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).
+
+- For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## Report spam and phishing messages in Outlook on the web
 
@@ -42,9 +47,9 @@ If you're a Microsoft 365 customer with Exchange Online mailboxes, you can use t
 
 2. In the dialog that appears, click **Report**. If you change your mind, click **Don't Report**.
 
-   ![Report as junk dialog](../../media/owa-report-as-junk-dialog.png)
-
-   ![Report as phishing dialog](../../media/owa-report-as-phishing-dialog.png)
+   |Junk|Phishing|
+   |:---:|:---:|
+   |![Report as junk dialog](../../media/owa-report-as-junk-dialog.png)|![Report as phishing dialog](../../media/owa-report-as-phishing-dialog.png)|
 
 3. The selected messages will be sent to Microsoft for analysis. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
 
@@ -60,9 +65,9 @@ If you're a Microsoft 365 customer with Exchange Online mailboxes, you can use t
 
 2. In the dialog that appears, read the information and click **Report**. If you change your mind, click **Don't Report**.
 
-   ![Report as not junk dialog](../../media/owa-report-as-not-junk-dialog.png)
-
-   ![Report as phishing dialog](../../media/owa-report-as-phishing-dialog.png)
+   |Not Junk|Phishing|
+   |:---:|:---:|
+   |![Report as not junk dialog](../../media/owa-report-as-not-junk-dialog.png)|![Report as phishing dialog](../../media/owa-report-as-phishing-dialog.png)|
 
 3. The selected messages will be sent to Microsoft for analysis. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
 
@@ -72,7 +77,7 @@ By default, users can report spam false positives, false negatives, and phishing
 
 ### What do you need to know before you begin?
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can perform these procedures. Specifically you need the **Recipient Policies** or **Mail Recipients** roles in Exchange Online, which are assigned to the **Organization Management** and **Recipient Management** role groups by default. For more information about role groups in Exchange Online, see [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).
 
@@ -106,7 +111,7 @@ By default, users can report spam false positives, false negatives, and phishing
    Set-OwaMailboxPolicy -Identity "Contoso Managers" -ReportJunkEmailEnabled $true
    ```
 
-For detailed syntax and parameter information, see [Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/get-owamailboxpolicy) and [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy).
+For detailed syntax and parameter information, see [Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/get-owamailboxpolicy) and [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy).
 
 ### How do you know this worked?
 

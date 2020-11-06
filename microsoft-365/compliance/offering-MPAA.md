@@ -3,7 +3,7 @@ title: Motion Picture Association of America (MPAA)
 description: Azure successfully completed a formal assessment by the Motion Picture Association of America.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -30,8 +30,6 @@ The MPAA assessment covers 48 security topics in the Common Guidelines, and an a
 
 The formal assessment of Azure compliance means that companies who do business with major studios can use Azure to help reduce the IT costs that are normally associated with the secure creation, management, storage, and distribution of content — all while complying with MPAA requirements. Azure Media Services, Storage, Virtual Networks, and more than 30 other services provide a content workflow engine in the cloud that is more secure and scalable than traditional on-premises production processes and more effective at protecting media assets downstream.
 
-Learn about the benefits of MPAA on the Microsoft Cloud: [Download the MPAA backgrounder](https://aka.ms/mpaa-backgrounder)
-
 ## Microsoft in-scope cloud services
 
 - [Azure complies with MPAA best-practices guidelines](https://aka.ms/AzureCompliance)
@@ -57,6 +55,10 @@ MPAA guidelines provide major studio vendors and partners with a set of best pra
 
 Production facilities, visual effects houses, and other service partners should work with their executive producers and directors to understand the new security requirements, and whether a formal MPAA audit is necessary. Compliance with MPAA guidelines is voluntary, but Microsoft elected to carry out an independent assessment so that media customers can be confident in the content security and protection capabilities of Azure. However, Azure does not manage the individual cloud environments of customers, which may be subject to additional MPAA regulation that is best addressed by your own audit of your environment.
 
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
+
 ## Resources
 
 - [Motion Picture Association of America](https://www.mpaa.org/)
@@ -65,7 +67,3 @@ Production facilities, visual effects houses, and other service partners should 
 - [CSA STAR Azure Self-Assessment](https://www.microsoft.com/TrustCenter/Compliance/CSA-self-assessment)
 - [Azure Responses to CSA CAIQ v3.0.1](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/7/A/1/7A19B051-3399-4222-BEF1-E6E3E0A17961/MPAA_Backgrounder.pdf).

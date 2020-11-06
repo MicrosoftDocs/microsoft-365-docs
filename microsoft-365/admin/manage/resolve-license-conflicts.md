@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,7 +12,8 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,6 +24,14 @@ description: "Learn how to resolve license conflicts with your Microsoft 365 for
 ---
 
 # Resolve license conflicts
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 We recommend that you buy the licenses that you need for your subscription before you create new users. That way, a license can be assigned to new users as user accounts are created. If you have already assigned all of your licenses to users, but some of the licenses have expired, or you try to remove a license that is already assigned to a user, you will have license conflicts. For more information, see [Remove licenses from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md).
   
@@ -46,7 +55,6 @@ We recommend that you buy the licenses that you need for your subscription befor
 
 ::: moniker-end
 
-
 2. Check the **Status** column for information about the conflict. If there's a conflict, you'll see a warning message, that says one or more users need a valid license.
 
     > [!NOTE]
@@ -56,7 +64,7 @@ We recommend that you buy the licenses that you need for your subscription befor
 
 You can resolve license conflicts by either [buying more licenses](../../commerce/licenses/buy-licenses.md) or by [removing licenses from users who no longer need them](remove-licenses-from-users.md). You can optionally [delete a user account to free a license](../add-users/delete-a-user.md).
   
-## Related articles 
+## Related articles
 
 [Assign licenses to users](assign-licenses-to-users.md)
   

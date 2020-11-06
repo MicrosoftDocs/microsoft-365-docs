@@ -1,11 +1,11 @@
 ---
-title: "Services for non-customers sending mail to Office 365"
+title: "Services for non-customers sending mail to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 5/2/2016
+ms.date:
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,24 +18,30 @@ ms.collection:
 description: "To help maintain user trust in the use of email, Microsoft has put in place various policies and technologies to help protect our users."
 ---
 
-# Services for non-customers sending mail to Office 365
+# Services for non-customers sending mail to Microsoft 365
 
-Email abuse, junk email, and fraudulent emails (phishing) continue to burden the entire email ecosystem. To help maintain user trust in the use of email, Microsoft has put in place various policies and technologies to help protect our users. However, Microsoft understands that legitimate email should not be negatively affected. Therefore, we have established a suite of services to help senders improve their ability to deliver email to Microsoft 365 users by proactively managing their sending reputation.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+Email abuse, junk email, and fraudulent emails (phishing) continue to burden the entire email ecosystem. To help maintain user trust in the use of email, Microsoft has put various policies and technologies in place to help protect our users. However, Microsoft understands that legitimate email should not be negatively affected. Therefore, we have established a suite of services to help senders improve their ability to deliver email to Microsoft 365 users by proactively managing their sending reputation.
 
 This overview provides information about benefits we provide to your organization even if you aren't a customer.
 
 ## Sender solutions
 
-|**Service**|**Benefits**|
-|:-----|:-----|
-|This online help content| Provides:  <br/>  A starting point for any questions related to delivering communications to EOP users  <br/>  Includes a simple online guide with our policies and requirements  <br/>  An overview of the junk email filters and authentication technologies employed by Microsoft|
+****
+
+|Service|Benefits|
+|---|---|
+|This online help content|Provides: <br/> A starting point for any questions related to delivering communications to EOP users. <br/><br/> Includes a simple online guide with our policies and requirements. <br/><br/> An overview of the junk email filters and authentication technologies employed by Microsoft.|
 |[Microsoft support](#microsoft-support)|Provides self-help and escalation support for delivery issues.|
 |[Anti-Spam IP Delist Portal](#anti-spam-ip-delist-portal)|A tool to submit IP delist request. Before submitting this request it is the sender's responsibility to ensure that any further mail originating from the IP in question is not abusive or malicious.|
-|[Abuse and spam reporting for junk email originating from Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Keeps spam and other unwanted mail from being sent from Exchange Online and cluttering up the Internet and your mail system.|
+|[Abuse and spam reporting for junk email originating from Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Keeps spam and other unwanted mail from being sent from Exchange Online and cluttering up the internet and your mail system.|
+|
 
 ## Microsoft support
 
-Microsoft offers several support options for people having trouble sending mail to Microsoft 365 inboxes. We recommend that you:
+Microsoft offers several support options for people having trouble sending mail to Microsoft 365 recipients. We recommend that you:
 
 - Follow the instructions in any non-delivery report you receive.
 

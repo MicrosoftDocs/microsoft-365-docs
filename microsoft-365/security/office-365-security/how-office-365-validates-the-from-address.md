@@ -1,5 +1,5 @@
 ---
-title: "How Microsoft 365 validates the From address to prevent phishing"
+title: "How EOP validates the From address to prevent phishing"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,16 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: "Lear about the requirements on From email addresses for inbound messages in Microsoft 365. As of November 2017, the service now requires RFC-compliant From addresses to help prevent spoofing."
+description: "Admins can learn about the types of email addresses that are accepted or rejected by Exchange Online Protection (EOP) and Outlook.com to help prevent phishing."
+ms.custom: seo-marvel-apr2020
 ---
 
-# How Microsoft 365 validates the From address to prevent phishing
+# How EOP validates the From address to prevent phishing
 
-Microsoft 365 email accounts receive an increasingly large number of phishing attacks. In addition to using [spoofed (forged) sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Microsoft 365 and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this topic. This enforcement was enabled in November 2017.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+Phishing attacks are a constant threat to any email organization. In addition to using [spoofed (forged) sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Exchange Online Protection (EOP) and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this topic. This enforcement was enabled in November 2017.
 
 **Notes**:
 

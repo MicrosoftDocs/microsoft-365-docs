@@ -15,15 +15,19 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
-description: "Summary: Learn about the uses for isolated SharePoint Online team sites."
+description: Learn about isolated SharePoint Online team sites, including uses, requirements, and features they can be used with.
 ---
 
 # Isolated SharePoint Online team sites
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
  **Summary:** Learn about the uses for isolated SharePoint Online team sites.
   
-SharePoint Online team sites are an easy way to quickly create a space for collaboration of notes, documents, articles, a calendar, and other resources in Microsoft Office 365. SharePoint Online team sites are based on an Microsoft 365 group and have a simplified administration model to allow open collaboration with a private set of group members or the entire organization. A default SharePoint Online team site allows members of the Microsoft 365 group to invite other users and control permissions settings.
+SharePoint Online team sites are an easy way to quickly create a space for collaboration of notes, documents, articles, a calendar, and other resources in Microsoft Office 365. SharePoint Online team sites are based on a Microsoft 365 group and have a simplified administration model to allow open collaboration with a private set of group members or the entire organization. A default SharePoint Online team site allows members of the Microsoft 365 group to invite other users and control permissions settings.
   
 However, in some cases, you want to create a SharePoint Online team site for collaboration where the permissions of that site are more tightly controlled through group membership and SharePoint Online permission levels, which are only managed by SharePoint administrators. We call this an isolated site, which is isolated to the set of users that are either collaborating, viewing its contents, or administering the site. You might need an isolated site for the following:
   
@@ -57,7 +61,7 @@ To try out an isolated SharePoint Online team site in a trial subscription, see 
   
 When you are ready to deploy an isolated SharePoint Online team site in production, see the step-by-step design considerations in [Design an isolated SharePoint Online team site](design-an-isolated-sharepoint-online-team-site.md).
   
-## See Also
+## Related topics
 
 [Design an isolated SharePoint Online team site](design-an-isolated-sharepoint-online-team-site.md)
   

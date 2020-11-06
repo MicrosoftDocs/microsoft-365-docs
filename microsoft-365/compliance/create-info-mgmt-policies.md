@@ -19,7 +19,9 @@ ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-description: "Information management policies enable your organization to control how long to retain content, to audit what people do with content, and to add barcodes or labels to documents. A policy can help enforce compliance with legal and governmental regulations or internal business processes. As an administrator, you can set up a policy to control how to track documents and how long to retain documents."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to set up an information management policy to control how long information is kept and track who is using the information.
 ---
 
 # Create and apply information management policies

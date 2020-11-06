@@ -3,7 +3,7 @@ title: My Number Act (Japan)
 description: Microsoft business cloud services comply with My Number Act standards for protecting the privacy of My Number data.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -28,11 +28,11 @@ The Personal Information Protection Commission (PPC), which acts as the centrali
 
 To help our Japanese customers protect the privacy of personal data, Microsoft contractually commits through the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) that our in-scope business cloud services have implemented the technical and organizational security safeguards that help our customers comply with the My Number Act. This means that customers in Japan can deploy Microsoft business cloud services with the confidence that they can comply with Japanese legislative requirements.
 
-The [Q\&A](https://www.ppc.go.jp/legal/policy/faq/) (Japanese) published by the Personal Information Protection Commission (PPC) sets forth guidelines for the appropriate handling and protection of personal information. It provides that a third party is not construed as handling personal data if the third party stipulates in its agreement that (a) it does not do so, and (b) it establishes a proper access control system. The My Number Act specifies obligations when data is transferred to a third party, but section [Q3-12](https://www.ppc.go.jp/legal/policy/faq/) (Japanese) of the PPC Q\&A explains that these do not apply if the third party does not "handle" — that is, have standing access to — personal data.
+The [Q\&A](https://www.ppc.go.jp/legal/policy/faq/) (Japanese) published by the Personal Information Protection Commission (PPC) sets forth guidelines for the appropriate handling and protection of personal information. It provides that a third party is not construed as handling personal data if the third party stipulates in its agreement that (a) it does not do so, and (b) it establishes a proper access control system. The My Number Act specifies obligations when data is transferred to a third party, but section [Q3-12](https://www.ppc.go.jp/legal/policy/faq/) (Japanese) of the PPC Q\&A explains that these do not apply if the third party does not 'handle' — that is, have standing access to — personal data.
 
 Microsoft business cloud services address those requirements in the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31), which stipulate that the ownership of and responsibility for customer data that contains My Number data lie with our customers, not Microsoft. The customer, therefore, must have appropriate controls in place to protect My Number data contained in customer data.
 
-Because Microsoft does not have standing access to My Number data stored in its cloud services, an "outsourcing" contract for handling My Number data is not required. If a customer wants Microsoft to have access to customer data that contains My Number data, the customer must create an additional outsourcing contract with Microsoft for every case before making such a request.
+Because Microsoft does not have standing access to My Number data stored in its cloud services, an 'outsourcing' contract for handling My Number data is not required. If a customer wants Microsoft to have access to customer data that contains My Number data, the customer must create an additional outsourcing contract with Microsoft for every case before making such a request.
 
 The terms also state that Microsoft commits to use customer data only to provides services to the customer — not for any advertising or similar commercial purposes — and that Microsoft has robust access control systems in place.
 
@@ -72,7 +72,3 @@ Therefore, Microsoft business cloud services support My Number Act requirements 
 - [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
 - [Privacy considerations in the cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/0/E/C/0EC14DDA-6041-4841-A180-199870B136C4/MyNumberAct-Compliance.pdf).

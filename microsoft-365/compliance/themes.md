@@ -1,5 +1,5 @@
 ---
-title: "Themes"
+title: Themes - Data investigations
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,11 +15,11 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: ""
+description: During a data investigation, use Themes to organize documents by finding common ideas or concepts.
+ms.custom: seo-marvel-mar2020
 ---
 
-# Themes
+# Themes in Data Investigations (preview)
 
 When someone composes a document, they do not choose words randomly; they are trying to convey some ideas or concepts, and the words are chosen accordingly. Themes modules clusters documents that discuss similar subject matters so that reviewers can be more efficient in going through documents.
 

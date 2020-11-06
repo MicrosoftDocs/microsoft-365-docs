@@ -1,5 +1,5 @@
 ---
-title: "Near duplicate detection"
+title: Near duplicate detection - Data investigation
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,10 +13,9 @@ localization_priority: Normal
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
-- MET150
-ms.assetid: 
-
-description: ""
+- MET150 
+description: "When managing data investigations, use near duplicate detection to group textually similar documents when analyzing evidence in Data Investigations (preview)."
+ms.custom: seo-marvel-mar2020
 ---
 
 # Near duplicate detection

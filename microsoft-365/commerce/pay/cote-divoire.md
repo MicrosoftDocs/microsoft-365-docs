@@ -4,12 +4,13 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 description: Learn where to send the payment for your subscription.
 ROBOTS: NOINDEX, NOFOLLOW
 ---                                

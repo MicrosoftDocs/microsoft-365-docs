@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -120,8 +121,6 @@ To complete setting up your domain with Microsoft, you change your domain's NS r
 |:-----|:-----|
 |**Third empty row** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Fourth empty row** <br/> |ns4.bdm.microsoftonline.com  <br/> |
-   
-    ![Bluehost-BP-Redelegate-1-3-3](../../media/480b32bb-af27-40a5-90c5-5617ed02bb41.png)
   
 4. To add the fourth Nameserver record, select **Add Row** again, and create a record using the values from the last row of the above table. 
     

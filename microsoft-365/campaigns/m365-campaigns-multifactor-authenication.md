@@ -3,7 +3,7 @@ title: "Set up multifactor authentication"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
-author: samanro
+author: sirkkuw
 manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management 
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven

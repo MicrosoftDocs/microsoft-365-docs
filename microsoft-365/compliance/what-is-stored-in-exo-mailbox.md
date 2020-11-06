@@ -27,7 +27,7 @@ The following table lists the apps that either stores or associates data with a 
 
 |Microsoft 365 app|Description|
 |:---------|:---------|
-|Forms|Forms (stored as a PDF file) and responses to a form (stored in a CSV file) are attached to email messages and stored in a hidden folder in the mailbox of the user who created the form. When you export content from Forms in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following globally unique identified (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
+|Forms|Forms and responses to a form are stored in files that are attached to email messages and stored in a hidden folder in the mailbox of the user who created the form. Forms created before April 2020 are stored as a PDF file. Forms created after 2020 are stored as a JSON file.  Responses to a form are stored in a CSV file. When you export content from Forms in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following globally unique identified (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
 |Microsoft 365 Groups|Email messages, calendar items, contacts (People), notes, and tasks are stored in the mailbox that's associated with a Microsoft 365 group.|
 |Outlook/Exchange Online|Email messages, calendar items, contacts (People), notes, and tasks are stored in a user's mailbox.|
 |People|Contacts in the People app (which are the same contacts as the ones accessible in Outlook) are stored in a user's mailbox.|
@@ -37,6 +37,7 @@ The following table lists the apps that either stores or associates data with a 
 |Tasks|Tasks in the Tasks app (which are the same tasks as the ones accessible in Outlook) are stored in a user's mailbox.|
 |Teams|Conversations that are part of a Teams channel are associated with the Teams mailbox. Conversations that are part of the Chat list in Teams (also called *1 x N chats*) are associated with the mailbox of the users who participate in the chat. Also, summary information for meetings and calls in a Teams channel are associated with mailboxes of users who dialed into the meeting or call. So when searching for Teams content, you would search the Teams mailbox for content in channel conversations and search user mailboxes for content in 1 x N chats.| 
 |To-Do|Tasks (called *to-dos*, which are saved in to-do lists) in the To-Do app are stored in a user's mailbox.|
+|Yammer|Conversations and comments within a Yammer community are associated with the Microsoft 365 Group mailbox, as well as the user mailbox of the author and any named recipients (@mentioned or cc'ed users). Private messages sent outside of a Yammer community are stored in the mailbox of the users who participate in the private message.|  
 ||||
 
 > [!NOTE]

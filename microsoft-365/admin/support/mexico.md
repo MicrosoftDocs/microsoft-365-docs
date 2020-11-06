@@ -4,11 +4,12 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Learn how to contact support for your country or region.
 ROBOTS: NOINDEX, NOFOLLOW
@@ -19,9 +20,11 @@ ROBOTS: NOINDEX, NOFOLLOW
 [Find another country or region](../contact-support-for-business-products.md).
 
 ## Phone number
-01 800 563 0605
+
+800 563 0605
 
 ## Hours
+
 ### Billing Support:
 
 Spanish: Mon-Fri 9 AM-5 PM
@@ -30,6 +33,6 @@ Spanish: Mon-Fri 9 AM-5 PM
 
 Spanish: 24 hours a day, 7 days a week
 
-Alternative Phone Number: 01 55 4738 6567
+Alternative Phone Number: 55 4738 6567
 
 Local call charges apply

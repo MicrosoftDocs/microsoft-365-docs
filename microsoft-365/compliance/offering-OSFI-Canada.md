@@ -3,7 +3,7 @@ title: Office of the Superintendent of Financial Institutions (OSFI) Canada
 description: Microsoft guidance to help financial institutions in Canada with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ titleSuffix: Microsoft Compliance
 
 The [Office of the Superintendent of Financial Institutions](https://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (OSFI) is an independent agency of the Government of Canada responsible for the prudential regulation and supervision of federally regulated financial institutions and pension plans in Canada.
 
-In its oversight role, OSFI published the B-10 Guidelines for [Outsourcing of Business Activities, Functions, and Processes](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx). They established “prudent practices, procedures, or standards” for federally regulated financial institutions to evaluate and manage the risk associated with outsourcing their business to a service provider. A subsequent OSFI memorandum, [New technology-based outsourcing requirements](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx), reminded these institutions that the B-10 Guidelines remain current and that they must meet OSFI expectations for material outsourcing arrangements.
+In its oversight role, OSFI published the B-10 Guidelines for [Outsourcing of Business Activities, Functions, and Processes](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx). They established 'prudent practices, procedures, or standards' for federally regulated financial institutions to evaluate and manage the risk associated with outsourcing their business to a service provider. A subsequent OSFI memorandum, [New technology-based outsourcing requirements](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx), reminded these institutions that the B-10 Guidelines remain current and that they must meet OSFI expectations for material outsourcing arrangements.
 
 In addition, the use of cloud services by financial institutions must comply with the [Personal Information Protection and Electronic Documents Act](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA), and in some instances, provincial data privacy laws.
 
@@ -62,15 +62,14 @@ The [OSFI B-10 Guidelines](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/g
 
 Yes, but only if the outsourcing arrangement is a material outsourcing or if it involves any transfer of personal information to the cloud service provider.
 
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
+
 ## Resources
 
-- [Microsoft and Canadian privacy laws](https://aka.ms/CanadianPrivacyLaws-Compliance)
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - [Microsoft business cloud services and financial services](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://aka.ms/FFIEC-CSDT)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/6/9/9/699E9434-6376-4F2A-A666-1F10D715B898/OFSI-Compliance.pdf).

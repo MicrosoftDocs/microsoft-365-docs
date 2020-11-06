@@ -27,7 +27,7 @@ This article describes how to close, reopen, and delete Core eDiscovery cases in
 
 When the legal case or investigation supported by a Core eDiscovery case is completed, you can close the case. Here's what happens when you close a case:
   
-- If the case contains any content locations on eDiscovery hold, those holds will be turned off. This might result in content being permanently deleted or purged, either by the user or by an automated process, such as a deletion policy.
+- If the case contains any content locations on eDiscovery hold, those holds will be turned off. After the hold is turned off, a 30-day grace period (called a *delay hold*) is applied to content locations that were on hold. This helps prevent content from being immediately deleted and provides admins the opportunity to search for and restore content before it may be permanently deleted after the delay hold period expires. For more information, see [Removing content locations from an eDiscovery hold](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
 
 - Closing a case only turns off the holds that are associated with that case. If other holds are placed on a content location (such as a Litigation Hold, a retention policy, or a hold from a different Core eDiscovery case) those holds will still be maintained.
 
@@ -37,7 +37,7 @@ When the legal case or investigation supported by a Core eDiscovery case is comp
 
 To close a case:
   
-1. In the Microsoft 365 compliance enter, click **eDiscovery** > **Core** to display the list of Core eDiscovery cases in your organization.
+1. In the Microsoft 365 compliance center, click **eDiscovery** > **Core** to display the list of Core eDiscovery cases in your organization.
 
 2. Click the name of the case that you want to close.
 
@@ -61,7 +61,7 @@ To close a case:
 
 When you reopen a case, any eDiscovery holds that were in place when the case was closed won't be automatically reinstated. After the case is reopened, you'll have to go to the **Holds** page and turn on the previous holds. To turn on a hold, select it to display the flyout page, and then set the **Status** toggle to **On**.
   
-1. In the Microsoft 365 compliance enter, click **eDiscovery** > **Core** to display the list of Core eDiscovery cases in your organization.
+1. In the Microsoft 365 compliance center, click **eDiscovery** > **Core** to display the list of Core eDiscovery cases in your organization.
 
 2. Click the name of the case that you want to reopen.
 
@@ -97,7 +97,7 @@ To delete an eDiscovery hold:
 
 To delete a case:
 
-1. In the Microsoft 365 compliance enter, click **eDiscovery** > **Core** to display the list of Core eDiscovery cases in your organization.
+1. In the Microsoft 365 compliance center, click **eDiscovery** > **Core** to display the list of Core eDiscovery cases in your organization.
 
 2. Click the name of the case that you want to delete.
 

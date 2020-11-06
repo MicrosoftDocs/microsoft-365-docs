@@ -17,9 +17,9 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: 
+ms.custom: seo-marvel-apr2020
 ms.assetid:
-description: "Learn how to modify or create new sensitive information types for GDPR."
+description: Learn how to modify or create new Office 365 sensitive information types for General Data Protection Regulations (GDPR).
 ---
 # Customize or create a new sensitive information type
 
@@ -67,7 +67,7 @@ To customize a sensitive information type:
 
 7.  Upload the new sensitive information type.
 
-8.  Recrawl your content to identify the sensitive information. See [Manually request crawling and re-indexing of a site](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E).
+8.  Recrawl your content to identify the sensitive information. See [Manually request crawling and re-indexing of a site](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
 ## Example: modify the 'EU Debit Card Number' sensitive information type
 
@@ -141,11 +141,11 @@ Use these resources to formulate and optimize queries using KQL:
 
 - [Run a Content Search](content-search.md)
 
-Content Search provides another resource to help you develop KQL queries and sensitive information types — keywords. Why use the keyword list? You can get statistics that show how many items match each keyword. This can help you quickly identify which keywords are the most (and least) effective. For more information about search statistics, see [View keyword statistics for Content Search results](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
+Content Search provides another resource to help you develop KQL queries and sensitive information types — keywords. Why use the keyword list? You can get statistics that show how many items match each keyword. This can help you quickly identify which keywords are the most (and least) effective. For more information about search statistics, see [View keyword statistics for Content Search results](https://docs.microsoft.com/microsoft-365/compliance/view-keyword-statistics-for-content-search).
 
 Keywords on each row are connected by the OR operator in the search query that's created. You can also use a keyword phrase (surrounded by parentheses) in a row.
 
-For more information, see [Keyword queries and search conditions for Content Search](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3).
+For more information, see [Keyword queries and search conditions for Content Search](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions).
 
 ### Example—Using Content Search to identify email addresses
 
@@ -159,7 +159,7 @@ KQL and keywords can't be used together. Use these tools separately to hone your
 
 Notes:
 
--   You can use NEAR and ONEAR for proximity searches.
+-   You can use NEAR for proximity searches.
 
 -   Unfortunately, KQL doesn't support queries with the Regex Class (ex: IdRef="Regex\_email\_address")
 

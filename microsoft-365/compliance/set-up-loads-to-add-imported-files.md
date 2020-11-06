@@ -15,8 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: "Review the steps to add imported files to the last defined load, or batch, of files before performing Relevance training in Advanced eDiscovery. 
-"
+description: "Review the steps to add imported files to the last defined load, or batch, of files before performing Relevance training in Advanced eDiscovery."
 ---
 
 # Set up loads to add imported files in Advanced eDiscovery (classic)

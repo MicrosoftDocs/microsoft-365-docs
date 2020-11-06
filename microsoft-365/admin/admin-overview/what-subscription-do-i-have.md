@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,30 +14,27 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
+ms.custom: 
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
-description: "Learn to verify which subscriptions your organization has by going to the Subscriptions page."
-ms.custom: okr_SMB
+description: "Learn to verify which subscriptions your organization has by going to the Your products page."
 ---
 
 # What subscription do I have?
 
 If you're an admin, you can verify which subscriptions your organization has by going to the admin center.
   
- **Not an admin?** See [What Microsoft 365 for business product or license do I have?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
+ **Not an admin?** See [What Microsoft 365 for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
-
-2. Your subscriptions are displayed on the **Products & services** page, together with the subscription name, information about the subscription, and its status. To see a condensed view, select **Table view**.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+2. On the **Products** tab, you see all your subscriptions. Each subscription line includes information about licenses, subscription status, and billing.
+3. If you want to change the columns that appear in the list, select **Choose columns**. Change the selection of columns, then select **Save**.
+4. To see more details for a single subscription, select that subscription.
 
 ::: moniker-end
   

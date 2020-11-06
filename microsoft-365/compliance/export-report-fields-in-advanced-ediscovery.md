@@ -14,7 +14,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
-description: "Describes all the fields that are included in the Export reports for Advanced eDiscovery."
+description: This article describes all of the fields that are included in the Export reports for Advanced eDiscovery.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Export report fields in Advanced eDiscovery (classic)

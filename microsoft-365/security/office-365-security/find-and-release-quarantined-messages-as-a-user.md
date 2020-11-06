@@ -1,5 +1,5 @@
 ---
-title: "Find and release quarantined messages as a user"
+title: Find and release quarantined messages as a user
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: Consumer/IW
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
@@ -16,24 +16,29 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: "As an Microsoft 365 user, you can view, release, and delete your quarantined messages (messages where you are a recipient, and spam filtering quarantined the message as spam or bulk email). You view and manage your quarantined messages in the Security & Compliance Center."
+ms.custom:
+- seo-marvel-apr2020
+description: "Users can learn how to view and manage quarantined messages in Exchange Online Protection (EOP) that should have been delivered to them."
 ---
 
-# Find and release quarantined messages as a user
+# Find and release quarantined messages as a user in EOP
 
-Quarantine holds potentially dangerous or unwanted messages in Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam, bulk email, or (as of April, 2020) phishing. You view and manage your quarantined messages in the Security & Compliance Center or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantine in EOP](quarantine-email-messages.md).
+
+As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam or bulk email. As of April 2020, you can view or delete quarantined phishing (not high confidence phishing) messages where you are a recipient. You view and manage your quarantined messages in the Security & Compliance Center or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## What do you need to know before you begin?
 
 - To open the Security & Compliance Center, go to <https://protection.office.com>. To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.
 
-- Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies). Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+- Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies). Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-- Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in anti-spam policies. Users can release spam quarantined messages but not phish quarantined messages directly from these notifications. For more information, see [End-user spam notifications in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+- Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in anti-spam policies. Users can release quarantined spam messages directly from these notifications. Users can review quarantined phishing messages (not high confidence phishing messages) directly from these notifications. For more information, see [End-user spam notifications in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-- Messages that were quarantined for high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
+- Messages that were quarantined for high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins, and aren't visible to users. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
 
 - You can only release a message and report it as a false positive (not junk) once.
 
@@ -89,7 +94,12 @@ As a user, you can view, release, and delete quarantined messages where you are 
 
      - **Spam**
 
-     - **Phish** (As of April, 2020)
+     - **Phish**
+     
+   - **Policy Type**: Filter messages by policy type:
+     - **Anti-phish policy**
+     - **Hosted content filter policy**
+     
 
    To clear the filter, click **Clear**. To hide the filter flyout, click **Filter** again.
 
@@ -98,6 +108,8 @@ As a user, you can view, release, and delete quarantined messages where you are 
    - **Message ID**: The globally unique identifier of the message. If you select a message in the list, the **Message ID** value appears in the **Details** flyout pane that appears. Admins can use [message trace](message-trace-scc.md) to find messages and their corresponding Message ID values.
 
    - **Sender email address**: A single sender's email address.
+   
+   - **Policy name**: Use the entire policy name of the message. The search is not case-sensitive.
 
    - **Recipient email address**: A single recipient's email address.
 
@@ -127,7 +139,7 @@ When you select an email message in the list, the following message details appe
 
 - **Subject**
 
-- **Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk** or (as of April, 2020) **Phish**.
+- **Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk** or **Phish**.
 
 - **Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.
 

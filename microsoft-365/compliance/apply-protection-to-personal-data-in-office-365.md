@@ -18,7 +18,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Learn how to use data loss prevention (DLP) policies to protect personal data in Microsoft 365."
+description: Learn how to use data loss prevention (DLP) policies in the compliance center to protect personal data in Office 365.
+ms.custom: seo-marvel-apr2020
 ---
 # Apply protection to personal data
 
@@ -38,7 +39,7 @@ With DLP, you can:
 
 -   View DLP reports showing content that matches your organization's DLP policies.
 
-For more information, see [Overview of data loss prevention policies](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
+For more information, see [Overview of data loss prevention policies](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies).
 
 ![Options for creating a Data Loss Prevention policy](../media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
@@ -139,7 +140,7 @@ Description: Display policy tips to employees, notify compliance teams when this
 <tr class="odd">
 <td align="left">Notify users when content matches the policy settings</td>
 <td align="left"><p>Check this box ("Show policy tips to users and send them an email notification.")</p>
-<p>Click 'Customize the tip and email' and update these for your environment. See the default notifications in this article: <a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Send email notifications and show policy tips for DLP policies</a>.</p></td>
+<p>Click 'Customize the tip and email' and update these for your environment. See the default notifications in this article: <a href="https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips">Send email notifications and show policy tips for DLP policies</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Detect when a specific amount of sensitive info is being shared at one time</td>
@@ -245,9 +246,9 @@ The illustration plots permission levels from Full control to View Only. The fol
 
 More information:
 
--   [Understanding permission levels in SharePoint](https://support.office.com/en-US/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [Understanding permission levels in SharePoint](https://docs.microsoft.com/sharepoint/understanding-permission-levels)
 
--   [Understanding SharePoint groups](https://support.office.com/en-US/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [Understanding SharePoint groups](https://docs.microsoft.com/sharepoint/default-sharepoint-groups)
 
 ### External sharing policies for SharePoint and OneDrive for Business libraries
 
@@ -297,9 +298,9 @@ The following table summarizes the controls you can configure.
 
 More information:
 
--   [Manage external sharing for your SharePoint Online environment](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [Manage external sharing for your SharePoint Online environment](https://docs.microsoft.com/sharepoint/external-sharing-overview)
 
--   [Share sites or documents with people outside your organization](https://support.office.com/en-US/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [Share sites or documents with people outside your organization](https://support.office.com/article/share-sharepoint-files-or-folders-1fe37332-0f9a-4719-970e-d2578da4941c)
 
 ### Site-level device access policies
 
@@ -348,7 +349,7 @@ Device access policies for SharePoint and OneDrive for Business require supporti
 </tbody>
 </table>
 
-More information: [SharePoint Online admin center: Control access from unmanaged devices](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
+More information: [SharePoint Online admin center: Control access from unmanaged devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
 
 ## Service access protection for identities and devices
 

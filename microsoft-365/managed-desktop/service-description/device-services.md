@@ -5,8 +5,10 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
 # Microsoft Managed Desktop device services
@@ -28,9 +30,9 @@ Device setup	| Devices will be pre-configured with the current version of Window
 For information on device replacement, upgrades, and support terms, see your agreement with your device provider and your warranty terms.
 
 For information on Surface warranties and repairs:
+- [Surface for Business Help Center](https://support.microsoft.com/hub/4339296/surface-for-business-help)
 - [Warranties, extended service plans, and terms and conditions for your device](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
-- [Surface standard warranty](https://support.microsoft.com/help/4036296)
-- [Device service and repair](https://support.microsoft.com/devices)
+
 
 ## Device service limitations
 

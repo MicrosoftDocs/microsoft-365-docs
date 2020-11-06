@@ -1,7 +1,7 @@
 ---
-title: What's coming in Microsoft Secure Score?
-description: Describes Microsoft Secure Score in the Microsoft 365 security center, how details are calculated, and what security admins can expect.
-keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
+title: What's coming to Microsoft Secure Score
+description: Describes what new changes are coming to Microsoft Secure Score in the Microsoft 365 security center.
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -19,42 +19,47 @@ search.appverid:
 - MET150
 ---
 
-# What's coming in Microsoft Secure Score?
+# What's coming to Microsoft Secure Score
 
-To make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
+We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
 
-## April 21st 2020
+## Proposed changes
 
-### Removing improvement actions that don't meet expectations for reliable measurement or don't provide a useful representation of security posture
+### November 2020
 
-To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement actions.
+Removing the ability to create ServiceNow tickets through Secure Score by going to **Share > ServiceNow**.
 
-- Apply IRM protections to documents
-- Apply Data Loss Prevention policies
+- The preview period for the ServiceNow connector is ending. This capability will no longer available by the end of 2020. Thank you for your feedback and continued support while we determine next steps.
 
-### Adding Azure AD improvement action to preview
+Adding 18 improvement actions related to Microsoft Defender for Endpoint (previously Microsoft Defender ATP):
 
-Adding the following Azure Active Directory improvement action to the [preview release of Microsoft Secure Score](microsoft-secure-score-preview.md):
+Attack Surface Reduction (ASR) related recommendations:
+- Block executable content from email client and webmail
+- Block all Office applications from creating child processes
+- Block Office applications from creating executable content
+- Block Office applications from injecting code into other processes
+- Block JavaScript or VBScript from launching downloaded executable content
+- Block execution of potentially obfuscated scripts
+- Block Win32 API calls from Office macros
+- Block executable files from running unless they meet a prevalence, age, or trusted list criterion
+- Use advanced protection against ransomware
+- Block credential stealing from the Windows local security authority subsystem (lsass.exe)
+- Block process creations originating from PSExec and WMI commands
+- Block untrusted and unsigned processes that run from USB
+- Block Office communication application from creating child processes
+- Block Adobe Reader from creating child processes
+- Block persistence through WMI event subscription
 
-- Do not allow users to grant consent to unmanaged applications (currently available in released version)
+Services related recommendations:
+- Fix unquoted service path for Windows services
+- Change service executable path to a common protected location
+- Change service account to avoid cached password in windows registry
 
-### Adding Azure ATP improvement actions to preview
+## Related resources
 
-Adding the following Azure Advanced Threat Protection improvement actions to the [preview release of Microsoft Secure Score](microsoft-secure-score-preview.md):
-
-- Disable Print spooler service on domain controllers
-- Modify unsecure Kerberos delegations to prevent impersonation
-- Protect and manage local admin passwords with Microsoft LAPS
-- Reduce lateral movement path risk to sensitive entities
-- Remove dormant accounts from sensitive groups
-- Remove unsecure SID history attributes from entities
-- Resolve unsecure account attributes
-- Stop clear text credentials exposure
-- Stop legacy protocols communication
-- Stop weak cipher usage
-
-### Support for Microsoft Defender ATP Threat & Vulnerability Management (TVM) security recommendations in preview
-
-All released security recommendations supplied by TVM will now also be available the [preview release of Microsoft Secure Score](microsoft-secure-score-preview.md).
+- [Microsoft Secure Score overview](microsoft-secure-score.md)
+- [Assess your security posture](microsoft-secure-score-improvement-actions.md)
+- [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
+- [What's new](microsoft-secure-score-whats-new.md)

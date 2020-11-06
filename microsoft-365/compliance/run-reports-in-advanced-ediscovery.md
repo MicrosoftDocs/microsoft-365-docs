@@ -15,8 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
-description: "Learn how to run a report and then download its .csv file in Advanced eDiscovery. 
-"
+description: Learn how to run a report for your selected process and then download its .csv file in Advanced eDiscovery. 
+ms.custom: seo-marvel-apr2020
 ---
 
 # Run reports in Advanced eDiscovery (classic)
@@ -38,6 +38,6 @@ You can download a .csv file with a report for the selected process.
     
 3. Click **Download CSV**. The requested report is generated and downloaded.
     
-## See also
+## Related topics
 
 [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)

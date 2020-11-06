@@ -15,8 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: "Learn how to use the Security &amp; Compliance Center to prepare data for analysis with Advanced eDiscovery.
-"
+description: "Learn how to use the Security &amp; Compliance Center to prepare data for analysis with Advanced eDiscovery."
 ---
 
 # Prepare data for Advanced eDiscovery (classic)
@@ -33,7 +32,7 @@ To analyze data with Advanced eDiscovery, you can use the results of a Content S
 For the detailed steps on preparing search results for analysis in Advanced eDiscovery, see [Prepare search results for Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md).
   
 > [!NOTE]
-> If you have data outside of Microsoft 365 and want to import it to Microsoft 365 so that you can prepare and analyze it in Advanced eDiscovery, a see [Overview of importing PST files to Microsoft 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84) and [Archiving third-party data](https://go.microsoft.com/fwlink/p/?linkid=716918). 
+> If you have data outside of Microsoft 365 and want to import it to Microsoft 365 so that you can prepare and analyze it in Advanced eDiscovery, a see [Overview of importing PST files to Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365) and [Archiving third-party data](https://www.microsoft.com/?ref=go). 
   
 ## Step 2: Load search result data in to a case in Advanced eDiscovery
 
@@ -47,7 +46,7 @@ After you prepare the search results in the Security &amp; Compliance Center for
     
 4. Click **Open** next to the case that you want to load data in to in Advanced eDiscovery. 
     
-5. On the **Home** page for the case, click **Advanced eDiscovery**. 
+5. On the **Home** page for the case, click **Switch to Advanced eDiscovery**. 
     
     ![Click Switch to Advanced eDiscovery to open the case in Advanced eDiscovery](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   

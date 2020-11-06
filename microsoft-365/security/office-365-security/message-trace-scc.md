@@ -6,23 +6,31 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
+ms.custom:
+- seo-marvel-apr2020
 description: "Admins can use message trace in the Security & Compliance Center to find out what happened to messages."
 ---
 
 # Message trace in the Security & Compliance Center
 
-## Overview
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+## Message trace features
 
 Message trace in the Security & Compliance Center follows email messages as they travel through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
 
 Message trace in the Security & Compliance Center improves upon the original message trace that was available in the Exchange admin center (EAC). You can use the information from message trace to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes.
 
 > [!NOTE]
-> * To perform a message trace, you need to be a member of the Organization Management, Compliance Management or Help Desk role groups. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>* The maximum number of messages that are displayed in the results depends on the report type you selected (see the [Choose report type](#choose-report-type) section for details). The [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) cmdlet in Exchange Online PowerShell or Exchange Online Protection PowerShell returns all messages in the results.
+>
+> - To do a message trace, you need to be a member of the Organization Management, Compliance Management or Help Desk role groups. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+>
+> - The maximum number of messages that are displayed in the results depends on the report type you selected (see the [Choose report type](#choose-report-type) section for details). The [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) cmdlet in Exchange Online PowerShell or standalone EOP PowerShell returns all messages in the results.
 
 ## Open message trace
 
@@ -34,7 +42,7 @@ Message trace in the Security & Compliance Center improves upon the original mes
 
 From here you can start a new default trace by clicking on the **Start a trace** button. This will search for all messages for all senders and recipients for the last two days. Or you can use one of the stored queries from the available query categories and either run them as-is or use them as starting points for your own queries:
 
-- **Default queries**: Built-in queries provided by Office 365.
+- **Default queries**: Built-in queries provided by Microsoft 365.
 
 - **Custom queries**: Queries saved by admins in your organization for future use.
 
@@ -89,11 +97,11 @@ You can leave the default value **All** selected, or you can select one of the f
 
 - **Failed**: The message was not delivered.
 
-- **Quarantined**: The message was quarantined (as spam, bulk mail, or phishing). For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
+- **Quarantined**: The message was quarantined (as spam, bulk mail, or phishing). For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).
 
 - **Filtered as spam**: The message was identified spam, and was rejected or blocked (not quarantined).
 
-- **Getting status:** The message was recently received by Office 365, but no other status data is yet available. Check back in a few minutes.
+- **Getting status:** The message was recently received by Microsoft 365, but no other status data is yet available. Check back in a few minutes.
 
 **Note**: The values **Pending,** **Quarantined**, and **Filter as spam** are only available for searches less than 10 days. Also, there might be a 5 to 10 minute delay between the actual and reported delivery status.
 
@@ -325,12 +333,14 @@ The **custom_data** field for an `AGENTINFO` event is used by a variety of Excha
 
 A **custom_data** value that starts with `S:SFA` is from the spam filter agent. The key details are described in the following table:
 
-|**Value**|**Description**|
-|:-----|:-----|
+****
+
+|Value|Description|
+|---|---|
 |`SFV=NSPM`|The message was marked as non-spam and was sent to the intended recipients.|
-|`SFV=SPM`|The message was marked as spam by the content filter.|
+|`SFV=SPM`|The message was marked as spam by anti-spam filtering (also known as content filtering).|
 |`SFV=BLK`|Filtering was skipped and the message was blocked because it originated from a blocked sender.|
-|`SFV=SKS`|The message was marked as spam prior to being processed by the content filter. This includes messages where the message matched a Transport rule to automatically mark it as spam and bypass all additional filtering.|
+|`SFV=SKS`|The message was marked as spam prior to being processed by anti-spam filtering. This includes messages where the message matched a mail flow rule (also known as a transport rule) to automatically mark it as spam and bypass all additional filtering.|
 |`SCL=<number>`|For more information about the different SCL values and what they mean, see [Spam confidence levels](spam-confidence-levels.md).|
 |`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
 |`DI=SB`|The sender of the message was blocked.|
@@ -343,6 +353,7 @@ A **custom_data** value that starts with `S:SFA` is from the spam filter agent. 
 |`IPV=CAL`|The message was allowed through the spam filters because the IP address was specified in an IP Allow list in the connection filter.|
 |`H=<EHLOstring>`|The HELO or EHLO string of the connecting email server.|
 |`PTR=<ReverseDNS>`|The PTR record of the sending IP address, also known as the reverse DNS address.|
+|
 
 An example **custom_data** value for a message that's filtered for spam like this:
 
@@ -352,8 +363,10 @@ An example **custom_data** value for a message that's filtered for spam like thi
 
 A **custom_data** value that starts with `S:AMA` is from the malware filter agent. The key details are described in the following table:
 
-|**Value**|**Description**|
-|:-----|:-----|
+****
+
+|Value|Description|
+|---|---|
 |`AMA=SUM|v=1|` or `AMA=EV|v=1`|The message was determined to contain malware. `SUM` indicates the malware could've been detected by any number of engines. `EV` indicates the malware was detected by a specific engine. When malware is detected by an engine this triggers the subsequent actions.|
 |`Action=r`|The message was replaced.|
 |`Action=p`|The message was bypassed.|
@@ -366,6 +379,7 @@ A **custom_data** value that starts with `S:AMA` is from the malware filter agen
 |`Action=b`|The message was blocked.|
 |`Name=<malware>`|The name of the malware that was detected.|
 |`File=<filename>`|The name of the file that contained the malware.|
+|
 
 An example **custom_data** value for a message that contains malware looks like this:
 
@@ -375,12 +389,15 @@ An example **custom_data** value for a message that contains malware looks like 
 
 A **custom_data** value that starts with`S:TRA` is from the Transport Rule agent for mail flow rules (also known as transport rules). The key details are described in the following table:
 
-|**Value**|**Description**|
-|:-----|:-----|
+****
+
+|Value|Description|
+|---|---|
 |`ETR|ruleId=<guid>`|The rule ID that was matched.|
 |`St=<datetime>`|The date and time in UTC when the rule match occurred.|
 |`Action=<ActionDefinition>`|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|The mode of the rule. Valid values are: <br/>* **Enforce**: All actions on the rule will be enforced. <br/>* **Test with Policy Tips:**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on. <br/>* **Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.|
+|`Mode=<Mode>`|The mode of the rule. Valid values are:<ul><li>**Enforce**: All actions on the rule will be enforced.</li><li>**Test with Policy Tips:**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on.</li><li>**Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.</li></ul>|
+|
 
 An example **custom_data** value for a messages that matches the conditions of a mail flow rule looks like this:
 

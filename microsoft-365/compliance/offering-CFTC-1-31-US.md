@@ -3,7 +3,7 @@ title: Commodity Futures Trading Commission (CFTC) Rule 1.31(c-d) United States
 description: An independent assessment firm validated that Azure and Office 365 can help financial firms meet CFTC Rule 1.31 records retention and immutable storage requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -36,7 +36,7 @@ To evaluate Azure compliance with CFTC Rule 1.31(c-d), Microsoft retained an ind
 
 ### Microsoft Office 365
 
-To evaluate Office 365 compliance with CFTC Rule 1.31(c-d), Microsoft engaged a leading independent law firm that specializes in regulatory issues, Covington & Burling, LLP. In the resulting report, [Archiving in Microsoft Office 365, Data Retention, and Rule 17a-4 Compliance](https://go.microsoft.com/fwlink/?linkid=830440), Covington validated that [Office 365 with Preservation Lock](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy) includes archiving features that enable regulated customers to store data in a manner that helps them comply with CFTC requirements for records retention.
+To evaluate Office 365 compliance with CFTC Rule 1.31(c-d), Microsoft engaged a leading independent law firm that specializes in regulatory issues, Covington & Burling, LLP. In the resulting report, [Archiving in Microsoft Office 365, Data Retention, and Rule 17a-4 Compliance](https://go.microsoft.com/fwlink/?linkid=830440), Covington validated that [Office 365 with Preservation Lock](retention-preservation-lock.md) includes archiving features that enable regulated customers to store data in a manner that helps them comply with CFTC requirements for records retention.
 
 Archiving in Office 365 helps to preserve a wide range of data, including email, voicemail, shared documents, instant messages, and third-party data. In particular, archiving in Office 365 enables customers to set global or granular messaging retention policies to store data for a defined period and beyond in a non-rewriteable, non-erasable format.
 
@@ -66,7 +66,3 @@ Archiving in Office 365 helps to preserve a wide range of data, including email,
 - [Microsoft Office 365 Retention Policies](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft Financial Services Blog](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf).

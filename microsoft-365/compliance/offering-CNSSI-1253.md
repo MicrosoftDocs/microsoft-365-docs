@@ -3,7 +3,7 @@ title: Committee on National Security Systems Instruction No. 1253 (CNSSI 1253)
 description: Azure Government complies with CNSSI 1253 security controls for US government systems requiring High Confidentiality, High Integrity, and High Availability.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -64,7 +64,3 @@ Azure Government (FedRAMP package ID F1603087869) has been tested again these co
 - [Microsoft and DoD Provisional Authorization](offering-DoD-DISA-L2-L4-L5.md)
 - [Microsoft Government Cloud](https://www.microsoft.com/enterprise/government)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf).

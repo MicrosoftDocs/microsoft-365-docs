@@ -16,7 +16,7 @@ localization_priority: Normal
 search.appverid: 
 - MOE150
 - MET150
-description: "With data loss prevention (DLP) in SharePoint Online, you can discover documents that contain sensitive data throughout your tenant. After discovering the documents, you can work with the document owners to protect the data. This topic can help you form a query to search for sensitive data."
+description: Use data loss prevention (DLP) in SharePoint Online to discover documents that contain sensitive data throughout your tenant.
 ---
 
 # Form a query to find sensitive data stored on sites
@@ -83,10 +83,8 @@ Not all queries are created equal. The following table gives examples of queries
    
 ## For more information
 
-[What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
-  
-[Run a Content Search](content-search.md)
-  
-[Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
+- [Run a Content Search](content-search.md)
+- [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
   
 

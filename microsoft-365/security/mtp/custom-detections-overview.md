@@ -1,5 +1,5 @@
 ---
-title: Overview of custom detections in Microsoft Threat Protection
+title: Overview of custom detections in Microsoft 365 Defender
 description: Understand how you can use advanced hunting to create custom detections and generate alerts
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, schema, kusto, microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
@@ -21,10 +21,11 @@ ms.topic: article
 
 # Custom detections overview
 
-**Applies to:**
-- Microsoft Threat Protection
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
+**Applies to:**
+- Microsoft 365 Defender
 
 With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured endpoints. This is made possible by customizable detection rules that automatically trigger alerts as well as response actions.
 

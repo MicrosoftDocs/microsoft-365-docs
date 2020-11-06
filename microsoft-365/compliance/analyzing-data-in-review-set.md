@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn about the tools available to organize document sets when analyzing an Advanced eDiscovery case.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Analyze data in a review set in Advanced eDiscovery

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -29,7 +30,7 @@ description: "Understand the reasons why sometimes switching plans has to be don
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> This article applies to the old admin center. To view the article about the admin center (preview), see [Why can't I upgrade plans?](why-cant-i-change-plans.md). The preview is available to all Microsoft 365 admins, you can opt in by selecting **Try the preview** toggle located at the top of the Home page. For more information, see [About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md).
+> This article applies to the old admin center. To view the article about the admin center (preview), see [Why can't I upgrade plans?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans). The preview is available to all Microsoft 365 admins, you can opt in by selecting **Try the preview** toggle located at the top of the Home page. For more information, see [About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 If you don't see the **Switch plans** button, your plan can't be switched automatically. In some cases, you might be able to resolve the issue so that you can use the **Switch plans** button, or you might be able to [switch plans manually](switch-plans-manually.md), instead. Position your mouse over the info icon to view a message that explains why the **Switch plans** button is not available. Use the information in this article to resolve the issue.

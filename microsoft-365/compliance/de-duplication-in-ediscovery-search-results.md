@@ -7,15 +7,19 @@ author: markjjo
 manager: laurawi
 ms.date: 12/21/2016
 audience: Admin
-ms.topic: overview
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
-description: "You have the option to de-duplicate eDiscovery search results that are exported so that only one copy of an email message is exported even though multiple instances of the same message might have been found in different mailboxes."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to eliminate duplicate eDiscovery search results so that only one copy of an email message is exported.
 ---
 
 # De-duplication in eDiscovery search results
@@ -77,4 +81,4 @@ Unique messages can also be marked as duplicates when the Copy-on-Write page pro
 
   - [Export In-Place eDiscovery search results to a PST file](https://go.microsoft.com/fwlink/p/?linkid=832671)
 
-  - [Export content and create reports in the eDiscovery Center](https://support.office.com/article/7b2ea190-5f9b-4876-86e5-4440354c381a)
+  - [Export content and create reports in the eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)

@@ -8,15 +8,14 @@ manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
-description: "Learn how to define the rule to ignore specific text when using the Analyze and Process modules in Advanced eDiscovery. 
-"
+description: "Learn how to define the rule to ignore specific text when using the Analyze and Process modules in Advanced eDiscovery."
 ---
 
 # Set Ignore Text option for Analyze in Advanced eDiscovery (classic)
@@ -32,13 +31,12 @@ If the Ignore Text feature was previously defined for modules that have already 
 
 Multiple Ignore Text filters are applied in the order that they were entered. To change the order in which they are applied, they must be deleted and re-entered in the desired order.
   
-For example, if the text content is: "DAVE BOB ALICE CAROL EVE", the following are samples of Ignore Text entries and the results:
-  
-||||
-|:-----|:-----|:-----|
-|**Ignore Text entries** <br/> |**==\>** <br/> |**Results** <br/> |
-|"ALICE", "BOB CAROL"  <br/> |==\>  <br/> |"DAVE EVE"  <br/> |
-|"ALICE", "BOB ALICE CAROL"  <br/> |==\>  <br/> |"DAVE BOB CAROL EVE"  <br/> |
+For example, if the text content is: "DAVE BOB ALICE CAROL EVE", the following are samples of Ignore Text entries and the results these entries produce:
+
+|**Ignore Text entries** <br/> |**Results** <br/> |
+|:-----|:-----|
+|"ALICE", "BOB CAROL"  <br/> |"DAVE EVE"  <br/> |
+|"ALICE", "BOB ALICE CAROL"  <br/> |"DAVE BOB CAROL EVE"  <br/> |
    
 The second Ignore Text entry is not implemented because the string is not found as such AFTER the first Ignore Text has been applied.
   

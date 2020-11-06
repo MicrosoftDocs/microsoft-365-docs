@@ -16,19 +16,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: conceptual
 ms.custom: autoir
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
 ---
 
 # Approve or reject pending actions following an automated investigation
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 When an automated investigation runs, it can result in one or more [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) that require approval to proceed. For example, a cluster of email messages might need to be deleted, or a quarantined file might need to be removed. It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
 
 > [!TIP]
-> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
+> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft 365 Defender, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft 365 Defender](mtp-autoir-report-false-positives-negatives.md).
 
 Pending actions can be reviewed and approved by using the [Action center](#review-a-pending-action-in-the-action-center) or the [investigation details view](#review-a-pending-action-in-the-investigation-details-view).
 
@@ -57,8 +63,5 @@ Pending actions can be reviewed and approved by using the [Action center](#revie
 
 ## Next steps
 
-- [Learn more about the Action center](mtp-action-center.md)
-
-- [Learn more about incidents](incidents-overview.md)
-
-- [Learn about hunting](advanced-hunting-overview.md)
+- [View the details and results of an automated investigation](mtp-autoir-results.md)
+- [Handle false positives/negatives in automated investigation and response capabilities](mtp-autoir-report-false-positives-negatives.md)

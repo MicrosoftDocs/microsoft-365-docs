@@ -15,8 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
-description: "Review how document Similarity value, the minimal level of resemblance for two files to be considered near-duplicates, works in Advanced eDiscovery.
-"
+description: "Review how document Similarity value, the minimal level of resemblance for two files to be considered near-duplicates, works in Advanced eDiscovery."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Understand document similarity in Advanced eDiscovery (classic)
@@ -51,7 +51,7 @@ Assume that another document, X1, is now inserted. The resemblance between X1 an
   
 After sets are merged, the Pivot document can change when new documents are added to a set. 
   
-## See also
+## Related topics
 
 [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   

@@ -14,8 +14,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
-description: "Landing page for Plan Security and Compliance"
+description: This landing page provides links and planning information for security and compliance in Office 365.
 ms.collection: M365-security-compliance 
+ms.custom: seo-marvel-apr2020
 ---
 
 # Plan for security &amp; compliance
@@ -26,7 +27,7 @@ Managing security and compliance is a partnership. You are responsible for prote
 
 Orient yourself to the information protection capabilities in the Information Protection for Office 365 poster. 
   
-[PDF](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf) | [Visio](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)
+[Deploy information protection for data privacy regulations with Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/information-protection-deploy?view=o365-worldwide)
   
 ## Step 2: Check your Secure Score
 
@@ -40,7 +41,7 @@ Protecting access to your Microsoft 365 data and services is crucial to defendin
   
 - [Protect access to data and services in Office 365](protect-access-to-data-and-services.md)
     
-- [Secure email policies and configurations](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [Secure email policies and configurations](../security/office-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -64,9 +65,9 @@ The Security &amp; Compliance Center gives you a single view into the controls y
 
 Use these recommended configurations as a starting point for enterprise scale or sophisticated access security scenarios.
   
-- [Secure email policies and configurations](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [Secure email policies and configurations](../security/office-365-security/secure-email-recommended-policies.md)
     
-- [Contoso in the Microsoft Cloud](https://aka.ms/cloudarchcontoso)
+- [Contoso in the Microsoft Cloud](../enterprise/contoso-case-study.md)
     
 ## Microsoft 365 admin centers and dashboards
 

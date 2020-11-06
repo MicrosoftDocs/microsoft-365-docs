@@ -3,7 +3,7 @@ title: National Bank of Belgium (NBB) and the Financial Services and Markets Aut
 description: Microsoft guidance to help financial institutions in Belgium with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -24,7 +24,7 @@ The primary financial services regulators in Belgium are the [National Bank of B
 
 The NBB is responsible for prudential supervision of credit institutions, insurers, stockbrokers, and other financial organizations. As the central bank of Belgium, the NBB conducts monetary policy for Belgium and contributes to the stability of its financial system. Alongside the NBB, the FSMA supervises Belgian financial markets, financial service providers including investment firms, and supplemental pensions. Its tasks include oversight of the financial information that companies disseminate and the products they offer to consumers and their compliance with the rules of business conduct.
 
-The NBB and FSMA act in concert with the European Banking Authority (EBA), “an independent EU authority that works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362).
+The NBB and FSMA act in concert with the European Banking Authority (EBA), 'an independent EU authority that works to ensure effective and consistent prudential regulation and supervision across the European banking sector.' To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362).
 
 There are several requirements and guidelines that financial institutions in Belgium should be aware of when moving business functions to the cloud, including:
 
@@ -59,11 +59,15 @@ The Microsoft checklist helps financial firms in Belgium that are conducting due
 
 **Is regulatory approval required?**
 
-No. However, financial institutions must notify the NBB and FSMA in the event of a disruption in an outsourcing arrangement that has the potential to materially impact the institution’s business operations, reputation, or profitability, or its ability to manage risk and comply with applicable laws and regulations.
+No. However, financial institutions must notify the NBB and FSMA in the event of a disruption in an outsourcing arrangement that has the potential to materially impact the institution's business operations, reputation, or profitability, or its ability to manage risk and comply with applicable laws and regulations.
 
 **Are there any mandatory terms that must be included in the contract with the cloud services provider?**
 
 Yes. There are specific points that financial institutions must be sure to incorporate in their cloud services contracts. Part 2 of the [Microsoft checklist](https://aka.ms/FinServ-Guide-Belgium) (page 49) maps these against the sections in the Microsoft contractual documents where they are addressed.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 
@@ -72,7 +76,3 @@ Yes. There are specific points that financial institutions must be sure to incor
 - [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/5/F/3/5F3E78C9-767C-4260-92D9-A244EF3BA607/NBB-FSMA-Compliance.pdf).

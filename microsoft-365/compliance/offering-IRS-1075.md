@@ -3,7 +3,7 @@ title: US Internal Revenue Service Publication 1075
 description: Microsoft has controls that meet the requirements of US Internal Revenue Service Publication 1075.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -38,8 +38,6 @@ To help government agencies in their compliance efforts, Microsoft:
 - Provides to the IRS Azure Government Compliance Considerations and Office 365 U.S. Government Compliance Considerations, which outline how an agency can use Microsoft Cloud for Government services in a way that complies with IRS 1075. Government customers under NDA can request these documents.
 - Offers customers the opportunity (at their expense) to communicate with Microsoft subject matter experts or outside auditors if needed.
 
-Learn about the benefits of IRS 1075 on the Microsoft Cloud: [Download the IRS 1075 backgrounder](https://aka.ms/irs1075-backgrounder)
-
 ## Microsoft in-scope cloud services
 
 FedRAMP authorizations are granted at three impact levels based on NIST guidelines — low, medium, and high. These rank the impact that the loss of confidentiality, integrity, or availability could have on an organization — low (limited effect), medium (serious adverse effect), and high (severe or catastrophic effect).
@@ -73,6 +71,10 @@ Yes, if your organization meets the eligibility requirements for Azure Governmen
 
 No. The only environments where FTI can be stored and processed are Azure Government or Office 365 U.S. Government. Government customers must meet the eligibility requirements to use these environments.
 
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
+
 ## Resources
 
 - [IRS Publication 1075](https://www.irs.gov/pub/irs-pdf/p1075.pdf)
@@ -80,7 +82,3 @@ No. The only environments where FTI can be stored and processed are Azure Govern
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Cloud for Government](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf).

@@ -1,1 +1,2 @@
 * @robmazz @denisebmsft
+/microsoft-365/admin/ @Sirkkuw

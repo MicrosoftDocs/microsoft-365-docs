@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
@@ -31,15 +31,25 @@ Licensing for Core eDiscovery requires the appropriate organization subscription
 
 - **Organization subscription:** To access Core eDiscovery in the Microsoft 365 compliance center or the Office 365 Security & Compliance Center and use the hold and export features, your organization must have a Microsoft 365 E3 or Office 365 E3 subscription or higher.
 
-- **Per-user licensing:** To place an eDiscovery hold on user mailboxes, that user must be assigned one of the following licenses, depending on your organization subscription:
+- **Per-user licensing:** To place an eDiscovery hold on mailboxes and sites, a user must be assigned one of the following licenses, depending on your organization subscription:
 
   - A Microsoft 365 E3 or Office 365 E3 license or higher
 
-  - A Microsoft 365 E1 or Office 365 E1 license with an Exchange Online Plan 2 or Exchange Online Archiving add-on license
+   OR
 
+  - Office 365 E1 license with an Exchange Online Plan 2 or Exchange Online Archiving add-on license
+
+  AND
+
+  - Office 365 E1 license with an SharePoint Online Plan 2 or OneDrive for Business Plan 2 add-on license
+  
   For information about how to assign licenses, see [Assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
-For information about Microsoft 365 and Office 365 licensing, download and see the "Discover & Respond" solution in the [Microsoft 365 Compliance Licensing Comparison](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.pdf).
+For information about licensing:
+
+- Download and see the "Discover & Respond" solution in the [Microsoft 365 Compliance Licensing Comparison](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx).
+
+- See the [Security & Compliance Center service description](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
 ## Step 2: Assign eDiscovery permissions
 

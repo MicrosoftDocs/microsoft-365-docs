@@ -3,7 +3,7 @@ title: Content Delivery & Security Association (CDSA) Content Protection & Secur
 description: Azure is certified to the Content Delivery and Security Association Content Protection and Security standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -55,13 +55,17 @@ Microsoft has successfully completed the six-month renewal of the CDSA CPS certi
 
 The standard applies to any provider that wants to provide cloud services to the media production industry.
 
-**How do I start my organization’s compliance effort?**
+**How do I start my organization's compliance effort?**
 
 For guidance, refer to the [CDSA Azure implementation guide](https://aka.ms/cdsaprotectsecure). To discuss specific requirements and the application process for CPS Standard Certification Program, please [contact the CDSA](https://go.microsoft.com/fwlink/p/?linkid=2099484).
 
-**Can I use Microsoft compliance in my organization’s certification process?**
+**Can I use Microsoft compliance in my organization's certification process?**
 
 Yes. You can build on Azure CPS certification within your own CPS certification effort by using the security and encryption features in Azure.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 
@@ -71,7 +75,3 @@ Yes. You can build on Azure CPS certification within your own CPS certification 
 - [How Azure Media Services earned CDSA security certification](https://johndeutscher.com/2015/04/14/how-azure-media-services-earned-cdsa-security-certification/)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - Understanding CDSA and Azure compliance
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/2/6/3/263C244E-20A8-41B1-B2DA-2835E30CE92E/CDSA_Compliance_Backgrounder.pdf).

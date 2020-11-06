@@ -15,7 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
-description: "Learn how to run the Express analysis mode of Advanced eDiscovery"
+description: Learn how to run the Express analysis mode of Advanced eDiscovery and then export the results.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Use Express Analysis in Advanced eDiscovery (classic) 

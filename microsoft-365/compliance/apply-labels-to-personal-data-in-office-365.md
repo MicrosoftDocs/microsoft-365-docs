@@ -16,14 +16,15 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Learn how to use Office labels as part of your GDPR protection plan."
+description: Learn how to use Office labels as part of your General Data Protection Regulation (GDPR) protection plan.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Apply labels to personal data
 
  Use this topic if you're using classification labels as part of your GDPR protection plan. 
 
-If you're using labels for protection of personal data in Microsoft 365, Microsoft recommends you start with [retention labels](labels.md). With retention labels, you can:
+If you're using labels for protection of personal data in Microsoft 365, Microsoft recommends you start with [retention labels](retention.md#retention-labels). With retention labels, you can:
 - Use Advanced Data Governance to automatically apply labels based on sensitive information types or other criteria.
 - Use retention labels with data loss prevention to apply protection. 
 - Use labels with eDiscovery and Content Search. 
@@ -176,7 +177,7 @@ Create labels and policies in the security center or the compliance center.
 <tr class="odd">
 <td align="left"><p>Give permissions to members of your compliance team.</p></td>
 <td align="left"><p>Members of your compliance team who will create labels need permissions to use the security center and/or the compliance center. Go to Permissions in the security center or the compliance center and modify the members of the Compliance Administrator group.</p>
-<p>See <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Give users access to the security center and/or the compliance center</a>.</p></td>
+<p>See <a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">Give users access to the security center and/or the compliance center</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Create retention labels.</p></td>

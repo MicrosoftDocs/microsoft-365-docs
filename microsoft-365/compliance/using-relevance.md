@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how the Relevance module analyzes data in evidence with a description of the Relevance workflow and training steps in Advanced eDiscovery.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Use the Relevance module to analyze data in Advanced eDiscovery

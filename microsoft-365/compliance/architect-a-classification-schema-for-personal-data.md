@@ -16,7 +16,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Determine whether your organization will implement labels as part of your GDPR plan."
+description: Determine whether your organization will implement labels as part of your General Data Protection Regulation (GDPR) plan.
+ms.custom: seo-marvel-apr2020
 ---
 # Architect a classification schema for personal data
 

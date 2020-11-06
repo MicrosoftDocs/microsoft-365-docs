@@ -12,7 +12,8 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: "Use this article as a reference for various attributes you can use in information barrier policies."
+description: This is a reference article on the Azure Active Directory user account attributes that you use to define information barrier segments.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Attributes for information barrier policies
@@ -32,7 +33,7 @@ The attributes listed in this article can be used to define or edit segments of 
 
 2. Make sure the user accounts have values filled in for the attribute(s) you selected in Step 1. View user account details, and if necessary, edit user accounts to include attribute values. 
 
-    - To edit multiple accounts (or use PowerShell to edit a single account), see [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).
+    - To edit multiple accounts (or use PowerShell to edit a single account), see [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).
 
     - To edit a single account, see [Add or update a user's profile information using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
@@ -83,10 +84,10 @@ The following table lists the attributes that you can use with information barri
 |StreetAddress |StreetAddress |
 |TargetAddress |ExternalEmailAddress |
 |UsageLocation |UsageLocation |
-|UserPrincipalName	|UserPrincipalName	|
-|Mail	|WindowsEmailAddress	|
-|Description	|Description	|
-|MemberOf	|MemberOfGroup	|
+|UserPrincipalName    |UserPrincipalName    |
+|Mail    |WindowsEmailAddress    |
+|Description    |Description    |
+|MemberOf    |MemberOfGroup    |
 
 ## Related topics
 

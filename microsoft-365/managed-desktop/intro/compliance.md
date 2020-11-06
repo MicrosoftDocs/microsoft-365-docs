@@ -6,17 +6,20 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
 # Compliance
 
 When you use Microsoft Managed Desktop IT-as-a-service, Microsoft provides you with a comprehensive set of compliance offerings. This effort helps your organization comply with the various compliance requirements.
 
-## Compliance offerings
+## Compliance coverage
 
 Microsoft Managed Desktop has achieved the following certifications:
 
-- [ISO 27001 Information Security Management Standards](../../compliance/offering-ISO-27001.md)
+- [ISO 27001 Information Security Management Standards (ISMS)](../../compliance/offering-ISO-27001.md)
 - [ISO 27701 Privacy Information Management System (PIMS)](../../compliance/offering-iso-27701.md)
 - [ISO 27017 Code of Practice for Information Security Controls](../../compliance/offering-ISO-27017.md)
 - [ISO 27018 Code of Practice for Protecting Personal Data in the Cloud](../../compliance/offering-ISO-27018.md)
@@ -33,7 +36,7 @@ Microsoft Managed Desktop has achieved the following certifications:
 You can find relevant information, including control and technical requirements, in the [Service Trust Portal (STP)](https://servicetrust.microsoft.com/), the central repository for such information about Microsoft Cloud Service offerings. You can download auditor reports, compliance certificates, and more from the [Audit Reports](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) section of the STP.
 
 > [!NOTE]
-> Because Microsoft Managed Desktop runs on Azure, some relevant documents have file names such as “Microsoft Azure, Dynamics 365, and other Online Services”. In those documents, you can usually find Microsoft Managed Desktop under the category “Monitoring + Management”.
+> Because Microsoft Managed Desktop runs on Azure, relevant documents usually have file names such as “Microsoft Azure, Dynamics 365, and other Online Services”. In those documents, you can usually find Microsoft Managed Desktop under the category “Microsoft Online Services” or “Monitoring + Management”.
 
 ## Shared responsibility
 

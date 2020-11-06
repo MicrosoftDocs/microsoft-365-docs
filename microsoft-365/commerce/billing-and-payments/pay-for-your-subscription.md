@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,9 +24,18 @@ description: "Learn what payment options are available to pay for your Microsoft
 ms.custom: 
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
+- AdminSurgePortfolio
 ---
 
 # Pay for your subscription
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 When you set up your subscription, you can choose to pay by using credit card or bank account payments, or to pay by invoice using check or electronic funds transfer (EFT). Whichever method you choose, that is the payment method we will continue to use for subsequent billing periods, unless you [change your payment method](change-payment-method.md).
 
@@ -35,7 +44,7 @@ When you set up your subscription, you can choose to pay by using credit card or
 
 ## Pay by credit card or bank account
 
-When you pay by credit card or bank account, you'll be automatically charged for your subscription the day after the invoice date, until the end of your subscription term. You can [update your credit card or bank account information](add-update-or-remove-credit-card-or-bank-account.md) whenever you need to. You can also choose to [Receive a copy of your billing statement in email](#receive-a-copy-of-your-billing-statement-in-email).
+When you pay by credit card or bank account, you'll be automatically charged for your subscription the day after the invoice date, until the end of your subscription term. You can [manage payment methods](manage-payment-methods.md) whenever you need to. You can also choose to [Receive a copy of your billing statement in email](#receive-a-copy-of-your-billing-statement-in-email).
 
 ### What if my credit card was declined and my payment is past due?
 
@@ -46,16 +55,16 @@ If you pay by credit card, and your credit card is declined, you'll receive an e
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription with the outstanding balance. In the **Billing** section, next to **Subscription has a past due payment**, select **Settle balance**.
 
-3. If you're the credit card owner, you can change the expiration date for the card, pick a different card, or [add a new card](add-update-or-remove-credit-card-or-bank-account.md).
+3. If you're the credit card owner, you can change the expiration date for the card, pick a different card, or [add a new card](manage-payment-methods.md).
 
     > [!NOTE]
     > When you use the **Settle balance** feature, you'll be charged for the entire outstanding balance on your account, which could be more than the amount due shown elsewhere.
 
-4. If you're not the credit card owner, you can choose a different credit card or [add a new card](add-update-or-remove-credit-card-or-bank-account.md).
+4. If you're not the credit card owner, you can choose a different credit card or [add a new card](manage-payment-methods.md).
 
 5. After you've updated the credit card information or changed the credit card that is used to pay for the subscription, select **Save**.
 
@@ -67,12 +76,12 @@ If you pay by credit card, and your credit card is declined, you'll receive an e
 
 2. Select the subscription that you want to change. In the **My bill** section, select **Pay now**.
 
-3. If you're the credit card owner, you can change the expiration date for the card, pick a different card, or [add a new card](add-update-or-remove-credit-card-or-bank-account.md).
+3. If you're the credit card owner, you can change the expiration date for the card, pick a different card, or [add a new card](manage-payment-methods.md).
 
     > [!NOTE]
     > When you use the **Pay now** feature, you'll be charged for the entire outstanding balance on your account, which could be more than the amount due shown elsewhere.
 
-4. If you're not the credit card owner, you can choose a different credit card or [add a new card](add-update-or-remove-credit-card-or-bank-account.md).
+4. If you're not the credit card owner, you can choose a different credit card or [add a new card](manage-payment-methods.md).
 
 5. After you've updated the credit card information or changed the credit card that is used to pay for the subscription, select **Submit**. You'll see a confirmation message that says "Your payment method has been updated and all outstanding charges are settled. Thank you."
 
@@ -95,7 +104,7 @@ If you pay by invoice for your subscription, you'll get an email that says your 
 Unfortunately, if your subscription is set up to pay by invoice, we can't accept online payments directly. You can, however, [change your payment method to credit card or bank account](change-payment-method.md), and the amount due will be automatically charged to your card or account after each service period. For Azure, see [How to change the credit card used to pay for an Azure subscription](https://go.microsoft.com/fwlink/p/?LinkId=718057).
 
 > [!NOTE]
-> If you're switching to pay by automatic credit card payments, be sure to first pay all outstanding balances. Check your billing statement for payment options and instructions. For more information, see [Understand your invoice](understand-your-invoice2.md).
+> If you're switching to pay by automatic credit card payments, be sure to first pay all outstanding balances. Check your billing statement for payment options and instructions. For more information, see [Understand your bill or invoice](understand-your-invoice2.md).
 
 ### Where do I send my check or EFT payment?
 
@@ -298,6 +307,6 @@ If your original reasons for choosing invoice, credit card, or bank account have
 
 ## Related articles
 
-[Add, update, or remove a credit card or bank account](add-update-or-remove-credit-card-or-bank-account.md)
+[Manage payment methods](manage-payment-methods.md)
 
-[Understand your invoice](understand-your-invoice2.md)
+[Understand your bill or invoice](understand-your-invoice2.md)

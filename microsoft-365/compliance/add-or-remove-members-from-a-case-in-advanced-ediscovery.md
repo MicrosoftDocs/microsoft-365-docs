@@ -15,8 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: ""
+description: "Learn how to add or remove the members who can access a case when managing an Advanced eDiscovery case."
+ms.custom: seo-marvel-mar2020
 ---
 # Add or remove members from a case
 

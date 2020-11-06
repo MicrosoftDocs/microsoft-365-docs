@@ -2,12 +2,12 @@
 title: "Reference Policies, practices, and guidelines"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/09/2016
+ms.date:
 audience: ITPro
-ms.topic: reference
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -20,15 +20,18 @@ description: "Microsoft has developed various policies, procedures, and adopted 
 
 # Reference: Policies, practices, and guidelines
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Microsoft is dedicated to helping provide the most trusted user experience on the web. Therefore, Microsoft has developed various policies, procedures, and adopted several industry best practices to help protect our users from abusive, unwanted, or malicious email. Senders attempting to send email to users should ensure they fully understand and are following the guidance in this article to help in this effort and to help avoid potential delivery issues.
 
 If you are not in compliance with these policies and guidelines, it may not be possible for our support team to assist you. If you are adhering to the guidelines, practices, and policies presented in this article and are still experiencing delivery issues based on your sending IP address, please follow the steps to submit a delisting request. For instructions, see [Use the delist portal to remove yourself from the blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## General Microsoft policies
 
-Email sent to Microsoft 365 users must comply with all Microsoft policies governing email transmission and use of Office 365.
+Email sent to Microsoft 365 users must comply with all Microsoft policies governing email transmission and use of Microsoft 365.
 
-- Terms of Services applicable to Office 365; in particular, the prohibition against using the service to spam or distribute malware
+- Terms of Services applicable to Microsoft 365; in particular, the prohibition against using the service to spam or distribute malware.
 
 - [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement/)
 
@@ -38,7 +41,7 @@ Email sent to Microsoft 365 users must adhere to all applicable laws and regulat
 
 - [CAN-SPAM Act: A Compliance Guide for Business](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
-- ["Remove Me" Responses and Responsibilities: Email Marketers Must Honor "Unsubscribe" Claims](https://www.lawpublish.com/ftc-emai-marketers-unsubscribe-claims.mdl)
+- ["Remove Me" Responses and Responsibilities: Email Marketers Must Honor "Unsubscribe" Claims](https://www.lawpublish.com/ftc-emai-marketers-unsubscribe-claims.html)
 
 ## Technical guidelines
 
@@ -80,7 +83,7 @@ Microsoft actively works with industry bodies and service providers in order to 
 
 - [Online Trust Alliance](https://www.otalliance.org/resources)
 
-- [Email Sender &amp; Provider Coalition](https://www.espcoalition.org/)
+- [Email Sender & Provider Coalition](https://www.espcoalition.org/)
 
 ## Abuse and spam reporting
 
