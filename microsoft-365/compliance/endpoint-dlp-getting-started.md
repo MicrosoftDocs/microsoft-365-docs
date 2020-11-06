@@ -169,7 +169,7 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 
 1. Open the Data loss prevention page in the Microsoft 365 Compliance center and choose Alerts.
 
-2. Refer to the procedures in [How to configure and view alerts for your DLP policies](https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide) to view alerts for your Endpoint DLP policies.
+2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
 
 ### Viewing Endpoint DLP data in activity explorer
