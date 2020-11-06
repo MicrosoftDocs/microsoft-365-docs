@@ -31,7 +31,7 @@ These resources are available to download from the [Data Protection Resources, F
 
 Applicable workloads: SharePoint, OneDrive, Teams, Exchange, and Skype for Business
 
-Released October 2020, this report has been produced in partnership with Cohasset Associates, Inc. (Cohasset) to assess the capabilities of Microsoft 365 services for recording, storing, and managing requirements for electronic records, as specified by:  
+Released November 2020, this report has been produced in partnership with Cohasset Associates, Inc. (Cohasset) to assess the capabilities of Microsoft 365 services for recording, storing, and managing requirements for electronic records, as specified by:  
 
 - Securities and Exchange Commission (SEC) in 17 CFR § 240.17a-4(f), which regulates exchange members, brokers or dealers.  
 
