@@ -291,7 +291,9 @@
       href: ./office-365-security/index.md
       items: 
         - name: Overview
-          items: 
+          items:
+            - name: Security roadmap
+              href: ./office-365-security/security-roadmap.md
             - name: Exchange Online Protection
               items: 
                 - name: Exchange Online Protection overview
@@ -318,8 +320,6 @@
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: New Microsoft 365 security center
               href: ./mtp/overview-security-center.md
-            - name: Security roadmap
-              href: ./office-365-security/security-roadmap.md
             - name: Threat Explorer (and real-time detections)
               href: ./office-365-security/threat-explorer.md
             - name: AIR overview
@@ -376,7 +376,9 @@
               href: ./office-365-security/siem-server-integration.md
             - name: SIEM integration with Defender for Office 365
               href: ./office-365-security/siem-integration-with-office-365-ti.md
-            - name: Configure anti-phishing policies
+            - name: Secure by default
+              href: ./office-365-security/secure-by-default.md
+            - name: Configure ATP anti-phishing policies
               href: ./office-365-security/configure-atp-anti-phishing-policies.md
             - name: Configure anti-malware policies
               href: ./office-365-security/configure-anti-malware-policies.md
