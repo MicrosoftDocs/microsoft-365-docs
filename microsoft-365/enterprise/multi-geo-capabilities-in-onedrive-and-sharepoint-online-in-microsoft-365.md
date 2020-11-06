@@ -13,6 +13,8 @@ ms.custom:
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content
+- m365solution-scenario
+- m365solution-spintranet
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: "Expand your Microsoft 365 presence to multiple geographic regions with multi-geo capabilities in OneDrive Online."
