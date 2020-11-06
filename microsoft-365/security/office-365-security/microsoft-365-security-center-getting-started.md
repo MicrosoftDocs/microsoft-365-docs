@@ -17,7 +17,7 @@ ms.collection:
 description: "Manage security for Office 365 and endpoint devices in the same place, the Microsoft 365 Security center. This article outlines what's new and where to find things."
 ---
 
-# The Microsoft 365 Security center
+# Getting started with the Microsoft 365 Security center
 
 The new [Microsoft 365 security](https://security.microsoft.com) center combines security capabilities that protect, detect, investigate, and respond to email, collaboration, *and* device threats. This security center brings together features in Microsoft Defender for Endpoint (MSDE), with Microsoft Defender for Office 365 (MSDO) features.
 
@@ -34,6 +34,8 @@ This table is a quick reference of MSDO areas where change has occurred between 
 |     |    [Review](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)     |
 |     |    [Threat Tracker ](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet&branch=pr-en-us-5758)    |
 |     |          |
+
+Also, check the 'Related Information' section at the bottom of this article for anything instructive that wouldn't fit here.
 
 ## Advanced Hunting example for MSDO Security Operations Teams
 
@@ -53,7 +55,7 @@ Along with a [link](https://docs.microsoft.com/en-us/microsoft-365/security/offi
 
 The last step in 'Getting Started' is protecting users with **Zero-Hour auto purge**, also known as ZAP. Knowing if your efforts to ZAP a suspicious or malicious mail, post-delivery, were successful can be very important.
 
-MSDO security operations teams can monitor ZAP misses by taking their next steps [here](https://security.microsoft.com/advanced-hunting), under **Hunting** > **Advanced Hunting**.
+Quickly navigating to Kusto query language to hunt for issues is an advantage of converging these two security centers. MSDO security operations teams can monitor ZAP misses by taking their next steps [here](https://security.microsoft.com/advanced-hunting), under **Hunting** > **Advanced Hunting**.
 
 1. On the Advanced Hunting page, click Query.
 1. Copy the query below into the query window.
