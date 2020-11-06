@@ -30,7 +30,7 @@ In the graph you can see:
 - **Predicted compromise rate** which reflects the average compromise rate for simulations using the same type of payload across tenants using Attack simulation training.
 - **Actual compromise rate** reflects the percentage of employees that fell for the simulation.
 
-Additionally, *<number> less susceptible to phishing* indicates how many employees were able to successfully pass a simulation after previously falling for one and attending their assigned training, while *<percent%> better than predicted rate* indicates how employees did overall in contrast with the predicted compromise rate.
+Additionally, `<number> less susceptible to phishing` reflects the difference between actual number of employees compromised by the attack and the predicted compromise rate. This number of employees is less likely to be compromised by similar attacks in the future, while `<percent%> better than predicted rate` indicates how employees did overall in contrast with the predicted compromise rate.
 
 ![Behavior impact card on Attack simulation training overview](../../media/attack-sim-preview-behavior-impact-card.png)
 
