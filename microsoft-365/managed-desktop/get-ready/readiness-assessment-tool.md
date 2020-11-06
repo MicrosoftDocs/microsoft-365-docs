@@ -17,7 +17,7 @@ For the smoothest possible experience when you enroll in Microsoft Managed Deskt
 
 The tool checks settings in Microsoft Endpoint Manager (specifically, Microsoft Intune), Azure Active Directory (Azure AD), and Microsoft 365 to ensure they will work with Microsoft Managed Desktop. Microsoft Managed Desktop retains the data associated with these checks for 12 months after the last time you run a check in your Azure AD organization (tenant). After 12 months, we retain it in de-identified form.  You can choose to delete the data we collect.
 
-Anyone with at least the Intune Administrator role will be able to run this tool, but three of the checks ([Certificate connectors](readiness-assessment-fix.md#certificate-connectors), [Multi-factor authentication](readiness-assessment-fix.md#multi-factor-authentication), and [Self-service Password Reset](readiness-assessment-fix.md#self-service-password-reset)) require additional permissions.
+Anyone with at least the Intune Administrator role will be able to run this tool, but two of the checks ([Certificate connectors](readiness-assessment-fix.md#certificate-connectors) and [Multi-factor authentication](readiness-assessment-fix.md#multi-factor-authentication) require additional permissions.
  
 The assessment tool checks these items:
 
