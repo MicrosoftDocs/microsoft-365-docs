@@ -463,6 +463,12 @@
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
             - name: Attack Simulator in Defender for Office 365
               href: ./office-365-security/attack-simulator.md
+            - name: Simulate a phishing attack with Attack simulation training
+              href: ./office-365-security/attack-simulation-training.md
+            - name: Create a custom payload for Attack simulation training
+              href: ./office-365-security/attack-simulation-training-payloads.md
+            - name: Gain insights through Attack simulation training
+              href: ./office-365-security/attack-simulation-training-insights.md
             - name: Recommended settings for configuring EOP and Defender for Office 365 Security
               href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: Best practices for configuring EOP
