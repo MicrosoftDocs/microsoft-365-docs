@@ -176,7 +176,7 @@ You can configure spoof intelligence settings in the default anti-phishing polic
 
 - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
-- [Configure anti-phishing policies in Microsoft Defender for Office 365 in Microsoft 365](configure-atp-anti-phishing-policies.md).
+- [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 ## How do you know these procedures worked?
 

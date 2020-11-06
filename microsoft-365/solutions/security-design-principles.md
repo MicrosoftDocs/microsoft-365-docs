@@ -1,6 +1,6 @@
 ---
-title: Security hurdles you can sail over — One architect’s viewpoint
-description: Description.
+title: Microsoft 365 Enterprise resource planning - Cybersecurity architecture
+description: Learn how to overcome security challenges in Microsoft Enterprise architecture from Kozeta Garrett, Cybersecurity Architect at Microsoft.
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
@@ -11,7 +11,8 @@ localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: 
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
 ---
 
