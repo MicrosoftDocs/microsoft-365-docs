@@ -27,6 +27,19 @@ Advanced eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve
 
 This article discusses the steps necessary to set up Advanced eDiscovery. This includes ensuring the proper licensing required to access Advanced eDiscovery and add custodians to cases, as well as assigning permissions to your legal and investigation team so they can access and manage cases. This article also provides a high-level overview of using cases to manage the Advanced eDiscovery workflow for a legal investigation.
 
+## Advanced eDiscovery architecture in Microsoft 365
+
+Here's an Advanced eDiscovery architecture diagram to help you get started. These illustrations show the end-to-end workflow in a single-geo environment, the end-to-end workflow in a multi-geo environment, and the end-to-end data flow that's aligned with the [Electronic Discovery Reference Model (EDRM)](overview-ediscovery-20.md#alignment-with-edrm).
+
+[![Model poster: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[View as an image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[Download as a PDF file](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
+
+[Download as a Visio file](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
+
+  
 ## Step 1: Verify and assign appropriate licenses
 
 Licensing for Advanced eDiscovery requires the appropriate organization subscription and per-user licensing.
@@ -159,7 +172,7 @@ To get you started using Advanced eDiscovery, here's a simple workflow that alig
 
    There's also a special kind of review set that you can add data to, called a *conversation review set*. These types of reviews sets provide conversation reconstruction capabilities to reconstruct, review, and export threaded conversations like those in Microsoft Teams. For more information, see [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
 
-4. **Review and analyze data in a review set**. Now that data is in a review set, you can use a wide-variety of tools and capabilities to view and analyze the case data with the goal of reducing the data set to what is most relevant to the case you're investigation. Here's a list of some tools and capabilities that you can use during this process.
+4. **Review and analyze data in a review set**. Now that data is in a review set, you can use a wide-variety of tools and capabilities to view and analyze the case data with the goal of reducing the data set to what is most relevant to the case you're investigating. Here's a list of some tools and capabilities that you can use during this process.
 
    - [View documents](view-documents-in-review-set.md). This includes viewing the metadata for each document in a review set, and viewing the document in its native version or text version.
 
