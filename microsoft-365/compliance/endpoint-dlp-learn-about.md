@@ -88,7 +88,7 @@ If you have onboarded devices through [Microsoft Defender Advanced Threat Protec
 > [!NOTE]
 > .txt and source code files are not audited by default, DLP evaluates them against the applied policies and then user actions are audited or blocked accordingly.
 
-You can view alerts related to DLP policies enforced on endpoint devices by going to the [DLP Alerts Management Dashboard](https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide).
+You can view alerts related to DLP policies enforced on endpoint devices by going to the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md).
 
 ![Alert info](../media/Alert-info-1.png)
 
