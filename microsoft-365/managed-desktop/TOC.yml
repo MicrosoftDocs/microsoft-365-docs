@@ -72,7 +72,7 @@
           href: get-ready/readiness-assessment-tool.md
           items:
             - name: Fix issues found by the readiness assessment tool
-              href: get-ready/readiness-assement-fix.html
+              href: get-ready/readiness-assessment-fix.md
     - name: Get started with Microsoft Managed Desktop
       href: get-started/index.md
       items: 
