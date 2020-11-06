@@ -185,7 +185,7 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 
 #### Alerts and Incident reports
 
-When a rule is matched, you can send an alert email to your compliance office ( or any person(s) you choose) with details of the alert. This alert email will carry a link of the [DLP Alerts Management Dashboard](https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide) which the compliance officer can go to view the details of alert and events. The dashboard contains details of the event that triggered the alert along with details of the DLP policy matched and the sensitive content detected.
+When a rule is matched, you can send an alert email to your compliance officer ( or any person(s) you choose) with details of the alert. This alert email will carry a link of the [DLP Alerts Management Dashboard](https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide) which the compliance officer can go to view the details of alert and events. The dashboard contains details of the event that triggered the alert along with details of the DLP policy matched and the sensitive content detected.
 
 In addition, you can also send an incident report with details of the event. This report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
   
