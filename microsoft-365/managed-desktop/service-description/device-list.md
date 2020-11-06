@@ -54,7 +54,7 @@ The links to devices here are for your reference only. If you want to order devi
 | [HP EliteBook x360 1040 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1040-g7-notebook-pc-customizable-8wa57av-mb) | 256 GB / Intel i5 / 8 GB RAM | SKU with 8XW08AV| Aug 31, 2021 | Aug 31, 2024 |
 | [HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ21AV | Mar 31, 2021 | Mar 31, 2024 |
 | [HP Z2 Mini G5 Workstation](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 GB / Intel i5 / 8 GB RAM | SKU with 8QR48AV| Dec 31, 2021 | Dec 31, 2024 |
-| [HP ZBook 14u/15u G6 Mobile Workstation](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB / Intel i5 / 8 GB RAM | SKU with 9JD63AV, IR camera required | Nov 30, 2020 | Nov 30, 2023 |
+| **\*[HP ZBook Firefly 14/15 G7 Mobile Workstation](https://store.hp.com/us/en/mdp/laptops/hp-zbook-14u-mobile-workstation)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ22AV, IR camera required | Nov 30, 2021 | Nov 30, 2024 |
 
 ### Microsoft
 

@@ -52,7 +52,7 @@ To configure anti-phishing policies, see the following articles:
 
 - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
 
-- [Configure anti-phishing policies in Microsoft Defender for Office 365 in Microsoft 365](configure-atp-anti-phishing-policies.md)
+- [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)
 
 The rest of this article describes the settings that are available in anti-phishing policies in EOP and Defender for Office 365.
 
