@@ -69,7 +69,7 @@ Priority accounts is a type of built-in user tag (known as a _system tag_) that 
 
 For more information about priority accounts in action, see this blog post: [Announcing Priority Account Protection in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385).
 
-You can also create and use custom user tags to further identify and classify your HVEs. For more information, see [User tags in Office 365 ATP](user-tags.md). Note that you can manage priority accounts (system tags) in the same interface as user tags.
+You can also create and use custom user tags to further identify and classify your HVEs. For more information, see [User tags](user-tags.md). Note that you can manage priority accounts (system tags) in the same interface as user tags.
 
 ### Configure activity alerts for priority accounts and/or user tags
 
