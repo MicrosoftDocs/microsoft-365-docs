@@ -110,9 +110,9 @@ The most basic filtering that you can do is the start date/time and the end date
 
 To further filter the view, you can do single property with multiple values filtering by clicking the **Campaign type** button, making your selection, and then clicking **Refresh**.
 
-The available campaign properties are described in the following list:
+The filterable campaign properties that are available in the **Campaign type** button are described in the following list:
 
-- Basic
+- **Basic**:
   - **Campaign type**: Select **Malware** or **Phish**. Clearing the selections has the same result as selecting both.
   - **Campaign name**
   - **Campaign subtype**
@@ -122,23 +122,26 @@ The available campaign properties are described in the following list:
   - **Subject**
   - **Attachment filename**
   - **Malware family**
+  - **Tags**: Users or groups that have had the specified user tag applied (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+  - **System overrides**
   - **Delivery action**
+  - **Additional action**
+  - **Directionality**
   - **Detection technology**
-  - **Tags**
+  - **Original delivery location**
+  - **Latest delivery location**
   - **System overrides**
 
-- Advanced
+- **Advanced**:
   - **Internet message ID**: Available in the **Message-ID** header field in the message header. An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).
   - **Network message ID**: A GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header field in the message header.
   - **Sender IP**
   - **Attachment SHA256**: To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt: `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.
-
   - **Cluster ID**
-
   - **Alert Policy ID**
+  - **ZAP URL signal**
 
-- URLs
-
+- **URLs**:
   - **URL domain**
   - **URL domain and path**
   - **URL**
