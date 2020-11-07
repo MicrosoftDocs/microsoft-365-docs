@@ -37,7 +37,7 @@ To learn more about malware and Microsoft Defender Antivirus, see the following 
 - [How Microsoft identifies malware and potentially unwanted applications](/windows/security/threat-protection/intelligence/criteria)
 - [Next-generation protection in Windows 10](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 
-## What happens when a non-Microsoft antivirus solution is used? 
+## What happens when a non-Microsoft antivirus solution is used 
 
 Microsoft Defender Antivirus is part of the operating system and is enabled on devices that are running Windows 10. However, if you're using a non-Microsoft antivirus solution and you aren't using [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), then Microsoft Defender Antivirus automatically goes into disabled mode.  
 
@@ -46,9 +46,9 @@ Microsoft Defender Antivirus is part of the operating system and is enabled on d
 
 When in disabled mode, users and customers can still use Microsoft Defender Antivirus for scheduled or on-demand scans to identify threats; however, in this situation, Microsoft Defender Antivirus:
 
-- isn't used as the default antivirus app
-- doesn't actively scan files for threats
-- doesn't remediate, or resolve, threats
+- isn't used as the default antivirus app.
+- doesn't actively scan files for threats.
+- doesn't resolve threats.
 
 If you uninstall the non-Microsoft antivirus solution, Microsoft Defender Antivirus will automatically go into active mode to protect your Windows devices from threats.
 
@@ -69,7 +69,7 @@ When threats are detected by Microsoft Defender Antivirus, the following things 
 In most cases, you don't need to take any further action. As soon as a malicious file or program is detected on a device, Microsoft Defender Antivirus blocks it and prevents it from running. Plus, newly detected threats are added to the antivirus and antimalware engine so that your other devices and users are protected, as well.  
 
 If there's an action you need to take, such as approving the removal of a malicious file, you'll see that in the notification you receive.
-To learn more about a specific threat, visit the Microsoft Security Intelligence Threats site (https://www.microsoft.com/wdsi/threats) where you can perform the following actions: 
+To learn more about a specific threat, visit the Microsoft Security Intelligence Threats site (https://www.microsoft.com/wdsi/threats), where you can perform the following actions: 
 
 - View current information about top threats
 - View the latest threats for a specific region
