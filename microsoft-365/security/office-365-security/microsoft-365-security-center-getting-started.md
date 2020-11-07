@@ -27,19 +27,19 @@ This table is a quick reference of MSDO areas where change has occurred between 
 
 |**Changed**  |**Unchanged**  |
 |---------|---------|
-|Dashboard     |  [Explorer](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet&branch=pr-en-us-5758)       |
-|Attack Simulator    |  [Policies & Rules](https://docs.microsoft.com/en-us/microsoft-365/compliance/alert-policies?view=o365-worldwide)       |
-|Investigation    |    [Campaign](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/campaigns?view=o365-worldwide)     |
-|     |    [Submissions](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide)     |
-|     |    [Review](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)     |
-|     |    [Threat Tracker ](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet&branch=pr-en-us-5758)    |
+|Dashboard     |  [Explorer](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet&branch=pr-en-us-5758)       |
+|[Attack Simulator ](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights?view=o365-worldwide)   |  [Policies & Rules](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide)       |
+|Investigation    |    [Campaign](https://docs.microsoft.com/microsoft-365/security/office-365-security/campaigns?view=o365-worldwide)     |
+|     |    [Submissions](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide)     |
+|     |    [Review](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)     |
+|     |    [Threat Tracker ](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet&branch=pr-en-us-5758)    |
 |     |          |
 
 Also, check the 'Related Information' section at the bottom of this article for anything instructive that wouldn't fit here.
 
 ## Advanced Hunting example for MSDO Security Operations Teams
 
-The *[Getting Started](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#getting-started)* section of the [Microsoft Defender for Office 365 article](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) has logical early configuration chunks that look like this:
+The *[Getting Started](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#getting-started)* section of the [Microsoft Defender for Office 365 article](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) has logical early configuration chunks that look like this:
 
 - Configure everything with 'anti' in the name.
     - anti-malware
@@ -51,7 +51,7 @@ The *[Getting Started](https://docs.microsoft.com/en-us/microsoft-365/security/o
 - Defend the workloads (ex. SharePoint Online, OneDrive, and Teams)
 - Protect with Zero-Hour auto purge
 
-Along with a [link](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true) to jump right in and get configuration going on Day 1.
+Along with a [link](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true) to jump right in and get configuration going on Day 1.
 
 The last step in 'Getting Started' is protecting users with **Zero-Hour auto purge**, also known as ZAP. Knowing if your efforts to ZAP a suspicious or malicious mail, post-delivery, were successful can be very important.
 
@@ -109,7 +109,7 @@ As soon as you arrive at this information page, you’ll also see a pop-up for s
 The home page also welcomes you to the new Microsoft 365 security center experience with three headings **Intro**, **Next steps**, and **Give feedback**.
 
 - The links under ‘Next steps’ will take you to the [Secure Score](https://security.microsoft.com/securescore?viewid=overview) page for deeper analysis of your security posture. Otherwise, clicking to [Proactively hunt](https://security.microsoft.com/advanced-hunting) for intrusions will take you directly to Hunting > Advanced Hunting.
-- ‘Give feedback’ will allow you to both [join the Windows Insider program](https://insider.windows.com/en-us/) and preview coming changes, and the **leave feedback** on your experiences with the portal.
+- ‘Give feedback’ will allow you to both [join the Windows Insider program](https://insider.windows.com/) and preview coming changes, and the **leave feedback** on your experiences with the portal.
 
 The ‘Welcome’ page will disappear after you navigate through the Next button to Close. Be sure to take note of any URLs you’d want for your records, or bookmark this page (since the URLs are listed above).
 
@@ -129,15 +129,17 @@ The way you access Microsoft Defender for Office 365 (MSDO, but formerly known a
 in one easy to navigate location. This means security for your Office 365 or Microsoft 365 subscription, and for the devices that connect to it, is done from one portal.
 
 > [!NOTE]
-> If you know MSDO (once Office 365 ATP) from  the core overview article ‘[Office 365 Security overview](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/?view=o365-worldwide)’, then you're aware much of the Microsoft documentation about MSDO can be roughly broken down in Security Administrator and Security Operations topics. <p>The Microsoft 365 Security center has the same strengths. Many of the administration topics appear under ‘Policies & Rules’, and ‘Dashboard’. Long term security investigation, detection, defense, and response as per Security Operations, takes place in the other sections of the Email & Collaboration section. -->
+> If you know MSDO (once Office 365 ATP) from  the core overview article ‘[Office 365 Security overview](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide)’, then you're aware much of the Microsoft documentation about MSDO can be roughly broken down in Security Administrator and Security Operations topics. <p>The Microsoft 365 Security center has the same strengths. Many of the administration topics appear under ‘Policies & Rules’, and ‘Dashboard’. Long term security investigation, detection, defense, and response as per Security Operations, takes place in the other sections of the Email & Collaboration section. -->
 
 
 ## Related information
 
-[The Action center](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)
+[The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)
 
-[Email & collaboration alerts](https://docs.microsoft.com/en-us/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies)
+[Email & collaboration alerts](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies)
 
-[Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/advanced-hunting-query-emails-devices?view=o365-worldwide)
+[Hunt for threats across devices, emails, apps, and identities](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices?view=o365-worldwide)
 
-[Custom detection rules](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
+[Custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
+
+**Attack Simulator** [Create a phishing attack simulation](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide) and [create a payload for training your people](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-worldwide)
