@@ -58,11 +58,11 @@ The following example assumes you need email from contoso.com to skip spam filte
 
    - **Mail flow rule condition**: **A message header** \> **includes any of these words** \> **Header name**: `Authentication-Results` \> **Header value**: `dmarc=pass` or `dmarc=bestguesspass`.
 
-     This condition checks the sender authentication status of the sending email domain to ensure that the sending domain is not being spoofed. For more information about email authentication, see [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md).
+     This condition checks the email authentication status of the sending email domain to ensure that the sending domain is not being spoofed. For more information about email authentication, see [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md).
 
    - **IP Allow List**: Specify the source IP address or address range in the connection filter policy.
   
-     Use this setting if the sending domain does not have authentication. Be as restrictive as possible when it comes to the source IP addresses in the IP Allow List. We recommend an IP address range of /24 or less (less is better). Do not use IP address ranges that belong to consumer services (for example, outlook.com) or shared infrastructures.
+     Use this setting if the sending domain does not use email authentication. Be as restrictive as possible when it comes to the source IP addresses in the IP Allow List. We recommend an IP address range of /24 or less (less is better). Do not use IP address ranges that belong to consumer services (for example, outlook.com) or shared infrastructures.
 
    > [!IMPORTANT]
    >
@@ -82,7 +82,7 @@ The following example assumes you need email from contoso.com to skip spam filte
 
    a. **Modify the message properties** \> **set the spam confidence level (SCL)** \> **Bypass spam filtering**.
 
-   b. **A message header** \> **includes any of these words** \> **Header name**: \<CustomHeaderName\> **Header value**: \<CustomHeaderValue\>.
+   b. **Modify the message properties** \> **set a message header**: **Set the message header** \<CustomHeaderName\> **to the value** \<CustomHeaderValue\>.
 
       For example, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. If you have more than one domain in the rule, you can customize the header text as appropriate.
 
