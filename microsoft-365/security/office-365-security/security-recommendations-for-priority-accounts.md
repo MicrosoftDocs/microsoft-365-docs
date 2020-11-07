@@ -73,9 +73,9 @@ You can also create custom tags to further identify and classify your HVEs. For 
 
 ### HVEs in activity alerts
 
-### HVEs in Explorer or Real-time detections
+### HVEs in Threat Explorer or Real-time detections
 
-[Tags in Threat Explorer](threat-explorer.md#tags-in-threat-explorer)
+In **Threat Explorer** (Defender for Office 365 Plan 2) or **Real-time detections** (Defender for Office 365 Plan 1), user tags are visible in the Email grid view and the Email details flyout. User tags are also available as a filterable property. For more information, see  [Tags in Threat Explorer](threat-explorer.md#tags-in-threat-explorer).
 
 ### HVEs in Campaign Views
 
