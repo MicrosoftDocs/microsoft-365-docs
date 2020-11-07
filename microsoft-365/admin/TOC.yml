@@ -282,10 +282,10 @@
               href: ../business/security-features.md
             - name: Increase threat protection
               href: ../business/increase-threat-protection.md
-            - name: Set up compliance features
-              href: ../business/set-up-compliance.md
             - name: Threats detected by Microsoft Defender Antivirus
               href: ../business/threats-detected-defender-av.md  
+            - name: Set up compliance features
+              href: ../business/set-up-compliance.md
         - name: Secure score
           href: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new
         - name: A guide to GDPR compliance
