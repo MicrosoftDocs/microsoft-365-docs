@@ -73,4 +73,13 @@ You can also create and use custom user tags to further identify and classify yo
 
 ### Configure activity alerts for priority accounts and/or user tags
 
-### Use exist reports to view information about HVEs
+### Use reports to view information about HVEs
+
+### Threat protection status report in the Security & Compliance Center
+
+In virtually all of the views and detail tables in the **Threat protection status report** in the Security & Compliance Center, you can filter the results by user tag. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+
+### Email issues for priority accounts report in the Exchange admin center
+
+The **Email issues for priority accounts** report in the Exchange admin center (EAC) contains information about undelivered and delayed messages for priority accounts. For more information, see [Email issues for priority accounts report](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).
+
