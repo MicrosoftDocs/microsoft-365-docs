@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 audience: Admin
-ms.topic: article                  # (Required) Choose from: article, conceptual, reference, troubleshooting 
+ms.topic: article 
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -14,7 +14,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
-description: "Brief summary of article here"   # (Required) Important for SEO. Recommended character length is 115-145 characters.
+description: "Learn how Microsoft Defender Antivirus protects your Windows devices from software threats, such as viruses, malware, and spyware."
 ---
 
 # Threats detected by Microsoft Defender Antivirus
