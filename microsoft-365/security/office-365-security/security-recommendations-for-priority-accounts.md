@@ -59,7 +59,7 @@ For HVEs, we recommend applying the Strict profile in preset security policies.
 
 Preset security policies are a central location to apply the recommended Strict (or Standard) policy settings in EOP and Defender for Office 365. For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
-For details about the Strict policies and settings, see [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md).
+For details about the default and Strict policy settings, see [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md).
 
 ## User tags in Microsoft 365 or Office 365 E3 or E5
 
@@ -67,15 +67,21 @@ User tags are a way to quickly identify and classify specific users or groups of
 
 Priority accounts is a type of built-in user tag (known as a _system tag_) that you can use to identify HVEs. For more information, see [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). Note that priority accounts has specific subscription, number of licenses, and active user requirements.
 
-For more information about priority accounts in action, see this blog post: [Announcing Priority Account Protection in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385).
+You can also create custom tags to further identify and classify your HVEs. For more information, see [User tags](user-tags.md). Note that you can manage priority accounts (system tags) in the same interface as custom user tags.
 
-You can also create and use custom user tags to further identify and classify your HVEs. For more information, see [User tags](user-tags.md). Note that you can manage priority accounts (system tags) in the same interface as user tags.
+## HVEs in reports and investigations in Microsoft 365
 
-### Configure activity alerts for priority accounts and/or user tags
+### HVEs in activity alerts
 
-### Use reports to view information about HVEs
+### HVEs in Explorer or Real-time detections
 
-### Threat protection status report in the Security & Compliance Center
+[Tags in Threat Explorer](threat-explorer.md#tags-in-threat-explorer)
+
+### HVEs in Campaign Views
+
+User tags are one of many filterable properties in Campaign Views in Microsoft Defender for Office 365 Plan 2. For more information, see [Campaign Views](campaigns.md).
+
+### HVEs in the Threat protection status report in the Security & Compliance Center
 
 In virtually all of the views and detail tables in the **Threat protection status report** in the Security & Compliance Center, you can filter the results by user tag. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
 
@@ -83,3 +89,6 @@ In virtually all of the views and detail tables in the **Threat protection statu
 
 The **Email issues for priority accounts** report in the Exchange admin center (EAC) contains information about undelivered and delayed messages for priority accounts. For more information, see [Email issues for priority accounts report](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).
 
+## See also
+
+[Announcing Priority Account Protection in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)
