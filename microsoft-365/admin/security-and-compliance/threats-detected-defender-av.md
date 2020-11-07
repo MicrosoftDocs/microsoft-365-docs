@@ -21,14 +21,14 @@ description: "Brief summary of article here"   # (Required) Important for SEO. R
 
 Microsoft Defender Antivirus protects your Windows devices from software threats, such as viruses, malware, and spyware.
 
-- Viruses typically spread by attaching their code to other files on your device or network, and can cause infected programs to not run correctly.
-- Malware includes malicious files, applications, and code that can cause damage and disrupt normal use of devices. In addition, malware can allow unauthorized access, use system resources, steal passwords, lock you out of your computer and ask for ransom, and more.
+- Viruses typically spread by attaching their code to other files on your device or network, and can cause infected programs to work incorrectly.
+- Malware includes malicious files, applications, and code that can cause damage and disrupt normal use of devices. Also, malware can allow unauthorized access, use system resources, steal passwords and account information, lock you out of your computer and ask for ransom, and more.
 - Spyware collects data, such as web-browsing activity, and sends the data to remote servers.
  
 To provide threat protection, Microsoft Defender Antivirus uses several methods. These methods include cloud-delivered protection, real-time protection, and dedicated protection updates.
 
 - Cloud-delivered protection helps provide near-instant detection and blocking of new and emerging threats.
-- Always-on scanning uses file and process behavior monitoring and other heuristics (this is also known as "real-time protection").
+- Always-on scanning uses file and process behavior monitoring and other heuristics (also known as "real-time protection").
 - Dedicated protection updates are based on machine learning, human and automated big-data analysis, and in-depth threat resistance research. 
 
 To learn more about malware and Microsoft Defender Antivirus, see the following articles: 
@@ -39,38 +39,47 @@ To learn more about malware and Microsoft Defender Antivirus, see the following 
 
 ## What happens when a non-Microsoft antivirus solution is used? 
 
-Microsoft Defender Antivirus is part of the operating system and is enabled on devices that are running Windows 10. But if you are using a non-Microsoft antivirus/antimalware solution, and you are not using [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), then Microsoft Defender Antivirus automatically goes into disabled mode.  
+Microsoft Defender Antivirus is part of the operating system and is enabled on devices that are running Windows 10. However, if you're using a non-Microsoft antivirus solution and you aren't using [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), then Microsoft Defender Antivirus automatically goes into disabled mode.  
 
 > [!NOTE]
-> Your third-party antivirus solution must be registered with the Windows Security App after installation, which ensures that Microsoft Defender Antivirus moves to disabled mode.
+> Your non-Microsoft antivirus solution must be registered with the Windows Security App after installation to ensure that Microsoft Defender Antivirus moves to disabled mode.
 
 When in disabled mode, users and customers can still use Microsoft Defender Antivirus for scheduled or on-demand scans to identify threats; however, in this situation, Microsoft Defender Antivirus:
 
-- is not used as the default antivirus app
-- does not actively scan files for threats
-- does not remediate, or resolve, threats
+- isn't used as the default antivirus app
+- doesn't actively scan files for threats
+- doesn't remediate, or resolve, threats
+
+If you uninstall the non-Microsoft antivirus solution, Microsoft Defender Antivirus will automatically go into active mode to protect your Windows devices from threats.
 
 > [!TIP]
-> - If you're using Microsoft 365, consider using Microsoft Defender Antivirus as your primary antivirus solution. Integration can mean better protection. See [Better together: Microsoft Defender Antivirus and Office 365](/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus).
-- Make sure to keep Microsoft Defender Antivirus up to date, even if you’re using a non-Microsoft antivirus solution.
+> - If you're using Microsoft 365, consider using Microsoft Defender Antivirus as your primary antivirus solution. Integration can provide better protection. See [Better together: Microsoft Defender Antivirus and Office 365](/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus).
+> - Make sure to keep Microsoft Defender Antivirus up to date, even if you're using a non-Microsoft antivirus solution.
 
-### Sub-heading (optional)
+## What to expect when threats are detected
 
-<!-- Include sub-headings, if needed. -->
+When threats are detected by Microsoft Defender Antivirus, the following things happen:
 
-## Watch: <Name of video> (optional)
+- Users receive [notifications in Windows](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e). 
+- Detections are listed in the [Windows Security app](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) (users can select **Protection history**).  
+- If your Windows 10 devices are [enrolled in Intune](/mem/intune/enrollment/windows-enrollment-methods), you'll see threat detections in the Microsoft 365 admin center (https://admin.microsoft.com) on the **Active Threats** page, which you can access from the **Microsoft Defender Antivirus** card on the **Home** page.
+    > [!NOTE]
+    > The **Microsoft Defender Antivirus** card and **Active Threats** page are being rolled out in phases, so you may not have immediate access to them.
+ 
+In most cases, you don't need to take any further action. As soon as a malicious file or program is detected on a device, Microsoft Defender Antivirus blocks it and prevents it from running. Plus, newly detected threats are added to the antivirus and antimalware engine so that your other devices and users are protected, as well.  
 
-<!-- If you include a video in your article, put it under its own H2 heading so it shows up in the "In this article" list on the right side of the article. -->
+If there's an action you need to take, such as approving the removal of a malicious file, you'll see that in the notification you receive.
+To learn more about a specific threat, visit the Microsoft Security Intelligence Threats site (https://www.microsoft.com/wdsi/threats) where you can perform the following actions: 
 
-## Next steps (optional)
-
-<!-- Include this section for how-to articles only, if needed. Recommend the next logical action or actions to take after completing the task(s) outlined in the article. Include links to relevant how-to articles (such as the next task to complete in a scenario), links to recommended reading, or any other info that you think users should or might want to do next. -->
+- View current information about top threats
+- View the latest threats for a specific region
+- Search the threat encyclopedia for details about a specific threat
 
 ## Related content
 
-<!-- Include a list of links, but do NOT use bullets. Next to each link, include the content type (choose from: article, video, blog post, link page) in parentheses. See examples below. -->
-
-[Article title](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center) (article)\
-[Video title](https://www.aka.ms/M365Btraining) (video)\
-[Blog post title](https://techcommunity.microsoft.com/t5/office-365-blog/office-365-groups-ignite-recap/ba-p/1036796) (blog post)\
-[Landing page title](https://www.aka.ms/M365Btraining) (link page)
+[Evaluate Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) (article)\
+[How to turn on real-time and cloud-delivered antivirus protection](/mem/intune/user-help/turn-on-defender-windows#turn-on-real-time-and-cloud-delivered-protection) (article)\
+[How to turn on and use Microsoft Defender Antivirus from the Windows Security app](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (article)\
+[How to turn on Microsoft Defender Antivirus by using Group Policy](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (article)\
+[How to update your antivirus definitions](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (article)\
+[How to submit malware and non-malware to Microsoft for analysis](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) (article)
