@@ -46,7 +46,7 @@ The following files can be deleted:
 
 SharePoint sites must be indexed for the retention settings to be applied. However, if items in SharePoint document libraries are configured to not appear in search results, this configuration doesn't exclude files from the retention settings.
 
-Hidden lists and hidden libraries are excluded from retention settings, and retention settings do not apply to organizing structures that include libraries, lists, and folders.
+Files in hidden lists and hidden libraries are excluded from retention settings, and retention settings do not apply to organizing structures that include libraries, lists, and folders.
 
 ## How retention works for SharePoint and OneDrive
 
