@@ -1,5 +1,5 @@
 ---
-title: "How automated investigation and response (AIR) works in Microsoft Defender for Office 365"
+title: "How automated investigation and response works in Microsoft Defender for Office 365"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -23,7 +23,7 @@ ms.custom:
 - seo-marvel-mar2020
 ---
 
-# How automated investigation and response (AIR) works in Microsoft Defender for Office 365
+# How automated investigation and response works in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
