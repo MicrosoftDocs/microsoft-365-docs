@@ -25,8 +25,8 @@ ms.custom: seo-marvel-apr2020
 
 This Accountability Readiness Checklist provides a convenient way to access information you may need to support the General Data Protection Regulation (GDPR) when using Microsoft Azure and Dynamics 365. The checklist is organized using the titles and reference number (in parentheses for each checklist topic) of a set of privacy and security controls for personal data processors drawn from:
 
-- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) security techniques requirements.
-- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) for privacy management requirements.
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail?pid=000000000030351736) for privacy management requirements.
+- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) for security techniques requirements.
 
 You can manage the items in this checklist with Compliance Manager [[16](gdpr-arc-Azure.md#16)] by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile. This control structure is also used to organize the presentation of the internal controls that Microsoft Azure and Dynamics 365 implements to support GDPR, which you can download from the [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
 
