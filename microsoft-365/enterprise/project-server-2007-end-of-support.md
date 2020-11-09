@@ -42,13 +42,13 @@ Most Microsoft products have a support lifecycle during which they get new featu
   
 - Technical support for problems that may occur.
     
-- Bug fixes for issues that are discovered and that may impact the stability and usability of the server.
+- Bug fixes for issues that may impact the stability and usability of the server.
     
-- Security fixes for vulnerabilities that are discovered and that may make the server vulnerable to security breaches.
+- Security fixes for vulnerabilities that may make the server vulnerable to security breaches.
     
 - Time zone updates.
     
-Your installation of Project Server 2007 will continue to run after this date. However, because of the changes listed previously, we strongly recommend that you migrate from Project Server 2007 as soon as practical.
+Your installation of Project Server 2007 will continue to run after this date. But because of the changes listed previously, we strongly recommend that you migrate from Project Server 2007 as soon as practical.
   
 ## What are my options?
 
@@ -60,18 +60,18 @@ If you're using Project Server 2007, you need to explore your migration options,
     
 |**Why would I prefer to migrate to Project Online**|**Why would I prefer to migrate to Project Server 2016**|
 |:-----|:-----|
-| I have mobile users.  <br/>  Costs to migrate are a significant concern (hardware, software, hours, and effort to implement, and so on).  <br/>  After migration, costs to maintain my environment are a major concern (for example, automatic updates, guaranteed uptime, and so on).  <br/> | Business rules restrict me from operating my business in the cloud.  <br/>  I need control of updates to my environment.  <br/> |
+| I have mobile users.  <br/> <br/>Costs to migrate are a significant concern (hardware, software, hours, and effort to implement). <br/><br/>  After migration, costs to maintain my environment are a major concern (for example, automatic updates, guaranteed uptime, and so on).  <br/> | Business rules restrict me from operating my business in the cloud.<br/><br/>  I need control of updates to my environment.  |
    
 > [!NOTE]
 > For more information about options for moving from your Office 2007 servers, see [Resources to help you upgrade from Office 2007 servers and clients](upgrade-from-office-2007-servers-and-products.md). Note that Project Server doesn't support a hybrid configuration, because Project Server and Project Online can't share the same resource pool. 
   
-## Important considerations when planning to migrate from Project Server 2007
+## Important considerations when you migrate from Project Server 2007
 
-Consider the following factors when you plan to migrate from Project Server 2007:
+Consider the following when you plan to migrate from Project Server 2007:
   
 - **Get help from a Microsoft Partner** - Upgrading from Project Server 2007 can be challenging and requires much preparation and planning. It might be especially challenging if you weren't the person who set up Project Server 2007 originally. Fortunately, there are Microsoft Partners who can help, whether you plan to migrate to Project Server 2016 or to Project Online. Search for a Microsoft Partner to help with your migration on the [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=841249). Search on the term  *Gold Project and Portfolio Management* to view a list of all Microsoft Partners who have expertise in Project. 
     
-- **Plan for your customizations** - Many of the customizations you made in your Project Server 2007 environment might not work when you migrate to Project Server 2016 or Project Online. There are significant differences in Project Server architecture between versions. The required operating systems, database servers, and client web browsers that are supported also differ. Plan how to test or rebuild your customizations for the new environment. Planning also provided a good opportunity to verify if a specific customization is still needed. For more information, see [Create a plan for current customizations during upgrade to SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=842061). 
+- **Plan for your customizations** - Many of the customizations you made in your Project Server 2007 environment might not work when you migrate to Project Server 2016 or Project Online. There are significant differences in Project Server architecture between versions. The required operating systems, database servers, and client web browsers that are supported also differ. Plan how to test or rebuild your customizations for the new environment. Planning also provides a good opportunity to consider whether each customization is still needed. For more information, see [Create a plan for current customizations during upgrade to SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=842061). 
     
 - **Time and patience** - Upgrade planning, execution, and testing will take time and effort, especially if you upgrade to Project Server 2016. For example, if you migrate from Project Server 2007 to Project Server 2016, you first need to migrate to Project Server 2010, check your data, and then do the same thing when you migrate to each successive version. You might want to check with a Microsoft Partner to get estimates of how long it will take and what it will cost.
     
@@ -79,11 +79,11 @@ Consider the following factors when you plan to migrate from Project Server 2007
 
 If you choose to migrate from Project Server 2007 to Project Online, you can do the following to manually migrate your project plan data:
   
-1. Save your project plans from Project Server 2003 to.mpp format.
+1. Save your project plans from Project Server 2003 to .mpp format.
     
 2. In Project Professional 2013, Project Professional 2016, or the Project Online Desktop Client, open each .mpp file, and then save and publish it to Project Online.
     
-You can manually create your Microsoft Project Web App (PWA) configuration in Project Online (for example, recreate any needed custom fields or enterprise calendars). Microsoft Partners can also help with this process.
+You can manually create your Microsoft Project Web App (PWA) configuration in Project Online. For example, recreate any needed custom fields or enterprise calendars. Microsoft Partners can also help with this process.
   
 Key resources:
   
@@ -96,12 +96,12 @@ Key resources:
 
 We strongly believe that you get the best value and user experience by migrating to Project Online. But we also understand that some organizations need to keep project data in an on-premises environment. If you choose to keep your project data on-premises, you can migrate your Project Server 2007 environment to Project Server 2010, Project Server 2013, or Project Server 2016.
   
-We recommend that you migrate to Project Server 2016 if you can't migrate to Project Online. Project Server 2016 includes all the features of previous releases of Project Server. It most closely matches the experience available with Project Online, although some features are available only in Project Online.
+If you can't migrate to Project Online, we recommend that you migrate to Project Server 2016. Project Server 2016 includes all the features of previous releases of Project Server. It most closely matches the experience available with Project Online, although some features are available only in Project Online.
   
 After each migration, you should check that your data migrated successfully.
   
 > [!NOTE]
-> If you're limited to an on-premeses solution and considering only migrating to Project Server 2010 if you are limited to an on-premises solution, it's important to note that it only has a few more years of support left. Project Server 2010 with Service Pack 2 end of support date is 10/13/2020. For more information about end of support dates, see [Microsoft Product Lifecycle Policy](https://go.microsoft.com/fwlink/p/?linkid=842066). 
+> If you're limited to an on-premeses solution and considering only migrating to Project Server 2010, it's important to note that it only has a few more years of support left. Project Server 2010 with Service Pack 2 end of support date is 10/13/2020. For more information about end of support dates, see [Microsoft Product Lifecycle Policy](https://go.microsoft.com/fwlink/p/?linkid=842066). 
   
 ### How do I migrate to Project Server 2016?
 
@@ -134,11 +134,11 @@ For details, see [Upgrade to Project Server 2010](https://go.microsoft.com/fwlin
   
 - **Database-attach upgrade:** This method only upgrades the content for your environment, not the configuration settings. It's required if you're upgrading from Office Project Server 2007 deployed on hardware that only supports a 32-bit server operating system. There are two types of database-attach upgrade methods:
     
-  - **Database-attach Full upgrade** - Migrates the project data stored in the Office Project Server 2007 databases, plus the Microsoft Project Web App site data stored in a SharePoint content database.
+  - **Database-attach *full upgrade*** - Migrates the project data stored in the Office Project Server 2007 databases, plus the Microsoft Project Web App site data stored in a SharePoint content database.
     
-  - **Database-attach Core upgrade** - Migrates only the project data stored in the Project Server databases.
+  - **Database-attach *core upgrade*** - Migrates only the project data stored in the Project Server databases.
     
-- **In-Place upgrade**: The configuration data for the farm and all content on the farm is upgraded on the existing hardware in a fixed order. When you start the in-place upgrade process, setup takes the entire farm offline. The Web sites and Microsoft Project Web App sites are unavailable until the upgrade is finished, and then setup restarts the server. After you begin an in-place upgrade, you can't pause the upgrade or roll back to the previous version. It's best to make a mirrored image of your production environment and do the in-place upgrade to this environment, not in your production environment. 
+- **In-place upgrade**: The configuration data for the farm and all content on the farm is upgraded on the existing hardware in a fixed order. When you start the upgrade process, setup takes the entire farm offline. The web sites and Microsoft Project Web App sites are unavailable until the upgrade is finished, and then setup restarts the server. After you begin an in-place upgrade, you can't pause the upgrade or roll back to the previous version. It's best to make a mirrored image of your production environment and do the in-place upgrade to this environment, not in your production environment. 
     
 Additional resources:
   
@@ -210,9 +210,9 @@ Project Portfolio Server 2007 was used with Project Server 2007 for portfolio st
   
 Other resources:
   
-- [Project Online Service Descriptions](https://go.microsoft.com/fwlink/p/?linkid=841280): See the portfolio management features that are included with Project Server 2016 and Project Online Premium.
+- [Project Online Service Descriptions:](https://go.microsoft.com/fwlink/p/?linkid=841280) See the portfolio management features that are included with Project Server 2016 and Project Online Premium.
     
-- [Microsoft Office Project Portfolio Server 2007 migration guide](https://go.microsoft.com/fwlink/p/?linkid=841279)
+- [Microsoft Office Project Portfolio Server 2007 migration guide.](https://go.microsoft.com/fwlink/p/?linkid=841279)
     
 ## Related topics
 
