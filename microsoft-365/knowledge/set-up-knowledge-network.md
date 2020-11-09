@@ -8,10 +8,10 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: 'How to set up Knowledge Management.'
+description: 'Learn how to set up Knowledge Management'
 ---
 
-# Set up Knowledge Management (Preview)
+# Set up Knowledge Management
 
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
