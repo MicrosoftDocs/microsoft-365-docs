@@ -241,13 +241,13 @@ For standard retention labels: When you apply a default retention label to a lib
 
 - All unlabeled items in the container have this retention label applied.
 
-- For folders, the inheritance flows to any child folders and items inherit the label from the nearest structure.
+- For folders, the inheritance flows to any child folders and items inherit the label from their nearest folder.
 
 - Items that are already labeled retain their retention label, unless it was applied by a different default label.
     
 - If you change or remove the default retention label for the container, existing retention labels applied to items in that container are changed or removed only if those labels were applied by a default label.
     
-- If you move an item with that has a default retention label from one container to another container that has a different label, the item keeps its existing default retention label, even if the new location has a different default retention label. If the item does not have a label before moving, it will take on the default retention label of the new location.
+- If you move an item with a default retention label applied from one container to another container, the item keeps its existing default retention label, even if the new location has a different default retention label. Only if you then change the default label for this new location will the moved item inherit the default label from its current location.
 
 For labels that aren't standard retention labels but mark items as [records (or regulatory records)](records-management.md#records):
 
