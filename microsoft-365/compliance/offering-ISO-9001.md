@@ -33,7 +33,7 @@ An independent third-party auditing firm performed a rigorous examination of Mic
 - Dynamics 365, Dynamics 365 Government, and Dynamics 365 Germany
 - Microsoft Graph
 - Intune
-- Microsoft Defender Advanced Threat Protection
+- Microsoft Defender for Endpoint
 - Microsoft Healthcare Bot
 - Microsoft Managed Desktop
 - Power Automate (formerly Microsoft Flow) cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
