@@ -17,7 +17,7 @@ ms.collection:
 description: "Manage security for Office 365 and endpoint devices in the same place, the Microsoft 365 Security center. This article outlines what's new and where to find things."
 ---
 
-# Getting started with the Microsoft 365 Security center for admins
+# Getting started with the Microsoft 365 Security center for security admins and operations teams
 
 The new [Microsoft 365 security](https://security.microsoft.com) center combines security capabilities that protect, detect, investigate, and respond to email, collaboration, *and* device threats. This security center brings together features in Microsoft Defender for Endpoint (MSDE), with Microsoft Defender for Office 365 (MSDO) features.
 
