@@ -123,9 +123,12 @@ The first step is to prepare the search results for exporting. When you prepare 
   
 10. Click the **Export files in a compressed (zipped) folder** checkbox to export search results to compressed folders. This option is available only when you choose to export Exchange items as individual messages and when the search results include SharePoint or OneDrive documents. This option is primarily used to work around the 260 character limit in Windows file path names when items are exported. See the "Filenames of exported items" in the [More information](#more-information) section. 
   
-11. Click **Start export**.
-  
-    The search results are prepared for downloading, which means they're being uploaded to the Azure Storage location in the Microsoft cloud. When the search results are ready for download, the **Download exported results** link is displayed under **Export results to a computer** in the details pane. 
+11. Click **Start export**. The search results are prepared for downloading, which means they're being uploaded to an Azure Storage location in the Microsoft cloud. This may take several minutes.
+    
+12. Click the **Exports** tab next to the **Searches** tab at the top of the page and then click the Refresh button. This will display a list of exports.
+Click the desired export. A progress bar will be displayed if the export is still being processed.
+Click **Download results** to download a small application which you can use to download the export from the Azure Storage location.
+Be sure to copy the export key that is displayed as it is required to retreive the results from the Azure Storage location.
   
 ## Step 2: Download the search results
 
