@@ -20,7 +20,7 @@ You can manage topic visibility settings in the [Microsoft 365 admin center](htt
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational Knowledge** section.
 2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.
 
-    ![Connect people to knowledge](../media/admin-org-knowledge-options.png) 
+    ![Connect people to knowledge](../media/admin-org-knowledge-options-completed.png) 
 
 3. On the **Connect people to knowledge** page, select **Manage** to open the **Knowledge network settings** pane.
 
