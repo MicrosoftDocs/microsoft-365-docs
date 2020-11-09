@@ -476,7 +476,7 @@
             href: change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
             href: disable-reports-when-you-export-content-search-results.md
-        - name: Understand content search
+        - name: Content search reference
           items: 
           - name: Content search limits
             href: limits-for-content-search.md
@@ -487,7 +487,7 @@
           - name: De-duplication in search results
             href: de-duplication-in-ediscovery-search-results.md
           - name: Differences between estimated and actual search results
-            href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            href: differences-between-estimated-and-actual-ediscovery-search-results.md  
         - name: Run content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections
@@ -536,6 +536,8 @@
             href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
+          - name: Collect eDiscovery diagnostic information
+            href: ediscovery-diagnostic-info.md 
           - name: Troubleshoot common eDiscovery issues
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
@@ -667,6 +669,8 @@
               href: set-up-compliance-boundaries.md
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
+            - name: Collect eDiscovery diagnostic information
+              href: ediscovery-diagnostic-info.md
             - name: Search for eDiscovery activities in the audit log
               href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: Troubleshoot AzCopy
