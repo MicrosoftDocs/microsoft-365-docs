@@ -28,7 +28,7 @@ Microsoft Defender Antivirus protects your Windows devices from software threats
 To provide threat protection, Microsoft Defender Antivirus uses several methods. These methods include cloud-delivered protection, real-time protection, and dedicated protection updates.
 
 - Cloud-delivered protection helps provide near-instant detection and blocking of new and emerging threats.
-- Always-on scanning uses file and process behavior monitoring and other heuristics (also known as "real-time protection").
+- Always-on scanning uses file- and process-behavior monitoring and other techniques (also known as "real-time protection").
 - Dedicated protection updates are based on machine learning, human and automated big-data analysis, and in-depth threat resistance research. 
 
 To learn more about malware and Microsoft Defender Antivirus, see the following articles: 
@@ -41,16 +41,13 @@ To learn more about malware and Microsoft Defender Antivirus, see the following 
 
 Microsoft Defender Antivirus is part of the operating system and is enabled on devices that are running Windows 10. However, if you're using a non-Microsoft antivirus solution and you aren't using [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), then Microsoft Defender Antivirus automatically goes into disabled mode.  
 
-> [!NOTE]
-> Your non-Microsoft antivirus solution must be registered with the Windows Security App after installation to ensure that Microsoft Defender Antivirus moves to disabled mode.
+When in disabled mode, users and customers can still use Microsoft Defender Antivirus for scheduled or on-demand scans to identify threats; however, Microsoft Defender Antivirus will no longer:
 
-When in disabled mode, users and customers can still use Microsoft Defender Antivirus for scheduled or on-demand scans to identify threats; however, in this situation, Microsoft Defender Antivirus:
+- be used as the default antivirus app
+- actively scan files for threats
+- resolve threats
 
-- isn't used as the default antivirus app.
-- doesn't actively scan files for threats.
-- doesn't resolve threats.
-
-If you uninstall the non-Microsoft antivirus solution, Microsoft Defender Antivirus will automatically go into active mode to protect your Windows devices from threats.
+If you uninstall the non-Microsoft antivirus solution, Microsoft Defender Antivirus will automatically go back into active mode to protect your Windows devices from threats.
 
 > [!TIP]
 > - If you're using Microsoft 365, consider using Microsoft Defender Antivirus as your primary antivirus solution. Integration can provide better protection. See [Better together: Microsoft Defender Antivirus and Office 365](/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus).
