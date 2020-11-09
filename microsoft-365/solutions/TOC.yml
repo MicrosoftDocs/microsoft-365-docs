@@ -86,7 +86,7 @@
       - name: Prevent
         href: information-protection-deploy-identity-device-threat.md
       - name: Protect
-        href: information-protection-deploy-protect-information.md
+        href: information-protection-deploy-information-protection.md
       - name: Retain
         href: information-protection-deploy-govern.md
       - name: Investigate

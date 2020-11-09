@@ -83,7 +83,7 @@
 - name: Manage information protection
   items:
     - name: Know your data, protect your data, prevent data loss
-      href: protect-information.md
+      href: information-protection.md
     - name: Sensitive information types
       items: 
         - name: Sensitive information type entity definitions 
