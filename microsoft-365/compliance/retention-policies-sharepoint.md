@@ -44,9 +44,9 @@ The following files can be deleted:
 > [!TIP]
 > When you use a [query with an auto-apply policy for a retention label](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), you can exclude specific document libraries by using the following entry: `NOT(DocumentLink:"<URL to document library>")`
 
-SharePoint sites must be indexed for the retention settings to be applied. However, if items in SharePoint document libraries are configured to not appear in search results, this configuration doesn't exclude files from the retention settings.
-
 Files in hidden lists and hidden libraries are excluded from retention settings, and retention settings do not apply to organizing structures that include libraries, lists, and folders.
+
+For retention policies and auto-apply label policies: SharePoint sites must be indexed for the retention settings to be applied. However, if items in SharePoint document libraries are configured to not appear in search results, this configuration doesn't exclude files from the retention settings.
 
 ## How retention works for SharePoint and OneDrive
 
