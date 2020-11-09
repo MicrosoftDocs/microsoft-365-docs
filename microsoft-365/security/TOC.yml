@@ -59,13 +59,6 @@
               href: mtp/data-privacy.md
             - name: Microsoft security portals
               href: mtp/portals.md
-
-        - name: Deploy
-          items:
-            - name: Turn on Microsoft Threat Protection
-              href: mtp/mtp-enable.md
-            - name: Deploy supported services
-              href: mtp/deploy-supported-services.md
         - name: Evaluate capabilities
           items: 
             - name: Trial lab overview
@@ -80,18 +73,24 @@
               href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
             - name: Generate a test alert
               href: mtp/generate-test-alert.md
-        - name: Run your pilot project in production
-          items: 
-            - name: Pilot overview
-              href: mtp/mtp-pilot.md
-            - name: Plan
-              href: mtp/mtp-pilot-plan.md
-            - name: Prepare
-              href: mtp/prepare-mtpeval.md
-            - name: Simulate attack
-              href: mtp/mtp-pilot-simulate.md
-            - name: Close and summarize
-              href: mtp/mtp-pilot-close.md
+        - name: Deploy
+          items:
+            - name: Turn on Microsoft Threat Protection
+              href: mtp/mtp-enable.md
+            - name: Deploy supported services
+              href: mtp/deploy-supported-services.md
+            - name: Run your pilot project in production
+              items: 
+                - name: Pilot overview
+                  href: mtp/mtp-pilot.md
+                - name: Plan
+                  href: mtp/mtp-pilot-plan.md
+                - name: Prepare
+                  href: mtp/prepare-mtpeval.md
+                - name: Simulate attack
+                  href: mtp/mtp-pilot-simulate.md
+                - name: Close and summarize
+                  href: mtp/mtp-pilot-close.md
         - name: How-to guides
           items: 
             - name: Create a trial lab or pilot environment
