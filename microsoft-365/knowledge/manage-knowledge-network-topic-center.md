@@ -31,11 +31,11 @@ You must have Global Admin or SharePoint admin permissions to be able to access 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational Knowledge** section.
 2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.<br/>
 
-    ![Connect people to knowledge](../media/admin-org-knowledge-options.png) </br>
+    ![Connect people to knowledge](../media/admin-org-knowledge-options.png) 
 
-3. On the **Connect people to knowledge** page, select **Manage** to open the **Knowledge network settings** pane.<br/>
+3. On the **Connect people to knowledge** page, select **Manage** to open the **Knowledge network settings** pane.
 
-    ![knowledge-network-settings](../media/content-understanding/knowledge-network-settings.png) </br>
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
 ##  Update your topic center name
 
@@ -45,7 +45,7 @@ Select the **Topic center** tab if you want to update the name of your topic cen
 2. On the **Edit topic center name** page, in the **Topic center name** box, type the new name for your topic center.
 3. Select **Save**
 
-    ![Edit topic center name](../media/content-understanding/manage-topic-center-name.png) </br> 
+    ![Edit topic center name](../media/manage-topic-center-name.png)  
 
 ## See also
 
