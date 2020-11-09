@@ -35,7 +35,7 @@ You must have Global Admin or SharePoint admin permissions to be able to access 
 
 3. On the **Connect people to knowledge** page, select **Manage** to open the **Knowledge network settings** pane.
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-discovery.png) 
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-vislbility.png) 
 
 ## Change how the knowledge network can find topics
 
@@ -58,13 +58,6 @@ Select the **Topic discovery** tab if you want to update your choices for  for S
 
 
 ## See also
-
-
-
-  
-
-
-
 
 
 

@@ -7,7 +7,7 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: None
+localization_priority: Normal
 description: "Learn how to administer topic visibility in Microsoft 365."
 ---
 
@@ -31,11 +31,11 @@ You must have Global Admin or SharePoint admin permissions to be able to access 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational Knowledge** section.
 2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.<br/>
 
-    ![Connect people to knowledge](../media/admin-org-knowledge-options.png) </br>
+    ![Connect people to knowledge](../media/admin-org-knowledge-options.png) 
 
 3. On the **Connect people to knowledge** page, select **Manage** to open the **Knowledge network settings** pane.<br/>
 
-    ![knowledge-network-settings](../media/content-understanding/knowledge-network-settings.png) </br>
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-visibility.png) 
 
 
 ##  Change who can see topics in your organization
@@ -43,12 +43,13 @@ You must have Global Admin or SharePoint admin permissions to be able to access 
 Select the **Topic discovery** tab if you want to update who in your organization can see discovered topics in search results and when topics are highlighted in content like SharePoint pages.
 
 1. On the **Topic discovery** tab, under **Who can see topics in the knowledge network**, select **Edit**.
-2. On the **Who can see topics in the knowledge network** page, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages. You can select:</br>
-    a. **Everyone in your organization**</br>
-    b. **Only selected people or security groups**</br>
-    c. **No one**</br>
+2. On the **Who can see topics in the knowledge network** page, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages. You can select:
+    - **Everyone in your organization**
+    - **Only selected people or security groups**
+    - **No one**
 
-    ![Who can see topics](../media/content-understanding/k-manage-who-can-see-topics.png) </br> 
+    ![Who can see topics](../media/k-manage-who-can-see-topics.png) 
+
 3. Select **Save**.  
  
 > [!Note] 
