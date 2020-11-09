@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: "Implement Microsoft Information Protection (MIP) capabilities by using Microsoft 365 Compliance to help you discover, classify, and protect sensitive information wherever it lives or travels."
+description: "Implement Microsoft Information Protection (MIP) to help you protect sensitive information wherever it lives or travels."
 ---
 
 # Microsoft Information Protection in Microsoft 365
 
 >*[Licensing for Microsoft 365 Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Use Microsoft Information Protection (MIP) to help you discover, classify, and protect sensitive information wherever it lives or travels.
+Implement Microsoft Information Protection (MIP) capabilities to help you discover, classify, and protect sensitive information wherever it lives or travels.
 
 MIP capabilities are included with Microsoft 365 Compliance and give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
 
-![Know your data, protect your data, prevent data loss, govern your data](../media/powered-by-intelligent-platform.png)
+![Image of how MIP helps you discover, classify, and protect sensitive data](../media/powered-by-intelligent-platform.png)
 
 For information about governing your data, see [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
 
@@ -51,7 +51,7 @@ To apply flexible protection actions that include encryption, access restriction
 |[Sensitivity labels](sensitivity-labels.md)| A single solution across apps, services, and devices to label and protect your data as it travels inside and outside your organization <br /><br />Example scenario: [Apply and view sensitivity labels in Power BI, and protect data when it is exported](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[ Get started with sensitivity labels](get-started-with-sensitivity-labels.md) |
 |[Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| For Windows computers, extends sensitivity labels for additional features and functionality that includes labeling and protecting all file types from File Explorer and PowerShell<br /><br /> Example additional features: [Custom configurations for the Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure Information Protection unified labeling client administrator guide](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Double Key Encryption](double-key-encryption.md)| Under all circumstances, only you can ever decrypt protected content, or for regulatory requirements you must hold encryption keys within a geographical boundary | [Deploy Double Key Encryption](double-key-encryption.md#deploy-dke)|
-|[Office 365 Message Encryption](ome.md) (OME)| Encrypts email messages and attached documents that are sent to any user on any device, so only authorized recipients can read emailed information  <br /><br />Example scenario: [Revoke email encrypted by Advanced Message Encryption](revoke-ome-encrypted-mail.md) | [Set up new Message Encryption capabilities](set-up-new-message-encryption-capabilities.md)|
+|[Office 365 Message Encryption (OEM)](ome.md)| Encrypts email messages and attached documents that are sent to any user on any device, so only authorized recipients can read emailed information  <br /><br />Example scenario: [Revoke email encrypted by Advanced Message Encryption](revoke-ome-encrypted-mail.md) | [Set up new Message Encryption capabilities](set-up-new-message-encryption-capabilities.md)|
 |[Service encryption with Customer Key](customer-key-overview.md) | Protects against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters | [Set up Customer Key for Office 365](customer-key-set-up.md)|
 |[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Protects SharePoint lists and libraries so that when a user checks out a document, the downloaded file is protected so that only authorized people can view and use the file according to policies that you specify | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
 [Rights Management connector](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |Protection-only for existing on-premises deployments that use Exchange or SharePoint Server, or file servers that run Windows Server and File Classification Infrastructure (FCI) | [Steps to deploy the RMS connector](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
@@ -66,5 +66,5 @@ To help prevent accidental oversharing of sensitive information, use the followi
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|:---------------------|:-----------------------------|
-|[Data loss prevention](data-loss-prevention-policies.md) (DLP)| Helps prevent unintentional sharing of sensitive items <br /><br />Example scenario: [Protect sensitive information in Microsoft Teams chat and channel messages](dlp-microsoft-teams.md) | [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
+|[Data loss prevention (DLP)](data-loss-prevention-policies.md)| Helps prevent unintentional sharing of sensitive items <br /><br />Example scenario: [Protect sensitive information in Microsoft Teams chat and channel messages](dlp-microsoft-teams.md) | [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
 |[Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)| Extends DLP capabilities to items that are used and shared on Windows 10 computers | [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)|
