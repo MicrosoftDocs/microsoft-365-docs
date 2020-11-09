@@ -27,19 +27,19 @@ This table is a quick reference of MSDO areas where change has occurred between 
 
 |**Changed**  |**Unchanged**  |
 |---------|---------|
-|Dashboard     |  [Explorer](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet&branch=pr-en-us-5758)       |
+|Dashboard     |  [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer?view=o365-21vianet&branch=pr-en-us-5758)       |
 |[Attack Simulator ](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-insights?view=o365-worldwide)   |  [Policies & Rules](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide)       |
 |Investigation    |    [Campaign](https://docs.microsoft.com/microsoft-365/security/office-365-security/campaigns?view=o365-worldwide)     |
 |     |    [Submissions](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide)     |
 |     |    [Review](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)     |
-|     |    [Threat Tracker ](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet&branch=pr-en-us-5758)    |
+|     |    [Threat Tracker ](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers?view=o365-21vianet&branch=pr-en-us-5758)    |
 |     |          |
 
 Also, check the 'Related Information' section at the bottom of this article for anything instructive that wouldn't fit here.
 
 ## Advanced Hunting example for MSDO Security Operations Teams
 
-The *[Getting Started](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#getting-started)* section of the [Microsoft Defender for Office 365 article](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) has logical early configuration chunks that look like this:
+The *[Getting Started](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#getting-started)* section of the [Microsoft Defender for Office 365 article](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) has logical early configuration chunks that look like this:
 
 - Configure everything with 'anti' in the name.
     - anti-malware
