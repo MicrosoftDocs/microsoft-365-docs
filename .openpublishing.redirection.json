@@ -1526,6 +1526,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/compliance/use-exchange-online-to-comply-with-sec-rule-17a-4.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/retention-regulatory-requirements",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/compliance/gdpr-arc-Dynamics365.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr-arc-azure-dynamics",
       "redirect_document_id": true
