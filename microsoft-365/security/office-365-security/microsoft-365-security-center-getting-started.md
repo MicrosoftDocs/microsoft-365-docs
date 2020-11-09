@@ -21,7 +21,7 @@ description: "Manage security for Office 365 and endpoint devices in the same pl
 
 The new [Microsoft 365 security](https://security.microsoft.com) center combines security capabilities that protect, detect, investigate, and respond to email, collaboration, *and* device threats. This security center brings together features in Microsoft Defender for Endpoint (MSDE), with Microsoft Defender for Office 365 (MSDO) features.
 
-MSDO admins, use this URL to access the new security center: https://security.microsoft.com
+Use this URL to access the new security center: https://security.microsoft.com
 
 This table is a quick reference of MSDO areas where change has occurred between the Security & Compliance center and the Microsoft 365 Security portal. Click the links to navigate to topics.
 
