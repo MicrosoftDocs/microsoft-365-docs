@@ -69,7 +69,7 @@ For more information about the end-to-end workflow in Advanced eDiscovery, see t
 
 The sections that follow describe each step in the built-in workflow in Advanced eDiscovery. The following screenshot shows the **Overview** tab of a case named *2020.08.21 - Contoso v. Fabrikam*.
 
-![Tabs in Advanced eDiscovery follow the EDRM workflow](../media/AeD-Case-Screenshot1.png)
+![Tabs in built-in Advanced eDiscovery workflow](../media/AeD-Case-Screenshot1.png)
 
 ## Managing custodians and non-custodial data sources
 
