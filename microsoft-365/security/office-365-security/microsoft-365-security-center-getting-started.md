@@ -32,7 +32,7 @@ This table is a quick reference of MSDO areas where change has occurred between 
 |Investigation    |    [Campaign](https://docs.microsoft.com/microsoft-365/security/office-365-security/campaigns?view=o365-worldwide)     |
 |     |    [Submissions](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide)     |
 |     |    [Review](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)     |
-|     |    [[Threat Tracker](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers?view=o365-worldwide)](    |
+|     |    [Threat Tracker](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers?view=o365-worldwide)    |
 |     |          |
 
 Also, check the 'Related Information' section at the bottom of this article for anything instructive that wouldn't fit here.
