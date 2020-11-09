@@ -15,7 +15,7 @@ description: "Learn how to administer topic visibility in Microsoft 365."
 
 You can manage topic visibility settings in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a global administrator or SharePoint administrator to perform these tasks.
 
-## To access knowledge management settings:
+## To access topics management settings:
 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational Knowledge** section.
 2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.
@@ -26,12 +26,13 @@ You can manage topic visibility settings in the [Microsoft 365 admin center](htt
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-visibility.png) 
 
+4. Select the **Topic visibility** tab. See the following sections for information about each setting.
 
 ##  Change who can see topics in your organization
 
-Select the **Topic discovery** tab if you want to update who in your organization can see discovered topics in search results and when topics are highlighted in content like SharePoint pages.
+You can change the users who can see topics in your organization.
 
-1. On the **Topic discovery** tab, under **Who can see topics in the knowledge network**, select **Edit**.
+1. On the **Topic visibility** tab, under **Who can see topics in the knowledge network**, select **Edit**.
 2. On the **Who can see topics in the knowledge network** page, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages. You can select:
     - **Everyone in your organization**
     - **Only selected people or security groups**

@@ -7,7 +7,7 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: None
+localization_priority: Normal
 description: "Learn how to administer topic permissions in Microsoft 365."
 ---
 
@@ -15,7 +15,7 @@ description: "Learn how to administer topic permissions in Microsoft 365."
 
 You can manage topic permissions settings in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a global administrator or SharePoint administrator to perform these tasks.
 
-## To access knowledge management settings:
+## To access topics management settings:
 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational Knowledge** section.
 2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.<br/>
