@@ -35,11 +35,11 @@ Your invoice is sent to the registered billing notification email address 24 hou
 
 ### During the purchase process (Checkout)
 
-During the checkout purchase process, when you get to **step 4. Payment and Billing**, activate the box to enter a TAX ID. This step is necessary so that you can see it reflected in your purchase invoice.
+During the checkout purchase process, when you get to step **4. Payment and billing**, select the box to enter a TAX ID. This step is necessary so that you can see it reflected in your purchase invoice.
 
 ### For your future purchases
 
-You can add or modify your RFC so that the information is reflected in  future Microsoft 365 for business purchases. To add or modify your RFC, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
+You can add or modify your RFC so that the information is reflected in future Microsoft 365 for business purchases. To add or modify your RFC, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
 
 ## 3. Can I add or modify my RFC to a purchase that has already been confirmed?
 
