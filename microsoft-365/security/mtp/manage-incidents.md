@@ -1,5 +1,5 @@
 ---
-title: Manage incidents in Microsoft Threat Protection
+title: Manage incidents in Microsoft 365 Defender
 description: Learn how to assign, update the status, 
 keywords: incident, incidents, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
@@ -14,21 +14,26 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: conceptual
 search.appverid: 
 - MOE150
 - MET150
 ---
 
-# Manage incidents in Microsoft Threat Protection
+# Manage incidents in Microsoft 365 Defender
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
-Managing incidents is critical in ensuring that threats are contained and addressed. In Microsoft Threat Protection, you have access to managing incidents on devices, users, and mailboxes. 
+Managing incidents is critical in ensuring that threats are contained and addressed. In Microsoft 365 Defender, you have access to managing incidents on devices, users, and mailboxes. 
 
 
 You can manage incidents by selecting an incident from the **Incidents queue**. 
@@ -38,16 +43,16 @@ You can edit the name of an incident, resolve it, set its classification and det
 In cases where while investigating you would like to move alerts from one incident to another you can also do so from the Alerts tab, thus creating a larger or smaller incident that include all relevant alerts.
 
 ## Edit incident name
-By default, an incident is assigned a number. You can modify the incident name to better align with your preferred naming convention.
+Incidents are automatically assigned a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident.
 
-> [!TIP]
-> For additional visibility at-a-glance, automatic incident naming, currently in public preview, generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident.
->
-> For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
->
-> Incidents that existed prior the rollout of automatic incident naming will not have their name changed.
->
-> Learn more about [turning on preview features](preview.md#turn-on-preview-features).
+For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
+
+You can modify the incident name to better align with your preferred naming convention.
+
+> [!NOTE]
+> Incidents that existed prior the rollout of the automatic incident naming feature will retain their name.
+
+
 
 ## Assign incidents
 If an incident has not yet been assigned, you can select **Assign to me** to assign the incident to yourself. Doing so assumes ownership of not just the incident, but also all the alerts associated with it.

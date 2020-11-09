@@ -22,11 +22,15 @@ ms.custom:
 ---
 # Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center
 
-[!include[Prerelease information](../includes/prerelease.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+>[!CAUTION]
+>**The preview period for the ServiceNow connector is ending**<br>
+>This capability will no longer available by the end of November 2020. Thank you for your feedback and continued support while we determine next steps.
 
 ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations. Their Now platform has IT workflows, employee workflows, and customer workflows. [Learn more about ServiceNow](https://www.servicenow.com/)
 
-Microsoft has partnered with ServiceNow to make it easier for IT admins to manage their tickets and tasks in both platforms. [Microsoft 365 security center](overview-security-center.md) and the [Microsoft 365 compliance center](https://docs.microsoft.commicrosoft-365/compliance/microsoft-365-compliance-center) are being enhanced with the ability to natively create and track tickets in ServiceNow.
+Microsoft has partnered with ServiceNow to make it easier for IT admins to manage their tickets and tasks in both platforms. [Microsoft 365 security center](overview-security-center.md) and the [Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) are being enhanced with the ability to natively create and track tickets in ServiceNow.
 
 - [**Manage ServiceNow tickets in the security center**](tickets-security-center.md)
 - **Manage ServiceNow tickets in the compliance center** (coming soon)
@@ -68,9 +72,9 @@ Go to [Create and track ServiceNow tickets in the Microsoft 365 security center]
 
 ### You receive an error in the first step of the installation checklist (OAuth creation)
 
-**Error Message**: Read operation against 'oauth_entity' from scope 'x_mioms_m365ticket' has been refused due to the table's cross-scope access policy
+**Error Message**: Read operation against 'oauth_entity' from scope 'x_mioms_m365ticket' has been refused because of the table's cross-scope access policy
 
-The app assumes any admin on the ServiceNow instance can create and read OAuth entities. This error could be caused due to a customization on your instance of ServiceNow, which restricts who can create/read OAuth entities.
+The app assumes any admin on the ServiceNow instance can create and read OAuth entities. This error could be caused by a customization in your instance of ServiceNow that restricts who can create or read OAuth entities.
 
 **ServiceNow recommends that users keep default functionality.**
 
@@ -83,17 +87,17 @@ Set the "application registries" table configurations to default:
 
 ### How to validate the OAuth entity created for Microsoft 365 Security & Compliance connector
 
-Go to application registries table (**Menu > System OAuth > Application Registry**) in ServiceNow and find the OAuth entity created by you, with the name that you assigned it.
+Go to application registries table (**Menu > System OAuth > Application Registry**) in ServiceNow. Find the OAuth entity created by you, with the name that you assigned it.
 
-### Logging in as the integration user
+### Signing in as the integration user
 
-Before you authorize the connection between Microsoft 365 security center and ServiceNow, make sure you use the integration user login and password you created in the installation steps. Do not use your personal credentials.
+Before you authorize the connection between Microsoft 365 security center and ServiceNow, make sure you use the integration user sign in and password you created in the installation steps. Don't use your personal credentials.
 
 1. Go the authorization page in ServiceNow.
-2. If you are signed in with your personal credentials, select the **Not You** link in the upper right-hand corner.
-3. Log in to ServiceNow as the integration user you created previously from the installation checklist.  
+2. If you're signed in with your personal credentials, select the **Not You** link in the upper right-hand corner.
+3. Sign in to ServiceNow as the integration user you created previously from the installation checklist.  
 4. Select **Allow** in the ServiceNow page that asks whether the Security + Compliance Connector can connect to your ServiceNow account.
-5. Proceed with the setup steps.
+5. Continue with the setup steps.
 
 ### How to validate the Integration User created with the installation checklist for Microsoft 365 Security & Compliance connector
 
@@ -101,20 +105,20 @@ Go to Users Table **(Menu > User Administration > Users**) in ServiceNow and fin
 
 ### Your company has single sign-on enabled which prevents you from connecting to ServiceNow through the Microsoft 365 security center
 
-If your company has enabled single sign-on and you receive an error or login is unsuccessful, follow one of the two solutions.
+If your company has enabled single sign-on and you receive an error or sign in is unsuccessful, follow one of the two solutions.
 
-#### Log into ServiceNow as the integration user
+#### Sign in to ServiceNow as the integration user
 
 1. Navigate back to the authorization page in ServiceNow.
 2. Select the **Not You** link in the upper right-hand corner.
-3. Log in to ServiceNow as the integration user you created previously from the installation checklist.  
+3. Sign in to ServiceNow as the integration user you created previously from the installation checklist.  
 4. Select **Allow** in the ServiceNow page that asks whether the Security + Compliance Connector can connect to your ServiceNow account.
-5. Proceed with the setup steps.
+5. Continue with the setup steps.
 
 #### Create a security admin user
 
-1. Create a user with security admin privileges in Azure Active Directory. The user needs to have the same name and email address as the integration user you created from the Installation Checklist. You can remove the security admin role once login and connection has been completed.
-2. Log in to the Microsoft 365 security center as this user and follow the setup steps.
+1. Create a user with security admin privileges in Azure Active Directory. The user needs to have the same name and email address as the integration user you created from the Installation Checklist. You can remove the security admin role once sign-in and connection has been completed.
+2. Sign in to the Microsoft 365 security center as this user and follow the setup steps.
 
 ### IP filtering
 

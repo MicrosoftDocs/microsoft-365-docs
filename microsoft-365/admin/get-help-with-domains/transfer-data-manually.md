@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -44,7 +44,7 @@ Prepare to roll up your sleeves and block out a chunk of time on your calendar: 
 |Purchase the plan you want to move to.  <br/> |When you sign up, you specify the company name to use in the initial domain names:  *yourcompany*  .onmicrosoft.com,  *yourcompany*  -public.sharepoint.com, and  *yourcompany*  .sharepoint.com. You need to use a different  *yourcompany*  name than you did for any existing subscriptions.  <br/> > [!NOTE]>  It typically takes a minimum of several months after cancelling a subscription to release the initial domain names that use  *yourcompany*  from our systems. Even if you plan to save all your data from your old Microsoft 365 subscription, and cancel that subscription, the old  *yourcompany*  value is not immediately available for use in a new subscription.           |
 |Remove your custom domain from your old Microsoft 365 subscription.  <br/> | Follow the [required steps before you remove a domain](remove-a-domain.md) to remove the domain name from user email addresses and remove DNS records for email and Lync for the custom domain. If you host your public website on Microsoft 365, you'll also need to remove the CNAME record that points to it.  <br/> > [!IMPORTANT]>  After you remove the MX record that routes email to this custom domain, email will stop working until you have added the domain to your new account, set up the new MX record, and set up your users. When you remove the DNS records for Lync, Lync will stop working. And after you remove the CNAME record that points to your public website, it will not be available.           [Remove the domain](remove-a-domain.md) .  <br/> |
 |Set up your custom domain for your new subscription, and set up your users.  <br/> | Set up your new subscription, including creating the required DNS records for your custom domain.  <br/>  Create your users, with email addresses on your custom domain.  <br/> |
-|Transfer data from your old subscription to your new subscription.  <br/> | Sign in to both accounts in separate browser windows:  <br/>  Right-click the Internet Explorer icon, and open two InPrivate browser windows. You can use different credentials in the two windows to sign in on both accounts.  <br/> [Transfer administrative settings between subscriptions](#email) <br/> [Transfer team site structure and data](#transfer-team-site-structure-and-data) <br/> [Transfer a public website between subscriptions](#transfer-a-public-website-between-subscriptions) <br/> [Transfer administrative settings between subscriptions](#email) <br/> |
+|Transfer data from your old subscription to your new subscription.  <br/> | Sign in to both accounts in separate browser windows:  <br/>  Right-click your browser icon, and open two private browser windows. You can use different credentials in the two windows to sign in on both accounts.  <br/> [Transfer administrative settings between subscriptions](#email) <br/> [Transfer team site structure and data](#transfer-team-site-structure-and-data) <br/> [Transfer a public website between subscriptions](#transfer-a-public-website-between-subscriptions) <br/> [Transfer administrative settings between subscriptions](#email) <br/> |
 |Cancel the subscription for the plan you're done with by calling Microsoft Support for Microsoft 365.  <br/> | Verify that your new subscription is working and all data has been transferred.  <br/>  [Contact customer support](../contact-support-for-business-products.md) to cancel your old subscription.  <br/> |
 
 ## Transfer administrative settings between subscriptions
@@ -101,3 +101,7 @@ Ask users to [move their email, contacts, tasks, and calendar information](https
 ### OneDrive For Business data:
 
 Ask users to Copy/Sync [OneDrive for Business content to their computer](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd), and then add it back to their new subscription.
+
+### OneNote 
+
+Ask users to [Back up OneNote](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) and to [Restore notes from a backup](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) to their new subscriptions.

@@ -2,9 +2,9 @@
 title: "Set an individual user's password to never expire"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: kwekua
+author: kwekua
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,25 +25,22 @@ description: "Learn how to set some individual user passwords to never expire, u
 ---
 # Set an individual user's password to never expire
 
-## Set the password expiration policy for your organization
+This article explains how to set a password for an individual user to not expire. You have to complete these steps using PowerShell.
 
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a> page.
-2. At the top of the Settings page select **Security & Privacy**.
-3. Select **Password expiration policy**. 
-4. If passwords are set to never expire, click the check box next to **Set user passwords to expire after a number of days**. You'll get the option to specify the number of days until passwords expire.
+## Before you begin
 
-## Set the password expiration policy for individual users
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../admin-overview/admin-overview.md). 
+
+You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
 
 A global admin for a Microsoft cloud service can use the [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) to set passwords not to expire for specific users. You can also use [AzureAD](https://docs.microsoft.com/powershell/module/Azuread) cmdlets to remove the never-expires configuration or to see which user passwords are set to never expire.
 
 This guide applies to other providers, such as Intune and Microsoft 365, which also rely on Azure AD for identity and directory services. Password expiration is the only part of the policy that can be changed.
 
-For more information about Azure AD PowerShell for Graph, see [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
-
 > [!NOTE]
 > Only passwords for user accounts that are not synchronized through directory synchronization can be configured to not expire. For more information about directory synchronization, see [Connect AD with Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
 
-### How to check the expiration policy for a password
+## How to check the expiration policy for a password
 
 For more information about the Get-AzureADUser command in the AzureAD module, see the reference article [Get-AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).
 
@@ -87,6 +84,21 @@ Run one of the following commands:
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
         N="PasswordNeverExpires";E={$_.PasswordPolicies -contains "DisablePasswordExpiration"}
     } | ConvertTo-Csv -NoTypeInformation | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.csv
+
+## Set a password to never expire
+
+Run one of the following commands:
+
+- To set the password of one user to never expire, run the following cmdlet by using the UPN or the user ID of the user:
+
+    ```powershell
+    Set-AzureADUser -ObjectId <user ID> -PasswordPolicies DisablePasswordExpiration
+    ```
+
+- To set the passwords of all the users in an organization to never expire, run the following cmdlet:
+
+    ```powershell
+    Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
 ### Set a password to expire
@@ -105,21 +117,11 @@ Run one of the following commands:
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
 
-### Set a password to never expire
-
-Run one of the following commands:
-
-- To set the password of one user to never expire, run the following cmdlet by using the UPN or the user ID of the user:
-
-    ```powershell
-    Set-AzureADUser -ObjectId <user ID> -PasswordPolicies DisablePasswordExpiration
-    ```
-
-- To set the passwords of all the users in an organization to never expire, run the following cmdlet:
-
-    ```powershell
-    Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
-    ```
-
 > [!WARNING]
-> Passwords set to `-PasswordPolicies DisablePasswordExpiration` still age based on the `pwdLastSet` attribute. If you set the user passwords to never expire and then 90+ days go by, the passwords expire. Based on the `pwdLastSet` attribute, if you change the expiration to `-PasswordPolicies None`, all passwords that have a `pwdLastSet` older than 90 days require the user to change them the next time they sign in. This change can affect a large number of users.
+> User accounts configured with the `-PasswordPolicies DisablePasswordExpiration` parameter still age based on the `pwdLastSet` user account attribute. For example, if you set user passwords to never expire and then 90 or more days go by, the passwords still expire. Based on the `pwdLastSet` user account attribute, for user accounts configured with the `-PasswordPolicies None` parameter, all passwords that have a `pwdLastSet` older than 90 days require the user to change them the next time they sign in.This change can affect a large number of users.
+
+## Related content
+
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md)
+
+[Reset passwords](../add-users/reset-passwords.md)

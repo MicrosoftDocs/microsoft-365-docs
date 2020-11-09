@@ -15,7 +15,7 @@ metadata:
   ms.collection: M365-subscription-management
   author: robmazz #Required; your GitHub user alias, with correct capitalization.
   ms.author: robmazz #Required; microsoft alias of author; optional team alias.
-  ms.date: 11/29/2019 #Required; mm/dd/yyyy format.
+  ms.date: 07/28/2020 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -42,24 +42,9 @@ conceptualContent:
   summary: Explore Microsoft 365 for enterprise deployment guidance, features, and services. # < 160 chars (optional)
   items:
     # Card
-    - title: Follow the deployment roadmap
-      links:
-        - url: deploy-microsoft-365-enterprise.md
-          itemType: deploy
-          text: Deployment overview
-        - url: deploy-foundation-infrastructure.md
-          itemType: how-to-guide
-          text: Foundation infrastructure
-        - url: deploy-workloads.md
-          itemType: how-to-guide
-          text: Workloads
-        - url: desktop-deployment-center-home.md
-          itemType: get-started
-          text: Desktop Deployment Center
-    # Card
     - title: Deploy key elements
       links:
-        - url: identity-infrastructure.md
+        - url: identity-roadmap-microsoft-365.md
           itemType: how-to-guide
           text: Identity infrastructure
         - url: https://docs.microsoft.com/windows/deployment/

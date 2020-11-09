@@ -6,9 +6,9 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: 
+ms.service: o365-administration
 search.appverid: 
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to give users permissions to do tasks in the Topic Center"
 ---

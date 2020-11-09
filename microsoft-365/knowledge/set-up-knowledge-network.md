@@ -1,16 +1,16 @@
 ---
 title: 'Set up Knowledge Management (Preview) '
 description: 'How to set up Knowledge Management.'
-author: efrene
-ms.author: efrene
-manager: pamgreen
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: 
+ms.service: o365-administration
 search.appverid: 
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: Normal
+localization_priority: None
 
 ---
 # Set up Knowledge Management (Preview)
@@ -66,12 +66,27 @@ To set up your knowledge network:
    
 5. In the **Exclude topics by name** section, you can choose to includes names of topics you don't want to be in the discovered results. Use this setting to prevent sensitive topics from being included as part of the knowledge network. Your options include:</br>
     a. **Don't exclude any topics** </br>
-    b. **Exclude topic that contain these terms**:  If you have topics you don’t want shown to users as part of the knowledge network.
-        - Download the provided template.
-        - Enter the topic names you want to exclude. You must indicate the match type as exact or partial. Exact match means that topics that fit the exact term will be excluded. Partial match is stricter and means that topics that contain the term will be excluded. For example, if you enter *Doc* as the topic name, *Doc assembly* will be excluded while *Docker* won't. Topic names are case insensitive.  
-        - Select **+** to import your completed CSV file. Then select **Upload**. You’ll see a green check mark if your file has been processed successfully. 
-    Select **Next**.</br>
+    b. **Exclude topics by name**:  If you have topics you don’t want shown to users as part of the knowledge network.</br>
 
+    ![Exclude topics](../media/content-understanding/topics-excluded-by-name.png) </br>
+
+    #### How to exclude topics by name    
+
+    If you need to exclude topics, after selecting **Exclude topics by name**, select **Download the .csv template**. Use the Excel .CSV template to include a list of topics that you want to exclude from your discovery results.
+
+    ![Exclude topics in CSV template](../media/content-understanding/csv1.png) </br>
+
+    In the CSV template, enter the following information about the topics you want to exclude:
+
+    - **Name**: Type the name of the topic you want to exclude. There are two ways to do this:</br>
+        - Exact match: You can include the exact name or acronym (for example, *Contoso* or *ATL*).</br>
+        - Partial match: You can exclude all topics that have a specific word in it.  For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.</br>
+    - **Expansion (optional)**: If you want to exclude an acronym, type the words the acronym stands for.</br>
+    - **MatchType-Exact/Partial**: Type whether the name you entered was an *exact* or *partial* match type.</br>
+
+    After you've completed and saved your CSV template file, select **Browse** to locate and select it.
+    
+    Select **Next**.</br>
 
 6. On the **Who can see topics and where they can see them** page, you will configure topic visibility. In the **Who can see topics in the knowledge network** setting, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages. You can select:</br>
     a. **Everyone in your organization**</br>

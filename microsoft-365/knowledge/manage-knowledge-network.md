@@ -1,16 +1,16 @@
 ---
 title: 'Manage your knowledge management network(Preview) '
 description: 'How to set up Knowledge Management.'
-author: efrene
-ms.author: efrene
-manager: pamgreen
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/01/2020
 audience: admin
 ms.topic: article
-ms.service: 
+ms.service: o365-administration
 search.appverid: 
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: Normal
+localization_priority: None
 
 ---
 # Manage your knowledge management network (Preview)

@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: "Learn to deploy add-ins to users and groups in your organization by using Centralized Deployment in the admin center."
+description: "Learn about using Centralized add-ins to deploy add-ins to users and groups in your organization."
 ---
 
 # Manage add-ins in the admin center
@@ -56,6 +56,9 @@ You can also delete an add-in that was deployed.
 
 1. In the admin center, go to the **Settings** > **Services & add-ins** page.
 
+     > [!NOTE]
+    > The admin center is getting updated to deployment experience with Integrated Apps . If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+
 2. Select the deployed add-in.
 
 3. Click on **Delete Add-In**. Remove the Add-in button on the bottom right corner.
@@ -67,6 +70,9 @@ You can also delete an add-in that was deployed.
 Post deployment, admins can also manage user access to add-ins.
 
 1. In the admin center, go to the **Settings** > **Services & add-ins** page.
+
+     > [!NOTE]
+    > The admin center is getting updated to deployment experience with Integrated Apps . If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
 
 2. Select the deployed add-in.
 
@@ -84,6 +90,9 @@ As an organization you may wish to prevent the download of new Office add-ins fr
 **To turn off add-in acquisition**
   
 1. In the admin center, go to the **Settings** \> [Services &amp; add-ins](https://go.microsoft.com/fwlink/p/?linkid=2053743) page.
+
+     > [!NOTE]
+    > The admin center is getting updated to deployment experience with Integrated Apps . If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
     
 3. Select **User owned apps and services**.
     
@@ -148,7 +157,7 @@ If the deployed add-in doesn't support add-in commands or if you want to view al
 
 [Deploy add-ins in the admin center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
 
-Learn more about creating and building [Office Add-ins](https://go.microsoft.com/fwlink/p/?linkid=846362).
+Learn more about creating and building [Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins).
   
 [Use Centralized Deployment PowerShell cmdlets to manage add-ins](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins).
   

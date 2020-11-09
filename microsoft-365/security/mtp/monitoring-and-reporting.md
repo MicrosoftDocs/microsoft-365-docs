@@ -11,7 +11,9 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
@@ -19,9 +21,12 @@ ms.custom: seo-marvel-apr2020
 
 # Monitor and view reports in the Microsoft 365 security center
 
-The Microsoft 365 security center provides at a glance summary of protection and security status across your Microsoft 365 environment.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-The security center includes a **Reports** section which features a host of cards covering a variety of areas that security analysts and administrators track as part of their day-to-day operations. On drill-down, cards provide detailed reports and, in some cases, management options.
+
+The Microsoft 365 security center provides a summary of protection and security statuses across your Microsoft 365 environment.
+
+The security center includes a **Reports** section which features a host of cards covering a variety of areas. Security analysts and administrators can track the cards as part of their day-to-day operations. On drill-down, cards provide detailed reports and, in some cases, management options.
 
 ## Customize views
 
@@ -32,7 +37,7 @@ By default, cards are grouped into these categories:
 * [Devices](monitor-devices.md) - computers, mobile phones, and other devices
 * [Apps](monitor-apps.md) - programs and attached online services
 
-Switch to **Group by topic**, to rearrange the cards and group them into the following:
+Switch to **Group by topic**, to rearrange the cards and group them into the following topics:
 
 * **Risk** - cards that highlight entities, such as accounts and devices, that might be at risk. These cards also highlight possible sources of risk, such as new threat campaigns and privileged cloud apps  
 * **Detection trends** - cards that highlight new threat detections, anomalies, and policy violations

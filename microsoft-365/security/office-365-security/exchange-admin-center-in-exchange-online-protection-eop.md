@@ -20,6 +20,9 @@ description: "Learn about the web management interface in standalone Exchange On
 
 # Exchange admin center in standalone EOP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 The Exchange admin center (EAC) is a web-based management console for standalone Exchange Online Protection (EOP).
 
 Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
@@ -75,9 +78,10 @@ The tabs are your second level of navigation. Each of the feature areas contains
 
 When you click most tabs, you'll see a toolbar. The toolbar has icons that perform a specific action. The following table describes the icons and their actions.
 
-||||
+****
+
+|Icon|Name|Action|
 |---|---|---|
-|**Icon**|**Name**|**Action**|
 |![Add Icon](../../media/ITPro-EAC-AddIcon.gif)|Add, New|Use this icon to create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create.|
 |![Edit icon](../../media/ITPro-EAC-EditIcon.gif)|Edit|Use this icon to edit an object.|
 |![Delete icon](../../media/ITPro-EAC-DeleteIcon.gif)|Delete|Use this icon to delete an object. Some delete icons have a down arrow you can click to show additional options.|
@@ -119,125 +123,63 @@ For the best experience using the EAC, we recommend that you always use the late
 The following languages are supported and available for the EAC in standalone EOP.
 
 - Amharic
-
 - Arabic
-
 - Basque (Basque)
-
 - Bengali (India)
-
 - Bulgarian
-
 - Catalan
-
 - Chinese (Simplified)
-
 - Chinese (Traditional)
-
 - Croatian
-
 - Czech
-
 - Danish
-
 - Dutch
-
-- Dutch
-
 - English
-
 - Estonian
-
 - Filipino (Philippines)
-
 - Finnish
-
 - French
-
 - Galician
-
 - German
-
 - Greek
-
 - Gujarati
-
 - Hebrew
-
 - Hindi
-
 - Hungarian
-
 - Icelandic
-
 - Indonesian
-
 - Italian
-
 - Japanese
-
 - Kannada
-
 - Kazakh
-
 - Kiswahili
-
 - Korean
-
 - Latvian
-
 - Lithuanian
-
 - Malay (Brunei Darussalam)
-
 - Malay (Malaysia)
-
 - Malayalam
-
 - Marathi
-
 - Norwegian (Bokmål)
-
 - Norwegian (Nynorsk)
-
 - Oriya
-
 - Persian
-
 - Polish
-
 - Portuguese (Brazil)
-
 - Portuguese (Portugal)
-
 - Romanian
-
 - Russian
-
 - Serbian (Cyrillic, Serbia)
-
 - Serbian (Latin)
-
 - Slovak
-
 - Slovenian
-
 - Spanish
-
 - Swedish
-
 - Tamil
-
 - Telugu
-
 - Thai
-
 - Turkish
-
 - Ukrainian
-
 - Urdu
-
 - Vietnamese
-
 - Welsh

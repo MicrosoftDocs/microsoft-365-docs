@@ -1,7 +1,7 @@
 ---
 title: Microsoft Secure Score
 description: Describes Microsoft Secure Score in the Microsoft 365 security center, how to improve your security posture, and what security admins can expect.
-keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -24,6 +24,9 @@ ms.custom:
 
 # Microsoft Secure Score
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
 Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
@@ -40,9 +43,15 @@ Organizations gain access to robust visualizations of metrics and trends, integr
 
 ## How it works
 
-You are given points for configuring recommended security features, performing security-related tasks, or addressing the improvement action with a third-party application or software, or an alternate mitigation. Some improvement actions only give points when fully completed, and some give partial points if they are completed for some devices or users. If you cannot or do not want to enact one of the improvement actions, you can choose to accept the risk or the remaining risk.
+You're given points for the following actions:
 
-If you have a license for one of the supported Microsoft products, then you will see recommendations for those products. We show you the full set of possible improvements for a product, regardless of license edition, subscription, or plan, so you can understand security best practices and improve your score. Your absolute security posture is represented by Secure Score, which stays the same no matter what licenses your organization owns for a specific product. Keep in mind that security should be balanced with usability, and not every recommendation can work for your environment.
+- Configuring recommended security features
+- Performing security-related tasks
+- Addressing the improvement action with a third-party application or software, or an alternate mitigation
+
+Some improvement actions only give points when fully completed. Some give partial points if they're completed for some devices or users. If you can't or don't want to enact one of the improvement actions, you can choose to accept the risk or remaining risk.
+
+If you have a license for one of the supported Microsoft products, then you'll see recommendations for those products. We show you the full set of possible improvements for a product, regardless of license edition, subscription, or plan. This way, you can understand security best practices and improve your score. Your absolute security posture, represented by Secure Score, stays the same no matter what licenses your organization owns for a specific product. Keep in mind that security should be balanced with usability, and not every recommendation can work for your environment.
 
 Your score is updated in real time to reflect the information presented in the visualizations and improvement action pages. Secure Score also syncs daily to receive system data about your achieved points for each action.
 
@@ -56,17 +65,19 @@ Your score is updated in real time to reflect the information presented in the v
 
 ### How improvement actions are scored
 
-Each improvement action is worth 10 points or less. Most are scored in a binary fashion — if you implement the improvement action, like create a new policy or turn on a specific setting, you get 100% of the points. For other improvement actions, points are given as a percentage of the total configuration. For example, if the improvement action states you get 10 points by protecting all your users with multi-factor authentication and you only have 50 of 100 total users protected, you would be given a partial score of 5 points (50 protected / 100 total * 10 max pts = 5 pts partial score).
+Each improvement action is worth 10 points or less, and most are scored in a binary fashion. If you implement the improvement action, like create a new policy or turn on a specific setting, you get 100% of the points. For other improvement actions, points are given as a percentage of the total configuration.
+
+For example, an improvement action states you get 10 points by protecting all your users with multi-factor authentication. You only have 50 of 100 total users protected, so you'd get a partial score of 5 points (50 protected / 100 total * 10 max pts = 5 pts).
 
 ### Products included in Secure Score
 
-Currently there are recommendations for Microsoft 365 (including Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP, and Cloud App Security. Recommendations for other security products are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party or alternate mitigation.
+Currently there are recommendations for Microsoft 365 (including Exchange Online), Azure Active Directory, Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Cloud App Security. Recommendations for other security products are coming soon. The recommendations won't cover all the attack surfaces associated with each product, but they're a good baseline. You can also mark the improvement actions as covered by a third party or alternate mitigation.
 
 ### Security defaults
 
 Microsoft Secure Score has updated improvement actions to support [security defaults in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which make it easier to help protect your organization with preconfigured security settings for common attacks.
 
-If you turn on security defaults, you will be awarded full points for the following improvement actions:
+If you turn on security defaults, you'll be awarded full points for the following improvement actions:
 
 - Ensure all users can complete multi-factor authentication for secure access (9 points)
 - Require MFA for administrative roles (10 points)
@@ -91,7 +102,7 @@ With read and write access, you can make changes and directly interact with Secu
 
 ### Read-only roles
 
-With read-only access, you are not able to edit status or notes for an improvement action, edit score zones, or edit custom comparisons.
+With read-only access, you aren't able to edit status or notes for an improvement action, edit score zones, or edit custom comparisons.
 
 * Helpdesk administrator
 * User administrator
@@ -102,11 +113,11 @@ With read-only access, you are not able to edit status or notes for an improveme
 
 ## Risk awareness
 
-Microsoft Secure Score is a numerical summary of your security posture based on system configurations, user behavior and other security related measurements; it is not an absolute measurement of how likely your system or data will be breached. Rather, it represents the extent to which you have adopted security controls in your Microsoft environment which can help offset the risk of being breached. No online service is completely immune from security breaches, and secure score should not be interpreted as a guarantee against security breach in any manner.
+Microsoft Secure Score is a numerical summary of your security posture based on system configurations, user behavior, and other security-related measurements. It isn't an absolute measurement of how likely your system or data will be breached. Rather, it represents the extent to which you have adopted security controls in your Microsoft environment that can help offset the risk of being breached. No online service is completely immune from security breaches, and secure score shouldn't be interpreted as a guarantee against security breach in any manner.
 
 ## We want to hear from you
 
-If you have any issues, please let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
+If you have any issues, let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
 
 ## Related resources
 

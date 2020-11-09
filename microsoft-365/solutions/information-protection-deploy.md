@@ -23,9 +23,9 @@ description: Configure the security and service infrastructure to protect your i
 
 Your organization may be subject to regional data privacy regulations that require you to protect, manage, and provide rights and control over personal information stored in your IT infrastructure, including both on-premises and in the cloud. The best example of a data privacy regulation is the European Union's General Data Protection Regulation (GDPR). Failure to comply with data privacy regulations can result in substantial fines.
 
-Examples of the types of data in Microsoft 365 include chat sessions in Microsoft Teams, emails in Exchange, and files in SharePoint and OneDrive. This solution provides guidance on how to identify, locate, protect, govern, and respond to data privacy incidents for personal data stored in Microsoft 365 services that is subject to data privacy regulations.
+Examples of the types of data in Microsoft 365 include chat sessions in Microsoft Teams, emails in Exchange, and files in SharePoint and OneDrive. This solution provides guidance on how to assess risks and identify information, protect, govern, and respond to data privacy incidents for personal data stored in Microsoft 365 services that is subject to data privacy regulations.
 
-![Deploy information protection for data privacy regulations](../media/information-protection-deploy/information-protection-deploy-big-picture.png)
+![What is information protection for data privacy regulations](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png)
 
 Additional information is also provided on the use of Microsoft 365 identity, device, and threat protection controls for your data privacy needs. 
 
@@ -33,9 +33,8 @@ To meet the criteria for protecting information for compliance with data privacy
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
-| Compliance Manager | Manage regulatory compliance activities related to Microsoft cloud services with this workflow-based risk assessment tool in the Microsoft Service Trust Portal. | Microsoft 365 E3 and E5 |
-| Compliance Score (preview) | See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft 365 Compliance Center. | Microsoft 365 E3 and E5 |
-| Office Advanced Threat Protection (ATP) | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. | Microsoft 365 E3 and E5 | 
+| Compliance Manager | Manage regulatory compliance activities, get an overall score of your current compliance configuration, and find recommendations for improvement in this workflow-based risk assessment tool in the Microsoft 365 compliance center. | Microsoft 365 E3 and E5 |
+| Microsoft Defender for Office 365 | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. | Microsoft 365 E3 and E5 | 
 | Sensitivity labels | Classify and protect your organization's data without hindering the productivity of users and their ability to collaborate by placing labels with various levels of protection on email, files, or sites. | Microsoft 365 E3 and E5 |
 | Data Loss Protection (DLP) | Detect, warn, and block risky, inadvertent, or inappropriate sharing, such as sharing of data containing personal information, both internally and externally. | Microsoft 365 E3 and E5 | 
 | Data retention labels and policies | Implement information governance controls, such as how long to keep data and requirements on the storage of personal data on customers, to comply with your organization's policies or data regulations. | Microsoft 365 E3 and E5 |
@@ -46,7 +45,7 @@ To meet the criteria for protecting information for compliance with data privacy
 
 To help you understand the Microsoft 365 tools available to identify, manage, control, and monitor personal data subject to one or more privacy-related regulations, this guidance is organized into sections.
  
-![Deploy information protection for data privacy regulations](../media/information-protection-deploy/information-protection-deploy-grid.png)
+![Steps to implement information protection for data privacy regulations](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
 Each of these sections correspond to a separate article in this solution.
 
@@ -57,21 +56,21 @@ Each of these sections correspond to a separate article in this solution.
 >Following this guidance will not necessarily make you compliant with any data privacy regulation, especially considering the number of steps required that are outside the context of the features. You are responsible for ensuring your compliance and to consult your legal and compliance teams or to seek guidance and advice from third parties that specialize in compliance.
 >
 
-## Plan: Assess data privacy risks and identify sensitive items 
+## Plan: Assess data privacy risks and identify sensitive items
 
 Assessing data privacy regulations and risks that your organization is subject to is a key first step to take before starting to implement improvements, including those achievable through Microsoft 365 configuration. This may include an overall readiness assessment or identification of particular sensitive information types that are subject to regulatory controls your organization needs to comply with, as well as the occurrence of them in your Microsoft 365 environment.
 
 For more information, see [Assess data privacy risks and identify sensitive items](information-protection-deploy-assess.md).
 
-## Track: Use Compliance Score and Compliance Manager 
+## Track: Run risk assessments and check your compliance score
 
-Compliance Score and Compliance Manager provide an integrated set of tools available in the Microsoft 365 Compliance admin center and Services Trust Portal. Together, these tools provide you with a built-in ability to track and manage improvement actions overall as well as those related to multiple data privacy regulations to which you are subjected.
+Compliance Manager, available in the Microsoft 365 compliance center, provides you with a built-in ability to track and manage improvement actions overall as well as those related to multiple data privacy regulations that apply to you.
 
-The tools also allow you to leverage built in assessment templates specific to each regulation, where you can track action items for each assessment template selected, as well as view specific regulatory controls, and relate them to specific actions.
+Leverage built in assessment templates specific to each regulation, where you can track action items for each assessment template selected, as well as view specific regulatory controls, and relate them to specific actions.
 
-For more information, see [Use Compliance Score and Compliance Manager to manage improvement actions](information-protection-deploy-compliance.md).
+For more information, see [Use Compliance Manager to manage improvement actions](information-protection-deploy-compliance.md).
 
-## Prevent: Use identity, device, and threat protection for data privacy regulation
+## Prevent: Protect personal data
 
 Microsoft 365 provides a number of identity, device, and threat protection capabilities that you can use to help comply with data privacy regulatory compliance. 
 
@@ -95,7 +94,7 @@ For more information, see [Govern information subject to data privacy regulation
 
 While the data privacy regulations can be vague regarding information governance&mdash;such as purposeful retention, deletion and archiving&mdash;this article lays out the primary control schemes that you can use address information governance needs for data privacy in your organization.
 
-## Investigate: Monitor and respond subject to data privacy regulation
+## Investigate: Monitor, investigate, and respond to data privacy incidents
 
 There are Microsoft 365 features available to help you monitor, investigate, and respond to data privacy incidents in your organization as you operationalize related capabilities. 
 

@@ -19,9 +19,9 @@ ms.assetid:
 description: "You can track the status of long-running processes that result when performing tasks in the Data Investigations tool in the Security & Compliance Center."
 ---
 
-# Manage jobs in Data Investigations (Preview)
+# Manage jobs in Data Investigations (preview)
 
-Here's a list of the jobs (which are typically long-running processes) that are tracked on the **Jobs** tab of an investigation in Data Investigations (Preview). These jobs are triggered by user actions when using and managing investigations.
+Here's a list of the jobs (which are typically long-running processes) that are tracked on the **Jobs** tab of an investigation in Data Investigations (preview). These jobs are triggered by user actions when using and managing investigations.
 
 | Job type           | Description     |
 | :----------------- | :----------     |

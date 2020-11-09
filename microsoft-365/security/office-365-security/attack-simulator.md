@@ -1,42 +1,45 @@
 ---
-title: "Attack Simulator in ATP"
+title: "Attack Simulator in Microsoft Defender for Office 365"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: overview
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn how to use Attack Simulator to run simulated phishing and password attacks in your Microsoft 365 E5 or ATP Plan 2 organization."
+description: "Admins can learn how to use Attack Simulator to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations."
 ---
 
-# Attack Simulator in ATP
+# Attack Simulator in Microsoft Defender for Office 365
 
-**Summary** If you are a global administrator or a security administrator and your organization has Office 365 Advanced Threat Protection Plan 2, which includes [Threat Investigation and Response capabilities](office-365-ti.md), you can use Attack Simulator to run realistic attack scenarios in your organization. This can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+If your organization has Microsoft Defender for Office 365 Plan 2, which includes [Threat Investigation and Response capabilities](office-365-ti.md), you can use Attack Simulator in the Security & Compliance Center to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
+
+> [!NOTE]
+> Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations).
 
 ## What do you need to know before you begin?
 
-- To open the Security & Compliance Center, go to <https://protection.office.com/>. Attack simulator is available at **Threat management** \> **Attack simulator**.
+- To open the Security & Compliance Center, go to <https://protection.office.com/>. Attack simulator is available at **Threat management** \> **Attack simulator**. Go go directly to attack simulator, open <https://protection.office.com/attacksimulator>.
 
-  ![Threat management - Attack Simulator](../../media/ThreatMgmt-AttackSimulator.png)
-
-- For more information about the availability of Attack Simulator across different Microsoft 365 subscriptions, see [Office 365 Advanced Threat Protection service description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- For more information about the availability of Attack Simulator across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - You need to be a member of the **Organization Management** or **Security Administrator** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Your account needs to be configured for multi-factor authentication (MFA) to create and manage campaigns in Attack Simulator. For instructions, see [Set up multi-factor authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
-
-For an attack to be successfully launched, make sure that the account you are using to run simulated attacks is using multi-factor authentication. In addition, you must be a global administrator or a security administrator. (To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).)
 
 - Phishing campaigns will collect and process events for 30 days. Historical campaign data will be available for up to 90 days after you launch the campaign.
 
@@ -44,15 +47,13 @@ For an attack to be successfully launched, make sure that the account you are us
 
 ## Spear phishing campaigns
 
-*Phishing* is a generic term for email attacks that try to steal sensitive information in messages that appear to be from legitimate or trusted senders. *Spear phishing* is a targeted phishing attack that uses very focused and customized content that's specifically tailored to the targeted recipients (typically, after reconnaissance on the recipients by the attacker).
-
-- You are a global administrator or security administrator
+*Phishing* is a generic term for email attacks that try to steal sensitive information in messages that appear to be from legitimate or trusted senders. *Spear phishing* is a targeted phishing attack that uses focused and customized content that's specifically tailored to the targeted recipients (typically, after reconnaissance on the recipients by the attacker).
 
 In Attack Simulator, two different types of spear phishing campaigns are available:
 
-- [Multi-factor authentication/Conditional Access](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) is turned on, for at least the global administrator account and security administrators who will be using Attack Simulator. (Ideally, multi-factor authentication/conditional access is turned on for all users in your organization.)
+- **Spear phishing (credentials harvest)**: The attack tries to convince the recipients to click a URL in the message. If they click the link, they're asked to enter their credentials. If they do, they're taken to one of the following locations:
 
-  - A default page that explains this was a just a test, and gives tips for recognizing phishing messages.
+  - A default page that explains that this was a just a test, and gives tips for recognizing phishing messages.
 
     ![What users see if they click the phishing link and enter their credentials](../../media/attack-simulator-phishing-result.png)
 
@@ -109,7 +110,10 @@ If you're going to use one of the built-in templates or create the email message
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>All of the URLs are intentionally http, not https.</li><li>A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign.</li></ul>
+     >
+     > - All of the URLs are intentionally http, not https.
+     >
+     > - A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign.
 
    - **Custom Landing Page URL**: Enter an optional landing page where users are taken if they click the phishing link and enter their credentials. This link replaces the default landing page. For example, if you have internal awareness training, you can specify that URL here.
 
@@ -183,7 +187,12 @@ If you're going to use one of the built-in templates or create the email message
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>All of the URLs are intentionally http, not https.</li><li>A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign.</li><li>You are required to select a URL. For <b>Spear Phishing (Attachment)</b> campaigns, you can remove the link from the body of the message in the next step (otherwise, the message will contain both a link <b>and</b> an attachment).</li></ul>
+     >
+     > - All of the URLs are intentionally http, not https.
+     >
+     > - A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign.
+     >
+     > - You are required to select a URL. For **Spear Phishing (Attachment)** campaigns, you can remove the link from the body of the message in the next step (otherwise, the message will contain both a link **and** an attachment).
 
    - **Attachment Type**: This setting is only available in **Spear Phishing (Attachment)** campaigns. Click the drop down and select **.DOCX** or **.PDF** from the list.
 

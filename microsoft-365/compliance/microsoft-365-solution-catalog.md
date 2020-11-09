@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 solution catalog
+title: "Microsoft 365 solution catalog"
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -7,7 +7,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: o365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Learn about the Microsoft 365 solution catalog, including what it contains, how to get it, and your next steps.
 ms.collection: M365-security-compliance
@@ -88,7 +88,7 @@ If you are looking for an existing compliance solution and it's not available in
 
 ## Next steps
 
-- **Review your Microsoft Compliance Score**, a personalized, risk-based score to help you understand your organization's state of compliance with key standards and regulations. It provides recommended actions you can take to strengthen your overall compliance posture, and provides workflow capabilities to help you efficiently carry out those actions. To learn more, see [Compliance Score (preview)](compliance-score.md).
+- **Visit Microsoft Compliance Manager**, which helps you understand your organization's state of compliance with key standards and regulations. It provides recommended actions you can take to strengthen your overall compliance posture, and provides workflow capabilities to help you efficiently carry out those actions. To learn more, see [Compliance Manager](compliance-manager.md).
 
 - **Configure insider risk management policies** to help minimize internal risks and enable you to detect, investigate, and take action for risky activities in your organization. See [Insider risk management](insider-risk-management.md).
 
@@ -96,6 +96,6 @@ If you are looking for an existing compliance solution and it's not available in
 
 - **Microsoft Information Protection**, learn how Microsoft 365 solutions help you discover, classify, and protect sensitive information wherever it lives or travels.
     - **Get acquainted with and set up Microsoft Cloud App Security**. See [Quickstart: Get started with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
-    - **Get started with classifiers**. Classifying content and then labeling it so it can be protected and handled properly is the starting place for the information protection discipline. See [Getting started with trainable classifiers](classifier-getting-started-with.md).
+    - **Get started with classifiers**. Classifying content and then labeling it so it can be protected and handled properly is the starting place for the information protection discipline. See [Learn about trainable classifiers (preview)](classifier-learn-about.md).
 
 - **Visit your Microsoft 365 solution catalog often**, and make sure to review new solutions to help you with your compliance needs. Sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) and then select **Catalog** in the left navigation pane.

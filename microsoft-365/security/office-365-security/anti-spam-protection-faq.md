@@ -6,20 +6,24 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: "Admins can view frequently asked questions and answers about anti-spam protection in Exchange Online Protection (EOP)."
 ---
 
 # Anti-spam protection FAQ
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 This topic provides frequently asked questions and answers about anti-malware protection for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
 
@@ -50,7 +54,7 @@ After you sign up for the service and add your domain, spam filtering is automat
 
 For more information, see the following topics:
 
-[Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md)
+[Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md)
 
 [Configure connection filtering in EOP](configure-the-connection-filter-policy.md)
 

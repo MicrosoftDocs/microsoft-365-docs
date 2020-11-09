@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -28,15 +28,15 @@ Use this dev/test environment to experiment and fine-tune settings for your spec
   
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 
-If you just want to test sensitive and highly sensitive teams in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
+If you just want to test sensitive and highly sensitive teams in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md).
 
-If you want to test sensitive and highly sensitive teams in a simulated enterprise, follow the instructions in [Password hash synchronization](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment).
+If you want to test sensitive and highly sensitive teams in a simulated enterprise, follow the instructions in [Password hash synchronization](../enterprise/password-hash-sync-m365-ent-test-environment.md).
 
 >[!Note]
->Testing an team with security isolation does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test a team with security isolation and experiment with it in an environment that represents a typical organization.
+>Testing a team with security isolation does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test a team with security isolation and experiment with it in an environment that represents a typical organization.
 >
     
-## Phase 2: Create and configure your Azure Active Directory (AD) group and users
+## Phase 2: Create and configure your Azure Active Directory (Azure AD) group and users
 
 In this phase, you create and configure an Azure AD group and users for your fictional organization.
   
@@ -58,7 +58,7 @@ First, create a security group with the Azure portal.
       
 5. Click **Create**, and then close the **Group** blade.
     
-Next, configure automatic licensing so that members of the new **C-Suite** group is automatically assigned a Microsoft 365 E5 license.
+Next, configure automatic licensing so that members of the new **C-Suite** group are automatically assigned a Microsoft 365 E5 license.
   
 1. In the Azure portal, click **Azure Active Directory > Licenses > All products**.
     
@@ -72,7 +72,7 @@ Next, configure automatic licensing so that members of the new **C-Suite** group
     
 6. Close the Azure portal tab in your browser.
     
-Next, [connect with the Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Next, [connect with the Azure Active Directory PowerShell for Graph module](../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Fill in your organization name, your location, and a common password, and then run these commands from the PowerShell command prompt or Integrated Script Environment (ISE) to create new user accounts and add them to the C-Suite group:
   
@@ -110,7 +110,7 @@ Use these steps to verify that group-based licensing is working correctly.
 
 In this phase, you create and configure a team with security isolation for members of the senior leadership team to collaborate on company strategy.
 
-First, enable sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites before you proceed with the steps in [this article](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+First, enable sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites before you proceed with the steps in [this article](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Next, create the team:
 
@@ -121,9 +121,15 @@ Next, create the team:
 5. Under **Privacy**, click **Private**.
 6. Type **Company Strategy**, and then click **Create** > **Close**.
 
+Next, restrict the creation of private channels to owners of the Company Strategy group.
+
+1. In the team, click **More options**, and then click **Manage team**.
+2. On the **Settings** tab, expand **Member permissions**.
+3. Clear the **Allow members to create private channels** check box.
+
 Next, you need to configure a sensitivity label with the following settings:
 
-- The name of the label is Company Strategy
+- The name is Company Strategy
 - Encryption is enabled
 - The Company Strategy group has Co-Author permissions
 
@@ -194,10 +200,6 @@ Here is the resulting configuration for the Company Strategy team.
 
 ![Configuration for the Company Strategy isolated team](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
-Files in the team can have the Company Strategy sensitivity label assigned by the members of the Company Strategy group. Here is an example.
-
-![Example of a file with the Company Strategy sensitivity label applied](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config-example.png)
- 
 ## Next step
 
-When you are ready for production deployment, see [Configure a team with security isolation](secure-teams-security-isolation.md) for detailed configuration information.
+When you're ready for production deployment, see these [configuration instructions](secure-teams-security-isolation.md).

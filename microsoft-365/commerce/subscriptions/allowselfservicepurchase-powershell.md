@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -87,6 +87,10 @@ The following table lists the available products and their **ProductId**.
 | Power Apps per user | CFQ7TTC0KP0P |
 | Power Automate per user | CFQ7TTC0KP0N |
 | Power BI Pro | CFQ7TTC0L3PB |
+| Project Plan 1 | CFQ7TTC0KXND |
+| Project Plan 3 | CFQ7TTC0KXNC |
+| Visio Plan 1 | CFQ7TTC0KXN9 |
+| Visio Plan 2 | CFQ7TTC0KXN8 |
 
 ## View or set the status for AllowSelfServicePurchase
 
@@ -123,7 +127,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 ## Troubleshooting
 
-**Problem**
+### Problem
 
 You see the following error message:
 
@@ -131,7 +135,7 @@ You see the following error message:
 
 This may be due to an older version of Transport Layer Security (TLS). To connect this service you need to use TLS 1.2 or greater
 
-**Solution**
+### Solution
 
 Upgrade to TLS 1.2: [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 

@@ -37,9 +37,9 @@ Update deployment | Use Windows Update for Business to perform gradual deploymen
 Metered connections | By default, updates over metered connections (such as LTE networks) are turned off, though each user can independently turn on this feature in **Settings > Updates > Advanced options**. If you want to allow all users to enable updates over metered connections, [submit a change request](../working-with-managed-desktop/admin-support.md), which will turn on this setting for all devices.
 | Device compliance | These policies are configured for all Microsoft Managed Desktop devices. A device is reported as non-compliant when it drifts from our required security configuration.
 
-## Diagnostic data
+## Windows diagnostic data
 
- Devices will be set to provide enhanced diagnostic data to Microsoft under a known commercial identifier. As part of Microsoft Managed Desktop, IT admins can not change these settings. For customers in General Data Protection Regulation (GDPR) regions, end users can reduce the level of diagnostic data that is provided, but there will be a reduction in service. For example, Microsoft Managed Desktop will be unable to collect the data necessary to iterate on settings and policies to best serve performance and security needs. For more information, see [Configure Windows diagnostic data in your organization.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
+ Devices will be set to provide enhanced diagnostic data to Microsoft under a known commercial identifier. As part of Microsoft Managed Desktop, IT admins can not change these settings. For customers in General Data Protection Regulation (GDPR) regions, users can reduce the level of diagnostic data that is provided, but there will be a reduction in service. For example, Microsoft Managed Desktop will be unable to collect the data necessary to iterate on settings and policies to best serve performance and security needs. For more information, see [Configure Windows diagnostic data in your organization.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
 ## Security addendum
 
@@ -48,5 +48,5 @@ Metered connections | By default, updates over metered connections (such as LTE 
  ### Additional security policies
 
  These policies are added to increase security for highly regulated industries. 
- - **Security monitoring**: Microsoft will monitor devices using [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). If a threat is detected, Microsoft will notify the customer, isolate the device, and rectify the issue remotely. 
+ - **Security monitoring**: Microsoft will monitor devices using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). If a threat is detected, Microsoft will notify the customer, isolate the device, and rectify the issue remotely. 
  - **Disable PowerShell V2**: Microsoft removed PowerShell V2 in August 2017. This feature has been disabled on all Microsoft Managed Desktop devices. For more information on this change, see [Windows PowerShell 2.0 Deprecation](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).

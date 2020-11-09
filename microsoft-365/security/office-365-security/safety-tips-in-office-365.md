@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -22,6 +22,9 @@ ms.custom: seo-marvel-apr2020
 
 # Safety tips in email messages
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Exchange Online Protection (EOP) and Microsoft 365 protect you with spam, phishing, and malware prevention. Today, some of these attacks are so well crafted that they look legitimate. Sending messages to the Junk Email folder isn't always enough. Now, when you check your email in Outlook or Outlook on the web or any email client, EOP automatically checks the sender and adds a safety tip to the top of the email.
 
 Safety tips in Outlook do not depend on what version of Outlook you're using because the safety tip is cracked open and inserted directly into the message body. This means that the safety tip will show up in whatever email client you're using. It's done at the email filter level and not rendered at the mail client level, so not only does it show up in any version of Outlook, it also shows up in any email client.
@@ -33,12 +36,6 @@ The safety tip—a color-coded message—will warn you about potentially harmful
     ![Screenshot that shows a red safety tip.](../../media/5078a0be-e556-44a1-b169-09d780d26898.png)
 
     A red safety tip in an email means that the message you received contains something suspicious, such as a phishing scam. We recommend that you delete this kind of email message from your inbox without opening it.
-
-- Spam (yellow safety tip).
-
-    ![Screenshot that shows a yellow safety tip.](../../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
-
-    A yellow safety tip in an email means that the message has been marked as spam. If you don't recognize and trust the sender of the message, don't download any attachments or pictures and don't click any links in the message. In Outlook on the web, you can click **It's not spam** in the yellow bar of a junk mail item to move the message to your inbox. If the yellow safety tip appears on a message that was delivered to your inbox, it's probably there because you've disabled moving spam to your Junk Email folder.
 
 - Safe mail (green safety tip).
 
@@ -53,7 +50,6 @@ The safety tip—a color-coded message—will warn you about potentially harmful
     We'll also tell you when we skipped checking a mail because it's from a sender you trust on your Safe Senders list or if a mail flow rule exists to bypass filtering.
 
     The gray safety tip also shows up when external images are blocked, that is, the message is in your inbox and doesn't appear to be spam, but contains external images that you haven't opted to download.
-    
 
 ## Working with safety tips
 

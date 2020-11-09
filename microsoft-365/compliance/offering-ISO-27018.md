@@ -3,7 +3,7 @@ title: ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud
 description: Microsoft was the first cloud provider to adhere to this code of practice for cloud privacy.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -56,7 +56,7 @@ By following the standards of ISO/IEC 27001 and the code of practice embodied in
 - Power Virtual Agents
 - Microsoft Threat Experts
 - Microsoft Stream
-- Windows Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score
+- Microsoft Defender for Endpoint  — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score
 
 ## Audits, reports, and certificates
 
@@ -104,9 +104,9 @@ Yes. If compliance with ISO/IEC 27018 is important for your business and impleme
 
 However, you are responsible for engaging an assessor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
 
-## Use Microsoft Compliance Score to assess your risk
+## Use Microsoft Compliance Manager to assess your risk
 
-[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [ISO 27018 template](https://go.microsoft.com/fwlink/?linkid=2117523) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

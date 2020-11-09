@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,7 +22,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn how to assign licenses to users."
-ms.date: 07/01/2020
+ms.date: 08/14/2020
 ---
 
 # Assign licenses to users
@@ -156,6 +156,25 @@ When you use the **Active users** page to assign licenses, you assign users lice
 5. At the bottom of the **Product licenses** pane, select **Save** \> **Close** \> **Close**.
 
 ::: moniker-end
+
+## Assign a license to a guest user
+
+You can invite guest users to collaborate with your organization in Azure Active directory admin center. To learn about guess users, see [What is guest user access in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) If you don't have any guest users, see [Quickstart: Add guest users to your directory in the Azure portal](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+
+> [!IMPORTANT]
+> You must be a Global admin to do these steps.
+
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory admin center</a>
+2. In the navigation pane, select **Users**.
+3. On the **Users | All Users (Preview)** page, select **Add filters**.
+4. In the **Pick a field** menu, choose **User type**, then select **Apply**.
+5. In the next menu, select **Guest**.
+6. In the list of results, select the user who needs a license.
+7. Under **Manage**, select **Licenses**.
+8. Select **Assignments**.
+9. On the **Update license assignments** page, select the product you want to assign a license for.
+10. On the right, clear the check boxes for any services you don't want the guest user to have access to.
+11. Select **Save**.
 
 ## Next steps
 

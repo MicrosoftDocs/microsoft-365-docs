@@ -16,11 +16,9 @@ search.appverid:
 - MET150
 ms.assetid: 
 ROBOTS: NOINDEX, NOFOLLOW 
-
-description: ""
+description: "Learn about reviewing case data in a review set in Advanced eDiscovery."
 ---
 
 # Review case data in Advanced eDiscovery
 
-
-Coming soon
+Coming soon.

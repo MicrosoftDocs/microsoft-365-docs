@@ -6,17 +6,20 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date:
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid:
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn how to apply Standard and Strict policy settings across the protection features of Exchange Online Protection (EOP) and Office 365 Advanced Threat Protection (ATP)"
+description: "Admins can learn how to apply Standard and Strict policy settings across the protection features of Exchange Online Protection (EOP) and Microsoft Defender for Office 365"
 ---
 
-# Preset security policies in EOP and Office 365 ATP
+# Preset security policies in EOP and Microsoft Defender for Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Preset security policies provide a centralized location for applying all of the recommended spam, malware, and phishing policies to users at once. The policy settings are not configurable. Instead, they are set by us and are based on our observations and experiences in the datacenters for a balance between keeping harmful content away from users without disrupting their work.
 
@@ -51,7 +54,7 @@ The available conditions and exceptions are:
 
 ### Policies in preset security policies
 
-Preset security policies use the corresponding policies from the various protection features in EOP and Office 365 ATP. These policies are created _after_ you assign the **Standard protection** or **Strict protection** preset security policies to users. You can't modify these policies.
+Preset security policies use the corresponding policies from the various protection features in EOP and Microsoft Defender for Office 365. These policies are created _after_ you assign the **Standard protection** or **Strict protection** preset security policies to users. You can't modify these policies.
 
 - **Exchange Online Protection (EOP) policies**: This includes Microsoft 365 organizations with Exchange Online mailboxes and standalone EOP organizations without Exchange Online mailboxes:
   
@@ -59,23 +62,23 @@ Preset security policies use the corresponding policies from the various protect
   - [Anti-malware policies](configure-anti-malware-policies.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
   - [EOP Anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings) named **Standard Preset Security Policy** and **Strict Preset Security Policy** (spoof settings).
 
-- **Office 365 Advanced Threat Protection (ATP) policies**: This includes organizations with Microsoft 365 E5 or Office 365 ATP add-on subscriptions:
+- **Microsoft Defender for Office 365 policies**: This includes organizations with Microsoft 365 E5 or Defender for Office 365 add-on subscriptions:
 
-  - ATP anti-phishing policies named **Standard Preset Security Policy** and **Strict Preset Security Policy**, which include:
+  - Anti-phishing policies in Microsoft Defender for Office 365 named **Standard Preset Security Policy** and **Strict Preset Security Policy**, which include:
 
     - The same [spoof settings](set-up-anti-phishing-policies.md#spoof-settings) that are available in the EOP anti-phishing policies.
-    - [Impersonation settings](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
-    - [Advanced phishing thresholds](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
+    - [Impersonation settings](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+    - [Advanced phishing thresholds](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [Safe Links policies](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
+  - [Safe Links policies](set-up-atp-safe-links-policies.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
 
-  - [Safe Attachments policies](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
+  - [Safe Attachments policies](set-up-atp-safe-attachments-policies.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
 
-Note that you can apply EOP protections to different users than ATP protections.
+Note that you can apply EOP protections to different users than Microsoft Defender for Office 365 protections.
 
 ### Policy settings in preset security policies
 
-You can't modify the policy settings in the protection profiles. The **Standard** and **Strict** policy setting values are described in [Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md).
+You can't modify the policy settings in the protection profiles. The **Standard** and **Strict** policy setting values are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md).
 
 ### Order of precedence for preset security policies and other policies
 
@@ -106,6 +109,7 @@ In other words, the settings of the **Strict protection** policy override the se
   - For read-only access to preset security policies, you need to be a member of one of the following role groups:
 
     - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **Global Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
     - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 ### Use the Security & Compliance Center to assign preset security policies to users
@@ -134,7 +138,7 @@ In other words, the settings of the **Strict protection** policy override the se
 
    When you're finished, click **Next**.
 
-4. If your organization has Office 365 ATP, you're taken to the **ATP protections apply to** step to identify the internal recipients that the [Office 365 ATP protections](#policies-in-preset-security-policies) apply to.
+4. If your organization has Microsoft Defender for Office 365, you're taken to the **ATP protections apply to** step to identify the internal recipients that the [Microsoft Defender for Office 365 protections](#policies-in-preset-security-policies) apply to.
 
    The settings and behavior are exactly like the **EOP protections apply to** step.
 

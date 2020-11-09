@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,7 +14,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - remotework
 - m365solution-remotework
-- m365solution-overview
+- m365solution-scenario
 ms.custom: 
 description: Train your users and ensure that issues are dealt with quickly.
 ---
@@ -25,8 +24,8 @@ description: Train your users and ensure that issues are dealt with quickly.
 Train your remote workers on:
 
 - Proper sign-in procedures using MFA, including registering an additional verification method.
-- The use of devices and how endpoint management policies can be used to block access for non-compliant devices.
-- The use of allowed apps and how endpoint management application polices can be used to block the use of apps.
+- The use of devices and how endpoint management policies can be used to block access for non-compliant or unmanaged devices.
+- The use of allowed apps and how endpoint management application polices can be used to block the use of some apps.
 - Windows 10 Enterprise security features.
 - How to use [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) for chat, video-based conferencing, document sharing, and threaded conversations.
 - How to use [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) for email and scheduling.
@@ -34,14 +33,16 @@ Train your remote workers on:
 
 This training should include hands-on exercises so that your workers can experience these capabilities and their results.
 
+Create a forum for your remote workers to ask questions or get issues addressed, such as a team or a Yammer group.
+
 In the weeks after training:
 
-- Quickly address remote worker feedback and fine tune policies and configurations.
-- Analyze usage for teams, email, SharePoint sites, and OneDrive folders and compare it with usage expectations.
+- Quickly address remote worker feedback in your forum and adjust your remote worker policies and configurations as needed.
+- Analyze usage for teams, email, SharePoint sites, and OneDrive folders and compare it with your expectations of user adoption.
 
 Then, retrain your users as needed.
 
 ## Results of Step 6
 
-Your remote workers are trained and there is a responsive and open forum for them to provide feedback and post issues with remote access and productivity apps and services.
+Your remote workers are trained and there is a responsive and open forum for them to provide feedback and post issues with remote access and productivity apps.
 

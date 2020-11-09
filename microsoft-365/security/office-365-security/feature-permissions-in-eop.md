@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
@@ -15,6 +15,9 @@ description: "Learn about the permission that are required for tasks in standalo
 ---
 
 # Permissions in standalone EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Standalone Exchange Online Protection (EOP) without Exchange Online mailboxes uses the Role Based Access Control (RBAC) permissions model to easily grant permissions to your admins. You can use the permission features in standalone EOP to get your new organization up and running quickly.
 
@@ -38,9 +41,10 @@ The following figure shows the relationship between users, role groups, and role
 
 The available role groups in standalone EOP are described in the following table.
 
-||||
+****
+
+|Role group|Description|Default roles assigned|
 |---|---|---|
-|**Role group**|**Description**|**Default roles assigned**|
 |ComplianceManagement|Configure and manage compliance settings within the organization, including data loss prevention (DLP) if your subscription has DLP capabilities. <br/><br/> Members of the [Compliance Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) role in Azure AD automatically get the permissions of this role group.|Audit Logs <br/><br/> Compliance Administration <br/><br/> Information Rights Management <br/><br/> Retention Management <br/><br/> View-Only Audit Logs <br/><br/> View-Only Configuration <br/><br/> View-Only Recipients|
 |ContentExplorerContentViewer|Not used.|Data Classification Content Viewer|
 |ContentExplorerListViewer|Not used.|Data Classification List Viewer|
@@ -65,9 +69,10 @@ If the built-in role groups in Exchange Online don't match the job function of y
 
 The built-in roles that are available in standalone EOP are described in the following table.
 
-||||
+****
+
+|Role**|Description|Default role group assignments|
 |---|---|---|
-|**Role**|**Description**|**Default role group assignments**|
 |AntiMalware|View and modify the configuration and reports for anti-malware features.|OrganizationManagement <br/><br/> SecurityAdministrator|
 |AntiSpam|View and modify the configuration and reports for anti-spam features.|OrganizationManagement <br/><br/> SecurityAdministrator|
 |Audit Logs|Search the administrator audit log and view the results.|ComplianceManagement <br/><br/> OrganizationManagement <br/><br/> SecurityAdministrator|
@@ -118,9 +123,10 @@ When you create a user in the Microsoft 365 admin center, you can choose whether
 
 The following table lists the Microsoft 365 roles and the standalone EOP role groups that they correspond to. For more information about these roles, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
-|||
+****
+
+|Microsoft 365 role|EOP role group|
 |---|---|
-|**Microsoft 365 role**|**EOP role group**|
 |Exchange admin|OrganizationManagement|
 |Global admin|OrganizationManagement <br/><br/> **Note**: The Global admin role and the OrganizationManagement role group are tied together using a special Company Administrator role group. The Company Administrator role group is managed internally and can't be modified directly.|
 |Password admin|HelpDesk|

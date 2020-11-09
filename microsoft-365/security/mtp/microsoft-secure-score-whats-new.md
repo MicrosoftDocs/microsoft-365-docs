@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Secure Score
 description:  Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 security center.
-keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -24,31 +24,21 @@ ms.custom:
 
 # What's new in Microsoft Secure Score
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
-## June 2020
+## October 2020
 
-### Removed improvement action for Microsoft Defender Advanced Threat Protection
+### Remove improvement action related to Microsoft Defender for Endpoint
 
-* Turn on Attack Surface Reduction rules
+- Set Microsoft Defender SmartScreen Windows Store app web content checking to warn
 
-### Added improvement actions for Microsoft Defender Advanced Threat Protection
+## August 2020
 
-* Block Adobe Reader from creating child processes
-* Use advanced protection against ransomware
-* Block all Office applications from creating child processes
-* Block Office applications from creating executable content
-* Block JavaScript or VBScript from launching downloaded executable content
-* Block execution of potentially obfuscated scripts
-* Block executable content from email client and webmail
-* Block Office communication application from creating child processes
-* Block untrusted and unsigned processes that run from USB
-* Block persistence through WMI event subscription
-* Block Office applications from injecting code into other processes
-* Block executable files from running unless they meet a prevalence, age, or trusted list criterion
-* Block process creations originating from PSExec and WMI commands
-* Block credential stealing from the Windows local security authority subsystem (lsass.exe)
-* Block Win32 API calls from Office macros
+### Updated improvement action for Azure Active Directory
+
+- Enable policy to block legacy authentication
 
 ## Incompatibility with Identity Secure Score and Graph API
 
@@ -59,8 +49,8 @@ In time, Identity Secure Score and the Graph API will adopt the new scoring mode
 ## Updated improvement actions
 
 - Added Azure Active Directory improvement actions
-- Added Azure Advanced Threat Protection improvement actions
-- Support for Microsoft Defender ATP [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) security recommendations
+- Added Microsoft Defender for Identity improvement actions
+- Support for Microsoft Defender for Endpoint [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) security recommendations
     - All released security recommendations supplied by TVM are now available
 
 ## Updated interface and functionality
@@ -74,7 +64,7 @@ In time, Identity Secure Score and the Graph API will adopt the new scoring mode
 
 ## We want to hear from you
 
-If you have any issues, please let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
+If you have any issues, let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
 
 ## Related resources
 

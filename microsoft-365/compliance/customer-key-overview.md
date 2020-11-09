@@ -12,6 +12,8 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: "In this article, you will learn about how service encryption works with the customer key in Microsoft 365."
 ---

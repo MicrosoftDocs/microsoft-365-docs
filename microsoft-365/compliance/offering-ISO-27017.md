@@ -3,7 +3,7 @@ title: ISO/IEC 27017:2015 Code of Practice for Information Security Controls
 description: Microsoft cloud services have implemented this Code of Practice for Information Security Controls.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -22,11 +22,11 @@ titleSuffix: Microsoft Compliance
 
 The ISO/IEC 27017:2015 code of practice is designed for organizations to use as a reference for selecting cloud services information security controls when implementing a cloud computing information security management system based on ISO/IEC 27002:2013. It can also be used by cloud service providers as a guidance document for implementing commonly accepted protection controls.
 
-This international standard provides additional cloud-specific implementation guidance based on ISO/IEC 27002, and provides additional controls to address cloud-specific information security threats and risks referring to clauses 5–18 in ISO/IEC 27002: 2013 for controls, implementation guidance, and other information. Specifically, this standard provides guidance on 37 controls in ISO/IEC 27002, and it also features seven new controls that are not duplicated in ISO/IEC 27002. These new controls address the following important areas:
+This international standard provides additional cloud-specific implementation guidance based on ISO/IEC 27002, and provides additional controls to address cloud-specific information security threats and risks referring to clauses 5-18 in ISO/IEC 27002: 2013 for controls, implementation guidance, and other information. Specifically, this standard provides guidance on 37 controls in ISO/IEC 27002, and it also features seven new controls that are not duplicated in ISO/IEC 27002. These new controls address the following important areas:
 
 - Shared roles and responsibilities within a cloud computing environment
 - Removal and return of cloud service customer assets upon contract termination
-- Protection and separation of a customer’s virtual environment from environments of other customers
+- Protection and separation of a customer's virtual environment from environments of other customers
 - Virtual machine hardening requirements to meet business needs
 - Procedures for administrative operations of a cloud computing environment
 - Enabling customers to monitor relevant activities within a cloud computing environment
@@ -41,7 +41,7 @@ ISO/IEC 27017 is unique in providing guidance for both cloud service providers a
 - [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
 - [Dynamics 365, Dynamics 365, and Dynamics 365 Germany](https://aka.ms/d365-compliance-list)
-- Microsoft Defender Advanced Threat Protection
+- Microsoft Defender for Endpoint
 - Microsoft Graph
 - Microsoft Healthcare Bot
 - Intune
@@ -68,17 +68,21 @@ To whom does the standard apply?
 
 This code of practice provides controls and implementation guidance for both cloud service providers and cloud service customers. It is structured in a format similar to ISO/IEC 27002:2013.
 
-**Where can I view Microsoft’s compliance information for ISO/IEC 27017:2015?**
+**Where can I view Microsoft's compliance information for ISO/IEC 27017:2015?**
 
 You can download the [ISO/IEC 27017:2015 certificate](https://aka.ms/azureiso27017) for Azure, Intune, and Power BI.
 
-**Can I use the ISO/IEC 27017 compliance of Microsoft services in my organization’s certification process?**
+**Can I use the ISO/IEC 27017 compliance of Microsoft services in my organization's certification process?**
 
-Yes. If your business is seeking certification for implementations deployed on any Microsoft in-scope enterprise cloud services, you can use Microsoft’s relevant certifications in your compliance assessment. However, you are responsible for engaging an assessor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
+Yes. If your business is seeking certification for implementations deployed on any Microsoft in-scope enterprise cloud services, you can use Microsoft's relevant certifications in your compliance assessment. However, you are responsible for engaging an assessor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
 
 **How can I get copies of the applicable audit reports?**
 
 The [Service Trust Portal](https://aka.ms/stphelp) provides independent, third-party audit reports and other related documentation. You can use the portal to download and review this documentation for assistance with your own regulatory requirements.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

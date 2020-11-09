@@ -8,7 +8,7 @@ manager: dansimp
 ms.reviewer:
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,15 +16,18 @@ search.appverid:
 ms.assetid:
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn how to use the configuration analyzer to find and fix security policies that contains settings that are below the Standard protection and Strict protection preset security policies."
+description: "Admins can learn how to use the configuration analyzer to find and fix security policies that are below the Standard protection and Strict protection preset security policies."
 ---
 
-# Configuration analyzer for protection policies in EOP and Office 365 ATP
+# Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
-> The features described in this topic are in Preview, aren't available in all organizations, and are subject to change.
+> The features described in this topic are in Preview, aren't available in all organizations, and are subject to change. For information about the release schedule, check out the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=config%2Canalyzer).
 
-Configuration analyzer in the Security & Compliance center provides a central location to find and fix any of your security policies that contain settings that are below the Standard protection and Strict protection profile settings in [preset security policies](preset-security-policies.md).
+Configuration analyzer in the Security & Compliance center provides a central location to find and fix security policies where the settings are below the Standard protection and Strict protection profile settings in [preset security policies](preset-security-policies.md).
 
 The following types of policies are analyzed by the configuration analyzer:
 
@@ -34,19 +37,19 @@ The following types of policies are analyzed by the configuration analyzer:
   - [Anti-malware policies](configure-anti-malware-policies.md).
   - [EOP Anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
 
-- **Office 365 Advanced Threat Protection (ATP) policies**: This includes organizations with Microsoft 365 E5 or Office 365 ATP add-on subscriptions:
+- **Microsoft Defender for Office 365 policies**: This includes organizations with Microsoft 365 E5 or Defender for Office 365 add-on subscriptions:
 
-  - ATP anti-phishing policies, which include:
+  - Anti-phishing policies in Microsoft Defender for Office 365, which include:
 
     - The same [spoof settings](set-up-anti-phishing-policies.md#spoof-settings) that are available in the EOP anti-phishing policies.
-    - [Impersonation settings](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
-    - [Advanced phishing thresholds](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
+    - [Impersonation settings](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+    - [Advanced phishing thresholds](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [Safe Links policies](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users).
+  - [Safe Links policies](set-up-atp-safe-links-policies.md).
 
-  - [Safe Attachments policies](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users).
+  - [Safe Attachments policies](set-up-atp-safe-attachments-policies.md).
 
-The **Standard** and **Strict** policy setting values that are used as baselines are described in [Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md).
+The **Standard** and **Strict** policy setting values that are used as baselines are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md).
 
 ## What do you need to know before you begin?
 
@@ -54,7 +57,7 @@ The **Standard** and **Strict** policy setting values that are used as baselines
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions before you can do the procedures in this topic:
+- You need to be assigned permissions before you can do the procedures in this article:
 
   - To use the configuration analyzer **and** make updates to security policies, you need to be a member of one of the following role groups:
 
@@ -76,7 +79,7 @@ The configuration analyzer has two main tabs:
 
 - **Settings and recommendations**: You pick Standard or Strict and compare those settings to your existing security policies. In the results, you can adjust the values of your settings to bring them up to the same level as Standard or Strict.
 
-- **Configuration drift analysis and history**: This view allows to track the changes that you've made to your policies based on the results of the configuration analyzer over time.
+- **Configuration drift analysis and history**: This view allows you to track policy changes over time.
 
 ### Setting and recommendations tab in the configuration analyzer
 
@@ -84,19 +87,19 @@ By default, the tab opens on the comparison to the Standard protection profile. 
 
 ![Settings and recommendations view in the Configuration analyzer](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
-By default, the **Policy group/setting name** column contains a collapsed view of the different types of security polices and the number of settings in those policies that need improvement (if any). The types of policies are:
+By default, the **Policy group/setting name** column contains a collapsed view of the different types of security policies and the number of settings that need improvement (if any). The types of policies are:
 
 - **Anti-spam**
 - **Anti-phishing**
 - **Anti-malware**
-- **ATP Safe Attachments** (if your subscription includes ATP)
-- **ATP Safe Links** (if your subscription includes ATP)
+- **ATP Safe Attachments** (if your subscription includes Microsoft Defender for Office 365)
+- **ATP Safe Links** (if your subscription includes Microsoft Defender for Office 365)
 
-In the default view, everything is collapsed. Next to each policy, a summary of comparison results from your policies (which you can modify) and the settings in the corresponding policies for the Standard or Strict protection profiles (which you can't modify) are displayed. You'll see the following information:
+In the default view, everything is collapsed. Next to each policy, there's a summary of comparison results from your policies (which you can modify) and the settings in the corresponding policies for the Standard or Strict protection profiles (which you can't modify). You'll see the following information for the protection profile that you're comparing to:
 
-- **Green**: All settings in all existing policies are at least as secure as the protection profile that you're comparing to.
-- **Amber**: A small number of settings in the existing policies are not as secure as the protection profile that you're comparing to.
-- **Red**: A significant number of settings in the existing policies are not as secure as the protection profile that you're comparing to. This could be a few settings in many policies or many settings in one policy.
+- **Green**: All settings in all existing policies are at least as secure as the protection profile.
+- **Amber**: A small number of settings in the existing policies are not as secure as the protection profile.
+- **Red**: A significant number of settings in the existing policies are not as secure as the protection profile. This could be a few settings in many policies or many settings in one policy.
 
 For favorable comparisons, you'll see the text: **All settings follow** \<**Standard** or **Strict**\> **recommendations**. Otherwise, you'll see the number of recommended settings to change.
 
@@ -108,7 +111,7 @@ If the comparison has no recommendations for improvement (green), expanding the 
 
 - **Policy**: The name of the affected policy that contains the setting.
 
-- **Applied to**: The number of user that the affected policies are applied to.
+- **Applied to**: The number of users that the affected policies are applied to.
 
 - **Current configuration**: The current value of the setting.
 
@@ -118,7 +121,7 @@ If the comparison has no recommendations for improvement (green), expanding the 
 
 ### Configuration drift analysis and history tab in the configuration analyzer
 
-This tab allows you to track the changes that you've made to your custom security policies based on the information in the security analyzer. By default, the following information is displayed:
+This tab allows you to track the changes that you've made to your custom security policies. By default, the following information is displayed:
 
 - **Last modified**
 - **Modified by**

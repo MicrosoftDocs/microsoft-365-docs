@@ -27,6 +27,12 @@ This article walks through the steps to create a package of resources (in this c
 
 Before you begin, create the site or team that you want to share with the partner organization and enable it for guest sharing. See [Collaborate with guests in a site](collaborate-in-site.md) or [Collaborate with guests in a team](collaborate-as-team.md) for more information. We also recommend that you review [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md) for information about security and compliance features that you can use to help maintain your governance policies when collaborating with guests.
 
+## License requirements
+
+Using this feature requires an Azure AD Premium P2 license. 
+
+Specialized clouds, such as Azure Germany and Azure China 21Vianet, are not currently available for use.
+
 ## Video demonstration
 
 This video demonstrates the procedures covered in this article.
@@ -119,4 +125,3 @@ Once you have copied the link, you can share it with your contact at the partner
 ## See Also
 
 [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)
-

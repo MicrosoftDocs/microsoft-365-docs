@@ -12,7 +12,7 @@ ms.topic: article
 
 # Microsoft Managed Desktop product lifecycle
 
-Microsoft Managed Desktop benefits end users assuring that they always use devices that offer the best performance, reliability, design, and security capabilities (such as support for features like Windows Hello). To accomplish this, Microsoft Managed Desktop maintains a short catalog of continuously updated [approved devices](device-list.md). 
+Microsoft Managed Desktop benefits users assuring that they always use devices that offer the best performance, reliability, design, and security capabilities (such as support for features like Windows Hello). To accomplish this, Microsoft Managed Desktop maintains a short catalog of continuously updated [approved devices](device-list.md). 
  
 This topic details the lifecycle of devices as they are added and removed from the approved catalog. 
 

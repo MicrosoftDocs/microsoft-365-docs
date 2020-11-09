@@ -1,35 +1,70 @@
 ---
-title: "Protect information"
+title: "Microsoft Information Protection in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: bcarter
-author: brendacarter
+ms.author: cabailey
+author: cabailey
 manager: laurawi
-ms.date: 4/26/2019
+ms.date: 
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: High
 search.appverid: 
 - MOE150
 - MET150
+ms.collection: 
+- m365solution-mip
+- m365initiative-compliance
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: This landing page provides links and information about protecting information in Microsoft 365 and Office 365.
-ms.custom: seo-marvel-apr2020
+description: "Implement Microsoft Information Protection (MIP) capabilities by using Microsoft 365 Compliance to help you discover, classify, and protect sensitive information wherever it lives or travels."
 ---
 
-# Protect information
+# Microsoft Information Protection in Microsoft 365
 
-Microsoft 365 and Office 365 include capabilities that can be applied to specific types of data to protect information.
+>*[Licensing for Microsoft 365 Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
+
+Use Microsoft Information Protection (MIP) to help you discover, classify, and protect sensitive information wherever it lives or travels.
+
+MIP capabilities are included with Microsoft 365 Compliance and give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
+
+![Know your data, protect your data, prevent data loss, govern your data](../media/powered-by-intelligent-platform.png)
+
+For information about governing your data, see [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
+
+## Know your data
+
+To understand your data landscape and identify important data across your hybrid environment, use the following capabilities:
+ 
+|Capability|What problems does it solve?|Get started|
+|:------|:------------|:--------------------|:-----------------------------|
+|[Sensitive information types](sensitive-information-type-entity-definitions.md)| Identifies sensitive data by using built-in or custom regular expressions or a function, together with corroborative evidence that includes keywords, confidence levels, and proximity.| [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)|
+|[Trainable classifiers (preview)](classifier-learn-about.md)| Classifies data for you, using one of the built-in classifiers or train a classifier with your own content | [Get started with trainable classifiers (preview)](classifier-get-started-with.md) |
+|[Data classification](data-classification-overview.md) | Identifies items that have a sensitivity label, a retention label, or have been classified as a sensitive information type in your organization and the actions that your users are taking on them  | [Get started with content explorer](data-classification-content-explorer.md)<br /><br /> [Get started with activity explorer](data-classification-activity-explorer.md) |
+
+## Protect your data
+
+To apply flexible protection actions that include encryption, access restrictions, and visual markings, use the following capabilities:
+
+|Capability|What problems does it solve?|Get started|
+|:------|:------------|---------------------|:----------------------------|
+|[Sensitivity labels](sensitivity-labels.md)| A single solution across apps, services, and devices to label and protect your data as it travels inside and outside your organization <br /><br />Example scenario: [Apply and view sensitivity labels in Power BI, and protect data when it is exported](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[ Get started with sensitivity labels](get-started-with-sensitivity-labels.md) |
+|[Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| For Windows computers, extends sensitivity labels for additional features and functionality that includes labeling and protecting all file types from File Explorer and PowerShell<br /><br /> Example additional features: [Custom configurations for the Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure Information Protection unified labeling client administrator guide](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
+|[Double Key Encryption](double-key-encryption.md)| Under all circumstances, only you can ever decrypt protected content, or for regulatory requirements you must hold encryption keys within a geographical boundary | [Deploy Double Key Encryption](double-key-encryption.md#deploy-dke)|
+|[Office 365 Message Encryption](ome.md) (OME)| Encrypts email messages and attached documents that are sent to any user on any device, so only authorized recipients can read emailed information  <br /><br />Example scenario: [Revoke email encrypted by Advanced Message Encryption](revoke-ome-encrypted-mail.md) | [Set up new Message Encryption capabilities](set-up-new-message-encryption-capabilities.md)|
+|[Service encryption with Customer Key](customer-key-overview.md) | Protects against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters | [Set up Customer Key for Office 365](customer-key-set-up.md)|
+|[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Protects SharePoint lists and libraries so that when a user checks out a document, the downloaded file is protected so that only authorized people can view and use the file according to policies that you specify | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
+[Rights Management connector](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |Protection-only for existing on-premises deployments that use Exchange or SharePoint Server, or file servers that run Windows Server and File Classification Infrastructure (FCI) | [Steps to deploy the RMS connector](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
+|[Azure Information Protection unified labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| Discovers, labels, and protects sensitive information that resides in data stores that are on premises | [Configuring and installing the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
+|[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| Discovers, labels, and protects sensitive information that resides in data stores that are in the cloud | [Discover, classify, label, and protect regulated and sensitive data stored in the cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|[Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|Extends sensitivity labels to third-party apps and services  <br /><br /> Example scenario: [Set and get a sensitivity label (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft Information Protection (MIP) SDK setup and configuration](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
+
+## Prevent data loss
+
+To help prevent accidental oversharing of sensitive information, use the following capabilities:
 
 
-|**Capability**|**More information**|
-|:-----|:-----|
-|[Sensitivity labels](sensitivity-labels.md) <br/> |With sensitivity labels you can classify and help protect your sensitive content. Protection options include labels, watermarks, and encryption. Sensitivity labels use Azure Information Protection. If you are using Azure Information Protection labels, for now we recommend that you avoid creating new labels in other admin centers until after you've completed your migration. See [Azure Information Protection migration](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). <br/> Note that [retention labels](retention.md#retention-labels) are different from sensitivity labels. Retention labels help you retain or delete content based on policies that you define. These help organizations comply with industry regulations and internal policies.|
-|[Data loss prevention](data-loss-prevention-policies.md) (DLP)  <br/> |With DLP policies, you can identify, monitor, and automatically protect sensitive information across Office 365. Data loss prevention policies can use sensitivity labels and sensitive information types to identify sensitive information. <br/> |
-|[Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) <br/> |Microsoft 365 includes many sensitive information types that are ready for you to use in DLP policies and for automatic classification with sensitivity and retention labels. Sensitive information types can also be used with the [Azure Information Protection scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner) to classify and protect files on premises. Sensitive information types define how the automated process recognizes specific information types such as health service numbers and credit card numbers.   <br/> |
-|[Office 365 Message Encryption](ome.md) (OME)  <br/> |With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content. <br/> |
-|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/)<br/> |Azure Information Protection (sometimes referred to as AIP) helps an organization to classify, label, and optionally, protect documents and emails. Administrators can automatically apply labels by defining rules and conditions. Users can manually apply labels to files and mail. You can also give users recommendations about when to apply labels.<br/> If you're using sensitivity labels or Office Message Encryption, you're already using classification and protection capabilities. If you haven't yet migrated Azure Information Protection labels to Office 365, continue to manage these in Azure Information Protection.  <br/>You can run the [Azure Information Protection scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner) on premises to classify and protect files on Windows Server, network shares, and SharePoint Server sites and libraries. This can be a first step toward identifying data to migrate to Office 365.
-|Azure Information Protection with customer managed encryption key <br/> |Some organizations have a business need or compliance requirement to retain control of an encryption key. This is not common. Azure Information Protection allows organizations to bring your own key (BYOK) to the service. For more information, see [Bring your own key (BYOK) for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/byok-price-restrictions). Another more complex option is offered for customers who have a requirement to retain an encryption key on premises, referred to as hold your own key (HYOK).  For more information, see [Hold your own key (HYOK) for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions). <br/> |
-    
-
+|Capability|What problems does it solve?|Get started|
+|:------|:------------|:---------------------|:-----------------------------|
+|[Data loss prevention](data-loss-prevention-policies.md) (DLP)| Helps prevent unintentional sharing of sensitive items <br /><br />Example scenario: [Protect sensitive information in Microsoft Teams chat and channel messages](dlp-microsoft-teams.md) | [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
+|[Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)| Extends DLP capabilities to items that are used and shared on Windows 10 computers | [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)|

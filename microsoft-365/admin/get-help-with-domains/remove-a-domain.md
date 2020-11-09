@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -224,8 +224,6 @@ Still not working? Your domain might need to be manually removed. [Give us a cal
 ## Related articles
 
 [Domains FAQ](../setup/domains-faq.md)
-
-[Get help with Microsoft 365 domains](get-help-with-domains.md)
 
 [Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

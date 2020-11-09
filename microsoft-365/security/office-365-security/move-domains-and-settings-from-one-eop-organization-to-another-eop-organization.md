@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
@@ -17,6 +17,9 @@ description: "In this article, you'll learn how to move domains and settings fro
 ---
 
 # Move domains and settings from one EOP organization to another
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Changing business requirements can sometimes require splitting one Microsoft Exchange Online Protection (EOP) organization (tenant) into two separate organizations, merging two organizations into one, or moving your domains and EOP settings from one organization to another organization. Moving from one EOP organization to a second EOP organization can be challenging, but with a few basic remote Windows PowerShell scripts and a small amount of preparation, this can be achieved with a relatively small maintenance window.
 
@@ -178,7 +181,7 @@ Now you can review and collect the information from the Microsoft 365 admin cent
 
 2. Click **Domains**.
 
-   If you don't see domains, click **Customize navigtion**, select **Setup**, and then click **Save**.
+   If you don't see domains, click **Customize navigation**, select **Setup**, and then click **Save**.
 
 3. Click each **Start setup** link, and then proceed through the setup wizard.
 
@@ -641,11 +644,11 @@ rm -erroraction 'silentlycontinue' $outfile
 #****************************************************************************
 # HostedContentFilterPolicy
 #****************************************************************************
-$HostedContentFilterPolicys = Import-Clixml ".\HostedContentFilterPolicy.xml"
-$HostedContentFilterPolicyCount = $HostedContentFilterPolicys.Name.Count
+$HostedContentFilterPolicies = Import-Clixml ".\HostedContentFilterPolicy.xml"
+$HostedContentFilterPolicyCount = $HostedContentFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $HostedContentFilterPolicyCount Inbound Connectors"
-    ForEach ($HostedContentFilterPolicy in $HostedContentFilterPolicys) {
+    ForEach ($HostedContentFilterPolicy in $HostedContentFilterPolicies) {
         $HostedContentFilterPolicyCmdlet = "New-HostedContentFilterPolicy"
         if($HostedContentFilterPolicy.Name -eq "Default") {$HostedContentFilterPolicyCmdlet = "Set-HostedContentFilterPolicy -Identity Default"}
         else {
@@ -721,11 +724,11 @@ if($HostedContentFilterPolicyCount -gt 0){
 #****************************************************************************
 # HostedOutboundSpamFilterPolicy
 #****************************************************************************
-$HostedOutboundSpamFilterPolicys = Import-Clixml ".\HostedOutboundSpamFilterPolicy.xml"
-$HostedOutboundSpamFilterPolicyCount = $HostedOutboundSpamFilterPolicys.Name.Count
+$HostedOutboundSpamFilterPolicies = Import-Clixml ".\HostedOutboundSpamFilterPolicy.xml"
+$HostedOutboundSpamFilterPolicyCount = $HostedOutboundSpamFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $HostedOutboundSpamFilterPolicyCount Hosted Outbound Spam Filter Policies"
-    ForEach ($HostedOutboundSpamFilterPolicy in $HostedOutboundSpamFilterPolicys) {
+    ForEach ($HostedOutboundSpamFilterPolicy in $HostedOutboundSpamFilterPolicies) {
         $HostedOutboundSpamFilterPolicyCmdlet = "Set-HostedOutboundSpamFilterPolicy Default"
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "AdminDisplayName" $HostedOutboundSpamFilterPolicy.AdminDisplayName
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "BccSuspiciousOutboundAdditionalRecipients"
@@ -742,11 +745,11 @@ if($HostedContentFilterPolicyCount -gt 0){
 #****************************************************************************
 # HostedConnectionFilterPolicy
 #****************************************************************************
-$HostedConnectionFilterPolicys = Import-Clixml ".\HostedConnectionFilterPolicy.xml"
-$HostedConnectionFilterPolicyCount = $HostedConnectionFilterPolicys.Name.Count
+$HostedConnectionFilterPolicies = Import-Clixml ".\HostedConnectionFilterPolicy.xml"
+$HostedConnectionFilterPolicyCount = $HostedConnectionFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $HostedConnectionFilterPolicyCount Hosted Connection Filter Policies"
-    ForEach ($HostedConnectionFilterPolicy in $HostedConnectionFilterPolicys) {
+    ForEach ($HostedConnectionFilterPolicy in $HostedConnectionFilterPolicies) {
         $HostedConnectionFilterPolicyCmdlet = "Set-HostedConnectionFilterPolicy"
         $HostedConnectionFilterPolicyCmdlet += makeparam "Identity" $HostedConnectionFilterPolicy.Name
         $HostedConnectionFilterPolicyCmdlet += makeparam "AdminDisplayName" $HostedConnectionFilterPolicy.AdminDisplayName
@@ -763,11 +766,11 @@ if($HostedContentFilterPolicyCount -gt 0){
 #****************************************************************************
 # MalwareFilterPolicy
 #****************************************************************************
-$MalwareFilterPolicys = Import-Clixml ".\MalwareFilterPolicy.xml"
-$MalwareFilterPolicyCount = $MalwareFilterPolicys.Name.Count
+$MalwareFilterPolicies = Import-Clixml ".\MalwareFilterPolicy.xml"
+$MalwareFilterPolicyCount = $MalwareFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $MalwareFilterPolicyCount Malware Filter Policies"
-    ForEach ($MalwareFilterPolicy in $MalwareFilterPolicys) {
+    ForEach ($MalwareFilterPolicy in $MalwareFilterPolicies) {
         $MalwareFilterPolicyCmdlet = "New-MalwareFilterPolicy"
         if($MalwareFilterPolicy.Name -eq "Default") {$MalwareFilterPolicyCmdlet = "Set-MalwareFilterPolicy Default"}
         else {
