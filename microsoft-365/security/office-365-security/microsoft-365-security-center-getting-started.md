@@ -119,20 +119,6 @@ The ‘Guided Tour’ bar will remain on the page and has these useful features.
 
 :::image type="content" source="../../media/Converge 12 Home Page Guided Tour bar.gif" alt-text="An animation showing the Guided tour drop-down. Options are Tours of Endpoint and Email and Collaboration pages. Next is a link to the Office 365 Security and Compliance center for comparison. The last link is to the 'What's New' page curated by the Product Group for Office 365 Security.":::
 
-
-<!--
-## Email & Collaboration
-
-The way you access Microsoft Defender for Office 365 (MSDO, but formerly known as Office 365 Advanced Threat Protection or ATP) has changed. The layout of the portal has both been simplified and combined with Microsoft Defender for Endpoint (or Microsoft Defender Advanced Threat Protection, MDATP). That’s quite a mouthful! In short, the new [Microsoft 365 Security portal](https://security.microsoft.com/) combines:
-
-1. Microsoft Defender for Office 365 (MSDO)
-2. Microsoft Defender for Endpoint (MSDE)
-
-in one easy to navigate location. This means security for your Office 365 or Microsoft 365 subscription, and for the devices that connect to it, is done from one portal.
-
-> [!NOTE]
-> If you know MSDO (once Office 365 ATP) from  the core overview article ‘[Office 365 Security overview](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide)’, then you're aware much of the Microsoft documentation about MSDO can be roughly broken down in Security Administrator and Security Operations topics. <p>The Microsoft 365 Security center has the same strengths. Many of the administration topics appear under ‘Policies & Rules’, and ‘[Dashboard](https://security.microsoft.com/alertsdashboard)’. Long term security investigation, detection, defense, and response as per Security Operations, takes place in the other sections of the Email & Collaboration section. -->
-
 ## Related information
 
 [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center?view=o365-worldwide)
