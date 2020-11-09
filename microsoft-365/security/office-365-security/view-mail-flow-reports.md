@@ -528,7 +528,7 @@ To go back to the report view, click **View report**.
 
 ## Mail latency report
 
-The mail latency report shows a view of the aggregate mail delivery and detonation latency incurred by incoming emails on a given day.
+The mail latency report shows an aggregate view of the mail delivery and detonation latency incurred by incoming emails on a given day.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mail latency report**. To go directly to the report, open <https://protection.office.com/mailLatencyReport?viewid=P50>.
 
