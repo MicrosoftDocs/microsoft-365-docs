@@ -1,5 +1,5 @@
 ---
-title: "Manage topics"
+title: "Manage topic discovery"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,14 +8,10 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: None
-description: "Learn how to administer topics in Microsoft 365."
+description: "Learn how to administer topic discovery in Microsoft 365."
 ---
 
-# Manage your knowledge management network (Preview)
-
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
-
+# Manage topic discovery in Microsoft 365
 
 After you [set up knowledge management](set-up-knowledge-network.md), at any time afterwards an admin can make adjustments to your configuration settings through the Microsoft 365 admin center.
 
@@ -56,72 +52,6 @@ Select the **Topic discovery** tab if you want to update your choices for  for S
     If you have a number of sites that you want to exclude (if you select **All, except selected sites**) or include (if you selected **Only selected sites**), you can choose to upload a CSV file with the site names and URLs. You can select **Download site template .csv** if you want to use the CSV template file.
 
 3. Select **Save**.
-
-##  Change who can see topics in your organization
-
-Select the **Topic discovery** tab if you want to update who in your organization can see discovered topics in search results and when topics are highlighted in content like SharePoint pages.
-
-1. On the **Topic discovery** tab, under **Who can see topics in the knowledge network**, select **Edit**.
-2. On the **Who can see topics in the knowledge network** page, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages. You can select:</br>
-    a. **Everyone in your organization**</br>
-    b. **Only selected people or security groups**</br>
-    c. **No one**</br>
-
-    ![Who can see topics](../media/content-understanding/k-manage-who-can-see-topics.png) </br> 
-3. Select **Save**.  
- 
-> [!Note] 
-> While this setting allows you to select any user in your organization, only users who have knowledge management licenses assigned to them will be able to view topics.
-
-## Change who has permissions to do tasks on the topic center
-
-Select the **Topic permissions** tab if you want to update who has permissions to do the following in the topic center page:
-
-- Which users can create and edit topics: Create new topics that were not found during discovery or edit existing topic page details.
-- Which users can manage topics: Confirm or reject discovered topics.
-
-To update who has permissions to create and edit topics:
-
-1. On the **Topic permissions** tab, under **Who can create and edit topics**, select **Edit**.</br>
-2. On the **Who can create and edit topics** page, you can select:</br>
-    a. **Everyone in your organization**</br>
-    b. **Only selected people or security groups**</br>
-
-    ![Create and edit topics](../media/content-understanding/k-manage-who-can-create-and-edit.png) </br> 
-
-3. Select **Save**.</br>
-
-To update who has permissions to manage topics:
-
-1. On the **Topic permissions** tab, under **Who can manage topics**, select **Edit**.</br>
-2. On the **Who can manage topics** page, you can select:</br>
-    a. **Everyone in your organization**</br>
-    b. **Selected people or security groups**</br>
-
-    ![Manage topics](../media/content-understanding/k-manage-who-can-manage-topics.png) </br> 
-
-3. Select **Save**.</br>
-
-
-##  Update your topic center name
-
-Select the **Topic center** tab if you want to update the name of your topic center. 
-
-1. On the **Topic center** tab, under **Topic center name**, select **Edit**.
-2. On the **Edit topic center name** page, in the **Topic center name** box, type the new name for your topic center.
-3. Select **Save**
-
-    ![Edit topic center name](../media/content-understanding/manage-topic-center-name.png) </br> 
-
-
-
-
-
-
-
-
-
-
 
 ## See also
 
