@@ -33,7 +33,8 @@ In the graph you can see:
 
 Additionally, `<number> less susceptible to phishing` reflects the difference between actual number of employees compromised by the attack and the predicted compromise rate. This number of employees is less likely to be compromised by similar attacks in the future, while `<percent%> better than predicted rate` indicates how employees did overall in contrast with the predicted compromise rate.
 
-![Behavior impact card on Attack simulation training overview](../../media/attack-sim-preview-behavior-impact-card.png)
+> [!div class="mx-imgBorder"]
+> ![Behavior impact card on Attack simulation training overview](../../media/attack-sim-preview-behavior-impact-card.png)
 
 To see a more detailed report, click on **View simulations and training efficacy report** which provides the same information with additional context from the simulation itself, like simulation technique and total users targeted.
 
@@ -43,7 +44,8 @@ On the [**Simulations** tab](https://security.microsoft.com/attacksimulator?view
 
 The recommended actions section details recommendations as available in [Microsoft Secure Score](../mtp/microsoft-secure-score.md). These recommendations are based on the payload used in the simulation and will help you protect your employees and your environment. Clicking on each improvement action will take you to its details.
 
-![Recommendation actions section on Attack simulation training](../../media/attack-sim-preview-recommended-actions.png)
+> [!div class="mx-imgBorder"]
+> ![Recommendation actions section on Attack simulation training](../../media/attack-sim-preview-recommended-actions.png)
 
 ## Related Links
 
