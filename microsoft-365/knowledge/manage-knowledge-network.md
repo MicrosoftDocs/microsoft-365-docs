@@ -66,6 +66,16 @@ In the CSV template, enter the following information about the topics you want t
 
 ![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
 
+## Control if AI-suggested topics are visible to users
+
+You can control if AI-suggested topics are visible to users in highlights and search results before they are approved by a knowledge manager. (By default, these topics are visible.)
+
+1. On the **Topic discovery** tab, click **Advanced settings**.
+2. Choose if you want to include suggested topics.
+3. Click **Save**.
+
+![Screenshot of AI-suggested topics settings](../media/topics-suggested-topics-visible.png)
+
 ## See also
 
 
