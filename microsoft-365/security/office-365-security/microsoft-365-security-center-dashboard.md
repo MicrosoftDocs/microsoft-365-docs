@@ -17,7 +17,7 @@ ms.collection:
 description: "Use the dashboard for Office 365 MSDO in the Microsoft 365 Security center. This article outlines what to expect from the Email & Collaboration dashboard."
 ---
 
-# The 'Microsoft 365 Security' dashboard
+# The Microsoft 365 Security center
 
 The way you access Microsoft Defender for Office 365 (MSDO, but formerly known as Office 365 Advanced Threat Protection or ATP) has changed. The layout of the portal has both been simplified and combined with Microsoft Defender for Endpoint (or Microsoft Defender Advanced Threat Protection, MDATP). That’s quite a mouthful! In short, the new [Microsoft 365 Security portal](https://security.microsoft.com/) combines:
 
@@ -28,3 +28,11 @@ in one easy to navigate location. This means security for your Office 365 or Mic
 
 > [!NOTE]
 > If you know MSDO (once Office 365 ATP) from  the core overview article ‘[Office 365 Security overview](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide)’, then you're aware much of the Microsoft documentation about MSDO can be roughly broken down in Security Administrator and Security Operations topics. <p>The Microsoft 365 Security center has the same strengths. Many of the administration topics appear under ‘Policies & Rules’, and ‘[Dashboard](https://security.microsoft.com/alertsdashboard)’. Long term security investigation, detection, defense, and response as per Security Operations, takes place in the other sections of the Email & Collaboration section.
+
+If you need more detailed information on the combination of these security centers, please see Getting started with the Microsoft 365 Security center for security admins and operations teams.
+
+# The Email & Collaboration (E&C) dashboard in Microsoft 365 Security center
+
+To reach the Email & Collaboration dashboard, use the URL: https://security.microsoft.com/alertsdashboard.
+
+The E&C dashboard is driven almost entirely by Alerts at the time of writing. It is likely to update from this point to include more relevance.
