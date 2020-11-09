@@ -35,7 +35,7 @@ You must have Global Admin or SharePoint admin permissions to be able to access 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational Knowledge** section.
 2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.<br/>
 
-    ![Connect people to knowledge](../media/content-understanding/admin-org-knowledge-options.png) </br>
+    ![Connect people to knowledge](../media/admin-org-knowledge-options.png) </br>
 
 3. On the **Connect people to knowledge** page, select **Manage** to open the **Knowledge network settings** pane.<br/>
 
