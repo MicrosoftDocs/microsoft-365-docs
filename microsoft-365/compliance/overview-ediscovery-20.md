@@ -67,7 +67,7 @@ Here's an Advanced eDiscovery architecture diagram that shows the end-to-end wor
 
 For more information about the end-to-end workflow in Advanced eDiscovery, see this [Microsoft Mechanics video](https://go.microsoft.com/fwlink/?linkid=2066133).
 
-The sections that follow describe each step in the built-in workflow in Advanced eDiscovery. The following screenshot shows the **Overview** tab of a case named *2020.08.21 - Contoso v. Fabrikam*.
+The sections that follow describe each step in the built-in workflow in Advanced eDiscovery. The following screenshot shows the **Overview** tab of a case named *2020.11.03 - Contoso v. Fabrikam*.
 
 ![Tabs in built-in Advanced eDiscovery workflow](../media/AeD-Case-Screenshot1.png)
 
