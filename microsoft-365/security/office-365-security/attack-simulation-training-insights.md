@@ -10,7 +10,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-security-compliance 
 - m365initiative-m365-defender
-description: "Learn how Attack simulation training in Microsoft 365 security center effect employees and gain insights from simulation and training outcomes."
+description: "Learn how Attack simulation training in Microsoft 365 security center affect employees and gain insights from simulation and training outcomes."
 ---
 
 # Gain insights through Attack simulation training
@@ -39,7 +39,7 @@ To see a more detailed report, click on **View simulations and training efficacy
 
 ## Recommended actions
 
-On the [**Simulations** tab](https://security.microsoft.com/attacksimulator?viewid=simulations) selecting any of the simulation will take you to simulation details. Here you will find the **Recommended actions** section.
+On the [**Simulations** tab](https://security.microsoft.com/attacksimulator?viewid=simulations), selecting any of the simulations will take you to simulation details. Here you will find the **Recommended actions** section.
 
 The recommended actions section details recommendations as available in [Microsoft Secure Score](../mtp/microsoft-secure-score.md). These recommendations are based on the payload used in the simulation and will help you protect your employees and your environment. Clicking on each improvement action will take you to its details.
 
