@@ -18,7 +18,6 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Details of the Teamwork - people experiences Productivity score."
 ---
 
@@ -188,3 +187,12 @@ The following columns are presented in the table at the workspace level:
 - Teamwork measures the engagement of people within your organization. It doesn&#39;t capture the activity of external members.
 - Channel messages in teamwork does not include messages sent through the Microsoft Teams mobile client.
 - There could be minor differences between email metrics and channel messages between the communication and teamwork categories that we are working to resolve.
+
+## Related content
+
+[Microsoft 365 apps health – Technology experiences](apps-health.md) (article)\
+[Communication – People experiences](communication.md) (article)\
+[Content collaboration – People experiences](content-collaboration.md) (article)\
+[Meetings – People experiences](meetings.md) (article)\
+[Mobility – People experiences](mobility.md) (article)\
+[Privacy controls for Productivity Score](privacy.md) (article)

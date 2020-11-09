@@ -18,13 +18,12 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Details of the Microsoft 365 apps health - technology experiences Productivity score."
 ---
 
 # Microsoft 365 apps health – Technology experiences
 
-Productivity Score helps organizations transform how work gets done with metrics about how people use Microsoft 365 apps and the supporting technology experiences. The score reflects your organization&#39;s performance for people and technology experience categories and compares your score with organizations like yours. The Teamwork category is part of the measurements that falls under people experiences. See the [Productivity Score overview](productivity-score.md) to learn more.
+Productivity Score helps organizations transform how work gets done with metrics about how people use Microsoft 365 apps and the supporting technology experiences. The score reflects your organization&#39;s performance for people and technology experience categories and compares your score with organizations like yours. The apps health category is part of the measurements that falls under people experiences. See the [Productivity Score overview](productivity-score.md) to learn more.
 
 ## Why your organization&#39;s Microsoft 365 apps health score matters
 
@@ -107,3 +106,12 @@ The following columns are presented in the table at the user level:
 - **Status:**   Microsoft 365 apps support state of the devices based on current channel and version.
 - **Versions:**  Current Microsoft 365 apps versions on the devices.
 - **# of devices:**  Number of devices.
+
+## Related content
+
+[Communication – People experiences](communication.md) (article)\
+[Content collaboration – People experiences](content-collaboration.md) (article)\
+[Meetings – People experiences](meetings.md) (article)\
+[Mobility – People experiences](mobility.md) (article)\
+[Privacy controls for Productivity Score](privacy.md) (article)\
+[Teamwork – People experiences](teamwork.md) (article)

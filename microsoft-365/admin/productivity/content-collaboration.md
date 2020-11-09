@@ -18,7 +18,6 @@ monikerRange: 'o365-worldwide'
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Details of the Content collaboration - people experiences Productivity Score."
 ---
 
@@ -197,4 +196,13 @@ The following columns are presented in the table at the user level:
 - **Files shared externally:** The number of online files on OneDrive or SharePoint the person shared with other people outside your organization in the last 28 days.
 - **Emailed file attachments:** Boolean value indicating if the person sent email with files (not on OneDrive or SharePoint) as attachments in the last 28 days.
 - **Emailed online file attachments:** Boolean value indicating if the person sent email with links to online files (on OneDrive or SharePoint) as attachments in the last 28 days.
-- **Embed link to online file:** Boolean value indicating if the person sent email with links to online files (on OneDrive or SharePoint) embedded in the email body in the last 28 days
+- **Embed link to online file:** Boolean value indicating if the person sent email with links to online files (on OneDrive or SharePoint) embedded in the email body in the last 28 days.
+
+## Related content
+
+[Microsoft 365 apps health – Technology experiences](apps-health.md) (article)\
+[Communication – People experiences](communication.md) (article)\
+[Meetings – People experiences](meetings.md) (article)\
+[Mobility – People experiences](mobility.md) (article)\
+[Privacy controls for Productivity Score](privacy.md) (article)\
+[Teamwork – People experiences](teamwork.md) (article)

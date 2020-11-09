@@ -162,16 +162,14 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
    >
    > - These settings apply only to cloud-based mailboxes.
    >
-   > - Automatic forwarding to internal recipients is not affected by these setting.
+   > - When automatic forwarding is disabled, the recipient will receive a non-delivery report (also known as an NDR or bounce message) if external senders send email to a mailbox that has forwarding in place. If the email is sent by an internal sender, the sender will get the NDR.
 
    The available values are:
 
    - **Automatic - System-controlled**: Allows outbound spam filtering to control automatic external email forwarding. This is the default value.
-
    - **On**: Automatic external email forwarding is not disabled by the policy.
-
    - **Off**: All automatic external email forwarding is disabled by the policy.
-
+ 
 7. (Required) Expand the **Applied to** section to identify the internal senders that the policy applies to.
 
     You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<sender1\>_ or _\<sender2\>_). Different conditions or exceptions use AND logic (for example, _\<sender1\>_ and _\<member of group 1\>_).

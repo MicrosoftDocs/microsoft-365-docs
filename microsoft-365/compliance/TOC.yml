@@ -266,7 +266,9 @@
         - name: Use sensitivity labels as a condition in DLP policies (preview)
           href: dlp-sensitivity-label-as-condition.md
         - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
-          href: dlp-use-policies-non-microsoft-cloud-apps.md  
+          href: dlp-use-policies-non-microsoft-cloud-apps.md
+        - name: DLP policy conditions and exceptions (preview)
+          href: dlp-conditions-and-exceptions.md
 - name: Manage information governance
   items: 
     - name: Govern your data
@@ -295,8 +297,8 @@
           href: create-apply-retention-labels.md
         - name: Apply a retention label to content automatically
           href: apply-retention-labels-automatically.md
-        - name: Comply with SEC Rule 17a-4
-          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: Lock policies to restrict changes
+          href: retention-preservation-lock.md
         - name: Create retention labels with PowerShell
           href: bulk-create-publish-labels-using-powershell.md
         - name: Start retention when an event occurs
@@ -425,6 +427,8 @@
           href: declare-records.md
         - name: Use record versioning
           href: record-versioning.md
+        - name: Resources for regulatory requirements
+          href: retention-regulatory-requirements.md
 - name: Manage eDiscovery
   items:
     - name: eDiscovery in Microsoft 365
@@ -472,7 +476,7 @@
             href: change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
             href: disable-reports-when-you-export-content-search-results.md
-        - name: Understand content search
+        - name: Content search reference
           items: 
           - name: Content search limits
             href: limits-for-content-search.md
@@ -483,7 +487,7 @@
           - name: De-duplication in search results
             href: de-duplication-in-ediscovery-search-results.md
           - name: Differences between estimated and actual search results
-            href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            href: differences-between-estimated-and-actual-ediscovery-search-results.md  
         - name: Run content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections
@@ -530,6 +534,10 @@
             href: data-spillage-scenariosearch-and-purge.md
           - name: Preserve Bcc recipients for search
             href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+          - name: Decryption in eDiscovery tools
+            href: ediscovery-decryption.md
+          - name: Collect eDiscovery diagnostic information
+            href: ediscovery-diagnostic-info.md 
           - name: Troubleshoot common eDiscovery issues
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
@@ -659,6 +667,10 @@
               href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
+            - name: Decryption in eDiscovery tools
+              href: ediscovery-decryption.md
+            - name: Collect eDiscovery diagnostic information
+              href: ediscovery-diagnostic-info.md
             - name: Search for eDiscovery activities in the audit log
               href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: Troubleshoot AzCopy

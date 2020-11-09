@@ -18,7 +18,6 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "How privacy is protected with the Productivity Score."
 ---
 
