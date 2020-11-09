@@ -92,6 +92,8 @@ Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to
 
 5. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
+6. All devices must be running a supported version of Microsoft 365 Apps. See  [Update history for Microsoft 365 Apps (listed by date)](https://docs.microsoft.com/en-us/officeupdates/update-history-microsoft365-apps-by-date).
+
 ## Onboarding devices into device management
 
 You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft 365 Compliance portal.
