@@ -297,8 +297,8 @@
           href: create-apply-retention-labels.md
         - name: Apply a retention label to content automatically
           href: apply-retention-labels-automatically.md
-        - name: Comply with SEC Rule 17a-4
-          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: Lock policies to restrict changes
+          href: retention-preservation-lock.md
         - name: Create retention labels with PowerShell
           href: bulk-create-publish-labels-using-powershell.md
         - name: Start retention when an event occurs
@@ -427,6 +427,8 @@
           href: declare-records.md
         - name: Use record versioning
           href: record-versioning.md
+        - name: Resources for regulatory requirements
+          href: retention-regulatory-requirements.md
 - name: Manage eDiscovery
   items:
     - name: eDiscovery in Microsoft 365
@@ -536,6 +538,8 @@
             href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
+          - name: Collect eDiscovery diagnostic information
+            href: ediscovery-diagnostic-info.md 
           - name: Troubleshoot common eDiscovery issues
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
@@ -667,6 +671,8 @@
               href: set-up-compliance-boundaries.md
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
+            - name: Collect eDiscovery diagnostic information
+              href: ediscovery-diagnostic-info.md
             - name: Search for eDiscovery activities in the audit log
               href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: Troubleshoot AzCopy

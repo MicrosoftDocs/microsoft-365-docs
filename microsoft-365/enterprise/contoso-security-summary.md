@@ -123,9 +123,9 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 ## Security management
 
-- Central security dashboard for IT with Azure Defender*
+- Central security dashboard for IT with Azure Defender
 
-  Contoso uses the [Azure Defender*](https://azure.microsoft.com/services/security-center/) to present a unified view of security and threat protection, to manage security policies across its workloads, and to respond to cyberattacks.
+  Contoso uses the [Azure Defender](https://azure.microsoft.com/services/security-center/) to present a unified view of security and threat protection, to manage security policies across its workloads, and to respond to cyberattacks.
 
 - Central security dashboard for users with Windows Defender Security Center
 
