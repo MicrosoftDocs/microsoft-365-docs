@@ -54,8 +54,8 @@ To set up topics in Microsoft 365
     ![Choose how to find topics](../media/ksetup1.png) 
    
 5. In the **Exclude topics by name** section, you can add names of topics you want to exclude from the discovered results. Use this setting to prevent sensitive topics from being included as topics. The options are:
-    a. **Don't exclude any topics** 
-    b. **Exclude topics by name**:  If you have topics you don’t want shown to users.
+    - **Don't exclude any topics** 
+    - **Exclude topics by name**:  If you have topics you don’t want shown to users.
 
     ![Exclude topics](../media/topics-excluded-by-name.png) 
 

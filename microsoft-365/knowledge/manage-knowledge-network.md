@@ -1,5 +1,5 @@
 ---
-title: "Manage topic discovery"
+title: "Manage topic discovery in Microsoft 365"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -13,18 +13,7 @@ description: "Learn how to administer topic discovery in Microsoft 365."
 
 # Manage topic discovery in Microsoft 365
 
-After you [set up knowledge management](set-up-knowledge-network.md), at any time afterwards an admin can make adjustments to your configuration settings through the Microsoft 365 admin center.
-
-For example, you may need to adjust your settings for any of the following:
-- Add new SharePoint sources to mine topics.
-- Change which users will have access to topics.
-- Change which users have permissions to do tasks on the topic center.
-- Change the name of your topic center
-
-
-## Requirements 
-You must have Global Admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and manage Organizational knowledge tasks.
-
+You can manage topic discovery settings in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a global administrator or SharePoint administrator to perform these tasks.
 
 ## To access knowledge management settings:
 
