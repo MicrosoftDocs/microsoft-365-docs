@@ -46,7 +46,7 @@ Setting up your knowledge network walks you through the following:
 
 To set up your knowledge network:
 
-1. In the [Microsoft 365 admin center](http://admin.microsoft.com), select **Setup**, and then view the **Organizational Knowledge** section.
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**, and then view the **Organizational Knowledge** section.
 2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.
 
     ![Connect people to knowledge](../media/content-understanding/admin-org-knowledge-options.png) 
