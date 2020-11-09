@@ -138,7 +138,7 @@ If a person leaves a company, organizations typically have processes, procedures
 To address such needs, organizations should have processes and procedures in place that address preventative, detective, and remedial needs to facilitate such requests, noting that some information about an employee may be reasonably considered crucial for business continuity. For example, information that an individual authored a file or performed a function. 
 
 >[!Note]
->For investigative and remediation techniques for personal data in Microsoft 365, see the [monitor and respond article](information-protection-deploy-monitor-respond.md). You may also want to employ automated classification and protection schemes to make sure that personal data is controlled while inside the organization, as well as prevent it from leaving the organization in malicious actor situations. See the [protect information article](information-protection-deploy-information-protection.md) for more information.
+>For investigative and remediation techniques for personal data in Microsoft 365, see the [monitor and respond article](information-protection-deploy-monitor-respond.md). You may also want to employ automated classification and protection schemes to make sure that personal data is controlled while inside the organization, as well as prevent it from leaving the organization in malicious actor situations. See the [protect information article](information-protection-deploy-protect-information.md) for more information.
 >
  
 ### Data the organization has about its business customers in the B2B scenario

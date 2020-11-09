@@ -82,7 +82,7 @@ This article briefly describes what the data privacy regulations generally call 
 
 Data privacy regulations dictate a number of personal information protection controls that can be employed in your environment, including more than forty Protect Information controls across just the four data privacy regulations in our sample set of GDPR, California Consumer Protection Act (CCPA), HIPAA-HITECH (United States health care privacy act), and the Brazil Data Protection Act (LGPD).
 
-For more information, see [Protect information subject to data privacy regulation in your organization](information-protection-deploy-information-protection.md).
+For more information, see [Protect information subject to data privacy regulation in your organization](information-protection-deploy-protect-information.md).
 
 This article lays out the main control schemes that can be used for addressing information protection needs for data privacy in your organization.
 
