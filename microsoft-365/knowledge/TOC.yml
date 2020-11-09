@@ -11,11 +11,19 @@
  
 
     
-    - name: Get started with setup
+    - name: Setup and administration
       items:
 
+        - name: Plan knowledge management
+          href: plan-knowledge-network.md
         - name: Set up knowledge management
           href: set-up-knowledge-network.md
-        - name: Manage your knowledge management network
+        - name: Manage topic discovery
           href: manage-knowledge-network.md
+        - name: Manage topic visibility
+          href: manage-knowledge-network-topic-visibility.md
+        - name: Manage topic permissions
+          href: manage-knowledge-network-topic-permissions.md
+        - name: Change the topic center name
+          href: manage-knowledge-network-topic-center.md
     

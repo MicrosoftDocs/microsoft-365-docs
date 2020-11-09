@@ -13,14 +13,11 @@ description: 'Learn how to set up Knowledge Management'
 
 # Set up Knowledge Management
 
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
-
 You can use the Microsoft 365 admin center to set up and configure [Knowledge Management](knowledge-management-overview.md). 
 
-> [!Important]
-> It is important to plan the best way to set up and configure Knowledge Management in your environment. For example, you will need to make considerations about the following:
-- Which SharePoint sites you want to analyze for topics.
+It is important to plan the best way to set up and configure topics in your environment. Consider the following before you begin the procedures in this article:
+
+- Which SharePoint sites you want to crawl for topics.
 - Which users you want to make topics visible to.
 - Which users you want to give permissions to manage topics in the topic center.
 - Which users you want to give permissions to create or edit topics in the topic center.
@@ -29,22 +26,15 @@ You can use the Microsoft 365 admin center to set up and configure [Knowledge Ma
 > [!Note]
 > You may find it useful to create security groups to assign your users the permissions needed to view topics, manage topic, and create and edit topics.
 
-An admin can also [make changes to your selected settings anytime after setup](manage-knowledge-network.md) through the Knowledge Management settings in the Microsoft 365 admin center.
+You can also [make changes to your selected settings anytime after setup](manage-knowledge-network.md) by using the topics settings in the Microsoft 365 admin center.
 
-## Requirements 
-You must have Global Admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Organizational knowledge tasks.
+## Requirements
+
+You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Organizational knowledge tasks.
 
 ## Set up your knowledge network
 
-Setting up your knowledge network walks you through the following:
-
-- Topic discovery: Selecting topic sources and topics to  exclude from discovery.
-- Topic visibility: Selecting who can view topics as highlights, in search and topic pages.
-- Topic permissions: Selecting who can create, edit, and manage topics.
-- Topic center: Create your topic center.
-- Review: Check and apply your settings.
-
-To set up your knowledge network:
+To set up topics in Microsoft 365
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**, and then view the **Organizational Knowledge** section.
 2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.
@@ -64,8 +54,8 @@ To set up your knowledge network:
     ![Choose how to find topics](../media/ksetup1.png) 
    
 5. In the **Exclude topics by name** section, you can add names of topics you want to exclude from the discovered results. Use this setting to prevent sensitive topics from being included as topics. The options are:
-    a. **Don't exclude any topics** 
-    b. **Exclude topics by name**:  If you have topics you don’t want shown to users.
+    - **Don't exclude any topics** 
+    - **Exclude topics by name**:  If you have topics you don’t want shown to users.
 
     ![Exclude topics](../media/topics-excluded-by-name.png) 
 
