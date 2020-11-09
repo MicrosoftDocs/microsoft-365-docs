@@ -189,15 +189,15 @@ Exchange public folders, Skype, Teams and Yammer messages do not support retenti
 
 #### Only one retention label at a time
 
-An email or document can have only a single retention label applied to it at a time:
-  
-- When content already has a retention label applied, the label won't be replaced by a default label or an auto-apply retention label.
+An email or document can have only a single retention label applied to it at a time. For standard retention labels (they don't mark items as a record):
 
-- When retention labels are published, admins and end users can always manually change or remove an existing retention label on content.
+- When retention labels are published to the relevant locations, admins and end users can always manually change or remove an existing retention label on content. 
+
+- When content already has a retention label applied, the label won't be automatically replaced by another retention label with one exception: The label was inherited as a [default label](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
 - If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the retention label for the oldest rule (by date created) is assigned.
 
-To fully understand all outcomes when you use a default label, see the information in the [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) section. 
+When retention labels mark items as a record (or a regulatory record), these labels are never automatically replaced. For more information about the restrictions that comes with this 
 
 #### Monitoring retention labels
 

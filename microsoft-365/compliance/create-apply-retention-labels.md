@@ -229,7 +229,7 @@ Then, create one or more label policies that contain the labels and policy setti
 
 This method requires retention labels to be published to a retention label policy.
 
-In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location inherit the default retention label. Although the same label is applied, each document will be retained and deleted separately, according to the start of the retention period setting in the label. 
+In addition to letting people apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set. In this scenario, all unlabeled documents in that location inherit the default retention label. Although the same label is applied, each document will be retained and deleted separately, according to the start of the retention period setting in the label. 
   
 For a document library, the default label configuration is done on the **Library settings** page for a document library. When you choose the default retention label, you can also choose to apply it to existing items in the library. 
   
@@ -237,17 +237,21 @@ For example, if you have a retention label for marketing materials, and you know
   
 ![Apply label option on library Settings page](../media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
   
-In this scenario where you apply a retention label to a library, folder, or document set, items in that container can automatically inherit this retention label:  
+For standard retention labels: When you apply a default retention label to a library, folder, or document set:  
 
-- All unlabeled items in the container have this retention label applied. Labeled items retain their label, unless it was applied by a different default label.
+- All unlabeled items in the container have this retention label applied.
+
+- For folders, the inheritance flows to any child folders and items inherit the label from the nearest structure.
+
+- Items that are already labeled retain their retention label, unless it was applied by a different default label.
     
 - If you change or remove the default retention label for the container, existing retention labels applied to items in that container are changed or removed only if those labels were applied by a default label.
     
-- If you move an item with a default retention label from one container to another container that has a different label, the item keeps its existing default retention label, even if the new location has a different default retention label. If the item does not have a label before moving, it will take on the default retention label of the new location.
+- If you move an item with that has a default retention label from one container to another container that has a different label, the item keeps its existing default retention label, even if the new location has a different default retention label. If the item does not have a label before moving, it will take on the default retention label of the new location.
 
-**Records:** If you apply a default label that marks items as a record, that record label is applied to all the individual items within the selected library, folder, or document set. When you move a new item into a location with a default record label, that item is labeled a record. However, if you change that default retention label to a label that doesn't mark items as a record, that action does not remove the record label from the individual items; those items retain their record label. Only a site collection admin can explicitly remove or change an applied label that marks items as records.
+For labels that aren't standard retention labels but mark items as [records (or regulatory records)](records-management.md#records):
 
-For more information about retention labels that marks items as a record, see [Records](records-management.md#records).
+- The labeling behavior is the same except: After a item is declared a record, the label cannot be changed by a default label. 
 
 ### Automatically applying a retention label to email by using rules
 
