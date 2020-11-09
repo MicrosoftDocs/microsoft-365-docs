@@ -17,7 +17,7 @@ ms.collection:
 description: "Use the dashboard for Office 365 MSDO in the Microsoft 365 Security center. This article outlines what to expect from the Email & Collaboration dashboard."
 ---
 
-# The Microsoft 365 Security center
+# The Microsoft 365 Security center dashboard for Email & Collaboration
 
 The way you access Microsoft Defender for Office 365 (MSDO, but formerly known as Office 365 Advanced Threat Protection or ATP) has changed. The layout of the portal has both been simplified and combined with Microsoft Defender for Endpoint (or Microsoft Defender Advanced Threat Protection, MDATP). That’s quite a mouthful! In short, the new [Microsoft 365 Security portal](https://security.microsoft.com/) combines:
 
