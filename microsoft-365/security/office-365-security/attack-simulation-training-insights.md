@@ -44,3 +44,7 @@ On the [**Simulations** tab](https://security.microsoft.com/attacksimulator?view
 The recommended actions section details recommendations as available in [Microsoft Secure Score](../mtp/microsoft-secure-score.md). These recommendations are based on the payload used in the simulation and will help you protect your employees and your environment. Clicking on each improvement action will take you to its details.
 
 ![Recommendation actions section on Attack simulation training](../../media/attack-sim-preview-recommended-actions.png)
+
+## Related Links
+
+**Attack Simulator** [Create a phishing attack simulation](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide) and [create a payload for training your people](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-worldwide)
