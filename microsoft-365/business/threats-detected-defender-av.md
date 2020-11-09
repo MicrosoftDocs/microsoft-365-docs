@@ -21,7 +21,7 @@ description: "Learn how Microsoft Defender Antivirus protects your Windows devic
 
 Microsoft Defender Antivirus protects your Windows devices from software threats, such as viruses, malware, and spyware.
 
-- Viruses typically spread by attaching their code to other files on your device or network, and can cause infected programs to work incorrectly.
+- Viruses typically spread by attaching their code to other files on your device or network and can cause infected programs to work incorrectly.
 - Malware includes malicious files, applications, and code that can cause damage and disrupt normal use of devices. Also, malware can allow unauthorized access, use system resources, steal passwords and account information, lock you out of your computer and ask for ransom, and more.
 - Spyware collects data, such as web-browsing activity, and sends the data to remote servers.
  
@@ -37,7 +37,7 @@ To learn more about malware and Microsoft Defender Antivirus, see the following 
 - [How Microsoft identifies malware and potentially unwanted applications](/windows/security/threat-protection/intelligence/criteria)
 - [Next-generation protection in Windows 10](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 
-## What happens when a non-Microsoft antivirus solution is used 
+## What happens when a non-Microsoft antivirus solution is used? 
 
 Microsoft Defender Antivirus is part of the operating system and is enabled on devices that are running Windows 10. However, if you're using a non-Microsoft antivirus solution and you aren't using [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), then Microsoft Defender Antivirus automatically goes into disabled mode.  
 
