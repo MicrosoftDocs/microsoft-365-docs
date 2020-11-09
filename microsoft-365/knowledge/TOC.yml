@@ -16,6 +16,12 @@
 
         - name: Set up knowledge management
           href: set-up-knowledge-network.md
-        - name: Manage your knowledge management network
-          href: manage-knowledge-network.md
+        - name: Manage topic discovery
+          href: manage-knowledge-network-topic-discovery.md
+        - name: Manage topic visibility
+          href: manage-knowledge-network-topic-visibility.md
+        - name: Manage topic permissions
+          href: manage-knowledge-network-topic-permissions.md
+        - name: Change the topic center name
+          href: manage-knowledge-network-topic-center.md
     
