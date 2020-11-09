@@ -29,11 +29,11 @@ You must have Global Admin or SharePoint admin permissions to be able to access 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational Knowledge** section.
 2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.<br/>
 
-    ![Connect people to knowledge](../media/admin-org-knowledge-options.png) </br>
+    ![Connect people to knowledge](../media/admin-org-knowledge-options.png) 
 
-3. On the **Connect people to knowledge** page, select **Manage** to open the **Knowledge network settings** pane.<br/>
+3. On the **Connect people to knowledge** page, select **Manage** to open the **Knowledge network settings** pane.
 
-    ![knowledge-network-settings](../media/content-understanding/knowledge-network-settings.png) </br>
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-permissions.png) 
 
 
 ## Change who has permissions to do tasks on the topic center
@@ -45,25 +45,26 @@ Select the **Topic permissions** tab if you want to update who has permissions t
 
 To update who has permissions to create and edit topics:
 
-1. On the **Topic permissions** tab, under **Who can create and edit topics**, select **Edit**.</br>
-2. On the **Who can create and edit topics** page, you can select:</br>
-    a. **Everyone in your organization**</br>
-    b. **Only selected people or security groups**</br>
+1. On the **Topic permissions** tab, under **Who can create and edit topics**, select **Edit**.
+2. On the **Who can create and edit topics** page, you can select:
+    - **Everyone in your organization**
+    - **Only selected people or security groups**
+    - **No one**
 
-    ![Create and edit topics](../media/content-understanding/k-manage-who-can-create-and-edit.png) </br> 
+    ![Create and edit topics](../media/k-manage-who-can-create-and-edit.png)  
 
-3. Select **Save**.</br>
+3. Select **Save**.
 
 To update who has permissions to manage topics:
 
-1. On the **Topic permissions** tab, under **Who can manage topics**, select **Edit**.</br>
-2. On the **Who can manage topics** page, you can select:</br>
-    a. **Everyone in your organization**</br>
-    b. **Selected people or security groups**</br>
+1. On the **Topic permissions** tab, under **Who can manage topics**, select **Edit**.
+2. On the **Who can manage topics** page, you can select:
+    - **Everyone in your organization**
+    - **Selected people or security groups**
 
-    ![Manage topics](../media/content-understanding/k-manage-who-can-manage-topics.png) </br> 
+    ![Manage topics](../media/k-manage-who-can-manage-topics.png)  
 
-3. Select **Save**.</br>
+3. Select **Save**.
 
 ## See also
 
