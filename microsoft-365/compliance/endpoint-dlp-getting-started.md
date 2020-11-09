@@ -39,6 +39,7 @@ Before you get started with Endpoint DLP, you should confirm your [Microsoft 365
 - Microsoft 365 A5 compliance
 - Microsoft 365 E5 information protection and governance
 - Microsoft 365 A5 information protection and governance
+- Microsoft 365 E5 information protection and data loss prevention (only available with the E5 security, Enterprise Mobility and Security E5, Microsoft Cloud App Security, and Microsoft Defender Advanced Threat Protection)
 
 ### Permissions
 
