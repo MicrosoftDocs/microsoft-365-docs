@@ -24,7 +24,9 @@ The new [Microsoft 365 security](https://security.microsoft.com) center combines
 Use this URL to access the new security center: https://security.microsoft.com
 
 This table is a quick reference of MSDO areas where change has occurred between the Security & Compliance center and the Microsoft 365 Security portal. Click the links to navigate to topics.
+This table is a quick reference of Email & Collaboration areas where change has occurred between the Security & Compliance center and the Microsoft 365 Security portal. Click the links to navigate to topics.
 <p>
+
 |**Changed**  |**Unchanged**  |
 |---------|---------|
 |Dashboard     |  [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer?view=o365-worldwide)       |
