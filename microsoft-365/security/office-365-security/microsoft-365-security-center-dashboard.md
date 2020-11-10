@@ -39,11 +39,11 @@ To reach the Email & Collaboration dashboard, use the URL: https://security.micr
 
 The E&C dashboard is driven by **Incidents and Alerts** > **Email and collaboration alerts** at the time of writing.
 
-|:Office 365 Security & Compliance center  |
+|Office 365 Security & Compliance center  |
 |:---------:|
 |  :::image type="content" source="../../media/Converge 14 SandC Dashboard.PNG" alt-text="The rich Threat Management dashboard in the Office 365 Security & Compliance center.":::  |
 
-|:Email & Collaboration center  |
+|Email & Collaboration center  |
 |:---------:|
 |:::image type="content" source="../../media/Converge 15 E&C Dashboard.PNG" alt-text="The alert driven Dashboard for the Microsoft 365 Security center.":::     |
 
