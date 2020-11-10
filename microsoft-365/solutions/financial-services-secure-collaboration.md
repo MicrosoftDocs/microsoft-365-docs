@@ -42,6 +42,15 @@ In the financial services sector, careful consideration is required for the conf
 
 As a Microsoft partner, Protiviti contributed to and provided material feedback to this article.
 
+These downloadable illustrations supplement this article. Woodgrove Bank and Contoso are used to demonstrate how capabilities described in this article can be applied to address common regulatory requirements of financial services. Feel free to adapt these illustrations for your own use. 
+
+**Microsoft 365 information protection and compliance illustrations**
+
+| Item | Description |
+|:-----|:-----|
+|[![Model poster: Microsoft 365 information protection and compliance capabilities](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Download as a PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Updated October 2020|Includes: <ul><li>  Microsoft information protection and data loss prevention</li><li>Retention policies and retention labels </li><li>Information barriers</li><li>Communication compliance</li><li>Insider risk</li><li>Third-party data ingestion</li>|
+
+
 ## Empower organizational and employee productivity by using Microsoft 365 and Teams
 
 Collaboration typically requires various forms of communication, the ability to store and access documents/data, and the ability to integrate other applications as needed. Employees in financial services typically need to collaborate and communicate with members of other departments or teams and sometimes with external entities. Therefore, using systems that create silos or make information sharing difficult is undesirable. Instead, it's preferable to leverage platforms and applications that enable employees to communicate, collaborate, and share information securely and according to corporate policy.
