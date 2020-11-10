@@ -37,4 +37,19 @@ If you need more detailed information on the combination of these security cente
 
 To reach the Email & Collaboration dashboard, use the URL: https://security.microsoft.com/alertsdashboard.
 
-The E&C dashboard is driven almost entirely by Alerts at the time of writing. It is likely to update from this point to include more relevance.
+The E&C dashboard is driven by **Incidents and Alerts** > **Email and collaboration alerts** at the time of writing.
+
+|Office 365 Security & Compliance center  |
+|:---------:|
+|  :::image type="content" source="../../media/Converge 14 SandC Dashboard.PNG" alt-text="The rich Threat Management dashboard in the Office 365 Security & Compliance center.":::  |
+<p>
+
+|Column1  |
+|:---------:|
+|:::image type="content" source="../../media/Converge 15 E&C Dashboard.PNG" alt-text="The alert driven Dashboard for the Microsoft 365 Security center.":::      |
+
+
+| Microsoft 365 Security center  |
+|:---------:|
+|        |
+
