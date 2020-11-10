@@ -24,7 +24,7 @@ It is important to plan the best way to set up and configure topics in your envi
 > [!Note]
 > You may find it useful to create security groups to assign your users the permissions needed to view topics, manage topic, and create and edit topics.
 
-You can also [make changes to your selected settings anytime after setup](manage-knowledge-network.md) by using the topics settings in the Microsoft 365 admin center.
+You can also [make changes to your selected settings anytime after setup](topic-experiences-discovery.md) by using the topics settings in the Microsoft 365 admin center.
 
 ## Requirements
 
@@ -84,7 +84,7 @@ Select **Next**.
 On the **Create Topic  Center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed.  In the **Site name** box, type a name for your Topic center. You can optionally type a short description in the **Site description** box. 
 
 > [!Note]
-> After setup, an admin can [make changes to your selected knowledge management settings](manage-knowledge-network.md) any time by returning to this page.
+> After setup, an admin can [make changes to your selected knowledge management settings](topic-experiences-discovery.md) any time by returning to this page.
 
 ## See also
 

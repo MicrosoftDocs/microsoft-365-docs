@@ -14,16 +14,16 @@
     - name: Setup and administration
       items:
 
-        - name: Plan knowledge management
-          href: plan-knowledge-network.md
+        - name: Plan topic experiences
+          href: plan-topic-experiences.md
         - name: Set up topic experiences
           href: set-up-topic-experiences.md
         - name: Manage topic discovery
           href: topic-experiences-discovery.md
         - name: Manage topic visibility
-          href: manage-knowledge-network-topic-visibility.md
+          href: topic-experiences-knowledge-rules.md
         - name: Manage topic permissions
-          href: manage-knowledge-network-topic-permissions.md
+          href: topic-experiences-user-permissions.md
         - name: Change the topic center name
-          href: manage-knowledge-network-topic-center.md
+          href: topic-experiences-administration.md
     
