@@ -65,11 +65,7 @@ Topic contributors can create and edit topics. We recommend that you choose ever
 
 If you want to limit creating and editing topics to specific people or groups, create a security group for them and specify it during the setup process.
 
-You can choose to not allow people 
-
-If you don't want to allow people in your organization to create and edit topics, choose no one.   This is not recommended.
-
-
+You can choose to not allow anyone to contribute to topics, however this is not recommended.
 
 *Topic viewers*
 
@@ -156,6 +152,19 @@ On the **Create Topic  Center** page, you can create your topic center site in w
 
 > [!Note]
 > After setup, an admin can [make changes to your selected knowledge management settings](topic-experiences-discovery.md) any time by returning to this page.
+
+
+## Setup checklist
+
+When you set up topic experiences, you'll need the following items as you go through the setup wizard:
+
+> [!div class="checklist"]
+> * List of sites to include or exclude if not including all sites for topic discovery
+> * Security group for topic viewers if not allowing all users to view topics
+> * Security group for topic contributors if not allowing all users to create and edit topics
+> * Security group for topic knowledge managers if not allowing all users to manage topics
+> * List of sensitive topics to exclude from topic discovery
+> * A name for your topic center site
 
 ## See also
 
