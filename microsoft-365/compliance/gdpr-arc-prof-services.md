@@ -24,8 +24,8 @@ titleSuffix: Microsoft GDPR
 
 This accountability readiness checklist provides a convenient way to access information you may need to support GDPR when using Microsoft Professional Services and Support Services. The checklist is organized using the titles and reference number (in parentheses for each checklist topic) of a set of privacy and security controls for personal data processors drawn from:
 
-- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) for privacy information management techniques and requirements.
-- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) for information security management requirements in general.
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail?pid=000000000030351736) for privacy management requirements.
+- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) for security techniques requirements.
 
 This control structure is also used to organize the presentation of the internal controls that Microsoft Professional Services implements to support GDPR, which you can download from the [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
 

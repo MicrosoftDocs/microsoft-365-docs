@@ -77,12 +77,23 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to meet these requirements.
 
 1. Must be running Windows 10 x64 build 1809 or later.
-2. All devices must be [Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), or Hybrid Azure AD joined.
-3. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+
+2. Antimalware Client Version is 4.18.2009.7 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623. Note: None of Windows Security components need to be active, you can run Endpoint DLP independent of Windows Security status.
+
+3. The following Windows Updates are installed. Note: These updates are not a pre-requisite to onboard a device to Endpoint DLP, but contain fixes for important issues thus must be installed before using the product.
+
+	- For Windows 10 1809 - KB4559003, KB4577069, KB4580390
+	- For Windows 10 1903 or 1909 - KB4559004, KB4577062, KB4580386
+	- For Windows 10 2004 - KB4568831, KB4577063
+	- For devices running Office 2016 (and not any other Office version) - KB4577063 
+
+4. All devices must be [Azure Active Directory (Azure AD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), or Hybrid Azure AD joined.
+
+5. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 ## Onboarding devices into device management
 
- You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft 365 Compliance portal.
+You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft 365 Compliance portal.
 
 When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy it to those devices. Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
 
@@ -93,19 +104,26 @@ If you already have devices onboarded into [Microsoft Defender for Endpoint](htt
 In this deployment scenario, you'll onboard devices that have not been onboarded yet, and you just want to monitor and protect sensitive items from unintentional sharing on Windows 10 devices.
 
 1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
+
 2. Open the Compliance Center settings page and choose **Onboard devices**. 
 
-   ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+   > [!div class="mx-imgBorder"]
+   > ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
 
 3. Choose **Device management** to open the **Devices** list. The list will be empty until you onboard devices.
+
 4. Choose **Onboarding** to begin the onboarding process.
+
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
 
-   ![deployment method](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+   > [!div class="mx-imgBorder"]
+   > ![deployment method](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+   
 6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
+
     - Onboard Windows 10 machines using Group Policy
     - Onboard Windows machines using Microsoft Endpoint Configuration Manager
     - Onboard Windows 10 machines using Mobile Device Management tools
@@ -122,11 +140,20 @@ Once done and endpoint is onboarded, it should be visible in the devices list an
 In this scenario, Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list. You can continue to onboard new devices into Endpoint DLP to expand coverage by using the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
 
 1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
+
 2. Open the Compliance Center settings page and choose **Enable device monitoring**.
-3. Choose **Device management** to open the **Devices** list. You should see the list of devices that are already reporting in to Microsoft Defender for Endpoint. ![device management](../media/endpoint-dlp-getting-started-2-device-management.png)
+
+3. Choose **Device management** to open the **Devices** list. You should see the list of devices that are already reporting in to Microsoft Defender for Endpoint.
+
+   > [!div class="mx-imgBorder"]
+   > ![device management](../media/endpoint-dlp-getting-started-2-device-management.png)
+   
 4. Choose **Onboarding** if you need to onboard additional devices.
+
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **Download package**.
+
 6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
+
     - Onboard Windows 10 machines using Group Policy
     - Onboard Windows machines using Microsoft Endpoint Configuration Manager
     - Onboard Windows 10 machines using Mobile Device Management tools
@@ -141,9 +168,11 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 ### Viewing Endpoint DLP data in activity explorer
 
 1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and choose Activity explorer.
+
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
 
-![activity explorer filter for endpoint devices](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > [!div class="mx-imgBorder"]
+   > ![activity explorer filter for endpoint devices](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## Next steps
 Now that you have onboarded devices and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
@@ -157,8 +186,8 @@ Now that you have onboarded devices and can view the activity data in Activity e
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

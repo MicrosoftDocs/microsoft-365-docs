@@ -271,6 +271,11 @@
       items: 
         - name: Add a domain
           href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+
+    - name: Manage
+      items: 
+        - name: Microsoft 365 service health status
+          href: microsoft-365-service-health.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
@@ -470,8 +475,11 @@
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
 
-- name: Security and compliance
-  href: https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap
+- name: Security
+  href: https://docs.microsoft.com/microsoft-365/security/
+
+- name: Compliance
+  href: https://docs.microsoft.com/microsoft-365/compliance/
 
 - name: Cloud services
   items: 
@@ -582,7 +590,7 @@
               href: view-user-accounts-with-microsoft-365-powershell.md
             - name: Configure properties
               href: configure-user-account-properties-with-microsoft-365-powershell.md
-            - name: Assign roles
+            - name: Assign admin roles
               href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
             - name: Delete and restore
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
@@ -716,7 +724,7 @@
   items: 
     - name: Overview
       href: contoso-overview.md
-    - name: Contoso's IT infrastructure and needs
+    - name: Contoso IT infrastructure and needs
       href: contoso-infra-needs.md
     - name: Networking
       href: contoso-networking.md
@@ -732,9 +740,6 @@
       href: contoso-info-protect.md
     - name: Security summary
       href: contoso-security-summary.md
-
-- name: Microsoft 365 service health status
-  href: microsoft-365-service-health.md
 
 - name: Microsoft 365 compliance
   href: ../compliance/index.yml

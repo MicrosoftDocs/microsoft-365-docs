@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -198,6 +198,10 @@ At this point, you can't reactivate the subscription. However, as a global or bi
 > [!NOTE]
 > Adding a new subscription of the same type that has been deprovisioned does not restore the data that was associated with the deprovisioned subscription.
 
+
+> [!NOTE]
+> If a CSP license is suspended, there is no 30 day grace period, and services are disabled immediately. Data will be deleted after 90 days if the tenant is not reactivated by adding a new license.
+
 ### What happens when my trial ends?
 
 When your trial ends, you can't continue using Microsoft 365 for free. You have a few options:
@@ -232,3 +236,4 @@ When your trial ends, you can't continue using Microsoft 365 for free. You have 
 [Cancel your subscription](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (article)\
 [Renew Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (article)\
 [Reactivate your subscription](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (article)
+
