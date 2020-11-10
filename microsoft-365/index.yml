@@ -117,7 +117,7 @@ productDirectory:
       links:
         - url: compliance/compliance-quick-tasks.md
           text: Quick tasks for getting started with Microsoft 365 compliance
-        - url: compliance/protect-information.md
+        - url: compliance/information-protection.md
           text: Manage information protection
         - url: compliance/manage-information-governance.md
           text: Manage information governance

@@ -98,7 +98,7 @@ Users with this role have permissions to manage security-related features in the
 |**Microsoft Defender for Endpoint  and EDR**|Assign roles. <br/><br/> Manage machine groups. <br/><br/> Configure endpoint threat detection and automated remediation. <br/><br/> View, investigate, and respond to alerts.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Views user, device, enrollment, configuration, and application information. <br/><br/> **Cannot** make changes to Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Add admins, add policies and settings, upload logs and perform governance actions.|
-|[**Azure Defender***](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (coming soon)|View security policies, view security states, edit security policies, view alerts and recommendations, dismiss alerts and recommendations.|
+|[**Azure Defender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (coming soon)|View security policies, view security states, edit security policies, view alerts and recommendations, dismiss alerts and recommendations.|
 |[**Office 365 service health**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|View the health of Office 365 services.|
 |
 
@@ -135,7 +135,7 @@ Users with this role have global read-only access on security-related feature, i
 |**Microsoft Defender for Endpoint  and EDR**|View and investigate alerts.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Views user, device, enrollment, configuration, and application information. <br/><br/> **Cannot** make changes to Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Use read-only permissions to view information. <br/><br/> Manage alerts.|
-|[**Azure Defender***](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|View recommendations and alerts. <br/><br/> View security policies. <br/><br/> View security states, but cannot make changes.|
+|[**Azure Defender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|View recommendations and alerts. <br/><br/> View security policies. <br/><br/> View security states, but cannot make changes.|
 |[**Office 365 service health**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|View the health of Office 365 services.|
 |
 
