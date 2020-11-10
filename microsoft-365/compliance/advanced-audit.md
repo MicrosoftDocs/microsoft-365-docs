@@ -144,7 +144,7 @@ To benefit from user-level Advanced Audit capabilities, a user needs to be assig
 
 **My organization has an E5 subscription, do I need to do anything to get access to audit records for crucial events?**
 
-For eligible customers, there is no action to get access to crucial auditing events. However, as previously explained in this topic, latency caused by the licensing backfill issue may prevent audit records for crucial events from being returned in an audit log search. If this happens, follow the instructions in the previous FAQ about the temporary licensing backfill issue.
+For eligible customers and users that are assigned the appropriate license, there is no action to get access to crucial auditing events.
 
 **When will the new 10-year audit log retention add-on license be available?**
 
