@@ -23,7 +23,7 @@ In the topic center, a knowledge manager can review topics that have been mined 
 
 ## Requirements
 
-In order to work in the topic center, you need to have the required permissions. Your admin can add you during [knowledge management setup](set-up-knowledge-network.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md).
+In order to work in the topic center, you need to have the required permissions. Your admin can add you during [knowledge management setup](set-up-topic-experiences.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md).
 
 Topic center users can be given two sets of permissions:
 
