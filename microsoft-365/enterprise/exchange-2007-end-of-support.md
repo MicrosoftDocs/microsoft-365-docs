@@ -34,7 +34,7 @@ Exchange Server, like almost all Microsoft products, has a support lifecycle dur
     
 - Time zone updates.
     
-Your installation of Exchange 2007 will continue to run after the end of support date. But because there are no new updates or support, we strongly recommend that you migrate from Exchange 2007 as soon as possible.
+Your installation of Exchange 2007 will continue to run after the end-of-support date. But because there are no new updates or support, we strongly recommend that you migrate from Exchange 2007 as soon as possible.
   
 For more information about Office 2007 servers nearing the end of support, see [Plan your upgrade from Office 2007 servers and products](upgrade-from-office-2007-servers-and-products.md).
   

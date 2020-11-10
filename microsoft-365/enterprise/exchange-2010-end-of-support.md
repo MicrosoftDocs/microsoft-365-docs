@@ -22,7 +22,7 @@ Exchange Server 2010 reached its end of support on **October 13, 2020**. If you 
 
 ## What does *end of support* mean?
 
-Most Microsoft products have a support lifecycle during they get new features, bug fixes, security fixes, and so on. This lifecycle typically lasts for 10 years from the product's initial release. The end of this lifecycle is known as the product's end of support. Because Exchange 2010 reached its end of support on October 13, 2020, Microsoft no longer provides:
+Most Microsoft products have a support lifecycle during which they get new features, bug fixes, security fixes, and so on. This lifecycle typically lasts for 10 years from the product's initial release. The end of this lifecycle is known as the product's end of support. Because Exchange 2010 reached its end of support on October 13, 2020, Microsoft no longer provides:
 
 - Technical support for problems that may occur.
 - Bug fixes for issues that may impact the stability and usability of the server.
@@ -41,7 +41,7 @@ It's a great time to explore your options and prepare a migration plan. You can:
 - Migrate your Exchange 2010 servers to Exchange 2016 on your on-premises servers.
 
 > [!IMPORTANT]
-> If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep DirSync or Azure AD Connect in place to continue managing user accounts from on-premises Active Directory, you need to keep at least one Microsoft Exchange server on-premises. If all Exchange servers are removed, you won't be able to make changes to Exchange recipients in Exchange Online because the source of authority remains in your on-premises Active Directory. Changes need to be made there. In this scenario, you have the following options:
+> If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep DirSync or Azure AD Connect in place to continue managing user accounts from on-premises Active Directory, you need to keep at least one Microsoft Exchange server on-premises. If you remove all Exchange servers, you won't be able to make changes to Exchange recipients in Exchange Online because the source of authority remains in your on-premises Active Directory. Changes need to be made there. In this scenario, you have the following options:
 >
 >- *Recommended:* If you migrated your mailboxes to Microsoft 365 and upgraded your servers by October 13, 2020, use Exchange 2010 to connect to Microsoft 365 and migrate mailboxes. Next, migrate Exchange 2010 to Exchange 2016, and decommission any remaining Exchange 2010 servers.
 >- If you didn't complete the mailbox migration and on-premises server upgrade by October 13, 2020, upgrade your on-premises Exchange 2010 servers to Exchange 2016 first. Then use Exchange 2016 to connect to Microsoft 365 and migrate mailboxes.

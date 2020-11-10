@@ -49,7 +49,7 @@ As the end of support of SharePoint Server 2010 approaches, delete data you no l
 
 ## Plan ahead
 
-Check the dates that support ends on the [Product Lifecycle site](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010). Plan your upgrades or migrations with these dates in mind. Remember that your product *won't stop working* at the date listed. But because your installation will no longer be patched after that date, you'll want to plan smoothly transition to the next version of the product.
+Check the dates that support ends on the [Product Lifecycle site](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010). Plan your upgrades or migrations with these dates in mind. Remember that your product *won't stop working* at the date listed. But because your installation will no longer be patched after that date, you'll want to plan a smooth transition to the next version of the product.
 
 This matrix helps plot a course among migration options:
 
