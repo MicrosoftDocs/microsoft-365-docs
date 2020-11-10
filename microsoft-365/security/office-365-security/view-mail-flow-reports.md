@@ -528,7 +528,7 @@ To go back to the report view, click **View report**.
 
 ## Mail latency report
 
-The mail latency report shows you information about how long it takes for emails to be delivered and detonated within your organization. It shows an aggregate view of the mail delivery and detonation latency incurred by incoming emails. Client side and network latency is not included.
+The mail latency report shows you an aggregate view of the mail delivery and detonation latency experienced within your organization. Client side and network latency is not included.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mail latency report**. To go directly to the report, open <https://protection.office.com/mailLatencyReport?viewid=P50>.
 
@@ -536,22 +536,20 @@ To view the report, open the [Security & Compliance Center](https://protection.o
 
 ### Report view for the Mail latency report
 
-The following charts are available in the report view:
+When you open the report, the **50th percentiles** tab is selected by default.
 
-- **50th percentiles**: a latency that's equal to or less than the latency of 50% of the email delivered that day is calculated to be at the 50th percentile.
-- **90th percentiles**: a latency that is equal to or less than the latency of 90% of the emails delivered that day is said to be at the 90th percentile.
-- **99th percentiles**: a latency that is equal to or less than the latency of 99% of the emails delivered that day is said to be at the 99th percentile.
-
-When you open the report, the **50th percentiles** tab is selected by default. By default, this view contains a chart that's configured with the following filters:
+By default, this view contains a chart that's configured with the following filters:
 
 - **Date**: The last 7 days
 - **Message View**:
   - Detonated messages
 
+ The aggregate latency values displayed in the chart for the 50th percentile, conveys that half of all the messages delivered and detonated on that day experienced a latency either equal to or less than this value.
+
 This chart shows messages organized into the following categories:
 
-- **Email delivery**: the delivery latency for emails
-- **Detonations**: the detonation latency for emails
+- **Mail delivery latency**
+- **Detonation latency**
 
 When you hover over a category in the chart, you can see a breakdown of the latency in each category.
 
@@ -564,9 +562,11 @@ If you click **Filter** in the report view, you can modify the results with the 
 
 If you click the **90th percentiles** tab or the **99th percentiles** tab, the same default filters from the **50th percentiles** view are used.
 
+The 90th percentile value conveys that only 10% of all the messages delivered on that day experienced a latency greater than this value while the 99th percentile tab shows the longest latency experienced for that particular day.
+
 ### Details table view for the Mail latency report
 
-The details table shows a list view for each percentiles along with total message count and overall latency incurred for that day. It shows that the 99th percentile is the longest latency our filtering stack has taken to filter “X” message counts for that particular day.
+The details table shows a list view for each percentile along with total message count and overall latency incurred for that day.
 
 The following information is shown in the table view:
 
