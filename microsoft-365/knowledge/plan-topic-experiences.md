@@ -34,34 +34,56 @@ You must be a global administrator or SharePoint administrator to access the Mic
 
 ## Topic discovery
 
-: where and how we look for topics
+The topic discovery settings specify which SharePoint sites are crawled for topics. You can choose to include all SharePoint sites, a specific list of sites, or no sites. We recommend that you choose all sites so that topic experiences can discover a large number of good topics for your users.
 
-Select sources for topic discovery
-Set priority location for mining
-How are topics generated?
- 
-On the **Choose how the knowledge network can find topics** page, you will configure topic discovery. In the **Select SharePoint topic sources** section, select which SharePoint sites will be crawled as sources for your topics during discovery. Choose from:
+When you set up topic experiences, you can choose from the following options:
+
 - **All sites**: All SharePoint sites in your organization. This includes current and future sites.
-- **All, except selected sites**: Type the names of the sites you want to exclude.  You can also upload a list of sites that you want to opt out from discovery. Sites created in future will be included as sources for topic discovery. 
-- **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future will not be included as sources for topic discovery.
+- **All, except selected sites**: All sites except for the ones you specify. Sites created in future will be included as sources for topic discovery. 
+- **Only selected sites**: Only the sites that you specify. Sites created in the future will not be included as sources for topic discovery.
 - **No sites**: Do not include any SharePoint sites.
 
-We recommend all sites so that topic experiences can discover a large number of good topics for your users.
-,  but yIf you want to include specific sites, you can choose all except selected sites or only selected sites and then add the sites that you want to use or exclude by typing them in or by uploading a CSV file.
-You can also choose no sites if you want to exclude all sites at this time.  This is not recommended because topics won’t be automatically created or updated.
+If you choose either **All, except selected sites** or **Only selected sites**, you can upload a .csv file with a list of sites. These options are useful if you're doing a pilot and you want to include a limited number of sites to start.
 
-
+We don't recommend choosing **No sites** because it prevents topics from being automatically created or updates. However, you can choose this option if you want to set up topic experiences and then add sites later.
 
 ## User permissions
 
-: which people in your organization interact with topics
+The user permissions that you specify determine which people in your organization interact with topics and what they can do.
+
+*Knowledge managers*
+
+Knowledge managers oversee the quality of information, how its structured, and other best practices in your organization. They can confirm and reject topics.
+
+You can choose to have everyone in your organization be a knowledge manager, or you can limit it to specific people with this role.
+
+If you don't want everyone in your organization to be able to manage topics, create a security group that contains the people who you want to be knowledge managers. You can specify this security group during the setup process.
+
+*Topic contributors*
+
+Topic contributors can create and edit topics. We recommend that you choose everyone in your organization to be topic contributors because topic experiences work best when all users can share information.
+
+If you want to limit creating and editing topics to specific people or groups, create a security group for them and specify it during the setup process.
+
+You can choose to not allow people 
+
+If you don't want to allow people in your organization to create and edit topics, choose no one.   This is not recommended.
+
+
+
+*Topic viewers*
+
+We recommend everyone, but if you're doing a pilot you may want to choose only selected people or security groups.
+Type the people or security groups that you want to include.
+You can also choose no one if you want to set up the Knowledge Networktopic experiences, but not allow people to see topics yet.
+
 
 Who will see topic details, including topics highlighted in content?
 Who can manage topics
 Who can create and edit topics
 Who can edit a topic page layout?
 Who can see suggested topics to add to their profile?
- 
+
 On the **Who can see topics and where they can see them** page, you will configure topic visibility. In the **Who can see topics in the knowledge network** setting, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages. You can select:
 - **Everyone in my organization**
 - **Only selected people or security groups**
@@ -83,6 +105,9 @@ In the **Who can manage topics** section, you can select:
 
 
 Select **Next**.
+
+
+
 
 ## Knowledge rules
 
