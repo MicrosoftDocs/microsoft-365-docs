@@ -1646,8 +1646,25 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/protect-information.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/information-protection",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/enterprise/sharepoint-file-access-policies.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/sharepoint-file-access-policies",
+      "redirect_document_id": false
+    },
+
+
+    {
+      "source_path": "microsoft-365/knowledge/set-up-knowledge-network.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/knowledge/manage-knowledge-network.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery",
       "redirect_document_id": false
     },
     {

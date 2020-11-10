@@ -123,14 +123,6 @@ You view and manage quarantined messages in the Security & Compliance Center or 
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
-#### Export message results
-
-1. Select the messages you're interested in, and click **Export results**.
-
-2. Click **Yes** in the confirmation message that warns you to keep the browser window open.
-
-3. When your export is ready, you can name and choose the download location for the .csv file.
-
 #### View quarantined message details
 
 When you select an email message in the list, the following message details appear in the **Details** flyout pane:
@@ -250,14 +242,6 @@ In organizations with Defender for Office 365, admins can manage quarantined fil
    - **Policy type**
 
 After you find a specific quarantined file, select the file to view details about it, and to take action on it (for example, view, release, download, or delete the message).
-
-#### Export file results
-
-1. Select the files you're interested in, and click **Export results**.
-
-2. Click **Yes** in the confirmation message that warns you to keep the browser window open.
-
-3. When your export is ready, you can name and choose the download location for the .csv file.
 
 #### View quarantined file details
 
