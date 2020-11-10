@@ -46,6 +46,9 @@ On the **Choose how the knowledge network can find topics** page, you will confi
 - **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future will not be included as sources for topic discovery.
 - **No sites**: Do not include any SharePoint sites.
 
+We recommend all sites so that topic experiences can discover a large number of good topics for your users.
+,  but yIf you want to include specific sites, you can choose all except selected sites or only selected sites and then add the sites that you want to use or exclude by typing them in or by uploading a CSV file.
+You can also choose no sites if you want to exclude all sites at this time.  This is not recommended because topics won’t be automatically created or updated.
 
 
 
@@ -98,6 +101,7 @@ In the **Exclude topics by name** section, you can add names of topics you want 
 a. **Don't exclude any topics** 
 b. **Exclude topics by name**:  If you have topics you don't want shown to users.
 
+You can use this option to prevent the Knowledge Network from discovering sensitive information in your organization. These topics won’t be visible to anyone, including knowledge managers.
 
 If you need to exclude topics, after selecting **Exclude topics by name**, select download the .csv template and update it with the list of topics that you want to exclude from your discovery results.
 
