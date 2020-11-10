@@ -156,12 +156,14 @@ You should also hold down the CTRL key at the same time you right click the icon
 
 ## Using hybrid Modern Authentication with Outlook for iOS and Android
 
-If you are an on-premises customer using Exchange server on TCP 443, please whitelist the following IP ranges:
+If you are an on-premises customer using Exchange server on TCP 443, please make sure you have the following IP ranges on your allowlist so that the [Autodetect service](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) can commuicate with your Exchange servers:
 
 ```text
 52.125.128.0/20
 52.127.96.0/23
 ```
+
+These IP ranges are also documented on the [Additional endpoints not included in the Office 365 IP Address and URL Web service](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls) article.
 
 ## Related topics
 
