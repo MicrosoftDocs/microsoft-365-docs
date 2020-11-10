@@ -33,7 +33,7 @@ in one easy to navigate location. This means security for your Office 365 or Mic
 
 If you need more detailed information on the combination of these security centers, please see Getting started with the Microsoft 365 Security center for security admins and operations teams.
 
-# The Email & Collaboration (E&C) dashboard in Microsoft 365 Security center
+## The Email & Collaboration (E&C) dashboard in Microsoft 365 Security center
 
 To reach the Email & Collaboration dashboard, use the URL: https://security.microsoft.com/alertsdashboard.
 
