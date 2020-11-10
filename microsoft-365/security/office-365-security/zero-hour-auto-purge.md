@@ -76,7 +76,7 @@ By default, spam ZAP is enabled in anti-spam policies, and the default action fo
 
 For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
-### ZAP considerations for Office 365 Advanced Threat Protection (Office 365 ATP)
+### ZAP considerations for Microsoft Defender for Office 365
 
 ZAP will not quarantine any message that's in the process of [Dynamic Delivery](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) in Safe Attachments scanning, or where EOP malware filtering has already replaced the attachment with the **Malware Alert Text.txt** file. If a phish or spam signal is received for these types of messages, and the filtering verdict in the anti-spam policy is set to take some action on the message (Move to Junk, Redirect, Delete, or Quarantine) then ZAP will default to a 'Move to Junk' action.
 

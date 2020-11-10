@@ -107,7 +107,7 @@ Be sure to read the following items before you start searching the audit log.
 
   |Microsoft 365 service or feature|30 minutes|24 hours|
   |:-----|:-----:|:-----:|
-  |Advanced Threat Protection and Threat Intelligence|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Defender for Office 365 and Threat Intelligence|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (user login events)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Azure Active Directory (admin events)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Data Loss Prevention|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -134,6 +134,10 @@ Be sure to read the following items before you start searching the audit log.
 
 ## Search the audit log
 
+> [!NOTE]
+> We're currently investigating an issue where Azure AD activities are not available in the audit log search tool. This issue started around October 26, 2020. 
+These activites include Azure AD user administration activities, group administration activities, application administration activities, role administration activities, and directory administration activities. We'll provide an update when the issue is resolved.
+    
 Here's the process for searching the audit log in Office 365.
 
 [Step 1: Run an audit log search](#step-1-run-an-audit-log-search)
@@ -430,7 +434,7 @@ The following table describes the file and page activities in SharePoint Online 
 |Deleted file|FileDeleted|User deletes a document from a site.|
 |Deleted file from recycle bin|FileDeletedFirstStageRecycleBin|User deletes a file from the recycle bin of a site.|
 |Deleted file from second-stage recycle bin|FileDeletedSecondStageRecycleBin|User deletes a file from the second-stage recycle bin of a site.|
-|Deleted record compliance policy label|ComplianceRecordDelete|A document that was marked as a record was deleted. A document is considered a record when a retention label that marks content as a record is applied to the document.|
+|Deleted file marked as a record|RecordDelete|A document that was marked as a record was deleted. A document is considered a record when a retention label that marks content as a record is applied to the document.|
 |Detected document sensitivity mismatch|DocumentSensitivityMismatchDetected|User uploads a document to a site that's protected with a sensitivity label and the document has a higher priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled Confidential is uploaded to a site labeled General. <br/><br/> This event isn't triggered if the document has a lower priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled General is uploaded to a site labeled Confidential. For more information about sensitivity label priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).|
 |Detected malware in file|FileMalwareDetected|SharePoint anti-virus engine detects malware in a file.|
 |Discarded file checkout|FileCheckOutDiscarded|User discards (or undoes) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
@@ -991,7 +995,7 @@ Here are some tips for searching for Exchange admin activities when searching th
 
 **What are different Microsoft 365 services that are currently audited?**
 
-The most used services like Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection, and Power BI are audited. See the [beginning of this article](search-the-audit-log-in-security-and-compliance.md) for a list of services that are audited.
+The most used services like Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Defender for Office 365, and Power BI are audited. See the [beginning of this article](search-the-audit-log-in-security-and-compliance.md) for a list of services that are audited.
 
 **What activities are audited by auditing service in Office 365?**
 

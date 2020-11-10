@@ -38,7 +38,7 @@ In addition to Exchange Online, SharePoint Online, and OneDrive for Business; Mi
 - Teams chat messages, including private messages and channel messages. 
 - Teams images used in chats. 
 
-Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business.  Voicemail, calendar, chat history, and contacts are stored in Exchange Online.  In many cases, Exchange Online, SharePoint Online and OneDrive for Business are already used by the customer in the local datacenter geo and are also part of the Microsoft 365 migration program for eligible customer countries.
+Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business.  Voicemail, calendar, and contacts are stored in Exchange Online.  In many cases, Exchange Online, SharePoint Online and OneDrive for Business are already used by the customer in the local datacenter geo and are also part of the Microsoft 365 migration program for eligible customer countries.
 
 ## At what point is my migration complete so that my tenant's core customer data is being stored at rest in my new geo?
 
@@ -108,7 +108,7 @@ It is not possible to change the signup country associated with your tenant. Ins
   
 ## What happens if we are in process of email data migration to Microsoft 365 during the Exchange Online move?
 
-This is a very common scenario and is fully supported.  Cloud migration between datacenter geos does not interfere with any on-premisis to cloud mailbox migrations.
+This is a very common scenario and is fully supported.  Cloud migration between datacenter geos does not interfere with any on-premises to cloud mailbox migrations.
   
  ## Can I pilot some users?
   

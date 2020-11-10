@@ -1526,6 +1526,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/compliance/use-exchange-online-to-comply-with-sec-rule-17a-4.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/retention-regulatory-requirements",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/compliance/gdpr-arc-Dynamics365.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr-arc-azure-dynamics",
       "redirect_document_id": true
@@ -1641,8 +1646,25 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/protect-information.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/information-protection",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/enterprise/sharepoint-file-access-policies.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/sharepoint-file-access-policies",
+      "redirect_document_id": false
+    },
+
+
+    {
+      "source_path": "microsoft-365/set-up-knowledge-network.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/manage-knowledge-network.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery",
       "redirect_document_id": false
     },
     {

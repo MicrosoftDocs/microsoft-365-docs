@@ -68,7 +68,7 @@ The following services and features are available in some [Office 365 Germany su
     
 - Advanced eDiscovery
     
-- Advanced Threat Protection
+- Microsoft Defender for Office 365
     
 - Office 365 Threat Intelligence
     
