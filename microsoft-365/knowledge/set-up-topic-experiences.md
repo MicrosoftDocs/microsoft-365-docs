@@ -31,7 +31,7 @@ You can use the Microsoft 365 admin center to set up and configure [Knowledge Ma
 > [!Note]
 > You may find it useful to create security groups to assign your users the permissions needed to view topics, manage topic, and create and edit topics.
 
-An admin can also [make changes to your selected settings anytime after setup](manage-knowledge-network.md) through the Knowledge Management settings in the Microsoft 365 admin center.
+An admin can also [make changes to your selected settings anytime after setup](topic-experiences-discovery.md) through the Knowledge Management settings in the Microsoft 365 admin center.
 
 ## Requirements 
 You must have Global Admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Organizational knowledge tasks.
@@ -127,7 +127,7 @@ Select **Next**.</br>
     ![Settings applied](../media/content-understanding/ksetup7.png) </br>   
 
 > [!Note]
-> After setup, an admin can [make changes to your selected knowledge management settings](manage-knowledge-network.md) any time by returning to this page.
+> After setup, an admin can [make changes to your selected knowledge management settings](topic-experiences-discovery.md) any time by returning to this page.
 
 
 ## See also
