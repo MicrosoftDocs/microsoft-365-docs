@@ -3,7 +3,7 @@ title: Getting Started with the 'Microsoft 365 Security' dashboard, OATP, MDATP,
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 11/03/2020
+ms.date: 11/09/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -47,9 +47,6 @@ The E&C dashboard is driven by **Incidents and Alerts** > **Email and collaborat
 |:---------:|
 |:::image type="content" source="../../media/Converge 15 E&C Dashboard.PNG" alt-text="The alert driven Dashboard for the Microsoft 365 Security center.":::     |
 
+The new dashboard will show Alert trends for Email & Collaborations, Active alerts by severity (including Data loss, Threat management, and other alert types), your most recent alerts by severity and policy, and give you a panel for viewing and creating Alert policies.
 
-
-|  |
-|:---------:|
-|      |
-
+:::image type="content" source="../../media/Converge 16 E&C New Alert Policy.png" alt-text="The new alert policy panel from clicking the link on the E&C Dashboard.":::
