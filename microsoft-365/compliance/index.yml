@@ -27,11 +27,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: Know your data
-            url: protect-information.md#know-your-data
+            url: information-protection.md#know-your-data
           - text: Protect your data
-            url: protect-information.md#protect-your-data
+            url: information-protection.md#protect-your-data
           - text: Prevent data loss
-            url: protect-information.md#prevent-data-loss
+            url: information-protection.md#prevent-data-loss
           - text: Govern your data
             url: manage-information-governance.md
           - text: "Learning path: Manage information protection and governance"

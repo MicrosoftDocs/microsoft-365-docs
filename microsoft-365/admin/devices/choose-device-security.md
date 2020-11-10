@@ -34,8 +34,6 @@ Or use the subscriptions that include some, or all of the previous standalone pl
 
 ## Device management options
 
-![A figure that illustrated which subscriptions should use which MDM and MAM methods.](../../m365-mam-mdm.png)
-
 - **Basic Mobility and Security** is offered with most Microsoft 365 plans, and is the only built-in choice offered for Microsoft 365 Business Standard and Microsoft 365 Business Basic. For more information, see [availability of Basic Mobility and Security](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune). 
 
     If you have either Microsoft 365 Business Basic or Microsoft 365 Business Standard, you can also purchase Intune if your organization has more complex security needs.
