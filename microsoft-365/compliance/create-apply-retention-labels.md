@@ -237,7 +237,7 @@ For example, if you have a retention label for marketing materials, and you know
   
 ![Apply label option on library Settings page](../media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
   
-For standard retention labels: When you apply a default retention label to a library, folder, or document set:  
+For standard retention labels that you apply as a default retention label to a library, folder, or document set:
 
 - All unlabeled items in the container have this retention label applied.
 
@@ -251,7 +251,7 @@ For standard retention labels: When you apply a default retention label to a lib
 
 For labels that aren't standard retention labels but mark items as [records (or regulatory records)](records-management.md#records):
 
-- The labeling behavior is the same except: After a item is declared a record, the label cannot be changed by a default label. 
+- The labeling behavior is the same except: After an item is declared a record, the label cannot be changed by a default label. 
 
 ### Automatically applying a retention label to email by using rules
 
