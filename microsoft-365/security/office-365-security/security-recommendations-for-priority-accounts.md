@@ -42,7 +42,7 @@ For more information about Azure AD versions and licensing, see [Azure Active Di
 
 |Feature|Azure AD version required|Included in these plans|Comments|
 |---|---|---|---|
-|Security defaults|Office 365 Apps|Microsoft 365 E3 <p> Microsoft 365 E5|Turns on MFA and blocks legacy authentication protocols for all users in the organization. For instructions, see [Enabling security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults).|
+|Security defaults|Office 365 Apps|Microsoft 365 E3 <p> Microsoft 365 E5|Turns on MFA and blocks legacy authentication protocols for **all** users in the organization. For instructions, see [Enabling security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults).|
 |Conditional access policies|Premium P1<sup>\*</sup>|Enterprise Mobility + Security E3|[Require multi-factor authentication and set up conditional access policies](https://docs.microsoft.com/microsoft-365/campaigns/m365-campaigns-conditional-access)|
 |Risk policies|Premium P2<sup>\*</sup>|Enterprise Mobility + Security E5|[How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies)|
 |
@@ -71,7 +71,9 @@ You can also create custom tags to further identify and classify your HVEs. For 
 
 ## HVEs in reports and investigations in Microsoft 365
 
-### HVEs in activity alerts
+### HVEs in alert policies
+
+For default alert policies and custom alert policies, user tags of affected users are visible and available as filters on the **View alerts** page in the Security & Compliance Center. For more information, see [Alert policies in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
 
 ### HVEs in Threat Explorer or Real-time detections
 
