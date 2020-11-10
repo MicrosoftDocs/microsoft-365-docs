@@ -544,7 +544,7 @@ By default, this view contains a chart that's configured with the following filt
 - **Message View**:
   - Detonated messages
 
- The aggregate latency values displayed in the chart for the 50th percentile, conveys that half of all the messages delivered and detonated on that day experienced a latency either equal to or less than this value.
+ The aggregate latency values calculated for the 50th percentile, convey that half of all the messages delivered and detonated on that day experienced a latency either equal to or less than this value.
 
 This chart shows messages organized into the following categories:
 
@@ -566,7 +566,7 @@ The 90th percentile value conveys that only 10% of all the messages delivered on
 
 ### Details table view for the Mail latency report
 
-The details table shows a list view for each percentile along with total message count and overall latency incurred for that day.
+The details table shows a list view for each percentile calculated along with total message count and overall latency experienced for that day.
 
 The following information is shown in the table view:
 
