@@ -16,10 +16,10 @@
 
         - name: Plan knowledge management
           href: plan-knowledge-network.md
-        - name: Set up knowledge management
-          href: set-up-knowledge-network.md
+        - name: Set up topic experiences
+          href: set-up-topic-experiences.md
         - name: Manage topic discovery
-          href: manage-knowledge-network.md
+          href: topic-experiences-discovery.md
         - name: Manage topic visibility
           href: manage-knowledge-network-topic-visibility.md
         - name: Manage topic permissions
