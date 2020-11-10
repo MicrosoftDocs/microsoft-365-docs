@@ -122,6 +122,7 @@ For country/region specific data centers, the following defines the cities where
 | Country | City |
 | --- | --- |
 | Australia | Sydney, Melbourne |
+| Brazil | Rio, Campinas |
 | Canada | Quebec City, Toronto |
 | European Union | Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam) |
 | France | Paris, Marseille |
@@ -887,19 +888,19 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 
 | Service | Location |
 | --- | --- |
-| Exchange Online | Global Geography 3 – Americas |
-| OneDrive for Business | Global Geography 3 – Americas |
-| SharePoint Online | Global Geography 3 – Americas |
+| Exchange Online | Brazil |
+| OneDrive for Business | Brazil |
+| SharePoint Online | Brazil |
 | Skype for Business | United States |
-| Microsoft Teams | United States |
-| Office Online &amp; Mobile | Global Geography 3 – Americas |
-| EOP | Global Geography 3 – Americas |
+| Microsoft Teams | Brazil |
+| Office Online &amp; Mobile | Brazil |
+| EOP | Brazil |
 | Intune | United States |
-| MyAnalytics | Global Geography 3 – Americas |
+| MyAnalytics | Brazil |
 | Planner | United States |
 | Sway | United States |
 | Yammer | United States |
-| OneNote Services | Global Geography 3 – Americas |
+| OneNote Services | Brazil |
 | Stream | United States |
 | Whiteboard | United States |
 | Forms | United States |
