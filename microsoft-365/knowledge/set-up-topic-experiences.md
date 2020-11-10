@@ -119,6 +119,27 @@ Select **Next**.
 > [!Note]
 > After setup, an admin can [make changes to your selected knowledge management settings](topic-experiences-discovery.md) any time by returning to this page.
 
+## Assign licenses
+
+Once you have configured topic experiences, you must assign licenses for the users who will be using topic experiences.
+
+To assign licenses:
+
+1. In the Microsoft 365 admin center, under **Users**, click **Active users**.
+
+2. Select the users that you want to license, and click **Manage product licenses**.
+
+3. Select **Assign more**.
+
+4. Under **Licenses**, select **Topic Experiences**.
+
+5. Under **Apps**, make sure **Graph Connectors Search with Index** and **Topic Experiences** are both selected.
+
+    > [!div class="mx-imgBorder"]
+    > ![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/topic-experiences-licenses.png)
+
+6. Click **Save changes**.
+
 ## See also
 
 
