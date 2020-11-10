@@ -214,8 +214,8 @@ Search permissions filters also let you control where content is routed for expo
     |JPN  <br/> |Asia Pacific  <br/> |
     |IND  <br/> |Asia Pacific  <br/> |
     |LAM  <br/> |US  <br/> |
-    |NOR  <br/> | Europe |
-    |BRA  <br/> | North American Datacenters |
+    |NOR  <br/> |Europe |
+    |BRA  <br/> |North American datacenters |
     |||
 
    If you don't specify the **Region** parameter for a search permissions filter, the organization's primary SharePoint region will be searched. Search results are exported to the closest datacenter.
