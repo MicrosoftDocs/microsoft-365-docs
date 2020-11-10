@@ -31,30 +31,10 @@ ms.topic: article
 
 Creating a Microsoft 365 Defender trial lab or pilot environment and deploying it is a three-phase process:
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Prepare your Microsoft 365 Defender evaluation lab or pilot environment" />
-      <br/>Phase 1: Prepare </a><br>
-    </td>
-     <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab or pilot environment" title="Set up your Microsoft 365 Defender trial lab or pilot environment" />
-      <br/>Phase 2: Setup </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="
-Configure each Microsoft 365 Defender pillar for your Microsoft 365 Defender trial lab or pilot environment and onboard your endpoints" title="
-Configure each Microsoft 365 Defender pillar for your Microsoft 365 Defender trial lab or pilot environment and onboard your endpoints" />
-      <br/>Phase 3: Configure & Onboard </a><br>
-</td>
+|[![Phase 1: Prepare](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Phase 1: Prepare](prepare-mtpeval.md) |![Phase 2: Set up](../../media/phase-diagrams/setup.png)<br/>Phase 2: Set up |[![Phase 3: Onboard](../../media/phase-diagrams/onboard.png)](config-mtpeval.md)<br/>[Phase 3: Onboard](config-mtpeval.md) |
+|--|--|--|
+||*You are here!*  ||
 
-
-  </tr>
-</table>
 
 You're currently in the set up phase. Take the initial steps to access Microsoft 365 Security Center then set up your trial lab or pilot environment.
 
@@ -173,5 +153,5 @@ In this phase, you'll be guided to:
 
 
 ## Next step
-|![Phase 3: Configure & Onboard](../../media/config-onboard.png) <br>[Phase 3: Configure & Onboard](config-mtpeval.md) | Configure each Microsoft 365 Defender pillar for your Microsoft 365 Defender trial lab or pilot environment and onboard your endpoints.
+|[Phase 3: Configure & Onboard](config-mtpeval.md) | Configure each Microsoft 365 Defender pillar for your Microsoft 365 Defender trial lab or pilot environment and onboard your endpoints.
 |:-------|:-----|
