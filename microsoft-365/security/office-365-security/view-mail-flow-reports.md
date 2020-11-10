@@ -544,7 +544,7 @@ By default, this view contains a chart that's configured with the following filt
 - **Message View**:
   - Detonated messages
 
- The latency values calculated for the 50th percentile, show that half of all the messages delivered and detonated on that day experienced a latency either equal to or less than this value.
+The 50th percentile value show that half of all the messages delivered and detonated on that day experienced a latency either equal to or less than this value.
 
 This chart shows messages organized into the following categories:
 
@@ -562,11 +562,11 @@ If you click **Filter** in the report view, you can modify the results with the 
 
 If you click the **90th percentiles** tab or the **99th percentiles** tab, the same default filters from the **50th percentiles** view are used.
 
-The 90th percentile value shows that only 10% of all the messages delivered on that day experienced a latency greater than this value while the 99th percentile tab shows the longest latency experienced for that particular day.
+The 90th percentile value shows that only 10% of all the messages delivered on that day experienced a latency above this value while the 99th percentile tab shows the longest latency experienced for that particular day.
 
 ### Details table view for the Mail latency report
 
-The details table shows a list view for each percentile calculated along with total message count and overall latency experienced for that day.
+The details table shows a list view of the percentile, total message count and overall latency values experienced for that day.
 
 The following information is shown in the table view:
 
