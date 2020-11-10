@@ -353,6 +353,8 @@
               href: archive-fxconnect-data.md
             - name: Jive
               href: archive-jive-data.md
+            - name: MS SQL Database
+              href: archive-mssqldatabaseimporter-data.md
             - name: Pivot
               href: archive-pivot-data.md
             - name: Reuters Dealing
