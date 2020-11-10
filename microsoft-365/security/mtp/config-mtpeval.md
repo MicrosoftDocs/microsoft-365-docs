@@ -63,7 +63,7 @@ Preparation is key to any successful deployment. In this article, you'll be guid
 ## Microsoft 365 Defender pillars
 Microsoft 365 Defender consists of four pillars. Although one pillar can already provide value to your network organization's security, enabling the four Microsoft 365 Defender pillars will give your organization the most value.
 
-![Image of_Microsoft 365 Defender solution for users, Microsoft Defender for Identity, for endpoints Microsoft Defender for Endpoint, for cloud apps, Microsoft Cloud App Security, and for data, Microsoft Defender for Office 365](../../media/mtp/m365pillars.png))
+![Image of_Microsoft 365 Defender solution for users, Microsoft Defender for Identity, for endpoints Microsoft Defender for Endpoint, for cloud apps, Microsoft Cloud App Security, and for data, Microsoft Defender for Office 365](../../media/mtp/m365pillars.png)
 
 This section will guide you to configure:
 -	Microsoft Defender for Office 365
