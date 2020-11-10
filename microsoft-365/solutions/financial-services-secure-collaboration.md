@@ -42,7 +42,7 @@ In the financial services sector, careful consideration is required for the conf
 
 As a Microsoft partner, Protiviti contributed to and provided material feedback to this article.
 
-These downloadable illustrations supplement this article. Woodgrove Bank and Contoso are used to demonstrate how capabilities described in this article can be applied to address common regulatory requirements of financial services. Feel free to adapt these illustrations for your own use. 
+The folllowing downloadable illustrations supplement this article. Woodgrove Bank and Contoso are used to demonstrate how capabilities described in this article can be applied to address common regulatory requirements of financial services. Feel free to adapt these illustrations for your own use. 
 
 **Microsoft 365 information protection and compliance illustrations**
 
