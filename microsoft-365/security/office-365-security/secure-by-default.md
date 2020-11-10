@@ -49,12 +49,9 @@ Secure by default here is not a setting that could be turned on or off, but the 
 
 ## Exceptions
 
-The only overrides that will bypass all filters include:
+The only override that will bypass all filters for high confidence phish are Exchange Transport Rules (ETR)/mail flow rules. You can [use mail flow rules to set the spam confidence level (SCL) in messages in EOP](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
-- Exchange Transport Rules (ETR)/mail flow rules. Use mail flow rules to set the spam confidence level (SCL) in messages in EOP.
-- Tenant Allow/Block List: Manage URLs and files in the Tenant Allow/Block List.
-
-These types of overrides are useful for:
+Overrides should only be used for:
 
 - Phish simulations: simulated attacks can help you identify vulnerable users before a real attack impacts your organization.
 - Security/SecOps mailboxes: dedicated mailboxes used by security teams to get unfiltered messages (both good and bad). Teams can then review to see if they contain malicious content.
