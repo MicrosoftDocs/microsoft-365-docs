@@ -197,7 +197,7 @@ An email or document can have only a single retention label applied to it at a t
 
 - If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the retention label for the oldest rule (by date created) is assigned.
 
-When retention labels mark items as a record or a regulatory record, these labels are never automatically replaced. For more information about the restrictions that comes with this label configuration, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). 
+When retention labels mark items as a record or a regulatory record, these labels are never automatically changed. For more information about the restrictions that comes with this label configuration, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). 
 
 #### Monitoring retention labels
 
