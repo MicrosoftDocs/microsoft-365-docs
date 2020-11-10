@@ -92,3 +92,5 @@ landingContent:
         links:
           - text: Deploy information protection for data privacy regulations
             url: ../solutions/information-protection-deploy.md
+          - text: Information protection and compliance illustrations
+            url: ../solutions/productivity-illustrations#microsoft-365-information-protection-and-compliance-capabilities
