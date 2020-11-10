@@ -24,7 +24,7 @@ description: "Implement Microsoft Information Protection (MIP) to help you prote
 
 >*[Licensing for Microsoft 365 Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Implement Microsoft Information Protection (MIP) capabilities to help you discover, classify, and protect sensitive information wherever it lives or travels.
+Implement Microsoft Information Protection (MIP) to help you discover, classify, and protect sensitive information wherever it lives or travels.
 
 MIP capabilities are included with Microsoft 365 Compliance and give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
 

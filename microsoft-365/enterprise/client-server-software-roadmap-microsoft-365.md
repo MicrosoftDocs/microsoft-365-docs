@@ -17,9 +17,9 @@ description: Use this roadmap to set up client and server software for Microsoft
 
 # Client and server software roadmap for Microsoft 365
 
-Most enterprise organizations have a heterogeneous environment that includes multiple releases of operating systems, client software, and server software. Microsoft 365 Enterprise includes the most secure versions of the key components of your IT infrastructure. It also includes productivity features that are designed to take advantage of cloud technologies.
+Most enterprise organizations have a heterogeneous environment that includes multiple releases of operating systems, client software, and server software. Microsoft 365 for Enterprise includes the most secure versions of the key components of your IT infrastructure. It also includes productivity features that are designed to take advantage of cloud technologies.
 
-To maximize the business value of the Microsoft 365 Enterprise integrated suite of products, begin planning and implementing a strategy to migrate releases of:
+To maximize the business value of the Microsoft 365 for Enterprise integrated suite of products, begin planning and implementing a strategy to migrate releases of:
 
 - The Office client installed on your computers to Microsoft 365 Apps for enterprise.
 - The Office servers installed on your servers to their equivalent services in Microsoft 365.
@@ -29,7 +29,7 @@ To maximize the business value of the Microsoft 365 Enterprise integrated suite 
 >Support for Windows 7 ended on *January 14, 2020*. For more information, see the [end-of-support details](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
 >
 
-As you accomplish these migrations over time, your organization comes closer to the vision of the [modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/). This secure and integrated environment can help you unlock teamwork and creativity in your organization. Microsoft 365 Enterprise enables and empowers you all along the way.
+As you accomplish these migrations over time, your organization comes closer to the vision of the [modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/). This secure and integrated environment can help you unlock teamwork and creativity in your organization. Microsoft 365 for Enterprise enables and empowers you all along the way.
 
 ## Migration for Office client products
 
@@ -39,7 +39,7 @@ Organizations both large and small often use a combination of older versions of 
 - Aren't optimized to use the Microsoft cloud technologies that help you digitally transform your business.
 - Don't provide the latest features.
 
-Microsoft 365 Enterprise includes Microsoft 365 Apps for enterprise. This version of the Office client products is available with a Microsoft 365 Enterprise license. It's installed and updated from the Microsoft cloud. Microsoft 365 Apps for enterprise includes security updates and the latest features. For more information, see [About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
+Microsoft 365 for Enterprise includes Microsoft 365 Apps for enterprise. This version of the Office client products is available with a Microsoft 365 for Enterprise license. It's installed and updated from the Microsoft cloud. Microsoft 365 Apps for enterprise includes security updates and the latest features. For more information, see [About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 ### Office 2007
 
@@ -67,7 +67,7 @@ Microsoft 365 Apps for enterprise automatically installs both security updates a
 
 ### Office 2013 and Office 2016
 
-The end-of-support roadmap for Office 2013 and Office 2016 hasn't yet been determined. In these versions, like Office 2010, you must still [install security updates](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5). This task might not scale well, depending on the size of your organization.
+See the [end-of-support roadmap for Office 2013](https://docs.microsoft.com/lifecycle/products/microsoft-office-2013). The end of support for Office 2016 hasn't yet been determined. In these versions, like Office 2010, you must still [install security updates](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5). This task might not scale well, depending on the size of your organization.
 
 Rather than keeping your computers current with the latest security updates for Office 2013 or Office 2016, or updating your computers from Office 2013 to Office 2016, consider taking the following steps:
 
@@ -86,7 +86,7 @@ Both large and small organizations often use a combination of older versions of 
 - Don't include new productivity applications, such as Microsoft Teams.
 - Don't include the latest security features, such as Exchange and Defender for Office 365.
 
-Microsoft 365 Enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are automatically updated for security. So your IT personnel save the time it takes to maintain and update on-premises servers. These services also offer new feature enhancements that aren't present in Office server software.
+Microsoft 365 for Enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are automatically updated for security. So your IT personnel save the time it takes to maintain and update on-premises servers. These services also offer new feature enhancements that aren't present in Office server software.
 
 Use the following resources for information about migrating users and data for specific Microsoft 365 workloads:
 
@@ -150,21 +150,21 @@ Here's a visual summary of the upgrade, migration, and move-to-cloud options for
 
 [![Image showing the options for the end of support for Office 2010 clients and servers and Windows 7.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-This one-page poster is a quick way to understand the paths you can take to manage the end of support for Office 2010 client and server products and Windows 7. The preferred paths are supported in Microsoft 365 Enterprise.
+This one-page poster is a quick way to understand the paths you can take to manage the end of support for Office 2010 client and server products and Windows 7. The preferred paths are supported in Microsoft 365 for Enterprise.
 
 You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) and print it in letter size, legal size, or tabloid (11 x 17) size.
 
 ## Transition your entire organization
 
-To get a better picture of how to move your entire organization to the products and services in Microsoft 365 Enterprise, download this transition poster:
+To get a better picture of how to move your entire organization to the products and services in Microsoft 365 for Enterprise, download this transition poster:
 
 [![Image showing the Transition to Microsoft 365 poster.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
-This two-page poster is a quick way to inventory your existing infrastructure. Use it to get guidance for moving to a product or service in Microsoft 365 Enterprise. It shows Windows and Office products and other infrastructure and security elements such as device management, identity and threat protection, and information and compliance protection.
+This two-page poster is a quick way to inventory your existing infrastructure. Use it to get guidance for moving to a product or service in Microsoft 365 for Enterprise. It shows Windows and Office products and other infrastructure and security elements such as device management, identity and threat protection, and information and compliance protection.
 
-## How Microsoft migrated to Microsoft 365 Enterprise
+## How Microsoft migrated to Microsoft 365 for Enterprise
 
-See how IT experts at Microsoft migrated the company to Microsoft 365 Enterprise:
+See how IT experts at Microsoft migrated the company to Microsoft 365 for Enterprise:
 
 - [Deploying and updating Microsoft 365 Apps for enterprise](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft migrates 150,000 mailboxes to Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
