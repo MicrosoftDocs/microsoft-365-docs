@@ -1,5 +1,5 @@
 ---
-title: "Get started with Microsoft 365 Endpoint data loss prevention (preview)"
+title: "Get started with Microsoft 365 Endpoint data loss prevention"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ search.appverid:
 description: "Set up Microsoft 365 Endpoint data loss prevention to monitor file activities and implement protective actions for those file to endpoints."
 ---
 
-# Get started with Endpoint data loss prevention (preview)
+# Get started with Endpoint data loss prevention
 
 Microsoft Endpoint data loss prevention (Endpoint DLP) is part of the Microsoft 365 data loss prevention (DLP) suite of features you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft’s DLP offerings, see [Overview of data loss prevention](data-loss-prevention-policies.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)
 
