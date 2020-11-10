@@ -27,11 +27,11 @@ To execute common eDiscovery tasks on encrypted content, eDiscovery managers wer
 To make it easier to manage encrypted content in the eDiscovery workflow, Microsoft 365 eDiscovery tools now incorporate decryption of encrypted files that are attached to email messages and sent in Exchange Online. Prior to this new capability, only the content of an email message protected by rights management (and not attached files) were decrypted. Now, if a file that's encrypted with a Microsoft encryption technology is attached to an email message that matches the search criteria, the encrypted file will be decrypted when the search results are prepared for review. This allows eDiscovery managers to view the content of encrypted email attachments when previewing search results, and review them once they have been added to a review set in Advanced eDiscovery.
 
 > [!NOTE]
-> Starting soon Microsoft 365 eDiscovery tools will support encrypted documents stored in SharePoint Online and OneDrive for Business.
+> Starting soon, Microsoft 365 eDiscovery tools will support encrypted documents stored in SharePoint Online and OneDrive for Business. This will include documents that are encrypted as a result of sensitivity labels applied to them.
 
 ## Supported encryption technologies
 
-Microsoft eDiscovery tools support items encrypted with Microsoft encryption technologies. These technologies include Office Message Encryption, Microsoft Information Protection (coming soon), and Azure Rights Management. For more information about Microsoft encryption technologies, see [Encryption](encryption.md). Content encrypted by third-party encryption technologies isn't supported. This includes no support when previewing or exporting content encrypted with non-Microsoft technologies.
+Microsoft eDiscovery tools support items encrypted with Microsoft encryption technologies. These technologies include Office Message Encryption and Azure Rights Management. For more information about Microsoft encryption technologies, see [Encryption](encryption.md). Content encrypted by third-party encryption technologies isn't supported. This includes no support when previewing or exporting content encrypted with non-Microsoft technologies.
 
 ## eDiscovery activities that support encrypted items
 
