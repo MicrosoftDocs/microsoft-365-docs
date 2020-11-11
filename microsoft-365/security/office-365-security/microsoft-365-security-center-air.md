@@ -25,7 +25,9 @@ ms.custom:
 
 # Changes in automated investigation and response capabilities (Microsoft Defender for Office 365)
 
-If you’ve been using [automated investigation and response ](office-365-air.md)(AIR) capabilities in Microsoft Defender for Office 365, you’re about to see some changes in the [new and improved Microsoft 365 security center](microsoft-365-security-center-getting-started.md). The security center brings together AIR capabilities in [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) together with [AIR in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, you’ll be able to view details about automated investigations and remediation actions across your email and devices in one place.
+If you’ve been using [automated investigation and response ](office-365-air.md)(AIR) capabilities in Microsoft Defender for Office 365, you’re about to see some changes in the [new and improved Microsoft 365 security center](microsoft-365-security-center-getting-started.md). 
+
+The security center brings together AIR capabilities in [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) together with [AIR in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email and devices in one place.
 
 > [!TIP]
 > The Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) replaces the following centers:
