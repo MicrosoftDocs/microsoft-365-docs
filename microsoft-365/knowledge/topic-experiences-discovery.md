@@ -32,6 +32,14 @@ You can manage topic discovery settings in the [Microsoft 365 admin center](http
 
 You can change the SharePoint sites in your organization that will be crawled for topics.
 
+If you want to include or exclude a specific list of sites, you can use the following .csv template:
+
+``` csv
+Site name,URL
+```
+
+To choose sites for topic discovery
+
 1. On the **Topic discovery** tab, under **Select SharePoint topic sources**, select **Edit**.
 2. On the **Select SharePoint topic sources** page, select which SharePoint sites will be crawled as sources for your topics during discovery. This includes:
     - **All sites**: All SharePoint sites in your tenant. This captures current and future sites.
@@ -56,6 +64,12 @@ You can exclude topics from discovery.
 
 ### Working with the .csv template
 
+You can copy the csv template below:
+
+``` csv
+Name (required),Expansion,MatchType- Exact/Partial (required)
+```
+
 In the CSV template, enter the following information about the topics you want to exclude:
 
 - **Name**: Type the name of the topic you want to exclude. There are two ways to do this:
@@ -64,17 +78,7 @@ In the CSV template, enter the following information about the topics you want t
 - **Stands for (optional)**: If you want to exclude an acronym, type the words the acronym stands for.
 - **MatchType-Exact/Partial**: Type whether the name you entered was an *exact* or *partial* match type.
 
-![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
-
-## Control if AI-suggested topics are visible to users
-
-You can control if AI-suggested topics are visible to users in highlights and search results before they are approved by a knowledge manager. (By default, these topics are visible.)
-
-1. On the **Topic discovery** tab, click **Advanced settings**.
-2. Choose if you want to include suggested topics.
-3. Click **Save**.
-
-![Screenshot of AI-suggested topics settings](../media/topics-suggested-topics-visible.png)
+    ![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
 
 ## See also
 
