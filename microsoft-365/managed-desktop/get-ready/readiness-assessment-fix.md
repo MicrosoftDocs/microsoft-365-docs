@@ -289,7 +289,6 @@ Users with certain security roles must have those assigned in Microsoft Defender
 
 If you have any of these roles assigned in your Azure AD organization, make sure they also have these roles assigned in Microsoft Defender for Endpoint. Otherwise, administrators with these roles won't be able to access the Admin portal.
 
-- Security Reader
 - Security Operator
 - Global Reader
 
@@ -323,11 +322,11 @@ Microsoft Managed Desktop users will not have local administrator privileges on 
 
 ## Microsoft 365 Apps for enterprise
 
-### OneDrive for Business
+### OneDrive
 
 The **Allow syncing only on PCs joined to specific domains** setting will conflict with Microsoft Managed Desktop.
 
 **Advisory**
 
-You're using the **Allow syncing only on PCs joined to specific domains** setting. This setting won't work with Microsoft Managed Desktop. Disable this setting, and instead set up OneDrive for Business to use a conditional access policy. See [Plan a Conditional Access deployment](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) for help.
+You're using the **Allow syncing only on PCs joined to specific domains** setting. This setting won't work with Microsoft Managed Desktop. Disable this setting, and instead set up OneDrive to use a conditional access policy. See [Plan a Conditional Access deployment](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) for help.
 
