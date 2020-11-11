@@ -13,26 +13,20 @@ description: "Learn how to plan for topics in Microsoft 365"
 
 # Plan topics in Microsoft 365
 
-It is important to plan the best way to set up and configure topics in your environment.
-
-Consider the following before you begin the procedures in this article:
+It is important to plan the best way to set up and configure topic experiences in your environment. In this article we'll examine these planning decisions:
 
 - Which SharePoint sites you want to crawl for topics.
+- Which topics, if any, you want to exclude from topic experiences
 - Which users you want to make topics visible to.
 - Which users you want to give permissions to manage topics in the topic center.
 - Which users you want to give permissions to create or edit topics in the topic center.
 - What name you want to give your topic center.
 
-> [!Note]
-> You may find it useful to create security groups to assign your users the permissions needed to view topics, manage topic, and create and edit topics.
-
-You can also [make changes to your selected settings anytime after setup](topic-experiences-discovery.md) by using the topics settings in the Microsoft 365 admin center.
-
 ## Requirements
 
 You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up topic experiences.
 
-All users who are going to use topic experiences require a **Topic Experiences** license along with the associated **Graph Connectors Search with Index** and **Topic Experiences** app licenses.
+All users who are going to use topic experiences require a **Topic Experiences** license along with the associated **Graph Connectors Search with Index** and **Topic Experiences** app licenses. Assigning licenses is covered in [Set up topic experiences](set-up-topic-experiences.md).
 
 ## Topic discovery
 
@@ -53,13 +47,13 @@ You can copy the .csv template below:
 Site name,URL
 ```
 
-We don't recommend choosing **No sites** because it prevents topics from being automatically created or updates. However, you can choose this option if you want to set up topic experiences and then add sites later.
+We don't recommend choosing **No sites** because it prevents topics from being automatically created or updated. However, you can choose this option if you want to set up topic experiences and then add sites later.
 
 ## User permissions
 
 The user permissions that you specify determine which people in your organization interact with topics and what they can do.
 
-*Knowledge managers*
+*Manage topics*
 
 Knowledge managers oversee the quality of information, how its structured, and other best practices in your organization. They can confirm and reject topics.
 
@@ -67,9 +61,11 @@ You can choose to have everyone in your organization be a knowledge manager, or 
 
 If you don't want everyone in your organization to be able to manage topics, create a security group that contains the people who you want to be knowledge managers. You can specify this security group during the setup process.
 
-*Topic contributors*
+*Create and edit topics*
 
-Topic contributors are the champions and subject matter experts in your organization. They can create and edit topics. We recommend that you choose everyone in your organization to be topic contributors because topic experiences work best when all users can share information.
+Topic contributors are the champions and subject matter experts in your organization. They can create and edit topics. 
+
+We recommend that you allow everyone in your organization to create and edit topics because topic experiences work best when all users can share information.
 
 If you want to limit creating and editing topics to specific people or groups, create a security group for them and specify it during the setup process.
 
@@ -109,31 +105,9 @@ You can copy the csv template below:
 Name (required),Expansion,MatchType- Exact/Partial (required)
 ```
 
-
-
-You can use this option to prevent the Knowledge Network from discovering sensitive information in your organization. These topics won’t be visible to anyone, including knowledge managers.
-
-If you need to exclude topics, after selecting **Exclude topics by name**, select download the .csv template and update it with the list of topics that you want to exclude from your discovery results.
-In the CSV template, enter the following information about the topics you want to exclude:
-
-
-After you've completed and saved your .csv file, select **Browse** to locate and select it.
-
-
 ## Administration
 
-: General controls
-
-Create a Content center
-Create a knowledge center/ Knowledge center details
-Controls for how to roll-out the knowledge graph and functionality
-Deactivate the Topic experiences
-
-On the **Create Topic  Center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed.  In the **Site name** box, type a name for your Topic center. You can optionally type a short description in the **Site description** box. 
-
-> [!Note]
-> After setup, an admin can [make changes to your selected knowledge management settings](topic-experiences-discovery.md) any time by returning to this page.
-
+When you set up topic experiences, a topic center is automatically created. Think about what you want to name the topic center and what you want the URL to be. You can set both the name and URL as part of the setup process, and you can change the name (but not URL) later in the Microsoft 365 admin center.
 
 ## Setup checklist
 
@@ -149,4 +123,12 @@ When you set up topic experiences, you'll need the following items as you go thr
 
 ## See also
 
+[Set up topic experiences](set-up-topic-experiences.md)
 
+[Manage topic discovery in Microsoft 365](topic-experiences-discovery.md)
+
+[Manage topic visibility in Microsoft 365](topic-experiences-knowledge-rules.md)
+
+[Manage topic permissions in Microsoft 365](topic-experiences-user-permissions.md)
+
+[Change the name of the topic center in Microsoft 365](topic-experiences-administration.md)
