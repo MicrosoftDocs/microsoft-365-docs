@@ -95,12 +95,15 @@ The .csv file must contain the following parameters:
 - **Stands for (optional)**: (Also known as *expansion*) If you want to exclude an acronym, type the words the acronym stands for.
 - **MatchType-Exact/Partial**: Type whether the name you entered was an *exact* or *partial* match type.
 
-![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
+    ![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
+
+You can copy the csv template below:
+
+``` csv
+Name (required),Expansion,MatchType- Exact/Partial (required)
+```
 
 
-In the **Exclude topics by name** section, you can add names of topics you want to exclude from the discovered results. Use this setting to prevent sensitive topics from being included as topics. The options are:
-a. **Don't exclude any topics** 
-b. **Exclude topics by name**:  If you have topics you don't want shown to users.
 
 You can use this option to prevent the Knowledge Network from discovering sensitive information in your organization. These topics won’t be visible to anyone, including knowledge managers.
 
