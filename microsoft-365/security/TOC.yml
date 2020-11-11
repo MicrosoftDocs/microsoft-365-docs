@@ -77,8 +77,6 @@
           items:
             - name: Turn on Microsoft Threat Protection
               href: mtp/mtp-enable.md
-            - name: Deploy supported services
-              href: mtp/deploy-supported-services.md
             - name: Run your pilot project in production
               items: 
                 - name: Pilot overview
@@ -91,6 +89,9 @@
                   href: mtp/mtp-pilot-simulate.md
                 - name: Close and summarize
                   href: mtp/mtp-pilot-close.md
+            - name: Deploy supported services
+              href: mtp/deploy-supported-services.md
+            
         - name: How-to guides
           items: 
             - name: Create a trial lab or pilot environment
