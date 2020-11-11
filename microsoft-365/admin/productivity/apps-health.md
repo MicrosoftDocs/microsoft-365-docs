@@ -23,7 +23,7 @@ description: "Details of the Microsoft 365 apps health - technology experiences 
 
 # Microsoft 365 apps health – Technology experiences
 
-Productivity Score helps organizations transform how work gets done with metrics about how people use Microsoft 365 apps and the supporting technology experiences. The score reflects your organization&#39;s performance for people and technology experience categories and compares your score with organizations like yours. The Teamwork category is part of the measurements that falls under people experiences. See the [Productivity Score overview](productivity-score.md) to learn more.
+Productivity Score helps organizations transform how work gets done with metrics about how people use Microsoft 365 apps and the supporting technology experiences. The score reflects your organization&#39;s performance for people and technology experience categories and compares your score with organizations like yours. The apps health category is part of the measurements that falls under people experiences. See the [Productivity Score overview](productivity-score.md) to learn more.
 
 ## Why your organization&#39;s Microsoft 365 apps health score matters
 

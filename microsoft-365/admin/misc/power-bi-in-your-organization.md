@@ -24,7 +24,7 @@ description: "Learn about Power BI and how users in your organization can use th
 # Power BI in your organization
 
 This page describes how users in your organization can use Power BI and how you can control how your organization acquires this service.
-    
+
 ## What is Power BI?
 
 Microsoft Power BI enables users to visualize data, share discoveries, and collaborate in intuitive new ways. To learn more, see the [Power BI Web site](https://powerbi.microsoft.com/en-us/).
@@ -43,20 +43,20 @@ Additionally, individual users in your organization may be able to sign up for P
 
 There are three scenarios that might apply to users in your organization:
   
-### Scenario 1: Your organization already has an existing Microsoft 365 environment and the user signing up for Power BI already has an Microsoft 365 account.
+### Scenario 1: Your organization already has an existing Microsoft 365 environment and the user signing up for Power BI already has a Microsoft 365 account.
 
 In this scenario, if a user already has a work or school account in the tenant (for example, contoso.com) but does not yet have Power BI, Microsoft will simply activate the plan for that account, and the user will automatically be notified of how to use the Power BI service.
   
-### Scenario 2: Your organization has an existing Microsoft 365 environment and the user signing up for Power BI doesn't have an Microsoft 365 account.
+### Scenario 2: Your organization has an existing Microsoft 365 environment and the user signing up for Power BI doesn't have a Microsoft 365 account.
 
-In this scenario, the user has an email address in your organization's domain (for example, contoso.com) but does not yet have an Microsoft 365 account. In this case, the user can sign up for Power BI and will automatically be given an account. This lets the user access the Power BI service. For example, if an employee named Nancy uses her work email address (for example, Nancy@contoso.com) to sign up, Microsoft will automatically add Nancy as a user in the Contoso Microsoft 365 environment and activate Power BI for that account.
+In this scenario, the user has an email address in your organization's domain (for example, contoso.com) but does not yet have a Microsoft 365 account. In this case, the user can sign up for Power BI and will automatically be given an account. This lets the user access the Power BI service. For example, if an employee named Nancy uses her work email address (for example, Nancy@contoso.com) to sign up, Microsoft will automatically add Nancy as a user in the Contoso Microsoft 365 environment and activate Power BI for that account.
   
 ### Scenario 3: Your organization does not have a Microsoft 365 environment connected to your email domain.
 
-There are no administrative actions your organization needs to take to take advantage of Power BI.
+There are no administrative actions your organization needs to take advantage of Power BI.
   
 > [!IMPORTANT]
-> If your organization has multiple email domains and you prefer all email address extensions to be in the same tenant, before any users create your primary tenant, add all email address domains to that tenant before any users create your primary tenant. There is no automated mechanism to move users across tenants after they have been created. For more information on this process, see [If I have multiple domains, can I control the tenant that users are added to?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) later in this article and [Add a domain to Office 365](../setup/add-domain.md) online. 
+> If your organization has multiple email domains and you prefer all email address extensions to be in the same tenant, before any users create your primary tenant, add all email address domains to that tenant before any users create your primary tenant. There is no automated mechanism to move users across tenants after they have been created. For more information on this process, see [If I have multiple domains, can I control the tenant that users are added to?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) later in this article and [Add a domain to Office 365](../setup/add-domain.md) online.
   
 ## How will this change the way I manage identities for users in my organization today?
 
@@ -66,20 +66,19 @@ If your organization already has an existing Microsoft 365 environment but not a
   
 If you are managing your directory on-premises, and use Active Directory Federation Services (AD FS), Microsoft will not add users to your tenant, and users attempting to join your tenant will receive a message to contact their organization's admin.
   
-If your organization does not have an Microsoft 365 environment connected to your email domain, there will be no change in how you manage identity. Users will be added to a new, cloud-only user directory, and you will have the option to elect to take over as the tenant admin and manage them.
+If your organization does not have a Microsoft 365 environment connected to your email domain, there will be no change in how you manage identity. Users will be added to a new, cloud-only user directory, and you will have the option to elect to take over as the tenant admin and manage them.
   
 ## What is the process to manage a tenant created by Microsoft for my users?
 
 If a tenant was created by Microsoft, you can claim and manage that tenant by following these steps:
   
-1. Join the tenant by [signing up for Power BI](https://go.microsoft.com/fwlink/?LinkId=522448) using an email address domain that matches the tenant domain you want to manage. For example, if Microsoft created the contoso.com tenant, you will need to join the tenant with an email address ending with @contoso.com. 
-    
-2. Claim admin control by verifying domain ownership: once you are in the tenant, you can promote yourself to the admin role by verifying domain ownership. To do so, follow these steps:
- 
+1. Join the tenant by [signing up for Power BI](https://go.microsoft.com/fwlink/?LinkId=522448) using an email address domain that matches the tenant domain you want to manage. For example, if Microsoft created the contoso.com tenant, you will need to join the tenant with an email address ending with @contoso.com.
+
+1. Claim admin control by verifying domain ownership: once you are in the tenant, you can promote yourself to the admin role by verifying domain ownership. To do so, follow these steps:
+
 ::: moniker range="o365-worldwide"
-   
+
 3. Go to [https://admin.microsoft.com](https://admin.microsoft.com).
- 
 
 ::: moniker-end
 
@@ -95,15 +94,14 @@ If a tenant was created by Microsoft, you can claim and manage that tenant by fo
 
 ::: moniker-end
 
-    
 4. Select the app launcher icon in the upper-left and choose **Admin**.
-    
+
     ![App launcher with the Admin app highlighted](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. Read the instructions on the **Become the admin** page and then select **Yes, I want to be the admin**.
-    
+
     > [!NOTE]
-    >  If this option doesn't appear, there is already an administrator in place. 
+    >  If this option doesn't appear, there is already an administrator in place.
   
 ## If I have multiple domains, can I control the tenant that users are added to?
 
@@ -112,31 +110,31 @@ If you do nothing, a tenant will be created for each user email domain and subdo
 If you want all users to be in the same tenant regardless of their email address extensions:
   
 - Create a target tenant ahead of time or use an existing tenant, and add all the existing domains and subdomains that you want consolidated within that tenant. Then all the users with email addresses ending in those domains and subdomains will automatically join the target tenant when they sign up.
-    
+
 > [!IMPORTANT]
-> There is no supported automated mechanism to move users across tenants once they have been created. To learn about adding domains to a single Microsoft 365 tenant, see [Add a domain to Office 365](../setup/add-domain.md). 
-  
+> There is no supported automated mechanism to move users across tenants once they have been created. To learn about adding domains to a single Microsoft 365 tenant, see [Add a domain to Office 365](../setup/add-domain.md).
+
 > [!IMPORTANT]
-> For additional information and guidance on managing tenants, see [What is Power BI administration?](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization). 
+> For more information and guidance on managing tenants, see [What is Power BI administration?](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization).
   
 ## How can I prevent users from joining my existing tenant?
 
-There are steps you can take as an admin to prevent users from joining your existing tenant. If you do block this, users' attempts to sign in will fail and they will be directed to contact their organization's admin. You do not need to repeat this process if you have already disabled automatic license distribution before (e.g. Office 365 Education for Students, Faculty and Staff).
+There are steps you can take as an admin to prevent users from joining your existing tenant. If you block users from joining the tenant, users' attempts to sign in will fail and they will be directed to contact their organization's admin. You do not need to repeat this process if you have already disabled automatic license distribution before (for example, Office 365 Education for Students, Faculty, and Staff).
   
 These steps require the use of Windows PowerShell. To get started with Windows PowerShell, see the [PowerShell getting started guide](https://go.microsoft.com/fwlink/p/?LinkID=286814).
   
 To perform the following steps, you must install the latest 64-bit version of the [Azure Active Directory V2 PowerShell Module](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5).
   
-After you select the link, select **Run** to run the installer package. 
+After you select the link, select **Run** to run the installer package.
   
- **Disable automatic tenant join**: Use this Windows PowerShell command to prevent new users from joining a managed tenant:
+**Disable automatic tenant join**: Use this Windows PowerShell command to prevent new users from joining a managed tenant:
   
 To disable automatic tenant join for new users:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $false`
   
 To enable automatic tenant join for new users:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
 > [!NOTE]
-> This blocking prevents new users in your organization from signing up for Power BI. Users that sign up for Power BI prior to disabling new signups for your organization will still retain their licenses. See the [How do I remove Power BI for users that already signed up?](#how-do-i-remove-power-bi-for-users-that-already-signed-up) for instructions on how you can remove access to Power BI for users that had previously signed up for the service. 
+> This blocking prevents new users in your organization from signing up for Power BI. Users that sign up for Power BI prior to disabling new signups for your organization will still retain their licenses. See the [How do I remove Power BI for users that already signed up?](#how-do-i-remove-power-bi-for-users-that-already-signed-up) for instructions on how you can remove access to Power BI for users that had previously signed up for the service.
   
 ## How can I allow users to join my existing tenant?
 
@@ -148,14 +146,14 @@ Use the following PowerShell script:  `Get-MsolCompanyInformation | fl allow*`
   
 ## How can I prevent my existing users from starting to use Power BI?
 
- **Disable automatic license distribution:** Use this Windows PowerShell script to disable automatic license distributions for existing users. You do not need to repeat this process if you have already disabled automatic license distribution before (e.g. Office 365 Education for Students, Faculty and Staff). 
+**Disable automatic license distribution:** Use this Windows PowerShell script to disable automatic license distributions for existing users. You do not need to repeat this process if you have already disabled automatic license distribution before (for example, Office 365 Education for Students, Faculty, and Staff).
   
 To disable automatic license distribution for existing users:  `Set-MsolCompanySettings -AllowAdHocSubscriptions $false`
   
 To enable automatic license distribution for existing users:  `Set-MsolCompanySettings -AllowAdHocSubscriptions $true`
   
 > [!NOTE]
-> The *AllowAdHocSubscriptions* flag is used to control several user capabilities in your organization, including the ability for users to sign up for the Azure Rights Management Service. Changing this flag will affect all of these capabilities. 
+> The *AllowAdHocSubscriptions* flag is used to control several user capabilities in your organization, including the ability for users to sign up for the Azure Rights Management Service. Changing this flag will affect all of these capabilities.
   
 ## How can I allow my existing users to sign up for Power BI?
 
@@ -163,31 +161,30 @@ To allow your existing users to sign up for Power BI, run the opposite command a
   
 ## How do I remove Power BI for users that already signed up?
 
-If a user signed up for Power BI but you no longer want them to have access to Power BI, you can remove the Power BI license for that user.
+If a user signed up for Power BI, but you no longer want them to have access to Power BI, you can remove the Power BI license for that user.
 
 ::: moniker range="o365-worldwide"
   
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-    
+
 2. Find the user you want to remove the license for, then select their name.
-    
+
 3. On the **Licenses and Apps** tab, clear the **Microsoft Power BI** check box.
-    
+
 4. Select **Save changes**.
 
 ::: moniker-end
 
-  
 ::: moniker range="o365-germany"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 2. Find the user you want to remove the license for, then select their name.
-    
-3. Next to **Product licenses**, select **Edit**. 
-    
+
+3. Next to **Product licenses**, select **Edit**.
+
 4. Toggle off the **Microsoft Power BI** option.
-    
+
 5. Select **Save**.
 
 ::: moniker-end
@@ -197,15 +194,14 @@ If a user signed up for Power BI but you no longer want them to have access to P
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
 2. Find the user you want to remove the license for, then select their name.
-    
-3. Next to **Product licenses**, select **Edit**. 
-    
+
+3. Next to **Product licenses**, select **Edit**.
+
 4. Toggle off the **Microsoft Power BI** option.
-    
+
 5. Select **Save**.
 
-::: moniker-end 
-
+::: moniker-end
 
 ## How do I know when new users have joined my tenant?
 

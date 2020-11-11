@@ -20,7 +20,7 @@ search.appverid:
 description: "Learn how to configure data loss prevention (DLP) policies to use Microsoft 365 Endpoint data loss prevention (EPDLP) locations."
 ---
 
-# Using Endpoint data loss prevention (preview)
+# Using Endpoint data loss prevention
 
 This article walks you through three scenarios where you create and modify a DLP policy that uses devices as a location.
 
@@ -199,7 +199,7 @@ These scenarios require that you already have devices onboarded and reporting in
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)

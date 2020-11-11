@@ -54,7 +54,7 @@ After you sign up for the service and add your domain, spam filtering is automat
 
 For more information, see the following topics:
 
-[Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md)
+[Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md)
 
 [Configure connection filtering in EOP](configure-the-connection-filter-policy.md)
 
