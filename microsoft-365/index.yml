@@ -265,6 +265,8 @@ additionalContent:
               url: /Kaizala
             - text: Microsoft Stream
               url: /stream/
+            - text: SharePoint Syntex
+              url: contentunderstanding/index.md
             - text: Yammer
               url: /yammer/yammer-landing-page
         # Card
