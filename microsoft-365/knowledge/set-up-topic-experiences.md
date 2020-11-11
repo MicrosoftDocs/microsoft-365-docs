@@ -17,11 +17,7 @@ You can use the Microsoft 365 admin center to set up and configure [Topic experi
 
 It is important to plan the best way to set up and configure topics in your environment. Be sure to read [Plan topic experiences](plan-topic-experiences.md) before you begin the procedures in this article.
 
-You can also [make changes to your selected settings anytime after setup](topic-experiences-discovery.md) by using the topics settings in the Microsoft 365 admin center.
-
-## Requirements
-
-You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Organizational knowledge tasks.
+You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up topic experiences.
 
 ## Set up topic experiences
 

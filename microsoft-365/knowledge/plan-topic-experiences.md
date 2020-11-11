@@ -63,7 +63,7 @@ If you don't want everyone in your organization to be able to manage topics, cre
 
 *Topic contributors*
 
-Topic contributors can create and edit topics. We recommend that you choose everyone in your organization to be topic contributors because topic experiences work best when all users can share information.
+Topic contributors are the champions and subject matter experts in your organization. They can create and edit topics. We recommend that you choose everyone in your organization to be topic contributors because topic experiences work best when all users can share information.
 
 If you want to limit creating and editing topics to specific people or groups, create a security group for them and specify it during the setup process.
 
@@ -83,15 +83,19 @@ We recommend **Everyone in my organization**, but if you're doing a pilot you ma
 
 ## Knowledge rules
 
-: governance, compliance, and other business rules. Additional controls on what data is discovered in your organization
+As an administrator, you can exclude certain topics from topic experiences. This is useful if you want to keep sensitive data from appearing in topics. While knowledge managers can exclude topics in the topic center, topics excluded by the administrator are not even visible to knowledge managers.
 
-Exclude topics by name
-Limit discovery of topics based on sensitivity label of resources (e.g. confidential, general, internal, external)
-Allow users to give free form feedback on topics
-Notifications for updates to a topic
-Control where a topic can be shown
-Include topic answer in Search results
+If you want to exclude topics at the administrator level, you must add them to a .csv file and upload the file. You can do this during setup or later.
 
+The .csv file must contain the following parameters:
+
+- **Name**: Type the name of the topic you want to exclude. There are two ways to do this:
+- Exact match: You can include the exact name or acronym (for example, *Contoso* or *ATL*).
+- Partial match: You can exclude all topics that have a specific word in it.  For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.
+- **Stands for (optional)**: (Also known as *expansion*) If you want to exclude an acronym, type the words the acronym stands for.
+- **MatchType-Exact/Partial**: Type whether the name you entered was an *exact* or *partial* match type.
+
+![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
 
 
 In the **Exclude topics by name** section, you can add names of topics you want to exclude from the discovered results. Use this setting to prevent sensitive topics from being included as topics. The options are:
@@ -101,16 +105,8 @@ b. **Exclude topics by name**:  If you have topics you don't want shown to users
 You can use this option to prevent the Knowledge Network from discovering sensitive information in your organization. These topics won’t be visible to anyone, including knowledge managers.
 
 If you need to exclude topics, after selecting **Exclude topics by name**, select download the .csv template and update it with the list of topics that you want to exclude from your discovery results.
-
-![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
-
 In the CSV template, enter the following information about the topics you want to exclude:
 
-- **Name**: Type the name of the topic you want to exclude. There are two ways to do this:
-- Exact match: You can include the exact name or acronym (for example, *Contoso* or *ATL*).
-- Partial match: You can exclude all topics that have a specific word in it.  For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.
-- **Stands for (optional)**: If you want to exclude an acronym, type the words the acronym stands for.
-- **MatchType-Exact/Partial**: Type whether the name you entered was an *exact* or *partial* match type.
 
 After you've completed and saved your .csv file, select **Browse** to locate and select it.
 
