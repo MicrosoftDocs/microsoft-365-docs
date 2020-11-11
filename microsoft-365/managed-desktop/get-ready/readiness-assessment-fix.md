@@ -211,7 +211,7 @@ Review apps you want your Microsoft Managed Desktop users to have.
 
 **Advisory**
 
-You should prepare an inventory of the apps that you want your Microsoft Managed Desktop users to have. Since these these apps must be deployed by Intune, evaluate re-using existing Intune apps. Consider using Company Portal (see [Install Intune Company Portal on devices] (https://docs.microsoft.com/en-us/microsoft-365/managed-desktop/get-started/company-portal?view=o365-worldwide) and ESP (in public preview for Microsoft Managed Desktop; see [First-run experience with Autopilot and the Enrollment Status Page] (https://docs.microsoft.com/en-us/microsoft-365/managed-desktop/get-started/esp-first-run?view=o365-worldwide)) as ways to distribute apps to your users. For more information, see [Apps in Microsoft Managed Desktop](apps.md).
+You should prepare an inventory of the apps that you want your Microsoft Managed Desktop users to have. Since these these apps must be deployed by Intune, evaluate re-using existing Intune apps. Consider using Company Portal (see [Install Intune Company Portal on devices](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal?view=o365-worldwide) and Enrollment Status Page (ESP) to distribute apps to your users. For more information, see [Apps in Microsoft Managed Desktop](apps.md) and [First-run experience with Autopilot and the Enrollment Status Page](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
 
 You can ask your Microsoft account representative for a query in Microsoft Endpoint Configuration Manager to identify those apps that are ready to migrate to Intune or need adjustment.
 
