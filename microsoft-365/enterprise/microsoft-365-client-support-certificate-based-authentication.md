@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: In this article, find details about Microsoft 365 Client App support for certificate-based authentication..
+description: In this article, find details about Microsoft 365 Client App support for certificate-based authentication.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -24,11 +24,10 @@ ms.custom: seo-marvel-apr2020
 
 Modern authentication is an umbrella term for a combination of authentication and authorization methods. These include:
 
-- Authentication methods: Multi-factor Authentication; Client Certificate-based authentication.
+- **Authentication methods**: Multi-factor Authentication; Client Certificate-based authentication.
+- **Authorization methods**: Microsoft's implementation of Open Authorization (OAuth).
 
-- Authorization methods: Microsoft's implementation of Open Authorization (OAuth).
-
-Modern authentication is enabled through the use of an authentication library, like ADAL or MSAL. Modern authentication is what clients use to authenticate and authorize access to Microsoft 365 resources. Modern authentication leverages OAuth and provides a secure mechanism for clients to access Microsoft 365 services, without requiring access to user credentials. At sign in, the user authenticates directly with Azure Active Directory and receives an access/refresh token pair in return. The access token grants the client access to the appropriate resources in the Microsoft 365 tenant. A refresh token is used to obtain a new access or refresh token pair when the current access token expires.
+Modern authentication is enabled through the use of an authentication library, like Active Directory Authentication Library (ADAL) or Microsoft Authentication Library (MSAL). Modern authentication is what clients use to authenticate and authorize access to Microsoft 365 resources. Modern authentication leverages OAuth and provides a secure mechanism for clients to access Microsoft 365 services, without requiring access to user credentials. At sign-in, the user authenticates directly with Azure Active Directory and receives an access/refresh token pair in return. The access token grants the client access to the appropriate resources in the Microsoft 365 tenant. A refresh token is used to obtain a new access or refresh token pair when the current access token expires.
 
 Modern authentication supports different authentication mechanisms, like certificate-based authentication. Clients on Windows, Android, or iOS devices can use certificate-based authentication (CBA) to authenticate to Azure Active Directory using a client certificate on the device. Instead of a typical username/password, the certificate is used to obtain an access/refresh token pair from Azure Active Directory.
 
