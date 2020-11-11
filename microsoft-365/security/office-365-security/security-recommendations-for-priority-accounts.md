@@ -53,6 +53,9 @@ If you're not using Azure AD to block legacy authentication protocols, you can u
 
 If you're not using any of the previously described methods, you can [disable POP3 or IMAP4 access](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access) on individual mailboxes. You can can [disable authenticated SMTP](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission) at the organizational level and enable it on specific mailboxes that still require it.
 
+> [!NOTE]
+> Basic authentication is in the process of being deprecated in Exchange Online for Exchange Web Services (EWS), Exchange ActiveSync, POP3, IMAP4, and remote PowerShell. For details, see this [blog post](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/).
+
 ## Use the Strict preset security policies for HVEs in Micro
 
 For HVEs, we recommend applying the Strict profile in preset security policies.
