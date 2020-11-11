@@ -91,10 +91,14 @@ Depending on your subscription, here are the available reports.
   
 - [Email apps usage](email-apps-usage.md)
 
-- [Forms activity](forms-activity.md)
+- [Forms activity](forms-activity-ww.md)
 
-- [Forms Pro activity](forms-pro-activity.md)
+- [Forms activity for US Government](forms-activity.md)
+
+- [Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)
   
+- [Dynamics 365 Customer Voice activity for US Government](forms-pro-activity.md)
+
 - [Microsoft 365 groups](office-365-groups.md)
   
 - [OneDrive for Business user activity](onedrive-for-business-activity-ww.md)
