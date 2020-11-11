@@ -48,7 +48,7 @@ The latest versions of the following clients and platforms support certificate-b
 | Company portal | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A |
 | Cortana | Planned | Planned | N/A | ![Supported](../media/check-mark.png) | N/A |
 | Delve | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |
-| Edge | ![Supported](../media/check-mark.png)* | ![Supported](../media/check-mark.png)* | N/A | N/A | ![Supported](../media/check-mark.png) |
+| Edge<sup>1</sup> | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | ![Supported](../media/check-mark.png) |
 | Excel | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |
 | Exchange Online Admin | N/A | N/A | N/A | N/A | ![Supported](../media/check-mark.png) |
 | Forms | N/A | N/A | N/A | N/A | N/A |
@@ -82,12 +82,8 @@ The latest versions of the following clients and platforms support certificate-b
 | Workplace analysis | N/A | N/A | N/A | N/A | N/A |
 | Yammer | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | Planned | N/A | Planned |
 
-> [!IMPORTANT]
-> Edge for iOS and Android supports certificate-based authentication during account add flows. Edge for iOS and Android does not support certificate-based authentication when performing authentication against web sites, which are typically intranet sites. In this scenario, a user navigates to a web site (usually on the intranet) where the web site requires the user to authenticate via a certificate. This does not involve modern authentication at all and does not leverage a Microsoft authentication library. This is due to a limitation with iOS: iOS prevents third-party apps from accessing the system keychain where the certificates are stored (only Apple apps and the [Safari webview controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) can access the system keychain).
-
- 
-
-As Edge relies on webkit, Edge is unable to access the system keychain and present the user with cert choice. THis, unfortunately, is by design due to Apple's architecture.
+>[!NOTE]
+><sup>1</sup> Edge for iOS and Android supports certificate-based authentication during account add flows. Edge for iOS and Android does not support certificate-based authentication when performing authentication against web sites, which are typically intranet sites. <br><br>  In this scenario, a user navigates to a web site (usually on the intranet) where the web site requires the user to authenticate via a certificate. This does not involve modern authentication at all and does not leverage a Microsoft authentication library. This is due to a limitation with iOS: iOS prevents third-party apps from accessing the system keychain where the certificates are stored (only Apple apps and the [Safari webview controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) can access the system keychain). <br><br> As Edge relies on webkit, Edge is unable to access the system keychain and present the user with cert choice. This, unfortunately, is by design due to Apple's architecture.
 
 ## Supported PowerShell modules
 
