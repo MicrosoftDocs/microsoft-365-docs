@@ -13,7 +13,7 @@ ms.topic: article
 
 # Fix issues found by the readiness assessment tool
 
-For each check, the tool will report one of three possible results:
+For each check, the tool will report one of four possible results:
 
 
 |Result  |Meaning  |
@@ -21,6 +21,7 @@ For each check, the tool will report one of three possible results:
 |Ready     | No action is required before completing enrollment.        |
 |Advisory    | Follow the steps in the tool or this article for the best experience with enrollment and for users. You *can* complete enrollment, but you must fix these issues before you deploy your first device.        |
 |Not ready | *Enrollment will fail if you don't fix these issues.* Follow the steps in the tool or this article to resolve them.        |
+|Error | The Azure Active Director (AD) role you're using doesn't have sufficient permission to run this check. |
 
 ## Microsoft Intune settings
 
@@ -69,6 +70,16 @@ You have at least one conditional access policy that targets all users. Reset th
 
 Make sure that any conditional access policies you have exclude the **Modern Workplace Service Accounts** Azure AD group. For steps, see [Adjust conditional access](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access). The **Modern Workplace Service Accounts** Azure AD group is a dynamic group that we create for the service when you enroll. You'll have to come back to exclude this group after enrollment. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
+**Error**
+
+The Intune Administrator role doesn't have sufficient permissions for this check. You'll also need any of these Azure AD roles assigned to run this check:
+
+- Security Reader
+- Security Administrator
+- Conditional Access Administrator
+- Global Reader
+- Devices Administrator
+
 
 ### Device Compliance policies
 
@@ -113,7 +124,7 @@ You currently have the Enrollment Status Page (ESP) enabled. If you are particip
 
 **Not ready**
 
-You have the ESP default profile set to **Show app and profile configuration progress**. Disable this setting by following the steps in [Set up the Enrollment Status Page](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
+You have the ESP default profile set to **Show app and profile configuration progress**. Disable this setting or make sure that assignments to any Azure AD group do not include Microsoft Managed Desktop devices by following the steps in [Set up the Enrollment Status Page](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
 
 **Advisory**
 
@@ -123,9 +134,9 @@ Make sure that any profiles that have the **Show app and profile configuration p
 
 Windows 10 devices in your Azure AD organization must be automatically enrolled in Intune.
 
-**Not ready**
+**Advisory**
 
-Users in your Azure AD organization aren't automatically enrolled in Microsoft Intune. Change the MDM User scope to **Some** or **All**. If you choose. Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups**.
+Make sure the MDM User scope is set to **Some** or **All**, not **None**. If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups**.
 
 
 ### Microsoft Store for Business
@@ -149,6 +160,15 @@ You have some multi-factor authentication (MFA) policies set as "required" for c
 
 Make sure that any conditional access policies that require MFA exclude the **Modern Workplace -All** Azure AD group. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). The **Modern Workplace -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
 
+**Error**
+
+The Intune Administrator role doesn't have sufficient permissions for this check. You'll also need any of these Azure AD roles assigned to run this check:
+
+- Security Reader
+- Security Administrator
+- Conditional Access Administrator
+- Global Reader
+- Devices Administrator
 
 
 ### PowerShell scripts
@@ -157,7 +177,7 @@ Windows PowerShell scripts can't be assigned in a way that would target Microsof
 
 **Advisory**
 
-Make sure that Windows PowerShell scripts in your Azure AD organization don't target any Microsoft Manage Desktop devices or users. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
+Make sure that Windows PowerShell scripts in your Azure AD organization don't target any Microsoft Manage Desktop devices or users. Do not assign a PowerShell script to target all users, all devices, or both. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
 
 ### Region
 
@@ -220,7 +240,7 @@ You have an "update ring" policy that targets all devices, all users, or both. C
 
 **Advisory**
 
-Make sure that any update ring policies you have exclude the **Modern Workplace -All** Azure AD group. For steps, see [Manage Windows 10 software updates in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). The **Modern Workplace Devices -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
+Make sure that any update ring policies you have exclude the **Modern Workplace Devices -All** Azure AD group. If you have assigned Azure AD user group to these policies, make sure that any update ring policies you have also excluded the **Modern Workplace -All** Azure AD group which includes your Microsoft Managed Desktop users. For steps, see [Manage Windows 10 software updates in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Both the **Modern Workplace Devices -All** and **Modern Workplace -All** Azure AD groups are assigned groups that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
 
 
 ## Azure Active Directory settings
@@ -286,23 +306,20 @@ You have Security defaults turned on. Turn off Security defaults and set up cond
 
 ### Self-service Password Reset
 
-Self-service Password Reset (SSPR) must be enabled.
-
-**Not ready**
-
-SSPR must be enabled for all users. If it isn't, the Microsoft Managed Desktop service accounts can't work. For more information, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+Self-service Password Reset (SSPR) should be enabled for all users excluding Microsoft Managed Desktop service accounts. For more information, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Advisory**
 
-Make sure that the SSPR **Selected** setting includes Microsoft Managed Desktop devices.
+Make sure that the SSPR **Selected** setting includes Microsoft Managed Desktop devices but excludes Microsoft Managed Desktop service accounts. Microsoft Managed Desktop service accounts cannot work as expected when SSPR is enabled.  
+
 
 ### Standard user role
 
-Microsoft Managed Desktop users should be standard users without local administrator privileges. They'll be assigned a standard user role when they start their Microsoft Managed Desktop device.
+Other than those users who are assigned Azure AD roles of Global administrator and Device administrator, Microsoft Managed Desktop users will be standard users without local administrator privileges. All other users will be assigned a standard user role when they start their Microsoft Managed Desktop device.
 
 **Advisory**
 
-Microsoft Managed Desktop users shouldn't have local administrator privileges prior to enrolling.
+Microsoft Managed Desktop users will not have local administrator privileges on their Microsoft Managed Desktop devices after enrolling.
 
 ## Microsoft 365 Apps for enterprise
 

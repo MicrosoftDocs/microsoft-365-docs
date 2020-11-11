@@ -475,8 +475,11 @@
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
 
-- name: Security and compliance
-  href: https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap
+- name: Security
+  href: https://docs.microsoft.com/microsoft-365/security/
+
+- name: Compliance
+  href: https://docs.microsoft.com/microsoft-365/compliance/
 
 - name: Cloud services
   items: 

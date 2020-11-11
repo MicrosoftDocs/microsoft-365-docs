@@ -1,6 +1,6 @@
 ---
-title: Hello World for Microsoft Threat Protection REST API 
-description: Learn how to create an app and use a token to access the Microsoft Threat Protection APIs
+title: Hello World for Microsoft 365 Defender REST API 
+description: Learn how to create an app and use a token to access the Microsoft 365 Defender APIs
 keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 ---
 
-# Hello World for Microsoft Threat Protection REST API 
+# Hello World for Microsoft 365 Defender REST API 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -53,12 +53,12 @@ For the Application registration stage, you must have a **Global administrator**
 
 3. In the registration form, choose a name for your application and then select **Register**.
 
-4. Allow your Application to access Microsoft Defender ATP and assign it **Read all incidents** permission:
+4. Allow your Application to access Microsoft Defender for Endpoint and assign it **Read all incidents** permission:
 
-   - On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft Threat Protection** and select on **Microsoft Threat Protection**.
+   - On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft 365 Defender** and select on **Microsoft 365 Defender**.
 
    >[!NOTE]
-   >Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
+   >Microsoft 365 Defender does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
    ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
 
@@ -183,6 +183,6 @@ You're all done! You have just successfully:
 
 
 ## Related topic
-- [Access the Microsoft Threat Protection APIs](api-access.md)
-- [Access  Microsoft Threat Protection with application context](api-create-app-web.md)
-- [Access  Microsoft Threat Protection with user context](api-create-app-user-context.md)
+- [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Access  Microsoft 365 Defender with application context](api-create-app-web.md)
+- [Access  Microsoft 365 Defender with user context](api-create-app-user-context.md)
