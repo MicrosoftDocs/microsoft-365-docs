@@ -25,6 +25,9 @@ description: "Admins in China using Office 365 operated by 21Vianet can learn ho
 
 # Protect on-premises mailboxes in China with standalone EOP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 > [!NOTE]
 > This article applies only to Office 365 operated by 21Vianet in China.
 

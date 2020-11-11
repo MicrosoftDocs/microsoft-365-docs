@@ -1,6 +1,6 @@
 ---
-title: Create an app to access Microsoft Threat Protection without a user
-description: Learn how to create an app to access Microsoft Threat Protection without a user
+title: Create an app to access Microsoft 365 Defender without a user
+description: Learn how to create an app to access Microsoft 365 Defender without a user
 keywords: app, access, api, create
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,24 +21,27 @@ search.appverid:
 - MET150
 ---
 
-# Create an app to access Microsoft Threat Protection without a user
+# Create an app to access Microsoft 365 Defender without a user
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This page describes how to create an application to get programmatic access to Microsoft Threat Protection without a user. If you need programmatic access to Microsoft Threat Protection on behalf of a user, see [Get access with user context](api-create-app-user-context.md). If you are not sure which access you need, see [Get started](api-access.md).
+This page describes how to create an application to get programmatic access to Microsoft 365 Defender without a user. If you need programmatic access to Microsoft 365 Defender on behalf of a user, see [Get access with user context](api-create-app-user-context.md). If you are not sure which access you need, see [Get started](api-access.md).
 
-Microsoft Threat Protection exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft Threat Protection capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft 365 Defender capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you'll need to take the following steps to use the APIs:
 - Create an Azure Active Directory (Azure AD) application.
 - Get an access token using this application.
-- Use the token to access Microsoft Threat Protection API.
+- Use the token to access Microsoft 365 Defender API.
 
-This article explains how to create an Azure AD application, get an access token to Microsoft Threat Protection, and validate the token.
+This article explains how to create an Azure AD application, get an access token to Microsoft 365 Defender, and validate the token.
 
 ## Create an app
 
@@ -50,10 +53,10 @@ This article explains how to create an Azure AD application, get an access token
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
-4. To enable your app to access Microsoft Threat Protection and assign it permissions, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and then select **Microsoft Threat Protection**.
+4. To enable your app to access Microsoft 365 Defender and assign it permissions, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft 365 Defender**, and then select **Microsoft 365 Defender**.
 
    > [!NOTE]
-   > Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
+   > Microsoft 365 Defender does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
    ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
 
@@ -83,13 +86,13 @@ This article explains how to create an Azure AD application, get an access token
 
    ![Image of created app id](../../media/app-and-tenant-ids.png)
 
-8. **For Microsoft Threat Protection Partners only**. [Follow the instructions here](https://docs.microsoft.com/microsoft-365/security/mtp/api-partner-access). Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
+8. **For Microsoft 365 Defender Partners only**. [Follow the instructions here](https://docs.microsoft.com/microsoft-365/security/mtp/api-partner-access). Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
 
     - Go to **Authentication**, and add https://portal.azure.com as the **Redirect URI**.
 
     - On the bottom of the page, under **Supported account types**, select the **Accounts in any organizational directory** application consent for your multi-tenant app.
 
-    You need your application to be approved in each tenant where you intend to use it. This is because your application interacts Microsoft Threat Protection on behalf of your customer.
+    You need your application to be approved in each tenant where you intend to use it. This is because your application interacts Microsoft 365 Defender on behalf of your customer.
 
     You (or your customer if you are writing a third-party app) need to select the consent link and approve your app. The consent should be done with a user who has administrative privileges in Active Directory.
 
@@ -197,7 +200,7 @@ aadToken = jsonResponse["access_token"]
 
 1. Open a command prompt, and set CLIENT_ID to your Azure application ID.
 1. Set CLIENT_SECRET to your Azure application secret.
-1. Set TENANT_ID to the Azure tenant ID of the customer that wants to use your app to access Microsoft Threat Protection.
+1. Set TENANT_ID to the Azure tenant ID of the customer that wants to use your app to access Microsoft 365 Defender.
 1. Run the following command:
 
 ```
@@ -220,9 +223,9 @@ Ensure that you got the correct token:
 
 ![Image of token validation](../../media/webapp-decoded-token.png)
 
-## Use the token to access Microsoft Threat Protection API
+## Use the token to access Microsoft 365 Defender API
 
-1. Choose the API you want to use. For more information, see [Supported Microsoft Threat Protection APIs](api-supported.md).
+1. Choose the API you want to use. For more information, see [Supported Microsoft 365 Defender APIs](api-supported.md).
 
 2. Set the authorization header in the http request you send to "Bearer {token}" (Bearer is the authorization scheme).
 
@@ -243,6 +246,6 @@ The following is an example of sending a request to get a list of incidents **us
 ```
 
 ## Related topics
-- [Access the Microsoft Threat Protection APIs](api-access.md)
-- [Access  Microsoft Threat Protection with application context](api-create-app-web.md)
-- [Access  Microsoft Threat Protection with user context](api-create-app-user-context.md)
+- [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Access  Microsoft 365 Defender with application context](api-create-app-web.md)
+- [Access  Microsoft 365 Defender with user context](api-create-app-user-context.md)

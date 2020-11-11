@@ -95,7 +95,7 @@ As Microsoft has implemented GDPR-related DSRs globally, we are currently in an 
 
 **What are some tools that can help my organization to start preparing for CCPA?**
 
-- Start leveraging the GDPR assessment in Compliance Score as part of your CCPA privacy program.
+- Start leveraging the GDPR assessment in Compliance Manager as part of your CCPA privacy program.
 - Establish a process to efficiently respond to Consumer Requests.
 - Set up label and policies to discover, classify & label, and protect sensitive data with Microsoft Information Protection.
 - Use email encryption capabilities to further control sensitive information.

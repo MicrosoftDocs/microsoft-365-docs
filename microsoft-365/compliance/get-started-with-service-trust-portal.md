@@ -63,11 +63,8 @@ The **Service Trust Portal** link displays the home page. It provides a quick wa
 
 ### Compliance Manager
 
-Compliance Manager is a workflow-based risk assessment tool that helps you track, assign, and verify your organization's regulatory compliance activities related to Microsoft Cloud services, such as Microsoft 365, Dynamics 365, and Azure. Use Compliance Manager to manage regulatory compliance within the shared responsibility model of the cloud. Depending on the version of Compliance Manager you want to use, see the following articles for more information:
-
-- [Microsoft Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-
-- [Microsoft Compliance Manager (Preview)](compliance-manager-overview.md)
+> [!IMPORTANT]
+> Compliance Manager has moved from the Service Trust Portal to its new location in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). All customer data has been moved over to the new location, so you can continue using Compliance Manager without interruption. Refer to the [Compliance Manager documentation](compliance-manager.md) for setup information and to learn about new features. Although the classic version of Compliance Manager remains in the Service Trust Portal, all users are encouraged to use Compliance Manager in the Microsoft 365 compliance center.
 
 ### Trust Documents
 
@@ -105,15 +102,9 @@ This new feature lets you save (or *pin*) documents so that you can quickly acce
 
 Go to **More > Admin** to access administrative functions that are only available to the global administrator account. This option is visible only when you are signed in as a global administrator. There are two options in the **Admin** pull-down menu:
 
-- **Settings:** This page lets you assign role-based access (known as *user roles*) to Compliance Manager.  For more information, see:
+- **Settings:** This page lets you assign user roles for Compliance Manager (classic).
 
-  - [Permissions in Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
-
-  - [Permissions in Compliance Manager (Preview)](compliance-manager-overview.md#permissions)
-
-  You can also configure whether actions in Compliance Manager are updated based on the status of the same action in Secure Score. This capability is only supported if you're using the latest version of Compliance Manager. For more information, see [Controlling automatic Secure Score updates](working-with-compliance-manager.md#controlling-automatic-secure-score-updates).
-
-- **User Privacy Settings:** This page lets you export a report that contains action item assignments in Compliance Manager for a specific user. You can also reassign all action items to a different user and remove any assigned action item from the specified user. For more information, see [User Privacy settings](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings).
+- **User Privacy Settings:** This page lets you export a report that contains action item assignments in Compliance Manager (classic) for a specific user. You can also reassign all action items to a different user and remove any assigned action item from the specified user.
 
 ### Search
 
@@ -121,9 +112,9 @@ Click the magnifying glass in the upper right-hand corner of the Service Trust P
 
 ![Service Trust Portal - Search on Documents with filter applied](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-By default, th search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, categories of compliance or security practices, regions, and industries. Click the document name link to download the document.
+By default, the search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, categories of compliance or security practices, regions, and industries. Click the document name link to download the document.
 
-To list controls from Assessments in Compliance Manager related your search terms, click **Compliance Manager**. The search results show the date the assessment was created, the name of the assessment grouping, the applicable Microsoft Cloud service, and whether the control is Microsoft or Customer Managed. Click the name of the control to view the control in the Assessment in Compliance Manager.
+To list controls from Assessments in Compliance Manager (classic) related your search terms, click **Compliance Manager**. The search results show the date the assessment was created, the name of the assessment grouping, the applicable Microsoft Cloud service, and whether the control is Microsoft or Customer Managed. Click the name of the control to view the control in the Assessment in Compliance Manager (classic).
 
 ![Service Trust Portal - Search on Compliance Manager Controls](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 

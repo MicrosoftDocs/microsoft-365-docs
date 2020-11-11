@@ -40,7 +40,7 @@ The **Users dashboard** automatically displays all users with triggering indicat
 
 The **Users dashboard** allows you to temporarily add users to an existing insider risk management policy after an unusual event outside of the insider risk management workflow. Temporarily adding users is also a way to add users to an insider risk management policy for testing the policy, even if a required connector isn't configured.
 
-When a user is manually added to a policy, the user activities for the previous 90 days are scored and added to the **User activity** timeline. For example, a user not currently in-scope in an insider risk policy and the user has data leak activities reported to the legal department in your organization. The legal department recommends that you configure new short-term monitoring requirements for the user. You can temporarily assign the user to your *Data leaks* policy for a designated length of time (activation window). All users added temporarily are displayed in the **Users dashboard** because triggering indicator requirements are waived.
+When a user is manually added to a policy, the user activities for the previous 90 days are scored and added to the **User activity** timeline. For example, you have a user not currently in-scope in an insider risk policy and the user has data leak activities reported to the legal department in your organization. The legal department recommends that you configure new short-term monitoring requirements for the user. You can temporarily assign the user to your *Data leaks* policy for a designated length of time (activation window). All users added temporarily are displayed in the **Users dashboard** because triggering indicator requirements are waived.
 
 >[!NOTE]
 >It may take several hours for new manually-added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab on the details pane.
@@ -99,3 +99,17 @@ Complete the following steps to add a user to an existing insider risk policy:
 
 >[!NOTE]
 >It may take several hours for new manually-added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab on the details pane.
+
+## Run automated tasks with Power Automate flows for a user
+
+Using recommended Power Automate flows, risk investigators and analysts can quickly take action to:
+
+- Notify users when they're added to an insider risk policy
+
+To run, manage, or create Power Automate flows for an insider risk management user:
+
+1. Select **Automate** on the user action toolbar.
+2. Choose the Power Automate flow to run, then select **Run flow**.
+3. After the flow has completed, select **Done**.
+
+To learn more about Power Automate flows for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview).

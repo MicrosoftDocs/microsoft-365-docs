@@ -1,5 +1,5 @@
 ---
-title: FileProfile() function in advanced hunting for Microsoft Threat Protection
+title: FileProfile() function in advanced hunting for Microsoft 365 Defender
 description: Learn how to use the FileProfile() to enrich information about files in your advanced hunting query results 
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
 search.product: eADQiWindows 10XVcnh
@@ -15,14 +15,19 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
 # FileProfile()
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 The `FileProfile()` function is an enrichment function in [advanced hunting](advanced-hunting-overview.md) that adds the following data to files found by the query.
 
@@ -53,8 +58,8 @@ invoke FileProfile(x,y)
 
 ## Arguments
 
-- **x** — file ID column to use: `SHA1`, `SHA256`, `InitiatingProcessSHA1` or `InitiatingProcessSHA256`; function uses `SHA1` if unspecified
-- **y** — limit to the number of records to enrich, 1-1000; function uses 100 if unspecified
+- **x**—file ID column to use: `SHA1`, `SHA256`, `InitiatingProcessSHA1`, or `InitiatingProcessSHA256`; function uses `SHA1` if unspecified
+- **y**—limit to the number of records to enrich, 1-1000; function uses 100 if unspecified
 
 ## Examples
 

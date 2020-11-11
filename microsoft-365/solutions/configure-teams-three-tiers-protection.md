@@ -1,9 +1,9 @@
 ---
-title: "Configure Teams with three tiers of protection"
+title: Configure Teams with three tiers of file sharing security
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,13 +14,13 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-- m365solution-3tiersprotection
-- m365solution-overview
 - m365solution-securecollab
+- m365solution-scenario
 ms.custom:
 - Ent_Architecture
+- seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
-description: "Configuration recommendations for protecting files in Microsoft Teams."
+description: Learn how to configure Teams for better file sharing security using three tiers of protection, balancing security with ease of collaboration.
 ---
 
 # Configure Teams with three tiers of protection
@@ -57,7 +57,7 @@ The following table summarizes the configurations for each tier. Use these confi
 
 A variation of the Highly sensitive option, [Teams with security isolation](secure-teams-security-isolation.md) uses a unique sensitivity label for one team, which provides additional security. You can use this label to encrypt files, and only members of that team will be able to read them.
 
-Baseline protection includes public private teams. Public teams can be discovered and accessed by anybody in the organization. Private teams can only be discovered and accessed by members of the team. Both of these configurations restrict sharing of the associated SharePoint site to team owners to assist in permissions management.
+Baseline protection includes public and private teams. Public teams can be discovered and accessed by anybody in the organization. Private teams can only be discovered and accessed by members of the team. Both of these configurations restrict sharing of the associated SharePoint site to team owners to assist in permissions management.
 
 Teams for sensitive and highly sensitive protection are private teams in which sharing and the requesting of access for the associated site is limited and sensitivity labels are used to set policies around guest sharing, device access, and content encryption.
 

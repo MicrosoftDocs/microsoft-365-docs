@@ -23,14 +23,17 @@ search.appverid:
 
 # Additional protection APIs
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The following resources provide more information on other APIs available for workflows in Microsoft Threat Protection:
+The following resources provide more information on other APIs available for workflows in Microsoft 365 Defender:
 
-- [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
-- [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office/office-365-management-api/)
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
+- [Microsoft Defender for Office 365](https://docs.microsoft.com/office/office-365-management-api/)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/api-introduction)

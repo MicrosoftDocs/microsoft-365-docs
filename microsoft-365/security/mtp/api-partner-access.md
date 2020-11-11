@@ -1,6 +1,6 @@
 ---
-title: Partner access through Microsoft Threat Protection APIs
-description: Learn how to create an AAD application to get programmatic access to Microsoft Threat Protection on behalf of your customers
+title: Partner access through Microsoft 365 Defender APIs
+description: Learn how to create an AAD application to get programmatic access to Microsoft 365 Defender on behalf of your customers
 keywords: partner, access, api, multi tenant, consent, access token, app 
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,26 +21,29 @@ search.appverid:
 - MET150
 ---
 
-# Partner access through Microsoft Threat Protection APIs
+# Partner access through Microsoft 365 Defender APIs
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
-This page describes how to create an AAD application to get programmatic access to Microsoft Threat Protection on behalf of your customers.
+This page describes how to create an AAD application to get programmatic access to Microsoft 365 Defender on behalf of your customers.
 
-Microsoft Threat Protection exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft Threat Protection capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft 365 Defender capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 - Create a **multi-tenant** AAD application.
-- Get authorized (consent) by your customer administrator for your application to access Microsoft Threat Protection resources it needs.
+- Get authorized (consent) by your customer administrator for your application to access Microsoft 365 Defender resources it needs.
 - Get an access token using this application.
-- Use the token to access Microsoft Threat Protection API.
+- Use the token to access Microsoft 365 Defender API.
 
-The following steps with guide you how to create an AAD application, get an access token to Microsoft Threat Protection and validate the token.
+The following steps with guide you how to create an AAD application, get an access token to Microsoft 365 Defender and validate the token.
 
 ## Create the multi-tenant app
 
@@ -61,12 +64,12 @@ The following steps with guide you how to create an AAD application, get an acce
 	![Image of Microsoft Azure partner application registration](../../media/atp-api-new-app-partner.png)
 
 
-4. Allow your Application to access Microsoft Threat Protection and assign it with the minimal set of permissions required to complete the integration.
+4. Allow your Application to access Microsoft 365 Defender and assign it with the minimal set of permissions required to complete the integration.
 
-   - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft Threat Protection** and click on **Microsoft Threat Protection**.
+   - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft 365 Defender** and click on **Microsoft 365 Defender**.
 
    >[!NOTE]
-   >Microsoft Threat Protection does not appear in the original list. You need to start writing its name in the text box to see it appear.
+   >Microsoft 365 Defender does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
    ![Image of API access and API selection](../../media/apis-in-my-org-tab.PNG)
    
@@ -105,7 +108,7 @@ The following steps with guide you how to create an AAD application, get an acce
 
 8. Add the application to your customer's tenant.
 
-    You need your application to be approved in each customer tenant where you intend to use it. This is because your application interacts with Microsoft Threat Protection application on behalf of your customer.
+    You need your application to be approved in each customer tenant where you intend to use it. This is because your application interacts with Microsoft 365 Defender application on behalf of your customer.
 
     A user with **Global Administrator** from your customer's tenant need to click the consent link and approve your application.
 
@@ -195,7 +198,7 @@ return $token
 - Open a command window
 - Set CLIENT_ID to your Azure application ID
 - Set CLIENT_SECRET to your Azure application secret
-- Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access Microsoft Threat Protection application
+- Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access Microsoft 365 Defender application
 - Run the below command:
 
 ```
@@ -214,14 +217,14 @@ Sanity check to make sure you got a correct token:
 
 - Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it
 - Validate you get a 'roles' claim with the desired permissions
-- In the screenshot below, you can see a decoded token acquired from an Application with multiple permissions to Microsoft Threat Protection:
+- In the screenshot below, you can see a decoded token acquired from an Application with multiple permissions to Microsoft 365 Defender:
 - The "tid" claim is the tenant ID the token belongs to.
 
 ![Image of token validation](../../media/webapp-decoded-token.png)
 
-## Use the token to access Microsoft Threat Protection API
+## Use the token to access Microsoft 365 Defender API
 
-- Choose the API you want to use, for more information, see [Supported Microsoft Threat Protection APIs](api-supported.md)
+- Choose the API you want to use, for more information, see [Supported Microsoft 365 Defender APIs](api-supported.md)
 - Set the Authorization header in the Http request you send to "Bearer {token}" (Bearer is the Authorization scheme)
 - The Expiration time of the token is 1 hour (you can send more then one request with the same token)
 
@@ -240,6 +243,6 @@ Sanity check to make sure you got a correct token:
 
 ## Related topics 
 
-- [Access the Microsoft Threat Protection APIs](api-access.md)
-- [Access  Microsoft Threat Protection with application context](api-create-app-web.md)
-- [Access  Microsoft Threat Protection with user context](api-create-app-user-context.md)
+- [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Access  Microsoft 365 Defender with application context](api-create-app-web.md)
+- [Access  Microsoft 365 Defender with user context](api-create-app-user-context.md)

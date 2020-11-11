@@ -17,9 +17,6 @@ When you define your service offerings in Microsoft Bookings, you set, a service
 
 You can also add customized information and URLs to the email confirmation and reminders that you send when someone books a service through your booking page.
 
-> [!NOTE]
-> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
-
 ## Create the service details
 
 1. Go to the [Manage services page](https://outlook.office.com/bookings/services) and select **Add a service**.

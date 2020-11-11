@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "A table listing the supported file types and what viewers they can be viewed in for Data Investigations (Preview)."
+description: "A table listing the supported file types and what viewers they can be viewed in for Data Investigations (preview)."
 ms.custom: seo-marvel-mar2020
 ---
 
@@ -42,7 +42,7 @@ The Data Investigations (preview) tool supports many file types in several diffe
 |application/vnd.openxmlformats-officedocument.presentationml.template | Document | Yes | Yes | Yes | No | .potx |
 | apadsheetml.sheet | Document | Yes | Yes | Yes | No | .xlsx |
 |application/vnd.openxmlformats-officedocument.spreadsheetml.template | Document | Yes | Yes | Yes | No | .xltx |
-|application/vnd.openxmlformats-officedocument.wordproessingml.document | Document | Yes | Yes | Yes | No | .docx |
+|application/vnd.openxmlformats-officedocument.wordprocessingml.document | Document | Yes | Yes | Yes | No | .docx |
 |application/vnd.openxmlformats-officedocument.wordprocessingml.template | Document | Yes | Yes | Yes | No | .dotx |
 |application/vnd.visio | Document | Yes | Yes | Yes | No | .vsd |
 |application/x-7z-compressed | Archive / Container | No | No | No | Yes | .7z |

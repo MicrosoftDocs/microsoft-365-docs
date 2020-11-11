@@ -136,7 +136,6 @@ In this step, you assign the former employee's email address to another employee
 - Creating a shared mailbox is the less expensive way to go because you won't have to pay for a license **as long as the mailbox is smaller than 50GB**. Over 50GB and you'll need to assign a license to it.
 - If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
 - If you set up email forwarding, only  *new*  emails sent to the former employee will now be sent to the current employee.
-- Email forwarding requires that the former employee's account has a license.
 
  > [!IMPORTANT]
  > If you're setting up email forwarding or a shared mailbox, at the end, don't delete the former employee's account. The account needs to be there to anchor the email forwarding or shared mailbox.
@@ -146,7 +145,7 @@ In this step, you assign the former employee's email address to another employee
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 2. Select the name of the employee that you want to block, and then select the **Mail** tab.
 3. Under **Email Forwarding**, select **Manage email forwarding**.
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email.
+4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee who's going to get the email.
 5. Select **Save**.
 6. Remember, don't delete the former employee's account.
 

@@ -122,6 +122,15 @@ The **User activity** tab is one of the most powerful tools for internal risk an
 4. **Risk activity chronology**: The full chronology of all risk alerts associated with the case are listed, including all the details available in the corresponding alert bubble.
 5. **Case actions**: Options for resolving the case are on the case action toolbar. You can resolve a case, send an email notice to the user, or escalate the case for a data or user investigation.
 
+### Activity explorer (preview)
+
+>[!IMPORTANT]
+>The Activity explorer tab is available in the case management area for users with triggering events after this feature is available in your organization.
+
+The **Activity explorer** tab allows risk analysts and investigators to review activity details associated with risk alerts. For example, as part of the case management actions, investigators and analysts may need to review all the risk activities associated with the case for more details. With the **Activity explorer**, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts.
+
+For more information about the Activity explorer, see the [Insider risk management alerts](insider-risk-management-alerts.md#activity-explorer-preview) article.
+
 ### Content Explorer
 
 The **Content Explorer** tab allows risk analysts and investigators to review copies of all individual files and email messages associated with risk alerts. For example, if an alert is created when a user downloads hundreds of files from SharePoint Online and the activity triggers a policy alert, all the downloaded files for the alert are captured and copied to the insider risk management case from original storage sources.
@@ -191,15 +200,45 @@ To escalate a case to a user investigation:
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Escalate for investigation** button on the case action toolbar.
 3. On the **Escalate for investigation** dialog, enter a name for the new user investigation. If needed, enter notes about the case and select **Escalate**.
+4. Review the notice fields and update as appropriate. The values entered here will override the values on the template.
 5. Select **Confirm** to create the user investigation case or select **Cancel** to close the dialog without creating a new user investigation case.
 
 After the insider risk management case has been escalated to a new user investigation case, you can review the new case in the **eDiscovery** > **Advanced** area in the Microsoft 365 compliance center.
 
-### Share a case
+### Run automated tasks with Power Automate flows for the case
 
-Sharing an insider risk management case allows investigator and reviews to easily collaborate with other compliance stakeholders in your organization. You can quickly share a link to an insider risk management case with external stakeholders from the case management area. To access the insider risk management case from the link, stakeholders must be included in any of the insider risk management role groups.
+Using recommended Power Automate flows, risk investigators and analysts can quickly take action to:
 
-The following sharing options are available: 
+- Request information from HR or business about a user in an insider risk case
+- Notify manager when a user has an insider risk alert
+- Add calendar reminder to follow up on an insider risk case
+
+To run, manage, or create Power Automate flows for an insider risk management case:
+
+1. Select **Automate** on the case action toolbar. 
+2. Choose the Power Automate flow to run, then select **Run flow**. 
+3. After the flow has completed, select **Done**.
+
+To learn more about Power Automate flows for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview).
+
+### View or create a Microsoft Teams team for the case
+
+When Microsoft Teams integration for insider risk management is enabled in settings, a Microsoft Teams team is automatically created every time an alert is confirmed and a case is created. Risk investigators and analysts can quickly open Microsoft Teams and navigate directly to the team for a case by selecting **View Microsoft Teams team** on the case action toolbar.
+
+For cases opened before enabling Microsoft Team integration, risk investigators and analysts can create a new Microsoft Teams team for a case by selecting **Create Microsoft Teams team** on the case action toolbar.
+
+When a case is resolved, the associated Microsoft Team will be automatically archive (hidden and turned to read-only).
+
+To learn more about Microsoft Teams for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#microsoft-teams-preview).
+
+### Share the case
+
+Sharing an insider risk management case allows risk investigators and analysts to easily collaborate with other compliance stakeholders in your organization. You can quickly share a link to an insider risk management case with external stakeholders from the case management area. To access the insider risk management case from the link, stakeholders must be included in any of the insider risk management role groups.
+
+>[!NOTE]
+>Thank you for your feedback and support during the preview of the ServiceNow connector. We've decided to end the preview of ServiceNow connector and discontinue support in insider risk management on November 30, 2020. We are actively evaluating alternative methods to provide customers with ServiceNow integration in insider risk management.
+
+The following sharing options are available:
 
 - **ServiceNow**: After configuring the Microsoft 365 ServiceNow connector for your Microsoft 365 organization, you can easily share a link to the case, open an incident, or request a change with your ServiceNow organization. To share the case with ServiceNow, select **Share** > **ServiceNow** from the case action. ServiceNow integration with insider risk management supports includes the following case information and actions:
     - **Task name**: The name for the new ServiceNow task.

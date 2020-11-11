@@ -17,9 +17,6 @@ If you are using Microsoft Bookings and bookings are created at the wrong time, 
 
 There are two separate language and time zone settings for Bookings. The first setting controls the language and time zone of the booking calendar and is set using the Outlook on the web settings for the personal calendar of the logged-in user. The second setting affects the self-service booking page that your customers use and is set using a "regional settings" page that controls language and time zone only for that page.
 
-> [!NOTE]
-> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
-
 ## Setting language and time zone for a booking calendar
 
 The booking calendar uses the logged-in user’s language and time zone settings. For example, If the logged-in user’s time zone is set to Eastern Standard Time (EST), then the booking calendar will show existing appointment start and end times in EST. This time zone was originally set when the user’s Microsoft 365 and Outlook on the web accounts were created.

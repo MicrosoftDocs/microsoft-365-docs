@@ -3,7 +3,6 @@ title: "Manage Microsoft 365 with PowerShell"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -28,7 +27,7 @@ description: "Learn how to manage Microsoft 365 users, licenses, and 365 apps wi
 
 PowerShell for Microsoft 365 is a powerful management tool that complements the Microsoft 365 admin center. For example, you can use PowerShell automation to easily manage multiple user accounts and licenses and to create reports.
 
-Select from the following topics to learn how to use PowerShell for Microsoft 365 users and licenses, Skype for Business Online, SharePoint Online, Exchange Online, and the Security & Compliance Center.
+Select from the following topics to learn how to use PowerShell to manage Microsoft 365:
   
 - [**Get started**](getting-started-with-microsoft-365-powershell.md)
 
@@ -36,23 +35,23 @@ Select from the following topics to learn how to use PowerShell for Microsoft 36
 
 - [**User accounts, licenses, and groups**](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 
-    Start here if you've installed the Microsoft 365 modules and want to learn about using automation commands to manage user accounts, licenses, and groups.
+    Start here if want to learn about using automation commands to manage user accounts, licenses, and groups.
 
 - [**SharePoint**](manage-sharepoint-online-with-microsoft-365-powershell.md)
 
-    Start here if you've installed the Microsoft 365 modules and want to use automation commands to manage SharePoint.
+    Start here if you want to use automation commands to manage SharePoint.
 
-- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
+- [**Exchange Online**](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 
-    Start here if you want to use automation commands to manage Exchange Online.
+    Start here if you want to manage Exchange Online.
 
 - [**Email migration**](use-powershell-for-email-migration-to-microsoft-365.md)
 
-    Start here if you've installed the PowerShell 365 modules and want to migrate your email from pre-existing systems.
+    Start here if you want to migrate your email from pre-existing systems.
 
 - [**Security & Compliance Center**](https://docs.microsoft.com/powershell/exchange/scc-powershell)
 
-    Start here if you want to use automation commands to manage Security & Compliance Center PowerShell.
+    Start here if you want to manage Security & Compliance Center features.
 
 - [**Delegated Access Permissions (DAP) partners**](manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
@@ -60,4 +59,4 @@ Select from the following topics to learn how to use PowerShell for Microsoft 36
 
 - [**Skype for Business Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 
-    Start here if you've installed the PowerShell modules and want to manage of Skype for Business Online.
+    Start here to manage Skype for Business Online.

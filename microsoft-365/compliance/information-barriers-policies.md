@@ -11,6 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 localization_priority: None
 description: Learn how to define policies for information barriers in Microsoft Teams.
 ms.custom: seo-marvel-apr2020
@@ -253,7 +255,7 @@ With PowerShell, you can view status of user accounts, segments, policies, and p
 |Segments     |Use the **Get-OrganizationSegment** cmdlet.<p>Syntax: `Get-OrganizationSegment` <p>This will display a list of all segments defined for your organization.         |
 |Information barrier policies     |Use the **Get-InformationBarrierPolicy** cmdlet. <p> Syntax: `Get-InformationBarrierPolicy` <p>This will display a list of information barrier policies that were defined, and their status.       |
 |The most recent information barrier policy application     | Use the **Get-InformationBarrierPoliciesApplicationStatus** cmdlet. <p>Syntax: `Get-InformationBarrierPoliciesApplicationStatus`<p>    This will display information about whether policy application completed, failed, or is in progress.       |
-|All information barrier policy applications|Use `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>This will display information about whether policy application completed, failed, or is in progress.|
+|All information barrier policy applications|Use `Get-InformationBarrierPoliciesApplicationStatus -All`<p>This will display information about whether policy application completed, failed, or is in progress.|
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 

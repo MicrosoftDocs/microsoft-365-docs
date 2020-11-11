@@ -14,9 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: Learn how to use error remediation to correct data issues in Data Investigations (Preview) that might prevent proper processing of content.
+description: "Learn how to use error remediation to correct data issues in Data Investigations (preview) that might prevent proper processing of content."
 ms.custom: 
  - seo-marvel-mar2020
  - seo-marvel-apr2020
@@ -24,9 +22,9 @@ ms.custom:
 
 # Error remediation when processing data for an investigation
 
-Error remediation allows investigators the ability to rectify data issues that prevent Data Investigations (Preview) from properly processing the content. For example, files that are password protected cannot be processed since the files are locked or encrypted. Using error remediation, investigators can download files with such errors, remove the password protection, and upload the remediated files.
+Error remediation allows investigators the ability to rectify data issues that prevent Data Investigations (preview) from properly processing the content. For example, files that are password protected cannot be processed since the files are locked or encrypted. Using error remediation, investigators can download files with such errors, remove the password protection, and upload the remediated files.
 
-Use the following workflow to remediate files with errors in Data Investigations (Preview) cases.
+Use the following workflow to remediate files with errors in Data Investigations (preview) cases.
 
 ## Creating an error remediation session to remediate files with processing errors
 
@@ -39,15 +37,15 @@ Use the following workflow to remediate files with errors in Data Investigations
 
 3. Click **+ New error remediation**.
 
-    ![Error remediation](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+    ![Click the New error remediation button](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
     The error remediation session begins, starting with a preparation stage where the files with errors are copied to a secure Azure location so that they can be downloaded.
 
-    ![Preparing error remediation](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![Preparing for error remediation](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
 4. After the preparation is completed, click **Next: Download files** to proceed with download.
 
-    ![Download files](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![Download the files that need remediation](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
 5. To download files, specify the **Destination path for download**. This is a path on your local computer where the file should be downloaded.  The default path, %USERPROFILE%\Downloads\errors, points to the logged-in user's downloads folder; this can be changed as needed.
 
@@ -61,7 +59,7 @@ Use the following workflow to remediate files with errors in Data Investigations
 
     The files will be downloaded.
 
-    ![Preparing error remediation](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![Info about the downloaded files in the command prompt](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > If you have issues running this command, see [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -71,17 +69,17 @@ Use the following workflow to remediate files with errors in Data Investigations
    > [!NOTE]
     > It's important that you retain the directory structure and file names of the remediated files. The path names of the downloaded files and folders make it possible to associate the remediated files with the original files.  If the directory structure or file names are changed, you'll receive the following error: `Cannot apply Error Remediation to the current Evidenceset`.
 
-8. Now, return to Data Investigations (Preview) and click **Next: Upload files**.  This will move to the next step where you can now upload the files.
+8. Now, return to Data Investigations (preview) and click **Next: Upload files**.  This will move to the next step where you can now upload the files.
 
-    ![Upload Files](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![The Upload files tab](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. Specify the location of the remediated files in the **Path to location of files** text box, then click **Copy to clipboard**.
 
 10. Paste the command into a Windows Command Prompt and press **Enter** to upload the files.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![Info about uploaded files in the command prompt](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. Finally, return to Data Investigations (Preview) and click **Next: Process files**.
+11. Finally, return to Data Investigations (preview) and click **Next: Process files**.
 
 12. When processing is complete.  You can return to the working set and see the remediated file.
 
@@ -99,4 +97,4 @@ When remediated files are uploaded, the original metadata is preserved except fo
 - WordCount
 - WorkingsetId
 
-For a definition of all document metadata fields in Data Investigations (Preview), see [Document metadata fields](document-metadata-fields.md).
+For a definition of all document metadata fields in Data Investigations (preview), see [Document metadata fields](document-metadata-fields.md).

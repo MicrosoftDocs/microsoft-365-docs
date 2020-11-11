@@ -1,9 +1,9 @@
 ---
-title: "Microsoft 365 network connectivity test (preview)"
+title: "Microsoft 365 network connectivity test tool (preview)"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/14/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,12 +13,14 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: "Microsoft 365 network connectivity test (preview)"
+description: "Microsoft 365 network connectivity test tool (preview)"
 ---
 
-# Microsoft 365 network connectivity test (preview)
+# Microsoft 365 network connectivity test tool (preview)
 
 The Microsoft 365 network connectivity test tool is located at <https://connectivity.office.com>. It is an adjunct tool to the network assessment and network insights information available in the Microsoft 365 admin center under the **Health | Connectivity** menu.
+
+![Connectivity test tool](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
 >[!NOTE]
 >The network connectivity test tool supports tenants in WW Commercial and Germany but not GCC Moderate, GCC High, DoD or China.
@@ -30,13 +32,33 @@ We recommend that these be used together where networking quality status can be 
 >[!IMPORTANT]
 >Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status, and is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
 
-## The advanced tests client application
+## What happens at each test step
+
+### Office location identification
+
+When you click the run test button we show the running test page and identify the office location. You can type in your location by city, state, and country or you can have it detected from the web browser. If you detect it then we request the latitude and longitude from the web browser and limit the accuracy to 300m by 300m before use. We do this because it is not necessary to identify the location more accurately than the building for network performance. 
+
+### JavaScript tests
+
+After office location identification we run a TCP latency test in JavaScript and we request data from the service about in-use and recommended Office 365 service front door servers. When these are completed we show them on the map and in the details tab where they can be viewed prior to the next step.
+
+### Download the advanced tests client application
+
+Next we start the download of the advanced tests client application. We rely on the user to launch the client application and they must also have .NET Core installed.
 
 There are two parts to the Microsoft 365 network connectivity test; the web site <https://connectivity.office.com> and a downloadable Windows client application that runs advanced network connectivity tests. Most of the tests require the application to be run. It will populate results back into the web page as it runs.
 
 You will be prompted to download the advanced client test application from the web site after the web browser tests have completed. Open and run the file when prompted.
 
 ![Advanced tests client application](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
+
+### Start the advanced tests client application
+
+Once the client application starts the web page will update to show this and test data will start to be received to the web page. It updates each time new data is received and you can review the data as it arrives.
+
+### Advanced tests completed and test report upload
+
+Once the tests are completed the web page and the advanced tests client will both indicate this and if the user is signed in the test report will be uploaded to the customers tenant.
 
 ## Sharing your test report
 
@@ -104,7 +126,7 @@ This detects if you are using a VPN to connect to Office 365. A passing result w
 
 #### VPN Split Tunnel
 
-Each optimize category route for Exchange Online, SharePoint Online, and Microsoft Teams is tested to see if it is tunnelled on the VPN or not. A split out workload avoids the VPN entirely. A tunnelled workload is all sent over the VPN. A selective tunnelled workload has some routes sent over the VPN and some split out. A passing result will show if all workloads are split out or selective tunnelled.
+Each optimize category route for Exchange Online, SharePoint Online, and Microsoft Teams is tested to see if it is tunneled on the VPN or not. A split out workload avoids the VPN entirely. A tunneled workload is all sent over the VPN. A selective tunneled workload has some routes sent over the VPN and some split out. A passing result will show if all workloads are split out or selective tunneled.
 
 #### Customers in your metropolitan area with better performance
 
@@ -178,7 +200,7 @@ This tests for UDP connectivity to the Microsoft Teams service front door. If th
 
 Shows the UDP packet loss measured in a 10 second test audio call from the client to the Microsoft Teams service front door. This should be lower than **1.00%** for a pass.
 
-### Latency
+#### Latency
 
 Shows the measured UDP latency, which should be lower than **100ms**.
 
@@ -220,6 +242,10 @@ Here are answers to some of our frequently asked questions.
 
 It is currently a preview and we plan to provide updates regularly until we reach general availability release status with support from Microsoft. Please provide feedback to help us improve. We are planning to publish a more detailed Office 365 Network Onboarding guide as part of this tool which is customized for the organization by its test results.
 
+### What is required to run the advanced test client?
+
+The advanced test client requires .NET Core 3.1 Desktop Runtime. If you run the advanced test client without that installed you will be directed to [the .NET Core 3.1 installer page](https://dotnet.microsoft.com/download/dotnet-core/3.1). Be sure to install the Desktop Runtime and not the SDK, or the ASP.NET Core Runtime which are higher up on the page. Administrator permissions on the machine is required to install .NET Core.
+
 ### What is Microsoft 365 service front door?
 
 The Microsoft 365 service front door is an entry point on Microsoft's global network where Office clients and services terminate their network connection. For an optimal network connection to Microsoft 365, it is recommended that your network connection is terminated into the closest Microsoft 365 front door in your city or metro.
@@ -236,7 +262,7 @@ The internet egress Location is the location where your network traffic exits yo
 
 ## Related topics
 
-[Network performance recommendations in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
+[Network connectivity in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 network performance insights (preview)](office-365-network-mac-perf-insights.md)
 

@@ -37,10 +37,10 @@ productDirectory:
       summary: Azure AD Premium P1 is now included in Microsoft 365 Business Premium!
       url: https://aka.ms/aadp1smbblog
     # Card
-    - title: Join the partner webinar – Driving profit and reducing risk in the remote work world!
+    - title: Watch the partner webinar 
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary:  Aug 19, 8-9 a.m. Pacific time.
+      summary:  Driving profit and reducing risk in the remote work world!
       url: https://aka.ms/GrowwithMicrosoft365 
 # conceptualContent section (optional)
 conceptualContent:

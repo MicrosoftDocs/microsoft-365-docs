@@ -28,9 +28,6 @@ Before you deploy SCEP or PKCS certificates to Microsoft Managed Desktop, you sh
 - [PKCS certificate template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/PKCS-certificate-template.xlsx) 
 - [SCEP certificate template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/SCEP-certificate-template.xlsx)
 
->[!NOTE]
->Currently, only SCEP certificate profiles are supported for Wi-Fi profile deployment to Microsoft Managed Desktop when using an EAP type. PKCS certificate profiles are not supported. See [Add Wi-Fi settings for Windows 10 devices in Intune](https://docs.microsoft.com/intune/wi-fi-settings-windows) for reference.
-
   
 ## Wi-Fi connectivity requirements
 

@@ -33,6 +33,8 @@ The following table lists the limits for cases and review sets in Advanced eDisc
 |Total amount of data loaded into all review sets in the organization per day.<br/> |2 TB <br/> |
 |Maximum number of loads sets per case.  <br/> |200 <br/> |
 |Maximum number of review sets per case.  <br/> |20 <br/> |
+|Maximum number of tag groups per case.  <br/> |1000 <br/> |
+|Maximum number of tags per case.  <br/> |1000 <br/> |
 |||
 
 ## Indexing limits

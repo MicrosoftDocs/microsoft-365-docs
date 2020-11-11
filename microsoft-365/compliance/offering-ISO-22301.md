@@ -33,7 +33,7 @@ Microsoft is the first hyperscale cloud service provider to receive the ISO 2230
 - [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
 - Dynamics 365, Dynamics 365 Government, and Dynamics 365 Germany
-- Microsoft Defender Advanced Threat Protection
+- Microsoft Defender for Endpoint
 - Microsoft Graph
 - Microsoft Healthcare Bot
 - Intune
@@ -65,6 +65,10 @@ The [Service Trust Portal](https://aka.ms/stphelp) provides independently audite
 **Can I use ISO 22301 compliance of Microsoft services in my organization’s certification?**
 
 Yes. If your business requires ISO 22301 certification for implementations deployed on Microsoft services, you can use the Azure and Office 365 certifications in your compliance assessment. You are responsible, however, for engaging an assessor to evaluate the controls, processes, and implementation for ISO 22301 compliance within your own organization and for your own applications.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

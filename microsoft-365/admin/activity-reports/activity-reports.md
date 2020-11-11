@@ -53,9 +53,8 @@ Watch this video for on overview: on how you can use the reports:
 
 ::: moniker-end
 
-   
-2. Select **Select a report** at the top of the dashboard to select from a list of all available reports. Or, select an at-a-glance activity widget for a service (such as email or OneDrive) to see more information. <br/>![The Usage dashboard](../../media/usage-report-dashboard.png)
-  
+2. Click on the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. In there different reports for the service are provided in tabs. <br/>![The Usage dashboard](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+
 ## Who can see reports
 
 People who have the following permissions:
@@ -92,21 +91,33 @@ Depending on your subscription, here are the available reports.
   
 - [Email apps usage](email-apps-usage.md)
 
-- [Forms activity](forms-activity.md)
+- [Forms activity](forms-activity-ww.md)
 
-- [Forms Pro activity](forms-pro-activity.md)
+- [Forms activity for US Government](forms-activity.md)
+
+- [Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)
   
+- [Dynamics 365 Customer Voice activity for US Government](forms-pro-activity.md)
+
 - [Microsoft 365 groups](office-365-groups.md)
   
-- [OneDrive for Business user activity](onedrive-for-business-activity.md)
-  
-- [OneDrive for Business usage](onedrive-for-business-usage.md)
+- [OneDrive for Business user activity](onedrive-for-business-activity-ww.md)
+
+- [OneDrive for Business user activity for US Government](onedrive-for-business-activity.md)
+
+- [OneDrive for Business usage](onedrive-for-business-usage-ww.md)
+
+- [OneDrive for Business usage for US Government](onedrive-for-business-usage.md)
 
 - [Microsoft 365 Apps usage](microsoft365-apps-usage.md)
   
-- [SharePoint site usage](sharepoint-site-usage.md)
+- [SharePoint site usage](sharepoint-site-usage-ww.md)
+
+- [SharePoint site usage for US Government](sharepoint-site-usage.md)
   
-- [SharePoint activity](sharepoint-activity.md)
+- [SharePoint activity](sharepoint-activity-ww.md)
+
+- [SharePoint activity for US Government](sharepoint-activity.md)
   
 - [Skype for Business Online activity](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
@@ -118,31 +129,61 @@ Depending on your subscription, here are the available reports.
   
 ::: moniker range="o365-worldwide"
 
-- [Yammer activity](yammer-activity-report.md)
+- [Yammer activity](yammer-activity-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Yammer device usage](yammer-device-usage-report.md)
+- [Yammer activity for US Government](yammer-activity-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Yammer groups activity report](yammer-groups-activity-report.md)
+- [Yammer device usage](yammer-device-usage-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Microsoft Teams user activity](microsoft-teams-user-activity.md)
+- [Yammer device usage for US Government](yammer-device-usage-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Microsoft Teams device usage](microsoft-teams-device-usage.md)
+- [Yammer groups activity report](yammer-groups-activity-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Yammer groups activity report for US Government](yammer-groups-activity-report.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Microsoft Teams user activity for US Government](microsoft-teams-user-activity.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Microsoft Teams device usage for US Government](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 

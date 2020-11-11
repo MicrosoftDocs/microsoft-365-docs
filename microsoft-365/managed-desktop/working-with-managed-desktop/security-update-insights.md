@@ -4,6 +4,7 @@ description:
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
@@ -17,11 +18,11 @@ To view usage data, select the <strong>Windows security updates</strong> tab.
 
 ## Device status
 
-For devices to be updated by Windows Update, they must be connected to the Internet and not hibernating for a minimum of six hours, two of which must be continuous. As long as a device is connected and not hibernating, it's considered to be "in use." Although it's possible that a device that doesn't meet these requirements will be updated, devices that meet them have the highest likelihood of being updated. 
+For devices to be updated by Windows Update, they must be connected to the Internet and not hibernating for a minimum of six hours, two of which must be continuous. Although it's possible that a device that doesn't meet these requirements will be updated, devices that meet them have the highest likelihood of being updated. 
 
 We categorize device activity in the context of Windows Update with these terms:
 
-- <strong>Active:</strong> Devices that have met the minimum usage criteria (six hours, two continuous) for the most recent security update release and have checked in with Microsoft Intune at least every five days
+- <strong>Active:</strong> Devices that have met the minimum activity criteria (six hours, two continuous) for the most recent security update release and have checked in with Microsoft Intune at least every five days
 - <strong>Synced:</strong> Devices that have checked in with Intune within the last 28 days
 - <strong>Out of sync:</strong> Devices that have <i>not</i> checked in with Intune in the last 28 days
 

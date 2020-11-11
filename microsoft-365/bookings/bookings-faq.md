@@ -16,7 +16,7 @@ description: "Microsoft Bookings frequently asked questions."
 
 ### What is Microsoft Bookings?
 
-Microsoft Bookings is a Microsoft 365 app that makes scheduling and managing appointments easy. Bookings incudes a Web-based booking calendar and integrates with Outlook to optimize your staff’s calendar, giving your customers flexibility to book a time that works best for them. Automated notification emails reduce no-shows, and organizations save time with a reduction in repetitive scheduling tasks. Bookings helps you easily conduct virtual appointments via Skype or Microsoft Teams, and helps you manage day-to-day scheduling via the Bookings app in Teams. With built-in ability to customize, Bookings is designed to meet the needs of multiple parts of any organization.
+Microsoft Bookings is a Microsoft 365 app that makes scheduling and managing appointments easy. Bookings includes a Web-based booking calendar and integrates with Outlook to optimize your staff’s calendar, giving your customers flexibility to book a time that works best for them. Automated notification emails reduce no-shows, and organizations save time with a reduction in repetitive scheduling tasks. Bookings helps you easily conduct virtual appointments via Skype or Microsoft Teams, and helps you manage day-to-day scheduling via the Bookings app in Teams. With built-in ability to customize, Bookings is designed to meet the needs of multiple parts of any organization.
 
 ### How do I use Microsoft Bookings?
 
@@ -209,7 +209,7 @@ Recording Time Off within the Bookings Web app will always trigger a notificatio
 
 ### Can Bookings calendars be cloned or duplicated, and can they be templatized for easy scaling?
 
-The ability to duplicate pages is currently available via PowerShell. The process would be to use the Graph API to get mailbox details, and then use those details to create a new mailbox. API documentation is [here](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
+The process would be to use the Graph API to get mailbox details, and then use those details to create a new mailbox. API documentation is [here](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
 
 ### What reporting is available in Bookings?
 

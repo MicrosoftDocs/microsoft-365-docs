@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 09/18/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,9 +18,10 @@ description: "Learn how Exchange Online Protection (EOP) can help protect your o
 
 # Exchange Online Protection overview
 
-Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware. EOP is included in all Microsoft 365 organizations with Exchange Online mailboxes.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-But, EOP is also available in the following on-premises scenarios:
+
+Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware. EOP is included in all Microsoft 365 organizations with Exchange Online mailboxes. However, EOP is also available in the following on-premises scenarios:
 
 - **In a standalone scenario**: EOP provides cloud-based email protection for your on-premises Exchange organization or for any other on-premises SMTP email solution.
 
@@ -34,17 +35,37 @@ The rest of this topic explains how EOP works in standalone and hybrid environme
 
 To understand how EOP works, it helps to see how it processes incoming email:
 
-![Email process diagram](../../media/emailprocessingineop1.png)
+:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphic of email from either the Internet or Customer feedback passing into EOP and through the Connection, Anti-malware, Mailflow Rules-slash-Policy Filtering, and Content Filtering, before the verdict of either junk mail or quarantine, or end user mail delivery.":::
 
-- An incoming message initially passes through connection filtering, which checks the sender's reputation and inspects the message for malware. The majority of spam is stopped at this point and deleted by EOP. For more information, see [Configure connection filtering](configure-the-connection-filter-policy.md).
+- When an incoming message enters EOP, it initially passes through connection filtering, which checks the sender's reputation. The majority of spam is stopped at this point and rejected by EOP. For more information, see [Configure connection filtering](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-connection-filter-policy?view=o365-worldwide).
 
-- Messages continue through policy filtering, where messages are evaluated against custom mail flow rules (also known as transport rules) that you create or enforce from a template. For example, you can have a rule that sends a notification to a manager when mail arrives from a specific sender. Data loss prevention (DLP) checks also occur at this point (Exchange Enterprise CAL with Services).
+- Then the message is inspected for signs of malware. If malware is found in the message or the attachment(s) the message is routed to an admin only quarantine store. You can learn more about configuring anti-malware [here](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide).
 
-- Next, messages pass through anti-spam filtering (also known as content filtering). A message that's determined to be spam can be sent to a user's Junk Email folder or to the quarantine, among other options. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
+- Messages continue through policy filtering, where they are evaluated against custom mail flow rules (also known as transport rules) that you create or enforce from a template. For example, you can have a rule that sends a notification to a manager when mail arrives from a specific sender. Data loss prevention (DLP) checks also happen at this point (Exchange Enterprise CAL with Services).
 
-- After a message passes all of these protection layers successfully, it's delivered to the recipient.
+- Next, the message passes through content filtering (also known as Anti-spam). A message that this filter determines to be spam *or phish* can be sent to quarantine, or a user's Junk Email folder, among other options. For more information see [Configure anti-spam policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide) and [Configure anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop?view=o365-worldwide).
+
+Any message that passes all of these protection layers successfully is delivered to the recipient.
 
 For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+
+## EOP plans and features for on-premises email organizations
+
+The available EOP subscription plans are:
+
+- **EOP standalone**: You enroll in EOP to protect your on-premises email organization.
+
+- **EOP features in Exchange Online**: Any subscription that includes Exchange Online (standalone or as part of Microsoft 365) uses EOP to protect your Exchange Online mailboxes.
+
+- **Exchange Enterprise CAL with Services**: If you have an on-premises Exchange organization where you've purchased additional Exchange Enterprise CAL with Services licenses, EOP is part of the included services.
+
+For information about requirements, important limits, and feature availability across all EOP subscription plans, see the [Exchange Online Protection service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+
+## Setting up EOP for on-premises email organizations
+
+Setting up EOP can be simple, especially in the case of a small organization with a handful of compliance rules. However, if you have a large organization with multiple domains, custom compliance rules, or hybrid mail flow, set up can take more planning and time.
+
+If you've already purchased EOP, see [Set up your EOP service](set-up-your-eop-service.md) to ensure that you complete all the steps necessary to configure EOP to protect your messaging environment.
 
 ### EOP datacenters
 
@@ -66,29 +87,11 @@ EOP performs load balancing between datacenters but only within a region. If you
 
 - For the Government Community Cloud (GCC), all Exchange Online mailboxes are located in U.S. datacenters and all messages are routed through U.S. datacenters for EOP filtering.
 
-## EOP plans and features for on-premises email organizations
-
-The available EOP subscription plans are:
-
-- **EOP standalone**: You enroll in EOP to protect your on-premises email organization.
-
-- **EOP features in Exchange Online**: Any subscription that includes Exchange Online (standalone or as part of Microsoft 365) uses EOP to protect your Exchange Online mailboxes.
-
-- **Exchange Enterprise CAL with Services**: If you have an on-premises Exchange organization where you've purchased additional Exchange Enterprise CAL with Services licenses, EOP is part of the included services.
-
-For information about requirements, important limits, and feature availability across all EOP subscription plans, see the [Exchange Online Protection service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
-
-## Setting up EOP for on-premises email organizations
-
-Setting up EOP can be simple, especially in the case of a small organization with a handful of compliance rules. However, if you have a large organization with multiple domains, custom compliance rules, or hybrid mail flow, set up can take more planning and time.
-
-If you've already purchased EOP, see [Set up your EOP service](set-up-your-eop-service.md) to ensure that you complete all the steps necessary to configure EOP to protect your messaging environment.
-
 ## EOP Help for admins
 
 The Help content for EOP administrators consists of the following top-level categories:
 
-- [Exchange Online Protection overview](exchange-online-protection-overview.md): Introduces how EOP works and provides links to additional information.
+- [Configure EOP, Day 1, for Microsoft Defender for Office 365 admins](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide): Configuring EOP protection and detection tools at the core of Microsoft Defender for Office 365.
 
 - [EOP features](eop-features.md): Provides a list of features that are available in EOP.
 

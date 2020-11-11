@@ -1,6 +1,6 @@
 ---
 title: Advanced hunting APIs
-description: Learn how to run Advanced Hunting queries using Microsoft Threat Protection API
+description: Learn how to run Advanced Hunting queries using Microsoft 365 Defender API
 keywords: Advanced Hunting, APIs, api, MTP
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -23,8 +23,11 @@ search.appverid:
 
 # Advanced hunting APIs
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -32,11 +35,13 @@ search.appverid:
 ## Limitations
 1. You can only run a query on data from the last 30 days.
 2. The results will include a maximum of 100,000 rows.
-3. The number of executions is limited per tenant: up to 15 calls per minute, 15 minutes of running time every hour and 4 hours of running time a day.
+3. The number of executions is limited per tenant: up to 10 calls per minute, 10 minutes of running time every hour and 4 hours of running time a day.
 4. The maximal execution time of a single request is 10 minutes.
+5. 429 response will represent reaching quota limit either by number of requests or by CPU. The 429 response body will also indicate the time until the quota is renewed. 
+
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access the Microsoft Threat Protection APIs](api-access.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender APIs](api-access.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -158,4 +163,4 @@ Here is an example of the response.
 ```
 
 ## Related topic
-- [Access the Microsoft Threat Protection APIs](api-access.md)
+- [Access the Microsoft 365 Defender APIs](api-access.md)

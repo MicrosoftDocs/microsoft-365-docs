@@ -7,16 +7,14 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: Learn how to import non-Microsoft 365 data to a review set for analysis in an Advanced eDiscovery case.
+description: "Learn how to import non-Microsoft 365 data to a review set for analysis in an Advanced eDiscovery case."
 ms.custom: seo-marvel-apr2020
 ---
 

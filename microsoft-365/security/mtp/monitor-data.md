@@ -11,13 +11,18 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
 ---
 
 # Data monitoring and reporting in the Microsoft 365 security center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 The **Data** category helps track user activity that could lead to unauthorized data disclosure. They are the rework of existing DLP policy reports plus a third-party DLP policy match report.
 

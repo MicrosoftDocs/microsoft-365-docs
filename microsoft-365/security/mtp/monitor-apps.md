@@ -11,13 +11,18 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
 ---
 
 # App monitoring and reporting in the Microsoft 365 security center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 These reports provide more insight into how cloud apps are being used in your organization. Includes different kinds of apps, their level of risk, and alerts.
 
@@ -55,10 +60,10 @@ The risk factors start from general information, such as the app publisher. It t
 
 ## Monitor health for infrastructure workloads
 
-**Infrastructure health** shows health status alerts for infrastructure workloads in Azure Security Center.
+**Infrastructure health** shows health status alerts for infrastructure workloads in Azure Defender.
 
-Azure Security Center provides unified security management and advanced threat protection across on-premises and cloud workloads. You can collect, search, and analyze security data from different sources, including firewalls and other partner solutions.
+Azure Defender provides unified security management and Defender for Office 365 across on-premises and cloud workloads. You can collect, search, and analyze security data from different sources, including firewalls and other partner solutions.
 
-For more information, see [Azure Security Center Documentation](https://docs.microsoft.com/azure/security-center/).
+For more information, see [Azure Defender Documentation](https://docs.microsoft.com/azure/security-center/).
 
 ![Infrastructure health card](../../media/infrastructure-health.png)

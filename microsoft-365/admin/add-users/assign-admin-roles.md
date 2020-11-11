@@ -37,7 +37,7 @@ For more information, see [About admin roles](about-admin-roles.md).
 
 When you add new users, if you don't assign them an admin role then they are in the *user role* and don't have admin privileges to any of the Microsoft admin centers. But if you need help getting things done, you can assign an admin role to a user. For example, if you need someone to help reset passwords, you shouldn't assign them the global admin role, you should assign them the password admin role. Having too many global admins, with unlimited access to your data and online business, is a security risk.
 
-Watch a short video about adding an admin.<br><br>
+## Watch: Add an admin.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
@@ -95,7 +95,6 @@ You can assign users to a role in 2 different ways:
 
 ::: moniker-end
 
-
 ## Assign admin roles to multiple users
 
 If you know PowerShell, see [Assign roles to user accounts with PowerShell](https://go.microsoft.com/fwlink/?linkid=854257). It's ideal for assigning roles to hundreds of users.
@@ -104,10 +103,14 @@ Use the following instructions to assign roles to tens of users.
 
 ::: moniker range="o365-worldwide"
 
+## Check admin roles in your organization
 
-## Check your permissions
+You might not have the correct permissions to assign admin roles to other users. Check to make sure you have the correct permissions or ask another admin to assign roles for you.
 
-You might not have the correct permissions to assign admin roles to other users. Check to make sure if you the correct permissions or ask another admin to assign roles for you.
+You can check admin role permissions in 2 different ways:
+
+- You can go to the user's details and look under **Roles** on the **Account** page.
+- Or you can go to **Roles** and select the admin role, and select assigned admins to see which users are assigned.
 
 ::: moniker-end
 

@@ -2,7 +2,7 @@
 title: "New users forwarding email insight"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -14,6 +14,9 @@ description: "Admins can learn how to use the New users forwarding email insight
 ---
 
 # New users forwarding email insight in the Security & Compliance Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 It's suspicious when new user accounts in your organization suddenly start forwarding email messages to external domains.
 

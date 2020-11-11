@@ -50,7 +50,7 @@
             - name: Microsoft 365 optimization for China users
               href: microsoft-365-networking-china.md
             - name: Optimizing Microsoft 365 traffic for remote workers with the native Windows 10 VPN client
-              href: https://docs.microsoft.com/en-us/windows/security/identity-protection/vpn/vpn-office-365-optimization
+              href: https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization
         - name: ExpressRoute for Office 365
           href: azure-expressroute.md
           items: 
@@ -115,10 +115,6 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-            - name: How modern authentication works for Office 2013 and Office 2016 client apps
-              href: modern-auth-for-office-2013-and-2016.md
-        - name: Inter-tenant collaboration
-          href: microsoft-365-inter-tenant-collaboration.md
         - name: Client app support
           items: 
             - name: Certificate-based authentication
@@ -141,6 +137,8 @@
               href: configure-skype-for-business-for-hybrid-modern-authentication.md
             - name: Remove or disable for Skype for Business and Exchange
               href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
+            - name: Office 2013, Office 2016, and Office 2019 client apps
+              href: modern-auth-for-office-2013-and-2016.md
         - name: Plan your upgrade
           href: plan-upgrade-previous-versions-office.md
           items: 
@@ -273,6 +271,21 @@
       items: 
         - name: Add a domain
           href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+
+    - name: Manage
+      items: 
+        - name: Microsoft 365 service health status
+          href: microsoft-365-service-health.md
+        - name: Setup guides
+          href: setup-guides-for-microsoft-365.md
+    - name: Multiple tenants
+      items: 
+        - name: Inter-tenant collaboration
+          href: microsoft-365-inter-tenant-collaboration.md
+        - name: Cross-tenant mailbox migration
+          href: cross-tenant-mailbox-migration.md
+        - name: Tenant-to-tenant migrations
+          href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Multi-geo
       items: 
         - name: Microsoft 365 Multi-Geo
@@ -294,7 +307,7 @@
             - name: Configure multi-geo
               href: multi-geo-tenant-configuration.md
             - name: Configure preferred data location
-              href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json
+              href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
             - name: Configure search
               href: configure-search-for-multi-geo.md
         - name: Manage
@@ -330,12 +343,14 @@
           href: during-and-after-your-data-move.md
         - name: Data move general FAQ
           href: data-move-faq.md
-        - name: Microsoft Cloud Deutschland - Office 365 migration program
-          href: ms-cloud-germany-transition.md
-        - name: Microsoft Cloud Deutschland - Opt-in for migration
-          href: ms-cloud-germany-migration-opt-in.md
         - name: Where customer data is stored
           href: o365-data-locations.md
+        - name: Microsoft Cloud Deutschland
+          items: 
+          - name: Overview
+            href: ms-cloud-germany-transition.md
+          - name: Opt-in for migration
+            href: ms-cloud-germany-migration-opt-in.md
 
 - name: Identity
   items: 
@@ -354,59 +369,68 @@
         - name: Cloud-only identity
           href: cloud-only-identities.md
         - name: Hybrid identity
-          href: prepare-for-directory-synchronization.md
-        - name: Prepare a non-routable domain for directory synchronization
-          href: prepare-a-non-routable-domain-for-directory-synchronization.md
-        - name: Set up directory synchronization
-          href: set-up-directory-synchronization.md
-        - name: Hybrid solutions
           items: 
-            - name: Overview
-              href: hybrid-solutions.md
-            - name: Use Azure Active Directory for SharePoint Server 2016 authentication
-              href: using-azure-ad-for-sharepoint-server-authentication.md
-            - name: Connect an on-premises network to an Azure virtual network
-              href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
-            - name: Deploy a directory synchronization server in Azure IaaS
-              href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
-            - name: Deploy high availability federated authentication in Azure
-              href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
-              items: 
-                - name: Phase 1 - Configure Azure
-                  href: high-availability-federated-authentication-phase-1-configure-azure.md
-                - name: Phase 2 - Configure domain controllers
-                  href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
-                - name: Phase 3 - Configure AD FS servers
-                  href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
-                - name: Phase 4 - Configure web application proxies
-                  href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
-                - name: Phase 5 - Configure federated authentication
-                  href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
-            - name: SharePoint Server 2013 Disaster Recovery in Microsoft Azure
-              href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
+          - name: Prepare for directory synchronization
+            href: prepare-for-directory-synchronization.md
+          - name: Prepare a non-routable domain for directory synchronization
+            href: prepare-a-non-routable-domain-for-directory-synchronization.md
+          - name: Set up directory synchronization
+            href: set-up-directory-synchronization.md
+          - name: Hybrid solutions
+            items: 
+              - name: Overview
+                href: hybrid-solutions.md
+              - name: Use Azure Active Directory for SharePoint Server 2016 authentication
+                href: using-azure-ad-for-sharepoint-server-authentication.md
+              - name: Connect an on-premises network to an Azure virtual network
+                href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
+              - name: Deploy a directory synchronization server in Azure IaaS
+                href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
+              - name: Deploy high availability federated authentication in Azure
+                href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
+                items: 
+                  - name: Phase 1 - Configure Azure
+                    href: high-availability-federated-authentication-phase-1-configure-azure.md
+                  - name: Phase 2 - Configure domain controllers
+                    href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
+                  - name: Phase 3 - Configure AD FS servers
+                    href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
+                  - name: Phase 4 - Configure web application proxies
+                    href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
+                  - name: Phase 5 - Configure federated authentication
+                    href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
+              - name: SharePoint Server 2013 Disaster Recovery in Microsoft Azure
+                href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
+        - name: Secure user sign-ins
+          href: microsoft-365-secure-sign-in.md
     - name: Manage
       items: 
-        - name: Assign licenses to user accounts
+        - name: User accounts
+          items: 
+          - name: User accounts
+            href: manage-microsoft-365-accounts.md
+          - name: Add several users at the same time
+            href: add-several-users-at-the-same-time.md
+        - name: Licenses
           href: assign-licenses-to-user-accounts.md
-        - name: Microsoft 365 help center
-          href: https://docs.microsoft.com/office365/admin/admin-home
-        - name: Tools to manage user accounts
-          href: manage-microsoft-365-accounts.md
-        - name: Add several users at the same time
-          href: add-several-users-at-the-same-time.md
+        - name: Passwords
+          href: manage-microsoft-365-passwords.md
+        - name: Groups
+          href: manage-microsoft-365-groups.md
+        - name: Governance
+          href: manage-microsoft-365-identity-governance.md
         - name: Recover deleted items in a user mailbox
           href: recover-deleted-items-in-a-mailbox.md
         - name: Directory synchronization
           items: 
-            - name: View directory synchronization status
+            - name: View status
               href: view-directory-synchronization-status.md
-            - name: Identify directory synchronization errors
+            - name: Identify errors
               href: identify-directory-synchronization-errors.md
-            - name: Fixing problems with directory synchronization
+            - name: Fix problems
               href: fix-problems-with-directory-synchronization.md
-            - name: Turn off directory synchronization
+            - name: Turn it off
               href: turn-off-directory-synchronization.md
-
 
 - name: Client and server software
   items: 
@@ -451,8 +475,11 @@
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
 
-- name: Security and compliance
-  href: https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap
+- name: Security
+  href: https://docs.microsoft.com/microsoft-365/security/
+
+- name: Compliance
+  href: https://docs.microsoft.com/microsoft-365/compliance/
 
 - name: Cloud services
   items: 
@@ -563,7 +590,7 @@
               href: view-user-accounts-with-microsoft-365-powershell.md
             - name: Configure properties
               href: configure-user-account-properties-with-microsoft-365-powershell.md
-            - name: Assign roles
+            - name: Assign admin roles
               href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
             - name: Delete and restore
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
@@ -571,7 +598,7 @@
               href: block-user-accounts-with-microsoft-365-powershell.md
         - name: Licenses and services
           items: 
-            - name: View
+            - name: View licenses and services
               href: view-licenses-and-services-with-microsoft-365-powershell.md
             - name: View licensed and unlicensed users
               href: view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md
@@ -579,6 +606,8 @@
               href: assign-licenses-to-user-accounts-with-microsoft-365-powershell.md
             - name: View account license and service details
               href: view-account-license-and-service-details-with-microsoft-365-powershell.md
+            - name: Remove licenses from user accounts
+              href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
             - name: Disable access to services
               href: disable-access-to-services-with-microsoft-365-powershell.md
               items: 
@@ -586,8 +615,6 @@
                   href: disable-access-to-sway-with-microsoft-365-powershell.md
                 - name: Disable access to services while assigning user licenses
                   href: disable-access-to-services-while-assigning-user-licenses.md
-                - name: Remove licenses from user accounts
-                  href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
         - name: Groups
           items: 
             - name: Maintain group membership
@@ -648,7 +675,7 @@
           href: simulated-ent-base-configuration-microsoft-365-enterprise.md
     - name: Identity
       items: 
-        - name: Password hash sync
+        - name: Password hash synchronization
           href: password-hash-sync-m365-ent-test-environment.md
         - name: Pass-through authentication
           href: pass-through-auth-m365-ent-test-environment.md
@@ -697,7 +724,7 @@
   items: 
     - name: Overview
       href: contoso-overview.md
-    - name: Contoso's IT infrastructure and needs
+    - name: Contoso IT infrastructure and needs
       href: contoso-infra-needs.md
     - name: Networking
       href: contoso-networking.md
@@ -713,9 +740,6 @@
       href: contoso-info-protect.md
     - name: Security summary
       href: contoso-security-summary.md
-
-- name: Microsoft 365 service health status
-  href: microsoft-365-service-health.md
 
 - name: Microsoft 365 compliance
   href: ../compliance/index.yml

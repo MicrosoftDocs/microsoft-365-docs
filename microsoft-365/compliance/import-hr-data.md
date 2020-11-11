@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 description: "Administrators can set up a data connector to import employee data from their organization's human resources (HR) system to Microsoft 365. This lets you use HR data in insider risk management policies to help you detect activity by specific users that may pose an internal threat to your organization."
 ---
 
-# Set up a connector to import HR data (preview)
+# Set up a connector to import HR data
 
 You can set up a data connector in the Microsoft 365 compliance center to import human resources (HR) data related to events such as a user's resignation or a change in a user's job level. The HR data can then be used by the [insider risk management solution](insider-risk-management.md) to generate risk indicators that can help you identity possible malicious activity or data theft by users inside your organization.
 
@@ -48,7 +48,7 @@ The first step is to create a CSV file that contains the HR data that the connec
 
 The type of HR data to import depends on the insider risk management policy and corresponding policy template that you want to implement. The following table shows which HR data type is required for each policy template:
 
-| **Policy template**| **HR data type**|
+|  Policy template |  HR data type |
 |:-----------------------------------------------|:---------------------------------------------------------------------|
 | Data theft by departing users                   | Employee resignations                                                 |
 | General data leaks                              | Not applicable                                                        |
@@ -83,7 +83,7 @@ pilarp@contoso.com,2019-04-24T09:15:49Z,2019-04-29T15:18:02.7117540
 
 The following table describes each column in the CSV file for employee resignation data.
 
-| **Column**  |  **Description**|
+|  Column   |   Description |
 |:------------|:----------------|
 |**EmailAddress**| Specifies the email address (UPN) of the terminated user.|
 | **ResignationDate** | Specifies the date the user's employment was officially terminated in your organization. For example, this may be the date when the user gave their notice about leaving your organization. This date may be the different than the date of the person's last day of work. Use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -102,7 +102,7 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30,Level 62 – Director,Level
 
 The following table describes each column in the CSV file for job level changes data.
 
-| **Column**|**Description**|
+|  Column | Description |
 |:--------- |:------------- |
 | **EmailAddress**  | Specifies the user's email address (UPN).|
 | **EffectiveDate** | Specifies the date that the user's job level was officially changed. Use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -123,7 +123,7 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with th
 
 The following table describes each column in the CSV file for performance review data.
 
-| **Column**|**Description**|
+|  Column | Description |
 |:----------|:--------------|
 | **EmailAddress**  | Specifies the user's email address (UPN).|
 | **EffectiveDate** | Specifies the date that the user was officially informed about the result of their performance review. This can be the date when the performance review cycle ended. Use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -143,7 +143,7 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with th
 
 The following table describes each column in the CSV file for performance review data.
 
-| **Column**| **Description**|
+|  Column |  Description |
 |:----------|:---------------|
 | **EmailAddress**  | Specifies the user's email address (UPN).|
 | **EffectiveDate** | Specifies the date when the user was officially informed about their performance improvement plan. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -214,15 +214,15 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** in the left nav.
 
-2. On the **Data connectors (preview)** page under **HR**, click **View**.
+2. On the **Data connectors** page under **HR**, click **View**.
 
 3. On the **HR Custom** page, click **Add connector**.
 
 4. On the **Setup the connection** page, do the following and then click **Next**:
 
-   a. Type or paste the Azure AD application ID for the Azure app that you created in Step 2.
+   1. Type or paste the Azure AD application ID for the Azure app that you created in Step 2.
 
-   b. Type a name for the HR connector.
+   1. Type a name for the HR connector.
 
 5. On the HR scenarios page, select one or more HR scenarios that you want to import data for, and then click **Next**.
 
@@ -246,9 +246,9 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
    ![Review page with job ID and link to github for sample script](../media/HRConnector_Confirmation.png)
 
-   a. **Job ID.** You'll need this job ID to run the script in the next step. You can copy it from this page or from the connector flyout page.
+   1. **Job ID.** You'll need this job ID to run the script in the next step. You can copy it from this page or from the connector flyout page.
 
-   b. **Link to sample script.** Click the **here** link to go to the GitHub site to access the sample script (the link opens a new window). Keep this window open so that you can copy the script in Step 4. Alternatively, you can bookmark the destination or copy the URL so you can access it again when you run the script. This link is also available on the connector flyout page.
+   1. **Link to sample script.** Click the **here** link to go to the GitHub site to access the sample script (the link opens a new window). Keep this window open so that you can copy the script in Step 4. Alternatively, you can bookmark the destination or copy the URL so you can access it again when you run the script. This link is also available on the connector flyout page.
 
 9. Click **Done**.
 
@@ -286,7 +286,7 @@ The last step in setting up an HR connector is to run a sample script that will 
 
    The following table describes the parameters to use with this script and their required values. The information you obtained in the previous steps is used in the values for these parameters.
 
-   |**Parameter**|**Description**
+   | Parameter | Description |
    |:-----|:-----|:-----|
    |`tenantId`|This is the Id for your Microsoft 365 organization that you obtained in Step 2. You can also obtain the tenant Id for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
    |`appId` |This is the Azure AD application Id for the app that you created in Azure AD in Step 2. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. | 
@@ -312,7 +312,7 @@ After you create the HR connector and run the script to upload your HR data, you
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
 
-2. Click the **Connectors** tab and then select the HR connector to display the flyout page, which contains the properties and information about the connector.
+2. Click the **Connectors** tab and then select the HR connector to display the flyout page. This page contains the properties and information about the connector.
 
    ![HR connector flyout page with properties and status](../media/HRConnectorFlyout1.png)
 
@@ -340,31 +340,31 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 5. Under **Security options**, do the following:
 
-   a. Determine whether to run the script only when you're logged on to the computer or run it when you're logged on or not.
+   1. Determine whether to run the script only when you're logged on to the computer or run it when you're logged on or not.
 
-   b. Make sure that the **Run with the highest privileges** checkbox is selected.
+   1. Make sure that the **Run with the highest privileges** checkbox is selected.
 
 6. Select the **Triggers** tab, click **New**, and then do the following things:
 
-   a. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will every day at the same specified time.
+   1. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will every day at the same specified time.
 
-   b. Under **Advanced settings**, make sure the **Enabled** checkbox is selected.
+   1. Under **Advanced settings**, make sure the **Enabled** checkbox is selected.
 
-   c. Click **Ok**.
+   1. Click **Ok**.
 
 7. Select the **Actions** tab, click **New**, and then do the following things:
 
    ![Action settings to create a new scheduled task for the HR connector script](../media/HRConnectorScheduleTask1.png)
 
-   a. In the **Action** dropdown list, make sure that **Start a program** is selected.
+   1. In the **Action** dropdown list, make sure that **Start a program** is selected.
 
-   b. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`.
+   1. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`.
 
-   c. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+   1. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
-   d. In the **Start in (optional)** box, paste the folder location of the script that you ran in Step 4. For example, `C:\Users\contosoadmin\Desktop\Scripts`.
+   1. In the **Start in (optional)** box, paste the folder location of the script that you ran in Step 4. For example, `C:\Users\contosoadmin\Desktop\Scripts`.
 
-   e. Click **Ok** to save the settings for the new action.
+   1. Click **Ok** to save the settings for the new action.
 
 8. In the **Create Task** window, click **Ok** to save the scheduled task. You might be prompted to enter your user account credentials.
 

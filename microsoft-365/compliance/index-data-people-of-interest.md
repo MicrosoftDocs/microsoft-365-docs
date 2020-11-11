@@ -35,7 +35,7 @@ To learn more about processing support and partially indexed items, see:
 
 ## Viewing Advanced indexing results
 
-After the Advanced indexing process is completed, you can get an understanding of the effectiveness of reprocessing.  In the People of interest indexing view, the graph lists all items added to the *hybrid index*.  The hybrid index is where Data Investigations (Preview) stores the reprocessed content.
+After the Advanced indexing process is completed, you can get an understanding of the effectiveness of reprocessing.  In the People of interest indexing view, the graph lists all items added to the *hybrid index*.  The hybrid index is where Data Investigations (preview) stores the reprocessed content.
 
 The graph also includes the number of items that require remediation and another graph of errors by file type. For more information, see [Error remediation when processing data](error-remediation.md).
 

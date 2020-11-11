@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -71,7 +71,7 @@ The following limits apply to Microsoft 365 Groups:
 |Groups a user can create|250|
 |Groups an admin can create|Up to default tenant limit of 500K|
 |Number of members|More than 1,000, though only 1,000 can access the Group conversations concurrently. <br>Users might notice delays when accessing the calendar and conversations in very large groups in Outlook.|
-|Number of Groups a user can be a member of|1,000|
+|Number of Groups a user can be a member of|7,000|
 |File storage|1 Terabyte + 10 GB per subscribed user + any additional storage purchased. You can purchase an unlimited amount of additional storage.|
 |Group Mailbox size|50 GB|
 
@@ -103,7 +103,7 @@ Any Microsoft 365 subscription that has Exchange Online and SharePoint Online wi
 
 If you have an Exchange-only plan you can still get the shared inbox and shared calendar features of groups in Outlook but you won't get the document library, Planner or any of the other capabilities.
 
-Microsoft 365 groups work with Azure Active Directory (AAD). The groups features you get depends on which Azure Active Directory subscription you have, and what license(s) is assigned to the organizer of the group.
+Microsoft 365 groups work with Azure Active Directory. The groups features you get depends on which Azure Active Directory subscription you have, and what license(s) is assigned to the organizer of the group.
 
 > [!IMPORTANT]
 > For all the groups features, if you have an Azure AD Premium subscription, users can join the group whether or not they have an AAD P1 license assigned to them. Licensing isn't enforced.

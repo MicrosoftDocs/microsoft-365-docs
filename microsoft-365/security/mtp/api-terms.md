@@ -1,6 +1,6 @@
 ---
-title: Microsoft Threat Protection APIs license and terms of use
-description: Description of the license and terms of use for APIs in Microsoft Threat Protection
+title: Microsoft 365 Defender APIs license and terms of use
+description: Description of the license and terms of use for APIs in Microsoft 365 Defender
 keywords: api, apis, license, terms, apis, legal, notices, code of conduct
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,9 +21,12 @@ search.appverid:
 - MET150
 ---
 
-#  Microsoft Threat Protection APIs license and terms of use
+#  Microsoft 365 Defender APIs license and terms of use
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -31,7 +34,7 @@ search.appverid:
 
 ## APIs
 
- Microsoft Threat Protection APIs are governed by [Microsoft API License and Terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+ Microsoft 365 Defender APIs are governed by [Microsoft API License and Terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
 
 ### Throttling limits
 

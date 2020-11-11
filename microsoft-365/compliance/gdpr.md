@@ -52,6 +52,10 @@ The following tasks are involved to meet GDPR standards. Follow the links in the
 
 As mentioned above, the Recommended action plan for GDPR and Accountability Readiness Checklists provide a guide to implementing or assessing GDPR conformance using Microsoft products and services.
 
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager has a pre-built assessment for this regulation for Enterprise E5 customers. Find the template for building the assessment in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
+
 ## Data Subject Request (DSR)
 
 The GDPR grants individuals (or data subjects) certain rights in connection with the processing of their personal data, including the right to correct inaccurate data, erase data or restrict its processing, receive their data and fulfill a request to transmit their data to another controller. The controller is responsible for providing a timely, GDPR consistent reply. For technical details, refer to [Data Subject Requests](gdpr-data-subject-requests.md).  
@@ -120,7 +124,7 @@ The GDPR mandates that a DPIA includes:
 Under the GDPR, as a controller you are required to undertake DPIAs prior to data processing that is likely to result in a high risk to the rights and freedoms of individuals—in particular, processing using new technologies. The GDPR provides the following non-exhaustive list of cases in which DPIAs must be carried out:
 
 - Automated processing for the purposes of profiling and similar activities that has legal effects or similarly significantly affects data subjects;  
-- Processing on a large scale of special categories of personal data – data revealing racial or ethnic origin, political opinion, and the like—or of data relating to criminal convictions and offenses;  
+- Processing on a large scale of special categories of personal data-data revealing racial or ethnic origin, political opinion, and the like—or of data relating to criminal convictions and offenses;  
 - Systematic monitoring of a publicly accessible area on a large scale.  
 
 The GDPR also requires that you must consult with your Data Protection Authority (DPA) before you begin any processing if you cannot identify sufficient processes to minimize high risks to data subjects.
@@ -172,7 +176,7 @@ Microsoft has policies and procedures in place to notify you promptly. To satisf
 
 ## Accountability Readiness Checklists for the GDPR
 
-These [checklists](gdpr-arc.md) provide a convenient way to access information you may need to support the GDPR using Microsoft products. You can manage checklist items with [Microsoft Compliance Score](compliance-score.md) by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile.
+These [checklists](gdpr-arc.md) provide a convenient way to access information you may need to support the GDPR using Microsoft products. You can manage checklist items with [Microsoft Compliance Manager](compliance-manager.md) by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile.
 
 ## GDPR FAQs
 
@@ -200,7 +204,7 @@ Microsoft's GDPR Terms reflect the commitments required of processors in Article
 
 **Under what basis does Microsoft facilitate the transfer of personal data outside of the EU?**
 
-Microsoft has long used the Standard Contractual Clauses (also known as the Model Clauses) as a basis for transfer of data for its enterprise online services. The Standard Contractual Clauses are standard terms provided by the European Commission that can be used to transfer data outside the European Economic Area in a compliant manner. Microsoft has incorporated the Standard Contractual Clauses into all of our Volume Licensing agreements via the [Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). The Article 29 Working Party has found Microsoft's implementation of the Standard Contractual Clauses are compliant. And when the EU-US Privacy Shield became available, Microsoft was the first company to certify. See [Microsoft's certification to the Privacy Shield](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active), and read the [Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). The EU-US Privacy Shield helps customers that want to transfer their data to the US do so in a manner consistent with their data protection obligations.
+Microsoft has long used the Standard Contractual Clauses (also known as the Model Clauses) as a basis for transfer of data for its enterprise online services. The Standard Contractual Clauses are standard terms provided by the European Commission that can be used to transfer data outside the European Economic Area in a compliant manner. Microsoft has incorporated the Standard Contractual Clauses into all of our Volume Licensing agreements via the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). The Article 29 Working Party has found Microsoft's implementation of the Standard Contractual Clauses are compliant. And when the EU-US Privacy Shield became available, Microsoft was the first company to certify. See [Microsoft's certification to the Privacy Shield](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active), and read the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). The EU-US Privacy Shield helps customers that want to transfer their data to the US do so in a manner consistent with their data protection obligations.
 
 **What are the other Microsoft compliance offerings?**
 
@@ -259,7 +263,7 @@ Meeting compliance with the GDPR will cost time and money for most organizations
 
 The GDPR regulates the collection, storage, use, and sharing of 'personal data'. Personal data is defined broadly under the GDPR as any data that relates to an identified or identifiable natural person.
 
-Personal data can include, but is not limited to, online identifiers (for example, IP addresses), employee information, sales databases, customer services data, customer feedback forms, location data, biometric data, CCTV footage, loyalty scheme records, health, and financial information and much more. It can even include information that does not appear to be personal – such as a photo of a landscape without people – where that information is linked by an account number or unique code to an identifiable individual. And even personal data that has been pseudonymized can be personal data if the pseudonym can be linked to a particular individual. 
+Personal data can include, but is not limited to, online identifiers (for example, IP addresses), employee information, sales databases, customer services data, customer feedback forms, location data, biometric data, CCTV footage, loyalty scheme records, health, and financial information and much more. It can even include information that does not appear to be personal-such as a photo of a landscape without people-where that information is linked by an account number or unique code to an identifiable individual. And even personal data that has been pseudonymized can be personal data if the pseudonym can be linked to a particular individual. 
 
 Processing of certain "special" categories of personal data – such as personal data that reveals a person's racial or ethnic origin, or concerns their health or sexual orientation – is subject to more stringent rules than the processing of "ordinary" personal data. This evaluation of personal data is highly fact-specific, so we recommend engaging an expert to evaluate your specific circumstances.
 
