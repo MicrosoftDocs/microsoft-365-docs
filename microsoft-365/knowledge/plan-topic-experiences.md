@@ -47,6 +47,12 @@ When you set up topic experiences, you can choose from the following options:
 
 If you choose either **All, except selected sites** or **Only selected sites**, you can upload a .csv file with a list of sites. These options are useful if you're doing a pilot and you want to include a limited number of sites to start.
 
+You can copy the .csv template below:
+
+``` csv
+Site name,URL
+```
+
 We don't recommend choosing **No sites** because it prevents topics from being automatically created or updates. However, you can choose this option if you want to set up topic experiences and then add sites later.
 
 ## User permissions
