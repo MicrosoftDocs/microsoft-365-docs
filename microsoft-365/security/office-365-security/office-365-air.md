@@ -35,6 +35,7 @@ This article describes:
 - The [overall flow of AIR](#the-overall-flow-of-air);
 - [How to get AIR](#how-to-get-air); and 
 - The [required permissions](#required-permissions-to-use-air-capabilities) to configure or use AIR capabilities. 
+- Changes that are coming soon to your security center
 
 This article also includes [next steps](#next-steps), and resources to learn more.
 
@@ -127,9 +128,42 @@ Permissions are granted through certain roles, such as those that are described 
 - Your organization's security operations team (including security readers and those with the **Search and Purge** role)
 - End users
 
+
+## Changes are coming soon in your security center
+
+If you’re already using AIR capabilities in Microsoft Defender for Office 365, you’re about to see some changes in the [new and improved Microsoft 365 security center](microsoft-365-security-center-getting-started.md). 
+
+The new and improved security center brings together AIR capabilities in [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) and in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
+
+> [!TIP]
+> The new Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) replaces the following centers:
+> - Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com))
+> - Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com))
+>
+> In addition to the URL changing, there’s a new look and feel, designed to give your security team a more streamlined experience, with visibility to more threat detections in one place. 
+
+### What to expect
+
+The following table lists changes and improvements coming to AIR in Microsoft Defender for Office 365.
+
+
+|Item  |What's changing?  |
+|---------|---------|
+|**Investigations** page     | The updated **Investigations** page is more consistent with what you see in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#details-of-an-automated-investigation). You’ll see some general format and styling changes that align with the new, unified **Investigations** view. For example, the investigation graph has a more unified format.        |
+|**Users** tab |The **Users** tab is now the **Mailboxes** tab. Details about users are listed on the **Mailbox** tab. |
+|**Email** tab |The **Email** tab has been removed; visit the **Entities** tab to see a list of email and email cluster items. |
+|**Entities** tab |	The **Entities** tab has a tab-in-tab style that includes an all-summary view, and the ability to filter by entity type. The **Entities** tab now includes a **Go hunting** option in addition to the **Open in Explorer** option. You can now use either [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) or [advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) to find entities and threats, and filter on results. | 
+|**Actions** tab |The updated **Actions** tab now includes a **Pending actions** tab and an **Actions history** tab. Actions can be approved (or rejected) in a side pane that opens when you select a pending action. |
+|**Evidence** tab |	A new **Evidence** tab shows the key entity findings related to actions. Actions related to each piece of evidence can be approved (or rejected) in a side pane that opens when you select a pending action. |
+|**Action center** |The updated **Action center** (https://security.microsoft.com/action-center) brings together pending and completed actions across email, devices, and identities. Actions arising from either Microsoft Defender for Office 365 or Microsoft Defender for Endpoint are listed in the Action Center. To learn more, see Action center. (To learn more, see [The Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).)
+|**Incidents** page |The **Incidents** page now correlates multiple investigations together to provide a better consolidated view of investigations. ([Learn more about Incidents](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview).)
+
 ## Next steps
 
 - [See details and results of an automated investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#view-details-of-an-investigation)
 
 - [Review and approve pending actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-remediation-actions)
 
+## See also
+
+- [The Microsoft 365 Security center dashboard for Email & Collaboration](microsoft-365-security-center-dashboard.md)
