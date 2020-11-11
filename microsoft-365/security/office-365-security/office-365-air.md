@@ -8,7 +8,7 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 11/10/2020
+ms.date: 11/11/2020
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
