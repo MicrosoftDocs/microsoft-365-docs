@@ -51,3 +51,6 @@ The following table lists changes and improvements coming to AIR in Microsoft De
 |**Incidents** page |The **Incidents** page now correlates multiple investigations together to provide a better consolidated view of investigations. ([Learn more about Incidents](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview).)
 
 
+## See also
+
+[The Microsoft 365 Security center dashboard for Email & Collaboration](microsoft-365-security-center-dashboard.md)
