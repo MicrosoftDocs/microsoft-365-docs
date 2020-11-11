@@ -13,18 +13,9 @@ description: 'Learn how to set up Knowledge Management'
 
 # Set up Knowledge Management
 
-You can use the Microsoft 365 admin center to set up and configure [Knowledge Management](knowledge-management-overview.md). 
+You can use the Microsoft 365 admin center to set up and configure [Topic experiences](knowledge-management-overview.md). 
 
-It is important to plan the best way to set up and configure topics in your environment. Consider the following before you begin the procedures in this article:
-
-- Which SharePoint sites you want to crawl for topics.
-- Which users you want to make topics visible to.
-- Which users you want to give permissions to manage topics in the topic center.
-- Which users you want to give permissions to create or edit topics in the topic center.
-- What name you want to give your topic center.
-
-> [!Note]
-> You may find it useful to create security groups to assign your users the permissions needed to view topics, manage topic, and create and edit topics.
+It is important to plan the best way to set up and configure topics in your environment. Be sure to read [Plan topic experiences](plan-topic-experiences.md) before you begin the procedures in this article.
 
 You can also [make changes to your selected settings anytime after setup](topic-experiences-discovery.md) by using the topics settings in the Microsoft 365 admin center.
 
@@ -32,9 +23,9 @@ You can also [make changes to your selected settings anytime after setup](topic-
 
 You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Organizational knowledge tasks.
 
-## Set up your knowledge network
+## Set up topic experiences
 
-To set up topics in Microsoft 365
+To set up topic experiences in Microsoft 365
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**, and then view the **Organizational Knowledge** section.
 2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.
@@ -139,6 +130,15 @@ To assign licenses:
     > ![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/topic-experiences-licenses.png)
 
 6. Click **Save changes**.
+
+## Manage topic experiences
+
+Once you have set up topic experiences, you can change the settings that you chose during setup in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement). See the following references:
+
+- [Manage topic discovery in Microsoft 365](topic-experiences-discovery.md)
+- [Manage topic visibility in Microsoft 365](topic-experiences-knowledge-rules.md)
+- [Manage topic permissions in Microsoft 365](topic-experiences-user-permissions.md)
+- [Change the name of the topic center in Microsoft 365](topic-experiences-administration.md)
 
 ## See also
 

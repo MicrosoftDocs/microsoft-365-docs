@@ -13,7 +13,9 @@ description: "Learn how to plan for topics in Microsoft 365"
 
 # Plan topics in Microsoft 365
 
-It is important to plan the best way to set up and configure topics in your environment. Consider the following before you begin the procedures in this article:
+It is important to plan the best way to set up and configure topics in your environment.
+
+Consider the following before you begin the procedures in this article:
 
 - Which SharePoint sites you want to crawl for topics.
 - Which users you want to make topics visible to.
@@ -28,9 +30,9 @@ You can also [make changes to your selected settings anytime after setup](topic-
 
 ## Requirements
 
-You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Organizational knowledge tasks.
+You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up topic experiences.
 
-
+All users who are going to use topic experiences require a **Topic Experiences** license along with the associated **Graph Connectors Search with Index** and **Topic Experiences** app licenses.
 
 ## Topic discovery
 
@@ -69,41 +71,15 @@ You can choose to not allow anyone to contribute to topics, however this is not 
 
 *Topic viewers*
 
-We recommend everyone, but if you're doing a pilot you may want to choose only selected people or security groups.
-Type the people or security groups that you want to include.
-You can also choose no one if you want to set up the Knowledge Networktopic experiences, but not allow people to see topics yet.
+Topic viewers can see information on topic pages, in search results and when topics are highlighted in the content like SharePoint pages. Users can only see discovered topics when they have access to the files and pages the topic was discovered in.
 
+When setting up topic viewers, you can choose from:
 
-Who will see topic details, including topics highlighted in content?
-Who can manage topics
-Who can create and edit topics
-Who can edit a topic page layout?
-Who can see suggested topics to add to their profile?
-
-On the **Who can see topics and where they can see them** page, you will configure topic visibility. In the **Who can see topics in the knowledge network** setting, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages. You can select:
 - **Everyone in my organization**
 - **Only selected people or security groups**
 - **No one**
 
-
-> [!Note] 
-> While this setting allows you to select any user in your organization, only users who have knowledge management licenses assigned to them will be able to view topics.
-
-In the **Permissions for topic management** page, you choose who will be able to create, edit, or manage topics. In the **Who can create and edit topics** section, you can select:
-- **Everyone in my organization**
-- **Only selected people or security groups**
-- **No one**
-
-
-In the **Who can manage topics** section, you can select:
-- **Everyone in my organization**
-- **Only selected people or security groups**
-
-
-Select **Next**.
-
-
-
+We recommend **Everyone in my organization**, but if you're doing a pilot you may want to choose only selected people or security groups. You can also choose **No one** if you want to set up topic experiences, but not allow people to see topics yet.
 
 ## Knowledge rules
 
