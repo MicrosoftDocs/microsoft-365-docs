@@ -44,7 +44,7 @@ Data classification will scan your sensitive content and labeled content before 
 
 ## Prerequisites
 
-A number of different subscriptions support Endpoint DLP. To see licensing options for Endpoint DLP see [Information Protection licensing for guidance](https://docs.microsoft.com/en-us/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
+A number of different subscriptions support Endpoint DLP. To see licensing options for Endpoint DLP see [Information Protection licensing for guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
 
 ### Permissions
 
