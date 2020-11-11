@@ -1658,12 +1658,12 @@
 
 
     {
-      "source_path": "microsoft-365/set-up-knowledge-network.md",
+      "source_path": "microsoft-365/knowledge/set-up-knowledge-network.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/manage-knowledge-network.md",
+      "source_path": "microsoft-365/knowledge/manage-knowledge-network.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery",
       "redirect_document_id": false
     },
