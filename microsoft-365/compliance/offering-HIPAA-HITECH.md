@@ -51,7 +51,7 @@ To learn how the Microsoft Cloud helps customers support HIPAA and the HITECH re
 - [Azure and Azure Government](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
 - [Microsoft Cloud for Healthcare](https://aka.ms/MicrosoftCloudforHealthcareCompliance)
-- Microsoft Microsoft Healthcare Bot Service
+- Microsoft Healthcare Bot Service
 - Microsoft Stream
 - Microsoft Professional Services: Premier and On Premises for Azure, Dynamics 365, Intune, and for medium business and enterprise customers of Microsoft 365 for business
 - [Dynamics 365 and Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
@@ -76,7 +76,7 @@ Microsoft offers qualified companies or their suppliers a BAA that covers in-sco
 
 For Microsoft cloud services: The [HIPAA Business Associate Agreement](https://aka.ms/BAA) is available via the Online Services Terms by default to all customers who are covered entities or business associates under HIPAA. See 'Microsoft in-scope cloud services' on this webpage for the list of cloud services covered by this BAA.
 
-For Microsoft Professional Services services: The HIPAA Business Associate Amendment is available for in-scope Microsoft Professional Services upon request to your Microsoft services representative.
+For Microsoft Professional Services: The HIPAA Business Associate Amendment is available for in-scope Microsoft Professional Services upon request to your Microsoft services representative.
 
 **Does having a BAA with Microsoft ensure my organization's compliance with HIPAA and the HITECH Act?**
 
