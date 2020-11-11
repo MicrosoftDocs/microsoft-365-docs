@@ -1658,7 +1658,7 @@
     {
       "source_path": "microsoft-365/enterprise/recover-deleted-items-in-a-mailbox.md",
       "redirect_url": "https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/knowledge/set-up-knowledge-network.md",
