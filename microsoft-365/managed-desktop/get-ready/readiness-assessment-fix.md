@@ -23,7 +23,7 @@ For each check, the tool will report one of four possible results:
 |Not ready | *Enrollment will fail if you don't fix these issues.* Follow the steps in the tool or this article to resolve them.        |
 |Error | The Azure Active Director (AD) role you're using doesn't have sufficient permission to run this check. |
 
-## Microsoft Intune settings
+## Microsoft Intune settings (http://endpoint.microsoft.com/)
 
 ### Autopilot deployment profile
 
@@ -243,7 +243,7 @@ You have an "update ring" policy that targets all devices, all users, or both. C
 Make sure that any update ring policies you have exclude the **Modern Workplace Devices -All** Azure AD group. If you have assigned Azure AD user group to these policies, make sure that any update ring policies you have also excluded the **Modern Workplace -All** Azure AD group which includes your Microsoft Managed Desktop users. For steps, see [Manage Windows 10 software updates in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Both the **Modern Workplace Devices -All** and **Modern Workplace -All** Azure AD groups are assigned groups that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
 
 
-## Azure Active Directory settings
+## Azure Active Directory settings (https://portal.azure.com/)
 
 
 ### Ad hoc subscriptions
@@ -323,7 +323,7 @@ Microsoft Managed Desktop users will not have local administrator privileges on 
 
 ## Microsoft 365 Apps for enterprise
 
-### OneDrive for Business
+### OneDrive for Business (https://admin.onedrive.com/)
 
 The **Allow syncing only on PCs joined to specific domains** setting will conflict with Microsoft Managed Desktop.
 
