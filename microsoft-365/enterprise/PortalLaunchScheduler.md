@@ -42,7 +42,7 @@ To view existing portal launch configurations:
 1. Pass `Get-SPOPortalLaunchWaves  -LaunchSiteUrl  https://*.sharepoint.com/sites/newsite`.
 2. Pass the additional parameter `-DisplayFormat Raw` if you wish to see the wave collection formatted as a raw input format.
 
-## Commands for Bi-directional redirection
+## Commands for bi-directional redirection
 
 To migrate old site users to the new site in a staged manner:
 
@@ -53,13 +53,13 @@ To migrate old site users to the new site in a staged manner:
   `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/newsite" -RedirectionType Bidirectional -RedirectUrl "https://*.sharepoint.com/sites/oldsite" -ExpectedNumberOfUsers LessThan10kUsers -WaveOverrideUsers "*@microsoft.com" -Waves ' [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
 
 2. Complete validation.
-    a. It can take up to 5 minutes for the redirection to complete its configuration across the service, so please wait before continuing.
-    b. If you login with the user specified as `WaveOverrideUsers`, then nothing changes. You should be staying at the site you navigated to.
-    c. Login with a user who is part of *Viewers SG1*.
-       - Navigate to the old site and you should be redirected to the new site.
-       - Navigate to the new site and you should be stay on the new site.
-       - Log with user in *Viewers SG2* and navigate to the old site and stay on the old site.
-       - Navigate to the new site and you should be redirected to the old site.
+  - It can take up to 5 minutes for the redirection to complete its configuration across the service, so please wait before continuing.
+  - If you login with the user specified as `WaveOverrideUsers`, then nothing changes. You should be staying at the site you navigated to.
+  - Login with a user who is part of *Viewers SG1*.
+    - Navigate to the old site and you should be redirected to the new site.
+    - Navigate to the new site and you should be stay on the new site.
+    - Log with user in *Viewers SG2* and navigate to the old site and stay on the old site.
+    - Navigate to the new site and you should be redirected to the old site.
 
 3. Pause Portal launch.
   - If you need to pause the launch waves, you can pause them for "x" number of days. Setting the `Status` flag to pause prevents all upcoming wave progressions. 
@@ -85,17 +85,17 @@ To create a temporary page in any of the sites:
 
 2. Complete validation.
 
-    a. Wait five minutes before continuing, as the action can take up to five minutes to complete.
-    b. Log with the user who is part of *Viewers SG1* and:
-       - Navigate to the new site, and you should be stay on the new site.
-       - Navigate to the temp page, and you should be stay on the temp page.
-    c. Log with the user who is part of *Viewers SG2* and:
-       - Navigate to the new site, and you should be redirected to the temp page.
-       - Navigate to the temp page, and you should stay on the temp page.
+  - Wait five minutes before continuing, as the action can take up to five minutes to complete.
+  - Log with the user who is part of *Viewers SG1* and:
+     - Navigate to the new site, and you should be stay on the new site.
+     - Navigate to the temp page, and you should be stay on the temp page.
+  - Log with the user who is part of *Viewers SG2* and:
+     - Navigate to the new site, and you should be redirected to the temp page.
+     - Navigate to the temp page, and you should stay on the temp page.
 
 3. Delete a portal launch setup.
-    - `Remove-SPOPortalLaunchWaves - LaunchSiteUrl  https://*.sharepoint.com/sites/NewSite`.
-    - Validate that no redirection happens for all users
+  - `Remove-SPOPortalLaunchWaves - LaunchSiteUrl  https://*.sharepoint.com/sites/NewSite`.
+  - Validate that no redirection happens for all users.
 
 ## Learn more
 [Planning your portal launch roll-out plan in SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)
