@@ -100,6 +100,7 @@ The tables in the following sections describe the conditions and exceptions that
 
 This table describes the Exchange Online mail flow rule actions that are available in DLP.
 
+
 |**action in DLP**|**action parameters in Microsoft 365 PowerShell**|**property type**|**description**|
 |---------|---------|---------|---------|
 |Set header|SetHeader|First property: *Header Name* </br> Second property: *Header Value*|The SetHeader parameter specifies an action for the DLP rule that adds or modifies a header field and value in the message header. This parameter uses the syntax "HeaderName:HeaderValue". You can specify multiple header name and value pairs separated by commas|
