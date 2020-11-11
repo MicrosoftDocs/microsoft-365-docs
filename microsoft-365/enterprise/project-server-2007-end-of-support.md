@@ -101,7 +101,7 @@ If you can't migrate to Project Online, we recommend that you migrate to Project
 After each migration, you should check that your data migrated successfully.
   
 > [!NOTE]
-> If you're limited to an on-premeses solution and considering only migrating to Project Server 2010, it's important to note that it only has a few more years of support left. Project Server 2010 with Service Pack 2 end of support date is 10/13/2020. For more information about end of support dates, see [Microsoft Product Lifecycle Policy](https://go.microsoft.com/fwlink/p/?linkid=842066). 
+>
   
 ### How do I migrate to Project Server 2016?
 
