@@ -1,138 +1,82 @@
 ---
-title: 'Manage your knowledge management network(Preview) '
-description: 'How to set up Knowledge Management.'
+title: "Manage topic discovery in Microsoft 365"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 08/01/2020
 audience: admin
 ms.topic: article
 ms.service: o365-administration
-search.appverid: 
-ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: None
-
+search.appverid: MET150
+localization_priority: Normal
+description: "Learn how to administer topic discovery in Microsoft 365."
 ---
-# Manage your knowledge management network (Preview)
 
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+# Manage topic discovery in Microsoft 365
 
+You can manage topic discovery settings in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a global administrator or SharePoint administrator to perform these tasks.
 
-After you [set up knowledge management](set-up-topic-experiences.md), at any time afterwards an admin can make adjustments to your configuration settings through the Microsoft 365 admin center.
-
-For example, you may need to adjust your settings for any of the following:
-- Add new SharePoint sources to mine topics.
-- Change which users will have access to topics.
-- Change which users have permissions to do tasks on the topic center.
-- Change the name of your topic center
-
-
-## Requirements 
-You must have Global Admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and manage Organizational knowledge tasks.
-
-
-## To access knowledge management settings:
+## To access topics management settings:
 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational Knowledge** section.
-2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.<br/>
+2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.
 
-    ![Connect people to knowledge](../media/content-understanding/admin-org-knowledge-options.png) </br>
+    ![Connect people to knowledge](../media/admin-org-knowledge-options-completed.png) 
 
-3. On the **Connect people to knowledge** page, select **Manage** to open the **Knowledge network settings** pane.<br/>
+3. On the **Connect people to knowledge** page, select **Manage** to open the **Knowledge network settings** pane.
 
-    ![knowledge-network-settings](../media/content-understanding/knowledge-network-settings.png) </br>
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-discovery.png) 
+
+4. Select the **Topic discovery** tab. See the following sections for information about each setting.
 
 ## Change how the knowledge network can find topics
 
-Select the **Topic discovery** tab if you want to update your choices for  for SharePoint topic sources. This setting let you select the SharePoint sites in your tenant that will be crawled and mined for topics.
+You can change the SharePoint sites in your organization that will be crawled for topics.
 
 1. On the **Topic discovery** tab, under **Select SharePoint topic sources**, select **Edit**.
-2. On the **Select SharePoint topic sources** page, select which SharePoint sites will be crawled as sources for your topics during discovery. This includes:</br>
-    a. **All sites**: All SharePoint sites in your tenant. This captures current and future sites.</br>
-    b. **All, except selected sites**: Type the names of the sites you want to exclude.  You can also upload a list of sites you want to opt out from discovery. Sites created in the future will be included as sources for topic discovery. </br>
-    c. **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future will not be included as sources for topic discovery. </br>
+2. On the **Select SharePoint topic sources** page, select which SharePoint sites will be crawled as sources for your topics during discovery. This includes:
+    - **All sites**: All SharePoint sites in your tenant. This captures current and future sites.
+    - **All, except selected sites**: Type the names of the sites you want to exclude.  You can also upload a list of sites you want to opt out from discovery. Sites created in the future will be included as sources for topic discovery. 
+    - **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future will not be included as sources for topic discovery.
+    - **No sites**: Topics won't be automatically generated or updated with SharePoint content. Existing topics remain in the topic center.
 
-    ![Choose how to find topics](../media/content-understanding/k-manage-select-topic-source.png) </br>
+    ![Screenshot of SharePoint topic sources user interface](../media/k-manage-select-topic-source.png)
    
-    If you have a number of sites that you want to exclude (if you select **All, except selected sites**) or include (if you selected **Only selected sites**), you can choose to upload a CSV file with the site names and URLs. You can select **Download site template .csv** if you want to use the CSV template file.
+3. Click **Save**.
 
-3. Select **Save**.
+## Exclude topics by name
 
-##  Change who can see topics in your organization
+You can exclude topics from discovery.
 
-Select the **Topic discovery** tab if you want to update who in your organization can see discovered topics in search results and when topics are highlighted in content like SharePoint pages.
+1. On the **Topic discovery** tab, under **Select SharePoint topic sources**, select **Edit**.
+2. Click **Exclude topics by name**.
+3. If you need to create a list, download the .csv template and add the topics that you want to exclude (see *Working with the .csv template* below). When the file is ready, click **Browse** and upload the file.
+4. Click **Save**.
 
-1. On the **Topic discovery** tab, under **Who can see topics in the knowledge network**, select **Edit**.
-2. On the **Who can see topics in the knowledge network** page, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages. You can select:</br>
-    a. **Everyone in your organization**</br>
-    b. **Only selected people or security groups**</br>
-    c. **No one**</br>
+    ![Screenshot of exclude topics user interface](../media/km-manage-exclude-topics.png)
 
-    ![Who can see topics](../media/content-understanding/k-manage-who-can-see-topics.png) </br> 
-3. Select **Save**.  
- 
-> [!Note] 
-> While this setting allows you to select any user in your organization, only users who have knowledge management licenses assigned to them will be able to view topics.
+### Working with the .csv template
 
-## Change who has permissions to do tasks on the topic center
+In the CSV template, enter the following information about the topics you want to exclude:
 
-Select the **Topic permissions** tab if you want to update who has permissions to do the following in the topic center page:
+- **Name**: Type the name of the topic you want to exclude. There are two ways to do this:
+    - Exact match: You can include the exact name or acronym (for example, *Contoso* or *ATL*).
+    - Partial match: You can exclude all topics that have a specific word in it.  For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.
+- **Stands for (optional)**: If you want to exclude an acronym, type the words the acronym stands for.
+- **MatchType-Exact/Partial**: Type whether the name you entered was an *exact* or *partial* match type.
 
-- Which users can create and edit topics: Create new topics that were not found during discovery or edit existing topic page details.
-- Which users can manage topics: Confirm or reject discovered topics.
+![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
 
-To update who has permissions to create and edit topics:
+## Control if AI-suggested topics are visible to users
 
-1. On the **Topic permissions** tab, under **Who can create and edit topics**, select **Edit**.</br>
-2. On the **Who can create and edit topics** page, you can select:</br>
-    a. **Everyone in your organization**</br>
-    b. **Only selected people or security groups**</br>
+You can control if AI-suggested topics are visible to users in highlights and search results before they are approved by a knowledge manager. (By default, these topics are visible.)
 
-    ![Create and edit topics](../media/content-understanding/k-manage-who-can-create-and-edit.png) </br> 
+1. On the **Topic discovery** tab, click **Advanced settings**.
+2. Choose if you want to include suggested topics.
+3. Click **Save**.
 
-3. Select **Save**.</br>
-
-To update who has permissions to manage topics:
-
-1. On the **Topic permissions** tab, under **Who can manage topics**, select **Edit**.</br>
-2. On the **Who can manage topics** page, you can select:</br>
-    a. **Everyone in your organization**</br>
-    b. **Selected people or security groups**</br>
-
-    ![Manage topics](../media/content-understanding/k-manage-who-can-manage-topics.png) </br> 
-
-3. Select **Save**.</br>
-
-
-##  Update your topic center name
-
-Select the **Topic center** tab if you want to update the name of your topic center. 
-
-1. On the **Topic center** tab, under **Topic center name**, select **Edit**.
-2. On the **Edit topic center name** page, in the **Topic center name** box, type the new name for your topic center.
-3. Select **Save**
-
-    ![Edit topic center name](../media/content-understanding/manage-topic-center-name.png) </br> 
-
-
-
-
-
-
-
-
-
-
+![Screenshot of AI-suggested topics settings](../media/topics-suggested-topics-visible.png)
 
 ## See also
-
-
-
-  
-
-
-
 
 
 
