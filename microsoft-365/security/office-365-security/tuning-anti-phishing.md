@@ -10,6 +10,9 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-defender-office365
 - MET150
 description: "Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future."
 ---
@@ -25,15 +28,15 @@ Although Microsoft 365 comes with a variety of anti-phishing features that are e
 
 If a recipient's account was compromised as a result of the phishing message, follow the steps in [Responding to a compromised email account in Microsoft 365](responding-to-a-compromised-email-account.md).
 
-If your subscription includes Advanced Threat Protection (ATP), you can use [Office 365 Threat Intelligence](office-365-ti.md) to identify other users who also received the phishing message. You have additional options to block phishing messages:
+If your subscription includes Microsoft Defender for Office 365, you can use [Office 365 Threat Intelligence](office-365-ti.md) to identify other users who also received the phishing message. You have additional options to block phishing messages:
 
-- [ATP Safe Links](set-up-atp-safe-links-policies.md)
+- [Safe Links in Microsoft Defender for Office 365](set-up-atp-safe-links-policies.md)
 
-- [ATP Safe Attachments](set-up-atp-safe-attachments-policies.md)
+- [Safe Attachments in Microsoft Defender for Office 365](set-up-atp-safe-attachments-policies.md)
 
-- [ATP anti-phishing policies in Microsoft 365](configure-atp-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
+- [Anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
 
-Verify these ATP features are turned on.
+Verify these Defender for Office 365 features are turned on.
 
 ## Report the phishing message to Microsoft
 
@@ -51,7 +54,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - For messages that end up in quarantine by mistake, or for messages that are allowed through, we recommend that you search for those messages in [Threat Explorer and real-time detections](threat-explorer.md). You can search by sender, recipient, or message ID. After you locate the message, go to details by clicking on the subject. For a quarantined message, look to see what the "detection technology" was so that you can use the appropriate method to override. For an allowed message, look to see which policy allowed the message. 
 
-- Spoofed mail is tagged as phish in ATP. Sometimes spoof is benign, and sometimes users do not want it quarantined. To minimize impact to users, periodically review the [Spoof intelligence report](learn-about-spoof-intelligence.md). Once you have reviewed and made any necessary overrides, you can be confident to [configure spoof intelligence](set-up-anti-phishing-policies.md#spoof-settings) to **Quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
+- Spoofed mail is tagged as phish in Defender for Office 365. Sometimes spoof is benign, and sometimes users do not want it quarantined. To minimize impact to users, periodically review the [Spoof intelligence report](learn-about-spoof-intelligence.md). Once you have reviewed and made any necessary overrides, you can be confident to [configure spoof intelligence](set-up-anti-phishing-policies.md#spoof-settings) to **Quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
 
 - You can repeat the above step for Impersonation (domain or user). The Impersonation report is found under **Threat Management** \> **Dashboard** \> **Insights**.
 

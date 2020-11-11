@@ -15,6 +15,7 @@ ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
+- m365initiative-defender-office365
 ms.custom: 
 - TopSMBIssues
 - seo-marvel-apr2020
@@ -35,11 +36,11 @@ The following anti-spoofing technologies are available in EOP:
 
 - **Spoof intelligence**: Review spoofed messages from senders in internal and external domains, and allow or block those senders. For more information, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
-- **Anti-phishing policies**: In EOP, anti-phishing policies allow you to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and specify the action for blocked spoofed senders (move to the Junk Email folder or quarantine). Advanced anti-phishing policies that are available in Office 365 Advanced Threat Protection (Office 365 ATP) also contain anti-impersonation settings (protected senders and domains), mailbox intelligence settings, and adjustable advanced phishing thresholds. For more information, see [Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md).
+- **Anti-phishing policies**: In EOP, anti-phishing policies allow you to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and specify the action for blocked spoofed senders (move to the Junk Email folder or quarantine). Advanced anti-phishing policies that are available in Microsoft Defender for Office 365 also contain anti-impersonation settings (protected senders and domains), mailbox intelligence settings, and adjustable advanced phishing thresholds. For more information, see [Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md).
 
 - **Email authentication**: An integral part of any anti-spoofing effort is the use of email authentication (also known as email validation) by SPF, DKIM, and DMARC records in DNS. You can configure these records for your domains so destination email systems can check the validity of messages that claim to be from senders in your domains. For inbound messages, Microsoft 365 requires email authentication for sender domains. For more information, see [Email authentication in Microsoft 365](email-validation-and-authentication.md).
 
-As of October 2018, anti-spoofing protection is available in EOP. Before then, anti-spoofing protection was only available in organizations with Office 365 ATP.
+As of October 2018, anti-spoofing protection is available in EOP.
 
 EOP analyzes and blocks messages that can't be authenticated by the combination of standard email authentication methods and sender reputation techniques.
 
@@ -119,7 +120,7 @@ For more information about DMARC, see [Use DMARC to validate email in Microsoft 
 
 EOP organizations can use the **Spoof detections** report in the Reports dashboard in the Security & Compliance Center. For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
 
-Office 365 ATP organization can use Threat Explorer in the Security & Compliance Center to view information about phishing attempts. For more information, see [Microsoft 365 threat investigation and response](office-365-ti.md).
+Microsoft Defender for Office 365 organization can use Threat Explorer in the Security & Compliance Center to view information about phishing attempts. For more information, see [Microsoft 365 threat investigation and response](office-365-ti.md).
 
 ## Problems with anti-spoofing protection
 

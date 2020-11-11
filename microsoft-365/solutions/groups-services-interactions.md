@@ -10,6 +10,7 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH

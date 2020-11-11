@@ -40,8 +40,8 @@ It can take up to 24 hours for an add-in to show up for client for all users.
   
 ## Requirements
 
-Centralized deployment of add-ins requires that the users are using Microsoft 365 Apps for enterprise, or Microsoft 365 Business Premium (and are signed into Office using their organizational ID), and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in, or federated to Azure Active Directory.
-You can view specific requirements for Office and Exchange below, or use the[Centralized Deployment Compatibility Checker](#centralized-deployment-compatibility-checker).
+Centralized deployment of add-ins requires that the users are using Microsoft 365 Apps for Microsoft 365 for enterprise, or Microsoft 365 for business (and are signed into Office using their organizational ID), and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in, or federated to Azure Active Directory.
+You can view specific requirements for Office and Exchange below, or use the [Centralized Deployment Compatibility Checker](#centralized-deployment-compatibility-checker).
 
 Centralized Deployment doesn't support the following:
   
@@ -56,11 +56,11 @@ Centralized Deployment doesn't support the following:
 ### Office Requirements
 
 - For Word, Excel, and PowerPoint add-ins, your users must be using one of the following:
-  - On a Windows device, Version 1704 or later of Microsoft 365 Apps for enterprise, or Microsoft 365 Business Premium.
+  - On a Windows device, Version 1704 or later of Microsoft 365 Apps for Microsoft 365 for enterprise, or Microsoft 365 for business.
   - On a Mac, Version 15.34 or later.
 
 - For Outlook, your users must be using one of the following: 
-  - Version 1701 or later of Microsoft 365 Apps for enterprise, or Microsoft 365 Business Premium.
+  - Version 1701 or later of Microsoft 365 Apps for Microsoft 365 for enterprise, or Microsoft 365 for business.
   - Version 1808 or later of Office Professional Plus 2019 or Office Standard 2019.
   - Version 16.0.4494.1000 or later of Office Professional Plus 2016 (MSI) or Office Standard 2016 (MSI)\*
   - Version 15.0.4937.1000 or later of Office Professional Plus 2013 (MSI) or Office Standard 2013 (MSI)\*
@@ -129,7 +129,8 @@ When the tool finishes running, it produces an output file in comma-separated (.
     
 - Supported Mailbox - If they are on an OAuth-enabled mailbox
 
-
+> [!NOTE]
+> Multifactor authentication is not supported when using the Central Deployment PowerShell module.
   
 ## User and group assignments
 
@@ -166,4 +167,3 @@ If you or your users encounter problems loading the add-in while using Office ap
 |Office  <br/> | Charles/Fiddler logs  <br/>  Tenant ID ( [learn how](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID. View the source of one of the office pages and look for the Correlation ID value and send it to support:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Rich clients (Windows, Mac)  <br/> | Charles/Fiddler logs  <br/>  Build numbers of the client app (preferably as a screenshot from **File/Account**)  <br/> |
    
-

@@ -15,7 +15,9 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
@@ -25,9 +27,9 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Office 365 ATP. Use this reference to construct queries that return information from this table.
+The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Microsoft Defender for Office 365. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 

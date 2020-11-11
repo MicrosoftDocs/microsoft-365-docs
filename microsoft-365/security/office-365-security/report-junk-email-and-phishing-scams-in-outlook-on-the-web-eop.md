@@ -2,7 +2,7 @@
 title: Report junk and phishing email in Outlook on the web
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date:
@@ -31,7 +31,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online, you can use th
 
 - Admins can disable or enable the ability for users to report messages to Microsoft in Outlook on the web. For details, see the [Disable or enable junk email reporting in Outlook on the web](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) section later in this topic.
 
-- You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [Specify a mailbox for user submissions of spam and phishing messages in Exchange Online](user-submission.md).
+- You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).
 
 - For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 

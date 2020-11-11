@@ -57,7 +57,7 @@ The first row, or header row, of the CSV file lists the required column names. T
 
 The following table describes each column in the CSV file:
 
-|**Column name**|**Description**|
+| Column name | Description |
 |:-----|:-----|
 | **EmailAddress** <br/> |Specifies the email address of the terminated employee.|
 | **TerminationDate** <br/> |Specifies the date the person's employment was officially terminated in your organization. For example, this may be the date when the employee gave their notice about leaving your organization. This date may be the different than the date of the person's last day of work. Use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -78,9 +78,9 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 4. On the **Authentication credentials** page, do the following and then click **Next**:
 
-   a. Type or paste the Azure AD application ID for the Azure app that you created in Step 1.
+   1. Type or paste the Azure AD application ID for the Azure app that you created in Step 1.
 
-   b. Type a name for the HR connector.
+   1. Type a name for the HR connector.
 
 5. On the **File mapping** page, type the names of the three column headers (also called *parameters*) from the CSV file that you created in Step 2 in each of the appropriate boxes. The names are not case-sensitive. As previously explained, the names that you type in these boxes must match the parameter names in your CSV file. For example, the following screenshot shows the parameter names from the example in sample CSV file shown in Step 2.
 
@@ -92,9 +92,9 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
    ![Review page with job ID and link to github for sample script](../media/HRConnector_Confirmation.png)
 
-   a. **Job ID.** You'll need this job ID to run the script in the next step. You can copy it from this page or from the connector flyout page.
+   1. **Job ID.** You'll need this job ID to run the script in the next step. You can copy it from this page or from the connector flyout page.
    
-   b. **Link to sample script.** Click the **here** link to go to the GitHub site to access the sample script (the link opens a new window). Keep this window open so that you can copy the script in Step 4. Alternatively, you can bookmark the destination or copy the URL so you can access it again in Step 4. This link is also available on the connector flyout page.
+   1. **Link to sample script.** Click the **here** link to go to the GitHub site to access the sample script (the link opens a new window). Keep this window open so that you can copy the script in Step 4. Alternatively, you can bookmark the destination or copy the URL so you can access it again in Step 4. This link is also available on the connector flyout page.
 
 7. Click **Done**.
 
@@ -132,7 +132,7 @@ The last step in setting up an HR connector is to run a sample script that will 
 
    The following table describes the parameters to use with this script and their required values. The information you obtained in the previous steps is used in the values for these parameters.
 
-   |**Parameter**|**Description**
+   | Parameter | Description |
    |:-----|:-----|:-----|
    |`tenantId`|The Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenant Id for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
    |`appId` |The Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. |
@@ -158,7 +158,7 @@ After you create the HR connector and run the script to upload your HR data, you
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
 
-2. Click the **Connectors** tab and then select the HR connector to display the flyout page, which contains the properties and information about the connector.
+2. Click the **Connectors** tab and then select the HR connector to display the flyout page. This page contains the properties and information about the connector.
 
    ![HR connector flyout page with properties and status](../media/HRConnectorFlyout1.png)
 
@@ -186,31 +186,31 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 5. Under **Security options**, do the following:
 
-   a. Determine whether to run the script only when you're logged on to the computer or run it when you're logged on or not.
+   1. Determine whether to run the script only when you're logged on to the computer or run it when you're logged on or not.
    
-   b. Make sure that the **Run with the highest privileges** checkbox is selected.
+   1. Make sure that the **Run with the highest privileges** checkbox is selected.
 
 6. Select the **Triggers** tab, click **New**, and then do the following things:
 
-   a. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will every day at the same specified time.
+   1. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will every day at the same specified time.
    
-   b. Under **Advanced settings**, make sure the **Enabled** checkbox is selected.
+   1. Under **Advanced settings**, make sure the **Enabled** checkbox is selected.
    
-   c. Click **Ok**.
+   1. Click **Ok**.
 
 7. Select the **Actions** tab, click **New**, and then do the following things:
 
    ![Action settings to create a new scheduled task for the HR connector script](../media/HRConnectorScheduleTask1.png)
 
-   a. In the **Action** dropdown list, make sure that **Start a program** is selected.
+   1. In the **Action** dropdown list, make sure that **Start a program** is selected.
 
-   b. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`.
+   1. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`.
 
-   c. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+   1. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
-   d. In the **Start in (optional)** box, paste the folder location of the script that you ran in Step 4. For example, `C:\Users\contosoadmin\Desktop\Scripts`.
+   1. In the **Start in (optional)** box, paste the folder location of the script that you ran in Step 4. For example, `C:\Users\contosoadmin\Desktop\Scripts`.
 
-   e. Click **Ok** to save the settings for the new action.
+   1. Click **Ok** to save the settings for the new action.
 
 8. In the **Create Task** window, click **Ok** to save the scheduled task. You might be prompted to enter your user account credentials.
 

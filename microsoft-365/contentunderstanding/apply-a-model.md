@@ -1,21 +1,17 @@
 ---
-title: "Apply a Document understanding model to a document library (Preview)"
+title: "Apply a document understanding model to a document library"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+localization_priority: Priority
 description: "Learn how to apply a published a model to a SharePoint document library"
 ---
 
-# Apply a document understanding model (Preview)
-
-> The content in this article is for the the Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+# Apply a document understanding model in Microsoft SharePoint Syntex
 
 </br>
 
@@ -23,7 +19,7 @@ description: "Learn how to apply a published a model to a SharePoint document li
 
 </br>
 
-After publishing your document understanding model, you can apply it to a SharePoint document library in your Microsoft 365 tenant.
+After publishing your document understanding model, you can apply it to one or more SharePoint document library in your Microsoft 365 tenant.
 
 > [!NOTE]
 > You are only able to apply the model to document libraries that you have access to.
@@ -33,11 +29,11 @@ After publishing your document understanding model, you can apply it to a ShareP
 
 To apply your model to to a SharePoint document library:
 
-1. From the model home page, on the **Apply model to libraries** tile, select **Publish model**. Or you can select  **+Add Library** in the **Libraries with this model** section. </br>
+1. On model home page, on the **Apply model to libraries** tile, select **Publish model**. Or you can select  **+Add Library** in the **Libraries with this model** section. </br>
 
     ![Add model to library](../media/content-understanding/apply-to-library.png)</br>
 
-2. Select the SharePoint site that contains the document library that you want to apply the model to. If the site does not show in the list, use the search box to find it.</br>
+2. You can then select the SharePoint site that contains the document library that you want to apply the model to. If the site does not show in the list, use the search box to find it.</br>
 
     ![Select a site](../media/content-understanding/site-search.png)</br>
 
@@ -48,18 +44,18 @@ To apply your model to to a SharePoint document library:
 
     ![Select a doc library](../media/content-understanding/select-doc-library.png)</br>
 
-4. Since the model is associated to a content type, when you apply it to the library it creates a view for the content type with the labels you extracted showing as columns. This view is the library's default view by default, but you can optionally choose to not have it be the default view by selecting **Advanced settings** and deselecting **Set this new view as default**.</br>
+4. Since the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns. This view is the library's default view by default, but you can optionally choose to not have it be the default view by selecting **Advanced settings** and deselecting **Set this new view as default**.</br>
 
     ![Library view](../media/content-understanding/library-view.png)</br>
 
 5. Select **Add** to apply the model to the library. 
 6. On the model home page, in the **Libraries with this model** section, you should see the URL to the SharePoint site listed.</br>
 
-    ![Library view](../media/content-understanding/selected-library.png)</br>
+    ![Selected library](../media/content-understanding/selected-library.png)</br>
 
 7. Go to your document library and make sure you are in the model's document library view. Notice that if you select the information button next to the document library name, a message notes that your model has been applied to the document library.
 
-    ![Library view](../media/content-understanding/info-du.png)</br> 
+    ![Information view](../media/content-understanding/info-du.png)</br> 
 
 
 After applying the model to the document library, you can begin uploading documents to the site and see the results.
@@ -77,7 +73,10 @@ While an applied model processes all files uploaded to the document library afte
       ![Classify and extract](../media/content-understanding/extract-classify.png)</br> 
 
 ## See Also
-[Create a classifier](create-a-classifier.md)</br>
-[Create an extractor](create-an-extractor.md)</br>
-[Document Understanding overview](document-understanding-overview.md)</br>
-[Create a form processing model](create-a-form-processing-model.md)  
+[Create a classifier](create-a-classifier.md)
+
+[Create an extractor](create-an-extractor.md)
+
+[Document Understanding overview](document-understanding-overview.md)
+
+

@@ -1,5 +1,5 @@
 ---
-title: Advanced hunting query best practices in Microsoft Threat Protection
+title: Advanced hunting query best practices in Microsoft 365 Defender
 description: Learn how to construct fast, efficient, and error-free threat hunting queries with advanced hunting
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema, kusto, avoid timeout, command lines, process id, optimize, best practice, parse, join, summarize
 search.product: eADQiWindows 10XVcnh
@@ -15,7 +15,9 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
@@ -25,14 +27,14 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 Apply these recommendations to get results faster and avoid timeouts while running complex queries. For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## Understand CPU resource limits
-Depending on its size, each tenant has access to a set amount of CPU resources allocated for running advanced hunting queries. For detailed information about various service limits, [read about advanced hunting limits](advanced-hunting-limits.md).
+## Understand CPU resource quotas
+Depending on its size, each tenant has access to a set amount of CPU resources allocated for running advanced hunting queries. For detailed information about various service limits, [read about advanced hunting quotas and usage parameters](advanced-hunting-limits.md).
 
-Customers who run multiple queries regularly should track consumption and apply the optimization guidance in this article to minimize disruption resulting from exceeding the limits.
+Customers who run multiple queries regularly should track consumption and apply the optimization guidance in this article to minimize disruption resulting from exceeding quotas or usage parameters.
 
 ## General optimization tips
 
@@ -49,7 +51,7 @@ Customers who run multiple queries regularly should track consumption and apply 
 
 - **Has beats contains**—To avoid searching substrings within words unnecessarily, use the `has` operator instead of `contains`. [Learn about string operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
 - **Look in specific columns**—Look in a specific column rather than running full text searches across all columns. Don't use `*` to check all columns.
-- **Case-sensitive for speed**—Case-sensitive searches are more specific and generally more performant. Names of case-sensitive [string operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators), such as `has_cs` and `contains_cs`, generally end with `_cs`. You can also use the case-sensitive equals operator `==` instead of `~=`.
+- **Case-sensitive for speed**—Case-sensitive searches are more specific and generally more performant. Names of case-sensitive [string operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators), such as `has_cs` and `contains_cs`, generally end with `_cs`. You can also use the case-sensitive equals operator `==` instead of `=~`.
 - **Parse, don't extract**—Whenever possible, use the [parse operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) or a parsing function like [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Avoid the `matches regex` string operator or the [extract() function](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction), both of which use regular expression. Reserve the use of regular expression for more complex scenarios. [Read more about parsing functions](#parse-strings)
 - **Filter tables not expressions**—Don't filter on a calculated column if you can filter on a table column.
 - **No three-character terms**—Avoid comparing or filtering using terms with three characters or fewer. These terms are not indexed and matching them will require more resources.
@@ -258,7 +260,7 @@ To learn about all supported parsing functions, [read about Kusto string functio
 
 ## Related topics
 - [Kusto query language documentation](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [Service limits](advanced-hunting-limits.md)
+- [Quotas and usage parameters](advanced-hunting-limits.md)
 - [Handle advanced hunting errors](advanced-hunting-errors.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)

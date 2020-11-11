@@ -95,6 +95,11 @@ As a user, you can view, release, and delete quarantined messages where you are 
      - **Spam**
 
      - **Phish**
+     
+   - **Policy Type**: Filter messages by policy type:
+     - **Anti-phish policy**
+     - **Hosted content filter policy**
+     
 
    To clear the filter, click **Clear**. To hide the filter flyout, click **Filter** again.
 
@@ -103,6 +108,8 @@ As a user, you can view, release, and delete quarantined messages where you are 
    - **Message ID**: The globally unique identifier of the message. If you select a message in the list, the **Message ID** value appears in the **Details** flyout pane that appears. Admins can use [message trace](message-trace-scc.md) to find messages and their corresponding Message ID values.
 
    - **Sender email address**: A single sender's email address.
+   
+   - **Policy name**: Use the entire policy name of the message. The search is not case-sensitive.
 
    - **Recipient email address**: A single recipient's email address.
 

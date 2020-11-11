@@ -11,7 +11,10 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
 ---
 
 # Get started with insider risk management
@@ -19,7 +22,7 @@ ms.collection: m365-security-compliance
 Use insider risk management policies to identify risky activities and management tools to act on risk alerts in your organization. Complete the following steps to set up prerequisites and configure an insider risk management policy.
 
 >[!IMPORTANT]
->The Microsoft 365 insider risk management solution provides a tenant level option to help customers facilitate internal governance at the user level. Tenant level administrators can set up permissions to provide access to this solution for members of your organization and set up data connectors in the Microsoft 365 compliance center to import relevant data to support user level identification of potentially risky activity. Customers acknowledge insights related to the individual users behavior, character, or performance materially related to employment can be calculated by the administrator and made available to others in the organization.
+>The Microsoft 365 insider risk management solution provides a tenant level option to help customers facilitate internal governance at the user level. Tenant level administrators can set up permissions to provide access to this solution for members of your organization and set up data connectors in the Microsoft 365 compliance center to import relevant data to support user level identification of potentially risky activity. Customers acknowledge insights related to the individual user's behavior, character, or performance materially related to employment can be calculated by the administrator and made available to others in the organization. In addition, customers acknowledge that they must conduct their own full investigation related to the individual user's behavior, character, or performance materially related to employment, and not just rely on insights from the insider risk management service. Customers are solely responsible for using the Microsoft 365 insider risk management service, and any associated feature or service in compliance with all applicable laws, including laws relating to individual user identification and any remediation actions.
 
 For more information about how insider risk policies can help you manage risk in your organization, see [Insider risk management in Microsoft 365](insider-risk-management.md).
 
@@ -40,6 +43,9 @@ If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try i
 
 ## Step 1: Enable permissions for insider risk management
 
+>[!Important]
+>After configuring your role groups, it may take up to 30 minutes for the role group permissions to apply to assigned users across your organization.
+
 There are four roles groups used to configure permissions to manage insider risk management features. To continue with these configuration steps, your tenant administrators must first assign you to the **Insider Risk Management** or **Insider Risk Management Admin** role group. To access and manage insider risk management features after initial configuration, users must be a member of at least one insider risk management role group.
 
 Depending on the structure of your compliance management team, you have options to assign users to specific role groups to manage different sets of insider risk management features. Choose from these role group options when configuring insider risk management:
@@ -50,6 +56,9 @@ Depending on the structure of your compliance management team, you have options 
 | **Insider Risk Management Admin** | Use this role group to initially configure insider risk management and later to segregate insider risk administrators into a defined group.  Users in this role group can create, read, update, and delete insider risk management policies, global settings, and role group assignments. |
 | **Insider Risk Management Analysts** | Use this group to assign permissions to users that will act as insider risk case analysts. Users in this role group can access all insider risk management alerts, cases, and notices templates. They cannot access the insider risk Content Explorer. |
 | **Insider Risk Management Investigators** | Use this group to assign permissions to users that will act as insider risk data investigators. Users in this role group can access all insider risk management alerts, cases, notices templates, and the Content Explorer. |
+
+> [!NOTE]
+> These role groups are currently not supported on Privileged Identity Management (PIM). To learn more about PIM, see [Assign Azure AD roles in Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
 
 ### Add users to an insider risk management role group
 
@@ -151,7 +160,7 @@ Before configuring a policy, define the following insider risk settings:
     - [Anomaly detections](insider-risk-management-settings.md#anomaly-detections)
     - [Offensive language detections](insider-risk-management-settings.md#offensive-language-detections)
     - [Alert volume level](insider-risk-management-settings.md#alert-volume)
-    - [Microsoft 365 Defender Advanced Threat Protection alert status](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview)
+    - [Microsoft Defender for Endpoint alert status](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Domain settings](insider-risk-management-settings.md#domains-preview)
 6. On the **Export alerts** page, enable export of insider risk alert information using the Office 365 Management APIs if needed.
 7. On the **Priority user groups** page, create a priority user group and add users if not created in **Step 3**.

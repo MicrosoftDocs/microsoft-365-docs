@@ -3,7 +3,6 @@ title: "Microsoft 365 data locations"
 ms.author: deanw
 author: dmwmsft
 manager: laurawi
-ms.date: 07/22/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,7 +15,7 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: "Summary: Microsoft 365 data locations"
+description: "Determine where your Microsoft 365 customer data is stored worldwide"
 ---
 
 <!--
@@ -36,7 +35,7 @@ Find information about the contractual commitments for the storage location of c
 For Azure Active Directory data locations, please visit [AAD Data Map](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-Due to the unprecedented circumstances around COVID-19 and the need to manage online services demand, if your organization is an educational institution in Europe, we may provision your Office 365 tenant in, transfer your data to, and store your data at rest within the European Union.  If your organization is an educational institution in India, we may provision your Office 365 tenant in, transfer your data to, and store your data at rest within India, Europe, or the United States.  If your organization is an educational institution in South Africa, we may provision your Office 365 tenant in, transfer your data to, and store your data at rest within South Africa or Europe. Our commitment to compliance, privacy, and security remains unchanged while we implement necessary and prudent measures to maintain service availability. We will comply with all applicable law with respect to data transfers.
+If Customer’s billing address is outside Europe and Customer has an Office 365 Education subscription, then notwithstanding the “Location of Customer Data at Rest for Core Online Services” section of the OST, Microsoft may provision Customer’s Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within Europe or North America.  If Customer’s billing address is in Europe and Customer has an Office 365 Education subscription, then notwithstanding the “Location of Customer Data at Rest for Core Online Services” section of the OST, Microsoft may provision Customer’s Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within the European Union.
 
 
 
@@ -470,7 +469,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Yammer | United States |
 | OneNote Services | Australia |
 | Stream | Australia |
-| Whiteboard | United States |
+| Whiteboard | Australia |
 | Forms | United States |
 | Workplace Analytics | United States |
 </p></details>

@@ -11,7 +11,10 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
 ---
 
 # Get started with insider risk management settings
@@ -51,8 +54,8 @@ Alerts are triggered by policies when users perform activities related to policy
 Policy indicators are segmented into the following areas. You can choose the indicators to activate and customize indicator event limits for each indicator level when creating an insider risk policy:
 
 - **Office indicators**: These include policy indicators for SharePoint sites, Teams, and email messaging.
-- **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activity involving Microsoft Office files, .CSV files, and .PDF files. If you select **Device indicators**, activity is processed only for devices with Windows 10 Build 1809 or higher. For more information on configuring devices for integration with insider risk, see [Getting started with Endpoint DLP](endpoint-dlp-getting-started.md).
-- **Security policy violation indicator**: These include indicators from Microsoft Defender ATP related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Microsoft Defender ATP license and insider risk integration enabled. For more information on configuring Microsoft Defender ATP for insider risk management integration, see [Configure advanced features in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
+- **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activity involving Microsoft Office files, .CSV files, and .PDF files. If you select **Device indicators**, activity is processed only for devices with Windows 10 Build 1809 or higher. For more information on configuring devices for integration with insider risk, see the following [Enable device indicators and onboard devices](insider-risk-management-settings.md#OnboardDevices) section.
+- **Security policy violation indicator**: These include indicators from Microsoft Defender for Endpoint related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Defender for Endpoint license and insider risk integration enabled. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Risk score boosters**: These include raising the risk score for unusual activities or past policy violations. Enabling risk score boosters increase risk scores and the likelihood of alerts for these types of activities. Risk score boosters can only be selected if one or more indicators above are selected.
 
 ![Insider risk management indicator settings](../media/insider-risk-settings-indicators.png)
@@ -63,6 +66,73 @@ To define the insider risk policy indicators that are enabled in all insider ris
 
 >[!NOTE]
 >It may take several hours for new manually-added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab on the details pane.
+
+### Enable device indicators and onboard devices
+<a name="OnboardDevices"> </a>
+
+To enable the monitoring of risk activities on devices and include policy indicators for these activities, your devices must meet the following requirements and you must complete the following onboarding steps.
+
+#### Step 1: Prepare your endpoints
+
+Make sure that the Windows 10 devices that you plan on reporting in insider risk management meet these requirements.
+
+1. Must be running Windows 10 x64 build 1809 or later and must have installed the [Windows 10 update (OS Build 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) from February 20, 2020.
+2. All devices must be [Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), or Hybrid Azure AD joined.
+3. Install Microsoft Chromium Edge browser on the endpoint device to monitor actions for the cloud upload activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+
+#### Step 2: Onboarding devices
+<a name="OnboardStep2"> </a>
+
+You must enable device monitoring and onboard your endpoints before you can monitor for insider risk management activities on a device. Both of these actions are done in the Microsoft 365 Compliance portal.
+
+When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy as outlined in the following steps.
+
+If you already have devices onboarded into [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/), they will already appear in the managed devices list. Follow [Step 3: If you have devices onboarded into Microsoft Defender for Endpoint](insider-risk-management-settings.md#OnboardStep3) in the next section.
+
+In this deployment scenario, you'll onboard devices that have not been onboarded yet, and you just want to monitor insider risk activities on Windows 10 devices.
+
+1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
+2. Open the Compliance Center settings page and choose **Onboard devices**.
+
+   > [!NOTE]
+   > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
+
+3. Choose **Device management** to open the **Devices** list. The list will be empty until you onboard devices.
+4. Choose **Onboarding** to begin the onboarding process.
+5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
+    - Onboard Windows 10 machines using Group Policy
+    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
+    - Onboard Windows 10 machines using Mobile Device Management tools
+    - Onboard Windows 10 machines using a local script
+    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
+
+Once done and endpoint is onboarded, it should be visible in the devices list and the endpoint will start reporting audit activity logs to insider risk management.
+
+> [!NOTE]
+> This experience is under license enforcement. Without the required license, data will not be visible or accessible.
+
+#### Step 3: If you have devices onboarded into Microsoft Defender for Endpoint
+<a name="OnboardStep3"> </a>
+
+If Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in, all these endpoints will appear in the managed devices list. You can continue to onboard new devices into insider risk management to expand coverage by using the [Step 2: Onboarding devices](insider-risk-management-settings.md#OnboardStep2) section.
+
+1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
+2. Open the Compliance Center settings page and choose **Enable device monitoring**.
+3. Choose **Device management** to open the **Devices** list. You should see the list of devices that are already reporting in to Microsoft Defender for Endpoint.
+4. Choose **Onboarding** if you need to onboard additional devices.
+5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **Download package**.
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
+    - Onboard Windows 10 machines using Group Policy
+    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
+    - Onboard Windows 10 machines using Mobile Device Management tools
+    - Onboard Windows 10 machines using a local script
+    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
+
+Once done and endpoint is onboarded, it should be visible under the **Devices** table and the endpoint will start reporting audit activity logs to insider risk management.
+
+> [!NOTE]
+>This experience is under license enforcement. Without the required license, data will not be visible or accessible.
 
 ### Indicator level settings (preview)
 
@@ -120,23 +190,23 @@ User activities detected by insider risk policies are assigned a specific risk s
 - **Default volume**: You'll see all high severity alerts and a balanced amount of medium and low severity alerts.
 - **More alerts**: You'll see all medium and high severity alerts and most low severity alerts. This setting level might result in more false positives.
 
-### Microsoft Defender Advanced Threat Protection (preview)
+### Microsoft Defender for Endpoint (preview)
 
-[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (ATP) is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. To have better visibility of security violation in your organization, you can import and filter Microsoft Defender ATP alerts for activities used in policies created from insider risk management security violation policy templates.
+[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. To have better visibility of security violation in your organization, you can import and filter Defender for Endpoint alerts for activities used in policies created from insider risk management security violation policy templates.
 
-Depending on the types of signals you are interested in, you can choose to import alerts to insider risk management based on the Microsoft Defender ATP alert triage status. You can define one or more of the following alert triage statuses in the global settings to import:
+Depending on the types of signals you are interested in, you can choose to import alerts to insider risk management based on the Defender for Endpoint alert triage status. You can define one or more of the following alert triage statuses in the global settings to import:
 
 - Unknown
 - New
 - In progress
 - Resolved
 
-Alerts from Microsoft Defender ATP are imported daily. Depending on the triage status you choose, you may see multiple user activities for the same alert as the triage status changes in Microsoft Defender ATP.
+Alerts from Defender for Endpoint are imported daily. Depending on the triage status you choose, you may see multiple user activities for the same alert as the triage status changes in Defender for Endpoint.
 
-For example, if you select *New*, *In progress*, and *Resolved* for this setting, when a Microsoft Defender ATP alert is generated and the status is *New*, an initial alert activity is imported for the user in insider risk. When the Microsoft Defender ATP triage status changes to *In progress*, a second activity for this alert is imported for the user in insider risk. When the final Microsoft Defender ATP triage status of *Resolved* is set, a third activity for this alert is imported for the user in insider risk. This functionality allows investigators to follow the progression of the Microsoft Defender ATP alerts and choose the level of visibility that their investigation requires.
+For example, if you select *New*, *In progress*, and *Resolved* for this setting, when a Microsoft Defender for Endpoint alert is generated and the status is *New*, an initial alert activity is imported for the user in insider risk. When the Defender for Endpoint triage status changes to *In progress*, a second activity for this alert is imported for the user in insider risk. When the final Defender for Endpoint triage status of *Resolved* is set, a third activity for this alert is imported for the user in insider risk. This functionality allows investigators to follow the progression of the Defender for Endpoint alerts and choose the level of visibility that their investigation requires.
 
 >[!IMPORTANT]
->You'll need to have Microsoft Defender ATP configured in your organization and enable Microsoft Defender ATP for insider risk management integration in the Defender Security Center to import security violation alerts. For more information on configuring Microsoft Defender ATP for insider risk management integration, see [Configure advanced features in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
+>You'll need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 
 ### Domains (preview)
 
@@ -291,16 +361,19 @@ Complete the following steps to delete a priority physical asset:
 
 Customers with Microsoft 365 subscriptions that include insider risk management do not need additional Power Automate licenses to use the recommended insider risk management Power Automate templates. These templates can be customized to support your organization and cover core insider risk management scenarios. If you choose to use premium Power Automate features in these templates, create a custom template using the Microsoft 365 compliance connector, or use Power Automate templates for other compliance areas in Microsoft 365, you may need additional Power Automate licenses.
 
+>[!IMPORTANT]
+>Are you receiving prompts for additional license validation when testing Power Automate flows? Your organization may not have received service updates for this preview feature yet. Updates are being deployed and all organizations with Microsoft 365 subscriptions that include insider risk management should have license support for flows created from the recommended Power Automate templates by October 30, 2020.
+
 The following Power Automate templates are provided to customers to support process automation for insider risk management users and cases:
 
-- **Notify users when they're added to an insider risk policy**: This template is for organizations that have internal policies, privacy, or regulatory requirements that users must be notified when they are subject to insider risk management policies. When this flow is configured and selected for a user in the users page, users and their managers are sent an email message when the user is added to an insider risk management policy. This template also supports updating a SharePoint list hosted on a SharePoint site to help track notification message details like date/time and the message recipient. Power Automate flows using this template are available on the **Users dashboard**.
-- **Request information from HR or business about a user in an insider risk case**: When acting on a case, insider risk analysts and investigators may need to consult with HR or other stakeholders to understand the context of the case activities. When this flow is configured and selected for a case, analysts and investigators send an email message to HR and business stakeholders configured for this flow. Each recipient is sent a message with pre-configured or customizable response options. When recipients select a response option, the response is recorded as a case note and includes recipient and date/time information. Power Automate flows using this template are available on the **Cases dashboard**.
+- **Notify users when they're added to an insider risk policy**: This template is for organizations that have internal policies, privacy, or regulatory requirements that users must be notified when they are subject to insider risk management policies. When this flow is configured and selected for a user in the users page, users and their managers are sent an email message when the user is added to an insider risk management policy. This template also supports updating a SharePoint list hosted on a SharePoint site to help track notification message details like date/time and the message recipient. If you've chosen to anonymize users in **Privacy settings**, flows created from this template will not function as intended so that user privacy is maintained. Power Automate flows using this template are available on the **Users dashboard**.
+- **Request information from HR or business about a user in an insider risk case**: When acting on a case, insider risk analysts and investigators may need to consult with HR or other stakeholders to understand the context of the case activities. When this flow is configured and selected for a case, analysts and investigators send an email message to HR and business stakeholders configured for this flow. Each recipient is sent a message with pre-configured or customizable response options. When recipients select a response option, the response is recorded as a case note and includes recipient and date/time information. If you've chosen to anonymize users in **Privacy settings**, flows created from this template will not function as intended so that user privacy is maintained. Power Automate flows using this template are available on the **Cases dashboard**.
 - **Notify manager when a user has an insider risk alert**: Some organizations may need to have immediate management notification when a user has an insider risk management alert. When this flow is configured and selected, the manager for the case user is sent an email message with the following information about all case alerts: 
     - Applicable policy for the alert
     - Date/Time of the alert
     - Severity level of the alert
 
-    The flow automatically updates the case notes that the message was sent and that the flow was activated. Power Automate flows using this template are available on the **Cases dashboard**.
+    The flow automatically updates the case notes that the message was sent and that the flow was activated. If you've chosen to anonymize users in **Privacy settings**, flows created from this template will not function as intended so that user privacy is maintained. Power Automate flows using this template are available on the **Cases dashboard**.
 
 - **Add calendar reminder to follow up on an insider risk case**: This template allows risk investigators and analysts to add calendar reminders for cases to their Office 365 Outlook calendar. This flow eliminates the need for users to exit or switch out of the insider risk management workflow when processing cases and triaging alerts. When this flow is configured and selected, a reminder is added to Office 365 Outlook calendar for the user running the flow. Power Automate flows using this template are available on the **Cases dashboard**.
 

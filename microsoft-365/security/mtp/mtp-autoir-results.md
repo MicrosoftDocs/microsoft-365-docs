@@ -16,6 +16,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
@@ -28,9 +29,9 @@ ms.date: 09/16/2020
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-When an automated investigation occurs in Microsoft Threat Protection, details about that investigation are available during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
+When an automated investigation occurs in Microsoft 365 Defender, details about that investigation are available during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
 ![Investigation details](../../media/mtp-air-investdetails.png)
 

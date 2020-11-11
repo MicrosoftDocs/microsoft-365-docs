@@ -639,8 +639,8 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
    | Microsoft Business Center                         |
    | Microsoft MyAnalytics (Full)                      |
    | Office 365 Advanced eDiscovery                    |
-   | Office 365 Advanced Threat Protection (Plan 1)    |
-   | Office 365 Advanced Threat Protection (Plan 2)    |
+   | Microsoft Defender for Office 365 (Plan 1)    |
+   | Microsoft Defender for Office 365 (Plan 2)    |
    | Office 365 Privileged Access Management           |
    | Outlook Customer Manager                          |
    | Premium Encryption in Office 365                  |

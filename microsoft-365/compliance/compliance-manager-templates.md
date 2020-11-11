@@ -25,7 +25,7 @@ description: "Understand how to use and manage templates for building assessment
 
 ## Templates overview
 
-A template is a framework for creating an assessment in Compliance Manager. They contain the controls for meeting the requirements of a certification using a certain product. Compliance Manger provides a comprehensive set of templates to help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
+A template is a framework for creating an assessment in Compliance Manager. They contain the controls for meeting the requirements of a certification using a certain product. Compliance Manager provides a comprehensive set of templates to help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
 
 ## List of pre-built templates for assessments
 

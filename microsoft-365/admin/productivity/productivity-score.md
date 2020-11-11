@@ -18,13 +18,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Overview of Microsoft productivity score."
 ---
 
-# Microsoft Productivity Score (Preview)
+# Microsoft Productivity Score 
 
-Productivity Score helps organizations transform how work gets done with insights about how people use Microsoft 365 and the technology experiences that support them. The score reflects your organization’s performance against employee and technology experience measures and compares your score with organizations like yours.
+Productivity Score helps organizations transform how work gets done with insights about how people use Microsoft 365 and the technology experiences that support them. The score reflects your organization’s performance against people and technology experiences measures and compares your score with organizations like yours.
 
 The score includes:
 
@@ -34,29 +33,32 @@ The score includes:
 
 We provide data, insights, and recommendations in two areas: 
 
-- **Employee experience:** We measure how people collaborate on content, how they use Microsoft 365 products to communicate, and whether they use Microsoft 365 across platforms. 
+- **People experiences:** Measures how people collaborate on content, how they use Microsoft 365 products to communicate, and whether they use Microsoft 365 across multiple platforms. 
 
-    We provide these insights because when people collaborate online, they save time. With the freedom to work on any device, they are more productive and satisfied. Communicating in a flexible way makes people more efficient, form better relationships, and your organization is more unified. For evidence, see [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+    We provide these insights because when people collaborate online, they save time, and with the freedom to work on any device makes then more productive and satisfied. The ability to communicate in a flexible way makes people more efficient, able to form better relationships therefore making your organization more unified. For evidence, see [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Technology experience:** Productivity depends on reliable and performant technology as well as the efficient use of Microsoft 365. We provide [endpoint analytics](https://aka.ms/endpointanalytics), which helps you understand how your users’ productivity can be impacted by performance and health issues with your endpoint hardware and software. We also provide recommended actions to remediate them as well as Microsoft 365 network connectivity insights for your organization.
+- **Technology experiences:** Your team's productivity depends on reliable and well performing technology as well as the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your users’ productivity can be impacted by performance and health issues with your hardware and software.Recommended actions help you to remediate these issues. Microsoft 365 network connectivity insights will help you troubleshoot connectivty issues for your organization.
 
 See [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) for an overview and prerequisite details. To learn more about Microsoft 365 network connectivity insights, read [the network connectivity overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## How the score is calculated
 
-Your Productivity Score is based on the combined scores of your employee and technology experience categories. Each category is weighted equally, with a total of 100 points per category. The total possible points for Productivity Score are 500.
+Your Productivity Score is based on the combined scores of your people and technology experiences categories. Each category is weighted equally, with a total of 100 points. The highest possible Productivity Score is 800.
 
 ### Score categories 
 
-- Content collaboration (100 points)
 - Communication (100 points)
+- Meetings (100 points)
+- Content collaboration (100 points)
+- Teamwork (100 points)
 - Mobility (100 points)
 - Endpoint analytics (100 points)
 - Network connectivity (100 points)
-- **Total possible = 500 points**
+- Microsoft 365 Apps Health (100 points)
+- **Total possible = 800 points**
  
- In each category, we identify patterns for key activities that are indicators for how people use Microsoft 365 products to collaborate, communicate, and work across platforms. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation but are important for helping you identify underlying behaviors and settings that you can act on to drive change.
+ In each score category, we identify patterns for key activities that are indicators for how people use Microsoft 365 products to collaborate, communicate, and work across platforms. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation, but are important for helping you identify underlying behaviors and settings that you can address.
 
 ### Products included in Productivity Score 
 
@@ -67,7 +69,9 @@ Your score is updated daily and reflects user actions completed in the last 28 (
 
 ## Pre-requisites 
 
-You need a Microsoft 365 for business or Office 365 for enterprise subscription to get employee experience data, and you need to be using multi-tenant cloud services. To get endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization’s data by managing devices and apps.       Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about Microsoft Intune. 
+For people experiences data, you need a Microsoft 365 for business or Office 365 for enterprise subscription. For endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization’s data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about Microsoft Intune. 
+> [!NOTE]
+> A license to Workplace Analytics is not required to get the Productivity Score features.
 
 To view the Productivity Score for your organization, you must have of one of the following roles: 
 
@@ -83,53 +87,35 @@ You can access the experience from Microsoft 365 Admin home under **Reports** > 
 
 ## Interpreting Productivity Score 
 
-The Productivity Score home page shows your total score and score history as well as the primary insight for each category
+The Productivity Score home page shows your total score and score history and the primary insight for each category.
 
-![Productivity Score home page](../../media/pslanding.png)
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="Productivity Score page in Reports.":::
 
-**Your score** is shown as a percent value as well as in points so you can see your points (numerator) and maximum possible points (denominator).
+**Your score** is shown as a percent value and in points. You can see your points in the numerator and the maximum possible points in the denominator.
 
-**Peer benchmarks** allow you to compare your score with organizations like yours. For the employee experience categories, the peer benchmark measure is calculated as the average of measures within a set of similar organizations. The set is composed of organizations in your region with a similar number of licensed users, types of licenses, industry, and tenure with Microsoft 365. 
+**Peer benchmarks** allow you to compare your score with organizations like yours. The peer benchmark for the people experiences categories is calculated as the average of measures within a set of similar organizations. The set of organizations is composed of organizations in your region with a similar number of licensed users, types of licenses, industry, and tenure with Microsoft 365. 
 
 The endpoint analytics peer benchmark includes targets for device startup performance and recommended software configuration based on aggregated median values across all tenants.
 
 For network connectivity, the recommended benchmark is 80 points.
 
-The **Score breakdown** section provides a breakdown of your Productivity Score with benchmarks by employee and technology experience areas.
+The **Score breakdown** section provides a breakdown of your Productivity Score with benchmarks by people and technology experience areas.
 
 Score history displays how your score in each category has changed in the past 6 months.
 
-The **Employee experience** and **Technology experience** areas contain the primary insights for the categories in those areas. You can click on each category to see deeper insights.
+The **People experiences** and **Technology experiences** areas contain the primary insights for the categories in those areas. You can click on each category to see deeper insights.
 
 ## Category details pages
 
 Each category details page shows the primary insight and supporting metrics as well as related research and actions you can take to drive change in your organization. Research supports the importance and rationale behind the primary insights for each category. for more information, [read the Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-### Content collaboration details
-
-The primary insight for content collaboration is the number of people who create, read, and collaborate (edit and share) online. These measures are important because research shows that when people collaborate with online files, each person saves an average of almost 2 hours per week.
-
-We define content collaboration as one person creating and sharing an Office file, and then at least one other person reading it. 
-
-**Readers**: People who access or download online files in OneDrive or SharePoint.
-
-**Creators:** People who create, modify, upload, sync, check in, copy, or move online OneDrive or SharePoint files.
-
-**Collaborators**: People who collaborate with online files  using OneDrive or SharePoint. Two people are collaborators if one of them reads or edits an online Office apps or PDF cloud document after the other person has created or modified it, within a 28-day window.
-
-The file types considered for collaboration are Word, Excel, PowerPoint, OneNote, and PDF files.
-
-We provide insights into the startup times and set up for devices in your organization as well as network connectivity insights for content collaboration because online file collaboration requires reliable devices that start quickly and have up-to-date software as well as good connectivity to Microsoft 365.
-
-### Communication details
-
-The primary insight for communication is how frequently people in your organization use email, chat, and community posts to communicate. When people use a variety of real-time communication tools, they are able to choose the mode of communication that helps them to be most efficient, like chat and communities that help them develop relationships across office locations.
-
-### Mobility details
-
-The primary insight for mobility is the number of people who access files and use email and chat across multiple platforms. The ability to work from any location on whatever device they choose is important for people with sales roles, senior managers, consultants, and others who need to do work away from the office to be productive. Improvements for these workers have a large impact. 
-
-We measure the percentage and absolute number of people who used at least one Microsoft 365 productivity app across two or more platforms, including desktop, mobile and web. The productivity apps we measure are Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, and Skype. People must have Microsoft 365 apps for enterprise, Exchange, Yammer, Skype, or Teams licenses to be measured. 
+The details pages are:
+- [Content collaboration – People experiences](content-collaboration.md)
+- [Communication – People experiences](communication.md)
+- [Meetings – People experiences](meetings.md)
+- [Mobility – People experiences](mobility.md)
+- [Teamwork – People experiences](teamwork.md)
+- [Microsoft 365 apps health – Technology experiences](apps-health.md)
 
 ## Business continuity special report
 

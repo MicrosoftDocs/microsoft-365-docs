@@ -15,7 +15,7 @@
       items:
 
         - name: Set up knowledge management
-          href: set-up-knowledge-network.md
+          href: set-up-topic-experiences.md
         - name: Manage your knowledge management network
-          href: manage-knowledge-network.md
+          href: topic-experiences-discovery.md
     

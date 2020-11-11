@@ -46,7 +46,7 @@ Services for which Microsoft agrees to be designated as a 'school official' with
 - [Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI, PowerApps, and Power Automate (formerly Microsoft Flow) either as a standalone service or as included in an Office 365 branded plan or suite
 - Azure DevOps Services
-- Windows Defender ATP
+- Microsoft Defender for Endpoint 
 
 ## Audits, reports, and certificates
 
