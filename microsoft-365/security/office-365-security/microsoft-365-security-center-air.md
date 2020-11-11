@@ -1,5 +1,5 @@
 ---
-title: "What's new and changing in automated investigation and response in Microsoft Defender for Office 365"
+title: "What's new in automated investigation and response (Microsoft Defender for Office 365)"
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection, new, changing
 f1.keywords:
 - NOCSH
@@ -23,7 +23,7 @@ ms.custom:
 - seo-marvel-mar2020
 ---
 
-# Changes in automated investigation and response capabilities in Microsoft Defender for Office 365
+# Changes in automated investigation and response capabilities (Microsoft Defender for Office 365)
 
 If you’ve been using [automated investigation and response ](office-365-air.md)(AIR) capabilities in Microsoft Defender for Office 365, you’re about to see some changes in the [new and improved Microsoft 365 security center](microsoft-365-security-center-getting-started.md). The security center brings together AIR capabilities in [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) together with [AIR in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). With these updates and improvements, you’ll be able to view details about automated investigations and remediation actions across your email and devices in one place.
 
@@ -31,8 +31,10 @@ If you’ve been using [automated investigation and response ](office-365-air.md
 > The Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) replaces the following centers:
 > - Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com))
 > - Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com))
+>
+> In addition to the URL changing, there’s a new look and feel, designed to give your security team a more streamlined experience. 
 
-In addition to the URL changing, there’s a new look and feel, designed to give your security team a more streamlined experience. 
+
 
 ## What to expect
 
