@@ -181,7 +181,7 @@ You can't move inactive mailboxes that are preserved for compliance purposes (fo
 
 7. Make the mailbox inactive again by removing the user account that's associated with the mailbox. For instructions, see [Delete a user from your organization](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user). This step also releases the Exchange Online Plan 2 license for other uses.
 
-**Note**: When you move an inactive mailbox to a different geo location, you might affect content search results or the ability to search the mailbox from the former geo location. For more information, see [Searching and exporting content in Multi-Geo environments](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries?view=o365-worldwide#searching-and-exporting-content-in-multi-geo-environments).
+**Note**: When you move an inactive mailbox to a different geo location, you might affect content search results or the ability to search the mailbox from the former geo location. For more information, see [Searching and exporting content in Multi-Geo environments](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments).
 
 ## Create new cloud mailboxes in a specific geo location
 
