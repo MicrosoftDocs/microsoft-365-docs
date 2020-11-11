@@ -165,7 +165,10 @@ Use the following procedures to modify anti-phishing policies: a new policy that
      To edit an existing entry, select the protected user in the list.
 
      > [!NOTE]
-     > You can have a maximum of 60 users in all anti-phishing policies. In other words, you can have 60 protected users in one policy, 12 protected users in 5 policies, etc.
+     >
+     > - In each anti-phishing policy, you can specify a maximum of 60 protected users (sender email addresses). You can't specify the same protected user in multiple policies.
+     >
+     > - User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt.
 
    - **Add domains to protect**: Configure one or both of the following settings:
 
@@ -173,7 +176,7 @@ Use the following procedures to modify anti-phishing policies: a new policy that
      - **Include custom domains**: The default value is **Off**. To turn it on, slide the toggle to **On**, and in the **Add domains** box, enter the domain name (for example, contoso.com), press ENTER, and repeat as necessary.
 
      > [!NOTE]
-     > You can have a maximum of 50 domains in all anti-phishing policies. In other words, you can have 50 protected users in one policy, 10 protected users in 5 policies, etc.
+     > You can have a maximum of 50 domains in all anti-phishing policies.
 
    - **Actions**: Click **Edit**
 

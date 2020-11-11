@@ -95,7 +95,7 @@ Retention-related admin activity is now recorded and available to review in the 
 
 To help you understand which compliance solutions are used to protect and govern your organization’s sensitive data, we created two new landing pages with overviews of how the solutions work together to achieve those goals, including links to related docs so you can dive in further.
 
-[Microsoft Information Protection in Microsoft 365](protect-information.md)<br>
+[Microsoft Information Protection in Microsoft 365](information-protection.md)<br>
 [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md)
 
 ### Advanced eDiscovery: Add non-custodial data sources to your cases
