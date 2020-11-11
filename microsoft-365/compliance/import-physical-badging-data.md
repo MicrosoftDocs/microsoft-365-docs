@@ -60,7 +60,7 @@ The next step is to create a JSON file that contains information about employees
 
 The JSON file must conform to the schema definition required by the connector. Here are descriptions of the required schema properties for the JSON file:
 
-|**Property**|**Description**|**Data type**|
+| Property | Description | Data type |
 |:-----------|:--------------|:------------|
 |UserId|An employee can have multiple digital identities across the systems. The input needs to have the Azure AD ID already resolved by the source system. |UPN or email address|
 |AssetId|The reference ID of the physical asset or physical access point.| Alphanumeric string|
@@ -71,7 +71,7 @@ The JSON file must conform to the schema definition required by the connector. H
 
 Here's an example of a JSON file that conforms to the required schema:
 
-```text
+```json
 [
     {
         "UserId":"sarad@contoso.com"
@@ -185,7 +185,7 @@ After you run the script, the JSON file containing the physical badging data is 
 
    The following table describes the parameters to use with this script and their required values. Information you obtained in the previous steps is used in the values for these parameters.
 
-   | **Parameter**|**Description**|
+   | Parameter | Description |
    |:-------------|:--------------|
    |tenantId | This is the Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenantId for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization. |
    |appId | This is the Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization.                    |
@@ -213,7 +213,7 @@ After you create the physical badging connector and push your physical badging d
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and click **Data connectors** in the left nav.
 
-2. Click the **Connectors** tab and then select the physical badging connector to display the flyout page, which contains the properties and information about the connector.
+2. Click the **Connectors** tab and then select the physical badging connector to display the flyout page. This page contains the properties and information about the connector.
 
    ![Status flyout page for physical badging connector](..\media\PhysicalBadgingStatusFlyout.png)
 

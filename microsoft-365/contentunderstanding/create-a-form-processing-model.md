@@ -1,23 +1,25 @@
 ---
-title: "Create a form processing model (Preview)"
+title: "Create a form processing model"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Create a form processing model in Project Cortex."
+localization_priority: Priority
+description: "Create a form processing model in Microsoft SharePoint Syntex."
 ---
 
-# Create a form processing model (Preview)
+# Create a form processing model in Microsoft SharePoint Syntex
 
-> The content in this article is for the Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+</br>
 
-Using [AI Builder](https://docs.microsoft.com/ai-builder/overview) - a feature in Microsoft PowerApps - Project Cortex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
+
+</br>
+
+Using [AI Builder](https://docs.microsoft.com/ai-builder/overview) - a feature in Microsoft PowerApps - SharePoint Syntex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
 
 Creating a form processing model involves the following:
  - Step 1: Create the from processing model to create the content type
@@ -39,7 +41,7 @@ The first step in creating a form processing model is to name it and create the 
 
 1. From the document library, select the **Automate** menu, select **AI Builder**, and then select **Create a Form Processing model**.
 
-    ![Create an AI Builder model](../media/content-understanding/create-ai-builder-model.png)</br>
+    ![Create a model](../media/content-understanding/create-ai-builder-model.png)</br>
 
 2. In the **New form processing model** pane, in the  **Name** field, type a name for your model (for example, *Purchase Orders*).
 
@@ -50,6 +52,7 @@ The first step in creating a form processing model is to name it and create the 
     Select **Advanced settings** if you want to map this model to an existing content type in the SharePoint Content types gallery to use its schema. 
 
 4. Your model creates a new view in your document library for your extracted data. If you do not want it to the default view, deselect **Set the view as default**.
+
 5. Select **Create**.
 
 ## Step 2: Add and analyze documents
@@ -77,7 +80,7 @@ After analyzing the documents for fields, you can now see the fields that were f
 
 1. The next page displays one of your sample files and will highlight all common fields that were automatically detected by the system. </br>
 
-    ![Select form fields](../media/content-understanding/select-fields-page.png)</br> 
+    ![Select fields page](../media/content-understanding/select-fields-page.png)</br> 
 
 2. Select the fields that you want to save and select the checkbox to confirm your selection. For example, in the Purchase Order model, choose to select the *Date*, *PO*, and *Total* fields.  Note that you can also choose to rename a field if you choose. </br>
 
@@ -87,7 +90,7 @@ After analyzing the documents for fields, you can now see the fields that were f
 
 4. Click **Confirm fields** after you have selected the fields that you want to save. </br>
  
-    ![Confirm fields](../media/content-understanding/confirm-fields.png)</br> 
+    ![Confirm fields after selecting fields](../media/content-understanding/confirm-fields.png)</br> 
  
 5. On the **Select the form fields you want to save** page, it shows the number of fields you have selected. Select **Done**.
 
@@ -95,7 +98,13 @@ After analyzing the documents for fields, you can now see the fields that were f
 
 After selecting the fields you want to save, the **Model Summary** page lets you train and test your model.
 
-1. On the **Model Summary** page, the saved fields show the **Selected fields** section. Select **Train** to begin training on your sample files. Note that this may take a few minutes to complete.</br>
+1. On the **Model Summary** page, the saved fields will show in the **Selected fields** section. Select **Train** to begin training on your example files. Note that this may take a few minutes to complete.</br>
+
+     ![Select fields train](../media/content-understanding/select-fields-train.png)</br> 
+
+2. When you see the notification that training has completed, select **Go to details page**. 
+
+3. On the **Model details** page, you can choose to test how your model works by selecting **Quick test**. This lets you drag and drop files to the page and see if the fields are detected.
 
     ![Confirm fields](../media/content-understanding/select-fields-train.png)</br> 
 
@@ -119,17 +128,18 @@ After publishing your model and creating it's PowerAutomate flow, you can use yo
 
 2. In the document library model view, notice that the fields you selected now display as columns.</br>
 
-    ![Document library with model applied](../media/content-understanding/doc-lib-view.png)</br> 
+    ![Document library model applied](../media/content-understanding/doc-lib-view.png)</br> 
 
 3. Notice that the information link next to **Documents** notes that a forms processing model is applied to this document library.
 
-    ![Extracted](../media/content-understanding/info-button.png)</br>  
+    ![Info button](../media/content-understanding/info-button.png)</br>  
 
 4. Upload files to your document library. Any files that the model identifies as it's content type lists the files in your view and displays the extracted data in the columns.</br>
 
-    ![Extracted](../media/content-understanding/doc-lib-done.png)</br>  
+    ![Done](../media/content-understanding/doc-lib-done.png)</br>  
 
 ## See Also
   
-[Power Automate documentation](https://docs.microsoft.com/power-automate/)</br>
-[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
+[Power Automate documentation](https://docs.microsoft.com/power-automate/)
+
+[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)

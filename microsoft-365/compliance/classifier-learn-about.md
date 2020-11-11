@@ -10,7 +10,10 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: None
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -70,10 +73,8 @@ Microsoft 365 comes with five pre-trained classifiers:
     - C++
     - Clojure
     - CoffeeScript
-    - CSS
     - Go
     - Haskell
-    - HTML
     - Java
     - JavaScript
     - Lua

@@ -79,7 +79,7 @@ No matter the size of your organization and whether it is a controller or a proc
 - Power Virtual Agents
 - Microsoft Stream
 - Microsoft Threat Experts
-- Windows Defender Advanced Threat Protection
+- Microsoft Defender for Endpoint
 
 ## Audits, reports, and certificates
 

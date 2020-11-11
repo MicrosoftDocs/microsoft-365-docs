@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration

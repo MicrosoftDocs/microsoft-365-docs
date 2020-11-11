@@ -5,12 +5,14 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/08/2019
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 localization_priority: None
 description: "Use information barriers to ensure communication compliance using Microsoft Teams within your organization."
 ms.custom: seo-marvel-apr2020

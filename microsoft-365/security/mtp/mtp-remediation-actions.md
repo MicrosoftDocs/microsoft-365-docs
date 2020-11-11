@@ -1,6 +1,6 @@
 ---
-title: Remediation actions following automated investigations in Microsoft Threat Protection 
-description: Get an overview of remediation actions that follow automated investigations in Microsoft Threat Protection
+title: Remediation actions following automated investigations in Microsoft 365 Defender 
+description: Get an overview of remediation actions that follow automated investigations in Microsoft 365 Defender
 keywords: automated, investigation, alert, trigger, action, remediation
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -16,26 +16,27 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020 
 ms.reviewer: evaldm, isco
 ---
 
-# Remediation actions following automated investigations in Microsoft Threat Protection
+# Remediation actions following automated investigations in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 ## Remediation actions
 
-During and after an automated investigation in Microsoft Threat Protection, remediation actions are identified for malicious or suspicious items. Some kinds of remediation actions are taken on devices, also referred to as endpoints. Other remediation actions are taken on email content. Automated investigations complete after remediation actions are taken, approved, or rejected.
+During and after an automated investigation in Microsoft 365 Defender, remediation actions are identified for malicious or suspicious items. Some kinds of remediation actions are taken on devices, also referred to as endpoints. Other remediation actions are taken on email content. Automated investigations complete after remediation actions are taken, approved, or rejected.
 
-The following table summarizes remediation actions that are currently supported in Microsoft Threat Protection: 
+The following table summarizes remediation actions that are currently supported in Microsoft 365 Defender: 
 
 |Device (endpoint) remediation actions  |Email remediation actions  |
 |---------|---------|
@@ -58,7 +59,7 @@ The following table lists possible verdicts and outcomes:
 
 > [!IMPORTANT]
 > Whether remediation actions are taken automatically or only upon approval depends on certain settings, such as your organization's device group policies. To learn more, see the following articles:
-> - [Configure automated investigation and response capabilities in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md)
+> - [Configure automated investigation and response capabilities in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md)
 > - [How threats are remediated on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 ## Next steps

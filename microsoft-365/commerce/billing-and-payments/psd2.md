@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,13 +14,13 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Starting on September 14, 2019, banks in the 31 countries of the European Economic Area are required to verify the identity of the person making an online purchase before the payment can be processed."
+description: As of September 14, 2019, banks in the 31 countries of the European Economic Area are required to verify the identity of the person making an online purchase before the payment can be processed."
 keywords: payment services directive 2, strong customer authentication, multi-factor authentication
 ---
 
 # Payment Services Directive 2 and Strong Customer Authentication for commercial customers
 
-Starting on September 14, 2019, banks in the 31 countries of the European Economic Area are required to verify the identity of the person making an online purchase before the payment can be processed. This verification requires multi-factor authentication to help ensure your online purchases are secure and protected. The date for this verification requirement will be delayed for some countries. 
+As of September 14, 2019, banks in the 31 countries of the European Economic Area are required to verify the identity of the person making an online purchase before the payment can be processed. This verification requires multi-factor authentication to help ensure your online purchases are secure and protected. The date for this verification requirement will be delayed for some countries.
 
 For more information, see [Microsoft FAQ about Payment Services Directive 2 and Strong Customer Authentication](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication).
 

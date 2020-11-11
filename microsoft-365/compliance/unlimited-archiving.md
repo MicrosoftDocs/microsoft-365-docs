@@ -107,4 +107,4 @@ This section explains the functionality between auto-expanding archiving and oth
 
 ## More information
 
-For more technical details about auto-expanding archiving, see [Microsoft 365: Auto-Expanding Archives FAQ](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/).
+For more technical details about auto-expanding archiving, see [Microsoft 365: Auto-Expanding Archives FAQ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784).

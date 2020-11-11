@@ -56,13 +56,108 @@ For more information, see [Service information for legacy Office 365 Message Enc
   
 ## Defining mail flow rules for Office 365 Message Encryption that don't use the new OME capabilities
 
-To enable Office 365 Message Encryption without the new capabilities, Exchange Online and Exchange Online Protection administrators define Exchange mail flow rules. These rules determine under what conditions email messages should be encrypted, as well as conditions for removing message encryption. When an encryption action is set for a rule, any messages that match the rule conditions are encrypted before they're sent.
-  
+To enable Office 365 Message Encryption without the new capabilities, Exchange Online and Exchange Online Protection administrators define Exchange mail flow rules. These rules determine under what conditions email messages should be encrypted, as well as conditions for removing message encryption. When an encryption action is set for a rule, the service performs the action on any messages that match the rule conditions before sending the messages.
+
 Mail flow rules are flexible, letting you combine conditions so you can meet specific security requirements in a single rule. For example, you can create a rule to encrypt all messages that contain specified keywords and are addressed to external recipients. Office 365 Message Encryption also encrypts replies from recipients of encrypted email, and you can create a rule that decrypts those replies as a convenience for your email users. That way, users in your organization won't have to sign in to the encryption portal to view replies.
   
 For more information about how to create Exchange mail flow rules, see [Define Rules for Office 365 Message Encryption](define-mail-flow-rules-to-encrypt-email.md).
   
-## Sending, viewing, and replying to encrypted email messages
+### Use the EAC to create a mail flow rule for encrypting email messages without the new OME capabilities
+
+1. In a web browser, using a work or school account that has been granted global administrator permissions, [sign in to Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
+
+2. Choose the **Admin** tile.
+
+3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
+
+4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+
+5. In **Name**, type a name for the rule, such as Encrypt mail for DrToniRamos@hotmail.com.
+
+6. In **Apply this rule if** select a condition, and enter a value if necessary. For example, to encrypt messages going to DrToniRamos@hotmail.com:
+
+   1. In **Apply this rule if**, select **the recipient is**.
+
+   2. Select an existing name from the contact list or type a new email address in the **check names** box.
+
+      - To select an existing name, select it from the list and then click **OK**.
+
+      - To enter a new name, type an email address in the **check names** box and then select **check names** \> **OK**.
+
+7. To add more conditions, choose **More options** and then select **add condition** and select from the list.
+
+   For example, to apply the rule only if the recipient is outside your organization, select **add condition** and then select **The recipient is external/internal** \> **Outside the organization** \> **OK**.
+
+8. To enable encryption without using the new OME capabilities, in **Do the following**, select **Modify the message security** \> **Apply the previous version of OME**, and then choose **Save**.
+
+   If you receive an error that IRM licensing isn't enabled, then you're not using legacy OME.
+
+9. (Optional) Choose **add action** to specify another action.
+
+### Use Exchange Online PowerShell to create a mail flow rule for encrypting email messages without the new OME capabilities
+
+1. Connect to Exchange Online PowerShell. For more information, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+
+2. Create a rule by using the **New-TransportRule** cmdlet and set the _ApplyOME_ parameter to `$true`.
+
+   This example requires that all email messages sent to DrToniRamos@hotmail.com must be encrypted.
+
+   ```powershell
+   New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
+   ```
+
+   Where,
+
+   - The unique name of the new rule is "Encrypt rule for Dr Toni Ramos".
+   - The _SentTo_ parameter specifies the message recipients (identified by name, email address, distinguished name, etc.). In this example, the recipient is identified by the email address "DrToniRamos@hotmail.com".
+   - The _SentToScope_ parameter specifies the location of the message recipients. In this example, the recipient's mailbox is in hotmail and is not part of the organization, so the value `NotInOrganization` is used.
+
+   For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule).
+
+### Remove encryption from email replies encrypted without the new OME capabilities
+
+When your email users send encrypted messages, recipients of those messages can respond with encrypted replies. You can create mail flow rules to automatically remove encryption from replies so email users in your organization don't have to sign in to the encryption portal to view them. You can use the EAC or Windows PowerShell cmdlets to define these rules. You can decrypt messages that are sent from within your organization or messages that are replies to messages sent from within your organization. You cannot decrypt encrypted messages originating from outside of your organization.
+
+#### Use the EAC to create a rule for removing encryption from email replies encrypted without the new OME capabilities
+
+1. In a web browser, using a work or school account that has been granted admin permissions, [sign in to Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
+
+2. Choose the **Admin** tile.
+
+3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
+
+4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+
+5. In **Name**, type a name for the rule, such as Remove encryption from incoming mail.
+
+6. In **Apply this rule if** select the conditions where encryption should be removed from messages, such as **The recipient is located** \> **Inside the organization**.
+
+7. In **Do the following**, select **Modify the message security** \> **Remove the previous version of OME**.
+
+8. Select **Save**.
+
+#### Use Exchange Online PowerShell to create a rule to remove encryption from email replies encrypted without the new OME capabilities
+
+1. Connect to Exchange Online PowerShell. For more information, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+
+2. Create a rule by using the **New-TransportRule** cmdlet and set the _RemoveOME_ parameter to `$true`.
+
+   This example removes the encryption from all mail sent to recipients in the organization.
+
+   ```powershell
+   New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
+   ```
+
+   Where,
+
+   - The unique name of the new rule is "Remove encryption from incoming mail".
+   - The _SentToScope_ parameter specifies the location of the message recipients. In this example, the value `InOrganization` value is used, which indicates one of the following:
+     - The recipient is a mailbox, mail user, group, or mail-enabled public folder in your organization.
+     - The recipient's email address is in an accepted domain that's configured as an authoritative domain or an internal relay domain in your organization, _and_ the message was sent or received over an authenticated connection.
+
+For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule).
+
+## Sending, viewing, and replying to messages encrypted without the new capabilities
 
 With Office 365 Message Encryption, email messages are encrypted automatically, based on administrator-defined rules. An email that bears an encrypted message arrives in the recipient's Inbox with an attached HTML file.
   
@@ -71,7 +166,7 @@ Recipients follow instructions in the message to open the attachment and authent
 ## Customize encrypted messages with Office 365 Message Encryption
 
 As an Exchange Online and Exchange Online Protection administrator, you can customize your encrypted messages. For example, you can add your company's brand and logo, specify an introduction, and add disclaimer text in encrypted messages and in the portal where recipients view your encrypted messages. Using Windows PowerShell cmdlets, you can customize the following aspects of the viewing experience for recipients of encrypted email messages:
-  
+
 - Introductory text of the email that contains the encrypted message
 
 - Disclaimer text of the email that contains the encrypted message
@@ -86,7 +181,7 @@ The following example shows a custom logo for ContosoPharma in the email attachm
   
 ![Sample of the view encrypted message page](../media/TA-OME-3attachment2.jpg)
   
- **To customize encryption email messages and the encryption portal with your organization's brand**
+**To customize encryption email messages and the encryption portal with your organization's brand**
   
 1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -94,14 +189,14 @@ The following example shows a custom logo for ContosoPharma in the email attachm
 
    **Encryption customization options**
 
-|**To customize this feature of the encryption experience**|**Use these Windows PowerShell commands**|
+**To customize this feature of the encryption experience**|**Use these Windows PowerShell commands**|
 |:-----|:-----|
 |Default text that accompanies encrypted email messages  <br/> The default text appears above the instructions for viewing encrypted messages  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
 |Disclaimer statement in the email that contains the encrypted message  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
 |Text that appears at the top of the encrypted mail viewing portal  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Example:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
 |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Example:** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Supported file formats: .png, .jpg, .bmp, or .tiff  <br/> Optimal size of logo file: less than 40 KB  <br/> Optimal size of logo image: 170x70 pixels  <br/> |
 
- **To remove brand customizations from encryption email messages and the encryption portal**
+**To remove brand customizations from encryption email messages and the encryption portal**
   
 1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
 
@@ -190,7 +285,7 @@ Office 365 Message Encryption uses Rights Management Services (RMS) as its encry
 
 For more information, see [AD RMS Cryptographic Modes](https://go.microsoft.com/fwlink/p/?LinkId=398616).
   
- **Q. Why do some encrypted messages say they come from** Office365@messaging.microsoft.com?
+**Q. Why do some encrypted messages say they come from** Office365@messaging.microsoft.com?
   
 When an encrypted reply is sent from the encryption portal or through the OME Viewer app, the sending email address is set to Office365@messaging.microsoft.com because the encrypted message is sent through a Microsoft endpoint. This helps to prevent encrypted messages from being marked as spam. The displayed name on the email and the address within the encryption portal aren't changed because of this labeling. Also, this labeling only applies to messages sent through the portal, not through any other email client.
   
@@ -218,7 +313,7 @@ There isn't a report that shows if an encrypted message has been viewed, but the
   
 The [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/privacystatement) provides detailed information about what Microsoft does and doesn't do with your private information.
 
-## What do I do if I don’t receive the one-time pass code after I requested it?
+**Q. What do I do if I don’t receive the one-time pass code after I requested it?**
 
 First, check the junk or spam folder in your email client. DKIM and DMARC settings for your organization may cause these emails to end up filtered as spam.
 

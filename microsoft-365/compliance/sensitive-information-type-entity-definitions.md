@@ -56,14 +56,20 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - The function Func_aba_routing finds content that matches the pattern.
 - A keyword from Keyword_ABA_Routing is found.
 
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_aba_routing finds content that matches the pattern.
+
 ```xml
-<!-- ABA Routing Number -->
-<Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
+    <!-- ABA Routing Number -->
+    <Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_aba_routing" />
         <Match idRef="Keyword_ABA_Routing" />
       </Pattern>
- </Entity>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_aba_routing" />
+      </Pattern>
+    </Entity>
 ```
 
 
@@ -71,37 +77,36 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keyword_aba_routing
 
-- aba
-- aba #
-- aba routing #
-- aba routing number
+- aba number
 - aba#
+- aba
 - abarouting#
-- aba number
 - abaroutingnumber
-- american bank association routing #
-- american bank association routing number
 - americanbankassociationrouting#
 - americanbankassociationroutingnumber
-- bank routing number
 - bankrouting#
 - bankroutingnumber
-- routing transit number
-- RTN 
-   
+- routing #
+- routing no
+- routing number
+- routing transit number
+- routing#
+- RTN
+
+
 ## Argentina national identity (DNI) number
 
 ### Format
 
-Eight digits separated by periods
+Eight digits with or without periods
 
 ### Pattern
 
 Eight digits:
 - two digits
-- a period
+- an optional period
 - three digits
-- a period
+- an optional period
 - three digits
 
 ### Checksum
@@ -129,20 +134,20 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 #### Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- Identity 
-- Identification National Identity Card 
-- DNI 
-- NIC National Registry of Persons 
-- Documento Nacional de Identidad 
-- Registro Nacional de las Personas 
-- Identidad 
-- Identificación 
+- cedula 
+- cédula 
+- dni 
+- documento nacional de identidad 
+- documento número 
+- documento numero 
+- registro nacional de las personas 
+- rnp 
    
 ## Australia bank account number
 
 ### Format
 
-six to twn digits with or without a bank state branch number
+six to ten digits with or without a bank state branch number
 
 ### Pattern
 
@@ -666,36 +671,152 @@ No
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
   
 - The regular expression  `Regex_austria_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_austria_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_austria_eu_driver's_license_number` is found. 
     
 ```xml
-<!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Driver's License Number -->
+      <Entity id="682f18ce-44eb-482b-8198-2bcb96a0761e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_driver's_license_number" />
-          <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-    </Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_austria_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- driver's licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - fuhrerschein
-- fuhrerschein republik osterreich
+- führerschein
+- Führerscheine
+- Führerscheinnummer
+- Führerscheinnummern
 
 ## Austria identity card
 This sensitive information type is only available for use in:
@@ -1495,41 +1616,159 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_belgium_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_belgium_eu_driver's_license_number` is found.
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_belgium_eu_driver's_license_number` is found.
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Belgium Driver's License Number -->
+      <Entity id="d89fd329-9324-433c-b687-2c37bd5166f3" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_belgium_eu_driver's_license_number" />
-          <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
-**Keywords__belgium_eu_driver's_license_number**
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
 - dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+#### Keywords_belgium_eu_driver's_license_number
+
 - rijbewijs
 - rijbewijsnummer
+- führerschein
 - führerscheinnummer
+- füehrerscheinnummer
+- fuhrerschein
+- fuehrerschein
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- führerschein- nr
-- fuehrerschein- Nr
-- fuehrerschein- nr
+- permis de conduire
+- numéro permis conduire
+
 
 ## Belgium national number
 
@@ -2047,38 +2286,152 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_bulgaria_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_bulgaria_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_bulgaria_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-             <Pattern confidenceLevel="75">
+      <!-- Bulgaria Driver's License Number -->
+      <Entity id="66d39258-94c2-43b2-804b-aa312258e54b" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_driver's_license_number" />
-          <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
-        </Pattern> 
-</Entity>    
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+      </Entity>    
 ```
 
 ### Keywords
 
-#### Keywords_bulgaria_eu_driver's_license_number
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
 - dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
+#### Keywords_bulgaria_eu_driver's_license_number
+
 - свидетелство за управление на мпс
 - свидетелство за управление на моторно превозно средство
 - сумпс
 - шофьорска книжка
-
+- шофьорски книжки
 
 ## Bulgaria uniform civil number
 This sensitive information type is only available for use in:
@@ -2806,9 +3159,9 @@ seven to eight digits plus delimiters a check digit or letter
 
 seven to eight digits plus delimiters:
 - one to two digits 
-- a period 
+- an optional period 
 - three digits 
-- a period 
+- an optional period 
 - three digits 
 - a dash 
 - one digit or letter (not case sensitive) which is a check digit
@@ -2845,18 +3198,40 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keyword_chile_id_card
 
-- National Identification Number 
-- Identity card 
-- ID 
-- Identification 
-- Rol Único Nacional 
-- RUN 
-- Rol Único Tributario 
-- RUT 
-- Cédula de Identidad 
-- Número De Identificación Nacional 
-- Tarjeta de identificación 
-- Identificación 
+- cédula de identidad
+- identificación
+- national identification
+- national identification number
+- national id
+- número de identificación nacional
+- rol único nacional
+- rol único tributario
+- RUN
+- RUT
+- tarjeta de identificación
+- Rol Unico Nacional
+- Rol Unico Tributario
+- RUN#
+- RUT#
+- nationaluniqueroleID#
+- nacional identidad
+- número identificación
+- identidad número
+- numero identificacion
+- identidad numero
+- Chilean identity no.
+- Chilean identity number
+- Chilean identity #
+- Unique Tax Registry
+- Unique Tributary Role
+- Unique Tax Role
+- Unique Tributary Number
+- Unique National Number
+- Unique National Role
+- National unique role
+- Chile identity no.
+- Chile identity number
+- Chile identity #
 
    
 ## China resident identity card (PRC) number
@@ -3235,35 +3610,149 @@ No
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
   
 - The regular expression  `Regex_croatia_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_croatia_eu_driver's_license_number` is found. 
+- A keyword from `Keywords_eu_driver's_license_number` or `Keywords_croatia_eu_driver's_license_number` is found. 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Croatia Driver's License Number -->
+      <Entity id="005b3ef1-47dd-4e68-bb02-c6db484d00f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_driver's_license_number" />
-          <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_croatia_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - vozačka dozvola
+- vozačke dozvole
 
 
 ## Croatia identity card number
@@ -3539,34 +4028,149 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_cyprus_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_cyprus_eu_driver's_license_number` is found.
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_cyprus_eu_driver's_license_number` is found.
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Driver's License Number -->
+      <Entity id="356fa104-f9ac-4aff-a0e4-2e6e65ea06c4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_driver's_license_number" />
-          <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
 #### Keywords_cyprus_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - άδεια οδήγησης
+- αριθμό άδειας οδήγησης
+- άδειες οδήγησης
 
 
 ## Cyprus identity card
@@ -3768,7 +4372,8 @@ two letters followed by six digits
 
 eight letters and digits:
   
-- two letters (not case-sensitive)
+- letter 'E' (not case-sensitive)
+- a letter
 - a space (optional)
 - six digits
 
@@ -3780,37 +4385,150 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_czech_republic_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_czech_republic_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_czech_republic_eu_driver's_license_number` is found. 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_driver's_license_number" />
-          <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
 #### Keywords_czech_republic_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - řidičský prúkaz
+- řidičské průkazy
+- číslo řidičského průkazu
+- čísla řidičských průkazů
 
 
 ## Czech passport number
@@ -4047,40 +4765,152 @@ eight digits
   
 ### Checksum
 
-Yes
+No
   
 ### Definition
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_denmark_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_denmark_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_denmark_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Denmark Driver's License Number -->
+      <Entity id="98a95812-6203-451a-a220-d39870ebef0e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_driver's_license_number" />
-          <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
 #### Keywords_denmark_eu_driver's_license_number
 
-- |dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - kørekort
 - kørekortnummer
 
@@ -4326,7 +5156,7 @@ two letters followed by seven digits
 
 Pattern must include all of the following:
 - one letter (not case sensitive) from this set of possible letters: abcdefghjklmnprstux, which is a registrant code 
-- one letter (not case sensitive), which is the first letter of the registrant's last name 
+- one letter (not case sensitive), which is the first letter of the registrant's last name or digit '9'
 - seven digits, the last of which is the check digit
 
 ### Checksum
@@ -4337,20 +5167,41 @@ Yes
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_dea_number finds content that matches the pattern.
+- A keyword from `Keyword_dea_number` is found
+- The checksum passes.
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_dea_number finds content that matches the pattern.
 - The checksum passes.
 
 ```xml
-<!-- DEA Number -->
-<Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_dea_number"/>
-  </Pattern>
-</Entity>
+    <!-- DEA Number -->
+    <Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_dea_number" />
+      </Pattern>
+      <Version minEngineVersion="15.20.1207.000" maxEngineVersion="15.20.3134.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+        </Pattern>
+      </Version>
+      <Version minEngineVersion="15.20.3135.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+          <Match idRef="Keyword_dea_number" />
+        </Pattern>
+      </Version>
+    </Entity>
 ```
 
 ### Keywords
 
-none
+#### Keyword_dea_number
+
+- dea
+- dea#
+- drug enforcement administration
+- drug enforcement agency
 
 
 ## Estonia driver's license number
@@ -4375,35 +5226,150 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_estonia_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_estonia_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_estonia_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Driver's License Number -->
+      <Entity id="51da8171-da70-4cc1-9d65-055a59ca4f83" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_driver's_license_number" />
-          <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
 #### Keywords_estonia_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driving license number
-- dlno#
-- permis de conduire
+-- permis de conduire
+- juhilubade numbrid
+- juhiloa number
+- juhiluba
 
 
 ## Estonia Personal Identification Code
@@ -5060,15 +6026,16 @@ This sensitive information type entity is only available in the EU Driver's Lice
 
 ### Format
 
-ten digits containing a hyphen
+ten digits and letters containing a hyphen
   
 ### Pattern
 
-ten digits containing a hyphen:
+ten digits and letters containing a hyphen:
   
 - six digits 
 - a hyphen
-- four digits 
+- three digits 
+- a digit or letter
     
 ### Checksum
 
@@ -5078,35 +6045,156 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_finland_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_finland_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_finland_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Finland Driver's License Number -->
+      <Entity id="bb3b27a3-79bd-4ac4-81a7-f9fca3c7d1a7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_finland_eu_driver's_license_number" />
-          <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_finland_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - ajokortti
+- permis de conduire
+- ajokortin numero
+- kuljettaja lic.
+- körkort
+- körkortnummer
+- förare lic.
+- ajokortit
+- ajokortin numerot
 
 
 ## Finland european health insurance number
@@ -5412,36 +6500,146 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - the function Func_french_drivers_license finds content that matches the pattern.
-- at least one of the following is true:
 - a keyword from Keyword_french_drivers_license is found.
-- the function Func_eu_date finds a date in the right date format.
 
 ```xml
-<!-- France Driver's License Number -->
-<Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- France Driver's License Number -->
+    <Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_french_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_french_drivers_license" />
-          <Match idRef="Func_eu_date" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_french_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### Keywords
 
 #### Keyword_french_drivers_license
 
-- drivers licence
-- drivers license
-- driving licence
-- driving license
-- permis de conduire
-- licence number
-- license number
-- licence numbers
-- license numbers
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+- permis de conduire
+- licence number
+- license number
+- licence numbers
+- license numbers
+- numéros de licence
 
 
 ## France health insurance number
@@ -5843,124 +7041,169 @@ Yes
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_german_drivers_license finds content that matches the pattern.
-- At least one of the following is true:
-    - A keyword from Keyword_german_drivers_license_number is found.
-    - A keyword from Keyword_german_drivers_license_collaborative is found.
-    - A keyword from Keyword_german_drivers_license is found.
+- A keyword from Keyword_german_drivers_license_number is found.
 - The checksum passes.
 
 ```xml
-<!-- Germany Driver's License Number -->
-<Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- German Driver's License Number -->
+    <Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_drivers_license_number" />
-          <Match idRef="Keyword_german_drivers_license_collaborative" />
-          <Match idRef="Keyword_german_drivers_license" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_german_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### Keywords
 
 #### Keyword_german_drivers_license_number
 
-- Führerschein
-- Fuhrerschein
-- Fuehrerschein
-- Führerscheinnummer
-- Fuhrerscheinnummer
-- Fuehrerscheinnummer
-- Führerschein- 
-- Fuhrerschein- 
-- Fuehrerschein- 
-- FührerscheinnummerNr
-- FuhrerscheinnummerNr
-- FuehrerscheinnummerNr
-- FührerscheinnummerKlasse
-- FuhrerscheinnummerKlasse
-- FuehrerscheinnummerKlasse
-- Führerschein- Nr
-- Fuhrerschein- Nr
-- Fuehrerschein- Nr 
-- Führerschein- Klasse 
-- Fuhrerschein- Klasse 
-- Fuehrerschein- Klasse
-- FührerscheinnummerNr 
-- FuhrerscheinnummerNr 
-- FuehrerscheinnummerNr 
-- FührerscheinnummerKlasse 
-- FuhrerscheinnummerKlasse 
-- FuehrerscheinnummerKlasse 
-- Führerschein- Nr 
-- Fuhrerschein- Nr 
-- Fuehrerschein- Nr 
-- Führerschein- Klasse 
-- Fuhrerschein- Klasse 
-- Fuehrerschein- Klasse 
-- DL 
-- DLS
-- Driv Lic 
-- Driv Licen 
-- Driv License
-- Driv Licenses 
-- Driv Licence 
-- Driv Licences 
-- Driv Lic 
-- Driver Licen 
-- Driver License 
-- Driver Licenses 
-- Driver Licence 
-- Driver Licences 
-- Drivers Lic 
-- Drivers Licen 
-- Drivers License 
-- Drivers Licenses 
-- Drivers Licence 
-- Drivers Licences 
-- Driver's Lic 
-- Driver's Licen 
-- Driver's License 
-- Driver's Licenses 
-- Driver's Licence 
-- Driver's Licences 
-- Driving Lic 
-- Driving Licen 
-- Driving License 
-- Driving Licenses 
-- Driving Licence 
-- Driving Licences
-
-#### Keyword_german_drivers_license_collaborative
-
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein 
-- N-Fuhrerschein 
-- N-Fuehrerschein
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein 
-- N-Fuhrerschein 
-- N-Fuehrerschein 
-
-#### Keyword_german_drivers_license
-
 - ausstellungsdatum
 - ausstellungsort
-- ausstellende behöde
-- ausstellende behorde
-- ausstellende behoerde
+- ausstellende behöde
+- ausstellende behorde
+- ausstellende behoerde
+- führerschein
+- fuhrerschein
+- fuehrerschein
+- führerscheinnummer
+- fuhrerscheinnummer
+- fuehrerscheinnummer
+- führerschein- 
+- fuhrerschein- 
+- fuehrerschein- 
+- führerscheinnummernr
+- fuhrerscheinnummernr
+- fuehrerscheinnummernr
+- führerscheinnummerklasse
+- fuhrerscheinnummerklasse
+- fuehrerscheinnummerklasse
+- nr-führerschein
+- nr-fuhrerschein
+- nr-fuehrerschein
+- no-führerschein
+- no-fuhrerschein
+- no-fuehrerschein
+- n-führerschein
+- n-fuhrerschein
+- n-fuehrerschein
+- permis de conduire
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dlno
 
 
 ## Germany identity card number
@@ -6234,36 +7477,151 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_greece_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_greece_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_greece_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greece Driver's License Number -->
+      <Entity id="7a2200b5-aacf-4e3c-ab36-136d3e68b7da" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_driver's_license_number" />
-          <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_greece_eu_driver's_license_number
 
-- dlL#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - δεια οδήγησης
 - Adeia odigisis
+- Άδεια οδήγησης
+- Δίπλωμα οδήγησης
 
 
 ## Greece national ID card
@@ -6558,35 +7916,149 @@ No
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
   
 - The regular expression  `Regex_hungary_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_hungary_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_hungary_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_driver's_license_number" />
-          <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_hungary_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - vezetoi engedely
+- vezetői engedély
+- vezetői engedélyek
 
 
 ## Hungary personal identification number
@@ -6929,29 +8401,39 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ### Pattern
 
 10 letters or digits:
-- Five letters (not case sensitive) 
+- Three letters (not case sensitive) 
+- A letter in C, P, H, F, A, T, B, L, J, G (not case sensitive)
+- A letter
 - Four digits 
-- A letter which is an alphabetic check digit
+- A letter (not case sensitive)
 
 ### Checksum
 
-Yes
+No
 
 ### Definition
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_india_permanent_account_number finds content that matches the pattern.
 - A keyword from Keyword_india_permanent_account_number is found.
-- The checksum passes.
+
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_india_permanent_account_number finds content that matches the pattern.
+
 
 ```xml
-<!-- India Permanent Account Number -->
-<Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Regex_india_permanent_account_number"/>
-     <Match idRef="Keyword_india_permanent_account_number"/>
-  </Pattern>
-</Entity>
+      <!-- India Permanent Account Number -->
+      <Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_india_permanent_account_number" />
+          <Match idRef="Keyword_india_permanent_account_number" />
+        </Pattern>
+        <Version minEngineVersion="15.20.3520.000">
+          <Pattern confidenceLevel="65">
+            <IdMatch idRef="Regex_india_permanent_account_number" />
+          </Pattern>
+        </Version>
+      </Entity>
 ```
 
 ### Keywords
@@ -6970,7 +8452,8 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 ### Pattern
 
 12 digits:
-- Four digits 
+- A digit which is not 0 or 1
+- Three digits 
 - An optional space or dash 
 - Four digits 
 - An optional space or dash 
@@ -7007,10 +8490,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ### Keywords
    
 #### Keyword_india_aadhar
-- Aadhar
-- Aadhaar
-- UID
+- aadhaar
+- aadhar
+- aadhar#
+- uid
 - आधार
+- uidai
    
 ## Indonesia identity card (KTP) number
 
@@ -7272,36 +8757,149 @@ No
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
   
 - The regular expression  `Regex_ireland_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_ireland_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_ireland_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Driver's License Number -->
+      <Entity id="e01bccd9-eb4d-414f-ace1-e9b6a4c4a2ca" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_driver's_license_number" />
-          <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_ireland_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - ceadúnas tiomána
-
+- ceadúnais tiomána
 
 ## Ireland passport number
 
@@ -7550,8 +9148,23 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keyword_Israel_National_ID
 
-- מספר זהות 
-- National ID Number
+-   מספר זהות
+-   מספר זיה וי
+-   מספר זיהוי ישר אלי      
+-   זהותישר אלית
+-   هو ية اسرائيل ية عدد
+-   هوية إسرائ يلية
+-   رقم الهوية
+-   عدد هوية فريدة من نوعها
+-   idnumber#
+-   id number
+-   identity no        
+-   identitynumber#
+-   identity number
+-   israeliidentitynumber       
+-   personal id
+-   unique id  
+
    
 ## Italy driver's license number
 This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
@@ -7562,10 +9175,10 @@ a combination of 10 letters and digits
 
 ### Pattern
 
-- a combination of 10 letters and digits:
+a combination of 10 letters and digits:
 - one letter (not case sensitive) 
 - the letter "A" or "V" (not case sensitive) 
-- seven letters (not case sensitive), digits, or the underscore character 
+- seven digits
 - one letter (not case sensitive)
 
 ### Checksum
@@ -7594,8 +9207,11 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keyword_italy_drivers_license_number
 
-- numero di patente di guida 
+- numero di patente
 - patente di guida 
+- patente guida
+- patenti di guida
+- patenti guida
 
 ## Italy fiscal code
 This sensitive information type is only available for use in:
@@ -7888,36 +9504,24 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Debit Acct # 
 - Debit Acct No. 
 - Debit Account No. 
-- 口座番号を当座預金口座の確認 
-- ＃アカウントの確認、勘定番号の確認 
-- ＃勘定の確認 
-- 勘定番号の確認 
-- 口座番号の確認 
-- 銀行口座番号 
-- 銀行口座 
-- 銀行口座＃ 
-- 銀行の勘定番号 
-- 銀行のacct＃ 
-- 銀行の勘定いいえ 
+- 口座番号
+- 銀行口座
 - 銀行口座番号
-- 普通預金口座番号 
-- 預金口座 
-- 貯蓄口座＃ 
-- 貯蓄勘定の数 
-- 貯蓄勘定＃ 
-- 貯蓄勘定番号 
-- 普通預金口座番号 
-- 引き落とし口座番号 
-- 口座番号 
-- 口座番号＃ 
-- デビットのacct番号 
-- デビット勘定＃ 
-- デビットACCTの番号 
-- デビット口座番号 
+- 総合口座
+- 普通預金口座
+- 普通口座
+- 当座預金口座
+- 当座口座
+- 預金口座
+- 振替口座
+- 銀行
+- バンク
 
 #### Keyword_jp_bank_branch_code
 
-Otemachi
+- 支店番号
+- 支店コード
+- 店番号
 
 ## Japan driver's license number
 
@@ -7953,31 +9557,41 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keyword_jp_drivers_license_number
 
-- dl# 
-- DL＃ 
-- dls# 
-- DLS＃ 
-- driver license 
-- driver licenses 
-- drivers license 
-- driver's license 
-- drivers licenses 
-- driver's licenses 
-- driving licence 
-- lic# 
-- LIC＃ 
-- lics# 
-- state id 
-- state identification 
-- state identification number 
-- 低所得国＃ 
-- 免許証 
-- 状態ID
-- 状態の識別 
-- 状態の識別番号 
-- 運転免許 
-- 運転免許証 
-- 運転免許証番号 
+- driverlicense
+- driverslicense
+- driver'slicense
+- driverslicenses
+- driver'slicenses
+- driverlicenses
+- dl#
+- dls#
+- lic#
+- lics#
+- 運転免許証
+- 運転免許
+- 免許証
+- 免許
+- 運転免許証番号
+- 運転免許番号
+- 免許証番号
+- 免許番号
+- 運転免許証ナンバー
+- 運転免許ナンバー
+- 免許証ナンバー
+- 運転免許証no
+- 運転免許no
+- 免許証no
+- 免許no
+- 運転経歴証明書番号
+- 運転経歴証明書
+- 運転免許証No.
+- 運転免許No.
+- 免許証No.
+- 免許No.
+- 運転免許証#
+- 運転免許#
+- 免許証#
+- 免許#
 
 
 ## Japan My Number - Corporate
@@ -8139,10 +9753,21 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keyword_jp_passport
 
-- パスポート 
-- パスポート番号 
-- パスポートのNum 
-- パスポート＃ 
+- Passport
+- Passport Number
+- Passport No.
+- Passport #
+- パスポート
+- パスポート番号
+- パスポートナンバー
+- パスポート＃
+- パスポート#
+- パスポートNo.
+- 旅券番号
+- 旅券番号＃
+- 旅券番号♯
+- 旅券ナンバー
+
 
 ## Japan residence card number
 
@@ -8185,6 +9810,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Residence card no
 - Residence card #
 - 在留カード番号
+- 在留カード
+- 在留番号
 
 ## Japan resident registration number
 
@@ -8221,16 +9848,15 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 #### Keyword_jp_resident_registration_number
 
 - Resident Registration Number
-- Resident Register Number 
 - Residents Basic Registry Number 
 - Resident Registration No. 
 - Resident Register No. 
 - Residents Basic Registry No. 
 - Basic Resident Register No. 
-- 住民登録番号、登録番号をレジデント 
-- 住民基本登録番号、登録番号 
-- 住民基本レジストリ番号を常駐 
-- 登録番号を常駐住民基本台帳登録番号 
+- 外国人登録証明書番号
+- 証明書番号
+- 登録番号
+- 外国人登録証
 
    
 ## Japan social insurance number (SIN)
@@ -8283,8 +9909,22 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Social Insurance No. 
 - Social Insurance Num 
 - Social Insurance Number 
-- 社会保険のテンキー 
-- 社会保険番号 
+- 健康保険被保険者番号
+- 健保番号
+- 基礎年金番号
+- 雇用保険被保険者番号
+- 雇用保険番号
+- 保険証番号
+- 社会保険番号
+- 社会保険No.
+- 社会保険
+- 介護保険
+- 介護保険被保険者番号
+- 健康保険被保険者整理番号
+- 雇用保険被保険者整理番号
+- 厚生年金
+- 厚生年金被保険者整理番号
+
 
 ## Latvia driver's license number
 This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
@@ -8308,35 +9948,150 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_latvia_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_latvia_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_latvia_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Driver's License Number -->
+      <Entity id="ec996de0-30f2-46b1-b192-4d2ff8805fa7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_driver's_license_number" />
-          <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_latvia_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - autovadītāja apliecība
+- autovadītāja apliecības
+- vadītāja apliecība
 
 ## Latvia personal code
 
@@ -8549,35 +10304,150 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_lithuania_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_lithuania_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_lithuania_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Driver's License Number -->
+      <Entity id="86f7628b-e0f4-4dc3-9fbc-e4300e4c7d78" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_driver's_license_number" />
-          <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_lithuania_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - vairuotojo pažymėjimas
+- vairuotojo pažymėjimo numeris
+- vairuotojo pažymėjimo numeriai
 
 ## Lithuania personal code
 This sensitive information type is only available for use in:
@@ -8741,35 +10611,149 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_luxemburg_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_luxemburg_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_luxemburg_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Luxemburg Driver's License Number -->
+      <Entity id="89daf717-1544-4860-9a2e-fc9166dd8852" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_luxemburg_eu_driver's_license_number" />
-          <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_luxemburg_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - fahrerlaubnis
+- Führerschäin
 
 ## Luxemburg national identification number (natural persons)
 This sensitive information type is only available for use in:
@@ -9069,35 +11053,150 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_malta_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_malta_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_malta_eu_driver's_license_number` is found. 
     
 ```xml
-<!-- EU Driver's License Number -->
- <Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Driver's License Number -->
+      <Entity id="a3bdaa4a-8371-4735-8fa5-56ee0fb4afc4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_driver's_license_number" />
-          <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_malta_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - liċenzja tas-sewqan
+- liċenzji tas-sewwieq
+
 
 ## Malta identity card number
 This sensitive information type is only available for use in:
@@ -9389,37 +11488,153 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_netherlands_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_netherlands_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_netherlands_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Driver's License Number -->
+      <Entity id="6247fbea-ab80-4be5-8233-308b7c031401" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_netherlands_eu_driver's_license_number" />
-          <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+            </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_netherlands_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - permis de conduire
 - rijbewijs
 - rijbewijsnummer
+- rijbewijzen
+- rijbewijs nummer
+- rijbewijsnummers
 
 
 ## Netherlands passport number
@@ -9653,7 +11868,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
       <Entity id="1a97fc2b-dd2f-48f1-bc4e-2ddf25813956" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
-          <Match idRef="Keywords_new_zealand_bank_account_number" />
+          <Match idRef="Keywords_new_zFealand_bank_account_number" />
         </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
@@ -9855,7 +12070,9 @@ three letters, a space (optional), and four digits
 
 ### Pattern
 
-three letters (not case sensitive) a space (optional) four digits
+- three letters (not case sensitive) except 'I' and 'O'
+- a space (optional) 
+- four digits
 
 ### Checksum
 
@@ -9868,27 +12085,38 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - A keyword from Keyword_nz_terms is found.
 - The checksum passes.
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_new_zealand_ministry_of_health_number finds content that matches the pattern.
+- The checksum passes.
+
 ```xml
-<!-- New Zealand Health Number -->
-<Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
-    <Pattern confidenceLevel="85">
+    <!-- New Zealand Health Number -->
+    <Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_new_zealand_ministry_of_health_number" />
-        <Any minMatches="1">
           <Match idRef="Keyword_nz_terms" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_new_zealand_ministry_of_health_number" />
+       </Pattern>
+    </Entity>
 ```
 
 ### Keywords
 
 #### Keyword_nz_terms
 
-- NHI 
-- New Zealand 
-- Health 
-- treatment 
-
+- NHI
+- New Zealand
+- Health
+- treatment
+- National Health Index Number
+- nhi number
+- nhi no.
+- NHI#
+- National Health Index No.
+- National Health Index Id
+- National Health Index #
 
 ## New Zealand social wlefare number
 This sensitive information type is only available for use in:
@@ -10072,35 +12300,149 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_poland_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_poland_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_poland_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Poland Driver's License Number -->
+      <Entity id="24d51f99-ee9e-4060-a077-cae58cab1ee4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_poland_eu_driver's_license_number" />
-          <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_poland_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - prawo jazdy
+- prawa jazdy
 
 ## Poland identity card
 
@@ -10437,17 +12779,26 @@ This sensitive information type entity is only available in the EU Driver's Lice
 
 ### Format
 
-two letters followed by a seven numbers in the specified pattern
+two patterns - two letters followed by 5-8 digits with special characters
   
 ### Pattern
 
-two letters followed by seven numbers with special characters:
-  
-- two letters (not case-sensitive) 
-- a hyphen
-- six digits
-- a space
-- one digit
+Pattern 1:
+Two letters followed by 5/6 with special characters:
+- Two letters (not case-sensitive)
+- A hyphen
+- Five or Six digits
+- A space
+- One digit
+
+Pattern 2: 
+One letter followed by 6/8 digits with special characters:
+- One letter (not case-sensitive)
+- A hyphen
+- Six or eight digits
+- A space
+- One digit
+
     
 ### Checksum
 
@@ -10457,35 +12808,157 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_portugal_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_portugal_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_portugal_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Driver's License Number -->
+      <Entity id="977f1e5a-2c33-4bcc-b516-95bb275cff23" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_driver's_license_number" />
-          <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_portugal_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - carteira de motorista
+- carteira motorista
+- carteira de habilitação
+- carteira habilitação
+- número de licença
+- número licença
+- permissão de condução
+- permissão condução
+- Licença condução Portugal
+- carta de condução
 
 ## Portugal passport number
 This sensitive information type entity is only available in the EU Passport Number sensitive information type.
@@ -10630,7 +13103,6 @@ one character followed by eight digits
 ### Pattern
 
 one character followed by eight digits:
-  
 - one letter (not case-sensitive) or digit 
 - eight digits
     
@@ -10642,35 +13114,153 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_romania_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_romania_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_romania_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Driver's License Number -->
+      <Entity id="b5511ace-2fd8-4ae4-b6fc-c7c6e4689e3c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_driver's_license_number" />
-          <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_romania_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - permis de conducere
+- permisului de conducere
+- permisului conducere
+- permisele de conducere
+- permisele conducere
+- permis conducere
 
 ## Romania personal numeric code (CNP)
 This sensitive information type is only available for use in:
@@ -11066,35 +13656,151 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_slovakia_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_slovakia_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_slovakia_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Driver's License Number -->
+      <Entity id="14240c22-b6de-4ce5-a90b-137f74252513" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_slovaknia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          <IdMatch idRef="Regex_slovakia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_slovakia_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - vodičský preukaz
+- vodičské preukazy
+- vodičského preukazu
+- vodičských preukazov
 
 ## Slovakia personal number
 This sensitive information type is only available for use in:
@@ -11267,35 +13973,152 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_slovenia_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_slovenia_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_slovenia_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Driver's License Number -->
+      <Entity id="d5bc089a-f2ee-433d-a6b1-5c253051d6f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_slovenia_eu_driver's_license_number
 
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license 
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
 - vozniško dovoljenje
+- vozniška številka licence
+- vozniških dovoljenj
+- številka vozniškega dovoljenja
+- številke vozniških dovoljenj
 
 ## Slovenia Unique Master Citizen Number
 This sensitive information type is only available for use in:
@@ -11625,58 +14448,177 @@ Yes
   
 ### Definition
 
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function  `Func_spain_eu_DL_and_NI_number_citizen` or `Func_spain_eu_DL_and_NI_number_foreigner` finds content that matches the pattern. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_spain_eu_driver's_license_number` is found. 
+
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function  `Func_spain_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_spain_eu_driver's_license_number` is found. 
+- The function  `Func_spain_eu_DL_and_NI_number_citizen` or `Func_spain_eu_DL_and_NI_number_foreigner` finds content that matches the pattern. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_spain_eu_driver's_license_number" />
-          <Match idRef="Keywords_spain_eu_driver's_license_number" />
+      <!-- Spain Driver's License Number -->
+      <Entity id="d5a82922-b501-4f40-8868-341321146aa2" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+        </Pattern>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+        </Pattern>
+      </Entity>
 ```
 
 ### Keywords
 
+#### Keywords_eu_driver's_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
 #### Keywords_spain_eu_driver's_license_number
 
-- dlno#
-- dl#
-- drivers lic.
-- driver licence
-- driver license
-- drivers licence
-- drivers license
-- driver's licence
-- driver's license
-- driving licence
-- driving license
-- driver licence number
-- driver license number
-- drivers licence number
-- drivers license number
-- driver's licence number
-- driver's license number
-- driving licence number
-- driving license number
-- driving permit
-- driving permit number
 - permiso de conducción
 - permiso conducción
-- número licencia conducir
-- número de carnet de conducir
-- número carnet conducir
+- licencia de conducir
 - licencia conducir
-- número de permiso de conducir
-- número de permiso conducir
-- número permiso conducir
 - permiso conducir
-- licencia de manejo
-- el carnet de conducir
+- permiso de conducir
+- permisos de conducir
+- permisos conducir
 - carnet conducir
+- carnet de conducir
+- licencia de manejo
+- licencia manejo
 
 ## Spain DNI
 This sensitive information type is only available for use in:
@@ -12076,35 +15018,158 @@ No
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression  `Regex_sweden_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_sweden_eu_driver's_license_number` is found. 
+- A keyword from  `Keywords_eu_driver's_license_number` or `Keywords_sweden_eu_driver's_license_number` is found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Sweden Driver's License Number -->
+      <Entity id="70088720-90dd-47f5-805e-5525f3567391" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_sweden_eu_driver's_license_number" />
-          <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity> 
+      </Entity>
 ```
 
 ### Keywords
 
-**Keywords_sweden_eu_driver's_license_number**
+#### Keywords_eu_driver's_license_number
 
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
 - dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's licence number
-- driving license number
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
 - dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
+#### Keywords_sweden_eu_driver's_license_number
+
+- ajokortti
+- permis de conducere
+- ajokortin numero
+- kuljettajat lic.
+- drivere lic.
 - körkort
+- numărul permisului de conducere
+-  שאָפער דערלויבעניש נומער
+- förare lic.
+-  דריווערס דערלויבעניש
+- körkortsnummer
 
 ## Sweden national ID
 
@@ -12422,38 +15487,40 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
    
 #### Keyword_swift
 
-- international organization for standardization 9362 
-- iso 9362 
-- iso9362 
-- swift\# 
-- swiftcode 
-- swiftnumber 
-- swiftroutingnumber 
-- swift code 
-- swift number # 
-- swift routing number 
-- bic number 
-- bic code 
-- bic \# 
-- bic\# 
-- bank identifier code 
-- 標準化9362 
-- 迅速＃ 
-- SWIFTコード 
-- SWIFT番号 
-- 迅速なルーティング番号 
-- BIC番号 
-- BICコード 
-- 銀行識別コードのための国際組織 
-- Organisation internationale de normalisation 9362 
-- rapide \# 
-- code SWIFT 
-- le numéro de swift 
-- swift numéro d'acheminement 
-- le numéro BIC 
-- \# BIC 
-- code identificateur de banque 
-
+- international organization for standardization 9362
+- iso 9362
+- iso9362
+- swift#
+- swiftcode
+- swiftnumber
+- swiftroutingnumber
+- swift code
+- swift number #
+- swift routing number
+- bic number
+- bic code
+- bic #
+- bic#
+- bank identifier code
+- Organisation internationale de normalisation 9362
+- rapide #
+- code SWIFT
+- le numéro de swift
+- swift numéro d'acheminement
+- le numéro BIC
+- # BIC
+- code identificateur de banque
+- SWIFTコード
+- SWIFT番号
+- BIC番号
+- BICコード
+- SWIFT コード
+- SWIFT 番号
+- BIC 番号
+- BIC コード
+- 金融機関識別コード
+- 金融機関コード
+- 銀行コード
 
 ## Switzerland SSN AHV number
 This sensitive information type is only available for use in:
@@ -12984,24 +16051,18 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_uk_nino finds content that matches the pattern.
-- No keyword from Keyword_uk_nino is found.
 
 ```xml
-<!-- U.K. NINO -->
-<Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.K. NINO -->
+    <Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>    
-     <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_uk_nino" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ### Keywords
@@ -13092,11 +16153,11 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
-8-17 digits
+6-17 digits
 
 ### Pattern
 
-8-17 consecutive digits
+6-17 consecutive digits
 
 ### Checksum
 
@@ -13333,41 +16394,33 @@ No
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_formatted_itin finds content that matches the pattern.
-- At least one of the following is true:
-    - A keyword from Keyword_itin is found.
-    - The function Func_us_address finds an address in the right date format.
-    - The function Func_us_date finds a date in the right date format.
-    - A keyword from Keyword_itin_collaborative is found.
+- A keyword from Keyword_itin is found.
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_unformatted_itin finds content that matches the pattern.
-- At least one of the following is true:
-    - A keyword from Keyword_itin_collaborative is found.
-    - The function Func_us_address finds an address in the right date format.
-    - The function Func_us_date finds a date in the right date format.
+- A keyword from Keyword_itin is found.
+
+A DLP policy is 65% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_formatted_itin or Func_unformatted_itin finds content that matches the pattern.
 
 ```xml
-<!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
-<Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
+    <Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_formatted_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Keyword_itin_collaborative" />
-        </Any>
-    </Pattern>
-    <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_itin" />
         <Match idRef="Keyword_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin_collaborative" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_formatted_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_unformatted_itin" />
+      </Pattern>
+    </Entity>
 ```
 
 ### Keywords
@@ -13378,6 +16431,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tax id 
 - tax identification 
 - itin 
+- i.t.i.n.
 - ssn 
 - tin 
 - social security 
@@ -13386,14 +16440,6 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - taxid 
 - individual taxpayer 
 
-#### Keyword_itin_collaborative
-
-- License 
-- DL 
-- DOB 
-- Birthdate 
-- Birthday 
-- Date of Birth 
 
 ## U.S. social security number (SSN)
 

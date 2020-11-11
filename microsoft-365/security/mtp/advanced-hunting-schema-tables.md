@@ -1,5 +1,5 @@
 ---
-title: Data tables in the Microsoft Threat Protection advanced hunting schema
+title: Data tables in the Microsoft 365 Defender advanced hunting schema
 description: Learn about the tables in the advanced hunting schema to understand the data you can run threat hunting queries on
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
@@ -15,7 +15,9 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
@@ -25,7 +27,7 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -50,7 +52,7 @@ The following reference lists all the tables in the schema. Each table name link
 | Table name | Description |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Files, IP addresses, URLs, users, or devices associated with alerts |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alerts from Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security, and Azure ATP, including severity information and threat categorization  |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alerts from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity, including severity information and threat categorization  |
 | **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | File-related activities in cloud apps and services |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Certificate information of signed files obtained from certificate verification events on endpoints |

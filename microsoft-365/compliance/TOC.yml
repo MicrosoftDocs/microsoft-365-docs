@@ -83,15 +83,13 @@
 - name: Manage information protection
   items:
     - name: Know your data, protect your data, prevent data loss
-      href: protect-information.md
+      href: information-protection.md
     - name: Sensitive information types
       items: 
         - name: Sensitive information type entity definitions 
           href: sensitive-information-type-entity-definitions.md
         - name: What the DLP functions look for
           href: what-the-dlp-functions-look-for.md
-        - name: Watch an extended overview of customizing DLP
-          href: https://go.microsoft.com/fwlink/?linkid=852306
         - name: Customize a built-in sensitive information type
           href: customize-a-built-in-sensitive-information-type.md
         - name: Custom sensitive information types
@@ -223,12 +221,26 @@
           href: data-loss-prevention-policies.md
         - name: DLP and Microsoft Teams
           href: dlp-microsoft-teams.md
-        - name: Learn about Endpoint data loss prevention (preview)
+        - name: Learn about Endpoint data loss prevention
           href: endpoint-dlp-learn-about.md
-        - name: Get started with Endpoint data loss prevention (preview)
+        - name: Get started with Endpoint data loss prevention
           href: endpoint-dlp-getting-started.md
-        - name: Using Endpoint data loss prevention (preview)
+        - name: Using Endpoint data loss prevention
           href: endpoint-dlp-using.md
+        - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
+          items:
+            - name: Onboarding tools and methods for Windows 10 devices   
+              href: dlp-configure-endpoints.md
+            - name: Onboard Windows 10 devices via Group Policy
+              href: dlp-configure-endpoints-gp.md
+            - name: Onboard Windows 10 devices using Mobile Device Management tools
+              href: dlp-configure-endpoints-mdm.md
+            - name: Onboard Windows 10 devices using Configuration Manager
+              href: dlp-configure-endpoints-sccm.md
+            - name: Onboard Windows 10 devices using a local script
+              href: dlp-configure-endpoints-script.md
+            - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
+              href: dlp-configure-endpoints-vdi.md
         - name: Get started with DLP policy recommendations
           href: get-started-with-dlp-policy-recommendations.md
         - name: Get started with the default DLP policy
@@ -239,6 +251,8 @@
           href: create-test-tune-dlp-policy.md
         - name: Use notifications and policy tips in DLP policies
           href: use-notifications-and-policy-tips.md
+        - name: Configure and view alerts for DLP policies (preview)
+          href: dlp-configure-view-alerts-policies.md
         - name: What the DLP policy templates include
           href: what-the-dlp-policy-templates-include.md
         - name: Create a DLP policy to protect documents with FCI or other properties
@@ -250,7 +264,11 @@
         - name: How DLP works between the Security & Compliance Center and Exchange admin center
           href: how-dlp-works-between-admin-centers.md
         - name: Use sensitivity labels as a condition in DLP policies (preview)
-          href: dlp-sensitivity-label-as-condition.md  
+          href: dlp-sensitivity-label-as-condition.md
+        - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
+          href: dlp-use-policies-non-microsoft-cloud-apps.md
+        - name: DLP policy conditions and exceptions (preview)
+          href: dlp-conditions-and-exceptions.md
 - name: Manage information governance
   items: 
     - name: Govern your data
@@ -279,8 +297,8 @@
           href: create-apply-retention-labels.md
         - name: Apply a retention label to content automatically
           href: apply-retention-labels-automatically.md
-        - name: Comply with SEC Rule 17a-4
-          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: Lock policies to restrict changes
+          href: retention-preservation-lock.md
         - name: Create retention labels with PowerShell
           href: bulk-create-publish-labels-using-powershell.md
         - name: Start retention when an event occurs
@@ -325,22 +343,32 @@
               href: archive-twitter-data-with-sample-connector.md
         - name: Globanet data connectors
           items:  
+            - name: Cisco Jabber
+              href: archive-ciscojabberonmssql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: FX Connect
               href: archive-fxconnect-data.md
+            - name: Jive
+              href: archive-jive-data.md
+            - name: Pivot
+              href: archive-pivot-data.md
             - name: Reuters Eikon
               href: archive-reuterseikon-data.md
-            - name: Slack
+            - name: Slack eDiscovery
               href: archive-slack-data.md    
             - name: Symphony
               href: archive-symphony-data.md
             - name: Text-delimited
               href: archive-text-delimited-data.md
+            - name: Webpages
+              href: archive-webpagecapture-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
             - name: Workplace from Facebook
               href: archive-workplacefromfacebook-data.md    
+            - name: XSLT/XML 
+              href: archive-xslt-xml-data.md
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
         - name: TeleMessage data connectors
@@ -389,8 +417,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Delete an inactive mailbox
           href: delete-an-inactive-mailbox.md
-    - name: Videos from the Data Governance team
-      href: https://go.microsoft.com/fwlink/?linkid=867039
     - name: Records management
       items: 
         - name: Learn about records management
@@ -401,6 +427,8 @@
           href: declare-records.md
         - name: Use record versioning
           href: record-versioning.md
+        - name: Resources for regulatory requirements
+          href: retention-regulatory-requirements.md
 - name: Manage eDiscovery
   items:
     - name: eDiscovery in Microsoft 365
@@ -448,7 +476,7 @@
             href: change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
             href: disable-reports-when-you-export-content-search-results.md
-        - name: Understand content search
+        - name: Content search reference
           items: 
           - name: Content search limits
             href: limits-for-content-search.md
@@ -460,7 +488,9 @@
             href: de-duplication-in-ediscovery-search-results.md
           - name: Differences between estimated and actual search results
             href: differences-between-estimated-and-actual-ediscovery-search-results.md
-        - name: Run content search PowerShell scripts
+          - name: Decryption in eDiscovery tools
+            href: ediscovery-decryption.md
+        - name: Content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections
             href: use-content-search-for-targeted-collections.md
@@ -506,6 +536,10 @@
             href: data-spillage-scenariosearch-and-purge.md
           - name: Preserve Bcc recipients for search
             href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+          - name: Decryption in eDiscovery tools
+            href: ediscovery-decryption.md
+          - name: Collect eDiscovery diagnostic information
+            href: ediscovery-diagnostic-info.md 
           - name: Troubleshoot common eDiscovery issues
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
@@ -622,9 +656,11 @@
             - name: Document metadata fields
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: Set up attorney-client privilege detection
-              href: attorney-privilege-detection.md           
+              href: attorney-privilege-detection.md
             - name: Conversation review sets
               href: conversation-review-sets.md
+            - name: CJK language support
+              href: ediscovery-cjk-support.md
             - name: Assign eDiscovery permissions
               href: assign-ediscovery-permissions.md
             - name: Keyword queries and search conditions
@@ -633,6 +669,10 @@
               href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
+            - name: Decryption in eDiscovery tools
+              href: ediscovery-decryption.md
+            - name: Collect eDiscovery diagnostic information
+              href: ediscovery-diagnostic-info.md
             - name: Search for eDiscovery activities in the audit log
               href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: Troubleshoot AzCopy
@@ -827,8 +867,14 @@
           href: auditing-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log
           href: use-sharing-auditing.md
-        - name: Search for eDiscovery activities in the audit log
-          href: search-for-ediscovery-activities-in-the-audit-log.md
+        - name: Office 365 Management Activity API
+          items:
+            - name: Office 365 Management Activity API reference
+              href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference  
+            - name: Office 365 Management Activity API schema
+              href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema 
+            - name: Office 365 Management Activity API FAQs and troubleshooting
+              href: https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
     - name: Mailbox auditing
       href: enable-mailbox-auditing.md
     - name: Advanced Audit

@@ -1,6 +1,6 @@
 ---
-title: What's new in Microsoft Threat Protection
-description: Lists the new features and functionality in Microsoft Threat Protection
+title: What's new in Microsoft 365 Defender
+description: Lists the new features and functionality in Microsoft 365 Defender
 keywords: what's new in microsoft threat protection, ga, generally available, capabilities, available, new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -13,28 +13,31 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: conceptual
 ---
 
-# What's new in Microsoft Threat Protection
+# What's new in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-The following features are generally available (GA) in the latest release of Microsoft Threat Protection.
+The following features are generally available (GA) in the latest release of Microsoft 365 Defender.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
 ## September 2020
-- [AssignedIPAddresses() function](advanced-hunting-assignedipaddresses-function.md) <br> Use this function in your [advanced hunting](advanced-hunting-overview.md) queries to quickly obtain the latest IP addresses that have been assigned to a device or the most recent IP addresses from a specified point in time.
+- [IdentityDirectoryEvents table](advanced-hunting-identitydirectoryevents-table.md) <br> Find events involving an on-premises domain controller running Active Directory (AD). This [advanced hunting](advanced-hunting-overview.md) schema table covers a range of identity-related events and system events on the domain controller.
+- [AssignedIPAddresses() function](advanced-hunting-assignedipaddresses-function.md) <br> Use this function in your advanced hunting queries to quickly obtain the latest IP addresses assigned to a device or the most recent IP addresses from a specific time.
 
 ## July 2020
 - [FileProfile() function](advanced-hunting-fileprofile-function.md) <br> Use this function in your advanced hunting queries to enrich results with comprehensive file information.
 - [Identity and app tables](advanced-hunting-schema-tables.md)<br> Get visibility into authentication events, Active Directory queries, and app-related activity with the [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md), and [AppFileEvents](advanced-hunting-appfileevents-table.md) tables in the advanced hunting schema.
-- [Go hunt](advanced-hunting-go-hunt.md)<br> Quickly pivot from investigating an incident to inspecting a specific event, a user, a device, or other entity types using query-based advanced hunting capabilities.
+- [Go hunt](advanced-hunting-go-hunt.md)<br> Quickly pivot from investigating an incident to inspecting a specific event, a user, a device, or other entity types on advanced hunting.
 
 ## June 2020
 - Twitter feed <br> Get the latest security research, threat intelligence, product news, and more - right inside the dashboard.

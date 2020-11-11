@@ -7,7 +7,7 @@ author: MSFTTracyP
 manager: chrisda
 ms.date:
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -46,7 +46,7 @@ This topic describes how to create these mail flow rules the Exchange admin cent
 
 ## What do you need to know before you begin?
 
-- You need to be assigned permissions in the on-premises Exchange environment before you can do these procedures. Specifically, you need to be assigned the **Transport Rules** role, which is assigned to the **Organization Management**, **Compliance Management**, and **Records Management** roles by default. For more information, see [Add members to a role group](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group).
+- You need to be assigned permissions in the on-premises Exchange environment before you can do these procedures. Specifically, you need to be assigned the **Transport Rules** role, which is assigned to the **Organization Management**, **Compliance Management**, and **Records Management** roles by default. For more information, see [Add members to a role group](https://docs.microsoft.com/Exchange/permissions/role-group-members#add-members-to-a-role-group).
 
 - If and when a message is delivered to the Junk Email folder in an on-premises Exchange organization is controlled by a combination of the following settings:
 

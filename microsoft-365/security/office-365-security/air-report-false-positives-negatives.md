@@ -1,6 +1,6 @@
 ---
-title: How to report false positives or false negatives in Office 365 automated investigation and response 
-description: Was something missed or wrongly detected by Office 365 Advanced Threat Protection? Learn how to submit false positives or false negatives to Microsoft for analysis.
+title: How to report false positives or false negatives following automated investigation in Microsoft Defender for Office 365 
+description: Was something missed or wrongly detected by AIR in Microsoft Defender for Office 365? Learn how to submit false positives or false negatives to Microsoft for analysis.
 keywords: automated, investigation, alert, trigger, action, remediation, false positive, false negative
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -11,14 +11,16 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 05/15/2020
+ms.date: 09/29/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - M365-security-compliance 
+- m365initiative-defender-office365
 ms.topic: conceptual
-ms.custom: autoir
+ms.custom: 
+- autoir
 ---
 
 # How to report false positives/negatives in automated investigation and response capabilities
@@ -27,7 +29,7 @@ ms.custom: autoir
 
 
 **Applies to:**
-- Office 365 Advanced Threat Protection
+- Microsoft Defender for Office 365
 
 Did [automated investigation and response (AIR) capabilities in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) miss or wrongly detect something? There are steps you can take to fix it. You can:
 - [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
@@ -38,7 +40,7 @@ Use this article as a guide.
 
 ## Report a false positive/negative to Microsoft for analysis
 
-If Office 365 AIR missed an email message, an email attachment, a URL in an email message, or a URL in an Office file, you can [submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
+If AIR in Microsoft Defender for Office 365 missed an email message, an email attachment, a URL in an email message, or a URL in an Office file, you can [submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
 
 You can also [Submit a file to Microsoft for malware analysis](https://www.microsoft.com/wdsi/filesubmission).
 
@@ -46,7 +48,7 @@ You can also [Submit a file to Microsoft for malware analysis](https://www.micro
 
 If an alert is triggered by legitimate use, or the alert is inaccurate, you can [Manage alerts in the Cloud App Security portal](https://docs.microsoft.com/cloud-app-security/managing-alerts).
 
-If your organization is using [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) in addition to Office 365, and a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can [create a custom indicator with an "Allow" action for your device](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+If your organization is using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) in addition to Office 365, and a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can [create a custom indicator with an "Allow" action for your device](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## Undo a remediation action
 
@@ -85,6 +87,6 @@ In the Action center, you can see remediation actions that were taken and potent
 
 ## Related articles
 
-[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 
-[Get started using Automated investigation and response (AIR) in Office 365](office-365-air.md)
+[AIR in Microsoft Defender for Office 365](office-365-air.md)

@@ -15,7 +15,9 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
@@ -25,14 +27,14 @@ ms.topic: article
 
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 Boost your knowledge of advanced hunting quickly with _Tracking the adversary_, a webcast series for new security analysts and seasoned threat hunters. The series guides you through the basics all the way to creating your own sophisticated queries. Start with the first video on fundamentals or jump to more advanced videos that suit your level of experience.
 
 
 | Title | Description | Watch | Queries | 
 |--|--|--|--|
-| Episode 1: KQL fundamentals | This episode covers the basics of advanced hunting in Microsoft Threat Protection. Learn about available advanced hunting data and basic KQL syntax and operators. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL file](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
+| Episode 1: KQL fundamentals | This episode covers the basics of advanced hunting in Microsoft 365 Defender. Learn about available advanced hunting data and basic KQL syntax and operators. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL file](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Episode 2: Joins | Continue learning about data in advanced hunting and how to join tables together. Learn about `inner`, `outer`, `unique`, and `semi` joins, and understand the nuances of the default Kusto `innerunique` join. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [CSL file](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
 | Episode 3: Summarizing, pivoting, and visualizing data | Now that you've learned to filter, manipulate, and join data, it’s time to summarize, quantify, pivot, and visualize. This episode discusses the `summarize` operator and various calculations, while introducing additional tables in the schema. You'll also learn to turn datasets into charts that can help you extract insight. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [CSL file](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
 | Episode 4: Let’s hunt! Applying KQL to incident tracking | In this episode, you learn to track some attacker activity. We use our improved understanding of Kusto and advanced hunting to track an attack. Learn actual tricks used in the field, including the ABCs of cybersecurity and how to apply them to incident response. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [CSL file](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)
@@ -44,7 +46,7 @@ The following excerpt from a CSL file shows a comprehensive set of guidance mark
 
 ```kusto
 // DeviceLogonEvents
-// A table containing a row for each logon a device enrolled in Defender ATP
+// A table containing a row for each logon a device enrolled in Microsoft Defender for Endpoint
 // Contains
 // - Account information associated with the logon
 // - The device which the account logged onto
@@ -60,7 +62,7 @@ DeviceLogonEvents
 | count
 
 // DeviceLogonEvents
-// A table containing a row for each logon a device enrolled in Defender ATP
+// A table containing a row for each logon a device enrolled in Microsoft Defender for Endpoint
 // Contains
 // - Account information associated with the logon
 // - The device which the account logged onto

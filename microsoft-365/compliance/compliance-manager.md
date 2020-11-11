@@ -9,7 +9,10 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -125,7 +128,7 @@ Improvement actions help centralize your compliance activities. Each improvement
 
 ## Supported languages
 
-Compliance Manger is available in the following languages:
+Compliance Manager is available in the following languages:
 
 - English
 - Bahasa Indonesian

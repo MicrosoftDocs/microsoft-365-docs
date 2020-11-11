@@ -90,27 +90,27 @@ For a brand new device running Windows 10 Pro Creators Update, or for a device t
   
    ![Enter your work or school email on the Let's get you signed in page](../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. On the **Make sure this is your organization** page, verify that the information is correct, and click **Join**.
+6. On the **Make sure this is your organization** page, verify that the information is correct, and choose **Join**.
   
-   On the **You're all set!** page, click **Done**.
+   On the **You're all set!** page, chosse **Done**.
   
-   ![On the Make sure this is your organization screen, click Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
+   ![On the Make sure this is your organization screen, choose Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
 If you uploaded files to OneDrive for Business, sync them back down. If you used a third-party tool to migrate profile and files, also sync those to the new profile.
   
 ## Verify the device is connected to Azure AD
 
-To verify your sync status, on the **Access work or school** page in **Settings**, click in the **Connected to** _ \<organization name\> _ area to expose the buttons **Info** and **Disconnect**. Click on **Info** to get your synchronization status. 
+To verify your sync status, on the **Access work or school** page in **Settings**, select the **Connected to** _ \<organization name\> _ area to expose the buttons **Info** and **Disconnect**. Choose **Info** to get your synchronization status. 
   
-On the Sync status page, click Sync to get the latest mobile device management policies onto the PC.
+On the **Sync status** page, choose **Sync** to get the latest mobile device management policies onto the PC.
   
 To start using the Microsoft 365 Business Premium account, go to the Windows **Start** button, right-click your current account picture, and then **Switch account**. Sign in by using your organization email and password.
   
 ![Click Info button to view synchronization status](../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
-## Verify the device is upgraded to Windows 10 Business
+## Verify the PC is upgraded to Windows 10 Business
 
-Verify that your Azure AD joined Windows 10 devices were upgraded to Windows 10 Business as part of your Microsoft 365 Business Premium subscription.
+Verify that your Azure AD joined Windows 10 devices are upgraded to Windows 10 Business as part of your Microsoft 365 Business Premium subscription.
   
 1. Go to **Settings** \> **System** \> **About**.
     

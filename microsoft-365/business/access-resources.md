@@ -31,9 +31,6 @@ Any Windows 10 device that is Azure Active Directory joined has access to all cl
 
 To learn more, see [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 The steps are also summarized in the following sections.
-
-> [!IMPORTANT]
-> This procedure is only applicable to OAuth and NTLM. Kerberos is not supported.
  
 ## Run Azure AD Connect
 

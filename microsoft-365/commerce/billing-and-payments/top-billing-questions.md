@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,13 +19,8 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
-description: "Find answers to your top billing questions for Microsoft 365 for business subscription. "
+description: "Find answers to your top billing questions for Microsoft 365 for business subscriptions."
 ---
 
 # Top billing questions for Microsoft 365 for business
@@ -166,14 +161,14 @@ See [View your bill or get Fapiaos in Office 365 operated by 21Vianet](../../adm
 ::: moniker range="o365-worldwide"
 ## What taxes will I be charged?
 
-See [What tax will I be charged?](tax-information.md#what-tax-will-i-be-charged) to find out what tax you're charged, depending on your country or region.
+See [Tax information](tax-information.md) to find out what tax you're charged, depending on your country or region.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 ## What taxes will I be charged?
 
-See [What tax will I be charged?](tax-information.md#what-tax-will-i-be-charged) to find out what tax you're charged, depending on your country or region.
+See [Tax information](tax-information.md) to find out what tax you're charged, depending on your country or region.
   
 ::: moniker-end
 

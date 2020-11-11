@@ -21,7 +21,7 @@ This topic outlines the infrastructure requirements you must meet to assure succ
 
 Area | Prerequisite details
 --- | ---
-Licensing |Microsoft Managed Desktop requires either of the following Microsoft 365 licenses (or equivalents):<br>-Microsoft 365 E5<br>-Microsoft 365 E3 with the Microsoft 365 E5 Security add-on<br><br>For details about the specific service plans and their role in Microsoft Managed Desktop, see [More about licenses](#more-about-licenses) in this topic.<br>For more information on available licenses, see [Microsoft 365 licensing](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+Licensing |Microsoft Managed Desktop requires the Microsoft 365 E3 license with Microsoft Defender for Endpoint and Azure Active Directory Premium 2 (or equivalents).<br>For details about the specific service plans, see [More about licenses](#more-about-licenses) in this topic.<br>For more information on available licenses, see [Microsoft 365 licensing](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 Connectivity |	All Microsoft Managed Desktop devices require connectivity to numerous Microsoft service endpoints from the corporate network.<br><br>For the full list of required IPs and URLs, see [Network configuration](../get-ready/network.md). 
 Azure Active Directory |	Azure Active Directory (Azure AD) must either be the source of authority for all user accounts, or user accounts must be synchronized from on-premises Active Directory using the latest supported version of Azure AD Connect.<br><br>[Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview) must be enabled for Microsoft Managed Desktop users.<br><br>For more information, see [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect).<br><br>For more information on supported Azure AD Connect versions, see [Azure AD Connect:Version release history](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history).
 Authentication |	If Azure AD is not the source of primary authentication for user accounts, you must configure one of these in Azure AD Connect:<br>- Password hash synchronization<br>- Pass-through authentication<br>- An external identity provider (including Windows Server ADFS and non-Microsoft IDPs) configured to meet Azure AD integration requirements. See the [guidelines](https://www.microsoft.com/download/details.aspx?id=56843) for more information. <br><br>When setting authentication options with Azure AD Connect, password writeback is also recommended. For more information, see [Password writeback](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). <br><br>If an external identity provider is implemented, you must validate the solution:<br>- Meets Azure AD integration requirements<br>- Supports Azure AD Conditional Access, this is to enable MMD Device Compliance Policy to be configured<br>- Enables device enrollment and use of Microsoft 365 services or features required as part of Microsoft Managed Desktop <br><br>For more information on authentication options with Azure AD, see [Azure AD Connect user sign-in options](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin).
@@ -33,20 +33,20 @@ When you're ready to get started with Microsoft Managed Desktop, contact your Mi
 
 ## More about licenses
 
-Microsoft Managed Desktop requires certain license options in order to function. These options are available in a number of various license bundles, some of which you might already own. This table shows which necessary options are available in which licenses and summarizes their role in Microsoft Managed Desktop.
+Microsoft Managed Desktop requires certain license options in order to function. See [Microsoft Managed Desktop technologies](../intro/technologies.md) for information about how these licenses are used.
 
 > [!TIP]
 > To assign these license options to specific users, we recommend that you take advantage of the [group-based licensing feature](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) of Azure Active Directory.
 
+- Azure Active Directory Premium P2
+- Microsoft Intune 
+- Windows 10 Enterprise  
+- Microsoft Defender for Endpoint
+- Microsoft 365 Apps for enterprise
+- Microsoft Teams
+- [SharePoint Online Plan 2](https://www.microsoft.com/microsoft-365/sharepoint/compare-sharepoint-plans)
+- [Exchange Online Plan 2](https://www.microsoft.com/microsoft-365/exchange/compare-microsoft-exchange-online-plans) 
 
-
-|License option |Available in *any* of these license products |How Microsoft Managed Desktop uses it|
-|-------------|-------------|-------------|
-|Azure Active Directory Premium P2     |- Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Security Add-on<br>- Enterprise Mobility + Security E5<br>- Enterprise Mobility + Security E3<br>- Azure Active Directory Premium P2|  Provides access to Microsoft Cloud Services; allows AutoPilot to register devices      |
-|Microsoft Intune | - Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Security Add-on<br>- Enterprise Mobility + Security E5<br>- Enterprise Mobility + Security E3<br>- Microsoft Intune  |  Necessary to register devices, deploy updates, and manage devices       |
-|Windows 10 Enterprise  |- Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Security Add-on<br>- Windows 10 Enterprise E3<br>- Windows 10 Enterprise E5 | Provides enterprise features of Windows 10       |
-|Microsoft Defender Advanced Threat Protection | - Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Security Add-on<br>- Windows 10 Enterprise E5<br>- Microsoft Defender Advanced Threat Protection   |  Provides detection, monitoring, alerting and response to threats  |
-|Microsoft 365 Apps for enterprise  |- Microsoft 365 E5<br>- Microsoft 365 E3<br>- Office 365 E5<br>- Office 365 E3| Activates Office and productivity and collaboration tools    |
 
 > [!TIP]
 > Your Microsoft Account Manager will help you review your current licenses and service plans and find the most efficient path for you to get any additional licenses or service plans you might need, while avoiding duplication.

@@ -2,7 +2,7 @@
 title: Admin submissions
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date:
@@ -12,8 +12,9 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection:
-- M365-security-compliance
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: "Admins can learn how to use the Submissions portal in the Security & Compliance Center to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files to Microsoft for scanning."
@@ -68,7 +69,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 4. If the filter was bypassed due to policies upon submission, you'll see information about that policy.
 
-   If the filter was not bypassed due to one or more policies, the scan will complete in several minutes. You'll see additional information about the submission by clicking on the status link. This includes the results of the policy check and the rescan verdict. Note this does not run the email through the Office 365 ATP full filtering stack again but runs a partial rescan based on certain attributes of the mail, URL, or file.
+   If the filter was not bypassed due to one or more policies, the scan will complete in several minutes. You'll see additional information about the submission by clicking on the status link. This includes the results of the policy check and the rescan verdict. Note this does not run the email through the Microsoft Defender for Office 365 full filtering stack again but runs a partial rescan based on certain attributes of the mail, URL, or file.
 
 5. When you're finished, click the **Submit** button.
 
@@ -227,6 +228,10 @@ You can click the **Column options** button near the bottom of the page to add o
 Near the top of the page, you can enter a start date, an end date, and you can filter by **Submitted by** by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
 
 To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
+
+## Undo user submissions
+
+Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it will be available for recovery in the Deleted Items or Junk Email folders. 
 
 ### Submit messages to Microsoft from the custom mailbox
 

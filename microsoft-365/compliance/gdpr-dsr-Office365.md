@@ -610,9 +610,9 @@ You can't hard-delete a user in the Office 365 admin portal.
 
 One thing to understand when deleting a user is what happens to the user's Exchange Online mailbox. After the user account is hard-deleted (in step 3 in the previous process) the deleted user's mailbox isn't automatically purged from Office 365. It takes up to 60 days after the user account is hard-deleted to permanently remove it from Office 365. Here's the mailbox lifecycle after the user account is deleted and a description of the state of the mailbox data during that time:
 
-- **Day 1 — Day 30** — The mailbox can be fully restored by restoring the soft-deleted user account.
-- **Day 31 — Day 60** — For 30 days after the user account is hard-deleted, an admin in your organization can recover the data in the mailbox and import it into a different mailbox. This provides organizations the ability to recover the mailbox data if necessary.
-- **Day 61 – Day 90** - An admin can no longer recover the data in the mailbox. The mailbox data will be marked for permanent removal, and it takes up to 30 more days for the mailbox data to be purged from Office 365.
+- **Day 1-Day 30** — The mailbox can be fully restored by restoring the soft-deleted user account.
+- **Day 31-Day 60** — For 30 days after the user account is hard-deleted, an admin in your organization can recover the data in the mailbox and import it into a different mailbox. This provides organizations the ability to recover the mailbox data if necessary.
+- **Day 61-Day 90** - An admin can no longer recover the data in the mailbox. The mailbox data will be marked for permanent removal, and it takes up to 30 more days for the mailbox data to be purged from Office 365.
 
 If you determine that this mailbox lifecycle doesn't meet your organization's requirements for responding to a DSR deletion request, you can [contact Microsoft Support](https://support.microsoft.com/) *after* you hard-delete the user account, and request Microsoft to manually initiate the process to permanently remove the mailbox data. This process to permanently remove mailbox data starts automatically after day 61 in the lifecycle, so there would be no reason to contact Microsoft after this point in the lifecycle.
 
@@ -686,7 +686,7 @@ The following types of data are created by customers, administrators, or staff:
     
     - Contacts for anyone can be imported from a C1's mobile device into Bookings with the Bookings iOS and Android clients.
     
-    - Contacts are also auto-created at the time of booking creation through the booking workflow for anyone booked – whether the booking is created by a user on a customer's behalf or if it's created by the customer using the owner's booking page.
+    - Contacts are also auto-created at the time of booking creation through the booking workflow for anyone booked, whether the booking is created by a user on a customer's behalf or if it's created by the customer using the owner's booking page.
 
 - **Booking events** - These are meetings between the business owner or their designated staff and a customer, which are created either by the business owner or the customer through the business owner's public booking page. This data includes name, address, email address, phone number, and any other info the business owner collects from the customer at the time of booking.
 
@@ -1733,7 +1733,7 @@ Here's a high-level overview of how to implement Compliance Boundaries (together
 
 3. Create an admin role group in the Security & Compliance Center for each compliance boundary. We recommend that you create these role groups by copying the built-in eDiscovery Manager role group and then removing any roles as necessary.
 
-4. Add members to each of the specific role groups as eDiscovery Mangers. Members are the people responsible for investigating and responding to DSRs, and will typically consist of IT admins, data privacy officers, compliance managers, and human resource representatives.
+4. Add members to each of the specific role groups as eDiscovery Managers. Members are the people responsible for investigating and responding to DSRs, and will typically consist of IT admins, data privacy officers, compliance managers, and human resource representatives.
 
 5. Create a search permissions filter for each compliance boundary so that the members of the corresponding admin role group can only search mailboxes and sites for users within that agency/compliance boundary. The search permissions filter allows members of the corresponding role group to search only the content locations with user object attribute value that corresponds to the agency/compliance boundary.
 
