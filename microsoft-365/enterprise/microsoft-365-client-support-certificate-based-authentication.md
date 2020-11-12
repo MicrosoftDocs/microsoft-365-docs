@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: In this article, find details about Microsoft 365 Client App support for certificate-based authentication..
+description: In this article, find details about Microsoft 365 Client App support for certificate-based authentication.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -24,11 +24,10 @@ ms.custom: seo-marvel-apr2020
 
 Modern authentication is an umbrella term for a combination of authentication and authorization methods. These include:
 
-- Authentication methods: Multi-factor Authentication; Client Certificate-based authentication.
+- **Authentication methods**: Multi-factor Authentication; Client Certificate-based authentication.
+- **Authorization methods**: Microsoft's implementation of Open Authorization (OAuth).
 
-- Authorization methods: Microsoft's implementation of Open Authorization (OAuth).
-
-Modern authentication is enabled through the use of an authentication library, like ADAL or MSAL. Modern authentication is what clients use to authenticate and authorize access to Microsoft 365 resources. Modern authentication leverages OAuth and provides a secure mechanism for clients to access Microsoft 365 services, without requiring access to user credentials. At sign in, the user authenticates directly with Azure Active Directory and receives an access/refresh token pair in return. The access token grants the client access to the appropriate resources in the Microsoft 365 tenant. A refresh token is used to obtain a new access or refresh token pair when the current access token expires.
+Modern authentication is enabled through the use of an authentication library, like Active Directory Authentication Library (ADAL) or Microsoft Authentication Library (MSAL). Modern authentication is what clients use to authenticate and authorize access to Microsoft 365 resources. Modern authentication leverages OAuth and provides a secure mechanism for clients to access Microsoft 365 services, without requiring access to user credentials. At sign-in, the user authenticates directly with Azure Active Directory and receives an access/refresh token pair in return. The access token grants the client access to the appropriate resources in the Microsoft 365 tenant. A refresh token is used to obtain a new access or refresh token pair when the current access token expires.
 
 Modern authentication supports different authentication mechanisms, like certificate-based authentication. Clients on Windows, Android, or iOS devices can use certificate-based authentication (CBA) to authenticate to Azure Active Directory using a client certificate on the device. Instead of a typical username/password, the certificate is used to obtain an access/refresh token pair from Azure Active Directory.
 
@@ -48,7 +47,7 @@ The latest versions of the following clients and platforms support certificate-b
 | Company portal | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A |
 | Cortana | Planned | Planned | N/A | ![Supported](../media/check-mark.png) | N/A |
 | Delve | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |
-| Edge | ![Supported](../media/check-mark.png)* | ![Supported](../media/check-mark.png)* | N/A | N/A | ![Supported](../media/check-mark.png) |
+| Edge<sup>1</sup> | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | ![Supported](../media/check-mark.png) |
 | Excel | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |
 | Exchange Online Admin | N/A | N/A | N/A | N/A | ![Supported](../media/check-mark.png) |
 | Forms | N/A | N/A | N/A | N/A | N/A |
@@ -82,12 +81,8 @@ The latest versions of the following clients and platforms support certificate-b
 | Workplace analysis | N/A | N/A | N/A | N/A | N/A |
 | Yammer | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | Planned | N/A | Planned |
 
-> [!IMPORTANT]
-> Edge for iOS and Android supports certificate-based authentication during account add flows. Edge for iOS and Android does not support certificate-based authentication when performing authentication against web sites, which are typically intranet sites. In this scenario, a user navigates to a web site (usually on the intranet) where the web site requires the user to authenticate via a certificate. This does not involve modern authentication at all and does not leverage a Microsoft authentication library. This is due to a limitation with iOS: iOS prevents third-party apps from accessing the system keychain where the certificates are stored (only Apple apps and the [Safari webview controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) can access the system keychain).
-
- 
-
-As Edge relies on webkit, Edge is unable to access the system keychain and present the user with cert choice. THis, unfortunately, is by design due to Apple's architecture.
+>[!NOTE]
+><sup>1</sup> Edge for iOS and Android supports certificate-based authentication during account add flows. Edge for iOS and Android does not support certificate-based authentication when performing authentication against web sites, which are typically intranet sites. <br><br>  In this scenario, a user navigates to a web site (usually on the intranet) where the web site requires the user to authenticate via a certificate. This does not involve modern authentication at all and does not leverage a Microsoft authentication library. This is due to a limitation with iOS: iOS prevents third-party apps from accessing the system keychain where the certificates are stored (only Apple apps and the [Safari webview controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) can access the system keychain). <br><br> As Edge relies on webkit, Edge is unable to access the system keychain and present the user with cert choice. This, unfortunately, is by design due to Apple's architecture.
 
 ## Supported PowerShell modules
 

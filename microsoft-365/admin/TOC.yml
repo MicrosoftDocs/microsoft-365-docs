@@ -224,18 +224,20 @@
            href: manage/pin-apps-to-app-launcher.md
          - name: Upgrade users to the latest apps
            href: setup/upgrade-users-to-latest-office-client.md
-         - name: Requirements for centralized deployment of add-ins
-           href: manage/centralized-deployment-of-add-ins.md
+         - name: Centralized deployment of add-ins
+           items:
+            - name: Requirements for centralized deployment of add-ins
+              href: manage/centralized-deployment-of-add-ins.md
+            - name: Deploy add-ins in the admin center 
+              href: manage/manage-deployment-of-add-ins.md
+            - name: Manage add-ins in the admin center 
+              href: manage/manage-addins-in-the-admin-center.md      
+            - name: Centralized Deployment FAQ
+              href: manage/centralized-deployment-faq.md
          - name: Manage industry news
            href: manage/manage-industry-news.md
-         - name: Deploy add-ins in the admin center 
-           href: manage/manage-deployment-of-add-ins.md
-         - name: Manage add-ins in the admin center 
-           href: manage/manage-addins-in-the-admin-center.md
          - name: Manage Office Scripts settings 
-           href: manage/manage-office-scripts-settings.md        
-         - name: Centralized Deployment FAQ
-           href: manage/centralized-deployment-faq.md
+           href: manage/manage-office-scripts-settings.md  
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
          - name: Manage Message center messages
