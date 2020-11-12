@@ -28,7 +28,7 @@ You can manage topic discovery settings in the [Microsoft 365 admin center](http
 
 4. Select the **Topic discovery** tab. See the following sections for information about each setting.
 
-## Change how the knowledge network can find topics
+## Select SharePoint topic sources
 
 You can change the SharePoint sites in your organization that will be crawled for topics.
 
@@ -55,7 +55,7 @@ To choose sites for topic discovery
 
 You can exclude topics from discovery.
 
-1. On the **Topic discovery** tab, under **Select SharePoint topic sources**, select **Edit**.
+1. On the **Topic discovery** tab, under **Exclude topics**, select **Edit**.
 2. Click **Exclude topics by name**.
 3. If you need to create a list, download the .csv template and add the topics that you want to exclude (see *Working with the .csv template* below). When the file is ready, click **Browse** and upload the file.
 4. Click **Save**.
@@ -82,5 +82,9 @@ In the CSV template, enter the following information about the topics you want t
 
 ## See also
 
+[Manage topic visibility in Microsoft 365](topic-experiences-knowledge-rules.md)
 
+[Manage topic permissions in Microsoft 365](topic-experiences-user-permissions.md)
+
+[Change the name of the topic center in Microsoft 365](topic-experiences-administration.md)
 
