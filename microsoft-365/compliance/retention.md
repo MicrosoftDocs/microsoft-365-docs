@@ -198,7 +198,7 @@ An email or document can have only a single retention label applied to it at a t
 
 For standard retention labels (they don't mark items as a [record or regulatory record](records-management.md#records)):
 
-- Admins and end users can always manually change or remove an existing retention label that's applied on content. 
+- Admins and end users can manually change or remove an existing retention label that's applied on content. 
 
 - When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with one possible exception: The existing label was applied with a default label.
     
@@ -206,7 +206,7 @@ For standard retention labels (they don't mark items as a [record or regulatory 
 
 - If there are multiple rules that could apply a retention label by using auto-apply label policies, and content meets the conditions of multiple rules, the retention label for the oldest rule (by date created) is applied.
 
-When retention labels mark items as a record or a regulatory record, these labels are never automatically changed. For more information about the restrictions that comes with this label configuration, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). 
+When retention labels mark items as a record or a regulatory record, these labels are never automatically changed. Only admins for the container can manually change or remove retention labels that mark items as a record, but not regulatory records. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 #### Monitoring retention labels
 
