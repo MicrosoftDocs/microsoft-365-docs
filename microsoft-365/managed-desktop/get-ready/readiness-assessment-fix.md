@@ -287,7 +287,7 @@ Users with certain security roles must have those assigned in Microsoft Defender
 
 **Advisory**
 
-If you have any of these roles assigned in your Azure AD organization, make sure they also have these roles assigned in Microsoft Defender for Endpoint. Otherwise, administrators with these roles won't be able to access the Admin portal.
+If you have users assigned to any of these roles in your Azure AD organization, make sure they also have these roles assigned in Microsoft Defender for Endpoint. Otherwise, administrators with these roles won't be able to access the Admin portal.
 
 - Security Reader
 - Security Operator
