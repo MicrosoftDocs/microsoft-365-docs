@@ -238,16 +238,16 @@ If you click the **90th percentiles** tab or the **99th percentiles** tab, the s
 
 ### Details table view for the Mail latency report
 
-The following information is shown in the table view:
+The following information is shown in the details table view:
 
 - **Date**
 - **Percentiles**
 - **Message count**
 - **Overall latency**
 
-![Mail latency report details](../../media/mail-latency-report-detail.png)
+![Mail latency report details](../../media/mail-latency-report-details.png)
 
-This shows that on 11/08/2020 the average latency experienced for all messages delivered and detonated was 111.744 seconds.
+This shows that on 11/08/2020 the average latency experienced for all messages delivered and detonated was **111.744** seconds.
 
 The details table contains same information on each tab.
 
