@@ -155,11 +155,11 @@ Query-based auto-apply policies use the same search index as eDiscovery content 
 
 Some things to consider when using keywords or searchable properties to auto-apply retention labels:
 
-- New, modified, and existing items will be auto-labeled for SharePoint or OneDrive. New items will be auto-labeled for Exchange.
+- New, modified, and existing items will be auto-labeled for SharePoint or OneDrive. New and modified items will be auto-labeled for Exchange.
 
-- For SharePoint, crawled properties and custom properties aren't supported for these KQL queries and you must use only predefined managed properties. However, you can use mappings at the tenant level with the predefined managed property by using RefinableString00 to RefinableString199. For more information, see [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview), and for instructions, see [Create a new managed property](https://docs.microsoft.com/sharepoint/manage-search-schema#create-a-new-managed-property).
+- For SharePoint, crawled properties and custom properties aren't supported for these KQL queries and you must use only predefined managed properties. However, you can use mappings at the tenant level with the predefined managed properties that are enabled as refiners by default (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09, and RefinableDouble00-09). For more information, see [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview), and for instructions, see [Create a new managed property](https://docs.microsoft.com/sharepoint/manage-search-schema#create-a-new-managed-property).
 
-- If you map a custom property to one of the refinable string properties, wait 24 hours before you use it in your KQL query for a retention label.
+- If you map a custom property to one of the refiner properties, wait 24 hours before you use it in your KQL query for a retention label.
 
 - Although SharePoint managed properties can be renamed by using aliases, don't use these for KQL queries in your labels. Always specify the actual name of the managed property, for example, "RefinableString01".
 
@@ -184,31 +184,34 @@ More complex examples:
 The following query for SharePoint identifies Word documents or Excel spreadsheets when those files contain the keywords **password**, **passwords**, or **pw**:
 
 ```
-(password OR passwords OR pw) AND (fileextension: .doc* OR fileextension: .xls*)  
+(password OR passwords OR pw) AND (filetype:doc* OR filetype:xls*)
 ```
+
 The following query for Exchange identifies any Word document or PDF that contains the word **nda** or the phrase **non disclosure agreement** when those documents are attached to an email:
 
 ```
-(nda OR "non disclosure agreement") AND (attachmentnames: .doc* OR attachmentnames: .pdf)
+(nda OR "non disclosure agreement") AND (attachmentnames:.doc* OR attachmentnames:.pdf)
 ```
 
-The following query for either Exchange or SharePoint identifies emails or documents that contain a credit card number: 
+The following query for SharePoint or OneDrive identifies documents that contain a credit card number: 
 
 ```
-sensitivetype:credit card number
+sensitivetype:"credit card number"
 ```
 
 The following query contains some typical keywords to help identify documents or emails that contain legal content:
 
 ```
-ACP OR Attorney Client Privilege* OR AC Privilege
+ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 ```
 
-The following query contains typical keywords to help identify documents or emails for human resources. However, note that a space between keywords (or two property:value expressions) is the same as using AND. Therefore, without adding OR between the keywords, the query identifies only content that contains all these keywords, instead of content that contains any of the keywords:
+The following query contains typical keywords to help identify documents or emails for human resources: 
 
 ```
-resume staff employee salary recruitment candidate
+(resume OR staff OR employee OR salary OR recruitment OR candidate)
 ```
+
+Note that this final example uses the best practice of always including the operators AND or OR between keywords. A space between keywords (or two property:value expressions) is the same as using AND. Therefore, without adding OR between the keywords, the query would identify only content that contains all these keywords, instead of content that contains any of the keywords. When you always specify the operators, it's easier to correctly interpret the query. 
 
 ##### Microsoft Teams meeting recordings
 
