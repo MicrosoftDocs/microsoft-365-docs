@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Create and auto-publish retention labels so you can automatically apply labels to retain what you need and delete what you don't
+description: Create retention labels and auto-labeling policies so you can automatically apply labels to retain what you need and delete what you don't
 ---
 
 # Automatically apply a retention label to retain or delete content
