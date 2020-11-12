@@ -27,7 +27,7 @@ Microsoft 365 and Microsoft Defender for Office 365 contain many different featu
 
 ## Enable MFA and disable legacy authentication protocols for HVEs
 
-Multi-factor authentication (MFA) requires a traditional username and password plus an additional type of verification (known as a _factor_) to authenticate a user. For example, the addition factor of authentication might be a code generated an authentication app or included in a text message. For high-level information about MFA, see [What is: Multi-factor authentication](https://support.microsoft.com/help/4577374).
+Multi-factor authentication (MFA) requires a traditional username and password plus an additional type of verification (known as a _factor_) to authenticate a user. For example, the addition factor of authentication might be a code generated in an authentication app or included in a text message. For high-level information about MFA, see [What is: Multi-factor authentication](https://support.microsoft.com/help/4577374).
 
 Most compromising sign-in attempts come from legacy authentication in older email clients that don't use modern authentication. For example, Outlook 2010, IMAP4 clients, POP3 clients, and authenticated SMTP. Blocking access to these protocols is important. With a compromised username and password, attackers can bypass MFA and authenticate using one of these older protocols.
 
@@ -47,16 +47,19 @@ For more information about Azure AD versions and licensing, see [Azure Active Di
 |Risk policies|Premium P2<sup>\*</sup>|Enterprise Mobility + Security E5|[How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies)|
 |
 
-<sup>\*</sup> Also available as a standalone subscription.
+<sup>\*</sup> Also available as an add-on subscription.
 
 If you're not using Azure AD to block legacy authentication protocols, you can use [authentication policies](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) and [Client Access Rules](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) in Exchange Online to block Basic authentication and legacy authentication protocols like POP3, IMAP4, and authenticated SMTP.
 
-If you're not using any of the previously described methods, you can [disable POP3 or IMAP4 access](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access) on individual mailboxes. You can can [disable authenticated SMTP](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission) at the organizational level and enable it on specific mailboxes that still require it.
+If you're not using any of the previously described methods, you can disable POP3 and IMAP4 access on individual mailboxes. You can disable authenticated SMTP at the organizational level and enable it on specific mailboxes that still require it. For instructions, see the following topics:
+
+- [Enable or Disable POP3 or IMAP4 access for a user](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
+- [Enable or disable authenticated client SMTP submission (SMTP AUTH)](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
 > [!NOTE]
 > Basic authentication is in the process of being deprecated in Exchange Online for Exchange Web Services (EWS), Exchange ActiveSync, POP3, IMAP4, and remote PowerShell. For details, see this [blog post](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/).
 
-## Use the Strict preset security policies for HVEs in Micro
+## Use the Strict preset security policies for HVEs
 
 For HVEs, we recommend applying the Strict profile in preset security policies.
 
@@ -64,7 +67,7 @@ Preset security policies are a central location to apply the recommended Strict 
 
 For details about the default and Strict policy settings, see [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md).
 
-## User tags in Microsoft 365 or Office 365 E3 or E5
+## User tags in Microsoft 365 E3 or E5
 
 User tags are a way to quickly identify and classify specific users or groups of users in reports and incident investigations.
 
@@ -80,15 +83,15 @@ For default alert policies and custom alert policies, user tags of affected user
 
 ### HVEs in Threat Explorer or Real-time detections
 
-In **Threat Explorer** (Defender for Office 365 Plan 2) or **Real-time detections** (Defender for Office 365 Plan 1), user tags are visible in the Email grid view and the Email details flyout. User tags are also available as a filterable property. For more information, see  [Tags in Threat Explorer](threat-explorer.md#tags-in-threat-explorer).
+In **Threat Explorer** (Microsoft Defender for Office 365 Plan 2) or **Real-time detections** (Microsoft Defender for Office 365 Plan 1), user tags are visible in the Email grid view and the Email details flyout. User tags are also available as a filterable property. For more information, see  [Tags in Threat Explorer](threat-explorer.md#tags-in-threat-explorer).
 
 ### HVEs in Campaign Views
 
 User tags are one of many filterable properties in Campaign Views in Microsoft Defender for Office 365 Plan 2. For more information, see [Campaign Views](campaigns.md).
 
-### HVEs in the Threat protection status report in the Security & Compliance Center
+### HVEs in the Threat protection status report
 
-In virtually all of the views and detail tables in the **Threat protection status report** in the Security & Compliance Center, you can filter the results by user tag. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+In virtually all of the views and detail tables in the **Threat protection status report**, you can filter the results by user tag. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
 
 ### Email issues for priority accounts report in the Exchange admin center
 
