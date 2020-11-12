@@ -276,7 +276,7 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Enable Modern Authentication for Office 2013
           href: security-and-compliance/enable-modern-authentication.md
-        - name: Secure Microsoft Business Premium
+        - name: Secure Microsoft 365 Business Premium
           items:
             - name: Pre-requisites for data protection
               href: ../business/pre-requisites-for-data-protection.md
