@@ -193,7 +193,7 @@ The following query for Exchange identifies any Word document or PDF that contai
 (nda OR "non disclosure agreement") AND (attachmentnames:.doc* OR attachmentnames:.pdf)
 ```
 
-The following query for SharePoint or OneDrive identifies documents that contain a credit card number: 
+The following query for SharePoint identifies documents that contain a credit card number: 
 
 ```
 sensitivetype:"credit card number"
