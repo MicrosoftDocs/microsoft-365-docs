@@ -85,7 +85,7 @@ We recommend **Everyone in my organization**, but if you're doing a pilot you ma
 
 ## Knowledge rules
 
-As an administrator, you can exclude certain topics from topic experiences. This is useful if you want to keep sensitive data from appearing in topics. While knowledge managers can exclude topics in the topic center, topics excluded by the administrator are not even visible to knowledge managers.
+As an administrator, you can exclude certain topics from topic experiences. This is useful if you want to keep sensitive data from appearing in topics. While knowledge managers can exclude topics in the topic center, topics excluded by the administrator are not even visible to knowledge managers. (Knowledge managers can also [exclude topics in the topic center](exclude-topics.md) after discovery.)
 
 If you want to exclude topics at the administrator level, you must add them to a .csv file and upload the file. You can do this during setup or later.
 

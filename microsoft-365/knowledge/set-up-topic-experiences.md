@@ -46,7 +46,7 @@ To set up topic experiences in Microsoft 365
 
     ![Exclude topics](../media/topics-excluded-by-name.png) 
 
-    (Topics can also be [excluded by knowledge managers](exclude-topics.md) after discovery.)
+    (Knowledge managers can also [exclude topics in the topic center](exclude-topics.md) after discovery.)
 
     #### How to exclude topics by name    
 
