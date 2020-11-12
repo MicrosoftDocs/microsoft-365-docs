@@ -174,7 +174,7 @@ encouraged to submit your feedback via Feedback Hub:
     the correct category for Application Guard, then select **+ Add
     new feedback** near the top right.
 
-3.  Fill in the **Summarize your feedback** box if it isn’t already filled in
+3.  Fill in the **Summarize your feedback** box if it isn't already filled in
     for you.
 
 4.  Fill in the **Explain in more detail** box with a detailed description of
@@ -190,7 +190,7 @@ encouraged to submit your feedback via Feedback Hub:
 
     1. Expand the **Recreate my problem** tile.
 
-    2.  If the issue you’re experiencing occurs while Application Guard is
+    2.  If the issue you're experiencing occurs while Application Guard is
         running, open an Application Guard instance. Doing this allows additional
         traces to be collected from within the Application Guard container.
 

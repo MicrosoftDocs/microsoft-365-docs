@@ -97,18 +97,18 @@ Open any remediation item to view details about it, including its name, creation
 
   Suspicious messages are categorized as either remediable or nonremediable. In most cases, remediable and nonremediable messages combine equals total messages submitted. But in rare cases this may not be true. This can happen because of system delays, timeouts, or expired messages. Messages expire based on the Threat Explorer retention period for your organization.
 
-  Unless you're remediating old messages after your organization’s Threat Explorer retention period, it's advisable to retry remediating items if you see number inconsistencies. For system delays, remediation updates are typically refreshed within a few hours.
+  Unless you're remediating old messages after your organization's Threat Explorer retention period, it's advisable to retry remediating items if you see number inconsistencies. For system delays, remediation updates are typically refreshed within a few hours.
 
-  If your organization’s retention period for email in Threat Explorer is 30 days and you're remediating emails going back 29-30 days, mail submission counts may not always add up. The emails might have started moving out of the retention period already.
+  If your organization's retention period for email in Threat Explorer is 30 days and you're remediating emails going back 29-30 days, mail submission counts may not always add up. The emails might have started moving out of the retention period already.
 
-  If remediations are stuck in the "In progress" state for a while, it’s likely due to system delays. It could take up to a few hours to remediate. You might see variations in mail submission counts, as some of the emails may not have been included the query at the start of remediation due to system delays. It is a good idea to retry remediating in such cases.
+  If remediations are stuck in the "In progress" state for a while, it's likely due to system delays. It could take up to a few hours to remediate. You might see variations in mail submission counts, as some of the emails may not have been included the query at the start of remediation due to system delays. It is a good idea to retry remediating in such cases.
 
   > [!NOTE]
   > For best results, remediation should be done in batches of 50,000 or fewer.
 
   Only remediable emails are acted on during remediation. Nonremediable emails can't be remediated by the Office 365 email system, as they aren't stored in cloud mailboxes.
 
-  Admins can take actions on emails in quarantine if necessary, but those emails will expire out of quarantine if they're not manually purged. Emails quarantined because of malicious content aren't accessible by users, so security personnel don't have to take any action to get rid of threats in quarantine. If the emails are on-premises or external, the user can be contacted to address the suspicious email. Or the admins can use separate email server/security tools for removal. These emails can be identified by applying the *delivery location = on-prem* external filter in Threat Explorer. For failed or dropped email, or email not accessible by users, there won’t be any email to mitigate, since these mails don’t reach the mailbox.
+  Admins can take actions on emails in quarantine if necessary, but those emails will expire out of quarantine if they're not manually purged. Emails quarantined because of malicious content aren't accessible by users, so security personnel don't have to take any action to get rid of threats in quarantine. If the emails are on-premises or external, the user can be contacted to address the suspicious email. Or the admins can use separate email server/security tools for removal. These emails can be identified by applying the *delivery location = on-prem* external filter in Threat Explorer. For failed or dropped email, or email not accessible by users, there won't be any email to mitigate, since these mails don't reach the mailbox.
 
   The following image shows how a submission looks in Action Center. A remediation can contain multiple submissions. If multiple actions get approved through one automated investigation, each email or email cluster action appears in the same remediation as a different submission.
 
@@ -126,7 +126,7 @@ Open any remediation item to view details about it, including its name, creation
   - **Completed**: Mitigation on all remediable emails either completed successfully or with some failures.
   - **Failed**: No remediations were successful.
 
-  As only remediable emails can be acted on, each email’s cleanup is shown as successful or failed. From the total remediable emails, successful and failed mitigations are reported.
+  As only remediable emails can be acted on, each email's cleanup is shown as successful or failed. From the total remediable emails, successful and failed mitigations are reported.
 
   - **Success**: The desired action on remediable emails was accomplished. For example: An admin wants to remove emails from mailboxes, so the admin takes the action of soft-deleting emails. If a remediable email isn't found in the original folder after the action is taken, the status will show as successful.
 
