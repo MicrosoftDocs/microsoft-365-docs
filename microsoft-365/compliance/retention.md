@@ -193,7 +193,7 @@ An email or document can have only a single retention label applied to it at a t
 
 - [Auto-apply label policy](apply-retention-labels-automatically.md)
 - [Document understanding module for SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)
-- Default label for [SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels.md#applying-retention-labels-in-outlook)
+- [Default label for SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels.md#applying-retention-labels-in-outlook)
 - [Outlook rules](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
 
 For standard retention labels (they don't mark items as a [record or regulatory record](records-management.md#records)):
