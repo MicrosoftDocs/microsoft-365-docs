@@ -1,5 +1,5 @@
 ---
-title: "Manage topic visibility"
+title: "Manage topic visibility in Microsoft 365"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -43,9 +43,13 @@ You can change the users who can see topics in your organization.
 3. Select **Save**.  
  
 > [!Note] 
-> While this setting allows you to select any user in your organization, only users who have knowledge management licenses assigned to them will be able to view topics.
+> While this setting allows you to select any user in your organization, only users who have Topic Experiences licenses assigned to them will be able to view topics.
 
 ## See also
 
+[Manage topic discovery in Microsoft 365](topic-experiences-discovery.md)
 
+[Manage topic permissions in Microsoft 365](topic-experiences-user-permissions.md)
+
+[Change the name of the topic center in Microsoft 365](topic-experiences-administration.md)
 
