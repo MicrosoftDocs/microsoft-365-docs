@@ -28,7 +28,7 @@ Microsoft Defender Antivirus protects your Windows devices from software threats
 To provide threat protection, Microsoft Defender Antivirus uses several methods. These methods include cloud-delivered protection, real-time protection, and dedicated protection updates.
 
 - Cloud-delivered protection helps provide near-instant detection and blocking of new and emerging threats.
-- Always-on scanning uses file- and process-behavior monitoring and other techniques (also known as "real-time protection").
+- Always-on scanning uses file- and process-behavior monitoring and other techniques (also known as *real-time protection*).
 - Dedicated protection updates are based on machine learning, human and automated big-data analysis, and in-depth threat resistance research. 
 
 To learn more about malware and Microsoft Defender Antivirus, see the following articles: 
@@ -47,7 +47,7 @@ When in disabled mode, users and customers can still use Microsoft Defender Anti
 - actively scan files for threats.
 - remediate, or resolve, threats.
 
-If you uninstall the non-Microsoft antivirus solution, Microsoft Defender Antivirus will automatically go back into active mode to protect your Windows devices from threats.
+If you uninstall the non-Microsoft antivirus solution, Microsoft Defender Antivirus will automatically go into active mode to protect your Windows devices from threats.
 
 > [!TIP]
 > - If you're using Microsoft 365, consider using Microsoft Defender Antivirus as your primary antivirus solution. Integration can provide better protection. See [Better together: Microsoft Defender Antivirus and Office 365](/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus).
