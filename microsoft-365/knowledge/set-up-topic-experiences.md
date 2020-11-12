@@ -1,5 +1,5 @@
 ---
-title: "Set up Topics"
+title: "Set up Topic Experiences"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: 'Learn how to set up Knowledge Management'
+description: "Learn how to set up topic experiences in Microsoft 365"
 ---
 
 # Set up Knowledge Management
 
-You can use the Microsoft 365 admin center to set up and configure [Topic experiences](knowledge-management-overview.md). 
+You can use the Microsoft 365 admin center to set up and configure [topic experiences](knowledge-management-overview.md). 
 
 It is important to plan the best way to set up and configure topics in your environment. Be sure to read [Plan topic experiences](plan-topic-experiences.md) before you begin the procedures in this article.
 
@@ -40,9 +40,9 @@ To set up topic experiences in Microsoft 365
 
     ![Choose how to find topics](../media/ksetup1.png) 
    
-5. In the **Exclude topics by name** section, you can add names of topics you want to exclude from the discovered results. Use this setting to prevent sensitive topics from being included as topics. The options are:
+5. In the **Exclude topics by name** section, you can add names of topics you want to exclude from topic discovery. Use this setting to prevent sensitive information from being included as topics. The options are:
     - **Don't exclude any topics** 
-    - **Exclude topics by name**:  If you have topics you don’t want shown to users.
+    - **Exclude topics by name**
 
     ![Exclude topics](../media/topics-excluded-by-name.png) 
 
@@ -64,7 +64,7 @@ To set up topic experiences in Microsoft 365
     
     Select **Next**.
 
-6. On the **Who can see topics and where they can see them** page, you will configure topic visibility. In the **Who can see topics in the knowledge network** setting, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages. You can select:
+6. On the **Who can see topics and where can they see them** page, you will configure topic visibility. In the **Who can see topics in the knowledge network** setting, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages. You can select:
     - **Everyone in my organization**
     - **Only selected people or security groups**
     - **No one**
@@ -72,7 +72,7 @@ To set up topic experiences in Microsoft 365
     ![Who can see topics](../media/ksetup2.png)  
 
  > [!Note] 
- > While this setting allows you to select any user in your organization, only users who have knowledge management licenses assigned to them will be able to view topics.
+ > While this setting allows you to select any user in your organization, only users who have Topic Experiences licenses assigned to them will be able to view topics.
 
 7. In the **Permissions for topic management** page, you choose who will be able to create, edit, or manage topics. In the **Who can create and edit topics** section, you can select:
     - **Everyone in my organization**
@@ -89,7 +89,7 @@ To set up topic experiences in Microsoft 365
 
     Select **Next**.
 
-9. On the **Create Topic  Center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed.  In the **Site name** box, type a name for your Topic center. You can optionally type a short description in the **Site description** box. 
+9. On the **Create topic center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed. In the **Site name** box, type a name for your Topic center. You can optionally type a short description in the **Description** box. 
 
 Select **Next**.
 
@@ -102,9 +102,6 @@ Select **Next**.
 12. You'll be returned to your **Connect people to knowledge** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
 
     ![Settings applied](../media/ksetup7.png)    
-
-> [!Note]
-> After setup, an admin can [make changes to your selected knowledge management settings](topic-experiences-discovery.md) any time by returning to this page.
 
 ## Assign licenses
 
