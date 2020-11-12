@@ -11,8 +11,8 @@ ms.collection:
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
-description: "Learn how Microsoft 365 helps energy organizations move to a modern collaboration platform, while helping keep data and systems secure and compliant with regulations"
-ms.custom: 
+description: Microsoft 365 helps energy organizations move to a modern collaboration platform, while helping keep data and systems secure and compliant with regulations.
+ms.custom: seo-marvel-jun2020
 ---
 
 # Key Compliance and Security Considerations for the Energy Industry

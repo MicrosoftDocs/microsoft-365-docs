@@ -31,6 +31,9 @@ If your organization has Microsoft Defender for Office 365 Plan 2, which include
 > [!NOTE]
 > Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations).
 
+> [!TIP]
+> Attack simulation training is available for public preview in the Microsoft 365 security center. Check out [Simulate a phishing attack with Microsoft Defender for Office 365](attack-simulation-training.md) to learn more.
+
 ## What do you need to know before you begin?
 
 - To open the Security & Compliance Center, go to <https://protection.office.com/>. Attack simulator is available at **Threat management** \> **Attack simulator**. Go go directly to attack simulator, open <https://protection.office.com/attacksimulator>.

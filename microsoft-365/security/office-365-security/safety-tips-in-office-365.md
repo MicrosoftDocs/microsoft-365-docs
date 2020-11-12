@@ -43,14 +43,6 @@ The safety tip—a color-coded message—will warn you about potentially harmful
 
     In addition to unsafe messages, we'll also tell you about valid messages from senders we trust with a green safety tip. A green safety tip in an email means that we checked the sender of the message and verified that it's safe. Microsoft maintains this list of trusted senders which includes financial organizations and others that are frequently spoofed or impersonated.
 
-- Unfiltered mail (gray safety tip).
-
-    ![Screenshot that shows a gray safety tip.](../../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
-
-    We'll also tell you when we skipped checking a mail because it's from a sender you trust on your Safe Senders list or if a mail flow rule exists to bypass filtering.
-
-    The gray safety tip also shows up when external images are blocked, that is, the message is in your inbox and doesn't appear to be spam, but contains external images that you haven't opted to download.
-
 ## Working with safety tips
 
 Safety tips are always enabled for Outlook on the web, even though not every message will receive one. Admins can turn safety tips off for other email clients such as Outlook. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).

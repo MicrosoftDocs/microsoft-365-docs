@@ -117,7 +117,7 @@ productDirectory:
       links:
         - url: compliance/compliance-quick-tasks.md
           text: Quick tasks for getting started with Microsoft 365 compliance
-        - url: compliance/protect-information.md
+        - url: compliance/information-protection.md
           text: Manage information protection
         - url: compliance/manage-information-governance.md
           text: Manage information governance
@@ -265,6 +265,8 @@ additionalContent:
               url: /Kaizala
             - text: Microsoft Stream
               url: /stream/
+            - text: SharePoint Syntex
+              url: contentunderstanding/index.md
             - text: Yammer
               url: /yammer/yammer-landing-page
         # Card

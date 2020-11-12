@@ -2,7 +2,7 @@
 title: "Security dashboard overview"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
+ms.author: siosulli
 author: denisebmsft
 manager: dansimp
 audience: ITPro
