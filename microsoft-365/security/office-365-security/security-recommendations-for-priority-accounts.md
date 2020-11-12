@@ -25,7 +25,7 @@ What would you do if you received an urgent message from an executive in your or
 
 Microsoft 365 and Microsoft Defender for Office 365 contain many different features that can help you to provided additional layers of security for your priority accounts. The available features and how to use them are discussed in this article.
 
-## Enable MFA and disable legacy authentication protocols for Priority accounts
+## Enable MFA and disable legacy authentication protocols for priority accounts
 
 Multi-factor authentication (MFA) requires a traditional username and password plus an additional type of verification (known as a _factor_) to authenticate a user. For example, the additional factor of authentication might be a code generated in an authentication app or included in a text message. For high-level information about MFA, see [What is: Multi-factor authentication](https://support.microsoft.com/help/4577374).
 
@@ -55,7 +55,7 @@ You can disable POP3 and IMAP4 access on individual mailboxes. You can disable a
 > [!NOTE]
 > Basic authentication is in the process of being deprecated in Exchange Online for Exchange Web Services (EWS), Exchange ActiveSync, POP3, IMAP4, and remote PowerShell. For details, see this [blog post](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/).
 
-## Use the Strict preset security policies for priority accounts
+## Use Strict preset security policies for priority accounts
 
 For priority accounts, we recommend applying the Strict profile in preset security policies.
 
