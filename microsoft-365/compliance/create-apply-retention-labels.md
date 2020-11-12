@@ -16,6 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
+description: Instructions to create and publish retention labels so you can then apply them in apps to retain what you need and delete what you don't.
 ---
 
 # Create retention labels and apply them in apps
