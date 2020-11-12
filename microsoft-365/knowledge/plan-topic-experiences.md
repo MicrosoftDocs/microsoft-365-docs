@@ -1,5 +1,5 @@
 ---
-title: "Plan topics in Microsoft 365"
+title: "Plan topic experiences in Microsoft 365"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,10 +8,10 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: "Learn how to plan for topics in Microsoft 365"
+description: "Learn how to plan for topic experiences in Microsoft 365"
 ---
 
-# Plan topics in Microsoft 365
+# Plan topic experiences in Microsoft 365
 
 It is important to plan the best way to set up and configure topic experiences in your environment. In this article we'll examine these planning decisions:
 
