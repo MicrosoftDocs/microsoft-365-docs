@@ -76,7 +76,7 @@ In addition to the [required licenses and permissions](information-barriers.md#r
    1. Run the following PowerShell cmdlets:
 
       ```powershell
-      Connect-AzureAD 
+      Connect-AzAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
       if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
