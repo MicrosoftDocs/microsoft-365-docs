@@ -112,11 +112,11 @@ When you create a sensitivity label, you're asked to configure the label's scope
 - Which label settings you can configure for that label
 - Where the label will be visible to users
 
-This scope configuration lets you have sensitivity labels that are just for documents and emails and can't be selected for containers. And similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. By default, both scopes are selected:
+This scope configuration lets you have sensitivity labels that are just for documents and emails and can't be selected for containers. And similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. By default, both scopes are selected. New, and currently in preview, you can select the scope for Azure Purview assets:
 
 ![Scope options for sensitivity labels](../media/sensitivity-labels-scopes.png)
 
-When you change this default and select just one scope, you still see the first page of the configuration settings for the other scope but you can't select them. For example, if the scope for files and emails is not selected, you can't select the options on the next page:
+When you change this default so not all scopes are selected, you see the first page of the configuration settings for the other scope but you can't select them. For example, if the scope for files and emails is not selected, you can't select the options on the next page:
 
 ![Unavailable options for sensitivity labels](../media/sensitivity-labels-unavailable-settings.png)
 
