@@ -1,5 +1,5 @@
 ---
-title: "Maintain security group membership with PowerShell"
+title: "Manage security groups with PowerShell"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,26 +16,128 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
-ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: "Learn how to use PowerShell to maintain membership in Microsoft 365 groups."
+description: "Learn how to use PowerShell to manage security groups."
 ---
 
-# Maintain security group membership with PowerShell
+# Manage security groups with PowerShell
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can use PowerShell for Microsoft 365 as an alternative to the Microsoft 365 admin center to maintain security group membership in Microsoft 365. 
-
->[!Note]
->[Learn how to maintain Microsoft 365 group membership](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
->
+You can use PowerShell for Microsoft 365 as an alternative to the Microsoft 365 admin center to manage security groups. 
 
 ## Use the Azure Active Directory PowerShell for Graph module
+
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+
+
+### List your groups
+
+
+Use this command to list all of your groups.
+
+```powershell
+Get-AzureADGroup
+```
+
+Use these commands to list all groups beginning with a string.
+
+```powershell
+
+Get-AzureADGroup -Filter "DisplayName eq 'Intune Administrators'"
+```
+
+Use these commands to display the settings of a specific group by its display name.
+
+```powershell
+$groupName="<display name of the group>"
+Get-AzureADGroup -Filter "DisplayName eq $groupName"
+```
+
+Alternately, you can use these commands.
+
+```powershell
+$groupName="<display name of the group>"
+Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }
+```
+
+### Create a new group
+
+Use these commands to create a new security group.
+
+```powershell
+New-AzureADGroup -Description "<group purpose>" -DisplayName "<name>" -MailEnabled $false -SecurityEnabled $true -MailNickName "<email name>"
+```
+
+### Change the settings on a group
+
+Get the settings of the group with these commands.
+
+```powershell
+$groupName="<display name of the group>"
+Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }
+```
+
+
+```powershell
+Set-AzureADGroup -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -Description "Intune Device Administrators"
+```
+
+How to specify the property being changed?
+
+
+### Remove a security group
+
+
+Remove-AzureADGroup -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId
+
+
+### Manage the owners of a security group
+
+Use these commands to display the current owners of a security group.
+
+```powershell
+$groupName="<display name of the group>"
+Get-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId
+```
+
+Use these commands to add a user account by its user principal name (UPN) to the current owners of a security group.
+
+```powershell
+$userUPN="<UPN of the user account to add>"
+$groupName="<display name of the group>"
+Add-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipleName -eq $userUPN }).ObjectId
+```
+
+Use these commands to add a user account by its display name to the current owners of a security group.
+
+```powershell
+$userName="<Display name of the user account to add>"
+$groupName="<display name of the group>"
+Add-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $userName }).ObjectId
+```
+
+Use these commands to remove a user account by its UPN to the current owners of a security group.
+
+```powershell
+$userUPN="<UPN of the user account to add>"
+$groupName="<display name of the group>"
+Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -OwnerId (Get-AzureADUser | Where { $_.UserPrincipleName -eq $userUPN }).ObjectId
+```
+
+Use these commands to remove a user account by its display name to the current owners of a security group.
+
+```powershell
+$userName="<Display name of the user account to remove>"
+$groupName="<display name of the group>"
+Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -OwnerId (Get-AzureADUser | Where { $_.DisplayName -eq $userName }).ObjectId
+```
+
+
+----------------------------------------
 
 ### Add or remove user accounts as members of a group
 
-**To add a user account by its UPN**, fill in the user account User Principal Name (UPN) (example: belindan@contoso.com) and the security group display name, removing the “<” and “>” characters, and run these commands in the PowerShell window or the PowerShell Integrated Script Environment (ISE).
+**To add a user account by its UPN**, fill in the user account User Principal Name (UPN) (example: belindan@contoso.com) and the group display name, removing the “<” and “>” characters, and run these commands in the PowerShell window or the PowerShell Integrated Script Environment (ISE).
 
 ```powershell
 $userUPN="<UPN of the user account to add>"
