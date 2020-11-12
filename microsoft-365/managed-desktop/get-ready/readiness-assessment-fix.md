@@ -211,8 +211,7 @@ Review apps you want your Microsoft Managed Desktop users to have.
 
 **Advisory**
 
-You should prepare an inventory of the apps that you want your Microsoft Managed Desktop users to have. Make sure these apps can be deployed by Intune. For more information, see 
-[Apps in Microsoft Managed Desktop](apps.md).
+You should prepare an inventory of the apps that you want your Microsoft Managed Desktop users to have. Since these these apps must be deployed by Intune, evaluate re-using existing Intune apps. Consider using Company Portal (see [Install Intune Company Portal on devices](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) and Enrollment Status Page (ESP) to distribute apps to your users. For more information, see [Apps in Microsoft Managed Desktop](apps.md) and [First-run experience with Autopilot and the Enrollment Status Page](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
 
 You can ask your Microsoft account representative for a query in Microsoft Endpoint Configuration Manager to identify those apps that are ready to migrate to Intune or need adjustment.
 
@@ -287,9 +286,8 @@ Users with certain security roles must have those assigned in Microsoft Defender
 
 **Advisory**
 
-If you have any of these roles assigned in your Azure AD organization, make sure they also have these roles assigned in Microsoft Defender for Endpoint. Otherwise, administrators with these roles won't be able to access the Admin portal.
+If you have users assigned to any of these roles in your Azure AD organization, make sure they also have these roles assigned in Microsoft Defender for Endpoint. Otherwise, administrators with these roles won't be able to access the Admin portal.
 
-- Security Reader
 - Security Operator
 - Global Reader
 
@@ -306,7 +304,7 @@ You have Security defaults turned on. Turn off Security defaults and set up cond
 
 ### Self-service Password Reset
 
-Self-service Password Reset (SSPR) should be enabled for all users excluding Microsoft Managed Desktop service accounts. For more information, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+Self-service Password Reset (SSPR) should be enabled for all Microsoft Managed Desktop users excluding Microsoft Managed Desktop service accounts. For more information, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Advisory**
 
@@ -323,11 +321,11 @@ Microsoft Managed Desktop users will not have local administrator privileges on 
 
 ## Microsoft 365 Apps for enterprise
 
-### OneDrive for Business
+### OneDrive
 
 The **Allow syncing only on PCs joined to specific domains** setting will conflict with Microsoft Managed Desktop.
 
 **Advisory**
 
-You're using the **Allow syncing only on PCs joined to specific domains** setting. This setting won't work with Microsoft Managed Desktop. Disable this setting, and instead set up OneDrive for Business to use a conditional access policy. See [Plan a Conditional Access deployment](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) for help.
+You're using the **Allow syncing only on PCs joined to specific domains** setting. This setting won't work with Microsoft Managed Desktop. Disable this setting, and instead set up OneDrive to use a conditional access policy. See [Plan a Conditional Access deployment](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) for help.
 

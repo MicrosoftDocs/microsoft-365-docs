@@ -83,7 +83,7 @@
 - name: Manage information protection
   items:
     - name: Know your data, protect your data, prevent data loss
-      href: protect-information.md
+      href: information-protection.md
     - name: Sensitive information types
       items: 
         - name: Sensitive information type entity definitions 
@@ -343,6 +343,8 @@
               href: archive-twitter-data-with-sample-connector.md
         - name: Globanet data connectors
           items:  
+            - name: CellTrust
+              href: archive-celltrust-data.md          
             - name: Cisco Jabber
               href: archive-ciscojabberonmssql-data.md
             - name: EML
@@ -351,10 +353,16 @@
               href: archive-fxconnect-data.md
             - name: Jive
               href: archive-jive-data.md
+            - name: MS SQL Database
+              href: archive-mssqldatabaseimporter-data.md
             - name: Pivot
               href: archive-pivot-data.md
+            - name: Reuters Dealing
+              href: archive-reutersdealing-data.md
             - name: Reuters Eikon
               href: archive-reuterseikon-data.md
+            - name: Reuters FX
+              href: archive-reutersfx-data.md
             - name: Slack eDiscovery
               href: archive-slack-data.md    
             - name: Symphony
@@ -367,6 +375,8 @@
               href: archive-webexteams-data.md
             - name: Workplace from Facebook
               href: archive-workplacefromfacebook-data.md    
+            - name: XIP
+              href: archive-xip-data.md
             - name: XSLT/XML 
               href: archive-xslt-xml-data.md
             - name: Zoom Meetings
@@ -487,8 +497,10 @@
           - name: De-duplication in search results
             href: de-duplication-in-ediscovery-search-results.md
           - name: Differences between estimated and actual search results
-            href: differences-between-estimated-and-actual-ediscovery-search-results.md  
-        - name: Run content search PowerShell scripts
+            href: differences-between-estimated-and-actual-ediscovery-search-results.md
+          - name: Decryption in eDiscovery tools
+            href: ediscovery-decryption.md
+        - name: Content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections
             href: use-content-search-for-targeted-collections.md

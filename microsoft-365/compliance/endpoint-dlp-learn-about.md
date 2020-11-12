@@ -1,5 +1,5 @@
 ---
-title: "Learn about Microsoft 365 Endpoint data loss prevention (preview)"
+title: "Learn about Microsoft 365 Endpoint data loss prevention"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ search.appverid:
 description: "Microsoft 365 Endpoint data loss prevention extends monitoring of file activities and protective actions for those files to endpoints. Files are made visible in the Microsoft 365 compliance solutions "
 ---
 
-# Learn about Microsoft 365 Endpoint data loss prevention (preview)
+# Learn about Microsoft 365 Endpoint data loss prevention
 
 You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items. For more information on DLP, see [Overview of data loss prevention](data-loss-prevention-policies.md).
 
@@ -92,6 +92,14 @@ If you have onboarded devices through [Microsoft Defender for Endpoint](https://
 
 > [!NOTE]
 > Endpoint DLP evaluates files of all the above types against the DLP policy and applies protection actions accordingly. All files that match a DLP policy are audited for all supported actions, even if they aren't blocked. In addition, file activity performed on any Word, PowerPoint, Excel, PDF, and .csv file is audited by default, independent of whether a DLP policy exists or matches these files.
+
+You can view alerts related to DLP policies enforced on endpoint devices by going to the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md).
+
+![Alert info](../media/Alert-info-1.png)
+
+You can also view details of the associated event with rich metadata in the same dashboard
+
+![event info](../media/Event-info-1.png)
 
 Once a device is onboarded, information about audited activities flows into Activity explorer even before you configure and deploy any DLP policies that have devices as a location.
 
