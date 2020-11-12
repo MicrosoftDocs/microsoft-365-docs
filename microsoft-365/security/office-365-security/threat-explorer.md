@@ -17,21 +17,21 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Learn about using Explorer and real-time detections in the Security &amp; Compliance Center to investigate and respond to threats effectively and efficiently.
+description: Learn about using Explorer and Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats effectively and efficiently.
 
 ms.custom: seo-marvel-apr2020
 ---
 
 # Threat Explorer and Real-time detections
 
-If your organization has [Microsoft Defender for Office 365](office-365-atp.md), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **Real-time detections** (formerly *Real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
+If your organization has [Microsoft Defender for Office 365](office-365-atp.md) and you have the [necessary permissions](#required-licenses-and-permissions), you have either *Explorer** or *Real-time detections** (formerly *Real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
 
 |With Microsoft Defender for Office 365 Plan 2, you see:|With Microsoft Defender for Office 365 Plan 1, you see:|
 |---|---|
 |![Threat explorer](../../media/threatmgmt-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
 |
 
-With Explorer (or Real-time detections), you have a powerful report that enables your Security Operations team to investigate and respond to threats effectively and efficiently. The report resembles the following image:
+Explorer or Real-time detections gives you a powerful report that enables your security operations team to investigate and respond to threats effectively and efficiently. The report resembles the following image:
 
 ![Go to Threat management \> Explorer](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
@@ -42,68 +42,68 @@ With this report, you can:
 - [Start an automated investigation and response process from a view in Explorer](#start-automated-investigation-and-response) (Defender for Office 365 Plan 2 only)
 - ... [Investigate malicious email, and more](#more-ways-to-use-explorer-or-real-time-detections)!
 
-## Experience Improvements to Threat Explorer and Real-time detections
+## Experience improvements to Threat Explorer and Real-time detections
 
 ### Tags in Threat Explorer
 
 > [!NOTE]
-> The user tags feature is in Preview, isn't available to everyone, and is subject to change. For information about the release schedule, check out the Microsoft 365 roadmap.
+> The user tags feature is in *Preview*, isn't available to everyone, and is subject to change. For information about the release schedule, check out the Microsoft 365 roadmap.
 
-User tags are identifiers for specific groups of users in Microsoft Defender for Office 365. For more information around tags, licensing and configuring tags, see [User tags](user-tags.md).
+User tags identify specific groups of users in Microsoft Defender for Office 365. For more information about tags, including licensing and configuring, see [User tags](user-tags.md).
 
-Within Threat Explorer, you can see information around user tags in the following experiences:
+In Threat Explorer, you can see information concerning user tags in the following experiences.
 
-#### Email Grid View
+#### Email grid view
 
-The Tags column shown in the email grid would contain all the tags that have been applied to the sender or recipient mailboxes. By default, system tags like priority accounts are shown first.
+The **Tags** column shown in the email grid contains all the tags that have been applied to the sender or recipient mailboxes. By default, system tags like priority accounts are shown first.
 
 > [!div class="mx-imgBorder"]
 > ![Filter tags in email grid view](../../media/tags-grid.png)
 
 #### Filtering
 
-We now have Tags as a filter so you can hunt just across priority accounts, or specific User tags scenarios (and even exclude results with certain tags as part of this experience). Combining these with the multiple other filters that we provide, would help you to narrow down your scope of investigation
+You can use tags as a filter. So you can hunt just across priority accounts or specific user tags scenarios. You can also exclude results that have certain tags. Combine these with other filters that we provide to narrow your scope of investigation.
 
 [ ![Filter tags](../../media/tags-filter-normal.png) ](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
 > ![Not filter tags](../../media/tags-filter-not.png)
 
-#### Email Detail Flyout
-To view the individual tags for sender and Recipient, click on the subject. It opens the message details flyout. In the summary tab, sender and recipient tags are shown separately, if they are present for an email.
-The information about individual tags for sender and Recipient, also extends to exported CSV, where you can see these details in 2 separate columns.
+#### Email detail flyout
+To view the individual tags for sender and recipient, select the subject to open the message details flyout. On the **Summary** tab, sender and recipient tags are shown separately, if they are present for an email.
+The information about individual tags for sender and recipient also extends to exported CSV date, where you can see these details in two separate columns.
 
 > [!div class="mx-imgBorder"]
 > ![Email Details Tags](../../media/tags-flyout.png)
 
-Tags information is also shown in URL clicks flyout. To get to the URL clicks flyout, you would need to go to Phish or All Email view, and then to URLs or URL Clicks Tab. Clicking on an individual URL flyout would show more details about Clicks for that URL, and would have Tags associated with that click.
+Tags information is also shown in the URL clicks flyout. To view it, go to Phish or All Email view, and then to the **URLs** or **URL Clicks** Tab. Select an individual URL flyout to view additional details about clicks for that URL, including tags associated with that click.
 
 > [!div class="mx-imgBorder"]
 > ![URL Tags](../../media/tags-urls.png)
 
-## Improvements to Threat Hunting Experience (upcoming)
+## Improvements to the threat hunting experience (upcoming)
 
-### Updated Threat Information for Emails
+### Updated threat information for emails
 
-We have focused on platform and data quality improvements to increase data accuracy and consistency for email records. These set of updates includes consolidation of pre-delivery and post-delivery information (example action executed on an email as part of ZAP process) into a single record  along with added richness like Spam verdict, Entity level threats (e.g., which URL was malicious) and latest delivery locations.
+We have focused on platform and data quality improvements to increase data accuracy and consistency for email records. These update include consolidation of predelivery and postdelivery information (such as actions executed on an email as part of the ZAP process) into a single record,  along with added details like spam verdict, entity-level threats (for example, which URL was malicious) and latest delivery locations.
 
-After these updates, you'll see a single entry for each message, regardless of the different post-delivery events that have taken place on the message. Actions can include ZAP, Manual Remediation (which means admin action), Dynamic Delivery etc.
+After these updates, you'll see a single entry for each message, regardless of the different postdelivery events that have taken place on the message. Actions can include ZAP, manual remediation (which means admin action), dynamic delivery, and so on.
 
-In addition to showing malware and phish threats, you'll now be able to see spam verdict associated with an email. Within the email, you will be able to see all the threats associated with the email along with the corresponding detection technologies. Each email can have 0, 1, or multiple threats. You'll see the current Threats in the Details section of the Email flyout. Additionally, for multiple threats (e.g., an email having both Malware and Phish), Detection tech field would give the Threat-Detection mapping, meaning which detection tech led to the identification of the Threat.
+In addition to showing malware and phishing threats, you can now see the spam verdict associated with an email. Within the email, you will be able to see all the threats associated with the email along with the corresponding detection technologies. Each email can have zero, one, or multiple threats. You'll see the current threats in the **Details** section of the email flyout. Additionally, for multiple threats (such as an email with both malware and phishing threats), the **Detection tech** field gives the threat-detection mapping, which is the detection tech that identified the threat.
 
-The set of detection technologies has been updated to include new detection methods, as well as spam detection technologies, and across all the different email views (Malware, Phish, All Email), you'll have the same, consistent set of Detection technologies to filter the results.
+The set of detection technologies has been updated to include new detection methods, as well as spam detection technologies. You can use the same set of detection technologies to filter the results across all the different email views (Malware, Phish, All Email).
 
 > [!NOTE]
-> Verdict analysis might not necessarily be tied to entities. As an example, an email might be classified as Phish or Spam, but there are no URLs which have any Phish/Spam verdict stamped on them. This is because our filters also evaluate content and other details for an email, before assigning a verdict.
+> Verdict analysis might not necessarily be tied to entities. As an example, an email might be classified as phish or spam, but there are no URLs that have any phish/spam verdict stamped on them. This is because the filters also evaluate content and other details for an email before assigning a verdict.
 
 #### Threats in URLs
 
-Within email flyout-> Details tab, you would now be able to see the specific threat for a URL (Threat for a URL can be Malware, Phish, Spam or None)
+Within email flyout **Details** tab, you can now see the specific threat for a URL. (The threat for a URL can be Malware, Phish, Spam, or None.)
 
 > [!div class="mx-imgBorder"]
 > ![URL Threats](../../media/URL_Threats.png)
 
-### Updated Timeline View (upcoming)
+### Updated timeline view (upcoming)
 
 > [!div class="mx-imgBorder"]
 > ![Updated Timeline View](../../media/Email_Timeline.png)
