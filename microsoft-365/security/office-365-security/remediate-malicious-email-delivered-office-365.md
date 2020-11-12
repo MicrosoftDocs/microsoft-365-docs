@@ -72,7 +72,7 @@ All remediations (either direct approval or two-step approval) that were created
 
 ![The action center with a list of threats by date and severity.](../../media/tp-RemediationArticle4.png)
 
-Action Center shows all remediation actions for the past 30 days. Actions taken through Threat Explorer are listed by the name that the security operations team provided when the remediation was created. Actions taken through automated investigations have titles that begin with the related alert that triggered the investigation, such as "Zap email cluster… ."
+Action Center shows all remediation actions for the past 30 days. Actions taken through Threat Explorer are listed by the name that the security operations team provided when the remediation was created. Actions taken through automated investigations have titles that begin with the related alert that triggered the investigation, such as "Zap email cluster... ."
 
 Open any remediation item to view details about it, including its name, creation date, description, threat severity, and status. It also shows the following two tabs.
 
