@@ -82,19 +82,19 @@ The limits described in this section are related to using the search tool on the
 
 |**Description of limit**|**Limit**|
 |:-----|:-----|
-|Maximum size of a single export|3M docs or 100GB, whichever is smaller|
-| Maximum amount of data in a single day | 2TB |
-| Maximum concurrent exports in your organization | 10 |
-| Maximum concurrent exports per user | 3 |
-| Maximum size of a single PST | 10GB |
-| Maximum concurrent exports per Review Set(AED) | 1 |
+|Maximum size of a single export.|3 million documents or 100 GB, whichever is smaller|
+|Maximum amount of data in a single day. | 2 TB |
+|Maximum concurrent exports in your organization. | 10 <sup>4</sup> |
+|Maximum concurrent exports per user. | 3 |
+|Maximum size of a single PST file. | 10 GB |
+|Maximum concurrent exports per review set. | 1 |
 |||
 
 ## Review set download limits
 
 |**Description of limit**|**Limit**|
 |:-----|:-----|
-|Total file size or maximum number of documents downloaded from a review set.  <br/> |3 MB or 50 documents <sup>4</sup>|
+|Total file size or maximum number of documents downloaded from a review set.  <br/> |3 MB or 50 documents <sup>5</sup>|
 |||
 
 <br/>
@@ -104,5 +104,6 @@ The limits described in this section are related to using the search tool on the
 > <sup>1</sup> Any item that exceeds a single file limit will show up as a processing error.<br/>
 > <sup>2</sup> When searching SharePoint and OneDrive for Business locations, the characters in the URLs of the sites being searched count against this limit.<br/>
 > <sup>3</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  **time\*** can expand to  **"time OR timer OR times OR timex OR timeboxed OR …"**. The limit of 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There is no upper limit for non-phrase terms.<br/>
-> <sup>4</sup> This limit applies to downloading selected documents from a review set. It doesn't apply to exporting documents from a review set. For more information about downloading and exporting documents, see [Export case data in Advanced eDiscovery](exporting-data-ediscover20.md). <br/>
+> <sup>4</sup> This limit is shared across all eDiscovery tools. This means that concurrent exports in Content search, Core eDiscovery, and Advanced eDiscovery are applied against this limit. <br/>
+> <sup>5</sup> This limit applies to downloading selected documents from a review set. It doesn't apply to exporting documents from a review set. For more information about downloading and exporting documents, see [Export case data in Advanced eDiscovery](exporting-data-ediscover20.md). <br/>
 
