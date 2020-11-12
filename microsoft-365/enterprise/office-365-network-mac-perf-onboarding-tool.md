@@ -20,6 +20,9 @@ description: "Microsoft 365 network connectivity test tool (preview)"
 
 The Microsoft 365 network connectivity test tool is located at <https://connectivity.office.com>. It is an adjunct tool to the network assessment and network insights information available in the Microsoft 365 admin center under the **Health | Connectivity** menu.
 
+>[!IMPORTANT]
+> It is important to sign in to Your M365 tenant as All test reports while you are signed in are shared with your administrator and uploaded to the tenant.
+
 ![Connectivity test tool](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
 >[!NOTE]
