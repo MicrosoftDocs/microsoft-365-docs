@@ -189,7 +189,7 @@ Exchange public folders, Skype, Teams and Yammer messages do not support retenti
 
 #### Only one retention label at a time
 
-An email or document can have only a single retention label applied to it at a time. A retention label can be applied [manually by an end user or admin](create-apply-retention-labels.md#manually-apply-retention-labels), or automatically by using any of the following methods:
+An email or document can have only a single retention label applied to it at a time. A retention label can be applied [manually](create-apply-retention-labels.md#manually-apply-retention-labels) by an end user or admin, or automatically by using any of the following methods:
 
 - [Auto-apply label policy](apply-retention-labels-automatically.md)
 - [Document understanding module for SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)
