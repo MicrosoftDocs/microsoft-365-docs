@@ -93,6 +93,14 @@ If you have onboarded devices through [Microsoft Defender for Endpoint](https://
 > [!NOTE]
 > Endpoint DLP evaluates files of all the above types against the DLP policy and applies protection actions accordingly. All files that match a DLP policy are audited for all supported actions, even if they aren't blocked. In addition, file activity performed on any Word, PowerPoint, Excel, PDF, and .csv file is audited by default, independent of whether a DLP policy exists or matches these files.
 
+You can view alerts related to DLP policies enforced on endpoint devices by going to the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md).
+
+![Alert info](../media/Alert-info-1.png)
+
+You can also view details of the associated event with rich metadata in the same dashboard
+
+![event info](../media/Event-info-1.png)
+
 Once a device is onboarded, information about audited activities flows into Activity explorer even before you configure and deploy any DLP policies that have devices as a location.
 
 > [!div class="mx-imgBorder"]
