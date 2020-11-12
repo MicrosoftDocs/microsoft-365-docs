@@ -40,7 +40,9 @@ Microsoft Endpoint DLP enables you to audit and manage the following types of ac
 |copied to network share, e.g. \\my-server\fileshare   |     auditable and restrictable    |
 |printed |    auditable and restrictable       |
 |copied to cloud via Chromium Edge    |   auditable and restrictable        |
+|copied to clipboard   |   auditable and restrictable      |
 |accessed by unallowed apps and browsers    |  auditable and restrictable       |
+|Modify a file    |  auditable and restrictable       |
 
 ## What's different in Endpoint DLP
 
