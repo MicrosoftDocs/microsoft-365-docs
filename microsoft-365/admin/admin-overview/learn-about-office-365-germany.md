@@ -38,7 +38,7 @@ Customers needs have shifted, and the isolation of Office 365 Germany imposed li
 
 Office 365 Germany plan offerings are aligned with global offers as much as possible in this isolated environment. Exclusions include Yammer-related plans, plans that are nearing their end-of-life, and plans available by way of non-profit programs. Office 365 E5, SPE, and other services will be available after general availability of Office 365 Germany. 
   
-The following services and features are available in some [Office 365 Germany subscription plans](https://go.microsoft.com/fwlink/p/?linkid=839016). Additionally, see the [Online Services Terms](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46).
+The following services and features are available in some [Office 365 Germany subscription plans](https://go.microsoft.com/fwlink/p/?linkid=839016). Additionally, see the [Online Services Terms](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46).
   
 - Microsoft 365 Apps for enterprise, Office 2016, and Office 2013<sup>1</sup>. Note that Office 2013 requires [using Office 365 modern authentication with Office clients](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).
     
@@ -80,7 +80,7 @@ The following services and features are available in some [Office 365 Germany su
     
 - Delve
     
-<sup>1</sup>Office 365 Germany plans include client software applications that are installed and run on an end-user's device ("client software applications"), such as Microsoft 365 Apps for enterprise, Office 2013, and Office 2016. Client software applications do not operate exclusively in German data centers and may enable an end-user to access online services that are not [German Online Services](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). For purposes of your agreement with Microsoft, client software applications are not [German Online Services](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). German data residency commitments and access control by German data trustee apply only to the [German Online Services](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58).
+<sup>1</sup>Office 365 Germany plans include client software applications that are installed and run on an end-user's device ("client software applications"), such as Microsoft 365 Apps for enterprise, Office 2013, and Office 2016. Client software applications do not operate exclusively in German data centers and may enable an end-user to access online services that are not [German Online Services](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). For purposes of your agreement with Microsoft, client software applications are not [German Online Services](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). German data residency commitments and access control by German data trustee apply only to the [German Online Services](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58).
   
 ## General information
 
