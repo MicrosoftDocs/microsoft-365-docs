@@ -74,8 +74,20 @@ The limits described in this section are related to using the search tool on the
 ## Viewer limits
 
 |**Description of limit**|**Limit**|
-  |:-----|:-----|
-  |Maximum size of Excel file that can be viewed in the native viewer.  <br/> |4 MB  <br/> |
+|:-----|:-----|
+|Maximum size of Excel file that can be viewed in the native viewer.  <br/> |4 MB  <br/> |
+|||
+
+## Export limits
+
+|**Description of limit**|**Limit**|
+|:-----|:-----|
+|Maximum size of a single export|3M docs or 100GB, whichever is smaller|
+| Maximum amount of data in a single day | 2TB |
+| Maximum concurrent exports in your organization | 10 |
+| Maximum concurrent exports per user | 3 |
+| Maximum size of a single PST | 10GB |
+| Maximum concurrent exports per Review Set(AED) | 1 |
 |||
 
 ## Review set download limits
