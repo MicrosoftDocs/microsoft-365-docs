@@ -209,7 +209,7 @@ The diagram contains the following information:
 
   |Value|Spam filter verdict|Description|
   |---|---|---|
-  |**Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by spam filtering. For example, the message was marked as not spam by a mail flow rule (also known as a transport rule).<br/><br/>The message skipped spam filtering for other reasons. For example, the sender and recipient appear to be in the same organization.|
+  |**Allowed**|`SFV:SKN` <p> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by spam filtering. For example, the message was marked as not spam by a mail flow rule (also known as a transport rule). <p> The message skipped spam filtering for other reasons. For example, the sender and recipient appear to be in the same organization.|
   |**Blocked**|`SFV:SKS`|The message was marked as spam before being evaluated by spam filtering. For example, by a mail flow rule.|
   |**Detected**|`SFV:SPM`|The message was marked as spam by spam filtering.|
   |**Not Detected**|`SFV:NSPM`|The message was marked as not spam by spam filtering.|
