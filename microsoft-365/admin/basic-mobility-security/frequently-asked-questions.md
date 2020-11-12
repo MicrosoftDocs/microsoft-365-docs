@@ -38,7 +38,7 @@ There are four steps to getting started with Basic Mobility and Security:
 
 2. Go to Data loss prevention > Device management > Device policies.
     
-3. Create device management policies, and apply them to groups of users that are set up in security groups. We recommend that you start by deploying the policies to a small test group. For more info, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).      
+3. Create device management policies, and apply them to groups of users that are set up in security groups. We recommend that you start by deploying the policies to a small test group. For more info, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).
 
 4. Users who have had a policy applied to them are prompted to enroll their devices when they try to access Microsoft 365 data. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md).
 
