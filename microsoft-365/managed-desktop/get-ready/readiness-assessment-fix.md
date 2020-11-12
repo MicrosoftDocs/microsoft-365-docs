@@ -25,6 +25,8 @@ For each check, the tool will report one of four possible results:
 
 ## Microsoft Intune settings
 
+You can access Intune settings at the Microsoft Endpoint Manager [admin center](https://endpoint.microsoft.com).
+
 ### Autopilot deployment profile
 
 You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups used by Microsoft Managed Desktop. Microsoft Managed Desktop uses Autopilot to provision new devices.
@@ -244,6 +246,7 @@ Make sure that any update ring policies you have exclude the **Modern Workplace 
 
 ## Azure Active Directory settings
 
+You can access Azure Active Directory settings at the [Azure portal](https://portal.azure.com).
 
 ### Ad hoc subscriptions
 
@@ -323,7 +326,7 @@ Microsoft Managed Desktop users will not have local administrator privileges on 
 
 ### OneDrive
 
-The **Allow syncing only on PCs joined to specific domains** setting will conflict with Microsoft Managed Desktop.
+The **Allow syncing only on PCs joined to specific domains** setting will conflict with Microsoft Managed Desktop. YOu can access OneDrive settings at the OneDrive [admin center](https://admin.onedrive.com).
 
 **Advisory**
 
