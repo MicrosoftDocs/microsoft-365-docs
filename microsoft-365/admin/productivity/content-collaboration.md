@@ -27,7 +27,7 @@ Productivity Score helps you transform how work gets done with metrics about how
 
 ## Why your organization&#39;s content collaboration score matters
 
-A fundamental pillar for organizational productivity is how people collaborate in files. With your content on Microsoft 365, people access, create, modify, and collaborate on content with other people from any location. Research shows that when people collaborate with online files, each person saves an average of 100 minutes per week. See the [evidence](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+A fundamental pillar for organizational productivity is how people collaborate in files. With your content on Microsoft 365, people access, create, modify, and collaborate on content with other people from any location. Research shows that when people collaborate with online files, each person saves an average of 100 minutes per week. [See the evidence](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
 ## How we calculate the content collaboration score
 
