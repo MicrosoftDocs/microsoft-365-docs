@@ -204,7 +204,7 @@ For standard retention labels (they don't mark items as a [record or regulatory 
     
     For more information about the label behavior when it's applied by using a default label, see the explanation in [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
-- If there are multiple rules that could apply a retention label by using auto-apply policies, and content meets the conditions of multiple rules, the retention label for the oldest rule (by date created) is applied.
+- If there are multiple rules that could apply a retention label by using auto-apply label policies, and content meets the conditions of multiple rules, the retention label for the oldest rule (by date created) is applied.
 
 When retention labels mark items as a record or a regulatory record, these labels are never automatically changed. For more information about the restrictions that comes with this label configuration, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). 
 
