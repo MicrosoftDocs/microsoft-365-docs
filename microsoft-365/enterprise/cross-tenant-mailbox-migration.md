@@ -642,7 +642,5 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
    | Microsoft Defender for Office 365 (Plan 1)    |
    | Microsoft Defender for Office 365 (Plan 2)    |
    | Office 365 Privileged Access Management           |
-   | Outlook Customer Manager                          |
    | Premium Encryption in Office 365                  |
-   || 
- 
+    
