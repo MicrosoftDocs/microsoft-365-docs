@@ -168,6 +168,13 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 > [!NOTE]
 >This experience is under license enforcement. Without the required license, data will not be visible or accessible.
 
+### Viewing Endpoint DLP alerts in DLP Alerts Management dashboard
+
+1. Open the Data loss prevention page in the Microsoft 365 Compliance center and choose Alerts.
+
+2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
+
+
 ### Viewing Endpoint DLP data in activity explorer
 
 1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and choose Activity explorer.
