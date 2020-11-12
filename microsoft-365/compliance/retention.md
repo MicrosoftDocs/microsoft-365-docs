@@ -189,15 +189,42 @@ Exchange public folders, Skype, Teams and Yammer messages do not support retenti
 
 #### Only one retention label at a time
 
-An email or document can have only a single retention label applied to it at a time. For standard retention labels (they don't mark items as a [record or regulatory record](records-management.md#records)):
+An email or document can have only a single retention label applied to it at a time. A retention label can be applied [manually by an end user or admin](create-apply-retention-labels#manually-apply-retention-labels), or automatically by using any of the following methods:
 
-- When retention labels are published to the relevant locations, admins and end users can always manually change or remove an existing retention label that's applied on content. 
+- [Auto-apply label policy](apply-retention-labels-automatically.md)
+- [Document understanding module for SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)
+- Default label for [SharePoint](create-apply-retention-labels#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels#applying-retention-labels-in-outlook)
+- [Outlook rules](create-apply-retention-labels#automatically-applying-a-retention-label-to-email-by-using-rules)
 
-- When content already has a retention label applied, the existing label won't be automatically replaced by another retention label with one exception: The existing label was inherited as a [default label](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+For standard retention labels (they don't mark items as a [record or regulatory record](records-management.md#records)):
 
-- If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the retention label for the oldest rule (by date created) is assigned.
+- Admins and end users can always manually change or remove an existing retention label that's applied on content. 
+
+- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with one possible exception: The existing label was applied with a default label.
+    
+    For more information about the label behavior when it's applied by using a default label, see the explanation in [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+
+- If there are multiple rules that could apply a retention label by using auto-apply policies, and content meets the conditions of multiple rules, the retention label for the oldest rule (by date created) is applied.
 
 When retention labels mark items as a record or a regulatory record, these labels are never automatically changed. For more information about the restrictions that comes with this label configuration, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). 
+
+##### Label behavior with a default label
+
+For standard retention labels that you apply as a default retention label for SharePoint (library, folder, or document set:) or Outlook (folder):
+
+- All unlabeled items in the container have this retention label applied.
+
+- For folders, the inheritance flows to any child folders and items inherit the label from their nearest folder.
+
+- Items that are already labeled retain their retention label, unless it was applied by a different default label.
+    
+- If you change or remove the default retention label for the container, existing retention labels applied to items in that container are changed or removed only if those labels were applied by a default label.
+    
+- If you move an item with a default retention label applied from one container to another container, the item keeps its existing default retention label, even if the new location has a different default retention label. Only if you then change the default label for this new location will the moved item inherit the default label from its current location.
+
+For labels that aren't standard retention labels but mark items as [records (or regulatory records)](records-management.md#records):
+
+- The labeling behavior is the same except after an item is declared a record, the label cannot be changed by a default label. 
 
 #### Monitoring retention labels
 
