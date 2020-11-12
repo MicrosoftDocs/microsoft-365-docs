@@ -169,7 +169,7 @@ To go back to the report view, click **View report**.
 
 ## Mail latency report
 
-The **Mail latency report** shows you an aggregate view of the mail delivery and detonation latency experienced within your organization. For more information, see [Mail latency report](view-reports-for-atp.md#mail-latency-report).
+The **Mail latency report** contains information on the mail delivery and detonation latency experienced within your organization. For more information, see [Mail latency report](view-reports-for-atp.md#mail-latency-report).
 
 ## Sent and received email report
 

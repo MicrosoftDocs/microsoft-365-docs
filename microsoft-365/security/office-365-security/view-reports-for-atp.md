@@ -198,6 +198,11 @@ To get back to the reports view, click **View report**.
 
 ## Mail latency report
 
+Mail delivery times in the service are affected by a number of factors, and the absolute delivery time in seconds is often not a good indicator of success or a problem. A slow delivery time on one day might be considered an average delivery time on another day, or vice-versa. The Mail latency report tries to qualify message delivery based on statistical data about the observed delivery times of other messages:
+• 50th percentile: This is the middle for message delivery times. You can consider this value as an average delivery time.
+• 90th percentile: This indicates a high latency for message delivery. Only 10% of messages took longer than this value to deliver.
+• 99th percentile: This indicates the highest latency for message delivery.
+
 The **Mail latency report** shows you an aggregate view of the mail delivery and detonation latency experienced within your organization. Client side and network latency is not included.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mail latency report**. To go directly to the report, open <https://protection.office.com/mailLatencyReport?viewid=P50>.
