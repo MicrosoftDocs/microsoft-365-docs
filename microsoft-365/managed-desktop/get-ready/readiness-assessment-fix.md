@@ -326,7 +326,7 @@ Microsoft Managed Desktop users will not have local administrator privileges on 
 
 ### OneDrive
 
-The **Allow syncing only on PCs joined to specific domains** setting will conflict with Microsoft Managed Desktop. YOu can access OneDrive settings at the OneDrive [admin center](https://admin.onedrive.com).
+The **Allow syncing only on PCs joined to specific domains** setting will conflict with Microsoft Managed Desktop. You can access OneDrive settings at the OneDrive [admin center](https://admin.onedrive.com).
 
 **Advisory**
 
