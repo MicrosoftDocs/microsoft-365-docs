@@ -46,6 +46,8 @@ To set up topic experiences in Microsoft 365
 
     ![Exclude topics](../media/topics-excluded-by-name.png) 
 
+    (Topics can also be [excluded by knowledge managers](exclude-topics.md) after discovery.)
+
     #### How to exclude topics by name    
 
     If you need to exclude topics, after selecting **Exclude topics by name**, select download the .csv template and update it with the list of topics that you want to exclude from your discovery results.
