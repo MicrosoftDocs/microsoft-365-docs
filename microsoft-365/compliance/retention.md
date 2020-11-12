@@ -208,24 +208,6 @@ For standard retention labels (they don't mark items as a [record or regulatory 
 
 When retention labels mark items as a record or a regulatory record, these labels are never automatically changed. For more information about the restrictions that comes with this label configuration, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). 
 
-##### Label behavior with a default label
-
-For standard retention labels that you apply as a default retention label for SharePoint (library, folder, or document set:) or Outlook (folder):
-
-- All unlabeled items in the container have this retention label applied.
-
-- For folders, the inheritance flows to any child folders and items inherit the label from their nearest folder.
-
-- Items that are already labeled retain their retention label, unless it was applied by a different default label.
-    
-- If you change or remove the default retention label for the container, existing retention labels applied to items in that container are changed or removed only if those labels were applied by a default label.
-    
-- If you move an item with a default retention label applied from one container to another container, the item keeps its existing default retention label, even if the new location has a different default retention label. Only if you then change the default label for this new location will the moved item inherit the default label from its current location.
-
-For labels that aren't standard retention labels but mark items as [records (or regulatory records)](records-management.md#records):
-
-- The labeling behavior is the same except after an item is declared a record, the label cannot be changed by a default label. 
-
 #### Monitoring retention labels
 
 From the Microsoft 365 compliance center, use **Data classification** > **Overview** to monitor how your retention labels are being used in your tenant, and identify where your labeled items are located. For more information, including important prerequisites, see [Know your data - data classification overview](data-classification-overview.md).
