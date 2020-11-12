@@ -20,7 +20,7 @@ search.appverid:
 description: "Learn how to configure data loss prevention (DLP) policies to use Microsoft 365 Endpoint data loss prevention (EPDLP) locations."
 ---
 
-# Using Endpoint data loss prevention (preview)
+# Using Endpoint data loss prevention
 
 This article walks you through three scenarios where you create and modify a DLP policy that uses devices as a location.
 
