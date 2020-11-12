@@ -202,7 +202,7 @@ For standard retention labels (they don't mark items as a [record or regulatory 
 
 - When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with one possible exception: The existing label was applied with a default label.
     
-    For more information about the label behavior when it's applied by using a default label, see the explanation in [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+    For more information about the label behavior when it's applied by using a default label, see the explanation in [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
 - If there are multiple rules that could apply a retention label by using auto-apply label policies, and content meets the conditions of multiple rules, the retention label for the oldest rule (by date created) is applied.
 
