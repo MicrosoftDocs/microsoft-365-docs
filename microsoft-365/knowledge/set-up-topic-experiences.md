@@ -1,5 +1,5 @@
 ---
-title: "Set up Topic Experiences"
+title: "Set up topic experiences in Microsoft 365"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -11,7 +11,7 @@ localization_priority: Normal
 description: "Learn how to set up topic experiences in Microsoft 365"
 ---
 
-# Set up Knowledge Management
+# Set up topic experiences in Microsoft 365
 
 You can use the Microsoft 365 admin center to set up and configure [topic experiences](knowledge-management-overview.md). 
 
