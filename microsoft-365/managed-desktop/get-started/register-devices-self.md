@@ -43,6 +43,9 @@ You can use the [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com
 2.	Run `Install-Script -Name Get-WindowsAutoPilotInfo`
 3.	Run `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 
+> [!NOTE]
+> Once the Script has been successfully executed, you can run `powershell -ExecutionPolicy restricted` to restrict running scripts on the computer.
+
 #### Flash drive method
 
 1. On a device other than the one you're registering, insert a USB drive.
