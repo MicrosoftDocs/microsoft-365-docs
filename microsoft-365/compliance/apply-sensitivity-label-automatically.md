@@ -22,6 +22,9 @@ description: "When you create a sensitivity label, you can automatically assign 
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
+> [!NOTE]
+> For information about applying a sensitivity label in Azure Purview, current in preview, see [Automatically label your content in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label)
+
 When you create a sensitivity label, you can automatically assign that label to content when it matches conditions that you specify.
 
 The ability to apply sensitivity labels to content automatically is important because:
