@@ -151,21 +151,3 @@ Once the trainable classifier has processed enough positive samples to build a p
 20. Publish the classifier.
 
 21. Once published your classifier will be available as a condition in [Office auto-labeling with sensitivity labels](apply-sensitivity-label-automatically.md), [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and in [Communication compliance](communication-compliance.md).
-
-## Give others train and review rights
-
-Use this procedure to give others permissions to train, review and tune your custom trainable classifier.  
- 
-1. As the creator of the classifier, a global admin or eDiscovery admin connect to the Compliance center using PowerShell using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true).
-
-2. Run this command:
-
-   ```powershell
-   Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
-   ```
-   
-   For example:
-   
-   `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
-
-   You can run this command multiple times to add multiple users. Note that you can only add Exchange Online Protection (EOP) Role Groups and not Azure Role Groups.
