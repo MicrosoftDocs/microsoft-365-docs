@@ -32,7 +32,11 @@ First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershel
 
 ### Set a password
 
-Use these commands to specify a password for a user account.
+To specify a password for a user account: 
+
+1. Copy the command block to the clipboard and paste them into Notepad or the PowerShell Integrated Script Environment (ISE).
+2. Fill in the variable values and remove the "<" and ">" characters.
+3. Run the commands in the PowerShell window or the PowerShell ISE.
 
 ```powershell
 $userUPN="<user account>"
@@ -40,22 +44,21 @@ $newpassword="<new password>"
 $secpasswd = ConvertTo-SecureString $newpassword -AsPlainText -Force
 Set-AzureADUserPassword -ObjectId  $userUPN -Password $secpasswd
 ```
-
 ### Force a user to change their password
 
 Use these commands to force the user to change their password.
 
 ```powershell
-$userUPN="<user account>"
+$userUPN="<user account sign in name, such as blindan@contoso.com>"
 Set-AzureADUserPassword -ObjectId  $userUPN -EnforceChangePasswordPolicy
 ````
 
 Use these commands to force the user to change their password the next time they sign in.
 
 ```powershell
-$userUPN="<user account>"
+$userUPN="<user account sign in name>"
 Set-AzureADUserPassword -ObjectId  $userUPN -ForceChangePasswordNextLogin
-````
+```
 
 ## Use the Microsoft Azure Active Directory Module for Windows PowerShell
 
@@ -66,7 +69,7 @@ First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershel
 Use these commands to specify a password for a user account.
 
 ```powershell
-$userUPN="<user account>"
+$userUPN="<user account sign in name>"
 $newpassword="<new password>"
 Set-MsolUserPassword -UserPrincipalName $userUPN -NewPassword $newpassword
 ```
@@ -76,9 +79,9 @@ Set-MsolUserPassword -UserPrincipalName $userUPN -NewPassword $newpassword
 Use these commands to force the user to change their password.
 
 ```powershell
-$userUPN="<user account>"
+$userUPN="<user account sign in name>"
 Set-MsolUserPassword -UserPrincipalName $userUPN -ForceChangePassword
-````
+```
 
 ## See also
 
