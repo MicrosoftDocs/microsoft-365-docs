@@ -359,6 +359,8 @@
             items: 
             - name: General
               href: ms-cloud-germany-transition-add-general.md
+            - name: Devices
+              href: ms-cloud-germany-transition-add-devices.md
             - name: Pre-work
               href: ms-cloud-germany-transition-add-pre-work.md
             - name: Experience
