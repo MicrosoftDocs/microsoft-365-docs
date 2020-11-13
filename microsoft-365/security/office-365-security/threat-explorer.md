@@ -128,108 +128,106 @@ Currently, we surface delivery location in the email grid and email flyout. Goin
 > [!NOTE]
 > There are a few cases where **Delivery location** and **Delivery action** may show as "unknown":
 >
-> - You might see **Delivery location** as "delivered" and **Delivery location** as unknown if the message was delivered, but an Inbox rule moved the message to a default folder (such as Draft or Archive) instead of the Inbox or Junk Email folder.
+> - You might see **Delivery location** as "delivered" and **Delivery location** as unknown if the message was delivered, but an Inbox rule moved the message to a default folder (such as Draft or Archive) instead of to the Inbox or Junk Email folder.
 >
-> - **Latest delivery location can be unknown if an admin/system action (e.g., ZAP, Admin Action) is attempted, but the message isn't found. Typically, the action happens after the user has moved or deleted the Message. In such cases, verify the Result/Details Column in timeline view. Look for the message: Message moved or deleted by the user.
+> - **Latest delivery location** can be unknown if an admin/system action (such as ZAP) is attempted, but the message isn't found. Typically, the action happens after the user  moved or deleted the Message. In such cases, verify the **Result/Details** column in timeline view. Look for the message "Message moved or deleted by the user."
 
 > [!div class="mx-imgBorder"]
 > ![Delivery Locations for Timeline](../../media/Updated_Timeline_Delivery_Location.png)
 
-### Additional Actions
+### Additional actions
 
-Additional Actions consist of the actions that were applied post the delivery of the Email, and can include ZAP, Manual Remediation (action taken by an Admin e.g., Soft Delete), Dynamic Delivery, and Reprocessed (an email was retroactively detected as good).
+*Additional ctions* are actions that were applied after delivery of the Email and can include ZAP, manual remediation (action taken by an Admin such as soft delete), dynamic delivery, and reprocessed (an email was retroactively detected as good).
 
 > [!NOTE]
+> - As part pending changes, the "Removed by ZAP" value currently surfaced in the Delivery Action filter is going away. You'll have a way to search for all email with the ZAP attempt through  *Additional actions*.
 >
-> - As part of this change, the Removed by ZAP value currently surfaced in the Delivery Action filter is going away. You'll have a way to search for all email with the ZAP attempt through the Additional Actions.
->
-> - There will be new fields and values for Detection technologies and Additional actions (especially for ZAP scenarios). Evaluate your existing Saved Queries and Tracked queries to make sure they work with the new values.
+> - There will be new fields and values for *Detection technologies* and *Additional actions* (especially for ZAP scenarios). Evaluate your existing saved queries and tracked queries to make sure they work with the new values.
 
 > [!div class="mx-imgBorder"]
 > ![Additional_Actions](../../media/Additional_Actions.png)
 
 ### System overrides
 
-System overrides are a method of making exceptions to the intended delivery location of a message by overriding the delivery location provided by system (based on the threats and other detections identified by our filtering stack). System overrides can be set through tenant or user policy to deliver the message as suggested by the policy. Overrides are useful in identifying any unintentional delivery of malicious messages due to configurations gaps (for example, a very broad Safe Sender policy set by a user). These override values can be:
+*System overrides* are a method of making exceptions to the intended delivery location of a message by overriding the delivery location provided by system (based on the threats and other detections identified by the filtering stack). System overrides can be set through tenant or user policy to deliver the message as suggested by the policy. Overrides are useful in identifying any unintentional delivery of malicious messages due to configurations gaps (for example, a very broad Safe Sender policy set by a user). These override values can be:
 
-- Allowed by user policy: This is when a user allows domains or senders by creating policies at the mailbox level.
-- Blocked by user policy: This is when a user blocks domains or senders by creating policies at the mailbox level.
-- Allowed by org policy: This is when the organization's security teams set policies or Exchange mail flow rules (also known as transport rules) to allow senders and domains for users in their organization. This can be for a set of users or the entire organization.
-- Blocked by org policy: This is when the organization's security teams set policies or mail flow rules to block senders, domains, message languages, or source IPs for users in their organization. This can also be for a set of users or the entire organization.
-- File extension blocked by org policy: This is when a file type extension is blocked by the security teams of an organization through the anti-malware policy settings. These values will now be displayed in email details to help with investigations. Secops teams can also filter on blocked file extensions using the rich filtering capability.
+- Allowed by user policy: A user creates policies at the mailbox level to allows domains or senders.
+- Blocked by user policy: A user creates policies at the mail box level to block domains or senders.
+- Allowed by org policy: The organization's security teams set policies or Exchange mail flow rules (also known as transport rules) to allow senders and domains for users in their organization. This can be for a set of users or the entire organization.
+- Blocked by org policy: The organization's security teams set policies or mail flow rules to block senders, domains, message languages, or source IPs for users in their organization. This can also be for a set of users or the entire organization.
+- File extension blocked by org policy: An organization's security team blocks a file name extension through the anti-malware policy settings. These values will now be displayed in email details to help with investigations. Secops teams can also use the rich filtering capability to filter on blocked file extensions.
 
 [ ![System_Overrides](../../media/System_Overrides.png) ](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
 > ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
 
-### Improvements around URL and Clicks Experience
+### Improvements for the URL and Clicks experience
 
 The set of improvements focused towards URL and URL clicks data include:
 
-- Showing full Clicked URL (including any query Parameters which are part of URL) within the Clicks Section in URL Flyout. Currently we show the URL domain and path in title bar. We're extending that information to show the full URL.
+- Show the full clicked URL (including any query parameters that are part of the URL) in the **Clicks** section of the URL flyout. Currently the URL domain and path appear in the title bar. We're extending that information to show the full URL.
 
-- Fixes across URL filters (URL vs URL domain vs URL Domain and path): We've made updates around searching for messages that contain a URL/Click verdict. As part of that, we've enabled support for protocol agnostic searches (meaning, you can directly search for a URL without http). By default, the URL search maps to http, unless explicitly specified. For example:
+- Fixes across URL filters (URL versus URL domain versus URL domain and path): We've made updates that affect searching for messages that contain a URL/click verdict. We've enabled support for protocol-agnostic searches, so you can search for a URL without using "http"). By default, the URL search maps to http, unless this value is explicitly specified. For example:
 
-  1. Search with and without the `http://` prefix in "URL", "URL Domain", and "URL Domain and Path" filter fields. This behavior is consistent, and should show the same result.
+   -  Search with and without the `http://` prefix in the **URL**, **URL Domain**, and **URL Domain and Path** filter fields. The searches should show the same results.
 
-  1. Search for the `https://` prefix in "URL". When not present, the `http://` prefix is assumed.
+   -  Search for the `https://` prefix in **URL**. When no value is specified, the `http://` prefix is assumed.
 
-  1. `/` in beginning and end of the "URL path", "URL Domain", "URL domain and path" fields is ignored. `/` at the end of the "URL" field is ignored.
+   - `/` is ignored at the beginning and end of the **URL path**, **URL Domain**, **URL domain and path** fields is ignored. `/` at the end of the **URL** field is ignored.
 
-### Phish Confidence Level
+### Phish confidence Level
 
-Phish confidence level helps to identify the degree of confidence, with which an email was categorized as Phish. The two possible values are High and Normal. In the initial stages, this filter will be available only in the Phish view of Threat Explorer.
+Phish confidence level helps to identify the degree of confidence with which an email was categorized as "Phish." The two possible values are *High* and *Normal*. In the initial stages, this filter will be available only in the Phish view of Threat Explorer.
 
 [ ![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png) ](../../media/Phish_Confidence_Level.png#lightbox)
 
-### ZAP URL Signal
+### ZAP URL signal
 
-Typically used for ZAP Phish Alert scenarios where an email was identified as Phish and removed after delivery. This is used to connect the alert with the corresponding results in Explorer. It is one of the IOCs for the alert.
+The ZAP URL signal is typically used for ZAP Phish alert scenarios where an email was identified as Phish and removed after delivery. It connects the alert with the corresponding results in Explorer. It's one of the IOCs for the alert.
 
-As part of improving the hunting process, we have made a few updates to Threat Explorer and Real-time detections. These are 'experience' improvements, with the focus on making the hunting experience more consistent. These changes are outlined below:
+To improve the hunting process, we've update the Threat Explorer and real-time detections. These changes making the hunting experience more consistent. The changes are outlined here:
 
 - [Timezone improvements](#timezone-improvements)
-- [Update in the Refresh process](#update-in-the-refresh-process)
+- [Update in the refresh process](#update-in-the-refresh-process)
 - [Chart drilldown to add to filters](#chart-drilldown-to-add-to-filters)
 - [In product information updates](#in-product-information-updates)
 
 ### Filter by user tags
 
-You can now sort and filter by either system or custom user tags, to quickly grasp the scope of threats. See [User tags](user-tags.md) to learn more.
+You can now sort and filter on system or custom user tags to quickly grasp the scope of threats. To learn more, see [User tags](user-tags.md).
 
 > [!IMPORTANT]
-> Filtering and sorting by user tags is currently in public preview.
-> It may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided about it.
+> Filtering and sorting by user tags is currently in public preview. This functionality may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided about it.
 
 ![Tags column in Explorer](../../media/threat-explorer-tags.png)
 
 ### Timezone improvements
 
-You will see the timezone for the email records within the Portal, as well as for Exported data. The timezone will be visible across experiences like Email Grid, Details Flyout, Email Timeline, and Similar Emails, so that the timezone for the result set is clear to the user.
+You'll see the time zone for the email records in the Portal as well as for Exported data. The time zone will be visible across experiences like Email Grid, Details flyout, Email Timeline, and Similar Emails, so that the time zone for the result set is clear to the user.
 
 > [!div class="mx-imgBorder"]
 > ![View Timezone in Explorer](../../media/TimezoneImprovements.png)
 
 ### Update in the Refresh process
 
-We have heard feedback around confusion with automatic refresh (e.g. for date, as soon as you change the date, the page would refresh) and manual refresh (for other filters). Similarly, removing filters leads to automatic refresh, this causes situations where changing the different filters while modifying the query can cause inconsistent search experiences. To solve this, we are moving to a manual filtering mechanism.
+We've gotten feedback about confusion with automatic refresh (for example, as soon as you change the date, the page refreshes) and manual refresh (for other filters). Similarly, removing filters leads to automatic refresh. Changing filters while modifying the query can cause inconsistent search experiences. To resolve these issus, we're moving to a manual-filtering mechanism.
 
-From an experience standpoint, the user can apply and remove the different range of filters (from the filter set, and date), and press the refresh button to filter the results once they are done with defining the query. The refresh button has also been updated to call it out clearly on the screen. We have also updated tooltips and in-product documentation around this change.
+From an experience standpoint, the user can apply and remove the different range of filters (from the filter set, and date), and press the refresh button to filter the results once they are done with defining the query. The refresh button has also been updated to emphasize it on the screen. We've also updated the related tooltips and in-product documentation.
 
 > [!div class="mx-imgBorder"]
 > ![Click on Refresh to filter results](../../media/ManualRefresh.png)
 
 ### Chart drilldown to add to filters
 
-You will now be able to click on the chart legend values to add that value as a filter. Note that you will still have to click on the refresh button to filter the results as part of the change described above.
+You can now chart legend values to add them as filters. Note that you need to select the refresh button to filter the results.
 
 > [!div class="mx-imgBorder"]
 > ![Drilldown through charts to Filter](../../media/ChartDrilldown.png)
 
-### In product information updates
+### In-product information updates
 
-You should also see additional details within the product. For example, the total number of search results within grid (see below), as well as improvements around labels, error messages and tooltips, to give more information around filters, search experience, and result set.
+Additional details are now available within the product, such as the total number of search results within the grid (see below). We've improved labels, error messages, and tooltips, to provide more infomation about the filters, search experience, and result set.
 
 > [!div class="mx-imgBorder"]
 > ![View In-product Info](../../media/ProductInfo.png)
@@ -238,15 +236,17 @@ You should also see additional details within the product. For example, the tota
 
 ### Top targeted users
 
-Today we expose the list of the top targeted users in the Malware View for Emails (within the Top Malware Families section). We will be extending this view within Phish and All Email views as well, where you will be able to see the top five targeted users along with the number of attempts for each user for the corresponding view (for example, for Phish view you will be able to see the number of Phish attempts).
-You will also be able to export the list of targeted users up to a limit of 3000 along with the number of attempts for offline analysis for each email view. In addition to that, selecting No. of attempts (for example, 13 attempts below) would open a filtered view in Threat Explorer, so that you can look at more details across emails and threats for that user.
+Today we expose the list of the top targeted users in the Malware view for emails (within the Top Malware Families section). We will be extending this view within Phish and All Email views as well. You'll be able to see the top-five targeted users along with the number of attempts for each user for the corresponding view. F for example, for Phish view, you'll see the number of Phish attempts.
+
+You'll also be able to export the list of targeted users, up to a limit of 3,000, along with the number of attempts for offline analysis for each email view. In addition, selecting number of attempts (for example, 13 attempts below) will open a filtered view in Threat Explorer so you can see more details across emails and threats for that user.
 
 > [!div class="mx-imgBorder"]
 > ![Top Targeted Users](../../media/Top_Targeted_Users.png)
 
 ### Exchange transport rules
 
-As part of data enrichment, you should also be able to see all the different transport rules which were applied to a message. This information will be present within the Email grid view (to view this, select Column options in the grid and add Exchange Transport Rule from the Column options in the grid) as well as Details flyout in the email.
+As part of data enrichment, you'll be able to see all the different transport rules that were applied to a message. This information will be available in Email grid view. To view it,  select **Column options** in the grid and then **Add Exchange Transport Rule** from the Column options in the grid. It will also be visible on the Details flyout in the email.
+
 You would be able to see both the GUID as well as the name of the transport rules which were applied to the message. Additionally, you would be able to search for the messages using the name of the transport rule. This would be a 'Contains' search which means you will be able to search using partial searches as well.
 
 #### Important Note:
