@@ -18,6 +18,9 @@ description: "In this article, you'll learn about reports and troubleshooting to
 
 # Reporting and message trace in EOP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP offers many different reports that can help you determine the overall status and health of your organization. There are also tools to help you troubleshoot specific events (such as a message not arriving to its intended recipients), and auditing reports to aid with compliance requirements.
 
 ## Usage reports
@@ -44,11 +47,11 @@ See the following resources for more information:
 
 These enhanced reports provide an interactive reporting experience for EOP admins, which includes summary information, and the ability to drill down for more details.
 
-**Advanced Threat Protection (ATP)**: View information about safe links and safe attachments that are part of ATP.
+**Defender for Office 365**: View information about Safe Links and Safe Attachments that are part of Microsoft Defender for Office 365.
 
 **EOP**: View information about malware detections, spoofed mail, spam detections, and mail flow to and from your organization.
 
-[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
+[View reports for Defender for Office 365](view-reports-for-atp.md)
 
 ## Custom reports using Microsoft Graph
 
@@ -75,8 +78,8 @@ The following table describes when EOP reporting and message trace data is avail
 |Report type|Data available for (look back period)|Latency|
 |---|---|---|
 |Mail protection summary reports|90 days|Message data aggregation is mostly complete within 24-48 hours. Some minor incremental aggregated changes may occur for up to 5 days.|
-|Mail protection detail reports|90 days|For detail data that's less than 7 days old, data should appear within 24 hours but may not be complete until 48 hours. Some minor incremental changes may occur for up to 5 days. <br/><br/> To view detail reports for messages that are greater than 7 days old, results may take up to a few hours.|
-|Message trace data|90 days|When you run a message trace for messages that are less than 7 days old, the messages should appear within 5-30 minutes.<br/><br/> When you run a message trace for messages that are greater than 7 days old, results may take up to a few hours.|
+|Mail protection detail reports|90 days|For detail data that's less than 7 days old, data should appear within 24 hours but may not be complete until 48 hours. Some minor incremental changes may occur for up to 5 days. <p> To view detail reports for messages that are greater than 7 days old, results may take up to a few hours.|
+|Message trace data|90 days|When you run a message trace for messages that are less than 7 days old, the messages should appear within 5-30 minutes.<p> When you run a message trace for messages that are greater than 7 days old, results may take up to a few hours.|
 |
 
 > [!NOTE]

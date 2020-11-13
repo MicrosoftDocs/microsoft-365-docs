@@ -3,7 +3,7 @@ title: Family Educational Rights and Privacy Act (FERPA)
 description: Microsoft aligns with the requirements of the US Family Educational Rights and Privacy Act.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -46,7 +46,7 @@ Services for which Microsoft agrees to be designated as a 'school official' with
 - [Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI, PowerApps, and Power Automate (formerly Microsoft Flow) either as a standalone service or as included in an Office 365 branded plan or suite
 - Azure DevOps Services
-- Windows Defender ATP
+- Microsoft Defender for Endpoint 
 
 ## Audits, reports, and certificates
 
@@ -62,6 +62,10 @@ This US federal law mandates the protection of the privacy of students’ educat
 
 - [Federal Register: FERPA Final Rule](https://aka.ms/ferpa-reg) (December 2011)
 - [FERPA general guidance for parents](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

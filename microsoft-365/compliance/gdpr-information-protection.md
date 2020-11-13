@@ -3,7 +3,7 @@ title: Information protection
 description: Learn about information protection capabilities in Microsoft 365 for the General Data Protection Regulation (GDPR).
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 f1.keywords:
@@ -44,7 +44,7 @@ Azure Active Directory and other Microsoft 365 capabilities provide a rich set o
 
 Microsoft provides a recommended configuration you can use as a starting point:
 
-- [Identity and device access configurations](../enterprise/microsoft-365-policies-configurations.md): Recommended policy configurations to achieve three tiers of protection (baseline, sensitive, highly regulated). This guidance includes recommended policies for Exchange Online and SharePoint Online (including OneDrive for Business).
+- [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md): Recommended policy configurations to achieve three tiers of protection (baseline, sensitive, highly regulated). This guidance includes recommended policies for Exchange Online and SharePoint Online (including OneDrive for Business).
 - [Security guidance for political campaigns, nonprofits, and other agile organizations](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o): This includes the same set of policies but provides more guidance for BYOD environments and for B2B accounts.
 
 ## Threat Protection
@@ -53,7 +53,7 @@ Threat protection is built across Microsoft 365 services. Here are a few resourc
 
 - [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap). This roadmap includes recommendations for implementing capabilities. 
 - [Protect against threats in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats). Learn about protection actions you can take in the Microsoft 365 security center.
-- [Windows Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/). Learn more about Windows Defender Advanced Threat Protection and other capabilities in Windows 10.
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/). Learn more about Microsoft Defender for Endpoint and other capabilities in Windows 10.
 
 ## Learn more
 

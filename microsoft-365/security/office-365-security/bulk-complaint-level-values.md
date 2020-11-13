@@ -20,6 +20,8 @@ description: "Admins can learn about bulk compliance level (BCL) values that are
 
 # Bulk complaint level (BCL) in EOP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP assigns a bulk compliant level (BCL) to inbound messages from bulk mailers. The BCL is added to the message in an X-header and is similar to the [spam confidence level (SCL)](spam-confidence-levels.md) that's used to identify messages as spam. A higher BCL indicates a bulk message is more likely to generate complaints (and is therefore more likely to be spam). Microsoft uses both internal and third party sources to identify bulk mail and determine the appropriate BCL.
 
 Bulk mailers vary in their sending patterns, content creation, and recipient acquisition practices. Good bulk mailers send desired messages with relevant content to their subscribers. These messages generate few complaints from recipients. Other bulk mailers send unsolicited messages that closely resemble spam and generate many complaints from recipients. Messages from a bulk mailer are known as bulk mail or gray mail.
@@ -34,6 +36,8 @@ The BCL thresholds are described in the following table.
 |:---:|---|
 |0|The message isn't from a bulk sender.|
 |1, 2, 3|The message is from a bulk sender that generates few complaints.|
-|4, 5, 6, 7|The message is from a bulk sender that generates a mixed number of complaints.|
+|4, 5, 6, 7<sup>\*</sup>|The message is from a bulk sender that generates a mixed number of complaints.|
 |8, 9|The message is from a bulk sender that generates a high number of complaints.|
 |
+
+<sup>\*</sup> This is the default threshold value that's used in anti-spam policies.

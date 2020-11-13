@@ -2,7 +2,7 @@
 title: "Auto-forwarded messages insight"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -15,7 +15,10 @@ description: "Admins can learn about the Auto-forwarded messages report in the M
 
 # Auto-forwarded messages insight in the Security & Compliance Center
 
-The **Auto-forwarded messages** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center displays information about messages that are automatically forwarded from your organization to recipients in external domains.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+The **Auto-forwarded messages** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) displays information about messages that are automatically forwarded from your organization to recipients in external domains.
 
 ![Auto-forwarded messages widget in the Security & Compliance Center](../../media/mfi-auto-forwarded-messages.png)
 
@@ -27,7 +30,7 @@ When you click the number of messages in the widget, a flyout pane appears that 
 
   - **By mail flow rules**
   - **By Inbox rules**
-  - **By SMTP forwarding**
+  - **By SMTP forwarding**: This method indicates automatic forwarding that admins can configure on a mailbox as described in [Configure email forwarding for a mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
   - A link to the [Forwarding report](view-mail-flow-reports.md#forwarding-report) for more details.
 
 - **Auto-forwarded messages by domains and users**:

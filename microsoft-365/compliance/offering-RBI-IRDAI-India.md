@@ -3,7 +3,7 @@ title: Reserve Bank of India (RBI) and Insurance Regulatory and Development Auth
 description: Microsoft has published guidance to help financial institutions in India with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -26,9 +26,9 @@ Outsourcing and risk management guidance includes:
 
 - [Guidelines on Managing Risk and Code of Conduct in Outsourcing of Financial Services by Banks](https://rbidocs.rbi.org.in/rdocs/notification/PDFs/73713.pdf) (RBI) address the risks that regulated banks would be exposed to while outsourcing financial services and help ensure that outsourcing does not impede the supervisory role of the RBI. The RBI does not require prior approval for banks seeking to outsource financial services; however, core banking functions, such as internal audit and compliance functions, should not be outsourced.
 - [Guidelines on Information Security, Electronic Banking, Technology Risk Management, and Cyber Frauds](https://rbidocs.rbi.org.in/rdocs/content/PDFs/GBS300411F.pdf) (RBI). Financial institutions must report outsourcing arrangements where the scale and nature of the activities are significant or require extensive data sharing with service providers outside of India. This guidance applies particularly if operational data is stored or processed outside India.
-- [Outsourcing of Activities by Indian Insurers Regulation](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) (IRDAI). Every year, insurance organizations are required to report outsourcing to IRDAI of certain support functions of core activities within 45 days of the close of the financial year. (Page 7 in the Microsoft [checklist](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) describes what constitutes “support functions of core activities.”
+- [Outsourcing of Activities by Indian Insurers Regulation](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) (IRDAI). Every year, insurance organizations are required to report outsourcing to IRDAI of certain support functions of core activities within 45 days of the close of the financial year. (Page 7 in the Microsoft [checklist](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) describes what constitutes 'support functions of core activities.'
 
-Financial firms using cloud services must also comply with privacy rules, including the [Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011](https://meity.gov.in/sites/upload_files/dit/files/GSR313E_10511\(1\).pdf) (MeitY). Developed to strengthen India’s data protection laws, these rules govern the protection and handling of sensitive personal data.
+Financial firms using cloud services must also comply with privacy rules, including the [Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011](https://meity.gov.in/sites/upload_files/dit/files/GSR313E_10511\(1\).pdf) (MeitY). Developed to strengthen India's data protection laws, these rules govern the protection and handling of sensitive personal data.
 
 ## Microsoft, RBI, and IRDAI
 
@@ -58,6 +58,10 @@ The Microsoft checklist helps financial firms in India that are conducting due-d
 **Are there any mandatory terms that must be included in the contract with the cloud services provider?**
 
 Yes. The guidelines referenced above stipulate some specific points that financial institutions must incorporate into their cloud services contracts. Part 2 of the [checklist](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) (page 70) maps these against the sections in the Microsoft contractual documents where they are addressed.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

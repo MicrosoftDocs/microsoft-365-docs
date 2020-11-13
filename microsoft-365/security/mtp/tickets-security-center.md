@@ -23,12 +23,18 @@ ms.custom:
 
 # Create and track ServiceNow tickets in the Microsoft 365 security center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+>[!CAUTION]
+>**The preview period for the ServiceNow connector is ending**<br>
+>This capability will no longer available by the end of November 2020. Thank you for your feedback and continued support while we determine next steps.
+
 The [Microsoft 365 security center](overview-security-center.md) has been enhanced with the ability to natively create and track tickets in ServiceNow. [Learn more about ServiceNow](https://www.servicenow.com/)
 
 In the security center, security administrators can send a [Microsoft Secure Score](microsoft-secure-score.md) improvement action directly to ServiceNow and create a ticket. Both incident management and change management tickets can be created. Track tickets in the security center home page and ServiceNow.
 
 - [**Learn about prerequisites, data exchange, and troubleshooting**](tickets.md)
-- **Manage ServiceNow tickets in the compliance center** (coming soon)
+- **Manage ServiceNow tickets in the compliance center** (not available)
 
 ## Connect Microsoft 365 security center to ServiceNow
 

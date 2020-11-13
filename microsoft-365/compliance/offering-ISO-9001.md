@@ -3,7 +3,7 @@ title: ISO 9001:2015 Quality Management Systems Standards
 description: Microsoft is certified for its implementation of these quality management standards.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -33,7 +33,7 @@ An independent third-party auditing firm performed a rigorous examination of Mic
 - Dynamics 365, Dynamics 365 Government, and Dynamics 365 Germany
 - Microsoft Graph
 - Intune
-- Microsoft Defender Advanced Threat Protection
+- Microsoft Defender for Endpoint
 - Microsoft Healthcare Bot
 - Microsoft Managed Desktop
 - Power Automate (formerly Microsoft Flow) cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite

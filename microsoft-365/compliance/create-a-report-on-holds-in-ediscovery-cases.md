@@ -38,7 +38,7 @@ See the [More information](#more-information) section for a detailed description
 
 ## Step 1: Connect to the Security & Compliance Center PowerShell
 
-The first step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+The first step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 ## Step 2: Run the script to report on holds associated with eDiscovery cases
 

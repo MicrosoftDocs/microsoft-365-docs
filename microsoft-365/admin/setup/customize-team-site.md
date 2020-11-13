@@ -1,10 +1,10 @@
 ---
-title: "Customize team site for file storage and sharing - SharePoint Online"
+title: Customize a SharePoint team site for file storage and sharing
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,13 +17,14 @@ ms.collection:
 ms.custom:
 - IT_Networking
 - seo-marvel-apr2020
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
-description: "In this article, you'll learn how to customize, organize, and manage your team site for file storage and sharing."
+description: Learn how to customize, organize, and manage your SharePoint team site with document libraries, lists, and hubs.
 ---
 
 # Customize your team site for file storage and sharing
@@ -34,7 +35,7 @@ If you have a small business with a few employees, one of the best ways to set u
   
 [Create a team site in SharePoint](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)
   
-Here are some ideas and links to help you customize, organize, and manage your team site. 
+Here are some ideas and links to help you customize, organize, and manage your team site.
   
  
 ## Customize your team site
@@ -55,7 +56,7 @@ To learn about team site settings, see [Manage your SharePoint team site setting
   
 ## Work with document libraries
 
-A team site includes a document library that you can start using immediately. 
+A team site includes a document library that you can start using immediately for file storage and document management.
 
 To begin uploading, see [Upload a folder or files to a document library](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)
    
@@ -65,7 +66,7 @@ For info on creating views of libraries to surface specific data, see [Create a 
   
 ## Work with lists to organize data
 
-SharePoint includes many templates for lists that you can add to your site, such as a list of links, a calendar, contacts, or tasks. 
+SharePoint includes many templates for lists that you can add to your site, such as a list of links, a calendar, contacts, or tasks.
   
 Learn how to [Create a list in SharePoint](https://support.microsoft.com/office/0D397414-D95F-41EB-ADDD-5E6EFF41B083#ID0EAAGAAA=Online).
   
@@ -77,7 +78,7 @@ View a video on adding calendars to your site, see [Create a shared calendar](ht
 
 ## Organize sites into hubs
 
-Your team site shares almost everything with all members of the group associated with the site. If you want to have a separate site for specific customers, you can create additional team sites, and manage them using SharePoint hub sites. Here's more information. 
+Your team site shares almost everything with all members of the group associated with the site. If you want to have a separate site for specific customers, you can create additional team sites, and manage them using SharePoint hub sites. Here's more information.
   
 Hub sites let you add and associate sites. For more info see [What is a SharePoint hub site?](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f).
   
@@ -87,7 +88,7 @@ To learn how to add sites to a hub site, see [Associate a SharePoint site with a
   
 ## Sharing files with the team
 
-While storage and organizing is a start, sharing with your team and external clients is also important. Here are some links to topics that will help you manage users and share your data. 
+While file storage and document management is a start, sharing with your team and external clients is also important. Here are some links to topics that will help you manage users and share your data.
   
 For file sharing with your team, see [Share SharePoint files or folders in Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
   
@@ -95,7 +96,7 @@ To understand sharing outside your team, see [External sharing overview](/sharep
   
 ## Managing users and groups
 
-As you manage your team site, you may have to add or remove users. Here's information to help you understand, add, and manage users on your team site. 
+As you manage your team site, you may have to add or remove users. Here's information to help you understand, add, and manage users on your team site.
   
 View a video on groups with [Understand and manage groups](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d). 
   
@@ -114,6 +115,3 @@ Learn how to handle access requests with [Set up and manage access requests](htt
   - [Set up Office on Windows Phone with Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [Learn more about using OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
-    
-
-

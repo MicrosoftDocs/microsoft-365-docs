@@ -17,6 +17,9 @@ description: "Admins can learn about the available and preferred options to bloc
 
 # Create blocked sender lists in EOP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP offers multiple ways of blocking email from unwanted senders. These options include Outlook Blocked Senders, blocked sender lists or blocked domain lists in anti-spam policies, Exchange mail flow rules (also known as transport rules), and the IP Block List (connection filtering). Collectively, you can think of these options as _blocked sender lists_.
 
 The best method to block senders varies on the scope of impact. For a single user, the right solution could be Outlook Blocked Senders. For many users, one of the other options would be more appropriate. The following options are ranked by both impact scope and breadth. The list goes from narrow to broad, but *read the specifics* for full recommendations.

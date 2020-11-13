@@ -3,7 +3,7 @@ title: Cloud Security Alliance (CSA) STAR certification
 description: Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR certification at the Gold level.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -42,7 +42,7 @@ Learn how to accelerate your CSA STAR Certification deployment with our Azure Se
 - Microsoft Healthcare Bot
 - Intune
 - Microsoft Managed Desktop
-- Microsoft Defender Advanced Threat Protection
+- Microsoft Defender for Endpoint
 - OMS Service Map
 - Power Automate (formerly Microsoft Flow): cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - PowerApps cloud service: either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite

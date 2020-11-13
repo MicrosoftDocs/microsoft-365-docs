@@ -33,7 +33,7 @@ If you try to add user's mailbox location to search and there are duplicate or c
 
 Check for duplicate users or distribution list with the same user ID.
 
-1. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Run the following command to retrieve all instances of the username:
 
@@ -62,7 +62,7 @@ An eDiscovery or content search may yield the following error:
 
 If you receive this error, we recommend that you verify the locations that failed in the search  then rerun the search only on the failed locations.
 
-1. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:
+1. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -93,7 +93,7 @@ An eDiscovery search fails with error the `recipient not found`. This error may 
 
 ### Resolution
 
-1. Connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the following command to check if the user is synced to Exchange Online Protection:
 
@@ -111,7 +111,7 @@ When exporting search results from eDiscovery or Content Search in the Security 
 
 1. Try using the steps identified in the article [Increase Download Speeds](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
 
-2. If you still have issues, connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:
+2. If you still have issues, connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -139,7 +139,7 @@ When running an eDiscovery search, if the search continually fails with error si
 
 1. Break the search into smaller searches and run the search again.  Try using a smaller date range or limit the number of locations being searched.
 
-2. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:
+2. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command:
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -159,7 +159,7 @@ eDiscovery Case Hold Policy Sync Distribution error. The error reads:
 
 ### Resolution
 
-1. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command for an eDiscovery case hold:
+1. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command for an eDiscovery case hold:
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL

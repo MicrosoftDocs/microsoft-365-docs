@@ -30,14 +30,6 @@ Data loss prevention (DLP) can identify, monitor, and protect your sensitive ite
 > - Chinese (traditional)
 > - Korean
 > - Japanese
-> 
->This preview is only in the commercial cloud and the rollout is limited to:
-> - Japan
-> - Korea
-> - China
-> - Hong Kong
-> - Macau
-> - Taiwan
 >
 >This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
 
@@ -81,7 +73,7 @@ Use the following steps to create and import keywords for a custom dictionary:
     
 ## Create a keyword dictionary from a file using PowerShell
 
-Often when you need to create a large dictionary, it's to use keywords from a file or a list exported from some other source. In this case, you'll create a keyword dictionary containing a list of inappropriate language to screen in external email. You must first [connect to Security &amp; Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Often when you need to create a large dictionary, it's to use keywords from a file or a list exported from some other source. In this case, you'll create a keyword dictionary containing a list of inappropriate language to screen in external email. You must first [connect to Security &amp; Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
   
 1. Copy the keywords into a text file and make sure that each keyword is on a separate line.
     

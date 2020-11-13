@@ -17,7 +17,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Find answers to commonly asked questions about self-service purchases."
-ms.date: 08/12/2020
+ms.date: 09/15/2020
 ---
 
 # Self-service purchase FAQ
@@ -27,7 +27,7 @@ Self-service purchase gives users a chance to try out new technologies and devel
 Self-service purchase is available for Power Platform (Power BI, Power Apps, and Power Automate), Project, and Visio.
 
 > [!NOTE]
-> Self-service purchase isn’t available in India, and isn’t available to government or education customers.
+> Self-service purchase isn’t available in India or for government or education customers. Project and Visio are not available for self-service purchase in Brazil and the Democratic Republic of Congo.
 
 ## Making a self-service purchase
 

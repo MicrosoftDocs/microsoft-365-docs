@@ -12,6 +12,8 @@ ms.date: 04/23/2019
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -57,14 +59,6 @@ To create custom sensitive information types in the Security & Compliance Center
 > - Chinese (traditional)
 > - Korean
 > - Japanese
-> 
->This preview is only in the commercial cloud and the rollout is limited to:
-> - Japan
-> - Korea
-> - China
-> - Hong Kong
-> - Macau
-> - Taiwan
->
+
 >This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
 

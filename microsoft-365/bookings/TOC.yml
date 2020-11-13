@@ -1,0 +1,47 @@
+- name: Microsoft Bookings
+  href: bookings-overview.md
+  items:
+  - name: Setup
+    items:
+    - name: Get access to Bookings
+      href: get-access.md
+    - name: Enter your business information
+      href: enter-business-information.md
+    - name: Define your service offerings
+      href: define-service-offerings.md
+    - name: Add staff to Bookings
+      href: add-staff.md
+    - name: Schedule business closures and time off
+      href: schedule-closures-time-off-vacation.md
+    - name: Set your scheduling policies
+      href: set-scheduling-policies.md
+    - name: Customize and publish your booking page
+      href: customize-booking-page.md
+    - name: Create a manual booking
+      href: create-a-manual-booking.md
+    - name: Schedule business closures and time off
+      href: schedule-closures-time-off-vacation.md
+    - name: Employee hours
+      href: employee-hours.md
+    - name: Add custom and required questions to the booking page
+      href: add-questions.md
+    - name: Set buffer time
+      href: set-buffer-time.md
+    - name: Metrics and activity tracking
+      href: metrics-and-activity-tracking.md
+    - name: Set language and time zone
+      href: set-language-time-zones.md
+  - name: Get the Bookings app
+    href: get-bookings-app.md
+  - name: Bookings app and virtual visits in Microsoft Teams
+    href: https://docs.microsoft.com/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json
+  - name: Comparison chart - web app versus Teams app
+    href: comparison-chart.md
+  - name: Delete a booking calendar
+    href: delete-calendar.md
+  - name: Turn Microsoft Bookings on or off
+    href: turn-bookings-on-or-off.md
+  - name: Reporting information for Microsoft Bookings
+    href: reporting-info.md
+  - name: Microsoft Bookings frequently asked questions (FAQ)
+    href: bookings-faq.md

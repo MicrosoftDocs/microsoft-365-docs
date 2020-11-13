@@ -3,7 +3,7 @@ title: Azure and Dynamics 365 accountability readiness checklist for the GDPR
 description: Provides a convenient way to access information you may need to support GDPR when using Microsoft Azure.
 keywords: ARC Azure, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -25,10 +25,10 @@ ms.custom: seo-marvel-apr2020
 
 This Accountability Readiness Checklist provides a convenient way to access information you may need to support the General Data Protection Regulation (GDPR) when using Microsoft Azure and Dynamics 365. The checklist is organized using the titles and reference number (in parentheses for each checklist topic) of a set of privacy and security controls for personal data processors drawn from:
 
-- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) security techniques requirements.
-- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) for privacy management requirements.
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail?pid=000000000030351736) for privacy management requirements.
+- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) for security techniques requirements.
 
-You can manage the items in this checklist with the Compliance Score [[16](gdpr-arc-Azure.md#16)] by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile. This control structure is also used to organize the presentation of the internal controls that Microsoft Azure and Dynamics 365 implements to support GDPR, which you can download from the [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
+You can manage the items in this checklist with Compliance Manager [[16](gdpr-arc-Azure.md#16)] by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile. This control structure is also used to organize the presentation of the internal controls that Microsoft Azure and Dynamics 365 implements to support GDPR, which you can download from the [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
 
 This control structure is also used to organize the presentation of the [internal controls that Microsoft Dynamics 365 implements to support GDPR](https://aka.ms/gdprcontrols).
 
@@ -139,7 +139,7 @@ For more GDPR-related documentation, visit [https://aka.ms/gdprgetstarted](https
 | 11 <a name="11"> </a> | [Key Information from Azure for Customer Data Protection Impact Assessments](https://aka.ms/DPIAAzure) |
 | 12 <a name="12"> </a> | [SOC 2 Type 2 Audit Report [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
-| 14 <a name="14"> </a> | [Microsoft Trust Center Compliance offerings](offering-home.md)  |
+| 14 <a name="14"> </a> | [Microsoft Trust Center Compliance offerings](offering-home.yml)  |
 | 15 <a name="15"> </a> | [Microsoft DPO Information](https://aka.ms/GDPRDPO) |
 | 16 <a name="16"> </a> | [Key Information from Dynamics 365 for Customer Data Protection Impact](https://servicetrust.microsoft.com/ViewPage/GDPRDPIA?command=Download&downloadType=Document&downloadId=ef2902bb-3137-4f4a-8ca6-af35afaa6bec&docTab=2ba9a350-555c-11e8-b74a-77b1f31da06e_DPIA) |
 | 17 <a name="17"> </a> | [Auditing and Reporting in Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing) |

@@ -82,6 +82,8 @@ productDirectory:
           text: File collaboration in SharePoint
         - url: /onedrive/plan-onedrive-enterprise
           text: OneDrive guide for enterprises
+        - url: solutions/collaboration-governance-overview.md
+          text: Collaboration governance
     # Card
     - title: Architecture resources
       # imageSrc should be square in ratio with no whitespace
@@ -106,7 +108,7 @@ productDirectory:
           text: Deploy Microsoft Defender Advanced Threat Protection
         - url: security/office-365-security/office-365-atp.md
           text: Deploy Office 365 Advanced Threat Protection
-        - url: enterprise/microsoft-365-policies-configurations.md
+        - url: security/office-365-security/microsoft-365-policies-configurations.md
           text: Configure identity and device access protection
     # Card
     - title: Protect your information and comply with regulations
@@ -115,7 +117,7 @@ productDirectory:
       links:
         - url: compliance/compliance-quick-tasks.md
           text: Quick tasks for getting started with Microsoft 365 compliance
-        - url: compliance/protect-information.md
+        - url: compliance/information-protection.md
           text: Manage information protection
         - url: compliance/manage-information-governance.md
           text: Manage information governance
@@ -217,8 +219,10 @@ additionalContent:
         # Card
         - title: SharePoint
           links:
-            - text: SharePoint Online
+            - text: SharePoint in Microsoft 365
               url: /sharepoint/sharepoint-online
+            - text: SharePoint Syntex
+              url: contentunderstanding/index.md
             - text: SharePoint Server
               url: /sharepoint/sharepoint-server
             - text: Hybrid
@@ -253,20 +257,18 @@ additionalContent:
             - text: More Project >
               url: /Project
         # Card
-        - title: Yammer
+        - title: More apps and services
           links:
-            - text: Admin help
-              url: /yammer/yammer-landing-page
-        # Card
-        - title: Kaizala
-          links:
-            - text: Get started
+            - text: Microsoft Bookings
+              url: bookings/index.yml
+            - text: Microsoft Kaizala
               url: /Kaizala
-        # Card
-        - title: Microsoft Stream
-          links:
-            - text: Help documentation
+            - text: Microsoft Stream
               url: /stream/
+            - text: SharePoint Syntex
+              url: contentunderstanding/index.md
+            - text: Yammer
+              url: /yammer/yammer-landing-page
         # Card
         - title: Skype for Business
           links:
@@ -286,9 +288,12 @@ additionalContent:
         - title: End users
           summary: Find training, how-to, and help content for users of Microsoft 365 on support.microsoft.com.
           url: https://support.microsoft.com/microsoft-365
-        - title: Educators
+        - title: Education IT
           summary: Learn how to unlock creativity, promote teamwork, and have a safe and simple experience with Microsoft 365 Education.
           url: /education
+        - title: Educators
+          summary: Find training, how-to, and help content for educators using Microsoft 365 Education.
+          url: https://support.microsoft.com/education
         - title: Tech community
           summary: Join the Microsoft 365 Tech community to share experiences, engage and learn from experts.
           url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

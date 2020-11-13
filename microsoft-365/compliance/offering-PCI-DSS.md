@@ -3,7 +3,7 @@ title: Payment Card Industry (PCI) Data Security Standard (DSS)
 description: Azure, SharePoint Online, and OneDrive for Business comply with Payment Card Industry Data Security Standards Level 1 version 3.2.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -34,12 +34,12 @@ It is important to understand that PCI DSS compliance status for Azure, OneDrive
 
 ## Microsoft in-scope cloud services
 
-- [Azure and Azure Government](https://aka.ms/AzureCompliance)
+- [Azure and Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
 - Microsoft Cloud App Security
 - Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Microsoft Graph
 - Intune
-- [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 - OneDrive for Business and SharePoint Online (United States only)
@@ -55,7 +55,7 @@ Build and deploy your PCI DSS solution in the cloud even faster with the Azure S
 
 ## Frequently asked questions
 
-**Why does the Attestation of Compliance (AoC) cover page say “June 2018”?**
+**Why does the Attestation of Compliance (AoC) cover page say 'June 2018'?**
 
 The June 2018 date on the cover page is when the AoC template was published. Refer to Section 2 for the date of the assessment.
 
@@ -65,7 +65,7 @@ The Azure AoC package has AoCs corresponding to Azure Public, Germany, and Gover
 
 **What is the relationship between the PA DSS and PCI DSS?**
 
-The Payment Application Data Security Standard (PA DSS) is a set of requirements that comply with the PCI DSS, and replaces Visa’s Payment Application Best Practices, and consolidates the compliance requirements of the other primary card issuers. The PA DSS helps software vendors develop third-party applications that store, process, or transmit cardholder payment data as part of a card authorization or settlement process. Retailers must use PA DSS certified applications to efficiently achieve their PCI DSS compliance. The PA DSS does not apply to Azure.
+The Payment Application Data Security Standard (PA DSS) is a set of requirements that comply with the PCI DSS, and replaces Visa's Payment Application Best Practices, and consolidates the compliance requirements of the other primary card issuers. The PA DSS helps software vendors develop third-party applications that store, process, or transmit cardholder payment data as part of a card authorization or settlement process. Retailers must use PA DSS certified applications to efficiently achieve their PCI DSS compliance. The PA DSS does not apply to Azure.
 
 **What is an acquirer and does Azure use one?**
 
@@ -75,7 +75,7 @@ An acquirer is a bank or other entity that processes payment card transactions. 
 
 PCI DSS applies to any company, no matter the size, or number of transactions, that accepts, transmits, or stores cardholder data. That is, if any customer ever pays a company using a credit or debit card, then the PCI DSS requirements apply. Companies are validated at one of four levels based on the total transaction volume over a 12-month period. Level 1 is for companies that process over 6 million transactions a year; Level 2 for 1 million to 6 million transactions; Level 3 is for 20,000 to 1 million transactions; and Level 4 is for fewer than 20,000 transactions.
 
-**Where do I begin my organization’s PCI DSS compliance efforts for a solution deployed on Azure?**
+**Where do I begin my organization's PCI DSS compliance efforts for a solution deployed on Azure?**
 
 The information that the PCI Security Standards Council makes available is a good place to learn about specific compliance requirements. The council publishes the [PCI DSS Quick Reference Guide](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf) for merchants and others involved in payment card processing. The guide explains how the PCI DSS can help protect a payment card transaction environment and how to apply it.
 
@@ -88,6 +88,10 @@ Currently OneDrive for Business and SharePoint Online is PCI-DSS compliant only 
 **What is in-scope for OneDrive for Business and SharePoint Online?**
 
 Currently, only files and documents uploaded to OneDrive for Business and SharePoint Online will be complaint with PCI DSS.
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

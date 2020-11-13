@@ -18,7 +18,7 @@ f1.keywords:
 description: "An overview of the eDiscovery feature and other search features within Microsoft 365 for audit use and transparency."
 ---
 
-# Microsoft 365 eDiscovery and search features overview 
+# Microsoft 365 eDiscovery and search features overview
 
 ## eDiscovery
 
@@ -62,6 +62,6 @@ For detailed steps to search Microsoft 365 audit logs, see [Search the audit log
 
 ## Search unified audit log
 
-Use the Audit Log Search feature to search the unified audit log. Microsoft 365 also provides the ability to search this log using remote PowerShell. The [Search-UnifiedAuditLog cmdlet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/Search-UnifiedAuditLog?view=exchange-ps) in Exchange Online PowerShell is used to search the unified audit log of events relating to user operations from Exchange Online, SharePoint Online, OneDrive for Business, and Azure AD. 
+Use the Audit Log Search feature to search the unified audit log. Microsoft 365 also provides the ability to search this log using remote PowerShell. The [Search-UnifiedAuditLog cmdlet](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell is used to search the unified audit log of events relating to user operations from Exchange Online, SharePoint Online, OneDrive for Business, and Azure AD.
 
 You can search for all events in a specified date range, or you can filter the results based on specific criteria, such as a specific action, the user who performed the action, or the target object. Administrators can use up to three simultaneously running Exchange Online PowerShell sessions to split up large date range searches.

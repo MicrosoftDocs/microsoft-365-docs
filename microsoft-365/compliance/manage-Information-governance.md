@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: High
+localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
@@ -24,7 +24,7 @@ Use Microsoft Information Governance (sometimes abbreviated to MIG) capabilities
 
 ![Govern your data - information governance and records management](../media/information-governance-records-management.png)
 
-Looking to protect your data? See [Microsoft Information Protection in Microsoft 365](protect-information.md).
+Looking to protect your data? See [Microsoft Information Protection in Microsoft 365](information-protection.md).
 
 ## Information governance
 

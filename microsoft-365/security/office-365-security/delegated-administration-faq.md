@@ -18,6 +18,9 @@ description: "Admins can view frequently asked questions and answers about deleg
 
 # Delegated administration FAQ
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 This article provides frequently asked questions and answers about delegated administration tasks in Microsoft 365 for Microsoft partners and resellers. Delegated administration includes the ability to manage Exchange Online Protection (EOP) settings for other tenants (companies).
 
 ## I'm a reseller and I need to manage my customer tenants. How does this work?

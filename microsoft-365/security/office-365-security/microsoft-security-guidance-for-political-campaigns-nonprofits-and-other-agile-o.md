@@ -25,6 +25,9 @@ description: "Summary: Planning and implementation guidance for fast-moving orga
 
 # Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
  **Summary:** Planning and implementation guidance for fast-moving organizations that have an increased threat profile.
 
 If your organization is agile, you have a small IT team, and your threat profile is higher than average, this guidance is designed for you. This solution demonstrates how to quickly build an environment with essential cloud services that include secure controls from the start. This guidance includes prescriptive security recommendations for protecting data, identities, email, and access from mobile devices.

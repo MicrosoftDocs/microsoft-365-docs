@@ -3,7 +3,7 @@ title: European Union Model Clauses
 description: Microsoft offers EU Standard Contractual Clauses, guarantees for transfers of personal data.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -46,7 +46,7 @@ The group determined that implementation of the provisions in Microsoft agreemen
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 - Azure DevOps Services
-- Windows Defender Advanced Threat Protection for the following cloud service portions: Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score.
+- Microsoft Defender for Endpoint for the following cloud service portions: Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score.
 
 ## Audits, reports, and certificates
 

@@ -94,17 +94,17 @@ Here's the [file plan](file-plan-manager.md) for the Product Specification reten
 
 - **Name:** Product Specification
 
-- **Description for admins:** Retain for 5 years after production stops, auto delete, event-based retention, event type is *Product Cessation*.
-
 - **Description for users:** Retain for 5 years after production stops.
+
+- **Description for admins:** Retain for 5 years after production stops, auto delete, event-based retention, event type is *Product Cessation*.
 
 - **Retention action:** Retain and delete.
 
 - **Retention duration:** 5 years (1,825 days).
 
-- **Record label**: Configure the retention label to classify content as a [record](records-management.md#records). (Documents that are classified as a *record* can't be modified or deleted by users.)
+- **Record label**: Configure the retention label to mark items as a [record](records-management.md#records), which means the labeled documents can't then be modified or deleted by users.
 
-- **File plan descriptors:** (for simplifying the scenario, no file descriptors are provided)
+- **File plan descriptors:** For simplifying the scenario, no optional file descriptors are provided.
 
 The following screenshot shows the settings when you create the Product Specification retention label in the Microsoft 365 compliance center. You can create the *Product Cessation* event type when you create the retention label. See the procedure in the following section.
 
@@ -115,34 +115,30 @@ The following screenshot shows the settings when you create the Product Specific
 
 ### Create an event type when you create a retention label
 
-1. From the **Retain or delete content based on** drop-down list, select **an event**.
-
-2. Select **Choose an event type**.
+1. On the **Define retention settings** page of the Create retention label wizard, after **Start the retention period based on**, select **Create new event type**:
     
     ![Create a new event type for the Product Specification label dialog box](../media/SPRetention6.png)
 
-3. Select **Choose an event type**, and then select **Create new event types** on the **Choose an event type** page.
+3. On the **Name your event type** page, enter **Product Cessation** and an optional description. Then select **Next**, **Submit**, and **Done**.
 
-4. Create an event type named ***Product Cessation***, enter a description, and select **Finish**.
-
-5. Back on the **Choose an event type** page, select the **Product Cessation** event type that you created, and then select **Add**.
-
-   Here's what the settings look like for the Product Specification retention label. 
-
+4. Back on the **Define retention settings** page, for **Start the retention period based on**, use the dropdown box to select the **Product Cessation** event type that you created.
+    
+    Here's what the settings look like for the Product Specification retention label: 
+    
    ![Settings for the new Product Specification label](../media/SPRetention7.png)
 
-6. Select **Create this label**. 
+6. Select **Create label**, and on the next page when you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**. 
+    
+    > [!TIP]
+    > For more detailed steps, see [Create a label whose retention period is based on an event](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
 
-   > [!TIP]
-   > For more detailed steps, see [Create a label whose retention period is based on an event](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
+Now let's look at how we'll auto-apply the retention label to product-specification content.
 
-Now let's look at auto-applying the retention label to product-specification content.
-
-## Auto-apply retention labels to classify content
+## Auto-apply retention labels to documents
 
 We're going to use Keyword Query Language (KQL) to [auto-apply](apply-retention-labels-automatically.md) the retention labels that we created. KQL is the language that's used to build search queries. In KQL, you can search by using keywords or managed properties. For more information, see [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-Basically, we want to tell Microsoft 365 to "apply the *Product Specification* retention label to all documents that have a **Status** of ***Final*** and a **Doc Type** of ***Product Specification***." Recall that **Status** and **Doc Type** are the site columns that we defined for the Product Documentation content type in the [Information architecture](#information-architecture) section. To do this, we need to configure the search schema.
+Basically, we want to tell Microsoft 365 to "apply the **Product Specification** retention label to all documents that have a **Status** of **Final** and a **Doc Type** of **Product Specification**." Recall that **Status** and **Doc Type** are the site columns that we defined for the Product Documentation content type in the [Information architecture](#information-architecture) section. To do this, we need to configure the search schema.
 
 When SharePoint indexes content, it automatically generates crawled properties for each site column. For this scenario, we're interested in the **Doc Type** and **Status** properties. We need documents in the library that are the right content type and have the site columns filled in for search to create the crawled properties.
 
@@ -212,47 +208,47 @@ Now in the search box, type **RefinableString00:"Product Specification" AND Refi
 
 ### Create auto-apply label policies
 
-Now that we've verified that the KQL query is working, let's create a label policy that uses a KQL query to auto-apply the Product Specification retention label to the appropriate documents.
+Now that we've verified that the KQL query is working, let's create an auto-apply label policy that uses a KQL query to automatically apply the Product Specification retention label to the appropriate documents.
 
 1. In the [compliance center](https://compliance.microsoft.com/homepage), go to **Records management** > **Label policies** > **Auto-apply a label**.
 
    [ ![Select "Auto-apply a label" on the Labels page](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
 
-2. On the **Choose a label to auto-apply** wizard page, select **Choose a label to auto-apply**.
+2. In the Create auto-labeling policy wizard, on the **Name your auto-labeling policy** page, enter a name such as **Auto-apply Product Specification label**, and an optional description. Then select **Next**.
 
-3. From the list of labels, select **Product Specification**. Then select **Add** and **Next**.
-
-4. Select **Apply label to content that contains specific words or phrases, or properties**, and then select **Next**.
-
+3. On the **Choose the type of content you want to apply this label to** page, select **Apply label to content that contains specific words or phrases, or properties**, and then select **Next**.
+    
    [ ![Select Apply label to content that contains specific words or phrases, or properties](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
+    
+   This option lets us provide the same KQL search query that we tested in the previous section. The query returns all Product Specification documents that have a status of *Final*. When we use this same query in the auto-apply label policy, the Product Specification retention label will be automatically applied to all documents that match it.
 
-   In the next step, you'll provide the same KQL search query that we tested in the previous section. This query returns all Product Specification documents that have a status of *Final*. When we use this same query in the label policy, the Product Specification retention label will be automatically applied to all documents that match it.
-
-5. In the **Keyword query editor** box, type ***RefinableString00:"Product Specification" AND RefinableString01:Final***, and then select **Next**.
+4. On the **Apply label to content matching this query** page, type **RefinableString00:"Product Specification" AND RefinableString01:Final**, and then select **Next**.
 
    ![Specify the query in the Keyword query editor box](../media/SPRetention19.png)
 
-6. Type a name (for example, ***Auto apply Product Specification label***) and an optional description for the label policy, and then select **Next**.
-
-7. On the **Choose locations** wizard page, you select the content locations that you want to apply the policy to. For this scenario, we apply the policy only to SharePoint locations, because all the production documents are stored in SharePoint document libraries. Select **Let me choose specific locations** and then toggle the status for **Exchange email**, **OneDrive accounts**, and **Microsoft 365 Groups** to off. Make sure that the status for SharePoint sites is set to on. 
-
+5. On the **Choose locations to apply the policy** page, you select the content locations that you want to apply the policy to. For this scenario, we apply the policy only to SharePoint locations, because all the production documents are stored in SharePoint document libraries. Toggle the status for **Exchange email**, **OneDrive accounts**, and **Microsoft 365 Groups** to **Off**. Make sure that the status for SharePoint sites is set to **On** before you select **Next**: 
+    
     ![Choose specific sites to auto-apply labels to](../media/SPRetentionSPlocations.png)
-
+    
    > [!TIP]
-   > Instead of applying the policy to all SharePoint sites, you can select **Choose sites** and add the URLs for specific SharePoint sites.
+   > Instead of applying the policy to all SharePoint sites, you can select **Choose site** and add the URLs for specific SharePoint sites.
 
-8. Select **Next** to display the **Review your settings** page.
+6. On the **Choose a label to auto-apply** page, select **Add label**.
+
+7. From the list of retention labels, select **Product Specification**. Then select **Add** and **Next**.
+
+8. Review your settings:
 
     ![Settings to auto-apply the label](../media/SPRetention18.png)
 
-9. Select **Auto-apply** to create the label policy.
-
+9. Select **Submit** to create the auto-apply label policy.
+    
    >[!NOTE]
    >It takes up to 7 days to automatically apply the Product Specification label to all documents that match the KQL search query.
 
 ### Verify that the retention label was automatically applied
 
-After 7 days, use the [activity explorer](data-classification-activity-explorer.md) in the compliance center to verify that the label policy that we created  automatically applied the retention labels to the product documents.
+After 7 days, use [activity explorer](data-classification-activity-explorer.md) in the compliance center to verify that the auto-apply label policy that we created did automatically apply the retention labels to the product documents.
 
 Also look at the properties of the documents in the Document Library. In the information panel, you can see that the retention label is applied to a selected document.
 

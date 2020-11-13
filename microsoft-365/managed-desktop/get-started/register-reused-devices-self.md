@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The process for Partners is documented in [Steps for Partners to register devices](register-devices-partner.md).
 
-Microsoft Managed Desktop can work with brand-new devices or you can re-use devices you might already have (which will require that you re-image them). You can register devices by using the Microsoft Managed Desktop Admin Portal.
+Microsoft Managed Desktop can work with brand-new devices or you can re-use devices you might already have (which will require that you re-image them). You can register devices with Microsoft Managed Desktop in the Microsoft Endpoint Manager portal.
 
 ## Prepare to register existing devices
 
@@ -51,7 +51,7 @@ If you've met all these prerequisites, you're ready to collect the information b
 2. In the Monitoring workspace, expand the **Reporting** node, expand **Reports**, and select the **Hardware - General** node. 
 3. Run the report, **Windows Autopilot Device Information**, and view the results.
 4. In the report viewer, select the **Export** icon, and choose the **CSV (comma-delimited)** option.
-5. After saving the file, you will need to filter results to just those devices you plan to register with Microsoft Managed Desktop and upload the data to Microsoft Managed Desktop [Admin Portal](https://aka.ms/mmdportal), select **Devices** in the left navigation pane. Select **+ Register devices**; the fly-in opens:
+5. After saving the file, you will need to filter results to just those devices you plan to register with Microsoft Managed Desktop and upload the data to Microsoft Managed Desktop. Open Microsoft Endpoint Manager and navigate to the **Devices** menu, then look for Microsoft Managed Desktop section and select **Devices**. Select **+ Register devices** which opens a fly-in to register new devices.
 
 
 Refer to [Register devices by using the Admin Portal](#register-devices-by-using-the-admin-portal) for more information.
@@ -130,9 +130,9 @@ With the hash data merged into one CSV file, you can now proceed to [register th
 
 #### Register devices by using the Admin Portal
 
-From the Microsoft Managed Desktop [Admin Portal](https://aka.ms/mmdportal), select **Devices** in the left navigation pane. Select **+ Register devices**; the fly-in opens:
+In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devices** in the left navigation pane. Look for the Microsoft Managed Desktop section of the menu and select **Devices**. In the Microsoft Managed Desktop Devices workspace, Select **+ Register devices** which opens a fly-in to register new devices.
 
-[![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+<!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
@@ -142,14 +142,14 @@ Follow these steps:
 
 1. In **File upload**, provide a path to the CSV file you created previously.
 
-1. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **AutopilotRegistrationRequested**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
+1. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
 
 
-You can monitor the progress of device registration on the main **Microsoft Managed Desktop - Devices** page. Possible states reported there include:
+You can monitor the progress of device registration on the main page. Possible states reported there include:
 
 | State | Description |
 |---------------|-------------|
-| AutopilotRegistrationRequested | Registration is not done yet. Check back later. |
+| Registration Pending | Registration is not done yet. Check back later. |
 | Registration failed | Registration could not be completed. Refer to [Troubleshooting device registration](#troubleshooting-device-registration) for more information. |
 | Ready for user | Registration succeeded and the device is now ready to be delivered to the user. Microsoft Managed Desktop will guide them through first time set-up, so there’s no need for you to do any further preparations. |
 | Active | The device has been delivered to the user and they have registered with your tenant. This also indicates that they are regularly using the device. |

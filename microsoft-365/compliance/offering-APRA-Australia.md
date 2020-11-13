@@ -3,7 +3,7 @@ title: Australian Prudential Regulation Authority (APRA)
 description: Microsoft guidance to help financial services clients comply with the outsourcing standards of the Australian Prudential Regulation Authority.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -82,6 +82,10 @@ In addition, if the cloud services are deemed to carry 'heightened or extreme in
 **Are transfers of data outside of Australia permitted?**
 
 Yes. General privacy legislation (which applies across all sectors, not just to financial institutions) permits transfers outside of Australia under certain conditions. Microsoft agrees to contractual terms in line with Australian Privacy Principles so that transfers of data outside of Australia are permitted when you use Microsoft cloud services. However, many of our Australian financial services customers take advantage of the cloud services available from our Australian datacenters, for which we make specific contractual commitments to store categories of data at rest in the Australian geography. These commitments are outlined further in the [compliance checklist](https://www.microsoft.com/cms/api/am/binary/RE3ez0C).
+
+## Use Microsoft Compliance Manager to assess your risk
+
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

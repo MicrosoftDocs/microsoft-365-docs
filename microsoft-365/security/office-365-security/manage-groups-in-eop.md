@@ -18,6 +18,9 @@ description: "Admins in standalone Exchange Online Protection (EOP) organization
 
 # Manage groups in EOP
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can create, modify, and remove the following types of groups:
 
 - **Distribution groups**: A collection of mail users or other distribution groups. For example, teams or other ad hoc groups who need to receive or send email in a common area of interest. Distribution groups are exclusively for distributing email messages, and are not security principals (they can't have permissions assigned to them).

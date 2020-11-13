@@ -34,7 +34,7 @@ Mobile devices can store sensitive organizational information and provide access
 
 - **When a device is wiped (Factory Reset or Remove Company Data)**, the device is removed from the list of managed devices.
     
-- **Automatically reset a device**: You can set up a Basic Mobility and Security policy that automatically factory resets a device after the user unsuccessfully tries to enter the device password a specific number of times. To do this, follow the steps in [Create device security policies in basic mobility and security](create-device-security-policies-in-basic-mmobility-and-security.md).
+- **Automatically reset a device**: You can set up a Basic Mobility and Security policy that automatically factory resets a device after the user unsuccessfully tries to enter the device password a specific number of times. To do this, follow the steps in [Create device security policies in basic mobility and security](create-device-security-policies.md).
     
 - **If you want to know the user experience** when you wipe their device, see  [What's the user and device impact?](#whats-the-user-and-device-impact).   
 
@@ -86,4 +86,4 @@ The wipe is sent immediately to the mobile device and the device is marked as no
 
 ## Related topics
 
-[Set up Basic Mobility and Security](set-up-basic-mobility-and-security.md)
+[Set up Basic Mobility and Security](set-up.md)

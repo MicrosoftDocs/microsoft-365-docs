@@ -18,10 +18,16 @@ description: "In this article, you'll learn how to move domains and settings fro
 
 # Move domains and settings from one EOP organization to another
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Changing business requirements can sometimes require splitting one Microsoft Exchange Online Protection (EOP) organization (tenant) into two separate organizations, merging two organizations into one, or moving your domains and EOP settings from one organization to another organization. Moving from one EOP organization to a second EOP organization can be challenging, but with a few basic remote Windows PowerShell scripts and a small amount of preparation, this can be achieved with a relatively small maintenance window.
 
 > [!NOTE]
-> Settings can be reliably moved only from an EOP standalone (Standard) organization to either another EOP Standard or an Exchange Enterprise CAL with Services (EOP Premium) organization, or from an EOP Premium organization to another EOP Premium organization. Because some premium features are not supported in EOP Standard organizations, moves from an EOP Premium organization to an EOP Standard organization might not be successful. <br><br> These instructions are for EOP filtering-only organizations. There are additional considerations in moving from one Exchange Online organization to another Exchange Online organization. Exchange Online organizations are out of scope for these instructions.
+>
+> - Settings can be reliably moved only from an EOP standalone (Standard) organization to either another EOP Standard or an Exchange Enterprise CAL with Services (EOP Premium) organization, or from an EOP Premium organization to another EOP Premium organization. Because some premium features are not supported in EOP Standard organizations, moves from an EOP Premium organization to an EOP Standard organization might not be successful.
+>
+> - These instructions are for EOP filtering-only organizations. There are additional considerations in moving from one Exchange Online organization to another Exchange Online organization. Exchange Online organizations are out of scope for these instructions.
 
 In the following example, Contoso, Ltd. has merged with Contoso Suites. The following image shows the process of moving domains, mail users and groups, and settings from the source EOP organization (contoso.onmicrosoft.com) to the target EOP organization (contososuites.onmicrosoft.com):
 
@@ -34,21 +40,14 @@ The challenge in moving domains from one organization to another is that a verif
 In order to re-create the source organization in the target organization, make sure that you collect and store the following information about the source organization:
 
 - Domains
-
 - Mail users
-
 - Groups
-
 - Anti-spam
-
   - Anti-spam policies (also known as content filter policies)
   - Outbound spam filter policies
   - Connection filter policies
-
 - Anti-malware policies
-
 - Connectors
-
 - Mail flow rules (also known as transport rules)
 
   > [!NOTE]

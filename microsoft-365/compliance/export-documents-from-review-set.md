@@ -19,7 +19,7 @@ description: "Learn how to select and export content from a review set for prese
 ms.custom: seo-marvel-mar2020
 ---
 
-# Export documents from a review set
+# Export documents from a review set in Advanced eDiscovery
 
 Export allows users to customize the content that is included in the download package. The Export tool provides a configuration page with the following settings:
 
