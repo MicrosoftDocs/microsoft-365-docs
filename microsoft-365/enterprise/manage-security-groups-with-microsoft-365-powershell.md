@@ -29,7 +29,7 @@ This article describes listing, creating, changing settings, and removing securi
 
 When a command block in this article requires that you specify variable values, use these steps.
 
-1. Copy the command block to the clipboard and paste them into Notepad or the PowerShell Integrated Script Environment (ISE).
+1. Copy the command block to the clipboard and paste it into Notepad or the PowerShell Integrated Script Environment (ISE).
 2. Fill in the variable values and remove the "<" and ">" characters.
 3. Run the commands in the PowerShell window or the PowerShell ISE.
 
@@ -70,7 +70,7 @@ $groupName="<display name of the group>"
 Get-AzureADGroup | Where { $_.DisplayName -eq $groupName } | Select *
 ```
 
-Then, use the [Set-AzureADGroup](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureadgroup) article to determine how to change a setting.
+Then, use the [Set-AzureADGroup](https://docs.microsoft.com/powershell/module/azuread/set-azureadgroup) article to determine how to change a setting.
 
 ### Remove a security group
 

@@ -27,7 +27,7 @@ You can use PowerShell for Microsoft 365 as an alternative to the Microsoft 365 
 
 When a command block in this article requires that you specify variable values, use these steps.
 
-1. Copy the command block to the clipboard and paste them into Notepad or the PowerShell Integrated Script Environment (ISE).
+1. Copy the command block to the clipboard and paste it into Notepad or the PowerShell Integrated Script Environment (ISE).
 2. Fill in the variable values and remove the "<" and ">" characters.
 3. Run the commands in the PowerShell window or the PowerShell ISE.
 
@@ -47,7 +47,7 @@ Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword
 ```
 ### Force a user to change their password
 
-Use these commands to set a password and force a user to change their password.
+Use these commands to set a password and force a user to change their new password.
 
 ```powershell
 $userUPN="<user account sign in name, such as belindan@contoso.com>"
@@ -56,7 +56,7 @@ $secPassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
 Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -EnforceChangePasswordPolicy $true
 ```
 
-Use these commands to set a password and force a user to change their password the next time they sign in.
+Use these commands to set a password and force a user to change their new password the next time they sign in.
 
 ```powershell
 $userUPN="<user account sign in name, such as belindan@contoso.com>"
