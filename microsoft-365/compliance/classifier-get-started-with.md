@@ -48,7 +48,7 @@ You'll need accounts with these permissions to use classifiers in these scenario
 - Communication compliance policy scenario: Insider Risk Management Admin, Supervisory Review Administrator 
 
 > [!IMPORTANT]
-> By default, only the user who creates a custom classifier can train and review predictions made by that classifier. If you want others to be able to train and review classifier predictions, see [Give others train and review rights](#give-others-train-and-review-rights).
+> By default, only the user who creates a custom classifier can train and review predictions made by that classifier. If you want others to be able to train and review classifier predictions, see [Give others train and review rights](https://docs.microsoft.com/microsoft-365/compliance/classifier-get-started-with?view=o365-worldwide#give-others-train-and-review-rights).
 
 ## Prepare for a custom trainable classifier 
 
