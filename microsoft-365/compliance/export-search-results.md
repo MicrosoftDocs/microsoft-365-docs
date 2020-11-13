@@ -123,9 +123,9 @@ The first step is to prepare the search results for exporting. When you prepare 
   
 10. Click the **Export files in a compressed (zipped) folder** checkbox to export search results to compressed folders. This option is available only when you choose to export Exchange items as individual messages and when the search results include SharePoint or OneDrive documents. This option is primarily used to work around the 260 character limit in Windows file path names when items are exported. See the "Filenames of exported items" in the [More information](#more-information) section. 
   
-11. Click **Start export**.
-  
-    The search results are prepared for downloading, which means they're being uploaded to the Azure Storage location in the Microsoft cloud. When the search results are ready for download, the **Download exported results** link is displayed under **Export results to a computer** in the details pane. 
+11. Click **Start export**. The search results are prepared for downloading, which means they're being uploaded to an Azure Storage location in the Microsoft cloud. This may take several minutes.
+
+See the next section for instructions to download the exported search results.
   
 ## Step 2: Download the search results
 
@@ -133,34 +133,23 @@ The next step is to download the search results from the Azure Storage location 
   
 As previously explained, you can increase the download speed by configuring a Windows Registry setting on the computer you use to export the search results. For more information, see [Increase the download speed when exporting eDiscovery search results from Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
   
-1. In the details pane for the search that you started the export for, under **Export results to a computer**, click **Download exported results**.
+1. On the **Content search** page, click the **Exports** tab. 
   
-    The **Download exported results** window is displayed and contains the following information about the search results that will be downloaded to your computer. 
+   You may have to click **Refresh** to update the list of export jobs so that it shows the export job you created. Export jobs have the same name as the corresponding search with **_Export** appended to the search name.
   
-    - The number of items that will be downloaded.
-  
-    - The estimated total size of the items that will be downloaded.
-  
-    - Whether indexed or unindexed will be exported. Unindexed items are items that have a recognized format, are encrypted, or weren't indexed for other reasons. For more information, see [Unindexed items in Content Search](partially-indexed-items-in-content-search.md).
-  
-    - Whether versions of SharePoint documents will be downloaded.
-  
-    - The status of the export preparation process. You can start downloading search results even if the preparation of the data isn't complete.
-  
-2. Under **Export key**, click **Copy to clipboard**. You use this key in step 5 to download the search results.
-  
-    > [!NOTE]
-    > Because anyone can install and start the eDiscovery Export tool, and then use this key to download the search results, be sure to take precautions to protect this key just like you would protect passwords or other security-related information.
-  
-3. Click **Download results**.
+2. Select the export job that you created in Step 1.
 
-4. If you're prompted to install the **eDiscovery Export Tool**, click **Install**.
+3. On the flyout page under **Export key**, click **Copy to clipboard**. You use this key in step 6 to download the search results.
+  
+4. Click **Download results**.
 
-5. In the **eDiscovery Export Tool**, do the following:
+5. If you're prompted to install the **eDiscovery Export Tool**, click **Install**.
+
+6. In the **eDiscovery Export Tool**, do the following:
 
    ![eDiscovery Export Tool](../media/eDiscoveryExportTool.png)
 
-   1. Paste the export key that you copied in step 2 in the appropriate box.
+   1. Paste the export key that you copied in step 3 in the appropriate box.
   
    2. Click **Browse** to specify the location where you want to download the search result files.
   
