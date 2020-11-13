@@ -25,39 +25,44 @@ description: "Learn how to use PowerShell to manage passwords."
 
 You can use PowerShell for Microsoft 365 as an alternative to the Microsoft 365 admin center to manage passwords in Microsoft 365. 
 
-## Use the Azure Active Directory PowerShell for Graph module
-
-First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
-
-
-### Set a password
-
-To specify a password for a user account: 
+When a command block in this article requires that you specify variable values, use these steps.
 
 1. Copy the command block to the clipboard and paste them into Notepad or the PowerShell Integrated Script Environment (ISE).
 2. Fill in the variable values and remove the "<" and ">" characters.
 3. Run the commands in the PowerShell window or the PowerShell ISE.
 
+## Use the Azure Active Directory PowerShell for Graph module
+
+First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+
+### Set a password
+
+Use these commands to specify a password for a user account.
+
 ```powershell
-$userUPN="<user account>"
-$newpassword="<new password>"
-$secpasswd = ConvertTo-SecureString $newpassword -AsPlainText -Force
-Set-AzureADUserPassword -ObjectId  $userUPN -Password $secpasswd
+$userUPN="<user account sign in name, such as belindan@contoso.com>"
+$newPassword="<new password>"
+$secPassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
+Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword
 ```
 ### Force a user to change their password
 
-Use these commands to force the user to change their password.
+Use these commands to set a password and force a user to change their password.
 
 ```powershell
-$userUPN="<user account sign in name, such as blindan@contoso.com>"
-Set-AzureADUserPassword -ObjectId  $userUPN -EnforceChangePasswordPolicy
-````
+$userUPN="<user account sign in name, such as belindan@contoso.com>"
+$newPassword="<new password>"
+$secPassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
+Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -EnforceChangePasswordPolicy $true
+```
 
-Use these commands to force the user to change their password the next time they sign in.
+Use these commands to set a password and force a user to change their password the next time they sign in.
 
 ```powershell
-$userUPN="<user account sign in name>"
-Set-AzureADUserPassword -ObjectId  $userUPN -ForceChangePasswordNextLogin
+$userUPN="<user account sign in name, such as belindan@contoso.com>"
+$newPassword="<new password>"
+$secPassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
+Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -ForceChangePasswordNextLogin $true
 ```
 
 ## Use the Microsoft Azure Active Directory Module for Windows PowerShell
@@ -70,17 +75,17 @@ Use these commands to specify a password for a user account.
 
 ```powershell
 $userUPN="<user account sign in name>"
-$newpassword="<new password>"
-Set-MsolUserPassword -UserPrincipalName $userUPN -NewPassword $newpassword
+$newPassword="<new password>"
+Set-MsolUserPassword -UserPrincipalName $userUPN -NewPassword $newPassword
 ```
 
 ### Force a user to change their password
 
-Use these commands to force the user to change their password.
+Use these commands to force a user to change their password.
 
 ```powershell
 $userUPN="<user account sign in name>"
-Set-MsolUserPassword -UserPrincipalName $userUPN -ForceChangePassword
+Set-MsolUserPassword -UserPrincipalName $userUPN -ForceChangePassword $true
 ```
 
 ## See also

@@ -594,8 +594,8 @@
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
             - name: Block
               href: block-user-accounts-with-microsoft-365-powershell.md
-        - name: Passwords
-          href: manage-passwords-with-microsoft-365-powershell.md
+            - name: Passwords
+              href: manage-passwords-with-microsoft-365-powershell.md
         - name: Licenses and services
           items: 
             - name: View licenses and services
@@ -619,7 +619,7 @@
           items: 
             - name: Manage security groups
               href: manage-security-groups-with-microsoft-365-powershell.md
-            - name: Maintain group membership
+            - name: Maintain security group membership
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
               href: manage-microsoft-365-groups-with-powershell.md
