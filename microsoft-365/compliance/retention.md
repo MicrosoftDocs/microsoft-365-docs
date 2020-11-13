@@ -50,7 +50,7 @@ These retention settings work with content in place that saves you the additiona
 
 ## How retention settings work with content in place
 
-When content has retention settings assigned to it, that content remains in its original location. People can continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is automatically retained as it existed when you applied the retention settings.
+When content has retention settings assigned to it, that content remains in its original location. People can continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is automatically retained.
   
 - For SharePoint and OneDrive sites: The copy is retained in the **Preservation Hold** library.
 
@@ -72,13 +72,13 @@ For more detailed information about how retention settings work for different wo
 
 ## Retention policies and retention labels
 
-You can use both retention policies and retention labels to assign your retention settings to content. 
+You can use both retention policies and retention labels with label policies to assign your retention settings to content. 
 
 Use a retention policy to assign the same retention settings for content at a site or mailbox level, and use a retention label to assign retention settings at an item level (folder, document, email).
 
 For example, if all documents in a SharePoint site should be retained for 5 years, it's more efficient to do this with a retention policy than apply the same retention label to all documents in that site. However, if some documents in that site should be retained for 5 years and others retained for 10 years, a retention policy wouldn't be able to do this. When you need to specify retention settings at the item level, use retention labels. 
 
-Unlike retention policies, retention settings from retention labels persist with the content if it’s copied or moved to a different Microsoft 365 location. In addition, retention labels have the following capabilities that retention policies don't support: 
+Unlike retention policies, retention settings from retention labels travel with the content if it’s moved to a different location within your Microsoft 365 tenant. In addition, retention labels have the following capabilities that retention policies don't support: 
  
 - Options to start the retention period from when the content was labeled or based on an event, in addition to the age of the content or when it was last modified.
 
@@ -105,38 +105,8 @@ Retention policies can be applied to the following locations:
 - Yammer private messages
 
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
-    
-You can also apply a policy to all content or to content when it meets specific conditions, such as content that contains keywords or [sensitive information types](sensitive-information-type-entity-definitions.md).
 
-#### Use Preservation Lock to comply with regulatory requirements
-
-Some organizations might need to comply with rules defined by regulatory bodies such as the Securities and Exchange Commission (SEC) Rule 17a-4, which requires that after a retention policy is turned on, it cannot be turned off or made less restrictive. 
-
-Preservation Lock ensures your organization can meet such regulatory requirements because it locks a retention policy so that no one—including the administrator—can turn off the policy, delete the policy, or make it less restrictive.
-  
-When a retention policy is locked:
-
-- No one can turn it off
-- Locations can be added but not removed
-- Content subject to the policy can't be modified or deleted during the retention period
-- You can extend a retention period but not decrease it
-
-In summary, a locked retention policy can be increased or extended, but it can't be reduced or turned off.
-  
-> [!IMPORTANT]
-> Before you lock a retention policy, it's critical that you understand the impact and confirm whether it's required for your organization to meet regulatory requirements. Administrators won't be able to disable or delete a retention policy after the preservation lock is applied.
-
-You apply Preservation Lock after the retention policy is created, by using PowerShell. Instructions are included in [Create and configure retention policies](create-retention-policies.md).
-
-#### Releasing a retention policy
-
-Providing your retention policy doesn't have a Preservation Lock, you can turn off or delete a retention policy at any time. 
-
-When you do so, any SharePoint or OneDrive content that's being retained in the Preservation Hold library is not immediately and permanently deleted. Instead, to help prevent inadvertent data loss, there is a 30-day grace period, during which content expiration for that policy does not happen in the Preservation Hold library, so that you can restore any content from there, if needed. Additionally, you can't manually delete this content during the grace period.
-
-You can turn on the retention policy again during the grace period, and no content will be deleted for that policy.
-
-This 30-day grace period in SharePoint and OneDrive corresponds to the 30-day delay hold in Exchange. For more information, see [Managing mailboxes on delay hold](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
+Items inherit the retention settings from their container specified in the retention policy. If they are then moved outside that container when the policy is configured to retain content, a copy of that item is retained in the workload's secured location. However, the retention settings don't travel with the content in its new location. If that's required, use retention labels instead of retention policies.
 
 ### Retention labels
 
@@ -236,6 +206,8 @@ To understand how and why one retention label is applied rather than another, it
 
 An explicitly assigned retention label takes precedence over an implicitly assigned retention label. For more information, see the [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence) section on this page.
 
+For SharePoint, retention labels can also be implicitly assigned when you configure a default label for all content in a SharePoint library, folder, or document set. For this scenario, an auto-applied label takes precedence over a default label, but to fully understand all outcomes when you use a default label, see the information in the [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) section. 
+
 #### Monitoring retention labels
 
 From the Microsoft 365 compliance center, use **Data classification** > **Overview** to monitor how your retention labels are being used in your tenant, and identify where your labeled items are located. For more information, including important prerequisites, see [Know your data - data classification overview](data-classification-overview.md).
@@ -266,14 +238,14 @@ Use the following table to help you identify whether to use a retention policy o
 |Capability|Retention policy |Retention label|
 |:-----|:-----|:-----|:-----|
 |Retention settings that can retain and then delete, retain-only, or delete-only |Yes |Yes |
-|Workloads supported: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No <br /> No |
+|Workloads supported: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No <br /> No |
 |Retention applied automatically | Yes | Yes |
 |Retention applied based on conditions <br /> - sensitive info types, KQL queries, trainable classifiers| No | Yes |
 |Retention applied manually | No | Yes |
 |UI presence for end users | No | Yes |
 |Persists if the content is moved | No | Yes, within your Microsoft 365 tenant |
 |Declare item as a record| No | Yes |
-|Start the retention period when labeled or based on an event | No | Yes |
+|Start the retention period: <br /> - When items were created or last modified<br /> - When labeled or based on an event | <br />Yes <br />No | <br />Yes <br /> Yes |
 |Disposition review | No| Yes |
 |Proof of disposition for up to 7 years | No |Yes, when item is declared a record|
 |Audit admin activities| Yes | Yes|
@@ -304,13 +276,31 @@ Explanation for the four different levels:
     
 3. **Explicit inclusion wins over implicit inclusion.** This means: 
     
-    1. If a retention label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that retention label takes precedence over both a retention policy assigned at the site or mailbox level and a default retention label assigned to the document library. For example, if the explicit retention label is configured to retain content for ten years, but a retention policy assigned to the site is configured to retain content for only five years, the retention label takes precedence. Auto-applied retention labels are considered implicit rather than explicit, because they're applied automatically by Microsoft 365.
+    1. If a retention label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that retention label takes precedence over both a retention policy assigned at the site or mailbox level and a default retention label assigned to the document library. For example, if the explicit retention label is configured to retain content for ten years, but a retention policy assigned to the site is configured to retain content for only five years, the retention label takes precedence.
     
     2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive account, that retention policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive accounts but doesn't specifically include that user's mailbox.
     
 4. **The shortest deletion period wins.** Similarly, if content is subject to multiple retention settings that delete content without a retention period, that content will be deleted at the end of the shortest retention period. 
 
 Finally, a retention policy or retention label cannot permanently delete any content that's on hold for eDiscovery. When that hold is released, the content again becomes eligible for the cleanup process in the secured locations for the workload.
+
+## Use Preservation Lock to restrict changes to policies
+
+Some organizations might need to comply with rules defined by regulatory bodies such as the Securities and Exchange Commission (SEC) Rule 17a-4, which requires that after a policy for retention is turned on, it cannot be turned off or made less restrictive. 
+
+Preservation Lock ensures your organization can meet such regulatory requirements because it locks a retention policy or retention label policy so that no one—including an administrator—can turn off the policy, delete the policy, or make it less restrictive.
+  
+You apply Preservation Lock after the retention policy or retention label policy is created. For more information and instructions, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
+
+## Releasing a policy for retention
+
+Providing your policies for retention don't have a Preservation Lock, you can delete your policies at any time, which effectively turns off the previously applied retention settings. You can also keep the policy but change the location status to off.
+ 
+When you do either of these actions, any SharePoint or OneDrive content that's being retained in the Preservation Hold library is not immediately and permanently deleted. Instead, to help prevent inadvertent data loss, there is a 30-day grace period, during which content expiration for that policy does not happen in the Preservation Hold library, so that you can restore any content from there, if needed. Additionally, you can't manually delete this content during the grace period.
+
+You can change the location status back to on during the grace period, and no content will be deleted for that policy.
+
+This 30-day grace period in SharePoint and OneDrive corresponds to the 30-day delay hold in Exchange. For more information, see [Managing mailboxes on delay hold](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
 ## Auditing retention configuration
 
@@ -406,7 +396,7 @@ If you have configured SharePoint sites for content type policies or information
 
 - [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limits and specifications for Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
-- [Comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+- [Resources to help you meet regulatory requirements for information governance and records management](retention-regulatory-requirements.md)
 
 ## Next steps
 

@@ -1,5 +1,5 @@
 ---
-title: "User tags in Office 365 ATP"
+title: "User tags in Microsoft Defender for Office 365"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn how to identify specific groups of users with user tags in Office 365 ATP Plan 2. Tag filtering is available across alerts, reports, and investigations in Office 365 ATP to quickly identify the tagged users."
+description: "Admins can learn how to identify specific groups of users with user tags in Microsoft Defender for Office 365 Plan 2. Tag filtering is available across alerts, reports, and investigations in Microsoft Defender for Office 365 to quickly identify the tagged users."
 ---
 
-# User tags in Office 365 ATP
+# User tags in Microsoft Defender for Office 365
 
 > [!NOTE]
 > The user tags feature is in Preview, isn't available to everyone, and is subject to change. For information about the release schedule, check out the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
-User tags are identifiers for specific groups of users in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). There are two types of user tags:
+User tags are identifiers for specific groups of users in [Microsoft Defender for Office 365](office-365-atp.md). There are two types of user tags:
 
 - **System tags**: Currently, [Priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) is the only type of system tag.
 - **Custom tags**: You create these user tags yourself.
 
-If your organization has Office 365 ATP Plan 2 (included in your subscription or as an add-on), you can create custom user tags in addition to using the priority accounts tag.
+If your organization has Defender for Office 365 Plan 2 (included in your subscription or as an add-on), you can create custom user tags in addition to using the priority accounts tag.
 
 After you apply system tags or custom tags to users, you can use those tags as filters in alerts, reports, and investigations:
 

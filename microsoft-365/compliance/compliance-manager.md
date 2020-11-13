@@ -128,7 +128,7 @@ Improvement actions help centralize your compliance activities. Each improvement
 
 ## Supported languages
 
-Compliance Manger is available in the following languages:
+Compliance Manager is available in the following languages:
 
 - English
 - Bahasa Indonesian

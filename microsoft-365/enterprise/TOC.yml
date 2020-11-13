@@ -419,8 +419,6 @@
           href: manage-microsoft-365-groups.md
         - name: Governance
           href: manage-microsoft-365-identity-governance.md
-        - name: Recover deleted items in a user mailbox
-          href: recover-deleted-items-in-a-mailbox.md
         - name: Directory synchronization
           items: 
             - name: View status
@@ -475,8 +473,11 @@
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
 
-- name: Security and compliance
-  href: https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap
+- name: Security
+  href: https://docs.microsoft.com/microsoft-365/security/
+
+- name: Compliance
+  href: https://docs.microsoft.com/microsoft-365/compliance/
 
 - name: Cloud services
   items: 
@@ -614,7 +615,7 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Groups
           items: 
-            - name: Maintain group membership
+            - name: Maintain security group membership
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
               href: manage-microsoft-365-groups-with-powershell.md
