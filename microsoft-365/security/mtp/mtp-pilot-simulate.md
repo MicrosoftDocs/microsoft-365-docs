@@ -27,7 +27,7 @@ ms.topic: conceptual
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-|[![Planning](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Planning](mtp-pilot-plan.md) |[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Prepare](prepare-mtpeval.md) | ![Simulate attack](../../media/phase-diagrams/3-simluate.png)<br/>Simulate attack| [![Close and summarize](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[Close and summarize](mtp-pilot-close.md)|
+|[![Planning](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Planning](mtp-pilot-plan.md) |[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Preparation](prepare-mtpeval.md) | ![Simulate attack](../../media/phase-diagrams/3-simluate.png)<br/>Simulate attack| [![Close and summarize](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[Close and summarize](mtp-pilot-close.md)|
 |--|--|--|--|
 || |*You are here!* | |
 

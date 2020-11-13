@@ -32,7 +32,7 @@ ms.topic: conceptual
 
 
 
-|[![Planning](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Planning](mtp-pilot-plan.md) |[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Prepare](prepare-mtpeval.md) | [![Simulate attack](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[Simulate attack](mtp-pilot-simulate.md) | ![Close and summarize](../../media/phase-diagrams/4-summary.png)<br/>Close and summarize|
+|[![Planning](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Planning](mtp-pilot-plan.md) |[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Preparation](prepare-mtpeval.md) | [![Simulate attack](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[Simulate attack](mtp-pilot-simulate.md) | ![Close and summarize](../../media/phase-diagrams/4-summary.png)<br/>Close and summarize|
 |--|--|--|--|
 || | |*You are here!*|
 
