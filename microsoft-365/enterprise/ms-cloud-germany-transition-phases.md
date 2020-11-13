@@ -17,7 +17,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: "Summary: Understand the experiences for moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region. (fix)"
+description: "Summary: Understand the migration phases actions and impacts of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
 # Migration phases actions and impacts
@@ -40,6 +40,13 @@ TABLE WITH DASH MARKS FOR BULLETS BUT NO INDENTING
 | Step(s) | Description | Applies to | Impact |
 |:-------|:-----|:-------|:-------|
 | New Germany region is added to existing organization setup and mailboxes are moved to Office 365 services | Exchange Online configuration adds the new go-local German region to the transitioning organization. This Office 365 services region is set as ‘default’, which enables the internal load balancing service to re-distribute mailboxes to the appropriate default region in Office 365 services. In this transition, users on either side (Germany or Office 365 services) are in the same organization and can use either URL endpoint. | Exchange Online | - Transition users and services off Germany URLs to Office 365 services URLs (https://outlook.office365.com). <br><br> - Users will continue to access the service via legacy Germany URLs during the migration. No immediate action needed. <br><br> - Users should begin to use the office.com portal for Office Online features (Calendar, Mail, People). Navigation to services not yet migrated to Office 365 services will not function until migrated. <br><br> - Public folder Outlook Web Access experience during migration is not available. |
+|||||
+
+TABLE WITH NO INDENTING
+
+| Step(s) | Description | Applies to | Impact |
+|:-------|:-----|:-------|:-------|
+| New Germany region is added to existing organization setup and mailboxes are moved to Office 365 services | Exchange Online configuration adds the new go-local German region to the transitioning organization. This Office 365 services region is set as ‘default’, which enables the internal load balancing service to re-distribute mailboxes to the appropriate default region in Office 365 services. In this transition, users on either side (Germany or Office 365 services) are in the same organization and can use either URL endpoint. | Exchange Online | Transition users and services off Germany URLs to Office 365 services URLs (https://outlook.office365.com). <br><br> Users will continue to access the service via legacy Germany URLs during the migration. No immediate action needed. <br><br> Users should begin to use the office.com portal for Office Online features (Calendar, Mail, People). Navigation to services not yet migrated to Office 365 services will not function until migrated. <br><br> Public folder Outlook Web Access experience during migration is not available. |
 |||||
 
 <!--
