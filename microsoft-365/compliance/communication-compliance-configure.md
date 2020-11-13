@@ -139,7 +139,7 @@ For more information about setting up groups, see:
 
 ## Step 4 (optional): Verify your Yammer tenant is in Native Mode
 
-In Native Mode, all Yammer users are in Azure Active Directory (AAD), all groups are Office 365 Groups, and all files are stored in SharePoint Online. Your Yammer tenant must be in Native Mode for communication compliance policies to scan and identify risky conversations in private messages and community conversations in Yammer.
+In Native Mode, all Yammer users are in Azure Active Directory (Azure AD), all groups are Office 365 Groups, and all files are stored in SharePoint Online. Your Yammer tenant must be in Native Mode for communication compliance policies to scan and identify risky conversations in private messages and community conversations in Yammer.
 
 For more information about configuring Yammer in Native Mode, see:
 
