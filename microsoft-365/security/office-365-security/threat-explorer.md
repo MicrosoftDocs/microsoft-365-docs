@@ -128,9 +128,9 @@ Currently, we surface delivery location in the email grid and email flyout. Goin
 > [!NOTE]
 > There are a few cases where **Delivery location** and **Delivery action** may show as "unknown":
 >
-> - You might see **Delivery location** as "delivered" and **Delivery location** as "unknown" if the message was delivered, but an Inbox rule moved the message to a default folder (such as Draft or Archive) instead of the Inbox or Junk Email folder.
+> - You might see **Delivery location** as "delivered" and **Delivery location** as unknown if the message was delivered, but an Inbox rule moved the message to a default folder (such as Draft or Archive) instead of the Inbox or Junk Email folder.
 >
-> - Latest Delivery Location can be unknown if an admin/system action (e.g., ZAP, Admin Action) is attempted, but the message isn't found. Typically, the action happens after the user has moved or deleted the Message. In such cases, verify the Result/Details Column in timeline view. Look for the message: Message moved or deleted by the user.
+> - **Latest delivery location can be unknown if an admin/system action (e.g., ZAP, Admin Action) is attempted, but the message isn't found. Typically, the action happens after the user has moved or deleted the Message. In such cases, verify the Result/Details Column in timeline view. Look for the message: Message moved or deleted by the user.
 
 > [!div class="mx-imgBorder"]
 > ![Delivery Locations for Timeline](../../media/Updated_Timeline_Delivery_Location.png)
