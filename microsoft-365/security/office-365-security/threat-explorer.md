@@ -245,13 +245,13 @@ You'll also be able to export the list of targeted users, up to a limit of 3,000
 
 ### Exchange transport rules
 
-As part of data enrichment, you'll be able to see all the different transport rules that were applied to a message. This information will be available in Email grid view. To view it,  select **Column options** in the grid and then **Add Exchange Transport Rule** from the Column options in the grid. It will also be visible on the Details flyout in the email.
+As part of data enrichment, you'll be able to see all the different Exchange transport rules (ETR) that were applied to a message. This information will be available in Email grid view. To view it,  select **Column options** in the grid and then **Add Exchange Transport Rule** from the Column options in the grid. It will also be visible on the Details flyout in the email.
 
-You would be able to see both the GUID as well as the name of the transport rules which were applied to the message. Additionally, you would be able to search for the messages using the name of the transport rule. This would be a 'Contains' search which means you will be able to search using partial searches as well.
+You'll be able to see both the GUID and the name of the transport rules that were applied to the message. You'll be able to search for the messages by using the name of the transport rule. This is a "Contains" search, which means you will be able to do partial searches as well.
 
-#### Important Note:
+#### Important note:
 
-ETR search and name availability would depend on the specific role that has been assigned to you. You will need to have one of the following roles/permissions in order to view the ETR names and search.  If you do not have any of the following roles assigned to you, you will not be able to see the names of the transport rules, and search for the messages using the ETR names. However, you will be able to see the ETR label and GUID information within the Email Details. Your other experiences around viewing records in Email Grids, Email flyouts, Filters, and Export are not impacted.
+ETR search and name availability depends on the specific role that has been assigned to you. You need to have one of the following roles/permissions to view the ETR names and search.  If you don't have any of the following roles assigned to you, you can't see the names of the transport rules or search for messages by using ETR names. However, you would be able to see the ETR label and GUID information within the Email Details. Your other experiences viewing records in Email Grids, Email flyouts, Filters, and Export are not affected.
 
 - EXO Only - Data Loss Prevention: All
 - EXO Only - O365SupportViewConfig: All
@@ -267,16 +267,16 @@ Within the email grid, Details flyout, and Exported CSV, the ETRs are presented 
 
 ### Inbound connectors
 
-Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization, with the ability to apply any security restriction or controls. Within Threat Explorer, you will now have the ability to view the connectors which are related to an email as well as search for emails using the connector names.
-The search for connectors is 'Contains' in nature which means partial keyword searches should work as well.
-Within the Main grid view, the Details flyout, and the Exported CSV, the connectors are shown in the Name/GUID format as shown below:
+Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization, with the ability to apply any security restriction or controls. Within Threat Explorer, you can now view the connectors that are related to an email as well as search for emails by using connector names.
+
+The search for connectors is "Contains" in nature, which means partial keyword searches should work as well. Within the Main grid view, the Details flyout, and the Exported CSV, the connectors are shown in the Name/GUID format as shown here:
 
 > [!div class="mx-imgBorder"]
 > ![Connector Details](../../media/Connector_Details.png)
 
 ## New features in Threat Explorer and Real-time detections
 
-Three new features added into Threat Explorer and Real-time detections:
+Three new features are available in Threat Explorer and Real-time detections:
 
 - [Preview email header and download email body](#preview-email-header-and-download-email-body)
 - [Email timeline](#email-timeline)
@@ -286,36 +286,31 @@ These new features are outlined below.
 
 ### Preview email header and download email body
 
-The ability to preview an email header and download the email body are new features available in Threat Explorer. Admins will be able to analyze downloaded headers/email messages for threats. Because downloading email messages can risk the exposure of information, this process is controlled by roles-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails and preview headers in all-email messages view.
+The ability to preview an email header and download the email body are new features available in Threat Explorer. Admins can analyze downloaded headers/email messages for threats. Because downloading email messages can risk the exposure of information, this process is controlled by roles-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails and preview headers in all-email messages view.
 
-But Explorer (and Real-time detections) also adds fresh new fields designed to give you a more complete picture of where your email messages land. Part of the goal of this change is to make hunting easier for Security Ops people, but the net result is knowing the location of problem email messages at a glance.
+But Explorer (and Real-time detections) also get new fields designed to give you a more complete picture of where your email messages land. These changes  make hunting easier for Security Ops, but the main result is you can know the location of problem email messages at a glance.
 
 How is this done? Delivery Status is now broken out into two columns:
 
 - **Delivery Action** - What is the status of this email?
 - **Delivery Location** - Where was this email routed as a result?
 
-Delivery Action is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
+*Delivery Action* is the action taken on an email due to existing policies or detections. Here are the possible actions for an email:
 
 |Delivered|Junked|Blocked|Replaced|
 |---|---|---|---|
-|Email was delivered to Inbox or folder of a user and the user can directly access it.|Email was sent to either user's Junk folder or Deleted folder, and the user has access to emails in those folders.|Any emails that are quarantined, that  failed, or were dropped. This is completely inaccessible by the user!|Any email where malicious attachments are replaced by .txt files that state the attachment was malicious.|
+|Email was delivered to the inbox or folder of a user, and the user can access it.|Email was sent to the user's Junk  or Deleted folder, and the user has access to the email.|Email that are quarantined, that failed, or were dropped. These mails are inaccessible to the user.|Email where malicious attachments were replaced by .txt files that state the attachment was malicious.|
 
-|Delivered|Junked|Blocked|Replaced|
-|---|---|---|---|
-|Email was delivered to the user's inbox or another folder, and the user can directly access it.|Email was sent to either user's Junk folder or Deleted folder, and the user has access to email messages in those folders.|Any email messages that are quarantined, that failed, or were dropped, and are not accessible by the user.|Any email messages where malicious attachments were replaced by .txt files that state the attachments were malicious.|
-|
-
-And here is what the user can see, and what they can't:
+Here is what the user can and can't see:
 
 |Accessible to end users|Inaccessible to end users|
 |---|---|
 |Delivered|Blocked|
 |Junked|Replaced|
 
-Delivery location shows the results of policies and detections that run post-delivery. It's linked to a Delivery Action. This field was added to give insight into the action taken when a problem mail is found. Here are the possible values of delivery location:
+**Delivery location** shows the results of policies and detections that run post-delivery. It's linked to a *Delivery action*. This field was added to give insight into the action taken when a problem mail is found. These are the possible values:
 
-- **Inbox or folder**: The email is in inbox or a folder (according to your email rules).
+- **Inbox or folder**: The email is in the inbox or a folder (according to your email rules).
 - **On-prem or external**: The mailbox doesn't exist on cloud but is on-premises.
 - **Junk folder**: The email is in the Junk folder of a user.
 - **Deleted items folder**: The email in the Deleted items folder of a user.
