@@ -915,6 +915,8 @@
           href: compliance-manager-improvement-actions.md
         - name: How your compliance score is calculated
           href: compliance-score-calculation.md
+        - name: Compliance Configuration Analyzer tool
+          href: compliance-manager-mcca.md
         - name: Frequently asked questions (FAQ)
           href: compliance-manager-faq.md
         - name: Compliance Manager (classic)
