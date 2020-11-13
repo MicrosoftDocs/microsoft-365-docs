@@ -42,7 +42,7 @@ Microsoft Endpoint DLP enables you to audit and manage the following types of ac
 |copied to cloud via Chromium Edge    |   auditable and restrictable        |
 |copied to clipboard   |   auditable and restrictable      |
 |accessed by unallowed apps and browsers    |  auditable and restrictable       |
-|Modify a file    |  auditable and restrictable       |
+|modify a file    |  auditable and restrictable       |
 
 ## What's different in Endpoint DLP
 
