@@ -51,4 +51,4 @@ To get started using Advanced eDiscovery, see:
 
 - [Set up Advanced eDiscovery](get-started-with-advanced-ediscovery.md)
 
-- [Create and manage an Advanced eDiscovery case](create-manage-advanced-ediscoveryv2-cases.md)
+- [Create and manage an Advanced eDiscovery case](create-and-manage-advanced-ediscoveryv2-case.md)

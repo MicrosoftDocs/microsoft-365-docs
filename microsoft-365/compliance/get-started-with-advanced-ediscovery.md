@@ -22,9 +22,9 @@ description: "This article describes how to set up Advanced eDiscovery so you ca
 
 # Set up Advanced eDiscovery
 
-Advanced eDiscovery in Microsoft 365 provides an [end-to-end workflow](overview-ediscovery-20.md#advanced-ediscovery-architecture) to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Nothing is needed to deploy Advanced eDiscovery, but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start to create and use Advanced eDiscovery cases to manage your investigations.
+Advanced eDiscovery in Microsoft 365 provides an [end-to-end workflow](overview-ediscovery-20.md#advanced-ediscovery-architecture-and-workflow) to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Nothing is needed to deploy Advanced eDiscovery, but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start to create and use Advanced eDiscovery cases to manage your investigations.
 
-This article discusses the steps necessary to set up Advanced eDiscovery. This includes ensuring the proper licensing required to access Advanced eDiscovery and add custodians to cases, as well as assigning permissions to your legal and investigation team so they can access and manage cases. 
+This article discusses the steps necessary to set up Advanced eDiscovery. This includes ensuring the proper licensing required to access Advanced eDiscovery and add custodians to cases, as well as assigning permissions to your legal and investigation team so they can access and manage cases.
 
 ## Step 1: Verify and assign appropriate licenses
 
@@ -100,4 +100,4 @@ For more information about setting up and using the attorney-client privilege de
 
 ## Next steps
 
-After you set up Advanced eDiscovery, you're ready to [create and manage an Advanced eDiscovery case](create-manage-advanced-ediscoveryv2-cases.md).
+After you set up Advanced eDiscovery, you're ready to [create and manage a case](create-and-manage-advanced-ediscoveryv2-case.md).
