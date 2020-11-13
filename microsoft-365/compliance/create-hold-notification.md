@@ -22,7 +22,7 @@ ms.custom: seo-marvel-mar2020
 
 # Create a legal hold notice
 
-Using Advanced eDiscovery custodian communications, organizations can manage their workflow around communicating with custodians. Through the Communications tool, legal teams can systematically send, collect, and track legal hold notifications. The flexible creation process also allows teams to customize the hold notification workflow and the content in the notices sent to custodians. 
+Using Advanced eDiscovery custodian communications, organizations can manage their workflow around communicating with custodians. Through the Communications tool, legal teams can systematically send, collect, and track legal hold notifications. The flexible creation process also allows teams to customize the hold notification workflow and the content in the notices sent to custodians.
 
 ![Communications Page](../media/CommunicationPage.PNG)
 
@@ -42,7 +42,7 @@ The first step is to specify the appropriate details for legal hold notices or o
 
     - **Name**: This is the name for the communication.
 
-    - **Issuing officer**: The dropdown list displays a list of case members. For more information on how to add new members to a case, see [Create an Advanced eDiscovery case](get-started-with-advanced-ediscovery.md#step-4-create-an-advanced-ediscovery-case). Each notice sent to custodians will be sent on behalf of the specified issuing officer.
+    - **Issuing officer**: The dropdown list displays a list of case members. For more information on how to add new members to a case, see [Create an Advanced eDiscovery case](create-and-manage-advanced-ediscoveryv2-case.md#create-an-advanced-ediscovery-case). Each notice sent to custodians will be sent on behalf of the specified issuing officer.
 
 > [!NOTE]
 > The issuing officer must have an **active mailbox** to show up in the Issuing Officer dropdown
