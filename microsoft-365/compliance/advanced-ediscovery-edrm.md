@@ -23,7 +23,7 @@ ms.custom: seo-marvel-apr2020
 
 # Advanced eDiscovery alignment with the Electronic Discovery Reference Model
 
-The built-in workflow of Advanced eDiscovery aligns with the eDiscovery process outlined by the Electronic Discovery Reference Model (EDRM).
+The built-in workflow of Advanced eDiscovery in Microsoft 365 aligns with the eDiscovery process outlined by the Electronic Discovery Reference Model (EDRM).
 
 ![The Electronic Discovery Reference Model (EDRM)](../media/EDRMv1.png)
 
@@ -44,3 +44,11 @@ At a high level, here's how Advanced eDiscovery supports the EDRM workflow:
 - **Analysis.** Advanced eDiscovery provides integrated analytics tool that helps you further cull data from the review set that you determine isn't relevant to the investigation. In addition to reducing the volume of relevant data, Advance eDiscovery also helps you save legal review costs by letting you organize content to make the review process easier and more efficient.
 
 - **Production** and **Presentation.** When you're ready, you can export documents from a review set for legal review. You can export documents in their native format or in an EDRM-specified format so they can be imported into third-party review applications.
+
+## More information
+
+To get started using Advanced eDiscovery, see:
+
+- [Set up Advanced eDiscovery](get-started-with-advanced-ediscovery.md)
+
+- [Create and manage an Advanced eDiscovery case](create-manage-advanced-ediscoveryv2-cases.md)

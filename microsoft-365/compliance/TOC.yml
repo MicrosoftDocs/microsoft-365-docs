@@ -560,8 +560,10 @@
       items:
         - name: Overview of Advanced eDiscovery
           href: overview-ediscovery-20.md
-        - name: Get started with Advanced eDiscovery
+        - name: Set up Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
+        - name: Create and manage a case
+          href: create-and-manage-advanced-ediscoveryv2-case.md
         - name: Work with custodians and non-custodial data sources
           href: managing-custodians.md
           items: 
@@ -657,6 +659,8 @@
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: Advanced eDiscovery reference
           items: 
+            - name: Advanced eDiscovery alignment with EDRM
+              href: advanced-ediscovery-edrm.md
             - name: Advanced eDiscovery limits
               href: limits-ediscovery20.md
             - name: Supported file types
