@@ -241,8 +241,6 @@
               href: dlp-configure-endpoints-script.md
             - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
               href: dlp-configure-endpoints-vdi.md
-        - name: Get started with DLP policy recommendations
-          href: get-started-with-dlp-policy-recommendations.md
         - name: Get started with the default DLP policy
           href: get-started-with-the-default-dlp-policy.md
         - name: Create a DLP policy from a template
