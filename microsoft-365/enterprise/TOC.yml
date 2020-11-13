@@ -419,8 +419,6 @@
           href: manage-microsoft-365-groups.md
         - name: Governance
           href: manage-microsoft-365-identity-governance.md
-        - name: Recover deleted items in a user mailbox
-          href: recover-deleted-items-in-a-mailbox.md
         - name: Directory synchronization
           items: 
             - name: View status

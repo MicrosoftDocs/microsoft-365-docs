@@ -51,9 +51,9 @@ To perform certain actions, such as viewing message headers or downloading email
 
 |Activity|Role group|Preview role needed?|
 |---|---|---|
-|Use Threat Explorer (and real-time detections) to analyze threats ​|Global Administrator <br> Security Administrator <br> Security Reader|No|
-|Use Threat Explorer (and real-time detections) to view headers for email messages ​as well as preview and download quarantined email messages|Global Administrator <br> Security Administrator <br>Security Reader|No|
-|Use Threat Explorer to view headers and download email messages delivered to mailboxes|Global Administrator <br>Security Administrator <br> Security Reader <br> Preview|Yes|
+|Use Threat Explorer (and real-time detections) to analyze threats ​|Global Administrator <p> Security Administrator <p> Security Reader|No|
+|Use Threat Explorer (and real-time detections) to view headers for email messages ​as well as preview and download quarantined email messages|Global Administrator <p> Security Administrator <p> Security Reader|No|
+|Use Threat Explorer to view headers and download email messages delivered to mailboxes|Global Administrator <p> Security Administrator <p> Security Reader <p> Preview|Yes|
 |
 
 > [!NOTE]
