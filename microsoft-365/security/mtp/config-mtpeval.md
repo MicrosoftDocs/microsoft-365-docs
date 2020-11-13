@@ -33,9 +33,9 @@ ms.topic: article
 
 Creating a Microsoft 365 Defender trial lab or pilot environment and deploying it is a three-phase process:
 
-|[![Phase 1: Prepare](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Phase 1: Prepare](prepare-mtpeval.md) |[![Phase 2: Set up](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[Phase 2: Set up](setup-mtpeval.md) |![Phase 3: Onboard](../../media/phase-diagrams/onboard.png)<br/>Phase 3: Onboard |
-|--|--|--|
-|| |*You are here!* |
+|[![Phase 1: Prepare](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Phase 1: Prepare](prepare-mtpeval.md) |[![Phase 2: Set up](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[Phase 2: Set up](setup-mtpeval.md) |![Phase 3: Onboard](../../media/phase-diagrams/onboard.png)<br/>Phase 3: Onboard | [![Back to pilot](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Back to pilot playbook](mtp-pilot.md) |
+|--|--|--|--|
+|| |*You are here!* | |
 
 You're currently in the configuration phase.
 
