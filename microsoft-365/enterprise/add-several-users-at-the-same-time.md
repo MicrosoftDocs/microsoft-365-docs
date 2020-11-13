@@ -44,7 +44,7 @@ Each person on your team needs a user account before they can sign in and access
 
 4. On the **Import multiple users** panel, you can optionally download a sample CSV file with or without sample data filled in. 
     
-    Your spreadsheet needs to include the **exact same column headings** as the sample one (User Name, First Name, etc...). If you use the template, open it in a text editing tool, like Notepad, and consider leaving all the data in row 1 alone, and only entering data in rows 2 and below. 
+    Your spreadsheet needs to include the **exact same column headings** as the sample one (User Name, First Name, and so on). If you use the template, open it in a text editing tool, like Notepad, and consider leaving all the data in row 1 alone, and only entering data in rows 2 and below. 
     
     Your spreadsheet also needs to include values for the user name (like bob@contoso.com) and a display name (like Bob Kelly) for each user. 
     
