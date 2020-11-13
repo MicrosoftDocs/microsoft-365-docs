@@ -224,13 +224,11 @@ In _supported_ protection features that quarantine messages or files (automatica
 |Feature|Quarantine tags supported?|Default quarantine tags used|
 |---|:---:|---|
 |[Anti-spam policies](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**High confidence spam** (_HighConfidenceSpamAction_)</li><li>**Phishing email** (_PhishSpamAction_)</li><li>**High confidence phishing email** (_HighConfidencePhishAction_)</li><li>**Bulk email** (_BulkSpamAction_)</li></ul>|Yes|<ul><li>DefaultSpamTag (Full access)</li><li>DefaultHighConfSpamTag (Full access)</li><li>DefaultPhishTag (Full access)</li><li>DefaultHighConfPhishTag (No access)</li><li>DefaultBulkTag (Full access)</li></ul>
-|Anti-phishing policies: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**If email is sent by an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If email is sent by an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**Mailbox intelligence** \> **If email is sent by an impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|No|n/a|
+|Anti-phishing policies: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**If email is sent by an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If email is sent by an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**Mailbox intelligence** \> **If email is sent by an impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul> <p> <sup>\*</sup> Impersonation protection settings are available only in anti-phishing policies in Microsoft Defender for Office 365.|No|n/a|
 |[Anti-malware policies](configure-anti-malware-policies.md): All detected messages are always quarantined.|No|n/a|
 |[ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)|No|n/a|
 |[Mail flow rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) with the action: **Deliver the message to the hosted quarantine** (_Quarantine_).|No|n/a|
 |
-
-<sup>\*</sup> Impersonation protection settings are available only in anti-phishing policies in Microsoft Defender for Office 365.
 
 If you're happy with the end-user permissions that are provided by the default quarantine tags, you don't need to do anything. If you want to customize the end-user capabilities (available buttons) in end-user spam notifications or in quarantined message details, you can assign a custom quarantine tag.
 
@@ -333,6 +331,25 @@ The global settings for quarantine tags allow you to customize the end-user spam
 
      ![A custom disclaimer at the bottom of an end-user spam notification](../../media/quarantine-tags-esn-customization-disclaimer.png)
 
+### Configure global quarantine notification settings in PowerShell
+
+If you'd rather use PowerShell to configure the global quarantine notification settings, connect to Exchange Online PowerShell or Exchange Online Protection PowerShell and use the following syntax:
+
+```powershell
+Get-QuarantineTag -QuarantineTagType GlobalQuarantineTag | Set-QuarantineTag -MultiLanguageSetting ('Language1','Language2',...'LanguageN') -MultiLanguageCustomDisclaimer ('TextForLanguage1','TextForLanguage2',...'TextForLanguageN') -MultiLanguageSenderName ('SenderForLanguage1','SenderForLanguage2',...'SenderForLanguageN') [-OrganizationBrandingEnabled <$true | $false>]
+```
+
+This example modifies the global settings for end-user spam notifications:
+
+- The specified custom disclaimer text and email sender's display name are used for English, Chinese, and French.
+- The previously configured custom logo replaces the default Microsoft logo.
+
+```powershell
+Get-QuarantineTag -QuarantineTagType GlobalQuarantineTag | Set-QuarantineTag -MultiLanguageSetting ('English','ChineseSimplified','French') -MultiLanguageCustomDisclaimer ('For more information, contact the Help Desk.','有关更多信息，请联系服务台','Pour plus d'informations, contactez le service d'assistance.') -MultiLanguageSenderName ('Contoso administrator','Contoso管理员','Administrateur Contoso') -OrganizationBrandingEnabled $true
+```
+
+For detailed syntax and parameter information, see [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy).
+
 ## View quarantine tags in the Security & Compliance Center
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** and then select **Quarantine tags**.
@@ -357,7 +374,7 @@ If you'd rather use PowerShell to view quarantine tags, do any of the following 
   Get-QuarantineTag -Identity "<TagName>"
   ```
 
-- To view the global settings, run the following command:
+- To view the global settings for end-user spam notifications, run the following command:
 
   ```powershell
   Get-QuarantineTag -QuarantineTagType GlobalQuarantineTag
