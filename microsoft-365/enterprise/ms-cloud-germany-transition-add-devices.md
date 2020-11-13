@@ -193,7 +193,8 @@ HKLM\SOFTWARE\Policies\Microsoft\Windows\WorkplaceJoin, "BlockAADWorkplaceJoin"=
 ``` 
 
 This should block the users from seeing the anymore prompts to Workplace join the device.
-### Android
+
+## Android
 
 For Android, users will need to un-register and re-register their devices. This can be done via the Authenticator app or the Company Portal app. 
 
@@ -225,7 +226,7 @@ How to un-register and re-register the device on Android via Company Portal:
 
 To find out more information about any actions needed during the migration phase of this workload or impact to administration or usage, review the [Azure AD section](ms-cloud-germany-transition-add-general.md#azure-active-directory).
 
-### IOS
+## IOS
 
 On iOS devices, user will need to manually remove any cached accounts from the Authenticator, un-register device as well as sign out from any native apps on their device.
 
