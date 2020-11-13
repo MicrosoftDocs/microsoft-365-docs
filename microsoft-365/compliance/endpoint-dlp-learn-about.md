@@ -142,13 +142,13 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 
 Now that you've learned about Endpoint DLP, your next steps are:
 
-1) [Getting started with Microsoft Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)
-2) [Using Microsoft Endpoint data loss prevention (preview)](endpoint-dlp-using.md)
+1) [Getting started with Microsoft Endpoint data loss prevention ](endpoint-dlp-getting-started.md)
+2) [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ## See also
 
-- [Getting started with Microsoft Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)
-- [Using Microsoft Endpoint data loss prevention (preview)](endpoint-dlp-using.md)
+- [Getting started with Microsoft Endpoint data loss prevention](endpoint-dlp-getting-started.md)
+- [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
