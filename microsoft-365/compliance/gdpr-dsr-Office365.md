@@ -541,22 +541,14 @@ A user's search queries created in the OneDrive for Business and SharePoint Onli
 
 You may have to delete items in Exchange Online mailboxes to satisfy a DSR delete request. There are two ways that an IT admin can delete items in mailbox, depending on whether to soft-delete or hard-delete the target items. Like documents on SharePoint Online or OneDrive for Business sites, items in a mailbox that is on hold can't be permanently deleted from Office 365. The hold must be removed before the item can be deleted. Again, you'll have to determine whether the hold on the mailbox or the DSR delete request takes precedence.
 
-#### Soft-delete mailbox items
-
-You can use the Content Search Action functionality to soft-delete items that are returned by a Content Search. As previously explained, soft-deleted items are moved to the Recoverable Items folder in the mailbox.
+You can use the Content Search Action functionality to soft-delete or hard-delete items that are returned by a Content Search. As previously explained, soft-deleted items are moved to the Recoverable Items folder in the mailbox while hard-deleted items are permantly deleted and cannot be recovered.
 
 Here's a quick overview of this process:
 
 1. Create and run a Content Search to find the items that you want to delete from the user mailbox. You may have to rerun the search to narrow that search results so that only the items that you want to delete are returned in the search results.
-2. Use the **New-ComplianceSearchAction** **-Purge** command in Office 365 PowerShell to soft-delete that are  returned by the Content Search that was created in the previous step.
+2. Use the **New-ComplianceSearchAction** **-Purge** **PurgeType** **SoftDelete** or **New-ComplianceSearchAction** **-Purge** **PurgeType** **HardDelete** command in Office 365 PowerShell to delete items that are returned by the Content Search that was created in the previous step.
 
 For detailed instructions, see [Search for and delete email messages in your organization](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
-
-#### Hard-delete mailbox items
-
-If you have to hard-delete mailbox items in response to the DSR deletion request, you can use the **Search-Mailbox -DeleteContent** command in Exchange Online PowerShell. If you use this method, consider using Content Search to develop and refine a search query so that only the items that are to be deleted are returned in the search. Then you can use that query syntax when you run the **Search-Mailbox -DeleteContent** command.
-
-For detailed instructions, see [Search for and delete messages](https://technet.microsoft.com/library/ff459253(v=exchg.150).aspx).
 
 #### Hard-delete items in a mailbox on hold
 
