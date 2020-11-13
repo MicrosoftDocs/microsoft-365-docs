@@ -11,6 +11,7 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 f1.keywords: NOCSH
 ms.custom: 
 - seo-marvel-apr2020
