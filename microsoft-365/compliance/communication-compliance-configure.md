@@ -187,10 +187,11 @@ For more information about configuring Yammer in Native Mode, see:
     
     - Choose if you'd like to enable classifiers. Classifiers can detect inappropriate language and images sent or received in the body of email messages or other types of text. You can choose the following built-in classifiers: *Threat*, *Profanity*, *Targeted harassment*, *Adult images*, *Racy images*, and *Gory images*.
 
-    >[!CAUTION]
-    >We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Targeted harassment** built-in classifiers instead.
+      > [!CAUTION]
+      > We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Targeted harassment** built-in classifiers instead.
 
     - Define the percentage of communications to review.
+    
     - Review your policy selections and create the policy.
 
 5. Select **Create policy** when using the templates or **Submit** when using the custom policy wizard.
@@ -232,6 +233,7 @@ After you create a communication compliance policy, it's a good idea to test it 
 Follow these steps to test your communication compliance policy:
 
 1. Open an email client, Microsoft Teams, or Yammer while signed in as a supervised user defined in the policy you want to test.
+
 2. Send an email, Microsoft Teams chat, or Yammer message that meets the criteria you've defined in the communication compliance policy. This test can be a keyword, attachment size, domain, etc. Make sure you determine if your configured conditional settings in the policy are too restrictive or too lenient.
 
     > [!NOTE]
