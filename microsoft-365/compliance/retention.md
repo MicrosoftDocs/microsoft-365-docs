@@ -199,14 +199,7 @@ An email or document can have only a single retention label assigned to it at a 
     
 - If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the retention label for the oldest rule (by date created) is assigned.
     
-To understand how and why one retention label is applied rather than another, it's helpful to understand the difference between explicitly assign a label, and implicitly assigned a label:
-
-- Retention labels applied from a label policy are explicitly assigned
-- Retention labels applied automatically from an auto-apply policy are implicitly assigned
-
-An explicitly assigned retention label takes precedence over an implicitly assigned retention label. For more information, see the [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence) section on this page.
-
-For SharePoint, retention labels can also be implicitly assigned when you configure a default label for all content in a SharePoint library, folder, or document set. For this scenario, an auto-applied label takes precedence over a default label, but to fully understand all outcomes when you use a default label, see the information in the [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) section. 
+To understand all outcomes when you use a default label, see the information in the [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) section.
 
 #### Monitoring retention labels
 
