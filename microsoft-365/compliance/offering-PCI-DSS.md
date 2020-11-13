@@ -34,7 +34,7 @@ It is important to understand that PCI DSS compliance status for Azure, OneDrive
 
 ## Microsoft in-scope cloud services
 
-- [Azure and Azure Government](https://aka.ms/AzureCompliance)
+- [Azure and Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
 - Microsoft Cloud App Security
 - Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Microsoft Graph
