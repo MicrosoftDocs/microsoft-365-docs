@@ -42,9 +42,8 @@ You can use the [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com
 1.	Open a PowerShell prompt with administrative rights.
 2.	Run `Install-Script -Name Get-WindowsAutoPilotInfo`
 3.	Run `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+4.  Run `powershell -ExecutionPolicy restricted` to prevent subsequent unrestricted scripts from running.
 
-> [!NOTE]
-> Once the script has been successfully executed, you can run `powershell -ExecutionPolicy restricted` to restrict the running of scripts on the computer.
 
 #### Flash drive method
 
