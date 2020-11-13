@@ -112,7 +112,7 @@ If you can't use mail flow rules as previously described, the next best option i
 - Regularly review the entries in the IP Allow List and remove the entries that you no longer need.
 
 > [!CAUTION]
-> Without additional verification like mail flow rules, email from sources in the IP Allow List skips spam filtering and sender authentication (SPF, DKIM, DMARC) checks. This creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered; however, the IP Allow List doesn't prevent malware or high confidence phishing messages from being filtered (typically, quarantined).
+> Without additional verification like mail flow rules, email from sources in the IP Allow List skips spam filtering and sender authentication (SPF, DKIM, DMARC) checks. This creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered; however, the IP Allow List doesn't prevent malware or high confidence phishing messages from being filtered.
 
 ## Use allowed sender lists or allowed domain lists
 
