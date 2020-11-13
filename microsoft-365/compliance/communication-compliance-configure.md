@@ -225,7 +225,7 @@ Follow these steps to test your communication compliance policy:
 2. Send an email, Microsoft Teams chat, or Yammer message that meets the criteria you've defined in the communication compliance policy. This test can be a keyword, attachment size, domain, etc. Make sure you determine if your configured conditional settings in the policy are too restrictive or too lenient.
 
     > [!NOTE]
-    > Communications in all source channels can take up to 24 hours to fully process in a policy.
+    > Email messages can take up to 24 hours to fully process in a policy. Communications in Microsoft Teams, Yammer, and third-party platforms can take up to 48 hours to fully process in a policy.
 
 3. Sign in to Microsoft 365 as a reviewer designated in the communication compliance policy. Navigate to **Communication compliance** > **Alerts** to view the alerts for your policies.
 
@@ -233,6 +233,6 @@ Follow these steps to test your communication compliance policy:
 
 ## Next steps
 
-After you've completed these steps to create your first communication compliance policy, you'll start to receive alerts from activity indicators after about 24 hours. Configure additional policies as needed using the guidance in Step 5 of this article.
+After you've completed these steps to create your first communication compliance policy, you'll start to receive alerts from activity indicators after 24-48 hours. Configure additional policies as needed using the guidance in Step 5 of this article.
 
 To learn more about investigating communication compliance alerts, see [Investigate and remediate communication compliance alerts](communication-compliance-investigate-remediate.md).
