@@ -189,6 +189,7 @@ Exchange public folders, Skype, Teams and Yammer messages do not support retenti
 
 #### Only one retention label at a time
 
+<<<<<<< HEAD
 An email or document can have only a single retention label applied to it at a time. A retention label can be applied [manually](create-apply-retention-labels.md#manually-apply-retention-labels) by an end user or admin, or automatically by using any of the following methods:
 
 - [Auto-apply label policy](apply-retention-labels-automatically.md)

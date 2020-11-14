@@ -66,16 +66,16 @@ To require that all users sign in with a second form of ID:
 
 ## Set up baseline policies
 
-1. Go to [Azure portal](https://portal.azure.com), and then navigate to **Azure Active Directory** \> **Conditional Access**.
-    
-    The baseline policies are listed on the page, and you can see that **Require MFA for admins** and **End user protection** are already enabled after you completed the steps in [require MFA](#require-mfa).
+1. Go to the [Azure portal](https://portal.azure.com), and then navigate to **Azure Active Directory** \> **Conditional Access** to create a **new policy**.
 
-    ![Page that lists baseline policies for conditional access.](../media/casettings.png)
-2. See the following specific instructions for each policy:
-
-    - [Require MFA for admins](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-    - [Require MFA for users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
-    - [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+See the following specific instructions for each policy: <br>
+    - [Require MFA for admins](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
+    - [Require MFA for users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
+    - [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
     - [Require MFA for service management](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+    
+> [!NOTE]
+> Preview policies no longer exist and users will need to create their own policies.
+
 
 You can set up extra policies, such as requiring approved client apps. For more information, see the [Conditional Access documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/).
