@@ -1,8 +1,8 @@
 ---
-title: "Upgrade your Microsoft 365 for business users to the latest Office client"
+title: Upgrade your Office 2010 to Microsoft 365 - Microsoft 365 admin
 f1.keywords:
 - NOCSH
-ms.author: kwekuako
+ms.author: kwekua
 author: kwekuako
 manager: scotv
 audience: Admin
@@ -16,17 +16,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.custom:
+- fwlink 824861; CampaignID
+- O365_Comm_SR_UpgradeOffice
+- seo-marvel-may2020
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
-description: "Learn how to upgrade your users to the latest Office client."
+description: Learn about how to upgrade Microsoft Office to the latest Office client for users in your organization.
 ---
 
 # Upgrade your Microsoft 365 for business users to the latest Office client
 
 ## Office 2010 reaches end-of-support
 
-Office 2010 will reach its end of support on October 13, 2020. When Office 2010 reaches its end of support, Microsoft will no longer provide the following:
+Office 2010 reached its end of support on October 13, 2020. Microsoft will no longer provide the following:
 
 - Technical support for issues
 
@@ -34,7 +37,7 @@ Office 2010 will reach its end of support on October 13, 2020. When Office 2010 
 
 - Security fixes for vulnerabilities that are discovered
 
-See [Office 2010 end of support roadmap](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap) for more information.
+See [Office 2010 end of support roadmap](https://docs.microsoft.com/deployoffice/endofsupport/office-2010-end-support-roadmap) for more information.
 
  **Is this the right topic for you?**
   
@@ -42,7 +45,7 @@ See [Office 2010 end of support roadmap](https://docs.microsoft.com/deployoffice
 
  If you're not an admin and you have a [Microsoft 365 Family](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) product, see [How do I upgrade Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) for information about upgrading your older, home use version of Office.
 
-## Get ready to upgrade
+## Get ready to upgrade to Microsoft 365
 
 As an admin, you control what version of Office people in your organization can install. We highly recommend that you help users in your organization running older versions of Office such as Office 2010, Office 2013, or Office 2016 upgrade to the latest version to take advantage of its security and productivity improvements.
 
@@ -52,7 +55,7 @@ The steps below will guide you through the process of upgrading your users to th
   
 ## Step 1 - Check system requirements
 
-[Check the system requirements](https://products.office.com/office-system-requirements) for Office to make sure your devices are compatible with the latest version of Office. For example, newer versions of Office can't be installed on computers running Windows XP or Windows Vista.
+[Check the system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for Office to make sure your devices are compatible with the latest version of Office. For example, newer versions of Office can't be installed on computers running Windows XP or Windows Vista.
   
 > [!TIP]
 > If you have users in your organization running older versions of Windows on their PCs or laptops, we recommend upgrading to Windows 10. Windows 7 has reached end of support. Read [Support for Windows 7 ends in January 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1) for more info.

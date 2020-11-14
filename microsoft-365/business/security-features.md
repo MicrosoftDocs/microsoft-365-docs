@@ -32,8 +32,6 @@ Microsoft 365 Business Premium offers simplified security features to help safeg
     
 ## Microsoft 365 admin center security features
 
-[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
-
 You can manage many of the Microsoft 365 Business Premium security features in the admin center, which gives you a simplified way to turn these features on or off. In the admin center, you can do the following:
   
 - [Set application management settings for Android or iOS devices](app-protection-settings-for-android-and-ios.md) . 
@@ -60,9 +58,9 @@ You can manage many of the Microsoft 365 Business Premium security features in t
 
 Advanced features in Microsoft 365 Business Premium are available to help you protect your business against cyber-threats and safeguard sensitive information.
   
-- **[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
+- **[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
-    Advanced Threat Protection (ATP) helps guard your business against sophisticated phishing and ransomware attacks designed to compromise employee or customer information. Features include:
+    Microsoft Defender for Office 365 helps guard your business against sophisticated phishing and ransomware attacks designed to compromise employee or customer information. Features include:
     
   - Sophisticated attachment scanning and AI-powered analysis to detect and discard dangerous messages.
     

@@ -2,7 +2,7 @@
 title: "Mail flow map"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -17,7 +17,10 @@ description: "Admins can learn how to use the Mail flow map in the Mail flow das
 
 # Mail flow map in the Security & Compliance Center
 
-The **Mail flow map** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center gives insight as to how mail flows through your organization. You can use this information to learn patterns, identify anomalies, and fix issues as they occur.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+The **Mail flow map** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) gives insight as to how mail flows through your organization. You can use this information to learn patterns, identify anomalies, and fix issues as they occur.
 
 ![Mail flow map widget in the Mail flow dashboard in the Security & Compliance Center](../../media/mfi-mail-flow-map-widget.png)
 

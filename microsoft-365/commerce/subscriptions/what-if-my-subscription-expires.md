@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -31,7 +31,7 @@ If your subscription ends—either because it expires, or because you decide to 
 
 Read through this important information before you contact [Microsoft 365 support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
   
-## What happens to data when a subscription expires? 
+## What happens to data when a subscription expires?
 
 - If your subscription expires, it goes through the following stages: Expired / Disabled / Deprovisioned. The Expired stage starts immediately after the subscription has reached its end date.
 - If you turn off recurring billing on your annual subscription, it goes through the same stages as an expired subscription. The first stage starts are the anniversary of the annual subscription, not starting on the date that you turned off the subscription's recurring billing setting.
@@ -42,7 +42,7 @@ The following table explains what you can expect when a paid Microsoft 365 for b
 | **Active**                                                             | **Expired <br/>(30 days\*)**                                                | **Disabled <br/>(90 days\*)**                                               | **Deprovisioned**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Data accessible to all*                                               | *Data accessible to all*                                                     | *Data accessible to admins only*                                             | **Data deleted<br/>Azure Active Directory is removed, if not in use by other services** |
-| Users have normal access to Microsoft 365, data, and Office applications  | Users have normal access to Microsoft 365, files, and applications              | Users can't access Microsoft 365, files, or applications                        | Users can't access Microsoft 365, files, or applications                                     |
+| Users have normal access to Microsoft 365, files, and applications   | Users have normal access to Microsoft 365, files, and applications              | Users can't access Microsoft 365, files, or applications                        | Users can't access Microsoft 365, files, or applications                                     |
 | Admins have normal access to Microsoft 365, data, and Office applications | Admins can access the admin center                                           | Admins can access the admin center, but can't assign licenses to users       | Admins can access the admin center to purchase and manage other subscriptions             |
 |                                                                        | Global or billing admins can reactivate the subscription in the admin center | Global or billing admins can reactivate the subscription in the admin center |                                                                                           |
 
@@ -198,21 +198,28 @@ At this point, you can't reactivate the subscription. However, as a global or bi
 > [!NOTE]
 > Adding a new subscription of the same type that has been deprovisioned does not restore the data that was associated with the deprovisioned subscription.
 
+
+> [!NOTE]
+> If a CSP license is suspended, there is no 30 day grace period, and services are disabled immediately. Data will be deleted after 90 days if the tenant is not reactivated by adding a new license.
+
 ### What happens when my trial ends?
 
 When your trial ends, you can't continue using Microsoft 365 for free. You have a few options:
 
 ::: moniker range="o365-worldwide"
+
 - **Buy Microsoft 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Microsoft 365. To learn how to convert your trial into a paid subscription, see [Buy your trial version of Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 - **Buy Microsoft 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Microsoft 365. To learn how to convert your trial into a paid subscription, see [Buy your trial version of Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
+
 - **Buy Office 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Office 365. To learn how to convert your trial into a paid subscription, see [Buy or try subscriptions for Office 365 operated by 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md).
 
 ::: moniker-end
@@ -224,10 +231,9 @@ When your trial ends, you can't continue using Microsoft 365 for free. You have 
 > [!NOTE]
 > The information on this page is subject to the [Microsoft Policy Disclaimer and Change Notice](https://go.microsoft.com/fwlink/p/?LinkId=613651). Return to this site periodically to review any changes.
 
-## Related articles 
+## Related content 
 
-[Cancel your subscription](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription)
+[Cancel your subscription](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (article)\
+[Renew Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (article)\
+[Reactivate your subscription](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (article)
 
-[Renew Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription)
-
-[Reactivate your subscription](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription)

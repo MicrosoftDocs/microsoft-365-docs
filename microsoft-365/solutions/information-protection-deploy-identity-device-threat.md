@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: 
 description: Prevent personal data breaches with identity, device, and threat protection services of Microsoft 365.
 ---
@@ -28,17 +29,17 @@ While the data privacy regulations vary in their specificity, the essence of wha
 
 - Personal data shall be processed in a manner that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organizational measures ('integrity and confidentiality').
 
-Because personal data breaches are often caused by administrative or end-user account compromise and malicious system access. For example, an admin account hack can result in exfiltration of customer credit card numbers or other personal information. All the generally advisable identity, device, and threat protection available with Microsoft 365 potentially should be implemented, which will be reflected in your Compliance Score.
+Because personal data breaches are often caused by administrative or end-user account compromise and malicious system access. For example, an admin account hack can result in exfiltration of customer credit card numbers or other personal information. All the generally advisable identity, device, and threat protection available with Microsoft 365 potentially should be implemented, which will be reflected in your compliance score, found in Compliance Manager.
 
-## Using the results of your assessment work and Compliance Score
+## Using the results of your assessment work and Compliance Manager
 
-Compliance Score includes identity, device, and threat protection using these categories:
+Compliance Manager includes identity, device, and threat protection using these categories:
 
 - Identity corresponds to the **Control Access** category
 - Device corresponds to the **Manage Devices** category
 - Threat protection corresponds to the **Protect Against Threats** category
  
-If these are selected across our sample set of four major data privacy regulations, Compliance Score specifies 90 improvement actions, most of which are scored a "27". Since such a large number are called out by Compliance Score for these categories, some of the more common ones are listed here, for reference.
+If these are selected across our sample set of four major data privacy regulations, Compliance Manager specifies 90 improvement actions, most of which are scored a "27". Since such a large number are called out by Compliance Manager for these categories, some of the more common ones are listed here, for reference.
 
 Use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) for identity and the **Control Access** category, with which you can:
 
@@ -64,19 +65,19 @@ Use [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microso
 - Require mobile devices to lock upon inactivity.
 - Require mobile devices to wipe on multiple sign-in failures.
 
-Use [Exchange Online Protection and Office 365 Advanced Threat Protection (ATP)](../security/office-365-security/office-365-atp.md) for the **Protect Against Threats** category, with which you can:
+Use [Exchange Online Protection and Microsoft Defender for Office 365](../security/office-365-security/office-365-atp.md) for the **Protect Against Threats** category, with which you can:
 
 - Enable sender authentication (SPF, DMARC and DKIM).
-- Set up Office 365 Advanced Threat Protection (ATP) anti-phishing policies.
-- Implement ATP Safe Attachments.
-- Implement ATP Safe Links.
+- Set up Microsoft Defender for Office 365 anti-phishing policies.
+- Implement Safe Attachments.
+- Implement Safe Links.
 - Implement malware detection and response policies.
 - Implement outbound and inbound spam policies.
 
 ### References:
 
-- [Common identity and device access policies](../enterprise/identity-access-policies.md)
+- [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
 - [Protect against threats in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [ATP Safe Attachments](../security/office-365-security/atp-safe-attachments.md)
-- [ATP Safe Links](../security/office-365-security/atp-safe-links.md)
-- [ATP Safe Documents](../security/office-365-security/safe-docs.md)
+- [Safe Attachments](../security/office-365-security/atp-safe-attachments.md)
+- [Safe Links](../security/office-365-security/atp-safe-links.md)
+- [Safe Documents](../security/office-365-security/safe-docs.md)

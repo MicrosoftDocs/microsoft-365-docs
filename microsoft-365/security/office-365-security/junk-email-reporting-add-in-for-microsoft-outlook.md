@@ -2,7 +2,7 @@
 title: "Install and use the Junk Email Reporting add-in for Microsoft Outlook"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date:
@@ -17,6 +17,9 @@ description: "Learn how to install and use the Microsoft Junk Email Reporting ad
 ---
 
 # Install and use the Junk Email Reporting add-in for Microsoft Outlook
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > If you aren't currently using the Junk E-mail Reporting add-in, we recommend the [Report Message add-in](enable-the-report-message-add-in.md) instead. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).

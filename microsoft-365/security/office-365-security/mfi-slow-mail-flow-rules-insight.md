@@ -2,7 +2,7 @@
 title: "Fix slow mail flow rules insight"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date:
@@ -18,13 +18,18 @@ description: "Admins can learn how to use the Fix slow mail flow rules insight i
 
 # Fix slow mail flow rules insight in the Security & Compliance Center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Inefficient mail flow rules (also known as transport rules) can lead to mail flow delays for your organization. This insight reports mail flow rules that have an impact on your organization's mail flow. Examples of these types of rules include:
 
 - Conditions that use **Is member of** for large groups.
 - Conditions that use complex regular expression (regex) pattern matching.
 - Conditions that use content checking in attachments.
 
-The **Fix slow mail flow rules** insight in the **Recommended for you** area of the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center notifies you when a mail flow rule is taking too long to complete. This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).
+The **Fix slow mail flow rules** insight in the **Recommended for you** area of the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) notifies you when a mail flow rule is taking too long to complete.
+
+This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).
 
 You can use this notification to help you to identify and fine-tune mail flow rules to help reduce mail flow delays.
 
@@ -39,8 +44,8 @@ When you click **View details** on the widget, a flyout appears with more inform
 
 ![Details flyout that appears after clicking View details on the Fix slow mail flow rules insight](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
-For more information about conditions and exceptions in mail flow rules in Exchange Online, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+For more information about conditions and exceptions in mail flow rules, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-## Related topics
+## See also
 
 For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

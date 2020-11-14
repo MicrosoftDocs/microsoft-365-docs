@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,6 +19,7 @@ ms.custom:
 - IT_Networking
 - TRN_M365B
 - OKR_SMB_Videos
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -27,22 +28,22 @@ search.appverid:
 - ODB150
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
-description: "Learn how to use OneDrive and a team site for file storage and sharing."
+description: Learn how to use OneDrive and a team site for Microsoft 365 storage and Microsoft 365 file sharing.
 ---
 
-# Set up file storage and sharing
+# Set up file storage and sharing in Microsoft 365
 
 One of the best ways to set up file storage and sharing for your business is to use OneDrive and a team site together. This is ideal if you have a small business with a few employees.
 
-Watch a short video about where to store files in Microsoft 365.<br><br>
+Watch a short video about storing files in the Microsoft 365 cloud.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## Where you can store documents in Microsoft 365
+## "Microsoft 365 document storage and management"
 
-- OneDrive is designed for individual use, with the occasional sharing of files. 
+- OneDrive is designed for individual use, with the occasional sharing of files.
 
 - A team site is designed for sharing and collaborating on files regularly. A team site is ideal for storing files that have shared ownership where several people own the files and might collaborate on them. Create a Microsoft Team to add a team site. [Learn more at Create a team in Teams](https://support.microsoft.com/office/174adf5f-846b-4780-b765-de1a0a737e2b).
 
@@ -67,7 +68,7 @@ Here are recommendations for what to store in each location when you use OneDriv
 
 Each person in your business who has an Microsoft 365 license assigned (and SharePoint Online selected) gets OneDrive cloud storage. They can store business-related files here for access from any device, and they are only available to that user. For example, they might store a draft proposal, their meeting notes, or the script for a demo they're going to deliver.
   
-Employees can also share OneDrive files and folders. If an employee is away or leaves the company, others can access shared files stored in OneDrive.
+Employees can also share OneDrive files and folders. If an employee is away or leaves the company, others can access shared files stored in OneDrive (OneDrive team folder sharing).
   
 Here's how each person on your team can set up OneDrive and share files.
 

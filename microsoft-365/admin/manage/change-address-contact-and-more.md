@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -65,7 +65,7 @@ To change other information on your company's profile page:
 
 ## Change your alternate email address
 
-As an admin, you can change your your alternate email address for resetting passwords.
+As an admin, you can change your alternate email address for resetting passwords.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 

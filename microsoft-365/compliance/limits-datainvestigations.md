@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: M365-security-compliance 
@@ -16,17 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: Find information about description, indexing, search, export, and download limits in Data Investigations (Preview).
+description: Find information about description, indexing, search, export, and download limits in Data Investigations (preview).
 ms.custom: seo-marvel-mar2020
 ---
 
-# Data Investigations (Preview) limits
+# Limits in Data Investigations (preview)
 
-This article describes the limits in Data Investigations (Preview).
+This article describes the limits in Data Investigations (preview).
 
 ## Investigation limits
 
-The following table lists the limits for investigations in Data Investigations (Preview). 
+The following table lists the limits for investigations in Data Investigations (preview). 
     
   |**Description of limit**|**Limit**|
   |:-----|:-----|

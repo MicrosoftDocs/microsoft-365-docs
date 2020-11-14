@@ -22,6 +22,9 @@ description: Learn how to recognize and respond to a compromised email account u
 ---
 # Responding to a Compromised Email Account
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 **Summary** Learn how to recognize and respond to a compromised email account in Microsoft 365.
 
 ## What is a Compromised Email Account in Microsoft 365?

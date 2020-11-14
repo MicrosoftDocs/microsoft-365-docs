@@ -18,6 +18,9 @@ description: "Find answers to the most common questions about messages that have
 
 # EOP queued, deferred, and bounced messages FAQ
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 This topic provides answers to frequently asked questions about messages that have been queued, deferred, or bounced during the Exchange Online Protection (EOP) filtering process.
 
 ## Why is mail queuing?

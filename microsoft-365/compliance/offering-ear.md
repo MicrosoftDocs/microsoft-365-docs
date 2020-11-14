@@ -3,7 +3,7 @@ title: US Export Administration Regulations (EAR)
 description: Microsoft cloud services help customers subject to the US Export Administration Regulations (EAR) meet their compliance requirements and manage export control risk.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH

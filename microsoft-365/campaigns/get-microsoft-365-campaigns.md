@@ -2,8 +2,8 @@
 title: "Get Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
-ms.author: supotter
-author: supotter
+ms.author: sirkkuw
+author: sirkkuw
 manager: scotv
 ms.audience: Admin
 ms.topic: article
@@ -41,7 +41,7 @@ This configuration of Microsoft 365 Business Premium includes simple controls th
 - **Protect user identity**: Make sure that users are who they say they are when they sign in to send email or to access files (multifactor authentication).
 - **Protect sensitive information**: Protect sensitive information to monitor information that gets shared outside your organization (data loss prevention).
 - **Protect mobile devices**: Protect data on mobile devices (mobile app protection policy).
-- **Guard against malicious content**: Prevent access to malicious content by scanning email attachments (advanced threat protection).
+- **Guard against malicious content**: Prevent access to malicious content by scanning email attachments (Defender for Office 365).
 - **Protect passwords**: Set passwords to never expire which is more secure and helps prevent work stoppages (password policy). 
 
 

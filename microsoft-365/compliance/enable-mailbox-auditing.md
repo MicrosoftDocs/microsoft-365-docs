@@ -30,7 +30,7 @@ Here are some benefits of mailbox auditing on by default:
 
 - You don't need to manage the mailbox actions that are audited. A predefined set of mailbox actions are audited by default for each logon type (Admin, Delegate, and Owner).
 
-- When Microsoft releases a new mailbox action (particularly actions that help protect your organization and help with forensic investigations), the action is automatically added to the list of mailbox actions that are audited by default. This means you don't need to monitor add new actions on mailboxes.
+- When Microsoft releases a new mailbox action, the action might be automatically added to the list of mailbox actions that are audited by default (subject to the user having the appropriate license). This means you don't need to monitor add new actions on mailboxes.
 
 - You have a consistent mailbox auditing policy across your organization (because you're auditing the same actions for all mailboxes).
 
@@ -40,7 +40,7 @@ Here are some benefits of mailbox auditing on by default:
 
 ## Verify mailbox auditing on by default is turned on
 
-To verify that mailbox auditing on by default is turned on for your organization, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+To verify that mailbox auditing on by default is turned on for your organization, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```PowerShell
 Get-OrganizationConfig | Format-List AuditDisabled

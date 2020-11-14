@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -33,6 +33,8 @@ Microsoft 365 uses Azure Active Directory (Azure AD), a cloud-based user identit
 
 Before you begin, watch this video for an overview of identity models and authentication for Microsoft 365.
 
+<p> </p>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
 Your first planning choice is the Microsoft 365 identity model.
@@ -53,7 +55,7 @@ Here are the two types of identity and their best fit and benefits.
 
 ## Cloud-only identity
 
-A cloud-only identity uses user accounts that exist only in Azure AD. Cloud identity is typically used by small organizations that do not have on-premises servers or do not use AD DS to manage local identities. 
+A cloud-only identity uses user accounts that exist only in Azure AD. Cloud-only identity is typically used by small organizations that do not have on-premises servers or do not use AD DS to manage local identities. 
 
 Here are the basic components of cloud-only identity.
  
@@ -62,7 +64,7 @@ Here are the basic components of cloud-only identity.
 Both on-premises and remote (online) users use their Azure AD user accounts and passwords to access Microsoft 365 cloud services. Azure AD authenticates user credentials based on its stored user accounts and passwords.
 
 ### Administration
-Because user accounts are only stored in Azure AD, you manage cloud identities with tools such as the [Microsoft 365 admin center](https://admin.microsoft.com) and [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md). 
+Because user accounts are only stored in Azure AD, you manage cloud identities with tools such as the [Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/add-users/) and [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md). 
 
 ## Hybrid identity
 
@@ -84,7 +86,7 @@ The Azure AD tenant has a copy of the AD DS accounts. In this configuration, bot
 
 ### Administration
 
-Because the original and authoritative user accounts are stored in the on-premises AD DS, you manage your identities with the same tools as AD DS, such as the Active Directory Users and Computers tool. 
+Because the original and authoritative user accounts are stored in the on-premises AD DS, you manage your identities with the same tools as you manage your AD DS. 
 
 You don't use the Microsoft 365 admin center or PowerShell for Microsoft 365 to manage synchronized user accounts in Azure AD.
 

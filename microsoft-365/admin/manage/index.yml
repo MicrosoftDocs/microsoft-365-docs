@@ -26,6 +26,8 @@ landingContent:
         links:
           - text: Monitor user activity by using reports
             url: ../activity-reports/activity-reports.md
+          - text: Monitor user productivity with Productivity score
+            url: ../productivity/productivity-score.md
           - text: Monitor usage analytics
             url: ../usage-analytics/usage-analytics.md
           - text: Enable usage analytics
@@ -62,6 +64,8 @@ landingContent:
             url: centralized-deployment-of-add-ins.md
           - text: Install and manage add-ins by using Centralized Deployment
             url: manage-deployment-of-add-ins.md
+          - text: Manage Office Scripts settings
+            url: manage-office-scripts-settings.md            
    # Card
   - title: Microsoft Teams
     linkLists:

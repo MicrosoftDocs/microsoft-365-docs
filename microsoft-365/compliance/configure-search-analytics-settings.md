@@ -19,7 +19,7 @@ description: Learn how to configure search and analytics settings, like near dup
 ms.custom: seo-marvel-mar2020
 ---
 
-# Configure search and analytics settings
+# Configure search and analytics settings in Data Investigations
 
 ## Near duplicates and email threading
 

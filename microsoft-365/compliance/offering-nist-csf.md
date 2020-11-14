@@ -3,7 +3,7 @@ title: National Institute of Standards and Technology (NIST) Cybersecurity Frame
 description: Microsoft Cloud Services meet the National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -24,7 +24,7 @@ The National Institute of Standards and Technology (NIST) promotes and maintains
 
 The main priorities of the FICIC were to establish a set of standards and practices to help organizations manage cybersecurity risk, while enabling business efficiency. The NIST Framework addresses cybersecurity risk without imposing additional regulatory requirements for both government and private sector organizations.
 
-The FICIC references globally recognized standards including NIST SP 800-53 found in Appendix A of the NIST’s [Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11). Each control within the FICIC framework is mapped to corresponding NIST 800-53 controls within the FedRAMP Moderate Baseline.
+The FICIC references globally recognized standards including NIST SP 800-53 found in Appendix A of the NIST's [Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11). Each control within the FICIC framework is mapped to corresponding NIST 800-53 controls within the FedRAMP Moderate Baseline.
 
 ## Microsoft and the NIST CSF
 
@@ -49,7 +49,7 @@ The NIST CSF certification of Office 365 is valid for two years.
 
 ## Quickly build NIST CSF solutions on Azure
 
-The NIST Cybersecurity Framework (CSF) standard can be challenging in the cloud. Fortunately, with Azure you’ll have a head start the Azure Security and Compliance NIST CSF Blueprint. This blueprint provides tools and guidance to get you started building NIST CSF-compliant solutions today.
+The NIST Cybersecurity Framework (CSF) standard can be challenging in the cloud. Fortunately, with Azure you'll have a head start the Azure Security and Compliance NIST CSF Blueprint. This blueprint provides tools and guidance to get you started building NIST CSF-compliant solutions today.
 
 - [Start using the Azure NIST CSF Blueprint](https://aka.ms/Azure-Blueprint-DoD-NIST)
 
@@ -71,11 +71,11 @@ Using the formal audit reports prepared by third parties for the FedRAMP accredi
 
 **What are Microsoft's responsibilities for maintaining compliance with this initiative?**
 
-Participation in the FICIC is voluntary. However, Microsoft ensures that Azure, Office 365, and Dynamics 365 meet the terms defined within the governing Online Services Terms and applicable service level agreements. These define Microsoft’s responsibility for implementing and maintaining controls adequate to secure the Azure platform and monitor the system.
+Participation in the FICIC is voluntary. However, Microsoft ensures that Azure, Office 365, and Dynamics 365 meet the terms defined within the governing Online Services Terms and applicable service level agreements. These define Microsoft's responsibility for implementing and maintaining controls adequate to secure the Azure platform and monitor the system.
 
 **Can I use Microsoft's compliance for my organization?**
 
-Yes. The independent third-party compliance reports to the FedRAMP standards attest to the effectiveness of the controls Microsoft has implemented to maintain the security and privacy of the Microsoft Cloud Services. Microsoft customers may use the audited controls described in these related reports as part of their own FedRAMP and NIST FICIC’s risk analysis and qualification efforts.
+Yes. The independent third-party compliance reports to the FedRAMP standards attest to the effectiveness of the controls Microsoft has implemented to maintain the security and privacy of the Microsoft Cloud Services. Microsoft customers may use the audited controls described in these related reports as part of their own FedRAMP and NIST FICIC's risk analysis and qualification efforts.
 
 **Which organizations are deemed by the United States Government to be critical infrastructure?**
 
@@ -92,9 +92,9 @@ The in-scope services of NIST CSF certification are Exchange Online Archiving, E
 
 Microsoft provides the most comprehensive offerings compared to other cloud service providers. To keep up with our broad compliance offerings across regions and industries, we include services in the scope of our assurance efforts based on the market demand, customer feedback, and product lifecycle. If a service is not included in the current scope of a specific compliance offering, your organization has the responsibility to assess the risks based on your compliance obligations and determine the way you process data in that service. We continuously collect feedback from customers and work with regulators and auditors to expand our compliance coverage to meet your security and compliance needs.
 
-## Use Microsoft Compliance Score to assess your risk
+## Use Microsoft Compliance Manager to assess your risk
 
-[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [NIST CSF template](https://go.microsoft.com/fwlink/?linkid=2117917) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
+[Microsoft Compliance Manager](compliance-manager.md) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. Compliance Manager offers a premium template for building an assessment for this regulation. Find the template in the **assessment templates** page in Compliance Manager. Learn how to [build assessments in Compliance Manager](compliance-manager-assessments.md).
 
 ## Resources
 

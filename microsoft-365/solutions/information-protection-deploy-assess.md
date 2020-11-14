@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: 
 description: Determine the data privacy regulations, the relevant scenarios, your readiness, and the sensitive information types that are in your Microsoft 365 environment.
 ---
@@ -73,7 +74,7 @@ For later reference in the articles of this overall solution, this table provide
 |||||
 
 >[!Important]
->This is not intended to be an exhaustive list. Refer to [Compliance Manager](../compliance/compliance-manager-overview.md) or your legal or compliance advisor for further information on the applicability of the cited sections to the technical control categories listed.
+>This is not intended to be an exhaustive list. Refer to [Compliance Manager](../compliance/compliance-manager.md) or your legal or compliance advisor for further information on the applicability of the cited sections to the technical control categories listed.
 >
 
 ## Knowing your data
@@ -163,7 +164,7 @@ Understanding your exposure to risk and data privacy regulation is an important 
 
 If you don't have personal data from consumers in your Microsoft 365 environment or it is confined to certain parts of the environment and the need for a technical control is predicated on there being consumer-type data exposure, then that technical control may only need to be employed in high risk parts of the environment, not everywhere.
 
-While an external organization or standard control set recommendation, such as from Compliance Score in Microsoft 365, may help inform your control strategy, your choice of implementation should be driven by data inventory awareness to quantify your real risk exposure.
+While an external organization or standard control set recommendation, such as from Compliance Manager in Microsoft 365, may help inform your control strategy, your choice of implementation should be driven by data inventory awareness to quantify your real risk exposure.
 
 Most organizations will have some exposure to one of the above scenarios. Taking a holistic approach to assessment is important.
 

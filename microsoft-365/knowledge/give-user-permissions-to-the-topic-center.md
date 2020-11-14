@@ -6,7 +6,7 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: 
+ms.service: o365-administration
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
@@ -18,7 +18,7 @@ description: "Learn how to give users permissions to do tasks in the Topic Cente
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex) 
 
-In order to work in the topic center, you need to have the required permissions. Your admin can assign these permissions to users during [knowledge management setup](set-up-knowledge-network.md), or new users can be added afterwards.
+In order to work in the topic center, you need to have the required permissions. Your admin can assign these permissions to users during [knowledge management setup](set-up-topic-experiences.md), or new users can be added afterwards.
 
 Topic center users can be given two sets of permissions:
 

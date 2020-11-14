@@ -3,7 +3,7 @@ title: Microsoft Support and Professional Services Data Subject Requests for the
 description: Learn how Microsoft Support and Professional Services handle data subject requests for the GDPR and CCPA. 
 keywords: Professional Services, sMicrosoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -28,15 +28,15 @@ Find out more about Microsoft Professional Services by going to the [Microsoft P
 
 ### Introduction to DSRs 
 
-The GDPR gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, and deleting it. A formal request by a data subject to a controller to take an action on their personal data is called a *Data Subject Request* or DSR. Additionally, it obligates companies working on behalf of a controller (known as the *data processor* or just *processor*) to reasonably assist the controller in fulfilling DSRs.
+The GDPR gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, and deleting it. A formal request by a data subject to a controller to take an action on their personal data is called a *Data Subject Request* or DSR. Additionally, it obligates companies working on behalf of a controller (known as the *data processor* or just *processor*) to reasonably assist the controller in fulfilling DSRs.
 
-Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR's Data Subject Rights, such as the right to delete, access and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and "opt-out/ opt-in" requirements for certain data transfers classified as "sales". Sales are broadly defined to include the sharing of data for a valuable consideration. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
+Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR's Data Subject Rights, such as the right to delete, access, and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and "opt-out/ opt-in" requirements for certain data transfers classified as "sales". Sales are broadly defined to include the sharing of data for a valuable consideration. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
 
 This guide discusses how to find, access, and act on personal data that resides in Microsoft IT systems that may have been collected to provide Support and other Professional Services offerings.
 
 In developing a response for DSRs, it is important for Microsoft's customers to understand that Support and Consulting Data is separate from Customer Data in the Online Services or other data that they or their data subjects may have provided to Microsoft. Tools and processes provided for Online Services, the Microsoft Privacy Dashboard, or other Microsoft systems for responding to DSRs cannot be used to respond to DSRs for personal data held by Microsoft Support or other Professional Services.
 
-All requests must be made through a support representative, as described below. Currently there is no self-serve tool for customers to gain access to personal data within the Professional Services organizations.
+All requests must be made through a support representative, as described later in this article. Currently there is no self-serve tool for customers to gain access to personal data within the Professional Services organizations.
 
 #### Overview of the processes outlined in this guide
 
@@ -45,7 +45,7 @@ All requests must be made through a support representative, as described below. 
 - **Rectify:** Make changes or implement other requested actions on the personal data, where applicable.
 - **Restrict:** Restrict the processing of personal data, either by removing licenses for various Azure services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
 - **Delete:** Permanently remove personal data that resided in the Microsoft cloud.
-- **Export/Receive (Portability):** Provide an electronic copy (in a machine-readable format) of personal data or personal information to the data subject. Personal information under the CCPA is any information relating to an identified or identifiable person. There is no distinction between a person's private, public, or work roles. The defined term "personal information" roughly lines up with "personal data" under GDPR. However, the CCPA also includes family and household data. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
+- **Export/Receive (Portability):** Provide an electronic copy (in a machine-readable format) of personal data or personal information to the data subject. Personal information under the CCPA is any information relating to an identified or identifiable person. There is no distinction between a person's private, public, or work roles. The defined term "personal information" roughly aligns with "personal data" under GDPR. However, the CCPA also includes family and household data. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
 
 ### Terminology
 
@@ -53,13 +53,13 @@ Below are the relevant definitions of terms from the GDPR for this guide:
 
 - **Controller:** The natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by Union or Member State law, the controller, or the specific criteria for its nomination may be provided for by Union or Member State law.
 - **Personal data and data subject:** Any information relating to an identified or identifiable natural person ('data subject'); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that natural person.
-- **Processor:** A natural or legal person, public authority, agency, or other body which processes personal data on behalf of the controller.
+- **Processor:** A natural or legal person, public authority, agency, or other body that processes personal data on behalf of the controller.
 
 #### Additional terms and definitions that may be helpful in understanding this guide
 
 - **Support and Consulting Data:** All data, including all text, sound, video, image files, or software, that are provided to Microsoft by, or on behalf of, Customer (or that Customer authorizes Microsoft to obtain from an Online Service) through an engagement with Microsoft to obtain Support or Professional Services. To clarify, this does not include data collected where Microsoft is the data controller including Customer Contact Data.
 - **Customer Contact:** Personal data that may be part of your business relationship with Microsoft, such as personal data contained within your customer contact information. This may include your name, e-mail, or phone number of the Premier Contract Service Manager (CSM), the Global or IT Administrator for an Online Service, or similar roles.
-- **Pseudonymized Data:** When you use Microsoft support for Microsoft's enterprise products and services, Microsoft generates some information linked to a Microsoft numeric identifier to provide the support. This is often referred to as "Pseudonymized Data", Although this data cannot be attributed to a specific data subject without the use of additional information, some of it may be deemed personal under GDPR's broad definition for personal data. Within Professional Services, requests to fulfill or assist in fulfilling DSRs will always automatically include addressing pseudonymized data.
+- **Pseudonymized Data:** When you use Microsoft support for Microsoft's enterprise products and services, Microsoft generates some information linked to a Microsoft numeric identifier to provide the support. This information is often referred to as "Pseudonymized Data", although this data cannot be attributed to a specific data subject without the use of additional information, some of it may be deemed personal under GDPR's broad definition for personal data. Within Professional Services, requests to fulfill or assist in fulfilling DSRs will always automatically include addressing pseudonymized data.
 
 ### How to use this guide
 
@@ -84,7 +84,7 @@ Upon receiving an inquiry from a Customer Contact regarding a DSR, Microsoft per
 
 To maintain customer's business continuity, Microsoft will also not process a DSR associated with an engagement until a replacement contact is confirmed. Upon confirmation of a new contact, Microsoft will swap out the old contact with the new one in open engagements.
 
-Customers may choose to make changes to their data collected during Professional Services engagements through normal support or consulting channels, separate from this DSR. For instance, Microsoft can assist in expunging support engagements, on request (see below in *DSR Guide for Customer Provided Data* section).
+Customers may choose to make changes to their data collected during Professional Services engagements through normal support or consulting channels, separate from this DSR. For instance, Microsoft can assist in expunging support engagements, on request (see in the *DSR Guide for Customer Provided Data* section).
 
 ***Example for Illustration Purposes Only***
 
@@ -106,13 +106,13 @@ Jane is an employee of an Enterprise customer, Contoso, that has given her a Dyn
 
 *How to receive assistance from Microsoft when a customer has received a request from their employee or other data subjects to exercise their rights, and that data subject's personal data was collected by Microsoft Support during a support engagement.*
 
-When a customer engages with Microsoft Support, Microsoft collects Support Data from the customer to resolve any issues that required a support engagement. This Support Data includes Microsoft's interaction with the customer (for example, chat, phone, email, web submission) plus any content files the customer sends to Microsoft or Microsoft has, with customer's permission, extracted from the customer's IT environment or Online Services tenancy to resolve the support issue. In the case of Premier support, this would also include any data we collect from you to proactively prevent future issues. However, this excludes Customer Contact information or other information from Microsoft's business relationship with the customer (for example, billing records).
+When a customer engages with Microsoft Support, Microsoft collects Support Data from the customer to resolve any issues that required a support engagement. This Support Data includes Microsoft's interaction with the customer (for example, chat, phone, email, web submission) plus any content files the customer sends to Microsoft or Microsoft has, with customer's permission, extracted from the customer's IT environment or Online Services tenancy to resolve the support issue. In the case of Premier Support, this would also include any data we collect from you to proactively prevent future issues. However, this excludes Customer Contact information or other information from Microsoft's business relationship with the customer (for example, billing records).
 
 For all Support Data, Microsoft is the data processor. As such, Microsoft's will not respond to direct requests from data subjects regarding Support Data provided when they were associated with a Microsoft commercial customer. Microsoft will work with the customer through their normal support channels to assist them in responding to DSRs.
 
 ## Step 1: Discover
 
-The first step in obtaining Microsoft's assistance in responding to a DSR is to find the personal data that is the subject of the DSR. This first step — finding and reviewing the personal data at issue — will help a customer determine whether a DSR meets the organization's policies for honoring a data subject request.
+The first step in obtaining Microsoft's assistance in responding to a DSR is to find the personal data that is the subject of the DSR. This first step—finding and reviewing the personal data at issue—will help a customer determine whether a DSR meets the organization's policies for honoring a data subject request.
 
 After the customer finds the data, the customer can then perform the specific action to satisfy the request by the data subject. Depending on what the customer is trying to do will determine what level of discovery the customer needs to engage in.
 
@@ -122,7 +122,7 @@ In discovering relevant data and obtaining Microsoft's assistance, a customer ha
 
 *Option A – Cross-Microsoft Support Customer DSR*. Apply the DSR to all the customer's support data across Microsoft's support environment. To do this, a customer can just ask Microsoft to apply the DSR to all Support Data collected.
 
-*Option B — Specific Customer Engagements.* Use online systems to review tickets, then identify specific engagements containing the relevant personal data and report them Microsoft. Microsoft will attempt to provide assistance to perform a search if the customer does not have the ability to search across engagements (tickets).
+*Option B—Specific Customer Engagements.* Use online systems to review tickets, then identify specific engagements containing the relevant personal data and report them Microsoft. Microsoft will attempt to provide assistance to perform a search if the customer does not have the ability to search across engagements (tickets).
 
 ***Once engagements are identified, request to apply the DSR to either a specific part of the record or everything related to that engagement across Microsoft.***
 
@@ -167,11 +167,11 @@ All data at Microsoft has a retention and deletion policy applied to it, which w
 
 Customers requesting the deletion of a data subject's personal data universally across Support systems may do so through your TAM or by filing a Support Request (SR) in SMC or equivalent system. You *must* indicate that this is a request to assist with a DSR under GDPR.
 
-*Option A — Cross-Microsoft Support Customer DSR*. For a cross system DSR, customer must provide the personal data that Microsoft needs to identify the required data (for example, email address; phone number). Microsoft will not correlate or research records and will only search directly on identifiers provided by the customer. When data is found, Microsoft will delete all engagements and all associated data.
+*Option A—Cross-Microsoft Support Customer DSR*. For a cross system DSR, customer must provide the personal data that Microsoft needs to identify the required data (for example, email address; phone number). Microsoft will not correlate or research records and will only search directly on identifiers provided by the customer. When data is found, Microsoft will delete all engagements and all associated data.
 
 > Important Note: this may result in loss of historical records that are important to customer's organization.
 
-*Option B — Specific Customer Engagements*. For specific engagements that the customer has identified and wants deleted, do not delete tickets out of SMC. This will result in personal data remaining in logs and downstream systems that may not be deleted within the needed timeframe. Instead, identify the ticket or personal data within the ticket that must be deleted, and contact Microsoft Support to assist you in deleting that data.
+*Option B—Specific Customer Engagements*. For specific engagements that the customer has identified and wants deleted, do not delete tickets out of SMC. This will result in personal data remaining in logs and downstream systems that may not be deleted within the needed timeframe. Instead, identify the ticket or personal data within the ticket that must be deleted, and contact Microsoft Support to assist you in deleting that data.
 
 ### Microsoft Support Data Transfer and Management tool (DTM) instructions
 
@@ -190,7 +190,7 @@ Note: Exported data may not include Microsoft's intellectual property or any dat
 
 ***Example for Illustration Purposes Only***
 
-John is a Premier CSM for an Enterprise customer, Contoso, that uses O365 for its employee e-mail and Azure to host a Contoso SQL database. Contoso has multiple open and closed tickets. Recently, Microsoft Support, with Contoso's permission, moved a copy of the SQL database into DTM for support and troubleshooting.
+John is a Premier CSM for an Enterprise customer, Contoso, that uses O365 for its employee e-mail and Azure to host a Contoso SQL Database. Contoso has multiple open and closed tickets. Recently, Microsoft Support, with Contoso's permission, moved a copy of the SQL Database into DTM for support and troubleshooting.
 
 John receives a DSR from Jane asking that all her data be deleted. John goes into SMC and searches across engagements to identify that Jane had email account issues and so was referenced in two tickets by name and email address. He contacts his TAM, provides the TAM with Jane's name and e-mail address as an identifier, and requests that those two tickets be deleted, along with all downstream data that may have been generated out of those tickets.
 
@@ -198,7 +198,7 @@ He also suspects he was engaged in a chat conversation with support personnel wh
 
 He also knows that Jane's personal data is in the SQL Database. Since the SQL VM was moved into DTM less than 90 days ago, he asks his TAM separately to assist in the immediate deletion of the database out of DTM.
 
-Lastly, since he knows that data may have been removed from the DTM file while providing support, he asks Microsoft to run a check across IT systems for Jane's personal data from the SQL database.
+Lastly, since he knows that data may have been removed from the DTM file while providing support, he asks Microsoft to run a check across IT systems for Jane's personal data from the SQL Database.
 
 Microsoft Support performs all these deletions and, based on customer request, the TAM provides him with an attestation statement that the required data has been deleted.
 
@@ -224,7 +224,7 @@ For FastTrack migration services, Microsoft is the data processor. In accordance
   
 If you need to process any access, rectify, or export DSR requests while a user's data is being processed through FastTrack migration systems, it will be the customer's responsibility to fulfill such DSRs through your existing source systems in which the user data is stored. Once the user's migration is complete and the data has been migrated to the destination Microsoft cloud service, the guidance provided by Microsoft on how customers can use Microsoft products, services, and administrative tools to find and act on personal data to respond to data subject request will then apply. To view this guidance see [Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests). 
 
-If you need to delete an user account in response to a DSR delete request while your organization is engaged in an ongoing FastTrack migration project, you should be aware that migration systems may retain a copy of user migration data for a period of time following completion of the user’s migration and deleting the user account will not automatically delete such user migration data stored in FastTrack migration systems.  If you would like the Microsoft FastTrack team to delete user migration data, you can [submit a request](https://go.microsoft.com/fwlink/?linkid=874544). In the ordinary course of business, Microsoft FastTrack will delete all data copies once your organization’s migration is complete.
+If you need to delete a user account in response to a DSR delete request while your organization is engaged in an ongoing FastTrack migration project, you should be aware that migration systems may retain a copy of user migration data for a period of time following completion of the user’s migration and deleting the user account will not automatically delete such user migration data stored in FastTrack migration systems.  If you would like the Microsoft FastTrack team to delete user migration data, you can [submit a request](https://go.microsoft.com/fwlink/?linkid=874544). In the ordinary course of business, Microsoft FastTrack will delete all data copies once your organization’s migration is complete.
 
 ## Other Consulting Services
 

@@ -1,5 +1,5 @@
 ---
-title: AssignedIPAddresses() function in advanced hunting for Microsoft Threat Protection
+title: AssignedIPAddresses() function in advanced hunting for Microsoft 365 Defender
 description: Learn how to use the AssignedIPAddresses() function to get the latest IP addresses assigned to a device 
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
 search.product: eADQiWindows 10XVcnh
@@ -15,27 +15,31 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
+- m365initiative-m365-defender 
 ms.topic: article
 ---
 
 # AssignedIPAddresses()
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+Use the `AssignedIPAddresses()` function in your [advanced hunting](advanced-hunting-overview.md) queries to quickly obtain the latest IP addresses that have been assigned to a device. If you specify a timestamp argument, this function obtains the most recent IP addresses at the specified time. 
 
-Use the `AssignedIPAddresses()` function to quickly obtain the latest IP addresses that have been assigned to a device or the most recent IP addresses from a specified point in time. This function returns a table with the following columns:
+This function returns a table with the following columns:
 
 | Column | Data type | Description |
 |------------|-------------|-------------|
-| Timestamp | datetime | Latest time when the device was observed using the IP address |
-| IPAddress | string | IP address used by the device |
-| IPType | string | Indicates whether the IP address is a public or private address |
-| NetworkAdapterType | int | Network adapter type used by the device that has been assigned the IP address. For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2)  |
-| ConnectedNetworks | int | Networks that the adapter with the assigned IP address is connected to. Each JSON array contains the network name, category (public, private or domain), a description, and a flag indicating if it's connected publicly to the internet |
-
+| `Timestamp` | datetime | Latest time when the device was observed using the IP address |
+| `IPAddress` | string | IP address used by the device |
+| `IPType` | string | Indicates whether the IP address is a public or private address |
+| `NetworkAdapterType` | int | Network adapter type used by the device that has been assigned the IP address. For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `ConnectedNetworks` | int | Networks that the adapter with the assigned IP address is connected to. Each JSON array contains the network name, category (public, private, or domain), a description, and a flag indicating if it's connected publicly to the internet |
 
 ## Syntax
 
@@ -45,12 +49,12 @@ AssignedIPAddresses(x, y)
 
 ## Arguments
 
-- **x** — `DeviceId` or `DeviceName` value identifying the device
-- **y** — `Timestamp` (datetime) value indicating the specific point in time where to get the most recent IP addresses. If not specified, the function returns the latest IP addresses.
+- **x**—`DeviceId` or `DeviceName` value identifying the device
+- **y**—`Timestamp` (datetime) value instructing the function to obtain the most recent assigned IP addresses from a specific time. If not specified, the function returns the latest IP addresses.
 
 ## Examples
 
-### Get the list of IP addresses used by a device as of 24 hours ago
+### Get the list of IP addresses used by a device 24 hours ago
 
 ```kusto
 AssignedIPAddresses('example-device-name', ago(1d))

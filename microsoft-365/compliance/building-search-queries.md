@@ -1,5 +1,5 @@
 ---
-title: Build search queries - eDiscovery
+title: Build search queries in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -7,21 +7,20 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
 ms.custom: seo-marvel-mar2020
 description: "Use keywords and conditions to narrow the scope of the search when searching for data using Advanced eDiscovery in Microsoft 365."
 ---
 
-# Build search queries
+# Build search collection queries in Advanced eDiscovery
 
-When building search queries, you can use keywords to find specific content and conditions to narrow the scope of the search to return items that are most relevant to your legal investigation.
+When building search queries to collect data in an Advanced eDiscovery case, you can use keywords to find specific content and conditions to narrow the scope of the search to return items that are most relevant to your legal investigation.
 
 ![Use keywords and conditions to narrow the results of a search](../media/SearchQueryBox.png)
 

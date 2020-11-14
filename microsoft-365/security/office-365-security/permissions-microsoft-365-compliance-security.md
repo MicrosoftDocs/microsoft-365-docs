@@ -21,6 +21,9 @@ ms.custom: seo-marvel-apr2020
 
 # Permissions in the Microsoft 365 compliance center and Microsoft 365 security center
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 Your organization needs to manage security and compliance scenarios that span all the Microsoft 365 services. And you need the flexibility to give the right admin permissions to the right people in your organization's IT group. By using the Microsoft 365 security center or Microsoft 365 compliance center, you can manage permissions centrally for all tasks related to security or compliance.
 
 After the global administrator assigns these admin roles, the admins have access to features and data that span all services in Microsoft 365, such as the Microsoft 365 security center, Microsoft 365 compliance center, Azure, Office 365, and Enterprise Mobility + Security.
@@ -58,7 +61,7 @@ Users with this role have permissions to manage compliance-related features in t
 |In this service...|The compliance administrator can...|
 |---|---|
 |[**Microsoft 365 compliance center**](https://compliance.microsoft.com/)|Protect and manage your organization's data across Microsoft 365 services. <br/><br/> Manage compliance alerts.|
-|[**Compliance Score**](https://docs.microsoft.com/microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Track, assign, and verify your organization's regulatory compliance activities.|
+|[**Compliance Manager**](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager)|Track, assign, and verify your organization's regulatory compliance activities.|
 |[**Security & Compliance Center**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Manage data governance. <br/><br/> Perform legal and data investigation. <br/><br/> Manage Data Subject Request.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|View all Intune audit data.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Has read-only permissions and can manage alerts. <br/><br/> Can create and modify file policies and allow file governance actions. <br/><br/> Can view all the built-in reports under Data Management.|
@@ -66,14 +69,14 @@ Users with this role have permissions to manage compliance-related features in t
 
 ### Compliance data administrator
 
-Users with this role have permissions to protect and track data in the Microsoft 365 compliance center, Microsoft 365 admin center, and Azure. Users can also manage all features within the Exchange admin center, Compliance Score, and Teams & Skype for Business admin center and create support tickets for Azure and Microsoft 365.
+Users with this role have permissions to protect and track data in the Microsoft 365 compliance center, Microsoft 365 admin center, and Azure. Users can also manage all features within the Exchange admin center, Compliance Manager, and Teams & Skype for Business admin center and create support tickets for Azure and Microsoft 365.
 
 ****
 
 |In this service...|The compliance data administrator can...|
 |---|---|
 |[**Microsoft 365 compliance center**](https://compliance.microsoft.com/)|Protect and manage your organization's data across Microsoft 365 services. <br/><br/> Manage compliance alerts. <br/><br/> Manage sensitivity labels|
-|[**Compliance Score**](https://docs.microsoft.com/microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Track, assign, and verify your organization's regulatory compliance activities.|
+|[**Compliance Manager**](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager)|Track, assign, and verify your organization's regulatory compliance activities.|
 |[**Security & Compliance Center**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Manage data governance. <br/><br/> Perform legal and data investigation. <br/><br/> Manage Data Subject Request. <br/><br/> Manage sensitivity labels|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control) (coming soon)|View all Intune audit data.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Use read-only permissions to view information. <br/>Manage alerts. <br/><br/> Create and modify file policies and allow file governance actions. <br/><br/> View all the built-in reports under Data Management.|
@@ -91,12 +94,12 @@ Users with this role have permissions to manage security-related features in the
 |**Identity Protection Center**|Do everything the Security Reader role can, plus  perform all Identity Protection Center operations, except for reset passwords.|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Do everything the Security Reader role can. <br/><br/> **Cannot** manage Azure AD role assignments or settings.|
 |[**Security & Compliance Center**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Manage security policies. <br/><br/> View, investigate, and respond to security threats <br/><br/> View reports. <br/><br/> Manage sensitivity labels.|
-|**Azure Advanced Threat Protection**|Monitor and respond to suspicious security activity.|
-|**Windows Defender ATP and EDR**|Assign roles. <br/><br/> Manage machine groups. <br/><br/> Configure endpoint threat detection and automated remediation. <br/><br/> View, investigate, and respond to alerts.|
+|**Microsoft Defender for Identity**|Monitor and respond to suspicious security activity.|
+|**Microsoft Defender for Endpoint  and EDR**|Assign roles. <br/><br/> Manage machine groups. <br/><br/> Configure endpoint threat detection and automated remediation. <br/><br/> View, investigate, and respond to alerts.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Views user, device, enrollment, configuration, and application information. <br/><br/> **Cannot** make changes to Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Add admins, add policies and settings, upload logs and perform governance actions.|
-|[**Azure Security Center**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (coming soon)|View security policies, view security states, edit security policies, view alerts and recommendations, dismiss alerts and recommendations.|
-|[**Office 365 service health**](https://docs.microsoft.com/office365/enterprise/view-service-health)|View the health of Office 365 services.|
+|[**Azure Defender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (coming soon)|View security policies, view security states, edit security policies, view alerts and recommendations, dismiss alerts and recommendations.|
+|[**Office 365 service health**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|View the health of Office 365 services.|
 |
 
 ### Security operator
@@ -111,10 +114,10 @@ Users with this role can manage alerts and have global read-only access on secur
 |**Identity Protection Center** (coming soon)|Do everything the Security Reader role can.|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Do everything the Security Reader role can.|
 |[**Security & Compliance Center**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Do everything the Security Reader role can. <br/><br/> View, investigate, and respond to security threats|
-|**Windows Defender ATP and EDR**|Do everything the Security Reader role can. <br/><br/> View, investigate, and respond to alerts.|
+|**Microsoft Defender for Endpoint  and EDR**|Do everything the Security Reader role can. <br/><br/> View, investigate, and respond to alerts.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Views user, device, enrollment, configuration, and application information. <br/><br/> **Cannot** make changes to Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Do everything the Security Reader role can, plus view and dismiss alerts.|
-|[**Office 365 service health**](https://docs.microsoft.com/office365/enterprise/view-service-health)|View the health of Office 365 services.|
+|[**Office 365 service health**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|View the health of Office 365 services.|
 |
 
 ### Security reader
@@ -126,14 +129,14 @@ Users with this role have global read-only access on security-related feature, i
 |In this service...|The security reader can...|
 |---|---|
 |[**Microsoft 365 security center**](https://security.microsoft.com/)|View security-related policies across Microsoft 365 services. <br/><br/> View security threats and alerts. <br/><br/> View reports.|
-|**Identity Protection Center**|Read all security reports and settings information for security features: anti-spam, encryption, data loss prevention (DLP), anti-malware, Advanced Threat Protection (ATP), anti-phishing, and mail flow rules (also known as transport rules).|
+|**Identity Protection Center**|Read all security reports and settings information for security features: anti-spam, encryption, data loss prevention (DLP), anti-malware, Defender for Office 365, anti-phishing, and mail flow rules (also known as transport rules).|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Use read-only access to view all information surfaced in Azure AD PIM: Policies and reports for Azure AD role assignments, security reviews, and (in the future) policy data and reports for scenarios other than Azure AD role assignment. <br/><br/> **Cannot** sign up for Azure AD PIM or make any changes to it. In the PIM portal or via PowerShell, someone in this role can activate additional roles (for example, Global Admin or Privileged Role Administrator), if the user is a eligible for them.|
 |[**Security & Compliance Center**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|View security policies. <br/><br/> View and investigate security threats. <br/><br/> View reports.|
-|**Windows Defender ATP and EDR**|View and investigate alerts.|
+|**Microsoft Defender for Endpoint  and EDR**|View and investigate alerts.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Views user, device, enrollment, configuration, and application information. <br/><br/> **Cannot** make changes to Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Use read-only permissions to view information. <br/><br/> Manage alerts.|
-|[**Azure Security Center**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|View recommendations and alerts. <br/><br/> View security policies. <br/><br/> View security states, but cannot make changes.|
-|[**Office 365 service health**](https://docs.microsoft.com/office365/enterprise/view-service-health)|View the health of Office 365 services.|
+|[**Azure Defender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|View recommendations and alerts. <br/><br/> View security policies. <br/><br/> View security states, but cannot make changes.|
+|[**Office 365 service health**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|View the health of Office 365 services.|
 |
 
 ## Global administrators can manage roles in Azure Active Directory
@@ -154,7 +157,7 @@ The roles that appear in the Microsoft 365 compliance center and Microsoft 365 s
 
 It's important to understand that you when you manage these roles in Azure Active Directory, you're doing so centrally for **all** Microsoft 365 services. However, when you manage a role in a specific service, such as the Security & Compliance Center, you're managing the role for **only** that specific service. The assignments and permissions for a role in a service override any permissions granted to the Azure Active Directory role.
 
-This can be useful – for example, if a person is assigned to the Security administrator role, they don't have permissions to manage incidents. But you can use the permissions in Windows Defender Advanced Threat Protection to give them the specific permission for incident management in that service.
+This can be useful – for example, if a person is assigned to the Security administrator role, they don't have permissions to manage incidents. But you can use the permissions in Microsoft Defender for Endpoint to give them the specific permission for incident management in that service.
 
 ## Where to find role information for each Microsoft 365 service
 
@@ -166,9 +169,9 @@ By assigning a user to one of the Microsoft 365 compliance or security admin rol
 |---|---|
 |Admin roles in Office 365 and Microsoft 365 for business plans|[Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)|
 |Azure Active Directory (Azure AD) and Azure AD Identity Protection|[Azure AD admin roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Azure Advanced Threat Protection|[Azure ATP role groups](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
+|Microsoft Defender for Identity|[Microsoft Defender for Identity role groups](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Azure AD admin roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Compliance Score|[Compliance Score roles](https://docs.microsoft.com/microsoft-365/compliance/compliance-score-setup#set-user-permissions-and-assign-roles)|
+|Compliance Manager|[Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup#set-user-permissions-and-assign-roles)|
 |Exchange Online|[Exchange role-based access control](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)|
 |Intune|[Intune role-based access control](https://docs.microsoft.com/intune/role-based-access-control)|
 |Managed Desktop|[Azure AD admin roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
@@ -178,7 +181,7 @@ By assigning a user to one of the Microsoft 365 compliance or security admin rol
 |Secure Score|[Azure AD admin roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |SharePoint Online|[Azure AD admin roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <br/><br/> [About the SharePoint admin role in Office 365](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)|
 |Teams/Skype for Business|[Azure AD admin roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Windows Defender Advanced Threat Protection|[Windows Defender ATP role-based access control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)|
+|Microsoft Defender for Endpoint|[Microsoft Defender for Endpoint role-based access control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)|
 |
 
 ## What is coming soon

@@ -4,7 +4,7 @@
   items: 
     - name: Quick tasks to get started with compliance
       href: compliance-quick-tasks.md
-    - name: What's new in the compliance center
+    - name: What's new in Microsoft 365 compliance
       href: whats-new.md
     - name: Microsoft 365 compliance center
       href: microsoft-365-compliance-center.md
@@ -14,6 +14,9 @@
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan for security and compliance in Office 365
       href: plan-for-security-and-compliance.md
+    - name: Compliance extensibility
+      href: compliance-extensibility.md
+
 - name: Manage insider risks
   items:
     - name: Insider risk management
@@ -78,8 +81,51 @@
     - name: Customer Lockbox
       href: customer-lockbox-requests.md
 - name: Manage information protection
-  href: protect-information.md
-  items: 
+  items:
+    - name: Know your data, protect your data, prevent data loss
+      href: information-protection.md
+    - name: Sensitive information types
+      items: 
+        - name: Sensitive information type entity definitions 
+          href: sensitive-information-type-entity-definitions.md
+        - name: What the DLP functions look for
+          href: what-the-dlp-functions-look-for.md
+        - name: Customize a built-in sensitive information type
+          href: customize-a-built-in-sensitive-information-type.md
+        - name: Custom sensitive information types
+          href: custom-sensitive-info-types.md
+        - name: Create custom sensitive information types with exact data match
+          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: Create a custom sensitive information type - Security & Compliance Center
+          href: create-a-custom-sensitive-information-type.md
+        - name: Create a custom sensitive information type - PowerShell
+          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: Create a keyword dictionary
+          href: create-a-keyword-dictionary.md
+        - name: Document Fingerprinting
+          href: document-fingerprinting.md
+        - name: DLP functions for sensitive information
+          href: what-the-dlp-functions-look-for.md
+    - name: Trainable classifiers
+      items: 
+        - name: Learn about trainable classifiers (preview)
+          href: classifier-learn-about.md
+        - name: Get started with trainable classifiers (preview)
+          href: classifier-get-started-with.md
+        - name: How to retrain a classifier in communications compliance (preview)
+          href: classifier-how-to-retrain-comms-compliance.md
+        - name: How to retrain a classifier in content explorer (preview)
+          href: classifier-how-to-retrain-content-explorer.md
+    - name: Data classification
+      items: 
+        - name: Understand data classification
+          href: data-classification-overview.md
+        - name: Get started with content explorer
+          href: data-classification-content-explorer.md
+        - name: Get started with activity explorer
+          href: data-classification-activity-explorer.md
+        - name: Data classification release notes
+          href: data-classification-pub-preview-relnotes.md
     - name: Sensitivity labels
       items:
         - name: Learn about sensitivity labels
@@ -100,19 +146,101 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Use sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
-    - name: Data loss prevention (DLP)
-      href: data-loss-prevention-policies.md
+    - name: Encryption
       items: 
+        - name: Understand encryption
+          href: encryption.md
+        - name: Double Key Encryption (DKE)
+          href: double-key-encryption.md
+        - name: Double Key Encryption FAQ
+          href: double-key-encryption-overview.md  
+        - name: Office 365 Service encryption
+          href: office-365-service-encryption.md
+        - name: Customer Key
+          items: 
+            - name: Service encryption with Customer Key in Office 365
+              href: customer-key-overview.md
+            - name: Set up Customer Key for Office 365
+              href: customer-key-set-up.md
+            - name: Manage Customer Key for Office 365
+              href: customer-key-manage.md
+            - name: Roll or rotate a Customer Key or an availability key
+              href: customer-key-availability-key-roll.md
+            - name: Learn about the availability key for Customer Key
+              href: customer-key-availability-key-understand.md
+        - name: Email encryption
+          href: email-encryption.md
+          items: 
+            - name: Office 365 Message Encryption (OME)
+              href: ome.md
+            - name: Set up new Office 365 Message Encryption capabilities
+              href: set-up-new-message-encryption-capabilities.md
+            - name: Define mail flow rules to encrypt email messages in Office 365
+              href: define-mail-flow-rules-to-encrypt-email.md
+            - name: Add your organization's brand to your encrypted messages
+              href: add-your-organization-brand-to-encrypted-messages.md
+            - name: Create a sensitive information type policy for your organization using Office 365 Message Encryption
+              href: ome-sensitive-info-types.md
+            - name: Manage Office 365 Message Encryption
+              href: manage-office-365-message-encryption.md
+            - name: Office 365 Advanced Message Encryption
+              href: ome-advanced-message-encryption.md
+            - name: Set an expiration date for email encrypted by Office 365 Advanced Message Encryption
+              href: ome-advanced-expiration.md
+            - name: Revoke email encrypted by Office 365 Advanced Message Encryption
+              href: revoke-ome-encrypted-mail.md
+            - name: Compare versions of OME
+              href: ome-version-comparison.md
+            - name: Office 365 Message Encryption FAQ
+              href: ome-faq.md
+            - name: How Exchange Online secures your email secrets
+              href: exchange-online-secures-email-secrets.md
+            - name: How Exchange Online uses TLS to secure email connections in Office 365
+              href: exchange-online-uses-tls-to-secure-email-connections.md
+            - name: BitLocker and Distributed Key Manager (DKM) for Encryption
+              href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
+            - name: Legacy OME
+              items: 
+                - name: Legacy information for Office 365 Message Encryption
+                  href: legacy-information-for-message-encryption.md
+                - name: Set up Azure Rights Management for the previous version of Office 365 Message Encryption
+                  href: set-up-azure-rms-for-previous-version-message-encryption.md
+        - name: SharePoint IRM
+          href: set-up-irm-in-sp-admin-center.md
+        - name: Technical reference
+          href: technical-reference-details-about-encryption.md
+        - name: TLS 1.0 and 1.1 deprecation for Office 365
+          href: tls-1.0-and-1.1-deprecation-for-office-365.md
+        - name: TLS 1.0 and 1.1 deprecation in Office 365 GCC High and DoD
+          href: tls-1-2-in-office-365-gcc.md
+        - name: TLS 1.2 in Office 365
+          href: prepare-tls-1.2-in-office-365.md
+    - name: Data loss prevention (DLP)
+      items: 
+        - name: Learn about DLP
+          href: data-loss-prevention-policies.md
         - name: DLP and Microsoft Teams
           href: dlp-microsoft-teams.md
-        - name: Learn about Endpoint data loss prevention (preview)
+        - name: Learn about Endpoint data loss prevention
           href: endpoint-dlp-learn-about.md
-        - name: Get started with Endpoint data loss prevention (preview)
+        - name: Get started with Endpoint data loss prevention
           href: endpoint-dlp-getting-started.md
-        - name: Using Endpoint data loss prevention (preview)
+        - name: Using Endpoint data loss prevention
           href: endpoint-dlp-using.md
-        - name: Get started with DLP policy recommendations
-          href: get-started-with-dlp-policy-recommendations.md
+        - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
+          items:
+            - name: Onboarding tools and methods for Windows 10 devices   
+              href: dlp-configure-endpoints.md
+            - name: Onboard Windows 10 devices via Group Policy
+              href: dlp-configure-endpoints-gp.md
+            - name: Onboard Windows 10 devices using Mobile Device Management tools
+              href: dlp-configure-endpoints-mdm.md
+            - name: Onboard Windows 10 devices using Configuration Manager
+              href: dlp-configure-endpoints-sccm.md
+            - name: Onboard Windows 10 devices using a local script
+              href: dlp-configure-endpoints-script.md
+            - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
+              href: dlp-configure-endpoints-vdi.md
         - name: Get started with the default DLP policy
           href: get-started-with-the-default-dlp-policy.md
         - name: Create a DLP policy from a template
@@ -121,6 +249,8 @@
           href: create-test-tune-dlp-policy.md
         - name: Use notifications and policy tips in DLP policies
           href: use-notifications-and-policy-tips.md
+        - name: Configure and view alerts for DLP policies (preview)
+          href: dlp-configure-view-alerts-policies.md
         - name: What the DLP policy templates include
           href: what-the-dlp-policy-templates-include.md
         - name: Create a DLP policy to protect documents with FCI or other properties
@@ -131,116 +261,50 @@
           href: form-a-query-to-find-sensitive-data-stored-on-sites.md
         - name: How DLP works between the Security & Compliance Center and Exchange admin center
           href: how-dlp-works-between-admin-centers.md
-    - name: Sensitive information types
-      items: 
-        - name: Sensitive information type entity definitions 
-          href: sensitive-information-type-entity-definitions.md
-        - name: What the DLP functions look for
-          href: what-the-dlp-functions-look-for.md
-        - name: Watch an extended overview of customizing DLP
-          href: https://go.microsoft.com/fwlink/?linkid=852306
-        - name: Customize a built-in sensitive information type
-          href: customize-a-built-in-sensitive-information-type.md
-        - name: Custom sensitive information types
-          href: custom-sensitive-info-types.md
-        - name: Create custom sensitive information types with exact data match based classification
-          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: Create a custom sensitive information type in the Security & Compliance Center
-          href: create-a-custom-sensitive-information-type.md
-        - name: Create a custom sensitive information type using PowerShell
-          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
-        - name: Create a keyword dictionary
-          href: create-a-keyword-dictionary.md
-        - name: Document Fingerprinting
-          href: document-fingerprinting.md
-        - name: DLP functions for sensitive information
-          href: what-the-dlp-functions-look-for.md
-    - name: Encryption in Microsoft 365
-      href: encryption.md
-    - name: Office 365 Service encryption
-      href: office-365-service-encryption.md    
-    - name: Technical reference details about encryption in Office 365
-      href: technical-reference-details-about-encryption.md
-    - name: TLS 1.0 and 1.1 deprecation for Office 365
-      href: tls-1.0-and-1.1-deprecation-for-office-365.md
-    - name: TLS 1.0 and 1.1 deprecation in Office 365 GCC High and DoD
-      href: tls-1-2-in-office-365-gcc.md
-    - name: TLS 1.2 in Office 365
-      href: prepare-tls-1.2-in-office-365.md
-    - name: Double Key Encryption for Microsoft 365 public preview
-      href: double-key-encryption.md
-    - name: Customer Key
-      items: 
-        - name: Service encryption with Customer Key in Office 365
-          href: customer-key-overview.md
-        - name: Set up Customer Key for Office 365
-          href: customer-key-set-up.md
-        - name: Manage Customer Key for Office 365
-          href: customer-key-manage.md
-        - name: Roll or rotate a Customer Key or an availability key
-          href: customer-key-availability-key-roll.md
-        - name: Learn about the availability key for Customer Key
-          href: customer-key-availability-key-understand.md
-    - name: Encryption for data in transit
-      href: office-365-encryption-for-data-in-transit.md
-    - name: Email encryption
-      href: email-encryption.md
-      items: 
-        - name: Office 365 Message Encryption (OME)
-          href: ome.md
-        - name: Set up new Office 365 Message Encryption capabilities
-          href: set-up-new-message-encryption-capabilities.md
-        - name: Define mail flow rules to encrypt email messages in Office 365
-          href: define-mail-flow-rules-to-encrypt-email.md
-        - name: Add your organization's brand to your encrypted messages
-          href: add-your-organization-brand-to-encrypted-messages.md
-        - name: Create a sensitive information type policy for your organization using Office 365 Message Encryption
-          href: ome-sensitive-info-types.md
-        - name: Manage Office 365 Message Encryption
-          href: manage-office-365-message-encryption.md
-        - name: Office 365 Advanced Message Encryption
-          href: ome-advanced-message-encryption.md
-        - name: Set an expiration date for email encrypted by Office 365 Advanced Message Encryption
-          href: ome-advanced-expiration.md
-        - name: Revoke email encrypted by Office 365 Advanced Message Encryption
-          href: revoke-ome-encrypted-mail.md
-        - name: Compare versions of OME
-          href: ome-version-comparison.md
-        - name: Office 365 Message Encryption FAQ
-          href: ome-faq.md
-        - name: How Exchange Online secures your email secrets
-          href: exchange-online-secures-email-secrets.md
-        - name: How Exchange Online uses TLS to secure email connections in Office 365
-          href: exchange-online-uses-tls-to-secure-email-connections.md
-        - name: BitLocker and Distributed Key Manager (DKM) for Encryption
-          href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
-        - name: Legacy OME
-          items: 
-            - name: Legacy information for Office 365 Message Encryption
-              href: legacy-information-for-message-encryption.md
-            - name: Set up Azure Rights Management for the previous version of Office 365 Message Encryption
-              href: set-up-azure-rms-for-previous-version-message-encryption.md
-    - name: Set up IRM in SharePoint admin center
-      href: set-up-irm-in-sp-admin-center.md
-    - name: Understand data classification
-      href: data-classification-overview.md
-      items: 
-        - name: Get started with content explorer
-          href: data-classification-content-explorer.md
-        - name: Get started with activity explorer
-          href: data-classification-activity-explorer.md
-        - name: Data classification release notes
-          href: data-classification-pub-preview-relnotes.md
-        - name: Get started with trainable classifiers (preview)
-          href: classifier-getting-started-with.md
-        - name: Using a built-in classifier (preview)
-          href: classifier-using-a-ready-to-use-classifier.md
-        - name: Creating and training a classifier (preview)
-          href: classifier-creating-a-trainable-classifier.md
+        - name: Use sensitivity labels as a condition in DLP policies (preview)
+          href: dlp-sensitivity-label-as-condition.md
+        - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
+          href: dlp-use-policies-non-microsoft-cloud-apps.md
+        - name: DLP policy conditions and exceptions (preview)
+          href: dlp-conditions-and-exceptions.md
 - name: Manage information governance
   items: 
-    - name: Manage information governance
+    - name: Govern your data
       href: manage-information-governance.md
+    - name: Retain and delete data
+      items: 
+        - name: Learn about retention
+          items:
+            - name: Retention policies and labels
+              href: retention.md
+            - name: Retention for SharePoint and OneDrive
+              href: retention-policies-sharepoint.md
+            - name: Retention for Microsoft Teams
+              href: retention-policies-teams.md
+            - name: Retention for Yammer
+              href: retention-policies-yammer.md
+            - name: Retention for Exchange
+              href: retention-policies-exchange.md
+        - name: Get started with retention
+          href: get-started-with-retention.md
+        - name: Create retention policies
+          href: create-retention-policies.md
+        - name: Use file plan
+          href: file-plan-manager.md
+        - name: Create retention labels and apply them in apps
+          href: create-apply-retention-labels.md
+        - name: Apply a retention label to content automatically
+          href: apply-retention-labels-automatically.md
+        - name: Lock policies to restrict changes
+          href: retention-preservation-lock.md
+        - name: Create retention labels with PowerShell
+          href: bulk-create-publish-labels-using-powershell.md
+        - name: Start retention when an event occurs
+          href: event-driven-retention.md
+        - name: Use retention labels to manage document lifecycles
+          href: auto-apply-retention-labels-scenario.md
+        - name: Manage disposition of data
+          href: disposition.md
     - name: Import mailbox data
       items: 
         - name: Overview of importing PST files
@@ -271,8 +335,68 @@
               href: archive-instant-bloomberg-data.md
             - name: LinkedIn
               href: archive-linkedin-data.md
+            - name: Physical badging data
+              href: import-physical-badging-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
+        - name: Globanet data connectors
+          items:  
+            - name: CellTrust
+              href: archive-celltrust-data.md          
+            - name: Cisco Jabber
+              href: archive-ciscojabberonmssql-data.md
+            - name: EML
+              href: archive-eml-data.md
+            - name: FX Connect
+              href: archive-fxconnect-data.md
+            - name: Jive
+              href: archive-jive-data.md
+            - name: MS SQL Database
+              href: archive-mssqldatabaseimporter-data.md
+            - name: Pivot
+              href: archive-pivot-data.md
+            - name: Reuters Dealing
+              href: archive-reutersdealing-data.md
+            - name: Reuters Eikon
+              href: archive-reuterseikon-data.md
+            - name: Reuters FX
+              href: archive-reutersfx-data.md
+            - name: Slack eDiscovery
+              href: archive-slack-data.md    
+            - name: Symphony
+              href: archive-symphony-data.md
+            - name: Text-delimited
+              href: archive-text-delimited-data.md
+            - name: Webpages
+              href: archive-webpagecapture-data.md
+            - name: Webex Teams
+              href: archive-webexteams-data.md
+            - name: Workplace from Facebook
+              href: archive-workplacefromfacebook-data.md    
+            - name: XIP
+              href: archive-xip-data.md
+            - name: XSLT/XML 
+              href: archive-xslt-xml-data.md
+            - name: Zoom Meetings
+              href: archive-zoommeetings-data.md
+        - name: TeleMessage data connectors
+          items:  
+            - name: Android
+              href: archive-android-archiver-data.md
+            - name: AT&T Network
+              href: archive-att-network-archiver-data.md
+            - name: Bell Network
+              href: archive-bell-network-data.md
+            - name: Enterprise Number 
+              href: archive-enterprise-number-data.md
+            - name: O2 Network
+              href: archive-o2-network-data.md
+            - name: TELUS Network
+              href: archive-telus-network-data.md
+            - name: Verizon Network
+              href: archive-verizon-network-data.md
+            - name: WhatsApp
+              href: archive-whatsapp-data.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
         - name: Search for third-party data
@@ -287,38 +411,6 @@
           href: enable-unlimited-archiving.md
         - name: Set up an archive and deletion policy for mailboxes
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: Retain and delete data
-      items: 
-        - name: Learn about retention
-          items:
-            - name: Retention policies and labels
-              href: retention.md
-            - name: Retention for SharePoint and OneDrive
-              href: retention-policies-sharepoint.md
-            - name: Retention for Microsoft Teams
-              href: retention-policies-teams.md
-            - name: Retention for Exchange
-              href: retention-policies-exchange.md
-        - name: Get started with retention
-          href: get-started-with-retention.md
-        - name: Create retention policies
-          href: create-retention-policies.md
-        - name: Use file plan
-          href: file-plan-manager.md
-        - name: Create retention labels and apply them in apps
-          href: create-apply-retention-labels.md
-        - name: Apply a retention label to content automatically
-          href: apply-retention-labels-automatically.md
-        - name: Comply with SEC Rule 17a-4
-          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Create retention labels with PowerShell
-          href: bulk-create-publish-labels-using-powershell.md
-        - name: Start retention when an event occurs
-          href: event-driven-retention.md
-        - name: Use retention labels to manage document lifecycles
-          href: auto-apply-retention-labels-scenario.md
-        - name: Manage disposition of data
-          href: disposition.md
     - name: Manage inactive mailboxes
       items: 
         - name: Overview of inactive mailboxes
@@ -333,10 +425,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Delete an inactive mailbox
           href: delete-an-inactive-mailbox.md
-    - name: More information about data governance
-      items: 
-        - name: Watch videos from the Microsoft Data Governance team
-          href: https://go.microsoft.com/fwlink/?linkid=867039
     - name: Records management
       items: 
         - name: Learn about records management
@@ -347,6 +435,8 @@
           href: declare-records.md
         - name: Use record versioning
           href: record-versioning.md
+        - name: Resources for regulatory requirements
+          href: retention-regulatory-requirements.md
 - name: Manage eDiscovery
   items:
     - name: eDiscovery in Microsoft 365
@@ -370,7 +460,7 @@
             href: configure-edge-to-export-search-results.md
           - name: Search for and delete email messages
             href: search-for-and-delete-messages-in-your-organization.md
-          - name: Search the cloud-based mailboxes of on-premises users
+          - name: Search for Teams chat data for on-premises users
             href: search-cloud-based-mailboxes-for-on-premises-users.md
           - name: Bulk edit multiple content searches
             href: bulk-edit-content-searches.md
@@ -394,7 +484,7 @@
             href: change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
             href: disable-reports-when-you-export-content-search-results.md
-        - name: Understand content search
+        - name: Content search reference
           items: 
           - name: Content search limits
             href: limits-for-content-search.md
@@ -406,7 +496,9 @@
             href: de-duplication-in-ediscovery-search-results.md
           - name: Differences between estimated and actual search results
             href: differences-between-estimated-and-actual-ediscovery-search-results.md
-        - name: Run content search PowerShell scripts
+          - name: Decryption in eDiscovery tools
+            href: ediscovery-decryption.md
+        - name: Content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections
             href: use-content-search-for-targeted-collections.md
@@ -452,6 +544,10 @@
             href: data-spillage-scenariosearch-and-purge.md
           - name: Preserve Bcc recipients for search
             href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+          - name: Decryption in eDiscovery tools
+            href: ediscovery-decryption.md
+          - name: Collect eDiscovery diagnostic information
+            href: ediscovery-diagnostic-info.md 
           - name: Troubleshoot common eDiscovery issues
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
@@ -545,10 +641,10 @@
         - name: Export case data
           href: exporting-data-ediscover20.md
           items: 
+            - name: Download documents from a review set
+              href: download-documents-from-review-set.md
             - name: Export documents from a review set
               href: export-documents-from-review-set.md
-            - name: Download export jobs
-              href: download-export-jobs.md
         - name: Manage jobs
           href: managing-jobs-ediscovery20.md
         - name: Configure case settings
@@ -568,9 +664,11 @@
             - name: Document metadata fields
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: Set up attorney-client privilege detection
-              href: attorney-privilege-detection.md           
+              href: attorney-privilege-detection.md
             - name: Conversation review sets
               href: conversation-review-sets.md
+            - name: CJK language support
+              href: ediscovery-cjk-support.md
             - name: Assign eDiscovery permissions
               href: assign-ediscovery-permissions.md
             - name: Keyword queries and search conditions
@@ -579,6 +677,10 @@
               href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
+            - name: Decryption in eDiscovery tools
+              href: ediscovery-decryption.md
+            - name: Collect eDiscovery diagnostic information
+              href: ediscovery-diagnostic-info.md
             - name: Search for eDiscovery activities in the audit log
               href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: Troubleshoot AzCopy
@@ -773,8 +875,14 @@
           href: auditing-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log
           href: use-sharing-auditing.md
-        - name: Search for eDiscovery activities in the audit log
-          href: search-for-ediscovery-activities-in-the-audit-log.md
+        - name: Office 365 Management Activity API
+          items:
+            - name: Office 365 Management Activity API reference
+              href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference  
+            - name: Office 365 Management Activity API schema
+              href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema 
+            - name: Office 365 Management Activity API FAQs and troubleshooting
+              href: https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
     - name: Mailbox auditing
       href: enable-mailbox-auditing.md
     - name: Advanced Audit
@@ -789,31 +897,32 @@
       href: alert-policies.md
 - name: Manage compliance risks
   items: 
+    - name: Compliance Manager
+      items: 
+        - name: Learn about Compliance Manager
+          href: compliance-manager.md
+        - name: Compliance Manager quickstart
+          href: compliance-manager-quickstart.md
+        - name: Get started with Compliance Manager
+          href: compliance-manager-setup.md
+        - name: Build and manage assessments
+          href: compliance-manager-assessments.md
+        - name: Working with assessment templates
+          href: compliance-manager-templates.md
+        - name: Compliance Manager templates list
+          href: compliance-manager-templates-list.md
+        - name: Assign and complete improvement actions
+          href: compliance-manager-improvement-actions.md
+        - name: How your compliance score is calculated
+          href: compliance-score-calculation.md
+        - name: Compliance Configuration Analyzer tool
+          href: compliance-manager-mcca.md
+        - name: Frequently asked questions (FAQ)
+          href: compliance-manager-faq.md
+        - name: Compliance Manager (classic)
+          href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
-    - name: Compliance Score and Compliance Manager (preview)
-      items: 
-        - name: Compliance Score (preview)
-          href: compliance-score.md
-        - name: Set up Compliance Score
-          href: compliance-score-setup.md
-        - name: Customize Compliance Score with assessments
-          href: compliance-score-assessments.md
-        - name: Assign and perform work with improvement actions
-          href: compliance-score-improvement-actions.md
-        - name: How your score is calculated
-          href: compliance-score-methodology.md
-        - name: Frequently asked questions (FAQ)
-          href: compliance-score-faq.md
-        - name: Compliance Manager (preview)
-          href: compliance-manager-overview.md
-          items: 
-            - name: What's new in Compliance Manager (preview)
-              href: compliance-manager-release-notes.md
-            - name: Working with Compliance Manager (preview)
-              href: working-with-compliance-manager.md
-            - name: Compliance Manager (classic)
-              href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: GDPR data subject request tool
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
     - name: Office 365 Information Protection for GDPR
@@ -933,7 +1042,7 @@
 - name: Compliance offerings
   items: 
     - name: Microsoft compliance offerings
-      href: offering-home.md
+      href: offering-home.yml
     - name: Global
       items: 
         - name: CIS Benchmark

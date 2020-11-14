@@ -45,7 +45,7 @@ Another top recommendation is to use workstations specifically configured for ad
 Finally, you can mitigate the impact of inadvertent lack of administrative access by creating two or more emergency access accounts in your tenant. See [Manage emergency access accounts in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access). 
 
 ## Step 3: Configure recommended identity and device access policies
-Multi-factor authentication (MFA) and conditional access policies are powerful tools for mitigating against compromised accounts and unauthorized access. We recommend implementing a set of policies that have been tested together. For more information, including deployment steps, see [Identity and device access configurations](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations).
+Multi-factor authentication (MFA) and conditional access policies are powerful tools for mitigating against compromised accounts and unauthorized access. We recommend implementing a set of policies that have been tested together. For more information, including deployment steps, see [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
 
  These policies implement the following capabilities:
 - Mult-factor authentication
@@ -58,7 +58,7 @@ Implementing Intune device compliance requires device enrollment. Managing devic
 
 ## Step 4: Configure SharePoint device access policies
 
-Microsoft recommends you protect content in SharePoint sites with sensitive and highly-regulated content with device access controls. For more information, see [Policy recommendations for securing SharePoint sites and files](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies).
+Microsoft recommends you protect content in SharePoint sites with sensitive and highly-regulated content with device access controls. For more information, see [Policy recommendations for securing SharePoint sites and files](../security/office-365-security/sharepoint-file-access-policies.md).
 
 
 

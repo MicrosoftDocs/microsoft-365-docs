@@ -39,7 +39,7 @@ The **Mailbox usage report** provides information about users with a user mailbo
 
 You can get a view into your organization's **Mailbox usage** by looking at the **Mailbox**, **Storage** and **Quota** charts. 
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |The **Mailbox usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).  <br/> |
 |2.  <br/> |The data in each report usually covers up to the last 24 to 48 hours.  <br/> |

@@ -43,7 +43,7 @@ Use the **Settings and Privacy** page to change your name, mobile phone number, 
 
 2. In the header, select your profile icon \> **My account** \> **Settings and Privacy**.
 
-3. In the **Contact Preferences** section, select **Manage and expand Contact preferences**. Update your mobile, phone, and alternate email address. Make sure you use something different from your Microsoft email address for your alternate email address.
+3. In the **Privacy** tab under **Contact Preferences**, select **Contact preferences for admins only**. Update your mobile, phone, and alternate email address. Make sure you use something different from your Microsoft email address for your alternate email address.
 
     > [!IMPORTANT]
     > The alternate email address and the mobile phone number are needed for resetting your admin password (not your computer admin password).

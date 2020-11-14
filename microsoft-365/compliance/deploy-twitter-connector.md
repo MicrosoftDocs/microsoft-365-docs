@@ -157,7 +157,7 @@ The Twitter developer app is now ready to use.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** in the left nav.
 
-2. On the **Data connectors (preview)** page under **Twitter**, click **View**.
+2. On the **Data connectors** page under **Twitter**, click **View**.
 
 3. On the **Twitter** page, click **Add connector**.
 

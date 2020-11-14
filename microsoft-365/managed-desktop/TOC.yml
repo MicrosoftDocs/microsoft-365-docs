@@ -32,6 +32,8 @@
           href: service-description/security.md
         - name: Security operations
           href: service-description/security-operations.md
+        - name: Privacy
+          href: service-description/privacy-personal-data.md
         - name: Updates
           href: service-description/updates.md
         - name: Support
@@ -59,6 +61,8 @@
           href: get-ready/mapped-drives.md
         - name: Prepare certificates and network profiles
           href: get-ready/certs-wifi-lan.md
+        - name: Prerequisites for guest accounts
+          href: get-ready/guest-accounts.md
         - name: Prepare printing resources
           href: get-ready/printing.md
         - name: Prepare apps
@@ -66,6 +70,11 @@
           items: 
             - name: Working with Microsoft Consulting Services
               href: get-ready/apps-MCS.md
+        - name: Use the Readiness assessment tool
+          href: get-ready/readiness-assessment-tool.md
+          items:
+            - name: Fix issues found by the readiness assessment tool
+              href: get-ready/readiness-assessment-fix.md
     - name: Get started with Microsoft Managed Desktop
       href: get-started/index.md
       items: 
@@ -93,6 +102,8 @@
               href: get-started/register-reused-devices-self.md
         - name: Get your users ready to use devices
           href: get-started/get-started-devices.md
+        - name: First-run experience with Autopilot and the Enrollment Status Page 
+          href: get-started/esp-first-run.md
         - name: Get started with app control
           href: get-started/get-started-app-control.md
         - name: Deploy apps
@@ -102,6 +113,10 @@
               href: get-started/project-visio.md
             - name: New Microsoft Edge
               href: get-started/edge-browser-app.md
+            - name: Microsoft 365 Apps for Enterprise
+              href: get-started/m365-apps.md
+            - name: Microsoft Teams
+              href: get-started/teams.md
     - name: Working with Microsoft Managed Desktop
       href: working-with-managed-desktop/index.md
       items: 
@@ -123,7 +138,7 @@
               href: working-with-managed-desktop/security-update-insights.md
         - name: Admin support
           href: working-with-managed-desktop/admin-support.md
-        - name: End user support
+        - name: User support
           href: working-with-managed-desktop/end-user-support.md
         - name: Manage apps
           href: working-with-managed-desktop/manage-apps.md

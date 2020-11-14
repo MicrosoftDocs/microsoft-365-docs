@@ -28,15 +28,11 @@ ms.custom:
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Some of the information in this article may not apply to Office 365 operated by 21Vianet.
+> Some of the information in this article might not apply to Office 365 operated by 21Vianet.
 
 ::: moniker-end
 
 We're continuously adding new features to [the Microsoft 365 admin center](microsoft-365-admin-center-preview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
-
-> [!IMPORTANT]
-> **"Classic" admin center retirement starting in March**<br><br>
-When you sign in to the Microsoft 365 admin center, you'll now go to the new admin center every time. And in March, we started disabling the ability to switch back to the classic admin center. For now, you can still switch back, but as the new admin center comes to parity (and exceeds it) we will turn off the switch for all organizations. <br><br> *Last updated: May 11, 2020*
 
 And if you'd like to know what's new with other Microsoft cloud services:
 
@@ -44,9 +40,142 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [What's new in the Exchange admin center](https://docs.microsoft.com/Exchange/whats-new)
 - [What's new in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
-- [What's new in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [What's new in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
 - [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office updates](https://docs.microsoft.com/OfficeUpdates/)
+
+## Ignite 2020 (August & September)
+
+Welcome to Microsoft Ignite - our first online-only Ignite. We hope to see you in one of our sessions: [Microsoft Ignite 2020 Session Catalog](https://myignite.microsoft.com/sessions). Here's just a few of the things we'll be talking about at Ignite. 
+> [!NOTE]
+> Not all features are going to be available to everyone right away. If you aren't seeing the new features, [join Targeted Release](manage/release-options-in-office-365.md).
+
+### Multi-tenant management
+
+We've developed a set of features for multi-tenant admins like you to get your job done faster and more efficiently.
+
+- **Your tenants**: Quickly switch between the tenants you manage.
+- **All tenants**: A new page where you can quickly see the health of all your tenants' services, any open service requests, your products and billing, recommended setup tasks, and the number of users in that tenant.
+- **Setup**: The multi-tenant Setup page gives you a list view of the Setup page, but organized for many tenants. You can see which features aren't turned on, which tasks are complete for all tenants, tasks that tenants still need to complete. This view will help you keep track of feature adoption and to make sure the recommended security setup tasks are always done.
+- **Service health**: The service health view shows you if any incidents or advisories are affecting the tenants. It will even tell you how many of your managed tenants are affected. Just select an incident to get more information on the overview tab, then switch over to the Tenants affected tab to drill down and support that tenant.
+- **Cross-tenant mailbox migrations** is a new service, now in public preview, that lets you move mailboxes between tenants without the need to offboard and then onboard mailboxes. 
+- **Cross-tenant domain sharing**: Soon, you can join a private preview for capabilities that allow you to share a domain across multiple tenants. For example, if Contoso acquires Wingtip Toys, Contoso can share the domain with Wingtip Toys so that people in both tenants can use "contoso.com" as their email addresses.
+
+![Service health page for multi-tenant with an incident selected and the Tenants affected tab open. The navigation menu has All tenants, Setup, and Service health as the only options.](../media/MAC-WN-MTinServiceHealth.png)
+
+### Monitor your most important accounts
+
+You can monitor and track failed or delayed email messages sent to your users who have a high business impact, like your CEO. You track priority accounts by adding users to your priority accounts list in the Microsoft 365 admin center. Add executives, leaders, managers, or other users who have access to sensitive or high priority information.
+
+Priority accounts are only available to organizations that meet both of the following requirements:
+
+- Office 365 E3 or Microsoft 365 E3, or Office 365 E5 or Microsoft 365 E5.
+- At least 10,000 licenses and at least 50 monthly active Exchange Online users.
+
+![Setup page for the feature: Monitor your most important accounts](../media/MAC-WN-PriorityAccounts.png)
+
+There are two ways to get started:
+
+- Go to **Users**, and then in the "more actions" menu select **Manage priority accounts** to add users to the list.
+- Go to **Setup**, find the setup task **Monitor your most important accounts**, and then select **Get started**.
+
+For more info on priority accounts, check out [Monitoring priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) and [Email issues for priority accounts](https://docs.microsoft.com/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts).
+
+### Search faster and get better results from any page
+
+We've started rolling out a new Search experience for the admin center, and we can't wait for you to try it out.
+![Search box has moved to the banner region. Alt+S to search from any page.](../media/MAC-WN-GlobalSearch.png)
+
+- The Search box moved to the header area where it says "Microsoft 365 admin center" so you now search from any page, not just the Home page. We've even got a shortcut: **Alt+S**.
+- Search is smarter and will give you better results, even faster. Try typing "2fa" to get started.
+- Search results are organized by the type of item or action you can take.
+  - **Users**: Select the user's name and you can edit that user right there. If you select the "more actions" menu next to their name, you can reset their password. You can search by display name, last name, first name, username or primary email address, and email aliases. But to get an exact match, search by primary email address or username.
+  - **Groups**: Edit the group from any page, add members, assign owners.
+  - **Actions**: Similar to how you can search for a user and then reset their password, you can also search "reset password" from any page and then reset one or more passwords for users.
+  - **Navigation**: Results under Navigation can quickly help you get to a page in the admin center quickly. For example, searching "roles" will take you to the Roles page for Azure AD roles.
+  - **Settings**: Search for any setting related to your organization, the services you subscribe to, and security and privacy settings. 
+  - **Domains**: You can find quick links to your domains, and then the link will take you to that domain's Overview and health page.
+  - **Documentation**: If we can't find a result for you, we'll try to find some documentation to help. It takes a little longer for the curated list of articles to find a match, so wait a second to let Search find the results. 
+  - **Feedback**: Didn't find what you were looking for? Send us feedback from Search. We will add searching functionality for more pages and more features across the admin center.
+
+### Microsoft 365 admin mobile app
+
+The [Microsoft 365 admin mobile app](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app), which is included with your subscription, lets you manage Microsoft 365 from your mobile device so you can get away from your desk to do every day tasks. In fact, there are over 90 features in the app--and we just added a few more:
+
+- **Support for Microsoft Intune's Mobile Application Management and Conditional Access policies**: You can now use your personal device to manage Microsoft 365 even if your org has turned on Intune's Mobile Application Management and conditional access policies.
+- **Message center notifications**: Turn on message center notifications at **Settings** > **Notifications** if you wish to be alerted about new message center posts. Through notifications, we want to ensure you stay informed about important information and events across your tenant.
+- **Billing alerts**: You can also turn on billing notifications at **Settings** > **Notifications** if you want to get billing notifications on your device if a subscription is about to expire.
+- **Dark mode**: Welcome to the dark side of the mobile app. This was one of our most requested features. Go to **Settings** > **Themes** to turn it on.
+- **Report an issue**: You can now report an issue in the app or view issues reported by other admins. Visit **Service health** to check it out.
+
+![The Health page in Microsoft 365 admin app with notifications for message center, service health, billing alerts.](../media/MAC-WN-AdminMobileApp.png)
+
+### Usage recommendations for small and medium businesses
+
+Small and medium businesses might get a recommendation on the **Home** page if some of the people in the org aren't actively using Teams, OneDrive, or Office apps. When you view the recommendation, you can quickly email Microsoft training to inactive users to help them get started with the app and to make sure you are getting the full value from your subscriptions.
+
+### Remote work collection
+
+In October, we'll be adding a remote work collection to help small business owners and their staff get online and working remotely.  **Remote work essentials** setup is a curated list of all features Microsoft recommends to securely enable remote work and to collaborate effectively. In a couple of weeks, you can try it out in **Setup** > **Remote work essentials**.
+
+![Remote work essentials page in Setup with 7 tasks not started.](../media/MAC-WN-RemoteWork.png)
+
+For more information about how to securely allow remote work and a handy web address that's easy to remember and share, go to [aka.ms/remote-business](https://aka.ms/remote-business).
+
+### Need help? moving to more admin centers
+
+We're continuously looking at and updating the content and tools to keep up with changes in the product. We now have many more self-serve diagnostic tools to help you resolve issues quickly and efficiently. Here are a few that were recently added:
+
+- Change your Exchange Web Service throttling policy
+- Checking status of Teams provisioning and validation to specific users
+- Fix DKIM setup issues
+- Diagnose Intune user enrollment errors
+
+And we are rolling out the new and improved support experience you already see in the Microsoft 365 admin center to some of the other admin centers. Teams Admin Center and Security and Compliance Admin Centers already have this new experience. And soon, **Exchange admin center**, **SharePoint admin center**, and **Office.com** will be updated along with this new help experience for admins.
+
+### Manage changes with Microsoft Planner
+
+In May, we announced that you'll soon be able to sync Message center posts to Microsoft Planner and now it's available for everyone to use.  You can now create tasks from messages, assign them, and track them to completion. The first time, you select **Planner syncing** you'll need to connect to the appropriate plan.
+
+![Message center page with 'planner syncing' highlighted in the command bar next to the preferences button.](../media/MAC-WN-MCPlannerSync.png)
+
+To learn more about it, check out this article and video to see how it works: [Track your message center posts in Planner](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner)
+
+### Documentation, Training, and Videos
+
+- Brand new and just in time for Microsoft Ignite--[The Virtual Hub](https://adoption.microsoft.com/virtual-hub/). Deep dive into technical training for IT pros and developers. Quickly find around 20 new videos as part of #SIDETRACKED, the name of the Ignite admin track this year.
+- [What's new with Microsoft 365](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) video series: This month, we cover new features available in Whiteboard for Teams and on the web, how to automate user provisioning to Azure AD, new Power Automate triggers and actions in Teams, and more. And stay tuned for next month, where we'll have a recap of all the great things happening at Ignite!
+- We did a redesign of the [Microsoft 365 documentation](https://docs.microsoft.com/microsoft-365) page that focuses on solutions first. We'll highlight new solutions as they become available on this page, so keep an eye out.
+
+![New landing page for Microsoft 365 solutions documentation with solutions like "Empower remote workers".](../media/MAC-WN-M365Docspage.png)
+
+## July 2020
+
+### Getting ready for Ignite 2020
+
+As we're moving into Ignite season at Microsoft, we're not releasing as many features so that we have a lot to talk about during our sessions.
+
+The next update to this article will be on opening day of our first online-only Ignite. And this year, it is free to attend! Check it out, get signed up: [Microsoft Ignite 2020](https://www.microsoft.com/ignite).
+
+### Your products
+
+There has been a lot of work done in the subscriptions management to make the page faster to load, faster to find what you're looking for, and to meet the web accessibility standards ([WCAG 2.1 guidelines](http://www.w3.org/TR/WCAG21/)).
+
+- **Table redesign**: The table was redesigned so that you can group similar subscriptions. Go to **Billing** > **Your products**.
+- **Product details**: Get more details than ever about your subscriptions by selecting the product in the list.
+- **Do it all from here**: And you don't have to go to jump around several pages to manage one product. For example, if you need to cancel a subscription, the panel will open to do the action right there.
+
+![Your Products page with the Cancel Subscription panel open.](../media/MAC-WN-SubscrDetails.png)
+
+### Domains
+
+Domain management can be complicated, and we've released a new feature to make that easier. Go to Settings > Domains and then select a domain to get more information about your domain and the domain's health.
+
+:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Domains details page for contoso.com":::
+
+### Docs, training, and videos (July 2020)
+
+[What's new with Microsoft 365](https://youtu.be/m1Nu8WJgCDY) video series: This month, we cover the new Yammer experience for web and mobile, how to integrate the Yammer Communities app for Microsoft Teams, new policy packages to support Firstline Workers and managers, and more.
 
 ## June 2020
 
@@ -58,12 +187,11 @@ A few months ago, we added a setting that lets you manage the [What's New messag
 
 - [Getting started with Teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
 
-
 ## May 2020
 
 ### New update channel for Office
 
-On May 12, we announced the availability of a new update channel for Office:  Monthly Enterprise Channel. This update channel provides your users with new Office features once a month, on the 2nd Tuesday of the month.
+On May 12, we announced the availability of a new update channel for Office:  Monthly Enterprise Channel. This update channel provides your users with new Office features once a month, on the second Tuesday of the month.
 
 If you allow your users to self-install Office from the portal, you can select Monthly Enterprise Channel for them. To do this, sign in to the Microsoft 365 admin center and go to **Show all** >**Settings** > **Org settings** > **Services** > **Office software download settings**. If you select **Once a month (Monthly Enterprise Channel)**, then any new self-installs of Office will be configured to use Monthly Enterprise Channel.
 
@@ -95,9 +223,9 @@ Just this month, we released a new site on [https://docs.microsoft.com](https://
 - Industry specific guidance
 - Enterprise architecture design principals
 
-### Docs, training, and videos
+### Docs, training, and videos (May)
 
-- **What's new in Microsoft 365 video series**: This month, we cover the new support experience in the Teams admin and Security and Compliance Centers, Planner integration with the Message Center, and the new 3x3 video layout in Microsoft Teams. [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- **What's new in Microsoft 365 video series**: This month, we cover the new support experience in the Teams admin and Security and Compliance Centers, Planner integration with the Message Center, and the new 3x3 video layout in Microsoft Teams. 
 - The [Microsoft 365 admin center help](https://docs.microsoft.com/microsoft-365/admin/) hub page was updated to help you find what you need more quickly. And if you go look at that page right now, we've added a card to inform you of important updates and changes.
 
 ## April 2020
@@ -230,7 +358,7 @@ We received a lot of feedback from partners and admins about the challenges of m
 ![Screen capture: top of the Home page showing organization profile name with the switcher icon.](../media/MAC-Organization-switcher.png)
 
 2. In the organization switcher, select the org you want to manage.
-![Screen capture: top of the Home page showing organization profile name with the switcher icon.](../media/MAC-OrgSwitcherSelected.png)
+![Screen capture: My organizations tenant switcher with Consolidated Messenger tenant highlighted](../media/MAC-OrgSwitcherSelected.png)
 
 That's literally it!!!
 
@@ -336,7 +464,7 @@ In November, we released quite a few learning paths to [Microsoft Learn](https:/
 - [Protect identity and access with Microsoft 365](https://docs.microsoft.com/learn/paths/m365-identity/)
 - [Protect enterprise information with Microsoft 365](https://docs.microsoft.com/learn/paths/m365-information-protection/)
 - [Manage security with Microsoft 365](https://docs.microsoft.com/learn/paths/m365-security-management/)
-- [Defend against threats with Microsoft 365 and Microsoft threat protection](https://docs.microsoft.com/learn/paths/m365-security-threat-protection/)
+- [Defend against threats with Microsoft 365 Defender](https://docs.microsoft.com/learn/paths/m365-security-threat-protection/)
 - [Manage team collaboration with Microsoft Teams](https://docs.microsoft.com/learn/paths/m365-manage-team-collaboration/)
 - [Collaborate with SharePoint in Microsoft 365](https://docs.microsoft.com/learn/paths/m365-teams-sharepoint/)
 
@@ -419,7 +547,7 @@ We've got some updates for billing and subscriptions this month:
 
 Setup now has categories and sections, including a **Recommended for you** section where we intelligently suggest your next step in turning on features and setting up your organization. We've also added a new feature to set up:
 
-- **Office Advanced Threat Protection** - If your org is licensed to use Office ATP and you haven't configured it or turned it on yet, you'll see this page. Go to **Setup** to try it out.
+- **Microsoft Defender for Office 365** - If your org is licensed to use Microsoft Defender for Office 365 and you haven't configured it or turned it on yet, you'll see this page. Go to **Setup** to try it out.
 
 ### Report an issue (August)
 

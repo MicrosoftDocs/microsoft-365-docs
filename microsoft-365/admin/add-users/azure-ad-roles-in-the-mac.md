@@ -57,12 +57,15 @@ Here's a list of all the admin roles available in the Microsoft 365 admin center
 |Groups admin   |Creates groups and manages all groups settings across admin centers.|
 |Guest inviter     |    Manages Azure Active Directory B2B guest user invitations.     |
 |Helpdesk admin     | Resets passwords and re-authenticates for all non-admins and some admin roles, manages service requests, and monitors service health.      |
+|Insights admin     | Manages all aspects of the Microsoft 365 Insights application, reads Azure Active Directory information, can monitor service health and create and manage service requests.      |
+|Insights business admin     | Read reports and insights in the Microsoft 365 Insights application.      |
 |Intune admin     | Full access to Intune, manages users and devices to associate policies, creates and manages groups.      |
 |Kaizala admin     |    Full access to all Kaizala management features and data, manages service requests.     |
 |License admin     |     Assigns and removes licenses from users and edits their usage location.    |
 |Message center privacy reader     |    Access to data privacy messages in Message center, gets email notifications.     |
 |Message center reader     | Reads and shares regular messages in Message center, gets weekly email digests, has read-only access to users, groups, domains, and subscriptions.     |
 |Office Apps admin    |   Manages cloud-based policies for Office and the What's New content that users see in their Office apps.   |
+|Password admin    |   Reset passwords of users who are non-administrators or members of the following roles: Directory Readers, Guest Inviter, Password Administrator. This role can't grant the ability to manage service requests or monitor service health.   |
 |Power BI admin    |   Full access to Power Bl management tasks, manages service requests, and monitors service health.   |
 |Power platform admin     |    Full access to Microsoft Dynamics 365, PowerApps, data loss prevention policies, and Microsoft Flow.     |
 |Privileged role admin     |    Manages role assignments and all access control features of Privileged Identity Management.     |

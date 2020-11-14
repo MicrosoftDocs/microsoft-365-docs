@@ -1,5 +1,5 @@
 ---
-title: "Records management"
+title: "Records Management in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -10,7 +10,10 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365solution-mig
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -20,7 +23,7 @@ ms.custom:
 description: With records management in Microsoft 365, you can apply your retention schedules into a file plan that manages retention, records declaration, and disposition.
 ---
 
-# Learn about records management
+# Learn about records management in Microsoft 365
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
@@ -48,7 +51,7 @@ In addition to the online documentation, you might find it useful to listen to t
 
 ## Records
 
-When content is marked as a record:
+When content is declared a record:
 
 - Restrictions are placed on the items in terms of what [actions are allowed or blocked](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
@@ -56,31 +59,31 @@ When content is marked as a record:
 
 - You have proof of disposition when the items are deleted at the end of their retention period.
 
-You use [retention labels](retention.md#retention-labels) to mark content as a record. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.
+You use [retention labels](retention.md#retention-labels) to mark content as a **record**, or a **regulatory record**. The difference between these two are explained in the next section. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record or a regulatory record.
 
-By using retention labels to mark content as records, you can implement a single and consistent strategy for managing records across your Microsoft 365 environment.
+By using retention labels to declare records, you can implement a single and consistent strategy for managing records across your Microsoft 365 environment.
 
 ### Compare restrictions for what actions are allowed or blocked
 
-Use the following table to identify what restrictions are placed on content as a result of applying a standard retention label, and retention labels that mark content as a record. 
+Use the following table to identify what restrictions are placed on content as a result of applying a standard retention label, and retention labels that mark content as a record or regulatory record. 
 
-A standard retention label has retention settings and actions but doesn't mark content as a record.
+A standard retention label has retention settings and actions but doesn't mark content as a record or a regulatory record.
 
 >[!NOTE] 
 > For completeness, the table includes columns for a locked and unlocked record, which is applicable to SharePoint and OneDrive, but not Exchange. The ability to lock and unlock a record uses [record versioning](record-versioning.md) that isn't supported for Exchange items. So for all Exchange items that are marked as a record, the behavior maps to the **Record - locked** column, and the **Record - unlocked column** is not relevant.
 
 
-|Action| Retention label |Record - locked| Record - unlocked|
-|:-----|:-----|:-----|:-----|:-----|
-|Edit contents|Allowed | **Blocked** | Allowed|
-|Edit properties, including rename|Allowed |Allowed | Allowed|
-|Delete|Allowed <sup>1</sup> |**Blocked** | **Blocked**|
-|Copy|Allowed |Allowed | Allowed|
-|Move within container <sup>2</sup>|Allowed |Allowed | Allowed|
-|Move across containers <sup>2</sup>|Allowed |Allowed if never unlocked | Allowed|
-|Open/Read|Allowed |Allowed | Allowed|
-|Change label|Allowed |Allowed - container admin only | Allowed - container admin only|
-|Remove label|Allowed |Allowed - container admin only | Allowed - container admin only|
+|Action| Retention label |Record - locked| Record - unlocked| Regulatory record |
+|:-----|:-----|:-----|:-----|:-----|:-----|
+|Edit contents|Allowed | **Blocked** | Allowed | **Blocked**|
+|Edit properties, including rename|Allowed |Allowed | Allowed| **Blocked**|
+|Delete|Allowed <sup>1</sup> |**Blocked** |**Blocked**| **Blocked**|
+|Copy|Allowed |Allowed | Allowed| Allowed|
+|Move within container <sup>2</sup>|Allowed |Allowed | Allowed| Allowed|
+|Move across containers <sup>2</sup>|Allowed |Allowed if never unlocked | Allowed| **Blocked**|
+|Open/Read|Allowed |Allowed | Allowed| Allowed|
+|Change label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
+|Remove label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
 
 Footnotes:
 
@@ -91,9 +94,17 @@ Message a user sees if they try to delete a labeled document in SharePoint:
 
 ![Message that item wasn't deleted from SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-
 <sup>2</sup>
 Containers include SharePoint document libraries and Exchange mailboxes.
+
+>[!IMPORTANT] 
+> The most important difference for a regulatory record is that after it is applied to content, nobody, not even a global administrator, can remove the label. 
+>
+> In addition, retention labels configured for regulatory records have the following admin restrictions:
+> - The retention period can't be made shorter after the label is saved, only extended.
+> - These labels aren't supported by auto-labeling policies, and must be applied by using [retention label policies](create-apply-retention-labels.md). 
+> 
+> Because of these irreversible actions, make sure you really do need to use regulatory records before you select this option for your retention labels. To help prevent accidental configuration, this option is not available by default but must first be enabled by using PowerShell. Instructions are included in [Declare records by using retention labels](declare-records.md).
 
 ## Next steps
 

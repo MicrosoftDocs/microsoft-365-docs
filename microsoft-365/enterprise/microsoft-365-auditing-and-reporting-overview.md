@@ -1,7 +1,7 @@
 ---
 title: "Auditing and reporting in Microsoft cloud services"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -32,7 +32,7 @@ These centers include navigation panes for access to several features:
 
 - **Alerts:** Enables you to manage alerts, view security-related alerts, and manage advanced alerts using [Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
 - **Permissions:** Enables you to [assign permissions](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center) such as Compliance Administrator, eDiscovery Manager, and others to people in your organization so they can perform tasks in these centers. You assign permissions for most features in each center, but other permissions must be configured using the Exchange admin center and SharePoint admin center.
-- **Threat management:** Enables you to create and apply device management policies using [Microsoft 365 Mobile Device Management](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a), to set up [data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) (DLP) policies for your organization, to configure email filtering, anti-malware, DomainKeys Identified Mail (DKIM), safe attachments, safe links, and OAuth apps.
+- **Threat management:** Enables you to create and apply device management policies using [Basic Mobility and Security for Microsoft 365](https://support.microsoft.com/office/overview-of-basic-mobility-and-security-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a), to set up [data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) (DLP) policies for your organization, to configure email filtering, anti-malware, DomainKeys Identified Mail (DKIM), safe attachments, safe links, and OAuth apps.
 - **Data governance:** Enables you to [import email or SharePoint data from other systems into Microsoft 365](https://support.office.com/article/Import-PST-files-or-SharePoint-data-to-Office-365-ba688e0a-0fcb-4bd7-8e57-2b669564ea84), [configure archive mailboxes](https://support.office.com/article/Enable-archive-mailboxes-in-the-Office-365-Security-Compliance-Center-268a109e-7843-405b-bb3d-b9393b2342ce), and set [retention policies](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) for email and other content within your organization.
 - **Search & investigation:** Provides [content search](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a), [audit log](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c), quarantine, and [eDiscovery case management](https://support.office.com/article/Manage-eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-edea80d6-20a7-40fb-b8c4-5e8c8395f6da) tools to quickly drill into activity across Exchange Online mailboxes, groups and public folders, SharePoint Online, and OneDrive for Business.
 - **Reports:** Enables you to quickly access [reports](https://support.office.com/article/Reports-in-the-Office-365-Security-Compliance-Center-7acd33ce-1ec8-49fb-b625-43bac7b58c5a) for SharePoint Online, OneDrive for Business, Exchange Online, and Azure AD.

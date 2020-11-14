@@ -25,6 +25,9 @@ description: "Summary: Planning and implementation guidance for fast-moving orga
 
 # Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
  **Summary:** Planning and implementation guidance for fast-moving organizations that have an increased threat profile.
 
 If your organization is agile, you have a small IT team, and your threat profile is higher than average, this guidance is designed for you. This solution demonstrates how to quickly build an environment with essential cloud services that include secure controls from the start. This guidance includes prescriptive security recommendations for protecting data, identities, email, and access from mobile devices.
@@ -57,6 +60,6 @@ For additional security features for demonstration or proof of concept, see [Off
 
 ## See Also
 
-[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
-[Microsoft Cloud IT architecture resources](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources)
+[Microsoft Cloud IT architecture resources](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
