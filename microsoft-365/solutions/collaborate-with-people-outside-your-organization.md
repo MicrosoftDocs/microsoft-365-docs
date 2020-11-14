@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Collaborating with people outside your organization"
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -11,6 +11,7 @@ ms.collection:
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-scenario
+- m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
 - seo-marvel-jun2020
