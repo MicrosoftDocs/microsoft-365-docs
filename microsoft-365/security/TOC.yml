@@ -165,6 +165,8 @@
                       href: mtp/advanced-hunting-alertinfo-table.md
                     - name: AppFileEvents
                       href: mtp/advanced-hunting-appfileevents-table.md
+                    - name: CloudAppEvents
+                      href: mtp/advanced-hunting-cloudappevents-table.md
                     - name: DeviceEvents
                       href: mtp/advanced-hunting-deviceevents-table.md
                     - name: DeviceFileCertificateInfo
