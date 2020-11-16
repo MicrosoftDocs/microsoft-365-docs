@@ -63,7 +63,7 @@ Note that that when an application switches to using login.microsoftonline.com a
 2. Update Azure AD Graph endpoint to be https://graph.windows.net
 3. Update MS Graph endpoint to be https://graph.microsoft.com
 4. Update any German cloud endpoints like Exchange Online, SharePoint Online etc. that are used by your applications to be those of the public cloud.
-5. Update environment parameters to be AzurePublic (instead of AzureGermany) in administrative tools and scripts like
+5. Update environment parameters to be AzurePublic (instead of AzureGermany) in administrative tools and scripts for:
 
     - Azure PowerShell
     - Azure AD PowerShell (MSOnline)
@@ -76,9 +76,9 @@ If you publish an application that is available to users outside of your tenant,
 
 ### Additional considerations
 
-Here are some additional considerations for Azure Active Directory (Azure AD).
+Here are some additional considerations for Azure AD:
 
-- If you are using federated authentication:
+- For federated authentication:
 
   - You must not create promote, or demote a federated domain while the tenant transition is in process. After the migration to the Office 365 services Azure service is complete (the tenant is fully completed), you can resume managing federated domains.
 
@@ -99,7 +99,7 @@ Here are some additional considerations for Azure Active Directory (Azure AD).
     - Require Approved App
     - Require App Protection Policy
     
-  - The Conditional Access policy blade gives a false warning () about security defaults being enabled for the tenant even when it is disabled, and Conditional Access policies already exist for the tenant. You should ignore the warning or use the Office 365 services portal to manage Conditional Access policies. 
+  - The Conditional Access policy blade gives a false warning about security defaults being enabled for the tenant even when it is disabled, and Conditional Access policies already exist for the tenant. You should ignore the warning or use the Office 365 services portal to manage Conditional Access policies. 
 
 - Intune scenarios are supported only against WW endpoints, once tenant migration, including all office workloads migrations are completed
 - Microsoft Cloud Deutschland users who use the Mobile App Notification method for multi-factor authentication (MFA) requests see the UserObjectId (GUID) instead of the Username (UPN) in the Microsoft Authenticator app.  Once migration of the Azure AD tenant is completed and hosted in Office 365 services, new Microsoft Authenticator activations will display Username (UPN). Existing Microsoft Authenticator accounts will continue to display the UserObjectId (GUID) but will continue to work for Mobile App Notifications. 
@@ -113,7 +113,7 @@ Here are some additional considerations for Azure Active Directory (Azure AD).
 
 - myaccount.msft.com will only work after cutover. Links will produce a “something went wrong” error until that time.
 - Users in OWA that access a shared mailbox in the other environment (for example, a user in the Germany environment accesses a shared mailbox in the global environment) will be prompted to authenticate a second time. The user must first authenticate and access their mailbox in outlook.office.de, then open the shared mailbox that is in outlook.office365.com. They will need to authenticate a second time when accessing the shared resources that are hosted in the other service.
-- For existing Microsoft Cloud Deutschland customers or those in transition, when a shared mailbox is added to Outlook using **File > Info > Add Account**, viewing calendar permissions may fail. (The Outlook client attempts to use the Rest API https://outlook.office.de/api/v2.0/Me/Calendars) Customers wishing to add an account to view calendar permissions can add the registry key as described in [User experience changes for sharing a calendar in Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) to ensure this action will succeed. This registry Key can be deployed organization-wide using Group Policy.
+- For existing Microsoft Cloud Deutschland customers or those in transition, when a shared mailbox is added to Outlook using **File > Info > Add Account**, viewing calendar permissions may fail (the Outlook client attempts to use the Rest API https://outlook.office.de/api/v2.0/Me/Calendars.) Customers wishing to add an account to view calendar permissions can add the registry key as described in [User experience changes for sharing a calendar in Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) to ensure this action will succeed. This registry Key can be deployed organization-wide using Group Policy.
 - During Migration Phase, cmdlets `New-migrationEndpoint`, `Set-MigrationEndpoint`, and `Test-MigrationsServerAvailability` can result in errors [Error on proxy]. This happens when the arbitration mailbox has migrated to WW but the admin mailbox has not or vice versa. To resolve this, while creating the tenant powershell session use the arbitration mailbox as routing hint in the connectionuri. For example: `New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid?email=Migration.8f3e7716-2011-43e4-96b1-aba62d229136@TENANT.onmicrosoft.de" -Credential $UserCredential -Authentication Basic -AllowRedirection`
 
 - If you are using Exchange Online hybrid:
@@ -126,7 +126,7 @@ To find out more information about any actions needed during the migration phase
 
 ## Office Services
 
-- The Office Most Recently Used (MRU) service is a cutover from the Germany service to Office 365 services, not a migration. Only MRU links from the Office 365 services side will be visible after migration from the Office.com portal. MRU links from Germany service are not visible as MRU links in Office 365 services. Office 365 services MRU links are accessible only after the tenant migration is complete.
+The Office Most Recently Used (MRU) service is a cutover from the Germany service to Office 365 services, not a migration. Only MRU links from the Office 365 services side will be visible after migration from the Office.com portal. MRU links from Germany service are not visible as MRU links in Office 365 services. Office 365 services MRU links are accessible only after the tenant migration is complete.
 
 ## SharePoint Online and OneDrive
 
