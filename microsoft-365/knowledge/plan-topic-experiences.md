@@ -49,6 +49,8 @@ Site name,URL
 
 We don't recommend choosing **No sites** because it prevents topics from being automatically created or updated. However, you can choose this option if you want to set up topic experiences and then add sites later.
 
+We recommend you create a process for users or knowledge managers to request individual sites be removed from topic discovery if needed in your organization.
+
 ## User permissions
 
 The user permissions that you specify determine which people in your organization interact with topics and what they can do.
@@ -85,7 +87,7 @@ We recommend **Everyone in my organization**, but if you're doing a pilot you ma
 
 ## Knowledge rules
 
-As an administrator, you can exclude certain topics from topic experiences. This is useful if you want to keep sensitive data from appearing in topics. While knowledge managers can exclude topics in the topic center, topics excluded by the administrator are not even visible to knowledge managers. (Knowledge managers can also [exclude topics in the topic center](exclude-topics.md) after discovery.)
+As an administrator, you can exclude certain topics from topic experiences. This is useful if you want to keep sensitive data from appearing in topics. While knowledge managers can exclude topics in the topic center, topics excluded by the administrator are not even visible to knowledge managers. (Knowledge managers can also [remove topics in the topic center](exclude-topics.md) after discovery.)
 
 If you want to exclude topics at the administrator level, you must add them to a .csv file and upload the file. You can do this during setup or later.
 
