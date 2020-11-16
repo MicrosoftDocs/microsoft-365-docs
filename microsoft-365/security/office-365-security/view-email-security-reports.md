@@ -167,6 +167,10 @@ If you click **View details table**, you can see the following details:
 
 To go back to the report view, click **View report**.
 
+## Mail latency report
+
+The **Mail latency report** contains information on the mail delivery and detonation latency experienced within your organization. For more information, see [Mail latency report](view-reports-for-atp.md#mail-latency-report).
+
 ## Sent and received email report
 
 The **Sent and received email** report contains information about malware, spam, mail flow rules (also known as transport rules), and advanced malware detections after email enters the service. For more information, see [Sent and received email report](view-mail-flow-reports.md#sent-and-received-email-report).
