@@ -37,7 +37,7 @@ Learn about the benefits of ISO/IEC 27001 on the Microsoft Cloud: [Download the 
 - [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
 - Azure DevOps Services
 - Microsoft Cloud App Security
-- Microsoft Defender Advanced Threat Protection
+- Microsoft Defender for Endpoint
 - [Dynamics 365, Dynamics 365 Government, and Dynamics 365 Germany](https://aka.ms/d365-compliance-list)
 - Microsoft Graph
 - Microsoft Healthcare Bot

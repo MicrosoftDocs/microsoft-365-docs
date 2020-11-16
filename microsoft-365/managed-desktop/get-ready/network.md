@@ -55,7 +55,7 @@ Delivery Optimization | [Configure Delivery Optimization for Windows 10 updates]
 Microsoft 365 | [Microsoft 365 URL and IP address ranges](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Hybrid identity required ports and protocols](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) and [Active Directory and Active Directory Domain Services Port Requirements](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune network configuration requirements](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Network endpoints for Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
-Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP endpoints](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Microsoft Defender for Endpoint | [Microsoft Defender for Endpoint requirements](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 Windows Autopilot | [Windows Autopilot Networking Requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
 
 <!---

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Collaborate with guests in a team"
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -11,11 +11,12 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn about the Microsoft 365 configuration steps necessary to set up a team for collaboration with guests in Teams."
+description: Learn about the Microsoft 365 configuration steps necessary to set up a team for task, conversation, and documentation collaboration with guests in Teams.
 ---
 
 # Collaborate with guests in a team

@@ -129,7 +129,7 @@ The following 15 services are available in the Microsoft Cloud Deutschland cloud
 3. Groups (Modern groups)
 4. Delve Profile
 5. Exchange Online Protection
-6. Advanced Threat Protection (ATP)
+6. Defender for Office 365
 7. Advanced eDiscovery
 8. Advance Data Governance
 9. SharePoint Online
@@ -149,7 +149,7 @@ There are currently 29 services available as part of Office 365 services in the 
 5. MyAnalytics
 6. Workplace Analytics
 7. Exchange Online Protection
-8. Advanced Threat Protection (ATP)
+8. Defender for Office 365
 9. Advanced eDiscovery
 10. Advanced Security Management
 11. Information Rights Management
@@ -217,7 +217,7 @@ During the migration from Microsoft Cloud Deutschland to the Office 365 services
 | Office 365 A1 for faculty\_DE (STANDARDWOFFPACK\_FACULTY\_DE) | Office 365 A1 for faculty (STANDARDWOFFPACK\_FACULTY) |
 | Office 365 A1 for students\_DE (STANDARDWOFFPACK\_STUDENT\_DE) | Office 365 A1 for students (STANDARDWOFFPACK\_STUDENT) |
 | Office 365 Advanced Compliance\_DE (EQUIVIO\_ANALYTICS\_DE) | Microsoft 365 E5 Compliance (INFORMATION\_PROTECTION\_COMPLIANCE) |
-| Office 365 Advanced Threat Protection (Plan 1)\_DE (ATP\_ENTERPRISE\_DE) | Office 365 Advanced Threat Protection (Plan 1) (ATP\_ENTERPRISE) |
+|Microsoft Defender for Office 365 (Plan 1)\_DE (ATP\_ENTERPRISE\_DE) |Microsoft Defender for Office 365 (Plan 1) (ATP\_ENTERPRISE) |
 | Office 365 Business Essentials\_DE (O365\_BUSINESS\_ESSENTIALS\_DE) | Microsoft 365 Business Basic (O365\_BUSINESS\_ESSENTIALS) |
 | Office 365 Business Premium\_DE (O365\_BUSINESS\_PREMIUM\_DE) | Microsoft 365 Business Standard (O365\_BUSINESS\_PREMIUM) |
 | Office 365 Business\_DE (O365\_BUSINESS\_DE) | Microsoft 365 Apps for business (O365\_BUSINESS) |

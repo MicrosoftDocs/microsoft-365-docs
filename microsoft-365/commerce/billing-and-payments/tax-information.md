@@ -94,21 +94,21 @@ Businesses in the following countries can provide their VAT number or local equi
 
 ## Europe, the Middle East, and Africa (EMEA)
 
-When you buy Microsoft 365 services in the European Union, this purchase is subject to Value-Added Tax (VAT).
+When you buy Microsoft 365 services in the EMEA region, this purchase could be subject to Value-Added Tax (VAT).
   
-- If you're located in a European Union Member State and you don't provide your valid local VAT ID, Microsoft Ireland Operations Ltd. will apply the current local VAT rate, based on the billing country your account is set to.
+- If you're located in a European Union Member State, Armenia, Belarus, Norway, Turkey, or United Arab Emirates, and you don't provide your valid local VAT ID, Microsoft Ireland Operations Ltd. will apply the current local VAT rate, based on the billing country your account is set to.
 
-- If you're located in Switzerland or Liechtenstein, the current Swiss VAT rate is applied, whether you provide your VAT ID or not.
+- If you're located in Liechtenstein, Russia, Serbia, South Africa, or Switzerland, the VAT is applied, whether you provide your VAT ID or not.
 
-- Generally, if you're located in an EMEA country outside the European Union and Switzerland/Liechtenstein, VAT isn't charged by Microsoft Ireland Operations Ltd.
-
-- Before we can validate your VAT ID, it must be available for verification in the VAT Information Exchange System (VIES). If your VAT ID can't be verified, contact your local tax authority.
+- For EU customers, before we can validate your VAT ID, it must be available for verification in the VAT Information Exchange System (VIES). If your VAT ID can't be verified, contact your local tax authority.
 
 You might qualify for VAT zero-rating if:
   
 - **You're in a European Union Member State outside Ireland:** You can provide your valid local VAT ID. This lets Microsoft Ireland Operations Ltd. to VAT zero-rate the transaction. However, you might have a local VAT accounting obligation. If you have any concerns, check with your tax advisers. For instructions, see [Add your VAT ID](#add-your-vat-id).
 
 - **You're in Ireland and have the relevant valid VAT exemption certification:** Microsoft Ireland Operations Ltd. may be entitled to exempt the transaction from VAT. If you don't, Microsoft Ireland Operations Ltd. applies the current Irish VAT rate, whether you provide a VAT ID or not.
+
+- **You're in Armenia, Belarus, Norway, Turkey, or United Arab Emirates:** You can provide your local VAT ID. This entitles Microsoft Ireland Operations Ltd. to VAT zero-rate the transaction. However, you may have a local VAT accounting obligation, so please check with your tax advisers if you have any concerns. For instructions, see [Add your VAT ID](#add-your-vat-id).
 
 ## Asia Pacific countries (APAC)
 
@@ -133,7 +133,7 @@ If your billing is done by Microsoft Corporation ([see your invoice](view-your-b
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the subscription that you want to update.
 3. On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.
-4. On the **Edit your service usage address** pane, in the **VAT number** box, enter your VAT ID, including the prefix, and without any spaces.
+4. On the **Edit service usage address** pane, in the **VAT number** box, enter your VAT ID, including the prefix, and without any spaces.
 5. Select **Save**.
 
 ## How taxes are calculated
