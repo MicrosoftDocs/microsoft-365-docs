@@ -118,7 +118,7 @@ Follow the steps below to add a custom record for a website or 3rd party service
 
 ## Registrars with Domain Connect
 
-[Domain Connect](https://www.domainconnect.org/) enabled registrars let you add your domain to Microsoft 365 in a three-step process that takes minutes. 
+Domain Connect enabled registrars let you add your domain to Microsoft 365 in a three-step process that takes minutes. 
   
 In the wizard, we'll just confirm that you own the domain, and then automatically set up your domain's records, so email comes to Microsoft 365 and other Microsoft 365 services, like Teams, work with your domain.
   
