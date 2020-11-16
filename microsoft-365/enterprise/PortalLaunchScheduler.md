@@ -23,7 +23,7 @@ description: "This article describes how you can launch your portal using the Po
 
 You can launch your portal using the Portal Launch Scheduler by first validating the tenant admin's ability to setup a waves for a new portal. Then the admin can validate a redirection of requests, based on the existence of a user in the active waves.
 
-For more information about launching a successful portal, follow the basic principles, practices, and recommendations detailed in [Creating, launching and maintaining a healthy portal](https://go.microsoft.com/fwlink/?linkid=2105838). 
+For more information about launching a successful portal, follow the basic principles, practices, and recommendations detailed in [Creating, launching and maintaining a healthy portal](https://go.microsoft.com/fwlink/?linkid=2149502). 
 
 ## App setup
 1. Uninstall if there an existing `Microsoft.Online.SharePoint.PowerShell` from your machine through the control panel.
