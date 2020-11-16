@@ -77,7 +77,7 @@ Private key state : Okay
 
 The affected devices will have the “Device state” with value of “Unknown”. If the output is “Device not joined” or whose “Device state” value is “Okay”, ignore the following guidance.
 
-Only for such devices which show that the device is joined (by virtue of deviceId, thumbprint etc) and whose “Device state” value is “Unknown”, admin should run the following commands in sequence, in the context of domain user signing on such Windows down-level devices:
+Only for such devices which show that the device is joined (by virtue of deviceId, thumbprint, etc.) and whose “Device state” value is “Unknown”, admin should run the following commands in sequence, in the context of domain user signing on such Windows down-level devices:
 
 ```
 %programfiles%\Microsoft Workplace Join\autoworkplace /leave
@@ -229,7 +229,7 @@ To find out more information about any actions needed during the migration phase
 
 ## IOS
 
-On iOS devices, user will need to manually remove any cached accounts from the Authenticator, un-registerthe  device as well as sign out from any native apps on their device.
+On iOS devices, user will need to manually remove any cached accounts from the Authenticator, un-register the  device as well as sign out from any native apps on their device.
 
 ### Step 1: If present, remove the account from the Authenticator app
 
