@@ -11,8 +11,6 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: 
-- M365-security-compliance  
 ms.topic: article
 search.appverid: 
 - MOE150
