@@ -47,16 +47,18 @@
               href: mtp/preview.md
             - name: Microsoft 365 security center
               href: mtp/overview-security-center.md
+            - name: Troubleshoot issues
+              href: ./mtp/troubleshoot.md
+            - name: Industry tests
+              href: ./mtp/top-scoring-industry-tests.md
+        - name: Plan
+          items: 
             - name: Prerequisites
               href: mtp/prerequisites.md
             - name: Data security and privacy
               href: mtp/data-privacy.md
             - name: Microsoft security portals
               href: mtp/portals.md
-            - name: Troubleshoot issues
-              href: ./mtp/troubleshoot.md
-            - name: Industry tests
-              href: ./mtp/top-scoring-industry-tests.md
         - name: Evaluate capabilities
           items: 
             - name: Trial lab overview
@@ -71,28 +73,33 @@
               href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
             - name: Generate a test alert
               href: mtp/generate-test-alert.md
-        - name: Run your pilot project in production
-          items: 
-            - name: Pilot overview
-              href: mtp/mtp-pilot.md
-            - name: Plan
-              href: mtp/mtp-pilot-plan.md
-            - name: Prepare
-              href: mtp/prepare-mtpeval.md
-            - name: Simulate attack
-              href: mtp/mtp-pilot-simulate.md
-            - name: Close and summarize
-              href: mtp/mtp-pilot-close.md
+        - name: Deploy
+          items:
+            - name: Turn on Microsoft Threat Protection
+              href: mtp/mtp-enable.md
+            - name: Run your pilot project in production
+              items: 
+                - name: Pilot overview
+                  href: mtp/mtp-pilot.md
+                - name: Plan
+                  href: mtp/mtp-pilot-plan.md
+                - name: Prepare
+                  href: mtp/prepare-mtpeval.md
+                - name: Simulate attack
+                  href: mtp/mtp-pilot-simulate.md
+                - name: Close and summarize
+                  href: mtp/mtp-pilot-close.md
+            - name: Deploy supported services
+              href: mtp/deploy-supported-services.md
+            
         - name: How-to guides
           items: 
             - name: Create a trial lab or pilot environment
               href: mtp/mtp-evaluation.md
             - name: Run pilot playbook
               href: mtp/mtp-pilot.md
-            - name: Deploy supported services
-              href: mtp/deploy-supported-services.md
-            - name: Turn on Microsoft 365 Defender
-              href: mtp/mtp-enable.md
+
+
             - name: Turn on FAQ
               href: mtp/mtp-enable-faq.md
             - name: Incidents
@@ -293,7 +300,9 @@
       href: ./office-365-security/index.md
       items: 
         - name: Overview
-          items: 
+          items:
+            - name: Security roadmap
+              href: ./office-365-security/security-roadmap.md
             - name: Exchange Online Protection
               items: 
                 - name: Exchange Online Protection overview
@@ -320,8 +329,6 @@
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: New Microsoft 365 security center
               href: ./mtp/overview-security-center.md
-            - name: Security roadmap
-              href: ./office-365-security/security-roadmap.md
             - name: Threat Explorer (and real-time detections)
               href: ./office-365-security/threat-explorer.md
             - name: AIR overview
@@ -378,7 +385,9 @@
               href: ./office-365-security/siem-server-integration.md
             - name: SIEM integration with Defender for Office 365
               href: ./office-365-security/siem-integration-with-office-365-ti.md
-            - name: Configure anti-phishing policies
+            - name: Secure by default
+              href: ./office-365-security/secure-by-default.md
+            - name: Configure ATP anti-phishing policies
               href: ./office-365-security/configure-atp-anti-phishing-policies.md
             - name: Configure anti-malware policies
               href: ./office-365-security/configure-anti-malware-policies.md
@@ -463,6 +472,12 @@
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
             - name: Attack Simulator in Defender for Office 365
               href: ./office-365-security/attack-simulator.md
+            - name: Simulate a phishing attack with Attack simulation training
+              href: ./office-365-security/attack-simulation-training.md
+            - name: Create a custom payload for Attack simulation training
+              href: ./office-365-security/attack-simulation-training-payloads.md
+            - name: Gain insights through Attack simulation training
+              href: ./office-365-security/attack-simulation-training-insights.md
             - name: Recommended settings for configuring EOP and Defender for Office 365 Security
               href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: Best practices for configuring EOP

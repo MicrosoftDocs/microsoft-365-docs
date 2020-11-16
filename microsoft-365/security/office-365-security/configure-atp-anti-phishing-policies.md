@@ -154,9 +154,9 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
      - **Email address**:
 
-        - Click in the box and scroll through the list of users to select.
-        - Click in the box and start typing to filter the list and select a user.
-        - To remove an entry, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the user.
+       - Click in the box and scroll through the list of users to select.
+       - Click in the box and start typing to filter the list and select a user.
+       - To remove an entry, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the user.
 
      - **Name**: This value is populated based on the email address you selected, but you can change it.
 
@@ -165,15 +165,18 @@ Use the following procedures to modify anti-phishing policies: a new policy that
      To edit an existing entry, select the protected user in the list.
 
      > [!NOTE]
-     > You can enter a maximum of 60 users in the Security & Compliance Center or in PowerShell.
-       
+     >
+     > - In each anti-phishing policy, you can specify a maximum of 60 protected users (sender email addresses). You can't specify the same protected user in multiple policies.
+     >
+     > - User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt.
+
    - **Add domains to protect**: Configure one or both of the following settings:
 
      - **Automatically include the domains I own**: The default value is **Off**. To turn it on, slide the toggle to **On**.
      - **Include custom domains**: The default value is **Off**. To turn it on, slide the toggle to **On**, and in the **Add domains** box, enter the domain name (for example, contoso.com), press ENTER, and repeat as necessary.
 
      > [!NOTE]
-     > You can enter a maximum of 50 domains in the Security & Compliance Center or in PowerShell.
+     > You can have a maximum of 50 domains in all anti-phishing policies.
 
    - **Actions**: Click **Edit**
 
@@ -188,12 +191,12 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
      - **If email is sent by an impersonated domain**: Configure one of the following actions for messages where the spoofed sender is in one of the protected domains you specified in **Add domains to protect**:
 
-     - **Don't apply any action**
-     - **Redirect message to other email addresses**
-     - **Move message to Junk Email folder**
-     - **Quarantine the message**
-     - **Deliver the message and add other addresses to the Bcc line**
-     - **Delete the message before it's delivered**
+       - **Don't apply any action**
+       - **Redirect message to other email addresses**
+       - **Move message to Junk Email folder**
+       - **Quarantine the message**
+       - **Deliver the message and add other addresses to the Bcc line**
+       - **Delete the message before it's delivered**
 
    - Click **turn on impersonation safety tips** and configure any of the following settings:
 
@@ -262,7 +265,6 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
      - You can click **Edit** in each section to jump back to the relevant page.
      - You can toggle the following settings **On** or **Off** directly on this page:
-
        - **Enable antispoofing protection**
        - **Enable Unauthenticated Sender feature**
 

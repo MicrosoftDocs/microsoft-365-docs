@@ -50,6 +50,7 @@ To learn how the Microsoft Cloud helps customers support HIPAA and the HITECH re
 
 - [Azure and Azure Government](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
+- [Microsoft Cloud for Healthcare](https://aka.ms/MicrosoftCloudforHealthcareCompliance)
 - Microsoft Microsoft Healthcare Bot Service
 - Microsoft Stream
 - Microsoft Professional Services: Premier and On Premises for Azure, Dynamics 365, Intune, and for medium business and enterprise customers of Microsoft 365 for business
@@ -108,5 +109,5 @@ To assist customers with this task, Microsoft has published these guides:
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Understanding HIPAA Compliance with Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(May 19, 2016)
-- [Azure HIPAA HITRUST blueprint sample](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
+- [Azure HIPAA HITRUST blueprint sample](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust-9-2)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

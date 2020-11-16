@@ -70,7 +70,7 @@ Admin controls in the Microsoft 365 admin center  allow you to manage your knowl
 - Control which users can to confirm or reject topics in the topic center.
 - Control which users can create and edit topics in the topic center.
 
-See [Manage your knowledge network](manage-knowledge-network.md) for more information. 
+See [Manage your knowledge network](topic-experiences-discovery.md) for more information. 
 
 ## Topic curation & feedback
 
@@ -82,5 +82,5 @@ Additionally, users with proper permissions can tag items such as Yammer convers
 
 
 ## See also
-[Set up knowledge management](set-up-knowledge-network.md)</br>
+[Set up knowledge management](set-up-topic-experiences.md)</br>
 [Topic center overview](topic-center-overview.md)

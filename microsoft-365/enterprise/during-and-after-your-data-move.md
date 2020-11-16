@@ -41,7 +41,7 @@ Watch the Microsoft 365 Message Center for confirmation when moves for each of E
 |South Africa  <br/> |July 1, 2022  <br/> |
 |Switzerland, Liechtenstein  <br/> |July 1, 2022  <br/> |
 |Norway  <br/> |November 1, 2022  <br/> |
-|Germany  <br/> |April 1, 2023  <br/> |
+|Germany  <br/> |May 1, 2023  <br/> |
 
 ## Exchange Online
 
