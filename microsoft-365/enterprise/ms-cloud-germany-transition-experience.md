@@ -29,19 +29,19 @@ Here are the key differences between Microsoft Cloud Deutschland and Office 365 
 
 | Category | Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) | Office 365 services in the new German datacenter regions |
 |:-------|:-----|:-------|
-| Microsoft 365 services available for subscription with just one Office 365 tenant | 15 services | 29 services <br> For more information, see [What is the service availability between the different Office 365 cloud service offerings?](ms-cloud-germany-transition.md#serv-avail)) |
+| Microsoft 365 services available for subscription with just one Office 365 tenant | 15 services | 29 services <br><br> For more information, see [What is the service availability between the different Office 365 cloud service offerings?](ms-cloud-germany-transition.md#serv-avail)) |
 | New features | No new features are available. | New features will be available consistent with Office 365 services. |
 | Data trustee | Yes | No |
 | Cross-tenant collaboration with global Office 365 tenants | No | Yes |
-| Customer data residency | Customer Data will be stored solely within German Data Centers. | Microsoft will store the following Customer Data at rest exclusively within Germany: <ul><li> Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments) </li><li> SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business </li></ul> |
-| Applicable terms | [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) with [supplement](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=64) | [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
+| Customer data residency | Customer data will be stored solely within German data denters. | Microsoft will store the following Customer Data at rest exclusively within Germany: <ul><li> Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments) </li><li> SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business </li></ul> |
+| Applicable terms | [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) with this [supplement](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=64) | [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 ||||
 
 ## Azure Active Directory
 
 What is not changing:
 
-- Tenant initial domain (such as contoso.onmicrosoft.de) and tenant ID (GUID) and custom domains will persist after the migration. 
+- Tenant initial domain (such as contoso.onmicrosoft.de) with tenant ID (GUID) and custom domains will persist after the migration. 
 - Authentication requests for resources that are migrated to Office 365 services are granted by the Office 365 services Azure authentication service (login.microsoftonline.com). During the migration, resources that remain still in Office 365 Germany are authenticated by the existing Germany Azure service (login.microsoftonline.de)
 
 Considerations to note:

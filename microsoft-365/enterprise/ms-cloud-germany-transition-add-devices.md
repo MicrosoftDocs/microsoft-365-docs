@@ -22,6 +22,8 @@ description: "Summary: Additional device information on services when moving fro
 
 # Additional device information for the migration from Microsoft Cloud Deutschland
 
+## Initial questions and their answers
+
 **How can I tell if my organization is impacted?**
 
 Administrators should check https://portal.microsoftazure.de to determine if they have any devices.  If your organization has devices registered, you are impacted.
@@ -50,11 +52,11 @@ To check that your devices are registered in public cloud, you should export/dow
 
 ## Windows Hybrid Azure AD join
 
-
 ### Windows down-level
 
-Windows down-level devices are Windows devices that currently run versions before Windows 10 (such as Windows 7), or run Windows Server versions before 2019 and 2016.  Such devices, if they are registered before, will need to un-register and re-register. 
-To determine whether the Windows down-level device was previously joined to Azure AD, the admin can cause the following command to run on the device by using mechanism such as group policy or similar in the context of every user who sign-ins on such devices:
+Windows down-level devices are Windows devices that currently run versions before Windows 10 (such as Windows 8.1 or Windows 7), or run Windows Server versions before 2019 and 2016. Such devices, if they are registered before, will need to un-register and re-register. 
+
+To determine whether the Windows down-level device was previously joined to Azure AD, use following command on the device:
 
 ```
 %programfiles%\Microsoft Workplace Join\autoworkplace /status
@@ -73,7 +75,7 @@ Private key state : Okay
      Device state : Unknown
 ```
 
-The affected devices will have the “Device state” with value of “Unknown”. Ignore the below guidance if the output is “Device not joined” or whose “Device state” value is “Okay”.
+The affected devices will have the “Device state” with value of “Unknown”. If the output is “Device not joined” or whose “Device state” value is “Okay”, ignore the following guidance.
 
 Only for such devices which show that the device is joined (by virtue of deviceId, thumbprint etc) and whose “Device state” value is “Unknown”, admin should run the following commands in sequence, in the context of domain user signing on such Windows down-level devices:
 
@@ -81,7 +83,7 @@ Only for such devices which show that the device is joined (by virtue of deviceI
 %programfiles%\Microsoft Workplace Join\autoworkplace /leave
 ```
 
-The above set of commands only needs to be run once per each domain user signing in on the Windows down-level device. This command should be run in the context of the domain user signing in. Sufficient care must be taken to not run this command when the user signs in subsequently.
+The above set of commands only needs to be **run once per each domain user signing in** on the Windows down-level device. This command should be run in the context of the domain user signing in. Sufficient care must be taken to not run this command when the user subsequently signs in.
 
 When the above command runs, it will clear the local hybrid Azure AD join state on the computer, for the user who signed in. And, if the computer is still configured to do hybrid Azure AD join in the tenant, it will attempt to do that when the user signs in again.
 
@@ -89,7 +91,7 @@ When the above command runs, it will clear the local hybrid Azure AD join state 
 
 #### Unjoin
 
-To determine whether the Windows 10 device was previously joined to Azure AD, the admin can run the following command on the device by using a mechanism such as group policy or something similar in the context of any user who signs-in to the device:
+To determine whether the Windows 10 device was previously joined to Azure AD, run the following command on the device:
 
 ```
 %SystemRoot%\system32\dsregcmd.exe /status”
@@ -107,7 +109,7 @@ If the device is Hybrid Azure AD joined, the admin would see the following outpu
               DomainJoined : YES
 ```
 
-Ignore the below guidance if the output is “AzureAdJoined : No”
+If the output is “AzureAdJoined : No”, ignore the following guidance.
 
 Only for devices which show that the device is joined to Azure AD, the following command should be run as an admin to unjoin the device.
 
@@ -122,9 +124,9 @@ The above command only needs to be run once in admin context on the Windows devi
 The device is automatically joined to Azure AD without user/admin intervention as long as the device has network connectivity to public Azure AD endpoints. 
 
 
-### Windows Azure AD Join
+## Windows Azure AD Join
 
-#### Unjoin
+### Unjoin
 
 To determine whether the Windows 10 device was previously joined to Azure AD, the user/admin can run the following command on the device:
 
@@ -156,12 +158,12 @@ Admin: If the organization’s admin wants to unjoin the users devices which are
 
 The above command only needs to be run once in admin context on the Windows device. 
 
-#### Azure AD Join/Re-Registration
+### Azure AD Join/Re-Registration
 
 The user can Azure AD Join the device from the settings. (Settings > Accounts > Access Work Or School > Connect)
  
 
-### Windows Azure AD Registered (Company owned)
+## Windows Azure AD Registered (Company owned)
 
 To determine whether the Windows 10 device is Azure AD Registered, the admin can run the following command on the device by using a mechanism such as group policy or something similar in the context of any user who signs-in to the device:
 
@@ -180,9 +182,9 @@ If the device is Azure AD Registered, the admin would see the following output:
           WamDefaultAuthority : organizations
 ```
 
-Instructions to remove the existing Azure AD Register/Add Work Account /Workplace Join account on the device
+To remove the existing Azure AD Register/Add Work Account /Workplace Join account on the device
 
-- Please use the CleanupWPJ tool found here to remove the Azure AD Registered account on the device.
+- Pse the CleanupWPJ tool found here to remove the Azure AD Registered account on the device.
 - Run the “WPJCleanup.cmd” command. This command tool will pick the right executable based on the version of Windows on the device.
 - The admin can run the command on the device by using a mechanism such as group policy or something similar in the context of any user who is signed in on the device.
 
@@ -204,9 +206,9 @@ For Android, users will need to un-register and re-register their devices. This 
 
 How to un-register and re-register the device on Android via Authenticator app:
 
-1.	Open Authenticator and go to Settings
-2.	Scroll down to Device Registration
-3.	Unregister the device by clicking on un-register button
+1.	Open Authenticator and go to Settings.
+2.	Scroll down to Device Registration.
+3.	Unregister the device by clicking on un-register button.
 4.	Now re-register the device by entering your email and click register.
 
 How to un-register and re-register the device on Android via Android Settings page
@@ -230,14 +232,14 @@ To find out more information about any actions needed during the migration phase
 
 On iOS devices, user will need to manually remove any cached accounts from the Authenticator, un-register device as well as sign out from any native apps on their device.
 
-Step 1: remove the account from the Authenticator app if present.
+### Step 1: remove the account from the Authenticator app if present.
 
 1. Tap on the account in the Authenticator app.
 2. Select the Settings icon in the top right corner. If you don’t see the Settings button, you might be not using the latest Authenticator version. In that case, proceed directly to step 3.
 3. Tap on the “Remove account” button.
 4. Select “All apps on this device”.
  
-Step 2: Unregister device from the Authenticator app:
+### Step 2: Unregister device from the Authenticator app:
 
 1. Select the Hamburger menu in the top right corner.
 2. Select Settings.
@@ -245,7 +247,7 @@ Step 2: Unregister device from the Authenticator app:
 4. If account is shown, tap “Unregister device” and “Continue” in the dialog.
 5. You should see no account after that.
  
-Step 3: Sign out from individual apps if necessary.
+### Step 3: Sign out from individual apps if necessary.
 
 Users can go to individual apps like Outlook, Teams, OneDrive, and remove accounts from those apps.
 

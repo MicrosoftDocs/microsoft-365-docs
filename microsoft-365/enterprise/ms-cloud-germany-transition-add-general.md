@@ -26,7 +26,57 @@ The following sections provide additional information on services, pre-work cons
 
 ## Azure Active Directory
 
-Here are some additonal considerations for Azure Active Directory (AD).
+To complete the move from Azure German cloud to Azure Public cloud we recommend that authentication endpoint, AAD Graph and MS Graph endpoints for your applications be updated to those of the commercial cloud when OIDC endpoint https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration starts reporting commercial cloud endpoints. 
+ 
+**When should I make this change?**
+
+You will receive a notification in Azure/Office portal when your tenant completes migration from German cloud to the commercial cloud. You have 30 days after receiving this notification to complete these updates so that your app continues to work for tenants that are migrated from Azure Germany cloud to Azure Public cloud.
+ 
+There are 3 preconditions to updating your login authority.
+
+1. OIDC discovery endpoint for your tenant https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration returns AAD public cloud endpoints.
+2. If your tenant is setup for federation, ADFS is updated to sync with AAD Public. You can follow instructions to update AAD Connect settings for making this change.
+3. Resource applications, if any, used by your applications are modified to accept tokens signed by both AAD Germany and AAD Public.
+ 
+**What kind of applications?**
+
+This could be any of the following:
+
+- Single-page app (SPA)
+- Web app that signs in users
+- Web app that calls web APIs
+- Protected web API
+- Web API that calls web APIs
+- Desktop app
+- Daemon app
+- Mobile app
+ 
+Note that that when an application switches to using login.microsoftonline.com as your authority, the tokens will be signed by this new authority. If you host any resource applications that other apps call into, you will need to allow for lax token validation. This means that your app needs to allow tokens signed by both the AAD Germany and AAD Public clouds. This lax token validation is needed until all client applications calling your service are fully migrated to AAD Public cloud. After this, your resource application only needs to accept token signed by AAD Public cloud.
+
+**What do I need to update?**
+
+1. If you are hosting an application in Azure Germany, that is used to authenticate Azure Germany or O365 Germany users, please ensure that https://login.microsoftonline.com is used as the authority in the authentication context.
+
+  - See Azure AD authentication contexts.
+  - This applies both to authentication to your application as well as authentication to any APIs your application may be calling (i.e. Microsoft Graph, Azure AD Graph, Azure Resource Manager).
+
+2. Update AAD Graph endpoint to be https://graph.windows.net
+3. Update MS Graph endpoint to be https://graph.microsoft.com
+4. Update any German cloud endpoints like Exchange Online, SharePoint Online etc. that are used by your applications to be those of the public cloud.
+5. Update environment parameters to be AzurePublic (instead of AzureGermany) in administrative tools and scripts like
+
+  - Azure PowerShell
+  - AAD PowerShell (MSOnline)
+  - AAD PowerShell (AzureAD)
+  - Azure CLI
+ 
+**What about applications I publish?**
+
+If you publish an application that is available to users outside of your tenant, you may need to change your application registration to ensure continuity. Other tenants that use your application may be moved at a different time that your tenant. To ensure they never lose access to your application, you will need to consent to your app being synced from Azure Germany to Azure Public.
+
+### Additional considerations
+
+Here are some additional considerations for Azure Active Directory (Azure AD).
 
 - If you are using federated authentication:
 
@@ -61,8 +111,10 @@ Here are some additonal considerations for Azure Active Directory (AD).
 
 ## Exchange Online 
 
+- myaccount.msft.com will only work after cutover. Links will produce a “something went wrong” error until that time.
 - Users in OWA that access a shared mailbox in the other environment (for example, a user in the Germany environment accesses a shared mailbox in the global environment) will be prompted to authenticate a second time. The user must first authenticate and access their mailbox in outlook.office.de, then open the shared mailbox that is in outlook.office365.com. They will need to authenticate a second time when accessing the shared resources that are hosted in the other service.
 - For existing Microsoft Cloud Deutschland customers or those in transition, when a shared mailbox is added to Outlook using **File > Info > Add Account**, viewing calendar permissions may fail. (The Outlook client attempts to use the Rest API https://outlook.office.de/api/v2.0/Me/Calendars) Customers wishing to add an account to view calendar permissions can add the registry key as described in [User experience changes for sharing a calendar in Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) to ensure this action will succeed. This registry Key can be deployed organization-wide using Group Policy.
+- During Migration Phase, cmdlets `New-migrationEndpoint`, `Set-MigrationEndpoint`, and `Test-MigrationsServerAvailability` can result in errors [Error on proxy]. This happens when the arbitration mailbox has migrated to WW but the admin mailbox has not or vice versa. To resolve this, while creating the tenant powershell session use the arbitration mailbox as routing hint in the connectionuri. For example: `New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid?email=Migration.8f3e7716-2011-43e4-96b1-aba62d229136@TENANT.onmicrosoft.de" -Credential $UserCredential -Authentication Basic -AllowRedirection`
 
 - If you are using Exchange Online hybrid:
 
